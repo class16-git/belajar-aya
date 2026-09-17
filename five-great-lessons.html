@@ -916,6 +916,35 @@ body {
 .panel-lesson-title { font-weight: 700; font-size: 0.9rem; color: var(--cream); margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
 .panel-exp { display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 0.8rem; color: rgba(255,255,255,0.7); }
 
+/* ===== OFFLINE MISSION ===== */
+.offline-mission {
+  background: rgba(76,175,80,0.08);
+  border: 1px solid rgba(76,175,80,0.25);
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  max-width: 400px;
+}
+.om-emoji { font-size: 1.8rem; flex-shrink: 0; }
+.om-title { font-family: var(--font-head); font-size: 0.85rem; color: var(--green); margin-bottom: 2px; }
+.om-text { font-size: 0.8rem; color: var(--cream); opacity: 0.8; line-height: 1.5; }
+
+/* ===== AVATAR BUTTONS ===== */
+.av-btn { font-size:2.5rem;background:rgba(255,255,255,0.08);border:2px solid rgba(255,255,255,0.15);border-radius:16px;width:64px;height:64px;cursor:pointer;transition:all 0.2s; }
+.av-btn.selected { border-color:var(--gold);background:rgba(255,215,0,0.15);transform:scale(1.15); }
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 360px) {
   .exp-cards { grid-template-columns: 1fr; }
@@ -943,8 +972,9 @@ body {
 <!-- ===== HOME HUB ===== -->
 <div class="screen active" id="screen-home">
   <div class="home-header">
-    <div class="home-title">Kita Semua<br>Terhubung</div>
-    <div class="home-subtitle">Lima Pelajaran Besar</div>
+    <button class="piko-btn" id="profile-btn" onclick="showScreen('profile')" title="Profil" style="position:absolute;top:0;right:0;font-size:1.5rem;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">🤠</button>
+    <div class="home-title" id="home-title">Kita Semua<br>Terhubung</div>
+    <div class="home-subtitle" id="home-greeting">Lima Pelajaran Besar</div>
   </div>
   <div class="lesson-grid" id="lesson-grid"></div>
 </div>
@@ -969,7 +999,7 @@ body {
       <div class="story-visual" id="l2-vis">🌿</div>
       <div class="story-title">Kehidupan</div>
       <div class="story-question" id="l2-q">"Bagaimana Bumi bisa penuh dengan makhluk hidup?"</div>
-      <div class="story-text" id="l2-text">Setelah Bumi menjadi dingin, sesuatu yang menakjubkan terjadi. Makhluk hidup pertama muncul. Lama sekali kemudian, появились lebih banyak种类. Динозавры muncul, lalu menghilang. Lalu появились hewan kecil, dan akhirnya — manusia.</div>
+      <div class="story-text" id="l2-text">Setelah Bumi menjadi dingin, sesuatu yang menakjubkan terjadi. Makhluk hidup pertama muncul. Lama sekali kemudian, muncul lebih banyak种类. Динозавры muncul, lalu menghilang. Lalu muncul hewan kecil, dan akhirnya — manusia.</div>
       <button class="btn btn-primary" onclick="startLesson(2)">Ayo Jelajahi! 🌱</button>
     </div>
   </div>
@@ -1016,7 +1046,9 @@ body {
 
 <!-- ===== EXPERIENCE SCREEN (dynamic) ===== -->
 <div class="screen" id="screen-exp">
-  <div class="lesson-screen" id="exp-container"></div>
+  <div class="lesson-screen" id="exp-container">
+    <div class="breadcrumb" id="exp-breadcrumb"></div>
+  </div>
 </div>
 
 <!-- Piko Button -->
@@ -1028,8 +1060,29 @@ body {
 <!-- Parent Panel -->
 <div class="parent-panel" id="parent-panel">
   <button class="panel-close" onclick="toggleParentPanel()">✕</button>
-  <div class="panel-title">📊 Progress Aya</div>
+  <div class="panel-title" id="panel-title">📊 Progress Aya</div>
   <div id="panel-content"></div>
+</div>
+
+<!-- Profile Screen -->
+<div class="screen" id="screen-profile">
+  <div class="lesson-screen" style="justify-content:center;">
+    <div style="text-align:center; max-width:380px;">
+      <div style="font-family:var(--font-head);font-size:2rem;color:var(--gold);margin-bottom:20px;">Siapa namamu?</div>
+      <input id="profile-name" type="text" placeholder="Ketik namamu..."
+        style="width:100%;padding:14px 18px;border-radius:12px;border:2px solid rgba(255,215,0,0.3);background:rgba(255,255,255,0.08);color:var(--cream);font-family:var(--font-body);font-size:1.1rem;font-weight:600;text-align:center;outline:none;"
+        onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(255,215,0,0.3)'">
+      <div style="margin:20px 0;font-size:0.9rem;color:var(--cream);opacity:0.6;">Pilih avatar:</div>
+      <div style="display:flex;gap:16px;justify-content:center;margin-bottom:24px;">
+        <button class="av-btn" onclick="selectAvatar('🧒')" id="av-b1">🧒</button>
+        <button class="av-btn" onclick="selectAvatar('👧')" id="av-b2">👧</button>
+        <button class="av-btn" onclick="selectAvatar('🧒')" id="av-b3">🧒</button>
+        <button class="av-btn" onclick="selectAvatar('🧍')" id="av-b4">🧍</button>
+      </div>
+      <button class="btn btn-primary" onclick="saveProfile()">✓ Simpan</button>
+      <div id="profile-msg" style="margin-top:12px;font-size:0.85rem;color:var(--green);display:none;"></div>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -1095,7 +1148,8 @@ let state = {
   audioOn: true,
   panelOpen: false,
   navStack: [],
-  currentExp: null
+  currentExp: null,
+  profile: { name: '', avatar: '' }
 };
 
 // ═══════════════════════════════════════
@@ -1118,6 +1172,7 @@ function init() {
   generateStars();
   renderHomeGrid();
   setupPiko();
+  initProfile();
   updateParentPanel();
 }
 
@@ -1172,6 +1227,11 @@ function showScreen(name) {
   const el = document.getElementById('screen-' + name);
   if (el) el.classList.add('active');
 
+  // Profile screen setup
+  if (name === 'profile') {
+    renderProfileScreen();
+  }
+
   // Nav buttons
   const backBtn = document.getElementById('btn-back');
   const homeBtn = document.getElementById('btn-home');
@@ -1180,7 +1240,9 @@ function showScreen(name) {
   if (name === 'home') {
     backBtn.style.display = 'none';
     homeBtn.style.display = 'none';
-    pikoBtn.style.display = 'none';
+    // Always show Piko on home too
+    pikoBtn.style.display = 'block';
+    updateHomeGreeting();
   } else {
     backBtn.style.display = 'block';
     homeBtn.style.display = 'block';
@@ -1267,7 +1329,12 @@ function renderLessonExp(id) {
 function runExp(lessonId, expId) {
   const container = document.getElementById('exp-container');
   const lesson = LESSONS.find(l => l.id === lessonId);
+  const exp = lesson ? lesson.experiences.find(e => e.id === expId) : null;
   container.dataset.lesson = lessonId;
+
+  // Set breadcrumb
+  const bc = document.getElementById('exp-breadcrumb');
+  if (bc) bc.textContent = `Home > ${lesson ? lesson.title : ''} > ${exp ? exp.title : ''}`;
 
   // Mark done
   const p = loadProgress();
@@ -1336,6 +1403,11 @@ function expParticles() {
     </div>
     <div class="feedback-msg hint" id="p-msg" style="display:none;"></div>
     <div class="story-text" style="font-size:0.9rem;text-align:center;opacity:0.7;">Apa yang berubah ketika Dipanaskan? Apa yang tetap sama?</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Taruh es batu di piring. Lihat berapa lama cair. Sentuh sebelum dan sesudah!</div>
+    </div>
   </div>`;
   animateParticles('cold');
   setTimeout(() => animateParticles('warm'), 500);
@@ -1394,6 +1466,11 @@ function expGravity() {
     </div>
     <div class="feedback-msg hint" id="grav-msg">Gravitasi adalah tarikan yang menarik segala sesuatu ke tengah.</div>
     <button class="btn btn-primary" onclick="clearGrav()" style="font-size:0.9rem;padding:12px 24px;">🔄 Mulai Ulang</button>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Lompat ke atas lalu jatuh. Tanpa gravitasi, kamu akan melayang terus!</div>
+    </div>
   </div>`;
   state.gravStars = [];
 }
@@ -1467,6 +1544,11 @@ function expSolar() {
     <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:4px;">
       <button class="btn" style="background:rgba(255,215,0,0.15);color:var(--gold);font-size:0.85rem;padding:10px 16px;border:1px solid rgba(255,215,0,0.3);" onclick="orbitEarth()">🔄 Jalankan orbit!</button>
     </div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Di malam hari, lihat langit. Berapa banyak bintang yang bisa kamu hitung?</div>
+    </div>
   </div>`;
 
   // Drag Earth
@@ -1536,6 +1618,11 @@ function expEarthHistory() {
       </div>
     </div>
     <div class="story-text" id="earth-desc" style="font-size:0.85rem;text-align:center;max-width:320px;">Bumi dulu sangat panas! Lava kemerahan kemana-mana. Tidak ada lautan, tidak ada daratan seperti sekarang.</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Gali tanah di taman. Rasakan betapa keras bumi di luar!</div>
+    </div>
   </div>`;
 }
 
@@ -1573,6 +1660,11 @@ function expErosion() {
       <button class="btn" style="background:rgba(139,105,20,0.15);color:var(--orange);border:1px solid rgba(139,105,20,0.3);font-size:0.9rem;padding:12px 20px;" onclick="stopRain()">☀️ Berhenti</button>
     </div>
     <div class="feedback-msg hint" id="erosion-msg">Air mengalir ke bawah — ke tempat yang rendah. Ini disebut erosi!</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Siram pasir dengan air. Lihat bagaimana air membuat alur!</div>
+    </div>
   </div>`;
   state.rainInterval = null;
 }
@@ -1618,7 +1710,13 @@ function expAlive() {
       <div class="animal-name">${item.name}</div>
     </div>`;
   });
-  html += `</div><div class="feedback-msg hint" id="alive-msg">Tekan untuk menebak!</div></div>`;
+  html += `</div><div class="feedback-msg hint" id="alive-msg">Tekan untuk menebak!</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Di luar, cari 3 benda yang HIDUP dan 3 yang BUKAN HIDUP. Foto yang kamu temukan!</div>
+    </div>
+  </div>`;
   c.innerHTML = html;
 }
 
@@ -1656,6 +1754,11 @@ function expPlant() {
     </div>
     <div class="feedback-msg hint" id="plant-msg">Tanaman butuh air, cahaya matahari, dan udara untuk hidup!</div>
     <button class="btn" onclick="resetPlant()" style="font-size:0.85rem;padding:10px 20px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);">🔄 Reset</button>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Siram tanaman di rumah selama 3 hari. Gambar perubahan yang kamu lihat.</div>
+    </div>
   </div>`;
   state.plant = { water: false, sun: false, air: false };
 }
@@ -1732,6 +1835,11 @@ function expTimeline() {
       <div class="tl-detail-text" id="tl-dd"></div>
     </div>
     <div class="feedback-msg hint" style="font-size:0.8rem;max-width:300px;">Manusia muncul di DETIK TERAKHIR dari cerita Bumi! 🧒</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Tanya orang dewasa: dinosaurus sudah berapa lama hilang?</div>
+    </div>
   </div>`;
   c.innerHTML = html;
 }
@@ -1793,6 +1901,11 @@ function expClassify() {
   });
   html += `</div>
     <div class="feedback-msg hint" id="classify-msg">Buat aturanmu sendiri!Tidak ada jawaban salah!</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Kumpulkan 6 benda dari luar. Kelompokkan berdasarkan aturanmu sendiri!</div>
+    </div>
   </div>`;
   c.innerHTML = html;
   state.selectedAnimal = null;
@@ -1861,6 +1974,11 @@ function expEcosystem() {
       <button class="eco-btn active" id="eco-btn-bird" onclick="toggleEco('bird')">🐦 Burung</button>
     </div>
     <div class="feedback-msg hint" id="eco-msg">Semakin banyak bagian ekosistem yang ada, semakin seimbang! Jika satu bagian hilang, semua ikut terpengaruh.</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Cari 1 rantai makanan di luar rumah. Siapa makan siapa?</div>
+    </div>
   </div>`;
   state.eco = { sun: true, plant: true, bug: true, bird: true };
 }
@@ -1914,6 +2032,11 @@ function expNeeds() {
   });
   html += `</div>
     <div class="feedback-msg hint" id="needs-msg">Manusia butuh kebutuhan jasmani DAN rohani! 🍎💧🏠 tapi juga ❤️🎨</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Gambar 3 hal yang kamu butuhkan hari ini!</div>
+    </div>
   </div>`;
   c.innerHTML = html;
   state.selectedNeeds = new Set();
@@ -1960,6 +2083,11 @@ function expShelter() {
     <div class="shelter-preview" id="shelter-preview">?</div>
     <div class="feedback-msg hint" id="shelter-msg">Pilih cuaca dan bahan!</div>
     <button class="btn" onclick="testShelter()" style="font-size:0.9rem;padding:12px 24px;background:rgba(255,215,0,0.15);color:var(--gold);border:1px solid rgba(255,215,0,0.3);">🧪 Uji Rumah!</button>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Dengan selembar kertas, bikin rumah untuk bonekamu. Cuaca mana yang bisa ditahan?</div>
+    </div>
   </div>`;
   state.shelter = { env: 'cold', mats: new Set() };
 }
@@ -2057,6 +2185,11 @@ function expTools() {
   });
   html += `</div>
     <div class="feedback-msg hint" id="tool-msg">Tap alat untuk lihat bagaimana alat membantu manusia!</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Cari 3 alat di rumah. Untuk apa alat itu? Alat apa yang memperbesar kekuatanmu?</div>
+    </div>
   </div>`;
   c.innerHTML = html;
 }
@@ -2094,6 +2227,11 @@ function expCooperation() {
       <button class="btn" style="font-size:0.85rem;padding:12px 20px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);" onclick="resetCoop()">🔄 Reset</button>
     </div>
     <div class="feedback-msg hint" id="coop-msg">Ketika manusia bekerja sama, mereka bisa menyelesaikan pekerjaan MUCH lebih cepat!</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Bangun menara dari balok dengan teman. Berapa tinggi bisa?</div>
+    </div>
   </div>`;
   state.coopWorkers = 1;
   updateCoop();
@@ -2146,6 +2284,11 @@ function expKnowledge() {
     </div>
     <div class="feedback-msg hint" id="gen-msg">Penemuan pertama: orang pertama menemukan bahwa api bisa cook makanan! 🔥</div>
     <button class="btn btn-primary" onclick="advanceGen()" style="font-size:0.9rem;padding:12px 24px;" id="gen-btn">📖 Lihat Generasi Berikutnya</button>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Tanya kakek/nenek: apa yang mereka pelajari dari generasi sebelumnya?</div>
+    </div>
   </div>`;
   state.genStep = 0;
 }
@@ -2198,6 +2341,11 @@ function expComm() {
   });
   html += `</div>
     <div class="feedback-msg hint" id="comm-msg">Pilih cara komunikasi! Mana yang paling jelas?</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Tulis pesan untuk temanmu besok. Gambar saja, tidak perlu kata-kata!</div>
+    </div>
   </div>`;
   c.innerHTML = html;
 }
@@ -2231,6 +2379,11 @@ function expSymbol() {
       <button class="btn btn-primary" onclick="saveSymbol()" style="font-size:0.85rem;padding:10px 20px;">✓ Simpan Simbolku!</button>
     </div>
     <div class="feedback-msg hint" id="sym-msg">Simbol adalah gambar yang menggantikan arti! Dengan simbol, kita bisa kirim pesan ke orang jauh!</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Gunakan simbol yang kamu buat untuk menulis pesan ke keluargamu!</div>
+    </div>
   </div>`;
 
   const grid = document.getElementById('sym-grid');
@@ -2279,6 +2432,11 @@ function expSymbolSystem() {
     <div class="symbol-grid" style="max-width:200px;margin:0 auto 12px;" id="encode-grid"></div>
     <div class="feedback-msg hint" id="encode-msg">Pilih simbol: ☀(siang) ≈(air) ⌂(rumah)</div>
     <button class="btn btn-primary" onclick="checkEncode()" style="font-size:0.9rem;padding:12px 24px;">✓ Cek Jawaban</button>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Buat kode untuk nama kamu. Bisa temanmu baca?</div>
+    </div>
   </div>`;
   state.encodeCells = new Array(4).fill(null);
   const grid = document.getElementById('encode-grid');
@@ -2353,6 +2511,11 @@ function expTimeMessage() {
     </div>
     <button class="btn btn-primary" onclick="timeWarp()" style="font-size:0.9rem;padding:12px 24px;">⏰ Travel ke 1000 tahun kemudian!</button>
     <div class="feedback-msg hint" id="time-msg" style="margin-top:12px;">Tanpa tulisan, pesan Character A hilang selamanya. Dengan tulisan, pesannya bisa sampai ke kita hari ini! 📜</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Tulis satu hal yang ingin kamu sampaikan ke masa depan!</div>
+    </div>
   </div>`;
 }
 
@@ -2388,6 +2551,11 @@ function expGoats() {
       <button class="btn" style="font-size:0.85rem;padding:10px 16px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);" onclick="resetGoats()">🔄 Reset</button>
     </div>
     <div class="feedback-msg hint" id="goat-msg">Tekan +KAMBING dan +BATU untuk pasang batu satu-satu!</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Kumpulkan 5 benda kecil. Pasang 1 batu untuk setiap benda. Apakah ada batu lebih?</div>
+    </div>
   </div>`;
   state.goats = 0;
   state.stones = 0;
@@ -2456,6 +2624,11 @@ function expSkipCount() {
       <button class="btn" style="font-size:0.85rem;padding:10px 20px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);" onclick="resetSkip()">🔄 Reset</button>
     </div>
     <div class="feedback-msg hint" id="skip-msg" style="margin-top:8px;">Piko loncat +10: 0 → 10 → 20 → 30! Pola yang sama berulang!</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Loncat setiap 2 langkah saat kamu berjalan besok. 1-2-LEAP, 1-2-LEAP!</div>
+    </div>
   </div>`;
   state.skipSize = 10;
   state.skipPos = 0;
@@ -2543,6 +2716,11 @@ function expDecimal() {
   });
   html += `</div>
     <div class="feedback-msg hint" id="dec-msg">1 = satu | 10 = sepuluh | 100 = seratus | 1000 = seribu. Sistem desimal menggunakan angka 0-9!</div>
+    <div class="offline-mission">
+      <div class="om-emoji">🌍</div>
+      <div class="om-title">Coba di dunia nyata!</div>
+      <div class="om-text">Hitung berapa banyak jari tangan seluruh keluargamu. Masih kurang dari 100?</div>
+    </div>
   </div>`;
   c.innerHTML = html;
 }
@@ -2574,7 +2752,7 @@ function pikoSpeak() {
   const texts = {
     'home': 'Pilih pelajaran yang ingin kamu jelajahi! Semua pelajaran saling terhubung!',
     'l1': 'Alam semesta sangat besar! Di dalamnya ada miliaran bintang.',
-    'l2': 'Kehidupan muncul setelah Bumi menjadi dingin. Lama sekali kemudian, появились banyak sekalidan.',
+    'l2': 'Kehidupan muncul setelah Bumi menjadi dingin. Lama sekali kemudian, muncul banyak sekalidan.',
     'l3': 'Manusia punya kemampuan luar biasa: bekerja sama, membuat alat, dan berbagi pengetahuan!',
     'l4': 'Dengan simbol dan tulisan, pikiran bisa berjalan dari satu otak ke otak lain — bahkan через ribuan tahun!',
     'l5': 'Angka adalah cara kita menulis jumlah. Dulu manusia menghitung dengan batu dan jari!'
@@ -2637,11 +2815,109 @@ function toggleParentPanel() {
   if (state.panelOpen) updateParentPanel();
 }
 
-function updateParentPanel() {
+// ═══════════════════════════════════════
+// OFFLINE MISSIONS
+// ═══════════════════════════════════════
+const OFFLINE_MISSIONS = {
+  partikel: 'Taruh es batu di piring. Lihat berapa lama cair. Sentuh sebelum dan sesudah!',
+  gravitasi: 'Lompat ke atas lalu jatuh. Tanpa gravitasi, kamu akan melayang terus!',
+  solar: 'Di malam hari, lihat langit. Berapa banyak bintang yang bisa kamu hitung?',
+  bumi: 'Gali tanah di taman. Rasakan betapa keras bumi di luar!',
+  erosi: 'Siram pasir dengan air. Lihat bagaimana air membuat alur!',
+  hidup: 'Di luar, cari 3 benda yang HIDUP dan 3 yang BUKAN HIDUP. Foto yang kamu temukan!',
+  tanaman: 'Siram tanaman di rumah selama 3 hari. Gambar perubahan yang kamu lihat.',
+  timeline: 'Tanya orang dewasa: dinosaurus sudah berapa lama hilang?',
+  klasifikasi: 'Kumpulkan 6 benda dari luar. Kelompokkan berdasarkan aturanmu sendiri!',
+  ekosistem: 'Cari 1 rantai makanan di luar rumah. Siapa makan siapa?',
+  kebutuhan: 'Gambar 3 hal yang kamu butuhkan hari ini!',
+  shelter: 'Dengan selembar kertas, bikin rumah untuk bonekamu. Cuaca mana yang bisa ditahan?',
+  alat: 'Cari 3 alat di rumah. Untuk apa alat itu? Alat apa yang memperbesar kekuatanmu?',
+  kerjasama: 'Bangun menara dari balok dengan teman. Berapa tinggi bisa?',
+  generasi: 'Tanya kakek/nenek: apa yang mereka pelajari dari generasi sebelumnya?',
+  komunikasi: 'Tulis pesan untuk temanmu besok. Gambar saja, tidak perlu kata-kata!',
+  simbol: 'Gunakan simbol yang kamu buat untuk menulis pesan ke keluargamu!',
+  sistem: 'Buat kode untuk名字 (nama) kamu. Bisa temanmu baca?',
+  pesan: 'Tulis satu hal yang ingin kamu sampaikan ke masa depan!',
+  kambing: 'Kumpulkan 5 benda kecil. Pasang 1 batu untuk setiap benda. Apakah ada batu lebih?',
+  loncat: 'Loncat setiap 2 langkah saat kamu berjalan besok. 1-2-LEAP, 1-2-LEAP!',
+  desimal: 'Hitung berapa banyak jari tangan seluruh keluargamu. Masih kurang dari 100?'
+};
+
+// ═══════════════════════════════════════
+// PROFILE
+// ═══════════════════════════════════════
+function initProfile() {
+  try {
+    const d = localStorage.getItem('gl-profile');
+    if (d) state.profile = JSON.parse(d);
+  } catch(e) { state.profile = { name: '', avatar: '' }; }
+  updateHomeGreeting();
+}
+
+function updateHomeGreeting() {
+  const g = document.getElementById('home-greeting');
+  if (!g) return;
+  if (state.profile.name) {
+    g.textContent = `Hai, ${state.profile.name}!`;
+  } else {
+    g.textContent = 'Lima Pelajaran Besar';
+  }
+}
+
+function renderProfileScreen() {
+  const nameInput = document.getElementById('profile-name');
+  if (nameInput) nameInput.value = state.profile.name || '';
+  document.querySelectorAll('.av-btn').forEach(b => b.classList.remove('selected'));
+  if (state.profile.avatar) {
+    const sel = [...document.querySelectorAll('.av-btn')].find(b => b.textContent === state.profile.avatar);
+    if (sel) sel.classList.add('selected');
+  }
+}
+
+function selectAvatar(avatar) {
+  state.profile.avatar = avatar;
+  document.querySelectorAll('.av-btn').forEach(b => b.classList.remove('selected'));
+  const btn = [...document.querySelectorAll('.av-btn')].find(b => b.textContent === avatar);
+  if (btn) btn.classList.add('selected');
+}
+
+function saveProfile() {
+  const nameInput = document.getElementById('profile-name');
+  if (nameInput) state.profile.name = nameInput.value.trim();
+  if (!state.profile.avatar) state.profile.avatar = '👧';
+  try { localStorage.setItem('gl-profile', JSON.stringify(state.profile)); } catch(e) {}
+  updateHomeGreeting();
+  updateParentPanel();
+  const msg = document.getElementById('profile-msg');
+  if (msg) { msg.style.display = 'block'; msg.textContent = `✓ Tersimpan! Hai ${state.profile.name || state.profile.avatar}!`; }
+  setTimeout(() => showScreen('home'), 1200);
+}
   const p = loadProgress();
   const content = document.getElementById('panel-content');
   if (!content) return;
-  let html = '';
+
+  // Update session date
+  try { localStorage.setItem('gl-last-session', new Date().toLocaleDateString('id-ID')); } catch(e) {}
+
+  // Count total experiences
+  let totalDone = 0;
+  let totalAll = 0;
+  LESSONS.forEach(l => {
+    const done = Object.keys(p[l.id] || {}).length;
+    totalDone += done;
+    totalAll += l.experiences.length;
+  });
+
+  const pdata = JSON.parse(localStorage.getItem('gl-profile') || '{}');
+  const name = pdata.name || 'Aya';
+  const avatar = pdata.avatar || '👧';
+
+  // Update panel title
+  const pt = document.getElementById('panel-title');
+  if (pt) pt.textContent = `📊 Progress ${avatar} ${name}`;
+
+  let html = `<div style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:12px;">Sesi terakhir: ${localStorage.getItem('gl-last-session') || '-'}</div>`;
+  html += `<div style="font-size:0.8rem;color:var(--gold);margin-bottom:12px;">Total: ${totalDone}/${totalAll} aktivitas selesai</div>`;
   LESSONS.forEach(l => {
     const done = Object.keys(p[l.id] || {}).length;
     const total = l.experiences.length;
@@ -2654,11 +2930,15 @@ function updateParentPanel() {
       </div>`;
     l.experiences.forEach(e => {
       const isDone = (p[l.id] || {})[e.id];
+      const mission = OFFLINE_MISSIONS[e.id] || '';
       html += `<div class="panel-exp">
         <div class="progress-dot ${isDone ? 'done' : ''}"></div>
         <span>${e.emoji} ${e.title}</span>
         <span style="margin-left:auto;font-size:0.7rem;opacity:0.5;">${isDone ? '✓' : 'belum'}</span>
       </div>`;
+      if (isDone && mission) {
+        html += `<div style="font-size:0.7rem;color:rgba(76,175,80,0.7);padding:2px 0 6px 26px;">🌍 ${mission}</div>`;
+      }
     });
     html += `</div>`;
   });
