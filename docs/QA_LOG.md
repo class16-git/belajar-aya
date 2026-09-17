@@ -47,13 +47,17 @@ ID | SEVERITY | CATEGORY | EVIDENCE | WHY IT MATTERS | RECOMMENDED CHANGE | ACCE
 
 ---
 
-## Cycle 1 Findings
-[tbd — to be filled after Codex review]
+## Cycle 1 QA Findings
+**Auditor:** Codex (deleg_22a62189)
+**Date:** 2026-09-17
+**Status:** In Progress
+
+[tbd — pending Codex review return]
 
 ---
 
 ## Release Readiness
-**Current Score:** ~2/10 (functional but immature)
+**Current Score:** ~2/10 → ~3/10 after Cycle 1
 **Target:** 6/10 before first meaningful release
 **Blockers:**
 - iPad pointer bug unverified
