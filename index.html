@@ -160,6 +160,7 @@ body {
 .card-language::before { background: var(--blue); }
 .card-great::before { background: var(--purple); }
 .card-practical::before { background: var(--orange); }
+.card-culture::before { background: #0D47A1; }
 .card-counting::before { background: var(--green); }
 
 /* ===== FULL-WIDTH CARDS ===== */
@@ -425,13 +426,23 @@ body {
     <div class="app-desc">Huruf halus, alfabet bergerak</div>
   </a>
 
-  <!-- Card 5: Practical Life - spans full width -->
+  // Card 5: Practical Life - spans full width
   <a href="practical-life.html" class="app-card card-practical app-card-wide" id="card-practical">
     <div class="app-badge" id="badge-practical">Mulai!</div>
     <div class="app-icon">🧼</div>
     <div class="app-text">
       <div class="app-title">Latihan Tangan</div>
       <div class="app-desc">Kehidupan praktis & sensorial — tuang, pindahkan, rapikan, raba, atur</div>
+    </div>
+  </a>
+
+  <!-- Card 6: Cultural -->
+  <a href="cultural.html" class="app-card card-culture app-card-wide" id="card-cultural">
+    <div class="app-badge app-badge-new" id="badge-cultural">🌍 Baru!</div>
+    <div class="app-icon">🌍</div>
+    <div class="app-text">
+      <div class="app-title">Kehidupan di Dunia</div>
+      <div class="app-desc">Geografi, sejarah, sains, alam — kenali dunia dan isinya</div>
     </div>
   </a>
 
@@ -497,6 +508,11 @@ body {
     <div class="panel-bar"><div class="panel-bar-fill" id="panel-math-bar" style="width:0%"></div></div>
   </div>
 
+  <div class="panel-app" id="panel-cultural">
+    <div class="panel-app-name">🌍 Kehidupan di Dunia <span id="panel-cultural-pct">0%</span></div>
+    <div class="panel-bar"><div class="panel-bar-fill" id="panel-cultural-bar" style="width:0%"></div></div>
+  </div>
+
   <div style="margin-top:16px;padding-top:12px;border-top:1px solid rgba(0,0,0,0.08);font-size:0.72rem;opacity:0.45;text-align:center;">
     Belajar Aya v1.0 — Untuk Aya oleh Ayah & Ibu
   </div>
@@ -511,8 +527,9 @@ const APPS = {
   counting:   { name: 'Loncat Berhitung',   key: 'skip-progress',     badge: 'badge-counting',   bar: 'panel-counting-bar',   pct: 'panel-counting-pct',   missions: 'panel-counting-missions',   color: '#4CAF50', link: 'skip-counting.html' },
   great:      { name: 'Lima Pelajaran',      key: 'great-lessons-progress', badge: 'badge-great',  bar: 'panel-great-bar',      pct: 'panel-great-pct',      missions: 'panel-great-missions',      color: '#AB47BC', link: 'five-great-lessons.html' },
   practical:  { name: 'Latihan Tangan',     key: 'pl-progress',       badge: 'badge-practical', bar: 'panel-practical-bar',   pct: 'panel-practical-pct',   missions: 'panel-practical-missions',   color: '#FF9800', link: 'practical-life.html' },
-  language:   { name: 'Bahasa & Huruf',      key: 'language-progress',  badge: 'badge-language',   bar: 'panel-language-bar',    pct: 'panel-language-pct',    missions: 'panel-language-missions',    color: '#42A5F5', link: 'language.html' },
+  language:   { name: 'Bahasa & Huruf',     key: 'language-progress',  badge: 'badge-language',   bar: 'panel-language-bar',    pct: 'panel-language-pct',    missions: 'panel-language-missions',    color: '#42A5F5', link: 'language.html' },
   math:       { name: 'Taman Matematika',    key: 'math-progress',      badge: 'badge-math',       bar: 'panel-math-bar',       pct: 'panel-math-pct',        missions: 'panel-math-missions',        color: '#F59E0B', link: 'math.html' },
+  cultural:   { name: 'Kehidupan di Dunia',  key: 'cultural-progress',  badge: 'badge-cultural',   bar: 'panel-cultural-bar',   pct: 'panel-cultural-pct',    missions: 'panel-cultural-missions',    color: '#0D47A1', link: 'cultural.html' },
 };
 
 // ─── GREETING ───
