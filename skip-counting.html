@@ -1481,7 +1481,8 @@ function makeDot(num, cls = '') {
   d.draggable = false;
   d.style.animationDelay = (num * 5) + 'ms';
   d.style.animation = 'dotDrop 0.4s ease-out backwards';
-  d.style.pointerEvents = 'none'; // overridden to 'auto' if in source pool
+  // Source pool dots: interactive. Basket dots: non-interactive.
+  d.style.pointerEvents = 'auto';
 
   // Touch + mouse drag — iPad Safari fix: track last pointer position for pointerup
   let startX, startY, origParent;
@@ -1500,7 +1501,6 @@ function makeDot(num, cls = '') {
 
   d.addEventListener('pointermove', (e) => {
     if (!d.classList.contains('dragging')) return;
-    if (d.closest('.basket')) return; // dots inside basket are fixed
     lastX = e.clientX; lastY = e.clientY;
     d.style.position = 'fixed';
     d.style.left = (e.clientX - 26) + 'px';
