@@ -6,829 +6,478 @@
 <title>Taman Matematika — Belajar Aya</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --font-head: 'Fredoka One', cursive;
-  --font-body: 'Quicksand', sans-serif;
-  --bg: #FFF8F0;
-  --cream: #FFFDF9;
-  --brown: #5D4037;
-  --tan: #D7CCC8;
-  --gold: #F59E0B;
-  --green: #4CAF50;
-  --blue: #42A5F5;
-  --red: #EF5350;
-  --orange: #FF9800;
-  --purple: #AB47BC;
-  --shadow: 0 4px 16px rgba(0,0,0,0.10);
-}
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { height: 100%; }
-body {
-  background: var(--bg);
-  font-family: var(--font-body);
-  font-weight: 600;
-  color: var(--brown);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  touch-action: manipulation;
-}
-.screen { display: none; flex-direction: column; align-items: center; min-height: 100dvh; padding: 20px 16px 80px; }
-.screen.active { display: flex; }
-
-/* Header */
-.home-header { text-align: center; padding: 12px 0 8px; }
-.home-title { font-family: var(--font-head); font-size: 2rem; color: var(--brown); }
-.home-title span { color: var(--gold); }
-.home-sub { font-size: 0.85rem; opacity: 0.55; margin-top: 4px; }
-.home-intro { background: white; border-radius: 16px; padding: 14px; margin: 12px 0; box-shadow: var(--shadow); font-size: 0.82rem; line-height: 1.6; text-align: center; }
-
-/* Section cards */
-.cards-grid { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 420px; }
-.section-card {
-  background: white; border-radius: 18px; padding: 14px 16px;
-  box-shadow: var(--shadow); cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;
-  display: flex; align-items: center; gap: 12px; border: none; width: 100%; text-align: left;
-}
-.section-card:active { transform: scale(0.97); }
-.card-icon { font-size: 2.2rem; flex-shrink: 0; }
-.card-title { font-family: var(--font-head); font-size: 0.95rem; color: var(--brown); margin-bottom: 2px; }
-.card-desc { font-size: 0.76rem; opacity: 0.6; margin: 0; line-height: 1.3; }
-
-/* Back button */
-.btn-back {
-  position: fixed; bottom: 20px; left: 20px;
-  width: 50px; height: 50px; border-radius: 50%;
-  background: var(--brown); color: white; font-size: 1.3rem;
-  border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  z-index: 50; transition: transform 0.12s;
-}
-.btn-back:active { transform: scale(0.92); }
-
-/* NUMBER RODS */
-.rod-area { background: white; border-radius: 20px; padding: 16px; width: 100%; max-width: 420px; box-shadow: var(--shadow); margin-top: 12px; }
-.rod-prompt { font-size: 0.88rem; text-align: center; color: var(--brown); margin-bottom: 12px; }
-.rod-numbers { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px; }
-.rod-num {
-  width: 42px; height: 42px; border-radius: 10px; border: none; cursor: pointer;
-  font-family: var(--font-head); font-size: 1.1rem; color: white;
-  transition: transform 0.12s; box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-  display: flex; align-items: center; justify-content: center;
-}
-.rod-num:active { transform: scale(0.92); }
-.rod-num.active { box-shadow: 0 0 0 3px var(--gold), 0 4px 16px rgba(245,158,11,0.4); }
-.rod-display { display: flex; flex-direction: column; gap: 6px; align-items: center; margin: 10px 0; }
-.rod-bar {
-  height: 40px; border-radius: 6px; display: flex; overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-}
-.rod-seg {
-  flex: 1; min-width: 0;
-  height: 100%;
-}
-.rod-label { font-size: 0.7rem; color: var(--brown); opacity: 0.5; }
-.rod-question { font-family: var(--font-head); font-size: 1.3rem; color: var(--brown); text-align: center; margin: 8px 0; }
-.rod-answer-btns { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
-.rod-answer {
-  width: 46px; height: 46px; border-radius: 10px; border: none; cursor: pointer;
-  font-family: var(--font-head); font-size: 1.2rem; color: white;
-  transition: transform 0.12s; background: var(--blue);
-}
-.rod-answer:active { transform: scale(0.92); }
-.rod-answer.correct { background: var(--green); }
-.rod-feedback { font-size: 0.9rem; text-align: center; min-height: 22px; margin-top: 8px; }
-
-/* SPINDLE BOX */
-.spindle-area { background: white; border-radius: 20px; padding: 16px; width: 100%; max-width: 420px; box-shadow: var(--shadow); margin-top: 12px; }
-.spindle-pile { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-bottom: 16px; padding: 12px; background: #FAFAFA; border-radius: 12px; min-height: 60px; }
-.spindle {
-  width: 18px; height: 48px; border-radius: 9px;
-  background: linear-gradient(180deg, #FFF8E1 0%, #FFE082 100%);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15); cursor: grab; transition: transform 0.1s;
-  display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: rgba(0,0,0,0.2);
-  user-select: none; touch-action: none;
-}
-.spindle:active { transform: scale(1.1) rotate(3deg); cursor: grabbing; }
-.spindle.placed { opacity: 0.2; pointer-events: none; }
-.spindle-boxes { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; }
-.spindle-box {
-  min-width: 44px; min-height: 70px; border-radius: 10px;
-  border: 2px dashed var(--tan); background: #FAFAFA;
-  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
-  padding: 4px 4px 6px; gap: 3px; transition: all 0.2s;
-}
-.spindle-box.has-correct { border-color: var(--green); border-style: solid; background: #E8F5E9; }
-.spindle-box.has-wrong { border-color: var(--red); border-style: solid; }
-.spindle-box-num { font-family: var(--font-head); font-size: 1rem; color: var(--brown); }
-.spindle-box-count { font-size: 0.7rem; color: var(--brown); opacity: 0.5; }
-
-/* CARDS & COUNTERS */
-.cards-area { background: white; border-radius: 20px; padding: 16px; width: 100%; max-width: 420px; box-shadow: var(--shadow); margin-top: 12px; }
-.cards-prompt { font-size: 0.85rem; text-align: center; color: var(--brown); margin-bottom: 10px; }
-.cards-row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px; }
-.cards-num {
-  width: 52px; height: 52px; border-radius: 12px; border: 3px solid var(--tan);
-  background: white; font-family: var(--font-head); font-size: 1.4rem; color: var(--brown);
-  cursor: pointer; transition: all 0.15s; display: flex; align-items: center; justify-content: center;
-}
-.cards-num:active { transform: scale(0.93); }
-.cards-num.selected { border-color: var(--blue); background: #E3F2FD; }
-.cards-num.done { border-color: var(--green); background: #E8F5E9; color: var(--green); }
-.counters-area { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; min-height: 50px; padding: 10px; background: #FAFAFA; border-radius: 10px; }
-.counter { width: 28px; height: 28px; border-radius: 50%; background: var(--gold); font-size: 1.1rem; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: transform 0.1s; box-shadow: 0 2px 4px rgba(0,0,0,0.15); }
-.counter:active { transform: scale(0.85); }
-.counter.placed { opacity: 0.2; pointer-events: none; }
-.cards-done-msg { font-size: 0.88rem; text-align: center; color: var(--green); margin-top: 8px; }
-
-/* TEEN BOARD */
-.teen-area { background: white; border-radius: 20px; padding: 16px; width: 100%; max-width: 420px; box-shadow: var(--shadow); margin-top: 12px; }
-.teen-visual { display: flex; gap: 4px; justify-content: center; align-items: flex-end; margin: 12px 0; flex-wrap: wrap; }
-.ten-bead { width: 22px; background: linear-gradient(180deg, #FFD700 0%, #FFC107 100%); border-radius: 4px; display: flex; flex-direction: column; gap: 2px; padding: 2px 0; box-shadow: 0 2px 4px rgba(0,0,0,0.15); }
-.bead { width: 18px; height: 18px; border-radius: 50%; background: linear-gradient(135deg, #FFE082 0%, #FFD700 100%); margin: 0 auto; box-shadow: inset 0 -2px 3px rgba(0,0,0,0.15); }
-.unit-bead { width: 18px; height: 18px; border-radius: 50%; background: linear-gradient(135deg, #FFE082 0%, #FFD700 100%); box-shadow: 0 2px 4px rgba(0,0,0,0.15); }
-.teen-number { font-family: var(--font-head); font-size: 2.5rem; color: var(--gold); text-align: center; margin: 8px 0; }
-.teen-sentence { font-size: 1.1rem; text-align: center; color: var(--brown); margin-bottom: 10px; }
-.teen-slider-wrap { width: 100%; display: flex; gap: 8px; justify-content: center; align-items: center; }
-.teen-control { display: flex; flex-direction: column; align-items: center; gap: 4px; }
-.teen-control label { font-size: 0.7rem; opacity: 0.6; }
-.teen-spinner { width: 52px; height: 40px; border-radius: 10px; border: 2px solid var(--tan); background: white; font-family: var(--font-head); font-size: 1.3rem; text-align: center; cursor: pointer; display: flex; align-items: center; justify-content: center; }
-.teen-spinner:active { border-color: var(--blue); }
-.teen-btns { display: flex; gap: 6px; justify-content: center; margin-top: 10px; }
-.teen-btn { background: var(--gold); color: white; border: none; border-radius: 10px; padding: 8px 16px; font-family: var(--font-body); font-weight: 700; font-size: 0.88rem; cursor: pointer; }
-
-/* TENS BOARD */
-.tens-area { background: white; border-radius: 20px; padding: 16px; width: 100%; max-width: 420px; box-shadow: var(--shadow); margin-top: 12px; }
-.tens-visual { display: flex; gap: 4px; justify-content: center; align-items: flex-end; margin: 10px 0; flex-wrap: wrap; }
-.tens-beads { display: flex; gap: 3px; align-items: flex-end; }
-.tens-unit { display: flex; flex-direction: column; gap: 2px; align-items: center; }
-.tens-number { font-family: var(--font-head); font-size: 2.2rem; color: var(--orange); text-align: center; }
-.tens-sentence { font-size: 1.1rem; text-align: center; color: var(--brown); margin-bottom: 8px; }
-.tens-controls { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
-.tens-control { display: flex; flex-direction: column; align-items: center; gap: 4px; }
-.tens-control label { font-size: 0.7rem; opacity: 0.6; }
-
-/* Offline mission */
-.offline-mission { background: rgba(76,175,80,0.08); border: 1px solid rgba(76,175,80,0.25); border-radius: 14px; padding: 12px 14px; margin-top: 12px; width: 100%; max-width: 420px; display: flex; gap: 10px; align-items: flex-start; }
-.om-emoji { font-size: 1.6rem; flex-shrink: 0; }
-.om-title { font-family: var(--font-head); font-size: 0.8rem; color: var(--green); margin-bottom: 2px; }
-.om-text { font-size: 0.78rem; color: var(--brown); line-height: 1.5; opacity: 0.85; }
-
-/* Confetti */
-.confetti-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; }
-.confetti-piece { position: absolute; width: 10px; height: 10px; border-radius: 2px; animation: confettiFall 2.5s ease-out forwards; }
-@keyframes confettiFall { 0%{transform:translateY(-20px) rotate(0deg);opacity:1} 100%{transform:translateY(100vh) rotate(720deg);opacity:0} }
-@media (prefers-reduced-motion: reduce) { *,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important} }</style>
+:root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--blue:#42A5F5;--cream:#FFF8F0;--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:manipulation}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.screen{display:none;min-height:100dvh;flex-direction:column}
+.screen.active{display:flex}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+.star{position:absolute;background:#fff;border-radius:50%;animation:twinkle 3s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.9}}
+.top-bar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
+.top-btn{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.top-btn:active{transform:scale(.92)}
+.hero{padding:8px 16px 16px;position:relative;z-index:1;text-align:center}
+.hero-title{font-family:var(--font-h);font-size:1.6rem;color:var(--gold);margin-bottom:4px}
+.hero-sub{font-size:.8rem;opacity:.5}
+.act-grid{display:flex;flex-direction:column;gap:10px;padding:0 16px 100px;position:relative;z-index:1}
+.act-card{background:var(--card);border-radius:18px;padding:14px 16px;box-shadow:0 4px 20px rgba(0,0,0,.3);cursor:pointer;border:none;width:100%;text-align:left;color:var(--cream);display:flex;gap:14px;align-items:center;transition:transform .15s;font-family:var(--font-b)}
+.act-card:active{transform:scale(.97)}
+.act-num{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);font-family:var(--font-h);font-size:1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.act-card.done .act-num{background:var(--green);border-color:var(--green);color:#fff}
+.act-name{font-family:var(--font-h);font-size:1rem;margin-bottom:2px}
+.act-desc{font-size:.75rem;opacity:.5;line-height:1.3}
+.act-badge{margin-left:auto;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.15);font-size:.7rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.act-badge.done{background:var(--green);border-color:var(--green);color:#fff}
+.exp-header{padding:10px 16px 6px;position:relative;z-index:1}
+.exp-title{font-family:var(--font-h);font-size:1.2rem;color:var(--gold);text-align:center;margin-bottom:4px}
+.exp-prompt{font-size:.85rem;opacity:.7;text-align:center;margin-bottom:14px;padding:0 16px}
+.exp-area{padding:0 16px 100px;flex:1;position:relative;z-index:1}
+.exp-instruction{background:rgba(255,255,255,.07);border-radius:14px;padding:12px 16px;margin:10px 0;font-size:.85rem;line-height:1.6;text-align:center;border:1px solid rgba(255,255,255,.08)}
+.demo-box{background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.1);border-radius:16px;padding:16px;text-align:center;margin:10px 0}
+.demo-label{font-size:.75rem;opacity:.5;margin-bottom:8px}
+.btn{padding:12px 20px;border-radius:14px;border:none;cursor:pointer;font-family:var(--font-b);font-weight:700;font-size:.88rem;transition:transform .12s;display:inline-block}
+.btn:active{transform:scale(.95)}
+.btn-primary{background:var(--gold);color:var(--bg)}
+.btn-secondary{background:rgba(255,255,255,.08);color:var(--cream);border:1px solid rgba(255,255,255,.12)}
+.back-btn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);border-radius:12px;padding:8px 14px;font-family:var(--font-b);font-weight:600;font-size:.85rem;cursor:pointer;display:flex;align-items:center;gap:6px}
+.back-btn:active{transform:scale(.95)}
+.lesson-back{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);border-radius:12px;padding:8px 14px;font-family:var(--font-b);font-weight:600;font-size:.85rem;cursor:pointer;display:flex;align-items:center;gap:6px;width:fit-content}
+.lesson-back:active{transform:scale(.95)}
+.rod-row{display:flex;align-items:flex-end;gap:6px;margin:6px 0;cursor:pointer;transition:transform .15s}
+.rod-row:active{transform:scale(.97)}
+.rod-seg{height:30px;background:var(--blue);border-radius:4px 4px 0 0;flex-shrink:0;transition:background .2s}
+.rod-row.selected .rod-seg{background:var(--gold)}
+.rod-label{font-family:var(--font-h);font-size:.8rem;min-width:24px;text-align:center;flex-shrink:0}
+.spindle-box{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:10px 0}
+.spindle-slot{background:rgba(255,255,255,.05);border:2px dashed rgba(255,255,255,.15);border-radius:12px;min-width:56px;min-height:60px;padding:6px;display:flex;flex-wrap:wrap;gap:4px;align-items:flex-start;justify-content:center;cursor:pointer;transition:border-color .2s,background .2s}
+.spindle-slot.selected{border-color:var(--gold);background:rgba(255,215,0,.08)}
+.spindle-slot.correct{border-color:var(--green);background:rgba(76,175,80,.08)}
+.spindle-slot .num{font-family:var(--font-h);font-size:.75rem;opacity:.5;margin-bottom:4px}
+.spindle-item{width:24px;height:24px;border-radius:50%;cursor:grab;display:flex;align-items:center;justify-content:center;font-size:.9rem;border:none;transition:transform .12s}
+.spindle-item:active{transform:scale(.85)}
+.counter-grid{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin:8px 0}
+.counter-card{background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.1);border-radius:12px;padding:8px;min-width:60px;text-align:center;cursor:pointer;transition:border-color .2s,transform .15s}
+.counter-card:active{transform:scale(.95)}
+.counter-card.selected{border-color:var(--gold);background:rgba(255,215,0,.08)}
+.counter-card.done{border-color:var(--green);background:rgba(76,175,80,.08)}
+.counter-num{font-family:var(--font-h);font-size:1.4rem;color:var(--gold)}
+.counter-dots{display:flex;flex-wrap:wrap;gap:3px;justify-content:center;margin-top:6px}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--blue);display:inline-block}
+.teen-board{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px 0;max-width:320px;margin:0 auto}
+.teen-card{background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.1);border-radius:14px;padding:14px 8px;text-align:center;cursor:pointer;transition:all .15s;font-family:var(--font-b)}
+.teen-card:active{transform:scale(.95)}
+.teen-card.revealed{border-color:var(--gold);background:rgba(255,215,0,.08)}
+.teen-base{font-family:var(--font-h);font-size:1.8rem;color:var(--cream)}
+.teen-value{font-family:var(--font-h);font-size:1.4rem;color:var(--gold);min-height:1.6rem}
+.tens-board{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px 0;max-width:320px;margin:0 auto}
+.tens-card{background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.1);border-radius:14px;padding:14px 8px;text-align:center;cursor:pointer;transition:all .15s;font-family:var(--font-b)}
+.tens-card:active{transform:scale(.95)}
+.tens-card.done{border-color:var(--green);background:rgba(76,175,80,.08)}
+.tens-value{font-family:var(--font-h);font-size:1.6rem;color:var(--gold)}
+.tens-label{font-size:.7rem;opacity:.5;margin-top:4px}
+.home-fab{position:fixed;bottom:20px;left:20px;width:50px;height:50px;border-radius:50%;background:var(--green);color:#fff;font-size:1.3rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.home-fab:active{transform:scale(.9)}
+.parent-fab{position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--gold);color:var(--bg);font-size:1.2rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100}
+.parent-fab:active{transform:scale(.9)}
+.rabbity-fab{position:fixed;bottom:80px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--card);border:2px solid rgba(255,255,255,.15);color:var(--cream);font-size:1.3rem;z-index:99;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.rabbity-bubble{position:fixed;bottom:140px;right:20px;z-index:98;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:10px 14px;max-width:220px;font-size:.8rem;line-height:1.5;color:var(--cream);box-shadow:0 4px 16px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .3s}
+.rabbity-bubble.show{opacity:1}
+.parent-panel{position:fixed;bottom:0;left:0;right:0;background:var(--cream);color:#333;border-radius:20px 20px 0 0;padding:20px 16px 90px;box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;max-height:70vh;overflow-y:auto;transform:translateY(110%);transition:transform .3s}
+.parent-panel.open{transform:translateY(0)}
+.panel-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
+.panel-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
+.panel-row{margin-bottom:12px}
+.panel-row-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
+.panel-bar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
+.panel-bar-fill{height:100%;border-radius:4px;transition:width .5s}
+.panel-missions{font-size:.73rem;color:#666;margin-top:3px}
+.confetti-container{position:fixed;inset:0;pointer-events:none;z-index:9999}
+.confetti-piece{position:absolute;width:10px;height:10px;border-radius:2px;animation:confettiFall 2.5s ease-out forwards}
+@keyframes confettiFall{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+</style>
 </head>
 <body>
+<div class="stars" id="stars"></div>
 
 <!-- HOME -->
 <div class="screen active" id="screen-home">
-  <div class="home-header">
-    <div style="font-size:2.5rem;margin-bottom:4px;">🐰</div>
-    <div class="home-title">Taman <span>Matematika</span></div>
-    <div class="home-sub">Bersama Rabbity si kelinci</div>
+  <div class="top-bar">
+    <div></div>
+    <div style="font-family:var(--font-h);color:var(--gold);font-size:.9rem;">Taman Matematika</div>
+    <button class="top-btn" onclick="toggleParent()">👤</button>
   </div>
-  <div class="home-intro">
-    <strong>Montessori CPA:</strong> <strong>Concrete</strong> — raba benda sebenarnya. <strong>Pictorial</strong> — lihat gambarnya. <strong>Abstract</strong> — pakai angka saja.
-    <br><br>Rabbity akan membantumu memahami matematika dengan cara yang menyenangkan!
+  <div class="hero">
+    <div style="font-size:2.5rem;margin-bottom:4px;">🔢</div>
+    <div class="hero-title">Taman Matematika</div>
+    <div class="hero-sub">Montessori CPA — Concrete, Pictorial, Abstract</div>
   </div>
-
-  <div class="cards-grid">
-    <button class="section-card" onclick="showScreen('rods')">
-      <div class="card-icon">📏</div>
-      <div>
-        <div class="card-title">Tongkat Bilangan</div>
-        <div class="card-desc">Panjang dan pendek — raba bedanya!</div>
-      </div>
-    </button>
-    <button class="section-card" onclick="showScreen('spindle')">
-      <div class="card-icon">📦</div>
-      <div>
-        <div class="card-title">Kotak Spindel</div>
-        <div class="card-desc">Masukkan jumlah yang tepat ke setiap kotak</div>
-      </div>
-    </button>
-    <button class="section-card" onclick="showScreen('cards')">
-      <div class="card-icon">🔢</div>
-      <div>
-        <div class="card-title">Kartu & Counter</div>
-        <div class="card-desc">Pasang angka dengan jumlah benda</div>
-      </div>
-    </button>
-    <button class="section-card" onclick="showScreen('teen')">
-      <div class="card-icon">1️⃣</div>
-      <div>
-        <div class="card-title">Papan Belasan</div>
-        <div class="card-desc">11, 12, 13... 10 tambah 1!</div>
-      </div>
-    </button>
-    <button class="section-card" onclick="showScreen('tens')">
-      <div class="card-icon">🔟</div>
-      <div>
-        <div class="card-title">Papan Puluhan</div>
-        <div class="card-desc">20, 30, 40... loncat 10!</div>
-      </div>
-    </button>
-  </div>
-
-  <div class="offline-mission">
-    <div class="om-emoji">🌍</div>
-    <div>
-      <div class="om-title">Misi di dunia nyata!</div>
-      <div class="om-text">Gunakan pensil dan kertas. Gambar tongkat bilangan 1 sampai 5. Warnai merah dan biru!</div>
-    </div>
-  </div>
+  <div class="act-grid" id="act-grid"></div>
 </div>
 
-<!-- NUMBER RODS -->
-<div class="screen" id="screen-rods">
-  <div class="home-header" style="padding:0 0 8px;">
-    <div class="home-title">📏 Tongkat Bilangan</div>
-    <div class="home-sub">Panjang dan pendek</div>
+<!-- ACTIVITY -->
+<div class="screen" id="screen-act">
+  <div class="exp-header">
+    <button class="lesson-back" onclick="goBack()">← Kembali</button>
+    <div class="exp-title" id="act-title"></div>
+    <div class="exp-prompt" id="act-prompt"></div>
   </div>
-
-  <div class="rod-area">
-    <div class="rod-prompt">Rabbity menunjukkan tongkat panjang. Panjang berapa? Tap angka yang benar!</div>
-    <div class="rod-numbers" id="rod-nums"></div>
-    <div class="rod-display" id="rod-display"></div>
-    <div class="rod-question" id="rod-question">Berapa panjang tongkat ini?</div>
-    <div class="rod-answer-btns" id="rod-answers"></div>
-    <div class="rod-feedback" id="rod-feedback"></div>
-  </div>
-
-  <button class="btn-back" onclick="showScreen('home')">←</button>
+  <div class="exp-area" id="act-area"></div>
 </div>
 
-<!-- SPINDLE BOX -->
-<div class="screen" id="screen-spindle">
-  <div class="home-header" style="padding:0 0 8px;">
-    <div class="home-title">📦 Kotak Spindel</div>
-    <div class="home-sub">Masukkan spindel ke kotak yang benar</div>
-  </div>
+<!-- FABs -->
+<a href="index.html" class="home-fab">🏠</a>
+<button class="parent-fab" onclick="toggleParent()">👤</button>
+<button class="rabbity-fab" onclick="rabbitySpeak()">🐰</button>
+<div class="rabbity-bubble" id="rabbity-bubble"></div>
 
-  <div class="spindle-area">
-    <div style="font-size:0.85rem;text-align:center;color:var(--brown);margin-bottom:8px;">Tap spindel, lalu tap kotak dengan angka yang sama!</div>
-    <div class="spindle-pile" id="spindle-pile"></div>
-    <div class="spindle-boxes" id="spindle-boxes"></div>
-    <div id="spindle-feedback" style="font-size:0.88rem;text-align:center;min-height:20px;margin-top:8px;"></div>
-  </div>
-
-  <button class="btn-back" onclick="showScreen('home')">←</button>
+<!-- Parent Panel -->
+<div class="parent-panel" id="parent-panel">
+  <div class="panel-handle"></div>
+  <button onclick="toggleParent()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">✕</button>
+  <div class="panel-title">📊 Progress Matematika</div>
+  <div id="parent-content"></div>
 </div>
 
-<!-- CARDS & COUNTERS -->
-<div class="screen" id="screen-cards">
-  <div class="home-header" style="padding:0 0 8px;">
-    <div class="home-title">🔢 Kartu & Counter</div>
-    <div class="home-sub">Pasang angka dengan jumlah</div>
-  </div>
-
-  <div class="cards-area">
-    <div class="cards-prompt">Tap angka, lalu tap counter untuk menambah!</div>
-    <div class="cards-row" id="cards-nums"></div>
-    <div class="counters-area" id="counters-area"></div>
-    <div class="cards-done-msg" id="cards-msg"></div>
-  </div>
-
-  <button class="btn-back" onclick="showScreen('home')">←</button>
-</div>
-
-<!-- TEEN BOARD -->
-<div class="screen" id="screen-teen">
-  <div class="home-header" style="padding:0 0 8px;">
-    <div class="home-title">1️⃣ Papan Belasan</div>
-    <div class="home-sub">10 + 1 = 11... 10 + 9 = 19</div>
-  </div>
-
-  <div class="teen-area">
-    <div class="teen-visual" id="teen-visual"></div>
-    <div class="teen-number" id="teen-number">11</div>
-    <div class="teen-sentence" id="teen-sentence">10 + 1 = ?</div>
-    <div class="teen-slider-wrap">
-      <div class="teen-control">
-        <label>Puluhan</label>
-        <div class="teen-spinner" id="teen-tens" onclick="adjustTeen('tens',1)">10</div>
-      </div>
-      <div style="font-size:1.5rem;">+</div>
-      <div class="teen-control">
-        <label>Satuan</label>
-        <div class="teen-spinner" id="teen-units" onclick="adjustTeen('units',1)">1</div>
-      </div>
-    </div>
-    <div class="teen-btns">
-      <button class="teen-btn" onclick="adjustTeen('units',-1)">− Satuan</button>
-      <button class="teen-btn" onclick="adjustTeen('units',1)">+ Satuan</button>
-      <button class="teen-btn" onclick="confirmTeen()">✅ Benar!</button>
-    </div>
-  </div>
-
-  <button class="btn-back" onclick="showScreen('home')">←</button>
-</div>
-
-<!-- TENS BOARD -->
-<div class="screen" id="screen-tens">
-  <div class="home-header" style="padding:0 0 8px;">
-    <div class="home-title">🔟 Papan Puluhan</div>
-    <div class="home-sub">Loncat 10! 20, 30, 40...</div>
-  </div>
-
-  <div class="tens-area">
-    <div class="tens-visual" id="tens-visual"></div>
-    <div class="tens-number" id="tens-number">20</div>
-    <div class="tens-sentence" id="tens-sentence">2 puluhan = 20</div>
-    <div class="tens-controls">
-      <div class="tens-control">
-        <label>Puluhan</label>
-        <div style="display:flex;gap:6px;">
-          <button class="teen-btn" onclick="adjustTens(-10)">−</button>
-          <button class="teen-btn" onclick="adjustTens(10)">+</button>
-        </div>
-      </div>
-      <div class="tens-control">
-        <label>Satuan</label>
-        <div style="display:flex;gap:6px;">
-          <button class="teen-btn" onclick="adjustUnits(-1)">−</button>
-          <button class="teen-btn" onclick="adjustUnits(1)">+</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <button class="btn-back" onclick="showScreen('home')">←</button>
-</div>
-
-<!-- CONFETTI -->
+<!-- Confetti -->
 <div class="confetti-container" id="confetti-container"></div>
 
 <script>
-// ─── STATE ───
-const state = {
-  currentArea: null,
-  rods: { selected: 5, answered: false },
-  spindles: { pile: [], placed: {}, selected: null },
-  cards: { selected: null, counters: 0 },
-  teen: { tens: 10, units: 1 },
-  tens: { tens: 2, units: 0 },
-  progress: loadProgress(),
-};
+const ACTIVITIES=[
+  {id:'rods',name:'Garis Bilangan',desc:'Gunakan garis untuk melompat',prompt:'Tap garis untuk melompat dari satu angka ke angka lain'},
+  {id:'spindle',name:'Kotak Spindel',desc:'Masukkan spindel ke kotak yang benar',prompt:'Hitung spindel, lalu taruh di kotak yang sesuai'},
+  {id:'counters',name:'Kartu dan Counter',desc:'Padankan angka dengan jumlah titik',prompt:'Taruh titik yang sesuai di bawah angka'},
+  {id:'teen',name:'Papan Belasan',desc:'Kenali angka 11 sampai 19',prompt:'Tap untuk melihat angka belasannya'},
+  {id:'tens',name:'Papan Puluhan',desc:'Kenali angka 20 sampai 90',prompt:'Tap untuk belajar puluhan'},
+];
 
-function loadProgress() {
-  try { return JSON.parse(localStorage.getItem('math-progress') || '{}'); } catch(e) { return {}; }
-}
-function saveProgress(p) {
-  try { localStorage.setItem('math-progress', JSON.stringify(p)); } catch(e) {}
-}
-function markDone(area, key) {
-  const p = state.progress;
-  if (!p[area]) p[area] = {};
-  p[area][key] = true;
-  saveProgress(p);
+let state={history:['home'],progress:{},selectedRod:null};
+
+function lsGet(k,def){try{const v=localStorage.getItem(k);return v?JSON.parse(v):def}catch(e){return def}}
+function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+
+function init(){
+  state.progress=lsGet('math-progress',{});
+  genStars();
+  renderHome();
+  setTimeout(()=>say('Hai! Ayo belajar matematika!'),800);
 }
 
-// ─── SCREEN ───
-function showScreen(name) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.getElementById('screen-' + name).classList.add('active');
-  state.currentArea = name;
-  if (name === 'rods') initRods();
-  if (name === 'spindle') initSpindle();
-  if (name === 'cards') initCards();
-  if (name === 'teen') initTeen();
-  if (name === 'tens') initTens();
-}
-
-// ─── NUMBER RODS ───
-function initRods() {
-  state.rods = { selected: Math.floor(Math.random() * 9) + 1, answered: false };
-  renderRodNums();
-  renderRodDisplay();
-  renderRodAnswers();
-}
-
-function renderRodNums() {
-  const el = document.getElementById('rod-nums');
-  el.innerHTML = '';
-  const colors = ['#EF5350','#E91E63','#9C27B0','#673AB7','#3F51B5','#2196F3','#00BCD4','#009688','#4CAF50'];
-  for (let i = 1; i <= 9; i++) {
-    const btn = document.createElement('button');
-    btn.className = 'rod-num';
-    btn.textContent = i;
-    btn.style.background = colors[i - 1];
-    btn.onclick = () => selectRod(i);
-    el.appendChild(btn);
+function genStars(){
+  const el=document.getElementById('stars');
+  el.innerHTML='';
+  for(let i=0;i<60;i++){
+    const s=document.createElement('div');
+    s.className='star';
+    const sz=Math.random()*2+1;
+    s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation-delay:${(Math.random()*3).toFixed(1)}s;animation-duration:${(Math.random()*2+2).toFixed(1)}s`;
+    el.appendChild(s);
   }
 }
 
-function selectRod(n) {
-  state.rods.selected = n;
-  state.rods.answered = false;
-  document.getElementById('rod-feedback').textContent = '';
-  document.querySelectorAll('.rod-num').forEach((b, i) => {
-    b.classList.toggle('active', i + 1 === n);
-  });
-  renderRodDisplay();
-  renderRodAnswers();
-}
-
-function renderRodDisplay() {
-  const n = state.rods.selected;
-  const colors = ['#EF5350','#42A5F5'];
-  const segW = 18;
-  const display = document.getElementById('rod-display');
-  display.innerHTML = '';
-  const bar = document.createElement('div');
-  bar.className = 'rod-bar';
-  bar.style.width = (segW * n) + 'px';
-  for (let i = 0; i < n; i++) {
-    const seg = document.createElement('div');
-    seg.className = 'rod-seg';
-    seg.style.background = colors[i % 2];
-    bar.appendChild(seg);
-  }
-  display.appendChild(bar);
-  const label = document.createElement('div');
-  label.className = 'rod-label';
-  label.textContent = 'Panjang: ' + n;
-  display.appendChild(label);
-}
-
-function renderRodAnswers() {
-  const correct = state.rods.selected;
-  const answers = [correct];
-  while (answers.length < 4) {
-    const r = Math.floor(Math.random() * 9) + 1;
-    if (!answers.includes(r)) answers.push(r);
-  }
-  answers.sort(() => Math.random() - 0.5);
-  const el = document.getElementById('rod-answers');
-  el.innerHTML = '';
-  answers.forEach(a => {
-    const btn = document.createElement('button');
-    btn.className = 'rod-answer';
-    btn.textContent = a;
-    btn.onclick = () => answerRod(a);
-    el.appendChild(btn);
-  });
-}
-
-function answerRod(n) {
-  if (state.rods.answered) return;
-  state.rods.answered = true;
-  const feedback = document.getElementById('rod-feedback');
-  const correct = state.rods.selected;
-  if (n === correct) {
-    feedback.innerHTML = '<span style="color:var(--green)">✅ Tepat! Panjang tongkat ini adalah ' + correct + '!</span>';
-    document.querySelectorAll('.rod-answer').forEach((b, i) => {
-      const label = answers[i];
-      if (label === correct) b.classList.add('correct');
-    });
+function markDone(id){
+  if(!state.progress[id]){
+    state.progress[id]=true;
+    lsSet('math-progress',state.progress);
     confetti();
-    markDone('rods', correct);
-  } else {
-    feedback.innerHTML = '<span style="color:var(--red)">❌ Belum tepat... coba angka lain!</span>';
+    say('Hebat! Kamu sudah selesai!');
   }
 }
+function isDone(id){return !!state.progress[id]}
 
-// ─── SPINDLE BOX ───
-function initSpindle() {
-  // 45 spindles total: 1+2+3+4+5+6+7+8+9 = 45
-  const pile = [];
-  for (let n = 1; n <= 9; n++) {
-    for (let i = 0; i < n; i++) pile.push(n);
-  }
-  state.spindles = {
-    pile: pile.sort(() => Math.random() - 0.5),
-    placed: {},
-    selected: null
-  };
-  renderSpindlePile();
-  renderSpindleBoxes();
-  document.getElementById('spindle-feedback').textContent = '';
+function showScreen(name){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  const el=document.getElementById('screen-'+name);
+  if(el)el.classList.add('active');
+  if(name!=='home')state.history.push(name);
+  if(name==='home')state.history=['home'];
+  if(name==='home')closeParent();
+}
+function goBack(){
+  if(state.history.length>1)state.history.pop();
+  showScreen(state.history[state.history.length-1]||'home');
 }
 
-function renderSpindlePile() {
-  const el = document.getElementById('spindle-pile');
-  el.innerHTML = '';
-  state.spindles.pile.forEach((n, i) => {
-    const sp = document.createElement('div');
-    sp.className = 'spindle';
-    sp.textContent = n;
-    sp.dataset.n = n;
-    sp.dataset.idx = i;
-    if (state.spindles.pile.filter(x => x === n).length === 0) sp.classList.add('placed');
-    sp.onclick = () => selectSpindle(i);
-    el.appendChild(sp);
+function renderHome(){
+  const grid=document.getElementById('act-grid');
+  grid.innerHTML='';
+  ACTIVITIES.forEach((a,i)=>{
+    const done=isDone(a.id);
+    const card=document.createElement('button');
+    card.className='act-card'+(done?' done':'');
+    card.onclick=()=>openAct(a);
+    card.innerHTML=`<div class="act-num">${done?'✓':(i+1)}</div><div><div class="act-name">${a.name}</div><div class="act-desc">${a.desc}</div></div><div class="act-badge ${done?'done':''}">${done?'✓':''}</div>`;
+    grid.appendChild(card);
   });
 }
 
-function renderSpindleBoxes() {
-  const el = document.getElementById('spindle-boxes');
-  el.innerHTML = '';
-  for (let i = 0; i <= 9; i++) {
-    const count = state.spindles.placed[i] || 0;
-    const box = document.createElement('div');
-    box.className = 'spindle-box';
-    box.id = 'sp-box-' + i;
-    box.dataset.num = i;
+function openAct(a){
+  document.getElementById('act-title').textContent='🔢 '+a.name;
+  document.getElementById('act-prompt').textContent=a.prompt;
+  const area=document.getElementById('act-area');
+  area.innerHTML='';
+  switch(a.id){
+    case'rods':renderRods(area);break;
+    case'spindle':renderSpindle(area);break;
+    case'counters':renderCounters(area);break;
+    case'teen':renderTeen(area);break;
+    case'tens':renderTens(area);break;
+  }
+  showScreen('act');
+}
 
-    const num = document.createElement('div');
-    num.className = 'spindle-box-num';
-    num.textContent = i;
-    box.appendChild(num);
+// ── RODS ──
+function renderRods(area){
+  const numbers=[1,2,3,4,5,6,7,8,9,10];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Tap angka, lalu tap angka kedua untuk melompat!</div>
+      <div style="margin:10px 0;">
+        ${numbers.map(n=>`
+          <div class="rod-row" id="rod-${n}" onclick="selectRod(${n})" style="height:${20+n*5}px;align-items:flex-end;">
+            ${Array(n).fill('<div class="rod-seg" style="width:26px;"></div>').join('')}
+            <div class="rod-label">${n}</div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="rod-msg">Tap angka untuk mulai melompat!</div>
+      <div id="rod-jump" style="font-family:var(--font-h);font-size:1.2rem;color:var(--gold);min-height:2rem;margin-top:8px;"></div>
+    </div>
+    <button class="btn btn-primary" onclick="markDone('rods');say('Hebat! Kamu bisa melompat di garis bilangan!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+  `;
+}
+function selectRod(n){
+  document.querySelectorAll('.rod-row').forEach(el=>el.classList.remove('selected'));
+  const el=document.getElementById('rod-'+n);
+  if(!el)return;
+  el.classList.add('selected');
+  const msg=document.getElementById('rod-msg');
+  if(state.selectedRod!==null){
+    const jump=n-state.selectedRod;
+    const sign=jump>=0?'+':'';
+    const jumpEl=document.getElementById('rod-jump');
+    if(jumpEl)jumpEl.textContent=`${state.selectedRod} ${sign}${jump} = ${n}`;
+    if(msg)msg.textContent=`Melompat ${sign}${jump} langkah!`;
+    say(`Dari ${state.selectedRod} ke ${n}, melompat ${sign}${jump}`);
+  } else {
+    if(msg)msg.textContent=`Angka ${n} dipilih! Tap angka lain untuk melompat!`;
+    say(`Angka ${n}. Tap angka lain!`);
+  }
+  state.selectedRod=n;
+}
 
-    const cnt = document.createElement('div');
-    cnt.className = 'spindle-box-count';
-    cnt.id = 'sp-count-' + i;
-    cnt.textContent = count + ' / ' + i;
-    box.appendChild(cnt);
-
-    // Show placed spindles in box
-    for (let j = 0; j < count; j++) {
-      const mini = document.createElement('div');
-      mini.className = 'spindle';
-      mini.style.width = '14px';
-      mini.style.height = '30px';
-      mini.style.fontSize = '0';
-      mini.style.cursor = 'default';
-      box.appendChild(mini);
+// ── SPINDLE ──
+function renderSpindle(area){
+  const slots=[1,2,3,4,5,6,7,8,9];
+  // Each number: spindle objects represented as dots
+  const spindles=[];
+  for(let i=1;i<=9;i++)for(let j=0;j<i;j++)spindles.push({id:`sp-${i}-${j}`,num:i,color:['#EF5350','#FF7043','#FFCA28','#66BB6A','#26C6DA','#42A5F5','#5C6BC0','#AB47BC','#EC407A'][i-1]});
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Taruh spindel di kotak yang sesuai jumlahnya!</div>
+      <div class="spindle-box" id="spindle-source">
+        ${spindles.map(s=>`<button class="spindle-item" id="${s.id}" onclick="grabSpindle('${s.id}')" style="background:${s.color}">●</button>`).join('')}
+      </div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin-top:14px;">
+        ${slots.map(n=>`
+          <div class="spindle-slot" id="slot-${n}" onclick="dropSpindle(${n})">
+            <div class="num">${n}</div>
+            <div class="slot-items"></div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="spindle-msg">Tap spindel untuk ambil, lalu tap kotak untuk taruh!</div>
+    </div>
+    <button class="btn btn-primary" onclick="checkSpindle()" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Cek Jawaban!</button>
+  `;
+  window._spindleHeld=null;
+}
+function grabSpindle(id){
+  const el=document.getElementById(id);
+  if(!el||el.style.opacity==='0.3')return;
+  document.querySelectorAll('.spindle-slot').forEach(s=>s.classList.remove('selected'));
+  el.style.opacity='0.3';
+  window._spindleHeld={id,num:parseInt(id.split('-')[1])};
+  const msg=document.getElementById('spindle-msg');
+  if(msg)msg.textContent='Tap kotak untuk taruh spindel!';
+}
+function dropSpindle(n){
+  if(!window._spindleHeld)return;
+  const slot=document.getElementById('slot-'+n);
+  if(!slot)return;
+  const sourceEl=document.getElementById(window._spindleHeld.id);
+  const color=sourceEl?sourceEl.style.background:'#EF5350';
+  if(sourceEl)sourceEl.style.opacity='0.3';
+  const chip=document.createElement('div');
+  chip.textContent='●';
+  chip.style.cssText='font-size:.8rem;color:'+color;
+  const items=slot.querySelector('.slot-items');
+  if(items)items.appendChild(chip);
+  window._spindleHeld=null;
+  const msg=document.getElementById('spindle-msg');
+  if(msg)msg.textContent='Tap spindel lain untuk lanjut!';
+}
+function checkSpindle(){
+  let correct=true;
+  for(let n=1;n<=9;n++){
+    const slot=document.getElementById('slot-'+n);
+    if(!slot)continue;
+    const items=slot.querySelectorAll('.slot-items > *');
+    if(items.length===n){
+      slot.classList.add('correct');
+    } else {
+      slot.style.borderColor='#EF5350';
+      correct=false;
     }
-
-    box.onclick = () => placeSpindle(i);
-    el.appendChild(box);
+  }
+  if(correct){
+    markDone('spindle');
+    say('Semua spindel di tempat yang benar!');
+  } else {
+    say('Coba hitung lagi di setiap kotak!');
   }
 }
 
-function selectSpindle(idx) {
-  const pile = state.spindles.pile;
-  if (pile.filter((_, i) => i !== idx).length === 0) return;
-  const n = pile[idx];
-  state.spindles.selected = idx;
-  // Visual feedback
-  document.querySelectorAll('.spindle').forEach((s, i) => {
-    s.style.boxShadow = i === idx ? '0 0 0 2px var(--gold)' : '';
+// ── COUNTERS ──
+function renderCounters(area){
+  const cards=[1,2,3,4,5,6,7,8,9];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Pasangkan angka dengan jumlah titik yang benar!</div>
+      <div class="counter-grid" id="counter-cards">
+        ${cards.map(n=>`
+          <div class="counter-card" id="cc-${n}" onclick="selectCounter(${n})">
+            <div class="counter-num">${n}</div>
+            <div class="counter-dots" id="dots-${n}"></div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="counter-msg">Pilih kartu angka!</div>
+      <div id="selected-info" style="margin-top:10px;font-family:var(--font-h);font-size:1.1rem;color:var(--gold);min-height:1.4rem;"></div>
+    </div>
+    <button class="btn btn-primary" onclick="markDone('counters');say('Hebat! Kamu bisa menghitung!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+  `;
+}
+function selectCounter(n){
+  document.querySelectorAll('.counter-card').forEach(c=>c.classList.remove('selected'));
+  const card=document.getElementById('cc-'+n);
+  if(card)card.classList.add('selected');
+  const dots=document.getElementById('dots-'+n);
+  if(!dots)return;
+  dots.innerHTML=Array(n).fill('<span class="dot"></span>').join('');
+  const info=document.getElementById('selected-info');
+  if(info)info.textContent=`${n} titik!`;
+  const msg=document.getElementById('counter-msg');
+  if(msg)msg.textContent=`Angka ${n} punya ${n} titik!`;
+  say(`${n} titik untuk angka ${n}!`);
+}
+
+// ── TEEN ──
+function renderTeen(area){
+  const teens=[11,12,13,14,15,16,17,18,19];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Tap untuk lihat angka belasan!</div>
+      <div class="teen-board">
+        ${teens.map(n=>`
+          <div class="teen-card" id="teen-${n}" onclick="revealTeen(${n})">
+            <div class="teen-base">10</div>
+            <div class="teen-value" id="tv-${n}">?</div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="teen-msg">Tap angka untuk ketahui nilainya!</div>
+    </div>
+    <button class="btn btn-primary" onclick="markDone('teen');say('Belasan: 10 + 1 sampai 10 + 9!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+  `;
+}
+function revealTeen(n){
+  const card=document.getElementById('teen-'+n);
+  const val=document.getElementById('tv-'+n);
+  if(card&&val){
+    card.classList.add('revealed');
+    val.textContent='+ '+(n-10);
+    say(`${n} = 10 + ${n-10}`);
+  }
+}
+
+// ── TENS ──
+function renderTens(area){
+  const tens=[20,30,40,50,60,70,80,90];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Angka puluhan!</div>
+      <div class="tens-board">
+        ${tens.map(n=>`
+          <div class="tens-card" id="tens-${n}" onclick="tapTens(${n})">
+            <div class="tens-value">${n}</div>
+            <div class="tens-label">${n/10} puluhan</div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="tens-msg">Tap untuk belajar puluhan!</div>
+    </div>
+    <button class="btn btn-primary" onclick="markDone('tens');say('Puluhan: 20 sampai 90!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+  `;
+}
+function tapTens(n){
+  const card=document.getElementById('tens-'+n);
+  if(card)card.classList.add('done');
+  const msg=document.getElementById('tens-msg');
+  if(msg)msg.textContent=`${n} = ${n/10} × 10`;
+  say(`${n} sama dengan ${n/10} puluhan!`);
+}
+
+// ── RABBITY ──
+function rabbitySpeak(){
+  const msgs=['Ayo belajar matematika!','Kamu hebat dengan angka!','Hitung lagi!','Rabbity bangga!'];
+  say(msgs[Math.floor(Math.random()*msgs.length)]);
+}
+function say(text){
+  const b=document.getElementById('rabbity-bubble');
+  if(b){b.textContent='🐰 '+text;b.classList.add('show');}
+  if('speechSynthesis' in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='id-ID';u.rate=.85;speechSynthesis.speak(u);}
+  setTimeout(()=>{if(b)b.classList.remove('show')},3500);
+}
+
+// ── CONFETTI ──
+function confetti(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const c=document.getElementById('confetti-container');
+  if(!c)return;
+  c.innerHTML='';
+  const colors=['#FFD700','#EF5350','#66BB6A','#42A5F5','#AB47BC','#FF9800'];
+  for(let i=0;i<30;i++){const p=document.createElement('div');p.className='confetti-piece';p.style.left=Math.random()*100+'%';p.style.background=colors[Math.floor(Math.random()*colors.length)];p.style.animationDelay=(Math.random()*.8)+'s';c.appendChild(p);}
+  setTimeout(()=>c.innerHTML='',3500);
+}
+
+// ── PARENT PANEL ──
+function toggleParent(){
+  const p=document.getElementById('parent-panel');
+  if(!p)return;
+  p.classList.toggle('open');
+  if(p.classList.contains('open'))renderParentPanel();
+}
+function closeParent(){
+  const p=document.getElementById('parent-panel');
+  if(p)p.classList.remove('open');
+}
+function renderParentPanel(){
+  const c=document.getElementById('parent-content');
+  if(!c)return;
+  c.innerHTML='';
+  const colors=['#FFD700','#4CAF50','#42A5F5','#AB47BC','#FF9800'];
+  ACTIVITIES.forEach((a,i)=>{
+    const done=isDone(a.id);
+    const pct=done?100:0;
+    c.innerHTML+=`<div class="panel-row"><div class="panel-row-label">${a.name} <span>${pct}%</span></div><div class="panel-bar"><div class="panel-bar-fill" style="width:${pct}%;background:${colors[i%5]};"></div></div></div>`;
   });
 }
 
-function placeSpindle(boxNum) {
-  if (state.spindles.selected === null) return;
-  const idx = state.spindles.selected;
-  const pile = state.spindles.pile;
-  if (pile.filter((_, i) => i !== idx).length === 0) return;
-  const n = pile[idx];
-
-  // Mark spindle as placed
-  pile.splice(idx, 1);
-  state.spindles.placed[boxNum] = (state.spindles.placed[boxNum] || 0) + 1;
-  state.spindles.selected = null;
-
-  const feedback = document.getElementById('spindle-feedback');
-  const count = state.spindles.placed[boxNum] || 0;
-  const boxEl = document.getElementById('sp-box-' + boxNum);
-  const countEl = document.getElementById('sp-count-' + boxNum);
-  if (countEl) countEl.textContent = count + ' / ' + boxNum;
-
-  if (count === boxNum && count > 0) {
-    boxEl.classList.add('has-correct');
-    boxEl.classList.remove('has-wrong');
-    feedback.innerHTML = '<span style="color:var(--green)">✅ Kotak ' + boxNum + ' sudah lengkap dengan ' + count + ' spindel!</span>';
-    confetti();
-    markDone('spindles', boxNum);
-  } else if (count > boxNum) {
-    boxEl.classList.add('has-wrong');
-    boxEl.classList.remove('has-correct');
-    feedback.innerHTML = '<span style="color:var(--red)">❌ Terlalu banyak! Kotak ' + boxNum + ' cuma butuh ' + boxNum + ' spindel.</span>';
-  } else {
-    feedback.innerHTML = '📦 ' + count + ' dari ' + boxNum + ' spindel di kotak ' + boxNum;
-  }
-
-  renderSpindlePile();
-  renderSpindleBoxes();
-
-  // Check if all done
-  const allDone = Object.keys(state.spindles.placed).length === 10 &&
-    [1,2,3,4,5,6,7,8,9].every(i => state.spindles.placed[i] === i);
-  if (allDone) {
-    feedback.innerHTML = '<span style="color:var(--green)">🎉 Semua kotak sudah lengkap! Kamu pintar!</span>';
-  }
-}
-
-// ─── CARDS & COUNTERS ───
-function initCards() {
-  state.cards = { selected: null, counters: 0, done: [] };
-  renderCardNums();
-  renderCounters();
-}
-
-function renderCardNums() {
-  const el = document.getElementById('cards-nums');
-  el.innerHTML = '';
-  for (let i = 1; i <= 10; i++) {
-    const btn = document.createElement('button');
-    btn.className = 'cards-num';
-    btn.textContent = i;
-    btn.id = 'card-num-' + i;
-    btn.onclick = () => selectCard(i);
-    if (state.cards.done.includes(i)) btn.classList.add('done');
-    if (state.cards.selected === i) btn.classList.add('selected');
-    el.appendChild(btn);
-  }
-}
-
-function selectCard(n) {
-  state.cards.selected = n;
-  state.cards.counters = 0;
-  renderCardNums();
-  renderCounters();
-}
-
-function renderCounters() {
-  const el = document.getElementById('counters-area');
-  el.innerHTML = '';
-  const n = state.cards.selected;
-  if (!n) {
-    el.innerHTML = '<div style="font-size:0.82rem;opacity:0.4;width:100%;text-align:center;">Tap angka di atas dulu...</div>';
-    return;
-  }
-  for (let i = 0; i < n; i++) {
-    const c = document.createElement('div');
-    c.className = 'counter';
-    c.textContent = '🔵';
-    c.style.fontSize = '0';
-    c.style.width = '28px';
-    c.style.height = '28px';
-    c.style.background = '#FFD700';
-    c.style.borderRadius = '50%';
-    c.id = 'counter-' + i;
-    c.onclick = () => placeCounter(i);
-    el.appendChild(c);
-  }
-  // Show placed
-  for (let i = 0; i < state.cards.counters; i++) {
-    const c = document.getElementById('counter-' + i);
-    if (c) { c.classList.add('placed'); c.style.opacity = '0.2'; }
-  }
-}
-
-function placeCounter(i) {
-  const n = state.cards.selected;
-  if (!n) return;
-  state.cards.counters++;
-  const c = document.getElementById('counter-' + i);
-  if (c) { c.classList.add('placed'); c.style.opacity = '0.2'; }
-
-  if (state.cards.counters === n) {
-    // Check if all counters placed
-    const allPlaced = Array.from({length: n}, (_, i) => document.getElementById('counter-' + i)).every(c => c && c.classList.contains('placed'));
-    if (allPlaced) {
-      document.getElementById('cards-msg').innerHTML = '<span style="color:var(--green)">✅ ' + n + ' angka dan ' + n + ' counter! Tepat!</span>';
-      confetti();
-      markDone('cards', n);
-      state.cards.done.push(n);
-      state.cards.selected = null;
-      state.cards.counters = 0;
-      renderCardNums();
-      renderCounters();
-    }
-  }
-}
-
-// ─── TEEN BOARD ───
-function initTeen() {
-  state.teen = { tens: 10, units: 1 };
-  renderTeen();
-}
-
-function adjustTeen(type, delta) {
-  if (type === 'tens') {
-    state.teen.tens = Math.max(10, Math.min(90, state.teen.tens + delta * 10));
-  } else {
-    state.teen.units = Math.max(0, Math.min(9, state.teen.units + delta));
-  }
-  renderTeen();
-}
-
-function confirmTeen() {
-  const total = state.teen.tens + state.teen.units;
-  document.getElementById('teen-sentence').textContent = state.teen.tens + ' + ' + state.teen.units + ' = ' + total + ' ✓';
-  confetti();
-  markDone('teens', total);
-  if ('speechSynthesis' in window) {
-    speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(total.toString());
-    u.lang = 'id-ID';
-    u.rate = 0.8;
-    speechSynthesis.speak(u);
-  }
-}
-
-function renderTeen() {
-  const { tens, units } = state.teen;
-  const total = tens + units;
-  document.getElementById('teen-tens').textContent = tens;
-  document.getElementById('teen-units').textContent = units;
-  document.getElementById('teen-number').textContent = total;
-  document.getElementById('teen-sentence').textContent = tens + ' + ' + units + ' = ?';
-
-  const visual = document.getElementById('teen-visual');
-  visual.innerHTML = '';
-
-  // Ten bead bars
-  const numBars = Math.floor(tens / 10);
-  for (let b = 0; b < numBars; b++) {
-    const bar = document.createElement('div');
-    bar.className = 'ten-bead';
-    for (let i = 0; i < 10; i++) {
-      const bead = document.createElement('div');
-      bead.className = 'bead';
-      bar.appendChild(bead);
-    }
-    visual.appendChild(bar);
-  }
-
-  // Unit beads
-  if (units > 0) {
-    const unitsDiv = document.createElement('div');
-    unitsDiv.style.display = 'flex';
-    unitsDiv.style.gap = '3px';
-    unitsDiv.style.flexWrap = 'wrap';
-    for (let i = 0; i < units; i++) {
-      const bead = document.createElement('div');
-      bead.className = 'unit-bead';
-      unitsDiv.appendChild(bead);
-    }
-    visual.appendChild(unitsDiv);
-  }
-}
-
-// ─── TENS BOARD ───
-function initTens() {
-  state.tens = { tens: 2, units: 0 };
-  renderTens();
-}
-
-function adjustTens(delta) {
-  state.tens.tens = Math.max(2, Math.min(9, state.tens.tens + delta));
-  renderTens();
-}
-
-function adjustUnits(delta) {
-  state.tens.units = Math.max(0, Math.min(9, state.tens.units + delta));
-  renderTens();
-}
-
-function renderTens() {
-  const { tens, units } = state.tens;
-  const total = tens * 10 + units;
-  document.getElementById('tens-number').textContent = total;
-  document.getElementById('tens-sentence').textContent = tens + ' puluhan + ' + units + ' satuan = ' + total;
-
-  const visual = document.getElementById('tens-visual');
-  visual.innerHTML = '';
-
-  // Tens bead bars
-  for (let b = 0; b < tens; b++) {
-    const bar = document.createElement('div');
-    bar.className = 'ten-bead';
-    for (let i = 0; i < 10; i++) {
-      const bead = document.createElement('div');
-      bead.className = 'bead';
-      bar.appendChild(bead);
-    }
-    visual.appendChild(bar);
-  }
-
-  // Unit beads
-  if (units > 0) {
-    const unitsDiv = document.createElement('div');
-    unitsDiv.style.display = 'flex';
-    unitsDiv.style.gap = '3px';
-    unitsDiv.style.flexWrap = 'wrap';
-    for (let i = 0; i < units; i++) {
-      const bead = document.createElement('div');
-      bead.className = 'unit-bead';
-      unitsDiv.appendChild(bead);
-    }
-    visual.appendChild(unitsDiv);
-  }
-
-  // Confetti and markDone only on explicit confirmation — not on every render
-}
-
-// ─── CONFETTI ───
-function confetti() {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const container = document.getElementById('confetti-container');
-  container.innerHTML = '';
-  const colors = ['#EF5350','#FFEE58','#66BB6A','#42A5F5','#AB47BC','#FF9800','#EC407A','#FFD700'];
-  for (let i = 0; i < 35; i++) {
-    const piece = document.createElement('div');
-    piece.className = 'confetti-piece';
-    piece.style.left = Math.random() * 100 + '%';
-    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
-    piece.style.animationDelay = Math.random() * 0.8 + 's';
-    container.appendChild(piece);
-  }
-  setTimeout(() => container.innerHTML = '', 3500);
-}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeParent();goBack();}});
+window.addEventListener('load',init);
 </script>
 </body>
 </html>
