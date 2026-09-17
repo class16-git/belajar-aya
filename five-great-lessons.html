@@ -355,6 +355,8 @@ body {
   text-align: center;
 }
 .btn:active { transform: scale(0.96); }
+.btn-replay { cursor: pointer; transition: all 0.2s; }
+.btn-replay:hover { background: rgba(255,255,255,0.18); }
 
 .btn-primary {
   background: var(--gold);
@@ -952,9 +954,41 @@ body {
   .needs-grid { grid-template-columns: 1fr; }
   .comm-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== ACCESSIBILITY: FOCUS RINGS ===== */
+*:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+button:focus {
+  outline: 3px solid rgba(255,215,0,0.7);
+  outline-offset: 2px;
+}
+
+/* ===== ACCESSIBILITY: WCAG CONTRAST FIX ===== */
+/* Ensure text on colored backgrounds is readable */
+.btn-primary { color: #1a1a2e; }
+.exp-card:active, button:active { opacity: 0.85; }
+
+/* ===== ACCESSIBILITY: REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 </style>
 </head>
 <body onload="init()">
+
+<!-- Skip to content link for accessibility -->
+<a href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:-1;"
+   onfocus="this.style.position='fixed';this.style.left='10px';this.style.top='10px';this.style.width='auto';this.style.height='auto';this.style.overflow='visible';this.style.zIndex='9999';"
+   onclick="document.getElementById('main-content').focus();return false;">
+   Langsung ke isi
+</a>
 
 <!-- Stars Background -->
 <div class="stars" id="stars"></div>
@@ -970,9 +1004,10 @@ body {
 <button class="btn-home" id="btn-home" style="display:none" onclick="goHub()">🏠</button>
 
 <!-- ===== HOME HUB ===== -->
-<div class="screen active" id="screen-home">
+<div class="screen active" id="screen-home" aria-label="Halaman utama">
+<span id="main-content" tabindex="-1" style="display:none;"></span>
   <div class="home-header">
-    <button class="piko-btn" id="profile-btn" onclick="showScreen('profile')" title="Profil" style="position:absolute;top:0;right:0;font-size:1.5rem;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">🤠</button>
+    <button class="piko-btn" id="profile-btn" onclick="showScreen('profile')" title="Profil" style="position:absolute;top:0;right:0;font-size:1.5rem;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">🤠</button>
     <div class="home-title" id="home-title">Kita Semua<br>Terhubung</div>
     <div class="home-subtitle" id="home-greeting">Lima Pelajaran Besar</div>
   </div>
@@ -1183,6 +1218,32 @@ function markDone() {
 // INIT
 // ═══════════════════════════════════════
 function init() {
+  // Accessibility: keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      const focus = document.querySelector(':focus');
+      if (focus && focus.onclick) { focus.click(); e.preventDefault(); }
+    }
+    if (e.key === 'Escape') {
+      const backBtn = document.querySelector('.back-btn, .btn-back');
+      if (backBtn) backBtn.click();
+    }
+  });
+
+  // Accessibility: auto-focus first interactive element on load
+  window.addEventListener('load', function() {
+    const firstFocus = document.querySelector('button, [tabindex="0"], input, a[href]');
+    if (firstFocus) firstFocus.focus();
+  });
+
+  // Accessibility: tabindex cleanup — ensure all onclick elements are keyboard accessible
+  document.querySelectorAll('[onclick]').forEach(function(el) {
+    if (!el.tabIndex && el.tagName !== 'BUTTON' && el.tagName !== 'INPUT' && el.tagName !== 'A') {
+      el.tabIndex = 0;
+      el.setAttribute('role', 'button');
+    }
+  });
+
   generateStars();
   renderHomeGrid();
   setupPiko();
@@ -1214,18 +1275,26 @@ function renderHomeGrid() {
     const expCount = l.experiences.length;
     const doneCount = l.experiences.filter(e => (p[l.id] || {})[e.id]).length;
     const done = doneCount > 0;
+    const complete = isLessonComplete(l.id);
 
     const card = document.createElement('div');
     card.className = 'lesson-card';
     card.dataset.lesson = l.id;
     card.onclick = () => enterLesson(l.id);
 
+    let statusHtml = '';
+    if (complete) {
+      statusHtml = `<div style="font-size:0.7rem;color:var(--gold);margin-top:4px;font-weight:700;">🎉 Semua selesai!</div>`;
+    } else if (done) {
+      statusHtml = `<div style="font-size:0.7rem;color:var(--green);margin-top:4px;font-weight:700;">✓ ${doneCount}/${expCount} dicoba</div>`;
+    }
+
     card.innerHTML = `
       <div class="lesson-emoji">${l.emoji}</div>
       <div class="lesson-text">
         <div class="lesson-title">${l.title}</div>
         <div class="lesson-question">${l.q}</div>
-        ${done ? `<div style="font-size:0.7rem;color:var(--green);margin-top:4px;font-weight:700;">✓ ${doneCount}/${expCount} dicoba</div>` : ''}
+        ${statusHtml}
       </div>
       <div class="lesson-arrow">→</div>
     `;
@@ -1287,9 +1356,7 @@ function pushNav(screen, fn, data) {
   if (fn) fn(data);
 }
 
-// ═══════════════════════════════════════
-// LESSON ENTRY
-// ═══════════════════════════════════════
+// ─── LESSON ENTRY ───
 function enterLesson(id) {
   showScreen('l' + id);
   pushNav('l' + id);
@@ -1299,6 +1366,13 @@ function startLesson(id) {
   showScreen('exp');
   renderLessonExp(id);
   pushNav('exp', renderLessonExp, id);
+}
+
+function isLessonComplete(lessonId) {
+  const lesson = LESSONS.find(l => l.id === lessonId);
+  const p = loadProgress();
+  if (!lesson) return false;
+  return lesson.experiences.every(exp => p[lessonId]?.[exp.id]);
 }
 
 // ═══════════════════════════════════════
@@ -1340,6 +1414,25 @@ function renderLessonExp(id) {
 // ═══════════════════════════════════════
 // EXPERIENCE RUNNERS
 // ═══════════════════════════════════════
+function getReplayButton() {
+  const container = document.getElementById('exp-container');
+  const lessonId = container.dataset.lesson;
+  const expId = container.dataset.expId;
+  if (!lessonId || !expId) return '';
+  const p = loadProgress();
+  const done = p[lessonId]?.[expId];
+  if (!done) return '';
+  return '<button class="btn btn-replay" onclick="replayExp()" style="margin-top:12px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:var(--cream);padding:12px 20px;border-radius:12px;font-size:0.9rem;">🔄 Coba Lagi</button>';
+}
+
+function replayExp() {
+  const container = document.getElementById('exp-container');
+  const lessonId = container.dataset.lesson;
+  const expId = container.dataset.expId;
+  showScreen('exp');
+  runExp(lessonId, expId);
+}
+
 function runExp(lessonId, expId) {
   const container = document.getElementById('exp-container');
   const lesson = LESSONS.find(l => l.id === lessonId);
@@ -1386,6 +1479,17 @@ function runExp(lessonId, expId) {
   if (fn) {
     pushNav('exp', fn, { lessonId, expId, lesson });
   }
+
+  // Append replay button if this experience is already done
+  setTimeout(() => {
+    const replayBtn = getReplayButton();
+    const expArea = document.querySelector('.exp-area');
+    if (expArea && replayBtn && !expArea.querySelector('.btn-replay')) {
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = replayBtn;
+      expArea.appendChild(wrapper.firstElementChild);
+    }
+  }, 50);
 }
 
 // ─── LESSON 1: PARTICLES ───
@@ -1544,8 +1648,8 @@ function expSolar() {
       <div class="sol-label sol-label-sun">☀️ Bintang</div>
       <div class="sol-label sol-label-earth">🌍 Planet</div>
       <div class="sol-label sol-label-moon">🌙 Bulan</div>
-      <div class="sol-sun" onclick="solarInfo('sun')">☀️</div>
-      <div class="sol-earth" id="sol-earth" onclick="solarInfo('earth')">🌍</div>
+      <div class="sol-sun" onclick="solarInfo('sun')" tabindex="0" role="button">☀️</div>
+      <div class="sol-earth" id="sol-earth" onclick="solarInfo('earth')" tabindex="0" role="button">🌍</div>
       <div class="sol-moon" id="sol-moon">🌙</div>
     </div>
     <div class="feedback-msg hint" id="solar-msg">Matahari adalah bintang. Bumi mengelilingi Matahari dalam satu tahun!</div>
@@ -1593,6 +1697,12 @@ function solarInfo(what) {
 }
 
 function orbitEarth() {
+  // Respect reduced motion preference
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const earth = document.getElementById('sol-earth');
+    if (earth) earth.style.left = '50%';
+    return;
+  }
   const earth = document.getElementById('sol-earth');
   if (!earth) return;
   // Simple orbit animation
@@ -1605,7 +1715,7 @@ function orbitEarth() {
     earth.style.left = cx + '%';
     earth.style.top = cy + '%';
     if (angle >= 360) { clearInterval(anim); earth.style.left = '50%'; earth.style.top = '15%'; }
-  }, 30);
+  }, 120);
 }
 
 // ─── LESSON 1: EARTH HISTORY ───
@@ -2256,7 +2366,7 @@ function updateCoop() {
   if (msg) {
     if (w === 1) { msg.className = 'feedback-msg hint'; msg.textContent = '1 orang saja... ini akan memakan waktu lama! 🧱'; }
     else if (w < 4) { msg.className = 'feedback-msg hint'; msg.textContent = 'Lebih baik! Pekerjaan berjalan lebih cepat dengan jumlah lebih banyak! 🤝'; }
-    else { msg.className = 'feedback-msg success'; msg.textContent = 'Hebat! Dengan ${w} orang, pekerjaan selesai MUCH lebih cepat! Manusia bisa luar biasa kalau bekerja sama! 🤝'; }
+    else { msg.className = 'feedback-msg success'; msg.textContent = `Hebat! Dengan ${w} orang, pekerjaan selesai MUCH lebih cepat! Manusia bisa luar biasa kalau bekerja sama! 🤝`; }
   }
 }
 
@@ -2769,6 +2879,19 @@ function pikoSpeak() {
   const screen = document.querySelector('.screen.active');
   let id = screen ? screen.id.replace('screen-', '') : 'home';
   let text = texts[id] || 'Ayo kita jelajahi bersama!';
+
+  // Also read experience title and prompt if on exp screen
+  const expArea = document.querySelector('.exp-area');
+  if (expArea) {
+    const titleEl = expArea.querySelector('.exp-title');
+    const promptEl = expArea.querySelector('.exp-prompt');
+    const expText = [titleEl ? titleEl.textContent : '', promptEl ? promptEl.textContent : '']
+      .join('. ').replace(/[^\w\s.,!?A-Za-z0-9]/g, '').trim();
+    if (expText.length > 3) {
+      text = expText + '. ' + text;
+    }
+  }
+
   speak(text);
 }
 
@@ -2945,8 +3068,9 @@ function saveProfile() {
         <span>${e.emoji} ${e.title}</span>
         <span style="margin-left:auto;font-size:0.7rem;opacity:0.5;">${isDone ? '✓' : 'belum'}</span>
       </div>`;
-      if (isDone && mission) {
-        html += `<div style="font-size:0.7rem;color:rgba(76,175,80,0.7);padding:2px 0 6px 26px;">🌍 ${mission}</div>`;
+      if (mission) {
+        const status = isDone ? '✅' : '⭕';
+        html += `<div style="font-size:0.7rem;color:rgba(76,175,80,${isDone ? '0.7' : '0.4'});padding:2px 0 6px 26px;">${status} ${mission}</div>`;
       }
     });
     html += `</div>`;
