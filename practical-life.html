@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Latihan Tangan — Belajar Aya</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --font-head: 'Fredoka One', cursive;
+  --font-body: 'Quicksand', sans-serif;
+  --warm-bg: #FFF8F0;
+  --warm-cream: #FFFDF9;
+  --warm-brown: #5D4037;
+  --warm-tan: #D7CCC8;
+  --green: #4CAF50;
+  --green-light: #C8E6C9;
+  --blue: #42A5F5;
+  --red: #EF5350;
+  --orange: #FF9800;
+  --pink: #EC407A;
+  --purple: #AB47BC;
+  --shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; }
+body {
+  background: var(--warm-bg);
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--warm-brown);
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+/* ===== SCREENS ===== */
+.screen {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100dvh;
+  width: 100%;
+  padding: 20px 16px;
+}
+.screen.active { display: flex; }
+
+/* ===== HOME ===== */
+.home-header {
+  text-align: center;
+  padding: 16px 0 8px;
+}
+.home-title {
+  font-family: var(--font-head);
+  font-size: 1.9rem;
+  color: var(--warm-brown);
+  margin: 0 0 4px;
+}
+.home-sub {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin: 0;
+}
+.home-intro {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 12px 0 16px;
+  box-shadow: var(--shadow);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--warm-brown);
+}
+.home-intro strong { color: var(--orange); }
+
+/* ===== LESSON CARDS ===== */
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+.lesson-card {
+  background: white;
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+.lesson-card:active { transform: scale(0.97); }
+.lesson-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.14); }
+.card-icon {
+  font-size: 2.2rem;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+.card-text { flex: 1; }
+.card-title {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  color: var(--warm-brown);
+  margin: 0 0 2px;
+}
+.card-desc {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin: 0;
+  line-height: 1.4;
+}
+.card-arrow { font-size: 1.2rem; opacity: 0.3; }
+
+/* ===== PRACTICAL LIFE ===== */
+.pl-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 12px;
+}
+.pl-card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px 14px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.15s;
+  border: none;
+  width: 100%;
+}
+.pl-card:active { transform: scale(0.96); }
+.pl-emoji { font-size: 2.4rem; display: block; margin-bottom: 8px; }
+.pl-name {
+  font-family: var(--font-head);
+  font-size: 0.9rem;
+  color: var(--warm-brown);
+  margin: 0 0 4px;
+}
+.pl-age {
+  font-size: 0.72rem;
+  opacity: 0.5;
+  margin: 0;
+}
+.pl-badge {
+  display: inline-block;
+  background: var(--green-light);
+  color: var(--green);
+  border-radius: 20px;
+  padding: 2px 8px;
+  font-size: 0.65rem;
+  margin-top: 4px;
+}
+
+/* ===== EXPERIENCE SCREEN ===== */
+.exp-screen {
+  background: var(--warm-cream);
+  justify-content: flex-start;
+  padding-top: 16px;
+}
+.exp-header {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 12px;
+}
+.exp-title {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  color: var(--warm-brown);
+  margin: 0 0 4px;
+  text-align: center;
+}
+.exp-step {
+  font-size: 0.8rem;
+  color: var(--orange);
+  text-align: center;
+  margin: 0 0 8px;
+}
+.exp-area {
+  background: white;
+  border-radius: 20px;
+  padding: 20px 16px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: var(--shadow);
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.exp-visual { font-size: 4rem; }
+.exp-instruction {
+  font-size: 0.92rem;
+  text-align: center;
+  color: var(--warm-brown);
+  line-height: 1.5;
+  margin: 0;
+}
+.exp-demo {
+  background: #FAFAFA;
+  border: 2px dashed var(--warm-tan);
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--warm-brown);
+  opacity: 0.8;
+}
+.exp-hint {
+  background: rgba(255,152,0,0.08);
+  border-left: 3px solid var(--orange);
+  padding: 8px 12px;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.82rem;
+  color: var(--warm-brown);
+  width: 100%;
+}
+.exp-success {
+  background: var(--green-light);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  color: #2E7D32;
+  text-align: center;
+  width: 100%;
+}
+.exp-nav { margin-top: 16px; width: 100%; max-width: 400px; display: flex; gap: 10px; }
+.btn {
+  flex: 1;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.12s, opacity 0.12s;
+  min-height: 50px;
+}
+.btn:active { transform: scale(0.96); }
+.btn-back {
+  background: var(--warm-tan);
+  color: var(--warm-brown);
+  flex: 0 0 auto;
+  padding: 14px 18px;
+}
+.btn-next {
+  background: var(--green);
+  color: white;
+}
+.btn-skip {
+  background: rgba(0,0,0,0.06);
+  color: var(--warm-brown);
+}
+
+/* ===== SENSERIAL ===== */
+.sens-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 8px 0;
+}
+.sens-bar {
+  border-radius: 6px;
+  background: linear-gradient(180deg, #FFCDD2 0%, #EF9A9A 100%);
+  width: var(--w, 40px);
+  height: var(--h, 30px);
+  cursor: pointer;
+  transition: transform 0.15s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+.sens-bar:active { transform: scale(0.95); }
+.sens-label { font-size: 0.7rem; color: var(--warm-brown); opacity: 0.5; margin-top: 2px; }
+
+.sound-cans {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sound-can {
+  width: 64px;
+  height: 80px;
+  border-radius: 8px 8px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: transform 0.12s;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  border: none;
+  user-select: none;
+}
+.sound-can:active { transform: scale(0.92); }
+.can-label { font-size: 0.6rem; color: rgba(0,0,0,0.4); margin-top: 2px; font-family: var(--font-body); }
+
+.color-tablets {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.color-tablet {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.15s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border: 3px solid transparent;
+}
+.color-tablet:active { transform: scale(0.92); }
+.color-tablet.selected { border-color: var(--warm-brown); }
+
+/* ===== PROGRESS ===== */
+.progress-bar {
+  width: 100%;
+  max-width: 400px;
+  background: var(--warm-tan);
+  border-radius: 20px;
+  height: 8px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--green);
+  border-radius: 20px;
+  transition: width 0.4s;
+}
+
+/* ===== OFFLINE MISSION ===== */
+.offline-mission {
+  background: rgba(76,175,80,0.08);
+  border: 1px solid rgba(76,175,80,0.25);
+  border-radius: 14px;
+  padding: 12px 14px;
+  margin-top: 12px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.om-emoji { font-size: 1.6rem; flex-shrink: 0; }
+.om-title { font-family: var(--font-head); font-size: 0.8rem; color: var(--green); margin-bottom: 2px; }
+.om-text { font-size: 0.78rem; color: var(--warm-brown); line-height: 1.5; opacity: 0.85; }
+
+/* ===== CONFETTI ===== */
+.confetti-container {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 9999; overflow: hidden;
+}
+.confetti-piece {
+  position: absolute;
+  width: 10px; height: 10px;
+  border-radius: 2px;
+  animation: confettiFall 2.5s ease-out forwards;
+}
+@keyframes confettiFall {
+  0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+
+/* ===== POURING STATION ===== */
+.pour-demo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  background: #FAFAFA;
+  border-radius: 12px;
+  width: 100%;
+}
+.jug { font-size: 3rem; cursor: pointer; transition: transform 0.2s; user-select: none; }
+.jug:hover { transform: rotate(-15deg); }
+.jug.pouring { animation: pour 1s ease-in-out; }
+@keyframes pour { 0% { transform: rotate(0); } 40% { transform: rotate(-40deg) translateY(-5px); } 100% { transform: rotate(0); } }
+.glass { font-size: 3.5rem; position: relative; }
+.glass-fill {
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 0px solid #87CEEB;
+  transition: height 0.5s, border-bottom-width 0.5s;
+}
+.glass-fill.filled { height: 40px; border-bottom-width: 40px; }
+
+/* ===== TONG TRANSFER ===== */
+.tong-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px;
+  width: 100%;
+}
+.bowl { font-size: 2.5rem; cursor: pointer; user-select: none; }
+.bowl:active { transform: scale(0.9); }
+.transfer-items {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  max-width: 120px;
+}
+.item { font-size: 1.8rem; cursor: grab; user-select: none; transition: transform 0.1s; }
+.item:active { transform: scale(1.2); cursor: grabbing; }
+.item.placed { opacity: 0.3; }
+.counter { font-size: 0.8rem; color: var(--warm-brown); opacity: 0.6; text-align: center; margin-top: 4px; }
+
+/* ===== BUTTONING ===== */
+.button-exercise {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+}
+.cloth-flap {
+  width: 80px;
+  height: 60px;
+  background: #E3F2FD;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: none;
+  position: relative;
+}
+.cloth-flap:hover { transform: scale(1.05); }
+.button-hole {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #90CAF9;
+  cursor: pointer;
+}
+.button-hole.filled { background: var(--blue); border-color: #1565C0; }
+.cloth-base {
+  width: 80px;
+  height: 100px;
+  background: #BBDEFB;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px;
+}
+.step-label { font-size: 0.75rem; color: var(--warm-brown); opacity: 0.6; text-align: center; margin-top: 6px; }
+
+/* ===== HANDWASHING ===== */
+.washing-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.wash-step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.wash-step.done { border-color: var(--green); background: var(--green-light); }
+.wash-step.current { border-color: var(--orange); background: rgba(255,152,0,0.06); }
+.step-num { width: 28px; height: 28px; border-radius: 50%; background: var(--warm-tan); display: flex; align-items: center; justify-content: center; font-size: 0.8rem; flex-shrink: 0; }
+.wash-step.done .step-num { background: var(--green); color: white; }
+.step-text { font-size: 0.88rem; color: var(--warm-brown); flex: 1; }
+
+/* ===== PINK TOWER ===== */
+.tower-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.tower-cube {
+  background: linear-gradient(135deg, #F8BBD9 0%, #F48FB1 100%);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: rgba(0,0,0,0.3);
+  font-family: var(--font-body);
+}
+.tower-cube:active { transform: scale(0.95); }
+.tower-cube.correct { box-shadow: 0 0 0 3px var(--green); }
+
+/* ===== BROWN STAIRS ===== */
+.stairs-display {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+.stair {
+  background: linear-gradient(180deg, #D7CCC8 0%, #A1887F 100%);
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.stair:active { transform: scaleY(0.95); }
+.stair.selected { box-shadow: 0 0 0 3px var(--warm-brown); }
+
+/* ===== REDUCTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HOME ===== -->
+<div class="screen active" id="screen-home">
+  <div class="home-header">
+    <div class="home-title">👐 Latihan Tangan</div>
+    <div class="home-sub">Persiapkan tanganmu untuk belajar!</div>
+  </div>
+
+  <div class="home-intro">
+    <strong>Montessori:</strong> Sebelum bisa menulis dan menghitung, tangan perlu latihan. 
+    Coba <strong>kehidupan praktis</strong> (tuang, pegang, rapikan) dan <strong>sensorial</strong> (raba, atur, bandingkan).
+  </div>
+
+  <div class="progress-bar">
+    <div class="progress-fill" id="home-progress" style="width:0%"></div>
+  </div>
+  <div style="font-size:0.78rem;opacity:0.5;margin-bottom:12px;" id="progress-label">0 dari 7 kegiatan</div>
+
+  <div class="cards-grid">
+    <button class="lesson-card" onclick="showScreen('pl')">
+      <div class="card-icon" style="background:#FFF3E0;">
+        🧼
+      </div>
+      <div class="card-text">
+        <div class="card-title">Kehidupan Praktis</div>
+        <div class="card-desc">Tuang, pindahkan, rapikan, cuci tangan</div>
+      </div>
+      <div class="card-arrow">→</div>
+    </button>
+
+    <button class="lesson-card" onclick="showScreen('sens')">
+      <div class="card-icon" style="background:#F3E5F5;">
+        🎨
+      </div>
+      <div class="card-text">
+        <div class="card-title">Sensorial</div>
+        <div class="card-desc">Raba, atur dari besar ke kecil, bandingkan</div>
+      </div>
+      <div class="card-arrow">→</div>
+    </button>
+  </div>
+</div>
+
+<!-- ===== PRACTICAL LIFE ===== -->
+<div class="screen" id="screen-pl">
+  <div class="home-header" style="padding:0 0 12px;">
+    <div class="home-title" style="font-size:1.5rem;">🧼 Kehidupan Praktis</div>
+    <div class="home-sub">Latihan untuk tangan yang kuat dan tepat</div>
+  </div>
+  <div class="pl-grid">
+    <button class="pl-card" onclick="startExp('pour')">
+      <span class="pl-emoji">🫗</span>
+      <div class="pl-name">Menuangkan</div>
+      <div class="pl-age">3–4 tahun</div>
+      <div class="pl-badge">Praktis</div>
+    </button>
+    <button class="pl-card" onclick="startExp('tong')">
+      <span class="pl-emoji">🥄</span>
+      <div class="pl-name">Memindahkan</div>
+      <div class="pl-age">3–4 tahun</div>
+      <div class="pl-badge">Praktis</div>
+    </button>
+    <button class="pl-card" onclick="startExp('button')">
+      <span class="pl-emoji">🔘</span>
+      <div class="pl-name">Mematikan Tombol</div>
+      <div class="pl-age">3–4 tahun</div>
+      <div class="pl-badge">Praktis</div>
+    </button>
+    <button class="pl-card" onclick="startExp('wash')">
+      <span class="pl-emoji">🧼</span>
+      <div class="pl-name">Mencuci Tangan</div>
+      <div class="pl-age">2–3 tahun</div>
+      <div class="pl-badge">Praktis</div>
+    </button>
+  </div>
+  <button class="btn btn-back" onclick="showScreen('home')" style="margin-top:20px;max-width:400px;">← Kembali</button>
+</div>
+
+<!-- ===== SENSORY ===== -->
+<div class="screen" id="screen-sens">
+  <div class="home-header" style="padding:0 0 12px;">
+    <div class="home-title" style="font-size:1.5rem;">🎨 Sensorial</div>
+    <div class="home-sub">Latihan mata dan jari untuk mengukur, meraba, membedakan</div>
+  </div>
+  <div class="pl-grid">
+    <button class="pl-card" onclick="startExp('pink')">
+      <span class="pl-emoji">🩷</span>
+      <div class="pl-name">Menara Merah Muda</div>
+      <div class="pl-age">3–4 tahun</div>
+      <div class="pl-badge">Visuals</div>
+    </button>
+    <button class="pl-card" onclick="startExp('brown')">
+      <span class="pl-emoji">📏</span>
+      <div class="pl-name">Tangga Coklat</div>
+      <div class="pl-age">3–4 tahun</div>
+      <div class="pl-badge">Ukuran</div>
+    </button>
+    <button class="pl-card" onclick="startExp('color')">
+      <span class="pl-emoji">🌈</span>
+      <div class="pl-name">Tablet Warna</div>
+      <div class="pl-age">3–4 tahun</div>
+      <div class="pl-badge">Warna</div>
+    </button>
+    <button class="pl-card" onclick="startExp('sound')">
+      <span class="pl-emoji">🔔</span>
+      <div class="pl-name">Silinder Berdentum</div>
+      <div class="pl-age">3–4 tahun</div>
+      <div class="pl-badge">Suara</div>
+    </button>
+  </div>
+  <button class="btn btn-back" onclick="showScreen('home')" style="margin-top:20px;max-width:400px;">← Kembali</button>
+</div>
+
+<!-- ===== EXPERIENCE SCREEN ===== -->
+<div class="screen" id="screen-exp">
+  <div class="exp-screen">
+    <div class="exp-header">
+      <div class="exp-step" id="exp-step"></div>
+      <div class="exp-title" id="exp-title"></div>
+    </div>
+    <div class="exp-area" id="exp-area"></div>
+    <div class="offline-mission" id="offline-mission" style="display:none;">
+      <div class="om-emoji">🌍</div>
+      <div>
+        <div class="om-title">Coba di dunia nyata!</div>
+        <div class="om-text" id="mission-text"></div>
+      </div>
+    </div>
+    <div class="exp-nav">
+      <button class="btn btn-back" onclick="showScreen('home')">← Kembali</button>
+      <button class="btn btn-skip" onclick="skipExp()">Lewati →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CONFETTI ===== -->
+<div class="confetti-container" id="confetti-container"></div>
+
+<script>
+// ─── STATE ───
+const state = {
+  currentExp: null,
+  expStep: 0,
+  progress: { pour: false, tong: false, button: false, wash: false, pink: false, brown: false, color: false, sound: false },
+  // pour
+  pourLevel: 0,
+  // tong
+  tongItems: ['🔴','🟡','🟢','🟠','🔵'],
+  tongPlaced: 0,
+  // button
+  buttonStep: 0,
+  // wash
+  washStep: 0,
+  // pink tower
+  pinkOrder: [],
+  // brown stairs
+  brownSelected: 0,
+  // color match
+  colorTarget: null,
+  colorSelected: null,
+};
+
+// ─── OFFLINE MISSIONS ───
+const MISSIONS = {
+  pour: 'Isi botol kecil dengan air. Tuang pelan-pelan ke gelas. Berapa kali kamu perlu menuangkan?',
+  tong: 'Pindahkan 5 kacang ataubutton dari mangkuk ke piring — pakai sendok! Berapa lama?',
+  button: 'Coba buka dan tutup 3 tombol di bajumu sendiri. Latihan selama 3 hari!',
+  wash: 'Cuci tangan sebelum makan malam besok. Ikuti 6 langkah tadi!',
+  pink: 'Kumpulkan 5 kotak berbeda ukuran dari rumah (kotak tissu, kotak sepatu...). Susun dari besar ke kecil!',
+  brown: 'Cari 5 benda di rumah yang berbeda tebalnya. Susun dari tipis ke tebal!',
+  color: 'Di luar, cari 3 benda untuk setiap warna: merah, biru, hijau. Foto yang kamu temukan!',
+  sound: 'Tutup matamu. Dengarkan 5 suara berbeda di rumah. Tebak: dari mana suaranya?',
+};
+
+// ─── EXP DEFINITIONS ───
+const EXPS = {
+  pour: { title: '🫗 Menuangkan Air', category: 'pl', steps: ['Lihat alatnya', 'Tuang pelan-pelan', 'Berhenti di tanda', 'Rapikan!'], mission: MISSIONS.pour },
+  tong: { title: '🥄 Memindahkan Benda', category: 'pl', steps: ['Ambil satu-satu', 'Pindahkan ke mangkuk', 'Semua masuk!', 'Ulang dengan tangan lain'], mission: MISSIONS.tong },
+  button: { title: '🔘 Mematikan Tombol', category: 'pl', steps: ['Buka kancing', 'Sesuaikan lubang', 'Masukkan tombol', 'Tarik kuat-kuat!'], mission: MISSIONS.button },
+  wash: { title: '🧼 Mencuci Tangan', category: 'pl', steps: ['Buka keran', 'Kasih sabun', 'Gosok 20 detik', 'Bilas bersih', 'Keringkan', 'Rapikan!'], mission: MISSIONS.wash },
+  pink: { title: '🩷 Menara Merah Muda', category: 'sens', steps: ['Ambil yang terbesar', 'Atur dari besar', 'Yang terkecil di atas', 'Klik ✓ kalau sudah'], mission: MISSIONS.pink },
+  brown: { title: '📏 Tangga Coklat', category: 'sens', steps: ['Ambil yang terbesar', 'Atur dari tebal', 'Yang terkecil di atas', 'Klik ✓ kalau sudah'], mission: MISSIONS.brown },
+  color: { title: '🌈 Tablet Warna', category: 'sens', steps: ['Lihat warna acak', 'Cari yang sama', 'Pasang tepat!', 'Coba warna lain'], mission: MISSIONS.color },
+  sound: { title: '🔔 Silinder Berdentum', category: 'sens', steps: ['Kocok satu-satu', 'Dengarkan polanya', 'Urutkan dari pelan', 'Tutup mata!'], mission: MISSIONS.sound },
+};
+
+// ─── SCREEN MANAGEMENT ───
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + name).classList.add('active');
+  if (name === 'home') updateHomeProgress();
+}
+
+// ─── EXPERIENCE MANAGEMENT ───
+function startExp(expId) {
+  state.currentExp = expId;
+  state.expStep = 0;
+  resetExpState(expId);
+  showScreen('exp');
+  renderExpStep();
+  markDone();
+}
+
+function resetExpState(expId) {
+  if (expId === 'pour') state.pourLevel = 0;
+  if (expId === 'tong') { state.tongPlaced = 0; state.tongItems = ['🔴','🟡','🟢','🟠','🔵']; }
+  if (expId === 'button') state.buttonStep = 0;
+  if (expId === 'wash') state.washStep = 0;
+  if (expId === 'pink') state.pinkOrder = [];
+  if (expId === 'brown') state.brownSelected = 0;
+  if (expId === 'color') { state.colorTarget = null; state.colorSelected = null; }
+}
+
+function skipExp() {
+  const ids = Object.keys(EXPS);
+  const idx = ids.indexOf(state.currentExp);
+  const next = ids[(idx + 1) % ids.length];
+  startExp(next);
+}
+
+function renderExpStep() {
+  const exp = EXPS[state.currentExp];
+  document.getElementById('exp-step').textContent = `Langkah ${state.expStep + 1} dari ${exp.steps.length}`;
+  document.getElementById('exp-title').textContent = exp.title;
+
+  // Show offline mission on last step
+  const missionEl = document.getElementById('offline-mission');
+  if (state.expStep === exp.steps.length - 1) {
+    missionEl.style.display = 'flex';
+    document.getElementById('mission-text').textContent = exp.mission;
+  } else {
+    missionEl.style.display = 'none';
+  }
+
+  const area = document.getElementById('exp-area');
+  area.innerHTML = '';
+
+  // Render each experience
+  if (state.currentExp === 'pour') renderPour(area);
+  else if (state.currentExp === 'tong') renderTong(area);
+  else if (state.currentExp === 'button') renderButton(area);
+  else if (state.currentExp === 'wash') renderWash(area);
+  else if (state.currentExp === 'pink') renderPink(area);
+  else if (state.currentExp === 'brown') renderBrown(area);
+  else if (state.currentExp === 'color') renderColor(area);
+  else if (state.currentExp === 'sound') renderSound(area);
+}
+
+function nextStep() {
+  const exp = EXPS[state.currentExp];
+  state.expStep++;
+  if (state.expStep >= exp.steps.length) {
+    confetti();
+    markDone();
+    state.expStep = 0;
+  }
+  renderExpStep();
+}
+
+// ─── POUR ───
+function renderPour(area) {
+  const jug = state.pourLevel > 0 ? '🫗' : '🫗';
+  area.innerHTML = `
+    <div class="pour-demo">
+      <div class="jug" id="jug" onclick="doPour()">${jug}</div>
+      <div>
+        <div class="glass" id="glass">🥤<div class="glass-fill ${state.pourLevel > 0 ? 'filled' : ''}" id="glass-fill"></div></div>
+      </div>
+    </div>
+    <div class="exp-instruction" style="margin-top:12px;">${state.pourLevel === 0 ? '👆 Sentuh teko! Ink你这个...' : state.pourLevel < 3 ? 'Lihat airnya... tuang pelan-pelan!' : 'Sudah penuh! Lihat air naik! 🏆'}</div>
+    ${state.pourLevel >= 3 ? '<div class="exp-success">✨ Teko ke gelas — selesai! Tuang dengan tepat!</div>' : ''}
+    ${state.pourLevel < 3 ? `<button class="btn btn-next" onclick="nextStep()">Lanjut →</button>` : `<button class="btn btn-next" onclick="startExp('tong')">Coba yang lain →</button>`}
+  `;
+}
+
+function doPour() {
+  if (state.pourLevel < 3) {
+    state.pourLevel++;
+    const fill = document.getElementById('glass-fill');
+    if (fill) {
+      fill.classList.add('filled');
+      fill.style.height = (state.pourLevel * 14) + 'px';
+      fill.style.borderBottomWidth = (state.pourLevel * 14) + 'px';
+    }
+    renderPour(document.getElementById('exp-area'));
+  }
+}
+
+// ─── TONG ───
+function renderTong(area) {
+  const remaining = state.tongItems.length;
+  area.innerHTML = `
+    <div class="tong-area">
+      <div>
+        <div style="font-size:0.8rem;opacity:0.5;margin-bottom:6px;text-align:center;">Mangkuk 1</div>
+        <div class="bowl" id="bowl1" onclick="transferTo('bowl1')">🥣</div>
+      </div>
+      <div class="transfer-items" id="transfer-items">
+        ${state.tongItems.map((item, i) => `<div class="item" id="item-${i}" onclick="grabItem(${i})">${item}</div>`).join('')}
+      </div>
+      <div>
+        <div style="font-size:0.8rem;opacity:0.5;margin-bottom:6px;text-align:center;">Mangkuk 2</div>
+        <div class="bowl" id="bowl2">🥣</div>
+        <div id="bowl2-items" style="font-size:1.4rem;margin-top:4px;"></div>
+      </div>
+    </div>
+    <div class="counter">Sudah dipindahkan: ${5 - remaining} dari 5</div>
+    ${remaining === 0 ? '<div class="exp-success">🎉 Semuaitem sudah dipindahkan! Tangankamu semakin terampil!</div>' : ''}
+    ${remaining > 0 ? `<button class="btn btn-next" onclick="nextStep()">Lanjut →</button>` : `<button class="btn btn-next" onclick="startExp('button')">Coba yang lain →</button>`}
+  `;
+}
+
+function grabItem(i) {
+  state.grabbed = state.tongItems[i];
+  state.tongItems.splice(i, 1);
+  renderTong(document.getElementById('exp-area'));
+  setTimeout(() => {
+    const bowl2 = document.getElementById('bowl2-items');
+    if (bowl2) bowl2.textContent += state.grabbed;
+    state.grabbed = null;
+    if (state.tongItems.length === 0) {
+      confetti();
+      markDone();
+      renderTong(document.getElementById('exp-area'));
+    }
+  }, 300);
+}
+
+function transferTo() {
+  if (state.grabbed) {
+    const bowl2 = document.getElementById('bowl2-items');
+    if (bowl2) bowl2.textContent += state.grabbed;
+    state.grabbed = null;
+    if (state.tongItems.length === 0) {
+      confetti();
+      markDone();
+    }
+    renderTong(document.getElementById('exp-area'));
+  }
+}
+
+// ─── BUTTONING ───
+function renderButton(area) {
+  const steps = ['Buka kancing', 'Sesuaikan lubang', 'Masukkan tombol', 'Tarik dan rapikan!'];
+  const messages = [
+    'Tekan tombol untuk membukanya...',
+    'Lihat lubangnya... Cocokkan!',
+    'Masukkan tombol perlahan...',
+    'Tarik sedikit untuk memastikan!'
+  ];
+  area.innerHTML = `
+    <div class="button-exercise">
+      <div class="cloth-flap" id="flap" onclick="doFlap()">
+        <div class="button-hole ${state.buttonStep > 0 ? 'filled' : ''}" id="bh1"></div>
+      </div>
+      <div style="font-size:2rem;">↔</div>
+      <div class="cloth-base">
+        <div class="button-hole" id="bh2"></div>
+        <div class="button-hole" id="bh3"></div>
+      </div>
+    </div>
+    <div class="exp-instruction">${messages[state.buttonStep]}</div>
+    <div class="exp-demo">${steps[state.buttonStep]}</div>
+    <button class="btn btn-next" onclick="advanceButton()">${state.buttonStep < 3 ? 'Lanjut' : 'Selesai! 🎉'}</button>
+  `;
+}
+
+function advanceButton() {
+  state.buttonStep++;
+  if (state.buttonStep > 0) {
+    const bh1 = document.getElementById('bh1');
+    if (bh1) bh1.classList.add('filled');
+  }
+  if (state.buttonStep >= 4) {
+    confetti();
+    markDone();
+    state.buttonStep = 0;
+  }
+  renderButton(document.getElementById('exp-area'));
+}
+
+function doFlap() {
+  if (state.buttonStep === 0) {
+    state.buttonStep = 1;
+    renderButton(document.getElementById('exp-area'));
+  }
+}
+
+// ─── HANDWASHING ───
+function renderWash(area) {
+  const steps = [
+    { text: '🔓 Buka keran air', done: state.washStep > 0 },
+    { text: '🧴 Kasih sabun secukupnya', done: state.washStep > 1 },
+    { text: '✋ Gosok tangan 20 detik', done: state.washStep > 2 },
+    { text: '💦 Bilas bersih dengan air', done: state.washStep > 3 },
+    { text: '🧻 Keringkan dengan handuk', done: state.washStep > 4 },
+    { text: '🚪 Rapikan — selesai!', done: state.washStep > 5 },
+  ];
+  area.innerHTML = `
+    <div class="washing-steps">
+      ${steps.map((s, i) => `
+        <div class="wash-step ${s.done ? 'done' : i === state.washStep ? 'current' : ''}" onclick="doWashStep(${i})">
+          <div class="step-num">${s.done ? '✓' : i + 1}</div>
+          <div class="step-text">${s.text}</div>
+        </div>
+      `).join('')}
+    </div>
+    ${state.washStep >= 6 ? '<div class="exp-success">🧼 Tangan bersih! Kamu sudah熟练!</div>' : ''}
+    ${state.washStep >= 6 ? `<button class="btn btn-next" onclick="startExp('pink')">Coba Sensorial →</button>` : `<button class="btn btn-next" onclick="advanceWash()">Lanjut</button>`}
+  `;
+}
+
+function doWashStep(i) {
+  if (i === state.washStep) {
+    state.washStep = i + 1;
+    if (state.washStep >= 6) {
+      confetti();
+      markDone();
+      state.washStep = 0;
+    }
+    renderWash(document.getElementById('exp-area'));
+  }
+}
+
+function advanceWash() {
+  state.washStep++;
+  if (state.washStep >= 6) {
+    confetti();
+    markDone();
+    state.washStep = 0;
+  }
+  renderWash(document.getElementById('exp-area'));
+}
+
+// ─── PINK TOWER ───
+function renderPink(area) {
+  const sizes = [80, 68, 56, 44, 32, 20, 10];
+  area.innerHTML = `
+    <div class="exp-instruction">Susun dari yang <strong>TERBESAR</strong> ke yang <strong>TERKECIL</strong> — klik cube untuk menandai!</div>
+    <div class="tower-stack">
+      ${sizes.map((s, i) => `
+        <div class="tower-cube ${state.pinkOrder.includes(s) ? 'correct' : ''}"
+             style="width:${s}px;height:${s}px;"
+             onclick="placePink(${s}, this)">${s}px</div>
+      `).join('')}
+    </div>
+    <div class="counter">Sudah diatur: ${state.pinkOrder.length} dari 7</div>
+    ${state.pinkOrder.length === 7 ? '<button class="btn btn-next" onclick="startExp(\'brown\')">Tangga Coklat →</button>' : ''}
+  `;
+}
+
+function placePink(size, el) {
+  if (!state.pinkOrder.includes(size)) {
+    // Correct order: largest first
+    if (state.pinkOrder.length === 0 || size < state.pinkOrder[state.pinkOrder.length - 1]) {
+      state.pinkOrder.push(size);
+      el.classList.add('correct');
+      if (state.pinkOrder.length === 7) {
+        confetti();
+        markDone();
+      }
+    } else {
+      // Wrong order
+      el.style.transform = 'scale(0.85)';
+      setTimeout(() => el.style.transform = '', 300);
+    }
+  }
+  renderPink(document.getElementById('exp-area'));
+}
+
+// ─── BROWN STAIRS ───
+function renderBrown(area) {
+  const stairs = [
+    { h: 60, w: 10, label: '1' },
+    { h: 55, w: 18, label: '2' },
+    { h: 50, w: 26, label: '3' },
+    { h: 45, w: 34, label: '4' },
+    { h: 40, w: 42, label: '5' },
+    { h: 35, w: 50, label: '6' },
+    { h: 30, w: 58, label: '7' },
+  ];
+  area.innerHTML = `
+    <div class="exp-instruction">Susun dari yang <strong>PALING TEBAL</strong> ke yang <strong>PALING TIPIS</strong> — klik untuk memilih!</div>
+    <div class="stairs-display">
+      ${stairs.map((s, i) => `
+        <div>
+          <div class="stair ${state.brownSelected === i ? 'selected' : ''}"
+               style="height:${s.h}px;width:${s.w}px;"
+               onclick="selectBrown(${i}, ${s.h}, this)"></div>
+          <div class="sens-label">${s.label}</div>
+        </div>
+      `).join('')}
+    </div>
+    <div class="counter">Dipilih: ${state.brownSelected >= 0 ? stairs[state.brownSelected].label : 0} dari 7</div>
+    <button class="btn btn-next" onclick="nextBrown()">${state.brownSelected >= 0 ? 'Pilih lagi →' : 'Pilih satu!'}</button>
+  `;
+}
+
+function selectBrown(i, h, el) {
+  if (state.brownSelected === i) {
+    state.brownSelected = -1;
+  } else {
+    state.brownSelected = i;
+  }
+  renderBrown(document.getElementById('exp-area'));
+}
+
+function nextBrown() {
+  if (state.brownSelected >= 0) {
+    state.brownSelected = -1;
+    confetti();
+    markDone();
+  }
+  renderBrown(document.getElementById('exp-area'));
+}
+
+// ─── COLOR TABLETS ───
+function renderColor(area) {
+  const COLORS = [
+    { name: 'Merah', hex: '#EF5350', emoji: '🔴' },
+    { name: 'Biru', hex: '#42A5F5', emoji: '🔵' },
+    { name: 'Kuning', hex: '#FFEE58', emoji: '🟡' },
+    { name: 'Hijau', hex: '#66BB6A', emoji: '🟢' },
+    { name: 'Orange', hex: '#FF9800', emoji: '🟠' },
+    { name: 'Ungu', hex: '#AB47BC', emoji: '🟣' },
+    { name: 'Pink', hex: '#EC407A', emoji: '🩷' },
+    { name: 'Coklat', hex: '#8D6E63', emoji: '🟤' },
+  ];
+
+  const shuffled = [...COLORS].sort(() => Math.random() - 0.5).slice(0, 4);
+  const target = state.colorTarget || shuffled[0];
+  if (!state.colorTarget) state.colorTarget = target;
+
+  area.innerHTML = `
+    <div class="exp-instruction">Cari warna yang <strong>SAMA</strong> dengan yang ditunjukkan!</div>
+    <div class="exp-visual">${target.emoji} <span style="font-size:0.8rem;opacity:0.6;">${target.name}</span></div>
+    <div class="color-tablets">
+      ${shuffled.map(c => `
+        <div class="color-tablet ${state.colorSelected === c.hex ? 'selected' : ''}"
+             style="background:${c.hex};"
+             onclick="selectColor('${c.hex}', '${c.name}', this)"></div>
+      `).join('')}
+    </div>
+    ${state.colorSelected ? `<div id="color-feedback" style="margin-top:8px;font-size:0.9rem;"></div>` : ''}
+  `;
+}
+
+function selectColor(hex, name, el) {
+  state.colorSelected = hex;
+  const target = state.colorTarget;
+  const area = document.getElementById('exp-area');
+  const feedback = document.getElementById('color-feedback');
+  if (hex === target.hex) {
+    el.style.borderColor = 'var(--green)';
+    el.style.borderWidth = '4px';
+    if (feedback) feedback.innerHTML = `<div class="exp-success">✓ Tepat! ${name} — warnanya sama!</div>`;
+    setTimeout(() => {
+      state.colorTarget = null;
+      state.colorSelected = null;
+      markDone();
+      confetti();
+      renderColor(document.getElementById('exp-area'));
+    }, 1200);
+  } else {
+    el.style.borderColor = 'var(--red)';
+    el.style.borderWidth = '3px';
+    if (feedback) feedback.innerHTML = `<div style="color:var(--red);font-size:0.88rem;">Bukan itu... coba lagi!</div>`;
+    setTimeout(() => {
+      state.colorSelected = null;
+      el.style.borderColor = 'transparent';
+      el.style.borderWidth = '3px';
+      if (feedback) feedback.innerHTML = '';
+    }, 800);
+  }
+}
+
+// ─── SOUND CYLINDERS ───
+function renderSound(area) {
+  const cans = [
+    { id: 0, sound: '🔔', label: '1', vol: 'pelan' },
+    { id: 1, sound: '🥁', label: '2', vol: 'sedang' },
+    { id: 2, sound: '📣', label: '3', vol: 'keras' },
+    { id: 3, sound: '🔔', label: '4', vol: 'pelan' },
+    { id: 4, sound: '💥', label: '5', vol: 'keras' },
+    { id: 5, sound: '🥁', label: '6', vol: 'sedang' },
+  ];
+  const colors = ['#FFCDD2','#C8E6C9','#BBDEFB','#F3E5F5','#FFF9C4','#FFE0B2'];
+  const shuffled = [...cans].sort(() => Math.random() - 0.5);
+
+  area.innerHTML = `
+    <div class="exp-instruction">Klik silinder untuk mendengarnya. Urutkan dari yang <strong>PELAN</strong> ke yang <strong>KERAS</strong>!</div>
+    <div class="sound-cans">
+      ${shuffled.map((c, i) => `
+        <div style="text-align:center;">
+          <button class="sound-can" style="background:${colors[c.id % colors.length]};"
+                  onclick="playCan(${c.id}, '${c.sound}')">${c.sound}</button>
+          <div class="can-label">Silinder ${c.label}</div>
+        </div>
+      `).join('')}
+    </div>
+    <div class="exp-demo">Tips: Tutup matamu! Dengarkan dengan telingamu, bukan matamu.</div>
+    <button class="btn btn-next" onclick="nextSound()">Lanjut →</button>
+  `;
+}
+
+function playCan(id, emoji) {
+  if ('speechSynthesis' in window) {
+    const utter = new SpeechSynthesisUtterance(emoji === '🔔' ? 'ding' : emoji === '🥁' ? 'dang' : 'dang!');
+    utter.volume = id % 3 === 0 ? 0.3 : id % 3 === 1 ? 0.6 : 1.0;
+    utter.rate = 0.8;
+    speechSynthesis.speak(utter);
+  }
+}
+
+function nextSound() {
+  confetti();
+  markDone();
+  startExp('pour');
+}
+
+// ─── PROGRESS ───
+function loadProgress() {
+  try { return JSON.parse(localStorage.getItem('pl-progress') || '{}'); } catch(e) { return {}; }
+}
+function saveProgress(p) {
+  try { localStorage.setItem('pl-progress', JSON.stringify(p)); } catch(e) {}
+}
+function markDone() {
+  const exp = state.currentExp;
+  if (!exp) return;
+  const p = loadProgress();
+  p[exp] = true;
+  saveProgress(p);
+}
+function updateHomeProgress() {
+  const p = loadProgress();
+  const total = Object.keys(EXPS).length;
+  const done = Object.values(p).filter(Boolean).length;
+  const pct = Math.round((done / total) * 100);
+  const fill = document.getElementById('home-progress');
+  if (fill) fill.style.width = pct + '%';
+  const label = document.getElementById('progress-label');
+  if (label) label.textContent = `${done} dari ${total} kegiatan`;
+}
+
+// ─── CONFETTI ───
+function confetti() {
+  const container = document.getElementById('confetti-container');
+  container.innerHTML = '';
+  const colors = ['#EF5350','#FFEE58','#66BB6A','#42A5F5','#AB47BC','#FF9800','#EC407A'];
+  for (let i = 0; i < 30; i++) {
+    const piece = document.createElement('div');
+    piece.className = 'confetti-piece';
+    piece.style.left = Math.random() * 100 + '%';
+    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+    piece.style.animationDelay = Math.random() * 0.8 + 's';
+    piece.style.animationDuration = (2 + Math.random() * 1.5) + 's';
+    container.appendChild(piece);
+  }
+  setTimeout(() => container.innerHTML = '', 3000);
+}
+
+// ─── INIT ───
+updateHomeProgress();
+</script>
+</body>
+</html>
