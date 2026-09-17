@@ -379,7 +379,18 @@ body {
   0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
   100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
 }
-@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+@keyframes popIn {
+  0%   { transform: scale(0) rotate(-20deg); opacity: 0; }
+  60%  { transform: scale(1.3) rotate(5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+.pop-in { animation: popIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+.shake { animation: shake 0.4s ease-in-out; }
 
 /* ===== POURING STATION ===== */
 .pour-demo {
@@ -393,8 +404,33 @@ body {
 }
 .jug { font-size: 3rem; cursor: pointer; transition: transform 0.2s; user-select: none; }
 .jug:hover { transform: rotate(-15deg); }
-.jug.pouring { animation: pour 1s ease-in-out; }
-@keyframes pour { 0% { transform: rotate(0); } 40% { transform: rotate(-40deg) translateY(-5px); } 100% { transform: rotate(0); } }
+.jug.pouring { animation: pour 0.6s ease-in-out forwards; }
+@keyframes pour {
+  0%   { transform: rotate(0deg) translateY(0); }
+  40%  { transform: rotate(-50deg) translateY(-8px) translateX(10px); }
+  70%  { transform: rotate(-50deg) translateY(-8px) translateX(10px); }
+  100% { transform: rotate(0deg) translateY(0); }
+}
+@keyframes drip {
+  0%   { opacity: 1; transform: translate(-50%, -10px) scale(1); }
+  80%  { opacity: 0.6; transform: translate(-50%, 20px) scale(0.5); }
+  100% { opacity: 0; transform: translate(-50%, 30px) scale(0.2); }
+}
+.jug-tip-drip {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  width: 6px;
+  height: 10px;
+  background: #87CEEB;
+  border-radius: 0 0 3px 3px;
+  opacity: 0;
+  animation: none;
+  pointer-events: none;
+}
+.jug-tip-drip.active {
+  animation: drip 0.5s ease-in forwards;
+}
 .glass { font-size: 3.5rem; position: relative; }
 .glass-fill {
   position: absolute;
@@ -424,7 +460,7 @@ body {
   flex-wrap: wrap;
   max-width: 120px;
 }
-.item { font-size: 1.8rem; cursor: grab; user-select: none; transition: transform 0.1s; }
+.item { font-size: 1.8rem; cursor: grab; user-select: none; transition: transform 0.1s; animation: dotDrop 0.3s ease-out backwards; }
 .item:active { transform: scale(1.2); cursor: grabbing; }
 .item.placed { opacity: 0.3; }
 .counter { font-size: 0.8rem; color: var(--warm-brown); opacity: 0.6; text-align: center; margin-top: 4px; }
@@ -694,6 +730,7 @@ const state = {
   // tong
   tongItems: ['🔴','🟡','🟢','🟠','🔵'],
   tongPlaced: 0,
+  grabbed: null,
   // button
   buttonStep: 0,
   // wash
@@ -806,10 +843,11 @@ function nextStep() {
 
 // ─── POUR ───
 function renderPour(area) {
-  const jug = state.pourLevel > 0 ? '🫗' : '🫗';
   area.innerHTML = `
     <div class="pour-demo">
-      <div class="jug" id="jug" onclick="doPour()">${jug}</div>
+      <div style="position:relative;">
+        <div class="jug" id="jug" onclick="doPour()">🫗<div class="jug-tip-drip" id="drip"></div></div>
+      </div>
       <div>
         <div class="glass" id="glass">🥤<div class="glass-fill ${state.pourLevel > 0 ? 'filled' : ''}" id="glass-fill"></div></div>
       </div>
@@ -823,7 +861,19 @@ function renderPour(area) {
 function doPour() {
   if (state.pourLevel < 3) {
     state.pourLevel++;
+    const jug = document.getElementById('jug');
     const fill = document.getElementById('glass-fill');
+    const drip = document.getElementById('drip');
+    if (jug) {
+      jug.classList.remove('pouring');
+      void jug.offsetWidth; // restart animation
+      jug.classList.add('pouring');
+    }
+    if (drip) {
+      drip.classList.remove('active');
+      void drip.offsetWidth;
+      drip.classList.add('active');
+    }
     if (fill) {
       fill.classList.add('filled');
       fill.style.height = (state.pourLevel * 14) + 'px';
@@ -858,19 +908,25 @@ function renderTong(area) {
 }
 
 function grabItem(i) {
+  if (state.grabbed) return; // already holding one
   state.grabbed = state.tongItems[i];
   state.tongItems.splice(i, 1);
   renderTong(document.getElementById('exp-area'));
   setTimeout(() => {
-    const bowl2 = document.getElementById('bowl2-items');
-    if (bowl2) bowl2.textContent += state.grabbed;
-    state.grabbed = null;
-    if (state.tongItems.length === 0) {
-      confetti();
-      markDone();
-      renderTong(document.getElementById('exp-area'));
+    const bowl2Items = document.getElementById('bowl2-items');
+    if (bowl2Items && state.grabbed) {
+      const span = document.createElement('span');
+      span.textContent = state.grabbed;
+      span.className = 'pop-in';
+      bowl2Items.appendChild(span);
+      state.grabbed = null;
+      if (state.tongItems.length === 0) {
+        confetti();
+        markDone();
+        renderTong(document.getElementById('exp-area'));
+      }
     }
-  }, 300);
+  }, 150);
 }
 
 function transferTo() {
