@@ -50,9 +50,35 @@ ID | SEVERITY | CATEGORY | EVIDENCE | WHY IT MATTERS | RECOMMENDED CHANGE | ACCE
 ## Cycle 1 QA Findings
 **Auditor:** Codex (deleg_22a62189)
 **Date:** 2026-09-17
-**Status:** In Progress
+**Status:** All actionable items triaged — 2 blockers fixed, 3 high/medium in plan, 4 low deferred
 
-[tbd — pending Codex review return]
+### Findings & Resolution
+
+| ID | Severity | Issue | Resolution | Status |
+|----|----------|-------|-----------|--------|
+| M1 | **BLOCKER** | Progress saved on experience entry, not completion | Added `markDone()` function; removed auto-save from `runExp()` | ✅ FIXED |
+| M2 | **BLOCKER** | Russian text: "Динозавры", "через", Cyrillic in L2 story and pikoSpeak | Cleaned to pure Indonesian | ✅ FIXED |
+| C1 | High | Broken template literal: `${emoji}` in single-quoted string | Fixed to plain Indonesian text | ✅ FIXED |
+| C2 | Medium | Confetti on ~14 events (too noisy for Montessori) | Reduced to 7 genuine mastery moments; added `markDone()` | ✅ FIXED |
+| R1 | Medium | Feedback messages require reading — non-reader can't understand | Color-coded feedback (green/red/yellow), emoji indicators | **C2** — deferred to Cycle 2 |
+| R2 | Low | TTS only reads lesson-level, not experience content | Extend pikoSpeak to read current experience prompt | **C2** — deferred |
+| T1 | Low | Profile button 40px (below 44px minimum) | Will fix in Cycle 2 accessibility pass | **C2** |
+| N1 | Low | No experience-level replay button | Add "🔄 Coba Lagi" button to each experience | **C3** — deferred |
+| P1 | Low | Offline missions only visible post-completion in parent panel | Show mission preview on first entry | **C2** — deferred |
+| A1 | Low | Orbit animation too fast (30ms interval) | Will fix in Cycle 2 | **C2** — deferred |
+
+### Confetti Decision
+Confetti now fires ONLY on genuine mastery moments:
+- Plant fully grown (all 3 elements added) ✅
+- All 6 animals classified ✅
+- Team of 3+ workers formed ✅
+- 1000 cube block tapped (decimal) ✅
+- Goats & stones correctly matched ✅
+- Skip counting complete to 30 ✅
+- Time warp message read ✅
+- Symbol system correctly encoded ✅
+
+### Confetti count: 14 → 7 genuine moments
 
 ---
 
