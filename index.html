@@ -812,6 +812,124 @@
     .status-learning { background: var(--soft-orange); }
     .status-new      { background: #ccc; }
 
+    /* ===== INTRO SCREEN ===== */
+    .intro-stage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      min-height: 100dvh;
+      padding: 32px 20px;
+      text-align: center;
+    }
+
+    .intro-piko {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .intro-bunny {
+      font-size: 5rem;
+      animation: pulse 2s infinite;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+    }
+
+    .intro-number {
+      font-family: 'Fredoka One', cursive;
+      font-size: 4rem;
+      color: var(--warm-brown);
+      opacity: 0.7;
+      min-width: 80px;
+    }
+
+    .intro-text h2 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 2rem;
+      color: var(--warm-brown);
+      margin-bottom: 12px;
+    }
+
+    .intro-text p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--warm-brown);
+      opacity: 0.85;
+      line-height: 1.6;
+      max-width: 340px;
+    }
+
+    .intro-dots {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 340px;
+      min-height: 60px;
+    }
+
+    .intro-dot {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.2rem;
+      animation: dotDrop 0.4s ease-out backwards;
+      border: 3px solid;
+      background: white;
+    }
+
+    .intro-btn {
+      background: var(--soft-green);
+      padding: 16px 40px;
+      font-size: 1.2rem;
+      max-width: 300px;
+    }
+
+    /* ===== PATTERN DISCOVERY STAGE ===== */
+    .pattern-board {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      width: 100%;
+      max-width: 340px;
+    }
+
+    .board-cell {
+      aspect-ratio: 1;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.2rem;
+      background: rgba(124,94,60,0.08);
+      border: 2px solid rgba(124,94,60,0.15);
+      cursor: pointer;
+      transition: transform 0.15s, background 0.2s, border-color 0.2s;
+      user-select: none;
+      touch-action: manipulation;
+      min-height: 52px;
+    }
+
+    .board-cell:hover { transform: scale(1.08); }
+
+    .board-cell.selected {
+      border-color: var(--soft-green);
+      background: rgba(93,176,117,0.2);
+      transform: scale(1.12);
+    }
+
+    .board-cell.hint {
+      border-color: var(--soft-orange);
+      background: rgba(242,153,74,0.15);
+      animation: pulse 0.8s infinite;
+    }
+
     /* ===== RESPONSIVE ===== */
     @media (max-width: 480px) {
       .num-cell { min-width: 44px; }
@@ -821,13 +939,33 @@
     }
   </style>
 </head>
-<body>
+<body onload="startApp()">
 
 <!-- Parent Toggle -->
 <button class="parent-toggle" onclick="toggleParentPanel()">👤</button>
 <div class="parent-panel" id="parent-panel">
   <h4>📊 Progress Aya</h4>
   <div id="parent-stats"></div>
+</div>
+
+<!-- ===== INTRO SCREEN ===== -->
+<div class="screen" id="screen-intro">
+  <div class="intro-stage">
+    <div class="intro-piko" id="intro-piko-area">
+      <div class="intro-bunny" id="intro-bunny">🐰</div>
+      <div class="intro-number" id="intro-number">?</div>
+    </div>
+
+    <div class="intro-text" id="intro-text">
+      <h2>Kenalan dengan Piko!</h2>
+      <p>Piko si Kelinci cuma tahu <strong>satu trik</strong>: melompat!</p>
+    </div>
+
+    <div class="intro-dots" id="intro-dots"></div>
+
+    <button class="btn intro-btn" id="intro-btn" onclick="advanceIntro()">Ayo lihat! 👀</button>
+    <button class="btn-back" onclick="skipIntro()" style="margin-top:8px; font-size:0.85rem;">Lewati →</button>
+  </div>
 </div>
 
 <!-- ===== HOME SCREEN ===== -->
@@ -854,6 +992,7 @@
   <div class="home-buttons">
     <button class="btn btn-build"  onclick="startGame('build')">🔨 Buat Kelompok</button>
     <button class="btn btn-jump"   onclick="startGame('jump')">🐰 Loncat Baris Angka</button>
+    <button class="btn btn-next"   onclick="startGame('pattern')">👁️ Lihat Pola Piko</button>
     <button class="btn btn-next"   onclick="startGame('next')">🔮 Apa Angka Berikutnya?</button>
     <button class="btn btn-missing" onclick="startGame('missing')">🔍 Angka Hilang</button>
     <button class="btn btn-detective" onclick="startGame('detective')">🕵️ Aya Detektif Aturan</button>
@@ -941,6 +1080,31 @@
   </div>
 </div>
 
+<!-- ===== PATTERN DISCOVERY SCREEN ===== -->
+<div class="screen" id="screen-pattern">
+  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
+  <div class="game-area">
+    <div class="game-title">👁️ Lihat Pola Piko</div>
+    <p class="game-prompt">Tap angka yang diinjak Piko!</p>
+
+    <div class="jump-selector">
+      <button class="jump-btn by10 selected" onclick="selectPatternSize(10)">+10</button>
+      <button class="jump-btn by5"  onclick="selectPatternSize(5)">+5</button>
+      <button class="jump-btn by2"  onclick="selectPatternSize(2)">+2</button>
+    </div>
+
+    <div class="rule-badge" id="pattern-rule"><span>👣</span> <span id="pattern-rule-num">10</span></div>
+
+    <div class="pattern-board" id="pattern-board"></div>
+
+    <p class="game-prompt" id="pattern-question" style="margin-top:12px; font-size:0.95rem;">Tekan 3 angka yang diinjak Piko!</p>
+
+    <div class="choice-row" id="pattern-choices"></div>
+
+    <div class="feedback" id="pattern-feedback"></div>
+  </div>
+</div>
+
 <!-- ===== MISSING NUMBER SCREEN ===== -->
 <div class="screen" id="screen-missing">
   <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
@@ -990,12 +1154,118 @@
 <script>
 // ===== STATE =====
 const state = {
+  intro: { step: 0, size: 10 },
   build: { size: 10, baskets: 0, dotsInBaskets: 0, targetGroups: 3 },
   jump:  { size: 10, pikoPos: 0 },
-  next:  { size: 10, score: 0, rounds: 0, seq: [] },
+  next:  { size: 10, score: 0, rounds: 0, seq: [], roundSize: 10 },
+  pattern: { size: 10, selected: [], score: 0 },
   missing: { size: 10, score: 0, rounds: 0 },
   detective: { score: 0, rounds: 0 }
 };
+
+// ===== INTRO ENGINE =====
+const INTRO_STEPS = [
+  {
+    text: '<h2>Kenalan dengan Piko!</h2><p>Piko si Kelinci cuma tahu <strong>satu trik</strong>: melompat!</p>',
+    action: null,
+    btn: 'Ayo lihat! 👀'
+  },
+  {
+    text: '<h2>Piko lompat +10!</h2><p>Setiap lompatan, Piko maju <strong>10 langkah</strong>. Mau lihat?</p>',
+    action: () => animateIntroJump(10),
+    btn: 'Lihat! 🐰'
+  },
+  {
+    text: '<h2>0 → 10 → 20!</h2><p>Piko melompat dari 0 ke 10, lalu ke 20! <strong>Polanya selalu sama!</strong></p>',
+    action: () => showIntroSequence(10),
+    btn: 'Terus! ✨'
+  },
+  {
+    text: '<h2>Coba +5!</h2><p>Sekarang Piko lompat <strong>5 langkah</strong>: 0, 5, 10, 15...</p>',
+    action: () => animateIntroJump(5),
+    btn: 'Lihat! 🐰'
+  },
+  {
+    text: '<h2>Kamu sudah tahu polanya!</h2><p>Loncat itu seperti lompatan Piko — <strong>selalu sama!</strong></p>',
+    action: null,
+    btn: 'Mulai! 🚀'
+  }
+];
+
+function advanceIntro() {
+  const s = state.intro;
+  s.step++;
+  if (s.step >= INTRO_STEPS.length) {
+    markIntroDone();
+    showScreen('home');
+    return;
+  }
+  const step = INTRO_STEPS[s.step];
+  document.getElementById('intro-text').innerHTML = step.text;
+  document.getElementById('intro-btn').textContent = step.btn;
+  if (step.action) step.action();
+  else clearIntroDemo();
+}
+
+function skipIntro() {
+  markIntroDone();
+  showScreen('home');
+}
+
+function markIntroDone() {
+  try { localStorage.setItem('belajar-aya-v2-intro', '1'); } catch(e) {}
+}
+
+function animateIntroJump(size) {
+  const dots = document.getElementById('intro-dots');
+  dots.innerHTML = '';
+  const steps = [0, size, size * 2];
+  steps.forEach((n, i) => {
+    const d = document.createElement('div');
+    d.className = 'intro-dot';
+    d.style.borderColor = size === 10 ? '#5DB475' : '#F99E4A';
+    d.style.color = size === 10 ? '#5DB475' : '#F99E4A';
+    d.textContent = n;
+    d.style.animationDelay = (i * 200) + 'ms';
+    dots.appendChild(d);
+  });
+  document.getElementById('intro-number').textContent = size;
+  document.getElementById('intro-number').style.color = size === 10 ? '#5DB475' : '#F99E4A';
+}
+
+function showIntroSequence(size) {
+  const dots = document.getElementById('intro-dots');
+  dots.innerHTML = '';
+  const nums = [0, size, size * 2, size * 3];
+  nums.forEach((n, i) => {
+    const d = document.createElement('div');
+    d.className = 'intro-dot';
+    d.style.borderColor = '#7D5E3C';
+    d.style.color = '#7D5E3C';
+    d.textContent = n;
+    d.style.animationDelay = (i * 150) + 'ms';
+    dots.appendChild(d);
+  });
+  document.getElementById('intro-number').textContent = '→';
+  document.getElementById('intro-number').style.color = '#7D5E3C';
+}
+
+function clearIntroDemo() {
+  const dots = document.getElementById('intro-dots');
+  if (dots) dots.innerHTML = '';
+  const num = document.getElementById('intro-number');
+  if (num) { num.textContent = '?'; num.style.color = '#7D5E3C'; }
+}
+
+function startApp() {
+  try {
+    if (localStorage.getItem('belajar-aya-v2-intro') === '1') {
+      showScreen('home');
+      return;
+    }
+  } catch(e) {}
+  showScreen('intro');
+}
 
 // Load saved progress
 function loadProgress() {
@@ -1020,8 +1290,127 @@ function startGame(name) {
   if (name === 'build') initBuild();
   if (name === 'jump') initJump();
   if (name === 'next') initNext();
+  if (name === 'pattern') initPattern();
   if (name === 'missing') initMissing();
   if (name === 'detective') initDetective();
+}
+
+// ===== PATTERN DISCOVERY: Tap numbers where Piko lands =====
+function initPattern() {
+  state.pattern.selected = [];
+  renderPattern();
+}
+
+function renderPattern() {
+  const size = state.pattern.size;
+  const board = document.getElementById('pattern-board');
+  board.innerHTML = '';
+
+  // Random start: 0, size, or 2*size
+  const start = Math.floor(Math.random() * 3) * size;
+  state.pattern.start = start;
+  state.pattern.size = size;
+
+  for (let i = 1; i <= 20; i++) {
+    const cell = document.createElement('div');
+    cell.className = 'board-cell';
+    cell.textContent = i;
+    cell.dataset.val = i;
+
+    // Highlight numbers in the skip-counting sequence
+    if (i >= start && (i - start) % size === 0) {
+      cell.classList.add('hint'); // pre-hint for visual reveal on tap
+      cell.dataset.inSequence = 'true';
+    }
+
+    cell.addEventListener('click', () => handlePatternTap(cell, i));
+    board.appendChild(cell);
+  }
+
+  // Show rule
+  document.getElementById('pattern-rule-num').textContent = size;
+  clearFeedback('pattern');
+  renderPatternChoices();
+}
+
+function handlePatternTap(cell, val) {
+  if (cell.classList.contains('selected')) return;
+
+  const size = state.pattern.size;
+  const inSeq = cell.dataset.inSequence === 'true';
+  cell.classList.add('selected');
+
+  if (inSeq) {
+    state.pattern.selected.push(val);
+    cell.style.borderColor = 'var(--soft-green)';
+    cell.style.background = 'rgba(93,176,117,0.25)';
+
+    // After 3+ selected, ask the question
+    if (state.pattern.selected.length >= 3) {
+      setTimeout(() => {
+        document.getElementById('pattern-question').textContent = 'Piko lompat berapa langkah?';
+        renderPatternChoices();
+      }, 500);
+    }
+  } else {
+    cell.style.borderColor = '#E57373';
+    cell.style.background = 'rgba(229,115,115,0.15)';
+    showFeedback('pattern', 'Coba angka yang lain! 👣', 'hint');
+    setTimeout(() => {
+      cell.classList.remove('selected');
+      cell.style.borderColor = '';
+      cell.style.background = '';
+    }, 800);
+  }
+}
+
+function renderPatternChoices() {
+  const size = state.pattern.size;
+  const choices = new Set([size]);
+  while (choices.size < 3) {
+    const offset = (Math.random() < 0.5 ? 1 : -1) * (Math.floor(Math.random() * 3) + 1);
+    const c = size + offset;
+    if (c > 0 && c !== size) choices.add(Math.abs(c));
+  }
+
+  const row = document.getElementById('pattern-choices');
+  row.innerHTML = '';
+  [...choices].sort((a,b) => a-b).forEach(c => {
+    const btn = document.createElement('button');
+    btn.className = `choice-btn by${c === 10 ? 10 : c === 5 ? 5 : 2}`;
+    btn.textContent = '+' + c;
+    btn.onclick = () => checkPatternAnswer(c, size, btn);
+    row.appendChild(btn);
+  });
+}
+
+function checkPatternAnswer(selected, correct, btn) {
+  if (btn.classList.contains('correct') || btn.classList.contains('wrong')) return;
+
+  if (selected === correct) {
+    btn.classList.add('correct');
+    showFeedback('pattern', 'Hebat! Aturannya tetap sama! 👣', 'success');
+    state.pattern.score++;
+    confetti();
+
+    const p = loadProgress();
+    p.pattern = p.pattern || {};
+    p.pattern[correct] = (p.pattern[correct] || 0) + 1;
+    saveProgress(p);
+
+    setTimeout(renderPattern, 2200);
+  } else {
+    btn.classList.add('wrong');
+    showFeedback('pattern', 'Piko lompat ' + correct + ' langkah! 👣', 'hint');
+    setTimeout(() => btn.classList.remove('wrong'), 800);
+  }
+}
+
+function selectPatternSize(n) {
+  document.querySelectorAll('#screen-pattern .jump-btn').forEach(b => b.classList.remove('selected'));
+  document.querySelector(`#screen-pattern .jump-btn.by${n}`).classList.add('selected');
+  state.pattern.size = n;
+  initPattern();
 }
 
 // ===== BUILD: DRAG DOTS INTO BASKETS =====
@@ -1066,13 +1455,14 @@ function makeDot(num, cls = '') {
   d.style.animationDelay = (num * 5) + 'ms';
   d.style.animation = 'dotDrop 0.4s ease-out backwards';
 
-  // Touch + mouse drag
+  // Touch + mouse drag — iPad Safari fix: track last pointer position for pointerup
   let startX, startY, origParent;
+  let lastX = 0, lastY = 0;
 
   d.addEventListener('pointerdown', (e) => {
     e.preventDefault();
-    startX = e.clientX;
-    startY = e.clientY;
+    startX = e.clientX; startY = e.clientY;
+    lastX = e.clientX; lastY = e.clientY;
     origParent = d.parentElement;
     d.classList.add('dragging');
     d.setPointerCapture(e.pointerId);
@@ -1080,8 +1470,7 @@ function makeDot(num, cls = '') {
 
   d.addEventListener('pointermove', (e) => {
     if (!d.classList.contains('dragging')) return;
-    const dx = e.clientX - startX;
-    const dy = e.clientY - startY;
+    lastX = e.clientX; lastY = e.clientY;
     d.style.position = 'fixed';
     d.style.left = (e.clientX - 26) + 'px';
     d.style.top  = (e.clientY - 26) + 'px';
@@ -1110,15 +1499,19 @@ function makeDot(num, cls = '') {
     d.style.zIndex = '';
     d.style.pointerEvents = '';
 
+    // Use last known pointer position — iPad Safari returns 0 for clientX/clientY
+    // when pointerup fires after setPointerCapture
+    const cx = e.clientX !== 0 ? e.clientX : lastX;
+    const cy = e.clientY !== 0 ? e.clientY : lastY;
+
     // Find target basket
     let placed = false;
     document.querySelectorAll('.basket').forEach(b => {
       b.style.borderColor = '';
       b.style.background = '';
       const r = b.getBoundingClientRect();
-      if (e.clientX >= r.left && e.clientX <= r.right &&
-          e.clientY >= r.top  && e.clientY <= r.bottom) {
-        // Place dot in basket
+      if (cx >= r.left && cx <= r.right &&
+          cy >= r.top  && cy <= r.bottom) {
         const newDot = makeDot(parseInt(d.textContent));
         b.insertBefore(newDot, b.firstChild);
         const count = parseInt(b.dataset.count) + 1;
@@ -1126,10 +1519,7 @@ function makeDot(num, cls = '') {
         b.querySelector('.basket-label').textContent = count + '/' + size;
         d.remove();
         placed = true;
-
-        if (count === size) {
-          b.classList.add('filled');
-        }
+        if (count === size) b.classList.add('filled');
         state.build.dotsInBaskets++;
         updateBuildTotal();
         checkBuildComplete();
@@ -1579,7 +1969,12 @@ function checkDetectiveAnswer(selected, correct, btn) {
 // ===== FEEDBACK HELPERS =====
 function getSuccessMsg() {
   const msgs = [
-    'Hebat! 🌟', 'Pintar! ⭐', 'Luar biasa! 🎉', 'Aya jenius! 💛', 'Mantap! ✨', 'Super! 🌈'
+    'Hebat! Kamu menemukan polanya! 🌟',
+    'Luar biasa! Aturannya tetap sama! 🎉',
+    'Super! Piko lompat terus sama! ⭐',
+    'Hebat! Kamu lihat polanya! ✨',
+    'Pintar! Loncatannya tepat! 🌈',
+    'Hebat! Aturan itu tidak berubah! 💛'
   ];
   return msgs[Math.floor(Math.random() * msgs.length)];
 }
