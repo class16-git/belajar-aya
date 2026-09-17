@@ -6,434 +6,549 @@
 <title>Skip Counting — Belajar Aya</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--blue:#42A5F5;--orange:#FF7043;--purple:#AB47BC;--cream:#FFF8F0;--shadow:0 4px 24px rgba(0,0,0,.35);--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
-body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:manipulation}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#07071A;
+  --card:#12123A;
+  --gold:#FFD700;
+  --green:#4CAF50;
+  --blue:#42A5F5;
+  --red:#EF5350;
+  --purple:#AB47BC;
+  --cream:#FFF8F0;
+  --font-h:'Fredoka One',cursive;
+  --font-b:'Quicksand',sans-serif;
+}
+html,body{height:100%;overflow-x:hidden}
+body{
+  background:var(--bg);
+  font-family:var(--font-b);
+  color:var(--cream);
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+  user-select:none;
+}
 .screen{display:none;min-height:100dvh;flex-direction:column}
-.screen.active{display:flex}
-.stars{position:fixed;inset:0;pointer-events:none;z-index:0}
-.star{position:absolute;background:#fff;border-radius:50%;animation:twinkle 3s ease-in-out infinite}
-@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.9}}
-.top-bar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
-.top-title{font-family:var(--font-h);font-size:.9rem;color:var(--gold)}
-.top-btn{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
-.top-btn:active{transform:scale(.92)}
-.hero{padding:8px 16px 16px;position:relative;z-index:1;text-align:center}
-.hero-title{font-family:var(--font-h);font-size:1.6rem;color:var(--gold);margin-bottom:4px}
-.hero-sub{font-size:.78rem;opacity:.5}
-.stage-grid{display:flex;flex-direction:column;gap:10px;padding:0 16px 100px;position:relative;z-index:1}
-.stage-card{background:var(--card);border-radius:18px;padding:14px 16px;box-shadow:var(--shadow);cursor:pointer;border:none;width:100%;text-align:left;color:var(--cream);display:flex;gap:14px;align-items:center;transition:transform .15s;font-family:var(--font-b)}
-.stage-card:active{transform:scale(.97)}
-.stage-num{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);font-family:var(--font-h);font-size:1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.stage-card.done .stage-num{background:var(--green);border-color:var(--green);color:#fff}
-.stage-name{font-family:var(--font-h);font-size:1rem;margin-bottom:2px}
-.stage-desc{font-size:.75rem;opacity:.5;line-height:1.3}
-.play-area{padding:0 16px 100px;flex:1;position:relative;z-index:1}
-.instruction{background:rgba(255,255,255,.07);border-radius:14px;padding:12px 16px;margin:10px 0;font-size:.85rem;text-align:center;border:1px solid rgba(255,255,255,.08);line-height:1.6}
-.dot-pool{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:12px;background:rgba(255,255,255,.04);border-radius:16px;border:1px solid rgba(255,255,255,.06);margin:10px 0}
-.dot{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:1.1rem;cursor:pointer;transition:transform .15s;user-select:none;touch-action:none}
+.screen.on{display:flex}
+
+/* ── Stars ── */
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{
+  position:absolute;background:#fff;border-radius:50%;
+  animation:tw var(--d,3s) ease-in-out infinite;
+  animation-delay:var(--dl,0s);
+}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+
+/* ── Top bar ── */
+.tbar{
+  position:sticky;top:0;z-index:50;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 16px 8px;
+  background:linear-gradient(to bottom,var(--bg) 70%,transparent);
+}
+.tbar-back,.tbar-btn{
+  width:42px;height:42px;border-radius:50%;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  color:var(--cream);font-size:1rem;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  text-decoration:none;
+}
+.tbar-back:active,.tbar-btn:active{transform:scale(.9)}
+.tbar-title{font-family:var(--font-h);font-size:.9rem;color:var(--gold)}
+
+/* ── Home ── */
+.hero{padding:4px 16px 16px;position:relative;z-index:1;text-align:center}
+.hero-title{font-family:var(--font-h);font-size:2rem;color:var(--gold)}
+.hero-sub{font-size:.78rem;opacity:.5;margin-top:2px}
+.hero-emoji{font-size:3rem;margin-bottom:4px}
+
+/* ── Stage cards ── */
+.stage-list{
+  display:flex;flex-direction:column;gap:10px;
+  padding:0 16px 100px;position:relative;z-index:1;
+}
+.scard{
+  background:var(--card);border-radius:18px;
+  padding:14px 16px;box-shadow:0 4px 16px rgba(0,0,0,.35);
+  cursor:pointer;border:none;width:100%;
+  text-align:left;color:var(--cream);
+  display:flex;gap:12px;align-items:center;
+  transition:transform .15s;font-family:var(--font-b);
+}
+.scard:active{transform:scale(.97)}
+.scard-num{
+  width:40px;height:40px;border-radius:50%;
+  background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);
+  font-family:var(--font-h);font-size:1rem;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.scard.done .scard-num{background:var(--green);border-color:var(--green);color:#fff}
+.scard-name{font-family:var(--font-h);font-size:1rem}
+.scard-desc{font-size:.72rem;opacity:.5}
+.scard-arrow{margin-left:auto;font-size:.85rem;opacity:.4}
+
+/* ── Play area ── */
+.play{padding:0 16px 100px;flex:1;position:relative;z-index:1}
+.instr{
+  background:rgba(255,255,255,.07);border-radius:14px;
+  padding:10px 14px;margin:8px 0;
+  font-size:.82rem;text-align:center;line-height:1.5;
+  border:1px solid rgba(255,255,255,.08);
+}
+.basket-row{
+  display:flex;justify-content:center;gap:10px;
+  flex-wrap:wrap;margin:12px 0;
+}
+.basket{
+  width:64px;min-height:64px;
+  border:2px dashed rgba(255,255,255,.2);border-radius:14px;
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:2px;
+  transition:border-color .2s,background .2s;
+}
+.basket.drag-over{border-color:var(--green);background:rgba(76,175,80,.08)}
+.basket-label{font-size:.62rem;opacity:.4}
+.basket-num{font-family:var(--font-h);font-size:.72rem;opacity:.5}
+
+.dot-pool{
+  display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
+  padding:10px;
+  background:rgba(255,255,255,.04);
+  border-radius:14px;border:1px solid rgba(255,255,255,.06);
+  margin:10px 0;min-height:60px;
+}
+.dot{
+  width:42px;height:42px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-h);font-size:1rem;
+  cursor:pointer;transition:transform .15s;
+  touch-action:none;
+}
 .dot:active{transform:scale(.88)}
-@keyframes dotDrop{0%{transform:scale(0) translateY(-20px);opacity:0}60%{transform:scale(1.2) translateY(0);opacity:1}100%{transform:scale(1) translateY(0);opacity:1}}
-.basket-row{display:flex;justify-content:center;gap:12px;margin:16px 0;flex-wrap:wrap}
-.basket{width:70px;min-height:70px;border:3px dashed rgba(255,255,255,.25);border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:6px;gap:4px;overflow:visible;position:relative;background:rgba(255,255,255,.03);transition:border-color .2s,background .2s}
-.basket-label{font-size:.65rem;opacity:.4;font-family:var(--font-b);margin-bottom:2px}
-.basket.drag-over{border-color:var(--green);background:rgba(76,175,80,.1)}
-.basket-count{font-family:var(--font-h);font-size:.75rem;margin-top:4px;color:var(--cream);opacity:.6}
-.dot-in-basket{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:.9rem;cursor:default;pointer-events:none}
-.btn{padding:12px 20px;border-radius:14px;border:none;cursor:pointer;font-family:var(--font-b);font-weight:700;font-size:.88rem;transition:transform .12s}
-.btn:active{transform:scale(.95)}
-.btn-primary{background:var(--gold);color:var(--bg);display:block;width:100%;max-width:320px;margin:14px auto}
-.btn-secondary{background:rgba(255,255,255,.08);color:var(--cream);border:1px solid rgba(255,255,255,.12)}
-.op-row{display:flex;justify-content:center;gap:8px;margin:10px 0}
-.op-btn{width:50px;height:50px;border-radius:12px;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);cursor:pointer;font-family:var(--font-h);font-size:1.1rem;display:flex;align-items:center;justify-content:center;color:var(--cream);transition:all .2s}
-.op-btn:active{transform:scale(.9)}
-.op-btn.active{background:rgba(255,215,0,.15);border-color:var(--gold);color:var(--gold)}
-.op-btn.selected{background:var(--blue);border-color:var(--blue);color:#fff}
-.total-display{text-align:center;font-family:var(--font-h);font-size:1.4rem;color:var(--gold);margin:8px 0}
-.success-box{background:rgba(76,175,80,.15);border:2px solid rgba(76,175,80,.4);border-radius:16px;padding:16px;text-align:center;margin:10px 0;display:none}
-.success-box.show{display:block}
-.success-box .emoji{font-size:2.5rem;margin-bottom:8px}
-.success-box .text{font-family:var(--font-h);color:var(--green);font-size:1.1rem}
-.home-fab{position:fixed;bottom:20px;left:20px;width:50px;height:50px;border-radius:50%;background:var(--green);color:#fff;font-size:1.3rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100;display:flex;align-items:center;justify-content:center;text-decoration:none}
-.home-fab:active{transform:scale(.9)}
-.parent-fab{position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--gold);color:var(--bg);font-size:1.2rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100}
-.parent-fab:active{transform:scale(.9)}
-.rabbity-fab{position:fixed;bottom:80px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--card);border:2px solid rgba(255,255,255,.15);color:var(--cream);font-size:1.3rem;z-index:99;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-.rabbity-bubble{position:fixed;bottom:140px;right:20px;z-index:98;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:10px 14px;max-width:220px;font-size:.8rem;line-height:1.5;color:var(--cream);box-shadow:0 4px 16px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .3s}
-.rabbity-bubble.show{opacity:1}
-.parent-panel{position:fixed;bottom:0;left:0;right:0;background:var(--cream);color:#333;border-radius:20px 20px 0 0;padding:20px 16px 90px;box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;max-height:70vh;overflow-y:auto;transform:translateY(110%);transition:transform .3s}
-.parent-panel.open{transform:translateY(0)}
-.panel-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
-.panel-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
-.panel-row{margin-bottom:12px}
-.panel-row-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
-.panel-bar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
-.panel-bar-fill{height:100%;border-radius:4px;transition:width .5s}
-.confetti-container{position:fixed;inset:0;pointer-events:none;z-index:9999}
-.confetti-piece{position:absolute;width:10px;height:10px;border-radius:2px;animation:confettiFall 2.5s ease-out forwards}
-@keyframes confettiFall{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+.dot.dragging{
+  position:fixed;z-index:999;pointer-events:none;
+  transform:scale(1.1);
+}
+
+.total-row{text-align:center;margin:8px 0}
+.total-label{font-family:var(--font-h);font-size:1.3rem;color:var(--gold)}
+
+.success-box{
+  background:rgba(76,175,80,.15);border:2px solid rgba(76,175,80,.4);
+  border-radius:16px;padding:14px;text-align:center;margin:10px 0;
+  display:none;
+}
+.success-box.on{display:block}
+.success-emoji{font-size:2.5rem}
+.success-text{font-family:var(--font-h);color:var(--green);font-size:1rem;margin-top:4px}
+
+/* ── Buttons ── */
+.btn{
+  display:block;width:100%;max-width:320px;margin:8px auto;
+  padding:13px 20px;border-radius:14px;border:none;
+  cursor:pointer;font-family:var(--font-b);font-weight:700;font-size:.88rem;
+  transition:transform .12s;
+}
+.btn:active{transform:scale(.96)}
+.btn-gold{background:var(--gold);color:var(--bg)}
+.btn-ghost{
+  background:rgba(255,255,255,.08);color:var(--cream);
+  border:1px solid rgba(255,255,255,.12);
+}
+
+/* ── FABs ── */
+.fab{
+  position:fixed;width:50px;height:50px;border-radius:50%;
+  border:none;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;z-index:100;
+  box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+.fab:active{transform:scale(.9)}
+.fab-home{left:20px;bottom:20px;background:var(--green);color:#fff}
+.fab-parent{right:20px;bottom:20px;background:var(--gold);color:var(--bg)}
+.fab-rabbity{right:20px;bottom:80px;background:var(--card);border:2px solid rgba(255,255,255,.15);color:var(--cream)}
+
+.bubble{
+  position:fixed;bottom:138px;right:20px;z-index:99;
+  background:var(--card);border:1px solid rgba(255,255,255,.1);
+  border-radius:14px;padding:10px 14px;
+  max-width:210px;font-size:.8rem;line-height:1.5;
+  box-shadow:0 4px 14px rgba(0,0,0,.3);
+  opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.bubble.on{opacity:1}
+
+/* ── Parent panel ── */
+.ppanel{
+  position:fixed;bottom:0;left:0;right:0;
+  background:var(--cream);color:#333;
+  border-radius:20px 20px 0 0;
+  padding:20px 16px 90px;
+  box-shadow:0 -4px 24px rgba(0,0,0,.2);
+  z-index:99;max-height:70vh;overflow-y:auto;
+  transform:translateY(110%);transition:transform .3s;
+}
+.ppanel.on{transform:translateY(0)}
+.phan-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
+.phan-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
+.prow{margin-bottom:12px}
+.prow-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
+.pbar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
+.pbar-fill{height:100%;border-radius:4px;transition:width .5s}
+
+/* ── Confetti ── */
+.confetti{
+  position:fixed;inset:0;pointer-events:none;z-index:9999;
+}
+.conf{
+  position:absolute;width:9px;height:9px;border-radius:2px;
+  animation:cf 2.5s ease-out forwards;
+}
+@keyframes cf{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
 </style>
 </head>
 <body>
+
 <div class="stars" id="stars"></div>
 
-<div class="screen active" id="screen-home">
-  <div class="top-bar">
-    <a href="index.html" class="top-btn">←</a>
-    <div class="top-title">Skip Counting</div>
-    <div style="width:44px"></div>
+<!-- HOME SCREEN -->
+<div class="screen on" id="s-home">
+  <div class="tbar">
+    <a href="index.html" class="tbar-btn">&#8592;</a>
+    <div class="tbar-title">Skip Counting</div>
+    <div style="width:42px"></div>
   </div>
   <div class="hero">
-    <div style="font-size:2.5rem;margin-bottom:4px;">🐰</div>
+    <div class="hero-emoji">&#128049;</div>
     <div class="hero-title">Skip Counting</div>
-    <div class="hero-sub">Jump through numbers by skip-counting!</div>
+    <div class="hero-sub">Jump through numbers!</div>
   </div>
-  <div class="stage-grid" id="stage-grid"></div>
+  <div class="stage-list" id="stage-list"></div>
 </div>
 
-<div class="screen" id="screen-play">
-  <div class="top-bar">
-    <button class="top-btn" onclick="goBack()">←</button>
-    <div class="top-title" id="play-title">Stage 1</div>
-    <button class="top-btn" onclick="toggleParent()">👤</button>
+<!-- PLAY SCREEN -->
+<div class="screen" id="s-play">
+  <div class="tbar">
+    <button class="tbar-back" id="play-back">&#8592;</button>
+    <div class="tbar-title" id="play-title">Stage 1</div>
+    <button class="tbar-btn" id="play-parent">&#128100;</button>
   </div>
-  <div class="play-area">
-    <div class="instruction" id="play-instruction">Drag dots into the baskets!</div>
+  <div class="play">
+    <div class="instr" id="play-instr">Drag dots into baskets!</div>
     <div class="basket-row" id="basket-row"></div>
     <div class="dot-pool" id="dot-pool"></div>
-    <div class="total-display">Total: <span id="total-num">0</span></div>
+    <div class="total-row"><span class="total-label">Total: <span id="total-num">0</span></span></div>
     <div class="success-box" id="success-box">
-      <div class="emoji">🎉</div>
-      <div class="text" id="success-text">Great job!</div>
+      <div class="success-emoji">&#127882;</div>
+      <div class="success-text" id="success-text">Great job!</div>
     </div>
-    <button class="btn btn-primary" onclick="checkAnswer()">Check Answer</button>
-    <button class="btn btn-secondary" onclick="resetStage()" style="display:block;width:100%;max-width:320px;margin:8px auto">Try Again</button>
+    <button class="btn btn-gold" id="check-btn">Check Answer</button>
+    <button class="btn btn-ghost" id="reset-btn">Try Again</button>
   </div>
 </div>
 
-<a href="index.html" class="home-fab">🏠</a>
-<button class="parent-fab" onclick="toggleParent()">👤</button>
-<button class="rabbity-fab" onclick="rabbitySpeak()">🐰</button>
-<div class="rabbity-bubble" id="rabbity-bubble"></div>
+<!-- FABs -->
+<a href="index.html" class="fab fab-home">&#127968;</a>
+<button class="fab fab-parent" id="fab-parent">&#128100;</button>
+<button class="fab fab-rabbity" id="fab-rabbity">&#128049;</button>
+<div class="bubble" id="bubble"></div>
 
-<div class="parent-panel" id="parent-panel">
-  <div class="panel-handle"></div>
-  <button onclick="toggleParent()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">✕</button>
-  <div class="panel-title">📊 Skip Counting Progress</div>
-  <div id="parent-content"></div>
+<!-- Parent Panel -->
+<div class="ppanel" id="ppanel">
+  <div class="phan-handle"></div>
+  <button onclick="togglePanel()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">&#10005;</button>
+  <div class="phan-title">&#128202; Progress</div>
+  <div id="pcontent"></div>
 </div>
 
-<div class="confetti-container" id="confetti-container"></div>
+<div class="confetti" id="confetti"></div>
 
 <script>
 var STAGES = [
-  { id: 1, name: "Numbers 1–10", skip: 1, desc: "Count one by one", instruction: "Tap numbers 1 through 10!" },
-  { id: 2, name: "Skip by 2s", skip: 2, desc: "2, 4, 6, 8, 10", instruction: "Drag dots by 2s!" },
-  { id: 3, name: "Skip by 5s", skip: 5, desc: "5, 10, 15, 20, 25", instruction: "Drag dots by 5s!" },
-  { id: 4, name: "Skip by 10s", skip: 10, desc: "10, 20, 30, 40, 50", instruction: "Drag dots by 10s!" },
-  { id: 5, name: "Multiply by 2", skip: 2, mult: true, desc: "2, 4, 6, 8, 10", instruction: "Drag dots by 2s — it's multiplication!" },
-  { id: 6, name: "Multiply by 3", skip: 3, mult: true, desc: "3, 6, 9, 12, 15", instruction: "Drag dots by 3s — it's 3x!" },
+  { id:1, name:"Numbers 1 to 10", skip:1, desc:"Count one by one",        instr:"Tap the numbers in order!" },
+  { id:2, name:"Skip by 2s",    skip:2, desc:"2, 4, 6, 8, 10",         instr:"Drag dots so each basket has the same number!" },
+  { id:3, name:"Skip by 5s",    skip:5, desc:"5, 10, 15, 20, 25",       instr:"Drag dots by 5s into baskets!" },
+  { id:4, name:"Skip by 10s",   skip:10,desc:"10, 20, 30, 40, 50",      instr:"Drag dots by 10s into baskets!" },
+  { id:5, name:"Multiply by 2", skip:2,  mult:true, desc:"2, 4, 6, 8, 10", instr:"Drag dots by 2s — it is multiplication!" },
+  { id:6, name:"Multiply by 3", skip:3,  mult:true, desc:"3, 6, 9, 12, 15", instr:"Drag dots by 3s — it is 3 times!" },
 ];
-var state = { currentStage: 1, currentBasket: [], total: 0, dragging: null };
-var lastX = 0, lastY = 0;
-var dragDot = null;
-var dragOffsetX = 0, dragOffsetY = 0;
 
-function lsGet(k, def) {
-  try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : def; } catch(e) { return def; }
-}
-function lsSet(k, v) {
-  try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {}
-}
+var STATE = null;
 
-function init() {
+function lg(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
+function ls(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+
+function init(){
   genStars();
-  lsSet("skip-stage-1", 1);
-  lsSet("skip-stage-2", 1);
-  lsSet("skip-stage-3", 1);
-  lsSet("skip-stage-4", 1);
-  renderStageSelect();
-  showScreen("home");
+  ls("skip-s1",1);ls("skip-s2",1);ls("skip-s3",1);ls("skip-s4",1);
+  renderHome();
 }
 
-function genStars() {
-  var el = document.getElementById("stars");
-  el.innerHTML = "";
-  for (var i = 0; i < 60; i++) {
-    var s = document.createElement("div");
-    s.className = "star";
-    var sz = Math.random() * 2 + 1;
-    s.style.cssText = "left:" + (Math.random() * 100) + "%;top:" + (Math.random() * 100) + "%;width:" + sz + "px;height:" + sz + "px;animation-delay:" + (Math.random() * 3).toFixed(1) + "s;animation-duration:" + (Math.random() * 2 + 2).toFixed(1) + "s";
+function genStars(){
+  var el=document.getElementById("stars");
+  el.innerHTML="";
+  for(var i=0;i<60;i++){
+    var s=document.createElement("div");
+    s.className="star";
+    var sz=Math.random()*2+1;
+    s.style.cssText="left:"+(Math.random()*100)+"%;top:"+(Math.random()*100)+"%;width:"+sz+"px;height:"+sz+"px;--d:"+(Math.random()*2+2).toFixed(1)+"s;--dl:"+(Math.random()*3).toFixed(1)+"s";
     el.appendChild(s);
   }
 }
 
-function showScreen(name) {
-  document.querySelectorAll(".screen").forEach(function(s) { s.classList.remove("active"); });
-  var el = document.getElementById("screen-" + name);
-  if (el) el.classList.add("active");
-  state.history = state.history || ["home"];
-  state.history.push(name);
+function sc(name){
+  document.querySelectorAll(".screen").forEach(function(s){s.classList.remove("on");});
+  document.getElementById("s-"+name).classList.add("on");
 }
 
-function goBack() {
-  var h = state.history || ["home"];
-  if (h.length > 1) h.pop();
-  showScreen(h[h.length - 1] || "home");
-}
-
-function renderStageSelect() {
-  var grid = document.getElementById("stage-grid");
-  grid.innerHTML = "";
-  STAGES.forEach(function(s) {
-    var done = lsGet("skip-stage-" + s.id, 0) > 0;
-    var card = document.createElement("button");
-    card.className = "stage-card" + (done ? " done" : "");
-    card.onclick = function() { startStage(s.id); };
-    card.innerHTML = '<div class="stage-num">' + (done ? "✓" : s.id) + '</div><div><div class="stage-name">' + s.name + '</div><div class="stage-desc">' + s.desc + '</div></div>';
-    grid.appendChild(card);
+function renderHome(){
+  var list=document.getElementById("stage-list");
+  list.innerHTML="";
+  STAGES.forEach(function(s){
+    var done=lg("skip-s"+s.id,0)>1;
+    var card=document.createElement("button");
+    card.className="scard"+(done?" done":"");
+    card.innerHTML='<div class="scard-num">'+(done?"&#10003;":s.id)+'</div>'+
+      '<div><div class="scard-name">'+s.name+'</div><div class="scard-desc">'+s.desc+'</div></div>'+
+      '<div class="scard-arrow">&#8594;</div>';
+    card.onclick=function(){startStage(s);};
+    list.appendChild(card);
   });
 }
 
-function startStage(id) {
-  state.currentStage = id;
-  state.currentBasket = [];
-  state.total = 0;
-  var s = STAGES.find(function(x) { return x.id === id; });
-  document.getElementById("play-title").textContent = "Stage " + id + ": " + s.name;
-  document.getElementById("play-instruction").textContent = s.instruction;
-  document.getElementById("success-box").classList.remove("show");
-  renderBaskets(s);
-  renderDotPool(s);
-  document.getElementById("total-num").textContent = "0";
-  showScreen("play");
+function startStage(s){
+  STATE={
+    stage:s,
+    baskets:[[],[],[],[],[]],
+    total:0,
+    done:false
+  };
+  document.getElementById("play-title").textContent="Stage "+s.id+": "+s.name;
+  document.getElementById("play-instr").textContent=s.instr;
+  document.getElementById("success-box").classList.remove("on");
+  renderBaskets();
+  renderDots();
+  document.getElementById("total-num").textContent="0";
+  sc("play");
 }
 
-function renderBaskets(s) {
-  var row = document.getElementById("basket-row");
-  row.innerHTML = "";
-  for (var i = 0; i < 5; i++) {
-    (function(idx) {
-      var b = document.createElement("div");
-      b.className = "basket";
-      b.id = "basket-" + idx;
-      b.dataset.idx = idx;
-      b.dataset.target = s.skip;
-      var lbl = document.createElement("div");
-      lbl.className = "basket-label";
-      lbl.textContent = "Basket " + (idx + 1);
-      var cnt = document.createElement("div");
-      cnt.className = "basket-count";
-      cnt.id = "basket-count-" + idx;
-      cnt.textContent = "0/" + s.skip;
+function renderBaskets(){
+  var row=document.getElementById("basket-row");
+  row.innerHTML="";
+  for(var i=0;i<5;i++){
+    (function(idx){
+      var b=document.createElement("div");
+      b.className="basket";
+      b.id="basket-"+idx;
+      var lbl=document.createElement("div");
+      lbl.className="basket-label";
+      lbl.textContent="Basket "+(idx+1);
+      var cnt=document.createElement("div");
+      cnt.className="basket-num";
+      cnt.id="bnum-"+idx;
+      cnt.textContent="0/"+STATE.stage.skip;
       b.appendChild(lbl);
       b.appendChild(cnt);
-      b.addEventListener("pointerdown", basketPointerDown);
-      b.addEventListener("pointerenter", function(e) { if (dragDot) b.classList.add("drag-over"); });
-      b.addEventListener("pointerleave", function() { b.classList.remove("drag-over"); });
       row.appendChild(b);
     })(i);
   }
 }
 
-function renderDotPool(s) {
-  var pool = document.getElementById("dot-pool");
-  pool.innerHTML = "";
-  var count = s.mult ? s.skip * 5 : s.skip * 5;
-  for (var i = 1; i <= count; i++) {
-    var d = makeDot(i);
+function renderDots(){
+  var pool=document.getElementById("dot-pool");
+  pool.innerHTML="";
+  var count=STATE.stage.skip*5;
+  var colors=["#EF5350","#FFCA28","#66BB6A","#42A5F5","#AB47BC","#FF7043","#26C6DA","#EC407A"];
+  for(var i=1;i<=count;i++){
+    var color=colors[(i-1)%colors.length];
+    var d=document.createElement("div");
+    d.className="dot";
+    d.textContent=i;
+    d.style.background=color+"33";
+    d.style.color=color;
+    d.style.border="2px solid "+color;
+    d.dataset.num=i;
+    d.style.pointerEvents="auto";
+
+    d.addEventListener("pointerdown",function(ev){
+      ev.preventDefault();
+      if(STATE===null||STATE.done)return;
+      var el=ev.currentTarget;
+      if(el.closest(".basket"))return;
+      dragStart(ev,el);
+    });
+
     pool.appendChild(d);
   }
 }
 
-function makeDot(n) {
-  var colors = ["#EF5350", "#FFCA28", "#66BB6A", "#42A5F5", "#AB47BC", "#FF7043", "#26C6DA", "#EC407A"];
-  var d = document.createElement("div");
-  d.className = "dot";
-  d.textContent = n;
-  d.style.background = colors[(n - 1) % colors.length] + "33";
-  d.style.color = colors[(n - 1) % colors.length];
-  d.style.border = "2px solid " + colors[(n - 1) % colors.length];
-  d.style.animation = "dotDrop 0.4s ease-out backwards";
-  d.style.animationDelay = (n * 30) + "ms";
-  d.style.pointerEvents = "auto";
-  var num = n;
+function dragStart(ev,el){
+  var num=parseInt(el.dataset.num);
+  var clone=el.cloneNode(true);
+  clone.classList.add("dragging");
+  clone.style.left=(ev.clientX-21)+"px";
+  clone.style.top=(ev.clientY-21)+"px";
+  document.body.appendChild(clone);
+  el.style.opacity="0.25";
+  el.style.pointerEvents="none";
 
-  d.addEventListener("pointerdown", function(e) {
-    if (d.closest(".basket")) return;
-    e.preventDefault();
-    dragDot = d;
-    var rect = d.getBoundingClientRect();
-    dragOffsetX = e.clientX - rect.left;
-    dragOffsetY = e.clientY - rect.top;
-    lastX = e.clientX;
-    lastY = e.clientY;
-    d.style.position = "fixed";
-    d.style.zIndex = "1000";
-    d.style.left = (e.clientX - dragOffsetX) + "px";
-    d.style.top = (e.clientY - dragOffsetY) + "px";
-    d.style.pointerEvents = "none";
-  });
-
-  document.addEventListener("pointermove", function(e) {
-    if (!dragDot || dragDot !== d) return;
-    lastX = e.clientX;
-    lastY = e.clientY;
-    d.style.left = (e.clientX - dragOffsetX) + "px";
-    d.style.top = (e.clientY - dragOffsetY) + "px";
-    // Highlight basket under pointer
-    document.querySelectorAll(".basket").forEach(function(b) { b.classList.remove("drag-over"); });
-    var el = document.elementFromPoint(e.clientX, e.clientY);
-    if (el) {
-      var basket = el.closest(".basket");
-      if (basket) basket.classList.add("drag-over");
+  function onMove(e){
+    clone.style.left=(e.clientX-21)+"px";
+    clone.style.top=(e.clientY-21)+"px";
+    // highlight basket
+    document.querySelectorAll(".basket").forEach(function(b){b.classList.remove("drag-over");});
+    var el2=document.elementFromPoint(e.clientX,e.clientY);
+    if(el2){
+      var b=el2.closest(".basket");
+      if(b)b.classList.add("drag-over");
     }
-  });
+  }
 
-  document.addEventListener("pointerup", function(e) {
-    if (!dragDot || dragDot !== d) return;
-    var targetBasket = null;
-    var el = document.elementFromPoint(e.clientX, e.clientY);
-    if (el) {
-      var basket = el.closest(".basket");
-      if (basket) targetBasket = basket;
-    }
-    if (targetBasket) {
-      var idx = parseInt(targetBasket.dataset.idx);
-      if (!state.currentBasket[idx]) state.currentBasket[idx] = [];
-      var already = state.currentBasket[idx].some(function(x) { return x.num === num; });
-      if (!already) {
-        state.currentBasket[idx].push({ num: num, el: d });
-        d.style.position = "";
-        d.style.left = "";
-        d.style.top = "";
-        d.style.zIndex = "";
-        d.style.pointerEvents = "none";
-        d.style.opacity = "0.5";
-        targetBasket.insertBefore(d, targetBasket.firstChild);
-        d.classList.add("dot-in-basket");
-        var cnt = document.getElementById("basket-count-" + idx);
-        if (cnt) cnt.textContent = state.currentBasket[idx].length + "/" + targetBasket.dataset.target;
-        updateTotal();
+  function onUp(e){
+    document.removeEventListener("pointermove",onMove);
+    document.removeEventListener("pointerup",onUp);
+    document.querySelectorAll(".basket").forEach(function(b){b.classList.remove("drag-over");});
+    clone.remove();
+    var target=document.elementFromPoint(e.clientX,e.clientY);
+    if(target){
+      var b=target.closest(".basket");
+      if(b){
+        var idx=parseInt(b.id.split("-")[1]);
+        var already=STATE.baskets[idx].some(function(x){return x===num;});
+        if(!already){
+          STATE.baskets[idx].push(num);
+          el.style.display="none";
+          addDotToBasket(idx,num);
+          recalcTotal();
+          checkDone();
+        } else {
+          el.style.opacity="1";
+          el.style.pointerEvents="auto";
+        }
       } else {
-        d.style.position = "";
-        d.style.left = "";
-        d.style.top = "";
-        d.style.zIndex = "";
-        d.style.pointerEvents = "auto";
+        el.style.opacity="1";
+        el.style.pointerEvents="auto";
       }
     } else {
-      d.style.position = "";
-      d.style.left = "";
-      d.style.top = "";
-      d.style.zIndex = "";
-      d.style.pointerEvents = "auto";
+      el.style.opacity="1";
+      el.style.pointerEvents="auto";
     }
-    document.querySelectorAll(".basket").forEach(function(b) { b.classList.remove("drag-over"); });
-    dragDot = null;
-  });
+  }
 
-  return d;
+  document.addEventListener("pointermove",onMove);
+  document.addEventListener("pointerup",onUp);
 }
 
-function updateTotal() {
-  var t = 0;
-  state.currentBasket.forEach(function(b) { t += b.length; });
-  state.total = t;
-  var el = document.getElementById("total-num");
-  if (el) el.textContent = t;
-  var s = STAGES.find(function(x) { return x.id === state.currentStage; });
-  var allFull = state.currentBasket.length === 5 && state.currentBasket.every(function(b) { return b.length === parseInt(s.skip); });
-  if (allFull) {
-    document.getElementById("success-box").classList.add("show");
-    document.getElementById("success-text").textContent = "All baskets full! Great job!";
+function addDotToBasket(bIdx,num){
+  var basket=document.getElementById("basket-"+bIdx);
+  var colors=["#EF5350","#FFCA28","#66BB6A","#42A5F5","#AB47BC","#FF7043","#26C6DA","#EC407A"];
+  var color=colors[(num-1)%colors.length];
+  var d=document.createElement("div");
+  d.style.cssText="width:32px;height:32px;border-radius:50%;background:"+color+"33;color:"+color+";border:2px solid "+color+";display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:.85rem";
+  d.textContent=num;
+  basket.insertBefore(d,basket.firstChild);
+  document.getElementById("bnum-"+bIdx).textContent=STATE.baskets[bIdx].length+"/"+STATE.stage.skip;
+}
+
+function recalcTotal(){
+  var t=0;
+  STATE.baskets.forEach(function(b){t+=b.length;});
+  STATE.total=t;
+  document.getElementById("total-num").textContent=t;
+}
+
+function checkDone(){
+  var s=STATE.stage;
+  var full=STATE.baskets.filter(function(b){return b.length===parseInt(s.skip);}).length;
+  if(full===5){
+    STATE.done=true;
+    document.getElementById("success-box").classList.add("on");
+    document.getElementById("success-text").textContent="All baskets full! Well done!";
   }
 }
 
-function checkAnswer() {
-  var s = STAGES.find(function(x) { return x.id === state.currentStage; });
-  var allFull = state.currentBasket.length === 5 && state.currentBasket.every(function(b) { return b.length === parseInt(s.skip); });
-  if (allFull) {
-    lsSet("skip-stage-" + s.id, 2);
-    confetti();
-    say("Amazing! All baskets have the same amount!");
-    setTimeout(function() { renderStageSelect(); }, 2000);
+function checkAnswer(){
+  if(STATE===null)return;
+  var s=STATE.stage;
+  var full=STATE.baskets.filter(function(b){return b.length===parseInt(s.skip);}).length;
+  if(full===5){
+    ls("skip-s"+s.id,2);
+    doConfetti();
+    say("Amazing! All baskets have the same number!");
+    setTimeout(function(){renderHome();},2000);
   } else {
-    say("Not quite! Each basket needs the same number of dots.");
+    say("Not quite. Each basket needs the same number of dots.");
   }
 }
 
-function resetStage() {
-  startStage(state.currentStage);
+function resetStage(){
+  if(STATE)startStage(STATE.stage);
 }
 
-function basketPointerDown(e) {
-  e.stopPropagation();
+function togglePanel(){
+  var p=document.getElementById("ppanel");
+  p.classList.toggle("on");
+  if(p.classList.contains("on"))renderPanel();
 }
 
-function toggleParent() {
-  var p = document.getElementById("parent-panel");
-  if (!p) return;
-  p.classList.toggle("open");
-  if (p.classList.contains("open")) renderParentPanel();
-}
-
-function renderParentPanel() {
-  var c = document.getElementById("parent-content");
-  if (!c) return;
-  c.innerHTML = "";
-  STAGES.forEach(function(s) {
-    var done = lsGet("skip-stage-" + s.id, 0);
-    var pct = done ? 100 : 0;
-    c.innerHTML += "<div class=\"panel-row\"><div class=\"panel-row-label\">" + s.name + " <span>" + pct + "%</span></div><div class=\"panel-bar\"><div class=\"panel-bar-fill\" style=\"width:" + pct + "%;background:#42A5F5;\"></div></div></div>";
+function renderPanel(){
+  var c=document.getElementById("pcontent");
+  c.innerHTML="";
+  STAGES.forEach(function(s){
+    var done=lg("skip-s"+s.id,0)>1;
+    var pct=done?100:0;
+    c.innerHTML+='<div class="prow"><div class="prow-label">'+s.name+' <span>'+pct+'%</span></div><div class="pbar"><div class="pbar-fill" style="width:'+pct+'%;background:#42A5F5;"></div></div></div>';
   });
 }
 
-function rabbitySpeak() {
-  var msgs = ["Let's go! 📚", "You're amazing! ⭐", "Keep going! 🌟", "There is nothing wrong with trying again! 💪"];
-  say(msgs[Math.floor(Math.random() * msgs.length)]);
-}
-
-function say(text) {
-  var b = document.getElementById("rabbity-bubble");
-  if (b) { b.textContent = "🐰 " + text; b.classList.add("show"); }
-  if ("speechSynthesis" in window) {
+function say(text){
+  var b=document.getElementById("bubble");
+  if(b){b.textContent="&#128049; "+text;b.classList.add("on");}
+  if("speechSynthesis" in window){
     speechSynthesis.cancel();
-    var u = new SpeechSynthesisUtterance(text);
-    u.lang = "en-US";
-    u.rate = 0.85;
+    var u=new SpeechSynthesisUtterance(text);
+    u.lang="en-US";u.rate=0.85;
     speechSynthesis.speak(u);
   }
-  setTimeout(function() { if (b) b.classList.remove("show"); }, 3500);
+  setTimeout(function(){if(b)b.classList.remove("on");},3500);
 }
 
-function confetti() {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  var c = document.getElementById("confetti-container");
-  if (!c) return;
-  c.innerHTML = "";
-  var colors = ["#FFD700", "#EF5350", "#66BB6A", "#42A5F5", "#AB47BC", "#FF9800"];
-  for (var i = 0; i < 40; i++) {
-    var p = document.createElement("div");
-    p.className = "confetti-piece";
-    p.style.left = Math.random() * 100 + "%";
-    p.style.background = colors[Math.floor(Math.random() * colors.length)];
-    p.style.animationDelay = (Math.random() * 0.8) + "s";
+function doConfetti(){
+  var c=document.getElementById("confetti");
+  c.innerHTML="";
+  var colors=["#FFD700","#EF5350","#66BB6A","#42A5F5","#AB47BC","#FF9800"];
+  for(var i=0;i<35;i++){
+    var p=document.createElement("div");
+    p.className="conf";
+    p.style.left=Math.random()*100+"%";
+    p.style.background=colors[Math.floor(Math.random()*colors.length)];
+    p.style.animationDelay=(Math.random()*0.7)+"s";
+    p.style.animationDuration="2.5s";
     c.appendChild(p);
   }
-  setTimeout(function() { c.innerHTML = ""; }, 3500);
+  setTimeout(function(){c.innerHTML="";},3500);
 }
 
-document.addEventListener("keydown", function(e) {
-  if (e.key === "Escape") {
-    var p = document.getElementById("parent-panel");
-    if (p) p.classList.remove("open");
-    goBack();
+// ── Event listeners ──
+document.getElementById("play-back").onclick=function(){sc("home");};
+document.getElementById("play-parent").onclick=togglePanel;
+document.getElementById("fab-parent").onclick=togglePanel;
+document.getElementById("fab-rabbity").onclick=function(){
+  var msgs=["Let's go! &#128218;","You are amazing! &#11088;","Keep going! &#127775;","There is nothing wrong with trying again! &#128170;"];
+  say(msgs[Math.floor(Math.random()*msgs.length)]);
+};
+document.getElementById("check-btn").onclick=checkAnswer;
+document.getElementById("reset-btn").onclick=resetStage;
+document.addEventListener("keydown",function(e){
+  if(e.key==="Escape"){
+    document.getElementById("ppanel").classList.remove("on");
+    if(document.getElementById("s-play").classList.contains("on"))sc("home");
   }
 });
-window.addEventListener("load", init);
+
+window.addEventListener("load",init);
 </script>
 </body>
 </html>
