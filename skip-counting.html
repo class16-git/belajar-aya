@@ -1,2096 +1,887 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Belajar Loncat dengan Rabbity! 🐰</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
-
-    :root {
-      --cream: #FFF9F0;
-      --warm-brown: #7C5E3C;
-      --soft-green: #5DB075;
-      --grass-green: #3D8B4E;
-      --sky-blue: #6BB8E0;
-      --deep-blue: #3A7BD5;
-      --soft-orange: #F2994A;
-      --soft-pink: #F06292;
-      --light: #FFF;
-      --shadow: 0 6px 24px rgba(0,0,0,0.10);
-      --radius: 24px;
-      --radius-sm: 16px;
-    }
-
-    body {
-      font-family: 'Quicksand', sans-serif;
-      background: var(--cream);
-      color: var(--warm-brown);
-      min-height: 100dvh;
-      overflow-x: hidden;
-      touch-action: manipulation;
-    }
-
-    /* ===== ANIMATIONS ===== */
-    @keyframes bunnyHop {
-      0%   { transform: translateX(var(--from-x)) translateY(0) scaleY(1); }
-      30%  { transform: translateX(calc(var(--from-x) + 40%)) translateY(-60px) scaleY(1.1) scaleX(0.9); }
-      60%  { transform: translateX(calc(var(--from-x) + 70%)) translateY(-20px) scaleY(0.95); }
-      80%  { transform: translateX(calc(var(--from-x) + 90%)) translateY(0) scaleY(1.05); }
-      100% { transform: translateX(var(--to-x)) translateY(0) scaleY(1); }
-    }
-
-    @keyframes dotDrop {
-      0%   { transform: scale(0) translateY(-20px); opacity: 0; }
-      60%  { transform: scale(1.2) translateY(0); opacity: 1; }
-      100% { transform: scale(1) translateY(0); opacity: 1; }
-    }
-
-    @keyframes popIn {
-      0%   { transform: scale(0.6); opacity: 0; }
-      70%  { transform: scale(1.1); }
-      100% { transform: scale(1); opacity: 1; }
-    }
-
-    @keyframes starBurst {
-      0%   { transform: scale(0) rotate(0deg); opacity: 1; }
-      100% { transform: scale(2) rotate(180deg); opacity: 0; }
-    }
-
-    @keyframes pulse {
-      0%,100% { transform: scale(1); }
-      50%      { transform: scale(1.08); }
-    }
-
-    @keyframes slideUp {
-      from { transform: translateY(40px); opacity: 0; }
-      to   { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes shake {
-      0%,100% { transform: translateX(0); }
-      25%      { transform: translateX(-8px); }
-      75%      { transform: translateX(8px); }
-    }
-
-    @keyframes confettiFall {
-      0%   { transform: translateY(-20px) rotate(0deg); opacity: 1; }
-      100% { transform: translateY(100vh) rotate(360deg); opacity: 0.5; }
-    }
-
-    /* ===== SCREEN SYSTEM ===== */
-    .screen {
-      display: none;
-      min-height: 100dvh;
-      padding: 20px;
-      animation: slideUp 0.4s ease-out;
-    }
-    .screen.active { display: flex; flex-direction: column; align-items: center; }
-
-    /* ===== HOME ===== */
-    #home {
-      justify-content: center;
-      gap: 32px;
-      text-align: center;
-    }
-
-    .home-logo {
-      font-family: 'Fredoka One', cursive;
-      font-size: clamp(2rem, 8vw, 3.5rem);
-      color: var(--warm-brown);
-      line-height: 1.2;
-    }
-
-    .home-logo span { display: block; font-size: 0.6em; color: var(--soft-green); }
-
-    .rabbity-intro {
-      width: 120px;
-      height: 120px;
-      position: relative;
-      animation: pulse 2s infinite;
-    }
-
-    .rabbity-intro .body {
-      width: 100px;
-      height: 90px;
-      background: #F5F5F5;
-      border-radius: 50px 50px 40px 40px;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 3px solid #E0E0E0;
-    }
-
-    .rabbity-intro .head {
-      width: 80px;
-      height: 70px;
-      background: #F5F5F5;
-      border-radius: 50%;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 3px solid #E0E0E0;
-    }
-
-    .rabbity-intro .ear {
-      width: 22px;
-      height: 45px;
-      background: #F5F5F5;
-      border-radius: 50%;
-      position: absolute;
-      top: -5px;
-      border: 3px solid #E0E0E0;
-    }
-
-    .rabbity-intro .ear.left { left: 20px; transform: rotate(-15deg); }
-    .rabbity-intro .ear.right { right: 20px; transform: rotate(15deg); }
-
-    .rabbity-intro .ear::after {
-      content: '';
-      width: 12px;
-      height: 30px;
-      background: #FFCDD2;
-      border-radius: 50%;
-      position: absolute;
-      top: 6px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .rabbity-intro .eye {
-      width: 10px;
-      height: 12px;
-      background: #333;
-      border-radius: 50%;
-      position: absolute;
-      top: 22px;
-    }
-
-    .rabbity-intro .eye.left { left: 22px; }
-    .rabbity-intro .eye.right { right: 22px; }
-
-    .rabbity-intro .nose {
-      width: 12px;
-      height: 10px;
-      background: #FFCDD2;
-      border-radius: 50%;
-      position: absolute;
-      top: 36px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .rabbity-intro .mouth {
-      width: 20px;
-      height: 10px;
-      border-bottom: 3px solid #FFCDD2;
-      border-radius: 0 0 50% 50%;
-      position: absolute;
-      top: 44px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .home-subtitle {
-      font-size: 1.1rem;
-      color: var(--warm-brown);
-      opacity: 0.8;
-      font-weight: 600;
-    }
-
-    .home-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      width: 100%;
-      max-width: 340px;
-    }
-
-    .btn {
-      padding: 18px 28px;
-      border: none;
-      border-radius: 50px;
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.3rem;
-      cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s;
-      color: white;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.18);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      width: 100%;
-      min-height: 64px;
-      touch-action: manipulation;
-    }
-
-    .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(0,0,0,0.22); }
-    .btn:active { transform: translateY(0) scale(0.97); }
-
-    .btn-build  { background: var(--soft-orange); }
-    .btn-jump   { background: var(--sky-blue); }
-    .btn-next   { background: var(--soft-green); }
-    .btn-missing{ background: var(--soft-pink); }
-    .btn-detective { background: var(--deep-blue); }
-    .btn-gl {
-      display: block;
-      background: linear-gradient(135deg, #1a1a3a 0%, #0a0a1a 100%);
-      border: 2px solid rgba(255,215,0,0.3);
-      color: var(--cream);
-      font-size: 0.95rem;
-      text-decoration: none;
-      border-radius: 16px;
-      padding: 14px 20px;
-      transition: all 0.2s;
-    }
-    .btn-gl:hover { border-color: rgba(255,215,0,0.6); box-shadow: 0 0 16px rgba(255,215,0,0.15); }
-    .gl-divider {
-      font-size: 0.8rem;
-      color: var(--warm-brown);
-      opacity: 0.5;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
-
-    .btn-back {
-      background: rgba(255,255,255,0.6);
-      color: var(--warm-brown);
-      border: 2px solid rgba(124,94,60,0.2);
-      font-family: 'Quicksand', sans-serif;
-      font-size: 1rem;
-      font-weight: 700;
-      padding: 12px 24px;
-      border-radius: 50px;
-      min-height: 48px;
-      width: auto;
-      align-self: flex-start;
-    }
-
-    /* ===== PROGRESS BAR ===== */
-    .progress-bar {
-      width: 100%;
-      max-width: 340px;
-      height: 10px;
-      background: rgba(124,94,60,0.12);
-      border-radius: 10px;
-      overflow: hidden;
-      margin-top: 8px;
-    }
-
-    .progress-fill {
-      height: 100%;
-      border-radius: 10px;
-      background: var(--soft-green);
-      transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    /* ===== JUMP SIZE SELECTOR ===== */
-    .jump-selector {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 16px 0;
-    }
-
-    .jump-btn {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: 4px solid;
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.6rem;
-      cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s;
-      background: white;
-      touch-action: manipulation;
-    }
-
-    .jump-btn.by10 { border-color: var(--soft-green); color: var(--soft-green); }
-    .jump-btn.by5  { border-color: var(--soft-orange); color: var(--soft-orange); }
-    .jump-btn.by2  { border-color: var(--sky-blue); color: var(--sky-blue); }
-    .jump-btn:hover, .jump-btn.selected { transform: scale(1.1); }
-    .jump-btn.selected.by10 { background: var(--soft-green); color: white; box-shadow: 0 4px 14px rgba(93,176,117,0.4); }
-    .jump-btn.selected.by5  { background: var(--soft-orange); color: white; box-shadow: 0 4px 14px rgba(242,153,74,0.4); }
-    .jump-btn.selected.by2  { background: var(--sky-blue); color: white; box-shadow: 0 4px 14px rgba(107,184,224,0.4); }
-
-    /* ===== GAME CONTAINER ===== */
-    .game-area {
-      width: 100%;
-      max-width: 600px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-      flex: 1;
-    }
-
-    .game-title {
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.6rem;
-      color: var(--warm-brown);
-      text-align: center;
-    }
-
-    .game-prompt {
-      font-size: 1.05rem;
-      font-weight: 600;
-      text-align: center;
-      color: var(--warm-brown);
-      opacity: 0.85;
-      line-height: 1.5;
-    }
-
-    .rule-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--warm-brown);
-      color: white;
-      padding: 8px 20px;
-      border-radius: 50px;
-      font-weight: 700;
-      font-size: 1.1rem;
-    }
-
-    /* ===== BUILD STAGE ===== */
-    .build-zone {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .dot-source {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      padding: 16px;
-      background: rgba(124,94,60,0.06);
-      border-radius: var(--radius);
-      border: 3px dashed rgba(124,94,60,0.2);
-      min-height: 80px;
-      width: 100%;
-      max-width: 340px;
-    }
-
-    .dot {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      cursor: grab;
-      user-select: none;
-      transition: transform 0.15s;
-      touch-action: none;
-    }
-
-    .dot:active { cursor: grabbing; transform: scale(1.15); }
-    .dot.dragging { opacity: 0.5; }
-
-    .dot.src-dot {
-      background: rgba(242,153,74,0.2);
-      border: 3px solid var(--soft-orange);
-      color: var(--soft-orange);
-      font-weight: 700;
-    }
-
-    .dot.src-dot.by5 {
-      background: rgba(242,153,74,0.15);
-      border-color: var(--soft-orange);
-      color: var(--soft-orange);
-    }
-
-    .dot.src-dot.by2 {
-      background: rgba(107,184,224,0.15);
-      border-color: var(--sky-blue);
-      color: var(--sky-blue);
-    }
-
-    .dot.src-dot.by10 {
-      background: rgba(93,176,117,0.15);
-      border-color: var(--soft-green);
-      color: var(--soft-green);
-    }
-
-    .drop-zone {
-      min-height: 80px;
-      width: 100%;
-      max-width: 340px;
-      border-radius: var(--radius);
-      border: 4px dashed rgba(124,94,60,0.25);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      padding: 12px;
-      justify-content: center;
-      align-items: center;
-      transition: border-color 0.2s, background 0.2s;
-      touch-action: none;
-    }
-
-    .drop-zone.drag-over {
-      border-color: var(--soft-green);
-      background: rgba(93,176,117,0.08);
-    }
-
-    .drop-zone-label {
-      font-weight: 600;
-      color: var(--warm-brown);
-      opacity: 0.5;
-      font-size: 0.9rem;
-    }
-
-    .group-row {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .basket {
-      min-width: 72px;
-      min-height: 72px;
-      border-radius: var(--radius-sm);
-      border: 3px solid rgba(124,94,60,0.2);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      padding: 8px;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      background: rgba(255,255,255,0.6);
-    }
-
-    .basket .basket-label {
-      position: absolute;
-      bottom: -24px;
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--warm-brown);
-      opacity: 0.5;
-    }
-
-    .basket.filled {
-      border-color: var(--soft-green);
-      background: rgba(93,176,117,0.08);
-    }
-
-    .basket .dot {
-      width: 40px;
-      height: 40px;
-      font-size: 1rem;
-    }
-
-    .basket .dot.src-dot {
-      background: rgba(93,176,117,0.2);
-      border-color: var(--soft-green);
-      color: var(--soft-green);
-    }
-
-    .total-display {
-      font-family: 'Fredoka One', cursive;
-      font-size: 2rem;
-      color: var(--warm-brown);
-      text-align: center;
-    }
-
-    /* ===== JUMP STAGE ===== */
-    .number-line {
-      width: 100%;
-      overflow-x: auto;
-      padding: 20px 10px;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .number-line-inner {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      position: relative;
-      min-width: max-content;
-      padding: 0 20px;
-    }
-
-    .num-cell {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      min-width: 52px;
-    }
-
-    .num-label {
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.3rem;
-      color: var(--warm-brown);
-      opacity: 0.6;
-      transition: opacity 0.3s, color 0.3s, transform 0.3s;
-      cursor: pointer;
-      padding: 8px;
-      border-radius: 12px;
-    }
-
-    .num-label.highlighted {
-      opacity: 1;
-      color: #E3F2FD;
-      transform: scale(1.15);
-      font-weight: 900;
-    }
-
-    .num-label.active {
-      opacity: 1;
-      color: var(--soft-green);
-      transform: scale(1.3);
-    }
-
-    .num-line-bar {
-      width: 3px;
-      height: 16px;
-      background: rgba(124,94,60,0.2);
-      border-radius: 2px;
-    }
-
-    .rabbity-bunny {
-      font-size: 2.5rem;
-      position: absolute;
-      transition: left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-      z-index: 10;
-      cursor: pointer;
-      user-select: none;
-      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
-    }
-
-    .rabbity-bunny.hopping {
-      animation: bunnyBounce 0.5s ease-out forwards;
-    }
-
-    @keyframes bunnyBounce {
-      0%   { transform: translateY(0) scale(1); }
-      25%  { transform: translateY(-50px) scale(1.15); }
-      50%  { transform: translateY(-25px) scale(1); }
-      75%  { transform: translateY(-10px) scale(1.05); }
-      100% { transform: translateY(0) scale(1); }
-    }
-
-    .hop-arrow {
-      position: absolute;
-      width: 100%;
-      height: 4px;
-      background: transparent;
-      top: 50%;
-      left: 0;
-      pointer-events: none;
-    }
-
-    .jump-controls {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .jump-btn-action {
-      padding: 14px 28px;
-      background: var(--sky-blue);
-      color: white;
-      border: none;
-      border-radius: 50px;
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.1rem;
-      cursor: pointer;
-      box-shadow: 0 4px 12px rgba(107,184,224,0.4);
-      transition: transform 0.15s;
-      touch-action: manipulation;
-    }
-
-    .jump-btn-action:hover { transform: scale(1.05); }
-    .jump-btn-action:active { transform: scale(0.95); }
-    .jump-btn-action:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
-
-    /* ===== PATTERN / NEXT / MISSING ===== */
-    .pattern-display {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .pattern-num {
-      min-width: 60px;
-      height: 60px;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.4rem;
-      color: var(--warm-brown);
-      background: rgba(124,94,60,0.08);
-      border: 3px solid rgba(124,94,60,0.15);
-      cursor: pointer;
-      transition: transform 0.15s, background 0.2s;
-      user-select: none;
-    }
-
-    .pattern-num:hover { transform: scale(1.1); }
-    .pattern-num.given { background: rgba(93,176,117,0.15); border-color: var(--soft-green); color: var(--soft-green); }
-    .pattern-num.blank {
-      background: rgba(242,153,74,0.1);
-      border-color: var(--soft-orange);
-      border-style: dashed;
-      color: transparent;
-      cursor: pointer;
-    }
-
-    .pattern-num.blank.selected {
-      background: rgba(242,153,74,0.2);
-      border-style: solid;
-      transform: scale(1.15);
-    }
-
-    .choice-row {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .choice-btn {
-      width: 72px;
-      height: 72px;
-      border-radius: 20px;
-      border: 3px solid;
-      background: white;
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.5rem;
-      cursor: pointer;
-      transition: transform 0.15s, box-shadow 0.15s;
-      touch-action: manipulation;
-    }
-
-    .choice-btn.by10 { border-color: var(--soft-green); color: var(--soft-green); }
-    .choice-btn.by5  { border-color: var(--soft-orange); color: var(--soft-orange); }
-    .choice-btn.by2  { border-color: var(--sky-blue); color: var(--sky-blue); }
-
-    .choice-btn:hover { transform: scale(1.1); }
-    .choice-btn:active { transform: scale(0.95); }
-    .choice-btn.selected { transform: scale(1.15); }
-    .choice-btn.selected.by10 { background: var(--soft-green); color: white; box-shadow: 0 4px 14px rgba(93,176,117,0.4); }
-    .choice-btn.selected.by5  { background: var(--soft-orange); color: white; box-shadow: 0 4px 14px rgba(242,153,74,0.4); }
-    .choice-btn.selected.by2  { background: var(--sky-blue); color: white; box-shadow: 0 4px 14px rgba(107,184,224,0.4); }
-
-    .choice-btn.correct { background: var(--soft-green) !important; color: white !important; border-color: var(--soft-green) !important; }
-    .choice-btn.wrong { animation: shake 0.4s; border-color: #E53935 !important; color: #E53935 !important; }
-
-    /* ===== RULE DETECTIVE ===== */
-    .rule-question {
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.4rem;
-      text-align: center;
-      color: var(--warm-brown);
-      margin: 12px 0;
-    }
-
-    /* ===== FEEDBACK ===== */
-    .feedback {
-      text-align: center;
-      min-height: 80px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-    }
-
-    .feedback-text {
-      font-weight: 700;
-      font-size: 1.2rem;
-      animation: popIn 0.4s ease-out;
-    }
-
-    .feedback-text.success { color: var(--soft-green); }
-    .feedback-text.hint   { color: var(--warm-brown); opacity: 0.7; font-size: 1rem; }
-    .feedback-text.wrong  { color: var(--soft-orange); }
-
-    .stars-container {
-      font-size: 2rem;
-      animation: popIn 0.3s ease-out;
-    }
-
-    .next-btn {
-      margin-top: 8px;
-      padding: 14px 32px;
-      background: var(--soft-green);
-      color: white;
-      border: none;
-      border-radius: 50px;
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.1rem;
-      cursor: pointer;
-      box-shadow: 0 4px 14px rgba(93,176,117,0.35);
-      transition: transform 0.15s;
-      touch-action: manipulation;
-    }
-
-    .next-btn:hover { transform: scale(1.05); }
-    .next-btn:active { transform: scale(0.97); }
-
-    /* ===== CONFETTI ===== */
-    .confetti-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      overflow: hidden;
-      z-index: 9999;
-    }
-
-    .confetti-piece {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      top: -20px;
-      animation: confettiFall linear forwards;
-    }
-
-    /* ===== PARENT VIEW TOGGLE ===== */
-    .parent-toggle {
-      position: fixed;
-      top: 16px;
-      right: 16px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.8);
-      border: 2px solid rgba(124,94,60,0.2);
-      font-size: 1.2rem;
-      cursor: pointer;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .parent-panel {
-      display: none;
-      position: fixed;
-      top: 70px;
-      right: 16px;
-      background: white;
-      border-radius: var(--radius-sm);
-      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-      padding: 16px;
-      z-index: 100;
-      min-width: 260px;
-      animation: popIn 0.3s ease-out;
-    }
-
-    .parent-panel.show { display: block; }
-
-    .parent-panel h4 {
-      font-family: 'Fredoka One', cursive;
-      font-size: 1rem;
-      margin-bottom: 12px;
-      color: var(--warm-brown);
-    }
-
-    .progress-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 6px 0;
-      border-bottom: 1px solid rgba(124,94,60,0.1);
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-
-    .progress-row:last-child { border-bottom: none; }
-
-    .status-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      display: inline-block;
-    }
-
-    .status-strong   { background: var(--soft-green); }
-    .status-learning { background: var(--soft-orange); }
-    .status-new      { background: #ccc; }
-
-    /* ===== INTRO SCREEN ===== */
-    .intro-stage {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-      min-height: 100dvh;
-      padding: 32px 20px;
-      text-align: center;
-    }
-
-    .intro-rabbity {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .intro-bunny {
-      font-size: 5rem;
-      animation: pulse 2s infinite;
-      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
-    }
-
-    .intro-number {
-      font-family: 'Fredoka One', cursive;
-      font-size: 4rem;
-      color: var(--warm-brown);
-      opacity: 0.7;
-      min-width: 80px;
-    }
-
-    .intro-text h2 {
-      font-family: 'Fredoka One', cursive;
-      font-size: 2rem;
-      color: var(--warm-brown);
-      margin-bottom: 12px;
-    }
-
-    .intro-text p {
-      font-size: 1.2rem;
-      font-weight: 600;
-      color: var(--warm-brown);
-      opacity: 0.85;
-      line-height: 1.6;
-      max-width: 340px;
-    }
-
-    .intro-dots {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      flex-wrap: wrap;
-      max-width: 340px;
-      min-height: 60px;
-    }
-
-    .intro-dot {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.2rem;
-      animation: dotDrop 0.4s ease-out backwards;
-      border: 3px solid;
-      background: white;
-    }
-
-    .intro-btn {
-      background: var(--soft-green);
-      padding: 16px 40px;
-      font-size: 1.2rem;
-      max-width: 300px;
-    }
-
-    /* ===== PATTERN DISCOVERY STAGE ===== */
-    .pattern-board {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 8px;
-      width: 100%;
-      max-width: 340px;
-    }
-
-    .board-cell {
-      aspect-ratio: 1;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.2rem;
-      background: rgba(124,94,60,0.08);
-      border: 2px solid rgba(124,94,60,0.15);
-      cursor: pointer;
-      transition: transform 0.15s, background 0.2s, border-color 0.2s;
-      user-select: none;
-      touch-action: manipulation;
-      min-height: 52px;
-    }
-
-    .board-cell:hover { transform: scale(1.08); }
-
-    .board-cell.selected {
-      border-color: var(--soft-green);
-      background: rgba(93,176,117,0.2);
-      transform: scale(1.12);
-    }
-
-    .board-cell.hint {
-      border-color: var(--soft-orange);
-      background: rgba(242,153,74,0.15);
-      animation: pulse 0.8s infinite;
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 480px) {
-      .num-cell { min-width: 44px; }
-      .num-label { font-size: 1.1rem; }
-      .dot { width: 46px; height: 46px; font-size: 1.1rem; }
-      .btn { font-size: 1.1rem; padding: 14px 20px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Loncat Berhitung — Belajar Aya</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:     #07071A;
+  --card:   #12123A;
+  --gold:   #FFD700;
+  --green:  #4CAF50;
+  --blue:   #42A5F5;
+  --orange: #FF9800;
+  --cream:  #FFF8F0;
+  --purple: #7C4DFF;
+  --shadow: 0 4px 24px rgba(0,0,0,.35);
+  --font-h: 'Fredoka One', cursive;
+  --font-b: 'Quicksand', sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  background:var(--bg);
+  font-family:var(--font-b);
+  color:var(--cream);
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  touch-action:manipulation;
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .dot{animation:none!important}
+}
+
+/* ── Screens ── */
+.screen{display:none;min-height:100dvh;flex-direction:column}
+.screen.active{display:flex}
+
+/* ── Top bar ── */
+.top-bar{
+  position:sticky;top:0;z-index:50;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:12px 16px 8px;
+  background:linear-gradient(to bottom,var(--bg) 70%,transparent);
+}
+.back-btn{
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  color:var(--cream);border-radius:12px;padding:8px 14px;
+  font-family:var(--font-b);font-weight:600;font-size:.85rem;cursor:pointer;
+  display:flex;align-items:center;gap:6px;
+}
+.back-btn:active{transform:scale(.95)}
+.top-title{font-family:var(--font-h);font-size:.95rem;color:var(--gold)}
+
+/* ── Stage select ── */
+.stage-select{padding:16px 16px 100px;position:relative;z-index:1}
+.stage-select h2{font-family:var(--font-h);font-size:1.3rem;color:var(--gold);margin-bottom:16px;text-align:center}
+.stage-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stage-card{
+  background:var(--card);border-radius:18px;padding:16px;
+  text-align:center;cursor:pointer;border:2px solid transparent;
+  box-shadow:var(--shadow);transition:transform .15s,border-color .15s;
+}
+.stage-card:active{transform:scale(.96)}
+.stage-card.done{border-color:var(--green)}
+.stage-card.current{border-color:var(--gold)}
+.stage-emoji{font-size:2.2rem;margin-bottom:6px}
+.stage-name{font-family:var(--font-h);font-size:.9rem;margin-bottom:4px}
+.stage-desc{font-size:.7rem;opacity:.5;line-height:1.4}
+.stage-lock{font-size:.65rem;opacity:.3;margin-top:4px}
+
+/* ── Game area ── */
+.game-area{padding:8px 16px 100px;position:relative;z-index:1;flex:1}
+
+/* Progress bar */
+.progress-bar{
+  height:8px;background:rgba(255,255,255,.1);border-radius:4px;
+  margin:8px 0 12px;overflow:hidden;
+}
+.progress-fill{
+  height:100%;border-radius:4px;background:var(--green);
+  transition:width .5s ease;
+}
+
+/* Stage info */
+.stage-info{
+  text-align:center;margin-bottom:12px;
+  padding:8px 16px;background:rgba(255,255,255,.05);
+  border-radius:14px;border:1px solid rgba(255,255,255,.08);
+}
+.stage-info h3{font-family:var(--font-h);font-size:1.1rem;color:var(--gold);margin-bottom:4px}
+.stage-info p{font-size:.8rem;opacity:.6}
+
+/* ── Dots ── */
+.dot-pool{
+  display:flex;flex-wrap:wrap;gap:8px;justify-content:center;
+  padding:12px;background:rgba(255,255,255,.04);
+  border-radius:16px;border:2px dashed rgba(255,255,255,.1);
+  margin-bottom:16px;min-height:80px;
+  touch-action: none;
+}
+.dot{
+  width:48px;height:48px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-h);font-size:1.1rem;
+  cursor:grab;user-select:none;touch-action:none;
+  animation:dotDrop .35s ease-out backwards;
+  position:relative;z-index:1;
+}
+.dot:active{cursor:grabbing}
+@keyframes dotDrop{
+  0%{transform:translateY(-30px) scale(.5);opacity:0}
+  60%{transform:translateY(5px) scale(1.1)}
+  100%{transform:translateY(0) scale(1);opacity:1}
+}
+@keyframes dotShake{
+  0%,100%{transform:translateX(0)}
+  25%{transform:translateX(-4px) rotate(-3deg)}
+  75%{transform:translateX(4px) rotate(3deg)}
+}
+.dot.shake{animation:dotShake .3s ease-in-out}
+
+/* ── Baskets ── */
+.baskets{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:16px}
+.basket{
+  min-width:90px;min-height:90px;
+  border-radius:16px;
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:flex-start;padding:8px 6px;
+  gap:4px;overflow:hidden;
+  transition:border-color .2s,box-shadow .2s;
+  touch-action:none;
+}
+.basket-label{
+  font-family:var(--font-h);font-size:.75rem;text-align:center;
+  padding:2px 6px;border-radius:6px;margin-bottom:2px;
+}
+.basket-count{font-family:var(--font-h);font-size:.72rem;opacity:.7;margin-top:auto}
+.basket-dots{display:flex;flex-wrap:wrap;gap:3px;justify-content:center;align-content:flex-start;flex:1}
+
+/* ── Total display ── */
+.total-display{
+  text-align:center;margin:12px 0;
+  font-family:var(--font-h);font-size:1rem;
+  padding:10px 16px;background:rgba(255,255,255,.06);
+  border-radius:14px;border:1px solid rgba(255,255,255,.1);
+}
+.total-display span{color:var(--gold);font-size:1.4rem}
+
+/* ── Action buttons ── */
+.action-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.btn{
+  padding:12px 20px;border-radius:14px;border:none;cursor:pointer;
+  font-family:var(--font-b);font-weight:700;font-size:.88rem;
+  transition:transform .12s;
+}
+.btn:active{transform:scale(.95)}
+.btn-gold{background:var(--gold);color:var(--bg)}
+.btn-green{background:var(--green);color:#fff}
+.btn-outline{background:rgba(255,255,255,.08);color:var(--cream);border:1px solid rgba(255,255,255,.12)}
+
+/* ── Instruction ── */
+.instruction{
+  background:rgba(255,255,255,.06);border-radius:14px;
+  padding:12px 16px;margin:12px 0;
+  font-size:.82rem;line-height:1.6;text-align:center;
+  border:1px solid rgba(255,255,255,.08);
+}
+
+/* ── Number ladder ── */
+.ladder-area{
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  padding:10px;margin-bottom:12px;
+}
+.ladder-step{
+  display:flex;align-items:center;gap:10px;width:100%;max-width:300px;
+  padding:8px 14px;border-radius:12px;
+  cursor:pointer;border:2px solid transparent;
+  transition:all .15s;
+}
+.ladder-step.done{background:rgba(76,175,80,.15);border-color:rgba(76,175,80,.4)}
+.ladder-step.current{background:rgba(255,215,0,.1);border-color:rgba(255,215,0,.5)}
+.ladder-num{font-family:var(--font-h);font-size:1.2rem;min-width:36px;text-align:center}
+.ladder-dots{display:flex;gap:3px;flex-wrap:wrap}
+.ladder-dot{width:14px;height:14px;border-radius:50%;background:rgba(255,255,255,.2)}
+
+/* ── Rainbow path ── */
+.rainbow-area{
+  display:flex;align-items:center;justify-content:center;
+  gap:4px;flex-wrap:wrap;padding:10px;margin-bottom:12px;
+}
+.rainbow-step{
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  padding:10px 8px;border-radius:12px;cursor:pointer;
+  border:2px solid transparent;transition:all .15s;min-width:52px;
+}
+.rainbow-step.done{background:rgba(76,175,80,.15);border-color:rgba(76,175,80,.4)}
+.rainbow-num{font-family:var(--font-h);font-size:1.3rem}
+
+/* ── FABs ── */
+.home-fab{
+  position:fixed;bottom:20px;left:20px;
+  width:50px;height:50px;border-radius:50%;
+  background:var(--green);color:#fff;font-size:1.3rem;
+  border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);
+  z-index:100;display:flex;align-items:center;justify-content:center;text-decoration:none;
+}
+.home-fab:active{transform:scale(.9)}
+.parent-fab{
+  position:fixed;bottom:20px;right:20px;
+  width:50px;height:50px;border-radius:50%;
+  background:var(--gold);color:var(--bg);font-size:1.2rem;
+  border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100;
+}
+.parent-fab:active{transform:scale(.9)}
+.rabbity-fab{
+  position:fixed;bottom:80px;right:20px;
+  width:50px;height:50px;border-radius:50%;
+  background:var(--card);border:2px solid rgba(255,255,255,.15);
+  color:var(--cream);font-size:1.3rem;z-index:99;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+  box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+.rabbity-bubble{
+  position:fixed;bottom:140px;right:20px;z-index:98;
+  background:var(--card);border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;padding:10px 14px;max-width:220px;
+  font-size:.8rem;line-height:1.5;color:var(--cream);
+  box-shadow:0 4px 16px rgba(0,0,0,.3);
+  opacity:0;pointer-events:none;transition:opacity .3s;
+}
+.rabbity-bubble.show{opacity:1}
+
+/* ── Parent panel ── */
+.parent-panel{
+  position:fixed;bottom:0;left:0;right:0;
+  background:var(--cream);color:#333;
+  border-radius:20px 20px 0 0;padding:20px 16px 90px;
+  box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;
+  max-height:70vh;overflow-y:auto;
+  transform:translateY(110%);transition:transform .3s ease;
+}
+.parent-panel.open{transform:translateY(0)}
+.panel-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
+.panel-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
+.panel-row{margin-bottom:12px}
+.panel-row-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
+.panel-bar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
+.panel-bar-fill{height:100%;border-radius:4px;transition:width .5s}
+
+/* ── Confetti ── */
+.confetti-container{position:fixed;inset:0;pointer-events:none;z-index:9999}
+.confetti-piece{
+  position:absolute;width:10px;height:10px;border-radius:2px;
+  animation:confettiFall 2.5s ease-out forwards;
+}
+@keyframes confettiFall{
+  0%{transform:translateY(-20px) rotate(0deg);opacity:1}
+  100%{transform:translateY(100vh) rotate(720deg);opacity:0}
+}
+
+/* ── Stars ── */
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+.star{position:absolute;background:#fff;border-radius:50%;animation:twinkle 3s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.9}}
+</style>
 </head>
-<body onload="startApp()">
+<body>
 
-<!-- Parent Toggle -->
-<button class="parent-toggle" onclick="toggleParentPanel()">👤</button>
+<div class="stars" id="stars"></div>
+
+<!-- ── STAGE SELECT ── -->
+<div class="screen active" id="screen-select">
+  <div class="top-bar">
+    <a href="index.html" class="back-btn">← Beranda</a>
+    <div class="top-title">Loncat Berhitung</div>
+    <button class="back-btn" onclick="toggleParent()" style="background:none;border:none;font-size:1.1rem;">👤</button>
+  </div>
+  <div class="stage-select">
+    <h2>Pilih Tahap</h2>
+    <div class="stage-grid" id="stage-grid"></div>
+  </div>
+</div>
+
+<!-- ── GAME ── -->
+<div class="screen" id="screen-game">
+  <div class="top-bar">
+    <button class="back-btn" onclick="showSelect()">← Kembali</button>
+    <div class="top-title" id="game-title"></div>
+    <button class="back-btn" onclick="toggleParent()" style="background:none;border:none;font-size:1.1rem;">👤</button>
+  </div>
+  <div class="game-area" id="game-area"></div>
+</div>
+
+<!-- FABs -->
+<a href="index.html" class="home-fab">🏠</a>
+<button class="parent-fab" onclick="toggleParent()">👤</button>
+<button class="rabbity-fab" onclick="rabbitySpeak()">🐰</button>
+<div class="rabbity-bubble" id="rabbity-bubble"></div>
+
+<!-- Parent panel -->
 <div class="parent-panel" id="parent-panel">
-  <h4>📊 Progress Aya</h4>
-  <div id="parent-stats"></div>
+  <div class="panel-handle"></div>
+  <button onclick="toggleParent()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">✕</button>
+  <div class="panel-title">📊 Progress Loncat Berhitung</div>
+  <div id="parent-content"></div>
 </div>
 
-<!-- ===== INTRO SCREEN ===== -->
-<div class="screen" id="screen-intro">
-  <div class="intro-stage">
-    <div class="intro-rabbity" id="intro-rabbity-area">
-      <div class="intro-bunny" id="intro-bunny">🐰</div>
-      <div class="intro-number" id="intro-number">?</div>
-    </div>
-
-    <div class="intro-text" id="intro-text">
-      <h2>Kenalan dengan Rabbity!</h2>
-      <p>Rabbity si Kelinci cuma tahu <strong>satu trik</strong>: melompat!</p>
-    </div>
-
-    <div class="intro-dots" id="intro-dots"></div>
-
-    <button class="btn intro-btn" id="intro-btn" onclick="advanceIntro()">Ayo lihat! 👀</button>
-    <button class="btn-back" onclick="skipIntro()" style="margin-top:8px; font-size:0.85rem;">Lewati →</button>
-  </div>
-</div>
-
-<!-- ===== HOME SCREEN ===== -->
-<div class="screen active" id="home">
-  <div class="rabbity-intro">
-    <div class="head">
-      <div class="ear left"></div>
-      <div class="ear right"></div>
-      <div class="eye left"></div>
-      <div class="eye right"></div>
-      <div class="nose"></div>
-      <div class="mouth"></div>
-    </div>
-    <div class="body"></div>
-  </div>
-
-  <div class="home-logo">
-    Belajar Loncat!<br>
-    <span>dengan Rabbity si Kelinci 🐰</span>
-  </div>
-
-  <p class="home-subtitle">Ayo jelajahi pola angka!</p>
-
-  <div class="home-buttons">
-    <button class="btn btn-build"  onclick="startGame('build')">🔨 Buat Kelompok</button>
-    <button class="btn btn-jump"   onclick="startGame('jump')">🐰 Loncat Baris Angka</button>
-    <button class="btn btn-next"   onclick="startGame('pattern')">👁️ Lihat Pola Rabbity</button>
-    <button class="btn btn-next"   onclick="startGame('next')">🔮 Apa Angka Berikutnya?</button>
-    <button class="btn btn-missing" onclick="startGame('missing')">🔍 Angka Hilang</button>
-    <button class="btn btn-detective" onclick="startGame('detective')">🕵️ Aya Detektif Aturan</button>
-  </div>
-
-  <div class="great-lessons-link" style="margin-top:24px; text-align:center;">
-    <div class="gl-divider">— atau jelajahi —</div>
-    <a href="five-great-lessons.html" class="btn btn-gl">
-      🌍 Lima Pelajaran Besar<br>
-      <span style="font-size:0.75rem;opacity:0.7;font-weight:600;">Alam Semesta · Kehidupan · Manusia · Komunikasi · Angka</span>
-    </a>
-  </div>
-</div>
-
-<!-- ===== BUILD SCREEN ===== -->
-<div class="screen" id="screen-build">
-  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
-  <div class="game-area">
-    <div class="game-title">🔨 Buat Kelompok Sama</div>
-    <p class="game-prompt" id="build-prompt">Seret titik ke dalam keranjang!</p>
-
-    <div class="jump-selector">
-      <button class="jump-btn by10 selected" onclick="selectBuildSize(10)">+10</button>
-      <button class="jump-btn by5"  onclick="selectBuildSize(5)">+5</button>
-      <button class="jump-btn by2"  onclick="selectBuildSize(2)">+2</button>
-    </div>
-
-    <div class="progress-bar"><div class="progress-fill" id="build-progress" style="width:0%"></div></div>
-
-    <div class="group-row" id="baskets-row"></div>
-
-    <div class="drop-zone" id="drop-zone">
-      <span class="drop-zone-label" id="drop-zone-label">Seret titik ke keranjang!</span>
-    </div>
-
-    <div class="total-display" id="build-total">Jumlah: 0</div>
-
-    <div class="feedback" id="build-feedback"></div>
-  </div>
-</div>
-
-<!-- ===== JUMP SCREEN ===== -->
-<div class="screen" id="screen-jump">
-  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
-  <div class="game-area">
-    <div class="game-title">🐰 Loncat Baris Angka</div>
-    <p class="game-prompt">Rabbity melompat berapa langkah?</p>
-
-    <div class="jump-selector">
-      <button class="jump-btn by10 selected" onclick="selectJumpSize(10)">+10</button>
-      <button class="jump-btn by5"  onclick="selectJumpSize(5)">+5</button>
-      <button class="jump-btn by2"  onclick="selectJumpSize(2)">+2</button>
-    </div>
-
-    <div class="rule-badge" id="jump-rule">
-      <span>👣</span> <span id="rule-num">10</span>
-    </div>
-
-    <div class="progress-bar"><div class="progress-fill" id="jump-progress" style="width:0%"></div></div>
-
-    <div class="number-line" id="number-line"></div>
-
-    <div class="jump-controls">
-      <button class="jump-btn-action" onclick="rabbityJump()" id="jump-btn">Loncat! 🐰</button>
-      <button class="jump-btn-action" onclick="resetRabbity()">Mulai Ulang 🔄</button>
-    </div>
-
-    <div class="feedback" id="jump-feedback"></div>
-  </div>
-</div>
-
-<!-- ===== NEXT NUMBER SCREEN ===== -->
-<div class="screen" id="screen-next">
-  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
-  <div class="game-area">
-    <div class="game-title">🔮 Apa Angka Berikutnya?</div>
-    <p class="game-prompt" id="next-prompt">Rabbity berhenti di sini:</p>
-
-    <div class="jump-selector">
-      <button class="jump-btn by10 selected" onclick="selectNextSize(10)">+10</button>
-      <button class="jump-btn by5"  onclick="selectNextSize(5)">+5</button>
-      <button class="jump-btn by2"  onclick="selectNextSize(2)">+2</button>
-    </div>
-
-    <div class="progress-bar"><div class="progress-fill" id="next-progress" style="width:0%"></div></div>
-
-    <div class="pattern-display" id="next-display"></div>
-
-    <p class="game-prompt" style="margin-top:12px;">Pilih jawaban:</p>
-    <div class="choice-row" id="next-choices"></div>
-
-    <div class="feedback" id="next-feedback"></div>
-  </div>
-</div>
-
-<!-- ===== PATTERN DISCOVERY SCREEN ===== -->
-<div class="screen" id="screen-pattern">
-  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
-  <div class="game-area">
-    <div class="game-title">👁️ Lihat Pola Rabbity</div>
-    <p class="game-prompt">Tap angka yang diinjak Rabbity!</p>
-
-    <div class="jump-selector">
-      <button class="jump-btn by10 selected" onclick="selectPatternSize(10)">+10</button>
-      <button class="jump-btn by5"  onclick="selectPatternSize(5)">+5</button>
-      <button class="jump-btn by2"  onclick="selectPatternSize(2)">+2</button>
-    </div>
-
-    <div class="rule-badge" id="pattern-rule"><span>👣</span> <span id="pattern-rule-num">10</span></div>
-
-    <div class="pattern-board" id="pattern-board"></div>
-
-    <p class="game-prompt" id="pattern-question" style="margin-top:12px; font-size:0.95rem;">Tekan 3 angka yang diinjak Rabbity!</p>
-
-    <div class="choice-row" id="pattern-choices"></div>
-
-    <div class="feedback" id="pattern-feedback"></div>
-  </div>
-</div>
-
-<!-- ===== MISSING NUMBER SCREEN ===== -->
-<div class="screen" id="screen-missing">
-  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
-  <div class="game-area">
-    <div class="game-title">🔍 Angka Hilang!</div>
-    <p class="game-prompt">Ada angka yang hilang di tengah. Coba isi!</p>
-
-    <div class="jump-selector">
-      <button class="jump-btn by10 selected" onclick="selectMissingSize(10)">+10</button>
-      <button class="jump-btn by5"  onclick="selectMissingSize(5)">+5</button>
-      <button class="jump-btn by2"  onclick="selectMissingSize(2)">+2</button>
-    </div>
-
-    <div class="progress-bar"><div class="progress-fill" id="missing-progress" style="width:0%"></div></div>
-
-    <div class="pattern-display" id="missing-display"></div>
-
-    <p class="game-prompt" style="margin-top:12px;">Pilih angka yang hilang:</p>
-    <div class="choice-row" id="missing-choices"></div>
-
-    <div class="feedback" id="missing-feedback"></div>
-  </div>
-</div>
-
-<!-- ===== RULE DETECTIVE SCREEN ===== -->
-<div class="screen" id="screen-detective">
-  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
-  <div class="game-area">
-    <div class="game-title">🕵️ Aya Detektif Aturan</div>
-    <p class="game-prompt" id="detective-prompt">Rabbity melompat dengan aturan apa?</p>
-
-    <div class="progress-bar"><div class="progress-fill" id="detective-progress" style="width:0%"></div></div>
-
-    <div class="pattern-display" id="detective-display"></div>
-
-    <p class="rule-question" id="detective-question">Aturan Rabbity:</p>
-
-    <div class="choice-row" id="detective-choices"></div>
-
-    <div class="feedback" id="detective-feedback"></div>
-  </div>
-</div>
-
-<!-- Confetti container -->
-<div class="confetti-container" id="confetti"></div>
+<!-- Confetti -->
+<div class="confetti-container" id="confetti-container"></div>
 
 <script>
-// ===== STATE =====
-const state = {
-  intro: { step: 0, size: 10 },
-  build: { size: 10, baskets: 0, dotsInBaskets: 0, targetGroups: 3 },
-  jump:  { size: 10, rabbityPos: 0 },
-  next:  { size: 10, score: 0, rounds: 0, seq: [], roundSize: 10 },
-  pattern: { size: 10, selected: [], score: 0 },
-  missing: { size: 10, score: 0, rounds: 0 },
-  detective: { score: 0, rounds: 0 }
-};
-
-// ===== INTRO ENGINE =====
-const INTRO_STEPS = [
+// ═══════════════════════════════════════════
+// STAGES DATA
+// ═══════════════════════════════════════════
+const STAGES = [
   {
-    text: '<h2>Kenalan dengan Rabbity!</h2><p>Rabbity si Kelinci cuma tahu <strong>satu trik</strong>: melompat!</p>',
-    action: null,
-    btn: 'Ayo lihat! 👀'
+    id:1, name:'Angka 1–10', emoji:'🔢', color:'#42A5F5',
+    desc:'Hitung satu-satu',
+    type:'ladder',
+    target:10, by:1,
+    instruction:'Tap angka 1, 2, 3... sampai 10!'
   },
   {
-    text: '<h2>Rabbity lompat +10!</h2><p>Setiap lompatan, Rabbity maju <strong>10 langkah</strong>. Mau lihat?</p>',
-    action: () => animateIntroJump(10),
-    btn: 'Lihat! 🐰'
+    id:2, name:'Loncat 2-an', emoji:'🌈', color:'#7C4DFF',
+    desc:'2, 4, 6, 8...',
+    type:'rainbow',
+    target:10, by:2,
+    instruction:'Loncat 2-dua! 2... 4... 6... 8...'
   },
   {
-    text: '<h2>0 → 10 → 20!</h2><p>Rabbity melompat dari 0 ke 10, lalu ke 20! <strong>Polanya selalu sama!</strong></p>',
-    action: () => showIntroSequence(10),
-    btn: 'Terus! ✨'
+    id:3, name:'Loncat 5-an', emoji:'💰', color:'#FF9800',
+    desc:'5, 10, 15, 20...',
+    type:'rainbow',
+    target:10, by:5,
+    instruction:'Loncat 5-lima! 5... 10... 15...'
   },
   {
-    text: '<h2>Coba +5!</h2><p>Sekarang Rabbity lompat <strong>5 langkah</strong>: 0, 5, 10, 15...</p>',
-    action: () => animateIntroJump(5),
-    btn: 'Lihat! 🐰'
+    id:4, name:'Loncat 10-an', emoji:'🏠', color:'#4CAF50',
+    desc:'10, 20, 30...',
+    type:'rainbow',
+    target:10, by:10,
+    instruction:'Loncat 10-sepuluh! 10... 20... 30...'
   },
   {
-    text: '<h2>Kamu sudah tahu polanya!</h2><p>Loncat itu seperti lompatan Rabbity — <strong>selalu sama!</strong></p>',
-    action: null,
-    btn: 'Mulai! 🚀'
-  }
+    id:5, name:'Buat Kelompok', emoji:'🧺', color:'#E91E63',
+    desc:'Sama banyak di setiap kelompok',
+    type:'basket',
+    total:12, by:3, groups:3,
+    instruction:'Seret titik ke keranjang! Tiap keranjang harus sama banyak.'
+  },
+  {
+    id:6, name:'Tantangan', emoji:'⭐', color:'#FFD700',
+    desc:'Gabungan semua pola',
+    type:'basket',
+    total:20, by:4, groups:5,
+    instruction:'Seret titik ke keranjang sama banyak!'
+  },
 ];
 
-function advanceIntro() {
-  const s = state.intro;
-  s.step++;
-  if (s.step >= INTRO_STEPS.length) {
-    markIntroDone();
-    showScreen('home');
+// ═══════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════
+let state = { stage:1, step:1, dragging:null };
+
+function lsGet(k,def){try{const v=localStorage.getItem(k);return v?JSON.parse(v):def}catch(e){return def}}
+function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+
+// ═══════════════════════════════════════════
+// STARS
+// ═══════════════════════════════════════════
+function genStars(){
+  const el=document.getElementById('stars');
+  el.innerHTML='';
+  for(let i=0;i<60;i++){
+    const s=document.createElement('div');
+    s.className='star';
+    const sz=Math.random()*2+1;
+    s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;
+      width:${sz}px;height:${sz}px;
+      animation-delay:${(Math.random()*3).toFixed(1)}s;
+      animation-duration:${(Math.random()*2+2).toFixed(1)}s`;
+    el.appendChild(s);
+  }
+}
+
+// ═══════════════════════════════════════════
+// SCREENS
+// ═══════════════════════════════════════════
+function showSelect(){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('screen-select').classList.add('active');
+  renderStageGrid();
+}
+function showGame(){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('screen-game').classList.add('active');
+  renderGame();
+}
+
+// ═══════════════════════════════════════════
+// STAGE GRID
+// ═══════════════════════════════════════════
+function renderStageGrid(){
+  const grid=document.getElementById('stage-grid');
+  const progress=lsGet('skip-progress',[]);
+  const current=lsGet('skip-stage',1);
+  grid.innerHTML='';
+  STAGES.forEach(s=>{
+    const done=progress.includes(s.id);
+    const isCurrent=s.id===current;
+    const unlocked=s.id<=current;
+    const card=document.createElement('div');
+    card.className='stage-card'+(done?' done':'')+(isCurrent?' current':'');
+    card.style.opacity=unlocked?'1':'0.5';
+    card.onclick=unlocked?()=>startStage(s.id):null;
+    card.innerHTML=`
+      <div class="stage-emoji">${s.emoji}</div>
+      <div class="stage-name">Tahap ${s.id}</div>
+      <div class="stage-desc">${s.name}</div>
+      ${done?'<div style="color:var(--green);font-size:.75rem;margin-top:4px;">✓ Selesai</div>':''}
+      ${!unlocked?'<div class="stage-lock">🔒 Selesaikan tahap sebelumnya</div>':''}
+    `;
+    grid.appendChild(card);
+  });
+}
+
+// ═══════════════════════════════════════════
+// START STAGE
+// ═══════════════════════════════════════════
+function startStage(id){
+  lsSet('skip-stage',id);
+  state={stage:id,step:1};
+  document.getElementById('game-title').textContent=STAGES[id-1].emoji+' '+STAGES[id-1].name;
+  showGame();
+}
+
+// ═══════════════════════════════════════════
+// RENDER GAME
+// ═══════════════════════════════════════════
+function renderGame(){
+  const s=STAGES[state.stage-1];
+  const area=document.getElementById('game-area');
+  area.innerHTML='';
+
+  // Progress
+  const progress=lsGet('skip-progress',[]);
+  const pct=Math.min(100,(progress.length/STAGES.length)*100);
+  area.innerHTML+=`<div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>`;
+
+  // Instruction
+  area.innerHTML+=`<div class="stage-info"><h3>${s.emoji} ${s.name}</h3><p>${s.instruction}</p></div>`;
+
+  switch(s.type){
+    case 'ladder': renderLadder(area,s); break;
+    case 'rainbow': renderRainbow(area,s); break;
+    case 'basket': renderBaskets(area,s); break;
+  }
+
+  // Parent content
+  renderParentPanel();
+}
+
+function renderParentPanel(){
+  const c=document.getElementById('parent-content');
+  const progress=lsGet('skip-progress',[]);
+  c.innerHTML='';
+  STAGES.forEach(s=>{
+    const done=progress.includes(s.id);
+    const pct=Math.min(100,(done?100:0));
+    c.innerHTML+=`
+      <div class="panel-row">
+        <div class="panel-row-label">
+          <span>${s.emoji} Tahap ${s.id}: ${s.name}</span>
+          <span style="color:#666;font-size:.75rem;">${done?'✓':'belum'}</span>
+        </div>
+        <div class="panel-bar"><div class="panel-bar-fill" style="width:${pct}%;background:${s.color}"></div></div>
+      </div>
+    `;
+  });
+}
+
+// ─────────────────────────────────────────────
+// LADDER (stage 1)
+// ─────────────────────────────────────────────
+function renderLadder(area, s){
+  const done=lsGet('skip-done-'+s.id,[]);
+  const current=lsGet('skip-current-'+s.id,1);
+  const container=document.createElement('div');
+  container.className='ladder-area';
+  container.id='ladder-area';
+
+  for(let i=1;i<=10;i++){
+    const step=document.createElement('div');
+    step.className='ladder-step';
+    if(done.includes(i)) step.classList.add('done');
+    if(i===current && !done.includes(i)) step.classList.add('current');
+    step.dataset.num=i;
+    step.innerHTML=`
+      <div class="ladder-num" style="color:${done.includes(i)?'var(--green)':i===current?'var(--gold)':'var(--cream)'}">${i}</div>
+      <div class="ladder-dots">
+        ${Array(i).fill(0).map(()=>`<div class="ladder-dot" style="background:${done.includes(i)?'var(--green)':'rgba(255,255,255,.25)'}"></div>`).join('')}
+      </div>
+    `;
+    step.onclick=()=>tapLadder(i,done,current,s.id);
+    container.appendChild(step);
+  }
+  area.appendChild(container);
+}
+
+function tapLadder(num, done, current, stageId){
+  if(num!==current) {
+    // Shake wrong number
+    const steps=document.querySelectorAll('.ladder-step');
+    const el=Array.from(steps).find(s=>s.dataset.num==String(num));
+    if(el){el.classList.add('shake');setTimeout(()=>el.classList.remove('shake'),400);}
+    say('Bukan itu! Coba '+current);
     return;
   }
-  const step = INTRO_STEPS[s.step];
-  document.getElementById('intro-text').innerHTML = step.text;
-  document.getElementById('intro-btn').textContent = step.btn;
-  if (step.action) step.action();
-  else clearIntroDemo();
-}
-
-function skipIntro() {
-  markIntroDone();
-  showScreen('home');
-}
-
-function markIntroDone() {
-  try { localStorage.setItem('belajar-aya-v2-intro', '1'); } catch(e) {}
-}
-
-function animateIntroJump(size) {
-  const dots = document.getElementById('intro-dots');
-  dots.innerHTML = '';
-  const steps = [0, size, size * 2];
-  steps.forEach((n, i) => {
-    const d = document.createElement('div');
-    d.className = 'intro-dot';
-    d.style.borderColor = size === 10 ? '#5DB475' : '#F99E4A';
-    d.style.color = size === 10 ? '#5DB475' : '#F99E4A';
-    d.textContent = n;
-    d.style.animationDelay = (i * 200) + 'ms';
-    dots.appendChild(d);
-  });
-  document.getElementById('intro-number').textContent = size;
-  document.getElementById('intro-number').style.color = size === 10 ? '#5DB475' : '#F99E4A';
-}
-
-function showIntroSequence(size) {
-  const dots = document.getElementById('intro-dots');
-  dots.innerHTML = '';
-  const nums = [0, size, size * 2, size * 3];
-  nums.forEach((n, i) => {
-    const d = document.createElement('div');
-    d.className = 'intro-dot';
-    d.style.borderColor = '#7D5E3C';
-    d.style.color = '#7D5E3C';
-    d.textContent = n;
-    d.style.animationDelay = (i * 150) + 'ms';
-    dots.appendChild(d);
-  });
-  document.getElementById('intro-number').textContent = '→';
-  document.getElementById('intro-number').style.color = '#7D5E3C';
-}
-
-function clearIntroDemo() {
-  const dots = document.getElementById('intro-dots');
-  if (dots) dots.innerHTML = '';
-  const num = document.getElementById('intro-number');
-  if (num) { num.textContent = '?'; num.style.color = '#7D5E3C'; }
-}
-
-function startApp() {
-  try {
-    if (localStorage.getItem('belajar-aya-v2-intro') === '1') {
-      showScreen('home');
-      return;
+  // Correct!
+  const newDone=[...done,num];
+  lsSet('skip-done-'+stageId,newDone);
+  say(num+'! Benar!');
+  if(num===10){
+    // Stage complete
+    const progress=lsGet('skip-progress',[]);
+    if(!progress.includes(stageId)){
+      progress.push(stageId);
+      lsSet('skip-progress',progress);
     }
-  } catch(e) {}
-  showScreen('intro');
-}
-
-// Load saved progress
-function loadProgress() {
-  try {
-    const saved = localStorage.getItem('belajar-aya-v2');
-    if (saved) return JSON.parse(saved);
-  } catch(e) {}
-  return {};
-}
-function saveProgress(data) {
-  try { localStorage.setItem('belajar-aya-v2', JSON.stringify(data)); } catch(e) {}
-}
-
-// ===== SCREEN NAVIGATION =====
-function showScreen(name) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.getElementById(name === 'home' ? 'home' : 'screen-' + name).classList.add('active');
-  window.scrollTo(0, 0);
-}
-function startGame(name) {
-  showScreen(name);
-  if (name === 'build') initBuild();
-  if (name === 'jump') initJump();
-  if (name === 'next') initNext();
-  if (name === 'pattern') initPattern();
-  if (name === 'missing') initMissing();
-  if (name === 'detective') initDetective();
-}
-
-// ===== PATTERN DISCOVERY: Tap numbers where Rabbity lands =====
-function initPattern() {
-  state.pattern.selected = [];
-  renderPattern();
-}
-
-function renderPattern() {
-  const size = state.pattern.size;
-  const board = document.getElementById('pattern-board');
-  board.innerHTML = '';
-
-  // Random start: 0, size, or 2*size
-  const start = Math.floor(Math.random() * 3) * size;
-  state.pattern.start = start;
-  state.pattern.size = size;
-
-  for (let i = 1; i <= 20; i++) {
-    const cell = document.createElement('div');
-    cell.className = 'board-cell';
-    cell.textContent = i;
-    cell.dataset.val = i;
-
-    // Highlight numbers in the skip-counting sequence
-    if (i >= start && (i - start) % size === 0) {
-      cell.classList.add('hint'); // pre-hint for visual reveal on tap
-      cell.dataset.inSequence = 'true';
-    }
-
-    cell.addEventListener('click', () => handlePatternTap(cell, i));
-    board.appendChild(cell);
-  }
-
-  // Show rule
-  document.getElementById('pattern-rule-num').textContent = size;
-  clearFeedback('pattern');
-  renderPatternChoices();
-}
-
-function handlePatternTap(cell, val) {
-  if (cell.classList.contains('selected')) return;
-
-  const size = state.pattern.size;
-  const inSeq = cell.dataset.inSequence === 'true';
-  cell.classList.add('selected');
-
-  if (inSeq) {
-    state.pattern.selected.push(val);
-    cell.style.borderColor = 'var(--soft-green)';
-    cell.style.background = 'rgba(93,176,117,0.25)';
-
-    // After 3+ selected, ask the question
-    if (state.pattern.selected.length >= 3) {
-      setTimeout(() => {
-        document.getElementById('pattern-question').textContent = 'Rabbity lompat berapa langkah?';
-        renderPatternChoices();
-      }, 500);
-    }
-  } else {
-    cell.style.borderColor = '#E57373';
-    cell.style.background = 'rgba(229,115,115,0.15)';
-    showFeedback('pattern', 'Coba angka yang lain! 👣', 'hint');
-    setTimeout(() => {
-      cell.classList.remove('selected');
-      cell.style.borderColor = '';
-      cell.style.background = '';
-    }, 800);
-  }
-}
-
-function renderPatternChoices() {
-  const size = state.pattern.size;
-  const choices = new Set([size]);
-  while (choices.size < 3) {
-    const offset = (Math.random() < 0.5 ? 1 : -1) * (Math.floor(Math.random() * 3) + 1);
-    const c = size + offset;
-    if (c > 0 && c !== size) choices.add(Math.abs(c));
-  }
-
-  const row = document.getElementById('pattern-choices');
-  row.innerHTML = '';
-  [...choices].sort((a,b) => a-b).forEach(c => {
-    const btn = document.createElement('button');
-    btn.className = `choice-btn by${c === 10 ? 10 : c === 5 ? 5 : 2}`;
-    btn.textContent = '+' + c;
-    btn.onclick = () => checkPatternAnswer(c, size, btn);
-    row.appendChild(btn);
-  });
-}
-
-function checkPatternAnswer(selected, correct, btn) {
-  if (btn.classList.contains('correct') || btn.classList.contains('wrong')) return;
-
-  if (selected === correct) {
-    btn.classList.add('correct');
-    showFeedback('pattern', 'Hebat! Aturannya tetap sama! 👣', 'success');
-    state.pattern.score++;
     confetti();
-
-    const p = loadProgress();
-    p.pattern = p.pattern || {};
-    p.pattern[correct] = (p.pattern[correct] || 0) + 1;
-    saveProgress(p);
-
-    setTimeout(renderPattern, 2200);
+    say('Hebat! Tahap 1 selesai!');
+    setTimeout(showSelect,2000);
   } else {
-    btn.classList.add('wrong');
-    showFeedback('pattern', 'Rabbity lompat ' + correct + ' langkah! 👣', 'hint');
-    setTimeout(() => btn.classList.remove('wrong'), 800);
+    lsSet('skip-current-'+stageId,num+1);
+    renderGame();
   }
 }
 
-function selectPatternSize(n) {
-  document.querySelectorAll('#screen-pattern .jump-btn').forEach(b => b.classList.remove('selected'));
-  document.querySelector(`#screen-pattern .jump-btn.by${n}`).classList.add('selected');
-  state.pattern.size = n;
-  initPattern();
+// ─────────────────────────────────────────────
+// RAINBOW (stages 2-4)
+// ─────────────────────────────────────────────
+function renderRainbow(area, s){
+  const done=lsGet('skip-done-'+s.id,[]);
+  const current=lsGet('skip-current-'+s.id,s.by);
+  const container=document.createElement('div');
+  container.className='rainbow-area';
+  container.id='rainbow-area';
+
+  const steps=[];
+  for(let i=1;i<=10;i++) steps.push(s.by*i);
+  const uniq=[...new Set(steps)];
+
+  uniq.forEach(n=>{
+    const step=document.createElement('div');
+    step.className='rainbow-step';
+    if(done.includes(n)) step.classList.add('done');
+    if(n===current && !done.includes(n)) step.style.borderColor='var(--gold)';
+    step.innerHTML=`
+      <div class="rainbow-num" style="color:${done.includes(n)?'var(--green)':n===current?'var(--gold)':'var(--cream)'}">${n}</div>
+      <div style="font-size:1.4rem;">${s.emoji}</div>
+    `;
+    step.onclick=()=>tapRainbow(n,done,current,s.id,s.by);
+    container.appendChild(step);
+  });
+  area.appendChild(container);
 }
 
-// ===== BUILD: DRAG DOTS INTO BASKETS =====
-let buildDragged = null;
+function tapRainbow(num, done, current, stageId, by){
+  if(num!==current){
+    say('Bukan! Coba '+current);
+    return;
+  }
+  const newDone=[...done,num];
+  lsSet('skip-done-'+stageId,newDone);
+  say(num+'!');
+  const last=Math.max(...uniqSteps(by));
+  if(num===last){
+    const progress=lsGet('skip-progress',[]);
+    if(!progress.includes(stageId)){
+      progress.push(stageId);
+      lsSet('skip-progress',progress);
+    }
+    confetti();
+    say('Hebat! Tahap selesai!');
+    setTimeout(showSelect,2000);
+  } else {
+    lsSet('skip-current-'+stageId,current+by);
+    renderGame();
+  }
+}
+function uniqSteps(by){ const s=[]; for(let i=by;i<=10*by;i+=by) s.push(i); return [...new Set(s)]; }
 
-function initBuild() {
-  const size = state.build.size;
-  state.build.baskets = 0;
-  state.build.dotsInBaskets = 0;
+// ─────────────────────────────────────────────
+// BASKETS (stages 5-6)
+// ─────────────────────────────────────────────
+function renderBaskets(area, s){
+  const container=document.createElement('div');
+  container.id='basket-game';
 
   // Build baskets
-  const row = document.getElementById('baskets-row');
-  row.innerHTML = '';
-  for (let i = 0; i < state.build.targetGroups; i++) {
-    const b = document.createElement('div');
-    b.className = 'basket';
-    b.dataset.count = '0';
-    b.dataset.target = size;
-    const lbl = document.createElement('span');
-    lbl.className = 'basket-label';
-    b.appendChild(lbl);
-    row.appendChild(b);
-  }
+  const perGroup=Math.floor(s.total/s.groups);
+  const baskets=Array.from({length:s.groups},(_,i)=>({target:perGroup,count:0,dots:[]}));
 
-  // Build dot source
-  const dropZone = document.getElementById('drop-zone');
-  dropZone.innerHTML = '';
-  for (let i = 0; i < size * state.build.targetGroups; i++) {
-    const dot = makeDot(i + 1);
-    dropZone.appendChild(dot);
-  }
+  container.innerHTML=`
+    <div class="baskets" id="baskets-row">
+      ${baskets.map((b,i)=>`
+        <div class="basket" id="basket-${i}" style="background:${s.color}22;border:2px solid ${s.color}55;min-width:90px;min-height:90px;">
+          <div class="basket-label" style="background:${s.color}44;color:var(--cream)">${perGroup}</div>
+          <div class="basket-dots" id="basket-dots-${i}"></div>
+          <div class="basket-count" id="basket-count-${i}">0/${perGroup}</div>
+        </div>
+      `).join('')}
+    </div>
+    <div class="total-display" id="total-display">Jumlah: <span id="total-num">0</span></div>
+    <div class="instruction">Seret titik ke keranjang. Tiap keranjang harus sama banyak!</div>
+    <div class="dot-pool" id="dot-pool"></div>
+    <div class="action-row">
+      <button class="btn btn-outline" onclick="resetBaskets()">🔄 Reset</button>
+      <button class="btn btn-gold" onclick="checkBaskets()">✅ Cek Jawaban</button>
+    </div>
+  `;
+  area.appendChild(container);
 
-  updateBuildTotal();
-  clearFeedback('build');
+  // Create source dots
+  const pool=document.getElementById('dot-pool');
+  for(let i=1;i<=s.total;i++){
+    const dot=makeDot(i,s);
+    pool.appendChild(dot);
+  }
 }
 
-function makeDot(num, cls = '') {
-  const d = document.createElement('div');
-  d.className = 'dot src-dot ' + cls;
-  d.textContent = num;
-  d.draggable = false;
-  d.style.animationDelay = (num * 5) + 'ms';
-  d.style.animation = 'dotDrop 0.4s ease-out backwards';
-  // Source pool dots: interactive. Basket dots: non-interactive.
-  d.style.pointerEvents = 'auto';
+function makeDot(num, s){
+  const d=document.createElement('div');
+  d.className='dot';
+  d.textContent=num;
+  d.dataset.num=num;
+  d.style.background=`hsl(${(num*37)%360},70%,55%)`;
+  d.style.color='white';
+  d.style.textShadow='0 1px 3px rgba(0,0,0,.4)';
 
-  // Touch + mouse drag — iPad Safari fix: track last pointer position for pointerup
-  let startX, startY, origParent;
-  let lastX = 0, lastY = 0;
+  // Drag — pointer events (works on iPad)
+  let startX=0,startY=0,lastX=0,lastY=0;
+  let dragging=false;
 
-  d.addEventListener('pointerdown', (e) => {
-    // Dots inside baskets cannot be re-dragged
-    if (d.closest('.basket')) return;
+  d.addEventListener('pointerdown',e=>{
     e.preventDefault();
-    startX = e.clientX; startY = e.clientY;
-    lastX = e.clientX; lastY = e.clientY;
-    origParent = d.parentElement;
-    d.classList.add('dragging');
+    dragging=true;
+    startX=e.clientX; startY=e.clientY;
+    lastX=e.clientX; lastY=e.clientY;
+    d.style.position='fixed';
+    d.style.zIndex='999';
+    d.style.left=(e.clientX-24)+'px';
+    d.style.top=(e.clientY-24)+'px';
     d.setPointerCapture(e.pointerId);
+    d.style.pointerEvents='none'; // while dragging, disable self
   });
 
-  d.addEventListener('pointermove', (e) => {
-    if (!d.classList.contains('dragging')) return;
-    lastX = e.clientX; lastY = e.clientY;
-    d.style.position = 'fixed';
-    d.style.left = (e.clientX - 26) + 'px';
-    d.style.top  = (e.clientY - 26) + 'px';
-    d.style.zIndex = '1000';
-    d.style.pointerEvents = 'none';
-
-    // Highlight basket
-    document.querySelectorAll('.basket').forEach(b => {
-      const r = b.getBoundingClientRect();
-      if (e.clientX >= r.left && e.clientX <= r.right &&
-          e.clientY >= r.top  && e.clientY <= r.bottom) {
-        b.style.borderColor = 'var(--soft-green)';
-        b.style.background = 'rgba(93,176,117,0.12)';
-      } else {
-        b.style.borderColor = '';
-        b.style.background = '';
-      }
-    });
+  d.addEventListener('pointermove',e=>{
+    if(!dragging) return;
+    lastX=e.clientX; lastY=e.clientY;
+    d.style.left=(e.clientX-24)+'px';
+    d.style.top=(e.clientY-24)+'px';
   });
 
-  d.addEventListener('pointerup', (e) => {
-    d.classList.remove('dragging');
-    d.style.position = '';
-    d.style.left = '';
-    d.style.top = '';
-    d.style.zIndex = '';
-    d.style.pointerEvents = '';
+  d.addEventListener('pointerup', e => {
+    if(!dragging) return;
+    dragging=false;
+    d.style.pointerEvents='auto'; // re-enable
 
-    // Use last known pointer position — iPad Safari returns 0 for clientX/clientY
-    // when pointerup fires after setPointerCapture
-    const cx = e.clientX !== 0 ? e.clientX : lastX;
-    const cy = e.clientY !== 0 ? e.clientY : lastY;
-
-    // Find target basket — only accept if basket not yet full
-    let placed = false;
-    document.querySelectorAll('.basket').forEach(b => {
-      b.style.borderColor = '';
-      b.style.background = '';
-      const r = b.getBoundingClientRect();
-      if (cx >= r.left && cx <= r.right &&
-          cy >= r.top  && cy <= r.bottom) {
-        const currentCount = parseInt(b.dataset.count) || 0;
-        const target = parseInt(b.dataset.target) || state.build.size;
-        // Only accept if basket not yet full
-        if (currentCount < target) {
-          const newDot = makeDot(parseInt(d.textContent));
-          // Make new dot inside basket non-interactive
-          newDot.style.pointerEvents = 'none';
-          newDot.style.cursor = 'default';
-          b.insertBefore(newDot, b.firstChild);
-          const count = currentCount + 1;
-          b.dataset.count = count;
-          b.querySelector('.basket-label').textContent = count + '/' + target;
+    // Check which basket received this dot
+    const baskets=document.querySelectorAll('.basket');
+    let placed=false;
+    baskets.forEach((b,i)=>{
+      const r=b.getBoundingClientRect();
+      if(lastX>=r.left && lastX<=r.right && lastY>=r.top && lastY<=r.bottom){
+        const count=parseInt(b.dataset.count||'0');
+        const target=parseInt(b.dataset.target||'0');
+        if(count<target){
+          // Move dot into basket
+          const clone=d.cloneNode(true);
+          clone.style.position='relative';
+          clone.style.left='auto';clone.style.top='auto';
+          clone.style.zIndex='1';
+          clone.style.pointerEvents='none'; // basket dots non-interactive
+          clone.style.animation='dotDrop .3s ease-out';
+          const dotsEl=document.getElementById('basket-dots-'+i);
+          if(dotsEl) dotsEl.appendChild(clone);
+          b.dataset.count=count+1;
+          const cntEl=document.getElementById('basket-count-'+i);
+          if(cntEl) cntEl.textContent=(count+1)+'/'+target;
+          // Remove source dot
           d.remove();
-          placed = true;
-          if (count === target) b.classList.add('filled');
-          state.build.dotsInBaskets++;
-          updateBuildTotal();
-          checkBuildComplete();
+          placed=true;
+          // Update total
+          updateBasketTotal();
+          // Check complete
+          checkBasketsComplete();
+        } else {
+          // Basket full — shake and return
+          b.classList.add('shake');
+          setTimeout(()=>b.classList.remove('shake'),400);
+          say('Keranjang sudah penuh!');
+          resetDotPosition(d,startX,startY);
         }
       }
     });
 
-    if (!placed) return;
+    if(!placed){
+      resetDotPosition(d,startX,startY);
+    }
+  });
+
+  d.addEventListener('pointercancel',e=>{
+    dragging=false;
+    d.style.pointerEvents='auto';
+    resetDotPosition(d,startX,startY);
   });
 
   return d;
 }
 
-function updateBuildTotal() {
-  const total = state.build.dotsInBaskets;
-  document.getElementById('build-total').textContent = 'Jumlah: ' + total;
-
-  const pct = Math.min(100, (total / (state.build.size * state.build.targetGroups)) * 100);
-  document.getElementById('build-progress').style.width = pct + '%';
+function resetDotPosition(d,x,y){
+  d.style.position='relative';
+  d.style.left='auto';d.style.top='auto';d.style.zIndex='1';
+  d.style.pointerEvents='auto';
 }
 
-function checkBuildComplete() {
-  const allFilled = [...document.querySelectorAll('.basket')].every(b => parseInt(b.dataset.count) >= state.build.size);
-  if (allFilled) {
-    showFeedback('build', 'Hebat! Semua kelompok lengkap! 🌟', 'success');
-    confetti();
-
-    const p = loadProgress();
-    p.build = p.build || {};
-    p.build[state.build.size] = (p.build[state.build.size] || 0) + 1;
-    saveProgress(p);
-
-    setTimeout(() => {
-      state.build.baskets = 0;
-      state.build.dotsInBaskets = 0;
-      initBuild();
-    }, 2500);
-  }
-}
-
-function selectBuildSize(n) {
-  document.querySelectorAll('#screen-build .jump-btn').forEach(b => b.classList.remove('selected'));
-  document.querySelector(`#screen-build .jump-btn.by${n}`).classList.add('selected');
-  state.build.size = n;
-  initBuild();
-}
-
-// ===== JUMP: PIKO ON NUMBER LINE =====
-function initJump() {
-  state.jump.rabbityPos = 0;
-  buildNumberLine();
-  updateRabbityPosition(false);
-  clearFeedback('jump');
-  document.getElementById('jump-feedback').innerHTML = '';
-}
-
-function buildNumberLine() {
-  const container = document.getElementById('number-line');
-  const inner = document.createElement('div');
-  inner.className = 'number-line-inner';
-  inner.style.position = 'relative';
-
-  // Determine range based on jump size
-  const maxVal = state.jump.size * 10;
-  const step = state.jump.size === 10 ? 10 : state.jump.size === 5 ? 5 : 2;
-
-  for (let i = 0; i <= maxVal; i += step) {
-    const cell = document.createElement('div');
-    cell.className = 'num-cell';
-
-    const label = document.createElement('div');
-    label.className = 'num-label';
-    label.textContent = i;
-    label.dataset.val = i;
-    label.onclick = () => {
-      document.querySelectorAll('.num-label').forEach(l => l.classList.remove('highlighted'));
-      label.classList.add('highlighted');
-    };
-
-    const bar = document.createElement('div');
-    bar.className = 'num-line-bar';
-
-    cell.appendChild(label);
-    cell.appendChild(bar);
-    inner.appendChild(cell);
-  }
-
-  // Rabbity bunny element
-  const rabbity = document.createElement('div');
-  rabbity.className = 'rabbity-bunny';
-  rabbity.id = 'rabbity';
-  rabbity.textContent = '🐰';
-  rabbity.onclick = () => rabbityJump();
-  inner.appendChild(rabbity);
-
-  container.innerHTML = '';
-  container.appendChild(inner);
-
-  document.getElementById('rule-num').textContent = state.jump.size;
-}
-
-function updateRabbityPosition(animate = true) {
-  const rabbity = document.getElementById('rabbity');
-  if (!rabbity) return;
-
-  // Calculate position: each num-cell is ~52px wide
-  const step = state.jump.size === 10 ? 10 : state.jump.size === 5 ? 5 : 2;
-  const cellWidth = 52;
-  const offset = 26; // center of first cell
-
-  const targetCell = state.jump.rabbityPos / step;
-  const leftPx = offset + targetCell * cellWidth;
-
-  rabbity.style.left = leftPx + 'px';
-
-  // Highlight current cell
-  document.querySelectorAll('.num-label').forEach(l => l.classList.remove('active'));
-  const active = document.querySelector(`.num-label[data-val="${state.jump.rabbityPos}"]`);
-  if (active) active.classList.add('active');
-}
-
-function rabbityJump() {
-  const maxVal = state.jump.size * 10;
-  if (state.jump.rabbityPos >= maxVal) {
-    // Reset
-    state.jump.rabbityPos = 0;
-    updateRabbityPosition(true);
-    return;
-  }
-
-  const rabbity = document.getElementById('rabbity');
-  rabbity.classList.remove('hopping');
-  void rabbity.offsetWidth; // reflow
-  rabbity.classList.add('hopping');
-
-  state.jump.rabbityPos += state.jump.size;
-
-  // Highlight path
-  const step = state.jump.size === 10 ? 10 : state.jump.size === 5 ? 5 : 2;
-  for (let v = state.jump.rabbityPos - state.jump.size + step; v <= state.jump.rabbityPos; v += step) {
-    const lbl = document.querySelector(`.num-label[data-val="${v}"]`);
-    if (lbl) lbl.classList.add('highlighted');
-  }
-
-  setTimeout(() => {
-    updateRabbityPosition(false);
-    updateJumpFeedback();
-  }, 300);
-
-  // Progress
-  const pct = Math.min(100, (state.jump.rabbityPos / maxVal) * 100);
-  document.getElementById('jump-progress').style.width = pct + '%';
-
-  if (state.jump.rabbityPos >= maxVal) {
-    confetti();
-    showFeedback('jump', 'Hebat! Rabbity sampai! 🌟 Mau lagi?', 'success');
-    document.getElementById('jump-btn').disabled = true;
-    const p = loadProgress();
-    p.jump = p.jump || {};
-    p.jump[state.jump.size] = (p.jump[state.jump.size] || 0) + 1;
-    saveProgress(p);
-  }
-}
-
-function updateJumpFeedback() {
-  const pos = state.jump.rabbityPos;
-  if (pos === 0) {
-    clearFeedback('jump');
-  } else {
-    const messages = [
-      `${pos}!`, `Rabbity di ${pos}!`, `Lompatan bagus!`, `${pos} — terus!`
-    ];
-    showFeedback('jump', messages[Math.floor(Math.random() * messages.length)], 'hint');
-  }
-}
-
-function resetRabbity() {
-  state.jump.rabbityPos = 0;
-  document.querySelectorAll('.num-label').forEach(l => {
-    l.classList.remove('highlighted', 'active');
+function updateBasketTotal(){
+  let total=0;
+  document.querySelectorAll('.basket').forEach(b=>{
+    total+=parseInt(b.dataset.count||'0');
   });
-  document.getElementById('jump-progress').style.width = '0%';
-  document.getElementById('jump-btn').disabled = false;
-  updateRabbityPosition(false);
-  clearFeedback('jump');
+  const el=document.getElementById('total-num');
+  if(el) el.textContent=total;
 }
 
-function selectJumpSize(n) {
-  document.querySelectorAll('#screen-jump .jump-btn').forEach(b => b.classList.remove('selected'));
-  document.querySelector(`#screen-jump .jump-btn.by${n}`).classList.add('selected');
-  state.jump.size = n;
-  state.jump.rabbityPos = 0;
-  initJump();
-}
-
-// ===== NEXT NUMBER =====
-function initNext() {
-  state.next.seq = generateNextSequence();
-  renderNext();
-}
-
-function generateNextSequence() {
-  const size = state.next.size;
-  const start = Math.floor(Math.random() * 3) * size; // 0, size, or 2*size
-  const length = 3 + Math.floor(Math.random() * 2); // 3-4 numbers shown
-  const seq = [];
-  for (let i = 0; i < length; i++) seq.push(start + i * size);
-  return seq;
-}
-
-function renderNext() {
-  const seq = state.next.seq;
-  const answer = seq[seq.length - 1] + state.next.size;
-  // Capture size at render time — child can't change it mid-round
-  state.next.roundSize = state.next.size;
-  seq.push('?'); // placeholder for answer
-
-  const display = document.getElementById('next-display');
-  display.innerHTML = '';
-
-  seq.forEach((val, i) => {
-    const n = document.createElement('div');
-    n.className = 'pattern-num' + (i < seq.length - 1 ? ' given' : ' blank');
-    n.textContent = val === '?' ? '?' : val;
-    n.dataset.val = val;
-    display.appendChild(n);
+function checkBasketsComplete(){
+  const baskets=document.querySelectorAll('.basket');
+  const allFull=Array.from(baskets).every(b=>{
+    const c=parseInt(b.dataset.count||'0');
+    const t=parseInt(b.dataset.target||'0');
+    return c===t;
   });
-
-  // Generate choices
-  const correct = answer;
-  const choices = new Set([correct]);
-  while (choices.size < 4) {
-    const offset = (Math.random() < 0.5 ? 1 : -1) * (Math.floor(Math.random() * 3) + 1) * state.next.size;
-    const c = correct + offset;
-    if (c > 0 && c !== correct) choices.add(c);
-  }
-
-  const shuffled = [...choices].sort(() => Math.random() - 0.5);
-  const row = document.getElementById('next-choices');
-  row.innerHTML = '';
-  shuffled.forEach(c => {
-    const btn = document.createElement('button');
-    btn.className = `choice-btn by${state.next.roundSize}`;
-    btn.textContent = c;
-    btn.onclick = () => checkNextAnswer(c, correct, btn);
-    row.appendChild(btn);
-  });
-
-  clearFeedback('next');
-}
-
-function checkNextAnswer(selected, correct, btn) {
-  if (btn.classList.contains('correct') || btn.classList.contains('wrong')) return;
-
-  state.next.rounds++;
-  const display = document.getElementById('next-display');
-  const blanks = display.querySelectorAll('.blank');
-
-  if (selected === correct) {
-    btn.classList.add('correct');
-    blanks.forEach(b => { b.textContent = correct; b.classList.remove('blank'); b.classList.add('given'); });
-    state.next.score++;
-    showFeedback('next', getSuccessMsg(), 'success');
-    confetti();
-
-    const p = loadProgress();
-    p.next = p.next || {};
-    p.next[state.next.size] = (p.next[state.next.size] || 0) + 1;
-    saveProgress(p);
-
-    document.getElementById('next-progress').style.width = Math.min(100, (state.next.score / 10) * 100) + '%';
-
-    setTimeout(() => {
-      state.next.seq = generateNextSequence();
-      renderNext();
-    }, 2200);
-  } else {
-    btn.classList.add('wrong');
-    setTimeout(() => btn.classList.remove('wrong'), 600);
-    showFeedback('next', getHintMsg(state.next.roundSize), 'hint');
-  }
-}
-
-function selectNextSize(n) {
-  document.querySelectorAll('#screen-next .jump-btn').forEach(b => b.classList.remove('selected'));
-  document.querySelector(`#screen-next .jump-btn.by${n}`).classList.add('selected');
-  state.next.size = n;
-  initNext();
-}
-
-// ===== MISSING NUMBER =====
-function initMissing() {
-  renderMissing();
-}
-
-function renderMissing() {
-  const size = state.missing.size;
-  const start = Math.floor(Math.random() * 3) * size;
-  const length = 4;
-  const seq = [];
-  for (let i = 0; i < length; i++) seq.push(start + i * size);
-
-  // Choose which position to blank out (not first, not last)
-  const blankPos = 1 + Math.floor(Math.random() * (length - 2));
-  const answer = seq[blankPos];
-  const display = document.getElementById('missing-display');
-  display.innerHTML = '';
-
-  seq.forEach((val, i) => {
-    const n = document.createElement('div');
-    if (i === blankPos) {
-      n.className = 'pattern-num blank';
-      n.textContent = '?';
-      n.dataset.val = '?';
-    } else {
-      n.className = 'pattern-num given';
-      n.textContent = val;
-      n.dataset.val = val;
+  if(allFull){
+    const s=STAGES[state.stage-1];
+    const progress=lsGet('skip-progress',[]);
+    if(!progress.includes(s.id)){
+      progress.push(s.id);
+      lsSet('skip-progress',progress);
     }
-    display.appendChild(n);
-  });
-
-  // Choices — spread above AND below the correct answer for genuine distractors
-  const choices = new Set([answer]);
-  while (choices.size < 4) {
-    const direction = Math.random() < 0.5 ? 1 : -1;
-    const magnitude = (Math.floor(Math.random() * 3) + 1) * size;
-    const c = answer + direction * magnitude;
-    if (c > 0 && c !== answer) choices.add(c);
-  }
-
-  const shuffled = [...choices].sort(() => Math.random() - 0.5);
-  const row = document.getElementById('missing-choices');
-  row.innerHTML = '';
-  shuffled.forEach(c => {
-    const btn = document.createElement('button');
-    btn.className = `choice-btn by${size}`;
-    btn.textContent = c;
-    btn.onclick = () => checkMissingAnswer(c, answer, btn, blankPos);
-    row.appendChild(btn);
-  });
-
-  clearFeedback('missing');
-}
-
-function checkMissingAnswer(selected, correct, btn, blankPos) {
-  if (btn.classList.contains('correct') || btn.classList.contains('wrong')) return;
-  state.missing.rounds++;
-
-  if (selected === correct) {
-    btn.classList.add('correct');
-    const blanks = document.querySelectorAll('#missing-display .blank');
-    blanks.forEach(b => { b.textContent = correct; b.classList.remove('blank'); b.classList.add('given'); });
-    state.missing.score++;
-    showFeedback('missing', getSuccessMsg(), 'success');
     confetti();
-
-    const p = loadProgress();
-    p.missing = p.missing || {};
-    p.missing[state.missing.size] = (p.missing[state.missing.size] || 0) + 1;
-    saveProgress(p);
-
-    document.getElementById('missing-progress').style.width = Math.min(100, (state.missing.score / 10) * 100) + '%';
-
-    setTimeout(renderMissing, 2200);
-  } else {
-    btn.classList.add('wrong');
-    setTimeout(() => btn.classList.remove('wrong'), 600);
-    showFeedback('missing', getHintMsg(state.missing.size), 'hint');
+    say('Sempurna! Semua keranjang sama banyak!');
   }
 }
 
-function selectMissingSize(n) {
-  document.querySelectorAll('#screen-missing .jump-btn').forEach(b => b.classList.remove('selected'));
-  document.querySelector(`#screen-missing .jump-btn.by${n}`).classList.add('selected');
-  state.missing.size = n;
-  initMissing();
-}
-
-// ===== RULE DETECTIVE =====
-function initDetective() {
-  renderDetective();
-}
-
-function renderDetective() {
-  // Pick a random jump size for this round
-  const sizes = [2, 5, 10];
-  const size = sizes[Math.floor(Math.random() * sizes.length)];
-  const start = Math.floor(Math.random() * 3) * size;
-  const seq = [];
-  for (let i = 0; i < 4; i++) seq.push(start + i * size);
-
-  const display = document.getElementById('detective-display');
-  display.innerHTML = '';
-  seq.forEach(val => {
-    const n = document.createElement('div');
-    n.className = 'pattern-num given';
-    n.textContent = val;
-    display.appendChild(n);
+function checkBaskets(){
+  const baskets=document.querySelectorAll('.basket');
+  const allFull=Array.from(baskets).every(b=>{
+    const c=parseInt(b.dataset.count||'0');
+    const t=parseInt(b.dataset.target||'0');
+    return c===t;
   });
-
-  document.getElementById('detective-question').textContent = 'Rabbity lompat berapa?';
-
-  const choices = new Set([size]);
-  while (choices.size < 4) {
-    const opts = [2, 5, 10].filter(s => s !== size);
-    choices.add(opts[Math.floor(Math.random() * opts.length)]);
-  }
-
-  const shuffled = [...choices].sort(() => Math.random() - 0.5);
-  const row = document.getElementById('detective-choices');
-  row.innerHTML = '';
-  shuffled.forEach(c => {
-    const btn = document.createElement('button');
-    btn.className = `choice-btn by${c === 10 ? 10 : c === 5 ? 5 : 2}`;
-    btn.textContent = '+' + c;
-    btn.onclick = () => checkDetectiveAnswer(c, size, btn);
-    row.appendChild(btn);
-  });
-
-  clearFeedback('detective');
-}
-
-function checkDetectiveAnswer(selected, correct, btn) {
-  if (btn.classList.contains('correct') || btn.classList.contains('wrong')) return;
-  state.detective.rounds++;
-
-  if (selected === correct) {
-    btn.classList.add('correct');
-    state.detective.score++;
-    showFeedback('detective', 'Benar! Aturannya +' + correct + '! 🌟', 'success');
+  const any=Array.from(baskets).some(b=>parseInt(b.dataset.count||'0')>0);
+  if(allFull){
+    const s=STAGES[state.stage-1];
+    const progress=lsGet('skip-progress',[]);
+    if(!progress.includes(s.id)){
+      progress.push(s.id);
+      lsSet('skip-progress',progress);
+    }
     confetti();
-
-    const p = loadProgress();
-    p.detective = (p.detective || 0) + 1;
-    saveProgress(p);
-
-    document.getElementById('detective-progress').style.width = Math.min(100, (state.detective.score / 10) * 100) + '%';
-
-    setTimeout(renderDetective, 2200);
+    say('Hebat! Semua keranjang sama banyak!');
+    setTimeout(showSelect,2000);
+  } else if(!any){
+    say('Seret titik dulu ke keranjang!');
   } else {
-    btn.classList.add('wrong');
-    setTimeout(() => btn.classList.remove('wrong'), 600);
-    showFeedback('detective', 'Rabbity lompat +' + correct + '. Coba lagi!', 'hint');
+    say('Belum sama semua. Coba lagi!');
+    // Highlight incomplete baskets
+    baskets.forEach(b=>{
+      const c=parseInt(b.dataset.count||'0');
+      const t=parseInt(b.dataset.target||'0');
+      if(c!==t){
+        b.classList.add('shake');
+        setTimeout(()=>b.classList.remove('shake'),400);
+      }
+    });
   }
 }
 
-// ===== FEEDBACK HELPERS =====
-function getSuccessMsg() {
-  const msgs = [
-    'Hebat! Kamu menemukan polanya! 🌟',
-    'Luar biasa! Aturannya tetap sama! 🎉',
-    'Super! Rabbity lompat terus sama! ⭐',
-    'Hebat! Kamu lihat polanya! ✨',
-    'Pintar! Loncatannya tepat! 🌈',
-    'Hebat! Aturan itu tidak berubah! 💛'
-  ];
-  return msgs[Math.floor(Math.random() * msgs.length)];
-}
-
-function getHintMsg(size) {
-  const msgs = [
-    `Ingat: Rabbity lompat +${size}! Coba lagi!`,
-    `Petunjuk: hitung ${size}-${size}-${size}...`,
-    `Rabbity selalu lompat ${size} langkah!`,
-  ];
-  return msgs[Math.floor(Math.random() * msgs.length)];
-}
-
-function showFeedback(screen, text, type) {
-  const el = document.getElementById(screen + '-feedback');
-  if (!el) return;
-  el.innerHTML = `<div class="feedback-text ${type}">${text}</div>`;
-}
-
-function clearFeedback(screen) {
-  const el = document.getElementById(screen + '-feedback');
-  if (el) el.innerHTML = '';
-}
-
-// ===== CONFETTI =====
-function confetti() {
-  const container = document.getElementById('confetti');
-  const colors = ['#5DB075', '#F2994A', '#6BB8E0', '#F06292', '#FFD700', '#9C27B0'];
-  for (let i = 0; i < 30; i++) {
-    const piece = document.createElement('div');
-    piece.className = 'confetti-piece';
-    piece.style.left = Math.random() * 100 + '%';
-    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
-    piece.style.borderRadius = Math.random() < 0.5 ? '50%' : '2px';
-    piece.style.width = (Math.random() * 8 + 6) + 'px';
-    piece.style.height = (Math.random() * 8 + 6) + 'px';
-    piece.style.animationDuration = (Math.random() * 1.5 + 1) + 's';
-    piece.style.animationDelay = (Math.random() * 0.5) + 's';
-    container.appendChild(piece);
-    setTimeout(() => piece.remove(), 3000);
+function resetBaskets(){
+  const s=STAGES[state.stage-1];
+  // Remove all basket dots
+  document.querySelectorAll('.basket').forEach(b=>{
+    b.dataset.count='0';
+    const dotsEl=b.querySelector('.basket-dots');
+    if(dotsEl) dotsEl.innerHTML='';
+    const cntEl=b.parentElement.querySelector('[id^="basket-count-"]');
+    const t=parseInt(b.dataset.target||'0');
+    if(cntEl) cntEl.textContent='0/'+t;
+  });
+  // Rebuild source dots
+  const pool=document.getElementById('dot-pool');
+  if(pool) pool.innerHTML='';
+  for(let i=1;i<=s.total;i++){
+    const dot=makeDot(i,s);
+    pool.appendChild(dot);
   }
+  const el=document.getElementById('total-num');
+  if(el) el.textContent='0';
 }
 
-// ===== PARENT PANEL =====
-function toggleParentPanel() {
-  const panel = document.getElementById('parent-panel');
-  panel.classList.toggle('show');
-  if (panel.classList.contains('show')) updateParentStats();
+// ─────────────────────────────────────────────
+// RABBITY
+// ─────────────────────────────────────────────
+function rabbitySpeak(){
+  const msgs=['Ayo belajar! 📚','Kamu hebat! ⭐','Tidak apa-apa coba lagi! 💪','Rabbity bangga! 🐰'];
+  say(msgs[Math.floor(Math.random()*msgs.length)]);
 }
 
-function updateParentStats() {
-  const p = loadProgress();
-  const container = document.getElementById('parent-stats');
-
-  const skills = [
-    { key: 'build', label: '🔨 Buat Kelompok' },
-    { key: 'jump', label: '🐰 Loncat Baris' },
-    { key: 'next', label: '🔮 Angka Berikutnya' },
-    { key: 'missing', label: '🔍 Angka Hilang' },
-    { key: 'detective', label: '🕵️ Rule Detektif' },
-  ];
-
-  container.innerHTML = skills.map(skill => {
-    const data = p[skill.key] || {};
-    const sizes = skill.key === 'detective' ? [''] : [10, 5, 2];
-    const rows = sizes.map(size => {
-      const count = skill.key === 'detective' ? (data || 0) : (data[size] || 0);
-      const status = count === 0 ? 'new' : count < 5 ? 'learning' : 'strong';
-      const label = skill.key === 'detective' ? skill.label : skill.label + ' +' + size;
-      return `<div class="progress-row">
-        <span>${label}</span>
-        <span><span class="status-dot status-${status}"></span> ${count}x</span>
-      </div>`;
-    }).join('');
-    return rows;
-  }).join('');
+function say(text){
+  const b=document.getElementById('rabbity-bubble');
+  if(b){b.textContent='🐰 '+text;b.classList.add('show');}
+  if('speechSynthesis' in window){
+    speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance(text);
+    u.lang='id-ID';u.rate=.85;
+    speechSynthesis.speak(u);
+  }
+  setTimeout(()=>{if(b)b.classList.remove('show')},3500);
 }
+
+// ─────────────────────────────────────────────
+// PARENT PANEL
+// ─────────────────────────────────────────────
+function toggleParent(){
+  const p=document.getElementById('parent-panel');
+  if(!p)return;
+  p.classList.toggle('open');
+  if(p.classList.contains('open'))renderParentPanel();
+}
+
+// ─────────────────────────────────────────────
+// CONFETTI
+// ─────────────────────────────────────────────
+function confetti(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const c=document.getElementById('confetti-container');
+  if(!c)return;
+  c.innerHTML='';
+  const colors=['#FFD700','#EF5350','#66BB6A','#42A5F5','#AB47BC','#FF9800'];
+  for(let i=0;i<40;i++){
+    const p=document.createElement('div');
+    p.className='confetti-piece';
+    p.style.left=Math.random()*100+'%';
+    p.style.background=colors[Math.floor(Math.random()*colors.length)];
+    p.style.animationDelay=(Math.random()*.8)+'s';
+    p.style.animationDuration='2.5s';
+    c.appendChild(p);
+  }
+  setTimeout(()=>c.innerHTML='',3500);
+}
+
+// ─────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────
+function init(){
+  genStars();
+  lsSet('skip-current-1',1);
+  lsSet('skip-current-2',2);
+  lsSet('skip-current-3',5);
+  lsSet('skip-current-4',10);
+}
+
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){
+    const p=document.getElementById('parent-panel');
+    if(p)p.classList.remove('open');
+  }
+});
+
+window.addEventListener('load',init);
 </script>
 </body>
 </html>
