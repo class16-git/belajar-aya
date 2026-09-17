@@ -6,562 +6,1168 @@
 <title>Math Garden — Belajar Aya</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--blue:#42A5F5;--red:#EF5350;--cream:#FFF8F0;--shadow:0 4px 24px rgba(0,0,0,.35);--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#07071A;--card:#12123A;--card2:#1a1a40;
+  --gold:#FFD700;--green:#4CAF50;--blue:#42A5F5;
+  --red:#EF5350;--purple:#AB47BC;--orange:#FF7043;
+  --cyan:#26C6DA;--cream:#FFF8F0;--pink:#F48FB1;
+  --font-h:'Fredoka One',cursive;
+  --font-b:'Quicksand',sans-serif;
+}
 html,body{height:100%}
-body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:manipulation}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+body{
+  background:var(--bg);font-family:var(--font-b);
+  color:var(--cream);touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;user-select:none;
+}
 .screen{display:none;min-height:100dvh;flex-direction:column}
-.screen.active{display:flex}
-.stars{position:fixed;inset:0;pointer-events:none;z-index:0}
-.star{position:absolute;background:#fff;border-radius:50%;animation:twinkle 3s ease-in-out infinite}
-@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.9}}
-.top-bar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
-.top-title{font-family:var(--font-h);font-size:.9rem;color:var(--gold)}
-.top-btn{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
-.top-btn:active{transform:scale(.92)}
-.hero{padding:8px 16px 20px;position:relative;z-index:1;text-align:center}
-.hero-title{font-family:var(--font-h);font-size:1.8rem;color:var(--gold);margin-bottom:4px}
-.hero-sub{font-size:.82rem;opacity:.5}
-.act-grid{display:flex;flex-direction:column;gap:12px;padding:0 16px 100px;position:relative;z-index:1}
-.act-card{background:var(--card);border-radius:20px;padding:16px;box-shadow:var(--shadow);cursor:pointer;border:none;width:100%;text-align:left;color:var(--cream);display:flex;gap:14px;align-items:center;transition:transform .15s;font-family:var(--font-b)}
-.act-card:active{transform:scale(.97)}
-.act-icon{font-size:2.5rem;flex-shrink:0}
-.act-name{font-family:var(--font-h);font-size:1rem;margin-bottom:2px}
-.act-desc{font-size:.75rem;opacity:.5;line-height:1.3}
-.act-badge{width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:.8rem;margin-left:auto;flex-shrink:0}
-.act-badge.done{background:var(--green);border-color:var(--green);color:#fff}
-.work-area{padding:10px 16px 100px;flex:1;position:relative;z-index:1}
-.instruction{background:rgba(255,255,255,.07);border-radius:14px;padding:12px 16px;margin:8px 0;font-size:.85rem;text-align:center;line-height:1.6;border:1px solid rgba(255,255,255,.08)}
-.demo-area{background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.1);border-radius:16px;padding:16px;text-align:center;margin:10px 0;min-height:160px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px}
-.rod-row{display:flex;align-items:flex-end;justify-content:center;gap:8px;flex-wrap:wrap}
-.rod{background:var(--red);border-radius:6px 6px 0 0;display:flex;align-items:flex-end;justify-content:center;color:#fff;font-family:var(--font-h);cursor:pointer;transition:transform .2s}
-.rod:active{transform:scaleY(.95)}
-.rod.selected{box-shadow:0 0 0 3px var(--gold)}
-.rod-label{font-size:.7rem;padding:2px 4px;opacity:.7}
-.spindle{width:44px;min-height:50px;background:rgba(255,255,255,.06);border:2px dashed rgba(255,255,255,.2);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:4px;gap:2px}
-.spindle-count{font-family:var(--font-h);font-size:.8rem;color:var(--cream);opacity:.6}
-.counter-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;max-width:360px;margin:0 auto}
-.counter{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:.9rem;cursor:pointer;transition:all .2s;border:none}
-.counter:active{transform:scale(.85)}
-.counter.selected{box-shadow:0 0 0 3px var(--gold);transform:scale(1.1)}
-.counter.used{opacity:.25;pointer-events:none}
-.number-card{background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);border-radius:16px;padding:12px;min-width:70px;text-align:center;font-family:var(--font-h);font-size:1.4rem;cursor:pointer;transition:all .15s;color:var(--cream)}
-.number-card:active{transform:scale(.93)}
-.number-card.selected{background:rgba(255,215,0,.15);border-color:var(--gold);color:var(--gold)}
-.number-card.correct{background:rgba(76,175,80,.15);border-color:var(--green);color:var(--green)}
-.number-card.wrong{background:rgba(239,83,80,.15);border-color:var(--red);color:var(--red)}
-.teen-row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;padding:10px 0}
-.teen-num{display:flex;align-items:center;gap:4px;font-family:var(--font-h);font-size:1.2rem}
-.teen-digit{width:40px;height:50px;border-radius:10px;display:flex;align-items:center;justify-content:center;border:2px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06)}
-.teen-digit.blue{background:rgba(33,150,243,.2);border-color:#2196F3;color:#64B5F6}
-.teen-digit.red{background:rgba(239,83,80,.2);border-color:#EF5350;color:#EF9A9A;font-size:1.4rem;font-weight:700}
-.teen-digit.done{border-color:var(--green);background:rgba(76,175,80,.15)}
-.btn{padding:12px 20px;border-radius:14px;border:none;cursor:pointer;font-family:var(--font-b);font-weight:700;font-size:.88rem;transition:transform .12s}
-.btn:active{transform:scale(.95)}
-.btn-primary{background:var(--gold);color:var(--bg);display:block;width:100%;max-width:320px;margin:10px auto}
-.btn-secondary{background:rgba(255,255,255,.08);color:var(--cream);border:1px solid rgba(255,255,255,.12);display:block;width:100%;max-width:320px;margin:6px auto}
-.act-back{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);border-radius:12px;padding:8px 14px;font-family:var(--font-b);font-weight:600;font-size:.85rem;cursor:pointer;display:flex;align-items:center;gap:6px;width:fit-content}
-.act-back:active{transform:scale(.95)}
-.success-msg{background:rgba(76,175,80,.15);border:2px solid rgba(76,175,80,.4);border-radius:16px;padding:16px;text-align:center;margin:10px 0;display:none}
-.success-msg.show{display:block}
-.success-msg .emoji{font-size:2.5rem;margin-bottom:8px}
-.success-msg .text{font-family:var(--font-h);color:var(--green);font-size:1.1rem}
-.home-fab{position:fixed;bottom:20px;left:20px;width:50px;height:50px;border-radius:50%;background:var(--green);color:#fff;font-size:1.3rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100;display:flex;align-items:center;justify-content:center;text-decoration:none}
-.home-fab:active{transform:scale(.9)}
-.parent-fab{position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--gold);color:var(--bg);font-size:1.2rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100}
-.parent-fab:active{transform:scale(.9)}
-.rabbity-fab{position:fixed;bottom:80px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--card);border:2px solid rgba(255,255,255,.15);color:var(--cream);font-size:1.3rem;z-index:99;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-.rabbity-bubble{position:fixed;bottom:140px;right:20px;z-index:98;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:10px 14px;max-width:220px;font-size:.8rem;line-height:1.5;color:var(--cream);box-shadow:0 4px 16px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .3s}
-.rabbity-bubble.show{opacity:1}
-.parent-panel{position:fixed;bottom:0;left:0;right:0;background:var(--cream);color:#333;border-radius:20px 20px 0 0;padding:20px 16px 90px;box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;max-height:70vh;overflow-y:auto;transform:translateY(110%);transition:transform .3s}
-.parent-panel.open{transform:translateY(0)}
-.panel-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
-.panel-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
-.panel-row{margin-bottom:12px}
-.panel-row-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
-.panel-bar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
-.panel-bar-fill{height:100%;border-radius:4px;transition:width .5s}
-.confetti-container{position:fixed;inset:0;pointer-events:none;z-index:9999}
-.confetti-piece{position:absolute;width:10px;height:10px;border-radius:2px;animation:confettiFall 2.5s ease-out forwards}
-@keyframes confettiFall{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+.screen.on{display:flex}
+
+/* Stars */
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;background:#fff;border-radius:50%;animation:tw var(--d,3s) ease-in-out infinite;animation-delay:var(--dl,0s)}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+
+/* Top bar */
+.tbar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:10px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
+.tbar-btn{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.tbar-back{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.tbar-btn:active,.tbar-back:active{transform:scale(.9)}
+.tbar-title{font-family:var(--font-h);font-size:.9rem;color:var(--gold)}
+
+/* Home */
+.hero{padding:12px 16px 8px;position:relative;z-index:1;text-align:center}
+.hero-emoji{font-size:3.5rem;margin-bottom:4px}
+.hero-title{font-family:var(--font-h);font-size:1.8rem;color:var(--gold)}
+.hero-sub{font-size:.78rem;opacity:.5;margin-top:2px}
+
+.act-list{display:flex;flex-direction:column;gap:10px;padding:0 16px 100px;position:relative;z-index:1}
+.acard{
+  background:var(--card);border-radius:18px;padding:14px 16px;
+  box-shadow:0 4px 16px rgba(0,0,0,.35);cursor:pointer;border:none;
+  width:100%;text-align:left;color:var(--cream);display:flex;gap:12px;
+  align-items:center;transition:transform .15s;font-family:var(--font-b);
+}
+.acard:active{transform:scale(.97)}
+.acard.locked{opacity:.5;cursor:not-allowed}
+.acard.locked:active{transform:none}
+.acard-icon{font-size:2rem;flex-shrink:0}
+.acard-name{font-family:var(--font-h);font-size:.95rem}
+.acard-desc{font-size:.72rem;opacity:.5}
+.acard-status{margin-left:auto;font-size:.75rem;padding:3px 8px;border-radius:8px}
+.acard-status.done{background:rgba(76,175,80,.2);color:var(--green)}
+
+/* Work area */
+.work{padding:8px 16px 100px;flex:1;position:relative;z-index:1}
+.instr{
+  background:rgba(255,255,255,.07);border-radius:14px;padding:10px 14px;
+  font-size:.82rem;text-align:center;line-height:1.5;
+  border:1px solid rgba(255,255,255,.08);margin:8px 0;
+}
+.instr-big{font-size:.95rem}
+
+/* Choices */
+.choices{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:12px 0}
+.choice{
+  min-width:64px;min-height:64px;border-radius:16px;
+  background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.12);
+  color:var(--cream);font-family:var(--font-h);font-size:1.6rem;
+  cursor:pointer;transition:all .15s;display:flex;align-items:center;
+  justify-content:center;padding:8px 12px;
+}
+.choice:active{transform:scale(.9)}
+.choice.right{background:rgba(76,175,80,.2);border-color:var(--green);color:var(--green)}
+.choice.wrong{background:rgba(239,83,80,.2);border-color:var(--red);color:var(--red)}
+
+/* Buttons */
+.btn{display:block;width:100%;max-width:300px;margin:8px auto;padding:13px 20px;border-radius:14px;border:none;cursor:pointer;font-family:var(--font-b);font-weight:700;font-size:.88rem;transition:transform .12s}
+.btn:active{transform:scale(.96)}
+.btn-gold{background:var(--gold);color:var(--bg)}
+.btn-ghost{background:rgba(255,255,255,.08);color:var(--cream);border:1px solid rgba(255,255,255,.12)}
+.btn-green{background:var(--green);color:#fff}
+
+/* Number cards */
+.num-cards{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:8px 0}
+.nc{
+  width:52px;height:52px;border-radius:12px;
+  background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.12);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-h);font-size:1.4rem;cursor:pointer;
+  transition:all .2s;
+}
+.nc:hover{background:rgba(255,255,255,.12)}
+.nc.active{background:rgba(255,215,0,.15);border-color:var(--gold);color:var(--gold);transform:scale(1.08)}
+.nc.selected{background:rgba(66,165,245,.15);border-color:var(--blue);color:var(--blue)}
+
+/* Counter dots grid */
+.cgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;max-width:320px;margin:0 auto}
+.cdot{width:44px;height:44px;border-radius:50%;background:rgba(66,165,245,.12);border:1px solid rgba(66,165,245,.2);display:flex;align-items:center;justify-content:center;font-size:1.1rem;animation:popIn .25s ease}
+
+/* Number rods */
+.rod-row{display:flex;align-items:flex-end;gap:10px;margin:8px 0;padding:8px}
+.rod-seg{
+  height:36px;background:var(--green);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-h);font-size:.7rem;color:#fff;flex-shrink:0;
+  transition:all .2s;
+}
+.rod-label{font-family:var(--font-h);font-size:.75rem;opacity:.5;width:20px;text-align:center}
+
+/* Decimal place values */
+.place-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:360px;margin:8px auto}
+.place-col{text-align:center}
+.place-label{font-size:.65rem;opacity:.5;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
+.place-unit{
+  aspect-ratio:1;max-width:70px;margin:0 auto;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);
+  border-radius:8px;display:grid;grid-template-columns:repeat(3,1fr);
+  grid-template-rows:repeat(3,1fr);gap:2px;padding:4px;
+}
+.place-unit.hovered{border-color:var(--gold);background:rgba(255,215,0,.06)}
+.unit-dot{
+  border-radius:50%;background:rgba(255,215,0,.7);
+  animation:popIn .2s ease;
+}
+.thousand-cube{
+  width:70px;height:70px;background:rgba(255,215,0,.15);
+  border:2px solid var(--gold);border-radius:10px;
+  display:grid;grid-template-columns:repeat(4,1fr);
+  grid-template-rows:repeat(4,1fr);gap:1px;padding:3px;margin:0 auto;
+}
+.thousand-cube .unit-dot{background:rgba(255,215,0,.5)}
+
+/* Operations */
+.op-row{display:flex;flex-direction:column;align-items:center;gap:10px;margin:12px 0}
+.op-num{
+  font-family:var(--font-h);font-size:2.5rem;
+  padding:8px 24px;border-radius:12px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);
+}
+.op-sym{font-size:1.8rem;color:var(--gold)}
+.op-line{width:120px;height:3px;background:var(--gold);border-radius:2px}
+.op-answer{font-family:var(--font-h);font-size:2.5rem;color:var(--green)}
+
+/* Skip counting board */
+.sq-board{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;max-width:340px;margin:0 auto}
+.sq-cell{
+  aspect-ratio:1;background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-h);font-size:.85rem;cursor:pointer;transition:all .2s;
+}
+.sq-cell.hl{background:rgba(76,175,80,.15);border-color:var(--green);color:var(--green);transform:scale(1.06)}
+.sq-cell.sel{background:rgba(255,215,0,.12);border-color:var(--gold);color:var(--gold)}
+
+/* Fraction visual */
+.frac-circle{
+  width:90px;height:90px;border-radius:50%;
+  border:3px solid rgba(255,255,255,.2);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-h);font-size:1.4rem;margin:4px;
+  position:relative;overflow:hidden;
+}
+.frac-slice{
+  position:absolute;top:0;left:0;width:100%;height:100%;
+  background:rgba(66,165,245,.3);border-radius:50%;
+  clip-path:polygon(50% 50%,50% 0%,100% 0%,100% 100%,0% 100%,0% 0%,50% 0%);
+  transition:clip-path .3s;
+}
+
+/* Geometry */
+.shape-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:300px;margin:0 auto}
+.shape-btn{
+  aspect-ratio:1;background:rgba(255,255,255,.05);
+  border:2px solid rgba(255,255,255,.1);border-radius:14px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:4px;cursor:pointer;transition:all .2s;font-family:var(--font-b);color:var(--cream);
+  padding:8px;
+}
+.shape-btn:hover{background:rgba(255,255,255,.1)}
+.shape-btn:active{transform:scale(.94)}
+.shape-svg{width:48px;height:48px}
+.shape-lbl{font-size:.72rem;opacity:.7}
+
+/* Success */
+.success-card{
+  background:rgba(76,175,80,.12);border:2px solid rgba(76,175,80,.35);
+  border-radius:16px;padding:14px;text-align:center;margin:12px 0;
+}
+.success-emoji{font-size:2.5rem}
+.success-text{font-family:var(--font-h);color:var(--green);font-size:1rem;margin-top:4px}
+.success-sub{font-size:.8rem;opacity:.6;margin-top:4px}
+
+/* Progress bar */
+.prog-bar{height:6px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden;margin:10px 0}
+.prog-fill{height:100%;background:linear-gradient(to right,var(--green),var(--cyan));border-radius:3px;transition:width .4s}
+
+/* FABs */
+.fab{position:fixed;width:50px;height:50px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.fab:active{transform:scale(.9)}
+.fab-home{left:20px;bottom:20px;background:var(--green);color:#fff}
+.fab-parent{right:20px;bottom:20px;background:var(--gold);color:var(--bg)}
+.fab-piko{right:20px;bottom:80px;background:var(--card);border:2px solid rgba(255,255,255,.15);color:var(--cream)}
+.bubble{position:fixed;bottom:138px;right:20px;z-index:99;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:10px 14px;max-width:210px;font-size:.8rem;line-height:1.5;box-shadow:0 4px 14px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .25s}
+.bubble.on{opacity:1}
+
+/* Parent panel */
+.ppanel{position:fixed;bottom:0;left:0;right:0;background:var(--cream);color:#333;border-radius:20px 20px 0 0;padding:20px 16px 90px;box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;max-height:70vh;overflow-y:auto;transform:translateY(110%);transition:transform .3s}
+.ppanel.on{transform:translateY(0)}
+.phan-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
+.phan-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
+.prow{margin-bottom:12px}
+.prow-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
+.pbar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
+.pbar-fill{height:100%;border-radius:4px;transition:width .5s}
+
+/* Confetti */
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:9999}
+.conf{position:absolute;width:9px;height:9px;border-radius:2px;animation:cf 2.5s ease-out forwards}
+@keyframes cf{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+
+/* Animations */
+@keyframes popIn{0%{transform:scale(0);opacity:0}70%{transform:scale(1.1)}100%{transform:scale(1);opacity:1}}
+.pop-in{animation:popIn .3s ease forwards}
+@keyframes glow{0%,100%{box-shadow:0 0 0 0 rgba(76,175,80,.4)}50%{box-shadow:0 0 0 8px rgba(76,175,80,0)}}
 </style>
 </head>
 <body>
+
 <div class="stars" id="stars"></div>
 
-<div class="screen active" id="screen-home">
-  <div class="top-bar">
-    <a href="index.html" class="top-btn">←</a>
-    <div class="top-title">Math Garden</div>
-    <div style="width:44px"></div>
+<!-- HOME -->
+<div class="screen on" id="s-home">
+  <div class="tbar">
+    <a href="index.html" class="tbar-btn">&#8592;</a>
+    <div class="tbar-title">Math Garden</div>
+    <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
   </div>
   <div class="hero">
-    <div style="font-size:2.5rem;margin-bottom:4px;">🔢</div>
+    <div class="hero-emoji">&#127792;</div>
     <div class="hero-title">Math Garden</div>
-    <div class="hero-sub">Explore numbers with your hands!</div>
+    <div class="hero-sub">Montessori math — from things to symbols</div>
   </div>
-  <div class="act-grid" id="act-grid"></div>
+  <div class="prog-bar" style="margin:0 16px 8px"><div class="prog-fill" id="total-prog" style="width:0%"></div></div>
+  <div class="act-list" id="act-list"></div>
 </div>
 
-<div class="screen" id="screen-work">
-  <div class="top-bar">
-    <button class="act-back" onclick="goBack()">← Back</button>
-    <div class="top-title" id="work-title">Activity</div>
-    <button class="top-btn" onclick="toggleParent()">👤</button>
+<!-- WORK -->
+<div class="screen" id="s-work">
+  <div class="tbar">
+    <button class="tbar-back" onclick="goHome()">&#8592;</button>
+    <div class="tbar-title" id="work-title">Activity</div>
+    <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
   </div>
-  <div class="work-area" id="work-area"></div>
+  <div class="work" id="work-area"></div>
 </div>
 
-<a href="index.html" class="home-fab">🏠</a>
-<button class="parent-fab" onclick="toggleParent()">👤</button>
-<button class="rabbity-fab" onclick="rabbitySpeak()">🐰</button>
-<div class="rabbity-bubble" id="rabbity-bubble"></div>
+<!-- FABs -->
+<a href="index.html" class="fab fab-home">&#127968;</a>
+<button class="fab fab-parent" onclick="togglePanel()">&#128100;</button>
+<button class="fab fab-piko" onclick="pikoSpeak()">&#128049;</button>
+<div class="bubble" id="bubble"></div>
 
-<div class="parent-panel" id="parent-panel">
-  <div class="panel-handle"></div>
-  <button onclick="toggleParent()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">✕</button>
-  <div class="panel-title">📊 Math Progress</div>
-  <div id="parent-content"></div>
+<!-- Parent Panel -->
+<div class="ppanel" id="ppanel">
+  <div class="phan-handle"></div>
+  <button onclick="togglePanel()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">&#10005;</button>
+  <div class="phan-title">&#128202; Math Journey</div>
+  <div id="pcontent"></div>
 </div>
 
-<div class="confetti-container" id="confetti-container"></div>
+<div class="confetti" id="confetti"></div>
 
 <script>
+// ─────────────────────────────────────────────
+// MATH ACTIVITIES — Montessori progression
+// Quantity → Symbol → Decimal → Operations → Patterns
+// ─────────────────────────────────────────────
 var ACTIVITIES = [
-  { id: "rods", emoji: "🔴", name: "Number Rods", desc: "Compare lengths — longest to shortest", key: "math-rods" },
-  { id: "spindle", emoji: "🪑", name: "Spindle Box", desc: "Match numbers to quantities", key: "math-spindle" },
-  { id: "counters", emoji: "🔵", name: "Cards and Counters", desc: "Arrange odd and even numbers", key: "math-counters" },
-  { id: "teen", emoji: "1️⃣", name: "Teen Board", desc: "Explore numbers 11 through 19", key: "math-teen" },
-  { id: "tens", emoji: "🔟", name: "Tens Board", desc: "Build tens from 10 to 99", key: "math-tens" }
+  { id:"numbers", emoji:"&#48;", color:"#42A5F5", name:"Numbers 0 to 10", desc:"Match quantity to symbol" },
+  { id:"rods",    emoji:"&#129529;", color:"#EF5350", name:"Number Rods",     desc:"See quantity as length" },
+  { id:"spindle", emoji:"&#10022;",  color:"#FFD700", name:"Spindle Box",     desc:"One quantity, one numeral" },
+  { id:"counters",emoji:"&#127813;", color:"#66BB6A", name:"Odd and Even",    desc:"Find the pattern" },
+  { id:"teen",    emoji:"&#49;&#48;", color:"#AB47BC", name:"Teen Numbers",   desc:"Ten and some more" },
+  { id:"tens",    emoji:"&#49;&#48;&#48;", color:"#FF7043", name:"Tens",       desc:"Groups of ten" },
+  { id:"decimal", emoji:"&#128200;", color:"#26C6DA", name:"Decimal System",  desc:"Unit, Ten, Hundred, Thousand" },
+  { id:"add",     emoji:"&#43;",     color:"#4CAF50", name:"Addition",         desc:"Combine quantities" },
+  { id:"sub",     emoji:"&#8722;",   color:"#F48FB1", name:"Subtraction",     desc:"Take away" },
+  { id:"mul",     emoji:"&#215;",    color:"#FF9800", name:"Multiplication",  desc:"Equal groups" },
+  { id:"skip",    emoji:"&#128279;", color:"#78909C", name:"Skip Counting",   desc:"Jump patterns" },
+  { id:"frac",    emoji:"&#189;",    color:"#CE93D8", name:"Fractions",      desc:"Half, third, quarter" },
+  { id:"geo",     emoji:"&#11041;",  color:"#80CBC4", name:"Geometry",        desc:"Shapes and sides" },
 ];
 
-var state = { currentAct: null, history: ["home"], progress: {} };
+var STATE = null;
 
-function lsGet(k, def) {
-  try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : def; } catch(e) { return def; }
-}
-function lsSet(k, v) {
-  try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {}
-}
+function lg(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
+function ls(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
 
-function init() {
-  state.progress = lsGet("math-progress", {});
+function init(){
   genStars();
-  renderActGrid();
-  setTimeout(function() { say("Welcome to the Math Garden!"); }, 600);
+  renderHome();
 }
 
-function genStars() {
+function genStars(){
   var el = document.getElementById("stars");
   el.innerHTML = "";
-  for (var i = 0; i < 55; i++) {
+  for(var i=0;i<60;i++){
     var s = document.createElement("div");
     s.className = "star";
-    var sz = Math.random() * 2 + 1;
-    s.style.cssText = "left:" + (Math.random() * 100) + "%;top:" + (Math.random() * 100) + "%;width:" + sz + "px;height:" + sz + "px;animation-delay:" + (Math.random() * 3).toFixed(1) + "s;animation-duration:" + (Math.random() * 2 + 2).toFixed(1) + "s";
+    var sz = Math.random()*2+1;
+    s.style.cssText = "left:"+(Math.random()*100)+"%;top:"+(Math.random()*100)+"%;width:"+sz+"px;height:"+sz+"px;--d:"+(Math.random()*2+2).toFixed(1)+"s;--dl:"+(Math.random()*3).toFixed(1)+"s";
     el.appendChild(s);
   }
 }
 
-function showScreen(name) {
-  document.querySelectorAll(".screen").forEach(function(s) { s.classList.remove("active"); });
-  var el = document.getElementById("screen-" + name);
-  if (el) el.classList.add("active");
-  if (name !== "home") state.history.push(name);
-  if (name === "home") { state.history = ["home"]; closeParent(); }
+function sc(name){
+  document.querySelectorAll(".screen").forEach(function(s){s.classList.remove("on");});
+  document.getElementById("s-"+name).classList.add("on");
 }
 
-function goBack() {
-  if (state.history.length > 1) state.history.pop();
-  showScreen(state.history[state.history.length - 1] || "home");
+function goHome(){
+  sc("home");
+  renderHome();
 }
 
-function renderActGrid() {
-  var grid = document.getElementById("act-grid");
-  grid.innerHTML = "";
-  ACTIVITIES.forEach(function(a) {
-    var done = !!state.progress[a.id];
+function renderHome(){
+  var prog = lg("math-prog", {});
+  var totalDone = Object.keys(prog).filter(function(k){return prog[k];}).length;
+  var pct = Math.round((totalDone/ACTIVITIES.length)*100);
+  var progEl = document.getElementById("total-prog");
+  if(progEl) progEl.style.width = pct+"%";
+
+  var list = document.getElementById("act-list");
+  list.innerHTML = "";
+  ACTIVITIES.forEach(function(a){
+    var done = !!prog["act-"+a.id];
     var card = document.createElement("button");
-    card.className = "act-card";
-    card.onclick = function() { openAct(a); };
-    card.innerHTML = '<div class="act-icon">' + a.emoji + '</div><div><div class="act-name">' + a.name + '</div><div class="act-desc">' + a.desc + '</div></div><div class="act-badge ' + (done ? "done" : "") + '">' + (done ? "✓" : "→") + "</div>";
-    grid.appendChild(card);
+    card.className = "acard";
+    card.innerHTML =
+      '<div class="acard-icon" style="color:'+a.color+'">'+a.emoji+'</div>'+
+      '<div><div class="acard-name">'+a.name+'</div><div class="acard-desc">'+a.desc+'</div></div>'+
+      '<div class="acard-status '+(done?"done":"")+'">'+(done?"Done":"Start")+'</div>';
+    card.onclick = function(){ startAct(a); };
+    list.appendChild(card);
   });
 }
 
-function openAct(a) {
-  state.currentAct = a;
-  document.getElementById("work-title").textContent = a.name;
+function startAct(a){
+  STATE = { act: a, data: {} };
+  document.getElementById("work-title").textContent = a.emoji+" "+a.name;
   var area = document.getElementById("work-area");
   area.innerHTML = "";
-  switch (a.id) {
-    case "rods": renderRods(area); break;
+  switch(a.id){
+    case "numbers":  renderNumbers(area); break;
+    case "rods":    renderRods(area); break;
     case "spindle": renderSpindle(area); break;
-    case "counters": renderCounters(area); break;
-    case "teen": renderTeen(area); break;
-    case "tens": renderTens(area); break;
+    case "counters":renderCounters(area); break;
+    case "teen":    renderTeen(area); break;
+    case "tens":    renderTens(area); break;
+    case "decimal": renderDecimal(area); break;
+    case "add":     renderAddSub(area,"add"); break;
+    case "sub":     renderAddSub(area,"sub"); break;
+    case "mul":     renderMul(area); break;
+    case "skip":    renderSkip(area); break;
+    case "frac":    renderFrac(area); break;
+    case "geo":     renderGeo(area); break;
   }
-  showScreen("work");
+  sc("work");
 }
 
-function markActDone(id) {
-  if (!state.progress[id]) {
-    state.progress[id] = true;
-    lsSet("math-progress", state.progress);
-    confetti();
-    say("Wonderful! You completed this activity!");
-  }
+function markDone(id){
+  var _o={}; _o["act-"+id]=true; ls("math-prog", Object.assign(lg("math-prog",{}), _o));
 }
 
-// NUMBER RODS
-function renderRods(area) {
-  var rods = [
-    { len: 1, color: "#EF5350" },
-    { len: 2, color: "#FF7043" },
-    { len: 3, color: "#FFCA28" },
-    { len: 4, color: "#66BB6A" },
-    { len: 5, color: "#26A69A" },
-    { len: 6, color: "#42A5F5" },
-    { len: 7, color: "#5C6BC0" },
-    { len: 8, color: "#AB47BC" },
-    { len: 9, color: "#EC407A" }
-  ];
-  area.innerHTML = '<div class="instruction">Tap rods from shortest to longest! Start with the smallest.</div><div class="demo-area" id="rods-area"></div><div class="success-msg" id="rods-msg"><div class="emoji">🎉</div><div class="text">Perfect order! Longest to shortest!</div></div><button class="btn btn-secondary" onclick="resetRods()">Try Again</button>';
-  state.rodOrder = [];
-  var container = document.getElementById("rods-area");
-  // Shuffle for display
-  var shuffled = rods.slice().sort(function() { return Math.random() - 0.5; });
-  shuffled.forEach(function(r, i) {
-    var div = document.createElement("div");
-    div.className = "rod";
-    div.dataset.len = r.len;
-    div.style.width = (r.len * 20 + 10) + "px";
-    div.style.height = "44px";
-    div.style.background = r.color;
-    div.style.animationDelay = (i * 80) + "ms";
-    div.onclick = function() {
-      if (div.classList.contains("selected")) return;
-      var expected = state.rodOrder.length === 0 ? 1 : state.rodOrder[state.rodOrder.length - 1] + 1;
-      if (r.len === expected) {
-        div.classList.add("selected");
-        state.rodOrder.push(r.len);
-        say("Length " + r.len + "! Keep going!");
-        if (state.rodOrder.length === rods.length) {
-          document.getElementById("rods-msg").classList.add("show");
-          markActDone("rods");
-        }
+// ═══════════════════════════════════════════════
+// ACTIVITY 1 — Numbers 0 to 10
+// Match quantity dots to numeral
+// ═══════════════════════════════════════════════
+function renderNumbers(area){
+  var target = 1 + Math.floor(Math.random()*10);
+  var dots = "";
+  for(var i=0;i<target;i++) dots += "&#127813;";
+  area.innerHTML =
+    '<div class="instr">How many dots?</div>'+
+    '<div style="font-size:2.5rem;text-align:center;padding:16px;letter-spacing:4px;animation:popIn .3s ease">'+dots+'</div>'+
+    '<div class="num-cards" id="num-cards"></div>'+
+    '<div id="num-success"></div>';
+
+  STATE.numbers = { target: target };
+  var nc = document.getElementById("num-cards");
+  var nums = [0,1,2,3,4,5,6,7,8,9,10].sort(function(){return Math.random()-0.5;});
+  nums.forEach(function(n){
+    var btn = document.createElement("button");
+    btn.className = "nc";
+    btn.textContent = n;
+    btn.onclick = function(){
+      if(n === target){
+        btn.classList.add("active");
+        say("Yes! "+target+"!");
+        document.getElementById("num-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+target+' dots!</div><div class="success-sub">Quantity matches symbol</div></div>';
+        markDone("numbers");
+        confetti();
       } else {
-        say("Try the shortest first!");
+        btn.classList.add("wrong");
+        setTimeout(function(){ btn.classList.remove("wrong"); }, 600);
+        say("Not quite. Count again!");
       }
     };
-    container.appendChild(div);
+    nc.appendChild(btn);
   });
 }
 
-function resetRods() {
-  var area = document.getElementById("rods-area");
-  area.innerHTML = "";
-  state.rodOrder = [];
-  document.getElementById("rods-msg").classList.remove("show");
-  renderRods(area);
-}
+// ═══════════════════════════════════════════════
+// ACTIVITY 2 — Number Rods
+// Quantity as length — Montessori red/blue rods
+// ═══════════════════════════════════════════════
+function renderRods(area){
+  area.innerHTML =
+    '<div class="instr">Drag each rod to the correct number slot</div>'+
+    '<div style="display:flex;flex-direction:column;gap:8px;max-width:360px;margin:0 auto" id="rod-slots"></div>'+
+    '<div id="rod-pool" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:12px 0"></div>'+
+    '<div id="rod-success"></div>';
 
-// SPINDLE BOX
-function renderSpindle(area) {
-  var spindles = [
-    { num: 1 }, { num: 2 }, { num: 3 }, { num: 4 },
-    { num: 5 }, { num: 6 }, { num: 7 }, { num: 8 }, { num: 9 }
+  var rodData = [
+    {n:1,segs:1},{n:2,segs:2},{n:3,segs:3},{n:4,segs:4},{n:5,segs:5},
+    {n:6,segs:6},{n:7,segs:7},{n:8,segs:8},{n:9,segs:9},{n:10,segs:10}
   ];
-  area.innerHTML = '<div class="instruction">Drag the correct number of items into each slot!</div><div class="demo-area" id="spindle-area"></div><div class="success-msg" id="spindle-msg"><div class="emoji">🎉</div><div class="text">Perfect matching!</div></div>';
-  var container = document.getElementById("spindle-area");
-  state.spindleCounts = {};
-  // Draw slots
-  for (var i = 1; i <= 9; i++) {
+
+  // Shuffle for pool
+  var pool = rodData.slice().sort(function(){return Math.random()-0.5;});
+  STATE.rods = { placed: {} };
+
+  // Slots
+  var slotsEl = document.getElementById("rod-slots");
+  rodData.forEach(function(r){
+    var row = document.createElement("div");
+    row.style.cssText = "display:flex;align-items:center;gap:8px";
+    var label = document.createElement("div");
+    label.textContent = r.n;
+    label.style.cssText = "width:24px;text-align:center;font-family:var(--font-h);font-size:1rem;opacity:.6;flex-shrink:0";
     var slot = document.createElement("div");
-    slot.className = "spindle";
-    slot.id = "slot-" + i;
-    slot.dataset.target = i;
-    var lbl = document.createElement("div");
-    lbl.className = "spindle-count";
-    lbl.textContent = i;
-    slot.appendChild(lbl);
-    container.appendChild(slot);
-  }
-  // Draw items to drag
-  var items = [];
-  for (var j = 1; j <= 9; j++) {
-    for (var k = 0; k < j; k++) {
-      items.push(j);
-    }
-  }
-  // Shuffle items
-  items.sort(function() { return Math.random() - 0.5; });
-  var itemRow = document.createElement("div");
-  itemRow.style.cssText = "display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:12px 0";
-  itemRow.id = "spindle-items";
-  items.forEach(function(n) {
-    var itm = document.createElement("div");
-    itm.textContent = "●";
-    itm.style.cssText = "width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:1rem;cursor:grab;user-select:none;touch-action:none";
-    itm.dataset.num = n;
-    itm.addEventListener("pointerdown", function(e) {
-      e.preventDefault();
-      var el = itm;
-      var startX = e.clientX, startY = e.clientY;
-      var clone = el.cloneNode(true);
-      clone.style.cssText = "position:fixed;z-index:1000;pointer-events:none;left:" + startX + "px;top:" + startY + "px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:1rem";
-      document.body.appendChild(clone);
-      function onMove(e) {
-        clone.style.left = e.clientX + "px";
-        clone.style.top = e.clientY + "px";
-      }
-      function onUp(e) {
-        document.removeEventListener("pointermove", onMove);
-        document.removeEventListener("pointerup", onUp);
-        clone.remove();
-        var target = document.elementFromPoint(e.clientX, e.clientY);
-        if (target) {
-          var slot = target.closest(".spindle");
-          if (slot) {
-            var targetNum = parseInt(slot.dataset.target);
-            if (targetNum === parseInt(el.dataset.num)) {
-              var count = (state.spindleCounts[slot.id] || 0) + 1;
-              state.spindleCounts[slot.id] = count;
-              if (count <= targetNum) {
-                var dot = document.createElement("span");
-                dot.textContent = "●";
-                dot.style.cssText = "font-size:.9rem;color:#42A5F5;line-height:1";
-                slot.appendChild(dot);
-                say("Count " + count + " in slot " + targetNum);
-                if (count === targetNum) {
-                  slot.style.borderColor = "#4CAF50";
-                  slot.style.borderStyle = "solid";
-                  checkSpindleComplete();
-                }
-              }
-            } else {
-              say("This slot needs " + targetNum + " items!");
-            }
-          }
-        }
-      }
-      document.addEventListener("pointermove", onMove);
-      document.addEventListener("pointerup", onUp);
-    });
-    itemRow.appendChild(itm);
+    slot.id = "rslot-"+r.n;
+    slot.dataset.target = r.n;
+    slot.style.cssText = "flex:1;height:36px;background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.15);border-radius:6px;display:flex;align-items:flex-end;gap:2px;padding:2px;min-width:80px";
+    row.appendChild(label);
+    row.appendChild(slot);
+    slotsEl.appendChild(row);
   });
-  container.appendChild(itemRow);
+
+  // Pool rods
+  var poolEl = document.getElementById("rod-pool");
+  pool.forEach(function(r){
+    var rod = document.createElement("div");
+    var w = 40 + r.segs * 18;
+    rod.style.cssText = "height:36px;width:"+w+"px;background:linear-gradient(to right,#EF5350 0%,#EF5350 50%,#42A5F5 50%,#42A5F5 100%);border-radius:6px;cursor:grab;flex-shrink:0;transition:transform .15s";
+    rod.dataset.n = r.n;
+    rod.addEventListener("pointerdown", function(ev){
+      ev.preventDefault();
+      startDragRod(ev, rod, r.n);
+    });
+    poolEl.appendChild(rod);
+  });
 }
 
-function checkSpindleComplete() {
-  var complete = true;
-  for (var i = 1; i <= 9; i++) {
-    if ((state.spindleCounts["slot-" + i] || 0) !== i) {
-      complete = false;
-      break;
+function startDragRod(ev, rod, n){
+  var clone = rod.cloneNode(true);
+  clone.style.cssText = "position:fixed;z-index:999;pointer-events:none;height:36px;width:"+rod.offsetWidth+"px;background:linear-gradient(to right,#EF5350,#42A5F5);border-radius:6px;transform:translate(-50%,-50%) scale(1.05)";
+  clone.style.left = ev.clientX+"px";
+  clone.style.top = ev.clientY+"px";
+  document.body.appendChild(clone);
+  rod.style.opacity = "0.3";
+
+  function onMove(e){
+    clone.style.left = e.clientX+"px";
+    clone.style.top = e.clientY+"px";
+  }
+  function onUp(e){
+    document.removeEventListener("pointermove", onMove);
+    document.removeEventListener("pointerup", onUp);
+    clone.remove();
+    rod.style.opacity = "1";
+    var target = document.elementFromPoint(e.clientX, e.clientY);
+    var slot = target ? target.closest("[id^='rslot-']") : null;
+    if(slot && parseInt(slot.dataset.target) === n){
+      // Correct slot
+      slot.style.border = "none";
+      slot.style.background = "rgba(76,175,80,.15)";
+      rod.style.opacity = "0.3";
+      rod.style.pointerEvents = "none";
+      say("Rod "+n+" fits!");
+      STATE.rods.placed[n] = true;
+      if(Object.keys(STATE.rods.placed).length === 10){
+        document.getElementById("rod-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">All rods in place!</div><div class="success-sub">Quantity matches length!</div></div>';
+        markDone("rods");
+        confetti();
+      }
+    } else {
+      say("Try another slot!");
     }
   }
-  if (complete) {
-    document.getElementById("spindle-msg").classList.add("show");
-    markActDone("spindle");
-  }
+  document.addEventListener("pointermove", onMove);
+  document.addEventListener("pointerup", onUp);
 }
 
-// CARDS AND COUNTERS
-function renderCounters(area) {
-  area.innerHTML = '<div class="instruction">Arrange the number cards and counters. Odd numbers have one extra!</div><div class="demo-area"><div style="margin-bottom:12px;font-size:.78rem;opacity:.6;">Tap a number to see how many counters it needs</div><div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:16px;" id="counter-nums"></div><div class="counter-grid" id="counter-grid"></div></div><div class="success-msg" id="counter-msg"><div class="emoji">🎉</div><div class="text">Odd and even — you found the pattern!</div></div>';
-  var nums = document.getElementById("counter-nums");
-  var grid = document.getElementById("counter-grid");
-  state.selectedNum = null;
-  for (var i = 1; i <= 9; i++) {
-    (function(n) {
-      var btn = document.createElement("button");
-      btn.className = "number-card";
-      btn.textContent = n;
-      btn.onclick = function() {
-        document.querySelectorAll(".number-card").forEach(function(b) { b.classList.remove("selected"); });
-        btn.classList.add("selected");
-        state.selectedNum = n;
-        renderCounterDots(n);
-        if (n % 2 === 0) {
-          say(n + " is even — it pairs perfectly!");
-        } else {
-          say(n + " is odd — one is left without a partner!");
+// ═══════════════════════════════════════════════
+// ACTIVITY 3 — Spindle Box
+// Montessori spindle box — each numeral gets exact count
+// ═══════════════════════════════════════════════
+function renderSpindle(area){
+  area.innerHTML =
+    '<div class="instr">Put the correct number of items in each slot</div>'+
+    '<div id="spindle-slots" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:8px 0"></div>'+
+    '<div id="spindle-pool" style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:8px;background:rgba(255,255,255,.04);border-radius:12px;border:1px solid rgba(255,255,255,.06);margin:8px 0"></div>'+
+    '<div id="spindle-success"></div>';
+
+  STATE.spindle = { counts: {}, done: false };
+
+  var slotsEl = document.getElementById("spindle-slots");
+  var poolEl = document.getElementById("spindle-pool");
+
+  // Slots 1-9
+  for(var i=1;i<=9;i++){
+    (function(n){
+      var box = document.createElement("div");
+      box.id = "sslot-"+n;
+      box.style.cssText = "width:58px;min-height:58px;background:rgba(255,255,255,.05);border:1px dashed rgba(255,255,255,.15);border-radius:10px;display:flex;flex-direction:column;align-items:center;padding:4px;gap:2px";
+      var lbl = document.createElement("div");
+      lbl.textContent = n;
+      lbl.style.cssText = "font-family:var(--font-h);font-size:.85rem;opacity:.5";
+      var cnt = document.createElement("div");
+      cnt.id = "scnt-"+n;
+      cnt.style.cssText = "font-family:var(--font-h);font-size:.75rem;color:var(--blue)";
+      cnt.textContent = "0/"+n;
+      box.appendChild(lbl);
+      box.appendChild(cnt);
+      box.addEventListener("dragover", function(e){e.preventDefault();box.style.borderColor="var(--gold)";});
+      box.addEventListener("dragleave", function(){box.style.borderColor="";});
+      box.addEventListener("drop", function(e){
+        e.preventDefault();
+        box.style.borderColor="";
+        if(STATE.spindle.done) return;
+        var item = e.dataTransfer.getData("text/plain");
+        if(!item) return;
+        var val = parseInt(item);
+        var current = STATE.spindle.counts[n] || 0;
+        if(current >= n) { say("Slot "+n+" is already full!"); return; }
+        // Check if this item belongs to this slot (val === n)
+        if(val !== n){ say("Slot "+n+" needs "+n+" items!"); return; }
+        STATE.spindle.counts[n] = current + 1;
+        var dot = document.createElement("div");
+        dot.textContent = "●";
+        dot.style.cssText = "font-size:.85rem;color:var(--blue);animation:popIn .2s ease";
+        box.insertBefore(dot, box.children[1]);
+        document.getElementById("scnt-"+n).textContent = STATE.spindle.counts[n]+"/"+n;
+        if(STATE.spindle.counts[n] === n){
+          box.style.borderColor = "var(--green)";
+          box.style.borderStyle = "solid";
+          box.style.background = "rgba(76,175,80,.08)";
         }
-      };
-      nums.appendChild(btn);
+        checkSpindleDone();
+      });
+      slotsEl.appendChild(box);
     })(i);
   }
-  function renderCounterDots(n) {
-    grid.innerHTML = "";
-    for (var j = 0; j < n; j++) {
-      var c = document.createElement("div");
-      c.className = "counter";
-      c.textContent = "●";
-      c.style.background = j === n - 1 && n % 2 !== 0 ? "rgba(239,83,80,.3)" : "rgba(33,150,243,.3)";
-      c.style.color = j === n - 1 && n % 2 !== 0 ? "#EF5350" : "#42A5F5";
-      c.style.animation = "dotDrop 0.3s ease-out backwards";
-      c.style.animationDelay = (j * 50) + "ms";
-      c.onclick = function() {
-        c.style.boxShadow = "0 0 0 3px #FFD700";
-        if (state.selectedNum === 9) {
-          document.getElementById("counter-msg").classList.add("show");
-          markActDone("counters");
-        }
-      };
-      grid.appendChild(c);
-    }
-  }
-}
 
-// TEEN BOARD
-function renderTeen(area) {
-  var teens = [11, 12, 13, 14, 15, 16, 17, 18, 19];
-  area.innerHTML = '<div class="instruction">Tap each teen number. 10 (blue) + 1-9 (red) = teen number!</div><div class="demo-area"><div class="teen-row" id="teen-row"></div></div><div class="success-msg" id="teen-msg"><div class="emoji">🎉</div><div class="text">You understand teen numbers!</div></div>';
-  var row = document.getElementById("teen-row");
-  state.teensClicked = 0;
-  teens.forEach(function(n) {
-    (function(num) {
-      var div = document.createElement("div");
-      div.className = "teen-num";
-      div.id = "teen-" + num;
-      var tens = document.createElement("div");
-      tens.className = "teen-digit blue";
-      tens.textContent = "10";
-      var ones = document.createElement("div");
-      ones.className = "teen-digit red";
-      ones.textContent = (num % 10);
-      div.appendChild(tens);
-      div.appendChild(ones);
-      div.style.cursor = "pointer";
-      div.onclick = function() {
-        if (div.classList.contains("done")) return;
-        div.classList.add("done");
-        tens.classList.add("done");
-        ones.classList.add("done");
-        state.teensClicked++;
-        say(num + " = 10 + " + (num % 10) + "!");
-        if (state.teensClicked >= teens.length) {
-          document.getElementById("teen-msg").classList.add("show");
-          markActDone("teen");
-        }
-      };
-      row.appendChild(div);
-    })(n);
+  // Pool items: 1×"1", 2×"2", ..., 9×"9"
+  var items = [];
+  for(var j=1;j<=9;j++) for(var k=0;k<j;k++) items.push(j);
+  items.sort(function(){return Math.random()-0.5;});
+  items.forEach(function(v){
+    var itm = document.createElement("div");
+    itm.textContent = "●";
+    itm.draggable = true;
+    itm.style.cssText = "width:28px;height:28px;border-radius:50%;background:rgba(66,165,245,.2);border:1px solid rgba(66,165,245,.3);display:flex;align-items:center;justify-content:center;font-size:.9rem;color:var(--blue);cursor:grab";
+    itm.addEventListener("dragstart", function(e){ e.dataTransfer.setData("text/plain", String(v)); });
+    poolEl.appendChild(itm);
   });
 }
 
-// TENS BOARD
-function renderTens(area) {
-  area.innerHTML = '<div class="instruction">Build tens! Select a tens digit, then a ones digit.</div><div style="margin-bottom:14px;"><div style="font-size:.78rem;opacity:.6;margin-bottom:8px;">Step 1: Choose the tens digit</div><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;" id="tens-digits"></div></div><div style="margin-bottom:14px;"><div style="font-size:.78rem;opacity:.6;margin-bottom:8px;">Step 2: Choose the ones digit</div><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;" id="ones-digits"></div></div><div class="demo-area"><div style="font-family:var(--font-h);font-size:2rem;color:var(--gold);" id="tens-result">?</div></div><div class="success-msg" id="tens-msg"><div class="emoji">🎉</div><div class="text">You built a two-digit number!</div></div>';
-  var tensDig = document.getElementById("tens-digits");
-  var onesDig = document.getElementById("ones-digits");
-  state.tensDigit = null;
-  state.onesDigit = null;
-  for (var t = 1; t <= 9; t++) {
-    (function(tv) {
-      var btn = document.createElement("button");
-      btn.className = "number-card";
-      btn.textContent = tv + "0";
-      btn.onclick = function() {
-        document.querySelectorAll("#tens-digits .number-card").forEach(function(b) { b.classList.remove("selected"); });
-        btn.classList.add("selected");
-        state.tensDigit = tv;
-        updateTensResult();
-      };
-      tensDig.appendChild(btn);
-    })(t);
-  }
-  for (var o = 0; o <= 9; o++) {
-    (function(ov) {
-      var btn = document.createElement("button");
-      btn.className = "number-card";
-      btn.textContent = ov;
-      btn.onclick = function() {
-        document.querySelectorAll("#ones-digits .number-card").forEach(function(b) { b.classList.remove("selected"); });
-        btn.classList.add("selected");
-        state.onesDigit = ov;
-        updateTensResult();
-      };
-      onesDig.appendChild(btn);
-    })(o);
+function checkSpindleDone(){
+  if(STATE.spindle.done) return;
+  var all = true;
+  for(var i=1;i<=9;i++){ if((STATE.spindle.counts[i]||0) !== i){ all = false; break; } }
+  if(all){
+    STATE.spindle.done = true;
+    document.getElementById("spindle-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Perfect! Every slot has the right number!</div><div class="success-sub">One quantity — one symbol. That is the spindle box!</div></div>';
+    markDone("spindle");
+    confetti();
   }
 }
 
-function updateTensResult() {
-  var el = document.getElementById("tens-result");
-  if (!el) return;
-  if (state.tensDigit !== null && state.onesDigit !== null) {
-    var num = state.tensDigit * 10 + state.onesDigit;
-    el.textContent = state.tensDigit + "0 + " + state.onesDigit + " = " + num;
-    document.getElementById("tens-msg").classList.add("show");
-    markActDone("tens");
-    say("You built the number " + num + "!");
+// ═══════════════════════════════════════════════
+// ACTIVITY 4 — Odd and Even Counters
+// Montessori cards and counters — odd has one extra
+// ═══════════════════════════════════════════════
+function renderCounters(area){
+  var n = 1 + Math.floor(Math.random()*9);
+  var isOdd = n % 2 !== 0;
+  area.innerHTML =
+    '<div class="instr">Arrange '+n+' counters. How do they look?</div>'+
+    '<div style="font-size:.8rem;text-align:center;opacity:.5;margin-bottom:8px">Tap "Show" to arrange the counters</div>'+
+    '<div id="counter-arr" style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;max-width:280px;margin:0 auto;padding:12px"></div>'+
+    '<div style="text-align:center;margin:8px 0">'+
+      '<button class="btn btn-gold" onclick="showCountersArrange('+n+')">Show</button>'+
+    '</div>'+
+    '<div class="instr">Is the number odd or even?</div>'+
+    '<div class="choices" id="odd-even-choices" style="opacity:.4;pointer-events:none" class="disabled"></div>'+
+    '<div id="counter-success"></div>';
+
+  STATE.counters = { n: n, shown: false };
+  var grid = document.getElementById("counter-arr");
+  for(var i=0;i<n;i++){
+    var d = document.createElement("div");
+    d.className = "cdot";
+    d.textContent = "&#127813;";
+    d.id = "cd-"+i;
+    d.style.opacity = "0";
+    grid.appendChild(d);
   }
 }
 
-function rabbitySpeak() {
-  var msgs = ["Math is fun!", "Numbers are everywhere!", "Keep going!", "You can do it!"];
-  say(msgs[Math.floor(Math.random() * msgs.length)]);
+function showCountersArrange(n){
+  var grid = document.getElementById("counter-arr");
+  for(var i=0;i<n;i++){
+    var d = document.getElementById("cd-"+i);
+    if(!d) continue;
+    setTimeout(function(d,i){
+      d.style.opacity = "1";
+    }, i * 80, d, i);
+  }
+  STATE.counters.shown = true;
+  // Reveal choices
+  var choices = document.getElementById("odd-even-choices");
+  choices.style.opacity = "1";
+  choices.style.pointerEvents = "auto";
+  var opts = ["Odd","Even"].sort(function(){return Math.random()-0.5;});
+  opts.forEach(function(o){
+    var btn = document.createElement("button");
+    btn.className = "choice";
+    btn.textContent = o;
+    btn.style.cssText = "min-width:100px;font-size:1.1rem";
+    btn.onclick = function(){
+      var correct = (n % 2 !== 0 && o === "Odd") || (n % 2 === 0 && o === "Even");
+      if(correct){
+        btn.classList.add("right");
+        var label = o === "Odd" ? "One left over — odd!" : "Perfect pairs — even!";
+        say(label);
+        document.getElementById("counter-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+label+'</div><div class="success-sub">Odd: one extra. Even: perfect pairs.</div></div>';
+        markDone("counters");
+        confetti();
+      } else {
+        btn.classList.add("wrong");
+        btn.disabled = true;
+        say("Not quite! Look at the counters again.");
+      }
+    };
+    choices.appendChild(btn);
+  });
 }
 
-function say(text) {
-  var b = document.getElementById("rabbity-bubble");
-  if (b) { b.textContent = "🐰 " + text; b.classList.add("show"); }
-  if ("speechSynthesis" in window) {
+// ═══════════════════════════════════════════════
+// ACTIVITY 5 — Teen Numbers
+// 10 and some more — visual ten-bar + units
+// ═══════════════════════════════════════════════
+function renderTeen(area){
+  var teen = 11 + Math.floor(Math.random()*8); // 11-18
+  var tens = Math.floor(teen/10);
+  var units = teen % 10;
+  area.innerHTML =
+    '<div class="instr instr-big">What number is this?</div>'+
+    '<div style="display:flex;flex-direction:column;align-items:center;gap:8px;margin:12px 0">'+
+      '<div style="font-family:var(--font-h);font-size:1.5rem;color:var(--purple)">10 + '+units+' = ?</div>'+
+      '<div style="display:flex;align-items:center;gap:8px">'+
+        '<div style="display:flex">'+
+          Array(tens).fill('<div style="width:40px;height:14px;background:#AB47BC;border-radius:3px;margin-bottom:2px"></div>').join('')+
+        '</div>'+
+        '<div style="font-family:var(--font-h);font-size:1.2rem;color:var(--gold)">+</div>'+
+        '<div style="display:flex">'+
+          Array(units).fill('<div style="width:14px;height:14px;background:#FFD700;border-radius:2px;margin:0 1px"></div>').join('')+
+        '</div>'+
+      '</div>'+
+    '</div>'+
+    '<div class="num-cards" id="teen-choices"></div>'+
+    '<div id="teen-success"></div>';
+
+  var choices = [teen];
+  while(choices.length < 4){
+    var w = teen + (Math.floor(Math.random()*6)-3)*1;
+    if(w > 10 && w <= 19 && !choices.includes(w)) choices.push(w);
+  }
+  choices.sort(function(){return Math.random()-0.5;});
+
+  STATE.teen = { teen: teen, answered: false };
+  var nc = document.getElementById("teen-choices");
+  choices.forEach(function(n){
+    var btn = document.createElement("button");
+    btn.className = "nc";
+    btn.textContent = n;
+    btn.onclick = function(){
+      if(n === teen){
+        btn.classList.add("active");
+        STATE.teen.answered = true;
+        say("Yes! "+teen+" is ten and "+units+" more!");
+        document.getElementById("teen-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">"+teen+" = 10 + "+units+"!</div><div class="success-sub">Teen numbers are ten and some more!</div></div>';
+        markDone("teen");
+        confetti();
+      } else {
+        btn.classList.add("wrong");
+        setTimeout(function(){ btn.classList.remove("wrong"); }, 600);
+        say("Count the tens and units again!");
+      }
+    };
+    nc.appendChild(btn);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// ACTIVITY 6 — Tens
+// Groups of ten — visual ten-bars
+// ═══════════════════════════════════════════════
+function renderTens(area){
+  var tens = 2 + Math.floor(Math.random()*8); // 2-9 tens
+  var total = tens * 10;
+  var units = tens; // how many ten-bars shown
+  area.innerHTML =
+    '<div class="instr instr-big">How many tens do you see?</div>'+
+    '<div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:12px 0" id="tens-display"></div>'+
+    '<div class="num-cards" id="tens-choices"></div>'+
+    '<div id="tens-success"></div>';
+
+  var disp = document.getElementById("tens-display");
+  for(var i=0;i<units;i++){
+    var bar = document.createElement("div");
+    bar.style.cssText = "width:80px;height:18px;background:linear-gradient(to right,#FF7043,#FF8A65);border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:.6rem;color:#fff;animation:popIn .2s ease;animation-delay:"+(i*0.06)+"s";
+    bar.textContent = "10";
+    disp.appendChild(bar);
+  }
+
+  var choices = [tens];
+  while(choices.length < 4){
+    var w = tens + (Math.floor(Math.random()*5)-2);
+    if(w >= 1 && w <= 10 && !choices.includes(w)) choices.push(w);
+  }
+  choices.sort(function(){return Math.random()-0.5;});
+
+  STATE.tens = { answered: false };
+  var nc = document.getElementById("tens-choices");
+  choices.forEach(function(n){
+    var btn = document.createElement("button");
+    btn.className = "nc";
+    btn.textContent = n;
+    btn.onclick = function(){
+      if(n === tens){
+        btn.classList.add("active");
+        STATE.tens.answered = true;
+        say("Yes! "+total+"!");
+        document.getElementById("tens-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">"+units+" tens = "+total+"!</div><div class="success-sub">Every ten-bar is worth 10!</div></div>';
+        markDone("tens");
+        confetti();
+      } else {
+        btn.classList.add("wrong");
+        setTimeout(function(){ btn.classList.remove("wrong"); }, 600);
+        say("Count the ten-bars again!");
+      }
+    };
+    nc.appendChild(btn);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// ACTIVITY 7 — Decimal System
+// Unit, Ten, Hundred, Thousand — Montessori golden beads
+// ═══════════════════════════════════════════════
+function renderDecimal(area){
+  area.innerHTML =
+    '<div class="instr">Which place is the yellow dot in?</div>'+
+    '<div style="display:flex;justify-content:center;gap:24px;margin:16px 0;flex-wrap:wrap">'+
+      '<div class="place-col"><div class="place-label">Unit</div><div class="place-unit" id="du-1"><div class="unit-dot"></div></div></div>'+
+      '<div class="place-col"><div class="place-label">Ten</div><div class="place-unit" id="du-10"><div class="unit-dot"></div><div class="unit-dot"></div><div class="unit-dot"></div></div></div>'+
+      '<div class="place-col"><div class="place-label">Hundred</div><div style="width:70px;height:70px;background:rgba(255,215,0,.12);border:2px solid var(--gold);border-radius:8px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;margin:0 auto;gap:2px;padding:4px"><div class="unit-dot" style="margin:1px"></div></div></div>'+
+      '<div class="place-col"><div class="place-label">Thousand</div><div class="thousand-cube" id="du-1000"><div class="unit-dot"></div></div></div>'+
+    '</div>'+
+    '<div id="decimal-inst" style="text-align:center;font-family:var(--font-h);font-size:1.8rem;margin:8px 0;color:var(--gold)">?</div>'+
+    '<div class="choices" id="decimal-choices"></div>'+
+    '<div id="decimal-success"></div>';
+
+  var places = [
+    {id:"du-1", label:"Unit", value:"unit"},
+    {id:"du-10", label:"Ten", value:"ten"},
+    {id:"du-1000", label:"Thousand", value:"thousand"}
+  ];
+  var target = places[Math.floor(Math.random()*places.length)];
+
+  STATE.decimal = { correct: target.value };
+
+  document.getElementById("decimal-inst").textContent = "Where is the yellow dot?";
+  var els = {};
+  places.forEach(function(p){ els[p.value] = document.getElementById(p.id); });
+
+  ["unit","ten","hundred","thousand"].forEach(function(p){
+    var btn = document.createElement("button");
+    btn.className = "choice";
+    btn.textContent = p.charAt(0).toUpperCase()+p.slice(1);
+    btn.style.fontSize = "1rem";
+    btn.onclick = function(){
+      if(p === target.value){
+        btn.classList.add("right");
+        say("Yes! The yellow dot is in the "+target.label+" place!");
+        if(els[target.value]){
+          els[target.value].style.borderColor = "var(--green)";
+          els[target.value].style.boxShadow = "0 0 0 3px rgba(76,175,80,.3)";
+        }
+        document.getElementById("decimal-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+target.label+' place!</div><div class="success-sub">1 — Unit, 10 — Ten, 100 — Hundred, 1000 — Thousand</div></div>';
+        markDone("decimal");
+        confetti();
+      } else {
+        btn.classList.add("wrong");
+        btn.disabled = true;
+        say("Look at where the yellow dot is...");
+      }
+    };
+    document.getElementById("decimal-choices").appendChild(btn);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// ACTIVITY 8 & 9 — Addition and Subtraction
+// Story first, then manipulate quantities
+// ═══════════════════════════════════════════════
+function renderAddSub(area, type){
+  var a = 1 + Math.floor(Math.random()*8);
+  var b = 1 + Math.floor(Math.random*8);
+  if(type === "sub"){ a = a + b; } // ensure positive result
+  var opsym = type === "add" ? "+" : "\u2212";
+  var story = type === "add"
+    ? "You have "+a+" apples. You get "+b+" more apples! How many now?"
+    : "You have "+a+" apples. You eat "+b+" apples! How many left?";
+
+  area.innerHTML =
+    '<div class="instr instr-big">'+story+'</div>'+
+    '<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:12px 0">'+
+      '<div style="text-align:center">'+
+        '<div style="font-size:2rem;margin-bottom:4px">'+a+'</div>'+
+        '<div style="font-size:1rem;opacity:.5">apples</div>'+
+      '</div>'+
+      '<div style="display:flex;align-items:center;font-size:1.8rem;color:var(--gold);font-family:var(--font-h)">'+opsym+'</div>'+
+      '<div style="text-align:center">'+
+        '<div style="font-size:2rem;margin-bottom:4px">'+b+'</div>'+
+        '<div style="font-size:1rem;opacity:.5">apples</div>'+
+      '</div>'+
+      '<div style="display:flex;align-items:center;font-size:1.8rem;color:var(--gold);font-family:var(--font-h)">=</div>'+
+      '<div style="text-align:center">'+
+        '<div style="font-size:2rem;margin-bottom:4px;color:var(--gold)">?</div>'+
+        '<div style="font-size:1rem;opacity:.5">apples</div>'+
+      '</div>'+
+    '</div>'+
+    '<div class="choices" id="ops-choices"></div>'+
+    '<div id="ops-success"></div>';
+
+  var answer = type === "add" ? a+b : a-b;
+  var choices = [answer];
+  while(choices.length < 4){
+    var w = answer + (Math.floor(Math.random()*5)-2);
+    if(w >= 0 && !choices.includes(w)) choices.push(w);
+  }
+  choices.sort(function(){return Math.random()-0.5;});
+
+  STATE.ops = { answered: false };
+  var oc = document.getElementById("ops-choices");
+  choices.forEach(function(n){
+    var btn = document.createElement("button");
+    btn.className = "choice";
+    btn.textContent = n;
+    btn.onclick = function(){
+      if(n === answer){
+        btn.classList.add("right");
+        STATE.ops.answered = true;
+        var msg = type === "add" ? "Combined!" : "Taken away!";
+        say(msg+" "+answer+"!");
+        document.getElementById("ops-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+answer+' apples!</div><div class="success-sub">'+(type==="add"?"Combined quantities.":"Removed from the whole.")+'</div></div>';
+        markDone(type);
+        confetti();
+      } else {
+        btn.classList.add("wrong");
+        btn.disabled = true;
+        say("Count again!");
+      }
+    };
+    oc.appendChild(btn);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// ACTIVITY 10 — Multiplication
+// Equal groups → skip counting
+// ═══════════════════════════════════════════════
+function renderMul(area){
+  var groups = 2 + Math.floor(Math.random()*3); // 2-4 groups
+  var size = 2 + Math.floor(Math.random()*4); // 2-5 each
+  var total = groups * size;
+  var objects = ["&#11088;","&#127813;","&#127800;","&#128014;"][Math.floor(Math.random()*4)];
+
+  area.innerHTML =
+    '<div class="instr instr-big">'+groups+' equal groups of '+size+'!</div>'+
+    '<div style="font-size:.8rem;text-align:center;opacity:.5;margin-bottom:8px">How many in total?</div>'+
+    '<div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:12px 0" id="mul-groups"></div>'+
+    '<div class="num-cards" id="mul-choices"></div>'+
+    '<div id="mul-success"></div>';
+
+  var groupsEl = document.getElementById("mul-groups");
+  for(var g=0;g<groups;g++){
+    var grp = document.createElement("div");
+    grp.style.cssText = "background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:8px 12px;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;min-width:100px";
+    for(var s=0;s<size;s++){
+      var o = document.createElement("span");
+      o.textContent = objects;
+      o.style.cssText = "font-size:1.5rem;animation:popIn .2s ease;animation-delay:"+(g*size+s)*0.04+"s";
+      grp.appendChild(o);
+    }
+    groupsEl.appendChild(grp);
+  }
+
+  var choices = [total];
+  while(choices.length < 4){
+    var w = total + (Math.floor(Math.random()*5)-2)*1;
+    if(w > 0 && !choices.includes(w)) choices.push(w);
+  }
+  choices.sort(function(){return Math.random()-0.5;});
+
+  STATE.mul = { answered: false };
+  var mc = document.getElementById("mul-choices");
+  choices.forEach(function(n){
+    var btn = document.createElement("button");
+    btn.className = "nc";
+    btn.textContent = n;
+    btn.onclick = function(){
+      if(n === total){
+        btn.classList.add("active");
+        STATE.mul.answered = true;
+        say("Yes! Equal groups make "+total+"!");
+        document.getElementById("mul-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+groups+' groups of '+size+' = '+total+'!</div><div class="success-sub">Equal groups — that is multiplication!</div></div>';
+        markDone("mul");
+        confetti();
+      } else {
+        btn.classList.add("wrong");
+        setTimeout(function(){ btn.classList.remove("wrong"); }, 600);
+        say("Count all the objects together!");
+      }
+    };
+    mc.appendChild(btn);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// ACTIVITY 11 — Skip Counting
+// Equal jumps — already rebuilt separately
+// Redirects to skip-counting.html
+// ═══════════════════════════════════════════════
+function renderSkip(area){
+  area.innerHTML =
+    '<div class="instr instr-big">Piko loves skip counting!</div>'+
+    '<div style="text-align:center;padding:20px">'+
+      '<div style="font-size:4rem;margin-bottom:8px">&#128279;</div>'+
+      '<div style="font-family:var(--font-h);font-size:1.1rem;color:var(--gold)">Jump by equal amounts</div>'+
+      '<div style="font-size:.82rem;opacity:.5;margin-top:4px">Discover the pattern in equal jumps</div>'+
+    '</div>'+
+    '<button class="btn btn-gold" onclick="openSkipCounting()">Open Skip Counting</button>'+
+    '<div id="skip-success"></div>';
+}
+
+function openSkipCounting(){
+  window.location.href = "skip-counting.html";
+}
+
+// ═══════════════════════════════════════════════
+// ACTIVITY 12 — Fractions
+// Whole, half, third, quarter
+// ═══════════════════════════════════════════════
+function renderFrac(area){
+  var fracs = [
+    {name:"Half", denom:2, desc:"2 equal parts"},
+    {name:"Third", denom:3, desc:"3 equal parts"},
+    {name:"Quarter", denom:4, desc:"4 equal parts"},
+  ];
+  var f = fracs[Math.floor(Math.random()*fracs.length)];
+  var slices = [];
+  for(var i=0;i<f.denom;i++) slices.push(i < 1 ? 1 : 0);
+
+  area.innerHTML =
+    '<div class="instr instr-big">What fraction is colored?</div>'+
+    '<div style="text-align:center;margin:16px 0">'+
+      '<div style="position:relative;width:110px;height:110px;margin:0 auto;border-radius:50%;border:3px solid rgba(255,255,255,.2);overflow:hidden;background:rgba(255,255,255,.05)">'+
+        '<div id="frac-fill" style="position:absolute;inset:0;background:rgba(66,165,245,.4)"></div>'+
+        '<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:2.5rem;color:var(--cream)">?</div>'+
+      '</div>'+
+    '</div>'+
+    '<div class="choices" id="frac-choices"></div>'+
+    '<div id="frac-success"></div>';
+
+  var choices = [f.name];
+  var others = fracs.filter(function(x){return x.name!==f.name;}).map(function(x){return x.name;});
+  choices = choices.concat(others).sort(function(){return Math.random()-0.5;});
+
+  STATE.frac = { answered: false };
+  var fc = document.getElementById("frac-choices");
+  choices.forEach(function(n){
+    var btn = document.createElement("button");
+    btn.className = "choice";
+    btn.textContent = n;
+    btn.style.fontSize = "1rem";
+    btn.onclick = function(){
+      if(n === f.name){
+        btn.classList.add("right");
+        STATE.frac.answered = true;
+        say("Yes! One "+n.toLowerCase()+"!");
+        document.getElementById("frac-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">One '+f.name.toLowerCase()+'!</div><div class="success-sub">'+f.desc+'. '+n+' of the whole.</div></div>';
+        markDone("frac");
+        confetti();
+      } else {
+        btn.classList.add("wrong");
+        btn.disabled = true;
+        say("Count how many equal parts...");
+      }
+    };
+    fc.appendChild(btn);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// ACTIVITY 13 — Geometry
+// Shape names, sides, matching
+// ═══════════════════════════════════════════════
+function renderGeo(area){
+  var shapes = [
+    {name:"Triangle", sides:3, svg:'<polygon points="24,4 4,44 44,44" fill="none" stroke="currentColor" stroke-width="2"/>'},
+    {name:"Square", sides:4, svg:'<rect x="4" y="4" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2"/>'},
+    {name:"Pentagon", sides:5, svg:'<polygon points="24,4 44,16 38,42 10,42 4,16" fill="none" stroke="currentColor" stroke-width="2"/>'},
+    {name:"Hexagon", sides:6, svg:'<polygon points="24,4 42,14 42,34 24,44 6,34 6,14" fill="none" stroke="currentColor" stroke-width="2"/>'},
+    {name:"Circle", sides:0, svg:'<circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2"/>'},
+  ];
+
+  var target = shapes[Math.floor(Math.random()*shapes.length)];
+  // Scramble order
+  var ordered = shapes.slice().sort(function(){return Math.random()-0.5;});
+
+  area.innerHTML =
+    '<div class="instr instr-big">Which shape has '+target.sides+' sides?</div>'+
+    '<div style="text-align:center;padding:12px 0">'+
+      '<svg viewBox="0 0 48 48" style="width:80px;height:80px;color:var(--gold)">'+target.svg.replace('currentColor','#FFD700')+'</svg>'+
+      '<div style="font-family:var(--font-h);font-size:1rem;margin-top:4px">?</div>'+
+    '</div>'+
+    '<div class="choices" id="geo-choices"></div>'+
+    '<div id="geo-success"></div>';
+
+  STATE.geo = { answered: false };
+  var gc = document.getElementById("geo-choices");
+  ordered.forEach(function(s){
+    var btn = document.createElement("button");
+    btn.className = "choice";
+    btn.style.cssText = "flex-direction:column;gap:4px;min-width:80px;min-height:80px";
+    btn.innerHTML = '<svg viewBox="0 0 48 48" style="width:36px;height:36px;color:var(--cream)">'+s.svg+'</svg><span style="font-size:.75rem;font-family:var(--font-b)">'+s.name+'</span>';
+    btn.onclick = function(){
+      if(s.name === target.name){
+        btn.classList.add("right");
+        STATE.geo.answered = true;
+        var sidesMsg = target.sides > 0 ? target.sides+" sides!" : "No sides — round!";
+        say("Yes! "+target.name+"! "+sidesMsg);
+        document.getElementById("geo-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+target.name+'!</div><div class="success-sub">'+(target.sides>0?"Has "+target.sides+" sides.":"A circle has no straight sides.")+'</div></div>';
+        markDone("geo");
+        confetti();
+      } else {
+        btn.classList.add("wrong");
+        btn.disabled = true;
+        say("Try counting the sides!");
+      }
+    };
+    gc.appendChild(btn);
+  });
+}
+
+// ─────────────────────────────────────────────
+// TTS + CONFETTI
+// ─────────────────────────────────────────────
+function say(text){
+  var b = document.getElementById("bubble");
+  if(b){ b.textContent = "\uD83D\uDC3B " + text; b.classList.add("on"); }
+  if("speechSynthesis" in window){
     speechSynthesis.cancel();
     var u = new SpeechSynthesisUtterance(text);
     u.lang = "en-US";
     u.rate = 0.85;
     speechSynthesis.speak(u);
   }
-  setTimeout(function() { if (b) b.classList.remove("show"); }, 3500);
+  setTimeout(function(){ if(b) b.classList.remove("on"); }, 3500);
 }
 
-function confetti() {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  var c = document.getElementById("confetti-container");
-  if (!c) return;
+function pikoSpeak(){
+  var msgs = [
+    "Math is about understanding quantity, not just memorizing!",
+    "Every number has a story!",
+    "Shapes are everywhere — can you find them?",
+    "Equal groups make patterns!",
+    "Quantity before symbol — always!",
+  ];
+  say(msgs[Math.floor(Math.random()*msgs.length)]);
+}
+
+function confetti(){
+  var c = document.getElementById("confetti");
+  if(!c) return;
   c.innerHTML = "";
-  var colors = ["#FFD700", "#EF5350", "#66BB6A", "#42A5F5", "#AB47BC", "#FF9800"];
-  for (var i = 0; i < 40; i++) {
+  var colors = ["#FFD700","#EF5350","#66BB6A","#42A5F5","#AB47BC","#FF9800"];
+  for(var i=0;i<35;i++){
     var p = document.createElement("div");
-    p.className = "confetti-piece";
-    p.style.left = Math.random() * 100 + "%";
-    p.style.background = colors[Math.floor(Math.random() * colors.length)];
-    p.style.animationDelay = (Math.random() * 0.8) + "s";
+    p.className = "conf";
+    p.style.left = Math.random()*100+"%";
+    p.style.background = colors[Math.floor(Math.random()*colors.length)];
+    p.style.animationDelay = (Math.random()*0.7)+"s";
     p.style.animationDuration = "2.5s";
     c.appendChild(p);
   }
-  setTimeout(function() { c.innerHTML = ""; }, 3500);
+  setTimeout(function(){ c.innerHTML = ""; }, 3500);
 }
 
-function toggleParent() {
-  var p = document.getElementById("parent-panel");
-  if (!p) return;
-  p.classList.toggle("open");
-  if (p.classList.contains("open")) renderParentPanel();
+// ─────────────────────────────────────────────
+// PARENT PANEL
+// ─────────────────────────────────────────────
+function togglePanel(){
+  var p = document.getElementById("ppanel");
+  if(!p) return;
+  p.classList.toggle("on");
+  if(p.classList.contains("on")) renderPanel();
 }
 
-function closeParent() {
-  var p = document.getElementById("parent-panel");
-  if (p) p.classList.remove("open");
-}
-
-function renderParentPanel() {
-  var c = document.getElementById("parent-content");
-  if (!c) return;
-  c.innerHTML = "";
-  ACTIVITIES.forEach(function(a, i) {
-    var done = !!state.progress[a.id];
+function renderPanel(){
+  var c = document.getElementById("pcontent");
+  if(!c) return;
+  var prog = lg("math-prog", {});
+  c.innerHTML = '<div style="font-size:.78rem;opacity:.6;margin-bottom:14px">Math Garden — Montessori progression</div>';
+  ACTIVITIES.forEach(function(a){
+    var done = !!prog["act-"+a.id];
     var pct = done ? 100 : 0;
-    c.innerHTML += "<div class=\"panel-row\"><div class=\"panel-row-label\">" + a.emoji + " " + a.name + " <span>" + pct + "%</span></div><div class=\"panel-bar\"><div class=\"panel-bar-fill\" style=\"width:" + pct + "%;background:#1B5E20;\"></div></div></div>";
+    c.innerHTML += '<div class="prow"><div class="prow-label"><span style="font-size:.85rem">'+a.emoji+' '+a.name+'</span> <span style="font-size:.75rem;opacity:.6">'+(done?"Done":"Not started")+'</span></div><div class="pbar"><div class="pbar-fill" style="width:'+pct+'%;background:'+a.color+';"></div></div></div>';
   });
+  c.innerHTML += '<div style="margin-top:14px;font-size:.78rem;opacity:.6;line-height:1.6">'+
+    '<b>Montessori progression:</b><br>'+
+    'Quantity &rarr; Symbol &rarr; Decimal System &rarr; Operations &rarr; Patterns<br><br>'+
+    '<b>Real-world connections to try:</b><br>'+
+    '&bull; Count objects during daily routines<br>'+
+    '&bull; Sort laundry by type/size<br>'+
+    '&bull; Find shapes in the environment<br>'+
+    '&bull; Pour water to understand volume'+
+    '</div>';
 }
 
-document.addEventListener("keydown", function(e) {
-  if (e.key === "Escape") { closeParent(); goBack(); }
+// ─────────────────────────────────────────────
+// EVENTS
+// ─────────────────────────────────────────────
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape"){
+    document.getElementById("ppanel").classList.remove("on");
+    goHome();
+  }
 });
 window.addEventListener("load", init);
 </script>
