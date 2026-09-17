@@ -1395,7 +1395,7 @@ function renderLessonExp(id) {
   lesson.experiences.forEach(e => {
     const isDone = done[e.id];
     html += `
-      <div class="exp-card" onclick="runExp(${id},'${e.id}')">
+      <div class="exp-card" onclick="runExp(${id},'${e.id}')" tabindex="0" role="button">
         <div class="exp-card-emoji">${e.emoji}</div>
         <div class="exp-card-title">${e.title}</div>
         ${isDone ? '<div class="exp-card-done">✓ Sudah dicoba</div>' : ''}
@@ -1500,15 +1500,15 @@ function expParticles() {
     <div class="exp-title">🌡️ Partikel & Suhu</div>
     <div class="exp-prompt">Sentuh setiap kotak untuk melihat apa yang berubah!</div>
     <div style="display:flex;gap:12px;width:100%;flex-wrap:wrap;justify-content:center;">
-      <div class="particle-box" id="pb-cold" style="flex:1;min-width:120px;cursor:pointer;" onclick="animateParticles('cold')">
+      <div class="particle-box" id="pb-cold" style="flex:1;min-width:120px;cursor:pointer;" onclick="animateParticles('cold')" tabindex="0" role="button">
         <div style="text-align:center;font-weight:700;color:#64B5F6;margin-bottom:8px;">DINGIN ❄️</div>
         <div class="particle-field" id="pf-cold"></div>
       </div>
-      <div class="particle-box" id="pb-warm" style="flex:1;min-width:120px;cursor:pointer;" onclick="animateParticles('warm')">
+      <div class="particle-box" id="pb-warm" style="flex:1;min-width:120px;cursor:pointer;" onclick="animateParticles('warm')" tabindex="0" role="button">
         <div style="text-align:center;font-weight:700;color:#FF8A65;margin-bottom:8px;">SEDANG 🌤️</div>
         <div class="particle-field" id="pf-warm"></div>
       </div>
-      <div class="particle-box" id="pb-hot" style="flex:1;min-width:120px;cursor:pointer;" onclick="animateParticles('hot')">
+      <div class="particle-box" id="pb-hot" style="flex:1;min-width:120px;cursor:pointer;" onclick="animateParticles('hot')" tabindex="0" role="button">
         <div style="text-align:center;font-weight:700;color:#E57373;margin-bottom:8px;">PANAS 🔥</div>
         <div class="particle-field" id="pf-hot"></div>
       </div>
@@ -1573,7 +1573,7 @@ function expGravity() {
   <div class="exp-area">
     <div class="exp-title">🌀 Gravitasi</div>
     <div class="exp-prompt">Tap di layar untuk menambahkan bintang! Ke mana benda-benda bergerak?</div>
-    <div class="gravity-demo" id="grav-demo" onclick="addGravStar(event)">
+    <div class="gravity-demo" id="grav-demo" onclick="addGravStar(event)" tabindex="0" role="button">
       <div class="grav-label">Tap untuk tambahkan bintang!</div>
     </div>
     <div class="feedback-msg hint" id="grav-msg">Gravitasi adalah tarikan yang menarik segala sesuatu ke tengah.</div>
@@ -1823,7 +1823,7 @@ function expAlive() {
     <div class="exp-prompt">Tap setiap benda untuk menebak: HIDUP atau BUKAN HIDUP?</div>
     <div class="classify-grid" style="grid-template-columns:repeat(4,1fr);">`;
   items.forEach((item, i) => {
-    html += `<div class="animal-card" id="alive-${i}" onclick="checkAlive(${i}, ${item.alive})">
+    html += `<div class="animal-card" id="alive-${i}" onclick="checkAlive(${i}, ${item.alive})" tabindex="0" role="button">
       <div class="animal-emoji">${item.emoji}</div>
       <div class="animal-name">${item.name}</div>
     </div>`;
@@ -1940,7 +1940,7 @@ function expTimeline() {
     <div class="exp-prompt">Tap setiap era untuk tahu apa yang terjadi!</div>
     <div class="timeline" style="width:100%;">`;
   eras.forEach((e, i) => {
-    html += `<div class="tl-era" style="background:${colors[i]}22;border-color:${colors[i]}44;" onclick="showEra(${i})" id="era-${i}">
+    html += `<div class="tl-era" style="background:${colors[i]}22;border-color:${colors[i]}44;" onclick="showEra(${i})" id="era-${i}" tabindex="0" role="button">
       <span class="tl-era-emoji">${e.emoji}</span>
       <span class="tl-era-name">${e.name}</span>
       <span class="tl-era-time">${e.time}</span>
@@ -2004,7 +2004,7 @@ function expClassify() {
     <div class="exp-prompt">Tarik hewan ke kelompok yang benar! (tap untuk memilih, tap lagi untuk letakkan)</div>
     <div class="classify-grid" style="margin-bottom:16px;">`;
   animals.forEach((a, i) => {
-    html += `<div class="animal-card" id="an-${i}" onclick="toggleAnimal(${i},'${a.emoji}')">
+    html += `<div class="animal-card" id="an-${i}" onclick="toggleAnimal(${i},'${a.emoji}')" tabindex="0" role="button">
       <div class="animal-emoji">${a.emoji}</div>
       <div class="animal-name">${a.name}</div>
     </div>`;
@@ -2012,7 +2012,7 @@ function expClassify() {
   html += `</div>
     <div class="classify-buckets">`;
   buckets.forEach(b => {
-    html += `<div class="bucket hint" id="bucket-${b.id}" onclick="placeAnimal('${b.id}')">
+    html += `<div class="bucket hint" id="bucket-${b.id}" onclick="placeAnimal('${b.id}')" tabindex="0" role="button">
       <div class="bucket-label">${b.emoji} ${b.name}</div>
       <div class="bucket-contents" id="bucket-contents-${b.id}"></div>
     </div>`;
@@ -2068,19 +2068,19 @@ function expEcosystem() {
     <div class="exp-prompt">Tap bagian ekosistem untuk menghilangkannya. Apa yang terjadi?</div>
     <div class="eco-display" id="eco-display">
       <div style="display:flex;align-items:center;gap:8px;">
-        <div class="eco-link" id="eco-sun" onclick="toggleEco('sun')">
+        <div class="eco-link" id="eco-sun" onclick="toggleEco('sun')" tabindex="0" role="button">
           <span>☀️</span><span class="eco-label">Matahari</span>
         </div>
         <span class="eco-arrow">→</span>
-        <div class="eco-link" id="eco-plant" onclick="toggleEco('plant')">
+        <div class="eco-link" id="eco-plant" onclick="toggleEco('plant')" tabindex="0" role="button">
           <span>🌿</span><span class="eco-label">Tumbuhan</span>
         </div>
         <span class="eco-arrow">→</span>
-        <div class="eco-link" id="eco-bug" onclick="toggleEco('bug')">
+        <div class="eco-link" id="eco-bug" onclick="toggleEco('bug')" tabindex="0" role="button">
           <span>🐛</span><span class="eco-label">Serangga</span>
         </div>
         <span class="eco-arrow">→</span>
-        <div class="eco-link" id="eco-bird" onclick="toggleEco('bird')">
+        <div class="eco-link" id="eco-bird" onclick="toggleEco('bird')" tabindex="0" role="button">
           <span>🐦</span><span class="eco-label">Burung</span>
         </div>
       </div>
@@ -2143,7 +2143,7 @@ function expNeeds() {
     <div class="exp-prompt">Kamu di pulau tanpa apa-apa. Mana yang paling penting dulu?</div>
     <div class="needs-grid">`;
   needs.forEach((n, i) => {
-    html += `<div class="need-card" id="need-${i}" onclick="selectNeed(${i},'${n.emoji}')">
+    html += `<div class="need-card" id="need-${i}" onclick="selectNeed(${i},'${n.emoji}')" tabindex="0" role="button">
       <div class="need-emoji">${n.emoji}</div>
       <div class="need-name">${n.name}</div>
     </div>`;
@@ -2295,7 +2295,7 @@ function expTools() {
     <div style="font-size:4rem;text-align:center;margin:10px 0;">🪨</div>
     <div class="exp-cards">`;
   tools.forEach((t, i) => {
-    html += `<div class="exp-card" id="tool-${i}" onclick="showTool(${i})">
+    html += `<div class="exp-card" id="tool-${i}" onclick="showTool(${i})" tabindex="0" role="button">
       <div class="exp-card-emoji">${t.emoji}</div>
       <div class="exp-card-title">${t.name}</div>
     </div>`;
@@ -2451,7 +2451,7 @@ function expComm() {
     <div class="exp-prompt">Karakter ingin bilang ke temannya: "Ada air di balik bukit!" Jarak mereka sangat jauh. Mana cara terbaik?</div>
     <div class="comm-grid">`;
   opts.forEach((o, i) => {
-    html += `<div class="comm-card" id="comm-${i}" onclick="selectComm(${i})">
+    html += `<div class="comm-card" id="comm-${i}" onclick="selectComm(${i})" tabindex="0" role="button">
       <div class="comm-emoji">${o.emoji}</div>
       <div class="comm-name">${o.name}</div>
     </div>`;
@@ -2827,7 +2827,7 @@ function expDecimal() {
     <div class="exp-prompt">Tap untuk melihat berapa banyak kubus kecil!</div>
     <div class="decimal-visual">`;
   units.forEach((u, i) => {
-    html += `<div class="decimal-row" onclick="showDecimal(${i})" id="dec-row-${i}">
+    html += `<div class="decimal-row" onclick="showDecimal(${i})" id="dec-row-${i}" tabindex="0" role="button">
       <div class="d-count" style="font-size:1.5rem;min-width:60px;text-align:right;">${u.label}</div>
       <div style="font-size:2rem;">${u.emoji}</div>
       <div class="d-label" id="dec-detail-${i}">tap untuk lihat!</div>
