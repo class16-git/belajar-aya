@@ -476,6 +476,19 @@ body {
 <!-- PARENT TOGGLE -->
 <button class="parent-toggle" id="parent-btn" onclick="togglePanel()" title="Panel Orang Tua">👤</button>
 
+<!-- NAME MODAL -->
+<div id="name-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:999;align-items:center;justify-content:center;">
+  <div style="background:white;border-radius:20px;padding:24px 20px;max-width:320px;width:90%;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.2);">
+    <div style="font-size:2.5rem;margin-bottom:8px;">👧</div>
+    <div style="font-family:var(--font-head);font-size:1.3rem;color:var(--brown);margin-bottom:4px;">Siapa namamu?</div>
+    <div style="font-size:0.82rem;opacity:0.6;margin-bottom:16px;">Ketik namamu di bawah!</div>
+    <input id="name-input" type="text" placeholder="Nama kamu..." maxlength="20"
+           style="width:100%;padding:12px 14px;border-radius:12px;border:2px solid var(--tan);font-family:var(--font-body);font-size:1rem;outline:none;margin-bottom:12px;box-sizing:border-box;"
+           onkeydown="if(event.key==='Enter')submitName()">
+    <button onclick="submitName()" style="width:100%;padding:12px;background:var(--green);color:white;border:none;border-radius:12px;font-family:var(--font-body);font-weight:700;font-size:0.95rem;cursor:pointer;">Mulai Belajar! 🐰</button>
+  </div>
+</div>
+
 <!-- PARENT PANEL -->
 <div class="parent-panel" id="parent-panel">
   <div class="panel-handle"></div>
@@ -542,22 +555,37 @@ function updateGreeting() {
   if (name) {
     el.textContent = `${greeting}, ${name}! 👋`;
   } else {
-    el.textContent = `${greeting}!准备好 belajar了吗?`;
+    el.textContent = `${greeting}! Siap untuk belajar?`;
     // Prompt profile on first visit
     const seen = localStorage.getItem('hub-visited');
     if (!seen) {
       localStorage.setItem('hub-visited', '1');
       setTimeout(() => {
-        const name2 = prompt('Siapa namamu? (Ketik nama kamu di bawah!)');
-        if (name2 && name2.trim()) {
-          const p = loadProfile();
-          p.name = name2.trim();
-          p.avatar = '👧';
-          saveProfile(p);
-          updateGreeting();
-        }
+        showNameModal();
       }, 800);
     }
+  }
+}
+
+function showNameModal() {
+  const modal = document.getElementById('name-modal');
+  if (modal) { modal.style.display = 'flex'; document.getElementById('name-input').focus(); }
+}
+function hideNameModal() {
+  const modal = document.getElementById('name-modal');
+  if (modal) modal.style.display = 'none';
+}
+function submitName() {
+  const input = document.getElementById('name-input');
+  const name = input.value.trim();
+  if (name) {
+    const p = loadProfile();
+    p.name = name;
+    p.avatar = '👧';
+    saveProfile(p);
+    hideNameModal();
+    updateGreeting();
+    confetti();
   }
 }
 

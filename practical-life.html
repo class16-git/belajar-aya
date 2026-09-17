@@ -814,7 +814,7 @@ function renderPour(area) {
         <div class="glass" id="glass">🥤<div class="glass-fill ${state.pourLevel > 0 ? 'filled' : ''}" id="glass-fill"></div></div>
       </div>
     </div>
-    <div class="exp-instruction" style="margin-top:12px;">${state.pourLevel === 0 ? '👆 Sentuh teko! Ink你这个...' : state.pourLevel < 3 ? 'Lihat airnya... tuang pelan-pelan!' : 'Sudah penuh! Lihat air naik! 🏆'}</div>
+    <div class="exp-instruction" style="margin-top:12px;">${state.pourLevel === 0 ? '👆 Sentuh teko! Coba tuang...' : state.pourLevel < 3 ? 'Lihat airnya... tuang pelan-pelan!' : 'Sudah penuh! Lihat air naik! 🏆'}</div>
     ${state.pourLevel >= 3 ? '<div class="exp-success">✨ Teko ke gelas — selesai! Tuang dengan tepat!</div>' : ''}
     ${state.pourLevel < 3 ? `<button class="btn btn-next" onclick="nextStep()">Lanjut →</button>` : `<button class="btn btn-next" onclick="startExp('tong')">Coba yang lain →</button>`}
   `;
@@ -952,7 +952,7 @@ function renderWash(area) {
         </div>
       `).join('')}
     </div>
-    ${state.washStep >= 6 ? '<div class="exp-success">🧼 Tangan bersih! Kamu sudah熟练!</div>' : ''}
+    ${state.washStep >= 6 ? '<div class="exp-success">🧼 Tangan bersih! Kamu sudah sangat terampil!</div>' : ''}
     ${state.washStep >= 6 ? `<button class="btn btn-next" onclick="startExp('pink')">Coba Sensorial →</button>` : `<button class="btn btn-next" onclick="advanceWash()">Lanjut</button>`}
   `;
 }
