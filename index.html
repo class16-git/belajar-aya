@@ -236,6 +236,25 @@
     .btn-next   { background: var(--soft-green); }
     .btn-missing{ background: var(--soft-pink); }
     .btn-detective { background: var(--deep-blue); }
+    .btn-gl {
+      display: block;
+      background: linear-gradient(135deg, #1a1a3a 0%, #0a0a1a 100%);
+      border: 2px solid rgba(255,215,0,0.3);
+      color: var(--cream);
+      font-size: 0.95rem;
+      text-decoration: none;
+      border-radius: 16px;
+      padding: 14px 20px;
+      transition: all 0.2s;
+    }
+    .btn-gl:hover { border-color: rgba(255,215,0,0.6); box-shadow: 0 0 16px rgba(255,215,0,0.15); }
+    .gl-divider {
+      font-size: 0.8rem;
+      color: var(--warm-brown);
+      opacity: 0.5;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
 
     .btn-back {
       background: rgba(255,255,255,0.6);
@@ -996,6 +1015,14 @@
     <button class="btn btn-next"   onclick="startGame('next')">🔮 Apa Angka Berikutnya?</button>
     <button class="btn btn-missing" onclick="startGame('missing')">🔍 Angka Hilang</button>
     <button class="btn btn-detective" onclick="startGame('detective')">🕵️ Aya Detektif Aturan</button>
+  </div>
+
+  <div class="great-lessons-link" style="margin-top:24px; text-align:center;">
+    <div class="gl-divider">— atau jelajahi —</div>
+    <a href="five-great-lessons.html" class="btn btn-gl">
+      🌍 Lima Pelajaran Besar<br>
+      <span style="font-size:0.75rem;opacity:0.7;font-weight:600;">Alam Semesta · Kehidupan · Manusia · Komunikasi · Angka</span>
+    </a>
   </div>
 </div>
 
