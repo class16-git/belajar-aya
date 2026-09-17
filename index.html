@@ -1,144 +1,55 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Learning Home</title>
+<title>Belajar Aya — Learning Home</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg:      #07071A;
-  --deep:    #0D0D2B;
-  --card:    #12123A;
-  --gold:    #FFD700;
-  --green:   #4CAF50;
-  --cream:   #FFF8F0;
-  --purple:  #7C4DFF;
-  --shadow:  0 4px 24px rgba(0,0,0,0.35);
-  --radius:  20px;
-  --font-h:  'Fredoka One', cursive;
-  --font-b:  'Quicksand', sans-serif;
-}
+:root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--cream:#FFF8F0;--shadow:0 4px 24px rgba(0,0,0,.35);--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
-body{
-  background:var(--bg);
-  font-family:var(--font-b);
-  color:var(--cream);
-  overflow-y:auto;
-  -webkit-overflow-scrolling:touch;
-  touch-action:manipulation;
-  min-height:100dvh;
-}
+body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:manipulation}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
-
-/* Stars */
-.stars{position:fixed;inset:0;pointer-events:none;z-index:0}
-.star{position:absolute;background:#fff;border-radius:50%;animation:twinkle 3s ease-in-out infinite}
-@keyframes twinkle{0%,100%{opacity:.25}50%{opacity:1}}
-
-/* Screens */
 .screen{display:none;min-height:100dvh;flex-direction:column}
 .screen.active{display:flex}
-
-/* Top bar */
-.top-bar{
-  position:sticky;top:0;z-index:50;
-  display:flex;justify-content:space-between;align-items:center;
-  padding:12px 16px 8px;
-  background:linear-gradient(to bottom,var(--bg) 70%,transparent);
-}
-.top-btn{
-  width:44px;height:44px;border-radius:50%;
-  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
-  color:var(--cream);font-size:1.1rem;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;
-}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+.star{position:absolute;background:#fff;border-radius:50%;animation:twinkle 3s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.9}}
+.top-bar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
+.top-title{font-family:var(--font-h);font-size:.9rem;color:var(--gold)}
+.top-btn{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
 .top-btn:active{transform:scale(.92)}
-
-/* Home hero */
-.hero{text-align:center;padding:8px 16px 20px;position:relative;z-index:1}
-.hero-emoji{font-size:3rem;margin-bottom:6px}
-.hero-title{font-family:var(--font-h);font-size:1.7rem;color:var(--gold);margin-bottom:2px}
-.hero-sub{font-size:.82rem;opacity:.5}
-.hero-greeting{font-size:.85rem;opacity:.7;margin-top:6px}
-
-/* App grid */
-.app-grid{
-  display:flex;flex-direction:column;gap:12px;
-  padding:0 16px 100px;
-  position:relative;z-index:1;
-}
-.app-card{
-  background:var(--card);border-radius:var(--radius);
-  padding:16px;box-shadow:var(--shadow);cursor:pointer;border:none;width:100%;
-  text-align:left;color:var(--cream);
-  display:flex;gap:14px;align-items:center;
-  transition:transform .15s;
-}
-.app-card:active{transform:scale(.97)}
-.app-icon{font-size:2.5rem;flex-shrink:0;width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center}
-.app-name{font-family:var(--font-h);font-size:1.05rem;margin-bottom:2px}
-.app-desc{font-size:.75rem;opacity:.5;line-height:1.4}
-.app-meta{font-size:.7rem;opacity:.4;margin-top:3px}
-.app-badge{
-  margin-left:auto;flex-shrink:0;
-  width:30px;height:30px;border-radius:50%;
-  background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.12);
-  font-size:.72rem;display:flex;align-items:center;justify-content:center;
-}
+.hero{padding:8px 16px 20px;position:relative;z-index:1;text-align:center}
+.hero-title{font-family:var(--font-h);font-size:2rem;color:var(--gold);margin-bottom:4px}
+.hero-sub{font-size:.8rem;opacity:.5;line-height:1.4}
+.offline-banner{display:none;background:rgba(76,175,80,.15);border:1px solid rgba(76,175,80,.3);color:var(--green);padding:8px 16px;text-align:center;font-size:.78rem;position:relative;z-index:1}
+.offline-banner.show{display:block}
+.app-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 16px 100px;position:relative;z-index:1}
+.app-card{background:var(--card);border-radius:20px;padding:16px 14px;box-shadow:var(--shadow);cursor:pointer;border:none;display:flex;flex-direction:column;align-items:center;text-align:center;color:var(--cream);transition:transform .15s;font-family:var(--font-b)}
+.app-card:active{transform:scale(.96)}
+.app-emoji{font-size:2.2rem;margin-bottom:8px}
+.app-name{font-family:var(--font-h);font-size:.95rem;margin-bottom:4px}
+.app-desc{font-size:.72rem;opacity:.5;line-height:1.3}
+.app-badge{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.15);font-size:.7rem;display:flex;align-items:center;justify-content:center;margin-top:8px}
 .app-badge.done{background:var(--green);border-color:var(--green);color:#fff}
-
-/* FABs — always visible */
-.home-fab{
-  position:fixed;bottom:20px;left:20px;
-  width:50px;height:50px;border-radius:50%;
-  background:var(--green);color:#fff;font-size:1.3rem;
-  border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);
-  z-index:100;display:flex;align-items:center;justify-content:center;
-  text-decoration:none;
-}
-.home-fab:active{transform:scale(.9)}
-.parent-fab{
-  position:fixed;bottom:20px;right:20px;
-  width:50px;height:50px;border-radius:50%;
-  background:var(--gold);color:var(--bg);font-size:1.2rem;
-  border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);
-  z-index:100;
-}
+.name-modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:200;padding:20px}
+.name-modal.show{display:flex}
+.name-modal-box{background:var(--card);border-radius:24px;padding:28px 24px;width:100%;max-width:340px;text-align:center;box-shadow:var(--shadow)}
+.name-modal-title{font-family:var(--font-h);font-size:1.4rem;color:var(--gold);margin-bottom:8px}
+.name-modal-sub{font-size:.82rem;opacity:.6;margin-bottom:20px}
+.name-input{width:100%;padding:14px 16px;border-radius:14px;border:2px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:var(--cream);font-family:var(--font-b);font-size:1rem;text-align:center;margin-bottom:16px;outline:none}
+.name-input:focus{border-color:var(--gold)}
+.name-btn{padding:14px 32px;border-radius:14px;border:none;background:var(--gold);color:var(--bg);font-family:var(--font-h);font-size:1rem;cursor:pointer;width:100%}
+.name-btn:active{transform:scale(.97)}
+.parent-fab{position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--gold);color:var(--bg);font-size:1.2rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100}
 .parent-fab:active{transform:scale(.9)}
-/* Space parent above home fab on index */
-body.app-hub .home-fab{bottom:20px}
-body.app-hub .parent-fab{bottom:80px}
-
-/* Rabbity */
-.rabbity-fab{
-  position:fixed;bottom:80px;right:20px;
-  width:50px;height:50px;border-radius:50%;
-  background:var(--card);border:2px solid rgba(255,255,255,.15);
-  color:var(--cream);font-size:1.3rem;z-index:99;
-  display:flex;align-items:center;justify-content:center;
-  cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);
-}
-.rabbity-bubble{
-  position:fixed;bottom:140px;right:20px;z-index:98;
-  background:var(--card);border:1px solid rgba(255,255,255,.1);
-  border-radius:16px;padding:10px 14px;max-width:220px;
-  font-size:.8rem;line-height:1.5;color:var(--cream);
-  box-shadow:0 4px 16px rgba(0,0,0,.3);
-  opacity:0;pointer-events:none;transition:opacity .3s;
-}
+.home-fab{position:fixed;bottom:20px;left:20px;width:50px;height:50px;border-radius:50%;background:var(--green);color:#fff;font-size:1.3rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.home-fab:active{transform:scale(.9)}
+.rabbity-fab{position:fixed;bottom:80px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--card);border:2px solid rgba(255,255,255,.15);color:var(--cream);font-size:1.3rem;z-index:99;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.rabbity-bubble{position:fixed;bottom:140px;right:20px;z-index:98;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:10px 14px;max-width:220px;font-size:.8rem;line-height:1.5;color:var(--cream);box-shadow:0 4px 16px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .3s}
 .rabbity-bubble.show{opacity:1}
-
-/* Parent panel */
-.parent-panel{
-  position:fixed;bottom:0;left:0;right:0;
-  background:var(--cream);color:#333;
-  border-radius:20px 20px 0 0;padding:20px 16px 90px;
-  box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;
-  max-height:70vh;overflow-y:auto;
-  transform:translateY(110%);transition:transform .3s ease;
-}
+.parent-panel{position:fixed;bottom:0;left:0;right:0;background:var(--cream);color:#333;border-radius:20px 20px 0 0;padding:20px 16px 90px;box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;max-height:70vh;overflow-y:auto;transform:translateY(110%);transition:transform .3s}
 .parent-panel.open{transform:translateY(0)}
 .panel-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
 .panel-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
@@ -146,93 +57,42 @@ body.app-hub .parent-fab{bottom:80px}
 .panel-row-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
 .panel-bar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
 .panel-bar-fill{height:100%;border-radius:4px;transition:width .5s}
-.panel-missions{font-size:.73rem;color:#666;margin-top:3px}
-
-/* Name modal */
-.modal-overlay{
-  position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:200;
-  display:none;align-items:center;justify-content:center;
-}
-.modal-overlay.show{display:flex}
-.modal-box{
-  background:var(--card);border-radius:var(--radius);
-  padding:28px 24px;max-width:300px;width:90%;
-  text-align:center;box-shadow:0 8px 40px rgba(0,0,0,.5);
-}
-.modal-box h2{font-family:var(--font-h);font-size:1.2rem;color:var(--gold);margin-bottom:8px}
-.modal-box p{font-size:.85rem;opacity:.6;margin-bottom:16px}
-.modal-input{
-  background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);
-  border-radius:12px;padding:12px 16px;color:var(--cream);
-  font-family:var(--font-b);font-size:1rem;width:100%;
-  text-align:center;margin-bottom:12px;
-}
-.modal-input:focus{outline:none;border-color:var(--gold)}
-.modal-btn{
-  background:var(--gold);color:var(--bg);border:none;border-radius:12px;
-  padding:12px 24px;font-family:var(--font-b);font-weight:700;
-  font-size:.9rem;cursor:pointer;width:100%;
-}
-.modal-btn:active{transform:scale(.96)}
-
-/* Offline banner */
-.offline-banner{
-  display:none;background:#FF9800;color:#fff;
-  padding:8px 16px;text-align:center;font-size:.82rem;font-weight:700;
-  position:sticky;top:0;z-index:150;
-}
-.offline-banner.show{display:block}
+.confetti-container{position:fixed;inset:0;pointer-events:none;z-index:9999}
+.confetti-piece{position:absolute;width:10px;height:10px;border-radius:2px;animation:confettiFall 2.5s ease-out forwards}
+@keyframes confettiFall{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
 </style>
 </head>
-<body class="app-hub">
-
+<body>
 <div class="stars" id="stars"></div>
 <div class="offline-banner" id="offline-banner">📡 Offline — keep learning!</div>
 
-<!-- ═══ HOME SCREEN ═══ -->
 <div class="screen active" id="screen-home">
   <div class="top-bar">
     <div></div>
-    <button class="top-btn" onclick="showNameModal()" title="Profilee">🤠</button>
+    <div class="top-title">Belajar Aya</div>
+    <button class="top-btn" onclick="toggleParent()">👤</button>
   </div>
-
   <div class="hero">
-    <div class="hero-emoji">🐰</div>
-    <div class="hero-title">Learn Aya</div>
-    <div class="hero-sub">Hands-on Learning, not just reading</div>
-    <div class="hero-greeting" id="hero-greeting"></div>
+    <div class="hero-title">Belajar Aya</div>
+    <div class="hero-sub">Hands-on learning for curious minds</div>
   </div>
-
-  <div class="app-grid" id="app-grid">
-    <!-- Rendered by JS -->
-  </div>
+  <div class="app-grid" id="app-grid"></div>
 </div>
 
-<!-- ═══ APP SCREENS ═══ -->
-<div class="screen" id="screen-skip">
-  <div class="top-bar">
-    <button class="top-btn" onclick="showScreen('home')">←</button>
-    <div style="font-family:var(--font-h);color:var(--gold);font-size:1rem;">Skip Counting</div>
-    <div></div>
-  </div>
-  <div id="skip-area" style="padding:0 16px 100px;position:relative;z-index:1;"></div>
-</div>
-
-<!-- ═══ NAME MODAL ═══ -->
-<div class="modal-overlay" id="name-modal">
-  <div class="modal-box">
-    <div style="font-size:2.5rem;margin-bottom:8px;">🐰</div>
-    <h2>Hi!</h2>
-    <p>What's your name?</p>
-    <input class="modal-input" id="name-input" type="text" placeholder="Ketik nama..." maxlength="20" onkeydown="if(event.key==='Enter')saveName()">
-    <button class="modal-btn" onclick="saveName()">Start!</button>
+<!-- MODALS -->
+<div class="name-modal" id="name-modal">
+  <div class="name-modal-box">
+    <div class="name-modal-title">What's your name?</div>
+    <div class="name-modal-sub">Let's learn together!</div>
+    <input class="name-input" id="name-input" type="text" placeholder="Your name..." maxlength="30" autocomplete="off" autocorrect="off">
+    <button class="name-btn" onclick="saveName()">Let's go!</button>
   </div>
 </div>
 
 <!-- FABs -->
-<a href="index.html" class="home-fab" title="Back to Home">🏠</a>
-<button class="parent-fab" onclick="toggleParent()" title="Panel Orang Tua">👤</button>
-<button class="rabbity-fab" onclick="rabbitySpeak()" title="Rabbity bicara">🐰</button>
+<button class="home-fab" onclick="window.location='index.html'">🏠</button>
+<button class="parent-fab" onclick="toggleParent()">👤</button>
+<button class="rabbity-fab" onclick="rabbitySpeak()">🐰</button>
 <div class="rabbity-bubble" id="rabbity-bubble"></div>
 
 <!-- Parent Panel -->
@@ -243,278 +103,186 @@ body.app-hub .parent-fab{bottom:80px}
   <div id="parent-content"></div>
 </div>
 
+<!-- Confetti -->
+<div class="confetti-container" id="confetti-container"></div>
+
 <script>
-// ═══════════════════════════════════════════
-// DATA
-// ═══════════════════════════════════════════
-const APPS = [
-  { id:'skip',    emoji:'🐰', bg:'#1565C0', title:'Skip Counting', desc:'Jump through numbers!', file:'skip-counting.html', key:'skip-progress', color:'#1565C0' },
-  { id:'lessons', emoji:'🌍', bg:'#4A148C', title:'Five Great Lessons', desc:'Explore the world and all its wonders', file:'five-great-lessons.html', key:'fgl-progress', color:'#4A148C' },
-  { id:'math',    emoji:'🔢', bg:'#1B5E20', title:'Math Garden', desc:'Number rods, spindles, and cards', file:'math.html', key:'math-progress', color:'#1B5E20' },
-  { id:'lang',    emoji:'🔤', bg:'#B71C1C', title:'Language & Letters', desc:'Letters, words, and writing', file:'language.html', key:'lang-progress', color:'#B71C1C' },
-  { id:'prac',    emoji:'🧼', bg:'#E65100', title:'Practical Life', desc:'Pour, pinch, button, wash', file:'practical-life.html', key:'pl-progress', color:'#E65100' },
-  { id:'cultur',  emoji:'🌏', bg:'#0D47A1', title:'Culture & Science', desc:'Geography, sains, alam', file:'cultural.html', key:'culture-progress', color:'#0D47A1' },
-];
-
-const PROGRESS_KEYS = {
-  skip:'skip-progress',lessons:'fgl-progress',math:'math-progress',
-  lang:'lang-progress',prac:'pl-progress',cultur:'culture-progress'
+var profile = { name: "", avatar: "🐰" };
+var MISSIONS = {
+  skip:    ["Count steps to the kitchen!", "Skip count by 2s!"],
+  lessons: ["Share 1 fact from this lesson!", "Draw one thing from this lesson!"],
+  math:    ["Count your toys!", "Compare tall and short!"],
+  lang:    ["Write your name!", "Find letters on signs outside!"],
+  prac:    ["Dip your hands in water!", "Pick up small objects with tongs!"],
+  cultur:  ["Name 3 animals!", "Talk about today's weather!"],
 };
-
-const MISSIONS = {
-  skip:   ['Count steps to the kitchen!','Skip count by 2s!'],
-  lessons:['Share 1 fact from this lesson!','Draw one thing from this lesson!'],
-  math:   ['Count your toys!','Compare tall and short!'],
-  lang:   ['Tulis namamu!','Baca huruf di jalan!'],
-  prac:   ['Celupkan tangan ke air!','Jepit korek api!'],
-  cultur: ['Name 3 animals!','Talk about today\'s weather!'],
-};
-
-// ═══════════════════════════════════════════
-// STATE
-// ═══════════════════════════════════════════
-let profile = { name:'', avatar:'🐰' };
 
 function lsGet(k, def) {
-  try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : def; }
-  catch(e) { return def; }
+  try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : def; } catch(e) { return def; }
 }
 function lsSet(k, v) {
   try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {}
 }
-function loadProfileee() {
-  profile = lsGet('aya-profile', { name:'', avatar:'🐰' });
+
+function loadProfile() {
+  profile = lsGet("aya-profile", { name: "", avatar: "🐰" });
 }
 
-// ═══════════════════════════════════════════
-// STARS
-// ═══════════════════════════════════════════
+function init() {
+  loadProfile();
+  genStars();
+  renderAppGrid();
+  if (!profile.name) {
+    setTimeout(showNameModal, 600);
+  } else {
+    setTimeout(greetUser, 1000);
+  }
+}
+
+function greetUser() {
+  var h = new Date().getHours();
+  var time = h < 12 ? "Good morning" : h < 17 ? "Good afternoon" : "Good evening";
+  say(time + ", " + profile.name + "! Let's learn!");
+}
+
+function showNameModal() {
+  document.getElementById("name-modal").classList.add("show");
+  var inp = document.getElementById("name-input");
+  inp.focus();
+  inp.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") saveName();
+  });
+}
+
+function saveName() {
+  var inp = document.getElementById("name-input");
+  profile.name = inp.value.trim() || "Learner";
+  lsSet("aya-profile", profile);
+  document.getElementById("name-modal").classList.remove("show");
+  say("Nice to meet you, " + profile.name + "! Let's go!");
+  setTimeout(renderAppGrid, 100);
+}
+
+function renderAppGrid() {
+  var grid = document.getElementById("app-grid");
+  var apps = [
+    { id: "skip",    emoji: "🐰", bg: "#1565C0", title: "Skip Counting",  desc: "Jump through numbers!",      file: "skip-counting.html",         key: "skip-progress" },
+    { id: "lessons", emoji: "🌍", bg: "#4A148C", title: "Five Great Lessons", desc: "Explore the world",       file: "five-great-lessons.html",   key: "fgl-progress" },
+    { id: "math",    emoji: "🔢", bg: "#1B5E20", title: "Math Garden",  desc: "Number rods, spindles, cards", file: "math.html",                 key: "math-progress" },
+    { id: "lang",    emoji: "🔤", bg: "#B71C1C", title: "Language & Letters", desc: "Letters, words, writing", file: "language.html",            key: "lang-progress" },
+    { id: "prac",    emoji: "🧼", bg: "#E65100", title: "Practical Life", desc: "Pour, pinch, button, wash",   file: "practical-life.html",      key: "pl-progress" },
+    { id: "cultur",  emoji: "🌏", bg: "#0D47A1", title: "Culture & Science", desc: "Geography, science, nature", file: "cultural.html",         key: "culture-progress" },
+  ];
+  grid.innerHTML = "";
+  apps.forEach(function(a) {
+    var prog = lsGet(a.key, {});
+    var done = Object.keys(prog).length;
+    var card = document.createElement("button");
+    card.className = "app-card";
+    card.style.background = a.bg;
+    card.onclick = function() { window.location = a.file; };
+    card.innerHTML = '<div class="app-emoji">' + a.emoji + '</div>' +
+      '<div class="app-name">' + a.title + '</div>' +
+      '<div class="app-desc">' + a.desc + '</div>' +
+      '<div class="app-badge ' + (done > 0 ? "done" : "") + '">' + (done > 0 ? "✓" : "→") + "</div>";
+    grid.appendChild(card);
+  });
+}
+
 function genStars() {
-  const el = document.getElementById('stars');
-  el.innerHTML = '';
-  for (let i = 0; i < 70; i++) {
-    const s = document.createElement('div');
-    s.className = 'star';
-    const sz = Math.random()*2+1;
-    s.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;
-      width:${sz}px;height:${sz}px;
-      animation-delay:${(Math.random()*3).toFixed(1)}s;
-      animation-duration:${(Math.random()*2+2).toFixed(1)}s`;
+  var el = document.getElementById("stars");
+  el.innerHTML = "";
+  for (var i = 0; i < 70; i++) {
+    var s = document.createElement("div");
+    s.className = "star";
+    var sz = Math.random() * 2 + 1;
+    s.style.cssText = "left:" + (Math.random() * 100) + "%;top:" + (Math.random() * 100) + "%;width:" + sz + "px;height:" + sz + "px;animation-delay:" + (Math.random() * 3).toFixed(1) + "s;animation-duration:" + (Math.random() * 2 + 2).toFixed(1) + "s";
     el.appendChild(s);
   }
 }
 
-// ═══════════════════════════════════════════
-// SCREENS
-// ═══════════════════════════════════════════
-function showScreen(name) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  const el = document.getElementById('screen-' + name);
-  if (el) el.classList.add('active');
-
-  if (name === 'skip') loadSkipCounting();
-  if (name === 'home') renderAppGrid();
-  if (name === 'home') toggleParent_close();
-}
-
-// ═══════════════════════════════════════════
-// PROGRESS
-// ═══════════════════════════════════════════
-function getProgress(key, total) {
-  const done = lsGet(key, []);
-  if (typeof done === 'number') return done;
-  return Array.isArray(done) ? done.length : 0;
-}
-
-// ═══════════════════════════════════════════
-// RENDER APP GRID
-// ═══════════════════════════════════════════
-function renderAppGrid() {
-  const grid = document.getElementById('app-grid');
-  grid.innerHTML = '';
-  APPS.forEach(app => {
-    const done = getProgress(PROGRESS_KEYS[app.id], 10);
-    const card = document.createElement('a');
-    card.href = app.file;
-    card.className = 'app-card';
-    card.innerHTML = `
-      <div class="app-icon" style="background:${app.bg}">${app.emoji}</div>
-      <div>
-        <div class="app-name">${app.title}</div>
-        <div class="app-desc">${app.desc}</div>
-        <div class="app-meta">${done} aktivitas selesai</div>
-      </div>
-      <div class="app-badge ${done > 0 ? 'done' : ''}">${done > 0 ? '✓' : '→'}</div>
-    `;
-    grid.appendChild(card);
-  });
-
-  // Greeting
-  const greet = document.getElementById('hero-greeting');
-  if (greet) {
-    const name = profile.name || 'Little learner';
-    const h = new Date().getHours();
-    const time = h < 12 ? 'Selamat pagi' : h < 17 ? 'Selamat siang' : 'Selamat sore';
-    greet.textContent = `${time}, ${name}! 👋`;
-  }
-}
-
-// ═══════════════════════════════════════════
-// RABBITY
-// ═══════════════════════════════════════════
 function rabbitySpeak() {
-  const msgs = [
-    'Let's learn! 📚',
-    'You're amazing! ⭐',
-    'Start with the easy ones! 🌟',
-    'There is nothing wrong with trying again! 💪',
-    'Rabbity bangga sama kamu! 🐰',
-  ];
+  var msgs = ["Let's go! 📚", "You're amazing! ⭐", "Start with the easy ones! 🌟", "There is nothing wrong with trying again! 💪"];
   say(msgs[Math.floor(Math.random() * msgs.length)]);
 }
 
 function say(text) {
-  const b = document.getElementById('rabbity-bubble');
-  if (b) { b.textContent = '🐰 ' + text; b.classList.add('show'); }
-  if ('speechSynthesis' in window) {
+  var b = document.getElementById("rabbity-bubble");
+  if (b) { b.textContent = "🐰 " + text; b.classList.add("show"); }
+  if ("speechSynthesis" in window) {
     speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'id-ID'; u.rate = 0.85;
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-US";
+    u.rate = 0.85;
     speechSynthesis.speak(u);
   }
-  setTimeout(() => { if (b) b.classList.remove('show'); }, 3500);
+  setTimeout(function() { if (b) b.classList.remove("show"); }, 3500);
 }
 
-// ═══════════════════════════════════════════
-// PARENT PANEL
-// ═══════════════════════════════════════════
-function toggleParent() {
-  const p = document.getElementById('parent-panel');
-  if (!p) return;
-  p.classList.toggle('open');
-  if (p.classList.contains('open')) renderParentPanel();
+function confetti() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var c = document.getElementById("confetti-container");
+  if (!c) return;
+  c.innerHTML = "";
+  var colors = ["#FFD700", "#EF5350", "#66BB6A", "#42A5F5", "#AB47BC", "#FF9800"];
+  for (var i = 0; i < 40; i++) {
+    var p = document.createElement("div");
+    p.className = "confetti-piece";
+    p.style.left = Math.random() * 100 + "%";
+    p.style.background = colors[Math.floor(Math.random() * colors.length)];
+    p.style.animationDelay = (Math.random() * 0.8) + "s";
+    p.style.animationDuration = "2.5s";
+    c.appendChild(p);
+  }
+  setTimeout(function() { c.innerHTML = ""; }, 3500);
 }
-function toggleParent_close() {
-  const p = document.getElementById('parent-panel');
-  if (p) p.classList.remove('open');
+
+function toggleParent() {
+  var p = document.getElementById("parent-panel");
+  if (!p) return;
+  p.classList.toggle("open");
+  if (p.classList.contains("open")) renderParentPanel();
 }
 
 function renderParentPanel() {
-  const c = document.getElementById('parent-content');
+  var c = document.getElementById("parent-content");
   if (!c) return;
-  c.innerHTML = '';
-  APPS.forEach(app => {
-    const done = getProgress(PROGRESS_KEYS[app.id], 10);
-    const pct = Math.min(100, Math.round((done / 10) * 100));
-    const missions = (MISSIONS[app.id] || []).map(m => '• ' + m).join('<br>');
-    c.innerHTML += `
-      <div class="panel-row">
-        <div class="panel-row-label">
-          <span>${app.emoji} ${app.title}</span>
-          <span style="color:#666;font-size:.75rem;">${pct}%</span>
-        </div>
-        <div class="panel-bar"><div class="panel-bar-fill" style="width:${pct}%;background:${app.color}"></div></div>
-        <div class="panel-missions">${done}/10 aktivitas<br><span style="font-size:.7rem">${missions}</span></div>
-      </div>
-    `;
+  var apps = [
+    { name: "Skip Counting", key: "skip-progress" },
+    { name: "Five Great Lessons", key: "fgl-progress" },
+    { name: "Math Garden", key: "math-progress" },
+    { name: "Language & Letters", key: "lang-progress" },
+    { name: "Practical Life", key: "pl-progress" },
+    { name: "Culture & Science", key: "culture-progress" },
+  ];
+  var colors = ["#1565C0", "#4A148C", "#1B5E20", "#B71C1C", "#E65100", "#0D47A1"];
+  var missions = ["skip", "lessons", "math", "lang", "prac", "cultur"];
+  c.innerHTML = "";
+  apps.forEach(function(a, i) {
+    var prog = lsGet(a.key, {});
+    var done = Object.keys(prog).length;
+    var total = 5;
+    var pct = Math.round((done / total) * 100);
+    c.innerHTML += '<div class="panel-row"><div class="panel-row-label">' + a.name + ' <span>' + pct + '%</span></div><div class="panel-bar"><div class="panel-bar-fill" style="width:' + pct + '%;background:' + colors[i] + ';"></div></div></div>';
   });
+  var missDiv = document.createElement("div");
+  missDiv.style.cssText = "margin-top:16px;padding:12px;background:rgba(76,175,80,.1);border-radius:12px;border:1px solid rgba(76,175,80,.25)";
+  missDiv.innerHTML = "<div style='font-family:var(--font-h);font-size:.85rem;color:var(--green);margin-bottom:8px;'>🌟 Real World Mission</div>";
+  MISSIONS[missions[Math.floor(Math.random() * missions.length)]].forEach(function(m) {
+    missDiv.innerHTML += "<div style='font-size:.75rem;color:rgba(255,255,255,.7);margin:4px 0;line-height:1.4'>• " + m + "</div>";
+  });
+  c.appendChild(missDiv);
 }
 
-// ═══════════════════════════════════════════
-// NAME MODAL
-// ═══════════════════════════════════════════
-function showNameModal() {
-  const m = document.getElementById('name-modal');
-  const i = document.getElementById('name-input');
-  if (!m || !i) return;
-  m.classList.add('show');
-  setTimeout(() => i.focus(), 100);
-}
-
-function saveName() {
-  const i = document.getElementById('name-input');
-  if (!i) return;
-  profile.name = i.value.trim() || 'Little learner';
-  lsSet('aya-profile', profile);
-  document.getElementById('name-modal').classList.remove('show');
-  renderAppGrid();
-  say('Nice to meet you, ' + profile.name + '! 🐰');
-}
-
-// ═══════════════════════════════════════════
-// OFFLINE
-// ═══════════════════════════════════════════
-window.addEventListener('offline', () => document.getElementById('offline-banner').classList.add('show'));
-window.addEventListener('online',  () => document.getElementById('offline-banner').classList.remove('show'));
-
-// ═══════════════════════════════════════════
-// SKIP COUNTING — embedded mini version
-// ═══════════════════════════════════════════
-function loadSkipCounting() {
-  const area = document.getElementById('skip-area');
-  if (!area) return;
-
-  const stage = lsGet('skip-stage', 1);
-  const progress = lsGet('skip-progress', []);
-
-  area.innerHTML = `
-    <div style="text-align:center;padding:10px 0 6px;">
-      <div style="font-family:var(--font-h);font-size:1rem;color:var(--gold);margin-bottom:6px">Stage ${stage}</div>
-      <div style="height:6px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden;">
-        <div id="skip-progress-bar" style="height:100%;background:var(--green);width:${Math.min(100,(progress.length/10)*100)}%;transition:width .5s"></div>
-      </div>
-      <div style="font-size:.72rem;opacity:.4;margin-top:4px">${progress.length}/10 aktivitas</div>
-    </div>
-    <div style="text-align:center;padding:8px 0;font-size:.85rem;opacity:.7;margin-bottom:8px">Choose tahap untuk mulai:</div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;">
-      ${[1,2,3,4,5,6].map(s => `
-        <button onclick="playStage(${s})" style="background:${s<=stage?'var(--card)':'rgba(255,255,255,.04)'};border:${s<=stage?'1px solid rgba(255,255,255,.12)':'1px solid rgba(255,255,255,.06)'};border-radius:14px;padding:14px 10px;color:${s<=stage?'var(--cream)':'rgba(255,255,255,.25)'};font-family:var(--font-b);font-weight:700;cursor:${s<=stage?'pointer':'not-allowed'};font-size:.9rem;">
-          Stage ${s}
-          ${s <= stage ? (progress.includes(s-1) ? '✓' : '→') : '🔒'}
-        </button>
-      `).join('')}
-    </div>
-    <div style="text-align:center;opacity:.4;font-size:.75rem;line-height:1.6;">
-      Skip Counting adalah app tersendiri.<br>
-      <a href="skip-counting.html" style="color:var(--gold);">Buka full app →</a>
-    </div>
-  `;
-}
-
-function playStage(n) {
-  lsSet('skip-stage', n);
-  window.location.href = 'skip-counting.html';
-}
-
-// ═══════════════════════════════════════════
-// INIT
-// ═══════════════════════════════════════════
-function init() {
-  loadProfileee();
-  genStars();
-  renderAppGrid();
-
-  // First-time name modal
-  if (!profile.name) {
-    setTimeout(showNameModal, 800);
-  } else {
-    setTimeout(() => {
-      const h = new Date().getHours();
-      const time = h < 12 ? 'Selamat pagi' : h < 17 ? 'Selamat siang' : 'Selamat sore';
-      say(time + ', ' + profile.name + '! 🐰 Let's learn!');
-    }, 1200);
-  }
-}
-
-// Keyboard
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    toggleParent_close();
-    document.getElementById('name-modal').classList.remove('show');
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") {
+    document.getElementById("parent-panel").classList.remove("open");
+    document.getElementById("name-modal").classList.remove("show");
   }
 });
-
-window.addEventListener('load', init);
+window.addEventListener("offline", function() { document.getElementById("offline-banner").classList.add("show"); });
+window.addEventListener("online", function() { document.getElementById("offline-banner").classList.remove("show"); });
+window.addEventListener("load", init);
 </script>
 </body>
 </html>

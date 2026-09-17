@@ -205,7 +205,7 @@ function markDone(id){
       lsSet('culture-progress',state.progress);
     }
     confetti();
-    say('Hebat! You're done!');
+    say('Great! You\'re done!');
   }
 }
 function isDone(id){return !!state.progress[id]}
@@ -681,7 +681,7 @@ function showChain(i){
 
 // ── RABBITY ──
 function rabbitySpeak(){
-  const msgs=['Let's learn!','You're amazing!','It's okay, try again!','Rabbity is so proud!'];
+  const msgs=["Let's learn!","You're amazing!","It's okay, try again!","Rabbity is so proud!"];
   say(msgs[Math.floor(Math.random()*msgs.length)]);
 }
 function say(text){
@@ -731,7 +731,7 @@ function init(){
   initState();
   genStars();
   renderHome();
-  setTimeout(()=>say('Hi! Let's kenali dunia bersama!'),1000);
+  setTimeout(()=>say("Hi! Let's explore the world together!"),1000);
 }
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeParent();goBack();}});
 window.addEventListener('load',init);
