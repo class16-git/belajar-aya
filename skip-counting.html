@@ -1487,6 +1487,8 @@ function makeDot(num, cls = '') {
   let lastX = 0, lastY = 0;
 
   d.addEventListener('pointerdown', (e) => {
+    // Dots inside baskets cannot be re-dragged
+    if (d.closest('.basket')) return;
     e.preventDefault();
     startX = e.clientX; startY = e.clientY;
     lastX = e.clientX; lastY = e.clientY;
@@ -1497,6 +1499,7 @@ function makeDot(num, cls = '') {
 
   d.addEventListener('pointermove', (e) => {
     if (!d.classList.contains('dragging')) return;
+    if (d.closest('.basket')) return; // dots inside basket are fixed
     lastX = e.clientX; lastY = e.clientY;
     d.style.position = 'fixed';
     d.style.left = (e.clientX - 26) + 'px';
