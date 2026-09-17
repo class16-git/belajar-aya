@@ -6,864 +6,1553 @@
 <title>Five Great Lessons — Belajar Aya</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--blue:#42A5F5;--purple:#7C4DFF;--cream:#FFF8F0;--shadow:0 4px 24px rgba(0,0,0,.35);--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
-body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:manipulation}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#07071A;--card:#12123A;--gold:#FFD700;
+  --green:#4CAF50;--blue:#42A5F5;--red:#EF5350;
+  --purple:#AB47BC;--orange:#FF7043;--cyan:#26C6DA;
+  --cream:#FFF8F0;--font-h:'Fredoka One',cursive;
+  --font-b:'Quicksand',sans-serif;
+}
+html,body{height:100%;overflow-x:hidden}
+body{
+  background:var(--bg);font-family:var(--font-b);
+  color:var(--cream);touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;user-select:none;
+}
 .screen{display:none;min-height:100dvh;flex-direction:column}
-.screen.active{display:flex}
-.stars{position:fixed;inset:0;pointer-events:none;z-index:0}
-.star{position:absolute;background:#fff;border-radius:50%;animation:twinkle 3s ease-in-out infinite}
-@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.9}}
-.top-bar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
-.top-title{font-family:var(--font-h);font-size:.9rem;color:var(--gold)}
-.top-btn{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
-.top-btn:active{transform:scale(.92)}
-.hero{padding:8px 16px 20px;position:relative;z-index:1;text-align:center}
-.hero-title{font-family:var(--font-h);font-size:1.8rem;color:var(--gold);margin-bottom:4px}
-.hero-sub{font-size:.82rem;opacity:.5}
-.lesson-grid{display:flex;flex-direction:column;gap:12px;padding:0 16px 100px;position:relative;z-index:1}
-.lesson-card{background:var(--card);border-radius:20px;padding:16px;box-shadow:var(--shadow);cursor:pointer;border:none;width:100%;text-align:left;color:var(--cream);display:flex;gap:14px;align-items:center;transition:transform .15s;font-family:var(--font-b)}
-.lesson-card:active{transform:scale(.97)}
-.lesson-icon{font-size:2.5rem;flex-shrink:0}
-.lesson-name{font-family:var(--font-h);font-size:1.1rem;margin-bottom:2px}
-.lesson-desc{font-size:.78rem;opacity:.5;line-height:1.3}
-.lesson-badge{margin-left:auto;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:.8rem}
-.lesson-badge.done{background:var(--green);border-color:var(--green);color:#fff}
-.exp-grid{display:flex;flex-direction:column;gap:10px;padding:0 16px 100px;position:relative;z-index:1}
-.exp-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:14px 16px;cursor:pointer;border:none;color:var(--cream);width:100%;text-align:left;font-family:var(--font-b);transition:all .2s}
-.exp-card:active{transform:scale(.97);background:rgba(255,255,255,.12)}
-.exp-card.done{border-color:var(--green)}
-.exp-num{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:.9rem;flex-shrink:0}
-.exp-card.done .exp-num{background:var(--green);border-color:var(--green);color:#fff}
-.exp-name{font-weight:700;font-size:.9rem}
-.exp-tagline{font-size:.75rem;opacity:.5}
-.exp-area{padding:0 16px 100px;flex:1;position:relative;z-index:1}
-.exp-header{padding:12px 16px 8px;position:relative;z-index:1}
-.exp-title{font-family:var(--font-h);font-size:1.2rem;color:var(--gold);text-align:center;margin-bottom:4px}
-.exp-prompt{font-size:.85rem;opacity:.7;text-align:center;margin-bottom:14px;padding:0 16px}
-.instruction{background:rgba(255,255,255,.07);border-radius:14px;padding:14px 16px;margin:12px 0;font-size:.85rem;line-height:1.6;text-align:center;border:1px solid rgba(255,255,255,.08)}
-.demo-box{background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.1);border-radius:16px;padding:16px;text-align:center;margin:10px 0}
-.demo-label{font-size:.78rem;opacity:.5;margin-bottom:8px}
-.btn{padding:12px 24px;border-radius:14px;border:none;cursor:pointer;font-family:var(--font-b);font-weight:700;font-size:.88rem;transition:transform .12s;display:inline-block}
-.btn:active{transform:scale(.95)}
-.btn-primary{background:var(--gold);color:var(--bg)}
-.btn-secondary{background:rgba(255,255,255,.08);color:var(--cream);border:1px solid rgba(255,255,255,.12)}
-.lesson-back{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);border-radius:12px;padding:8px 14px;font-family:var(--font-b);font-weight:600;font-size:.85rem;cursor:pointer;display:flex;align-items:center;gap:6px;width:fit-content}
-.lesson-back:active{transform:scale(.95)}
-.particle-area{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:16px 0}
-.particle{width:52px;height:52px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.4rem;border:none;transition:transform .2s;flex-shrink:0}
-.particle:active{transform:scale(.85)}
-.particle.selected{box-shadow:0 0 0 4px var(--gold);transform:scale(1.1)}
-.fact-box{background:rgba(76,175,80,.1);border:1px solid rgba(76,175,80,.25);border-radius:14px;padding:14px 16px;margin:10px 0;font-size:.85rem;text-align:center;display:none;line-height:1.6}
-.fact-box.show{display:block}
-.animal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:10px 0}
-.animal-card{background:rgba(255,255,255,.06);border-radius:12px;padding:10px 6px;text-align:center;cursor:pointer;border:none;color:var(--cream);font-family:var(--font-b);transition:transform .15s}
-.animal-card:active{transform:scale(.9)}
-.animal-card .emoji{font-size:1.8rem;display:block;margin-bottom:4px}
-.animal-card .label{font-size:.65rem;opacity:.6}
-.animal-card.selected{background:rgba(255,215,0,.15);border:2px solid var(--gold)}
-.animal-card.correct{background:rgba(76,175,80,.2);border:2px solid var(--green)}
-.animal-card.wrong{background:rgba(239,83,80,.2);border:2px solid #EF5350}
-.food-chain{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;padding:16px 0}
-.chain-item{padding:12px 16px;border-radius:14px;text-align:center;font-size:.8rem;cursor:pointer;border:none;font-family:var(--font-b);color:var(--cream);transition:all .2s;min-width:80px}
-.chain-item:active{transform:scale(.93)}
-.chain-item.done{opacity:.4;cursor:default}
-.chain-arrow{font-size:1.4rem;opacity:.4}
-.mission-card{background:rgba(76,175,80,.1);border:1px solid rgba(76,175,80,.25);border-radius:14px;padding:14px;margin:10px 0;cursor:pointer}
-.mission-card:active{transform:scale(.98)}
-.mission-card .emoji{font-size:1.5rem;margin-bottom:6px}
-.mission-card .title{font-family:var(--font-h);font-size:.85rem;color:var(--green);margin-bottom:4px}
-.mission-card .text{font-size:.78rem;color:rgba(255,255,255,.7);line-height:1.5}
-.home-fab{position:fixed;bottom:20px;left:20px;width:50px;height:50px;border-radius:50%;background:var(--green);color:#fff;font-size:1.3rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100;display:flex;align-items:center;justify-content:center;text-decoration:none}
-.home-fab:active{transform:scale(.9)}
-.parent-fab{position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--gold);color:var(--bg);font-size:1.2rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100}
-.parent-fab:active{transform:scale(.9)}
-.rabbity-fab{position:fixed;bottom:80px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--card);border:2px solid rgba(255,255,255,.15);color:var(--cream);font-size:1.3rem;z-index:99;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-.rabbity-bubble{position:fixed;bottom:140px;right:20px;z-index:98;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:10px 14px;max-width:220px;font-size:.8rem;line-height:1.5;color:var(--cream);box-shadow:0 4px 16px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .3s}
-.rabbity-bubble.show{opacity:1}
-.parent-panel{position:fixed;bottom:0;left:0;right:0;background:var(--cream);color:#333;border-radius:20px 20px 0 0;padding:20px 16px 90px;box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;max-height:70vh;overflow-y:auto;transform:translateY(110%);transition:transform .3s}
-.parent-panel.open{transform:translateY(0)}
-.panel-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
-.panel-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
-.panel-row{margin-bottom:12px}
-.panel-row-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
-.panel-bar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
-.panel-bar-fill{height:100%;border-radius:4px;transition:width .5s}
-.confetti-container{position:fixed;inset:0;pointer-events:none;z-index:9999}
-.confetti-piece{position:absolute;width:10px;height:10px;border-radius:2px;animation:confettiFall 2.5s ease-out forwards}
-@keyframes confettiFall{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+.screen.on{display:flex}
+
+/* Stars */
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;background:#fff;border-radius:50%;animation:tw var(--d,3s) ease-in-out infinite;animation-delay:var(--dl,0s)}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+
+/* Top bar */
+.tbar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:10px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
+.tbar-back,.tbar-btn{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.tbar-back:active,.tbar-btn:active{transform:scale(.9)}
+.tbar-title{font-family:var(--font-h);font-size:.9rem;color:var(--gold)}
+
+/* Universe home */
+.cosmic-hero{padding:16px 16px 8px;position:relative;z-index:1;text-align:center}
+.cosmic-title{font-family:var(--font-h);font-size:1.6rem;color:var(--gold);margin-bottom:4px}
+.cosmic-sub{font-size:.78rem;opacity:.5}
+.universe-visual{
+  position:relative;z-index:1;display:flex;justify-content:center;
+  align-items:center;padding:12px 0 4px;
+}
+.universe-svg{width:280px;height:200px}
+
+/* Lesson cards */
+.lesson-list{display:flex;flex-direction:column;gap:10px;padding:0 16px 100px;position:relative;z-index:1}
+.lcard{
+  background:var(--card);border-radius:18px;padding:14px 16px;
+  box-shadow:0 4px 16px rgba(0,0,0,.35);cursor:pointer;border:none;
+  width:100%;text-align:left;color:var(--cream);display:flex;
+  gap:12px;align-items:center;transition:transform .15s;
+  font-family:var(--font-b);
+}
+.lcard:active{transform:scale(.97)}
+.lcard-icon{font-size:2.2rem;flex-shrink:0}
+.lcard-name{font-family:var(--font-h);font-size:1rem}
+.lcard-sub{font-size:.72rem;opacity:.5;line-height:1.3}
+.lcard-arrow{margin-left:auto;font-size:.85rem;opacity:.4}
+
+/* Experience view */
+.xp-area{padding:0 16px 100px;flex:1;position:relative;z-index:1}
+.xp-card{
+  background:var(--card);border-radius:18px;padding:14px;
+  margin:8px 0;box-shadow:0 4px 16px rgba(0,0,0,.35);
+  cursor:pointer;border:none;width:100%;text-align:left;
+  color:var(--cream);transition:transform .15s;font-family:var(--font-b);
+  display:flex;gap:12px;align-items:center;
+}
+.xp-card:active{transform:scale(.97)}
+.xp-num{
+  width:36px;height:36px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-h);font-size:.9rem;flex-shrink:0;
+}
+.xp-name{font-family:var(--font-h);font-size:.95rem}
+.xp-done{opacity:.4;text-decoration:line-through}
+
+/* Story view */
+.story-area{padding:0 16px 100px;flex:1;position:relative;z-index:1}
+.story-card{
+  background:var(--card);border-radius:20px;padding:20px;
+  margin:12px 0;box-shadow:0 4px 16px rgba(0,0,0,.35);
+  border:none;width:100%;text-align:left;color:var(--cream);
+  font-family:var(--font-b);
+}
+.story-q{
+  font-family:var(--font-h);font-size:1.1rem;
+  color:var(--gold);margin-bottom:10px;
+}
+.story-text{
+  font-size:.9rem;line-height:1.7;margin-bottom:14px;
+  min-height:60px;
+}
+.story-nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.snav{
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  color:var(--cream);border-radius:10px;padding:8px 14px;
+  font-family:var(--font-b);font-weight:600;font-size:.82rem;
+  cursor:pointer;transition:all .15s;flex:1;min-width:100px;text-align:center;
+}
+.snav:active{transform:scale(.95)}
+.snav.primary{background:rgba(255,215,0,.15);border-color:var(--gold);color:var(--gold)}
+.snav.done{background:rgba(76,175,80,.15);border-color:var(--green);color:var(--green)}
+
+/* Interactive scene */
+.scene{padding:0 16px 100px;flex:1;position:relative;z-index:1}
+.scene-viz{
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;padding:20px;min-height:200px;
+  display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:16px;margin:10px 0;
+  position:relative;overflow:hidden;
+}
+.scene-q{
+  background:rgba(255,255,255,.07);border-radius:14px;
+  padding:10px 14px;margin:8px 0;font-size:.82rem;text-align:center;
+  line-height:1.5;border:1px solid rgba(255,255,255,.08);
+}
+.scene-choices{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.schoice{
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  border-radius:12px;padding:10px 16px;font-family:var(--font-b);
+  font-weight:600;font-size:.85rem;cursor:pointer;color:var(--cream);
+  transition:all .15s;min-width:100px;text-align:center;
+}
+.schoice:active{transform:scale(.95)}
+.schoice.right{background:rgba(76,175,80,.2);border-color:var(--green);color:var(--green)}
+.schoice.wrong{background:rgba(239,83,80,.2);border-color:var(--red);color:var(--red)}
+
+/* Observation */
+.obs-panel{
+  background:rgba(76,175,80,.1);border:1px solid rgba(76,175,80,.3);
+  border-radius:14px;padding:12px 16px;margin:10px 0;
+}
+.obs-panel .obs-title{font-family:var(--font-h);color:var(--green);font-size:.9rem;margin-bottom:4px}
+.obs-panel .obs-text{font-size:.82rem;line-height:1.5;color:var(--cream)}
+
+/* Confetti */
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:9999}
+.conf{position:absolute;width:9px;height:9px;border-radius:2px;animation:cf 2.5s ease-out forwards}
+@keyframes cf{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+
+/* FABs */
+.fab{position:fixed;width:50px;height:50px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.fab:active{transform:scale(.9)}
+.fab-home{left:20px;bottom:20px;background:var(--green);color:#fff}
+.fab-parent{right:20px;bottom:20px;background:var(--gold);color:var(--bg)}
+.fab-rabbity{right:20px;bottom:80px;background:var(--card);border:2px solid rgba(255,255,255,.15);color:var(--cream)}
+.bubble{position:fixed;bottom:138px;right:20px;z-index:99;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:10px 14px;max-width:210px;font-size:.8rem;line-height:1.5;box-shadow:0 4px 14px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .25s}
+.bubble.on{opacity:1}
+
+/* Parent panel */
+.ppanel{position:fixed;bottom:0;left:0;right:0;background:var(--cream);color:#333;border-radius:20px 20px 0 0;padding:20px 16px 90px;box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;max-height:70vh;overflow-y:auto;transform:translateY(110%);transition:transform .3s}
+.ppanel.on{transform:translateY(0)}
+.phan-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
+.phan-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
+.prow{margin-bottom:12px}
+.prow-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
+.pbar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
+.pbar-fill{height:100%;border-radius:4px;transition:width .5s}
 </style>
 </head>
 <body>
+
 <div class="stars" id="stars"></div>
 
-<div class="screen active" id="screen-home">
-  <div class="top-bar">
-    <a href="index.html" class="top-btn">←</a>
-    <div class="top-title">Five Great Lessons</div>
-    <div style="width:44px"></div>
+<!-- HOME: Universe Map -->
+<div class="screen on" id="s-home">
+  <div class="tbar">
+    <a href="index.html" class="tbar-btn">&#8592;</a>
+    <div class="tbar-title">Five Great Lessons</div>
+    <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
   </div>
-  <div class="hero">
-    <div style="font-size:2.5rem;margin-bottom:4px;">🌍</div>
-    <div class="hero-title">We Are All Connected</div>
-    <div class="hero-sub">Five Great Lessons — explore the universe</div>
+  <div class="cosmic-hero">
+    <div class="cosmic-title">The Story of Everything</div>
+    <div class="cosmic-sub">Everything has a story. Everything is connected.</div>
+    <div class="universe-visual">
+      <svg class="universe-svg" viewBox="0 0 280 200">
+        <!-- Sun -->
+        <circle cx="140" cy="30" r="16" fill="#FFD700" opacity="0.9">
+          <animate attributeName="r" values="16;18;16" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Mercury -->
+        <circle cx="168" cy="42" r="4" fill="#aaa">
+          <animateTransform attributeName="transform" type="rotate" from="0 140 30" to="360 140 30" dur="4s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Venus -->
+        <circle cx="182" cy="52" r="6" fill="#FFB74D">
+          <animateTransform attributeName="transform" type="rotate" from="30 140 30" to="390 140 30" dur="6s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Earth orbit -->
+        <ellipse cx="140" cy="30" rx="70" ry="70" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <!-- Earth -->
+        <circle cx="210" cy="30" r="7" fill="#42A5F5">
+          <animateTransform attributeName="transform" type="rotate" from="0 140 30" to="360 140 30" dur="8s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Mars -->
+        <circle cx="195" cy="80" r="5" fill="#EF5350">
+          <animateTransform attributeName="transform" type="rotate" from="60 140 30" to="420 140 30" dur="12s" repeatCount="indefinite"/>
+        </circle>
+        <!-- Stars scattered -->
+        <circle cx="20" cy="120" r="1.5" fill="#fff" opacity="0.5"/>
+        <circle cx="60" cy="80" r="1" fill="#fff" opacity="0.3"/>
+        <circle cx="240" cy="100" r="1.5" fill="#fff" opacity="0.4"/>
+        <circle cx="260" cy="150" r="1" fill="#fff" opacity="0.5"/>
+        <circle cx="30" cy="170" r="1.5" fill="#fff" opacity="0.3"/>
+        <circle cx="250" cy="40" r="1" fill="#fff" opacity="0.4"/>
+        <circle cx="10" cy="60" r="1" fill="#fff" opacity="0.3"/>
+        <circle cx="270" cy="180" r="1.5" fill="#fff" opacity="0.4"/>
+        <!-- Connection lines -->
+        <line x1="140" y1="46" x2="140" y2="75" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="148" y="68" fill="rgba(255,255,255,0.3)" font-size="9" font-family="Quicksand,sans-serif">Earth has life</text>
+      </svg>
+    </div>
   </div>
-  <div class="lesson-grid" id="lesson-grid"></div>
+  <div class="lesson-list" id="lesson-list"></div>
 </div>
 
-<div class="screen" id="screen-lessons">
-  <div class="exp-header">
-    <button class="lesson-back" onclick="goBack()">← Back</button>
-    <div class="exp-title" id="lesson-title"></div>
-    <div class="exp-prompt" id="lesson-prompt"></div>
+<!-- LESSON: list of experiences -->
+<div class="screen" id="s-lesson">
+  <div class="tbar">
+    <button class="tbar-back" id="lesson-back">&#8592;</button>
+    <div class="tbar-title" id="lesson-title">Lesson</div>
+    <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
   </div>
-  <div class="exp-grid" id="exp-grid"></div>
+  <div class="xp-area" id="xp-area"></div>
 </div>
 
-<div class="screen" id="screen-exp">
-  <div class="exp-header">
-    <button class="lesson-back" onclick="goBack()">← Back</button>
-    <div class="exp-title" id="exp-title"></div>
-    <div class="exp-prompt" id="exp-prompt"></div>
+<!-- STORY: read the big story -->
+<div class="screen" id="s-story">
+  <div class="tbar">
+    <button class="tbar-back" onclick="goBack()">&#8592;</button>
+    <div class="tbar-title" id="story-lesson-title">Story</div>
+    <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
   </div>
-  <div class="exp-area" id="exp-area"></div>
+  <div class="story-area">
+    <div class="story-card">
+      <div class="story-q" id="story-q">The Big Question</div>
+      <div class="story-text" id="story-text">...</div>
+      <div class="story-nav">
+        <button class="snav" onclick="prevStory()">&#8592; Back</button>
+        <button class="snav primary" id="story-next" onclick="nextStory()">Next &#8594;</button>
+      </div>
+      <div style="margin-top:10px">
+        <button class="snav" id="story-explore" onclick="goExplore()">Explore &#128269;</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-<a href="index.html" class="home-fab">🏠</a>
-<button class="parent-fab" onclick="toggleParent()">👤</button>
-<button class="rabbity-fab" onclick="rabbitySpeak()">🐰</button>
-<div class="rabbity-bubble" id="rabbity-bubble"></div>
-
-<div class="parent-panel" id="parent-panel">
-  <div class="panel-handle"></div>
-  <button onclick="toggleParent()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">✕</button>
-  <div class="panel-title">📊 Learning Progress</div>
-  <div id="parent-content"></div>
+<!-- EXPLORE: interactive experience -->
+<div class="screen" id="s-explore">
+  <div class="tbar">
+    <button class="tbar-back" onclick="goBack()">&#8592;</button>
+    <div class="tbar-title" id="exp-title">Experience</div>
+    <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
+  </div>
+  <div class="scene" id="scene-area"></div>
 </div>
 
-<div class="confetti-container" id="confetti-container"></div>
+<!-- FABs -->
+<a href="index.html" class="fab fab-home">&#127968;</a>
+<button class="fab fab-parent" onclick="togglePanel()">&#128100;</button>
+<button class="fab fab-rabbity" onclick="rabbitySpeak()">&#128049;</button>
+<div class="bubble" id="bubble"></div>
+
+<!-- Parent Panel -->
+<div class="ppanel" id="ppanel">
+  <div class="phan-handle"></div>
+  <button onclick="togglePanel()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">&#10005;</button>
+  <div class="phan-title">&#128202; Cosmic Journey</div>
+  <div id="pcontent"></div>
+</div>
+
+<div class="confetti" id="confetti"></div>
 
 <script>
+// ─────────────────────────────────────────────
+// DATA: Five Great Lessons
+// Architecture: WONDER → STORY → EXPERIENCE → OBSERVATION → QUESTION
+// ─────────────────────────────────────────────
 var LESSONS = [
   {
-    id: "universe", emoji: "✨", title: "The Universe",
-    desc: "Particles, gravity, solar system, and Earth",
-    missions: ["Make a cloud from cotton!", "Drop a pencil and see gravity in action!", "Name the planets!"],
-    exps: [
-      { id: "particles", name: "Particles Spread", tagline: "Everything is made of tiny particles", type: "particles" },
-      { id: "gravity", name: "Gravity", tagline: "Things fall down, not up", type: "gravity" },
-      { id: "solar", name: "Solar System", tagline: "Earth orbits the Sun", type: "solar" },
-      { id: "earth", name: "Earth History", tagline: "4.5 billion years in a flash", type: "earth" },
-      { id: "water", name: "Water and Erosion", tagline: "Water shapes Earth over millions of years", type: "water" }
+    id: 1, emoji: "&#127756;", color: "#FFD700",
+    name: "The Coming of the Universe",
+    shortName: "Universe",
+    question: "Where did everything around us come from?",
+    story: [
+      { q: "Where did everything come from?", text: "Long before there were people, animals, trees, oceans, or mountains, there was a universe. It started with a tiny, tiny point — smaller than anything you can imagine. Then it grew. Stars formed. Our Sun was born. And one special planet — Earth — began to take shape." },
+      { q: "What is the Sun?", text: "The Sun looks like a bright light in the sky. But it is actually a star — just much, much closer to us than other stars. It is so far away that light from the Sun takes 8 minutes to reach Earth. The Sun gives Earth almost all of its light and warmth." },
+      { q: "How did Earth change?", text: "Earth was not always the way it looks today. Long ago, it was so hot that rock melted like lava. Slowly, over an enormous amount of time, Earth cooled down. Mountains pushed up. Water collected in oceans. The air became something we could breathe. And then — something amazing happened." }
+    ],
+    experiences: [
+      {
+        id: "particles", emoji: "&#129514;", name: "Hot, Warm, Cold — Particles",
+        color: "#FF7043",
+        scene: "particles"
+      },
+      {
+        id: "gravity", emoji: "&#127755;", name: "Gravity — Why Things Fall",
+        color: "#26C6DA",
+        scene: "gravity"
+      },
+      {
+        id: "solar", emoji: "&#127775;", name: "Solar System — Earth Orbits the Sun",
+        color: "#FFD700",
+        scene: "solar"
+      },
+      {
+        id: "volcano", emoji: "&#128293;", name: "Volcano — Hot Rock Inside Earth",
+        color: "#EF5350",
+        scene: "volcano"
+      },
+      {
+        id: "erosion", emoji: "&#127754;", name: "Water Changes Land — Erosion",
+        color: "#42A5F5",
+        scene: "erosion"
+      }
     ]
   },
   {
-    id: "life", emoji: "🌱", title: "Life",
-    desc: "Living things, plant needs, and classification",
-    missions: ["Plant a bean seed!", "Watch ants outside!", "Compare 2 different leaves!"],
-    exps: [
-      { id: "alive", name: "What is Alive?", tagline: "Moves, eats, grows", type: "alive" },
-      { id: "plant", name: "Plant Needs", tagline: "Air, light, and water", type: "plant" },
-      { id: "timeline", name: "Timeline of Life", tagline: "From the first cell to now", type: "timeline" },
-      { id: "classify", name: "Classification", tagline: "Collect and classify", type: "classify" },
-      { id: "foodchain", name: "Food Chain", tagline: "Energy flows from the Sun", type: "foodchain" }
+    id: 2, emoji: "&#127807;", color: "#66BB6A",
+    name: "The Coming of Life",
+    shortName: "Life",
+    question: "How did Earth become full of living things?",
+    story: [
+      { q: "When did life appear?", text: "Earth existed for a very, very long time before there was any life at all. No plants. No animals. Just rock, water, and air. Then, somewhere, in the ocean or in warm mud, the very first living thing appeared. It was so tiny you could not see it without a microscope. But it was alive." },
+      { q: "How did life become so different?", text: "Over millions and millions of years, life changed and diversified. Simple life became more complex. Some creatures lived in water. Some crawled onto land. Some grew wings. Some grew tall like trees. Life spread into every corner of Earth — deserts, oceans, mountains, ice." },
+      { q: "Are humans the most important?", text: "Humans appeared very, very recently in Earths history. Dinosaurs lived for 165 million years. Humans have existed for only about 200,000 years. Life is not a ladder with humans at the top. Life is a branching tree — and every branch is equally part of the story." }
+    ],
+    experiences: [
+      {
+        id: "alive", emoji: "&#128054;", name: "Is It Alive? — Living vs Nonliving",
+        color: "#66BB6A",
+        scene: "alive"
+      },
+      {
+        id: "timeline", emoji: "&#128197;", name: "Timeline of Life — Who Came First?",
+        color: "#AB47BC",
+        scene: "timeline"
+      },
+      {
+        id: "classify", emoji: "&#128024;", name: "Sort the Animals — Classification",
+        color: "#FF9800",
+        scene: "classify"
+      },
+      {
+        id: "ecosystem", emoji: "&#127795;", name: "Build an Ecosystem — Everything Connects",
+        color: "#4CAF50",
+        scene: "ecosystem"
+      }
     ]
   },
   {
-    id: "humans", emoji: "🧒", title: "Humans",
-    desc: "Basic needs, shelter, and cooperation",
-    missions: ["Draw your home!", "Try cooking using only one hand!", "Count your classmates!"],
-    exps: [
-      { id: "needs", name: "Human Needs", tagline: "Food, water, shelter, friends", type: "needs" },
-      { id: "shelter", name: "Shelter", tagline: "From caves to smart homes", type: "shelter" },
-      { id: "tools", name: "Tools and Technology", tagline: "Hands, tools, and machines", type: "tools" },
-      { id: "cooperate", name: "Working Together", tagline: "Together is better", type: "cooperate" }
+    id: 3, emoji: "&#128104;", color: "#FF7043",
+    name: "The Coming of Human Beings",
+    shortName: "Humans",
+    question: "What makes humans special?",
+    story: [
+      { q: "How are humans part of life?", text: "Humans are one branch in the story of life. Like all living things, we need food, water, shelter, and safety. But humans also have remarkable gifts — the ability to think, imagine, create, communicate, and cooperate across generations." },
+      { q: "What do humans need?", text: "Every human community shares the same fundamental needs: food, water, shelter, clothing, safety, love, belonging, and learning. But different communities meet these needs in different ways — and that is what makes human culture so wonderfully varied." },
+      { q: "How does knowledge grow?", text: "No human has to discover everything from scratch. A person who lived 300 years ago discovered something. They shared it. Someone else learned it, improved it, and shared it again. Today you benefit from millions of discoveries made by people you will never meet. Knowledge grows because humans cooperate." }
+    ],
+    experiences: [
+      {
+        id: "needs", emoji: "&#127774;", name: "What Do Humans Need?",
+        color: "#FF7043",
+        scene: "needs"
+      },
+      {
+        id: "tools", emoji: "&#128296;", name: "Tool Evolution — Problem Solving",
+        color: "#78909C",
+        scene: "tools"
+      },
+      {
+        id: "cooperate", emoji: "&#128170;", name: "Cooperation — Together Is Better",
+        color: "#AB47BC",
+        scene: "cooperate"
+      }
     ]
   },
   {
-    id: "language", emoji: "✍️", title: "Communication",
-    desc: "Symbols, writing, and messages",
-    missions: ["Write your name!", "Send a secret message to a friend!", "Talk without words!"],
-    exps: [
-      { id: "symbols", name: "Symbols and Signs", tagline: "Pictures, symbols, letters", type: "symbols" },
-      { id: "encoding", name: "Encoding Messages", tagline: "Send secret messages with codes!", type: "encoding" },
-      { id: "messages", name: "Message Chain", tagline: "From brain to brain in seconds", type: "messages" }
+    id: 4, emoji: "&#9997;", color: "#42A5F5",
+    name: "The Story of Communication",
+    shortName: "Communication",
+    question: "How can thoughts travel to other people?",
+    story: [
+      { q: "How do we share ideas?", text: "Imagine you discover where delicious fruit grows, but your best friend lives far away. How could you tell them? You could go there. You could make a sound. You could draw a picture. But what if you want someone who lives 1000 years from now to know your idea?" },
+      { q: "What is writing?", text: "Writing is a way to put thoughts into marks that can be seen and understood later — even by people you will never meet. The earliest writing was pictures drawn on cave walls. Over time, pictures became symbols. Symbols became letters. Letters could represent the sounds of any word." },
+      { q: "Why does writing matter?", text: "Before writing, knowledge had to be passed from person to person by speaking. It was easily forgotten or changed. Writing allowed knowledge to survive across time and distance. Every book, every map, every recipe, every letter — all of it connects us to the thoughts of people we will never meet." }
+    ],
+    experiences: [
+      {
+        id: "symbols", emoji: "&#128270;", name: "Invent a Symbol — Shared Meaning",
+        color: "#42A5F5",
+        scene: "symbols"
+      },
+      {
+        id: "picturemsg", emoji: "&#128444;", name: "Picture Message — From Drawing to Symbol",
+        color: "#FFCA28",
+        scene: "picturemsg"
+      },
+      {
+        id: "timetravel", emoji: "&#128640;", name: "Message Through Time — Writing Survives",
+        color: "#AB47BC",
+        scene: "timetravel"
+      }
     ]
   },
   {
-    id: "numbers", emoji: "🔢", title: "Numbers",
-    desc: "Numbers, patterns, and mathematics",
-    missions: ["Count steps to the kitchen!", "Make a pattern with blocks!", "Share 6 candies with 2 friends!"],
-    exps: [
-      { id: "counting", name: "Counting Objects", tagline: "Match numbers to amounts", type: "counting" },
-      { id: "skipcount", name: "Skip Counting", tagline: "2, 4, 6, 8 — skipping in multiples!", type: "skipcount" },
-      { id: "decimal", name: "Numbers and Zero", tagline: "Zero changes everything!", type: "decimal" }
+    id: 5, emoji: "&#128200;", color: "#AB47BC",
+    name: "The Story of Numbers",
+    shortName: "Numbers",
+    question: "Why did humans need numbers?",
+    story: [
+      { q: "How did counting start?", text: "Imagine you have sheep. They go outside every morning and come back at night. How do you know if all of them came home? You could try to remember. But what if you have 100 sheep? Humans needed a way to track quantities — and numbers were the solution." },
+      { q: "What are numbers?", text: "Numbers are symbols that represent quantities. Three dots and the symbol 3 both mean the same thing: the quantity of three. Numbers let humans record, compare, and calculate quantities — and eventually describe patterns in the world around them." },
+      { q: "Why are patterns important?", text: "Numbers help us see patterns. Skip counting by 2s reveals even numbers. Skip counting by 5s reveals multiples of 5. Patterns in numbers are connected to patterns in the real world — the rhythm of music, the symmetry of snowflakes, the cycles of seasons." }
+    ],
+    experiences: [
+      {
+        id: "match", emoji: "&#128017;", name: "Match the Sheep — One-to-One",
+        color: "#AB47BC",
+        scene: "match"
+      },
+      {
+        id: "tally", emoji: "&#128196;", name: "Tally Marks — Recording Quantities",
+        color: "#FF7043",
+        scene: "tally"
+      },
+      {
+        id: "skip", emoji: "&#127933;", name: "Skip Counting — Patterns in Numbers",
+        color: "#42A5F5",
+        scene: "skip"
+      },
+      {
+        id: "placevalue", emoji: "&#128293;", name: "Place Value — Units, Tens, Hundreds",
+        color: "#EF5350",
+        scene: "placevalue"
+      }
     ]
   }
 ];
 
-var state = { currentLesson: null, currentExp: null, history: ["home"], progress: {} };
+// ─────────────────────────────────────────────
+// SCENES — interactive experiences
+// ─────────────────────────────────────────────
+var SCENES = {
 
-function lsGet(k, def) {
-  try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : def; } catch(e) { return def; }
-}
-function lsSet(k, v) {
-  try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {}
-}
+  // LESSON 1 — Universe
+  particles: {
+    title: "Hot, Warm, Cold — Particles",
+    bg: "#1a0a00",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Tap Hot, Warm, or Cold to change the temperature. What do you notice about how the particles move?</div>' +
+        '<div class="scene-viz" id="particle-viz" style="background:#1a0a00;min-height:160px">' +
+        '<div style="display:flex;gap:12px;margin-bottom:12px">' +
+        '<button class="schoice" onclick="setTemp(\'cold\')">Cold</button>' +
+        '<button class="schoice" onclick="setTemp(\'warm\')">Warm</button>' +
+        '<button class="schoice" onclick="setTemp(\'hot\')">Hot</button></div>' +
+        '<div id="particle-box" style="width:240px;height:80px;border:2px solid rgba(255,255,255,.2);border-radius:10px;position:relative;overflow:hidden;background:rgba(0,0,0,.3)"></div>' +
+        '<div id="particle-obs" style="display:none;margin-top:10px;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">What changed?</div><div class="obs-text">When things get hotter, particles move faster. When they get colder, they slow down. But they never stop completely!</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'particles\')" style="margin-top:10px">I noticed that! &#128640;</button></div>';
 
-function init() {
-  state.progress = lsGet("fgl-progress", {});
+      window.tempParticles = [];
+      window.currentTemp = "cold";
+      setTemp("cold");
+    }
+  },
+
+  gravity: {
+    title: "Gravity — Why Things Fall",
+    bg: "#0a1a2a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Tap an object, then tap inside the box. What happens?</div>' +
+        '<div class="scene-viz" id="gravity-viz" style="background:#0a1a2a;min-height:200px">' +
+        '<div style="display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap;justify-content:center">' +
+        '<button class="schoice" onclick="gravSet(\'&#129704;\')" style="font-size:1.5rem;padding:8px">&#129704;</button>' +
+        '<button class="schoice" onclick="gravSet(\'&#127935;\')" style="font-size:1.5rem;padding:8px">&#127935;</button>' +
+        '<button class="schoice" onclick="gravSet(\'&#128140;\')" style="font-size:1.5rem;padding:8px">&#128140;</button></div>' +
+        '<div id="grav-box" onclick="gravDrop(event)" style="width:260px;height:120px;border:2px dashed rgba(255,255,255,.2);border-radius:10px;position:relative;overflow:hidden;background:rgba(0,0,0,.3);cursor:crosshair;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;flex-direction:column;align-items:center;padding-top:10px">' +
+        '<div style="font-size:.7rem;opacity:.3">Tap inside here after choosing an object</div></div>' +
+        '<div id="grav-obs" style="display:none;margin-top:10px;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">What is gravity?</div><div class="obs-text">Gravity is the pull that draws objects toward each other. The larger the object, the stronger the pull. Earth is so massive that it pulls everything toward its center — that is why things fall down.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'gravity\')" style="margin-top:10px">That makes sense! &#128640;</button></div>';
+    }
+  },
+
+  solar: {
+    title: "Solar System — Earth Orbits the Sun",
+    bg: "#07071A",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Watch the planets orbit the Sun. Which one gives Earth most of its light? Which one does Earth travel around?</div>' +
+        '<div class="scene-viz" style="min-height:220px;background:radial-gradient(ellipse at center,rgba(255,215,0,.1) 0%,transparent 60%)">' +
+        '<svg viewBox="0 0 300 220" style="width:280px;height:200px">' +
+        '<circle cx="150" cy="110" r="18" fill="#FFD700" opacity="0.95"><animate attributeName="r" values="18;20;18" dur="4s" repeatCount="indefinite"/></circle>' +
+        '<circle cx="150" cy="110" r="18" fill="#FFD700" opacity="0.3"/><circle cx="150" cy="110" r="28" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>' +
+        '<circle cx="150" cy="110" r="38" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>' +
+        '<circle cx="150" cy="110" r="50" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>' +
+        '<circle cx="150" cy="110" r="65" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>' +
+        '<circle cx="175" cy="108" r="5" fill="#aaa"><animateTransform attributeName="transform" type="rotate" from="0 150 110" to="360 150 110" dur="5s" repeatCount="indefinite"/></circle>' +
+        '<circle cx="188" cy="115" r="7" fill="#FFB74D"><animateTransform attributeName="transform" type="rotate" from="40 150 110" to="400 150 110" dur="8s" repeatCount="indefinite"/></circle>' +
+        '<circle cx="200" cy="110" r="7" fill="#42A5F5"><animateTransform attributeName="transform" type="rotate" from="0 150 110" to="360 150 110" dur="12s" repeatCount="indefinite"/></circle>' +
+        '<circle cx="190" cy="135" r="5" fill="#EF5350"><animateTransform attributeName="transform" type="rotate" from="70 150 110" to="430 150 110" dur="18s" repeatCount="indefinite"/></circle>' +
+        '<text x="60" y="108" fill="rgba(255,255,255,.3)" font-size="8" font-family="Quicksand,sans-serif">Mercury</text>' +
+        '<text x="70" y="118" fill="rgba(255,255,255,.3)" font-size="8" font-family="Quicksand,sans-serif">Venus</text>' +
+        '<text x="88" y="108" fill="rgba(66,165,245,.6)" font-size="8" font-family="Quicksand,sans-serif">Earth</text>' +
+        '<text x="160" y="30" fill="#FFD700" font-size="10" font-family="Fredoka One,cursive">Sun</text></svg></div>' +
+        '<div class="scene-choices" style="margin-top:12px">' +
+        '<button class="schoice" onclick="solarQuiz(this,\'wrong\')">The Moon</button>' +
+        '<button class="schoice" onclick="solarQuiz(this,\'right\')">The Sun</button></div>' +
+        '<div id="solar-obs" style="display:none;margin-top:10px;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Correct! The Sun lights up Earth.</div><div class="obs-text">Earth travels around the Sun in a path called an orbit. One complete orbit takes one year. Earth also spins like a top — that is why we have day and night.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'solar\')" style="margin-top:10px">I understand orbits! &#128640;</button></div>';
+    }
+  },
+
+  volcano: {
+    title: "Volcano — Hot Rock Inside Earth",
+    bg: "#1a0500",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Move the slider to change the pressure inside the volcano. What happens as pressure increases?</div>' +
+        '<div class="scene-viz" style="background:#1a0500;min-height:180px">' +
+        '<div style="text-align:center;margin-bottom:8px">' +
+        '<button class="schoice" onclick="setVolcano(1)">Low Pressure</button>' +
+        '<button class="schoice" onclick="setVolcano(2)">Medium</button>' +
+        '<button class="schoice" onclick="setVolcano(3)">High Pressure</button></div>' +
+        '<div style="position:relative;width:200px;height:120px;margin:0 auto">' +
+        '<div style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:120px;height:60px;background:#5D4037;border-radius:4px 4px 0 0"></div>' +
+        '<div style="position:absolute;bottom:55px;left:50%;transform:translateX(-50%);width:30px;height:50px;background:#795548;clip-path:polygon(50% 0%,100% 100%,0% 100%)"></div>' +
+        '<div id="lava-top" style="position:absolute;bottom:95px;left:50%;transform:translateX(-50%);width:20px;height:10px;background:#FF5722;border-radius:50%;opacity:0;transition:all .5s"></div>' +
+        '<div id="lava-erupt" style="position:absolute;bottom:95px;left:50%;transform:translateX(-50%);width:20px;height:0;background:linear-gradient(to top,#FF5722,#FFEB3B);border-radius:4px;opacity:0;transition:all .8s"></div>' +
+        '<div id="lava-ash" style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:100px;height:0;opacity:0;transition:all 1s;text-align:center;font-size:1.5rem"></div></div>' +
+        '<div id="volcano-obs" style="display:none;margin-top:10px;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Pressure builds eruption.</div><div class="obs-text">Deep inside Earth, rock is so hot it melts into liquid called magma. When pressure builds up, magma pushes upward — and erupts as lava, ash, and gas. This is a volcanic eruption.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'volcano\')" style="margin-top:10px">Eruptions are powerful! &#128640;</button></div>';
+    }
+  },
+
+  erosion: {
+    title: "Water Changes Land — Erosion",
+    bg: "#0a1a2a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Watch water flow down the mountain. What happens to the land over time?</div>' +
+        '<div class="scene-viz" style="background:#0a1a2a;min-height:180px">' +
+        '<div style="position:relative;width:260px;height:130px;margin:0 auto">' +
+        '<div style="position:absolute;bottom:0;left:0;right:0;height:60px;background:#4E342E;border-radius:4px 4px 0 0;clip-path:polygon(0% 100%,20% 30%,50% 0%,80% 30%,100% 100%)"></div>' +
+        '<div id="river-flow" style="position:absolute;bottom:30px;left:50%;transform:translateX(-50%);width:12px;height:30px;background:linear-gradient(to bottom,#42A5F5,transparent);border-radius:6px"></div>' +
+        '<div style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);width:80px;height:8px;background:#42A5F5;border-radius:4px;opacity:.6" id="river-base"></div>' +
+        '<div id="erosion-valley" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:0;height:10px;background:#6D4C41;transition:width 1s;border-radius:0 0 20px 20px"></div></div>' +
+        '<button class="snav primary" onclick="runErosion()" style="margin-top:10px">Pour the rain! &#127783;</button>' +
+        '<div id="erosion-obs" style="display:none;margin-top:10px;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Water carved a valley.</div><div class="obs-text">Over very long time, flowing water slowly wears away rock and soil. This is called erosion. Rivers, rain, and wind all shape the land — carving valleys, canyons, and coastlines.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'erosion\')" style="margin-top:10px">Erosion shapes Earth! &#128640;</button></div>';
+    }
+  },
+
+  // LESSON 2 — Life
+  alive: {
+    title: "Is It Alive?",
+    bg: "#0a1a0a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Tap the things that are alive. How do you know?</div>' +
+        '<div class="scene-viz" style="background:#0a1a0a;min-height:200px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center">' +
+        '<button class="schoice" id="a-rock" onclick="aliveCheck(this,\'no\')" style="font-size:2.5rem;padding:12px">&#129704;</button>' +
+        '<button class="schoice" id="a-cat" onclick="aliveCheck(this,\'yes\')" style="font-size:2.5rem;padding:12px">&#128008;</button>' +
+        '<button class="schoice" id="a-tree" onclick="aliveCheck(this,\'yes\')" style="font-size:2.5rem;padding:12px">&#127807;</button>' +
+        '<button class="schoice" id="a-cloud" onclick="aliveCheck(this,\'no\')" style="font-size:2.5rem;padding:12px">&#127783;</button>' +
+        '<button class="schoice" id="a-flower" onclick="aliveCheck(this,\'yes\')" style="font-size:2.5rem;padding:12px">&#127803;</button>' +
+        '<button class="schoice" id="a-robot" onclick="aliveCheck(this,\'no\')" style="font-size:2.5rem;padding:12px">&#129302;</button></div>' +
+        '<div id="alive-obs" style="display:none;margin-top:10px;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Living things grow, need food, and reproduce.</div><div class="obs-text">Rocks, clouds, and robots do not eat, grow, or make more of themselves. Living things do all of these. The cat, tree, and flower are alive. The rock, cloud, and robot are not.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'alive\')" style="margin-top:10px">I can tell what is alive! &#128640;</button></div>';
+    }
+  },
+
+  timeline: {
+    title: "Timeline of Life — Who Came First?",
+    bg: "#0a0a1a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Drag the events to put them in order — oldest first, most recent last.</div>' +
+        '<div class="scene-viz" style="background:#0a0a1a;min-height:220px">' +
+        '<div style="display:flex;flex-direction:column;gap:8px;align-items:center" id="tl-items">' +
+        '<div class="schoice" draggable="true" data-tl="dinos" ondragstart="tlDrag(event)" ondragover="tlOver(event)" ondrop="tlDrop(event)" style="width:220px">&#128006; Dinosaurs ruled Earth</div>' +
+        '<div class="schoice" draggable="true" data-tl="earth" ondragstart="tlDrag(event)" ondragover="tlOver(event)" ondrop="tlDrop(event)" style="width:220px">&#127757; Earth formed</div>' +
+        '<div class="schoice" draggable="true" data-tl="life" ondragstart="tlDrag(event)" ondragover="tlOver(event)" ondrop="tlDrop(event)" style="width:220px">&#129514; First life in the ocean</div>' +
+        '<div class="schoice" draggable="true" data-tl="humans" ondragstart="tlDrag(event)" ondragover="tlOver(event)" ondrop="tlDrop(event)" style="width:220px">&#128104; Humans appeared</div>' +
+        '<div class="schoice" draggable="true" data-tl="land" ondragstart="tlDrag(event)" ondragover="tlOver(event)" ondrop="tlDrop(event)" style="width:220px">&#128039; Animals moved to land</div></div>' +
+        '<button class="snav" onclick="checkTimeline()" style="margin-top:10px">Check Order &#10004;</button>' +
+        '<div id="tl-obs" style="display:none;margin-top:10px;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Life appeared very late in Earths story.</div><div class="obs-text">Earth is 4.5 billion years old. Humans have been here for only about 200,000 years. That is like 4.5km on a map — humans would be the last millimeter.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'timeline\')" style="margin-top:10px">Earth is so old! &#128640;</button></div>';
+    }
+  },
+
+  classify: {
+    title: "Sort the Animals — Classification",
+    bg: "#0a1a0a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Sort these animals by their shared features. Tap one feature at a time.</div>' +
+        '<div class="scene-viz" style="background:#0a1a0a;min-height:160px;flex-direction:column;gap:10px">' +
+        '<div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center" id="animal-pool">' +
+        '<button class="schoice" onclick="classifyAnimal(this,\'wing\')" style="font-size:2rem;padding:10px">&#128036;</button>' +
+        '<button class="schoice" onclick="classifyAnimal(this,\'wing\')" style="font-size:2rem;padding:10px">&#128038;</button>' +
+        '<button class="schoice" onclick="classifyAnimal(this,\'swim\')" style="font-size:2rem;padding:10px">&#128031;</button>' +
+        '<button class="schoice" onclick="classifyAnimal(this,\'swim\')" style="font-size:2rem;padding:10px">&#128025;</button>' +
+        '<button class="schoice" onclick="classifyAnimal(this,\'wing\')" style="font-size:2rem;padding:10px">&#129414;</button>' +
+        '<button class="schoice" onclick="classifyAnimal(this,\'walk\')" style="font-size:2rem;padding:10px">&#128008;</button>' +
+        '<button class="schoice" onclick="classifyAnimal(this,\'walk\')" style="font-size:2rem;padding:10px">&#128024;</button></div>' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">' +
+        '<div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:8px;min-width:80px;text-align:center"><div style="font-size:.75rem;opacity:.5;margin-bottom:4px">Has Wings</div><div id="group-wing" style="min-height:40px;display:flex;flex-wrap:wrap;gap:4px;justify-content:center"></div></div>' +
+        '<div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:8px;min-width:80px;text-align:center"><div style="font-size:.75rem;opacity:.5;margin-bottom:4px">Swims</div><div id="group-swim" style="min-height:40px;display:flex;flex-wrap:wrap;gap:4px;justify-content:center"></div></div>' +
+        '<div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:8px;min-width:80px;text-align:center"><div style="font-size:.75rem;opacity:.5;margin-bottom:4px">Walks</div><div id="group-walk" style="min-height:40px;display:flex;flex-wrap:wrap;gap:4px;justify-content:center"></div></div></div>' +
+        '<div id="classify-obs" style="display:none;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Classification reveals patterns.</div><div class="obs-text">Scientists sort animals by shared features. But there is no single right way to classify — you can group animals by wings, by where they live, or by how they move. Each grouping reveals different patterns.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'classify\')" style="margin-top:10px">I found the patterns! &#128640;</button></div>';
+    }
+  },
+
+  ecosystem: {
+    title: "Build an Ecosystem — Everything Connects",
+    bg: "#0a1a0a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Tap the Sun to start. Add plants, then animals. Watch what happens when you remove one part.</div>' +
+        '<div class="scene-viz" style="background:#0a1a0a;min-height:200px;flex-direction:column;gap:12px">' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">' +
+        '<button class="schoice" onclick="ecoAdd(\'sun\')" id="eco-btn-sun">&#127774; Sun</button>' +
+        '<button class="schoice" onclick="ecoAdd(\'plant\')" id="eco-btn-plant">&#127807; Plant</button>' +
+        '<button class="schoice" onclick="ecoAdd(\'rabbit\')" id="eco-btn-rabbit">&#128008; Rabbit</button>' +
+        '<button class="schoice" onclick="ecoAdd(\'wolf\')" id="eco-btn-wolf">&#128058; Wolf</button></div>' +
+        '<div id="eco-display" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;min-height:60px;padding:8px;border:1px dashed rgba(255,255,255,.1);border-radius:10px"></div>' +
+        '<div id="eco-msg" style="font-size:.8rem;opacity:.7;text-align:center;min-height:20px"></div>' +
+        '<div id="eco-obs" style="display:none;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Changing one part affects everything.</div><div class="obs-text">An ecosystem is a community where everything is connected. Remove the plants and the rabbits starve. Remove the rabbits and the wolves starve. Add a predator and prey numbers drop. Every part matters.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'ecosystem\')" style="margin-top:10px">Ecosystems are connected! &#128640;</button></div>';
+    }
+  },
+
+  // LESSON 3 — Humans
+  needs: {
+    title: "What Do Humans Need?",
+    bg: "#1a0a00",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Which of these are things every human needs? Tap all that apply.</div>' +
+        '<div class="scene-viz" style="background:#1a0a00;min-height:200px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center">' +
+        '<button class="schoice" onclick="needToggle(this)" data-need="yes" style="font-size:2rem;padding:12px">&#127774; Food</button>' +
+        '<button class="schoice" onclick="needToggle(this)" data-need="yes" style="font-size:2rem;padding:12px">&#128167; Water</button>' +
+        '<button class="schoice" onclick="needToggle(this)" data-need="yes" style="font-size:2rem;padding:12px">&#127968; Shelter</button>' +
+        '<button class="schoice" onclick="needToggle(this)" data-need="no" style="font-size:2rem;padding:12px">&#128142; Diamond ring</button>' +
+        '<button class="schoice" onclick="needToggle(this)" data-need="yes" style="font-size:2rem;padding:12px">&#128150; Love</button>' +
+        '<button class="schoice" onclick="needToggle(this)" data-need="no" style="font-size:2rem;padding:12px">&#127918; Video games</button>' +
+        '<button class="schoice" onclick="needToggle(this)" data-need="yes" style="font-size:2rem;padding:12px">&#128737; Clothes</button>' +
+        '<button class="schoice" onclick="needToggle(this)" data-need="no" style="font-size:2rem;padding:12px">&#128083; Crown</button></div>' +
+        '<button class="snav primary" onclick="checkNeeds()" style="margin-top:10px">Check My Answers</button>' +
+        '<div id="needs-obs" style="display:none;margin-top:10px;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Every human shares the same needs.</div><div class="obs-text">Food, water, shelter, clothing, safety, and love are needs shared by all humans everywhere. But different communities meet these needs in different ways. That is what makes cultures unique and wonderful.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'needs\')" style="margin-top:10px">We all share needs! &#128640;</button></div>';
+    }
+  },
+
+  tools: {
+    title: "Tool Evolution — Problem Solving",
+    bg: "#0a0a1a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">A heavy rock needs to move. What tool would you choose?</div>' +
+        '<div class="scene-viz" style="background:#0a0a1a;min-height:160px;flex-direction:column;gap:12px">' +
+        '<div style="font-size:3rem">&#129704;</div>' +
+        '<div class="scene-choices">' +
+        '<button class="schoice" onclick="toolPick(this,\'no\')" style="font-size:1.8rem;padding:10px">&#129503; Hands</button>' +
+        '<button class="schoice" onclick="toolPick(this,\'yes\')" style="font-size:1.8rem;padding:10px">&#129520; Lever</button>' +
+        '<button class="schoice" onclick="toolPick(this,\'no\')" style="font-size:1.8rem;padding:10px">&#128449; Rocket</button>' +
+        '<button class="schoice" onclick="toolPick(this,\'yes\')" style="font-size:1.8rem;padding:10px">&#128135; Wheel</button></div>' +
+        '<div id="tool-obs" style="display:none;margin-top:10px;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Tools extend what humans can do.</div><div class="obs-text">Humans invented tools to solve problems. Hands can lift small things. A lever lets one person lift a heavy rock. A wheel lets one person move a heavy load. Every tool is an extension of the human body and mind.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'tools\')" style="margin-top:10px">Humans are great inventors! &#128640;</button></div>';
+    }
+  },
+
+  cooperate: {
+    title: "Cooperation — Together Is Better",
+    bg: "#0a1a1a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">One builder moves 4 bricks. 4 builders together move... ?</div>' +
+        '<div class="scene-viz" style="background:#0a1a1a;min-height:140px;flex-direction:column;gap:16px">' +
+        '<div style="display:flex;align-items:flex-end;gap:4px;justify-content:center">' +
+        '<div style="display:flex;flex-direction:column;align-items:center;gap:2px">' +
+        '<div style="font-size:1.5rem">&#128104;</div><div style="font-size:.7rem;opacity:.5">1 builder</div><div style="display:flex;gap:2px">' +
+        '<div style="width:16px;height:16px;background:#FF7043;border-radius:2px"></div>' +
+        '<div style="width:16px;height:16px;background:#FF7043;border-radius:2px"></div>' +
+        '<div style="width:16px;height:16px;background:#FF7043;border-radius:2px"></div>' +
+        '<div style="width:16px;height:16px;background:#FF7043;border-radius:2px"></div></div><div style="font-size:.75rem;opacity:.5">4 bricks</div></div>' +
+        '<div style="font-size:2rem;opacity:.4">vs</div>' +
+        '<div style="display:flex;flex-direction:column;align-items:center;gap:2px">' +
+        '<div style="display:flex;gap:4px">' +
+        '<div style="display:flex;flex-direction:column;align-items:center"><div style="font-size:1.2rem">&#128104;</div></div>' +
+        '<div style="display:flex;flex-direction:column;align-items:center"><div style="font-size:1.2rem">&#128105;</div></div>' +
+        '<div style="display:flex;flex-direction:column;align-items:center"><div style="font-size:1.2rem">&#128104;</div></div>' +
+        '<div style="display:flex;flex-direction:column;align-items:center"><div style="font-size:1.2rem">&#128105;</div></div></div>' +
+        '<div style="font-size:.7rem;opacity:.5">4 builders</div><div style="display:flex;flex-wrap:wrap;gap:2px;max-width:80px;justify-content:center">' +
+        Array(16).fill().map(function(){return '<div style="width:16px;height:16px;background:#4CAF50;border-radius:2px"></div>';}).join('') +
+        '</div><div style="font-size:.75rem;opacity:.5">16 bricks!</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'cooperate\')" style="margin-top:10px">Together is better! &#128640;</button>';
+    }
+  },
+
+  // LESSON 4 — Communication
+  symbols: {
+    title: "Invent a Symbol — Shared Meaning",
+    bg: "#0a1a2a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Invent a symbol that means WATER. Draw it below, then see what others have used!</div>' +
+        '<div class="scene-viz" style="background:#0a1a2a;min-height:220px;flex-direction:column;gap:10px">' +
+        '<div class="canvas-wrap" style="width:260px;height:120px">' +
+        '<canvas id="symbol-canvas" width="260" height="120" style="background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.15);border-radius:10px;display:block;touch-action:none;max-width:100%;cursor:crosshair"></canvas></div>' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">' +
+        '<button class="snav" onclick="clearSymbol()">Clear</button>' +
+        '<button class="snav primary" onclick="showSymbolHistory()">See Real Symbols &#128269;</button></div>' +
+        '<div id="symbol-obs" style="display:none;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Symbols need shared meaning to work.</div><div class="obs-text">Your symbol means water to you. But for others to understand it, everyone needs to agree on the same symbol for water. That is why writing systems work — everyone who knows the system can read the same message.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'symbols\')" style="margin-top:10px">Symbols connect us! &#128640;</button></div>';
+    }
+  },
+
+  picturemsg: {
+    title: "Picture Message — From Drawing to Symbol",
+    bg: "#1a0a2a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">A message says: Three sheep near the river. Draw it!</div>' +
+        '<div class="scene-viz" style="background:#1a0a2a;min-height:160px;flex-direction:column;gap:10px">' +
+        '<div style="font-size:2.5rem;display:flex;gap:6px;justify-content:center">&#128017; &#128017; &#128017; &#127754; &#127754;</div>' +
+        '<div style="font-size:.78rem;opacity:.5;text-align:center">Can you communicate this with fewer symbols?</div>' +
+        '<div style="display:flex;gap:6px;justify-content:center;flex-wrap:wrap">' +
+        '<button class="schoice" onclick="picMsg(this,\'3\')" style="font-size:1.5rem;padding:8px">3</button>' +
+        '<button class="schoice" onclick="picMsg(this,\'sheep\')" style="font-size:1.5rem;padding:8px">&#128017;</button>' +
+        '<button class="schoice" onclick="picMsg(this,\'river\')" style="font-size:1.5rem;padding:8px">&#127754;</button>' +
+        '<button class="schoice" onclick="picMsg(this,\'tree\')" style="font-size:1.5rem;padding:8px">&#127807;</button></div>' +
+        '<div id="pic-display" style="font-size:1.8rem;min-height:40px;display:flex;gap:4px;justify-content:center;flex-wrap:wrap"></div>' +
+        '<div id="pic-obs" style="display:none;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Symbols can represent anything.</div><div class="obs-text">From detailed pictures to abstract symbols — each step makes communication faster and more flexible. Number symbols like 3 replaced drawing three dots. Letters replaced drawing pictures. Writing is a chain of brilliant simplifications.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'picturemsg\')" style="margin-top:10px">From pictures to symbols! &#128640;</button></div>';
+    }
+  },
+
+  timetravel: {
+    title: "Message Through Time — Writing Survives",
+    bg: "#1a1a1a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">A message was written 500 years ago. Someone today can still read it. How?</div>' +
+        '<div class="scene-viz" style="background:#1a1a1a;min-height:180px;flex-direction:column;gap:12px">' +
+        '<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center">' +
+        '<div style="text-align:center">' +
+        '<div style="font-size:1.5rem;margin-bottom:4px">&#128104;</div>' +
+        '<div style="font-size:.7rem;opacity:.5">500 years ago</div>' +
+        '<div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:6px 10px;font-size:.75rem;margin-top:4px">There is water<br>behind the hill</div></div>' +
+        '<div style="font-size:1.5rem;opacity:.3">&#10140;</div>' +
+        '<div style="text-align:center">' +
+        '<div style="font-size:1.5rem;margin-bottom:4px">&#128104;</div>' +
+        '<div style="font-size:.7rem;opacity:.5">Today</div>' +
+        '<div style="background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:6px;padding:6px 10px;font-size:.75rem;color:var(--gold);margin-top:4px">There is water<br>behind the hill</div></div></div>' +
+        '<div class="scene-choices" style="margin-top:4px">' +
+        '<button class="schoice" onclick="ttPick(this,\'no\')">The person visited in person</button>' +
+        '<button class="schoice" onclick="ttPick(this,\'yes\')">The written message survived</button>' +
+        '<button class="schoice" onclick="ttPick(this,\'no\')">Water still exists</button></div>' +
+        '<div id="tt-obs" style="display:none;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Writing lets ideas travel through time.</div><div class="obs-text">Speech disappears the moment it is spoken. Writing survives. A message written 500 years ago can still be read today. That is why books, letters, and records are so precious — they are ideas that refused to disappear.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'timetravel\')" style="margin-top:10px">Ideas can live forever! &#128640;</button></div>';
+    }
+  },
+
+  // LESSON 5 — Numbers
+  match: {
+    title: "Match the Sheep — One-to-One",
+    bg: "#1a1a0a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Tap each sheep, then tap a stone. They match one-to-one. Are there any stones left over?</div>' +
+        '<div class="scene-viz" style="background:#1a1a0a;min-height:180px;flex-direction:column;gap:12px">' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center" id="match-sheep"></div>' +
+        '<div style="opacity:.4">&#8595;</div>' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center" id="match-stones"></div>' +
+        '<button class="snav" onclick="resetMatch()" style="margin-top:6px">Reset</button>' +
+        '<div id="match-obs" style="display:none;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">One-to-one matching is the foundation of counting.</div><div class="obs-text">If you have 5 sheep and 5 stones, one stone per sheep means the counts match. If one stone is left over, you have more sheep than stones. This simple idea — matching one-to-one — is how humans first learned to count.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'match\')" style="margin-top:10px">Matching is counting! &#128640;</button></div>';
+      window.matchState = { sheep: 5, selected: null };
+      renderMatch();
+    }
+  },
+
+  tally: {
+    title: "Tally Marks — Recording Quantities",
+    bg: "#0a0a1a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">How many animals did you count? Use tally marks to record each one.</div>' +
+        '<div class="scene-viz" style="background:#0a0a1a;min-height:200px;flex-direction:column;gap:12px">' +
+        '<div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center">' +
+        '<button class="schoice" onclick="tallyAdd(\'&#128008;\')" style="font-size:2rem;padding:10px">&#128008; Rabbit</button>' +
+        '<button class="schoice" onclick="tallyAdd(\'&#128038;\')" style="font-size:2rem;padding:10px">&#128038; Bird</button>' +
+        '<button class="schoice" onclick="tallyAdd(\'&#128024;\')" style="font-size:2rem;padding:10px">&#128024; Lion</button></div>' +
+        '<div style="display:flex;flex-direction:column;gap:8px;align-items:center" id="tally-sheet"></div>' +
+        '<div id="tally-total" style="font-family:var(--font-h);color:var(--gold);font-size:1.2rem"></div>' +
+        '<button class="snav" onclick="resetTally()" style="margin-top:4px">Reset</button>' +
+        '<div id="tally-obs" style="display:none;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Tally marks record quantity visually.</div><div class="obs-text">Groups of four lines with a diagonal fifth line make it easy to count at a glance. This system was used by hunters, farmers, and traders for thousands of years before formal number symbols were invented.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'tally\')" style="margin-top:10px">Tally marks work! &#128640;</button></div>';
+      window.tallyState = [];
+      renderTally();
+    }
+  },
+
+  skip: {
+    title: "Skip Counting — Patterns in Numbers",
+    bg: "#0a1a1a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Count by 2s: 2, 4, 6, 8, 10. What pattern do you see?</div>' +
+        '<div class="scene-viz" style="background:#0a1a1a;min-height:200px;flex-direction:column;gap:10px">' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center" id="skip-nums"></div>' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">' +
+        '<button class="schoice" onclick="setSkip(2)" id="skip-btn-2">Skip by 2s</button>' +
+        '<button class="schoice" onclick="setSkip(5)" id="skip-btn-5">Skip by 5s</button>' +
+        '<button class="schoice" onclick="setSkip(10)" id="skip-btn-10">Skip by 10s</button></div>' +
+        '<div style="font-size:.8rem;opacity:.6;text-align:center;max-width:260px">Every number lands on the same pattern. The jump size is always the same!</div>' +
+        '<div id="skip-obs" style="display:none;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">Skip counting reveals patterns.</div><div class="obs-text">When you skip count, you add the same number each time. This is called a pattern. Skip counting by equal jumps connects directly to multiplication. 3 jumps of 5 equals 3 times 5 equals 15.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'skip\')" style="margin-top:10px">Patterns are everywhere! &#128640;</button></div>';
+      setSkip(2);
+    }
+  },
+
+  placevalue: {
+    title: "Place Value — Units, Tens, Hundreds",
+    bg: "#1a0a1a",
+    init: function(container) {
+      container.innerHTML = '<div class="scene-q">Build the number 243. How many hundreds, tens, and units?</div>' +
+        '<div class="scene-viz" style="background:#1a1a1a;min-height:200px;flex-direction:column;gap:12px">' +
+        '<div style="display:flex;gap:8px;justify-content:center;align-items:flex-end;flex-wrap:wrap">' +
+        '<div style="text-align:center">' +
+        '<div style="width:80px;height:80px;background:rgba(239,83,80,.2);border:2px solid rgba(239,83,80,.5);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--font-h);color:#EF5350">&#10070;</div>' +
+        '<div style="font-size:.72rem;opacity:.5;margin-top:4px">Hundred<br><span id="pv-h">0</span></div></div>' +
+        '<div style="text-align:center">' +
+        '<div style="width:64px;height:64px;background:rgba(255,215,0,.15);border:2px solid rgba(255,215,0,.4);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--font-h);color:var(--gold);font-size:.9rem">&#8212;</div>' +
+        '<div style="font-size:.72rem;opacity:.5;margin-top:4px">Ten<br><span id="pv-t">0</span></div></div>' +
+        '<div style="text-align:center">' +
+        '<div style="width:48px;height:48px;background:rgba(66,187,106,.15);border:2px solid rgba(66,187,106,.4);border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--font-h);color:#66BB6A">&#183;</div>' +
+        '<div style="font-size:.72rem;opacity:.5;margin-top:4px">Unit<br><span id="pv-u">0</span></div></div></div>' +
+        '<div id="pv-total" style="font-family:var(--font-h);font-size:1.5rem;color:var(--gold)">= 0</div>' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">' +
+        '<button class="schoice" onclick="pvAdd(\'h\')" style="min-width:90px">+1 Hundred</button>' +
+        '<button class="schoice" onclick="pvAdd(\'t\')" style="min-width:90px">+1 Ten</button>' +
+        '<button class="schoice" onclick="pvAdd(\'u\')" style="min-width:90px">+1 Unit</button></div>' +
+        '<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">' +
+        '<button class="snav" onclick="pvReset()">Reset</button>' +
+        '<button class="snav primary" onclick="pvCheck()" style="flex:1">Check if 243</button></div>' +
+        '<div id="pv-obs" style="display:none;max-width:280px">' +
+        '<div class="obs-panel"><div class="obs-title">243 = 2 hundreds + 4 tens + 3 units.</div><div class="obs-text">Place value means the same digit means different things depending on its position. 2 in the hundreds place means two hundreds. 2 in the units place means just two. Position changes meaning.</div></div>' +
+        '<button class="snav primary" onclick="sceneDone(\'placevalue\')" style="margin-top:10px">Place value is powerful! &#128640;</button></div>';
+      window.pvState = { h: 0, t: 0, u: 0 };
+    }
+  }
+};
+
+// ─────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────
+var STATE = {
+  history: ["home"],
+  currentLesson: null,
+  currentExp: null,
+  storyPage: 0,
+  progress: {}
+};
+
+function lg(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
+function ls(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+
+// ─────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────
+function init(){
+  STATE.progress = lg("fgl-progress", {});
   genStars();
-  renderLessonSelect();
-  setTimeout(function() { say("Let's explore the universe!"); }, 800);
+  renderHome();
 }
 
-function genStars() {
+function genStars(){
   var el = document.getElementById("stars");
   el.innerHTML = "";
-  for (var i = 0; i < 60; i++) {
+  for(var i=0;i<65;i++){
     var s = document.createElement("div");
     s.className = "star";
-    var sz = Math.random() * 2 + 1;
-    s.style.cssText = "left:" + (Math.random() * 100) + "%;top:" + (Math.random() * 100) + "%;width:" + sz + "px;height:" + sz + "px;animation-delay:" + (Math.random() * 3).toFixed(1) + "s;animation-duration:" + (Math.random() * 2 + 2).toFixed(1) + "s";
+    var sz = Math.random()*2+1;
+    s.style.cssText = "left:"+(Math.random()*100)+"%;top:"+(Math.random()*100)+"%;width:"+sz+"px;height:"+sz+"px;--d:"+(Math.random()*2+2).toFixed(1)+"s;--dl:"+(Math.random()*3).toFixed(1)+"s";
     el.appendChild(s);
   }
 }
 
-function isDone(id) { return !!state.progress[id]; }
+// ─────────────────────────────────────────────
+// SCREEN SWITCHING
+// ─────────────────────────────────────────────
+function sc(name){
+  document.querySelectorAll(".screen").forEach(function(s){s.classList.remove("on");});
+  document.getElementById("s-"+name).classList.add("on");
+  if(name !== "home") STATE.history.push(name);
+  if(name === "home") STATE.history = ["home"];
+}
 
-function markDone(id) {
-  if (!state.progress[id]) {
-    state.progress[id] = true;
-    lsSet("fgl-progress", state.progress);
+function goBack(){
+  if(STATE.history.length > 1) STATE.history.pop();
+  var prev = STATE.history[STATE.history.length-1] || "home";
+  sc(prev);
+}
+
+// ─────────────────────────────────────────────
+// HOME
+// ─────────────────────────────────────────────
+function renderHome(){
+  var list = document.getElementById("lesson-list");
+  list.innerHTML = "";
+  LESSONS.forEach(function(lesson){
+    var done = STATE.progress["lesson-"+lesson.id] === true;
+    var card = document.createElement("button");
+    card.className = "lcard";
+    card.onclick = function(){ openLesson(lesson); };
+    card.innerHTML =
+      '<div class="lcard-icon">'+lesson.emoji+'</div>'+
+      '<div><div class="lcard-name">'+lesson.name+'</div>'+
+      '<div class="lcard-sub">'+lesson.question+'</div></div>'+
+      '<div class="lcard-arrow">'+(done?"&#10003;":"&#8594;")+'</div>';
+    if(done) card.style.opacity = "0.7";
+    list.appendChild(card);
+  });
+}
+
+function openLesson(lesson){
+  STATE.currentLesson = lesson;
+  STATE.storyPage = 0;
+  document.getElementById("lesson-title").textContent = lesson.name;
+  renderLessonXPs(lesson);
+  sc("lesson");
+}
+
+function renderLessonXPs(lesson){
+  var area = document.getElementById("xp-area");
+  area.innerHTML = '<div style="padding:10px 0 4px;text-align:center"><div style="font-family:var(--font-h);color:var(--gold);font-size:.95rem;margin-bottom:2px">'+lesson.emoji+' '+lesson.name+'</div><div style="font-size:.8rem;opacity:.6">'+lesson.question+'</div></div>';
+
+  // Story button
+  var storyBtn = document.createElement("button");
+  storyBtn.className = "xp-card";
+  storyBtn.style.borderLeft = "3px solid "+lesson.color;
+  storyBtn.innerHTML = '<div class="xp-num" style="background:'+lesson.color+'22;color:'+lesson.color+';border:2px solid '+lesson.color+'">&#128214;</div><div><div class="xp-name">The Big Story</div><div style="font-size:.72rem;opacity:.5">Read the story first</div></div><div style="margin-left:auto;font-size:.8rem;opacity:.4">&#8594;</div>';
+  storyBtn.onclick = function(){ openStory(lesson); };
+  area.appendChild(storyBtn);
+
+  // Experience cards
+  lesson.experiences.forEach(function(exp, i){
+    var done = !!STATE.progress[exp.id];
+    var btn = document.createElement("button");
+    btn.className = "xp-card";
+    btn.style.borderLeft = "3px solid "+exp.color;
+    btn.innerHTML = '<div class="xp-num" style="background:'+exp.color+'22;color:'+exp.color+';border:2px solid '+exp.color+'">'+(done?"&#10003;":(i+1))+'</div><div><div class="xp-name '+(done?'xp-done':'')+'">'+exp.emoji+' '+exp.name+'</div></div><div style="margin-left:auto;font-size:.8rem;opacity:.4">&#8594;</div>';
+    btn.onclick = function(){ openExperience(lesson, exp); };
+    area.appendChild(btn);
+  });
+}
+
+function openStory(lesson){
+  STATE.currentLesson = lesson;
+  STATE.storyPage = 0;
+  STATE.history.push("lesson");
+  document.getElementById("story-lesson-title").textContent = lesson.shortName;
+  renderStoryPage();
+  sc("story");
+}
+
+function renderStoryPage(){
+  var lesson = STATE.currentLesson;
+  var page = lesson.story[STATE.storyPage];
+  document.getElementById("story-q").textContent = page.q;
+  document.getElementById("story-text").textContent = page.text;
+  var nextBtn = document.getElementById("story-next");
+  if(STATE.storyPage >= lesson.story.length-1){
+    nextBtn.textContent = "Done!";
+    nextBtn.onclick = function(){ completeLesson(); };
+  } else {
+    nextBtn.textContent = "Next \u2192";
+    nextBtn.onclick = nextStory;
+  }
+}
+
+function nextStory(){
+  if(STATE.storyPage < STATE.currentLesson.story.length-1){
+    STATE.storyPage++;
+    renderStoryPage();
+  }
+}
+
+function prevStory(){
+  if(STATE.storyPage > 0){
+    STATE.storyPage--;
+    renderStoryPage();
+  }
+}
+
+function completeLesson(){
+  if(!STATE.progress["lesson-"+STATE.currentLesson.id]){
+    STATE.progress["lesson-"+STATE.currentLesson.id] = true;
+    ls("fgl-progress", STATE.progress);
     confetti();
-    say("You really know this! Amazing!");
+  }
+  goBack();
+  say("What an amazing story! Now you can explore the experiences.");
+}
+
+function goExplore(){
+  sc("explore");
+  renderExperience(STATE.currentLesson, STATE.currentLesson.experiences[0]);
+}
+
+function openExperience(lesson, exp){
+  STATE.currentLesson = lesson;
+  STATE.currentExp = exp;
+  STATE.history.push("lesson");
+  document.getElementById("exp-title").textContent = exp.name;
+  sc("explore");
+  renderExperience(lesson, exp);
+}
+
+function renderExperience(lesson, exp){
+  var area = document.getElementById("scene-area");
+  // Reset to white background
+  area.style.background = "var(--bg)";
+  var scene = SCENES[exp.scene];
+  if(!scene){ area.innerHTML="<p>Experience coming soon!</p>"; return; }
+  if(scene.bg) area.style.background = scene.bg;
+  document.getElementById("exp-title").textContent = scene.title || exp.name;
+  scene.init(area);
+}
+
+// ─────────────────────────────────────────────
+// SCENE HELPERS
+// ─────────────────────────────────────────────
+
+// Particles
+function setTemp(level){
+  window.currentTemp = level;
+  var box = document.getElementById("particle-box");
+  if(!box) return;
+  box.innerHTML = "";
+  var count = 18;
+  var speed, color;
+  if(level === "cold"){ speed = 400; color = "#42A5F5"; }
+  else if(level === "warm"){ speed = 150; color = "#FF9800"; }
+  else { speed = 40; color = "#EF5350"; }
+  window.tempParticles = [];
+  for(var i=0;i<count;i++){
+    (function(idx){
+      var p = document.createElement("div");
+      var x = Math.random()*220+10;
+      var y = Math.random()*60+10;
+      p.style.cssText = "position:absolute;width:6px;height:6px;border-radius:50%;background:"+color+";left:"+x+"px;top:"+y+"px;opacity:.7;transition:left "+(speed/1000)+"s linear,top "+(speed/1000)+"s linear";
+      box.appendChild(p);
+      window.tempParticles.push({el:p,x:x,y:y});
+      function move(){
+        if(window.currentTemp !== level) return;
+        var nx = Math.random()*220+10;
+        var ny = Math.random()*60+10;
+        p.style.left = nx+"px";
+        p.style.top = ny+"px";
+        setTimeout(move, speed);
+      }
+      setTimeout(move, speed);
+    })(i);
+  }
+  document.getElementById("particle-obs").style.display = "block";
+}
+
+// Gravity
+window.gravObj = null;
+function gravSet(obj){
+  window.gravObj = obj;
+}
+function gravDrop(e){
+  if(!window.gravObj) return;
+  var box = document.getElementById("grav-box");
+  if(!box) return;
+  var rect = box.getBoundingClientRect();
+  var x = e.clientX - rect.left;
+  var y = e.clientY - rect.top;
+  // Clamp
+  x = Math.max(20, Math.min(x, rect.width-20));
+  y = Math.max(10, Math.min(y, rect.height-20));
+  var el = document.createElement("div");
+  el.style.cssText = "position:absolute;font-size:2rem;left:"+x+"px;top:"+y+"px;transition:top .6s ease-in";
+  el.textContent = window.gravObj;
+  box.appendChild(el);
+  setTimeout(function(){ el.style.top = (rect.height-30)+"px"; }, 50);
+  document.getElementById("grav-obs").style.display = "block";
+}
+
+// Solar
+function solarQuiz(btn, result){
+  var btns = btn.parentElement.querySelectorAll(".schoice");
+  btns.forEach(function(b){b.style.pointerEvents="none";b.classList.remove("right","wrong");});
+  if(result === "right"){
+    btn.classList.add("right");
+    document.getElementById("solar-obs").style.display = "block";
+  } else {
+    btn.classList.add("wrong");
+    // show right answer
+    btns.forEach(function(b){if(b!==btn && b.textContent.trim()==="The Sun") b.classList.add("right");});
+    document.getElementById("solar-obs").style.display = "block";
   }
 }
 
-function showScreen(name) {
-  document.querySelectorAll(".screen").forEach(function(s) { s.classList.remove("active"); });
-  var el = document.getElementById("screen-" + name);
-  if (el) el.classList.add("active");
-  if (name !== "home") state.history.push(name);
-  if (name === "home") { state.history = ["home"]; closeParent(); }
-}
-
-function goBack() {
-  if (state.history.length > 1) state.history.pop();
-  showScreen(state.history[state.history.length - 1] || "home");
-}
-
-function renderLessonSelect() {
-  var grid = document.getElementById("lesson-grid");
-  grid.innerHTML = "";
-  LESSONS.forEach(function(l, i) {
-    var doneCount = l.exps.filter(function(e) { return isDone(l.id + "-" + e.id); }).length;
-    var allDone = doneCount === l.exps.length;
-    var card = document.createElement("button");
-    card.className = "lesson-card";
-    card.onclick = function() { openLesson(l); };
-    card.innerHTML = '<div class="lesson-icon">' + l.emoji + '</div><div><div class="lesson-name">' + l.title + '</div><div class="lesson-desc">' + l.desc + '</div><div style="font-size:.7rem;opacity:.4;margin-top:4px;">' + doneCount + '/' + l.exps.length + ' done</div></div><div class="lesson-badge ' + (allDone ? "done" : "") + '">' + (allDone ? "✓" : (i + 1)) + '</div>';
-    grid.appendChild(card);
-  });
-}
-
-function openLesson(l) {
-  state.currentLesson = l;
-  document.getElementById("lesson-title").textContent = l.emoji + " " + l.title;
-  document.getElementById("lesson-prompt").textContent = l.desc;
-  var grid = document.getElementById("exp-grid");
-  grid.innerHTML = "";
-  l.exps.forEach(function(e, i) {
-    var done = isDone(l.id + "-" + e.id);
-    var card = document.createElement("button");
-    card.className = "exp-card" + (done ? " done" : "");
-    card.onclick = function() { openExp(l, e); };
-    card.innerHTML = '<div class="exp-num">' + (done ? "✓" : (i + 1)) + '</div><div class="exp-name">' + e.name + '</div><div class="exp-tagline">' + e.tagline + '</div>';
-    grid.appendChild(card);
-  });
-  // Missions
-  if (l.missions && l.missions.length > 0) {
-    var missDiv = document.createElement("div");
-    missDiv.className = "mission-card";
-    missDiv.innerHTML = '<div class="emoji">🌍</div><div class="title">Real World Mission</div>';
-    l.missions.forEach(function(m) {
-      missDiv.innerHTML += '<div class="text">• ' + m + '</div>';
-    });
-    grid.appendChild(missDiv);
+// Volcano
+function setVolcano(level){
+  var lava = document.getElementById("lava-erupt");
+  var top = document.getElementById("lava-top");
+  var ash = document.getElementById("lava-ash");
+  if(!lava) return;
+  lava.style.opacity = "0";
+  lava.style.height = "0";
+  top.style.opacity = "0";
+  ash.style.opacity = "0";
+  ash.innerHTML = "";
+  ash.style.height = "0";
+  if(level === 1){
+    top.style.opacity = "1";
+    lava.style.opacity = "0";
+  } else if(level === 2){
+    top.style.opacity = "1";
+    lava.style.opacity = "0.5";
+    lava.style.height = "20px";
+  } else {
+    top.style.opacity = "1";
+    lava.style.opacity = "1";
+    lava.style.height = "60px";
+    ash.style.opacity = "1";
+    ash.style.height = "40px";
+    ash.innerHTML = "&#10070;&#10070;&#10070;";
+    setTimeout(function(){ ash.style.opacity="0"; }, 1000);
   }
-  showScreen("lessons");
+  document.getElementById("volcano-obs").style.display = "block";
 }
 
-function openExp(l, e) {
-  state.currentExp = e;
-  document.getElementById("exp-title").textContent = e.name;
-  document.getElementById("exp-prompt").textContent = e.tagline;
-  var area = document.getElementById("exp-area");
-  area.innerHTML = "";
-  switch (e.type) {
-    case "particles": renderParticles(area, l, e); break;
-    case "gravity": renderGravity(area, l, e); break;
-    case "solar": renderSolar(area, l, e); break;
-    case "earth": renderEarth(area, l, e); break;
-    case "water": renderWater(area, l, e); break;
-    case "alive": renderAlive(area, l, e); break;
-    case "plant": renderPlant(area, l, e); break;
-    case "timeline": renderTimeline(area, l, e); break;
-    case "classify": renderClassify(area, l, e); break;
-    case "foodchain": renderFoodChain(area, l, e); break;
-    default: area.innerHTML = '<div class="instruction">Explore and learn!</div><button class="btn btn-primary" onclick="markDoneExp()">I understand!</button>';
+// Erosion
+function runErosion(){
+  var valley = document.getElementById("erosion-valley");
+  if(!valley) return;
+  valley.style.width = "0px";
+  var width = 0;
+  var iv = setInterval(function(){
+    width += 8;
+    valley.style.width = width + "px";
+    if(width >= 60){
+      clearInterval(iv);
+      document.getElementById("erosion-obs").style.display = "block";
+    }
+  }, 100);
+}
+
+// Alive
+function aliveCheck(btn, isAlive){
+  var correct = (btn.dataset.need === isAlive);
+  if(correct){
+    btn.classList.add("right");
+    btn.style.pointerEvents = "none";
+  } else {
+    btn.classList.add("wrong");
+    setTimeout(function(){ btn.classList.remove("wrong"); }, 800);
   }
-  showScreen("exp");
+  var allDone = true;
+  document.querySelectorAll("#"+btn.parentElement.id+" .schoice").forEach(function(b){
+    if(!b.classList.contains("right") && !b.classList.contains("wrong")) allDone = false;
+  });
+  if(allDone) document.getElementById("alive-obs").style.display = "block";
 }
 
-function markDoneExp() {
-  var l = state.currentLesson, e = state.currentExp;
-  if (l && e) {
-    markDone(l.id + "-" + e.id);
-    setTimeout(function() { goBack(); }, 1500);
+// Timeline
+window.tlOrder = [];
+function tlDrag(e){ e.dataTransfer.setData("text", e.currentTarget.dataset.tl); }
+function tlOver(e){ e.preventDefault(); }
+function tlDrop(e){
+  e.preventDefault();
+  var id = e.dataTransfer.getData("text");
+  var el = e.currentTarget.querySelector('[data-tl="'+id+'"]');
+  if(el && el !== e.currentTarget.lastElementChild){
+    e.currentTarget.insertBefore(el, e.currentTarget.lastElementChild);
   }
 }
-
-// PARTICLES
-function renderParticles(area, l, e) {
-  var types = [
-    { label: "Air", color: "#42A5F5", icon: "💧", fact: "Air: particles are far apart, they flow and fill any space" },
-    { label: "Stone", color: "#78909C", icon: "🪨", fact: "Stone: particles are packed tight, cannot be squished" },
-    { label: "Metal", color: "#FFB300", icon: "🔩", fact: "Metal: particles are packed and conduct heat well" },
-    { label: "Steam", color: "#90CAF9", icon: "🌫️", fact: "Steam: particles are far apart, moving fast" },
-    { label: "Light", color: "#FFF176", icon: "💡", fact: "Light: energy particles with no mass, move very fast" },
-    { label: "Sound", color: "#CE93D8", icon: "🔊", fact: "Sound: vibration of particles, needs a medium to travel" }
-  ];
-  area.innerHTML = '<div class="instruction">Tap each particle type to learn about it!</div><div class="particle-area" id="particle-area"></div><div class="fact-box" id="fact-box"></div><button class="btn btn-primary" onclick="if(state.selectedParticle!==undefined){markDoneExp()}else{say(\'Tap a particle first!\')}">I understand!</button>';
-  var par = document.getElementById("particle-area");
-  types.forEach(function(t, i) {
-    var btn = document.createElement("button");
-    btn.className = "particle";
-    btn.style.background = t.color + "33";
-    btn.style.border = "2px solid " + t.color;
-    btn.textContent = t.icon;
-    btn.dataset.idx = i;
-    btn.onclick = function() {
-      document.querySelectorAll(".particle").forEach(function(p) { p.classList.remove("selected"); });
-      btn.classList.add("selected");
-      state.selectedParticle = i;
-      var fb = document.getElementById("fact-box");
-      if (fb) { fb.textContent = t.fact; fb.classList.add("show"); }
-      say(t.fact.substring(0, 80));
-    };
-    par.appendChild(btn);
+function checkTimeline(){
+  var items = document.querySelectorAll("#tl-items .schoice");
+  var correct = ["earth","life","land","dinos","humans"];
+  var current = Array.prototype.map.call(items, function(it){ return it.dataset.tl; });
+  var allRight = current.every(function(v,i){ return v === correct[i]; });
+  items.forEach(function(it, i){
+    if(it.dataset.tl === correct[i]) it.classList.add("right");
+    else it.classList.add("wrong");
+    it.draggable = false;
   });
+  document.getElementById("tl-obs").style.display = "block";
 }
 
-// GRAVITY
-function renderGravity(area, l, e) {
-  area.innerHTML = '<div class="instruction">Tap the ball to drop it — gravity pulls everything down!</div><div class="demo-box"><div class="demo-label">Tap the ball to drop it!</div><div id="drop-area" style="height:180px;position:relative;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;"><div id="gravity-ball" style="font-size:3.5rem;cursor:pointer;transition:transform .5s ease-in;display:inline-block;user-select:none;" onclick="dropBall()">⚽</div></div></div><button class="btn btn-primary" onclick="if(state.dropped){markDoneExp()}else{say(\'Tap the ball first!\')}">I understand!</button>';
-  state.dropped = false;
+// Classify
+function classifyAnimal(btn, group){
+  var groupEl = document.getElementById("group-"+group);
+  if(!groupEl) return;
+  btn.style.display = "none";
+  var chip = document.createElement("span");
+  chip.textContent = btn.textContent;
+  chip.style.cssText = "font-size:1.2rem;background:rgba(255,255,255,.08);border-radius:6px;padding:2px 4px;display:inline-block";
+  groupEl.appendChild(chip);
+  // Check if all placed
+  var remaining = document.querySelectorAll("#animal-pool .schoice[style*='inline']").length +
+    document.querySelectorAll("#animal-pool .schoice:not([style])").length;
+  if(!document.querySelectorAll("#animal-pool .schoice[style*='none']").length){
+    document.getElementById("classify-obs").style.display = "block";
+  }
 }
 
-function dropBall() {
-  var ball = document.getElementById("gravity-ball");
-  if (!ball || state.dropped) return;
-  state.dropped = true;
-  ball.style.transform = "translateY(120px)";
-  ball.style.transition = "transform 0.6s ease-in";
-  var msg = ball.parentElement.parentElement.querySelector(".instruction");
-  if (msg) msg.textContent = "Gravity pulled the ball down! Everything falls toward Earth!";
-  setTimeout(function() { say("Gravity pulls everything toward Earth!"); }, 600);
+// Ecosystem
+window.ecoParts = [];
+function ecoAdd(part){
+  var display = document.getElementById("eco-display");
+  var msg = document.getElementById("eco-msg");
+  if(!display) return;
+  var emojis = {sun:"&#127774;",plant:"&#127807;",rabbit:"&#128008;",wolf:"&#128058;"};
+  var el = document.createElement("span");
+  el.textContent = emojis[part];
+  el.style.cssText = "font-size:1.8rem;animation:tw 2s ease-in-out infinite";
+  display.appendChild(el);
+  window.ecoParts.push(part);
+  var msgs = {
+    sun:"The Sun gives energy to everything.",
+    plant:"Plants grow and make food using sunlight.",
+    rabbit:"Rabbits eat plants. They are consumers.",
+    wolf:"Wolves hunt rabbits. They are predators."
+  };
+  msg.textContent = msgs[part] || "";
+  if(window.ecoParts.length >= 3){
+    document.getElementById("eco-obs").style.display = "block";
+    sceneDone("ecosystem");
+  }
 }
 
-// SOLAR SYSTEM
-function renderSolar(area, l, e) {
-  var planets = [
-    { name: "Mercury", emoji: "⚫", orbit: 55, speed: 3, fact: "Smallest planet, very hot during day, very cold at night" },
-    { name: "Venus", emoji: "🟡", orbit: 80, speed: 5, fact: "Hottest planet, thick atmosphere traps heat" },
-    { name: "Earth", emoji: "🔵", orbit: 110, speed: 8, fact: "Only planet known to have life" },
-    { name: "Mars", emoji: "🔴", orbit: 140, speed: 13, fact: "Red planet, humans might live here someday" },
-    { name: "Jupiter", emoji: "🟤", orbit: 175, speed: 20, fact: "Largest planet, could fit 1300 Earths inside!" },
-    { name: "Saturn", emoji: "🥔", orbit: 210, speed: 30, fact: "Famous for its beautiful rings" }
-  ];
-  area.innerHTML = '<div class="instruction">Tap a planet to learn about it!</div><div class="demo-box"><div class="demo-label">Our Solar System</div><div id="solar-area" style="height:220px;position:relative;display:flex;align-items:center;justify-content:center;"><div style="width:24px;height:24px;background:#FFD700;border-radius:50%;position:absolute;"></div></div></div><div class="fact-box" id="solar-fact"></div>';
-  var solar = document.getElementById("solar-area");
-  planets.forEach(function(p, i) {
-    (function(idx, planet) {
-      var el = document.createElement("div");
-      el.textContent = planet.emoji;
-      el.style.cssText = "position:absolute;left:50%;top:50%;font-size:1.2rem;cursor:pointer;transform:translate(-50%,-50%);z-index:2";
-      el.onclick = function() {
-        var fb = document.getElementById("solar-fact");
-        if (fb) { fb.textContent = planet.name + ": " + planet.fact; fb.classList.add("show"); }
-        say(planet.name + ": " + planet.fact.substring(0, 80));
-        markDoneExp();
-      };
-      solar.appendChild(el);
-      // Animate orbit
-      var angle = (i / planets.length) * Math.PI * 2;
-      var centerX = solar.offsetWidth / 2;
-      var centerY = solar.offsetHeight / 2;
-      function move() {
-        angle += 0.005 * planet.speed;
-        var x = centerX + Math.cos(angle) * planet.orbit - 10;
-        var y = centerY + Math.sin(angle) * planet.orbit * 0.4 - 10;
-        el.style.left = x + "px";
-        el.style.top = y + "px";
-        requestAnimationFrame(move);
-      }
-      setTimeout(move, i * 200);
-    })(i, p);
-  });
+// Needs
+window.needSelected = [];
+function needToggle(btn){
+  var need = btn.dataset.need;
+  btn.classList.toggle("right");
+}
+function checkNeeds(){
+  var btns = document.querySelectorAll("#"+document.getElementById("scene-area").querySelector(".scene-viz").id+" .schoice, .scene-viz .schoice");
+  document.getElementById("needs-obs").style.display = "block";
 }
 
-// EARTH HISTORY
-function renderEarth(area, l, e) {
-  var eras = [
-    { emoji: "🌌", name: "4.5 Billion Years Ago", desc: "Earth was molten lava, incredibly hot", color: "#B71C1C" },
-    { emoji: "🌋", name: "3 Billion Years Ago", desc: "Earth cooled down, first oceans formed", color: "#1565C0" },
-    { emoji: "🌿", name: "500 Million Years Ago", desc: "No dinosaurs yet, only small creatures", color: "#2E7D32" },
-    { emoji: "🦖", name: "65 Million Years Ago", desc: "Dinosaurs ruled Earth, then a meteorite made them vanish", color: "#795548" },
-    { emoji: "🧒", name: "200 Thousand Years Ago", desc: "First humans appeared in Africa", color: "#F57C00" },
-    { emoji: "🏠", name: "Now", desc: "8 billion humans on Earth!", color: "#1976D2" }
-  ];
-  area.innerHTML = '<div class="instruction">Tap each era to travel through time!</div>';
-  eras.forEach(function(era, i) {
-    (function(e, idx) {
-      var card = document.createElement("button");
-      card.style.cssText = "background:" + e.color + "22;border:2px solid " + e.color + "55;border-radius:14px;padding:14px;cursor:pointer;color:#fff;width:100%;text-align:left;font-family:var(--font-b);margin:6px 0;display:flex;gap:12px;align-items:center";
-      card.onclick = function() {
-        var area2 = document.getElementById("exp-area");
-        var newCard = document.createElement("div");
-        newCard.style.cssText = "background:" + e.color + "33;border:2px solid " + e.color + ";border-radius:16px;padding:20px;text-align:center;margin:10px 0";
-        newCard.innerHTML = '<div style="font-size:3rem;margin-bottom:10px;">' + e.emoji + '</div><div style="font-family:var(--font-h);font-size:1.1rem;color:#fff;margin-bottom:6px;">' + e.name + '</div><div style="font-size:.85rem;opacity:.8;">' + e.desc + '</div>';
-        area2.appendChild(newCard);
-        if (idx === eras.length - 1) markDoneExp();
-        say(e.name + ": " + e.desc);
-      };
-      card.innerHTML = '<div style="font-size:2rem;flex-shrink:0;">' + e.emoji + '</div><div><div style="font-family:var(--font-h);font-size:.95rem;">' + e.name + '</div><div style="font-size:.72rem;opacity:.6;">' + e.desc + '</div></div>';
-      area.appendChild(card);
-    })(era, i);
-  });
+// Tools
+function toolPick(btn, correct){
+  var allBtns = btn.parentElement.querySelectorAll(".schoice");
+  allBtns.forEach(function(b){b.style.pointerEvents="none";});
+  if(correct === "yes") btn.classList.add("right");
+  else btn.classList.add("wrong");
+  document.getElementById("tool-obs").style.display = "block";
 }
 
-// WATER
-function renderWater(area, l, e) {
-  area.innerHTML = '<div class="instruction">Water changes the Earth slowly — tap to see how!</div><div class="demo-box"><div class="demo-label">Water changes rocks over time</div><div style="font-size:4rem;margin:10px 0;">🏔️</div><button class="btn btn-primary" onclick="markDoneExp();say(\"Water and wind shape mountains over millions of years!\")">See how!</button></div>';
+// Time travel
+function ttPick(btn, correct){
+  var allBtns = btn.parentElement.querySelectorAll(".schoice");
+  allBtns.forEach(function(b){b.style.pointerEvents="none";});
+  if(correct === "yes") btn.classList.add("right");
+  else btn.classList.add("wrong");
+  document.getElementById("tt-obs").style.display = "block";
 }
 
-// ALIVE
-function renderAlive(area, l, e) {
-  var items = [
-    { emoji: "🐕", name: "Dog", alive: true },
-    { emoji: "🌵", name: "Cactus", alive: true },
-    { emoji: "🪨", name: "Rock", alive: false },
-    { emoji: "💻", name: "Computer", alive: false },
-    { emoji: "🍎", name: "Apple", alive: true },
-    { emoji: "🔥", name: "Fire", alive: false },
-    { emoji: "🦋", name: "Butterfly", alive: true },
-    { emoji: "🚗", name: "Car", alive: false }
-  ];
-  area.innerHTML = '<div class="instruction">Tap living things — they move, eat, and grow!</div><div class="animal-grid" id="alive-grid"></div><div class="fact-box" id="alive-feedback"></div>';
-  var grid = document.getElementById("alive-grid");
-  state.aliveSelected = [];
-  items.forEach(function(item, i) {
-    var card = document.createElement("button");
-    card.className = "animal-card";
-    card.onclick = function() {
-      if (card.classList.contains("correct") || card.classList.contains("wrong")) return;
-      var correct = item.alive;
-      if (correct) {
-        card.classList.add("correct");
-        say(item.name + " is alive!");
-        state.aliveSelected.push(i);
-        if (state.aliveSelected.length >= 4) markDoneExp();
-      } else {
-        card.classList.add("wrong");
-        say(item.name + " is not alive.");
-        setTimeout(function() { card.classList.remove("wrong"); }, 1000);
-      }
-    };
-    card.innerHTML = '<span class="emoji">' + item.emoji + '</span><span class="label">' + item.name + '</span>';
-    grid.appendChild(card);
-  });
+// Symbols canvas
+function showSymbolHistory(){
+  var area = document.getElementById("symbol-canvas");
+  if(!area) return;
+  var ctx = area.getContext("2d");
+  ctx.clearRect(0,0,260,120);
+  ctx.font = "20px Fredoka One, cursive";
+  ctx.fillStyle = "rgba(255,255,255,0.15)";
+  ctx.textAlign = "center";
+  ctx.fillText("~ draw your water symbol above ~", 130, 65);
+  document.getElementById("symbol-obs").style.display = "block";
+  var canvas = document.getElementById("symbol-canvas");
+  if(!canvas) return;
+  var c = canvas.getContext("2d");
+  var drawing = false, lastX = 0, lastY = 0;
+  function getPos(e){
+    var rect = canvas.getBoundingClientRect();
+    var t = e.touches ? e.touches[0] : e;
+    return {x: t.clientX-rect.left, y: t.clientY-rect.top};
+  }
+  canvas.addEventListener("pointerdown", function(e){e.preventDefault();drawing=true;var p=getPos(e);lastX=p.x;lastY=p.y;},{passive:false});
+  canvas.addEventListener("pointermove", function(e){
+    if(!drawing) return;
+    e.preventDefault();
+    var p=getPos(e);
+    c.beginPath();c.moveTo(lastX,lastY);c.lineTo(p.x,p.y);c.strokeStyle="#FFD700";c.lineWidth=3;c.lineCap="round";c.stroke();
+    lastX=p.x;lastY=p.y;
+  },{passive:false});
+  canvas.addEventListener("pointerup",function(){drawing=false;});
+}
+function clearSymbol(){
+  var canvas = document.getElementById("symbol-canvas");
+  if(!canvas) return;
+  canvas.getContext("2d").clearRect(0,0,canvas.width,canvas.height);
 }
 
-// PLANT
-function renderPlant(area, l, e) {
-  var needs = ["💧 Water", "☀️ Light", "💨 Air"];
-  area.innerHTML = '<div class="instruction">Plants need 3 things to grow. Tap each one!</div><div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:16px 0;" id="plant-needs"></div><div class="fact-box" id="plant-fact">Plants need water, light, and air to make their own food!</div>';
-  var container = document.getElementById("plant-needs");
-  needs.forEach(function(n) {
-    var btn = document.createElement("button");
-    btn.textContent = n;
-    btn.style.cssText = "padding:16px 24px;border-radius:14px;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);color:#fff;font-family:var(--font-b);font-size:1rem;cursor:pointer";
-    btn.onclick = function() {
-      btn.style.background = "rgba(76,175,80,.2)";
-      btn.style.borderColor = "#4CAF50";
-      say(n + " is one thing plants need!");
-      state.plantClicked = state.plantClicked || 0;
-      state.plantClicked++;
-      if (state.plantClicked >= 3) {
-        document.getElementById("plant-fact").classList.add("show");
-        markDoneExp();
-      }
-    };
-    container.appendChild(btn);
-  });
+// Picture message
+window.picMsg = [];
+function picMsg(btn, type){
+  btn.classList.add("right");
+  window.picMsg.push(type);
+  var display = document.getElementById("pic-display");
+  if(!display) return;
+  var emap = {"3":"3","sheep":"&#128017;","river":"&#127754;","tree":"&#127807;"};
+  var chip = document.createElement("span");
+  chip.textContent = emap[type] || type;
+  chip.style.cssText = "font-size:1.5rem;background:rgba(76,175,80,.15);padding:4px 8px;border-radius:6px";
+  display.appendChild(chip);
+  var correct = ["3","sheep","sheep","sheep","river","river"];
+  var allRight = correct.every(function(v,i){ return window.picMsg[i] === v; });
+  if(window.picMsg.length >= correct.length){
+    if(allRight){
+      document.getElementById("pic-obs").style.display = "block";
+      sceneDone("picturemsg");
+    }
+  }
 }
 
-// TIMELINE
-function renderTimeline(area, l, e) {
-  var events = [
-    { emoji: "🌌", year: "4.5B", name: "Earth Forms", color: "#B71C1C" },
-    { emoji: "🌱", year: "3.5B", name: "First Life", color: "#1565C0" },
-    { emoji: "🦕", year: "250M", name: "Dinosaurs Appear", color: "#2E7D32" },
-    { emoji: "💥", year: "65M", name: "Dinosaurs Vanish", color: "#795548" },
-    { emoji: "🧒", year: "200K", name: "First Humans", color: "#F57C00" },
-    { emoji: "🏠", year: "Now", name: "Now", color: "#1976D2" }
-  ];
-  area.innerHTML = '<div class="instruction">Tap each event to build the timeline of life!</div><div style="padding:16px 0;" id="timeline-area"></div>';
-  var container = document.getElementById("timeline-area");
-  events.forEach(function(ev, i) {
-    (function(event, idx) {
-      var el = document.createElement("button");
-      el.style.cssText = "background:" + event.color + "22;border:2px solid " + event.color + "55;border-radius:14px;padding:12px;cursor:pointer;color:#fff;width:100%;text-align:left;font-family:var(--font-b);margin:4px 0;display:flex;gap:12px;align-items:center";
-      el.onclick = function() {
-        el.style.background = event.color + "55";
-        el.style.borderColor = event.color;
-        say(event.year + " years ago: " + event.name);
-        state.timelineClicked = state.timelineClicked || 0;
-        state.timelineClicked++;
-        if (state.timelineClicked >= events.length) markDoneExp();
-      };
-      el.innerHTML = '<div style="font-size:1.8rem;flex-shrink:0;">' + event.emoji + '</div><div><div style="font-size:.65rem;font-weight:700;color:' + event.color + ';">' + event.year + '</div><div style="font-size:.85rem;">' + event.name + '</div></div>';
-      container.appendChild(el);
-    })(ev, i);
-  });
-}
-
-// CLASSIFY
-function renderClassify(area, l, e) {
-  var animals = [
-    { emoji: "🐕", name: "Dog", vert: true },
-    { emoji: "🐍", name: "Snake", vert: true },
-    { emoji: "🦅", name: "Bird", vert: true },
-    { emoji: "🐟", name: "Fish", vert: true },
-    { emoji: "🦋", name: "Butterfly", vert: false },
-    { emoji: "🐜", name: "Ant", vert: false },
-    { emoji: "🦀", name: "Crab", vert: false },
-    { emoji: "🪱", name: "Worm", vert: false }
-  ];
-  area.innerHTML = '<div class="instruction">Classify animals: vertebrates (have bones) vs invertebrates (no bones). Tap each one!</div><div style="display:flex;gap:20px;padding:10px 0;justify-content:center;"><div style="text-align:center;"><div style="font-size:.75rem;font-weight:700;margin-bottom:8px;color:#42A5F5;">Vertebrates</div><div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;min-width:120px;" id="vert-area"></div></div><div style="text-align:center;"><div style="font-size:.75rem;font-weight:700;margin-bottom:8px;color:#AB47BC;">Invertebrates</div><div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;min-width:120px;" id="invert-area"></div></div></div><div class="animal-grid" id="classify-grid"></div>';
-  var grid = document.getElementById("classify-grid");
-  state.classifyCount = 0;
-  var allCount = animals.length;
-  animals.forEach(function(a) {
-    var card = document.createElement("button");
-    card.className = "animal-card";
-    card.innerHTML = '<span class="emoji">' + a.emoji + '</span><span class="label">' + a.name + '</span>';
-    card.onclick = function() {
-      if (card.classList.contains("selected")) return;
-      card.classList.add("selected");
-      state.classifyCount++;
-      var target = document.getElementById(a.vert ? "vert-area" : "invert-area");
-      if (target) {
-        var chip = document.createElement("span");
-        chip.textContent = a.emoji;
-        chip.style.cssText = "font-size:1.4rem";
-        target.appendChild(chip);
-      }
-      say(a.name + " is " + (a.vert ? "a vertebrate (has a backbone)" : "an invertebrate (no backbone)"));
-      if (state.classifyCount >= allCount) markDoneExp();
-    };
-    grid.appendChild(card);
-  });
-}
-
-// FOOD CHAIN
-function renderFoodChain(area, l, e) {
-  var chain = [
-    { emoji: "☀️", name: "Sun", role: "Gives energy", color: "#FFF176" },
-    { emoji: "🌿", name: "Plants", role: "Capture light", color: "#81C784" },
-    { emoji: "🐰", name: "Herbivore", role: "Eats plants", color: "#FF8A65" },
-    { emoji: "🐍", name: "Carnivore", role: "Eats animals", color: "#EF5350" }
-  ];
-  area.innerHTML = '<div class="instruction">Build the food chain — tap in order from energy source to top!</div><div class="food-chain" id="food-chain"></div><div class="fact-box" id="chain-fact">Energy flows from the Sun through all living things!</div>';
-  var fc = document.getElementById("food-chain");
-  state.chainOrder = [];
-  chain.forEach(function(c, i) {
-    (function(item, idx) {
-      var btn = document.createElement("button");
-      btn.className = "chain-item";
-      btn.style.background = item.color + "33";
-      btn.style.border = "2px solid " + item.color + "55";
-      btn.innerHTML = '<div style="font-size:1.8rem;">' + item.emoji + '</div><div style="font-size:.7rem;margin-top:4px;">' + item.name + '</div>';
-      btn.onclick = function() {
-        if (btn.classList.contains("done")) return;
-        if (idx === state.chainOrder.length) {
-          btn.classList.add("done");
-          state.chainOrder.push(idx);
-          say(item.name + " — " + item.role);
-          var arrows = fc.querySelectorAll(".chain-arrow");
-          if (arrows[idx]) arrows[idx].style.opacity = "1";
-          if (state.chainOrder.length === chain.length) {
-            document.getElementById("chain-fact").classList.add("show");
-            markDoneExp();
-          }
-        } else {
-          say("Start from the Sun first!");
-        }
-      };
-      fc.appendChild(btn);
-      if (i < chain.length - 1) {
-        var arrow = document.createElement("div");
-        arrow.className = "chain-arrow";
-        arrow.textContent = "→";
-        arrow.style.opacity = "0.2";
-        fc.appendChild(arrow);
-      }
-    })(c, i);
-  });
-}
-
-// NEEDS
-function renderNeeds(area, l, e) {
-  var needs = [
-    { emoji: "🍎", name: "Food", desc: "We need food to grow and have energy" },
-    { emoji: "💧", name: "Water", desc: "Our body is mostly water" },
-    { emoji: "🏠", name: "Shelter", desc: "Protection from weather" },
-    { emoji: "👫", name: "Friends", desc: "We need each other to be happy" }
-  ];
-  area.innerHTML = '<div class="instruction">What do humans need to live? Tap each one!</div>';
-  needs.forEach(function(n) {
-    var btn = document.createElement("button");
-    btn.style.cssText = "background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px;cursor:pointer;color:#fff;width:100%;text-align:left;font-family:var(--font-b);margin:6px 0;display:flex;gap:12px;align-items:center";
-    btn.onclick = function() {
-      btn.style.background = "rgba(76,175,80,.15)";
-      btn.style.borderColor = "#4CAF50";
-      say(n.name + ": " + n.desc);
-      state.needsClicked = state.needsClicked || 0;
-      state.needsClicked++;
-      if (state.needsClicked >= needs.length) markDoneExp();
-    };
-    btn.innerHTML = '<div style="font-size:1.8rem;flex-shrink:0;">' + n.emoji + '</div><div><div style="font-weight:700;font-size:.9rem;">' + n.name + '</div><div style="font-size:.72rem;opacity:.6;">' + n.desc + '</div></div>';
-    area.appendChild(btn);
-  });
-}
-
-// SHELTER
-function renderShelter(area, l, e) {
-  var shelters = [
-    { emoji: "🪨", name: "Cave" },
-    { emoji: "⛺", name: "Tent" },
-    { emoji: "🏠", name: "House" },
-    { emoji: "🏢", name: "Building" }
-  ];
-  area.innerHTML = '<div class="instruction">How have homes changed over time? Tap each one!</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:10px 0;">';
-  shelters.forEach(function(s, i) {
-    var btn = document.createElement("button");
-    btn.style.cssText = "background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px;text-align:center;cursor:pointer;color:#fff;font-family:var(--font-b)";
-    btn.innerHTML = '<div style="font-size:2.5rem;margin-bottom:8px;">' + s.emoji + '</div><div style="font-family:var(--font-h);font-size:.9rem;">' + s.name + '</div>';
-    var descriptions = ["The oldest shelter — found in caves!", "Portable shelter for traveling", "Where most people live today", "Homes stacked high in cities"];
-    btn.onclick = function() {
-      btn.style.background = "rgba(255,215,0,.15)";
-      btn.style.borderColor = "#FFD700";
-      say(s.name + ": " + descriptions[i]);
-      state.shelterClicked = state.shelterClicked || 0;
-      state.shelterClicked++;
-      if (state.shelterClicked >= shelters.length) markDoneExp();
-    };
-    area.appendChild(btn);
-  });
-}
-
-// TOOLS
-function renderTools(area, l, e) {
-  var tools = [
-    { emoji: "🤲", name: "Hands", desc: "Our first tool — very special!" },
-    { emoji: "🔨", name: "Hammer", desc: "Makes hammering easier" },
-    { emoji: "🚗", name: "Car", desc: "Transportation for humans" },
-    { emoji: "💻", name: "Computer", desc: "Extends what our brain can do" }
-  ];
-  area.innerHTML = '<div class="instruction">Humans use tools to extend their abilities. Tap each one!</div>';
-  tools.forEach(function(t) {
-    var btn = document.createElement("button");
-    btn.style.cssText = "background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px;cursor:pointer;color:#fff;width:100%;text-align:left;font-family:var(--font-b);margin:6px 0;display:flex;gap:12px;align-items:center";
-    btn.onclick = function() {
-      btn.style.background = "rgba(255,215,0,.15)";
-      btn.style.borderColor = "#FFD700";
-      say(t.name + ": " + t.desc);
-      state.toolsClicked = state.toolsClicked || 0;
-      state.toolsClicked++;
-      if (state.toolsClicked >= tools.length) markDoneExp();
-    };
-    btn.innerHTML = '<div style="font-size:1.8rem;flex-shrink:0;">' + t.emoji + '</div><div><div style="font-weight:700;font-size:.9rem;">' + t.name + '</div><div style="font-size:.72rem;opacity:.6;">' + t.desc + '</div></div>';
-    area.appendChild(btn);
-  });
-}
-
-// SYMBOLS
-function renderSymbols(area, l, e) {
-  area.innerHTML = '<div class="instruction">Symbols communicate ideas without words. Tap each to learn!</div><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:10px 0;">';
-  var symbols = ["🚦", "❤️", "⛔", "📱", "🎵", "⚠️", "♻️", "🔔"];
-  var meanings = ["Traffic light — stop, wait, or go", "Heart — love and care", "No entry — stop here!", "Phone — call or message", "Music — sound and rhythm", "Warning — be careful!", "Recycle — save the planet", "Ring — listen up!"];
-  symbols.forEach(function(sym, i) {
-    var btn = document.createElement("button");
-    btn.style.cssText = "background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px;text-align:center;font-size:2rem;cursor:pointer;color:#fff";
-    btn.textContent = sym;
-    btn.onclick = function() {
-      btn.style.background = "rgba(255,215,0,.15)";
-      btn.style.borderColor = "#FFD700";
-      say(meanings[i]);
-      state.symClicked = state.symClicked || 0;
-      state.symClicked++;
-      if (state.symClicked >= symbols.length) markDoneExp();
-    };
-    area.appendChild(btn);
-  });
-}
-
-// ENCODING
-function renderEncoding(area, l, e) {
-  area.innerHTML = '<div class="instruction">Send a secret message using a code!</div><div class="demo-box"><div class="demo-label">Tap letters to spell the secret word: CAT</div><div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px 0;" id="encode-pool"></div><div style="display:flex;gap:8px;justify-content:center;padding:10px 0;" id="encode-slots"></div></div>';
-  var pool = document.getElementById("encode-pool");
-  var slots = document.getElementById("encode-slots");
-  var letters = ["C", "A", "T", "B", "D", "E", "O"];
-  var secret = ["C", "A", "T"];
-  state.encodeSlots = [];
-  letters.forEach(function(letter) {
-    var btn = document.createElement("button");
-    btn.textContent = letter;
-    btn.style.cssText = "width:48px;height:48px;border-radius:10px;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);color:#fff;font-family:var(--font-h);font-size:1.2rem;cursor:pointer";
-    btn.onclick = function() {
-      if (state.encodeSlots.length < 3) {
-        btn.style.opacity = "0.3";
-        state.encodeSlots.push(letter);
-        var slot = document.createElement("button");
-        slot.textContent = letter;
-        slot.style.cssText = "width:48px;height:48px;border-radius:10px;background:rgba(76,175,80,.2);border:2px solid #4CAF50;color:#fff;font-family:var(--font-h);font-size:1.2rem;cursor:pointer";
-        slot.onclick = function() {
-          btn.style.opacity = "1";
-          state.encodeSlots = state.encodeSlots.filter(function(x) { return x !== letter; });
-          slot.remove();
+// Match sheep
+function renderMatch(){
+  var sheep = document.getElementById("match-sheep");
+  var stones = document.getElementById("match-stones");
+  if(!sheep || !stones) return;
+  sheep.innerHTML = "";
+  stones.innerHTML = "";
+  for(var i=0;i<5;i++){
+    (function(idx){
+      var s = document.createElement("button");
+      s.className = "schoice";
+      s.textContent = "&#128017;";
+      s.style.cssText = "font-size:2rem;padding:8px;min-width:44px";
+      s.onclick = function(){
+        s.style.opacity = "0.3";
+        s.style.pointerEvents = "none";
+        var st = document.createElement("button");
+        st.className = "schoice";
+        st.textContent = "&#129704;";
+        st.style.cssText = "font-size:1.5rem;padding:6px;min-width:36px";
+        st.onclick = function(){
+          st.style.opacity = "0.3";
+          st.style.pointerEvents = "none";
+          checkMatchDone();
         };
-        slots.appendChild(slot);
-        if (state.encodeSlots.length === 3) {
-          var correct = state.encodeSlots[0] === "C" && state.encodeSlots[1] === "A" && state.encodeSlots[2] === "T";
-          if (correct) {
-            say("You decoded the message! CAT!");
-            markDoneExp();
-          } else {
-            say("Not quite! Try again!");
-            slots.innerHTML = "";
-            state.encodeSlots = [];
-            document.querySelectorAll("#encode-pool button").forEach(function(b) { b.style.opacity = "1"; });
-          }
-        }
-      }
-    };
-    pool.appendChild(btn);
+        stones.appendChild(st);
+      };
+      sheep.appendChild(s);
+    })(i);
+  }
+}
+function resetMatch(){
+  window.matchState = {sheep:5, selected:null};
+  renderMatch();
+}
+function checkMatchDone(){
+  var sheepBtns = document.querySelectorAll("#match-sheep .schoice");
+  var allPlaced = Array.prototype.every.call(sheepBtns, function(b){ return b.style.pointerEvents === "none"; });
+  if(allPlaced){
+    document.getElementById("match-obs").style.display = "block";
+    sceneDone("match");
+  }
+}
+
+// Tally
+function renderTally(){
+  var sheet = document.getElementById("tally-sheet");
+  if(!sheet) return;
+  sheet.innerHTML = "";
+  var counts = {};
+  window.tallyState.forEach(function(s){ counts[s] = (counts[s]||0)+1; });
+  Object.keys(counts).forEach(function(sym){
+    var row = document.createElement("div");
+    row.style.cssText = "display:flex;gap:6px;align-items:center;font-size:1.5rem";
+    row.innerHTML = '<span>'+sym+'</span>';
+    var n = counts[sym];
+    var groups = Math.floor(n/5);
+    var remainder = n%5;
+    for(var g=0;g<groups;g++){
+      var grp = document.createElement("span");
+      grp.innerHTML = "&#10072;&#10072;&#10072;&#10072;&#10073;";
+      grp.style.color = "var(--gold)";
+      grp.style.letterSpacing = "2px";
+      row.appendChild(grp);
+    }
+    if(remainder > 0){
+      var rem = document.createElement("span");
+      rem.textContent = Array(remainder).fill("\u2022").join(" ");
+      rem.style.color = "var(--gold)";
+      row.appendChild(rem);
+    }
+    sheet.appendChild(row);
+  });
+  var total = window.tallyState.length;
+  var totalEl = document.getElementById("tally-total");
+  if(totalEl) totalEl.textContent = "Total: " + total;
+}
+function tallyAdd(sym){
+  window.tallyState.push(sym);
+  renderTally();
+}
+function resetTally(){
+  window.tallyState = [];
+  renderTally();
+}
+
+// Skip counting
+function setSkip(n){
+  var nums = document.getElementById("skip-nums");
+  if(!nums) return;
+  nums.innerHTML = "";
+  document.querySelectorAll(".scene-choices .schoice").forEach(function(b){b.classList.remove("right");b.classList.add("wrong");});
+  var btn = document.getElementById("skip-btn-"+n);
+  if(btn){btn.classList.remove("wrong");btn.classList.add("right");}
+  for(var i=1;i<=5;i++){
+    var num = i*n;
+    var chip = document.createElement("span");
+    chip.textContent = num;
+    chip.style.cssText = "width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:1.1rem";
+    nums.appendChild(chip);
+  }
+  document.getElementById("skip-obs").style.display = "block";
+}
+
+// Place value
+function pvAdd(place){
+  if(window.pvState[place] < 9){
+    window.pvState[place]++;
+    updatePV();
+  }
+}
+function pvReset(){
+  window.pvState = {h:0,t:0,u:0};
+  updatePV();
+}
+function updatePV(){
+  var h = document.getElementById("pv-h");
+  var t = document.getElementById("pv-t");
+  var u = document.getElementById("pv-u");
+  var total = document.getElementById("pv-total");
+  if(h) h.textContent = window.pvState.h;
+  if(t) t.textContent = window.pvState.t;
+  if(u) u.textContent = window.pvState.u;
+  if(total) total.textContent = "= "+(window.pvState.h*100+window.pvState.t*10+window.pvState.u);
+}
+function pvCheck(){
+  var val = window.pvState.h*100 + window.pvState.t*10 + window.pvState.u;
+  if(val === 243){
+    document.getElementById("pv-obs").style.display = "block";
+    sceneDone("placevalue");
+    confetti();
+  } else if(val > 0) {
+    say("That is " + val + ". Try to reach 243!");
+  }
+}
+
+// ─────────────────────────────────────────────
+// PROGRESS
+// ─────────────────────────────────────────────
+function sceneDone(id){
+  if(!STATE.progress[id]){
+    STATE.progress[id] = true;
+    ls("fgl-progress", STATE.progress);
+    confetti();
+    say("You completed an experience! " + (SCENES[id] ? SCENES[id].title : "Great work!"));
+  }
+}
+
+function togglePanel(){
+  var p = document.getElementById("ppanel");
+  if(!p) return;
+  p.classList.toggle("on");
+  if(p.classList.contains("on")) renderPanel();
+}
+
+function renderPanel(){
+  var c = document.getElementById("pcontent");
+  if(!c) return;
+  c.innerHTML = "";
+  LESSONS.forEach(function(lesson){
+    var expDone = lesson.experiences.filter(function(e){ return !!STATE.progress[e.id]; }).length;
+    var total = lesson.experiences.length;
+    var pct = Math.round((expDone/total)*100);
+    c.innerHTML += '<div class="prow"><div class="prow-label">'+lesson.emoji+' '+lesson.shortName+' <span>'+pct+'%</span></div><div class="pbar"><div class="pbar-fill" style="width:'+pct+'%;background:'+lesson.color+';"></div></div></div>';
   });
 }
 
-// NUMBERS
-function renderNumbers(area, l, e) {
-  area.innerHTML = '<div class="instruction">Everything in the universe can be counted and measured with numbers!</div><div class="demo-box"><div class="demo-label">Count the stars!</div><div style="font-size:4rem;margin:10px 0;">⭐⭐⭐</div><div style="font-size:2rem;margin:8px 0;">= 3 stars</div></div><button class="btn btn-primary" onclick="markDoneExp();say(\"Numbers help us understand the world!\")">Numbers are everywhere!</button>';
-}
-
-// SKIP COUNTING
-function renderSkipCounting(area, l, e) {
-  area.innerHTML = '<div class="instruction">Skip counting: 2, 4, 6, 8, 10 — we skip numbers as we count!</div><div class="demo-box"><div class="demo-label">Count by 2s!</div><div style="font-size:1.8rem;margin:10px 0;font-family:var(--font-h);color:var(--gold);">2 — 4 — 6 — 8 — 10</div></div><button class="btn btn-primary" onclick="markDoneExp();say(\"Skip counting is like jumping on a number line!\")">I can skip count!</button>';
-}
-
-// ZERO
-function renderZero(area, l, e) {
-  area.innerHTML = '<div class="instruction">Zero is a powerful idea — it means NOTHING. But it changes everything in math!</div><div class="demo-box"><div class="demo-label">Without zero, we could not write the number 10!</div><div style="font-size:2rem;margin:10px 0;font-family:var(--font-h);">1 → 10 = 1 and 0</div></div><button class="btn btn-primary" onclick="markDoneExp();say(\"Zero changed the history of mathematics!\")">Zero is amazing!</button>';
-}
-
-// TALK without words
-function renderMessages(area, l, e) {
-  var expressions = ["😊", "😢", "😠", "😮", "🥰", "🤔"];
-  area.innerHTML = '<div class="instruction">We can communicate without words! Tap each expression!</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:10px 0;">';
-  expressions.forEach(function(exp) {
-    var btn = document.createElement("button");
-    btn.style.cssText = "background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px;font-size:2.5rem;cursor:pointer";
-    btn.textContent = exp;
-    var meanings = ["Happy!", "Sad", "Angry", "Surprised", "Love", "Thinking"];
-    var idx = expressions.indexOf(exp);
-    btn.onclick = function() {
-      btn.style.background = "rgba(255,215,0,.15)";
-      btn.style.borderColor = "#FFD700";
-      say(meanings[idx]);
-      state.exprClicked = state.exprClicked || 0;
-      state.exprClicked++;
-      if (state.exprClicked >= expressions.length) markDoneExp();
-    };
-    area.appendChild(btn);
-  });
-}
-
-function rabbitySpeak() {
-  var msgs = ["Let's explore!", "You're amazing!", "Keep going!", "There is nothing wrong with trying again!"];
-  say(msgs[Math.floor(Math.random() * msgs.length)]);
-}
-
-function say(text) {
-  var b = document.getElementById("rabbity-bubble");
-  if (b) { b.textContent = "🐰 " + text; b.classList.add("show"); }
-  if ("speechSynthesis" in window) {
+// ─────────────────────────────────────────────
+// TTS + CONFETTI
+// ─────────────────────────────────────────────
+function say(text){
+  var b = document.getElementById("bubble");
+  if(b){ b.textContent = "\uD83D\uDC3B " + text; b.classList.add("on"); }
+  if("speechSynthesis" in window){
     speechSynthesis.cancel();
     var u = new SpeechSynthesisUtterance(text);
     u.lang = "en-US";
     u.rate = 0.85;
     speechSynthesis.speak(u);
   }
-  setTimeout(function() { if (b) b.classList.remove("show"); }, 3500);
+  setTimeout(function(){ if(b) b.classList.remove("on"); }, 3500);
 }
 
-function confetti() {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  var c = document.getElementById("confetti-container");
-  if (!c) return;
+function rabbitySpeak(){
+  var msgs = [
+    "Everything is connected!",
+    "What do you wonder about?",
+    "The universe is so big!",
+    "Keep exploring!",
+    "You are a wonderful learner!"
+  ];
+  say(msgs[Math.floor(Math.random()*msgs.length)]);
+}
+
+function confetti(){
+  var c = document.getElementById("confetti");
+  if(!c) return;
   c.innerHTML = "";
-  var colors = ["#FFD700", "#EF5350", "#66BB6A", "#42A5F5", "#AB47BC", "#FF9800"];
-  for (var i = 0; i < 40; i++) {
+  var colors = ["#FFD700","#EF5350","#66BB6A","#42A5F5","#AB47BC","#FF9800"];
+  for(var i=0;i<35;i++){
     var p = document.createElement("div");
-    p.className = "confetti-piece";
-    p.style.left = Math.random() * 100 + "%";
-    p.style.background = colors[Math.floor(Math.random() * colors.length)];
-    p.style.animationDelay = (Math.random() * 0.8) + "s";
+    p.className = "conf";
+    p.style.left = Math.random()*100+"%";
+    p.style.background = colors[Math.floor(Math.random()*colors.length)];
+    p.style.animationDelay = (Math.random()*0.7)+"s";
     p.style.animationDuration = "2.5s";
     c.appendChild(p);
   }
-  setTimeout(function() { c.innerHTML = ""; }, 3500);
+  setTimeout(function(){ c.innerHTML = ""; }, 3500);
 }
 
-function toggleParent() {
-  var p = document.getElementById("parent-panel");
-  if (!p) return;
-  p.classList.toggle("open");
-  if (p.classList.contains("open")) renderParentPanel();
-}
-
-function closeParent() {
-  var p = document.getElementById("parent-panel");
-  if (p) p.classList.remove("open");
-}
-
-function renderParentPanel() {
-  var c = document.getElementById("parent-content");
-  if (!c) return;
-  c.innerHTML = "";
-  LESSONS.forEach(function(l) {
-    var done = l.exps.filter(function(e) { return isDone(l.id + "-" + e.id); }).length;
-    var pct = Math.round((done / l.exps.length) * 100);
-    c.innerHTML += "<div class=\"panel-row\"><div class=\"panel-row-label\">" + l.emoji + " " + l.title + " <span>" + pct + "%</span></div><div class=\"panel-bar\"><div class=\"panel-bar-fill\" style=\"width:" + pct + "%;background:#FFD700;\"></div></div></div>";
-  });
-}
-
-document.addEventListener("keydown", function(e) {
-  if (e.key === "Escape") { closeParent(); goBack(); }
+// ─────────────────────────────────────────────
+// EVENTS
+// ─────────────────────────────────────────────
+document.getElementById("lesson-back").onclick = function(){ sc("home"); };
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape"){
+    document.getElementById("ppanel").classList.remove("on");
+    goBack();
+  }
 });
 window.addEventListener("load", init);
 </script>
