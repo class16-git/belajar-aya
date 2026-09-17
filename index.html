@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skip Counting dengan Aya 🌱</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #FFF8F0;
+      --warm-brown: #8B6914;
+      --soft-green: #4CAF50;
+      --soft-blue: #5B9BD5;
+      --soft-orange: #F4A261;
+      --soft-pink: #E8A0BF;
+      --light-gray: #F5F0EB;
+      --text-dark: #3D2B1F;
+      --text-mid: #6B5B4F;
+      --shadow: 0 4px 20px rgba(0,0,0,0.08);
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--cream);
+      color: var(--text-dark);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      color: var(--warm-brown);
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    .emoji-row {
+      font-size: 2rem;
+      margin: 15px 0;
+      letter-spacing: 8px;
+    }
+
+    /* ===== WHY SECTION ===== */
+    .why-section {
+      background: linear-gradient(135deg, #FFF0DC, #FFF8F0);
+      border: 3px solid var(--soft-orange);
+      border-radius: var(--radius);
+      padding: 28px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    .why-section h2 {
+      font-family: 'Fredoka One', cursive;
+      color: var(--soft-orange);
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+
+    .why-section p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--text-dark);
+    }
+
+    .finger-row {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .finger {
+      width: 38px;
+      height: 50px;
+      background: #FFE4B5;
+      border: 2px solid #DEB887;
+      border-radius: 8px 8px 12px 12px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-mid);
+      cursor: default;
+      transition: transform 0.2s;
+    }
+
+    .finger:hover { transform: scale(1.1); }
+
+    .finger.counted {
+      background: var(--soft-green);
+      color: white;
+      border-color: #388E3C;
+    }
+
+    /* ===== TOPIC SELECTOR ===== */
+    .topic-selector {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .topic-btn {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.3rem;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .topic-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+    .topic-btn:active { transform: translateY(0); }
+
+    .topic-btn.by2  { background: var(--soft-blue); }
+    .topic-btn.by5  { background: var(--soft-orange); }
+    .topic-btn.by10 { background: var(--soft-green); }
+
+    .topic-btn.active.by2  { background: var(--soft-blue); box-shadow: 0 0 0 4px rgba(91,155,213,0.3); }
+    .topic-btn.active.by5  { background: var(--soft-orange); box-shadow: 0 0 0 4px rgba(244,162,97,0.3); }
+    .topic-btn.active.by10 { background: var(--soft-green); box-shadow: 0 0 0 4px rgba(76,175,80,0.3); }
+
+    /* ===== CONCRETE SECTION ===== */
+    .section-label {
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      margin-bottom: 12px;
+    }
+
+    .section-card {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .section-card h3 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Dot grid */
+    .dot-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .dot-group {
+      display: flex;
+      gap: 6px;
+    }
+
+    .dot {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: transform 0.15s, background 0.2s;
+      user-select: none;
+    }
+
+    .dot.inactive { background: #E8E0D5; color: transparent; }
+    .dot.inactive:hover { background: #D4C8B8; transform: scale(1.1); }
+    .dot.revealed { background: #C8E6C9; color: #2E7D32; }
+    .dot.revealed:hover { transform: scale(1.1); }
+
+    .dot.by2  { background: rgba(91,155,213,0.15); }
+    .dot.by5  { background: rgba(244,162,97,0.15); }
+    .dot.by10 { background: rgba(76,175,80,0.15); }
+
+    .dot.revealed.by2  { background: var(--soft-blue); color: white; }
+    .dot.revealed.by5  { background: var(--soft-orange); color: white; }
+    .dot.revealed.by10 { background: var(--soft-green); color: white; }
+
+    /* ===== PRACTICE SECTION ===== */
+    .practice-area {
+      text-align: center;
+    }
+
+    .sequence-display {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .seq-num {
+      min-width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+
+    .seq-num:hover { transform: scale(1.1); }
+
+    .seq-num.known { background: #C8E6C9; color: #2E7D32; }
+    .seq-num.ask   { background: #FFF3CD; color: #856404; border: 3px dashed #FFC107; }
+    .seq-num.ask:hover { background: #FFE082; }
+
+    .seq-num.by2  { background: rgba(91,155,213,0.12); }
+    .seq-num.by5  { background: rgba(244,162,97,0.12); }
+    .seq-num.by10 { background: rgba(76,175,80,0.12); }
+
+    .seq-num.known.by2  { background: var(--soft-blue); color: white; }
+    .seq-num.known.by5  { background: var(--soft-orange); color: white; }
+    .seq-num.known.by10 { background: var(--soft-green); color: white; }
+
+    .seq-num.ask.by2  { border-color: var(--soft-blue); color: var(--soft-blue); }
+    .seq-num.ask.by5  { border-color: var(--soft-orange); color: var(--soft-orange); }
+    .seq-num.ask.by10 { border-color: var(--soft-green); color: var(--soft-green); }
+
+    /* Input style */
+    .number-input {
+      width: 72px;
+      height: 52px;
+      border-radius: 14px;
+      border: 3px dashed;
+      text-align: center;
+      font-size: 1.3rem;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .number-input.by2  { border-color: var(--soft-blue); color: var(--soft-blue); background: rgba(91,155,213,0.05); }
+    .number-input.by5  { border-color: var(--soft-orange); color: var(--soft-orange); background: rgba(244,162,97,0.05); }
+    .number-input.by10 { border-color: var(--soft-green); color: var(--soft-green); background: rgba(76,175,80,0.05); }
+
+    .number-input:focus { outline: none; }
+    .number-input.correct { border-color: #2E7D32; background: #C8E6C9; color: #2E7D32; border-style: solid; }
+    .number-input.wrong { border-color: #C62828; background: #FFCDD2; color: #C62828; animation: shake 0.4s; }
+
+    @keyframes shake {
+      0%,100%{ transform: translateX(0); }
+      25% { transform: translateX(-6px); }
+      75% { transform: translateX(6px); }
+    }
+
+    /* ===== CELEBRATION ===== */
+    .celebration {
+      display: none;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .celebration.show { display: block; animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); }
+
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .celebration .stars {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+    }
+
+    .celebration p {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.4rem;
+      color: var(--warm-brown);
+    }
+
+    .reset-btn {
+      margin-top: 16px;
+      padding: 12px 28px;
+      background: var(--warm-brown);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .reset-btn:hover { transform: scale(1.05); }
+
+    /* ===== WHY BUILDS ON THIS ===== */
+    .why-builds {
+      background: linear-gradient(135deg, #E8F5E9, #FFF8F0);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 20px;
+    }
+
+    .why-builds h4 {
+      font-family: 'Fredoka One', cursive;
+      color: var(--soft-green);
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .why-builds p {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    .math-fact {
+      display: inline-block;
+      background: rgba(76,175,80,0.12);
+      border: 2px solid var(--soft-green);
+      border-radius: 12px;
+      padding: 8px 16px;
+      margin: 8px 4px;
+      font-weight: 700;
+      color: #2E7D32;
+    }
+
+    /* ===== PROGRESS ===== */
+    .progress-bar-wrap {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      background: #E0D8CF;
+      border-radius: 20px;
+      height: 14px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      border-radius: 20px;
+      transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      background: linear-gradient(90deg, var(--soft-green), #81C784);
+    }
+
+    .progress-label {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-mid);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--text-mid);
+      font-size: 0.85rem;
+    }
+
+    footer a { color: var(--soft-green); text-decoration: none; }
+
+    /* ===== HIDDEN SECTIONS ===== */
+    .learning-section { display: none; }
+    .learning-section.active { display: block; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 500px) {
+      .dot { width: 36px; height: 36px; font-size: 0.95rem; }
+      .seq-num, .number-input { min-width: 44px; height: 44px; font-size: 1rem; }
+      .finger { width: 30px; height: 42px; font-size: 0.9rem; }
+      .topic-btn { font-size: 1.1rem; padding: 12px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="emoji-row">🌱 🔢 ✋</div>
+  <h1>Skip Counting!</h1>
+  <p>Belajar menghitung dengan cara seru untuk Aya 💛</p>
+</header>
+
+<!-- WHY: Why skip counting matters -->
+<div class="why-section">
+  <h2>🤔 Kenapa Harus Skip Counting?</h2>
+  <p>
+    Pak, kamu punya <strong>10 jari</strong> di kedua tangan. Coba hitung satu-satu…
+  </p>
+  <div class="finger-row" id="finger-demo">
+    <!-- Filled by JS -->
+  </div>
+  <p>
+    Tapi kalau kita hitung <strong>2-2</strong>, lebih cepat kan?<br>
+    Atau kalau kita hitung <strong>5-5</strong> — itu jumlah jari di SATU tangan!<br>
+    <em>Skip counting = jalan pintas menghitung!</em>
+  </p>
+  <div class="why-builds">
+    <h4>🧠 Kenapa ini penting?</h4>
+    <p>
+      Skip counting adalah dasar dari <strong>perkalian</strong> (×).<br>
+      Menghitung 2, 4, 6, 8… itu sama artinya dengan 1×2, 2×2, 3×2, 4×2…
+    </p>
+    <div>
+      <span class="math-fact">2×1=2</span>
+      <span class="math-fact">2×2=4</span>
+      <span class="math-fact">2×3=6</span>
+      <span class="math-fact">2×4=8</span>
+      <span class="math-fact">2×5=10</span>
+    </div>
+    <p style="margin-top:8px; font-size:0.85rem;">
+      🌟 <em>Pak punya cara-asik perkalian! Lihat bagian "Rahasia Pak" nanti!</em>
+    </p>
+  </div>
+</div>
+
+<!-- Progress -->
+<div class="progress-label" id="progress-label">Ayo mulai! Pilih angka berapa!</div>
+<div class="progress-bar-wrap"><div class="progress-bar" id="progress-bar" style="width:0%"></div></div>
+
+<!-- Topic Selector -->
+<div class="topic-selector">
+  <button class="topic-btn by2" onclick="selectTopic(2)" id="btn-2">Loncat 2 🟦</button>
+  <button class="topic-btn by5" onclick="selectTopic(5)" id="btn-5">Loncat 5 🟧</button>
+  <button class="topic-btn by10" onclick="selectTopic(10)" id="btn-10">Loncat 10 🟩</button>
+</div>
+
+<!-- ========== LEARNING SECTION (hidden until topic selected) ========== -->
+<div class="learning-section" id="learning-section">
+
+  <!-- ===== STEP 1: CONCRETE — dots she can click ===== -->
+  <div class="section-card" id="step-concrete">
+    <div class="section-label">Langkah 1 — Klik Titik!</div>
+    <h3 id="concrete-title">Klik titik untuk lihat polanya!</h3>
+    <p id="concrete-subtitle" style="text-align:center; color:var(--text-mid); font-size:0.95rem; margin-bottom:16px;">
+      Tekan tombol nomor di atas untuk pilih lompatan!
+    </p>
+    <div class="dot-grid" id="dot-grid">
+      <!-- Filled by JS -->
+    </div>
+    <p id="concrete-hint" style="text-align:center; color:var(--text-mid); font-size:0.9rem; margin-top:12px;">
+      💡 Klik titik-titik di atas untuk lihat angkanya!
+    </p>
+  </div>
+
+  <!-- ===== STEP 2: PICTORIAL — complete the sequence ===== -->
+  <div class="section-card" id="step-practice">
+    <div class="section-label">Langkah 2 — Lengkapi!</div>
+    <h3>Ayo isi angka yang kosong! 🎯</h3>
+    <div class="practice-area">
+      <div class="sequence-display" id="sequence-display">
+        <!-- Filled by JS -->
+      </div>
+      <p id="score-display" style="margin-top:12px; font-weight:700; color:var(--text-mid);">
+        Benar: <span id="score">0</span> / <span id="total">10</span>
+      </p>
+    </div>
+    <div class="celebration" id="celebration">
+      <div class="stars">⭐ 🌟 ⭐</div>
+      <p id="celebration-text">Hebat sekali, Aya!</p>
+      <button class="reset-btn" onclick="resetPractice()">Coba Lagi 🔄</button>
+    </div>
+  </div>
+
+  <!-- ===== STEP 3: ABSTRACT — Pak's secret method ===== -->
+  <div class="section-card">
+    <div class="section-label">Rahasia Pak ✨</div>
+    <h3>Cara Pak Hitung Perkalian</h3>
+    <p style="text-align:center; color:var(--text-mid); margin-bottom:16px; line-height:1.6;">
+      Aya, sekarang kamu tahu kenapa skip counting itu penting.<br>
+      Ini cara Pak pikirin perkalian — mungkin sama kayak kamu juga!
+    </p>
+
+    <div style="background:#FFF8E1; border-radius:16px; padding:20px; margin:16px 0; border:2px solid #FFD54F;">
+      <div style="font-weight:800; margin-bottom:8px; color:#F57F17;">
+        📌 Contoh: 66 × 5 = ?
+      </div>
+      <p style="font-size:1rem; line-height:1.8;">
+        Pak pikir: <strong>"5 itu setengah dari 10!"</strong><br>
+        Jadi: <strong>(66 × 10) ÷ 2 = 660 ÷ 2 = 330</strong>
+      </p>
+    </div>
+
+    <div style="background:#E8F5E9; border-radius:16px; padding:20px; margin:16px 0; border:2px solid #81C784;">
+      <div style="font-weight:800; margin-bottom:8px; color:#2E7D32;">
+        📌 Contoh: 66 × 15 = ?
+      </div>
+      <p style="font-size:1rem; line-height:1.8;">
+        Pak pikir: <strong>"15 itu 10 + 5"</strong><br>
+        Jadi: <strong>(66×10) + (66×5) = 660 + 330 = 990</strong>
+      </p>
+    </div>
+
+    <p style="text-align:center; color:var(--text-mid); font-size:0.9rem; margin-top:12px;">
+      🌟 <em>Perkalian besar = perkalian kecil yang digabung! Kamu pasti bisa!</em>
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  Dibuat dengan ❤️ untuk Aya<br>
+  Prinsip: Montessori + Cognitive Science | <a href="https://github.com/class16-git/belajar-aya" target="_blank">GitHub</a>
+</footer>
+
+<script>
+// ===== STATE =====
+let currentTopic = null;  // 2, 5, or 10
+let score = 0;
+let totalAttempts = 0;
+const MAX_PRACTICE = 10;
+
+// ===== FINGER DEMO =====
+function initFingerDemo() {
+  const row = document.getElementById('finger-demo');
+  row.innerHTML = '';
+  for (let i = 1; i <= 10; i++) {
+    const f = document.createElement('div');
+    f.className = 'finger';
+    f.textContent = i;
+    f.id = 'fing-' + i;
+    f.addEventListener('click', () => {
+      if (f.classList.contains('counted')) return;
+      // Count up to this finger
+      for (let j = 1; j <= i; j++) {
+        document.getElementById('fing-' + j).classList.add('counted');
+        document.getElementById('fing-' + j).textContent = j;
+      }
+    });
+    row.appendChild(f);
+  }
+}
+
+// ===== TOPIC SELECTION =====
+function selectTopic(n) {
+  // Update buttons
+  document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn-' + n).classList.add('active');
+  currentTopic = n;
+
+  // Show learning section
+  document.getElementById('learning-section').classList.add('active');
+
+  // Update concrete section
+  updateConcrete();
+  // Update practice
+  resetPractice();
+
+  // Scroll to section
+  document.getElementById('learning-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// ===== CONCRETE: DOT GRID =====
+function updateConcrete() {
+  if (!currentTopic) return;
+  const n = currentTopic;
+  const grid = document.getElementById('dot-grid');
+
+  const titles = {
+    2: { main: '🟦 Hitung 2-2!', sub: 'Klik titik untuk lihat angkanya. Perhatikan polanya!' },
+    5: { main: '🟧 Hitung 5-5!', sub: 'Lima jari di satu tangan! Klik titik untuk lihat polanya!' },
+    10: { main: '🟩 Hitung 10-10!', sub: 'Sepuluh jari di dua tangan! Klik titik untuk lihat polanya!' }
+  };
+
+  document.getElementById('concrete-title').textContent = titles[n].main;
+  document.getElementById('concrete-subtitle').textContent = titles[n].sub;
+
+  // Build dot grid — n groups of n dots
+  grid.innerHTML = '';
+  const totalDots = n * 5; // 5 groups
+
+  for (let g = 0; g < 5; g++) {
+    const group = document.createElement('div');
+    group.className = 'dot-group';
+
+    for (let d = 0; d < n; d++) {
+      const dotNum = g * n + d + 1;
+      const dot = document.createElement('div');
+      dot.className = `dot inactive by${n}`;
+      dot.textContent = dotNum;
+      dot.addEventListener('click', () => revealDot(dot, dotNum, n));
+      group.appendChild(dot);
+    }
+    grid.appendChild(group);
+  }
+}
+
+function revealDot(dot, num, topic) {
+  if (dot.classList.contains('revealed')) return;
+  dot.classList.remove('inactive');
+  dot.classList.add('revealed');
+  dot.textContent = num;
+}
+
+// ===== PRACTICE: FILL IN THE BLANKS =====
+function resetPractice() {
+  score = 0;
+  totalAttempts = 0;
+  document.getElementById('score').textContent = score;
+  document.getElementById('total').textContent = MAX_PRACTICE;
+  document.getElementById('celebration').classList.remove('show');
+  buildSequence();
+  updateProgress();
+}
+
+function buildSequence() {
+  if (!currentTopic) return;
+  const n = currentTopic;
+  const container = document.getElementById('sequence-display');
+  container.innerHTML = '';
+
+  const nGroups = Math.ceil(MAX_PRACTICE / n);
+  let blanks = [];
+
+  // Generate sequence: e.g. for n=2: [2,4,6,8,10,12,14,16,18,20]
+  const sequence = [];
+  for (let i = 1; i <= MAX_PRACTICE; i++) {
+    sequence.push(i * n);
+  }
+
+  // Decide which to blank out (interleaved: not adjacent)
+  // Space out blanks so it's not too hard
+  const blankPositions = new Set();
+  const blankInterval = Math.max(2, Math.floor(n * 1.5));
+  for (let i = blankInterval - 1; i < sequence.length; i += blankInterval) {
+    blankPositions.add(i);
+  }
+
+  // Make sure at least 3 blanks for good practice
+  while (blankPositions.size < 3) {
+    const r = Math.floor(Math.random() * sequence.length);
+    if (!blankPositions.has(r)) blankPositions.add(r);
+  }
+
+  blanks = Array.from(blankPositions);
+
+  blanks.forEach(pos => {
+    const val = sequence[pos];
+    const cell = document.createElement('div');
+    cell.style.display = 'flex';
+    cell.style.flexDirection = 'column';
+    cell.style.alignItems = 'center';
+    cell.style.gap = '4px';
+
+    const input = document.createElement('input');
+    input.type = 'number';
+    input.className = `number-input by${n}`;
+    input.placeholder = '?';
+    input.min = 1;
+    input.max = 999;
+    input.dataset.answer = val;
+    input.dataset.pos = pos;
+
+    const checkBtn = document.createElement('button');
+    checkBtn.textContent = '✓';
+    checkBtn.style.cssText = 'width:36px;height:36px;border-radius:50%;border:none;background:#388E3C;color:white;font-size:1.1rem;cursor:pointer;font-weight:700;';
+    checkBtn.addEventListener('click', () => checkAnswer(input));
+
+    cell.appendChild(input);
+    cell.appendChild(checkBtn);
+    container.appendChild(cell);
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') checkAnswer(input);
+      if (e.key === 'ArrowRight') {
+        const all = container.querySelectorAll('input');
+        const idx = Array.from(all).indexOf(input);
+        if (idx < all.length - 1) all[idx + 1].focus();
+      }
+    });
+  });
+
+  // Fill in known numbers
+  for (let i = 0; i < sequence.length; i++) {
+    if (blankPositions.has(i)) continue;
+    const num = document.createElement('div');
+    num.className = `seq-num known by${n}`;
+    num.textContent = sequence[i];
+    container.appendChild(num);
+  }
+}
+
+function checkAnswer(input) {
+  const answer = parseInt(input.value);
+  const correct = parseInt(input.dataset.answer);
+
+  if (isNaN(answer)) {
+    input.focus();
+    return;
+  }
+
+  totalAttempts++;
+
+  if (answer === correct) {
+    input.classList.remove('wrong', 'ask');
+    input.classList.add('correct');
+    input.readOnly = true;
+    input.value = correct;
+    input.nextSibling.style.display = 'none'; // hide check button
+
+    score++;
+    document.getElementById('score').textContent = score;
+    updateProgress();
+
+    // Auto-scroll to next blank
+    const all = document.getElementById('sequence-display').querySelectorAll('input');
+    const idx = Array.from(all).indexOf(input);
+    if (idx < all.length - 1) {
+      all[idx + 1].focus();
+    }
+
+    // Check if all done
+    const remaining = Array.from(all).filter(i => !i.readOnly && !i.classList.contains('correct'));
+    if (remaining.length === 0) {
+      showCelebration();
+    }
+  } else {
+    input.classList.remove('correct');
+    input.classList.add('wrong');
+    setTimeout(() => {
+      input.classList.remove('wrong');
+      input.value = '';
+      input.focus();
+    }, 800);
+  }
+}
+
+function showCelebration() {
+  const messages = [
+    'Hebat sekali, Aya! 🌟',
+    'Kamu pintar banget! ⭐',
+    'Luar biasa! 💪',
+    'Matematikawan muda! 🧠',
+    'Ayo coba lagi! 🔄',
+  ];
+  const msg = messages[Math.floor(Math.random() * messages.length)];
+  document.getElementById('celebration-text').textContent = msg;
+  document.getElementById('celebration').classList.add('show');
+  updateProgress(100);
+}
+
+function updateProgress(pct) {
+  const bar = document.getElementById('progress-bar');
+  const label = document.getElementById('progress-label');
+
+  if (pct === undefined) {
+    const all = document.getElementById('sequence-display').querySelectorAll('input');
+    const done = Array.from(all).filter(i => i.readOnly || i.classList.contains('correct')).length;
+    pct = Math.round((done / all.length) * 100);
+  }
+
+  const colors = { 2: '#5B9BD5', 5: '#F4A261', 10: '#4CAF50' };
+  bar.style.width = pct + '%';
+  bar.style.background = `linear-gradient(90deg, ${colors[currentTopic]}, #81C784)`;
+
+  if (pct === 0) label.textContent = 'Ayo mulai! Klik titik dulu!';
+  else if (pct < 100) label.textContent = `Pertanyaan yang dijawab: ${score}/${totalAttempts}`;
+  else label.textContent = '🎉 Semangat, Aya! 🎉';
+}
+
+// ===== INIT =====
+document.addEventListener('DOMContentLoaded', () => {
+  initFingerDemo();
+  // Show a hint about starting
+  document.getElementById('progress-label').textContent = 'Tekan tombol biru, oranye, atau hijau di atas untuk mulai! 👇';
+});
+</script>
+
+</body>
+</html>
