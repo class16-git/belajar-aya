@@ -999,7 +999,7 @@ body {
       <div class="story-visual" id="l2-vis">🌿</div>
       <div class="story-title">Kehidupan</div>
       <div class="story-question" id="l2-q">"Bagaimana Bumi bisa penuh dengan makhluk hidup?"</div>
-      <div class="story-text" id="l2-text">Setelah Bumi menjadi dingin, sesuatu yang menakjubkan terjadi. Makhluk hidup pertama muncul. Lama sekali kemudian, muncul lebih banyak种类. Динозавры muncul, lalu menghilang. Lalu muncul hewan kecil, dan akhirnya — manusia.</div>
+      <div class="story-text" id="l2-text">Setelah Bumi menjadi dingin, sesuatu yang menakjubkan terjadi. Makhluk hidup pertama muncul. Lama sekali kemudian, muncul lebih banyak jenis. Dinosaurus muncul, lalu menghilang. Lalu muncul hewan kecil, dan akhirnya — manusia.</div>
       <button class="btn btn-primary" onclick="startLesson(2)">Ayo Jelajahi! 🌱</button>
     </div>
   </div>
@@ -1163,6 +1163,20 @@ function loadProgress() {
 }
 function saveProgress(p) {
   try { localStorage.setItem('great-lessons-progress', JSON.stringify(p)); } catch(e) {}
+}
+// Mark experience done ONLY on meaningful completion (not on entry)
+function markDone() {
+  const container = document.getElementById('exp-container');
+  const lessonId = parseInt(container.dataset.lesson);
+  const expId = container.dataset.expId;
+  if (!lessonId || !expId) return;
+  const p = loadProgress();
+  if (!p[lessonId]) p[lessonId] = {};
+  p[lessonId][expId] = true;
+  saveProgress(p);
+  updateParentPanel();
+  // Also refresh the lesson grid so ✓ appears on the card
+  renderLessonExp(lessonId);
 }
 
 // ═══════════════════════════════════════
@@ -1331,17 +1345,11 @@ function runExp(lessonId, expId) {
   const lesson = LESSONS.find(l => l.id === lessonId);
   const exp = lesson ? lesson.experiences.find(e => e.id === expId) : null;
   container.dataset.lesson = lessonId;
+  container.dataset.expId = expId; // track current experience for markDone()
 
   // Set breadcrumb
   const bc = document.getElementById('exp-breadcrumb');
   if (bc) bc.textContent = `Home > ${lesson ? lesson.title : ''} > ${exp ? exp.title : ''}`;
-
-  // Mark done
-  const p = loadProgress();
-  if (!p[lessonId]) p[lessonId] = {};
-  p[lessonId][expId] = true;
-  saveProgress(p);
-  updateParentPanel();
 
   // Route to specific experience
   const dispatch = {
@@ -1735,10 +1743,9 @@ function checkAlive(idx, isAlive) {
       msg.textContent = '✗ Bukan hidup! Benda tidak bernapas atau tumbuh. 🪨';
     }
   }
-  confetti();
 }
 
-// ─── LESSON 2: PLANT NEEDS ───
+
 function expPlant() {
   const c = document.getElementById('exp-container');
   c.innerHTML = `
@@ -1779,6 +1786,7 @@ function givePlant(type) {
     if (msg) { msg.className = 'feedback-msg success'; msg.textContent = 'Hebat! Tanaman sehat dan berbunga! 🌸 Tanaman butuh air, cahaya, dan udara — semua!'; }
     if (status) status.textContent = 'Tanaman sehat dan bahagia! 🌸';
     confetti();
+    markDone();
   } else if (any) {
     const missing = [];
     if (!state.plant.water) missing.push('air');
@@ -1938,7 +1946,7 @@ function placeAnimal(bucketId) {
   if (msg) { msg.className = 'feedback-msg success'; msg.textContent = `Hebat! ${emoji} masuk ke kelompok ${bucketId}!`; }
   state.selectedAnimal = null;
   document.querySelectorAll('.animal-card').forEach(c => c.style.borderColor = '');
-  if (state.placedAnimals.size === 6) confetti();
+  if (state.placedAnimals.size === 6) { confetti(); markDone(); }
 }
 
 // ─── LESSON 2: ECOSYSTEM ───
@@ -2056,11 +2064,11 @@ function selectNeed(idx, emoji) {
   const msg = document.getElementById('needs-msg');
   if (msg) {
     if (count === 0) { msg.className = 'feedback-msg hint'; msg.textContent = 'Pilih yang paling penting!'; }
-    else if (count <= 2) { msg.className = 'feedback-msg success'; msg.textContent = 'Bagus! ${emoji} sangat penting untuk bertahan hidup!'; }
+    else if (count <= 2) { msg.className = 'feedback-msg success'; msg.textContent = 'Bagus! Pilihanmu sangat penting untuk bertahan hidup! ❤️'; }
     else { msg.className = 'feedback-msg success'; msg.textContent = 'Manusia butuh banyak hal — jasmani dan juga rohani! ❤️'; }
   }
-  if (count >= 3) confetti();
-}
+  }
+
 
 // ─── LESSON 3: SHELTER ───
 function expShelter() {
@@ -2160,7 +2168,6 @@ function testShelter() {
     }
   }
   updateShelterPreview();
-  confetti();
 }
 
 // ─── LESSON 3: TOOLS ───
@@ -2206,7 +2213,7 @@ function showTool(idx) {
   ];
   const msg = document.getElementById('tool-msg');
   if (msg) { msg.className = 'feedback-msg success'; msg.textContent = tools[idx].desc; }
-  if (idx >= 1) confetti();
+  // tools are exploratory — no completion confetti
 }
 
 // ─── LESSON 3: COOPERATION ───
@@ -2257,7 +2264,7 @@ function addWorker() {
   if (state.coopWorkers < 8) {
     state.coopWorkers++;
     updateCoop();
-    if (state.coopWorkers >= 3) confetti();
+    if (state.coopWorkers >= 3) { confetti(); markDone(); }
   }
 }
 
@@ -2312,7 +2319,7 @@ function advanceGen() {
   }
   const msg = document.getElementById('gen-msg');
   if (msg) { msg.className = 'feedback-msg success'; msg.textContent = msgs[state.genStep]; }
-  if (state.genStep >= 2) confetti();
+  // knowledge chain is exploratory
   if (state.genStep >= 3) {
     const btn = document.getElementById('gen-btn');
     if (btn) btn.style.display = 'none';
@@ -2362,7 +2369,7 @@ function selectComm(idx) {
   ];
   const msg = document.getElementById('comm-msg');
   if (msg) { msg.className = 'feedback-msg success'; msg.textContent = msgs[idx]; }
-  if (idx === 3) confetti();
+  if (idx === 3) { confetti(); markDone(); }
 }
 
 // ─── LESSON 4: MAKE A SYMBOL ───
@@ -2413,7 +2420,7 @@ function saveSymbol() {
   const msg = document.getElementById('sym-msg');
   if (msg) {
     msg.className = 'feedback-msg success';
-    msg.textContent = 'Hebat! Simbolmu saved! 💾 Kamu baru saja berpikir seperti manusia purba yang menemukan tulisan!';
+    msg.textContent = 'Hebat! Simbolmu tersimpan! 💾 Kamu baru saja berpikir seperti manusia purba yang menemukan tulisan! 🔣';
   }
   confetti();
 }
@@ -2526,6 +2533,7 @@ function timeWarp() {
     msg.textContent = '1000 tahun kemudian... Character B MENEMUKAN tulisan Character A! "Ada air di balik bukit 🍎" — Ide itu selamat! Inilah KEKUATAN TULISAN! 📜✨';
   }
   confetti();
+  markDone();
 }
 
 // ─── LESSON 5: GOATS & STONES ───
@@ -2591,7 +2599,7 @@ function updateGoats() {
   if (msg) {
     if (state.goats === 0 && state.stones === 0) { msg.className = 'feedback-msg hint'; msg.textContent = 'Tekan +KAMBING dan +BATU untuk pasang batu!'; }
     else if (state.goats === state.stones && state.goats > 0) {
-      msg.className = 'feedback-msg success'; msg.textContent = '✓ Tepat! 1 batu = 1 kambing! Ini namanya SATU-SATU. 🐐●'; confetti();
+      msg.className = 'feedback-msg success'; msg.textContent = '✓ Tepat! 1 batu = 1 kambing! Ini namanya SATU-SATU. 🐐●'; confetti(); markDone();
     }
     else if (state.stones > state.goats) {
       msg.className = 'feedback-msg wrong'; msg.textContent = 'Ada batu lebih banyak dari kambing! Artinya: satu goats masih di luar! 🐐❌';
@@ -2675,6 +2683,7 @@ function pikoHop() {
       msg.className = 'feedback-msg success';
       msg.textContent = 'Hebat! Piko sampai di 30! Polanya selalu sama: +' + state.skipSize + '! 🌟';
       confetti();
+      markDone();
     } else {
       msg.className = 'feedback-msg hint';
       msg.textContent = 'Piko di ' + state.skipPos + '! Lompatan berikutnya: ' + (state.skipPos + state.skipSize) + '! 🐰';
@@ -2754,7 +2763,7 @@ function pikoSpeak() {
     'l1': 'Alam semesta sangat besar! Di dalamnya ada miliaran bintang.',
     'l2': 'Kehidupan muncul setelah Bumi menjadi dingin. Lama sekali kemudian, muncul banyak sekalidan.',
     'l3': 'Manusia punya kemampuan luar biasa: bekerja sama, membuat alat, dan berbagi pengetahuan!',
-    'l4': 'Dengan simbol dan tulisan, pikiran bisa berjalan dari satu otak ke otak lain — bahkan через ribuan tahun!',
+    'l4': 'Dengan simbol dan tulisan, pikiran bisa berjalan dari satu otak ke otak lain — bahkan melewati ribuan tahun!',
     'l5': 'Angka adalah cara kita menulis jumlah. Dulu manusia menghitung dengan batu dan jari!'
   };
   const screen = document.querySelector('.screen.active');
