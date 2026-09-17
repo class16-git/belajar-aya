@@ -144,11 +144,11 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 
 <script>
 const ACTIVITIES=[
-  {id:'pour',name:'Pouring',desc:'Pour water from jug to glass',prompt:'Tap teko untuk menuangkan air!'},
-  {id:'tongs',name:'Tongs',desc:'Move balls with tongs',prompt:'Use the tongs untuk pindahkan bola!'},
+  {id:'pour',name:'Pouring',desc:'Pour water from jug to glass',prompt:'Tap the jug to pour water!'},
+  {id:'tongs',name:'Tongs',desc:'Move balls with tongs',prompt:'Use the tongs to move balls!'},
   {id:'buttons',name:'Buttoning',desc:'Open and close buttons',prompt:'Tap buttons to open and close!'},
-  {id:'wash',name:'Hand Washing',desc:'6 steps to wash hands',prompt:'Follow the steps-langkah cuci tangan!'},
-  {id:'pink',name:'Pink Tower',desc:'Stack the blocks biggest to smallest',prompt:'Stack the blocks dari yang terbesar!'},
+  {id:'wash',name:'Hand Washing',desc:'6 steps to wash hands',prompt:'Follow the steps-langkah wash hands!'},
+  {id:'pink',name:'Pink Tower',desc:desc:'Stack the blocks from biggest to smallest',prompt:'Stack the blocks from the biggest!'},
 ];
 
 let state={history:['home'],progress:{}};
@@ -242,7 +242,7 @@ function renderPour(area){
       </div>
       <div class="exp-instruction" id="pour-msg">Tap teko untuk tuang air!</div>
     </div>
-    <button class="btn btn-primary" onclick="if(state.pourLevel>=3){markDone('pour');say('Hebat! Air sudah penuh!')}else{say('Tuang lagi sampai penuh!')}" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
+    <button class="btn btn-primary" onclick="if(state.pourLevel>=3){markDone('pour');say('Great! The glass is full!')}else{say('Tuang lagi sampai penuh!')}" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
   state.pourLevel=0;
 }
@@ -263,7 +263,7 @@ function doPour(){
   if(level)level.textContent=(state.pourLevel*33)+'%';
   if(msg){
     if(state.pourLevel<3)msg.textContent=`Air ${state.pourLevel*33}%! Lanjutkan!`;
-    else msg.innerHTML='<span style="color:var(--green)">Glass penuh! Air sudah dituang!</span>';
+    else msg.innerHTML='<span style="color:var(--green)">The glass is full! Water poured!</span>';
   }
   say(state.pourLevel<3?'Pour more!':'Hebat! Glass penuh!');
 }
@@ -316,7 +316,7 @@ function dropTong(){
   const msg=document.getElementById('tongs-msg');
   if(msg)msg.textContent=`${state.tongsInTarget}/5 bola di gelas. Tap bola lagi!`;
   if(state.tongsInTarget>=5){
-    if(msg)msg.innerHTML='<span style="color:var(--green)">Semua bola sudah dipindahkan!</span>';
+    if(msg)msg.innerHTML='<span style="color:var(--green)">All balls moved!</span>';
     say('Hebat! Semua bola di gelas!');
   }
 }
@@ -382,7 +382,7 @@ function renderWash(area){
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Follow the steps-langkah cuci tangan!</div>
+      <div class="demo-label">Follow the steps-langkah wash hands!</div>
       <div class="step-list">
         ${steps.map((s,i)=>`
           <button class="step-item ${i===0?'active':''}" id="wash-step-${i}" onclick="doWashStep(${i})">

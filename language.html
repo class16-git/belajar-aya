@@ -97,7 +97,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
   <div class="hero">
     <div style="font-size:2.5rem;margin-bottom:4px;">🔤</div>
     <div class="hero-title">Language & Letters</div>
-    <div class="hero-sub">Letters, words, dan tulisan</div>
+    <div class="hero-sub">Letters, words, dan writing</div>
   </div>
   <div class="act-grid" id="act-grid"></div>
 </div>
@@ -131,7 +131,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 
 <script>
 const ACTIVITIES=[
-  {id:'letters',name:'Letter Sounds',desc:'A, B, C — kenali huruf satu per satu',prompt:'Tap a letter untuk hear its sound!'},
+  {id:'letters',name:'Letter Sounds',desc:'A, B, C — kenali letters satu per satu',prompt:'Tap a letter to hear its sound!'},
   {id:'movable',name:'Movable Alphabet',desc:'Form words from shuffled letters',prompt:'Build the word from the letters!'},
   {id:'trace',name:'Trace Words',desc:'Write words on the dotted line',prompt:'Trace the word with your fingermu!'},
 ];
@@ -159,7 +159,7 @@ function init(){
   state.currentWord=lsGet('lang-current',0);
   genStars();
   renderHome();
-  setTimeout(()=>say('Let's learn huruf dan kata!'),800);
+  setTimeout(()=>say('Let's learn letters and words!'),800);
 }
 
 function genStars(){
@@ -229,7 +229,7 @@ function renderLetters(area){
   const colors=['#EF5350','#FF7043','#FFCA28','#66BB6A','#26C6DA','#5C6BC0','#AB47BC','#EC407A','#42A5F5','#FFD740'];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Tap a letter untuk hear its sound!</div>
+      <div class="demo-label">Tap a letter to hear its sound!</div>
       <div class="letter-grid">
         ${letters.map((l,i)=>`
           <button class="letter-card" id="lc-${l}" onclick="tapLetter('${l}')" style="background:${colors[i%colors.length]}18;border-color:${colors[i%colors.length]}44;">
@@ -237,7 +237,7 @@ function renderLetters(area){
           </button>
         `).join('')}
       </div>
-      <div class="exp-instruction" id="letter-msg">Tap a letter untuk hear its sound!</div>
+      <div class="exp-instruction" id="letter-msg">Tap a letter to hear its sound!</div>
     </div>
     <button class="btn btn-primary" onclick="markDone('letters');say('You know the letters!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
@@ -264,7 +264,7 @@ function renderMovable(area){
   const bank=[...letters].sort(()=>Math.random()-.5);
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Build the word jadi kata!</div>
+      <div class="demo-label">Build the word jadi word!</div>
       <div style="font-size:2rem;margin:8px 0;">${word.emoji}</div>
       <div class="exp-instruction">${word.hint}</div>
       <div class="word-area" id="word-area">
@@ -274,7 +274,7 @@ function renderMovable(area){
       </div>
       <div class="letter-bank" id="letter-bank">
         ${bank.map((l,i)=>`
-          <button class="bank-letter" id="bank-${i}" onclick="tapBank(${i},'${l}')">${l}</button>
+          <button class="bank-letter" id="bank-${i}" onclick="tapLetter Bank(${i},'${l}')">${l}</button>
         `).join('')}
       </div>
       <div class="exp-instruction" id="word-msg">Tap a letter dari bank, lalu tap slot!</div>
@@ -288,7 +288,7 @@ function renderMovable(area){
   window._bankLetters=bank;
   window._placedLetters=Array(letters.length).fill(null);
 }
-function tapBank(i,l){
+function tapLetter Bank(i,l){
   const el=document.getElementById('bank-'+i);
   if(!el||el.classList.contains('used'))return;
   // Find first empty slot
@@ -347,7 +347,7 @@ function checkWord(expected){
   if(placed===expected){
     markDone('movable');
   } else {
-    say('Coba susun lagi!');
+    say('Try building it again!');
   }
 }
 function skipWord(){
@@ -431,7 +431,7 @@ function nextTrace(){
 
 // ── RABBITY ──
 function rabbitySpeak(){
-  const msgs=['Let's learn huruf!','You're amazing!','Baca lagi!','Rabbity is so proud!'];
+  const msgs=['Let's learn letters!','You're amazing!','Read it again!','Rabbity is so proud!'];
   say(msgs[Math.floor(Math.random()*msgs.length)]);
 }
 function say(text){

@@ -147,10 +147,10 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <script>
 const ACTIVITIES=[
   {id:'rods',name:'Number Line',desc:'Use the number line to jump around',prompt:'Tap the line to jump from one number to another'},
-  {id:'spindle',name:'Spindle Box',desc:'Drop spindles in the matching box',prompt:'Count spindles, lalu taruh di kotak yang sesuai'},
-  {id:'counters',name:'Cards & Counters',desc:'Match numbers with the right dot count',prompt:'Place dots yang sesuai di bawah angka'},
-  {id:'teen',name:'Teen Board',desc:'Learn numbers 11 through 19',prompt:'Tap untuk melihat angka belasannya'},
-  {id:'tens',name:'Papan Tens',desc:'Learn numbers 20 sampai 90',prompt:'Tap untuk belajar puluhan'},
+  {id:'spindle',name:'Spindle Box',desc:'Drop spindles in the matching box',prompt:'Count the spindles, then drop them in the matching box'},
+  {id:'counters',name:'Cards & Counters',desc:'Match numbers with the right dot count',prompt:'Place the matching dots below each number!'},
+  {id:'teen',name:'Teen Board',desc:'Learn numbers 11 through 19',prompt:'Tap to reveal the teen numbers!'},
+  {id:'tens',name:'Tens Board',desc:'Learn numbers 20 sampai 90',prompt:'Tap to learn the tens!'},
 ];
 
 let state={history:['home'],progress:{},selectedRod:null};
@@ -245,7 +245,7 @@ function renderRods(area){
       <div class="exp-instruction" id="rod-msg">Tap angka untuk mulai melompat!</div>
       <div id="rod-jump" style="font-family:var(--font-h);font-size:1.2rem;color:var(--gold);min-height:2rem;margin-top:8px;"></div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('rods');say('Hebat! Kamu bisa melompat di garis bilangan!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
+    <button class="btn btn-primary" onclick="markDone('rods');say('Amazing! You can jump on the number line!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
 }
 function selectRod(n){

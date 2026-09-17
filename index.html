@@ -199,7 +199,7 @@ body.app-hub .parent-fab{bottom:80px}
   <div class="hero">
     <div class="hero-emoji">🐰</div>
     <div class="hero-title">Learn Aya</div>
-    <div class="hero-sub">Learn with your hands, not just reading</div>
+    <div class="hero-sub">Hands-on Learning, not just reading</div>
     <div class="hero-greeting" id="hero-greeting"></div>
   </div>
 
@@ -263,11 +263,11 @@ const PROGRESS_KEYS = {
 
 const MISSIONS = {
   skip:   ['Count steps to the kitchen!','Skip count by 2s!'],
-  lessons:['Ceritakan 1 fakta dari pelajaran!','Gambar salah satu pelajaran!'],
-  math:   ['Hitung mainan!','Bandingkan tinggi rendah!'],
+  lessons:['Share 1 fact from this lesson!','Draw one thing from this lesson!'],
+  math:   ['Count your toys!','Compare tall and short!'],
   lang:   ['Tulis namamu!','Baca huruf di jalan!'],
   prac:   ['Celupkan tangan ke air!','Jepit korek api!'],
-  cultur: ['Namei 3 hewan!','Ceritakan cuaca hari ini!'],
+  cultur: ['Name 3 animals!','Talk about today\'s weather!'],
 };
 
 // ═══════════════════════════════════════════
@@ -352,7 +352,7 @@ function renderAppGrid() {
   // Greeting
   const greet = document.getElementById('hero-greeting');
   if (greet) {
-    const name = profile.name || 'Si kecil';
+    const name = profile.name || 'Little learner';
     const h = new Date().getHours();
     const time = h < 12 ? 'Selamat pagi' : h < 17 ? 'Selamat siang' : 'Selamat sore';
     greet.textContent = `${time}, ${name}! 👋`;
@@ -366,8 +366,8 @@ function rabbitySpeak() {
   const msgs = [
     'Let's learn! 📚',
     'You're amazing! ⭐',
-    'Start dari yang mudah ya! 🌟',
-    'Tidak ada yang salah dengan mencoba lagi! 💪',
+    'Start with the easy ones! 🌟',
+    'There is nothing wrong with trying again! 💪',
     'Rabbity bangga sama kamu! 🐰',
   ];
   say(msgs[Math.floor(Math.random() * msgs.length)]);
@@ -434,11 +434,11 @@ function showNameModal() {
 function saveName() {
   const i = document.getElementById('name-input');
   if (!i) return;
-  profile.name = i.value.trim() || 'Si kecil';
+  profile.name = i.value.trim() || 'Little learner';
   lsSet('aya-profile', profile);
   document.getElementById('name-modal').classList.remove('show');
   renderAppGrid();
-  say('Salam kenal, ' + profile.name + '! 🐰');
+  say('Nice to meet you, ' + profile.name + '! 🐰');
 }
 
 // ═══════════════════════════════════════════

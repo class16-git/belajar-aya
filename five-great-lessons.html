@@ -152,7 +152,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 
 <script>
 const LESSONS=[
-  {id:'universe',emoji:'✨',title:'The Universe',desc:'Particles, gravity, solar system, and Earth',missions:['Buat awan dari kapas!','Gambar planet!','Jatuhkan pensil dan lihat gravitasi!'],exps:[
+  {id:'universe',emoji:'✨',title:'The Universe',desc:'Particles, gravity, solar system, and Earth',missions:['Make a cloud from cotton!','Gambar planet!','Drop a pencil and see gravity in action!'],exps:[
     {id:'particles',name:'Particles Spread',tagline:'Everything is made of tiny particles',type:'particles',
     {id:'gravity',name:'Gravity',tagline:'Things fall down, not up',type:'gravity',
     {id:'solar',name:'Solar System',tagline:'Earth orbits the Sun',type:'solar',
@@ -166,18 +166,18 @@ const LESSONS=[
     {id:'classify',name:'Classification',tagline:'Collect and classify',type:'classify',
     {id:'foodchain',name:'Food Chain',tagline:'Energy flows from the Sun',type:'foodchain',
   ],
-  {id:'humans',emoji:'🧒',title:'Humans',desc:'Basic needs, shelter, and cooperation',missions:['Gambar rumahmu!','Coba masak dengan satu tangan!','Hitung teman sekelas!'],exps:[
+  {id:'humans',emoji:'🧒',title:'Humans',desc:'Basic needs, shelter, and cooperation',missions:['Gambar rumahmu!','Try cooking using only one hand!','Hitung teman sekelas!'],exps:[
     {id:'needs',name:'Human Needs',tagline:'Food, water, shelter, friends',type:'needs',
     {id:'shelter',name:'Shelter',tagline:'From caves to smart homes',type:'shelter',
     {id:'tools',name:'Tools & Technology',tagline:'Hands, tools, machines',type:'tools',
     {id:'cooperate',name:'Working Together',tagline:'Together is better',type:'cooperate',
   ],
-  {id:'language',emoji:'✍️',title:'Communication',desc:'Symbols, writing, and messages',missions:['Tulis namamu!','Kirim pesan rahasia ke teman!','Bicara tanpa kata!'],exps:[
+  {id:'language',emoji:'✍️',title:'Communication',desc:'Symbols, writing, and messages',missions:['Tulis namamu!','Send a secret message to a friend!','Bicara tanpa kata!'],exps:[
     {id:'symbols',name:'Symbols & Signs',tagline:'Pictures, symbols, letters',type:'symbols',
     {id:'encoding',name:'Encoding Messages',tagline:'Send secret messages with codes!',type:'encoding',
     {id:'messages',name:'Rantai Pesan',tagline:'From brain to brain in seconds',type:'messages',
   ],
-  {id:'numbers',emoji:'🔢',title:'Numbers',desc:'Numbers, patterns, and mathematics',missions:['Hitung langkah dari kamar ke dapur!','Buat pola dari balok!','Bagikan 6 permen ke 2 orang!'],exps:[
+  {id:'numbers',emoji:'🔢',title:'Numbers',desc:'Numbers, patterns, and mathematics',missions:['Count the steps from your room to the kitchen!','Buat pola dari balok!','Bagikan 6 permen ke 2 orang!'],exps:[
     {id:'counting',name:'Counting Objects',tagline:'Match numbers to amounts',type:'counting',
     {id:'skipcount',name:'Skip Counting',tagline:'2, 4, 6, 8... skipping in multiples!',type:'skipcount',
     {id:'decimal',name:'Numbers & Zero',tagline:'Zero changes everything!',type:'decimal',
@@ -216,7 +216,7 @@ function markDone(expId){
       lsSet('fgl-progress',state.progress);
     
     confetti();
-    say('Hebat! Kamu sudah selesai.');
+    say('Hebat! You're done!');
   
 
 
@@ -273,7 +273,7 @@ function openLesson(lesson){
   );
   const missDiv=document.createElement('div');
   missDiv.className='offline-mission';
-  missDiv.innerHTML=`<div class="emoji">🌍</div><div><div class="title">Misi di World Nyata</div><div class="text">${lesson.missions.map(m=>'• '+m).join('<br>')</div></div>`;
+  missDiv.innerHTML=`<div class="emoji">🌍</div><div><div class="title">Real World Mission</div><div class="text">${lesson.missions.map(m=>'• '+m).join('<br>')</div></div>`;
   grid.appendChild(missDiv);
   showScreen('lesson');
 
@@ -366,11 +366,11 @@ function dropBall(){
 // ── SOLAR ──
 function renderSolar(area){
   const planets=[
-    {name:'Merkurius',emoji:'⚫',orbit:55,speed:3,fact:'Planet terkecil, sangat panas siang dan sangat dingin malam',
-    {name:'Venus',emoji:'🟡',orbit:80,speed:5,fact:'Planet terpanas, atmosfer tebal',
+    {name:'Merkurius',emoji:'⚫',orbit:55,speed:3,fact:'Smallest planet, sangat panas siang dan sangat dingin malam',
+    {name:'Venus',emoji:'🟡',orbit:80,speed:5,fact:'Hottest planet, atmosfer tebal',
     {name:'Bumi',emoji:'🔵',orbit:110,speed:8,fact:'Satu-satunya planet yang diketahui memiliki kehidupan',
-    {name:'Mars',emoji:'🔴',orbit:140,speed:13,fact:'Planet merah, manusia mungkin tinggal di sini suatu hari',
-    {name:'Jupiter',emoji:'🟤',orbit:175,speed:20,fact:'Planet terbesar, muat 1300 Bumi di dalamnya!',
+    {name:'Mars',emoji:'🔴',orbit:140,speed:13,fact:'Planet merah, humans might live di sini suatu hari',
+    {name:'Jupiter',emoji:'🟤',orbit:175,speed:20,fact:'Largest planet, fit 1300 Earths di dalamnya!',
     {name:'Saturnus',emoji:'🥔',orbit:210,speed:30,fact:'Terkenal dengan cincinnya yang cantik',
   ];
   const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -606,21 +606,21 @@ function classifyAnimal(i,correctType){
 // ── FOOD CHAIN ──
 function renderFoodChain(area){
   const steps=[
-    {emoji:'☀️',name:'Matahari',desc:'Sumber energi semua kehidupan',color:'#FFF176',
-    {emoji:'🌿',name:'Tumbuhan',desc:'Menangkap cahaya, membuat makanan',color:'#81C784',
-    {emoji:'🐰',name:'Hewan Pemakan Tumbuhan',desc:'Makan tumbuhan untuk energi',color:'#FF8A65',
-    {emoji:'🐍',name:'Hewan Pemakan Daging',desc:'Makan hewan lain',color:'#EF5350',
+    {emoji:'☀️',name:'Matahari',desc:'Source of all life energy',color:'#FFF176',
+    {emoji:'🌿',name:'Tumbuhan',desc:'Captures light, makes food',color:'#81C784',
+    {emoji:'🐰',name:'Herbivores',desc:'Eats plants for energy',color:'#FF8A65',
+    {emoji:'🐍',name:'Carnivores',desc:'Eats other animals',color:'#EF5350',
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Food Chain — Energy flows dari Matahari!</div>
+      <div class="demo-label">Food Chain — Energy flows from the Sun!</div>
       <div class="chain-area">
         ${steps.map((s,i)=>`<button class="chain-item" id="chain-${i" onclick="showChain(${i)" style="background:${s.color22;border-color:${s.color55;"><div style="font-size:2rem;">${s.emoji</div><div style="font-weight:700;font-size:.8rem;">${s.name</div></button>${i<steps.length-1?'<div class="chain-arrow">→</div>':''`).join('')
       </div>
       <div class="exp-instruction" id="chain-msg">Tap setiap langkah untuk tahu perannya!</div>
     </div>
     <div class="exp-instruction">Tidak ada yang menciptakan energi. Matahari memberi energi, tumbuhan menangkap, hewan makan tumbuhan, predator makan herbivora.</div>
-    <button class="btn btn-primary" onclick="markDone('foodchain');say('Energy flows dari Matahari melalui semua makhluk!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('foodchain');say('Energy flows from the Sun melalui semua makhluk!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._chainMsgs=steps.map(s=>s.desc);
 
@@ -647,16 +647,16 @@ function renderNeeds(area){
 
 // ── SHELTER ──
 function renderShelter(area){
-  const shelters=[{emoji:'🪨',name:'Gua',{emoji:'⛺',name:'Tenda',{emoji:'🏠',name:'Rumah',{emoji:'🏢',name:'Gedung'];
+  const shelters=[{emoji:'🪨',name:'Cave',{emoji:'⛺',name:'Tent',{emoji:'🏠',name:'House',{emoji:'🏢',name:'Gedung'];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Tempat tinggal manusia dari dulu ke sekarang</div>
+      <div class="demo-label">Shelter manusia dari dulu ke sekarang</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:10px 0;">
         ${shelters.map((s,i)=>`<button class="btn btn-secondary" onclick="this.style.background='var(--gold)';this.style.color='var(--bg)'" style="font-size:1.5rem;padding:12px;"><div>${s.emoji</div><div style="font-size:.7rem;margin-top:2px;">${s.name</div></button>`).join('')
       </div>
     </div>
-    <div class="exp-instruction">Tempat tinggal melindungi dari cuaca dan memberi rasa aman. Desain berubah sesuai teknologi!</div>
-    <button class="btn btn-primary" onclick="markDone('shelter');say('Tempat tinggal berkembang seiring teknologi!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <div class="exp-instruction">Shelter melindungi dari cuaca dan memberi rasa aman. Desain berubah sesuai teknologi!</div>
+    <button class="btn btn-primary" onclick="markDone('shelter');say('Shelter berkembang seiring teknologi!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
 
 
@@ -664,15 +664,15 @@ function renderShelter(area){
 function renderTools(area){
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Evolusi alat manusia</div>
+      <div class="demo-label">Evolusi tools manusia</div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:center;">
         <div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;"><div style="font-size:2rem;">🪨</div><div style="font-weight:700;font-size:.8rem;">Tangan Kosong</div><div style="font-size:.7rem;opacity:.5;">2 juta tahun lalu</div></div>
         <div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;"><div style="font-size:2rem;">🪓</div><div style="font-weight:700;font-size:.8rem;">Batu Ketam</div><div style="font-size:.7rem;opacity:.5;">1.5 juta tahun lalu</div></div>
-        <div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;"><div style="font-size:2rem;">⚙️</div><div style="font-weight:700;font-size:.8rem;">Mesin</div><div style="font-size:.7rem;opacity:.5;">200 tahun lalu</div></div>
+        <div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;"><div style="font-size:2rem;">⚙️</div><div style="font-weight:700;font-size:.8rem;">Machines</div><div style="font-size:.7rem;opacity:.5;">200 tahun lalu</div></div>
         <div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;"><div style="font-size:2rem;">🤖</div><div style="font-weight:700;font-size:.8rem;">AI / Robot</div><div style="font-size:.7rem;opacity:.5;">Now</div></div>
       </div>
     </div>
-    <div class="exp-instruction">Semakin cerdas alat, semakin sedikit usaha yang dibutuhkan. Tapi tangan manusia tetap alat paling fleksibel!</div>
+    <div class="exp-instruction">Semakin cerdas tools, semakin sedikit usaha yang dibutuhkan. Tapi tangan manusia tetap tools paling fleksibel!</div>
     <button class="btn btn-primary" onclick="markDone('tools');say('Alat membuat manusia semakin kuat!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
 
@@ -735,7 +735,7 @@ function clearCanvas(){
 function renderEncoding(area){
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Kirim pesan pakai kode!</div>
+      <div class="demo-label">Send secret messages with codes!</div>
       <div class="exp-instruction" style="font-size:1.2rem;font-family:var(--font-h);">🐰 → 🐰🐰 → 👇👇 → 🐰🟢🟢</div>
     </div>
     <div class="exp-instruction">📱 Morse: ·· −·· −· ·<br>💻 Binary: 01000001 = A<br>🔐 Enkripsi: pesan diacak, hanya penerima bisa baca</div>

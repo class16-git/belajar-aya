@@ -145,7 +145,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <script>
 const SECTIONS=[
   {id:'geo',emoji:'🌏',title:'Geography',desc:'Continents, oceans, and maps',color:'#1565C0',
-    missions:['Point to a continent di globe atau peta!','Namei 3 lautan!'],
+    missions:['Point to a continent on a globe or map!','Namei 3 lautan!'],
     exps:[
       {id:'globe',name:'Globe Toss',tagline:'Earth is round and has continents',type:'globe'},
       {id:'continents',name:'Continents and Oceans',tagline:'Seven continents, five oceans',type:'continents'},
@@ -158,18 +158,18 @@ const SECTIONS=[
       {id:'ages',name:'How Old Are You?',tagline:'Time is very long',type:'ages'},
     ]},
   {id:'sci',emoji:'🔬',title:'Science',desc:'Objects & propertiesnya',color:'#1B5E20',
-    missions:['Coba di kamar mandi: benda apa mengapung, apa tenggelam?','Tempel magnet ke berbagai benda!'],
+    missions:['Coba di kamar mandi: benda apa mengapung, apa tenggelam?','Stick a magnet to different objects!'],
     exps:[
       {id:'sink',name:'Tenggelam atau Mengapung?',tagline:'Kenapa sesuatu mengapung?',type:'sink'},
       {id:'magnet',name:'Magnet atau Bukan?',tagline:'Magnet hanya menarik logam tertentu',type:'magnet'},
-      {id:'hotcold',name:'Panas atau Dingin?',tagline:'Suhu dan perubahan wujud',type:'hotcold'},
+      {id:'hotcold',name:'Hot or Cold?',tagline:'Temperature and changing states',type:'hotcold'},
     ]},
   {id:'nat',emoji:'🌱',title:'Nature',desc:'Plants & animals',color:'#E65100',
-    missions:['Cari 3 hewan berbeda di luar!','Namei bagian tumbuhan!'],
+    missions:['Find 3 different animals outside!','Namei bagian tumbuhan!'],
     exps:[
       {id:'plantparts',name:'Bagian Tumbuhan',tagline:'Setiap bagian punya tugas',type:'plantparts'},
-      {id:'animals',name:'Klasifikasi Hewan',tagline:'Bertulang belakang atau tidak',type:'animals'},
-      {id:'foodchain',name:'Food Chain',tagline:'Energy flows dari Matahari',type:'foodchain'},
+      {id:'animals',name:'Animal Classification',tagline:'Has a backbone or not',type:'animals'},
+      {id:'foodchain',name:'Food Chain',tagline:'Energy flows from the Sun',type:'foodchain'},
     ]},
 ];
 
@@ -205,7 +205,7 @@ function markDone(id){
       lsSet('culture-progress',state.progress);
     }
     confetti();
-    say('Hebat! Kamu sudah selesai.');
+    say('Hebat! You're done!');
   }
 }
 function isDone(id){return !!state.progress[id]}
@@ -548,7 +548,7 @@ function renderHotCold(area){
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Panas atau Dingin?</div>
+      <div class="demo-label">Hot or Cold?</div>
       <div class="animal-grid">
         ${items.map((item,i)=>`
           <button class="animal-card" id="temp-${i}" onclick="showTemp(${i})" style="border-top:3px solid ${item.color}">
@@ -616,7 +616,7 @@ function renderAnimals(area){
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Bertulang belakang atau tidak?</div>
+      <div class="demo-label">Has a backbone or not?</div>
       <div style="display:flex;gap:8px;margin:8px 0;flex-wrap:wrap;justify-content:center;">
         <div id="vert-area" style="min-width:120px;min-height:60px;border:2px dashed rgba(76,175,80,.4);border-radius:12px;padding:6px;display:flex;flex-wrap:wrap;gap:4px;align-content:flex-start;"></div>
         <div id="invert-area" style="min-width:120px;min-height:60px;border:2px dashed rgba(255,152,0,.4);border-radius:12px;padding:6px;display:flex;flex-wrap:wrap;gap:4px;align-content:flex-start;"></div>
@@ -664,7 +664,7 @@ function renderFoodChain(area){
       `).join('')}
     </div>
     <div class="exp-instruction">Tidak ada yang menciptakan energi. Matahari memberi, tumbuhan tangkap, hewan makan tumbuhan, predator makan herbivora.</div>
-    <button class="btn btn-primary" onclick="markDone('foodchain');say('Energy flows dari Matahari melalui semua makhluk!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('foodchain');say('Energy flows from the Sun melalui semua makhluk!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._chain=[
     'Matahari adalah sumber energi utama. Tanpa Matahari, tidak ada kehidupan di Bumi.',

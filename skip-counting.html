@@ -279,7 +279,7 @@ body{
     <button class="back-btn" onclick="toggleParent()" style="background:none;border:none;font-size:1.1rem;">👤</button>
   </div>
   <div class="stage-select">
-    <h2>Choose Stage</h2>
+    <h2>Choose a Stage</h2>
     <div class="stage-grid" id="stage-grid"></div>
   </div>
 </div>
@@ -318,7 +318,7 @@ body{
 const STAGES = [
   {
     id:1, name:'Numbers 1–10', emoji:'🔢', color:'#42A5F5',
-    desc:'Hitung satu-satu',
+    desc:'Count one by one',
     type:'ladder',
     target:10, by:1,
     instruction:'Tap numbers 1 through 10!'
@@ -356,7 +356,7 @@ const STAGES = [
     desc:'Gabungan semua pola',
     type:'basket',
     total:20, by:4, groups:5,
-    instruction:'Drag dots into baskets with equal amounts!'
+    instruction:'Drag dots into baskets — equal amounts each!'
   },
 ];
 
@@ -516,7 +516,7 @@ function tapLadder(num, done, current, stageId){
     const steps=document.querySelectorAll('.ladder-step');
     const el=Array.from(steps).find(s=>s.dataset.num==String(num));
     if(el){el.classList.add('shake');setTimeout(()=>el.classList.remove('shake'),400);}
-    say('Try again! The answer is '+current);
+    say('Not quite! It was '+current);
     return;
   }
   // Correct!
@@ -570,7 +570,7 @@ function renderRainbow(area, s){
 
 function tapRainbow(num, done, current, stageId, by){
   if(num!==current){
-    say('Bukan! Coba '+current);
+    say('Not quite! Try '+current);
     return;
   }
   const newDone=[...done,num];
@@ -702,7 +702,7 @@ function makeDot(num, s){
           // Basket full — shake and return
           b.classList.add('shake');
           setTimeout(()=>b.classList.remove('shake'),400);
-          say('Baskets sudah penuh!');
+          say('Baskets are full!');
           resetDotPosition(d,startX,startY);
         }
       }
@@ -777,7 +777,7 @@ function checkBaskets(){
   } else if(!any){
     say('Seret titik dulu ke keranjang!');
   } else {
-    say('Not yet sama semua. Coba lagi!');
+    say('Not quite the same. Try again!');
     // Highlight incomplete baskets
     baskets.forEach(b=>{
       const c=parseInt(b.dataset.count||'0');
