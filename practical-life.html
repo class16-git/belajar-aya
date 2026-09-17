@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Latihan Tangan — Belajar Aya</title>
+<title>Practical Life — Learn Aya</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--blue:#42A5F5;--cream:#FFF8F0;--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
@@ -104,12 +104,12 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <div class="screen active" id="screen-home">
   <div class="top-bar">
     <div></div>
-    <div style="font-family:var(--font-h);color:var(--gold);font-size:.9rem;">Latihan Tangan</div>
+    <div style="font-family:var(--font-h);color:var(--gold);font-size:.9rem;">Practical Life</div>
     <button class="top-btn" onclick="toggleParent()">👤</button>
   </div>
   <div class="hero">
     <div style="font-size:2.5rem;margin-bottom:4px;">🧼</div>
-    <div class="hero-title">Latihan Tangan</div>
+    <div class="hero-title">Practical Life</div>
     <div class="hero-sub">Montessori practical life activities</div>
   </div>
   <div class="act-grid" id="act-grid"></div>
@@ -118,7 +118,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <!-- ACTIVITY -->
 <div class="screen" id="screen-act">
   <div class="exp-header">
-    <button class="lesson-back" onclick="goBack()">← Kembali</button>
+    <button class="lesson-back" onclick="goBack()">← Back</button>
     <div class="exp-title" id="act-title"></div>
     <div class="exp-prompt" id="act-prompt"></div>
   </div>
@@ -135,7 +135,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <div class="parent-panel" id="parent-panel">
   <div class="panel-handle"></div>
   <button onclick="toggleParent()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">✕</button>
-  <div class="panel-title">📊 Progress Latihan Tangan</div>
+  <div class="panel-title">📊 Progress Practical Life</div>
   <div id="parent-content"></div>
 </div>
 
@@ -144,11 +144,11 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 
 <script>
 const ACTIVITIES=[
-  {id:'pour',name:'Menuang',desc:'Tuang air dari teko ke gelas',prompt:'Tap teko untuk menuangkan air!'},
-  {id:'tongs',name:'Catit Pinset',desc:'Pindahkan bola dengan pinset',prompt:'Gunakan pinset untuk pindahkan bola!'},
-  {id:'buttons',name:'Memakai Tombol',desc:'Buka dan tutup tombol',prompt:'Tap tombol untuk buka dan tutup!'},
-  {id:'wash',name:'Mencuci Tangan',desc:'6 langkah mencuci tangan',prompt:'Ikuti langkah-langkah cuci tangan!'},
-  {id:'pink',name:'Menara Merah Muda',desc:'Susun balok dari besar ke kecil',prompt:'Susun balok dari yang terbesar!'},
+  {id:'pour',name:'Pouring',desc:'Pour water from jug to glass',prompt:'Tap teko untuk menuangkan air!'},
+  {id:'tongs',name:'Tongs',desc:'Move balls with tongs',prompt:'Use the tongs untuk pindahkan bola!'},
+  {id:'buttons',name:'Buttoning',desc:'Open and close buttons',prompt:'Tap buttons to open and close!'},
+  {id:'wash',name:'Hand Washing',desc:'6 steps to wash hands',prompt:'Follow the steps-langkah cuci tangan!'},
+  {id:'pink',name:'Pink Tower',desc:'Stack the blocks biggest to smallest',prompt:'Stack the blocks dari yang terbesar!'},
 ];
 
 let state={history:['home'],progress:{}};
@@ -160,7 +160,7 @@ function init(){
   state.progress=lsGet('pl-progress',{});
   genStars();
   renderHome();
-  setTimeout(()=>say('Ayo latih tanganmu!'),800);
+  setTimeout(()=>say('Let's latih tanganmu!'),800);
 }
 
 function genStars(){
@@ -180,7 +180,7 @@ function markDone(id){
     state.progress[id]=true;
     lsSet('pl-progress',state.progress);
     confetti();
-    say('Hebat! Kamu sudah selesai!');
+    say('Great! You're done!');
   }
 }
 function isDone(id){return !!state.progress[id]}
@@ -242,7 +242,7 @@ function renderPour(area){
       </div>
       <div class="exp-instruction" id="pour-msg">Tap teko untuk tuang air!</div>
     </div>
-    <button class="btn btn-primary" onclick="if(state.pourLevel>=3){markDone('pour');say('Hebat! Air sudah penuh!')}else{say('Tuang lagi sampai penuh!')}" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+    <button class="btn btn-primary" onclick="if(state.pourLevel>=3){markDone('pour');say('Hebat! Air sudah penuh!')}else{say('Tuang lagi sampai penuh!')}" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
   state.pourLevel=0;
 }
@@ -263,9 +263,9 @@ function doPour(){
   if(level)level.textContent=(state.pourLevel*33)+'%';
   if(msg){
     if(state.pourLevel<3)msg.textContent=`Air ${state.pourLevel*33}%! Lanjutkan!`;
-    else msg.innerHTML='<span style="color:var(--green)">Gelas penuh! Air sudah dituang!</span>';
+    else msg.innerHTML='<span style="color:var(--green)">Glass penuh! Air sudah dituang!</span>';
   }
-  say(state.pourLevel<3?'Tuang lagi!':'Hebat! Gelas penuh!');
+  say(state.pourLevel<3?'Pour more!':'Hebat! Glass penuh!');
 }
 
 // ── TONGS ──
@@ -281,11 +281,11 @@ function renderTongs(area){
       </div>
       <div style="font-size:2rem;margin:6px 0;">↓</div>
       <div class="bowl-target" id="bowl-target" onclick="dropTong()">
-        <div style="font-size:.7rem;opacity:.4;">Taruh di sini</div>
+        <div style="font-size:.7rem;opacity:.4;">Drop here</div>
       </div>
       <div class="exp-instruction" id="tongs-msg">Tap bola untuk ambil!</div>
     </div>
-    <button class="btn btn-primary" onclick="if(state.tongsInTarget>=5){markDone('tongs');say('Hebat! Semua bola sudah dipindahkan!')}else{say('Pindahkan '+5+' bola dulu!')}" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+    <button class="btn btn-primary" onclick="if(state.tongsInTarget>=5){markDone('tongs');say('Great! All balls moved!')}else{say('Move '+5+' balls first!')}" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
   state.tongsHeld=null;
   state.tongsInTarget=0;
@@ -297,8 +297,8 @@ function grabTong(id){
   el.classList.add('grabbed');
   state.tongsHeld={id};
   const msg=document.getElementById('tongs-msg');
-  if(msg)msg.textContent='Hebat! Sekarang tap gelas untuk taruh!';
-  say('Ambil! Taruh di gelas!');
+  if(msg)msg.textContent='Hebat! Now tap gelas untuk taruh!';
+  say('Grab! Drop in the cup!');
 }
 function dropTong(){
   if(state.tongsHeld===null)return;
@@ -333,7 +333,7 @@ function renderButtons(area){
       </div>
       <div id="btn-msg" class="exp-instruction">Tap semua tombol untuk lihat pakaian selesai!</div>
     </div>
-    <button class="btn btn-primary" onclick="checkButtons()" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+    <button class="btn btn-primary" onclick="checkButtons()" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
   state.btnStates=Array(6).fill(false);
 }
@@ -352,7 +352,7 @@ function toggleBtn(i){
   const allFastened=state.btnStates.every(s=>s);
   const msg=document.getElementById('btn-msg');
   if(allFastened){
-    if(msg)msg.innerHTML='<span style="color:var(--green)">Semua tombol sudah tertutup!</span>';
+    if(msg)msg.innerHTML='<span style="color:var(--green)">All buttons closed!</span>';
     say('Hebat! Semua tombol tertutup!');
   } else {
     const done=state.btnStates.filter(s=>s).length;
@@ -373,16 +373,16 @@ function checkButtons(){
 // ── WASH HANDS ──
 function renderWash(area){
   const steps=[
-    {emoji:'💧',name:'Basahi Tangan',desc:'Buka keran, basahi kedua tangan'},
-    {emoji:'🧴',name:'Sabun',desc:'Ambil sabun, gosok merata'},
-    {emoji:'🤲',name:'Gosok',desc:'Gosok telapak, punggung, sela jari selama 20 detik'},
-    {emoji:'🚿',name:'Bilas',desc:'Bilas sabun sampai bersih'},
-    {emoji:'🧻',name:'Keringkan',desc:'Keringkan dengan handuk atau tissue'},
-    {emoji:'✨',name:'Selesai',desc:'Tangan sudah bersih!'},
+    {emoji:'💧',name:'Wet Hands',desc:'Buka keran, basahi kedua tangan'},
+    {emoji:'🧴',name:'Soap',desc:'Grab soap, gosok merata'},
+    {emoji:'🤲',name:'Scrub',desc:'Scrub telapak, punggung, sela jari selama 20 detik'},
+    {emoji:'🚿',name:'Rinse',desc:'Rinse sabun sampai bersih'},
+    {emoji:'🧻',name:'Dry',desc:'Dry dengan handuk atau tissue'},
+    {emoji:'✨',name:'Done',desc:'Hands are clean!'},
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Ikuti langkah-langkah cuci tangan!</div>
+      <div class="demo-label">Follow the steps-langkah cuci tangan!</div>
       <div class="step-list">
         ${steps.map((s,i)=>`
           <button class="step-item ${i===0?'active':''}" id="wash-step-${i}" onclick="doWashStep(${i})">
@@ -396,7 +396,7 @@ function renderWash(area){
         `).join('')}
       </div>
     </div>
-    <button class="btn btn-primary" onclick="if(state.washStep>=5){markDone('wash');say('Tangan sudah bersih!')}else{say('Lanjutkan langkah berikutnya!')}" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+    <button class="btn btn-primary" onclick="if(state.washStep>=5){markDone('wash');say('Hands are clean!')}else{say('Continue to the next step!')}" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
   state.washStep=0;
 }
@@ -415,21 +415,21 @@ function doWashStep(i){
     next.classList.add('active');
     next.scrollIntoView({behavior:'smooth',block:'nearest'});
   }
-  const steps=['Basahi tangan!','Ambil sabun!','Gosok selama 20 detik!','Bilas sampai bersih!','Keringkan!','Selesai!'];
-  say(steps[i]||'Selesai!');
+  const steps=['Wet your hands!','Grab soap!','Scrub for 20 seconds!','Rinse sampai bersih!','Dry!','Done!'];
+  say(steps[i]||'Done!');
   if(state.washStep>=6)state.washStep=5;
 }
 
 // ── PINK TOWER ──
 function renderPink(area){
   const blocks=[
-    {size:10,name:'Terbesar'},{size:9,name:'Besar'},{size:8,name:'Sedang besar'},
-    {size:7,name:'Sedang'},{size:6,name:'Sedang kecil'},{size:5,name:'Kecil'},
+    {size:10,name:'Terbesar'},{size:9,name:'Besar'},{size:8,name:'Medium besar'},
+    {size:7,name:'Medium'},{size:6,name:'Medium kecil'},{size:5,name:'Kecil'},
     {size:4,name:'Terakhir'},{size:3,name:'Hampir selesai'},
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Susun balok dari terbesar ke terkecil!</div>
+      <div class="demo-label">Stack the blocks dari terbesar ke terkecil!</div>
       <div style="display:flex;gap:10px;align-items:flex-end;margin:10px 0;flex-wrap:wrap;justify-content:center;">
         <div class="tower-slot" id="tower-slot" style="min-width:120px;min-height:${10*10+20}px">
           <div id="tower-stack" style="display:flex;flex-direction:column-reverse;align-items:center;gap:4px;"></div>
@@ -472,9 +472,9 @@ function placePink(i,size){
   }
   const msg=document.getElementById('pink-msg');
   if(state.pinkStack.length===8){
-    if(msg)msg.innerHTML='<span style="color:var(--green)">Menara selesai! Hebat!</span>';
+    if(msg)msg.innerHTML='<span style="color:var(--green)">Tower complete! Hebat!</span>';
     markDone('pink');
-    say('Hebat! Menara selesai!');
+    say('Hebat! Tower complete!');
   } else {
     if(msg)msg.textContent=`${state.pinkStack.length}/8 balok. Lanjutkan!`;
     say('Bagus! Lanjutkan!');
@@ -487,14 +487,14 @@ function resetPink(){
   const stack=document.getElementById('tower-stack');
   if(stack)stack.innerHTML='';
   const msg=document.getElementById('pink-msg');
-  if(msg)msg.textContent='Susun dari terbesar ke terkecil!';
+  if(msg)msg.textContent='Stack from biggest to smallest!';
 }
 // blocks data for size comparison
 const blocksData=[10,9,8,7,6,5,4,3];
 
 // ── RABBITY ──
 function rabbitySpeak(){
-  const msgs=['Ayo latih tanganmu!','Kamu sangat terampil!','Lanjutkan!','Rabbity bangga!'];
+  const msgs=['Let's latih tanganmu!','You are very skilled!','Lanjutkan!','Rabbity is so proud!'];
   say(msgs[Math.floor(Math.random()*msgs.length)]);
 }
 function say(text){

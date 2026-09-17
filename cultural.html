@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Budaya & Sains — Belajar Aya</title>
+<title>Culture & Science — Learn Aya</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--cream:#FFF8F0;--shadow:0 4px 24px rgba(0,0,0,.35);--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
@@ -95,13 +95,13 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <div class="screen active" id="screen-home">
   <div class="top-bar">
     <div></div>
-    <div style="font-family:var(--font-h);color:var(--gold);font-size:.9rem;">Budaya & Sains</div>
+    <div style="font-family:var(--font-h);color:var(--gold);font-size:.9rem;">Culture & Science</div>
     <button class="top-btn" onclick="toggleParent()">👤</button>
   </div>
   <div class="hero">
     <div style="font-size:3rem;margin-bottom:6px;">🌏</div>
-    <div class="hero-title">Kehidupan di Dunia</div>
-    <div class="hero-sub">Kenali dunia dan isinya</div>
+    <div class="hero-title">Life on Earth</div>
+    <div class="hero-sub">Explore the world dan isinya</div>
   </div>
   <div class="section-grid" id="section-grid"></div>
 </div>
@@ -109,7 +109,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <!-- SECTION -->
 <div class="screen" id="screen-section">
   <div class="exp-header">
-    <button class="lesson-back" onclick="showScreen('home')">← Kembali</button>
+    <button class="lesson-back" onclick="showScreen('home')">← Back</button>
     <div class="exp-title" id="section-title"></div>
   </div>
   <div class="exp-area" id="exp-area"></div>
@@ -118,7 +118,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <!-- EXPERIENCE -->
 <div class="screen" id="screen-exp">
   <div class="exp-header">
-    <button class="lesson-back" onclick="goBack()">← Kembali</button>
+    <button class="lesson-back" onclick="goBack()">← Back</button>
     <div class="exp-title" id="exp-title"></div>
     <div class="exp-prompt" id="exp-prompt"></div>
   </div>
@@ -135,7 +135,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <div class="parent-panel" id="parent-panel">
   <div class="panel-handle"></div>
   <button onclick="toggleParent()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">✕</button>
-  <div class="panel-title">📊 Progress Belajar</div>
+  <div class="panel-title">📊 Learning Progress</div>
   <div id="parent-content"></div>
 </div>
 
@@ -144,32 +144,32 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 
 <script>
 const SECTIONS=[
-  {id:'geo',emoji:'🌏',title:'Geografi',desc:'Benua, lautan, dan peta',color:'#1565C0',
-    missions:['Tunjuk benua di globe atau peta!','Namai 3 lautan!'],
+  {id:'geo',emoji:'🌏',title:'Geography',desc:'Continents, oceans, and maps',color:'#1565C0',
+    missions:['Point to a continent di globe atau peta!','Namei 3 lautan!'],
     exps:[
-      {id:'globe',name:'Globe Toss',tagline:'Bumi itu bulat dan punya benua',type:'globe'},
-      {id:'continents',name:'Benua dan Lautan',tagline:'Tujuh benua, lima lautan',type:'continents'},
-      {id:'ozean',name:'Kedalaman Lautan',tagline:'Laut semakin dalam dan gelap',type:'ozean'},
+      {id:'globe',name:'Globe Toss',tagline:'Earth is round and has continents',type:'globe'},
+      {id:'continents',name:'Continents and Oceans',tagline:'Seven continents, five oceans',type:'continents'},
+      {id:'ozean',name:'Ocean Depths',tagline:'The deeper the ocean, the darker it gets',type:'ozean'},
     ]},
-  {id:'hist',emoji:'🕰️',title:'Sejarah',desc:'Zaman dulu dan sekarang',color:'#4A148C',
-    missions:['Tanya kakek nenek: apa beda waktu kecil mereka?','Ceritakan 1 hal dari zaman dulu!'],
+  {id:'hist',emoji:'🕰️',title:'History',desc:'From long ago to now',color:'#4A148C',
+    missions:['Ask grandparents: what was different when they were little?','Share 1 thing from long ago!'],
     exps:[
-      {id:'timeline',name:'Garis Waktu',tagline:'Dari dulu ke sekarang',type:'timeline'},
-      {id:'ages',name:'Berapa Usiamu?',tagline:'Waktu sangat panjang',type:'ages'},
+      {id:'timeline',name:'Garis Waktu',tagline:'From long ago to now',type:'timeline'},
+      {id:'ages',name:'How Old Are You?',tagline:'Time is very long',type:'ages'},
     ]},
-  {id:'sci',emoji:'🔬',title:'Sains',desc:'Benda dan sifatnya',color:'#1B5E20',
+  {id:'sci',emoji:'🔬',title:'Science',desc:'Objects & propertiesnya',color:'#1B5E20',
     missions:['Coba di kamar mandi: benda apa mengapung, apa tenggelam?','Tempel magnet ke berbagai benda!'],
     exps:[
       {id:'sink',name:'Tenggelam atau Mengapung?',tagline:'Kenapa sesuatu mengapung?',type:'sink'},
       {id:'magnet',name:'Magnet atau Bukan?',tagline:'Magnet hanya menarik logam tertentu',type:'magnet'},
       {id:'hotcold',name:'Panas atau Dingin?',tagline:'Suhu dan perubahan wujud',type:'hotcold'},
     ]},
-  {id:'nat',emoji:'🌱',title:'Alam',desc:'Tumbuhan dan hewan',color:'#E65100',
-    missions:['Cari 3 hewan berbeda di luar!','Namai bagian tumbuhan!'],
+  {id:'nat',emoji:'🌱',title:'Nature',desc:'Plants & animals',color:'#E65100',
+    missions:['Cari 3 hewan berbeda di luar!','Namei bagian tumbuhan!'],
     exps:[
       {id:'plantparts',name:'Bagian Tumbuhan',tagline:'Setiap bagian punya tugas',type:'plantparts'},
       {id:'animals',name:'Klasifikasi Hewan',tagline:'Bertulang belakang atau tidak',type:'animals'},
-      {id:'foodchain',name:'Rantai Makanan',tagline:'Energi mengalir dari Matahari',type:'foodchain'},
+      {id:'foodchain',name:'Food Chain',tagline:'Energy flows dari Matahari',type:'foodchain'},
     ]},
 ];
 
@@ -260,7 +260,7 @@ function openSection(section){
   });
   const missDiv=document.createElement('div');
   missDiv.className='offline-mission';
-  missDiv.innerHTML=`<div class="emoji">🌍</div><div><div class="title">Misi di Dunia Nyata</div><div class="text">${section.missions.map(m=>'• '+m).join('<br>')}</div></div>`;
+  missDiv.innerHTML=`<div class="emoji">🌍</div><div><div class="title">Misi di World Nyata</div><div class="text">${section.missions.map(m=>'• '+m).join('<br>')}</div></div>`;
   area.appendChild(missDiv);
   showScreen('section');
 }
@@ -293,7 +293,7 @@ function openExp(exp,section){
 function renderGlobe(area){
   const locations=[
     {emoji:'🌏',name:'Asia',fact:'Benua terbesar, rumah 60% manusia'},
-    {emoji:'🦁',name:'Afrika',fact:'Tanah liar dan gajah'},
+    {emoji:'🦁',name:'Afrika',fact:'Wild savannas and elephants'},
     {emoji:'🦅',name:'Eropa',fact:'Banyak negara kecil dalam satu benua'},
     {emoji:'🌵',name:'Australia',fact:'Benua sekaligus negara'},
     {emoji:'❄️',name:'Antartika',fact:'Sangat dingin, tidak ada negara'},
@@ -309,7 +309,7 @@ function renderGlobe(area){
         ${locations.map((l,i)=>`<button onclick="spinGlobe(${i})" class="btn btn-secondary" style="font-size:1.5rem;padding:10px;">${l.emoji}</button>`).join('')}
       </div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('globe');say('Bumi itu bulat dan indah!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-primary" onclick="markDone('globe');say('Bumi itu bulat dan indah!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._globeLocations=locations;
 }
@@ -331,7 +331,7 @@ function spinGlobe(i){
 function renderContinents(area){
   const conts=[
     {emoji:'🌏',name:'Asia',color:'#E53935',fact:'Benua terbesar, rumah 4.7 miliar manusia'},
-    {emoji:'🦁',name:'Afrika',color:'#FB8C00',fact:'Rumah野生动物 dan banyak bahasa'},
+    {emoji:'🦁',name:'Afrika',color:'#FB8C00',fact:'Home to wild animals and many languages'},
     {emoji:'🦅',name:'Eropa',color:'#1E88E5',fact:'Banyak negara kecil tapi sangat maju'},
     {emoji:'🌵',name:'Australia',color:'#43A047',fact:'Benua sekaligus negara, banyak hewan unik'},
     {emoji:'🌎',name:'Amerika Utara',color:'#8E24AA',fact:'Dari Alaska sampai Panama'},
@@ -340,7 +340,7 @@ function renderContinents(area){
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">7 Benua di Dunia</div>
+      <div class="demo-label">7 Benua di World</div>
       <div class="animal-grid">
         ${conts.map((c,i)=>`
           <button class="animal-card" id="cont-${i}" onclick="showContinent(${i})">
@@ -351,7 +351,7 @@ function renderContinents(area){
       </div>
       <div class="exp-instruction" id="cont-fact">Tap benua untuk tahu fakta menarik!</div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('continents');say('Ada 7 benua di dunia!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-primary" onclick="markDone('continents');say('Ada 7 benua di dunia!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._continents=conts;
 }
@@ -369,7 +369,7 @@ function renderOzean(area){
     {emoji:'☀️',name:'Zona Permukaan',depth:'0-200m',color:'#42A5F5',animals:'Ikan, lumba-lumba, penyu',fact:'Cahaya menembus, plankton hidup di sini'},
     {emoji:'🌊',name:'Zona Tengah',depth:'200-1000m',color:'#1565C0',animals:'Squid, ikan lantern',fact:'Cahaya mulai berkurang'},
     {emoji:'🌑',name:'Zona Dalam',depth:'1000-4000m',color:'#0D47A1',animals:'Anglerfish, gurita',fact:'Gelap total, hewan punya cahaya sendiri'},
-    {emoji:'🕳️',name:'Zona Palung',depth:'4000-11000m',color:'#1A237E',animals:'Sea cucumber, udang',fact:'Tekanan sangat tinggi, sangat dingin'},
+    {emoji:'🕳️',name:'Zona Palung',depth:'4000-11000m',color:'#1A237E',animals:'Sea cucumber, udang',fact:'Tapan sangat tinggi, sangat dingin'},
   ];
   area.innerHTML=`
     <div class="demo-box">
@@ -386,7 +386,7 @@ function renderOzean(area){
       `).join('')}
       <div class="exp-instruction" id="zone-fact">Tap zona untuk tahu hewan di dalamnya!</div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('ozean');say('Laut sangat dalam dan penuh kehidupan!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-primary" onclick="markDone('ozean');say('Laut sangat dalam dan penuh kehidupan!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._ozeanZones=zones;
 }
@@ -402,10 +402,10 @@ function showZone(i){
 function renderHistTimeline(area){
   const eras=[
     {emoji:'🌌',name:'4.5 Miliar Tahun Lalu',desc:'Bumi terbentuk dari gas dan debu'},
-    {emoji:'🦠',name:'3 Miliar Tahun Lalu',desc:'Kehidupan pertama muncul di laut'},
+    {emoji:'🦠',name:'3 Miliar Tahun Lalu',desc:'Life pertama muncul di laut'},
     {emoji:'🦕',name:'250 Juta Tahun Lalu',desc:'Dinosaurus berjalan di Bumi'},
-    {emoji:'🧒',name:'200 Ribu Tahun Lalu',desc:'Manusia pertama (Homo sapiens)'},
-    {emoji:'🏠',name:'Sekarang',desc:'8 miliar manusia di seluruh dunia'},
+    {emoji:'🧒',name:'200 Ribu Tahun Lalu',desc:'Humans pertama (Homo sapiens)'},
+    {emoji:'🏠',name:'Now',desc:'8 miliar manusia di seluruh dunia'},
   ];
   area.innerHTML=`
     <div class="demo-box">
@@ -417,14 +417,14 @@ function renderHistTimeline(area){
         </button>
       `).join('')}
     </div>
-    <button class="btn btn-primary" onclick="markDone('timeline');say('Waktu sangat panjang!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-primary" onclick="markDone('timeline');say('Waktu sangat panjang!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._eras=[
     '4.5 miliar tahun lalu: Bumi terbentuk dari awan gas dan debu antarbintang!',
     '3 miliar tahun lalu: Bakteri pertama muncul di laut!',
     '250 juta tahun lalu: Dinosaurus berjalan di Bumi selama 180 juta tahun!',
-    '200 ribu tahun lalu: Manusia pertama muncul di Afrika!',
-    'Sekarang: 8 miliar manusia membangun civilization!',
+    '200 ribu tahun lalu: Humans pertama muncul di Afrika!',
+    'Now: 8 miliar manusia membangun civilization!',
   ];
 }
 function showEra(i){
@@ -438,7 +438,7 @@ function renderAges(area){
   area.innerHTML=`
     <div class="demo-box">
       <div class="demo-label">Waktu sangat panjang</div>
-      <div style="font-family:var(--font-h);font-size:2rem;color:var(--gold);margin:10px 0;">${state.profile.name||'Kamu'} sudah hidup... <span id="my-age">6</span> tahun!</div>
+      <div style="font-family:var(--font-h);font-size:2rem;color:var(--gold);margin:10px 0;">${state.profile.name||'You'} sudah hidup... <span id="my-age">6</span> tahun!</div>
       <div style="font-size:.8rem;opacity:.6;">Itu sekitar ${6*365} hari! 🎂</div>
     </div>
     <div class="exp-instruction">
@@ -448,7 +448,7 @@ function renderAges(area){
       🪨 Beberapa gunung berusia 100 juta tahun!<br>
       ⏳ Semua waktu ini sangat pendek dibanding usia Bumi (4.5 miliar tahun).
     </div>
-    <button class="btn btn-primary" onclick="markDone('ages');say('Waktu sangat panjang!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-primary" onclick="markDone('ages');say('Waktu sangat panjang!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
 }
 
@@ -478,7 +478,7 @@ function renderSink(area){
       🪨 Batu tenggelam karena lebih berat.<br>
       🪶 Bulu mengapung karena ada udara di dalamnya!
     </div>
-    <button class="btn btn-primary" onclick="markDone('sink');say('Kepadatan menentukan tenggelam atau mengapung!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-primary" onclick="markDone('sink');say('Kepadatan menentukan tenggelam atau mengapung!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._sinkItems=items;
 }
@@ -520,7 +520,7 @@ function renderMagnet(area){
       </div>
     </div>
     <div class="exp-instruction">🧲 Magnet menarik benda dari besi dan nikel. Logam lain seperti aluminium, emas, perak tidak tertarik magnet!</div>
-    <button class="btn btn-primary" onclick="markDone('magnet');say('Magnet hanya menarik logam tertentu!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-primary" onclick="markDone('magnet');say('Magnet hanya menarik logam tertentu!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._magnetItems=items;
 }
@@ -564,7 +564,7 @@ function renderHotCold(area){
       💧 Air menjadi es di 0°C dan menguap di 100°C.<br>
       🧊 Semakin dingin, partikel bergerak lebih lambat.
     </div>
-    <button class="btn btn-primary" onclick="markDone('hotcold');say('Suhu mengubah wujud benda!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-primary" onclick="markDone('hotcold');say('Suhu mengubah wujud benda!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._tempItems=items;
 }
@@ -595,7 +595,7 @@ function renderPlantParts(area){
         </button>
       `).join('')}
     </div>
-    <button class="btn btn-primary" onclick="markDone('plantparts');say('Setiap bagian tumbuhan punya tugas penting!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-primary" onclick="markDone('plantparts');say('Setiap bagian tumbuhan punya tugas penting!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._plantParts=parts;
 }
@@ -634,7 +634,7 @@ function renderAnimals(area){
         `).join('')}
       </div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('animals');say('Pengelompokan hewan penting untuk sains!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Selesai!</button>
+    <button class="btn btn-primary" onclick="markDone('animals');say('Pengelompokan hewan penting untuk sains!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Done!</button>
   `;
   window._animals=animals;
 }
@@ -650,12 +650,12 @@ function renderFoodChain(area){
   const steps=[
     {emoji:'☀️',name:'Matahari',desc:'Sumber energi semua kehidupan',color:'#FFF176'},
     {emoji:'🌿',name:'Tumbuhan',desc:'Menangkap cahaya, membuat makanan',color:'#81C784'},
-    {emoji:'🐰',name:'Pemakan Tumbuhan',desc:'Dapat energi dari tumbuhan',color:'#FF8A65'},
-    {emoji:'🐍',name:'Pemakan Daging',desc:'Dapat energi dari hewan lain',color:'#EF5350'},
+    {emoji:'🐰',name:'Pemakan Tumbuhan',desc:'Get energi dari tumbuhan',color:'#FF8A65'},
+    {emoji:'🐍',name:'Pemakan Daging',desc:'Get energi dari hewan lain',color:'#EF5350'},
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Rantai Makanan — Energi mengalir!</div>
+      <div class="demo-label">Food Chain — Energy flows!</div>
       ${steps.map((s,i)=>`
         <button onclick="showChain(${i})" id="chain-${i}" style="background:${s.color}22;border:2px solid ${s.color}55;border-radius:12px;padding:10px 14px;color:var(--cream);cursor:pointer;display:flex;gap:10px;align-items:center;text-align:left;font-family:var(--font-b);font-size:.85rem;width:100%;margin-bottom:6px;">
           <span style="font-size:1.5rem;">${s.emoji}</span>
@@ -664,7 +664,7 @@ function renderFoodChain(area){
       `).join('')}
     </div>
     <div class="exp-instruction">Tidak ada yang menciptakan energi. Matahari memberi, tumbuhan tangkap, hewan makan tumbuhan, predator makan herbivora.</div>
-    <button class="btn btn-primary" onclick="markDone('foodchain');say('Energi mengalir dari Matahari melalui semua makhluk!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-primary" onclick="markDone('foodchain');say('Energy flows dari Matahari melalui semua makhluk!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._chain=[
     'Matahari adalah sumber energi utama. Tanpa Matahari, tidak ada kehidupan di Bumi.',
@@ -681,7 +681,7 @@ function showChain(i){
 
 // ── RABBITY ──
 function rabbitySpeak(){
-  const msgs=['Ayo belajar!','Kamu hebat!','Tidak apa-apa coba lagi!','Rabbity bangga!'];
+  const msgs=['Let's learn!','You're amazing!','It's okay, try again!','Rabbity is so proud!'];
   say(msgs[Math.floor(Math.random()*msgs.length)]);
 }
 function say(text){
@@ -731,7 +731,7 @@ function init(){
   initState();
   genStars();
   renderHome();
-  setTimeout(()=>say('Hai! Ayo kenali dunia bersama!'),1000);
+  setTimeout(()=>say('Hi! Let's kenali dunia bersama!'),1000);
 }
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeParent();goBack();}});
 window.addEventListener('load',init);

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Bahasa & Huruf — Belajar Aya</title>
+<title>Language & Letters — Learn Aya</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--blue:#42A5F5;--cream:#FFF8F0;--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
@@ -91,13 +91,13 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <div class="screen active" id="screen-home">
   <div class="top-bar">
     <div></div>
-    <div style="font-family:var(--font-h);color:var(--gold);font-size:.9rem;">Bahasa & Huruf</div>
+    <div style="font-family:var(--font-h);color:var(--gold);font-size:.9rem;">Language & Letters</div>
     <button class="top-btn" onclick="toggleParent()">👤</button>
   </div>
   <div class="hero">
     <div style="font-size:2.5rem;margin-bottom:4px;">🔤</div>
-    <div class="hero-title">Bahasa & Huruf</div>
-    <div class="hero-sub">Huruf, kata, dan tulisan</div>
+    <div class="hero-title">Language & Letters</div>
+    <div class="hero-sub">Letters, words, dan tulisan</div>
   </div>
   <div class="act-grid" id="act-grid"></div>
 </div>
@@ -105,7 +105,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <!-- ACTIVITY -->
 <div class="screen" id="screen-act">
   <div class="exp-header">
-    <button class="lesson-back" onclick="goBack()">← Kembali</button>
+    <button class="lesson-back" onclick="goBack()">← Back</button>
     <div class="exp-title" id="act-title"></div>
     <div class="exp-prompt" id="act-prompt"></div>
   </div>
@@ -131,22 +131,22 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 
 <script>
 const ACTIVITIES=[
-  {id:'letters',name:'Huruf Awalan',desc:'A, B, C — kenali huruf satu per satu',prompt:'Tap huruf untuk dengar bunyinya!'},
-  {id:'movable',name:'Alfabet Bergerak',desc:'Bentuk kata dari huruf acak',prompt:'Susun huruf jadi kata!'},
-  {id:'trace',name:'Telusuri Kata',desc:'Gambar kata di atas garis putus-putus',prompt:'Telusuri kata dengan jarimu!'},
+  {id:'letters',name:'Letter Sounds',desc:'A, B, C — kenali huruf satu per satu',prompt:'Tap a letter untuk hear its sound!'},
+  {id:'movable',name:'Movable Alphabet',desc:'Form words from shuffled letters',prompt:'Build the word from the letters!'},
+  {id:'trace',name:'Trace Words',desc:'Write words on the dotted line',prompt:'Trace the word with your fingermu!'},
 ];
 
 const WORDS=[
-  {word:'Batu',hint:'Benda keras dari tanah',emoji:'🪨'},
-  {word:'Rumah',hint:'Tempat tinggal kita',emoji:'🏠'},
-  {word:'Kucing',hint:'Meong meong',emoji:'🐱'},
-  {word:'Anjing',hint:'anjing peliharaan',emoji:'🐕'},
-  {word:'Bunga',hint:'Indah dan wangi',emoji:'🌸'},
-  {word:'Hujan',hint:'Air jatuh dari langit',emoji:'🌧️'},
-  {word:'Bintang',hint:'Benda bercahaya di langit malam',emoji:'⭐'},
-  {word:'Kupu',hint:'Serangga bersayap indah',emoji:'🦋'},
-  {word:'Ikan',hint:'Hidup di air',emoji:'🐟'},
-  {word:'Matahari',hint:'Bintang yang sangat terang di pagi',emoji:'☀️'},
+  {word:'Batu',hint:'Hard object from the ground',emoji:'🪨'},
+  {word:'Rumah',hint:'Where we live',emoji:'🏠'},
+  {word:'Kucing',hint:'Says meow meow',emoji:'🐱'},
+  {word:'Anjing',hint:'Barks and wags tail',emoji:'🐕'},
+  {word:'Bunga',hint:'Beautiful and smells nice',emoji:'🌸'},
+  {word:'Hujan',hint:'Water falls from the sky',emoji:'🌧️'},
+  {word:'Bintang',hint:'Glowing thing in the night sky',emoji:'⭐'},
+  {word:'Kupu',hint:'Insect with beautiful wings',emoji:'🦋'},
+  {word:'Ikan',hint:'Lives in water',emoji:'🐟'},
+  {word:'Matahari',hint:'The very bright star in the morning',emoji:'☀️'},
 ];
 
 let state={history:['home'],progress:{},currentWord:0,placedLetters:[],bankLetters:[]};
@@ -159,7 +159,7 @@ function init(){
   state.currentWord=lsGet('lang-current',0);
   genStars();
   renderHome();
-  setTimeout(()=>say('Ayo belajar huruf dan kata!'),800);
+  setTimeout(()=>say('Let's learn huruf dan kata!'),800);
 }
 
 function genStars(){
@@ -179,7 +179,7 @@ function markDone(id){
     state.progress[id]=true;
     lsSet('lang-progress',state.progress);
     confetti();
-    say('Hebat! Kamu sudah selesai!');
+    say('Great! You're done!');
   }
 }
 function isDone(id){return !!state.progress[id]}
@@ -229,7 +229,7 @@ function renderLetters(area){
   const colors=['#EF5350','#FF7043','#FFCA28','#66BB6A','#26C6DA','#5C6BC0','#AB47BC','#EC407A','#42A5F5','#FFD740'];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Tap huruf untuk dengar bunyinya!</div>
+      <div class="demo-label">Tap a letter untuk hear its sound!</div>
       <div class="letter-grid">
         ${letters.map((l,i)=>`
           <button class="letter-card" id="lc-${l}" onclick="tapLetter('${l}')" style="background:${colors[i%colors.length]}18;border-color:${colors[i%colors.length]}44;">
@@ -237,9 +237,9 @@ function renderLetters(area){
           </button>
         `).join('')}
       </div>
-      <div class="exp-instruction" id="letter-msg">Tap huruf untuk dengar bunyinya!</div>
+      <div class="exp-instruction" id="letter-msg">Tap a letter untuk hear its sound!</div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('letters');say('Kamu sudah kenal huruf!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+    <button class="btn btn-primary" onclick="markDone('letters');say('You know the letters!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
 }
 function tapLetter(l){
@@ -264,7 +264,7 @@ function renderMovable(area){
   const bank=[...letters].sort(()=>Math.random()-.5);
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Susun huruf jadi kata!</div>
+      <div class="demo-label">Build the word jadi kata!</div>
       <div style="font-size:2rem;margin:8px 0;">${word.emoji}</div>
       <div class="exp-instruction">${word.hint}</div>
       <div class="word-area" id="word-area">
@@ -277,11 +277,11 @@ function renderMovable(area){
           <button class="bank-letter" id="bank-${i}" onclick="tapBank(${i},'${l}')">${l}</button>
         `).join('')}
       </div>
-      <div class="exp-instruction" id="word-msg">Tap huruf dari bank, lalu tap slot!</div>
+      <div class="exp-instruction" id="word-msg">Tap a letter dari bank, lalu tap slot!</div>
     </div>
     <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:0 16px;">
-      <button class="btn btn-secondary" onclick="skipWord()">⏭️ Kata lain</button>
-      <button class="btn btn-primary" onclick="checkWord('${word.word.toUpperCase()}')">✅ Cek!</button>
+      <button class="btn btn-secondary" onclick="skipWord()">⏭️ Next word</button>
+      <button class="btn btn-primary" onclick="checkWord('${word.word.toUpperCase()}')">✅ Check!</button>
     </div>
   `;
   window._currentWord=word.word.toUpperCase();
@@ -361,7 +361,7 @@ function renderTrace(area){
   const word=WORDS[state.currentWord%WORDS.length];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Telusuri kata dengan jari!</div>
+      <div class="demo-label">Trace the word with your finger!</div>
       <div class="picture-card" style="max-width:280px;margin:8px auto;">
         <div class="picture-emoji">${word.emoji}</div>
         <div class="trace-word" id="trace-word">${word.word}</div>
@@ -373,12 +373,12 @@ function renderTrace(area){
         </div>
       </div>
       <div style="display:flex;gap:8px;justify-content:center;margin-top:10px;">
-        <button class="btn btn-secondary" onclick="clearTrace()">🗑️ Hapus</button>
-        <button class="btn btn-primary" onclick="finishTrace()">✅ Selesai</button>
+        <button class="btn btn-secondary" onclick="clearTrace()">🗑️ Clear</button>
+        <button class="btn btn-primary" onclick="finishTrace()">✅ Done</button>
       </div>
     </div>
     <div style="text-align:center;padding:0 16px;">
-      <button class="btn btn-secondary" onclick="nextTrace()" style="margin-top:8px;">⏭️ Kata lain</button>
+      <button class="btn btn-secondary" onclick="nextTrace()" style="margin-top:8px;">⏭️ Next word</button>
     </div>
   `;
   initCanvas();
@@ -416,7 +416,7 @@ function finishTrace(){
   clearTrace();
   confetti();
   markDone('trace');
-  say('Hebat! Kamu bisa menulis '+window._traceWord+'!');
+  say('Great! You can write '+window._traceWord+'!');
   setTimeout(()=>{
     state.currentWord=(state.currentWord+1)%WORDS.length;
     lsSet('lang-current',state.currentWord);
@@ -431,7 +431,7 @@ function nextTrace(){
 
 // ── RABBITY ──
 function rabbitySpeak(){
-  const msgs=['Ayo belajar huruf!','Kamu hebat!','Baca lagi!','Rabbity bangga!'];
+  const msgs=['Let's learn huruf!','You're amazing!','Baca lagi!','Rabbity is so proud!'];
   say(msgs[Math.floor(Math.random()*msgs.length)]);
 }
 function say(text){

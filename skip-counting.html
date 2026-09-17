@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Loncat Berhitung — Belajar Aya</title>
+<title>Skip Counting — Learn Aya</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -274,12 +274,12 @@ body{
 <!-- ── STAGE SELECT ── -->
 <div class="screen active" id="screen-select">
   <div class="top-bar">
-    <a href="index.html" class="back-btn">← Beranda</a>
-    <div class="top-title">Loncat Berhitung</div>
+    <a href="index.html" class="back-btn">← Home</a>
+    <div class="top-title">Skip Counting</div>
     <button class="back-btn" onclick="toggleParent()" style="background:none;border:none;font-size:1.1rem;">👤</button>
   </div>
   <div class="stage-select">
-    <h2>Pilih Tahap</h2>
+    <h2>Choose Stage</h2>
     <div class="stage-grid" id="stage-grid"></div>
   </div>
 </div>
@@ -287,7 +287,7 @@ body{
 <!-- ── GAME ── -->
 <div class="screen" id="screen-game">
   <div class="top-bar">
-    <button class="back-btn" onclick="showSelect()">← Kembali</button>
+    <button class="back-btn" onclick="showSelect()">← Back</button>
     <div class="top-title" id="game-title"></div>
     <button class="back-btn" onclick="toggleParent()" style="background:none;border:none;font-size:1.1rem;">👤</button>
   </div>
@@ -304,7 +304,7 @@ body{
 <div class="parent-panel" id="parent-panel">
   <div class="panel-handle"></div>
   <button onclick="toggleParent()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">✕</button>
-  <div class="panel-title">📊 Progress Loncat Berhitung</div>
+  <div class="panel-title">📊 Progress Skip Counting</div>
   <div id="parent-content"></div>
 </div>
 
@@ -317,11 +317,11 @@ body{
 // ═══════════════════════════════════════════
 const STAGES = [
   {
-    id:1, name:'Angka 1–10', emoji:'🔢', color:'#42A5F5',
+    id:1, name:'Numbers 1–10', emoji:'🔢', color:'#42A5F5',
     desc:'Hitung satu-satu',
     type:'ladder',
     target:10, by:1,
-    instruction:'Tap angka 1, 2, 3... sampai 10!'
+    instruction:'Tap numbers 1 through 10!'
   },
   {
     id:2, name:'Loncat 2-an', emoji:'🌈', color:'#7C4DFF',
@@ -346,17 +346,17 @@ const STAGES = [
   },
   {
     id:5, name:'Buat Kelompok', emoji:'🧺', color:'#E91E63',
-    desc:'Sama banyak di setiap kelompok',
+    desc:'Same amount in every group',
     type:'basket',
     total:12, by:3, groups:3,
-    instruction:'Seret titik ke keranjang! Tiap keranjang harus sama banyak.'
+    instruction:'Drag dots into baskets! Each basket must have the same amount.'
   },
   {
     id:6, name:'Tantangan', emoji:'⭐', color:'#FFD700',
     desc:'Gabungan semua pola',
     type:'basket',
     total:20, by:4, groups:5,
-    instruction:'Seret titik ke keranjang sama banyak!'
+    instruction:'Drag dots into baskets with equal amounts!'
   },
 ];
 
@@ -418,10 +418,10 @@ function renderStageGrid(){
     card.onclick=unlocked?()=>startStage(s.id):null;
     card.innerHTML=`
       <div class="stage-emoji">${s.emoji}</div>
-      <div class="stage-name">Tahap ${s.id}</div>
+      <div class="stage-name">Stage ${s.id}</div>
       <div class="stage-desc">${s.name}</div>
-      ${done?'<div style="color:var(--green);font-size:.75rem;margin-top:4px;">✓ Selesai</div>':''}
-      ${!unlocked?'<div class="stage-lock">🔒 Selesaikan tahap sebelumnya</div>':''}
+      ${done?'<div style="color:var(--green);font-size:.75rem;margin-top:4px;">✓ Done</div>':''}
+      ${!unlocked?'<div class="stage-lock">🔒 Donekan tahap sebelumnya</div>':''}
     `;
     grid.appendChild(card);
   });
@@ -473,8 +473,8 @@ function renderParentPanel(){
     c.innerHTML+=`
       <div class="panel-row">
         <div class="panel-row-label">
-          <span>${s.emoji} Tahap ${s.id}: ${s.name}</span>
-          <span style="color:#666;font-size:.75rem;">${done?'✓':'belum'}</span>
+          <span>${s.emoji} Stage ${s.id}: ${s.name}</span>
+          <span style="color:#666;font-size:.75rem;">${done?'✓':'not yet'}</span>
         </div>
         <div class="panel-bar"><div class="panel-bar-fill" style="width:${pct}%;background:${s.color}"></div></div>
       </div>
@@ -516,7 +516,7 @@ function tapLadder(num, done, current, stageId){
     const steps=document.querySelectorAll('.ladder-step');
     const el=Array.from(steps).find(s=>s.dataset.num==String(num));
     if(el){el.classList.add('shake');setTimeout(()=>el.classList.remove('shake'),400);}
-    say('Bukan itu! Coba '+current);
+    say('Try again! The answer is '+current);
     return;
   }
   // Correct!
@@ -531,7 +531,7 @@ function tapLadder(num, done, current, stageId){
       lsSet('skip-progress',progress);
     }
     confetti();
-    say('Hebat! Tahap 1 selesai!');
+    say('Hebat! Stage 1 selesai!');
     setTimeout(showSelect,2000);
   } else {
     lsSet('skip-current-'+stageId,num+1);
@@ -584,7 +584,7 @@ function tapRainbow(num, done, current, stageId, by){
       lsSet('skip-progress',progress);
     }
     confetti();
-    say('Hebat! Tahap selesai!');
+    say('Hebat! Stage selesai!');
     setTimeout(showSelect,2000);
   } else {
     lsSet('skip-current-'+stageId,current+by);
@@ -619,7 +619,7 @@ function renderBaskets(area, s){
     <div class="dot-pool" id="dot-pool"></div>
     <div class="action-row">
       <button class="btn btn-outline" onclick="resetBaskets()">🔄 Reset</button>
-      <button class="btn btn-gold" onclick="checkBaskets()">✅ Cek Jawaban</button>
+      <button class="btn btn-gold" onclick="checkBaskets()">✅ Check Answer</button>
     </div>
   `;
   area.appendChild(container);
@@ -702,7 +702,7 @@ function makeDot(num, s){
           // Basket full — shake and return
           b.classList.add('shake');
           setTimeout(()=>b.classList.remove('shake'),400);
-          say('Keranjang sudah penuh!');
+          say('Baskets sudah penuh!');
           resetDotPosition(d,startX,startY);
         }
       }
@@ -777,7 +777,7 @@ function checkBaskets(){
   } else if(!any){
     say('Seret titik dulu ke keranjang!');
   } else {
-    say('Belum sama semua. Coba lagi!');
+    say('Not yet sama semua. Coba lagi!');
     // Highlight incomplete baskets
     baskets.forEach(b=>{
       const c=parseInt(b.dataset.count||'0');
@@ -816,7 +816,7 @@ function resetBaskets(){
 // RABBITY
 // ─────────────────────────────────────────────
 function rabbitySpeak(){
-  const msgs=['Ayo belajar! 📚','Kamu hebat! ⭐','Tidak apa-apa coba lagi! 💪','Rabbity bangga! 🐰'];
+  const msgs=['Let's learn! 📚','You're amazing! ⭐','It's okay, try again! 💪','Rabbity is so proud! 🐰'];
   say(msgs[Math.floor(Math.random()*msgs.length)]);
 }
 

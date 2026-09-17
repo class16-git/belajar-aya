@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Taman Matematika — Belajar Aya</title>
+<title>Math Garden — Learn Aya</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--blue:#42A5F5;--cream:#FFF8F0;--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
@@ -106,12 +106,12 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <div class="screen active" id="screen-home">
   <div class="top-bar">
     <div></div>
-    <div style="font-family:var(--font-h);color:var(--gold);font-size:.9rem;">Taman Matematika</div>
+    <div style="font-family:var(--font-h);color:var(--gold);font-size:.9rem;">Math Garden</div>
     <button class="top-btn" onclick="toggleParent()">👤</button>
   </div>
   <div class="hero">
     <div style="font-size:2.5rem;margin-bottom:4px;">🔢</div>
-    <div class="hero-title">Taman Matematika</div>
+    <div class="hero-title">Math Garden</div>
     <div class="hero-sub">Montessori CPA — Concrete, Pictorial, Abstract</div>
   </div>
   <div class="act-grid" id="act-grid"></div>
@@ -120,7 +120,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <!-- ACTIVITY -->
 <div class="screen" id="screen-act">
   <div class="exp-header">
-    <button class="lesson-back" onclick="goBack()">← Kembali</button>
+    <button class="lesson-back" onclick="goBack()">← Back</button>
     <div class="exp-title" id="act-title"></div>
     <div class="exp-prompt" id="act-prompt"></div>
   </div>
@@ -146,11 +146,11 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 
 <script>
 const ACTIVITIES=[
-  {id:'rods',name:'Garis Bilangan',desc:'Gunakan garis untuk melompat',prompt:'Tap garis untuk melompat dari satu angka ke angka lain'},
-  {id:'spindle',name:'Kotak Spindel',desc:'Masukkan spindel ke kotak yang benar',prompt:'Hitung spindel, lalu taruh di kotak yang sesuai'},
-  {id:'counters',name:'Kartu dan Counter',desc:'Padankan angka dengan jumlah titik',prompt:'Taruh titik yang sesuai di bawah angka'},
-  {id:'teen',name:'Papan Belasan',desc:'Kenali angka 11 sampai 19',prompt:'Tap untuk melihat angka belasannya'},
-  {id:'tens',name:'Papan Puluhan',desc:'Kenali angka 20 sampai 90',prompt:'Tap untuk belajar puluhan'},
+  {id:'rods',name:'Number Line',desc:'Use the number line to jump around',prompt:'Tap the line to jump from one number to another'},
+  {id:'spindle',name:'Spindle Box',desc:'Drop spindles in the matching box',prompt:'Count spindles, lalu taruh di kotak yang sesuai'},
+  {id:'counters',name:'Cards & Counters',desc:'Match numbers with the right dot count',prompt:'Place dots yang sesuai di bawah angka'},
+  {id:'teen',name:'Teen Board',desc:'Learn numbers 11 through 19',prompt:'Tap untuk melihat angka belasannya'},
+  {id:'tens',name:'Papan Tens',desc:'Learn numbers 20 sampai 90',prompt:'Tap untuk belajar puluhan'},
 ];
 
 let state={history:['home'],progress:{},selectedRod:null};
@@ -162,7 +162,7 @@ function init(){
   state.progress=lsGet('math-progress',{});
   genStars();
   renderHome();
-  setTimeout(()=>say('Hai! Ayo belajar matematika!'),800);
+  setTimeout(()=>say('Hi! Let's learn matematika!'),800);
 }
 
 function genStars(){
@@ -182,7 +182,7 @@ function markDone(id){
     state.progress[id]=true;
     lsSet('math-progress',state.progress);
     confetti();
-    say('Hebat! Kamu sudah selesai!');
+    say('Great! You're done!');
   }
 }
 function isDone(id){return !!state.progress[id]}
@@ -245,7 +245,7 @@ function renderRods(area){
       <div class="exp-instruction" id="rod-msg">Tap angka untuk mulai melompat!</div>
       <div id="rod-jump" style="font-family:var(--font-h);font-size:1.2rem;color:var(--gold);min-height:2rem;margin-top:8px;"></div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('rods');say('Hebat! Kamu bisa melompat di garis bilangan!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+    <button class="btn btn-primary" onclick="markDone('rods');say('Hebat! Kamu bisa melompat di garis bilangan!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
 }
 function selectRod(n){
@@ -259,11 +259,11 @@ function selectRod(n){
     const sign=jump>=0?'+':'';
     const jumpEl=document.getElementById('rod-jump');
     if(jumpEl)jumpEl.textContent=`${state.selectedRod} ${sign}${jump} = ${n}`;
-    if(msg)msg.textContent=`Melompat ${sign}${jump} langkah!`;
+    if(msg)msg.textContent=`Jump ${sign}${jump} langkah!`;
     say(`Dari ${state.selectedRod} ke ${n}, melompat ${sign}${jump}`);
   } else {
-    if(msg)msg.textContent=`Angka ${n} dipilih! Tap angka lain untuk melompat!`;
-    say(`Angka ${n}. Tap angka lain!`);
+    if(msg)msg.textContent=`Numbers ${n} dipilih! Tap angka lain untuk melompat!`;
+    say(`Numbers ${n}. Tap angka lain!`);
   }
   state.selectedRod=n;
 }
@@ -276,7 +276,7 @@ function renderSpindle(area){
   for(let i=1;i<=9;i++)for(let j=0;j<i;j++)spindles.push({id:`sp-${i}-${j}`,num:i,color:['#EF5350','#FF7043','#FFCA28','#66BB6A','#26C6DA','#42A5F5','#5C6BC0','#AB47BC','#EC407A'][i-1]});
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Taruh spindel di kotak yang sesuai jumlahnya!</div>
+      <div class="demo-label">Drop spindles di kotak yang sesuai jumlahnya!</div>
       <div class="spindle-box" id="spindle-source">
         ${spindles.map(s=>`<button class="spindle-item" id="${s.id}" onclick="grabSpindle('${s.id}')" style="background:${s.color}">●</button>`).join('')}
       </div>
@@ -290,7 +290,7 @@ function renderSpindle(area){
       </div>
       <div class="exp-instruction" id="spindle-msg">Tap spindel untuk ambil, lalu tap kotak untuk taruh!</div>
     </div>
-    <button class="btn btn-primary" onclick="checkSpindle()" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Cek Jawaban!</button>
+    <button class="btn btn-primary" onclick="checkSpindle()" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Check Answer!</button>
   `;
   window._spindleHeld=null;
 }
@@ -317,7 +317,7 @@ function dropSpindle(n){
   if(items)items.appendChild(chip);
   window._spindleHeld=null;
   const msg=document.getElementById('spindle-msg');
-  if(msg)msg.textContent='Tap spindel lain untuk lanjut!';
+  if(msg)msg.textContent='Tap another spindle to continue!';
 }
 function checkSpindle(){
   let correct=true;
@@ -336,7 +336,7 @@ function checkSpindle(){
     markDone('spindle');
     say('Semua spindel di tempat yang benar!');
   } else {
-    say('Coba hitung lagi di setiap kotak!');
+    say('Try counting again in each box!');
   }
 }
 
@@ -354,10 +354,10 @@ function renderCounters(area){
           </div>
         `).join('')}
       </div>
-      <div class="exp-instruction" id="counter-msg">Pilih kartu angka!</div>
+      <div class="exp-instruction" id="counter-msg">Choose kartu angka!</div>
       <div id="selected-info" style="margin-top:10px;font-family:var(--font-h);font-size:1.1rem;color:var(--gold);min-height:1.4rem;"></div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('counters');say('Hebat! Kamu bisa menghitung!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+    <button class="btn btn-primary" onclick="markDone('counters');say('Great! You can count!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
 }
 function selectCounter(n){
@@ -370,7 +370,7 @@ function selectCounter(n){
   const info=document.getElementById('selected-info');
   if(info)info.textContent=`${n} titik!`;
   const msg=document.getElementById('counter-msg');
-  if(msg)msg.textContent=`Angka ${n} punya ${n} titik!`;
+  if(msg)msg.textContent=`Numbers ${n} punya ${n} titik!`;
   say(`${n} titik untuk angka ${n}!`);
 }
 
@@ -390,7 +390,7 @@ function renderTeen(area){
       </div>
       <div class="exp-instruction" id="teen-msg">Tap angka untuk ketahui nilainya!</div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('teen');say('Belasan: 10 + 1 sampai 10 + 9!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+    <button class="btn btn-primary" onclick="markDone('teen');say('Teens: 10 + 1 through 10 + 9!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
 }
 function revealTeen(n){
@@ -408,7 +408,7 @@ function renderTens(area){
   const tens=[20,30,40,50,60,70,80,90];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Angka puluhan!</div>
+      <div class="demo-label">Numbers puluhan!</div>
       <div class="tens-board">
         ${tens.map(n=>`
           <div class="tens-card" id="tens-${n}" onclick="tapTens(${n})">
@@ -419,7 +419,7 @@ function renderTens(area){
       </div>
       <div class="exp-instruction" id="tens-msg">Tap untuk belajar puluhan!</div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('tens');say('Puluhan: 20 sampai 90!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Selesai!</button>
+    <button class="btn btn-primary" onclick="markDone('tens');say('Tens: 20 sampai 90!')" style="width:100%;max-width:320px;display:block;margin:10px auto;">✅ Done!</button>
   `;
 }
 function tapTens(n){
@@ -432,7 +432,7 @@ function tapTens(n){
 
 // ── RABBITY ──
 function rabbitySpeak(){
-  const msgs=['Ayo belajar matematika!','Kamu hebat dengan angka!','Hitung lagi!','Rabbity bangga!'];
+  const msgs=['Let's learn matematika!','Kamu hebat dengan angka!','Hitung lagi!','Rabbity is so proud!'];
   say(msgs[Math.floor(Math.random()*msgs.length)]);
 }
 function say(text){

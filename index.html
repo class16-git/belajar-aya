@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Belajar Aya — Rumah</title>
+<title>Learning Home</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -187,19 +187,19 @@ body.app-hub .parent-fab{bottom:80px}
 <body class="app-hub">
 
 <div class="stars" id="stars"></div>
-<div class="offline-banner" id="offline-banner">📡 Offline — tetap bisa belajar!</div>
+<div class="offline-banner" id="offline-banner">📡 Offline — keep learning!</div>
 
 <!-- ═══ HOME SCREEN ═══ -->
 <div class="screen active" id="screen-home">
   <div class="top-bar">
     <div></div>
-    <button class="top-btn" onclick="showNameModal()" title="Profil">🤠</button>
+    <button class="top-btn" onclick="showNameModal()" title="Profilee">🤠</button>
   </div>
 
   <div class="hero">
     <div class="hero-emoji">🐰</div>
-    <div class="hero-title">Belajar Aya</div>
-    <div class="hero-sub">Belajar dengan tangan, bukan membaca</div>
+    <div class="hero-title">Learn Aya</div>
+    <div class="hero-sub">Learn with your hands, not just reading</div>
     <div class="hero-greeting" id="hero-greeting"></div>
   </div>
 
@@ -212,7 +212,7 @@ body.app-hub .parent-fab{bottom:80px}
 <div class="screen" id="screen-skip">
   <div class="top-bar">
     <button class="top-btn" onclick="showScreen('home')">←</button>
-    <div style="font-family:var(--font-h);color:var(--gold);font-size:1rem;">Loncat Berhitung</div>
+    <div style="font-family:var(--font-h);color:var(--gold);font-size:1rem;">Skip Counting</div>
     <div></div>
   </div>
   <div id="skip-area" style="padding:0 16px 100px;position:relative;z-index:1;"></div>
@@ -222,15 +222,15 @@ body.app-hub .parent-fab{bottom:80px}
 <div class="modal-overlay" id="name-modal">
   <div class="modal-box">
     <div style="font-size:2.5rem;margin-bottom:8px;">🐰</div>
-    <h2>Hai!</h2>
-    <p>Siapa namamu?</p>
+    <h2>Hi!</h2>
+    <p>What's your name?</p>
     <input class="modal-input" id="name-input" type="text" placeholder="Ketik nama..." maxlength="20" onkeydown="if(event.key==='Enter')saveName()">
-    <button class="modal-btn" onclick="saveName()">Mulai!</button>
+    <button class="modal-btn" onclick="saveName()">Start!</button>
   </div>
 </div>
 
 <!-- FABs -->
-<a href="index.html" class="home-fab" title="Ke Beranda">🏠</a>
+<a href="index.html" class="home-fab" title="Back to Home">🏠</a>
 <button class="parent-fab" onclick="toggleParent()" title="Panel Orang Tua">👤</button>
 <button class="rabbity-fab" onclick="rabbitySpeak()" title="Rabbity bicara">🐰</button>
 <div class="rabbity-bubble" id="rabbity-bubble"></div>
@@ -239,7 +239,7 @@ body.app-hub .parent-fab{bottom:80px}
 <div class="parent-panel" id="parent-panel">
   <div class="panel-handle"></div>
   <button onclick="toggleParent()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">✕</button>
-  <div class="panel-title">📊 Progress Belajar</div>
+  <div class="panel-title">📊 Learning Progress</div>
   <div id="parent-content"></div>
 </div>
 
@@ -248,12 +248,12 @@ body.app-hub .parent-fab{bottom:80px}
 // DATA
 // ═══════════════════════════════════════════
 const APPS = [
-  { id:'skip',    emoji:'🐰', bg:'#1565C0', title:'Loncat Berhitung', desc:'Lompat-lompat angka!', file:'skip-counting.html', key:'skip-progress', color:'#1565C0' },
-  { id:'lessons', emoji:'🌍', bg:'#4A148C', title:'Lima Pelajaran Besar', desc:'Kenali dunia dan isinya', file:'five-great-lessons.html', key:'fgl-progress', color:'#4A148C' },
-  { id:'math',    emoji:'🔢', bg:'#1B5E20', title:'Taman Matematika', desc:'Batang angka, spindle, kartu', file:'math.html', key:'math-progress', color:'#1B5E20' },
-  { id:'lang',    emoji:'🔤', bg:'#B71C1C', title:'Bahasa & Huruf', desc:'Huruf, kata, dan tulisan', file:'language.html', key:'lang-progress', color:'#B71C1C' },
-  { id:'prac',    emoji:'🧼', bg:'#E65100', title:'Latihan Tangan', desc:'Tuang, jepit, tombol, cuci', file:'practical-life.html', key:'pl-progress', color:'#E65100' },
-  { id:'cultur',  emoji:'🌏', bg:'#0D47A1', title:'Budaya & Sains', desc:'Geografi, sains, alam', file:'cultural.html', key:'culture-progress', color:'#0D47A1' },
+  { id:'skip',    emoji:'🐰', bg:'#1565C0', title:'Skip Counting', desc:'Jump through numbers!', file:'skip-counting.html', key:'skip-progress', color:'#1565C0' },
+  { id:'lessons', emoji:'🌍', bg:'#4A148C', title:'Five Great Lessons', desc:'Explore the world and all its wonders', file:'five-great-lessons.html', key:'fgl-progress', color:'#4A148C' },
+  { id:'math',    emoji:'🔢', bg:'#1B5E20', title:'Math Garden', desc:'Number rods, spindles, and cards', file:'math.html', key:'math-progress', color:'#1B5E20' },
+  { id:'lang',    emoji:'🔤', bg:'#B71C1C', title:'Language & Letters', desc:'Letters, words, and writing', file:'language.html', key:'lang-progress', color:'#B71C1C' },
+  { id:'prac',    emoji:'🧼', bg:'#E65100', title:'Practical Life', desc:'Pour, pinch, button, wash', file:'practical-life.html', key:'pl-progress', color:'#E65100' },
+  { id:'cultur',  emoji:'🌏', bg:'#0D47A1', title:'Culture & Science', desc:'Geography, sains, alam', file:'cultural.html', key:'culture-progress', color:'#0D47A1' },
 ];
 
 const PROGRESS_KEYS = {
@@ -262,12 +262,12 @@ const PROGRESS_KEYS = {
 };
 
 const MISSIONS = {
-  skip:   ['Hitung langkah ke dapur!','Lompat angka 2an!'],
+  skip:   ['Count steps to the kitchen!','Skip count by 2s!'],
   lessons:['Ceritakan 1 fakta dari pelajaran!','Gambar salah satu pelajaran!'],
   math:   ['Hitung mainan!','Bandingkan tinggi rendah!'],
   lang:   ['Tulis namamu!','Baca huruf di jalan!'],
   prac:   ['Celupkan tangan ke air!','Jepit korek api!'],
-  cultur: ['Namai 3 hewan!','Ceritakan cuaca hari ini!'],
+  cultur: ['Namei 3 hewan!','Ceritakan cuaca hari ini!'],
 };
 
 // ═══════════════════════════════════════════
@@ -282,7 +282,7 @@ function lsGet(k, def) {
 function lsSet(k, v) {
   try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {}
 }
-function loadProfile() {
+function loadProfileee() {
   profile = lsGet('aya-profile', { name:'', avatar:'🐰' });
 }
 
@@ -364,9 +364,9 @@ function renderAppGrid() {
 // ═══════════════════════════════════════════
 function rabbitySpeak() {
   const msgs = [
-    'Ayo belajar! 📚',
-    'Kamu hebat! ⭐',
-    'Mulai dari yang mudah ya! 🌟',
+    'Let's learn! 📚',
+    'You're amazing! ⭐',
+    'Start dari yang mudah ya! 🌟',
     'Tidak ada yang salah dengan mencoba lagi! 💪',
     'Rabbity bangga sama kamu! 🐰',
   ];
@@ -459,23 +459,23 @@ function loadSkipCounting() {
 
   area.innerHTML = `
     <div style="text-align:center;padding:10px 0 6px;">
-      <div style="font-family:var(--font-h);font-size:1rem;color:var(--gold);margin-bottom:6px">Tahap ${stage}</div>
+      <div style="font-family:var(--font-h);font-size:1rem;color:var(--gold);margin-bottom:6px">Stage ${stage}</div>
       <div style="height:6px;background:rgba(255,255,255,.1);border-radius:3px;overflow:hidden;">
         <div id="skip-progress-bar" style="height:100%;background:var(--green);width:${Math.min(100,(progress.length/10)*100)}%;transition:width .5s"></div>
       </div>
       <div style="font-size:.72rem;opacity:.4;margin-top:4px">${progress.length}/10 aktivitas</div>
     </div>
-    <div style="text-align:center;padding:8px 0;font-size:.85rem;opacity:.7;margin-bottom:8px">Pilih tahap untuk mulai:</div>
+    <div style="text-align:center;padding:8px 0;font-size:.85rem;opacity:.7;margin-bottom:8px">Choose tahap untuk mulai:</div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;">
       ${[1,2,3,4,5,6].map(s => `
         <button onclick="playStage(${s})" style="background:${s<=stage?'var(--card)':'rgba(255,255,255,.04)'};border:${s<=stage?'1px solid rgba(255,255,255,.12)':'1px solid rgba(255,255,255,.06)'};border-radius:14px;padding:14px 10px;color:${s<=stage?'var(--cream)':'rgba(255,255,255,.25)'};font-family:var(--font-b);font-weight:700;cursor:${s<=stage?'pointer':'not-allowed'};font-size:.9rem;">
-          Tahap ${s}
+          Stage ${s}
           ${s <= stage ? (progress.includes(s-1) ? '✓' : '→') : '🔒'}
         </button>
       `).join('')}
     </div>
     <div style="text-align:center;opacity:.4;font-size:.75rem;line-height:1.6;">
-      Loncat Berhitung adalah app tersendiri.<br>
+      Skip Counting adalah app tersendiri.<br>
       <a href="skip-counting.html" style="color:var(--gold);">Buka full app →</a>
     </div>
   `;
@@ -490,7 +490,7 @@ function playStage(n) {
 // INIT
 // ═══════════════════════════════════════════
 function init() {
-  loadProfile();
+  loadProfileee();
   genStars();
   renderAppGrid();
 
@@ -501,7 +501,7 @@ function init() {
     setTimeout(() => {
       const h = new Date().getHours();
       const time = h < 12 ? 'Selamat pagi' : h < 17 ? 'Selamat siang' : 'Selamat sore';
-      say(time + ', ' + profile.name + '! 🐰 Ayo belajar!');
+      say(time + ', ' + profile.name + '! 🐰 Let's learn!');
     }, 1200);
   }
 }
