@@ -524,8 +524,9 @@
 
     .num-label.highlighted {
       opacity: 1;
-      color: var(--sky-blue);
-      transform: scale(1.2);
+      color: #E3F2FD;
+      transform: scale(1.15);
+      font-weight: 900;
     }
 
     .num-label.active {
@@ -544,16 +545,23 @@
     .piko-bunny {
       font-size: 2.5rem;
       position: absolute;
-      transition: left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+      transition: left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
       z-index: 10;
       cursor: pointer;
       user-select: none;
       filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
-      animation: none;
     }
 
     .piko-bunny.hopping {
-      animation: bunnyHop var(--hop-duration, 0.6s) ease-in-out;
+      animation: bunnyBounce 0.5s ease-out forwards;
+    }
+
+    @keyframes bunnyBounce {
+      0%   { transform: translateY(0) scale(1); }
+      25%  { transform: translateY(-50px) scale(1.15); }
+      50%  { transform: translateY(-25px) scale(1); }
+      75%  { transform: translateY(-10px) scale(1.05); }
+      100% { transform: translateY(0) scale(1); }
     }
 
     .hop-arrow {
@@ -870,7 +878,7 @@
     <div class="group-row" id="baskets-row"></div>
 
     <div class="drop-zone" id="drop-zone">
-      <span class="drop-zone-label">Seret titik ke sini</span>
+      <span class="drop-zone-label" id="drop-zone-label">Seret titik ke keranjang!</span>
     </div>
 
     <div class="total-display" id="build-total">Jumlah: 0</div>
@@ -1055,7 +1063,7 @@ function makeDot(num, cls = '') {
   d.className = 'dot src-dot ' + cls;
   d.textContent = num;
   d.draggable = false;
-  d.style.animationDelay = (num * 30) + 'ms';
+  d.style.animationDelay = (num * 5) + 'ms';
   d.style.animation = 'dotDrop 0.4s ease-out backwards';
 
   // Touch + mouse drag
@@ -1171,7 +1179,6 @@ function selectBuildSize(n) {
 // ===== JUMP: PIKO ON NUMBER LINE =====
 function initJump() {
   state.jump.pikoPos = 0;
-  state.jump.size = state.jump.size; // keep current
   buildNumberLine();
   updatePikoPosition(false);
   clearFeedback('jump');
@@ -1236,9 +1243,6 @@ function updatePikoPosition(animate = true) {
   const leftPx = offset + targetCell * cellWidth;
 
   piko.style.left = leftPx + 'px';
-  piko.style.setProperty('--from-x', (leftPx - cellWidth * (state.jump.size / step)) + 'px');
-  piko.style.setProperty('--to-x', leftPx + 'px');
-  piko.style.setProperty('--hop-duration', '0.6s');
 
   // Highlight current cell
   document.querySelectorAll('.num-label').forEach(l => l.classList.remove('active'));
@@ -1280,7 +1284,8 @@ function pikoJump() {
 
   if (state.jump.pikoPos >= maxVal) {
     confetti();
-    showFeedback('jump', 'Piko sampai! 🌟', 'success');
+    showFeedback('jump', 'Hebat! Piko sampai! 🌟 Mau lagi?', 'success');
+    document.getElementById('jump-btn').disabled = true;
     const p = loadProgress();
     p.jump = p.jump || {};
     p.jump[state.jump.size] = (p.jump[state.jump.size] || 0) + 1;
@@ -1306,6 +1311,7 @@ function resetPiko() {
     l.classList.remove('highlighted', 'active');
   });
   document.getElementById('jump-progress').style.width = '0%';
+  document.getElementById('jump-btn').disabled = false;
   updatePikoPosition(false);
   clearFeedback('jump');
 }
@@ -1336,6 +1342,8 @@ function generateNextSequence() {
 function renderNext() {
   const seq = state.next.seq;
   const answer = seq[seq.length - 1] + state.next.size;
+  // Capture size at render time — child can't change it mid-round
+  state.next.roundSize = state.next.size;
   seq.push('?'); // placeholder for answer
 
   const display = document.getElementById('next-display');
@@ -1363,7 +1371,7 @@ function renderNext() {
   row.innerHTML = '';
   shuffled.forEach(c => {
     const btn = document.createElement('button');
-    btn.className = `choice-btn by${state.next.size}`;
+    btn.className = `choice-btn by${state.next.roundSize}`;
     btn.textContent = c;
     btn.onclick = () => checkNextAnswer(c, correct, btn);
     row.appendChild(btn);
@@ -1400,7 +1408,7 @@ function checkNextAnswer(selected, correct, btn) {
   } else {
     btn.classList.add('wrong');
     setTimeout(() => btn.classList.remove('wrong'), 600);
-    showFeedback('next', getHintMsg(state.next.size), 'hint');
+    showFeedback('next', getHintMsg(state.next.roundSize), 'hint');
   }
 }
 
@@ -1443,11 +1451,12 @@ function renderMissing() {
     display.appendChild(n);
   });
 
-  // Choices
+  // Choices — spread above AND below the correct answer for genuine distractors
   const choices = new Set([answer]);
   while (choices.size < 4) {
-    const offset = (Math.random() < 0.5 ? 1 : -1) * (Math.floor(Math.random() * 3) + 1) * size;
-    const c = answer + offset;
+    const direction = Math.random() < 0.5 ? 1 : -1;
+    const magnitude = (Math.floor(Math.random() * 3) + 1) * size;
+    const c = answer + direction * magnitude;
     if (c > 0 && c !== answer) choices.add(c);
   }
 
@@ -1479,7 +1488,7 @@ function checkMissingAnswer(selected, correct, btn, blankPos) {
 
     const p = loadProgress();
     p.missing = p.missing || {};
-    p.missing[size] = (p.missing[size] || 0) + 1;
+    p.missing[state.missing.size] = (p.missing[state.missing.size] || 0) + 1;
     saveProgress(p);
 
     document.getElementById('missing-progress').style.width = Math.min(100, (state.missing.score / 10) * 100) + '%';
@@ -1628,7 +1637,7 @@ function updateParentStats() {
   const skills = [
     { key: 'build', label: '🔨 Buat Kelompok' },
     { key: 'jump', label: '🐰 Loncat Baris' },
-    { key: 'next', label: '🔮 next Number' },
+    { key: 'next', label: '🔮 Angka Berikutnya' },
     { key: 'missing', label: '🔍 Angka Hilang' },
     { key: 'detective', label: '🕵️ Rule Detektif' },
   ];
