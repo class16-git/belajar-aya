@@ -1,25 +1,31 @@
 # Belajar Aya 🌱
 
-Fun, interactive learning materials for Aya — built with Montessori principles and cognitive science research.
+Interactive learning for Aya — built with Montessori principles and cognitive science research.
 
-## Skip Counting 🔢
+## Skip Counting dengan Piko 🐰
 
-An interactive skip-counting game for 6-year-olds. Currently covers skip counting by 2s, 5s, and 10s.
+A 6-stage interactive skip-counting game for 6-year-olds.
 
-**Why this approach?**
-- Starts with *why* skip counting matters, not just *how*
-- Concrete → Pictorial → Abstract progression (CPA approach)
-- Self-paced, discovery-based learning
-- No ads, no sounds, no distractions
+**Core mental model:** *Start somewhere → apply the same jump repeatedly → a predictable number pattern appears.*
 
-## Principles
+### 6 Stages
 
-- **Montessori-aligned**: child-led, hands-on feel
-- **Cognitive science**: retrieval practice, spaced repetition, zone of proximal development
-- **Intrinsic motivation**: celebrates effort over achievement
+1. 🔨 **BUILD** — drag dots into equal groups
+2. 🐰 **JUMP** — Piko hops on a number line (+10, +5, +2)
+3. 🔮 **NEXT** — what's the next number?
+4. 🔍 **MISSING** — find the hidden number in the sequence
+5. 🕵️ **DETECTIVE** — what is Piko's rule?
 
-## Technology
+### Design Principles
 
-Single self-contained HTML file — no build step, no dependencies, works offline.
+- **Montessori-aligned**: child-led, discovery-based
+- **Cognitive science**: CPA progression (Concrete → Pictorial → Abstract)
+- **Systems thinking**: state, rule, transition, pattern — the real learning goal
+- **Intrinsic motivation**: celebrates reasoning, not "smart!"
+- **Zero friction**: no login, no ads, works offline, iPad-first
+
+### Technology
+
+Single self-contained HTML file — no build step, no dependencies.
 
 *Made with ❤️ for Aya*

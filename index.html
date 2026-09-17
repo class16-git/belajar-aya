@@ -2,802 +2,1652 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skip Counting dengan Aya 🌱</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Belajar Loncat dengan Piko! 🐰</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --cream: #FFF8F0;
-      --warm-brown: #8B6914;
-      --soft-green: #4CAF50;
-      --soft-blue: #5B9BD5;
-      --soft-orange: #F4A261;
-      --soft-pink: #E8A0BF;
-      --light-gray: #F5F0EB;
-      --text-dark: #3D2B1F;
-      --text-mid: #6B5B4F;
-      --shadow: 0 4px 20px rgba(0,0,0,0.08);
-      --radius: 20px;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #FFF9F0;
+      --warm-brown: #7C5E3C;
+      --soft-green: #5DB075;
+      --grass-green: #3D8B4E;
+      --sky-blue: #6BB8E0;
+      --deep-blue: #3A7BD5;
+      --soft-orange: #F2994A;
+      --soft-pink: #F06292;
+      --light: #FFF;
+      --shadow: 0 6px 24px rgba(0,0,0,0.10);
+      --radius: 24px;
+      --radius-sm: 16px;
+    }
 
     body {
-      font-family: 'Nunito', sans-serif;
+      font-family: 'Quicksand', sans-serif;
       background: var(--cream);
-      color: var(--text-dark);
-      min-height: 100vh;
-      padding: 20px;
-    }
-
-    /* ===== HEADER ===== */
-    header {
-      text-align: center;
-      padding: 30px 20px;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    header h1 {
-      font-family: 'Fredoka One', cursive;
-      font-size: clamp(2rem, 6vw, 3.2rem);
       color: var(--warm-brown);
-      margin-bottom: 8px;
+      min-height: 100dvh;
+      overflow-x: hidden;
+      touch-action: manipulation;
     }
 
-    header p {
-      font-size: 1.1rem;
-      color: var(--text-mid);
-      line-height: 1.6;
+    /* ===== ANIMATIONS ===== */
+    @keyframes bunnyHop {
+      0%   { transform: translateX(var(--from-x)) translateY(0) scaleY(1); }
+      30%  { transform: translateX(calc(var(--from-x) + 40%)) translateY(-60px) scaleY(1.1) scaleX(0.9); }
+      60%  { transform: translateX(calc(var(--from-x) + 70%)) translateY(-20px) scaleY(0.95); }
+      80%  { transform: translateX(calc(var(--from-x) + 90%)) translateY(0) scaleY(1.05); }
+      100% { transform: translateX(var(--to-x)) translateY(0) scaleY(1); }
     }
 
-    .emoji-row {
-      font-size: 2rem;
-      margin: 15px 0;
-      letter-spacing: 8px;
+    @keyframes dotDrop {
+      0%   { transform: scale(0) translateY(-20px); opacity: 0; }
+      60%  { transform: scale(1.2) translateY(0); opacity: 1; }
+      100% { transform: scale(1) translateY(0); opacity: 1; }
     }
 
-    /* ===== WHY SECTION ===== */
-    .why-section {
-      background: linear-gradient(135deg, #FFF0DC, #FFF8F0);
-      border: 3px solid var(--soft-orange);
-      border-radius: var(--radius);
-      padding: 28px;
-      max-width: 700px;
-      margin: 0 auto 30px;
+    @keyframes popIn {
+      0%   { transform: scale(0.6); opacity: 0; }
+      70%  { transform: scale(1.1); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes starBurst {
+      0%   { transform: scale(0) rotate(0deg); opacity: 1; }
+      100% { transform: scale(2) rotate(180deg); opacity: 0; }
+    }
+
+    @keyframes pulse {
+      0%,100% { transform: scale(1); }
+      50%      { transform: scale(1.08); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to   { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes shake {
+      0%,100% { transform: translateX(0); }
+      25%      { transform: translateX(-8px); }
+      75%      { transform: translateX(8px); }
+    }
+
+    @keyframes confettiFall {
+      0%   { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(360deg); opacity: 0.5; }
+    }
+
+    /* ===== SCREEN SYSTEM ===== */
+    .screen {
+      display: none;
+      min-height: 100dvh;
+      padding: 20px;
+      animation: slideUp 0.4s ease-out;
+    }
+    .screen.active { display: flex; flex-direction: column; align-items: center; }
+
+    /* ===== HOME ===== */
+    #home {
+      justify-content: center;
+      gap: 32px;
       text-align: center;
     }
 
-    .why-section h2 {
+    .home-logo {
       font-family: 'Fredoka One', cursive;
-      color: var(--soft-orange);
-      font-size: 1.6rem;
-      margin-bottom: 16px;
+      font-size: clamp(2rem, 8vw, 3.5rem);
+      color: var(--warm-brown);
+      line-height: 1.2;
     }
 
-    .why-section p {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: var(--text-dark);
+    .home-logo span { display: block; font-size: 0.6em; color: var(--soft-green); }
+
+    .piko-intro {
+      width: 120px;
+      height: 120px;
+      position: relative;
+      animation: pulse 2s infinite;
     }
 
-    .finger-row {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      margin: 20px 0;
-      flex-wrap: wrap;
+    .piko-intro .body {
+      width: 100px;
+      height: 90px;
+      background: #F5F5F5;
+      border-radius: 50px 50px 40px 40px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 3px solid #E0E0E0;
     }
 
-    .finger {
-      width: 38px;
-      height: 50px;
-      background: #FFE4B5;
-      border: 2px solid #DEB887;
-      border-radius: 8px 8px 12px 12px;
+    .piko-intro .head {
+      width: 80px;
+      height: 70px;
+      background: #F5F5F5;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 3px solid #E0E0E0;
+    }
+
+    .piko-intro .ear {
+      width: 22px;
+      height: 45px;
+      background: #F5F5F5;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      border: 3px solid #E0E0E0;
+    }
+
+    .piko-intro .ear.left { left: 20px; transform: rotate(-15deg); }
+    .piko-intro .ear.right { right: 20px; transform: rotate(15deg); }
+
+    .piko-intro .ear::after {
+      content: '';
+      width: 12px;
+      height: 30px;
+      background: #FFCDD2;
+      border-radius: 50%;
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .piko-intro .eye {
+      width: 10px;
+      height: 12px;
+      background: #333;
+      border-radius: 50%;
+      position: absolute;
+      top: 22px;
+    }
+
+    .piko-intro .eye.left { left: 22px; }
+    .piko-intro .eye.right { right: 22px; }
+
+    .piko-intro .nose {
+      width: 12px;
+      height: 10px;
+      background: #FFCDD2;
+      border-radius: 50%;
+      position: absolute;
+      top: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .piko-intro .mouth {
+      width: 20px;
+      height: 10px;
+      border-bottom: 3px solid #FFCDD2;
+      border-radius: 0 0 50% 50%;
+      position: absolute;
+      top: 44px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .home-subtitle {
       font-size: 1.1rem;
-      font-weight: 700;
+      color: var(--warm-brown);
+      opacity: 0.8;
+      font-weight: 600;
+    }
+
+    .home-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      max-width: 340px;
+    }
+
+    .btn {
+      padding: 18px 28px;
+      border: none;
+      border-radius: 50px;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.3rem;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      color: white;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.18);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--text-mid);
-      cursor: default;
-      transition: transform 0.2s;
+      gap: 10px;
+      width: 100%;
+      min-height: 64px;
+      touch-action: manipulation;
     }
 
-    .finger:hover { transform: scale(1.1); }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(0,0,0,0.22); }
+    .btn:active { transform: translateY(0) scale(0.97); }
 
-    .finger.counted {
-      background: var(--soft-green);
-      color: white;
-      border-color: #388E3C;
-    }
+    .btn-build  { background: var(--soft-orange); }
+    .btn-jump   { background: var(--sky-blue); }
+    .btn-next   { background: var(--soft-green); }
+    .btn-missing{ background: var(--soft-pink); }
+    .btn-detective { background: var(--deep-blue); }
 
-    /* ===== TOPIC SELECTOR ===== */
-    .topic-selector {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-    }
-
-    .topic-btn {
-      font-family: 'Fredoka One', cursive;
-      font-size: 1.3rem;
-      padding: 14px 28px;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-      color: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-
-    .topic-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
-    .topic-btn:active { transform: translateY(0); }
-
-    .topic-btn.by2  { background: var(--soft-blue); }
-    .topic-btn.by5  { background: var(--soft-orange); }
-    .topic-btn.by10 { background: var(--soft-green); }
-
-    .topic-btn.active.by2  { background: var(--soft-blue); box-shadow: 0 0 0 4px rgba(91,155,213,0.3); }
-    .topic-btn.active.by5  { background: var(--soft-orange); box-shadow: 0 0 0 4px rgba(244,162,97,0.3); }
-    .topic-btn.active.by10 { background: var(--soft-green); box-shadow: 0 0 0 4px rgba(76,175,80,0.3); }
-
-    /* ===== CONCRETE SECTION ===== */
-    .section-label {
-      text-align: center;
-      font-size: 0.85rem;
+    .btn-back {
+      background: rgba(255,255,255,0.6);
+      color: var(--warm-brown);
+      border: 2px solid rgba(124,94,60,0.2);
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1rem;
       font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--text-mid);
-      margin-bottom: 12px;
+      padding: 12px 24px;
+      border-radius: 50px;
+      min-height: 48px;
+      width: auto;
+      align-self: flex-start;
     }
 
-    .section-card {
-      background: white;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 28px;
-      max-width: 700px;
-      margin: 0 auto 30px;
+    /* ===== PROGRESS BAR ===== */
+    .progress-bar {
+      width: 100%;
+      max-width: 340px;
+      height: 10px;
+      background: rgba(124,94,60,0.12);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 8px;
     }
 
-    .section-card h3 {
+    .progress-fill {
+      height: 100%;
+      border-radius: 10px;
+      background: var(--soft-green);
+      transition: width 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* ===== JUMP SIZE SELECTOR ===== */
+    .jump-selector {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 16px 0;
+    }
+
+    .jump-btn {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 4px solid;
       font-family: 'Fredoka One', cursive;
-      font-size: 1.3rem;
-      margin-bottom: 20px;
+      font-size: 1.6rem;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      background: white;
+      touch-action: manipulation;
+    }
+
+    .jump-btn.by10 { border-color: var(--soft-green); color: var(--soft-green); }
+    .jump-btn.by5  { border-color: var(--soft-orange); color: var(--soft-orange); }
+    .jump-btn.by2  { border-color: var(--sky-blue); color: var(--sky-blue); }
+    .jump-btn:hover, .jump-btn.selected { transform: scale(1.1); }
+    .jump-btn.selected.by10 { background: var(--soft-green); color: white; box-shadow: 0 4px 14px rgba(93,176,117,0.4); }
+    .jump-btn.selected.by5  { background: var(--soft-orange); color: white; box-shadow: 0 4px 14px rgba(242,153,74,0.4); }
+    .jump-btn.selected.by2  { background: var(--sky-blue); color: white; box-shadow: 0 4px 14px rgba(107,184,224,0.4); }
+
+    /* ===== GAME CONTAINER ===== */
+    .game-area {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .game-title {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.6rem;
+      color: var(--warm-brown);
       text-align: center;
     }
 
-    /* Dot grid */
-    .dot-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-      margin: 20px 0;
+    .game-prompt {
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-align: center;
+      color: var(--warm-brown);
+      opacity: 0.85;
+      line-height: 1.5;
     }
 
-    .dot-group {
+    .rule-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--warm-brown);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    /* ===== BUILD STAGE ===== */
+    .build-zone {
+      width: 100%;
       display: flex;
-      gap: 6px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .dot-source {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 16px;
+      background: rgba(124,94,60,0.06);
+      border-radius: var(--radius);
+      border: 3px dashed rgba(124,94,60,0.2);
+      min-height: 80px;
+      width: 100%;
+      max-width: 340px;
     }
 
     .dot {
-      width: 44px;
-      height: 44px;
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
+      font-size: 1.3rem;
+      cursor: grab;
+      user-select: none;
+      transition: transform 0.15s;
+      touch-action: none;
+    }
+
+    .dot:active { cursor: grabbing; transform: scale(1.15); }
+    .dot.dragging { opacity: 0.5; }
+
+    .dot.src-dot {
+      background: rgba(242,153,74,0.2);
+      border: 3px solid var(--soft-orange);
+      color: var(--soft-orange);
+      font-weight: 700;
+    }
+
+    .dot.src-dot.by5 {
+      background: rgba(242,153,74,0.15);
+      border-color: var(--soft-orange);
+      color: var(--soft-orange);
+    }
+
+    .dot.src-dot.by2 {
+      background: rgba(107,184,224,0.15);
+      border-color: var(--sky-blue);
+      color: var(--sky-blue);
+    }
+
+    .dot.src-dot.by10 {
+      background: rgba(93,176,117,0.15);
+      border-color: var(--soft-green);
+      color: var(--soft-green);
+    }
+
+    .drop-zone {
+      min-height: 80px;
+      width: 100%;
+      max-width: 340px;
+      border-radius: var(--radius);
+      border: 4px dashed rgba(124,94,60,0.25);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 12px;
+      justify-content: center;
+      align-items: center;
+      transition: border-color 0.2s, background 0.2s;
+      touch-action: none;
+    }
+
+    .drop-zone.drag-over {
+      border-color: var(--soft-green);
+      background: rgba(93,176,117,0.08);
+    }
+
+    .drop-zone-label {
+      font-weight: 600;
+      color: var(--warm-brown);
+      opacity: 0.5;
+      font-size: 0.9rem;
+    }
+
+    .group-row {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .basket {
+      min-width: 72px;
+      min-height: 72px;
+      border-radius: var(--radius-sm);
+      border: 3px solid rgba(124,94,60,0.2);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 8px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background: rgba(255,255,255,0.6);
+    }
+
+    .basket .basket-label {
+      position: absolute;
+      bottom: -24px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--warm-brown);
+      opacity: 0.5;
+    }
+
+    .basket.filled {
+      border-color: var(--soft-green);
+      background: rgba(93,176,117,0.08);
+    }
+
+    .basket .dot {
+      width: 40px;
+      height: 40px;
+      font-size: 1rem;
+    }
+
+    .basket .dot.src-dot {
+      background: rgba(93,176,117,0.2);
+      border-color: var(--soft-green);
+      color: var(--soft-green);
+    }
+
+    .total-display {
+      font-family: 'Fredoka One', cursive;
+      font-size: 2rem;
+      color: var(--warm-brown);
+      text-align: center;
+    }
+
+    /* ===== JUMP STAGE ===== */
+    .number-line {
+      width: 100%;
+      overflow-x: auto;
+      padding: 20px 10px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .number-line-inner {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      position: relative;
+      min-width: max-content;
+      padding: 0 20px;
+    }
+
+    .num-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      min-width: 52px;
+    }
+
+    .num-label {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.3rem;
+      color: var(--warm-brown);
+      opacity: 0.6;
+      transition: opacity 0.3s, color 0.3s, transform 0.3s;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 12px;
+    }
+
+    .num-label.highlighted {
+      opacity: 1;
+      color: var(--sky-blue);
+      transform: scale(1.2);
+    }
+
+    .num-label.active {
+      opacity: 1;
+      color: var(--soft-green);
+      transform: scale(1.3);
+    }
+
+    .num-line-bar {
+      width: 3px;
+      height: 16px;
+      background: rgba(124,94,60,0.2);
+      border-radius: 2px;
+    }
+
+    .piko-bunny {
+      font-size: 2.5rem;
+      position: absolute;
+      transition: left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+      animation: none;
+    }
+
+    .piko-bunny.hopping {
+      animation: bunnyHop var(--hop-duration, 0.6s) ease-in-out;
+    }
+
+    .hop-arrow {
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background: transparent;
+      top: 50%;
+      left: 0;
+      pointer-events: none;
+    }
+
+    .jump-controls {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .jump-btn-action {
+      padding: 14px 28px;
+      background: var(--sky-blue);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-family: 'Fredoka One', cursive;
       font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(107,184,224,0.4);
+      transition: transform 0.15s;
+      touch-action: manipulation;
+    }
+
+    .jump-btn-action:hover { transform: scale(1.05); }
+    .jump-btn-action:active { transform: scale(0.95); }
+    .jump-btn-action:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+    /* ===== PATTERN / NEXT / MISSING ===== */
+    .pattern-display {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pattern-num {
+      min-width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.4rem;
+      color: var(--warm-brown);
+      background: rgba(124,94,60,0.08);
+      border: 3px solid rgba(124,94,60,0.15);
       cursor: pointer;
       transition: transform 0.15s, background 0.2s;
       user-select: none;
     }
 
-    .dot.inactive { background: #E8E0D5; color: transparent; }
-    .dot.inactive:hover { background: #D4C8B8; transform: scale(1.1); }
-    .dot.revealed { background: #C8E6C9; color: #2E7D32; }
-    .dot.revealed:hover { transform: scale(1.1); }
-
-    .dot.by2  { background: rgba(91,155,213,0.15); }
-    .dot.by5  { background: rgba(244,162,97,0.15); }
-    .dot.by10 { background: rgba(76,175,80,0.15); }
-
-    .dot.revealed.by2  { background: var(--soft-blue); color: white; }
-    .dot.revealed.by5  { background: var(--soft-orange); color: white; }
-    .dot.revealed.by10 { background: var(--soft-green); color: white; }
-
-    /* ===== PRACTICE SECTION ===== */
-    .practice-area {
-      text-align: center;
-    }
-
-    .sequence-display {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      margin: 20px 0;
-    }
-
-    .seq-num {
-      min-width: 52px;
-      height: 52px;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      font-weight: 800;
+    .pattern-num:hover { transform: scale(1.1); }
+    .pattern-num.given { background: rgba(93,176,117,0.15); border-color: var(--soft-green); color: var(--soft-green); }
+    .pattern-num.blank {
+      background: rgba(242,153,74,0.1);
+      border-color: var(--soft-orange);
+      border-style: dashed;
+      color: transparent;
       cursor: pointer;
-      transition: transform 0.15s;
     }
 
-    .seq-num:hover { transform: scale(1.1); }
+    .pattern-num.blank.selected {
+      background: rgba(242,153,74,0.2);
+      border-style: solid;
+      transform: scale(1.15);
+    }
 
-    .seq-num.known { background: #C8E6C9; color: #2E7D32; }
-    .seq-num.ask   { background: #FFF3CD; color: #856404; border: 3px dashed #FFC107; }
-    .seq-num.ask:hover { background: #FFE082; }
+    .choice-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-    .seq-num.by2  { background: rgba(91,155,213,0.12); }
-    .seq-num.by5  { background: rgba(244,162,97,0.12); }
-    .seq-num.by10 { background: rgba(76,175,80,0.12); }
-
-    .seq-num.known.by2  { background: var(--soft-blue); color: white; }
-    .seq-num.known.by5  { background: var(--soft-orange); color: white; }
-    .seq-num.known.by10 { background: var(--soft-green); color: white; }
-
-    .seq-num.ask.by2  { border-color: var(--soft-blue); color: var(--soft-blue); }
-    .seq-num.ask.by5  { border-color: var(--soft-orange); color: var(--soft-orange); }
-    .seq-num.ask.by10 { border-color: var(--soft-green); color: var(--soft-green); }
-
-    /* Input style */
-    .number-input {
+    .choice-btn {
       width: 72px;
-      height: 52px;
-      border-radius: 14px;
-      border: 3px dashed;
-      text-align: center;
-      font-size: 1.3rem;
-      font-family: 'Nunito', sans-serif;
-      font-weight: 800;
-      outline: none;
-      transition: border-color 0.2s, background 0.2s;
+      height: 72px;
+      border-radius: 20px;
+      border: 3px solid;
+      background: white;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s;
+      touch-action: manipulation;
     }
 
-    .number-input.by2  { border-color: var(--soft-blue); color: var(--soft-blue); background: rgba(91,155,213,0.05); }
-    .number-input.by5  { border-color: var(--soft-orange); color: var(--soft-orange); background: rgba(244,162,97,0.05); }
-    .number-input.by10 { border-color: var(--soft-green); color: var(--soft-green); background: rgba(76,175,80,0.05); }
+    .choice-btn.by10 { border-color: var(--soft-green); color: var(--soft-green); }
+    .choice-btn.by5  { border-color: var(--soft-orange); color: var(--soft-orange); }
+    .choice-btn.by2  { border-color: var(--sky-blue); color: var(--sky-blue); }
 
-    .number-input:focus { outline: none; }
-    .number-input.correct { border-color: #2E7D32; background: #C8E6C9; color: #2E7D32; border-style: solid; }
-    .number-input.wrong { border-color: #C62828; background: #FFCDD2; color: #C62828; animation: shake 0.4s; }
+    .choice-btn:hover { transform: scale(1.1); }
+    .choice-btn:active { transform: scale(0.95); }
+    .choice-btn.selected { transform: scale(1.15); }
+    .choice-btn.selected.by10 { background: var(--soft-green); color: white; box-shadow: 0 4px 14px rgba(93,176,117,0.4); }
+    .choice-btn.selected.by5  { background: var(--soft-orange); color: white; box-shadow: 0 4px 14px rgba(242,153,74,0.4); }
+    .choice-btn.selected.by2  { background: var(--sky-blue); color: white; box-shadow: 0 4px 14px rgba(107,184,224,0.4); }
 
-    @keyframes shake {
-      0%,100%{ transform: translateX(0); }
-      25% { transform: translateX(-6px); }
-      75% { transform: translateX(6px); }
-    }
+    .choice-btn.correct { background: var(--soft-green) !important; color: white !important; border-color: var(--soft-green) !important; }
+    .choice-btn.wrong { animation: shake 0.4s; border-color: #E53935 !important; color: #E53935 !important; }
 
-    /* ===== CELEBRATION ===== */
-    .celebration {
-      display: none;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .celebration.show { display: block; animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); }
-
-    @keyframes popIn {
-      0% { transform: scale(0.5); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-
-    .celebration .stars {
-      font-size: 2.5rem;
-      margin-bottom: 8px;
-    }
-
-    .celebration p {
+    /* ===== RULE DETECTIVE ===== */
+    .rule-question {
       font-family: 'Fredoka One', cursive;
       font-size: 1.4rem;
+      text-align: center;
       color: var(--warm-brown);
+      margin: 12px 0;
     }
 
-    .reset-btn {
-      margin-top: 16px;
-      padding: 12px 28px;
-      background: var(--warm-brown);
+    /* ===== FEEDBACK ===== */
+    .feedback {
+      text-align: center;
+      min-height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .feedback-text {
+      font-weight: 700;
+      font-size: 1.2rem;
+      animation: popIn 0.4s ease-out;
+    }
+
+    .feedback-text.success { color: var(--soft-green); }
+    .feedback-text.hint   { color: var(--warm-brown); opacity: 0.7; font-size: 1rem; }
+    .feedback-text.wrong  { color: var(--soft-orange); }
+
+    .stars-container {
+      font-size: 2rem;
+      animation: popIn 0.3s ease-out;
+    }
+
+    .next-btn {
+      margin-top: 8px;
+      padding: 14px 32px;
+      background: var(--soft-green);
       color: white;
       border: none;
       border-radius: 50px;
-      font-family: 'Nunito', sans-serif;
-      font-size: 1rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-
-    .reset-btn:hover { transform: scale(1.05); }
-
-    /* ===== WHY BUILDS ON THIS ===== */
-    .why-builds {
-      background: linear-gradient(135deg, #E8F5E9, #FFF8F0);
-      border-radius: var(--radius);
-      padding: 24px;
-      margin-top: 20px;
-    }
-
-    .why-builds h4 {
       font-family: 'Fredoka One', cursive;
-      color: var(--soft-green);
-      margin-bottom: 10px;
       font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(93,176,117,0.35);
+      transition: transform 0.15s;
+      touch-action: manipulation;
     }
 
-    .why-builds p {
-      font-size: 0.95rem;
-      color: var(--text-mid);
-      line-height: 1.6;
-    }
+    .next-btn:hover { transform: scale(1.05); }
+    .next-btn:active { transform: scale(0.97); }
 
-    .math-fact {
-      display: inline-block;
-      background: rgba(76,175,80,0.12);
-      border: 2px solid var(--soft-green);
-      border-radius: 12px;
-      padding: 8px 16px;
-      margin: 8px 4px;
-      font-weight: 700;
-      color: #2E7D32;
-    }
-
-    /* ===== PROGRESS ===== */
-    .progress-bar-wrap {
-      max-width: 700px;
-      margin: 0 auto 30px;
-      background: #E0D8CF;
-      border-radius: 20px;
-      height: 14px;
-      overflow: hidden;
-    }
-
-    .progress-bar {
+    /* ===== CONFETTI ===== */
+    .confetti-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
       height: 100%;
-      border-radius: 20px;
-      transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-      background: linear-gradient(90deg, var(--soft-green), #81C784);
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 9999;
     }
 
-    .progress-label {
-      text-align: center;
+    .confetti-piece {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: -20px;
+      animation: confettiFall linear forwards;
+    }
+
+    /* ===== PARENT VIEW TOGGLE ===== */
+    .parent-toggle {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.8);
+      border: 2px solid rgba(124,94,60,0.2);
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .parent-panel {
+      display: none;
+      position: fixed;
+      top: 70px;
+      right: 16px;
+      background: white;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      padding: 16px;
+      z-index: 100;
+      min-width: 260px;
+      animation: popIn 0.3s ease-out;
+    }
+
+    .parent-panel.show { display: block; }
+
+    .parent-panel h4 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 1rem;
+      margin-bottom: 12px;
+      color: var(--warm-brown);
+    }
+
+    .progress-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(124,94,60,0.1);
       font-size: 0.85rem;
-      color: var(--text-mid);
-      margin-bottom: 8px;
       font-weight: 600;
     }
 
-    /* ===== FOOTER ===== */
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: var(--text-mid);
-      font-size: 0.85rem;
+    .progress-row:last-child { border-bottom: none; }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
     }
 
-    footer a { color: var(--soft-green); text-decoration: none; }
-
-    /* ===== HIDDEN SECTIONS ===== */
-    .learning-section { display: none; }
-    .learning-section.active { display: block; }
+    .status-strong   { background: var(--soft-green); }
+    .status-learning { background: var(--soft-orange); }
+    .status-new      { background: #ccc; }
 
     /* ===== RESPONSIVE ===== */
-    @media (max-width: 500px) {
-      .dot { width: 36px; height: 36px; font-size: 0.95rem; }
-      .seq-num, .number-input { min-width: 44px; height: 44px; font-size: 1rem; }
-      .finger { width: 30px; height: 42px; font-size: 0.9rem; }
-      .topic-btn { font-size: 1.1rem; padding: 12px 20px; }
+    @media (max-width: 480px) {
+      .num-cell { min-width: 44px; }
+      .num-label { font-size: 1.1rem; }
+      .dot { width: 46px; height: 46px; font-size: 1.1rem; }
+      .btn { font-size: 1.1rem; padding: 14px 20px; }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="emoji-row">🌱 🔢 ✋</div>
-  <h1>Skip Counting!</h1>
-  <p>Belajar menghitung dengan cara seru untuk Aya 💛</p>
-</header>
+<!-- Parent Toggle -->
+<button class="parent-toggle" onclick="toggleParentPanel()">👤</button>
+<div class="parent-panel" id="parent-panel">
+  <h4>📊 Progress Aya</h4>
+  <div id="parent-stats"></div>
+</div>
 
-<!-- WHY: Why skip counting matters -->
-<div class="why-section">
-  <h2>🤔 Kenapa Harus Skip Counting?</h2>
-  <p>
-    Aya, coba hitung jari kamu satu-satu…
-  </p>
-  <div class="finger-row" id="finger-demo">
-    <!-- Filled by JS -->
-  </div>
-  <p>
-    Tapi kalau kita hitung <strong>2-2</strong>, lebih cepat kan?<br>
-    Atau kalau kita hitung <strong>5-5</strong> — itu jumlah jari di SATU tangan!<br>
-    <em>Skip counting = jalan pintas menghitung!</em>
-  </p>
-  <div class="why-builds">
-    <h4>🧠 Kenapa ini penting?</h4>
-    <p>
-      Skip counting adalah dasar dari <strong>perkalian</strong> (×).<br>
-      Menghitung 2, 4, 6, 8… itu sama artinya dengan 1×2, 2×2, 3×2, 4×2…
-    </p>
-    <div>
-      <span class="math-fact">2×1=2</span>
-      <span class="math-fact">2×2=4</span>
-      <span class="math-fact">2×3=6</span>
-      <span class="math-fact">2×4=8</span>
-      <span class="math-fact">2×5=10</span>
+<!-- ===== HOME SCREEN ===== -->
+<div class="screen active" id="home">
+  <div class="piko-intro">
+    <div class="head">
+      <div class="ear left"></div>
+      <div class="ear right"></div>
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="nose"></div>
+      <div class="mouth"></div>
     </div>
-    <p style="margin-top:8px; font-size:0.85rem;">
-      🌟 <em>Skip counting adalah kunci perkalian! Ayo lihat bagian "Rahasia Aya" nanti!</em>
-    </p>
+    <div class="body"></div>
+  </div>
+
+  <div class="home-logo">
+    Belajar Loncat!<br>
+    <span>dengan Piko si Kelinci 🐰</span>
+  </div>
+
+  <p class="home-subtitle">Ayo jelajahi pola angka!</p>
+
+  <div class="home-buttons">
+    <button class="btn btn-build"  onclick="startGame('build')">🔨 Buat Kelompok</button>
+    <button class="btn btn-jump"   onclick="startGame('jump')">🐰 Loncat Baris Angka</button>
+    <button class="btn btn-next"   onclick="startGame('next')">🔮 Apa Angka Berikutnya?</button>
+    <button class="btn btn-missing" onclick="startGame('missing')">🔍 Angka Hilang</button>
+    <button class="btn btn-detective" onclick="startGame('detective')">🕵️ Aya Detektif Aturan</button>
   </div>
 </div>
 
-<!-- Progress -->
-<div class="progress-label" id="progress-label">Ayo mulai! Pilih angka berapa!</div>
-<div class="progress-bar-wrap"><div class="progress-bar" id="progress-bar" style="width:0%"></div></div>
+<!-- ===== BUILD SCREEN ===== -->
+<div class="screen" id="screen-build">
+  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
+  <div class="game-area">
+    <div class="game-title">🔨 Buat Kelompok Sama</div>
+    <p class="game-prompt" id="build-prompt">Seret titik ke dalam keranjang!</p>
 
-<!-- Topic Selector -->
-<div class="topic-selector">
-  <button class="topic-btn by2" onclick="selectTopic(2)" id="btn-2">Loncat 2 🟦</button>
-  <button class="topic-btn by5" onclick="selectTopic(5)" id="btn-5">Loncat 5 🟧</button>
-  <button class="topic-btn by10" onclick="selectTopic(10)" id="btn-10">Loncat 10 🟩</button>
+    <div class="jump-selector">
+      <button class="jump-btn by10 selected" onclick="selectBuildSize(10)">+10</button>
+      <button class="jump-btn by5"  onclick="selectBuildSize(5)">+5</button>
+      <button class="jump-btn by2"  onclick="selectBuildSize(2)">+2</button>
+    </div>
+
+    <div class="progress-bar"><div class="progress-fill" id="build-progress" style="width:0%"></div></div>
+
+    <div class="group-row" id="baskets-row"></div>
+
+    <div class="drop-zone" id="drop-zone">
+      <span class="drop-zone-label">Seret titik ke sini</span>
+    </div>
+
+    <div class="total-display" id="build-total">Jumlah: 0</div>
+
+    <div class="feedback" id="build-feedback"></div>
+  </div>
 </div>
 
-<!-- ========== LEARNING SECTION (hidden until topic selected) ========== -->
-<div class="learning-section" id="learning-section">
+<!-- ===== JUMP SCREEN ===== -->
+<div class="screen" id="screen-jump">
+  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
+  <div class="game-area">
+    <div class="game-title">🐰 Loncat Baris Angka</div>
+    <p class="game-prompt">Piko melompat berapa langkah?</p>
 
-  <!-- ===== STEP 1: CONCRETE — dots she can click ===== -->
-  <div class="section-card" id="step-concrete">
-    <div class="section-label">Langkah 1 — Klik Titik!</div>
-    <h3 id="concrete-title">Klik titik untuk lihat polanya!</h3>
-    <p id="concrete-subtitle" style="text-align:center; color:var(--text-mid); font-size:0.95rem; margin-bottom:16px;">
-      Tekan tombol nomor di atas untuk pilih lompatan!
-    </p>
-    <div class="dot-grid" id="dot-grid">
-      <!-- Filled by JS -->
+    <div class="jump-selector">
+      <button class="jump-btn by10 selected" onclick="selectJumpSize(10)">+10</button>
+      <button class="jump-btn by5"  onclick="selectJumpSize(5)">+5</button>
+      <button class="jump-btn by2"  onclick="selectJumpSize(2)">+2</button>
     </div>
-    <p id="concrete-hint" style="text-align:center; color:var(--text-mid); font-size:0.9rem; margin-top:12px;">
-      💡 Klik titik-titik di atas untuk lihat angkanya!
-    </p>
+
+    <div class="rule-badge" id="jump-rule">
+      <span>👣</span> <span id="rule-num">10</span>
+    </div>
+
+    <div class="progress-bar"><div class="progress-fill" id="jump-progress" style="width:0%"></div></div>
+
+    <div class="number-line" id="number-line"></div>
+
+    <div class="jump-controls">
+      <button class="jump-btn-action" onclick="pikoJump()" id="jump-btn">Loncat! 🐰</button>
+      <button class="jump-btn-action" onclick="resetPiko()">Mulai Ulang 🔄</button>
+    </div>
+
+    <div class="feedback" id="jump-feedback"></div>
   </div>
-
-  <!-- ===== STEP 2: PICTORIAL — complete the sequence ===== -->
-  <div class="section-card" id="step-practice">
-    <div class="section-label">Langkah 2 — Lengkapi!</div>
-    <h3>Ayo isi angka yang kosong! 🎯</h3>
-    <div class="practice-area">
-      <div class="sequence-display" id="sequence-display">
-        <!-- Filled by JS -->
-      </div>
-      <p id="score-display" style="margin-top:12px; font-weight:700; color:var(--text-mid);">
-        Benar: <span id="score">0</span> / <span id="total">10</span>
-      </p>
-    </div>
-    <div class="celebration" id="celebration">
-      <div class="stars">⭐ 🌟 ⭐</div>
-      <p id="celebration-text">Hebat sekali, Aya!</p>
-      <button class="reset-btn" onclick="resetPractice()">Coba Lagi 🔄</button>
-    </div>
-  </div>
-
-  <!-- ===== STEP 3: ABSTRACT — Aya's secret method ===== -->
-  <div class="section-card">
-    <div class="section-label">Rahasia Aya ✨</div>
-    <h3>Cara Aya Hitung Perkalian</h3>
-    <p style="text-align:center; color:var(--text-mid); margin-bottom:16px; line-height:1.6;">
-      Aya, sekarang kamu tahu kenapa skip counting itu penting.<br>
-      Ini satu cara menghitung perkalian — mungkin kamu punya caramu sendiri juga!
-    </p>
-
-    <div style="background:#FFF8E1; border-radius:16px; padding:20px; margin:16px 0; border:2px solid #FFD54F;">
-      <div style="font-weight:800; margin-bottom:8px; color:#F57F17;">
-        📌 Contoh: 66 × 5 = ?
-      </div>
-      <p style="font-size:1rem; line-height:1.8;">
-        Aya mungkin pikir: <strong>"5 itu setengah dari 10!"</strong><br>
-        Jadi: <strong>(66 × 10) ÷ 2 = 660 ÷ 2 = 330</strong>
-      </p>
-    </div>
-
-    <div style="background:#E8F5E9; border-radius:16px; padding:20px; margin:16px 0; border:2px solid #81C784;">
-      <div style="font-weight:800; margin-bottom:8px; color:#2E7D32;">
-        📌 Contoh: 66 × 15 = ?
-      </div>
-      <p style="font-size:1rem; line-height:1.8;">
-        Aya mungkin pikir: <strong>"15 itu 10 + 5"</strong><br>
-        Jadi: <strong>(66×10) + (66×5) = 660 + 330 = 990</strong>
-      </p>
-    </div>
-
-    <p style="text-align:center; color:var(--text-mid); font-size:0.9rem; margin-top:12px;">
-      🌟 <em>Perkalian besar = perkalian kecil yang digabung! Ayo cari tahu caramu sendiri!</em>
-    </p>
-  </div>
-
 </div>
 
-<footer>
-  Dibuat dengan ❤️ untuk Aya<br>
-  Prinsip: Montessori + Cognitive Science | <a href="https://github.com/class16-git/belajar-aya" target="_blank">GitHub</a>
-</footer>
+<!-- ===== NEXT NUMBER SCREEN ===== -->
+<div class="screen" id="screen-next">
+  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
+  <div class="game-area">
+    <div class="game-title">🔮 Apa Angka Berikutnya?</div>
+    <p class="game-prompt" id="next-prompt">Piko berhenti di sini:</p>
+
+    <div class="jump-selector">
+      <button class="jump-btn by10 selected" onclick="selectNextSize(10)">+10</button>
+      <button class="jump-btn by5"  onclick="selectNextSize(5)">+5</button>
+      <button class="jump-btn by2"  onclick="selectNextSize(2)">+2</button>
+    </div>
+
+    <div class="progress-bar"><div class="progress-fill" id="next-progress" style="width:0%"></div></div>
+
+    <div class="pattern-display" id="next-display"></div>
+
+    <p class="game-prompt" style="margin-top:12px;">Pilih jawaban:</p>
+    <div class="choice-row" id="next-choices"></div>
+
+    <div class="feedback" id="next-feedback"></div>
+  </div>
+</div>
+
+<!-- ===== MISSING NUMBER SCREEN ===== -->
+<div class="screen" id="screen-missing">
+  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
+  <div class="game-area">
+    <div class="game-title">🔍 Angka Hilang!</div>
+    <p class="game-prompt">Ada angka yang hilang di tengah. Coba isi!</p>
+
+    <div class="jump-selector">
+      <button class="jump-btn by10 selected" onclick="selectMissingSize(10)">+10</button>
+      <button class="jump-btn by5"  onclick="selectMissingSize(5)">+5</button>
+      <button class="jump-btn by2"  onclick="selectMissingSize(2)">+2</button>
+    </div>
+
+    <div class="progress-bar"><div class="progress-fill" id="missing-progress" style="width:0%"></div></div>
+
+    <div class="pattern-display" id="missing-display"></div>
+
+    <p class="game-prompt" style="margin-top:12px;">Pilih angka yang hilang:</p>
+    <div class="choice-row" id="missing-choices"></div>
+
+    <div class="feedback" id="missing-feedback"></div>
+  </div>
+</div>
+
+<!-- ===== RULE DETECTIVE SCREEN ===== -->
+<div class="screen" id="screen-detective">
+  <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
+  <div class="game-area">
+    <div class="game-title">🕵️ Aya Detektif Aturan</div>
+    <p class="game-prompt" id="detective-prompt">Piko melompat dengan aturan apa?</p>
+
+    <div class="progress-bar"><div class="progress-fill" id="detective-progress" style="width:0%"></div></div>
+
+    <div class="pattern-display" id="detective-display"></div>
+
+    <p class="rule-question" id="detective-question">Aturan Piko:</p>
+
+    <div class="choice-row" id="detective-choices"></div>
+
+    <div class="feedback" id="detective-feedback"></div>
+  </div>
+</div>
+
+<!-- Confetti container -->
+<div class="confetti-container" id="confetti"></div>
 
 <script>
 // ===== STATE =====
-let currentTopic = null;  // 2, 5, or 10
-let score = 0;
-let totalAttempts = 0;
-const MAX_PRACTICE = 10;
+const state = {
+  build: { size: 10, baskets: 0, dotsInBaskets: 0, targetGroups: 3 },
+  jump:  { size: 10, pikoPos: 0 },
+  next:  { size: 10, score: 0, rounds: 0, seq: [] },
+  missing: { size: 10, score: 0, rounds: 0 },
+  detective: { score: 0, rounds: 0 }
+};
 
-// ===== FINGER DEMO =====
-function initFingerDemo() {
-  const row = document.getElementById('finger-demo');
+// Load saved progress
+function loadProgress() {
+  try {
+    const saved = localStorage.getItem('belajar-aya-v2');
+    if (saved) return JSON.parse(saved);
+  } catch(e) {}
+  return {};
+}
+function saveProgress(data) {
+  try { localStorage.setItem('belajar-aya-v2', JSON.stringify(data)); } catch(e) {}
+}
+
+// ===== SCREEN NAVIGATION =====
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(name === 'home' ? 'home' : 'screen-' + name).classList.add('active');
+  window.scrollTo(0, 0);
+}
+function startGame(name) {
+  showScreen(name);
+  if (name === 'build') initBuild();
+  if (name === 'jump') initJump();
+  if (name === 'next') initNext();
+  if (name === 'missing') initMissing();
+  if (name === 'detective') initDetective();
+}
+
+// ===== BUILD: DRAG DOTS INTO BASKETS =====
+let buildDragged = null;
+
+function initBuild() {
+  const size = state.build.size;
+  state.build.baskets = 0;
+  state.build.dotsInBaskets = 0;
+
+  // Build baskets
+  const row = document.getElementById('baskets-row');
   row.innerHTML = '';
-  for (let i = 1; i <= 10; i++) {
-    const f = document.createElement('div');
-    f.className = 'finger';
-    f.textContent = i;
-    f.id = 'fing-' + i;
-    f.addEventListener('click', () => {
-      if (f.classList.contains('counted')) return;
-      // Count up to this finger
-      for (let j = 1; j <= i; j++) {
-        document.getElementById('fing-' + j).classList.add('counted');
-        document.getElementById('fing-' + j).textContent = j;
-      }
-    });
-    row.appendChild(f);
-  }
-}
-
-// ===== TOPIC SELECTION =====
-function selectTopic(n) {
-  // Update buttons
-  document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('btn-' + n).classList.add('active');
-  currentTopic = n;
-
-  // Show learning section
-  document.getElementById('learning-section').classList.add('active');
-
-  // Update concrete section
-  updateConcrete();
-  // Update practice
-  resetPractice();
-
-  // Scroll to section
-  document.getElementById('learning-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-// ===== CONCRETE: DOT GRID =====
-function updateConcrete() {
-  if (!currentTopic) return;
-  const n = currentTopic;
-  const grid = document.getElementById('dot-grid');
-
-  const titles = {
-    2: { main: '🟦 Hitung 2-2!', sub: 'Klik titik untuk lihat angkanya. Perhatikan polanya!' },
-    5: { main: '🟧 Hitung 5-5!', sub: 'Lima jari di satu tangan! Klik titik untuk lihat polanya!' },
-    10: { main: '🟩 Hitung 10-10!', sub: 'Sepuluh jari di dua tangan! Klik titik untuk lihat polanya!' }
-  };
-
-  document.getElementById('concrete-title').textContent = titles[n].main;
-  document.getElementById('concrete-subtitle').textContent = titles[n].sub;
-
-  // Build dot grid — n groups of n dots
-  grid.innerHTML = '';
-  const totalDots = n * 5; // 5 groups
-
-  for (let g = 0; g < 5; g++) {
-    const group = document.createElement('div');
-    group.className = 'dot-group';
-
-    for (let d = 0; d < n; d++) {
-      const dotNum = g * n + d + 1;
-      const dot = document.createElement('div');
-      dot.className = `dot inactive by${n}`;
-      dot.textContent = dotNum;
-      dot.addEventListener('click', () => revealDot(dot, dotNum, n));
-      group.appendChild(dot);
-    }
-    grid.appendChild(group);
-  }
-}
-
-function revealDot(dot, num, topic) {
-  if (dot.classList.contains('revealed')) return;
-  dot.classList.remove('inactive');
-  dot.classList.add('revealed');
-  dot.textContent = num;
-}
-
-// ===== PRACTICE: FILL IN THE BLANKS =====
-function resetPractice() {
-  score = 0;
-  totalAttempts = 0;
-  document.getElementById('score').textContent = score;
-  document.getElementById('total').textContent = MAX_PRACTICE;
-  document.getElementById('celebration').classList.remove('show');
-  buildSequence();
-  updateProgress();
-}
-
-function buildSequence() {
-  if (!currentTopic) return;
-  const n = currentTopic;
-  const container = document.getElementById('sequence-display');
-  container.innerHTML = '';
-
-  const nGroups = Math.ceil(MAX_PRACTICE / n);
-  let blanks = [];
-
-  // Generate sequence: e.g. for n=2: [2,4,6,8,10,12,14,16,18,20]
-  const sequence = [];
-  for (let i = 1; i <= MAX_PRACTICE; i++) {
-    sequence.push(i * n);
+  for (let i = 0; i < state.build.targetGroups; i++) {
+    const b = document.createElement('div');
+    b.className = 'basket';
+    b.dataset.count = '0';
+    b.dataset.target = size;
+    const lbl = document.createElement('span');
+    lbl.className = 'basket-label';
+    b.appendChild(lbl);
+    row.appendChild(b);
   }
 
-  // Decide which to blank out (interleaved: not adjacent)
-  // Space out blanks so it's not too hard
-  const blankPositions = new Set();
-  const blankInterval = Math.max(2, Math.floor(n * 1.5));
-  for (let i = blankInterval - 1; i < sequence.length; i += blankInterval) {
-    blankPositions.add(i);
+  // Build dot source
+  const dropZone = document.getElementById('drop-zone');
+  dropZone.innerHTML = '';
+  for (let i = 0; i < size * state.build.targetGroups; i++) {
+    const dot = makeDot(i + 1);
+    dropZone.appendChild(dot);
   }
 
-  // Make sure at least 3 blanks for good practice
-  while (blankPositions.size < 3) {
-    const r = Math.floor(Math.random() * sequence.length);
-    if (!blankPositions.has(r)) blankPositions.add(r);
-  }
+  updateBuildTotal();
+  clearFeedback('build');
+}
 
-  blanks = Array.from(blankPositions);
+function makeDot(num, cls = '') {
+  const d = document.createElement('div');
+  d.className = 'dot src-dot ' + cls;
+  d.textContent = num;
+  d.draggable = false;
+  d.style.animationDelay = (num * 30) + 'ms';
+  d.style.animation = 'dotDrop 0.4s ease-out backwards';
 
-  blanks.forEach(pos => {
-    const val = sequence[pos];
-    const cell = document.createElement('div');
-    cell.style.display = 'flex';
-    cell.style.flexDirection = 'column';
-    cell.style.alignItems = 'center';
-    cell.style.gap = '4px';
+  // Touch + mouse drag
+  let startX, startY, origParent;
 
-    const input = document.createElement('input');
-    input.type = 'number';
-    input.className = `number-input by${n}`;
-    input.placeholder = '?';
-    input.min = 1;
-    input.max = 999;
-    input.dataset.answer = val;
-    input.dataset.pos = pos;
+  d.addEventListener('pointerdown', (e) => {
+    e.preventDefault();
+    startX = e.clientX;
+    startY = e.clientY;
+    origParent = d.parentElement;
+    d.classList.add('dragging');
+    d.setPointerCapture(e.pointerId);
+  });
 
-    const checkBtn = document.createElement('button');
-    checkBtn.textContent = '✓';
-    checkBtn.style.cssText = 'width:36px;height:36px;border-radius:50%;border:none;background:#388E3C;color:white;font-size:1.1rem;cursor:pointer;font-weight:700;';
-    checkBtn.addEventListener('click', () => checkAnswer(input));
+  d.addEventListener('pointermove', (e) => {
+    if (!d.classList.contains('dragging')) return;
+    const dx = e.clientX - startX;
+    const dy = e.clientY - startY;
+    d.style.position = 'fixed';
+    d.style.left = (e.clientX - 26) + 'px';
+    d.style.top  = (e.clientY - 26) + 'px';
+    d.style.zIndex = '1000';
+    d.style.pointerEvents = 'none';
 
-    cell.appendChild(input);
-    cell.appendChild(checkBtn);
-    container.appendChild(cell);
-
-    input.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') checkAnswer(input);
-      if (e.key === 'ArrowRight') {
-        const all = container.querySelectorAll('input');
-        const idx = Array.from(all).indexOf(input);
-        if (idx < all.length - 1) all[idx + 1].focus();
+    // Highlight basket
+    document.querySelectorAll('.basket').forEach(b => {
+      const r = b.getBoundingClientRect();
+      if (e.clientX >= r.left && e.clientX <= r.right &&
+          e.clientY >= r.top  && e.clientY <= r.bottom) {
+        b.style.borderColor = 'var(--soft-green)';
+        b.style.background = 'rgba(93,176,117,0.12)';
+      } else {
+        b.style.borderColor = '';
+        b.style.background = '';
       }
     });
   });
 
-  // Fill in known numbers
-  for (let i = 0; i < sequence.length; i++) {
-    if (blankPositions.has(i)) continue;
-    const num = document.createElement('div');
-    num.className = `seq-num known by${n}`;
-    num.textContent = sequence[i];
-    container.appendChild(num);
+  d.addEventListener('pointerup', (e) => {
+    d.classList.remove('dragging');
+    d.style.position = '';
+    d.style.left = '';
+    d.style.top = '';
+    d.style.zIndex = '';
+    d.style.pointerEvents = '';
+
+    // Find target basket
+    let placed = false;
+    document.querySelectorAll('.basket').forEach(b => {
+      b.style.borderColor = '';
+      b.style.background = '';
+      const r = b.getBoundingClientRect();
+      if (e.clientX >= r.left && e.clientX <= r.right &&
+          e.clientY >= r.top  && e.clientY <= r.bottom) {
+        // Place dot in basket
+        const newDot = makeDot(parseInt(d.textContent));
+        b.insertBefore(newDot, b.firstChild);
+        const count = parseInt(b.dataset.count) + 1;
+        b.dataset.count = count;
+        b.querySelector('.basket-label').textContent = count + '/' + size;
+        d.remove();
+        placed = true;
+
+        if (count === size) {
+          b.classList.add('filled');
+        }
+        state.build.dotsInBaskets++;
+        updateBuildTotal();
+        checkBuildComplete();
+      }
+    });
+
+    if (!placed) return;
+  });
+
+  return d;
+}
+
+function updateBuildTotal() {
+  const total = state.build.dotsInBaskets;
+  document.getElementById('build-total').textContent = 'Jumlah: ' + total;
+
+  const pct = Math.min(100, (total / (state.build.size * state.build.targetGroups)) * 100);
+  document.getElementById('build-progress').style.width = pct + '%';
+}
+
+function checkBuildComplete() {
+  const allFilled = [...document.querySelectorAll('.basket')].every(b => parseInt(b.dataset.count) >= state.build.size);
+  if (allFilled) {
+    showFeedback('build', 'Hebat! Semua kelompok lengkap! 🌟', 'success');
+    confetti();
+
+    const p = loadProgress();
+    p.build = p.build || {};
+    p.build[state.build.size] = (p.build[state.build.size] || 0) + 1;
+    saveProgress(p);
+
+    setTimeout(() => {
+      state.build.baskets = 0;
+      state.build.dotsInBaskets = 0;
+      initBuild();
+    }, 2500);
   }
 }
 
-function checkAnswer(input) {
-  const answer = parseInt(input.value);
-  const correct = parseInt(input.dataset.answer);
+function selectBuildSize(n) {
+  document.querySelectorAll('#screen-build .jump-btn').forEach(b => b.classList.remove('selected'));
+  document.querySelector(`#screen-build .jump-btn.by${n}`).classList.add('selected');
+  state.build.size = n;
+  initBuild();
+}
 
-  if (isNaN(answer)) {
-    input.focus();
+// ===== JUMP: PIKO ON NUMBER LINE =====
+function initJump() {
+  state.jump.pikoPos = 0;
+  state.jump.size = state.jump.size; // keep current
+  buildNumberLine();
+  updatePikoPosition(false);
+  clearFeedback('jump');
+  document.getElementById('jump-feedback').innerHTML = '';
+}
+
+function buildNumberLine() {
+  const container = document.getElementById('number-line');
+  const inner = document.createElement('div');
+  inner.className = 'number-line-inner';
+  inner.style.position = 'relative';
+
+  // Determine range based on jump size
+  const maxVal = state.jump.size * 10;
+  const step = state.jump.size === 10 ? 10 : state.jump.size === 5 ? 5 : 2;
+
+  for (let i = 0; i <= maxVal; i += step) {
+    const cell = document.createElement('div');
+    cell.className = 'num-cell';
+
+    const label = document.createElement('div');
+    label.className = 'num-label';
+    label.textContent = i;
+    label.dataset.val = i;
+    label.onclick = () => {
+      document.querySelectorAll('.num-label').forEach(l => l.classList.remove('highlighted'));
+      label.classList.add('highlighted');
+    };
+
+    const bar = document.createElement('div');
+    bar.className = 'num-line-bar';
+
+    cell.appendChild(label);
+    cell.appendChild(bar);
+    inner.appendChild(cell);
+  }
+
+  // Piko bunny element
+  const piko = document.createElement('div');
+  piko.className = 'piko-bunny';
+  piko.id = 'piko';
+  piko.textContent = '🐰';
+  piko.onclick = () => pikoJump();
+  inner.appendChild(piko);
+
+  container.innerHTML = '';
+  container.appendChild(inner);
+
+  document.getElementById('rule-num').textContent = state.jump.size;
+}
+
+function updatePikoPosition(animate = true) {
+  const piko = document.getElementById('piko');
+  if (!piko) return;
+
+  // Calculate position: each num-cell is ~52px wide
+  const step = state.jump.size === 10 ? 10 : state.jump.size === 5 ? 5 : 2;
+  const cellWidth = 52;
+  const offset = 26; // center of first cell
+
+  const targetCell = state.jump.pikoPos / step;
+  const leftPx = offset + targetCell * cellWidth;
+
+  piko.style.left = leftPx + 'px';
+  piko.style.setProperty('--from-x', (leftPx - cellWidth * (state.jump.size / step)) + 'px');
+  piko.style.setProperty('--to-x', leftPx + 'px');
+  piko.style.setProperty('--hop-duration', '0.6s');
+
+  // Highlight current cell
+  document.querySelectorAll('.num-label').forEach(l => l.classList.remove('active'));
+  const active = document.querySelector(`.num-label[data-val="${state.jump.pikoPos}"]`);
+  if (active) active.classList.add('active');
+}
+
+function pikoJump() {
+  const maxVal = state.jump.size * 10;
+  if (state.jump.pikoPos >= maxVal) {
+    // Reset
+    state.jump.pikoPos = 0;
+    updatePikoPosition(true);
     return;
   }
 
-  totalAttempts++;
+  const piko = document.getElementById('piko');
+  piko.classList.remove('hopping');
+  void piko.offsetWidth; // reflow
+  piko.classList.add('hopping');
 
-  if (answer === correct) {
-    input.classList.remove('wrong', 'ask');
-    input.classList.add('correct');
-    input.readOnly = true;
-    input.value = correct;
-    input.nextSibling.style.display = 'none'; // hide check button
+  state.jump.pikoPos += state.jump.size;
 
-    score++;
-    document.getElementById('score').textContent = score;
-    updateProgress();
+  // Highlight path
+  const step = state.jump.size === 10 ? 10 : state.jump.size === 5 ? 5 : 2;
+  for (let v = state.jump.pikoPos - state.jump.size + step; v <= state.jump.pikoPos; v += step) {
+    const lbl = document.querySelector(`.num-label[data-val="${v}"]`);
+    if (lbl) lbl.classList.add('highlighted');
+  }
 
-    // Auto-scroll to next blank
-    const all = document.getElementById('sequence-display').querySelectorAll('input');
-    const idx = Array.from(all).indexOf(input);
-    if (idx < all.length - 1) {
-      all[idx + 1].focus();
-    }
+  setTimeout(() => {
+    updatePikoPosition(false);
+    updateJumpFeedback();
+  }, 300);
 
-    // Check if all done
-    const remaining = Array.from(all).filter(i => !i.readOnly && !i.classList.contains('correct'));
-    if (remaining.length === 0) {
-      showCelebration();
-    }
+  // Progress
+  const pct = Math.min(100, (state.jump.pikoPos / maxVal) * 100);
+  document.getElementById('jump-progress').style.width = pct + '%';
+
+  if (state.jump.pikoPos >= maxVal) {
+    confetti();
+    showFeedback('jump', 'Piko sampai! 🌟', 'success');
+    const p = loadProgress();
+    p.jump = p.jump || {};
+    p.jump[state.jump.size] = (p.jump[state.jump.size] || 0) + 1;
+    saveProgress(p);
+  }
+}
+
+function updateJumpFeedback() {
+  const pos = state.jump.pikoPos;
+  if (pos === 0) {
+    clearFeedback('jump');
   } else {
-    input.classList.remove('correct');
-    input.classList.add('wrong');
+    const messages = [
+      `${pos}!`, `Piko di ${pos}!`, `Lompatan bagus!`, `${pos} — terus!`
+    ];
+    showFeedback('jump', messages[Math.floor(Math.random() * messages.length)], 'hint');
+  }
+}
+
+function resetPiko() {
+  state.jump.pikoPos = 0;
+  document.querySelectorAll('.num-label').forEach(l => {
+    l.classList.remove('highlighted', 'active');
+  });
+  document.getElementById('jump-progress').style.width = '0%';
+  updatePikoPosition(false);
+  clearFeedback('jump');
+}
+
+function selectJumpSize(n) {
+  document.querySelectorAll('#screen-jump .jump-btn').forEach(b => b.classList.remove('selected'));
+  document.querySelector(`#screen-jump .jump-btn.by${n}`).classList.add('selected');
+  state.jump.size = n;
+  state.jump.pikoPos = 0;
+  initJump();
+}
+
+// ===== NEXT NUMBER =====
+function initNext() {
+  state.next.seq = generateNextSequence();
+  renderNext();
+}
+
+function generateNextSequence() {
+  const size = state.next.size;
+  const start = Math.floor(Math.random() * 3) * size; // 0, size, or 2*size
+  const length = 3 + Math.floor(Math.random() * 2); // 3-4 numbers shown
+  const seq = [];
+  for (let i = 0; i < length; i++) seq.push(start + i * size);
+  return seq;
+}
+
+function renderNext() {
+  const seq = state.next.seq;
+  const answer = seq[seq.length - 1] + state.next.size;
+  seq.push('?'); // placeholder for answer
+
+  const display = document.getElementById('next-display');
+  display.innerHTML = '';
+
+  seq.forEach((val, i) => {
+    const n = document.createElement('div');
+    n.className = 'pattern-num' + (i < seq.length - 1 ? ' given' : ' blank');
+    n.textContent = val === '?' ? '?' : val;
+    n.dataset.val = val;
+    display.appendChild(n);
+  });
+
+  // Generate choices
+  const correct = answer;
+  const choices = new Set([correct]);
+  while (choices.size < 4) {
+    const offset = (Math.random() < 0.5 ? 1 : -1) * (Math.floor(Math.random() * 3) + 1) * state.next.size;
+    const c = correct + offset;
+    if (c > 0 && c !== correct) choices.add(c);
+  }
+
+  const shuffled = [...choices].sort(() => Math.random() - 0.5);
+  const row = document.getElementById('next-choices');
+  row.innerHTML = '';
+  shuffled.forEach(c => {
+    const btn = document.createElement('button');
+    btn.className = `choice-btn by${state.next.size}`;
+    btn.textContent = c;
+    btn.onclick = () => checkNextAnswer(c, correct, btn);
+    row.appendChild(btn);
+  });
+
+  clearFeedback('next');
+}
+
+function checkNextAnswer(selected, correct, btn) {
+  if (btn.classList.contains('correct') || btn.classList.contains('wrong')) return;
+
+  state.next.rounds++;
+  const display = document.getElementById('next-display');
+  const blanks = display.querySelectorAll('.blank');
+
+  if (selected === correct) {
+    btn.classList.add('correct');
+    blanks.forEach(b => { b.textContent = correct; b.classList.remove('blank'); b.classList.add('given'); });
+    state.next.score++;
+    showFeedback('next', getSuccessMsg(), 'success');
+    confetti();
+
+    const p = loadProgress();
+    p.next = p.next || {};
+    p.next[state.next.size] = (p.next[state.next.size] || 0) + 1;
+    saveProgress(p);
+
+    document.getElementById('next-progress').style.width = Math.min(100, (state.next.score / 10) * 100) + '%';
+
     setTimeout(() => {
-      input.classList.remove('wrong');
-      input.value = '';
-      input.focus();
-    }, 800);
+      state.next.seq = generateNextSequence();
+      renderNext();
+    }, 2200);
+  } else {
+    btn.classList.add('wrong');
+    setTimeout(() => btn.classList.remove('wrong'), 600);
+    showFeedback('next', getHintMsg(state.next.size), 'hint');
   }
 }
 
-function showCelebration() {
-  const messages = [
-    'Hebat sekali, Aya! 🌟',
-    'Kamu pintar banget! ⭐',
-    'Luar biasa! 💪',
-    'Matematikawan muda! 🧠',
-    'Ayo coba lagi! 🔄',
+function selectNextSize(n) {
+  document.querySelectorAll('#screen-next .jump-btn').forEach(b => b.classList.remove('selected'));
+  document.querySelector(`#screen-next .jump-btn.by${n}`).classList.add('selected');
+  state.next.size = n;
+  initNext();
+}
+
+// ===== MISSING NUMBER =====
+function initMissing() {
+  renderMissing();
+}
+
+function renderMissing() {
+  const size = state.missing.size;
+  const start = Math.floor(Math.random() * 3) * size;
+  const length = 4;
+  const seq = [];
+  for (let i = 0; i < length; i++) seq.push(start + i * size);
+
+  // Choose which position to blank out (not first, not last)
+  const blankPos = 1 + Math.floor(Math.random() * (length - 2));
+  const answer = seq[blankPos];
+  const display = document.getElementById('missing-display');
+  display.innerHTML = '';
+
+  seq.forEach((val, i) => {
+    const n = document.createElement('div');
+    if (i === blankPos) {
+      n.className = 'pattern-num blank';
+      n.textContent = '?';
+      n.dataset.val = '?';
+    } else {
+      n.className = 'pattern-num given';
+      n.textContent = val;
+      n.dataset.val = val;
+    }
+    display.appendChild(n);
+  });
+
+  // Choices
+  const choices = new Set([answer]);
+  while (choices.size < 4) {
+    const offset = (Math.random() < 0.5 ? 1 : -1) * (Math.floor(Math.random() * 3) + 1) * size;
+    const c = answer + offset;
+    if (c > 0 && c !== answer) choices.add(c);
+  }
+
+  const shuffled = [...choices].sort(() => Math.random() - 0.5);
+  const row = document.getElementById('missing-choices');
+  row.innerHTML = '';
+  shuffled.forEach(c => {
+    const btn = document.createElement('button');
+    btn.className = `choice-btn by${size}`;
+    btn.textContent = c;
+    btn.onclick = () => checkMissingAnswer(c, answer, btn, blankPos);
+    row.appendChild(btn);
+  });
+
+  clearFeedback('missing');
+}
+
+function checkMissingAnswer(selected, correct, btn, blankPos) {
+  if (btn.classList.contains('correct') || btn.classList.contains('wrong')) return;
+  state.missing.rounds++;
+
+  if (selected === correct) {
+    btn.classList.add('correct');
+    const blanks = document.querySelectorAll('#missing-display .blank');
+    blanks.forEach(b => { b.textContent = correct; b.classList.remove('blank'); b.classList.add('given'); });
+    state.missing.score++;
+    showFeedback('missing', getSuccessMsg(), 'success');
+    confetti();
+
+    const p = loadProgress();
+    p.missing = p.missing || {};
+    p.missing[size] = (p.missing[size] || 0) + 1;
+    saveProgress(p);
+
+    document.getElementById('missing-progress').style.width = Math.min(100, (state.missing.score / 10) * 100) + '%';
+
+    setTimeout(renderMissing, 2200);
+  } else {
+    btn.classList.add('wrong');
+    setTimeout(() => btn.classList.remove('wrong'), 600);
+    showFeedback('missing', getHintMsg(state.missing.size), 'hint');
+  }
+}
+
+function selectMissingSize(n) {
+  document.querySelectorAll('#screen-missing .jump-btn').forEach(b => b.classList.remove('selected'));
+  document.querySelector(`#screen-missing .jump-btn.by${n}`).classList.add('selected');
+  state.missing.size = n;
+  initMissing();
+}
+
+// ===== RULE DETECTIVE =====
+function initDetective() {
+  renderDetective();
+}
+
+function renderDetective() {
+  // Pick a random jump size for this round
+  const sizes = [2, 5, 10];
+  const size = sizes[Math.floor(Math.random() * sizes.length)];
+  const start = Math.floor(Math.random() * 3) * size;
+  const seq = [];
+  for (let i = 0; i < 4; i++) seq.push(start + i * size);
+
+  const display = document.getElementById('detective-display');
+  display.innerHTML = '';
+  seq.forEach(val => {
+    const n = document.createElement('div');
+    n.className = 'pattern-num given';
+    n.textContent = val;
+    display.appendChild(n);
+  });
+
+  document.getElementById('detective-question').textContent = 'Piko lompat berapa?';
+
+  const choices = new Set([size]);
+  while (choices.size < 4) {
+    const opts = [2, 5, 10].filter(s => s !== size);
+    choices.add(opts[Math.floor(Math.random() * opts.length)]);
+  }
+
+  const shuffled = [...choices].sort(() => Math.random() - 0.5);
+  const row = document.getElementById('detective-choices');
+  row.innerHTML = '';
+  shuffled.forEach(c => {
+    const btn = document.createElement('button');
+    btn.className = `choice-btn by${c === 10 ? 10 : c === 5 ? 5 : 2}`;
+    btn.textContent = '+' + c;
+    btn.onclick = () => checkDetectiveAnswer(c, size, btn);
+    row.appendChild(btn);
+  });
+
+  clearFeedback('detective');
+}
+
+function checkDetectiveAnswer(selected, correct, btn) {
+  if (btn.classList.contains('correct') || btn.classList.contains('wrong')) return;
+  state.detective.rounds++;
+
+  if (selected === correct) {
+    btn.classList.add('correct');
+    state.detective.score++;
+    showFeedback('detective', 'Benar! Aturannya +' + correct + '! 🌟', 'success');
+    confetti();
+
+    const p = loadProgress();
+    p.detective = (p.detective || 0) + 1;
+    saveProgress(p);
+
+    document.getElementById('detective-progress').style.width = Math.min(100, (state.detective.score / 10) * 100) + '%';
+
+    setTimeout(renderDetective, 2200);
+  } else {
+    btn.classList.add('wrong');
+    setTimeout(() => btn.classList.remove('wrong'), 600);
+    showFeedback('detective', 'Piko lompat +' + correct + '. Coba lagi!', 'hint');
+  }
+}
+
+// ===== FEEDBACK HELPERS =====
+function getSuccessMsg() {
+  const msgs = [
+    'Hebat! 🌟', 'Pintar! ⭐', 'Luar biasa! 🎉', 'Aya jenius! 💛', 'Mantap! ✨', 'Super! 🌈'
   ];
-  const msg = messages[Math.floor(Math.random() * messages.length)];
-  document.getElementById('celebration-text').textContent = msg;
-  document.getElementById('celebration').classList.add('show');
-  updateProgress(100);
+  return msgs[Math.floor(Math.random() * msgs.length)];
 }
 
-function updateProgress(pct) {
-  const bar = document.getElementById('progress-bar');
-  const label = document.getElementById('progress-label');
+function getHintMsg(size) {
+  const msgs = [
+    `Ingat: Piko lompat +${size}! Coba lagi!`,
+    `Petunjuk: hitung ${size}-${size}-${size}...`,
+    `Piko selalu lompat ${size} langkah!`,
+  ];
+  return msgs[Math.floor(Math.random() * msgs.length)];
+}
 
-  if (pct === undefined) {
-    const all = document.getElementById('sequence-display').querySelectorAll('input');
-    const done = Array.from(all).filter(i => i.readOnly || i.classList.contains('correct')).length;
-    pct = Math.round((done / all.length) * 100);
+function showFeedback(screen, text, type) {
+  const el = document.getElementById(screen + '-feedback');
+  if (!el) return;
+  el.innerHTML = `<div class="feedback-text ${type}">${text}</div>`;
+}
+
+function clearFeedback(screen) {
+  const el = document.getElementById(screen + '-feedback');
+  if (el) el.innerHTML = '';
+}
+
+// ===== CONFETTI =====
+function confetti() {
+  const container = document.getElementById('confetti');
+  const colors = ['#5DB075', '#F2994A', '#6BB8E0', '#F06292', '#FFD700', '#9C27B0'];
+  for (let i = 0; i < 30; i++) {
+    const piece = document.createElement('div');
+    piece.className = 'confetti-piece';
+    piece.style.left = Math.random() * 100 + '%';
+    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+    piece.style.borderRadius = Math.random() < 0.5 ? '50%' : '2px';
+    piece.style.width = (Math.random() * 8 + 6) + 'px';
+    piece.style.height = (Math.random() * 8 + 6) + 'px';
+    piece.style.animationDuration = (Math.random() * 1.5 + 1) + 's';
+    piece.style.animationDelay = (Math.random() * 0.5) + 's';
+    container.appendChild(piece);
+    setTimeout(() => piece.remove(), 3000);
   }
-
-  const colors = { 2: '#5B9BD5', 5: '#F4A261', 10: '#4CAF50' };
-  bar.style.width = pct + '%';
-  bar.style.background = `linear-gradient(90deg, ${colors[currentTopic]}, #81C784)`;
-
-  if (pct === 0) label.textContent = 'Ayo mulai! Klik titik dulu!';
-  else if (pct < 100) label.textContent = `Pertanyaan yang dijawab: ${score}/${totalAttempts}`;
-  else label.textContent = '🎉 Semangat, Aya! 🎉';
 }
 
-// ===== INIT =====
-document.addEventListener('DOMContentLoaded', () => {
-  initFingerDemo();
-  // Show a hint about starting
-  document.getElementById('progress-label').textContent = 'Tekan tombol biru, oranye, atau hijau di atas untuk mulai! 👇';
-});
-</script>
+// ===== PARENT PANEL =====
+function toggleParentPanel() {
+  const panel = document.getElementById('parent-panel');
+  panel.classList.toggle('show');
+  if (panel.classList.contains('show')) updateParentStats();
+}
 
+function updateParentStats() {
+  const p = loadProgress();
+  const container = document.getElementById('parent-stats');
+
+  const skills = [
+    { key: 'build', label: '🔨 Buat Kelompok' },
+    { key: 'jump', label: '🐰 Loncat Baris' },
+    { key: 'next', label: '🔮 next Number' },
+    { key: 'missing', label: '🔍 Angka Hilang' },
+    { key: 'detective', label: '🕵️ Rule Detektif' },
+  ];
+
+  container.innerHTML = skills.map(skill => {
+    const data = p[skill.key] || {};
+    const sizes = skill.key === 'detective' ? [''] : [10, 5, 2];
+    const rows = sizes.map(size => {
+      const count = skill.key === 'detective' ? (data || 0) : (data[size] || 0);
+      const status = count === 0 ? 'new' : count < 5 ? 'learning' : 'strong';
+      const label = skill.key === 'detective' ? skill.label : skill.label + ' +' + size;
+      return `<div class="progress-row">
+        <span>${label}</span>
+        <span><span class="status-dot status-${status}"></span> ${count}x</span>
+      </div>`;
+    }).join('');
+    return rows;
+  }).join('');
+}
+</script>
 </body>
 </html>
