@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Budaya & Sains — Belajar Aya</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--cream:#FFF8F0;--shadow:0 4px 24px rgba(0,0,0,.35);--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:manipulation}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+.screen{display:none;min-height:100dvh;flex-direction:column}
+.screen.active{display:flex}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0}
+.star{position:absolute;background:#fff;border-radius:50%;animation:twinkle 3s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.9}}
+.top-bar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
+.top-btn{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.top-btn:active{transform:scale(.92)}
+.hero{padding:8px 16px 20px;position:relative;z-index:1;text-align:center}
+.hero-title{font-family:var(--font-h);font-size:1.7rem;color:var(--gold);margin-bottom:4px}
+.hero-sub{font-size:.82rem;opacity:.5}
+.section-grid{display:flex;flex-direction:column;gap:12px;padding:0 16px 100px;position:relative;z-index:1}
+.section-card{background:var(--card);border-radius:20px;padding:16px;box-shadow:var(--shadow);cursor:pointer;border:none;width:100%;text-align:left;color:var(--cream);display:flex;gap:14px;align-items:center;transition:transform .15s}
+.section-card:active{transform:scale(.97)}
+.section-icon{font-size:2.5rem;flex-shrink:0;width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center}
+.section-name{font-family:var(--font-h);font-size:1.05rem;margin-bottom:2px}
+.section-desc{font-size:.75rem;opacity:.5;line-height:1.4}
+.section-badge{margin-left:auto;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.15);font-size:.72rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.section-badge.done{background:var(--green);border-color:var(--green);color:#fff}
+.exp-header{padding:10px 16px 6px;position:relative;z-index:1}
+.exp-title{font-family:var(--font-h);font-size:1.2rem;color:var(--gold);text-align:center;margin-bottom:4px}
+.exp-prompt{font-size:.85rem;opacity:.7;text-align:center;margin-bottom:16px;padding:0 16px}
+.exp-area{padding:0 16px 100px;flex:1;position:relative;z-index:1}
+.exp-instruction{background:rgba(255,255,255,.07);border-radius:14px;padding:14px 16px;margin:12px 0;font-size:.88rem;line-height:1.6;text-align:center;border:1px solid rgba(255,255,255,.08)}
+.exp-success{background:rgba(76,175,80,.15);border:1px solid rgba(76,175,80,.3);border-radius:12px;padding:12px 16px;text-align:center;color:var(--green);font-weight:700;margin:10px 0}
+.demo-box{background:rgba(255,255,255,.05);border:2px solid rgba(255,255,255,.1);border-radius:16px;padding:20px;text-align:center;margin:10px 0;display:flex;flex-direction:column;align-items:center;gap:10px}
+.demo-label{font-size:.78rem;opacity:.5;margin-bottom:4px}
+.btn{padding:12px 24px;border-radius:14px;border:none;cursor:pointer;font-family:var(--font-b);font-weight:700;font-size:.9rem;transition:transform .12s;display:inline-block}
+.btn:active{transform:scale(.95)}
+.btn-primary{background:var(--gold);color:var(--bg)}
+.btn-secondary{background:rgba(255,255,255,.08);color:var(--cream);border:1px solid rgba(255,255,255,.12)}
+.lesson-back{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);border-radius:12px;padding:8px 14px;font-family:var(--font-b);font-weight:600;font-size:.85rem;cursor:pointer;display:flex;align-items:center;gap:6px}
+.lesson-back:active{transform:scale(.95)}
+.exp-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:14px 16px;cursor:pointer;display:flex;gap:12px;align-items:center;color:var(--cream);transition:all .15s}
+.exp-card:active{background:rgba(255,255,255,.1);transform:scale(.98)}
+.exp-card.done{border-color:var(--green)}
+.exp-num{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);font-family:var(--font-h);font-size:.9rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.exp-card.done .exp-num{background:var(--green);border-color:var(--green)}
+.exp-name{font-weight:700;font-size:.9rem}
+.exp-tagline{font-size:.75rem;opacity:.5}
+.offline-mission{background:rgba(76,175,80,.1);border:1px solid rgba(76,175,80,.25);border-radius:14px;padding:12px 14px;margin-top:14px;display:flex;gap:10px;align-items:flex-start}
+.offline-mission .emoji{font-size:1.5rem;flex-shrink:0}
+.offline-mission .title{font-family:var(--font-h);font-size:.75rem;color:var(--green);margin-bottom:2px}
+.offline-mission .text{font-size:.78rem;color:rgba(255,255,255,.7);line-height:1.5}
+.home-fab{position:fixed;bottom:20px;left:20px;width:50px;height:50px;border-radius:50%;background:var(--green);color:#fff;font-size:1.3rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.home-fab:active{transform:scale(.9)}
+.parent-fab{position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--gold);color:var(--bg);font-size:1.2rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100}
+.parent-fab:active{transform:scale(.9)}
+.rabbity-fab{position:fixed;bottom:80px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--card);border:2px solid rgba(255,255,255,.15);color:var(--cream);font-size:1.3rem;z-index:99;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.rabbity-bubble{position:fixed;bottom:140px;right:20px;z-index:98;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:10px 14px;max-width:220px;font-size:.8rem;line-height:1.5;color:var(--cream);box-shadow:0 4px 16px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .3s}
+.rabbity-bubble.show{opacity:1}
+.parent-panel{position:fixed;bottom:0;left:0;right:0;background:var(--cream);color:#333;border-radius:20px 20px 0 0;padding:20px 16px 90px;box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;max-height:70vh;overflow-y:auto;transform:translateY(110%);transition:transform .3s ease}
+.parent-panel.open{transform:translateY(0)}
+.panel-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
+.panel-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
+.panel-row{margin-bottom:12px}
+.panel-row-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
+.panel-bar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
+.panel-bar-fill{height:100%;border-radius:4px;transition:width .5s}
+.panel-missions{font-size:.73rem;color:#666;margin-top:3px}
+.confetti-container{position:fixed;inset:0;pointer-events:none;z-index:9999}
+.confetti-piece{position:absolute;width:10px;height:10px;border-radius:2px;animation:confettiFall 2.5s ease-out forwards}
+@keyframes confettiFall{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+.zone-area{display:flex;flex-direction:column;gap:8px;padding:10px 0}
+.zone-item{padding:14px 16px;border-radius:14px;cursor:pointer;border:none;color:var(--cream);transition:all .15s;text-align:left;font-family:var(--font-b);font-size:.88rem;display:flex;gap:12px;align-items:center}
+.zone-item:active{transform:scale(.97)}
+.zone-emoji{font-size:1.8rem;flex-shrink:0}
+.zone-name{font-weight:700;font-size:.9rem}
+.zone-depth{font-size:.72rem;opacity:.5}
+.animal-card{background:rgba(255,255,255,.06);border-radius:12px;padding:10px 6px;text-align:center;cursor:pointer;border:none;color:var(--cream);transition:transform .12s;font-size:.7rem;line-height:1.3}
+.animal-card:active{transform:scale(.9)}
+.animal-card .emoji{font-size:1.8rem;display:block;margin-bottom:4px}
+.animal-card .label{font-size:.65rem;opacity:.6}
+.animal-card.selected{background:rgba(255,215,0,.15);border:2px solid var(--gold)}
+.animal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:8px 0}
+</style>
+</head>
+<body>
+<div class="stars" id="stars"></div>
+
+<!-- HOME -->
+<div class="screen active" id="screen-home">
+  <div class="top-bar">
+    <div></div>
+    <div style="font-family:var(--font-h);color:var(--gold);font-size:.9rem;">Budaya & Sains</div>
+    <button class="top-btn" onclick="toggleParent()">👤</button>
+  </div>
+  <div class="hero">
+    <div style="font-size:3rem;margin-bottom:6px;">🌏</div>
+    <div class="hero-title">Kehidupan di Dunia</div>
+    <div class="hero-sub">Kenali dunia dan isinya</div>
+  </div>
+  <div class="section-grid" id="section-grid"></div>
+</div>
+
+<!-- SECTION -->
+<div class="screen" id="screen-section">
+  <div class="exp-header">
+    <button class="lesson-back" onclick="showScreen('home')">← Kembali</button>
+    <div class="exp-title" id="section-title"></div>
+  </div>
+  <div class="exp-area" id="exp-area"></div>
+</div>
+
+<!-- EXPERIENCE -->
+<div class="screen" id="screen-exp">
+  <div class="exp-header">
+    <button class="lesson-back" onclick="goBack()">← Kembali</button>
+    <div class="exp-title" id="exp-title"></div>
+    <div class="exp-prompt" id="exp-prompt"></div>
+  </div>
+  <div class="exp-area" id="exp-area2"></div>
+</div>
+
+<!-- FABs -->
+<a href="index.html" class="home-fab">🏠</a>
+<button class="parent-fab" onclick="toggleParent()">👤</button>
+<button class="rabbity-fab" onclick="rabbitySpeak()">🐰</button>
+<div class="rabbity-bubble" id="rabbity-bubble"></div>
+
+<!-- Parent Panel -->
+<div class="parent-panel" id="parent-panel">
+  <div class="panel-handle"></div>
+  <button onclick="toggleParent()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">✕</button>
+  <div class="panel-title">📊 Progress Belajar</div>
+  <div id="parent-content"></div>
+</div>
+
+<!-- Confetti -->
+<div class="confetti-container" id="confetti-container"></div>
+
+<script>
+const SECTIONS=[
+  {id:'geo',emoji:'🌏',title:'Geografi',desc:'Benua, lautan, dan peta',color:'#1565C0',
+    missions:['Tunjuk benua di globe atau peta!','Namai 3 lautan!'],
+    exps:[
+      {id:'globe',name:'Globe Toss',tagline:'Bumi itu bulat dan punya benua',type:'globe'},
+      {id:'continents',name:'Benua dan Lautan',tagline:'Tujuh benua, lima lautan',type:'continents'},
+      {id:'ozean',name:'Kedalaman Lautan',tagline:'Laut semakin dalam dan gelap',type:'ozean'},
+    ]},
+  {id:'hist',emoji:'🕰️',title:'Sejarah',desc:'Zaman dulu dan sekarang',color:'#4A148C',
+    missions:['Tanya kakek nenek: apa beda waktu kecil mereka?','Ceritakan 1 hal dari zaman dulu!'],
+    exps:[
+      {id:'timeline',name:'Garis Waktu',tagline:'Dari dulu ke sekarang',type:'timeline'},
+      {id:'ages',name:'Berapa Usiamu?',tagline:'Waktu sangat panjang',type:'ages'},
+    ]},
+  {id:'sci',emoji:'🔬',title:'Sains',desc:'Benda dan sifatnya',color:'#1B5E20',
+    missions:['Coba di kamar mandi: benda apa mengapung, apa tenggelam?','Tempel magnet ke berbagai benda!'],
+    exps:[
+      {id:'sink',name:'Tenggelam atau Mengapung?',tagline:'Kenapa sesuatu mengapung?',type:'sink'},
+      {id:'magnet',name:'Magnet atau Bukan?',tagline:'Magnet hanya menarik logam tertentu',type:'magnet'},
+      {id:'hotcold',name:'Panas atau Dingin?',tagline:'Suhu dan perubahan wujud',type:'hotcold'},
+    ]},
+  {id:'nat',emoji:'🌱',title:'Alam',desc:'Tumbuhan dan hewan',color:'#E65100',
+    missions:['Cari 3 hewan berbeda di luar!','Namai bagian tumbuhan!'],
+    exps:[
+      {id:'plantparts',name:'Bagian Tumbuhan',tagline:'Setiap bagian punya tugas',type:'plantparts'},
+      {id:'animals',name:'Klasifikasi Hewan',tagline:'Bertulang belakang atau tidak',type:'animals'},
+      {id:'foodchain',name:'Rantai Makanan',tagline:'Energi mengalir dari Matahari',type:'foodchain'},
+    ]},
+];
+
+let state={currentSection:null,currentExp:null,history:['home'],progress:{},profile:{}};
+
+function lsGet(k,def){try{const v=localStorage.getItem(k);return v?JSON.parse(v):def}catch(e){return def}}
+function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+
+function initState(){
+  state.progress=lsGet('culture-progress',{});
+  state.profile=lsGet('aya-profile',{name:''});
+}
+
+function genStars(){
+  const el=document.getElementById('stars');
+  el.innerHTML='';
+  for(let i=0;i<70;i++){
+    const s=document.createElement('div');
+    s.className='star';
+    const sz=Math.random()*2+1;
+    s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;animation-delay:${(Math.random()*3).toFixed(1)}s;animation-duration:${(Math.random()*2+2).toFixed(1)}s`;
+    el.appendChild(s);
+  }
+}
+
+function markDone(id){
+  if(!state.progress[id]){
+    state.progress[id]=true;
+    lsSet('culture-progress',state.progress);
+    const section=SECTIONS.find(s=>s.exps.some(e=>e.id===id));
+    if(section&&section.exps.every(e=>state.progress[e.id])){
+      state.progress[section.id]=true;
+      lsSet('culture-progress',state.progress);
+    }
+    confetti();
+    say('Hebat! Kamu sudah selesai.');
+  }
+}
+function isDone(id){return !!state.progress[id]}
+
+function showScreen(name){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  const el=document.getElementById('screen-'+name);
+  if(el)el.classList.add('active');
+  if(name!=='home')state.history.push(name);
+  if(name==='home')state.history=['home'];
+  if(name==='home')closeParent();
+}
+function goBack(){
+  if(state.history.length>1)state.history.pop();
+  showScreen(state.history[state.history.length-1]||'home');
+}
+
+function renderHome(){
+  const grid=document.getElementById('section-grid');
+  grid.innerHTML='';
+  SECTIONS.forEach((s,i)=>{
+    const done=!!state.progress[s.id];
+    const doneCount=s.exps.filter(e=>isDone(e.id)).length;
+    const card=document.createElement('button');
+    card.className='section-card';
+    card.onclick=()=>openSection(s);
+    card.innerHTML=`
+      <div class="section-icon" style="background:${s.color}">${s.emoji}</div>
+      <div>
+        <div class="section-name">${s.title}</div>
+        <div class="section-desc">${s.desc}</div>
+        <div style="font-size:.7rem;opacity:.4;margin-top:4px;">${doneCount}/${s.exps.length} aktivitas</div>
+      </div>
+      <div class="section-badge ${done?'done':''}">${done?'✓':(i+1)}</div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function openSection(section){
+  state.currentSection=section;
+  document.getElementById('section-title').textContent=section.emoji+' '+section.title;
+  const area=document.getElementById('exp-area');
+  area.innerHTML='';
+  section.exps.forEach((e,i)=>{
+    const done=isDone(e.id);
+    const card=document.createElement('button');
+    card.className='exp-card'+(done?' done':'');
+    card.onclick=()=>openExp(e,section);
+    card.innerHTML=`<div class="exp-num">${done?'✓':(i+1)}</div><div><div class="exp-name">${e.name}</div><div class="exp-tagline">${e.tagline}</div></div>`;
+    area.appendChild(card);
+  });
+  const missDiv=document.createElement('div');
+  missDiv.className='offline-mission';
+  missDiv.innerHTML=`<div class="emoji">🌍</div><div><div class="title">Misi di Dunia Nyata</div><div class="text">${section.missions.map(m=>'• '+m).join('<br>')}</div></div>`;
+  area.appendChild(missDiv);
+  showScreen('section');
+}
+
+function openExp(exp,section){
+  state.currentExp=exp;
+  state.currentSection=section;
+  document.getElementById('exp-title').textContent=section.emoji+' '+exp.name;
+  document.getElementById('exp-prompt').textContent=exp.tagline;
+  const area=document.getElementById('exp-area2');
+  area.innerHTML='';
+  switch(exp.type){
+    case'globe':renderGlobe(area);break;
+    case'continents':renderContinents(area);break;
+    case'ozean':renderOzean(area);break;
+    case'timeline':renderHistTimeline(area);break;
+    case'ages':renderAges(area);break;
+    case'sink':renderSink(area);break;
+    case'magnet':renderMagnet(area);break;
+    case'hotcold':renderHotCold(area);break;
+    case'plantparts':renderPlantParts(area);break;
+    case'animals':renderAnimals(area);break;
+    case'foodchain':renderFoodChain(area);break;
+    default:area.innerHTML='<div class="demo-box"><div style="font-size:2rem;">🔭</div><div>Segera hadir!</div></div>';
+  }
+  showScreen('exp');
+}
+
+// ── GLOBE ──
+function renderGlobe(area){
+  const locations=[
+    {emoji:'🌏',name:'Asia',fact:'Benua terbesar, rumah 60% manusia'},
+    {emoji:'🦁',name:'Afrika',fact:'Tanah liar dan gajah'},
+    {emoji:'🦅',name:'Eropa',fact:'Banyak negara kecil dalam satu benua'},
+    {emoji:'🌵',name:'Australia',fact:'Benua sekaligus negara'},
+    {emoji:'❄️',name:'Antartika',fact:'Sangat dingin, tidak ada negara'},
+    {emoji:'🌊',name:'Samudra Pasifik',fact:'Samudra terbesar di dunia'},
+  ];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Putar globe dan lihat tempat baru!</div>
+      <div style="font-size:5rem;" id="globe-emoji">🌍</div>
+      <div style="font-family:var(--font-h);font-size:1.2rem;color:var(--gold);margin-top:8px;" id="globe-name">🌍 Bumi — tempat kita tinggal</div>
+      <div class="exp-instruction" id="globe-fact">Tap tombol untuk pergi ke tempat baru!</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:8px;">
+        ${locations.map((l,i)=>`<button onclick="spinGlobe(${i})" class="btn btn-secondary" style="font-size:1.5rem;padding:10px;">${l.emoji}</button>`).join('')}
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="markDone('globe');say('Bumi itu bulat dan indah!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  window._globeLocations=locations;
+}
+function spinGlobe(i){
+  const loc=window._globeLocations[i];
+  const emoji=document.getElementById('globe-emoji');
+  const name=document.getElementById('globe-name');
+  const fact=document.getElementById('globe-fact');
+  if(emoji)emoji.style.animation='spin 0.5s ease';
+  setTimeout(()=>{
+    if(emoji){emoji.textContent=loc.emoji;emoji.style.animation='';}
+    if(name)name.textContent=loc.name;
+    if(fact)fact.textContent=loc.fact;
+    say(loc.fact);
+  },300);
+}
+
+// ── CONTINENTS ──
+function renderContinents(area){
+  const conts=[
+    {emoji:'🌏',name:'Asia',color:'#E53935',fact:'Benua terbesar, rumah 4.7 miliar manusia'},
+    {emoji:'🦁',name:'Afrika',color:'#FB8C00',fact:'Rumah野生动物 dan banyak bahasa'},
+    {emoji:'🦅',name:'Eropa',color:'#1E88E5',fact:'Banyak negara kecil tapi sangat maju'},
+    {emoji:'🌵',name:'Australia',color:'#43A047',fact:'Benua sekaligus negara, banyak hewan unik'},
+    {emoji:'🌎',name:'Amerika Utara',color:'#8E24AA',fact:'Dari Alaska sampai Panama'},
+    {emoji:'🌎',name:'Amerika Selatan',color:'#00ACC1',fact:'Amazon, Andes, dan penguin'},
+    {emoji:'❄️',name:'Antartika',color:'#B0BEC5',fact:'Tidak ada penduduk tetap'},
+  ];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">7 Benua di Dunia</div>
+      <div class="animal-grid">
+        ${conts.map((c,i)=>`
+          <button class="animal-card" id="cont-${i}" onclick="showContinent(${i})">
+            <span class="emoji">${c.emoji}</span>
+            <span class="label">${c.name}</span>
+          </button>
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="cont-fact">Tap benua untuk tahu fakta menarik!</div>
+    </div>
+    <button class="btn btn-primary" onclick="markDone('continents');say('Ada 7 benua di dunia!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  window._continents=conts;
+}
+function showContinent(i){
+  const c=window._continents[i];
+  document.querySelectorAll('.animal-card').forEach((el,j)=>el.classList.toggle('selected',j===i));
+  const fact=document.getElementById('cont-fact');
+  if(fact)fact.textContent=c.fact;
+  say(c.fact);
+}
+
+// ── OZEAN ──
+function renderOzean(area){
+  const zones=[
+    {emoji:'☀️',name:'Zona Permukaan',depth:'0-200m',color:'#42A5F5',animals:'Ikan, lumba-lumba, penyu',fact:'Cahaya menembus, plankton hidup di sini'},
+    {emoji:'🌊',name:'Zona Tengah',depth:'200-1000m',color:'#1565C0',animals:'Squid, ikan lantern',fact:'Cahaya mulai berkurang'},
+    {emoji:'🌑',name:'Zona Dalam',depth:'1000-4000m',color:'#0D47A1',animals:'Anglerfish, gurita',fact:'Gelap total, hewan punya cahaya sendiri'},
+    {emoji:'🕳️',name:'Zona Palung',depth:'4000-11000m',color:'#1A237E',animals:'Sea cucumber, udang',fact:'Tekanan sangat tinggi, sangat dingin'},
+  ];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Laut semakin dalam dan gelap</div>
+      ${zones.map((z,i)=>`
+        <button class="zone-item" id="zone-${i}" onclick="showZone(${i})" style="background:${z.color}22;border:2px solid ${z.color}55;">
+          <div class="zone-emoji">${z.emoji}</div>
+          <div>
+            <div class="zone-name">${z.name}</div>
+            <div class="zone-depth">Kedalaman: ${z.depth}</div>
+          </div>
+          <div style="margin-left:auto;font-size:.75rem;opacity:.6">→</div>
+        </button>
+      `).join('')}
+      <div class="exp-instruction" id="zone-fact">Tap zona untuk tahu hewan di dalamnya!</div>
+    </div>
+    <button class="btn btn-primary" onclick="markDone('ozean');say('Laut sangat dalam dan penuh kehidupan!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  window._ozeanZones=zones;
+}
+function showZone(i){
+  const z=window._ozeanZones[i];
+  document.querySelectorAll('.zone-item').forEach((el,j)=>el.style.borderColor=j===i?z.color:z.color+'55');
+  const fact=document.getElementById('zone-fact');
+  if(fact)fact.textContent=`${z.emoji} ${z.name}: ${z.fact}\nHewan: ${z.animals}`;
+  say(z.fact+'. Hewan: '+z.animals);
+}
+
+// ── HISTORY TIMELINE ──
+function renderHistTimeline(area){
+  const eras=[
+    {emoji:'🌌',name:'4.5 Miliar Tahun Lalu',desc:'Bumi terbentuk dari gas dan debu'},
+    {emoji:'🦠',name:'3 Miliar Tahun Lalu',desc:'Kehidupan pertama muncul di laut'},
+    {emoji:'🦕',name:'250 Juta Tahun Lalu',desc:'Dinosaurus berjalan di Bumi'},
+    {emoji:'🧒',name:'200 Ribu Tahun Lalu',desc:'Manusia pertama (Homo sapiens)'},
+    {emoji:'🏠',name:'Sekarang',desc:'8 miliar manusia di seluruh dunia'},
+  ];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Garis Waktu Panjang</div>
+      ${eras.map((e,i)=>`
+        <button onclick="showEra(${i})" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:10px 14px;color:var(--cream);cursor:pointer;display:flex;gap:10px;align-items:center;text-align:left;font-family:var(--font-b);font-size:.85rem;width:100%;margin-bottom:6px;">
+          <span style="font-size:1.5rem;">${e.emoji}</span>
+          <span><strong>${e.name}</strong><br><span style="opacity:.7;font-size:.75rem;" id="era-desc-${i}">Tap untuk tahu →</span></span>
+        </button>
+      `).join('')}
+    </div>
+    <button class="btn btn-primary" onclick="markDone('timeline');say('Waktu sangat panjang!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  window._eras=[
+    '4.5 miliar tahun lalu: Bumi terbentuk dari awan gas dan debu antarbintang!',
+    '3 miliar tahun lalu: Bakteri pertama muncul di laut!',
+    '250 juta tahun lalu: Dinosaurus berjalan di Bumi selama 180 juta tahun!',
+    '200 ribu tahun lalu: Manusia pertama muncul di Afrika!',
+    'Sekarang: 8 miliar manusia membangun civilization!',
+  ];
+}
+function showEra(i){
+  const el=document.getElementById('era-desc-'+i);
+  if(el)el.textContent=window._eras[i];
+  say(window._eras[i]);
+}
+
+// ── AGES ──
+function renderAges(area){
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Waktu sangat panjang</div>
+      <div style="font-family:var(--font-h);font-size:2rem;color:var(--gold);margin:10px 0;">${state.profile.name||'Kamu'} sudah hidup... <span id="my-age">6</span> tahun!</div>
+      <div style="font-size:.8rem;opacity:.6;">Itu sekitar ${6*365} hari! 🎂</div>
+    </div>
+    <div class="exp-instruction">
+      🦕 Dinosaurus sudah punah 65 juta tahun yang lalu.<br>
+      🐱 Kucing bisa hidup 15 tahun.<br>
+      🐢 Kura-kura bisa hidup 100 tahun lebih.<br>
+      🪨 Beberapa gunung berusia 100 juta tahun!<br>
+      ⏳ Semua waktu ini sangat pendek dibanding usia Bumi (4.5 miliar tahun).
+    </div>
+    <button class="btn btn-primary" onclick="markDone('ages');say('Waktu sangat panjang!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+}
+
+// ── SINK OR FLOAT ──
+function renderSink(area){
+  const items=[
+    {emoji:'🪨',name:'Batu',sink:true},{emoji:'🪵',name:'Kayu',sink:false},
+    {emoji:'🍎',name:'Apel',sink:false},{emoji:'⚽',name:'Bola',sink:false},
+    {emoji:'🔑',name:'Kunci',sink:true},{emoji:'🍂',name:'Daun',sink:false},
+    {emoji:'🪶',name:'Bulu',sink:false},{emoji:'🧊',name:'Es',sink:false},
+  ];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label" id="sink-q">Prediksi: Tenggelam atau Mengapung?</div>
+      <div class="animal-grid">
+        ${items.map((item,i)=>`
+          <button class="animal-card" id="sink-${i}" onclick="testSink(${i})">
+            <span class="emoji">${item.emoji}</span>
+            <span class="label">${item.name}</span>
+          </button>
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="sink-result"></div>
+    </div>
+    <div class="exp-instruction">
+      💡 Kayu mengapung karena lebih ringan dari air.<br>
+      🪨 Batu tenggelam karena lebih berat.<br>
+      🪶 Bulu mengapung karena ada udara di dalamnya!
+    </div>
+    <button class="btn btn-primary" onclick="markDone('sink');say('Kepadatan menentukan tenggelam atau mengapung!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  window._sinkItems=items;
+}
+function testSink(i){
+  const item=window._sinkItems[i];
+  const card=document.getElementById('sink-'+i);
+  const result=document.getElementById('sink-result');
+  if(result){
+    if(item.sink){
+      result.innerHTML=`<span style="color:#EF5350">${item.emoji} ${item.name} — TENGGELAM! ⬇️</span>`;
+      say(item.name+' tenggelam karena lebih berat dari air.');
+    } else {
+      result.innerHTML=`<span style="color:var(--green)">${item.emoji} ${item.name} — MENGAPUNG! ⬆️</span>`;
+      say(item.name+' mengapung!');
+    }
+  }
+}
+
+// ── MAGNET ──
+function renderMagnet(area){
+  const items=[
+    {emoji:'📎',name:'Paperclip',magnetic:true},{emoji:'🔑',name:'Kunci',magnetic:true},
+    {emoji:'🔩',name:'Paku',magnetic:true},{emoji:'🥫',name:'Kaleng',magnetic:true},
+    {emoji:'🪵',name:'Kayu',magnetic:false},{emoji:'🧴',name:'Plastik',magnetic:false},
+    {emoji:'🪨',name:'Batu',magnetic:false},{emoji:'📄',name:'Kertas',magnetic:false},
+  ];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Seret magnet ke benda untuk tes!</div>
+      <div style="font-size:4rem;margin:10px 0;" id="magnet-display">🧲</div>
+      <div style="font-size:.82rem;opacity:.6;" id="magnet-msg">Tap benda untuk tes dengan magnet!</div>
+      <div class="animal-grid">
+        ${items.map((item,i)=>`
+          <button class="animal-card" id="mag-${i}" onclick="testMagnet(${i})">
+            <span class="emoji">${item.emoji}</span>
+            <span class="label">${item.name}</span>
+          </button>
+        `).join('')}
+      </div>
+    </div>
+    <div class="exp-instruction">🧲 Magnet menarik benda dari besi dan nikel. Logam lain seperti aluminium, emas, perak tidak tertarik magnet!</div>
+    <button class="btn btn-primary" onclick="markDone('magnet');say('Magnet hanya menarik logam tertentu!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  window._magnetItems=items;
+}
+function testMagnet(i){
+  const item=window._magnetItems[i];
+  const msg=document.getElementById('magnet-msg');
+  if(msg){
+    if(item.magnetic){
+      msg.innerHTML=`${item.emoji} ${item.name}: <span style="color:var(--green)">TERTARIK MAGNET! 🧲✨</span>`;
+      say(item.name+' tertarik magnet!');
+    } else {
+      msg.innerHTML=`${item.emoji} ${item.name}: <span style="color:#EF5350">TIDAK tertarik 💨</span>`;
+      say(item.name+' tidak tertarik magnet.');
+    }
+  }
+}
+
+// ── HOT COLD ──
+function renderHotCold(area){
+  const items=[
+    {emoji:'🧊',name:'Es',temp:-5,state:'Padat',color:'#42A5F5'},{emoji:'💧',name:'Air',temp:25,state:'Cair',color:'#1565C0'},
+    {emoji:'☀️',name:'Sinar Matahari',temp:35,state:'Cair',color:'#FFD700'},{emoji:'🌡️',name:'Tubuh manusia',temp:37,state:'Cair',color:'#EF5350'},
+    {emoji:'🔥',name:'Api',temp:300,state:'Gas',color:'#FF5722'},{emoji:'🥶',name:'Antartika',temp:-40,state:'Padat',color:'#90CAF9'},
+    {emoji:'🌋',name:'Lava',temp:1200,state:'Cair',color:'#B71C1C'},{emoji:'💨',name:'Uap',temp:100,state:'Gas',color:'#B0BEC5'},
+  ];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Panas atau Dingin?</div>
+      <div class="animal-grid">
+        ${items.map((item,i)=>`
+          <button class="animal-card" id="temp-${i}" onclick="showTemp(${i})" style="border-top:3px solid ${item.color}">
+            <span class="emoji">${item.emoji}</span>
+            <span class="label">${item.name}</span>
+          </button>
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="temp-result">Tap untuk lihat suhu dan wujud!</div>
+    </div>
+    <div class="exp-instruction">
+      🌡️ Suhu mengukur panas atau dingin.<br>
+      💧 Air menjadi es di 0°C dan menguap di 100°C.<br>
+      🧊 Semakin dingin, partikel bergerak lebih lambat.
+    </div>
+    <button class="btn btn-primary" onclick="markDone('hotcold');say('Suhu mengubah wujud benda!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  window._tempItems=items;
+}
+function showTemp(i){
+  const item=window._tempItems[i];
+  const result=document.getElementById('temp-result');
+  if(result)result.textContent=`${item.emoji} ${item.name}: ${item.temp}°C — wujud: ${item.state}`;
+  say(item.name+' pada '+item.temp+' derajat, wujud '+item.state+'.');
+}
+
+// ── PLANT PARTS ──
+function renderPlantParts(area){
+  const parts=[
+    {emoji:'🌱',name:'Akar',func:'Menyedot air dan mineral dari tanah',color:'#795548'},
+    {emoji:'🌿',name:'Batang',func:'Mengangkut air ke daun dan menyangga tumbuhan',color:'#4CAF50'},
+    {emoji:'🍃',name:'Daun',func:'Membuat makanan dari cahaya Matahari (fotosintesis)',color:'#66BB6A'},
+    {emoji:'🌸',name:'Bunga',func:'Tempat reproduksi tumbuhan',color:'#E91E63'},
+    {emoji:'🍎',name:'Buah',func:'Menyimpan biji untuk tumbuh jadi tumbuhan baru',color:'#FF9800'},
+    {emoji:'🌾',name:'Biji',func:'Tumbuh jadi tumbuhan baru',color:'#FDD835'},
+  ];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Setiap bagian tumbuhan punya tugas!</div>
+      ${parts.map((p,i)=>`
+        <button onclick="showPart(${i})" style="background:${p.color}22;border:2px solid ${p.color}55;border-radius:12px;padding:10px 14px;color:var(--cream);cursor:pointer;display:flex;gap:10px;align-items:center;text-align:left;font-family:var(--font-b);font-size:.85rem;width:100%;margin-bottom:6px;">
+          <span style="font-size:1.5rem;">${p.emoji}</span>
+          <span><strong>${p.name}</strong><br><span style="opacity:.7;font-size:.75rem;" id="part-func-${i}">Tap untuk tahu fungsi →</span></span>
+        </button>
+      `).join('')}
+    </div>
+    <button class="btn btn-primary" onclick="markDone('plantparts');say('Setiap bagian tumbuhan punya tugas penting!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  window._plantParts=parts;
+}
+function showPart(i){
+  const p=window._plantParts[i];
+  const el=document.getElementById('part-func-'+i);
+  if(el)el.textContent=p.func;
+  say(p.name+': '+p.func+'.');
+}
+
+// ── ANIMALS ──
+function renderAnimals(area){
+  const animals=[
+    {emoji:'🐕',name:'Anjing',type:'vert',hab:'Di darat'},{emoji:'🐟',name:'Ikan',type:'vert',hab:'Di laut'},
+    {emoji:'🦅',name:'Burung',type:'vert',hab:'Di udara'},{emoji:'🐍',name:'Ular',type:'vert',hab:'Di darat'},
+    {emoji:'🦋',name:'Kupu-kupu',type:'invert',hab:'Di udara'},{emoji:'🐜',name:'Semut',type:'invert',hab:'Di darat'},
+    {emoji:'🦀',name:'Kepiting',type:'invert',hab:'Di laut'},{emoji:'🪱',name:'Cacing',type:'invert',hab:'Di tanah'},
+  ];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Bertulang belakang atau tidak?</div>
+      <div style="display:flex;gap:8px;margin:8px 0;flex-wrap:wrap;justify-content:center;">
+        <div id="vert-area" style="min-width:120px;min-height:60px;border:2px dashed rgba(76,175,80,.4);border-radius:12px;padding:6px;display:flex;flex-wrap:wrap;gap:4px;align-content:flex-start;"></div>
+        <div id="invert-area" style="min-width:120px;min-height:60px;border:2px dashed rgba(255,152,0,.4);border-radius:12px;padding:6px;display:flex;flex-wrap:wrap;gap:4px;align-content:flex-start;"></div>
+      </div>
+      <div style="font-size:.72rem;opacity:.6;display:flex;gap:20px;justify-content:center;">
+        <span style="color:var(--green);">🟢 Bertulang Belakang</span>
+        <span style="color:#FF9800;">🟠 Tidak Bertulang Belakang</span>
+      </div>
+      <div class="animal-grid" style="margin-top:10px;">
+        ${animals.map((a,i)=>`
+          <button class="animal-card" id="an-${i}" onclick="classifyAnimal(${i},'${a.type}')">
+            <span class="emoji">${a.emoji}</span>
+            <span class="label">${a.name}</span>
+          </button>
+        `).join('')}
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="markDone('animals');say('Pengelompokan hewan penting untuk sains!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Selesai!</button>
+  `;
+  window._animals=animals;
+}
+function classifyAnimal(i,type){
+  const a=window._animals[i];
+  const target=type==='vert'?document.getElementById('vert-area'):document.getElementById('invert-area');
+  const card=document.getElementById('an-'+i);
+  if(card&&target){card.style.display='none';const chip=document.createElement('div');chip.textContent=a.emoji+' '+a.name;chip.style.cssText='background:rgba(255,255,255,.1);border-radius:8px;padding:4px 8px;font-size:.75rem;';target.appendChild(chip);}
+}
+
+// ── FOOD CHAIN ──
+function renderFoodChain(area){
+  const steps=[
+    {emoji:'☀️',name:'Matahari',desc:'Sumber energi semua kehidupan',color:'#FFF176'},
+    {emoji:'🌿',name:'Tumbuhan',desc:'Menangkap cahaya, membuat makanan',color:'#81C784'},
+    {emoji:'🐰',name:'Pemakan Tumbuhan',desc:'Dapat energi dari tumbuhan',color:'#FF8A65'},
+    {emoji:'🐍',name:'Pemakan Daging',desc:'Dapat energi dari hewan lain',color:'#EF5350'},
+  ];
+  area.innerHTML=`
+    <div class="demo-box">
+      <div class="demo-label">Rantai Makanan — Energi mengalir!</div>
+      ${steps.map((s,i)=>`
+        <button onclick="showChain(${i})" id="chain-${i}" style="background:${s.color}22;border:2px solid ${s.color}55;border-radius:12px;padding:10px 14px;color:var(--cream);cursor:pointer;display:flex;gap:10px;align-items:center;text-align:left;font-family:var(--font-b);font-size:.85rem;width:100%;margin-bottom:6px;">
+          <span style="font-size:1.5rem;">${s.emoji}</span>
+          <span><strong>${s.name}</strong><br><span style="opacity:.7;font-size:.75rem;" id="chain-desc-${i}">Tap untuk tahu →</span></span>
+        </button>
+      `).join('')}
+    </div>
+    <div class="exp-instruction">Tidak ada yang menciptakan energi. Matahari memberi, tumbuhan tangkap, hewan makan tumbuhan, predator makan herbivora.</div>
+    <button class="btn btn-primary" onclick="markDone('foodchain');say('Energi mengalir dari Matahari melalui semua makhluk!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  window._chain=[
+    'Matahari adalah sumber energi utama. Tanpa Matahari, tidak ada kehidupan di Bumi.',
+    'Tumbuhan adalah producer. Membuat makanan sendiri dari cahaya Matahari lewat fotosintesis.',
+    'Herbivora adalah consumer. Makan tumbuhan untuk mendapat energi.',
+    'Karnivora adalah predator. Makan hewan lain untuk mendapat energi.',
+  ];
+}
+function showChain(i){
+  const el=document.getElementById('chain-desc-'+i);
+  if(el)el.textContent=window._chain[i];
+  say(window._chain[i]);
+}
+
+// ── RABBITY ──
+function rabbitySpeak(){
+  const msgs=['Ayo belajar!','Kamu hebat!','Tidak apa-apa coba lagi!','Rabbity bangga!'];
+  say(msgs[Math.floor(Math.random()*msgs.length)]);
+}
+function say(text){
+  const b=document.getElementById('rabbity-bubble');
+  if(b){b.textContent='🐰 '+text;b.classList.add('show');}
+  if('speechSynthesis' in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='id-ID';u.rate=.85;speechSynthesis.speak(u);}
+  setTimeout(()=>{if(b)b.classList.remove('show')},3500);
+}
+
+// ── CONFETTI ──
+function confetti(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const c=document.getElementById('confetti-container');
+  if(!c)return;
+  c.innerHTML='';
+  const colors=['#FFD700','#EF5350','#66BB6A','#42A5F5','#AB47BC','#FF9800'];
+  for(let i=0;i<35;i++){const p=document.createElement('div');p.className='confetti-piece';p.style.left=Math.random()*100+'%';p.style.background=colors[Math.floor(Math.random()*colors.length)];p.style.animationDelay=(Math.random()*.8)+'s';c.appendChild(p);}
+  setTimeout(()=>c.innerHTML='',3500);
+}
+
+// ── PARENT PANEL ──
+function toggleParent(){
+  const p=document.getElementById('parent-panel');
+  if(!p)return;
+  p.classList.toggle('open');
+  if(p.classList.contains('open'))renderParentPanel();
+}
+function closeParent(){
+  const p=document.getElementById('parent-panel');
+  if(p)p.classList.remove('open');
+}
+function renderParentPanel(){
+  const c=document.getElementById('parent-content');
+  if(!c)return;
+  c.innerHTML='';
+  SECTIONS.forEach((s,i)=>{
+    const done=s.exps.filter(e=>isDone(e.id)).length;
+    const total=s.exps.length;
+    const pct=Math.round((done/total)*100);
+    const missions=s.missions.slice(0,2).map(m=>'• '+m).join('<br>');
+    c.innerHTML+=`<div class="panel-row"><div class="panel-row-label">${s.emoji} ${s.title} <span>${pct}%</span></div><div class="panel-bar"><div class="panel-bar-fill" style="width:${pct}%;background:${s.color};"></div></div><div class="panel-missions">${done}/${total} aktivitas<br><span style="font-size:.7rem">${missions}</span></div></div>`;
+  });
+}
+
+// ── INIT ──
+function init(){
+  initState();
+  genStars();
+  renderHome();
+  setTimeout(()=>say('Hai! Ayo kenali dunia bersama!'),1000);
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeParent();goBack();}});
+window.addEventListener('load',init);
+</script>
+</body>
+</html>
