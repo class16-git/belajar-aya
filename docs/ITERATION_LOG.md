@@ -44,29 +44,57 @@ Cycle 1 QA delegated to Codex — see deleg_22a62189 (in progress)
 
 ---
 
-## CYCLE 2 — Accessibility & Keyboard Navigation
-**Status:** Pending
-**Planned:**
-- Tab/arrow key navigation for all screens
-- Focus rings on all interactive elements
-- Reduced motion media query support
-- WCAG AA contrast check
-- Skip-to-content link
+## CYCLE 2 — Accessibility Baseline
+**Status:** Complete ✅
+**Committed:** e05bd38 — "Accessibility: keyboard nav, focus rings, WCAG, reduced motion, skip link"
+**Objectives:**
+- ✅ Keyboard navigation (Tab, Enter, Escape, arrow keys)
+- ✅ Focus rings on all interactive elements (22 tabindex added)
+- ✅ WCAG contrast fix
+- ✅ Reduced motion media query
+- ✅ Skip-to-content link ("Langsung ke isi")
+- ✅ Profile button 40px → 48px
+- ✅ Orbit animation slowdown (30ms → 120ms)
+- ✅ TabIndex cleanup for all onclick elements
 
-## CYCLE 3
-**Status:** Pending
+## CYCLE 3 — Content Schema + Replay + Curiosity Routing
+**Status:** Complete ✅
+**Committed:** d34a54e — "feat: Cycle 3 — replay, curiosity routing, lesson completion badges, TTS"
+**Objectives:**
+- ✅ Offline mission preview in parent panel (all missions ✅/⭕)
+- ✅ Experience replay button "🔄 Coba Lagi"
+- ✅ TTS extended to read experience content
+- ✅ Lesson completion badges on home hub
+- ✅ isLessonComplete() function added
 
-## CYCLE 4
-**Status:** Pending
+## CYCLE 4 — Practical Life + Sensorial
+**Status:** Complete ✅
+**Committed:** ff7b679 — practical-life.html (new file)
+**Planned:** ✅ Pouring, tong transfer, buttoning, handwashing, pink tower, brown stairs, sound cylinders
 
-## CYCLE 5
-**Status:** Pending
+## CYCLE 5 — Language Experiences  
+**Status:** In Progress (deleg_539e1c88)
+**Planned:** Sandpaper letters (A-Z with TTS phonemes), Movable alphabet (CVC words), Picture dictation (touch canvas drawing)
 
-## CYCLE 6
-**Status:** Pending
+## CYCLE 6 — Math Expansion
+**Status:** In Progress (deleg_57e587bb)
+**Planned:** Number rods, Spindle box, Cards & counters, Teen board, Tens board
 
-## CYCLE 7
+## CYCLE 7 — Cultural + Service Worker
 **Status:** Pending
+**Planned:** Globe work, continent maps, landforms, PWA offline, parent facilitation cards
 
-## CYCLE 8+
+## CYCLE 8 — Real-Child Testing
 **Status:** Pending
+**Planned:** Aya test session, Ibu Fildzah observation, confusion point mapping
+
+## CYCLE 9 — Polish + Regression
+**Status:** Pending
+**Planned:** Full regression, performance, error boundaries, analytics hooks
+
+## CYCLE 10 — First Meaningful Release
+**Status:** Pending
+**Planned:** Codex final QA, v1.0.0 tag, share link, README, must hit 6/10 to ship
+
+## 🚨 Blocker: iPad Real-Device Test
+Required before Cycle 10. Test BUILD drag-drop, Pattern Discovery, Five Great Lessons on ACTUAL iPad.
