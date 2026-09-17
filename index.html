@@ -40,7 +40,7 @@ body {
   padding: 24px 16px 12px;
   background: linear-gradient(180deg, #FFF8F0 0%, rgba(245,158,11,0.06) 100%);
 }
-.header-piko { font-size: 3rem; margin-bottom: 4px; }
+.header-rabbity { font-size: 3rem; margin-bottom: 4px; }
 .header-title {
   font-family: var(--font-head);
   font-size: 2rem;
@@ -301,20 +301,20 @@ body {
 }
 
 /* ===== PIKO VOICE ===== */
-.piko-float {
+.rabbity-float {
   position: fixed;
   bottom: 20px;
   left: 20px;
   font-size: 2.2rem;
   cursor: pointer;
-  animation: pikoFloat 3s ease-in-out infinite;
+  animation: rabbityFloat 3s ease-in-out infinite;
   transition: transform 0.15s;
   z-index: 50;
   user-select: none;
   text-decoration: none;
 }
-.piko-float:active { transform: scale(0.9); }
-@keyframes pikoFloat {
+.rabbity-float:active { transform: scale(0.9); }
+@keyframes rabbityFloat {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
 }
@@ -358,7 +358,7 @@ body {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
-  .piko-float { animation: none; }
+  .rabbity-float { animation: none; }
 }
 
 /* ===== MOBILE ===== */
@@ -372,7 +372,7 @@ body {
 
 <!-- HEADER -->
 <div class="header" id="main-content">
-  <div class="header-piko">🐰</div>
+  <div class="header-rabbity">🐰</div>
   <div class="header-title">Belajar <span>Aya</span></div>
   <div class="header-sub">Taman Belajar Montessori</div>
   <div class="header-greeting" id="greeting"></div>
@@ -397,7 +397,7 @@ body {
     <div class="app-badge" id="badge-counting">Mulai!</div>
     <div class="app-icon">🐰</div>
     <div class="app-title">Loncat Berhitung</div>
-    <div class="app-desc">Piko melompat di garis angka</div>
+    <div class="app-desc">Rabbity melompat di garis angka</div>
   </a>
 
   <!-- Card 2: Five Great Lessons -->
@@ -471,7 +471,7 @@ body {
 </div>
 
 <!-- PIKO FLOATING -->
-<a href="skip-counting.html" class="piko-float" id="piko-btn" title="Buka Loncat Berhitung">🐰</a>
+<a href="skip-counting.html" class="rabbity-float" id="rabbity-btn" title="Buka Loncat Berhitung">🐰</a>
 
 <!-- PARENT TOGGLE -->
 <button class="parent-toggle" id="parent-btn" onclick="togglePanel()" title="Panel Orang Tua">👤</button>

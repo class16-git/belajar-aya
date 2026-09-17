@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Belajar Loncat dengan Piko! 🐰</title>
+  <title>Belajar Loncat dengan Rabbity! 🐰</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
@@ -104,14 +104,14 @@
 
     .home-logo span { display: block; font-size: 0.6em; color: var(--soft-green); }
 
-    .piko-intro {
+    .rabbity-intro {
       width: 120px;
       height: 120px;
       position: relative;
       animation: pulse 2s infinite;
     }
 
-    .piko-intro .body {
+    .rabbity-intro .body {
       width: 100px;
       height: 90px;
       background: #F5F5F5;
@@ -123,7 +123,7 @@
       border: 3px solid #E0E0E0;
     }
 
-    .piko-intro .head {
+    .rabbity-intro .head {
       width: 80px;
       height: 70px;
       background: #F5F5F5;
@@ -135,7 +135,7 @@
       border: 3px solid #E0E0E0;
     }
 
-    .piko-intro .ear {
+    .rabbity-intro .ear {
       width: 22px;
       height: 45px;
       background: #F5F5F5;
@@ -145,10 +145,10 @@
       border: 3px solid #E0E0E0;
     }
 
-    .piko-intro .ear.left { left: 20px; transform: rotate(-15deg); }
-    .piko-intro .ear.right { right: 20px; transform: rotate(15deg); }
+    .rabbity-intro .ear.left { left: 20px; transform: rotate(-15deg); }
+    .rabbity-intro .ear.right { right: 20px; transform: rotate(15deg); }
 
-    .piko-intro .ear::after {
+    .rabbity-intro .ear::after {
       content: '';
       width: 12px;
       height: 30px;
@@ -160,7 +160,7 @@
       transform: translateX(-50%);
     }
 
-    .piko-intro .eye {
+    .rabbity-intro .eye {
       width: 10px;
       height: 12px;
       background: #333;
@@ -169,10 +169,10 @@
       top: 22px;
     }
 
-    .piko-intro .eye.left { left: 22px; }
-    .piko-intro .eye.right { right: 22px; }
+    .rabbity-intro .eye.left { left: 22px; }
+    .rabbity-intro .eye.right { right: 22px; }
 
-    .piko-intro .nose {
+    .rabbity-intro .nose {
       width: 12px;
       height: 10px;
       background: #FFCDD2;
@@ -183,7 +183,7 @@
       transform: translateX(-50%);
     }
 
-    .piko-intro .mouth {
+    .rabbity-intro .mouth {
       width: 20px;
       height: 10px;
       border-bottom: 3px solid #FFCDD2;
@@ -561,7 +561,7 @@
       border-radius: 2px;
     }
 
-    .piko-bunny {
+    .rabbity-bunny {
       font-size: 2.5rem;
       position: absolute;
       transition: left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -571,7 +571,7 @@
       filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
     }
 
-    .piko-bunny.hopping {
+    .rabbity-bunny.hopping {
       animation: bunnyBounce 0.5s ease-out forwards;
     }
 
@@ -843,7 +843,7 @@
       text-align: center;
     }
 
-    .intro-piko {
+    .intro-rabbity {
       display: flex;
       align-items: center;
       gap: 16px;
@@ -970,14 +970,14 @@
 <!-- ===== INTRO SCREEN ===== -->
 <div class="screen" id="screen-intro">
   <div class="intro-stage">
-    <div class="intro-piko" id="intro-piko-area">
+    <div class="intro-rabbity" id="intro-rabbity-area">
       <div class="intro-bunny" id="intro-bunny">🐰</div>
       <div class="intro-number" id="intro-number">?</div>
     </div>
 
     <div class="intro-text" id="intro-text">
-      <h2>Kenalan dengan Piko!</h2>
-      <p>Piko si Kelinci cuma tahu <strong>satu trik</strong>: melompat!</p>
+      <h2>Kenalan dengan Rabbity!</h2>
+      <p>Rabbity si Kelinci cuma tahu <strong>satu trik</strong>: melompat!</p>
     </div>
 
     <div class="intro-dots" id="intro-dots"></div>
@@ -989,7 +989,7 @@
 
 <!-- ===== HOME SCREEN ===== -->
 <div class="screen active" id="home">
-  <div class="piko-intro">
+  <div class="rabbity-intro">
     <div class="head">
       <div class="ear left"></div>
       <div class="ear right"></div>
@@ -1003,7 +1003,7 @@
 
   <div class="home-logo">
     Belajar Loncat!<br>
-    <span>dengan Piko si Kelinci 🐰</span>
+    <span>dengan Rabbity si Kelinci 🐰</span>
   </div>
 
   <p class="home-subtitle">Ayo jelajahi pola angka!</p>
@@ -1011,7 +1011,7 @@
   <div class="home-buttons">
     <button class="btn btn-build"  onclick="startGame('build')">🔨 Buat Kelompok</button>
     <button class="btn btn-jump"   onclick="startGame('jump')">🐰 Loncat Baris Angka</button>
-    <button class="btn btn-next"   onclick="startGame('pattern')">👁️ Lihat Pola Piko</button>
+    <button class="btn btn-next"   onclick="startGame('pattern')">👁️ Lihat Pola Rabbity</button>
     <button class="btn btn-next"   onclick="startGame('next')">🔮 Apa Angka Berikutnya?</button>
     <button class="btn btn-missing" onclick="startGame('missing')">🔍 Angka Hilang</button>
     <button class="btn btn-detective" onclick="startGame('detective')">🕵️ Aya Detektif Aturan</button>
@@ -1058,7 +1058,7 @@
   <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
   <div class="game-area">
     <div class="game-title">🐰 Loncat Baris Angka</div>
-    <p class="game-prompt">Piko melompat berapa langkah?</p>
+    <p class="game-prompt">Rabbity melompat berapa langkah?</p>
 
     <div class="jump-selector">
       <button class="jump-btn by10 selected" onclick="selectJumpSize(10)">+10</button>
@@ -1075,8 +1075,8 @@
     <div class="number-line" id="number-line"></div>
 
     <div class="jump-controls">
-      <button class="jump-btn-action" onclick="pikoJump()" id="jump-btn">Loncat! 🐰</button>
-      <button class="jump-btn-action" onclick="resetPiko()">Mulai Ulang 🔄</button>
+      <button class="jump-btn-action" onclick="rabbityJump()" id="jump-btn">Loncat! 🐰</button>
+      <button class="jump-btn-action" onclick="resetRabbity()">Mulai Ulang 🔄</button>
     </div>
 
     <div class="feedback" id="jump-feedback"></div>
@@ -1088,7 +1088,7 @@
   <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
   <div class="game-area">
     <div class="game-title">🔮 Apa Angka Berikutnya?</div>
-    <p class="game-prompt" id="next-prompt">Piko berhenti di sini:</p>
+    <p class="game-prompt" id="next-prompt">Rabbity berhenti di sini:</p>
 
     <div class="jump-selector">
       <button class="jump-btn by10 selected" onclick="selectNextSize(10)">+10</button>
@@ -1111,8 +1111,8 @@
 <div class="screen" id="screen-pattern">
   <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
   <div class="game-area">
-    <div class="game-title">👁️ Lihat Pola Piko</div>
-    <p class="game-prompt">Tap angka yang diinjak Piko!</p>
+    <div class="game-title">👁️ Lihat Pola Rabbity</div>
+    <p class="game-prompt">Tap angka yang diinjak Rabbity!</p>
 
     <div class="jump-selector">
       <button class="jump-btn by10 selected" onclick="selectPatternSize(10)">+10</button>
@@ -1124,7 +1124,7 @@
 
     <div class="pattern-board" id="pattern-board"></div>
 
-    <p class="game-prompt" id="pattern-question" style="margin-top:12px; font-size:0.95rem;">Tekan 3 angka yang diinjak Piko!</p>
+    <p class="game-prompt" id="pattern-question" style="margin-top:12px; font-size:0.95rem;">Tekan 3 angka yang diinjak Rabbity!</p>
 
     <div class="choice-row" id="pattern-choices"></div>
 
@@ -1161,13 +1161,13 @@
   <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
   <div class="game-area">
     <div class="game-title">🕵️ Aya Detektif Aturan</div>
-    <p class="game-prompt" id="detective-prompt">Piko melompat dengan aturan apa?</p>
+    <p class="game-prompt" id="detective-prompt">Rabbity melompat dengan aturan apa?</p>
 
     <div class="progress-bar"><div class="progress-fill" id="detective-progress" style="width:0%"></div></div>
 
     <div class="pattern-display" id="detective-display"></div>
 
-    <p class="rule-question" id="detective-question">Aturan Piko:</p>
+    <p class="rule-question" id="detective-question">Aturan Rabbity:</p>
 
     <div class="choice-row" id="detective-choices"></div>
 
@@ -1183,7 +1183,7 @@
 const state = {
   intro: { step: 0, size: 10 },
   build: { size: 10, baskets: 0, dotsInBaskets: 0, targetGroups: 3 },
-  jump:  { size: 10, pikoPos: 0 },
+  jump:  { size: 10, rabbityPos: 0 },
   next:  { size: 10, score: 0, rounds: 0, seq: [], roundSize: 10 },
   pattern: { size: 10, selected: [], score: 0 },
   missing: { size: 10, score: 0, rounds: 0 },
@@ -1193,27 +1193,27 @@ const state = {
 // ===== INTRO ENGINE =====
 const INTRO_STEPS = [
   {
-    text: '<h2>Kenalan dengan Piko!</h2><p>Piko si Kelinci cuma tahu <strong>satu trik</strong>: melompat!</p>',
+    text: '<h2>Kenalan dengan Rabbity!</h2><p>Rabbity si Kelinci cuma tahu <strong>satu trik</strong>: melompat!</p>',
     action: null,
     btn: 'Ayo lihat! 👀'
   },
   {
-    text: '<h2>Piko lompat +10!</h2><p>Setiap lompatan, Piko maju <strong>10 langkah</strong>. Mau lihat?</p>',
+    text: '<h2>Rabbity lompat +10!</h2><p>Setiap lompatan, Rabbity maju <strong>10 langkah</strong>. Mau lihat?</p>',
     action: () => animateIntroJump(10),
     btn: 'Lihat! 🐰'
   },
   {
-    text: '<h2>0 → 10 → 20!</h2><p>Piko melompat dari 0 ke 10, lalu ke 20! <strong>Polanya selalu sama!</strong></p>',
+    text: '<h2>0 → 10 → 20!</h2><p>Rabbity melompat dari 0 ke 10, lalu ke 20! <strong>Polanya selalu sama!</strong></p>',
     action: () => showIntroSequence(10),
     btn: 'Terus! ✨'
   },
   {
-    text: '<h2>Coba +5!</h2><p>Sekarang Piko lompat <strong>5 langkah</strong>: 0, 5, 10, 15...</p>',
+    text: '<h2>Coba +5!</h2><p>Sekarang Rabbity lompat <strong>5 langkah</strong>: 0, 5, 10, 15...</p>',
     action: () => animateIntroJump(5),
     btn: 'Lihat! 🐰'
   },
   {
-    text: '<h2>Kamu sudah tahu polanya!</h2><p>Loncat itu seperti lompatan Piko — <strong>selalu sama!</strong></p>',
+    text: '<h2>Kamu sudah tahu polanya!</h2><p>Loncat itu seperti lompatan Rabbity — <strong>selalu sama!</strong></p>',
     action: null,
     btn: 'Mulai! 🚀'
   }
@@ -1322,7 +1322,7 @@ function startGame(name) {
   if (name === 'detective') initDetective();
 }
 
-// ===== PATTERN DISCOVERY: Tap numbers where Piko lands =====
+// ===== PATTERN DISCOVERY: Tap numbers where Rabbity lands =====
 function initPattern() {
   state.pattern.selected = [];
   renderPattern();
@@ -1375,7 +1375,7 @@ function handlePatternTap(cell, val) {
     // After 3+ selected, ask the question
     if (state.pattern.selected.length >= 3) {
       setTimeout(() => {
-        document.getElementById('pattern-question').textContent = 'Piko lompat berapa langkah?';
+        document.getElementById('pattern-question').textContent = 'Rabbity lompat berapa langkah?';
         renderPatternChoices();
       }, 500);
     }
@@ -1428,7 +1428,7 @@ function checkPatternAnswer(selected, correct, btn) {
     setTimeout(renderPattern, 2200);
   } else {
     btn.classList.add('wrong');
-    showFeedback('pattern', 'Piko lompat ' + correct + ' langkah! 👣', 'hint');
+    showFeedback('pattern', 'Rabbity lompat ' + correct + ' langkah! 👣', 'hint');
     setTimeout(() => btn.classList.remove('wrong'), 800);
   }
 }
@@ -1481,6 +1481,7 @@ function makeDot(num, cls = '') {
   d.draggable = false;
   d.style.animationDelay = (num * 5) + 'ms';
   d.style.animation = 'dotDrop 0.4s ease-out backwards';
+  d.style.pointerEvents = 'none'; // overridden to 'auto' if in source pool
 
   // Touch + mouse drag — iPad Safari fix: track last pointer position for pointerup
   let startX, startY, origParent;
@@ -1547,6 +1548,9 @@ function makeDot(num, cls = '') {
         // Only accept if basket not yet full
         if (currentCount < target) {
           const newDot = makeDot(parseInt(d.textContent));
+          // Make new dot inside basket non-interactive
+          newDot.style.pointerEvents = 'none';
+          newDot.style.cursor = 'default';
           b.insertBefore(newDot, b.firstChild);
           const count = currentCount + 1;
           b.dataset.count = count;
@@ -1603,9 +1607,9 @@ function selectBuildSize(n) {
 
 // ===== JUMP: PIKO ON NUMBER LINE =====
 function initJump() {
-  state.jump.pikoPos = 0;
+  state.jump.rabbityPos = 0;
   buildNumberLine();
-  updatePikoPosition(false);
+  updateRabbityPosition(false);
   clearFeedback('jump');
   document.getElementById('jump-feedback').innerHTML = '';
 }
@@ -1641,13 +1645,13 @@ function buildNumberLine() {
     inner.appendChild(cell);
   }
 
-  // Piko bunny element
-  const piko = document.createElement('div');
-  piko.className = 'piko-bunny';
-  piko.id = 'piko';
-  piko.textContent = '🐰';
-  piko.onclick = () => pikoJump();
-  inner.appendChild(piko);
+  // Rabbity bunny element
+  const rabbity = document.createElement('div');
+  rabbity.className = 'rabbity-bunny';
+  rabbity.id = 'rabbity';
+  rabbity.textContent = '🐰';
+  rabbity.onclick = () => rabbityJump();
+  inner.appendChild(rabbity);
 
   container.innerHTML = '';
   container.appendChild(inner);
@@ -1655,61 +1659,61 @@ function buildNumberLine() {
   document.getElementById('rule-num').textContent = state.jump.size;
 }
 
-function updatePikoPosition(animate = true) {
-  const piko = document.getElementById('piko');
-  if (!piko) return;
+function updateRabbityPosition(animate = true) {
+  const rabbity = document.getElementById('rabbity');
+  if (!rabbity) return;
 
   // Calculate position: each num-cell is ~52px wide
   const step = state.jump.size === 10 ? 10 : state.jump.size === 5 ? 5 : 2;
   const cellWidth = 52;
   const offset = 26; // center of first cell
 
-  const targetCell = state.jump.pikoPos / step;
+  const targetCell = state.jump.rabbityPos / step;
   const leftPx = offset + targetCell * cellWidth;
 
-  piko.style.left = leftPx + 'px';
+  rabbity.style.left = leftPx + 'px';
 
   // Highlight current cell
   document.querySelectorAll('.num-label').forEach(l => l.classList.remove('active'));
-  const active = document.querySelector(`.num-label[data-val="${state.jump.pikoPos}"]`);
+  const active = document.querySelector(`.num-label[data-val="${state.jump.rabbityPos}"]`);
   if (active) active.classList.add('active');
 }
 
-function pikoJump() {
+function rabbityJump() {
   const maxVal = state.jump.size * 10;
-  if (state.jump.pikoPos >= maxVal) {
+  if (state.jump.rabbityPos >= maxVal) {
     // Reset
-    state.jump.pikoPos = 0;
-    updatePikoPosition(true);
+    state.jump.rabbityPos = 0;
+    updateRabbityPosition(true);
     return;
   }
 
-  const piko = document.getElementById('piko');
-  piko.classList.remove('hopping');
-  void piko.offsetWidth; // reflow
-  piko.classList.add('hopping');
+  const rabbity = document.getElementById('rabbity');
+  rabbity.classList.remove('hopping');
+  void rabbity.offsetWidth; // reflow
+  rabbity.classList.add('hopping');
 
-  state.jump.pikoPos += state.jump.size;
+  state.jump.rabbityPos += state.jump.size;
 
   // Highlight path
   const step = state.jump.size === 10 ? 10 : state.jump.size === 5 ? 5 : 2;
-  for (let v = state.jump.pikoPos - state.jump.size + step; v <= state.jump.pikoPos; v += step) {
+  for (let v = state.jump.rabbityPos - state.jump.size + step; v <= state.jump.rabbityPos; v += step) {
     const lbl = document.querySelector(`.num-label[data-val="${v}"]`);
     if (lbl) lbl.classList.add('highlighted');
   }
 
   setTimeout(() => {
-    updatePikoPosition(false);
+    updateRabbityPosition(false);
     updateJumpFeedback();
   }, 300);
 
   // Progress
-  const pct = Math.min(100, (state.jump.pikoPos / maxVal) * 100);
+  const pct = Math.min(100, (state.jump.rabbityPos / maxVal) * 100);
   document.getElementById('jump-progress').style.width = pct + '%';
 
-  if (state.jump.pikoPos >= maxVal) {
+  if (state.jump.rabbityPos >= maxVal) {
     confetti();
-    showFeedback('jump', 'Hebat! Piko sampai! 🌟 Mau lagi?', 'success');
+    showFeedback('jump', 'Hebat! Rabbity sampai! 🌟 Mau lagi?', 'success');
     document.getElementById('jump-btn').disabled = true;
     const p = loadProgress();
     p.jump = p.jump || {};
@@ -1719,25 +1723,25 @@ function pikoJump() {
 }
 
 function updateJumpFeedback() {
-  const pos = state.jump.pikoPos;
+  const pos = state.jump.rabbityPos;
   if (pos === 0) {
     clearFeedback('jump');
   } else {
     const messages = [
-      `${pos}!`, `Piko di ${pos}!`, `Lompatan bagus!`, `${pos} — terus!`
+      `${pos}!`, `Rabbity di ${pos}!`, `Lompatan bagus!`, `${pos} — terus!`
     ];
     showFeedback('jump', messages[Math.floor(Math.random() * messages.length)], 'hint');
   }
 }
 
-function resetPiko() {
-  state.jump.pikoPos = 0;
+function resetRabbity() {
+  state.jump.rabbityPos = 0;
   document.querySelectorAll('.num-label').forEach(l => {
     l.classList.remove('highlighted', 'active');
   });
   document.getElementById('jump-progress').style.width = '0%';
   document.getElementById('jump-btn').disabled = false;
-  updatePikoPosition(false);
+  updateRabbityPosition(false);
   clearFeedback('jump');
 }
 
@@ -1745,7 +1749,7 @@ function selectJumpSize(n) {
   document.querySelectorAll('#screen-jump .jump-btn').forEach(b => b.classList.remove('selected'));
   document.querySelector(`#screen-jump .jump-btn.by${n}`).classList.add('selected');
   state.jump.size = n;
-  state.jump.pikoPos = 0;
+  state.jump.rabbityPos = 0;
   initJump();
 }
 
@@ -1955,7 +1959,7 @@ function renderDetective() {
     display.appendChild(n);
   });
 
-  document.getElementById('detective-question').textContent = 'Piko lompat berapa?';
+  document.getElementById('detective-question').textContent = 'Rabbity lompat berapa?';
 
   const choices = new Set([size]);
   while (choices.size < 4) {
@@ -1997,7 +2001,7 @@ function checkDetectiveAnswer(selected, correct, btn) {
   } else {
     btn.classList.add('wrong');
     setTimeout(() => btn.classList.remove('wrong'), 600);
-    showFeedback('detective', 'Piko lompat +' + correct + '. Coba lagi!', 'hint');
+    showFeedback('detective', 'Rabbity lompat +' + correct + '. Coba lagi!', 'hint');
   }
 }
 
@@ -2006,7 +2010,7 @@ function getSuccessMsg() {
   const msgs = [
     'Hebat! Kamu menemukan polanya! 🌟',
     'Luar biasa! Aturannya tetap sama! 🎉',
-    'Super! Piko lompat terus sama! ⭐',
+    'Super! Rabbity lompat terus sama! ⭐',
     'Hebat! Kamu lihat polanya! ✨',
     'Pintar! Loncatannya tepat! 🌈',
     'Hebat! Aturan itu tidak berubah! 💛'
@@ -2016,9 +2020,9 @@ function getSuccessMsg() {
 
 function getHintMsg(size) {
   const msgs = [
-    `Ingat: Piko lompat +${size}! Coba lagi!`,
+    `Ingat: Rabbity lompat +${size}! Coba lagi!`,
     `Petunjuk: hitung ${size}-${size}-${size}...`,
-    `Piko selalu lompat ${size} langkah!`,
+    `Rabbity selalu lompat ${size} langkah!`,
   ];
   return msgs[Math.floor(Math.random() * msgs.length)];
 }

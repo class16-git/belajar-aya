@@ -226,7 +226,7 @@ body {
 .btn-home:active { background: rgba(255,255,255,0.2); }
 
 /* ===== PIKO CHARACTER ===== */
-.piko-btn {
+.rabbity-btn {
   position: fixed;
   bottom: 20px; right: 20px;
   font-size: 2.5rem;
@@ -240,7 +240,7 @@ body {
   backdrop-filter: blur(10px);
   transition: transform 0.2s;
 }
-.piko-btn:active { transform: scale(0.9); }
+.rabbity-btn:active { transform: scale(0.9); }
 
 /* ===== LESSON SCREENS ===== */
 .lesson-screen {
@@ -1007,7 +1007,7 @@ button:focus {
 <div class="screen active" id="screen-home" aria-label="Halaman utama">
 <span id="main-content" tabindex="-1" style="display:none;"></span>
   <div class="home-header">
-    <button class="piko-btn" id="profile-btn" onclick="showScreen('profile')" title="Profil" style="position:absolute;top:0;right:0;font-size:1.5rem;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">🤠</button>
+    <button class="rabbity-btn" id="profile-btn" onclick="showScreen('profile')" title="Profil" style="position:absolute;top:0;right:0;font-size:1.5rem;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">🤠</button>
     <div class="home-title" id="home-title">Kita Semua<br>Terhubung</div>
     <div class="home-subtitle" id="home-greeting">Lima Pelajaran Besar</div>
   </div>
@@ -1086,8 +1086,8 @@ button:focus {
   </div>
 </div>
 
-<!-- Piko Button -->
-<button class="piko-btn" id="piko-btn" onclick="pikoSpeak()" title="Piko bicara">🐰</button>
+<!-- Rabbity Button -->
+<button class="rabbity-btn" id="rabbity-btn" onclick="rabbitySpeak()" title="Rabbity bicara">🐰</button>
 
 <!-- Confetti Container -->
 <div class="confetti-container" id="confetti"></div>
@@ -1246,7 +1246,7 @@ function init() {
 
   generateStars();
   renderHomeGrid();
-  setupPiko();
+  setupRabbity();
   initProfile();
   updateParentPanel();
 }
@@ -1318,18 +1318,18 @@ function showScreen(name) {
   // Nav buttons
   const backBtn = document.getElementById('btn-back');
   const homeBtn = document.getElementById('btn-home');
-  const pikoBtn = document.getElementById('piko-btn');
+  const rabbityBtn = document.getElementById('rabbity-btn');
 
   if (name === 'home') {
     backBtn.style.display = 'none';
     homeBtn.style.display = 'none';
-    // Always show Piko on home too
-    pikoBtn.style.display = 'block';
+    // Always show Rabbity on home too
+    rabbityBtn.style.display = 'block';
     updateHomeGreeting();
   } else {
     backBtn.style.display = 'block';
     homeBtn.style.display = 'block';
-    pikoBtn.style.display = 'block';
+    rabbityBtn.style.display = 'block';
   }
 }
 
@@ -2729,8 +2729,8 @@ function expSkipCount() {
   const c = document.getElementById('exp-container');
   c.innerHTML = `
   <div class="exp-area">
-    <div class="exp-title">🐰 Piko Loncat Berapa?</div>
-    <div class="exp-prompt">Piko melompat dengan jarak yang sama! Berapa langkah setiap lompatan?</div>
+    <div class="exp-title">🐰 Rabbity Loncat Berapa?</div>
+    <div class="exp-prompt">Rabbity melompat dengan jarak yang sama! Berapa langkah setiap lompatan?</div>
     <div class="jump-selector" style="margin-bottom:12px;">
       <button class="jump-btn by10 selected" onclick="setSkipSize(10,this)" style="background:var(--green);">+10</button>
       <button class="jump-btn by5" onclick="setSkipSize(5,this)" style="background:var(--orange);">+5</button>
@@ -2738,10 +2738,10 @@ function expSkipCount() {
     </div>
     <div class="number-line" id="skip-line" style="justify-content:center;flex-wrap:nowrap;gap:2px;"></div>
     <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:8px;">
-      <button class="btn" style="font-size:0.85rem;padding:10px 20px;background:rgba(76,175,80,0.15);color:var(--green);border:1px solid rgba(76,175,80,0.3);" onclick="pikoHop()">🐰 Loncat!</button>
+      <button class="btn" style="font-size:0.85rem;padding:10px 20px;background:rgba(76,175,80,0.15);color:var(--green);border:1px solid rgba(76,175,80,0.3);" onclick="rabbityHop()">🐰 Loncat!</button>
       <button class="btn" style="font-size:0.85rem;padding:10px 20px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);" onclick="resetSkip()">🔄 Reset</button>
     </div>
-    <div class="feedback-msg hint" id="skip-msg" style="margin-top:8px;">Piko loncat +10: 0 → 10 → 20 → 30! Pola yang sama berulang!</div>
+    <div class="feedback-msg hint" id="skip-msg" style="margin-top:8px;">Rabbity loncat +10: 0 → 10 → 20 → 30! Pola yang sama berulang!</div>
     <div class="offline-mission">
       <div class="om-emoji">🌍</div>
       <div class="om-title">Coba di dunia nyata!</div>
@@ -2784,19 +2784,19 @@ function renderSkipLine() {
   }, 50);
 }
 
-function pikoHop() {
+function rabbityHop() {
   state.skipPos = Math.min(state.skipPos + state.skipSize, 30);
   renderSkipLine();
   const msg = document.getElementById('skip-msg');
   if (msg) {
     if (state.skipPos >= 30) {
       msg.className = 'feedback-msg success';
-      msg.textContent = 'Hebat! Piko sampai di 30! Polanya selalu sama: +' + state.skipSize + '! 🌟';
+      msg.textContent = 'Hebat! Rabbity sampai di 30! Polanya selalu sama: +' + state.skipSize + '! 🌟';
       confetti();
       markDone();
     } else {
       msg.className = 'feedback-msg hint';
-      msg.textContent = 'Piko di ' + state.skipPos + '! Lompatan berikutnya: ' + (state.skipPos + state.skipSize) + '! 🐰';
+      msg.textContent = 'Rabbity di ' + state.skipPos + '! Lompatan berikutnya: ' + (state.skipPos + state.skipSize) + '! 🐰';
     }
   }
 }
@@ -2810,7 +2810,7 @@ function resetSkip() {
   state.skipPos = 0;
   renderSkipLine();
   const msg = document.getElementById('skip-msg');
-  if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Piko loncat +' + state.skipSize + ': 0 → ' + state.skipSize + ' → ' + (state.skipSize*2) + '!'; }
+  if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Rabbity loncat +' + state.skipSize + ': 0 → ' + state.skipSize + ' → ' + (state.skipSize*2) + '!'; }
 }
 
 // ─── LESSON 5: DECIMAL ───
@@ -2862,11 +2862,11 @@ function showDecimal(idx) {
 // ═══════════════════════════════════════
 // PIKO TTS
 // ═══════════════════════════════════════
-function setupPiko() {
-  // Nothing needed — pikoSpeak reads the current screen
+function setupRabbity() {
+  // Nothing needed — rabbitySpeak reads the current screen
 }
 
-function pikoSpeak() {
+function rabbitySpeak() {
   if (!state.audioOn) return;
   const texts = {
     'home': 'Pilih pelajaran yang ingin kamu jelajahi! Semua pelajaran saling terhubung!',
