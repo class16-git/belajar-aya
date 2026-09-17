@@ -1531,7 +1531,7 @@ function makeDot(num, cls = '') {
     const cx = e.clientX !== 0 ? e.clientX : lastX;
     const cy = e.clientY !== 0 ? e.clientY : lastY;
 
-    // Find target basket
+    // Find target basket — only accept if basket not yet full
     let placed = false;
     document.querySelectorAll('.basket').forEach(b => {
       b.style.borderColor = '';
@@ -1539,17 +1539,22 @@ function makeDot(num, cls = '') {
       const r = b.getBoundingClientRect();
       if (cx >= r.left && cx <= r.right &&
           cy >= r.top  && cy <= r.bottom) {
-        const newDot = makeDot(parseInt(d.textContent));
-        b.insertBefore(newDot, b.firstChild);
-        const count = parseInt(b.dataset.count) + 1;
-        b.dataset.count = count;
-        b.querySelector('.basket-label').textContent = count + '/' + size;
-        d.remove();
-        placed = true;
-        if (count === size) b.classList.add('filled');
-        state.build.dotsInBaskets++;
-        updateBuildTotal();
-        checkBuildComplete();
+        const currentCount = parseInt(b.dataset.count) || 0;
+        const target = parseInt(b.dataset.target) || state.build.size;
+        // Only accept if basket not yet full
+        if (currentCount < target) {
+          const newDot = makeDot(parseInt(d.textContent));
+          b.insertBefore(newDot, b.firstChild);
+          const count = currentCount + 1;
+          b.dataset.count = count;
+          b.querySelector('.basket-label').textContent = count + '/' + target;
+          d.remove();
+          placed = true;
+          if (count === target) b.classList.add('filled');
+          state.build.dotsInBaskets++;
+          updateBuildTotal();
+          checkBuildComplete();
+        }
       }
     });
 
