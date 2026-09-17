@@ -3,3080 +3,1489 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Kita Semua Terhubung — Lima Pelajaran Besar 🌌</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<title>Lima Pelajaran Besar — Belajar Aya</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-/* ===== RESET & BASE ===== */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 :root {
-  --space: #0a0a1a;
-  --space2: #1a1a3a;
-  --cream: #FFF8F0;
-  --gold: #FFD700;
-  --green: #4CAF50;
-  --blue: #64B5F6;
-  --purple: #CE93D8;
-  --orange: #FF8A65;
-  --l1: #FFD700; /* Universe */
-  --l2: #4CAF50; /* Life */
-  --l3: #64B5F6; /* Humans */
-  --l4: #CE93D8; /* Language */
-  --l5: #FF8A65; /* Numbers */
   --font-head: 'Fredoka One', cursive;
   --font-body: 'Quicksand', sans-serif;
+  --dark: #07071A;
+  --deep: #0D0D2B;
+  --card: #12123A;
+  --gold: #FFD700;
+  --cream: #FFF8F0;
+  --green: #4CAF50;
+  --shadow: 0 4px 24px rgba(0,0,0,0.3);
 }
-
-html, body {
-  height: 100%;
-  overflow: hidden;
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  background: var(--dark);
+  font-family: var(--font-body);
+  color: var(--cream);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   touch-action: manipulation;
 }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important} }
 
-body {
-  background: linear-gradient(135deg, var(--space) 0%, var(--space2) 100%);
-  color: var(--cream);
-  font-family: var(--font-body);
-  font-weight: 600;
-}
-
-/* ===== SCREEN SYSTEM ===== */
-.screen {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100dvh;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
+/* ── Screens ── */
+.screen { display: none; min-height: 100dvh; flex-direction: column; }
 .screen.active { display: flex; }
 
-/* ===== STARS BACKGROUND ===== */
-.stars {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  pointer-events: none;
-  z-index: 0;
-}
-.star {
-  position: absolute;
-  background: white;
-  border-radius: 50%;
-  animation: twinkle var(--dur, 3s) infinite alternate;
-}
-@keyframes twinkle {
-  from { opacity: var(--min, 0.2); transform: scale(1); }
-  to   { opacity: var(--max, 0.9); transform: scale(1.2); }
-}
+/* ── Stars ── */
+.stars { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+.star { position: absolute; background: white; border-radius: 50%; animation: twinkle 2s ease-in-out infinite; }
+@keyframes twinkle { 0%,100%{opacity:0.3} 50%{opacity:1} }
 
-/* ===== HOME HUB ===== */
-#screen-home {
-  justify-content: flex-start;
-  padding: 40px 20px 120px;
-  gap: 0;
-  overflow-y: auto;
-}
-
-.home-header {
-  text-align: center;
-  margin-bottom: 32px;
-  position: relative;
-  z-index: 1;
-}
-
-.home-title {
-  font-family: var(--font-head);
-  font-size: clamp(2rem, 8vw, 3.5rem);
-  color: var(--gold);
-  text-shadow: 0 0 30px rgba(255,215,0,0.4);
-  line-height: 1.1;
-  margin-bottom: 10px;
-}
-
-.home-subtitle {
-  font-size: 1.1rem;
-  color: var(--cream);
-  opacity: 0.8;
-  font-weight: 600;
-}
-
-.lesson-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  max-width: 400px;
-  position: relative;
-  z-index: 1;
-}
-
-.lesson-card {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 24px;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.05);
-  border: 2px solid rgba(255,255,255,0.1);
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-  backdrop-filter: blur(10px);
-  min-height: 90px;
-}
-.lesson-card:active { transform: scale(0.97); }
-
-.lesson-card[data-lesson="1"] { border-color: var(--l1); }
-.lesson-card[data-lesson="1"]:hover { box-shadow: 0 0 30px rgba(255,215,0,0.3); }
-.lesson-card[data-lesson="2"] { border-color: var(--l2); }
-.lesson-card[data-lesson="2"]:hover { box-shadow: 0 0 30px rgba(76,175,80,0.3); }
-.lesson-card[data-lesson="3"] { border-color: var(--l3); }
-.lesson-card[data-lesson="3"]:hover { box-shadow: 0 0 30px rgba(100,181,246,0.3); }
-.lesson-card[data-lesson="4"] { border-color: var(--l4); }
-.lesson-card[data-lesson="4"]:hover { box-shadow: 0 0 30px rgba(206,147,216,0.3); }
-.lesson-card[data-lesson="5"] { border-color: var(--l5); }
-.lesson-card[data-lesson="5"]:hover { box-shadow: 0 0 30px rgba(255,138,101,0.3); }
-
-.lesson-emoji {
-  font-size: 3rem;
-  line-height: 1;
-  flex-shrink: 0;
-}
-
-.lesson-text { flex: 1; }
-.lesson-title {
-  font-family: var(--font-head);
-  font-size: 1.3rem;
-  margin-bottom: 4px;
-}
-.lesson-card[data-lesson="1"] .lesson-title { color: var(--l1); }
-.lesson-card[data-lesson="2"] .lesson-title { color: var(--l2); }
-.lesson-card[data-lesson="3"] .lesson-title { color: var(--l3); }
-.lesson-card[data-lesson="4"] .lesson-title { color: var(--l4); }
-.lesson-card[data-lesson="5"] .lesson-title { color: var(--l5); }
-
-.lesson-question {
-  font-size: 0.9rem;
-  color: var(--cream);
-  opacity: 0.7;
-  font-weight: 500;
-}
-
-.lesson-arrow {
-  font-size: 1.5rem;
-  opacity: 0.4;
-  flex-shrink: 0;
-}
-
-/* ===== TOP CONTROLS ===== */
-.top-controls {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  display: flex;
-  gap: 10px;
-  z-index: 100;
+/* ── Top controls ── */
+.top-bar {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 16px 8px;
+  background: linear-gradient(to bottom, var(--dark) 60%, transparent);
 }
 .top-btn {
-  width: 44px; height: 44px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
-  color: var(--cream);
-  font-size: 1.2rem;
-  cursor: pointer;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+  color: var(--cream); font-size: 1.1rem; cursor: pointer;
   display: flex; align-items: center; justify-content: center;
-  backdrop-filter: blur(10px);
-  transition: background 0.2s;
 }
-.top-btn:active { background: rgba(255,255,255,0.2); }
+.top-btn:active { transform: scale(0.9); }
 
-/* ===== NAV BUTTONS ===== */
-.btn-back {
-  position: fixed;
-  top: 16px; left: 16px;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
-  color: var(--cream);
-  border-radius: 12px;
-  padding: 8px 16px;
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 0.9rem;
-  cursor: pointer;
-  z-index: 100;
-  backdrop-filter: blur(10px);
-  transition: background 0.2s;
-}
-.btn-back:active { background: rgba(255,255,255,0.2); }
+/* ── Home ── */
+.home-hero { text-align: center; padding: 8px 16px 20px; position: relative; z-index: 1; }
+.home-title { font-family: var(--font-head); font-size: 1.8rem; color: var(--gold); margin-bottom: 4px; }
+.home-sub { font-size: 0.85rem; opacity: 0.6; }
+.home-rabbity { font-size: 3rem; margin-bottom: 8px; }
 
-.btn-home {
-  position: fixed;
-  top: 16px; left: 130px;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
-  color: var(--cream);
-  border-radius: 12px;
-  padding: 8px 16px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  z-index: 100;
-  backdrop-filter: blur(10px);
-}
-.btn-home:active { background: rgba(255,255,255,0.2); }
-
-/* ===== PIKO CHARACTER ===== */
-.rabbity-btn {
-  position: fixed;
-  bottom: 20px; right: 20px;
-  font-size: 2.5rem;
-  background: rgba(255,255,255,0.1);
-  border: 2px solid rgba(255,255,255,0.2);
-  border-radius: 50%;
-  width: 64px; height: 64px;
-  cursor: pointer;
-  z-index: 100;
-  animation: pulse 2s infinite;
-  backdrop-filter: blur(10px);
-  transition: transform 0.2s;
-}
-.rabbity-btn:active { transform: scale(0.9); }
-
-/* ===== LESSON SCREENS ===== */
-.lesson-screen {
-  padding: 80px 20px 100px;
-  gap: 24px;
-  overflow-y: auto;
-  justify-content: flex-start;
-  width: 100%;
-}
-
-/* ===== STORY SCREEN ===== */
-.story-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  text-align: center;
-  padding: 20px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.story-visual {
-  font-size: 5rem;
-  animation: float 3s ease-in-out infinite;
-}
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-.story-title {
-  font-family: var(--font-head);
-  font-size: clamp(1.5rem, 6vw, 2.2rem);
-  color: var(--cream);
-  line-height: 1.2;
-}
-
-.story-question {
-  font-size: 1.1rem;
-  color: var(--cream);
-  opacity: 0.8;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.story-text {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--cream);
-  opacity: 0.85;
-  max-width: 380px;
-}
-
-.story-tap-hint {
-  font-size: 0.85rem;
-  color: var(--cream);
-  opacity: 0.5;
-  animation: pulse 2s infinite;
-}
-
-/* ===== EXPERIENCE SCREEN ===== */
-.exp-area {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.exp-title {
-  font-family: var(--font-head);
-  font-size: clamp(1.3rem, 5vw, 1.8rem);
-  text-align: center;
-}
-[data-lesson="1"] .exp-title { color: var(--l1); }
-[data-lesson="2"] .exp-title { color: var(--l2); }
-[data-lesson="3"] .exp-title { color: var(--l3); }
-[data-lesson="4"] .exp-title { color: var(--l4); }
-[data-lesson="5"] .exp-title { color: var(--l5); }
-
-.exp-prompt {
-  font-size: 0.95rem;
-  color: var(--cream);
-  opacity: 0.8;
-  text-align: center;
-  font-weight: 600;
-}
-
-.exp-content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-/* ===== BUTTONS ===== */
-.btn {
-  padding: 16px 32px;
-  border-radius: 16px;
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 1.1rem;
-  cursor: pointer;
-  border: none;
+/* ── Lesson grid ── */
+.lesson-grid { display: flex; flex-direction: column; gap: 12px; padding: 0 16px 80px; position: relative; z-index: 1; }
+.lesson-card {
+  background: var(--card); border-radius: 20px; padding: 16px;
+  box-shadow: var(--shadow); cursor: pointer; border: none; width: 100%;
+  text-align: left; color: var(--cream);
   transition: transform 0.15s, box-shadow 0.15s;
-  min-height: 56px;
-  text-align: center;
+  display: flex; gap: 14px; align-items: center;
 }
-.btn:active { transform: scale(0.96); }
-.btn-replay { cursor: pointer; transition: all 0.2s; }
-.btn-replay:hover { background: rgba(255,255,255,0.18); }
+.lesson-card:active { transform: scale(0.97); }
+.lesson-icon { font-size: 2.5rem; flex-shrink: 0; }
+.lesson-name { font-family: var(--font-head); font-size: 1.1rem; color: var(--cream); margin-bottom: 2px; }
+.lesson-desc { font-size: 0.78rem; opacity: 0.55; line-height: 1.3; }
+.lesson-badge {
+  margin-left: auto; flex-shrink: 0;
+  width: 28px; height: 28px; border-radius: 50%;
+  background: rgba(255,255,255,0.1); border: 2px solid rgba(255,255,255,0.15);
+  font-size: 0.7rem; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.lesson-badge.done { background: var(--green); border-color: var(--green); color: white; }
 
-.btn-primary {
-  background: var(--gold);
-  color: #1a1a1a;
+/* ── Lesson screen ── */
+.lesson-header { padding: 12px 16px 8px; position: relative; z-index: 1; }
+.lesson-back {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+  color: var(--cream); border-radius: 12px; padding: 8px 14px;
+  font-family: var(--font-body); font-weight: 600; font-size: 0.85rem;
+  cursor: pointer; display: flex; align-items: center; gap: 6px;
 }
-.btn-primary:hover { box-shadow: 0 0 20px rgba(255,215,0,0.4); }
-
-/* ===== EXPERIENCE CARDS ===== */
-.exp-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  width: 100%;
-}
+.lesson-back:active { transform: scale(0.95); }
+.lesson-title-bar { font-family: var(--font-head); font-size: 1.4rem; color: var(--gold); text-align: center; margin: 8px 0 12px; }
+.exp-grid { display: flex; flex-direction: column; gap: 10px; padding: 0 16px 80px; position: relative; z-index: 1; }
 .exp-card {
-  padding: 20px 16px;
-  border-radius: 16px;
-  background: rgba(255,255,255,0.08);
-  border: 2px solid rgba(255,255,255,0.12);
-  cursor: pointer;
-  transition: transform 0.15s, border-color 0.2s;
-  text-align: center;
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px; padding: 14px 16px; cursor: pointer;
+  display: flex; gap: 12px; align-items: center; color: var(--cream);
+  transition: all 0.15s;
 }
-.exp-card:active { transform: scale(0.95); }
-[data-lesson="1"] .exp-card:hover { border-color: var(--l1); }
-[data-lesson="2"] .exp-card:hover { border-color: var(--l2); }
-[data-lesson="3"] .exp-card:hover { border-color: var(--l3); }
-[data-lesson="4"] .exp-card:hover { border-color: var(--l4); }
-[data-lesson="5"] .exp-card:hover { border-color: var(--l5); }
+.exp-card:active { background: rgba(255,255,255,0.1); transform: scale(0.98); }
+.exp-card.done { border-color: var(--green); }
+.exp-num {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: rgba(255,255,255,0.08); border: 2px solid rgba(255,255,255,0.15);
+  font-family: var(--font-head); font-size: 0.9rem; color: var(--cream);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.exp-card.done .exp-num { background: var(--green); border-color: var(--green); }
+.exp-name { font-weight: 700; font-size: 0.9rem; }
+.exp-tagline { font-size: 0.75rem; opacity: 0.5; }
 
-.exp-card-emoji { font-size: 2.5rem; }
-.exp-card-title {
-  font-family: var(--font-head);
-  font-size: 0.95rem;
-  color: var(--cream);
+/* ── Experience screen ── */
+.exp-header { padding: 10px 16px 6px; position: relative; z-index: 1; }
+.exp-title { font-family: var(--font-head); font-size: 1.2rem; color: var(--gold); text-align: center; margin-bottom: 4px; }
+.exp-prompt { font-size: 0.85rem; opacity: 0.7; text-align: center; margin-bottom: 16px; padding: 0 16px; }
+.exp-area { padding: 0 16px 80px; flex: 1; position: relative; z-index: 1; }
+.exp-instruction {
+  background: rgba(255,255,255,0.07); border-radius: 14px;
+  padding: 14px 16px; margin: 12px 0; font-size: 0.88rem;
+  line-height: 1.6; text-align: center; border: 1px solid rgba(255,255,255,0.08);
 }
-.exp-card-done {
-  font-size: 0.75rem;
-  color: var(--green);
-  font-weight: 700;
-}
+.exp-success { background: rgba(76,175,80,0.15); border: 1px solid rgba(76,175,80,0.3); border-radius: 12px; padding: 12px 16px; text-align: center; color: var(--green); font-weight: 700; margin: 10px 0; }
 
-/* ===== INTERACTIVE DEMOS ===== */
+/* ── Interactive elements ── */
+.demo-box {
+  background: rgba(255,255,255,0.05); border: 2px solid rgba(255,255,255,0.1);
+  border-radius: 16px; padding: 20px; text-align: center; margin: 10px 0;
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+}
+.demo-label { font-size: 0.78rem; opacity: 0.5; margin-bottom: 4px; }
 
 /* Particles */
-.particle-box {
-  border-radius: 16px;
-  padding: 16px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  width: 100%;
-  min-height: 100px;
-  position: relative;
-  overflow: hidden;
-}
+.particle-area { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; padding: 10px 0; }
 .particle {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.7);
-  animation: drift linear infinite;
+  width: 28px; height: 28px; border-radius: 50%; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; font-size: 0.7rem;
+  transition: transform 0.15s; border: none;
 }
-@keyframes drift {
-  from { transform: translate(0, 0); }
-  to { transform: translate(var(--dx, 50px), var(--dy, 50px)); }
-}
+.particle:active { transform: scale(0.85); }
+.particle.selected { box-shadow: 0 0 0 3px var(--gold); transform: scale(1.1); }
 
-/* Solar System */
-.solar-demo {
-  position: relative;
-  width: 280px;
-  height: 280px;
-  margin: 0 auto;
-}
-.sol-sun {
-  position: absolute;
-  width: 60px; height: 60px;
-  background: radial-gradient(circle, #FFE066, #FFD700);
-  border-radius: 50%;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 30px rgba(255,215,0,0.6);
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-.sol-sun:active { transform: translate(-50%, -50%) scale(1.1); }
-.sol-earth {
-  position: absolute;
-  width: 24px; height: 24px;
-  background: radial-gradient(circle, #64B5F6, #1976D2);
-  border-radius: 50%;
-  box-shadow: 0 0 8px rgba(100,181,246,0.5);
-  top: 15%; left: 50%;
-  transform: translateX(-50%);
-  cursor: grab;
-  transition: left 0.5s, top 0.5s;
-}
-.sol-moon {
-  position: absolute;
-  width: 10px; height: 10px;
-  background: #ccc;
-  border-radius: 50%;
-  top: 50%; right: 20%;
-  transform: translateY(-50%);
-}
-.sol-label {
-  position: absolute;
-  font-size: 0.7rem;
-  color: var(--cream);
-  opacity: 0.6;
-  white-space: nowrap;
-}
-.sol-label-sun { top: 8px; left: 50%; transform: translateX(-50%); color: var(--gold); }
-.sol-label-earth { bottom: 8px; left: 50%; transform: translateX(-50%); color: var(--blue); }
-.sol-label-moon { top: 50%; right: 2px; transform: translateY(-50%); color: #ccc; }
+/* Solar system */
+.solar-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 10px 0; }
+.orbit-ring { border: 1px solid rgba(255,255,255,0.1); border-radius: 50%; position: relative; display: flex; align-items: center; justify-content: center; }
+.orbit-sun { position: absolute; font-size: 2rem; }
+.orbit-planet { position: absolute; font-size: 1.2rem; border-radius: 50%; cursor: pointer; }
 
-/* Gravity Demo */
-.gravity-demo {
-  position: relative;
-  width: 280px;
-  height: 200px;
-  background: rgba(0,0,0,0.3);
-  border-radius: 16px;
-  overflow: hidden;
-  cursor: crosshair;
+/* Food chain */
+.chain-area { display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; padding: 10px 0; }
+.chain-item {
+  padding: 10px 14px; border-radius: 14px; text-align: center;
+  font-size: 0.8rem; cursor: pointer; border: none;
+  transition: transform 0.15s; background: rgba(255,255,255,0.07);
 }
-.grav-star {
-  position: absolute;
-  border-radius: 50%;
-  background: var(--gold);
-  box-shadow: 0 0 20px rgba(255,215,0,0.8);
-  pointer-events: none;
-}
-.grav-dot {
-  position: absolute;
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.5);
-  animation: gravOrbit var(--dur, 3s) linear infinite;
-}
-@keyframes gravOrbit {
-  from { transform: rotate(0deg) translateX(var(--r, 60px)) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(var(--r, 60px)) rotate(-360deg); }
-}
-.grav-label {
-  position: absolute;
-  bottom: 8px; left: 50%; transform: translateX(-50%);
-  font-size: 0.8rem;
-  color: var(--cream);
-  opacity: 0.7;
-  text-align: center;
-  width: 100%;
-}
+.chain-item:active { transform: scale(0.93); }
+.chain-arrow { font-size: 1.2rem; opacity: 0.4; }
 
-/* Life Timeline */
-.timeline {
-  display: flex;
-  gap: 4px;
-  overflow-x: auto;
-  padding: 10px 0;
-  width: 100%;
-  scroll-snap-type: x mandatory;
+/* Symbol maker */
+.symbol-canvas {
+  background: #1a1a2e; border-radius: 12px;
+  border: 2px solid rgba(255,255,255,0.1);
+  touch-action: none; cursor: crosshair;
+  width: 100%; max-width: 360px; height: 160px;
+  display: block; margin: 0 auto;
 }
-.tl-era {
-  flex-shrink: 0;
-  width: 80px;
-  scroll-snap-align: start;
-  border-radius: 12px;
-  padding: 10px 8px;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.15s, opacity 0.2s;
-  border: 2px solid transparent;
-}
-.tl-era:active { transform: scale(0.95); }
-.tl-era.selected { border-color: white; }
-.tl-era-emoji { font-size: 2rem; display: block; margin-bottom: 4px; }
-.tl-era-name { font-size: 0.7rem; font-weight: 700; color: var(--cream); }
-.tl-era-time { font-size: 0.6rem; color: rgba(255,255,255,0.5); display: block; margin-top: 2px; }
+.symbol-tools { display: flex; gap: 8px; justify-content: center; margin-top: 8px; flex-wrap: wrap; }
+.symbol-btn { padding: 8px 14px; border-radius: 10px; border: none; cursor: pointer; font-size: 0.85rem; font-family: var(--font-body); font-weight: 600; }
 
-.tl-detail {
-  background: rgba(255,255,255,0.05);
-  border-radius: 12px;
-  padding: 16px;
-  text-align: center;
-  width: 100%;
-  min-height: 80px;
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 6px;
-  transition: opacity 0.3s;
-}
-.tl-detail-emoji { font-size: 3rem; }
-.tl-detail-text { font-size: 0.85rem; color: var(--cream); opacity: 0.8; line-height: 1.5; }
-.tl-detail-key { font-size: 0.75rem; color: var(--gold); font-weight: 700; }
-
-/* Classification */
-.classify-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  width: 100%;
-}
+/* Animals */
+.animal-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding: 8px 0; }
 .animal-card {
-  padding: 12px 8px;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.08);
-  border: 2px solid rgba(255,255,255,0.12);
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.15s, border-color 0.15s, background 0.15s;
-  min-height: 70px;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px;
+  background: rgba(255,255,255,0.06); border-radius: 12px; padding: 10px 6px;
+  text-align: center; cursor: pointer; border: none; color: var(--cream);
+  transition: transform 0.12s; font-size: 0.7rem; line-height: 1.3;
 }
-.animal-card:active { transform: scale(0.93); }
-.animal-card.placed {
-  opacity: 0.4;
-  cursor: default;
-  pointer-events: none;
-}
-.animal-emoji { font-size: 2rem; }
-.animal-name { font-size: 0.65rem; color: rgba(255,255,255,0.6); font-weight: 600; }
+.animal-card:active { transform: scale(0.9); }
+.animal-card .emoji { font-size: 1.8rem; display: block; margin-bottom: 4px; }
+.animal-card .label { font-size: 0.65rem; opacity: 0.6; }
+.animal-card.selected { background: rgba(255,215,0,0.15); border: 2px solid var(--gold); }
 
-.classify-buckets {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-}
-.bucket {
-  flex: 1;
-  min-height: 90px;
-  border-radius: 14px;
-  border: 2px dashed rgba(255,255,255,0.2);
-  padding: 10px 6px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  transition: border-color 0.2s, background 0.2s;
-}
-.bucket-label { font-size: 0.75rem; font-weight: 700; text-align: center; color: var(--cream); opacity: 0.6; }
-.bucket.hint { border-color: var(--green); background: rgba(76,175,80,0.1); }
-.bucket-contents { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; }
-.bucket-animal { font-size: 1.5rem; }
+/* Buttons */
+.btn { padding: 12px 24px; border-radius: 14px; border: none; cursor: pointer; font-family: var(--font-body); font-weight: 700; font-size: 0.9rem; transition: transform 0.12s; display: inline-block; }
+.btn:active { transform: scale(0.95); }
+.btn-primary { background: var(--gold); color: var(--dark); }
+.btn-secondary { background: rgba(255,255,255,0.08); color: var(--cream); border: 1px solid rgba(255,255,255,0.12); }
+.btn-next { background: var(--green); color: white; width: 100%; max-width: 320px; display: block; margin: 12px auto 0; text-align: center; text-decoration: none; }
 
-/* Human Needs */
-.needs-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  width: 100%;
+/* Back button */
+.btn-back {
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
+  color: var(--cream); border-radius: 12px; padding: 10px 16px;
+  font-family: var(--font-body); font-weight: 600; font-size: 0.85rem;
+  cursor: pointer; display: flex; align-items: center; gap: 6px;
 }
-.need-card {
-  padding: 16px 12px;
-  border-radius: 14px;
-  background: rgba(255,255,255,0.08);
-  border: 2px solid rgba(255,255,255,0.12);
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.15s, border-color 0.15s, background 0.15s;
-  min-height: 80px;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
-}
-.need-card:active { transform: scale(0.95); }
-.need-card.selected { border-color: var(--gold); background: rgba(255,215,0,0.1); }
-.need-emoji { font-size: 2.2rem; }
-.need-name { font-size: 0.8rem; font-weight: 700; color: var(--cream); }
+.btn-back:active { transform: scale(0.95); }
 
-/* Shelter builder */
-.shelter-env {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  width: 100%;
-}
-.env-btn {
-  padding: 10px 16px;
-  border-radius: 12px;
-  border: 2px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.05);
-  color: var(--cream);
-  font-size: 1.8rem;
-  cursor: pointer;
-  transition: border-color 0.2s, background 0.2s;
-  min-width: 64px;
-}
-.env-btn.selected { border-color: var(--gold); background: rgba(255,215,0,0.1); }
+/* Profile screen */
+.profile-area { padding: 20px 16px 80px; text-align: center; }
+.profile-avatar { font-size: 4rem; margin-bottom: 12px; }
+.profile-name { font-family: var(--font-head); font-size: 1.4rem; color: var(--gold); margin-bottom: 4px; }
+.profile-input { background: rgba(255,255,255,0.08); border: 2px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 12px 16px; color: var(--cream); font-family: var(--font-body); font-size: 1rem; width: 100%; max-width: 280px; margin: 8px auto; display: block; text-align: center; }
+.profile-btn { background: var(--gold); color: var(--dark); border: none; border-radius: 12px; padding: 12px 24px; font-family: var(--font-body); font-weight: 700; cursor: pointer; font-size: 0.9rem; }
 
-.materials-row {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.mat-btn {
-  padding: 10px 14px;
-  border-radius: 12px;
-  border: 2px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.05);
-  color: var(--cream);
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: all 0.15s;
-}
-.mat-btn.selected { border-color: var(--gold); background: rgba(255,215,0,0.1); transform: scale(1.1); }
-.mat-btn:active { transform: scale(0.95); }
-
-.shelter-preview {
-  width: 200px;
-  height: 120px;
-  background: rgba(0,0,0,0.2);
-  border-radius: 12px;
-  display: flex; align-items: flex-end; justify-content: center;
-  padding-bottom: 10px;
-  font-size: 4rem;
-  transition: all 0.3s;
-}
-
-/* Communication */
-.comms-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  width: 100%;
-}
-.comm-card {
-  padding: 16px;
-  border-radius: 14px;
-  background: rgba(255,255,255,0.08);
-  border: 2px solid rgba(255,255,255,0.12);
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.15s;
-  min-height: 80px;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
-}
-.comm-card:active { transform: scale(0.95); }
-.comm-card.selected { border-color: var(--gold); background: rgba(255,215,0,0.1); }
-.comm-emoji { font-size: 2.2rem; }
-.comm-name { font-size: 0.8rem; font-weight: 700; color: var(--cream); }
-
-/* Symbol Grid */
-.symbol-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  width: 100%;
-  max-width: 280px;
-}
-.sym-cell {
-  aspect-ratio: 1;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.06);
-  border: 2px solid rgba(255,255,255,0.12);
-  cursor: pointer;
-  transition: all 0.15s;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.2rem;
-}
-.sym-cell.filled { background: rgba(255,215,0,0.25); border-color: var(--gold); }
-
-/* Numbers */
-.number-line {
-  display: flex;
-  gap: 0;
-  width: 100%;
-  overflow-x: auto;
-  padding: 10px 0;
-  position: relative;
-}
-.nl-num {
-  flex-shrink: 0;
-  width: 36px; height: 36px;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-head);
-  font-size: 0.9rem;
-  background: rgba(255,255,255,0.08);
-  color: var(--cream);
-  opacity: 0.5;
-  cursor: pointer;
-  transition: all 0.2s;
-  border: 2px solid transparent;
-}
-.nl-num.highlighted { background: rgba(76,175,80,0.25); border-color: var(--green); opacity: 1; color: var(--green); transform: scale(1.2); }
-.nl-num.active { background: rgba(255,215,0,0.25); border-color: var(--gold); opacity: 1; color: var(--gold); transform: scale(1.3); }
-
-/* Goats & Stones */
-.goats-area {
-  display: flex;
-  gap: 24px;
-  align-items: flex-end;
-  justify-content: center;
-  width: 100%;
-}
-.goats-col, .stones-col {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-.col-label { font-size: 0.75rem; color: var(--cream); opacity: 0.6; font-weight: 700; }
-.goats-row, .stones-row { display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; max-width: 120px; }
-.goat, .stone {
-  font-size: 2rem;
-  animation: appear 0.3s ease-out backwards;
-}
-@keyframes appear { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-
-/* Montessori Decimal */
-.decimal-visual {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-  align-items: center;
-}
-.decimal-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 10px;
-  transition: background 0.2s;
-  width: 100%;
-  max-width: 300px;
-  justify-content: center;
-}
-.decimal-row:hover { background: rgba(255,255,255,0.05); }
-.d-visual {
-  display: grid;
-  gap: 2px;
-  flex-shrink: 0;
-}
-.d-label { font-size: 0.8rem; color: var(--cream); opacity: 0.6; }
-.d-count { font-family: var(--font-head); font-size: 1rem; color: var(--gold); }
-
-/* Ecosystem */
-.eco-display {
-  position: relative;
-  width: 100%;
-  max-width: 300px;
-  height: 180px;
-  background: rgba(0,0,0,0.2);
-  border-radius: 16px;
-  overflow: hidden;
-  display: flex; align-items: center; justify-content: center;
-}
-.eco-link {
-  display: flex; flex-direction: column; align-items: center; gap: 4px;
-  font-size: 2.5rem;
-  transition: all 0.5s;
-}
-.eco-arrow {
-  font-size: 1.5rem;
-  color: var(--cream);
-  opacity: 0.4;
-}
-.eco-link.dead { opacity: 0.15; filter: grayscale(1); }
-.eco-label {
-  font-size: 0.6rem;
-  color: rgba(255,255,255,0.5);
-  font-weight: 700;
-  text-align: center;
-}
-
-.eco-toggle {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.eco-btn {
-  padding: 10px 16px;
-  border-radius: 12px;
-  border: 2px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.05);
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: all 0.15s;
-}
-.eco-btn.active { border-color: var(--gold); background: rgba(255,215,0,0.1); }
-.eco-btn.deactivated { opacity: 0.3; }
-
-/* ===== FEEDBACK ===== */
-.feedback-msg {
-  padding: 10px 20px;
-  border-radius: 12px;
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-align: center;
-  animation: fadeIn 0.3s ease-out;
-  max-width: 300px;
-}
-.feedback-msg.success { background: rgba(76,175,80,0.2); color: var(--green); border: 1px solid var(--green); }
-.feedback-msg.hint { background: rgba(255,215,0,0.15); color: var(--gold); border: 1px solid rgba(255,215,0,0.3); }
-.feedback-msg.wrong { background: rgba(229,115,115,0.15); color: #E57373; border: 1px solid rgba(229,115,115,0.3); }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
-
-/* ===== PROGRESS ===== */
-.progress-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  font-size: 0.85rem;
-}
-.progress-dot {
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: #555;
-  flex-shrink: 0;
-}
-.progress-dot.done { background: var(--green); }
-.progress-dot.active { background: var(--gold); animation: pulse 1s infinite; }
-
-/* ===== CONFETTI ===== */
-.confetti-container {
-  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-  pointer-events: none; z-index: 9999;
-}
-.conf-piece {
-  position: absolute;
-  animation: confFall linear forwards;
-}
-@keyframes confFall {
-  0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
-  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
-}
-
-/* ===== PARENT PANEL ===== */
+/* Parent panel */
 .parent-panel {
-  position: fixed;
-  bottom: 0; left: 0; right: 0;
-  background: rgba(10,10,26,0.95);
-  border-top: 1px solid rgba(255,255,255,0.15);
-  padding: 20px;
-  z-index: 200;
-  max-height: 70dvh;
-  overflow-y: auto;
-  backdrop-filter: blur(20px);
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: var(--cream); color: #333;
+  border-radius: 20px 20px 0 0; padding: 20px 16px 80px;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.2); z-index: 99;
+  max-height: 70vh; overflow-y: auto;
+  transform: translateY(100%); transition: transform 0.3s ease;
 }
 .parent-panel.open { transform: translateY(0); }
-.panel-title { font-family: var(--font-head); font-size: 1.2rem; color: var(--gold); margin-bottom: 12px; }
-.panel-close {
-  position: absolute; top: 12px; right: 16px;
-  background: none; border: none; color: var(--cream); font-size: 1.5rem; cursor: pointer;
-  opacity: 0.6;
-}
+.panel-handle { width: 36px; height: 4px; background: #ccc; border-radius: 2px; margin: 0 auto 14px; }
+.panel-title { font-family: var(--font-head); font-size: 1rem; color: #333; margin-bottom: 14px; text-align: center; }
 .panel-lesson { margin-bottom: 12px; }
-.panel-lesson-title { font-weight: 700; font-size: 0.9rem; color: var(--cream); margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
-.panel-exp { display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+.panel-lesson-name { font-weight: 700; font-size: 0.85rem; color: #333; margin-bottom: 4px; display: flex; justify-content: space-between; }
+.panel-bar { height: 8px; background: #eee; border-radius: 4px; overflow: hidden; }
+.panel-bar-fill { height: 100%; border-radius: 4px; transition: width 0.5s ease; }
+.panel-missions { font-size: 0.75rem; color: #666; margin-top: 4px; }
+.panel-close { position: absolute; top: 12px; right: 16px; background: none; border: none; font-size: 1.2rem; cursor: pointer; color: #999; }
 
-/* ===== OFFLINE MISSION ===== */
+/* FAB buttons */
+.home-fab {
+  position: fixed; bottom: 20px; left: 20px;
+  width: 50px; height: 50px; border-radius: 50%;
+  background: var(--green); color: white; font-size: 1.3rem;
+  border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 100; display: flex; align-items: center; justify-content: center;
+  text-decoration: none; transition: transform 0.12s;
+}
+.home-fab:active { transform: scale(0.92); }
+.parent-fab {
+  position: fixed; bottom: 20px; right: 20px;
+  width: 50px; height: 50px; border-radius: 50%;
+  background: var(--gold); color: var(--dark); font-size: 1.2rem;
+  border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 100; transition: transform 0.12s;
+}
+.parent-fab:active { transform: scale(0.92); }
+
+/* Confetti */
+.confetti-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; }
+.confetti-piece { position: absolute; width: 10px; height: 10px; border-radius: 2px; animation: confettiFall 2.5s ease-out forwards; }
+@keyframes confettiFall { 0%{transform:translateY(-20px) rotate(0deg);opacity:1} 100%{transform:translateY(100vh) rotate(720deg);opacity:0} }
+
+/* Offline mission */
 .offline-mission {
-  background: rgba(76,175,80,0.08);
-  border: 1px solid rgba(76,175,80,0.25);
-  border-radius: 14px;
-  padding: 14px 18px;
-  margin-top: 16px;
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  max-width: 400px;
+  background: rgba(76,175,80,0.1); border: 1px solid rgba(76,175,80,0.25);
+  border-radius: 14px; padding: 12px 14px; margin-top: 14px;
+  display: flex; gap: 10px; align-items: flex-start;
 }
-.om-emoji { font-size: 1.8rem; flex-shrink: 0; }
-.om-title { font-family: var(--font-head); font-size: 0.85rem; color: var(--green); margin-bottom: 2px; }
-.om-text { font-size: 0.8rem; color: var(--cream); opacity: 0.8; line-height: 1.5; }
+.offline-mission .emoji { font-size: 1.5rem; flex-shrink: 0; }
+.offline-mission .title { font-family: var(--font-head); font-size: 0.75rem; color: var(--green); margin-bottom: 2px; }
+.offline-mission .text { font-size: 0.78rem; color: rgba(255,255,255,0.7); line-height: 1.5; }
 
-/* ===== AVATAR BUTTONS ===== */
-.av-btn { font-size:2.5rem;background:rgba(255,255,255,0.08);border:2px solid rgba(255,255,255,0.15);border-radius:16px;width:64px;height:64px;cursor:pointer;transition:all 0.2s; }
-.av-btn.selected { border-color:var(--gold);background:rgba(255,215,0,0.15);transform:scale(1.15); }
-
-/* ===== BREADCRUMB ===== */
-.breadcrumb {
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.4);
-  text-align: center;
-  margin-bottom: 4px;
-  font-weight: 600;
+/* Rabbity chat bubble */
+.rabbity-bubble {
+  position: fixed; bottom: 80px; right: 20px; z-index: 90;
+  background: var(--card); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px; padding: 10px 14px; max-width: 220px;
+  font-size: 0.8rem; line-height: 1.5; color: var(--cream);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  opacity: 0; transition: opacity 0.3s; pointer-events: none;
 }
+.rabbity-bubble.show { opacity: 1; }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 360px) {
-  .exp-cards { grid-template-columns: 1fr; }
-  .classify-grid { grid-template-columns: repeat(2, 1fr); }
-  .needs-grid { grid-template-columns: 1fr; }
-  .comm-grid { grid-template-columns: 1fr; }
-}
-
-/* ===== ACCESSIBILITY: FOCUS RINGS ===== */
-*:focus-visible {
-  outline: 3px solid var(--gold);
-  outline-offset: 2px;
-  border-radius: 6px;
-}
-button:focus {
-  outline: 3px solid rgba(255,215,0,0.7);
-  outline-offset: 2px;
-}
-
-/* ===== ACCESSIBILITY: WCAG CONTRAST FIX ===== */
-/* Ensure text on colored backgrounds is readable */
-.btn-primary { color: #1a1a2e; }
-.exp-card:active, button:active { opacity: 0.85; }
-
-/* ===== ACCESSIBILITY: REDUCED MOTION ===== */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
+/* Replay button */
+.replay-btn { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); color: var(--cream); border-radius: 12px; padding: 10px 18px; font-family: var(--font-body); font-weight: 600; font-size: 0.85rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.replay-btn:active { transform: scale(0.95); }
 </style>
 </head>
-<body onload="init()">
+<body>
 
-<!-- Skip to content link for accessibility -->
-<a href="#main-content" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:-1;"
-   onfocus="this.style.position='fixed';this.style.left='10px';this.style.top='10px';this.style.width='auto';this.style.height='auto';this.style.overflow='visible';this.style.zIndex='9999';"
-   onclick="document.getElementById('main-content').focus();return false;">
-   Langsung ke isi
-</a>
-
-<!-- Stars Background -->
+<!-- Stars background -->
 <div class="stars" id="stars"></div>
 
-<!-- Top Controls -->
-<div class="top-controls">
-  <button class="top-btn" onclick="toggleAudio()" id="audio-btn" title="Toggle audio">🔊</button>
-  <button class="top-btn" onclick="toggleParentPanel()" title="Parent">👤</button>
-</div>
-
-<!-- Back Button -->
-<button class="btn-back" id="btn-back" style="display:none" onclick="goBack()">← Kembali</button>
-<button class="btn-home" id="btn-home" style="display:none" onclick="goHub()">🏠</button>
-
-<!-- ===== HOME HUB ===== -->
-<div class="screen active" id="screen-home" aria-label="Halaman utama">
-<span id="main-content" tabindex="-1" style="display:none;"></span>
-  <div class="home-header">
-    <button class="rabbity-btn" id="profile-btn" onclick="showScreen('profile')" title="Profil" style="position:absolute;top:0;right:0;font-size:1.5rem;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">🤠</button>
-    <div class="home-title" id="home-title">Kita Semua<br>Terhubung</div>
-    <div class="home-subtitle" id="home-greeting">Lima Pelajaran Besar</div>
+<!-- ═══════════════════════════════════════════
+     HOME SCREEN
+═══════════════════════════════════════════ -->
+<div class="screen active" id="screen-home">
+  <div class="top-bar">
+    <button class="top-btn" onclick="toggleAudio()" id="audio-btn" title="Suara">🔊</button>
+    <button class="top-btn" onclick="showScreen('profile')" title="Profil">🤠</button>
   </div>
-  <div class="lesson-grid" id="lesson-grid"></div>
-</div>
 
-<!-- ===== LESSON 1: UNIVERSE ===== -->
-<div class="screen" id="screen-l1">
-  <div class="lesson-screen" data-lesson="1" style="background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 60%, #2a2000 100%);">
-    <div class="story-area" id="l1-story">
-      <div class="story-visual" id="l1-vis">🌌</div>
-      <div class="story-title">Alam Semesta</div>
-      <div class="story-question" id="l1-q">"Dari mana semua ini datang?"</div>
-      <div class="story-text" id="l1-text">Sebelum ada Bumi, sebelum ada lautan, sebelum ada kehidupan — ada alam semesta yang sangat besar sekali. Di dalamnya ada miliaran bintang. Bumi kita hanya satu planet kecil di antara mereka.</div>
-      <button class="btn btn-primary" onclick="startLesson(1)">Ayo Jelajahi! ✨</button>
-    </div>
+  <div class="home-hero">
+    <div class="home-rabbity">🐰</div>
+    <div class="home-title">Kita Semua Terhubung</div>
+    <div class="home-sub">Lima Pelajaran Besar</div>
+  </div>
+
+  <div class="lesson-grid" id="lesson-grid">
+    <!-- Lesson cards rendered by JS -->
   </div>
 </div>
 
-<!-- ===== LESSON 2: LIFE ===== -->
-<div class="screen" id="screen-l2">
-  <div class="lesson-screen" data-lesson="2" style="background: linear-gradient(135deg, #0a1a0a 0%, #1a2a1a 100%);">
-    <div class="story-area" id="l2-story">
-      <div class="story-visual" id="l2-vis">🌿</div>
-      <div class="story-title">Kehidupan</div>
-      <div class="story-question" id="l2-q">"Bagaimana Bumi bisa penuh dengan makhluk hidup?"</div>
-      <div class="story-text" id="l2-text">Setelah Bumi menjadi dingin, sesuatu yang menakjubkan terjadi. Makhluk hidup pertama muncul. Lama sekali kemudian, muncul lebih banyak jenis. Dinosaurus muncul, lalu menghilang. Lalu muncul hewan kecil, dan akhirnya — manusia.</div>
-      <button class="btn btn-primary" onclick="startLesson(2)">Ayo Jelajahi! 🌱</button>
-    </div>
+<!-- ═══════════════════════════════════════════
+     LESSON SCREEN
+═══════════════════════════════════════════ -->
+<div class="screen" id="screen-lesson">
+  <div class="lesson-header">
+    <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
+    <div class="lesson-title-bar" id="lesson-title-bar"></div>
+  </div>
+  <div class="exp-grid" id="exp-grid">
+    <!-- Experiences rendered by JS -->
   </div>
 </div>
 
-<!-- ===== LESSON 3: HUMANS ===== -->
-<div class="screen" id="screen-l3">
-  <div class="lesson-screen" data-lesson="3" style="background: linear-gradient(135deg, #0a0a1a 0%, #0a1525 100%);">
-    <div class="story-area" id="l3-story">
-      <div class="story-visual" id="l3-vis">🧒</div>
-      <div class="story-title">Manusia</div>
-      <div class="story-question" id="l3-q">"Apa yang membuat manusia spesial?"</div>
-      <div class="story-text" id="l3-text">Manusia adalah satu cabang dalam cerita kehidupan. Tapi manusia punya kemampuan yang luar biasa: mereka bisa bekerja sama, membuat alat, berbagi pengetahuan, dan belajar dari generasi sebelum mereka.</div>
-      <button class="btn btn-primary" onclick="startLesson(3)">Ayo Jelajahi! 🛠️</button>
-    </div>
-  </div>
-</div>
-
-<!-- ===== LESSON 4: LANGUAGE ===== -->
-<div class="screen" id="screen-l4">
-  <div class="lesson-screen" data-lesson="4" style="background: linear-gradient(135deg, #0a0a1a 0%, #150a20 100%);">
-    <div class="story-area" id="l4-story">
-      <div class="story-visual" id="l4-vis">✍️</div>
-      <div class="story-title">Komunikasi</div>
-      <div class="story-question" id="l4-q">"Bagaimana pikiran bisa berjalan dari satu otak ke otak lain?"</div>
-      <div class="story-text" id="l4-text">Manusia punya masalah: bagaimana caranya mengirim pesan ke orang yang jauh? Bagaimana caranya menginspirasi ke generasi berikutnya? Jawabannya adalah: tulisan dan simbol.</div>
-      <button class="btn btn-primary" onclick="startLesson(4)">Ayo Jelajahi! ✍️</button>
-    </div>
-  </div>
-</div>
-
-<!-- ===== LESSON 5: NUMBERS ===== -->
-<div class="screen" id="screen-l5">
-  <div class="lesson-screen" data-lesson="5" style="background: linear-gradient(135deg, #0a0a1a 0%, #1a0a0a 100%);">
-    <div class="story-area" id="l5-story">
-      <div class="story-visual" id="l5-vis">🔢</div>
-      <div class="story-title">Angka</div>
-      <div class="story-question" id="l5-q">"Mengapa manusia membutuhkan angka?"</div>
-      <div class="story-text" id="l5-text">Dulu, manusia tidak punya angka. Untuk menghitung, mereka menggunakan batu, jari, dan tanda. Tapi suatu hari, manusia menemukan sebuah pola yang luar biasa — dan itu mengubah segalanya.</div>
-      <button class="btn btn-primary" onclick="startLesson(5)">Ayo Jelajahi! 🐰</button>
-    </div>
-  </div>
-</div>
-
-<!-- ===== EXPERIENCE SCREEN (dynamic) ===== -->
+<!-- ═══════════════════════════════════════════
+     EXPERIENCE SCREEN
+═══════════════════════════════════════════ -->
 <div class="screen" id="screen-exp">
-  <div class="lesson-screen" id="exp-container">
-    <div class="breadcrumb" id="exp-breadcrumb"></div>
+  <div class="exp-header">
+    <button class="btn-back" onclick="goBack()">← Kembali</button>
+    <div class="exp-title" id="exp-title"></div>
+    <div class="exp-prompt" id="exp-prompt"></div>
+  </div>
+  <div class="exp-area" id="exp-area">
+    <!-- Experience content rendered by JS -->
   </div>
 </div>
 
-<!-- Rabbity Button -->
-<button class="rabbity-btn" id="rabbity-btn" onclick="rabbitySpeak()" title="Rabbity bicara">🐰</button>
+<!-- ═══════════════════════════════════════════
+     PROFILE SCREEN
+═══════════════════════════════════════════ -->
+<div class="screen" id="screen-profile">
+  <div class="lesson-header">
+    <button class="btn-back" onclick="showScreen('home')">← Kembali</button>
+  </div>
+  <div class="profile-area">
+    <div class="profile-avatar" id="profile-avatar">🤠</div>
+    <div class="profile-name" id="profile-name">Si kecil</div>
+    <input class="profile-input" id="name-input" type="text" placeholder="Nama kamu..." maxlength="20" onkeydown="if(event.key==='Enter')saveProfileName()">
+    <button class="profile-btn" onclick="saveProfileName()">Simpan Nama</button>
+  </div>
+</div>
 
-<!-- Confetti Container -->
-<div class="confetti-container" id="confetti"></div>
+<!-- FAB -->
+<a href="index.html" class="home-fab" title="Ke Beranda">🏠</a>
+<button class="parent-fab" onclick="toggleParent()" title="Panel Orang Tua">👤</button>
+
+<!-- Rabbity bubble -->
+<div class="rabbity-bubble" id="rabbity-bubble"></div>
 
 <!-- Parent Panel -->
 <div class="parent-panel" id="parent-panel">
-  <button class="panel-close" onclick="toggleParentPanel()">✕</button>
-  <div class="panel-title" id="panel-title">📊 Progress Aya</div>
-  <div id="panel-content"></div>
+  <div class="panel-handle"></div>
+  <button class="panel-close" onclick="toggleParent()">✕</button>
+  <div class="panel-title">📊 Progress Belajar</div>
+  <div id="parent-content"></div>
 </div>
 
-<!-- Profile Screen -->
-<div class="screen" id="screen-profile">
-  <div class="lesson-screen" style="justify-content:center;">
-    <div style="text-align:center; max-width:380px;">
-      <div style="font-family:var(--font-head);font-size:2rem;color:var(--gold);margin-bottom:20px;">Siapa namamu?</div>
-      <input id="profile-name" type="text" placeholder="Ketik namamu..."
-        style="width:100%;padding:14px 18px;border-radius:12px;border:2px solid rgba(255,215,0,0.3);background:rgba(255,255,255,0.08);color:var(--cream);font-family:var(--font-body);font-size:1.1rem;font-weight:600;text-align:center;outline:none;"
-        onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='rgba(255,215,0,0.3)'">
-      <div style="margin:20px 0;font-size:0.9rem;color:var(--cream);opacity:0.6;">Pilih avatar:</div>
-      <div style="display:flex;gap:16px;justify-content:center;margin-bottom:24px;">
-        <button class="av-btn" onclick="selectAvatar('🧒')" id="av-b1">🧒</button>
-        <button class="av-btn" onclick="selectAvatar('👧')" id="av-b2">👧</button>
-        <button class="av-btn" onclick="selectAvatar('🧒')" id="av-b3">🧒</button>
-        <button class="av-btn" onclick="selectAvatar('🧍')" id="av-b4">🧍</button>
-      </div>
-      <button class="btn btn-primary" onclick="saveProfile()">✓ Simpan</button>
-      <div id="profile-msg" style="margin-top:12px;font-size:0.85rem;color:var(--green);display:none;"></div>
-    </div>
-  </div>
-</div>
+<!-- Confetti -->
+<div class="confetti-container" id="confetti-container"></div>
 
 <script>
-// ═══════════════════════════════════════
-// STATE
-// ═══════════════════════════════════════
+// ─────────────────────────────────────────────
+// DATA
+// ─────────────────────────────────────────────
 const LESSONS = [
   {
-    id: 1, emoji: '✨', color: '#FFD700', title: 'Alam Semesta',
-    q: 'Dari mana semua ini datang?',
-    experiences: [
-      { id: 'partikel', emoji: '🌡️', title: 'Partikel & Suhu' },
-      { id: 'gravitasi', emoji: '🌀', title: 'Gravitasi' },
-      { id: 'solar', emoji: '🪐', title: 'Sistem Surya' },
-      { id: 'bumi', emoji: '🌍', title: 'Bumi Muda' },
-      { id: 'erosi', emoji: '🏔️', title: 'Air & Bumi' }
+    id: 'universe', emoji: '✨', title: 'Alam Semesta',
+    desc: 'Partikel, gravitasi, tata surya, dan Bumi',
+    missions: ['Buat awan dari kapas!', 'Gambar planets!', 'Jatuhkanpensil dan lihat gravitasi!'],
+    exps: [
+      { id: 'particles',   name: 'Partikel Tersebar',  tagline: 'Semua terbuat dari partikel kecil',     type: 'particles' },
+      { id: 'gravity',     name: 'Gravitasi',          tagline: 'Apple jatuh ke bawah, bukan ke atas',  type: 'gravity' },
+      { id: 'solar',       name: 'Tata Surya',         tagline: 'Bumi mengelilingi Matahari',           type: 'solar' },
+      { id: 'earth',       name: 'Sejarah Bumi',        tagline: '4.5 miliar tahun dalam sekejap',     type: 'earth' },
+      { id: 'water',       name: 'Air dan Erosi',      tagline: 'Air bentuk batuarya selama jutaan tahun', type: 'water' },
     ]
   },
   {
-    id: 2, emoji: '🌱', color: '#4CAF50', title: 'Kehidupan',
-    q: 'Bagaimana Bumi penuh dengan kehidupan?',
-    experiences: [
-      { id: 'hidup', emoji: '🌿', title: 'Hidup atau Tidak?' },
-      { id: 'tanaman', emoji: '🪴', title: 'Tanaman Butuh Apa?' },
-      { id: 'timeline', emoji: '⏳', title: 'Garis Waktu' },
-      { id: 'klasifikasi', emoji: '🦋', title: 'Klasifikasi' },
-      { id: 'ekosistem', emoji: '🌞', title: 'Ekosistem' }
+    id: 'life', emoji: '🌱', title: 'Kehidupan',
+    desc: 'Hidup, kebutuhan tanaman, dan klasifikasi',
+    missions: ['Tanam kacang!', 'Amati semut!', 'Bandingkan 2 daun!'],
+    exps: [
+      { id: 'alive',     name: 'Apa Itu Hidup?',      tagline: 'Bergerak, makan, tumbuh',              type: 'alive' },
+      { id: 'plant',     name: 'Kebutuhan Tanaman',  tagline: 'Air, cahaya, udara',                   type: 'plant' },
+      { id: 'timeline',  name: 'Garis Kehidupan',    tagline: 'Dari sel pertama ke sekarang',         type: 'timeline' },
+      { id: 'classify',  name: 'Klasifikasi',         tagline: 'Kumpulkan dan kelompokkan',           type: 'classify' },
+      { id: 'foodchain', name: 'Rantai Makanan',      tagline: 'Energi mengalir dari Matahari',       type: 'foodchain' },
     ]
   },
   {
-    id: 3, emoji: '🧒', color: '#64B5F6', title: 'Manusia',
-    q: 'Apa yang membuat manusia spesial?',
-    experiences: [
-      { id: 'kebutuhan', emoji: '🍎', title: 'Kebutuhan Dasar' },
-      { id: 'shelter', emoji: '🏠', title: 'Bangun Rumah' },
-      { id: 'alat', emoji: '🔧', title: 'Alat & Teknologi' },
-      { id: 'kerjasama', emoji: '🤝', title: 'Bekerja Sama' },
-      { id: 'generasi', emoji: '📚', title: 'Pengetahuan' }
+    id: 'humans', emoji: '🧒', title: 'Manusia',
+    desc: 'Kebutuhan dasar, tempat tinggal, dan kerja sama',
+    missions: ['Gambar rumahmu!', 'Coba烹ang dengan satu tangan!', 'Hitung teman sekelas!'],
+    exps: [
+      { id: 'needs',    name: 'Kebutuhan Manusia', tagline: 'Makan, minum, tempat tinggal, teman', type: 'needs' },
+      { id: 'shelter', name: 'Tempat Tinggal',     tagline: 'Dari gua ke rumah pintar',             type: 'shelter' },
+      { id: 'tools',   name: 'Alat dan Teknologi', tagline: 'Tangan → alat → mesin',              type: 'tools' },
+      { id: 'cooperate', name: 'Kerja Sama',       tagline: 'Bersama lebih baik',                  type: 'cooperate' },
     ]
   },
   {
-    id: 4, emoji: '✍️', color: '#CE93D8', title: 'Komunikasi',
-    q: 'Bagaimana pesan berjalan antar-otak?',
-    experiences: [
-      { id: 'komunikasi', emoji: '💬', title: 'Komunikasi' },
-      { id: 'simbol', emoji: '🔣', title: 'Buat Simbol' },
-      { id: 'sistem', emoji: '📜', title: 'Sistem Simbol' },
-      { id: 'pesan', emoji: '📮', title: 'Pesan Lewat Waktu' }
+    id: 'language', emoji: '✍️', title: 'Komunikasi',
+    desc: 'Simbol, tulisan, dan pesan',
+    missions: ['Tulis namamu!', 'Kirim pesan rahasia ke teman!', 'Bicara tanpa kata!'],
+    exps: [
+      { id: 'symbols',    name: 'Simbol dan Tanda', tagline: 'Gambar → simbol → huruf',           type: 'symbols' },
+      { id: 'encoding',   name: 'Menyandikan Pesan', tagline: 'Kirim pesan pakai kode!',         type: 'encoding' },
+      { id: 'messages',   name: 'Rantai Pesan',     tagline: 'Dari otak ke otak dalam detik',    type: 'messages' },
     ]
   },
   {
-    id: 5, emoji: '🔢', color: '#FF8A65', title: 'Angka',
-    q: 'Mengapa manusia butuh angka?',
-    experiences: [
-      { id: 'kambing', emoji: '🐐', title: 'Batu & Kambing' },
-      { id: 'loncat', emoji: '🐰', title: 'Loncat Berapa?' },
-      { id: 'desimal', emoji: '🎯', title: 'Sistem Desimal' }
+    id: 'numbers', emoji: '🔢', title: 'Angka',
+    desc: 'Angka, pola, dan matematika',
+    missions: ['Hitung langkah dari kamar ke dapur!', 'Buat pola dari balok!', 'Bagikan 6 permen ke 2 orang!'],
+    exps: [
+      { id: 'counting',  name: 'Menghitung Benda', tagline: 'Satukan angka dan jumlah',          type: 'counting' },
+      { id: 'skipcount', name: 'Loncat Berhitung', tagline: '2, 4, 6, 8... loncat kelipatan!',  type: 'skipcount' },
+      { id: 'decimal',   name: 'Angka dan Nol',    tagline: 'Nol mengubah segalanya!',           type: 'decimal' },
     ]
   }
 ];
 
-let state = {
-  audioOn: true,
-  panelOpen: false,
-  navStack: [],
+// ─────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────
+const state = {
+  currentLesson: null,
   currentExp: null,
-  profile: { name: '', avatar: '' }
+  history: ['home'],
+  expState: {},
+  progress: {},
+  profile: {},
+  audioEnabled: true,
 };
 
-// ═══════════════════════════════════════
-// PROGRESS
-// ═══════════════════════════════════════
-function loadProgress() {
-  try {
-    const d = localStorage.getItem('great-lessons-progress');
-    return d ? JSON.parse(d) : {};
-  } catch(e) { return {}; }
+function load(name, def) {
+  try { const v = localStorage.getItem(name); return v ? JSON.parse(v) : def; } catch(e) { return def; }
 }
-function saveProgress(p) {
-  try { localStorage.setItem('great-lessons-progress', JSON.stringify(p)); } catch(e) {}
-}
-// Mark experience done ONLY on meaningful completion (not on entry)
-function markDone() {
-  const container = document.getElementById('exp-container');
-  const lessonId = parseInt(container.dataset.lesson);
-  const expId = container.dataset.expId;
-  if (!lessonId || !expId) return;
-  const p = loadProgress();
-  if (!p[lessonId]) p[lessonId] = {};
-  p[lessonId][expId] = true;
-  saveProgress(p);
-  updateParentPanel();
-  // Also refresh the lesson grid so ✓ appears on the card
-  renderLessonExp(lessonId);
-}
+function save(name, val) { try { localStorage.setItem(name, JSON.stringify(val)); } catch(e) {} }
 
-// ═══════════════════════════════════════
-// INIT
-// ═══════════════════════════════════════
-function init() {
-  // Accessibility: keyboard navigation
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      const focus = document.querySelector(':focus');
-      if (focus && focus.onclick) { focus.click(); e.preventDefault(); }
-    }
-    if (e.key === 'Escape') {
-      const backBtn = document.querySelector('.back-btn, .btn-back');
-      if (backBtn) backBtn.click();
-    }
+function initState() {
+  state.progress = load('fgl-progress', {});
+  state.profile  = load('fgl-profile', { name: '', avatar: '🤠' });
+  state.expState = {};
+  // Mark lesson complete if all exps done
+  LESSONS.forEach(l => {
+    const done = l.exps.every(e => state.progress[e.id]);
+    if (done) state.progress[l.id] = true;
   });
-
-  // Accessibility: auto-focus first interactive element on load
-  window.addEventListener('load', function() {
-    const firstFocus = document.querySelector('button, [tabindex="0"], input, a[href]');
-    if (firstFocus) firstFocus.focus();
-  });
-
-  // Accessibility: tabindex cleanup — ensure all onclick elements are keyboard accessible
-  document.querySelectorAll('[onclick]').forEach(function(el) {
-    if (!el.tabIndex && el.tagName !== 'BUTTON' && el.tagName !== 'INPUT' && el.tagName !== 'A') {
-      el.tabIndex = 0;
-      el.setAttribute('role', 'button');
-    }
-  });
-
-  generateStars();
-  renderHomeGrid();
-  setupRabbity();
-  initProfile();
-  updateParentPanel();
 }
 
+// ─────────────────────────────────────────────
+// STARS
+// ─────────────────────────────────────────────
 function generateStars() {
-  const starsEl = document.getElementById('stars');
+  const el = document.getElementById('stars');
+  el.innerHTML = '';
   for (let i = 0; i < 80; i++) {
     const s = document.createElement('div');
     s.className = 'star';
-    s.style.left = Math.random() * 100 + '%';
-    s.style.top = Math.random() * 100 + '%';
-    s.style.width = s.style.height = (Math.random() * 2 + 1) + 'px';
-    s.style.setProperty('--dur', (Math.random() * 4 + 2) + 's');
-    s.style.setProperty('--min', (Math.random() * 0.3 + 0.1));
-    s.style.setProperty('--max', (Math.random() * 0.5 + 0.5));
-    starsEl.appendChild(s);
+    s.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;
+      width:${Math.random()*2+1}px;height:${Math.random()*2+1}px;
+      animation-delay:${Math.random()*3}s;animation-duration:${Math.random()*2+1}s`;
+    el.appendChild(s);
   }
 }
 
-function renderHomeGrid() {
-  const grid = document.getElementById('lesson-grid');
-  grid.innerHTML = '';
-  const p = loadProgress();
-
-  LESSONS.forEach(l => {
-    const expCount = l.experiences.length;
-    const doneCount = l.experiences.filter(e => (p[l.id] || {})[e.id]).length;
-    const done = doneCount > 0;
-    const complete = isLessonComplete(l.id);
-
-    const card = document.createElement('div');
-    card.className = 'lesson-card';
-    card.dataset.lesson = l.id;
-    card.onclick = () => enterLesson(l.id);
-
-    let statusHtml = '';
-    if (complete) {
-      statusHtml = `<div style="font-size:0.7rem;color:var(--gold);margin-top:4px;font-weight:700;">🎉 Semua selesai!</div>`;
-    } else if (done) {
-      statusHtml = `<div style="font-size:0.7rem;color:var(--green);margin-top:4px;font-weight:700;">✓ ${doneCount}/${expCount} dicoba</div>`;
+// ─────────────────────────────────────────────
+// PROGRESS
+// ─────────────────────────────────────────────
+function markDone(expId) {
+  if (!state.progress[expId]) {
+    state.progress[expId] = true;
+    save('fgl-progress', state.progress);
+    // Check lesson complete
+    const lesson = LESSONS.find(l => l.exps.some(e => e.id === expId));
+    if (lesson && lesson.exps.every(e => state.progress[e.id])) {
+      state.progress[lesson.id] = true;
+      save('fgl-progress', state.progress);
     }
-
-    card.innerHTML = `
-      <div class="lesson-emoji">${l.emoji}</div>
-      <div class="lesson-text">
-        <div class="lesson-title">${l.title}</div>
-        <div class="lesson-question">${l.q}</div>
-        ${statusHtml}
-      </div>
-      <div class="lesson-arrow">→</div>
-    `;
-    grid.appendChild(card);
-  });
+    confetti();
+    rabbitySay('Hebat! Kamu sudah selesai. 🌟');
+  }
 }
 
-// ═══════════════════════════════════════
-// NAVIGATION
-// ═══════════════════════════════════════
+function isDone(id) { return !!state.progress[id]; }
+
+// ─────────────────────────────────────────────
+// SCREEN MANAGEMENT
+// ─────────────────────────────────────────────
 function showScreen(name) {
   document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
   const el = document.getElementById('screen-' + name);
   if (el) el.classList.add('active');
-
-  // Profile screen setup
-  if (name === 'profile') {
-    renderProfileScreen();
-  }
-
-  // Nav buttons
-  const backBtn = document.getElementById('btn-back');
-  const homeBtn = document.getElementById('btn-home');
-  const rabbityBtn = document.getElementById('rabbity-btn');
-
-  if (name === 'home') {
-    backBtn.style.display = 'none';
-    homeBtn.style.display = 'none';
-    // Always show Rabbity on home too
-    rabbityBtn.style.display = 'block';
-    updateHomeGreeting();
-  } else {
-    backBtn.style.display = 'block';
-    homeBtn.style.display = 'block';
-    rabbityBtn.style.display = 'block';
-  }
-}
-
-function goHub() {
-  state.navStack = [];
-  showScreen('home');
-  updateParentPanel();
+  if (name !== 'home') state.history.push(name);
+  if (name === 'home') state.history = ['home'];
 }
 
 function goBack() {
-  if (state.navStack.length > 1) {
-    state.navStack.pop();
-    const prev = state.navStack[state.navStack.length - 1];
-    showScreen(prev.screen);
-    if (prev.fn) prev.fn(prev.data);
-  } else {
-    goHub();
-  }
+  if (state.history.length > 1) state.history.pop();
+  const prev = state.history[state.history.length - 1] || 'home';
+  showScreen(prev);
 }
 
-function pushNav(screen, fn, data) {
-  state.navStack.push({ screen, fn, data });
-  showScreen(screen);
-  if (fn) fn(data);
+// ─────────────────────────────────────────────
+// RENDER HOME
+// ─────────────────────────────────────────────
+function renderHome() {
+  const grid = document.getElementById('lesson-grid');
+  grid.innerHTML = '';
+  LESSONS.forEach((l, i) => {
+    const done = !!state.progress[l.id];
+    const doneCount = l.exps.filter(e => isDone(e.id)).length;
+    const card = document.createElement('button');
+    card.className = 'lesson-card';
+    card.onclick = () => openLesson(l);
+    card.innerHTML = `
+      <div class="lesson-icon">${l.emoji}</div>
+      <div>
+        <div class="lesson-name">${l.title}</div>
+        <div class="lesson-desc">${l.desc}</div>
+        <div style="font-size:0.7rem;opacity:0.4;margin-top:4px;">${doneCount}/${l.exps.length} aktivitas</div>
+      </div>
+      <div class="lesson-badge ${done ? 'done' : ''}">${done ? '✓' : (i+1)}</div>
+    `;
+    grid.appendChild(card);
+  });
+  updateProfileDisplay();
 }
 
-// ─── LESSON ENTRY ───
-function enterLesson(id) {
-  showScreen('l' + id);
-  pushNav('l' + id);
-}
-
-function startLesson(id) {
-  showScreen('exp');
-  renderLessonExp(id);
-  pushNav('exp', renderLessonExp, id);
-}
-
-function isLessonComplete(lessonId) {
-  const lesson = LESSONS.find(l => l.id === lessonId);
-  const p = loadProgress();
-  if (!lesson) return false;
-  return lesson.experiences.every(exp => p[lessonId]?.[exp.id]);
-}
-
-// ═══════════════════════════════════════
-// LESSON EXPERIENCES
-// ═══════════════════════════════════════
-function renderLessonExp(id) {
-  const lesson = LESSONS.find(l => l.id === id);
-  const container = document.getElementById('exp-container');
-  container.dataset.lesson = id;
-  container.style.background = '';
-
-  const p = loadProgress();
-  const done = (p[id] || {});
-
-  let html = `<div class="exp-area">
-    <div class="exp-title" style="color:${lesson.color}">${lesson.emoji} ${lesson.title}</div>
-    <div class="exp-prompt">Pilih yang ingin kamu coba:</div>
-    <div class="exp-cards">`;
-
-  lesson.experiences.forEach(e => {
-    const isDone = done[e.id];
-    html += `
-      <div class="exp-card" onclick="runExp(${id},'${e.id}')" tabindex="0" role="button">
-        <div class="exp-card-emoji">${e.emoji}</div>
-        <div class="exp-card-title">${e.title}</div>
-        ${isDone ? '<div class="exp-card-done">✓ Sudah dicoba</div>' : ''}
-      </div>`;
+// ─────────────────────────────────────────────
+// RENDER LESSON
+// ─────────────────────────────────────────────
+function openLesson(lesson) {
+  state.currentLesson = lesson;
+  document.getElementById('lesson-title-bar').textContent = lesson.emoji + ' ' + lesson.title;
+  const grid = document.getElementById('exp-grid');
+  grid.innerHTML = '';
+  lesson.exps.forEach((e, i) => {
+    const done = isDone(e.id);
+    const card = document.createElement('button');
+    card.className = 'exp-card' + (done ? ' done' : '');
+    card.onclick = () => openExp(e, lesson);
+    card.innerHTML = `
+      <div class="exp-num">${done ? '✓' : (i+1)}</div>
+      <div>
+        <div class="exp-name">${e.name}</div>
+        <div class="exp-tagline">${e.tagline}</div>
+      </div>
+    `;
+    grid.appendChild(card);
   });
 
-  html += `</div>
-    <div class="feedback-msg hint" style="font-size:0.85rem;margin-top:8px;">
-      💡 Semua pelajaran tersimpan otomatis. Kamu bisa kembali kapan saja!
+  // Add offline missions
+  const missDiv = document.createElement('div');
+  missDiv.className = 'offline-mission';
+  missDiv.innerHTML = `
+    <div class="emoji">🌍</div>
+    <div>
+      <div class="title">Misi di Dunia Nyata</div>
+      <div class="text">${lesson.missions.map(m => '• ' + m).join('<br>')}</div>
     </div>
-  </div>`;
+  `;
+  grid.appendChild(missDiv);
 
-  container.innerHTML = html;
+  showScreen('lesson');
 }
 
-// ═══════════════════════════════════════
-// EXPERIENCE RUNNERS
-// ═══════════════════════════════════════
-function getReplayButton() {
-  const container = document.getElementById('exp-container');
-  const lessonId = container.dataset.lesson;
-  const expId = container.dataset.expId;
-  if (!lessonId || !expId) return '';
-  const p = loadProgress();
-  const done = p[lessonId]?.[expId];
-  if (!done) return '';
-  return '<button class="btn btn-replay" onclick="replayExp()" style="margin-top:12px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);color:var(--cream);padding:12px 20px;border-radius:12px;font-size:0.9rem;">🔄 Coba Lagi</button>';
-}
+// ─────────────────────────────────────────────
+// RENDER EXPERIENCE
+// ─────────────────────────────────────────────
+function openExp(exp, lesson) {
+  state.currentExp = exp;
+  state.currentLesson = lesson;
+  document.getElementById('exp-title').textContent = lesson.emoji + ' ' + exp.name;
+  document.getElementById('exp-prompt').textContent = exp.tagline;
 
-function replayExp() {
-  const container = document.getElementById('exp-container');
-  const lessonId = container.dataset.lesson;
-  const expId = container.dataset.expId;
+  const area = document.getElementById('exp-area');
+  area.innerHTML = '';
+
+  switch (exp.type) {
+    case 'particles':   renderParticles(area);   break;
+    case 'gravity':     renderGravity(area);     break;
+    case 'solar':       renderSolar(area);      break;
+    case 'earth':       renderEarth(area);       break;
+    case 'water':       renderWater(area);      break;
+    case 'alive':       renderAlive(area);      break;
+    case 'plant':       renderPlant(area);      break;
+    case 'timeline':    renderTimeline(area);   break;
+    case 'classify':    renderClassify(area);   break;
+    case 'foodchain':   renderFoodChain(area);  break;
+    case 'needs':       renderNeeds(area);      break;
+    case 'shelter':     renderShelter(area);    break;
+    case 'tools':       renderTools(area);      break;
+    case 'cooperate':   renderCooperate(area);  break;
+    case 'symbols':     renderSymbols(area);    break;
+    case 'encoding':    renderEncoding(area);   break;
+    case 'messages':    renderMessages(area);   break;
+    case 'counting':    renderCounting(area);   break;
+    case 'skipcount':   renderSkipCount(area);  break;
+    case 'decimal':     renderDecimal(area);    break;
+    default:
+      area.innerHTML = '<div class="demo-box"><div style="font-size:2rem;">🔭</div><div>Segera hadir!</div></div>';
+  }
+
   showScreen('exp');
-  runExp(lessonId, expId);
 }
 
-function runExp(lessonId, expId) {
-  const container = document.getElementById('exp-container');
-  const lesson = LESSONS.find(l => l.id === lessonId);
-  const exp = lesson ? lesson.experiences.find(e => e.id === expId) : null;
-  container.dataset.lesson = lessonId;
-  container.dataset.expId = expId; // track current experience for markDone()
-
-  // Set breadcrumb
-  const bc = document.getElementById('exp-breadcrumb');
-  if (bc) bc.textContent = `Home > ${lesson ? lesson.title : ''} > ${exp ? exp.title : ''}`;
-
-  // Route to specific experience
-  const dispatch = {
-    // Lesson 1
-    'partikel': expParticles,
-    'gravitasi': expGravity,
-    'solar': expSolar,
-    'bumi': expEarthHistory,
-    'erosi': expErosion,
-    // Lesson 2
-    'hidup': expAlive,
-    'tanaman': expPlant,
-    'timeline': expTimeline,
-    'klasifikasi': expClassify,
-    'ekosistem': expEcosystem,
-    // Lesson 3
-    'kebutuhan': expNeeds,
-    'shelter': expShelter,
-    'alat': expTools,
-    'kerjasama': expCooperation,
-    'generasi': expKnowledge,
-    // Lesson 4
-    'komunikasi': expComm,
-    'simbol': expSymbol,
-    'sistem': expSymbolSystem,
-    'pesan': expTimeMessage,
-    // Lesson 5
-    'kambing': expGoats,
-    'loncat': expSkipCount,
-    'desimal': expDecimal
-  };
-
-  const fn = dispatch[expId];
-  if (fn) {
-    pushNav('exp', fn, { lessonId, expId, lesson });
-  }
-
-  // Append replay button if this experience is already done
-  setTimeout(() => {
-    const replayBtn = getReplayButton();
-    const expArea = document.querySelector('.exp-area');
-    if (expArea && replayBtn && !expArea.querySelector('.btn-replay')) {
-      const wrapper = document.createElement('div');
-      wrapper.innerHTML = replayBtn;
-      expArea.appendChild(wrapper.firstElementChild);
-    }
-  }, 50);
-}
-
-// ─── LESSON 1: PARTICLES ───
-function expParticles() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🌡️ Partikel & Suhu</div>
-    <div class="exp-prompt">Sentuh setiap kotak untuk melihat apa yang berubah!</div>
-    <div style="display:flex;gap:12px;width:100%;flex-wrap:wrap;justify-content:center;">
-      <div class="particle-box" id="pb-cold" style="flex:1;min-width:120px;cursor:pointer;" onclick="animateParticles('cold')" tabindex="0" role="button">
-        <div style="text-align:center;font-weight:700;color:#64B5F6;margin-bottom:8px;">DINGIN ❄️</div>
-        <div class="particle-field" id="pf-cold"></div>
-      </div>
-      <div class="particle-box" id="pb-warm" style="flex:1;min-width:120px;cursor:pointer;" onclick="animateParticles('warm')" tabindex="0" role="button">
-        <div style="text-align:center;font-weight:700;color:#FF8A65;margin-bottom:8px;">SEDANG 🌤️</div>
-        <div class="particle-field" id="pf-warm"></div>
-      </div>
-      <div class="particle-box" id="pb-hot" style="flex:1;min-width:120px;cursor:pointer;" onclick="animateParticles('hot')" tabindex="0" role="button">
-        <div style="text-align:center;font-weight:700;color:#E57373;margin-bottom:8px;">PANAS 🔥</div>
-        <div class="particle-field" id="pf-hot"></div>
-      </div>
-    </div>
-    <div class="feedback-msg hint" id="p-msg" style="display:none;"></div>
-    <div class="story-text" style="font-size:0.9rem;text-align:center;opacity:0.7;">Apa yang berubah ketika Dipanaskan? Apa yang tetap sama?</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Taruh es batu di piring. Lihat berapa lama cair. Sentuh sebelum dan sesudah!</div>
-    </div>
-  </div>`;
-  animateParticles('cold');
-  setTimeout(() => animateParticles('warm'), 500);
-  setTimeout(() => animateParticles('hot'), 1000);
-}
-
-function animateParticles(type) {
-  const field = document.getElementById('pf-' + type);
-  if (!field) return;
-  field.innerHTML = '';
-  const speeds = { cold: 6, warm: 2, hot: 0.4 };
-  const counts = { cold: 8, warm: 12, hot: 20 };
-  const s = speeds[type];
-  const n = counts[type];
-
-  for (let i = 0; i < n; i++) {
-    const p = document.createElement('div');
-    p.className = 'particle';
-    const size = Math.random() * 6 + 3;
-    p.style.width = p.style.height = size + 'px';
-    p.style.left = Math.random() * 90 + '%';
-    p.style.top = Math.random() * 70 + '%';
-    p.style.setProperty('--dx', (Math.random() * 80 - 40) + 'px');
-    p.style.setProperty('--dy', (Math.random() * 80 - 40) + 'px');
-    p.style.animationDuration = (Math.random() * s + s) + 's';
-    p.style.animationDelay = (Math.random() * 2) + 's';
-    if (type === 'hot') p.style.background = 'rgba(255,100,80,0.8)';
-    else if (type === 'cold') p.style.background = 'rgba(100,181,246,0.7)';
-    else p.style.background = 'rgba(255,200,100,0.7)';
-    field.appendChild(p);
-  }
-
-  const msgs = {
-    cold: ['Partikel bergerak lambat...', 'Ketika dingin, partikel hampir tidak bergerak.'],
-    warm: ['Partikel bergerak lebih cepat!', 'Semakin panas, semakin cepat bergerak.'],
-    hot: ['Partikel bergerak sangat cepat! 🔥', 'Panas membuat partikel semangat sekali!']
-  };
-  const msg = msgs[type][Math.floor(Math.random() * msgs[type].length)];
-  const el = document.getElementById('p-msg');
-  if (el) {
-    el.style.display = 'block';
-    el.className = 'feedback-msg hint';
-    el.textContent = msg;
-  }
-}
-
-// ─── LESSON 1: GRAVITY ───
-function expGravity() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🌀 Gravitasi</div>
-    <div class="exp-prompt">Tap di layar untuk menambahkan bintang! Ke mana benda-benda bergerak?</div>
-    <div class="gravity-demo" id="grav-demo" onclick="addGravStar(event)" tabindex="0" role="button">
-      <div class="grav-label">Tap untuk tambahkan bintang!</div>
-    </div>
-    <div class="feedback-msg hint" id="grav-msg">Gravitasi adalah tarikan yang menarik segala sesuatu ke tengah.</div>
-    <button class="btn btn-primary" onclick="clearGrav()" style="font-size:0.9rem;padding:12px 24px;">🔄 Mulai Ulang</button>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Lompat ke atas lalu jatuh. Tanpa gravitasi, kamu akan melayang terus!</div>
-    </div>
-  </div>`;
-  state.gravStars = [];
-}
-
-function addGravStar(e) {
-  const demo = document.getElementById('grav-demo');
-  if (!demo) return;
-  const rect = demo.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-
-  const star = document.createElement('div');
-  star.className = 'grav-star';
-  star.style.width = '20px'; star.style.height = '20px';
-  star.style.left = (x - 10) + 'px';
-  star.style.top = (y - 10) + 'px';
-  demo.appendChild(star);
-  state.gravStars.push(star);
-
-  // Add orbiting dots
-  for (let i = 0; i < 4; i++) {
-    const dot = document.createElement('div');
-    dot.className = 'grav-dot';
-    dot.style.left = (x - 3) + 'px';
-    dot.style.top = (y - 3) + 'px';
-    dot.style.setProperty('--r', (40 + Math.random() * 40) + 'px');
-    dot.style.setProperty('--dur', (2 + Math.random() * 2) + 's');
-    dot.style.animationDelay = (i * 0.5) + 's';
-    demo.appendChild(dot);
-    state.gravStars.push(dot);
-  }
-
-  const msg = document.getElementById('grav-msg');
-  if (msg) {
-    msg.className = 'feedback-msg success';
-    msg.textContent = 'Hebat! Lihat bagaimana benda-benda lain tertarik ke bintang! 🌀';
-  }
-  // Remove instruction
-  const label = demo.querySelector('.grav-label');
-  if (label) label.remove();
-}
-
-function clearGrav() {
-  const demo = document.getElementById('grav-demo');
-  if (!demo) return;
-  demo.querySelectorAll('.grav-star, .grav-dot').forEach(el => el.remove());
-  const label = document.createElement('div');
-  label.className = 'grav-label';
-  label.textContent = 'Tap untuk tambahkan bintang!';
-  demo.appendChild(label);
-  const msg = document.getElementById('grav-msg');
-  if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Gravitasi adalah tarikan yang menarik segala sesuatu ke tengah.'; }
-}
-
-// ─── LESSON 1: SOLAR SYSTEM ───
-function expSolar() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🪐 Sistem Surya</div>
-    <div class="exp-prompt">Drag Bumi untuk mengelilingi Matahari! Yang mana yang memberi Bumi cahaya?</div>
-    <div class="solar-demo" id="solar-demo">
-      <div class="sol-label sol-label-sun">☀️ Bintang</div>
-      <div class="sol-label sol-label-earth">🌍 Planet</div>
-      <div class="sol-label sol-label-moon">🌙 Bulan</div>
-      <div class="sol-sun" onclick="solarInfo('sun')" tabindex="0" role="button">☀️</div>
-      <div class="sol-earth" id="sol-earth" onclick="solarInfo('earth')" tabindex="0" role="button">🌍</div>
-      <div class="sol-moon" id="sol-moon">🌙</div>
-    </div>
-    <div class="feedback-msg hint" id="solar-msg">Matahari adalah bintang. Bumi mengelilingi Matahari dalam satu tahun!</div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:4px;">
-      <button class="btn" style="background:rgba(255,215,0,0.15);color:var(--gold);font-size:0.85rem;padding:10px 16px;border:1px solid rgba(255,215,0,0.3);" onclick="orbitEarth()">🔄 Jalankan orbit!</button>
-    </div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Di malam hari, lihat langit. Berapa banyak bintang yang bisa kamu hitung?</div>
-    </div>
-  </div>`;
-
-  // Drag Earth
-  const earth = document.getElementById('sol-earth');
-  if (earth) {
-    let dragging = false, startX, startY, origLeft, origTop;
-    const onDown = (e) => { e.preventDefault(); dragging = true; startX = e.clientX; startY = e.clientY; origLeft = parseFloat(earth.style.left)||50; origTop = parseFloat(earth.style.top)||15; };
-    const onMove = (e) => {
-      if (!dragging) return;
-      const dx = e.clientX - startX, dy = e.clientY - startY;
-      earth.style.left = (origLeft + dx / 3) + '%';
-      earth.style.top = (origTop + dy / 3) + '%';
-    };
-    const onUp = () => { dragging = false; };
-    earth.addEventListener('touchstart', onDown, { passive: false });
-    earth.addEventListener('mousedown', onDown);
-    window.addEventListener('touchmove', onMove);
-    window.addEventListener('mousemove', onMove);
-    window.addEventListener('touchend', onUp);
-    window.addEventListener('mouseup', onUp);
-  }
-}
-
-function solarInfo(what) {
-  const msg = document.getElementById('solar-msg');
-  if (!msg) return;
-  if (what === 'sun') {
-    msg.className = 'feedback-msg success';
-    msg.textContent = '☀️ Matahari adalah BINTANG! Satu-satunya bintang yang paling dekat dengan Bumi. Matahari memberi Bumi cahaya danhangat!';
-  } else {
-    msg.className = 'feedback-msg hint';
-    msg.textContent = '🌍 Bumi adalah PLANET. Planet adalah benda langit yang mengelilingi bintang. Bumi mengelilingi Matahari sekali dalam 365 hari!';
-  }
-}
-
-function orbitEarth() {
-  // Respect reduced motion preference
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const earth = document.getElementById('sol-earth');
-    if (earth) earth.style.left = '50%';
-    return;
-  }
-  const earth = document.getElementById('sol-earth');
-  if (!earth) return;
-  // Simple orbit animation
-  let angle = 0;
-  const anim = setInterval(() => {
-    angle += 3;
-    const rad = angle * Math.PI / 180;
-    const cx = 50 + 28 * Math.cos(rad);
-    const cy = 50 + 28 * Math.sin(rad);
-    earth.style.left = cx + '%';
-    earth.style.top = cy + '%';
-    if (angle >= 360) { clearInterval(anim); earth.style.left = '50%'; earth.style.top = '15%'; }
-  }, 120);
-}
-
-// ─── LESSON 1: EARTH HISTORY ───
-function expEarthHistory() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🌍 Bumi Muda</div>
-    <div class="exp-prompt">Geser untuk melihat bagaimana Bumi berubah!</div>
-    <div id="earth-vis" style="font-size:6rem;text-align:center;padding:20px;transition:all 0.5s;">🌋</div>
-    <div id="earth-era" style="font-family:var(--font-head);font-size:1.1rem;color:var(--orange);">Bermulia</div>
-    <div style="width:100%;max-width:300px;">
-      <input type="range" min="0" max="4" value="0" id="earth-slider"
-        style="width:100%;accent-color:var(--orange);cursor:pointer;height:8px;"
-        oninput="updateEarth(this.value)">
-      <div style="display:flex;justify-content:space-between;font-size:0.65rem;color:rgba(255,255,255,0.5);padding:4px 0;">
-        <span>Bermulia</span><span>Pendingin</span><span>Kerak</span><span>Air</span><span>Hari Ini</span>
-      </div>
-    </div>
-    <div class="story-text" id="earth-desc" style="font-size:0.85rem;text-align:center;max-width:320px;">Bumi dulu sangat panas! Lava kemerahan kemana-mana. Tidak ada lautan, tidak ada daratan seperti sekarang.</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Gali tanah di taman. Rasakan betapa keras bumi di luar!</div>
-    </div>
-  </div>`;
-}
-
-function updateEarth(val) {
-  const stages = [
-    { vis: '🌋', era: 'Bermulia 🔴', desc: 'Bumi dulu sangat panas! Lava kemerahan kemana-mana. Tidak ada lautan, tidak ada daratan seperti sekarang.' },
-    { vis: '🔥', era: 'Pendingin 🟠', desc: 'Bumi mulai mendingin. Batuan mulai terbentuk di permukaan. Tapi masih terlalu panas untuk kehidupan.' },
-    { vis: '🪨', era: 'Kerak Terbentuk ⚪', desc: 'Kerak Bumi sudah terbentuk! Tapi belum ada air. Permukaannya seperti bulan — kering dan panas.' },
-    { vis: '🌧️', era: 'Air Mengalir 🔵', desc: 'Hujan turun... dan turun... dan turun. Selama jutaan tahun! Until terbentuk lautan dan danau.' },
-    { vis: '🌍', era: 'Hari Ini 🟢', desc: 'Bumi sekarang! Ada daratan, lautan, dan udara. Justru sempurna untuk kehidupan!' }
+// ─────────────────────────────────────────────
+// EXPERIENCE: PARTICLES
+// ─────────────────────────────────────────────
+function renderParticles(area) {
+  state.expState.particles = { selected: [] };
+  const types = [
+    { label: 'Air', color: '#42A5F5', icon: '💧' },
+    { label: 'Batu', color: '#78909C', icon: '🪨' },
+    { label: 'Logam', color: '#FFB300', icon: '🔩' },
+    { label: 'Uap', color: '#90CAF9', icon: '🌫️' },
+    { label: 'Cahaya', color: '#FFF176', icon: '💡' },
+    { label: 'Suara', color: '#CE93D8', icon: '🔊' },
   ];
-  const s = stages[val];
-  const vis = document.getElementById('earth-vis');
-  const era = document.getElementById('earth-era');
-  const desc = document.getElementById('earth-desc');
-  if (vis) vis.textContent = s.vis;
-  if (era) { era.textContent = s.era; era.style.color = val < 2 ? 'var(--orange)' : val < 4 ? 'var(--blue)' : 'var(--green)'; }
-  if (desc) desc.textContent = s.desc;
-}
-
-// ─── LESSON 1: EROSION ───
-function expErosion() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🏔️ Air & Bumi</div>
-    <div class="exp-prompt">Tekan tombol untuk membuat hujan dan lihat apa yang terjadi!</div>
-    <div style="position:relative;width:260px;height:160px;background:rgba(139,105,20,0.3);border-radius:16px;overflow:hidden;" id="erosion-scene">
-      <div style="position:absolute;bottom:30px;left:50%;transform:translateX(-50%);font-size:3rem;" id="erosion-mountain">🏔️</div>
-      <div style="position:absolute;bottom:30px;right:30px;font-size:1.5rem;" id="erosion-river">💧</div>
-      <div id="erosion-rain" style="position:absolute;top:0;left:0;right:0;height:0;overflow:hidden;transition:height 1s;background:rgba(100,181,246,0.2);"></div>
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Pilih partikel dan amati!</div>
+      <div class="particle-area" id="particle-area">
+        ${types.map((t, i) => `<button class="particle" id="p${i}" style="background:${t.color};font-size:1.2rem;" onclick="selectParticle(${i})">${t.icon}<br><span style="font-size:0.6rem;">${t.label}</span></button>`).join('')}
+      </div>
+      <div class="exp-instruction" id="particle-msg">Sentuh partikel untuk tahu propertinya!</div>
     </div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
-      <button class="btn" style="background:rgba(100,181,246,0.15);color:var(--blue);border:1px solid rgba(100,181,246,0.3);font-size:0.9rem;padding:12px 20px;" onclick="makeRain()">🌧️ Buat Hujan</button>
-      <button class="btn" style="background:rgba(139,105,20,0.15);color:var(--orange);border:1px solid rgba(139,105,20,0.3);font-size:0.9rem;padding:12px 20px;" onclick="stopRain()">☀️ Berhenti</button>
+    <div class="exp-instruction" id="particle-fact" style="display:none;"></div>
+    <button class="btn btn-primary" onclick="checkParticles()" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Sudah tahu!</button>
+    <button class="btn btn-secondary replay-btn" onclick="replayExp()" style="display:block;margin:8px auto;">🔄 Coba Lagi</button>
+  `;
+}
+
+const PARTICLE_FACTS = [
+  '💧 Air: partikel sangat rapat, mengalir dan mengisi ruang',
+  '🪨 Batu: partikel sangat rapat, tidak bisa ditekan',
+  '🔩 Logam: partikel rapat dan bisa menghantarkan panas',
+  '🌫️ Uap: partikel berjauhan, bergerak cepat, tidak terlihat',
+  '💡 Cahaya: partikel energi tanpa massa, bergerak sangat cepat!',
+  '🔊 Suara: getaran partikel, butuh medium untuk jalan',
+];
+
+function selectParticle(i) {
+  document.querySelectorAll('.particle').forEach((p, j) => p.classList.toggle('selected', j === i));
+  const fact = document.getElementById('particle-fact');
+  if (fact) { fact.style.display = 'block'; fact.textContent = PARTICLE_FACTS[i]; }
+  state.expState.particles.selected.push(i);
+}
+
+function checkParticles() {
+  if (state.expState.particles.selected.length >= 2) {
+    markDone('particles');
+    rabbitySay('Hebat! Kamu tahu partikel itu berbeda! 🔬');
+  } else {
+    rabbitySay('Coba pilih minimal 2 partikel dulu!');
+  }
+}
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: GRAVITY
+// ─────────────────────────────────────────────
+function renderGravity(area) {
+  state.expState.gravity = { dropped: false };
+  area.innerHTML = `
+    <div class="demo-box" id="gravity-box" onclick="dropBall()">
+      <div class="demo-label" id="gravity-msg">Tap gambar untuk jatuhkan bola! ⬇️</div>
+      <div style="font-size:3rem;transition:transform 0.6s,opacity 0.6s;" id="gravity-ball">⚽</div>
+      <div style="font-size:2rem;opacity:0.3;margin-top:40px;">⬇️⬇️⬇️</div>
+      <div style="width:60px;height:20px;background:#4CAF50;border-radius:4px 4px 0 0;"></div>
     </div>
-    <div class="feedback-msg hint" id="erosion-msg">Air mengalir ke bawah — ke tempat yang rendah. Ini disebut erosi!</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Siram pasir dengan air. Lihat bagaimana air membuat alur!</div>
+    <div class="exp-instruction">Gravitasi menarik semua benda ke bawah. Semakin berat, semakin cepat jatuh!</div>
+    <div class="exp-instruction" style="background:rgba(255,215,0,0.1);border-color:rgba(255,215,0,0.3);">💡 Tanpa gravitasi, bola akan melayang di udara!</div>
+    <button class="btn btn-primary" onclick="if(state.expState.gravity.dropped){markDone('gravity');rabbitySay('Kamu sudah merasakan gravitasi! 🌍')}else{rabbitySay('Jatuhkan bolanya dulu! ⬇️')}" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-secondary replay-btn" onclick="resetGravity()" style="display:block;margin:8px auto;">🔄 Reset</button>
+  `;
+}
+
+function dropBall() {
+  const ball = document.getElementById('gravity-ball');
+  if (!ball) return;
+  ball.style.transform = 'translateY(100px)';
+  ball.style.opacity = '0';
+  state.expState.gravity.dropped = true;
+  const msg = document.getElementById('gravity-msg');
+  if (msg) msg.textContent = 'Boong! Bola jatuh! 🌍 Gravitasi bekerja!';
+}
+
+function resetGravity() {
+  const ball = document.getElementById('gravity-ball');
+  if (ball) { ball.style.transform = ''; ball.style.opacity = ''; }
+  const msg = document.getElementById('gravity-msg');
+  if (msg) msg.textContent = 'Tap gambar untuk jatuhkan bola! ⬇️';
+}
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: SOLAR SYSTEM
+// ─────────────────────────────────────────────
+function renderSolar(area) {
+  const planets = [
+    { name: 'Merkurius', emoji: '⚫', orbit: 60,  speed: 3,  color: '#9E9E9E' },
+    { name: 'Venus',     emoji: '🟡', orbit: 90,  speed: 5,  color: '#FFD54F' },
+    { name: 'Bumi',     emoji: '🔵', orbit: 120, speed: 8,  color: '#42A5F5' },
+    { name: 'Mars',     emoji: '🔴', orbit: 150, speed: 13, color: '#EF5350' },
+    { name: 'Jupiter', emoji: '🟤', orbit: 190, speed: 20, color: '#A1887F' },
+    { name: 'Saturnus', emoji: '🥔', orbit: 230, speed: 30, color: '#FFD54F' },
+  ];
+  const speed = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1;
+  let angles = planets.map(() => Math.random() * Math.PI * 2);
+  let timer = null;
+
+  area.innerHTML = `
+    <div class="demo-box" id="solar-box" style="align-items:center;">
+      <div class="demo-label">Tap planet untuk tahu fakta!</div>
+      <div style="position:relative;width:280px;height:280px;margin:10px auto;" id="solar-orbits">
+        <div style="position:absolute;left:50%;top:50%;width:30px;height:30px;transform:translate(-50%,-50%);font-size:2rem;">☀️</div>
+        ${planets.map((p, i) => `
+          <div style="position:absolute;left:50%;top:50%;width:${p.orbit*2}px;height:${p.orbit*2}px;margin:${-p.orbit}px 0 0 ${-p.orbit}px;border-radius:50%;border:1px solid rgba(255,255,255,0.06);pointer-events:none;"></div>
+          <div id="planet-${i}" style="position:absolute;left:50%;top:50%;width:24px;height:24px;margin:${-12}px 0 0 ${-12}px;font-size:1.1rem;cursor:pointer;border-radius:50%;transition:transform 0.3s;" onclick="showPlanetFact(${i})">${p.emoji}</div>
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="planet-fact">Sentuh planet untuk tahu fakta menarik!</div>
     </div>
-  </div>`;
-  state.rainInterval = null;
+    <button class="btn btn-primary" onclick="markDone('solar');rabbitySay('Tata surya kita luar biasa! 🪐')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-secondary replay-btn" onclick="replayExp()" style="display:block;margin:8px auto;">🔄 Coba Lagi</button>
+  `;
+
+  const PLANET_FACTS = [
+    '🪨 Merkurius: planet terkecil, dekat Matahari, sangat panas siang dan sangat dingin malam',
+    '🟡 Venus: planet terpanas, atmosfer tebal seperti selimut',
+    '🔵 Bumi: satu-satunya planet yang diketahui memiliki kehidupan',
+    '🔴 Mars: planet merah, someday manusia mungkin tinggal di sini',
+    '🟤 Jupiter: planet terbesar, bisa muat 1300 Bumi di dalamnya!',
+    '🥔 Saturnus: terkenal dengan cincinnya yang cantik terbuat dari es dan batu',
+  ];
+
+  window.showPlanetFact = function(i) {
+    document.getElementById('planet-fact').textContent = PLANET_FACTS[i];
+    speak(PLANET_FACTS[i]);
+  };
+
+  function animatePlanets() {
+    angles = angles.map((a, i) => {
+      const p = planets[i];
+      const x = Math.cos(a) * p.orbit;
+      const y = Math.sin(a) * p.orbit;
+      const el = document.getElementById('planet-' + i);
+      if (el) { el.style.transform = `translate(${x}px, ${y}px)`; }
+      return a + (0.02 * speed * p.speed / 10);
+    });
+  }
+
+  if (speed) {
+    timer = setInterval(animatePlanets, 80);
+    state._solarTimer = timer;
+  } else {
+    angles.forEach((a, i) => {
+      const p = planets[i];
+      const x = Math.cos(a) * p.orbit;
+      const y = Math.sin(a) * p.orbit;
+      const el = document.getElementById('planet-' + i);
+      if (el) el.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  }
 }
 
-function makeRain() {
-  const rain = document.getElementById('erosion-rain');
-  const msg = document.getElementById('erosion-msg');
-  const river = document.getElementById('erosion-river');
-  if (!rain) return;
-  rain.style.height = '100%';
-  if (msg) { msg.className = 'feedback-msg success'; msg.textContent = 'Air mengalir ke bawah! Air membuat parit, sungai, dan mengikis tanah. Ini namanya erosi! 🌧️'; }
-  if (river) river.style.opacity = '1';
+// ─────────────────────────────────────────────
+// EXPERIENCE: EARTH HISTORY
+// ─────────────────────────────────────────────
+function renderEarth(area) {
+  const eras = [
+    { emoji: '🌌', name: '4.5 Miliar Tahun Lalu', desc: 'Bumi是一片熔岩，火山喷发，宇宙漆黑', color: '#B71C1C' },
+    { emoji: '🌋', name: '3 Miliar Tahun Lalu', desc: 'Bumi冷却，第一个海洋形成，生命开始', color: '#1565C0' },
+    { emoji: '🌿', name: '500 Juta Tahun Lalu', desc: 'Dinosauri tidak ada, hanya ganggang dan makhluk kecil', color: '#2E7D32' },
+    { emoji: '🦖', name: '65 Juta Tahun Lalu', desc: 'Dinosauri霸占地球，然后突然消失', color: '#795548' },
+    { emoji: '🧒', name: '200 Ribu Tahun Lalu', desc: 'Manusia pertama muncul di Afrika', color: '#F57C00' },
+    { emoji: '🏠', name: 'Sekarang', desc: 'Kita ada di sini — 8 miliar manusia di Bumi!', color: '#1976D2' },
+  ];
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Pilih era untuk tahu apa yang terjadi!</div>
+      <div style="display:flex;flex-direction:column;gap:8px;width:100%;" id="era-list">
+        ${eras.map((e, i) => `
+          <button onclick="showEra(${i})" style="background:${e.color}22;border:2px solid ${e.color}55;border-radius:12px;padding:10px 14px;color:var(--cream);cursor:pointer;display:flex;gap:10px;align-items:center;text-align:left;font-family:var(--font-body);font-size:0.85rem;">
+            <span style="font-size:1.5rem;">${e.emoji}</span>
+            <span><strong>${e.name}</strong><br><span style="opacity:0.7;font-size:0.75rem;" id="era-desc-${i}">Tap untuk tahu →</span></span>
+          </button>
+        `).join('')}
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="markDone('earth');rabbitySay('Bumi sudah sangat lama ada! 🌍')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-secondary replay-btn" onclick="replayExp()" style="display:block;margin:8px auto;">🔄 Reset</button>
+  `;
+  window.showEra = function(i) {
+    const eras2 = [
+      '4.5 miliar tahun lalu: Bumi是一片熔岩!',
+      '3 miliar tahun lalu: Lautan pertama terbentuk, kehidupan uniseluler muncul',
+      '500 juta tahun lalu: Tidak ada dinosaurus — hanya ganggang dan trilobita!',
+      '65 juta tahun lalu: Dinosaurus霸占地球，然后一颗陨石让它们灭绝',
+      '200 ribu tahun lalu: Manusia pertama (Homo sapiens) muncul di Afrika',
+      'Sekarang: 8 miliar manusia, kota, teknologi!',
+    ];
+    const el = document.getElementById('era-desc-' + i);
+    if (el) el.textContent = eras2[i];
+    speak(eras2[i]);
+  };
 }
 
-function stopRain() {
-  const rain = document.getElementById('erosion-rain');
-  const msg = document.getElementById('erosion-msg');
-  if (!rain) return;
-  rain.style.height = '0';
-  if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Air mengalir ke bawah — ke tempat yang rendah. Ini disebut erosi!'; }
+// ─────────────────────────────────────────────
+// EXPERIENCE: WATER
+// ─────────────────────────────────────────────
+function renderWater(area) {
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Simulasi air menggerus batu</div>
+      <div id="water-demo" style="font-size:2rem;">🪨 + 💧 → ⬇️⬇️⬇️ → 🕳️</div>
+      <div class="exp-instruction">Air menggerus batu sedikit demi sedikit. Butuh jutaan tahun!</div>
+    </div>
+    <div class="exp-instruction">💧 Air hujan mengandung CO2, menjadi sedikit asam<br>🪨 Asam mengerok batu limestone<br>⏳ Selama jutaan tahun, terbentuk gua dan jurang<br>🌊 Air membawa sedimen ke laut</div>
+    <button class="btn btn-primary" onclick="markDone('water');rabbitySay('Air sangat kuat walau lembut! 💧')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
 }
 
-// ─── LESSON 2: ALIVE OR NOT ───
-function expAlive() {
+// ─────────────────────────────────────────────
+// EXPERIENCE: ALIVE
+// ─────────────────────────────────────────────
+function renderAlive(area) {
+  state.expState.alive = { selected: null };
   const items = [
-    { emoji: '🪨', name: 'Batu', alive: false },
-    { emoji: '🌳', name: 'Pohon', alive: true },
-    { emoji: '🐱', name: 'Kucing', alive: true },
-    { emoji: '☁️', name: 'Awan', alive: false },
-    { emoji: '🍄', name: 'Jamur', alive: true },
-    { emoji: '🤖', name: 'Robot', alive: false },
-    { emoji: '🌸', name: 'Bunga', alive: true },
-    { emoji: '🐟', name: 'Ikan', alive: true }
+    { emoji: '🐕', name: 'Anjing', answer: true },
+    { emoji: '🌵', name: 'Kaktus', answer: true },
+    { emoji: '🪨', name: 'Batu', answer: false },
+    { emoji: '💻', name: 'Komputer', answer: false },
+    { emoji: '🍎', name: 'Apel', answer: true },
+    { emoji: '🔥', name: 'Api', answer: false },
+    { emoji: '🦋', name: 'Kupu-kupu', answer: true },
+    { emoji: '🚗', name: 'Mobil', answer: false },
   ];
-  const c = document.getElementById('exp-container');
-  let html = `<div class="exp-area">
-    <div class="exp-title">🌿 Hidup atau Tidak?</div>
-    <div class="exp-prompt">Tap setiap benda untuk menebak: HIDUP atau BUKAN HIDUP?</div>
-    <div class="classify-grid" style="grid-template-columns:repeat(4,1fr);">`;
-  items.forEach((item, i) => {
-    html += `<div class="animal-card" id="alive-${i}" onclick="checkAlive(${i}, ${item.alive})" tabindex="0" role="button">
-      <div class="animal-emoji">${item.emoji}</div>
-      <div class="animal-name">${item.name}</div>
-    </div>`;
-  });
-  html += `</div><div class="feedback-msg hint" id="alive-msg">Tekan untuk menebak!</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Di luar, cari 3 benda yang HIDUP dan 3 yang BUKAN HIDUP. Foto yang kamu temukan!</div>
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label" id="alive-q">Mana yang HIDUP? Tap untuk memilih!</div>
+      <div class="animal-grid">
+        ${items.map((item, i) => `
+          <button class="animal-card" id="alive-${i}" onclick="selectAlive(${i})">
+            <span class="emoji">${item.emoji}</span>
+            <span class="label">${item.name}</span>
+          </button>
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="alive-feedback"></div>
     </div>
-  </div>`;
-  c.innerHTML = html;
-}
-
-function checkAlive(idx, isAlive) {
-  const card = document.getElementById('alive-' + idx);
-  const msg = document.getElementById('alive-msg');
-  if (!card || card.classList.contains('placed')) return;
-  card.classList.add('placed');
-  card.style.borderColor = isAlive ? 'var(--green)' : '#E57373';
-  if (msg) {
-    if (isAlive) {
-      msg.className = 'feedback-msg success';
-      msg.textContent = '✓ Hidup! Makhluk hidup bernapas, makan, dan tumbuh! 🌱';
+    <div class="exp-instruction">Makhluk hidup: bergerak, makan, bernapas, berkembang biak, sensitif terhadap lingkungan</div>
+    <button class="btn btn-primary" onclick="markDone('alive');rabbitySay('Kamu tahu mana yang hidup! 🌱')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Tandai selesai!</button>
+  `;
+  window.selectAlive = function(i) {
+    const item = items[i];
+    const el = document.getElementById('alive-' + i);
+    document.querySelectorAll('.animal-card').forEach(c => c.classList.remove('selected'));
+    if (el) el.classList.add('selected');
+    const fb = document.getElementById('alive-feedback');
+    if (item.answer) {
+      if (fb) { fb.innerHTML = `<span style="color:#4CAF50">✅ ${item.emoji} ${item.name} — HIDUP! ${item.name === 'Kaktus' ? '(tapi sangat pelan!)' : ''}</span>`; }
+      speak(`${item.emoji} ${item.name} hidup!`);
     } else {
-      msg.className = 'feedback-msg wrong';
-      msg.textContent = '✗ Bukan hidup! Benda tidak bernapas atau tumbuh. 🪨';
+      if (fb) { fb.innerHTML = `<span style="color:#EF5350">❌ ${item.emoji} ${item.name} — TIDAK hidup. Tapi ${item.name === 'Api' ? 'api memang sulit dikategorikan!' : item.name + ' dibuat manusia.'}</span>`; }
     }
-  }
+    state.expState.alive.selected = i;
+  };
 }
 
-
-function expPlant() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🪴 Tanaman Butuh Apa?</div>
-    <div class="exp-prompt">Kasih tanaman ini yang dibutuhkannya untuk hidup!</div>
-    <div id="plant-display" style="font-size:5rem;text-align:center;padding:20px;transition:all 0.5s;">🥀</div>
-    <div style="font-size:0.8rem;color:var(--cream);opacity:0.5;margin-top:-8px;margin-bottom:16px;" id="plant-status">Tanaman layu... butuh apa ya?</div>
-    <div class="eco-toggle" style="margin-bottom:16px;">
-      <button class="eco-btn" id="btn-water" onclick="givePlant('water')">💧 Air</button>
-      <button class="eco-btn" id="btn-sun" onclick="givePlant('sun')">☀️ Sinar</button>
-      <button class="eco-btn" id="btn-air" onclick="givePlant('air')">💨 Udara</button>
+// ─────────────────────────────────────────────
+// EXPERIENCE: PLANT
+// ─────────────────────────────────────────────
+function renderPlant(area) {
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Tanaman butuh 3 hal untuk hidup!</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:10px 0;">
+        <button class="btn btn-secondary" id="btn-water" onclick="givePlant('water')" style="font-size:2.5rem;padding:14px;">💧</button>
+        <button class="btn btn-secondary" id="btn-sun" onclick="givePlant('sun')" style="font-size:2.5rem;padding:14px;">☀️</button>
+        <button class="btn btn-secondary" id="btn-air" onclick="givePlant('air')" style="font-size:2.5rem;padding:14px;">💨</button>
+      </div>
+      <div id="plant-msg" class="exp-instruction">Tekan 💧 ☀️ 💨 untuk memberi tanaman!</div>
+      <div style="font-size:3rem;" id="plant-display">🌱</div>
     </div>
-    <div class="feedback-msg hint" id="plant-msg">Tanaman butuh air, cahaya matahari, dan udara untuk hidup!</div>
-    <button class="btn" onclick="resetPlant()" style="font-size:0.85rem;padding:10px 20px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);">🔄 Reset</button>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Siram tanaman di rumah selama 3 hari. Gambar perubahan yang kamu lihat.</div>
-    </div>
-  </div>`;
-  state.plant = { water: false, sun: false, air: false };
+    <div class="exp-instruction">💧 Air → akar minum dari tanah<br>☀️ Cahaya → daun makan dari Matahari<br>💨 Udara → daun bernapas CO2</div>
+    <button class="btn btn-primary" onclick="markDone('plant');rabbitySay('Tanaman butuh 3 hal: air, cahaya, udara! 🌱')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+    <button class="btn btn-secondary replay-btn" onclick="resetPlant()" style="display:block;margin:8px auto;">🔄 Reset</button>
+  `;
 }
 
 function givePlant(type) {
-  state.plant[type] = !state.plant[type];
+  const given = state.expState.plantGiven = state.expState.plantGiven || {};
+  given[type] = true;
   const btn = document.getElementById('btn-' + type);
+  if (btn) btn.style.background = 'var(--green)';
+  const all = given.water && given.sun && given.air;
   const msg = document.getElementById('plant-msg');
-  const status = document.getElementById('plant-status');
-  const display = document.getElementById('plant-display');
-  if (btn) btn.classList.toggle('active', state.plant[type]);
-
-  const all = state.plant.water && state.plant.sun && state.plant.air;
-  const any = state.plant.water || state.plant.sun || state.plant.air;
-
+  const disp = document.getElementById('plant-display');
   if (all) {
-    display.textContent = '🌸';
-    if (msg) { msg.className = 'feedback-msg success'; msg.textContent = 'Hebat! Tanaman sehat dan berbunga! 🌸 Tanaman butuh air, cahaya, dan udara — semua!'; }
-    if (status) status.textContent = 'Tanaman sehat dan bahagia! 🌸';
-    confetti();
-    markDone();
-  } else if (any) {
+    if (msg) msg.innerHTML = '<span style="color:#4CAF50">🌸 Tanaman hidup dan berbunga! 🌸</span>';
+    if (disp) disp.textContent = '🌸';
+  } else {
     const missing = [];
-    if (!state.plant.water) missing.push('air');
-    if (!state.plant.sun) missing.push('sinar');
-    if (!state.plant.air) missing.push('udara');
-    const emoji = state.plant.water ? (state.plant.sun ? '🌿' : '🌵') : '🥀';
-    display.textContent = emoji;
-    if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = `Masih butuh ${missing.join(' dan ')}! Tanaman butuh semua tiga. 🌱`; }
-    if (status) status.textContent = `Tanaman butuh ${missing.join(' dan ')}...`;
+    if (!given.water) missing.push('💧');
+    if (!given.sun) missing.push('☀️');
+    if (!given.air) missing.push('💨');
+    if (msg) msg.textContent = 'Sudah diberi: ' + Object.keys(given).map(t => t === 'water' ? '💧' : t === 'sun' ? '☀️' : '💨').join(' ') + ' — masih butuh: ' + missing.join(' ');
   }
 }
 
 function resetPlant() {
-  state.plant = { water: false, sun: false, air: false };
+  state.expState.plantGiven = {};
   ['water','sun','air'].forEach(t => {
     const btn = document.getElementById('btn-' + t);
-    if (btn) btn.classList.remove('active');
+    if (btn) btn.style.background = '';
   });
-  const display = document.getElementById('plant-display');
   const msg = document.getElementById('plant-msg');
-  const status = document.getElementById('plant-status');
-  if (display) display.textContent = '🥀';
-  if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Tanaman butuh air, cahaya matahari, dan udara untuk hidup!'; }
-  if (status) status.textContent = 'Tanaman layu... butuh apa ya?';
+  const disp = document.getElementById('plant-display');
+  if (msg) msg.textContent = 'Tekan 💧 ☀️ 💨 untuk memberi tanaman!';
+  if (disp) disp.textContent = '🌱';
 }
 
-// ─── LESSON 2: TIMELINE ───
-function expTimeline() {
-  const eras = [
-    { emoji: '🔬', name: 'Mikroba', time: '~3.8 miliar tahun lalu', desc: 'Makhluk hidup pertama di Bumi sangat kecil — tidak bisa dilihat dengan mata! Mereka hidup di air.' },
-    { emoji: '🐟', name: 'Ikan', time: '~500 juta tahun lalu', desc: 'Ikan adalah hewan pertama yang punya tulang belakang. Mereka hidup di laut.' },
-    { emoji: '🌿', name: 'Tumbuhan', time: '~470 juta tahun lalu', desc: 'Tumbuhan pertama hidup di air, lalu mulai grow di daratan. Mereka membuat oksigen untuk kita hirup!' },
-    { emoji: '🦕', name: 'Dinosaurus', time: '~230 juta tahun lalu', desc: 'Dinosaurus adalah hewan darat terbesar yang pernah ada. Mereka menguasai Bumi selama 165 juta tahun!' },
-    { emoji: '🦣', name: 'Mamalia', time: '~200 juta tahun lalu', desc: 'Mamalia pertama kecil seperti tikus! Tapi mereka bertahan saat dinosaurus menghilang.' },
-    { emoji: '🧒', name: 'Manusia', time: '~300.000 tahun lalu', desc: 'Manusia muncul DI AKHIR cerita Bumi! Dalam skala waktu Bumi, manusia baru ada beberapa detik terakhir!' }
+// ─────────────────────────────────────────────
+// EXPERIENCE: TIMELINE
+// ─────────────────────────────────────────────
+function renderTimeline(area) {
+  const events = [
+    { emoji: '🌌', year: '4.5 Miliar', name: 'Bumi Terbentuk', color: '#B71C1C' },
+    { emoji: '🌱', year: '3.5 Miliar', name: 'Kehidupan Pertama', color: '#1565C0' },
+    { emoji: '🦕', year: '250 Jt', name: 'Dinosaurus Muncul', color: '#2E7D32' },
+    { emoji: '💥', year: '65 Jt', name: 'Dinosaurus Punah', color: '#795548' },
+    { emoji: '🧒', year: '200Rb', name: 'Manusia Pertama', color: '#F57C00' },
+    { emoji: '🏠', year: 'Sekarang', name: 'Sekarang', color: '#1976D2' },
   ];
-  const colors = ['#999','#64B5F6','#4CAF50','#FF8A65','#CE93D8','#FFD700'];
-  const c = document.getElementById('exp-container');
-  let html = `<div class="exp-area">
-    <div class="exp-title">⏳ Garis Waktu Kehidupan</div>
-    <div class="exp-prompt">Tap setiap era untuk tahu apa yang terjadi!</div>
-    <div class="timeline" style="width:100%;">`;
-  eras.forEach((e, i) => {
-    html += `<div class="tl-era" style="background:${colors[i]}22;border-color:${colors[i]}44;" onclick="showEra(${i})" id="era-${i}" tabindex="0" role="button">
-      <span class="tl-era-emoji">${e.emoji}</span>
-      <span class="tl-era-name">${e.name}</span>
-      <span class="tl-era-time">${e.time}</span>
-    </div>`;
-  });
-  html += `</div>
-    <div class="tl-detail" id="tl-detail">
-      <div class="tl-detail-emoji" id="tl-de">🔬</div>
-      <div class="tl-detail-key" id="tl-dk">Tekan era di atas!</div>
-      <div class="tl-detail-text" id="tl-dd"></div>
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Garis Waktu Kehidupan di Bumi</div>
+      <div style="display:flex;align-items:center;gap:4px;overflow-x:auto;padding:8px 0;width:100%;">
+        ${events.map((e, i) => `
+          <div style="flex:1;min-width:60px;display:flex;flex-direction:column;align-items:center;gap:4px;">
+            <div style="font-size:1.8rem;">${e.emoji}</div>
+            <div style="width:2px;height:20px;background:linear-gradient(to bottom,${e.color},rgba(255,255,255,0.1));"></div>
+            <div style="font-size:0.65rem;font-weight:700;color:${e.color};text-align:center;">${e.year}</div>
+            <div style="font-size:0.6rem;opacity:0.6;text-align:center;">${e.name}</div>
+          </div>
+          ${i < events.length - 1 ? '<div style="flex:0 0 8px;font-size:0.7rem;opacity:0.3;">→</div>' : ''}
+        `).join('')}
+      </div>
     </div>
-    <div class="feedback-msg hint" style="font-size:0.8rem;max-width:300px;">Manusia muncul di DETIK TERAKHIR dari cerita Bumi! 🧒</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Tanya orang dewasa: dinosaurus sudah berapa lama hilang?</div>
-    </div>
-  </div>`;
-  c.innerHTML = html;
+    <div class="exp-instruction">📏 Timeline tidak drawn dalam skala. 4.5 miliar tahunMuat dalam satu garis! Dinosaurus punah 65 juta tahun yang lalu — sangat lama sebelum manusia ada.</div>
+    <button class="btn btn-primary" onclick="markDone('timeline');rabbitySay('Kamu sudah tahu sejarah kehidupan! 🦕')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
 }
 
-function showEra(idx) {
-  document.querySelectorAll('.tl-era').forEach(e => e.classList.remove('selected'));
-  const el = document.getElementById('era-' + idx);
-  if (el) el.classList.add('selected');
-  const eras = [
-    { emoji: '🔬', key: '~3.8 miliar tahun lalu', text: 'Makhluk hidup pertama di Bumi sangat kecil — tidak bisa dilihat dengan mata! Mereka hidup di air.' },
-    { emoji: '🐟', key: '~500 juta tahun lalu', text: 'Ikan adalah hewan pertama yang punya tulang belakang. Mereka hidup di laut.' },
-    { emoji: '🌿', key: '~470 juta tahun lalu', text: 'Tumbuhan pertama hidup di air, lalu mulai grow di daratan. Mereka membuat oksigen untuk kita hirup!' },
-    { emoji: '🦕', key: '~230 juta tahun lalu', text: 'Dinosaurus adalah hewan darat terbesar yang pernah ada. Mereka menguasai Bumi selama 165 juta tahun!' },
-    { emoji: '🦣', key: '~200 juta tahun lalu', text: 'Mamalia pertama kecil seperti tikus! Tapi mereka bertahan saat dinosaurus menghilang.' },
-    { emoji: '🧒', key: '~300.000 tahun lalu', text: 'Manusia muncul DI AKHIR cerita Bumi! Dalam skala waktu Bumi, manusia baru ada beberapa detik terakhir!' }
-  ];
-  const d = eras[idx];
-  const de = document.getElementById('tl-de');
-  const dk = document.getElementById('tl-dk');
-  const dd = document.getElementById('tl-dd');
-  if (de) de.textContent = d.emoji;
-  if (dk) dk.textContent = d.key;
-  if (dd) dd.textContent = d.text;
-}
-
-// ─── LESSON 2: CLASSIFICATION ───
-function expClassify() {
+// ─────────────────────────────────────────────
+// EXPERIENCE: CLASSIFY
+// ─────────────────────────────────────────────
+function renderClassify(area) {
   const animals = [
-    { emoji: '🐦', name: 'Burung' },
-    { emoji: '🐟', name: 'Ikan' },
-    { emoji: '🐕', name: 'Anjing' },
-    { emoji: '🐍', name: 'Ular' },
-    { emoji: '🐸', name: 'Katak' },
-    { emoji: '🦋', name: 'Kupu-Kupu' }
+    { emoji: '🐕', name: 'Anjing', type: 'vertebrate' },
+    { emoji: '🦴', name: 'Ikan', type: 'vertebrate' },
+    { emoji: '🦅', name: 'Burung', type: 'vertebrate' },
+    { emoji: '🐍', name: 'Ular', type: 'vertebrate' },
+    { emoji: '🦋', name: 'Kupu-kupu', type: 'invertebrate' },
+    { emoji: '🐜', name: 'Semut', type: 'invertebrate' },
+    { emoji: '🦀', name: 'Kepiting', type: 'invertebrate' },
+    { emoji: '🪱', name: 'Cacing', type: 'invertebrate' },
   ];
-  const buckets = [
-    { emoji: '🦅', name: 'Bisa Terbang', id: 'fly' },
-    { emoji: '🏊', name: 'Bisa Renang', id: 'swim' },
-    { emoji: '🚶', name: 'Bisa Jalan', id: 'walk' }
-  ];
-  const c = document.getElementById('exp-container');
-  let html = `<div class="exp-area">
-    <div class="exp-title">🦋 Klasifikasi Makhluk Hidup</div>
-    <div class="exp-prompt">Tarik hewan ke kelompok yang benar! (tap untuk memilih, tap lagi untuk letakkan)</div>
-    <div class="classify-grid" style="margin-bottom:16px;">`;
-  animals.forEach((a, i) => {
-    html += `<div class="animal-card" id="an-${i}" onclick="toggleAnimal(${i},'${a.emoji}')" tabindex="0" role="button">
-      <div class="animal-emoji">${a.emoji}</div>
-      <div class="animal-name">${a.name}</div>
-    </div>`;
-  });
-  html += `</div>
-    <div class="classify-buckets">`;
-  buckets.forEach(b => {
-    html += `<div class="bucket hint" id="bucket-${b.id}" onclick="placeAnimal('${b.id}')" tabindex="0" role="button">
-      <div class="bucket-label">${b.emoji} ${b.name}</div>
-      <div class="bucket-contents" id="bucket-contents-${b.id}"></div>
-    </div>`;
-  });
-  html += `</div>
-    <div class="feedback-msg hint" id="classify-msg">Buat aturanmu sendiri!Tidak ada jawaban salah!</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Kumpulkan 6 benda dari luar. Kelompokkan berdasarkan aturanmu sendiri!</div>
-    </div>
-  </div>`;
-  c.innerHTML = html;
-  state.selectedAnimal = null;
-  state.placedAnimals = new Set();
-}
-
-function toggleAnimal(idx, emoji) {
-  if (state.placedAnimals.has(idx)) return;
-  document.querySelectorAll('.animal-card').forEach(c => c.style.borderColor = '');
-  const card = document.getElementById('an-' + idx);
-  if (card) card.style.borderColor = 'var(--gold)';
-  state.selectedAnimal = { idx, emoji };
-}
-
-function placeAnimal(bucketId) {
-  if (!state.selectedAnimal) return;
-  const { idx, emoji } = state.selectedAnimal;
-  if (state.placedAnimals.has(idx)) return;
-  state.placedAnimals.add(idx);
-  const card = document.getElementById('an-' + idx);
-  if (card) card.classList.add('placed');
-  const contents = document.getElementById('bucket-contents-' + bucketId);
-  if (contents) {
-    const span = document.createElement('span');
-    span.className = 'bucket-animal';
-    span.textContent = emoji;
-    contents.appendChild(span);
-  }
-  const msg = document.getElementById('classify-msg');
-  if (msg) { msg.className = 'feedback-msg success'; msg.textContent = `Hebat! ${emoji} masuk ke kelompok ${bucketId}!`; }
-  state.selectedAnimal = null;
-  document.querySelectorAll('.animal-card').forEach(c => c.style.borderColor = '');
-  if (state.placedAnimals.size === 6) { confetti(); markDone(); }
-}
-
-// ─── LESSON 2: ECOSYSTEM ───
-function expEcosystem() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🌞 Ekosistem</div>
-    <div class="exp-prompt">Tap bagian ekosistem untuk menghilangkannya. Apa yang terjadi?</div>
-    <div class="eco-display" id="eco-display">
-      <div style="display:flex;align-items:center;gap:8px;">
-        <div class="eco-link" id="eco-sun" onclick="toggleEco('sun')" tabindex="0" role="button">
-          <span>☀️</span><span class="eco-label">Matahari</span>
-        </div>
-        <span class="eco-arrow">→</span>
-        <div class="eco-link" id="eco-plant" onclick="toggleEco('plant')" tabindex="0" role="button">
-          <span>🌿</span><span class="eco-label">Tumbuhan</span>
-        </div>
-        <span class="eco-arrow">→</span>
-        <div class="eco-link" id="eco-bug" onclick="toggleEco('bug')" tabindex="0" role="button">
-          <span>🐛</span><span class="eco-label">Serangga</span>
-        </div>
-        <span class="eco-arrow">→</span>
-        <div class="eco-link" id="eco-bird" onclick="toggleEco('bird')" tabindex="0" role="button">
-          <span>🐦</span><span class="eco-label">Burung</span>
-        </div>
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Kelompokkan hewan: bertulang belakang atau tidak?</div>
+      <div style="display:flex;gap:8px;margin:8px 0;flex-wrap:wrap;justify-content:center;">
+        <div id="ver-area" style="min-width:120px;min-height:60px;border:2px dashed rgba(76,175,80,0.4);border-radius:12px;padding:6px;display:flex;flex-wrap:wrap;gap:4px;align-content:flex-start;"></div>
+        <div id="inver-area" style="min-width:120px;min-height:60px;border:2px dashed rgba(255,152,0,0.4);border-radius:12px;padding:6px;display:flex;flex-wrap:wrap;gap:4px;align-content:flex-start;"></div>
+      </div>
+      <div style="font-size:0.72rem;opacity:0.6;display:flex;gap:20px;justify-content:center;">
+        <span style="color:#4CAF50;">🟢 Bertulang Belakang</span>
+        <span style="color:#FF9800;">🟠 Tidak Bertulang Belakang</span>
+      </div>
+      <div class="animal-grid" style="margin-top:10px;">
+        ${animals.map((a, i) => `
+          <button class="animal-card" id="classify-${i}" onclick="classifyAnimal(${i},'${a.type}')">
+            <span class="emoji">${a.emoji}</span>
+            <span class="label">${a.name}</span>
+          </button>
+        `).join('')}
       </div>
     </div>
-    <div class="eco-toggle" style="margin-top:12px;">
-      <button class="eco-btn active" id="eco-btn-sun" onclick="toggleEco('sun')">☀️ Matahari</button>
-      <button class="eco-btn active" id="eco-btn-plant" onclick="toggleEco('plant')">🌿 Tumbuhan</button>
-      <button class="eco-btn active" id="eco-btn-bug" onclick="toggleEco('bug')">🐛 Serangga</button>
-      <button class="eco-btn active" id="eco-btn-bird" onclick="toggleEco('bird')">🐦 Burung</button>
-    </div>
-    <div class="feedback-msg hint" id="eco-msg">Semakin banyak bagian ekosistem yang ada, semakin seimbang! Jika satu bagian hilang, semua ikut terpengaruh.</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Cari 1 rantai makanan di luar rumah. Siapa makan siapa?</div>
-    </div>
-  </div>`;
-  state.eco = { sun: true, plant: true, bug: true, bird: true };
+    <button class="btn btn-primary" onclick="markDone('classify');rabbitySay('Pengelompokan membantu kita memahami kehidupan! 🔬')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Selesai!</button>
+  `;
 }
 
-function toggleEco(part) {
-  state.eco[part] = !state.eco[part];
-  const link = document.getElementById('eco-' + part);
-  const btn = document.getElementById('eco-btn-' + part);
-  const msg = document.getElementById('eco-msg');
-  if (link) link.classList.toggle('dead', !state.eco[part]);
-  if (btn) btn.classList.toggle('active', state.eco[part]);
-
-  const active = Object.entries(state.eco).filter(([,v]) => v).map(([k]) => k);
-  if (active.length === 4) {
-    if (msg) { msg.className = 'feedback-msg success'; msg.textContent = 'Sempurna! Semua bagian ekosistem aktif dan seimbang! 🌞'; }
-  } else if (active.length === 0) {
-    if (msg) { msg.className = 'feedback-msg wrong'; msg.textContent = 'Ekosistem mati... Tidak ada apa-apa tanpa Matahari! ☀️'; }
-  } else {
-    if (!state.eco.sun) {
-      if (msg) { msg.className = 'feedback-msg wrong'; msg.textContent = 'Tanpa Matahari, tidak ada tumbuhan bisa grow! Semua mati... ☀️❌'; }
-    } else if (!state.eco.plant) {
-      if (msg) { msg.className = 'feedback-msg wrong'; msg.textContent = 'Tanpa tumbuhan, serangga tidak punya makanan! 🐛❌ Dan burung juga tidak punya...'; }
-    } else if (!state.eco.bug) {
-      if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Tanpa serangga, burung tidak punya makanan... Tapi tumbuhan masih okay! 🐦'; }
-    } else {
-      if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Semakin banyak bagian ekosistem yang ada, semakin seimbang! 🌍'; }
-    }
+window.classifyAnimal = function(i, correctType) {
+  const animal = [
+    {emoji:'🐕',name:'Anjing',type:'vertebrate'},{emoji:'🦴',name:'Ikan',type:'vertebrate'},
+    {emoji:'🦅',name:'Burung',type:'vertebrate'},{emoji:'🐍',name:'Ular',type:'vertebrate'},
+    {emoji:'🦋',name:'Kupu-kupu',type:'invertebrate'},{emoji:'🐜',name:'Semut',type:'invertebrate'},
+    {emoji:'🦀',name:'Kepiting',type:'invertebrate'},{emoji:'🪱',name:'Cacing',type:'invertebrate'},
+  ][i];
+  const target = correctType === 'vertebrate' ? document.getElementById('ver-area') : document.getElementById('inver-area');
+  const card = document.getElementById('classify-' + i);
+  if (card && target) {
+    card.style.display = 'none';
+    const chip = document.createElement('div');
+    chip.textContent = animal.emoji + ' ' + animal.name;
+    chip.style.cssText = 'background:rgba(255,255,255,0.1);border-radius:8px;padding:4px 8px;font-size:0.75rem;';
+    target.appendChild(chip);
   }
-}
-
-// ─── LESSON 3: HUMAN NEEDS ───
-function expNeeds() {
-  const needs = [
-    { emoji: '🍎', name: 'Makanan' },
-    { emoji: '💧', name: 'Air' },
-    { emoji: '🏠', name: 'Perlindungan' },
-    { emoji: '👕', name: 'Pakaian' },
-    { emoji: '❤️', name: 'Perhatian' },
-    { emoji: '🎨', name: 'Seni' }
-  ];
-  const c = document.getElementById('exp-container');
-  let html = `<div class="exp-area">
-    <div class="exp-title">🍎 Kebutuhan Dasar Manusia</div>
-    <div class="exp-prompt">Kamu di pulau tanpa apa-apa. Mana yang paling penting dulu?</div>
-    <div class="needs-grid">`;
-  needs.forEach((n, i) => {
-    html += `<div class="need-card" id="need-${i}" onclick="selectNeed(${i},'${n.emoji}')" tabindex="0" role="button">
-      <div class="need-emoji">${n.emoji}</div>
-      <div class="need-name">${n.name}</div>
-    </div>`;
-  });
-  html += `</div>
-    <div class="feedback-msg hint" id="needs-msg">Manusia butuh kebutuhan jasmani DAN rohani! 🍎💧🏠 tapi juga ❤️🎨</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Gambar 3 hal yang kamu butuhkan hari ini!</div>
-    </div>
-  </div>`;
-  c.innerHTML = html;
-  state.selectedNeeds = new Set();
-}
-
-function selectNeed(idx, emoji) {
-  const card = document.getElementById('need-' + idx);
-  if (!card) return;
-  if (state.selectedNeeds.has(idx)) {
-    state.selectedNeeds.delete(idx);
-    card.classList.remove('selected');
-  } else {
-    state.selectedNeeds.add(idx);
-    card.classList.add('selected');
-  }
-  const count = state.selectedNeeds.size;
-  const msg = document.getElementById('needs-msg');
-  if (msg) {
-    if (count === 0) { msg.className = 'feedback-msg hint'; msg.textContent = 'Pilih yang paling penting!'; }
-    else if (count <= 2) { msg.className = 'feedback-msg success'; msg.textContent = 'Bagus! Pilihanmu sangat penting untuk bertahan hidup! ❤️'; }
-    else { msg.className = 'feedback-msg success'; msg.textContent = 'Manusia butuh banyak hal — jasmani dan juga rohani! ❤️'; }
-  }
-  }
-
-
-// ─── LESSON 3: SHELTER ───
-function expShelter() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🏠 Bangun Rumah</div>
-    <div class="exp-prompt">Pilih cuaca dan bahan untuk bangun rumah!</div>
-    <div class="shelter-env">
-      <button class="env-btn selected" onclick="selectEnv('cold')" id="env-cold">🥶</button>
-      <button class="env-btn" onclick="selectEnv('hot')" id="env-hot">☀️</button>
-      <button class="env-btn" onclick="selectEnv('rain')" id="env-rain">🌧️</button>
-    </div>
-    <div class="materials-row" style="margin-top:12px;">
-      <button class="mat-btn" onclick="toggleMat(this)" id="mat-wood">🪵</button>
-      <button class="mat-btn" onclick="toggleMat(this)" id="mat-stone">🪨</button>
-      <button class="mat-btn" onclick="toggleMat(this)" id="mat-leaf">🍃</button>
-      <button class="mat-btn" onclick="toggleMat(this)" id="mat-cloth">👕</button>
-    </div>
-    <div class="shelter-preview" id="shelter-preview">?</div>
-    <div class="feedback-msg hint" id="shelter-msg">Pilih cuaca dan bahan!</div>
-    <button class="btn" onclick="testShelter()" style="font-size:0.9rem;padding:12px 24px;background:rgba(255,215,0,0.15);color:var(--gold);border:1px solid rgba(255,215,0,0.3);">🧪 Uji Rumah!</button>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Dengan selembar kertas, bikin rumah untuk bonekamu. Cuaca mana yang bisa ditahan?</div>
-    </div>
-  </div>`;
-  state.shelter = { env: 'cold', mats: new Set() };
-}
-
-function selectEnv(env) {
-  document.querySelectorAll('.env-btn').forEach(b => b.classList.remove('selected'));
-  const btn = document.getElementById('env-' + env);
-  if (btn) btn.classList.add('selected');
-  state.shelter.env = env;
-  updateShelterPreview();
-}
-
-function toggleMat(btn) {
-  const id = btn.id;
-  if (state.shelter.mats.has(id)) {
-    state.shelter.mats.delete(id);
-    btn.classList.remove('selected');
-  } else {
-    state.shelter.mats.add(id);
-    btn.classList.add('selected');
-  }
-  updateShelterPreview();
-}
-
-function updateShelterPreview() {
-  const preview = document.getElementById('shelter-preview');
-  const mats = state.shelter.mats;
-  const env = state.shelter.env;
-  const msg = document.getElementById('shelter-msg');
-
-  let emoji = '🏚️';
-  if (mats.size === 0) {
-    emoji = '❓';
-    if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Pilih bahan dulu!'; }
-  } else if (mats.has('mat-stone')) {
-    emoji = '🧱';
-    if (msg) { msg.className = 'feedback-msg success'; msg.textContent = 'Batu sangat kuat! Bagus untuk semua cuaca! 🧱'; }
-  } else if (mats.has('mat-wood') && mats.has('mat-leaf')) {
-    emoji = '🏡';
-    if (env === 'rain') {
-      if (msg) { msg.className = 'feedback-msg wrong'; msg.textContent = 'Hmm, kayu dan daun bisa bocor kalau hujan... 🌧️'; }
-    } else if (env === 'cold') {
-      if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Kayu cukup baik untuk cuaca dingin! 🪵'; }
-    } else {
-      if (msg) { msg.className = 'feedback-msg success'; msg.textContent = 'Bagus! Rumah kayu dengan daun untuk matahari! ☀️'; }
-    }
-  } else if (mats.has('mat-cloth')) {
-    emoji = '⛺';
-    if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Kain bisa untuk darurat, tapi tidak kuat untuk cuaca ekstrem! ⛺'; }
-  } else if (mats.has('mat-leaf')) {
-    emoji = '🌿';
-    if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Daun saja tidak cukup kuat... 🏚️'; }
-  } else {
-    emoji = '🏠';
-    if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Coba pilih lebih dari satu bahan!'; }
-  }
-  if (preview) preview.textContent = emoji;
-}
-
-function testShelter() {
-  const preview = document.getElementById('shelter-preview');
-  const env = state.shelter.env;
-  if (preview) {
-    if (env === 'rain') {
-      preview.style.background = 'rgba(100,181,246,0.2)';
-    } else if (env === 'cold') {
-      preview.style.background = 'rgba(100,181,246,0.1)';
-    } else {
-      preview.style.background = 'rgba(255,200,100,0.2)';
-    }
-  }
-  updateShelterPreview();
-}
-
-// ─── LESSON 3: TOOLS ───
-function expTools() {
-  const tools = [
-    { emoji: '👋', name: 'Tangan Kosong', desc: 'Hanya tenaga kita sendiri.' },
-    { emoji: '🥢', name: 'Tongkat', desc: 'Memperluas jangkauan, bisa angkat benda jauh.' },
-    { emoji: '⚙️', name: 'Roda', desc: 'Roda mengubah gesekan jadi gerakan halus! Ini salah satu penemuan terbesar.' },
-    { emoji: '🛒', name: 'Gerobak', desc: 'Bisa angkut banyak benda tanpa capek! Kerja jadi lebih mudah.' }
-  ];
-  const c = document.getElementById('exp-container');
-  let html = `<div class="exp-area">
-    <div class="exp-title">🔧 Alat & Teknologi</div>
-    <div class="exp-prompt">Masalah: batu ini terlalu berat untuk diangkat langsung! 💪🪨</div>
-    <div style="font-size:4rem;text-align:center;margin:10px 0;">🪨</div>
-    <div class="exp-cards">`;
-  tools.forEach((t, i) => {
-    html += `<div class="exp-card" id="tool-${i}" onclick="showTool(${i})" tabindex="0" role="button">
-      <div class="exp-card-emoji">${t.emoji}</div>
-      <div class="exp-card-title">${t.name}</div>
-    </div>`;
-  });
-  html += `</div>
-    <div class="feedback-msg hint" id="tool-msg">Tap alat untuk lihat bagaimana alat membantu manusia!</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Cari 3 alat di rumah. Untuk apa alat itu? Alat apa yang memperbesar kekuatanmu?</div>
-    </div>
-  </div>`;
-  c.innerHTML = html;
-}
-
-function showTool(idx) {
-  document.querySelectorAll('.exp-card').forEach(c => c.style.borderColor = '');
-  const card = document.getElementById('tool-' + idx);
-  if (card) card.style.borderColor = 'var(--gold)';
-  const tools = [
-    { emoji: '👋', name: 'Tangan Kosong', desc: 'Dengan tangan saja, kita terbatas. Ada benda yang terlalu berat, terlalu jauh, atau terlalu panas!' },
-    { emoji: '🥢', name: 'Tongkat', desc: 'Tongkat memperluas jangkauan kita! Bisa meraih benda tinggi, mengaduk的东西, atau mengungkit benda berat.' },
-    { emoji: '⚙️', name: 'Roda', desc: 'Roda mengubah gesekan jadi gerakan halus! Dengan roda, kita bisa bergerak cepat dan angkut beban berat.' },
-    { emoji: '🛒', name: 'Gerobak', desc: 'Gerobak = roda + tempat angkut! Satu orang bisa angkut 20x lipat lebih banyak dari pada dipanggul manual.' }
-  ];
-  const msg = document.getElementById('tool-msg');
-  if (msg) { msg.className = 'feedback-msg success'; msg.textContent = tools[idx].desc; }
-  // tools are exploratory — no completion confetti
-}
-
-// ─── LESSON 3: COOPERATION ───
-function expCooperation() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🤝 Bekerja Sama</div>
-    <div class="exp-prompt" id="coop-prompt">1 orang membangun tembok... lama sekali! 🧱</div>
-    <div id="coop-display" style="font-size:3rem;text-align:center;padding:20px;min-height:80px;">
-      <span id="coop-workers">👤</span>
-    </div>
-    <div id="coop-bar" style="width:200px;height:12px;background:rgba(255,255,255,0.1);border-radius:6px;overflow:hidden;margin:8px 0;">
-      <div id="coop-progress" style="height:100%;background:var(--green);width:0%;transition:width 1s;"></div>
-    </div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
-      <button class="btn" style="font-size:0.85rem;padding:12px 20px;background:rgba(76,175,80,0.15);color:var(--green);border:1px solid rgba(76,175,80,0.3);" onclick="addWorker()">+ Tambah Orang</button>
-      <button class="btn" style="font-size:0.85rem;padding:12px 20px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);" onclick="resetCoop()">🔄 Reset</button>
-    </div>
-    <div class="feedback-msg hint" id="coop-msg">Ketika manusia bekerja sama, mereka bisa menyelesaikan pekerjaan MUCH lebih cepat!</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Bangun menara dari balok dengan teman. Berapa tinggi bisa?</div>
-    </div>
-  </div>`;
-  state.coopWorkers = 1;
-  updateCoop();
-}
-
-function updateCoop() {
-  const workers = document.getElementById('coop-workers');
-  const prompt = document.getElementById('coop-prompt');
-  const progress = document.getElementById('coop-progress');
-  const msg = document.getElementById('coop-msg');
-  const w = state.coopWorkers;
-  if (workers) workers.textContent = '👤'.repeat(Math.min(w, 5)) + (w > 5 ? ' +' + (w-5) : '');
-  if (prompt) prompt.textContent = `${w} orang membangun tembok...`;
-  if (progress) progress.style.width = Math.min(100, w * 20) + '%';
-  if (msg) {
-    if (w === 1) { msg.className = 'feedback-msg hint'; msg.textContent = '1 orang saja... ini akan memakan waktu lama! 🧱'; }
-    else if (w < 4) { msg.className = 'feedback-msg hint'; msg.textContent = 'Lebih baik! Pekerjaan berjalan lebih cepat dengan jumlah lebih banyak! 🤝'; }
-    else { msg.className = 'feedback-msg success'; msg.textContent = `Hebat! Dengan ${w} orang, pekerjaan selesai MUCH lebih cepat! Manusia bisa luar biasa kalau bekerja sama! 🤝`; }
-  }
-}
-
-function addWorker() {
-  if (state.coopWorkers < 8) {
-    state.coopWorkers++;
-    updateCoop();
-    if (state.coopWorkers >= 3) { confetti(); markDone(); }
-  }
-}
-
-function resetCoop() {
-  state.coopWorkers = 1;
-  updateCoop();
-}
-
-// ─── LESSON 3: KNOWLEDGE ───
-function expKnowledge() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">📚 Pengetahuan Lewat Generasi</div>
-    <div class="exp-prompt">Tap untuk melihat bagaimana pengetahuan manusia bertambah!</div>
-    <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:center;padding:20px 0;" id="gen-chain">
-      <div style="text-align:center;" id="gen-0"><div style="font-size:2.5rem;">👤</div><div style="font-size:0.65rem;color:var(--cream);opacity:0.6;">Seseorang<br>menemukan<br>sesuatu!</div></div>
-      <div style="font-size:1.2rem;opacity:0.4;">→</div>
-      <div style="text-align:center;" id="gen-1"><div style="font-size:2.5rem;opacity:0.3;">👤</div><div style="font-size:0.65rem;color:var(--cream);opacity:0.3;">Belum</div></div>
-      <div style="font-size:1.2rem;opacity:0.4;">→</div>
-      <div style="text-align:center;" id="gen-2"><div style="font-size:2.5rem;opacity:0.3;">👤</div><div style="font-size:0.65rem;color:var(--cream);opacity:0.3;">Belum</div></div>
-      <div style="font-size:1.2rem;opacity:0.4;">→</div>
-      <div style="text-align:center;" id="gen-3"><div style="font-size:2.5rem;opacity:0.3;">👤</div><div style="font-size:0.65rem;color:var(--cream);opacity:0.3;">Belum</div></div>
-    </div>
-    <div class="feedback-msg hint" id="gen-msg">Penemuan pertama: orang pertama menemukan bahwa api bisa cook makanan! 🔥</div>
-    <button class="btn btn-primary" onclick="advanceGen()" style="font-size:0.9rem;padding:12px 24px;" id="gen-btn">📖 Lihat Generasi Berikutnya</button>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Tanya kakek/nenek: apa yang mereka pelajari dari generasi sebelumnya?</div>
-    </div>
-  </div>`;
-  state.genStep = 0;
-}
-
-function advanceGen() {
-  const msgs = [
-    'Penemuan pertama: orang pertama menemukan bahwa api bisa masak makanan! 🔥',
-    'Orang kedua BELAJAR dari yang pertama. Lalu menemukan: api juga bisa menghangatkan badan! 🔥→🏠',
-    'Orang ketiga BELAJAR dari yang kedua. Menemukan: api bisa membuat tanah liat menjadi gerabah! 🏺',
-    'Orang keempat BELAJAR dari semua yang sebelum. Menemukan: gerabah bisa menyimpan air! 🏺→💧'
-  ];
-  state.genStep = Math.min(state.genStep + 1, 3);
-  for (let i = 1; i <= 3; i++) {
-    const g = document.getElementById('gen-' + i);
-    if (!g) continue;
-    if (i <= state.genStep) {
-      g.querySelector('div:first-child').style.opacity = '1';
-      g.querySelector('div:last-child').style.opacity = '1';
-      g.querySelector('div:last-child').textContent = 'Belajar & perbaikan!';
-    }
-  }
-  const msg = document.getElementById('gen-msg');
-  if (msg) { msg.className = 'feedback-msg success'; msg.textContent = msgs[state.genStep]; }
-  // knowledge chain is exploratory
-  if (state.genStep >= 3) {
-    const btn = document.getElementById('gen-btn');
-    if (btn) btn.style.display = 'none';
-    if (msg) { msg.className = 'feedback-msg success'; msg.textContent = 'Pengetahuan BERTAMBAH karena manusia mau BELAJAR dari yang lain! 📚 Ini rahasia kemajuan manusia!'; }
-  }
-}
-
-// ─── LESSON 4: COMMUNICATION ───
-function expComm() {
-  const opts = [
-    { emoji: '🙋', name: 'Gestur' },
-    { emoji: '🎨', name: 'Gambar' },
-    { emoji: '📢', name: 'Suara' },
-    { emoji: '🔣', name: 'Simbol' }
-  ];
-  const c = document.getElementById('exp-container');
-  let html = `<div class="exp-area">
-    <div class="exp-title">💬 Komunikasi</div>
-    <div class="exp-prompt">Karakter ingin bilang ke temannya: "Ada air di balik bukit!" Jarak mereka sangat jauh. Mana cara terbaik?</div>
-    <div class="comm-grid">`;
-  opts.forEach((o, i) => {
-    html += `<div class="comm-card" id="comm-${i}" onclick="selectComm(${i})" tabindex="0" role="button">
-      <div class="comm-emoji">${o.emoji}</div>
-      <div class="comm-name">${o.name}</div>
-    </div>`;
-  });
-  html += `</div>
-    <div class="feedback-msg hint" id="comm-msg">Pilih cara komunikasi! Mana yang paling jelas?</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Tulis pesan untuk temanmu besok. Gambar saja, tidak perlu kata-kata!</div>
-    </div>
-  </div>`;
-  c.innerHTML = html;
-}
-
-function selectComm(idx) {
-  document.querySelectorAll('.comm-card').forEach(c => c.classList.remove('selected'));
-  const card = document.getElementById('comm-' + idx);
-  if (card) card.classList.add('selected');
-  const msgs = [
-    'Gestur (= gerakan badan) bisa untuk dekat saja. Untuk jauh tidak sampai! 🙋',
-    'Gambar (= gambar) lebih jelas! Temannya bisa lihat langsung apa yang dimaksud! 🎨',
-    'Suara (= teriakan) bisa sampai jauh... tapi tidak bisa bertahan lama dan tidak ke masa depan! 📢',
-    'Simbol (= tanda) bisa dikirim ke mana saja, bahkan ke orang yang belum lahir! Ini paling kuat! 🔣'
-  ];
-  const msg = document.getElementById('comm-msg');
-  if (msg) { msg.className = 'feedback-msg success'; msg.textContent = msgs[idx]; }
-  if (idx === 3) { confetti(); markDone(); }
-}
-
-// ─── LESSON 4: MAKE A SYMBOL ───
-function expSymbol() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🔣 Buat Simbol Sendiri</div>
-    <div class="exp-prompt">Buat simbol untuk表示 AIR (💧)! Tap kotak untuk gambar!</div>
-    <div style="font-size:1.5rem;margin-bottom:12px;">💧 → <span id="symbol-prompt">Tap di bawah!</span></div>
-    <div class="symbol-grid" id="sym-grid"></div>
-    <div style="display:flex;gap:8px;margin-top:12px;">
-      <button class="btn" style="font-size:0.85rem;padding:10px 16px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);" onclick="clearSymbol()">🗑️ Hapus</button>
-      <button class="btn btn-primary" onclick="saveSymbol()" style="font-size:0.85rem;padding:10px 20px;">✓ Simpan Simbolku!</button>
-    </div>
-    <div class="feedback-msg hint" id="sym-msg">Simbol adalah gambar yang menggantikan arti! Dengan simbol, kita bisa kirim pesan ke orang jauh!</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Gunakan simbol yang kamu buat untuk menulis pesan ke keluargamu!</div>
-    </div>
-  </div>`;
-
-  const grid = document.getElementById('sym-grid');
-  grid.innerHTML = '';
-  state.symbolCells = new Array(16).fill(false);
-  for (let i = 0; i < 16; i++) {
-    const cell = document.createElement('div');
-    cell.className = 'sym-cell';
-    cell.dataset.idx = i;
-    cell.onclick = () => toggleSymbolCell(i, cell);
-    grid.appendChild(cell);
-  }
-}
-
-function toggleSymbolCell(idx, cell) {
-  state.symbolCells[idx] = !state.symbolCells[idx];
-  if (cell) cell.classList.toggle('filled', state.symbolCells[idx]);
-}
-
-function clearSymbol() {
-  state.symbolCells = new Array(16).fill(false);
-  document.querySelectorAll('.sym-cell').forEach(c => c.classList.remove('filled'));
-}
-
-function saveSymbol() {
-  const filled = state.symbolCells.filter(Boolean).length;
-  const msg = document.getElementById('sym-msg');
-  if (msg) {
-    msg.className = 'feedback-msg success';
-    msg.textContent = 'Hebat! Simbolmu tersimpan! 💾 Kamu baru saja berpikir seperti manusia purba yang menemukan tulisan! 🔣';
-  }
-  confetti();
-}
-
-// ─── LESSON 4: SYMBOL SYSTEM ───
-function expSymbolSystem() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">📜 Sistem Simbol</div>
-    <div class="exp-prompt">Ini kode rahasia! ☀=siang ●=makanan ≈=air ⌂=rumah</div>
-    <div style="background:rgba(255,255,255,0.08);border-radius:14px;padding:16px;font-size:2rem;text-align:center;letter-spacing:4px;margin-bottom:12px;" id="code-msg">☀≈●⌂</div>
-    <div class="feedback-msg hint" id="code-translate" style="margin-bottom:16px;">Artinya: "Siang, ada air, makanan, dan rumah!" ☀️💧🍎🏠</div>
-    <div class="exp-prompt">Coba encode pesan ini:</div>
-    <div style="background:rgba(255,215,0,0.1);border-radius:12px;padding:12px;font-size:0.9rem;text-align:center;color:var(--gold);margin-bottom:16px;">"Siang, di rumah ada air"</div>
-    <div class="symbol-grid" style="max-width:200px;margin:0 auto 12px;" id="encode-grid"></div>
-    <div class="feedback-msg hint" id="encode-msg">Pilih simbol: ☀(siang) ≈(air) ⌂(rumah)</div>
-    <button class="btn btn-primary" onclick="checkEncode()" style="font-size:0.9rem;padding:12px 24px;">✓ Cek Jawaban</button>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Buat kode untuk nama kamu. Bisa temanmu baca?</div>
-    </div>
-  </div>`;
-  state.encodeCells = new Array(4).fill(null);
-  const grid = document.getElementById('encode-grid');
-  const symbols = ['☀', '≈', '⌂', '●'];
-  grid.innerHTML = '';
-  symbols.forEach((sym, i) => {
-    const cell = document.createElement('div');
-    cell.className = 'sym-cell';
-    cell.style.fontSize = '1.5rem';
-    cell.textContent = sym;
-    cell.dataset.sym = sym;
-    cell.onclick = () => selectEncodeSymbol(i, sym, cell);
-    grid.appendChild(cell);
-  });
-}
-
-function selectEncodeSymbol(idx, sym, cell) {
-  const grid = document.getElementById('encode-grid');
-  const current = grid.querySelectorAll('.sym-cell');
-  const filled = [...current].filter(c => c.textContent && !c.dataset.sym);
-  if (filled.length > 0) {
-    const lastFilled = filled[filled.length - 1];
-    lastFilled.textContent = '';
-    lastFilled.classList.remove('filled');
-  }
-  cell.classList.add('filled');
-  cell.textContent = sym;
-  const msg = document.getElementById('encode-msg');
-  if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = `Simbol "${sym}" dipilih! Pilih simbol lain atau cek jawaban!`; }
-}
-
-function checkEncode() {
-  const grid = document.getElementById('encode-grid');
-  const cells = grid.querySelectorAll('.sym-cell');
-  const filled = [...cells].filter(c => c.classList.contains('filled')).map(c => c.dataset.sym);
-  const correct = ['☀', '≈', '⌂'];
-  const msg = document.getElementById('encode-msg');
-  if (filled.length < correct.length) {
-    if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Pilih ☀ ≈ ⌂ untuk menulis "Siang, di rumah ada air"!'; }
-  } else {
-    const right = filled.slice(0, 3).filter(s => correct.includes(s)).length;
-    if (right === 3) {
-      if (msg) { msg.className = 'feedback-msg success'; msg.textContent = '✓ Tepat! ☀≈⌂ = "Siang, di rumah ada air"! Kamu sekarang bisa mengirim pesan ke orang jauh! ✉️'; }
-      confetti();
-    } else {
-      if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Hmm, coba lagi! ☀ = siang, ≈ = air, ⌂ = rumah'; }
-    }
-  }
-}
-
-// ─── LESSON 4: MESSAGE THROUGH TIME ───
-function expTimeMessage() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">📮 Pesan Lewat Waktu</div>
-    <div class="exp-prompt">Karakter A menemukan tempat air di balik bukit. Dia mau kirim pesan ke temannya yang jauh...</div>
-    <div style="display:flex;align-items:center;gap:16px;margin:16px 0;flex-wrap:wrap;justify-content:center;">
-      <div style="text-align:center;">
-        <div style="font-size:3rem;">👤</div>
-        <div style="font-size:0.75rem;color:var(--cream);opacity:0.6;">Karakter A<br><span style="font-size:0.65rem;">sekarang</span></div>
-      </div>
-      <div style="font-size:2rem;opacity:0.4;">✉️</div>
-      <div style="text-align:center;">
-        <div style="font-size:3rem;">👤</div>
-        <div style="font-size:0.75rem;color:var(--cream);opacity:0.6;">Karakter B<br><span style="font-size:0.65rem;">sekarang</span></div>
-      </div>
-    </div>
-    <div style="background:rgba(255,215,0,0.08);border:1px solid rgba(255,215,0,0.2);border-radius:12px;padding:12px;margin-bottom:12px;max-width:280px;text-align:center;">
-      <div style="font-size:0.7rem;opacity:0.5;margin-bottom:4px;">TULISAN KARAKTER A:</div>
-      <div style="font-size:0.85rem;color:var(--gold);">"Ada air di balik bukit 🍎"</div>
-    </div>
-    <button class="btn btn-primary" onclick="timeWarp()" style="font-size:0.9rem;padding:12px 24px;">⏰ Travel ke 1000 tahun kemudian!</button>
-    <div class="feedback-msg hint" id="time-msg" style="margin-top:12px;">Tanpa tulisan, pesan Character A hilang selamanya. Dengan tulisan, pesannya bisa sampai ke kita hari ini! 📜</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Tulis satu hal yang ingin kamu sampaikan ke masa depan!</div>
-    </div>
-  </div>`;
-}
-
-function timeWarp() {
-  const msg = document.getElementById('time-msg');
-  if (msg) {
-    msg.className = 'feedback-msg success';
-    msg.textContent = '1000 tahun kemudian... Character B MENEMUKAN tulisan Character A! "Ada air di balik bukit 🍎" — Ide itu selamat! Inilah KEKUATAN TULISAN! 📜✨';
-  }
-  confetti();
-  markDone();
-}
-
-// ─── LESSON 5: GOATS & STONES ───
-function expGoats() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🐐 Batu & Kambing</div>
-    <div class="exp-prompt">5 ekor kambing pergi pagi. Pasang 1 batu untuk setiap kambing!</div>
-    <div style="display:flex;gap:24px;justify-content:center;margin:16px 0;flex-wrap:wrap;">
-      <div style="text-align:center;">
-        <div class="col-label">🐐 KEbun</div>
-        <div class="goats-row" id="goats-row"></div>
-      </div>
-      <div style="text-align:center;">
-        <div class="col-label">● STONES</div>
-        <div class="stones-row" id="stones-row"></div>
-      </div>
-    </div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:12px;">
-      <button class="btn" style="font-size:0.85rem;padding:10px 16px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);" onclick="addGoat()">+ Kambing</button>
-      <button class="btn" style="font-size:0.85rem;padding:10px 16px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);" onclick="addStone()">+ Batu</button>
-      <button class="btn" style="font-size:0.85rem;padding:10px 16px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);" onclick="resetGoats()">🔄 Reset</button>
-    </div>
-    <div class="feedback-msg hint" id="goat-msg">Tekan +KAMBING dan +BATU untuk pasang batu satu-satu!</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Kumpulkan 5 benda kecil. Pasang 1 batu untuk setiap benda. Apakah ada batu lebih?</div>
-    </div>
-  </div>`;
-  state.goats = 0;
-  state.stones = 0;
-  updateGoats();
-}
-
-function updateGoats() {
-  const gr = document.getElementById('goats-row');
-  const sr = document.getElementById('stones-row');
-  if (gr) {
-    gr.innerHTML = '';
-    for (let i = 0; i < state.goats; i++) {
-      const g = document.createElement('span');
-      g.className = 'goat';
-      g.textContent = '🐐';
-      g.style.animationDelay = (i * 0.1) + 's';
-      gr.appendChild(g);
-    }
-  }
-  if (sr) {
-    sr.innerHTML = '';
-    for (let i = 0; i < state.stones; i++) {
-      const s = document.createElement('span');
-      s.className = 'stone';
-      s.textContent = '●';
-      s.style.animationDelay = (i * 0.1) + 's';
-      s.style.fontSize = '1.2rem';
-      s.style.color = '#aaa';
-      sr.appendChild(s);
-    }
-  }
-  const msg = document.getElementById('goat-msg');
-  if (msg) {
-    if (state.goats === 0 && state.stones === 0) { msg.className = 'feedback-msg hint'; msg.textContent = 'Tekan +KAMBING dan +BATU untuk pasang batu!'; }
-    else if (state.goats === state.stones && state.goats > 0) {
-      msg.className = 'feedback-msg success'; msg.textContent = '✓ Tepat! 1 batu = 1 kambing! Ini namanya SATU-SATU. 🐐●'; confetti(); markDone();
-    }
-    else if (state.stones > state.goats) {
-      msg.className = 'feedback-msg wrong'; msg.textContent = 'Ada batu lebih banyak dari kambing! Artinya: satu goats masih di luar! 🐐❌';
-    }
-    else if (state.goats > state.stones) {
-      msg.className = 'feedback-msg hint'; msg.textContent = 'Kambing lebih banyak dari batu! Pasang batu lagi... 🐐';
-    }
-  }
-}
-
-function addGoat() { if (state.goats < 8) { state.goats++; updateGoats(); } }
-function addStone() { if (state.stones < 8) { state.stones++; updateGoats(); } }
-function resetGoats() { state.goats = 0; state.stones = 0; updateGoats(); }
-
-// ─── LESSON 5: SKIP COUNTING ───
-function expSkipCount() {
-  const c = document.getElementById('exp-container');
-  c.innerHTML = `
-  <div class="exp-area">
-    <div class="exp-title">🐰 Rabbity Loncat Berapa?</div>
-    <div class="exp-prompt">Rabbity melompat dengan jarak yang sama! Berapa langkah setiap lompatan?</div>
-    <div class="jump-selector" style="margin-bottom:12px;">
-      <button class="jump-btn by10 selected" onclick="setSkipSize(10,this)" style="background:var(--green);">+10</button>
-      <button class="jump-btn by5" onclick="setSkipSize(5,this)" style="background:var(--orange);">+5</button>
-      <button class="jump-btn by2" onclick="setSkipSize(2,this)" style="background:var(--blue);">+2</button>
-    </div>
-    <div class="number-line" id="skip-line" style="justify-content:center;flex-wrap:nowrap;gap:2px;"></div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:8px;">
-      <button class="btn" style="font-size:0.85rem;padding:10px 20px;background:rgba(76,175,80,0.15);color:var(--green);border:1px solid rgba(76,175,80,0.3);" onclick="rabbityHop()">🐰 Loncat!</button>
-      <button class="btn" style="font-size:0.85rem;padding:10px 20px;background:rgba(255,255,255,0.08);color:var(--cream);border:1px solid rgba(255,255,255,0.2);" onclick="resetSkip()">🔄 Reset</button>
-    </div>
-    <div class="feedback-msg hint" id="skip-msg" style="margin-top:8px;">Rabbity loncat +10: 0 → 10 → 20 → 30! Pola yang sama berulang!</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Loncat setiap 2 langkah saat kamu berjalan besok. 1-2-LEAP, 1-2-LEAP!</div>
-    </div>
-  </div>`;
-  state.skipSize = 10;
-  state.skipPos = 0;
-  renderSkipLine();
-}
-
-function setSkipSize(size, btn) {
-  document.querySelectorAll('.jump-btn').forEach(b => b.classList.remove('selected'));
-  if (btn) btn.classList.add('selected');
-  state.skipSize = size;
-  state.skipPos = 0;
-  renderSkipLine();
-}
-
-function renderSkipLine() {
-  const line = document.getElementById('skip-line');
-  if (!line) return;
-  line.innerHTML = '';
-  for (let i = 0; i <= 30; i++) {
-    const n = document.createElement('div');
-    n.className = 'nl-num';
-    n.textContent = i;
-    const highlighted = i % state.skipSize === 0 && i >= state.skipPos;
-    const active = i === state.skipPos;
-    if (active) n.classList.add('active');
-    else if (highlighted) n.classList.add('highlighted');
-    n.onclick = () => jumpTo(i);
-    line.appendChild(n);
-  }
-  // scroll to position
-  setTimeout(() => {
-    const nums = line.querySelectorAll('.nl-num');
-    const active = line.querySelector('.nl-num.active');
-    if (active) active.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-  }, 50);
-}
-
-function rabbityHop() {
-  state.skipPos = Math.min(state.skipPos + state.skipSize, 30);
-  renderSkipLine();
-  const msg = document.getElementById('skip-msg');
-  if (msg) {
-    if (state.skipPos >= 30) {
-      msg.className = 'feedback-msg success';
-      msg.textContent = 'Hebat! Rabbity sampai di 30! Polanya selalu sama: +' + state.skipSize + '! 🌟';
-      confetti();
-      markDone();
-    } else {
-      msg.className = 'feedback-msg hint';
-      msg.textContent = 'Rabbity di ' + state.skipPos + '! Lompatan berikutnya: ' + (state.skipPos + state.skipSize) + '! 🐰';
-    }
-  }
-}
-
-function jumpTo(n) {
-  state.skipPos = n;
-  renderSkipLine();
-}
-
-function resetSkip() {
-  state.skipPos = 0;
-  renderSkipLine();
-  const msg = document.getElementById('skip-msg');
-  if (msg) { msg.className = 'feedback-msg hint'; msg.textContent = 'Rabbity loncat +' + state.skipSize + ': 0 → ' + state.skipSize + ' → ' + (state.skipSize*2) + '!'; }
-}
-
-// ─── LESSON 5: DECIMAL ───
-function expDecimal() {
-  const units = [
-    { count: 1, label: '1', emoji: '▪️', detail: '1 kubus kecil = 1' },
-    { count: 10, label: '10', emoji: '🔟', detail: '1 batang = 10 kubus kecil' },
-    { count: 100, label: '100', emoji: '💯', detail: '1 lembar = 100 kubus kecil' },
-    { count: 1000, label: '1000', emoji: '🏆', detail: '1 blok besar = 1000 kubus kecil!' }
-  ];
-  const c = document.getElementById('exp-container');
-  let html = `<div class="exp-area">
-    <div class="exp-title">🎯 Sistem Desimal</div>
-    <div class="exp-prompt">Tap untuk melihat berapa banyak kubus kecil!</div>
-    <div class="decimal-visual">`;
-  units.forEach((u, i) => {
-    html += `<div class="decimal-row" onclick="showDecimal(${i})" id="dec-row-${i}" tabindex="0" role="button">
-      <div class="d-count" style="font-size:1.5rem;min-width:60px;text-align:right;">${u.label}</div>
-      <div style="font-size:2rem;">${u.emoji}</div>
-      <div class="d-label" id="dec-detail-${i}">tap untuk lihat!</div>
-    </div>`;
-  });
-  html += `</div>
-    <div class="feedback-msg hint" id="dec-msg">1 = satu | 10 = sepuluh | 100 = seratus | 1000 = seribu. Sistem desimal menggunakan angka 0-9!</div>
-    <div class="offline-mission">
-      <div class="om-emoji">🌍</div>
-      <div class="om-title">Coba di dunia nyata!</div>
-      <div class="om-text">Hitung berapa banyak jari tangan seluruh keluargamu. Masih kurang dari 100?</div>
-    </div>
-  </div>`;
-  c.innerHTML = html;
-}
-
-function showDecimal(idx) {
-  const details = [
-    { detail: '1 KUBUS KECIL = 1 ✅ Sangat kecil!', emoji: '▪️' },
-    { detail: '1 BATANG = 10 kubus kecil! 🔟 Coba hitung!', emoji: '🔟' },
-    { detail: '1 LEMBAR = 100 kubus kecil! 💯 Wah banyak sekali!', emoji: '💯' },
-    { detail: '1 BLOK = 1000 kubus kecil! 🏆 Sangat besar!', emoji: '🏆' }
-  ];
-  const d = details[idx];
-  const el = document.getElementById('dec-detail-' + idx);
-  const msg = document.getElementById('dec-msg');
-  if (el) el.textContent = d.detail;
-  if (msg) { msg.className = 'feedback-msg success'; msg.textContent = d.detail; }
-  confetti();
-}
-
-// ═══════════════════════════════════════
-// PIKO TTS
-// ═══════════════════════════════════════
-function setupRabbity() {
-  // Nothing needed — rabbitySpeak reads the current screen
-}
-
-function rabbitySpeak() {
-  if (!state.audioOn) return;
-  const texts = {
-    'home': 'Pilih pelajaran yang ingin kamu jelajahi! Semua pelajaran saling terhubung!',
-    'l1': 'Alam semesta sangat besar! Di dalamnya ada miliaran bintang.',
-    'l2': 'Kehidupan muncul setelah Bumi menjadi dingin. Lama sekali kemudian, muncul banyak sekalidan.',
-    'l3': 'Manusia punya kemampuan luar biasa: bekerja sama, membuat alat, dan berbagi pengetahuan!',
-    'l4': 'Dengan simbol dan tulisan, pikiran bisa berjalan dari satu otak ke otak lain — bahkan melewati ribuan tahun!',
-    'l5': 'Angka adalah cara kita menulis jumlah. Dulu manusia menghitung dengan batu dan jari!'
-  };
-  const screen = document.querySelector('.screen.active');
-  let id = screen ? screen.id.replace('screen-', '') : 'home';
-  let text = texts[id] || 'Ayo kita jelajahi bersama!';
-
-  // Also read experience title and prompt if on exp screen
-  const expArea = document.querySelector('.exp-area');
-  if (expArea) {
-    const titleEl = expArea.querySelector('.exp-title');
-    const promptEl = expArea.querySelector('.exp-prompt');
-    const expText = [titleEl ? titleEl.textContent : '', promptEl ? promptEl.textContent : '']
-      .join('. ').replace(/[^\w\s.,!?A-Za-z0-9]/g, '').trim();
-    if (expText.length > 3) {
-      text = expText + '. ' + text;
-    }
-  }
-
-  speak(text);
-}
-
-function speak(text) {
-  if (!window.speechSynthesis) return;
-  window.speechSynthesis.cancel();
-  const utt = new SpeechSynthesisUtterance(text);
-  utt.lang = 'id-ID';
-  utt.rate = 0.9;
-  window.speechSynthesis.speak(utt);
-}
-
-// ═══════════════════════════════════════
-// AUDIO
-// ═══════════════════════════════════════
-function toggleAudio() {
-  state.audioOn = !state.audioOn;
-  const btn = document.getElementById('audio-btn');
-  if (btn) btn.textContent = state.audioOn ? '🔊' : '🔇';
-  if (!state.audioOn) window.speechSynthesis.cancel();
-}
-
-// ═══════════════════════════════════════
-// CONFETTI
-// ═══════════════════════════════════════
-function confetti() {
-  const container = document.getElementById('confetti');
-  if (!container) return;
-  const colors = ['#FFD700','#4CAF50','#64B5F6','#CE93D8','#FF8A65','#FFF8F0'];
-  for (let i = 0; i < 25; i++) {
-    const p = document.createElement('div');
-    p.className = 'conf-piece';
-    p.style.left = (Math.random() * 100) + '%';
-    p.style.top = '-10px';
-    p.style.width = p.style.height = (Math.random() * 8 + 4) + 'px';
-    p.style.background = colors[Math.floor(Math.random() * colors.length)];
-    p.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
-    p.style.animationDuration = (Math.random() * 2 + 1) + 's';
-    p.style.animationDelay = (Math.random() * 0.5) + 's';
-    container.appendChild(p);
-    setTimeout(() => p.remove(), 3500);
-  }
-}
-
-// ═══════════════════════════════════════
-// PARENT PANEL
-// ═══════════════════════════════════════
-function toggleParentPanel() {
-  const panel = document.getElementById('parent-panel');
-  if (!panel) return;
-  state.panelOpen = !state.panelOpen;
-  panel.classList.toggle('open', state.panelOpen);
-  if (state.panelOpen) updateParentPanel();
-}
-
-// ═══════════════════════════════════════
-// OFFLINE MISSIONS
-// ═══════════════════════════════════════
-const OFFLINE_MISSIONS = {
-  partikel: 'Taruh es batu di piring. Lihat berapa lama cair. Sentuh sebelum dan sesudah!',
-  gravitasi: 'Lompat ke atas lalu jatuh. Tanpa gravitasi, kamu akan melayang terus!',
-  solar: 'Di malam hari, lihat langit. Berapa banyak bintang yang bisa kamu hitung?',
-  bumi: 'Gali tanah di taman. Rasakan betapa keras bumi di luar!',
-  erosi: 'Siram pasir dengan air. Lihat bagaimana air membuat alur!',
-  hidup: 'Di luar, cari 3 benda yang HIDUP dan 3 yang BUKAN HIDUP. Foto yang kamu temukan!',
-  tanaman: 'Siram tanaman di rumah selama 3 hari. Gambar perubahan yang kamu lihat.',
-  timeline: 'Tanya orang dewasa: dinosaurus sudah berapa lama hilang?',
-  klasifikasi: 'Kumpulkan 6 benda dari luar. Kelompokkan berdasarkan aturanmu sendiri!',
-  ekosistem: 'Cari 1 rantai makanan di luar rumah. Siapa makan siapa?',
-  kebutuhan: 'Gambar 3 hal yang kamu butuhkan hari ini!',
-  shelter: 'Dengan selembar kertas, bikin rumah untuk bonekamu. Cuaca mana yang bisa ditahan?',
-  alat: 'Cari 3 alat di rumah. Untuk apa alat itu? Alat apa yang memperbesar kekuatanmu?',
-  kerjasama: 'Bangun menara dari balok dengan teman. Berapa tinggi bisa?',
-  generasi: 'Tanya kakek/nenek: apa yang mereka pelajari dari generasi sebelumnya?',
-  komunikasi: 'Tulis pesan untuk temanmu besok. Gambar saja, tidak perlu kata-kata!',
-  simbol: 'Gunakan simbol yang kamu buat untuk menulis pesan ke keluargamu!',
-  sistem: 'Buat kode untuk名字 (nama) kamu. Bisa temanmu baca?',
-  pesan: 'Tulis satu hal yang ingin kamu sampaikan ke masa depan!',
-  kambing: 'Kumpulkan 5 benda kecil. Pasang 1 batu untuk setiap benda. Apakah ada batu lebih?',
-  loncat: 'Loncat setiap 2 langkah saat kamu berjalan besok. 1-2-LEAP, 1-2-LEAP!',
-  desimal: 'Hitung berapa banyak jari tangan seluruh keluargamu. Masih kurang dari 100?'
 };
 
-// ═══════════════════════════════════════
-// PROFILE
-// ═══════════════════════════════════════
-function initProfile() {
-  try {
-    const d = localStorage.getItem('gl-profile');
-    if (d) state.profile = JSON.parse(d);
-  } catch(e) { state.profile = { name: '', avatar: '' }; }
-  updateHomeGreeting();
-}
-
-function updateHomeGreeting() {
-  const g = document.getElementById('home-greeting');
-  if (!g) return;
-  if (state.profile.name) {
-    g.textContent = `Hai, ${state.profile.name}!`;
-  } else {
-    g.textContent = 'Lima Pelajaran Besar';
-  }
-}
-
-function renderProfileScreen() {
-  const nameInput = document.getElementById('profile-name');
-  if (nameInput) nameInput.value = state.profile.name || '';
-  document.querySelectorAll('.av-btn').forEach(b => b.classList.remove('selected'));
-  if (state.profile.avatar) {
-    const sel = [...document.querySelectorAll('.av-btn')].find(b => b.textContent === state.profile.avatar);
-    if (sel) sel.classList.add('selected');
-  }
-}
-
-function selectAvatar(avatar) {
-  state.profile.avatar = avatar;
-  document.querySelectorAll('.av-btn').forEach(b => b.classList.remove('selected'));
-  const btn = [...document.querySelectorAll('.av-btn')].find(b => b.textContent === avatar);
-  if (btn) btn.classList.add('selected');
-}
-
-function saveProfile() {
-  const nameInput = document.getElementById('profile-name');
-  if (nameInput) state.profile.name = nameInput.value.trim();
-  if (!state.profile.avatar) state.profile.avatar = '👧';
-  try { localStorage.setItem('gl-profile', JSON.stringify(state.profile)); } catch(e) {}
-  updateHomeGreeting();
-  updateParentPanel();
-  const msg = document.getElementById('profile-msg');
-  if (msg) { msg.style.display = 'block'; msg.textContent = `✓ Tersimpan! Hai ${state.profile.name || state.profile.avatar}!`; }
-  setTimeout(() => showScreen('home'), 1200);
-}
-  const p = loadProgress();
-  const content = document.getElementById('panel-content');
-  if (!content) return;
-
-  // Update session date
-  try { localStorage.setItem('gl-last-session', new Date().toLocaleDateString('id-ID')); } catch(e) {}
-
-  // Count total experiences
-  let totalDone = 0;
-  let totalAll = 0;
-  LESSONS.forEach(l => {
-    const done = Object.keys(p[l.id] || {}).length;
-    totalDone += done;
-    totalAll += l.experiences.length;
-  });
-
-  const pdata = JSON.parse(localStorage.getItem('gl-profile') || '{}');
-  const name = pdata.name || 'Aya';
-  const avatar = pdata.avatar || '👧';
-
-  // Update panel title
-  const pt = document.getElementById('panel-title');
-  if (pt) pt.textContent = `📊 Progress ${avatar} ${name}`;
-
-  let html = `<div style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:12px;">Sesi terakhir: ${localStorage.getItem('gl-last-session') || '-'}</div>`;
-  html += `<div style="font-size:0.8rem;color:var(--gold);margin-bottom:12px;">Total: ${totalDone}/${totalAll} aktivitas selesai</div>`;
-  LESSONS.forEach(l => {
-    const done = Object.keys(p[l.id] || {}).length;
-    const total = l.experiences.length;
-    const allDone = done >= total;
-    html += `<div class="panel-lesson">
-      <div class="panel-lesson-title">
-        <span>${l.emoji}</span>
-        <span>${l.title}</span>
-        <span style="font-size:0.7rem;color:${allDone ? 'var(--green)' : 'var(--cream)'};opacity:0.6;">${done}/${total}</span>
-      </div>`;
-    l.experiences.forEach(e => {
-      const isDone = (p[l.id] || {})[e.id];
-      const mission = OFFLINE_MISSIONS[e.id] || '';
-      html += `<div class="panel-exp">
-        <div class="progress-dot ${isDone ? 'done' : ''}"></div>
-        <span>${e.emoji} ${e.title}</span>
-        <span style="margin-left:auto;font-size:0.7rem;opacity:0.5;">${isDone ? '✓' : 'belum'}</span>
-      </div>`;
-      if (mission) {
-        const status = isDone ? '✅' : '⭕';
-        html += `<div style="font-size:0.7rem;color:rgba(76,175,80,${isDone ? '0.7' : '0.4'});padding:2px 0 6px 26px;">${status} ${mission}</div>`;
-      }
+// ─────────────────────────────────────────────
+// EXPERIENCE: FOOD CHAIN
+// ─────────────────────────────────────────────
+function renderFoodChain(area) {
+  const steps = [
+    { emoji: '☀️', name: 'Matahari', desc: 'Sumber energi semua kehidupan', color: '#FFF176' },
+    { emoji: '🌿', name: 'Tumbuhan', desc: 'Menangkap cahaya, membuat makanan', color: '#81C784' },
+    { emoji: '🐰', name: 'Hewan Pemakan Tumbuhan', desc: 'Makan tumbuhan untuk energi', color: '#FF8A65' },
+    { emoji: '🐍', name: 'Hewan Pemakan Daging', desc: 'Makan hewan lain', color: '#EF5350' },
+  ];
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Rantai Makanan — Energi mengalir dari Matahari!</div>
+      <div class="chain-area" id="chain-area">
+        ${steps.map((s, i) => `
+          <button class="chain-item" id="chain-${i}" onclick="showChain(${i})" style="background:${s.color}22;border-color:${s.color}55;">
+            <div style="font-size:2rem;">${s.emoji}</div>
+            <div style="font-weight:700;font-size:0.8rem;">${s.name}</div>
+          </button>
+          ${i < steps.length - 1 ? '<div class="chain-arrow">→</div>' : ''}
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="chain-msg">Tap setiap langkah untuk tahu perannya!</div>
+    </div>
+    <div class="exp-instruction">🔋 Tidak ada yang menciptakan energi — Matahari memberi energi, tumbuhan menangkap, hewan makan tumbuhan, predator makan herbivora. Energi mengalir, tidak dibuat.</div>
+    <button class="btn btn-primary" onclick="markDone('foodchain');rabbitySay('Energi mengalir dari Matahari melalui semua makhluk! 🔋')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  const CHAIN_MSGS = [
+    '☀️ Matahari — sumber energi utama. Tanpa Matahari, tidak ada kehidupan di Bumi.',
+    '🌿 Tumbuhan — producer. Membuat makanan sendiri dari cahaya Matahari (fotosintesis).',
+    '🐰 Herbivora — consumer. Makan tumbuhan untuk mendapat energi dari Matahari.',
+    '🐍 Karnivora — predator. Makan herbivora. Posisi tertinggi dalam rantai ini.',
+  ];
+  window.showChain = function(i) {
+    document.getElementById('chain-msg').textContent = CHAIN_MSGS[i];
+    speak(CHAIN_MSGS[i]);
+    document.querySelectorAll('.chain-item').forEach((c, j) => {
+      c.style.borderColor = j === i ? steps[i].color : steps[j].color + '55';
+      c.style.background = j === i ? steps[j].color + '44' : steps[j].color + '22';
     });
-    html += `</div>`;
-  });
-  content.innerHTML = html;
+  };
+};
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: NEEDS
+// ─────────────────────────────────────────────
+function renderNeeds(area) {
+  const needs = ['🍽️ Makan', '💧 Minum', '🏠 Tempat Tinggal', '👨‍👩‍👧 Teman', '📚 Belajar'];
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Kebutuhan dasar manusia</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0;">
+        ${needs.map((n, i) => `
+          <button class="btn btn-secondary" onclick="this.style.background='var(--green)';this.style.color='white'" style="font-size:1.1rem;padding:10px 14px;">${n}</button>
+        `).join('')}
+      </div>
+    </div>
+    <div class="exp-instruction">Tanpa 1 saja dari ini, manusia sulit berkembang. Semua manusia di dunia punya kebutuhan yang sama, walau cara memenuhi berbeda!</div>
+    <button class="btn btn-primary" onclick="markDone('needs');rabbitySay('Kamu tahu kebutuhan dasar manusia! 🧒')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
 }
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: SHELTER
+// ─────────────────────────────────────────────
+function renderShelter(area) {
+  const shelters = [
+    { emoji: '🪨', name: 'Gua', era: 'Zaman Batu' },
+    { emoji: '⛺', name: 'Tenda', era: 'Nomaden' },
+    { emoji: '🏠', name: 'Rumah', era: 'Pertanian' },
+    { emoji: '🏢', name: 'Gedung', era: 'Modern' },
+  ];
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Tempat tinggal manusia dari dulu ke sekarang</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:10px 0;">
+        ${shelters.map((s, i) => `
+          <button class="btn btn-secondary" onclick="this.style.background='var(--gold)';this.style.color='var(--dark)';document.getElementById('shelter-era').textContent='${s.era}'" style="font-size:1.5rem;padding:12px;">
+            ${s.emoji}
+            <div style="font-size:0.7rem;margin-top:2px;">${s.name}</div>
+          </button>
+        `).join('')}
+      </div>
+      <div class="exp-instruction" id="shelter-era">Tap untuk tahu erasinya!</div>
+    </div>
+    <div class="exp-instruction">🏠 Tempat tinggal melindungi dari cuaca, hewan, dan memberi rasa aman. Desainnya berubah sesuai teknologi dan kebutuhan.</div>
+    <button class="btn btn-primary" onclick="markDone('shelter');rabbitySay('Tempat tinggal berkembang seiring teknologi! 🏠')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+}
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: TOOLS
+// ─────────────────────────────────────────────
+function renderTools(area) {
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Evolusi alat manusia</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:center;">
+        <div style="background:rgba(255,255,255,0.05);border-radius:12px;padding:12px;">
+          <div style="font-size:2rem;">🪨</div>
+          <div style="font-weight:700;font-size:0.8rem;">Tangan Kosong</div>
+          <div style="font-size:0.7rem;opacity:0.5;">2 juta tahun lalu</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border-radius:12px;padding:12px;">
+          <div style="font-size:2rem;">🪓</div>
+          <div style="font-weight:700;font-size:0.8rem;">Batu Ketam</div>
+          <div style="font-size:0.7rem;opacity:0.5;">1.5 juta tahun lalu</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border-radius:12px;padding:12px;">
+          <div style="font-size:2rem;">⚙️</div>
+          <div style="font-weight:700;font-size:0.8rem;">Mesin</div>
+          <div style="font-size:0.7rem;opacity:0.5;">200 tahun lalu</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border-radius:12px;padding:12px;">
+          <div style="font-size:2rem;">🤖</div>
+          <div style="font-weight:700;font-size:0.8rem;">AI / Robot</div>
+          <div style="font-size:0.7rem;opacity:0.5;">Sekarang</div>
+        </div>
+      </div>
+    </div>
+    <div class="exp-instruction">🧠 Semakin cerdas alat, semakin sedikit usaha yang dibutuhkan. Tapi tangan manusia tetap alat paling fleksibel yang pernah ada!</div>
+    <button class="btn btn-primary" onclick="markDone('tools');rabbitySay('Alat membuat manusia semakin kuat! 🪓')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+}
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: COOPERATE
+// ─────────────────────────────────────────────
+function renderCooperate(area) {
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Kerja sama = lebih мощно!</div>
+      <div style="font-size:3rem;margin:10px 0;">🤝</div>
+      <div class="exp-instruction">🐜 Semut: satu semut mengangkat 50x berat badannya.<br>🐜🐜🐜🐜🐜 Sekelompok semut: bisa membawa предмет размером dengan kucing!</div>
+    </div>
+    <div class="exp-instruction">🤝 Satu orang punya batas. Tapi bersama, manusia bisa:
+    <br>• Membangun kota
+    <br>• Menjelajah luar angkasa
+    <br>• Membuat internet
+    <br>• Menemukan obat
+    <br>Ini yang membuat manusia luar biasa — kerja sama!</div>
+    <button class="btn btn-primary" onclick="markDone('cooperate');rabbitySay('Bersama kita lebih kuat! 🤝')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+}
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: SYMBOLS
+// ─────────────────────────────────────────────
+function renderSymbols(area) {
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Gambar → Simbol → Huruf</div>
+      <div style="display:flex;gap:8px;justify-content:center;align-items:center;margin:10px 0;flex-wrap:wrap;">
+        <div style="background:rgba(255,255,255,0.07);border-radius:12px;padding:14px;text-align:center;">
+          <div style="font-size:2rem;">🐄</div>
+          <div style="font-size:0.7rem;opacity:0.5;">Gambar</div>
+        </div>
+        <div style="font-size:1.2rem;opacity:0.4;">→</div>
+        <div style="background:rgba(255,255,255,0.07);border-radius:12px;padding:14px;text-align:center;">
+          <div style="font-size:1.5rem;">𒀕</div>
+          <div style="font-size:0.7rem;opacity:0.5;">Simbol</div>
+        </div>
+        <div style="font-size:1.2rem;opacity:0.4;">→</div>
+        <div style="background:rgba(255,255,255,0.07);border-radius:12px;padding:14px;text-align:center;">
+          <div style="font-size:1.5rem;">C-O-W</div>
+          <div style="font-size:0.7rem;opacity:0.5;">Huruf</div>
+        </div>
+      </div>
+      <canvas class="symbol-canvas" id="symbol-canvas"></canvas>
+      <div class="symbol-tools">
+        <button class="symbol-btn btn-secondary" onclick="clearCanvas()">🗑️ Hapus</button>
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="markDone('symbols');rabbitySay('Kamu sudah belajar sejarah tulisan! ✍️')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  initCanvas();
+}
+
+function initCanvas() {
+  const canvas = document.getElementById('symbol-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  canvas.width = canvas.offsetWidth;
+  canvas.height = 160;
+  ctx.fillStyle = '#1a1a2e';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  let drawing = false, lastX = 0, lastY = 0;
+
+  function getPos(e) {
+    const r = canvas.getBoundingClientRect();
+    const src = e.touches ? e.touches[0] : e;
+    return { x: src.clientX - r.left, y: src.clientY - r.top };
+  }
+  canvas.addEventListener('mousedown', e => { drawing = true; const p = getPos(e); lastX = p.x; lastY = p.y; });
+  canvas.addEventListener('mousemove', e => { if (!drawing) return; const p = getPos(e); ctx.beginPath(); ctx.moveTo(lastX, lastY); ctx.lineTo(p.x, p.y); ctx.strokeStyle = '#FFD700'; ctx.lineWidth = 3; ctx.lineCap = 'round'; ctx.stroke(); lastX = p.x; lastY = p.y; });
+  canvas.addEventListener('mouseup', () => drawing = false);
+  canvas.addEventListener('touchstart', e => { e.preventDefault(); drawing = true; const p = getPos(e); lastX = p.x; lastY = p.y; }, { passive: false });
+  canvas.addEventListener('touchmove', e => { e.preventDefault(); if (!drawing) return; const p = getPos(e); ctx.beginPath(); ctx.moveTo(lastX, lastY); ctx.lineTo(p.x, p.y); ctx.strokeStyle = '#FFD700'; ctx.lineWidth = 3; ctx.lineCap = 'round'; ctx.stroke(); lastX = p.x; lastY = p.y; }, { passive: false });
+  canvas.addEventListener('touchend', () => drawing = false);
+}
+
+function clearCanvas() {
+  const canvas = document.getElementById('symbol-canvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#1a1a2e';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: ENCODING
+// ─────────────────────────────────────────────
+function renderEncoding(area) {
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Kirim pesan pakai kode!</div>
+      <div class="exp-instruction" style="font-size:1.2rem;font-family:var(--font-head);">🐰 → 🐰🐰 → 👇👇 → 🐰🟢🟢</div>
+      <div style="font-size:0.8rem;opacity:0.6;margin-top:6px;">Geser пальцы ke kanan dan bawah untuk bikin kode!</div>
+    </div>
+    <div class="exp-instruction">📡 Manusia menggunakan kode sejak dulu:
+    <br>📱 Morse: ·· −·· −· ·
+    <br>💻 Binary: 01000001 = A
+    <br>🔐 Enkripsi: pesan diacak hanya penerima bisa baca</div>
+    <button class="btn btn-primary" onclick="markDone('encoding');rabbitySay('Kode adalah bahasa rahasia! 🔐')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+}
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: MESSAGES
+// ─────────────────────────────────────────────
+function renderMessages(area) {
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Pesan mengalir dari otak ke otak dalam seketika!</div>
+      <div style="display:flex;align-items:center;gap:6px;margin:10px 0;flex-wrap:wrap;justify-content:center;">
+        <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px;text-align:center;">
+          <div style="font-size:1.8rem;">🧠</div>
+          <div style="font-size:0.7rem;">Pengirim</div>
+        </div>
+        <div style="font-size:1.2rem;opacity:0.4;">→</div>
+        <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px;text-align:center;">
+          <div style="font-size:1.8rem;">🗣️</div>
+          <div style="font-size:0.7rem;">Suara</div>
+        </div>
+        <div style="font-size:1.2rem;opacity:0.4;">→</div>
+        <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px;text-align:center;">
+          <div style="font-size:1.8rem;">👂</div>
+          <div style="font-size:0.7rem;">Pendengar</div>
+        </div>
+        <div style="font-size:1.2rem;opacity:0.4;">→</div>
+        <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px;text-align:center;">
+          <div style="font-size:1.8rem;">🧠</div>
+          <div style="font-size:0.7rem;">Penerima</div>
+        </div>
+      </div>
+    </div>
+    <div class="exp-instruction">Pesan bisa dikirim через suara, tulisan, gambar, atau gerakan. Semua itu adalah komunikasi!</div>
+    <button class="btn btn-primary" onclick="markDone('messages');rabbitySay('Komunikasi menghubungkan kita semua! 📡')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+}
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: COUNTING
+// ─────────────────────────────────────────────
+function renderCounting(area) {
+  state.expState.counting = { target: 5 };
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Hitung jumlah benda!</div>
+      <div id="count-area" style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin:10px 0;"></div>
+      <div style="font-size:0.85rem;opacity:0.6;margin-top:6px;">Tap tombol untuk menambah atau mengurangi</div>
+      <div style="display:flex;gap:8px;justify-content:center;margin-top:10px;">
+        <button class="btn btn-secondary" onclick="adjustCount(-1)">−1</button>
+        <button class="btn btn-secondary" onclick="adjustCount(1)">+1</button>
+      </div>
+    </div>
+    <button class="btn btn-primary" onclick="markDone('counting');rabbitySay('Angka menghubungkan jumlah dan simbol! 🔢')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  renderCount();
+}
+
+function renderCount() {
+  const n = state.expState.counting.target;
+  const el = document.getElementById('count-area');
+  if (el) el.innerHTML = Array.from({length: n}, () => '<div style="width:32px;height:32px;background:var(--gold);border-radius:50%;font-size:1rem;display:flex;align-items:center;justify-content:center;">🔵</div>').join('');
+}
+
+function adjustCount(delta) {
+  state.expState.counting.target = Math.max(1, Math.min(15, state.expState.counting.target + delta));
+  renderCount();
+}
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: SKIP COUNTING
+// ─────────────────────────────────────────────
+function renderSkipCount(area) {
+  const by = Math.floor(Math.random() * 4) + 2; // 2,3,4,5
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Loncat ${by}! ${by}... ${by*2}... ${by*3}...</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin:10px 0;" id="skip-nums"></div>
+      <button class="btn btn-secondary" onclick="renderSkipNums()">🔄 Angka lain</button>
+    </div>
+    <div class="exp-instruction">Loncat berhitung = menambahkan bilang yang sama terus-menerus. Berguna untuk perkalian!</div>
+    <button class="btn btn-primary" onclick="markDone('skipcount');rabbitySay('Loncat ${by} sama dengan mengali ${by}! ✨')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+  window.renderSkipNums = function() {
+    const b = Math.floor(Math.random() * 4) + 2;
+    const el = document.getElementById('skip-nums');
+    if (el) el.innerHTML = Array.from({length: 5}, (_, i) => `<div style="width:40px;height:40px;background:rgba(255,255,255,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-size:1rem;">${b*(i+1)}</div>`).join('');
+  };
+  renderSkipNums();
+}
+
+// ─────────────────────────────────────────────
+// EXPERIENCE: DECIMAL
+// ─────────────────────────────────────────────
+function renderDecimal(area) {
+  area.innerHTML = `
+    <div class="demo-box">
+      <div class="demo-label">Nol mengubah segalanya!</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0;">
+        <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px;text-align:center;">
+          <div style="font-size:2rem;font-family:var(--font-head);">5</div>
+          <div style="font-size:0.7rem;opacity:0.5;">lima</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px;text-align:center;">
+          <div style="font-size:2rem;font-family:var(--font-head);">50</div>
+          <div style="font-size:0.7rem;opacity:0.5;">lima puluh</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px;text-align:center;">
+          <div style="font-size:2rem;font-family:var(--font-head);">5</div>
+          <div style="font-size:0.7rem;opacity:0.5;">lima persepuluh</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.08);border-radius:12px;padding:12px;text-align:center;">
+          <div style="font-size:2rem;font-family:var(--font-head);">0</div>
+          <div style="font-size:0.7rem;opacity:0.5;">nol mengubah posisi!</div>
+        </div>
+      </div>
+    </div>
+    <div class="exp-instruction">💡 Nol (0) tidak punya nilai sendiri, tapi posisi nol yang membuat angka 5 menjadi 50 atau 0.5. Matematika adalah bahasa posisi!</div>
+    <button class="btn btn-primary" onclick="markDone('decimal');rabbitySay('Nol sangat мощно! 🔢')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Paham!</button>
+  `;
+}
+
+// ─────────────────────────────────────────────
+// REPLAY
+// ─────────────────────────────────────────────
+function replayExp() {
+  const exp = state.currentExp;
+  const lesson = state.currentLesson;
+  if (exp && lesson) openExp(exp, lesson);
+}
+
+// ─────────────────────────────────────────────
+// TTS
+// ─────────────────────────────────────────────
+function speak(text) {
+  if (!state.audioEnabled) return;
+  if ('speechSynthesis' in window) {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text.replace(/[^\w\s\u00C0-\u024F]/g, ''));
+    u.lang = 'id-ID'; u.rate = 0.85;
+    speechSynthesis.speak(u);
+  }
+}
+
+function toggleAudio() {
+  state.audioEnabled = !state.audioEnabled;
+  const btn = document.getElementById('audio-btn');
+  if (btn) btn.textContent = state.audioEnabled ? '🔊' : '🔇';
+}
+
+// ─────────────────────────────────────────────
+// RABBITY
+// ─────────────────────────────────────────────
+function rabbitySay(msg) {
+  const b = document.getElementById('rabbity-bubble');
+  if (b) { b.textContent = '🐰 ' + msg; b.classList.add('show'); }
+  speak(msg);
+  setTimeout(() => { if (b) b.classList.remove('show'); }, 4000);
+}
+
+// ─────────────────────────────────────────────
+// CONFETTI
+// ─────────────────────────────────────────────
+function confetti() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const c = document.getElementById('confetti-container');
+  if (!c) return;
+  c.innerHTML = '';
+  const colors = ['#FFD700','#EF5350','#66BB6A','#42A5F5','#AB47BC','#FF9800'];
+  for (let i = 0; i < 35; i++) {
+    const p = document.createElement('div');
+    p.className = 'confetti-piece';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.background = colors[Math.floor(Math.random() * colors.length)];
+    p.style.animationDelay = Math.random() * 0.8 + 's';
+    c.appendChild(p);
+  }
+  setTimeout(() => c.innerHTML = '', 3500);
+}
+
+// ─────────────────────────────────────────────
+// PARENT PANEL
+// ─────────────────────────────────────────────
+function toggleParent() {
+  const panel = document.getElementById('parent-panel');
+  if (!panel) return;
+  panel.classList.toggle('open');
+  if (panel.classList.contains('open')) renderParentPanel();
+}
+
+function renderParentPanel() {
+  const content = document.getElementById('parent-content');
+  if (!content) return;
+  content.innerHTML = '';
+  LESSONS.forEach(l => {
+    const done = l.exps.filter(e => isDone(e.id)).length;
+    const total = l.exps.length;
+    const pct = Math.round((done / total) * 100);
+    const color = ['#FFD700','#4CAF50','#42A5F5','#AB47BC','#FF9800'][LESSONS.indexOf(l) % 5];
+    const missions = l.missions.slice(0, 2).map(m => '• ' + m).join('<br>');
+    content.innerHTML += `
+      <div class="panel-lesson">
+        <div class="panel-lesson-name">${l.emoji} ${l.title} <span>${pct}%</span></div>
+        <div class="panel-bar"><div class="panel-bar-fill" style="width:${pct}%;background:${color};"></div></div>
+        <div class="panel-missions">${done}/${total} aktivitas<br><span style="font-size:0.7rem;">${missions}</span></div>
+      </div>
+    `;
+  });
+}
+
+// ─────────────────────────────────────────────
+// PROFILE
+// ─────────────────────────────────────────────
+function updateProfileDisplay() {
+  const nameEl = document.getElementById('profile-name');
+  const avatarEl = document.getElementById('profile-avatar');
+  if (nameEl) nameEl.textContent = state.profile.name || 'Si kecil';
+  if (avatarEl) avatarEl.textContent = state.profile.avatar || '🤠';
+}
+
+function saveProfileName() {
+  const input = document.getElementById('name-input');
+  if (!input) return;
+  state.profile.name = input.value.trim() || 'Si kecil';
+  save('fgl-profile', state.profile);
+  updateProfileDisplay();
+  rabbitySay('Salam kenal, ' + state.profile.name + '! 🐰');
+}
+
+// ─────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────
+function init() {
+  initState();
+  generateStars();
+  renderHome();
+  // Welcome message
+  setTimeout(() => {
+    if (!state.profile.name) {
+      rabbitySay('Selamat datang! Siapa namamu? 🐰');
+    } else {
+      rabbitySay('Hai ' + state.profile.name + '! Ayo jelajahi dunia! 🌍');
+    }
+  }, 1000);
+}
+
+// Accessibility: keyboard nav
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') goBack();
+  if ((e.key === 'Enter' || e.key === ' ') && document.activeElement?.onclick) {
+    document.activeElement.click(); e.preventDefault();
+  }
+});
+
+window.addEventListener('load', init);
 </script>
 </body>
 </html>
