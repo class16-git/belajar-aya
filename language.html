@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Bahasa & Huruf — Belajar Aya</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --font-head: 'Fredoka One', cursive;
+  --font-body: 'Quicksand', sans-serif;
+  --bg: #FFF8F0;
+  --cream: #FFFDF9;
+  --brown: #5D4037;
+  --tan: #D7CCC8;
+  --gold: #F59E0B;
+  --green: #4CAF50;
+  --blue: #42A5F5;
+  --red: #EF5350;
+  --orange: #FF9800;
+  --purple: #AB47BC;
+  --shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  background: var(--bg);
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--brown);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: manipulation;
+}
+.screen { display: none; flex-direction: column; align-items: center; min-height: 100dvh; padding: 20px 16px 80px; }
+.screen.active { display: flex; }
+
+/* Header */
+.home-header { text-align: center; padding: 12px 0 8px; }
+.home-title { font-family: var(--font-head); font-size: 2rem; color: var(--brown); }
+.home-sub { font-size: 0.85rem; opacity: 0.55; margin-top: 4px; }
+.home-intro { background: white; border-radius: 16px; padding: 14px; margin: 12px 0; box-shadow: var(--shadow); font-size: 0.82rem; line-height: 1.6; text-align: center; }
+
+/* Section cards */
+.cards-grid { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 420px; }
+.section-card {
+  background: white; border-radius: 18px; padding: 16px 18px;
+  box-shadow: var(--shadow); cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;
+  display: flex; align-items: center; gap: 14px; border: none; width: 100%; text-align: left;
+}
+.section-card:active { transform: scale(0.97); }
+.section-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.14); }
+.card-icon { font-size: 2.4rem; width: 54px; height: 54px; display: flex; align-items: center; justify-content: center; border-radius: 14px; flex-shrink: 0; }
+.card-title { font-family: var(--font-head); font-size: 1rem; color: var(--brown); margin-bottom: 2px; }
+.card-desc { font-size: 0.78rem; opacity: 0.6; margin: 0; line-height: 1.3; }
+.card-arrow { font-size: 1.2rem; opacity: 0.3; margin-left: auto; }
+
+/* Back button */
+.btn-back {
+  position: fixed; bottom: 20px; left: 20px;
+  width: 50px; height: 50px; border-radius: 50%;
+  background: var(--brown); color: white; font-size: 1.3rem;
+  border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 50; transition: transform 0.12s;
+}
+.btn-back:active { transform: scale(0.92); }
+
+/* Sandpaper Letters */
+.letter-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; width: 100%; max-width: 420px; margin-top: 12px; }
+.letter-btn {
+  height: 62px; border-radius: 12px; border: none; cursor: pointer;
+  font-family: var(--font-head); font-size: 1.6rem; color: white;
+  transition: transform 0.12s, box-shadow 0.12s; box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  display: flex; align-items: center; justify-content: center;
+}
+.letter-btn:active { transform: scale(0.93); }
+.letter-btn.active { box-shadow: 0 0 0 4px var(--gold), 0 4px 16px rgba(245,158,11,0.4); transform: scale(1.05); }
+
+/* Letter detail */
+.letter-detail { background: white; border-radius: 20px; padding: 20px 16px; width: 100%; max-width: 420px; box-shadow: var(--shadow); margin-top: 12px; text-align: center; }
+.letter-big { font-family: var(--font-head); font-size: 5rem; color: var(--brown); line-height: 1; margin-bottom: 8px; }
+.letter-sound { font-size: 1rem; color: var(--blue); margin-bottom: 12px; }
+.letter-hint { background: rgba(245,158,11,0.1); border-radius: 10px; padding: 10px 14px; font-size: 0.88rem; color: var(--brown); margin: 8px 0; line-height: 1.5; }
+.letter-eg { font-size: 0.78rem; opacity: 0.6; margin-top: 6px; }
+.letter-play-btn { margin-top: 10px; background: var(--blue); color: white; border: none; border-radius: 12px; padding: 10px 20px; font-family: var(--font-body); font-weight: 700; font-size: 0.9rem; cursor: pointer; }
+.letter-progress { font-size: 0.75rem; opacity: 0.5; margin-top: 8px; }
+
+/* Movable Alphabet */
+.ma-word-display { text-align: center; padding: 16px; }
+.ma-emoji { font-size: 3.5rem; display: block; margin-bottom: 8px; }
+.ma-spell-area { background: white; border-radius: 20px; padding: 16px; width: 100%; max-width: 420px; box-shadow: var(--shadow); }
+.ma-slots { display: flex; gap: 8px; justify-content: center; margin-bottom: 16px; min-height: 60px; align-items: center; }
+.ma-slot {
+  width: 52px; height: 60px; border: 3px dashed var(--tan); border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-head); font-size: 1.8rem; color: var(--brown);
+  background: #FAFAFA; transition: all 0.2s;
+}
+.ma-slot.filled { border-color: var(--green); border-style: solid; background: #E8F5E9; }
+.ma-slot.wrong { border-color: var(--red); animation: shake 0.4s; }
+@keyframes shake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-5px)} 75%{transform:translateX(5px)} }
+.ma-tiles { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 12px; }
+.ma-tile {
+  min-width: 50px; height: 50px; border-radius: 10px; border: none; cursor: pointer;
+  font-family: var(--font-head); font-size: 1.5rem; color: white;
+  transition: transform 0.12s; box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  display: flex; align-items: center; justify-content: center; padding: 0 10px;
+}
+.ma-tile:active { transform: scale(0.92); }
+.ma-tile.used { opacity: 0.3; pointer-events: none; }
+.ma-feedback { font-size: 0.9rem; text-align: center; margin-top: 10px; min-height: 24px; color: var(--brown); }
+.ma-next-btn { margin-top: 10px; background: var(--green); color: white; border: none; border-radius: 12px; padding: 10px 20px; font-family: var(--font-body); font-weight: 700; font-size: 0.9rem; cursor: pointer; width: 100%; }
+.ma-progress { font-size: 0.78rem; opacity: 0.5; margin-top: 6px; text-align: center; }
+
+/* Picture Dictation */
+.canvas-area { background: white; border-radius: 20px; padding: 16px; width: 100%; max-width: 420px; box-shadow: var(--shadow); }
+.canvas-label { font-size: 0.78rem; opacity: 0.5; margin-bottom: 6px; }
+.canvas-wrap { position: relative; background: white; border: 2px solid var(--tan); border-radius: 12px; overflow: hidden; }
+#drawCanvas { display: block; width: 100%; touch-action: none; }
+.canvas-tools { display: flex; gap: 8px; justify-content: center; margin-top: 8px; }
+.canvas-btn { background: var(--tan); color: var(--brown); border: none; border-radius: 8px; padding: 8px 14px; font-family: var(--font-body); font-weight: 700; font-size: 0.82rem; cursor: pointer; }
+.canvas-btn:active { transform: scale(0.95); }
+.canvas-instruction { font-size: 0.85rem; text-align: center; color: var(--brown); margin-top: 10px; line-height: 1.5; }
+.pd-word-area { background: white; border-radius: 20px; padding: 16px; width: 100%; max-width: 420px; box-shadow: var(--shadow); margin-top: 10px; }
+.pd-spell-slots { display: flex; gap: 6px; justify-content: center; margin: 10px 0; }
+.pd-slot { width: 46px; height: 52px; border: 3px dashed var(--tan); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-size: 1.6rem; background: #FAFAFA; transition: all 0.2s; }
+.pd-slot.filled { border-color: var(--green); border-style: solid; }
+.pd-slot.wrong { border-color: var(--red); animation: shake 0.4s; }
+.pd-tiles { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+.pd-tile { min-width: 42px; height: 44px; border-radius: 8px; border: none; cursor: pointer; font-family: var(--font-head); font-size: 1.3rem; color: white; transition: transform 0.12s; display: flex; align-items: center; justify-content: center; padding: 0 8px; }
+.pd-tile:active { transform: scale(0.92); }
+.pd-tile.used { opacity: 0.3; pointer-events: none; }
+.pd-feedback { font-size: 0.88rem; text-align: center; min-height: 20px; margin-top: 8px; }
+.pd-next-btn { margin-top: 10px; background: var(--purple); color: white; border: none; border-radius: 12px; padding: 10px 20px; font-family: var(--font-body); font-weight: 700; font-size: 0.9rem; cursor: pointer; width: 100%; }
+
+/* Offline mission */
+.offline-mission { background: rgba(76,175,80,0.08); border: 1px solid rgba(76,175,80,0.25); border-radius: 14px; padding: 12px 14px; margin-top: 12px; width: 100%; max-width: 420px; display: flex; gap: 10px; align-items: flex-start; }
+.om-emoji { font-size: 1.6rem; flex-shrink: 0; }
+.om-title { font-family: var(--font-head); font-size: 0.8rem; color: var(--green); margin-bottom: 2px; }
+.om-text { font-size: 0.78rem; color: var(--brown); line-height: 1.5; opacity: 0.85; }
+
+/* Confetti */
+.confetti-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; }
+.confetti-piece { position: absolute; width: 10px; height: 10px; border-radius: 2px; animation: confettiFall 2.5s ease-out forwards; }
+@keyframes confettiFall { 0%{transform:translateY(-20px) rotate(0deg);opacity:1} 100%{transform:translateY(100vh) rotate(720deg);opacity:0} }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important} }</style>
+</head>
+<body>
+
+<!-- HOME -->
+<div class="screen active" id="screen-home">
+  <div class="home-header">
+    <div class="home-title">📖 Bahasa & Huruf</div>
+    <div class="home-sub">Latihan sebelum membaca</div>
+  </div>
+  <div class="home-intro">
+    <strong>Montessori:</strong> Sebelum membaca, lidah dan jari perlu latihan. 
+    <strong>1) Huruf Halus</strong> — raba huruf dengan jarimu sambil mendengar suaranya. 
+    <strong>2) Alfabet Bergerak</strong> — susun huruf untuk membentuk kata. 
+    <strong>3) Diktat Gambar</strong> — gambar lalu tulis namanya!
+  </div>
+
+  <div class="cards-grid">
+    <button class="section-card" onclick="showScreen('letters')">
+      <div class="card-icon" style="background:#FFF3E0;">🔤</div>
+      <div>
+        <div class="card-title">Huruf Halus</div>
+        <div class="card-desc">Dengar suara huruf, raba dengan jarimu</div>
+      </div>
+      <div class="card-arrow">→</div>
+    </button>
+    <button class="section-card" onclick="showScreen('alphabet')">
+      <div class="card-icon" style="background:#E3F2FD;">✏️</div>
+      <div>
+        <div class="card-title">Alfabet Bergerak</div>
+        <div class="card-desc">Susun huruf untuk membentuk kata</div>
+      </div>
+      <div class="card-arrow">→</div>
+    </button>
+    <button class="section-card" onclick="showScreen('dictation')">
+      <div class="card-icon" style="background:#F3E5F5;">🎨</div>
+      <div>
+        <div class="card-title">Diktat Gambar</div>
+        <div class="card-desc">Gambar sesuatu, lalu tulis namanya</div>
+      </div>
+      <div class="card-arrow">→</div>
+    </button>
+  </div>
+
+  <div class="offline-mission">
+    <div class="om-emoji">🌍</div>
+    <div>
+      <div class="om-title">Misi di dunia nyata!</div>
+      <div class="om-text">Taruh gula atau pasir di nampan. Gambar huruf A dengan jarimu. Bandingkan huruf kecil dan huruf besar!</div>
+    </div>
+  </div>
+</div>
+
+<!-- SANDPAPER LETTERS -->
+<div class="screen" id="screen-letters">
+  <div class="home-header" style="padding:0 0 8px;">
+    <div class="home-title">🔤 Huruf Halus</div>
+    <div class="home-sub">Tap huruf untuk mendengar suaranya</div>
+  </div>
+
+  <div class="letter-grid" id="letter-grid"></div>
+
+  <div class="letter-detail" id="letter-detail" style="display:none;">
+    <div class="letter-big" id="ld-letter">A</div>
+    <div class="letter-sound" id="ld-sound">Suara: /a/</div>
+    <div class="letter-hint" id="ld-hint">Garis bawah dulu, lalu lingkaran!</div>
+    <div class="letter-eg" id="ld-eg">Contoh: A seperti di "Ayam"</div>
+    <button class="letter-play-btn" onclick="playLetterSound()">🔊 Dengar Lagi</button>
+  </div>
+
+  <div class="letter-progress" id="letter-progress"></div>
+
+  <button class="btn-back" onclick="showScreen('home')">←</button>
+</div>
+
+<!-- MOVABLE ALPHABET -->
+<div class="screen" id="screen-alphabet">
+  <div class="home-header" style="padding:0 0 8px;">
+    <div class="home-title">✏️ Alfabet Bergerak</div>
+    <div class="home-sub">Susun huruf untuk membentuk kata</div>
+  </div>
+
+  <div class="ma-word-display">
+    <span class="ma-emoji" id="ma-emoji">🐱</span>
+    <div style="font-family:var(--font-head);font-size:1.4rem;color:var(--brown);">Apa ini?</div>
+  </div>
+
+  <div class="ma-spell-area">
+    <div style="font-size:0.78rem;opacity:0.5;margin-bottom:8px;text-align:center;">Tap huruf untuk menyusun kata</div>
+    <div class="ma-slots" id="ma-slots"></div>
+    <div class="ma-tiles" id="ma-tiles"></div>
+    <div class="ma-feedback" id="ma-feedback"></div>
+    <button class="ma-next-btn" id="ma-next-btn" onclick="nextMAWord()" style="display:none;">Kata Lain →</button>
+    <div class="ma-progress" id="ma-progress"></div>
+  </div>
+
+  <button class="btn-back" onclick="showScreen('home')">←</button>
+</div>
+
+<!-- PICTURE DICTATION -->
+<div class="screen" id="screen-dictation">
+  <div class="home-header" style="padding:0 0 8px;">
+    <div class="home-title">🎨 Diktat Gambar</div>
+    <div class="home-sub">Gambar sesuatu, lalu tulis namanya!</div>
+  </div>
+
+  <div class="canvas-area">
+    <div class="canvas-label">Gambar di bawah ini:</div>
+    <div id="pd-picture" style="text-align:center;font-size:3.5rem;margin-bottom:8px;">🏠</div>
+    <div class="canvas-wrap">
+      <canvas id="drawCanvas" width="380" height="220"></canvas>
+    </div>
+    <div class="canvas-tools">
+      <button class="canvas-btn" onclick="clearCanvas()">🗑️ Hapus</button>
+      <button class="canvas-btn" onclick="nextPDPicture()">→ Gambar Lain</button>
+    </div>
+    <div class="canvas-instruction">Gambar <strong id="pd-word-name">rumah</strong> dengan jarimu!</div>
+  </div>
+
+  <div class="pd-word-area" id="pd-spell-area">
+    <div style="font-size:0.82rem;text-align:center;opacity:0.6;margin-bottom:6px;">Sekarang tulis namanya!</div>
+    <div class="pd-spell-slots" id="pd-slots"></div>
+    <div class="pd-tiles" id="pd-tiles"></div>
+    <div class="pd-feedback" id="pd-feedback"></div>
+    <button class="pd-next-btn" id="pd-next-btn" onclick="nextPDWord()" style="display:none;">Kata Lain →</button>
+  </div>
+
+  <button class="btn-back" onclick="showScreen('home')">←</button>
+</div>
+
+<!-- CONFETTI -->
+<div class="confetti-container" id="confetti-container"></div>
+
+<script>
+// ─── STATE ───
+const state = {
+  currentLetter: null,
+  maWords: [
+    { word: 'aku', emoji: '👧', hint: 'Aku sedang belajar!' },
+    { word: 'ibu', emoji: '👩', hint: 'Ibu memasak di dapur' },
+    { word: 'kaki', emoji: '🦶', hint: 'Kaki kiri dan kaki kanan' },
+    { word: 'nama', emoji: '📛', hint: 'Siapa namamu?' },
+    { word: 'buku', emoji: '📕', hint: 'Buku cerita' },
+    { word: 'kamu', emoji: '👦', hint: 'Kamu sedang membaca' },
+    { word: 'satu', emoji: '1️⃣', hint: 'Satu apel' },
+    { word: 'tiga', emoji: '3️⃣', hint: 'Tiga bintang' },
+    { word: 'air', emoji: '💧', hint: 'Air bersih' },
+    { word: 'api', emoji: '🔥', hint: 'Api kecil' },
+    { word: 'rumah', emoji: '🏠', hint: 'Rumahku hangat' },
+    { word: 'makan', emoji: '🍽️', hint: 'Makan siang' },
+  ],
+  maWordIndex: 0,
+  maSelected: [],
+  pdPictures: [
+    { emoji: '🏠', word: 'rumah' },
+    { emoji: '🐱', word: 'kucing' },
+    { emoji: '🌞', word: 'matahari' },
+    { emoji: '🌳', word: 'pohon' },
+    { emoji: '🐦', word: 'burung' },
+    { emoji: '🐟', word: 'ikan' },
+  ],
+  pdIndex: 0,
+  pdSelected: [],
+  progress: loadProgress(),
+};
+
+// ─── PROGRESS ───
+function loadProgress() {
+  try { return JSON.parse(localStorage.getItem('language-progress') || '{}'); } catch(e) { return {}; }
+}
+function saveProgress(p) {
+  try { localStorage.setItem('language-progress', JSON.stringify(p)); } catch(e) {}
+}
+function markDone(type, key) {
+  const p = state.progress;
+  if (!p[type]) p[type] = [];
+  if (!p[type].includes(key)) p[type].push(key);
+  saveProgress(p);
+}
+
+// ─── SCREEN MANAGEMENT ───
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + name).classList.add('active');
+  if (name === 'letters') renderLetterGrid();
+  if (name === 'alphabet') renderMA();
+  if (name === 'dictation') initCanvas();
+}
+
+// ─── SANDPAPER LETTERS ───
+const LETTER_PHONEMES = {
+  A:{sound:'ah',eg:'Ayam',hint:'Garis bawah dulu, lalu lingkaran!',color:'#EF5350'},
+  B:{sound:'be',eg:'Buku',hint:'Garis tegak, lalu setengah lingkaran!',color:'#E91E63'},
+  C:{sound:'che',eg:'Cinta',hint:'Lengkungan dulu!',color:'#9C27B0'},
+  D:{sound:'de',eg:'Dadu',hint:'Garis tegak, lalu setengah lingkaran dengan lidah!',color:'#673AB7'},
+  E:{sound:'eh',eg:'rumah',hint:'Lurus, lalu lengkungan!',color:'#3F51B5'},
+  F:{sound:'ef',eg:'rumah-F',hint:'Dua garis tegak, satu mendatar!',color:'#2196F3'},
+  G:{sound:'ge',eg:'rumah-G',hint:'Garis tegak, lalu setengah lingkaran!',color:'#00BCD4'},
+  H:{sound:'ha',eg:'rumah-H',hint:'Dua garis tegak!',color:'#009688'},
+  I:{sound:'ee',eg:'bintang',hint:'Garis tegak, titik di atas dan bawah!',color:'#4CAF50'},
+  J:{sound:'je',eg:'rumah-J',hint:'Garis tegak, lalu lengkungan bawah!',color:'#8BC34A'},
+  K:{sound:'ka',eg:'rumah-K',hint:'Garis tegak, dua garis miring!',color:'#CDDC39'},
+  L:{sound:'el',eg:'rumah-L',hint:'Garis tegak, garis mendatar!',color:'#FFEB3B'},
+  M:{sound:'em',eg:'rumah-M',hint:'Tiga garis tegak, dua garis diagonal!',color:'#FFC107'},
+  N:{sound:'en',eg:'rumah-N',hint:'Dua garis diagonal, satu tegak!',color:'#FF9800'},
+  O:{sound:'oh',eg:'mobil',hint:'Lingkaran sempurna!',color:'#FF5722'},
+  P:{sound:'pe',eg:'rumah-P',hint:'Garis tegak, setengah lingkaran!',color:'#F44336'},
+  Q:{sound:'qi',eg:'rumah-Q',hint:'Lingkaran, lalu garis ekor!',color:'#E91E63'},
+  R:{sound:'er',eg:'rumah-R',hint:'Garis tegak, setengah lingkaran, kaki!',color:'#9C27B0'},
+  S:{sound:'es',eg:'rumah-S',hint:'Lengkungan atas, bawah, lalu tengah!',color:'#673AB7'},
+  T:{sound:'te',eg:'rumah-T',hint:'Garis mendatar, garis tegak di tengah!',color:'#3F51B5'},
+  U:{sound:'oo',eg:'bumi',hint:'Lengkungan U besar!',color:'#2196F3'},
+  V:{sound:'fa',eg:'rumah-V',hint:'Dua garis diagonal ke bawah!',color:'#00BCD4'},
+  W:{sound:'wa',eg:'rumah-W',hint:'Dua V berdampingan!',color:'#009688'},
+  X:{sound:'eks',eg:'rumah-X',hint:'Dua garis diagonal!',color:'#4CAF50'},
+  Y:{sound:'ye',eg:'rumah-Y',hint:'Satu V, satu garis tegak!',color:'#8BC34A'},
+  Z:{sound:'zet',eg:'rumah-Z',hint:'Garis mendatar, diagonal, mendatar!',color:'#FF5722'},
+};
+
+function renderLetterGrid() {
+  const grid = document.getElementById('letter-grid');
+  grid.innerHTML = '';
+  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  const p = state.progress.letters || [];
+  letters.forEach(l => {
+    const info = LETTER_PHONEMES[l];
+    const btn = document.createElement('button');
+    btn.className = 'letter-btn';
+    btn.style.background = info.color;
+    btn.textContent = l;
+    btn.onclick = () => selectLetter(l);
+    if (p.includes(l)) {
+      btn.style.opacity = '0.5';
+      btn.title = '✓ Sudah dicoba';
+    }
+    grid.appendChild(btn);
+  });
+  updateLetterProgress();
+}
+
+function selectLetter(l) {
+  state.currentLetter = l;
+  const info = LETTER_PHONEMES[l];
+  // Highlight button
+  document.querySelectorAll('.letter-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  // Show detail
+  const detail = document.getElementById('letter-detail');
+  detail.style.display = 'block';
+  document.getElementById('ld-letter').textContent = l;
+  document.getElementById('ld-sound').textContent = 'Suara: /' + info.sound + '/';
+  document.getElementById('ld-hint').textContent = info.hint;
+  document.getElementById('ld-eg').textContent = 'Contoh: ' + l + ' seperti di "' + info.eg + '"';
+  playLetterSound();
+  markDone('letters', l);
+  updateLetterProgress();
+}
+
+function playLetterSound() {
+  const l = state.currentLetter;
+  if (!l) return;
+  if ('speechSynthesis' in window) {
+    speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(LETTER_PHONEMES[l].sound);
+    utter.lang = 'id-ID';
+    utter.rate = 0.85;
+    speechSynthesis.speak(utter);
+  }
+}
+
+function updateLetterProgress() {
+  const p = state.progress.letters || [];
+  const total = 26;
+  const el = document.getElementById('letter-progress');
+  if (el) el.textContent = `${p.length} dari ${total} huruf sudah dicoba`;
+}
+
+// ─── MOVABLE ALPHABET ───
+function renderMA() {
+  const w = state.maWords[state.maWordIndex];
+  document.getElementById('ma-emoji').textContent = w.emoji;
+  document.getElementById('ma-feedback').textContent = w.hint;
+  document.getElementById('ma-next-btn').style.display = 'none';
+  state.maSelected = [];
+  renderMASlots();
+  renderMATiles();
+  updateMAProgress();
+}
+
+function renderMASlots() {
+  const slots = document.getElementById('ma-slots');
+  const w = state.maWords[state.maWordIndex];
+  slots.innerHTML = '';
+  w.word.split('').forEach((ch, i) => {
+    const slot = document.createElement('div');
+    slot.className = 'ma-slot';
+    slot.id = 'ma-slot-' + i;
+    slot.textContent = state.maSelected[i] || '';
+    if (state.maSelected[i]) slot.classList.add('filled');
+    slots.appendChild(slot);
+  });
+}
+
+function renderMATiles() {
+  const tiles = document.getElementById('ma-tiles');
+  const w = state.maWords[state.maWordIndex];
+  const wordChars = new Set(w.word.split(''));
+  const dist = [...wordChars].sort(() => Math.random() - 0.5);
+  // Add 4-6 extra random letters
+  const extra = 'abcdefghijklmnopqrstuvwxyz'.split('').filter(c => !wordChars.has(c)).sort(() => Math.random() - 0.5).slice(0, 5);
+  const all = [...dist, ...extra].sort(() => Math.random() - 0.5);
+
+  tiles.innerHTML = '';
+  all.forEach(ch => {
+    const tile = document.createElement('button');
+    tile.className = 'ma-tile';
+    tile.textContent = ch.toUpperCase();
+    tile.style.background = 'aeiou'.includes(ch) ? '#EF5350' : '#42A5F5';
+    if (state.maSelected.includes(ch)) tile.classList.add('used');
+    tile.onclick = () => placeLetter(ch);
+    tiles.appendChild(tile);
+  });
+}
+
+function placeLetter(ch) {
+  if (state.maSelected.includes(ch)) return;
+  const w = state.maWords[state.maWordIndex];
+  if (state.maSelected.length >= w.word.length) return;
+  state.maSelected.push(ch);
+  renderMASlots();
+  renderMATiles();
+  if (state.maSelected.length === w.word.length) checkMAWord();
+}
+
+function checkMAWord() {
+  const w = state.maWords[state.maWordIndex];
+  const attempt = state.maSelected.join('');
+  if (attempt === w.word) {
+    document.getElementById('ma-feedback').innerHTML = '<span style="color:var(--green)">✅ Tepat! "' + w.word + '" — hebat!</span>';
+    document.getElementById('ma-next-btn').style.display = 'block';
+    confetti();
+    markDone('words', w.word);
+    if ('speechSynthesis' in window) {
+      speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(w.word);
+      u.lang = 'id-ID';
+      u.rate = 0.8;
+      speechSynthesis.speak(u);
+    }
+  } else {
+    document.getElementById('ma-feedback').innerHTML = '<span style="color:var(--red)">❌ Belum tepat... coba lagi!</span>';
+    // Shake all slots
+    document.querySelectorAll('.ma-slot').forEach(s => { s.classList.add('wrong'); setTimeout(() => s.classList.remove('wrong'), 500); });
+    // Clear and retry
+    setTimeout(() => {
+      state.maSelected = [];
+      renderMASlots();
+      renderMATiles();
+      document.getElementById('ma-feedback').textContent = w.hint;
+    }, 800);
+  }
+}
+
+function nextMAWord() {
+  state.maWordIndex = (state.maWordIndex + 1) % state.maWords.length;
+  renderMA();
+}
+
+function updateMAProgress() {
+  const p = state.progress.words || [];
+  const el = document.getElementById('ma-progress');
+  if (el) el.textContent = `${p.length} dari ${state.maWords.length} kata sudah disusun`;
+}
+
+// ─── PICTURE DICTATION ───
+let canvasCtx = null;
+let drawing = false;
+let lastX = 0, lastY = 0;
+
+function initCanvas() {
+  const canvas = document.getElementById('drawCanvas');
+  canvasCtx = canvas.getContext('2d');
+  canvasCtx.strokeStyle = '#5D4037';
+  canvasCtx.lineWidth = 3;
+  canvasCtx.lineCap = 'round';
+  canvasCtx.lineJoin = 'round';
+
+  canvas.ontouchstart = e => { e.preventDefault(); const t = e.touches[0]; const r = canvas.getBoundingClientRect(); lastX = t.clientX - r.left; lastY = t.clientY - r.top; drawing = true; };
+  canvas.ontouchmove = e => { e.preventDefault(); if (!drawing) return; const t = e.touches[0]; const r = canvas.getBoundingClientRect(); const x = t.clientX - r.left; const y = t.clientY - r.top; canvasCtx.beginPath(); canvasCtx.moveTo(lastX, lastY); canvasCtx.lineTo(x, y); canvasCtx.stroke(); lastX = x; lastY = y; };
+  canvas.ontouchend = () => drawing = false;
+  canvas.onmousedown = e => { const r = canvas.getBoundingClientRect(); lastX = e.clientX - r.left; lastY = e.clientY - r.top; drawing = true; };
+  canvas.onmousemove = e => { if (!drawing) return; const r = canvas.getBoundingClientRect(); const x = e.clientX - r.left; const y = e.clientY - r.top; canvasCtx.beginPath(); canvasCtx.moveTo(lastX, lastY); canvasCtx.lineTo(x, y); canvasCtx.stroke(); lastX = x; lastY = y; };
+  canvas.onmouseup = () => drawing = false;
+
+  clearCanvas();
+  renderPD();
+}
+
+function clearCanvas() {
+  const canvas = document.getElementById('drawCanvas');
+  if (canvasCtx) { canvasCtx.fillStyle = 'white'; canvasCtx.fillRect(0, 0, canvas.width, canvas.height); }
+}
+
+function renderPD() {
+  const pic = state.pdPictures[state.pdIndex];
+  document.getElementById('pd-picture').textContent = pic.emoji;
+  document.getElementById('pd-word-name').textContent = pic.word;
+  state.pdSelected = [];
+  renderPDSlots();
+  renderPDTiles();
+  document.getElementById('pd-feedback').textContent = '';
+  document.getElementById('pd-next-btn').style.display = 'none';
+}
+
+function renderPDSlots() {
+  const slots = document.getElementById('pd-slots');
+  const pic = state.pdPictures[state.pdIndex];
+  slots.innerHTML = '';
+  pic.word.split('').forEach((ch, i) => {
+    const slot = document.createElement('div');
+    slot.className = 'pd-slot';
+    slot.id = 'pd-slot-' + i;
+    slot.textContent = state.pdSelected[i] || '';
+    if (state.pdSelected[i]) slot.classList.add('filled');
+    slots.appendChild(slot);
+  });
+}
+
+function renderPDTiles() {
+  const tiles = document.getElementById('pd-tiles');
+  const pic = state.pdPictures[state.pdIndex];
+  const wordChars = new Set(pic.word.split(''));
+  const dist = [...wordChars].sort(() => Math.random() - 0.5);
+  const extra = 'abcdefghijklmnopqrstuvwxyz'.split('').filter(c => !wordChars.has(c)).sort(() => Math.random() - 0.5).slice(0, 5);
+  const all = [...dist, ...extra].sort(() => Math.random() - 0.5);
+  tiles.innerHTML = '';
+  all.forEach(ch => {
+    const tile = document.createElement('button');
+    tile.className = 'pd-tile';
+    tile.textContent = ch.toUpperCase();
+    tile.style.background = 'aeiou'.includes(ch) ? '#EF5350' : '#AB47BC';
+    if (state.pdSelected.includes(ch)) tile.classList.add('used');
+    tile.onclick = () => placePDLetter(ch);
+    tiles.appendChild(tile);
+  });
+}
+
+function placePDLetter(ch) {
+  if (state.pdSelected.includes(ch)) return;
+  const pic = state.pdPictures[state.pdIndex];
+  if (state.pdSelected.length >= pic.word.length) return;
+  state.pdSelected.push(ch);
+  renderPDSlots();
+  renderPDTiles();
+  if (state.pdSelected.length === pic.word.length) checkPDWord();
+}
+
+function checkPDWord() {
+  const pic = state.pdPictures[state.pdIndex];
+  const attempt = state.pdSelected.join('');
+  if (attempt === pic.word) {
+    document.getElementById('pd-feedback').innerHTML = '<span style="color:var(--green)">✅ Tepat! "' + pic.word + '"!</span>';
+    document.getElementById('pd-next-btn').style.display = 'block';
+    confetti();
+    markDone('pictures', pic.word);
+  } else {
+    document.getElementById('pd-feedback').innerHTML = '<span style="color:var(--red)">❌ Coba lagi!</span>';
+    document.querySelectorAll('.pd-slot').forEach(s => { s.classList.add('wrong'); setTimeout(() => s.classList.remove('wrong'), 500); });
+    setTimeout(() => {
+      state.pdSelected = [];
+      renderPDSlots();
+      renderPDTiles();
+    }, 800);
+  }
+}
+
+function nextPDPicture() {
+  state.pdIndex = (state.pdIndex + 1) % state.pdPictures.length;
+  clearCanvas();
+  renderPD();
+}
+
+function nextPDWord() {
+  state.pdIndex = (state.pdIndex + 1) % state.pdPictures.length;
+  clearCanvas();
+  renderPD();
+}
+
+// ─── CONFETTI ───
+function confetti() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const container = document.getElementById('confetti-container');
+  container.innerHTML = '';
+  const colors = ['#EF5350','#FFEE58','#66BB6A','#42A5F5','#AB47BC','#FF9800','#EC407A'];
+  for (let i = 0; i < 30; i++) {
+    const piece = document.createElement('div');
+    piece.className = 'confetti-piece';
+    piece.style.left = Math.random() * 100 + '%';
+    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+    piece.style.animationDelay = Math.random() * 0.8 + 's';
+    container.appendChild(piece);
+  }
+  setTimeout(() => container.innerHTML = '', 3000);
+}
+</script>
+</body>
+</html>
