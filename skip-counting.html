@@ -371,8 +371,8 @@ function startStage(s){
 // Concrete → groups of N
 // ═══════════════════════════════════════════════
 function renderBuild(area, s){
-  var sizes = [2, 5, 10];
-  var jump = sizes[Math.floor(Math.random()*sizes.length)];
+  var sizes = [2];
+  var jump = 2;
   var groupCount = 3;
   var items = [];
   for(var i=0;i<jump*groupCount;i++) items.push(OBJECTS[i%OBJECTS.length]);
@@ -487,9 +487,9 @@ function checkBuildDone(){
 // Visual → Piko jumps on number line
 // ═══════════════════════════════════════════════
 function renderJump(area, s){
-  var jumps = [2, 5, 10];
-  var jump = jumps[Math.floor(Math.random()*jumps.length)];
-  var max = jump * 5;
+  var jumps = [2];
+  var jump = 2;
+  var max = 10;
 
   area.innerHTML =
     '<div class="bunny-area">'+
@@ -577,9 +577,9 @@ function jumpTap(n){
 // Visual → number board, highlight jump pattern
 // ═══════════════════════════════════════════════
 function renderPattern(area, s){
-  var jumps = [2, 5, 10];
-  var jump = jumps[Math.floor(Math.random()*jumps.length)];
-  var max = jump * 4;
+  var jumps = [2];
+  var jump = 2;
+  var max = 10;
 
   area.innerHTML =
     '<div class="bunny-area">'+
@@ -635,9 +635,9 @@ function renderPattern(area, s){
 // Symbolic → predict next number
 // ═══════════════════════════════════════════════
 function renderNext(area, s){
-  var jumps = [2, 5, 10];
-  var jump = jumps[Math.floor(Math.random()*jumps.length)];
-  var start = Math.floor(Math.random()*3)*jump;
+  var jumps = [2];
+  var jump = 2;
+  var start = 0;
   var seqLen = 3;
   var seq = [];
   for(var i=0;i<seqLen;i++) seq.push(start + i*jump);
@@ -705,9 +705,9 @@ function showNextHint(){
 // Structural → missing number in sequence
 // ═══════════════════════════════════════════════
 function renderMissing(area, s){
-  var jumps = [2, 5, 10];
-  var jump = jumps[Math.floor(Math.random()*jumps.length)];
-  var start = Math.floor(Math.random()*2)*jump;
+  var jumps = [2];
+  var jump = 2;
+  var start = 0;
   var seqLen = 4;
   var seq = [];
   for(var i=0;i<seqLen;i++) seq.push(start + i*jump);
@@ -778,8 +778,8 @@ function showMissingHint(){
 // Systems thinking → identify the rule
 // ═══════════════════════════════════════════════
 function renderDetective(area, s){
-  var jump = [2, 5, 10][Math.floor(Math.random()*3)];
-  var start = Math.floor(Math.random()*2)*jump;
+  var jump = 2;
+  var start = 0;
   var seqLen = 4;
   var seq = [];
   for(var i=0;i<seqLen;i++) seq.push(start + i*jump);
