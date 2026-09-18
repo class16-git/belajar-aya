@@ -888,6 +888,35 @@ function togglePanel(){
   if(p.classList.contains("on")) renderPanel();
 }
 
+
+function showMission(id){
+  if(!window.MISSIONS||!window.MISSIONS[id])return;
+  var m=window.MISSIONS[id];
+  var el=document.createElement("div");
+  el.style.cssText="position:fixed;inset:0;background:rgba(7,7,26,.92);z-index:500;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto";
+  el.innerHTML="<div style=\"background:linear-gradient(135deg,#1a3a2a 0%,#0d2818 100%);border:2px solid #4CAF50;border-radius:20px;padding:20px 16px;max-width:440px;width:100%\">"+
+    "<div style=\"font-size:.65rem;color:#81C784;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px\">Real World Mission</div>"+
+    "<div style=\"font-family:var(--font-h);font-size:1.05rem;color:#FFF8F0;margin-bottom:12px\">"+m.title+"</div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Materials</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.materials.map(function(i){return "\u2022 "+i;}).join("<br>")+"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Steps</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.steps.map(function(s,i){return(i+1)+". "+s;}).join("<br>")+"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Adult</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.adult+"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Safety</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.safety+"</div></div>"+
+    "<div style=\"background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:12px;padding:10px;margin-top:8px\"><div style=\"font-size:.88rem;color:#FFD700;font-style:italic;margin-bottom:4px\">\""+m.question+"\"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Done when</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.finish+"</div></div>"+
+    "<button onclick=\"this.closest('[style*=\"position:fixed\"]').remove()\" style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:12px;font-family:var(--font-b);font-weight:600;display:block;width:100%\">Done</button>"+
+    "</div>";
+  document.body.appendChild(el);
+}
+
+window.MISSIONS={
+  skipbuild:{title:"Build Equal Groups",materials:["Small objects (buttons, beads, seeds, pebbles)","A flat surface or tray"],steps:["Gather a handful of objects","Count out groups — put 2 objects together, then 2 more, then 2 more","Notice how many groups you have","Try with 3s, 5s, or 10s"],adult:"Sit nearby and ask: \"How many groups do you see?\" without correcting.",safety:"Small objects — keep away from mouth.",question:"What happens if you count the objects one by one instead?",finish:"When all objects are in equal groups and the child can describe them."},
+  skipjump:{title:"Jump Along the Number Line",materials:["A clear floor space or garden path","Chalk (optional)"],steps:["Draw a number line from 0 to 20 on the ground with chalk","Stand at 0","Count by 2s out loud: 0, 2, 4, 6...","Jump to each number as you say it"],adult:"Call out a target number and ask the child to jump there.",safety:"Make sure there is soft ground nearby.",question:"If you jump by 5s instead of 2s, where do you land first?",finish:"When the child jumps to 10 or 20 by counting in equal steps."},
+  skippattern:{title:"Find Patterns in the Real World",materials:["Paper and coloured pencils","Your home or outdoors"],steps:["Look around for something that repeats — tiles, windows, fence posts","Draw the pattern you see","Name the rule: what is the same each time?"],adult:"Ask: \"What do you think comes next? How do you know?\"",safety:"No hazards.",question:"What is the most interesting pattern you found today?",finish:"When the child has found and described 3 real-world patterns."},
+  skipnext:{title:"Predict What Comes Next",materials:["Household objects or drawings","Paper and pencil"],steps:["Look at a sequence of objects or numbers","Figure out the rule","Predict what comes next and check"],adult:"Ask: \"Can you make your own sequence for someone else to finish?\"",safety:"No hazards.",question:"What is the simplest pattern you know?",finish:"When the child correctly predicts the next item in 3+ sequences."},
+  skipmissing:{title:"Find the Missing Number",materials:["Paper and pencil","Small objects to count"],steps:["Look at a number sequence with a gap","Find the gap","Fill in the missing number"],adult:"Ask: \"How do you know what is missing without counting one by one?\"",safety:"No hazards.",question:"What helps you find a missing number quickly?",finish:"When the child identifies missing numbers in 5+ sequences."},
+  skipdetective:{title:"Be a Number Detective",materials:["Objects to count","Paper to record findings"],steps:["Find things in your home that can be skip-counted","Count them in groups","Share your discovery"],adult:"Let the child lead. Ask: \"What did you discover?\"",safety:"No hazards.",question:"Where else in your home can you find skip-counting patterns?",finish:"When the child has found and described 3 skip-counting patterns in real life."}
+};
+
 function renderPanel(){
   var c = document.getElementById("pcontent");
   if(!c) return;

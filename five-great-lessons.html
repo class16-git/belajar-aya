@@ -1593,7 +1593,72 @@ function rabbitySpeak(){
   ];
   say(msgs[Math.floor(Math.random()*msgs.length)]);
 }
+function showMission(id){
+  if(!window.MISSIONS||!window.MISSIONS[id])return;
+  var m=window.MISSIONS[id];
+  var el=document.createElement("div");
+  el.style.cssText="position:fixed;inset:0;background:rgba(7,7,26,.92);z-index:500;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto";
+  el.innerHTML="<div style=\"background:linear-gradient(135deg,#1a3a2a 0%,#0d2818 100%);border:2px solid #4CAF50;border-radius:20px;padding:20px 16px;max-width:440px;width:100%\">"+
+    "<div style=\"font-size:.65rem;color:#81C784;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;font-family:var(--font-h)\">Real World Mission</div>"+
+    "<div style=\"font-family:var(--font-h);font-size:1.05rem;color:#FFF8F0;margin-bottom:12px\">"+m.title+"</div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Materials</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.materials.map(function(i){return "\u2022 "+i;}).join("<br>")+"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Steps</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.steps.map(function(s,i){return(i+1)+". "+s;}).join("<br>")+"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Adult</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.adult+"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Safety</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.safety+"</div></div>"+
+    "<div style=\"background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:12px;padding:10px;margin-top:8px\"><div style=\"font-size:.88rem;color:#FFD700;font-style:italic;margin-bottom:4px\">\""+m.question+"\"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Done when</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.finish+"</div></div>"+
+    "<button onclick=\"this.closest('[style*=\"position:fixed\"]').remove()\" style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:12px;font-family:var(--font-b);font-weight:600;display:block;width:100%\">Done</button>"+
+    "</div>";
+  document.body.appendChild(el);
+}
 
+window.MISSIONS={
+  greatlesson: {
+    title: "Tell the Universe Story Again",
+    materials: ["Paper and coloured pencils", "Your memory"],
+    steps: ["Remember the story of the universe", "Draw the most interesting part", "Tell the story to someone in your family"],
+    adult: "Listen. Ask: What surprised you most?",
+    safety: "No hazards.",
+    question: "What question about the universe would you most like to answer?",
+    finish: "Drew something from the story and retells a key part.",
+  },
+  lessonxps: {
+    title: "Illustrate Your Favourite Part",
+    materials: ["Large paper and coloured pencils or crayons"],
+    steps: ["Choose your favourite moment from the story", "Draw it in detail", "Add labels or a caption"],
+    adult: "Ask: What do you want people to notice about your drawing?",
+    safety: "No hazards.",
+    question: "What would you add to the story if you could?",
+    finish: "Has a detailed illustrated page.",
+  },
+  storypage: {
+    title: "Act Out the Story",
+    materials: ["Your body and imagination", "Optional: household objects as props"],
+    steps: ["Re-enact a key moment from the story", "Use your voice and movement", "Notice how it feels"],
+    adult: "Watch silently first. Ask: What did you feel?",
+    safety: "No hazards.",
+    question: "What would you like to learn more about?",
+    finish: "Physically acted out a key story moment.",
+  },
+  experience: {
+    title: "Connect the Story to Real Life",
+    materials: ["Paper and pencil", "Your home and garden"],
+    steps: ["Think of one thing from the story", "Find something in real life that connects to it", "Draw or describe the connection"],
+    adult: "Ask: How does this connect to the story?",
+    safety: "No hazards.",
+    question: "What in your life connects to the story about life on Earth?",
+    finish: "Found and described 3 real-world connections.",
+  },
+  fglmatch: {
+    title: "Count with Tallies",
+    materials: ["Paper and pencil", "Your home or neighbourhood"],
+    steps: ["Choose something to count", "Make a tally mark for each one you see", "Add up your tallies at the end"],
+    adult: "Ask: How many did you count?",
+    safety: "No hazards.",
+    question: "What is the most common thing you found?",
+    finish: "Counted something using tallies and reads back the total.",
+  },
+};
 function confetti(){
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   if (window._confettiActive) return;

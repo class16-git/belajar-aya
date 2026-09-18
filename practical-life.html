@@ -314,6 +314,55 @@ function doPour() {
     say("The glass is already full!");
     return;
   }
+
+window.MISSIONS = {
+  pour: {
+    title: "Pour Water at the Table",
+    materials: ["A small jug or cup", "Two containers of different sizes", "A tray to catch spills"],
+    steps: ["Fill the jug halfway with water", "Hold the jug with two hands", "Pour slowly from the jug into the second container", "Notice how the water flows -- full stream at first, then thinning out", "Try pouring back into the first container"],
+    adult: "Sit nearby and watch. Ask: Did the water pour the same way the whole time?",
+    safety: "Water stays on the tray. Keep electrical items away.",
+    question: "What happens if you pour really slowly vs quickly?",
+    finish: "When the child can pour from one container to another without spilling.",
+  },
+  tongs: {
+    title: "Transfer Small Objects",
+    materials: ["Tongs or chopsticks", "A small bowl of objects (beads, pompoms, dry pasta)", "Two bowls", "A tray"],
+    steps: ["Pick up one object using the tongs", "Carry it to the second bowl", "Repeat until all objects are moved", "Try to pick up different shapes and sizes"],
+    adult: "Let the child discover. Ask: Which objects were easiest to pick up?",
+    safety: "Small objects -- keep away from mouth.",
+    question: "What would happen if you used bigger tongs?",
+    finish: "When the child transfers 20+ objects using tongs.",
+  },
+  button: {
+    title: "Button Practice on Your Own Clothes",
+    materials: ["A jacket or shirt with large buttons", "A doll with button clothes (optional)"],
+    steps: ["Sit at a table with the item in front of you", "Hold the button with both thumbs", "Push thumbs down and forward through the buttonhole", "Pull both sides of the fabric apart gently"],
+    adult: "Sit beside. Do not do it for the child. Ask: Which finger pushes the button through?",
+    safety: "No hazards.",
+    question: "Are there buttons somewhere in your bedroom?",
+    finish: "When the child buttons and unbuttons 3 buttons independently.",
+  },
+  wash: {
+    title: "Wash Something Real",
+    materials: ["A small table or shelf", "A sponge or soft cloth", "A bowl of water", "A towel"],
+    steps: ["Gather the materials and place them on the table", "Wet the sponge and wring it slightly", "Wash the table surface in smooth strokes", "Rinse the sponge when it gets dirty", "Dry the table with the towel"],
+    adult: "Let the child do the work. Ask: What does the water look like now?",
+    safety: "Water stays at the table. No drinking.",
+    question: "What else in your home could you wash?",
+    finish: "When the table is clean and the child can describe what they did.",
+  },
+  pinktower: {
+    title: "Build with the Pink Tower",
+    materials: ["10 pink wooden cubes (or 10 boxes of decreasing size)", "A flat mat or tray"],
+    steps: ["Start with the largest cube -- place it in the centre", "Find the next largest and stack it on top", "Continue stacking from largest to smallest", "Build a tall tower", "Close your eyes and feel the tower -- is it straight?"],
+    adult: "Observe. Ask: Is your tower taller than your hand?",
+    safety: "No hazards.",
+    question: "What is the smallest cube you can hold in one hand?",
+    finish: "When the child builds the tower correctly with all 10 cubes.",
+  },
+};
+
   state.pourLevel += 20;
   fill.style.height = state.pourLevel + "%";
   if (state.pourLevel >= 100) {

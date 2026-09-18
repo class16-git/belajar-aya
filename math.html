@@ -1148,7 +1148,117 @@ function togglePanel(){
   p.classList.toggle("on");
   if(p.classList.contains("on")) renderPanel();
 }
+function showMission(id){
+  if(!window.MISSIONS||!window.MISSIONS[id])return;
+  var m=window.MISSIONS[id];
+  var el=document.createElement("div");
+  el.style.cssText="position:fixed;inset:0;background:rgba(7,7,26,.92);z-index:500;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto";
+  el.innerHTML="<div style=\"background:linear-gradient(135deg,#1a3a2a 0%,#0d2818 100%);border:2px solid #4CAF50;border-radius:20px;padding:20px 16px;max-width:440px;width:100%\">"+
+    "<div style=\"font-size:.65rem;color:#81C784;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;font-family:var(--font-h)\">Real World Mission</div>"+
+    "<div style=\"font-family:var(--font-h);font-size:1.05rem;color:#FFF8F0;margin-bottom:12px\">"+m.title+"</div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Materials</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.materials.map(function(i){return "\u2022 "+i;}).join("<br>")+"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Steps</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.steps.map(function(s,i){return(i+1)+". "+s;}).join("<br>")+"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Adult</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.adult+"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Safety</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.safety+"</div></div>"+
+    "<div style=\"background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:12px;padding:10px;margin-top:8px\"><div style=\"font-size:.88rem;color:#FFD700;font-style:italic;margin-bottom:4px\">\""+m.question+"\"</div></div>"+
+    "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Done when</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.finish+"</div></div>"+
+    "<button onclick=\"this.closest('[style*=\"position:fixed\"]').remove()\" style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:12px;font-family:var(--font-b);font-weight:600;display:block;width:100%\">Done</button>"+
+    "</div>";
+  document.body.appendChild(el);
+}
 
+window.MISSIONS={
+  numbers: {
+    title: "Count Real Objects",
+    materials: ["Any collection of 10-20 objects"],
+    steps: ["Spread objects on a tray", "Touch and count each one slowly", "Arrange in a line to check your count", "Try counting backwards"],
+    adult: "Watch silently the first time. Ask: How do you know the count is right?",
+    safety: "No hazards.",
+    question: "If I move one while you close your eyes, can you tell which one is missing?",
+    finish: "Counts 10-20 objects reliably.",
+  },
+  rods: {
+    title: "Build Staircases with Objects",
+    materials: ["Books or blocks of different sizes"],
+    steps: ["Find 10 objects that grow in size", "Arrange smallest to tallest like a staircase", "Say the number for each step"],
+    adult: "Ask: Which step is longer? How much longer?",
+    safety: "No hazards.",
+    question: "Can you build the staircase going down instead?",
+    finish: "Staircase ordered correctly.",
+  },
+  spindle: {
+    title: "Match Groups to Numbers",
+    materials: ["Paper and pencil", "Small objects"],
+    steps: ["Write numbers 1-9 on paper", "Count out that many objects next to each number", "Notice when groups match their number"],
+    adult: "Ask: Which group has more? How do you know?",
+    safety: "Small objects -- keep away from mouth.",
+    question: "Can you put the groups in order without counting?",
+    finish: "Matches number symbols to quantities correctly.",
+  },
+  counters: {
+    title: "Count and Group Real Objects",
+    materials: ["20-50 small objects", "Paper and pencil"],
+    steps: ["Count objects one by one", "Group them in sets of 2, 5, or 10", "Notice how grouping helps you count faster"],
+    adult: "Ask: Is it faster to count in groups?",
+    safety: "Small objects -- keep away from mouth.",
+    question: "What is the largest number you can count quickly using groups?",
+    finish: "Counts 20+ objects accurately.",
+  },
+  teen: {
+    title: "Count a Teen Collection",
+    materials: ["10-19 small objects"],
+    steps: ["Count out 10 objects", "Add more one by one", "Notice the pattern: always start with 10"],
+    adult: "Ask: What comes after 10? What comes after 15?",
+    safety: "Small objects -- keep away from mouth.",
+    question: "What is the biggest teen number you can count?",
+    finish: "Counts 10-19 correctly.",
+  },
+  tens: {
+    title: "Count in Tens",
+    materials: ["10 pencils, sticks, or blocks"],
+    steps: ["Count out 10 objects and group them", "Make two groups of 10 -- that is 20", "Count by tens: 10, 20, 30..."],
+    adult: "Ask: What comes after 90? after the child explores.",
+    safety: "No hazards.",
+    question: "How many tens can you count up to?",
+    finish: "Counts by 10s to 100.",
+  },
+  decimal: {
+    title: "Explore Ones, Tens, Hundreds",
+    materials: ["Paper and coloured pencils"],
+    steps: ["Draw a ones place, tens place, hundreds place", "Place objects in each column", "Trade 10 ones for 1 ten, 10 tens for 1 hundred"],
+    adult: "Ask: What happens when you have 10 ones?",
+    safety: "No hazards.",
+    question: "What is the biggest number you can make?",
+    finish: "Explains the concept of place value.",
+  },
+  mul: {
+    title: "Multiply with Real Objects",
+    materials: ["Small objects (buttons, beads)", "Paper and pencil"],
+    steps: ["Gather objects in equal groups", "Count each group", "Notice: groups times objects = total"],
+    adult: "Ask: What did you notice about the total?",
+    safety: "Small objects -- keep away from mouth.",
+    question: "What happens when you add one more group?",
+    finish: "Explains multiplication as repeated groups.",
+  },
+  frac: {
+    title: "Divide and Share Equally",
+    materials: ["10-12 food-safe items (grapes, crackers)", "Two or more bowls"],
+    steps: ["Share items equally between bowls", "Check: does everyone have the same amount?", "Try with different numbers"],
+    adult: "Ask: Is it fair? How can you check?",
+    safety: "Only food-safe items.",
+    question: "What if you have 11 items and share between 2 people?",
+    finish: "Divides 12 items equally.",
+  },
+  geo: {
+    title: "Find Geometric Shapes in the World",
+    materials: ["Paper and coloured pencils", "Your home or garden"],
+    steps: ["Find one circle, square, triangle, rectangle", "Draw each shape you find", "Count how many of each"],
+    adult: "Walk alongside. Ask: Which shape is most common?",
+    safety: "No hazards.",
+    question: "Why do you think so many things are circles?",
+    finish: "Found and drew 5+ of each shape.",
+  },
+};
 function renderPanel(){
   var c = document.getElementById("pcontent");
   if(!c) return;
