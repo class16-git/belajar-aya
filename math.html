@@ -1119,25 +1119,6 @@ function pikoSpeak(){
   say(msgs[Math.floor(Math.random()*msgs.length)]);
 }
 
-function confetti(){
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  if (window._confettiActive) return;
-  window._confettiActive = true;
-  var c = document.getElementById("confetti");
-  if(!c) return;
-  c.innerHTML = "";
-  var colors = ["#FFD700","#EF5350","#66BB6A","#42A5F5","#AB47BC","#FF9800"];
-  for(var i=0;i<35;i++){
-    var p = document.createElement("div");
-    p.className = "conf";
-    p.style.left = Math.random()*100+"%";
-    p.style.background = colors[Math.floor(Math.random()*colors.length)];
-    p.style.animationDelay = (Math.random()*0.7)+"s";
-    p.style.animationDuration = "2.5s";
-    c.appendChild(p);
-  }
-  setTimeout(function(){ c.innerHTML = ""; window._confettiActive = false; }, 3500);
-}
 
 // ─────────────────────────────────────────────
 // PARENT PANEL

@@ -25,8 +25,8 @@ body{
 .screen.on{display:flex}
 
 .stars{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
-.star{position:absolute;background:#fff;border-radius:50%;animation:tw var(--d,3s) ease-in-out infinite;animation-delay:var(--dl,0s)}
-@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+.star{position:absolute;background:#fff;border-radius:50%;animation-delay:var(--dl,0s)}
+50%{opacity:.9}}
 
 .tbar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:10px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
 .tbar-btn{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;text-decoration:none}
@@ -637,12 +637,12 @@ function checkGrade(){
   }
   STATE.grade.answered = true;
   if(correct){
-    say("Perfect! You graded the colors correctly!");
+    say("You finished grading.");;
     document.getElementById("grade-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Color Grading complete!</div><div class="success-sub">Lightest to darkest — you found the order!</div></div>';
     markDone("colorgrad");
     confetti();
   } else {
-    say("Almost! Try to spot which colors are not in the right order.");
+    say("Look for the smallest first.");;
   }
 }
 
@@ -909,7 +909,7 @@ function checkGrade2(){
   }
   STATE.grade2.answered = true;
   if(correct){
-    say("Perfect ordering! Smallest to largest!");
+    say("You ordered them from largest to smallest.");;
     document.getElementById("grade-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Size Grading complete!</div><div class="success-sub">Smallest to largest — you found the order!</div></div>';
     markDone("grade");
     confetti();
@@ -999,22 +999,6 @@ function say(text){
   setTimeout(function(){ if(b) b.classList.remove("on"); }, 3500);
 }
 
-function confetti(){
-  var c = document.getElementById("confetti");
-  if(!c) return;
-  c.innerHTML = "";
-  var colors = ["#FFD700","#EF5350","#66BB6A","#42A5F5","#AB47BC","#FF9800"];
-  for(var i=0;i<35;i++){
-    var p = document.createElement("div");
-    p.className = "conf";
-    p.style.left = Math.random()*100+"%";
-    p.style.background = colors[Math.floor(Math.random()*colors.length)];
-    p.style.animationDelay = (Math.random()*0.7)+"s";
-    p.style.animationDuration = "2.5s";
-    c.appendChild(p);
-  }
-  setTimeout(function(){ c.innerHTML = ""; }, 3500);
-}
 
 // ─────────────────────────────────────────────
 // PARENT PANEL

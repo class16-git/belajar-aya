@@ -227,7 +227,7 @@ function markActDone(id) {
     state.progress[id] = true;
     lsSet("pl-progress", state.progress);
     confetti();
-    say("Wonderful! You completed this activity!");
+    say("You finished. Would you like to try again or choose something different?");;
   }
   if (typeof showMission === "function") {
     setTimeout(function() { showMission(id); }, 1200);
@@ -482,7 +482,7 @@ function renderWash(area) {
         if (state.washSteps >= steps.length) {
           confetti();
           markActDone("wash");
-          say("Hands are clean! Great job washing!");
+          say("Hands are clean.");;
         }
       };
       washArea.appendChild(btn);
@@ -584,25 +584,6 @@ function say(text) {
   setTimeout(function() { if (b) b.classList.remove("show"); }, 3500);
 }
 
-function confetti() {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  if (window._confettiActive) return;
-  window._confettiActive = true;
-  var c = document.getElementById("confetti-container");
-  if (!c) return;
-  c.innerHTML = "";
-  var colors = ["#FFD700", "#EF5350", "#66BB6A", "#42A5F5", "#AB47BC", "#FF9800"];
-  for (var i = 0; i < 40; i++) {
-    var p = document.createElement("div");
-    p.className = "confetti-piece";
-    p.style.left = Math.random() * 100 + "%";
-    p.style.background = colors[Math.floor(Math.random() * colors.length)];
-    p.style.animationDelay = (Math.random() * 0.8) + "s";
-    p.style.animationDuration = "2.5s";
-    c.appendChild(p);
-  }
-  setTimeout(function() { c.innerHTML = ""; window._confettiActive = false; }, 3500);
-}
 
 function toggleParent() {
   var p = document.getElementById("parent-panel");
