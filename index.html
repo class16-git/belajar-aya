@@ -228,12 +228,62 @@ body{
 
 <script>
 // ─────────────────────────────────────────────
-// PROFILE + STORAGE
+// PROFILE + VERSIONED STORAGE
 // ─────────────────────────────────────────────
 var profile = { name: "", avatar: "&#128049;" };
+var STORAGE_VERSION = 1;
+var STORAGE_KEYS = [
+  "aya-profile", "aya-progress-v1",
+  "skip-progress", "math-progress", "language-progress",
+  "sens-progress", "pl-progress", "culture-progress", "fgl-progress"
+];
 
 function lg(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
 function ls(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+
+function clearProfile(){
+  ls("aya-profile", {name:"",avatar:"&#128049;"});
+  profile = {name:"",avatar:"&#128049;"};
+  var heroName = document.getElementById("hero-name");
+  var heroSub = document.getElementById("hero-sub");
+  if(heroName) heroName.textContent = "";
+  if(heroSub) heroSub.textContent = "";
+  localStorage.removeItem("aya-progress-v1");
+  renderPrimary();
+  say("Profile cleared. Let's start fresh!");
+}
+
+function clearAllData(){
+  STORAGE_KEYS.forEach(function(k){ localStorage.removeItem(k); });
+  ls("aya-profile", {name:"",avatar:"&#128049;"});
+  ls("aya-progress-v1", {});
+  profile = {name:"",avatar:"&#128049;"};
+  localStorage.removeItem("aya-shared-notice-v1");
+  var heroName = document.getElementById("hero-name");
+  var heroSub = document.getElementById("hero-sub");
+  if(heroName) heroName.textContent = "";
+  if(heroSub) heroSub.textContent = "";
+  renderPrimary();
+  say("All data cleared. Ready for a fresh start!");
+}
+
+function renderPanelFooter(){
+  return '<div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(0,0,0,.1)">'+
+    '<div style="font-size:.72rem;color:#999;margin-bottom:10px">Data</div>'+
+    '<button onclick="clearProfile()" style="display:block;width:100%;padding:10px 14px;background:#fff3e0;color:#e65100;border:1px solid #ffcc80;border-radius:10px;font-size:.78rem;cursor:pointer;margin-bottom:8px;text-align:left">Clear profile name</button>'+
+    '<button onclick="confirmClearAll()" style="display:block;width:100%;padding:10px 14px;background:#fde8e8;color:#c62828;border:1px solid #ef9a9a;border-radius:10px;font-size:.78rem;cursor:pointer;text-align:left">Clear all learning data</button>'+
+    '<div id="confirm-clear" style="display:none;margin-top:10px;padding:12px;background:#fff3f3;border:1px solid #ef9a9a;border-radius:10px">'+
+      '<div style="font-size:.75rem;color:#333;margin-bottom:10px">Clear everything? This cannot be undone.</div>'+
+      '<button onclick="clearAllData();document.getElementById(\'confirm-clear\').style.display=\'none\'" style="padding:8px 16px;background:#c62828;color:#fff;border:none;border-radius:8px;font-size:.78rem;cursor:pointer;margin-right:8px">Yes, clear all</button>'+
+      '<button onclick="document.getElementById(\'confirm-clear\').style.display=\'none\'" style="padding:8px 16px;background:#fff;color:#333;border:1px solid #ccc;border-radius:8px;font-size:.78rem;cursor:pointer">Cancel</button>'+
+    '</div>'+
+  '</div>';
+}
+
+function confirmClearAll(){
+  var el = document.getElementById("confirm-clear");
+  if(el) el.style.display = "block";
+}
 
 // ─────────────────────────────────────────────
 // CURRICULUM — Primary Montessori areas
@@ -308,9 +358,24 @@ function init(){
   loadProfile();
   renderPrimary();
   renderMissions();
+  checkSharedDevice();
   if(!profile.name){
     setTimeout(showNameModal, 500);
   }
+}
+
+function checkSharedDevice(){
+  if(lg("aya-shared-notice-v1", false)) return;
+  var notice = document.createElement("div");
+  notice.style.cssText = "position:fixed;top:0;left:0;right:0;background:#1565C0;color:#fff;text-align:center;padding:10px 16px;font-size:.78rem;z-index:300;line-height:1.5";
+  notice.innerHTML = "&#128279; This device is shared. Use \"Clear profile\" in the parent panel to switch learners.";
+  notice.id = "shared-notice";
+  document.body.appendChild(notice);
+  setTimeout(function(){
+    var n = document.getElementById("shared-notice");
+    if(n) n.style.opacity = "0";
+    setTimeout(function(){ var n2 = document.getElementById("shared-notice"); if(n2) n2.remove(); }, 300);
+  }, 6000);
 }
 
 function loadProfile(){
@@ -334,12 +399,14 @@ function showNameModal(){
 
 function saveName(){
   var inp = document.getElementById("name-input");
-  profile.name = inp.value.trim() || "Learner";
+  var name = inp.value.trim() || "Learner";
+  ls("aya-shared-notice-v1", true);
+  profile.name = name;
   ls("aya-profile", profile);
   document.getElementById("name-modal").classList.remove("show");
   document.getElementById("hero-sub").textContent = "Welcome!";
-  document.getElementById("hero-name").textContent = "Hello, " + profile.name + "!";
-  say("Hello " + profile.name + "! Let's start exploring!");
+  document.getElementById("hero-name").textContent = "Hello, " + name + "!";
+  say("Hello " + name + "! Let's start exploring!");
 }
 
 // ─────────────────────────────────────────────
@@ -449,6 +516,7 @@ function renderPanel(){
     c.innerHTML += '<div class="prow"><div class="prow-label"><span>'+a.name+'</span><span style="font-size:.72rem;font-weight:400;opacity:.6">'+status+'</span></div><div class="pnote">'+done+' of '+total+' explored</div></div>';
   });
   c.innerHTML += '<div style="margin-top:16px;padding:12px;background:#f5f5f5;border-radius:10px"><div style="font-family:var(--font-h);font-size:.8rem;color:#666;margin-bottom:6px">&#127754; Montessori Philosophy</div><div style="font-size:.72rem;color:#888;line-height:1.6">The five curriculum areas work together. Sensorial foundations support mathematical perception. Practical Life builds concentration for all other work. Language connects every subject. Cultural Studies and Cosmic Education give context to everything.</div></div>';
+  c.innerHTML += renderPanelFooter();
 }
 
 function genStars(){
