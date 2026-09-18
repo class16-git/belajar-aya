@@ -548,7 +548,8 @@ function renderSpindle(area){
       box.addEventListener("dragleave", function(){box.style.borderColor="";});
       box.addEventListener("drop", function(e){
         e.preventDefault();
-        box.style.borderColor="";
+        if(STATE === null) return;
+        box.style.borderColor = "";
         if(STATE.spindle.done) return;
         var item = e.dataTransfer.getData("text/plain");
         if(!item) return;
@@ -589,7 +590,8 @@ function renderSpindle(area){
 }
 
 function checkSpindleDone(){
-  if(STATE.spindle.done) return;
+  if(STATE === null) return;
+  if(STATE.spindle && STATE.spindle.done) return;
   var all = true;
   for(var i=1;i<=9;i++){ if((STATE.spindle.counts[i]||0) !== i){ all = false; break; } }
   if(all){
@@ -631,6 +633,7 @@ function renderCounters(area){
 }
 
 function showCountersArrange(n){
+  if(STATE === null) return;
   var grid = document.getElementById("counter-arr");
   for(var i=0;i<n;i++){
     var d = document.getElementById("cd-"+i);
@@ -1117,6 +1120,9 @@ function pikoSpeak(){
 }
 
 function confetti(){
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (window._confettiActive) return;
+  window._confettiActive = true;
   var c = document.getElementById("confetti");
   if(!c) return;
   c.innerHTML = "";
@@ -1130,7 +1136,7 @@ function confetti(){
     p.style.animationDuration = "2.5s";
     c.appendChild(p);
   }
-  setTimeout(function(){ c.innerHTML = ""; }, 3500);
+  setTimeout(function(){ c.innerHTML = ""; window._confettiActive = false; }, 3500);
 }
 
 // ─────────────────────────────────────────────

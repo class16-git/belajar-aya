@@ -377,7 +377,7 @@ function renderPinkTower(area){
     '<div style="font-size:.7rem;text-align:center;opacity:.4;margin:8px 0">Target size: '+STATE.act.name+'</div>'+
     '<div id="pt-pool" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:10px;background:rgba(255,255,255,.04);border-radius:12px;border:1px solid rgba(255,255,255,.06);margin:8px 0"></div>'+
     '<div id="pt-success"></div>'+
-    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+    '<button class="btn btn-ghost" aria-label="Try Again" onclick="startAct(STATE.act)">Try Again</button>';
 
   var sizes = [80, 70, 60, 50, 40, 30, 20, 10];
   STATE.pink = { placed: {}, correct: 0, total: sizes.length };
@@ -470,7 +470,7 @@ function renderBrownStairs(area){
     '<div id="bs-slots" style="display:flex;flex-direction:column;gap:6px;max-width:400px;margin:0 auto"></div>'+
     '<div id="bs-pool" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:10px;background:rgba(255,255,255,.04);border-radius:12px;border:1px solid rgba(255,255,255,.06);margin:8px 0"></div>'+
     '<div id="bs-success"></div>'+
-    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+    '<button class="btn btn-ghost" aria-label="Try Again" onclick="startAct(STATE.act)">Try Again</button>';
 
   var heights = [80, 70, 60, 50, 40, 30, 20, 10];
   STATE.brown = { placed: {}, correct: 0, total: heights.length };
@@ -574,7 +574,7 @@ function renderColorGrade(area){
     '<div class="instr" style="margin-top:8px">Tap a color to place it in the next slot:</div>'+
     '<div id="color-pool" style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:8px 0"></div>'+
     '<div id="grade-success"></div>'+
-    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+    '<button class="btn btn-ghost" aria-label="Try Again" onclick="startAct(STATE.act)">Try Again</button>';
 
   STATE.grade = { shades: shades, placed: [], answered: false };
 
@@ -656,7 +656,7 @@ function renderColorMatch(area){
     '<div class="instr">Tap two cards with the same color!</div>'+
     '<div id="cm-board" style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:320px;margin:12px auto"></div>'+
     '<div id="cm-success"></div>'+
-    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+    '<button class="btn btn-ghost" aria-label="Try Again" onclick="startAct(STATE.act)">Try Again</button>';
 
   STATE.cm = { first: null, second: null, matched: 0, total: 6 };
 
@@ -773,8 +773,8 @@ function renderSounds(area){
     '<div id="sound-cylinders" class="sound-row"></div>'+
     '<div id="sound-slots" class="sound-row" style="margin-top:16px"></div>'+
     '<div id="sound-success"></div>'+
-    '<button class="btn btn-hint" onclick="showSoundHint()">Show Answer</button>'+
-    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+    '<button class="btn btn-hint" aria-label="Show Answer" onclick="showSoundHint()">Show Answer</button>'+
+    '<button class="btn btn-ghost" aria-label="Try Again" onclick="startAct(STATE.act)">Try Again</button>';
 
   var levels = [0.1, 0.25, 0.45, 0.65, 0.85, 1.0];
   var shuffled = levels.slice().sort(function(){return Math.random()-0.5;});
@@ -850,7 +850,7 @@ function renderGrade(area){
     '<div id="grade-pool" class="grade-row" style="margin:8px 0;flex-wrap:wrap"></div>'+
     '<div id="grade-msg" style="text-align:center;font-family:var(--font-h);font-size:.9rem;opacity:.5;min-height:1.5rem"></div>'+
     '<div id="grade-success"></div>'+
-    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+    '<button class="btn btn-ghost" aria-label="Try Again" onclick="startAct(STATE.act)">Try Again</button>';
 
   STATE.grade2 = { items: pairs, placed: [], answered: false };
 

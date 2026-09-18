@@ -222,6 +222,7 @@ function openAct(a) {
 }
 
 function markActDone(id) {
+  if (!id) return;
   if (!state.progress[id]) {
     state.progress[id] = true;
     lsSet("pl-progress", state.progress);
@@ -534,6 +535,8 @@ function say(text) {
 
 function confetti() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (window._confettiActive) return;
+  window._confettiActive = true;
   var c = document.getElementById("confetti-container");
   if (!c) return;
   c.innerHTML = "";
@@ -547,7 +550,7 @@ function confetti() {
     p.style.animationDuration = "2.5s";
     c.appendChild(p);
   }
-  setTimeout(function() { c.innerHTML = ""; }, 3500);
+  setTimeout(function() { c.innerHTML = ""; window._confettiActive = false; }, 3500);
 }
 
 function toggleParent() {

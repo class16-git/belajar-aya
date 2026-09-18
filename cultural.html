@@ -147,6 +147,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <div class="confetti-container" id="confetti-container"></div>
 
 <script>
+
 const SECTIONS=[
   {id:'geo',emoji:'🌏',title:'Geography',desc:'Continents, oceans, and maps',color:'#1565C0',
     missions:['Point to a continent on a globe or map!','Name 3 oceans!'],
@@ -202,16 +203,50 @@ function genStars(){
 function markDone(id){
   if(!state.progress[id]){
     state.progress[id]=true;
-    lsSet('culture-progress',state.progress);
-    const section=SECTIONS.find(s=>s.exps.some(e=>e.id===id));
-    if(section&&section.exps.every(e=>state.progress[e.id])){
+    lsSet("culture-progress",state.progress);
+    const section=SECTIONS.find(function(s){return s.exps.some(function(e){return e.id===id;});});
+    if(section&&section.exps.every(function(e){return state.progress[e.id];})){
       state.progress[section.id]=true;
-      lsSet('culture-progress',state.progress);
+      lsSet("culture-progress",state.progress);
     }
     confetti();
-    say('Great! You\'re done!');
   }
+  if(typeof showMission==="function"){setTimeout(function(){showMission(id);},800);}
 }
+
+function showMission(id){
+  if(!window.MISSIONS||!window.MISSIONS[id])return;
+  var m=window.MISSIONS[id];
+  var el=document.createElement("div");
+  el.style.cssText="position:fixed;inset:0;background:rgba(7,7,26,.92);z-index:500;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto";
+  el.innerHTML="<div style=\"background:linear-gradient(135deg,#1a3a2a 0%,#0d2818 100%);border:2px solid #4CAF50;border-radius:20px;padding:20px 16px;max-width:440px;width:100%;position:relative\">"+
+    "<div style=\"font-size:.65rem;color:#81C784;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;font-family:var(--font-h)\">Real World Mission</div>"+
+    "<div style=\"font-family:var(--font-h);font-size:1.05rem;color:#FFF8F0;margin-bottom:12px\">"+m.title+"</div>"+
+    "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Materials</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.materials.map(function(i){return "&bull; "+i;}).join("<br>")+"</div></div>"+
+    "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Steps</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.steps.map(function(s,i){return(i+1)+". "+s;}).join("<br>")+"</div></div>"+
+    "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Adult</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.adult+"</div></div>"+
+    "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Safety</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.safety+"</div></div>"+
+    "<div style=\"background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:12px;padding:12px 14px;margin-top:12px\"><div style=\"font-size:.88rem;color:#FFD700;font-style:italic;margin-bottom:8px\">&quot;"+m.question+"&quot;</div><div style=\"font-size:.72rem;color:rgba(255,248,240,.6)\">Ask after the activity.</div></div>"+
+    "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Done when</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.finish+"</div></div>"+
+    "<button onclick=\"this.closest('[style*=&quot;position:fixed&quot;]').remove()\" style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:14px;font-family:var(--font-b);font-weight:600;display:block;width:100%\">Done</button>"+
+    "</div>";
+  document.body.appendChild(el);
+}
+
+window.MISSIONS={
+  globe:{title:"Find Land and Water on a Globe or Map",materials:["A globe or world map","A small toy or marker"],steps:["Gently spin the globe and stop it with your eyes closed","Open your eyes — point to the nearest water","Point to the nearest land","Count: how many times can you spin and find both?"],adult:"Sit together with the globe. Ask: \"Can you find a continent that is mostly surrounded by water?\"",safety:"No hazards.",question:"Is more of the Earth covered by water or by land? How can you tell?",finish:"When the child can identify water and land on a globe and explain the difference."},
+  continents:{title:"Explore Your Continent",materials:["Paper and coloured pencils or crayons","A world map or atlas"],steps:["Find your continent on the map","Draw its outline from memory first","Then look at the map again and add details: coastlines, neighbouring continents","Label it with the name and one interesting fact"],adult:"Ask: \"What do you already know about this continent? What would you like to find out?\"",safety:"No hazards.",question:"Which continent is closest to yours? How could you travel there?",finish:"When the child has drawn the continent and named one true thing about it."},
+  ozean:{title:"Find Water in Your World",materials:["A glass of water","Paper and coloured pencils"],steps:["Look at the water in the glass — is it still or does it move?","Draw or describe what the water looks like","Find where else water is near you today"],adult:"Ask: \"Where does water go when it disappears from a puddle?\"",safety:"No hazards.",question:"How much of your body do you think is water?",finish:"When the child can describe where they see water in their daily life."},
+  timeline:{title:"Make Your Own Timeline",materials:["A long strip of paper","Coloured pencils or crayons"],steps:["Think about events in your life — your birthday, starting school, learning to ride a bike","Draw them in order from left to right","Add the years or your age"],adult:"Ask: \"What is the oldest memory you have?\"",safety:"No hazards.",question:"What event would you put at the very beginning of your timeline?",finish:"When the child has drawn a timeline with at least 4 events in order."},
+  ages:{title:"Put History in Order",materials:["Paper and pencil","Your home or neighbourhood"],steps:["Think about things from the past — old photos, old buildings, old trees","Put them in order from oldest to newest","Explain why you think one is older than another"],adult:"Ask: \"What is the oldest thing in our home or neighbourhood?\"",safety:"No hazards.",question:"How can you tell if something is older than something else?",finish:"When the child has ordered 3+ things by age and explained their reasoning."},
+  sink:{title:"Float or Sink Exploration",materials:["A large bowl or basin of water","10 small objects: leaf, stone, coin, cork, plastic lid, feather, wooden block, aluminium foil, rubber ball, paper","A towel"],steps:["Gather the objects","Before putting each one in, guess: will it float or sink?","Put it in the water gently and see","Record your prediction and result for each object"],adult:"Ask: \"Before you try it — what do you think will happen?\" Do not give the answer.",safety:"Water stays at the table. Dry hands before touching electrical items. No drinking the water.",question:"Do heavy things always sink? Do light things always float? What do you notice about the things that float?",finish:"When the child has tested at least 6 objects, predicted before each one, and can explain one pattern."},
+  magnet:{title:"Find What a Magnet Attracts",materials:["A magnet (bar or horseshoe shape)","Objects: spoon, coin, paper clip, rubber band, key, aluminium foil, wooden stick, glass pebble, plastic toy","Paper and pencil"],steps:["Gather the objects in one place","Test each one by holding the magnet near it — does it stick?","Sort objects into two groups: attracted and not attracted","Look for patterns in what gets attracted"],adult:"Let the child discover. Ask: \"Do magnets attract through paper? Through water?\" as extensions.",safety:"Keep magnets away from devices, credit cards, and pacemakers. Do not put magnets in the mouth.",question:"What do all the things that stick have in common?",finish:"When the child has tested at least 8 objects and can describe what a magnet attracts."},
+  hotcold:{title:"Explore Hot and Cold",materials:["Ice cube and a warm cup of water","Paper and pencil","A tray to catch drips"],steps:["Touch the ice cube and describe how it feels","Touch warm (not hot) water and describe it","Draw what you noticed"],adult:"Ask: \"What happens to the ice cube over time? Where does it go?\"",safety:"Warm water only — test with your elbow first. No hot water.",question:"What is the coldest thing you can find? What is the warmest?",finish:"When the child can describe the difference between hot and cold and explain what ice does."},
+  plantparts:{title:"Find Plant Parts",materials:["A plant or flower from outside","Paper and coloured pencils"],steps:["Look closely at the plant","Find the roots, stem, leaves, and flower","Draw each part you find"],adult:"Ask: \"What does each part do for the plant?\"",safety:"Wash hands after touching soil. No poisonous plants.",question:"Can you find a plant that has no flowers?",finish:"When the child has identified and drawn 3+ parts of a plant."},
+  animals:{title:"Find Animal Clues",materials:["Paper and coloured pencils","Your garden or a park"],steps:["Look for signs of animals — footprints, holes, feathers, webs","Draw or describe what you find","Guess: what animal made this?"],adult:"Ask: \"What clues tell us an animal was here even if we did not see it?\"",safety:"No hazards.",question:"What animal would you most like to find evidence of? Why?",finish:"When the child has found and described 3+ signs of animals."},
+  foodchain:{title:"Find a Food Chain",materials:["Paper and coloured pencils","Your garden or a park"],steps:["Find a plant and an animal nearby","Draw the plant, put an arrow to the animal that eats it","Think: what eats that animal?"],adult:"Ask: \"What would happen if there were no plants?\"",safety:"No hazards.",question:"Are you part of any food chains? Which ones?",finish:"When the child has traced a food chain with at least 3 links."}
+};
+
 function isDone(id){return !!state.progress[id]}
 
 function showScreen(name){
@@ -739,6 +774,7 @@ function init(){
 }
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeParent();goBack();}});
 window.addEventListener('load',init);
+
 </script>
 </body>
 </html>

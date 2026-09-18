@@ -226,7 +226,7 @@ body{
 <!-- LESSON: list of experiences -->
 <div class="screen" id="s-lesson">
   <div class="tbar">
-    <button class="tbar-back" id="lesson-back">&#8592;</button>
+    <button class="tbar-back" id="lesson-back" aria-label="Go back">&#8592;</button>
     <div class="tbar-title" id="lesson-title">Lesson</div>
     <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
   </div>
@@ -249,7 +249,7 @@ body{
         <button class="snav primary" id="story-next" onclick="nextStory()">Next &#8594;</button>
       </div>
       <div style="margin-top:10px">
-        <button class="snav" id="story-explore" onclick="goExplore()">Explore &#128269;</button>
+        <button class="snav" id="story-explore" onclick="goExplore()" aria-label="Explore experiences">Explore &#128269;</button>
       </div>
     </div>
   </div>
@@ -589,15 +589,16 @@ var SCENES = {
       container.innerHTML = '<div class="scene-q">Drag the events to put them in order — oldest first, most recent last.</div>' +
         '<div class="scene-viz" style="background:#0a0a1a;min-height:220px">' +
         '<div style="display:flex;flex-direction:column;gap:8px;align-items:center" id="tl-items">' +
-        '<div class="schoice" draggable="true" data-tl="dinos" ondragstart="tlDrag(event)" ondragover="tlOver(event)" ondrop="tlDrop(event)" style="width:220px">&#128006; Dinosaurs ruled Earth</div>' +
-        '<div class="schoice" draggable="true" data-tl="earth" ondragstart="tlDrag(event)" ondragover="tlOver(event)" ondrop="tlDrop(event)" style="width:220px">&#127757; Earth formed</div>' +
-        '<div class="schoice" draggable="true" data-tl="life" ondragstart="tlDrag(event)" ondragover="tlOver(event)" ondrop="tlDrop(event)" style="width:220px">&#129514; First life in the ocean</div>' +
-        '<div class="schoice" draggable="true" data-tl="humans" ondragstart="tlDrag(event)" ondragover="tlOver(event)" ondrop="tlDrop(event)" style="width:220px">&#128104; Humans appeared</div>' +
-        '<div class="schoice" draggable="true" data-tl="land" ondragstart="tlDrag(event)" ondragover="tlOver(event)" ondrop="tlDrop(event)" style="width:220px">&#128039; Animals moved to land</div></div>' +
+        '<div class="schoice tl-item" data-tl="dinos" style="width:220px">&#128006; Dinosaurs ruled Earth</div>' +
+        '<div class="schoice tl-item" data-tl="earth" style="width:220px">&#127757; Earth formed</div>' +
+        '<div class="schoice tl-item" data-tl="life" style="width:220px">&#129514; First life in the ocean</div>' +
+        '<div class="schoice tl-item" data-tl="humans" style="width:220px">&#128104; Humans appeared</div>' +
+        '<div class="schoice tl-item" data-tl="land" style="width:220px">&#128039; Animals moved to land</div></div>' +
         '<button class="snav" onclick="checkTimeline()" style="margin-top:10px">Check Order &#10004;</button>' +
         '<div id="tl-obs" style="display:none;margin-top:10px;max-width:280px">' +
         '<div class="obs-panel"><div class="obs-title">Life appeared very late in Earths story.</div><div class="obs-text">Earth is 4.5 billion years old. Humans have been here for only about 200,000 years. That is like 4.5km on a map — humans would be the last millimeter.</div></div>' +
         '<button class="snav primary" onclick="sceneDone(\'timeline\')" style="margin-top:10px">Earth is so old! &#128640;</button></div>';
+      initTimelineDrag();
     }
   },
 
@@ -927,6 +928,7 @@ function renderHome(){
     var done = STATE.progress["lesson-"+lesson.id] === true;
     var card = document.createElement("button");
     card.className = "lcard";
+    card.setAttribute("aria-label", lesson.name);
     card.onclick = function(){ openLesson(lesson); };
     card.innerHTML =
       '<div class="lcard-icon">'+lesson.emoji+'</div>'+
@@ -954,6 +956,7 @@ function renderLessonXPs(lesson){
   var storyBtn = document.createElement("button");
   storyBtn.className = "xp-card";
   storyBtn.style.borderLeft = "3px solid "+lesson.color;
+  storyBtn.setAttribute("aria-label", "Read " + lesson.name + " story");
   storyBtn.innerHTML = '<div class="xp-num" style="background:'+lesson.color+'22;color:'+lesson.color+';border:2px solid '+lesson.color+'">&#128214;</div><div><div class="xp-name">The Big Story</div><div style="font-size:.72rem;opacity:.5">Read the story first</div></div><div style="margin-left:auto;font-size:.8rem;opacity:.4">&#8594;</div>';
   storyBtn.onclick = function(){ openStory(lesson); };
   area.appendChild(storyBtn);
@@ -964,6 +967,7 @@ function renderLessonXPs(lesson){
     var btn = document.createElement("button");
     btn.className = "xp-card";
     btn.style.borderLeft = "3px solid "+exp.color;
+    btn.setAttribute("aria-label", exp.name);
     btn.innerHTML = '<div class="xp-num" style="background:'+exp.color+'22;color:'+exp.color+';border:2px solid '+exp.color+'">'+(done?"&#10003;":(i+1))+'</div><div><div class="xp-name '+(done?'xp-done':'')+'">'+exp.emoji+' '+exp.name+'</div></div><div style="margin-left:auto;font-size:.8rem;opacity:.4">&#8594;</div>';
     btn.onclick = function(){ openExperience(lesson, exp); };
     area.appendChild(btn);
@@ -980,6 +984,7 @@ function openStory(lesson){
 }
 
 function renderStoryPage(){
+  if(STATE === null) return;
   var lesson = STATE.currentLesson;
   var page = lesson.story[STATE.storyPage];
   document.getElementById("story-q").textContent = page.q;
@@ -995,6 +1000,7 @@ function renderStoryPage(){
 }
 
 function nextStory(){
+  if(STATE === null) return;
   if(STATE.storyPage < STATE.currentLesson.story.length-1){
     STATE.storyPage++;
     renderStoryPage();
@@ -1002,6 +1008,7 @@ function nextStory(){
 }
 
 function prevStory(){
+  if(STATE === null) return;
   if(STATE.storyPage > 0){
     STATE.storyPage--;
     renderStoryPage();
@@ -1009,6 +1016,7 @@ function prevStory(){
 }
 
 function completeLesson(){
+  if(STATE === null) return;
   if(!STATE.progress["lesson-"+STATE.currentLesson.id]){
     STATE.progress["lesson-"+STATE.currentLesson.id] = true;
     ls("fgl-progress", STATE.progress);
@@ -1185,6 +1193,61 @@ function aliveCheck(btn, isAlive){
 
 // Timeline
 window.tlOrder = [];
+window.tlDragging = null;
+
+function initTimelineDrag() {
+  window.tlOrder = [];
+  window.tlDragging = null;
+  var items = document.querySelectorAll(".tl-item");
+  items.forEach(function(item) {
+    item.addEventListener("pointerdown", tlPointerDown);
+  });
+}
+
+function tlPointerDown(e) {
+  var item = e.currentTarget;
+  item.setPointerCapture(e.pointerId);
+  window.tlDragging = item;
+  item.style.opacity = "0.6";
+  item.style.cursor = "grabbing";
+
+  var container = item.parentElement;
+  var items = Array.prototype.slice.call(container.querySelectorAll(".tl-item"));
+
+  function onMove(ev) {
+    if (!window.tlDragging) return;
+    var rect = container.getBoundingClientRect();
+    var y = ev.clientY - rect.top;
+    var itemHeight = item.offsetHeight + 8; // gap
+    var newIndex = Math.max(0, Math.min(Math.floor(y / itemHeight), items.length - 1));
+    var currentIndex = items.indexOf(window.tlDragging);
+    if (newIndex !== currentIndex) {
+      var targetItem = items[newIndex];
+      var nextItem = items[newIndex + 1];
+      if (currentIndex < newIndex) {
+        container.insertBefore(window.tlDragging, nextItem || null);
+      } else {
+        container.insertBefore(window.tlDragging, targetItem);
+      }
+      items.splice(currentIndex, 1);
+      items.splice(newIndex, 0, window.tlDragging);
+    }
+  }
+
+  function onUp() {
+    if (window.tlDragging) {
+      window.tlDragging.style.opacity = "";
+      window.tlDragging.style.cursor = "";
+      window.tlDragging = null;
+    }
+    document.removeEventListener("pointermove", onMove);
+    document.removeEventListener("pointerup", onUp);
+  }
+
+  document.addEventListener("pointermove", onMove);
+  document.addEventListener("pointerup", onUp);
+}
+
 function tlDrag(e){ e.dataTransfer.setData("text", e.currentTarget.dataset.tl); }
 function tlOver(e){ e.preventDefault(); }
 function tlDrop(e){
@@ -1196,7 +1259,7 @@ function tlDrop(e){
   }
 }
 function checkTimeline(){
-  var items = document.querySelectorAll("#tl-items .schoice");
+  var items = document.querySelectorAll("#tl-items .tl-item");
   var correct = ["earth","life","land","dinos","humans"];
   var current = Array.prototype.map.call(items, function(it){ return it.dataset.tl; });
   var allRight = current.every(function(v,i){ return v === correct[i]; });
@@ -1532,6 +1595,9 @@ function rabbitySpeak(){
 }
 
 function confetti(){
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (window._confettiActive) return;
+  window._confettiActive = true;
   var c = document.getElementById("confetti");
   if(!c) return;
   c.innerHTML = "";
@@ -1545,7 +1611,7 @@ function confetti(){
     p.style.animationDuration = "2.5s";
     c.appendChild(p);
   }
-  setTimeout(function(){ c.innerHTML = ""; }, 3500);
+  setTimeout(function(){ c.innerHTML = ""; window._confettiActive = false; }, 3500);
 }
 
 // ─────────────────────────────────────────────

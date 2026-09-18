@@ -386,7 +386,7 @@ function renderBuild(area, s){
     '<div class="build-pool" id="build-pool"></div>'+
     '<div class="group-row" id="group-row"></div>'+
     '<div id="build-success"></div>'+
-    '<button class="btn btn-ghost" onclick="startStage(STATE.stage)">Try Again</button>';
+    '<button class="btn btn-ghost" aria-label="Try Again" onclick="startStage(STATE.stage)">Try Again</button>';
 
   var pool = document.getElementById("build-pool");
   var row = document.getElementById("group-row");
@@ -669,7 +669,7 @@ function renderNext(area, s){
     '</div>'+
     '<div class="choices" id="next-choices"></div>'+
     '<div id="next-success"></div>'+
-    '<button class="btn btn-hint" onclick="showNextHint()">Show Hint</button>';
+    '<button class="btn btn-hint" aria-label="Show Hint" onclick="showNextHint()">Show Hint</button>';
 
   STATE.nextQ = { jump: jump, seq: seq, next: next, answered: false };
   var choicesEl = document.getElementById("next-choices");
@@ -742,7 +742,7 @@ function renderMissing(area, s){
     '</div>'+
     '<div class="choices" id="missing-choices"></div>'+
     '<div id="missing-success"></div>'+
-    '<button class="btn btn-hint" onclick="showMissingHint()">Show Hint</button>';
+    '<button class="btn btn-hint" aria-label="Show Hint" onclick="showMissingHint()">Show Hint</button>';
 
   STATE.missingQ = { jump: jump, missing: missing, answered: false };
   var choicesEl = document.getElementById("missing-choices");
