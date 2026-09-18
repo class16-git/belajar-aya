@@ -395,7 +395,7 @@ function rabbitySpeak(){
 
 function say(text){
   var b = document.getElementById("bubble");
-  if(b){ b.textContent = "&#128049; " + text; b.classList.add("on"); }
+  if(b){ b.innerHTML = "🐱 " + text; b.classList.add("on"); }
   if("speechSynthesis" in window){
     speechSynthesis.cancel();
     var u = new SpeechSynthesisUtterance(text);

@@ -216,7 +216,7 @@ body{
     <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
   </div>
   <div class="hero">
-    <div class="hero-emoji">&#128049;</div>
+    <div class="hero-emoji">🐱</div>
     <div class="hero-title">Skip Counting</div>
     <div class="hero-sub">Jump through numbers with Piko!</div>
   </div>
@@ -237,7 +237,7 @@ body{
 <!-- FABs -->
 <a href="index.html" class="fab fab-home">&#127968;</a>
 <button class="fab fab-parent" onclick="togglePanel()">&#128100;</button>
-<button class="fab fab-piko" onclick="pikoSpeak()">&#128049;</button>
+<button class="fab fab-piko" onclick="pikoSpeak()">🐱</button>
 <div class="bubble" id="bubble"></div>
 
 <!-- Parent Panel -->
@@ -262,7 +262,7 @@ var STAGES = [
     type: "build"
   },
   {
-    id: 2, emoji: "&#128049;", color: "#FFD700",
+    id: 2, emoji: "🐱", color: "#FFD700",
     name: "Jump Along the Line",
     desc: "Watch Piko jump on the number line",
     type: "jump"
@@ -293,7 +293,7 @@ var STAGES = [
   }
 ];
 
-var OBJECTS = ["&#11088;", "&#127813;", "&#127822;", "&#129507;", "&#128014;", "&#127800;"];
+var OBJECTS = ["🎌", "🍕", "🍎", "🧽", "🐦", "🌸"];
 
 var STATE = null;
 
@@ -394,7 +394,7 @@ function renderBuild(area, s){
   items.forEach(function(item, i){
     var el = document.createElement("div");
     el.className = "build-item";
-    el.textContent = item;
+    el.innerHTML = item;
     el.dataset.idx = i;
     el.style.animationDelay = (i*0.04)+"s";
     el.addEventListener("pointerdown", function(ev){
@@ -430,7 +430,7 @@ function renderBuild(area, s){
         STATE.build.groups[gid]++;
         document.getElementById("gc-"+gid).textContent = STATE.build.groups[gid]+"/"+jump;
         var chip = document.createElement("span");
-        chip.textContent = dragEl.textContent;
+        chip.innerHTML = dragEl.innerHTML;
         chip.style.cssText = "font-size:1.4rem;display:inline-block;animation:popIn .2s ease";
         box.insertBefore(chip, box.firstChild);
         dragEl.style.opacity = "0.25";
@@ -479,7 +479,7 @@ function checkBuildDone(){
   if(full === STATE.build.groups.length){
     STATE.build.done = true;
     document.getElementById("build-success").innerHTML =
-      '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">All groups are full!</div><div class="success-sub">You made '+STATE.build.groups.length+' equal groups of '+STATE.build.jump+'</div></div>';
+      '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">All groups are full!</div><div class="success-sub">You made '+STATE.build.groups.length+' equal groups of '+STATE.build.jump+'</div></div>';
     ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-1":true}));
     confetti();
     say("You made equal groups! That is the start of skip counting!");
@@ -556,7 +556,7 @@ function jumpTap(n){
       STATE.jump.done = true;
       setTimeout(function(){
         document.getElementById("jump-success").innerHTML =
-          '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Piko reached '+n+'!</div><div class="success-sub">The pattern: +'+j+' every time!</div></div>';
+          '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">Piko reached '+n+'!</div><div class="success-sub">The pattern: +'+j+' every time!</div></div>';
         ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-2":true}));
         confetti();
         say("Piko's rule is always +"+j+". You found the pattern!");
@@ -623,7 +623,7 @@ function renderPattern(area, s){
         if(STATE.pattern.found.length >= max/jump){
           STATE.pattern.done = true;
           document.getElementById("pattern-success").innerHTML =
-            '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">You found all the pattern numbers!</div><div class="success-sub">Every '+jump+'th number: '+Array.from({length:max/jump+1},function(_,i){return i*jump;}).join(", ")+'</div></div>';
+            '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">You found all the pattern numbers!</div><div class="success-sub">Every '+jump+'th number: '+Array.from({length:max/jump+1},function(_,i){return i*jump;}).join(", ")+'</div></div>';
           ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-3":true}));
           confetti();
           say("You found the "+jump+"s pattern! Every "+jump+"th number!");
@@ -685,7 +685,7 @@ function renderNext(area, s){
         STATE.nextQ.answered = true;
         say("Yes! "+next+" comes next!");
         document.getElementById("next-success").innerHTML =
-          '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+seq.join(" \u2192 ")+" \u2192 "+next+'!</div><div class="success-sub">The jump is always +'+jump+'</div></div>';
+          '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">'+seq.join(" \u2192 ")+" \u2192 "+next+'!</div><div class="success-sub">The jump is always +'+jump+'</div></div>';
         ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-4":true}));
         confetti();
       } else {
@@ -758,7 +758,7 @@ function renderMissing(area, s){
         STATE.missingQ.answered = true;
         say("Yes! "+missing+" was missing!");
         document.getElementById("missing-success").innerHTML =
-          '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">You found the missing number!</div><div class="success-sub">The sequence was '+seq.map(function(n){return n===null?"?":n;}).join(" \u2192 ")+'</div></div>';
+          '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">You found the missing number!</div><div class="success-sub">The sequence was '+seq.map(function(n){return n===null?"?":n;}).join(" \u2192 ")+'</div></div>';
         ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-5":true}));
         confetti();
       } else {
@@ -821,7 +821,7 @@ function renderDetective(area, s){
         STATE.detQ.answered = true;
         say("Correct! Piko jumps by +"+jump+" every time!");
         document.getElementById("det-success").innerHTML =
-          '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">You are a Rule Detective!</div><div class="success-sub">The rule was +'+jump+". Every jump is the same size!"+'</div></div>';
+          '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">You are a Rule Detective!</div><div class="success-sub">The rule was +'+jump+". Every jump is the same size!"+'</div></div>';
         ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-6":true}));
         confetti();
       } else {

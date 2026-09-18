@@ -243,7 +243,7 @@ body{
     <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
   </div>
   <div class="hero">
-    <div class="hero-emoji">&#127792;</div>
+    <div class="hero-emoji">🌰</div>
     <div class="hero-title">Math Garden</div>
     <div class="hero-sub">Montessori math — from things to symbols</div>
   </div>
@@ -264,7 +264,7 @@ body{
 <!-- FABs -->
 <a href="index.html" class="fab fab-home">&#127968;</a>
 <button class="fab fab-parent" onclick="togglePanel()">&#128100;</button>
-<button class="fab fab-piko" onclick="pikoSpeak()">&#128049;</button>
+<button class="fab fab-piko" onclick="pikoSpeak()">🐱</button>
 <div class="bubble" id="bubble"></div>
 
 <!-- Parent Panel -->
@@ -283,19 +283,19 @@ body{
 // Quantity → Symbol → Decimal → Operations → Patterns
 // ─────────────────────────────────────────────
 var ACTIVITIES = [
-  { id:"numbers", emoji:"&#48;", color:"#42A5F5", name:"Numbers 0 to 10", desc:"Match quantity to symbol" },
-  { id:"rods",    emoji:"&#129529;", color:"#EF5350", name:"Number Rods",     desc:"See quantity as length" },
+  { id:"numbers", emoji:"0", color:"#42A5F5", name:"Numbers 0 to 10", desc:"Match quantity to symbol" },
+  { id:"rods",    emoji:"🧹", color:"#EF5350", name:"Number Rods",     desc:"See quantity as length" },
   { id:"spindle", emoji:"&#10022;",  color:"#FFD700", name:"Spindle Box",     desc:"One quantity, one numeral" },
-  { id:"counters",emoji:"&#127813;", color:"#66BB6A", name:"Odd and Even",    desc:"Find the pattern" },
-  { id:"teen",    emoji:"&#49;&#48;", color:"#AB47BC", name:"Teen Numbers",   desc:"Ten and some more" },
-  { id:"tens",    emoji:"&#49;&#48;&#48;", color:"#FF7043", name:"Tens",       desc:"Groups of ten" },
-  { id:"decimal", emoji:"&#128200;", color:"#26C6DA", name:"Decimal System",  desc:"Unit, Ten, Hundred, Thousand" },
-  { id:"add",     emoji:"&#43;",     color:"#4CAF50", name:"Addition",         desc:"Combine quantities" },
-  { id:"sub",     emoji:"&#8722;",   color:"#F48FB1", name:"Subtraction",     desc:"Take away" },
-  { id:"mul",     emoji:"&#215;",    color:"#FF9800", name:"Multiplication",  desc:"Equal groups" },
-  { id:"skip",    emoji:"&#128279;", color:"#78909C", name:"Skip Counting",   desc:"Jump patterns" },
-  { id:"frac",    emoji:"&#189;",    color:"#CE93D8", name:"Fractions",      desc:"Half, third, quarter" },
-  { id:"geo",     emoji:"&#11041;",  color:"#80CBC4", name:"Geometry",        desc:"Shapes and sides" },
+  { id:"counters",emoji:"🍕", color:"#66BB6A", name:"Odd and Even",    desc:"Find the pattern" },
+  { id:"teen",    emoji:"10", color:"#AB47BC", name:"Teen Numbers",   desc:"Ten and some more" },
+  { id:"tens",    emoji:"100", color:"#FF7043", name:"Tens",       desc:"Groups of ten" },
+  { id:"decimal", emoji:"🏈", color:"#26C6DA", name:"Decimal System",  desc:"Unit, Ten, Hundred, Thousand" },
+  { id:"add",     emoji:"+",     color:"#4CAF50", name:"Addition",         desc:"Combine quantities" },
+  { id:"sub",     emoji:"−",   color:"#F48FB1", name:"Subtraction",     desc:"Take away" },
+  { id:"mul",     emoji:"×",    color:"#FF9800", name:"Multiplication",  desc:"Equal groups" },
+  { id:"skip",    emoji:"🔹", color:"#78909C", name:"Skip Counting",   desc:"Jump patterns" },
+  { id:"frac",    emoji:"½",    color:"#CE93D8", name:"Fractions",      desc:"Half, third, quarter" },
+  { id:"geo",     emoji:"⛉",  color:"#80CBC4", name:"Geometry",        desc:"Shapes and sides" },
 ];
 
 var STATE = null;
@@ -386,7 +386,7 @@ function markDone(id){
 function renderNumbers(area){
   var target = 1 + Math.floor(Math.random()*10);
   var dots = "";
-  for(var i=0;i<target;i++) dots += "&#127813;";
+  for(var i=0;i<target;i++) dots += "🍕";
   area.innerHTML =
     '<div class="instr">How many dots?</div>'+
     '<div style="font-size:2.5rem;text-align:center;padding:16px;letter-spacing:4px;animation:popIn .3s ease">'+dots+'</div>'+
@@ -404,7 +404,7 @@ function renderNumbers(area){
       if(n === target){
         btn.classList.add("active");
         say("Yes! "+target+"!");
-        document.getElementById("num-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+target+' dots!</div><div class="success-sub">Quantity matches symbol</div></div>';
+        document.getElementById("num-success").innerHTML = '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">'+target+' dots!</div><div class="success-sub">Quantity matches symbol</div></div>';
         markDone("numbers");
         confetti();
       } else {
@@ -497,7 +497,7 @@ function startDragRod(ev, rod, n){
       say("Rod "+n+" fits!");
       STATE.rods.placed[n] = true;
       if(Object.keys(STATE.rods.placed).length === 10){
-        document.getElementById("rod-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">All rods in place!</div><div class="success-sub">Quantity matches length!</div></div>';
+        document.getElementById("rod-success").innerHTML = '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">All rods in place!</div><div class="success-sub">Quantity matches length!</div></div>';
         markDone("rods");
         confetti();
       }
@@ -590,7 +590,7 @@ function checkSpindleDone(){
   for(var i=1;i<=9;i++){ if((STATE.spindle.counts[i]||0) !== i){ all = false; break; } }
   if(all){
     STATE.spindle.done = true;
-    document.getElementById("spindle-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Perfect! Every slot has the right number!</div><div class="success-sub">One quantity — one symbol. That is the spindle box!</div></div>';
+    document.getElementById("spindle-success").innerHTML = '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">Perfect! Every slot has the right number!</div><div class="success-sub">One quantity — one symbol. That is the spindle box!</div></div>';
     markDone("spindle");
     confetti();
   }
@@ -619,7 +619,7 @@ function renderCounters(area){
   for(var i=0;i<n;i++){
     var d = document.createElement("div");
     d.className = "cdot";
-    d.textContent = "&#127813;";
+    d.innerHTML = "🍕";
     d.id = "cd-"+i;
     d.style.opacity = "0";
     grid.appendChild(d);
@@ -652,7 +652,7 @@ function showCountersArrange(n){
         btn.classList.add("right");
         var label = o === "Odd" ? "One left over — odd!" : "Perfect pairs — even!";
         say(label);
-        document.getElementById("counter-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+label+'</div><div class="success-sub">Odd: one extra. Even: perfect pairs.</div></div>';
+        document.getElementById("counter-success").innerHTML = '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">'+label+'</div><div class="success-sub">Odd: one extra. Even: perfect pairs.</div></div>';
         markDone("counters");
         confetti();
       } else {
@@ -708,7 +708,7 @@ function renderTeen(area){
         btn.classList.add("active");
         STATE.teen.answered = true;
         say("Yes! "+teen+" is ten and "+units+" more!");
-        document.getElementById("teen-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">"+teen+" = 10 + "+units+"!</div><div class="success-sub">Teen numbers are ten and some more!</div></div>';
+        document.getElementById("teen-success").innerHTML = '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">"+teen+" = 10 + "+units+"!</div><div class="success-sub">Teen numbers are ten and some more!</div></div>';
         markDone("teen");
         confetti();
       } else {
@@ -761,7 +761,7 @@ function renderTens(area){
         btn.classList.add("active");
         STATE.tens.answered = true;
         say("Yes! "+total+"!");
-        document.getElementById("tens-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">"+units+" tens = "+total+"!</div><div class="success-sub">Every ten-bar is worth 10!</div></div>';
+        document.getElementById("tens-success").innerHTML = '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">"+units+" tens = "+total+"!</div><div class="success-sub">Every ten-bar is worth 10!</div></div>';
         markDone("tens");
         confetti();
       } else {
@@ -817,7 +817,7 @@ function renderDecimal(area){
           els[target.value].style.borderColor = "var(--green)";
           els[target.value].style.boxShadow = "0 0 0 3px rgba(76,175,80,.3)";
         }
-        document.getElementById("decimal-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+target.label+' place!</div><div class="success-sub">1 — Unit, 10 — Ten, 100 — Hundred, 1000 — Thousand</div></div>';
+        document.getElementById("decimal-success").innerHTML = '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">'+target.label+' place!</div><div class="success-sub">1 — Unit, 10 — Ten, 100 — Hundred, 1000 — Thousand</div></div>';
         markDone("decimal");
         confetti();
       } else {
@@ -884,7 +884,7 @@ function renderAddSub(area, type){
         STATE.ops.answered = true;
         var msg = type === "add" ? "Combined!" : "Taken away!";
         say(msg+" "+answer+"!");
-        document.getElementById("ops-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+answer+' apples!</div><div class="success-sub">'+(type==="add"?"Combined quantities.":"Removed from the whole.")+'</div></div>';
+        document.getElementById("ops-success").innerHTML = '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">'+answer+' apples!</div><div class="success-sub">'+(type==="add"?"Combined quantities.":"Removed from the whole.")+'</div></div>';
         markDone(type);
         confetti();
       } else {
@@ -905,7 +905,7 @@ function renderMul(area){
   var groups = 2 + Math.floor(Math.random()*3); // 2-4 groups
   var size = 2 + Math.floor(Math.random()*4); // 2-5 each
   var total = groups * size;
-  var objects = ["&#11088;","&#127813;","&#127800;","&#128014;"][Math.floor(Math.random()*4)];
+  var objects = ["🎌","🍕","🌸","🐦"][Math.floor(Math.random()*4)];
 
   area.innerHTML =
     '<div class="instr instr-big">'+groups+' equal groups of '+size+'!</div>'+
@@ -945,7 +945,7 @@ function renderMul(area){
         btn.classList.add("active");
         STATE.mul.answered = true;
         say("Yes! Equal groups make "+total+"!");
-        document.getElementById("mul-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+groups+' groups of '+size+' = '+total+'!</div><div class="success-sub">Equal groups — that is multiplication!</div></div>';
+        document.getElementById("mul-success").innerHTML = '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">'+groups+' groups of '+size+' = '+total+'!</div><div class="success-sub">Equal groups — that is multiplication!</div></div>';
         markDone("mul");
         confetti();
       } else {
@@ -967,7 +967,7 @@ function renderSkip(area){
   area.innerHTML =
     '<div class="instr instr-big">Piko loves skip counting!</div>'+
     '<div style="text-align:center;padding:20px">'+
-      '<div style="font-size:4rem;margin-bottom:8px">&#128279;</div>'+
+      '<div style="font-size:4rem;margin-bottom:8px">🔹</div>'+
       '<div style="font-family:var(--font-h);font-size:1.1rem;color:var(--gold)">Jump by equal amounts</div>'+
       '<div style="font-size:.82rem;opacity:.5;margin-top:4px">Discover the pattern in equal jumps</div>'+
     '</div>'+
@@ -1020,7 +1020,7 @@ function renderFrac(area){
         btn.classList.add("right");
         STATE.frac.answered = true;
         say("Yes! One "+n.toLowerCase()+"!");
-        document.getElementById("frac-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">One '+f.name.toLowerCase()+'!</div><div class="success-sub">'+f.desc+'. '+n+' of the whole.</div></div>';
+        document.getElementById("frac-success").innerHTML = '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">One '+f.name.toLowerCase()+'!</div><div class="success-sub">'+f.desc+'. '+n+' of the whole.</div></div>';
         markDone("frac");
         confetti();
       } else {
@@ -1072,7 +1072,7 @@ function renderGeo(area){
         STATE.geo.answered = true;
         var sidesMsg = target.sides > 0 ? target.sides+" sides!" : "No sides — round!";
         say("Yes! "+target.name+"! "+sidesMsg);
-        document.getElementById("geo-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+target.name+'!</div><div class="success-sub">'+(target.sides>0?"Has "+target.sides+" sides.":"A circle has no straight sides.")+'</div></div>';
+        document.getElementById("geo-success").innerHTML = '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">'+target.name+'!</div><div class="success-sub">'+(target.sides>0?"Has "+target.sides+" sides.":"A circle has no straight sides.")+'</div></div>';
         markDone("geo");
         confetti();
       } else {
