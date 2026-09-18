@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Five Great Lessons — Belajar Aya</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -160,6 +160,10 @@ body{
 .prow-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
 .pbar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
 .pbar-fill{height:100%;border-radius:4px;transition:width .5s}
+
+/* Release accessibility baseline */
+:focus-visible{outline:3px solid #FFD700!important;outline-offset:3px!important}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>

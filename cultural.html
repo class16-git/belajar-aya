@@ -2,8 +2,8 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Culture & Science — Learn Aya</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Culture & Science — Belajar Aya</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--cream:#FFF8F0;--shadow:0 4px 24px rgba(0,0,0,.35);--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
@@ -86,6 +86,10 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 .animal-card .label{font-size:.65rem;opacity:.6}
 .animal-card.selected{background:rgba(255,215,0,.15);border:2px solid var(--gold)}
 .animal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:8px 0}
+
+/* Release accessibility baseline */
+:focus-visible{outline:3px solid #FFD700!important;outline-offset:3px!important}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
@@ -101,7 +105,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
   <div class="hero">
     <div style="font-size:3rem;margin-bottom:6px;">🌏</div>
     <div class="hero-title">Life on Earth</div>
-    <div class="hero-sub">Explore the world dan isinya</div>
+    <div class="hero-sub">Explore the world and its contents</div>
   </div>
   <div class="section-grid" id="section-grid"></div>
 </div>
@@ -145,7 +149,7 @@ body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-
 <script>
 const SECTIONS=[
   {id:'geo',emoji:'🌏',title:'Geography',desc:'Continents, oceans, and maps',color:'#1565C0',
-    missions:['Point to a continent on a globe or map!','Namei 3 lautan!'],
+    missions:['Point to a continent on a globe or map!','Name 3 oceans!'],
     exps:[
       {id:'globe',name:'Globe Toss',tagline:'Earth is round and has continents',type:'globe'},
       {id:'continents',name:'Continents and Oceans',tagline:'Seven continents, five oceans',type:'continents'},
@@ -154,20 +158,20 @@ const SECTIONS=[
   {id:'hist',emoji:'🕰️',title:'History',desc:'From long ago to now',color:'#4A148C',
     missions:['Ask grandparents: what was different when they were little?','Share 1 thing from long ago!'],
     exps:[
-      {id:'timeline',name:'Garis Waktu',tagline:'From long ago to now',type:'timeline'},
+      {id:'timeline',name:'Time and Age',tagline:'From long ago to now',type:'timeline'},
       {id:'ages',name:'How Old Are You?',tagline:'Time is very long',type:'ages'},
     ]},
-  {id:'sci',emoji:'🔬',title:'Science',desc:'Objects & propertiesnya',color:'#1B5E20',
-    missions:['Coba di kamar mandi: benda apa mengapung, apa tenggelam?','Stick a magnet to different objects!'],
+  {id:'sci',emoji:'🔬',title:'Science',desc:'Objects and their properties',color:'#1B5E20',
+    missions:['Try in the bathroom: what objects sink, what floats?','Stick a magnet to different objects!'],
     exps:[
-      {id:'sink',name:'Sink or Float?',tagline:'Kenapa sesuatu mengapung?',type:'sink'},
-      {id:'magnet',name:'Magnet atau Bukan?',tagline:'Magnet hanya menarik logam tertentu',type:'magnet'},
+      {id:'sink',name:'Sink or Float?',tagline:'Why does something float?',type:'sink'},
+      {id:'magnet',name:'Magnet or Not?',tagline:'Magnet hanya menarik logam tertentu',type:'magnet'},
       {id:'hotcold',name:'Hot or Cold?',tagline:'Temperature and changing states',type:'hotcold'},
     ]},
   {id:'nat',emoji:'🌱',title:'Nature',desc:'Plants & animals',color:'#E65100',
-    missions:['Find 3 different animals outside!','Namei bagian tumbuhan!'],
+    missions:['Find 3 different animals outside!','Name the parts of a plant!'],
     exps:[
-      {id:'plantparts',name:'Bagian Tumbuhan',tagline:'Setiap bagian punya tugas',type:'plantparts'},
+      {id:'plantparts',name:'Plant Parts',tagline:'Every part has a job',type:'plantparts'},
       {id:'animals',name:'Animal Classification',tagline:'Has a backbone or not',type:'animals'},
       {id:'foodchain',name:'Food Chain',tagline:'Energy flows from the Sun',type:'foodchain'},
     ]},
@@ -409,7 +413,7 @@ function renderHistTimeline(area){
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Garis Waktu Panjang</div>
+      <div class="demo-label">Time and Age Panjang</div>
       ${eras.map((e,i)=>`
         <button onclick="showEra(${i})" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:10px 14px;color:var(--cream);cursor:pointer;display:flex;gap:10px;align-items:center;text-align:left;font-family:var(--font-b);font-size:.85rem;width:100%;margin-bottom:6px;">
           <span style="font-size:1.5rem;">${e.emoji}</span>
@@ -462,7 +466,7 @@ function renderSink(area){
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label" id="sink-q">Prediksi: Sink or Float?</div>
+      <div class="demo-label" id="sink-q">Predict: Sink or Float?</div>
       <div class="animal-grid">
         ${items.map((item,i)=>`
           <button class="animal-card" id="sink-${i}" onclick="testSink(${i})">
@@ -488,10 +492,10 @@ function testSink(i){
   const result=document.getElementById('sink-result');
   if(result){
     if(item.sink){
-      result.innerHTML=`<span style="color:#EF5350">${item.emoji} ${item.name} — TENGGELAM! ⬇️</span>`;
+      result.innerHTML=`<span style="color:#EF5350">${item.emoji} ${item.name} — SINKS! ⬇️</span>`;
       say(item.name+' tenggelam karena heavier dari air.');
     } else {
-      result.innerHTML=`<span style="color:var(--green)">${item.emoji} ${item.name} — MENGAPUNG! ⬆️</span>`;
+      result.innerHTML=`<span style="color:var(--green)">${item.emoji} ${item.name} — FLOATS! ⬆️</span>`;
       say(item.name+' mengapung!');
     }
   }
@@ -520,7 +524,7 @@ function renderMagnet(area){
       </div>
     </div>
     <div class="exp-instruction">🧲 Magnet menarik benda dari besi dan nikel. Logam lain seperti aluminium, emas, perak tidak tertarik magnet!</div>
-    <button class="btn btn-primary" onclick="markDone('magnet');say('Magnets only attract certain metals!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('magnet');say('Magnets only attract iron and nickel! Other metals like aluminium, gold, and silver are not magnetic!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._magnetItems=items;
 }
@@ -529,7 +533,7 @@ function testMagnet(i){
   const msg=document.getElementById('magnet-msg');
   if(msg){
     if(item.magnetic){
-      msg.innerHTML=`${item.emoji} ${item.name}: <span style="color:var(--green)">TERTARIK MAGNET! 🧲✨</span>`;
+      msg.innerHTML=`${item.emoji} ${item.name}: <span style="color:var(--green)">ATTRACTED BY MAGNET! 🧲✨</span>`;
       say(item.name+' tertarik magnet!');
     } else {
       msg.innerHTML=`${item.emoji} ${item.name}: <span style="color:#EF5350">TIDAK tertarik 💨</span>`;

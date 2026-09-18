@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Belajar Aya — Learning Home</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -117,6 +117,7 @@ body{
 .name-box{background:var(--card);border-radius:24px;padding:28px 24px;width:100%;max-width:340px;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,.5)}
 .name-title{font-family:var(--font-h);font-size:1.4rem;color:var(--gold);margin-bottom:8px}
 .name-sub{font-size:.82rem;opacity:.6;margin-bottom:20px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .name-input{width:100%;padding:14px 16px;border-radius:14px;border:2px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:var(--cream);font-family:var(--font-b);font-size:1rem;text-align:center;margin-bottom:16px;outline:none}
 .name-input:focus{border-color:var(--gold)}
 .name-btn{padding:14px 32px;border-radius:14px;border:none;background:var(--gold);color:var(--bg);font-family:var(--font-h);font-size:1rem;cursor:pointer;width:100%}
@@ -145,6 +146,10 @@ body{
 .confetti{position:fixed;inset:0;pointer-events:none;z-index:9999}
 .conf{position:absolute;width:9px;height:9px;border-radius:2px;animation:cf 2.5s ease-out forwards}
 @keyframes cf{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+
+/* Release accessibility baseline */
+:focus-visible{outline:3px solid #FFD700!important;outline-offset:3px!important}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
@@ -155,14 +160,14 @@ body{
 <div class="screen on" id="s-home">
   <div class="tbar">
     <div></div>
-    <div class="tbar-title">Belajar Aya</div>
-    <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
+    <h1 class="tbar-title">Belajar Aya</h1>
+    <button class="tbar-btn" type="button" aria-label="Buka progres belajar" aria-expanded="false" onclick="togglePanel(this)">&#128100;</button>
   </div>
   <div class="offline-banner" id="offline-banner">&#128269; Offline — learning continues!</div>
 
   <div class="hero">
     <div class="hero-emoji">&#128049;</div>
-    <div class="hero-title">Belajar Aya</div>
+    <div class="hero-title" aria-hidden="true">Belajar Aya</div>
     <div class="hero-sub" id="hero-sub">Your Montessori learning journey</div>
     <div class="hero-name" id="hero-name"></div>
   </div>
@@ -171,13 +176,13 @@ body{
 
     <!-- Primary Curriculum -->
     <div class="section">
-      <div class="section-label">Primary Curriculum</div>
+      <h2 class="section-label">Primary Curriculum</h2>
       <div class="curriculum-grid" id="primary-grid"></div>
     </div>
 
     <!-- Cosmic Education Bridge -->
     <div class="section">
-      <div class="section-label">Cosmic Education</div>
+      <h2 class="section-label">Cosmic Education</h2>
       <div class="section-title">The Story of Everything</div>
       <button class="cosmic-card" onclick="openApp('five-great-lessons.html')">
         <div class="cosmic-emoji">&#127756;</div>
@@ -200,24 +205,25 @@ body{
   <div class="name-box">
     <div class="name-title">What is your name?</div>
     <div class="name-sub">Let's start your learning journey!</div>
-    <input class="name-input" id="name-input" type="text" placeholder="Your name..." maxlength="30" autocomplete="off" autocorrect="off">
-    <button class="name-btn" onclick="saveName()">Let's go!</button>
+    <label for="name-input" class="sr-only">Nama pelajar</label>
+    <input class="name-input" id="name-input" aria-label="Nama pelajar" type="text" placeholder="Your name..." maxlength="30" autocomplete="off" autocorrect="off">
+    <button class="name-btn" type="button" onclick="saveName()">Let's go!</button>
   </div>
 </div>
 
 <!-- FABs -->
-<button class="fab fab-home" onclick="window.location='index.html'">&#127968;</button>
-<button class="fab fab-parent" onclick="togglePanel()">&#128100;</button>
-<button class="fab fab-rabbity" onclick="rabbitySpeak()">&#128049;</button>
-<div class="bubble" id="bubble"></div>
+<button class="fab fab-home" type="button" aria-label="Kembali ke beranda" onclick="window.location='index.html'">&#127968;</button>
+<button class="fab fab-parent" type="button" aria-label="Buka progres belajar" aria-expanded="false" onclick="togglePanel(this)">&#128100;</button>
+<button class="fab fab-rabbity" type="button" aria-label="Dengarkan bantuan Aya" onclick="rabbitySpeak()">&#128049;</button>
+<div class="bubble" id="bubble" role="status" aria-live="polite"></div>
 
 <!-- Parent Panel -->
-<div class="ppanel" id="ppanel">
+<section class="ppanel" id="ppanel" aria-label="Progres belajar" aria-hidden="true">
   <div class="phan-handle"></div>
-  <button onclick="togglePanel()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">&#10005;</button>
+  <button type="button" aria-label="Tutup progres belajar" onclick="togglePanel(this)" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">&#10005;</button>
   <div class="phan-title">&#128202; Learning Journey</div>
   <div id="pcontent"></div>
-</div>
+</section>
 
 <div class="confetti" id="confetti"></div>
 
@@ -239,14 +245,14 @@ var PRIMARY = [
     name:"Practical Life",
     desc:"Care of self, environment, and others",
     file:"practical-life.html",
-    progKey:"pl-progress"
+    progKey:"pl-progress", total:5
   },
   {
     id:"sens", emoji:"&#128065;", color:"#F48FB1",
     name:"Sensorial",
     desc:"Refine senses through exploration",
     file:"sensorial.html",
-    progKey:"sens-progress",
+    progKey:"sens-progress", total:8,
     locked:false
   },
   {
@@ -254,28 +260,28 @@ var PRIMARY = [
     name:"Language",
     desc:"Letters, sounds, words, and expression",
     file:"language.html",
-    progKey:"lang-progress"
+    progKey:"lang-progress", total:3
   },
   {
     id:"math", emoji:"&#128200;", color:"#66BB6A",
     name:"Mathematics",
     desc:"Quantity, symbols, operations, and patterns",
     file:"math.html",
-    progKey:"math-progress"
+    progKey:"math-progress", total:13
   },
   {
     id:"cult", emoji:"&#127759;", color:"#AB47BC",
     name:"Cultural Studies",
     desc:"Geography, science, nature, and history",
     file:"cultural.html",
-    progKey:"culture-progress"
+    progKey:"culture-progress", total:11
   },
   {
     id:"skip", emoji:"&#128279;", color:"#78909C",
     name:"Skip Counting",
     desc:"Jump patterns and equal groups",
     file:"skip-counting.html",
-    progKey:"skip-progress"
+    progKey:"skip-progress", total:6
   },
 ];
 
@@ -346,7 +352,7 @@ function renderPrimary(){
   PRIMARY.forEach(function(p){
     var prog = lg(p.progKey, {});
     var done = Object.keys(prog).length;
-    var total = 5;
+    var total = p.total;
     var pct = Math.min(100, Math.round((done/total)*100));
     var banner = pct >= 100 ? "Done!" : (p.locked ? "Coming" : "");
     var card = document.createElement("button");
@@ -395,7 +401,7 @@ function rabbitySpeak(){
 
 function say(text){
   var b = document.getElementById("bubble");
-  if(b){ b.innerHTML = "🐱 " + text; b.classList.add("on"); }
+  if(b){ b.textContent = "🐱 " + text; b.classList.add("on"); }
   if("speechSynthesis" in window){
     speechSynthesis.cancel();
     var u = new SpeechSynthesisUtterance(text);
@@ -406,30 +412,37 @@ function say(text){
   setTimeout(function(){ if(b) b.classList.remove("on"); }, 3500);
 }
 
-function togglePanel(){
+var panelOpener = null;
+function togglePanel(trigger){
   var p = document.getElementById("ppanel");
   if(!p) return;
+  var wasOpen = p.classList.contains("on");
+  if(!wasOpen && trigger) panelOpener = trigger;
   p.classList.toggle("on");
-  if(p.classList.contains("on")) renderPanel();
+  var open = p.classList.contains("on");
+  p.setAttribute("aria-hidden", String(!open));
+  document.querySelectorAll("[aria-label=\"Buka progres belajar\"]").forEach(function(button){button.setAttribute("aria-expanded", String(open));});
+  if(open) renderPanel();
+  if(!open && panelOpener) panelOpener.focus();
 }
 
 function renderPanel(){
   var c = document.getElementById("pcontent");
   if(!c) return;
   var areas = [
-    {name:"Practical Life", key:"pl-progress", color:"#E65100", file:"practical-life.html"},
-    {name:"Sensorial", key:"sens-progress", color:"#F48FB1", file:null},
-    {name:"Language", key:"lang-progress", color:"#42A5F5", file:"language.html"},
-    {name:"Mathematics", key:"math-progress", color:"#66BB6A", file:"math.html"},
-    {name:"Cultural Studies", key:"culture-progress", color:"#AB47BC", file:"cultural.html"},
-    {name:"Skip Counting", key:"skip-progress", color:"#78909C", file:"skip-counting.html"},
-    {name:"Five Great Lessons", key:"fgl-progress", color:"#6A1B9A", file:"five-great-lessons.html"},
+    {name:"Practical Life", key:"pl-progress", color:"#E65100", file:"practical-life.html", total:5},
+    {name:"Sensorial", key:"sens-progress", color:"#F48FB1", file:"sensorial.html", total:8},
+    {name:"Language", key:"lang-progress", color:"#42A5F5", file:"language.html", total:3},
+    {name:"Mathematics", key:"math-progress", color:"#66BB6A", file:"math.html", total:13},
+    {name:"Cultural Studies", key:"culture-progress", color:"#AB47BC", file:"cultural.html", total:11},
+    {name:"Skip Counting", key:"skip-progress", color:"#78909C", file:"skip-counting.html", total:6},
+    {name:"Five Great Lessons", key:"fgl-progress", color:"#6A1B9A", file:"five-great-lessons.html", total:19},
   ];
   c.innerHTML = '<div style="font-size:.72rem;color:#999;margin-bottom:14px">Montessori Learning Journey</div>';
   areas.forEach(function(a){
     var prog = lg(a.key, {});
     var done = Object.keys(prog).length;
-    var total = 5;
+    var total = a.total;
     var pct = Math.min(100, Math.round((done/total)*100));
     var status = pct >= 100 ? "Done" : (done === 0 ? "Not started" : "In progress");
     c.innerHTML += '<div class="prow"><div class="prow-label"><span>'+a.name+'</span><span style="font-size:.72rem;font-weight:400;opacity:.6">'+status+'</span></div><div class="pbar"><div class="pbar-fill" style="width:'+pct+'%;background:'+a.color+'"></div></div><div class="pnote">'+done+' of '+total+' activities completed</div></div>';
