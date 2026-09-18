@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Sensorial — Belajar Aya</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#07071A;--card:#12123A;--card2:#1a1a40;
+  --gold:#FFD700;--green:#4CAF50;--blue:#42A5F5;
+  --red:#EF5350;--purple:#AB47BC;--pink:#F48FB1;
+  --orange:#FF7043;--cyan:#26C6DA;--cream:#FFF8F0;
+  --font-h:'Fredoka One',cursive;
+  --font-b:'Quicksand',sans-serif;
+}
+html,body{height:100%}
+body{
+  background:var(--bg);font-family:var(--font-b);
+  color:var(--cream);touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;user-select:none;
+}
+.screen{display:none;min-height:100dvh;flex-direction:column}
+.screen.on{display:flex}
+
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;background:#fff;border-radius:50%;animation:tw var(--d,3s) ease-in-out infinite;animation-delay:var(--dl,0s)}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+
+.tbar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:10px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
+.tbar-btn{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.tbar-back{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.tbar-btn:active,.tbar-back:active{transform:scale(.9)}
+.tbar-title{font-family:var(--font-h);font-size:.9rem;color:var(--gold)}
+
+.hero{padding:12px 16px 8px;position:relative;z-index:1;text-align:center}
+.hero-emoji{font-size:3.5rem;margin-bottom:4px}
+.hero-title{font-family:var(--font-h);font-size:1.8rem;color:var(--gold)}
+.hero-sub{font-size:.78rem;opacity:.5;margin-top:2px}
+
+.act-list{display:flex;flex-direction:column;gap:10px;padding:0 16px 100px;position:relative;z-index:1}
+.acard{
+  background:var(--card);border-radius:18px;padding:14px 16px;
+  box-shadow:0 4px 16px rgba(0,0,0,.35);cursor:pointer;border:none;
+  width:100%;text-align:left;color:var(--cream);display:flex;gap:12px;
+  align-items:center;transition:transform .15s;font-family:var(--font-b);
+}
+.acard:active{transform:scale(.97)}
+.acard.locked{opacity:.4;cursor:not-allowed;pointer-events:none}
+.acard-icon{font-size:2rem;flex-shrink:0}
+.acard-name{font-family:var(--font-h);font-size:.95rem}
+.acard-desc{font-size:.72rem;opacity:.5}
+.acard-status{margin-left:auto;font-size:.75rem;padding:3px 8px;border-radius:8px}
+.acard-status.done{background:rgba(76,175,80,.2);color:var(--green)}
+
+.work{padding:8px 16px 100px;flex:1;position:relative;z-index:1}
+.instr{
+  background:rgba(255,255,255,.07);border-radius:14px;padding:10px 14px;
+  font-size:.82rem;text-align:center;line-height:1.5;
+  border:1px solid rgba(255,255,255,.08);margin:8px 0;
+}
+.instr-big{font-size:.95rem}
+
+/* Pink Tower */
+.pink-cubes{display:flex;flex-direction:column;align-items:center;gap:6px;padding:16px 0}
+.pink-row{display:flex;align-items:flex-end;gap:6px;margin:0 auto}
+.pink-cube{
+  background:linear-gradient(135deg,#F8BBD9,#E91E8C);
+  border-radius:4px;cursor:pointer;transition:transform .15s;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-h);font-size:.7rem;color:rgba(255,255,255,.5);
+  flex-shrink:0;
+}
+.pink-cube:active{transform:scale(.95)}
+.pink-cube.placed{opacity:.3;pointer-events:none}
+.pink-slot{
+  background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.12);
+  border-radius:4px;display:flex;align-items:center;justify-content:center;
+  transition:border-color .2s,background .2s;
+}
+.pink-slot.drag-over{border-color:var(--gold);background:rgba(255,215,0,.05)}
+.pink-slot.done{border-color:var(--green);border-style:solid;background:rgba(76,175,80,.05)}
+
+/* Color Tablets */
+.color-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:340px;margin:0 auto}
+.color-cell{
+  aspect-ratio:1;border-radius:14px;cursor:pointer;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:4px;transition:transform .15s;box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+.color-cell:active{transform:scale(.94)}
+.color-cell.selected{transform:scale(1.05);box-shadow:0 0 0 3px rgba(255,255,255,.4)}
+.color-label{font-family:var(--font-h);font-size:.7rem;color:rgba(255,255,255,.7)}
+
+.color-palette{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:10px 0}
+.palette-btn{
+  width:36px;height:36px;border-radius:8px;border:2px solid transparent;
+  cursor:pointer;transition:all .15s;
+}
+.palette-btn:hover{transform:scale(1.1)}
+.palette-btn.sel{border-color:#fff;transform:scale(1.15)}
+
+/* Geometric Cabinet */
+.geo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:300px;margin:0 auto}
+.geo-btn{
+  aspect-ratio:1;background:rgba(255,255,255,.06);
+  border:2px solid rgba(255,255,255,.1);border-radius:14px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:6px;cursor:pointer;transition:all .2s;padding:8px;
+}
+.geo-btn:hover{background:rgba(255,255,255,.12)}
+.geo-btn:active{transform:scale(.94)}
+.geo-btn.selected{border-color:var(--gold);background:rgba(255,215,0,.1)}
+.geo-btn.wrong{border-color:var(--red);background:rgba(239,83,80,.1)}
+.geo-svg{width:44px;height:44px}
+.geo-name{font-size:.65rem;opacity:.6}
+
+/* Grading / Seriation */
+.grade-row{display:flex;align-items:center;justify-content:center;gap:8px;margin:8px 0;flex-wrap:wrap}
+.grade-item{
+  border-radius:8px;cursor:pointer;transition:all .15s;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-h);font-size:.75rem;color:rgba(255,255,255,.6);
+}
+.grade-item:hover{transform:scale(1.08)}
+.grade-item.selected{border:2px solid var(--gold);transform:scale(1.1)}
+
+/* Sound Cylinders */
+.sound-row{display:flex;gap:8px;justify-content:center;margin:10px 0;flex-wrap:wrap}
+.sound-cylinder{
+  width:44px;height:70px;background:var(--card);border-radius:8px;
+  border:2px solid rgba(255,255,255,.12);cursor:pointer;
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+  padding-bottom:6px;transition:all .15s;position:relative;overflow:hidden;
+}
+.sound-cylinder:hover{transform:scale(1.05)}
+.sound-cylinder:active{transform:scale(.95)}
+.sound-cylinder.playing{transform:scale(1.1);border-color:var(--gold)}
+.sound-cylinder.matched{border-color:var(--green);background:rgba(76,175,80,.1)}
+.sound-fill{position:absolute;bottom:0;left:0;right:0;background:rgba(255,255,255,.1);transition:height .3s}
+.sound-label{font-family:var(--font-h);font-size:.7rem;opacity:.4;z-index:1}
+
+/* Pattern Matching */
+.pattern-board{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:300px;margin:0 auto}
+.pattern-cell{
+  aspect-ratio:1;background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-h);font-size:1.4rem;cursor:pointer;transition:all .2s;
+}
+.pattern-cell:hover{background:rgba(255,255,255,.1)}
+.pattern-cell.correct{border-color:var(--green);background:rgba(76,175,80,.15);color:var(--green)}
+.pattern-cell.wrong{border-color:var(--red);background:rgba(239,83,80,.15);color:var(--red);animation:shake .4s ease}
+
+/* Choices */
+.choices{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:12px 0}
+.choice{
+  min-width:64px;min-height:64px;border-radius:16px;
+  background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.12);
+  color:var(--cream);font-family:var(--font-h);font-size:1.6rem;
+  cursor:pointer;transition:all .15s;display:flex;align-items:center;
+  justify-content:center;padding:8px 12px;
+}
+.choice:active{transform:scale(.9)}
+.choice.right{background:rgba(76,175,80,.2);border-color:var(--green);color:var(--green)}
+.choice.wrong{background:rgba(239,83,80,.2);border-color:var(--red);color:var(--red)}
+
+.btn{display:block;width:100%;max-width:300px;margin:8px auto;padding:13px 20px;border-radius:14px;border:none;cursor:pointer;font-family:var(--font-b);font-weight:700;font-size:.88rem;transition:transform .12s}
+.btn:active{transform:scale(.96)}
+.btn-gold{background:var(--gold);color:var(--bg)}
+.btn-ghost{background:rgba(255,255,255,.08);color:var(--cream);border:1px solid rgba(255,255,255,.12)}
+.btn-hint{background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);color:var(--gold)}
+
+.success-card{background:rgba(76,175,80,.12);border:2px solid rgba(76,175,80,.35);border-radius:16px;padding:14px;text-align:center;margin:12px 0}
+.success-emoji{font-size:2.5rem}
+.success-text{font-family:var(--font-h);color:var(--green);font-size:1rem;margin-top:4px}
+.success-sub{font-size:.8rem;opacity:.6;margin-top:4px}
+
+.prog-bar{height:6px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden;margin:10px 0}
+.prog-fill{height:100%;background:linear-gradient(to right,var(--green),var(--cyan));border-radius:3px;transition:width .4s}
+
+.fab{position:fixed;width:50px;height:50px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.fab:active{transform:scale(.9)}
+.fab-home{left:20px;bottom:20px;background:var(--green);color:#fff}
+.fab-parent{right:20px;bottom:20px;background:var(--gold);color:var(--bg)}
+.bubble{position:fixed;bottom:80px;right:20px;z-index:99;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:10px 14px;max-width:210px;font-size:.8rem;line-height:1.5;box-shadow:0 4px 14px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .25s}
+.bubble.on{opacity:1}
+
+.ppanel{position:fixed;bottom:0;left:0;right:0;background:var(--cream);color:#333;border-radius:20px 20px 0 0;padding:20px 16px 90px;box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;max-height:70vh;overflow-y:auto;transform:translateY(110%);transition:transform .3s}
+.ppanel.on{transform:translateY(0)}
+.phan-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
+.phan-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
+.prow{margin-bottom:12px}
+.prow-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
+.pbar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
+.pbar-fill{height:100%;border-radius:4px;transition:width .5s}
+
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:9999}
+.conf{position:absolute;width:9px;height:9px;border-radius:2px;animation:cf 2.5s ease-out forwards}
+@keyframes cf{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+@keyframes popIn{0%{transform:scale(0);opacity:0}70%{transform:scale(1.1)}100%{transform:scale(1);opacity:1}}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.pop-in{animation:popIn .3s ease forwards}
+</style>
+</head>
+<body>
+
+<div class="stars" id="stars"></div>
+
+<!-- HOME -->
+<div class="screen on" id="s-home">
+  <div class="tbar">
+    <a href="index.html" class="tbar-btn">&#8592;</a>
+    <div class="tbar-title">Sensorial</div>
+    <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
+  </div>
+  <div class="hero">
+    <div class="hero-emoji">&#128065;</div>
+    <div class="hero-title">Sensorial</div>
+    <div class="hero-sub">Explore, compare, and order through your senses</div>
+  </div>
+  <div class="prog-bar" style="margin:0 16px 8px"><div class="prog-fill" id="total-prog" style="width:0%"></div></div>
+  <div class="act-list" id="act-list"></div>
+</div>
+
+<!-- WORK -->
+<div class="screen" id="s-work">
+  <div class="tbar">
+    <button class="tbar-back" onclick="goHome()">&#8592;</button>
+    <div class="tbar-title" id="work-title">Activity</div>
+    <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
+  </div>
+  <div class="work" id="work-area"></div>
+</div>
+
+<!-- FABs -->
+<a href="index.html" class="fab fab-home">&#127968;</a>
+<button class="fab fab-parent" onclick="togglePanel()">&#128100;</button>
+<div class="bubble" id="bubble"></div>
+
+<div class="confetti" id="confetti"></div>
+
+<script>
+// ─────────────────────────────────────────────
+// SENSORY ACTIVITIES — Montessori Sensorial
+// Experience → Discriminate → Compare → Order → Classify → Language → Abstraction
+// ─────────────────────────────────────────────
+var ACTIVITIES = [
+  { id:"pinktower", emoji:"&#128170;", color:"#F48FB1", name:"Pink Tower", desc:"Order cubes from largest to smallest" },
+  { id:"brownstairs", emoji:"&#129716;", color:"#8D6E63", name:"Brown Stairs", desc:"Order rods from thickest to thinnest" },
+  { id:"colorgrad", emoji:"&#127912;", color:"#FFD700", name:"Color Grading", desc:"Arrange colors from light to dark" },
+  { id:"colormatch", emoji:"&#10024;", color:"#EF5350", name:"Color Matching", desc:"Find the matching colors" },
+  { id:"geomatching", emoji:"&#11041;", color:"#26C6DA", name:"Geometric Cabinet", desc:"Match shapes to their outlines" },
+  { id:"sounds", emoji:"&#128266;", color:"#78909C", name:"Sound Cylinders", desc:"Order sounds from quietest to loudest" },
+  { id:"grade", emoji:"&#8597;", color:"#AB47BC", name:"Size Grading", desc:"Put objects in order by size" },
+  { id:"pattern", emoji:"&#11088;", color:"#66BB6A", name:"Pattern Matching", desc:"Find what comes next in the pattern" },
+];
+
+var STATE = null;
+var audioCtx = null;
+
+function lg(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
+function ls(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+
+function init(){
+  genStars();
+  renderHome();
+}
+
+function genStars(){
+  var el = document.getElementById("stars");
+  el.innerHTML = "";
+  for(var i=0;i<60;i++){
+    var s = document.createElement("div");
+    s.className = "star";
+    var sz = Math.random()*2+1;
+    s.style.cssText = "left:"+(Math.random()*100)+"%;top:"+(Math.random()*100)+"%;width:"+sz+"px;height:"+sz+"px;--d:"+(Math.random()*2+2).toFixed(1)+"s;--dl:"+(Math.random()*3).toFixed(1)+"s";
+    el.appendChild(s);
+  }
+}
+
+function goHome(){
+  document.querySelectorAll(".screen").forEach(function(s){s.classList.remove("on");});
+  document.getElementById("s-home").classList.add("on");
+  renderHome();
+}
+
+function sc(name){
+  document.querySelectorAll(".screen").forEach(function(s){s.classList.remove("on");});
+  document.getElementById("s-"+name).classList.add("on");
+}
+
+function renderHome(){
+  var prog = lg("sens-prog", {});
+  var totalDone = Object.keys(prog).filter(function(k){return prog[k];}).length;
+  var pct = Math.round((totalDone/ACTIVITIES.length)*100);
+  var progEl = document.getElementById("total-prog");
+  if(progEl) progEl.style.width = pct+"%";
+
+  var list = document.getElementById("act-list");
+  list.innerHTML = "";
+  ACTIVITIES.forEach(function(a){
+    var done = !!prog["act-"+a.id];
+    var card = document.createElement("button");
+    card.className = "acard";
+    card.innerHTML =
+      '<div class="acard-icon" style="color:'+a.color+'">'+a.emoji+'</div>'+
+      '<div><div class="acard-name">'+a.name+'</div><div class="acard-desc">'+a.desc+'</div></div>'+
+      '<div class="acard-status '+(done?"done":"")+'">'+(done?"Done":"Start")+'</div>';
+    card.onclick = function(){ startAct(a); };
+    list.appendChild(card);
+  });
+}
+
+function startAct(a){
+  STATE = { act: a, data: {} };
+  document.getElementById("work-title").innerHTML = a.emoji+" "+a.name;
+  var area = document.getElementById("work-area");
+  area.innerHTML = "";
+  switch(a.id){
+    case "pinktower": renderPinkTower(area); break;
+    case "brownstairs": renderBrownStairs(area); break;
+    case "colorgrad": renderColorGrade(area); break;
+    case "colormatch": renderColorMatch(area); break;
+    case "geomatching": renderGeoMatch(area); break;
+    case "sounds": renderSounds(area); break;
+    case "grade": renderGrade(area); break;
+    case "pattern": renderPattern(area); break;
+  }
+  sc("work");
+}
+
+function markDone(id){
+  var _o={}; _o["act-"+id]=true; ls("sens-prog", Object.assign(lg("sens-prog",{}), _o));
+}
+
+// ═══════════════════════════════════════════════
+// PINK TOWER — order cubes largest to smallest
+// ═══════════════════════════════════════════════
+function renderPinkTower(area){
+  area.innerHTML =
+    '<div class="instr">Drag each cube to the correct slot — largest first, smallest last!</div>'+
+    '<div style="display:flex;flex-direction:column;gap:4px;max-width:200px;margin:0 auto" id="pt-slots"></div>'+
+    '<div style="font-size:.7rem;text-align:center;opacity:.4;margin:8px 0">Target size: '+STATE.act.name+'</div>'+
+    '<div id="pt-pool" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:10px;background:rgba(255,255,255,.04);border-radius:12px;border:1px solid rgba(255,255,255,.06);margin:8px 0"></div>'+
+    '<div id="pt-success"></div>'+
+    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+
+  var sizes = [80, 70, 60, 50, 40, 30, 20, 10];
+  STATE.pink = { placed: {}, correct: 0, total: sizes.length };
+
+  var slotsEl = document.getElementById("pt-slots");
+  sizes.forEach(function(size, idx){
+    var row = document.createElement("div");
+    row.style.cssText = "display:flex;align-items:center;gap:8px";
+    var label = document.createElement("div");
+    label.innerHTML = (idx+1)+".";
+    label.style.cssText = "width:20px;text-align:center;font-family:var(--font-h);font-size:.7rem;opacity:.4;flex-shrink:0";
+    var slot = document.createElement("div");
+    slot.id = "ptslot-"+idx;
+    slot.dataset.target = size;
+    slot.dataset.idx = idx;
+    slot.className = "pink-slot";
+    slot.style.cssText = "width:100%;height:"+(size+4)+"px;max-width:"+(size+8)+"px;margin:0 auto";
+    slot.addEventListener("dragover", function(e){ e.preventDefault(); slot.classList.add("drag-over"); });
+    slot.addEventListener("dragleave", function(){ slot.classList.remove("drag-over"); });
+    slot.addEventListener("drop", function(e){
+      e.preventDefault();
+      slot.classList.remove("drag-over");
+      if(STATE===null) return;
+      var droppedSize = parseInt(e.dataTransfer.getData("text/plain"));
+      if(droppedSize === size && !STATE.pink.placed[idx]){
+        slot.classList.add("done");
+        slot.style.background = "rgba(76,175,80,.1)";
+        slot.innerHTML = '<div style="width:'+size+'px;height:'+size+'px;background:linear-gradient(135deg,#F8BBD9,#E91E8C);border-radius:4px"></div>';
+        STATE.pink.placed[idx] = true;
+        STATE.pink.correct++;
+        say("Good fit! "+(idx+1)+" of "+sizes.length);
+        if(STATE.pink.correct === sizes.length){
+          document.getElementById("pt-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Pink Tower complete!</div><div class="success-sub">You ordered the cubes from largest to smallest!</div></div>';
+          markDone("pinktower");
+          confetti();
+        }
+      } else if(STATE.pink.placed[idx]) {
+        say("That slot already has a cube!");
+      } else {
+        say("Try a different size there!");
+      }
+    });
+    row.appendChild(label);
+    row.appendChild(slot);
+    slotsEl.appendChild(row);
+  });
+
+  // Pool — shuffled cubes
+  var poolEl = document.getElementById("pt-pool");
+  var shuffled = sizes.slice().sort(function(){return Math.random()-0.5;});
+  shuffled.forEach(function(size){
+    var cube = document.createElement("div");
+    cube.draggable = true;
+    cube.innerHTML = '<div style="width:'+size+'px;height:'+size+'px;background:linear-gradient(135deg,#F8BBD9,#E91E8C);border-radius:4px;cursor:grab"></div>';
+    cube.style.cssText = "display:flex;align-items:center;justify-content:center;cursor:grab;padding:4px";
+    cube.addEventListener("dragstart", function(e){
+      e.dataTransfer.setData("text/plain", String(size));
+      e.dataTransfer.effectAllowed = "move";
+    });
+    poolEl.appendChild(cube);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// BROWN STAIRS — order rods thickest to thinnest
+// ═══════════════════════════════════════════════
+function renderBrownStairs(area){
+  area.innerHTML =
+    '<div class="instr">Drag each rod to the correct slot — thickest first, thinnest last!</div>'+
+    '<div id="bs-slots" style="display:flex;flex-direction:column;gap:6px;max-width:400px;margin:0 auto"></div>'+
+    '<div id="bs-pool" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:10px;background:rgba(255,255,255,.04);border-radius:12px;border:1px solid rgba(255,255,255,.06);margin:8px 0"></div>'+
+    '<div id="bs-success"></div>'+
+    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+
+  var heights = [80, 70, 60, 50, 40, 30, 20, 10];
+  STATE.brown = { placed: {}, correct: 0, total: heights.length };
+
+  var slotsEl = document.getElementById("bs-slots");
+  heights.forEach(function(h, idx){
+    var row = document.createElement("div");
+    row.style.cssText = "display:flex;align-items:center;gap:8px";
+    var label = document.createElement("div");
+    label.innerHTML = (idx+1)+".";
+    label.style.cssText = "width:20px;text-align:center;font-family:var(--font-h);font-size:.7rem;opacity:.4;flex-shrink:0";
+    var slot = document.createElement("div");
+    slot.id = "bsslot-"+idx;
+    slot.dataset.target = h;
+    slot.style.cssText = "flex:1;height:"+h+"px;min-width:60px;background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.12);border-radius:4px;display:flex;align-items:center;justify-content:center;transition:all .2s";
+    slot.addEventListener("dragover", function(e){ e.preventDefault(); slot.classList.add("drag-over"); });
+    slot.addEventListener("dragleave", function(){ slot.classList.remove("drag-over"); });
+    slot.addEventListener("drop", function(e){
+      e.preventDefault();
+      slot.classList.remove("drag-over");
+      if(STATE===null) return;
+      var droppedH = parseInt(e.dataTransfer.getData("text/plain"));
+      if(droppedH === h && !STATE.brown.placed[idx]){
+        slot.classList.add("done");
+        slot.style.background = "rgba(76,175,80,.1)";
+        slot.innerHTML = '<div style="width:100%;height:'+h+'px;background:linear-gradient(to right,#6D4C41,#8D6E63);border-radius:4px"></div>';
+        STATE.brown.placed[idx] = true;
+        STATE.brown.correct++;
+        say("Good! Rod "+(idx+1));
+        if(STATE.brown.correct === heights.length){
+          document.getElementById("bs-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Brown Stairs complete!</div><div class="success-sub">Thickest to thinnest — you found the order!</div></div>';
+          markDone("brownstairs");
+          confetti();
+        }
+      } else if(!STATE.brown.placed[idx]) {
+        say("Try a different thickness!");
+      }
+    });
+    row.appendChild(label);
+    row.appendChild(slot);
+    slotsEl.appendChild(row);
+  });
+
+  var poolEl = document.getElementById("bs-pool");
+  var shuffled = heights.slice().sort(function(){return Math.random()-0.5;});
+  shuffled.forEach(function(h){
+    var rod = document.createElement("div");
+    rod.draggable = true;
+    rod.innerHTML = '<div style="width:120px;height:'+h+'px;background:linear-gradient(to right,#6D4C41,#8D6E63);border-radius:4px;cursor:grab"></div>';
+    rod.style.cssText = "display:flex;align-items:center;justify-content:center;cursor:grab;padding:4px";
+    rod.addEventListener("dragstart", function(e){
+      e.dataTransfer.setData("text/plain", String(h));
+      e.dataTransfer.effectAllowed = "move";
+    });
+    poolEl.appendChild(rod);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// COLOR GRADING — arrange 5 shades from light to dark
+// ═══════════════════════════════════════════════
+function renderColorGrade(area){
+  var palettes = [
+    { name:"Red", base:"#EF5350", shades:["#FFCDD2","#EF9A9A","#EF5350","#C62828","#B71C1C"] },
+    { name:"Blue", base:"#42A5F5", shades:["#BBDEFB","#90CAF9","#42A5F5","#1565C0","#0D47A1"] },
+    { name:"Green", base:"#66BB6A", shades:["#C8E6C9","#A5D6A7","#66BB6A","#2E7D32","#1B5E20"] },
+    { name:"Yellow", base:"#FFD700", shades:["#FFF9C4","#FFF59D","#FFD700","#F9A825","#F57F17"] },
+    { name:"Purple", base:"#AB47BC", shades:["#E1BEE7","#CE93D8","#AB47BC","#7B1FA2","#4A148C"] },
+  ];
+  var pal = palettes[Math.floor(Math.random()*palettes.length)];
+  // Pick 5 shades
+  var shades = pal.shades;
+
+  area.innerHTML =
+    '<div class="instr instr-big">Arrange the '+pal.name+' colors from lightest to darkest!</div>'+
+    '<div style="font-size:.75rem;text-align:center;opacity:.4;margin-bottom:12px">Lightest &#8594; Darkest</div>'+
+    '<div id="grade-row" class="grade-row"></div>'+
+    '<div class="instr" style="margin-top:8px">Tap a color to place it in the next slot:</div>'+
+    '<div id="color-pool" style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:8px 0"></div>'+
+    '<div id="grade-success"></div>'+
+    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+
+  STATE.grade = { shades: shades, placed: [], answered: false };
+
+  var rowEl = document.getElementById("grade-row");
+  for(var i=0;i<5;i++){
+    var slot = document.createElement("div");
+    slot.className = "grade-item";
+    slot.id = "gslot-"+i;
+    slot.style.cssText = "width:50px;height:50px;border-radius:10px;border:1px dashed rgba(255,255,255,.2);background:rgba(255,255,255,.05)";
+    slot.innerHTML = (i+1);
+    slot.style.cssText += ";font-family:var(--font-h);font-size:.8rem;color:rgba(255,255,255,.3)";
+    rowEl.appendChild(slot);
+  }
+
+  var poolEl = document.getElementById("color-pool");
+  var shuffled = shades.slice().sort(function(){return Math.random()-0.5;});
+  shuffled.forEach(function(shade){
+    var btn = document.createElement("div");
+    btn.className = "palette-btn";
+    btn.style.background = shade;
+    btn.dataset.shade = shade;
+    btn.style.width = "40px";
+    btn.style.height = "40px";
+    btn.addEventListener("click", function(){
+      if(STATE===null||STATE.grade.answered) return;
+      btn.style.opacity = "0.3";
+      btn.style.pointerEvents = "none";
+      var idx = STATE.grade.placed.length;
+      var slot = document.getElementById("gslot-"+idx);
+      slot.style.background = shade;
+      slot.style.border = "2px solid rgba(255,255,255,.3)";
+      slot.innerHTML = "";
+      STATE.grade.placed.push(shade);
+      if(STATE.grade.placed.length === 5){
+        checkGrade();
+      }
+    });
+    poolEl.appendChild(btn);
+  });
+}
+
+function checkGrade(){
+  var shades = STATE.grade.shades;
+  var placed = STATE.grade.placed;
+  var correct = true;
+  for(var i=0;i<5;i++){
+    if(placed[i] !== shades[i]) correct = false;
+  }
+  // Highlight correct slots
+  for(var j=0;j<5;j++){
+    var slot = document.getElementById("gslot-"+j);
+    if(placed[j] === shades[j]){
+      slot.style.border = "2px solid var(--green)";
+      slot.style.boxShadow = "0 0 8px rgba(76,175,80,.3)";
+    } else {
+      slot.style.border = "2px solid var(--red)";
+    }
+  }
+  STATE.grade.answered = true;
+  if(correct){
+    say("Perfect! You graded the colors correctly!");
+    document.getElementById("grade-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Color Grading complete!</div><div class="success-sub">Lightest to darkest — you found the order!</div></div>';
+    markDone("colorgrad");
+    confetti();
+  } else {
+    say("Almost! Try to spot which colors are not in the right order.");
+  }
+}
+
+// ═══════════════════════════════════════════════
+// COLOR MATCHING — find matching pairs
+// ═══════════════════════════════════════════════
+function renderColorMatch(area){
+  var colors = ["#EF5350","#42A5F5","#66BB6A","#FFD700","#AB47BC","#FF7043"];
+  var pick = colors.slice(0, 6);
+  var pairs = pick.concat(pick).sort(function(){return Math.random()-0.5;});
+
+  area.innerHTML =
+    '<div class="instr">Tap two cards with the same color!</div>'+
+    '<div id="cm-board" style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:320px;margin:12px auto"></div>'+
+    '<div id="cm-success"></div>'+
+    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+
+  STATE.cm = { first: null, second: null, matched: 0, total: 6 };
+
+  var board = document.getElementById("cm-board");
+  pairs.forEach(function(color, idx){
+    var card = document.createElement("div");
+    card.className = "pattern-cell";
+    card.id = "cm-"+idx;
+    card.dataset.color = color;
+    card.innerHTML = "?";
+    card.style.fontFamily = "var(--font-h)";
+    card.style.fontSize = "1.4rem";
+    card.addEventListener("click", function(){
+      if(STATE===null) return;
+      if(card.dataset.revealed) return;
+      if(STATE.cm.first && STATE.cm.second) return;
+      // Reveal
+      card.style.background = color;
+      card.innerHTML = "";
+      card.dataset.revealed = "1";
+      if(!STATE.cm.first){
+        STATE.cm.first = { el: card, color: color };
+      } else {
+        STATE.cm.second = { el: card, color: color };
+        // Check match
+        setTimeout(function(){
+          if(STATE.cm.first.color === STATE.cm.second.color){
+            STATE.cm.matched++;
+            STATE.cm.first.el.style.borderColor = "var(--green)";
+            STATE.cm.first.el.style.background = "rgba(76,175,80,.15)";
+            STATE.cm.second.el.style.borderColor = "var(--green)";
+            STATE.cm.second.el.style.background = "rgba(76,175,80,.15)";
+            say("Match! "+(STATE.cm.matched)+" of "+STATE.cm.total);
+            if(STATE.cm.matched === STATE.cm.total){
+              document.getElementById("cm-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">All colors matched!</div><div class="success-sub">You found all the pairs!</div></div>';
+              markDone("colormatch");
+              confetti();
+            }
+          } else {
+            STATE.cm.first.el.style.background = "rgba(239,83,80,.15)";
+            STATE.cm.first.el.style.borderColor = "var(--red)";
+            STATE.cm.second.el.style.background = "rgba(239,83,80,.15)";
+            STATE.cm.second.el.style.borderColor = "var(--red)";
+            STATE.cm.first.el.innerHTML = "?";
+            STATE.cm.second.el.innerHTML = "?";
+            delete STATE.cm.first.el.dataset.revealed;
+            delete STATE.cm.second.el.dataset.revealed;
+            say("Not a match. Try again!");
+          }
+          STATE.cm.first = null;
+          STATE.cm.second = null;
+        }, 600);
+      }
+    });
+    board.appendChild(card);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// GEOMETRIC CABINET — match shape to outline
+// ═══════════════════════════════════════════════
+function renderGeoMatch(area){
+  var shapes = [
+    { name:"Circle", svg:'<circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2.5"/>' },
+    { name:"Square", svg:'<rect x="4" y="4" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2.5"/>' },
+    { name:"Triangle", svg:'<polygon points="24,4 4,44 44,44" fill="none" stroke="currentColor" stroke-width="2.5"/>' },
+    { name:"Rectangle", svg:'<rect x="2" y="10" width="44" height="28" fill="none" stroke="currentColor" stroke-width="2.5"/>' },
+    { name:"Pentagon", svg:'<polygon points="24,4 44,16 38,42 10,42 4,16" fill="none" stroke="currentColor" stroke-width="2.5"/>' },
+    { name:"Hexagon", svg:'<polygon points="24,4 42,14 42,34 24,44 6,34 6,14" fill="none" stroke="currentColor" stroke-width="2.5"/>' },
+  ];
+
+  var target = shapes[Math.floor(Math.random()*shapes.length)];
+  var options = shapes.slice().sort(function(){return Math.random()-0.5;});
+
+  area.innerHTML =
+    '<div class="instr instr-big">Which shape is this?</div>'+
+    '<div style="display:flex;align-items:center;justify-content:center;padding:16px 0">'+
+      '<svg viewBox="0 0 48 48" style="width:100px;height:100px;color:var(--gold)">'+target.svg+'</svg>'+
+    '</div>'+
+    '<div class="geo-grid" id="geo-grid"></div>'+
+    '<div id="geo-success"></div>';
+
+  STATE.geo = { answered: false };
+  var grid = document.getElementById("geo-grid");
+  options.forEach(function(s){
+    var btn = document.createElement("button");
+    btn.className = "geo-btn";
+    btn.innerHTML = '<svg viewBox="0 0 48 48" style="width:40px;height:40px;color:var(--cream)">'+s.svg+'</svg><div class="geo-name">'+s.name+'</div>';
+    btn.addEventListener("click", function(){
+      if(STATE===null||STATE.geo.answered) return;
+      if(s.name === target.name){
+        btn.classList.add("selected");
+        STATE.geo.answered = true;
+        say("Yes! A "+s.name+"!");
+        document.getElementById("geo-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">'+s.name+'!</div><div class="success-sub">You matched the shape!</div></div>';
+        markDone("geomatching");
+        confetti();
+      } else {
+        btn.classList.add("wrong");
+        btn.disabled = true;
+        say("Try to look at the number of sides!");
+      }
+    });
+    grid.appendChild(btn);
+  });
+}
+
+// ═══════════════════════════════════════════════
+// SOUND CYLINDERS — Web Audio API volume ordering
+// ═══════════════════════════════════════════════
+function renderSounds(area){
+  area.innerHTML =
+    '<div class="instr">Tap a cylinder to hear its sound. Then arrange them from quietest to loudest!</div>'+
+    '<div id="sound-cylinders" class="sound-row"></div>'+
+    '<div id="sound-slots" class="sound-row" style="margin-top:16px"></div>'+
+    '<div id="sound-success"></div>'+
+    '<button class="btn btn-hint" onclick="showSoundHint()">Show Answer</button>'+
+    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+
+  var levels = [0.1, 0.25, 0.45, 0.65, 0.85, 1.0];
+  var shuffled = levels.slice().sort(function(){return Math.random()-0.5;});
+
+  STATE.sounds = { levels: shuffled, placed: [], answered: false, correct: [0.1,0.25,0.45,0.65,0.85,1.0] };
+
+  var cylEl = document.getElementById("sound-cylinders");
+  var cyls = [];
+  shuffled.forEach(function(level, idx){
+    var cyl = document.createElement("div");
+    cyl.className = "sound-cylinder";
+    cyl.id = "cyl-"+idx;
+    cyl.dataset.level = level;
+    cyl.innerHTML = '<div class="sound-fill" style="height:'+(level*100)+'%"></div><div class="sound-label">'+(idx+1)+'</div>';
+    cyl.addEventListener("click", function(){
+      cyl.classList.add("playing");
+      playBeep(level);
+      setTimeout(function(){ cyl.classList.remove("playing"); }, 400);
+    });
+    cylEl.appendChild(cyl);
+    cyls.push(cyl);
+  });
+
+  var slotsEl = document.getElementById("sound-slots");
+  for(var i=0;i<6;i++){
+    var slot = document.createElement("div");
+    slot.className = "sound-cylinder";
+    slot.id = "sslot-"+i;
+    slot.innerHTML = '<div class="sound-fill" style="height:0%"></div><div class="sound-label">?</div>';
+    slot.style.opacity = "0.5";
+    slot.style.cursor = "default";
+    slot.addEventListener("click", function(){
+      // Nothing — slots are for display only in this simple version
+      say("Tap the cylinders to hear them, then arrange from quietest to loudest!");
+    });
+    slotsEl.appendChild(slot);
+  }
+}
+
+function playBeep(volume){
+  try{
+    if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    var osc = audioCtx.createOscillator();
+    var gain = audioCtx.createGain();
+    osc.type = "sine";
+    osc.frequency.value = 220 + volume * 440;
+    gain.gain.value = volume * 0.5;
+    gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.6);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + 0.6);
+  } catch(e){}
+}
+
+function showSoundHint(){
+  if(STATE===null||!STATE.sounds||STATE.sounds.answered) return;
+  say("Listen carefully and order them from the quietest to the loudest!");
+}
+
+// ═══════════════════════════════════════════════
+// SIZE GRADING — order objects by size
+// ═══════════════════════════════════════════════
+function renderGrade(area){
+  var items = ["&#11088;","&#127813;","&#127800;","&#129507;","&#128014;"];
+  var sizes = [30, 40, 50, 60, 70];
+  var pairs = items.map(function(emoji, i){ return {emoji:emoji, size:sizes[i]}; });
+  var shuffled = pairs.slice().sort(function(){return Math.random()-0.5;});
+
+  area.innerHTML =
+    '<div class="instr instr-big">Arrange the objects from smallest to largest!</div>'+
+    '<div id="grade-slots" class="grade-row" style="margin:12px 0"></div>'+
+    '<div id="grade-pool" class="grade-row" style="margin:8px 0;flex-wrap:wrap"></div>'+
+    '<div id="grade-msg" style="text-align:center;font-family:var(--font-h);font-size:.9rem;opacity:.5;min-height:1.5rem"></div>'+
+    '<div id="grade-success"></div>'+
+    '<button class="btn btn-ghost" onclick="startAct(STATE.act)">Try Again</button>';
+
+  STATE.grade2 = { items: pairs, placed: [], answered: false };
+
+  var poolEl = document.getElementById("grade-pool");
+  shuffled.forEach(function(item, idx){
+    var el = document.createElement("div");
+    el.className = "grade-item";
+    el.innerHTML = item.emoji;
+    el.dataset.size = item.size;
+    el.style.cssText = "width:"+item.size+"px;height:"+item.size+"px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:8px";
+    el.addEventListener("click", function(){
+      if(STATE===null||STATE.grade2.answered) return;
+      el.style.opacity = "0.3";
+      el.style.pointerEvents = "none";
+      var idx2 = STATE.grade2.placed.length;
+      var slot = document.getElementById("gslot2-"+idx2);
+      slot.style.width = item.size+"px";
+      slot.style.height = item.size+"px";
+      slot.innerHTML = item.emoji;
+      slot.style.background = "rgba(76,175,80,.08)";
+      slot.style.border = "1px solid rgba(76,175,80,.3)";
+      STATE.grade2.placed.push(item);
+      if(STATE.grade2.placed.length === 5){
+        checkGrade2();
+      }
+    });
+    poolEl.appendChild(el);
+  });
+
+  var slotsEl = document.getElementById("grade-slots");
+  for(var i=0;i<5;i++){
+    var slot = document.createElement("div");
+    slot.id = "gslot2-"+i;
+    slot.className = "grade-item";
+    slot.style.cssText = "width:60px;height:60px;border-radius:8px;border:1px dashed rgba(255,255,255,.15);background:rgba(255,255,255,.05);font-family:var(--font-h);font-size:.7rem;color:rgba(255,255,255,.2)";
+    slot.innerHTML = (i+1);
+    slotsEl.appendChild(slot);
+  }
+}
+
+function checkGrade2(){
+  var placed = STATE.grade2.placed;
+  var correct = placed[0].size === 30 && placed[1].size === 40 && placed[2].size === 50 && placed[3].size === 60 && placed[4].size === 70;
+  for(var j=0;j<5;j++){
+    var slot = document.getElementById("gslot2-"+j);
+    if(placed[j].size === [30,40,50,60,70][j]){
+      slot.style.border = "1px solid var(--green)";
+      slot.style.color = "var(--green)";
+    } else {
+      slot.style.border = "1px solid var(--red)";
+      slot.style.color = "var(--red)";
+    }
+    slot.style.background = "";
+  }
+  STATE.grade2.answered = true;
+  if(correct){
+    say("Perfect ordering! Smallest to largest!");
+    document.getElementById("grade-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Size Grading complete!</div><div class="success-sub">Smallest to largest — you found the order!</div></div>';
+    markDone("grade");
+    confetti();
+  } else {
+    say("Almost! Look for the smallest one first.");
+  }
+}
+
+// ═══════════════════════════════════════════════
+// PATTERN MATCHING — AB, ABC, AAB patterns
+// ═══════════════════════════════════════════════
+function renderPattern(area){
+  var patternTypes = [
+    { name:"AB Pattern", items:["&#11088;","&#127813;","&#11088;","&#127813;","&#11088;","?"], answer:"&#11088;" },
+    { name:"ABC Pattern", items:["&#129507;","&#127800;","&#127813;","&#129507;","&#127800;","?"], answer:"&#127813;" },
+    { name:"AAB Pattern", items:["&#128014;","&#128014;","&#127800;","&#128014;","&#128014;","?"], answer:"&#127800;" },
+  ];
+  var pat = patternTypes[Math.floor(Math.random()*patternTypes.length)];
+
+  area.innerHTML =
+    '<div class="instr instr-big">What comes next in the pattern?</div>'+
+    '<div class="pattern-board" id="pat-board"></div>'+
+    '<div class="choices" id="pat-choices"></div>'+
+    '<div id="pat-success"></div>';
+
+  STATE.pat = { answered: false };
+
+  var board = document.getElementById("pat-board");
+  pat.items.forEach(function(item, idx){
+    var cell = document.createElement("div");
+    cell.className = "pattern-cell";
+    cell.id = "pcell-"+idx;
+    if(idx === 5){
+      cell.innerHTML = "?";
+      cell.style.fontSize = "1.4rem";
+    } else {
+      cell.innerHTML = item;
+    }
+    board.appendChild(cell);
+  });
+
+  var choices = [pat.answer];
+  var allOptions = ["&#11088;","&#127813;","&#129507;","&#127800;","&#128014;"];
+  var others = allOptions.filter(function(o){ return o !== pat.answer; });
+  choices = choices.concat(others.slice(0,3)).sort(function(){return Math.random()-0.5;});
+
+  var choicesEl = document.getElementById("pat-choices");
+  choices.forEach(function(ans){
+    var btn = document.createElement("button");
+    btn.className = "choice";
+    btn.innerHTML = ans;
+    btn.addEventListener("click", function(){
+      if(STATE===null||STATE.pat.answered) return;
+      if(ans === pat.answer){
+        btn.classList.add("right");
+        var cell = document.getElementById("pcell-5");
+        cell.innerHTML = ans;
+        cell.classList.add("correct");
+        STATE.pat.answered = true;
+        say("Yes! That completes the pattern!");
+        document.getElementById("pat-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Pattern complete!</div><div class="success-sub">You found what comes next!</div></div>';
+        markDone("pattern");
+        confetti();
+      } else {
+        btn.classList.add("wrong");
+        btn.disabled = true;
+        say("Look at the pattern again...");
+      }
+    });
+    choicesEl.appendChild(btn);
+  });
+}
+
+// ─────────────────────────────────────────────
+// TTS + CONFETTI
+// ─────────────────────────────────────────────
+function say(text){
+  var b = document.getElementById("bubble");
+  if(b){ b.innerHTML = "&#128049; " + text; b.classList.add("on"); }
+  if("speechSynthesis" in window){
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-US";
+    u.rate = 0.85;
+    speechSynthesis.speak(u);
+  }
+  setTimeout(function(){ if(b) b.classList.remove("on"); }, 3500);
+}
+
+function confetti(){
+  var c = document.getElementById("confetti");
+  if(!c) return;
+  c.innerHTML = "";
+  var colors = ["#FFD700","#EF5350","#66BB6A","#42A5F5","#AB47BC","#FF9800"];
+  for(var i=0;i<35;i++){
+    var p = document.createElement("div");
+    p.className = "conf";
+    p.style.left = Math.random()*100+"%";
+    p.style.background = colors[Math.floor(Math.random()*colors.length)];
+    p.style.animationDelay = (Math.random()*0.7)+"s";
+    p.style.animationDuration = "2.5s";
+    c.appendChild(p);
+  }
+  setTimeout(function(){ c.innerHTML = ""; }, 3500);
+}
+
+// ─────────────────────────────────────────────
+// PARENT PANEL
+// ─────────────────────────────────────────────
+function togglePanel(){
+  var p = document.getElementById("ppanel");
+  if(!p) return;
+  p.classList.toggle("on");
+  if(p.classList.contains("on")) renderPanel();
+}
+
+function renderPanel(){
+  var c = document.getElementById("pcontent");
+  if(!c) return;
+  var prog = lg("sens-prog", {});
+  c.innerHTML = '<div style="font-size:.72rem;color:#999;margin-bottom:14px">Sensorial — Montessori Sensorial Education</div>';
+  ACTIVITIES.forEach(function(a){
+    var done = !!prog["act-"+a.id];
+    var pct = done ? 100 : 0;
+    c.innerHTML += '<div class="prow"><div class="prow-label"><span>'+a.emoji+' '+a.name+'</span> <span style="font-size:.72rem;opacity:.6">'+(done?"Done":"Not started")+'</span></div><div class="pbar"><div class="pbar-fill" style="width:'+pct+'%;background:'+a.color+'"></div></div></div>';
+  });
+  c.innerHTML += '<div style="margin-top:16px;padding:12px;background:#f5f5f5;border-radius:10px"><div style="font-family:var(--font-h);font-size:.8rem;color:#666;margin-bottom:6px">Sensorial Purpose</div><div style="font-size:.72rem;color:#888;line-height:1.6">Sensorial work helps the child classify, compare, grade, and discriminate through sensory experience. The long-term goal is abstraction — moving from concrete sensory experience to conceptual understanding. Digital activities supplement physical Montessori materials, they do not replace them.</div></div>';
+}
+
+// ─────────────────────────────────────────────
+// EVENTS
+// ─────────────────────────────────────────────
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape"){
+    document.getElementById("ppanel").classList.remove("on");
+    goHome();
+  }
+});
+window.addEventListener("load", init);
+</script>
+</body>
+</html>
