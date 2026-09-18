@@ -331,7 +331,7 @@ function goHome(){
 }
 
 function renderHome(){
-  var prog = lg("math-prog", {});
+  var prog = lg("math-progress", {});
   var totalDone = Object.keys(prog).filter(function(k){return prog[k];}).length;
   var pct = Math.round((totalDone/ACTIVITIES.length)*100);
   var progEl = document.getElementById("total-prog");
@@ -376,7 +376,7 @@ function startAct(a){
 }
 
 function markDone(id){
-  var _o={}; _o["act-"+id]=true; ls("math-prog", Object.assign(lg("math-prog",{}), _o));
+  var _o={}; _o["act-"+id]=true; ls("math-progress", Object.assign(lg("math-progress",{}), _o));
 }
 
 // ═══════════════════════════════════════════════
@@ -1142,7 +1142,7 @@ function togglePanel(){
 function renderPanel(){
   var c = document.getElementById("pcontent");
   if(!c) return;
-  var prog = lg("math-prog", {});
+  var prog = lg("math-progress", {});
   c.innerHTML = '<div style="font-size:.78rem;opacity:.6;margin-bottom:14px">Math Garden — Montessori progression</div>';
   ACTIVITIES.forEach(function(a){
     var done = !!prog["act-"+a.id];

@@ -328,7 +328,7 @@ function goHome(){
 }
 
 function renderHome(){
-  var prog = lg("sc-prog", {});
+  var prog = lg("skip-progress", {});
   var totalDone = Object.keys(prog).filter(function(k){return prog[k];}).length;
   var pct = Math.round((totalDone/STAGES.length)*100);
   var progEl = document.getElementById("total-prog");
@@ -476,7 +476,7 @@ function checkBuildDone(){
     STATE.build.done = true;
     document.getElementById("build-success").innerHTML =
       '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">All groups are full!</div><div class="success-sub">You made '+STATE.build.groups.length+' equal groups of '+STATE.build.jump+'</div></div>';
-    ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-1":true}));
+    ls("skip-progress", Object.assign(lg("skip-progress",{}),{"stage-1":true}));
     confetti();
     say("You made equal groups! That is the start of skip counting!");
   }
@@ -553,7 +553,7 @@ function jumpTap(n){
       setTimeout(function(){
         document.getElementById("jump-success").innerHTML =
           '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">Piko reached '+n+'!</div><div class="success-sub">The pattern: +'+j+' every time!</div></div>';
-        ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-2":true}));
+        ls("skip-progress", Object.assign(lg("skip-progress",{}),{"stage-2":true}));
         confetti();
         say("Piko's rule is always +"+j+". You found the pattern!");
       }, 500);
@@ -620,7 +620,7 @@ function renderPattern(area, s){
           STATE.pattern.done = true;
           document.getElementById("pattern-success").innerHTML =
             '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">You found all the pattern numbers!</div><div class="success-sub">Every '+jump+'th number: '+Array.from({length:max/jump+1},function(_,i){return i*jump;}).join(", ")+'</div></div>';
-          ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-3":true}));
+          ls("skip-progress", Object.assign(lg("skip-progress",{}),{"stage-3":true}));
           confetti();
           say("You found the "+jump+"s pattern! Every "+jump+"th number!");
         }
@@ -682,7 +682,7 @@ function renderNext(area, s){
         say("Yes! "+next+" comes next!");
         document.getElementById("next-success").innerHTML =
           '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">'+seq.join(" \u2192 ")+" \u2192 "+next+'!</div><div class="success-sub">The jump is always +'+jump+'</div></div>';
-        ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-4":true}));
+        ls("skip-progress", Object.assign(lg("skip-progress",{}),{"stage-4":true}));
         confetti();
       } else {
         btn.classList.add("wrong");
@@ -755,7 +755,7 @@ function renderMissing(area, s){
         say("Yes! "+missing+" was missing!");
         document.getElementById("missing-success").innerHTML =
           '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">You found the missing number!</div><div class="success-sub">The sequence was '+seq.map(function(n){return n===null?"?":n;}).join(" \u2192 ")+'</div></div>';
-        ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-5":true}));
+        ls("skip-progress", Object.assign(lg("skip-progress",{}),{"stage-5":true}));
         confetti();
       } else {
         btn.classList.add("wrong");
@@ -818,7 +818,7 @@ function renderDetective(area, s){
         say("Correct! Piko jumps by +"+jump+" every time!");
         document.getElementById("det-success").innerHTML =
           '<div class="success-card"><div class="success-emoji">🎊</div><div class="success-text">You are a Rule Detective!</div><div class="success-sub">The rule was +'+jump+". Every jump is the same size!"+'</div></div>';
-        ls("sc-prog", Object.assign(lg("sc-prog",{}),{"stage-6":true}));
+        ls("skip-progress", Object.assign(lg("skip-progress",{}),{"stage-6":true}));
         confetti();
       } else {
         btn.classList.add("wrong");
@@ -887,7 +887,7 @@ function togglePanel(){
 function renderPanel(){
   var c = document.getElementById("pcontent");
   if(!c) return;
-  var prog = lg("sc-prog", {});
+  var prog = lg("skip-progress", {});
   c.innerHTML = '<div style="font-size:.78rem;opacity:.6;margin-bottom:14px">Piko\'s Skip Counting Journey</div>';
   STAGES.forEach(function(s){
     var done = !!prog["stage-"+s.id];

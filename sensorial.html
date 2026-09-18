@@ -363,47 +363,67 @@ function renderPinkTower(area){
     slot.dataset.idx = idx;
     slot.className = "pink-slot";
     slot.style.cssText = "width:100%;height:"+(size+4)+"px;max-width:"+(size+8)+"px;margin:0 auto";
-    slot.addEventListener("dragover", function(e){ e.preventDefault(); slot.classList.add("drag-over"); });
-    slot.addEventListener("dragleave", function(){ slot.classList.remove("drag-over"); });
-    slot.addEventListener("drop", function(e){
-      e.preventDefault();
-      slot.classList.remove("drag-over");
-      if(STATE===null) return;
-      var droppedSize = parseInt(e.dataTransfer.getData("text/plain"));
-      if(droppedSize === size && !STATE.pink.placed[idx]){
-        slot.classList.add("done");
-        slot.style.background = "rgba(76,175,80,.1)";
-        slot.innerHTML = '<div style="width:'+size+'px;height:'+size+'px;background:linear-gradient(135deg,#F8BBD9,#E91E8C);border-radius:4px"></div>';
-        STATE.pink.placed[idx] = true;
-        STATE.pink.correct++;
-        say("Good fit! "+(idx+1)+" of "+sizes.length);
-        if(STATE.pink.correct === sizes.length){
-          document.getElementById("pt-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Pink Tower complete!</div><div class="success-sub">You ordered the cubes from largest to smallest!</div></div>';
-          markDone("pinktower");
-          confetti();
-        }
-      } else if(STATE.pink.placed[idx]) {
-        say("That slot already has a cube!");
-      } else {
-        say("Try a different size there!");
-      }
-    });
     row.appendChild(label);
     row.appendChild(slot);
     slotsEl.appendChild(row);
   });
 
-  // Pool — shuffled cubes
+  // Pool — shuffled cubes with pointer-event drag
   var poolEl = document.getElementById("pt-pool");
   var shuffled = sizes.slice().sort(function(){return Math.random()-0.5;});
   shuffled.forEach(function(size){
     var cube = document.createElement("div");
-    cube.draggable = true;
     cube.innerHTML = '<div style="width:'+size+'px;height:'+size+'px;background:linear-gradient(135deg,#F8BBD9,#E91E8C);border-radius:4px;cursor:grab"></div>';
     cube.style.cssText = "display:flex;align-items:center;justify-content:center;cursor:grab;padding:4px";
-    cube.addEventListener("dragstart", function(e){
-      e.dataTransfer.setData("text/plain", String(size));
-      e.dataTransfer.effectAllowed = "move";
+    cube.dataset.size = size;
+    cube.addEventListener("pointerdown", function(ev){
+      ev.preventDefault();
+      if(STATE===null||STATE.pink===undefined) return;
+      var clone = cube.cloneNode(true);
+      clone.className = "drag-ghost";
+      clone.style.cssText = "position:fixed;left:"+ev.clientX+"px;top:"+ev.clientY+"px;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)";
+      clone.style.width = size+"px";
+      clone.style.height = size+"px";
+      document.body.appendChild(clone);
+      function onMove(e){
+        clone.style.left = e.clientX+"px";
+        clone.style.top = e.clientY+"px";
+        document.querySelectorAll(".pink-slot").forEach(function(s){ s.classList.remove("drag-over"); });
+        var el2 = document.elementFromPoint(e.clientX, e.clientY);
+        if(el2) { var b = el2.closest(".pink-slot"); if(b) b.classList.add("drag-over"); }
+      }
+      function onUp(e){
+        document.removeEventListener("pointermove", onMove);
+        document.removeEventListener("pointerup", onUp);
+        var rect = clone.getBoundingClientRect();
+        var cx = rect.left + rect.width/2;
+        var cy = rect.top + rect.height/2;
+        clone.remove();
+        document.querySelectorAll(".pink-slot").forEach(function(s){ s.classList.remove("drag-over"); });
+        var el2 = document.elementFromPoint(cx, cy);
+        var slot = el2 ? el2.closest(".pink-slot") : null;
+        if(!slot||STATE===null||STATE.pink===undefined) return;
+        var slotIdx = parseInt(slot.dataset.idx);
+        var slotSize = parseInt(slot.dataset.target);
+        if(isNaN(slotIdx)||STATE.pink.placed[slotIdx]) return;
+        if(size === slotSize){
+          slot.classList.add("done");
+          slot.style.background = "rgba(76,175,80,.1)";
+          slot.innerHTML = '<div style="width:'+size+'px;height:'+size+'px;background:linear-gradient(135deg,#F8BBD9,#E91E8C);border-radius:4px"></div>';
+          STATE.pink.placed[slotIdx] = true;
+          STATE.pink.correct++;
+          say("Good fit! "+(slotIdx+1)+" of "+sizes.length);
+          if(STATE.pink.correct === sizes.length){
+            document.getElementById("pt-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Pink Tower complete!</div><div class="success-sub">You ordered the cubes from largest to smallest!</div></div>';
+            markDone("pinktower");
+            confetti();
+          }
+        } else {
+          say("Try a different size there!");
+        }
+      }
+      document.addEventListener("pointermove", onMove);
+      document.addEventListener("pointerup", onUp);
     });
     poolEl.appendChild(cube);
   });
@@ -427,6 +447,9 @@ function renderBrownStairs(area){
   heights.forEach(function(h, idx){
     var row = document.createElement("div");
     row.style.cssText = "display:flex;align-items:center;gap:8px";
+    row.className = "bsslot-row";
+    row.dataset.idx = idx;
+    row.dataset.target = h;
     var label = document.createElement("div");
     label.innerHTML = (idx+1)+".";
     label.style.cssText = "width:20px;text-align:center;font-family:var(--font-h);font-size:.7rem;opacity:.4;flex-shrink:0";
@@ -434,29 +457,6 @@ function renderBrownStairs(area){
     slot.id = "bsslot-"+idx;
     slot.dataset.target = h;
     slot.style.cssText = "flex:1;height:"+h+"px;min-width:60px;background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.12);border-radius:4px;display:flex;align-items:center;justify-content:center;transition:all .2s";
-    slot.addEventListener("dragover", function(e){ e.preventDefault(); slot.classList.add("drag-over"); });
-    slot.addEventListener("dragleave", function(){ slot.classList.remove("drag-over"); });
-    slot.addEventListener("drop", function(e){
-      e.preventDefault();
-      slot.classList.remove("drag-over");
-      if(STATE===null) return;
-      var droppedH = parseInt(e.dataTransfer.getData("text/plain"));
-      if(droppedH === h && !STATE.brown.placed[idx]){
-        slot.classList.add("done");
-        slot.style.background = "rgba(76,175,80,.1)";
-        slot.innerHTML = '<div style="width:100%;height:'+h+'px;background:linear-gradient(to right,#6D4C41,#8D6E63);border-radius:4px"></div>';
-        STATE.brown.placed[idx] = true;
-        STATE.brown.correct++;
-        say("Good! Rod "+(idx+1));
-        if(STATE.brown.correct === heights.length){
-          document.getElementById("bs-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Brown Stairs complete!</div><div class="success-sub">Thickest to thinnest — you found the order!</div></div>';
-          markDone("brownstairs");
-          confetti();
-        }
-      } else if(!STATE.brown.placed[idx]) {
-        say("Try a different thickness!");
-      }
-    });
     row.appendChild(label);
     row.appendChild(slot);
     slotsEl.appendChild(row);
@@ -466,12 +466,55 @@ function renderBrownStairs(area){
   var shuffled = heights.slice().sort(function(){return Math.random()-0.5;});
   shuffled.forEach(function(h){
     var rod = document.createElement("div");
-    rod.draggable = true;
     rod.innerHTML = '<div style="width:120px;height:'+h+'px;background:linear-gradient(to right,#6D4C41,#8D6E63);border-radius:4px;cursor:grab"></div>';
     rod.style.cssText = "display:flex;align-items:center;justify-content:center;cursor:grab;padding:4px";
-    rod.addEventListener("dragstart", function(e){
-      e.dataTransfer.setData("text/plain", String(h));
-      e.dataTransfer.effectAllowed = "move";
+    rod.dataset.height = h;
+    rod.addEventListener("pointerdown", function(ev){
+      ev.preventDefault();
+      if(STATE===null||STATE.brown===undefined) return;
+      var clone = rod.cloneNode(true);
+      clone.style.cssText = "position:fixed;left:"+ev.clientX+"px;top:"+ev.clientY+"px;pointer-events:none;z-index:9999;transform:translate(-50%,-50%)";
+      clone.style.width = "120px";
+      document.body.appendChild(clone);
+      function onMove(e){
+        clone.style.left = e.clientX+"px";
+        clone.style.top = e.clientY+"px";
+        document.querySelectorAll(".bsslot-row").forEach(function(s){ s.classList.remove("drag-over"); });
+        var el2 = document.elementFromPoint(e.clientX, e.clientY);
+        if(el2) { var b = el2.closest(".bsslot-row"); if(b) b.classList.add("drag-over"); }
+      }
+      function onUp(e){
+        document.removeEventListener("pointermove", onMove);
+        document.removeEventListener("pointerup", onUp);
+        var rect = clone.getBoundingClientRect();
+        var cx = rect.left + rect.width/2;
+        var cy = rect.top + rect.height/2;
+        clone.remove();
+        document.querySelectorAll(".bsslot-row").forEach(function(s){ s.classList.remove("drag-over"); });
+        var el2 = document.elementFromPoint(cx, cy);
+        var slotEl = el2 ? el2.closest(".bsslot-row") : null;
+        if(!slotEl||STATE===null||STATE.brown===undefined) return;
+        var slotIdx = parseInt(slotEl.dataset.idx);
+        var slotH = parseInt(slotEl.dataset.target);
+        if(isNaN(slotIdx)||STATE.brown.placed[slotIdx]) return;
+        if(h === slotH){
+          slotEl.classList.add("done");
+          slotEl.style.background = "rgba(76,175,80,.1)";
+          slotEl.innerHTML = '<div style="width:100%;height:'+h+'px;background:linear-gradient(to right,#6D4C41,#8D6E63);border-radius:4px"></div>';
+          STATE.brown.placed[slotIdx] = true;
+          STATE.brown.correct++;
+          say("Good! Rod "+(slotIdx+1));
+          if(STATE.brown.correct === heights.length){
+            document.getElementById("bs-success").innerHTML = '<div class="success-card"><div class="success-emoji">&#127882;</div><div class="success-text">Brown Stairs complete!</div><div class="success-sub">Thickest to thinnest — you found the order!</div></div>';
+            markDone("brownstairs");
+            confetti();
+          }
+        } else {
+          say("Try a different thickness!");
+        }
+      }
+      document.addEventListener("pointermove", onMove);
+      document.addEventListener("pointerup", onUp);
     });
     poolEl.appendChild(rod);
   });

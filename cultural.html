@@ -160,7 +160,7 @@ const SECTIONS=[
   {id:'sci',emoji:'🔬',title:'Science',desc:'Objects & propertiesnya',color:'#1B5E20',
     missions:['Coba di kamar mandi: benda apa mengapung, apa tenggelam?','Stick a magnet to different objects!'],
     exps:[
-      {id:'sink',name:'Tenggelam atau Mengapung?',tagline:'Kenapa sesuatu mengapung?',type:'sink'},
+      {id:'sink',name:'Sink or Float?',tagline:'Kenapa sesuatu mengapung?',type:'sink'},
       {id:'magnet',name:'Magnet atau Bukan?',tagline:'Magnet hanya menarik logam tertentu',type:'magnet'},
       {id:'hotcold',name:'Hot or Cold?',tagline:'Temperature and changing states',type:'hotcold'},
     ]},
@@ -260,7 +260,7 @@ function openSection(section){
   });
   const missDiv=document.createElement('div');
   missDiv.className='offline-mission';
-  missDiv.innerHTML=`<div class="emoji">🌍</div><div><div class="title">Misi di World Nyata</div><div class="text">${section.missions.map(m=>'• '+m).join('<br>')}</div></div>`;
+  missDiv.innerHTML=`<div class="emoji">🌍</div><div><div class="title">Real-World Mission</div><div class="text">${section.missions.map(m=>'• '+m).join('<br>')}</div></div>`;
   area.appendChild(missDiv);
   showScreen('section');
 }
@@ -284,7 +284,7 @@ function openExp(exp,section){
     case'plantparts':renderPlantParts(area);break;
     case'animals':renderAnimals(area);break;
     case'foodchain':renderFoodChain(area);break;
-    default:area.innerHTML='<div class="demo-box"><div style="font-size:2rem;">🔭</div><div>Segera hadir!</div></div>';
+    default:area.innerHTML='<div class="demo-box"><div style="font-size:2rem;">🔭</div><div>Coming soon!</div></div>';
   }
   showScreen('exp');
 }
@@ -303,13 +303,13 @@ function renderGlobe(area){
     <div class="demo-box">
       <div class="demo-label">Putar globe dan lihat tempat baru!</div>
       <div style="font-size:5rem;" id="globe-emoji">🌍</div>
-      <div style="font-family:var(--font-h);font-size:1.2rem;color:var(--gold);margin-top:8px;" id="globe-name">🌍 Bumi — tempat kita tinggal</div>
-      <div class="exp-instruction" id="globe-fact">Tap tombol untuk pergi ke tempat baru!</div>
+      <div style="font-family:var(--font-h);font-size:1.2rem;color:var(--gold);margin-top:8px;" id="globe-name">🌍 Earth — where we live</div>
+      <div class="exp-instruction" id="globe-fact">Tap the button to visit a new place!</div>
       <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:8px;">
         ${locations.map((l,i)=>`<button onclick="spinGlobe(${i})" class="btn btn-secondary" style="font-size:1.5rem;padding:10px;">${l.emoji}</button>`).join('')}
       </div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('globe');say('Bumi itu bulat dan indah!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('globe');say('The Earth is round and beautiful!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._globeLocations=locations;
 }
@@ -340,7 +340,7 @@ function renderContinents(area){
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">7 Benua di World</div>
+      <div class="demo-label">7 Continents</div>
       <div class="animal-grid">
         ${conts.map((c,i)=>`
           <button class="animal-card" id="cont-${i}" onclick="showContinent(${i})">
@@ -349,9 +349,9 @@ function renderContinents(area){
           </button>
         `).join('')}
       </div>
-      <div class="exp-instruction" id="cont-fact">Tap benua untuk tahu fakta menarik!</div>
+      <div class="exp-instruction" id="cont-fact">Tap a continent to learn a fascinating fact!</div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('continents');say('Ada 7 benua di dunia!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('continents');say('There are 7 continents in the world!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._continents=conts;
 }
@@ -373,20 +373,20 @@ function renderOzean(area){
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Laut semakin dalam dan gelap</div>
+      <div class="demo-label">The ocean gets deeper and darker</div>
       ${zones.map((z,i)=>`
         <button class="zone-item" id="zone-${i}" onclick="showZone(${i})" style="background:${z.color}22;border:2px solid ${z.color}55;">
           <div class="zone-emoji">${z.emoji}</div>
           <div>
             <div class="zone-name">${z.name}</div>
-            <div class="zone-depth">Kedalaman: ${z.depth}</div>
+            <div class="zone-depth">Depth: ${z.depth}</div>
           </div>
           <div style="margin-left:auto;font-size:.75rem;opacity:.6">→</div>
         </button>
       `).join('')}
-      <div class="exp-instruction" id="zone-fact">Tap zona untuk tahu hewan di dalamnya!</div>
+      <div class="exp-instruction" id="zone-fact">Tap a zone to learn about its animals!</div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('ozean');say('Laut sangat dalam dan penuh kehidupan!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('ozean');say('The ocean is very deep and full of life!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._ozeanZones=zones;
 }
@@ -394,16 +394,16 @@ function showZone(i){
   const z=window._ozeanZones[i];
   document.querySelectorAll('.zone-item').forEach((el,j)=>el.style.borderColor=j===i?z.color:z.color+'55');
   const fact=document.getElementById('zone-fact');
-  if(fact)fact.textContent=`${z.emoji} ${z.name}: ${z.fact}\nHewan: ${z.animals}`;
-  say(z.fact+'. Hewan: '+z.animals);
+  if(fact)fact.textContent=`${z.emoji} ${z.name}: ${z.fact}\nAnimals: ${z.animals}`;
+  say(z.fact+'. Animals: '+z.animals);
 }
 
 // ── HISTORY TIMELINE ──
 function renderHistTimeline(area){
   const eras=[
-    {emoji:'🌌',name:'4.5 Miliar Tahun Lalu',desc:'Bumi terbentuk dari gas dan debu'},
+    {emoji:'🌌',name:'4.5 Miliar Tahun Lalu',desc:'Earth terbentuk dari gas dan debu'},
     {emoji:'🦠',name:'3 Miliar Tahun Lalu',desc:'Life pertama muncul di laut'},
-    {emoji:'🦕',name:'250 Juta Tahun Lalu',desc:'Dinosaurus berjalan di Bumi'},
+    {emoji:'🦕',name:'250 Juta Tahun Lalu',desc:'Dinosaurs berjalan di Earth'},
     {emoji:'🧒',name:'200 Ribu Tahun Lalu',desc:'Humans pertama (Homo sapiens)'},
     {emoji:'🏠',name:'Now',desc:'8 miliar manusia di seluruh dunia'},
   ];
@@ -417,12 +417,12 @@ function renderHistTimeline(area){
         </button>
       `).join('')}
     </div>
-    <button class="btn btn-primary" onclick="markDone('timeline');say('Waktu sangat panjang!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('timeline');say('Time is very long!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._eras=[
-    '4.5 miliar tahun lalu: Bumi terbentuk dari awan gas dan debu antarbintang!',
+    '4.5 miliar tahun lalu: Earth terbentuk dari awan gas dan debu antarbintang!',
     '3 miliar tahun lalu: Bakteri pertama muncul di laut!',
-    '250 juta tahun lalu: Dinosaurus berjalan di Bumi selama 180 juta tahun!',
+    '250 million years lalu: Dinosaurs berjalan di Earth selama 180 million years!',
     '200 ribu tahun lalu: Humans pertama muncul di Afrika!',
     'Now: 8 miliar manusia membangun civilization!',
   ];
@@ -438,17 +438,17 @@ function renderAges(area){
   area.innerHTML=`
     <div class="demo-box">
       <div class="demo-label">Waktu sangat panjang</div>
-      <div style="font-family:var(--font-h);font-size:2rem;color:var(--gold);margin:10px 0;">${state.profile.name||'You'} sudah hidup... <span id="my-age">6</span> tahun!</div>
-      <div style="font-size:.8rem;opacity:.6;">Itu sekitar ${6*365} hari! 🎂</div>
+      <div style="font-family:var(--font-h);font-size:2rem;color:var(--gold);margin:10px 0;">${state.profile.name||'You'} has been alive for  <span id="my-age">6</span> tahun!</div>
+      <div style="font-size:.8rem;opacity:.6;">That is about ${6*365} days! 🎂</div>
     </div>
     <div class="exp-instruction">
-      🦕 Dinosaurus sudah punah 65 juta tahun yang lalu.<br>
-      🐱 Kucing bisa hidup 15 tahun.<br>
-      🐢 Kura-kura bisa hidup 100 tahun lebih.<br>
-      🪨 Beberapa gunung berusia 100 juta tahun!<br>
-      ⏳ Semua waktu ini sangat pendek dibanding usia Bumi (4.5 miliar tahun).
+      🦕 Dinosaurs became extinct 65 million years ago.<br>
+      🐱 Cats can live 15 years.<br>
+      🐢 Tortoises can live over 100 years.<br>
+      🪨 Some mountains are 100 million years old!<br>
+      ⏳ Semua waktu ini sangat pendek dibanding usia Earth (4.5 miliar tahun).
     </div>
-    <button class="btn btn-primary" onclick="markDone('ages');say('Waktu sangat panjang!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('ages');say('Time is very long!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
 }
 
@@ -462,7 +462,7 @@ function renderSink(area){
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label" id="sink-q">Prediksi: Tenggelam atau Mengapung?</div>
+      <div class="demo-label" id="sink-q">Prediksi: Sink or Float?</div>
       <div class="animal-grid">
         ${items.map((item,i)=>`
           <button class="animal-card" id="sink-${i}" onclick="testSink(${i})">
@@ -474,11 +474,11 @@ function renderSink(area){
       <div class="exp-instruction" id="sink-result"></div>
     </div>
     <div class="exp-instruction">
-      💡 Kayu mengapung karena lebih ringan dari air.<br>
-      🪨 Batu tenggelam karena lebih berat.<br>
+      💡 Wood floats because it is lighter than water.<br>
+      🪨 Rocks sink because they are heavier.<br>
       🪶 Bulu mengapung karena ada udara di dalamnya!
     </div>
-    <button class="btn btn-primary" onclick="markDone('sink');say('Kepadatan menentukan tenggelam atau mengapung!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('sink');say('Density determines whether something sinks or floats!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._sinkItems=items;
 }
@@ -489,7 +489,7 @@ function testSink(i){
   if(result){
     if(item.sink){
       result.innerHTML=`<span style="color:#EF5350">${item.emoji} ${item.name} — TENGGELAM! ⬇️</span>`;
-      say(item.name+' tenggelam karena lebih berat dari air.');
+      say(item.name+' tenggelam karena heavier dari air.');
     } else {
       result.innerHTML=`<span style="color:var(--green)">${item.emoji} ${item.name} — MENGAPUNG! ⬆️</span>`;
       say(item.name+' mengapung!');
@@ -507,9 +507,9 @@ function renderMagnet(area){
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Seret magnet ke benda untuk tes!</div>
+      <div class="demo-label">Drag the magnet to an object to test it!</div>
       <div style="font-size:4rem;margin:10px 0;" id="magnet-display">🧲</div>
-      <div style="font-size:.82rem;opacity:.6;" id="magnet-msg">Tap benda untuk tes dengan magnet!</div>
+      <div style="font-size:.82rem;opacity:.6;" id="magnet-msg">Tap an object to test it with the magnet!</div>
       <div class="animal-grid">
         ${items.map((item,i)=>`
           <button class="animal-card" id="mag-${i}" onclick="testMagnet(${i})">
@@ -520,7 +520,7 @@ function renderMagnet(area){
       </div>
     </div>
     <div class="exp-instruction">🧲 Magnet menarik benda dari besi dan nikel. Logam lain seperti aluminium, emas, perak tidak tertarik magnet!</div>
-    <button class="btn btn-primary" onclick="markDone('magnet');say('Magnet hanya menarik logam tertentu!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('magnet');say('Magnets only attract certain metals!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._magnetItems=items;
 }
@@ -542,7 +542,7 @@ function testMagnet(i){
 function renderHotCold(area){
   const items=[
     {emoji:'🧊',name:'Es',temp:-5,state:'Padat',color:'#42A5F5'},{emoji:'💧',name:'Air',temp:25,state:'Cair',color:'#1565C0'},
-    {emoji:'☀️',name:'Sinar Matahari',temp:35,state:'Cair',color:'#FFD700'},{emoji:'🌡️',name:'Tubuh manusia',temp:37,state:'Cair',color:'#EF5350'},
+    {emoji:'☀️',name:'Sinar Matahari',temp:35,state:'Cair',color:'#FFD700'},{emoji:'🌡️',name:'Human bsia',temp:37,state:'Cair',color:'#EF5350'},
     {emoji:'🔥',name:'Api',temp:300,state:'Gas',color:'#FF5722'},{emoji:'🥶',name:'Antartika',temp:-40,state:'Padat',color:'#90CAF9'},
     {emoji:'🌋',name:'Lava',temp:1200,state:'Cair',color:'#B71C1C'},{emoji:'💨',name:'Uap',temp:100,state:'Gas',color:'#B0BEC5'},
   ];
@@ -557,14 +557,14 @@ function renderHotCold(area){
           </button>
         `).join('')}
       </div>
-      <div class="exp-instruction" id="temp-result">Tap untuk lihat suhu dan wujud!</div>
+      <div class="exp-instruction" id="temp-result">Tap to see temperature and state of matter!</div>
     </div>
     <div class="exp-instruction">
-      🌡️ Suhu mengukur panas atau dingin.<br>
+      🌡️ Temperature measures how hot or cold something is.<br>
       💧 Air menjadi es di 0°C dan menguap di 100°C.<br>
       🧊 Semakin dingin, partikel bergerak lebih lambat.
     </div>
-    <button class="btn btn-primary" onclick="markDone('hotcold');say('Suhu mengubah wujud benda!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('hotcold');say('Temperature changes the state of matter!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._tempItems=items;
 }
@@ -587,15 +587,15 @@ function renderPlantParts(area){
   ];
   area.innerHTML=`
     <div class="demo-box">
-      <div class="demo-label">Setiap bagian tumbuhan punya tugas!</div>
+      <div class="demo-label">Every part of a plant has a job!</div>
       ${parts.map((p,i)=>`
         <button onclick="showPart(${i})" style="background:${p.color}22;border:2px solid ${p.color}55;border-radius:12px;padding:10px 14px;color:var(--cream);cursor:pointer;display:flex;gap:10px;align-items:center;text-align:left;font-family:var(--font-b);font-size:.85rem;width:100%;margin-bottom:6px;">
           <span style="font-size:1.5rem;">${p.emoji}</span>
-          <span><strong>${p.name}</strong><br><span style="opacity:.7;font-size:.75rem;" id="part-func-${i}">Tap untuk tahu fungsi →</span></span>
+          <span><strong>${p.name}</strong><br><span style="opacity:.7;font-size:.75rem;" id="part-func-${i}">Tap to learn what it does →</span></span>
         </button>
       `).join('')}
     </div>
-    <button class="btn btn-primary" onclick="markDone('plantparts');say('Setiap bagian tumbuhan punya tugas penting!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <button class="btn btn-primary" onclick="markDone('plantparts');say('Every part of a plant has an important job!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._plantParts=parts;
 }
@@ -634,7 +634,7 @@ function renderAnimals(area){
         `).join('')}
       </div>
     </div>
-    <button class="btn btn-primary" onclick="markDone('animals');say('Pengelompokan hewan penting untuk sains!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Done!</button>
+    <button class="btn btn-primary" onclick="markDone('animals');say('Classifying animals is important for science!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Done!</button>
   `;
   window._animals=animals;
 }
@@ -649,7 +649,7 @@ function classifyAnimal(i,type){
 function renderFoodChain(area){
   const steps=[
     {emoji:'☀️',name:'Matahari',desc:'Sumber energi semua kehidupan',color:'#FFF176'},
-    {emoji:'🌿',name:'Tumbuhan',desc:'Menangkap cahaya, membuat makanan',color:'#81C784'},
+    {emoji:'🌿',name:'Plant',desc:'Menangkap cahaya, membuat makanan',color:'#81C784'},
     {emoji:'🐰',name:'Pemakan Tumbuhan',desc:'Get energi dari tumbuhan',color:'#FF8A65'},
     {emoji:'🐍',name:'Pemakan Daging',desc:'Get energi dari hewan lain',color:'#EF5350'},
   ];
@@ -663,11 +663,11 @@ function renderFoodChain(area){
         </button>
       `).join('')}
     </div>
-    <div class="exp-instruction">Tidak ada yang menciptakan energi. Matahari memberi, tumbuhan tangkap, hewan makan tumbuhan, predator makan herbivora.</div>
-    <button class="btn btn-primary" onclick="markDone('foodchain');say('Energy flows from the Sun melalui semua makhluk!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
+    <div class="exp-instruction">Nobody creates energy. The Sun gives it, plants capture it, animals eat plants, predators eat herbivores.</div>
+    <button class="btn btn-primary" onclick="markDone('foodchain');say('Energy flows from the Sun through all living things!')" style="width:100%;max-width:320px;display:block;margin:12px auto;">✅ Got it!</button>
   `;
   window._chain=[
-    'Matahari adalah sumber energi utama. Tanpa Matahari, tidak ada kehidupan di Bumi.',
+    'Matahari adalah sumber energi utama. Tanpa Matahari, tidak ada kehidupan di Earth.',
     'Tumbuhan adalah producer. Membuat makanan sendiri dari cahaya Matahari lewat fotosintesis.',
     'Herbivora adalah consumer. Makan tumbuhan untuk mendapat energi.',
     'Karnivora adalah predator. Makan hewan lain untuk mendapat energi.',
