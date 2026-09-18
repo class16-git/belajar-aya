@@ -796,10 +796,12 @@ function showOfflineMission(key, nextUrl){
         "<div class=\"omi-q-hint\">Ask this after the activity — there is no wrong answer.</div>"+
       "</div>"+
       "<div class=\"omi-section\"><div class=\"omi-label\">Done when</div><div class=\"omi-value\">"+m.finish+"</div></div>"+
-      "<button class=\"omi-close\" onclick=\"this.closest('[style*=&quot;position:fixed&quot;]').remove()\">Done — go back</button>"+
+      "<button class=\"omi-close\" onclick='closeMission(this.parentNode)'>Done — go back</button>"+
     "</div>";
   container.appendChild(el);
 }
+
+function closeMission(el){if(el&&el.parentNode)el.parentNode.removeChild(el);}
 
 function showMission(key){
   showOfflineMission(key);

@@ -889,6 +889,8 @@ function togglePanel(){
 }
 
 
+function closeMission(el){if(el&&el.parentNode)el.parentNode.removeChild(el);}
+
 function showMission(id){
   if(!window.MISSIONS||!window.MISSIONS[id])return;
   var m=window.MISSIONS[id];
@@ -903,7 +905,7 @@ function showMission(id){
     "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Safety</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.safety+"</div></div>"+
     "<div style=\"background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:12px;padding:10px;margin-top:8px\"><div style=\"font-size:.88rem;color:#FFD700;font-style:italic;margin-bottom:4px\">\""+m.question+"\"</div></div>"+
     "<div style=\"margin:8px 0;text-align:left\"><div style=\"font-size:.68rem;color:#A5D6A7;margin-bottom:4px\">Done when</div><div style=\"font-size:.82rem;color:#FFF8F0\">"+m.finish+"</div></div>"+
-    "<button onclick=\"this.closest('[style*=\"position:fixed\"]').remove()\" style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:12px;font-family:var(--font-b);font-weight:600;display:block;width:100%\">Done</button>"+
+    "<button onclick='closeMission(this.parentNode)' style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:12px;font-family:var(--font-b);font-weight:600;display:block;width:100%\">Done</button>"+
     "</div>";
   document.body.appendChild(el);
 }

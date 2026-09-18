@@ -214,6 +214,8 @@ function markDone(id){
   if(typeof showMission==="function"){setTimeout(function(){showMission(id);},800);}
 }
 
+function closeMission(el){if(el&&el.parentNode)el.parentNode.removeChild(el);}
+
 function showMission(id){
   if(!window.MISSIONS||!window.MISSIONS[id])return;
   var m=window.MISSIONS[id];
@@ -228,7 +230,7 @@ function showMission(id){
     "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Safety</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.safety+"</div></div>"+
     "<div style=\"background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:12px;padding:12px 14px;margin-top:12px\"><div style=\"font-size:.88rem;color:#FFD700;font-style:italic;margin-bottom:8px\">&quot;"+m.question+"&quot;</div><div style=\"font-size:.72rem;color:rgba(255,248,240,.6)\">Ask after the activity.</div></div>"+
     "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Done when</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.finish+"</div></div>"+
-    "<button onclick=\"this.closest('[style*=&quot;position:fixed&quot;]').remove()\" style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:14px;font-family:var(--font-b);font-weight:600;display:block;width:100%\">Done</button>"+
+    "<button onclick='closeMission(this.parentNode)' style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:14px;font-family:var(--font-b);font-weight:600;display:block;width:100%\">Done</button>"+
     "</div>";
   document.body.appendChild(el);
 }
