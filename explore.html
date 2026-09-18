@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Exploration Lab — Belajar Aya</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0a0a1a;
+  color: #e0e0e0;
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.stars {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 0;
+}
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+.header {
+  position: relative; z-index: 1;
+  padding: 32px 20px 20px;
+  text-align: center;
+}
+.header h1 {
+  font-size: 1.6rem;
+  color: #00BCD4;
+  margin-bottom: 6px;
+}
+.header p {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  line-height: 1.5;
+  max-width: 340px;
+  margin: 0 auto;
+}
+.grid {
+  position: relative; z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 12px 16px 100px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.sim-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 16px 12px;
+  cursor: pointer;
+  transition: transform 0.15s, border-color 0.2s;
+  text-align: center;
+}
+.sim-card:active { transform: scale(0.96); }
+.sim-card .emoji {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+.sim-card .name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  margin-bottom: 4px;
+}
+.sim-card .desc {
+  font-size: 0.68rem;
+  opacity: 0.55;
+  line-height: 1.4;
+}
+.fab {
+  position: fixed;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem;
+  z-index: 100;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+.fab:active { transform: scale(0.92); }
+.fab-home {
+  background: rgba(255,255,255,0.12);
+  bottom: 20px; left: 20px;
+  backdrop-filter: blur(10px);
+}
+.fab-parent {
+  background: rgba(0,188,212,0.25);
+  border: 1px solid rgba(0,188,212,0.4);
+  bottom: 20px; right: 20px;
+  backdrop-filter: blur(10px);
+}
+.badge {
+  display: inline-block;
+  background: rgba(0,188,212,0.2);
+  color: #00BCD4;
+  font-size: 0.6rem;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+.badge-soon {
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.4);
+}
+</style>
+</head>
+<body>
+<div class="stars" id="stars"></div>
+<div class="header">
+  <h1>Exploration Lab</h1>
+  <p>See how the world works. Each simulation lets you discover a science idea — then explore it in real life.</p>
+</div>
+<div class="grid" id="grid"></div>
+
+<!-- FABs -->
+<button class="fab fab-home" onclick="goHome()">🏠</button>
+<button class="fab fab-parent" onclick="showParent()">👤</button>
+
+<script>
+var STORAGE_KEYS = {
+  PROGRESS: "explore-progress",
+  PROFILE: "aya-profile"
+};
+var STORAGE_VERSION = "1";
+
+function lsGet(k, def) {
+  try {
+    var v = localStorage.getItem(k);
+    return v ? JSON.parse(v) : def;
+  } catch(e) { return def; }
+}
+function lsSet(k, v) {
+  try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {}
+}
+function markDone(id) {
+  var p = lsGet(STORAGE_KEYS.PROGRESS, {});
+  if (!p[id]) { p[id] = true; lsSet(STORAGE_KEYS.PROGRESS, p); }
+  updateBadges();
+}
+
+var SIMS = [{"id": "gravity", "emoji": "🪐", "name": "Gravity & Orbits", "desc": "Watch objects curve around planets — discover what gravity really is", "file": "gravity-orbits.html", "color": "#7C4DFF"}, {"id": "moon", "emoji": "🌙", "name": "Moon Phases", "desc": "Drag the moon and watch it change shape", "file": "moon-phases.html", "color": "#B0BEC5"}, {"id": "water", "emoji": "💧", "name": "Water Cycle", "desc": "Evaporation, condensation, rain — the endless loop", "file": "water-cycle.html", "color": "#29B6F6"}, {"id": "plant", "emoji": "🌱", "name": "Plant Growth", "desc": "From seed to flower — watch a plant come to life", "file": "plant-growth.html", "color": "#66BB6A"}, {"id": "daynight", "emoji": "🌍", "name": "Day & Night", "desc": "Why is it dark on the other side of the world?", "file": "day-night.html", "color": "#FFA726"}, {"id": "food", "emoji": "🦊", "name": "Food Chain", "desc": "Energy flows from the sun to everything alive", "file": "food-chain.html", "color": "#FF7043"}, {"id": "matter", "emoji": "🧊", "name": "States of Matter", "desc": "Solid, liquid, gas — same stuff, different dance", "file": "states-of-matter.html", "color": "#26C6DA"}, {"id": "shadow", "emoji": "⏰", "name": "Shadow Clock", "desc": "Before clocks existed, shadows told the time", "file": "shadow-clock.html", "color": "#8D6E63"}, {"id": "float", "emoji": "🚢", "name": "Floating & Sinking", "desc": "Why do heavy ships float but tiny stones sink?", "file": "floating-sinking.html", "color": "#42A5F5"}, {"id": "sound", "emoji": "🔊", "name": "Sound Vibrations", "desc": "See what you hear — watch sound move", "file": "sound-vibrations.html", "color": "#EC407A"}];
+
+function updateBadges() {
+  var p = lsGet(STORAGE_KEYS.PROGRESS, {});
+  document.querySelectorAll(".sim-card").forEach(function(card) {
+    var id = card.dataset.id;
+    var badge = card.querySelector(".badge");
+    if (p[id]) {
+      badge.textContent = "Done ✓";
+      badge.className = "badge";
+    } else {
+      badge.textContent = "Explore";
+      badge.className = "badge";
+    }
+  });
+}
+
+function openSim(file) {
+  window.location.href = file;
+}
+
+function goHome() {
+  window.location.href = "index.html";
+}
+
+function showParent() {
+  var p = document.createElement("div");
+  p.style.cssText = "position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.85);z-index:200;display:flex;align-items:center;justify-content:center;padding:24px;";
+  p.onclick = function() { p.remove(); };
+  var inner = document.createElement("div");
+  inner.style.cssText = "background:#1a1a2e;border-radius:20px;padding:28px 24px;max-width:360px;width:100%;text-align:center;";
+  inner.onclick = function(e) { e.stopPropagation(); };
+  var sims = lsGet(STORAGE_KEYS.PROGRESS, {});
+  var done = Object.keys(sims).filter(function(k) { return sims[k]; }).length;
+  var total = 10;
+  inner.innerHTML = "<h2 style='font-size:1.1rem;margin-bottom:12px;color:#00BCD4;'>Parent Panel</h2>" +
+    "<p style='font-size:0.8rem;opacity:0.7;line-height:1.6;margin-bottom:16px;'>" +
+    "Exploration Lab has " + total + " simulations. Your child has explored <strong>" + done + "</strong> of them so far.</p>" +
+    "<p style='font-size:0.75rem;opacity:0.5;line-height:1.5;'>Each simulation teaches a science concept through interactive exploration. " +
+    "At the end, a Real World Mission invites your child to discover the same idea in the real world.</p>";
+  p.appendChild(inner);
+  document.body.appendChild(p);
+}
+
+// Render stars
+(function() {
+  var s = document.getElementById("stars");
+  for (var i = 0; i < 80; i++) {
+    var st = document.createElement("div");
+    st.className = "star";
+    var sz = Math.random() * 2 + 1;
+    st.style.cssText = "width:" + sz + "px;height:" + sz + "px;left:" + (Math.random()*100) + "%;top:" + (Math.random()*100) + "%;opacity:" + (Math.random()*0.6+0.2);
+    s.appendChild(st);
+  }
+})();
+
+// Render simulation cards
+(function() {
+  var g = document.getElementById("grid");
+  SIMS.forEach(function(sim) {
+    var card = document.createElement("div");
+    card.className = "sim-card";
+    card.dataset.id = sim.id;
+    card.style.borderColor = sim.color + "33";
+    card.innerHTML = "<span class='emoji'>" + sim.emoji + "</span>" +
+      "<span class='name'>" + sim.name + "</span>" +
+      "<span class='desc'>" + sim.desc + "</span>" +
+      "<span class='badge badge-soon'>Explore</span>";
+    card.onclick = function() { markDone(sim.id); openSim(sim.file); };
+    g.appendChild(card);
+  });
+  updateBadges();
+})();
+</script>
+</body>
+</html>
