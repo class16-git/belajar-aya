@@ -6,282 +6,460 @@
 <title>Belajar Aya — Learning Home</title>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07071A;--card:#12123A;--gold:#FFD700;--green:#4CAF50;--cream:#FFF8F0;--shadow:0 4px 24px rgba(0,0,0,.35);--font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif}
+:root{
+  --bg:#07071A;--card:#12123A;--card2:#1a1a40;
+  --gold:#FFD700;--green:#4CAF50;--blue:#42A5F5;
+  --red:#EF5350;--purple:#AB47BC;--pink:#F48FB1;
+  --orange:#FF7043;--cyan:#26C6DA;--cream:#FFF8F0;
+  --font-h:'Fredoka One',cursive;
+  --font-b:'Quicksand',sans-serif;
+}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
-body{background:var(--bg);font-family:var(--font-b);color:var(--cream);overflow-y:auto;-webkit-overflow-scrolling:touch;touch-action:manipulation}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+body{
+  background:var(--bg);font-family:var(--font-b);
+  color:var(--cream);touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;user-select:none;
+}
 .screen{display:none;min-height:100dvh;flex-direction:column}
-.screen.active{display:flex}
-.stars{position:fixed;inset:0;pointer-events:none;z-index:0}
-.star{position:absolute;background:#fff;border-radius:50%;animation:twinkle 3s ease-in-out infinite}
-@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.9}}
-.top-bar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
-.top-title{font-family:var(--font-h);font-size:.9rem;color:var(--gold)}
-.top-btn{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
-.top-btn:active{transform:scale(.92)}
-.hero{padding:8px 16px 20px;position:relative;z-index:1;text-align:center}
-.hero-title{font-family:var(--font-h);font-size:2rem;color:var(--gold);margin-bottom:4px}
-.hero-sub{font-size:.8rem;opacity:.5;line-height:1.4}
-.offline-banner{display:none;background:rgba(76,175,80,.15);border:1px solid rgba(76,175,80,.3);color:var(--green);padding:8px 16px;text-align:center;font-size:.78rem;position:relative;z-index:1}
+.screen.on{display:flex}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;background:#fff;border-radius:50%;animation:tw var(--d,3s) ease-in-out infinite;animation-delay:var(--dl,0s)}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+
+.tbar{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:10px 16px 8px;background:linear-gradient(to bottom,var(--bg) 70%,transparent)}
+.tbar-btn{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.tbar-back{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);font-size:1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.tbar-btn:active,.tbar-back:active{transform:scale(.9)}
+.tbar-title{font-family:var(--font-h);font-size:.9rem;color:var(--gold)}
+
+.hero{padding:16px 16px 12px;position:relative;z-index:1;text-align:center}
+.hero-emoji{font-size:4rem;margin-bottom:4px}
+.hero-title{font-family:var(--font-h);font-size:1.6rem;color:var(--gold)}
+.hero-sub{font-size:.78rem;opacity:.5;margin-top:4px}
+.hero-name{font-size:.9rem;color:var(--gold);opacity:.8;margin-top:2px}
+
+.scroll-area{position:relative;z-index:1;padding:0 16px 100px;overflow-y:auto}
+
+/* Montessori sections */
+.section{margin-bottom:24px}
+.section-label{
+  font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;
+  opacity:.35;margin-bottom:8px;padding-left:2px;
+}
+.section-title{
+  font-family:var(--font-h);font-size:1rem;
+  margin-bottom:10px;padding-left:2px;
+}
+
+/* Curriculum cards — 2-col grid */
+.curriculum-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ccard{
+  background:var(--card);border-radius:16px;padding:14px 12px;
+  box-shadow:0 4px 16px rgba(0,0,0,.35);cursor:pointer;border:none;
+  width:100%;text-align:left;color:var(--cream);
+  display:flex;flex-direction:column;gap:4px;
+  transition:transform .15s;position:relative;overflow:hidden;
+  font-family:var(--font-b);
+}
+.ccard:active{transform:scale(.97)}
+.ccard.locked{opacity:.45;cursor:not-allowed}
+.ccard.locked:active{transform:none}
+.ccard-banner{
+  position:absolute;top:0;right:0;
+  padding:3px 8px;border-radius:0 14px 0 8px;
+  font-size:.6rem;font-family:var(--font-h);
+  background:rgba(0,0,0,.25);
+}
+.ccard-emoji{font-size:2rem;margin-bottom:4px}
+.ccard-name{font-family:var(--font-h);font-size:.85rem}
+.ccard-desc{font-size:.68rem;opacity:.5;line-height:1.3}
+.ccard-bar{height:4px;background:rgba(255,255,255,.1);border-radius:2px;margin-top:6px;overflow:hidden}
+.ccard-fill{height:100%;border-radius:2px;transition:width .4s}
+
+/* Cosmic section — full width */
+.cosmic-card{
+  background:linear-gradient(135deg,#1a0a3a 0%,#12123a 100%);
+  border-radius:16px;padding:16px;cursor:pointer;border:none;
+  width:100%;text-align:left;color:var(--cream);
+  display:flex;align-items:center;gap:14px;
+  transition:transform .15s;box-shadow:0 4px 16px rgba(0,0,0,.35);
+  font-family:var(--font-b);
+}
+.cosmic-card:active{transform:scale(.98)}
+.cosmic-emoji{font-size:2.5rem;flex-shrink:0}
+.cosmic-title{font-family:var(--font-h);font-size:.95rem;margin-bottom:2px}
+.cosmic-desc{font-size:.72rem;opacity:.55;line-height:1.3}
+
+/* Offline banner */
+.offline-banner{
+  background:rgba(76,175,80,.15);border:1px solid rgba(76,175,80,.3);
+  color:var(--green);padding:8px 16px;text-align:center;font-size:.78rem;
+  margin:0 -16px;display:none;
+}
 .offline-banner.show{display:block}
-.app-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 16px 100px;position:relative;z-index:1}
-.app-card{background:var(--card);border-radius:20px;padding:16px 14px;box-shadow:var(--shadow);cursor:pointer;border:none;display:flex;flex-direction:column;align-items:center;text-align:center;color:var(--cream);transition:transform .15s;font-family:var(--font-b)}
-.app-card:active{transform:scale(.96)}
-.app-emoji{font-size:2.2rem;margin-bottom:8px}
-.app-name{font-family:var(--font-h);font-size:.95rem;margin-bottom:4px}
-.app-desc{font-size:.72rem;opacity:.5;line-height:1.3}
-.app-badge{width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.15);font-size:.7rem;display:flex;align-items:center;justify-content:center;margin-top:8px}
-.app-badge.done{background:var(--green);border-color:var(--green);color:#fff}
+
+/* Missions */
+.missions-card{
+  background:rgba(76,175,80,.08);border:1px solid rgba(76,175,80,.2);
+  border-radius:14px;padding:14px;margin-top:8px;
+}
+.missions-title{font-family:var(--font-h);font-size:.82rem;color:var(--green);margin-bottom:8px}
+.mission-item{
+  font-size:.75rem;opacity:.6;padding:4px 0;
+  display:flex;align-items:center;gap:6px;
+}
+.mission-dot{width:5px;height:5px;border-radius:50%;background:var(--green);flex-shrink:0}
+
+/* Name modal */
 .name-modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;z-index:200;padding:20px}
 .name-modal.show{display:flex}
-.name-modal-box{background:var(--card);border-radius:24px;padding:28px 24px;width:100%;max-width:340px;text-align:center;box-shadow:var(--shadow)}
-.name-modal-title{font-family:var(--font-h);font-size:1.4rem;color:var(--gold);margin-bottom:8px}
-.name-modal-sub{font-size:.82rem;opacity:.6;margin-bottom:20px}
+.name-box{background:var(--card);border-radius:24px;padding:28px 24px;width:100%;max-width:340px;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,.5)}
+.name-title{font-family:var(--font-h);font-size:1.4rem;color:var(--gold);margin-bottom:8px}
+.name-sub{font-size:.82rem;opacity:.6;margin-bottom:20px}
 .name-input{width:100%;padding:14px 16px;border-radius:14px;border:2px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:var(--cream);font-family:var(--font-b);font-size:1rem;text-align:center;margin-bottom:16px;outline:none}
 .name-input:focus{border-color:var(--gold)}
 .name-btn{padding:14px 32px;border-radius:14px;border:none;background:var(--gold);color:var(--bg);font-family:var(--font-h);font-size:1rem;cursor:pointer;width:100%}
-.name-btn:active{transform:scale(.97)}
-.parent-fab{position:fixed;bottom:20px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--gold);color:var(--bg);font-size:1.2rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100}
-.parent-fab:active{transform:scale(.9)}
-.home-fab{position:fixed;bottom:20px;left:20px;width:50px;height:50px;border-radius:50%;background:var(--green);color:#fff;font-size:1.3rem;border:none;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3);z-index:100;display:flex;align-items:center;justify-content:center;text-decoration:none}
-.home-fab:active{transform:scale(.9)}
-.rabbity-fab{position:fixed;bottom:80px;right:20px;width:50px;height:50px;border-radius:50%;background:var(--card);border:2px solid rgba(255,255,255,.15);color:var(--cream);font-size:1.3rem;z-index:99;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-.rabbity-bubble{position:fixed;bottom:140px;right:20px;z-index:98;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:10px 14px;max-width:220px;font-size:.8rem;line-height:1.5;color:var(--cream);box-shadow:0 4px 16px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .3s}
-.rabbity-bubble.show{opacity:1}
-.parent-panel{position:fixed;bottom:0;left:0;right:0;background:var(--cream);color:#333;border-radius:20px 20px 0 0;padding:20px 16px 90px;box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;max-height:70vh;overflow-y:auto;transform:translateY(110%);transition:transform .3s}
-.parent-panel.open{transform:translateY(0)}
-.panel-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
-.panel-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
-.panel-row{margin-bottom:12px}
-.panel-row-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
-.panel-bar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
-.panel-bar-fill{height:100%;border-radius:4px;transition:width .5s}
-.confetti-container{position:fixed;inset:0;pointer-events:none;z-index:9999}
-.confetti-piece{position:absolute;width:10px;height:10px;border-radius:2px;animation:confettiFall 2.5s ease-out forwards}
-@keyframes confettiFall{0%{transform:translateY(-20px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
+
+/* FABs */
+.fab{position:fixed;width:50px;height:50px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;z-index:100;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.fab:active{transform:scale(.9)}
+.fab-home{left:20px;bottom:20px;background:var(--green);color:#fff}
+.fab-parent{right:20px;bottom:20px;background:var(--gold);color:var(--bg)}
+.fab-rabbity{right:20px;bottom:80px;background:var(--card);border:2px solid rgba(255,255,255,.15);color:var(--cream)}
+.bubble{position:fixed;bottom:138px;right:20px;z-index:99;background:var(--card);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:10px 14px;max-width:210px;font-size:.8rem;line-height:1.5;box-shadow:0 4px 14px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .25s}
+.bubble.on{opacity:1}
+
+/* Parent panel */
+.ppanel{position:fixed;bottom:0;left:0;right:0;background:var(--cream);color:#333;border-radius:20px 20px 0 0;padding:20px 16px 90px;box-shadow:0 -4px 24px rgba(0,0,0,.2);z-index:99;max-height:70vh;overflow-y:auto;transform:translateY(110%);transition:transform .3s}
+.ppanel.on{transform:translateY(0)}
+.phan-handle{width:36px;height:4px;background:#ccc;border-radius:2px;margin:0 auto 14px}
+.phan-title{font-family:var(--font-h);font-size:1rem;color:#333;text-align:center;margin-bottom:14px}
+.prow{margin-bottom:12px}
+.prow-label{font-weight:700;font-size:.82rem;color:#333;display:flex;justify-content:space-between;margin-bottom:4px}
+.pbar{height:8px;background:#eee;border-radius:4px;overflow:hidden}
+.pbar-fill{height:100%;border-radius:4px;transition:width .5s}
+.pnote{font-size:.72rem;color:#666;line-height:1.5;margin-top:4px}
+
+/* Confetti */
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:9999}
+.conf{position:absolute;width:9px;height:9px;border-radius:2px;animation:cf 2.5s ease-out forwards}
+@keyframes cf{0%{transform:translateY(-10px) rotate(0deg);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
 </style>
 </head>
 <body>
-<div class="stars" id="stars"></div>
-<div class="offline-banner" id="offline-banner">📡 Offline — keep learning!</div>
 
-<div class="screen active" id="screen-home">
-  <div class="top-bar">
+<div class="stars" id="stars"></div>
+
+<!-- HOME -->
+<div class="screen on" id="s-home">
+  <div class="tbar">
     <div></div>
-    <div class="top-title">Belajar Aya</div>
-    <button class="top-btn" onclick="toggleParent()">👤</button>
+    <div class="tbar-title">Belajar Aya</div>
+    <button class="tbar-btn" onclick="togglePanel()">&#128100;</button>
   </div>
+  <div class="offline-banner" id="offline-banner">&#128269; Offline — learning continues!</div>
+
   <div class="hero">
+    <div class="hero-emoji">&#128049;</div>
     <div class="hero-title">Belajar Aya</div>
-    <div class="hero-sub">Hands-on learning for curious minds</div>
+    <div class="hero-sub" id="hero-sub">Your Montessori learning journey</div>
+    <div class="hero-name" id="hero-name"></div>
   </div>
-  <div class="app-grid" id="app-grid"></div>
+
+  <div class="scroll-area">
+
+    <!-- Primary Curriculum -->
+    <div class="section">
+      <div class="section-label">Primary Curriculum</div>
+      <div class="curriculum-grid" id="primary-grid"></div>
+    </div>
+
+    <!-- Cosmic Education Bridge -->
+    <div class="section">
+      <div class="section-label">Cosmic Education</div>
+      <div class="section-title">The Story of Everything</div>
+      <button class="cosmic-card" onclick="openApp('five-great-lessons.html')">
+        <div class="cosmic-emoji">&#127756;</div>
+        <div>
+          <div class="cosmic-title">Five Great Lessons</div>
+          <div class="cosmic-desc">The origin of the universe, life, humans, language, and numbers</div>
+        </div>
+      </button>
+      <div class="missions-card" id="missions-card">
+        <div class="missions-title">&#127754; Real-World Mission</div>
+        <div id="missions-list"></div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <!-- MODALS -->
 <div class="name-modal" id="name-modal">
-  <div class="name-modal-box">
-    <div class="name-modal-title">What's your name?</div>
-    <div class="name-modal-sub">Let's learn together!</div>
+  <div class="name-box">
+    <div class="name-title">What is your name?</div>
+    <div class="name-sub">Let's start your learning journey!</div>
     <input class="name-input" id="name-input" type="text" placeholder="Your name..." maxlength="30" autocomplete="off" autocorrect="off">
     <button class="name-btn" onclick="saveName()">Let's go!</button>
   </div>
 </div>
 
 <!-- FABs -->
-<button class="home-fab" onclick="window.location='index.html'">🏠</button>
-<button class="parent-fab" onclick="toggleParent()">👤</button>
-<button class="rabbity-fab" onclick="rabbitySpeak()">🐰</button>
-<div class="rabbity-bubble" id="rabbity-bubble"></div>
+<button class="fab fab-home" onclick="window.location='index.html'">&#127968;</button>
+<button class="fab fab-parent" onclick="togglePanel()">&#128100;</button>
+<button class="fab fab-rabbity" onclick="rabbitySpeak()">&#128049;</button>
+<div class="bubble" id="bubble"></div>
 
 <!-- Parent Panel -->
-<div class="parent-panel" id="parent-panel">
-  <div class="panel-handle"></div>
-  <button onclick="toggleParent()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">✕</button>
-  <div class="panel-title">📊 Learning Progress</div>
-  <div id="parent-content"></div>
+<div class="ppanel" id="ppanel">
+  <div class="phan-handle"></div>
+  <button onclick="togglePanel()" style="position:absolute;top:14px;right:16px;background:none;border:none;font-size:1.2rem;cursor:pointer;color:#999;">&#10005;</button>
+  <div class="phan-title">&#128202; Learning Journey</div>
+  <div id="pcontent"></div>
 </div>
 
-<!-- Confetti -->
-<div class="confetti-container" id="confetti-container"></div>
+<div class="confetti" id="confetti"></div>
 
 <script>
-var profile = { name: "", avatar: "🐰" };
-var MISSIONS = {
-  skip:    ["Count steps to the kitchen!", "Skip count by 2s!"],
-  lessons: ["Share 1 fact from this lesson!", "Draw one thing from this lesson!"],
-  math:    ["Count your toys!", "Compare tall and short!"],
-  lang:    ["Write your name!", "Find letters on signs outside!"],
-  prac:    ["Dip your hands in water!", "Pick up small objects with tongs!"],
-  cultur:  ["Name 3 animals!", "Talk about today's weather!"],
-};
+// ─────────────────────────────────────────────
+// PROFILE + STORAGE
+// ─────────────────────────────────────────────
+var profile = { name: "", avatar: "&#128049;" };
 
-function lsGet(k, def) {
-  try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : def; } catch(e) { return def; }
-}
-function lsSet(k, v) {
-  try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {}
-}
+function lg(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
+function ls(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
 
-function loadProfile() {
-  profile = lsGet("aya-profile", { name: "", avatar: "🐰" });
-}
+// ─────────────────────────────────────────────
+// CURRICULUM — Primary Montessori areas
+// ─────────────────────────────────────────────
+var PRIMARY = [
+  {
+    id:"prac", emoji:"&#129529;", color:"#E65100",
+    name:"Practical Life",
+    desc:"Care of self, environment, and others",
+    file:"practical-life.html",
+    progKey:"pl-progress"
+  },
+  {
+    id:"sens", emoji:"&#128065;", color:"#F48FB1",
+    name:"Sensorial",
+    desc:"Refine senses through exploration",
+    file:null, // not yet built
+    progKey:"sens-progress",
+    locked:true
+  },
+  {
+    id:"lang", emoji:"&#128292;", color:"#42A5F5",
+    name:"Language",
+    desc:"Letters, sounds, words, and expression",
+    file:"language.html",
+    progKey:"lang-progress"
+  },
+  {
+    id:"math", emoji:"&#128200;", color:"#66BB6A",
+    name:"Mathematics",
+    desc:"Quantity, symbols, operations, and patterns",
+    file:"math.html",
+    progKey:"math-progress"
+  },
+  {
+    id:"cult", emoji:"&#127759;", color:"#AB47BC",
+    name:"Cultural Studies",
+    desc:"Geography, science, nature, and history",
+    file:"cultural.html",
+    progKey:"culture-progress"
+  },
+  {
+    id:"skip", emoji:"&#128279;", color:"#78909C",
+    name:"Skip Counting",
+    desc:"Jump patterns and equal groups",
+    file:"skip-counting.html",
+    progKey:"skip-progress"
+  },
+];
 
-function init() {
-  loadProfile();
+// ─────────────────────────────────────────────
+// MISSIONS — offline real-world activities
+// ─────────────────────────────────────────────
+var MISSIONS = [
+  "Sort objects by size, shape, or color",
+  "Count steps from the bedroom to the kitchen",
+  "Find three things that are longer than your hand",
+  "Name the colors you see outside",
+  "Pour water from one cup to another",
+  "Pick up small objects using tongs",
+  "Match socks from the laundry pile",
+  "Water a plant and watch what happens",
+  "Find a shape hidden in the room",
+  "Set the table for two people",
+];
+
+// ─────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────
+function init(){
   genStars();
-  renderAppGrid();
-  if (!profile.name) {
-    setTimeout(showNameModal, 600);
-  } else {
-    setTimeout(greetUser, 1000);
+  loadProfile();
+  renderPrimary();
+  renderMissions();
+  if(!profile.name){
+    setTimeout(showNameModal, 500);
   }
 }
 
-function greetUser() {
-  var h = new Date().getHours();
-  var time = h < 12 ? "Good morning" : h < 17 ? "Good afternoon" : "Good evening";
-  say(time + ", " + profile.name + "! Let's learn!");
+function loadProfile(){
+  profile = lg("aya-profile", {name:"",avatar:"&#128049;"});
+  if(profile.name){
+    var h = new Date().getHours();
+    var time = h<12?"Good morning":h<17?"Good afternoon":"Good evening";
+    document.getElementById("hero-sub").textContent = time + "!";
+    document.getElementById("hero-name").textContent = profile.name + ", let's explore!";
+  }
 }
 
-function showNameModal() {
+function showNameModal(){
   document.getElementById("name-modal").classList.add("show");
   var inp = document.getElementById("name-input");
   inp.focus();
-  inp.addEventListener("keydown", function(e) {
-    if (e.key === "Enter") saveName();
+  inp.addEventListener("keydown", function(e){
+    if(e.key === "Enter") saveName();
   });
 }
 
-function saveName() {
+function saveName(){
   var inp = document.getElementById("name-input");
   profile.name = inp.value.trim() || "Learner";
-  lsSet("aya-profile", profile);
+  ls("aya-profile", profile);
   document.getElementById("name-modal").classList.remove("show");
-  say("Nice to meet you, " + profile.name + "! Let's go!");
-  setTimeout(renderAppGrid, 100);
+  document.getElementById("hero-sub").textContent = "Welcome!";
+  document.getElementById("hero-name").textContent = "Hello, " + profile.name + "!";
+  say("Hello " + profile.name + "! Let's start exploring!");
 }
 
-function renderAppGrid() {
-  var grid = document.getElementById("app-grid");
-  var apps = [
-    { id: "skip",    emoji: "🐰", bg: "#1565C0", title: "Skip Counting",  desc: "Jump through numbers!",      file: "skip-counting.html",         key: "skip-progress" },
-    { id: "lessons", emoji: "🌍", bg: "#4A148C", title: "Five Great Lessons", desc: "Explore the world",       file: "five-great-lessons.html",   key: "fgl-progress" },
-    { id: "math",    emoji: "🔢", bg: "#1B5E20", title: "Math Garden",  desc: "Number rods, spindles, cards", file: "math.html",                 key: "math-progress" },
-    { id: "lang",    emoji: "🔤", bg: "#B71C1C", title: "Language & Letters", desc: "Letters, words, writing", file: "language.html",            key: "lang-progress" },
-    { id: "prac",    emoji: "🧼", bg: "#E65100", title: "Practical Life", desc: "Pour, pinch, button, wash",   file: "practical-life.html",      key: "pl-progress" },
-    { id: "cultur",  emoji: "🌏", bg: "#0D47A1", title: "Culture & Science", desc: "Geography, science, nature", file: "cultural.html",         key: "culture-progress" },
-  ];
+// ─────────────────────────────────────────────
+// RENDER
+// ─────────────────────────────────────────────
+function renderPrimary(){
+  var grid = document.getElementById("primary-grid");
   grid.innerHTML = "";
-  apps.forEach(function(a) {
-    var prog = lsGet(a.key, {});
+  PRIMARY.forEach(function(p){
+    var prog = lg(p.progKey, {});
     var done = Object.keys(prog).length;
+    var total = 5;
+    var pct = Math.min(100, Math.round((done/total)*100));
+    var banner = pct >= 100 ? "Done!" : (p.locked ? "Coming" : "");
     var card = document.createElement("button");
-    card.className = "app-card";
-    card.style.background = a.bg;
-    card.onclick = function() { window.location = a.file; };
-    card.innerHTML = '<div class="app-emoji">' + a.emoji + '</div>' +
-      '<div class="app-name">' + a.title + '</div>' +
-      '<div class="app-desc">' + a.desc + '</div>' +
-      '<div class="app-badge ' + (done > 0 ? "done" : "") + '">' + (done > 0 ? "✓" : "→") + "</div>";
+    card.className = "ccard" + (p.locked?" locked":"");
+    card.style.background = p.color;
+    card.innerHTML =
+      '<div class="ccard-banner">'+banner+'</div>'+
+      '<div class="ccard-emoji">'+p.emoji+'</div>'+
+      '<div class="ccard-name">'+p.name+'</div>'+
+      '<div class="ccard-desc">'+p.desc+'</div>'+
+      '<div class="ccard-bar"><div class="ccard-fill" style="width:'+pct+'%;background:rgba(255,255,255,.4)"></div></div>';
+    if(p.file && !p.locked){
+      card.onclick = function(){ window.location = p.file; };
+    }
     grid.appendChild(card);
   });
 }
 
-function genStars() {
-  var el = document.getElementById("stars");
-  el.innerHTML = "";
-  for (var i = 0; i < 70; i++) {
-    var s = document.createElement("div");
-    s.className = "star";
-    var sz = Math.random() * 2 + 1;
-    s.style.cssText = "left:" + (Math.random() * 100) + "%;top:" + (Math.random() * 100) + "%;width:" + sz + "px;height:" + sz + "px;animation-delay:" + (Math.random() * 3).toFixed(1) + "s;animation-duration:" + (Math.random() * 2 + 2).toFixed(1) + "s";
-    el.appendChild(s);
-  }
+function renderMissions(){
+  var list = document.getElementById("missions-list");
+  var shuffled = MISSIONS.slice().sort(function(){return Math.random()-0.5;});
+  var pick = shuffled.slice(0,2);
+  list.innerHTML = pick.map(function(m){
+    return '<div class="mission-item"><div class="mission-dot"></div>'+m+'</div>';
+  }).join("");
 }
 
-function rabbitySpeak() {
-  var msgs = ["Let's go! 📚", "You're amazing! ⭐", "Start with the easy ones! 🌟", "There is nothing wrong with trying again! 💪"];
-  say(msgs[Math.floor(Math.random() * msgs.length)]);
+// ─────────────────────────────────────────────
+// HELPERS
+// ─────────────────────────────────────────────
+function openApp(file){
+  window.location = file;
 }
 
-function say(text) {
-  var b = document.getElementById("rabbity-bubble");
-  if (b) { b.textContent = "🐰 " + text; b.classList.add("show"); }
-  if ("speechSynthesis" in window) {
+function rabbitySpeak(){
+  var msgs = [
+    "Every area of learning connects to everything else!",
+    "Start with whatever feels most interesting today!",
+    "Practical Life builds concentration first!",
+    "Mathematics is about understanding, not memorising!",
+    "You are capable of amazing focus!",
+    "Language opens the door to all other knowledge!",
+  ];
+  say(msgs[Math.floor(Math.random()*msgs.length)]);
+}
+
+function say(text){
+  var b = document.getElementById("bubble");
+  if(b){ b.textContent = "&#128049; " + text; b.classList.add("on"); }
+  if("speechSynthesis" in window){
     speechSynthesis.cancel();
     var u = new SpeechSynthesisUtterance(text);
     u.lang = "en-US";
     u.rate = 0.85;
     speechSynthesis.speak(u);
   }
-  setTimeout(function() { if (b) b.classList.remove("show"); }, 3500);
+  setTimeout(function(){ if(b) b.classList.remove("on"); }, 3500);
 }
 
-function confetti() {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  var c = document.getElementById("confetti-container");
-  if (!c) return;
-  c.innerHTML = "";
-  var colors = ["#FFD700", "#EF5350", "#66BB6A", "#42A5F5", "#AB47BC", "#FF9800"];
-  for (var i = 0; i < 40; i++) {
-    var p = document.createElement("div");
-    p.className = "confetti-piece";
-    p.style.left = Math.random() * 100 + "%";
-    p.style.background = colors[Math.floor(Math.random() * colors.length)];
-    p.style.animationDelay = (Math.random() * 0.8) + "s";
-    p.style.animationDuration = "2.5s";
-    c.appendChild(p);
-  }
-  setTimeout(function() { c.innerHTML = ""; }, 3500);
+function togglePanel(){
+  var p = document.getElementById("ppanel");
+  if(!p) return;
+  p.classList.toggle("on");
+  if(p.classList.contains("on")) renderPanel();
 }
 
-function toggleParent() {
-  var p = document.getElementById("parent-panel");
-  if (!p) return;
-  p.classList.toggle("open");
-  if (p.classList.contains("open")) renderParentPanel();
-}
-
-function renderParentPanel() {
-  var c = document.getElementById("parent-content");
-  if (!c) return;
-  var apps = [
-    { name: "Skip Counting", key: "skip-progress" },
-    { name: "Five Great Lessons", key: "fgl-progress" },
-    { name: "Math Garden", key: "math-progress" },
-    { name: "Language & Letters", key: "lang-progress" },
-    { name: "Practical Life", key: "pl-progress" },
-    { name: "Culture & Science", key: "culture-progress" },
+function renderPanel(){
+  var c = document.getElementById("pcontent");
+  if(!c) return;
+  var areas = [
+    {name:"Practical Life", key:"pl-progress", color:"#E65100", file:"practical-life.html"},
+    {name:"Sensorial", key:"sens-progress", color:"#F48FB1", file:null},
+    {name:"Language", key:"lang-progress", color:"#42A5F5", file:"language.html"},
+    {name:"Mathematics", key:"math-progress", color:"#66BB6A", file:"math.html"},
+    {name:"Cultural Studies", key:"culture-progress", color:"#AB47BC", file:"cultural.html"},
+    {name:"Skip Counting", key:"skip-progress", color:"#78909C", file:"skip-counting.html"},
+    {name:"Five Great Lessons", key:"fgl-progress", color:"#6A1B9A", file:"five-great-lessons.html"},
   ];
-  var colors = ["#1565C0", "#4A148C", "#1B5E20", "#B71C1C", "#E65100", "#0D47A1"];
-  var missions = ["skip", "lessons", "math", "lang", "prac", "cultur"];
-  c.innerHTML = "";
-  apps.forEach(function(a, i) {
-    var prog = lsGet(a.key, {});
+  c.innerHTML = '<div style="font-size:.72rem;color:#999;margin-bottom:14px">Montessori Learning Journey</div>';
+  areas.forEach(function(a){
+    var prog = lg(a.key, {});
     var done = Object.keys(prog).length;
     var total = 5;
-    var pct = Math.round((done / total) * 100);
-    c.innerHTML += '<div class="panel-row"><div class="panel-row-label">' + a.name + ' <span>' + pct + '%</span></div><div class="panel-bar"><div class="panel-bar-fill" style="width:' + pct + '%;background:' + colors[i] + ';"></div></div></div>';
+    var pct = Math.min(100, Math.round((done/total)*100));
+    var status = pct >= 100 ? "Done" : (done === 0 ? "Not started" : "In progress");
+    c.innerHTML += '<div class="prow"><div class="prow-label"><span>'+a.name+'</span><span style="font-size:.72rem;font-weight:400;opacity:.6">'+status+'</span></div><div class="pbar"><div class="pbar-fill" style="width:'+pct+'%;background:'+a.color+'"></div></div><div class="pnote">'+done+' of '+total+' activities completed</div></div>';
   });
-  var missDiv = document.createElement("div");
-  missDiv.style.cssText = "margin-top:16px;padding:12px;background:rgba(76,175,80,.1);border-radius:12px;border:1px solid rgba(76,175,80,.25)";
-  missDiv.innerHTML = "<div style='font-family:var(--font-h);font-size:.85rem;color:var(--green);margin-bottom:8px;'>🌟 Real World Mission</div>";
-  MISSIONS[missions[Math.floor(Math.random() * missions.length)]].forEach(function(m) {
-    missDiv.innerHTML += "<div style='font-size:.75rem;color:rgba(255,255,255,.7);margin:4px 0;line-height:1.4'>• " + m + "</div>";
-  });
-  c.appendChild(missDiv);
+  c.innerHTML += '<div style="margin-top:16px;padding:12px;background:#f5f5f5;border-radius:10px"><div style="font-family:var(--font-h);font-size:.8rem;color:#666;margin-bottom:6px">&#127754; Montessori Philosophy</div><div style="font-size:.72rem;color:#888;line-height:1.6">The five curriculum areas work together. Sensorial foundations support mathematical perception. Practical Life builds concentration for all other work. Language connects every subject. Cultural Studies and Cosmic Education give context to everything.</div></div>';
 }
 
-document.addEventListener("keydown", function(e) {
-  if (e.key === "Escape") {
-    document.getElementById("parent-panel").classList.remove("open");
+function genStars(){
+  var el = document.getElementById("stars");
+  el.innerHTML = "";
+  for(var i=0;i<60;i++){
+    var s = document.createElement("div");
+    s.className = "star";
+    var sz = Math.random()*2+1;
+    s.style.cssText = "left:"+(Math.random()*100)+"%;top:"+(Math.random()*100)+"%;width:"+sz+"px;height:"+sz+"px;--d:"+(Math.random()*2+2).toFixed(1)+"s;--dl:"+(Math.random()*3).toFixed(1)+"s";
+    el.appendChild(s);
+  }
+}
+
+// ─────────────────────────────────────────────
+// EVENTS
+// ─────────────────────────────────────────────
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape"){
+    document.getElementById("ppanel").classList.remove("on");
     document.getElementById("name-modal").classList.remove("show");
   }
 });
-window.addEventListener("offline", function() { document.getElementById("offline-banner").classList.add("show"); });
-window.addEventListener("online", function() { document.getElementById("offline-banner").classList.remove("show"); });
+window.addEventListener("offline", function(){ document.getElementById("offline-banner").classList.add("show"); });
+window.addEventListener("online", function(){ document.getElementById("offline-banner").classList.remove("show"); });
 window.addEventListener("load", init);
 </script>
 </body>
