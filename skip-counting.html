@@ -412,37 +412,7 @@ function renderBuild(area, s){
       box.className = "group-box";
       box.id = "group-"+gid;
       box.innerHTML = '<div class="group-label">Group '+(gid+1)+'</div><div class="group-count" id="gc-'+gid+'">0/'+jump+'</div>';
-      box.addEventListener("dragover", function(e){ e.preventDefault(); box.classList.add("drag-over"); });
-      box.addEventListener("dragleave", function(){ box.classList.remove("drag-over"); });
-      box.addEventListener("drop", function(e){
-        e.preventDefault();
-        box.classList.remove("drag-over");
-        if(STATE===null||STATE.build.done) return;
-        var dragEl = document.querySelector(".drag-ghost");
-        if(!dragEl) return;
-        var itemIdx = parseInt(dragEl.dataset.idx);
-        // Check not already in another group
-        var alreadyPlaced = document.querySelectorAll(".build-item.placed").length;
-        if(alreadyPlaced >= jump * groupCount) return;
-        // Check group not full
-        if(STATE.build.groups[gid] >= jump) return;
-        // Place it
-        STATE.build.groups[gid]++;
-        document.getElementById("gc-"+gid).textContent = STATE.build.groups[gid]+"/"+jump;
-        var chip = document.createElement("span");
-        chip.innerHTML = dragEl.innerHTML;
-        chip.style.cssText = "font-size:1.4rem;display:inline-block;animation:popIn .2s ease";
-        box.insertBefore(chip, box.firstChild);
-        dragEl.style.opacity = "0.25";
-        dragEl.style.pointerEvents = "none";
-        dragEl.classList.add("placed");
-        dragEl.classList.remove("drag-ghost");
-        dragEl.style.position = "";
-        dragEl.style.left = "";
-        dragEl.style.top = "";
-        if(STATE.build.groups[gid] >= jump) box.classList.add("full");
-        checkBuildDone();
-      });
+      
       row.appendChild(box);
     })(g);
   }
@@ -454,11 +424,12 @@ function startDrag(ev, el, item){
   clone.dataset.idx = el.dataset.idx;
   clone.style.left = ev.clientX+"px";
   clone.style.top = ev.clientY+"px";
+  clone.style.pointerEvents = "none";
   document.body.appendChild(clone);
 
   function onMove(e){
-    clone.style.left = e.clientX+"px";
-    clone.style.top = e.clientY+"px";
+    clone.style.left = (e.clientX - 20)+"px";
+    clone.style.top = (e.clientY - 20)+"px";
     document.querySelectorAll(".group-box").forEach(function(b){ b.classList.remove("drag-over"); });
     var el2 = document.elementFromPoint(e.clientX, e.clientY);
     if(el2) { var b = el2.closest(".group-box"); if(b) b.classList.add("drag-over"); }
@@ -466,8 +437,33 @@ function startDrag(ev, el, item){
   function onUp(e){
     document.removeEventListener("pointermove", onMove);
     document.removeEventListener("pointerup", onUp);
+    // Find which group the ghost center is over
+    var rect = clone.getBoundingClientRect();
+    var cx = rect.left + rect.width / 2;
+    var cy = rect.top + rect.height / 2;
     clone.remove();
     document.querySelectorAll(".group-box").forEach(function(b){ b.classList.remove("drag-over"); });
+    var el2 = document.elementFromPoint(cx, cy);
+    var box = el2 ? el2.closest(".group-box") : null;
+    if(!box || STATE === null || STATE.build.done) return;
+    var gid = parseInt(box.id.split("-")[1]);
+    if(isNaN(gid)) return;
+    if(STATE.build.groups[gid] >= STATE.build.jump) { say("That group is full!"); return; }
+    // Find the actual pool element for this idx
+    var actualEl = document.querySelector(".build-item[data-idx=\""+clone.dataset.idx+"\"]:not(.placed)");
+    if(!actualEl) return;
+    // Place
+    STATE.build.groups[gid]++;
+    document.getElementById("gc-"+gid).textContent = STATE.build.groups[gid]+"/"+STATE.build.jump;
+    var chip = document.createElement("span");
+    chip.innerHTML = actualEl.innerHTML;
+    chip.style.cssText = "font-size:1.4rem;display:inline-block;animation:popIn .2s ease";
+    box.insertBefore(chip, box.firstChild);
+    actualEl.style.opacity = "0.25";
+    actualEl.style.pointerEvents = "none";
+    actualEl.classList.add("placed");
+    if(STATE.build.groups[gid] >= STATE.build.jump) box.classList.add("full");
+    checkBuildDone();
   }
   document.addEventListener("pointermove", onMove);
   document.addEventListener("pointerup", onUp);
