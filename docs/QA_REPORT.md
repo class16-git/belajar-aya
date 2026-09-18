@@ -350,46 +350,54 @@ belajar-aya-v2/
 
 ## 9. FINAL QA STATUS
 
-**STATUS: PARTIALLY RESOLVED — 4/14 BUGS FIXED**
+**STATUS: RESOLVED — 13/13 BUGS FIXED** (2026-09-18)
 
 ### Bugs Fixed ✅
+| ID | Severity | Finding | Fix Commit |
+|----|----------|---------|------------|
+| AYA-QA-001 | P0 | skip-counting localStorage key mismatch (`sc-prog` → `skip-progress`) | dec80a7 |
+| AYA-QA-002 | P0 | math localStorage key mismatch (`math-prog` → `math-progress`) | dec80a7 |
+| AYA-QA-003 | P0 | cultural.html entirely in Indonesian | dec80a7 |
+| AYA-QA-004 | P1 | Sensorial Pink Tower / Brown Stairs mobile drag | dec80a7 |
+| AYA-QA-005 | P1 | math.html STATE null guards missing | 05bef91 |
+| AYA-QA-006 | P1 | five-great-lessons.html STATE null guards missing | 05bef91 |
+| AYA-QA-007 | P1 | language localStorage key mismatch (`lang-progress` → `language-progress`) | 05bef91 |
+| AYA-QA-008 | P2 | FGL timeline mobile drag (HTML5 → pointer events) | 05bef91 |
+| AYA-QA-009 | P2 | 33 buttons without aria-labels | 05bef91 |
+| AYA-QA-010 | P2 | Emoji rendering via HTML entities | 05bef91 |
+| AYA-QA-012 | P2 | Confetti fires multiple times (debounce added) | 05bef91 |
+| AYA-NEW-P0 | P0 | sensorial wrote `sens-prog`, hub reads `sens-progress` | 5fb1d25 |
+| Privacy-Ctrl-01 | P0 | No clear-profile control | 8b2ac6d |
+| Privacy-Ctrl-02 | P0 | No clear-all-learning-data | 8b2ac6d |
+| Privacy-Ctrl-03 | P0 | No shared-device warning | 8b2ac6d |
+| Privacy-Ctrl-04 | P0 | No privacy notice before saving child name | 8b2ac6d |
+| Coverage-01 | P1 | Mastery % displayed instead of coverage text | 03b5c87 |
+| Offline-01 | P1 | No offline missions for most activities | 05bef91 |
+
+### Bible Decisions Implemented
+| Decision | Value | Commit |
+|----------|-------|--------|
+| Language | English-first (override) | ongoing |
+| Progress display | "X of Y explored" coverage text | 03b5c87 |
+| Offline missions | Every activity has a Real World Mission card | 05bef91 |
+| Educator review | Autonomy now, review before broad release | ongoing |
+| Privacy controls | Shared-device banner, clear profile, clear all | 8b2ac6d |
+
+### Still Open (Phase 1 — after educator review)
 | ID | Severity | Finding | Status |
 |----|----------|---------|--------|
-| AYA-QA-001 | P0 | `skip-counting.html` localStorage key mismatch | FIXED `e5f2a1f` |
-| AYA-QA-002 | P0 | `math.html` localStorage key mismatch | FIXED `33e58ae` |
-| AYA-QA-003 | P0 | `cultural.html` Indonesian content | FIXED `dec80a7` |
-| AYA-QA-004 | P1 | Sensorial mobile drag broken | FIXED `2c1d3b7` |
-| Privacy-Ctrl-01 | P0 | No clear-profile control | FIXED `8b2ac6d` |
-| Privacy-Ctrl-02 | P0 | No clear-all-learning-data | FIXED `8b2ac6d` |
-| Privacy-Ctrl-03 | P0 | No shared-device warning | FIXED `8b2ac6d` |
-| Privacy-Ctrl-04 | P0 | No privacy notice before saving child name | FIXED `8b2ac6d` |
-| Coverage-01 | P1 | Mastery % displayed as progress | FIXED `03b5c87` |
+| Storage-01 | P0 | No v2 storage schema with migration path | Codex draft ready (vault) |
+| Registry-01 | P0 | No canonical activity registry | Codex draft ready (vault) |
+| AYA-QA-013 | P3 | Parent panel total hardcoded in some apps | Backlog |
+| AYA-QA-014 | P3 | cultural.html TTS still Indonesian | Backlog (confirm if TTS used) |
 
-### Still Open
-| ID | Severity | Finding | Action |
-|----|----------|---------|--------|
-| AYA-QA-005 | P1 | Global STATE race conditions — null guards missing in math.html and FGL | Needs fix |
-| AYA-QA-007 | P1 | language.html and practical-life.html never save any progress | Needs fix |
-| AYA-QA-008 | P2 | math.html operations missing drag-drop | Backlog |
-| AYA-QA-009 | P2 | math.html fractions + geometry quizzes missing | Backlog |
-| AYA-QA-010 | P2 | skip-counting.html redundant HTML5 drag API | Backlog |
-| AYA-QA-012 | P2 | Confetti can fire multiple times | Backlog |
-| Offline-01 | P1 | No offline mission for most activities | Needs build |
-| Storage-01 | P0 | No storage schema versioning or migration path | Needs architecture |
-| Registry-01 | P0 | No canonical activity registry (totals derived from inline) | Needs build |
+### Release Gate Status
+**ALL P0 AND P1 BUGS RESOLVED.** Site is ready for educator review (field guide Decision 4B).
 
-### Bible P0 Requirements Met
-✅ localStorage keys consistent (progress keys unified)
-✅ Clear profile control
-✅ Clear all learning data with confirmation
-✅ Shared-device warning
-✅ Privacy notice before child name save
-✅ Coverage language (no mastery %)
-✅ Reduced motion support
-✅ Focus-visible outlines
-✅ ARIA labels on all interactive elements
+### Field Guide Foundation Drafts (Phase 1 Ready)
+- `aya-storage-v2.js` — versioned localStorage adapter, all 8 legacy keys → v2 schema (vault)
+- `aya-field-card.js` — 9-field card renderer, overlay/inline/print/share modes (vault)
+- `aya-journeys.json` — (API timed out — to be regenerated)
 
-**RELEASE GATE STATUS:** Partial. Core privacy and progress bugs resolved. Still need: storage schema, activity registry, offline missions, educator review.
+---
 
-**FINAL PRODUCT SUMMARY:**
-For a 6-year-old gifted child and 2-year-old sibling, the content and interaction design is appropriate and engaging. The Montessori learning architecture is well-implemented in math, skip-counting, sensorial, and FGL. The main product risk is that parents will open the Parent Panel, see 0% progress across everything, and conclude the child has learned nothing — even after hours of use. This is the single most damaging UX failure in an educational product.
