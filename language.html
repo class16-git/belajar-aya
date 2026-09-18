@@ -207,7 +207,51 @@ function markActDone(id) {
     confetti();
     say("Wonderful! You completed this activity!");
   }
+  if (typeof showMission === "function") {
+    setTimeout(function() { showMission(id); }, 1200);
+  }
 }
+
+function showMission(id) {
+  if (!window.MISSIONS || !window.MISSIONS[id]) return;
+  var m = window.MISSIONS[id];
+  var el = document.createElement("div");
+  el.style.cssText = "position:fixed;inset:0;background:rgba(7,7,26,.92);z-index:500;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto";
+  el.innerHTML =
+    "<div style=\"background:linear-gradient(135deg,#1a3a2a 0%,#0d2818 100%);border:2px solid #4CAF50;border-radius:20px;padding:20px 16px;max-width:440px;width:100%;position:relative\">"+
+      "<div style=\"font-size:.65rem;color:#81C784;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;font-family:var(--font-h)\">Real World Mission</div>"+
+      "<div style=\"font-family:var(--font-h);font-size:1.05rem;color:#FFF8F0;margin-bottom:12px\">"+m.title+"</div>"+
+      "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Materials</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.materials.map(function(i){return "• "+i;}).join("<br>")+"</div></div>"+
+      "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Steps</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.steps.map(function(s,i){return (i+1)+". "+s;}).join("<br>")+"</div></div>"+
+      "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Adult's Role</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.adult+"</div></div>"+
+      "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Safety</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.safety+"</div></div>"+
+      "<div style=\"background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:12px;padding:12px 14px;margin-top:12px\"><div style=\"font-size:.88rem;color:#FFD700;font-style:italic;margin-bottom:8px\">\""+m.question+"\"</div><div style=\"font-size:.72rem;color:rgba(255,248,240,.6)\">Ask this after the activity — there is no wrong answer.</div></div>"+
+      "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Done when</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.finish+"</div></div>"+
+      "<button onclick=\"this.closest('[style*=&quot;position:fixed&quot;]').remove()\" style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:14px;font-family:var(--font-b);font-weight:600;display:block;width:100%\">Done — go back</button>"+
+    "</div>";
+  document.body.appendChild(el);
+}
+
+window.MISSIONS = {
+  sandpaper: {
+    title: "Trace Letters in Sand or Salt",
+    materials: ["A tray, plate, or shallow box", "Table salt, sand, flour, or sugar", "Your finger"],
+    steps: ["Spread a thin layer of salt or sand on the tray", "Using your finger, slowly trace a letter from the alphabet", "Say the letter sound as you trace it", "Smooth it away and try again with another letter"],
+    adult: "Say a letter sound and ask the child to trace it without looking at a model first.",
+    safety: "No hazards.",
+    question: "Can you draw a whole word in the salt?",
+    finish: "When the child can trace letters correctly in the sensory medium."
+  },
+  alphabet: {
+    title: "Sort Objects by First Sound",
+    materials: ["A collection of small objects or toy pictures (cup, ball, dog, cat, sun, moon, etc.)"],
+    steps: ["Spread all the objects out on a mat", "Find one object and say its name slowly, listening for the first sound", "Sort objects with the same first sound into groups", "Name each group by its sound, not its meaning"],
+    adult: "Collect the objects together. Ask: \"What sound does this start with? Which group does it belong in?\"",
+    safety: "Small objects — keep away from mouth.",
+    question: "How many things in your room start with the same sound as your name?",
+    finish: "When the child can sort at least 3 objects by first sound and name the sound."
+  }
+};
 
 // SANDPAPER LETTERS
 function renderSandpaper(area) {

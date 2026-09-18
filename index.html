@@ -141,6 +141,18 @@ body{
 .pbar-fill{height:100%;border-radius:4px;transition:width .5s}
 .pnote{font-size:.72rem;color:#666;line-height:1.5;margin-top:4px}
 
+/* Offline Mission */
+.offline-mission{background:linear-gradient(135deg,#1a3a2a 0%,#0d2818 100%);border:2px solid #4CAF50;border-radius:20px;padding:20px 16px;margin:12px 0;text-align:center;animation:popIn .4s ease}
+.offline-mission .omi-eyebrow{font-size:.65rem;color:#81C784;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;font-family:var(--font-h)}
+.offline-mission .omi-title{font-family:var(--font-h);font-size:1.05rem;color:#FFF8F0;margin-bottom:12px}
+.offline-mission .omi-section{margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px}
+.offline-mission .omi-label{font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.offline-mission .omi-value{font-size:.82rem;color:#FFF8F0;line-height:1.5}
+.offline-mission .omi-question{background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:12px;padding:12px 14px;margin-top:12px}
+.offline-mission .omi-q-text{font-size:.88rem;color:#FFD700;font-style:italic;margin-bottom:8px}
+.offline-mission .omi-q-hint{font-size:.72rem;color:rgba(255,248,240,.6)}
+.offline-mission .omi-close{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:14px;font-family:var(--font-b);font-weight:600}
+
 /* Confetti */
 .confetti{position:fixed;inset:0;pointer-events:none;z-index:9999}
 .conf{position:absolute;width:9px;height:9px;border-radius:2px;animation:cf 2.5s ease-out forwards}
@@ -283,6 +295,270 @@ function renderPanelFooter(){
 function confirmClearAll(){
   var el = document.getElementById("confirm-clear");
   if(el) el.style.display = "block";
+}
+
+// ─────────────────────────────────────────────
+// OFFLINE MISSIONS
+// bible requirement: every activity has a real-world extension
+// ─────────────────────────────────────────────
+var MISSIONS = {
+  // SKIP COUNTING
+  skipbuild: {
+    title: "Build Equal Groups",
+    materials: ["Small objects (buttons, blocks, seeds, or pebbles)", "A flat surface or tray"],
+    steps: ["Gather a handful of objects", "Count out groups — for example, put 2 buttons together, then 2 more, then 2 more", "Notice how many groups you have", "Try with 3s, 5s, or 10s instead of 2s"],
+    adult: "Sit nearby and ask, \"How many groups do you see?\" without correcting.",
+    safety: "Small objects — keep away from mouth for children under 3.",
+    question: "What happens if you count the objects one by one instead?",
+    finish: "When all objects are in equal groups and the child can describe them."
+  },
+  skipjump: {
+    title: "Jump Along the Number Line",
+    materials: ["A clear floor space or garden path", "Sidewalk chalk (optional)"],
+    steps: ["Draw a number line from 0 to 20 on the ground with chalk", "Stand at 0", "Count by 2s out loud: 0, 2, 4, 6...", "Jump to each number as you say it"],
+    adult: "Call out a target number and ask the child to jump there.",
+    safety: "Make sure there is soft ground or a helper nearby for balance.",
+    question: "If you jump by 5s instead of 2s, where do you land first?",
+    finish: "When the child can jump to 10 or 20 by counting in equal steps."
+  },
+  skipnext: {
+    title: "Skip Count the Real World",
+    materials: ["Egg carton, ice cube tray, or muffin tin", "Small objects (pebbles, dried pasta, beads)"],
+    steps: ["Fill one compartment with 2 objects", "Skip-count to fill the rest: 2, 4, 6, 8...", "Notice the pattern in the container"],
+    adult: "Ask, \"Can you predict how many will be in the last compartment?\"",
+    safety: "Small objects — keep away from mouth.",
+    question: "What do you notice about the last number in each row?",
+    finish: "When the child can predict the next number before filling it."
+  },
+
+  // MATH
+  numbers: {
+    title: "Count Real Objects",
+    materials: ["Any collection of 10-20 objects: toys, fruit, spoons, leaves"],
+    steps: ["Spread the objects on a tray or mat", "Touch and count each one slowly", "Arrange them in a line to check your count", "Try counting backwards from the last one"],
+    adult: "Watch silently the first time, then ask: \"How do you know the count is right?\"",
+    safety: "No hazards.",
+    question: "If you close your eyes and I move one, can you tell which one is missing?",
+    finish: "When the child can count 10-20 objects reliably and explain how they checked."
+  },
+  rods: {
+    title: "Build Staircases with Objects",
+    materials: ["Books of different sizes, or blocks stacked smallest to largest", "A flat surface"],
+    steps: ["Find 10 objects that grow in size", "Arrange them smallest to tallest like a staircase", "Say the number name for each step as you build"],
+    adult: "Ask: \"Which step is longer? How much longer is it than the one before?\"",
+    safety: "No hazards.",
+    question: "Can you build the staircase going down instead of up?",
+    finish: "When the staircase is ordered correctly and the child can describe the pattern."
+  },
+  spindles: {
+    title: "Match Groups to Numbers",
+    materials: ["Paper and a pencil", "A collection of small objects"],
+    steps: ["Write numbers 1-9 on paper", "Next to each number, count out that many objects", "Notice when groups match their number"],
+    adult: "Mix up the objects and ask: \"Which group has more? How do you know?\"",
+    safety: "Small objects — keep away from mouth.",
+    question: "Can you put the groups in order from smallest to biggest without counting?",
+    finish: "When the child can match number symbols to quantities correctly."
+  },
+  teen: {
+    title: "Count a Teen Collection",
+    materials: ["10 of something (sticks, pencils, or blocks)", "A cup or bowl"],
+    steps: ["Gather 10 objects and put them in the bowl", "Add 1 more — that is eleven", "Keep adding one more: twelve, thirteen, fourteen...", "Notice how ten and something always makes the teen number"],
+    adult: "Ask: \"If you have ten and add three, what number is that?\" after the child has explored.",
+    safety: "No hazards.",
+    question: "Why do you think eleven starts with a one even though it means ten and one more?",
+    finish: "When the child can count from 11 to 19 and explain that it means 10 plus some more."
+  },
+  decimal: {
+    title: "Trade Ones for Tens",
+    materials: ["10 coins or small tokens, a cup or bowl", "Paper and pencil"],
+    steps: ["Count out 10 coins and put them in the bowl — this is one ten", "Make two bowls of 10 — that is two tens", "Count the tens: ten, twenty, thirty...", "Trade coins and count together"],
+    adult: "Ask: \"If you have 3 tens and add 4 ones, what number is that?\" after exploration.",
+    safety: "No hazards.",
+    question: "What happens when you have 9 ones and add one more?",
+    finish: "When the child can count in tens and ones and explain the trade."
+  },
+  addsub: {
+    title: "Add and Take Away in the Kitchen",
+    materials: ["10 grapes, crackers, or small fruits on a plate", "A napkin to hide objects"],
+    steps: ["Count out 5 objects", "Add 2 more — how many now?", "Cover some with the napkin — how many are hidden?", "Take 1 away — how many are left?"],
+    adult: "Let the child lead. Ask \"How did you figure that out?\"",
+    safety: "Only use food that is safe for the child to eat.",
+    question: "If you start with 8 and take away 3, how many are left? Can you show me without counting one by one?",
+    finish: "When the child can add and subtract within 10 using objects."
+  },
+
+  // SENSORIAL
+  pinktower: {
+    title: "Build a Pink Tower at Home",
+    materials: ["10 cardboard boxes of increasing size (or stacking cups)", "A smooth floor or low table"],
+    steps: ["Find 10 boxes that grow from small to large", "Build a tower from the biggest at the bottom to the smallest on top", "Notice how each piece is smaller than the one below", "Try building it with eyes closed"],
+    adult: "Let the child discover the order. Ask: \"Does this feel right? How can you check?\"",
+    safety: "Avoid boxes with staples or sharp edges.",
+    question: "What happens to the size of each piece as you go up the tower?",
+    finish: "When the tower is complete with the largest at the bottom and smallest at the top."
+  },
+  brownstairs: {
+    title: "Build Brown Stairs with Books",
+    materials: ["10 books of clearly different thicknesses, or 10 wooden blocks in a range of widths"],
+    steps: ["Arrange the objects from thickest to thinnest in a staircase", "Notice how each one is wider than the last", "Feel the difference between each step — can you feel it with your eyes closed?"],
+    adult: "Let the child work in silence. Ask: \"Does this feel like stairs?\" after they have explored.",
+    safety: "No hazards.",
+    question: "Can you feel the difference with your eyes closed? How do you know which is thicker?",
+    finish: "When the objects are arranged correctly and the child can describe the pattern."
+  },
+  colorgrade: {
+    title: "Grade Colours in Nature",
+    materials: ["Leaves, flower petals, or fabrics in different shades of one colour"],
+    steps: ["Gather 5-10 items in the same colour family (e.g., all yellow, all green)", "Arrange them from lightest to darkest", "Notice how the colour changes gradually"],
+    adult: "Collect items together outside. Ask: \"Which yellow is lightest? Which is closest to orange?\"",
+    safety: "No hazards.",
+    question: "Are there more shades of green or more shades of brown in nature today?",
+    finish: "When the child can arrange 5+ shades correctly and explain how they compare."
+  },
+  geomatch: {
+    title: "Find Geometric Shapes in the House",
+    materials: ["Paper and coloured pencils", "Your home or garden"],
+    steps: ["Walk around a room and find one circle, one square, one triangle", "Draw each shape you find", "Count how many of each shape you found"],
+    adult: "Walk alongside the child. Ask: \"What shape is the window? What shape is the door frame?\"",
+    safety: "No hazards.",
+    question: "Which shape did you find the most of? Why do you think that is?",
+    finish: "When the child has found and drawn at least 5 of each shape."
+  },
+
+  // PRACTICAL LIFE
+  pour: {
+    title: "Pour Water at the Table",
+    materials: ["A small jug or cup", "Two containers of different sizes", "A tray to catch spills", "A sponge"],
+    steps: ["Fill the small container halfway with water", "Pour slowly from the small container into the large one", "Notice how the water moves", "Try pouring back the other way"],
+    adult: "Sit at the table with the child. Pour your own water at the same time, silently at first.",
+    safety: "Water on the floor is a slip hazard — use a tray and stay nearby.",
+    question: "Can you pour so slowly that not a single drop spills?",
+    finish: "When the child can pour without spilling and notices when the container is getting full."
+  },
+  tongs: {
+    title: "Transfer Small Objects with Tongs",
+    materials: ["Kitchen tongs or chopsticks", "Two bowls", "Small objects: dried beans, buttons, beads, cotton balls"],
+    steps: ["Put all the objects in one bowl", "Using tongs, transfer one object at a time to the other bowl", "Count how many you have moved", "Try to do it without making any noise"],
+    adult: "Time yourself doing the same task. Ask: \"Is it faster with your fingers? Why do you think that is?\"",
+    safety: "Small objects — keep away from mouth. Watch with chopsticks.",
+    question: "Which objects are easiest to pick up? Which are hardest? Why?",
+    finish: "When the child has transferred all objects using only tongs."
+  },
+  button: {
+    title: "Practice Buttons on a Jacket or Bag",
+    materials: ["A jacket, coat, or bag with buttons", "A lap tray or flat surface"],
+    steps: ["Sit at a table with the item in front of you", "Open all the buttons slowly", "Close them one by one, starting from the top", "Notice how the button slides through the hole"],
+    adult: "Show how you button your own jacket slowly. Ask: \"Which part do you need to hold and which part do you push?\"",
+    safety: "No hazards.",
+    question: "Can you button it starting from the bottom instead of the top? Is it easier or harder?",
+    finish: "When the child can button and unbutton a jacket independently."
+  },
+  wash: {
+    title: "Wash Something Real",
+    materials: ["A small plastic or wooden toy", "A bowl of warm water and a cloth", "A towel", "A drying space"],
+    steps: ["Fill a small bowl with warm (not hot) water", "Gently wipe the toy with a damp cloth", "Notice the dirt coming off", "Pat dry with the towel and set somewhere to finish air-drying"],
+    adult: "Supervise the water. Ask: \"What does the water look like now? Where did the dirt go?\"",
+    safety: "Water stays at the table. Keep electrical items away. Warm water only — test with your elbow.",
+    question: "What other things in your home could you wash?",
+    finish: "When the toy is clean, dry, and put back in its place."
+  },
+
+  // LANGUAGE
+  sandpaper: {
+    title: "Trace Letters in Sand or Salt",
+    materials: ["A tray, plate, or shallow box", "Table salt, sand, flour, or sugar", "Your finger"],
+    steps: ["Spread a thin layer of salt or sand on the tray", "Using your finger, slowly trace a letter from the alphabet", "Say the letter sound as you trace it", "Smooth it away and try again with another letter"],
+    adult: "Say a letter sound and ask the child to trace it without looking at a model first.",
+    safety: "No hazards.",
+    question: "Can you draw a whole word in the salt?",
+    finish: "When the child can trace letters correctly in the sensory medium."
+  },
+  alphabet: {
+    title: "Sort Objects by First Sound",
+    materials: ["A collection of small objects or toy pictures (cup, ball, dog, cat, sun, moon, etc.)"],
+    steps: ["Spread all the objects out on a mat", "Find one object and say its name slowly, listening for the first sound", "Sort objects with the same first sound into groups", "Name each group by its sound, not its meaning"],
+    adult: "Collect the objects together. Ask: \"What sound does this start with? Which group does it belong in?\"",
+    safety: "Small objects — keep away from mouth.",
+    question: "How many things in your room start with the same sound as your name?",
+    finish: "When the child can sort at least 3 objects by first sound and name the sound."
+  },
+
+  // CULTURAL
+  globe: {
+    title: "Find Land and Water on a Globe or Map",
+    materials: ["A globe or world map", "A small toy or marker"],
+    steps: ["Gently spin the globe and stop it with your eyes closed", "Open your eyes — point to the nearest water", "Point to the nearest land", "Count: how many times can you spin and find both?"],
+    adult: "Sit together with the globe. Ask: \"Can you find a continent that is mostly surrounded by water?\"",
+    safety: "No hazards.",
+    question: "Is more of the Earth covered by water or by land? How can you tell?",
+    finish: "When the child can identify water and land on a globe and explain the difference."
+  },
+  continents: {
+    title: "Explore Your Continent",
+    materials: ["Paper and coloured pencils or crayons", "A world map or atlas"],
+    steps: ["Find your continent on the map", "Draw its outline from memory first", "Then look at the map again and add details: coastlines, neighbouring continents", "Label it with the name and one interesting fact"],
+    adult: "Ask: \"What do you already know about this continent? What would you like to find out?\"",
+    safety: "No hazards.",
+    question: "Which continent is closest to yours? How could you travel there?",
+    finish: "When the child has drawn the continent and named one true thing about it."
+  },
+  sink: {
+    title: "Float or Sink Exploration",
+    materials: ["A large bowl or basin of water", "10 small objects of different materials: leaf, stone, coin, cork, plastic lid, feather, wooden block, aluminium foil, rubber ball, paper", "A towel"],
+    steps: ["Gather the objects", "Before putting each one in, guess: will it float or sink?", "Put it in the water gently and see", "Record your prediction and result for each object"],
+    adult: "Ask: \"Before you try it — what do you think will happen?\" Do not give the answer.",
+    safety: "Water stays at the table. Dry hands before touching electrical items. No drinking the water.",
+    question: "Do heavy things always sink? Do light things always float? What do you notice about the things that float?",
+    finish: "When the child has tested at least 6 objects, predicted before each one, and can explain one pattern."
+  },
+  magnet: {
+    title: "Find What a Magnet Attracts",
+    materials: ["A magnet (bar or horseshoe shape)", "A collection of objects: spoon, coin, paper clip, rubber band, key, aluminium foil, wooden stick, glass pebble, plastic toy", "Paper and pencil"],
+    steps: ["Gather the objects in one place", "Test each one by holding the magnet near it — does it stick?", "Sort objects into two groups: attracted and not attracted", "Look for patterns in what gets attracted"],
+    adult: "Let the child discover. Ask: \"Do magnets attract through paper? Through water?\" as extensions.",
+    safety: "Keep magnets away from devices, credit cards, and pacemakers. Do not put magnets in the mouth.",
+    question: "What do all the things that stick have in common?",
+    finish: "When the child has tested at least 8 objects and can describe what a magnet attracts."
+  },
+
+  // COSMIC
+  greatlesson: {
+    title: "Tell the Story of Something You Are Grateful For",
+    materials: ["Paper and coloured pencils", "A quiet place to sit"],
+    steps: ["Think of something in nature you are grateful for — a tree, an animal, rain, sunlight, soil", "Draw it in the centre of your page", "Draw the chain of things that made it possible", "Share your drawing with someone and tell the story"],
+    adult: "Listen without correcting the story. Ask: \"What would happen if that thing didn't exist?\"",
+    safety: "No hazards.",
+    question: "Who is one person who made something you use today? Can you thank them?",
+    finish: "When the child has drawn something and told a connected story of at least three steps."
+  }
+};
+
+function showOfflineMission(key, nextUrl){
+  var m = MISSIONS[key];
+  if(!m) return;
+  var container = document.getElementById("mission-container") || document.body;
+  var el = document.createElement("div");
+  el.style.cssText = "position:fixed;inset:0;background:rgba(7,7,26,.92);z-index:500;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto";
+  el.innerHTML =
+    "<div class=\"offline-mission\" style=\"max-width:440px;width:100%;position:relative\">"+
+      "<div class=\"omi-eyebrow\">Real World Mission</div>"+
+      "<div class=\"omi-title\">"+m.title+"</div>"+
+      "<div class=\"omi-section\"><div class=\"omi-label\">Materials</div><div class=\"omi-value\">"+m.materials.map(function(item){return "• "+item;}).join("<br>")+"</div></div>"+
+      "<div class=\"omi-section\"><div class=\"omi-label\">Steps</div><div class=\"omi-value\">"+m.steps.map(function(s,i){return (i+1)+". "+s;}).join("<br>")+"</div></div>"+
+      "<div class=\"omi-section\"><div class=\"omi-label\">Adult's Role</div><div class=\"omi-value\">"+m.adult+"</div></div>"+
+      "<div class=\"omi-section\"><div class=\"omi-label\">Safety</div><div class=\"omi-value\">"+m.safety+"</div></div>"+
+      "<div class=\"omi-question\">"+
+        "<div class=\"omi-q-text\">\""+m.question+"\"</div>"+
+        "<div class=\"omi-q-hint\">Ask this after the activity — there is no wrong answer.</div>"+
+      "</div>"+
+      "<div class=\"omi-section\"><div class=\"omi-label\">Done when</div><div class=\"omi-value\">"+m.finish+"</div></div>"+
+      "<button class=\"omi-close\" onclick=\"this.closest('[style*=&quot;position:fixed&quot;]').remove()\">Done — go back</button>"+
+    "</div>";
+  container.appendChild(el);
+}
+
+function showMission(key){
+  showOfflineMission(key);
 }
 
 // ─────────────────────────────────────────────

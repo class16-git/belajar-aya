@@ -336,8 +336,36 @@ function startAct(a){
 }
 
 function markDone(id){
-  var _o={}; _o["act-"+id]=true; ls("sens-prog", Object.assign(lg("sens-prog",{}), _o));
+  var _o={}; _o["act-"+id]=true; ls("sens-progress", Object.assign(lg("sens-progress",{}), _o));
+  if(typeof showMission==="function"){setTimeout(function(){showMission(id);},800);}
 }
+
+function showMission(id){
+  if(!window.MISSIONS||!window.MISSIONS[id])return;
+  var m=window.MISSIONS[id];
+  var el=document.createElement("div");
+  el.style.cssText="position:fixed;inset:0;background:rgba(7,7,26,.92);z-index:500;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto";
+  el.innerHTML="<div style=\"background:linear-gradient(135deg,#1a3a2a 0%,#0d2818 100%);border:2px solid #4CAF50;border-radius:20px;padding:20px 16px;max-width:440px;width:100%;position:relative\">"+
+    "<div style=\"font-size:.65rem;color:#81C784;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;font-family:var(--font-h)\">Real World Mission</div>"+
+    "<div style=\"font-family:var(--font-h);font-size:1.05rem;color:#FFF8F0;margin-bottom:12px\">"+m.title+"</div>"+
+    "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Materials</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.materials.map(function(i){return "• "+i;}).join("<br>")+"</div></div>"+
+    "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Steps</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.steps.map(function(s,i){return(i+1)+". "+s;}).join("<br>")+"</div></div>"+
+    "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Adult</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.adult+"</div></div>"+
+    "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Safety</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.safety+"</div></div>"+
+    "<div style=\"background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:12px;padding:12px 14px;margin-top:12px\"><div style=\"font-size:.88rem;color:#FFD700;font-style:italic;margin-bottom:8px\">\""+m.question+"\"</div><div style=\"font-size:.72rem;color:rgba(255,248,240,.6)\">Ask after the activity.</div></div>"+
+    "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Done when</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.finish+"</div></div>"+
+    "<button onclick=\"this.closest('[style*=&quot;position:fixed&quot;]').remove()\" style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:14px;font-family:var(--font-b);font-weight:600;display:block;width:100%\">Done</button>"+
+    "</div>";
+  document.body.appendChild(el);
+}
+
+window.MISSIONS={
+  pinktower:{title:"Build a Pink Tower at Home",materials:["10 cardboard boxes of increasing size (or stacking cups)","A smooth floor or low table"],steps:["Find 10 boxes that grow from small to large","Build a tower from the biggest at the bottom to the smallest on top","Notice how each piece is smaller than the one below","Try building it with eyes closed"],adult:"Let the child discover the order. Ask: \"Does this feel right?\"",safety:"Avoid boxes with staples or sharp edges.",question:"What happens to the size of each piece as you go up the tower?",finish:"When the tower is complete with the largest at the bottom and smallest at the top."},
+  brownstairs:{title:"Build Brown Stairs with Books",materials:["10 books of clearly different thicknesses, or 10 wooden blocks in a range of widths"],steps:["Arrange the objects from thickest to thinnest in a staircase","Notice how each one is wider than the last","Feel the difference between each step — can you feel it with your eyes closed?"],adult:"Let the child work in silence. Ask: \"Does this feel like stairs?\"",safety:"No hazards.",question:"Can you feel the difference with your eyes closed?",finish:"When the objects are arranged correctly."},
+  colorgrad:{title:"Grade Colours in Nature",materials:["Leaves, flower petals, or fabrics in different shades of one colour"],steps:["Gather 5-10 items in the same colour family","Arrange them from lightest to darkest","Notice how the colour changes gradually"],adult:"Collect items together outside. Ask: \"Which is lightest?\"",safety:"No hazards.",question:"Are there more shades of green or brown in nature today?",finish:"When the child can arrange 5+ shades correctly."},
+  geomatch:{title:"Find Geometric Shapes in the House",materials:["Paper and coloured pencils","Your home or garden"],steps:["Walk around a room and find one circle, one square, one triangle","Draw each shape you find","Count how many of each shape you found"],adult:"Walk alongside. Ask: \"What shape is the window?\"",safety:"No hazards.",question:"Which shape did you find the most of?",finish:"When the child has found and drawn at least 5 of each shape."},
+  sounds:{title:"Find Quiet and Loud Sounds",materials:["Your home and garden"],steps:["Sit quietly and listen for 30 seconds","Count how many different sounds you hear","Close your eyes — can you tell which direction each sound comes from?","Make one quiet sound and one loud sound yourself"],adult:"Ask: \"Which sounds are from nature? Which are made by people?\"",safety:"No hazards.",question:"What is the quietest sound you can make?",finish:"When the child can identify and describe at least 5 different sounds."},
+};
 
 // ═══════════════════════════════════════════════
 // PINK TOWER — order cubes largest to smallest

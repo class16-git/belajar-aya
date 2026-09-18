@@ -228,7 +228,77 @@ function markActDone(id) {
     confetti();
     say("Wonderful! You completed this activity!");
   }
+  if (typeof showMission === "function") {
+    setTimeout(function() { showMission(id); }, 1200);
+  }
 }
+
+function showMission(id) {
+  if (!window.MISSIONS || !window.MISSIONS[id]) return;
+  var m = window.MISSIONS[id];
+  var el = document.createElement("div");
+  el.style.cssText = "position:fixed;inset:0;background:rgba(7,7,26,.92);z-index:500;display:flex;align-items:center;justify-content:center;padding:16px;overflow-y:auto";
+  el.innerHTML =
+    "<div style=\"background:linear-gradient(135deg,#1a3a2a 0%,#0d2818 100%);border:2px solid #4CAF50;border-radius:20px;padding:20px 16px;max-width:440px;width:100%;position:relative\">"+
+      "<div style=\"font-size:.65rem;color:#81C784;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;font-family:var(--font-h)\">Real World Mission</div>"+
+      "<div style=\"font-family:var(--font-h);font-size:1.05rem;color:#FFF8F0;margin-bottom:12px\">"+m.title+"</div>"+
+      "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Materials</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.materials.map(function(i){return "• "+i;}).join("<br>")+"</div></div>"+
+      "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Steps</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.steps.map(function(s,i){return (i+1)+". "+s;}).join("<br>")+"</div></div>"+
+      "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Adult's Role</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.adult+"</div></div>"+
+      "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Safety</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.safety+"</div></div>"+
+      "<div style=\"background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:12px;padding:12px 14px;margin-top:12px\"><div style=\"font-size:.88rem;color:#FFD700;font-style:italic;margin-bottom:8px\">\""+m.question+"\"</div><div style=\"font-size:.72rem;color:rgba(255,248,240,.6)\">Ask this after the activity — there is no wrong answer.</div></div>"+
+      "<div style=\"margin:10px 0;text-align:left;background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px\"><div style=\"font-size:.68rem;color:#A5D6A7;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px\">Done when</div><div style=\"font-size:.82rem;color:#FFF8F0;line-height:1.5\">"+m.finish+"</div></div>"+
+      "<button onclick=\"this.closest('[style*=&quot;position:fixed&quot;]').remove()\" style=\"background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#FFF8F0;border-radius:12px;padding:10px 20px;font-size:.82rem;cursor:pointer;margin-top:14px;font-family:var(--font-b);font-weight:600;display:block;width:100%\">Done — go back</button>"+
+    "</div>";
+  document.body.appendChild(el);
+}
+window.MISSIONS = window.MISSIONS || {};
+
+window.MISSIONS.pour = {
+  title: "Pour Water at the Table",
+  materials: ["A small jug or cup", "Two containers of different sizes", "A tray to catch spills", "A sponge"],
+  steps: ["Fill the small container halfway with water", "Pour slowly from the small container into the large one", "Notice how the water moves", "Try pouring back the other way"],
+  adult: "Sit at the table with the child. Pour your own water at the same time, silently at first.",
+  safety: "Water on the floor is a slip hazard — use a tray and stay nearby.",
+  question: "Can you pour so slowly that not a single drop spills?",
+  finish: "When the child can pour without spilling and notices when the container is getting full."
+};
+window.MISSIONS.tongs = {
+  title: "Transfer Small Objects with Tongs",
+  materials: ["Kitchen tongs or chopsticks", "Two bowls", "Small objects: dried beans, buttons, beads, cotton balls"],
+  steps: ["Put all the objects in one bowl", "Using tongs, transfer one object at a time to the other bowl", "Count how many you have moved", "Try to do it without making any noise"],
+  adult: "Time yourself doing the same task. Ask: \"Is it faster with your fingers? Why do you think that is?\"",
+  safety: "Small objects — keep away from mouth. Watch with chopsticks.",
+  question: "Which objects are easiest to pick up? Which are hardest? Why?",
+  finish: "When the child has transferred all objects using only tongs."
+};
+window.MISSIONS.button = {
+  title: "Practice Buttons on a Jacket or Bag",
+  materials: ["A jacket, coat, or bag with buttons", "A lap tray or flat surface"],
+  steps: ["Sit at a table with the item in front of you", "Open all the buttons slowly", "Close them one by one, starting from the top", "Notice how the button slides through the hole"],
+  adult: "Show how you button your own jacket slowly. Ask: \"Which part do you need to hold and which part do you push?\"",
+  safety: "No hazards.",
+  question: "Can you button it starting from the bottom instead of the top? Is it easier or harder?",
+  finish: "When the child can button and unbutton a jacket independently."
+};
+window.MISSIONS.wash = {
+  title: "Wash Something Real",
+  materials: ["A small plastic or wooden toy", "A bowl of warm water and a cloth", "A towel", "A drying space"],
+  steps: ["Fill a small bowl with warm (not hot) water", "Gently wipe the toy with a damp cloth", "Notice the dirt coming off", "Pat dry with the towel and set somewhere to finish air-drying"],
+  adult: "Supervise the water. Ask: \"What does the water look like now? Where did the dirt go?\"",
+  safety: "Water stays at the table. Keep electrical items away. Warm water only — test with your elbow.",
+  question: "What other things in your home could you wash?",
+  finish: "When the toy is clean, dry, and put back in its place."
+};
+window.MISSIONS.pinktower = {
+  title: "Build a Pink Tower at Home",
+  materials: ["10 cardboard boxes of increasing size (or stacking cups)", "A smooth floor or low table"],
+  steps: ["Find 10 boxes that grow from small to large", "Build a tower from the biggest at the bottom to the smallest on top", "Notice how each piece is smaller than the one below", "Try building it with eyes closed"],
+  adult: "Let the child discover the order. Ask: \"Does this feel right? How can you check?\"",
+  safety: "Avoid boxes with staples or sharp edges.",
+  question: "What happens to the size of each piece as you go up the tower?",
+  finish: "When the tower is complete with the largest at the bottom and smallest at the top."
+};
 
 // POURING
 function renderPour(area) {
