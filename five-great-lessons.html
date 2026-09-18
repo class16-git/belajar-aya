@@ -586,7 +586,7 @@ var SCENES = {
     title: "Timeline of Life — Who Came First?",
     bg: "#0a0a1a",
     init: function(container) {
-      container.innerHTML = '<div class="scene-q">Drag the events to put them in order — oldest first, most recent last.</div>' +
+      container.innerHTML = '<div class="scene-q">Tap events in order — oldest first, most recent last. What do you notice?</div>' +
         '<div class="scene-viz" style="background:#0a0a1a;min-height:220px">' +
         '<div style="display:flex;flex-direction:column;gap:8px;align-items:center" id="tl-items">' +
         '<div class="schoice tl-item" data-tl="dinos" style="width:220px">&#128006; Dinosaurs ruled Earth</div>' +
@@ -1020,10 +1020,9 @@ function completeLesson(){
   if(!STATE.progress["lesson-"+STATE.currentLesson.id]){
     STATE.progress["lesson-"+STATE.currentLesson.id] = true;
     ls("fgl-progress", STATE.progress);
-    confetti();
   }
   goBack();
-  say("What an amazing story! Now you can explore the experiences.");
+  say("What an amazing story. Now you can explore the experiences.");;
 }
 
 function goExplore(){
@@ -1530,7 +1529,7 @@ function pvCheck(){
   if(val === 243){
     document.getElementById("pv-obs").style.display = "block";
     sceneDone("placevalue");
-    confetti();
+
   } else if(val > 0) {
     say("That is " + val + ". Try to reach 243!");
   }
@@ -1543,8 +1542,8 @@ function sceneDone(id){
   if(!STATE.progress[id]){
     STATE.progress[id] = true;
     ls("fgl-progress", STATE.progress);
-    confetti();
-    say("You completed an experience! " + (SCENES[id] ? SCENES[id].title : "Great work!"));
+
+    say("You completed an experience. " + (SCENES[id] ? SCENES[id].title : "Well done.") + ". Would you like to explore another?");;
   }
 }
 

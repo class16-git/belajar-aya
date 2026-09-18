@@ -209,7 +209,6 @@ function markDone(id){
       state.progress[section.id]=true;
       lsSet("culture-progress",state.progress);
     }
-    confetti();
   }
   if(typeof showMission==="function"){setTimeout(function(){showMission(id);},800);}
 }

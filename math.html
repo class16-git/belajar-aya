@@ -427,7 +427,7 @@ function renderNumbers(area){
 // ═══════════════════════════════════════════════
 function renderRods(area){
   area.innerHTML =
-    '<div class="instr">Drag each rod to the correct number slot</div>'+
+    '<div class="instr">Order the rods from shortest to longest — what do you notice?</div>'+
     '<div style="display:flex;flex-direction:column;gap:8px;max-width:360px;margin:0 auto" id="rod-slots"></div>'+
     '<div id="rod-pool" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:12px 0"></div>'+
     '<div id="rod-success"></div>';
@@ -519,7 +519,7 @@ function startDragRod(ev, rod, n){
 // ═══════════════════════════════════════════════
 function renderSpindle(area){
   area.innerHTML =
-    '<div class="instr">Put the correct number of items in each slot</div>'+
+    '<div class="instr">Count the objects and put them in the right space</div>'+
     '<div id="spindle-slots" style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:8px 0"></div>'+
     '<div id="spindle-pool" style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;padding:8px;background:rgba(255,255,255,.04);border-radius:12px;border:1px solid rgba(255,255,255,.06);margin:8px 0"></div>'+
     '<div id="spindle-success"></div>';
@@ -1167,7 +1167,7 @@ window.MISSIONS={
     adult: "Ask: Which step is longer? How much longer?",
     safety: "No hazards.",
     question: "Can you build the staircase going down instead?",
-    finish: "Staircase ordered correctly.",
+    finish: "Ordered the rods from shortest to longest.",
   },
   spindle: {
     title: "Match Groups to Numbers",
@@ -1176,7 +1176,7 @@ window.MISSIONS={
     adult: "Ask: Which group has more? How do you know?",
     safety: "Small objects -- keep away from mouth.",
     question: "Can you put the groups in order without counting?",
-    finish: "Matches number symbols to quantities correctly.",
+    finish: "Matched number symbols to quantities.",
   },
   counters: {
     title: "Count and Group Real Objects",
@@ -1194,7 +1194,7 @@ window.MISSIONS={
     adult: "Ask: What comes after 10? What comes after 15?",
     safety: "Small objects -- keep away from mouth.",
     question: "What is the biggest teen number you can count?",
-    finish: "Counts 10-19 correctly.",
+    finish: "Counted and understood teen numbers.",
   },
   tens: {
     title: "Count in Tens",
