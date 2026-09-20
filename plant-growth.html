@@ -153,8 +153,10 @@
         <text id="stemLabel" class="part-label" x="245" y="243">Stem</text>
         <line id="leafLine" class="part-label-line" x1="180" y1="268" x2="155" y2="285"/>
         <text id="leafLabel" class="part-label" x="115" y="288">Leaf</text>
-        <line id="flowerLine" class="part-label-line" x1="200" y1="195" x2="240" y2="180"/>
-        <text id="flowerLabel" class="part-label" x="245" y="178">Flower</text>
+        <g id="flowerLabels" opacity="0">
+          <line id="flowerLine" class="part-label-line" x1="200" y1="195" x2="240" y2="180"/>
+          <text id="flowerLabel" class="part-label" x="245" y="178">Flower</text>
+        </g>
       </g>
     </svg>
   </div>
@@ -219,6 +221,10 @@
       labels.setAttribute("opacity", "0");
     }
 
+    // Flower label only makes sense when the flower exists (stage 4+)
+    var flowerLabels = document.getElementById("flowerLabels");
+    if (flowerLabels) flowerLabels.setAttribute("opacity", n >= 4 ? "1" : "0");
+
     // Update buttons
     btnPlant.disabled = (n > 0);
     btnWater.disabled = (n === 0 || n === 5);
@@ -228,11 +234,12 @@
     }
   }
 
+  var waterInterval = null;
   function animateWater() {
     if (!isWatering) return;
     waterDrops.setAttribute("opacity", "1");
     var offset = 0;
-    var interval = setInterval(function() {
+    waterInterval = setInterval(function() {
       offset += 5;
       var d1 = waterDrops.children[0];
       var d2 = waterDrops.children[1];
@@ -241,7 +248,8 @@
       d2.setAttribute("cy", 170 + offset);
       d3.setAttribute("cy", 182 + offset);
       if (offset > 60) {
-        clearInterval(interval);
+        clearInterval(waterInterval);
+        waterInterval = null;
         waterDrops.setAttribute("opacity", "0");
         // Reset positions
         d1.setAttribute("cy", "180");
@@ -268,6 +276,7 @@
   });
 
   btnReset.addEventListener("click", function() {
+    if (waterInterval) { clearInterval(waterInterval); waterInterval = null; }
     currentStage = 0;
     isWatering = false;
     waterDrops.setAttribute("opacity", "0");

@@ -10,7 +10,7 @@
   h1 { font-size: 1.8em; text-align: center; padding: 20px 16px 4px; color: #fff; }
   .subtitle { text-align: center; font-size: 0.85em; color: #8888cc; padding: 0 16px 12px; font-style: italic; }
   .scene { position: relative; width: 100%; max-width: 600px; margin: 0 auto; }
-  #canvas { display: block; width: 100%; height: 280px; border-radius: 12px; margin: 0 16px; width: calc(100% - 32px); background: #050520; }
+  #canvas { display: block; height: 280px; border-radius: 12px; margin: 0 16px; width: calc(100% - 32px); background: #050520; }
   .controls { display: flex; justify-content: center; gap: 12px; padding: 12px; flex-wrap: wrap; align-items: center; }
   .slider-wrap { display: flex; align-items: center; gap: 10px; font-size: 0.85em; }
   .slider-wrap label { color: #aaa; white-space: nowrap; }
@@ -86,6 +86,10 @@
   var particles = [];
   var NUM_PARTICLES = 60;
 
+  // State thresholds (degrees)
+  var MELTING_POINT = 45;
+  var BOILING_POINT = 75;
+
   // Grid positions for solid state
   var gridPositions = [];
 
@@ -120,38 +124,57 @@
     }
   }
 
-  function getParticleColor(p, temp) {
-    // Cold = blue, medium = teal, hot = orange/red
-    if (temp < 35) {
-      var t = temp / 35;
-      var r = Math.floor(50 + t * 50);
-      var g = Math.floor(100 + t * 150);
-      var b = Math.floor(220 - t * 50);
-      return "rgb(" + r + "," + g + "," + b + ")";
-    } else {
-      var t = (temp - 35) / 65;
-      var r = Math.floor(200 + t * 55);
-      var g = Math.floor(200 - t * 100);
-      var b = Math.floor(50 + t * 50);
-      return "rgb(" + r + "," + g + "," + b + ")";
-    }
+  // ---- PURE FUNCTIONS (also exercised by the node behavioral test) ----
+
+  function getState(temp) {
+    if (temp < MELTING_POINT) return "solid";
+    if (temp < BOILING_POINT) return "liquid";
+    return "gas";
+  }
+
+  // Characteristic particle speed per state: solid < liquid < gas
+  function particleSpeed(temp) {
+    var s = getState(temp);
+    if (s === "solid") return 0.3 + (temp / MELTING_POINT) * 0.9;   // 0.3 .. 1.2
+    if (s === "liquid") return 1.5 + ((temp - MELTING_POINT) / (BOILING_POINT - MELTING_POINT)) * 1.0; // 1.5 .. 2.5
+    return 3.0 + ((temp - BOILING_POINT) / (100 - BOILING_POINT)) * 2.5; // 3.0 .. 5.5
+  }
+
+  // Distinct color per state: blue -> teal -> orange
+  function stateColor(temp) {
+    var s = getState(temp);
+    if (s === "solid") return "rgb(70,130,240)";
+    if (s === "liquid") return "rgb(60,190,180)";
+    return "rgb(250,140,60)";
   }
 
   function updateState() {
     var t = temperature;
+    var s = getState(t);
     var label, color;
-    if (t < 25) {
+    if (s === "solid") {
       label = "Solid — Particles vibrate in place";
-      color = "#4488ff";
-    } else if (t < 55) {
-      label = "Liquid — Particles move freely but stay together";
-      color = "#44cccc";
+      color = "#4682F0";
+    } else if (s === "liquid") {
+      label = (t < MELTING_POINT + 6)
+        ? "Melting... Solid becomes Liquid — particles can slide around"
+        : "Liquid — Particles move freely but stay together";
+      color = "#3CBEB4";
     } else {
-      label = "Gas — Particles spread out and fill the space";
-      color = "#ff6644";
+      label = (t < BOILING_POINT + 6)
+        ? "Boiling... Liquid becomes Gas — particles fly free!"
+        : "Gas — Particles spread out and fill the space";
+      color = "#FA8C3C";
     }
     stateLabel.textContent = label;
     stateLabel.style.color = color;
+  }
+
+  function constrainToBox(p, w, h, floorY) {
+    if (p.x < 15) { p.x = 15; p.vx = Math.abs(p.vx); }
+    if (p.x > w - 15) { p.x = w - 15; p.vx = -Math.abs(p.vx); }
+    if (p.y < floorY) { p.y = floorY; p.vy = Math.abs(p.vy); }
+    if (p.y > h - 15) { p.y = h - 15; p.vy = -Math.abs(p.vy); }
   }
 
   function updateParticles() {
@@ -159,48 +182,42 @@
     var w = rect.width;
     var h = rect.height;
     var t = temperature;
+    var s = getState(t);
+    var speed = particleSpeed(t);
+    var floorY = (s === "liquid") ? h / 3 : 15; // liquid stays in lower 2/3
 
     for (var i = 0; i < particles.length; i++) {
       var p = particles[i];
       var gp = gridPositions[i];
 
-      if (t < 25) {
-        // Solid: vibrate around grid position
-        var intensity = 0.5 + (t / 25) * 1.5;
+      if (s === "solid") {
+        // Vibrate around grid anchor; amplitude grows slightly with temp
+        var intensity = 1 + (t / MELTING_POINT) * 2;
         p.x = gp.x + Math.sin(p.angle * 8 + i) * intensity;
         p.y = gp.y + Math.cos(p.angle * 6 + i) * intensity;
         p.vx = 0;
         p.vy = 0;
-      } else if (t < 55) {
-        // Melting: transition from solid to liquid
-        var meltFactor = (t - 25) / 30;
-        // Move toward grid but with increasing randomness
-        var targetX = gp.x + (Math.random() - 0.5) * (30 + meltFactor * 50);
-        var targetY = gp.y + (Math.random() - 0.5) * (30 + meltFactor * 50);
-        p.vx = (targetX - p.x) * 0.05;
-        p.vy = (targetY - p.y) * 0.05;
+      } else if (s === "liquid") {
+        // Free wander at mild speed; gently pulled back into lower 2/3 of the box
+        var dir = Math.random() * Math.PI * 2;
+        p.vx += Math.cos(dir) * speed * 0.25;
+        p.vy += Math.sin(dir) * speed * 0.25;
+        p.vx *= 0.92;
+        p.vy *= 0.92;
+        if (p.y < floorY + 10) p.vy += 0.15; // soft ceiling keeps them low
         p.x += p.vx;
         p.y += p.vy;
-        // Keep in bounds
-        if (p.x < 15) p.x = 15;
-        if (p.x > w - 15) p.x = w - 15;
-        if (p.y < 15) p.y = 15;
-        if (p.y > h - 15) p.y = h - 15;
+        constrainToBox(p, w, h, floorY);
       } else {
-        // Gas: fast random movement
-        var speed = 1 + (t - 55) / 45 * 3;
-        p.vx += (Math.random() - 0.5) * speed;
-        p.vy += (Math.random() - 0.5) * speed;
-        // Damping
-        p.vx *= 0.95;
-        p.vy *= 0.95;
+        // Gas: fast, fills the whole box
+        var gdir = Math.random() * Math.PI * 2;
+        p.vx += Math.cos(gdir) * speed * 0.35;
+        p.vy += Math.sin(gdir) * speed * 0.35;
+        p.vx *= 0.9;
+        p.vy *= 0.9;
         p.x += p.vx;
         p.y += p.vy;
-        // Bounce off edges
-        if (p.x < 15) { p.x = 15; p.vx = Math.abs(p.vx); }
-        if (p.x > w - 15) { p.x = w - 15; p.vx = -Math.abs(p.vx); }
-        if (p.y < 15) { p.y = 15; p.vy = Math.abs(p.vy); }
-        if (p.y > h - 15) { p.y = h - 15; p.vy = -Math.abs(p.vy); }
+        constrainToBox(p, w, h, 15);
       }
 
       p.angle += 0.02 + t * 0.001;
@@ -211,6 +228,7 @@
     var rect = canvas.getBoundingClientRect();
     var w = rect.width;
     var h = rect.height;
+    var color = stateColor(temperature);
 
     ctx.clearRect(0, 0, w, h);
 
@@ -221,16 +239,27 @@
     ctx.roundRect(10, 10, w - 20, h - 20, 8);
     ctx.stroke();
 
+    // Liquid zone guide
+    var s = getState(temperature);
+    if (s === "liquid") {
+      ctx.strokeStyle = "rgba(60,190,180,0.25)";
+      ctx.setLineDash([4, 4]);
+      ctx.beginPath();
+      ctx.moveTo(12, h / 3);
+      ctx.lineTo(w - 12, h / 3);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    }
+
     for (var i = 0; i < particles.length; i++) {
       var p = particles[i];
-      var color = getParticleColor(p, temperature);
 
       // Glow for hot particles
-      if (temperature > 60) {
-        var glow = (temperature - 60) / 40 * 0.3;
+      if (temperature > 80) {
+        var glow = (temperature - 80) / 20 * 0.3;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius + 4, 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(255,100,50," + glow + ")";
+        ctx.fillStyle = "rgba(255,140,60," + glow + ")";
         ctx.fill();
       }
 
@@ -266,7 +295,7 @@
     if (window.parent && window.parent.navigate) window.parent.navigate("home");
   });
   document.getElementById("fabParent").addEventListener("click", function() {
-    alert("All matter is made of tiny particles! In a solid, particles are packed tightly and only vibrate. In a liquid, they move around each other. In a gas, they zoom around freely. Temperature controls how fast particles move — that\'s why heating water makes it evaporate!");
+    alert("All matter is made of tiny particles! In a solid, particles are packed tightly and only vibrate. In a liquid, they move around each other. In a gas, they zoom around freely. Temperature controls how fast particles move — that's why heating water makes it evaporate!");
   });
   document.getElementById("fabRabbity").addEventListener("click", function() {
     bubble.classList.toggle("show");
@@ -294,14 +323,23 @@
   updateState();
   loop();
 
+  // Export pure functions for the node behavioral test (harmless in browser)
+  window.__statesOfMatterTest = {
+    getState: getState,
+    particleSpeed: particleSpeed,
+    stateColor: stateColor,
+    MELTING_POINT: MELTING_POINT,
+    BOILING_POINT: BOILING_POINT
+  };
+
   window.MISSIONS = window.MISSIONS || {};
   Object.assign(window.MISSIONS, {
     "states-of-matter": {
       title: "States of Matter — Real World Mission",
-      adult: "What you might say: When water freezes into ice, the molecules actually spread apart a little — that\'s why ice floats! Most things get heavier (denser) when they freeze, but water is special. This is why lakes freeze from the top down, not the bottom up — and why fish can survive under the ice!",
-      safety: "No physical risks from this simulation. For the real experiment with ice cubes, supervise young children to ensure they don\'t put ice in their mouths unsupervised.",
+      adult: "What you might say: When water freezes into ice, the molecules actually spread apart a little — that's why ice floats! Most things get heavier (denser) when they freeze, but water is special. This is why lakes freeze from the top down, not the bottom up — and why fish can survive under the ice!",
+      safety: "No physical risks from this simulation. For the real experiment with ice cubes, supervise young children to ensure they don't put ice in their mouths unsupervised.",
       askNext: "Can you think of other materials that change state when heated or cooled? What about butter melting?",
-      finish: "You now understand why ice floats and why steam rises! The same molecules behave differently depending on how fast they\'re moving."
+      finish: "You now understand why ice floats and why steam rises! The same molecules behave differently depending on how fast they're moving."
     }
   });
 })();

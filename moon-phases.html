@@ -2,282 +2,412 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <title>Moon Phases — Belajar Aya</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: #0a0a1a;
-    color: #e0e0ff;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-  h1 { font-size: 1.8em; text-align: center; padding: 20px 16px 4px; color: #fff; }
-  .subtitle { text-align: center; font-size: 0.85em; color: #8888cc; padding: 0 16px 12px; font-style: italic; }
-  .scene { position: relative; width: 100%; max-width: 500px; margin: 0 auto; }
-  svg.scene-svg { width: 100%; display: block; }
-  .phase-label {
-    text-align: center;
-    font-size: 1.2em;
-    color: #fff;
-    padding: 12px;
-    min-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .hint { text-align: center; font-size: 0.8em; color: #6688cc; padding: 4px 16px 16px; }
-  .fab-bar {
-    position: fixed; bottom: 0; left: 0; right: 0;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 12px 20px;
-    background: rgba(10,10,26,0.95);
-    border-top: 1px solid #2a2a5a;
-    z-index: 100;
-  }
-  .fab { font-size: 1.4em; background: linear-gradient(135deg,#2a2a5a,#1a1a3a); border: 1px solid #4a4a8a; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; }
-  .fab:hover { background: linear-gradient(135deg,#3a3a7a,#2a2a5a); }
-  .fab.rabbity { position: relative; border-radius: 50% 50% 50% 10px; }
-  .bubble { position: absolute; bottom: 60px; right: 0; background: #1a1a3a; border: 1px solid #4a4a8a; border-radius: 16px 16px 4px 16px; padding: 12px 16px; max-width: 260px; font-size: 0.88em; line-height: 1.4; color: #c0c0e0; display: none; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
-  .bubble.show { display: block; }
-  .bubble::after { content: ""; position: absolute; bottom: -8px; right: 16px; width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #4a4a8a; }
-  .mission-card { background: rgba(30,30,70,0.8); border: 1px solid #3a3a7a; border-radius: 12px; margin: 0 16px 80px; padding: 14px 18px; font-size: 0.82em; color: #aaaaff; line-height: 1.5; }
-  .mission-card strong { color: #aaaaff; display: block; margin-bottom: 4px; font-size: 0.95em; }
-  .stars-bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 0; overflow: hidden; }
-  .star { position: absolute; background: #fff; border-radius: 50%; animation: twinkle 3s ease-in-out infinite; }
-  @keyframes twinkle { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
-  .content { position: relative; z-index: 1; padding-bottom: 80px; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0a0a1a;
+  color: #e0e0ff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.star { position: absolute; background: #fff; border-radius: 50%; pointer-events: none; }
+.header { padding: 26px 20px 6px; text-align: center; position: relative; z-index: 1; }
+.header h1 { font-size: 1.5rem; color: #B0BEC5; margin-bottom: 6px; }
+.header p { font-size: 0.85rem; opacity: 0.6; line-height: 1.5; max-width: 360px; margin: 0 auto; }
+.rabbity {
+  margin: 12px auto 0;
+  max-width: 340px;
+  background: rgba(236,64,122,0.12);
+  border: 1px solid rgba(236,64,122,0.35);
+  border-radius: 16px;
+  padding: 12px 16px;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+.rabbity .who { color: #EC407A; font-weight: 700; font-size: 0.72rem; display: block; margin-bottom: 4px; }
+.views {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin: 18px auto 0;
+  max-width: 640px;
+  padding: 0 14px;
+  position: relative; z-index: 1;
+}
+.panel {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 14px;
+  text-align: center;
+}
+.panel .ptitle {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+svg { touch-action: none; }
+.readout { margin-top: 6px; }
+.phase-name { font-size: 1.15rem; font-weight: 700; color: #f5f5dc; }
+.day-count { font-size: 0.8rem; opacity: 0.6; margin-top: 2px; }
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 14px auto 0;
+  position: relative; z-index: 1;
+}
+.ctl-btn {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: #e0e0ff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.ctl-btn.on { background: rgba(176,190,197,0.3); border-color: rgba(176,190,197,0.6); }
+.hint { text-align: center; font-size: 0.72rem; opacity: 0.5; margin-top: 10px; position: relative; z-index: 1; padding: 0 20px; }
+.mission-card {
+  margin: 18px auto 110px;
+  max-width: 360px;
+  background: rgba(0,188,212,0.08);
+  border: 1px solid rgba(0,188,212,0.3);
+  border-radius: 18px;
+  padding: 16px 18px;
+  position: relative; z-index: 1;
+}
+.mission-card .tag { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #00BCD4; display: block; margin-bottom: 6px; }
+.mission-card h3 { font-size: 0.95rem; margin-bottom: 8px; }
+.mission-card p { font-size: 0.8rem; opacity: 0.75; line-height: 1.55; margin-bottom: 6px; }
+.mission-card .done-btn {
+  margin-top: 10px;
+  width: 100%;
+  background: rgba(0,188,212,0.25);
+  border: 1px solid rgba(0,188,212,0.5);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.fab {
+  position: fixed;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  z-index: 100;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+.fab:active { transform: scale(0.92); }
+.fab-home { background: rgba(255,255,255,0.12); bottom: 20px; left: 20px; }
+.fab-parent { background: rgba(0,188,212,0.25); border: 1px solid rgba(0,188,212,0.4); bottom: 20px; right: 20px; }
+.overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.85); z-index: 200;
+  display: none; align-items: center; justify-content: center; padding: 24px;
+}
+.overlay.show { display: flex; }
+.ppanel {
+  background: #1a1a2e; border-radius: 20px; padding: 26px 22px;
+  max-width: 340px; width: 100%; text-align: center;
+}
+.ppanel h2 { font-size: 1.05rem; color: #00BCD4; margin-bottom: 12px; }
+.ppanel p { font-size: 0.8rem; opacity: 0.75; line-height: 1.6; margin-bottom: 10px; }
+.ppanel button { margin-top: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 10px 22px; border-radius: 12px; font-size: 0.8rem; cursor: pointer; }
 </style>
 </head>
 <body>
-<div class="stars-bg" id="starsBg"></div>
-<div class="content">
-  <h1>Moon Phases</h1>
-  <p class="subtitle">Drag the moon around its orbit to see how it changes shape</p>
-  <div class="scene">
-    <svg class="scene-svg" id="svgScene" viewBox="0 0 400 320">
-      <!-- Sun (right side) -->
-      <circle cx="380" cy="160" r="40" fill="#FFD700" opacity="0.9"/>
-      <circle cx="380" cy="160" r="55" fill="rgba(255,220,50,0.15)"/>
-      <circle cx="380" cy="160" r="70" fill="rgba(255,220,50,0.08)"/>
+<div class="header">
+  <h1>🌙 Moon Phases</h1>
+  <p>The moon does not change shape. The sun always lights half of it — you just see it from different angles.</p>
+</div>
 
-      <!-- Orbit path (semi-circle arc from top to bottom, center at earth) -->
-      <path d="M 200 160 A 120 120 0 0 1 200 280" fill="none" stroke="rgba(100,100,200,0.2)" stroke-width="1.5" stroke-dasharray="4 4"/>
+<div class="rabbity">
+  <span class="who">🐰 Rabbity says</span>
+  Why does the moon look different each night? Drag it around Earth to find out!
+</div>
 
-      <!-- Earth (center) -->
-      <circle cx="200" cy="160" r="22" fill="#2266CC"/>
-      <ellipse cx="200" cy="160" rx="22" ry="8" fill="rgba(0,100,0,0.3)" transform="rotate(-20,200,160)"/>
-      <circle cx="195" cy="155" r="5" fill="rgba(255,255,255,0.15)"/>
-
-      <!-- Moon group - will be repositioned by JS -->
-      <g id="moonGroup" style="cursor:grab">
-        <!-- Moon body (white circle) -->
-        <circle id="moonBody" cx="200" cy="40" r="18" fill="#eeeecc"/>
-        <!-- Shadow overlay for phases (black circle) -->
-        <circle id="moonShadow" cx="200" cy="40" r="18" fill="#0a0a1a" opacity="0.85"/>
-        <!-- Highlight -->
-        <circle id="moonHighlight" cx="193" cy="33" r="4" fill="rgba(255,255,255,0.4)"/>
-      </g>
-
-      <!-- Light rays from sun to moon area -->
-      <line x1="380" y1="160" x2="200" y2="40" stroke="rgba(255,220,100,0.08)" stroke-width="1"/>
-    </svg>
+<div class="views">
+  <div class="panel">
+    <div class="ptitle">Top-down view (space)</div>
+    <svg id="orbitSvg" width="320" height="320" viewBox="0 0 320 320"></svg>
+    <div class="hint">Drag the moon around Earth</div>
   </div>
-  <div class="phase-label" id="phaseLabel">New Moon</div>
-  <p class="hint">Drag the moon along its orbit path — from top (full moon) to bottom (new moon)</p>
-  <div class="mission-card">
-    <strong>Real World Mission</strong>
-    Tonight, look at the moon and try to name its phase. Check again in one week — how much has it changed?
+  <div class="panel">
+    <div class="ptitle">What you see from Earth</div>
+    <svg id="viewSvg" width="180" height="180" viewBox="-90 -90 180 180"></svg>
+    <div class="readout">
+      <div class="phase-name" id="phaseName">New Moon</div>
+      <div class="day-count" id="dayCount">Day 1 of 29.5</div>
+    </div>
   </div>
 </div>
-<div class="fab-bar">
-  <div class="fab" id="fabHome" title="Home">🏠</div>
-  <div class="fab rabbity" id="fabRabbity" title="Rabbity">🐰
-    <div class="bubble" id="bubble">Why does the moon look different each night? Drag it to find out!</div>
-  </div>
-  <div class="fab" id="fabParent" title="Parent">👤</div>
+
+<div class="controls">
+  <button class="ctl-btn" id="orbitBtn">▶ Orbit</button>
+  <button class="ctl-btn" id="newBtn">↺ New Moon</button>
 </div>
+
+<div class="mission-card" id="missionCard">
+  <span class="tag">Real World Mission</span>
+  <h3>Name That Moon</h3>
+  <p>Tonight, look at the moon and try to name its phase. Check again in three nights — did it change? Which way?</p>
+  <button class="done-btn" id="doneBtn">I will watch the moon! ✓</button>
+</div>
+
+<button class="fab fab-home" onclick='location.href="index.html"'>🏠</button>
+<button class="fab fab-parent" onclick="showParent()">👤</button>
+
+<div class="overlay" id="parentOverlay">
+  <div class="ppanel" onclick="event.stopPropagation()">
+    <h2>Parent Panel</h2>
+    <p>The moon always has one sunlit half. As it orbits Earth (top-down view), you see different amounts of that lit half — that is all a phase is. The right panel shows the view from Earth.</p>
+    <p>Ask: "When the moon is between Earth and the sun, which side is lit? Can you see that side from Earth?"</p>
+    <button onclick="hideParent()">Close</button>
+  </div>
+</div>
+
 <script>
-(function() {
-  var svg = document.getElementById("svgScene");
-  var moonGroup = document.getElementById("moonGroup");
-  var moonBody = document.getElementById("moonBody");
-  var moonShadow = document.getElementById("moonShadow");
-  var moonHighlight = document.getElementById("moonHighlight");
-  var phaseLabel = document.getElementById("phaseLabel");
-  var bubble = document.getElementById("bubble");
-
-  // Center of orbit = earth position
-  var cx = 200, cy = 160;
-  var orbitRadius = 120;
-  var moonRadius = 18;
-
-  // Moon angle: 0 = top (full moon), PI = bottom (new moon)
-  // We drag along the semi-circle arc
-  var angle = Math.PI; // start at new moon
-
-  var phases = [
-    { angle: 0, name: "Full Moon" },
-    { angle: 0.4, name: "Waning Gibbous" },
-    { angle: 0.785, name: "Third Quarter" },
-    { angle: 1.2, name: "Waning Crescent" },
-    { angle: Math.PI, name: "New Moon" },
-    { angle: -1.2, name: "Waxing Crescent" },
-    { angle: -0.785, name: "First Quarter" },
-    { angle: -0.4, name: "Waxing Gibbous" },
-    { angle: 0, name: "Full Moon" }
-  ];
-
-  function normalizeAngle(a) {
-    while (a > Math.PI) a -= 2 * Math.PI;
-    while (a < -Math.PI) a += 2 * Math.PI;
-    return a;
-  }
-
-  function getPhaseName(a) {
-    var best = phases[0];
-    var bestDiff = Math.abs(normalizeAngle(a - phases[0].angle));
-    for (var i = 1; i < phases.length; i++) {
-      var diff = Math.abs(normalizeAngle(a - phases[i].angle));
-      if (diff < bestDiff) {
-        bestDiff = diff;
-        best = phases[i];
-      }
+function lsGet(k, d) {
+  try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; }
+}
+function lsSet(k, v) {
+  try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {}
+}
+function say(text) {
+  try {
+    if (window.speechSynthesis) {
+      var u = new SpeechSynthesisUtterance(text);
+      u.rate = 0.95;
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(u);
     }
-    return best.name;
+  } catch (e) {}
+}
+function markDone() {
+  var p = lsGet("explore-progress", {});
+  if (!p["moon"]) { p["moon"] = true; lsSet("explore-progress", p); }
+}
+
+// static star field
+(function () {
+  for (var i = 0; i < 50; i++) {
+    var s = document.createElement("div");
+    s.className = "star";
+    var sz = Math.random() * 2 + 1;
+    s.style.cssText = "width:" + sz + "px;height:" + sz + "px;left:" + (Math.random() * 100) + "%;top:" + (Math.random() * 100) + "%;opacity:" + (Math.random() * 0.5 + 0.15) + ";";
+    document.body.appendChild(s);
   }
-
-  function updateMoonPosition() {
-    // x = cx + orbitRadius * cos(angle), y = cy + orbitRadius * sin(angle)
-    // But we want semi-circle from top (angle=0) to bottom (angle=PI)
-    // SVG coords: y increases downward
-    var mx = cx + orbitRadius * Math.cos(angle);
-    var my = cy + orbitRadius * Math.sin(angle);
-
-    // Move moon group to position (moonBody is at 0,0 relative to group)
-    // We set transform on group
-    moonGroup.setAttribute("transform", "translate(" + mx + "," + my + ")");
-
-    // Update shadow for phase
-    // The shadow should slide across the moon to create phase effect
-    // Full moon: shadow at x=+large (off-screen right) — no shadow visible
-    // New moon: shadow covers whole moon
-    // We simulate this by shifting shadow circle horizontally
-
-    // The shadow offset: at angle=0 (full moon) shadow is far right (+moonRadius*2)
-    // at angle=PI (new moon) shadow is centered (0)
-    // Use cos(angle): when angle=0, cos=1, offset=moonRadius*2; when angle=PI, cos=-1, offset=-moonRadius*2
-    var shadowOffset = Math.cos(angle) * moonRadius * 2;
-    moonShadow.setAttribute("cx", moonRadius + shadowOffset);
-
-    // Update highlight
-    moonHighlight.setAttribute("cx", moonRadius - 7 + shadowOffset * 0.3);
-    moonHighlight.setAttribute("cy", -7);
-
-    // Update label
-    phaseLabel.textContent = getPhaseName(angle);
-  }
-
-  // Dragging
-  var isDragging = false;
-
-  function getAngleFromEvent(e) {
-    var rect = svg.getBoundingClientRect();
-    var scaleX = 400 / rect.width;
-    var scaleY = 320 / rect.height;
-    var clientX = e.touches ? e.touches[0].clientX : e.clientX;
-    var clientY = e.touches ? e.touches[0].clientY : e.clientY;
-    var svgX = (clientX - rect.left) * scaleX;
-    var svgY = (clientY - rect.top) * scaleY;
-
-    var dx = svgX - cx;
-    var dy = svgY - cy;
-    var a = Math.atan2(dy, dx);
-    // Clamp to semi-circle (0 to PI) — actually allow full 0 to PI for dragging
-    // But we want to map so top=0, bottom=PI
-    // atan2 gives: top (y negative) gives negative angle, bottom gives positive
-    // Let's use: a goes from PI (left/bottom) to 0 (right/top) along the arc
-    // Actually for our orbit we want: top of arc = angle=0, bottom = angle=PI
-    // atan2 from center: top (y=40) has dy = -120, giving negative angle
-    // We need to remap: normalized angle where top=0
-    var normA = Math.atan2(-Math.sin(a), Math.cos(a));
-    return normA;
-  }
-
-  moonGroup.addEventListener("mousedown", function(e) {
-    isDragging = true;
-    e.preventDefault();
-  });
-  moonGroup.addEventListener("touchstart", function(e) {
-    isDragging = true;
-    e.preventDefault();
-  }, { passive: false });
-
-  document.addEventListener("mousemove", function(e) {
-    if (!isDragging) return;
-    angle = getAngleFromEvent(e);
-    updateMoonPosition();
-  });
-
-  document.addEventListener("touchmove", function(e) {
-    if (!isDragging) return;
-    e.preventDefault();
-    angle = getAngleFromEvent(e);
-    updateMoonPosition();
-  }, { passive: false });
-
-  document.addEventListener("mouseup", function() { isDragging = false; });
-  document.addEventListener("touchend", function() { isDragging = false; });
-
-  // FABs
-  document.getElementById("fabHome").addEventListener("click", function() {
-    if (window.parent && window.parent.navigate) window.parent.navigate("home");
-  });
-
-  document.getElementById("fabParent").addEventListener("click", function() {
-    alert("The moon phases happen because the moon orbits Earth. As it moves, the sun lights up different parts of the moon's face that we can see from Earth. The moon always shows the same face to Earth — it\'s \"tidally locked\"!");
-  });
-
-  document.getElementById("fabRabbity").addEventListener("click", function() {
-    bubble.classList.toggle("show");
-  });
-
-  document.addEventListener("click", function(e) {
-    if (!document.getElementById("fabRabbity").contains(e.target)) {
-      bubble.classList.remove("show");
-    }
-  });
-
-  // Background stars
-  (function genStars() {
-    var bg = document.getElementById("starsBg");
-    for (var i = 0; i < 80; i++) {
-      var s = document.createElement("div");
-      s.className = "star";
-      s.style.left = Math.random() * 100 + "%";
-      s.style.top = Math.random() * 100 + "%";
-      s.style.width = s.style.height = (Math.random() * 2 + 1) + "px";
-      s.style.animationDelay = Math.random() * 3 + "s";
-      bg.appendChild(s);
-    }
-  })();
-
-  // Init
-  updateMoonPosition();
-
-  // MISSIONS
-  window.MISSIONS = window.MISSIONS || {};
-  Object.assign(window.MISSIONS, {
-    "moon-phases": {
-      title: "Moon Phases — Real World Mission",
-      adult: "What you might say: The moon takes about 29 days to go through all its phases — that\'s why we sometimes see a full moon, sometimes a crescent, and sometimes no moon at all! Tonight\'s moon is just one moment in that monthly cycle.",
-      safety: "Looking at the real moon is safe. Remind children never to look directly at the sun.",
-      askNext: "Which phase do you think is the most beautiful? Can you draw it?",
-      finish: "Great observations! Now you know why the moon looks different every night — it\'s traveling around Earth, and the sun lights it up from different angles."
-    }
-  });
 })();
+
+var NS = "http://www.w3.org/2000/svg";
+function el(tag, attrs, parent) {
+  var e = document.createElementNS(NS, tag);
+  for (var k in attrs) { e.setAttribute(k, attrs[k]); }
+  if (parent) parent.appendChild(e);
+  return e;
+}
+
+// ── ORBIT VIEW (top-down) ─────────────────────
+var orbitSvg = document.getElementById("orbitSvg");
+var CX = 160, CY = 160, ORBIT_R = 110;
+
+// sun at right edge
+var sunG = el("g", {}, orbitSvg);
+el("circle", { cx: 305, cy: CY, r: 22, fill: "#FFD54F" }, sunG);
+for (var i = 0; i < 8; i++) {
+  var a = i * Math.PI / 4;
+  el("line", {
+    x1: 305 + Math.cos(a) * 27, y1: CY + Math.sin(a) * 27,
+    x2: 305 + Math.cos(a) * 36, y2: CY + Math.sin(a) * 36,
+    stroke: "rgba(255,213,79,0.5)", "stroke-width": 2
+  }, sunG);
+}
+// sun rays across the scene
+el("line", { x1: 283, y1: CY, x2: 30, y2: CY, stroke: "rgba(255,213,79,0.08)", "stroke-width": 26 }, orbitSvg);
+
+// orbit path
+el("circle", { cx: CX, cy: CY, r: ORBIT_R, fill: "none", stroke: "rgba(255,255,255,0.12)", "stroke-dasharray": "4 5" }, orbitSvg);
+
+// Earth at center
+el("circle", { cx: CX, cy: CY, r: 26, fill: "#2277CC" }, orbitSvg);
+el("path", { d: "M" + (CX - 12) + "," + (CY - 8) + " q10,-8 18,0 q6,10 -4,14 q-14,2 -14,-14", fill: "#4CAF50", opacity: 0.85 }, orbitSvg);
+el("text", { x: CX, y: CY + 44, "text-anchor": "middle", fill: "rgba(224,224,255,0.55)", "font-size": "11" }, orbitSvg).textContent = "Earth — you are here";
+
+// moon group: dark circle + right half lit (lit side always faces the sun on the right)
+var moonG = el("g", {}, orbitSvg);
+var MOON_R = 14;
+el("circle", { cx: 0, cy: 0, r: MOON_R, fill: "#1a1a2e", stroke: "rgba(255,255,255,0.25)" }, moonG);
+el("path", { d: "M0," + (-MOON_R) + " A" + MOON_R + "," + MOON_R + " 0 0 1 0," + MOON_R + " Z", fill: "#f5f5dc" }, moonG);
+
+// ── VIEW FROM EARTH (big moon with real phase) ─
+var viewSvg = document.getElementById("viewSvg");
+var VR = 70;
+el("circle", { cx: 0, cy: 0, r: VR, fill: "#1a1a2e", stroke: "rgba(255,255,255,0.2)" }, viewSvg);
+var litPath = el("path", { d: "", fill: "#f5f5dc" }, viewSvg);
+
+// ── STATE & MATH ──────────────────────────────
+// theta: moon angle. 0 = right (between Earth and sun) = New Moon.
+// PI = left (opposite the sun) = Full Moon. theta increases -> days increase.
+var theta = 0;
+var autoOrbit = false;
+var dragging = false;
+
+function moonXY(t) {
+  return { x: CX + ORBIT_R * Math.cos(t), y: CY + ORBIT_R * Math.sin(t) };
+}
+
+// lit region path for the big moon. k = cos(phase angle) = -cos(theta).
+// k<0 crescent, k=0 quarter, k>0 gibbous, |k|=1 new/full.
+// Waxing (0<theta<PI): lit on the RIGHT. Waning: lit on the LEFT.
+function litRegionPath(t) {
+  var k = -Math.cos(t);
+  if (k > 0.995) return "M0," + (-VR) + " A" + VR + "," + VR + " 0 1 1 0," + VR + " A" + VR + "," + VR + " 0 1 1 0," + (-VR); // full
+  if (k < -0.995) return ""; // new: nothing lit
+  var rx = Math.abs(k) * VR;
+  var right = t < Math.PI; // waxing -> right limb lit
+  var M = "M0," + (-VR) + " ";
+  if (right) {
+    M += "A" + VR + "," + VR + " 0 0 1 0," + VR + " ";               // right limb: top→bottom through +x
+    // terminator bottom→top: sweep 1 bulges LEFT (gibbous), sweep 0 bulges RIGHT (crescent)
+    M += "A" + rx + "," + VR + " 0 0 " + (k > 0 ? 1 : 0) + " 0," + (-VR);
+  } else {
+    M += "A" + VR + "," + VR + " 0 0 0 0," + VR + " ";               // left limb: top→bottom through -x
+    // terminator bottom→top: sweep 0 bulges RIGHT (gibbous), sweep 1 bulges LEFT (crescent)
+    M += "A" + rx + "," + VR + " 0 0 " + (k > 0 ? 0 : 1) + " 0," + (-VR);
+  }
+  return M;
+}
+
+function phaseName(t) {
+  var f = (1 - Math.cos(t)) / 2; // illuminated fraction
+  if (f < 0.035) return "New Moon";
+  if (f > 0.965) return "Full Moon";
+  var waxing = t < Math.PI;
+  if (waxing) {
+    if (f < 0.466) return "Waxing Crescent";
+    if (f <= 0.534) return "First Quarter";
+    return "Waxing Gibbous";
+  } else {
+    if (f > 0.534) return "Waning Gibbous";
+    if (f >= 0.466) return "Third Quarter";
+    return "Waning Crescent";
+  }
+}
+
+function render() {
+  var p = moonXY(theta);
+  moonG.setAttribute("transform", "translate(" + p.x + "," + p.y + ")");
+  litPath.setAttribute("d", litRegionPath(theta));
+  document.getElementById("phaseName").textContent = phaseName(theta);
+  var day = (theta / (2 * Math.PI)) * 29.5;
+  if (day < 1) day = 1;
+  document.getElementById("dayCount").textContent = "Day " + Math.round(day) + " of 29.5";
+}
+
+// ── DRAG ──────────────────────────────────────
+function svgPoint(evt) {
+  var rect = orbitSvg.getBoundingClientRect();
+  var scaleX = 320 / rect.width, scaleY = 320 / rect.height;
+  var cx = evt.touches ? evt.touches[0].clientX : evt.clientX;
+  var cy = evt.touches ? evt.touches[0].clientY : evt.clientY;
+  return { x: (cx - rect.left) * scaleX, y: (cy - rect.top) * scaleY };
+}
+function onStart(e) {
+  var p = svgPoint(e);
+  var m = moonXY(theta);
+  var dx = p.x - m.x, dy = p.y - m.y;
+  if (Math.sqrt(dx * dx + dy * dy) < 40) {
+    dragging = true;
+    setAuto(false);
+    if (e.cancelable) e.preventDefault();
+  }
+}
+function onMove(e) {
+  if (!dragging) return;
+  if (e.cancelable) e.preventDefault();
+  var p = svgPoint(e);
+  theta = Math.atan2(p.y - CY, p.x - CX);
+  if (theta < 0) theta += 2 * Math.PI;
+  render();
+}
+function onEnd() { dragging = false; }
+orbitSvg.addEventListener("mousedown", onStart);
+orbitSvg.addEventListener("touchstart", onStart, { passive: false });
+window.addEventListener("mousemove", onMove);
+orbitSvg.addEventListener("touchmove", onMove, { passive: false });
+window.addEventListener("mouseup", onEnd);
+orbitSvg.addEventListener("touchend", onEnd);
+
+// ── CONTROLS ──────────────────────────────────
+var orbitBtn = document.getElementById("orbitBtn");
+function setAuto(v) {
+  autoOrbit = v;
+  orbitBtn.classList.toggle("on", v);
+  orbitBtn.textContent = v ? "⏸ Pause" : "▶ Orbit";
+}
+orbitBtn.addEventListener("click", function () { setAuto(!autoOrbit); });
+document.getElementById("newBtn").addEventListener("click", function () {
+  theta = 0;
+  setAuto(false);
+  render();
+});
+
+function tick() {
+  if (autoOrbit && !dragging) {
+    theta += 0.01;
+    if (theta > 2 * Math.PI) theta -= 2 * Math.PI;
+    render();
+  }
+  requestAnimationFrame(tick);
+}
+
+// ── MISSION ───────────────────────────────────
+document.getElementById("doneBtn").addEventListener("click", function () {
+  markDone();
+  var card = document.getElementById("missionCard");
+  card.style.borderColor = "rgba(102,187,106,0.5)";
+  card.querySelector(".tag").textContent = "Mission accepted — happy moon watching!";
+  card.querySelector(".tag").style.color = "#66BB6A";
+  this.disabled = true;
+  this.style.opacity = "0.4";
+  say("Look up tonight. Which phase do you see?");
+});
+
+function showParent() { document.getElementById("parentOverlay").classList.add("show"); }
+function hideParent() { document.getElementById("parentOverlay").classList.remove("show"); }
+document.getElementById("parentOverlay").addEventListener("click", function (e) {
+  if (e.target === this) hideParent();
+});
+
+render();
+tick();
+
+window.MISSIONS = window.MISSIONS || {};
+Object.assign(window.MISSIONS, {
+  moonphases: {
+    title: "Moon Phases — Real World Mission",
+    adult: "What you might say: The moon does not change shape — the sun always lights half of it. Tonight, look at the moon. Which part is lit? Is it getting bigger or smaller each night?",
+    safety: "Never look directly at the sun, even to find the moon near it. Watch the moon after sunset instead.",
+    askNext: "If the moon is a thin crescent tonight, what will it look like in one week? Check and see.",
+    finish: "Your child connected the moons position in its orbit to the phase seen from Earth, and started a multi-night observation habit."
+  }
+});
 </script>
 </body>
 </html>

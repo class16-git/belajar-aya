@@ -17,6 +17,13 @@
   .obj-btn:active { transform: scale(0.95); }
   .obj-btn.selected { border-color: #aaaaff; background: rgba(60,60,120,0.8); }
   .result-label { text-align: center; font-size: 1em; color: #aaddff; padding: 10px 16px; min-height: 44px; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+  .predict-bar { display: flex; justify-content: center; gap: 12px; padding: 4px 16px 10px; }
+  .predict-btn { background: linear-gradient(135deg,#2a2a5a,#1a1a3a); color: #e0e0ff; border: 1px solid #4a4a8a; padding: 8px 22px; border-radius: 20px; font-size: 0.95em; cursor: pointer; }
+  .predict-btn:hover { background: linear-gradient(135deg,#3a3a7a,#2a2a5a); }
+  .controls { display: flex; justify-content: center; gap: 12px; padding: 8px 16px; flex-wrap: wrap; align-items: center; }
+  .btn { background: linear-gradient(135deg,#2a2a5a,#1a1a3a); color: #e0e0ff; border: 1px solid #4a4a8a; padding: 8px 18px; border-radius: 20px; font-size: 0.9em; cursor: pointer; transition: all 0.2s; }
+  .btn:hover { background: linear-gradient(135deg,#3a3a7a,#2a2a5a); }
+  .btn.salt-on { background: linear-gradient(135deg,#4a2a6a,#2a1a4a); border-color: #8a6aba; color: #e8d8ff; }
   .hint { text-align: center; font-size: 0.8em; color: #6688cc; padding: 4px 16px 16px; }
   .fab-bar { position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: rgba(10,10,26,0.95); border-top: 1px solid #2a2a5a; z-index: 100; }
   .fab { font-size: 1.4em; background: linear-gradient(135deg,#2a2a5a,#1a1a3a); border: 1px solid #4a4a8a; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; }
@@ -37,7 +44,7 @@
 <div class="stars-bg" id="starsBg"></div>
 <div class="content">
   <h1>Floating &amp; Sinking</h1>
-  <p class="subtitle">Will it float or sink? Tap an object to find out!</p>
+  <p class="subtitle">Predict first, then drop to find out!</p>
   <div class="scene">
     <svg class="scene-svg" id="svgScene" viewBox="0 0 600 300">
       <defs>
@@ -45,9 +52,17 @@
           <stop offset="0%" stop-color="#1a4a8a" stop-opacity="0.6"/>
           <stop offset="100%" stop-color="#0a2a5a" stop-opacity="0.9"/>
         </linearGradient>
+        <linearGradient id="saltGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1a8a7a" stop-opacity="0.7"/>
+          <stop offset="100%" stop-color="#0a5a52" stop-opacity="0.95"/>
+        </linearGradient>
         <linearGradient id="waterSurface" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="rgba(100,180,255,0.4)"/>
           <stop offset="100%" stop-color="rgba(50,100,200,0.2)"/>
+        </linearGradient>
+        <linearGradient id="saltSurface" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="rgba(120,230,210,0.45)"/>
+          <stop offset="100%" stop-color="rgba(40,160,140,0.25)"/>
         </linearGradient>
       </defs>
 
@@ -76,9 +91,6 @@
         <circle cx="305" cy="88" r="5" fill="rgba(150,210,255,0.8)"/>
         <circle cx="315" cy="92" r="3" fill="rgba(150,210,255,0.8)"/>
       </g>
-
-      <!-- Object shelf (clickable objects) -->
-      <!-- Objects displayed as clickable buttons below SVG -->
 
       <!-- Salt water mode indicator -->
       <g id="saltMode" opacity="0">
@@ -146,7 +158,6 @@
     <button class="obj-btn" data-obj="steel">
       <svg width="30" height="30" viewBox="0 0 30 30">
         <rect x="8" y="12" width="14" height="8" rx="1" fill="#888"/>
-        <rect x="8" y="12" width="14" height="8" rx="1" fill="linear-gradient(#AAA,#666)"/>
         <rect x="10" y="14" width="10" height="4" fill="#aaa"/>
       </svg>
       Steel
@@ -161,7 +172,14 @@
   </div>
 
   <div class="result-label" id="resultLabel">Tap an object above to drop it in the tank!</div>
-  <p class="hint">The egg floats in salt water! Try it twice. Objects float when they are less dense than water.</p>
+  <div class="predict-bar">
+    <button class="predict-btn" id="btnPredictFloat" style="display:none">🌊 It will FLOAT</button>
+    <button class="predict-btn" id="btnPredictSink" style="display:none">⚓ It will SINK</button>
+  </div>
+  <div class="controls">
+    <button class="btn" id="btnSalt">Salt Water: OFF</button>
+  </div>
+  <p class="hint">The egg floats in salt water! Toggle the salt water, then try the egg again. Objects float when they are less dense than the water.</p>
   <div class="mission-card">
     <strong>Real World Mission</strong>
     Fill a bowl with water. Find three things that float and three that sink. Can you predict before you drop them?
@@ -170,7 +188,7 @@
 <div class="fab-bar">
   <div class="fab" id="fabHome" title="Home">🏠</div>
   <div class="fab rabbity" id="fabRabbity" title="Rabbity">🐰
-    <div class="bubble" id="bubble">Why does a heavy metal ship float but a small stone sinks? It\'s not about weight — it\'s about how much water the object pushes aside.</div>
+    <div class="bubble" id="bubble">Why does a heavy metal ship float but a small stone sinks? It's not about weight — it's about how much water the object pushes aside.</div>
   </div>
   <div class="fab" id="fabParent" title="Parent">👤</div>
 </div>
@@ -185,34 +203,60 @@
   var waterBody = document.getElementById("waterBody");
   var wave1 = document.getElementById("wave1");
   var wave2 = document.getElementById("wave2");
+  var btnSalt = document.getElementById("btnSalt");
+  var btnPredictFloat = document.getElementById("btnPredictFloat");
+  var btnPredictSink = document.getElementById("btnPredictSink");
 
   var saltWater = false;
-  var eggTaps = 0;
   var isAnimating = false;
   var currentObj = null;
+  var prediction = null; // "float" | "sink" | null
   var objY = 0;
   var objVY = 0;
-  var objTargetY = 0;
   var animFrame = null;
 
-  // Object definitions: floats (density < 1), sinks (density > 1)
-  // egg: sinks in fresh, floats in salt water
+  // ---- PURE DATA + DECISION (exercised by the node behavioral test) ----
   var OBJECTS = {
-    grape: { floats: false, color: "#6633AA", shape: "circle", r: 10, label: "Grape sinks — it's denser than water!" },
-    apple: { floats: true, color: "#CC3333", shape: "circle", r: 12, label: "Apple floats! It has air inside." },
-    coin: { floats: false, color: "#FFD700", shape: "circle", r: 8, label: "Coin sinks — metal is very dense!" },
-    rubber: { floats: true, color: "#FF4444", shape: "circle", r: 12, label: "Rubber ball floats! Rubber is light." },
-    egg: { floats: false, floatsSalt: true, color: "#F5F5DC", shape: "ellipse", rx: 11, ry: 13, label: "Egg sinks in fresh water...", labelSalt: "Egg floats in salt water! Salt makes water denser." },
-    wood: { floats: true, color: "#8B5A2B", shape: "rect", w: 24, h: 14, label: "Wood floats! It's less dense than water." },
-    cork: { floats: true, color: "#D2A56A", shape: "rect", w: 18, h: 14, label: "Cork floats! Very light material." },
-    steel: { floats: false, color: "#aaa", shape: "rect", w: 18, h: 10, label: "Steel sinks — even though a spoon is small, it's dense!" },
-    leaf: { floats: true, color: "#3aaa3a", shape: "ellipse", rx: 14, ry: 9, label: "Leaf floats! Water holds it up." }
+    grape:  { floats: false, shape: "circle",  r: 10,          color: "#6633AA", name: "Grape"  },
+    apple:  { floats: true,  shape: "circle",  r: 12,          color: "#CC3333", name: "Apple"  },
+    coin:   { floats: false, shape: "circle",  r: 8,           color: "#FFD700", name: "Coin"   },
+    rubber: { floats: true,  shape: "circle",  r: 12,          color: "#FF4444", name: "Ball"   },
+    egg:    { floats: false, floatsSalt: true, shape: "ellipse", rx: 11, ry: 13, color: "#F5F5DC", name: "Egg" },
+    wood:   { floats: true,  shape: "rect",    w: 24, h: 14,   color: "#8B5A2B", name: "Wood"   },
+    cork:   { floats: true,  shape: "rect",    w: 18, h: 14,   color: "#D2A56A", name: "Cork"   },
+    steel:  { floats: false, shape: "rect",    w: 18, h: 10,   color: "#aaa",    name: "Steel"  },
+    leaf:   { floats: true,  shape: "ellipse", rx: 14, ry: 9,  color: "#3aaa3a", name: "Leaf"   }
   };
 
-  function drawObject(objKey, el, options) {
+  // The single source of truth: does this object float in this water?
+  function floatDecision(objKey, inSaltWater) {
+    var obj = OBJECTS[objKey];
+    if (!obj) return false;
+    if (inSaltWater && obj.floatsSalt === true) return true;
+    return obj.floats === true;
+  }
+
+  function applyWaterLook() {
+    if (saltWater) {
+      waterBody.setAttribute("fill", "url(#saltGrad)");
+      wave1.setAttribute("fill", "url(#saltSurface)");
+      wave2.setAttribute("fill", "rgba(120,230,210,0.2)");
+      saltMode.setAttribute("opacity", "1");
+      btnSalt.textContent = "Salt Water: ON";
+      btnSalt.classList.add("salt-on");
+    } else {
+      waterBody.setAttribute("fill", "url(#tankGrad)");
+      wave1.setAttribute("fill", "url(#waterSurface)");
+      wave2.setAttribute("fill", "rgba(100,180,255,0.15)");
+      saltMode.setAttribute("opacity", "0");
+      btnSalt.textContent = "Salt Water: OFF";
+      btnSalt.classList.remove("salt-on");
+    }
+  }
+
+  function drawObject(objKey, el) {
     var obj = OBJECTS[objKey];
     el.innerHTML = "";
-    var g = el;
 
     if (obj.shape === "circle") {
       var c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
@@ -220,14 +264,13 @@
       c.setAttribute("cy", "0");
       c.setAttribute("r", obj.r);
       c.setAttribute("fill", obj.color);
-      g.appendChild(c);
-      // highlight
+      el.appendChild(c);
       var h = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       h.setAttribute("cx", -obj.r * 0.3);
       h.setAttribute("cy", -obj.r * 0.3);
       h.setAttribute("r", obj.r * 0.3);
       h.setAttribute("fill", "rgba(255,255,255,0.25)");
-      g.appendChild(h);
+      el.appendChild(h);
     } else if (obj.shape === "rect") {
       var r = document.createElementNS("http://www.w3.org/2000/svg", "rect");
       r.setAttribute("x", -obj.w / 2);
@@ -236,7 +279,7 @@
       r.setAttribute("height", obj.h);
       r.setAttribute("rx", "2");
       r.setAttribute("fill", obj.color);
-      g.appendChild(r);
+      el.appendChild(r);
     } else if (obj.shape === "ellipse") {
       var e = document.createElementNS("http://www.w3.org/2000/svg", "ellipse");
       e.setAttribute("cx", "0");
@@ -244,72 +287,75 @@
       e.setAttribute("rx", obj.rx);
       e.setAttribute("ry", obj.ry);
       e.setAttribute("fill", obj.color);
-      g.appendChild(e);
-    }
-
-    if (options && options.selected) {
-      el.style.opacity = "1";
+      el.appendChild(e);
     }
   }
 
-  function dropObject(objKey) {
+  // Step 1: object tapped -> ask for a prediction BEFORE dropping
+  function selectObject(objKey) {
     if (isAnimating) return;
-    isAnimating = true;
-
-    var obj = OBJECTS[objKey];
-    var floats = obj.floats;
-    if (objKey === "egg") {
-      if (eggTaps === 0) {
-        floats = false;
-        eggTaps = 1;
-      } else {
-        floats = true;
-        eggTaps = 0;
-        saltWater = true;
-        saltMode.setAttribute("opacity", "1");
-      }
+    currentObj = objKey;
+    prediction = null;
+    var buttons = document.querySelectorAll(".obj-btn");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].classList.toggle("selected", buttons[i].getAttribute("data-obj") === objKey);
     }
+    resultLabel.textContent = "You picked the " + OBJECTS[objKey].name + ". Will it FLOAT or SINK in " + (saltWater ? "SALT" : "fresh") + " water?";
+    btnPredictFloat.style.display = "inline-block";
+    btnPredictSink.style.display = "inline-block";
+  }
 
-    // Draw object in test area
-    testObject.innerHTML = "";
+  // Step 2: prediction made -> drop the object
+  function makePrediction(choice) {
+    if (!currentObj || isAnimating) return;
+    prediction = choice;
+    btnPredictFloat.style.display = "none";
+    btnPredictSink.style.display = "none";
+    dropObject(currentObj, choice);
+  }
+
+  function dropObject(objKey, chosen) {
+    isAnimating = true;
+    var floats = floatDecision(objKey, saltWater);
+
     drawObject(objKey, testObject);
 
-    // Position at top of water
     var waterTop = 100;
     var tankBottom = 265;
-    objY = waterTop;
-    objTargetY = floats ? waterTop + 5 : tankBottom - 20;
+    objY = waterTop - 30;
     objVY = 2;
 
     testObject.setAttribute("transform", "translate(300," + objY + ")");
     testObject.setAttribute("opacity", "1");
 
-    // Show splash
-    splash.setAttribute("opacity", "1");
-
-    // Animate falling
-    animateDrop(objKey, floats);
+    resultLabel.textContent = "Watch...";
+    animateDrop(objKey, floats, chosen, waterTop, tankBottom);
   }
 
-  function animateDrop(objKey, floats) {
-    var waterTop = 100;
-    var tankBottom = 265;
-    var targetY = floats ? waterTop + 15 : tankBottom - 20;
+  function animateDrop(objKey, floats, chosen, waterTop, tankBottom) {
+    var targetY = floats ? waterTop + 15 : tankBottom - 15;
+    var splashed = false;
+    var bobPhase = 0;
 
     function frame() {
+      if (!splashed && objY >= waterTop) {
+        splashed = true;
+        playSplash();
+      }
+
       if (floats) {
-        // Fall, then bob on surface
         if (objY < targetY) {
-          objY += 3;
-          objVY *= 0.9;
+          objVY += 0.35; // gravity underwater, buoyancy catches it
+          objY += objVY;
         } else {
-          // Bobbing
-          objY = targetY + Math.sin(Date.now() / 300) * 3;
+          bobPhase += 0.12;
+          objY = targetY + Math.sin(bobPhase) * 2.5;
+          objVY = 0;
         }
       } else {
-        // Fall to bottom
         if (objY < targetY) {
-          objY += 4;
+          objVY += 0.3;
+          objY += objVY;
         } else {
           objY = targetY;
         }
@@ -317,34 +363,70 @@
 
       testObject.setAttribute("transform", "translate(300," + objY + ")");
 
-      var done = floats ? (objY >= targetY - 5) : (objY >= targetY);
+      var done = floats ? (bobPhase > Math.PI) : (objY >= targetY);
       if (!done) {
         animFrame = requestAnimationFrame(frame);
       } else {
         isAnimating = false;
-        // Show result
-        var obj = OBJECTS[objKey];
-        if (objKey === "egg" && eggTaps === 1) {
-          resultLabel.textContent = obj.labelSalt;
-        } else {
-          resultLabel.textContent = obj.label;
-        }
-        // Splash fade
-        setTimeout(function() { splash.setAttribute("opacity", "0"); }, 500);
+        showResult(objKey, floats, chosen);
       }
     }
-
     animFrame = requestAnimationFrame(frame);
+  }
+
+  function playSplash() {
+    splash.setAttribute("opacity", "1");
+    var scale = 0.5;
+    var interval = setInterval(function() {
+      scale += 0.08;
+      splash.setAttribute("transform", "translate(" + (300 * (1 - scale)) + "," + (100 * (1 - scale)) + ") scale(" + scale + ")");
+      if (scale >= 1.4) {
+        clearInterval(interval);
+        splash.setAttribute("opacity", "0");
+        splash.setAttribute("transform", "translate(0,0) scale(1)");
+      }
+    }, 30);
+  }
+
+  function showResult(objKey, floats, chosen) {
+    var obj = OBJECTS[objKey];
+    var outcome = floats ? "FLOATS" : "SINKS";
+    var line;
+    if (objKey === "egg") {
+      line = floats
+        ? "The egg FLOATS in salt water! Salt makes the water denser."
+        : "The egg SINKS in fresh water — it is denser than plain water.";
+    } else {
+      line = obj.name + " " + outcome + (floats ? "!" : "!");
+    }
+    if (chosen === "float" || chosen === "sink") {
+      var right = (chosen === "float") === floats;
+      line = right ? "You predicted right! " + line : "Good guess — actually, " + line.charAt(0).toLowerCase() + line.slice(1);
+    }
+    resultLabel.textContent = line;
+    resultLabel.style.color = floats ? "#aaffaa" : "#ffaaaa";
   }
 
   // Object buttons
   var buttons = document.querySelectorAll(".obj-btn");
   for (var i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function() {
-      var objKey = this.getAttribute("data-obj");
-      dropObject(objKey);
-    });
+    (function(btn) {
+      btn.addEventListener("click", function() {
+        selectObject(btn.getAttribute("data-obj"));
+      });
+    })(buttons[i]);
   }
+
+  btnPredictFloat.addEventListener("click", function() { makePrediction("float"); });
+  btnPredictSink.addEventListener("click", function() { makePrediction("sink"); });
+
+  btnSalt.addEventListener("click", function() {
+    saltWater = !saltWater;
+    applyWaterLook();
+    if (currentObj && !isAnimating) {
+      resultLabel.textContent = "Water is now " + (saltWater ? "SALT" : "fresh") + ". Tap the " + OBJECTS[currentObj].name + " again to test it!";
+    }
+  });
 
   // Animate water waves continuously
   (function animateWaves() {
@@ -364,7 +446,7 @@
     if (window.parent && window.parent.navigate) window.parent.navigate("home");
   });
   document.getElementById("fabParent").addEventListener("click", function() {
-    alert("Whether something floats or sinks depends on its density — how much stuff is packed into how much space. A heavy metal ship floats because it\'s full of air inside, making its average density lower than water. A small stone sinks because it\'s all dense material with no air!");
+    alert("Whether something floats or sinks depends on its density — how much stuff is packed into how much space. A heavy metal ship floats because it's full of air inside, making its average density lower than water. A small stone sinks because it's all dense material with no air!");
   });
   document.getElementById("fabRabbity").addEventListener("click", function() {
     bubble.classList.toggle("show");
@@ -388,14 +470,17 @@
     }
   })();
 
+  // Export the pure decision for the node behavioral test (harmless in browser)
+  window.__floatTest = { floatDecision: floatDecision, OBJECTS: OBJECTS };
+
   window.MISSIONS = window.MISSIONS || {};
   Object.assign(window.MISSIONS, {
     "floating-sinking": {
       title: "Floating & Sinking — Real World Mission",
-      adult: "What you might say: Density is the key! An object floats if it\'s less dense than water, and sinks if it\'s more dense. A ship is huge and heavy, but mostly full of air — so on average it\'s lighter than water. A small stone is all rock, no air — so it\'s denser than water and sinks!",
+      adult: "What you might say: Density is the key! An object floats if it's less dense than water, and sinks if it's more dense. A ship is huge and heavy, but mostly full of air — so on average it's lighter than water. A small stone is all rock, no air — so it's denser than water and sinks!",
       safety: "No physical risks from this simulation. For real experiments, ensure objects are clean and wash hands afterward.",
-      askNext: "Why do you think a balloon filled with helium floats? What\'s inside the balloon that makes it light?",
-      finish: "You now understand density! Next time you\'re near water, try predicting whether things will float before you drop them in."
+      askNext: "Why do you think a balloon filled with helium floats? What's inside the balloon that makes it light?",
+      finish: "You now understand density! Next time you're near water, try predicting whether things will float before you drop them in."
     }
   });
 })();

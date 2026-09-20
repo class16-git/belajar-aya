@@ -29,7 +29,6 @@
   }
   #canvas {
     display: block;
-    width: 100%;
     height: 300px;
     background: #0a0a1a;
     cursor: crosshair;
@@ -157,7 +156,7 @@
 <div class="stars-bg" id="starsBg"></div>
 <div class="content">
   <h1>Gravity &amp; Orbits</h1>
-  <p class="subtitle">Place planets and watch debris curve toward them</p>
+  <p class="subtitle">Place planets and watch debris curve, orbit, or get captured!</p>
   <canvas id="canvas" width="800" height="300"></canvas>
   <div class="info-bar" id="infoBar">Tap the canvas to place your first planet!</div>
   <div class="controls">
@@ -203,27 +202,36 @@
   var state = {
     planets: [],
     stars: [],
+    rings: [],
     placingMode: false,
-    nextPlanetId: 1
+    nextPlanetId: 1,
+    captured: 0
   };
 
-  // Constants
-  var G = 0.5; // gravitational constant (tuned for visual effect)
+  // Constants — gravity rescaled so a star at 200px feels ~0.15 px/frame^2
+  var G = 6;                 // gravitational constant (tuned for visible orbits)
   var PLANET_MASS = 1000;
   var PLANET_RADIUS = 30;
   var STAR_RADIUS = 2;
   var MAX_STARS = 80;
+  var SOFTENING = 20;        // min gravity/collision distance (prevents singularity)
+  var TANGENTIAL_K = 0.015;  // tangential spawn speed factor around canvas center
 
-  // Initialize stars
+  // Initialize stars with tangential velocities around canvas center
   function initStars() {
     state.stars = [];
     var rect = canvas.getBoundingClientRect();
+    var cx = rect.width / 2;
+    var cy = rect.height / 2;
     for (var i = 0; i < MAX_STARS; i++) {
+      var x = Math.random() * rect.width;
+      var y = Math.random() * rect.height;
+      var jitter = 0.5;
       state.stars.push({
-        x: Math.random() * rect.width,
-        y: Math.random() * rect.height,
-        vx: (Math.random() - 0.5) * 2,
-        vy: (Math.random() - 0.5) * 2,
+        x: x,
+        y: y,
+        vx: -(y - cy) * TANGENTIAL_K + (Math.random() - 0.5) * jitter,
+        vy: (x - cx) * TANGENTIAL_K + (Math.random() - 0.5) * jitter,
         r: STAR_RADIUS,
         trail: []
       });
@@ -234,10 +242,11 @@
     state.planets = [];
     state.placingMode = false;
     state.nextPlanetId = 1;
+    state.captured = 0;
     initStars();
     updateInfo();
     btnAdd.textContent = "Add Planet";
-    btnAdd.classList.remove("btn-primary");
+    btnAdd.classList.add("btn-primary");
   }
 
   function updateInfo() {
@@ -246,9 +255,9 @@
     if (p === 0) {
       infoBar.textContent = "Tap the canvas to place your first planet!";
     } else if (p === 1) {
-      infoBar.textContent = "1 planet placed. Add another to see gravity wells interact!";
+      infoBar.textContent = "1 planet placed. " + state.captured + " stars captured. Add another to see gravity wells interact!";
     } else {
-      infoBar.textContent = p + " planets placed. Watch the debris curve through space!";
+      infoBar.textContent = p + " planets placed. " + state.captured + " stars captured. Watch the debris curve through space!";
     }
   }
 
@@ -258,7 +267,7 @@
     var w = rect.width;
     var h = rect.height;
 
-    for (var i = 0; i < state.stars.length; i++) {
+    for (var i = state.stars.length - 1; i >= 0; i--) {
       var star = state.stars[i];
 
       // Record trail
@@ -270,27 +279,48 @@
         var planet = state.planets[j];
         var dx = planet.x - star.x;
         var dy = planet.y - star.y;
-        var distSq = dx * dx + dy * dy;
-        var dist = Math.sqrt(distSq);
-        if (dist < 5) dist = 5; // prevent singularity
-
-        var force = (G * planet.mass) / distSq;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < SOFTENING) dist = SOFTENING; // softening: no singularity
+        var force = (G * planet.mass) / (dist * dist);
         var ax = (force * dx) / dist;
         var ay = (force * dy) / dist;
-
-        star.vx += ax * 0.016;
-        star.vy += ay * 0.016;
+        star.vx += ax;
+        star.vy += ay;
       }
 
       // Apply velocity
       star.x += star.vx;
       star.y += star.vy;
 
+      // Collision: planets "eat" stars -> expanding ring + capture counter
+      for (var k = 0; k < state.planets.length; k++) {
+        var pl = state.planets[k];
+        var cdx = pl.x - star.x;
+        var cdy = pl.y - star.y;
+        var cdist = Math.sqrt(cdx * cdx + cdy * cdy);
+        if (cdist < pl.r + star.r) {
+          state.rings.push({ x: star.x, y: star.y, r: pl.r, maxR: pl.r + 30, life: 1 });
+          state.stars.splice(i, 1);
+          state.captured++;
+          star = null;
+          break;
+        }
+      }
+      if (!star) continue;
+
       // Bounce off edges
       if (star.x < 0) { star.x = 0; star.vx = Math.abs(star.vx) * 0.8; }
       if (star.x > w) { star.x = w; star.vx = -Math.abs(star.vx) * 0.8; }
       if (star.y < 0) { star.y = 0; star.vy = Math.abs(star.vy) * 0.8; }
       if (star.y > h) { star.y = h; star.vy = -Math.abs(star.vy) * 0.8; }
+    }
+
+    // Update expanding rings
+    for (var m = state.rings.length - 1; m >= 0; m--) {
+      var ring = state.rings[m];
+      ring.r += 1.5;
+      ring.life -= 0.04;
+      if (ring.life <= 0 || ring.r > ring.maxR) state.rings.splice(m, 1);
     }
   }
 
@@ -308,7 +338,7 @@
       // Trail
       if (star.trail.length > 1) {
         ctx.beginPath();
-        ctx.strokeStyle = "rgba(100,120,255,0.15)";
+        ctx.strokeStyle = "rgba(100,120,255,0.35)";
         ctx.lineWidth = 1;
         for (var t = 0; t < star.trail.length; t++) {
           var tp = star.trail[t];
@@ -323,6 +353,16 @@
       ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
       ctx.fillStyle = "#aabbff";
       ctx.fill();
+    }
+
+    // Draw expanding capture rings
+    for (var q = 0; q < state.rings.length; q++) {
+      var ring = state.rings[q];
+      ctx.beginPath();
+      ctx.arc(ring.x, ring.y, ring.r, 0, Math.PI * 2);
+      ctx.strokeStyle = "rgba(255,200,100," + Math.max(ring.life, 0) * 0.8 + ")";
+      ctx.lineWidth = 2;
+      ctx.stroke();
     }
 
     // Draw planets
@@ -387,14 +427,9 @@
         });
         state.placingMode = false;
         updateInfo();
+        btnAdd.textContent = "Add Planet";
+        btnAdd.classList.add("btn-primary");
       }
-    }
-  });
-
-  canvas.addEventListener("mousemove", function(e) {
-    if (state.placingMode) {
-      var rect = canvas.getBoundingClientRect();
-      // Visual hint of where planet would be placed
     }
   });
 
@@ -403,7 +438,6 @@
       state.placingMode = true;
       updateInfo();
       btnAdd.textContent = "Tap Canvas!";
-      btnAdd.classList.add("btn-primary");
     } else {
       btnAdd.textContent = "Max Planets!";
     }
@@ -465,7 +499,7 @@
   Object.assign(window.MISSIONS, {
     "gravity-orbits": {
       title: "Gravity & Orbits — Real World Mission",
-      adult: "What you might say: The moon is actually falling toward Earth all the time, but it's moving so fast sideways that it keeps missing — that\'s what an orbit is! Ask them to imagine throwing a ball — it goes forward and falls at the same time.",
+      adult: "What you might say: The moon is actually falling toward Earth all the time, but it's moving so fast sideways that it keeps missing — that's what an orbit is! Ask them to imagine throwing a ball — it goes forward and falls at the same time.",
       safety: "No physical risks. If your child is scared of space, reassure them that space is very big and we are safe on Earth.",
       askNext: "Try placing planets of different sizes. What happens to the debris? Can you make a pattern?",
       finish: "Great exploring! Tonight, look up at the sky and try to spot any moving lights — those might be satellites orbiting Earth too!"

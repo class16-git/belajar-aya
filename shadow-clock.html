@@ -151,14 +151,11 @@
   var timePercent = 0; // 0 = 6am, 50 = 12pm, 100 = 6pm
 
   function timePercentToSunPos(p) {
-    // Arc from left side (6am, x=80) to right side (6pm, x=520) over arc
-    // The arc is a semicircle going upward
-    // p=0: left side (x=80, y=250-arcRadiusY=70)
-    // p=50: top (x=300, y=70)
-    // p=100: right side (x=520, y=250)
+    // Sun rises on the left at 6am, arcs over the sky, sets on the right at 6pm.
+    // p=0: (80,140) low-left | p=50: (300,60) top | p=100: (520,140) low-right
     var angle = Math.PI - (p / 100) * Math.PI; // PI to 0
     var sx = arcCenterX + arcRadiusX * Math.cos(angle);
-    var sy = arcCenterY - arcRadiusY * Math.sin(angle) + arcRadiusY;
+    var sy = 60 + 80 * (1 - Math.sin(angle)); // proper sky arc, never below horizon
     return { x: sx, y: sy };
   }
 
@@ -179,25 +176,21 @@
   }
 
   function calculateShadow(sunX, sunY) {
-    // Shadow goes from gnomon base away from sun
-    var dx = sunX - gx;
-    var dy = sunY - gy;
-    // Direction from sun to gnomon base
-    var shadowDirX = gx - sunX;
-    var shadowDirY = gy - sunY;
-    var dist = Math.sqrt(dx * dx + dy * dy);
-    // Shadow length inversely proportional to sun height
+    // Shadow points AWAY from the sun, along the ground (y = gy).
+    // Ground direction away from sun: sign of (gnomon - sun) horizontally.
+    var awayX = gx - sunX;
+    if (Math.abs(awayX) < 1) awayX = (sunX >= gx) ? -1 : 1; // sun nearly overhead -> tiny noon shadow
+    var dirX = awayX / Math.abs(awayX);
+
+    // Length ~ gnomonHeight * horizontalDist / sunHeight (classic similar triangles),
+    // clamped so early/late sun gives long shadows, noon gives the shortest.
     var sunHeight = gy - sunY;
-    var shadowLength = 20 + (1 - sunHeight / (arcRadiusY * 2)) * 120;
     if (sunHeight < 10) sunHeight = 10;
-    shadowLength = (gnomonHeight * dist) / sunHeight;
-    shadowLength = Math.max(20, Math.min(180, shadowLength));
+    var horizDist = Math.abs(sunX - gx);
+    var shadowLength = (gnomonHeight * horizDist) / sunHeight;
+    shadowLength = Math.max(8, Math.min(180, shadowLength));
 
-    var norm = 1 / Math.sqrt(shadowDirX * shadowDirX + shadowDirY * shadowDirY);
-    var sx2 = gx + shadowDirX * norm * shadowLength;
-    var sy2 = gy + shadowDirY * norm * shadowLength;
-
-    return { x2: sx2, y2: sy2, length: shadowLength };
+    return { x2: gx + dirX * shadowLength, y2: gy, length: shadowLength };
   }
 
   function updateScene(p) {
@@ -215,21 +208,15 @@
     shadowLine.setAttribute("x2", shadow.x2);
     shadowLine.setAttribute("y2", shadow.y2);
 
-    // Update gnomon
-    gnomon.setAttribute("y1", String(gy));
-    gnomon.setAttribute("y2", String(gy - gnomonHeight));
-    gnomon.setAttribute("x1", String(gx));
-    gnomon.setAttribute("x2", String(gx));
-
     // Update time display
     timeVal.textContent = timePercentToTime(p);
     timeLabel.textContent = timePercentToLabel(p);
 
-    // Show clock numbers when shadow is short (near noon)
+    // Clock numbers: strongly visible near noon, faint guide afterwards
     if (p > 40 && p < 60) {
       clockNums.setAttribute("opacity", "0.5");
-    } else {
-      clockNums.setAttribute("opacity", "0");
+    } else if (clockNums.getAttribute("opacity") === "0.5") {
+      clockNums.setAttribute("opacity", "0.25");
     }
 
     // Stars opacity based on time

@@ -169,11 +169,11 @@
     stageLabel.textContent = STAGES[1].label;
     evapArrows.setAttribute("opacity", "0");
     // Droplets fade and disappear into cloud area
-    // Cloud grows slightly
+    // Cloud grows slightly, puffing in place around its center (180,100)
     var cloudScale = 1;
     var growInterval = setInterval(function() {
       cloudScale += 0.02;
-      cloudGroup.setAttribute("transform", "scale(" + cloudScale + ") translate(" + (-180 * (cloudScale - 1) / cloudScale) + "," + (-100 * (cloudScale - 1) / cloudScale) + ")");
+      cloudGroup.setAttribute("transform", "translate(" + (180 * (1 - cloudScale)) + "," + (100 * (1 - cloudScale)) + ") scale(" + cloudScale + ")");
       if (cloudScale >= 1.15) {
         clearInterval(growInterval);
         setTimeout(startPrecipitation, 1000);
@@ -190,6 +190,7 @@
       setTimeout(function(idx) {
         var lines = raindrops.querySelectorAll("line");
         var line = lines[idx % lines.length];
+        if (!line) return;
         var x = parseFloat(line.getAttribute("x1"));
         var y = parseFloat(line.getAttribute("y1"));
         var p = createParticle("rain", x, y + 5);
@@ -199,7 +200,7 @@
         p.life = p.maxLife;
         p.r = 2;
         particles.push(p);
-      }, i * 200);
+      }, i * 200, i); // pass idx explicitly — was undefined before, crashing every spawn
     }
     setTimeout(function() { raindrops.setAttribute("opacity", "0"); }, 3000);
     setTimeout(startCollection, 4000);
