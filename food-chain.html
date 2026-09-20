@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Chain — Belajar Aya</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a1a; color: #e0e0ff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  h1 { font-size: 1.8em; text-align: center; padding: 20px 16px 4px; color: #fff; }
+  .subtitle { text-align: center; font-size: 0.85em; color: #8888cc; padding: 0 16px 12px; font-style: italic; }
+  .scene { position: relative; width: 100%; max-width: 600px; margin: 0 auto; }
+  svg.scene-svg { width: 100%; display: block; }
+  .info-bar { text-align: center; font-size: 0.9em; color: #aaaaff; padding: 10px 16px; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+  .hint { text-align: center; font-size: 0.8em; color: #6688cc; padding: 4px 16px 16px; }
+  .trophy-label { font-size: 0.65em; fill: #aaa; text-anchor: middle; }
+  .fab-bar { position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: rgba(10,10,26,0.95); border-top: 1px solid #2a2a5a; z-index: 100; }
+  .fab { font-size: 1.4em; background: linear-gradient(135deg,#2a2a5a,#1a1a3a); border: 1px solid #4a4a8a; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; }
+  .fab:hover { background: linear-gradient(135deg,#3a3a7a,#2a2a5a); }
+  .fab.rabbity { position: relative; border-radius: 50% 50% 50% 10px; }
+  .bubble { position: absolute; bottom: 60px; right: 0; background: #1a1a3a; border: 1px solid #4a4a8a; border-radius: 16px 16px 4px 16px; padding: 12px 16px; max-width: 260px; font-size: 0.88em; line-height: 1.4; color: #c0c0e0; display: none; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+  .bubble.show { display: block; }
+  .bubble::after { content: ""; position: absolute; bottom: -8px; right: 16px; width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #4a4a8a; }
+  .mission-card { background: rgba(30,30,70,0.8); border: 1px solid #3a3a7a; border-radius: 12px; margin: 0 16px 80px; padding: 14px 18px; font-size: 0.82em; color: #aaaaff; line-height: 1.5; }
+  .mission-card strong { color: #aaaaff; display: block; margin-bottom: 4px; font-size: 0.95em; }
+  .stars-bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .star { position: absolute; background: #fff; border-radius: 50%; animation: twinkle 3s ease-in-out infinite; }
+  @keyframes twinkle { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
+  .content { position: relative; z-index: 1; padding-bottom: 80px; }
+</style>
+</head>
+<body>
+<div class="stars-bg" id="starsBg"></div>
+<div class="content">
+  <h1>Food Chain</h1>
+  <p class="subtitle">Tap each organism to see how energy flows</p>
+  <div class="scene">
+    <svg class="scene-svg" id="svgScene" viewBox="0 0 600 340">
+      <defs>
+        <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1a3a1a"/>
+          <stop offset="100%" stop-color="#0a1a0a"/>
+        </linearGradient>
+      </defs>
+      <rect width="600" height="280" fill="#0a1a2a"/>
+      <rect x="0" y="280" width="600" height="60" fill="url(#groundGrad)"/>
+
+      <!-- Energy flow arrows (hidden until activated) -->
+      <g id="energyArrows" opacity="0">
+        <!-- Sun to grass -->
+        <g id="arrowSunGrass">
+          <line x1="120" y1="65" x2="220" y2="180" stroke="#FFDD00" stroke-width="3" stroke-dasharray="8 4"/>
+          <polygon points="225,178 215,175 218,188" fill="#FFDD00"/>
+        </g>
+        <!-- Grass to rabbit -->
+        <g id="arrowGrassRabbit">
+          <line x1="260" y1="185" x2="340" y2="210" stroke="#88FF88" stroke-width="3" stroke-dasharray="8 4"/>
+          <polygon points="345,208 335,205 338,218" fill="#88FF88"/>
+        </g>
+        <!-- Rabbit to fox -->
+        <g id="arrowRabbitFox">
+          <line x1="380" y1="215" x2="450" y2="205" stroke="#FF8844" stroke-width="3" stroke-dasharray="8 4"/>
+          <polygon points="455,202 445,200 448,213" fill="#FF8844"/>
+        </g>
+        <!-- Fox to mushroom -->
+        <g id="arrowFoxMush">
+          <line x1="490" y1="220" x2="510" y2="265" stroke="#CC88CC" stroke-width="3" stroke-dasharray="8 4"/>
+          <polygon points="508,270 498,265 505,260" fill="#CC88CC"/>
+        </g>
+      </g>
+
+      <!-- Sun -->
+      <g id="sunGroup" class="organism" style="cursor:pointer">
+        <circle cx="80" cy="60" r="40" fill="#FFD700"/>
+        <circle cx="80" cy="60" r="58" fill="rgba(255,220,50,0.12)"/>
+        <circle cx="80" cy="60" r="76" fill="rgba(255,220,50,0.06)"/>
+        <line x1="80" y1="10" x2="80" y2="0" stroke="#FFD700" stroke-width="3"/>
+        <line x1="80" y1="110" x2="80" y2="120" stroke="#FFD700" stroke-width="3"/>
+        <line x1="30" y1="60" x2="20" y2="60" stroke="#FFD700" stroke-width="3"/>
+        <line x1="130" y1="60" x2="140" y2="60" stroke="#FFD700" stroke-width="3"/>
+        <line x1="45" y1="25" x2="38" y2="18" stroke="#FFD700" stroke-width="3"/>
+        <line x1="115" y1="25" x2="122" y2="18" stroke="#FFD700" stroke-width="3"/>
+        <line x1="45" y1="95" x2="38" y2="102" stroke="#FFD700" stroke-width="3"/>
+        <line x1="115" y1="95" x2="122" y2="102" stroke="#FFD700" stroke-width="3"/>
+        <text x="80" y="120" text-anchor="middle" fill="#FFD700" font-size="12" font-weight="bold">SUN</text>
+        <text x="80" y="134" text-anchor="middle" fill="#FFD700" font-size="9" opacity="0.7">Producer</text>
+      </g>
+
+      <!-- Grass -->
+      <g id="grassGroup" class="organism" style="cursor:pointer">
+        <rect x="180" y="230" width="120" height="20" rx="5" fill="#2a5a1a"/>
+        <rect x="200" y="180" width="8" height="55" rx="3" fill="#3aaa3a"/>
+        <rect x="220" y="190" width="7" height="45" rx="3" fill="#2a8a2a"/>
+        <rect x="238" y="175" width="8" height="60" rx="3" fill="#3aaa3a"/>
+        <rect x="258" y="185" width="7" height="50" rx="3" fill="#2a8a2a"/>
+        <ellipse cx="204" cy="178" rx="14" ry="8" fill="#4aaa4a" transform="rotate(-20,204,178)"/>
+        <ellipse cx="243" cy="173" rx="15" ry="8" fill="#4aaa4a" transform="rotate(15,243,173)"/>
+        <ellipse cx="261" cy="183" rx="12" ry="7" fill="#4aaa4a" transform="rotate(-10,261,183)"/>
+        <text x="230" y="258" text-anchor="middle" fill="#4aaa4a" font-size="12" font-weight="bold">GRASS</text>
+        <text x="230" y="272" text-anchor="middle" fill="#4aaa4a" font-size="9" opacity="0.7">Producer</text>
+      </g>
+
+      <!-- Rabbit -->
+      <g id="rabbitGroup" class="organism" style="cursor:pointer">
+        <ellipse cx="360" cy="230" rx="28" ry="20" fill="#c8a87a"/>
+        <ellipse cx="360" cy="218" rx="18" ry="16" fill="#c8a87a"/>
+        <!-- Ears (animate when energy flows) -->
+        <ellipse id="rabbitEarL" cx="350" cy="198" rx="6" ry="18" fill="#c8a87a" transform="rotate(-10,350,198)"/>
+        <ellipse id="rabbitEarR" cx="370" cy="198" rx="6" ry="18" fill="#c8a87a" transform="rotate(10,370,198)"/>
+        <ellipse cx="350" cy="200" rx="3" ry="10" fill="#e8c8a8" transform="rotate(-10,350,200)"/>
+        <ellipse cx="370" cy="200" rx="3" ry="10" fill="#e8c8a8" transform="rotate(10,370,200)"/>
+        <circle cx="354" cy="216" r="3" fill="#333"/>
+        <circle cx="366" cy="216" r="3" fill="#333"/>
+        <ellipse cx="360" cy="222" rx="4" ry="3" fill="#e8a8a8"/>
+        <text x="360" y="258" text-anchor="middle" fill="#c8a87a" font-size="12" font-weight="bold">RABBIT</text>
+        <text x="360" y="272" text-anchor="middle" fill="#c8a87a" font-size="9" opacity="0.7">Primary Consumer</text>
+      </g>
+
+      <!-- Fox -->
+      <g id="foxGroup" class="organism" style="cursor:pointer">
+        <ellipse cx="470" cy="225" rx="35" ry="22" fill="#CC6633"/>
+        <ellipse cx="490" cy="212" rx="22" ry="18" fill="#CC6633"/>
+        <!-- Ears -->
+        <polygon points="478,195 483,180 490,195" fill="#CC6633"/>
+        <polygon points="495,195 500,180 507,195" fill="#CC6633"/>
+        <!-- Snout -->
+        <ellipse cx="505" cy="220" rx="12" ry="8" fill="#DDAA77"/>
+        <circle cx="510" cy="218" r="3" fill="#333"/>
+        <ellipse cx="512" cy="224" rx="3" ry="2" fill="#333"/>
+        <!-- Tail -->
+        <ellipse cx="438" cy="222" rx="20" ry="10" fill="#CC6633" transform="rotate(-20,438,222)"/>
+        <!-- Eyes (look toward rabbit when activated) -->
+        <circle id="foxEyeL" cx="483" cy="210" r="3" fill="#333"/>
+        <circle id="foxEyeR" cx="497" cy="210" r="3" fill="#333"/>
+        <text x="470" y="258" text-anchor="middle" fill="#CC6633" font-size="12" font-weight="bold">FOX</text>
+        <text x="470" y="272" text-anchor="middle" fill="#CC6633" font-size="9" opacity="0.7">Secondary Consumer</text>
+      </g>
+
+      <!-- Mushroom / Decomposer -->
+      <g id="mushroomGroup" class="organism" style="cursor:pointer">
+        <rect x="505" y="268" width="10" height="22" rx="3" fill="#e8d8c8"/>
+        <ellipse cx="510" cy="268" rx="22" ry="14" fill="#cc8844"/>
+        <ellipse cx="510" cy="264" rx="18" ry="10" fill="#dd9955"/>
+        <!-- Spots -->
+        <circle cx="502" cy="266" r="3" fill="#fff" opacity="0.7"/>
+        <circle cx="512" cy="262" r="2.5" fill="#fff" opacity="0.7"/>
+        <circle cx="518" cy="267" r="2" fill="#fff" opacity="0.7"/>
+        <circle cx="506" cy="272" r="2" fill="#fff" opacity="0.7"/>
+        <!-- Mushroom grows when activated -->
+        <g id="mushroomGrowth" opacity="0" transform-origin="510 290">
+          <rect x="505" y="268" width="10" height="22" rx="3" fill="#e8d8c8"/>
+          <ellipse cx="510" cy="268" rx="22" ry="14" fill="#cc8844"/>
+          <ellipse cx="510" cy="264" rx="18" ry="10" fill="#dd9955"/>
+          <circle cx="502" cy="266" r="3" fill="#fff" opacity="0.7"/>
+          <circle cx="512" cy="262" r="2.5" fill="#fff" opacity="0.7"/>
+          <circle cx="518" cy="267" r="2" fill="#fff" opacity="0.7"/>
+          <circle cx="506" cy="272" r="2" fill="#fff" opacity="0.7"/>
+        </g>
+        <text x="510" y="300" text-anchor="middle" fill="#cc8844" font-size="11" font-weight="bold">MUSHROOM</text>
+        <text x="510" y="314" text-anchor="middle" fill="#cc8844" font-size="9" opacity="0.7">Decomposer</text>
+      </g>
+
+      <!-- Energy flow label -->
+      <g id="energyLabel" opacity="0">
+        <rect x="240" y="10" width="120" height="28" rx="8" fill="rgba(40,40,80,0.8)" stroke="#4a4a8a"/>
+        <text x="300" y="29" text-anchor="middle" fill="#FFDD00" font-size="12" font-weight="bold">Energy flows!</text>
+      </g>
+    </svg>
+  </div>
+  <div class="info-bar" id="infoBar">Tap the Sun to start the energy flow!</div>
+  <p class="hint">Energy flows in one direction: Sun → Grass → Rabbit → Fox → Mushroom</p>
+  <div class="mission-card">
+    <strong>Real World Mission</strong>
+    What is at the top of a food chain near your home? Look in your garden or a nearby park.
+  </div>
+</div>
+<div class="fab-bar">
+  <div class="fab" id="fabHome" title="Home">🏠</div>
+  <div class="fab rabbity" id="fabRabbity" title="Rabbity">🐰
+    <div class="bubble" id="bubble">What would happen if all the grass disappeared?</div>
+  </div>
+  <div class="fab" id="fabParent" title="Parent">👤</div>
+</div>
+<script>
+(function() {
+  var svg = document.getElementById("svgScene");
+  var infoBar = document.getElementById("infoBar");
+  var energyArrows = document.getElementById("energyArrows");
+  var energyLabel = document.getElementById("energyLabel");
+  var sunGroup = document.getElementById("sunGroup");
+  var grassGroup = document.getElementById("grassGroup");
+  var rabbitGroup = document.getElementById("rabbitGroup");
+  var foxGroup = document.getElementById("foxGroup");
+  var mushroomGroup = document.getElementById("mushroomGroup");
+  var rabbitEarL = document.getElementById("rabbitEarL");
+  var rabbitEarR = document.getElementById("rabbitEarR");
+  var mushroomGrowth = document.getElementById("mushroomGrowth");
+  var bubble = document.getElementById("bubble");
+
+  var currentStep = -1; // -1 = nothing activated
+  var animTimeouts = [];
+
+  var ORGANISMS = [
+    { id: "sun", el: sunGroup, nextArrow: "arrowSunGrass", label: "The sun gives energy to the grass!" },
+    { id: "grass", el: grassGroup, nextArrow: "arrowGrassRabbit", label: "The grass has energy from the sun. The rabbit eats it!" },
+    { id: "rabbit", el: rabbitGroup, nextArrow: "arrowRabbitFox", label: "The rabbit has energy! The fox hunts the rabbit." },
+    { id: "fox", el: foxGroup, nextArrow: "arrowFoxMush", label: "The fox ate the rabbit! Energy passes to the fox." },
+    { id: "mushroom", el: mushroomGroup, nextArrow: null, label: "The mushroom decomposes the fox, returning nutrients to the soil!" }
+  ];
+
+  function clearEnergy() {
+    currentStep = -1;
+    energyArrows.setAttribute("opacity", "0");
+    energyLabel.setAttribute("opacity", "0");
+    mushroomGrowth.setAttribute("opacity", "0");
+    // Reset ears
+    rabbitEarL.setAttribute("transform", "rotate(-10,350,198)");
+    rabbitEarR.setAttribute("transform", "rotate(10,370,198)");
+    infoBar.textContent = "Tap the Sun to start the energy flow!";
+  }
+
+  function activateStep(step) {
+    if (step >= ORGANISMS.length) return;
+    currentStep = step;
+    var org = ORGANISMS[step];
+
+    // Highlight organism
+    org.el.setAttribute("opacity", "1");
+
+    // Show arrow to next
+    if (org.nextArrow) {
+      energyArrows.setAttribute("opacity", "1");
+      var arrow = document.getElementById(org.nextArrow);
+      if (arrow) {
+        arrow.setAttribute("opacity", "1");
+        energyLabel.setAttribute("opacity", "1");
+      }
+    }
+
+    // Animate specific effects
+    if (org.id === "rabbit") {
+      // Ears perk up
+      animateRabbitEars();
+    }
+    if (org.id === "fox") {
+      // Fox eyes look toward rabbit (shift right)
+      var eyeL = document.getElementById("foxEyeL");
+      var eyeR = document.getElementById("foxEyeR");
+      if (eyeL) eyeL.setAttribute("cx", "485");
+      if (eyeR) eyeR.setAttribute("cx", "499");
+    }
+    if (org.id === "mushroom") {
+      // Mushroom grows
+      animateMushroom();
+    }
+
+    infoBar.textContent = org.label;
+  }
+
+  function animateRabbitEars() {
+    var angles = [-10, -25, -10];
+    var times = [0, 300, 600];
+    for (var i = 0; i < angles.length; i++) {
+      var t = setTimeout(function(a) {
+        rabbitEarL.setAttribute("transform", "rotate(" + a + ",350,198)");
+        rabbitEarR.setAttribute("transform", "rotate(" + (-a) + ",370,198)");
+      }.bind(null, angles[i]), times[i]);
+      animTimeouts.push(t);
+    }
+  }
+
+  function animateMushroom() {
+    var scale = 0;
+    var t = 0;
+    var interval = setInterval(function() {
+      scale += 0.05;
+      if (scale >= 1.3) {
+        clearInterval(interval);
+        setTimeout(function() {
+          mushroomGrowth.setAttribute("opacity", "1");
+        }, 200);
+      }
+      mushroomGrowth.setAttribute("transform", "scale(" + scale + ")");
+      mushroomGrowth.setAttribute("opacity", Math.min(scale, 1));
+    }, 30);
+  }
+
+  // Event handlers
+  sunGroup.addEventListener("click", function() {
+    clearEnergy();
+    activateStep(0);
+  });
+
+  grassGroup.addEventListener("click", function() {
+    if (currentStep < 0) {
+      clearEnergy();
+      activateStep(0);
+      setTimeout(function() { activateStep(1); }, 500);
+    } else if (currentStep === 0) {
+      activateStep(1);
+    }
+  });
+
+  rabbitGroup.addEventListener("click", function() {
+    if (currentStep === 1) activateStep(2);
+  });
+
+  foxGroup.addEventListener("click", function() {
+    if (currentStep === 2) activateStep(3);
+  });
+
+  mushroomGroup.addEventListener("click", function() {
+    if (currentStep === 3) activateStep(4);
+  });
+
+  // Double-click to reset
+  svg.addEventListener("dblclick", clearEnergy);
+
+  document.getElementById("fabHome").addEventListener("click", function() {
+    if (window.parent && window.parent.navigate) window.parent.navigate("home");
+  });
+  document.getElementById("fabParent").addEventListener("click", function() {
+    alert("A food chain shows how energy moves from one living thing to another. The sun is the source of all energy on Earth! Plants capture sunlight, animals eat plants, other animals eat those animals, and decomposers break it all down — returning nutrients to the soil for plants to use again.");
+  });
+  document.getElementById("fabRabbity").addEventListener("click", function() {
+    bubble.classList.toggle("show");
+  });
+  document.addEventListener("click", function(e) {
+    if (!document.getElementById("fabRabbity").contains(e.target)) {
+      bubble.classList.remove("show");
+    }
+  });
+
+  // Background stars
+  (function genStars() {
+    var bg = document.getElementById("starsBg");
+    for (var i = 0; i < 80; i++) {
+      var s = document.createElement("div");
+      s.className = "star";
+      s.style.left = Math.random() * 100 + "%";
+      s.style.top = Math.random() * 100 + "%";
+      s.style.width = s.style.height = (Math.random() * 2 + 1) + "px";
+      s.style.animationDelay = Math.random() * 3 + "s";
+      bg.appendChild(s);
+    }
+  })();
+
+  // MISSIONS
+  window.MISSIONS = window.MISSIONS || {};
+  Object.assign(window.MISSIONS, {
+    "food-chain": {
+      title: "Food Chain — Real World Mission",
+      adult: "What you might say: In a food chain, energy always flows in one direction — from the sun to plants to animals to decomposers. Each step loses some energy (as heat), which is why there are usually fewer animals at the top than plants at the bottom.",
+      safety: "No physical risks. If exploring outside, be careful of real plants and animals — some can be harmful if touched or eaten.",
+      askNext: "What would happen if all the decomposers disappeared? Could plants still grow?",
+      finish: "You now understand how energy flows through all living things! Every time you eat a plant or an animal, you\'re part of the food chain too."
+    }
+  });
+})();
+</script>
+</body>
+</html>

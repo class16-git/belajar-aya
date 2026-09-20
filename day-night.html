@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Day &amp; Night — Belajar Aya</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a1a; color: #e0e0ff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  h1 { font-size: 1.8em; text-align: center; padding: 20px 16px 4px; color: #fff; }
+  .subtitle { text-align: center; font-size: 0.85em; color: #8888cc; padding: 0 16px 12px; font-style: italic; }
+  .scene { position: relative; width: 100%; max-width: 500px; margin: 0 auto; }
+  svg.scene-svg { width: 100%; display: block; }
+  .info-panel { text-align: center; padding: 12px 16px; }
+  .time-display { font-size: 2.5em; color: #fff; font-weight: 700; letter-spacing: 2px; }
+  .day-night-label { font-size: 1.1em; margin-top: 4px; color: #aaaaff; }
+  .controls { display: flex; justify-content: center; gap: 12px; padding: 12px; flex-wrap: wrap; }
+  .btn { background: linear-gradient(135deg,#2a2a5a,#1a1a3a); color: #e0e0ff; border: 1px solid #4a4a8a; padding: 10px 22px; border-radius: 25px; font-size: 0.95em; cursor: pointer; transition: all 0.2s; }
+  .btn:hover { background: linear-gradient(135deg,#3a3a7a,#2a2a5a); transform: translateY(-1px); }
+  .hint { text-align: center; font-size: 0.8em; color: #6688cc; padding: 4px 16px 16px; }
+  .fab-bar { position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: rgba(10,10,26,0.95); border-top: 1px solid #2a2a5a; z-index: 100; }
+  .fab { font-size: 1.4em; background: linear-gradient(135deg,#2a2a5a,#1a1a3a); border: 1px solid #4a4a8a; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; }
+  .fab:hover { background: linear-gradient(135deg,#3a3a7a,#2a2a5a); }
+  .fab.rabbity { position: relative; border-radius: 50% 50% 50% 10px; }
+  .bubble { position: absolute; bottom: 60px; right: 0; background: #1a1a3a; border: 1px solid #4a4a8a; border-radius: 16px 16px 4px 16px; padding: 12px 16px; max-width: 260px; font-size: 0.88em; line-height: 1.4; color: #c0c0e0; display: none; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+  .bubble.show { display: block; }
+  .bubble::after { content: ""; position: absolute; bottom: -8px; right: 16px; width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #4a4a8a; }
+  .mission-card { background: rgba(30,30,70,0.8); border: 1px solid #3a3a7a; border-radius: 12px; margin: 0 16px 80px; padding: 14px 18px; font-size: 0.82em; color: #aaaaff; line-height: 1.5; }
+  .mission-card strong { color: #aaaaff; display: block; margin-bottom: 4px; font-size: 0.95em; }
+  .stars-bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .star { position: absolute; background: #fff; border-radius: 50%; animation: twinkle 3s ease-in-out infinite; }
+  @keyframes twinkle { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
+  .content { position: relative; z-index: 1; padding-bottom: 80px; }
+</style>
+</head>
+<body>
+<div class="stars-bg" id="starsBg"></div>
+<div class="content">
+  <h1>Day &amp; Night</h1>
+  <p class="subtitle">Spin Earth to see why we have day and night</p>
+  <div class="scene">
+    <svg class="scene-svg" id="svgScene" viewBox="0 0 400 280">
+      <!-- Space background -->
+      <rect width="400" height="280" fill="#050510"/>
+
+      <!-- Stars in space -->
+      <circle cx="50" cy="40" r="1" fill="#fff" opacity="0.6"/>
+      <circle cx="120" cy="80" r="1.5" fill="#fff" opacity="0.8"/>
+      <circle cx="80" cy="120" r="1" fill="#fff" opacity="0.5"/>
+      <circle cx="300" cy="50" r="1" fill="#fff" opacity="0.7"/>
+      <circle cx="350" cy="100" r="1.5" fill="#fff" opacity="0.6"/>
+      <circle cx="320" cy="200" r="1" fill="#fff" opacity="0.5"/>
+      <circle cx="30" cy="200" r="1" fill="#fff" opacity="0.6"/>
+      <circle cx="60" cy="160" r="1" fill="#fff" opacity="0.4"/>
+
+      <!-- Sun (fixed on right) -->
+      <circle cx="370" cy="140" r="40" fill="#FFD700"/>
+      <circle cx="370" cy="140" r="60" fill="rgba(255,220,50,0.1)"/>
+      <circle cx="370" cy="140" r="80" fill="rgba(255,220,50,0.05)"/>
+
+      <!-- Light rays from sun -->
+      <line x1="300" y1="140" x2="100" y2="140" stroke="rgba(255,220,100,0.05)" stroke-width="40"/>
+
+      <!-- Earth (center, will rotate) -->
+      <g id="earthGroup" style="cursor:grab">
+        <!-- Night side (dark) -->
+        <circle id="earthDark" cx="150" cy="140" r="70" fill="#0a1a3a"/>
+        <!-- Day side (light) -->
+        <path id="earthDay" d="M150,70 A70,70 0 0,1 150,210 L150,70 Z" fill="#2277CC"/>
+        <!-- Continent hints on day side -->
+        <path d="M165,95 Q180,88 190,100 Q200,115 185,125 Q170,130 165,120 Q158,108 165,95" fill="#3aaa5a" opacity="0.7"/>
+        <path d="M155,140 Q165,135 172,145 Q170,158 160,155 Q150,150 155,140" fill="#3aaa5a" opacity="0.7"/>
+        <!-- Earth outline -->
+        <circle cx="150" cy="140" r="70" fill="none" stroke="#334466" stroke-width="1"/>
+        <!-- Jakarta marker -->
+        <circle id="jakartaMarker" cx="170" cy="140" r="5" fill="#FF4444"/>
+      </g>
+
+      <!-- Light direction indicator -->
+      <text x="360" y="200" fill="rgba(255,220,100,0.4)" font-size="10" text-anchor="middle">Sunlight</text>
+    </svg>
+  </div>
+  <div class="info-panel">
+    <div class="time-display" id="timeDisplay">6:00 AM</div>
+    <div class="day-night-label" id="dayNightLabel">Daytime in Jakarta</div>
+  </div>
+  <p class="hint">Drag Earth to spin it, or tap the Spin button to watch it rotate</p>
+  <div class="controls">
+    <button class="btn" id="btnSpin">Spin</button>
+    <button class="btn" id="btnStop">Stop</button>
+  </div>
+  <div class="mission-card">
+    <strong>Real World Mission</strong>
+    Ask someone in another country what time it is there. Does the sun rise at the same time?
+  </div>
+</div>
+<div class="fab-bar">
+  <div class="fab" id="fabHome" title="Home">🏠</div>
+  <div class="fab rabbity" id="fabRabbity" title="Rabbity">🐰
+    <div class="bubble" id="bubble">When it\'s nighttime here, is it nighttime everywhere on Earth?</div>
+  </div>
+  <div class="fab" id="fabParent" title="Parent">👤</div>
+</div>
+<script>
+(function() {
+  var earthGroup = document.getElementById("earthGroup");
+  var earthDay = document.getElementById("earthDay");
+  var earthDark = document.getElementById("earthDark");
+  var jakartaMarker = document.getElementById("jakartaMarker");
+  var timeDisplay = document.getElementById("timeDisplay");
+  var dayNightLabel = document.getElementById("dayNightLabel");
+  var btnSpin = document.getElementById("btnSpin");
+  var btnStop = document.getElementById("btnStop");
+  var bubble = document.getElementById("bubble");
+
+  // Rotation angle: 0 = Jakarta facing sun (noon), PI = opposite (midnight)
+  var rotation = Math.PI; // start at midnight
+  var isSpinning = false;
+  var spinInterval = null;
+
+  var cx = 150, cy = 140, r = 70;
+  // Jakarta is on the right side of Earth relative to center (eastward)
+  // When rotation=0 (facing sun), jakarta should be at rightmost point
+  // When rotation=PI (away from sun), jakarta should be at leftmost point
+
+  function updateEarth() {
+    // Rotate the day/night boundary and the marker
+    // The day side spans from (rotation - PI/2) to (rotation + PI/2) in angle space
+    // We'll use SVG transform rotate around earth center
+    // rotation=0 means jakarta faces the sun (right side)
+    // rotation=PI means jakarta faces away (left side)
+
+    // In our SVG: jakarta marker is at cx+25, cy (right side of earth)
+    // When we rotate by 'rotation' around center, jakarta moves
+    // At rotation=0: jakarta at rightmost (facing sun = noon)
+    // At rotation=PI: jakarta at leftmost (away from sun = midnight)
+
+    // Convert rotation to degrees for SVG transform
+    var angleDeg = (rotation * 180 / Math.PI);
+    earthGroup.setAttribute("transform", "rotate(" + angleDeg + "," + cx + "," + cy + ")");
+
+    // Calculate time (6am at rotation=PI, 12pm at rotation=PI/2, 6pm at rotation=0, 12am at rotation=-PI/2)
+    // Let's define: rotation PI = 6am, rotation PI/2 = 12pm, rotation 0 = 6pm, rotation -PI/2 = 12am
+    // But easier: 0-24h mapped to 0-2PI
+    // At rotation=PI (start), it's 6am
+    // As rotation decreases toward 0, time increases
+    var hours = 6 + (Math.PI - rotation) * (12 / Math.PI);
+    if (hours >= 24) hours -= 24;
+    if (hours < 0) hours += 24;
+
+    var h = Math.floor(hours);
+    var m = Math.floor((hours - h) * 60);
+    var ampm = h >= 12 ? "PM" : "AM";
+    if (h === 0) h = 12;
+    if (h > 12) h -= 12;
+    timeDisplay.textContent = h + ":" + (m < 10 ? "0" : "") + m + " " + ampm;
+
+    // Day or night?
+    // Jakarta is at the marker position after rotation
+    // We need to know if jakarta marker is on the day side or night side
+    // Day side angle range: from -PI/2 to PI/2 relative to sun direction (right = 0)
+    // jakarta starts at angle 0 (rightmost). After rotation, its angle = rotation
+    var jakartaAngle = rotation; // angle from positive x axis (sun direction)
+    // Normalize jakartaAngle to -PI to PI
+    while (jakartaAngle > Math.PI) jakartaAngle -= 2 * Math.PI;
+    while (jakartaAngle < -Math.PI) jakartaAngle += 2 * Math.PI;
+
+    if (Math.abs(jakartaAngle) < Math.PI / 2) {
+      dayNightLabel.textContent = "Daytime in Jakarta";
+      dayNightLabel.style.color = "#aaffaa";
+    } else {
+      dayNightLabel.textContent = "Nighttime in Jakarta";
+      dayNightLabel.style.color = "#aaaaff";
+    }
+  }
+
+  function spin() {
+    isSpinning = true;
+    spinInterval = setInterval(function() {
+      rotation -= 0.03;
+      if (rotation < -Math.PI) rotation = Math.PI;
+      updateEarth();
+    }, 50);
+  }
+
+  function stopSpin() {
+    isSpinning = false;
+    if (spinInterval) {
+      clearInterval(spinInterval);
+      spinInterval = null;
+    }
+  }
+
+  // Drag to rotate
+  var isDragging = false;
+  var lastX = 0;
+
+  earthGroup.addEventListener("mousedown", function(e) {
+    isDragging = true;
+    lastX = e.clientX;
+    stopSpin();
+    e.preventDefault();
+  });
+  earthGroup.addEventListener("touchstart", function(e) {
+    isDragging = true;
+    lastX = e.touches[0].clientX;
+    stopSpin();
+    e.preventDefault();
+  }, { passive: false });
+
+  document.addEventListener("mousemove", function(e) {
+    if (!isDragging) return;
+    var dx = e.clientX - lastX;
+    lastX = e.clientX;
+    // Horizontal drag changes rotation
+    rotation += dx * 0.02;
+    // Clamp
+    while (rotation > Math.PI) rotation -= 2 * Math.PI;
+    while (rotation < -Math.PI) rotation += 2 * Math.PI;
+    updateEarth();
+  });
+
+  document.addEventListener("touchmove", function(e) {
+    if (!isDragging) return;
+    var dx = e.touches[0].clientX - lastX;
+    lastX = e.touches[0].clientX;
+    rotation += dx * 0.02;
+    while (rotation > Math.PI) rotation -= 2 * Math.PI;
+    while (rotation < -Math.PI) rotation += 2 * Math.PI;
+    updateEarth();
+    e.preventDefault();
+  }, { passive: false });
+
+  document.addEventListener("mouseup", function() { isDragging = false; });
+  document.addEventListener("touchend", function() { isDragging = false; });
+
+  btnSpin.addEventListener("click", spin);
+  btnStop.addEventListener("click", stopSpin);
+
+  document.getElementById("fabHome").addEventListener("click", function() {
+    if (window.parent && window.parent.navigate) window.parent.navigate("home");
+  });
+  document.getElementById("fabParent").addEventListener("click", function() {
+    alert("Earth spins like a top once every 24 hours! As Earth spins, the part facing the sun has daytime, and the part facing away has nighttime. This is why when it\'s noon in Jakarta, it\'s midnight on the other side of the world!");
+  });
+  document.getElementById("fabRabbity").addEventListener("click", function() {
+    bubble.classList.toggle("show");
+  });
+  document.addEventListener("click", function(e) {
+    if (!document.getElementById("fabRabbity").contains(e.target)) {
+      bubble.classList.remove("show");
+    }
+  });
+
+  // Background stars
+  (function genStars() {
+    var bg = document.getElementById("starsBg");
+    for (var i = 0; i < 80; i++) {
+      var s = document.createElement("div");
+      s.className = "star";
+      s.style.left = Math.random() * 100 + "%";
+      s.style.top = Math.random() * 100 + "%";
+      s.style.width = s.style.height = (Math.random() * 2 + 1) + "px";
+      s.style.animationDelay = Math.random() * 3 + "s";
+      bg.appendChild(s);
+    }
+  })();
+
+  updateEarth();
+
+  // MISSIONS
+  window.MISSIONS = window.MISSIONS || {};
+  Object.assign(window.MISSIONS, {
+    "day-night": {
+      title: "Day & Night — Real World Mission",
+      adult: "What you might say: The Earth is spinning like a ballerina! One full spin takes 24 hours — that\'s why we have day and night. When your side faces the sun, it\'s day; when it faces away, it\'s night.",
+      safety: "No physical risks. If talking about space travel, children may have questions about the sun — remind them never to look at the sun directly.",
+      askNext: "If it\'s noon in Jakarta, is it the same time in London? Try to find a globe or map to explore this!",
+      finish: "Great spinning! Now you know why day follows night and night follows day — Earth is always spinning!"
+    }
+  });
+})();
+</script>
+</body>
+</html>

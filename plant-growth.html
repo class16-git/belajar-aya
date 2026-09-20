@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plant Growth — Belajar Aya</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a1a; color: #e0e0ff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  h1 { font-size: 1.8em; text-align: center; padding: 20px 16px 4px; color: #fff; }
+  .subtitle { text-align: center; font-size: 0.85em; color: #8888cc; padding: 0 16px 12px; font-style: italic; }
+  .scene { position: relative; width: 100%; max-width: 500px; margin: 0 auto; }
+  svg.scene-svg { width: 100%; display: block; }
+  .stage-display { text-align: center; font-size: 1.1em; color: #aaffaa; padding: 12px 16px; min-height: 50px; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+  .hint { text-align: center; font-size: 0.8em; color: #6688cc; padding: 4px 16px 16px; }
+  .controls { display: flex; justify-content: center; gap: 12px; padding: 12px; flex-wrap: wrap; }
+  .btn { background: linear-gradient(135deg,#2a2a5a,#1a1a3a); color: #e0e0ff; border: 1px solid #4a4a8a; padding: 10px 22px; border-radius: 25px; font-size: 0.95em; cursor: pointer; transition: all 0.2s; }
+  .btn:hover { background: linear-gradient(135deg,#3a3a7a,#2a2a5a); transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+  .btn-primary { background: linear-gradient(135deg,#2a6a2a,#1a4a1a); border-color: #4a8a4a; }
+  .btn-primary:hover { background: linear-gradient(135deg,#3a7a3a,#2a5a2a); }
+  .btn-water { background: linear-gradient(135deg,#1a4a7a,#0a2a5a); border-color: #3a7aaa; }
+  .btn-water:hover { background: linear-gradient(135deg,#2a5a8a,#1a3a6a); }
+  .fab-bar { position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: rgba(10,10,26,0.95); border-top: 1px solid #2a2a5a; z-index: 100; }
+  .fab { font-size: 1.4em; background: linear-gradient(135deg,#2a2a5a,#1a1a3a); border: 1px solid #4a4a8a; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; }
+  .fab:hover { background: linear-gradient(135deg,#3a3a7a,#2a2a5a); }
+  .fab.rabbity { position: relative; border-radius: 50% 50% 50% 10px; }
+  .bubble { position: absolute; bottom: 60px; right: 0; background: #1a1a3a; border: 1px solid #4a4a8a; border-radius: 16px 16px 4px 16px; padding: 12px 16px; max-width: 260px; font-size: 0.88em; line-height: 1.4; color: #c0c0e0; display: none; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+  .bubble.show { display: block; }
+  .bubble::after { content: ""; position: absolute; bottom: -8px; right: 16px; width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #4a4a8a; }
+  .mission-card { background: rgba(30,30,70,0.8); border: 1px solid #3a3a7a; border-radius: 12px; margin: 0 16px 80px; padding: 14px 18px; font-size: 0.82em; color: #aaaaff; line-height: 1.5; }
+  .mission-card strong { color: #aaaaff; display: block; margin-bottom: 4px; font-size: 0.95em; }
+  .stars-bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .star { position: absolute; background: #fff; border-radius: 50%; animation: twinkle 3s ease-in-out infinite; }
+  @keyframes twinkle { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
+  .content { position: relative; z-index: 1; padding-bottom: 80px; }
+  .part-label { font-size: 0.7em; fill: #88ff88; }
+  .part-label-line { stroke: #88ff88; stroke-width: 0.5; stroke-dasharray: 2 2; }
+</style>
+</head>
+<body>
+<div class="stars-bg" id="starsBg"></div>
+<div class="content">
+  <h1>Plant Growth</h1>
+  <p class="subtitle">Watch a plant grow from seed to flower</p>
+  <div class="scene">
+    <svg class="scene-svg" id="svgScene" viewBox="0 0 400 350">
+      <defs>
+        <linearGradient id="soilGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#3a2a1a"/>
+          <stop offset="100%" stop-color="#1a0a00"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Sky -->
+      <rect width="400" height="220" fill="#0a0a2a"/>
+
+      <!-- Sun glow -->
+      <circle cx="350" cy="50" r="30" fill="#FFD700" opacity="0.8"/>
+      <circle cx="350" cy="50" r="45" fill="rgba(255,220,50,0.1)"/>
+
+      <!-- Soil surface -->
+      <rect x="0" y="210" width="400" height="15" fill="#2a4a1a"/>
+
+      <!-- Soil cross-section (underground) -->
+      <rect x="0" y="225" width="400" height="125" fill="url(#soilGrad)"/>
+
+      <!-- Plant group (will be shown/hidden by stage) -->
+      <g id="plantGroup">
+        <!-- Stage 1: Seed -->
+        <g id="stage1" opacity="0">
+          <ellipse cx="200" cy="218" rx="8" ry="5" fill="#8B4513"/>
+          <ellipse cx="198" cy="216" rx="3" ry="2" fill="#A0522D"/>
+        </g>
+        <!-- Stage 2: Sprout -->
+        <g id="stage2" opacity="0">
+          <ellipse cx="200" cy="220" rx="6" ry="4" fill="#8B4513"/>
+          <!-- Root -->
+          <path d="M200,224 Q195,235 198,250" stroke="#6a3a10" stroke-width="2" fill="none"/>
+          <path d="M200,230 Q208,240 205,260" stroke="#6a3a10" stroke-width="1.5" fill="none"/>
+          <!-- Shoot -->
+          <path d="M200,224 Q198,215 200,205" stroke="#3aaa3a" stroke-width="2.5" fill="none"/>
+          <ellipse cx="198" cy="204" rx="6" ry="4" fill="#4aaa4a" transform="rotate(-20,198,204)"/>
+          <ellipse cx="203" cy="205" rx="5" ry="3" fill="#4aaa4a" transform="rotate(15,203,205)"/>
+        </g>
+        <!-- Stage 3: Stem + leaves -->
+        <g id="stage3" opacity="0">
+          <path d="M200,225 Q195,250 197,290" stroke="#3a8a3a" stroke-width="4" fill="none"/>
+          <!-- Roots -->
+          <path d="M200,225 Q188,240 185,265" stroke="#6a3a10" stroke-width="2" fill="none"/>
+          <path d="M200,225 Q215,242 218,268" stroke="#6a3a10" stroke-width="2" fill="none"/>
+          <path d="M200,230 Q195,255 192,275" stroke="#6a3a10" stroke-width="1.5" fill="none"/>
+          <!-- Leaves -->
+          <ellipse cx="193" cy="250" rx="20" ry="8" fill="#3aaa3a" transform="rotate(-30,193,250)"/>
+          <ellipse cx="207" cy="265" rx="22" ry="8" fill="#4aaa4a" transform="rotate(25,207,265)"/>
+          <ellipse cx="192" cy="278" rx="18" ry="7" fill="#3aaa3a" transform="rotate(-20,192,278)"/>
+          <!-- Stem -->
+          <ellipse cx="200" cy="240" rx="5" ry="3" fill="#2a7a2a" transform="rotate(-45,200,240)"/>
+        </g>
+        <!-- Stage 4: Flower -->
+        <g id="stage4" opacity="0">
+          <path d="M200,225 Q195,260 197,300" stroke="#3a8a3a" stroke-width="5" fill="none"/>
+          <!-- Roots -->
+          <path d="M200,225 Q182,245 178,275" stroke="#6a3a10" stroke-width="2.5" fill="none"/>
+          <path d="M200,225 Q220,248 225,278" stroke="#6a3a10" stroke-width="2.5" fill="none"/>
+          <path d="M200,235 Q190,265 185,290" stroke="#6a3a10" stroke-width="2" fill="none"/>
+          <path d="M200,235 Q212,262 218,288" stroke="#6a3a10" stroke-width="2" fill="none"/>
+          <!-- Leaves -->
+          <ellipse cx="188" cy="258" rx="24" ry="9" fill="#3aaa3a" transform="rotate(-35,188,258)"/>
+          <ellipse cx="212" cy="275" rx="26" ry="9" fill="#4aaa4a" transform="rotate(30,212,275)"/>
+          <ellipse cx="190" cy="288" rx="20" ry="8" fill="#3aaa3a" transform="rotate(-25,190,288)"/>
+          <!-- Flower -->
+          <circle cx="200" cy="195" r="18" fill="#FF69B4"/>
+          <circle cx="200" cy="195" r="10" fill="#FFD700"/>
+          <ellipse cx="185" cy="188" rx="10" ry="6" fill="#FF69B4" transform="rotate(-30,185,188)"/>
+          <ellipse cx="215" cy="188" rx="10" ry="6" fill="#FF69B4" transform="rotate(30,215,188)"/>
+          <ellipse cx="188" cy="202" rx="10" ry="6" fill="#FF69B4" transform="rotate(30,188,202)"/>
+          <ellipse cx="212" cy="202" rx="10" ry="6" fill="#FF69B4" transform="rotate(-30,212,202)"/>
+          <ellipse cx="200" cy="180" rx="8" ry="5" fill="#FF69B4" transform="rotate(0,200,180)"/>
+        </g>
+        <!-- Stage 5: Seed pod -->
+        <g id="stage5" opacity="0">
+          <path d="M200,225 Q195,260 197,305" stroke="#3a8a3a" stroke-width="5" fill="none"/>
+          <!-- Roots -->
+          <path d="M200,225 Q180,248 175,282" stroke="#6a3a10" stroke-width="3" fill="none"/>
+          <path d="M200,225 Q222,252 228,285" stroke="#6a3a10" stroke-width="3" fill="none"/>
+          <path d="M200,240 Q188,272 182,300" stroke="#6a3a10" stroke-width="2" fill="none"/>
+          <path d="M200,240 Q215,270 222,298" stroke="#6a3a10" stroke-width="2" fill="none"/>
+          <!-- Leaves (bigger) -->
+          <ellipse cx="185" cy="262" rx="28" ry="10" fill="#3aaa3a" transform="rotate(-38,185,262)"/>
+          <ellipse cx="215" cy="278" rx="30" ry="10" fill="#4aaa4a" transform="rotate(35,215,278)"/>
+          <ellipse cx="187" cy="290" rx="24" ry="9" fill="#3aaa3a" transform="rotate(-25,187,290)"/>
+          <!-- Wilted flower / seed pod -->
+          <ellipse cx="200" cy="195" rx="12" ry="8" fill="#8B4513"/>
+          <ellipse cx="197" cy="193" rx="3" ry="2" fill="#A0522D"/>
+          <ellipse cx="204" cy="196" rx="3" ry="2" fill="#A0522D"/>
+          <ellipse cx="200" cy="199" rx="3" ry="2" fill="#A0522D"/>
+        </g>
+      </g>
+
+      <!-- Water droplets (animated when watering) -->
+      <g id="waterDrops" opacity="0">
+        <ellipse cx="190" cy="180" rx="4" ry="6" fill="#4499ff"/>
+        <ellipse cx="200" cy="170" rx="3" ry="5" fill="#4499ff"/>
+        <ellipse cx="210" cy="182" rx="4" ry="6" fill="#4499ff"/>
+      </g>
+
+      <!-- Part labels (shown when relevant) -->
+      <g id="labels" opacity="0">
+        <line id="rootLine" class="part-label-line" x1="160" y1="260" x2="140" y2="240"/>
+        <text id="rootLabel" class="part-label" x="100" y="238">Root</text>
+        <line id="stemLine" class="part-label-line" x1="210" y1="260" x2="240" y2="245"/>
+        <text id="stemLabel" class="part-label" x="245" y="243">Stem</text>
+        <line id="leafLine" class="part-label-line" x1="180" y1="268" x2="155" y2="285"/>
+        <text id="leafLabel" class="part-label" x="115" y="288">Leaf</text>
+        <line id="flowerLine" class="part-label-line" x1="200" y1="195" x2="240" y2="180"/>
+        <text id="flowerLabel" class="part-label" x="245" y="178">Flower</text>
+      </g>
+    </svg>
+  </div>
+  <div class="stage-display" id="stageDisplay">Tap "Plant Seed" to begin!</div>
+  <p class="hint">Plants need water and sunlight to grow — just like you need food and sleep!</p>
+  <div class="controls">
+    <button class="btn btn-primary" id="btnPlant">Plant Seed</button>
+    <button class="btn btn-water" id="btnWater" disabled>Water</button>
+    <button class="btn" id="btnReset">Reset</button>
+  </div>
+  <div class="mission-card">
+    <strong>Real World Mission</strong>
+    If you have a plant at home, check its roots. Are they spread wide or deep?
+  </div>
+</div>
+<div class="fab-bar">
+  <div class="fab" id="fabHome" title="Home">🏠</div>
+  <div class="fab rabbity" id="fabRabbity" title="Rabbity">🐰
+    <div class="bubble" id="bubble">Plants make their own food from sunlight. Where does the plant store the food it makes?</div>
+  </div>
+  <div class="fab" id="fabParent" title="Parent">👤</div>
+</div>
+<script>
+(function() {
+  var stageDisplay = document.getElementById("stageDisplay");
+  var btnPlant = document.getElementById("btnPlant");
+  var btnWater = document.getElementById("btnWater");
+  var btnReset = document.getElementById("btnReset");
+  var waterDrops = document.getElementById("waterDrops");
+  var labels = document.getElementById("labels");
+  var bubble = document.getElementById("bubble");
+
+  var currentStage = 0; // 0=empty, 1=seed, 2=sprout, 3=stem, 4=flower, 5=seedpod
+  var isWatering = false;
+
+  var STAGE_INFO = [
+    { el: null, label: "Tap 'Plant Seed' to begin!" },
+    { el: "stage1", label: "Seed planted! Tap 'Water' to help it grow." },
+    { el: "stage2", label: "A sprout! The seed is using its stored food to grow." },
+    { el: "stage3", label: "Stem and leaves growing! The plant can now make its own food." },
+    { el: "stage4", label: "A beautiful flower! It will make seeds for new plants." },
+    { el: "stage5", label: "Seeds ready! The plant's job is complete. New plants can grow!" }
+  ];
+
+  function showStage(n) {
+    // Hide all stages
+    for (var i = 1; i <= 5; i++) {
+      var el = document.getElementById("stage" + i);
+      if (el) el.setAttribute("opacity", "0");
+    }
+    // Show requested stage
+    if (n > 0) {
+      var el = document.getElementById("stage" + n);
+      if (el) el.setAttribute("opacity", "1");
+    }
+    stageDisplay.textContent = STAGE_INFO[n].label;
+
+    // Show labels for stage 3+
+    if (n >= 3) {
+      labels.setAttribute("opacity", "1");
+    } else {
+      labels.setAttribute("opacity", "0");
+    }
+
+    // Update buttons
+    btnPlant.disabled = (n > 0);
+    btnWater.disabled = (n === 0 || n === 5);
+
+    if (n === 5) {
+      btnWater.disabled = true;
+    }
+  }
+
+  function animateWater() {
+    if (!isWatering) return;
+    waterDrops.setAttribute("opacity", "1");
+    var offset = 0;
+    var interval = setInterval(function() {
+      offset += 5;
+      var d1 = waterDrops.children[0];
+      var d2 = waterDrops.children[1];
+      var d3 = waterDrops.children[2];
+      d1.setAttribute("cy", 180 + offset);
+      d2.setAttribute("cy", 170 + offset);
+      d3.setAttribute("cy", 182 + offset);
+      if (offset > 60) {
+        clearInterval(interval);
+        waterDrops.setAttribute("opacity", "0");
+        // Reset positions
+        d1.setAttribute("cy", "180");
+        d2.setAttribute("cy", "170");
+        d3.setAttribute("cy", "182");
+        isWatering = false;
+        // Advance stage
+        currentStage++;
+        showStage(currentStage);
+      }
+    }, 40);
+  }
+
+  btnPlant.addEventListener("click", function() {
+    if (currentStage !== 0) return;
+    currentStage = 1;
+    showStage(1);
+  });
+
+  btnWater.addEventListener("click", function() {
+    if (currentStage === 0 || currentStage >= 5 || isWatering) return;
+    isWatering = true;
+    animateWater();
+  });
+
+  btnReset.addEventListener("click", function() {
+    currentStage = 0;
+    isWatering = false;
+    waterDrops.setAttribute("opacity", "0");
+    showStage(0);
+  });
+
+  document.getElementById("fabHome").addEventListener("click", function() {
+    if (window.parent && window.parent.navigate) window.parent.navigate("home");
+  });
+  document.getElementById("fabParent").addEventListener("click", function() {
+    alert("Plants are amazing! They use sunlight, water, and air to make their own food through a process called photosynthesis. The food is stored in the leaves, stem, roots, and seeds. That\'s why fruits and vegetables give us energy too!");
+  });
+  document.getElementById("fabRabbity").addEventListener("click", function() {
+    bubble.classList.toggle("show");
+  });
+  document.addEventListener("click", function(e) {
+    if (!document.getElementById("fabRabbity").contains(e.target)) {
+      bubble.classList.remove("show");
+    }
+  });
+
+  // Background stars
+  (function genStars() {
+    var bg = document.getElementById("starsBg");
+    for (var i = 0; i < 80; i++) {
+      var s = document.createElement("div");
+      s.className = "star";
+      s.style.left = Math.random() * 100 + "%";
+      s.style.top = Math.random() * 100 + "%";
+      s.style.width = s.style.height = (Math.random() * 2 + 1) + "px";
+      s.style.animationDelay = Math.random() * 3 + "s";
+      bg.appendChild(s);
+    }
+  })();
+
+  // MISSIONS
+  window.MISSIONS = window.MISSIONS || {};
+  Object.assign(window.MISSIONS, {
+    "plant-growth": {
+      title: "Plant Growth — Real World Mission",
+      adult: "What you might say: Plants are like tiny food factories! They take sunlight (energy), water, and air, and turn it into food. The leaves are the kitchen, the stem is the delivery truck, and the roots are the water pump.",
+      safety: "If planting real seeds, wash hands after touching soil. Some plants can cause skin irritation.",
+      askNext: "Why do you think plants grow toward the light? What would happen if they grew in darkness?",
+      finish: "You now know how plants turn sunlight into food — isn\'t that incredible? Next time you eat a fruit or vegetable, thank the sun and the plant!"
+    }
+  });
+})();
+</script>
+</body>
+</html>

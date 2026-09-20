@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow Clock — Belajar Aya</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a1a; color: #e0e0ff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  h1 { font-size: 1.8em; text-align: center; padding: 20px 16px 4px; color: #fff; }
+  .subtitle { text-align: center; font-size: 0.85em; color: #8888cc; padding: 0 16px 12px; font-style: italic; }
+  .scene { position: relative; width: 100%; max-width: 600px; margin: 0 auto; }
+  svg.scene-svg { width: 100%; display: block; }
+  .time-display { text-align: center; font-size: 1.5em; color: #fff; padding: 8px; min-height: 50px; display: flex; align-items: center; justify-content: center; gap: 16px; }
+  .time-val { font-weight: 700; }
+  .controls { display: flex; justify-content: center; gap: 12px; padding: 12px; flex-wrap: wrap; align-items: center; }
+  .btn { background: linear-gradient(135deg,#2a2a5a,#1a1a3a); color: #e0e0ff; border: 1px solid #4a4a8a; padding: 10px 22px; border-radius: 25px; font-size: 0.95em; cursor: pointer; transition: all 0.2s; }
+  .btn:hover { background: linear-gradient(135deg,#3a3a7a,#2a2a5a); transform: translateY(-1px); }
+  .slider-wrap { display: flex; align-items: center; gap: 10px; font-size: 0.85em; }
+  .slider-wrap label { color: #aaa; }
+  input[type="range"] { -webkit-appearance: none; width: 180px; height: 6px; border-radius: 3px; background: linear-gradient(to right, #ff8844, #ffdd44, #ff8844); outline: none; cursor: pointer; }
+  input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 2px solid #4a4a8a; cursor: pointer; }
+  .hint { text-align: center; font-size: 0.8em; color: #6688cc; padding: 4px 16px 16px; }
+  .fab-bar { position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: rgba(10,10,26,0.95); border-top: 1px solid #2a2a5a; z-index: 100; }
+  .fab { font-size: 1.4em; background: linear-gradient(135deg,#2a2a5a,#1a1a3a); border: 1px solid #4a4a8a; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; }
+  .fab:hover { background: linear-gradient(135deg,#3a3a7a,#2a2a5a); }
+  .fab.rabbity { position: relative; border-radius: 50% 50% 50% 10px; }
+  .bubble { position: absolute; bottom: 60px; right: 0; background: #1a1a3a; border: 1px solid #4a4a8a; border-radius: 16px 16px 4px 16px; padding: 12px 16px; max-width: 260px; font-size: 0.88em; line-height: 1.4; color: #c0c0e0; display: none; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+  .bubble.show { display: block; }
+  .bubble::after { content: ""; position: absolute; bottom: -8px; right: 16px; width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #4a4a8a; }
+  .mission-card { background: rgba(30,30,70,0.8); border: 1px solid #3a3a7a; border-radius: 12px; margin: 0 16px 80px; padding: 14px 18px; font-size: 0.82em; color: #aaaaff; line-height: 1.5; }
+  .mission-card strong { color: #aaaaff; display: block; margin-bottom: 4px; font-size: 0.95em; }
+  .stars-bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .star { position: absolute; background: #fff; border-radius: 50%; animation: twinkle 3s ease-in-out infinite; }
+  @keyframes twinkle { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
+  .content { position: relative; z-index: 1; padding-bottom: 80px; }
+</style>
+</head>
+<body>
+<div class="stars-bg" id="starsBg"></div>
+<div class="content">
+  <h1>Shadow Clock</h1>
+  <p class="subtitle">Move the sun to see how shadows change through the day</p>
+  <div class="scene">
+    <svg class="scene-svg" id="svgScene" viewBox="0 0 600 320">
+      <defs>
+        <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1a3a1a"/>
+          <stop offset="100%" stop-color="#0a1a0a"/>
+        </linearGradient>
+        <linearGradient id="skyDay" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#0a0a2a"/>
+          <stop offset="100%" stop-color="#1a1a4a"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Sky -->
+      <rect width="600" height="250" fill="url(#skyDay)"/>
+
+      <!-- Stars (fade based on time) -->
+      <g id="stars" opacity="0.3">
+        <circle cx="50" cy="40" r="1.5" fill="#fff"/>
+        <circle cx="150" cy="80" r="1" fill="#fff"/>
+        <circle cx="250" cy="30" r="1.5" fill="#fff"/>
+        <circle cx="350" cy="70" r="1" fill="#fff"/>
+        <circle cx="450" cy="50" r="1.5" fill="#fff"/>
+        <circle cx="100" cy="120" r="1" fill="#fff"/>
+        <circle cx="500" cy="100" r="1" fill="#fff"/>
+      </g>
+
+      <!-- Horizon/ground -->
+      <rect x="0" y="250" width="600" height="70" fill="url(#groundGrad)"/>
+
+      <!-- Ground line -->
+      <line x1="0" y1="250" x2="600" y2="250" stroke="#2a4a2a" stroke-width="2"/>
+
+      <!-- Clock face numbers (appear based on shadow) -->
+      <g id="clockNums" opacity="0">
+        <text x="60" y="248" text-anchor="middle" fill="#aaa" font-size="14" font-weight="bold">6</text>
+        <text x="150" y="248" text-anchor="middle" fill="#aaa" font-size="14" font-weight="bold">9</text>
+        <text x="300" y="248" text-anchor="middle" fill="#aaa" font-size="14" font-weight="bold">12</text>
+        <text x="450" y="248" text-anchor="middle" fill="#aaa" font-size="14" font-weight="bold">3</text>
+        <text x="540" y="248" text-anchor="middle" fill="#aaa" font-size="14" font-weight="bold">6</text>
+      </g>
+
+      <!-- Gnomon (vertical stick) -->
+      <line id="gnomon" x1="300" y1="250" x2="300" y2="170" stroke="#8B4513" stroke-width="6" stroke-linecap="round"/>
+
+      <!-- Shadow line -->
+      <line id="shadowLine" x1="300" y1="250" x2="300" y2="250" stroke="rgba(30,30,60,0.8)" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- Sun (draggable) -->
+      <g id="sunGroup" style="cursor:grab">
+        <circle id="sunBody" cx="100" cy="50" r="35" fill="#FFD700"/>
+        <circle id="sunGlow" cx="100" cy="50" r="50" fill="rgba(255,220,50,0.12)"/>
+        <circle id="sunRays" cx="100" cy="50" r="65" fill="rgba(255,220,50,0.06)"/>
+      </g>
+
+      <!-- Time labels -->
+      <text id="timeLabel" x="300" y="285" text-anchor="middle" fill="#aaaaff" font-size="12">Morning</text>
+    </svg>
+  </div>
+  <div class="time-display">
+    <span>Time:</span>
+    <span class="time-val" id="timeVal">6:00 AM</span>
+  </div>
+  <div class="controls">
+    <button class="btn" id="btnMorning">Morning</button>
+    <button class="btn" id="btnNoon">Noon</button>
+    <button class="btn" id="btnEvening">Evening</button>
+    <div class="slider-wrap">
+      <label>6am</label>
+      <input type="range" id="timeSlider" min="0" max="100" value="0">
+      <label>6pm</label>
+    </div>
+  </div>
+  <p class="hint">Drag the sun or use the buttons to move it across the sky</p>
+  <div class="mission-card">
+    <strong>Real World Mission</strong>
+    Stand in the same spot in the morning and afternoon. Do you have two shadows?
+  </div>
+</div>
+<div class="fab-bar">
+  <div class="fab" id="fabHome" title="Home">🏠</div>
+  <div class="fab rabbity" id="fabRabbity" title="Rabbity">🐰
+    <div class="bubble" id="bubble">Before clocks existed, people used shadows to tell the time. What does your shadow look like at noon vs. morning?</div>
+  </div>
+  <div class="fab" id="fabParent" title="Parent">👤</div>
+</div>
+<script>
+(function() {
+  var svg = document.getElementById("svgScene");
+  var sunGroup = document.getElementById("sunGroup");
+  var gnomon = document.getElementById("gnomon");
+  var shadowLine = document.getElementById("shadowLine");
+  var timeVal = document.getElementById("timeVal");
+  var timeLabel = document.getElementById("timeLabel");
+  var clockNums = document.getElementById("clockNums");
+  var timeSlider = document.getElementById("timeSlider");
+  var stars = document.getElementById("stars");
+  var bubble = document.getElementById("bubble");
+
+  // Gnomon base position
+  var gx = 300, gy = 250;
+  var gnomonHeight = 80;
+  var arcRadiusX = 220;
+  var arcRadiusY = 180;
+  var arcCenterX = 300;
+  var arcCenterY = 250;
+
+  var timePercent = 0; // 0 = 6am, 50 = 12pm, 100 = 6pm
+
+  function timePercentToSunPos(p) {
+    // Arc from left side (6am, x=80) to right side (6pm, x=520) over arc
+    // The arc is a semicircle going upward
+    // p=0: left side (x=80, y=250-arcRadiusY=70)
+    // p=50: top (x=300, y=70)
+    // p=100: right side (x=520, y=250)
+    var angle = Math.PI - (p / 100) * Math.PI; // PI to 0
+    var sx = arcCenterX + arcRadiusX * Math.cos(angle);
+    var sy = arcCenterY - arcRadiusY * Math.sin(angle) + arcRadiusY;
+    return { x: sx, y: sy };
+  }
+
+  function timePercentToTime(p) {
+    var totalMinutes = 6 * 60 + (p / 100) * 12 * 60;
+    var h = Math.floor(totalMinutes / 60);
+    var m = Math.floor(totalMinutes % 60);
+    var ampm = h >= 12 ? "PM" : "AM";
+    if (h > 12) h -= 12;
+    if (h === 0) h = 12;
+    return h + ":" + (m < 10 ? "0" : "") + m + " " + ampm;
+  }
+
+  function timePercentToLabel(p) {
+    if (p < 30) return "Morning";
+    if (p < 70) return "Afternoon";
+    return "Evening";
+  }
+
+  function calculateShadow(sunX, sunY) {
+    // Shadow goes from gnomon base away from sun
+    var dx = sunX - gx;
+    var dy = sunY - gy;
+    // Direction from sun to gnomon base
+    var shadowDirX = gx - sunX;
+    var shadowDirY = gy - sunY;
+    var dist = Math.sqrt(dx * dx + dy * dy);
+    // Shadow length inversely proportional to sun height
+    var sunHeight = gy - sunY;
+    var shadowLength = 20 + (1 - sunHeight / (arcRadiusY * 2)) * 120;
+    if (sunHeight < 10) sunHeight = 10;
+    shadowLength = (gnomonHeight * dist) / sunHeight;
+    shadowLength = Math.max(20, Math.min(180, shadowLength));
+
+    var norm = 1 / Math.sqrt(shadowDirX * shadowDirX + shadowDirY * shadowDirY);
+    var sx2 = gx + shadowDirX * norm * shadowLength;
+    var sy2 = gy + shadowDirY * norm * shadowLength;
+
+    return { x2: sx2, y2: sy2, length: shadowLength };
+  }
+
+  function updateScene(p) {
+    timePercent = p;
+    var pos = timePercentToSunPos(p);
+    var sx = pos.x, sy = pos.y;
+
+    // Move sun
+    var dx = sx - 100;
+    var dy = sy - 50;
+    sunGroup.setAttribute("transform", "translate(" + dx + "," + dy + ")");
+
+    // Update shadow
+    var shadow = calculateShadow(sx, sy);
+    shadowLine.setAttribute("x2", shadow.x2);
+    shadowLine.setAttribute("y2", shadow.y2);
+
+    // Update gnomon
+    gnomon.setAttribute("y1", String(gy));
+    gnomon.setAttribute("y2", String(gy - gnomonHeight));
+    gnomon.setAttribute("x1", String(gx));
+    gnomon.setAttribute("x2", String(gx));
+
+    // Update time display
+    timeVal.textContent = timePercentToTime(p);
+    timeLabel.textContent = timePercentToLabel(p);
+
+    // Show clock numbers when shadow is short (near noon)
+    if (p > 40 && p < 60) {
+      clockNums.setAttribute("opacity", "0.5");
+    } else {
+      clockNums.setAttribute("opacity", "0");
+    }
+
+    // Stars opacity based on time
+    var starOpacity = 0;
+    if (p < 10 || p > 90) starOpacity = 0.8;
+    else if (p < 25 || p > 75) starOpacity = 0.3;
+    stars.setAttribute("opacity", starOpacity);
+
+    // Update slider
+    timeSlider.value = p;
+  }
+
+  // Dragging
+  var isDragging = false;
+
+  function getTimeFromEvent(e) {
+    var rect = svg.getBoundingClientRect();
+    var scaleX = 600 / rect.width;
+    var scaleY = 320 / rect.height;
+    var clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    var clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    var svgX = (clientX - rect.left) * scaleX;
+    var svgY = (clientY - rect.top) * scaleY;
+
+    // Map to time percent based on arc position
+    // Find closest point on arc
+    var bestP = 0;
+    var bestDist = Infinity;
+    for (var p = 0; p <= 100; p += 2) {
+      var pos = timePercentToSunPos(p);
+      var d = Math.sqrt((pos.x - svgX) * (pos.x - svgX) + (pos.y - svgY) * (pos.y - svgY));
+      if (d < bestDist) {
+        bestDist = d;
+        bestP = p;
+      }
+    }
+    return bestP;
+  }
+
+  sunGroup.addEventListener("mousedown", function(e) {
+    isDragging = true;
+    e.preventDefault();
+  });
+  sunGroup.addEventListener("touchstart", function(e) {
+    isDragging = true;
+    e.preventDefault();
+  }, { passive: false });
+
+  document.addEventListener("mousemove", function(e) {
+    if (!isDragging) return;
+    var p = getTimeFromEvent(e);
+    updateScene(p);
+  });
+  document.addEventListener("touchmove", function(e) {
+    if (!isDragging) return;
+    e.preventDefault();
+    var p = getTimeFromEvent(e);
+    updateScene(p);
+  }, { passive: false });
+
+  document.addEventListener("mouseup", function() { isDragging = false; });
+  document.addEventListener("touchend", function() { isDragging = false; });
+
+  // Buttons
+  document.getElementById("btnMorning").addEventListener("click", function() {
+    updateScene(5);
+  });
+  document.getElementById("btnNoon").addEventListener("click", function() {
+    updateScene(50);
+  });
+  document.getElementById("btnEvening").addEventListener("click", function() {
+    updateScene(95);
+  });
+
+  timeSlider.addEventListener("input", function() {
+    updateScene(parseInt(timeSlider.value, 10));
+  });
+
+  document.getElementById("fabHome").addEventListener("click", function() {
+    if (window.parent && window.parent.navigate) window.parent.navigate("home");
+  });
+  document.getElementById("fabParent").addEventListener("click", function() {
+    alert("Shadows change throughout the day because the sun moves across the sky. In the morning and evening, the sun is low and makes long shadows. At noon, the sun is directly above, making the shortest shadow. Ancient people used this to tell time — they built sundials!");
+  });
+  document.getElementById("fabRabbity").addEventListener("click", function() {
+    bubble.classList.toggle("show");
+  });
+  document.addEventListener("click", function(e) {
+    if (!document.getElementById("fabRabbity").contains(e.target)) {
+      bubble.classList.remove("show");
+    }
+  });
+
+  (function genStars() {
+    var bg = document.getElementById("starsBg");
+    for (var i = 0; i < 80; i++) {
+      var s = document.createElement("div");
+      s.className = "star";
+      s.style.left = Math.random() * 100 + "%";
+      s.style.top = Math.random() * 100 + "%";
+      s.style.width = s.style.height = (Math.random() * 2 + 1) + "px";
+      s.style.animationDelay = Math.random() * 3 + "s";
+      bg.appendChild(s);
+    }
+  })();
+
+  updateScene(5);
+
+  window.MISSIONS = window.MISSIONS || {};
+  Object.assign(window.MISSIONS, {
+    "shadow-clock": {
+      title: "Shadow Clock — Real World Mission",
+      adult: "What you might say: Shadows are caused by objects blocking light. The sun\'s position in the sky determines shadow direction and length. At noon, shadows point straight down (or north in the southern hemisphere) and are shortest. In the morning, shadows point west and are long. In the afternoon, they point east and are long again.",
+      safety: "No physical risks. Remind children never to look directly at the sun, even during this simulation.",
+      askNext: "Can you make a shadow with your hand? How does its shape change when you move closer to a lamp?",
+      finish: "Great shadow science! Now you understand why shadows move throughout the day — and how ancient people used this to tell time before clocks existed."
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>States of Matter — Belajar Aya</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a1a; color: #e0e0ff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; min-height: 100vh; overflow-x: hidden; }
+  h1 { font-size: 1.8em; text-align: center; padding: 20px 16px 4px; color: #fff; }
+  .subtitle { text-align: center; font-size: 0.85em; color: #8888cc; padding: 0 16px 12px; font-style: italic; }
+  .scene { position: relative; width: 100%; max-width: 600px; margin: 0 auto; }
+  #canvas { display: block; width: 100%; height: 280px; border-radius: 12px; margin: 0 16px; width: calc(100% - 32px); background: #050520; }
+  .controls { display: flex; justify-content: center; gap: 12px; padding: 12px; flex-wrap: wrap; align-items: center; }
+  .slider-wrap { display: flex; align-items: center; gap: 10px; font-size: 0.85em; }
+  .slider-wrap label { color: #aaa; white-space: nowrap; }
+  input[type="range"] { -webkit-appearance: none; width: 200px; height: 6px; border-radius: 3px; background: linear-gradient(to right, #2244aa, #44aacc, #ff4422); outline: none; cursor: pointer; }
+  input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; border-radius: 50%; background: #fff; border: 2px solid #4a4a8a; cursor: pointer; }
+  .state-label { text-align: center; font-size: 1.3em; font-weight: 700; padding: 8px; min-height: 50px; display: flex; align-items: center; justify-content: center; }
+  .hint { text-align: center; font-size: 0.8em; color: #6688cc; padding: 4px 16px 16px; }
+  .fab-bar { position: fixed; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: rgba(10,10,26,0.95); border-top: 1px solid #2a2a5a; z-index: 100; }
+  .fab { font-size: 1.4em; background: linear-gradient(135deg,#2a2a5a,#1a1a3a); border: 1px solid #4a4a8a; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.2s; }
+  .fab:hover { background: linear-gradient(135deg,#3a3a7a,#2a2a5a); }
+  .fab.rabbity { position: relative; border-radius: 50% 50% 50% 10px; }
+  .bubble { position: absolute; bottom: 60px; right: 0; background: #1a1a3a; border: 1px solid #4a4a8a; border-radius: 16px 16px 4px 16px; padding: 12px 16px; max-width: 260px; font-size: 0.88em; line-height: 1.4; color: #c0c0e0; display: none; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+  .bubble.show { display: block; }
+  .bubble::after { content: ""; position: absolute; bottom: -8px; right: 16px; width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #4a4a8a; }
+  .mission-card { background: rgba(30,30,70,0.8); border: 1px solid #3a3a7a; border-radius: 12px; margin: 0 16px 80px; padding: 14px 18px; font-size: 0.82em; color: #aaaaff; line-height: 1.5; }
+  .mission-card strong { color: #aaaaff; display: block; margin-bottom: 4px; font-size: 0.95em; }
+  .stars-bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .star { position: absolute; background: #fff; border-radius: 50%; animation: twinkle 3s ease-in-out infinite; }
+  @keyframes twinkle { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
+  .content { position: relative; z-index: 1; padding-bottom: 80px; }
+</style>
+</head>
+<body>
+<div class="stars-bg" id="starsBg"></div>
+<div class="content">
+  <h1>States of Matter</h1>
+  <p class="subtitle">Watch particles change as temperature rises and falls</p>
+  <div class="scene">
+    <canvas id="canvas" width="600" height="280"></canvas>
+  </div>
+  <div class="controls">
+    <div class="slider-wrap">
+      <label>Cold</label>
+      <input type="range" id="tempSlider" min="0" max="100" value="10">
+      <label>Hot</label>
+    </div>
+  </div>
+  <div class="state-label" id="stateLabel">Solid — Particles vibrate in place</div>
+  <p class="hint">Move the slider to change temperature and watch particles change their behavior</p>
+  <div class="mission-card">
+    <strong>Real World Mission</strong>
+    Put an ice cube in a glass of water. Does it float or sink? Why?
+  </div>
+</div>
+<div class="fab-bar">
+  <div class="fab" id="fabHome" title="Home">🏠</div>
+  <div class="fab rabbity" id="fabRabbity" title="Rabbity">🐰
+    <div class="bubble" id="bubble">Why does ice float? Water is heavier as a liquid than as a solid.</div>
+  </div>
+  <div class="fab" id="fabParent" title="Parent">👤</div>
+</div>
+<script>
+(function() {
+  var canvas = document.getElementById("canvas");
+  var ctx = canvas.getContext("2d");
+  var tempSlider = document.getElementById("tempSlider");
+  var stateLabel = document.getElementById("stateLabel");
+  var bubble = document.getElementById("bubble");
+
+  // High-DPI
+  function resizeCanvas() {
+    var rect = canvas.getBoundingClientRect();
+    var dpr = window.devicePixelRatio || 1;
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.scale(dpr, dpr);
+    canvas.style.height = rect.height + "px";
+  }
+  resizeCanvas();
+  window.addEventListener("resize", resizeCanvas);
+
+  var temperature = 10;
+  var particles = [];
+  var NUM_PARTICLES = 60;
+
+  // Grid positions for solid state
+  var gridPositions = [];
+
+  function initParticles() {
+    particles = [];
+    var rect = canvas.getBoundingClientRect();
+    var w = rect.width;
+    var h = rect.height;
+    var cols = 10;
+    var rows = 6;
+    var spacingX = (w - 60) / (cols - 1);
+    var spacingY = (h - 60) / (rows - 1);
+    gridPositions = [];
+
+    for (var i = 0; i < NUM_PARTICLES; i++) {
+      var col = i % cols;
+      var row = Math.floor(i / cols);
+      var gx = 30 + col * spacingX;
+      var gy = 30 + row * spacingY;
+      gridPositions.push({ x: gx, y: gy });
+
+      particles.push({
+        x: gx,
+        y: gy,
+        vx: 0,
+        vy: 0,
+        gridX: gx,
+        gridY: gy,
+        radius: 8,
+        angle: Math.random() * Math.PI * 2
+      });
+    }
+  }
+
+  function getParticleColor(p, temp) {
+    // Cold = blue, medium = teal, hot = orange/red
+    if (temp < 35) {
+      var t = temp / 35;
+      var r = Math.floor(50 + t * 50);
+      var g = Math.floor(100 + t * 150);
+      var b = Math.floor(220 - t * 50);
+      return "rgb(" + r + "," + g + "," + b + ")";
+    } else {
+      var t = (temp - 35) / 65;
+      var r = Math.floor(200 + t * 55);
+      var g = Math.floor(200 - t * 100);
+      var b = Math.floor(50 + t * 50);
+      return "rgb(" + r + "," + g + "," + b + ")";
+    }
+  }
+
+  function updateState() {
+    var t = temperature;
+    var label, color;
+    if (t < 25) {
+      label = "Solid — Particles vibrate in place";
+      color = "#4488ff";
+    } else if (t < 55) {
+      label = "Liquid — Particles move freely but stay together";
+      color = "#44cccc";
+    } else {
+      label = "Gas — Particles spread out and fill the space";
+      color = "#ff6644";
+    }
+    stateLabel.textContent = label;
+    stateLabel.style.color = color;
+  }
+
+  function updateParticles() {
+    var rect = canvas.getBoundingClientRect();
+    var w = rect.width;
+    var h = rect.height;
+    var t = temperature;
+
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
+      var gp = gridPositions[i];
+
+      if (t < 25) {
+        // Solid: vibrate around grid position
+        var intensity = 0.5 + (t / 25) * 1.5;
+        p.x = gp.x + Math.sin(p.angle * 8 + i) * intensity;
+        p.y = gp.y + Math.cos(p.angle * 6 + i) * intensity;
+        p.vx = 0;
+        p.vy = 0;
+      } else if (t < 55) {
+        // Melting: transition from solid to liquid
+        var meltFactor = (t - 25) / 30;
+        // Move toward grid but with increasing randomness
+        var targetX = gp.x + (Math.random() - 0.5) * (30 + meltFactor * 50);
+        var targetY = gp.y + (Math.random() - 0.5) * (30 + meltFactor * 50);
+        p.vx = (targetX - p.x) * 0.05;
+        p.vy = (targetY - p.y) * 0.05;
+        p.x += p.vx;
+        p.y += p.vy;
+        // Keep in bounds
+        if (p.x < 15) p.x = 15;
+        if (p.x > w - 15) p.x = w - 15;
+        if (p.y < 15) p.y = 15;
+        if (p.y > h - 15) p.y = h - 15;
+      } else {
+        // Gas: fast random movement
+        var speed = 1 + (t - 55) / 45 * 3;
+        p.vx += (Math.random() - 0.5) * speed;
+        p.vy += (Math.random() - 0.5) * speed;
+        // Damping
+        p.vx *= 0.95;
+        p.vy *= 0.95;
+        p.x += p.vx;
+        p.y += p.vy;
+        // Bounce off edges
+        if (p.x < 15) { p.x = 15; p.vx = Math.abs(p.vx); }
+        if (p.x > w - 15) { p.x = w - 15; p.vx = -Math.abs(p.vx); }
+        if (p.y < 15) { p.y = 15; p.vy = Math.abs(p.vy); }
+        if (p.y > h - 15) { p.y = h - 15; p.vy = -Math.abs(p.vy); }
+      }
+
+      p.angle += 0.02 + t * 0.001;
+    }
+  }
+
+  function drawParticles() {
+    var rect = canvas.getBoundingClientRect();
+    var w = rect.width;
+    var h = rect.height;
+
+    ctx.clearRect(0, 0, w, h);
+
+    // Draw container
+    ctx.strokeStyle = "rgba(80,80,160,0.3)";
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.roundRect(10, 10, w - 20, h - 20, 8);
+    ctx.stroke();
+
+    for (var i = 0; i < particles.length; i++) {
+      var p = particles[i];
+      var color = getParticleColor(p, temperature);
+
+      // Glow for hot particles
+      if (temperature > 60) {
+        var glow = (temperature - 60) / 40 * 0.3;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius + 4, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(255,100,50," + glow + ")";
+        ctx.fill();
+      }
+
+      // Particle body
+      var grad = ctx.createRadialGradient(p.x - 2, p.y - 2, 1, p.x, p.y, p.radius);
+      grad.addColorStop(0, "#ffffff");
+      grad.addColorStop(0.3, color);
+      grad.addColorStop(1, color.replace("rgb", "rgba").replace(")", ",0.8)"));
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fillStyle = grad;
+      ctx.fill();
+    }
+
+    // Temperature indicator
+    ctx.fillStyle = "rgba(200,200,255,0.5)";
+    ctx.font = "12px -apple-system, sans-serif";
+    ctx.fillText("Temp: " + temperature + "°", 18, h - 18);
+  }
+
+  function loop() {
+    updateParticles();
+    drawParticles();
+    requestAnimationFrame(loop);
+  }
+
+  tempSlider.addEventListener("input", function() {
+    temperature = parseInt(tempSlider.value, 10);
+    updateState();
+  });
+
+  document.getElementById("fabHome").addEventListener("click", function() {
+    if (window.parent && window.parent.navigate) window.parent.navigate("home");
+  });
+  document.getElementById("fabParent").addEventListener("click", function() {
+    alert("All matter is made of tiny particles! In a solid, particles are packed tightly and only vibrate. In a liquid, they move around each other. In a gas, they zoom around freely. Temperature controls how fast particles move — that\'s why heating water makes it evaporate!");
+  });
+  document.getElementById("fabRabbity").addEventListener("click", function() {
+    bubble.classList.toggle("show");
+  });
+  document.addEventListener("click", function(e) {
+    if (!document.getElementById("fabRabbity").contains(e.target)) {
+      bubble.classList.remove("show");
+    }
+  });
+
+  (function genStars() {
+    var bg = document.getElementById("starsBg");
+    for (var i = 0; i < 80; i++) {
+      var s = document.createElement("div");
+      s.className = "star";
+      s.style.left = Math.random() * 100 + "%";
+      s.style.top = Math.random() * 100 + "%";
+      s.style.width = s.style.height = (Math.random() * 2 + 1) + "px";
+      s.style.animationDelay = Math.random() * 3 + "s";
+      bg.appendChild(s);
+    }
+  })();
+
+  initParticles();
+  updateState();
+  loop();
+
+  window.MISSIONS = window.MISSIONS || {};
+  Object.assign(window.MISSIONS, {
+    "states-of-matter": {
+      title: "States of Matter — Real World Mission",
+      adult: "What you might say: When water freezes into ice, the molecules actually spread apart a little — that\'s why ice floats! Most things get heavier (denser) when they freeze, but water is special. This is why lakes freeze from the top down, not the bottom up — and why fish can survive under the ice!",
+      safety: "No physical risks from this simulation. For the real experiment with ice cubes, supervise young children to ensure they don\'t put ice in their mouths unsupervised.",
+      askNext: "Can you think of other materials that change state when heated or cooled? What about butter melting?",
+      finish: "You now understand why ice floats and why steam rises! The same molecules behave differently depending on how fast they\'re moving."
+    }
+  });
+})();
+</script>
+</body>
+</html>
