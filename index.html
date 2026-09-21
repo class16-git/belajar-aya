@@ -268,7 +268,7 @@ var STORAGE_VERSION = 1;
 var STORAGE_KEYS = [
   "aya-profile", "aya-progress-v1",
   "skip-progress", "math-progress", "language-progress",
-  "sens-progress", "pl-progress", "culture-progress", "fgl-progress"
+  "sens-progress", "pl-progress", "culture-progress", "fgl-progress", "explore-progress"
 ];
 
 function lg(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
@@ -887,7 +887,7 @@ var PRIMARY = [
 // ─────────────────────────────────────────────
 // MISSIONS — offline real-world activities
 // ─────────────────────────────────────────────
-var MISSIONS = [
+var DAILY_MISSION_TIPS = [
   "Sort objects by size, shape, or color",
   "Count steps from the bedroom to the kitchen",
   "Find three things that are longer than your hand",
@@ -898,13 +898,6 @@ var MISSIONS = [
   "Water a plant and watch what happens",
   "Find a shape hidden in the room",
   "Set the table for two people",
-  {
-    id:"explore", emoji:"&#127757;", color:"#00BCD4",
-    name:"Exploration Lab",
-    desc:"Interactive science simulations — see how the world works",
-    file:"explore.html",
-    progKey:"explore-progress", total:10
-  },
 ];
 
 // ─────────────────────────────────────────────
@@ -999,7 +992,7 @@ function renderPrimary(){
 
 function renderMissions(){
   var list = document.getElementById("missions-list");
-  var shuffled = MISSIONS.slice().sort(function(){return Math.random()-0.5;});
+  var shuffled = DAILY_MISSION_TIPS.slice().sort(function(){return Math.random()-0.5;});
   var pick = shuffled.slice(0,2);
   list.innerHTML = pick.map(function(m){
     return '<div class="mission-item"><div class="mission-dot"></div>'+m+'</div>';
