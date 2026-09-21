@@ -161,7 +161,28 @@ body{
 /* Release accessibility baseline */
 :focus-visible{outline:3px solid #FFD700!important;outline-offset:3px!important}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
-</style>
+    /* Daily Wow */
+    .dw-card{
+      background:linear-gradient(135deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02));
+      border:1.5px solid #FFD54F55;border-radius:18px;padding:16px;margin-bottom:4px;
+    }
+    .dw-top{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+    .dw-emoji{font-size:1.5rem}
+    .dw-topic{font-family:"Fredoka One",system-ui,sans-serif;font-size:.8rem;
+      color:#FFD54F;letter-spacing:.08em;text-transform:uppercase}
+    .dw-fact{font-size:.9rem;line-height:1.55;opacity:.92;margin-bottom:10px}
+    .dw-more{margin:4px 0 10px}
+    .dw-row{font-size:.8rem;line-height:1.5;opacity:.75;margin-bottom:8px}
+    .dw-label{display:block;font-size:.65rem;font-weight:700;letter-spacing:.06em;
+      text-transform:uppercase;opacity:.6;margin-bottom:2px}
+    .dw-sim{display:inline-block;margin-top:4px;color:#00BCD4;font-size:.8rem;
+      font-weight:700;text-decoration:none;padding:8px 14px;border:1px solid #00BCD455;
+      border-radius:12px}
+    .dw-btn{width:100%;background:rgba(255,213,79,0.15);border:1px solid rgba(255,213,79,0.4);
+      color:#FFD54F;font-family:inherit;font-size:.85rem;font-weight:700;
+      padding:11px;border-radius:13px;cursor:pointer}
+    .dw-btn:active{transform:scale(.97)}
+  </style>
 </head>
 <body>
 
@@ -893,6 +914,7 @@ function init(){
   genStars();
   loadProfile();
   renderPrimary();
+  renderDailyWow();
   renderMissions();
   checkSharedDevice();
   if(!profile.name){
