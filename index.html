@@ -206,6 +206,13 @@ body{
 
   <div class="scroll-area">
 
+    <!-- Daily Wow -->
+    <div class="section" id="daily-wow-section" style="display:none">
+      <h2 class="section-label">Daily Wow</h2>
+      <div id="daily-wow-card"></div>
+      <a href="wow.html" style="display:inline-block;margin-top:6px;font-size:.72rem;color:#26C6DA;text-decoration:none;font-weight:700">🔭 See all past wows →</a>
+    </div>
+
     <!-- Primary Curriculum -->
     <div class="section">
       <h2 class="section-label">Primary Curriculum</h2>
@@ -259,6 +266,7 @@ body{
 
 <div class="confetti" id="confetti"></div>
 
+<script src="daily-wow.js"></script>
 <script>
 // ─────────────────────────────────────────────
 // PROFILE + VERSIONED STORAGE
@@ -988,6 +996,57 @@ function renderPrimary(){
     }
     grid.appendChild(card);
   });
+}
+
+// ─────────────────────────────────────────────
+// DAILY WOW — today's discovery, synced from Papa's morning briefing
+// ─────────────────────────────────────────────
+function renderDailyWow(){
+  var section = document.getElementById("daily-wow-section");
+  var card = document.getElementById("daily-wow-card");
+  if(!section || !card) return;
+  if(typeof window.DAILY_WOW === "undefined" || !window.DAILY_WOW || !window.DAILY_WOW.fact){
+    section.style.display = "none";
+    return;
+  }
+  var d = window.DAILY_WOW;
+  var today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Jakarta" });
+  if(d.date !== today){
+    section.style.display = "none";
+    return;
+  }
+  var store = {};
+  try{ store = JSON.parse(localStorage.getItem("dailywow-open") || "{}"); }catch(e){}
+  var isOpen = store[d.date] === true;
+  var simLink = d.sim ? '<a class="dw-sim" href="' + d.sim + '">Explore it →</a>' : "";
+  card.innerHTML =
+    '<div class="dw-card" style="border-color:' + d.color + '55">' +
+      '<div class="dw-top">' +
+        '<span class="dw-emoji">' + d.emoji + '</span>' +
+        '<span class="dw-topic">' + d.topic + '</span>' +
+      '</div>' +
+      '<div class="dw-fact">' + d.fact + '</div>' +
+      (isOpen ?
+        '<div class="dw-more">' +
+          '<div class="dw-row"><span class="dw-label">🤔 Ask her</span>' + d.ask + '</div>' +
+          '<div class="dw-row"><span class="dw-label">💡 Hint</span>' + d.hint + '</div>' +
+          '<div class="dw-row"><span class="dw-label">🔎 Try this</span>' + d.trythis + '</div>' +
+          '<div class="dw-row"><span class="dw-label">🧠 For you</span>' + d.kid + '</div>' +
+          simLink +
+        '</div>' +
+        '<button class="dw-btn" onclick="toggleWow(\'' + d.date + '\',false)">Show less</button>'
+      :
+        '<button class="dw-btn" onclick="toggleWow(\'' + d.date + '\',true)">Open the wow</button>'
+      ) +
+    '</div>';
+  section.style.display = "block";
+}
+function toggleWow(date, openState){
+  var store = {};
+  try{ store = JSON.parse(localStorage.getItem("dailywow-open") || "{}"); }catch(e){}
+  store[date] = openState;
+  try{ localStorage.setItem("dailywow-open", JSON.stringify(store)); }catch(e){}
+  renderDailyWow();
 }
 
 function renderMissions(){
