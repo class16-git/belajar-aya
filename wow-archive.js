@@ -10,5 +10,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Test try.",
   "kid": "Test kid answer.",
   "sim": "gravity-orbits.html"
+ },
+ {
+  "date": "2026-09-21",
+  "topic": "Space",
+  "emoji": "🪐",
+  "fact": "Saturn would float on water. If you had a bathtub filled with water and dropped Saturn in... it would sit on top instead of sinking! That's because Saturn is mostly made of gas — it's lighter than water, even though it looks huge.",
+  "ask": "A planet made of gas floating on water? What do you think Saturn is mostly made of?",
+  "hint": "If it floats on water, it must be lighter than water. What gas is very light?",
+  "trythis": "Pour oil into water and watch — oil floats too! Find other things that float and sink.",
+  "kid": "Imagine a balloon filled with air — it floats on water, right? Saturn is like a GIANT balloon filled with air and other light gases, floating in a cosmic bathtub. It's so light that if you put it in water, it would bob like a beach ball!",
+  "sim": "gravity-orbits.html"
  }
 ];
