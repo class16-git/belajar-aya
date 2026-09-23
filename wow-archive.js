@@ -10,5 +10,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Pour oil into water and watch — oil floats too! Find other things that float and sink.",
   "kid": "Imagine a balloon filled with air — it floats on water, right? Saturn is like a GIANT balloon filled with air and other light gases, floating in a cosmic bathtub. It's so light that if you put it in water, it would bob like a beach ball!",
   "sim": "gravity-orbits.html"
+ },
+ {
+  "date": "2026-09-23",
+  "topic": "Animals",
+  "emoji": "🐦",
+  "fact": "Crows can remember human faces for years. If a crow doesn't like you, it will teach its children to not like you too. And if you help a crow? That crow will remember you AND tell other crows about you. They hold grudges AND friendships across generations!",
+  "ask": "If a crow can hold a grudge AND teach its kids about you... do you think animals are smarter than we think?",
+  "hint": "Most animals don't teach their children about specific humans. Crows do.",
+  "trythis": "Next time you see a crow, try to remember its face — see if it remembers yours.",
+  "kid": "Crows are like feathered detectives. They watch your face carefully — if you're mean, they'll remember. If you're kind, they'll remember AND tell their crow friends. Scientists did an experiment: they wore masks and some 'helped' the crows and some 'bothered' the crows. The baby crows grew up already knowing which mask was the bad one!",
+  "sim": "food-chain.html"
  }
 ];
