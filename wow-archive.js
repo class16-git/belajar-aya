@@ -21,5 +21,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Next time you see a crow, try to remember its face — see if it remembers yours.",
   "kid": "Crows are like feathered detectives. They watch your face carefully — if you're mean, they'll remember. If you're kind, they'll remember AND tell their crow friends. Scientists did an experiment: they wore masks and some 'helped' the crows and some 'bothered' the crows. The baby crows grew up already knowing which mask was the bad one!",
   "sim": "food-chain.html"
+ },
+ {
+  "date": "2026-09-24",
+  "topic": "Nature",
+  "emoji": "🌊",
+  "fact": "There is a tiny lake in the Philippines that has more unique fish species than the entire Atlantic Ocean. Lake Taal has over 100 fish species found NOWHERE else on Earth. The whole Atlantic Ocean only has about 20 freshwater fish species total!",
+  "ask": "A tiny lake has more special fish than the whole ocean. How is that possible?",
+  "hint": "Islands and lakes cut off from the rest of the world create their own tiny ecosystems.",
+  "trythis": "Look at a map of the Philippines. How many lakes can you find?",
+  "kid": "The Philippines used to be connected to land — but the ocean rose and created islands with lakes inside them. Fish in those lakes got trapped and evolved separately over millions of years, becoming completely new species! It's like putting some fish in a bowl and leaving them for a million years — they'd become different from fish outside the bowl!",
+  "sim": "water-cycle.html"
  }
 ];
