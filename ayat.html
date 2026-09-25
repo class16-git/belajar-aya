@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belajar Aya — Ayat</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07071A;--card:#12123A;--card2:#1a1a40;
+  --gold:#FFD700;--cyan:#26C6DA;--cream:#FFF8F0;--green:#81C784;
+  --font-h:'Fredoka One',cursive;--font-b:'Quicksand',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);font-family:var(--font-b);color:var(--cream);min-height:100dvh;-webkit-tap-highlight-color:transparent}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.star{position:absolute;background:#fff;border-radius:50%}
+.wrap{position:relative;z-index:1;max-width:640px;margin:0 auto;padding:20px 16px 60px}
+.tbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.tbar-title{font-family:var(--font-h);font-size:1rem;color:var(--gold)}
+.back{display:inline-block;padding:8px 14px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:var(--cream);text-decoration:none;font-size:.8rem;font-weight:700}
+h1{font-family:var(--font-h);font-size:1.5rem;color:var(--gold);text-align:center;margin:6px 0 2px}
+.sub{font-size:.8rem;opacity:.55;text-align:center;margin-bottom:22px}
+.ayah-card{background:var(--card);border-radius:16px;padding:16px;margin-bottom:12px;box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.ayah-head{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.ayah-emoji{font-size:1.4rem}
+.ayah-ref{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green)}
+.ayah-date{margin-left:auto;font-size:.65rem;opacity:.45}
+.arabic{font-size:1.35rem;line-height:2.1;text-align:right;direction:rtl;margin:6px 0 12px;color:#FFF8F0}
+.trans{font-size:.85rem;line-height:1.6;opacity:.85;font-style:italic}
+.tsrc{font-size:.65rem;opacity:.5;margin-top:4px}
+.ayah-more{display:none;margin-top:12px;border-top:1px solid rgba(255,255,255,.08);padding-top:12px}
+.ayah-card.open .ayah-more{display:block}
+.ayah-row{font-size:.82rem;line-height:1.55;opacity:.8;margin-bottom:10px}
+.ayah-label{display:block;font-size:.62rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.6;margin-bottom:3px}
+.ayah-idea{font-size:.9rem;line-height:1.6;opacity:.95;margin-bottom:10px}
+.ayah-q{background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.3);border-radius:12px;padding:11px;font-size:.85rem;font-style:italic;color:var(--gold);margin-bottom:10px;line-height:1.5}
+.ayah-src{font-size:.68rem;opacity:.45;line-height:1.5}
+.ayah-toggle{width:100%;margin-top:12px;background:rgba(129,199,132,.14);border:1px solid rgba(129,199,132,.4);color:var(--green);font-family:inherit;font-size:.8rem;font-weight:700;padding:10px;border-radius:11px;cursor:pointer}
+.ayah-toggle:active{transform:scale(.98)}
+.empty{text-align:center;opacity:.5;font-size:.85rem;padding:40px 0}
+:focus-visible{outline:3px solid var(--gold)!important;outline-offset:3px!important}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+<div class="stars" id="stars"></div>
+<div class="wrap">
+  <div class="tbar">
+    <a class="back" href="index.html">← Home</a>
+    <div class="tbar-title">Belajar Aya</div>
+  </div>
+  <h1>🌙 Ayat</h1>
+  <div class="sub">One ayah at a time. Read it, think about it, try it today.</div>
+  <div id="list"></div>
+</div>
+<script src="ayat.js"></script>
+<script>
+function genStars(){
+  var s=document.getElementById("stars"),h="";
+  for(var i=0;i<60;i++){
+    var sz=Math.random()*2+1;
+    h+='<div class="star" style="width:'+sz+'px;height:'+sz+'px;left:'+(Math.random()*100)+'%;top:'+(Math.random()*100)+'%;opacity:'+(Math.random()*0.7+0.15)+'"></div>';
+  }
+  s.innerHTML=h;
+}
+function toggleAyah(el){
+  el.classList.toggle("open");
+  var b=el.querySelector(".ayah-toggle");
+  b.innerHTML=el.classList.contains("open")?"Show less":"Open this ayah";
+}
+function render(){
+  var box=document.getElementById("list");
+  if(typeof window.AYAT_POSTS==="undefined"||!window.AYAT_POSTS.length){
+    box.innerHTML='<div class="empty">No ayat yet — come back soon!</div>';
+    return;
+  }
+  var items=window.AYAT_POSTS.slice().sort(function(a,b){return a.date<b.date?1:-1;});
+  var h="";
+  items.forEach(function(p){
+    h+='<article class="ayah-card">';
+    h+='<div class="ayah-head"><span class="ayah-emoji">'+p.emoji+'</span><span class="ayah-ref">'+p.ref+'</span><span class="ayah-date">'+p.date+'</span></div>';
+    h+='<div class="arabic">'+p.arabic+'</div>';
+    h+='<div class="trans">&ldquo;'+p.translation+'&rdquo;</div>';
+    h+='<div class="tsrc">'+p.translation_source+'</div>';
+    h+='<div class="ayah-more">';
+    h+='<div class="ayah-idea"><span class="ayah-label">One idea</span>'+p.idea+'</div>';
+    h+='<div class="ayah-q"><span class="ayah-label">Ask</span>'+p.ask+'</div>';
+    if(p.hint){h+='<div class="ayah-row"><span class="ayah-label">Hint</span>'+p.hint+'</div>';}
+    h+='<div class="ayah-row"><span class="ayah-label">Try this today</span>'+p.trythis+'</div>';
+    if(p.papa){h+='<div class="ayah-row"><span class="ayah-label">For the grown-up</span>'+p.papa+'</div>';}
+    if(p.sources&&p.sources.length){
+      h+='<div class="ayah-src"><span class="ayah-label">Sources</span>'+p.sources.map(function(s){return "• "+s;}).join("<br>")+'</div>';
+    }
+    h+='</div>';
+    h+='<button type="button" class="ayah-toggle" aria-label="Open this ayah" onclick="toggleAyah(this.parentNode)">Open this ayah</button>';
+    h+='</article>';
+  });
+  box.innerHTML=h;
+}
+genStars();
+render();
+</script>
+</body>
+</html>

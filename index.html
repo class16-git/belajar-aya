@@ -213,6 +213,13 @@ body{
       <a href="wow.html" style="display:inline-block;margin-top:6px;font-size:.72rem;color:#26C6DA;text-decoration:none;font-weight:700">🔭 See all past wows →</a>
     </div>
 
+    <!-- Ayat -->
+    <div class="section">
+      <h2 class="section-label">Ayat</h2>
+      <div id="ayat-card"></div>
+      <a href="ayat.html" style="display:inline-block;margin-top:6px;font-size:.72rem;color:#81C784;text-decoration:none;font-weight:700">🌙 See all ayat →</a>
+    </div>
+
     <!-- Primary Curriculum -->
     <div class="section">
       <h2 class="section-label">Primary Curriculum</h2>
@@ -267,6 +274,7 @@ body{
 <div class="confetti" id="confetti"></div>
 
 <script src="daily-wow.js"></script>
+<script src="ayat.js"></script>
 <script>
 // ─────────────────────────────────────────────
 // PROFILE + VERSIONED STORAGE
@@ -1001,6 +1009,21 @@ function renderPrimary(){
 // ─────────────────────────────────────────────
 // DAILY WOW — today's discovery, synced from Papa's morning briefing
 // ─────────────────────────────────────────────
+function renderAyat(){
+  var box = document.getElementById("ayat-card");
+  if(!box) return;
+  if(typeof window.AYAT_POSTS === "undefined" || !window.AYAT_POSTS.length) return;
+  var p = window.AYAT_LATEST || window.AYAT_POSTS[0];
+  box.innerHTML = '<div class="dw-card">' +
+    '<div class="dw-top"><span class="dw-emoji">' + p.emoji + '</span>' +
+    '<span class="dw-topic">' + p.ref + '</span></div>' +
+    '<div class="dw-fact">' + p.idea + '</div>' +
+    '<div class="dw-row"><span class="dw-label">Ask</span>' + p.ask + '</div>' +
+    '<a href="ayat.html" style="display:inline-block;margin-top:8px;color:#81C784;font-size:.78rem;font-weight:700;text-decoration:none">🌙 Open this ayah →</a>' +
+    '</div>';
+}
+if(document.readyState !== "loading"){ renderAyat(); } else { document.addEventListener("DOMContentLoaded", renderAyat); }
+
 function renderDailyWow(){
   var section = document.getElementById("daily-wow-section");
   var card = document.getElementById("daily-wow-card");
