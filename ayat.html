@@ -57,7 +57,7 @@ h1{font-family:var(--font-h);font-size:1.5rem;color:var(--gold);text-align:cente
   <div class="sub">One ayah at a time. Read it, think about it, try it today.</div>
   <div id="list"></div>
 </div>
-<script src="ayat.js"></script>
+<script src="ayat.js?v=20260925"></script>
 <script>
 function genStars(){
   var s=document.getElementById("stars"),h="";
@@ -78,7 +78,7 @@ function render(){
     box.innerHTML='<div class="empty">No ayat yet — come back soon!</div>';
     return;
   }
-  var items=window.AYAT_POSTS.slice().sort(function(a,b){return a.date<b.date?1:-1;});
+  var items=window.AYAT_POSTS.slice().sort(function(a,b){return a.date===b.date?0:(a.date<b.date?1:-1);});
   var h="";
   items.forEach(function(p){
     h+='<article class="ayah-card">';
