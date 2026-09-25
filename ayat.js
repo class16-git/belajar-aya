@@ -6,6 +6,21 @@
 window.AYAT_POSTS = [
  {
   "date": "2026-09-25",
+  "ref": "49:13",
+  "emoji": "🌍",
+  "color": "#4FC3F7",
+  "arabic": "يَـٰٓأَيُّهَا ٱلنَّاسُ إِنَّا خَلَقْنَـٰكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَـٰكُمْ شُعُوبًا وَقَبَآئِلَ لِتَعَارَفُوٓا۟ ۚ إِنَّ أَكْرَمَكُمْ عِندَ ٱللَّهِ أَتْقَىٰكُمْ ۚ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌ",
+  "translation": "O mankind, indeed We have created you from male and female and made you peoples and tribes that you may know one another. Indeed, the most noble of you in the sight of Allāh is the most righteous of you. Indeed, Allāh is Knowing and Aware.",
+  "translation_source": "Saheeh International",
+  "idea": "Allah did not make people different so we could rank them. In this ayah the only thing that raises a person is being careful to do right.",
+  "ask": "If the most noble person is the one most careful to do right, what should you look at when you meet someone new?",
+  "hint": "Is it what they look like, or what they do?",
+  "trythis": "Today find someone who seems different from you — older, younger, speaks another language. Learn one real thing about them.",
+  "papa": "Ibn Kathir: all mankind are the children of Adam and Hawwa'; nations and tribes exist so that people may know one another, not so they may boast. The verse names taqwa (being careful of Allah) as the only measure of superiority — no lineage, wealth or appearance is mentioned.",
+  "sources": ["Qur'an 49:13 — Uthmani text (api.quran.com)", "Saheeh International translation", "Tafsir Ibn Kathir (abridged), 49:13"]
+ },
+ {
+  "date": "2026-09-25",
   "ref": "Al-Isra' 17:23",
   "emoji": "🌙",
   "color": "#81C784",
