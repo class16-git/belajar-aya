@@ -43,5 +43,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Compare honey and a slice of apple. Which one do you think has more water inside?",
   "kid": "Honey is like a tiny desert inside the jar. Bacteria (the tiny creatures that make food go yucky) need water to live and grow. Honey has almost NO water in it — it's almost all sugar. And it's also super acidic, like sour candy. Nothing bad can grow there! It's like how sour candy lasts forever but fresh fruit goes mouldy.",
   "sim": "states-of-matter.html"
+ },
+ {
+  "date": "2026-09-26",
+  "topic": "Animals",
+  "emoji": "🐦",
+  "fact": "Butterflies taste with their feet. When a butterfly lands on a flower, it steps on it and immediately knows if the flower has nectar (the sweet drink flowers make) or not. No tasting with a tongue needed!",
+  "ask": "Why do you think tasting with feet is useful for a butterfly?",
+  "hint": "Butterflies don't have hands. How else would they quickly check flowers while flying?",
+  "trythis": "Look at a flower next time you're outside. How many butterflies land, check, and fly away?",
+  "kid": "Imagine if every time you wanted to know if your food was yummy, you had to put your feet on it. Weird, right? But for butterflies, feet are like little taste-bud sensors. They taste chemicals on the flower — and KNOW instantly: 'This flower has nectar! Let me drink!' No licking required!",
+  "sim": "food-chain.html"
  }
 ];
