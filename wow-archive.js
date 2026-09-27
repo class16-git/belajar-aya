@@ -54,5 +54,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Look at a flower next time you're outside. How many butterflies land, check, and fly away?",
   "kid": "Imagine if every time you wanted to know if your food was yummy, you had to put your feet on it. Weird, right? But for butterflies, feet are like little taste-bud sensors. They taste chemicals on the flower — and KNOW instantly: 'This flower has nectar! Let me drink!' No licking required!",
   "sim": "food-chain.html"
+ },
+ {
+  "date": "2026-09-27",
+  "topic": "Nature",
+  "emoji": "🌊",
+  "fact": "Octopuses have three hearts. Two hearts pump blood to their gills (the parts that help them breathe underwater). The third heart pumps blood to the rest of the body. And their blood is BLUE — because it uses copper to carry oxygen instead of iron like ours.",
+  "ask": "Why do you think an octopus needs three hearts instead of one?",
+  "hint": "Think about what hearts do — and why an animal with three hearts might need them.",
+  "trythis": "Draw an octopus and label where each heart might go. How would you connect them?",
+  "kid": "Your heart has one job: pump blood everywhere. An octopus's body is shaped differently and moves differently — so maybe two hearts pumping to the gills is like having two people blowing up balloons, and one heart pumping to the body is like one person delivering them everywhere. And blue blood? Iron in our blood makes it red. Octopus uses copper — which turns blue when it carries oxygen, like how some pools look blue!",
+  "sim": "water-cycle.html"
  }
 ];
