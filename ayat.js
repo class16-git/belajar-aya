@@ -5,6 +5,21 @@
 // trythis = something to do today. papa = context for the adult. sources = primary only.
 window.AYAT_POSTS = [
  {
+  "date": "2026-09-27",
+  "ref": "94:5-6",
+  "emoji": "🌤️",
+  "color": "#FFD54F",
+  "arabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+  "translation": "For indeed, with hardship [will be] ease [i.e., relief]. Indeed, with hardship [will be] ease.",
+  "translation_source": "Saheeh International",
+  "idea": "The ayah does not say ease comes after the hard thing. It says ease is WITH it. They arrive together.",
+  "ask": "Can you remember something hard that also had something easy inside it?",
+  "hint": "Think about a time you struggled — was there anything good in the middle of it?",
+  "trythis": "When something feels hard today, stop and look for the ease hiding inside it. Say what you found out loud.",
+  "papa": "Two things sit in the wording itself: the hardship is definite (al-'usr) and the sentence is repeated — repetition for emphasis — while ease is indefinite and appears twice. That pairing is why the verse is read as one hardship carrying two eases. Note also 'with' (ma'a), not 'after'.",
+  "sources": ["Qur'an 94:5-6 — Uthmani text (api.quran.com)", "Saheeh International translation", "Tafsir Ibn Kathir (abridged), 94:5"]
+ },
+ {
   "date": "2026-09-25",
   "ref": "49:13",
   "emoji": "🌍",
