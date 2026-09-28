@@ -65,5 +65,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Draw an octopus and label where each heart might go. How would you connect them?",
   "kid": "Your heart has one job: pump blood everywhere. An octopus's body is shaped differently and moves differently — so maybe two hearts pumping to the gills is like having two people blowing up balloons, and one heart pumping to the body is like one person delivering them everywhere. And blue blood? Iron in our blood makes it red. Octopus uses copper — which turns blue when it carries oxygen, like how some pools look blue!",
   "sim": "water-cycle.html"
+ },
+ {
+  "date": "2026-09-28",
+  "topic": "Science",
+  "emoji": "🔬",
+  "fact": "Glass is actually a liquid — a VERY slow one. Glass atoms are arranged like a liquid (all jumbled up), not like a solid crystal. It moves so slowly that you can't see it, but over HUNDREDS of years, very old window panes become slightly thicker at the bottom!",
+  "ask": "If glass is a liquid... is the window slowly dripping down? Why or why not?",
+  "hint": "Slow means VERY slow. Would you see it in your whole lifetime?",
+  "trythis": "Look at old glass windows in photos — the bottom is sometimes thicker.",
+  "kid": "Think of honey — it flows, but so slowly you can't see it drip. Glass is like honey that flows EVEN SLOWER. Old window makers didn't make perfect glass, so the glass slowly moved over hundreds of years. That's why in very old buildings, the bottom of the window glass is thicker — the glass 'dripped' down over centuries!",
+  "sim": "floating-sinking.html"
  }
 ];
