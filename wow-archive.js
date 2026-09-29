@@ -76,5 +76,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Look at old glass windows in photos — the bottom is sometimes thicker.",
   "kid": "Think of honey — it flows, but so slowly you can't see it drip. Glass is like honey that flows EVEN SLOWER. Old window makers didn't make perfect glass, so the glass slowly moved over hundreds of years. That's why in very old buildings, the bottom of the window glass is thicker — the glass 'dripped' down over centuries!",
   "sim": "floating-sinking.html"
+ },
+ {
+  "date": "2026-09-29",
+  "topic": "Human Body",
+  "emoji": "🫀",
+  "fact": "You can't tickle yourself. Try it right now — tickle your own foot. Does it feel ticklish? Probably not! Your brain has a special part that compares what you EXPECT to feel vs what you actually feel — and because YOU know exactly where your fingers are going, it cancels out the tickle!",
+  "ask": "Why do you think your brain cancels out your own touch? What would happen if it didn't?",
+  "hint": "If you couldn't cancel your own touch... would everything feel like someone was poking you?",
+  "trythis": "Try to tickle yourself right now. What happens?",
+  "kid": "Imagine if your brain DIDN'T cancel your own touch. Your clothes would feel like someone rubbing you all day. Your feet in shoes would feel like someone poking you constantly. Your brain's 'cancel' button stops this from happening so you can focus on things OUTSIDE your body! The tickle only works when something surprises your brain — and nothing surprises you like your own hand!",
+  "sim": "sound-vibrations.html"
  }
 ];
