@@ -87,5 +87,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Try to tickle yourself right now. What happens?",
   "kid": "Imagine if your brain DIDN'T cancel your own touch. Your clothes would feel like someone rubbing you all day. Your feet in shoes would feel like someone poking you constantly. Your brain's 'cancel' button stops this from happening so you can focus on things OUTSIDE your body! The tickle only works when something surprises your brain — and nothing surprises you like your own hand!",
   "sim": "sound-vibrations.html"
+ },
+ {
+  "date": "2026-09-30",
+  "topic": "Human Body",
+  "emoji": "🫀",
+  "fact": "Your nose and ears never stop growing. Most of your body stops growing when you're an adult. But cartilage — the squishy stuff in your nose and ears — keeps growing slowly your WHOLE life. That's why old people often have bigger noses and ears than you!",
+  "ask": "Why do you think nose and ears keep growing, but your arms and legs stop?",
+  "hint": "Noses and ears are made of cartilage. Arms and legs are made of bone. Are they the same material?",
+  "trythis": "Look at pictures of the same person when they were 20 vs 60. Can you see the difference?",
+  "kid": "Your nose and ears are made of a special bendy material called cartilage — like the squishy part at the tip of your nose. This stuff never stops slowly growing. Your bones — in your arms and legs — stop when you're grown up. So an old person's ears might be twice as big as when they were 20, but their arms aren't twice as long!",
+  "sim": "sound-vibrations.html"
  }
 ];
