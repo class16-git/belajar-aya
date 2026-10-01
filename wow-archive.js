@@ -98,5 +98,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Look at pictures of the same person when they were 20 vs 60. Can you see the difference?",
   "kid": "Your nose and ears are made of a special bendy material called cartilage — like the squishy part at the tip of your nose. This stuff never stops slowly growing. Your bones — in your arms and legs — stop when you're grown up. So an old person's ears might be twice as big as when they were 20, but their arms aren't twice as long!",
   "sim": "sound-vibrations.html"
+ },
+ {
+  "date": "2026-10-01",
+  "topic": "Science",
+  "emoji": "🔬",
+  "fact": "A day on Venus is LONGER than its year. Venus takes 225 Earth days to go around the Sun once. But it takes 243 Earth days to spin around once! So before Venus finishes one 'day' — sunrise to sunrise — it's already done one whole trip around the Sun.",
+  "ask": "If a day is longer than a year... what does your calendar on Venus look like?",
+  "hint": "Imagine: the Sun rises, and by the time it sets... you've already had a birthday.",
+  "trythis": "Spin yourself slowly while walking in a circle. Count how many spins before you get back to where you started walking.",
+  "kid": "On Earth, your birthday comes every 365 days (that's one trip around the Sun). On Venus, your birthday would come BEFORE you finish one day! It's like: you wake up, the Sun sets, and your friends say 'happy birthday' before the day is even over! Venus spins so slowly that it takes forever to do one spin, but it zooms around the Sun pretty fast.",
+  "sim": "floating-sinking.html"
  }
 ];
