@@ -120,5 +120,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Put two ice cube trays in the freezer — one with hot water, one with cold. Time them!",
   "kid": "One idea: when water is hot, the molecules move super fast. When you put it in the freezer, the fast molecules might escape as steam first — leaving less water to freeze! So there's less to cool down. But scientists aren't sure. Maybe YOU can help figure it out when you're older!",
   "sim": "floating-sinking.html"
+ },
+ {
+  "date": "2026-10-03",
+  "topic": "Science",
+  "emoji": "🔬",
+  "fact": "Sharks existed BEFORE trees. Sharks have been swimming in the ocean for at least 400 million years. Trees only came along about 50 million years later. Sharks survived four of the five mass extinctions on Earth — the times when most living things died!",
+  "ask": "Sharks survived four mass extinctions but trees are 'new'... what does that tell you about how tough sharks are?",
+  "hint": "Trees seem everywhere and permanent. But sharks were here way before them.",
+  "trythis": "Draw a timeline starting 400 million years ago. Put sharks near the start. Where would trees go?",
+  "kid": "Sharks are like the original survivors of Earth. When the dinosaurs died, sharks kept swimming. When huge volcanoes erupted and oceans changed, sharks kept swimming. Trees came along much later — and sharks are STILL here, still the same basic design that worked 400 million years ago. They're one of the oldest predators on Earth!",
+  "sim": "floating-sinking.html"
  }
 ];
