@@ -5,6 +5,21 @@
 // trythis = something to do today. papa = context for the adult. sources = primary only.
 window.AYAT_POSTS = [
  {
+  "date": "2026-10-04",
+  "ref": "2:263",
+  "emoji": "💛",
+  "color": "#FFB74D",
+  "arabic": "۞ قَوْلٌ مَّعْرُوفٌ وَمَغْفِرَةٌ خَيْرٌ مِّن صَدَقَةٍ يَتْبَعُهَآ أَذًى ۗ وَٱللَّهُ غَنِىٌّ حَلِيمٌ",
+  "translation": "Kind speech and forgiveness are better than charity followed by injury. And Allāh is Free of need and Forbearing.",
+  "translation_source": "Saheeh International",
+  "idea": "Giving something away is worth less than a kind word if the giving came with a sting after it.",
+  "ask": "Why would one kind word be better than a present with a mean word after it?",
+  "hint": "Think about how you feel when someone reminds you of a favour they did for you.",
+  "trythis": "Give someone something today — then say one kind thing and notice which of the two they remember.",
+  "papa": "Ibn Kathir opens this passage under 'reminding about charity is forbidden': speaking of a favour or causing injury after giving annuls the charity. The harm cancels the good — which is why an unspoiled kind word outranks a spoiled gift.",
+  "sources": ["Qur'an 2:263 — Uthmani text (api.quran.com)", "Saheeh International translation", "Tafsir Ibn Kathir (abridged), 2:263"]
+ },
+ {
   "date": "2026-09-27",
   "ref": "94:5-6",
   "emoji": "🌤️",
