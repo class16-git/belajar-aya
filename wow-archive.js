@@ -131,5 +131,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Draw a timeline starting 400 million years ago. Put sharks near the start. Where would trees go?",
   "kid": "Sharks are like the original survivors of Earth. When the dinosaurs died, sharks kept swimming. When huge volcanoes erupted and oceans changed, sharks kept swimming. Trees came along much later — and sharks are STILL here, still the same basic design that worked 400 million years ago. They're one of the oldest predators on Earth!",
   "sim": "floating-sinking.html"
+ },
+ {
+  "date": "2026-10-04",
+  "topic": "Human Body",
+  "emoji": "🫀",
+  "fact": "Your body glows in the dark. Not like a torch — but you actually make a tiny bit of light all the time. Scientists took super-sensitive photos of people sitting in completely dark rooms and caught this light! The brightest part is your face. Nobody knows exactly why yet.",
+  "ask": "We can see in visible light... but what if we could see the light our own bodies make?",
+  "hint": "The light your body makes is too weak for your eyes to see — but cameras can catch it.",
+  "trythis": "Look at your hand under a very bright light, then suddenly cover it — do you see any faint glow as your eyes adjust?",
+  "kid": "Your body is like a phone with the screen on super super dim — so dim your eyes can't see it! But scientists have special cameras that can. Every living thing glows a tiny bit. It's called bioluminescence. Fireflies use it to make light we CAN see — your body does it too, just way way dimmer!",
+  "sim": "sound-vibrations.html"
  }
 ];
