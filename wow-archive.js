@@ -164,5 +164,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Look at a map of the Philippines. How many lakes can you find?",
   "kid": "The Philippines used to be connected to land — but the ocean rose and created islands with lakes inside them. Fish in those lakes got trapped and evolved separately over millions of years, becoming completely new species! It's like putting some fish in a bowl and leaving them for a million years — they'd become different from fish outside the bowl!",
   "sim": "water-cycle.html"
+ },
+ {
+  "date": "2026-10-07",
+  "topic": "Animals",
+  "emoji": "🐦",
+  "fact": "Dolphins have names for each other. Each dolphin has a unique whistle — like a name. When a dolphin wants to call another specific dolphin, it makes THAT dolphin's sound. Other dolphins answer when they hear their own name!",
+  "ask": "If dolphins have names... do they talk to each other like we do?",
+  "hint": "Scientists recorded dolphins repeating each other's 'names' back and forth.",
+  "trythis": "If you had a signature sound instead of a name, what would yours sound like?",
+  "kid": "Imagine if instead of your name, you had a special sound — like 'BEEP-BOOP-BEEP' — and everyone called you by that sound. That's how dolphins work! A mother dolphin makes her baby's sound over and over so the baby learns it. Then when they're far apart in the ocean, she calls 'BEEP-BOOP-BEEP!' and her baby knows it's her!",
+  "sim": "food-chain.html"
  }
 ];
