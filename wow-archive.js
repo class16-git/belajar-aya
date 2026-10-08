@@ -175,5 +175,16 @@ window.WOW_ARCHIVE = [
   "trythis": "If you had a signature sound instead of a name, what would yours sound like?",
   "kid": "Imagine if instead of your name, you had a special sound — like 'BEEP-BOOP-BEEP' — and everyone called you by that sound. That's how dolphins work! A mother dolphin makes her baby's sound over and over so the baby learns it. Then when they're far apart in the ocean, she calls 'BEEP-BOOP-BEEP!' and her baby knows it's her!",
   "sim": "food-chain.html"
+ },
+ {
+  "date": "2026-10-08",
+  "topic": "Animals",
+  "emoji": "🐦",
+  "fact": "Butterflies taste with their feet. When a butterfly lands on a flower, it steps on it and immediately knows if the flower has nectar (the sweet drink flowers make) or not. No tasting with a tongue needed!",
+  "ask": "Why do you think tasting with feet is useful for a butterfly?",
+  "hint": "Butterflies don't have hands. How else would they quickly check flowers while flying?",
+  "trythis": "Look at a flower next time you're outside. How many butterflies land, check, and fly away?",
+  "kid": "Imagine if every time you wanted to know if your food was yummy, you had to put your feet on it. Weird, right? But for butterflies, feet are like little taste-bud sensors. They taste chemicals on the flower — and KNOW instantly: 'This flower has nectar! Let me drink!' No licking required!",
+  "sim": "food-chain.html"
  }
 ];
