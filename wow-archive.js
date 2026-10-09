@@ -186,5 +186,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Look at a flower next time you're outside. How many butterflies land, check, and fly away?",
   "kid": "Imagine if every time you wanted to know if your food was yummy, you had to put your feet on it. Weird, right? But for butterflies, feet are like little taste-bud sensors. They taste chemicals on the flower — and KNOW instantly: 'This flower has nectar! Let me drink!' No licking required!",
   "sim": "food-chain.html"
+ },
+ {
+  "date": "2026-10-09",
+  "topic": "Science",
+  "emoji": "🔬",
+  "fact": "A day on Venus is LONGER than its year. Venus takes 225 Earth days to go around the Sun once. But it takes 243 Earth days to spin around once! So before Venus finishes one 'day' — sunrise to sunrise — it's already done one whole trip around the Sun.",
+  "ask": "If a day is longer than a year... what does your calendar on Venus look like?",
+  "hint": "Imagine: the Sun rises, and by the time it sets... you've already had a birthday.",
+  "trythis": "Spin yourself slowly while walking in a circle. Count how many spins before you get back to where you started walking.",
+  "kid": "On Earth, your birthday comes every 365 days (that's one trip around the Sun). On Venus, your birthday would come BEFORE you finish one day! It's like: you wake up, the Sun sets, and your friends say 'happy birthday' before the day is even over! Venus spins so slowly that it takes forever to do one spin, but it zooms around the Sun pretty fast.",
+  "sim": "floating-sinking.html"
  }
 ];
