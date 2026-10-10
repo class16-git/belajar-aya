@@ -197,5 +197,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Spin yourself slowly while walking in a circle. Count how many spins before you get back to where you started walking.",
   "kid": "On Earth, your birthday comes every 365 days (that's one trip around the Sun). On Venus, your birthday would come BEFORE you finish one day! It's like: you wake up, the Sun sets, and your friends say 'happy birthday' before the day is even over! Venus spins so slowly that it takes forever to do one spin, but it zooms around the Sun pretty fast.",
   "sim": "floating-sinking.html"
+ },
+ {
+  "date": "2026-10-10",
+  "topic": "Biology",
+  "emoji": "🌳",
+  "fact": "Trees talk to each other underground using fungus threads. When a big tree has extra food, it sends it through the fungus to baby trees that can't get enough sunlight yet. The baby trees say thank you by giving the fungus some of their food too. It's like a food delivery network — but underground!",
+  "ask": "If trees can share food with each other... is a forest one big thing, or lots of separate things?",
+  "hint": "It's a bit like the internet... but made of fungus and roots.",
+  "trythis": "Next time it rains and a mushroom pops up — point and say: 'That's just the tip of something much bigger underground.'",
+  "kid": "The underground fungus is like a超级 roads for food. Big trees are like big brothers — they share their lunch with smaller trees through these underground roads. And the fungus gets paid in sugar! It's like a tree marketplace — underground, silent, millions of years old.",
+  "sim": "plant-growth.html"
  }
 ];
