@@ -5,6 +5,21 @@
 // trythis = something to do today. papa = context for the adult. sources = primary only.
 window.AYAT_POSTS = [
  {
+  "date": "2026-10-11",
+  "ref": "31:14",
+  "emoji": "🌱",
+  "color": "#81C784",
+  "arabic": "وَوَصَّيْنَا ٱلْإِنسَـٰنَ بِوَٰلِدَيْهِ حَمَلَتْهُ أُمُّهُۥ وَهْنًا عَلَىٰ وَهْنٍ وَفِصَـٰلُهُۥ فِى عَامَيْنِ أَنِ ٱشْكُرْ لِى وَلِوَٰلِدَيْكَ إِلَىَّ ٱلْمَصِيرُ",
+  "translation": "And We have enjoined upon man [care] for his parents. His mother carried him, [increasing her] in weakness upon weakness, and his weaning is in two years. Be grateful to Me and to your parents; to Me is the [final] destination.",
+  "translation_source": "Saheeh International",
+  "idea": "Gratitude to Allah and gratitude to parents are placed in the same sentence. This is where Luqman's advice to his son begins.",
+  "ask": "Why do you think the ayah tells us how much trouble a mother goes through?",
+  "hint": "The ayah mentions weakness upon weakness, and two years.",
+  "trythis": "Pick one specific thing your mother did today and thank her for that exact thing — not just thank you.",
+  "papa": "Luqman's counsel to his son opens with tawhid and then parents; the mother's burden is stated concretely (weakness upon weakness, weaning in two years). It sits with 17:23 as the second pillar of this theme; Ibn Kathir places Luqman's advice start here.",
+  "sources": ["Qur'an 31:14 — Uthmani text (api.quran.com)", "Saheeh International translation", "Tafsir Ibn Kathir (abridged), 31:14"]
+ },
+ {
   "date": "2026-10-04",
   "ref": "2:263",
   "emoji": "💛",
