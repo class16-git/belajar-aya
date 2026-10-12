@@ -219,5 +219,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Compare honey and a slice of apple. Which one do you think has more water inside?",
   "kid": "Honey is like a tiny desert inside the jar. Bacteria (the tiny creatures that make food go yucky) need water to live and grow. Honey has almost NO water in it — it's almost all sugar. And it's also super acidic, like sour candy. Nothing bad can grow there! It's like how sour candy lasts forever but fresh fruit goes mouldy.",
   "sim": "states-of-matter.html"
+ },
+ {
+  "date": "2026-10-12",
+  "topic": "Nature",
+  "emoji": "🌊",
+  "fact": "Bananas are slightly radioactive. Not dangerous at all — but bananas have potassium, and one type of potassium is a tiny bit radioactive. You'd need to eat 10 MILLION bananas at once for it to be dangerous. Scientists even use 'banana measurements' to talk about tiny radiation amounts!",
+  "ask": "If bananas are radioactive... is everything around us a little bit radioactive too?",
+  "hint": "Most things don't have the specific radioactive potassium that bananas have.",
+  "trythis": "Next time you eat a banana — now you know you're having a tiny radioactive snack! 🍌",
+  "kid": "Everything made of atoms is a little bit radioactive — but most of it is SO TINY it doesn't matter. Bananas have a special kind of potassium that's a bit radioactive. It's like a very quiet radio station — it's technically 'on' but you can't hear it! The radiation in one banana is so small it's like comparing a drop of water to a swimming pool!",
+  "sim": "water-cycle.html"
  }
 ];
