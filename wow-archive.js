@@ -241,5 +241,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Look at old glass windows in photos — the bottom is sometimes thicker.",
   "kid": "Think of honey — it flows, but so slowly you can't see it drip. Glass is like honey that flows EVEN SLOWER. Old window makers didn't make perfect glass, so the glass slowly moved over hundreds of years. That's why in very old buildings, the bottom of the window glass is thicker — the glass 'dripped' down over centuries!",
   "sim": "floating-sinking.html"
+ },
+ {
+  "date": "2026-10-14",
+  "topic": "Space",
+  "emoji": "🪐",
+  "fact": "If you could drive a car straight up into space at highway speed (100 km/h), it would take about 160 hours — that's nearly a WEEK of driving — to reach where space begins! Space is MUCH farther than it looks in photos.",
+  "ask": "If it takes a week driving at 100km/h to reach space... how long to drive to the Moon?",
+  "hint": "The Moon is about 400 times farther than where space starts.",
+  "trythis": "Next time you're on a long car ride — how long is it? And we're not even close to space.",
+  "kid": "Think about your longest car ride ever. Maybe 4 hours? Space is 40 times farther than that! The Moon? That would be like driving for 6 MONTHS non-stop. Space is so incredibly high that planes — which fly super fast — can't even get there. Only rockets can!",
+  "sim": "gravity-orbits.html"
  }
 ];
