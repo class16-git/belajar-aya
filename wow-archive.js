@@ -274,5 +274,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Try to tickle yourself right now. What happens?",
   "kid": "Imagine if your brain DIDN'T cancel your own touch. Your clothes would feel like someone rubbing you all day. Your feet in shoes would feel like someone poking you constantly. Your brain's 'cancel' button stops this from happening so you can focus on things OUTSIDE your body! The tickle only works when something surprises your brain — and nothing surprises you like your own hand!",
   "sim": "sound-vibrations.html"
+ },
+ {
+  "date": "2026-10-17",
+  "topic": "Biology",
+  "emoji": "🌳",
+  "fact": "A group of flamingos is called a 'flamboyance.' (Yes, that's a real word!) There are fun names for groups of animals: a murder of crows, a parliament of owls, an army of ants, a bouquet of pheasants!",
+  "ask": "If YOU could make a name for a group of your classmates... what would it be and why?",
+  "hint": "The names usually describe what the animals look like or how they act.",
+  "trythis": "Can you find 5 animal group names? Make up your own for animals that don't have official ones yet!",
+  "kid": "'Flamboyance' is perfect — flamingos are so pink and fancy, they ARE flamboyant! 'Murder of crows' sounds scary, right? Crows are clever and a bit creepy. 'Parliament of owls' sounds wise and serious — owls sit very still and look very smart. These names are like little descriptions that tell you about the animals before you even see them!",
+  "sim": "plant-growth.html"
  }
 ];
