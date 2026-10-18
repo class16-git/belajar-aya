@@ -285,5 +285,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Can you find 5 animal group names? Make up your own for animals that don't have official ones yet!",
   "kid": "'Flamboyance' is perfect — flamingos are so pink and fancy, they ARE flamboyant! 'Murder of crows' sounds scary, right? Crows are clever and a bit creepy. 'Parliament of owls' sounds wise and serious — owls sit very still and look very smart. These names are like little descriptions that tell you about the animals before you even see them!",
   "sim": "plant-growth.html"
+ },
+ {
+  "date": "2026-10-18",
+  "topic": "History",
+  "emoji": "🏛️",
+  "fact": "The Great Wall of China can't be seen from space with the naked eye — this is a myth! Astronauts have confirmed it. You CAN sometimes see: city lights at night, roads, airports. Things that are wide and bright — not long and thin.",
+  "ask": "The biggest wall ever built is too thin to see from space... what does that tell you about how BIG space is?",
+  "hint": "From space, you can see: roads (long and straight), city lights, airports. Things that are wide, not thin.",
+  "trythis": "Look at a very thin line drawn on paper from far away — can you still see it?",
+  "kid": "Imagine drawing a thin line on a huge piece of paper. Now stand on the other side of your room and try to see it. Too thin, right? The Great Wall is like that — it's thin and blends in with the mountains. But if you drew a whole city with lights at night, you'd see it from far away because it's bright and wide!",
+  "sim": "day-night.html"
  }
 ];
