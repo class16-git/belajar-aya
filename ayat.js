@@ -5,6 +5,21 @@
 // trythis = something to do today. papa = context for the adult. sources = primary only.
 window.AYAT_POSTS = [
  {
+  "date": "2026-10-18",
+  "ref": "103:1-3",
+  "emoji": "⏳",
+  "color": "#FF8A65",
+  "arabic": "وَٱلْعَصْرِ إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+  "translation": "By time, Indeed, mankind is in loss, Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.",
+  "translation_source": "Saheeh International",
+  "idea": "Losing time is not a warning — it is the oath Allah swears by. The surah says everyone is in loss except those who do four things.",
+  "ask": "What four things does the surah say save a person from loss?",
+  "hint": "Think about: belief, good actions, truth, and patience.",
+  "trythis": "Today, catch yourself wasting time — and replace it with one of the four things from this surah.",
+  "papa": "Al-'Asr is the shortest surah in the Qur'an but ash-Shafi'i said if people pondered only this surah it would suffice them. The four exceptions are nested: faith → righteous deeds → mutual encouragement to truth → mutual encouragement to patience. Each depends on the one before it.",
+  "sources": ["Qur'an 103:1-3 — Uthmani text (api.quran.com)", "Saheeh International translation", "Tafsir Ibn Kathir (abridged), 103:1-3"]
+ },
+ {
   "date": "2026-10-11",
   "ref": "31:14",
   "emoji": "🌱",
