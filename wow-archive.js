@@ -307,5 +307,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Draw a timeline starting 400 million years ago. Put sharks near the start. Where would trees go?",
   "kid": "Sharks are like the original survivors of Earth. When the dinosaurs died, sharks kept swimming. When huge volcanoes erupted and oceans changed, sharks kept swimming. Trees came along much later — and sharks are STILL here, still the same basic design that worked 400 million years ago. They're one of the oldest predators on Earth!",
   "sim": "floating-sinking.html"
+ },
+ {
+  "date": "2026-10-20",
+  "topic": "Animals",
+  "emoji": "🐦",
+  "fact": "Electric eels can LEAP out of water to shock predators! When threatened, they arch their body and jump upward, pressing their electric organs against whatever is bothering them — like a natural Taser! The higher they jump, the stronger the shock!",
+  "ask": "Why do you think the eel jumps OUT of water to attack? What's different about air vs water?",
+  "hint": "Electricity flows differently through water than through air.",
+  "trythis": "In water, electricity spreads out in all directions. Out of water, all the electricity goes straight into the target!",
+  "kid": "Imagine throwing a stone into a pool — the ripples spread out everywhere. That's electricity in water! Now imagine throwing a stone in the air — it hits ONE thing. Electric eels figured out that in air, ALL their electricity goes into the attacker. Smart, right? An eel can leap up and zap a crocodile right on its nose!",
+  "sim": "food-chain.html"
  }
 ];
