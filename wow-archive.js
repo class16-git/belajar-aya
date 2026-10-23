@@ -340,5 +340,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Draw an octopus and label where each heart might go. How would you connect them?",
   "kid": "Your heart has one job: pump blood everywhere. An octopus's body is shaped differently and moves differently — so maybe two hearts pumping to the gills is like having two people blowing up balloons, and one heart pumping to the body is like one person delivering them everywhere. And blue blood? Iron in our blood makes it red. Octopus uses copper — which turns blue when it carries oxygen, like how some pools look blue!",
   "sim": "water-cycle.html"
+ },
+ {
+  "date": "2026-10-23",
+  "topic": "Animals",
+  "emoji": "🐦",
+  "fact": "Crows can remember human faces for years. If a crow doesn't like you, it will teach its children to not like you too. And if you help a crow? That crow will remember you AND tell other crows about you. They hold grudges AND friendships across generations!",
+  "ask": "If a crow can hold a grudge AND teach its kids about you... do you think animals are smarter than we think?",
+  "hint": "Most animals don't teach their children about specific humans. Crows do.",
+  "trythis": "Next time you see a crow, try to remember its face — see if it remembers yours.",
+  "kid": "Crows are like feathered detectives. They watch your face carefully — if you're mean, they'll remember. If you're kind, they'll remember AND tell their crow friends. Scientists did an experiment: they wore masks and some 'helped' the crows and some 'bothered' the crows. The baby crows grew up already knowing which mask was the bad one!",
+  "sim": "food-chain.html"
  }
 ];
