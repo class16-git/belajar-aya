@@ -351,5 +351,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Next time you see a crow, try to remember its face — see if it remembers yours.",
   "kid": "Crows are like feathered detectives. They watch your face carefully — if you're mean, they'll remember. If you're kind, they'll remember AND tell their crow friends. Scientists did an experiment: they wore masks and some 'helped' the crows and some 'bothered' the crows. The baby crows grew up already knowing which mask was the bad one!",
   "sim": "food-chain.html"
+ },
+ {
+  "date": "2026-10-24",
+  "topic": "Human Body",
+  "emoji": "🫀",
+  "fact": "Your body glows in the dark. Not like a torch — but you actually make a tiny bit of light all the time. Scientists took super-sensitive photos of people sitting in completely dark rooms and caught this light! The brightest part is your face. Nobody knows exactly why yet.",
+  "ask": "We can see in visible light... but what if we could see the light our own bodies make?",
+  "hint": "The light your body makes is too weak for your eyes to see — but cameras can catch it.",
+  "trythis": "Look at your hand under a very bright light, then suddenly cover it — do you see any faint glow as your eyes adjust?",
+  "kid": "Your body is like a phone with the screen on super super dim — so dim your eyes can't see it! But scientists have special cameras that can. Every living thing glows a tiny bit. It's called bioluminescence. Fireflies use it to make light we CAN see — your body does it too, just way way dimmer!",
+  "sim": "sound-vibrations.html"
  }
 ];
