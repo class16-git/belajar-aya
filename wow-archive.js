@@ -362,5 +362,16 @@ window.WOW_ARCHIVE = [
   "trythis": "Look at your hand under a very bright light, then suddenly cover it — do you see any faint glow as your eyes adjust?",
   "kid": "Your body is like a phone with the screen on super super dim — so dim your eyes can't see it! But scientists have special cameras that can. Every living thing glows a tiny bit. It's called bioluminescence. Fireflies use it to make light we CAN see — your body does it too, just way way dimmer!",
   "sim": "sound-vibrations.html"
+ },
+ {
+  "date": "2026-10-25",
+  "topic": "Physics",
+  "emoji": "🧪",
+  "fact": "Honey never goes bad. Ever. Archaeologists opened Egyptian tombs that were 3,000 years old and found honey inside — and it was still perfectly fine to eat! The oldest honey ever found was in Georgia, about 5,500 years old. Still good!",
+  "ask": "Why do you think honey lasts forever, but fruit goes bad in a few days?",
+  "hint": "Think about what things need to rot — and whether honey has any of those things.",
+  "trythis": "Compare honey and a slice of apple. Which one do you think has more water inside?",
+  "kid": "Honey is like a tiny desert inside the jar. Bacteria (the tiny creatures that make food go yucky) need water to live and grow. Honey has almost NO water in it — it's almost all sugar. And it's also super acidic, like sour candy. Nothing bad can grow there! It's like how sour candy lasts forever but fresh fruit goes mouldy.",
+  "sim": "states-of-matter.html"
  }
 ];
