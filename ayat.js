@@ -5,6 +5,21 @@
 // trythis = something to do today. papa = context for the adult. sources = primary only.
 window.AYAT_POSTS = [
  {
+  "date": "2026-10-25",
+  "ref": "2:286",
+  "emoji": "🛡️",
+  "color": "#4DD0E1",
+  "arabic": "لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ",
+  "translation": "Allāh does not charge a soul except [with that within] its capacity. It will have [the consequence of] what [good] it has gained, and it will bear [the consequence of] what [evil] it has earned. \"Our Lord, do not impose blame upon us if we have forgotten or erred. Our Lord, and lay not upon us a burden like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us; and forgive us; and have mercy upon us. You are our protector, so give us victory over the disbelieving people.\"",
+  "translation_source": "Saheeh International",
+  "idea": "Allah does not ask anyone to do more than they can bear. This ayah is the last one revealed and it is a promise.",
+  "ask": "What does 'more than they can bear' actually mean? Does it mean we never face hard things?",
+  "hint": "It means the test is never bigger than the strength you have to face it with.",
+  "trythis": "Next time you feel overwhelmed, stop and say: 'Allah knows exactly how much I can carry.'",
+  "papa": "Sahih Muslim reports this verse was revealed at night and when the Prophet (ﷺ) recited it, he said 'Yes, I have done so.' The phrase 'us'raha (its capacity) uses a term that encompasses both burden-bearing and the ability to bear it — the test carries its own capacity inside it. See also the companion story of a man who said this verse gave him more comfort than any other.",
+  "sources": ["Qur'an 2:286 — Uthmani text (api.quran.com)", "Saheeh International translation", "Tafsir Ibn Kathir (abridged), 2:286", "Sahih Muslim, Book 1, Hadith 393"]
+ },
+ {
   "date": "2026-10-18",
   "ref": "103:1-3",
   "emoji": "⏳",
