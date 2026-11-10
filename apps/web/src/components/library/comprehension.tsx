@@ -12,7 +12,7 @@ interface Result { id: string; correct: boolean; evidenceParagraph: number }
  * Comprehension check on an Atlas-original passage. Answers are graded on the server; after checking, each
  * question shows "Yes!" or which paragraph to look at again — never the answer key, never a score comparison.
  */
-export function Comprehension({ passageId, questions }: { passageId: string; questions: Q[] }) {
+export function Comprehension({ passageId, attemptId, questions }: { passageId: string; attemptId: string; questions: Q[] }) {
   const { t } = useI18n();
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [results, setResults] = useState<{ results: Result[]; correct: number; total: number } | null>(null);
@@ -26,7 +26,7 @@ export function Comprehension({ passageId, questions }: { passageId: string; que
         e.preventDefault();
         if (Object.keys(answers).length < questions.length) return setErr(t.library.child.answerAll);
         setErr(null);
-        const r = await api<{ results: Result[]; correct: number; total: number }>('/api/library/comprehension', { body: { passageId, answers } });
+        const r = await api<{ results: Result[]; correct: number; total: number }>('/api/library/comprehension', { body: { passageId, attemptId, answers } });
         if (r.ok) setResults(r.data);
         else setErr(t.app.error);
       }}

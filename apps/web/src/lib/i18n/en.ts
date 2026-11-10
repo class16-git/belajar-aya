@@ -383,6 +383,8 @@ export const en = {
       when: 'When',
       what: 'What',
       item: 'Book or text',
+      firstTry: 'First try',
+      review: 'Review (repeat)',
       ratings: 'Ratings',
     },
     progress: {

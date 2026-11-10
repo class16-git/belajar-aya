@@ -385,6 +385,8 @@ export const id: Dictionary = {
       when: 'Kapan',
       what: 'Apa',
       item: 'Buku atau teks',
+      firstTry: 'Percobaan pertama',
+      review: 'Ulangan',
       ratings: 'Penilaian',
     },
     progress: {
