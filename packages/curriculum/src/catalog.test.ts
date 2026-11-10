@@ -61,13 +61,18 @@ describe('publication gate (scenario 9)', () => {
   it('"reviewed" without a human review record is rejected', () => {
     const l = findRaw('lesson-g1-bonds-10-001');
     l.reviewStatus = 'reviewed';
+    l.review = { agentChecks: [] }; // no human record
     expect(publicationIssues(l).length).toBeGreaterThan(0);
     l.review = { agentChecks: [], reviewedBy: 'AB', reviewerRole: 'parent', reviewedAt: '2026-11-10' };
     expect(publicationIssues(l)).toEqual([]);
     expect(isVisible(l, 'reviewed')).toBe(true);
   });
   it('agent-reviewed content is hidden when production requires human review', () => {
-    expect(isVisible(findRaw('lesson-g1-bonds-10-001'), 'reviewed')).toBe(false);
+    const l = findRaw('lesson-g1-bonds-10-001');
+    l.reviewStatus = 'agent_reviewed';
+    l.review = { agentChecks: ['schema'] };
+    expect(isVisible(l, 'reviewed')).toBe(false);
+    expect(isVisible(l, 'agent_reviewed')).toBe(true);
   });
   it('production can never lower the minimum review below "reviewed"', () => {
     expect(resolveMinReview('agent_reviewed', 'production')).toBe('reviewed');

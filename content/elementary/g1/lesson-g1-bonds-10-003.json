@@ -1,27 +1,78 @@
 {
   "id": "lesson-g1-bonds-10-003",
   "skillId": "MATH-G1-BONDS-10",
-  "title": { "en": "Number bond sentences", "id": "Kalimat ikatan bilangan" },
+  "title": {
+    "en": "Number bond sentences",
+    "id": "Kalimat ikatan bilangan"
+  },
   "ageBand": "g1",
   "domain": "mathematics",
   "mode": "interactive",
-  "objective": { "en": "Complete addition sentences that make a whole up to 10.", "id": "Melengkapi kalimat penjumlahan yang membuat keseluruhan sampai 10." },
-  "prerequisites": ["MATH-G1-COUNT-20"],
+  "objective": {
+    "en": "Complete addition sentences that make a whole up to 10.",
+    "id": "Melengkapi kalimat penjumlahan yang membuat keseluruhan sampai 10."
+  },
+  "prerequisites": [
+    "MATH-G1-COUNT-20"
+  ],
   "cpaStage": "abstract",
-  "materials": [{ "en": "Number pad", "id": "Papan angka" }],
+  "materials": [
+    {
+      "en": "Number pad",
+      "id": "Papan angka"
+    }
+  ],
   "generator": "bond-equation",
   "hintLadder": [
-    { "en": "Read the sentence aloud. Which number is missing?", "id": "Bacakan kalimatnya dengan suara keras. Angka mana yang hilang?" },
-    { "en": "The total is {whole}. You already have {part}.", "id": "Jumlahnya {whole}. Kamu sudah punya {part}." },
-    { "en": "Here is a number bond picture to help.", "id": "Ini gambar ikatan bilangan untuk membantu." },
-    { "en": "Count on from {part} to {whole} on your fingers.", "id": "Hitung lanjut dari {part} sampai {whole} dengan jarimu." },
-    { "en": "{part} + {missing} = {whole}. Let's try a new one.", "id": "{part} + {missing} = {whole}. Ayo coba soal baru." }
+    {
+      "en": "Read the sentence aloud. Which number is missing?",
+      "id": "Bacakan kalimatnya dengan suara keras. Angka mana yang hilang?"
+    },
+    {
+      "en": "The total is {whole}. You already have {part}.",
+      "id": "Jumlahnya {whole}. Kamu sudah punya {part}."
+    },
+    {
+      "en": "Here is a number bond picture to help.",
+      "id": "Ini gambar ikatan bilangan untuk membantu."
+    },
+    {
+      "en": "Count on from {part} to {whole} on your fingers.",
+      "id": "Hitung lanjut dari {part} sampai {whole} dengan jarimu."
+    },
+    {
+      "en": "{part} + {missing} = {whole}. Let's try a new one.",
+      "id": "{part} + {missing} = {whole}. Ayo coba soal baru."
+    }
   ],
-  "misconceptionCodes": ["COUNTING_ERROR", "PART_WHOLE_CONFUSION", "WHOLE_AS_PART", "ADDED_PARTS"],
+  "misconceptionCodes": [
+    "COUNTING_ERROR",
+    "PART_WHOLE_CONFUSION",
+    "WHOLE_AS_PART",
+    "ADDED_PARTS"
+  ],
   "safetyNotes": [],
-  "parentNotes": [{ "en": "If your child guesses, go back to counters. Symbols come after understanding.", "id": "Jika anak menebak, kembali ke keping. Simbol datang setelah pemahaman." }],
-  "offlineExtension": { "en": "Play 'hidden fingers': show 10 fingers, fold some down, and ask how many are folded.", "id": "Main 'jari tersembunyi': tunjukkan 10 jari, lipat sebagian, dan tanyakan berapa yang dilipat." },
-  "reviewStatus": "agent_reviewed",
-  "review": { "agentChecks": ["schema", "math-truth-property-tests", "bilingual-parity", "tone"] },
+  "parentNotes": [
+    {
+      "en": "If your child guesses, go back to counters. Symbols come after understanding.",
+      "id": "Jika anak menebak, kembali ke keping. Simbol datang setelah pemahaman."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Play 'hidden fingers': show 10 fingers, fold some down, and ask how many are folded.",
+    "id": "Main 'jari tersembunyi': tunjukkan 10 jari, lipat sebagian, dan tanyakan berapa yang dilipat."
+  },
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "bilingual-parity",
+      "tone"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
+  },
   "contentVersion": "1.0.0"
 }

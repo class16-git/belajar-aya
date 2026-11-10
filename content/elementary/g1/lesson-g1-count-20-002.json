@@ -57,14 +57,17 @@
     "en": "Count spoons while setting the table, then check by pairing each spoon with a plate.",
     "id": "Hitung sendok saat menata meja, lalu periksa dengan memasangkan setiap sendok dengan piring."
   },
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
       "math-truth-property-tests",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0"
 }
