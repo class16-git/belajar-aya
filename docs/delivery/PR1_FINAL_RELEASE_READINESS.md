@@ -4,8 +4,8 @@
 |---|---|
 | PR | class16-git/belajar-aya#1 (`claude/github-repo-access-nkrthi` → `main`) |
 | Last commit verified on GitHub CI | `49a6cf38b1c7cb7428c4bb05e2509caefe169681` — CI run 42749955530 ✅ success |
-| Commit verified in this report | `1af7a6dbb5c9f7e31fa2c141969aeeee35f42c67` (this report is committed on top of it) |
-| Pushed? | **No.** Commits after `49a6cf3` are local only, per the owner's instruction "commit, but do not push without approval". GitHub CI has therefore **not** run on `1af7a6d`; the identical CI steps were run locally (below). |
+| Commit verified in this report | `d14a500c2fdd35519d2d264d6d2c9dcafc70840a` (this report is committed on top of it) |
+| Pushed? | PR #1 was merged at `49a6cf3` (merge `e23b2a9`) before these fixes were pushed. They were rebased onto `main` without conflicts and pushed with owner approval as follow-up PR #2. The identical CI steps were run locally (below); GitHub CI runs on PR #2. |
 | Data used | Synthetic only (demo family "Kakak"/"Adek" with fake DOBs, `@example.test` emails) |
 | Author of this report | The coding agent (self-assessment). Independent evidence is labelled as such. |
 
@@ -20,7 +20,7 @@ All known release-blocking defects (P0/P1) found by self-review, by Codex and by
 covered by regression tests. This does **not** mean the application is bug-free or completely secure; a human
 security review / penetration test is still required before inviting external families (spec launch gate).
 
-## 2. Test evidence (local run of the CI sequence on `1af7a6d`)
+## 2. Test evidence (local run of the CI sequence on `d14a500`)
 
 | Stage | Command | Result |
 |---|---|---|
@@ -95,7 +95,7 @@ no secrets in the repository.
 | Item stranded in ended session (N4) | 200 | 409 |
 
 ## 7. UI/UX verification
-- 81 screenshots regenerated on `1af7a6d` at 390/820/1440 px (`artifacts/screenshots/`), covering all 12 spec screens and
+- 81 screenshots regenerated on `d14a500` at 390/820/1440 px (`artifacts/screenshots/`), covering all 12 spec screens and
   states (intro, concrete/pictorial/abstract, hint+representation, wrong, supported, correct, worked example, summary,
   offline error, PIN gate, print view, Indonesian dashboard).
 - Automated: no horizontal overflow at any viewport; every child control ≥ 44 px; axe 0 violations; keyboard-only flow;
@@ -127,5 +127,5 @@ no secrets in the repository.
 | Mastery thresholds are unvalidated heuristics | Educator validation (Phase 3) |
 
 ## 10. Commits in this round (local, unpushed)
-- `1af7a6d` fix: final security review — child-mode escape, stale items, DB identity guard, rate limits
+- `d14a500` fix: final security review — child-mode escape, stale items, DB identity guard, rate limits
 - (this report) docs: PR #1 final release-readiness report
