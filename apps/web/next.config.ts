@@ -1,4 +1,5 @@
 import type { NextConfig } from 'next';
+import { PrismaPlugin } from '@prisma/nextjs-monorepo-workaround-plugin';
 
 const isDev = process.env.NODE_ENV !== 'production';
 const csp = [
@@ -19,6 +20,11 @@ const config: NextConfig = {
   poweredByHeader: false,
   transpilePackages: ['@atlas/shared', '@atlas/curriculum', '@atlas/assessment', '@atlas/adaptive', '@atlas/ai', '@atlas/database'],
   outputFileTracingRoot: new URL('../../', import.meta.url).pathname,
+  webpack(cfg, { isServer }) {
+    // Copy Prisma's query engine next to the server bundle (pnpm monorepo on Vercel).
+    if (isServer) cfg.plugins = [...(cfg.plugins ?? []), new PrismaPlugin()];
+    return cfg;
+  },
   async headers() {
     return [
       {

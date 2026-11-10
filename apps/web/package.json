@@ -10,7 +10,8 @@
     "lint": "eslint src e2e",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "vitest run",
-    "test:e2e": "playwright test --trace off"
+    "test:e2e": "playwright test --trace off",
+    "vercel-build": "node scripts/vercel-build.mjs"
   },
   "dependencies": {
     "@atlas/adaptive": "workspace:*",
@@ -40,6 +41,7 @@
     "typescript": "5.9.3",
     "typescript-eslint": "8.72.0",
     "vitest": "3.2.7",
-    "@prisma/client": "6.19.3"
+    "@prisma/client": "6.19.3",
+    "@prisma/nextjs-monorepo-workaround-plugin": "6.19.3"
   }
 }

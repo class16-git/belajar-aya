@@ -5,6 +5,9 @@
 - No live or staging URL exists: deployment needs a host, database and your authorisation (ADR-0006).
 - Evidence: TEST_REPORT.md, UX_QA_REPORT.md, SECURITY_REVIEW.md, RELEASE_SIGNOFF.md, `artifacts/screenshots/`.
 
+## Try it without installing anything
+Follow [PREVIEW_DEPLOYMENT.md](PREVIEW_DEPLOYMENT.md) to get a private Vercel preview link (synthetic data only).
+
 ## Try it locally (≈5 minutes)
 Follow README "Quick start". Sign in as the synthetic demo parent, then:
 1. **Family** → *Start learning* for Kakak → pick an activity → try a ten-frame item, ask for help, answer wrong once.
