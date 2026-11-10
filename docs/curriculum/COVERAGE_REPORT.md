@@ -9,8 +9,8 @@ Curriculum version 2026.11.0 · 120 objectives · 59 lessons
 | planned | 81 |
 | draft | 1 |
 | awaiting religious review | 1 |
-| awaiting review | 0 |
-| published | 37 |
+| awaiting review | 2 |
+| published | 35 |
 
 ## Published / total objectives by stage and framework
 
@@ -18,8 +18,8 @@ Curriculum version 2026.11.0 · 120 objectives · 59 lessons
 |---|---|---|---|---|
 | Age 2–3 | 4/5 | 1/2 | 0/2 | 0/3 (+1 unpublished) |
 | Age 3–4 | 4/4 | 4/4 | 2/2 | 0/3 |
-| Age 4–5 | 3/3 | 2/2 | 2/2 | 0/4 |
-| Kindergarten | 3/3 | 3/3 | 2/2 | 0/3 |
+| Age 4–5 | 2/3 (+1 unpublished) | 2/2 | 2/2 | 0/4 |
+| Kindergarten | 3/3 | 3/3 | 1/2 (+1 unpublished) | 0/3 |
 | Grade 1 | 0/3 | 4/8 (+1 unpublished) | 3/3 | 0/5 |
 | Grade 2 | 0/3 | 0/4 | 0/2 | 0/4 |
 | Grade 3 | 0/2 | 0/4 | 0/2 | 0/3 |
@@ -74,7 +74,7 @@ Curriculum version 2026.11.0 · 120 objectives · 59 lessons
 | `islm.age4_5.prophet-stories` Listens to selected prophetic stories about kindness | Islamic studies / seerah | planned | — | religious_content, source_verification |
 | `mont.age4_5.sound-letter` Connects sounds to letters with tactile letters | Montessori / language | published | lesson-prek-sound-letter-001 | — |
 | `mont.age4_5.movable-letters` Builds simple words with movable letters before writing them | Montessori / language | published | lesson-prek-movable-letters-001 | — |
-| `mont.age4_5.continents-life-cycles` Names continents on a globe and orders a simple life cycle | Montessori / culture | published | lesson-prek-world-cycles-001 | — |
+| `mont.age4_5.continents-life-cycles` Names continents on a globe and orders a simple life cycle | Montessori / culture | awaiting review | lesson-prek-world-cycles-001 | — |
 | `robo.age4_5.adult-robot-algorithm` Gives step-by-step instructions to an 'adult robot' and fixes mistakes | Robotics/STEM / sequencing_algorithms | published | lesson-robo-prek-adult-robot-001 | — |
 | `robo.age4_5.gears-building` Builds with gears and notices how they turn | Robotics/STEM / mechanics | published | lesson-robo-prek-gears-001 | physical_safety |
 | `math.age4_5.compose-10` Composes and decomposes numbers within 10 with objects | Maths (CPA) / number | published | lesson-prek-compose-10-001 | — |
@@ -91,7 +91,7 @@ Curriculum version 2026.11.0 · 120 objectives · 59 lessons
 | `mont.k.maps-botany` Uses a simple map and names parts of a plant | Montessori / culture | published | lesson-k-maps-plants-001 | — |
 | `mont.k.time-routines` Sequences daily routines and talks about morning, afternoon and night | Montessori / practical_life | published | lesson-k-routines-001 | — |
 | `robo.k.loops-repeat` Uses repeat to shorten a sequence and predicts the result | Robotics/STEM / sequencing_algorithms | published | lesson-robo-k-loops-001 | — |
-| `robo.k.linkages` Builds a simple linkage (moving arm) from card | Robotics/STEM / mechanics | published | lesson-robo-k-linkage-001 | physical_safety |
+| `robo.k.linkages` Builds a simple linkage (moving arm) from card | Robotics/STEM / mechanics | awaiting review | lesson-robo-k-linkage-001 | physical_safety |
 | `math.k.bonds-20` Number bonds within 20 with ten-frames | Maths (CPA) / number | published | lesson-k-bonds-20-001, lesson-k-bonds-20-002 | — |
 | `math.k.tens-ones-intro` Sees teen numbers as ten and some ones | Maths (CPA) / place_value | published | lesson-k-teens-001, lesson-k-teens-002 | — |
 | `math.k.picture-word-problems` Solves picture word problems by acting them out | Maths (CPA) / data_problem_solving | published | lesson-k-picture-problems-001, lesson-k-picture-story-001 | — |
@@ -205,4 +205,6 @@ Curriculum version 2026.11.0 · 120 objectives · 59 lessons
 |---|---|---|---|
 | `lesson-g1-draft-example` | draft | author, content_review | Draft content cannot be published |
 | `lesson-islm-meal-adab-001` | draft | author, religious_review, content_review | Draft content cannot be published; Religious review is unverified; Arabic phrases are not verified |
+| `lesson-prek-world-cycles-001` | agent_reviewed | content_review | — |
+| `lesson-robo-k-linkage-001` | agent_reviewed | content_review | — |
 

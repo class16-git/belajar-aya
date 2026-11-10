@@ -222,3 +222,16 @@ test('ATL-14: pages hydrate under the report-only nonce CSP with zero violations
   const rep = await page.request.post('/api/csp-report', { headers: { 'Content-Type': 'application/csp-report' }, data: { 'csp-report': { 'document-uri': `${baseURL}/privacy?x=1`, 'effective-directive': 'script-src-elem', 'blocked-uri': 'inline' } } });
   expect(rep.status()).toBe(204);
 });
+
+test('ATL-12: /api/health reports the release, threshold and a content digest that matches the release manifest', async ({ request }) => {
+  const h = await (await request.get('/api/health')).json();
+  expect(h.ok).toBe(true);
+  expect(h.contentDigest).toMatch(/^[0-9a-f]{16}$/);
+  // The same manifest computed from the checkout by the release CLI.
+  const { execFileSync } = await import('node:child_process');
+  const out = execFileSync('pnpm', ['--silent', '--filter', '@atlas/curriculum', 'release-manifest', `--min=${h.minReview}`], { cwd: '../..', encoding: 'utf8' });
+  const m = JSON.parse(out.slice(out.indexOf('{')));
+  expect(h.contentDigest).toBe(m.contentDigest);
+  expect(h.visible).toEqual(m.visible);
+  expect(JSON.stringify(h)).not.toMatch(/lesson-|book-|passage-/); // counts and digest only, no content
+});

@@ -5,8 +5,12 @@ A calm, private, bilingual (English / Bahasa Indonesia) learning space for a fam
 practice** (ten-frames, number bonds, CPA progression) for early primary learners, with a transparent
 rule-based adaptive engine and a parent dashboard.
 
-> Status: **Phase 0 + Phase 1 vertical slice — agent QA passed, awaiting owner UX approval.**
-> Not deployed. See [`docs/delivery/HANDOVER.md`](docs/delivery/HANDOVER.md).
+> **Status:** live as a **limited-scope family pilot** at https://atlas.ichlasulamalsudarmi.com. The scope is set out
+> in [`docs/delivery/RELEASE_SCOPE.md`](docs/delivery/RELEASE_SCOPE.md).
+> - **What is live:** `/api/health` reports the deployed commit and a content digest. Each release is recorded in
+>   [`docs/delivery/RELEASES.md`](docs/delivery/RELEASES.md).
+> - **Deploy and rollback:** [`docs/delivery/RELEASE_RUNBOOK.md`](docs/delivery/RELEASE_RUNBOOK.md).
+> - **Current handover:** [`docs/delivery/FINAL_HANDOVER.md`](docs/delivery/FINAL_HANDOVER.md).
 
 - No ads, trackers, streaks, leaderboards or child-facing AI chat.
 - Works with **no AI provider at all** — grading, mastery and recommendations are deterministic.

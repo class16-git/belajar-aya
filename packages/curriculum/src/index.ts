@@ -4,3 +4,4 @@ export * from './catalog';
 export { fillTemplate } from './template';
 export * from './coverage';
 export * from './library';
+export * from './manifest';

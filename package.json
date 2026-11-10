@@ -24,7 +24,8 @@
     "content:religious-approve": "pnpm --filter @atlas/curriculum religious-approve",
     "curriculum:coverage": "pnpm --filter @atlas/curriculum coverage",
     "library:approve": "pnpm --filter @atlas/curriculum library-approve",
-    "library:withdraw": "pnpm --filter @atlas/curriculum library-withdraw"
+    "library:withdraw": "pnpm --filter @atlas/curriculum library-withdraw",
+    "release:manifest": "pnpm --silent --filter @atlas/curriculum release-manifest"
   },
   "devDependencies": {
     "prettier": "3.6.2",

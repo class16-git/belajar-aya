@@ -139,3 +139,17 @@ describe('physical-safety hazard consistency (audit ATL-10)', () => {
     expect(isVisible(card, 'agent_reviewed')).toBe(true);
   });
 });
+
+describe('release manifest (audit ATL-12)', () => {
+  it('is deterministic, counts what each threshold shows, and the digest changes with the visible content', async () => {
+    const { contentManifest } = await import('./manifest');
+    const a = contentManifest('reviewed');
+    expect(contentManifest('reviewed')).toEqual(a);
+    expect(a.contentDigest).toMatch(/^[0-9a-f]{16}$/);
+    expect(a.visible.lessons).toBe(getCatalog().lessons.filter((l) => isVisible(l, 'reviewed')).length);
+    expect(a.ids.lessons).not.toContain('lesson-robo-k-linkage-001'); // withheld (ATL-10)
+    const preview = contentManifest('agent_reviewed');
+    expect(preview.contentDigest).not.toBe(a.contentDigest);
+    expect(preview.visible.lessons).toBeGreaterThan(a.visible.lessons);
+  });
+});
