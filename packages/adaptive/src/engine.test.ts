@@ -292,6 +292,23 @@ describe('slice B golden traces: addition & subtraction within 10, bar-model sto
   });
 });
 
+describe('slice D golden traces: Grade 1 robotics (trace and debug)', () => {
+  const ROBO = 'MATH-G1-COUNT-20';
+  it('robot activities join the choices once counting is secure, tracing first, and need both formats to be secure', () => {
+    const l = new Learner();
+    const fresh = lessonChoices(l.input(at(0)), recommendNext(l.input(at(0))));
+    expect(fresh.some((c) => c.skillId === 'ROBO-G1-DEBUG')).toBe(false);
+    for (const f of ['count-ten-frame', 'count-scattered', 'count-ten-frame', 'count-scattered']) l.answer(ok(ROBO, f));
+    const focused = recommendNext(l.input(at(10), 'ROBO-G1-DEBUG'));
+    expect(focused.kind === 'interactive' && focused.ruleId).toBe('R3_PARENT_FOCUS');
+    expect(focused.kind === 'interactive' && focused.lessonId).toBe('lesson-robo-g1-trace-001');
+    for (let i = 0; i < 5; i++) l.answer(ok('ROBO-G1-DEBUG', 'robot-trace'));
+    expect(masteryStatus(l.mastery.get('ROBO-G1-DEBUG'), at(20))).toBe('in_progress');
+    l.answer(ok('ROBO-G1-DEBUG', 'robot-debug'));
+    expect(masteryStatus(l.mastery.get('ROBO-G1-DEBUG'), at(20))).toBe('secure');
+  });
+});
+
 describe('offline card recommendations', () => {
   it('suggests varied skills, least recently observed first', () => {
     const cards = getCatalog().lessons.filter((l) => l.mode === 'offline');

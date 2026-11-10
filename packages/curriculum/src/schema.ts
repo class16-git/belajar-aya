@@ -128,6 +128,9 @@ export const GENERATOR_IDS = [
   'sub-bond',
   'sub-equation',
   'bar-model-story',
+  // Slice D (Grade 1 unplugged robotics, on screen): trace a program, find the wrong step.
+  'robot-trace',
+  'robot-debug',
 ] as const;
 export type GeneratorId = (typeof GENERATOR_IDS)[number];
 

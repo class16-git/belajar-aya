@@ -1,0 +1,160 @@
+{
+  "ageBand": "g1",
+  "domain": "robotics_stem",
+  "framework": "robotics_stem",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "arabicPhrases": [],
+  "contentVersion": "1.0.0",
+  "safetyNotes": [
+    {
+      "en": "An adult stays within reach for the whole activity.",
+      "id": "Orang dewasa tetap dalam jangkauan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    },
+    {
+      "en": "Walk, do not run, on the grid; keep the floor dry and clear.",
+      "id": "Berjalan, jangan berlari, di petak; jaga lantai tetap kering dan lapang."
+    },
+    {
+      "en": "The adult does all the cutting.",
+      "id": "Orang dewasa yang melakukan semua pengguntingan."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "mode": "offline",
+  "cpaStage": "not_applicable",
+  "prerequisites": [],
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "id": "lesson-robo-g1-grid-001",
+  "skillId": "ROBO-G1-GRID",
+  "objectiveIds": [
+    "robo.g1.grid-robot"
+  ],
+  "reviewFlags": [
+    "physical_safety"
+  ],
+  "title": {
+    "en": "Floor-grid robot",
+    "id": "Robot petak lantai"
+  },
+  "objective": {
+    "en": "Write an arrow program on cards so a ‘robot’ (a grown-up or a toy) reaches a target on a floor grid, then test and fix it.",
+    "id": "Menulis program panah di kartu agar ‘robot’ (orang dewasa atau mainan) sampai ke sasaran di petak lantai, lalu menguji dan memperbaikinya."
+  },
+  "prepMinutes": 10,
+  "activityMinutes": {
+    "min": 10,
+    "max": 15
+  },
+  "materials": [
+    {
+      "en": "Low-tack tape to make a 4 × 4 grid on the floor (squares about one big step wide)",
+      "id": "Selotip yang mudah dilepas untuk membuat petak 4 × 4 di lantai (kotak kira-kira selebar satu langkah besar)"
+    },
+    {
+      "en": "About 10 arrow cards (up, down, left, right) cut from paper by the adult",
+      "id": "Sekitar 10 kartu panah (atas, bawah, kiri, kanan) yang digunting orang dewasa dari kertas"
+    },
+    {
+      "en": "A soft toy as the target",
+      "id": "Boneka lembut sebagai sasaran"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Tape the grid on a clear floor away from stairs and furniture corners.",
+      "id": "Tempel petak di lantai yang lapang, jauh dari tangga dan sudut perabot."
+    },
+    {
+      "en": "Place the robot in one corner square and the toy in another square.",
+      "id": "Letakkan robot di satu kotak sudut dan boneka di kotak lain."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Your child lays arrow cards in a row: the program. Agree that arrows point the way the robot moves on the grid (not its own left and right).",
+      "id": "Anak menyusun kartu panah dalam satu baris: itulah programnya. Sepakati bahwa panah menunjuk arah gerak robot di petak (bukan kiri-kanan robot sendiri)."
+    },
+    {
+      "en": "Before running it, ask: ‘Where do you think the robot will stop?’",
+      "id": "Sebelum dijalankan, tanyakan: ‘Menurutmu robot akan berhenti di mana?’"
+    },
+    {
+      "en": "Run the program exactly as written, one card at a time, saying ‘beep’ for each step.",
+      "id": "Jalankan program persis seperti yang ditulis, satu kartu setiap kali, sambil berkata ‘bip’ untuk setiap langkah."
+    },
+    {
+      "en": "If the robot misses, ask which card to change, fix it, and run again.",
+      "id": "Jika robot meleset, tanyakan kartu mana yang perlu diganti, perbaiki, lalu jalankan lagi."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "I am a robot. I only do what the cards say.",
+      "id": "Aku robot. Aku hanya melakukan apa yang tertulis di kartu."
+    },
+    {
+      "en": "Where should we look for the bug?",
+      "id": "Di mana kita harus mencari kesalahannya?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Rubric 1 — Plans: lays out a full program before running it",
+      "id": "Rubrik 1 — Merencanakan: menyusun program lengkap sebelum menjalankannya"
+    },
+    {
+      "en": "Rubric 2 — Predicts: says where the robot will stop",
+      "id": "Rubrik 2 — Menebak: menyebut di mana robot akan berhenti"
+    },
+    {
+      "en": "Rubric 3 — Debugs: finds and changes the wrong card",
+      "id": "Rubrik 3 — Memperbaiki: menemukan dan mengganti kartu yang salah"
+    },
+    {
+      "en": "Rubric 4 — Explains: says why the change works",
+      "id": "Rubrik 4 — Menjelaskan: mengatakan mengapa perubahannya berhasil"
+    }
+  ],
+  "cleanup": {
+    "en": "Peel off the tape together and keep the arrow cards in an envelope.",
+    "id": "Lepaskan selotip bersama dan simpan kartu panah di amplop."
+  },
+  "variations": [
+    {
+      "en": "Add an obstacle square the robot must go around.",
+      "id": "Tambahkan kotak rintangan yang harus dilewati robot."
+    },
+    {
+      "en": "Use a ‘repeat 2×’ card to make the program shorter.",
+      "id": "Gunakan kartu ‘ulangi 2×’ agar program lebih pendek."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "Use the four rubric lines as your observation: note which ones you saw. There is no score for the child.",
+      "id": "Gunakan empat baris rubrik sebagai pengamatan: catat mana yang Anda lihat. Tidak ada nilai untuk anak."
+    }
+  ]
+}

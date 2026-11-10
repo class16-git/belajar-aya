@@ -203,7 +203,9 @@
       "delivery": "blended",
       "assessment": "rubric",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "ROBO-G1-GRID"
+        ]
       },
       "reviewFlags": [
         "physical_safety"
@@ -227,7 +229,9 @@
       "delivery": "blended",
       "assessment": "digital",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "ROBO-G1-DEBUG"
+        ]
       },
       "reviewFlags": [],
       "requiresReligiousReview": false,
@@ -249,7 +253,9 @@
       "delivery": "offline",
       "assessment": "portfolio",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "ROBO-G1-SENSORS"
+        ]
       },
       "reviewFlags": [
         "physical_safety"

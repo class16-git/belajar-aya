@@ -4,12 +4,12 @@ import type { ActivityPayload } from '@/lib/server/learning';
 import { api } from '@/lib/api';
 import { fmt } from '@/lib/i18n';
 import { useI18n } from '@/lib/i18n/client';
-import { BarModel, Bond, Choices, Keypad, NumberBond, ScatteredDots, Sentence, type SentenceToken } from './models';
+import { BarModel, Bond, Choices, Keypad, NumberBond, RobotGrid, RobotProgram, ScatteredDots, Sentence, type SentenceToken } from './models';
 import { TenFrame } from './ten-frame';
 
 type Phase = 'loading' | 'intro' | 'answering' | 'wrong' | 'correct' | 'solution' | 'done' | 'error';
 interface Hint { level: number; text: string; showRepresentation: boolean; workedExample: boolean }
-interface Solution { part?: number; other?: number; whole?: number; missing?: number; count?: number; answer: number }
+interface Solution { part?: number; other?: number; whole?: number; missing?: number; count?: number; end?: number; wrong?: number; answer: number }
 interface AttemptResult { correct: boolean; independent: boolean; misconception: string | null; finished: boolean; solution: Solution | null; triesLeft: number }
 interface Summary { worked: number; onOwn: number; withHelp: number }
 
@@ -147,6 +147,10 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
     ? ''
     : solution.count !== undefined
       ? fmt(t.learn.solutionCount, { count: solution.count })
+      : act.generator === 'robot-trace'
+        ? fmt(t.learn.solutionRobotTrace, { end: solution.answer })
+      : act.generator === 'robot-debug'
+        ? fmt(t.learn.solutionRobotDebug, { wrong: solution.answer })
       : act.generator === 'bar-model-story'
         ? fmt(t.learn.solutionStory, sv)
         : act.generator.startsWith('add-')
@@ -270,6 +274,18 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
                   </div>
                 )}
               </>
+            )}
+            {p.kind === 'robot-trace' && (
+              <div className="space-y-4">
+                <RobotGrid size={p.size} start={p.start} program={p.program} markers={p.markers} pathSteps={showRep ? (phase === 'solution' || phase === 'correct' ? p.program.length : p.program.length - 1) : 0} />
+                <RobotProgram program={p.program} />
+              </div>
+            )}
+            {p.kind === 'robot-debug' && (
+              <div className="space-y-4">
+                <RobotGrid size={p.size} start={p.start} program={p.program} target={p.target} pathSteps={showRep ? p.program.length : 0} />
+                <RobotProgram program={p.program} highlight={revealed} />
+              </div>
             )}
             {p.kind === 'bond-equation' && (
               <>
