@@ -206,7 +206,8 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
             {p.kind === 'number-bond' && (
               <>
                 <NumberBond whole={p.whole} part={p.knownPart} unknownSide={p.unknownSide} revealed={phase === 'correct' || phase === 'solution' ? (solution?.answer ?? null) : null} />
-                {showRep && <div className="mt-4"><TenFrame filled={p.knownPart} mode="fill" marked={marked} onToggle={toggle} highlightEmpty /></div>}
+                {/* ATL-03: the scaffold holds exactly `whole` cells, so the empty ones match the missing part. */}
+                {showRep && <div className="mt-4"><TenFrame filled={p.knownPart} frames={p.whole > 10 ? 2 : 1} capacity={p.whole} mode="fill" marked={marked} onToggle={toggle} highlightEmpty /></div>}
               </>
             )}
             {p.kind === 'add-counters' && (

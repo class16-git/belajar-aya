@@ -206,7 +206,11 @@ export function recommendNext(input: RecommendInput): Recommendation {
   }
 
   // R7: everything available is secure/mastered and nothing is due — light practice on the least recent.
-  const practice = [...eligible].sort((a, b) => (mastery.get(a.id)?.lastEvidenceAt ?? '').localeCompare(mastery.get(b.id)?.lastEvidenceAt ?? ''))[0];
+  // ATL-04: never assume earlier rules made everything secure — only practise skills whose prerequisites are met and
+  // which are themselves secure or mastered.
+  const practice = eligible
+    .filter((sk) => prereqsSatisfied(sk) && unlocksDependants(mastery.get(sk.id)))
+    .sort((a, b) => (mastery.get(a.id)?.lastEvidenceAt ?? '').localeCompare(mastery.get(b.id)?.lastEvidenceAt ?? ''))[0];
   if (practice) {
     const r = make(practice, 'R7_ALL_SECURE_PRACTICE', R(`Light practice on ${practice.title.en} until the next review is due.`, `Latihan ringan ${practice.title.id} sampai jadwal tinjauan berikutnya.`));
     if (r) return r;

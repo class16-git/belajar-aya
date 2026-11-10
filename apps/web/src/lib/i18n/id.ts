@@ -257,6 +257,7 @@ export const id: Dictionary = {
       filledCell: 'Keping {n}',
       placedCell: 'Keping yang diletakkan {n}. Sentuh untuk mengambil.',
       bond: 'Ikatan bilangan. Keseluruhan {whole}. Bagian {left} dan {right}.',
+      unusedCell: 'Bukan bagian dari bilangan ini',
       unknown: 'belum diketahui',
       secondCounter: 'Keping {n}, kelompok kedua',
       takenCounter: 'Keping {n}, diambil',

@@ -54,6 +54,10 @@ jobs:
       - name: Dependency audit (high+)
         run: pnpm audit --prod --audit-level high
       - run: pnpm db:migrate
+      - name: Mark the disposable CI database as synthetic (E2E refuses unmarked databases, ATL-01)
+        run: pnpm --filter @atlas/database db-role synthetic
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/atlas_test
       - name: Build (preview)
         run: pnpm --filter @atlas/web build
         env:
