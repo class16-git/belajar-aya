@@ -1,0 +1,108 @@
+{
+  "id": "book-bookdash-feathered-friends",
+  "sourceId": "book_dash",
+  "title": "Feathered Friends",
+  "creators": [
+    {
+      "name": "Jacqui L’Ange",
+      "role": "writer"
+    },
+    {
+      "name": "Daniela Hammond",
+      "role": "illustrator"
+    },
+    {
+      "name": "Steph Pretorius",
+      "role": "designer"
+    },
+    {
+      "name": "Helen Moffett",
+      "role": "editor"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [],
+  "isbn": "978-1-928442-10-3",
+  "synopsis": {
+    "en": "On a walk, two boys meet many different penguins and one special friend, and discover that growing up is an adventure too.",
+    "id": "Saat berjalan-jalan, dua anak laki-laki bertemu banyak penguin yang berbeda dan seorang teman istimewa, lalu menemukan bahwa tumbuh besar juga sebuah petualangan."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/feathered-friends/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“Feathered Friends” by Jacqui L’Ange, Daniela Hammond, published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/feathered-friends/",
+        "quote": "Title page read: title, credits and ISBN 978-1-928442-10-3 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "k",
+    "g1"
+  ],
+  "role": "shared_reading",
+  "topics": [
+    "animals",
+    "nature"
+  ],
+  "sensitiveThemes": [],
+  "strands": [
+    "comprehension",
+    "vocabulary"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "What do you know about penguins? Where do they live?",
+        "id": "Apa yang kamu tahu tentang penguin? Di mana mereka tinggal?"
+      }
+    ],
+    "during": [
+      {
+        "en": "How are the penguins different from each other?",
+        "id": "Apa perbedaan penguin-penguin itu satu sama lain?"
+      }
+    ],
+    "after": [
+      {
+        "en": "What was the big change? How do you change as you grow?",
+        "id": "Apa perubahan besarnya? Bagaimana kamu berubah saat tumbuh besar?"
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Compare a baby photo and a recent photo of your child; name three things that changed and one that stayed the same.",
+      "id": "Bandingkan foto bayi dan foto terbaru anak; sebutkan tiga hal yang berubah dan satu yang tetap sama."
+    },
+    "stem": {
+      "en": "Penguin huddle: test which keeps an ice cube longer, a cube alone or one wrapped in a cloth.",
+      "id": "Kerumunan penguin: uji mana yang lebih lama mencair, es batu sendirian atau yang dibungkus kain."
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}

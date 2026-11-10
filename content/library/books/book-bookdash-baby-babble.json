@@ -1,0 +1,104 @@
+{
+  "id": "book-bookdash-baby-babble",
+  "sourceId": "book_dash",
+  "title": "Baby Babble",
+  "creators": [
+    {
+      "name": "Katherine Graham",
+      "role": "writer"
+    },
+    {
+      "name": "Nicola Anne Smith",
+      "role": "illustrator"
+    },
+    {
+      "name": "Sarah Slater",
+      "role": "designer"
+    },
+    {
+      "name": "Nicola Rijsdijk",
+      "role": "editor"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [],
+  "isbn": "978-1-928497-29-5",
+  "synopsis": {
+    "en": "A baby makes happy, hungry and sleepy sounds through her day, from bath time to bedtime.",
+    "id": "Seorang bayi mengeluarkan bunyi senang, lapar, dan mengantuk sepanjang harinya, dari waktu mandi sampai waktu tidur."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/baby-babble/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“Baby Babble” by Katherine Graham, Nicola Anne Smith, published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/baby-babble/",
+        "quote": "Title page read: title, credits and ISBN 978-1-928497-29-5 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "age2_3",
+    "age3_4"
+  ],
+  "role": "read_aloud",
+  "topics": [
+    "daily_life",
+    "feelings"
+  ],
+  "sensitiveThemes": [],
+  "strands": [
+    "oral_language",
+    "vocabulary"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "Point to the baby on the cover. What is she doing?",
+        "id": "Tunjuk bayi di sampul. Apa yang sedang ia lakukan?"
+      }
+    ],
+    "during": [
+      {
+        "en": "Make the baby’s sounds together and point to what she needs.",
+        "id": "Tirukan bunyi bayi bersama dan tunjuk apa yang ia butuhkan."
+      }
+    ],
+    "after": [
+      {
+        "en": "Find the bath, the bed or the bowl in your own home.",
+        "id": "Cari bak mandi, tempat tidur, atau mangkuk di rumah sendiri."
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Put three real objects from the story (a cup, a towel, a blanket) on a mat and name them together.",
+      "id": "Letakkan tiga benda nyata dari cerita (gelas, handuk, selimut) di atas alas dan sebut namanya bersama."
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}

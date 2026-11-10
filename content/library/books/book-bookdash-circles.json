@@ -1,0 +1,120 @@
+{
+  "id": "book-bookdash-circles",
+  "sourceId": "book_dash",
+  "title": "Circles",
+  "creators": [
+    {
+      "name": "Alex Latimer",
+      "role": "writer"
+    },
+    {
+      "name": "Patrick Latimer",
+      "role": "illustrator"
+    },
+    {
+      "name": "Gordon Latimer",
+      "role": "designer"
+    },
+    {
+      "name": "Diane Awerbuck",
+      "role": "editor"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [
+    "Xitsonga",
+    "Setswana",
+    "Sepedi",
+    "Sesotho",
+    "Afrikaans",
+    "isiXhosa",
+    "isiZulu"
+  ],
+  "isbn": "978-1-928442-05-9",
+  "synopsis": {
+    "en": "On a young vulture’s first flight, his mother shows him that when one animal’s life ends, it becomes the start of new life for others.",
+    "id": "Pada penerbangan pertama seekor anak burung nasar, induknya menunjukkan bahwa ketika hidup seekor hewan berakhir, itu menjadi awal kehidupan baru bagi makhluk lain."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/circles/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“Circles” by Alex Latimer, Patrick Latimer, published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/circles/",
+        "quote": "Title page read: title, credits and ISBN 978-1-928442-05-9 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "k",
+    "g1",
+    "g2"
+  ],
+  "role": "shared_reading",
+  "topics": [
+    "animals",
+    "nature",
+    "science"
+  ],
+  "sensitiveThemes": [
+    "death_and_life_cycles"
+  ],
+  "strands": [
+    "comprehension",
+    "vocabulary"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "This book is about how nature reuses everything. Read it first yourself and decide if it suits your child today.",
+        "id": "Buku ini tentang bagaimana alam memanfaatkan kembali segalanya. Baca dulu sendiri dan putuskan apakah cocok untuk anak hari ini."
+      }
+    ],
+    "during": [
+      {
+        "en": "What does the mother vulture want her son to understand?",
+        "id": "Apa yang ingin dipahami induk burung nasar oleh anaknya?"
+      }
+    ],
+    "after": [
+      {
+        "en": "Where else do we see circles in nature (leaves, water, seasons)?",
+        "id": "Di mana lagi kita melihat lingkaran di alam (daun, air, musim)?"
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Make a simple leaf-to-soil jar: layer soil and dry leaves, keep it damp, and observe for several weeks.",
+      "id": "Buat toples daun-ke-tanah sederhana: lapisi tanah dan daun kering, jaga tetap lembap, dan amati selama beberapa minggu."
+    },
+    "stem": {
+      "en": "Draw a cycle diagram with arrows (leaf → soil → plant → leaf).",
+      "id": "Gambar diagram siklus dengan panah (daun → tanah → tanaman → daun)."
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}

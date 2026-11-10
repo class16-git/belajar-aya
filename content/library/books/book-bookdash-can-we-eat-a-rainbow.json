@@ -1,0 +1,109 @@
+{
+  "id": "book-bookdash-can-we-eat-a-rainbow",
+  "sourceId": "book_dash",
+  "title": "Can we eat a rainbow?",
+  "creators": [
+    {
+      "name": "Marion Drew",
+      "role": "writer"
+    },
+    {
+      "name": "Kelly Brown",
+      "role": "illustrator"
+    },
+    {
+      "name": "Katlego Modubu",
+      "role": "designer"
+    },
+    {
+      "name": "Ester Levinrad",
+      "role": "editor"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [],
+  "isbn": "978-1-997453-71-0",
+  "synopsis": {
+    "en": "Two friends want to eat a rainbow and go looking for one, with colourful results.",
+    "id": "Dua sahabat ingin makan pelangi dan pergi mencarinya, dengan hasil yang penuh warna."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/can-we-eat-a-rainbow/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“Can we eat a rainbow?” by Marion Drew, Kelly Brown, published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/can-we-eat-a-rainbow/",
+        "quote": "Title page read: title, credits and ISBN 978-1-997453-71-0 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "age3_4",
+    "age4_5",
+    "k"
+  ],
+  "role": "shared_reading",
+  "topics": [
+    "food",
+    "nature"
+  ],
+  "sensitiveThemes": [],
+  "strands": [
+    "oral_language",
+    "vocabulary"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "Can you really eat a rainbow? What do you think the friends will find?",
+        "id": "Bisakah kita benar-benar makan pelangi? Menurutmu apa yang akan ditemukan kedua sahabat itu?"
+      }
+    ],
+    "during": [
+      {
+        "en": "Name the colours you see on each page.",
+        "id": "Sebutkan warna yang kamu lihat di setiap halaman."
+      }
+    ],
+    "after": [
+      {
+        "en": "What was the ‘rainbow’ they found? What would your rainbow be?",
+        "id": "Apa ‘pelangi’ yang mereka temukan? Seperti apa pelangimu?"
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Wash and sort real fruit and vegetables into colour groups on plates (adult cuts if needed).",
+      "id": "Cuci dan pilah buah serta sayur asli ke kelompok warna di piring (orang dewasa yang memotong bila perlu)."
+    },
+    "maths": {
+      "en": "Count how many foods are in each colour group. Which group has the most?",
+      "id": "Hitung berapa makanan di setiap kelompok warna. Kelompok mana yang paling banyak?"
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}

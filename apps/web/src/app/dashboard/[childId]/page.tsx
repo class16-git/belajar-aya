@@ -9,6 +9,7 @@ import { StatusBadge } from '@/components/ui/status';
 import { fmt, getDictionary, gradeLabel } from '@/lib/i18n';
 import { currentLocale, requireParentPage } from '@/lib/server/guards';
 import { buildProgress } from '@/lib/server/progress';
+import { readingSummary } from '@/lib/server/library';
 
 export const metadata = { title: 'Progress' };
 export const dynamic = 'force-dynamic';
@@ -18,6 +19,7 @@ export default async function ChildDashboard({ params }: { params: Promise<{ chi
   const { childId } = await params;
   const child = await prisma.childProfile.findFirst({ where: { id: childId, familyId: auth.family.id } });
   if (!child) notFound();
+  const reading = await readingSummary(child.id);
   const locale = await currentLocale();
   const t = getDictionary(locale);
   const p = await buildProgress(child);
@@ -58,6 +60,22 @@ export default async function ChildDashboard({ params }: { params: Promise<{ chi
           <Link href="/curriculum" className="link">{t.nav.curriculum}</Link>
         </p>
       )}
+
+      <section className="card mt-6" aria-labelledby="reading-h" data-testid="reading-summary">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 id="reading-h" className="h2">{t.library.progress.title}</h2>
+          <Link href={`/library?child=${child.id}`} className="btn-secondary">{t.library.progress.open}</Link>
+        </div>
+        {reading.reads + reading.checks === 0 ? <p className="mt-2 muted">{t.library.progress.noData}</p> : (
+          <ul className="mt-2 grid gap-1 sm:grid-cols-2">
+            <li>{fmt(t.library.progress.sharedReads, { n: reading.reads })}</li>
+            <li>{fmt(t.library.progress.checks, { n: reading.checks })}</li>
+            {reading.listening !== null && <li>{fmt(t.library.progress.listening, { v: reading.listening })}</li>}
+            {reading.decoding !== null && <li>{fmt(t.library.progress.decoding, { v: reading.decoding })}</li>}
+          </ul>
+        )}
+        <p className="mt-2 text-sm muted">{t.library.progress.separate}</p>
+      </section>
 
       {!p.gradeSupported ? (
         <p className="card mt-6" data-testid="grade-not-supported">{fmt(t.dashboard.gradeNotSupported, { grade: gradeLabel(t, child.schoolGrade) })}</p>

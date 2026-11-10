@@ -16,7 +16,9 @@
     "approve": "tsx scripts/approve.ts",
     "index": "node scripts/index-content.mjs",
     "religious-approve": "tsx scripts/religious-approve.ts",
-    "coverage": "tsx scripts/coverage.ts"
+    "coverage": "tsx scripts/coverage.ts",
+    "library-approve": "tsx scripts/library-approve.ts",
+    "library-withdraw": "LIBRARY_ACTION=withdraw tsx scripts/library-approve.ts"
   },
   "dependencies": {
     "@atlas/shared": "workspace:*",

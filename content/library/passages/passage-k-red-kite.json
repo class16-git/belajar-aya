@@ -1,0 +1,100 @@
+{
+  "id": "passage-k-red-kite",
+  "stage": "k",
+  "title": {
+    "en": "The red kite",
+    "id": "Layang-layang merah"
+  },
+  "genre": "narrative",
+  "paragraphs": {
+    "en": [
+      "Dina has a red kite.",
+      "The wind is big. The kite goes up, up, up.",
+      "Dina runs and the kite flies. Dina is glad."
+    ],
+    "id": [
+      "Dina punya layang-layang merah.",
+      "Anginnya kencang. Layang-layang naik, naik, naik.",
+      "Dina berlari dan layang-layang terbang. Dina senang."
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What colour is the kite?",
+        "id": "Apa warna layang-layangnya?"
+      },
+      "choices": {
+        "en": [
+          "red",
+          "blue",
+          "green"
+        ],
+        "id": [
+          "merah",
+          "biru",
+          "hijau"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where does the kite go?",
+        "id": "Ke mana layang-layang pergi?"
+      },
+      "choices": {
+        "en": [
+          "down",
+          "up",
+          "into a box"
+        ],
+        "id": [
+          "turun",
+          "naik",
+          "ke dalam kotak"
+        ]
+      },
+      "answer": 1,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "How does Dina feel?",
+        "id": "Bagaimana perasaan Dina?"
+      },
+      "choices": {
+        "en": [
+          "sad",
+          "glad",
+          "angry"
+        ],
+        "id": [
+          "sedih",
+          "senang",
+          "marah"
+        ]
+      },
+      "answer": 1,
+      "evidenceParagraph": 2
+    }
+  ],
+  "copyrightStatus": "original",
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "readability-estimate"
+    ]
+  }
+}

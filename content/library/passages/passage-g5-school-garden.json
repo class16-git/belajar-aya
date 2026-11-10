@@ -1,0 +1,100 @@
+{
+  "id": "passage-g5-school-garden",
+  "stage": "g5",
+  "title": {
+    "en": "Two notes about the school garden",
+    "id": "Dua catatan tentang kebun sekolah"
+  },
+  "genre": "informational",
+  "paragraphs": {
+    "en": [
+      "Note A — from the garden club: “Our club grew 40 kilograms of vegetables this term. Students who worked in the garden learned to measure plant growth and keep records. We ask the school to double the garden’s size next year.”",
+      "Note B — from the sports teacher: “The garden is a good project, but it already uses part of the field. If it doubles, two classes will lose their outdoor game space. Perhaps the garden could grow upwards, using shelves on the wall.”",
+      "Both notes agree that the garden helps students learn. They disagree about how it should grow."
+    ],
+    "id": [
+      "Catatan A — dari klub berkebun: “Klub kami memanen 40 kilogram sayur semester ini. Siswa yang bekerja di kebun belajar mengukur pertumbuhan tanaman dan mencatat data. Kami meminta sekolah menggandakan luas kebun tahun depan.”",
+      "Catatan B — dari guru olahraga: “Kebun adalah proyek yang baik, tetapi sudah memakai sebagian lapangan. Jika luasnya digandakan, dua kelas akan kehilangan tempat bermain di luar. Mungkin kebun bisa tumbuh ke atas, memakai rak di dinding.”",
+      "Kedua catatan sepakat bahwa kebun membantu siswa belajar. Keduanya berbeda pendapat tentang cara kebun itu berkembang."
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What do both notes agree on?",
+        "id": "Apa yang disepakati kedua catatan?"
+      },
+      "choices": {
+        "en": [
+          "The garden helps students learn.",
+          "The garden should be removed.",
+          "The field is too small for games."
+        ],
+        "id": [
+          "Kebun membantu siswa belajar.",
+          "Kebun sebaiknya dihapus.",
+          "Lapangan terlalu kecil untuk bermain."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which detail does the garden club use to support its request?",
+        "id": "Rincian apa yang dipakai klub berkebun untuk mendukung permintaannya?"
+      },
+      "choices": {
+        "en": [
+          "40 kilograms of vegetables were grown.",
+          "Shelves can go on the wall.",
+          "Two classes play outside."
+        ],
+        "id": [
+          "40 kilogram sayur dipanen.",
+          "Rak bisa dipasang di dinding.",
+          "Dua kelas bermain di luar."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why does the sports teacher suggest shelves?",
+        "id": "Mengapa guru olahraga menyarankan rak?"
+      },
+      "choices": {
+        "en": [
+          "to keep the garden and the play space",
+          "because shelves are cheaper than seeds",
+          "to stop students gardening"
+        ],
+        "id": [
+          "agar kebun dan tempat bermain sama-sama tetap ada",
+          "karena rak lebih murah daripada benih",
+          "agar siswa berhenti berkebun"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    }
+  ],
+  "copyrightStatus": "original",
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "readability-estimate"
+    ]
+  }
+}

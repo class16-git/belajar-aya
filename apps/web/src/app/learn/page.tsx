@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { ChildShell } from '@/components/child/child-shell';
 import { StartLesson } from '@/components/child/start-lesson';
 import { fmt, getDictionary } from '@/lib/i18n';
@@ -14,7 +15,10 @@ export default async function LearnPage() {
   const { ctx, choices, rec, gradeSupported } = await childChoices(child);
   return (
     <ChildShell reducedMotion={child.reducedMotion}>
-      <h1 className="text-3xl font-bold">{fmt(t.learn.hello, { name: child.nickname })}</h1>
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <h1 className="text-3xl font-bold">{fmt(t.learn.hello, { name: child.nickname })}</h1>
+        <Link href="/learn/library" className="btn-secondary btn-xl" data-testid="reading-garden-entry"><span aria-hidden="true">📚</span> {t.library.child.entry}</Link>
+      </div>
       {!ctx.policy.childScreenActivitiesAllowed ? (
         <p className="card mt-6">{t.learn.offlineOnly}</p>
       ) : !gradeSupported ? (

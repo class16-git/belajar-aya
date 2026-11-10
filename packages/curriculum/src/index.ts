@@ -3,3 +3,4 @@ export * from './publication';
 export * from './catalog';
 export { fillTemplate } from './template';
 export * from './coverage';
+export * from './library';

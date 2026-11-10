@@ -1,0 +1,121 @@
+{
+  "id": "book-bookdash-egg",
+  "sourceId": "book_dash",
+  "title": "Egg",
+  "creators": [
+    {
+      "name": "Mirna Lawrence",
+      "role": "writer"
+    },
+    {
+      "name": "Megan Naudé",
+      "role": "illustrator"
+    },
+    {
+      "name": "Georgia Demertzis",
+      "role": "designer"
+    },
+    {
+      "name": "Nabeela Kalla",
+      "role": "editor"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [
+    "Xitsonga",
+    "Tshivenḓa",
+    "SiSwati",
+    "Sepedi",
+    "isiNdebele",
+    "Setswana",
+    "Sesotho",
+    "isiZulu",
+    "isiXhosa",
+    "Afrikaans"
+  ],
+  "isbn": "978-1-77623-140-9",
+  "synopsis": {
+    "en": "Several animals find an egg and wonder whether it is theirs. Readers discover, with the animals, whose egg it really is.",
+    "id": "Beberapa hewan menemukan sebutir telur dan bertanya-tanya apakah itu milik mereka. Pembaca ikut menemukan milik siapa telur itu sebenarnya."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/egg/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“Egg” by Mirna Lawrence, Megan Naudé, published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/egg/",
+        "quote": "Title page read: title, credits and ISBN 978-1-77623-140-9 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "age2_3",
+    "age3_4",
+    "age4_5"
+  ],
+  "role": "read_aloud",
+  "topics": [
+    "animals",
+    "family"
+  ],
+  "sensitiveThemes": [],
+  "strands": [
+    "oral_language",
+    "vocabulary",
+    "comprehension"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "Which animals do you know that hatch from eggs?",
+        "id": "Hewan apa saja yang kamu tahu menetas dari telur?"
+      }
+    ],
+    "during": [
+      {
+        "en": "Before each page, guess: is it this animal’s egg?",
+        "id": "Sebelum setiap halaman, tebak: apakah ini telur hewan tersebut?"
+      }
+    ],
+    "after": [
+      {
+        "en": "Whose egg was it? What clues helped you?",
+        "id": "Telur siapa itu? Petunjuk apa yang membantumu?"
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Hide a plastic or wooden egg in a basket of soft toys and take turns finding and naming each animal.",
+      "id": "Sembunyikan telur plastik atau kayu di keranjang boneka dan bergantian menemukan serta menyebut nama setiap hewan."
+    },
+    "maths": {
+      "en": "Count the animals who wanted the egg, then count them again in a different order.",
+      "id": "Hitung hewan yang menginginkan telur, lalu hitung lagi dengan urutan berbeda."
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}

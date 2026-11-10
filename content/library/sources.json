@@ -1,0 +1,118 @@
+{
+  "sources": [
+    {
+      "id": "book_dash",
+      "name": "Book Dash",
+      "canonicalUrl": "https://bookdash.org/",
+      "allowedHosts": [
+        "bookdash.org"
+      ],
+      "purpose": "Open-licensed illustrated picture books for young children (mostly South African languages and English).",
+      "verificationStatus": "source_policy_verified",
+      "sourceLicense": "CC-BY-4.0",
+      "evidence": [
+        {
+          "url": "https://bookdash.org/who-we-are/open-content-partners/",
+          "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+          "checkedAt": "2026-11-10",
+          "checkedBy": "agent"
+        },
+        {
+          "url": "https://bookdash.org/what-we-do/how-we-do-it/",
+          "quote": "All of our books are published on our website under a Creative Commons BY 4.0 license",
+          "checkedAt": "2026-11-10",
+          "checkedBy": "agent"
+        }
+      ],
+      "notes": "Title pages show credits and ISBN but no licence line; the ebook imprint could not be opened from the agent environment (download needs a browser). Titles are therefore link-only until a human confirms the licence on each title's imprint page."
+    },
+    {
+      "id": "storyweaver",
+      "name": "StoryWeaver (Pratham Books)",
+      "canonicalUrl": "https://storyweaver.org.in/",
+      "allowedHosts": [],
+      "purpose": "Multilingual graded stories, including Bahasa Indonesia translations.",
+      "verificationStatus": "verification_required",
+      "sourceLicense": null,
+      "evidence": [],
+      "notes": "Reachable on 2026-11-10, but the terms page and per-title licence are rendered by the browser app or need a login; the public story API returned no licence field. Not verified, so no titles are listed."
+    },
+    {
+      "id": "lets_read",
+      "name": "Let’s Read (The Asia Foundation)",
+      "canonicalUrl": "https://www.letsreadasia.org/",
+      "allowedHosts": [],
+      "purpose": "Multilingual children’s stories, many in Bahasa Indonesia.",
+      "verificationStatus": "verification_required",
+      "sourceLicense": null,
+      "evidence": [],
+      "notes": "Browser-only app; its data host was not reachable from the agent environment on 2026-11-10. Highest-priority source for Indonesian titles once a human verifies its terms."
+    },
+    {
+      "id": "literacy_cloud",
+      "name": "Literacy Cloud (Room to Read)",
+      "canonicalUrl": "https://literacycloud.org/",
+      "allowedHosts": [],
+      "purpose": "Read-aloud and early literacy stories.",
+      "verificationStatus": "verification_required",
+      "sourceLicense": null,
+      "evidence": [],
+      "notes": "Browser-only app; terms not readable from the agent environment on 2026-11-10."
+    },
+    {
+      "id": "sibi",
+      "name": "SIBI / Buku Kemendikdasmen",
+      "canonicalUrl": "https://buku.kemdikbud.go.id/",
+      "allowedHosts": [],
+      "purpose": "Indonesian government educational and reading books.",
+      "verificationStatus": "unreachable",
+      "sourceLicense": null,
+      "evidence": [],
+      "notes": "Host could not be reached from the agent environment on 2026-11-10."
+    },
+    {
+      "id": "unite_for_literacy",
+      "name": "Unite for Literacy",
+      "canonicalUrl": "https://www.uniteforliteracy.com/",
+      "allowedHosts": [],
+      "purpose": "Illustrated early readers with narration.",
+      "verificationStatus": "verification_required",
+      "sourceLicense": null,
+      "evidence": [],
+      "notes": "Not checked (host not in the allowed network list)."
+    },
+    {
+      "id": "oxford_owl",
+      "name": "Oxford Owl",
+      "canonicalUrl": "https://home.oxfordowl.co.uk/",
+      "allowedHosts": [],
+      "purpose": "English reading and phonics resources (account-based).",
+      "verificationStatus": "verification_required",
+      "sourceLicense": null,
+      "evidence": [],
+      "notes": "Not checked. Likely read-only free access under the provider's account terms; never hosted."
+    },
+    {
+      "id": "booktime",
+      "name": "Booktime",
+      "canonicalUrl": null,
+      "allowedHosts": [],
+      "purpose": "Ambiguous provider name in the bible.",
+      "verificationStatus": "verification_required",
+      "sourceLicense": null,
+      "evidence": [],
+      "notes": "Exact website unknown; owner to confirm which provider is meant."
+    },
+    {
+      "id": "icdl",
+      "name": "International Children’s Digital Library",
+      "canonicalUrl": null,
+      "allowedHosts": [],
+      "purpose": "Historical digital library.",
+      "verificationStatus": "verification_required",
+      "sourceLicense": null,
+      "evidence": [],
+      "notes": "Present availability and canonical URL unverified."
+    }
+  ]
+}

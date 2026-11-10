@@ -46,6 +46,7 @@ Demo sign-in (synthetic): `demo.parent@example.test` / `demo-password-123`, pare
 | `pnpm content:validate` | Curriculum schema, prerequisite graph and publication-gate validation |
 | `pnpm content:approve --reviewer "AB" --role parent <lesson-id…>` | Record a **human** content review |
 | `pnpm privacy:scan` | Fail if private learner data is tracked |
+| `pnpm library:approve -- --reviewer "AB" --role parent --link-checked <ids>` / `pnpm library:withdraw` | Human review / takedown of Reading Garden books and passages |
 | `pnpm db:migrate`, `pnpm db:seed`, `pnpm db:seed:private` | Database |
 
 E2E locally: `createdb atlas_test`, then
@@ -60,6 +61,14 @@ robotics/STEM and Islamic studies (see `docs/spec/curriculum-bible/`, ADR-0009).
 [`AUDIT_GAP_MATRIX.md`](docs/curriculum/AUDIT_GAP_MATRIX.md), next slice:
 [`VERTICAL_SLICE_RECOMMENDATION.md`](docs/curriculum/VERTICAL_SLICE_RECOMMENDATION.md). Islamic content additionally needs a
 qualified religious review (`pnpm content:religious-approve`, ADR-0010) and is never approved by the agent.
+
+## Reading Garden (Product Bible v3)
+
+A rights-aware family library and literacy journey from age 2 to Grade 6 (`/library`, child view `/learn/library`).
+Books are **link-only** to verified sources with per-title evidence; nothing is copied or hosted. Children see only books
+a parent puts on their shelf, and leaving Atlas needs the parent PIN. Original Atlas passages give server-graded
+comprehension practice in English and Indonesian. Production shows only human-reviewed books
+(`pnpm library:approve --link-checked`). See [`docs/reading-garden/HANDOVER.md`](docs/reading-garden/HANDOVER.md) and ADR-0011.
 
 ## Content review gate
 
