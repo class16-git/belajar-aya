@@ -52,6 +52,15 @@ E2E locally: `createdb atlas_test`, then
 `DATABASE_URL=postgresql://…/atlas_test pnpm db:migrate`,
 `cd apps/web && DATABASE_URL=… ATLAS_ENV=preview NODE_ENV=production pnpm build && pnpm test:e2e`.
 
+## Curriculum (age 2 → Grade 6)
+
+`content/objectives/` holds 120 original planning objectives across Montessori, Singapore-style maths (CPA),
+robotics/STEM and Islamic studies (see `docs/spec/curriculum-bible/`, ADR-0009). Coverage:
+[`docs/curriculum/COVERAGE_REPORT.md`](docs/curriculum/COVERAGE_REPORT.md) (`pnpm curriculum:coverage`), audit:
+[`AUDIT_GAP_MATRIX.md`](docs/curriculum/AUDIT_GAP_MATRIX.md), next slice:
+[`VERTICAL_SLICE_RECOMMENDATION.md`](docs/curriculum/VERTICAL_SLICE_RECOMMENDATION.md). Islamic content additionally needs a
+qualified religious review (`pnpm content:religious-approve`, ADR-0010) and is never approved by the agent.
+
 ## Content review gate
 
 Lessons have `reviewStatus`: `draft` → `agent_reviewed` → `reviewed` (human) → `published`.

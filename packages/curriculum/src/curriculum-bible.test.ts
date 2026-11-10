@@ -1,0 +1,137 @@
+import { describe, expect, it } from 'vitest';
+import { RAW_LESSONS, RAW_OBJECTIVES, RAW_SKILLS } from './content-index';
+import { getCatalog, validateContent } from './catalog';
+import { coverage, coverageMatrix, reviewQueue } from './coverage';
+import { isVisible, religiousIssues, requiresReligiousReview } from './publication';
+import type { Lesson } from './schema';
+
+const clone = <T>(v: T): T => JSON.parse(JSON.stringify(v));
+const raw = (id: string) => clone(RAW_LESSONS.find((l) => (l as Lesson).id === id)) as Lesson;
+const ISLM = 'lesson-islm-meal-adab-001';
+
+describe('religious publication gate (Curriculum Bible governance)', () => {
+  it('Islamic content is never visible to children while religious review is unverified — in any environment', () => {
+    const l = getCatalog().lessons.find((x) => x.id === ISLM)!;
+    expect(requiresReligiousReview(l)).toBe(true);
+    for (const min of ['draft', 'agent_reviewed', 'reviewed', 'published'] as const) expect(isVisible(l, min)).toBe(false);
+  });
+
+  it('the agent cannot advance religious content beyond draft without human religious approval', () => {
+    const l = raw(ISLM) as unknown as Record<string, unknown>;
+    l.reviewStatus = 'agent_reviewed';
+    const r = validateContent([...RAW_LESSONS.filter((x) => (x as Lesson).id !== ISLM), l], RAW_SKILLS, RAW_OBJECTIVES);
+    expect(r.errors.join('\n')).toMatch(/religious content must stay draft/);
+  });
+
+  it('approval needs a scholar reviewer, a date, a translation reviewer for Arabic, and verified phrases', () => {
+    const l = raw(ISLM);
+    expect(religiousIssues(l).map((i) => i.message)).toEqual(['Religious review is unverified', 'Arabic phrases are not verified']);
+    l.religiousReview = { ...l.religiousReview!, approvalStatus: 'approved' };
+    expect(religiousIssues(l).map((i) => i.message)).toEqual(
+      expect.arrayContaining(['Approved religious review needs scholarReviewer and reviewedAt', 'Arabic text needs a translation reviewer', 'Arabic phrases are not verified']),
+    );
+    l.religiousReview = { ...l.religiousReview!, scholarReviewer: 'AB', reviewedAt: '2026-11-10', translationReviewer: 'CD' };
+    l.arabicPhrases = l.arabicPhrases.map((p) => ({ ...p, verified: true }));
+    expect(religiousIssues(l)).toEqual([]);
+    // Even with religious approval, normal content review (human) is still required before production.
+    expect(isVisible(l, 'reviewed')).toBe(false);
+    l.reviewStatus = 'reviewed';
+    l.review = { agentChecks: [], reviewedBy: 'owner', reviewerRole: 'parent', reviewedAt: '2026-11-10' };
+    expect(isVisible(l, 'reviewed')).toBe(true);
+  });
+
+  it('a religious lesson without any review record fails validation (fields may be null, never invented)', () => {
+    const l = raw(ISLM) as unknown as Record<string, unknown>;
+    delete l.religiousReview;
+    const r = validateContent([l], RAW_SKILLS, RAW_OBJECTIVES);
+    expect(r.errors.join('\n')).toMatch(/needs a religiousReview record/);
+  });
+
+  it('any lesson with Arabic text is routed to religious review, whatever its framework', () => {
+    const l = raw('lesson-tod-lang-001');
+    expect(requiresReligiousReview(l)).toBe(false);
+    l.arabicPhrases = [{ arabic: 'سلام', transliteration: 'salam', meaning: { en: 'peace', id: 'damai' }, verified: false }];
+    expect(requiresReligiousReview(l)).toBe(true);
+    expect(isVisible(l, 'reviewed')).toBe(false);
+  });
+});
+
+describe('objectives registry (age 2 → Grade 6)', () => {
+  it('is valid, has 120 objectives across 10 stages and 4 frameworks', () => {
+    const c = getCatalog();
+    expect(c.objectives.length).toBe(120);
+    expect(new Set(c.objectives.map((o) => o.stage)).size).toBe(10);
+    expect(new Set(c.objectives.map((o) => o.framework)).size).toBe(4);
+  });
+
+  it('every Islamic objective requires religious review', () => {
+    for (const o of getCatalog().objectives.filter((x) => x.framework === 'islamic_studies')) {
+      expect(o.requiresReligiousReview).toBe(true);
+      expect(o.reviewFlags).toContain('religious_content');
+    }
+  });
+
+  const mutate = (fn: (files: { objectives: Record<string, unknown>[] }[]) => void) => {
+    const files = clone(RAW_OBJECTIVES) as { objectives: Record<string, unknown>[] }[];
+    fn(files);
+    return validateContent(RAW_LESSONS, RAW_SKILLS, files).errors.join('\n');
+  };
+
+  it('rejects unknown prerequisites, later-stage prerequisites and cycles', () => {
+    expect(mutate((f) => ((f[0]!.objectives[0]!.prerequisites as string[]) = ['math.g1.does-not-exist']))).toMatch(/unknown prerequisite/);
+    expect(
+      mutate((f) => {
+        const math = f.find((x) => x.objectives.some((o) => o.id === 'math.g1.count-20'))!;
+        (math.objectives.find((o) => o.id === 'math.g1.count-20')!.prerequisites as string[]).push('math.g2.numbers-1000');
+      }),
+    ).toMatch(/later stage/);
+    expect(
+      mutate((f) => {
+        const math = f.find((x) => x.objectives.some((o) => o.id === 'math.g1.count-20'))!;
+        (math.objectives.find((o) => o.id === 'math.g1.count-20')!.prerequisites as string[]).push('math.g1.bonds-10');
+      }),
+    ).toMatch(/cycle/);
+  });
+
+  it('rejects Islamic objectives that skip religious review and skills linked from the wrong band', () => {
+    expect(
+      mutate((f) => {
+        const isl = f.find((x) => x.objectives.some((o) => o.framework === 'islamic_studies'))!;
+        isl.objectives[0]!.requiresReligiousReview = false;
+      }),
+    ).toMatch(/always require religious review/);
+    expect(
+      mutate((f) => {
+        const math = f.find((x) => x.objectives.some((o) => o.id === 'math.age2_3.more-less'))!;
+        (math.objectives.find((o) => o.id === 'math.age2_3.more-less')!.implementation as { skillIds: string[] }).skillIds = ['MATH-G1-COUNT-20'];
+      }),
+    ).toMatch(/is in band g1, not toddler/);
+  });
+});
+
+describe('coverage and review queue', () => {
+  const rows = coverage(getCatalog());
+  const status = (id: string) => rows.find((r) => r.objective.id === id)!.status;
+
+  it('reflects what is really implemented and approved', () => {
+    expect(status('math.g1.count-20')).toBe('published');
+    expect(status('math.g1.bonds-10')).toBe('published');
+    expect(status('mont.age2_3.match-sort')).toBe('published');
+    expect(status('math.g1.add-sub-10')).toBe('planned');
+    expect(status('islm.age2_3.bismillah-alhamdulillah')).toBe('awaiting_religious_review');
+    expect(status('robo.age3_4.arrow-paths')).toBe('awaiting_review');
+  });
+
+  it('matrix totals equal the registry', () => {
+    const m = coverageMatrix(rows);
+    const total = Object.values(m).flatMap((r) => Object.values(r)).reduce((s, c) => s + c.total, 0);
+    expect(total).toBe(rows.length);
+  });
+
+  it('review queue names the reviewer each blocked lesson needs', () => {
+    const q = reviewQueue(getCatalog());
+    expect(q.find((x) => x.lesson.id === ISLM)!.needs).toEqual(['author', 'religious_review', 'content_review']);
+    expect(q.find((x) => x.lesson.id === 'lesson-robo-arrows-001')!.needs).toEqual(['content_review']);
+    expect(q.some((x) => x.lesson.id === 'lesson-g1-count-20-001')).toBe(false);
+  });
+});

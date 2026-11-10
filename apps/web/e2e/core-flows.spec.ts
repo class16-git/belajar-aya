@@ -488,6 +488,35 @@ test.describe('grade setting (Phase 1 content is Kindergarten/Grade 1 only)', ()
   });
 });
 
+test.describe('curriculum bible rules', () => {
+  test('an open item is invalidated when the parent changes the grade mid-session', async ({ page, request, baseURL }) => {
+    const fam = await createFamily(request, baseURL!, 'policy');
+    await signIn(page, fam.email);
+    await enterChildMode(page);
+    const headers = { Origin: baseURL! };
+    const s = await (await page.request.post('/api/learn/session', { headers, data: {} })).json();
+    const { activity } = await (await page.request.post('/api/activities/next', { headers, data: { sessionId: s.sessionId } })).json();
+    await db.childProfile.update({ where: { id: fam.g1Id }, data: { schoolGrade: 'Grade 5' } }); // parent edits on another device
+    const r = await page.request.post('/api/attempts', { headers, data: { activityId: activity.activityId, response: { value: await answerFor(activity.activityId) } } });
+    expect(r.status()).toBe(409);
+    expect((await r.json()).error).toBe('POLICY_CHANGED');
+    expect((await db.activityInstance.findUniqueOrThrow({ where: { id: activity.activityId } })).status).toBe('ABANDONED');
+    expect(await db.attempt.count({ where: { childId: fam.g1Id } })).toBe(0);
+  });
+
+  test('a 2-year-old is never suggested age 3–4 cards; drafts (e.g. Islamic content awaiting review) never appear', async ({ page, request, baseURL }) => {
+    const fam = await createFamily(request, baseURL!, 'bands');
+    await signIn(page, fam.email);
+    await page.goto(`/dashboard/${fam.toddlerId}`);
+    await expect(page.getByRole('link', { name: /^Open card:/ }).first()).toBeVisible();
+    await expect(page.getByRole('link', { name: /Floor-arrow treasure path/ })).toHaveCount(0);
+    await page.goto('/cards');
+    await expect(page.locator('[data-card="lesson-robo-arrows-001"]')).toContainText('Ages 3–4');
+    await expect(page.locator('[data-card="lesson-islm-meal-adab-001"]')).toHaveCount(0);
+    expect((await page.request.get('/cards/lesson-islm-meal-adab-001')).status()).toBe(404);
+  });
+});
+
 test.describe('security', () => {
   test('IDOR: a parent cannot read or change another family’s child', async ({ browser, baseURL }) => {
     const a = await browser.newContext({ baseURL });

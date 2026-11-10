@@ -1,7 +1,7 @@
 import { readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { RAW_LESSON_FILES, RAW_LESSONS, RAW_SKILLS } from './content-index';
+import { RAW_LESSON_FILES, RAW_LESSONS, RAW_OBJECTIVES, RAW_SKILLS } from './content-index';
 import { getCatalog, validateContent, visibleOfflineCards } from './catalog';
 import { isVisible, publicationIssues, resolveDeployEnv, resolveMinReview } from './publication';
 import type { Lesson } from './schema';
@@ -11,7 +11,7 @@ const findRaw = (id: string) => clone(RAW_LESSONS.find((l) => (l as Lesson).id =
 
 describe('built-in content', () => {
   it('validates with no errors', () => {
-    const r = validateContent(RAW_LESSONS, RAW_SKILLS);
+    const r = validateContent(RAW_LESSONS, RAW_SKILLS, RAW_OBJECTIVES);
     expect(r.errors).toEqual([]);
   });
   it('indexes every lesson file on disk', () => {
@@ -27,7 +27,7 @@ describe('built-in content', () => {
     expect(found.sort()).toEqual([...RAW_LESSON_FILES].sort());
   });
   it('has at least 10 toddler offline cards with safety notes and supervision', () => {
-    const cards = visibleOfflineCards('agent_reviewed');
+    const cards = visibleOfflineCards('agent_reviewed').filter((c) => c.ageBand === 'toddler');
     expect(cards.length).toBeGreaterThanOrEqual(10);
     for (const c of cards) {
       expect(c.safetyNotes.length).toBeGreaterThan(0);

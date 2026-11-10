@@ -1,7 +1,10 @@
 import { z } from 'zod';
-import { RAW_LESSONS, RAW_SKILLS } from './content-index';
+import { RAW_LESSONS, RAW_OBJECTIVES, RAW_SKILLS } from './content-index';
+import { stageIndex, STAGE_TO_BAND } from '@atlas/shared';
 import {
   lessonSchema,
+  objectivesFileSchema,
+  type Objective,
   skillGraphSchema,
   type InteractiveLesson,
   type Lesson,
@@ -9,12 +12,13 @@ import {
   type ReviewStatus,
   type Skill,
 } from './schema';
-import { isVisible, publicationIssues } from './publication';
+import { isVisible, publicationIssues, religiousIssues, requiresReligiousReview } from './publication';
 
 export interface Catalog {
   curriculumVersion: string;
   skills: Skill[];
   lessons: Lesson[];
+  objectives: Objective[];
 }
 
 export interface ValidationResult {
@@ -24,7 +28,7 @@ export interface ValidationResult {
 }
 
 /** Parse + cross-validate all content. Pure: callers decide what to do with errors. */
-export function validateContent(rawLessons: unknown[], rawSkills: unknown): ValidationResult {
+export function validateContent(rawLessons: unknown[], rawSkills: unknown, rawObjectives: unknown[] = []): ValidationResult {
   const errors: string[] = [];
   const graph = skillGraphSchema.safeParse(rawSkills);
   if (!graph.success) {
@@ -77,12 +81,65 @@ export function validateContent(rawLessons: unknown[], rawSkills: unknown): Vali
     if (l.reviewStatus !== 'draft') {
       for (const issue of publicationIssues(l)) errors.push(`Lesson ${l.id}: ${issue.message}`);
     }
+    // The agent may only ever author religious content as draft; it advances only with human religious approval.
+    if (requiresReligiousReview(l) && l.reviewStatus !== 'draft' && religiousIssues(l).length > 0) {
+      errors.push(`Lesson ${l.id}: religious content must stay draft until a qualified reviewer approves it`);
+    }
+    if (requiresReligiousReview(l) && !l.religiousReview) {
+      errors.push(`Lesson ${l.id}: religious content needs a religiousReview record (fields may be null, never invented)`);
+    }
     lessons.push(l);
   });
+
+  // Objectives registry: ids unique, prerequisites exist, prerequisites never come from a later stage,
+  // links point at real skills/lessons.
+  const objectives: Objective[] = [];
+  const seenObj = new Set<string>();
+  rawObjectives.forEach((raw, i) => {
+    const parsed = objectivesFileSchema.safeParse(raw);
+    if (!parsed.success) {
+      errors.push(`Objectives file #${i}: ${formatZod(parsed.error)}`);
+      return;
+    }
+    for (const o of parsed.data.objectives) {
+      if (o.framework !== parsed.data.framework) errors.push(`Objective ${o.id}: framework differs from its file`);
+      if (seenObj.has(o.id)) errors.push(`Duplicate objective id ${o.id}`);
+      seenObj.add(o.id);
+      objectives.push(o);
+    }
+  });
+  const objById = new Map(objectives.map((o) => [o.id, o]));
+  for (const o of objectives) {
+    for (const p of o.prerequisites) {
+      const pre = objById.get(p);
+      if (!pre) errors.push(`Objective ${o.id}: unknown prerequisite ${p}`);
+      else if (stageIndex(pre.stage) > stageIndex(o.stage)) errors.push(`Objective ${o.id}: prerequisite ${p} is from a later stage`);
+    }
+    for (const sid of o.implementation.skillIds) {
+      const sk = byId.get(sid);
+      if (!sk) errors.push(`Objective ${o.id}: unknown skill ${sid}`);
+      else if (sk.band !== STAGE_TO_BAND[o.stage]) errors.push(`Objective ${o.id}: skill ${sid} is in band ${sk.band}, not ${STAGE_TO_BAND[o.stage]}`);
+    }
+  }
+  const objState = new Map<string, 'visiting' | 'done'>();
+  const visitObj = (id: string, path: string[]): void => {
+    if (objState.get(id) === 'done') return;
+    if (objState.get(id) === 'visiting') {
+      errors.push(`Objective prerequisite cycle: ${[...path, id].join(' -> ')}`);
+      return;
+    }
+    objState.set(id, 'visiting');
+    for (const p of objById.get(id)?.prerequisites ?? []) visitObj(p, [...path, id]);
+    objState.set(id, 'done');
+  };
+  objectives.forEach((o) => visitObj(o.id, []));
+  for (const l of lessons) {
+    for (const oid of l.objectiveIds) if (!objById.has(oid)) errors.push(`Lesson ${l.id}: unknown objective ${oid}`);
+  }
   return {
     ok: errors.length === 0,
     errors,
-    catalog: { curriculumVersion: graph.data.curriculumVersion, skills, lessons },
+    catalog: { curriculumVersion: graph.data.curriculumVersion, skills, lessons, objectives },
   };
 }
 
@@ -94,7 +151,7 @@ let cached: Catalog | null = null;
 /** The validated built-in catalog. Throws at startup if content is invalid (fail closed). */
 export function getCatalog(): Catalog {
   if (cached) return cached;
-  const result = validateContent(RAW_LESSONS, RAW_SKILLS);
+  const result = validateContent(RAW_LESSONS, RAW_SKILLS, RAW_OBJECTIVES);
   if (!result.ok || !result.catalog) {
     throw new Error(`Invalid curriculum content:\n${result.errors.join('\n')}`);
   }

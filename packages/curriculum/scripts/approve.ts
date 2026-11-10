@@ -21,6 +21,8 @@ if (!reviewer || !role || !['parent', 'educator', 'curriculum_reviewer'].include
   process.exit(2);
 }
 const today = new Date().toISOString().slice(0, 10);
+const isReligious = (l: { domain?: string; framework?: string; arabicPhrases?: unknown[]; reviewFlags?: string[] }) =>
+  l.domain === 'islamic_studies' || l.framework === 'islamic_studies' || (l.arabicPhrases?.length ?? 0) > 0 || (l.reviewFlags ?? []).includes('religious_content');
 const root = join(import.meta.dirname, '../../../content');
 let changed = 0;
 for (const f of RAW_LESSON_FILES) {
@@ -28,8 +30,12 @@ for (const f of RAW_LESSON_FILES) {
   const lesson = JSON.parse(readFileSync(path, 'utf8'));
   const selected = all ? lesson.reviewStatus === 'agent_reviewed' : ids.includes(lesson.id);
   if (!selected) continue;
-  if (lesson.reviewStatus === 'draft') {
+  if (lesson.reviewStatus === 'draft' && !isReligious(lesson)) {
     console.error(`${lesson.id}: draft content must be completed by an author first; skipped.`);
+    continue;
+  }
+  if (isReligious(lesson) && lesson.religiousReview?.approvalStatus !== 'approved') {
+    console.error(`${lesson.id}: religious content needs qualified religious approval first (pnpm content:religious-approve); skipped.`);
     continue;
   }
   lesson.reviewStatus = 'reviewed';

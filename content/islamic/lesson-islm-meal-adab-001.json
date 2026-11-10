@@ -1,0 +1,169 @@
+{
+  "id": "lesson-islm-meal-adab-001",
+  "skillId": "ISLM-T-MEAL-ADAB",
+  "framework": "islamic_studies",
+  "objectiveIds": [
+    "islm.age2_3.bismillah-alhamdulillah"
+  ],
+  "title": {
+    "en": "Bismillah and Alhamdulillah at mealtime",
+    "id": "Bismillah dan Alhamdulillah saat makan"
+  },
+  "ageBand": "toddler",
+  "domain": "islamic_studies",
+  "mode": "offline",
+  "objective": {
+    "en": "Hear, and if they wish repeat, Bismillah before eating and Alhamdulillah after, as part of a family meal.",
+    "id": "Mendengar, dan bila mau menirukan, Bismillah sebelum makan dan Alhamdulillah sesudahnya, sebagai bagian dari makan bersama keluarga."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 0,
+  "activityMinutes": {
+    "min": 1,
+    "max": 3
+  },
+  "materials": [
+    {
+      "en": "An ordinary family meal",
+      "id": "Makan bersama keluarga seperti biasa"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Sit together at the table; nothing else is needed.",
+      "id": "Duduk bersama di meja; tidak perlu persiapan lain."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Before eating, say Bismillah warmly, as you normally would.",
+      "id": "Sebelum makan, ucapkan Bismillah dengan hangat seperti biasa."
+    },
+    {
+      "en": "Pause and smile; your child may repeat it or simply watch.",
+      "id": "Berhenti sejenak dan tersenyum; anak boleh menirukan atau sekadar memperhatikan."
+    },
+    {
+      "en": "After the meal, say Alhamdulillah and name one thing you are thankful for.",
+      "id": "Setelah makan, ucapkan Alhamdulillah dan sebutkan satu hal yang Anda syukuri."
+    },
+    {
+      "en": "Repeat at other meals. Do not prompt, test or correct.",
+      "id": "Ulangi pada waktu makan lain. Jangan menyuruh, menguji, atau mengoreksi."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "Bismillah. Let's eat together.",
+      "id": "Bismillah. Ayo makan bersama."
+    },
+    {
+      "en": "Alhamdulillah. We are thankful for this food.",
+      "id": "Alhamdulillah. Kita bersyukur atas makanan ini."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Watches or listens",
+      "id": "Memperhatikan atau mendengarkan"
+    },
+    {
+      "en": "Repeats a sound or the whole phrase",
+      "id": "Menirukan bunyi atau seluruh ucapan"
+    },
+    {
+      "en": "Starts the phrase on their own",
+      "id": "Memulai ucapan itu sendiri"
+    }
+  ],
+  "cleanup": {
+    "en": "Clear the table together.",
+    "id": "Bereskan meja bersama-sama."
+  },
+  "variations": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": true
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Serve food cut safely for your child's age; sit while eating.",
+      "id": "Sajikan makanan yang dipotong aman sesuai usia anak; makan sambil duduk."
+    },
+    {
+      "en": "Gentle and non-coercive: this is shared family practice, never a test.",
+      "id": "Lembut dan tanpa paksaan: ini kebiasaan keluarga, bukan ujian."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "DRAFT awaiting qualified religious review. Arabic text and meanings are unverified.",
+      "id": "DRAF menunggu tinjauan keagamaan yang berkompeten. Teks Arab dan artinya belum diverifikasi."
+    }
+  ],
+  "reviewStatus": "draft",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "0.1.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [
+    "religious_content",
+    "arabic_text",
+    "translation_review",
+    "source_verification"
+  ],
+  "arabicPhrases": [
+    {
+      "arabic": "بِسْمِ ٱللَّهِ",
+      "transliteration": "Bismillah",
+      "meaning": {
+        "en": "In the name of Allah",
+        "id": "Dengan nama Allah"
+      },
+      "verified": false
+    },
+    {
+      "arabic": "ٱلْحَمْدُ لِلَّٰهِ",
+      "transliteration": "Alhamdulillah",
+      "meaning": {
+        "en": "All praise is for Allah",
+        "id": "Segala puji bagi Allah"
+      },
+      "verified": false
+    }
+  ],
+  "religiousReview": {
+    "doctrinalSchool": "Ahl al-Sunnah wa al-Jama'ah (Ash'ari/Maturidi), family-selected orientation",
+    "fiqhSchool": null,
+    "arabicSource": null,
+    "edition": null,
+    "pageOrSection": null,
+    "translationReviewer": null,
+    "scholarReviewer": null,
+    "reviewedAt": null,
+    "approvalStatus": "unverified",
+    "notes": [
+      "Arabic spelling, diacritics and meanings were drafted by the coding agent and must be verified by a qualified reviewer.",
+      "No source citation was supplied; the reviewer provides one if required. Nothing has been invented.",
+      "If fuller mealtime duas are wanted, the reviewer supplies the text; it is not generated."
+    ]
+  }
+}

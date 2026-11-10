@@ -247,6 +247,16 @@ async function ownedActiveActivity(child: ChildProfile, activityId: string) {
   const a = await prisma.activityInstance.findFirst({ where: { id: activityId, childId: child.id } });
   if (!a) throw new HttpError(404, 'NOT_FOUND');
   if (a.status !== 'ACTIVE') throw new HttpError(409, 'ACTIVITY_CLOSED');
+  // Policy may have changed since the item was created (grade, mode, age band, or the lesson was withdrawn):
+  // invalidate the open item instead of accepting evidence under rules that no longer apply.
+  const stillAllowed =
+    ageContext(child).policy.childScreenActivitiesAllowed &&
+    interactiveBandForGrade(child.schoolGrade) !== null &&
+    visibleInteractiveLessons(config.minReview).some((l) => l.id === a.lessonId);
+  if (!stillAllowed) {
+    await prisma.activityInstance.updateMany({ where: { id: a.id, status: 'ACTIVE' }, data: { status: 'ABANDONED' } });
+    throw new HttpError(409, 'POLICY_CHANGED');
+  }
   return a;
 }
 

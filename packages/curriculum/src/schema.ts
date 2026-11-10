@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { AGE_BANDS } from '@atlas/shared';
+import { AGE_BANDS, FRAMEWORKS, STAGES } from '@atlas/shared';
 
 /**
  * Lesson content contract v2 (ADR-0004). Extends the starter JSON schema in
@@ -14,7 +14,7 @@ const text = z.string().trim().min(1).max(600).regex(SAFE_TEXT, 'Markup is not a
 export const localized = z.object({ en: text, id: text }).strict();
 export type Localized = z.infer<typeof localized>;
 
-const skillId = z.string().regex(/^(MATH-G1|TOD)-[A-Z0-9-]+$/);
+const skillId = z.string().regex(/^[A-Z][A-Z0-9]*(-[A-Z0-9]+)+$/);
 const misconception = z.string().regex(/^[A-Z][A-Z_]+$/);
 
 const reviewRecord = z
@@ -29,12 +29,73 @@ const reviewRecord = z
   })
   .strict();
 
+export const DOMAINS = [
+  'mathematics',
+  'language',
+  'practical_life',
+  'sensorial',
+  'cultural',
+  'robotics_stem',
+  'islamic_studies',
+] as const;
+
+/** Flags that route an item to a specific human reviewer. The agent can raise them, never clear them. */
+export const REVIEW_FLAGS = [
+  'religious_content',
+  'theological_interpretation',
+  'scholar_wording_required',
+  'arabic_text',
+  'quran_text',
+  'translation_review',
+  'pronunciation_review',
+  'attribution',
+  'source_verification',
+  'fiqh_ruling',
+  'madhhab_selection',
+  'physical_safety',
+  'electrical_safety',
+  'worldview_alignment',
+  'namc_mapping_unverified',
+  'syllabus_alignment_unverified',
+] as const;
+
+/**
+ * Religious review record (Curriculum Bible, islam/SOURCE_AND_SCHOLAR_REVIEW.md). Required for every
+ * Islamic-studies lesson and every lesson containing Arabic text. Only a qualified human sets
+ * approvalStatus to "approved" (pnpm content:religious-approve); citations are never invented.
+ */
+export const religiousReviewSchema = z
+  .object({
+    doctrinalSchool: z.string().max(200).nullable(),
+    fiqhSchool: z.string().max(100).nullable(),
+    arabicSource: z.string().max(300).nullable(),
+    edition: z.string().max(200).nullable(),
+    pageOrSection: z.string().max(100).nullable(),
+    translationReviewer: z.string().max(80).nullable(),
+    scholarReviewer: z.string().max(80).nullable(),
+    reviewedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).nullable(),
+    approvalStatus: z.enum(['unverified', 'approved', 'rejected']),
+    notes: z.array(z.string().max(400)).default([]),
+  })
+  .strict();
+export type ReligiousReview = z.infer<typeof religiousReviewSchema>;
+
+/** Arabic shown to families is data that must be verified (diacritics, wording, translation). */
+export const arabicPhraseSchema = z
+  .object({
+    arabic: z.string().min(1).max(300).regex(SAFE_TEXT),
+    transliteration: z.string().min(1).max(300).regex(SAFE_TEXT),
+    meaning: localized,
+    verified: z.boolean(),
+  })
+  .strict();
+
 const base = {
   id: z.string().regex(/^lesson-[a-z0-9-]+$/),
   skillId,
   title: localized,
   ageBand: z.enum(AGE_BANDS),
-  domain: z.enum(['mathematics', 'language', 'practical_life', 'sensorial', 'cultural']),
+  domain: z.enum(DOMAINS),
   objective: localized,
   prerequisites: z.array(skillId),
   misconceptionCodes: z.array(misconception),
@@ -43,6 +104,14 @@ const base = {
   reviewStatus: z.enum(REVIEW_STATUSES),
   review: reviewRecord.default({ agentChecks: [] }),
   contentVersion: z.string().regex(/^\d+\.\d+\.\d+$/),
+  // Curriculum Bible fields (all optional for backwards compatibility).
+  framework: z.enum(FRAMEWORKS).optional(),
+  objectiveIds: z.array(z.string()).default([]),
+  copyrightStatus: z.enum(['original', 'licensed', 'needs_clearance']).default('original'),
+  namcReferenceStatus: z.enum(['not_applicable', 'unverified', 'licensed', 'educator_mapped']).default('not_applicable'),
+  reviewFlags: z.array(z.enum(REVIEW_FLAGS)).default([]),
+  arabicPhrases: z.array(arabicPhraseSchema).default([]),
+  religiousReview: religiousReviewSchema.optional(),
 };
 
 export const GENERATOR_IDS = ['count-ten-frame', 'count-scattered', 'make-ten-frame', 'number-bond', 'bond-equation'] as const;
@@ -110,7 +179,7 @@ export type Lesson = InteractiveLesson | OfflineCard;
 export const skillSchema = z
   .object({
     id: skillId,
-    domain: z.enum(['mathematics', 'language', 'practical_life', 'sensorial', 'cultural']),
+    domain: z.enum(DOMAINS),
     band: z.enum(AGE_BANDS),
     title: localized,
     description: localized,
@@ -124,4 +193,38 @@ export type Skill = z.infer<typeof skillSchema>;
 
 export const skillGraphSchema = z
   .object({ curriculumVersion: z.string(), skills: z.array(skillSchema).min(1) })
+  .strict();
+
+/** A learning objective in the age-2→Grade-6 registry (content/objectives/*.json). Planning data, never child-facing. */
+export const objectiveSchema = z
+  .object({
+    id: z.string().regex(/^(mont|math|robo|islm)\.(age2_3|age3_4|age4_5|k|g[1-6])\.[a-z0-9-]+$/),
+    framework: z.enum(FRAMEWORKS),
+    strand: z.string().regex(/^[a-z_]+$/),
+    stage: z.enum(STAGES),
+    title: localized,
+    prerequisites: z.array(z.string()),
+    usesCpa: z.boolean(),
+    delivery: z.enum(['offline', 'blended', 'guided', 'project']),
+    assessment: z.enum(['observation', 'digital', 'rubric', 'portfolio']),
+    implementation: z.object({ skillIds: z.array(skillId) }).strict(),
+    reviewFlags: z.array(z.enum(REVIEW_FLAGS)),
+    requiresReligiousReview: z.boolean(),
+    sourceStatus: z.literal('original_planning'),
+  })
+  .strict()
+  .superRefine((o, ctx) => {
+    if (o.framework === 'islamic_studies' && !o.requiresReligiousReview) {
+      ctx.addIssue({ code: 'custom', message: 'Islamic-studies objectives always require religious review' });
+    }
+  });
+export type Objective = z.infer<typeof objectiveSchema>;
+
+export const objectivesFileSchema = z
+  .object({
+    framework: z.enum(FRAMEWORKS),
+    curriculumVersion: z.string(),
+    sourceStatus: z.literal('original_planning_not_official'),
+    objectives: z.array(objectiveSchema),
+  })
   .strict();

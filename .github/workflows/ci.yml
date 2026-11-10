@@ -45,6 +45,8 @@ jobs:
         run: pnpm privacy:scan
       - name: Curriculum schema + publication validation
         run: pnpm content:validate
+      - name: Curriculum coverage report is current
+        run: pnpm --filter @atlas/curriculum coverage --check
       - run: pnpm --filter @atlas/database generate
       - run: pnpm lint
       - run: pnpm typecheck

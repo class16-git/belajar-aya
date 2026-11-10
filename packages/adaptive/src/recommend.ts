@@ -161,9 +161,10 @@ export function recommendNext(input: RecommendInput): Recommendation {
     }
   }
 
-  // R3: parent focus (preference) when the skill is eligible and unlocked.
+  // R3: parent focus (preference) when the skill is eligible AND its prerequisites are secure.
+  // Parent focus never unlocks prerequisites (Curriculum Bible, adaptive rule 4).
   const focus = input.focusSkillId ? byId.get(input.focusSkillId) : undefined;
-  if (focus && eligible.includes(focus)) {
+  if (focus && eligible.includes(focus) && prereqsSatisfied(focus)) {
     const r = make(focus, 'R3_PARENT_FOCUS', R(`Parent chose to focus on ${focus.title.en}.`, `Orang tua memilih fokus pada ${focus.title.id}.`), false, masteryStatus(mastery.get(focus.id), now) === 'review_due');
     if (r) return r;
   }
