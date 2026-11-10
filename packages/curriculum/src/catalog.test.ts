@@ -81,6 +81,9 @@ describe('publication gate (scenario 9)', () => {
     expect(resolveDeployEnv('preview', 'production')).toBe('preview');
     expect(resolveDeployEnv('bogus', 'production')).toBe('production');
     expect(resolveDeployEnv(undefined, 'development')).toBe('development');
+    // Trusted platform signal wins over a mislabelled ATLAS_ENV.
+    expect(resolveDeployEnv('preview', 'production', 'production')).toBe('production');
+    expect(resolveDeployEnv('preview', 'production', 'preview')).toBe('preview');
   });
 });
 

@@ -6,6 +6,12 @@ import { execSync } from 'node:child_process';
 
 const run = (cmd, env = {}) => execSync(cmd, { stdio: 'inherit', env: { ...process.env, ...env } });
 const atlasEnv = process.env.ATLAS_ENV ?? 'production';
+// Fail closed BEFORE touching the database: a production deployment must never be labelled preview/development
+// (that would show unreviewed lessons and seed demo accounts).
+if (process.env.VERCEL_ENV === 'production' && atlasEnv !== 'production') {
+  console.error(`Refusing to build: VERCEL_ENV=production but ATLAS_ENV=${atlasEnv}. Remove ATLAS_ENV from the Production environment.`);
+  process.exit(1);
+}
 if (!process.env.DATABASE_URL) {
   console.error('DATABASE_URL is not set. Add a Postgres database (e.g. the Neon integration) to the Vercel project.');
   process.exit(1);

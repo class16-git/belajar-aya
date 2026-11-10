@@ -1,7 +1,7 @@
 import 'server-only';
 import { resolveDeployEnv, resolveMinReview } from '@atlas/curriculum';
 
-const deployEnv = resolveDeployEnv(process.env.ATLAS_ENV, process.env.NODE_ENV);
+const deployEnv = resolveDeployEnv(process.env.ATLAS_ENV, process.env.NODE_ENV, process.env.VERCEL_ENV);
 
 export const config = {
   deployEnv,

@@ -23,7 +23,9 @@ export interface SeedFamily {
 export async function seedFamily(prisma: PrismaClient, f: SeedFamily): Promise<void> {
   // Demo seeding is allowed in development and in explicitly labelled previews (synthetic data only).
   const atlasEnv = process.env.ATLAS_ENV ?? (process.env.NODE_ENV === 'production' ? 'production' : 'development');
-  if (atlasEnv === 'production') throw new Error('Refusing to seed in production');
+  if (atlasEnv === 'production' || process.env.VERCEL_ENV === 'production') {
+    throw new Error('Refusing to seed in production');
+  }
   await prisma.parentUser.deleteMany({ where: { email: f.email.toLowerCase() } });
   const user = await prisma.parentUser.create({
     data: {

@@ -35,7 +35,13 @@ export function publicationIssues(lesson: Lesson): PublicationIssue[] {
  * Deployment environment. A production Node build is treated as real production unless it is
  * explicitly labelled a preview (fake children only, never real learner data).
  */
-export function resolveDeployEnv(atlasEnv: string | undefined, nodeEnv: string | undefined): 'production' | 'preview' | 'development' {
+export function resolveDeployEnv(
+  atlasEnv: string | undefined,
+  nodeEnv: string | undefined,
+  hostEnv?: string | undefined,
+): 'production' | 'preview' | 'development' {
+  // A trusted platform signal (Vercel's VERCEL_ENV) overrides the label: production always fails closed.
+  if (hostEnv === 'production') return 'production';
   if (atlasEnv === 'preview' || atlasEnv === 'development' || atlasEnv === 'production') return atlasEnv;
   return nodeEnv === 'production' ? 'production' : 'development';
 }

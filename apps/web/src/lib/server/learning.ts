@@ -18,7 +18,7 @@ import {
   visibleInteractiveLessons,
   type InteractiveLesson,
 } from '@atlas/curriculum';
-import { prisma, type ChildProfile, type MasteryState as DbMastery, type Prisma } from '@atlas/database';
+import { prisma, Prisma, type ChildProfile, type MasteryState as DbMastery } from '@atlas/database';
 import { PLACEMENT_VERSION, isLocale, type Locale } from '@atlas/shared';
 import { randomSeed } from '@atlas/shared/server';
 import { ageContext, type AgeContext } from './children';
@@ -67,6 +67,8 @@ export async function engineInput(child: ChildProfile, ctx: AgeContext, now: Dat
   };
 }
 
+const isUniqueViolation = (e: unknown) => e instanceof Prisma.PrismaClientKnownRequestError && e.code === 'P2002';
+
 const childLocale = (c: ChildProfile): Locale => (isLocale(c.locale) ? c.locale : 'en');
 
 /** The child's small curated choice set (Montessori: choice among a few). */
@@ -84,11 +86,27 @@ export async function startSession(child: ChildProfile, lessonId: string | undef
   if (!ctx.policy.childScreenActivitiesAllowed) throw new HttpError(403, 'OFFLINE_ONLY');
   const lesson = lessonId ? choices.find((l) => l.id === lessonId) : choices[0];
   if (!lesson || !rec) throw new HttpError(lessonId ? 403 : 409, lessonId ? 'LESSON_NOT_AVAILABLE' : 'NO_CONTENT');
-  // End any session left open on another tab.
-  await prisma.learningSession.updateMany({ where: { childId: child.id, endedAt: null }, data: { endedAt: now } });
-  return prisma.learningSession.create({
-    data: { childId: child.id, targetItems: child.itemsPerSession, localDate: ctx.localDate, skillId: lesson.skillId, lessonId: lesson.id },
-  });
+  try {
+    return await prisma.$transaction(async (tx) => {
+      // One open session per child: close any other (e.g. another tab) and abandon its open item,
+      // so two activities for the same child can never be answered in parallel.
+      const open = await tx.learningSession.findMany({ where: { childId: child.id, endedAt: null }, select: { id: true } });
+      if (open.length) {
+        await tx.activityInstance.updateMany({ where: { sessionId: { in: open.map((o) => o.id) }, status: 'ACTIVE' }, data: { status: 'ABANDONED' } });
+        await tx.learningSession.updateMany({ where: { id: { in: open.map((o) => o.id) } }, data: { endedAt: now } });
+      }
+      return tx.learningSession.create({
+        data: { childId: child.id, targetItems: child.itemsPerSession, localDate: ctx.localDate, skillId: lesson.skillId, lessonId: lesson.id },
+      });
+    });
+  } catch (e) {
+    // A concurrent start won the race (partial unique index: one open session per child) — reuse it.
+    if (isUniqueViolation(e)) {
+      const existing = await prisma.learningSession.findFirst({ where: { childId: child.id, endedAt: null } });
+      if (existing) return existing;
+    }
+    throw e;
+  }
 }
 
 export interface ActivityPayload {
@@ -171,37 +189,50 @@ export async function nextActivity(child: ChildProfile, sessionId: string): Prom
   if (!lesson) return { done: true }; // content was unpublished mid-session: stop safely
 
   const item = generateItem(lesson.generator, difficulty, randomSeed());
-  const log = await prisma.recommendationLog.create({
-    data: {
-      childId: child.id,
-      localDate: ctx.localDate,
-      timezone: ctx.timezone,
-      ageYears: ctx.age?.years ?? null,
-      ageMonths: ctx.age?.months ?? null,
-      ageDays: ctx.age?.days ?? null,
-      safetyBand: ctx.policy.band,
-      placementVersion: PLACEMENT_VERSION,
-      curriculumVersion: curriculumVersion(),
-      recommenderVersion: RECOMMENDER_VERSION,
-      ruleId,
-      decisionReason: reason,
-      skillId: lesson.skillId,
-      lessonId: lesson.id,
-    },
-  });
-  const activity = await prisma.activityInstance.create({
-    data: {
-      childId: child.id,
-      sessionId,
-      skillId: lesson.skillId,
-      lessonId: lesson.id,
-      contentVersion: lesson.contentVersion,
-      generatorVersion: item.generatorVersion,
-      cpaStage: item.cpaStage,
-      itemJson: item as unknown as Prisma.InputJsonValue,
-      recommendationId: log.id,
-    },
-  });
+  let activity;
+  try {
+    // Log + activity are created together; a partial unique index allows one ACTIVE item per session.
+    activity = await prisma.$transaction(async (tx) => {
+      const log = await tx.recommendationLog.create({
+        data: {
+          childId: child.id,
+          localDate: ctx.localDate,
+          timezone: ctx.timezone,
+          ageYears: ctx.age?.years ?? null,
+          ageMonths: ctx.age?.months ?? null,
+          ageDays: ctx.age?.days ?? null,
+          safetyBand: ctx.policy.band,
+          placementVersion: PLACEMENT_VERSION,
+          curriculumVersion: curriculumVersion(),
+          recommenderVersion: RECOMMENDER_VERSION,
+          ruleId,
+          decisionReason: reason,
+          skillId: lesson.skillId,
+          lessonId: lesson.id,
+        },
+      });
+      return tx.activityInstance.create({
+        data: {
+          childId: child.id,
+          sessionId,
+          skillId: lesson.skillId,
+          lessonId: lesson.id,
+          contentVersion: lesson.contentVersion,
+          generatorVersion: item.generatorVersion,
+          cpaStage: item.cpaStage,
+          itemJson: item as unknown as Prisma.InputJsonValue,
+          recommendationId: log.id,
+        },
+      });
+    });
+  } catch (e) {
+    if (!isUniqueViolation(e)) throw e;
+    // A concurrent request already created this session's active item — return that one.
+    const all = await prisma.activityInstance.findMany({ where: { sessionId }, orderBy: { createdAt: 'asc' } });
+    const current = all.find((a) => a.status === 'ACTIVE');
+    if (!current) throw new HttpError(409, 'CONFLICT');
+    return { done: false, activity: payload(current, all.length, session.targetItems, locale) };
+  }
   return { done: false, activity: payload(activity, existing.length + 1, session.targetItems, locale) };
 }
 
@@ -221,12 +252,15 @@ export async function submitAttempt(child: ChildProfile, activityId: string, val
   const finished = result.correct || tryNumber >= config.maxTriesPerItem;
 
   return prisma.$transaction(async (tx) => {
-    // Optimistic concurrency: a double-submit cannot create two attempts for the same try.
+    // Optimistic concurrency on BOTH tries and hintsUsed: a double-submit, or a hint issued while this
+    // answer was being graded, makes the claim fail (409) instead of recording stale "independent" evidence.
     const claimed = await tx.activityInstance.updateMany({
-      where: { id: activity.id, status: 'ACTIVE', tries: activity.tries },
+      where: { id: activity.id, status: 'ACTIVE', tries: activity.tries, hintsUsed: activity.hintsUsed },
       data: { tries: tryNumber, ...(finished ? { status: 'COMPLETED', completedAt: now } : {}) },
     });
     if (claimed.count !== 1) throw new HttpError(409, 'CONFLICT');
+    // Serialise read-modify-write of mastery per (child, skill) so concurrent evidence is never lost.
+    await tx.$queryRaw`SELECT pg_advisory_xact_lock(hashtext(${`mastery:${child.id}:${activity.skillId}`}))::text AS locked`;
     const prev = await tx.masteryState.findUnique({ where: { childId_skillId: { childId: child.id, skillId: activity.skillId } } });
     const evidence: Evidence = {
       skillId: activity.skillId,
@@ -291,7 +325,7 @@ export async function requestHint(child: ChildProfile, activityId: string) {
   const level = Math.min(MAX_HINT_LEVEL, activity.hintsUsed);
   const hint = hintFor(lesson, item, level, childLocale(child));
   const claimed = await prisma.activityInstance.updateMany({
-    where: { id: activity.id, status: 'ACTIVE', hintsUsed: activity.hintsUsed },
+    where: { id: activity.id, status: 'ACTIVE', hintsUsed: activity.hintsUsed, tries: activity.tries },
     data: {
       hintsUsed: activity.hintsUsed + 1,
       // H4 is a worked example: close this item; the next one is a fresh analogous item.

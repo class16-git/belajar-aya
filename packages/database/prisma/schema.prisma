@@ -89,6 +89,7 @@ model ChildProfile {
   @@index([familyId])
 }
 
+/// Partial unique index (migration 20261110060000): one open session per child.
 model LearningSession {
   id          String             @id @default(cuid())
   childId     String
@@ -104,6 +105,7 @@ model LearningSession {
   @@index([childId, startedAt])
 }
 
+/// Partial unique index (migration 20261110060000): one ACTIVE item per session.
 /// One generated item. itemJson holds the server-only answer key and is never sent to clients.
 model ActivityInstance {
   id                String          @id @default(cuid())

@@ -15,18 +15,31 @@ export class HttpError extends Error {
 export const json = (data: unknown, status = 200) =>
   NextResponse.json(data, { status, headers: { 'Cache-Control': 'no-store' } });
 
-/** CSRF defence for cookie-authenticated mutations: require a same-origin Origin header. */
+/**
+ * CSRF defence for cookie-authenticated mutations (in addition to SameSite=Lax cookies).
+ * If ATLAS_PUBLIC_ORIGIN is set (comma-separated, e.g. "https://atlas.example.org"), the Origin must match one
+ * exactly (scheme + host + port) and forwarded headers are ignored. Otherwise Origin must match the request Host.
+ */
 export function assertSameOrigin(req: Request): void {
   if (req.method === 'GET' || req.method === 'HEAD') return;
   const origin = req.headers.get('origin');
-  const host = req.headers.get('x-forwarded-host') ?? req.headers.get('host');
-  if (!origin || !host) throw new HttpError(403, 'BAD_ORIGIN');
+  if (!origin) throw new HttpError(403, 'BAD_ORIGIN');
+  let parsed: URL;
   try {
-    if (new URL(origin).host !== host) throw new HttpError(403, 'BAD_ORIGIN');
-  } catch (e) {
-    if (e instanceof HttpError) throw e;
+    parsed = new URL(origin);
+  } catch {
     throw new HttpError(403, 'BAD_ORIGIN');
   }
+  const allowed = (process.env.ATLAS_PUBLIC_ORIGIN ?? '')
+    .split(',')
+    .map((o) => o.trim().replace(/\/$/, ''))
+    .filter(Boolean);
+  if (allowed.length) {
+    if (!allowed.includes(parsed.origin)) throw new HttpError(403, 'BAD_ORIGIN');
+    return;
+  }
+  const host = req.headers.get('host');
+  if (!host || parsed.host !== host) throw new HttpError(403, 'BAD_ORIGIN');
 }
 
 export async function parseBody<S extends ZodTypeAny>(req: Request, schema: S): Promise<output<S>> {

@@ -83,6 +83,21 @@ describe('timezone-aware local date', () => {
     // Day of DST end is 25h long: from 00:00 Nov 1 local, next midnight is 25h later.
     const nyLong = msUntilNextLocalMidnight(new Date('2026-11-01T04:00:00Z'), 'America/New_York');
     expect(nyLong).toBe(25 * 60 * 60 * 1000);
+
+    // Review finding F7 (not reproducible): start times with seconds/ms still land exactly on local midnight.
+    for (const [iso, tz] of [
+      ['2026-11-09T16:30:30.250Z', 'Asia/Jakarta'],
+      ['2026-11-10T04:59:59.999Z', 'America/New_York'],
+      ['2026-04-04T10:30:30Z', 'Pacific/Auckland'], // NZ DST ends 2026-04-05
+    ] as const) {
+      const now = new Date(iso);
+      const at = new Date(now.getTime() + msUntilNextLocalMidnight(now, tz));
+      const hms = new Intl.DateTimeFormat('en-GB', { timeZone: tz, hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' }).format(at);
+      expect(hms).toBe('00:00:00');
+      expect(at.getUTCMilliseconds()).toBe(0);
+      expect(localDateInTimeZone(at, tz)).not.toBe(localDateInTimeZone(now, tz));
+      expect(localDateInTimeZone(new Date(at.getTime() - 1), tz)).toBe(localDateInTimeZone(now, tz));
+    }
   });
 });
 

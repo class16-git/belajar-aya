@@ -21,14 +21,14 @@ All data synthetic. Results below are from actual runs in the build container.
 | @atlas/assessment (2,000-run property tests) | 11 | ✅ |
 | @atlas/adaptive (golden traces) | 16 | ✅ |
 | @atlas/ai | 4 | ✅ |
-| @atlas/web (i18n parity) | 4 | ✅ |
-| **Total** | **67** | **✅ all pass** |
+| @atlas/web (i18n parity, origin check, fail-closed build) | 9 | ✅ |
+| **Total** | **72** | **✅ all pass** |
 
 The real-learner age acceptance cases from the spec were verified locally from the private file
 (both pass); they are not reproduced here.
 
 ## E2E — `pnpm test:e2e` (production build, `ATLAS_ENV=preview`)
-**23 passed, 0 failed, 0 flaky** (≈60 s). axe (WCAG 2.0/2.1 A + AA) on 30+ screen states at mobile and
+**26 passed, 0 failed, 0 flaky** (≈60 s); the 3 concurrency tests also passed 30/30 with `--repeat-each 10`. axe (WCAG 2.0/2.1 A + AA) on 30+ screen states at mobile and
 tablet: **0 violations**.
 
 | # | Test | Spec scenario |
@@ -51,6 +51,7 @@ tablet: **0 violations**.
 | 21 | Sign-in rate limit → 429 | security |
 | 22 | Oversized body → 413 | security |
 | 23 | CSP / nosniff / no x-powered-by | security |
+| 24–26 | Concurrent session starts / item requests; double-submit + hint race; stale tab item rejected | review F1, F3, F4 |
 
 Scenario 8 (AI unavailable) is covered by unit tests and by the whole E2E suite running with AI disabled.
 

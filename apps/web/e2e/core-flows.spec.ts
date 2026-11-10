@@ -338,6 +338,59 @@ test.describe('Phase 1: toddler offline cards, observations, language, privacy',
   });
 });
 
+test.describe('concurrency (review findings F1, F3, F4)', () => {
+  async function childModeApi(page: import('@playwright/test').Page, request: import('@playwright/test').APIRequestContext, baseURL: string, tag: string) {
+    const fam = await createFamily(request, baseURL, tag);
+    await signIn(page, fam.email);
+    await enterChildMode(page);
+    return { fam, headers: { Origin: baseURL } };
+  }
+
+  test('concurrent session starts and item requests create exactly one open session and one active item', async ({ page, request, baseURL }) => {
+    const { fam, headers } = await childModeApi(page, request, baseURL!, 'race-start');
+    const starts = await Promise.all([1, 2, 3].map(() => page.request.post('/api/learn/session', { headers, data: {} })));
+    expect(starts.every((r) => r.status() === 201)).toBe(true);
+    expect(await db.learningSession.count({ where: { childId: fam.g1Id, endedAt: null } })).toBe(1);
+    const open = await db.learningSession.findFirstOrThrow({ where: { childId: fam.g1Id, endedAt: null } });
+    const nexts = await Promise.all([1, 2, 3, 4].map(() => page.request.post('/api/activities/next', { headers, data: { sessionId: open.id } })));
+    const ids = new Set(await Promise.all(nexts.map(async (r) => (await r.json()).activity?.activityId)));
+    expect(ids.size).toBe(1);
+    expect(await db.activityInstance.count({ where: { sessionId: open.id, status: 'ACTIVE' } })).toBe(1);
+  });
+
+  test('a double-submitted answer is recorded once; a hint racing an answer never yields "independent" evidence', async ({ page, request, baseURL }) => {
+    const { fam, headers } = await childModeApi(page, request, baseURL!, 'race-attempt');
+    const s = await (await page.request.post('/api/learn/session', { headers, data: {} })).json();
+    for (let round = 0; round < 3; round++) {
+      const { activity } = await (await page.request.post('/api/activities/next', { headers, data: { sessionId: s.sessionId } })).json();
+      const value = await answerFor(activity.activityId);
+      const res = await Promise.all([
+        page.request.post('/api/attempts', { headers, data: { activityId: activity.activityId, response: { value } } }),
+        page.request.post('/api/attempts', { headers, data: { activityId: activity.activityId, response: { value } } }),
+        page.request.post(`/api/activities/${activity.activityId}/hint`, { headers }),
+      ]);
+      expect(res.filter((r) => r.status() === 200).length).toBeGreaterThanOrEqual(1);
+      expect(res.every((r) => r.status() === 200 || r.status() === 409)).toBe(true);
+      const attempts = await db.attempt.findMany({ where: { activityId: activity.activityId } });
+      const act = await db.activityInstance.findUniqueOrThrow({ where: { id: activity.activityId } });
+      expect(attempts.filter((a) => a.tryNumber === 1)).toHaveLength(attempts.length > 0 ? 1 : 0);
+      if (attempts.some((a) => a.independent)) expect(act.hintsUsed).toBe(0);
+    }
+    // Every recorded attempt contributed exactly once to mastery.
+    const state = await db.masteryState.findUnique({ where: { childId_skillId: { childId: fam.g1Id, skillId: 'MATH-G1-COUNT-20' } } });
+    expect(state?.attempts ?? 0).toBe(await db.attempt.count({ where: { childId: fam.g1Id, skillId: 'MATH-G1-COUNT-20' } }));
+  });
+
+  test('starting a new session (e.g. another tab) abandons the old open item so it cannot be answered', async ({ page, request, baseURL }) => {
+    const { headers } = await childModeApi(page, request, baseURL!, 'race-tabs');
+    const s1 = await (await page.request.post('/api/learn/session', { headers, data: {} })).json();
+    const { activity } = await (await page.request.post('/api/activities/next', { headers, data: { sessionId: s1.sessionId } })).json();
+    await page.request.post('/api/learn/session', { headers, data: {} });
+    const late = await page.request.post('/api/attempts', { headers, data: { activityId: activity.activityId, response: { value: await answerFor(activity.activityId) } } });
+    expect(late.status()).toBe(409);
+  });
+});
+
 test.describe('security', () => {
   test('IDOR: a parent cannot read or change another family’s child', async ({ browser, baseURL }) => {
     const a = await browser.newContext({ baseURL });

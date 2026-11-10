@@ -36,4 +36,17 @@ decision before launch.
 - Legal review (Indonesian PDP Law; COPPA if offered in the US) of consent text not yet done; the UI says so.
 - Repository is public; recommend making it private before real use.
 
-**Severity gate:** no open P0/P1 findings in agent review.
+## Independent review (Codex, 2026-11-10) — triage
+| ID | Claim | Verified? | Resolution |
+|---|---|---|---|
+| F1 | Concurrent attempts on different items can lose mastery updates | Plausible (needed two open items, e.g. two tabs) | Per-(child, skill) advisory lock around the mastery read-modify-write; starting a session abandons other open items |
+| F2 | `ATLAS_ENV=preview` on a production deploy shows unreviewed content and seeds demo data | Yes (misconfiguration path) | `VERCEL_ENV=production` forces production in the app and seeding; Vercel build exits before migrations on the mismatch; unit-tested |
+| F3 | Hint request racing an answer can record "independent" evidence | Yes | Attempt and hint claims both require unchanged `tries` **and** `hintsUsed`; loser gets 409 |
+| F4 | Concurrent start/next creates several open sessions / active items | Yes — reproduced (3 open sessions) | Partial unique indexes (one open session per child, one active item per session) + conflict handling; regression test fails without them |
+| F5 | CSRF check trusts `X-Forwarded-Host` | Low risk (browsers can't send it cross-site without CORS; SameSite=Lax) | Forwarded headers ignored; optional exact `ATLAS_PUBLIC_ORIGIN` allowlist; unit-tested |
+| F6 | Error logs include exception messages | Yes | Production logs record error name/code only |
+| F7 | Midnight refresh fires up to a minute late | **Not reproducible** — lands at 00:00:00.000 for Codex's own example, NY and the NZ DST day; function is not used at runtime | Regression tests added; no code change |
+
+Not yet independently reviewed (per Codex scope note): a route-by-route review of every API handler and the PIN/password/rate-limit implementations by someone other than the author.
+
+**Severity gate:** no open P0/P1 findings.
