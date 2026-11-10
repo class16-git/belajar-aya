@@ -470,3 +470,15 @@ export function gradeUnitAssessment(u: Unit, answers: Record<string, number>) {
   });
   return { correct: results.filter((r) => r.correct).length, total: results.length, results };
 }
+
+// ── Loaded corpus ────────────────────────────────────────────────────────────────────────────────────────────────────
+import { RAW_READINGS, RAW_UNITS } from './content-index';
+let cached: (ExpansionContent & { errors: string[] }) | null = null;
+/** The validated expansion corpus (cached). Items with validation errors are still returned, flagged via `errors`. */
+export function getExpansion(): ExpansionContent & { errors: string[] } {
+  if (!cached) {
+    const { content, errors } = validateExpansion({ units: RAW_UNITS, readings: RAW_READINGS });
+    cached = { ...content, errors };
+  }
+  return cached;
+}

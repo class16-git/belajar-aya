@@ -1,0 +1,373 @@
+{
+  "targets": {
+    "perLevel": {
+      "units": 150,
+      "readings": 150
+    },
+    "units": 1500,
+    "readings": 1500
+  },
+  "totals": {
+    "units": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 1,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 1
+    },
+    "readings": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 1,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 1
+    }
+  },
+  "byLevel": {
+    "age2_3": {
+      "units": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      },
+      "readings": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 1,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 1
+      }
+    },
+    "age3_4": {
+      "units": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      },
+      "readings": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      }
+    },
+    "age4_5": {
+      "units": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      },
+      "readings": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      }
+    },
+    "k": {
+      "units": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      },
+      "readings": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      }
+    },
+    "g1": {
+      "units": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      },
+      "readings": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      }
+    },
+    "g2": {
+      "units": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 1,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 1
+      },
+      "readings": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      }
+    },
+    "g3": {
+      "units": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      },
+      "readings": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      }
+    },
+    "g4": {
+      "units": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      },
+      "readings": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      }
+    },
+    "g5": {
+      "units": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      },
+      "readings": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      }
+    },
+    "g6": {
+      "units": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      },
+      "readings": {
+        "drafted": 0,
+        "structurally_validated": 0,
+        "subject_validated": 0,
+        "human_reviewed": 0,
+        "published": 0,
+        "rejected": 0,
+        "total": 0
+      }
+    }
+  },
+  "byFramework": {
+    "montessori": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    },
+    "math": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 1,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 1
+    },
+    "stem": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    },
+    "islamic": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    },
+    "literacy": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    }
+  },
+  "byGenre": {
+    "fiction": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    },
+    "nonfiction": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    },
+    "biography": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    },
+    "explanatory": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    },
+    "procedural": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    },
+    "report": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    },
+    "poetry": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    },
+    "article": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    },
+    "picture_story_script": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 1,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 1
+    },
+    "oral_story": {
+      "drafted": 0,
+      "structurally_validated": 0,
+      "subject_validated": 0,
+      "human_reviewed": 0,
+      "published": 0,
+      "rejected": 0,
+      "total": 0
+    }
+  },
+  "awaitingScholar": 0,
+  "validationErrors": 0
+}

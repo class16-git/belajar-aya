@@ -19,3 +19,38 @@ The **Awaiting human** columns count content that passed the agent checks but is
 | Grade 5 | 0 | 0 | 0 | 0/150 (0%) | 1 | 1 | 1/150 (1%) · 2 passages, 0 books |
 | Grade 6 | 0 | 0 | 0 | 0/150 (0%) | 0 | 2 | 0/150 (0%) · 2 passages, 0 books |
 | **All levels (unique units: 59)** | 55 | 2 | 2 | 4% | 37 | 8 | 2% |
+
+## Expansion content (new units and readings, 2026-11 mandate)
+
+Targets: 1500 new units and 1500 new readings (150 + 150 per level).
+Each cell shows the total authored, then: ✓ passed structural and subject validation · 👤 human-reviewed · ● published (live) · ✗ rejected.
+A draft that has not passed validation counts only in the total.
+Validation errors in the corpus: **0**. Islamic items waiting for a qualified scholar: **0**.
+
+| Level | Units | Units vs target | Readings | Readings vs target |
+|---|---|---|---|---|
+| Age 2–3 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 | 1 (✓ 1 · 👤 0 · ● 0) | 1/150 |
+| Age 3–4 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 |
+| Age 4–5 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 |
+| Kindergarten | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 |
+| Grade 1 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 |
+| Grade 2 | 1 (✓ 1 · 👤 0 · ● 0) | 1/150 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 |
+| Grade 3 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 |
+| Grade 4 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 |
+| Grade 5 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 |
+| Grade 6 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 | 0 (✓ 0 · 👤 0 · ● 0) | 0/150 |
+| **Total** | 1 (✓ 1 · 👤 0 · ● 0) | 1/1500 | 1 (✓ 1 · 👤 0 · ● 0) | 1/1500 |
+
+| Units by framework | Count |
+|---|---|
+| montessori | 0 (✓ 0 · 👤 0 · ● 0) |
+| math | 1 (✓ 1 · 👤 0 · ● 0) |
+| stem | 0 (✓ 0 · 👤 0 · ● 0) |
+| islamic | 0 (✓ 0 · 👤 0 · ● 0) |
+| literacy | 0 (✓ 0 · 👤 0 · ● 0) |
+
+| Readings by genre | Count |
+|---|---|
+| picture_story_script | 1 (✓ 1 · 👤 0 · ● 0) |
+
+Machine-readable: [`content-dashboard.json`](content-dashboard.json).

@@ -65,3 +65,70 @@ export function contentDashboardMarkdown(cat: Catalog, lib: Library): string {
   ];
   return lines.join('\n');
 }
+
+// ── Expansion (new units and readings) ───────────────────────────────────────────────────────────────────────────────
+import { PIPELINE_STATES, pipelineState, UNIT_FRAMEWORKS, READING_GENRES, type ExpansionContent, type PipelineState } from './units';
+
+export const EXPANSION_TARGET_PER_LEVEL = { units: 150, readings: 150 } as const;
+type StateCounts = Record<PipelineState, number> & { total: number };
+const empty = (): StateCounts => ({ drafted: 0, structurally_validated: 0, subject_validated: 0, human_reviewed: 0, published: 0, rejected: 0, total: 0 });
+
+/** Actual counts of NEW expansion content by level, subject and pipeline state (machine-readable). */
+export function expansionDashboard(exp: ExpansionContent & { errors: string[] }) {
+  const byLevel = Object.fromEntries(STAGES.map((s) => [s, { units: empty(), readings: empty() }])) as Record<Stage, { units: StateCounts; readings: StateCounts }>;
+  const byFramework = Object.fromEntries(UNIT_FRAMEWORKS.map((f) => [f, empty()])) as Record<string, StateCounts>;
+  const byGenre = Object.fromEntries(READING_GENRES.map((g) => [g, empty()])) as Record<string, StateCounts>;
+  const bump = (c: StateCounts, st: PipelineState) => { c[st]++; c.total++; };
+  for (const u of exp.units) {
+    const st = pipelineState(u, exp.errors);
+    bump(byLevel[u.level].units, st);
+    bump(byFramework[u.framework]!, st);
+  }
+  for (const r of exp.readings) {
+    const st = pipelineState(r, exp.errors);
+    bump(byLevel[r.level].readings, st);
+    bump(byGenre[r.genre]!, st);
+  }
+  const totals = { units: empty(), readings: empty() };
+  for (const s of STAGES) for (const k of ['units', 'readings'] as const) for (const st of [...PIPELINE_STATES, 'rejected', 'total'] as const) totals[k][st] += byLevel[s][k][st];
+  const islamic = exp.units.filter((u) => u.framework === 'islamic').length + exp.readings.filter((r) => r.crossCurricular.some((c) => c.subject === 'islamic_values')).length;
+  return {
+    targets: { perLevel: EXPANSION_TARGET_PER_LEVEL, units: EXPANSION_TARGET_PER_LEVEL.units * STAGES.length, readings: EXPANSION_TARGET_PER_LEVEL.readings * STAGES.length },
+    totals,
+    byLevel,
+    byFramework,
+    byGenre,
+    awaitingScholar: islamic,
+    validationErrors: exp.errors.length,
+  };
+}
+
+export function expansionDashboardMarkdown(exp: ExpansionContent & { errors: string[] }): string {
+  const d = expansionDashboard(exp);
+  const cell = (c: StateCounts) => `${c.total} (✓ ${c.subject_validated + c.human_reviewed + c.published} · 👤 ${c.human_reviewed + c.published} · ● ${c.published}${c.rejected ? ` · ✗ ${c.rejected}` : ''})`;
+  return [
+    '',
+    '## Expansion content (new units and readings, 2026-11 mandate)',
+    '',
+    `Targets: ${d.targets.units} new units and ${d.targets.readings} new readings (${d.targets.perLevel.units} + ${d.targets.perLevel.readings} per level).`,
+    'Each cell shows the total authored, then: ✓ passed structural and subject validation · 👤 human-reviewed · ● published (live) · ✗ rejected.',
+    'A draft that has not passed validation counts only in the total.',
+    `Validation errors in the corpus: **${d.validationErrors}**. Islamic items waiting for a qualified scholar: **${d.awaitingScholar}**.`,
+    '',
+    '| Level | Units | Units vs target | Readings | Readings vs target |',
+    '|---|---|---|---|---|',
+    ...STAGES.map((s) => `| ${LABEL[s]} | ${cell(d.byLevel[s].units)} | ${d.byLevel[s].units.total}/${d.targets.perLevel.units} | ${cell(d.byLevel[s].readings)} | ${d.byLevel[s].readings.total}/${d.targets.perLevel.readings} |`),
+    `| **Total** | ${cell(d.totals.units)} | ${d.totals.units.total}/${d.targets.units} | ${cell(d.totals.readings)} | ${d.totals.readings.total}/${d.targets.readings} |`,
+    '',
+    '| Units by framework | Count |',
+    '|---|---|',
+    ...Object.entries(d.byFramework).map(([f, c]) => `| ${f} | ${cell(c)} |`),
+    '',
+    '| Readings by genre | Count |',
+    '|---|---|',
+    ...Object.entries(d.byGenre).filter(([, c]) => c.total > 0).map(([g, c]) => `| ${g} | ${cell(c)} |`),
+    '',
+    'Machine-readable: [`content-dashboard.json`](content-dashboard.json).',
+    '',
+  ].join('\n');
+}
