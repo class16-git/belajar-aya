@@ -1,0 +1,9 @@
+{
+  "notice": "SYNTHETIC EXAMPLE. Copy to config/learners.private.json (git-ignored) and replace with real values locally only. Never commit real learner data — this repository is public.",
+  "parent": { "email": "parent@example.test", "password": "change-me-locally-12chars", "pin": "2468" },
+  "timezone": "Asia/Jakarta",
+  "learners": [
+    { "nickname": "Adek", "dateOfBirth": "2024-05-20", "schoolGrade": null, "mode": "TODDLER_OFFLINE" },
+    { "nickname": "Kakak", "dateOfBirth": "2019-08-15", "schoolGrade": "Grade 1", "mode": "ELEMENTARY_GUIDED" }
+  ]
+}

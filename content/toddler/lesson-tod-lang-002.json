@@ -1,0 +1,108 @@
+{
+  "id": "lesson-tod-lang-002",
+  "skillId": "TOD-LANG-NAME",
+  "title": {
+    "en": "Nose, toes, ears",
+    "id": "Hidung, jari kaki, telinga"
+  },
+  "ageBand": "toddler",
+  "domain": "language",
+  "mode": "offline",
+  "objective": {
+    "en": "Name body parts through touch and a simple song.",
+    "id": "Menyebut bagian tubuh melalui sentuhan dan lagu sederhana."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 0,
+  "activityMinutes": {
+    "min": 2,
+    "max": 5
+  },
+  "materials": [
+    {
+      "en": "No materials needed — a quiet space",
+      "id": "Tidak perlu bahan — cukup tempat yang tenang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Choose three body parts to focus on.",
+      "id": "Pilih tiga bagian tubuh untuk difokuskan."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Touch your own nose and say 'nose'. Invite your child to touch theirs.",
+      "id": "Sentuh hidung Anda dan ucapkan 'hidung'. Ajak anak menyentuh hidungnya."
+    },
+    {
+      "en": "Repeat with two more body parts, slowly.",
+      "id": "Ulangi dengan dua bagian tubuh lagi, perlahan."
+    },
+    {
+      "en": "Sing the names to a tune you both know.",
+      "id": "Nyanyikan namanya dengan nada yang kalian berdua kenal."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "Where is your nose?",
+      "id": "Di mana hidungmu?"
+    },
+    {
+      "en": "Here are my ears.",
+      "id": "Ini telingaku."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Touches the named body part",
+      "id": "Menyentuh bagian tubuh yang disebut"
+    },
+    {
+      "en": "Joins in the song",
+      "id": "Ikut bernyanyi"
+    }
+  ],
+  "cleanup": {
+    "en": "End with a gentle stretch together.",
+    "id": "Akhiri dengan peregangan ringan bersama."
+  },
+  "variations": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

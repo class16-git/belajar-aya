@@ -1,0 +1,104 @@
+{
+  "id": "lesson-tod-qty-002",
+  "skillId": "TOD-QUANTITY-3",
+  "title": {
+    "en": "One for you, one for me",
+    "id": "Satu untukmu, satu untukku"
+  },
+  "ageBand": "toddler",
+  "domain": "practical_life",
+  "mode": "offline",
+  "objective": {
+    "en": "Experience one-to-one matching while setting the table.",
+    "id": "Mengalami pemasangan satu-satu saat menata meja."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "Two or three unbreakable plates and cups",
+      "id": "Dua atau tiga piring dan gelas yang tidak mudah pecah"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Place the plates where people will sit.",
+      "id": "Letakkan piring di tempat orang akan duduk."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Give your child one cup and point to a plate.",
+      "id": "Berikan satu gelas kepada anak dan tunjuk satu piring."
+    },
+    {
+      "en": "Say who the plate is for.",
+      "id": "Sebutkan piring itu untuk siapa."
+    },
+    {
+      "en": "Continue until every plate has a cup.",
+      "id": "Lanjutkan sampai setiap piring mendapat gelas."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "One cup for Mama. One cup for you.",
+      "id": "Satu gelas untuk Mama. Satu gelas untukmu."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Places one cup per plate",
+      "id": "Meletakkan satu gelas per piring"
+    },
+    {
+      "en": "Notices when a plate has no cup",
+      "id": "Menyadari saat ada piring tanpa gelas"
+    }
+  ],
+  "cleanup": {
+    "en": "After the meal, carry cups to the sink together.",
+    "id": "Setelah makan, bawa gelas ke wastafel bersama-sama."
+  },
+  "variations": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

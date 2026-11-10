@@ -1,0 +1,22 @@
+node_modules/
+.next/
+dist/
+coverage/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+test-results/
+playwright-report/
+*.log
+.DS_Store
+
+# Runtime secrets
+.env
+.env.*
+!.env.example
+
+# Real learner profile data — NEVER commit (repository is public)
+config/learners.private.json
+config/*.private.json
+!config/learners.private.example.json
+artifacts/screenshots/private/

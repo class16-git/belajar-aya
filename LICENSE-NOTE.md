@@ -1,0 +1,2 @@
+# Licensing note
+No open-source license is granted by this specification. The repository should default to **private / all rights reserved** until the owner chooses a license. Any third-party dependencies, illustrations, fonts and curriculum references must be checked for appropriate usage rights. "Montessori" and "Singapore Math" are pedagogical descriptors here, not claims of accreditation, endorsement or rights to commercial materials.

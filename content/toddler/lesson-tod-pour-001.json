@@ -1,0 +1,124 @@
+{
+  "id": "lesson-tod-pour-001",
+  "skillId": "TOD-PRACT-POUR",
+  "title": {
+    "en": "Pouring water",
+    "id": "Menuang air"
+  },
+  "ageBand": "toddler",
+  "domain": "practical_life",
+  "mode": "offline",
+  "objective": {
+    "en": "Practise careful pouring between two small jugs.",
+    "id": "Berlatih menuang dengan hati-hati di antara dua teko kecil."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "Two small unbreakable jugs",
+      "id": "Dua teko kecil yang tidak mudah pecah"
+    },
+    {
+      "en": "A tray and a small towel",
+      "id": "Nampan dan handuk kecil"
+    },
+    {
+      "en": "A little water",
+      "id": "Sedikit air"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Fill one jug about a quarter full. Put everything on the tray at the child's height.",
+      "id": "Isi satu teko sekitar seperempat. Letakkan semua di nampan setinggi anak."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Hold the handle, support the spout with your other hand, and pour slowly.",
+      "id": "Pegang gagangnya, topang ujung teko dengan tangan lain, dan tuang perlahan."
+    },
+    {
+      "en": "Stop and look when the jug is empty.",
+      "id": "Berhenti dan lihat saat teko kosong."
+    },
+    {
+      "en": "Invite your child to pour it back.",
+      "id": "Ajak anak menuangnya kembali."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "Slowly, slowly… all the water moved.",
+      "id": "Pelan, pelan… semua airnya pindah."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Uses two hands to control the jug",
+      "id": "Memakai dua tangan untuk mengendalikan teko"
+    },
+    {
+      "en": "Watches the water stream",
+      "id": "Memperhatikan aliran air"
+    },
+    {
+      "en": "Reaches for the towel after a spill",
+      "id": "Mengambil handuk setelah tumpah"
+    }
+  ],
+  "cleanup": {
+    "en": "Wipe the tray with the towel together and empty the water into a plant.",
+    "id": "Lap nampan dengan handuk bersama-sama dan siram airnya ke tanaman."
+  },
+  "variations": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": true,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Use a few centimetres of water only and never leave the child alone near water.",
+      "id": "Gunakan air hanya beberapa sentimeter dan jangan pernah meninggalkan anak sendirian di dekat air."
+    },
+    {
+      "en": "Use room-temperature water only.",
+      "id": "Gunakan air bersuhu ruang saja."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

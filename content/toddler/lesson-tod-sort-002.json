@@ -1,0 +1,108 @@
+{
+  "id": "lesson-tod-sort-002",
+  "skillId": "TOD-SORT-COLOR",
+  "title": {
+    "en": "Big and small",
+    "id": "Besar dan kecil"
+  },
+  "ageBand": "toddler",
+  "domain": "sensorial",
+  "mode": "offline",
+  "objective": {
+    "en": "Sort safe objects into 'big' and 'small' groups.",
+    "id": "Memilah benda aman ke kelompok 'besar' dan 'kecil'."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "Two very big and two smaller balls or blocks — the smaller ones still bigger than a toilet-paper tube",
+      "id": "Dua bola atau balok sangat besar dan dua yang lebih kecil — yang kecil tetap lebih besar dari gulungan tisu"
+    },
+    {
+      "en": "Two baskets",
+      "id": "Dua keranjang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Check every 'small' object with a toilet-paper tube: if it fits inside, do not use it.",
+      "id": "Periksa setiap benda 'kecil' dengan gulungan tisu: jika muat di dalamnya, jangan digunakan."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Hold up a big ball and a small ball and name them.",
+      "id": "Angkat bola besar dan bola kecil lalu sebut namanya."
+    },
+    {
+      "en": "Place each into its basket.",
+      "id": "Masukkan masing-masing ke keranjangnya."
+    },
+    {
+      "en": "Invite your child to continue.",
+      "id": "Ajak anak melanjutkan."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "This one is big. This one is small.",
+      "id": "Yang ini besar. Yang ini kecil."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Uses the words big or small",
+      "id": "Menggunakan kata besar atau kecil"
+    },
+    {
+      "en": "Compares two objects by holding them",
+      "id": "Membandingkan dua benda dengan memegangnya"
+    }
+  ],
+  "cleanup": {
+    "en": "Roll the balls back to the shelf.",
+    "id": "Gulingkan bola kembali ke rak."
+  },
+  "variations": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

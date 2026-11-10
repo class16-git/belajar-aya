@@ -1,0 +1,108 @@
+{
+  "id": "lesson-tod-sort-003",
+  "skillId": "TOD-SORT-COLOR",
+  "title": {
+    "en": "Laundry helper",
+    "id": "Pembantu cucian"
+  },
+  "ageBand": "toddler",
+  "domain": "practical_life",
+  "mode": "offline",
+  "objective": {
+    "en": "Sort clean clothes into 'mine' and 'grown-up's'.",
+    "id": "Memilah baju bersih ke 'punyaku' dan 'punya orang dewasa'."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "A few clean items of the child's clothing and a few of an adult's",
+      "id": "Beberapa baju bersih milik anak dan beberapa milik orang dewasa"
+    },
+    {
+      "en": "Two baskets",
+      "id": "Dua keranjang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Remove belts, pins and anything with cords.",
+      "id": "Lepaskan ikat pinggang, peniti, dan apa pun yang bertali."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Hold up a small shirt and say whose it is.",
+      "id": "Angkat baju kecil dan sebutkan milik siapa."
+    },
+    {
+      "en": "Put it in the child's basket. Do the same with an adult item.",
+      "id": "Masukkan ke keranjang anak. Lakukan hal yang sama dengan baju orang dewasa."
+    },
+    {
+      "en": "Offer the pile to your child.",
+      "id": "Tawarkan tumpukan baju kepada anak."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "Is this yours or mine?",
+      "id": "Ini punyamu atau punyaku?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Notices size differences",
+      "id": "Memperhatikan perbedaan ukuran"
+    },
+    {
+      "en": "Carries a basket with both hands",
+      "id": "Membawa keranjang dengan dua tangan"
+    }
+  ],
+  "cleanup": {
+    "en": "Carry the baskets to where clothes are kept.",
+    "id": "Bawa keranjang ke tempat menyimpan baju."
+  },
+  "variations": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

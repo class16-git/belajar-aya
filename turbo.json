@@ -1,0 +1,12 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["NODE_ENV", "DATABASE_URL", "ATLAS_CONTENT_MIN_REVIEW", "ATLAS_ENV", "ATLAS_SECURE_COOKIES"],
+  "tasks": {
+    "build": { "dependsOn": ["^build"], "outputs": [".next/**", "!.next/cache/**", "dist/**"] },
+    "lint": {},
+    "typecheck": { "dependsOn": ["@atlas/database#generate"] },
+    "@atlas/database#generate": { "cache": false },
+    "test": { "dependsOn": ["@atlas/database#generate"] },
+    "dev": { "cache": false, "persistent": true }
+  }
+}

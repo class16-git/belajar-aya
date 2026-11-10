@@ -1,0 +1,233 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ChildMode {
+  TODDLER_OFFLINE
+  ELEMENTARY_GUIDED
+}
+
+enum ActivityStatus {
+  ACTIVE
+  COMPLETED
+  ABANDONED
+}
+
+enum ObservationLevel {
+  NOT_TODAY
+  INTRODUCED
+  EXPLORING
+  INDEPENDENT
+}
+
+model ParentUser {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  pinHash      String?
+  locale       String    @default("en")
+  createdAt    DateTime  @default(now())
+  family       Family?
+  sessions     Session[]
+}
+
+model Family {
+  id             String          @id @default(cuid())
+  ownerId        String          @unique
+  owner          ParentUser      @relation(fields: [ownerId], references: [id], onDelete: Cascade)
+  consentVersion String?
+  createdAt      DateTime        @default(now())
+  children       ChildProfile[]
+  consents       ConsentRecord[]
+  auditEvents    AuditEvent[]
+}
+
+/// Opaque session; only the SHA-256 of the cookie token is stored.
+model Session {
+  id               String     @id
+  userId           String
+  user             ParentUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt        DateTime   @default(now())
+  expiresAt        DateTime
+  /// When set, this browser session is locked to one child's learning space; parent areas need the PIN.
+  childModeChildId String?
+  @@index([userId])
+}
+
+model ChildProfile {
+  id               String             @id @default(cuid())
+  familyId         String
+  family           Family             @relation(fields: [familyId], references: [id], onDelete: Cascade)
+  nickname         String
+  /// Calendar date only (no time). Optional — never required.
+  dateOfBirth      DateTime?          @db.Date
+  timezone         String             @default("Asia/Jakarta")
+  /// Parent-controlled; never inferred from age.
+  schoolGrade      String?
+  mode             ChildMode
+  locale           String             @default("en")
+  itemsPerSession  Int                @default(5)
+  targetMinutes    Int                @default(15)
+  audioEnabled     Boolean            @default(false)
+  reducedMotion    Boolean            @default(false)
+  focusSkillId     String?
+  /// Parent acknowledged the "turned 3" transition notice.
+  transitionAcknowledged Boolean      @default(false)
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  activities       ActivityInstance[]
+  attempts         Attempt[]
+  mastery          MasteryState[]
+  observations     ParentObservation[]
+  learningSessions LearningSession[]
+  recommendations  RecommendationLog[]
+  @@index([familyId])
+}
+
+/// Partial unique index (migration 20261110060000): one open session per child.
+model LearningSession {
+  id          String             @id @default(cuid())
+  childId     String
+  child       ChildProfile       @relation(fields: [childId], references: [id], onDelete: Cascade)
+  startedAt   DateTime           @default(now())
+  endedAt     DateTime?
+  targetItems Int
+  localDate   String
+  /// Skill and lesson the child chose; items stay on this skill unless remediation routes elsewhere.
+  skillId     String
+  lessonId    String
+  activities  ActivityInstance[]
+  @@index([childId, startedAt])
+}
+
+/// Partial unique index (migration 20261110060000): one ACTIVE item per session.
+/// One generated item. itemJson holds the server-only answer key and is never sent to clients.
+model ActivityInstance {
+  id                String          @id @default(cuid())
+  childId           String
+  child             ChildProfile    @relation(fields: [childId], references: [id], onDelete: Cascade)
+  sessionId         String
+  session           LearningSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  skillId           String
+  lessonId          String
+  contentVersion    String
+  generatorVersion  String
+  cpaStage          String
+  itemJson          Json
+  hintsUsed         Int             @default(0)
+  tries             Int             @default(0)
+  status            ActivityStatus  @default(ACTIVE)
+  recommendationId  String?
+  createdAt         DateTime        @default(now())
+  completedAt       DateTime?
+  attempts          Attempt[]
+  @@index([childId, createdAt])
+}
+
+model Attempt {
+  id                 String           @id @default(cuid())
+  childId            String
+  child              ChildProfile     @relation(fields: [childId], references: [id], onDelete: Cascade)
+  activityId         String
+  activity           ActivityInstance @relation(fields: [activityId], references: [id], onDelete: Cascade)
+  skillId            String
+  format             String
+  answerJson         Json
+  correct            Boolean
+  independent        Boolean
+  hintCount          Int
+  tryNumber          Int
+  misconceptionCodes String[]
+  rulesApplied       String[]
+  createdAt          DateTime         @default(now())
+  @@index([childId, skillId, createdAt])
+}
+
+model MasteryState {
+  childId                       String
+  child                         ChildProfile @relation(fields: [childId], references: [id], onDelete: Cascade)
+  skillId                       String
+  score                         Float
+  phase                         String
+  attempts                      Int
+  independentCorrect            Int
+  consecutiveIndependentCorrect Int
+  formats                       String[]
+  lastEvidenceAt                DateTime?
+  nextReviewAt                  DateTime?
+  reviewStep                    Int
+  modelVersion                  String
+  updatedAt                     DateTime     @updatedAt
+  @@id([childId, skillId])
+}
+
+model ParentObservation {
+  id         String           @id @default(cuid())
+  childId    String
+  child      ChildProfile     @relation(fields: [childId], references: [id], onDelete: Cascade)
+  lessonId   String?
+  skillId    String?
+  level      ObservationLevel
+  note       String           @default("")
+  observedAt DateTime
+  createdAt  DateTime         @default(now())
+  @@index([childId, observedAt])
+}
+
+/// Privacy-restricted recommendation evidence (age, local date, versions, rule).
+model RecommendationLog {
+  id                String       @id @default(cuid())
+  childId           String
+  child             ChildProfile @relation(fields: [childId], references: [id], onDelete: Cascade)
+  createdAt         DateTime     @default(now())
+  localDate         String
+  timezone          String
+  ageYears          Int?
+  ageMonths         Int?
+  ageDays           Int?
+  safetyBand        String
+  placementVersion  String
+  curriculumVersion String
+  recommenderVersion String
+  ruleId            String
+  decisionReason    String
+  skillId           String?
+  lessonId          String?
+  @@index([childId, createdAt])
+}
+
+model ConsentRecord {
+  id        String    @id @default(cuid())
+  familyId  String
+  family    Family    @relation(fields: [familyId], references: [id], onDelete: Cascade)
+  version   String
+  grantedAt DateTime  @default(now())
+  revokedAt DateTime?
+  @@index([familyId])
+}
+
+/// Audit trail. Metadata must never contain child names, DOBs or free-text notes.
+model AuditEvent {
+  id         String   @id @default(cuid())
+  familyId   String?
+  family     Family?  @relation(fields: [familyId], references: [id], onDelete: Cascade)
+  actorId    String?
+  action     String
+  targetType String
+  targetId   String?
+  metadata   Json     @default("{}")
+  createdAt  DateTime @default(now())
+  @@index([familyId, createdAt])
+}
+
+/// Fixed-window rate limiting shared across app instances.
+model RateLimit {
+  key         String   @id
+  windowStart DateTime
+  count       Int
+}

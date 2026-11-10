@@ -1,0 +1,129 @@
+{
+  "id": "lesson-tod-match-001",
+  "skillId": "TOD-MATCH-OBJECT",
+  "title": {
+    "en": "Match familiar objects",
+    "id": "Mencocokkan benda sehari-hari"
+  },
+  "ageBand": "toddler",
+  "domain": "sensorial",
+  "mode": "offline",
+  "objective": {
+    "en": "Pair identical safe household objects through parent-led play.",
+    "id": "Memasangkan benda rumah tangga yang sama dan aman melalui permainan bersama orang tua."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "Two pairs of large, familiar objects (e.g. two cups, two large wooden spoons)",
+      "id": "Dua pasang benda besar yang dikenal anak (mis. dua gelas, dua sendok kayu besar)"
+    },
+    {
+      "en": "A tray or mat",
+      "id": "Nampan atau alas"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Choose two pairs your child already knows. Check each object is large, clean and unbreakable.",
+      "id": "Pilih dua pasang benda yang sudah dikenal anak. Pastikan setiap benda besar, bersih, dan tidak mudah pecah."
+    },
+    {
+      "en": "Place one of each pair on the tray and keep the others in a basket.",
+      "id": "Letakkan satu dari setiap pasangan di nampan dan simpan sisanya di keranjang."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Sit beside your child and take one object slowly out of the basket.",
+      "id": "Duduk di samping anak dan ambil satu benda perlahan dari keranjang."
+    },
+    {
+      "en": "Look along the tray, then place it next to its match. Pause so your child can watch.",
+      "id": "Lihat ke sepanjang nampan, lalu letakkan di sebelah pasangannya. Berhenti sejenak agar anak bisa melihat."
+    },
+    {
+      "en": "Offer the basket and invite your child to find a match for the next object.",
+      "id": "Tawarkan keranjang dan ajak anak mencari pasangan untuk benda berikutnya."
+    },
+    {
+      "en": "If the match is different from yours, simply show your pair again later — no correcting words needed.",
+      "id": "Jika pasangannya berbeda, cukup tunjukkan lagi pasangan Anda nanti — tidak perlu kata-kata koreksi."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "This cup… and this cup. The same.",
+      "id": "Gelas ini… dan gelas ini. Sama."
+    },
+    {
+      "en": "Can you find the one that is the same?",
+      "id": "Bisakah kamu menemukan yang sama?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Looks back and forth between objects",
+      "id": "Melihat bolak-balik di antara benda"
+    },
+    {
+      "en": "Places an object next to its match",
+      "id": "Meletakkan benda di samping pasangannya"
+    },
+    {
+      "en": "Wants to repeat the activity",
+      "id": "Ingin mengulang kegiatan"
+    }
+  ],
+  "cleanup": {
+    "en": "Invite your child to carry the cups back to the shelf with two hands.",
+    "id": "Ajak anak membawa gelas kembali ke rak dengan dua tangan."
+  },
+  "variations": [
+    {
+      "en": "Add a third pair when two pairs feel easy.",
+      "id": "Tambahkan pasangan ketiga jika dua pasang terasa mudah."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

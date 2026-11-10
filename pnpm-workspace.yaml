@@ -1,0 +1,13 @@
+packages:
+  - apps/*
+  - packages/*
+onlyBuiltDependencies:
+  - "@prisma/client"
+  - "@prisma/engines"
+  - prisma
+  - esbuild
+  - sharp
+# Security overrides for transitive dependencies (see docs/delivery/SECURITY_REVIEW.md).
+overrides:
+  postcss: 8.5.31
+  deepmerge-ts: 8.0.2

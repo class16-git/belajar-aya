@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { -webkit-text-size-adjust: 100%; }
+body { @apply bg-paper text-ink antialiased; font-size: 17px; line-height: 1.55; }
+
+@layer components {
+  .btn { @apply inline-flex min-h-11 min-w-11 items-center justify-center gap-2 rounded-xl px-4 py-2 font-semibold transition-colors duration-calm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-focus disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-sage-dark text-white hover:bg-[#3a5134]; }
+  .btn-secondary { @apply btn border-2 border-sand bg-white text-ink hover:border-bark; }
+  .btn-ghost { @apply btn text-bark underline-offset-4 hover:underline; }
+  .btn-danger { @apply btn bg-clay-dark text-white hover:bg-[#743b1f]; }
+  .btn-xl { @apply min-h-14 px-6 text-xl; }
+  .card { @apply rounded-xl2 border border-sand bg-white p-5 shadow-soft; }
+  .field-label { @apply mb-1 block font-semibold text-ink; }
+  .field-hint { @apply mt-1 text-sm text-muted; }
+  .input { @apply block w-full min-h-11 rounded-xl border-2 border-sand bg-white px-3 py-2 text-ink focus-visible:border-focus focus-visible:outline focus-visible:outline-2 focus-visible:outline-focus; }
+  .link { @apply font-semibold text-sky underline underline-offset-4 hover:text-ink focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-focus; }
+  .chip { @apply inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-sm font-semibold; }
+  .h1 { @apply text-2xl font-bold tracking-tight text-ink sm:text-3xl; }
+  .h2 { @apply text-xl font-bold text-ink; }
+  .muted { @apply text-muted; }
+}
+
+/* Child mode: larger type and targets */
+.child-mode { font-size: 20px; }
+@media (min-width: 768px) { .child-mode { font-size: 22px; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+.reduce-motion *, .reduce-motion *::before, .reduce-motion *::after { transition-duration: 0.01ms !important; animation: none !important; }
+
+/* Print: toddler cards */
+@media print {
+  body { background: #fff; font-size: 11pt; }
+  .no-print { display: none !important; }
+  .print-card { box-shadow: none !important; border: 0 !important; padding: 0 !important; }
+  .print-break-avoid { break-inside: avoid; }
+  a { color: inherit; text-decoration: none; }
+}
+@page { margin: 14mm; }
+.paper-a4 { --paper: A4; }
+.paper-letter { --paper: letter; }

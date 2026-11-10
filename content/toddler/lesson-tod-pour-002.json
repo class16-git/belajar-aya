@@ -1,0 +1,112 @@
+{
+  "id": "lesson-tod-pour-002",
+  "skillId": "TOD-PRACT-POUR",
+  "title": {
+    "en": "Wiping the table",
+    "id": "Mengelap meja"
+  },
+  "ageBand": "toddler",
+  "domain": "practical_life",
+  "mode": "offline",
+  "objective": {
+    "en": "Practise wiping a surface with big, careful movements.",
+    "id": "Berlatih mengelap permukaan dengan gerakan besar dan hati-hati."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "A small damp cloth (no cleaning products)",
+      "id": "Kain kecil yang lembap (tanpa sabun pembersih)"
+    },
+    {
+      "en": "A low table or tray",
+      "id": "Meja rendah atau nampan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Wet the cloth with water only and wring it well.",
+      "id": "Basahi kain hanya dengan air dan peras dengan baik."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Show wiping from left to right in slow, overlapping strokes.",
+      "id": "Tunjukkan cara mengelap dari kiri ke kanan dengan gerakan pelan dan bertumpuk."
+    },
+    {
+      "en": "Offer the cloth to your child.",
+      "id": "Berikan kain kepada anak."
+    },
+    {
+      "en": "Point out any crumbs that are left; let them choose to wipe again.",
+      "id": "Tunjukkan remah yang tersisa; biarkan anak memilih untuk mengelap lagi."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "Wipe, wipe… the table is clean.",
+      "id": "Lap, lap… mejanya bersih."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Uses sweeping arm movements",
+      "id": "Menggunakan gerakan lengan menyapu"
+    },
+    {
+      "en": "Notices crumbs or wet spots",
+      "id": "Menyadari remah atau bagian basah"
+    }
+  ],
+  "cleanup": {
+    "en": "Hang the cloth to dry together.",
+    "id": "Gantung kain untuk dikeringkan bersama-sama."
+  },
+  "variations": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": true,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Keep cleaning chemicals out of reach; use plain water only.",
+      "id": "Jauhkan bahan kimia pembersih dari jangkauan; gunakan air biasa saja."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}
