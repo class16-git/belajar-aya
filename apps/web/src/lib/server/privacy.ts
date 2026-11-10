@@ -12,6 +12,7 @@ export async function buildExport(auth: Auth) {
     include: {
       consents: true,
       auditEvents: { orderBy: { createdAt: 'asc' } },
+      reviewDecisions: { orderBy: { createdAt: 'asc' } },
       children: {
         include: {
           learningSessions: true,
@@ -36,6 +37,7 @@ export async function buildExport(auth: Auth) {
     consents: family.consents,
     children: family.children.map(({ dateOfBirth, ...c }) => ({ ...c, dateOfBirth: isoFromDbDate(dateOfBirth) })),
     auditEvents: family.auditEvents,
+    contentReviewDecisions: family.reviewDecisions,
   };
 }
 

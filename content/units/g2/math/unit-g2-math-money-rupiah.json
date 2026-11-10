@@ -1,0 +1,430 @@
+{
+  "id": "unit-g2-math-money-rupiah",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "math",
+  "strand": "money",
+  "title": {
+    "en": "Money in rupiah",
+    "id": "Uang rupiah"
+  },
+  "prerequisites": [
+    "unit-g2-math-addition-regrouping-1000"
+  ],
+  "objective": {
+    "en": "Count amounts of rupiah made from different coins and notes, find totals of two prices, and work out change from a note.",
+    "id": "Menghitung jumlah rupiah dari berbagai koin dan uang kertas, mencari total dua harga, dan menghitung uang kembalian."
+  },
+  "rationale": {
+    "en": "Children see rupiah every day, but large values with many zeros are easy to misread. Counting by value rather than by piece, and treating thousands as units ('5 thousand + 2 thousand'), connects money to place value and addition.",
+    "id": "Anak melihat rupiah setiap hari, tetapi nilai besar dengan banyak nol mudah salah dibaca. Menghitung menurut nilai, bukan banyak lembar, dan memperlakukan ribuan sebagai satuan ('5 ribu + 2 ribu') menghubungkan uang dengan nilai tempat dan penjumlahan."
+  },
+  "outcomes": [
+    {
+      "en": "Counts a mix of coins and notes up to Rp 50,000 by starting with the largest value.",
+      "id": "Menghitung campuran koin dan uang kertas sampai Rp50.000 dengan mulai dari nilai terbesar."
+    },
+    {
+      "en": "Finds a total and the change in a simple shopping situation.",
+      "id": "Mencari total dan kembalian dalam situasi belanja sederhana."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can count Rp 5,000 + Rp 2,000 + Rp 2,000 + Rp 500 and say Rp 9,500.",
+      "id": "Aku bisa menghitung Rp5.000 + Rp2.000 + Rp2.000 + Rp500 dan menyebut Rp9.500."
+    },
+    {
+      "en": "I can count up from the price to find change.",
+      "id": "Aku bisa menghitung naik dari harga untuk mencari kembalian."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use real money or play money; sort it by value first, from largest to smallest.",
+      "id": "Pakai uang asli atau uang mainan; urutkan dulu menurut nilainya, dari terbesar ke terkecil."
+    },
+    {
+      "en": "Read amounts in thousands: 'five thousand, seven thousand, nine thousand, nine thousand five hundred'.",
+      "id": "Baca jumlah dalam ribuan: 'lima ribu, tujuh ribu, sembilan ribu, sembilan ribu lima ratus'."
+    },
+    {
+      "en": "Note the written difference: English writes Rp 9,500 and Indonesian writes Rp9.500; both mean nine thousand five hundred.",
+      "id": "Perhatikan perbedaan tulisan: bahasa Inggris menulis Rp 9,500 dan bahasa Indonesia menulis Rp9.500; keduanya berarti sembilan ribu lima ratus."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Sort the money from biggest to smallest. Count on from the biggest. Say the total in thousands.",
+      "id": "Urutkan uang dari terbesar ke terkecil. Hitung lanjut dari yang terbesar. Sebutkan totalnya dalam ribuan."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Set up a home warung with price tags (es teh Rp 4,000, gorengan Rp 3,500, buku tulis Rp 4,500); the child pays with play notes and coins and the parent gives change.",
+        "id": "Buat warung di rumah dengan label harga (es teh Rp4.000, gorengan Rp3.500, buku tulis Rp4.500); anak membayar dengan uang mainan dan orang tua memberi kembalian."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a bar model for change: the whole bar is Rp 20,000, one part is the price Rp 15,000, the other part is the change.",
+        "id": "Gambar model batang untuk kembalian: batang utuh Rp20.000, satu bagian harga Rp15.000, bagian lain kembalian."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the calculation in thousands: 20 thousand - 15 thousand = 5 thousand, so the change is Rp 5,000.",
+        "id": "Tulis perhitungannya dalam ribuan: 20 ribu - 15 ribu = 5 ribu, jadi kembaliannya Rp5.000."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Play money or real rupiah: Rp 500 and Rp 1,000 coins; Rp 2,000, Rp 5,000, Rp 10,000 and Rp 20,000 notes",
+      "id": "Uang mainan atau rupiah asli: koin Rp500 dan Rp1.000; uang kertas Rp2.000, Rp5.000, Rp10.000, dan Rp20.000"
+    },
+    {
+      "en": "Price tags written on paper and a few household items for the warung",
+      "id": "Label harga dari kertas dan beberapa barang rumah untuk warung"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write five price tags in rupiah and set the items on a table as a shop.",
+      "id": "Tulis lima label harga dalam rupiah dan tata barangnya di meja sebagai toko."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Count by value: Rp 5,000, Rp 2,000, Rp 2,000 and a Rp 500 coin. Start with 5 thousand, then 7 thousand, 9 thousand, then 9 thousand 500: Rp 9,500. Four pieces, but the value is 9,500.",
+      "id": "Hitung menurut nilai: Rp5.000, Rp2.000, Rp2.000, dan koin Rp500. Mulai dari 5 ribu, lalu 7 ribu, 9 ribu, lalu 9 ribu 500: Rp9.500. Empat keping, tetapi nilainya 9.500."
+    },
+    {
+      "en": "Total of two prices: es teh Rp 4,000 + gorengan Rp 3,500. 4 thousand + 3 thousand = 7 thousand, plus 500: Rp 7,500.",
+      "id": "Total dua harga: es teh Rp4.000 + gorengan Rp3.500. 4 ribu + 3 ribu = 7 ribu, ditambah 500: Rp7.500."
+    },
+    {
+      "en": "Change by counting up: martabak Rp 15,000 paid with Rp 20,000. Count up from 15 thousand: 16, 17, 18, 19, 20 thousand: Rp 5,000 change.",
+      "id": "Kembalian dengan menghitung naik: martabak Rp15.000 dibayar Rp20.000. Hitung naik dari 15 ribu: 16, 17, 18, 19, 20 ribu: kembalian Rp5.000."
+    },
+    {
+      "en": "Change with regrouping: Bayu has Rp 12,000 and buys a notebook for Rp 4,500. Count up: 4,500 to 5,000 is 500; 5,000 to 12,000 is 7,000. Change is Rp 7,500.",
+      "id": "Kembalian dengan meminjam: Bayu punya Rp12.000 dan membeli buku tulis Rp4.500. Hitung naik: 4.500 ke 5.000 adalah 500; 5.000 ke 12.000 adalah 7.000. Kembaliannya Rp7.500."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Show Rp 10,000 in three different ways with notes and coins.",
+      "id": "Tunjukkan Rp10.000 dengan tiga cara berbeda memakai uang kertas dan koin."
+    },
+    {
+      "en": "Play warung: buy two items, find the total, pay with one note and check the change by counting up.",
+      "id": "Main warung: beli dua barang, cari totalnya, bayar dengan satu lembar uang, dan periksa kembalian dengan menghitung naik."
+    },
+    {
+      "en": "Look at a real shopping receipt with a parent and find the most and least expensive items.",
+      "id": "Lihat struk belanja sungguhan bersama orang tua dan cari barang paling mahal dan paling murah."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Aya has one Rp 5,000 note, two Rp 2,000 notes and one Rp 500 coin. How much money is that?",
+        "id": "Aya punya selembar Rp5.000, dua lembar Rp2.000, dan satu koin Rp500. Berapa uangnya?"
+      },
+      "choices": {
+        "en": [
+          "Rp 9,500",
+          "Rp 4",
+          "Rp 9,000"
+        ],
+        "id": [
+          "Rp9.500",
+          "Rp4",
+          "Rp9.000"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "5,000 + 2,000 + 2,000 = 9,000, and 500 more is Rp 9,500.",
+        "id": "5.000 + 2.000 + 2.000 = 9.000, ditambah 500 menjadi Rp9.500."
+      },
+      "check": {
+        "expression": "5000 + 2000 + 2000 + 500",
+        "result": "9500"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_PIECES_NOT_VALUE",
+        "2": "IGNORES_SMALL_VALUE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Martabak manis costs Rp 15,000. Ayah pays with a Rp 20,000 note. How much change does he get?",
+        "id": "Martabak manis harganya Rp15.000. Ayah membayar dengan uang Rp20.000. Berapa kembaliannya?"
+      },
+      "choices": {
+        "en": [
+          "Rp 5,000",
+          "Rp 35,000",
+          "Rp 15,000"
+        ],
+        "id": [
+          "Rp5.000",
+          "Rp35.000",
+          "Rp15.000"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count up from 15 thousand to 20 thousand: 5 thousand. 20,000 - 15,000 = 5,000.",
+        "id": "Hitung naik dari 15 ribu ke 20 ribu: 5 ribu. 20.000 - 15.000 = 5.000."
+      },
+      "check": {
+        "expression": "20000 - 15000",
+        "result": "5000"
+      },
+      "distractorMisconceptions": {
+        "1": "OPERATION_MIXUP",
+        "2": "GIVES_PRICE_AS_CHANGE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Es teh costs Rp 4,000 and gorengan costs Rp 3,500. What is the total?",
+        "id": "Es teh harganya Rp4.000 dan gorengan Rp3.500. Berapa totalnya?"
+      },
+      "choices": {
+        "en": [
+          "Rp 7,500",
+          "Rp 7,000",
+          "Rp 500"
+        ],
+        "id": [
+          "Rp7.500",
+          "Rp7.000",
+          "Rp500"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 thousand + 3 thousand = 7 thousand, plus 500 makes Rp 7,500.",
+        "id": "4 ribu + 3 ribu = 7 ribu, ditambah 500 menjadi Rp7.500."
+      },
+      "check": {
+        "expression": "4000 + 3500",
+        "result": "7500"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_SMALL_VALUE",
+        "2": "OPERATION_MIXUP"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "How many Rp 2,000 notes make Rp 10,000?",
+        "id": "Berapa lembar Rp2.000 untuk membuat Rp10.000?"
+      },
+      "choices": {
+        "en": [
+          "5",
+          "2",
+          "8"
+        ],
+        "id": [
+          "5",
+          "2",
+          "8"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count in 2 thousands: 2, 4, 6, 8, 10 thousand. That is 5 notes.",
+        "id": "Hitung lompat 2 ribu: 2, 4, 6, 8, 10 ribu. Itu 5 lembar."
+      },
+      "check": {
+        "expression": "10000 / 2000",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "VALUE_AS_COUNT",
+        "2": "OPERATION_MIXUP"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Bayu has Rp 12,000. He buys a notebook for Rp 4,500. How much money is left?",
+        "id": "Bayu punya Rp12.000. Ia membeli buku tulis seharga Rp4.500. Berapa sisa uangnya?"
+      },
+      "choices": {
+        "en": [
+          "Rp 7,500",
+          "Rp 8,500",
+          "Rp 16,500"
+        ],
+        "id": [
+          "Rp7.500",
+          "Rp8.500",
+          "Rp16.500"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count up: 4,500 to 5,000 is 500, and 5,000 to 12,000 is 7,000. 500 + 7,000 = 7,500.",
+        "id": "Hitung naik: 4.500 ke 5.000 adalah 500, dan 5.000 ke 12.000 adalah 7.000. 500 + 7.000 = 7.500."
+      },
+      "check": {
+        "expression": "12000 - 4500",
+        "result": "7500"
+      },
+      "distractorMisconceptions": {
+        "1": "REGROUPING_ERROR",
+        "2": "OPERATION_MIXUP"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "COUNTS_PIECES_NOT_VALUE",
+      "description": {
+        "en": "Counts the number of coins and notes instead of their value.",
+        "id": "Menghitung banyak koin dan lembar uang, bukan nilainya."
+      },
+      "remediation": {
+        "en": "Write the value on a sticky note beside each piece and add the notes, not the pieces.",
+        "id": "Tulis nilai di kertas tempel di samping setiap keping dan jumlahkan nilainya, bukan kepingnya."
+      }
+    },
+    {
+      "code": "IGNORES_SMALL_VALUE",
+      "description": {
+        "en": "Drops the hundreds part, such as the Rp 500.",
+        "id": "Mengabaikan bagian ratusan, seperti Rp500."
+      },
+      "remediation": {
+        "en": "Count in two steps: first all the thousands, then the hundreds, and say both parts.",
+        "id": "Hitung dua langkah: semua ribuan dulu, lalu ratusan, dan ucapkan kedua bagian."
+      }
+    },
+    {
+      "code": "OPERATION_MIXUP",
+      "description": {
+        "en": "Adds when change is asked for, or subtracts when a total is asked for.",
+        "id": "Menjumlah padahal ditanya kembalian, atau mengurangkan padahal ditanya total."
+      },
+      "remediation": {
+        "en": "Act it out in the home warung: paying and receiving change, then draw the bar model.",
+        "id": "Peragakan di warung rumah: membayar dan menerima kembalian, lalu gambar model batangnya."
+      }
+    },
+    {
+      "code": "GIVES_PRICE_AS_CHANGE",
+      "description": {
+        "en": "Gives the price as the change.",
+        "id": "Menyebut harga sebagai kembalian."
+      },
+      "remediation": {
+        "en": "Put the price amount on the 'shop' side and the rest on the 'buyer' side; the buyer's part is the change.",
+        "id": "Taruh jumlah harga di sisi 'toko' dan sisanya di sisi 'pembeli'; bagian pembeli adalah kembalian."
+      }
+    },
+    {
+      "code": "VALUE_AS_COUNT",
+      "description": {
+        "en": "Uses the value of one note as the number of notes.",
+        "id": "Memakai nilai satu lembar sebagai banyak lembar."
+      },
+      "remediation": {
+        "en": "Lay out Rp 2,000 notes one at a time while counting the total until it reaches Rp 10,000.",
+        "id": "Letakkan lembar Rp2.000 satu per satu sambil menghitung totalnya sampai Rp10.000."
+      }
+    },
+    {
+      "code": "REGROUPING_ERROR",
+      "description": {
+        "en": "Makes a mistake when subtracting across thousands and hundreds.",
+        "id": "Keliru saat mengurangkan melewati ribuan dan ratusan."
+      },
+      "remediation": {
+        "en": "Count up from the price in two jumps (to the next thousand, then to the amount) on a number line.",
+        "id": "Hitung naik dari harga dengan dua lompatan (ke ribuan berikutnya, lalu ke jumlah uang) di garis bilangan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Plan a pretend shopping trip with Rp 50,000 for three items and check the money left.",
+      "id": "Rencanakan belanja pura-pura dengan Rp50.000 untuk tiga barang dan periksa sisa uangnya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Real notes have distinct colours and sizes; children can sort them by colour first. Say amounts aloud as well as writing them.",
+      "id": "Uang kertas asli punya warna dan ukuran berbeda; anak bisa mengurutkan menurut warna dulu. Ucapkan jumlahnya selain menuliskannya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Coins are a choking risk for toddlers: count coins at a table with an adult present and put them all away afterwards. Wash hands after handling money.",
+        "id": "Koin berbahaya tersedak bagi balita: hitung koin di meja dengan orang dewasa hadir dan simpan semuanya setelahnya. Cuci tangan setelah memegang uang."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child counts three mixed amounts correctly and finds change for two purchases by counting up, on two different days.",
+      "id": "Dikuasai jika anak menghitung tiga jumlah campuran dengan benar dan mencari kembalian untuk dua pembelian dengan menghitung naik, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

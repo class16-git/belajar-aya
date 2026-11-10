@@ -1,0 +1,373 @@
+{
+  "id": "unit-g1-stem-debug-grid-programs",
+  "version": "1.0.0",
+  "level": "g1",
+  "framework": "stem",
+  "strand": "debugging",
+  "title": {
+    "en": "Find and fix the bug",
+    "id": "Temukan dan perbaiki bug"
+  },
+  "prerequisites": [
+    "unit-k-stem-floor-grid-arrows"
+  ],
+  "objective": {
+    "en": "Trace a written arrow program step by step, find the first card where it goes wrong, and fix the bug by changing, adding or removing one card.",
+    "id": "Menelusuri program panah langkah demi langkah, menemukan kartu pertama yang salah, dan memperbaiki bug dengan mengganti, menambah, atau membuang satu kartu."
+  },
+  "rationale": {
+    "en": "Debugging is a core thinking skill: instead of starting again, we trace carefully and change only what is wrong. Treating bugs as normal also builds a calm, persistent attitude to mistakes.",
+    "id": "Debugging adalah keterampilan berpikir inti: bukannya mengulang dari awal, kita menelusuri dengan teliti dan hanya mengubah yang salah. Menganggap bug sebagai hal biasa juga membangun sikap tenang dan tekun terhadap kesalahan."
+  },
+  "outcomes": [
+    {
+      "en": "Traces a program one card at a time and points to the first wrong card.",
+      "id": "Menelusuri program satu kartu demi satu kartu dan menunjuk kartu pertama yang salah."
+    },
+    {
+      "en": "Fixes a bug with a single change and tests the fix.",
+      "id": "Memperbaiki bug dengan satu perubahan dan menguji perbaikannya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can find where my program first goes wrong.",
+      "id": "Aku bisa menemukan di mana programku pertama kali salah."
+    },
+    {
+      "en": "I change one card and test again.",
+      "id": "Aku mengubah satu kartu dan menguji lagi."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use the K floor grid and arrow cards again. Prepare buggy programs on purpose and call them 'puzzles', not mistakes.",
+      "id": "Gunakan lagi petak lantai dan kartu panah dari TK. Siapkan program yang sengaja berisi bug dan sebut 'teka-teki', bukan kesalahan."
+    },
+    {
+      "en": "Ask your child to predict where the walker will end before running a buggy program.",
+      "id": "Minta anak menebak di mana pejalan berhenti sebelum menjalankan program yang berbug."
+    },
+    {
+      "en": "Teach the debugging routine: run, stop at the first surprise, point to that card, change one thing, run again.",
+      "id": "Ajarkan rutinitas debugging: jalankan, berhenti di kejutan pertama, tunjuk kartu itu, ubah satu hal, jalankan lagi."
+    },
+    {
+      "en": "Reflect: 'How did you find the bug? What will you check first next time?'",
+      "id": "Renungkan: 'Bagaimana kamu menemukan bugnya? Apa yang akan kamu periksa dulu lain kali?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Predict where the program ends. Then walk it slowly.",
+      "id": "Tebak di mana program berakhir. Lalu jalankan pelan-pelan."
+    },
+    {
+      "en": "Stop at the first card that goes the wrong way. Change only that card and try again.",
+      "id": "Berhenti di kartu pertama yang salah arah. Ubah hanya kartu itu dan coba lagi."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Walk buggy programs on the floor grid and swap one card to fix each.",
+        "id": "Jalankan program berbug di petak lantai dan tukar satu kartu untuk memperbaiki setiap program."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Trace the program with a finger on a paper grid, drawing the path in pencil.",
+        "id": "Telusuri program dengan jari di petak kertas, menggambar jalurnya dengan pensil."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Read a program written as arrows, mark the wrong symbol and write the corrected program.",
+        "id": "Baca program yang ditulis sebagai panah, tandai simbol yang salah, dan tulis program yang sudah diperbaiki."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "The masking-tape floor grid (4 by 4 or 5 by 5) and arrow cards",
+      "id": "Petak lantai selotip kertas (4 kali 4 atau 5 kali 5) dan kartu panah"
+    },
+    {
+      "en": "A teddy as the goal; a paper star for the start",
+      "id": "Boneka sebagai tujuan; bintang kertas untuk mulai"
+    },
+    {
+      "en": "Paper grids drawn by the adult, a pencil and an eraser",
+      "id": "Petak kertas yang digambar orang dewasa, pensil, dan penghapus"
+    },
+    {
+      "en": "A small toy figure for the paper grid",
+      "id": "Mainan kecil untuk petak kertas"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write three buggy programs on paper strips: one wrong direction, one missing card, one extra card.",
+      "id": "Tulis tiga program berbug di potongan kertas: satu arah salah, satu kartu kurang, satu kartu lebih."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Wrong direction: teddy is 2 right, 1 up. Program: right, left, up. Predict, then walk. After 'right' the walker goes back with 'left': first surprise at card 2. Change it to right. Run: right, right, up. Teddy!",
+      "id": "Arah salah: boneka 2 ke kanan, 1 ke atas. Program: kanan, kiri, atas. Tebak, lalu jalankan. Setelah 'kanan' pejalan kembali dengan 'kiri': kejutan pertama di kartu 2. Ganti menjadi kanan. Jalankan: kanan, kanan, atas. Boneka!"
+    },
+    {
+      "en": "Missing card: teddy is 3 up. Program: up, up. The walker stops one square short. Bug fix: add one up card at the end.",
+      "id": "Kartu kurang: boneka 3 ke atas. Program: atas, atas. Pejalan berhenti satu kotak sebelum sampai. Perbaikan: tambah satu kartu atas di akhir."
+    },
+    {
+      "en": "Extra card: teddy is 2 right. Program: right, right, right. The walker walks past teddy. Remove the last card.",
+      "id": "Kartu lebih: boneka 2 ke kanan. Program: kanan, kanan, kanan. Pejalan melewati boneka. Buang kartu terakhir."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Parent writes a buggy program; child predicts, walks, finds and fixes the bug.",
+      "id": "Orang tua menulis program berbug; anak menebak, menjalankan, menemukan, dan memperbaiki bug."
+    },
+    {
+      "en": "Child writes a buggy program on purpose for a parent to fix, and checks the parent's fix.",
+      "id": "Anak sengaja menulis program berbug untuk diperbaiki orang tua, lalu memeriksa perbaikan orang tua."
+    },
+    {
+      "en": "On paper grids, fix two programs without walking them, then test one on the floor.",
+      "id": "Di petak kertas, perbaiki dua program tanpa menjalankannya, lalu uji satu di lantai."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Teddy is 3 squares right and 1 square up. The program is right, right, up. What is the bug?",
+        "id": "Boneka 3 kotak ke kanan dan 1 kotak ke atas. Programnya kanan, kanan, atas. Apa bugnya?"
+      },
+      "choices": {
+        "en": [
+          "One right card is missing",
+          "The up card is wrong",
+          "The program must start again"
+        ],
+        "id": [
+          "Kurang satu kartu kanan",
+          "Kartu atasnya salah",
+          "Program harus diulang dari awal"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Three squares right need three right cards; only two are there.",
+        "id": "Tiga kotak ke kanan perlu tiga kartu kanan; hanya ada dua."
+      },
+      "distractorMisconceptions": {
+        "1": "BLAMES_LAST_CARD",
+        "2": "START_OVER_FROM_SCRATCH"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "What is the best way to find a bug?",
+        "id": "Apa cara terbaik untuk menemukan bug?"
+      },
+      "choices": {
+        "en": [
+          "Run one card at a time and stop at the first surprise",
+          "Throw the program away",
+          "Change all the cards"
+        ],
+        "id": [
+          "Jalankan satu kartu demi satu kartu dan berhenti di kejutan pertama",
+          "Buang programnya",
+          "Ganti semua kartu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Tracing step by step shows exactly where it goes wrong.",
+        "id": "Menelusuri langkah demi langkah menunjukkan tepat di mana kesalahannya."
+      },
+      "distractorMisconceptions": {
+        "1": "START_OVER_FROM_SCRATCH",
+        "2": "START_OVER_FROM_SCRATCH"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A program has 6 cards, and one extra up card makes the walker go past teddy. After you remove it, how many cards are left?",
+        "id": "Sebuah program punya 6 kartu, dan satu kartu atas yang berlebih membuat pejalan melewati boneka. Setelah kamu membuangnya, berapa kartu yang tersisa?"
+      },
+      "choices": {
+        "en": [
+          "5 cards",
+          "6 cards",
+          "7 cards"
+        ],
+        "id": [
+          "5 kartu",
+          "6 kartu",
+          "7 kartu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Removing one card: 6 - 1 = 5.",
+        "id": "Membuang satu kartu: 6 - 1 = 5."
+      },
+      "distractorMisconceptions": {
+        "1": "BLAMES_LAST_CARD",
+        "2": "ADDS_WHEN_FIXING"
+      },
+      "check": {
+        "expression": "6 - 1",
+        "result": "5"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Your program had a bug. What does that mean?",
+        "id": "Programmu punya bug. Apa artinya?"
+      },
+      "choices": {
+        "en": [
+          "It is normal; programmers find and fix bugs all the time",
+          "You are not good at coding"
+        ],
+        "id": [
+          "Itu biasa; pemrogram selalu menemukan dan memperbaiki bug",
+          "Kamu tidak pandai memprogram"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Every programmer writes bugs; fixing them is part of the job.",
+        "id": "Setiap pemrogram membuat bug; memperbaikinya adalah bagian dari pekerjaan."
+      },
+      "distractorMisconceptions": {
+        "1": "BUG_MEANS_BAD_AT_CODING"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "START_OVER_FROM_SCRATCH",
+      "description": {
+        "en": "Wants to rewrite the whole program instead of finding the wrong step.",
+        "id": "Ingin menulis ulang seluruh program alih-alih mencari langkah yang salah."
+      },
+      "remediation": {
+        "en": "Run the program with a finger on paper and colour each correct step green until the first wrong one.",
+        "id": "Jalankan program dengan jari di kertas dan warnai hijau setiap langkah benar sampai langkah salah yang pertama."
+      }
+    },
+    {
+      "code": "BLAMES_LAST_CARD",
+      "description": {
+        "en": "Assumes the bug is always at the end of the program.",
+        "id": "Mengira bug selalu ada di akhir program."
+      },
+      "remediation": {
+        "en": "Give a program where card 1 is wrong and walk it slowly; the walker goes wrong right away.",
+        "id": "Beri program dengan kartu 1 yang salah dan jalankan pelan-pelan; pejalan langsung salah arah."
+      }
+    },
+    {
+      "code": "ADDS_WHEN_FIXING",
+      "description": {
+        "en": "Adds cards to every buggy program, even when one is extra.",
+        "id": "Menambah kartu di setiap program berbug, padahal ada yang kelebihan."
+      },
+      "remediation": {
+        "en": "Mark teddy's square and stop the walker exactly there; any card left over is extra.",
+        "id": "Tandai kotak boneka dan hentikan pejalan tepat di situ; kartu yang tersisa adalah kelebihan."
+      }
+    },
+    {
+      "code": "BUG_MEANS_BAD_AT_CODING",
+      "description": {
+        "en": "Sees bugs as personal failure.",
+        "id": "Menganggap bug sebagai kegagalan pribadi."
+      },
+      "remediation": {
+        "en": "Share a bug you made in a recipe or a route, and how you fixed it; then fix one of the child's bugs together.",
+        "id": "Ceritakan kesalahan yang pernah Anda buat dalam resep atau rute, dan cara memperbaikinya; lalu perbaiki satu bug anak bersama."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Write a program with two bugs and find both, fixing and testing one at a time.",
+      "id": "Tulis program dengan dua bug dan temukan keduanya, memperbaiki dan menguji satu per satu."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Let the child use coloured arrow cards (each direction a colour) and trace with a finger rather than walking.",
+      "id": "Biarkan anak memakai kartu panah berwarna (setiap arah satu warna) dan menelusuri dengan jari, bukan berjalan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Keep the floor grid away from stairs and furniture corners; walk, do not run.",
+        "id": "Jauhkan petak lantai dari tangga dan sudut perabot; berjalan, jangan berlari."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child finds and fixes all three bug types (wrong, missing, extra) with one change each, on two different days.",
+      "id": "Dikuasai jika anak menemukan dan memperbaiki ketiga jenis bug (salah, kurang, lebih) dengan satu perubahan masing-masing, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

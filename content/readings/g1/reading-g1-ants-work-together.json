@@ -1,0 +1,261 @@
+{
+  "id": "reading-g1-ants-work-together",
+  "version": "1.0.0",
+  "level": "g1",
+  "readingLevel": "early",
+  "genre": "nonfiction",
+  "mode": "shared",
+  "title": {
+    "en": "Ants work together",
+    "id": "Semut bekerja sama"
+  },
+  "text": {
+    "en": [
+      "Ants are small insects. Like all insects, an ant has six legs.",
+      "Ants live together in a big group called a colony. Many ants live in a nest under the ground.",
+      "When an ant finds food, it leaves a smell on the path back to the nest. Other ants follow the smell trail to the food.",
+      "Ants are very strong for their size. Some ants can carry things heavier than their own bodies.",
+      "If a crumb is too big for one ant, many ants carry it together.",
+      "Next time you see a line of ants, watch them. Where do you think they are going?"
+    ],
+    "id": [
+      "Semut adalah serangga kecil. Seperti semua serangga, semut punya enam kaki.",
+      "Semut hidup bersama dalam kelompok besar yang disebut koloni. Banyak semut tinggal di sarang di bawah tanah.",
+      "Ketika seekor semut menemukan makanan, ia meninggalkan bau di jalan pulang ke sarang. Semut lain mengikuti jejak bau itu menuju makanan.",
+      "Semut sangat kuat untuk ukurannya. Beberapa semut bisa membawa benda yang lebih berat dari tubuhnya sendiri.",
+      "Jika remah makanan terlalu besar untuk satu semut, banyak semut mengangkatnya bersama.",
+      "Lain kali kamu melihat barisan semut, perhatikan mereka. Menurutmu mereka mau ke mana?"
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a short nonfiction text and finds facts in it.",
+      "id": "Membaca teks nonfiksi pendek dan menemukan fakta di dalamnya."
+    },
+    {
+      "en": "Explains how ants find food and share work.",
+      "id": "Menjelaskan cara semut menemukan makanan dan berbagi tugas."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "insect",
+        "id": "serangga"
+      },
+      "meaning": {
+        "en": "a small animal with six legs",
+        "id": "hewan kecil berkaki enam"
+      }
+    },
+    {
+      "word": {
+        "en": "colony",
+        "id": "koloni"
+      },
+      "meaning": {
+        "en": "a big group of ants that live together",
+        "id": "kelompok besar semut yang hidup bersama"
+      }
+    },
+    {
+      "word": {
+        "en": "trail",
+        "id": "jejak"
+      },
+      "meaning": {
+        "en": "a path that others can follow",
+        "id": "jalur yang bisa diikuti"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "How many legs does an ant have?",
+        "id": "Berapa kaki yang dimiliki semut?"
+      },
+      "choices": {
+        "en": [
+          "six",
+          "four",
+          "eight"
+        ],
+        "id": [
+          "enam",
+          "empat",
+          "delapan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "A colony is…",
+        "id": "Koloni adalah…"
+      },
+      "choices": {
+        "en": [
+          "a big group of ants living together",
+          "a kind of food",
+          "one ant on its own"
+        ],
+        "id": [
+          "kelompok besar semut yang hidup bersama",
+          "sejenis makanan",
+          "satu semut saja"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which sentence tells how other ants find the food?",
+        "id": "Kalimat mana yang menjelaskan cara semut lain menemukan makanan?"
+      },
+      "choices": {
+        "en": [
+          "Other ants follow the smell trail to the food.",
+          "Ants are small insects.",
+          "Many ants live in a nest under the ground."
+        ],
+        "id": [
+          "Semut lain mengikuti jejak bau itu menuju makanan.",
+          "Semut adalah serangga kecil.",
+          "Banyak semut tinggal di sarang di bawah tanah."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why do ants walk in a line?",
+        "id": "Mengapa semut berjalan berbaris?"
+      },
+      "choices": {
+        "en": [
+          "they are all following the same smell path",
+          "they are lining up for school",
+          "they cannot see each other"
+        ],
+        "id": [
+          "mereka semua mengikuti jejak bau yang sama",
+          "mereka berbaris untuk sekolah",
+          "mereka tidak bisa saling melihat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q5",
+      "kind": "math",
+      "prompt": {
+        "en": "3 ants carry a crumb. 2 more ants come to help. How many ants carry it now?",
+        "id": "3 semut mengangkat remah. 2 semut lagi datang membantu. Berapa semut yang mengangkatnya sekarang?"
+      },
+      "choices": {
+        "en": [
+          "5 ants",
+          "6 ants",
+          "1 ant"
+        ],
+        "id": [
+          "5 semut",
+          "6 semut",
+          "1 semut"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4,
+      "check": {
+        "expression": "3 + 2",
+        "result": "5"
+      }
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Insects have six legs; ants live in colonies and communicate with smell.",
+        "id": "Serangga berkaki enam; semut hidup dalam koloni dan berkomunikasi dengan bau."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Adding helpers: more ants join to carry a heavy load.",
+        "id": "Menambah penolong: makin banyak semut bergabung untuk mengangkat beban berat."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What jobs do people in your family do together?",
+      "id": "Pekerjaan apa yang dilakukan keluargamu bersama-sama?"
+    },
+    {
+      "en": "Why is it helpful to work as a team?",
+      "id": "Mengapa bekerja sebagai tim itu membantu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Put a tiny crumb of bread outside, away from the house. Check after 10 minutes and draw what the ants do. Watch only; do not touch the ants.",
+    "id": "Letakkan remah roti kecil di luar, jauh dari rumah. Periksa setelah 10 menit dan gambar apa yang dilakukan semut. Cukup amati; jangan sentuh semutnya."
+  },
+  "factChecks": [
+    {
+      "claim": "All insects have six legs.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Ants live in colonies.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Ants leave scent trails that other ants follow to food.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Some ants can carry objects heavier than their own body weight.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Some ants bite or sting. Watch from a distance and do not touch them.",
+      "id": "Beberapa semut menggigit atau menyengat. Amati dari jauh dan jangan disentuh."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

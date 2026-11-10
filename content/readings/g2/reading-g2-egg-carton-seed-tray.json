@@ -1,0 +1,265 @@
+{
+  "id": "reading-g2-egg-carton-seed-tray",
+  "version": "1.0.0",
+  "level": "g2",
+  "readingLevel": "early",
+  "genre": "procedural",
+  "mode": "independent",
+  "title": {
+    "en": "How to make an egg-carton seed tray",
+    "id": "Cara membuat wadah semai dari karton telur"
+  },
+  "text": {
+    "en": [
+      "You can reuse an old cardboard egg carton to start seeds. This keeps rubbish out of the bin and grows new plants.",
+      "You will need: a clean cardboard egg carton, soil, a few seeds such as chilli or basil, a spoon, a spray bottle of water and a tray.",
+      "Step 1: Ask an adult to cut the lid off the carton. Put the lid under the cups to catch drips.",
+      "Step 2: Use the spoon to fill each cup with soil. Press it down gently.",
+      "Step 3: Make a small hole in each cup with your finger. Drop in two seeds and cover them with a little soil.",
+      "Step 4: Spray the soil until it is damp but not soggy. Put the tray in a bright place.",
+      "Step 5: When the seedlings have a few leaves, plant each cardboard cup straight into the ground. The cardboard will rot away in the soil."
+    ],
+    "id": [
+      "Kamu bisa memakai ulang karton telur bekas untuk menyemai biji. Cara ini mengurangi sampah dan menumbuhkan tanaman baru.",
+      "Yang kamu perlukan: karton telur dari kertas yang bersih, tanah, beberapa biji seperti cabai atau kemangi, sendok, botol semprot berisi air, dan nampan.",
+      "Langkah 1: Minta orang dewasa memotong tutup karton. Letakkan tutupnya di bawah wadah untuk menampung tetesan air.",
+      "Langkah 2: Gunakan sendok untuk mengisi setiap lubang dengan tanah. Tekan perlahan.",
+      "Langkah 3: Buat lubang kecil di setiap wadah dengan jari. Masukkan dua biji lalu tutup dengan sedikit tanah.",
+      "Langkah 4: Semprot tanahnya sampai lembap tetapi tidak becek. Letakkan nampan di tempat yang terang.",
+      "Langkah 5: Saat bibit sudah punya beberapa daun, tanam setiap wadah karton langsung ke tanah. Kartonnya akan hancur di dalam tanah."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads and follows a procedural text with a materials list and numbered steps.",
+      "id": "Membaca dan mengikuti teks prosedur dengan daftar bahan dan langkah bernomor."
+    },
+    {
+      "en": "Explains how reusing materials helps the environment.",
+      "id": "Menjelaskan bagaimana memakai ulang bahan membantu lingkungan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "reuse",
+        "id": "memakai ulang"
+      },
+      "meaning": {
+        "en": "to use something again instead of throwing it away",
+        "id": "menggunakan sesuatu lagi daripada membuangnya"
+      }
+    },
+    {
+      "word": {
+        "en": "seedling",
+        "id": "bibit"
+      },
+      "meaning": {
+        "en": "a very young plant",
+        "id": "tanaman yang masih sangat muda"
+      }
+    },
+    {
+      "word": {
+        "en": "damp",
+        "id": "lembap"
+      },
+      "meaning": {
+        "en": "a little wet",
+        "id": "sedikit basah"
+      }
+    },
+    {
+      "word": {
+        "en": "rot",
+        "id": "hancur"
+      },
+      "meaning": {
+        "en": "to break down slowly into the soil",
+        "id": "terurai perlahan menjadi bagian tanah"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What do you do just after filling the cups with soil?",
+        "id": "Apa yang kamu lakukan tepat setelah mengisi wadah dengan tanah?"
+      },
+      "choices": {
+        "en": [
+          "make a hole and drop in seeds",
+          "plant the cups in the ground",
+          "cut off the lid"
+        ],
+        "id": [
+          "membuat lubang dan memasukkan biji",
+          "menanam wadah ke tanah",
+          "memotong tutup"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Who should cut the lid off the carton?",
+        "id": "Siapa yang sebaiknya memotong tutup karton?"
+      },
+      "choices": {
+        "en": [
+          "an adult",
+          "the child alone",
+          "nobody"
+        ],
+        "id": [
+          "orang dewasa",
+          "anak sendirian",
+          "tidak ada"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why is it fine to plant the cardboard cup in the ground too?",
+        "id": "Mengapa wadah karton boleh ikut ditanam ke tanah?"
+      },
+      "choices": {
+        "en": [
+          "the cardboard breaks down, so the roots can grow through",
+          "the plant eats the cardboard",
+          "cardboard keeps the plant dry"
+        ],
+        "id": [
+          "kartonnya terurai sehingga akar bisa tumbuh menembusnya",
+          "tanaman memakan karton",
+          "karton membuat tanaman tetap kering"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "You put 2 seeds in each of 6 cups. How many seeds do you use?",
+        "id": "Kamu memasukkan 2 biji ke setiap 6 wadah. Berapa biji yang kamu pakai?"
+      },
+      "choices": {
+        "en": [
+          "12 seeds",
+          "8 seeds",
+          "6 seeds"
+        ],
+        "id": [
+          "12 biji",
+          "8 biji",
+          "6 biji"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4,
+      "check": {
+        "expression": "2 + 2 + 2 + 2 + 2 + 2",
+        "result": "12"
+      }
+    },
+    {
+      "id": "q5",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "If soil is 'damp', it is…",
+        "id": "Jika tanah 'lembap', berarti tanah itu…"
+      },
+      "choices": {
+        "en": [
+          "a little wet",
+          "very dry",
+          "under water"
+        ],
+        "id": [
+          "sedikit basah",
+          "sangat kering",
+          "terendam air"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Reusing cardboard reduces rubbish, and cardboard breaks down naturally in soil.",
+        "id": "Memakai ulang karton mengurangi sampah, dan karton terurai secara alami di tanah."
+      }
+    },
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Seeds need water, soil and light to sprout.",
+        "id": "Biji butuh air, tanah, dan cahaya untuk berkecambah."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What else at home could you reuse instead of throwing away?",
+      "id": "Barang apa lagi di rumah yang bisa dipakai ulang daripada dibuang?"
+    },
+    {
+      "en": "Why do the steps have numbers?",
+      "id": "Mengapa langkah-langkahnya diberi nomor?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Follow the steps to make your own seed tray. Keep a simple diary: draw the cups on day 1, day 5 and day 10.",
+    "id": "Ikuti langkah-langkahnya untuk membuat wadah semai sendiri. Buat catatan sederhana: gambar wadahnya pada hari ke-1, ke-5, dan ke-10."
+  },
+  "factChecks": [
+    {
+      "claim": "Cardboard is biodegradable and breaks down in soil.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Seeds need water to sprout and seedlings need light to grow.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "An adult does all cutting. Wash hands after handling soil, and never eat seeds from a seed packet.",
+      "id": "Orang dewasa yang melakukan semua pemotongan. Cuci tangan setelah memegang tanah, dan jangan memakan biji dari paket benih."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

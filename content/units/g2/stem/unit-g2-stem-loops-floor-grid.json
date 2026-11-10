@@ -1,0 +1,398 @@
+{
+  "id": "unit-g2-stem-loops-floor-grid",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "stem",
+  "strand": "programming",
+  "title": {
+    "en": "Repeat it: loops on the grid",
+    "id": "Ulangi: perulangan di petak"
+  },
+  "prerequisites": [
+    "unit-g1-stem-debug-grid-programs"
+  ],
+  "objective": {
+    "en": "Use a 'repeat' card to shorten programs on a floor grid, predict the result of a loop, and fix a loop whose repeated part is wrong.",
+    "id": "Menggunakan kartu 'ulangi' untuk memendekkan program di petak lantai, menebak hasil perulangan, dan memperbaiki perulangan yang bagian ulangnya salah."
+  },
+  "rationale": {
+    "en": "Loops are one of the big ideas of programming: instead of writing the same step many times, we say how many times to repeat it. Turning cards (turn left, turn right) are added here, so children must think from the walker's point of view.",
+    "id": "Perulangan adalah salah satu gagasan besar pemrograman: alih-alih menulis langkah yang sama berkali-kali, kita mengatakan berapa kali mengulangnya. Kartu belok (belok kiri, belok kanan) ditambahkan di sini, sehingga anak harus berpikir dari sudut pandang pejalan."
+  },
+  "outcomes": [
+    {
+      "en": "Rewrites a long program as a loop with a repeat count.",
+      "id": "Menulis ulang program panjang sebagai perulangan dengan jumlah ulangan."
+    },
+    {
+      "en": "Predicts the total movement of a loop and debugs a loop that draws the wrong shape.",
+      "id": "Menebak total gerakan perulangan dan memperbaiki perulangan yang menghasilkan bentuk salah."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can make a long program short with a repeat card.",
+      "id": "Aku bisa membuat program panjang menjadi pendek dengan kartu ulangi."
+    },
+    {
+      "en": "I can work out how far a loop moves before I walk it.",
+      "id": "Aku bisa menghitung seberapa jauh perulangan bergerak sebelum aku menjalankannya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Introduce relative cards: 'forward' moves one square in the direction the walker faces; 'turn left' and 'turn right' turn on the spot without moving.",
+      "id": "Perkenalkan kartu relatif: 'maju' bergerak satu kotak ke arah hadap pejalan; 'belok kiri' dan 'belok kanan' berputar di tempat tanpa berpindah."
+    },
+    {
+      "en": "Make a repeat card with a gap for a number, and lay the repeated cards on top of it or inside a loop of string.",
+      "id": "Buat kartu ulangi dengan tempat kosong untuk angka, dan letakkan kartu yang diulang di atasnya atau di dalam lingkaran tali."
+    },
+    {
+      "en": "Ask for a prediction before running every loop: 'How many squares will you move? What shape will you walk?'",
+      "id": "Minta tebakan sebelum menjalankan setiap perulangan: 'Berapa kotak kamu akan bergerak? Bentuk apa yang akan kamu jalani?'"
+    },
+    {
+      "en": "Reflect: 'Why is the loop easier to change than the long program?'",
+      "id": "Renungkan: 'Mengapa perulangan lebih mudah diubah daripada program panjang?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Find the cards that repeat. Put them inside the repeat loop and write how many times.",
+      "id": "Cari kartu yang berulang. Masukkan ke dalam lingkaran ulangi dan tulis berapa kali."
+    },
+    {
+      "en": "Predict, walk, then check: did the loop do what you expected?",
+      "id": "Tebak, jalankan, lalu periksa: apakah perulangan melakukan yang kamu harapkan?"
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Walk loops on a 5 by 5 masking-tape floor grid using forward, turn and repeat cards.",
+        "id": "Jalankan perulangan di petak lantai selotip 5 kali 5 memakai kartu maju, belok, dan ulangi."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the path of each loop on squared paper with a coloured pencil.",
+        "id": "Gambar jalur setiap perulangan di kertas berpetak dengan pensil warna."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write loops as text, for example: repeat 4 [forward 2, turn right].",
+        "id": "Tulis perulangan sebagai teks, misalnya: ulangi 4 [maju 2, belok kanan]."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A 5 by 5 masking-tape floor grid",
+      "id": "Petak lantai selotip kertas 5 kali 5"
+    },
+    {
+      "en": "Cards cut by the adult: forward, turn left, turn right, and three 'repeat ___ times' cards",
+      "id": "Kartu yang digunting orang dewasa: maju, belok kiri, belok kanan, dan tiga kartu 'ulangi ___ kali'"
+    },
+    {
+      "en": "A long piece of string to make a loop around repeated cards",
+      "id": "Seutas tali panjang untuk melingkari kartu yang diulang"
+    },
+    {
+      "en": "Squared paper and coloured pencils",
+      "id": "Kertas berpetak dan pensil warna"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Tape the grid. Cut and label the cards. Practise turning on the spot together: a quarter turn, feet stay in the square.",
+      "id": "Tempel petak. Gunting dan beri label kartu. Berlatih berbelok di tempat bersama: seperempat putaran, kaki tetap di kotak."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Shortening: Fajar's program is forward, forward, forward, forward. Count the same cards: 4. Replace them with 'repeat 4 [forward]'. Walk both: same end square.",
+      "id": "Memendekkan: program Fajar adalah maju, maju, maju, maju. Hitung kartu yang sama: 4. Ganti dengan 'ulangi 4 [maju]'. Jalankan keduanya: kotak akhirnya sama."
+    },
+    {
+      "en": "Loop with two steps inside: 'repeat 3 [forward, forward]'. Predict: 3 times 2 squares is 6 squares. On a 5 by 5 grid that is too far, so the walker would step off. Change the count to 2 and walk 4 squares.",
+      "id": "Perulangan dengan dua langkah di dalam: 'ulangi 3 [maju, maju]'. Tebak: 3 kali 2 kotak adalah 6 kotak. Di petak 5 kali 5 itu terlalu jauh, jadi pejalan akan keluar petak. Ganti jumlahnya menjadi 2 dan jalani 4 kotak."
+    },
+    {
+      "en": "A square: 'repeat 4 [forward 2, turn right]'. Predict the shape, walk it and arrive back at the start, facing the same way.",
+      "id": "Persegi: 'ulangi 4 [maju 2, belok kanan]'. Tebak bentuknya, jalankan, dan kembali ke tempat mulai, menghadap ke arah yang sama."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Parent writes three long programs; the child turns each into a loop and tests it.",
+      "id": "Orang tua menulis tiga program panjang; anak mengubah masing-masing menjadi perulangan dan mengujinya."
+    },
+    {
+      "en": "Debug a loop: 'repeat 4 [forward 2], turn right' walks a straight line off the grid. Move the turn inside the loop and test.",
+      "id": "Perbaiki perulangan: 'ulangi 4 [maju 2], belok kanan' berjalan lurus keluar petak. Pindahkan belokan ke dalam perulangan dan uji."
+    },
+    {
+      "en": "Design a loop that walks a different shape, such as a zigzag staircase, draw it on squared paper first, then walk it and improve it.",
+      "id": "Rancang perulangan yang menjalani bentuk lain, seperti tangga zigzag, gambar dulu di kertas berpetak, lalu jalankan dan perbaiki."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "'Repeat 3 [forward 2]'. How many squares does the walker move?",
+        "id": "'Ulangi 3 [maju 2]'. Berapa kotak pejalan bergerak?"
+      },
+      "choices": {
+        "en": [
+          "6 squares",
+          "5 squares",
+          "2 squares"
+        ],
+        "id": [
+          "6 kotak",
+          "5 kotak",
+          "2 kotak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Three times two squares: 3 × 2 = 6.",
+        "id": "Tiga kali dua kotak: 3 × 2 = 6."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_COUNT_AND_STEPS",
+        "2": "IGNORES_REPEAT"
+      },
+      "check": {
+        "expression": "3 × 2",
+        "result": "6"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which loop walks a square with sides of 2 squares and returns to the start?",
+        "id": "Perulangan mana yang menjalani persegi dengan sisi 2 kotak dan kembali ke tempat mulai?"
+      },
+      "choices": {
+        "en": [
+          "Repeat 4 [forward 2, turn right]",
+          "Repeat 2 [forward 2, turn right]",
+          "Repeat 4 [forward 2], turn right"
+        ],
+        "id": [
+          "Ulangi 4 [maju 2, belok kanan]",
+          "Ulangi 2 [maju 2, belok kanan]",
+          "Ulangi 4 [maju 2], belok kanan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The whole path is 8 squares and each side is 2, so 8 ÷ 2 = 4 sides, with a turn inside the loop after each one.",
+        "id": "Seluruh jalur 8 kotak dan setiap sisi 2 kotak, jadi 8 ÷ 2 = 4 sisi, dengan belokan di dalam perulangan setelah setiap sisi."
+      },
+      "distractorMisconceptions": {
+        "1": "WRONG_REPEAT_COUNT",
+        "2": "TURN_OUTSIDE_LOOP"
+      },
+      "check": {
+        "expression": "8 ÷ 2",
+        "result": "4"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A long program has 8 forward cards in a row. As a loop, what is it?",
+        "id": "Program panjang punya 8 kartu maju berjajar. Sebagai perulangan, menjadi apa?"
+      },
+      "choices": {
+        "en": [
+          "Repeat 8 [forward]",
+          "Repeat 1 [forward]",
+          "Repeat 4 [forward]"
+        ],
+        "id": [
+          "Ulangi 8 [maju]",
+          "Ulangi 1 [maju]",
+          "Ulangi 4 [maju]"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The repeat count is how many identical cards there were: 8 × 1 = 8 squares.",
+        "id": "Jumlah ulangan adalah banyaknya kartu yang sama: 8 × 1 = 8 kotak."
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_REPEAT",
+        "2": "WRONG_REPEAT_COUNT"
+      },
+      "check": {
+        "expression": "8 × 1",
+        "result": "8"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Why do programmers use loops?",
+        "id": "Mengapa pemrogram menggunakan perulangan?"
+      },
+      "choices": {
+        "en": [
+          "The program is shorter and easier to change",
+          "Loops make the walker go faster",
+          "Loops are needed for every program"
+        ],
+        "id": [
+          "Programnya lebih pendek dan lebih mudah diubah",
+          "Perulangan membuat pejalan lebih cepat",
+          "Perulangan diperlukan di setiap program"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Changing one number in a loop changes every repetition at once.",
+        "id": "Mengubah satu angka di perulangan mengubah semua ulangan sekaligus."
+      },
+      "distractorMisconceptions": {
+        "1": "LOOP_MEANS_FASTER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_COUNT_AND_STEPS",
+      "description": {
+        "en": "Adds the repeat count to the steps inside instead of multiplying.",
+        "id": "Menjumlahkan jumlah ulangan dengan langkah di dalam, bukan mengalikan."
+      },
+      "remediation": {
+        "en": "Unroll the loop: lay out the inside cards again for each repeat and count every card.",
+        "id": "Uraikan perulangan: pasang lagi kartu di dalamnya untuk setiap ulangan dan hitung setiap kartu."
+      }
+    },
+    {
+      "code": "IGNORES_REPEAT",
+      "description": {
+        "en": "Runs the inside of the loop only once.",
+        "id": "Menjalankan isi perulangan hanya sekali."
+      },
+      "remediation": {
+        "en": "Clap once each time you finish the inside of the loop, and tick a box on the repeat card.",
+        "id": "Tepuk tangan sekali setiap selesai menjalankan isi perulangan, dan centang kotak di kartu ulangi."
+      }
+    },
+    {
+      "code": "WRONG_REPEAT_COUNT",
+      "description": {
+        "en": "Chooses a repeat number that does not match the repeated part.",
+        "id": "Memilih angka ulangan yang tidak cocok dengan bagian yang diulang."
+      },
+      "remediation": {
+        "en": "Walk the shape first and drop a paper marker at each corner, then count the markers.",
+        "id": "Jalani bentuknya dulu dan jatuhkan penanda kertas di setiap sudut, lalu hitung penandanya."
+      }
+    },
+    {
+      "code": "TURN_OUTSIDE_LOOP",
+      "description": {
+        "en": "Puts the turn after the loop, so it happens only once at the end.",
+        "id": "Menaruh belokan setelah perulangan, sehingga hanya terjadi sekali di akhir."
+      },
+      "remediation": {
+        "en": "Make the string loop visibly surround every card that must repeat, then walk it slowly naming each card.",
+        "id": "Buat lingkaran tali jelas mengelilingi setiap kartu yang harus diulang, lalu jalankan pelan sambil menyebut setiap kartu."
+      }
+    },
+    {
+      "code": "LOOP_MEANS_FASTER",
+      "description": {
+        "en": "Thinks a loop changes speed rather than how the program is written.",
+        "id": "Mengira perulangan mengubah kecepatan, bukan cara program ditulis."
+      },
+      "remediation": {
+        "en": "Walk the long program and the loop at the same pace and notice they take the same time.",
+        "id": "Jalankan program panjang dan perulangan dengan kecepatan yang sama dan perhatikan waktunya sama."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Put a loop inside a loop on paper: repeat 2 [repeat 4 [forward, turn right]]. Predict and draw.",
+      "id": "Taruh perulangan di dalam perulangan di kertas: ulangi 2 [ulangi 4 [maju, belok kanan]]. Tebak dan gambar."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use a toy figure on squared paper for a child who gets dizzy turning; a turning arrow sticker on the toy shows its direction.",
+      "id": "Gunakan mainan di kertas berpetak untuk anak yang mudah pusing saat berbelok; stiker panah di mainan menunjukkan arah hadapnya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Keep the grid away from stairs and sharp furniture corners; turn slowly on the spot.",
+        "id": "Jauhkan petak dari tangga dan sudut perabot yang tajam; berbelok pelan di tempat."
+      },
+      {
+        "en": "The adult cuts the cards.",
+        "id": "Orang dewasa menggunting kartu."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child writes and predicts two correct loops and fixes a turn-outside-the-loop bug, on two different days.",
+      "id": "Dikuasai jika anak menulis dan menebak dua perulangan yang benar serta memperbaiki bug belokan di luar perulangan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

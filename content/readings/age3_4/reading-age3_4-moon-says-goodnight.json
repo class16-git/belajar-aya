@@ -1,0 +1,234 @@
+{
+  "id": "reading-age3_4-moon-says-goodnight",
+  "version": "1.0.0",
+  "level": "age3_4",
+  "readingLevel": "pre_reader",
+  "genre": "oral_story",
+  "mode": "parent_read",
+  "title": {
+    "en": "The Moon at the window",
+    "id": "Bulan di jendela"
+  },
+  "text": {
+    "en": [
+      "Sari looks out of her window at night. A round, bright Moon looks back. 'Hello, Moon!'",
+      "A few nights later, the Moon looks thinner, like a big smile in the sky.",
+      "Some nights later, Sari can see only a thin silver curve, like a fingernail.",
+      "One night Sari looks and looks. Where is the Moon? The sky is dark, but the stars twinkle.",
+      "Night by night, the Moon grows rounder again. Sari waves. 'You came back, Moon!'"
+    ],
+    "id": [
+      "Sari melihat ke luar jendela pada malam hari. Bulan yang bulat dan terang seperti balas menatapnya. 'Halo, Bulan!'",
+      "Beberapa malam kemudian, Bulan terlihat lebih tipis, seperti senyum besar di langit.",
+      "Beberapa malam setelahnya, Sari hanya melihat lengkungan perak yang tipis, seperti kuku jari.",
+      "Suatu malam Sari mencari dan terus mencari. Di mana Bulan? Langit gelap, tetapi bintang-bintang berkelip.",
+      "Malam demi malam, Bulan kembali membulat. Sari melambai. 'Kamu kembali, Bulan!'"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Make a big circle with both arms and wave hello to the Moon.",
+      "id": "Buat lingkaran besar dengan kedua lengan dan lambaikan tangan ke Bulan."
+    },
+    {
+      "en": "Draw a smile shape in the air with your finger.",
+      "id": "Gambar bentuk senyum di udara dengan jari."
+    },
+    {
+      "en": "Show your child your thumbnail and compare it to the thin Moon.",
+      "id": "Tunjukkan kuku ibu jari kepada anak dan bandingkan dengan Bulan yang tipis."
+    },
+    {
+      "en": "Cover your eyes and look around, then open and close your fingers like twinkling stars.",
+      "id": "Tutup mata dan pura-pura mencari, lalu buka-tutup jari seperti bintang berkelip."
+    },
+    {
+      "en": "Make the circle with your arms again and wave happily.",
+      "id": "Buat lingkaran dengan lengan lagi dan melambai dengan gembira."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a round full Moon at a window",
+      "id": "Kartu 1: bulan purnama bulat di jendela"
+    },
+    {
+      "en": "Card 2: a Moon a little less than round",
+      "id": "Kartu 2: bulan yang sedikit kurang bulat"
+    },
+    {
+      "en": "Card 3: a thin silver curve",
+      "id": "Kartu 3: lengkungan perak yang tipis"
+    },
+    {
+      "en": "Card 4: a dark sky with only stars",
+      "id": "Kartu 4: langit gelap hanya dengan bintang"
+    },
+    {
+      "en": "Card 5: the Moon growing round again",
+      "id": "Kartu 5: bulan membulat kembali"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a story about how the Moon seems to change shape over many nights.",
+      "id": "Mendengarkan cerita tentang bulan yang tampak berubah bentuk selama banyak malam."
+    },
+    {
+      "en": "Uses shape words: round, thin, curve.",
+      "id": "Menggunakan kata bentuk: bulat, tipis, lengkung."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "round",
+        "id": "bulat"
+      },
+      "meaning": {
+        "en": "shaped like a circle or a ball",
+        "id": "berbentuk seperti lingkaran atau bola"
+      }
+    },
+    {
+      "word": {
+        "en": "curve",
+        "id": "lengkungan"
+      },
+      "meaning": {
+        "en": "a line that bends, like a smile",
+        "id": "garis yang melengkung, seperti senyum"
+      }
+    },
+    {
+      "word": {
+        "en": "twinkle",
+        "id": "berkelip"
+      },
+      "meaning": {
+        "en": "to shine on and off a little",
+        "id": "bersinar berkedip-kedip"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What shape was the Moon at the start?",
+        "id": "Bagaimana bentuk Bulan di awal cerita?"
+      },
+      "choices": {
+        "en": [
+          "round",
+          "square",
+          "like a star"
+        ],
+        "id": [
+          "bulat",
+          "persegi",
+          "seperti bintang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "When Sari could not see the Moon, what could she see?",
+        "id": "Saat Sari tidak bisa melihat Bulan, apa yang bisa ia lihat?"
+      },
+      "choices": {
+        "en": [
+          "twinkling stars",
+          "the sun",
+          "a rainbow"
+        ],
+        "id": [
+          "bintang berkelip",
+          "matahari",
+          "pelangi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Did the Moon really go away for ever?",
+        "id": "Apakah Bulan benar-benar pergi selamanya?"
+      },
+      "choices": {
+        "en": [
+          "no, it was still there and came back",
+          "yes, it never came back",
+          "it fell into the sea"
+        ],
+        "id": [
+          "tidak, Bulan tetap ada dan terlihat lagi",
+          "ya, tidak pernah kembali",
+          "jatuh ke laut"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "astronomy",
+      "connection": {
+        "en": "The Moon looks a different shape on different nights, and the pattern repeats about every month.",
+        "id": "Bulan terlihat berbeda bentuk pada malam yang berbeda, dan polanya berulang kira-kira setiap bulan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What shape is the Moon tonight?",
+      "id": "Bentuk Bulan malam ini seperti apa?"
+    },
+    {
+      "en": "What else do you see in the night sky?",
+      "id": "Apa lagi yang kamu lihat di langit malam?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "For a week, look at the Moon together before bed (if you can see it) and draw its shape on a paper calendar each night.",
+    "id": "Selama seminggu, lihat Bulan bersama sebelum tidur (jika terlihat) dan gambar bentuknya di kalender kertas setiap malam."
+  },
+  "factChecks": [
+    {
+      "claim": "The Moon appears to change shape over about a month and then the cycle repeats.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "On some nights the Moon cannot be seen at all.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

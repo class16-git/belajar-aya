@@ -1,0 +1,372 @@
+{
+  "id": "unit-k-literacy-blending-to-read-words",
+  "version": "1.0.0",
+  "level": "k",
+  "framework": "literacy",
+  "strand": "phonics",
+  "title": {
+    "en": "Blend it to read it",
+    "id": "Gabungkan lalu baca"
+  },
+  "prerequisites": [
+    "unit-age4_5-literacy-letter-sound-links"
+  ],
+  "objective": {
+    "en": "Read short decodable words by blending: English sound-by-sound CVC words (s-a-t, sat); Indonesian syllable-by-syllable two-syllable words (bo-la, bola).",
+    "id": "Membaca kata pendek dengan menggabungkan: bahasa Indonesia suku demi suku untuk kata dua suku kata (bo-la, bola); bahasa Inggris bunyi demi bunyi untuk kata KVK (s-a-t, sat)."
+  },
+  "rationale": {
+    "en": "Blending is the step where letter knowledge becomes reading. The equivalent skill looks different in each language. English readers must blend single phonemes (c-a-t) because English syllables vary so much. Indonesian readers blend consonant-vowel syllables they can already read (ba, bi, bu) into words (ba-ju, sa-pi, i-bu), which is how Indonesian reading is traditionally and effectively taught. Each version therefore uses its own word lists and its own blending routine rather than a translation.",
+    "id": "Menggabungkan adalah langkah ketika pengetahuan huruf menjadi kemampuan membaca. Keterampilan yang setara ini terlihat berbeda di tiap bahasa. Pembaca bahasa Inggris harus menggabungkan fonem tunggal (c-a-t) karena suku kata bahasa Inggris sangat beragam. Pembaca bahasa Indonesia menggabungkan suku kata konsonan-vokal yang sudah bisa dibaca (ba, bi, bu) menjadi kata (ba-ju, sa-pi, i-bu), cara yang lazim dan efektif dalam mengajarkan membaca bahasa Indonesia. Karena itu setiap versi memakai daftar kata dan rutinitas menggabungkannya sendiri, bukan terjemahan."
+  },
+  "outcomes": [
+    {
+      "en": "Blends and reads ten decodable words without first saying them aloud in parts more than once.",
+      "id": "Menggabungkan dan membaca sepuluh kata tanpa mengeja bagian-bagiannya lebih dari sekali."
+    },
+    {
+      "en": "Matches a read word to its picture.",
+      "id": "Mencocokkan kata yang dibaca dengan gambarnya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can say the sounds or syllables and push them together into a word.",
+      "id": "Aku bisa mengucapkan suku katanya lalu menggabungkannya menjadi kata."
+    },
+    {
+      "en": "I can read a word and find its picture.",
+      "id": "Aku bisa membaca kata dan menemukan gambarnya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Model continuous blending: hold each sound into the next, sss-aaa-t, instead of separate sounds with gaps (s...a...t). Indonesian: run the syllables together, boo-la, not bo... la.",
+      "id": "Contohkan menggabungkan tanpa putus: suku pertama langsung bersambung ke suku kedua, boo-la, bukan bo... (diam) ...la."
+    },
+    {
+      "en": "Use your finger under the word: slow for sounding, then a fast sweep for the whole word.",
+      "id": "Pakai jari di bawah kata: pelan saat membunyikan, lalu sapuan cepat untuk seluruh kata."
+    },
+    {
+      "en": "Indonesian: start with words made only from syllables your child knows (ba-ju, bu-ku, sa-pi, ma-ta), then add vowel-first words (i-bu, u-bi).",
+      "id": "Bahasa Indonesia: mulai dengan kata yang hanya tersusun dari suku kata yang sudah dikenal anak (ba-ju, bu-ku, sa-pi, ma-ta), lalu tambahkan kata berawalan vokal (i-bu, u-bi)."
+    },
+    {
+      "en": "English: start with words using s, a, t, m, i, n (sat, man, tin, mat, sit), then add p, o, d, g.",
+      "id": "Bahasa Inggris: mulai dengan kata dari s, a, t, m, i, n (sat, man, tin, mat, sit), lalu tambahkan p, o, d, g."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Point and say each part. Then say them fast. What word is it?",
+      "id": "Tunjuk dan ucapkan setiap suku kata. Lalu ucapkan cepat. Kata apa itu?"
+    },
+    {
+      "en": "Find the picture that matches your word.",
+      "id": "Temukan gambar yang cocok dengan katamu."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Word cards written large on paper, one word per card",
+      "id": "Kartu kata yang ditulis besar di kertas, satu kata per kartu"
+    },
+    {
+      "en": "Simple pictures for each word (drawn or printed)",
+      "id": "Gambar sederhana untuk setiap kata (digambar atau dicetak)"
+    },
+    {
+      "en": "A toy car or a finger to \"drive\" under the word",
+      "id": "Mobil mainan atau jari untuk \"mengemudi\" di bawah kata"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "English cards: sat, man, tin, mat, sit, map, dog, pot, nap, dig. Put a dot under each letter.",
+      "id": "Kartu bahasa Indonesia: baju, buku, sapi, mata, ibu, ubi, bola, kaki, susu, topi. Beri garis lengkung kecil di bawah setiap suku kata."
+    },
+    {
+      "en": "Draw a matching picture for each word.",
+      "id": "Gambar sebuah gambar yang cocok untuk setiap kata."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "English: card \"map\". Touch each dot: \"mmm, aaa, p\". Drive the car back to the start and go fast: \"map!\" Find the picture of the map.",
+      "id": "Bahasa Indonesia: kartu \"sapi\". Sentuh setiap lengkung: \"sa, pi\". Mundurkan mobil ke awal dan melaju cepat: \"sapi!\" Cari gambar sapi."
+    },
+    {
+      "en": "English: \"dog\". The child says d-o-g with gaps and then \"dot?\". Say: \"Let's check the last sound together: g. D-o-g: dog.\"",
+      "id": "Bahasa Indonesia: \"bola\". Anak membaca \"bo-la\" lalu menebak \"bolu?\". Katakan: \"Kita cek suku terakhir bersama: la. Bo-la: bola.\""
+    }
+  ],
+  "practice": [
+    {
+      "en": "Picture match: read four word cards and place each on its picture.",
+      "id": "Cocokkan gambar: baca empat kartu kata dan letakkan masing-masing di atas gambarnya."
+    },
+    {
+      "en": "Change one part: map becomes mat, then sat; dog becomes dig. Read each new word.",
+      "id": "Ubah satu bagian: sapi menjadi sapu, lalu susu; baju menjadi buku. Bacakan setiap kata baru."
+    },
+    {
+      "en": "Silly or real? Read made-up and real words and sort them: vim, mat, sog, sit.",
+      "id": "Asli atau karangan? Baca kata karangan dan kata asli lalu pilah: bopi, topi, mudi, kaki."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Read the sounds: c - a - t. What is the word?",
+        "id": "Baca suku katanya: bo - la. Apa katanya?"
+      },
+      "choices": {
+        "en": [
+          "cat",
+          "cot",
+          "act"
+        ],
+        "id": [
+          "bola",
+          "bolu",
+          "labo"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "C-a-t blends to cat.",
+        "id": "Bo-la digabung menjadi bola."
+      },
+      "distractorMisconceptions": {
+        "1": "VOWEL_SWAP",
+        "2": "ORDER_SWAP"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which word matches a picture of a pig?",
+        "id": "Kata mana yang cocok dengan gambar sapi?"
+      },
+      "choices": {
+        "en": [
+          "pig",
+          "pin",
+          "big"
+        ],
+        "id": [
+          "sapi",
+          "sapu",
+          "sopi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "P-i-g is pig. Pin changes the last sound and big changes the first.",
+        "id": "Sa-pi adalah sapi. Sapu mengubah suku terakhir; sopi bukan kata."
+      },
+      "distractorMisconceptions": {
+        "1": "GUESSES_FROM_FIRST",
+        "2": "IGNORES_FIRST"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A child reads \"s...a...t\" with long gaps and cannot hear the word. What helps most?",
+        "id": "Anak membaca \"ba... (diam) ...ju\" dengan jeda panjang dan tidak menangkap katanya. Apa yang paling membantu?"
+      },
+      "choices": {
+        "en": [
+          "Hold each sound into the next: sssaaat",
+          "Spell the letter names: es, ay, tee",
+          "Guess from the picture first"
+        ],
+        "id": [
+          "Sambungkan suku tanpa jeda: baaju",
+          "Eja nama hurufnya: be, a, je, u",
+          "Tebak dari gambar dulu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Continuous blending keeps the parts joined so the word can be heard.",
+        "id": "Menyambung tanpa jeda membuat bagian-bagian tetap bersatu sehingga katanya terdengar."
+      },
+      "distractorMisconceptions": {
+        "1": "LETTER_NAMES_BLOCK_BLEND",
+        "2": "GUESSES_FROM_PICTURE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Read: m - u - g. What is it?",
+        "id": "Baca: i - bu. Siapa itu?"
+      },
+      "choices": {
+        "en": [
+          "mug",
+          "mud",
+          "hug"
+        ],
+        "id": [
+          "ibu",
+          "ubi",
+          "bibi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "M-u-g blends to mug.",
+        "id": "I-bu digabung menjadi ibu."
+      },
+      "distractorMisconceptions": {
+        "1": "GUESSES_FROM_FIRST",
+        "2": "IGNORES_FIRST"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "VOWEL_SWAP",
+      "description": {
+        "en": "Reads the consonants correctly but changes the vowel.",
+        "id": "Membaca konsonan dengan benar tetapi mengubah vokalnya."
+      },
+      "remediation": {
+        "en": "Colour the vowel red and say it twice as long: c-aaa-t; Indonesian: bo-laaa.",
+        "id": "Warnai vokal dengan merah dan ucapkan dua kali lebih panjang: bo-laaa."
+      }
+    },
+    {
+      "code": "ORDER_SWAP",
+      "description": {
+        "en": "Blends the parts in the wrong order.",
+        "id": "Menggabungkan bagian dalam urutan yang salah."
+      },
+      "remediation": {
+        "en": "Drive the toy car strictly left to right under each part; the car never reverses while reading.",
+        "id": "Jalankan mobil mainan dari kiri ke kanan di bawah setiap bagian; mobil tidak boleh mundur saat membaca."
+      }
+    },
+    {
+      "code": "GUESSES_FROM_FIRST",
+      "description": {
+        "en": "Reads the first part and guesses the rest.",
+        "id": "Membaca bagian pertama lalu menebak sisanya."
+      },
+      "remediation": {
+        "en": "Cover the word and reveal one part at a time with a card, saying each before uncovering the next.",
+        "id": "Tutup kata dan buka satu bagian setiap kali dengan kartu, ucapkan masing-masing sebelum membuka berikutnya."
+      }
+    },
+    {
+      "code": "IGNORES_FIRST",
+      "description": {
+        "en": "Attends to the end of the word and guesses the start.",
+        "id": "Memperhatikan akhir kata lalu menebak awalnya."
+      },
+      "remediation": {
+        "en": "Tap the first letter or syllable and say it before any blending begins.",
+        "id": "Ketuk huruf atau suku kata pertama dan ucapkan sebelum mulai menggabungkan."
+      }
+    },
+    {
+      "code": "LETTER_NAMES_BLOCK_BLEND",
+      "description": {
+        "en": "Uses letter names, which cannot be blended into a word.",
+        "id": "Memakai nama huruf, yang tidak bisa digabung menjadi kata."
+      },
+      "remediation": {
+        "en": "Show that \"be-a\" does not sound like \"ba\" but the sounds do. Use only sounds or syllables during reading.",
+        "id": "Tunjukkan bahwa \"be-a\" tidak terdengar seperti \"ba\", sedangkan bunyinya iya. Pakai hanya bunyi atau suku kata saat membaca."
+      }
+    },
+    {
+      "code": "GUESSES_FROM_PICTURE",
+      "description": {
+        "en": "Looks at the picture and names it without reading.",
+        "id": "Melihat gambar dan menyebut namanya tanpa membaca."
+      },
+      "remediation": {
+        "en": "Read the word first with pictures face down, then turn the picture over to check.",
+        "id": "Baca kata dulu dengan gambar tertelungkup, lalu balik gambarnya untuk memeriksa."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Write a three-word list for a pretend shop and read it aloud: map, pot, mug.",
+      "id": "Tulis daftar tiga kata untuk permainan toko dan bacakan: susu, ubi, kopi."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use large print and one word per card. A child with motor difficulties can point instead of placing cards.",
+      "id": "Pakai huruf besar dan satu kata per kartu. Anak dengan kesulitan motorik bisa menunjuk alih-alih menaruh kartu."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use a toy car larger than the child's fist; no other safety concerns.",
+        "id": "Pakai mobil mainan yang lebih besar dari kepalan anak; tidak ada masalah keamanan lain."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child reads eight of ten new decodable words correctly and matches them to pictures, on two different days.",
+      "id": "Dikuasai jika anak membaca delapan dari sepuluh kata baru dengan benar dan mencocokkannya dengan gambar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "single-answer-check",
+      "misconception-map",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-literacy",
+    "createdAt": "2026-11-10"
+  }
+}

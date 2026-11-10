@@ -1,0 +1,206 @@
+{
+  "id": "reading-g1-my-shadow-moves",
+  "version": "1.0.0",
+  "level": "g1",
+  "readingLevel": "early",
+  "genre": "fiction",
+  "mode": "shared",
+  "title": {
+    "en": "My shadow moves",
+    "id": "Bayanganku bergerak"
+  },
+  "text": {
+    "en": [
+      "In the morning, Arif stands in the yard. His shadow is long and thin. It stretches far across the grass.",
+      "At lunchtime, the sun is high above his head. Arif looks down. His shadow is short and fat, right by his feet.",
+      "In the afternoon, Arif goes out again. His shadow is long again, but now it points the other way!",
+      "'Why does my shadow change?' asks Arif. Grandma smiles. 'Watch where the sun is each time.'",
+      "Arif sees it. When the sun is low, the shadow is long. When the sun is high, the shadow is short.",
+      "Arif draws round his shadow with chalk three times in one day. He has made a shadow clock!"
+    ],
+    "id": [
+      "Pagi hari, Arif berdiri di halaman. Bayangannya panjang dan ramping, terbentang jauh di atas rumput.",
+      "Saat makan siang, matahari tinggi di atas kepalanya. Arif melihat ke bawah. Bayangannya pendek dan gemuk, tepat di dekat kakinya.",
+      "Sore hari, Arif keluar lagi. Bayangannya panjang lagi, tetapi sekarang menunjuk ke arah sebaliknya!",
+      "'Kenapa bayanganku berubah?' tanya Arif. Nenek tersenyum. 'Perhatikan di mana matahari setiap kali.'",
+      "Arif mengerti. Saat matahari rendah, bayangan panjang. Saat matahari tinggi, bayangan pendek.",
+      "Arif menggambar garis bayangannya dengan kapur tiga kali dalam sehari. Ia sudah membuat jam bayangan!"
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a story and explains the cause of a change.",
+      "id": "Membaca cerita dan menjelaskan penyebab sebuah perubahan."
+    },
+    {
+      "en": "Connects the length of a shadow to the position of the sun.",
+      "id": "Menghubungkan panjang bayangan dengan posisi matahari."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "shadow",
+        "id": "bayangan"
+      },
+      "meaning": {
+        "en": "a dark shape made when something blocks light",
+        "id": "bentuk gelap yang terjadi saat sesuatu menghalangi cahaya"
+      }
+    },
+    {
+      "word": {
+        "en": "stretch",
+        "id": "terbentang"
+      },
+      "meaning": {
+        "en": "to reach out long",
+        "id": "memanjang jauh"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What was Arif's shadow like at lunchtime?",
+        "id": "Seperti apa bayangan Arif saat makan siang?"
+      },
+      "choices": {
+        "en": [
+          "short, by his feet",
+          "long and thin",
+          "gone"
+        ],
+        "id": [
+          "pendek, di dekat kakinya",
+          "panjang dan ramping",
+          "hilang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "When the sun is low in the sky, a shadow is…",
+        "id": "Saat matahari rendah di langit, bayangan menjadi…"
+      },
+      "choices": {
+        "en": [
+          "long",
+          "short",
+          "blue"
+        ],
+        "id": [
+          "panjang",
+          "pendek",
+          "biru"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did the afternoon shadow point the other way?",
+        "id": "Mengapa bayangan sore menunjuk ke arah sebaliknya?"
+      },
+      "choices": {
+        "en": [
+          "the sun had moved to the other side of the sky",
+          "Arif turned around",
+          "the grass had grown"
+        ],
+        "id": [
+          "matahari sudah pindah ke sisi langit yang lain",
+          "Arif berbalik",
+          "rumputnya tumbuh"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q4",
+      "kind": "sequence",
+      "prompt": {
+        "en": "Put in order: long shadow, short shadow, long shadow the other way. Which came second?",
+        "id": "Urutkan: bayangan panjang, bayangan pendek, bayangan panjang ke arah lain. Mana yang kedua?"
+      },
+      "choices": {
+        "en": [
+          "short shadow at lunchtime",
+          "long shadow in the morning",
+          "long shadow in the afternoon"
+        ],
+        "id": [
+          "bayangan pendek saat siang",
+          "bayangan panjang di pagi hari",
+          "bayangan panjang di sore hari"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "astronomy",
+      "connection": {
+        "en": "The sun seems to move across the sky during the day, so shadows change length and direction.",
+        "id": "Matahari tampak bergerak melintasi langit sepanjang hari, sehingga panjang dan arah bayangan berubah."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Can you make your shadow look like an animal?",
+      "id": "Bisakah kamu membuat bayanganmu seperti hewan?"
+    },
+    {
+      "en": "Where would your shadow be at lunchtime tomorrow?",
+      "id": "Di mana bayanganmu saat makan siang besok?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Stand on the same spot at three times of day. An adult traces round the shadow with chalk each time and writes the time beside it.",
+    "id": "Berdiri di tempat yang sama pada tiga waktu berbeda. Orang dewasa menggambar garis bayangan dengan kapur setiap kali dan menulis jamnya."
+  },
+  "factChecks": [
+    {
+      "claim": "Shadows are longest when the sun is low and shortest when it is high.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Never look straight at the sun.",
+      "id": "Jangan pernah menatap matahari secara langsung."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

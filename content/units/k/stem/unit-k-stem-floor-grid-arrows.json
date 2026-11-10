@@ -1,0 +1,370 @@
+{
+  "id": "unit-k-stem-floor-grid-arrows",
+  "version": "1.0.0",
+  "level": "k",
+  "framework": "stem",
+  "strand": "algorithms",
+  "title": {
+    "en": "Arrow programs on a floor grid",
+    "id": "Program panah di petak lantai"
+  },
+  "prerequisites": [
+    "unit-age4_5-stem-robot-grownup-commands"
+  ],
+  "objective": {
+    "en": "Plan and run a sequence of arrow cards that moves a person one square at a time across a floor grid to a goal.",
+    "id": "Merencanakan dan menjalankan urutan kartu panah yang menggerakkan seseorang satu kotak demi satu kotak di petak lantai menuju tujuan."
+  },
+  "rationale": {
+    "en": "Arrow cards turn spoken commands into a written program. Each card means exactly one square, which links counting to coding and lets children compare their predicted program with what really happens.",
+    "id": "Kartu panah mengubah perintah lisan menjadi program tertulis. Setiap kartu berarti tepat satu kotak, sehingga menghubungkan berhitung dengan pemrograman dan memungkinkan anak membandingkan program yang ditebak dengan yang sungguh terjadi."
+  },
+  "outcomes": [
+    {
+      "en": "Writes a program of up to six arrow cards that reaches the goal.",
+      "id": "Menyusun program sampai enam kartu panah yang mencapai tujuan."
+    },
+    {
+      "en": "Counts squares, not directions, when planning.",
+      "id": "Menghitung kotak, bukan arah, saat merencanakan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I put one arrow card for each square.",
+      "id": "Aku pasang satu kartu panah untuk setiap kotak."
+    },
+    {
+      "en": "I can check my program by walking it.",
+      "id": "Aku bisa memeriksa programku dengan menjalankannya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Make the arrows point like on a map: the up arrow always means 'towards the window', whichever way the walker faces. Turning arrows come later.",
+      "id": "Buat panah menunjuk seperti di peta: panah atas selalu berarti 'ke arah jendela', ke mana pun pejalan menghadap. Panah belok diajarkan nanti."
+    },
+    {
+      "en": "Ask for a prediction before every run: 'How many cards will you need?' Write the guess down.",
+      "id": "Minta tebakan sebelum setiap percobaan: 'Berapa kartu yang kamu perlukan?' Tulis tebakannya."
+    },
+    {
+      "en": "Run the program card by card: point to a card, the walker moves one square, then turn the card over.",
+      "id": "Jalankan program kartu demi kartu: tunjuk satu kartu, pejalan bergerak satu kotak, lalu balik kartunya."
+    },
+    {
+      "en": "Afterwards ask 'Did your guess match? Is there another program that also works?'",
+      "id": "Setelahnya tanyakan 'Tebakanmu cocok? Adakah program lain yang juga berhasil?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Lay your arrow cards in a row, left to right.",
+      "id": "Susun kartu panahmu berjajar, dari kiri ke kanan."
+    },
+    {
+      "en": "Walk one square for each card. Did you reach the teddy?",
+      "id": "Berjalan satu kotak untuk setiap kartu. Apakah kamu sampai ke boneka?"
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Make a 4 by 4 floor grid with masking tape, each square about one big step, and walk programs on it.",
+        "id": "Buat petak lantai 4 kali 4 dengan selotip kertas, tiap kotak kira-kira satu langkah besar, dan jalankan program di atasnya."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the same grid on paper and move a toy figure along it while reading the cards.",
+        "id": "Gambar petak yang sama di kertas dan gerakkan mainan kecil di atasnya sambil membaca kartu."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the program as arrow symbols only, for example up, up, right, and predict the end square.",
+        "id": "Tulis program hanya dengan simbol panah, misalnya atas, atas, kanan, dan tebak kotak terakhirnya."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Masking tape (about 5 metres) for a 4 by 4 floor grid",
+      "id": "Selotip kertas (sekitar 5 meter) untuk petak lantai 4 kali 4"
+    },
+    {
+      "en": "About 12 arrow cards cut by the adult from card, with thick arrows",
+      "id": "Sekitar 12 kartu panah yang digunting orang dewasa dari karton, dengan panah tebal"
+    },
+    {
+      "en": "A teddy as the goal and a paper star for the start square",
+      "id": "Boneka sebagai tujuan dan bintang kertas untuk kotak mulai"
+    },
+    {
+      "en": "Paper and a pencil for the guess",
+      "id": "Kertas dan pensil untuk menulis tebakan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Tape the grid on a clear floor. The adult cuts the cards and draws one arrow on each (up, down, left, right). Agree which wall 'up' points to.",
+      "id": "Tempel petak di lantai kosong. Orang dewasa menggunting kartu dan menggambar satu panah di setiap kartu (atas, bawah, kiri, kanan). Sepakati dinding mana yang ditunjuk 'atas'."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Straight: start on the star, teddy 3 squares up. Child guesses 3 cards and lays up, up, up. Walk it: one, two, three, teddy! Guess matched.",
+      "id": "Lurus: mulai di bintang, boneka 3 kotak ke atas. Anak menebak 3 kartu dan memasang atas, atas, atas. Jalankan: satu, dua, tiga, boneka! Tebakan cocok."
+    },
+    {
+      "en": "Corner: teddy is 2 up and 2 right. A common first guess is 2 cards ('up and right'). Walk 'up, right' and stop short. Count squares together: 2 up plus 2 right is 4 cards.",
+      "id": "Sudut: boneka 2 ke atas dan 2 ke kanan. Tebakan pertama yang sering muncul adalah 2 kartu ('atas dan kanan'). Jalankan 'atas, kanan' dan berhenti sebelum sampai. Hitung kotak bersama: 2 atas ditambah 2 kanan adalah 4 kartu."
+    },
+    {
+      "en": "Two routes: show that right, right, up, up also reaches teddy. Both programs are correct.",
+      "id": "Dua jalur: tunjukkan bahwa kanan, kanan, atas, atas juga sampai ke boneka. Kedua program benar."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Parent places teddy; child writes a program, predicts the number of cards, then walks it.",
+      "id": "Orang tua menaruh boneka; anak menyusun program, menebak jumlah kartu, lalu menjalankannya."
+    },
+    {
+      "en": "Child places teddy and writes the program; the parent walks it exactly, so the child sees their own program run.",
+      "id": "Anak menaruh boneka dan menyusun program; orang tua menjalankannya persis, sehingga anak melihat programnya sendiri berjalan."
+    },
+    {
+      "en": "Put a cushion on one square as a 'rock' that cannot be stepped on, and find a program around it.",
+      "id": "Taruh bantal di satu kotak sebagai 'batu' yang tidak boleh diinjak, dan cari program yang memutarinya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Teddy is 3 squares up and 2 squares right from the start. How many arrow cards are needed?",
+        "id": "Boneka 3 kotak ke atas dan 2 kotak ke kanan dari mulai. Berapa kartu panah yang diperlukan?"
+      },
+      "choices": {
+        "en": [
+          "5 cards",
+          "2 cards",
+          "6 cards"
+        ],
+        "id": [
+          "5 kartu",
+          "2 kartu",
+          "6 kartu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "One card per square: 3 + 2 = 5.",
+        "id": "Satu kartu per kotak: 3 + 2 = 5."
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_DIRECTIONS_NOT_SQUARES",
+        "2": "COUNTS_START_SQUARE"
+      },
+      "check": {
+        "expression": "3 + 2",
+        "result": "5"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Teddy is straight to the right of the start. Which card comes first?",
+        "id": "Boneka tepat di sebelah kanan mulai. Kartu mana yang pertama?"
+      },
+      "choices": {
+        "en": [
+          "A right arrow",
+          "An up arrow"
+        ],
+        "id": [
+          "Panah kanan",
+          "Panah atas"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Moving right is the only way towards teddy.",
+        "id": "Bergerak ke kanan adalah satu-satunya arah menuju boneka."
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_DIRECTIONS_NOT_SQUARES"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Sari wrote up, up, right, right. Dimas wrote right, right, up, up. Both reach teddy. Who is right?",
+        "id": "Sari menyusun atas, atas, kanan, kanan. Dimas menyusun kanan, kanan, atas, atas. Keduanya sampai ke boneka. Siapa yang benar?"
+      },
+      "choices": {
+        "en": [
+          "Both programs are right",
+          "Only Sari",
+          "Only Dimas"
+        ],
+        "id": [
+          "Kedua program benar",
+          "Hanya Sari",
+          "Hanya Dimas"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Different programs can reach the same goal.",
+        "id": "Program yang berbeda bisa mencapai tujuan yang sama."
+      },
+      "distractorMisconceptions": {
+        "1": "ONLY_ONE_RIGHT_PROGRAM",
+        "2": "ONLY_ONE_RIGHT_PROGRAM"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A program has 4 up cards. The walker starts on the star. How many squares does the walker move?",
+        "id": "Sebuah program punya 4 kartu atas. Pejalan mulai di bintang. Berapa kotak pejalan bergerak?"
+      },
+      "choices": {
+        "en": [
+          "4 squares",
+          "5 squares",
+          "1 square"
+        ],
+        "id": [
+          "4 kotak",
+          "5 kotak",
+          "1 kotak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each card moves one square: 1 + 1 + 1 + 1 = 4. The start square is not counted.",
+        "id": "Setiap kartu memindahkan satu kotak: 1 + 1 + 1 + 1 = 4. Kotak mulai tidak dihitung."
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_START_SQUARE",
+        "2": "COUNTS_DIRECTIONS_NOT_SQUARES"
+      },
+      "check": {
+        "expression": "1 + 1 + 1 + 1",
+        "result": "4"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "COUNTS_DIRECTIONS_NOT_SQUARES",
+      "description": {
+        "en": "Uses one card per direction instead of one per square.",
+        "id": "Memakai satu kartu per arah, bukan satu per kotak."
+      },
+      "remediation": {
+        "en": "Put a sticky note on every square of the path first, then swap each note for a card.",
+        "id": "Tempel kertas catatan di setiap kotak jalur dulu, lalu ganti setiap catatan dengan kartu."
+      }
+    },
+    {
+      "code": "COUNTS_START_SQUARE",
+      "description": {
+        "en": "Counts the square the walker starts on as a move.",
+        "id": "Menghitung kotak mulai sebagai satu gerakan."
+      },
+      "remediation": {
+        "en": "Say 'zero' while standing on the star, then 'one' only after the first jump.",
+        "id": "Ucapkan 'nol' saat berdiri di bintang, lalu 'satu' hanya setelah lompatan pertama."
+      }
+    },
+    {
+      "code": "ONLY_ONE_RIGHT_PROGRAM",
+      "description": {
+        "en": "Believes there is only one correct program.",
+        "id": "Percaya hanya ada satu program yang benar."
+      },
+      "remediation": {
+        "en": "Ask two family members to walk two different programs at the same time and both arrive at teddy.",
+        "id": "Minta dua anggota keluarga menjalankan dua program berbeda bersamaan dan keduanya sampai ke boneka."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Use a 5 by 5 grid and two goals: visit the teddy, then the ball.",
+      "id": "Gunakan petak 5 kali 5 dan dua tujuan: kunjungi boneka, lalu bola."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child who finds walking hard, run programs with a toy car on the paper grid.",
+      "id": "Untuk anak yang sulit berjalan, jalankan program dengan mobil-mobilan di petak kertas."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult cuts the cards; keep the floor grid away from stairs and remove rugs that slip.",
+        "id": "Orang dewasa menggunting kartu; jauhkan petak dari tangga dan singkirkan karpet yang licin."
+      },
+      {
+        "en": "Walk the grid, do not run or jump between squares on a hard floor.",
+        "id": "Berjalan di petak, jangan berlari atau melompat di lantai keras."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child writes and checks correct programs for two corner goals without help, on two different days.",
+      "id": "Dikuasai jika anak menyusun dan memeriksa program yang benar untuk dua tujuan di sudut tanpa bantuan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

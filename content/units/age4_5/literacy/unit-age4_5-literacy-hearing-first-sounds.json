@@ -1,0 +1,351 @@
+{
+  "id": "unit-age4_5-literacy-hearing-first-sounds",
+  "version": "1.0.0",
+  "level": "age4_5",
+  "framework": "literacy",
+  "strand": "phonological_awareness",
+  "title": {
+    "en": "I spy a first sound",
+    "id": "Aku melihat bunyi awal"
+  },
+  "prerequisites": [
+    "unit-age3_4-literacy-hearing-rhyme"
+  ],
+  "objective": {
+    "en": "Hear and say the first sound of a spoken word and find objects that begin with the same sound.",
+    "id": "Mendengar dan mengucapkan bunyi awal kata lisan dan menemukan benda yang diawali bunyi yang sama."
+  },
+  "rationale": {
+    "en": "Isolating the first sound of a word is the bridge from hearing syllables to linking letters with sounds. English children isolate a single phoneme directly (/m/ in moon), so the English version uses stretched sounds such as mmm and sss. Indonesian children already hear syllables clearly, so the Indonesian version goes from the first syllable to the first sound: bo-la, bo, /b/. This uses the regular syllable structure of Indonesian as a step instead of skipping it.",
+    "id": "Memisahkan bunyi awal kata adalah jembatan dari mendengar suku kata ke menghubungkan huruf dengan bunyi. Anak berbahasa Inggris langsung memisahkan satu fonem (/m/ pada moon), jadi versi bahasa Inggris memakai bunyi panjang seperti mmm dan sss. Anak berbahasa Indonesia sudah mendengar suku kata dengan jelas, jadi versi bahasa Indonesia bergerak dari suku kata pertama ke bunyi pertama: bo-la, bo, /b/. Cara ini memakai struktur suku kata bahasa Indonesia yang teratur sebagai tangga, bukan melewatinya."
+  },
+  "outcomes": [
+    {
+      "en": "Says the first sound of familiar words, using the sound rather than the letter name.",
+      "id": "Mengucapkan bunyi awal kata yang akrab, memakai bunyinya, bukan nama hurufnya."
+    },
+    {
+      "en": "Groups objects that start with the same sound.",
+      "id": "Mengelompokkan benda yang diawali bunyi yang sama."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can say the first sound in my name.",
+      "id": "Aku bisa mengucapkan bunyi awal namaku."
+    },
+    {
+      "en": "I can find things that start with the same sound.",
+      "id": "Aku bisa menemukan benda yang bunyi awalnya sama."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Say sounds short and clean: /m/ as mmm, not \"muh\"; /s/ as sss, not \"suh\". Sounds you can hold (m, s, f, l, n) are easiest, so start with them.",
+      "id": "Ucapkan bunyi pendek dan bersih: /m/ sebagai mmm, bukan \"me\"; /s/ sebagai sss, bukan \"es\". Bunyi yang bisa dipanjangkan (m, s, l, n) paling mudah, jadi mulailah dengan itu."
+    },
+    {
+      "en": "Indonesian route: say the word, clap its syllables, say the first syllable, then the first sound: \"me-ja; me; mmm\".",
+      "id": "Jalur bahasa Indonesia: ucapkan katanya, tepuk suku katanya, ucapkan suku kata pertama, lalu bunyi pertama: \"me-ja; me; mmm\"."
+    },
+    {
+      "en": "Play for ten minutes at most and finish on a success.",
+      "id": "Bermainlah paling lama sepuluh menit dan akhiri dengan keberhasilan."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Three trays or plates as sorting places",
+      "id": "Tiga nampan atau piring sebagai tempat memilah"
+    },
+    {
+      "en": "Large household objects. English: mug, mitten, sock, spoon, fork, fish toy. Indonesian: meja (point to it), mangga, sapu, sendok, bola, baju",
+      "id": "Benda rumah yang besar. Bahasa Indonesia: meja (tunjuk saja), mangga, sapu, sendok, bola, baju. Bahasa Inggris: mug, mitten, sock, spoon, fork, fish toy"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Gather two objects for each of three sounds and put one \"leader\" object on each tray.",
+      "id": "Kumpulkan dua benda untuk masing-masing tiga bunyi dan taruh satu benda \"pemimpin\" di setiap nampan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "English: hold up the mug. \"Mmm-ug. The first sound is mmm.\" Hold up the sock: \"Sss-ock. First sound sss. Is it the same as mug?\" No, so the sock goes on another tray.",
+      "id": "Bahasa Indonesia: angkat sapu. \"Sa-pu. Suku pertama sa. Bunyi pertama sss.\" Angkat sendok: \"Sen-dok. Sen. Sss. Sama dengan sapu!\" Sendok masuk nampan sapu."
+    },
+    {
+      "en": "Name game: \"Maya starts with mmm. Who else starts with mmm? Mum!\" Indonesian: \"Bima: Bi, /b/. Siapa lagi? Budi, Bapak!\"",
+      "id": "Permainan nama: \"Bima: Bi, /b/. Siapa lagi diawali /b/? Budi, Bapak!\" Bahasa Inggris: \"Maya starts with mmm. Who else? Mum!\""
+    }
+  ],
+  "practice": [
+    {
+      "en": "Sound sort: your child sorts the six objects onto the three trays by first sound, saying each sound aloud.",
+      "id": "Pilah bunyi: anak memilah enam benda ke tiga nampan menurut bunyi awal sambil mengucapkan setiap bunyinya."
+    },
+    {
+      "en": "I spy walk: \"I spy something that starts with /d/\" (door). Indonesian: \"Aku melihat sesuatu yang diawali /p/\" (pintu).",
+      "id": "Jalan-jalan aku melihat: \"Aku melihat sesuatu yang diawali /p/\" (pintu). Bahasa Inggris: \"I spy something that starts with /d/\" (door)."
+    },
+    {
+      "en": "Silly sentence: say a sentence where every word starts with the same sound and let your child spot the sound (Sami sees six socks; Mama makan mangga manis).",
+      "id": "Kalimat lucu: ucapkan kalimat yang setiap katanya diawali bunyi sama dan biarkan anak menemukan bunyinya (Mama makan mangga manis; Sami sees six socks)."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "What is the first sound in \"moon\"?",
+        "id": "Apa bunyi awal kata \"meja\"?"
+      },
+      "choices": {
+        "en": [
+          "/m/ (mmm)",
+          "/n/",
+          "\"em\", the letter name"
+        ],
+        "id": [
+          "/m/ (mmm)",
+          "/j/",
+          "\"em\", nama hurufnya"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Moon starts with the sound mmm. The letter name \"em\" is not the sound.",
+        "id": "Me-ja diawali suku me, dengan bunyi pertama mmm. Nama huruf \"em\" bukan bunyinya."
+      },
+      "distractorMisconceptions": {
+        "1": "LISTENS_TO_END",
+        "2": "LETTER_NAME_FOR_SOUND"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which word starts with the same sound as \"sun\"?",
+        "id": "Kata mana yang bunyi awalnya sama dengan \"sapu\"?"
+      },
+      "choices": {
+        "en": [
+          "sock",
+          "fish",
+          "moon"
+        ],
+        "id": [
+          "sendok",
+          "bola",
+          "meja"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Sun and sock both start with sss.",
+        "id": "Sapu dan sendok sama-sama diawali sss."
+      },
+      "distractorMisconceptions": {
+        "1": "SIMILAR_SOUNDS",
+        "2": "GUESSES_FROM_PICTURE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which word does not start with /b/: ball, bed, cup?",
+        "id": "Kata mana yang tidak diawali /b/: bola, baju, kucing?"
+      },
+      "choices": {
+        "en": [
+          "cup",
+          "ball",
+          "bed"
+        ],
+        "id": [
+          "kucing",
+          "bola",
+          "baju"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Cup starts with /k/; ball and bed start with /b/.",
+        "id": "Kucing diawali /k/; bola dan baju diawali /b/."
+      },
+      "distractorMisconceptions": {
+        "1": "PICKS_FIRST_WORD",
+        "2": "PICKS_FIRST_WORD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "The child says \"bo\" for \"bola\". What is the next step?",
+        "id": "Anak mengucapkan \"bo\" untuk \"bola\". Apa langkah berikutnya?"
+      },
+      "choices": {
+        "en": [
+          "Ask for just the first sound: /b/",
+          "Tell the child the answer is wrong",
+          "Move to a new word at once"
+        ],
+        "id": [
+          "Minta bunyi pertamanya saja: /b/",
+          "Katakan bahwa jawabannya salah",
+          "Langsung pindah ke kata baru"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "\"Bo\" is the first syllable, which is a good step. Ask what the very first sound of bo is.",
+        "id": "\"Bo\" adalah suku kata pertama, langkah yang bagus. Tanyakan apa bunyi paling awal dari bo."
+      },
+      "distractorMisconceptions": {
+        "1": "SYLLABLE_FOR_SOUND",
+        "2": "SYLLABLE_FOR_SOUND"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "LISTENS_TO_END",
+      "description": {
+        "en": "Gives the last sound because it was heard most recently.",
+        "id": "Menyebut bunyi akhir karena terakhir terdengar."
+      },
+      "remediation": {
+        "en": "Stretch only the start and stop: \"mmm...\" then wait. Use a toy car that zooms from the start of a drawn road: the sound at the start line is the first one.",
+        "id": "Panjangkan awalnya saja lalu berhenti: \"mmm...\" lalu tunggu. Pakai mobil mainan yang melaju dari garis start jalan yang digambar: bunyi di garis start adalah yang pertama."
+      }
+    },
+    {
+      "code": "LETTER_NAME_FOR_SOUND",
+      "description": {
+        "en": "Says the letter name (em, es) instead of the sound.",
+        "id": "Mengucapkan nama huruf (em, es) alih-alih bunyinya."
+      },
+      "remediation": {
+        "en": "Feel the difference: hum mmm with lips closed, then say em with the mouth open. We want the closed-lips hum.",
+        "id": "Rasakan bedanya: dengung mmm dengan bibir tertutup, lalu ucapkan em dengan mulut terbuka. Yang kita cari dengung bibir tertutup."
+      }
+    },
+    {
+      "code": "SIMILAR_SOUNDS",
+      "description": {
+        "en": "Confuses sounds made in a similar way, such as /s/ and /f/.",
+        "id": "Tertukar bunyi yang dibuat dengan cara mirip, seperti /s/ dan /f/."
+      },
+      "remediation": {
+        "en": "Use a small mirror: /s/ shows teeth together, /f/ shows the top teeth on the lip.",
+        "id": "Pakai cermin kecil: /s/ memperlihatkan gigi rapat, /f/ memperlihatkan gigi atas di bibir bawah."
+      }
+    },
+    {
+      "code": "GUESSES_FROM_PICTURE",
+      "description": {
+        "en": "Picks the object that goes with the target in meaning (sun and moon).",
+        "id": "Memilih benda yang artinya berhubungan dengan sasaran (misalnya matahari dengan bulan)."
+      },
+      "remediation": {
+        "en": "Say the words without showing the objects, then show them only after the child decides.",
+        "id": "Ucapkan kata-katanya tanpa menunjukkan benda, lalu tunjukkan setelah anak memutuskan."
+      }
+    },
+    {
+      "code": "PICKS_FIRST_WORD",
+      "description": {
+        "en": "Chooses the first option without comparing all three.",
+        "id": "Memilih pilihan pertama tanpa membandingkan ketiganya."
+      },
+      "remediation": {
+        "en": "Lay the objects in a row and say each first sound while touching it before choosing.",
+        "id": "Jajarkan benda dan ucapkan setiap bunyi awal sambil menyentuhnya sebelum memilih."
+      }
+    },
+    {
+      "code": "SYLLABLE_FOR_SOUND",
+      "description": {
+        "en": "Gives the whole first syllable (bo) instead of the single first sound.",
+        "id": "Menyebut seluruh suku kata pertama (bo) alih-alih satu bunyi pertama."
+      },
+      "remediation": {
+        "en": "Say the syllable very slowly, holding the start with closed lips, b-b-bo, and ask the child to stop you before the o.",
+        "id": "Ucapkan suku katanya sangat pelan, tahan awalnya dengan bibir tertutup, b-b-bo, dan minta anak menghentikan Anda sebelum bunyi o."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a first-sound book: one page per sound, with your child's drawings of things that start with it.",
+      "id": "Buat buku bunyi awal: satu halaman per bunyi, berisi gambar anak tentang benda yang diawali bunyi itu."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child with speech-sound difficulties, accept pointing to the right object and model the sound without asking for repetition.",
+      "id": "Untuk anak dengan kesulitan pelafalan, terima tunjukan ke benda yang benar dan contohkan bunyinya tanpa meminta anak mengulang."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use objects larger than the child's fist; keep the fork for the adult to hold up, or use a picture of a fork instead.",
+        "id": "Pakai benda yang lebih besar dari kepalan anak; garpu dipegang orang dewasa saja, atau pakai gambar garpu sebagai gantinya."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 8,
+    "max": 15
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child says the first sound of eight familiar words and sorts six objects by first sound without help, on two different days.",
+      "id": "Dikuasai jika anak mengucapkan bunyi awal delapan kata akrab dan memilah enam benda menurut bunyi awal tanpa bantuan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "single-answer-check",
+      "misconception-map",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-literacy",
+    "createdAt": "2026-11-10"
+  }
+}

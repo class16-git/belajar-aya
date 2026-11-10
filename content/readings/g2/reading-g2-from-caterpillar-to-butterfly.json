@@ -1,0 +1,255 @@
+{
+  "id": "reading-g2-from-caterpillar-to-butterfly",
+  "version": "1.0.0",
+  "level": "g2",
+  "readingLevel": "early",
+  "genre": "explanatory",
+  "mode": "independent",
+  "title": {
+    "en": "From caterpillar to butterfly",
+    "id": "Dari ulat menjadi kupu-kupu"
+  },
+  "text": {
+    "en": [
+      "A butterfly does not start life looking like a butterfly. It changes in four stages. This big change is called metamorphosis.",
+      "First, a butterfly lays a tiny egg on a leaf. The leaf is chosen carefully, because it will be food for the baby.",
+      "Second, a caterpillar hatches from the egg. It eats and eats. As it grows, it sheds its skin several times.",
+      "Third, the caterpillar makes a hard case around itself. This stage is called a chrysalis. Inside, its body is changing.",
+      "Fourth, the chrysalis opens and an adult butterfly comes out. Its wings are soft and wet, so it waits for them to dry before it flies.",
+      "Later, the butterfly lays its own eggs, and the cycle begins again. That is why we call it a life cycle."
+    ],
+    "id": [
+      "Kupu-kupu tidak lahir dalam bentuk kupu-kupu. Ia berubah melalui empat tahap. Perubahan besar ini disebut metamorfosis.",
+      "Pertama, kupu-kupu bertelur kecil di sehelai daun. Daunnya dipilih dengan hati-hati, karena akan menjadi makanan bayinya.",
+      "Kedua, ulat menetas dari telur. Ia makan terus-menerus. Saat tumbuh, ia berganti kulit beberapa kali.",
+      "Ketiga, ulat membuat pembungkus keras di sekeliling tubuhnya. Tahap ini disebut kepompong. Di dalamnya, tubuhnya sedang berubah.",
+      "Keempat, kepompong terbuka dan kupu-kupu dewasa keluar. Sayapnya masih lembut dan basah, jadi ia menunggu sayapnya kering sebelum terbang.",
+      "Kemudian, kupu-kupu itu bertelur, dan siklusnya dimulai lagi. Itulah sebabnya kita menyebutnya daur hidup."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads an explanation and uses order words (first, second, third, fourth) to retell a process.",
+      "id": "Membaca penjelasan dan menggunakan kata urutan (pertama, kedua, ketiga, keempat) untuk menceritakan proses."
+    },
+    {
+      "en": "Names the four stages of a butterfly's life cycle.",
+      "id": "Menyebutkan empat tahap daur hidup kupu-kupu."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "metamorphosis",
+        "id": "metamorfosis"
+      },
+      "meaning": {
+        "en": "a big change in body shape as an animal grows",
+        "id": "perubahan besar bentuk tubuh saat hewan tumbuh"
+      }
+    },
+    {
+      "word": {
+        "en": "hatch",
+        "id": "menetas"
+      },
+      "meaning": {
+        "en": "to come out of an egg",
+        "id": "keluar dari telur"
+      }
+    },
+    {
+      "word": {
+        "en": "chrysalis",
+        "id": "kepompong"
+      },
+      "meaning": {
+        "en": "the hard case where a caterpillar changes into a butterfly",
+        "id": "pembungkus keras tempat ulat berubah menjadi kupu-kupu"
+      }
+    },
+    {
+      "word": {
+        "en": "cycle",
+        "id": "siklus"
+      },
+      "meaning": {
+        "en": "something that happens again and again in the same order",
+        "id": "sesuatu yang terjadi berulang dengan urutan yang sama"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "sequence",
+      "prompt": {
+        "en": "Which stage comes right after the egg?",
+        "id": "Tahap apa yang datang tepat setelah telur?"
+      },
+      "choices": {
+        "en": [
+          "caterpillar",
+          "chrysalis",
+          "butterfly"
+        ],
+        "id": [
+          "ulat",
+          "kepompong",
+          "kupu-kupu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What does 'hatch' mean?",
+        "id": "Apa arti 'menetas'?"
+      },
+      "choices": {
+        "en": [
+          "come out of an egg",
+          "fly away",
+          "eat a leaf"
+        ],
+        "id": [
+          "keluar dari telur",
+          "terbang pergi",
+          "makan daun"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why does the butterfly lay its egg on a leaf?",
+        "id": "Mengapa kupu-kupu bertelur di daun?"
+      },
+      "choices": {
+        "en": [
+          "so the new caterpillar has food right away",
+          "so the egg can dry its wings",
+          "because eggs grow into leaves"
+        ],
+        "id": [
+          "agar ulat yang baru langsung punya makanan",
+          "agar telur bisa mengeringkan sayap",
+          "karena telur tumbuh menjadi daun"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q4",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why does a new butterfly wait before flying?",
+        "id": "Mengapa kupu-kupu yang baru keluar menunggu sebelum terbang?"
+      },
+      "choices": {
+        "en": [
+          "its wings are soft and wet",
+          "it is hungry",
+          "it is too cold"
+        ],
+        "id": [
+          "sayapnya masih lembut dan basah",
+          "ia lapar",
+          "udaranya terlalu dingin"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q5",
+      "kind": "math",
+      "prompt": {
+        "en": "A butterfly's life cycle has 4 stages. How many stages are there in 2 full cycles?",
+        "id": "Daur hidup kupu-kupu punya 4 tahap. Berapa tahap dalam 2 daur lengkap?"
+      },
+      "choices": {
+        "en": [
+          "8 stages",
+          "6 stages",
+          "4 stages"
+        ],
+        "id": [
+          "8 tahap",
+          "6 tahap",
+          "4 tahap"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0,
+      "check": {
+        "expression": "4 + 4",
+        "result": "8"
+      }
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Animals have life cycles; butterflies go through complete metamorphosis.",
+        "id": "Hewan memiliki daur hidup; kupu-kupu mengalami metamorfosis sempurna."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "How is a frog's life cycle like a butterfly's?",
+      "id": "Apa kesamaan daur hidup katak dan kupu-kupu?"
+    },
+    {
+      "en": "Which stage do you find most surprising? Why?",
+      "id": "Tahap mana yang paling mengejutkan bagimu? Mengapa?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Fold a paper plate into four sections. Draw one stage in each section with an arrow to the next, then use it to explain the cycle to someone at home.",
+    "id": "Bagi piring kertas menjadi empat bagian. Gambar satu tahap di setiap bagian dengan panah ke tahap berikutnya, lalu gunakan untuk menjelaskan daur hidup kepada orang di rumah."
+  },
+  "factChecks": [
+    {
+      "claim": "A butterfly's life cycle has four stages: egg, caterpillar (larva), chrysalis (pupa), adult.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Caterpillars shed their skin several times as they grow.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A newly emerged butterfly waits for its wings to dry and harden before flying.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

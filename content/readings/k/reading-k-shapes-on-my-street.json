@@ -1,0 +1,248 @@
+{
+  "id": "reading-k-shapes-on-my-street",
+  "version": "1.0.0",
+  "level": "k",
+  "readingLevel": "emergent",
+  "genre": "nonfiction",
+  "mode": "shared",
+  "title": {
+    "en": "Shapes on my street",
+    "id": "Bentuk di jalanku"
+  },
+  "text": {
+    "en": [
+      "I look at my street. I can see shapes everywhere.",
+      "I see a circle. The wheel is a circle. A circle has no corners.",
+      "I see a square. The window is a square. A square has 4 sides that are the same.",
+      "I see a triangle. The roof is a triangle. A triangle has 3 sides.",
+      "I see a rectangle. The door is a rectangle. It is long and thin.",
+      "What shapes can you see on your street?"
+    ],
+    "id": [
+      "Aku melihat jalanku. Aku bisa melihat bentuk di mana-mana.",
+      "Aku melihat lingkaran. Roda itu lingkaran. Lingkaran tidak punya sudut.",
+      "Aku melihat persegi. Jendela itu persegi. Persegi punya 4 sisi yang sama panjang.",
+      "Aku melihat segitiga. Atap itu segitiga. Segitiga punya 3 sisi.",
+      "Aku melihat persegi panjang. Pintu itu persegi panjang. Bentuknya panjang dan ramping.",
+      "Bentuk apa yang bisa kamu lihat di jalanmu?"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Read 'I see a…' and pause so your child can read or say the repeated words.",
+      "id": "Baca 'Aku melihat…' lalu berhenti agar anak bisa membaca atau mengucapkan kata yang berulang."
+    },
+    {
+      "en": "Trace a circle in the air together. Ask: can you find a corner?",
+      "id": "Gambar lingkaran di udara bersama. Tanyakan: bisakah kamu menemukan sudut?"
+    },
+    {
+      "en": "Count the square's sides by touching each one: 1, 2, 3, 4.",
+      "id": "Hitung sisi persegi dengan menyentuh satu per satu: 1, 2, 3, 4."
+    },
+    {
+      "en": "Make a triangle with two hands and count 3 sides.",
+      "id": "Buat segitiga dengan dua tangan dan hitung 3 sisi."
+    },
+    {
+      "en": "Point to a real door and run a finger along its long side.",
+      "id": "Tunjuk pintu sungguhan dan telusuri sisi panjangnya dengan jari."
+    },
+    {
+      "en": "Let your child answer in their own words before you go outside.",
+      "id": "Biarkan anak menjawab dengan kata-katanya sendiri sebelum keluar rumah."
+    }
+  ],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a patterned text with the sight words 'I', 'see', 'a' and 'is'.",
+      "id": "Membaca teks berpola dengan kata 'aku', 'melihat', dan 'itu'."
+    },
+    {
+      "en": "Names four flat shapes and tells one feature of each.",
+      "id": "Menyebut empat bangun datar dan satu ciri dari masing-masing."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "corner",
+        "id": "sudut"
+      },
+      "meaning": {
+        "en": "the point where two sides meet",
+        "id": "titik tempat dua sisi bertemu"
+      }
+    },
+    {
+      "word": {
+        "en": "side",
+        "id": "sisi"
+      },
+      "meaning": {
+        "en": "one of the straight edges of a shape",
+        "id": "salah satu garis lurus pada bentuk"
+      }
+    },
+    {
+      "word": {
+        "en": "triangle",
+        "id": "segitiga"
+      },
+      "meaning": {
+        "en": "a shape with 3 sides and 3 corners",
+        "id": "bentuk dengan 3 sisi dan 3 sudut"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Which shape has no corners?",
+        "id": "Bentuk apa yang tidak punya sudut?"
+      },
+      "choices": {
+        "en": [
+          "a circle",
+          "a square",
+          "a triangle"
+        ],
+        "id": [
+          "lingkaran",
+          "persegi",
+          "segitiga"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "What shape is the roof?",
+        "id": "Atap itu berbentuk apa?"
+      },
+      "choices": {
+        "en": [
+          "a triangle",
+          "a circle",
+          "a rectangle"
+        ],
+        "id": [
+          "segitiga",
+          "lingkaran",
+          "persegi panjang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "A square and a triangle are side by side. How many sides do they have in all?",
+        "id": "Ada sebuah persegi dan sebuah segitiga. Berapa jumlah semua sisinya?"
+      },
+      "choices": {
+        "en": [
+          "7 sides",
+          "6 sides",
+          "4 sides"
+        ],
+        "id": [
+          "7 sisi",
+          "6 sisi",
+          "4 sisi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2,
+      "check": {
+        "expression": "4 + 3",
+        "result": "7"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why can a wheel roll easily?",
+        "id": "Mengapa roda bisa menggelinding dengan mudah?"
+      },
+      "choices": {
+        "en": [
+          "it is round with no corners to stop it",
+          "it is long and thin",
+          "it has 3 sides"
+        ],
+        "id": [
+          "bentuknya bulat tanpa sudut yang menghambat",
+          "bentuknya panjang dan ramping",
+          "punya 3 sisi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Flat shapes are named by their sides and corners.",
+        "id": "Bangun datar diberi nama berdasarkan sisi dan sudutnya."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which shape do you like best? Why?",
+      "id": "Bentuk mana yang paling kamu suka? Mengapa?"
+    },
+    {
+      "en": "Can you find a shape in this room that is not in the book?",
+      "id": "Bisakah kamu menemukan bentuk di ruangan ini yang tidak ada di buku?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Go on a shape walk. Make a simple chart with a circle, square, triangle and rectangle, and draw a tick each time you spot one.",
+    "id": "Jalan-jalan mencari bentuk. Buat tabel sederhana berisi lingkaran, persegi, segitiga, dan persegi panjang, lalu beri centang setiap kali menemukannya."
+  },
+  "factChecks": [
+    {
+      "claim": "A circle has no corners.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A square has 4 equal sides.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A triangle has 3 sides.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

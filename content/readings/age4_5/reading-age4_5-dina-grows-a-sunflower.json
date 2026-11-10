@@ -1,0 +1,271 @@
+{
+  "id": "reading-age4_5-dina-grows-a-sunflower",
+  "version": "1.0.0",
+  "level": "age4_5",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Dina grows a sunflower",
+    "id": "Dina menanam bunga matahari"
+  },
+  "text": {
+    "en": [
+      "Dina has a striped sunflower seed. She pushes it into a pot of soil, just a finger deep.",
+      "Every morning, Dina gives the pot a little drink of water. Not too much, not too little.",
+      "One day a tiny green shoot pokes up. 'It's awake!' Dina whispers.",
+      "Dina puts the pot by the sunny window. The shoot grows taller and gets more leaves.",
+      "Weeks later, the stem is taller than Dina. At the top, a big yellow flower opens and turns its face to the light.",
+      "When the flower dries, Dina finds lots of new striped seeds in the middle. 'Now I can plant more!'"
+    ],
+    "id": [
+      "Dina punya sebutir biji bunga matahari yang bergaris. Ia menekannya ke dalam pot berisi tanah, sedalam satu ruas jari.",
+      "Setiap pagi, Dina memberi pot itu sedikit air. Tidak terlalu banyak, tidak terlalu sedikit.",
+      "Suatu hari, tunas hijau kecil muncul. 'Dia bangun!' bisik Dina.",
+      "Dina menaruh pot di dekat jendela yang cerah. Tunasnya tumbuh makin tinggi dan daunnya bertambah.",
+      "Beberapa minggu kemudian, batangnya lebih tinggi dari Dina. Di puncaknya, bunga kuning besar mekar dan menghadap ke arah cahaya.",
+      "Saat bunganya kering, Dina menemukan banyak biji bergaris baru di tengahnya. 'Sekarang aku bisa menanam lagi!'"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Press one finger into your child's palm like planting a seed.",
+      "id": "Tekan satu jari ke telapak tangan anak seperti menanam biji."
+    },
+    {
+      "en": "Make a gentle 'pshhh' sound and pretend to pour from a watering can.",
+      "id": "Buat bunyi 'sssh' pelan dan pura-pura menuang dari gembor."
+    },
+    {
+      "en": "Curl up small with your child, then poke one finger up slowly.",
+      "id": "Meringkuk kecil bersama anak, lalu munculkan satu jari pelan-pelan."
+    },
+    {
+      "en": "Rise slowly from crouching to kneeling, spreading your hands as leaves.",
+      "id": "Bangkit pelan dari jongkok ke berlutut sambil membuka tangan seperti daun."
+    },
+    {
+      "en": "Stand tall, stretch up high and open your hands wide like petals.",
+      "id": "Berdiri tegak, regangkan tangan ke atas, dan buka tangan lebar seperti kelopak."
+    },
+    {
+      "en": "Pretend to pick seeds from your palm and count a few together.",
+      "id": "Pura-pura mengambil biji dari telapak tangan dan hitung beberapa bersama."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a seed going into a pot of soil",
+      "id": "Kartu 1: biji dimasukkan ke pot tanah"
+    },
+    {
+      "en": "Card 2: Dina watering the pot",
+      "id": "Kartu 2: Dina menyiram pot"
+    },
+    {
+      "en": "Card 3: a tiny green shoot",
+      "id": "Kartu 3: tunas hijau kecil"
+    },
+    {
+      "en": "Card 4: a leafy plant by a sunny window",
+      "id": "Kartu 4: tanaman berdaun di dekat jendela cerah"
+    },
+    {
+      "en": "Card 5: a tall sunflower in bloom",
+      "id": "Kartu 5: bunga matahari tinggi yang mekar"
+    },
+    {
+      "en": "Card 6: a dried flower head full of seeds",
+      "id": "Kartu 6: kepala bunga kering penuh biji"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Retells the life of a plant in order: seed, shoot, plant, flower, new seeds.",
+      "id": "Menceritakan kembali urutan hidup tanaman: biji, tunas, tanaman, bunga, biji baru."
+    },
+    {
+      "en": "Names what a plant needs to grow: soil, water and light.",
+      "id": "Menyebut kebutuhan tanaman untuk tumbuh: tanah, air, dan cahaya."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "seed",
+        "id": "biji"
+      },
+      "meaning": {
+        "en": "the small part a new plant grows from",
+        "id": "bagian kecil tempat tanaman baru tumbuh"
+      }
+    },
+    {
+      "word": {
+        "en": "shoot",
+        "id": "tunas"
+      },
+      "meaning": {
+        "en": "the first green part of a plant to come up",
+        "id": "bagian hijau pertama tanaman yang muncul"
+      }
+    },
+    {
+      "word": {
+        "en": "stem",
+        "id": "batang"
+      },
+      "meaning": {
+        "en": "the part of a plant that holds it up",
+        "id": "bagian tanaman yang menopangnya tegak"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What came up first from the soil?",
+        "id": "Apa yang pertama muncul dari tanah?"
+      },
+      "choices": {
+        "en": [
+          "a tiny green shoot",
+          "a big yellow flower",
+          "new striped seeds"
+        ],
+        "id": [
+          "tunas hijau kecil",
+          "bunga kuning besar",
+          "biji bergaris baru"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "What did Dina give her plant every morning?",
+        "id": "Apa yang Dina berikan kepada tanamannya setiap pagi?"
+      },
+      "choices": {
+        "en": [
+          "a little water",
+          "a lot of sugar",
+          "nothing at all"
+        ],
+        "id": [
+          "sedikit air",
+          "banyak gula",
+          "tidak ada apa-apa"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Dina move the pot to the window?",
+        "id": "Mengapa Dina memindahkan pot ke dekat jendela?"
+      },
+      "choices": {
+        "en": [
+          "so the plant could get light from the sun",
+          "so the plant could see outside",
+          "to keep it away from water"
+        ],
+        "id": [
+          "agar tanaman mendapat cahaya matahari",
+          "agar tanaman bisa melihat ke luar",
+          "agar jauh dari air"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q4",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Dina find in the dried flower?",
+        "id": "Apa yang Dina temukan di bunga yang kering?"
+      },
+      "choices": {
+        "en": [
+          "new seeds",
+          "a snail",
+          "water"
+        ],
+        "id": [
+          "biji baru",
+          "siput",
+          "air"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Plants grow from seeds and need soil, water and light; a flower can make new seeds.",
+        "id": "Tanaman tumbuh dari biji dan butuh tanah, air, dan cahaya; bunga dapat menghasilkan biji baru."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What would happen if Dina forgot to water her plant?",
+      "id": "Apa yang terjadi jika Dina lupa menyiram tanamannya?"
+    },
+    {
+      "en": "What would you like to grow?",
+      "id": "Kamu ingin menanam apa?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Plant a large seed (such as a sunflower or bean seed from a garden pack) in a cup of soil with your child. The adult handles the seed packet; water it together each morning and draw how it changes.",
+    "id": "Tanam biji yang besar (misalnya biji bunga matahari atau kacang dari paket benih) di gelas berisi tanah bersama anak. Orang dewasa memegang paket benih; siram bersama setiap pagi dan gambar perubahannya."
+  },
+  "factChecks": [
+    {
+      "claim": "Plants need water and light to grow.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Sunflowers can grow taller than a young child and make many seeds in the flower head.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "An adult keeps the seed packet; seeds are planted straight away and never eaten. Wash hands after handling soil.",
+      "id": "Orang dewasa menyimpan paket benih; biji langsung ditanam dan tidak dimakan. Cuci tangan setelah memegang tanah."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

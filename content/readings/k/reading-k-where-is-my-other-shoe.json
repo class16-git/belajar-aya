@@ -1,0 +1,199 @@
+{
+  "id": "reading-k-where-is-my-other-shoe",
+  "version": "1.0.0",
+  "level": "k",
+  "readingLevel": "emergent",
+  "genre": "fiction",
+  "mode": "shared",
+  "title": {
+    "en": "Where is my other shoe?",
+    "id": "Di mana sepatuku yang satu lagi?"
+  },
+  "text": {
+    "en": [
+      "Bima has one red shoe on his foot. Where is the other red shoe?",
+      "Is it under the bed? No. Bima sees a sock and a toy cat.",
+      "Is it in the box? No. Bima sees his blocks and a hat.",
+      "Is it by the door? No. Bima sees Mum's big boots.",
+      "Then Bima hears a sound. Sniff, sniff. Puppy runs in. What is in his mouth?",
+      "It is the red shoe! 'Silly Puppy!' laughs Bima. Now he has two red shoes."
+    ],
+    "id": [
+      "Bima memakai satu sepatu merah di kakinya. Di mana sepatu merah yang satu lagi?",
+      "Apakah di bawah tempat tidur? Tidak. Bima melihat kaus kaki dan kucing mainan.",
+      "Apakah di dalam kotak? Tidak. Bima melihat balok dan topinya.",
+      "Apakah di dekat pintu? Tidak. Bima melihat sepatu bot Ibu yang besar.",
+      "Lalu Bima mendengar suara. Endus, endus. Anak anjing berlari masuk. Apa yang ada di mulutnya?",
+      "Itu sepatu merahnya! 'Anak anjing nakal!' Bima tertawa. Sekarang ia punya dua sepatu merah."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads and predicts with a repeated question pattern ('Is it…? No.').",
+      "id": "Membaca dan menebak dengan pola pertanyaan berulang ('Apakah di…? Tidak.')."
+    },
+    {
+      "en": "Uses position words: under, in, by.",
+      "id": "Menggunakan kata posisi: di bawah, di dalam, di dekat."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "under",
+        "id": "di bawah"
+      },
+      "meaning": {
+        "en": "lower than something, beneath it",
+        "id": "lebih rendah dari sesuatu"
+      }
+    },
+    {
+      "word": {
+        "en": "boots",
+        "id": "sepatu bot"
+      },
+      "meaning": {
+        "en": "tall shoes that cover your ankles",
+        "id": "sepatu tinggi yang menutupi pergelangan kaki"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What colour is Bima's shoe?",
+        "id": "Apa warna sepatu Bima?"
+      },
+      "choices": {
+        "en": [
+          "red",
+          "blue",
+          "yellow"
+        ],
+        "id": [
+          "merah",
+          "biru",
+          "kuning"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "Where did Bima look first?",
+        "id": "Di mana Bima mencari pertama kali?"
+      },
+      "choices": {
+        "en": [
+          "under the bed",
+          "in the box",
+          "by the door"
+        ],
+        "id": [
+          "di bawah tempat tidur",
+          "di dalam kotak",
+          "di dekat pintu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Who took the shoe away?",
+        "id": "Siapa yang mengambil sepatu itu?"
+      },
+      "choices": {
+        "en": [
+          "the puppy, to play with it",
+          "Mum, to wash it",
+          "the toy cat"
+        ],
+        "id": [
+          "anak anjing, untuk bermain",
+          "Ibu, untuk dicuci",
+          "kucing mainan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "How many places did Bima look before Puppy came in?",
+        "id": "Di berapa tempat Bima mencari sebelum anak anjing datang?"
+      },
+      "choices": {
+        "en": [
+          "3 places",
+          "2 places",
+          "4 places"
+        ],
+        "id": [
+          "3 tempat",
+          "2 tempat",
+          "4 tempat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3,
+      "check": {
+        "expression": "1 + 1 + 1",
+        "result": "3"
+      }
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "practical_life",
+      "connection": {
+        "en": "Keeping shoes together by the door helps us find them quickly.",
+        "id": "Menaruh sepasang sepatu bersama di dekat pintu membantu kita cepat menemukannya."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Where do you keep your shoes?",
+      "id": "Di mana kamu menyimpan sepatumu?"
+    },
+    {
+      "en": "What would you do if you lost something?",
+      "id": "Apa yang akan kamu lakukan jika kehilangan sesuatu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Hide a slipper somewhere in the room. Your child asks 'Is it under…? Is it in…?' and you answer yes or no until it is found. Swap roles.",
+    "id": "Sembunyikan sandal di ruangan. Anak bertanya 'Apakah di bawah…? Apakah di dalam…?' dan kamu menjawab ya atau tidak sampai ketemu. Lalu bertukar peran."
+  },
+  "factChecks": [],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "id": "unit-g2-math-multiplication-equal-groups",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "math",
+  "strand": "multiplication_division",
+  "title": {
+    "en": "Multiplication as equal groups",
+    "id": "Perkalian sebagai kelompok sama banyak"
+  },
+  "prerequisites": [
+    "unit-g1-math-make-ten-addition"
+  ],
+  "objective": {
+    "en": "Understand multiplication as equal groups and arrays, write a multiplication sentence for a picture or story, and see that 3 × 4 and 4 × 3 give the same total.",
+    "id": "Memahami perkalian sebagai kelompok sama banyak dan susunan berjajar, menulis kalimat perkalian untuk gambar atau cerita, dan melihat bahwa 3 × 4 dan 4 × 3 hasilnya sama."
+  },
+  "rationale": {
+    "en": "Multiplication is not just faster addition: it describes a number of groups and the size of each group. Seeing groups and arrays first prevents the common error of adding the two numbers and prepares for division and area.",
+    "id": "Perkalian bukan sekadar penjumlahan cepat: ia menggambarkan banyak kelompok dan besar setiap kelompok. Melihat kelompok dan susunan berjajar lebih dulu mencegah kesalahan menjumlahkan dua bilangan serta menyiapkan pembagian dan luas."
+  },
+  "outcomes": [
+    {
+      "en": "Makes equal groups, tells how many groups and how many in each, and writes the multiplication.",
+      "id": "Membuat kelompok sama banyak, menyebut banyak kelompok dan isi setiap kelompok, lalu menulis perkaliannya."
+    },
+    {
+      "en": "Uses arrays to show that the order of the factors does not change the product.",
+      "id": "Memakai susunan berjajar untuk menunjukkan bahwa urutan faktor tidak mengubah hasil kali."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show 4 groups of 3 with real objects and write 4 × 3 = 12.",
+      "id": "Aku bisa menunjukkan 4 kelompok berisi 3 dengan benda nyata dan menulis 4 × 3 = 12."
+    },
+    {
+      "en": "I can tell whether groups are equal or not.",
+      "id": "Aku bisa mengatakan apakah kelompoknya sama banyak atau tidak."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use plates or cups as groups; ask 'How many plates? How many on each plate? How many altogether?'",
+      "id": "Pakai piring atau gelas sebagai kelompok; tanya 'Berapa piring? Berapa di setiap piring? Berapa semuanya?'"
+    },
+    {
+      "en": "Read 4 × 3 as '4 groups of 3' (in Indonesian, '4 kali 3' means 3 + 3 + 3 + 3).",
+      "id": "Baca 4 × 3 sebagai '4 kelompok berisi 3' (dalam kebiasaan Indonesia, '4 kali 3' berarti 3 + 3 + 3 + 3)."
+    },
+    {
+      "en": "Include one example of unequal groups so the child sees when multiplication does not fit.",
+      "id": "Sertakan satu contoh kelompok tidak sama banyak supaya anak melihat kapan perkalian tidak cocok."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Count the groups. Count how many are in one group. Write groups × in each group.",
+      "id": "Hitung kelompoknya. Hitung isi satu kelompok. Tulis banyak kelompok × isi setiap kelompok."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Put 3 kue on each of 4 plates; count by threes: 3, 6, 9, 12.",
+        "id": "Taruh 3 kue di setiap 4 piring; hitung lompat tiga: 3, 6, 9, 12."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw an array of bottles in a crate: 3 rows of 6. Circle each row to see 3 groups of 6, then circle each column to see 6 groups of 3.",
+        "id": "Gambar susunan botol dalam krat: 3 baris berisi 6. Lingkari setiap baris untuk melihat 3 kelompok berisi 6, lalu lingkari setiap kolom untuk melihat 6 kelompok berisi 3."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write 3 + 3 + 3 + 3 = 12 and 4 × 3 = 12; then 3 × 6 = 18 and 6 × 3 = 18.",
+        "id": "Tulis 3 + 3 + 3 + 3 = 12 dan 4 × 3 = 12; lalu 3 × 6 = 18 dan 6 × 3 = 18."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Plates or cups (up to 6) and 30 small snacks or large blocks",
+      "id": "Piring atau gelas (sampai 6) dan 30 camilan atau balok besar"
+    },
+    {
+      "en": "Squared paper for drawing arrays",
+      "id": "Kertas berpetak untuk menggambar susunan berjajar"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Count out the blocks and set out the plates; draw a 3 by 6 grid on squared paper.",
+      "id": "Hitung baloknya dan siapkan piringnya; gambar petak 3 kali 6 di kertas berpetak."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Equal groups: 5 plates with 2 kue each. Skip count 2, 4, 6, 8, 10. 5 × 2 = 10.",
+      "id": "Kelompok sama banyak: 5 piring berisi masing-masing 2 kue. Hitung lompat 2, 4, 6, 8, 10. 5 × 2 = 10."
+    },
+    {
+      "en": "Not equal: plates with 2, 5 and 1 kue cannot be written as one multiplication; we must add 2 + 5 + 1 = 8.",
+      "id": "Tidak sama banyak: piring berisi 2, 5, dan 1 kue tidak bisa ditulis sebagai satu perkalian; kita harus menjumlah 2 + 5 + 1 = 8."
+    },
+    {
+      "en": "Story: a becak carries 2 passengers. 7 becak carry 7 × 2 = 14 passengers.",
+      "id": "Cerita: satu becak membawa 2 penumpang. 7 becak membawa 7 × 2 = 14 penumpang."
+    },
+    {
+      "en": "Turn the array: 4 rows of 5 chairs and 5 rows of 4 chairs both have 20 chairs, so 4 × 5 = 5 × 4.",
+      "id": "Putar susunannya: 4 baris berisi 5 kursi dan 5 baris berisi 4 kursi sama-sama 20 kursi, jadi 4 × 5 = 5 × 4."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Look for arrays at home: egg trays, windows, tiles. Write the multiplication for each.",
+      "id": "Cari susunan berjajar di rumah: rak telur, jendela, ubin. Tulis perkalian untuk masing-masing."
+    },
+    {
+      "en": "Parent says a multiplication such as 3 × 5; the child builds it with plates and blocks and then turns it into 5 × 3.",
+      "id": "Orang tua menyebut perkalian seperti 3 × 5; anak menyusunnya dengan piring dan balok lalu mengubahnya menjadi 5 × 3."
+    },
+    {
+      "en": "Write a story for 6 × 2 and draw it.",
+      "id": "Tulis cerita untuk 6 × 2 dan gambar."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "There are 4 plates with 3 kue on each plate. How many kue are there?",
+        "id": "Ada 4 piring dengan 3 kue di setiap piring. Berapa kue semuanya?"
+      },
+      "choices": {
+        "en": [
+          "12",
+          "7",
+          "43"
+        ],
+        "id": [
+          "12",
+          "7",
+          "43"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 groups of 3: 3, 6, 9, 12. 4 × 3 = 12.",
+        "id": "4 kelompok berisi 3: 3, 6, 9, 12. 4 × 3 = 12."
+      },
+      "check": {
+        "expression": "4 * 3",
+        "result": "12"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_GROUPS_AND_SIZE",
+        "2": "WRITES_SIDE_BY_SIDE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "What is 5 + 5 + 5, and which multiplication matches it?",
+        "id": "Berapa 5 + 5 + 5, dan perkalian mana yang cocok?"
+      },
+      "choices": {
+        "en": [
+          "15, which is 3 groups of 5",
+          "8, which is 3 + 5",
+          "25, which is 5 groups of 5"
+        ],
+        "id": [
+          "15, yaitu 3 kelompok berisi 5",
+          "8, yaitu 3 + 5",
+          "25, yaitu 5 kelompok berisi 5"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "There are three 5s, so 3 groups of 5 = 15.",
+        "id": "Ada tiga angka 5, jadi 3 kelompok berisi 5 = 15."
+      },
+      "check": {
+        "expression": "5 + 5 + 5",
+        "result": "15"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_GROUPS_AND_SIZE",
+        "2": "MISCOUNTS_GROUPS"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which of these can be written as one multiplication?",
+        "id": "Mana yang bisa ditulis sebagai satu perkalian?"
+      },
+      "choices": {
+        "en": [
+          "Three bags with four oranges in each bag",
+          "One bag with four oranges and one with three",
+          "Bags with two, five and one orange"
+        ],
+        "id": [
+          "Tiga kantong berisi masing-masing empat jeruk",
+          "Satu kantong berisi empat jeruk dan satu berisi tiga",
+          "Kantong berisi dua, lima, dan satu jeruk"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Multiplication needs equal groups; only the three bags of four are equal.",
+        "id": "Perkalian memerlukan kelompok sama banyak; hanya tiga kantong berisi empat yang sama."
+      },
+      "distractorMisconceptions": {
+        "1": "UNEQUAL_GROUPS",
+        "2": "UNEQUAL_GROUPS"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A becak carries 2 passengers. How many passengers can 7 becak carry?",
+        "id": "Satu becak membawa 2 penumpang. Berapa penumpang yang bisa dibawa 7 becak?"
+      },
+      "choices": {
+        "en": [
+          "14",
+          "9",
+          "72"
+        ],
+        "id": [
+          "14",
+          "9",
+          "72"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "7 groups of 2: 2, 4, 6, 8, 10, 12, 14.",
+        "id": "7 kelompok berisi 2: 2, 4, 6, 8, 10, 12, 14."
+      },
+      "check": {
+        "expression": "7 * 2",
+        "result": "14"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_GROUPS_AND_SIZE",
+        "2": "WRITES_SIDE_BY_SIDE"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A crate has 3 rows of 6 bottles. How many bottles are in the crate?",
+        "id": "Sebuah krat berisi 3 baris dengan 6 botol per baris. Berapa botol dalam krat?"
+      },
+      "choices": {
+        "en": [
+          "18",
+          "9",
+          "36"
+        ],
+        "id": [
+          "18",
+          "9",
+          "36"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "3 rows of 6: 6, 12, 18.",
+        "id": "3 baris berisi 6: 6, 12, 18."
+      },
+      "check": {
+        "expression": "3 * 6",
+        "result": "18"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_GROUPS_AND_SIZE",
+        "2": "MISCOUNTS_GROUPS"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "4 × 5 = 5 × ?",
+        "id": "4 × 5 = 5 × ?"
+      },
+      "choices": {
+        "en": [
+          "4",
+          "5",
+          "20"
+        ],
+        "id": [
+          "4",
+          "5",
+          "20"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Turning an array of 4 rows of 5 gives 5 rows of 4: both are 20.",
+        "id": "Memutar susunan 4 baris berisi 5 menjadi 5 baris berisi 4: keduanya 20."
+      },
+      "check": {
+        "expression": "4 * 5 / 5",
+        "result": "4"
+      },
+      "distractorMisconceptions": {
+        "1": "COPIES_FACTOR",
+        "2": "GIVES_PRODUCT"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_GROUPS_AND_SIZE",
+      "description": {
+        "en": "Adds the number of groups and the group size.",
+        "id": "Menjumlahkan banyak kelompok dan isi kelompok."
+      },
+      "remediation": {
+        "en": "Build the groups on plates and skip count the objects, not the plates.",
+        "id": "Susun kelompok di piring dan hitung lompat bendanya, bukan piringnya."
+      }
+    },
+    {
+      "code": "WRITES_SIDE_BY_SIDE",
+      "description": {
+        "en": "Writes the two numbers next to each other as the answer.",
+        "id": "Menulis kedua bilangan bersebelahan sebagai jawaban."
+      },
+      "remediation": {
+        "en": "Count all the objects on the plates one by one, then write that count.",
+        "id": "Hitung semua benda di piring satu per satu, lalu tulis hasil hitungannya."
+      }
+    },
+    {
+      "code": "MISCOUNTS_GROUPS",
+      "description": {
+        "en": "Uses the wrong number of groups, often the group size twice.",
+        "id": "Memakai banyak kelompok yang salah, sering kali isi kelompok dua kali."
+      },
+      "remediation": {
+        "en": "Touch and count each group before writing the multiplication.",
+        "id": "Sentuh dan hitung setiap kelompok sebelum menulis perkalian."
+      }
+    },
+    {
+      "code": "UNEQUAL_GROUPS",
+      "description": {
+        "en": "Writes a multiplication for groups that are not the same size.",
+        "id": "Menulis perkalian untuk kelompok yang tidak sama besar."
+      },
+      "remediation": {
+        "en": "Line the groups up in rows: if the rows are not the same length, it is not an array.",
+        "id": "Jajarkan kelompok dalam baris: jika panjang barisnya tidak sama, itu bukan susunan berjajar."
+      }
+    },
+    {
+      "code": "COPIES_FACTOR",
+      "description": {
+        "en": "Repeats the factor already shown instead of turning the array.",
+        "id": "Mengulang faktor yang sudah tertulis, bukan memutar susunannya."
+      },
+      "remediation": {
+        "en": "Draw 4 rows of 5 on squared paper and rotate the paper; count the new rows.",
+        "id": "Gambar 4 baris berisi 5 di kertas berpetak lalu putar kertasnya; hitung baris yang baru."
+      }
+    },
+    {
+      "code": "GIVES_PRODUCT",
+      "description": {
+        "en": "Writes the product where a factor is missing.",
+        "id": "Menulis hasil kali di tempat faktor yang hilang."
+      },
+      "remediation": {
+        "en": "Read the sentence aloud as groups: '5 groups of how many make 20?'",
+        "id": "Baca kalimatnya sebagai kelompok: '5 kelompok berisi berapa menjadi 20?'"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a skip-counting song for 2s, 5s and 10s and use it to find 6 × 5 and 8 × 10.",
+      "id": "Buat lagu hitung lompat 2, 5, dan 10 lalu pakai untuk mencari 6 × 5 dan 8 × 10."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Plates give a clear boundary for each group; a child who finds writing hard can show answers with blocks.",
+      "id": "Piring memberi batas jelas untuk setiap kelompok; anak yang sulit menulis bisa menunjukkan jawaban dengan balok."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": true,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Check snacks for allergies before using them; use large blocks if a younger sibling is nearby.",
+        "id": "Periksa alergi sebelum memakai camilan; pakai balok besar jika ada adik di dekatnya."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child writes the correct multiplication for four pictures or stories, rejects one set of unequal groups, and shows one turned array, on two different days.",
+      "id": "Dikuasai jika anak menulis perkalian yang benar untuk empat gambar atau cerita, menolak satu kumpulan kelompok tidak sama banyak, dan menunjukkan satu susunan yang diputar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

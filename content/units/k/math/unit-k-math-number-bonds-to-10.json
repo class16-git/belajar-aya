@@ -1,0 +1,430 @@
+{
+  "id": "unit-k-math-number-bonds-to-10",
+  "version": "1.0.0",
+  "level": "k",
+  "framework": "math",
+  "strand": "addition_subtraction",
+  "title": {
+    "en": "Number bonds to 10 with stories",
+    "id": "Ikatan bilangan sampai 10 dengan cerita"
+  },
+  "prerequisites": [
+    "unit-k-math-compare-numbers-to-20"
+  ],
+  "objective": {
+    "en": "Split numbers up to 10 into two parts in every possible way, record them as number bonds, and tell part-whole stories that match.",
+    "id": "Memecah bilangan sampai 10 menjadi dua bagian dengan semua cara, mencatatnya sebagai ikatan bilangan, dan menceritakan kisah bagian-keseluruhan yang sesuai."
+  },
+  "rationale": {
+    "en": "Knowing that 7 is 3 and 4, or 5 and 2, is the core of mental addition and subtraction in the Singapore approach. The part-whole picture later becomes the bar model.",
+    "id": "Mengetahui bahwa 7 adalah 3 dan 4, atau 5 dan 2, adalah inti penjumlahan dan pengurangan mental dalam pendekatan Singapura. Gambar bagian-keseluruhan nanti berkembang menjadi model batang."
+  },
+  "outcomes": [
+    {
+      "en": "Finds all the two-part splits of a number up to 10 with objects.",
+      "id": "Menemukan semua cara memecah bilangan sampai 10 menjadi dua bagian dengan benda."
+    },
+    {
+      "en": "Finds a missing part when the whole and one part are known.",
+      "id": "Menemukan bagian yang hilang jika keseluruhan dan satu bagian diketahui."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show 8 as 5 and 3 on a number bond.",
+      "id": "Aku bisa menunjukkan 8 sebagai 5 dan 3 pada ikatan bilangan."
+    },
+    {
+      "en": "I can tell a story where 10 is split into two parts.",
+      "id": "Aku bisa bercerita tentang 10 yang dipecah menjadi dua bagian."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Draw a large number bond on paper: one big circle (the whole) joined to two smaller circles (the parts).",
+      "id": "Gambar ikatan bilangan besar di kertas: satu lingkaran besar (keseluruhan) tersambung ke dua lingkaran kecil (bagian)."
+    },
+    {
+      "en": "Tell stories from daily life: 'There are 7 kue on the plate; 3 are pandan and the rest are chocolate.'",
+      "id": "Ceritakan kisah sehari-hari: 'Ada 7 kue di piring; 3 rasa pandan dan sisanya cokelat.'"
+    },
+    {
+      "en": "Move objects between the part circles slowly and say each new bond aloud, so the child sees a pattern.",
+      "id": "Pindahkan benda antar lingkaran bagian pelan-pelan dan ucapkan setiap ikatan baru, supaya anak melihat polanya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Put all the toys in the big circle. Move some into each small circle. Say: 7 is 4 and 3.",
+      "id": "Taruh semua mainan di lingkaran besar. Pindahkan sebagian ke setiap lingkaran kecil. Ucapkan: 7 adalah 4 dan 3."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Put 7 toy cars in the whole circle, then move them into two part circles in different ways: 7 and 0, 6 and 1, 5 and 2, 4 and 3.",
+        "id": "Taruh 7 mobil mainan di lingkaran keseluruhan, lalu pindahkan ke dua lingkaran bagian dengan cara berbeda: 7 dan 0, 6 dan 1, 5 dan 2, 4 dan 3."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw 10 fish in a pond and colour some orange and the rest grey; write the bond 10 = 6 and 4 under the picture.",
+        "id": "Gambar 10 ikan di kolam dan warnai sebagian oranye dan sisanya abu-abu; tulis ikatan 10 = 6 dan 4 di bawah gambar."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write bonds with numbers only: whole 9, parts 4 and ?. Then write 4 + 5 = 9 and 9 - 4 = 5.",
+        "id": "Tulis ikatan dengan bilangan saja: keseluruhan 9, bagian 4 dan ?. Lalu tulis 4 + 5 = 9 dan 9 - 4 = 5."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "10 toy cars or 10 large blocks",
+      "id": "10 mobil mainan atau 10 balok besar"
+    },
+    {
+      "en": "A sheet of paper with a large number bond drawn on it",
+      "id": "Selembar kertas bergambar ikatan bilangan besar"
+    },
+    {
+      "en": "Two plates and a small towel to hide a part",
+      "id": "Dua piring dan handuk kecil untuk menyembunyikan satu bagian"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw the number bond big enough for the toys to fit inside each circle.",
+      "id": "Gambar ikatan bilangan cukup besar agar mainan muat di dalam setiap lingkaran."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "All the ways for 6: move cars one at a time from the left part to the right: 6 and 0, 5 and 1, 4 and 2, 3 and 3, 2 and 4, 1 and 5, 0 and 6. The whole stays 6.",
+      "id": "Semua cara untuk 6: pindahkan mobil satu per satu dari bagian kiri ke kanan: 6 dan 0, 5 dan 1, 4 dan 2, 3 dan 3, 2 dan 4, 1 dan 5, 0 dan 6. Keseluruhannya tetap 6."
+    },
+    {
+      "en": "Hidden part story: 'Ibu put 8 rambutan on two plates. I can see 5. How many are under the towel?' Count on from 5 to 8: 6, 7, 8, so 3 are hidden.",
+      "id": "Cerita bagian tersembunyi: 'Ibu menaruh 8 rambutan di dua piring. Aku bisa melihat 5. Berapa yang di bawah handuk?' Bilang lanjut dari 5 ke 8: 6, 7, 8, jadi 3 tersembunyi."
+    },
+    {
+      "en": "Partners of ten with fingers: show 10 fingers and fold down 3; 7 stay up, so 10 is 3 and 7.",
+      "id": "Pasangan sepuluh dengan jari: tunjukkan 10 jari dan lipat 3; 7 tetap berdiri, jadi 10 adalah 3 dan 7."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Shake and spill: put 10 blocks in a cup, tip them so some land on the plate and some off it, and record the bond each time.",
+      "id": "Kocok dan tumpahkan: masukkan 10 balok ke gelas, tuang sehingga sebagian jatuh di piring dan sebagian di luar, lalu catat ikatannya setiap kali."
+    },
+    {
+      "en": "Tell your own number bond story about 9 using people in the family.",
+      "id": "Ceritakan kisah ikatan bilangan tentang 9 dengan anggota keluarga."
+    },
+    {
+      "en": "Fill in five bonds where one part is missing, then check with objects.",
+      "id": "Lengkapi lima ikatan yang satu bagiannya hilang, lalu periksa dengan benda."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "The whole is 10. One part is 6. What is the other part?",
+        "id": "Keseluruhannya 10. Satu bagian 6. Berapa bagian yang lain?"
+      },
+      "choices": {
+        "en": [
+          "4",
+          "16",
+          "6"
+        ],
+        "id": [
+          "4",
+          "16",
+          "6"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6 and 4 make 10, so the missing part is 4. 10 - 6 = 4.",
+        "id": "6 dan 4 menjadi 10, jadi bagian yang hilang adalah 4. 10 - 6 = 4."
+      },
+      "check": {
+        "expression": "10 - 6",
+        "result": "4"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_WHOLE_AND_PART",
+        "2": "COPIES_GIVEN_PART"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Ibu makes 8 kue. 3 are pandan and the rest are chocolate. How many are chocolate?",
+        "id": "Ibu membuat 8 kue. 3 rasa pandan dan sisanya cokelat. Berapa kue cokelat?"
+      },
+      "choices": {
+        "en": [
+          "5",
+          "11",
+          "3"
+        ],
+        "id": [
+          "5",
+          "11",
+          "3"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The whole is 8 and one part is 3. 3 and 5 make 8, so 5 are chocolate.",
+        "id": "Keseluruhannya 8 dan satu bagian 3. 3 dan 5 menjadi 8, jadi 5 kue cokelat."
+      },
+      "check": {
+        "expression": "8 - 3",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_WHOLE_AND_PART",
+        "2": "COPIES_GIVEN_PART"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which pair of parts makes the whole 9?",
+        "id": "Pasangan bagian mana yang menjadi keseluruhan 9?"
+      },
+      "choices": {
+        "en": [
+          "4 and 5",
+          "4 and 6",
+          "3 and 5"
+        ],
+        "id": [
+          "4 dan 5",
+          "4 dan 6",
+          "3 dan 5"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 and 5 make 9. 4 and 6 make 10, and 3 and 5 make 8.",
+        "id": "4 dan 5 menjadi 9. 4 dan 6 menjadi 10, dan 3 dan 5 menjadi 8."
+      },
+      "check": {
+        "expression": "9 - 5",
+        "result": "4"
+      },
+      "distractorMisconceptions": {
+        "1": "OFF_BY_ONE_BOND",
+        "2": "OFF_BY_ONE_BOND"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "7 birds sit on a branch. All 7 stay and none fly away. The parts are 7 and how many?",
+        "id": "7 burung hinggap di dahan. Ketujuhnya tetap dan tidak ada yang terbang. Bagiannya 7 dan berapa?"
+      },
+      "choices": {
+        "en": [
+          "0",
+          "7",
+          "1"
+        ],
+        "id": [
+          "0",
+          "7",
+          "1"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "No birds flew away, so one part is zero: 7 and 0 make 7.",
+        "id": "Tidak ada burung yang terbang, jadi satu bagiannya nol: 7 dan 0 menjadi 7."
+      },
+      "check": {
+        "expression": "7 - 7",
+        "result": "0"
+      },
+      "distractorMisconceptions": {
+        "1": "COPIES_GIVEN_PART",
+        "2": "ZERO_NOT_A_PART"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "The parts are 2 and 6. What is the whole?",
+        "id": "Bagiannya 2 dan 6. Berapa keseluruhannya?"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "4",
+          "26"
+        ],
+        "id": [
+          "8",
+          "4",
+          "26"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Put both parts together: 2 + 6 = 8.",
+        "id": "Gabungkan kedua bagian: 2 + 6 = 8."
+      },
+      "check": {
+        "expression": "2 + 6",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_PARTS",
+        "2": "WRITES_PARTS_SIDE_BY_SIDE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_WHOLE_AND_PART",
+      "description": {
+        "en": "Adds the whole and the known part instead of finding the missing part.",
+        "id": "Menjumlahkan keseluruhan dan bagian yang diketahui, bukan mencari bagian yang hilang."
+      },
+      "remediation": {
+        "en": "Put the whole number of objects in the big circle first, then move the known part out; count what is left.",
+        "id": "Taruh semua benda di lingkaran besar dulu, lalu keluarkan bagian yang diketahui; hitung sisanya."
+      }
+    },
+    {
+      "code": "COPIES_GIVEN_PART",
+      "description": {
+        "en": "Repeats the number already given as the answer.",
+        "id": "Mengulang bilangan yang sudah diberikan sebagai jawaban."
+      },
+      "remediation": {
+        "en": "Cover the known part with a towel and ask the child to count only the objects still visible.",
+        "id": "Tutup bagian yang diketahui dengan handuk dan minta anak menghitung hanya benda yang masih terlihat."
+      }
+    },
+    {
+      "code": "OFF_BY_ONE_BOND",
+      "description": {
+        "en": "Chooses a pair that makes one more or one less than the whole.",
+        "id": "Memilih pasangan yang hasilnya satu lebih atau satu kurang dari keseluruhan."
+      },
+      "remediation": {
+        "en": "Build each pair with blocks and stand it next to a tower of the whole to check the height.",
+        "id": "Susun setiap pasangan dengan balok dan dirikan di samping menara keseluruhan untuk memeriksa tingginya."
+      }
+    },
+    {
+      "code": "ZERO_NOT_A_PART",
+      "description": {
+        "en": "Does not accept zero as one of the parts.",
+        "id": "Tidak menerima nol sebagai salah satu bagian."
+      },
+      "remediation": {
+        "en": "Put all the objects in one part circle and point to the empty one: zero objects is still a part.",
+        "id": "Taruh semua benda di satu lingkaran bagian dan tunjuk yang kosong: nol benda tetap sebuah bagian."
+      }
+    },
+    {
+      "code": "SUBTRACTS_PARTS",
+      "description": {
+        "en": "Takes one part from the other when asked for the whole.",
+        "id": "Mengurangkan satu bagian dari yang lain padahal ditanya keseluruhannya."
+      },
+      "remediation": {
+        "en": "Slide both part groups into the big circle and count them all together.",
+        "id": "Geser kedua kelompok bagian ke lingkaran besar dan hitung semuanya bersama."
+      }
+    },
+    {
+      "code": "WRITES_PARTS_SIDE_BY_SIDE",
+      "description": {
+        "en": "Writes the two parts next to each other, such as 26 for 2 and 6.",
+        "id": "Menulis dua bagian bersebelahan, misalnya 26 untuk 2 dan 6."
+      },
+      "remediation": {
+        "en": "Count the combined objects aloud and write only the final count.",
+        "id": "Hitung gabungan bendanya dengan suara keras dan tulis hanya hasil hitungan terakhir."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a 'ways to make 10' wall chart and add a new picture each day, such as 10 fingers, 10 toes or 10 crackers.",
+      "id": "Buat bagan dinding 'cara membuat 10' dan tambahkan gambar baru setiap hari, misalnya 10 jari tangan, 10 jari kaki, atau 10 kerupuk."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use objects that do not roll; children with fine-motor difficulties can push objects with the whole hand rather than pick them up.",
+      "id": "Pakai benda yang tidak menggelinding; anak dengan kesulitan motorik halus bisa mendorong benda dengan seluruh tangan daripada mengambilnya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Toy cars and blocks should be large; peel rambutan for the story only if you will eat them together, and remove the seed.",
+        "id": "Mobil mainan dan balok sebaiknya besar; kupas rambutan untuk cerita hanya jika akan dimakan bersama, dan buang bijinya."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      2,
+      5,
+      14
+    ],
+    "masteryRule": {
+      "en": "Secure when the child lists all splits of one number up to 10 and finds three missing parts without objects, on two different days.",
+      "id": "Dikuasai jika anak menyebut semua pecahan satu bilangan sampai 10 dan menemukan tiga bagian yang hilang tanpa benda, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

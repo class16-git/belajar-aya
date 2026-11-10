@@ -1,0 +1,446 @@
+{
+  "id": "unit-g1-math-make-ten-addition",
+  "version": "1.0.0",
+  "level": "g1",
+  "framework": "math",
+  "strand": "addition_subtraction",
+  "title": {
+    "en": "Make ten to add within 20",
+    "id": "Membuat sepuluh untuk menjumlah sampai 20"
+  },
+  "prerequisites": [
+    "unit-k-math-number-bonds-to-10",
+    "unit-g1-math-tens-and-ones-to-100"
+  ],
+  "objective": {
+    "en": "Add two one-digit numbers with a total from 11 to 20 by making a ten first, and find a missing addend using the same idea.",
+    "id": "Menjumlahkan dua bilangan satu angka yang hasilnya 11 sampai 20 dengan membuat sepuluh dulu, dan mencari suku yang hilang dengan gagasan yang sama."
+  },
+  "rationale": {
+    "en": "Make-ten is the bridge between number bonds and place value: 8 + 5 becomes 10 + 3. Children who use it stop counting on their fingers and gain a strategy that scales to bigger numbers.",
+    "id": "Membuat sepuluh adalah jembatan antara ikatan bilangan dan nilai tempat: 8 + 5 menjadi 10 + 3. Anak yang memakainya berhenti menghitung dengan jari dan memiliki strategi yang bisa dipakai untuk bilangan lebih besar."
+  },
+  "outcomes": [
+    {
+      "en": "Splits the second addend to complete a ten and says the total.",
+      "id": "Memecah suku kedua untuk melengkapi sepuluh dan menyebut hasilnya."
+    },
+    {
+      "en": "Chooses the larger number to start from and explains the strategy.",
+      "id": "Memilih bilangan yang lebih besar sebagai awal dan menjelaskan strateginya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show 8 + 5 = 10 + 3 on two ten-frames.",
+      "id": "Aku bisa menunjukkan 8 + 5 = 10 + 3 di dua bingkai sepuluh."
+    },
+    {
+      "en": "I can find the missing number in 17 = 9 + ?.",
+      "id": "Aku bisa mencari bilangan yang hilang pada 17 = 9 + ?."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Revise the partners of ten first (1 and 9, 2 and 8, and so on) for two minutes.",
+      "id": "Ulang dulu pasangan sepuluh (1 dan 9, 2 dan 8, dan seterusnya) selama dua menit."
+    },
+    {
+      "en": "Use two egg-carton ten-frames; fill the first frame completely before using the second.",
+      "id": "Pakai dua bingkai sepuluh dari wadah telur; penuhi bingkai pertama sebelum memakai yang kedua."
+    },
+    {
+      "en": "Ask the child to say the split out loud: 'Eight needs two. Five is two and three.'",
+      "id": "Minta anak mengucapkan pemecahannya: 'Delapan butuh dua. Lima adalah dua dan tiga.'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Fill the first ten-frame. Move just enough from the second number to make ten. Ten and the rest is the answer.",
+      "id": "Penuhi bingkai sepuluh pertama. Pindahkan secukupnya dari bilangan kedua untuk membuat sepuluh. Sepuluh dan sisanya adalah jawabannya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Put 8 red blocks in one egg-carton ten-frame and 5 blue blocks in another; move 2 blue blocks across to fill the first frame, leaving 10 and 3.",
+        "id": "Taruh 8 balok merah di satu bingkai sepuluh wadah telur dan 5 balok biru di bingkai lain; pindahkan 2 balok biru untuk memenuhi bingkai pertama, sehingga menjadi 10 dan 3."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw 9 + 4 as dots on two ten-frames, then draw an arrow moving 1 dot across; write the number bond 4 = 1 and 3 under it.",
+        "id": "Gambar 9 + 4 sebagai titik di dua bingkai sepuluh, lalu gambar panah yang memindahkan 1 titik; tulis ikatan bilangan 4 = 1 dan 3 di bawahnya."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the steps: 7 + 6 = 7 + 3 + 3 = 10 + 3 = 13.",
+        "id": "Tulis langkahnya: 7 + 6 = 7 + 3 + 3 = 10 + 3 = 13."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Two egg cartons cut to 10 cups each by an adult, or two ten-frames drawn on paper",
+      "id": "Dua wadah telur yang dipotong orang dewasa menjadi 10 lubang, atau dua bingkai sepuluh yang digambar di kertas"
+    },
+    {
+      "en": "20 large blocks or bottle caps in two colours",
+      "id": "20 balok besar atau tutup botol dua warna"
+    },
+    {
+      "en": "Number cards 1 to 9",
+      "id": "Kartu angka 1 sampai 9"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "An adult trims the egg cartons to 10 cups with scissors before the lesson.",
+      "id": "Orang dewasa memotong wadah telur menjadi 10 lubang dengan gunting sebelum pelajaran."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "9 + 4: 9 needs 1 to make ten. Split 4 into 1 and 3. 10 + 3 = 13.",
+      "id": "9 + 4: 9 butuh 1 untuk menjadi sepuluh. Pecah 4 menjadi 1 dan 3. 10 + 3 = 13."
+    },
+    {
+      "en": "3 + 8: start from the bigger number, 8. 8 needs 2; split 3 into 2 and 1. 10 + 1 = 11. Turning the sum around does not change the total.",
+      "id": "3 + 8: mulai dari bilangan yang lebih besar, 8. 8 butuh 2; pecah 3 menjadi 2 dan 1. 10 + 1 = 11. Menukar urutan tidak mengubah hasilnya."
+    },
+    {
+      "en": "Story: Pak Budi sells 8 mangoes in the morning and 7 in the afternoon. 8 + 2 = 10, 5 left over, so 15 mangoes.",
+      "id": "Cerita: Pak Budi menjual 8 mangga pagi hari dan 7 sore hari. 8 + 2 = 10, sisa 5, jadi 15 mangga."
+    },
+    {
+      "en": "Missing addend: 17 = 9 + ?. From 9 to 10 is 1, from 10 to 17 is 7, so 1 + 7 = 8.",
+      "id": "Suku hilang: 17 = 9 + ?. Dari 9 ke 10 adalah 1, dari 10 ke 17 adalah 7, jadi 1 + 7 = 8."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Turn over two number cards; if the total is more than 10, build it on the ten-frames and say the make-ten split.",
+      "id": "Buka dua kartu angka; jika jumlahnya lebih dari 10, susun di bingkai sepuluh dan ucapkan pemecahan membuat sepuluh."
+    },
+    {
+      "en": "Write five sums such as 6 + 7, 9 + 5 and 8 + 8 with the steps, then check one with blocks.",
+      "id": "Tulis lima penjumlahan seperti 6 + 7, 9 + 5, dan 8 + 8 beserta langkahnya, lalu periksa satu dengan balok."
+    },
+    {
+      "en": "Make up a story for 7 + 5 about something at home, such as plates on a table.",
+      "id": "Buat cerita untuk 7 + 5 tentang sesuatu di rumah, misalnya piring di meja."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "9 + 4 = ?",
+        "id": "9 + 4 = ?"
+      },
+      "choices": {
+        "en": [
+          "13",
+          "12",
+          "94"
+        ],
+        "id": [
+          "13",
+          "12",
+          "94"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "9 needs 1 to make ten; 4 is 1 and 3, so 10 + 3 = 13.",
+        "id": "9 butuh 1 untuk menjadi sepuluh; 4 adalah 1 dan 3, jadi 10 + 3 = 13."
+      },
+      "check": {
+        "expression": "9 + 4",
+        "result": "13"
+      },
+      "distractorMisconceptions": {
+        "1": "LOSES_ONE_WHEN_SPLITTING",
+        "2": "WRITES_SIDE_BY_SIDE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "To add 8 + 6 by making ten, how should you split the 6?",
+        "id": "Untuk menjumlah 8 + 6 dengan membuat sepuluh, bagaimana memecah 6?"
+      },
+      "choices": {
+        "en": [
+          "2 and 4",
+          "3 and 3",
+          "1 and 5"
+        ],
+        "id": [
+          "2 dan 4",
+          "3 dan 3",
+          "1 dan 5"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "8 needs 2 more to make 10, so take 2 from the 6 and 4 is left.",
+        "id": "8 butuh 2 lagi untuk menjadi 10, jadi ambil 2 dari 6 dan sisa 4."
+      },
+      "check": {
+        "expression": "10 - 8",
+        "result": "2"
+      },
+      "distractorMisconceptions": {
+        "1": "SPLITS_IN_HALF",
+        "2": "WRONG_PARTNER_OF_TEN"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "7 + 5 = 10 + ?",
+        "id": "7 + 5 = 10 + ?"
+      },
+      "choices": {
+        "en": [
+          "2",
+          "5",
+          "3"
+        ],
+        "id": [
+          "2",
+          "5",
+          "3"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "7 takes 3 of the 5 to make ten, so 2 are left: 10 + 2.",
+        "id": "7 mengambil 3 dari 5 untuk menjadi sepuluh, jadi sisa 2: 10 + 2."
+      },
+      "check": {
+        "expression": "7 + 5 - 10",
+        "result": "2"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_TO_SPLIT",
+        "2": "WRONG_PARTNER_OF_TEN"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Pak Budi sells 8 mangoes in the morning and 7 in the afternoon. How many does he sell?",
+        "id": "Pak Budi menjual 8 mangga pagi hari dan 7 sore hari. Berapa mangga yang terjual?"
+      },
+      "choices": {
+        "en": [
+          "15",
+          "14",
+          "1"
+        ],
+        "id": [
+          "15",
+          "14",
+          "1"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "8 + 2 = 10 and 5 are left from the 7, so 15.",
+        "id": "8 + 2 = 10 dan sisa 5 dari 7, jadi 15."
+      },
+      "check": {
+        "expression": "8 + 7",
+        "result": "15"
+      },
+      "distractorMisconceptions": {
+        "1": "LOSES_ONE_WHEN_SPLITTING",
+        "2": "SUBTRACTS_INSTEAD"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "17 = 9 + ?",
+        "id": "17 = 9 + ?"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "7",
+          "26"
+        ],
+        "id": [
+          "8",
+          "7",
+          "26"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "From 9 to 10 is 1 and from 10 to 17 is 7; 1 + 7 = 8. Check: 9 + 8 = 17.",
+        "id": "Dari 9 ke 10 adalah 1 dan dari 10 ke 17 adalah 7; 1 + 7 = 8. Periksa: 9 + 8 = 17."
+      },
+      "check": {
+        "expression": "17 - 9",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "LOSES_ONE_WHEN_SPLITTING",
+        "2": "ADDS_INSTEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "LOSES_ONE_WHEN_SPLITTING",
+      "description": {
+        "en": "Loses or double-counts one object when splitting, giving an answer one too small.",
+        "id": "Kehilangan atau menghitung dua kali satu benda saat memecah, sehingga jawabannya kurang satu."
+      },
+      "remediation": {
+        "en": "Physically move the blocks into the first frame and count what stays in the second frame.",
+        "id": "Pindahkan balok sungguhan ke bingkai pertama dan hitung yang tersisa di bingkai kedua."
+      }
+    },
+    {
+      "code": "WRITES_SIDE_BY_SIDE",
+      "description": {
+        "en": "Writes the two addends next to each other as one number.",
+        "id": "Menulis kedua suku bersebelahan sebagai satu bilangan."
+      },
+      "remediation": {
+        "en": "Build the sum and count the total together; write only that total.",
+        "id": "Susun penjumlahannya dan hitung totalnya bersama; tulis hanya total itu."
+      }
+    },
+    {
+      "code": "SPLITS_IN_HALF",
+      "description": {
+        "en": "Splits the second number in half instead of by what the first number needs.",
+        "id": "Memecah bilangan kedua menjadi dua sama besar, bukan sesuai yang dibutuhkan bilangan pertama."
+      },
+      "remediation": {
+        "en": "Look at the empty cups in the first ten-frame: that is how many to move.",
+        "id": "Lihat lubang kosong di bingkai sepuluh pertama: sebanyak itulah yang dipindahkan."
+      }
+    },
+    {
+      "code": "WRONG_PARTNER_OF_TEN",
+      "description": {
+        "en": "Uses the wrong partner of ten, such as 3 for 8.",
+        "id": "Memakai pasangan sepuluh yang salah, misalnya 3 untuk 8."
+      },
+      "remediation": {
+        "en": "Practise partners of ten with ten fingers: fold down the first number and count the fingers still up.",
+        "id": "Latih pasangan sepuluh dengan sepuluh jari: lipat bilangan pertama dan hitung jari yang masih berdiri."
+      }
+    },
+    {
+      "code": "FORGETS_TO_SPLIT",
+      "description": {
+        "en": "Keeps the whole second number after making ten.",
+        "id": "Tetap memakai seluruh bilangan kedua setelah membuat sepuluh."
+      },
+      "remediation": {
+        "en": "Write the number bond under the second number every time before adding.",
+        "id": "Tulis ikatan bilangan di bawah bilangan kedua setiap kali sebelum menjumlah."
+      }
+    },
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Subtracts when the story asks for a total.",
+        "id": "Mengurangkan padahal cerita meminta jumlah."
+      },
+      "remediation": {
+        "en": "Act out the story with blocks: morning mangoes plus afternoon mangoes go into one basket.",
+        "id": "Peragakan cerita dengan balok: mangga pagi ditambah mangga sore masuk ke satu keranjang."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the two numbers given in a missing-addend problem.",
+        "id": "Menjumlahkan dua bilangan yang diberikan pada soal suku yang hilang."
+      },
+      "remediation": {
+        "en": "Build 9 on the frames and add blocks one at a time until there are 17; count the blocks you added.",
+        "id": "Susun 9 di bingkai dan tambahkan balok satu per satu sampai 17; hitung balok yang ditambahkan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Use make-ten for 18 + 5 or 27 + 6: make the next ten, then add the rest.",
+      "id": "Pakai strategi membuat sepuluh untuk 18 + 5 atau 27 + 6: buat puluhan berikutnya, lalu tambahkan sisanya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Egg-carton frames give a tactile boundary of ten; children can say steps aloud instead of writing them.",
+      "id": "Bingkai wadah telur memberi batas sepuluh yang bisa diraba; anak boleh mengucapkan langkah alih-alih menuliskannya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult does all cutting of the egg cartons with scissors; keep bottle caps away from younger siblings.",
+        "id": "Orang dewasa melakukan semua pemotongan wadah telur dengan gunting; jauhkan tutup botol dari adik yang lebih kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      2,
+      7,
+      14
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves five make-ten sums and two missing-addend problems without counting by ones, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan lima penjumlahan membuat sepuluh dan dua soal suku hilang tanpa menghitung satu per satu, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

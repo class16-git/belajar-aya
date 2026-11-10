@@ -1,0 +1,369 @@
+{
+  "id": "unit-g1-stem-sort-by-two-rules",
+  "version": "1.0.0",
+  "level": "g1",
+  "framework": "stem",
+  "strand": "algorithms",
+  "title": {
+    "en": "Sorting with yes-or-no questions",
+    "id": "Mengelompokkan dengan pertanyaan ya atau tidak"
+  },
+  "prerequisites": [
+    "unit-k-stem-rolls-or-slides"
+  ],
+  "objective": {
+    "en": "Sort objects with one, then two, yes-or-no questions, follow a sorting rule as an algorithm, and guess a hidden sorting rule from examples.",
+    "id": "Mengelompokkan benda dengan satu, lalu dua, pertanyaan ya atau tidak, mengikuti aturan pengelompokan sebagai algoritma, dan menebak aturan tersembunyi dari contoh."
+  },
+  "rationale": {
+    "en": "Computers sort and classify by asking exact yes-or-no questions. Sorting real objects by attributes trains careful observation, and combining two questions shows how rules make more groups: two questions give four boxes.",
+    "id": "Komputer mengelompokkan dengan mengajukan pertanyaan ya atau tidak yang tepat. Mengelompokkan benda nyata menurut cirinya melatih pengamatan teliti, dan menggabungkan dua pertanyaan menunjukkan bagaimana aturan membuat lebih banyak kelompok: dua pertanyaan menghasilkan empat kotak."
+  },
+  "outcomes": [
+    {
+      "en": "Sorts objects correctly into a two-by-two table using two questions.",
+      "id": "Mengelompokkan benda dengan benar ke tabel dua kali dua memakai dua pertanyaan."
+    },
+    {
+      "en": "Guesses a hidden rule from examples and tests it.",
+      "id": "Menebak aturan tersembunyi dari contoh dan mengujinya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I ask the same questions for every object.",
+      "id": "Aku mengajukan pertanyaan yang sama untuk setiap benda."
+    },
+    {
+      "en": "I can guess a secret rule and check it.",
+      "id": "Aku bisa menebak aturan rahasia dan memeriksanya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Write each question on a card so it is asked the same way every time, for example 'Is it bigger than my hand?' and 'Is it made of plastic?'",
+      "id": "Tulis setiap pertanyaan di kartu supaya selalu ditanyakan dengan cara yang sama, misalnya 'Apakah lebih besar dari tanganku?' dan 'Apakah terbuat dari plastik?'"
+    },
+    {
+      "en": "Ask your child to predict where an object will go before asking the questions.",
+      "id": "Minta anak menebak di mana benda akan diletakkan sebelum mengajukan pertanyaan."
+    },
+    {
+      "en": "When an object does not fit clearly, praise it: 'That object found a weak spot in our question! How can we make the question clearer?'",
+      "id": "Jika suatu benda tidak jelas masuk ke mana, puji: 'Benda itu menemukan kelemahan pertanyaan kita! Bagaimana membuat pertanyaannya lebih jelas?'"
+    },
+    {
+      "en": "Reflect at the end: 'Which question was easy to answer? Which one did we improve?'",
+      "id": "Renungkan di akhir: 'Pertanyaan mana yang mudah dijawab? Mana yang kita perbaiki?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Pick an object. Ask question 1, then question 2. Put it in the box for both answers.",
+      "id": "Ambil benda. Ajukan pertanyaan 1, lalu pertanyaan 2. Taruh di kotak untuk kedua jawaban."
+    },
+    {
+      "en": "Look at the secret groups. Guess the rule, then test it with a new object.",
+      "id": "Lihat kelompok rahasia. Tebak aturannya, lalu uji dengan benda baru."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Sort real kitchen and toy objects onto a big two-by-two table drawn on paper.",
+        "id": "Kelompokkan benda dapur dan mainan sungguhan di tabel besar dua kali dua yang digambar di kertas."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a sorting tree: question 1 splits into yes and no, and each branch asks question 2.",
+        "id": "Gambar pohon pengelompokan: pertanyaan 1 bercabang ya dan tidak, dan setiap cabang mengajukan pertanyaan 2."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the rule in words: if big and plastic, box A; if big and not plastic, box B; and so on.",
+        "id": "Tulis aturan dengan kata: jika besar dan plastik, kotak A; jika besar dan bukan plastik, kotak B; dan seterusnya."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 12 objects larger than a fist: plastic cup, metal spoon, wooden spoon, plastic plate, book, sock, toy car, ladle, pot lid, apple, sandal, plastic bottle",
+      "id": "Sekitar 12 benda yang lebih besar dari kepalan: gelas plastik, sendok logam, sendok kayu, piring plastik, buku, kaus kaki, mobil-mobilan, sendok sayur, tutup panci, apel, sandal, botol plastik"
+    },
+    {
+      "en": "A large sheet of paper with a two-by-two table drawn on it",
+      "id": "Selembar kertas besar dengan tabel dua kali dua"
+    },
+    {
+      "en": "Two question cards and a pencil",
+      "id": "Dua kartu pertanyaan dan pensil"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw the table. Label the rows 'bigger than my hand: yes / no' and the columns 'plastic: yes / no'.",
+      "id": "Gambar tabelnya. Beri label baris 'lebih besar dari tanganku: ya / tidak' dan kolom 'plastik: ya / tidak'."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "One question: 'Is it made of plastic?' Cup: yes. Wooden spoon: no. Sort all twelve into two piles.",
+      "id": "Satu pertanyaan: 'Apakah terbuat dari plastik?' Gelas: ya. Sendok kayu: tidak. Kelompokkan kedua belas benda menjadi dua tumpukan."
+    },
+    {
+      "en": "Two questions: plate. Bigger than my hand? Yes. Plastic? Yes. It goes in the 'yes, yes' box. Metal spoon: bigger? No. Plastic? No. 'No, no' box.",
+      "id": "Dua pertanyaan: piring. Lebih besar dari tanganku? Ya. Plastik? Ya. Masuk kotak 'ya, ya'. Sendok logam: lebih besar? Tidak. Plastik? Tidak. Kotak 'tidak, tidak'."
+    },
+    {
+      "en": "Guess my rule: the parent secretly puts spoon, ladle and wooden spoon in one group and plate, book and lid in the other. Rina guesses 'things with a long handle' and tests it with a new object, a spatula: it joins the handle group.",
+      "id": "Tebak aturanku: orang tua diam-diam menaruh sendok, sendok sayur, dan sendok kayu di satu kelompok dan piring, buku, serta tutup di kelompok lain. Rina menebak 'benda bergagang panjang' dan mengujinya dengan benda baru, sutil: masuk ke kelompok bergagang."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Sort all twelve objects into the two-by-two table; predict first for each one.",
+      "id": "Kelompokkan kedua belas benda di tabel dua kali dua; tebak dulu untuk setiap benda."
+    },
+    {
+      "en": "Child chooses a secret rule and sorts; the parent guesses it.",
+      "id": "Anak memilih aturan rahasia dan mengelompokkan; orang tua menebaknya."
+    },
+    {
+      "en": "Find an object that makes a question hard to answer, such as a plastic toy with metal wheels, and rewrite the question so it is clear.",
+      "id": "Cari benda yang membuat pertanyaan sulit dijawab, seperti mainan plastik dengan roda logam, lalu tulis ulang pertanyaannya agar jelas."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Questions: 'Bigger than my hand?' and 'Plastic?'. Where does a big plastic plate go?",
+        "id": "Pertanyaan: 'Lebih besar dari tanganku?' dan 'Plastik?'. Ke mana piring plastik besar diletakkan?"
+      },
+      "choices": {
+        "en": [
+          "The yes-yes box",
+          "The yes-no box",
+          "The no-yes box"
+        ],
+        "id": [
+          "Kotak ya-ya",
+          "Kotak ya-tidak",
+          "Kotak tidak-ya"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "It is bigger than a hand (yes) and plastic (yes).",
+        "id": "Piring lebih besar dari tangan (ya) dan plastik (ya)."
+      },
+      "distractorMisconceptions": {
+        "1": "ANSWERS_ONE_QUESTION_ONLY",
+        "2": "SWAPS_ROWS_AND_COLUMNS"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Group A: spoon, ladle, spatula. Group B: plate, book, lid. What is the rule?",
+        "id": "Kelompok A: sendok, sendok sayur, sutil. Kelompok B: piring, buku, tutup. Apa aturannya?"
+      },
+      "choices": {
+        "en": [
+          "Group A has long handles",
+          "Group A is made of metal",
+          "Group A is for eating"
+        ],
+        "id": [
+          "Kelompok A bergagang panjang",
+          "Kelompok A terbuat dari logam",
+          "Kelompok A untuk makan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Every object in A has a long handle and none in B does; a wooden spatula is not metal, and a ladle is for serving.",
+        "id": "Setiap benda di A bergagang panjang dan tidak ada di B; sutil kayu bukan logam, dan sendok sayur untuk menyendok kuah."
+      },
+      "distractorMisconceptions": {
+        "1": "RULE_FROM_ONE_EXAMPLE",
+        "2": "RULE_FROM_ONE_EXAMPLE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "You sort with 2 yes-or-no questions. How many boxes do you need?",
+        "id": "Kamu mengelompokkan dengan 2 pertanyaan ya atau tidak. Berapa kotak yang kamu perlukan?"
+      },
+      "choices": {
+        "en": [
+          "4 boxes",
+          "2 boxes",
+          "3 boxes"
+        ],
+        "id": [
+          "4 kotak",
+          "2 kotak",
+          "3 kotak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each question has 2 answers, so 2 × 2 = 4 boxes: yes-yes, yes-no, no-yes, no-no.",
+        "id": "Setiap pertanyaan punya 2 jawaban, jadi 2 × 2 = 4 kotak: ya-ya, ya-tidak, tidak-ya, tidak-tidak."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_BOX_PER_QUESTION",
+        "2": "ONE_BOX_PER_QUESTION"
+      },
+      "check": {
+        "expression": "2 × 2",
+        "result": "4"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A toy is plastic with metal wheels, and nobody can agree if it is 'plastic'. What should you do?",
+        "id": "Sebuah mainan terbuat dari plastik dengan roda logam, dan tidak ada yang sepakat apakah itu 'plastik'. Apa yang sebaiknya dilakukan?"
+      },
+      "choices": {
+        "en": [
+          "Make the question clearer, like 'Is it mostly plastic?'",
+          "Guess and move on"
+        ],
+        "id": [
+          "Buat pertanyaan lebih jelas, seperti 'Apakah sebagian besar plastik?'",
+          "Tebak saja dan lanjut"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A sorting rule must give one clear answer for every object.",
+        "id": "Aturan pengelompokan harus memberi satu jawaban jelas untuk setiap benda."
+      },
+      "distractorMisconceptions": {
+        "1": "ANSWERS_ONE_QUESTION_ONLY"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ANSWERS_ONE_QUESTION_ONLY",
+      "description": {
+        "en": "Sorts by the first question and forgets the second.",
+        "id": "Mengelompokkan menurut pertanyaan pertama dan lupa pertanyaan kedua."
+      },
+      "remediation": {
+        "en": "Hold up both question cards and put a tick or cross on each before placing the object.",
+        "id": "Angkat kedua kartu pertanyaan dan beri centang atau silang di setiap kartu sebelum meletakkan benda."
+      }
+    },
+    {
+      "code": "SWAPS_ROWS_AND_COLUMNS",
+      "description": {
+        "en": "Mixes up which question belongs to rows and which to columns.",
+        "id": "Tertukar pertanyaan mana untuk baris dan mana untuk kolom."
+      },
+      "remediation": {
+        "en": "Colour the row labels blue and the column labels red, and use matching coloured question cards.",
+        "id": "Warnai label baris biru dan label kolom merah, dan gunakan kartu pertanyaan berwarna serupa."
+      }
+    },
+    {
+      "code": "RULE_FROM_ONE_EXAMPLE",
+      "description": {
+        "en": "Picks a rule that fits one object but not the whole group.",
+        "id": "Memilih aturan yang cocok untuk satu benda, tetapi tidak untuk seluruh kelompok."
+      },
+      "remediation": {
+        "en": "Test the guessed rule on every object in both groups, ticking each one that fits.",
+        "id": "Uji aturan tebakan pada setiap benda di kedua kelompok, mencentang setiap yang cocok."
+      }
+    },
+    {
+      "code": "ONE_BOX_PER_QUESTION",
+      "description": {
+        "en": "Thinks two questions make only two groups.",
+        "id": "Mengira dua pertanyaan hanya menghasilkan dua kelompok."
+      },
+      "remediation": {
+        "en": "Draw the sorting tree: one question splits into 2 branches, and each branch splits again into 2.",
+        "id": "Gambar pohon pengelompokan: satu pertanyaan bercabang 2, dan setiap cabang bercabang lagi menjadi 2."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add a third question and work out how many boxes you need, then sort with a three-level tree.",
+      "id": "Tambahkan pertanyaan ketiga dan cari tahu berapa kotak yang diperlukan, lalu kelompokkan dengan pohon tiga tingkat."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Allow pointing to boxes instead of writing; read the questions aloud for a child who is not yet reading.",
+      "id": "Izinkan menunjuk kotak alih-alih menulis; bacakan pertanyaan untuk anak yang belum lancar membaca."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use plastic, wooden or unbreakable objects only; no knives, glass or small loose parts in the sorting set.",
+        "id": "Gunakan hanya benda plastik, kayu, atau yang tidak mudah pecah; tanpa pisau, kaca, atau bagian kecil di set pengelompokan."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child sorts twelve objects with two questions without errors and guesses one hidden rule, on two different days.",
+      "id": "Dikuasai jika anak mengelompokkan dua belas benda dengan dua pertanyaan tanpa salah dan menebak satu aturan tersembunyi, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "id": "unit-g3-stem-events-when-this-happens",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "stem",
+  "strand": "block_coding",
+  "title": {
+    "en": "When this happens: events",
+    "id": "Ketika ini terjadi: event"
+  },
+  "prerequisites": [
+    "unit-g2-stem-loops-floor-grid"
+  ],
+  "objective": {
+    "en": "Explain that an event starts a script, build event-action scripts unplugged with cards, and predict what happens when one event starts several scripts.",
+    "id": "Menjelaskan bahwa event memulai sebuah skrip, menyusun skrip event-aksi tanpa komputer dengan kartu, dan menebak apa yang terjadi saat satu event memulai beberapa skrip."
+  },
+  "rationale": {
+    "en": "Block-based programming tools organise code into scripts that wait for an event, such as a start signal, a key press or a message. Acting events out with cards and claps lets children understand the idea before, or without, any screen, and transfers to any free block tool.",
+    "id": "Alat pemrograman berbasis blok menyusun kode menjadi skrip yang menunggu event, seperti sinyal mulai, tombol yang ditekan, atau pesan. Memperagakan event dengan kartu dan tepukan membuat anak memahami gagasannya sebelum, atau tanpa, layar apa pun, dan bisa diterapkan di alat blok gratis mana pun."
+  },
+  "outcomes": [
+    {
+      "en": "Builds three event scripts and runs them correctly with a family member.",
+      "id": "Menyusun tiga skrip event dan menjalankannya dengan benar bersama anggota keluarga."
+    },
+    {
+      "en": "Predicts the result when a script has no event or when two scripts share an event.",
+      "id": "Menebak hasil saat skrip tidak punya event atau saat dua skrip berbagi event."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I know a script waits for its event.",
+      "id": "Aku tahu skrip menunggu event-nya."
+    },
+    {
+      "en": "I can design an event game and fix it after testing.",
+      "id": "Aku bisa merancang permainan event dan memperbaikinya setelah diuji."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Make event cards in one colour (they start with 'When ...') and action cards in another colour. An event card always goes on top of a stack, like a hat.",
+      "id": "Buat kartu event dengan satu warna (diawali 'Ketika ...') dan kartu aksi dengan warna lain. Kartu event selalu di paling atas tumpukan, seperti topi."
+    },
+    {
+      "en": "Family members are 'characters' who each hold their own scripts and act only when their event happens.",
+      "id": "Anggota keluarga menjadi 'tokoh' yang masing-masing memegang skripnya dan bertindak hanya saat event-nya terjadi."
+    },
+    {
+      "en": "Ask for predictions: 'When I clap, who will move? What will they do?'",
+      "id": "Minta tebakan: 'Ketika aku bertepuk, siapa yang bergerak? Apa yang mereka lakukan?'"
+    },
+    {
+      "en": "If you use a free block-based tool on a computer later, look for the blocks shaped to sit on top of a stack; they are the events. Do the unplugged version first.",
+      "id": "Jika nanti memakai alat blok gratis di komputer, cari blok yang bentuknya duduk di atas tumpukan; itulah event. Lakukan versi tanpa komputer lebih dulu."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Put a 'When ...' card on top, then action cards under it. That is one script.",
+      "id": "Taruh kartu 'Ketika ...' di atas, lalu kartu aksi di bawahnya. Itu satu skrip."
+    },
+    {
+      "en": "Predict who will move for each event. Run it and check.",
+      "id": "Tebak siapa yang bergerak untuk setiap event. Jalankan dan periksa."
+    },
+    {
+      "en": "Design your own event game, test it with your family, and improve one script.",
+      "id": "Rancang permainan event-mu sendiri, uji bersama keluarga, dan perbaiki satu skrip."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build card scripts and act them out with family members as characters.",
+        "id": "Susun skrip kartu dan peragakan bersama anggota keluarga sebagai tokoh."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw each script as a stack of blocks: a rounded event block on top and rectangular action blocks below.",
+        "id": "Gambar setiap skrip sebagai tumpukan blok: blok event membulat di atas dan blok aksi persegi di bawahnya."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write scripts as text: when clap: jump, say 'hello'.",
+        "id": "Tulis skrip sebagai teks: ketika tepuk: lompat, ucapkan 'halo'."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Index cards or paper in two colours, cut by the adult",
+      "id": "Kartu indeks atau kertas dua warna, digunting orang dewasa"
+    },
+    {
+      "en": "A marker pen",
+      "id": "Spidol"
+    },
+    {
+      "en": "Two or three family members to be characters",
+      "id": "Dua atau tiga anggota keluarga sebagai tokoh"
+    },
+    {
+      "en": "Optional: a computer with any free block-based coding tool, used with an adult",
+      "id": "Pilihan: komputer dengan alat pemrograman blok gratis apa pun, dipakai bersama orang dewasa"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write event cards: 'When the clap happens', 'When the green card is shown', 'When someone says your name'. Write action cards: 'jump once', 'turn around', 'say hello', 'sit down', 'wave'.",
+      "id": "Tulis kartu event: 'Ketika ada tepukan', 'Ketika kartu hijau ditunjukkan', 'Ketika namamu dipanggil'. Tulis kartu aksi: 'lompat sekali', 'berputar', 'ucapkan halo', 'duduk', 'melambai'."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "One event, one script: Mum holds 'When the clap happens: turn around, wave'. The child predicts, then claps. Mum turns and waves. Nothing else happens until the next clap.",
+      "id": "Satu event, satu skrip: Ibu memegang 'Ketika ada tepukan: berputar, melambai'. Anak menebak, lalu bertepuk. Ibu berputar dan melambai. Tidak ada yang terjadi sampai tepukan berikutnya."
+    },
+    {
+      "en": "Missing event: Dad holds only action cards 'jump, sit' with no event on top. The child claps, shows the green card, calls his name. Dad never moves. 'A script with no event never starts.'",
+      "id": "Event hilang: Ayah hanya memegang kartu aksi 'lompat, duduk' tanpa event di atasnya. Anak bertepuk, menunjukkan kartu hijau, memanggil namanya. Ayah tidak pernah bergerak. 'Skrip tanpa event tidak pernah mulai.'"
+    },
+    {
+      "en": "Shared event: Mum and Dad both hold a 'When the clap happens' script. One clap: both scripts run at the same time.",
+      "id": "Event bersama: Ibu dan Ayah sama-sama memegang skrip 'Ketika ada tepukan'. Satu tepukan: kedua skrip berjalan bersamaan."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Build three scripts for three characters, each with a different event. Run them in a random order.",
+      "id": "Susun tiga skrip untuk tiga tokoh, masing-masing dengan event berbeda. Jalankan dalam urutan acak."
+    },
+    {
+      "en": "Design a 'pet' game: when fed, the pet dances; when patted, it says 'purr'; when the green card is shown, it sleeps. Test it, note one thing that confused the players, and change that script.",
+      "id": "Rancang permainan 'hewan peliharaan': ketika diberi makan, hewan menari; ketika dielus, ia berkata 'purr'; ketika kartu hijau ditunjukkan, ia tidur. Uji, catat satu hal yang membingungkan pemain, dan ubah skrip itu."
+    },
+    {
+      "en": "Optional on a computer: rebuild the pet game in a free block tool, looking for event blocks that start each stack.",
+      "id": "Pilihan di komputer: buat ulang permainan hewan peliharaan di alat blok gratis, cari blok event yang memulai setiap tumpukan."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A script has 'jump, wave' but no event block on top. What happens when you start the program?",
+        "id": "Sebuah skrip berisi 'lompat, melambai' tanpa blok event di atasnya. Apa yang terjadi saat program dimulai?"
+      },
+      "choices": {
+        "en": [
+          "Nothing, because no event starts it",
+          "It jumps and waves straight away",
+          "It runs after the other scripts"
+        ],
+        "id": [
+          "Tidak ada, karena tidak ada event yang memulainya",
+          "Langsung lompat dan melambai",
+          "Berjalan setelah skrip lain"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Scripts wait for their event; without one they never run.",
+        "id": "Skrip menunggu event-nya; tanpa event, skrip tidak pernah berjalan."
+      },
+      "distractorMisconceptions": {
+        "1": "SCRIPT_RUNS_BY_ITSELF",
+        "2": "SCRIPTS_RUN_IN_LINE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which of these is an event?",
+        "id": "Manakah yang merupakan event?"
+      },
+      "choices": {
+        "en": [
+          "When the doorbell rings",
+          "Turn around",
+          "Say hello"
+        ],
+        "id": [
+          "Ketika bel pintu berbunyi",
+          "Berputar",
+          "Ucapkan halo"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "An event is something that happens and starts a script; the others are actions.",
+        "id": "Event adalah sesuatu yang terjadi dan memulai skrip; yang lain adalah aksi."
+      },
+      "distractorMisconceptions": {
+        "1": "ACTION_IS_EVENT",
+        "2": "ACTION_IS_EVENT"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Two characters both have a 'When the clap happens' script. You clap once. What happens?",
+        "id": "Dua tokoh sama-sama punya skrip 'Ketika ada tepukan'. Kamu bertepuk sekali. Apa yang terjadi?"
+      },
+      "choices": {
+        "en": [
+          "Both scripts run",
+          "Only the first one runs",
+          "Neither runs because they clash"
+        ],
+        "id": [
+          "Kedua skrip berjalan",
+          "Hanya yang pertama berjalan",
+          "Tidak ada yang berjalan karena bentrok"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Every script waiting for that event starts when it happens.",
+        "id": "Setiap skrip yang menunggu event itu mulai saat event terjadi."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_SCRIPT_PER_EVENT",
+        "2": "ONE_SCRIPT_PER_EVENT"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Three characters each have one script with 2 action cards. You make all three events happen once. How many actions are done in total?",
+        "id": "Tiga tokoh masing-masing punya satu skrip dengan 2 kartu aksi. Kamu membuat ketiga event terjadi sekali. Berapa aksi yang dilakukan seluruhnya?"
+      },
+      "choices": {
+        "en": [
+          "6 actions",
+          "3 actions",
+          "5 actions"
+        ],
+        "id": [
+          "6 aksi",
+          "3 aksi",
+          "5 aksi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each event runs one script of 2 actions: 3 × 2 = 6.",
+        "id": "Setiap event menjalankan satu skrip berisi 2 aksi: 3 × 2 = 6."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_ACTION_PER_EVENT",
+        "2": "ONE_ACTION_PER_EVENT"
+      },
+      "check": {
+        "expression": "3 × 2",
+        "result": "6"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SCRIPT_RUNS_BY_ITSELF",
+      "description": {
+        "en": "Thinks code runs as soon as it exists, without a starting event.",
+        "id": "Mengira kode berjalan begitu ada, tanpa event yang memulai."
+      },
+      "remediation": {
+        "en": "Play the card game again with a 'freeze' rule: a character without a hat card must stand completely still.",
+        "id": "Mainkan lagi permainan kartu dengan aturan 'diam': tokoh tanpa kartu topi harus berdiri diam sama sekali."
+      }
+    },
+    {
+      "code": "ACTION_IS_EVENT",
+      "description": {
+        "en": "Confuses actions (what a character does) with events (what starts it).",
+        "id": "Tertukar antara aksi (yang dilakukan tokoh) dan event (yang memulainya)."
+      },
+      "remediation": {
+        "en": "Sort a pile of mixed cards into 'things that happen to you' and 'things you do', checking for the word 'When'.",
+        "id": "Pilah tumpukan kartu campuran menjadi 'hal yang terjadi padamu' dan 'hal yang kamu lakukan', memeriksa kata 'Ketika'."
+      }
+    },
+    {
+      "code": "ONE_SCRIPT_PER_EVENT",
+      "description": {
+        "en": "Expects only one script to respond to an event.",
+        "id": "Mengira hanya satu skrip yang menanggapi suatu event."
+      },
+      "remediation": {
+        "en": "Give everyone in the family the same clap script and clap once; watch the whole room move.",
+        "id": "Beri semua anggota keluarga skrip tepukan yang sama dan bertepuk sekali; lihat semua orang bergerak."
+      }
+    },
+    {
+      "code": "SCRIPTS_RUN_IN_LINE",
+      "description": {
+        "en": "Believes scripts run one after another like a single list.",
+        "id": "Percaya skrip berjalan satu per satu seperti satu daftar."
+      },
+      "remediation": {
+        "en": "Trigger the green-card event first, even though its script is written last, and see that order on the table does not matter.",
+        "id": "Picu event kartu hijau lebih dulu, walaupun skripnya ditulis terakhir, dan lihat bahwa urutan di meja tidak berpengaruh."
+      }
+    },
+    {
+      "code": "ONE_ACTION_PER_EVENT",
+      "description": {
+        "en": "Counts one action per event, ignoring the actions in each stack.",
+        "id": "Menghitung satu aksi per event, mengabaikan aksi di setiap tumpukan."
+      },
+      "remediation": {
+        "en": "Lay the three stacks side by side, run each and tick every action card as it is done.",
+        "id": "Letakkan tiga tumpukan berdampingan, jalankan masing-masing, dan centang setiap kartu aksi saat dilakukan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add a 'broadcast' card: one script's last action is 'shout GO', which is the event for another script, so scripts can start each other.",
+      "id": "Tambahkan kartu 'siaran': aksi terakhir satu skrip adalah 'teriak MULAI', yang menjadi event bagi skrip lain, sehingga skrip bisa saling memulai."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use picture symbols on cards for a child who reads slowly; a child who cannot move much can be the event-maker.",
+      "id": "Gunakan simbol gambar di kartu untuk anak yang lambat membaca; anak yang sulit bergerak bisa menjadi pembuat event."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Keep the play area clear so characters can jump and turn without hitting furniture.",
+        "id": "Jaga area bermain kosong supaya tokoh bisa melompat dan berputar tanpa menabrak perabot."
+      },
+      {
+        "en": "If a computer is used, an adult sets it up and screen time stays short.",
+        "id": "Jika memakai komputer, orang dewasa menyiapkannya dan waktu layar tetap singkat."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child builds a three-script event game, predicts no-event and shared-event cases correctly, and improves the game after a test.",
+      "id": "Dikuasai jika anak menyusun permainan event tiga skrip, menebak kasus tanpa event dan event bersama dengan benar, dan memperbaiki permainan setelah diuji."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

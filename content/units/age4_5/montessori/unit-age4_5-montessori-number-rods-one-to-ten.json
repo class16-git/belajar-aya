@@ -1,0 +1,404 @@
+{
+  "id": "unit-age4_5-montessori-number-rods-one-to-ten",
+  "version": "1.0.0",
+  "level": "age4_5",
+  "framework": "montessori",
+  "strand": "mathematics",
+  "title": {
+    "en": "Number rods: lengths from one to ten",
+    "id": "Batang bilangan: panjang satu sampai sepuluh"
+  },
+  "prerequisites": [],
+  "objective": {
+    "en": "Build a staircase of ten home-made number rods and count the sections of any rod from 1 to 10 to say its quantity.",
+    "id": "Menyusun tangga dari sepuluh batang bilangan buatan sendiri dan menghitung bagian setiap batang dari 1 sampai 10 untuk menyebut jumlahnya."
+  },
+  "rationale": {
+    "en": "A rod shows a number as one whole object, so 'five' is one thing with five parts rather than five loose things. This helps children see that each number is one more than the one before.",
+    "id": "Sebuah batang menunjukkan bilangan sebagai satu benda utuh, jadi 'lima' adalah satu benda dengan lima bagian, bukan lima benda lepas. Ini membantu anak melihat bahwa setiap bilangan satu lebih banyak dari sebelumnya."
+  },
+  "outcomes": [
+    {
+      "en": "Orders ten rods from shortest to longest.",
+      "id": "Mengurutkan sepuluh batang dari terpendek ke terpanjang."
+    },
+    {
+      "en": "Counts the coloured sections of a rod and names its number.",
+      "id": "Menghitung bagian berwarna pada batang dan menyebut bilangannya."
+    },
+    {
+      "en": "Shows that rod 3 and rod 2 together are as long as rod 5.",
+      "id": "Menunjukkan bahwa batang 3 dan batang 2 bersama sama panjang dengan batang 5."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "The child builds the staircase so the ends line up on one side.",
+      "id": "Anak menyusun tangga dengan ujung-ujung yang rata di satu sisi."
+    },
+    {
+      "en": "Asked for 'rod seven', the child counts and brings the right one.",
+      "id": "Diminta 'batang tujuh', anak menghitung dan membawa batang yang benar."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Count by touching each section once, sliding your fingers along the rod, and say the last number twice: 'one, two, three — three'.",
+      "id": "Hitung dengan menyentuh setiap bagian sekali, menggeser jari di sepanjang batang, dan ucapkan bilangan terakhir dua kali: 'satu, dua, tiga — tiga'."
+    },
+    {
+      "en": "Work on a floor mat; the long rods need space.",
+      "id": "Bekerja di tikar lantai; batang panjang butuh ruang."
+    },
+    {
+      "en": "Do not hurry to written numbers. Number cards can be added once your child counts the rods confidently.",
+      "id": "Jangan buru-buru ke angka tertulis. Kartu angka bisa ditambahkan setelah anak lancar menghitung batang."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build and count the ten rods on a floor mat; join two rods to match a longer one.",
+        "id": "Menyusun dan menghitung sepuluh batang di tikar; menyambung dua batang agar sama dengan batang yang lebih panjang."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Colour a staircase of 1 to 10 squares in red and blue on squared paper.",
+        "id": "Mewarnai tangga 1 sampai 10 kotak merah dan biru di kertas berpetak."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Lay number cards 1 to 10 beside the rods and read them in order.",
+        "id": "Meletakkan kartu angka 1 sampai 10 di samping batang dan membacanya berurutan."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Ten strips of stiff card or thin wood, 2.5 cm wide, from 10 cm to 100 cm long in 10 cm steps",
+      "id": "Sepuluh potong karton tebal atau kayu tipis, lebar 2,5 cm, panjang 10 cm sampai 100 cm dengan selisih 10 cm"
+    },
+    {
+      "en": "Red and blue paint or marker to colour 10 cm sections, alternating, starting with red",
+      "id": "Cat atau spidol merah dan biru untuk mewarnai bagian 10 cm secara bergantian, diawali merah"
+    },
+    {
+      "en": "A floor mat or rug about 1.2 m long",
+      "id": "Tikar lantai atau karpet sekitar 1,2 m panjangnya"
+    },
+    {
+      "en": "Number cards 1 to 10 (for later)",
+      "id": "Kartu angka 1 sampai 10 (untuk nanti)"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult measures and cuts the strips; sand any rough edges and colour each 10 cm section red, then blue, then red, so rod 1 is all red.",
+      "id": "Orang dewasa mengukur dan memotong; haluskan tepi kasar dan warnai setiap bagian 10 cm merah, lalu biru, lalu merah, sehingga batang 1 seluruhnya merah."
+    },
+    {
+      "en": "Store the rods flat in a long box or under a sofa so they stay straight.",
+      "id": "Simpan batang dengan rata di kotak panjang atau di bawah sofa agar tetap lurus."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Lay the rods out mixed. Find the longest by eye, carry it holding both ends, and lay it at the top of the mat. Find the next longest and lay it under, left ends lined up. Continue to rod 1.",
+      "id": "Letakkan batang secara acak. Cari yang terpanjang dengan mata, bawa dengan memegang kedua ujung, letakkan di bagian atas tikar. Cari yang terpanjang berikutnya dan letakkan di bawahnya, ujung kiri rata. Teruskan sampai batang 1."
+    },
+    {
+      "en": "Count rod 4: touch each section, 'one, two, three, four — four'. Lift rod 4 and say 'This is four.'",
+      "id": "Hitung batang 4: sentuh setiap bagian, 'satu, dua, tiga, empat — empat'. Angkat batang 4 dan katakan 'Ini empat.'"
+    },
+    {
+      "en": "Lay rod 3 end to end with rod 2 beside rod 5. Run a finger along both: 'Three and two are as long as five.'",
+      "id": "Letakkan batang 3 bersambung dengan batang 2 di samping batang 5. Usap keduanya dengan jari: 'Tiga dan dua sama panjang dengan lima.'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Build the staircase, then walk your fingers down it saying each number.",
+      "id": "Menyusun tangga, lalu menjalankan jari menuruninya sambil menyebut setiap bilangan."
+    },
+    {
+      "en": "Fetching game: the adult sits across the room and asks for 'rod six'; the child counts and carries it over.",
+      "id": "Permainan mengambil: orang dewasa duduk di seberang ruangan dan meminta 'batang enam'; anak menghitung dan membawanya."
+    },
+    {
+      "en": "Make rod 10 with two shorter rods in as many ways as possible (9 and 1, 8 and 2 ...).",
+      "id": "Membuat panjang batang 10 dengan dua batang lebih pendek dengan sebanyak mungkin cara (9 dan 1, 8 dan 2 ...)."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Ask your child to count rod 7. What should they find?",
+        "id": "Minta anak menghitung batang 7. Apa yang seharusnya ditemukan?"
+      },
+      "choices": {
+        "en": [
+          "7 sections",
+          "6 sections",
+          "8 sections"
+        ],
+        "id": [
+          "7 bagian",
+          "6 bagian",
+          "8 bagian"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Rod 7 has seven 10 cm sections; touching each one once gives 7.",
+        "id": "Batang 7 punya tujuh bagian 10 cm; menyentuh setiap bagian sekali menghasilkan 7."
+      },
+      "check": {
+        "expression": "7 * 1",
+        "result": "7"
+      },
+      "distractorMisconceptions": {
+        "1": "SKIPS_A_SECTION",
+        "2": "COUNTS_TWICE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Rod 4 and rod 3 laid end to end are as long as which rod?",
+        "id": "Batang 4 dan batang 3 yang disambung sama panjang dengan batang berapa?"
+      },
+      "choices": {
+        "en": [
+          "7",
+          "6",
+          "43"
+        ],
+        "id": [
+          "7",
+          "6",
+          "43"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 sections and 3 more sections make 7 sections.",
+        "id": "4 bagian dan 3 bagian lagi menjadi 7 bagian."
+      },
+      "check": {
+        "expression": "4 + 3",
+        "result": "7"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_TWICE",
+        "2": "JOINS_DIGITS"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which rod is one longer than rod 5?",
+        "id": "Batang mana yang satu lebih panjang dari batang 5?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "4",
+          "5"
+        ],
+        "id": [
+          "6",
+          "4",
+          "5"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Going down the staircase from 5, the next rod has one more section: 6.",
+        "id": "Turun di tangga dari 5, batang berikutnya punya satu bagian lebih: 6."
+      },
+      "check": {
+        "expression": "5 + 1",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_MORE_ONE_LESS",
+        "2": "ONE_MORE_ONE_LESS"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "How long is rod 10 if every section is 10 cm?",
+        "id": "Berapa panjang batang 10 jika setiap bagian 10 cm?"
+      },
+      "choices": {
+        "en": [
+          "100 cm",
+          "10 cm",
+          "20 cm"
+        ],
+        "id": [
+          "100 cm",
+          "10 cm",
+          "20 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Ten sections of 10 cm make 100 cm, which is one metre. (A question for the adult to talk through.)",
+        "id": "Sepuluh bagian 10 cm menjadi 100 cm, yaitu satu meter. (Pertanyaan untuk dibicarakan orang dewasa.)"
+      },
+      "check": {
+        "expression": "10 * 10",
+        "result": "100"
+      },
+      "distractorMisconceptions": {
+        "1": "SECTION_NOT_TOTAL",
+        "2": "SECTION_NOT_TOTAL"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SKIPS_A_SECTION",
+      "description": {
+        "en": "Misses a section while counting, often at a colour change.",
+        "id": "Melewatkan satu bagian saat menghitung, sering di pergantian warna."
+      },
+      "remediation": {
+        "en": "Slide a finger along the rod and tap each section with a small paper flag; count the flags afterwards.",
+        "id": "Geser jari di sepanjang batang dan ketuk setiap bagian sambil menaruh bendera kertas kecil; hitung benderanya setelah itu."
+      }
+    },
+    {
+      "code": "COUNTS_TWICE",
+      "description": {
+        "en": "Counts a section twice or keeps counting past the end.",
+        "id": "Menghitung satu bagian dua kali atau terus menghitung melewati ujung."
+      },
+      "remediation": {
+        "en": "Lay the rod against a wall and count from the wall outwards, stopping when the hand drops off the end.",
+        "id": "Letakkan batang menempel dinding dan hitung dari dinding ke luar, berhenti saat tangan lepas dari ujungnya."
+      }
+    },
+    {
+      "code": "JOINS_DIGITS",
+      "description": {
+        "en": "Puts two numbers side by side as digits instead of combining quantities.",
+        "id": "Menuliskan dua bilangan berdampingan sebagai angka alih-alih menggabungkan jumlahnya."
+      },
+      "remediation": {
+        "en": "Stay with rods only: lay the two rods end to end and find the single rod that matches them.",
+        "id": "Tetap dengan batang saja: sambung dua batang dan cari satu batang yang sama panjang."
+      }
+    },
+    {
+      "code": "ONE_MORE_ONE_LESS",
+      "description": {
+        "en": "Mixes up 'one more' and 'one less', or does not see a change.",
+        "id": "Tertukar antara 'satu lebih' dan 'satu kurang', atau tidak melihat perubahan."
+      },
+      "remediation": {
+        "en": "Lay rod 1 at the end of rod 5 and compare with rod 6; then take rod 1 away and compare with rod 4.",
+        "id": "Letakkan batang 1 di ujung batang 5 dan bandingkan dengan batang 6; lalu ambil batang 1 dan bandingkan dengan batang 4."
+      }
+    },
+    {
+      "code": "SECTION_NOT_TOTAL",
+      "description": {
+        "en": "Gives the length of one section instead of the whole rod.",
+        "id": "Menyebut panjang satu bagian, bukan seluruh batang."
+      },
+      "remediation": {
+        "en": "Lay a tape measure next to rod 10 and read the end together.",
+        "id": "Letakkan meteran di samping batang 10 dan baca ujungnya bersama."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Match number cards 1 to 10 to the rods, then use the rods to show 2 + 3 and 7 − 2.",
+      "id": "Cocokkan kartu angka 1 sampai 10 dengan batang, lalu pakai batang untuk menunjukkan 2 + 3 dan 7 − 2."
+    },
+    {
+      "en": "Lay the rods in a spiral or a zigzag path and walk along it counting sections.",
+      "id": "Susun batang menjadi spiral atau jalur zig-zag lalu berjalan di sepanjangnya sambil menghitung bagian."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who cannot use the floor can work on a long table with a lip so rods do not slide off.",
+      "id": "Anak yang tidak bisa bekerja di lantai dapat memakai meja panjang berpinggiran agar batang tidak jatuh."
+    },
+    {
+      "en": "Glue a strip of felt on every second section so sections can be counted by touch.",
+      "id": "Tempel kain flanel pada setiap bagian kedua agar bagian bisa dihitung dengan meraba."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult does all measuring, cutting and sanding, using a craft knife or saw away from the child; check for splinters before use.",
+        "id": "Orang dewasa yang mengukur, memotong, dan mengampelas, memakai pisau kerajinan atau gergaji jauh dari anak; periksa serpihan sebelum dipakai."
+      },
+      {
+        "en": "Show your child to carry long rods by both ends, upright and slowly, so no one is poked.",
+        "id": "Tunjukkan anak membawa batang panjang dengan memegang kedua ujungnya, tegak dan pelan, agar tidak mengenai orang lain."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child builds the staircase alone and correctly counts any three rods asked for, on two different days.",
+      "id": "Dikuasai jika anak menyusun tangga sendiri dan menghitung dengan benar tiga batang yang diminta, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "bilingual-parity",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-montessori",
+    "createdAt": "2026-11-10"
+  }
+}
