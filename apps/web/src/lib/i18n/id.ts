@@ -46,6 +46,7 @@ export const id: Dictionary = {
     haveAccount: 'Sudah punya akun?',
     invalid: 'Email atau kata sandi tidak tepat.',
     exists: 'Akun dengan email ini sudah ada.',
+    signupClosed: 'Ini situs keluarga pribadi. Akun baru hanya melalui undangan.',
     rateLimited: 'Terlalu banyak percobaan. Tunggu beberapa menit lalu coba lagi.',
     adultsOnly: 'Akun hanya untuk orang tua dan pengasuh. Anak tidak memerlukan alamat email.',
   },

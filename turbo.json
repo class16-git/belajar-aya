@@ -10,7 +10,8 @@
     "E2E_DATABASE_URL",
     "VERCEL",
     "VERCEL_ENV",
-    "ATLAS_PUBLIC_ORIGIN"
+    "ATLAS_PUBLIC_ORIGIN",
+    "ATLAS_SIGNUP_ALLOWED_EMAILS"
   ],
   "tasks": {
     "build": {

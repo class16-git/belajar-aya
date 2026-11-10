@@ -44,6 +44,7 @@ export const en = {
     haveAccount: 'Already have an account?',
     invalid: 'Email or password is not correct.',
     exists: 'An account with this email already exists.',
+    signupClosed: 'This is a private family site. New accounts are by invitation only.',
     rateLimited: 'Too many tries. Please wait a few minutes and try again.',
     adultsOnly: 'Accounts are for parents and caregivers only. Children never need an email address.',
   },
