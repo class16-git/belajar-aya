@@ -1,6 +1,6 @@
 # Kindergarten mathematics (complete for the bible's K maths objectives)
 
-Status: implemented, tested and approved under the owner's standing approval (2026-11-10).
+Status: implemented and tested; **awaiting your review** (agent-checked, hidden in production). Approve with `pnpm content:approve -- --reviewer "<initials>" --role parent lesson-k-teens-001 lesson-k-teens-002 lesson-k-bonds-20-001 lesson-k-bonds-20-002 lesson-k-picture-story-001`.
 
 | Objective | On screen | Offline |
 |---|---|---|

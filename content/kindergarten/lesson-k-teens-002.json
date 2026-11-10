@@ -62,7 +62,7 @@
     "en": "Teen cards: write 10 on one card and 1–9 on small cards; place a small card over the 0 to make 13, 17…",
     "id": "Kartu belasan: tulis 10 di satu kartu dan 1–9 di kartu kecil; tutup angka 0 dengan kartu kecil untuk membuat 13, 17…"
   },
-  "reviewStatus": "reviewed",
+  "reviewStatus": "agent_reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -70,10 +70,7 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ],
-    "reviewedBy": "owner",
-    "reviewerRole": "parent",
-    "reviewedAt": "2026-11-10"
+    ]
   },
   "contentVersion": "1.0.0",
   "framework": "singapore_math",

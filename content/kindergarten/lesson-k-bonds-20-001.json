@@ -63,7 +63,7 @@
     "en": "Use two egg cartons and up to 20 large objects: split them into two groups and name both parts.",
     "id": "Gunakan dua wadah telur dan sampai 20 benda besar: bagi menjadi dua kelompok dan sebut kedua bagiannya."
   },
-  "reviewStatus": "reviewed",
+  "reviewStatus": "agent_reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -71,10 +71,7 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ],
-    "reviewedBy": "owner",
-    "reviewerRole": "parent",
-    "reviewedAt": "2026-11-10"
+    ]
   },
   "contentVersion": "1.0.0",
   "framework": "singapore_math",
