@@ -1,0 +1,485 @@
+{
+  "id": "unit-g6-math-percentages",
+  "version": "1.0.0",
+  "level": "g6",
+  "framework": "math",
+  "strand": "ratio_percentage",
+  "title": {
+    "en": "Percentages in everyday life",
+    "id": "Persen dalam kehidupan sehari-hari"
+  },
+  "prerequisites": [
+    "unit-g6-math-ratio",
+    "unit-g5-math-decimals-to-thousandths"
+  ],
+  "objective": {
+    "en": "Convert between fractions, decimals and percentages, find a percentage of an amount, calculate discounts and percentage increase, and find the whole from a percentage.",
+    "id": "Mengubah antara pecahan, desimal, dan persen, mencari persen dari suatu jumlah, menghitung diskon dan kenaikan persen, serta mencari keseluruhan dari suatu persen."
+  },
+  "rationale": {
+    "en": "Percentages appear on every 'diskon' sign and price change. A 100-square grid and a percentage bar show percent as 'out of 100', so children can reason with 10% and 1% steps instead of memorising formulas they cannot check.",
+    "id": "Persen muncul di setiap papan 'diskon' dan perubahan harga. Petak 100 dan batang persen menunjukkan persen sebagai 'per seratus', sehingga anak bisa bernalar dengan langkah 10% dan 1% alih-alih menghafal rumus yang tidak bisa mereka periksa."
+  },
+  "outcomes": [
+    {
+      "en": "Converts fluently between common fractions, decimals and percentages.",
+      "id": "Mengubah dengan lancar antara pecahan, desimal, dan persen yang umum."
+    },
+    {
+      "en": "Solves discount, increase and reverse percentage problems with a percentage bar.",
+      "id": "Menyelesaikan soal diskon, kenaikan, dan persen terbalik dengan batang persen."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can find 25% of Rp 80,000 in two different ways.",
+      "id": "Aku bisa mencari 25% dari Rp80.000 dengan dua cara berbeda."
+    },
+    {
+      "en": "I can explain what a 20% discount means for the price I pay.",
+      "id": "Aku bisa menjelaskan arti diskon 20% bagi harga yang kubayar."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Collect real price tags or advertisements with 'diskon' and use them as problems.",
+      "id": "Kumpulkan label harga atau iklan 'diskon' sungguhan dan pakai sebagai soal."
+    },
+    {
+      "en": "Draw a percentage bar split into 10 equal parts (10% each) above an amount bar.",
+      "id": "Gambar batang persen yang dibagi 10 bagian sama besar (masing-masing 10%) di atas batang jumlah."
+    },
+    {
+      "en": "Always ask 'Percent of what?' to decide which amount is 100%.",
+      "id": "Selalu tanyakan 'Persen dari apa?' untuk menentukan jumlah mana yang 100%."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Decide what is 100%. Find 10% (divide by 10) or 1% (divide by 100), then build the percentage you need.",
+      "id": "Tentukan apa yang 100%. Cari 10% (bagi 10) atau 1% (bagi 100), lalu susun persen yang dicari."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Colour 25 squares of a 10 by 10 grid made from squared paper; show that 25 out of 100 is 1/4, 0.25 and 25%. Then shade 40 squares for 0.4.",
+        "id": "Warnai 25 persegi dari petak 10 kali 10 di kertas berpetak; tunjukkan bahwa 25 dari 100 adalah 1/4, 0,25, dan 25%. Lalu arsir 40 persegi untuk 0,4."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a percentage bar from 0% to 100% above a price bar from Rp 0 to Rp 150,000; mark 10% = Rp 15,000 and 20% = Rp 30,000.",
+        "id": "Gambar batang persen 0% sampai 100% di atas batang harga Rp0 sampai Rp150.000; tandai 10% = Rp15.000 dan 20% = Rp30.000."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write 25% of 80,000 = 25/100 × 80,000 = 20,000 and 150,000 × 80/100 = 120,000.",
+        "id": "Tulis 25% dari 80.000 = 25/100 × 80.000 = 20.000 dan 150.000 × 80/100 = 120.000."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Squared paper with 10 by 10 grids, coloured pencils, a ruler",
+      "id": "Kertas berpetak dengan petak 10 kali 10, pensil warna, penggaris"
+    },
+    {
+      "en": "Shop advertisements or price tags showing discounts",
+      "id": "Iklan toko atau label harga yang menunjukkan diskon"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw two 10 by 10 grids and collect three discount advertisements.",
+      "id": "Gambar dua petak 10 kali 10 dan kumpulkan tiga iklan diskon."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Percentage of an amount: 25% of Rp 80,000. 25% = 1/4, so 80,000 ÷ 4 = Rp 20,000. Or 10% = 8,000, 20% = 16,000, 5% = 4,000, total 20,000.",
+      "id": "Persen dari jumlah: 25% dari Rp80.000. 25% = 1/4, jadi 80.000 ÷ 4 = Rp20.000. Atau 10% = 8.000, 20% = 16.000, 5% = 4.000, jumlah 20.000."
+    },
+    {
+      "en": "Discount: shoes cost Rp 150,000 with a 20% discount. 10% = 15,000, 20% = 30,000. Pay 150,000 - 30,000 = Rp 120,000, which is 80% of the price.",
+      "id": "Diskon: sepatu Rp150.000 dengan diskon 20%. 10% = 15.000, 20% = 30.000. Bayar 150.000 - 30.000 = Rp120.000, yaitu 80% dari harga."
+    },
+    {
+      "en": "Percentage increase: the price of a kilogram of rice rises in a story from Rp 12,000 to Rp 15,000. The increase is 3,000 out of the old price 12,000: 3,000/12,000 = 1/4 = 25%.",
+      "id": "Kenaikan persen: dalam sebuah cerita harga sekilo beras naik dari Rp12.000 menjadi Rp15.000. Kenaikannya 3.000 dari harga lama 12.000: 3.000/12.000 = 1/4 = 25%."
+    },
+    {
+      "en": "Finding the whole: 40% of a number is 18. 10% is 18 ÷ 4 = 4.5, so 100% is 45.",
+      "id": "Mencari keseluruhan: 40% dari suatu bilangan adalah 18. 10% adalah 18 ÷ 4 = 4,5, jadi 100% adalah 45."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Make a conversion table for 1/2, 1/4, 3/4, 1/5, 1/10 and 3/8 as decimals and percentages.",
+      "id": "Buat tabel konversi untuk 1/2, 1/4, 3/4, 1/5, 1/10, dan 3/8 sebagai desimal dan persen."
+    },
+    {
+      "en": "Work out the sale price for each collected advertisement and check which saves the most rupiah.",
+      "id": "Hitung harga diskon untuk setiap iklan yang dikumpulkan dan periksa mana yang paling menghemat rupiah."
+    },
+    {
+      "en": "A test has 40 questions and Dina gets 34 right. Find her percentage using a percentage bar.",
+      "id": "Sebuah ujian berisi 40 soal dan Dina menjawab 34 dengan benar. Cari persennya dengan batang persen."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "What is 25% of Rp 80,000?",
+        "id": "Berapa 25% dari Rp80.000?"
+      },
+      "choices": {
+        "en": [
+          "Rp 20,000",
+          "Rp 25,000",
+          "Rp 55,000"
+        ],
+        "id": [
+          "Rp20.000",
+          "Rp25.000",
+          "Rp55.000"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "25% is one quarter: 80,000 ÷ 4 = 20,000.",
+        "id": "25% adalah seperempat: 80.000 ÷ 4 = 20.000."
+      },
+      "check": {
+        "expression": "25/100 * 80000",
+        "result": "20000"
+      },
+      "distractorMisconceptions": {
+        "1": "PERCENT_AS_AMOUNT",
+        "2": "SUBTRACTS_PERCENT_NUMBER"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Shoes cost Rp 150,000. There is a 20% discount. What is the sale price?",
+        "id": "Sepatu harganya Rp150.000. Ada diskon 20%. Berapa harga setelah diskon?"
+      },
+      "choices": {
+        "en": [
+          "Rp 120,000",
+          "Rp 30,000",
+          "Rp 130,000"
+        ],
+        "id": [
+          "Rp120.000",
+          "Rp30.000",
+          "Rp130.000"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "20% of 150,000 is 30,000; 150,000 - 30,000 = 120,000.",
+        "id": "20% dari 150.000 adalah 30.000; 150.000 - 30.000 = 120.000."
+      },
+      "check": {
+        "expression": "150000 - 20/100*150000",
+        "result": "120000"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_DISCOUNT_NOT_PRICE",
+        "2": "PERCENT_AS_AMOUNT"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Rizal gets 18 out of 24 questions right. What percentage is that?",
+        "id": "Rizal menjawab benar 18 dari 24 soal. Berapa persennya?"
+      },
+      "choices": {
+        "en": [
+          "75%",
+          "18%",
+          "6%"
+        ],
+        "id": [
+          "75%",
+          "18%",
+          "6%"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "18/24 = 3/4 = 75/100 = 75%.",
+        "id": "18/24 = 3/4 = 75/100 = 75%."
+      },
+      "check": {
+        "expression": "18/24",
+        "result": "75%"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNT_AS_PERCENT",
+        "2": "COUNT_AS_PERCENT"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Write 0.4 as a percentage.",
+        "id": "Tulis 0,4 sebagai persen."
+      },
+      "choices": {
+        "en": [
+          "40%",
+          "4%",
+          "0.4%"
+        ],
+        "id": [
+          "40%",
+          "4%",
+          "0,4%"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "0.4 = 4 tenths = 40 hundredths = 40%.",
+        "id": "0,4 = 4 persepuluh = 40 perseratus = 40%."
+      },
+      "check": {
+        "expression": "0.4",
+        "result": "40%"
+      },
+      "distractorMisconceptions": {
+        "1": "DECIMAL_SHIFT",
+        "2": "DECIMAL_SHIFT"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "In a story, the price of 1 kg of rice rises from Rp 12,000 to Rp 15,000. What is the percentage increase?",
+        "id": "Dalam sebuah cerita, harga 1 kg beras naik dari Rp12.000 menjadi Rp15.000. Berapa persen kenaikannya?"
+      },
+      "choices": {
+        "en": [
+          "25%",
+          "20%",
+          "3%"
+        ],
+        "id": [
+          "25%",
+          "20%",
+          "3%"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The increase is 3,000 compared with the old price 12,000: 3,000/12,000 = 1/4 = 25%.",
+        "id": "Kenaikannya 3.000 dibandingkan harga lama 12.000: 3.000/12.000 = 1/4 = 25%."
+      },
+      "check": {
+        "expression": "(15000 - 12000)/12000",
+        "result": "25%"
+      },
+      "distractorMisconceptions": {
+        "1": "WRONG_BASE",
+        "2": "COUNT_AS_PERCENT"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "40% of a number is 18. What is the number?",
+        "id": "40% dari suatu bilangan adalah 18. Berapa bilangan itu?"
+      },
+      "choices": {
+        "en": [
+          "45",
+          "7.2",
+          "58"
+        ],
+        "id": [
+          "45",
+          "7,2",
+          "58"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "40% = 18, so 10% = 4.5 and 100% = 45.",
+        "id": "40% = 18, jadi 10% = 4,5 dan 100% = 45."
+      },
+      "check": {
+        "expression": "18 / 40 * 100",
+        "result": "45"
+      },
+      "distractorMisconceptions": {
+        "1": "REVERSES_PERCENT",
+        "2": "ADDS_PERCENT_NUMBER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "PERCENT_AS_AMOUNT",
+      "description": {
+        "en": "Treats the percentage number as rupiah, such as 25% as Rp 25,000 or 20% as Rp 20,000.",
+        "id": "Menganggap angka persen sebagai rupiah, misalnya 25% sebagai Rp25.000 atau 20% sebagai Rp20.000."
+      },
+      "remediation": {
+        "en": "Draw the percentage bar above the amount bar and find 10% by dividing the amount by 10.",
+        "id": "Gambar batang persen di atas batang jumlah dan cari 10% dengan membagi jumlah dengan 10."
+      }
+    },
+    {
+      "code": "SUBTRACTS_PERCENT_NUMBER",
+      "description": {
+        "en": "Subtracts the percentage number from the amount.",
+        "id": "Mengurangkan angka persen dari jumlah."
+      },
+      "remediation": {
+        "en": "Shade 25 of 100 squares and ask what fraction of the whole is shaded, then apply it to the amount.",
+        "id": "Arsir 25 dari 100 persegi dan tanyakan pecahan berapa dari keseluruhan yang diarsir, lalu terapkan ke jumlahnya."
+      }
+    },
+    {
+      "code": "GIVES_DISCOUNT_NOT_PRICE",
+      "description": {
+        "en": "Gives the discount amount when asked for the sale price.",
+        "id": "Memberi besar diskon padahal ditanya harga setelah diskon."
+      },
+      "remediation": {
+        "en": "On the bar, colour the discount part and the part still paid in two colours; read the paid part.",
+        "id": "Di batang, warnai bagian diskon dan bagian yang tetap dibayar dengan dua warna; baca bagian yang dibayar."
+      }
+    },
+    {
+      "code": "COUNT_AS_PERCENT",
+      "description": {
+        "en": "Uses a count or difference directly as the percentage.",
+        "id": "Memakai banyak atau selisih langsung sebagai persen."
+      },
+      "remediation": {
+        "en": "Write the fraction 'part out of whole' first, then change it to hundredths.",
+        "id": "Tulis pecahan 'bagian dari keseluruhan' dulu, lalu ubah menjadi perseratus."
+      }
+    },
+    {
+      "code": "DECIMAL_SHIFT",
+      "description": {
+        "en": "Moves the decimal point the wrong number of places when converting.",
+        "id": "Menggeser koma desimal dengan banyak tempat yang salah saat mengubah."
+      },
+      "remediation": {
+        "en": "Shade 0.4 on a 100 grid: count the shaded hundredths to read the percentage.",
+        "id": "Arsir 0,4 di petak 100: hitung perseratusan yang diarsir untuk membaca persennya."
+      }
+    },
+    {
+      "code": "WRONG_BASE",
+      "description": {
+        "en": "Compares the change with the new value instead of the original.",
+        "id": "Membandingkan perubahan dengan nilai baru, bukan nilai awal."
+      },
+      "remediation": {
+        "en": "Ask 'Increase from what?' and mark the old price as 100% on the bar.",
+        "id": "Tanyakan 'Naik dari berapa?' dan tandai harga lama sebagai 100% di batang."
+      }
+    },
+    {
+      "code": "REVERSES_PERCENT",
+      "description": {
+        "en": "Finds the percentage of the given part instead of the whole.",
+        "id": "Mencari persen dari bagian yang diketahui, bukan keseluruhannya."
+      },
+      "remediation": {
+        "en": "Label 18 on the 40% mark of the bar and fill in 10% steps up to 100%.",
+        "id": "Beri label 18 pada tanda 40% di batang dan isi langkah 10% sampai 100%."
+      }
+    },
+    {
+      "code": "ADDS_PERCENT_NUMBER",
+      "description": {
+        "en": "Adds the percentage number and the part.",
+        "id": "Menjumlahkan angka persen dan bagiannya."
+      },
+      "remediation": {
+        "en": "Check the answer by finding 40% of it; 40% of 58 is not 18.",
+        "id": "Periksa jawaban dengan mencari 40%-nya; 40% dari 58 bukan 18."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Compare two offers: 'buy 2 get 1 free' and '30% off'. Which gives the bigger percentage saving on three items of the same price?",
+      "id": "Bandingkan dua penawaran: 'beli 2 gratis 1' dan 'diskon 30%'. Mana yang memberi penghematan persen lebih besar untuk tiga barang berharga sama?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Let children use a calculator for the arithmetic once the bar model is drawn; large 100 grids help visual learners.",
+      "id": "Izinkan kalkulator untuk berhitung setelah model batang digambar; petak 100 yang besar membantu pembelajar visual."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "No physical hazards; use printed advertisements rather than browsing shopping sites.",
+        "id": "Tidak ada bahaya fisik; pakai iklan cetak daripada menjelajah situs belanja."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child converts four values between forms, and solves a discount, an increase and a reverse percentage problem correctly, on two different days.",
+      "id": "Dikuasai jika anak mengubah empat nilai antar bentuk, serta menyelesaikan soal diskon, kenaikan, dan persen terbalik dengan benar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

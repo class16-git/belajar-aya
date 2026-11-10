@@ -1,6 +1,6 @@
 {
   "id": "reading-k-shapes-on-my-street",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "readingLevel": "emergent",
   "genre": "nonfiction",
@@ -15,7 +15,7 @@
       "I see a circle. The wheel is a circle. A circle has no corners.",
       "I see a square. The window is a square. A square has 4 sides that are the same.",
       "I see a triangle. The roof is a triangle. A triangle has 3 sides.",
-      "I see a rectangle. The door is a rectangle. It is long and thin.",
+      "I see a rectangle. The door is a rectangle. A rectangle has 4 sides. Two sides are long and two are short.",
       "What shapes can you see on your street?"
     ],
     "id": [
@@ -23,7 +23,7 @@
       "Aku melihat lingkaran. Roda itu lingkaran. Lingkaran tidak punya sudut.",
       "Aku melihat persegi. Jendela itu persegi. Persegi punya 4 sisi yang sama panjang.",
       "Aku melihat segitiga. Atap itu segitiga. Segitiga punya 3 sisi.",
-      "Aku melihat persegi panjang. Pintu itu persegi panjang. Bentuknya panjang dan ramping.",
+      "Aku melihat persegi panjang. Pintu itu persegi panjang. Persegi panjang punya 4 sisi. Dua sisi panjang dan dua sisi pendek.",
       "Bentuk apa yang bisa kamu lihat di jalanmu?"
     ]
   },
@@ -161,7 +161,7 @@
         ]
       },
       "answer": 0,
-      "evidenceParagraph": 2,
+      "evidenceParagraph": 3,
       "check": {
         "expression": "4 + 3",
         "result": "7"
@@ -225,9 +225,18 @@
     {
       "claim": "A triangle has 3 sides.",
       "status": "common_knowledge"
+    },
+    {
+      "claim": "A rectangle has 4 sides: two long and two short (or all equal, as in a square).",
+      "status": "common_knowledge"
     }
   ],
-  "safetyNotes": [],
+  "safetyNotes": [
+    {
+      "en": "On the street, hold hands and stay on the pavement or path, away from traffic.",
+      "id": "Di jalan, bergandengan tangan dan tetap di trotoar atau pinggir jalan, jauh dari kendaraan."
+    }
+  ],
   "arabicPhrases": [],
   "reviewFlags": [],
   "reviewStatus": "agent_reviewed",

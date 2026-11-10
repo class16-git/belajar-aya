@@ -1,0 +1,442 @@
+{
+  "id": "unit-g6-math-ratio",
+  "version": "1.0.0",
+  "level": "g6",
+  "framework": "math",
+  "strand": "ratio_percentage",
+  "title": {
+    "en": "Ratio and the unit method",
+    "id": "Perbandingan dan metode satuan"
+  },
+  "prerequisites": [
+    "unit-g4-math-factors-and-multiples",
+    "unit-g4-math-equivalent-fractions"
+  ],
+  "objective": {
+    "en": "Write and simplify ratios, find equivalent ratios, and solve sharing, scaling and difference problems with bar models and the unit method.",
+    "id": "Menulis dan menyederhanakan perbandingan, mencari perbandingan senilai, serta menyelesaikan soal pembagian, penskalaan, dan selisih dengan model batang dan metode satuan."
+  },
+  "rationale": {
+    "en": "Ratio is multiplicative: doubling a recipe doubles every ingredient. Many children reason additively ('add 4 to both'). The Singapore bar model shows ratio parts as equal units, so finding one unit unlocks every part, the whole and the difference.",
+    "id": "Perbandingan bersifat perkalian: menggandakan resep berarti menggandakan setiap bahan. Banyak anak bernalar dengan penjumlahan ('tambah 4 ke keduanya'). Model batang Singapura menunjukkan bagian perbandingan sebagai satuan sama besar, sehingga menemukan satu satuan membuka setiap bagian, keseluruhan, dan selisihnya."
+  },
+  "outcomes": [
+    {
+      "en": "Simplifies ratios using common factors and scales a ratio up or down.",
+      "id": "Menyederhanakan perbandingan dengan faktor persekutuan dan memperbesar atau memperkecil perbandingan."
+    },
+    {
+      "en": "Solves ratio problems given the total, one part or the difference by finding the value of one unit.",
+      "id": "Menyelesaikan soal perbandingan jika diketahui total, satu bagian, atau selisih dengan mencari nilai satu satuan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can draw a bar model for 3 : 5 and share Rp 40,000 in that ratio.",
+      "id": "Aku bisa menggambar model batang untuk 3 : 5 dan membagi Rp40.000 dengan perbandingan itu."
+    },
+    {
+      "en": "I can explain why adding the same number to both parts changes a ratio.",
+      "id": "Aku bisa menjelaskan mengapa menambah bilangan yang sama ke kedua bagian mengubah perbandingan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Cook or mix something real: rice and water, or syrup and water for es buah, and change the amount while keeping the taste.",
+      "id": "Masak atau campur sesuatu yang nyata: beras dan air, atau sirup dan air untuk es buah, lalu ubah jumlahnya dengan rasa tetap sama."
+    },
+    {
+      "en": "Every problem gets a bar model: one bar per quantity, equal unit boxes, and a label for what is known.",
+      "id": "Setiap soal digambar model batang: satu batang per besaran, kotak satuan sama besar, dan label untuk yang diketahui."
+    },
+    {
+      "en": "Ask 'What is one unit worth?' as the key question.",
+      "id": "Ajukan 'Berapa nilai satu satuan?' sebagai pertanyaan kunci."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Draw a bar for each person or thing. Count the units. Find one unit, then the part you need.",
+      "id": "Gambar batang untuk setiap orang atau benda. Hitung satuannya. Cari satu satuan, lalu bagian yang dicari."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Mix es buah syrup and water in the ratio 2 : 7 using a measuring spoon or cup; then make a double batch (4 : 14) and taste that both are the same.",
+        "id": "Campur sirup es buah dan air dengan perbandingan 2 : 7 memakai sendok atau gelas takar; lalu buat dua kali lipat (4 : 14) dan rasakan bahwa keduanya sama."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw Aya's bar as 3 units and Bayu's bar as 5 units; a bracket over all 8 units is labelled Rp 40,000.",
+        "id": "Gambar batang Aya 3 satuan dan batang Bayu 5 satuan; kurung kurawal di atas 8 satuan diberi label Rp40.000."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write 8 units = 40,000, so 1 unit = 5,000; Bayu = 5 × 5,000 = 25,000.",
+        "id": "Tulis 8 satuan = 40.000, jadi 1 satuan = 5.000; Bayu = 5 × 5.000 = 25.000."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Measuring cups or spoons, water and a little syrup, two clear cups",
+      "id": "Gelas atau sendok takar, air, dan sedikit sirup, dua gelas bening"
+    },
+    {
+      "en": "Squared paper for bar models",
+      "id": "Kertas berpetak untuk model batang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write five ratio problems on cards and set out the cups and measures.",
+      "id": "Tulis lima soal perbandingan di kartu dan siapkan gelas serta takarannya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Scaling: a rice cooker recipe uses 2 cups of rice to 3 cups of water. For 6 cups of rice, rice is multiplied by 3, so water is 3 × 3 = 9 cups.",
+      "id": "Penskalaan: resep penanak nasi memakai 2 gelas beras untuk 3 gelas air. Untuk 6 gelas beras, beras dikali 3, jadi air 3 × 3 = 9 gelas."
+    },
+    {
+      "en": "Simplifying: 12 : 18. The highest common factor is 6, so 12 : 18 = 2 : 3.",
+      "id": "Menyederhanakan: 12 : 18. FPB-nya 6, jadi 12 : 18 = 2 : 3."
+    },
+    {
+      "en": "Total given: Rp 40,000 shared between Aya and Bayu in the ratio 3 : 5. 8 units = 40,000; 1 unit = 5,000; Aya Rp 15,000 and Bayu Rp 25,000.",
+      "id": "Total diketahui: Rp40.000 dibagi antara Aya dan Bayu dengan perbandingan 3 : 5. 8 satuan = 40.000; 1 satuan = 5.000; Aya Rp15.000 dan Bayu Rp25.000."
+    },
+    {
+      "en": "Difference given: Aya and Bayu have stickers in the ratio 5 : 3 and Aya has 12 more. The difference is 2 units = 12, so 1 unit = 6; Bayu has 18 and Aya 30.",
+      "id": "Selisih diketahui: stiker Aya dan Bayu berbanding 5 : 3 dan Aya punya 12 lebih banyak. Selisihnya 2 satuan = 12, jadi 1 satuan = 6; Bayu punya 18 dan Aya 30."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Simplify 15 : 25, 24 : 36 and 14 : 21.",
+      "id": "Sederhanakan 15 : 25, 24 : 36, dan 14 : 21."
+    },
+    {
+      "en": "Scale a family recipe for 4 people to 6 people, writing each ingredient's new amount.",
+      "id": "Ubah resep keluarga untuk 4 orang menjadi 6 orang, tulis jumlah baru setiap bahan."
+    },
+    {
+      "en": "Solve three bar-model problems: one with the total, one with one part and one with the difference known.",
+      "id": "Selesaikan tiga soal model batang: satu dengan total, satu dengan satu bagian, dan satu dengan selisih yang diketahui."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A recipe uses 2 cups of rice for every 3 cups of water. How much water is needed for 6 cups of rice?",
+        "id": "Sebuah resep memakai 2 gelas beras untuk setiap 3 gelas air. Berapa air yang diperlukan untuk 6 gelas beras?"
+      },
+      "choices": {
+        "en": [
+          "9 cups",
+          "7 cups",
+          "4 cups"
+        ],
+        "id": [
+          "9 gelas",
+          "7 gelas",
+          "4 gelas"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6 cups of rice is 3 times 2 cups, so the water is 3 times 3 cups = 9 cups.",
+        "id": "6 gelas beras adalah 3 kali 2 gelas, jadi air 3 kali 3 gelas = 9 gelas."
+      },
+      "check": {
+        "expression": "6/2 * 3",
+        "result": "9"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDITIVE_REASONING",
+        "2": "INVERTS_RATIO"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "12 : 18 = 2 : ?",
+        "id": "12 : 18 = 2 : ?"
+      },
+      "choices": {
+        "en": [
+          "3",
+          "8",
+          "9"
+        ],
+        "id": [
+          "3",
+          "8",
+          "9"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Divide both parts by 6: 12 ÷ 6 = 2 and 18 ÷ 6 = 3.",
+        "id": "Bagi kedua bagian dengan 6: 12 ÷ 6 = 2 dan 18 ÷ 6 = 3."
+      },
+      "check": {
+        "expression": "18 / 6",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDITIVE_REASONING",
+        "2": "INCONSISTENT_DIVISOR"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Rp 40,000 is shared between Aya and Bayu in the ratio 3 : 5. How much does Bayu get?",
+        "id": "Rp40.000 dibagi antara Aya dan Bayu dengan perbandingan 3 : 5. Berapa bagian Bayu?"
+      },
+      "choices": {
+        "en": [
+          "Rp 25,000",
+          "Rp 8,000",
+          "Rp 15,000"
+        ],
+        "id": [
+          "Rp25.000",
+          "Rp8.000",
+          "Rp15.000"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "8 units = Rp 40,000, so 1 unit = Rp 5,000 and Bayu's 5 units = Rp 25,000.",
+        "id": "8 satuan = Rp40.000, jadi 1 satuan = Rp5.000 dan 5 satuan Bayu = Rp25.000."
+      },
+      "check": {
+        "expression": "40000/8*5",
+        "result": "25000"
+      },
+      "distractorMisconceptions": {
+        "1": "DIVIDES_BY_ONE_PART",
+        "2": "GIVES_OTHER_SHARE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Es buah is made with syrup and water in the ratio 2 : 7. What fraction of the drink is syrup?",
+        "id": "Es buah dibuat dari sirup dan air dengan perbandingan 2 : 7. Pecahan berapa dari minuman itu yang berupa sirup?"
+      },
+      "choices": {
+        "en": [
+          "2/9",
+          "2/7",
+          "7/9"
+        ],
+        "id": [
+          "2/9",
+          "2/7",
+          "7/9"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "There are 2 + 7 = 9 parts in all, and 2 of them are syrup: 2/9.",
+        "id": "Seluruhnya ada 2 + 7 = 9 bagian, dan 2 di antaranya sirup: 2/9."
+      },
+      "check": {
+        "expression": "2/(2 + 7)",
+        "result": "2/9"
+      },
+      "distractorMisconceptions": {
+        "1": "PART_TO_PART_AS_FRACTION",
+        "2": "GIVES_OTHER_SHARE"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Aya and Bayu have stickers in the ratio 5 : 3. Aya has 12 more stickers than Bayu. How many stickers does Bayu have?",
+        "id": "Stiker Aya dan Bayu berbanding 5 : 3. Aya punya 12 stiker lebih banyak dari Bayu. Berapa stiker Bayu?"
+      },
+      "choices": {
+        "en": [
+          "18",
+          "36",
+          "30"
+        ],
+        "id": [
+          "18",
+          "36",
+          "30"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The difference is 5 - 3 = 2 units = 12, so 1 unit = 6 and Bayu has 3 × 6 = 18.",
+        "id": "Selisihnya 5 - 3 = 2 satuan = 12, jadi 1 satuan = 6 dan Bayu punya 3 × 6 = 18."
+      },
+      "check": {
+        "expression": "12/2*3",
+        "result": "18"
+      },
+      "distractorMisconceptions": {
+        "1": "DIFFERENCE_AS_ONE_UNIT",
+        "2": "GIVES_OTHER_SHARE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDITIVE_REASONING",
+      "description": {
+        "en": "Adds or subtracts the same amount to both parts instead of multiplying or dividing.",
+        "id": "Menambah atau mengurangi jumlah yang sama pada kedua bagian, bukan mengali atau membagi."
+      },
+      "remediation": {
+        "en": "Mix the drink both ways and taste: adding 4 to each part changes the taste, multiplying does not. Then draw both on bar models.",
+        "id": "Campur minuman dengan kedua cara dan rasakan: menambah 4 ke setiap bagian mengubah rasa, mengali tidak. Lalu gambar keduanya dengan model batang."
+      }
+    },
+    {
+      "code": "INVERTS_RATIO",
+      "description": {
+        "en": "Applies the scale factor the wrong way round.",
+        "id": "Menerapkan faktor skala secara terbalik."
+      },
+      "remediation": {
+        "en": "Write the ratio in a table with labelled columns (rice, water) and scale each row by the same factor.",
+        "id": "Tulis perbandingan dalam tabel dengan kolom berlabel (beras, air) dan kalikan setiap baris dengan faktor yang sama."
+      }
+    },
+    {
+      "code": "INCONSISTENT_DIVISOR",
+      "description": {
+        "en": "Divides the two parts by different numbers.",
+        "id": "Membagi kedua bagian dengan bilangan yang berbeda."
+      },
+      "remediation": {
+        "en": "Write ÷ 6 above both parts with arrows, so the same divisor is used on each side.",
+        "id": "Tulis ÷ 6 di atas kedua bagian dengan panah, supaya pembagi yang sama dipakai di kedua sisi."
+      }
+    },
+    {
+      "code": "DIVIDES_BY_ONE_PART",
+      "description": {
+        "en": "Divides the total by one part of the ratio rather than by the total number of units.",
+        "id": "Membagi total dengan satu bagian perbandingan, bukan dengan banyak seluruh satuan."
+      },
+      "remediation": {
+        "en": "Count every unit box in the bar model before dividing the total.",
+        "id": "Hitung setiap kotak satuan di model batang sebelum membagi total."
+      }
+    },
+    {
+      "code": "GIVES_OTHER_SHARE",
+      "description": {
+        "en": "Finds the other person's part, or the other quantity.",
+        "id": "Mencari bagian orang lain, atau besaran yang lain."
+      },
+      "remediation": {
+        "en": "Underline the name in the question and label each bar with a name before calculating.",
+        "id": "Garis bawahi nama dalam soal dan beri nama setiap batang sebelum menghitung."
+      }
+    },
+    {
+      "code": "PART_TO_PART_AS_FRACTION",
+      "description": {
+        "en": "Writes the part-to-part ratio as a fraction of the whole.",
+        "id": "Menulis perbandingan bagian dengan bagian sebagai pecahan dari keseluruhan."
+      },
+      "remediation": {
+        "en": "Draw both bars joined into one whole and count all the units for the denominator.",
+        "id": "Gambar kedua batang tersambung menjadi satu utuh dan hitung semua satuan untuk penyebut."
+      }
+    },
+    {
+      "code": "DIFFERENCE_AS_ONE_UNIT",
+      "description": {
+        "en": "Treats the given difference as one unit instead of the number of units in the difference.",
+        "id": "Menganggap selisih yang diketahui sebagai satu satuan, bukan sebagai beberapa satuan."
+      },
+      "remediation": {
+        "en": "Line up the two bars and shade the extra boxes: count how many units the 12 covers.",
+        "id": "Jajarkan kedua batang dan arsir kotak lebihnya: hitung berapa satuan yang ditutupi 12."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Use a map scale: if 1 cm on a map stands for 5 km, how far apart are two towns 7.5 cm apart on the map?",
+      "id": "Pakai skala peta: jika 1 cm di peta mewakili 5 km, berapa jarak dua kota yang di peta berjarak 7,5 cm?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use coloured unit boxes for each quantity; children who struggle with drawing can use pre-printed bars.",
+      "id": "Pakai kotak satuan berwarna untuk setiap besaran; anak yang kesulitan menggambar boleh memakai batang yang sudah dicetak."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": true,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use cold drinks only and wipe spills straight away; check syrup for any allergies in the family.",
+        "id": "Pakai minuman dingin saja dan segera lap tumpahan; periksa sirup untuk alergi dalam keluarga."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child simplifies two ratios and solves a total, a scaling and a difference problem with correct bar models, on two different days.",
+      "id": "Dikuasai jika anak menyederhanakan dua perbandingan serta menyelesaikan soal total, penskalaan, dan selisih dengan model batang yang benar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

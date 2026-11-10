@@ -1,0 +1,264 @@
+{
+  "id": "reading-g5-islamic-the-message-that-waited",
+  "version": "0.1.0",
+  "level": "g5",
+  "readingLevel": "fluent",
+  "genre": "fiction",
+  "mode": "independent",
+  "title": {
+    "en": "The message that waited",
+    "id": "Pesan yang tertahan"
+  },
+  "text": {
+    "en": [
+      "The class group chat buzzed just after Isya. Dimas looked at his mum's phone, which he was allowed to use for homework until eight.",
+      "Someone had forwarded a photo of a boy from the other class with a caption: 'LOL look who cried at football today.' Already six people had added laughing faces.",
+      "Dimas's thumb hovered over the laughing face. It would be so easy. Everyone else had done it.",
+      "Then he remembered the card on the fridge: STOP, CHECK, ASK. He stopped. Was it true? Probably. Was it kind? No. Would he say it to the boy's face? Never.",
+      "He thought about what Ustaz Hasan had said about backbiting: that talking badly about someone who is not there is wrong, even if it is true.",
+      "Dimas typed, deleted, and typed again. Finally he wrote: 'Guys, let's not. Everyone cries sometimes.' His heart was thumping when he pressed send.",
+      "For a minute, nothing happened. Then Sinta replied: 'True. Sorry.' Someone deleted the photo.",
+      "Dimas gave the phone back to his mum and told her what had happened. She listened, then squeezed his hand. 'That took courage,' she said."
+    ],
+    "id": [
+      "Grup obrolan kelas berbunyi tepat setelah Isya. Dimas melihat ponsel ibunya, yang boleh ia pakai untuk PR sampai jam delapan.",
+      "Seseorang meneruskan foto anak laki-laki dari kelas sebelah dengan tulisan: 'Wkwk lihat siapa yang nangis waktu main bola tadi.' Sudah enam orang menambahkan emoji tertawa.",
+      "Jempol Dimas melayang di atas emoji tertawa. Gampang sekali. Semua orang sudah melakukannya.",
+      "Lalu ia teringat kartu di kulkas: BERHENTI, PERIKSA, TANYA. Ia berhenti. Benarkah? Mungkin. Baikkah? Tidak. Maukah ia mengatakannya di depan anak itu? Tidak akan.",
+      "Ia teringat penjelasan Ustaz Hasan tentang ghibah: membicarakan keburukan orang yang tidak ada itu salah, meskipun benar.",
+      "Dimas mengetik, menghapus, lalu mengetik lagi. Akhirnya ia menulis: 'Teman-teman, jangan begitu. Semua orang pernah nangis.' Jantungnya berdebar saat ia menekan kirim.",
+      "Selama semenit, tidak ada yang terjadi. Lalu Sinta membalas: 'Benar. Maaf.' Seseorang menghapus foto itu.",
+      "Dimas mengembalikan ponsel kepada ibunya dan menceritakan apa yang terjadi. Ibu mendengarkan, lalu menggenggam tangannya. 'Itu butuh keberanian,' katanya."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Analyses a character's decision and the reasons behind it.",
+      "id": "Menganalisis keputusan seorang tokoh dan alasannya."
+    },
+    {
+      "en": "Connects the story to Islamic teaching on backbiting and kind speech.",
+      "id": "Menghubungkan cerita dengan ajaran Islam tentang ghibah dan ucapan yang baik."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "backbiting (ghibah)",
+        "id": "ghibah"
+      },
+      "meaning": {
+        "en": "saying hurtful things about someone who is not there",
+        "id": "mengatakan hal yang menyakitkan tentang orang yang tidak ada"
+      }
+    },
+    {
+      "word": {
+        "en": "hovered",
+        "id": "melayang"
+      },
+      "meaning": {
+        "en": "stayed just above something without touching it",
+        "id": "berada tepat di atas sesuatu tanpa menyentuhnya"
+      }
+    },
+    {
+      "word": {
+        "en": "courage",
+        "id": "keberanian"
+      },
+      "meaning": {
+        "en": "doing the right thing even when it is hard",
+        "id": "melakukan hal yang benar meskipun sulit"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What was the caption on the forwarded photo about?",
+        "id": "Tulisan pada foto terusan itu tentang apa?"
+      },
+      "choices": {
+        "en": [
+          "a boy who cried at football",
+          "a football match score",
+          "homework for tomorrow"
+        ],
+        "id": [
+          "anak yang menangis waktu main bola",
+          "skor pertandingan bola",
+          "PR untuk besok"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why was it hard for Dimas not to add a laughing face?",
+        "id": "Mengapa sulit bagi Dimas untuk tidak menambahkan emoji tertawa?"
+      },
+      "choices": {
+        "en": [
+          "many others had already done it",
+          "he did not know how to use the phone",
+          "his mum told him to laugh"
+        ],
+        "id": [
+          "banyak teman lain sudah melakukannya",
+          "ia tidak tahu cara memakai ponsel",
+          "ibunya menyuruhnya tertawa"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which sentence shows that Dimas felt nervous?",
+        "id": "Kalimat mana yang menunjukkan Dimas merasa gugup?"
+      },
+      "choices": {
+        "en": [
+          "His heart was thumping when he pressed send.",
+          "Then Sinta replied.",
+          "He gave the phone back to his mum."
+        ],
+        "id": [
+          "Jantungnya berdebar saat ia menekan kirim.",
+          "Lalu Sinta membalas.",
+          "Ia mengembalikan ponsel kepada ibunya."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "critical",
+      "prompt": {
+        "en": "According to the story, why is the message still wrong even if it is true?",
+        "id": "Menurut cerita, mengapa pesan itu tetap salah meskipun benar?"
+      },
+      "choices": {
+        "en": [
+          "it talks badly about someone who is not there",
+          "photos are never allowed",
+          "it was sent after Isya"
+        ],
+        "id": [
+          "isinya membicarakan keburukan orang yang tidak ada",
+          "foto tidak pernah boleh dikirim",
+          "dikirim setelah Isya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q5",
+      "kind": "reflection",
+      "prompt": {
+        "en": "What could you write if you saw a message like this?",
+        "id": "Apa yang bisa kamu tulis jika melihat pesan seperti ini?"
+      },
+      "choices": {
+        "en": [
+          "a short, kind message asking others to stop",
+          "a laughing face like everyone else",
+          "a meaner joke"
+        ],
+        "id": [
+          "pesan singkat dan baik yang mengajak teman berhenti",
+          "emoji tertawa seperti yang lain",
+          "lelucon yang lebih kejam"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "islamic_values",
+      "connection": {
+        "en": "Islam teaches truthful, kind speech and warns against backbiting (ghibah); Dimas applies this in a group chat.",
+        "id": "Islam mengajarkan ucapan yang jujur dan baik serta melarang ghibah; Dimas menerapkannya di grup obrolan."
+      }
+    },
+    {
+      "subject": "robotics_computing",
+      "connection": {
+        "en": "Being a responsible digital citizen means thinking before sharing.",
+        "id": "Menjadi warga digital yang bertanggung jawab berarti berpikir sebelum membagikan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Was Dimas's message brave? Why?",
+      "id": "Apakah pesan Dimas itu berani? Mengapa?"
+    },
+    {
+      "en": "Who could you tell if a message online upset you?",
+      "id": "Kepada siapa kamu bisa bercerita jika pesan daring membuatmu kesal?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Write three short, kind 'stopping' replies you could use if a chat turns unkind, and keep them on a card by the family device.",
+    "id": "Tulis tiga balasan 'penghenti' yang singkat dan baik yang bisa kamu pakai jika obrolan menjadi tidak baik, dan simpan di kartu dekat perangkat keluarga."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Children use shared devices with family rules and tell a trusted adult about upsetting messages.",
+      "id": "Anak memakai perangkat bersama dengan aturan keluarga dan memberi tahu orang dewasa tepercaya tentang pesan yang membuatnya kesal."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "religious_content",
+    "scholar_wording_required",
+    "source_verification",
+    "translation_review"
+  ],
+  "reviewStatus": "draft",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "tone",
+      "no-invented-citations"
+    ]
+  },
+  "religiousReview": {
+    "doctrinalSchool": null,
+    "fiqhSchool": null,
+    "arabicSource": null,
+    "edition": null,
+    "pageOrSection": null,
+    "translationReviewer": null,
+    "scholarReviewer": null,
+    "reviewedAt": null,
+    "approvalStatus": "unverified",
+    "notes": [
+      "Reading drafted by an AI; teachings are described in plain words and must be confirmed by a qualified scholar. No verse, hadith or quotation is reproduced.",
+      "Confirm the child-level definition of ghibah given through Ustaz Hasan ('talking badly about someone who is not there is wrong, even if it is true')."
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-islamic",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "id": "reading-g4-islamic-the-question-at-the-window",
+  "version": "0.1.0",
+  "level": "g4",
+  "readingLevel": "fluent",
+  "genre": "fiction",
+  "mode": "independent",
+  "title": {
+    "en": "The question at the window",
+    "id": "Pertanyaan di dekat jendela"
+  },
+  "text": {
+    "en": [
+      "The power had gone out, so Nayla and Mama sat by the open window. Without the street lights, the sky was crowded with stars.",
+      "'They're so far away,' Nayla whispered. Then, after a while: 'Mama, where is Allah? Is Allah behind the stars?'",
+      "Mama did not laugh, and she did not hurry. 'That's a good question. Let's think about the stars first. Where are they?'",
+      "'In the sky,' said Nayla. 'And the sky is above the earth. And our house is on the earth.' Everything she named was somewhere.",
+      "'Everything we can see or imagine has a size and a place,' said Mama. 'The stars, the sky, the earth, our house. Allah created all of them, and all of their places too.'",
+      "'Our teachers teach that Allah exists without a place. Allah created places and is not in need of them. Allah is not like anything He created, so we don't try to picture Allah.'",
+      "Nayla was quiet for a long time. 'That's a big idea,' she said at last.",
+      "'It is,' Mama agreed. 'Let's write your question down and ask Ustazah Fatimah on Saturday. She can explain it better than I can.'",
+      "Just then the lights came back on, and the stars faded behind the glow. Nayla found her notebook and wrote her question carefully on a new page."
+    ],
+    "id": [
+      "Listrik padam, jadi Nayla dan Mama duduk di dekat jendela yang terbuka. Tanpa lampu jalan, langit penuh bintang.",
+      "'Jauh sekali, ya,' bisik Nayla. Lalu, setelah beberapa saat: 'Ma, Allah di mana? Apakah Allah di balik bintang-bintang?'",
+      "Mama tidak tertawa, dan tidak terburu-buru. 'Pertanyaan yang bagus. Kita pikirkan bintangnya dulu. Bintang ada di mana?'",
+      "'Di langit,' kata Nayla. 'Langit ada di atas bumi. Rumah kita ada di bumi.' Semua yang ia sebutkan ada di suatu tempat.",
+      "'Semua yang bisa kita lihat atau bayangkan punya ukuran dan tempat,' kata Mama. 'Bintang, langit, bumi, rumah kita. Allah menciptakan semuanya, juga tempat-tempatnya.'",
+      "'Guru-guru kita mengajarkan bahwa Allah ada tanpa tempat. Allah menciptakan tempat dan tidak membutuhkannya. Allah tidak serupa dengan apa pun yang Dia ciptakan, jadi kita tidak mencoba membayangkan rupa Allah.'",
+      "Nayla terdiam lama. 'Itu gagasan yang besar,' katanya akhirnya.",
+      "'Betul,' kata Mama. 'Yuk tulis pertanyaanmu dan tanyakan pada Ustazah Fatimah hari Sabtu. Beliau bisa menjelaskannya lebih baik dari Mama.'",
+      "Saat itu listrik menyala lagi, dan bintang-bintang memudar di balik cahaya lampu. Nayla mengambil buku catatannya dan menulis pertanyaannya dengan rapi di halaman baru."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Follows how a character's question is explored through dialogue.",
+      "id": "Mengikuti bagaimana pertanyaan seorang tokoh dibahas lewat percakapan."
+    },
+    {
+      "en": "Restates the family's teaching that Allah exists without a place, in their own words.",
+      "id": "Menyatakan ulang ajaran keluarga bahwa Allah ada tanpa tempat, dengan kata-kata sendiri."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "imagine",
+        "id": "membayangkan"
+      },
+      "meaning": {
+        "en": "to make a picture in your mind",
+        "id": "membuat gambaran di dalam pikiran"
+      }
+    },
+    {
+      "word": {
+        "en": "in need of",
+        "id": "membutuhkan"
+      },
+      "meaning": {
+        "en": "having to have something",
+        "id": "harus memiliki sesuatu"
+      }
+    },
+    {
+      "word": {
+        "en": "faded",
+        "id": "memudar"
+      },
+      "meaning": {
+        "en": "became harder to see",
+        "id": "menjadi makin sulit dilihat"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why were Nayla and Mama sitting by the window?",
+        "id": "Mengapa Nayla dan Mama duduk di dekat jendela?"
+      },
+      "choices": {
+        "en": [
+          "the power had gone out",
+          "they were waiting for a guest",
+          "it was too hot to sleep"
+        ],
+        "id": [
+          "listrik padam",
+          "mereka menunggu tamu",
+          "terlalu panas untuk tidur"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "What does Mama's answer at the start show about her?",
+        "id": "Apa yang ditunjukkan jawaban awal Mama tentang dirinya?"
+      },
+      "choices": {
+        "en": [
+          "she welcomes questions and takes them seriously",
+          "she thinks the question is silly",
+          "she wants Nayla to go to bed"
+        ],
+        "id": [
+          "ia menyambut pertanyaan dan menanggapinya dengan serius",
+          "ia menganggap pertanyaan itu konyol",
+          "ia ingin Nayla segera tidur"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What does Mama say our teachers teach?",
+        "id": "Apa yang menurut Mama diajarkan guru-guru kita?"
+      },
+      "choices": {
+        "en": [
+          "Allah exists without a place and created all places",
+          "Allah is behind the stars",
+          "Allah lives far away in the sky"
+        ],
+        "id": [
+          "Allah ada tanpa tempat dan menciptakan semua tempat",
+          "Allah ada di balik bintang",
+          "Allah tinggal jauh di langit"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Nayla do when the lights came back on?",
+        "id": "Apa yang Nayla lakukan saat listrik menyala lagi?"
+      },
+      "choices": {
+        "en": [
+          "wrote her question in her notebook",
+          "went outside to look at the stars",
+          "phoned Ustazah Fatimah"
+        ],
+        "id": [
+          "menulis pertanyaannya di buku catatan",
+          "keluar untuk melihat bintang",
+          "menelepon Ustazah Fatimah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 8
+    },
+    {
+      "id": "q5",
+      "kind": "critical",
+      "prompt": {
+        "en": "Why does Mama suggest asking Ustazah Fatimah?",
+        "id": "Mengapa Mama menyarankan bertanya pada Ustazah Fatimah?"
+      },
+      "choices": {
+        "en": [
+          "a teacher can explain a big idea more fully",
+          "Mama does not care about the question",
+          "Nayla is not allowed to ask Mama"
+        ],
+        "id": [
+          "guru bisa menjelaskan gagasan besar dengan lebih lengkap",
+          "Mama tidak peduli dengan pertanyaannya",
+          "Nayla tidak boleh bertanya pada Mama"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 7
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "islamic_values",
+      "connection": {
+        "en": "The story models how a family in the Ash'ari-Maturidi tradition answers 'Where is Allah?' gently: Allah exists without a place, and questions are welcome.",
+        "id": "Cerita ini mencontohkan cara keluarga dalam tradisi Asy'ari-Maturidi menjawab 'Allah di mana?' dengan lembut: Allah ada tanpa tempat, dan pertanyaan itu disambut baik."
+      }
+    },
+    {
+      "subject": "astronomy",
+      "connection": {
+        "en": "Stars are easier to see when there is less light from street lamps.",
+        "id": "Bintang lebih mudah dilihat jika cahaya lampu jalan berkurang."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What question would you write in Nayla's notebook?",
+      "id": "Pertanyaan apa yang akan kamu tulis di buku catatan Nayla?"
+    },
+    {
+      "en": "How did Mama make Nayla feel safe to ask?",
+      "id": "Bagaimana Mama membuat Nayla merasa aman untuk bertanya?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Start a 'questions for our teacher' notebook. Write one question about Allah or about the world, and take it to your next lesson.",
+    "id": "Mulai buku 'pertanyaan untuk guru'. Tulis satu pertanyaan tentang Allah atau tentang dunia, dan bawa ke pelajaran berikutnya."
+  },
+  "factChecks": [],
+  "safetyNotes": [],
+  "arabicPhrases": [
+    {
+      "arabic": "[Arabic text to be supplied and verified by a qualified reviewer]",
+      "transliteration": "Allah mawjud bila makan",
+      "meaning": {
+        "en": "Allah exists without a place",
+        "id": "Allah ada tanpa tempat"
+      },
+      "verified": false
+    }
+  ],
+  "reviewFlags": [
+    "religious_content",
+    "scholar_wording_required",
+    "theological_interpretation",
+    "arabic_text",
+    "translation_review",
+    "source_verification"
+  ],
+  "reviewStatus": "draft",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "tone",
+      "no-invented-citations"
+    ]
+  },
+  "religiousReview": {
+    "doctrinalSchool": null,
+    "fiqhSchool": null,
+    "arabicSource": null,
+    "edition": null,
+    "pageOrSection": null,
+    "translationReviewer": null,
+    "scholarReviewer": null,
+    "reviewedAt": null,
+    "approvalStatus": "unverified",
+    "notes": [
+      "Reading drafted by an AI; teachings are described in plain words and must be confirmed by a qualified scholar. No verse, hadith or quotation is reproduced.",
+      "Approve or replace Mama's wording in paragraphs 5 and 6, including 'Allah created places and is not in need of them'.",
+      "Check that the 'everything has a place' discussion is not presented as a proof or physical analogy about Allah.",
+      "q3 distractors ('behind the stars', 'far away in the sky') reflect the child's question in the story; confirm they are handled respectfully toward other Muslims.",
+      "Verify the transliteration and translation of 'Allah mawjud bila makan'; Arabic is a placeholder."
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-islamic",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "id": "reading-g4-marie-curie-two-sciences",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "readingLevel": "fluent",
   "genre": "biography",
@@ -11,21 +11,21 @@
   },
   "text": {
     "en": [
-      "Marie Curie was born Maria Skłodowska in Warsaw, Poland, in 1867. She loved learning, but at that time women were not allowed to attend the university in Warsaw.",
-      "Maria saved money and moved to Paris, France, to learn physics and mathematics at a famous university there. She often studied late into the night in a cold little room, and she finished at the top of her class.",
+      "Marie Curie was born Maria Skłodowska in Warsaw, Poland, which was then ruled by Russia, in 1867. She loved learning, but at that time women were not allowed to attend the university in Warsaw.",
+      "Maria saved money and, in 1891, moved to Paris, France, to learn physics and mathematics at a famous university there. She often studied late into the night in a cold little room, and she finished at the top of her class.",
       "In Paris she met another scientist, Pierre Curie. They married and worked side by side. Marie was fascinated by a strange energy that some substances gave off. She named it radioactivity.",
-      "Through years of hard, careful work, the Curies discovered two new chemical elements. Marie named one polonium, after her home country, Poland. The other they called radium.",
+      "In 1898, after hard, careful work, the Curies announced the discovery of two new chemical elements. Marie named one polonium, after her home country, Poland. The other they called radium.",
       "In 1903 Marie, Pierre and another scientist shared the Nobel Prize in Physics. Marie was the first woman to win a Nobel Prize. In 1911 she won a second Nobel Prize, this time in Chemistry, becoming the first person to win Nobel Prizes in two different sciences.",
-      "At the time, nobody understood how harmful radioactivity could be to the body. Marie worked with radioactive materials without protection, and her health suffered. She died in 1934. Today scientists who use radioactive materials wear protection and follow strict safety rules.",
+      "At the time, nobody fully understood how harmful radioactivity could be to the body. Marie worked with radioactive materials without protection, and her health suffered. She died in 1934. Today scientists who use radioactive materials wear protection and follow strict safety rules.",
       "Marie Curie's work helped lead to new ways of treating illness and of seeing inside the body. Her life shows how curiosity and patience can change what everyone knows."
     ],
     "id": [
-      "Marie Curie lahir dengan nama Maria Skłodowska di Warsawa, Polandia, pada tahun 1867. Ia suka belajar, tetapi pada masa itu perempuan tidak diizinkan kuliah di universitas di Warsawa.",
-      "Maria menabung lalu pindah ke Paris, Prancis, untuk belajar fisika dan matematika di sebuah universitas terkenal. Ia sering belajar sampai larut malam di kamar kecil yang dingin, dan lulus dengan nilai terbaik di kelasnya.",
+      "Marie Curie lahir dengan nama Maria Skłodowska di Warsawa, Polandia, yang saat itu dikuasai Rusia, pada tahun 1867. Ia suka belajar, tetapi pada masa itu perempuan tidak diizinkan kuliah di universitas di Warsawa.",
+      "Maria menabung lalu, pada tahun 1891, pindah ke Paris, Prancis, untuk belajar fisika dan matematika di sebuah universitas terkenal. Ia sering belajar sampai larut malam di kamar kecil yang dingin, dan lulus dengan nilai terbaik di kelasnya.",
       "Di Paris ia bertemu ilmuwan lain bernama Pierre Curie. Mereka menikah dan bekerja berdampingan. Marie sangat tertarik pada energi aneh yang dipancarkan beberapa zat. Ia menamainya radioaktivitas.",
-      "Melalui kerja keras dan teliti selama bertahun-tahun, keluarga Curie menemukan dua unsur kimia baru. Marie menamai salah satunya polonium, dari nama negara asalnya, Polandia. Unsur yang lain mereka namai radium.",
+      "Pada tahun 1898, setelah bekerja keras dan teliti, pasangan Curie mengumumkan penemuan dua unsur kimia baru. Marie menamai salah satunya polonium, dari nama negara asalnya, Polandia. Unsur yang lain mereka namai radium.",
       "Pada tahun 1903, Marie, Pierre, dan seorang ilmuwan lain bersama-sama menerima Hadiah Nobel Fisika. Marie adalah perempuan pertama yang meraih Hadiah Nobel. Pada tahun 1911 ia meraih Hadiah Nobel kedua, kali ini di bidang Kimia, menjadi orang pertama yang memenangkan Hadiah Nobel di dua bidang ilmu yang berbeda.",
-      "Saat itu, belum ada yang tahu betapa berbahayanya radioaktivitas bagi tubuh. Marie bekerja dengan bahan radioaktif tanpa pelindung, dan kesehatannya memburuk. Ia meninggal pada tahun 1934. Kini, ilmuwan yang memakai bahan radioaktif mengenakan pelindung dan mematuhi aturan keselamatan yang ketat.",
+      "Saat itu, belum ada yang benar-benar memahami betapa berbahayanya radioaktivitas bagi tubuh. Marie bekerja dengan bahan radioaktif tanpa pelindung, dan kesehatannya memburuk. Ia meninggal pada tahun 1934. Kini, ilmuwan yang memakai bahan radioaktif mengenakan pelindung dan mematuhi aturan keselamatan yang ketat.",
       "Karya Marie Curie membantu lahirnya cara-cara baru untuk mengobati penyakit dan melihat bagian dalam tubuh. Hidupnya menunjukkan bahwa rasa ingin tahu dan kesabaran dapat mengubah pengetahuan semua orang."
     ]
   },
@@ -221,11 +221,23 @@
   },
   "factChecks": [
     {
-      "claim": "Marie Curie was born Maria Skłodowska in Warsaw, Poland, in 1867.",
+      "claim": "Marie Curie was born Maria Skłodowska in Warsaw, Poland, which was then ruled by Russia, in 1867.",
       "status": "common_knowledge"
     },
     {
       "claim": "Women could not attend university in Warsaw at that time, so she studied in Paris.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Warsaw was under Russian rule in 1867.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "She moved to Paris in 1891.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The Curies announced the discovery of polonium and radium in 1898.",
       "status": "common_knowledge"
     },
     {

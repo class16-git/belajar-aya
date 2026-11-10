@@ -1,6 +1,6 @@
 {
   "id": "reading-g6-where-our-electricity-comes-from",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "readingLevel": "advanced",
   "genre": "report",
@@ -12,8 +12,8 @@
   "text": {
     "en": [
       "When you switch on a fan, the electricity has often travelled a long way through cables from a power station. But how is that electricity made in the first place?",
-      "Most power stations work by spinning a machine called a generator. Inside it, coils of wire turn near magnets, and this movement produces an electric current. The big question is what makes the generator spin.",
-      "In coal and gas power stations, fuel is burned to boil water. The steam rushes through a turbine, a wheel with many blades, which turns the generator. These fuels are non-renewable: they took millions of years to form and will run out. Burning them also releases carbon dioxide, a gas that traps heat and adds to climate change.",
+      "Most power stations work by spinning a machine called a generator. Inside it, magnets and coils of wire turn past each other, and this movement produces an electric current. The big question is what makes the generator spin.",
+      "In coal power stations, and in some gas power stations, fuel is burned to boil water. The steam rushes through a turbine, a wheel with many blades, which turns the generator. These fuels are non-renewable: they took millions of years to form and will run out. Burning them also releases carbon dioxide, a gas that traps heat and adds to climate change.",
       "Renewable sources can be used again and again. In a hydroelectric plant, water flowing from a dam spins the turbine. Wind turbines use moving air. Geothermal plants use heat from deep underground to make steam. Indonesia, with its many volcanoes, has geothermal power stations.",
       "Solar panels are different: they have no spinning parts at all. Special materials in the panel turn sunlight straight into electricity. Because Indonesia lies on the equator, it receives strong sunlight all year round.",
       "Each source has trade-offs. Solar and wind power depend on the weather, so they work best with batteries or other sources as back-up. Dams can flood valleys where people and animals live. Choosing an energy mix means weighing cost, reliability and harm to the environment.",
@@ -21,8 +21,8 @@
     ],
     "id": [
       "Saat kamu menyalakan kipas angin, listriknya sering sudah menempuh perjalanan jauh lewat kabel dari pembangkit listrik. Tetapi bagaimana listrik itu dibuat sejak awal?",
-      "Sebagian besar pembangkit listrik bekerja dengan memutar mesin bernama generator. Di dalamnya, gulungan kawat berputar di dekat magnet, dan gerakan ini menghasilkan arus listrik. Pertanyaan besarnya adalah apa yang memutar generator itu.",
-      "Di pembangkit listrik batu bara dan gas, bahan bakar dibakar untuk mendidihkan air. Uapnya menyembur melewati turbin, roda dengan banyak bilah, yang memutar generator. Bahan bakar ini tidak terbarukan: butuh jutaan tahun untuk terbentuk dan suatu saat akan habis. Membakarnya juga melepaskan karbon dioksida, gas yang memerangkap panas dan menambah perubahan iklim.",
+      "Sebagian besar pembangkit listrik bekerja dengan memutar mesin bernama generator. Di dalamnya, magnet dan gulungan kawat berputar relatif satu sama lain, dan gerakan ini menghasilkan arus listrik. Pertanyaan besarnya adalah apa yang memutar generator itu.",
+      "Di pembangkit listrik batu bara, dan sebagian pembangkit gas, bahan bakar dibakar untuk mendidihkan air. Uapnya menyembur melewati turbin, roda dengan banyak bilah, yang memutar generator. Bahan bakar ini tidak terbarukan: butuh jutaan tahun untuk terbentuk dan suatu saat akan habis. Membakarnya juga melepaskan karbon dioksida, gas yang memerangkap panas dan menambah perubahan iklim.",
       "Sumber terbarukan bisa dipakai terus-menerus. Di pembangkit listrik tenaga air, air yang mengalir dari bendungan memutar turbin. Turbin angin memakai udara yang bergerak. Pembangkit panas bumi memakai panas dari dalam tanah untuk menghasilkan uap. Indonesia, dengan banyak gunung apinya, memiliki pembangkit listrik tenaga panas bumi.",
       "Panel surya berbeda: panel ini sama sekali tidak punya bagian yang berputar. Bahan khusus di dalam panel mengubah cahaya matahari langsung menjadi listrik. Karena Indonesia terletak di garis khatulistiwa, sinar matahari yang diterimanya kuat sepanjang tahun.",
       "Setiap sumber punya untung-rugi. Tenaga surya dan angin bergantung pada cuaca, sehingga paling baik dipadukan dengan baterai atau sumber lain sebagai cadangan. Bendungan bisa menenggelamkan lembah tempat tinggal manusia dan hewan. Memilih bauran energi berarti menimbang biaya, keandalan, dan dampaknya pada lingkungan.",
@@ -260,11 +260,11 @@
   },
   "factChecks": [
     {
-      "claim": "Generators produce electricity when coils of wire rotate near magnets.",
+      "claim": "Generators produce electricity when magnets and coils of wire move relative to each other.",
       "status": "common_knowledge"
     },
     {
-      "claim": "Coal and gas power stations burn fuel to make steam that drives turbines.",
+      "claim": "Coal power stations, and some gas power stations, burn fuel to make steam that drives turbines.",
       "status": "common_knowledge"
     },
     {

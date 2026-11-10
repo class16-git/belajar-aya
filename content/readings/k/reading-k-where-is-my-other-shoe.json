@@ -1,6 +1,6 @@
 {
   "id": "reading-k-where-is-my-other-shoe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "readingLevel": "emergent",
   "genre": "fiction",
@@ -12,19 +12,19 @@
   "text": {
     "en": [
       "Bima has one red shoe on his foot. Where is the other red shoe?",
-      "Is it under the bed? No. Bima sees a sock and a toy cat.",
+      "Is it under the bed? No. Bima sees a sock and a toy bear.",
       "Is it in the box? No. Bima sees his blocks and a hat.",
-      "Is it by the door? No. Bima sees Mum's big boots.",
-      "Then Bima hears a sound. Sniff, sniff. Puppy runs in. What is in his mouth?",
-      "It is the red shoe! 'Silly Puppy!' laughs Bima. Now he has two red shoes."
+      "Is it by the door? No. Bima sees Dad's big sandals.",
+      "Then Bima hears a sound. Meow! Kitten runs in, pushing something with her paws. What is it?",
+      "It is the red shoe! 'Silly Kitten!' laughs Bima. Now he has two red shoes."
     ],
     "id": [
       "Bima memakai satu sepatu merah di kakinya. Di mana sepatu merah yang satu lagi?",
-      "Apakah di bawah tempat tidur? Tidak. Bima melihat kaus kaki dan kucing mainan.",
+      "Apakah di bawah tempat tidur? Tidak. Bima melihat kaus kaki dan boneka beruang.",
       "Apakah di dalam kotak? Tidak. Bima melihat balok dan topinya.",
-      "Apakah di dekat pintu? Tidak. Bima melihat sepatu bot Ibu yang besar.",
-      "Lalu Bima mendengar suara. Endus, endus. Anak anjing berlari masuk. Apa yang ada di mulutnya?",
-      "Itu sepatu merahnya! 'Anak anjing nakal!' Bima tertawa. Sekarang ia punya dua sepatu merah."
+      "Apakah di dekat pintu? Tidak. Bima melihat sandal Ayah yang besar.",
+      "Lalu Bima mendengar suara. Meong! Anak kucing berlari masuk sambil mendorong sesuatu dengan kakinya. Apa itu?",
+      "Itu sepatu merahnya! 'Dasar Anak Kucing iseng!' Bima tertawa. Sekarang ia punya dua sepatu merah."
     ]
   },
   "readAloudNotes": [],
@@ -52,12 +52,12 @@
     },
     {
       "word": {
-        "en": "boots",
-        "id": "sepatu bot"
+        "en": "sandals",
+        "id": "sandal"
       },
       "meaning": {
-        "en": "tall shoes that cover your ankles",
-        "id": "sepatu tinggi yang menutupi pergelangan kaki"
+        "en": "open shoes held on by straps",
+        "id": "alas kaki terbuka dengan tali"
       }
     }
   ],
@@ -115,14 +115,14 @@
       },
       "choices": {
         "en": [
-          "the puppy, to play with it",
+          "the kitten, to play with it",
           "Mum, to wash it",
-          "the toy cat"
+          "the toy bear"
         ],
         "id": [
-          "anak anjing, untuk bermain",
+          "anak kucing, untuk bermain",
           "Ibu, untuk dicuci",
-          "kucing mainan"
+          "boneka beruang"
         ]
       },
       "answer": 0,
@@ -132,8 +132,8 @@
       "id": "q4",
       "kind": "math",
       "prompt": {
-        "en": "How many places did Bima look before Puppy came in?",
-        "id": "Di berapa tempat Bima mencari sebelum anak anjing datang?"
+        "en": "How many places did Bima look before Kitten came in?",
+        "id": "Di berapa tempat Bima mencari sebelum anak kucing datang?"
       },
       "choices": {
         "en": [

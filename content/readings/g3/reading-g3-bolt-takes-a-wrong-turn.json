@@ -1,6 +1,6 @@
 {
   "id": "reading-g3-bolt-takes-a-wrong-turn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "readingLevel": "transitional",
   "genre": "fiction",
@@ -16,7 +16,7 @@
       "Gilang snapped the blocks together on the tablet: forward 2 tiles, turn right, forward 2 tiles, turn right, forward 2 tiles, turn right. 'Done!' he said, and pressed Run.",
       "Bolt zipped along three sides of the square — and then stopped, one whole side away from the start. Gilang groaned. 'It's broken.'",
       "'Robots don't get bored or forget,' said Putri. 'It did exactly what we told it. So the mistake must be in our program.' She read the blocks aloud, pointing to each one, while Gilang walked the route with his feet.",
-      "Halfway round the fourth side, Gilang stopped walking because the program had run out. 'We only told it three sides!' A square has four sides, so they needed one more 'forward 2'.",
+      "At the corner before the fourth side, Gilang had to stop walking, because the program had run out. 'We only told it three sides!' A square has four sides, so they needed one more 'forward 2'.",
       "Putri had a neater idea. She replaced all the blocks with a loop: repeat 4 times — forward 2, turn right. Bolt rolled round the whole square and stopped right on the start line.",
       "Their teacher smiled. 'Finding and fixing a mistake like that is called debugging. Every programmer does it, every day.'"
     ],
@@ -26,7 +26,7 @@
       "Gilang menyusun blok di tablet: maju 2 ubin, belok kanan, maju 2 ubin, belok kanan, maju 2 ubin, belok kanan. 'Selesai!' katanya, lalu menekan Jalankan.",
       "Bolt melaju di tiga sisi persegi — lalu berhenti, satu sisi penuh dari titik awal. Gilang mengeluh. 'Robotnya rusak.'",
       "'Robot tidak bisa bosan atau lupa,' kata Putri. 'Robot melakukan persis apa yang kita perintahkan. Jadi kesalahannya pasti di program kita.' Ia membacakan blok satu per satu sambil menunjuknya, sementara Gilang berjalan mengikuti rutenya.",
-      "Di tengah sisi keempat, Gilang berhenti berjalan karena programnya sudah habis. 'Kita cuma menyuruhnya tiga sisi!' Persegi punya empat sisi, jadi mereka butuh satu 'maju 2' lagi.",
+      "Di sudut sebelum sisi keempat, Gilang harus berhenti berjalan karena programnya sudah habis. 'Kita cuma menyuruhnya tiga sisi!' Persegi punya empat sisi, jadi mereka butuh satu 'maju 2' lagi.",
       "Putri punya ide yang lebih rapi. Ia mengganti semua blok dengan perulangan: ulangi 4 kali — maju 2, belok kanan. Bolt berkeliling seluruh persegi dan berhenti tepat di garis awal.",
       "Guru mereka tersenyum. 'Menemukan dan memperbaiki kesalahan seperti itu disebut debugging. Setiap pemrogram melakukannya, setiap hari.'"
     ]
@@ -100,7 +100,7 @@
     },
     {
       "id": "q2",
-      "kind": "inference",
+      "kind": "literal",
       "prompt": {
         "en": "Why did Putri say the robot was not broken?",
         "id": "Mengapa Putri berkata robotnya tidak rusak?"

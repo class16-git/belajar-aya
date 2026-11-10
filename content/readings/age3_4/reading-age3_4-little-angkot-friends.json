@@ -1,6 +1,6 @@
 {
   "id": "reading-age3_4-little-angkot-friends",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "readingLevel": "pre_reader",
   "genre": "picture_story_script",
@@ -106,19 +106,19 @@
       "id": "q1",
       "kind": "math",
       "prompt": {
-        "en": "How many friends were on the bus when it reached the park?",
-        "id": "Ada berapa teman di angkot saat sampai di taman?"
+        "en": "How many passengers were on the bus when it reached the park?",
+        "id": "Ada berapa penumpang di angkot saat sampai di taman?"
       },
       "choices": {
         "en": [
-          "3 friends",
-          "2 friends",
-          "4 friends"
+          "3 passengers",
+          "2 passengers",
+          "4 passengers"
         ],
         "id": [
-          "3 teman",
-          "2 teman",
-          "4 teman"
+          "3 penumpang",
+          "2 penumpang",
+          "4 penumpang"
         ]
       },
       "answer": 0,

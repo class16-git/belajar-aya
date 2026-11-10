@@ -1,6 +1,6 @@
 {
   "id": "reading-k-what-the-wind-can-do",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "readingLevel": "emergent",
   "genre": "nonfiction",
@@ -23,7 +23,7 @@
       "Angin bisa mendorong. Angin mendorong daun-daun di tanah.",
       "Angin bisa mengangkat. Angin mengangkat layang-layang ke langit.",
       "Angin bisa mengeringkan. Angin mengeringkan baju basah di jemuran.",
-      "Angin bisa memutar. Angin memutar kincir kertas berputar-putar.",
+      "Angin bisa memutar. Angin membuat kincir kertas berputar-putar.",
       "Lihat ke luar. Apa yang dilakukan angin hari ini?"
     ]
   },
@@ -188,7 +188,12 @@
       "status": "common_knowledge"
     }
   ],
-  "safetyNotes": [],
+  "safetyNotes": [
+    {
+      "en": "Use a short, blunt stick and hold it low, away from faces.",
+      "id": "Pakai tongkat pendek yang tumpul dan pegang rendah, jauh dari wajah."
+    }
+  ],
   "arabicPhrases": [],
   "reviewFlags": [],
   "reviewStatus": "agent_reviewed",

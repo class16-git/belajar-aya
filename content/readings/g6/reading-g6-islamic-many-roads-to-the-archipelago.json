@@ -1,0 +1,293 @@
+{
+  "id": "reading-g6-islamic-many-roads-to-the-archipelago",
+  "version": "0.1.0",
+  "level": "g6",
+  "readingLevel": "advanced",
+  "genre": "article",
+  "mode": "independent",
+  "title": {
+    "en": "Many roads to the archipelago",
+    "id": "Banyak jalan menuju Nusantara"
+  },
+  "text": {
+    "en": [
+      "Today Indonesia is home to more Muslims than any other country. But how did Islam first come to these islands? Historians agree on the broad picture, yet they still debate many of the details.",
+      "For centuries, the seas around Sumatra, Java and the Malay Peninsula were busy trade routes. Ships carried spices, cloth and porcelain between the Arabian Peninsula, Persia, India and China. Along with goods came people, languages and beliefs.",
+      "Most historians think Islam spread gradually and mostly peacefully: through Muslim traders who settled in port towns, through marriage into local families, and through teachers who opened places of learning that later grew into pesantren.",
+      "Where did it come from? Some historians point to traders from Gujarat in India. Others argue for Arabia, or for Persia, and some point to Muslim communities in southern China. Many now think several routes played a part at different times.",
+      "Why the disagreement? Evidence from so long ago is limited. Historians examine old gravestones with inscriptions, accounts written by travellers, and later local chronicles. Each kind of source can be read in more than one way.",
+      "Early Muslim kingdoms grew in northern Sumatra, and later along the coasts of Java and beyond. In Java, many families remember the Wali Songo, nine respected teachers, through stories passed down over generations. Some of these stories are history, and some have grown into legend.",
+      "Learning this history is a lesson in careful thinking. We can respect a much-loved story and still ask: what is the evidence? Who wrote this, and when? Asking those questions is not disrespect; it is how we learn what really happened."
+    ],
+    "id": [
+      "Saat ini Indonesia adalah negara dengan jumlah Muslim terbanyak di dunia. Tetapi bagaimana Islam pertama kali datang ke kepulauan ini? Sejarawan sepakat tentang gambaran besarnya, tetapi masih memperdebatkan banyak rinciannya.",
+      "Selama berabad-abad, laut di sekitar Sumatra, Jawa, dan Semenanjung Malaya adalah jalur dagang yang ramai. Kapal membawa rempah, kain, dan porselen antara Jazirah Arab, Persia, India, dan Cina. Bersama barang dagangan, datang pula orang, bahasa, dan kepercayaan.",
+      "Kebanyakan sejarawan berpendapat Islam menyebar secara bertahap dan sebagian besar damai: melalui pedagang Muslim yang menetap di kota pelabuhan, melalui pernikahan dengan keluarga setempat, dan melalui guru yang membuka tempat belajar yang kemudian berkembang menjadi pesantren.",
+      "Dari mana asalnya? Sebagian sejarawan menunjuk pedagang dari Gujarat di India. Yang lain berpendapat dari Arab, atau dari Persia, dan sebagian menunjuk komunitas Muslim di Cina selatan. Kini banyak yang berpendapat beberapa jalur berperan pada waktu yang berbeda.",
+      "Mengapa berbeda pendapat? Bukti dari masa yang begitu lampau terbatas. Sejarawan mempelajari batu nisan tua bertulisan, catatan para pengelana, dan hikayat atau babad setempat yang ditulis kemudian. Setiap jenis sumber bisa ditafsirkan dengan lebih dari satu cara.",
+      "Kerajaan Muslim awal tumbuh di Sumatra utara, lalu di pesisir Jawa dan wilayah lain. Di Jawa, banyak keluarga mengenang Wali Songo, sembilan guru yang dihormati, lewat kisah yang diwariskan turun-temurun. Sebagian kisah itu sejarah, dan sebagian telah berkembang menjadi legenda.",
+      "Mempelajari sejarah ini adalah pelajaran berpikir cermat. Kita bisa menghormati kisah yang dicintai dan tetap bertanya: apa buktinya? Siapa yang menulisnya, dan kapan? Mengajukan pertanyaan itu bukan tanda tidak hormat; itulah cara kita mengetahui apa yang sebenarnya terjadi."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Summarises the main ideas of an informational article.",
+      "id": "Merangkum gagasan utama artikel informasi."
+    },
+    {
+      "en": "Distinguishes evidence, interpretation and legend, and explains why historians disagree.",
+      "id": "Membedakan bukti, tafsiran, dan legenda, serta menjelaskan mengapa sejarawan berbeda pendapat."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "inscription",
+        "id": "prasasti/tulisan"
+      },
+      "meaning": {
+        "en": "words carved into stone or metal",
+        "id": "tulisan yang dipahat di batu atau logam"
+      }
+    },
+    {
+      "word": {
+        "en": "chronicle",
+        "id": "hikayat/babad"
+      },
+      "meaning": {
+        "en": "a written record of events, often made later",
+        "id": "catatan tertulis tentang peristiwa, sering ditulis kemudian"
+      }
+    },
+    {
+      "word": {
+        "en": "legend",
+        "id": "legenda"
+      },
+      "meaning": {
+        "en": "a traditional story that may not be historically accurate",
+        "id": "cerita turun-temurun yang belum tentu akurat secara sejarah"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main idea of the article?",
+        "id": "Apa gagasan utama artikel ini?"
+      },
+      "choices": {
+        "en": [
+          "Islam spread gradually through many routes, and historians still debate the details.",
+          "Islam arrived in Indonesia in one year from one place.",
+          "Only legends tell us about the past."
+        ],
+        "id": [
+          "Islam menyebar bertahap melalui banyak jalur, dan sejarawan masih memperdebatkan rinciannya.",
+          "Islam datang ke Indonesia dalam satu tahun dari satu tempat.",
+          "Hanya legenda yang menceritakan masa lalu."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Name one way Islam spread, according to the article.",
+        "id": "Sebutkan satu cara Islam menyebar, menurut artikel."
+      },
+      "choices": {
+        "en": [
+          "through traders who settled in port towns",
+          "through television",
+          "through a single royal order"
+        ],
+        "id": [
+          "melalui pedagang yang menetap di kota pelabuhan",
+          "melalui televisi",
+          "melalui satu perintah raja"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which sentence explains why historians disagree?",
+        "id": "Kalimat mana yang menjelaskan mengapa sejarawan berbeda pendapat?"
+      },
+      "choices": {
+        "en": [
+          "Evidence from so long ago is limited.",
+          "Ships carried spices, cloth and porcelain.",
+          "Today Indonesia is home to many Muslims."
+        ],
+        "id": [
+          "Bukti dari masa yang begitu lampau terbatas.",
+          "Kapal membawa rempah, kain, dan porselen.",
+          "Saat ini Indonesia adalah rumah bagi banyak Muslim."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "In paragraph 5, what is a 'chronicle'?",
+        "id": "Pada paragraf 5, apa yang dimaksud 'hikayat atau babad'?"
+      },
+      "choices": {
+        "en": [
+          "a written record of events, often made later",
+          "a gravestone",
+          "a trading ship"
+        ],
+        "id": [
+          "catatan tertulis tentang peristiwa, sering ditulis kemudian",
+          "batu nisan",
+          "kapal dagang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q5",
+      "kind": "critical",
+      "prompt": {
+        "en": "The author says asking 'what is the evidence?' is not disrespect. Which reason fits best?",
+        "id": "Penulis mengatakan bertanya 'apa buktinya?' bukan tanda tidak hormat. Alasan mana yang paling tepat?"
+      },
+      "choices": {
+        "en": [
+          "Careful questions help us learn what really happened.",
+          "Old stories are always false.",
+          "Teachers do not like questions."
+        ],
+        "id": [
+          "Pertanyaan yang cermat membantu kita mengetahui apa yang sebenarnya terjadi.",
+          "Cerita lama selalu salah.",
+          "Guru tidak suka pertanyaan."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "islamic_values",
+      "connection": {
+        "en": "Learning the history of Islam in the archipelago with honesty and respect reflects the Islamic values of seeking knowledge and truthfulness.",
+        "id": "Mempelajari sejarah Islam di Nusantara dengan jujur dan hormat mencerminkan nilai Islam tentang menuntut ilmu dan kejujuran."
+      }
+    },
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Sea trade routes across the Indian Ocean linked the archipelago with Arabia, India, Persia and China.",
+        "id": "Jalur dagang laut melintasi Samudra Hindia menghubungkan Nusantara dengan Arab, India, Persia, dan Cina."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which theory of origin do you find most convincing, and what evidence would change your mind?",
+      "id": "Teori asal mana yang menurutmu paling meyakinkan, dan bukti apa yang bisa mengubah pendapatmu?"
+    },
+    {
+      "en": "How can we respect a family story and still ask questions about it?",
+      "id": "Bagaimana kita bisa menghormati cerita keluarga dan tetap bertanya tentangnya?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Ask an older relative how they learned about Islam as a child (at home, a langgar or a pesantren). Write a short oral-history note and label it as a personal account.",
+    "id": "Tanyakan kepada kerabat yang lebih tua bagaimana mereka belajar Islam saat kecil (di rumah, langgar, atau pesantren). Tulis catatan sejarah lisan singkat dan beri label sebagai kisah pribadi."
+  },
+  "factChecks": [
+    {
+      "claim": "Indonesia has the largest Muslim population of any country.",
+      "status": "needs_source"
+    },
+    {
+      "claim": "Sea trade linked the archipelago with the Arabian Peninsula, Persia, India and China, carrying spices, cloth and porcelain.",
+      "status": "needs_source"
+    },
+    {
+      "claim": "Most historians describe the spread of Islam in the archipelago as gradual and mostly peaceful, through trade, marriage and teaching.",
+      "status": "needs_source"
+    },
+    {
+      "claim": "Theories of origin include Gujarat, Arabia, Persia and southern China.",
+      "status": "needs_source"
+    },
+    {
+      "claim": "Evidence includes inscribed gravestones, travellers' accounts and later local chronicles.",
+      "status": "needs_source"
+    },
+    {
+      "claim": "Early Muslim kingdoms arose in northern Sumatra and later on the coasts of Java.",
+      "status": "needs_source"
+    },
+    {
+      "claim": "The Wali Songo are remembered in Java as nine respected teachers, through stories that include both history and legend.",
+      "status": "needs_source"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Ask permission before recording or writing down a relative's story, and keep personal details private.",
+      "id": "Minta izin sebelum merekam atau mencatat kisah kerabat, dan jaga kerahasiaan rincian pribadi."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "religious_content",
+    "scholar_wording_required",
+    "source_verification",
+    "attribution",
+    "translation_review"
+  ],
+  "reviewStatus": "draft",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "tone",
+      "no-invented-citations"
+    ]
+  },
+  "religiousReview": {
+    "doctrinalSchool": null,
+    "fiqhSchool": null,
+    "arabicSource": null,
+    "edition": null,
+    "pageOrSection": null,
+    "translationReviewer": null,
+    "scholarReviewer": null,
+    "reviewedAt": null,
+    "approvalStatus": "unverified",
+    "notes": [
+      "Reading drafted by an AI; teachings are described in plain words and must be confirmed by a qualified scholar. No verse, hadith or quotation is reproduced.",
+      "Every historical claim is marked needs_source; a historian or qualified reviewer supplies sources or corrects them.",
+      "Advise on respectful wording about the Wali Songo traditions."
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-islamic",
+    "createdAt": "2026-11-10"
+  }
+}

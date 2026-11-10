@@ -1,6 +1,6 @@
 {
   "id": "reading-g1-my-shadow-moves",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "readingLevel": "early",
   "genre": "fiction",
@@ -12,7 +12,7 @@
   "text": {
     "en": [
       "In the morning, Arif stands in the yard. His shadow is long and thin. It stretches far across the grass.",
-      "At lunchtime, the sun is high above his head. Arif looks down. His shadow is short and fat, right by his feet.",
+      "At lunchtime, the sun is high above his head. Arif looks down. His shadow is short and small, right by his feet.",
       "In the afternoon, Arif goes out again. His shadow is long again, but now it points the other way!",
       "'Why does my shadow change?' asks Arif. Grandma smiles. 'Watch where the sun is each time.'",
       "Arif sees it. When the sun is low, the shadow is long. When the sun is high, the shadow is short.",
@@ -20,7 +20,7 @@
     ],
     "id": [
       "Pagi hari, Arif berdiri di halaman. Bayangannya panjang dan ramping, terbentang jauh di atas rumput.",
-      "Saat makan siang, matahari tinggi di atas kepalanya. Arif melihat ke bawah. Bayangannya pendek dan gemuk, tepat di dekat kakinya.",
+      "Saat makan siang, matahari tinggi di atas kepalanya. Arif melihat ke bawah. Bayangannya pendek dan kecil, tepat di dekat kakinya.",
       "Sore hari, Arif keluar lagi. Bayangannya panjang lagi, tetapi sekarang menunjuk ke arah sebaliknya!",
       "'Kenapa bayanganku berubah?' tanya Arif. Nenek tersenyum. 'Perhatikan di mana matahari setiap kali.'",
       "Arif mengerti. Saat matahari rendah, bayangan panjang. Saat matahari tinggi, bayangan pendek.",
@@ -132,8 +132,8 @@
       "id": "q4",
       "kind": "sequence",
       "prompt": {
-        "en": "Put in order: long shadow, short shadow, long shadow the other way. Which came second?",
-        "id": "Urutkan: bayangan panjang, bayangan pendek, bayangan panjang ke arah lain. Mana yang kedua?"
+        "en": "Which shadow did Arif see second in the day?",
+        "id": "Bayangan mana yang dilihat Arif kedua kalinya dalam sehari?"
       },
       "choices": {
         "en": [
@@ -184,6 +184,10 @@
     {
       "en": "Never look straight at the sun.",
       "id": "Jangan pernah menatap matahari secara langsung."
+    },
+    {
+      "en": "At midday, wear a hat, drink water and keep the tracing quick.",
+      "id": "Saat tengah hari, pakai topi, minum air, dan menggambarnya cepat saja."
     }
   ],
   "arabicPhrases": [],

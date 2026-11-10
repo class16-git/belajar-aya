@@ -1,6 +1,6 @@
 {
   "id": "reading-g2-maya-measures-the-garden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "readingLevel": "early",
   "genre": "fiction",
@@ -11,17 +11,17 @@
   },
   "text": {
     "en": [
-      "Maya and her big brother Doni want to build a fence round the vegetable bed. First they need to know how long it is.",
+      "Maya and her big brother Doni want to build a fence along one side of the vegetable bed. First they need to know how long it is.",
       "Maya walks along the bed, heel to toe. 'It is 10 of my feet long!' she says.",
-      "Doni walks along it too. 'No, it is only 7 of my feet long,' he says. They frown. Who is right?",
+      "Doni walks along it too. 'No, it is only 8 of my feet long,' he says. They frown. Who is right?",
       "Mother laughs. 'You are both right. Doni's feet are bigger, so he needs fewer steps.'",
       "'But the shop will not know how big our feet are,' says Maya. Mother hands her a tape measure.",
       "Together they measure the bed. It is 2 metres long. 'Now anyone can understand the size,' says Doni."
     ],
     "id": [
-      "Maya dan kakaknya, Doni, ingin membuat pagar di sekeliling bedeng sayur. Pertama, mereka perlu tahu berapa panjangnya.",
+      "Maya dan kakaknya, Doni, ingin membuat pagar di satu sisi bedeng sayur. Pertama, mereka perlu tahu berapa panjangnya.",
       "Maya berjalan di sepanjang bedeng, tumit menyentuh ujung kaki. 'Panjangnya 10 telapak kakiku!' katanya.",
-      "Doni juga berjalan di sepanjang bedeng. 'Bukan, panjangnya cuma 7 telapak kakiku,' katanya. Mereka mengerutkan dahi. Siapa yang benar?",
+      "Doni juga berjalan di sepanjang bedeng. 'Bukan, panjangnya cuma 8 telapak kakiku,' katanya. Mereka mengerutkan dahi. Siapa yang benar?",
       "Ibu tertawa. 'Kalian berdua benar. Kaki Doni lebih besar, jadi ia butuh lebih sedikit langkah.'",
       "'Tapi toko tidak tahu sebesar apa kaki kita,' kata Maya. Ibu memberinya meteran.",
       "Bersama-sama mereka mengukur bedeng itu. Panjangnya 2 meter. 'Sekarang semua orang bisa mengerti ukurannya,' kata Doni."
@@ -82,12 +82,12 @@
       "choices": {
         "en": [
           "10 feet",
-          "7 feet",
+          "8 feet",
           "2 feet"
         ],
         "id": [
           "10 telapak kaki",
-          "7 telapak kaki",
+          "8 telapak kaki",
           "2 telapak kaki"
         ]
       },
@@ -125,21 +125,21 @@
       },
       "choices": {
         "en": [
-          "3 more",
-          "17 more",
-          "7 more"
+          "2 more",
+          "18 more",
+          "8 more"
         ],
         "id": [
-          "3 lebih banyak",
-          "17 lebih banyak",
-          "7 lebih banyak"
+          "2 lebih banyak",
+          "18 lebih banyak",
+          "8 lebih banyak"
         ]
       },
       "answer": 0,
       "evidenceParagraph": 2,
       "check": {
-        "expression": "10 - 7",
-        "result": "3"
+        "expression": "10 - 8",
+        "result": "2"
       }
     },
     {

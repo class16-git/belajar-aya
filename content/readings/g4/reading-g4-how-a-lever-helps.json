@@ -1,6 +1,6 @@
 {
   "id": "reading-g4-how-a-lever-helps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "readingLevel": "fluent",
   "genre": "explanatory",
@@ -120,26 +120,26 @@
       "id": "q3",
       "kind": "math",
       "prompt": {
-        "en": "A 20 kg child sits 3 m from the middle of a seesaw. How far from the middle must a 30 kg child sit to balance?",
-        "id": "Anak 20 kg duduk 3 m dari tengah jungkat-jungkit. Berapa jarak dari tengah anak 30 kg harus duduk agar seimbang?"
+        "en": "A 20 kg child sits 1.5 m from the middle of a seesaw. How far from the middle must a 30 kg child sit to balance?",
+        "id": "Anak 20 kg duduk 1,5 m dari tengah jungkat-jungkit. Berapa jarak dari tengah anak 30 kg harus duduk agar seimbang?"
       },
       "choices": {
         "en": [
-          "2 m",
-          "3 m",
-          "4.5 m"
+          "1 m",
+          "1.5 m",
+          "2.25 m"
         ],
         "id": [
-          "2 m",
-          "3 m",
-          "4,5 m"
+          "1 m",
+          "1,5 m",
+          "2,25 m"
         ]
       },
       "answer": 0,
       "evidenceParagraph": 3,
       "check": {
-        "expression": "20 * 3 / 30",
-        "result": "2"
+        "expression": "20 * 1.5 / 30",
+        "result": "1"
       }
     },
     {

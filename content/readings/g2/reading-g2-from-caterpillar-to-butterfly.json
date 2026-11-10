@@ -1,6 +1,6 @@
 {
   "id": "reading-g2-from-caterpillar-to-butterfly",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "readingLevel": "early",
   "genre": "explanatory",
@@ -14,7 +14,7 @@
       "A butterfly does not start life looking like a butterfly. It changes in four stages. This big change is called metamorphosis.",
       "First, a butterfly lays a tiny egg on a leaf. The leaf is chosen carefully, because it will be food for the baby.",
       "Second, a caterpillar hatches from the egg. It eats and eats. As it grows, it sheds its skin several times.",
-      "Third, the caterpillar makes a hard case around itself. This stage is called a chrysalis. Inside, its body is changing.",
+      "Third, the caterpillar hangs very still and sheds its skin one last time. Underneath is a hard case called a chrysalis. Inside, its body is changing.",
       "Fourth, the chrysalis opens and an adult butterfly comes out. Its wings are soft and wet, so it waits for them to dry before it flies.",
       "Later, the butterfly lays its own eggs, and the cycle begins again. That is why we call it a life cycle."
     ],
@@ -22,7 +22,7 @@
       "Kupu-kupu tidak lahir dalam bentuk kupu-kupu. Ia berubah melalui empat tahap. Perubahan besar ini disebut metamorfosis.",
       "Pertama, kupu-kupu bertelur kecil di sehelai daun. Daunnya dipilih dengan hati-hati, karena akan menjadi makanan bayinya.",
       "Kedua, ulat menetas dari telur. Ia makan terus-menerus. Saat tumbuh, ia berganti kulit beberapa kali.",
-      "Ketiga, ulat membuat pembungkus keras di sekeliling tubuhnya. Tahap ini disebut kepompong. Di dalamnya, tubuhnya sedang berubah.",
+      "Ketiga, ulat menggantung diam dan berganti kulit untuk terakhir kalinya. Di bawah kulit itu ada pembungkus keras yang disebut kepompong. Di dalamnya, tubuhnya sedang berubah.",
       "Keempat, kepompong terbuka dan kupu-kupu dewasa keluar. Sayapnya masih lembut dan basah, jadi ia menunggu sayapnya kering sebelum terbang.",
       "Kemudian, kupu-kupu itu bertelur, dan siklusnya dimulai lagi. Itulah sebabnya kita menyebutnya daur hidup."
     ]
@@ -66,8 +66,8 @@
         "id": "kepompong"
       },
       "meaning": {
-        "en": "the hard case where a caterpillar changes into a butterfly",
-        "id": "pembungkus keras tempat ulat berubah menjadi kupu-kupu"
+        "en": "the hard case a caterpillar's body forms when it changes into a butterfly",
+        "id": "pembungkus keras yang terbentuk dari tubuh ulat saat berubah menjadi kupu-kupu"
       }
     },
     {
@@ -227,6 +227,10 @@
     },
     {
       "claim": "Caterpillars shed their skin several times as they grow.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A butterfly chrysalis forms from the caterpillar's final skin; moths spin silk cocoons.",
       "status": "common_knowledge"
     },
     {

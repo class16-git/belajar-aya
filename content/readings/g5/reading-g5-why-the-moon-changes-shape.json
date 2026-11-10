@@ -1,6 +1,6 @@
 {
   "id": "reading-g5-why-the-moon-changes-shape",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "readingLevel": "fluent",
   "genre": "explanatory",
@@ -12,7 +12,7 @@
   "text": {
     "en": [
       "On some nights the Moon is a bright round disc. On others it is a thin curve, and on some nights we cannot see it at all. Yet the Moon itself never changes shape. So what is going on?",
-      "The Moon does not make its own light. Like a mirror-ball in a dark room, it shines only because sunlight falls on it and bounces off towards us.",
+      "The Moon does not make its own light. Like a ball lit by a torch in a dark room, it shines only because sunlight falls on it and bounces off towards us.",
       "At every moment, the Sun lights up exactly half of the Moon — the half facing the Sun. The other half is in darkness.",
       "The Moon travels around the Earth, taking about 29.5 days for one full cycle of shapes. As it moves, we see different amounts of its sunlit half. These changing views are called the phases of the Moon.",
       "When the Moon is between the Earth and the Sun, its sunlit half faces away from us, so we see almost nothing: this is the new moon. As it moves on, a thin crescent appears and grows, or waxes, night by night.",
@@ -21,7 +21,7 @@
     ],
     "id": [
       "Pada malam tertentu, Bulan berupa piringan bulat yang terang. Pada malam lain, Bulan berupa lengkungan tipis, dan ada malam-malam ketika kita sama sekali tidak bisa melihatnya. Padahal bentuk Bulan sendiri tidak pernah berubah. Jadi apa yang terjadi?",
-      "Bulan tidak menghasilkan cahayanya sendiri. Seperti bola cermin di ruangan gelap, Bulan bersinar hanya karena cahaya Matahari jatuh ke permukaannya lalu dipantulkan ke arah kita.",
+      "Bulan tidak menghasilkan cahayanya sendiri. Seperti bola yang disorot senter di ruangan gelap, Bulan bersinar hanya karena cahaya Matahari jatuh ke permukaannya lalu dipantulkan ke arah kita.",
       "Setiap saat, Matahari menerangi tepat separuh Bulan — separuh yang menghadap Matahari. Separuh lainnya gelap.",
       "Bulan mengelilingi Bumi, dan satu siklus penuh perubahan bentuknya memakan waktu sekitar 29,5 hari. Saat Bulan bergerak, kita melihat bagian sisi terangnya dalam jumlah berbeda. Perubahan penampakan ini disebut fase Bulan.",
       "Saat Bulan berada di antara Bumi dan Matahari, sisi terangnya membelakangi kita, sehingga kita hampir tidak melihat apa-apa: inilah bulan baru. Saat Bulan terus bergerak, sabit tipis muncul dan membesar malam demi malam.",
@@ -132,8 +132,8 @@
       "id": "q3",
       "kind": "math",
       "prompt": {
-        "en": "If one full cycle of phases takes about 29.5 days, about how long is it from new moon to full moon?",
-        "id": "Jika satu siklus fase sekitar 29,5 hari, kira-kira berapa lama dari bulan baru ke bulan purnama?"
+        "en": "Suppose a cycle of phases is 29.5 days and the full moon comes exactly halfway. How many days after the new moon is that?",
+        "id": "Misalkan satu siklus fase 29,5 hari dan purnama datang tepat di pertengahan. Berapa hari setelah bulan baru itu?"
       },
       "choices": {
         "en": [

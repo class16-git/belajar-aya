@@ -1,6 +1,6 @@
 {
   "id": "reading-g2-egg-carton-seed-tray",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "readingLevel": "early",
   "genre": "procedural",
@@ -155,7 +155,7 @@
       "kind": "math",
       "prompt": {
         "en": "You put 2 seeds in each of 6 cups. How many seeds do you use?",
-        "id": "Kamu memasukkan 2 biji ke setiap 6 wadah. Berapa biji yang kamu pakai?"
+        "id": "Kamu memasukkan 2 biji ke masing-masing dari 6 wadah. Berapa biji yang kamu pakai?"
       },
       "choices": {
         "en": [
@@ -241,8 +241,8 @@
   ],
   "safetyNotes": [
     {
-      "en": "An adult does all cutting. Wash hands after handling soil, and never eat seeds from a seed packet.",
-      "id": "Orang dewasa yang melakukan semua pemotongan. Cuci tangan setelah memegang tanah, dan jangan memakan biji dari paket benih."
+      "en": "An adult does all cutting. Wash hands after handling soil, and never eat seeds from a seed packet. Do not rub your eyes after touching chilli seeds.",
+      "id": "Orang dewasa yang melakukan semua pemotongan. Cuci tangan setelah memegang tanah, dan jangan memakan biji dari paket benih. Jangan mengucek mata setelah memegang biji cabai."
     }
   ],
   "arabicPhrases": [],

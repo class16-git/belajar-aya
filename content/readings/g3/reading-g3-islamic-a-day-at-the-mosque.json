@@ -1,0 +1,284 @@
+{
+  "id": "reading-g3-islamic-a-day-at-the-mosque",
+  "version": "0.1.0",
+  "level": "g3",
+  "readingLevel": "transitional",
+  "genre": "explanatory",
+  "mode": "independent",
+  "title": {
+    "en": "A day at the mosque",
+    "id": "Sehari di masjid"
+  },
+  "text": {
+    "en": [
+      "A mosque is a place where Muslims gather to pray. In Indonesia you may hear it called a masjid, and smaller ones are often called a musala or langgar.",
+      "Five times a day, the adhan, the call to prayer, is called from the mosque. It tells people that the time for prayer has come.",
+      "Before going in, people take off their shoes and leave them by the door. This helps keep the prayer area clean.",
+      "Most mosques have a place for wudu, with taps where people wash before praying.",
+      "Inside, there is a niche in the wall called the mihrab. It shows the direction of the qiblah, towards the Kaaba in Makkah, which Muslims face when they pray.",
+      "People stand in straight rows behind the imam, who leads the prayer. On Fridays, many gather for the Friday prayer and listen to a talk called the khutbah.",
+      "A mosque is also a place for learning and community. Children may learn to read the Qur'an there, and families may gather to share food at special times such as Ramadan."
+    ],
+    "id": [
+      "Masjid adalah tempat umat Islam berkumpul untuk salat. Di Indonesia, yang lebih kecil sering disebut musala atau langgar.",
+      "Lima kali sehari, azan dikumandangkan dari masjid. Azan memberi tahu bahwa waktu salat telah tiba.",
+      "Sebelum masuk, orang melepas sepatu dan meletakkannya di dekat pintu. Ini membantu menjaga tempat salat tetap bersih.",
+      "Kebanyakan masjid punya tempat wudu, dengan keran tempat orang membasuh diri sebelum salat.",
+      "Di dalam, ada ceruk di dinding yang disebut mihrab. Mihrab menunjukkan arah kiblat, ke Kakbah di Makkah, yang dihadap umat Islam saat salat.",
+      "Jamaah berdiri dalam saf yang lurus di belakang imam, yang memimpin salat. Pada hari Jumat, banyak orang berkumpul untuk salat Jumat dan mendengarkan khotbah.",
+      "Masjid juga tempat belajar dan berkumpul. Anak-anak bisa belajar mengaji di sana, dan keluarga bisa berkumpul untuk berbagi makanan pada waktu istimewa seperti Ramadan."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Identifies the main parts and purposes of a mosque from an explanatory text.",
+      "id": "Mengenali bagian-bagian utama dan fungsi masjid dari teks penjelasan."
+    },
+    {
+      "en": "Uses text evidence to answer questions.",
+      "id": "Memakai bukti dari teks untuk menjawab pertanyaan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "adhan",
+        "id": "azan"
+      },
+      "meaning": {
+        "en": "the call to prayer",
+        "id": "panggilan untuk salat"
+      }
+    },
+    {
+      "word": {
+        "en": "mihrab",
+        "id": "mihrab"
+      },
+      "meaning": {
+        "en": "a niche in the wall that shows the qiblah",
+        "id": "ceruk di dinding yang menunjukkan kiblat"
+      }
+    },
+    {
+      "word": {
+        "en": "qiblah",
+        "id": "kiblat"
+      },
+      "meaning": {
+        "en": "the direction Muslims face in prayer",
+        "id": "arah yang dihadap umat Islam saat salat"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "How many times a day is the adhan called?",
+        "id": "Berapa kali sehari azan dikumandangkan?"
+      },
+      "choices": {
+        "en": [
+          "five times",
+          "once",
+          "ten times"
+        ],
+        "id": [
+          "lima kali",
+          "sekali",
+          "sepuluh kali"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What does the mihrab show?",
+        "id": "Apa yang ditunjukkan mihrab?"
+      },
+      "choices": {
+        "en": [
+          "the direction of the qiblah",
+          "where to leave shoes",
+          "the time of prayer"
+        ],
+        "id": [
+          "arah kiblat",
+          "tempat meletakkan sepatu",
+          "waktu salat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which detail shows a mosque is also a place for learning?",
+        "id": "Detail mana yang menunjukkan masjid juga tempat belajar?"
+      },
+      "choices": {
+        "en": [
+          "Children may learn to read the Qur'an there.",
+          "People take off their shoes.",
+          "There are taps for wudu."
+        ],
+        "id": [
+          "Anak-anak bisa belajar mengaji di sana.",
+          "Orang melepas sepatu.",
+          "Ada keran untuk wudu."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why might the rows be kept straight?",
+        "id": "Mengapa saf dijaga tetap lurus?"
+      },
+      "choices": {
+        "en": [
+          "so everyone can pray together in good order behind the imam",
+          "so the mosque looks bigger",
+          "so people can leave quickly"
+        ],
+        "id": [
+          "agar semua bisa salat bersama dengan teratur di belakang imam",
+          "agar masjid tampak lebih besar",
+          "agar orang bisa cepat pulang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q5",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main idea of the text?",
+        "id": "Apa gagasan utama teks ini?"
+      },
+      "choices": {
+        "en": [
+          "A mosque is a place for prayer, learning and community.",
+          "Mosques are only open on Fridays.",
+          "Shoes are not allowed anywhere."
+        ],
+        "id": [
+          "Masjid adalah tempat salat, belajar, dan berkumpul.",
+          "Masjid hanya buka pada hari Jumat.",
+          "Sepatu tidak boleh dipakai di mana pun."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "islamic_values",
+      "connection": {
+        "en": "Learning about the mosque helps children take part respectfully in their community's prayer and learning.",
+        "id": "Mengenal masjid membantu anak ikut serta dengan hormat dalam salat dan kegiatan belajar di lingkungannya."
+      }
+    },
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Mosques in Indonesia come in many styles, from small langgar to large city mosques.",
+        "id": "Masjid di Indonesia punya banyak gaya, dari langgar kecil sampai masjid besar di kota."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What did you notice the last time you visited a mosque?",
+      "id": "Apa yang kamu perhatikan saat terakhir kali ke masjid?"
+    },
+    {
+      "en": "How can children help keep the mosque calm and clean?",
+      "id": "Bagaimana anak-anak bisa membantu menjaga masjid tetap tenang dan bersih?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Visit a nearby mosque or musala with a grown-up outside prayer time and find the wudu area, the mihrab and the place for shoes. Draw a simple floor plan.",
+    "id": "Kunjungi masjid atau musala terdekat bersama orang dewasa di luar waktu salat dan temukan tempat wudu, mihrab, dan tempat sepatu. Gambar denah sederhana."
+  },
+  "factChecks": [
+    {
+      "claim": "The adhan is called five times a day for the five daily prayers.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "People remove shoes before entering the prayer area of a mosque.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The mihrab indicates the qiblah, the direction of the Kaaba in Makkah.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Smaller prayer places in Indonesia are often called musala or langgar.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "On Fridays a congregational prayer with a khutbah is held at the mosque.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Visit with a grown-up and stay with them; keep voices low near people who are praying.",
+      "id": "Berkunjunglah bersama orang dewasa dan tetap di dekatnya; pelankan suara di dekat orang yang sedang salat."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "religious_content",
+    "scholar_wording_required",
+    "source_verification",
+    "translation_review"
+  ],
+  "reviewStatus": "draft",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "tone",
+      "no-invented-citations"
+    ]
+  },
+  "religiousReview": {
+    "doctrinalSchool": null,
+    "fiqhSchool": null,
+    "arabicSource": null,
+    "edition": null,
+    "pageOrSection": null,
+    "translationReviewer": null,
+    "scholarReviewer": null,
+    "reviewedAt": null,
+    "approvalStatus": "unverified",
+    "notes": [
+      "Reading drafted by an AI; teachings are described in plain words and must be confirmed by a qualified scholar. No verse, hadith or quotation is reproduced.",
+      "Check the factual descriptions of the adhan, mihrab, qiblah, rows behind the imam, Friday prayer and the Indonesian terms.",
+      "Who attends Friday prayer and its rulings are not described; confirm that this is acceptable for the age."
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-islamic",
+    "createdAt": "2026-11-10"
+  }
+}

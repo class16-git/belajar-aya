@@ -1,6 +1,6 @@
 {
   "id": "reading-age4_5-dina-grows-a-sunflower",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age4_5",
   "readingLevel": "pre_reader",
   "genre": "picture_story_script",
@@ -14,7 +14,7 @@
       "Dina has a striped sunflower seed. She pushes it into a pot of soil, just a finger deep.",
       "Every morning, Dina gives the pot a little drink of water. Not too much, not too little.",
       "One day a tiny green shoot pokes up. 'It's awake!' Dina whispers.",
-      "Dina puts the pot by the sunny window. The shoot grows taller and gets more leaves.",
+      "Dina and Mama plant the shoot outside in the sunny garden. It grows taller and gets more leaves.",
       "Weeks later, the stem is taller than Dina. At the top, a big yellow flower opens and turns its face to the light.",
       "When the flower dries, Dina finds lots of new striped seeds in the middle. 'Now I can plant more!'"
     ],
@@ -22,7 +22,7 @@
       "Dina punya sebutir biji bunga matahari yang bergaris. Ia menekannya ke dalam pot berisi tanah, sedalam satu ruas jari.",
       "Setiap pagi, Dina memberi pot itu sedikit air. Tidak terlalu banyak, tidak terlalu sedikit.",
       "Suatu hari, tunas hijau kecil muncul. 'Dia bangun!' bisik Dina.",
-      "Dina menaruh pot di dekat jendela yang cerah. Tunasnya tumbuh makin tinggi dan daunnya bertambah.",
+      "Dina dan Mama memindahkan tunasnya ke kebun yang cerah. Tunasnya tumbuh makin tinggi dan daunnya bertambah.",
       "Beberapa minggu kemudian, batangnya lebih tinggi dari Dina. Di puncaknya, bunga kuning besar mekar dan menghadap ke arah cahaya.",
       "Saat bunganya kering, Dina menemukan banyak biji bergaris baru di tengahnya. 'Sekarang aku bisa menanam lagi!'"
     ]
@@ -67,8 +67,8 @@
       "id": "Kartu 3: tunas hijau kecil"
     },
     {
-      "en": "Card 4: a leafy plant by a sunny window",
-      "id": "Kartu 4: tanaman berdaun di dekat jendela cerah"
+      "en": "Card 4: a leafy plant in a sunny garden",
+      "id": "Kartu 4: tanaman berdaun di kebun yang cerah"
     },
     {
       "en": "Card 5: a tall sunflower in bloom",
@@ -170,18 +170,18 @@
       "id": "q3",
       "kind": "inference",
       "prompt": {
-        "en": "Why did Dina move the pot to the window?",
-        "id": "Mengapa Dina memindahkan pot ke dekat jendela?"
+        "en": "Why did Dina and Mama move the shoot to the garden?",
+        "id": "Mengapa Dina dan Mama memindahkan tunas ke kebun?"
       },
       "choices": {
         "en": [
-          "so the plant could get light from the sun",
-          "so the plant could see outside",
+          "so the plant could get plenty of sunlight",
+          "so the plant could see the street",
           "to keep it away from water"
         ],
         "id": [
-          "agar tanaman mendapat cahaya matahari",
-          "agar tanaman bisa melihat ke luar",
+          "agar tanaman mendapat banyak cahaya matahari",
+          "agar tanaman bisa melihat jalan",
           "agar jauh dari air"
         ]
       },
@@ -231,8 +231,8 @@
     }
   ],
   "offlineActivity": {
-    "en": "Plant a large seed (such as a sunflower or bean seed from a garden pack) in a cup of soil with your child. The adult handles the seed packet; water it together each morning and draw how it changes.",
-    "id": "Tanam biji yang besar (misalnya biji bunga matahari atau kacang dari paket benih) di gelas berisi tanah bersama anak. Orang dewasa memegang paket benih; siram bersama setiap pagi dan gambar perubahannya."
+    "en": "With your child, fill a cup with soil. The adult pushes one large seed (such as a sunflower seed) a finger deep and keeps the packet out of reach; your child covers it with soil, waters it each morning and draws how it changes.",
+    "id": "Bersama anak, isi gelas dengan tanah. Orang dewasa menekan satu biji besar (misalnya biji bunga matahari) sedalam satu ruas jari dan menyimpan paket benih di luar jangkauan anak; anak menutup biji dengan tanah, menyiramnya setiap pagi, dan menggambar perubahannya."
   },
   "factChecks": [
     {
@@ -246,8 +246,12 @@
   ],
   "safetyNotes": [
     {
-      "en": "An adult keeps the seed packet; seeds are planted straight away and never eaten. Wash hands after handling soil.",
-      "id": "Orang dewasa menyimpan paket benih; biji langsung ditanam dan tidak dimakan. Cuci tangan setelah memegang tanah."
+      "en": "Seeds are a choking hazard: only the adult handles them, and the adult keeps the packet out of reach.",
+      "id": "Biji bisa membuat tersedak: hanya orang dewasa yang memegangnya dan menyimpan paket benih di luar jangkauan anak."
+    },
+    {
+      "en": "Wash hands after handling soil.",
+      "id": "Cuci tangan setelah memegang tanah."
     }
   ],
   "arabicPhrases": [],

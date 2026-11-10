@@ -1,6 +1,6 @@
 {
   "id": "reading-g4-make-a-rain-gauge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "readingLevel": "fluent",
   "genre": "procedural",
@@ -17,7 +17,7 @@
       "Step 2: Put a handful of stones in the bottom so the gauge does not blow over. Pour in water until it just covers the stones. Mark this level as 0.",
       "Step 3: Tape the ruler to the outside so its 0 mark lines up with your 0 line. The sides must be straight, or the millimetres will not match the real rainfall.",
       "Step 4: Stand the gauge in an open place, away from roofs and trees that could drip into it or block the rain.",
-      "Step 5: Check it at the same time every day. Write the height of water above the 0 line, then pour out water back down to 0.",
+      "Step 5: Check it at the same time every day. Write the height of water above the 0 line. Then empty the bottle completely, rinse it, and refill it with fresh water just to the 0 line.",
       "Step 6: After a week, draw a bar chart. Which day was wettest? How much rain fell in total?"
     ],
     "id": [
@@ -27,7 +27,7 @@
       "Langkah 2: Masukkan segenggam batu di dasar agar penakar tidak roboh tertiup angin. Tuang air sampai batu tepat tertutup. Tandai ketinggian ini sebagai 0.",
       "Langkah 3: Rekatkan penggaris di bagian luar sehingga tanda 0 sejajar dengan garis 0. Sisi botol harus lurus, kalau tidak, ukuran milimeternya tidak sesuai dengan curah hujan sebenarnya.",
       "Langkah 4: Letakkan penakar di tempat terbuka, jauh dari atap dan pohon yang bisa meneteskan air ke dalamnya atau menghalangi hujan.",
-      "Langkah 5: Periksa pada jam yang sama setiap hari. Catat tinggi air di atas garis 0, lalu buang airnya sampai kembali ke 0.",
+      "Langkah 5: Periksa pada jam yang sama setiap hari. Catat tinggi air di atas garis 0. Lalu kosongkan botol sepenuhnya, bilas, dan isi lagi dengan air bersih tepat sampai garis 0.",
       "Langkah 6: Setelah seminggu, buat diagram batang. Hari apa yang paling basah? Berapa jumlah hujan seluruhnya?"
     ]
   },
@@ -177,12 +177,12 @@
       },
       "choices": {
         "en": [
-          "pour the water back down to the 0 line",
+          "empty it and refill fresh water to the 0 line",
           "draw a bar chart",
           "cut the bottle"
         ],
         "id": [
-          "membuang air sampai kembali ke garis 0",
+          "mengosongkannya lalu mengisi air bersih sampai garis 0",
           "membuat diagram batang",
           "memotong botol"
         ]
@@ -218,8 +218,8 @@
     }
   ],
   "offlineActivity": {
-    "en": "Build the gauge and keep a seven-day rainfall table. Then draw a bar chart and write two sentences about what it shows.",
-    "id": "Buat penakar hujan dan isi tabel curah hujan selama tujuh hari. Lalu buat diagram batang dan tulis dua kalimat tentang apa yang ditunjukkannya."
+    "en": "Build the gauge, empty and refill it every day, and keep a seven-day rainfall table. Then draw a bar chart and write two sentences about what it shows.",
+    "id": "Buat penakar hujan, kosongkan dan isi ulang setiap hari, dan isi tabel curah hujan selama tujuh hari. Lalu buat diagram batang dan tulis dua kalimat tentang apa yang ditunjukkannya."
   },
   "factChecks": [
     {
@@ -243,6 +243,10 @@
     {
       "en": "Do not go outside to check the gauge during thunder and lightning.",
       "id": "Jangan keluar untuk memeriksa penakar saat ada guntur dan petir."
+    },
+    {
+      "en": "Standing water lets mosquitoes breed. Keep the funnel in place, change the water every day, check for wrigglers, and empty and dry the gauge when you finish.",
+      "id": "Air yang menggenang bisa menjadi sarang nyamuk. Pasang corongnya, ganti air setiap hari, periksa jentik, dan kosongkan serta keringkan penakar setelah selesai."
     }
   ],
   "arabicPhrases": [],
