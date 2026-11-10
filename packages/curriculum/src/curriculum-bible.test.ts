@@ -187,3 +187,18 @@ describe('slice A extension (age 3–4 caregiver-led cards)', () => {
     expect(cat.lessons.filter((l) => l.id.startsWith('lesson-pre-') && l.reviewStatus === 'reviewed')).toEqual([]);
   });
 });
+
+describe('slice C (age 4–5 and Kindergarten caregiver-led cards)', () => {
+  it('every non-Islamic age 4–5 and Kindergarten objective has a lesson or card; cards avoid choking hazards', () => {
+    const cat = getCatalog();
+    const objectives = cat.objectives.filter((o) => (o.stage === 'age4_5' || o.stage === 'k') && o.framework !== 'islamic_studies');
+    const covered = objectives.filter((o) => cat.lessons.some((l) => l.objectiveIds.includes(o.id)));
+    // K number bonds to 20 and teen numbers are on-screen work, planned as the next slice.
+    expect(objectives.filter((o) => !covered.includes(o)).map((o) => o.id).sort()).toEqual(['math.k.bonds-20', 'math.k.tens-ones-intro']);
+    for (const l of cat.lessons.filter((x) => x.ageBand === 'prek' || x.ageBand === 'kindergarten')) {
+      expect(l.mode, l.id).toBe('offline');
+      if (l.mode === 'offline') expect(l.hazards.chokingRisk, l.id).toBe(false);
+      expect(l.reviewStatus, l.id).toBe('agent_reviewed');
+    }
+  });
+});

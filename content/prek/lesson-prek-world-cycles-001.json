@@ -1,0 +1,130 @@
+{
+  "id": "lesson-prek-world-cycles-001",
+  "skillId": "PREK-CULT-WORLD",
+  "framework": "montessori",
+  "objectiveIds": [
+    "mont.age4_5.continents-life-cycles"
+  ],
+  "title": {
+    "en": "Globe and seed-to-plant",
+    "id": "Globe dan biji menjadi tanaman"
+  },
+  "ageBand": "prek",
+  "domain": "cultural",
+  "mode": "offline",
+  "objective": {
+    "en": "Find land and water on a globe, then put three pictures of a plant's life cycle in order.",
+    "id": "Menemukan daratan dan air di globe, lalu mengurutkan tiga gambar siklus hidup tanaman."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 5,
+  "activityMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "materials": [
+    {
+      "en": "A globe or a world map you have at home",
+      "id": "Globe atau peta dunia yang ada di rumah"
+    },
+    {
+      "en": "Three simple drawings you make: seed, sprout, plant with a flower",
+      "id": "Tiga gambar sederhana yang Anda buat: biji, kecambah, tanaman berbunga"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw the three pictures on separate cards.",
+      "id": "Gambar ketiga gambar di kartu terpisah."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Spin the globe slowly. Touch land and say 'land'; touch sea and say 'water'.",
+      "id": "Putar globe perlahan. Sentuh daratan dan katakan 'daratan'; sentuh laut dan katakan 'air'."
+    },
+    {
+      "en": "Find where your family lives together. Name one or two continents.",
+      "id": "Temukan bersama tempat tinggal keluarga. Sebutkan satu atau dua benua."
+    },
+    {
+      "en": "Mix the plant cards and ask: 'What comes first?' Let your child put them in order and tell the story.",
+      "id": "Acak kartu tanaman dan tanyakan: 'Mana yang pertama?' Biarkan anak mengurutkan dan menceritakannya."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "This is where we live.",
+      "id": "Di sinilah kita tinggal."
+    },
+    {
+      "en": "First a seed, next…, last…",
+      "id": "Pertama biji, lalu…, terakhir…"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Tells land from water",
+      "id": "Membedakan daratan dan air"
+    },
+    {
+      "en": "Orders three life-cycle cards",
+      "id": "Mengurutkan tiga kartu siklus hidup"
+    },
+    {
+      "en": "Uses first / next / last",
+      "id": "Memakai pertama / lalu / terakhir"
+    }
+  ],
+  "cleanup": {
+    "en": "Put the globe back and keep the cards in an envelope.",
+    "id": "Kembalikan globe dan simpan kartu di amplop."
+  },
+  "variations": [
+    {
+      "en": "Plant a bean in a clear cup and watch the real cycle.",
+      "id": "Tanam kacang di gelas bening dan amati siklus sebenarnya."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within reach for the whole activity.",
+      "id": "Orang dewasa tetap dalam jangkauan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "Continent names can wait; the big ideas are land and water, and that living things change in order.",
+      "id": "Nama benua bisa menunggu; gagasan besarnya adalah daratan dan air, serta makhluk hidup berubah secara berurutan."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [],
+  "arabicPhrases": []
+}

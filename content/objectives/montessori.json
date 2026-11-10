@@ -228,7 +228,9 @@
       "delivery": "blended",
       "assessment": "observation",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "PREK-LANG-SOUND-LETTER"
+        ]
       },
       "reviewFlags": [],
       "requiresReligiousReview": false,
@@ -250,7 +252,9 @@
       "delivery": "blended",
       "assessment": "observation",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "PREK-LANG-MOVABLE"
+        ]
       },
       "reviewFlags": [],
       "requiresReligiousReview": false,
@@ -272,7 +276,9 @@
       "delivery": "offline",
       "assessment": "observation",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "PREK-CULT-WORLD"
+        ]
       },
       "reviewFlags": [],
       "requiresReligiousReview": false,
@@ -294,7 +300,9 @@
       "delivery": "blended",
       "assessment": "digital",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "K-LANG-READ-WORDS"
+        ]
       },
       "reviewFlags": [],
       "requiresReligiousReview": false,
@@ -316,7 +324,9 @@
       "delivery": "offline",
       "assessment": "observation",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "K-CULT-MAPS-PLANTS"
+        ]
       },
       "reviewFlags": [],
       "requiresReligiousReview": false,
@@ -338,7 +348,9 @@
       "delivery": "offline",
       "assessment": "observation",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "K-PRACT-ROUTINES"
+        ]
       },
       "reviewFlags": [],
       "requiresReligiousReview": false,

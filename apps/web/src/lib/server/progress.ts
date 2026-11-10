@@ -5,7 +5,7 @@ import { prisma, type ChildProfile } from '@atlas/database';
 import { ageContext } from './children';
 import { config } from './config';
 import { engineInput, toEngineState } from './learning';
-import { availabilityForBand, interactiveBandForGrade } from './availability';
+import { availabilityForBand, cardBandsFor, interactiveBandForGrade } from './availability';
 
 export interface SkillProgress {
   skill: Skill;
@@ -88,9 +88,9 @@ export async function buildProgress(child: ChildProfile, now = new Date()) {
     const input = await engineInput(child, ctx, now, child.focusSkillId);
     recommendation = recommendNext(input);
   }
-  // Age-appropriate offline suggestions: under-3 only toddler cards; age-3+ cards only after the parent
-  // acknowledged the "turned 3" notice (no automatic change of mode).
-  const cardBands = ctx.age && ctx.age.years >= 3 && child.transitionAcknowledged ? ['toddler', 'preschool'] : ['toddler'];
+  // Age-appropriate offline suggestions: under-3 only toddler cards; older bands only after the parent
+  // acknowledged the age-transition notice (no automatic change of mode).
+  const cardBands = cardBandsFor(ctx.age?.years ?? null, child.transitionAcknowledged);
   const cards = visibleOfflineCards(config.minReview).filter((c) => cardBands.includes(c.ageBand));
   const cardHistory = observations
     .filter((o) => o.lessonId && o.skillId)

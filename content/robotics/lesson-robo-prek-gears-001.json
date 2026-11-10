@@ -1,0 +1,140 @@
+{
+  "id": "lesson-robo-prek-gears-001",
+  "skillId": "ROBO-PK-GEARS",
+  "framework": "robotics_stem",
+  "objectiveIds": [
+    "robo.age4_5.gears-building"
+  ],
+  "title": {
+    "en": "Turning lids",
+    "id": "Tutup yang berputar"
+  },
+  "ageBand": "prek",
+  "domain": "robotics_stem",
+  "mode": "offline",
+  "objective": {
+    "en": "Notice how one turning circle makes another turn, and in which direction.",
+    "id": "Memperhatikan bagaimana satu lingkaran yang berputar membuat lingkaran lain berputar, dan ke arah mana."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 5,
+  "activityMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "materials": [
+    {
+      "en": "Two or three large jar lids",
+      "id": "Dua atau tiga tutup toples besar"
+    },
+    {
+      "en": "A tray with a rough tea towel on it (so lids grip each other)",
+      "id": "Nampan beralas serbet kasar (agar tutup saling mencengkeram)"
+    },
+    {
+      "en": "Stickers or a marker dot on each lid",
+      "id": "Stiker atau titik spidol di setiap tutup"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Put a sticker near the edge of each lid so turning is easy to see.",
+      "id": "Tempel stiker di dekat tepi setiap tutup agar putarannya mudah terlihat."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Lay two lids so their edges touch. Turn one slowly with a finger.",
+      "id": "Letakkan dua tutup hingga tepinya bersentuhan. Putar salah satunya perlahan dengan jari."
+    },
+    {
+      "en": "Ask: 'What happened to the other lid? Which way did it turn?'",
+      "id": "Tanyakan: 'Apa yang terjadi pada tutup lainnya? Ke arah mana berputarnya?'"
+    },
+    {
+      "en": "Add a third lid in a line and predict before turning.",
+      "id": "Tambahkan tutup ketiga berjajar dan tebak sebelum memutar."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "What do you think will happen?",
+      "id": "Menurutmu apa yang akan terjadi?"
+    },
+    {
+      "en": "This one turns this way… and that one?",
+      "id": "Yang ini berputar ke sini… yang itu?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Notices the second lid turns",
+      "id": "Memperhatikan tutup kedua ikut berputar"
+    },
+    {
+      "en": "Notices the opposite direction",
+      "id": "Memperhatikan arahnya berlawanan"
+    },
+    {
+      "en": "Predicts with three lids",
+      "id": "Menebak dengan tiga tutup"
+    }
+  ],
+  "cleanup": {
+    "en": "Wash and return the lids.",
+    "id": "Cuci dan kembalikan tutupnya."
+  },
+  "variations": [
+    {
+      "en": "If you own a toy gear set, compare: teeth do the job the towel did.",
+      "id": "Jika punya mainan roda gigi, bandingkan: gigi roda melakukan tugas serbet tadi."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within reach for the whole activity.",
+      "id": "Orang dewasa tetap dalam jangkauan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    },
+    {
+      "en": "Check lids have no sharp edges; keep fingers away from where lids meet when turning fast.",
+      "id": "Pastikan tutup tidak bertepi tajam; jauhkan jari dari titik pertemuan tutup saat berputar cepat."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "This shows the core gear idea without small parts: touching wheels pass on turning and flip direction.",
+      "id": "Ini menunjukkan ide dasar roda gigi tanpa komponen kecil: roda yang bersentuhan meneruskan putaran dan membalik arah."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [
+    "physical_safety"
+  ],
+  "arabicPhrases": []
+}

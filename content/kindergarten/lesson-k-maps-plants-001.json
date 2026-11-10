@@ -1,0 +1,130 @@
+{
+  "id": "lesson-k-maps-plants-001",
+  "skillId": "K-CULT-MAPS-PLANTS",
+  "framework": "montessori",
+  "objectiveIds": [
+    "mont.k.maps-botany"
+  ],
+  "title": {
+    "en": "My room map and plant parts",
+    "id": "Peta kamarku dan bagian tanaman"
+  },
+  "ageBand": "kindergarten",
+  "domain": "cultural",
+  "mode": "offline",
+  "objective": {
+    "en": "Draw a simple map of a room, then name the parts of a real plant.",
+    "id": "Menggambar peta sederhana sebuah ruangan, lalu menyebut bagian-bagian tanaman sungguhan."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 5,
+  "activityMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "materials": [
+    {
+      "en": "Paper and crayons",
+      "id": "Kertas dan krayon"
+    },
+    {
+      "en": "A small, non-toxic potted plant or a weed pulled from the garden with its roots",
+      "id": "Tanaman pot kecil yang tidak beracun atau rumput liar yang dicabut dengan akarnya"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Check the plant is not toxic and has no thorns.",
+      "id": "Pastikan tanaman tidak beracun dan tidak berduri."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Stand in the room and draw it as if you were a bird looking down: the bed, the door, the window.",
+      "id": "Berdiri di ruangan dan gambar seolah-olah dilihat burung dari atas: tempat tidur, pintu, jendela."
+    },
+    {
+      "en": "Hide a toy and mark it on the map with an X. Your child uses the map to find it.",
+      "id": "Sembunyikan mainan dan tandai di peta dengan X. Anak memakai peta untuk menemukannya."
+    },
+    {
+      "en": "Look at the plant together: point to root, stem, leaf and flower, and say each name.",
+      "id": "Amati tanaman bersama: tunjuk akar, batang, daun, dan bunga, lalu sebut namanya."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "On a map we look from above.",
+      "id": "Di peta kita melihat dari atas."
+    },
+    {
+      "en": "Where does the plant drink water?",
+      "id": "Dari mana tanaman minum air?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Uses the map to find the toy",
+      "id": "Memakai peta untuk menemukan mainan"
+    },
+    {
+      "en": "Names at least three plant parts",
+      "id": "Menyebut setidaknya tiga bagian tanaman"
+    }
+  ],
+  "cleanup": {
+    "en": "Wash hands after touching soil, and put the plant back.",
+    "id": "Cuci tangan setelah menyentuh tanah, dan kembalikan tanamannya."
+  },
+  "variations": [
+    {
+      "en": "Your child hides the toy and draws the map for you.",
+      "id": "Anak menyembunyikan mainan dan menggambar peta untuk Anda."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within reach for the whole activity.",
+      "id": "Orang dewasa tetap dalam jangkauan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    },
+    {
+      "en": "Wash hands after handling soil and plants.",
+      "id": "Cuci tangan setelah memegang tanah dan tanaman."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "Maps and plant parts are early geography and science: looking carefully and naming what we see.",
+      "id": "Peta dan bagian tanaman adalah awal geografi dan sains: mengamati dengan teliti dan menamai yang kita lihat."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [],
+  "arabicPhrases": []
+}

@@ -1,0 +1,126 @@
+{
+  "id": "lesson-k-routines-001",
+  "skillId": "K-PRACT-ROUTINES",
+  "framework": "montessori",
+  "objectiveIds": [
+    "mont.k.time-routines"
+  ],
+  "title": {
+    "en": "My day in order",
+    "id": "Urutan hariku"
+  },
+  "ageBand": "kindergarten",
+  "domain": "practical_life",
+  "mode": "offline",
+  "objective": {
+    "en": "Put drawings of daily routines in order and sort them into morning, afternoon and night.",
+    "id": "Mengurutkan gambar kegiatan sehari-hari dan memilahnya ke pagi, siang, dan malam."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 5,
+  "activityMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "materials": [
+    {
+      "en": "Six small drawings or photos of your child's routines (waking up, breakfast, school or play, lunch, bath, bedtime)",
+      "id": "Enam gambar kecil atau foto kegiatan anak (bangun, sarapan, sekolah atau bermain, makan siang, mandi, tidur)"
+    },
+    {
+      "en": "Three labels: morning, afternoon, night",
+      "id": "Tiga label: pagi, siang, malam"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Make the six cards together if you like; children love drawing their own day.",
+      "id": "Buat keenam kartu bersama jika mau; anak senang menggambar harinya sendiri."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Mix the cards. Ask: 'What do you do first when you wake up?'",
+      "id": "Acak kartunya. Tanyakan: 'Apa yang kamu lakukan pertama saat bangun?'"
+    },
+    {
+      "en": "Let your child line up the whole day.",
+      "id": "Biarkan anak mengurutkan seluruh harinya."
+    },
+    {
+      "en": "Place the three labels and sort the cards under them.",
+      "id": "Letakkan ketiga label dan pilah kartu di bawahnya."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "What happens before lunch? After your bath?",
+      "id": "Apa yang terjadi sebelum makan siang? Setelah mandi?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Orders the day correctly",
+      "id": "Mengurutkan hari dengan benar"
+    },
+    {
+      "en": "Uses before / after",
+      "id": "Memakai sebelum / sesudah"
+    },
+    {
+      "en": "Sorts into morning, afternoon, night",
+      "id": "Memilah ke pagi, siang, malam"
+    }
+  ],
+  "cleanup": {
+    "en": "Keep the cards on the fridge as a picture timetable.",
+    "id": "Tempel kartu di kulkas sebagai jadwal bergambar."
+  },
+  "variations": [
+    {
+      "en": "Add a clock face to the morning and night cards.",
+      "id": "Tambahkan gambar jam pada kartu pagi dan malam."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within reach for the whole activity.",
+      "id": "Orang dewasa tetap dalam jangkauan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "Time words are abstract; linking them to the child's own routine makes them concrete.",
+      "id": "Kata waktu itu abstrak; mengaitkannya dengan kegiatan anak sendiri membuatnya konkret."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [],
+  "arabicPhrases": []
+}
