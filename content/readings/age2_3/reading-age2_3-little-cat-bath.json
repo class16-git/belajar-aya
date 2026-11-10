@@ -1,0 +1,208 @@
+{
+  "id": "reading-age2_3-little-cat-bath",
+  "version": "1.0.0",
+  "level": "age2_3",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Little Cat's bath time",
+    "id": "Waktunya Kucing Kecil mandi"
+  },
+  "text": {
+    "en": [
+      "Little Cat has mud on her paws. Pat, pat, pat. Muddy paws!",
+      "Mama fills a small bowl with warm water. Splash, splash.",
+      "Little Cat washes one paw, then the other paw. Rub, rub, rub.",
+      "Mama dries her with a soft towel. Little Cat is clean. Purr, purr."
+    ],
+    "id": [
+      "Kucing Kecil punya lumpur di kakinya. Tap, tap, tap. Kaki berlumpur!",
+      "Mama mengisi mangkuk kecil dengan air hangat. Byur, byur.",
+      "Kucing Kecil mencuci satu kaki, lalu kaki yang lain. Gosok, gosok, gosok.",
+      "Mama mengeringkannya dengan handuk lembut. Kucing Kecil bersih. Purr, purr."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Pat your own hands on your knees for 'pat, pat, pat'.",
+      "id": "Tepuk tangan di lutut untuk 'tap, tap, tap'."
+    },
+    {
+      "en": "Make small splashing movements with your fingers.",
+      "id": "Buat gerakan memercik kecil dengan jari."
+    },
+    {
+      "en": "Rub your child's hands gently together on 'rub, rub, rub'.",
+      "id": "Gosok lembut tangan anak saat 'gosok, gosok, gosok'."
+    },
+    {
+      "en": "Wrap your child in a hug for the towel, then purr together.",
+      "id": "Peluk anak seperti handuk, lalu mendengkur bersama."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a cat with brown paw prints",
+      "id": "Kartu 1: kucing dengan jejak kaki cokelat"
+    },
+    {
+      "en": "Card 2: a bowl of water",
+      "id": "Kartu 2: mangkuk berisi air"
+    },
+    {
+      "en": "Card 3: the cat washing a paw",
+      "id": "Kartu 3: kucing mencuci kaki"
+    },
+    {
+      "en": "Card 4: the cat in a towel, smiling",
+      "id": "Kartu 4: kucing dalam handuk, tersenyum"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a short story and joins in with sounds and actions.",
+      "id": "Mendengarkan cerita pendek dan ikut menirukan bunyi serta gerakan."
+    },
+    {
+      "en": "Connects the story to washing hands.",
+      "id": "Menghubungkan cerita dengan mencuci tangan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "muddy",
+        "id": "berlumpur"
+      },
+      "meaning": {
+        "en": "covered with wet dirt",
+        "id": "tertutup tanah basah"
+      }
+    },
+    {
+      "word": {
+        "en": "towel",
+        "id": "handuk"
+      },
+      "meaning": {
+        "en": "soft cloth to dry with",
+        "id": "kain lembut untuk mengeringkan"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What was on Little Cat's paws?",
+        "id": "Apa yang ada di kaki Kucing Kecil?"
+      },
+      "choices": {
+        "en": [
+          "mud",
+          "milk",
+          "flowers"
+        ],
+        "id": [
+          "lumpur",
+          "susu",
+          "bunga"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Mama do last?",
+        "id": "Apa yang Mama lakukan terakhir?"
+      },
+      "choices": {
+        "en": [
+          "dried her with a towel",
+          "filled a bowl",
+          "found the mud"
+        ],
+        "id": [
+          "mengeringkan dengan handuk",
+          "mengisi mangkuk",
+          "menemukan lumpur"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "How does Little Cat feel at the end?",
+        "id": "Bagaimana perasaan Kucing Kecil di akhir?"
+      },
+      "choices": {
+        "en": [
+          "happy and cosy",
+          "cross",
+          "hungry"
+        ],
+        "id": [
+          "senang dan nyaman",
+          "marah",
+          "lapar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Washing with water and drying our hands keeps us clean, like Little Cat.",
+        "id": "Mencuci dengan air dan mengeringkan tangan membuat kita bersih, seperti Kucing Kecil."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "When do we wash our hands?",
+      "id": "Kapan kita mencuci tangan?"
+    },
+    {
+      "en": "Can you show me how Little Cat rubbed her paws?",
+      "id": "Bisakah kamu tunjukkan cara Kucing Kecil menggosok kakinya?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Wash a toy's feet together in a shallow bowl of water, then dry it with a towel. Stay right beside your child.",
+    "id": "Cuci kaki mainan bersama di mangkuk air yang dangkal, lalu keringkan dengan handuk. Tetaplah tepat di samping anak."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Use only a few centimetres of water and never leave a toddler alone with water.",
+      "id": "Gunakan air hanya beberapa sentimeter dan jangan pernah meninggalkan balita sendirian dengan air."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "safety",
+      "readability"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-reference",
+    "createdAt": "2026-11-10"
+  }
+}
