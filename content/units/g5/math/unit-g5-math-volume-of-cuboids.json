@@ -1,0 +1,430 @@
+{
+  "id": "unit-g5-math-volume-of-cuboids",
+  "version": "1.0.0",
+  "level": "g5",
+  "framework": "math",
+  "strand": "measurement",
+  "title": {
+    "en": "Volume of cubes and cuboids",
+    "id": "Volume kubus dan balok"
+  },
+  "prerequisites": [
+    "unit-g4-math-area-of-rectangles"
+  ],
+  "objective": {
+    "en": "Find the volume of cubes and cuboids by counting unit cubes and using length × width × height, convert cubic centimetres to litres, and find a missing dimension.",
+    "id": "Mencari volume kubus dan balok dengan menghitung kubus satuan dan memakai panjang × lebar × tinggi, mengubah sentimeter kubik ke liter, dan mencari ukuran yang hilang."
+  },
+  "rationale": {
+    "en": "Volume as 'layers of a base area' builds directly on area of rectangles. Building with cubes before using the formula shows why three dimensions are multiplied, and linking 1000 cm³ to 1 litre makes volume useful in the kitchen and at the aquarium.",
+    "id": "Volume sebagai 'lapisan-lapisan luas alas' dibangun langsung dari luas persegi panjang. Menyusun kubus sebelum memakai rumus menunjukkan mengapa tiga ukuran dikalikan, dan menghubungkan 1.000 cm³ dengan 1 liter membuat volume berguna di dapur dan akuarium."
+  },
+  "outcomes": [
+    {
+      "en": "Calculates the volume of a cuboid as base area × height and writes the unit cm³ or m³.",
+      "id": "Menghitung volume balok sebagai luas alas × tinggi dan menulis satuan cm³ atau m³."
+    },
+    {
+      "en": "Converts between cm³ and litres and finds a missing edge from a volume.",
+      "id": "Mengubah antara cm³ dan liter serta mencari rusuk yang hilang dari volume."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can build a 3 by 2 by 2 cuboid from cubes and say its volume is 12 cm³.",
+      "id": "Aku bisa menyusun balok 3 kali 2 kali 2 dari kubus dan menyebut volumenya 12 cm³."
+    },
+    {
+      "en": "I can find how many litres an aquarium holds from its measurements.",
+      "id": "Aku bisa mencari berapa liter isi akuarium dari ukurannya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Build first with cubes: count one layer (the base), then count how many layers.",
+      "id": "Susun dulu dengan kubus: hitung satu lapisan (alas), lalu hitung banyak lapisannya."
+    },
+    {
+      "en": "Keep three words clear: area of the base (cm²), height (cm) and volume (cm³).",
+      "id": "Bedakan tiga kata: luas alas (cm²), tinggi (cm), dan volume (cm³)."
+    },
+    {
+      "en": "Show a 1-litre milk or juice carton and say it holds 1000 cm³.",
+      "id": "Tunjukkan kotak susu atau jus 1 liter dan katakan isinya 1.000 cm³."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Find the area of the bottom layer. Multiply by the number of layers (the height). Write cm³.",
+      "id": "Cari luas lapisan bawah. Kalikan dengan banyak lapisan (tinggi). Tulis cm³."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build cuboids from wooden cubes or same-size dice: 3 by 2 base (6 cubes), then stack 2 layers to make 12 cubes. Then fill a small box with cubes to estimate its volume.",
+        "id": "Susun balok dari kubus kayu atau dadu sama besar: alas 3 kali 2 (6 kubus), lalu tumpuk 2 lapisan menjadi 12 kubus. Lalu isi kotak kecil dengan kubus untuk memperkirakan volumenya."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a cuboid on isometric or squared paper with its layers shaded in alternating colours; label length, width and height.",
+        "id": "Gambar balok di kertas isometrik atau berpetak dengan lapisan diarsir warna bergantian; beri label panjang, lebar, dan tinggi."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write V = l × w × h: 5 × 3 × 2 = 30 cm³; 40 × 25 × 30 = 30,000 cm³ = 30 L.",
+        "id": "Tulis V = p × l × t: 5 × 3 × 2 = 30 cm³; 40 × 25 × 30 = 30.000 cm³ = 30 L."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 30 same-size cubes (wooden cubes, dice or snap cubes)",
+      "id": "Sekitar 30 kubus sama besar (kubus kayu, dadu, atau kubus sambung)"
+    },
+    {
+      "en": "A ruler, a small cardboard box, an empty 1-litre carton",
+      "id": "Penggaris, kotak kardus kecil, kotak minuman 1 liter yang kosong"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Gather the cubes and box and measure the box's inside edges beforehand.",
+      "id": "Kumpulkan kubus dan kotak serta ukur rusuk bagian dalam kotak sebelumnya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Layers: a cuboid 5 cm long, 3 cm wide, 2 cm high. The base is 5 × 3 = 15 cubes; 2 layers make 30 cm³.",
+      "id": "Lapisan: balok panjang 5 cm, lebar 3 cm, tinggi 2 cm. Alasnya 5 × 3 = 15 kubus; 2 lapisan menjadi 30 cm³."
+    },
+    {
+      "en": "Cube: edge 4 cm. Base 4 × 4 = 16, 4 layers: 64 cm³. Not 12, which is adding the edges.",
+      "id": "Kubus: rusuk 4 cm. Alas 4 × 4 = 16, 4 lapisan: 64 cm³. Bukan 12, yang merupakan penjumlahan rusuk."
+    },
+    {
+      "en": "Litres: an aquarium 40 cm by 25 cm by 30 cm holds 40 × 25 × 30 = 30,000 cm³. 1000 cm³ = 1 L, so 30 L.",
+      "id": "Liter: akuarium 40 cm kali 25 cm kali 30 cm berisi 40 × 25 × 30 = 30.000 cm³. 1.000 cm³ = 1 L, jadi 30 L."
+    },
+    {
+      "en": "Missing edge: volume 60 cm³ with a 4 cm by 5 cm base. Base area 20 cm², so height = 60 ÷ 20 = 3 cm.",
+      "id": "Rusuk hilang: volume 60 cm³ dengan alas 4 cm kali 5 cm. Luas alas 20 cm², jadi tinggi = 60 ÷ 20 = 3 cm."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Build every cuboid you can from 24 cubes and record the dimensions.",
+      "id": "Susun setiap balok yang mungkin dari 24 kubus dan catat ukurannya."
+    },
+    {
+      "en": "Measure a shoebox and a tissue box and calculate their volumes; which holds more?",
+      "id": "Ukur kotak sepatu dan kotak tisu lalu hitung volumenya; mana yang lebih besar isinya?"
+    },
+    {
+      "en": "A bak mandi in a story measures 80 cm by 60 cm by 50 cm. How many litres does it hold when full? (240 L)",
+      "id": "Sebuah bak mandi dalam cerita berukuran 80 cm kali 60 cm kali 50 cm. Berapa liter isinya jika penuh? (240 L)"
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "What is the volume of a cuboid 5 cm long, 3 cm wide and 2 cm high?",
+        "id": "Berapa volume balok dengan panjang 5 cm, lebar 3 cm, dan tinggi 2 cm?"
+      },
+      "choices": {
+        "en": [
+          "30 cm³",
+          "10 cm³",
+          "62 cm²"
+        ],
+        "id": [
+          "30 cm³",
+          "10 cm³",
+          "62 cm²"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Base 5 × 3 = 15 cubes, 2 layers: 15 × 2 = 30 cm³.",
+        "id": "Alas 5 × 3 = 15 kubus, 2 lapisan: 15 × 2 = 30 cm³."
+      },
+      "check": {
+        "expression": "5*3*2",
+        "result": "30"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_DIMENSIONS",
+        "2": "SURFACE_NOT_VOLUME"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "An aquarium is 40 cm long, 25 cm wide and 30 cm high. How many litres does it hold when full? (1000 cm³ = 1 L)",
+        "id": "Akuarium panjangnya 40 cm, lebar 25 cm, dan tinggi 30 cm. Berapa liter isinya jika penuh? (1.000 cm³ = 1 L)"
+      },
+      "choices": {
+        "en": [
+          "30 L",
+          "300 L",
+          "3 L"
+        ],
+        "id": [
+          "30 L",
+          "300 L",
+          "3 L"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "40 × 25 × 30 = 30,000 cm³, and 30,000 ÷ 1000 = 30 L.",
+        "id": "40 × 25 × 30 = 30.000 cm³, dan 30.000 ÷ 1.000 = 30 L."
+      },
+      "check": {
+        "expression": "40*25*30/1000",
+        "result": "30"
+      },
+      "distractorMisconceptions": {
+        "1": "CONVERSION_SHIFT",
+        "2": "CONVERSION_SHIFT"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A cuboid has a volume of 60 cm³ and a base 4 cm by 5 cm. What is its height?",
+        "id": "Sebuah balok bervolume 60 cm³ dengan alas 4 cm kali 5 cm. Berapa tingginya?"
+      },
+      "choices": {
+        "en": [
+          "3 cm",
+          "51 cm",
+          "15 cm"
+        ],
+        "id": [
+          "3 cm",
+          "51 cm",
+          "15 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Base area 4 × 5 = 20 cm²; 60 ÷ 20 = 3 cm.",
+        "id": "Luas alas 4 × 5 = 20 cm²; 60 ÷ 20 = 3 cm."
+      },
+      "check": {
+        "expression": "60/(4*5)",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_DIMENSIONS",
+        "2": "DIVIDES_BY_ONE_EDGE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "What is the volume of a cube with edges of 4 cm?",
+        "id": "Berapa volume kubus dengan rusuk 4 cm?"
+      },
+      "choices": {
+        "en": [
+          "64 cm³",
+          "12 cm³",
+          "16 cm³"
+        ],
+        "id": [
+          "64 cm³",
+          "12 cm³",
+          "16 cm³"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 × 4 = 16 cubes in each layer and 4 layers: 64 cm³.",
+        "id": "4 × 4 = 16 kubus setiap lapisan dan 4 lapisan: 64 cm³."
+      },
+      "check": {
+        "expression": "4*4*4",
+        "result": "64"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_DIMENSIONS",
+        "2": "GIVES_BASE_AREA"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A box 30 cm long and 20 cm wide has water 6 cm deep in it. What is the volume of the water?",
+        "id": "Sebuah kotak panjang 30 cm dan lebar 20 cm berisi air setinggi 6 cm. Berapa volume airnya?"
+      },
+      "choices": {
+        "en": [
+          "3,600 cm³",
+          "56 cm³",
+          "600 cm³"
+        ],
+        "id": [
+          "3.600 cm³",
+          "56 cm³",
+          "600 cm³"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The water is a cuboid 30 × 20 × 6 = 3,600 cm³.",
+        "id": "Airnya berbentuk balok 30 × 20 × 6 = 3.600 cm³."
+      },
+      "check": {
+        "expression": "30*20*6",
+        "result": "3600"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_DIMENSIONS",
+        "2": "GIVES_BASE_AREA"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_DIMENSIONS",
+      "description": {
+        "en": "Adds length, width and height.",
+        "id": "Menjumlahkan panjang, lebar, dan tinggi."
+      },
+      "remediation": {
+        "en": "Build the cuboid with cubes and count them; compare the count with the sum of the edges.",
+        "id": "Susun balok dengan kubus dan hitung; bandingkan hasilnya dengan jumlah rusuk."
+      }
+    },
+    {
+      "code": "SURFACE_NOT_VOLUME",
+      "description": {
+        "en": "Finds the area of the faces instead of the space inside.",
+        "id": "Mencari luas sisi-sisi, bukan ruang di dalam."
+      },
+      "remediation": {
+        "en": "Wrap the cuboid in paper (surface) and fill a box with cubes (volume); talk about the difference.",
+        "id": "Bungkus balok dengan kertas (permukaan) dan isi kotak dengan kubus (volume); bicarakan bedanya."
+      }
+    },
+    {
+      "code": "CONVERSION_SHIFT",
+      "description": {
+        "en": "Divides by 100 or 10 000 instead of 1000 when changing cm³ to litres.",
+        "id": "Membagi dengan 100 atau 10.000, bukan 1.000, saat mengubah cm³ ke liter."
+      },
+      "remediation": {
+        "en": "Measure a 1-litre carton: about 10 cm by 10 cm by 10 cm = 1000 cm³. Count how many cartons fit.",
+        "id": "Ukur kotak 1 liter: sekitar 10 cm kali 10 cm kali 10 cm = 1.000 cm³. Hitung berapa kotak yang muat."
+      }
+    },
+    {
+      "code": "SUBTRACTS_DIMENSIONS",
+      "description": {
+        "en": "Subtracts the known edges from the volume.",
+        "id": "Mengurangkan rusuk yang diketahui dari volume."
+      },
+      "remediation": {
+        "en": "Build the 4 by 5 base with cubes and add layers until there are 60 cubes.",
+        "id": "Susun alas 4 kali 5 dengan kubus dan tambah lapisan sampai ada 60 kubus."
+      }
+    },
+    {
+      "code": "DIVIDES_BY_ONE_EDGE",
+      "description": {
+        "en": "Divides the volume by only one edge of the base.",
+        "id": "Membagi volume hanya dengan satu rusuk alas."
+      },
+      "remediation": {
+        "en": "Find the base area first and write it on the drawing before dividing.",
+        "id": "Cari luas alas lebih dulu dan tulis di gambar sebelum membagi."
+      }
+    },
+    {
+      "code": "GIVES_BASE_AREA",
+      "description": {
+        "en": "Stops after the area of the base and forgets the height.",
+        "id": "Berhenti setelah luas alas dan lupa tinggi."
+      },
+      "remediation": {
+        "en": "Stack the layers one by one and count the layers aloud.",
+        "id": "Tumpuk lapisan satu per satu dan hitung lapisannya dengan suara keras."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Estimate, then calculate, how many 1-litre cartons of water a bucket or bak mandi holds by measuring it.",
+      "id": "Perkirakan, lalu hitung, berapa kotak 1 liter air yang muat dalam ember atau bak mandi dengan mengukurnya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Snap cubes stay together and are easier for children with motor difficulties; label edges with sticky notes.",
+      "id": "Kubus sambung tetap menyatu dan lebih mudah bagi anak dengan kesulitan motorik; beri label rusuk dengan kertas tempel."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Small cubes and dice are a choking risk for toddlers: count them back into their box after use and keep them out of reach of younger siblings.",
+        "id": "Kubus kecil dan dadu berbahaya tersedak bagi balita: hitung kembali ke kotaknya setelah dipakai dan jauhkan dari jangkauan adik."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child finds the volume of two cuboids and a cube, converts one answer to litres, and finds one missing edge, on two different days.",
+      "id": "Dikuasai jika anak mencari volume dua balok dan satu kubus, mengubah satu jawaban ke liter, dan mencari satu rusuk yang hilang, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

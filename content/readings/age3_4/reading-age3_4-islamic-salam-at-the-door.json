@@ -1,0 +1,260 @@
+{
+  "id": "reading-age3_4-islamic-salam-at-the-door",
+  "version": "0.1.0",
+  "level": "age3_4",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Salam at the door",
+    "id": "Salam di depan pintu"
+  },
+  "text": {
+    "en": [
+      "Knock, knock! Who is at the door? Salsa runs to look.",
+      "It is Nenek! 'Assalamu alaikum,' says Nenek with a big smile.",
+      "'Wa alaikum assalam!' says Salsa. She takes Nenek's hand and salim.",
+      "Nenek gives Salsa a warm hug. 'You answered so nicely,' says Nenek.",
+      "Salsa and Nenek go inside together. Now it is time for tea."
+    ],
+    "id": [
+      "Tok, tok! Siapa di depan pintu? Salsa berlari melihat.",
+      "Ternyata Nenek! 'Assalamu'alaikum,' kata Nenek sambil tersenyum lebar.",
+      "'Wa'alaikumussalam!' jawab Salsa. Ia meraih tangan Nenek lalu salim.",
+      "Nenek memeluk Salsa dengan hangat. 'Pintar sekali kamu menjawab salam,' kata Nenek.",
+      "Salsa dan Nenek masuk bersama. Sekarang waktunya minum teh."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Knock on the table for 'knock, knock' and pause so your child can wonder who it is.",
+      "id": "Ketuk meja untuk 'tok, tok' dan berhenti sejenak agar anak menebak siapa yang datang."
+    },
+    {
+      "en": "Say Nenek's salam slowly and clearly, with a smile.",
+      "id": "Ucapkan salam Nenek perlahan dan jelas, sambil tersenyum."
+    },
+    {
+      "en": "Pause before Salsa's answer so your child can try it; accept any part.",
+      "id": "Berhenti sebelum jawaban Salsa agar anak mencoba; terima sebagian pun."
+    },
+    {
+      "en": "Give your child a hug when Nenek hugs Salsa.",
+      "id": "Peluk anak saat Nenek memeluk Salsa."
+    },
+    {
+      "en": "Pretend to pour tea and sip together.",
+      "id": "Pura-pura menuang teh dan meminumnya bersama."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a closed front door",
+      "id": "Kartu 1: pintu depan yang tertutup"
+    },
+    {
+      "en": "Card 2: a grandmother smiling at the door",
+      "id": "Kartu 2: nenek tersenyum di pintu"
+    },
+    {
+      "en": "Card 3: a girl holding her grandmother's hand",
+      "id": "Kartu 3: anak perempuan memegang tangan neneknya"
+    },
+    {
+      "en": "Card 4: a grandmother hugging a girl",
+      "id": "Kartu 4: nenek memeluk anak perempuan"
+    },
+    {
+      "en": "Card 5: two cups of tea on a table",
+      "id": "Kartu 5: dua cangkir teh di meja"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a short story and joins in with the greeting and its answer.",
+      "id": "Mendengarkan cerita pendek dan ikut mengucapkan salam dan jawabannya."
+    },
+    {
+      "en": "Retells the order of events with picture cards.",
+      "id": "Menceritakan ulang urutan kejadian dengan kartu gambar."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "salam",
+        "id": "salam"
+      },
+      "meaning": {
+        "en": "the greeting of peace",
+        "id": "ucapan kedamaian"
+      }
+    },
+    {
+      "word": {
+        "en": "hug",
+        "id": "pelukan"
+      },
+      "meaning": {
+        "en": "holding someone close with your arms",
+        "id": "mendekap seseorang dengan kedua lengan"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Who was at the door?",
+        "id": "Siapa yang ada di depan pintu?"
+      },
+      "choices": {
+        "en": [
+          "Nenek",
+          "the cat",
+          "the postman"
+        ],
+        "id": [
+          "Nenek",
+          "kucing",
+          "tukang pos"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Salsa say after Nenek's salam?",
+        "id": "Apa yang Salsa ucapkan setelah salam Nenek?"
+      },
+      "choices": {
+        "en": [
+          "Wa alaikum assalam",
+          "Goodnight",
+          "Bismillah"
+        ],
+        "id": [
+          "Wa'alaikumussalam",
+          "Selamat tidur",
+          "Bismillah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "How did Nenek feel when Salsa answered?",
+        "id": "Bagaimana perasaan Nenek saat Salsa menjawab?"
+      },
+      "choices": {
+        "en": [
+          "pleased and proud of her",
+          "sad and tired",
+          "cross with Salsa"
+        ],
+        "id": [
+          "senang dan bangga padanya",
+          "sedih dan lelah",
+          "marah pada Salsa"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "islamic_values",
+      "connection": {
+        "en": "The greeting of peace and its answer are part of good Muslim manners when we meet.",
+        "id": "Salam dan jawabannya adalah bagian dari adab Muslim yang baik saat bertemu."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Who could you say salam to today?",
+      "id": "Kepada siapa kamu bisa mengucapkan salam hari ini?"
+    },
+    {
+      "en": "Can you show me how Salsa answered?",
+      "id": "Bisakah kamu tunjukkan cara Salsa menjawab?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Play 'knock knock' at a real door: take turns being the visitor who says Assalamu alaikum and the one who answers. An adult opens and closes the door.",
+    "id": "Main 'tok tok' di pintu sungguhan: bergantian menjadi tamu yang mengucapkan Assalamu'alaikum dan yang menjawab. Orang dewasa yang membuka dan menutup pintu."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Keep small fingers away from door hinges.",
+      "id": "Jauhkan jari kecil dari engsel pintu."
+    }
+  ],
+  "arabicPhrases": [
+    {
+      "arabic": "ٱلسَّلَامُ عَلَيْكُمْ",
+      "transliteration": "Assalamu alaikum",
+      "meaning": {
+        "en": "Peace be upon you",
+        "id": "Semoga keselamatan atasmu"
+      },
+      "verified": false
+    },
+    {
+      "arabic": "وَعَلَيْكُمُ ٱلسَّلَامُ",
+      "transliteration": "Wa alaikum assalam",
+      "meaning": {
+        "en": "And upon you be peace",
+        "id": "Dan atasmu juga keselamatan"
+      },
+      "verified": false
+    }
+  ],
+  "reviewFlags": [
+    "religious_content",
+    "scholar_wording_required",
+    "arabic_text",
+    "translation_review",
+    "pronunciation_review"
+  ],
+  "reviewStatus": "draft",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "tone",
+      "no-invented-citations"
+    ]
+  },
+  "religiousReview": {
+    "doctrinalSchool": null,
+    "fiqhSchool": null,
+    "arabicSource": null,
+    "edition": null,
+    "pageOrSection": null,
+    "translationReviewer": null,
+    "scholarReviewer": null,
+    "reviewedAt": null,
+    "approvalStatus": "unverified",
+    "notes": [
+      "Reading drafted by an AI; teachings are described in plain words and must be confirmed by a qualified scholar. No verse, hadith or quotation is reproduced.",
+      "Verify the Arabic, transliterations and translations of the greeting and answer.",
+      "Salim is presented as a family custom, not a religious ruling; confirm this framing."
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-islamic",
+    "createdAt": "2026-11-10"
+  }
+}

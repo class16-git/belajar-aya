@@ -1,0 +1,241 @@
+{
+  "id": "reading-age4_5-islamic-the-special-shelf",
+  "version": "0.1.0",
+  "level": "age4_5",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "The special shelf",
+    "id": "Rak yang istimewa"
+  },
+  "text": {
+    "en": [
+      "After Maghrib, Ayah says, 'Time for Qur'an.' Raka washes his hands at the sink.",
+      "Ayah lifts the mushaf down from the high, clean shelf. Raka brings the rehal.",
+      "They sit on the mat. Ayah recites Surah Al-Ikhlas softly. Raka listens. He is very still.",
+      "Raka's little sister crawls over. 'Shh,' Raka whispers kindly. 'We are listening.'",
+      "When they finish, Raka holds his Iqra' book with two hands and puts it back on the special shelf."
+    ],
+    "id": [
+      "Setelah Maghrib, Ayah berkata, 'Waktunya mengaji.' Raka mencuci tangan di wastafel.",
+      "Ayah menurunkan mushaf dari rak yang tinggi dan bersih. Raka membawa rehal.",
+      "Mereka duduk di tikar. Ayah membaca Surah Al-Ikhlas dengan pelan. Raka mendengarkan. Ia duduk sangat tenang.",
+      "Adik Raka merangkak mendekat. 'Sst,' bisik Raka dengan lembut. 'Kita sedang mendengarkan.'",
+      "Setelah selesai, Raka memegang buku Iqra'-nya dengan dua tangan dan mengembalikannya ke rak istimewa."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Rub your hands together for washing.",
+      "id": "Gosok kedua tangan seperti sedang mencuci."
+    },
+    {
+      "en": "Reach up high with your arms for the shelf.",
+      "id": "Angkat tangan tinggi-tinggi untuk rak."
+    },
+    {
+      "en": "Sit very still and put a hand to your ear for listening.",
+      "id": "Duduk tenang dan letakkan tangan di telinga untuk mendengarkan."
+    },
+    {
+      "en": "Whisper 'shh' gently and smile.",
+      "id": "Bisikkan 'sst' dengan lembut dan tersenyum."
+    },
+    {
+      "en": "Hold a book with two hands and show putting it somewhere high.",
+      "id": "Pegang buku dengan dua tangan dan peragakan menaruhnya di tempat tinggi."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a boy washing hands at a sink",
+      "id": "Kartu 1: anak laki-laki mencuci tangan di wastafel"
+    },
+    {
+      "en": "Card 2: a high shelf with a covered book and a wooden book stand",
+      "id": "Kartu 2: rak tinggi dengan buku bersampul dan rehal kayu"
+    },
+    {
+      "en": "Card 3: a father and son sitting on a mat",
+      "id": "Kartu 3: ayah dan anak duduk di tikar"
+    },
+    {
+      "en": "Card 4: a baby crawling towards them",
+      "id": "Kartu 4: bayi merangkak mendekati mereka"
+    },
+    {
+      "en": "Card 5: a boy placing a book on a high shelf",
+      "id": "Kartu 5: anak menaruh buku di rak tinggi"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Retells the steps of a calm Qur'an time in order.",
+      "id": "Menceritakan ulang langkah-langkah waktu mengaji yang tenang secara berurutan."
+    },
+    {
+      "en": "Names ways to show respect for the mushaf.",
+      "id": "Menyebut cara menunjukkan hormat kepada mushaf."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "mushaf",
+        "id": "mushaf"
+      },
+      "meaning": {
+        "en": "a printed copy of the Qur'an",
+        "id": "Al-Qur'an dalam bentuk cetakan"
+      }
+    },
+    {
+      "word": {
+        "en": "rehal",
+        "id": "rehal"
+      },
+      "meaning": {
+        "en": "a stand that holds the mushaf open",
+        "id": "penyangga untuk membuka mushaf"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Raka do first?",
+        "id": "Apa yang Raka lakukan pertama kali?"
+      },
+      "choices": {
+        "en": [
+          "washed his hands",
+          "ate dinner",
+          "played outside"
+        ],
+        "id": [
+          "mencuci tangan",
+          "makan malam",
+          "bermain di luar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where does the book go at the end?",
+        "id": "Ke mana bukunya di akhir cerita?"
+      },
+      "choices": {
+        "en": [
+          "back on the special shelf",
+          "on the floor",
+          "in the toy box"
+        ],
+        "id": [
+          "kembali ke rak istimewa",
+          "di lantai",
+          "di kotak mainan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Raka whisper to his sister?",
+        "id": "Mengapa Raka berbisik kepada adiknya?"
+      },
+      "choices": {
+        "en": [
+          "so everyone could keep listening calmly",
+          "because he was angry",
+          "because he was sleepy"
+        ],
+        "id": [
+          "agar semua tetap bisa mendengarkan dengan tenang",
+          "karena ia marah",
+          "karena ia mengantuk"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "islamic_values",
+      "connection": {
+        "en": "Clean hands, a special place and quiet listening are ways Muslims show respect for the Qur'an.",
+        "id": "Tangan bersih, tempat khusus, dan mendengarkan dengan tenang adalah cara Muslim menghormati Al-Qur'an."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Where is the special place for the mushaf in our home?",
+      "id": "Di mana tempat khusus mushaf di rumah kita?"
+    },
+    {
+      "en": "How can we help a baby stay calm at Qur'an time?",
+      "id": "Bagaimana kita membantu bayi tetap tenang saat mengaji?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Choose or tidy a special high shelf together and practise carrying the practice book there with two hands. An adult lifts anything from high places.",
+    "id": "Pilih atau rapikan rak tinggi yang istimewa bersama dan latih membawa buku latihan ke sana dengan dua tangan. Orang dewasa yang mengambil barang dari tempat tinggi."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Handwashing at the sink with an adult present; wipe up splashes.",
+      "id": "Cuci tangan di wastafel didampingi orang dewasa; lap cipratan air."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "religious_content",
+    "scholar_wording_required",
+    "fiqh_ruling",
+    "madhhab_selection",
+    "translation_review"
+  ],
+  "reviewStatus": "draft",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "tone",
+      "no-invented-citations"
+    ]
+  },
+  "religiousReview": {
+    "doctrinalSchool": null,
+    "fiqhSchool": null,
+    "arabicSource": null,
+    "edition": null,
+    "pageOrSection": null,
+    "translationReviewer": null,
+    "scholarReviewer": null,
+    "reviewedAt": null,
+    "approvalStatus": "unverified",
+    "notes": [
+      "Reading drafted by an AI; teachings are described in plain words and must be confirmed by a qualified scholar. No verse, hadith or quotation is reproduced.",
+      "In the story the father handles the mushaf and the child handles an Iqra' practice book; confirm this matches the family's ruling on children touching the mushaf.",
+      "Surah Al-Ikhlas is named only; no text is reproduced."
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-islamic",
+    "createdAt": "2026-11-10"
+  }
+}
