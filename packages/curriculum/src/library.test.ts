@@ -118,7 +118,7 @@ describe('Atlas-original comprehension passages', () => {
     for (const p of lib.passages) {
       expect(p.copyrightStatus).toBe('original');
       expect(p.paragraphs.en.length).toBe(p.paragraphs.id.length);
-      expect(isPassageVisible(p, 'reviewed')).toBe(p.reviewStatus === 'reviewed' || p.reviewStatus === 'published');
+      expect(isPassageVisible(p, 'reviewed')).toBe((p.reviewStatus === 'reviewed' || p.reviewStatus === 'published') && !p.factChecks.some((f) => f.status === 'needs_source'));
     }
   });
 
@@ -163,7 +163,8 @@ describe('owner review (2026-11-10)', () => {
       expect(b.rights.titleLicenseConfirmed).toBe(false); // approval never changes rights facts
     }
     // Passages corrected after the audit (ATL-08/09) await the owner's re-review; the rest stay published.
-    const reReview = ['passage-g6-advert-report', 'passage-k-red-kite'];
+    // passage-g4-mangroves: its Indonesia claim still needs a verified source.
+    const reReview = ['passage-g6-advert-report', 'passage-k-red-kite', 'passage-g4-mangroves'];
     for (const p of lib.passages) expect(isPassageVisible(p, 'reviewed'), p.id).toBe(!reReview.includes(p.id));
   });
 });
@@ -189,5 +190,32 @@ describe('literacy content integrity (audit ATL-08, ATL-09)', () => {
       expect(p.paragraphs.en.join(' ')).toMatch(/does not prove/);
       expect(p.questions.some((q) => /check/i.test(q.prompt.en))).toBe(true);
     }
+  });
+});
+
+describe('content pipeline: factual sourcing and near-duplicates', () => {
+  it('every informational passage lists its factual claims; sourced claims carry an https source', () => {
+    for (const p of lib.passages.filter((x) => x.genre === 'informational')) {
+      expect(p.factChecks.length, p.id).toBeGreaterThan(0);
+      for (const f of p.factChecks) if (f.status === 'sourced') expect(f.source?.url, p.id).toMatch(/^https:\/\//);
+    }
+    const r = raw();
+    const info = r.passages.find((p) => (p as { genre: string }).genre === 'informational') as { factChecks?: unknown[] };
+    delete info.factChecks;
+    expect(validateLibrary(r).errors.join()).toMatch(/must list their factual claims/);
+  });
+  it('a claim that still needs a source keeps the passage out of production but visible for review', () => {
+    const m = lib.passages.find((p) => p.id === 'passage-g4-mangroves')!;
+    expect(m.factChecks.some((f) => f.status === 'needs_source')).toBe(true);
+    expect(isPassageVisible(m, 'reviewed')).toBe(false);
+    expect(isPassageVisible(m, 'agent_reviewed')).toBe(true);
+  });
+  it('rejects near-duplicate passages', () => {
+    const r = raw();
+    const copy = structuredClone(r.passages[0]) as { id: string };
+    copy.id = 'passage-copy-of-first';
+    r.passages.push(copy);
+    expect(validateLibrary(r).errors.join()).toMatch(/near-duplicates/);
+    expect(validateLibrary(raw()).errors).toEqual([]);
   });
 });

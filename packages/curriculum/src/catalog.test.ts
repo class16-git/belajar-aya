@@ -153,3 +153,17 @@ describe('release manifest (audit ATL-12)', () => {
     expect(preview.visible.lessons).toBeGreaterThan(a.visible.lessons);
   });
 });
+
+describe('content dashboard (expansion mandate: actual counts)', () => {
+  it('counts every unit, and its live units are exactly what production shows', async () => {
+    const { contentDashboard } = await import('./dashboard');
+    const { getLibrary } = await import('./library');
+    const { contentManifest } = await import('./manifest');
+    const rows = contentDashboard(getCatalog(), getLibrary());
+    const m = contentManifest('reviewed');
+    // Every unit lands on at least one level, and the union of live units is exactly production's set.
+    expect(new Set(rows.flatMap((r) => r.unitIds))).toEqual(new Set(getCatalog().lessons.map((l) => l.id)));
+    expect([...new Set(rows.flatMap((r) => r.liveUnitIds))].sort()).toEqual(m.ids.lessons);
+    expect(rows.reduce((a, r) => a + r.readings.originalPassages, 0)).toBe(getLibrary().passages.length);
+  });
+});

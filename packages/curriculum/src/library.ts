@@ -192,6 +192,23 @@ export const passageSchema = z
       .min(2)
       .max(5),
     copyrightStatus: z.literal('original'),
+    /**
+     * Factual sourcing (expansion pipeline). Every informational passage lists its factual claims:
+     * common_knowledge (general school science a reviewer can check), sourced (with a verified source),
+     * invented_example (an invented scenario, not presented as real-world fact) or needs_source (blocks production until sourced).
+     * Sources are never invented: a claim the agent could not verify stays needs_source.
+     */
+    factChecks: z
+      .array(
+        z
+          .object({
+            claim: plain(300),
+            status: z.enum(['common_knowledge', 'sourced', 'invented_example', 'needs_source']),
+            source: z.object({ title: plain(200), url: z.string().url().startsWith('https://') }).strict().optional(),
+          })
+          .strict(),
+      )
+      .default([]),
     reviewStatus: z.enum(REVIEW_STATUSES),
     review: z
       .object({
@@ -209,6 +226,11 @@ export const passageSchema = z
       if (q.choices.en.length !== q.choices.id.length) ctx.addIssue({ code: 'custom', message: `${p.id}/${q.id}: choice count differs by language` });
       if (q.answer >= q.choices.en.length) ctx.addIssue({ code: 'custom', message: `${p.id}/${q.id}: answer out of range` });
       if (q.evidenceParagraph >= p.paragraphs.en.length) ctx.addIssue({ code: 'custom', message: `${p.id}/${q.id}: evidence paragraph out of range` });
+    }
+    if (p.genre === 'informational' && p.factChecks.length === 0) ctx.addIssue({ code: 'custom', message: `${p.id}: informational passages must list their factual claims (factChecks)` });
+    for (const f of p.factChecks) {
+      if (f.status === 'sourced' && !f.source) ctx.addIssue({ code: 'custom', message: `${p.id}: a "sourced" claim needs its source` });
+      if (f.status !== 'sourced' && f.source) ctx.addIssue({ code: 'custom', message: `${p.id}: only "sourced" claims carry a source` });
     }
   });
 export type Passage = z.infer<typeof passageSchema>;
@@ -263,8 +285,27 @@ export function isPassageVisible(p: Passage, minReview: ReviewStatus): boolean {
   const rank = (s: ReviewStatus) => REVIEW_STATUSES.indexOf(s);
   if (rank(p.reviewStatus) < rank(minReview)) return false;
   if ((p.reviewStatus === 'reviewed' || p.reviewStatus === 'published') && !(p.review.reviewedBy && p.review.reviewedAt)) return false;
+  // Unresolved factual claims never reach production (preview still shows them for review).
+  if (rank(minReview) >= rank('reviewed') && p.factChecks.some((f) => f.status === 'needs_source')) return false;
   return true;
 }
+
+/** Word 3-gram Jaccard similarity of two texts (near-duplicate detection). */
+export function textSimilarity(a: string, b: string): number {
+  const grams = (t: string) => {
+    const w = t.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/).filter(Boolean);
+    const g = new Set<string>();
+    for (let i = 0; i + 2 < w.length; i++) g.add(`${w[i]} ${w[i + 1]} ${w[i + 2]}`);
+    return g;
+  };
+  const x = grams(a);
+  const y = grams(b);
+  if (x.size === 0 || y.size === 0) return 0;
+  let inter = 0;
+  for (const g of x) if (y.has(g)) inter++;
+  return inter / (x.size + y.size - inter);
+}
+export const NEAR_DUPLICATE_THRESHOLD = 0.35;
 
 export function validateLibrary(raw: { sources: unknown; books: unknown[]; journeys: unknown; passages: unknown[] }): { library: Library; errors: string[] } {
   const errors: string[] = [];
@@ -295,6 +336,12 @@ export function validateLibrary(raw: { sources: unknown; books: unknown[]; journ
   dup(lib.sources, 'source');
   dup(lib.books, 'book');
   dup(lib.passages, 'passage');
+  for (let i = 0; i < lib.passages.length; i++)
+    for (let j = i + 1; j < lib.passages.length; j++) {
+      const [a, b] = [lib.passages[i]!, lib.passages[j]!];
+      const sim = textSimilarity(a.paragraphs.en.join(' '), b.paragraphs.en.join(' '));
+      if (sim >= NEAR_DUPLICATE_THRESHOLD) errors.push(`passages ${a.id} and ${b.id} are near-duplicates (similarity ${sim.toFixed(2)})`);
+    }
   for (const b of lib.books) for (const i of bookIssues(b, lib.sources)) if (!i.startsWith('published without') || b.publicationStatus === 'published') errors.push(`book ${b.id}: ${i}`);
   // The agent may prepare metadata; it can never record an educational/link review or publish.
   for (const b of lib.books) {
