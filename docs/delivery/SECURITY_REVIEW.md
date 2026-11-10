@@ -49,4 +49,8 @@ decision before launch.
 
 Not yet independently reviewed (per Codex scope note): a route-by-route review of every API handler and the PIN/password/rate-limit implementations by someone other than the author.
 
+**Final review round:** see [PR1_FINAL_RELEASE_READINESS.md](PR1_FINAL_RELEASE_READINESS.md) §3–§4 for re-verification of F1–F7 and
+nine further findings (self-review and an independent fresh-context agent), all fixed except signup email
+enumeration (accepted risk).
+
 **Severity gate:** no open P0/P1 findings.

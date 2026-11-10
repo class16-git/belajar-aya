@@ -1,5 +1,8 @@
 # Test report
 
+> Superseded for the latest numbers by [PR1_FINAL_RELEASE_READINESS.md](PR1_FINAL_RELEASE_READINESS.md) §2
+> (81 unit tests, 31 E2E, 80/80 concurrency repeats on commit `1af7a6d`).
+
 Run date: 2026-11-10 · Node 22.23.4 · pnpm 10.28.0 · PostgreSQL 16 · Chromium (Playwright 1.63.0)
 All data synthetic. Results below are from actual runs in the build container.
 
