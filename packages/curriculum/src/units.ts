@@ -365,6 +365,15 @@ export function readingIssues(r: Reading): string[] {
   if (r.crossCurricular.some((c) => c.subject === 'islamic_values') || r.arabicPhrases.length) {
     if (!r.religiousReview) out.push(`${r.id}: Islamic content needs a religiousReview record`);
   }
+  // Physical safety of the offline activity (QA finding: a bean seed in a 4–5 activity).
+  const act = r.offlineActivity.en.toLowerCase();
+  const rnotes = enText(r.safetyNotes).toLowerCase();
+  for (const { re } of HAZARD_KEYWORDS) {
+    const m = act.match(re);
+    if (m && !re.test(rnotes)) out.push(`${r.id}: offline activity uses "${m[0]}" but no safety note names it`);
+  }
+  if (CAREGIVER_LED_LEVELS.includes(r.level) && /\b(beans?|seeds?|beads?|coins?|marbles?|buttons?|magnets?|balloons?)\b/.test(act) && !/adult (handles|holds|keeps|plants)/.test(act + ' ' + rnotes)) out.push(`${r.id}: small items in a pre-reader activity must be handled only by the adult`);
+  if (/\b(standing water|leave (it|the bottle|the jar) (outside|out) for (a|one|two) week)/.test(act) && !/mosquito|empty/.test(act + ' ' + rnotes)) out.push(`${r.id}: standing water must be emptied daily (mosquito breeding)`);
   if (r.provenance.origin === 'ai_drafted' && rank(r.reviewStatus) >= rank('reviewed') && !(r.review.reviewedBy && r.review.reviewedAt)) out.push(`${r.id}: AI-drafted content cannot be reviewed/published without a human review record`);
   return out;
 }
