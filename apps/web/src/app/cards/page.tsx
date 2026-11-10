@@ -15,8 +15,10 @@ export default async function CardsPage({ searchParams }: { searchParams: Promis
   const locale = await currentLocale();
   const t = getDictionary(locale);
   const child = sp.child ? await prisma.childProfile.findFirst({ where: { id: sp.child, familyId: auth.family.id } }) : null;
-  const skills = getCatalog().skills.filter((s) => s.band === 'toddler');
-  const cards = visibleOfflineCards(config.minReview).filter((c) => !sp.skill || c.skillId === sp.skill);
+  const allCards = visibleOfflineCards(config.minReview);
+  // Filter chips: only skills that actually have visible cards (all age bands).
+  const skills = getCatalog().skills.filter((s) => allCards.some((c) => c.skillId === s.id));
+  const cards = allCards.filter((c) => !sp.skill || c.skillId === sp.skill);
   const q = (skill?: string) => {
     const u = new URLSearchParams();
     if (child) u.set('child', child.id);
@@ -44,7 +46,10 @@ export default async function CardsPage({ searchParams }: { searchParams: Promis
       <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((c) => (
           <li key={c.id} className="card flex flex-col gap-2" data-card={c.id}>
-            <p className="text-sm font-semibold text-sage-dark">{skills.find((s) => s.id === c.skillId)?.title[locale]}</p>
+            <p className="flex flex-wrap items-center justify-between gap-2 text-sm font-semibold text-sage-dark">
+              <span>{getCatalog().skills.find((s) => s.id === c.skillId)?.title[locale]}</span>
+              <span className="chip border-sand bg-linen text-bark" data-age-band={c.ageBand}>{t.cards.ageLabel[c.ageBand]}</span>
+            </p>
             <h2 className="text-lg font-bold">{c.title[locale]}</h2>
             <p className="text-sm">{c.objective[locale]}</p>
             <p className="text-sm muted">{fmt(t.cards.prepTime, { n: c.prepMinutes })} · {fmt(t.cards.duration, c.activityMinutes)}</p>

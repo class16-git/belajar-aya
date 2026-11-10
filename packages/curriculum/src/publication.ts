@@ -28,7 +28,37 @@ export function publicationIssues(lesson: Lesson): PublicationIssue[] {
   if (lesson.mode === 'offline' && lesson.safetyNotes.length === 0) {
     issues.push({ lessonId: lesson.id, message: 'Offline cards require safety notes' });
   }
+  issues.push(...religiousIssues(lesson));
   return issues;
+}
+
+/** Lessons that need a qualified religious reviewer before anyone may see them. */
+export function requiresReligiousReview(lesson: Lesson): boolean {
+  return (
+    lesson.domain === 'islamic_studies' ||
+    lesson.framework === 'islamic_studies' ||
+    (lesson.arabicPhrases ?? []).length > 0 ||
+    (lesson.reviewFlags ?? []).includes('religious_content')
+  );
+}
+
+/**
+ * Religious gate (Curriculum Bible governance): independent of, and in addition to, the normal review.
+ * Approval needs a named scholar reviewer, a review date and — when Arabic is shown — a translation reviewer
+ * and every phrase verified. Missing citations are never filled in by the agent.
+ */
+export function religiousIssues(lesson: Lesson): PublicationIssue[] {
+  if (!requiresReligiousReview(lesson)) return [];
+  const r = lesson.religiousReview;
+  const out: PublicationIssue[] = [];
+  if (!r) return [{ lessonId: lesson.id, message: 'Religious review record is required' }];
+  if (r.approvalStatus !== 'approved') out.push({ lessonId: lesson.id, message: `Religious review is ${r.approvalStatus}` });
+  else {
+    if (!r.scholarReviewer || !r.reviewedAt) out.push({ lessonId: lesson.id, message: 'Approved religious review needs scholarReviewer and reviewedAt' });
+    if ((lesson.arabicPhrases ?? []).length > 0 && !r.translationReviewer) out.push({ lessonId: lesson.id, message: 'Arabic text needs a translation reviewer' });
+  }
+  if ((lesson.arabicPhrases ?? []).some((p) => !p.verified)) out.push({ lessonId: lesson.id, message: 'Arabic phrases are not verified' });
+  return out;
 }
 
 /**

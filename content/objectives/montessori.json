@@ -1,0 +1,652 @@
+{
+  "framework": "montessori",
+  "curriculumVersion": "2026.11.1",
+  "sourceStatus": "original_planning_not_official",
+  "objectives": [
+    {
+      "id": "mont.age2_3.carry-tray",
+      "framework": "montessori",
+      "strand": "practical_life",
+      "stage": "age2_3",
+      "title": {
+        "en": "Carries a tray or basket with two hands to a table",
+        "id": "Membawa nampan atau keranjang dengan dua tangan ke meja"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": [
+          "TOD-PRACT-POUR"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.age2_3.pour-wipe",
+      "framework": "montessori",
+      "strand": "practical_life",
+      "stage": "age2_3",
+      "title": {
+        "en": "Pours, spoons and wipes with care, then tidies up",
+        "id": "Menuang, menyendok, dan mengelap dengan hati-hati, lalu merapikan"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": [
+          "TOD-PRACT-POUR"
+        ]
+      },
+      "reviewFlags": [
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.age2_3.match-sort",
+      "framework": "montessori",
+      "strand": "sensorial",
+      "stage": "age2_3",
+      "title": {
+        "en": "Matches identical objects and sorts by one property (colour, size)",
+        "id": "Mencocokkan benda yang sama dan memilah berdasarkan satu sifat (warna, ukuran)"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": [
+          "TOD-MATCH-OBJECT",
+          "TOD-SORT-COLOR"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.age2_3.name-objects",
+      "framework": "montessori",
+      "strand": "language",
+      "stage": "age2_3",
+      "title": {
+        "en": "Hears, recognises and names familiar objects; enjoys rhymes",
+        "id": "Mendengar, mengenali, dan menyebut benda sehari-hari; menikmati sajak"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": [
+          "TOD-LANG-NAME"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.age2_3.family-nature",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "age2_3",
+      "title": {
+        "en": "Talks about family, plants and animals during everyday care",
+        "id": "Bercerita tentang keluarga, tanaman, dan hewan saat kegiatan sehari-hari"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.age3_4.dressing",
+      "framework": "montessori",
+      "strand": "practical_life",
+      "stage": "age3_4",
+      "title": {
+        "en": "Uses dressing frames or real clothes (buttons, zips) independently",
+        "id": "Memakai bingkai berpakaian atau baju asli (kancing, ritsleting) secara mandiri"
+      },
+      "prerequisites": [
+        "mont.age2_3.carry-tray"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.age3_4.sound-games",
+      "framework": "montessori",
+      "strand": "language",
+      "stage": "age3_4",
+      "title": {
+        "en": "Plays sound games: hears the first sound of familiar words",
+        "id": "Bermain bunyi: mendengar bunyi awal kata yang dikenal"
+      },
+      "prerequisites": [
+        "mont.age2_3.name-objects"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.age3_4.prewriting",
+      "framework": "montessori",
+      "strand": "language",
+      "stage": "age3_4",
+      "title": {
+        "en": "Strengthens the pincer grip and traces shapes (pre-writing)",
+        "id": "Melatih genggaman jari dan menelusuri bentuk (pra-menulis)"
+      },
+      "prerequisites": [
+        "mont.age2_3.pour-wipe"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.age3_4.three-period",
+      "framework": "montessori",
+      "strand": "sensorial",
+      "stage": "age3_4",
+      "title": {
+        "en": "Learns new words for textures and shapes through three-period lessons",
+        "id": "Mempelajari kata baru untuk tekstur dan bentuk melalui pelajaran tiga tahap"
+      },
+      "prerequisites": [
+        "mont.age2_3.match-sort"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.age4_5.sound-letter",
+      "framework": "montessori",
+      "strand": "language",
+      "stage": "age4_5",
+      "title": {
+        "en": "Connects sounds to letters with tactile letters",
+        "id": "Menghubungkan bunyi dengan huruf menggunakan huruf raba"
+      },
+      "prerequisites": [
+        "mont.age3_4.sound-games"
+      ],
+      "usesCpa": false,
+      "delivery": "blended",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.age4_5.movable-letters",
+      "framework": "montessori",
+      "strand": "language",
+      "stage": "age4_5",
+      "title": {
+        "en": "Builds simple words with movable letters before writing them",
+        "id": "Menyusun kata sederhana dengan huruf lepas sebelum menulisnya"
+      },
+      "prerequisites": [
+        "mont.age4_5.sound-letter"
+      ],
+      "usesCpa": false,
+      "delivery": "blended",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.age4_5.continents-life-cycles",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "age4_5",
+      "title": {
+        "en": "Names continents on a globe and orders a simple life cycle",
+        "id": "Menyebut benua pada globe dan mengurutkan siklus hidup sederhana"
+      },
+      "prerequisites": [
+        "mont.age2_3.family-nature"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.k.read-simple-words",
+      "framework": "montessori",
+      "strand": "language",
+      "stage": "k",
+      "title": {
+        "en": "Reads simple phonetic words and short phrases",
+        "id": "Membaca kata fonetik sederhana dan frasa pendek"
+      },
+      "prerequisites": [
+        "mont.age4_5.movable-letters"
+      ],
+      "usesCpa": false,
+      "delivery": "blended",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.k.maps-botany",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "k",
+      "title": {
+        "en": "Uses a simple map and names parts of a plant",
+        "id": "Menggunakan peta sederhana dan menyebut bagian tumbuhan"
+      },
+      "prerequisites": [
+        "mont.age4_5.continents-life-cycles"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.k.time-routines",
+      "framework": "montessori",
+      "strand": "practical_life",
+      "stage": "k",
+      "title": {
+        "en": "Sequences daily routines and talks about morning, afternoon and night",
+        "id": "Mengurutkan rutinitas harian dan membicarakan pagi, siang, dan malam"
+      },
+      "prerequisites": [
+        "mont.age3_4.dressing"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g1.reading-fluency",
+      "framework": "montessori",
+      "strand": "language",
+      "stage": "g1",
+      "title": {
+        "en": "Reads short texts aloud with growing fluency and retells them",
+        "id": "Membaca teks pendek dengan makin lancar dan menceritakan kembali"
+      },
+      "prerequisites": [
+        "mont.k.read-simple-words"
+      ],
+      "usesCpa": false,
+      "delivery": "guided",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g1.writing-sentences",
+      "framework": "montessori",
+      "strand": "language",
+      "stage": "g1",
+      "title": {
+        "en": "Writes simple sentences about own experiences",
+        "id": "Menulis kalimat sederhana tentang pengalaman sendiri"
+      },
+      "prerequisites": [
+        "mont.k.read-simple-words"
+      ],
+      "usesCpa": false,
+      "delivery": "guided",
+      "assessment": "portfolio",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g1.nature-observation",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "g1",
+      "title": {
+        "en": "Observes and records nature (weather, plants) in a journal",
+        "id": "Mengamati dan mencatat alam (cuaca, tumbuhan) di jurnal"
+      },
+      "prerequisites": [
+        "mont.k.maps-botany"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "portfolio",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g2.grammar-symbols",
+      "framework": "montessori",
+      "strand": "language",
+      "stage": "g2",
+      "title": {
+        "en": "Identifies nouns, verbs and adjectives in sentences",
+        "id": "Mengenali kata benda, kata kerja, dan kata sifat dalam kalimat"
+      },
+      "prerequisites": [
+        "mont.g1.writing-sentences"
+      ],
+      "usesCpa": false,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g2.timelines",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "g2",
+      "title": {
+        "en": "Makes a personal and a family timeline",
+        "id": "Membuat garis waktu pribadi dan keluarga"
+      },
+      "prerequisites": [
+        "mont.g1.nature-observation"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "portfolio",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g2.ecology-research",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "g2",
+      "title": {
+        "en": "Researches a local habitat and presents findings",
+        "id": "Meneliti habitat setempat dan menyajikan temuan"
+      },
+      "prerequisites": [
+        "mont.g1.nature-observation"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g3.cosmic-stories",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "g3",
+      "title": {
+        "en": "Explores origin stories of the universe, life and humans (great lessons) as science narratives",
+        "id": "Menjelajahi kisah asal-usul alam semesta, kehidupan, dan manusia sebagai narasi sains"
+      },
+      "prerequisites": [
+        "mont.g2.timelines"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "worldview_alignment"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g3.independent-reports",
+      "framework": "montessori",
+      "strand": "language",
+      "stage": "g3",
+      "title": {
+        "en": "Reads independently and writes short reports",
+        "id": "Membaca mandiri dan menulis laporan pendek"
+      },
+      "prerequisites": [
+        "mont.g2.grammar-symbols"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g4.history-geography-research",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "g4",
+      "title": {
+        "en": "Researches history and geography questions using several sources",
+        "id": "Meneliti pertanyaan sejarah dan geografi dari beberapa sumber"
+      },
+      "prerequisites": [
+        "mont.g3.independent-reports"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g4.experiments",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "g4",
+      "title": {
+        "en": "Plans fair-test science experiments",
+        "id": "Merencanakan eksperimen sains yang adil"
+      },
+      "prerequisites": [
+        "mont.g3.cosmic-stories"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g5.scientific-method",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "g5",
+      "title": {
+        "en": "Uses the scientific method and presents research",
+        "id": "Menggunakan metode ilmiah dan menyajikan penelitian"
+      },
+      "prerequisites": [
+        "mont.g4.experiments"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "portfolio",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g5.world-history",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "g5",
+      "title": {
+        "en": "Explains causes and effects in world history topics",
+        "id": "Menjelaskan sebab dan akibat dalam topik sejarah dunia"
+      },
+      "prerequisites": [
+        "mont.g4.history-geography-research"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g6.capstone",
+      "framework": "montessori",
+      "strand": "culture",
+      "stage": "g6",
+      "title": {
+        "en": "Completes an interdisciplinary capstone with a service element",
+        "id": "Menyelesaikan proyek akhir lintas bidang dengan unsur pelayanan"
+      },
+      "prerequisites": [
+        "mont.g5.scientific-method"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "portfolio",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "mont.g6.advanced-grammar",
+      "framework": "montessori",
+      "strand": "language",
+      "stage": "g6",
+      "title": {
+        "en": "Analyses sentence structure and writes for different purposes",
+        "id": "Menganalisis struktur kalimat dan menulis untuk berbagai tujuan"
+      },
+      "prerequisites": [
+        "mont.g3.independent-reports"
+      ],
+      "usesCpa": false,
+      "delivery": "guided",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    }
+  ]
+}

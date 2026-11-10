@@ -1,0 +1,473 @@
+{
+  "framework": "robotics_stem",
+  "curriculumVersion": "2026.11.1",
+  "sourceStatus": "original_planning_not_official",
+  "objectives": [
+    {
+      "id": "robo.age2_3.towers-cause-effect",
+      "framework": "robotics_stem",
+      "strand": "engineering_design",
+      "stage": "age2_3",
+      "title": {
+        "en": "Builds towers and predicts what rolls or falls",
+        "id": "Membangun menara dan menebak apa yang menggelinding atau jatuh"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.age2_3.first-next",
+      "framework": "robotics_stem",
+      "strand": "sequencing_algorithms",
+      "stage": "age2_3",
+      "title": {
+        "en": "Orders two picture steps: first, next",
+        "id": "Mengurutkan dua langkah bergambar: pertama, lalu"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.age3_4.arrow-paths",
+      "framework": "robotics_stem",
+      "strand": "sequencing_algorithms",
+      "stage": "age3_4",
+      "title": {
+        "en": "Follows and makes floor-arrow paths (2–3 steps)",
+        "id": "Mengikuti dan membuat jalur panah di lantai (2–3 langkah)"
+      },
+      "prerequisites": [
+        "robo.age2_3.first-next"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": [
+          "ROBO-P-ARROW-PATHS"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.age3_4.ramps-balance",
+      "framework": "robotics_stem",
+      "strand": "mechanics",
+      "stage": "age3_4",
+      "title": {
+        "en": "Tests ramps and balance with safe objects",
+        "id": "Menguji lintasan miring dan keseimbangan dengan benda aman"
+      },
+      "prerequisites": [
+        "robo.age2_3.towers-cause-effect"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.age4_5.adult-robot-algorithm",
+      "framework": "robotics_stem",
+      "strand": "sequencing_algorithms",
+      "stage": "age4_5",
+      "title": {
+        "en": "Gives step-by-step instructions to an 'adult robot' and fixes mistakes",
+        "id": "Memberi instruksi langkah demi langkah kepada 'robot dewasa' dan memperbaiki kesalahan"
+      },
+      "prerequisites": [
+        "robo.age3_4.arrow-paths"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.age4_5.gears-building",
+      "framework": "robotics_stem",
+      "strand": "mechanics",
+      "stage": "age4_5",
+      "title": {
+        "en": "Builds with gears and notices how they turn",
+        "id": "Membangun dengan roda gigi dan mengamati cara berputarnya"
+      },
+      "prerequisites": [
+        "robo.age3_4.ramps-balance"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.k.loops-repeat",
+      "framework": "robotics_stem",
+      "strand": "sequencing_algorithms",
+      "stage": "k",
+      "title": {
+        "en": "Uses repeat to shorten a sequence and predicts the result",
+        "id": "Menggunakan pengulangan untuk memendekkan urutan dan menebak hasilnya"
+      },
+      "prerequisites": [
+        "robo.age4_5.adult-robot-algorithm"
+      ],
+      "usesCpa": false,
+      "delivery": "blended",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.k.linkages",
+      "framework": "robotics_stem",
+      "strand": "mechanics",
+      "stage": "k",
+      "title": {
+        "en": "Builds a simple linkage (moving arm) from card",
+        "id": "Membuat sambungan sederhana (lengan bergerak) dari karton"
+      },
+      "prerequisites": [
+        "robo.age4_5.gears-building"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g1.grid-robot",
+      "framework": "robotics_stem",
+      "strand": "programming",
+      "stage": "g1",
+      "title": {
+        "en": "Programs a floor robot (or unplugged grid) to reach a target",
+        "id": "Memprogram robot lantai (atau grid tanpa listrik) untuk mencapai sasaran"
+      },
+      "prerequisites": [
+        "robo.k.loops-repeat"
+      ],
+      "usesCpa": false,
+      "delivery": "blended",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g1.debug-path",
+      "framework": "robotics_stem",
+      "strand": "programming",
+      "stage": "g1",
+      "title": {
+        "en": "Finds and fixes the wrong step in a path program",
+        "id": "Menemukan dan memperbaiki langkah yang salah dalam program jalur"
+      },
+      "prerequisites": [
+        "robo.g1.grid-robot"
+      ],
+      "usesCpa": false,
+      "delivery": "blended",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g1.sensors-observe",
+      "framework": "robotics_stem",
+      "strand": "sensors_circuits",
+      "stage": "g1",
+      "title": {
+        "en": "Observes how simple sensors respond (light, touch) and records it",
+        "id": "Mengamati cara sensor sederhana merespons (cahaya, sentuhan) dan mencatatnya"
+      },
+      "prerequisites": [
+        "robo.g1.grid-robot"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "portfolio",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g2.block-coding",
+      "framework": "robotics_stem",
+      "strand": "programming",
+      "stage": "g2",
+      "title": {
+        "en": "Writes block-code sequences with loops",
+        "id": "Menulis urutan kode blok dengan pengulangan"
+      },
+      "prerequisites": [
+        "robo.g1.debug-path"
+      ],
+      "usesCpa": false,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g2.levers-gears",
+      "framework": "robotics_stem",
+      "strand": "mechanics",
+      "stage": "g2",
+      "title": {
+        "en": "Designs with levers and gears and sets test criteria",
+        "id": "Merancang dengan tuas dan roda gigi serta menetapkan kriteria uji"
+      },
+      "prerequisites": [
+        "robo.k.linkages"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g3.conditionals",
+      "framework": "robotics_stem",
+      "strand": "programming",
+      "stage": "g3",
+      "title": {
+        "en": "Uses if/then rules in programs",
+        "id": "Menggunakan aturan jika/maka dalam program"
+      },
+      "prerequisites": [
+        "robo.g2.block-coding"
+      ],
+      "usesCpa": false,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g3.obstacle-model",
+      "framework": "robotics_stem",
+      "strand": "engineering_design",
+      "stage": "g3",
+      "title": {
+        "en": "Prototypes an obstacle-avoiding model and keeps an error log",
+        "id": "Membuat prototipe model penghindar rintangan dan mencatat kesalahan"
+      },
+      "prerequisites": [
+        "robo.g3.conditionals",
+        "robo.g1.sensors-observe"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g4.low-voltage-circuits",
+      "framework": "robotics_stem",
+      "strand": "sensors_circuits",
+      "stage": "g4",
+      "title": {
+        "en": "Builds low-voltage circuits with an adult",
+        "id": "Merangkai rangkaian listrik bertegangan rendah bersama orang dewasa"
+      },
+      "prerequisites": [
+        "robo.g3.obstacle-model"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "electrical_safety",
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g4.variables-data",
+      "framework": "robotics_stem",
+      "strand": "programming",
+      "stage": "g4",
+      "title": {
+        "en": "Uses variables and collects data from a sensor",
+        "id": "Menggunakan variabel dan mengumpulkan data dari sensor"
+      },
+      "prerequisites": [
+        "robo.g3.conditionals"
+      ],
+      "usesCpa": false,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g5.microcontroller",
+      "framework": "robotics_stem",
+      "strand": "programming",
+      "stage": "g5",
+      "title": {
+        "en": "Programs a microcontroller project (e.g. plant-moisture monitor)",
+        "id": "Memprogram proyek mikrokontroler (mis. pemantau kelembapan tanaman)"
+      },
+      "prerequisites": [
+        "robo.g4.variables-data",
+        "robo.g4.low-voltage-circuits"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "portfolio",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "electrical_safety",
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g5.data-ethics",
+      "framework": "robotics_stem",
+      "strand": "digital_ethics",
+      "stage": "g5",
+      "title": {
+        "en": "Explains fair and safe use of data and simple AI",
+        "id": "Menjelaskan penggunaan data dan AI sederhana yang adil dan aman"
+      },
+      "prerequisites": [
+        "robo.g4.variables-data"
+      ],
+      "usesCpa": false,
+      "delivery": "guided",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "robo.g6.robotics-capstone",
+      "framework": "robotics_stem",
+      "strand": "engineering_design",
+      "stage": "g6",
+      "title": {
+        "en": "Completes a service-oriented robotics capstone with documentation and safety review",
+        "id": "Menyelesaikan proyek akhir robotika berorientasi pelayanan dengan dokumentasi dan tinjauan keselamatan"
+      },
+      "prerequisites": [
+        "robo.g5.microcontroller",
+        "robo.g5.data-ethics"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "portfolio",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "electrical_safety",
+        "physical_safety"
+      ],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    }
+  ]
+}

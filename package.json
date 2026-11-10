@@ -20,7 +20,9 @@
     "db:seed:private": "pnpm --filter @atlas/database seed:private",
     "privacy:scan": "node scripts/privacy-scan.mjs",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "content:religious-approve": "pnpm --filter @atlas/curriculum religious-approve",
+    "curriculum:coverage": "pnpm --filter @atlas/curriculum coverage"
   },
   "devDependencies": {
     "prettier": "3.6.2",

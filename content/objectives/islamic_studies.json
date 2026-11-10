@@ -1,0 +1,882 @@
+{
+  "framework": "islamic_studies",
+  "curriculumVersion": "2026.11.1",
+  "sourceStatus": "original_planning_not_official",
+  "objectives": [
+    {
+      "id": "islm.age2_3.bismillah-alhamdulillah",
+      "framework": "islamic_studies",
+      "strand": "adab_akhlaq",
+      "stage": "age2_3",
+      "title": {
+        "en": "Hears and may repeat Bismillah before eating and Alhamdulillah after, with family",
+        "id": "Mendengar dan boleh menirukan Bismillah sebelum makan dan Alhamdulillah sesudahnya, bersama keluarga"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": [
+          "ISLM-T-MEAL-ADAB"
+        ]
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.age2_3.greetings-kindness",
+      "framework": "islamic_studies",
+      "strand": "adab_akhlaq",
+      "stage": "age2_3",
+      "title": {
+        "en": "Greets family kindly and shares",
+        "id": "Memberi salam kepada keluarga dengan ramah dan berbagi"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.age2_3.gratitude-creation",
+      "framework": "islamic_studies",
+      "strand": "aqidah",
+      "stage": "age2_3",
+      "title": {
+        "en": "Shows gratitude for creation in loving, non-frightening language",
+        "id": "Menunjukkan rasa syukur atas ciptaan dengan bahasa yang penuh kasih dan tidak menakutkan"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "scholar_wording_required",
+        "theological_interpretation"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.age3_4.creator",
+      "framework": "islamic_studies",
+      "strand": "aqidah",
+      "stage": "age3_4",
+      "title": {
+        "en": "Allah is the Creator; no pictures or imagery of Allah",
+        "id": "Allah adalah Pencipta; tanpa gambar atau visualisasi tentang Allah"
+      },
+      "prerequisites": [
+        "islm.age2_3.gratitude-creation"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "scholar_wording_required",
+        "theological_interpretation"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.age3_4.cleanliness",
+      "framework": "islamic_studies",
+      "strand": "worship_fiqh",
+      "stage": "age3_4",
+      "title": {
+        "en": "Keeps hands and body clean; observes family prayer",
+        "id": "Menjaga kebersihan tangan dan badan; mengamati shalat keluarga"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "fiqh_ruling",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.age3_4.arabic-sounds",
+      "framework": "islamic_studies",
+      "strand": "arabic",
+      "stage": "age3_4",
+      "title": {
+        "en": "Hears Arabic sounds and short familiar phrases",
+        "id": "Mendengar bunyi Arab dan frasa pendek yang dikenal"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "pronunciation_review",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.age4_5.unlike-creation",
+      "framework": "islamic_studies",
+      "strand": "aqidah",
+      "stage": "age4_5",
+      "title": {
+        "en": "The Creator is not like created things (simple, scholar-approved wording)",
+        "id": "Pencipta tidak serupa dengan ciptaan (kata-kata sederhana yang disetujui ulama)"
+      },
+      "prerequisites": [
+        "islm.age3_4.creator"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "scholar_wording_required",
+        "theological_interpretation"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.age4_5.short-surahs-listen",
+      "framework": "islamic_studies",
+      "strand": "quran",
+      "stage": "age4_5",
+      "title": {
+        "en": "Listens to and, by choice, memorises selected short surahs with accurate recitation",
+        "id": "Mendengarkan dan, bila mau, menghafal surah pendek pilihan dengan bacaan yang benar"
+      },
+      "prerequisites": [
+        "islm.age3_4.arabic-sounds"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "pronunciation_review",
+        "quran_text",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.age4_5.wudu-imitation",
+      "framework": "islamic_studies",
+      "strand": "worship_fiqh",
+      "stage": "age4_5",
+      "title": {
+        "en": "Imitates wudu steps with an adult",
+        "id": "Menirukan langkah wudhu bersama orang dewasa"
+      },
+      "prerequisites": [
+        "islm.age3_4.cleanliness"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "fiqh_ruling",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.age4_5.prophet-stories",
+      "framework": "islamic_studies",
+      "strand": "seerah",
+      "stage": "age4_5",
+      "title": {
+        "en": "Listens to selected prophetic stories about kindness",
+        "id": "Mendengarkan kisah nabi pilihan tentang kebaikan"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "source_verification"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.k.core-beliefs",
+      "framework": "islamic_studies",
+      "strand": "aqidah",
+      "stage": "k",
+      "title": {
+        "en": "Core beliefs in approved child language",
+        "id": "Keyakinan pokok dalam bahasa anak yang disetujui"
+      },
+      "prerequisites": [
+        "islm.age4_5.unlike-creation"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "scholar_wording_required",
+        "theological_interpretation"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.k.wudu-prayer-sequence",
+      "framework": "islamic_studies",
+      "strand": "worship_fiqh",
+      "stage": "k",
+      "title": {
+        "en": "Sequences the steps of wudu and prayer",
+        "id": "Mengurutkan langkah wudhu dan shalat"
+      },
+      "prerequisites": [
+        "islm.age4_5.wudu-imitation"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "fiqh_ruling",
+        "madhhab_selection",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.k.letter-recognition",
+      "framework": "islamic_studies",
+      "strand": "arabic",
+      "stage": "k",
+      "title": {
+        "en": "Recognises Arabic letters and their sounds",
+        "id": "Mengenali huruf hijaiyah dan bunyinya"
+      },
+      "prerequisites": [
+        "islm.age3_4.arabic-sounds"
+      ],
+      "usesCpa": false,
+      "delivery": "blended",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "pronunciation_review",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g1.introductory-creed",
+      "framework": "islamic_studies",
+      "strand": "aqidah",
+      "stage": "g1",
+      "title": {
+        "en": "Allah exists and is not like creation; no physical depiction (scholar-approved wording)",
+        "id": "Allah ada dan tidak serupa dengan ciptaan; tanpa penggambaran fisik (kata-kata disetujui ulama)"
+      },
+      "prerequisites": [
+        "islm.k.core-beliefs"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "scholar_wording_required",
+        "theological_interpretation"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g1.daily-duas",
+      "framework": "islamic_studies",
+      "strand": "adab_akhlaq",
+      "stage": "g1",
+      "title": {
+        "en": "Knows daily duas for eating, sleeping and travelling",
+        "id": "Mengenal doa harian untuk makan, tidur, dan bepergian"
+      },
+      "prerequisites": [
+        "islm.age2_3.bismillah-alhamdulillah"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "religious_content",
+        "source_verification"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g1.wudu-salah-guided",
+      "framework": "islamic_studies",
+      "strand": "worship_fiqh",
+      "stage": "g1",
+      "title": {
+        "en": "Performs guided wudu and salah fundamentals",
+        "id": "Melakukan dasar wudhu dan shalat dengan bimbingan"
+      },
+      "prerequisites": [
+        "islm.k.wudu-prayer-sequence"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "fiqh_ruling",
+        "madhhab_selection",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g1.surah-meanings",
+      "framework": "islamic_studies",
+      "strand": "quran",
+      "stage": "g1",
+      "title": {
+        "en": "Recites selected short surahs and knows their simple meanings",
+        "id": "Membaca surah pendek pilihan dan mengetahui arti sederhananya"
+      },
+      "prerequisites": [
+        "islm.age4_5.short-surahs-listen"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "pronunciation_review",
+        "quran_text",
+        "religious_content",
+        "translation_review"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g1.honesty-mercy",
+      "framework": "islamic_studies",
+      "strand": "adab_akhlaq",
+      "stage": "g1",
+      "title": {
+        "en": "Practises honesty and mercy in daily life",
+        "id": "Mempraktikkan kejujuran dan kasih sayang dalam kehidupan sehari-hari"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "source_verification"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g2.attributes-prophethood",
+      "framework": "islamic_studies",
+      "strand": "aqidah",
+      "stage": "g2",
+      "title": {
+        "en": "Introductory divine attributes and prophethood (approved wording)",
+        "id": "Pengantar sifat-sifat Allah dan kenabian (kata-kata disetujui)"
+      },
+      "prerequisites": [
+        "islm.g1.introductory-creed"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "scholar_wording_required",
+        "theological_interpretation"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g2.tajwid-basics",
+      "framework": "islamic_studies",
+      "strand": "quran",
+      "stage": "g2",
+      "title": {
+        "en": "Applies basic tajwid in short surahs",
+        "id": "Menerapkan tajwid dasar pada surah pendek"
+      },
+      "prerequisites": [
+        "islm.g1.surah-meanings"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "pronunciation_review",
+        "quran_text",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g2.prayer-routine",
+      "framework": "islamic_studies",
+      "strand": "worship_fiqh",
+      "stage": "g2",
+      "title": {
+        "en": "Builds a prayer and purification routine without coercion",
+        "id": "Membangun kebiasaan shalat dan bersuci tanpa paksaan"
+      },
+      "prerequisites": [
+        "islm.g1.wudu-salah-guided"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "fiqh_ruling",
+        "madhhab_selection",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g2.seerah-timeline",
+      "framework": "islamic_studies",
+      "strand": "seerah",
+      "stage": "g2",
+      "title": {
+        "en": "Places key events of the Prophet's life on a timeline",
+        "id": "Menempatkan peristiwa penting kehidupan Nabi pada garis waktu"
+      },
+      "prerequisites": [
+        "islm.age4_5.prophet-stories"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "source_verification"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g3.creator-creation",
+      "framework": "islamic_studies",
+      "strand": "aqidah",
+      "stage": "g3",
+      "title": {
+        "en": "Explains the distinction between Creator and creation; gentle Q&A",
+        "id": "Menjelaskan perbedaan Pencipta dan ciptaan; tanya jawab yang lembut"
+      },
+      "prerequisites": [
+        "islm.g2.attributes-prophethood"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "scholar_wording_required",
+        "theological_interpretation"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g3.fasting-service",
+      "framework": "islamic_studies",
+      "strand": "worship_fiqh",
+      "stage": "g3",
+      "title": {
+        "en": "Understands fasting concepts and community service",
+        "id": "Memahami konsep puasa dan pelayanan masyarakat"
+      },
+      "prerequisites": [
+        "islm.g2.prayer-routine"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "fiqh_ruling",
+        "madhhab_selection",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g3.prophetic-character",
+      "framework": "islamic_studies",
+      "strand": "seerah",
+      "stage": "g3",
+      "title": {
+        "en": "Learns prophetic character and charity",
+        "id": "Mempelajari akhlak Nabi dan sedekah"
+      },
+      "prerequisites": [
+        "islm.g2.seerah-timeline"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "source_verification"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g4.transcendence",
+      "framework": "islamic_studies",
+      "strand": "aqidah",
+      "stage": "g4",
+      "title": {
+        "en": "Meaning of transcendence and non-spatiality (Allah mawjud bila makan) with scholar-approved wording",
+        "id": "Makna kesucian Allah dari tempat (Allah maujud bila makan) dengan kata-kata yang disetujui ulama"
+      },
+      "prerequisites": [
+        "islm.g3.creator-creation"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "attribution",
+        "religious_content",
+        "scholar_wording_required",
+        "theological_interpretation"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g4.fiqh-school-rules",
+      "framework": "islamic_studies",
+      "strand": "worship_fiqh",
+      "stage": "g4",
+      "title": {
+        "en": "Worship rules with the named fiqh school",
+        "id": "Hukum ibadah dengan mazhab fikih yang disebutkan"
+      },
+      "prerequisites": [
+        "islm.g3.fasting-service"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "fiqh_ruling",
+        "madhhab_selection",
+        "religious_content"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g4.moral-dilemmas",
+      "framework": "islamic_studies",
+      "strand": "adab_akhlaq",
+      "stage": "g4",
+      "title": {
+        "en": "Discusses moral dilemmas and civic respect",
+        "id": "Mendiskusikan dilema moral dan sikap menghormati sesama warga"
+      },
+      "prerequisites": [
+        "islm.g1.honesty-mercy"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "source_verification"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g5.ashari-maturidi-history",
+      "framework": "islamic_studies",
+      "strand": "aqidah",
+      "stage": "g5",
+      "title": {
+        "en": "Introductory Ash'ari/Maturidi intellectual history; distinguishes quotation from interpretation",
+        "id": "Pengantar sejarah pemikiran Asy'ari/Maturidi; membedakan kutipan dan penafsiran"
+      },
+      "prerequisites": [
+        "islm.g4.transcendence"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "attribution",
+        "religious_content",
+        "scholar_wording_required",
+        "source_verification",
+        "theological_interpretation"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g5.arabic-morphology",
+      "framework": "islamic_studies",
+      "strand": "arabic",
+      "stage": "g5",
+      "title": {
+        "en": "Basic Arabic morphology with verified texts",
+        "id": "Dasar morfologi (sharaf) bahasa Arab dengan teks terverifikasi"
+      },
+      "prerequisites": [
+        "islm.k.letter-recognition"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "religious_content",
+        "translation_review"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g5.respectful-disagreement",
+      "framework": "islamic_studies",
+      "strand": "adab_akhlaq",
+      "stage": "g5",
+      "title": {
+        "en": "Historical context and respectful disagreement",
+        "id": "Konteks sejarah dan perbedaan pendapat yang santun"
+      },
+      "prerequisites": [
+        "islm.g4.moral-dilemmas"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "source_verification"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g6.mature-creed",
+      "framework": "islamic_studies",
+      "strand": "aqidah",
+      "stage": "g6",
+      "title": {
+        "en": "Deeper age-appropriate creed under teacher supervision, including Allah mawjud bila makan, with evidence and questions",
+        "id": "Akidah lebih mendalam sesuai usia dengan bimbingan guru, termasuk Allah maujud bila makan, beserta dalil dan pertanyaan"
+      },
+      "prerequisites": [
+        "islm.g5.ashari-maturidi-history"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "attribution",
+        "religious_content",
+        "scholar_wording_required",
+        "source_verification",
+        "theological_interpretation"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g6.source-comparison",
+      "framework": "islamic_studies",
+      "strand": "quran",
+      "stage": "g6",
+      "title": {
+        "en": "Compares verified sources and practises recitation accuracy",
+        "id": "Membandingkan sumber terverifikasi dan melatih ketepatan bacaan"
+      },
+      "prerequisites": [
+        "islm.g2.tajwid-basics",
+        "islm.g5.arabic-morphology"
+      ],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "arabic_text",
+        "quran_text",
+        "religious_content",
+        "source_verification",
+        "translation_review"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "islm.g6.service-capstone",
+      "framework": "islamic_studies",
+      "strand": "adab_akhlaq",
+      "stage": "g6",
+      "title": {
+        "en": "Service capstone with intellectual humility",
+        "id": "Proyek akhir pelayanan dengan kerendahan hati intelektual"
+      },
+      "prerequisites": [
+        "islm.g5.respectful-disagreement"
+      ],
+      "usesCpa": false,
+      "delivery": "project",
+      "assessment": "portfolio",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [
+        "religious_content",
+        "source_verification"
+      ],
+      "requiresReligiousReview": true,
+      "sourceStatus": "original_planning"
+    }
+  ]
+}

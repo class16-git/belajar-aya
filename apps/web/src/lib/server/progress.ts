@@ -88,7 +88,10 @@ export async function buildProgress(child: ChildProfile, now = new Date()) {
     const input = await engineInput(child, ctx, now, child.focusSkillId);
     recommendation = recommendNext(input);
   }
-  const cards = visibleOfflineCards(config.minReview);
+  // Age-appropriate offline suggestions: under-3 only toddler cards; age-3+ cards only after the parent
+  // acknowledged the "turned 3" notice (no automatic change of mode).
+  const cardBands = ctx.age && ctx.age.years >= 3 && child.transitionAcknowledged ? ['toddler', 'preschool'] : ['toddler'];
+  const cards = visibleOfflineCards(config.minReview).filter((c) => cardBands.includes(c.ageBand));
   const cardHistory = observations
     .filter((o) => o.lessonId && o.skillId)
     .map((o) => ({ lessonId: o.lessonId!, skillId: o.skillId!, observedAt: o.observedAt }));

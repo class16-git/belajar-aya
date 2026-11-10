@@ -1,0 +1,832 @@
+{
+  "framework": "singapore_math",
+  "curriculumVersion": "2026.11.1",
+  "sourceStatus": "original_planning_not_official",
+  "objectives": [
+    {
+      "id": "math.age2_3.match-sets-1-3",
+      "framework": "singapore_math",
+      "strand": "number",
+      "stage": "age2_3",
+      "title": {
+        "en": "Matches small sets of 1–3 objects",
+        "id": "Mencocokkan kumpulan kecil 1–3 benda"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": [
+          "TOD-QUANTITY-3"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.age2_3.more-less",
+      "framework": "singapore_math",
+      "strand": "number",
+      "stage": "age2_3",
+      "title": {
+        "en": "Compares two groups: which has more?",
+        "id": "Membandingkan dua kelompok: mana yang lebih banyak?"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.age3_4.count-10",
+      "framework": "singapore_math",
+      "strand": "number",
+      "stage": "age3_4",
+      "title": {
+        "en": "Counts and matches up to 10 objects (one-to-one)",
+        "id": "Membilang dan mencocokkan sampai 10 benda (satu-satu)"
+      },
+      "prerequisites": [
+        "math.age2_3.match-sets-1-3"
+      ],
+      "usesCpa": true,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.age3_4.ab-patterns",
+      "framework": "singapore_math",
+      "strand": "data_problem_solving",
+      "stage": "age3_4",
+      "title": {
+        "en": "Copies and extends AB patterns",
+        "id": "Meniru dan melanjutkan pola AB"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.age3_4.shapes-2d",
+      "framework": "singapore_math",
+      "strand": "measurement_geometry",
+      "stage": "age3_4",
+      "title": {
+        "en": "Names circle, square, triangle and rectangle",
+        "id": "Menyebut lingkaran, persegi, segitiga, dan persegi panjang"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.age3_4.compare-lengths",
+      "framework": "singapore_math",
+      "strand": "measurement_geometry",
+      "stage": "age3_4",
+      "title": {
+        "en": "Compares lengths: longer, shorter",
+        "id": "Membandingkan panjang: lebih panjang, lebih pendek"
+      },
+      "prerequisites": [],
+      "usesCpa": false,
+      "delivery": "offline",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.age4_5.compose-10",
+      "framework": "singapore_math",
+      "strand": "number",
+      "stage": "age4_5",
+      "title": {
+        "en": "Composes and decomposes numbers within 10 with objects",
+        "id": "Menyusun dan mengurai bilangan sampai 10 dengan benda"
+      },
+      "prerequisites": [
+        "math.age3_4.count-10"
+      ],
+      "usesCpa": true,
+      "delivery": "blended",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.age4_5.add-sub-objects",
+      "framework": "singapore_math",
+      "strand": "operations",
+      "stage": "age4_5",
+      "title": {
+        "en": "Adds and takes away with counters within 10",
+        "id": "Menambah dan mengambil dengan keping sampai 10"
+      },
+      "prerequisites": [
+        "math.age4_5.compose-10"
+      ],
+      "usesCpa": true,
+      "delivery": "blended",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.k.bonds-20",
+      "framework": "singapore_math",
+      "strand": "number",
+      "stage": "k",
+      "title": {
+        "en": "Number bonds within 20 with ten-frames",
+        "id": "Ikatan bilangan sampai 20 dengan bingkai sepuluh"
+      },
+      "prerequisites": [
+        "math.age4_5.compose-10"
+      ],
+      "usesCpa": true,
+      "delivery": "blended",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.k.tens-ones-intro",
+      "framework": "singapore_math",
+      "strand": "place_value",
+      "stage": "k",
+      "title": {
+        "en": "Sees teen numbers as ten and some ones",
+        "id": "Melihat bilangan belasan sebagai sepuluh dan beberapa satuan"
+      },
+      "prerequisites": [
+        "math.k.bonds-20"
+      ],
+      "usesCpa": true,
+      "delivery": "blended",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.k.picture-word-problems",
+      "framework": "singapore_math",
+      "strand": "data_problem_solving",
+      "stage": "k",
+      "title": {
+        "en": "Solves picture word problems by acting them out",
+        "id": "Menyelesaikan soal cerita bergambar dengan memeragakannya"
+      },
+      "prerequisites": [
+        "math.age4_5.add-sub-objects"
+      ],
+      "usesCpa": true,
+      "delivery": "blended",
+      "assessment": "observation",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g1.count-20",
+      "framework": "singapore_math",
+      "strand": "number",
+      "stage": "g1",
+      "title": {
+        "en": "Counts objects to 20 using ten-frames",
+        "id": "Membilang benda sampai 20 dengan bingkai sepuluh"
+      },
+      "prerequisites": [
+        "math.age3_4.count-10"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": [
+          "MATH-G1-COUNT-20"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g1.bonds-10",
+      "framework": "singapore_math",
+      "strand": "number",
+      "stage": "g1",
+      "title": {
+        "en": "Composes and decomposes 10 (part–part–whole)",
+        "id": "Menyusun dan mengurai 10 (bagian–bagian–keseluruhan)"
+      },
+      "prerequisites": [
+        "math.g1.count-20"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": [
+          "MATH-G1-BONDS-10"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g1.compare-20",
+      "framework": "singapore_math",
+      "strand": "number",
+      "stage": "g1",
+      "title": {
+        "en": "Compares numbers to 20 (more, fewer, same)",
+        "id": "Membandingkan bilangan sampai 20 (lebih, kurang, sama)"
+      },
+      "prerequisites": [
+        "math.g1.count-20"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": [
+          "MATH-G1-COMPARE-20"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g1.add-sub-10",
+      "framework": "singapore_math",
+      "strand": "operations",
+      "stage": "g1",
+      "title": {
+        "en": "Adds and subtracts within 10 and explains the inverse",
+        "id": "Menjumlah dan mengurang sampai 10 serta menjelaskan kebalikannya"
+      },
+      "prerequisites": [
+        "math.g1.bonds-10"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": [
+          "MATH-G1-ADD-10",
+          "MATH-G1-SUB-10"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g1.add-sub-20",
+      "framework": "singapore_math",
+      "strand": "operations",
+      "stage": "g1",
+      "title": {
+        "en": "Adds and subtracts within 20 using make-ten",
+        "id": "Menjumlah dan mengurang sampai 20 dengan strategi membuat sepuluh"
+      },
+      "prerequisites": [
+        "math.g1.add-sub-10",
+        "math.g1.tens-ones"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": [
+          "MATH-G1-ADD-20"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g1.tens-ones",
+      "framework": "singapore_math",
+      "strand": "place_value",
+      "stage": "g1",
+      "title": {
+        "en": "Groups ten ones as one ten; numbers to 100",
+        "id": "Mengelompokkan sepuluh satuan menjadi satu puluhan; bilangan sampai 100"
+      },
+      "prerequisites": [
+        "math.g1.count-20"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": [
+          "MATH-G1-TENS-ONES"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g1.measure-time-money",
+      "framework": "singapore_math",
+      "strand": "measurement_geometry",
+      "stage": "g1",
+      "title": {
+        "en": "Compares lengths, tells time to the hour, counts coins",
+        "id": "Membandingkan panjang, membaca jam tepat, menghitung uang logam"
+      },
+      "prerequisites": [
+        "math.g1.count-20"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g1.word-problems-1",
+      "framework": "singapore_math",
+      "strand": "data_problem_solving",
+      "stage": "g1",
+      "title": {
+        "en": "Solves one-step stories with pictures and bar models",
+        "id": "Menyelesaikan soal cerita satu langkah dengan gambar dan model batang"
+      },
+      "prerequisites": [
+        "math.g1.add-sub-10"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": [
+          "MATH-G1-WORD-1"
+        ]
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g2.numbers-1000",
+      "framework": "singapore_math",
+      "strand": "place_value",
+      "stage": "g2",
+      "title": {
+        "en": "Reads, writes and compares numbers to 1,000",
+        "id": "Membaca, menulis, dan membandingkan bilangan sampai 1.000"
+      },
+      "prerequisites": [
+        "math.g1.tens-ones"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g2.regrouping",
+      "framework": "singapore_math",
+      "strand": "operations",
+      "stage": "g2",
+      "title": {
+        "en": "Adds and subtracts with regrouping within 1,000",
+        "id": "Menjumlah dan mengurang dengan menyimpan/meminjam sampai 1.000"
+      },
+      "prerequisites": [
+        "math.g2.numbers-1000",
+        "math.g1.add-sub-20"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g2.equal-groups",
+      "framework": "singapore_math",
+      "strand": "operations",
+      "stage": "g2",
+      "title": {
+        "en": "Understands multiplication as equal groups and division as sharing",
+        "id": "Memahami perkalian sebagai kelompok sama dan pembagian sebagai berbagi"
+      },
+      "prerequisites": [
+        "math.g1.add-sub-20"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g2.simple-fractions",
+      "framework": "singapore_math",
+      "strand": "fractions",
+      "stage": "g2",
+      "title": {
+        "en": "Recognises halves and quarters of shapes and sets",
+        "id": "Mengenali setengah dan seperempat dari bentuk dan kumpulan"
+      },
+      "prerequisites": [
+        "math.g2.equal-groups"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g3.times-tables",
+      "framework": "singapore_math",
+      "strand": "operations",
+      "stage": "g3",
+      "title": {
+        "en": "Recalls multiplication facts and related division facts",
+        "id": "Mengingat fakta perkalian dan pembagian terkait"
+      },
+      "prerequisites": [
+        "math.g2.equal-groups"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g3.fractions",
+      "framework": "singapore_math",
+      "strand": "fractions",
+      "stage": "g3",
+      "title": {
+        "en": "Compares and adds simple fractions with models",
+        "id": "Membandingkan dan menjumlah pecahan sederhana dengan model"
+      },
+      "prerequisites": [
+        "math.g2.simple-fractions"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g3.bar-models-2-step",
+      "framework": "singapore_math",
+      "strand": "data_problem_solving",
+      "stage": "g3",
+      "title": {
+        "en": "Solves two-step problems with bar models",
+        "id": "Menyelesaikan soal dua langkah dengan model batang"
+      },
+      "prerequisites": [
+        "math.g1.word-problems-1",
+        "math.g2.regrouping"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g3.perimeter-area",
+      "framework": "singapore_math",
+      "strand": "measurement_geometry",
+      "stage": "g3",
+      "title": {
+        "en": "Finds perimeter and area of rectangles",
+        "id": "Mencari keliling dan luas persegi panjang"
+      },
+      "prerequisites": [
+        "math.g3.times-tables"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g4.multi-digit",
+      "framework": "singapore_math",
+      "strand": "operations",
+      "stage": "g4",
+      "title": {
+        "en": "Multiplies and divides multi-digit numbers",
+        "id": "Mengalikan dan membagi bilangan bersusun"
+      },
+      "prerequisites": [
+        "math.g3.times-tables"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g4.equivalent-fractions-decimals",
+      "framework": "singapore_math",
+      "strand": "fractions",
+      "stage": "g4",
+      "title": {
+        "en": "Finds equivalent fractions and relates them to decimals",
+        "id": "Mencari pecahan senilai dan menghubungkannya dengan desimal"
+      },
+      "prerequisites": [
+        "math.g3.fractions"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g4.measurement-conversion",
+      "framework": "singapore_math",
+      "strand": "measurement_geometry",
+      "stage": "g4",
+      "title": {
+        "en": "Converts units of length, mass and volume",
+        "id": "Mengonversi satuan panjang, massa, dan volume"
+      },
+      "prerequisites": [
+        "math.g3.perimeter-area"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g5.percentages",
+      "framework": "singapore_math",
+      "strand": "fractions",
+      "stage": "g5",
+      "title": {
+        "en": "Understands percentage as parts of 100",
+        "id": "Memahami persen sebagai bagian dari 100"
+      },
+      "prerequisites": [
+        "math.g4.equivalent-fractions-decimals"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g5.ratio-foundations",
+      "framework": "singapore_math",
+      "strand": "fractions",
+      "stage": "g5",
+      "title": {
+        "en": "Describes relationships with simple ratios",
+        "id": "Menggambarkan hubungan dengan perbandingan sederhana"
+      },
+      "prerequisites": [
+        "math.g4.equivalent-fractions-decimals"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g5.volume",
+      "framework": "singapore_math",
+      "strand": "measurement_geometry",
+      "stage": "g5",
+      "title": {
+        "en": "Finds the volume of cuboids",
+        "id": "Mencari volume balok"
+      },
+      "prerequisites": [
+        "math.g4.measurement-conversion"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g5.multi-step",
+      "framework": "singapore_math",
+      "strand": "data_problem_solving",
+      "stage": "g5",
+      "title": {
+        "en": "Solves multi-step problems and explains the plan",
+        "id": "Menyelesaikan soal multi-langkah dan menjelaskan rencananya"
+      },
+      "prerequisites": [
+        "math.g3.bar-models-2-step"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "rubric",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g6.ratio-percentage",
+      "framework": "singapore_math",
+      "strand": "fractions",
+      "stage": "g6",
+      "title": {
+        "en": "Solves ratio and percentage problems",
+        "id": "Menyelesaikan soal perbandingan dan persen"
+      },
+      "prerequisites": [
+        "math.g5.ratio-foundations",
+        "math.g5.percentages"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g6.algebraic-patterns",
+      "framework": "singapore_math",
+      "strand": "data_problem_solving",
+      "stage": "g6",
+      "title": {
+        "en": "Describes patterns with simple algebraic expressions",
+        "id": "Menggambarkan pola dengan ekspresi aljabar sederhana"
+      },
+      "prerequisites": [
+        "math.g5.multi-step"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    },
+    {
+      "id": "math.g6.geometry-data",
+      "framework": "singapore_math",
+      "strand": "measurement_geometry",
+      "stage": "g6",
+      "title": {
+        "en": "Works with angles, circles and data displays",
+        "id": "Bekerja dengan sudut, lingkaran, dan penyajian data"
+      },
+      "prerequisites": [
+        "math.g5.volume"
+      ],
+      "usesCpa": true,
+      "delivery": "guided",
+      "assessment": "digital",
+      "implementation": {
+        "skillIds": []
+      },
+      "reviewFlags": [],
+      "requiresReligiousReview": false,
+      "sourceStatus": "original_planning"
+    }
+  ]
+}

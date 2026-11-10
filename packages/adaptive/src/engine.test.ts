@@ -183,12 +183,25 @@ describe('golden learner traces (docs/spec/delivery/ROADMAP_ACCEPTANCE.md)', () 
     expect(r2.kind === 'interactive' && r2.cpaStage).toBe('abstract');
   });
 
-  it('parent focus is honoured and never jumps grade bands', () => {
+  it('parent focus cannot unlock prerequisites (Curriculum Bible adaptive rule 4)', () => {
     const l = new Learner();
-    const rec = recommendNext(l.input(at(0), BONDS));
+    // Counting is not secure yet: focusing on number bonds must not skip it.
+    const locked = recommendNext(l.input(at(0), BONDS));
+    expect(locked.kind === 'interactive' && locked.ruleId).toBe('R6_NEXT_UNLOCKED');
+    expect(locked.kind === 'interactive' && locked.skillId).toBe(COUNT);
+  });
+
+  it('parent focus is honoured once prerequisites are secure, and never jumps grade bands', () => {
+    const l = new Learner();
+    for (const f of ['count-ten-frame', 'count-scattered', 'count-ten-frame', 'count-scattered']) l.answer(ok(COUNT, f));
+    const rec = recommendNext(l.input(at(10), BONDS));
     expect(rec.kind === 'interactive' && rec.ruleId).toBe('R3_PARENT_FOCUS');
-    const bogus = recommendNext(l.input(at(0), 'TOD-SORT-COLOR'));
-    expect(bogus.kind === 'interactive' && bogus.skillId).toBe(COUNT);
+    const bogus = recommendNext(l.input(at(10), 'TOD-SORT-COLOR'));
+    expect(bogus.kind).toBe('interactive');
+    if (bogus.kind === 'interactive') {
+      expect(bogus.ruleId).not.toBe('R3_PARENT_FOCUS');
+      expect(bogus.skillId.startsWith('MATH-G1-')).toBe(true);
+    }
   });
 
   it('under-3 safety band never receives interactive work', () => {

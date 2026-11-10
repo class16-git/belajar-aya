@@ -1,0 +1,148 @@
+{
+  "id": "lesson-robo-arrows-001",
+  "skillId": "ROBO-P-ARROW-PATHS",
+  "framework": "robotics_stem",
+  "objectiveIds": [
+    "robo.age3_4.arrow-paths"
+  ],
+  "title": {
+    "en": "Floor-arrow treasure path",
+    "id": "Jalur harta karun panah lantai"
+  },
+  "ageBand": "preschool",
+  "domain": "robotics_stem",
+  "mode": "offline",
+  "objective": {
+    "en": "Follow a path of 2–3 floor arrows, then make a path for a grown-up 'robot' and fix it if it goes wrong.",
+    "id": "Mengikuti jalur 2–3 panah di lantai, lalu membuat jalur untuk 'robot' dewasa dan memperbaikinya bila salah."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 5,
+  "activityMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "materials": [
+    {
+      "en": "Three large arrows cut from card (about hand-sized)",
+      "id": "Tiga panah besar dari karton (kira-kira sebesar telapak tangan)"
+    },
+    {
+      "en": "Low-tack tape",
+      "id": "Selotip yang mudah dilepas"
+    },
+    {
+      "en": "A soft toy as the 'treasure'",
+      "id": "Boneka lembut sebagai 'harta karun'"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Clear a flat floor area with nothing to trip over.",
+      "id": "Kosongkan area lantai datar tanpa benda yang bisa membuat tersandung."
+    },
+    {
+      "en": "Tape the arrows in a short path that ends at the toy.",
+      "id": "Tempel panah membentuk jalur pendek yang berakhir di boneka."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Walk the path yourself, saying each direction: 'forward… turn… forward'.",
+      "id": "Jalani jalur sendiri sambil menyebut arahnya: 'maju… belok… maju'."
+    },
+    {
+      "en": "Invite your child to follow the arrows to the treasure.",
+      "id": "Ajak anak mengikuti panah menuju harta karun."
+    },
+    {
+      "en": "Swap roles: you are the robot. Your child places the arrows and you follow them exactly.",
+      "id": "Bertukar peran: Anda menjadi robot. Anak menempatkan panah dan Anda mengikutinya persis."
+    },
+    {
+      "en": "If the robot misses the treasure, ask 'Which arrow should we change?' and try again.",
+      "id": "Jika robot tidak sampai ke harta karun, tanyakan 'Panah mana yang perlu diubah?' lalu coba lagi."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "I only do what the arrows say. Beep!",
+      "id": "Aku hanya melakukan apa yang ditunjuk panah. Bip!"
+    },
+    {
+      "en": "Oops, I missed it. Which arrow should we fix?",
+      "id": "Ups, aku meleset. Panah mana yang perlu kita perbaiki?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Follows arrows in order",
+      "id": "Mengikuti panah secara berurutan"
+    },
+    {
+      "en": "Places arrows to plan a path",
+      "id": "Menempatkan panah untuk merencanakan jalur"
+    },
+    {
+      "en": "Notices and changes a wrong arrow (debugging)",
+      "id": "Menyadari dan mengganti panah yang salah (debugging)"
+    }
+  ],
+  "cleanup": {
+    "en": "Peel off the arrows together and keep them for next time.",
+    "id": "Lepaskan panah bersama-sama dan simpan untuk lain kali."
+  },
+  "variations": [
+    {
+      "en": "Add a fourth arrow, or use a 'turn around' card.",
+      "id": "Tambahkan panah keempat, atau kartu 'putar balik'."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Keep the path on a clear, non-slippery floor away from stairs.",
+      "id": "Buat jalur di lantai yang bebas hambatan, tidak licin, dan jauh dari tangga."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "This is early programming without a screen: sequence, test, and fix.",
+      "id": "Ini pemrograman awal tanpa layar: urutkan, uji, dan perbaiki."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [
+    "physical_safety"
+  ],
+  "arabicPhrases": []
+}
