@@ -1,0 +1,420 @@
+{
+  "id": "unit-g4-math-equivalent-fractions",
+  "version": "1.0.0",
+  "level": "g4",
+  "framework": "math",
+  "strand": "fractions",
+  "title": {
+    "en": "Equivalent fractions",
+    "id": "Pecahan senilai"
+  },
+  "prerequisites": [
+    "unit-g3-math-fractions-of-a-whole",
+    "unit-g4-math-factors-and-multiples"
+  ],
+  "objective": {
+    "en": "Recognise, generate and simplify equivalent fractions by multiplying or dividing numerator and denominator by the same number, and compare fractions by making the denominators the same.",
+    "id": "Mengenali, membuat, dan menyederhanakan pecahan senilai dengan mengalikan atau membagi pembilang dan penyebut dengan bilangan yang sama, serta membandingkan pecahan dengan menyamakan penyebutnya."
+  },
+  "rationale": {
+    "en": "Seeing that 2/3 and 8/12 cover the same amount of a strip is what makes later addition of unlike fractions possible. Folding paper shows why both parts of a fraction must be scaled together, which stops children adding the same number to top and bottom.",
+    "id": "Melihat bahwa 2/3 dan 8/12 menutupi jumlah yang sama pada sepotong kertas memungkinkan penjumlahan pecahan berpenyebut beda nanti. Melipat kertas menunjukkan mengapa kedua bagian pecahan harus dikali bersama, sehingga anak tidak menambahkan bilangan yang sama ke atas dan bawah."
+  },
+  "outcomes": [
+    {
+      "en": "Generates equivalent fractions with a fraction wall and by multiplying or dividing.",
+      "id": "Membuat pecahan senilai dengan dinding pecahan dan dengan mengali atau membagi."
+    },
+    {
+      "en": "Simplifies fractions fully using the highest common factor and compares two fractions.",
+      "id": "Menyederhanakan pecahan sepenuhnya dengan FPB dan membandingkan dua pecahan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can fold paper to show that 1/2 = 2/4 = 4/8.",
+      "id": "Aku bisa melipat kertas untuk menunjukkan 1/2 = 2/4 = 4/8."
+    },
+    {
+      "en": "I can write 12/18 in simplest form and explain each step.",
+      "id": "Aku bisa menulis 12/18 dalam bentuk paling sederhana dan menjelaskan setiap langkahnya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Fold the same strip again and again; after each fold ask how many parts there are now and how many are shaded.",
+      "id": "Lipat kertas yang sama berulang kali; setelah setiap lipatan tanyakan ada berapa bagian sekarang dan berapa yang diarsir."
+    },
+    {
+      "en": "Say 'each part was split into 4, so both numbers are multiplied by 4'.",
+      "id": "Ucapkan 'setiap bagian dibagi menjadi 4, jadi kedua bilangan dikali 4'."
+    },
+    {
+      "en": "For simplifying, connect to the previous unit: divide by the highest common factor.",
+      "id": "Untuk menyederhanakan, kaitkan dengan unit sebelumnya: bagi dengan FPB."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Whatever you do to the top, do the same to the bottom. Multiply or divide, never add.",
+      "id": "Apa pun yang kamu lakukan pada atas, lakukan juga pada bawah. Kalikan atau bagi, jangan ditambah."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Shade 2/3 of a paper strip, then fold it across into 4 so the strip has 12 parts: 8 of the 12 parts are shaded, so 2/3 = 8/12.",
+        "id": "Arsir 2/3 dari sepotong kertas, lalu lipat melintang menjadi 4 sehingga ada 12 bagian: 8 dari 12 bagian diarsir, jadi 2/3 = 8/12."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a fraction wall with rows for halves, thirds, quarters, sixths, eighths and twelfths; draw a vertical line to find fractions that line up.",
+        "id": "Gambar dinding pecahan dengan baris perdua, pertiga, perempat, perenam, perdelapan, dan perduabelas; tarik garis tegak untuk mencari pecahan yang sejajar."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write 2/3 = (2 × 4)/(3 × 4) = 8/12 and 12/18 = (12 ÷ 6)/(18 ÷ 6) = 2/3.",
+        "id": "Tulis 2/3 = (2 × 4)/(3 × 4) = 8/12 dan 12/18 = (12 ÷ 6)/(18 ÷ 6) = 2/3."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Several paper strips of equal length and coloured pencils",
+      "id": "Beberapa potong kertas sama panjang dan pensil warna"
+    },
+    {
+      "en": "A ruler and squared paper for drawing the fraction wall",
+      "id": "Penggaris dan kertas berpetak untuk menggambar dinding pecahan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Prepare strips about 24 cm long so they divide neatly into 2, 3, 4, 6, 8 and 12 parts.",
+      "id": "Siapkan kertas sepanjang sekitar 24 cm agar mudah dibagi menjadi 2, 3, 4, 6, 8, dan 12 bagian."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Making equivalents: 3/4 = ?/8. Each quarter is split into 2 eighths, so 3 quarters are 6 eighths: 3/4 = 6/8.",
+      "id": "Membuat pecahan senilai: 3/4 = ?/8. Setiap perempat dibagi menjadi 2 perdelapan, jadi 3 perempat adalah 6 perdelapan: 3/4 = 6/8."
+    },
+    {
+      "en": "Simplifying: 12/18. The highest common factor of 12 and 18 is 6, so divide both by 6 to get 2/3. Dividing by 2 gives 6/9, which can still be simplified.",
+      "id": "Menyederhanakan: 12/18. FPB dari 12 dan 18 adalah 6, jadi bagi keduanya dengan 6 menjadi 2/3. Membagi dengan 2 memberi 6/9, yang masih bisa disederhanakan."
+    },
+    {
+      "en": "Sharing kue: a kue lapis cut into 4 equal parts and an identical one cut into 8. One quarter covers the same as 2 eighths.",
+      "id": "Berbagi kue: kue lapis dipotong 4 bagian sama besar dan kue yang sama dipotong 8. Satu perempat sama dengan 2 perdelapan."
+    },
+    {
+      "en": "Comparing: 3/4 or 5/8? Change 3/4 to 6/8. 6/8 is more than 5/8, so 3/4 is greater.",
+      "id": "Membandingkan: 3/4 atau 5/8? Ubah 3/4 menjadi 6/8. 6/8 lebih dari 5/8, jadi 3/4 lebih besar."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Write four fractions equal to 2/5 and check one with a folded strip.",
+      "id": "Tulis empat pecahan yang senilai dengan 2/5 dan periksa satu dengan kertas yang dilipat."
+    },
+    {
+      "en": "Simplify 16/24, 15/45 and 9/12 fully, naming the common factor used.",
+      "id": "Sederhanakan 16/24, 15/45, dan 9/12 sepenuhnya, sebutkan faktor persekutuan yang dipakai."
+    },
+    {
+      "en": "Order 2/3, 5/6 and 7/12 by changing them all to twelfths.",
+      "id": "Urutkan 2/3, 5/6, dan 7/12 dengan mengubah semuanya menjadi perduabelas."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "2/3 = ?/12",
+        "id": "2/3 = ?/12"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "11",
+          "2"
+        ],
+        "id": [
+          "8",
+          "11",
+          "2"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "3 × 4 = 12, so multiply the numerator by 4 too: 2 × 4 = 8.",
+        "id": "3 × 4 = 12, jadi kalikan pembilang dengan 4 juga: 2 × 4 = 8."
+      },
+      "check": {
+        "expression": "2/3 * 12",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDITIVE_SCALING",
+        "2": "KEEPS_NUMERATOR"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "What is 12/18 in simplest form?",
+        "id": "Apa bentuk paling sederhana dari 12/18?"
+      },
+      "choices": {
+        "en": [
+          "2/3",
+          "6/9",
+          "4/6"
+        ],
+        "id": [
+          "2/3",
+          "6/9",
+          "4/6"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The highest common factor of 12 and 18 is 6: 12 ÷ 6 = 2 and 18 ÷ 6 = 3.",
+        "id": "FPB dari 12 dan 18 adalah 6: 12 ÷ 6 = 2 dan 18 ÷ 6 = 3."
+      },
+      "check": {
+        "expression": "12/18",
+        "result": "2/3"
+      },
+      "distractorMisconceptions": {
+        "1": "NOT_FULLY_SIMPLIFIED",
+        "2": "NOT_FULLY_SIMPLIFIED"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which fraction is NOT equal to 1/2?",
+        "id": "Pecahan mana yang TIDAK senilai dengan 1/2?"
+      },
+      "choices": {
+        "en": [
+          "3/5",
+          "4/8",
+          "5/10"
+        ],
+        "id": [
+          "3/5",
+          "4/8",
+          "5/10"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4/8 and 5/10 have numerators that are half their denominators. 3 is not half of 5.",
+        "id": "4/8 dan 5/10 punya pembilang setengah dari penyebutnya. 3 bukan setengah dari 5."
+      },
+      "check": {
+        "expression": "3/5",
+        "result": "3/5"
+      },
+      "distractorMisconceptions": {
+        "1": "DIFFERENT_LOOKING_MEANS_UNEQUAL",
+        "2": "DIFFERENT_LOOKING_MEANS_UNEQUAL"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "One kue lapis is cut into 4 equal parts and Aya takes 1. An identical kue is cut into 8 equal parts. How many eighths equal Aya's piece?",
+        "id": "Satu kue lapis dipotong 4 bagian sama besar dan Aya mengambil 1. Kue yang sama dipotong 8 bagian sama besar. Berapa perdelapan yang sama dengan potongan Aya?"
+      },
+      "choices": {
+        "en": [
+          "2",
+          "1",
+          "4"
+        ],
+        "id": [
+          "2",
+          "1",
+          "4"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each quarter is split into 2 eighths: 1/4 = 2/8.",
+        "id": "Setiap perempat dibagi menjadi 2 perdelapan: 1/4 = 2/8."
+      },
+      "check": {
+        "expression": "1/4 * 8",
+        "result": "2"
+      },
+      "distractorMisconceptions": {
+        "1": "KEEPS_NUMERATOR",
+        "2": "ADDITIVE_SCALING"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Which is greater: 3/4 or 5/8?",
+        "id": "Mana yang lebih besar: 3/4 atau 5/8?"
+      },
+      "choices": {
+        "en": [
+          "3/4",
+          "5/8",
+          "They are equal"
+        ],
+        "id": [
+          "3/4",
+          "5/8",
+          "Keduanya sama"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "3/4 = 6/8, and 6/8 is greater than 5/8.",
+        "id": "3/4 = 6/8, dan 6/8 lebih besar dari 5/8."
+      },
+      "check": {
+        "expression": "6/8",
+        "result": "3/4"
+      },
+      "distractorMisconceptions": {
+        "1": "BIGGER_NUMBERS_BIGGER_FRACTION",
+        "2": "DIFFERENT_LOOKING_MEANS_UNEQUAL"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDITIVE_SCALING",
+      "description": {
+        "en": "Adds the same number to numerator and denominator instead of multiplying.",
+        "id": "Menambahkan bilangan yang sama ke pembilang dan penyebut, bukan mengalikan."
+      },
+      "remediation": {
+        "en": "Fold a strip: each fold multiplies the number of parts, and the shaded parts multiply too. Test 2/3 and 11/12 on strips to see they differ.",
+        "id": "Lipat kertas: setiap lipatan mengalikan banyak bagian, dan bagian yang diarsir ikut dikali. Uji 2/3 dan 11/12 di kertas untuk melihat bedanya."
+      }
+    },
+    {
+      "code": "KEEPS_NUMERATOR",
+      "description": {
+        "en": "Changes only the denominator and leaves the numerator the same.",
+        "id": "Hanya mengubah penyebut dan membiarkan pembilang tetap."
+      },
+      "remediation": {
+        "en": "Count the shaded parts again after folding; there are more of them now.",
+        "id": "Hitung ulang bagian yang diarsir setelah melipat; sekarang jumlahnya lebih banyak."
+      }
+    },
+    {
+      "code": "NOT_FULLY_SIMPLIFIED",
+      "description": {
+        "en": "Stops simplifying before numerator and denominator share no common factor.",
+        "id": "Berhenti menyederhanakan sebelum pembilang dan penyebut tidak punya faktor persekutuan."
+      },
+      "remediation": {
+        "en": "Find the highest common factor first, or keep dividing until only 1 divides both.",
+        "id": "Cari FPB lebih dulu, atau terus bagi sampai hanya 1 yang membagi keduanya."
+      }
+    },
+    {
+      "code": "DIFFERENT_LOOKING_MEANS_UNEQUAL",
+      "description": {
+        "en": "Thinks fractions with different numbers cannot be equal.",
+        "id": "Mengira pecahan dengan bilangan berbeda tidak mungkin senilai."
+      },
+      "remediation": {
+        "en": "Lay strips for 1/2, 4/8 and 5/10 side by side to see the shaded lengths match.",
+        "id": "Jajarkan kertas untuk 1/2, 4/8, dan 5/10 untuk melihat panjang arsirannya sama."
+      }
+    },
+    {
+      "code": "BIGGER_NUMBERS_BIGGER_FRACTION",
+      "description": {
+        "en": "Thinks the fraction with bigger numbers is greater.",
+        "id": "Mengira pecahan dengan bilangan lebih besar nilainya lebih besar."
+      },
+      "remediation": {
+        "en": "Rename both fractions with the same denominator before comparing.",
+        "id": "Ubah kedua pecahan ke penyebut yang sama sebelum membandingkan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Find equivalent fractions in recipes: if a recipe uses 2/4 cup of coconut milk, which simpler fraction could be used?",
+      "id": "Cari pecahan senilai di resep: jika resep memakai 2/4 gelas santan, pecahan lebih sederhana apa yang bisa dipakai?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A pre-printed fraction wall supports children who find drawing precise parts difficult; allow verbal explanations.",
+      "id": "Dinding pecahan yang sudah dicetak membantu anak yang kesulitan menggambar bagian dengan tepat; izinkan penjelasan lisan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Paper folding only; if strips are cut, the adult does it with scissors.",
+        "id": "Hanya melipat kertas; jika kertas perlu dipotong, orang dewasa yang melakukannya dengan gunting."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child makes three equivalent fractions, fully simplifies three fractions, and compares two fractions with a reason, on two different days.",
+      "id": "Dikuasai jika anak membuat tiga pecahan senilai, menyederhanakan tiga pecahan sepenuhnya, dan membandingkan dua pecahan dengan alasan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

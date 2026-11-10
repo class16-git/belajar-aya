@@ -1,0 +1,379 @@
+{
+  "id": "unit-g5-montessori-building-an-animal-key",
+  "version": "1.0.0",
+  "level": "g5",
+  "framework": "montessori",
+  "strand": "zoology",
+  "title": {
+    "en": "Building a yes-or-no key for small animals",
+    "id": "Membuat kunci ya-atau-tidak untuk hewan kecil"
+  },
+  "prerequisites": [
+    "unit-g3-montessori-five-classes-of-vertebrates"
+  ],
+  "objective": {
+    "en": "Use and then build a dichotomous key that identifies six invertebrates (ant, butterfly, spider, centipede, snail, earthworm) through yes/no questions about observable features.",
+    "id": "Memakai lalu membuat kunci dikotomi yang mengenali enam hewan tak bertulang belakang (semut, kupu-kupu, laba-laba, lipan, siput, cacing tanah) melalui pertanyaan ya/tidak tentang ciri yang bisa diamati."
+  },
+  "rationale": {
+    "en": "Scientists identify living things with keys. Writing one forces precise, observable questions ('Does it have six legs?') instead of vague ones ('Is it scary?'), and builds on sorting vertebrates into classes.",
+    "id": "Ilmuwan mengenali makhluk hidup dengan kunci. Menulis kunci menuntut pertanyaan yang tepat dan bisa diamati ('Apakah kakinya enam?') bukan yang samar ('Apakah menakutkan?'), dan melanjutkan pemilahan hewan bertulang belakang ke dalam kelas."
+  },
+  "outcomes": [
+    {
+      "en": "Follows a given key to identify an animal correctly.",
+      "id": "Mengikuti kunci yang diberikan untuk mengenali hewan dengan benar."
+    },
+    {
+      "en": "Writes yes/no questions based on features anyone can observe.",
+      "id": "Menulis pertanyaan ya/tidak berdasarkan ciri yang bisa diamati siapa saja."
+    },
+    {
+      "en": "Builds a working key for six animals and tests it on another person.",
+      "id": "Membuat kunci yang berfungsi untuk enam hewan dan mengujinya pada orang lain."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "Every question in my key has only yes or no as an answer.",
+      "id": "Setiap pertanyaan di kunciku hanya bisa dijawab ya atau tidak."
+    },
+    {
+      "en": "Someone else can use my key to name all six animals.",
+      "id": "Orang lain bisa memakai kunciku untuk menamai keenam hewan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Start by having your child use a ready-made key you write together from the guided example; then they build their own.",
+      "id": "Mulai dengan meminta anak memakai kunci jadi yang ditulis bersama dari contoh terbimbing; lalu ia membuat kuncinya sendiri."
+    },
+    {
+      "en": "Good questions are about the body, not about feelings, size guesses or where the animal was found.",
+      "id": "Pertanyaan yang baik tentang tubuh, bukan perasaan, tebakan ukuran, atau tempat hewan ditemukan."
+    },
+    {
+      "en": "Observe live animals only by looking, in a clear container for a few minutes at most, then return them where they were found.",
+      "id": "Amati hewan hidup hanya dengan melihat, di wadah bening paling lama beberapa menit, lalu kembalikan ke tempat ditemukan."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Start at question 1 with one animal card. Answer yes or no, and follow the arrow to the next question.",
+      "id": "Mulai dari pertanyaan 1 dengan satu kartu hewan. Jawab ya atau tidak, lalu ikuti panah ke pertanyaan berikutnya."
+    },
+    {
+      "en": "Keep going until you reach a name. Check it with the picture.",
+      "id": "Terus sampai mendapat nama. Cocokkan dengan gambarnya."
+    },
+    {
+      "en": "Now write your own key: each question splits the group of animals into two smaller groups.",
+      "id": "Sekarang tulis kuncimu sendiri: setiap pertanyaan membagi kelompok hewan menjadi dua kelompok lebih kecil."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Six picture cards drawn or printed: ant, butterfly, spider, centipede, garden snail, earthworm",
+      "id": "Enam kartu gambar digambar atau dicetak: semut, kupu-kupu, laba-laba, lipan, siput kebun, cacing tanah"
+    },
+    {
+      "en": "A large sheet of paper and markers for drawing the key as a branching chart",
+      "id": "Kertas besar dan spidol untuk menggambar kunci sebagai bagan bercabang"
+    },
+    {
+      "en": "A magnifying glass and a clear lidded container with air holes for brief observation",
+      "id": "Kaca pembesar dan wadah bening bertutup berlubang udara untuk pengamatan singkat"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write the sample key on the paper: 1. Has legs? yes → 2, no → 5. 2. Has exactly 6 legs? yes → 3, no → 4. 3. Has large wings? yes → butterfly, no → ant. 4. Has 8 legs? yes → spider, no (many legs) → centipede. 5. Has a shell? yes → snail, no → earthworm.",
+      "id": "Tulis contoh kunci di kertas: 1. Berkaki? ya → 2, tidak → 5. 2. Kakinya tepat 6? ya → 3, tidak → 4. 3. Bersayap lebar? ya → kupu-kupu, tidak → semut. 4. Kakinya 8? ya → laba-laba, tidak (banyak kaki) → lipan. 5. Bercangkang? ya → siput, tidak → cacing tanah."
+    },
+    {
+      "en": "Check that the pictures show legs and wings clearly.",
+      "id": "Pastikan gambar menunjukkan kaki dan sayap dengan jelas."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Use the key with the spider card: Has legs? yes. Exactly 6 legs? no. 8 legs? yes → spider. Point out: 'So a spider is not an insect, because insects have six legs.'",
+      "id": "Pakai kunci dengan kartu laba-laba: Berkaki? ya. Kakinya tepat 6? tidak. Kakinya 8? ya → laba-laba. Tunjukkan: 'Jadi laba-laba bukan serangga, karena serangga berkaki enam.'"
+    },
+    {
+      "en": "Use it with the snail: Has legs? no. Has a shell? yes → snail. Notice how two questions were enough.",
+      "id": "Pakai dengan siput: Berkaki? tidak. Bercangkang? ya → siput. Perhatikan bahwa dua pertanyaan sudah cukup."
+    },
+    {
+      "en": "Test a bad question together: 'Is it pretty?' Two people may answer differently, so it cannot be in a key. Rewrite it: 'Does it have wings with coloured scales?'",
+      "id": "Uji pertanyaan yang buruk bersama: 'Apakah cantik?' Dua orang bisa menjawab berbeda, jadi tidak bisa masuk kunci. Tulis ulang: 'Apakah sayapnya bersisik berwarna?'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Identify all six cards with the sample key.",
+      "id": "Mengenali keenam kartu dengan contoh kunci."
+    },
+    {
+      "en": "Build a new key for the same six animals with a different first question, such as 'Does it have a hard outer shell?'",
+      "id": "Membuat kunci baru untuk keenam hewan yang sama dengan pertanyaan pertama yang berbeda, seperti 'Apakah ia punya cangkang luar yang keras?'"
+    },
+    {
+      "en": "Find three small animals in the garden, observe them briefly, and add them to your key with one new question each.",
+      "id": "Temukan tiga hewan kecil di kebun, amati sebentar, lalu tambahkan ke kuncimu dengan satu pertanyaan baru untuk masing-masing."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Using the sample key, an animal has legs, but not 6 legs, and has 8 legs. What is it?",
+        "id": "Dengan contoh kunci, seekor hewan berkaki, kakinya tidak 6, dan kakinya 8. Hewan apa itu?"
+      },
+      "choices": {
+        "en": [
+          "Spider",
+          "Ant",
+          "Centipede"
+        ],
+        "id": [
+          "Laba-laba",
+          "Semut",
+          "Lipan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Question 4 with 'yes' for 8 legs leads to spider.",
+        "id": "Pertanyaan 4 dengan jawaban 'ya' untuk 8 kaki mengarah ke laba-laba."
+      },
+      "distractorMisconceptions": {
+        "1": "SPIDER_IS_INSECT",
+        "2": "KEY_PATH_SKIPPED"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which question is suitable for a key?",
+        "id": "Pertanyaan mana yang cocok untuk kunci?"
+      },
+      "choices": {
+        "en": [
+          "Does it have six legs?",
+          "Is it dangerous?",
+          "Is it big?"
+        ],
+        "id": [
+          "Apakah kakinya enam?",
+          "Apakah berbahaya?",
+          "Apakah besar?"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Leg count can be observed and checked by anyone; 'dangerous' and 'big' depend on opinion or comparison.",
+        "id": "Jumlah kaki bisa diamati dan dicek siapa saja; 'berbahaya' dan 'besar' bergantung pada pendapat atau pembanding."
+      },
+      "distractorMisconceptions": {
+        "1": "SUBJECTIVE_QUESTION",
+        "2": "SUBJECTIVE_QUESTION"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Why is a spider not an insect?",
+        "id": "Mengapa laba-laba bukan serangga?"
+      },
+      "choices": {
+        "en": [
+          "It has eight legs, not six",
+          "It does not fly",
+          "It is not a pest"
+        ],
+        "id": [
+          "Kakinya delapan, bukan enam",
+          "Ia tidak terbang",
+          "Ia bukan hama"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Insects have six legs; ants are insects even without wings.",
+        "id": "Serangga berkaki enam; semut tetap serangga walaupun tidak bersayap."
+      },
+      "distractorMisconceptions": {
+        "1": "WINGS_DEFINE_INSECT",
+        "2": "SUBJECTIVE_QUESTION"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A good question in a key should split the group into ...",
+        "id": "Pertanyaan yang baik dalam kunci seharusnya membagi kelompok menjadi ..."
+      },
+      "choices": {
+        "en": [
+          "Two groups, by a yes or no answer",
+          "Three or more groups at once",
+          "One group with every animal in it"
+        ],
+        "id": [
+          "Dua kelompok, berdasarkan jawaban ya atau tidak",
+          "Tiga kelompok atau lebih sekaligus",
+          "Satu kelompok berisi semua hewan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "'Dichotomous' means cutting in two: every step gives exactly two choices.",
+        "id": "'Dikotomi' berarti dibagi dua: setiap langkah memberi tepat dua pilihan."
+      },
+      "distractorMisconceptions": {
+        "1": "MULTIWAY_SPLIT",
+        "2": "MULTIWAY_SPLIT"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SPIDER_IS_INSECT",
+      "description": {
+        "en": "Calls every small crawling animal an insect.",
+        "id": "Menyebut setiap hewan kecil yang merayap sebagai serangga."
+      },
+      "remediation": {
+        "en": "Count legs on pictures of an ant and a spider side by side and write the numbers underneath.",
+        "id": "Hitung kaki pada gambar semut dan laba-laba berdampingan dan tulis angkanya di bawah."
+      }
+    },
+    {
+      "code": "KEY_PATH_SKIPPED",
+      "description": {
+        "en": "Jumps to an answer without following each step.",
+        "id": "Langsung menebak tanpa mengikuti setiap langkah."
+      },
+      "remediation": {
+        "en": "Move a counter along the arrows of the chart, one question at a time, saying each answer aloud.",
+        "id": "Gerakkan penanda di sepanjang panah bagan, satu pertanyaan setiap kali, sambil mengucapkan jawabannya."
+      }
+    },
+    {
+      "code": "SUBJECTIVE_QUESTION",
+      "description": {
+        "en": "Writes questions based on opinion.",
+        "id": "Menulis pertanyaan berdasarkan pendapat."
+      },
+      "remediation": {
+        "en": "Ask two family members the same question about one picture. If they answer differently, rewrite it until they agree.",
+        "id": "Ajukan pertanyaan yang sama tentang satu gambar kepada dua anggota keluarga. Jika jawabannya berbeda, tulis ulang sampai sama."
+      }
+    },
+    {
+      "code": "WINGS_DEFINE_INSECT",
+      "description": {
+        "en": "Thinks insects must have wings or fly.",
+        "id": "Mengira serangga harus bersayap atau terbang."
+      },
+      "remediation": {
+        "en": "Watch ants on a path: count legs and note no wings; then look at a picture of a winged ant queen.",
+        "id": "Amati semut di jalan: hitung kaki dan perhatikan tidak bersayap; lalu lihat gambar ratu semut bersayap."
+      }
+    },
+    {
+      "code": "MULTIWAY_SPLIT",
+      "description": {
+        "en": "Writes questions with many possible answers, such as 'How many legs?'",
+        "id": "Menulis pertanyaan dengan banyak kemungkinan jawaban, seperti 'Berapa kakinya?'"
+      },
+      "remediation": {
+        "en": "Turn it into yes/no: 'Does it have exactly six legs?' and check the answer can only be yes or no.",
+        "id": "Ubah menjadi ya/tidak: 'Apakah kakinya tepat enam?' dan pastikan jawabannya hanya ya atau tidak."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a key for six leaves from the garden using margin, vein pattern and simple or compound leaf.",
+      "id": "Buat kunci untuk enam daun dari kebun memakai tepi, pola tulang daun, dan daun tunggal atau majemuk."
+    },
+    {
+      "en": "Look up a real field-guide key for butterflies and compare it with yours.",
+      "id": "Cari kunci buku panduan lapangan untuk kupu-kupu dan bandingkan dengan milikmu."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "The key can be built from cards laid on the floor and moved, instead of drawn, for children who prefer hands-on work.",
+      "id": "Kunci bisa dibuat dari kartu yang diletakkan di lantai dan dipindah, bukan digambar, untuk anak yang lebih suka bekerja dengan tangan."
+    },
+    {
+      "en": "Use large clear pictures or models for children with low vision.",
+      "id": "Pakai gambar besar yang jelas atau model untuk anak dengan penglihatan rendah."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Do not touch centipedes, spiders or caterpillars, which can bite or sting; observe them only through a clear container moved with a leaf, and release them within a few minutes.",
+        "id": "Jangan menyentuh lipan, laba-laba, atau ulat, yang bisa menggigit atau menyengat; amati hanya melalui wadah bening yang dipindah dengan daun, dan lepaskan dalam beberapa menit."
+      },
+      {
+        "en": "Wash hands after handling soil, snails or leaves.",
+        "id": "Cuci tangan setelah memegang tanah, siput, atau daun."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 45
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      5,
+      14,
+      30
+    ],
+    "masteryRule": {
+      "en": "Secure when the child builds a key for six animals that another person uses correctly, and explains why each question is observable, on two different days.",
+      "id": "Dikuasai jika anak membuat kunci enam hewan yang bisa dipakai orang lain dengan benar, dan menjelaskan mengapa setiap pertanyaan bisa diamati, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

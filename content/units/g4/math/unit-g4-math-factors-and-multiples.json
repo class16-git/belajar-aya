@@ -1,0 +1,473 @@
+{
+  "id": "unit-g4-math-factors-and-multiples",
+  "version": "1.0.0",
+  "level": "g4",
+  "framework": "math",
+  "strand": "number_sense",
+  "title": {
+    "en": "Factors, multiples and primes",
+    "id": "Faktor, kelipatan, dan bilangan prima"
+  },
+  "prerequisites": [
+    "unit-g3-math-multiplication-division-bar-models"
+  ],
+  "objective": {
+    "en": "Find all factor pairs of numbers to 100, list multiples, identify common factors and common multiples, and recognise prime numbers.",
+    "id": "Mencari semua pasangan faktor bilangan sampai 100, mendaftar kelipatan, menentukan faktor persekutuan dan kelipatan persekutuan, serta mengenali bilangan prima."
+  },
+  "rationale": {
+    "en": "Factors and multiples are the language of simplifying fractions, finding common denominators and solving 'when will it happen together' problems. Building rectangles from squares shows factor pairs as shapes, so the ideas are seen rather than memorised.",
+    "id": "Faktor dan kelipatan adalah bahasa untuk menyederhanakan pecahan, mencari penyebut yang sama, dan menyelesaikan soal 'kapan terjadi bersamaan'. Menyusun persegi panjang dari persegi menunjukkan pasangan faktor sebagai bentuk, sehingga gagasannya dilihat, bukan dihafal."
+  },
+  "outcomes": [
+    {
+      "en": "Lists all factors of a number systematically in pairs and says whether it is prime.",
+      "id": "Mendaftar semua faktor suatu bilangan secara teratur berpasangan dan menyebut apakah bilangan itu prima."
+    },
+    {
+      "en": "Finds the highest common factor (FPB) and lowest common multiple (KPK) of two numbers in context.",
+      "id": "Mencari faktor persekutuan terbesar (FPB) dan kelipatan persekutuan terkecil (KPK) dari dua bilangan dalam konteks."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can make every rectangle from 12 squares and list the factors of 12.",
+      "id": "Aku bisa membuat setiap persegi panjang dari 12 persegi dan mendaftar faktor 12."
+    },
+    {
+      "en": "I can explain whether a problem needs a common factor or a common multiple.",
+      "id": "Aku bisa menjelaskan apakah suatu soal memerlukan faktor persekutuan atau kelipatan persekutuan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use the Indonesian school terms too: FPB is the highest common factor and KPK is the lowest common multiple.",
+      "id": "Pakai juga istilah sekolah: FPB adalah faktor persekutuan terbesar dan KPK adalah kelipatan persekutuan terkecil."
+    },
+    {
+      "en": "Insist on working in pairs (1 and 12, 2 and 6, 3 and 4) and stopping when the pairs meet.",
+      "id": "Biasakan bekerja berpasangan (1 dan 12, 2 dan 6, 3 dan 4) dan berhenti saat pasangan bertemu."
+    },
+    {
+      "en": "Ask 'Are we splitting into groups (factors) or counting forward in jumps (multiples)?'",
+      "id": "Tanyakan 'Apakah kita membagi menjadi kelompok (faktor) atau melompat maju (kelipatan)?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Find factors in pairs starting with 1. Find multiples by counting in jumps. Check: factors divide the number, multiples are made by it.",
+      "id": "Cari faktor berpasangan mulai dari 1. Cari kelipatan dengan menghitung lompat. Periksa: faktor membagi bilangan, kelipatan dibuat dari bilangan itu."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Arrange 12 square tiles or paper squares into every possible rectangle: 1 by 12, 2 by 6, 3 by 4. Try 7 squares: only 1 by 7 works, so 7 is prime.",
+        "id": "Susun 12 ubin persegi atau persegi kertas menjadi setiap persegi panjang yang mungkin: 1 kali 12, 2 kali 6, 3 kali 4. Coba 7 persegi: hanya 1 kali 7, jadi 7 bilangan prima."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "On a hundred chart, colour multiples of 4 in yellow and multiples of 6 in blue; numbers coloured twice (12, 24, 36) are common multiples.",
+        "id": "Di tabel seratus, warnai kelipatan 4 dengan kuning dan kelipatan 6 dengan biru; bilangan yang diwarnai dua kali (12, 24, 36) adalah kelipatan persekutuan."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write factor lists: 18: 1, 2, 3, 6, 9, 18 and 24: 1, 2, 3, 4, 6, 8, 12, 24; the highest common factor is 6.",
+        "id": "Tulis daftar faktor: 18: 1, 2, 3, 6, 9, 18 dan 24: 1, 2, 3, 4, 6, 8, 12, 24; FPB-nya 6."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "24 paper squares or square tiles",
+      "id": "24 persegi kertas atau ubin persegi"
+    },
+    {
+      "en": "A hundred chart and two colours of pencil",
+      "id": "Tabel seratus dan pensil dua warna"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Cut 24 equal paper squares in advance (an adult does any cutting) and print or draw a hundred chart.",
+      "id": "Siapkan 24 persegi kertas sama besar (orang dewasa yang memotong) dan cetak atau gambar tabel seratus."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Factors of 36 in pairs: 1 × 36, 2 × 18, 3 × 12, 4 × 9, 6 × 6. The pairs meet at 6, so we stop. Factors: 1, 2, 3, 4, 6, 9, 12, 18, 36.",
+      "id": "Faktor 36 berpasangan: 1 × 36, 2 × 18, 3 × 12, 4 × 9, 6 × 6. Pasangan bertemu di 6, jadi berhenti. Faktor: 1, 2, 3, 4, 6, 9, 12, 18, 36."
+    },
+    {
+      "en": "Common factor problem: 18 kue lapis and 24 kue lumpur go into identical boxes with no leftovers. The most boxes possible is the highest common factor, 6: each box has 3 kue lapis and 4 kue lumpur.",
+      "id": "Soal faktor persekutuan: 18 kue lapis dan 24 kue lumpur dimasukkan ke kotak yang sama isinya tanpa sisa. Kotak terbanyak adalah FPB, yaitu 6: setiap kotak berisi 3 kue lapis dan 4 kue lumpur."
+    },
+    {
+      "en": "Common multiple problem: angkot A leaves the terminal every 6 minutes and angkot B every 9 minutes. Both leave at 7:00. Multiples of 6: 6, 12, 18; of 9: 9, 18. They leave together again after 18 minutes, at 7:18.",
+      "id": "Soal kelipatan persekutuan: angkot A berangkat dari terminal setiap 6 menit dan angkot B setiap 9 menit. Keduanya berangkat pukul 7.00. Kelipatan 6: 6, 12, 18; kelipatan 9: 9, 18. Mereka berangkat bersama lagi setelah 18 menit, pukul 7.18."
+    },
+    {
+      "en": "Prime or not: 21 = 3 × 7, so it is not prime even though it is odd. 17 has only 1 and 17 as factors, so it is prime.",
+      "id": "Prima atau bukan: 21 = 3 × 7, jadi bukan prima walaupun ganjil. 17 hanya punya faktor 1 dan 17, jadi prima."
+    }
+  ],
+  "practice": [
+    {
+      "en": "List the factors of 20, 30 and 48 in pairs and circle the ones they share.",
+      "id": "Daftar faktor 20, 30, dan 48 berpasangan dan lingkari yang sama."
+    },
+    {
+      "en": "Find the first three common multiples of 4 and 10 on the hundred chart.",
+      "id": "Cari tiga kelipatan persekutuan pertama dari 4 dan 10 di tabel seratus."
+    },
+    {
+      "en": "Sort the numbers 2 to 30 into prime and not prime, using tile rectangles to check doubtful ones.",
+      "id": "Kelompokkan bilangan 2 sampai 30 menjadi prima dan bukan prima, pakai persegi panjang ubin untuk memeriksa yang meragukan."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which of these is a factor of 24?",
+        "id": "Manakah yang merupakan faktor dari 24?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "5",
+          "48"
+        ],
+        "id": [
+          "6",
+          "5",
+          "48"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6 × 4 = 24, so 6 divides 24 exactly. 5 does not divide 24, and 48 is a multiple of 24.",
+        "id": "6 × 4 = 24, jadi 6 membagi habis 24. 5 tidak membagi habis 24, dan 48 adalah kelipatan 24."
+      },
+      "check": {
+        "expression": "24 / 4",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "GUESSES_NEARBY_NUMBER",
+        "2": "CONFUSES_FACTOR_MULTIPLE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "How many factors does 12 have?",
+        "id": "Berapa banyak faktor dari 12?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "4",
+          "5"
+        ],
+        "id": [
+          "6",
+          "4",
+          "5"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Pairs 1 × 12, 2 × 6, 3 × 4 give 1, 2, 3, 4, 6, 12: six factors.",
+        "id": "Pasangan 1 × 12, 2 × 6, 3 × 4 memberi 1, 2, 3, 4, 6, 12: enam faktor."
+      },
+      "check": {
+        "expression": "3 * 2",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_ONE_AND_ITSELF",
+        "2": "MISSES_A_PAIR"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "What is the lowest common multiple (KPK) of 4 and 6?",
+        "id": "Berapa kelipatan persekutuan terkecil (KPK) dari 4 dan 6?"
+      },
+      "choices": {
+        "en": [
+          "12",
+          "24",
+          "2"
+        ],
+        "id": [
+          "12",
+          "24",
+          "2"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Multiples of 4: 4, 8, 12; multiples of 6: 6, 12. The first shared one is 12.",
+        "id": "Kelipatan 4: 4, 8, 12; kelipatan 6: 6, 12. Yang pertama sama adalah 12."
+      },
+      "check": {
+        "expression": "4 * 3",
+        "result": "12"
+      },
+      "distractorMisconceptions": {
+        "1": "ALWAYS_MULTIPLIES_FOR_LCM",
+        "2": "CONFUSES_FACTOR_MULTIPLE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Angkot A leaves every 6 minutes and angkot B every 9 minutes. They both leave at 7:00. After how many minutes do they next leave together?",
+        "id": "Angkot A berangkat setiap 6 menit dan angkot B setiap 9 menit. Keduanya berangkat pukul 7.00. Setelah berapa menit mereka berangkat bersama lagi?"
+      },
+      "choices": {
+        "en": [
+          "18 minutes",
+          "54 minutes",
+          "3 minutes"
+        ],
+        "id": [
+          "18 menit",
+          "54 menit",
+          "3 menit"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The lowest common multiple of 6 and 9 is 18.",
+        "id": "KPK dari 6 dan 9 adalah 18."
+      },
+      "check": {
+        "expression": "6 * 3",
+        "result": "18"
+      },
+      "distractorMisconceptions": {
+        "1": "ALWAYS_MULTIPLIES_FOR_LCM",
+        "2": "CONFUSES_FACTOR_MULTIPLE"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "What is the highest common factor (FPB) of 18 and 24?",
+        "id": "Berapa faktor persekutuan terbesar (FPB) dari 18 dan 24?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "3",
+          "72"
+        ],
+        "id": [
+          "6",
+          "3",
+          "72"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Common factors are 1, 2, 3 and 6; the highest is 6.",
+        "id": "Faktor persekutuannya 1, 2, 3, dan 6; yang terbesar 6."
+      },
+      "check": {
+        "expression": "18 / 3",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "STOPS_AT_FIRST_COMMON",
+        "2": "CONFUSES_FACTOR_MULTIPLE"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "Which number is prime?",
+        "id": "Bilangan mana yang prima?"
+      },
+      "choices": {
+        "en": [
+          "17",
+          "21",
+          "27"
+        ],
+        "id": [
+          "17",
+          "21",
+          "27"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "17 has only the factors 1 and 17. 21 = 3 × 7 and 27 = 3 × 9.",
+        "id": "17 hanya punya faktor 1 dan 17. 21 = 3 × 7 dan 27 = 3 × 9."
+      },
+      "check": {
+        "expression": "17",
+        "result": "17"
+      },
+      "distractorMisconceptions": {
+        "1": "ODD_MEANS_PRIME",
+        "2": "ODD_MEANS_PRIME"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "GUESSES_NEARBY_NUMBER",
+      "description": {
+        "en": "Picks a number close to a factor without checking division.",
+        "id": "Memilih bilangan yang dekat dengan faktor tanpa memeriksa pembagian."
+      },
+      "remediation": {
+        "en": "Try to build a rectangle with that many rows from the tiles; if one row is incomplete, it is not a factor.",
+        "id": "Coba susun persegi panjang dengan banyak baris itu dari ubin; jika satu baris tidak lengkap, itu bukan faktor."
+      }
+    },
+    {
+      "code": "CONFUSES_FACTOR_MULTIPLE",
+      "description": {
+        "en": "Mixes up factors and multiples, or common factors and common multiples.",
+        "id": "Tertukar antara faktor dan kelipatan, atau faktor persekutuan dan kelipatan persekutuan."
+      },
+      "remediation": {
+        "en": "Factors are smaller or equal and fit inside; multiples are equal or larger and are reached by jumping. Draw both on a number line.",
+        "id": "Faktor lebih kecil atau sama dan muat di dalam; kelipatan sama atau lebih besar dan dicapai dengan melompat. Gambar keduanya di garis bilangan."
+      }
+    },
+    {
+      "code": "FORGETS_ONE_AND_ITSELF",
+      "description": {
+        "en": "Leaves out 1 and the number itself as factors.",
+        "id": "Melupakan 1 dan bilangan itu sendiri sebagai faktor."
+      },
+      "remediation": {
+        "en": "Always start the list with the 1-row rectangle: 1 × 12.",
+        "id": "Selalu mulai daftar dengan persegi panjang satu baris: 1 × 12."
+      }
+    },
+    {
+      "code": "MISSES_A_PAIR",
+      "description": {
+        "en": "Misses a factor pair by not working systematically.",
+        "id": "Melewatkan satu pasangan faktor karena tidak bekerja teratur."
+      },
+      "remediation": {
+        "en": "Test 1, 2, 3, ... in order and write each pair in a table until the pairs meet.",
+        "id": "Uji 1, 2, 3, ... berurutan dan tulis setiap pasangan di tabel sampai pasangannya bertemu."
+      }
+    },
+    {
+      "code": "ALWAYS_MULTIPLIES_FOR_LCM",
+      "description": {
+        "en": "Multiplies the two numbers to get a common multiple that is not the lowest.",
+        "id": "Mengalikan kedua bilangan sehingga mendapat kelipatan persekutuan yang bukan terkecil."
+      },
+      "remediation": {
+        "en": "List multiples of both side by side and circle the first match.",
+        "id": "Daftar kelipatan keduanya berdampingan dan lingkari kecocokan pertama."
+      }
+    },
+    {
+      "code": "STOPS_AT_FIRST_COMMON",
+      "description": {
+        "en": "Gives a common factor that is not the highest.",
+        "id": "Memberi faktor persekutuan yang bukan terbesar."
+      },
+      "remediation": {
+        "en": "List all factors of both numbers and circle every shared one before choosing the largest.",
+        "id": "Daftar semua faktor kedua bilangan dan lingkari setiap yang sama sebelum memilih yang terbesar."
+      }
+    },
+    {
+      "code": "ODD_MEANS_PRIME",
+      "description": {
+        "en": "Thinks every odd number is prime.",
+        "id": "Mengira setiap bilangan ganjil adalah prima."
+      },
+      "remediation": {
+        "en": "Build 21 tiles into a 3 by 7 rectangle: more than one rectangle means not prime.",
+        "id": "Susun 21 ubin menjadi persegi panjang 3 kali 7: lebih dari satu persegi panjang berarti bukan prima."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Investigate: which numbers under 50 have an odd number of factors? (They are square numbers.)",
+      "id": "Selidiki: bilangan di bawah 50 mana yang banyak faktornya ganjil? (Itulah bilangan kuadrat.)"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Tiles make factor pairs physical; a printed hundred chart with large squares helps children with visual or motor needs.",
+      "id": "Ubin membuat pasangan faktor bisa diraba; tabel seratus cetak dengan kotak besar membantu anak dengan kebutuhan penglihatan atau motorik."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Paper squares only; the adult does any cutting with scissors.",
+        "id": "Hanya persegi kertas; orang dewasa melakukan pemotongan dengan gunting."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child lists all factors of two numbers to 50, solves one FPB and one KPK story, and identifies primes to 30, on two different days.",
+      "id": "Dikuasai jika anak mendaftar semua faktor dua bilangan sampai 50, menyelesaikan satu soal cerita FPB dan satu KPK, serta mengenali bilangan prima sampai 30, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

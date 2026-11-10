@@ -1,0 +1,439 @@
+{
+  "id": "unit-g6-montessori-sun-angle-and-climate-zones",
+  "version": "1.0.0",
+  "level": "g6",
+  "framework": "montessori",
+  "strand": "geography",
+  "title": {
+    "en": "Why the equator is warm: sun angle and climate zones",
+    "id": "Mengapa khatulistiwa hangat: sudut matahari dan zona iklim"
+  },
+  "prerequisites": [
+    "unit-g1-montessori-land-and-water-forms-pairs"
+  ],
+  "objective": {
+    "en": "Show with a torch and squared paper that light hitting at a slant spreads over a larger area, and use this to explain why places near the equator are warmer than places near the poles.",
+    "id": "Menunjukkan dengan senter dan kertas berpetak bahwa cahaya yang jatuh miring tersebar di area lebih luas, dan memakainya untuk menjelaskan mengapa tempat dekat khatulistiwa lebih hangat daripada tempat dekat kutub."
+  },
+  "rationale": {
+    "en": "Indonesia lies on the equator, so children here live inside the answer. A simple measurement turns a memorised fact ('the equator is hot') into an explanation they can reason with, linking geography to physics.",
+    "id": "Indonesia terletak di khatulistiwa, jadi anak di sini tinggal di dalam jawabannya. Pengukuran sederhana mengubah fakta hafalan ('khatulistiwa panas') menjadi penjelasan yang bisa dinalar, menghubungkan geografi dengan fisika."
+  },
+  "outcomes": [
+    {
+      "en": "Measures how many squares a beam of light covers straight on and at a slant.",
+      "id": "Mengukur berapa kotak yang diterangi berkas cahaya secara tegak dan miring."
+    },
+    {
+      "en": "Explains that the same light spread over a larger area heats each part less.",
+      "id": "Menjelaskan bahwa cahaya yang sama tersebar di area lebih luas memanaskan setiap bagian lebih sedikit."
+    },
+    {
+      "en": "Names the tropical, temperate and polar zones and locates Indonesia in the tropical zone.",
+      "id": "Menyebut zona tropis, sedang, dan kutub serta menempatkan Indonesia di zona tropis."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show with a torch why slanting light is weaker.",
+      "id": "Aku bisa menunjukkan dengan senter mengapa cahaya miring lebih lemah."
+    },
+    {
+      "en": "I can explain why it is warm in Indonesia for most of the year.",
+      "id": "Aku bisa menjelaskan mengapa Indonesia hangat hampir sepanjang tahun."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Do the experiment in a darkened room so the light patch has a clear edge.",
+      "id": "Lakukan percobaan di ruangan gelap agar tepi bercak cahaya terlihat jelas."
+    },
+    {
+      "en": "Keep the torch at the same distance for both measurements; only the angle should change. This is a fair test.",
+      "id": "Jaga jarak senter sama untuk kedua pengukuran; hanya sudutnya yang berubah. Ini uji yang adil."
+    },
+    {
+      "en": "Results will vary a little; the important thing is the comparison, not an exact number.",
+      "id": "Hasil akan sedikit berbeda; yang penting perbandingannya, bukan angka yang tepat."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Hold the torch straight above the squared paper at 30 cm. Draw round the light patch and count the squares.",
+      "id": "Pegang senter tegak di atas kertas berpetak pada jarak 30 cm. Gambar tepi bercak cahaya dan hitung kotaknya."
+    },
+    {
+      "en": "Now tilt the torch so the light hits at a slant, still 30 cm away. Draw round and count again.",
+      "id": "Sekarang miringkan senter agar cahaya jatuh miring, tetap 30 cm. Gambar tepi dan hitung lagi."
+    },
+    {
+      "en": "Compare: the same light covered more squares, so each square got less light. Explain what this means for the poles.",
+      "id": "Bandingkan: cahaya yang sama menerangi lebih banyak kotak, jadi setiap kotak mendapat lebih sedikit cahaya. Jelaskan artinya bagi kutub."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "A torch (hand-held flashlight) with a narrow beam",
+      "id": "Senter dengan berkas cahaya sempit"
+    },
+    {
+      "en": "Squared paper (1 cm squares), a ruler and a pencil",
+      "id": "Kertas berpetak (kotak 1 cm), penggaris, dan pensil"
+    },
+    {
+      "en": "A ball or globe and a world map showing the equator and the tropics",
+      "id": "Bola atau globe dan peta dunia yang menunjukkan khatulistiwa dan garis balik"
+    },
+    {
+      "en": "A protractor (optional) to measure the slant",
+      "id": "Busur derajat (opsional) untuk mengukur kemiringan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Test the torch first and make the room dark.",
+      "id": "Coba senter lebih dulu dan gelapkan ruangan."
+    },
+    {
+      "en": "Cut a ruler-length card to hold the torch at exactly 30 cm from the paper.",
+      "id": "Siapkan karton sepanjang penggaris untuk menjaga senter tepat 30 cm dari kertas."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Straight on: the patch is a near-circle covering, for example, about 20 squares. Write the number.",
+      "id": "Tegak lurus: bercak hampir bulat menerangi, misalnya, sekitar 20 kotak. Tulis angkanya."
+    },
+    {
+      "en": "Slanted at about 45 degrees from the paper: the patch becomes a stretched oval covering, for example, about 30 squares. Ask: 'The torch gives the same light. Where did the light go?' It spread out.",
+      "id": "Miring sekitar 45 derajat dari kertas: bercak menjadi oval memanjang menerangi, misalnya, sekitar 30 kotak. Tanyakan: 'Senter memberi cahaya yang sama. Ke mana cahayanya?' Cahayanya menyebar."
+    },
+    {
+      "en": "Shine the torch at the ball's middle (the equator) and then near the top (a pole) from the same distance. Near the top the light patch stretches, just as on the paper. Mark the tropical zone around the middle, temperate zones and polar zones on the globe.",
+      "id": "Arahkan senter ke tengah bola (khatulistiwa) lalu ke dekat bagian atas (kutub) dari jarak yang sama. Di dekat atas, bercak cahaya memanjang, sama seperti di kertas. Tandai zona tropis di tengah, zona sedang, dan zona kutub pada globe."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Repeat with three angles (straight, medium slant, steep slant) and record squares in a table.",
+      "id": "Mengulang dengan tiga sudut (tegak, agak miring, sangat miring) dan mencatat jumlah kotak di tabel."
+    },
+    {
+      "en": "Draw a bar chart of squares against angle and write a conclusion sentence.",
+      "id": "Menggambar diagram batang jumlah kotak terhadap sudut dan menulis satu kalimat kesimpulan."
+    },
+    {
+      "en": "Colour a world map with the three climate zones and mark Indonesia, plus one country in each other zone, using an atlas.",
+      "id": "Mewarnai peta dunia dengan tiga zona iklim dan menandai Indonesia, serta satu negara di setiap zona lain, dengan bantuan atlas."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "When the torch is tilted, what happens to the light patch?",
+        "id": "Saat senter dimiringkan, apa yang terjadi pada bercak cahaya?"
+      },
+      "choices": {
+        "en": [
+          "It covers more squares",
+          "It covers fewer squares",
+          "It stays the same size"
+        ],
+        "id": [
+          "Menerangi lebih banyak kotak",
+          "Menerangi lebih sedikit kotak",
+          "Ukurannya tetap sama"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Slanting light spreads over a larger area.",
+        "id": "Cahaya miring tersebar di area lebih luas."
+      },
+      "distractorMisconceptions": {
+        "1": "SLANT_CONCENTRATES",
+        "2": "NO_ANGLE_EFFECT"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Why are places near the poles colder?",
+        "id": "Mengapa tempat dekat kutub lebih dingin?"
+      },
+      "choices": {
+        "en": [
+          "Sunlight hits them at a slant and is spread out",
+          "They are further from the Sun",
+          "The Sun never shines there"
+        ],
+        "id": [
+          "Sinar matahari jatuh miring dan tersebar",
+          "Letaknya lebih jauh dari Matahari",
+          "Matahari tidak pernah bersinar di sana"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The angle, not distance, is the main reason; the difference in distance across Earth is tiny compared with the distance to the Sun.",
+        "id": "Sudutnya, bukan jaraknya, yang menjadi alasan utama; perbedaan jarak di Bumi sangat kecil dibanding jarak ke Matahari."
+      },
+      "distractorMisconceptions": {
+        "1": "DISTANCE_EXPLAINS_CLIMATE",
+        "2": "NO_SUN_AT_POLES"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "In the experiment, what must stay the same to make it a fair test?",
+        "id": "Dalam percobaan, apa yang harus tetap sama agar ujinya adil?"
+      },
+      "choices": {
+        "en": [
+          "The distance from torch to paper",
+          "The angle of the torch",
+          "Nothing needs to stay the same"
+        ],
+        "id": [
+          "Jarak senter ke kertas",
+          "Sudut senter",
+          "Tidak ada yang perlu tetap sama"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Only the angle should change, so the distance and the torch are kept the same.",
+        "id": "Hanya sudut yang boleh berubah, jadi jarak dan senter dijaga sama."
+      },
+      "distractorMisconceptions": {
+        "1": "FAIR_TEST_CONFUSION",
+        "2": "FAIR_TEST_CONFUSION"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "In which climate zone is Indonesia?",
+        "id": "Indonesia berada di zona iklim apa?"
+      },
+      "choices": {
+        "en": [
+          "Tropical",
+          "Temperate",
+          "Polar"
+        ],
+        "id": [
+          "Tropis",
+          "Sedang",
+          "Kutub"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Indonesia lies across the equator, in the tropical zone.",
+        "id": "Indonesia terletak melintasi khatulistiwa, di zona tropis."
+      },
+      "distractorMisconceptions": {
+        "1": "ZONE_MIXUP",
+        "2": "ZONE_MIXUP"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A beam covers 20 squares straight on and 30 squares at a slant. How many more squares does the slanted beam cover?",
+        "id": "Berkas cahaya menerangi 20 kotak secara tegak dan 30 kotak secara miring. Berapa kotak lebih banyak yang diterangi berkas miring?"
+      },
+      "choices": {
+        "en": [
+          "10",
+          "50",
+          "1.5"
+        ],
+        "id": [
+          "10",
+          "50",
+          "1,5"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "30 − 20 = 10 more squares share the same light.",
+        "id": "30 − 20 = 10 kotak lebih banyak berbagi cahaya yang sama."
+      },
+      "check": {
+        "expression": "30 - 20",
+        "result": "10"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD_OF_COMPARES",
+        "2": "ADDS_INSTEAD_OF_COMPARES"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SLANT_CONCENTRATES",
+      "description": {
+        "en": "Thinks slanted light is stronger or more focused.",
+        "id": "Mengira cahaya miring lebih kuat atau lebih terpusat."
+      },
+      "remediation": {
+        "en": "Count squares again with a partner and shade them; compare the two drawings side by side.",
+        "id": "Hitung kotak lagi bersama pasangan dan arsir; bandingkan kedua gambar berdampingan."
+      }
+    },
+    {
+      "code": "NO_ANGLE_EFFECT",
+      "description": {
+        "en": "Believes the angle makes no difference.",
+        "id": "Yakin sudut tidak berpengaruh."
+      },
+      "remediation": {
+        "en": "Use the steepest slant possible so the oval becomes very long, then count again.",
+        "id": "Pakai kemiringan paling ekstrem agar oval menjadi sangat panjang, lalu hitung lagi."
+      }
+    },
+    {
+      "code": "DISTANCE_EXPLAINS_CLIMATE",
+      "description": {
+        "en": "Thinks the poles are cold because they are further from the Sun.",
+        "id": "Mengira kutub dingin karena lebih jauh dari Matahari."
+      },
+      "remediation": {
+        "en": "Measure ball-to-torch distance at the middle and at the top: almost the same, yet the patch changes a lot. The angle matters more.",
+        "id": "Ukur jarak bola ke senter di tengah dan di atas: hampir sama, tetapi bercaknya berubah banyak. Sudut lebih berpengaruh."
+      }
+    },
+    {
+      "code": "NO_SUN_AT_POLES",
+      "description": {
+        "en": "Thinks the Sun never shines at the poles.",
+        "id": "Mengira Matahari tidak pernah bersinar di kutub."
+      },
+      "remediation": {
+        "en": "Shine the torch near the ball's top: there is light, just spread thin. Look at photos of bright snowy polar summers.",
+        "id": "Arahkan senter ke dekat atas bola: ada cahaya, hanya tersebar tipis. Lihat foto musim panas kutub yang terang bersalju."
+      }
+    },
+    {
+      "code": "FAIR_TEST_CONFUSION",
+      "description": {
+        "en": "Changes more than one thing in the experiment.",
+        "id": "Mengubah lebih dari satu hal dalam percobaan."
+      },
+      "remediation": {
+        "en": "Make a 'change / keep the same / measure' table before starting and tick each part.",
+        "id": "Buat tabel 'ubah / tetap sama / ukur' sebelum mulai dan centang setiap bagian."
+      }
+    },
+    {
+      "code": "ZONE_MIXUP",
+      "description": {
+        "en": "Places Indonesia in the wrong climate zone.",
+        "id": "Menempatkan Indonesia di zona iklim yang salah."
+      },
+      "remediation": {
+        "en": "Find the equator line on the map and trace it with a finger across Sumatra, Kalimantan and Sulawesi.",
+        "id": "Temukan garis khatulistiwa di peta dan telusuri dengan jari melintasi Sumatra, Kalimantan, dan Sulawesi."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD_OF_COMPARES",
+      "description": {
+        "en": "Adds or divides when asked how many more.",
+        "id": "Menjumlahkan atau membagi saat ditanya berapa lebih banyak."
+      },
+      "remediation": {
+        "en": "Lay 20 and 30 counters in two rows and match them one to one; count the unmatched ones.",
+        "id": "Letakkan 20 dan 30 penanda dalam dua baris dan pasangkan satu-satu; hitung yang tidak berpasangan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Repeat with a thermometer: shine a desk lamp on two pieces of black paper, one flat and one tilted, for 10 minutes with an adult, and compare temperatures.",
+      "id": "Ulangi dengan termometer: sinari dua kertas hitam, satu datar dan satu miring, dengan lampu meja selama 10 menit bersama orang dewasa, lalu bandingkan suhunya."
+    },
+    {
+      "en": "Find out why Indonesia has wet and dry seasons rather than summer and winter.",
+      "id": "Cari tahu mengapa Indonesia punya musim hujan dan kemarau, bukan musim panas dan dingin."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A partner can hold the torch while the child draws, for children with unsteady hands.",
+      "id": "Pasangan dapat memegang senter sementara anak menggambar, untuk anak dengan tangan kurang stabil."
+    },
+    {
+      "en": "Use larger 2 cm squares for easier counting.",
+      "id": "Pakai kotak 2 cm yang lebih besar agar mudah dihitung."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": true,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Never shine the torch into anyone's eyes, and never look straight at the Sun when discussing it.",
+        "id": "Jangan pernah mengarahkan senter ke mata siapa pun, dan jangan menatap langsung Matahari saat membicarakannya."
+      },
+      {
+        "en": "A desk lamp in the extension gets hot: an adult sets it up and switches it off, and no one touches the bulb.",
+        "id": "Lampu meja pada pengayaan menjadi panas: orang dewasa yang memasang dan mematikannya, dan tidak ada yang menyentuh bolamnya."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 50
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      7,
+      21,
+      60
+    ],
+    "masteryRule": {
+      "en": "Secure when the child runs the fair test, records results and explains sun angle and climate zones, on two different days.",
+      "id": "Dikuasai jika anak menjalankan uji adil, mencatat hasil, dan menjelaskan sudut matahari dan zona iklim, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "science_facts_check"
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-montessori",
+    "createdAt": "2026-11-10"
+  }
+}
