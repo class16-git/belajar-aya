@@ -96,14 +96,17 @@
     }
   ],
   "parentNotes": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
       "toddler-safety-checklist",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0"
 }

@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import { getCatalog } from '@atlas/curriculum';
 import { availabilityForBand, interactiveBandForGrade } from './availability';
 
 describe('grade → interactive curriculum band (Phase 1)', () => {
@@ -15,15 +16,20 @@ describe('grade → interactive curriculum band (Phase 1)', () => {
 });
 
 describe('availability counts for the parent review notice', () => {
-  it('production (human review required): nothing visible, agent-checked content awaits review', () => {
-    const g1 = availabilityForBand('g1', 'reviewed');
-    expect(g1.visible).toBe(0);
-    expect(g1.awaitingReview).toBe(5); // the draft example is not counted: it cannot be approved as-is
-    const toddler = availabilityForBand('toddler', 'reviewed');
-    expect(toddler).toEqual({ visible: 0, awaitingReview: 13 });
-  });
-  it('preview (agent-checked allowed): everything agent-checked is visible, nothing awaits', () => {
-    expect(availabilityForBand('g1', 'agent_reviewed')).toEqual({ visible: 5, awaitingReview: 0 });
-    expect(availabilityForBand('toddler', 'agent_reviewed')).toEqual({ visible: 13, awaitingReview: 0 });
-  });
+  // Data-independent: compare against the catalog's actual review statuses.
+  const count = (band: 'g1' | 'toddler', status: string) =>
+    getCatalog().lessons.filter((l) => l.ageBand === band && l.reviewStatus === status).length;
+
+  for (const band of ['g1', 'toddler'] as const) {
+    it(`${band}: production shows only human-reviewed content; agent-checked content awaits review`, () => {
+      const a = availabilityForBand(band, 'reviewed');
+      expect(a.visible).toBe(count(band, 'reviewed') + count(band, 'published'));
+      expect(a.awaitingReview).toBe(count(band, 'agent_reviewed'));
+    });
+    it(`${band}: preview shows reviewed and agent-checked content; drafts never count`, () => {
+      const a = availabilityForBand(band, 'agent_reviewed');
+      expect(a.visible).toBe(count(band, 'reviewed') + count(band, 'published') + count(band, 'agent_reviewed'));
+      expect(a.awaitingReview).toBe(0);
+    });
+  }
 });
