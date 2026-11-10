@@ -62,7 +62,7 @@
     "en": "Paper plates: put two small plates under one big plate. Place counters on the small plates, then move them all to the big plate and count.",
     "id": "Piring kertas: taruh dua piring kecil di bawah satu piring besar. Letakkan benda di piring kecil, lalu pindahkan semua ke piring besar dan hitung."
   },
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -70,7 +70,10 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0",
   "framework": "singapore_math",

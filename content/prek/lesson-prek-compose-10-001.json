@@ -117,14 +117,17 @@
       "id": "Ini awal konkret ikatan bilangan, yang muncul lagi di TK dan Kelas 1."
     }
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
       "physical-safety-checklist",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0",
   "copyrightStatus": "original",

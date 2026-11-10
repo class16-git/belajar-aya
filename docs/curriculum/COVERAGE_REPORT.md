@@ -9,18 +9,18 @@ Curriculum version 2026.11.0 · 120 objectives · 54 lessons
 | planned | 83 |
 | draft | 1 |
 | awaiting religious review | 1 |
-| awaiting review | 28 |
-| published | 7 |
+| awaiting review | 0 |
+| published | 35 |
 
 ## Published / total objectives by stage and framework
 
 | Stage | Montessori | Maths (CPA) | Robotics/STEM | Islamic studies |
 |---|---|---|---|---|
 | Age 2–3 | 4/5 | 1/2 | 0/2 | 0/3 (+1 unpublished) |
-| Age 3–4 | 0/4 (+4 unpublished) | 0/4 (+4 unpublished) | 0/2 (+2 unpublished) | 0/3 |
-| Age 4–5 | 0/3 (+3 unpublished) | 0/2 (+2 unpublished) | 0/2 (+2 unpublished) | 0/4 |
-| Kindergarten | 0/3 (+3 unpublished) | 0/3 (+1 unpublished) | 0/2 (+2 unpublished) | 0/3 |
-| Grade 1 | 0/3 | 2/8 (+3 unpublished) | 0/3 (+3 unpublished) | 0/5 |
+| Age 3–4 | 4/4 | 4/4 | 2/2 | 0/3 |
+| Age 4–5 | 3/3 | 2/2 | 2/2 | 0/4 |
+| Kindergarten | 3/3 | 1/3 | 2/2 | 0/3 |
+| Grade 1 | 0/3 | 4/8 (+1 unpublished) | 3/3 | 0/5 |
 | Grade 2 | 0/3 | 0/4 | 0/2 | 0/4 |
 | Grade 3 | 0/2 | 0/4 | 0/2 | 0/3 |
 | Grade 4 | 0/2 | 0/3 | 0/2 | 0/3 |
@@ -53,16 +53,16 @@ Curriculum version 2026.11.0 · 120 objectives · 54 lessons
 | `islm.age3_4.creator` Allah is the Creator; no pictures or imagery of Allah | Islamic studies / aqidah | planned | — | religious_content, scholar_wording_required, theological_interpretation |
 | `islm.age3_4.cleanliness` Keeps hands and body clean; observes family prayer | Islamic studies / worship_fiqh | planned | — | fiqh_ruling, religious_content |
 | `islm.age3_4.arabic-sounds` Hears Arabic sounds and short familiar phrases | Islamic studies / arabic | planned | — | arabic_text, pronunciation_review, religious_content |
-| `mont.age3_4.dressing` Uses dressing frames or real clothes (buttons, zips) independently | Montessori / practical_life | awaiting review | lesson-pre-dress-001 | — |
-| `mont.age3_4.sound-games` Plays sound games: hears the first sound of familiar words | Montessori / language | awaiting review | lesson-pre-sounds-001 | — |
-| `mont.age3_4.prewriting` Strengthens the pincer grip and traces shapes (pre-writing) | Montessori / language | awaiting review | lesson-pre-prewrite-001 | physical_safety |
-| `mont.age3_4.three-period` Learns new words for textures and shapes through three-period lessons | Montessori / sensorial | awaiting review | lesson-pre-3period-001 | — |
-| `robo.age3_4.arrow-paths` Follows and makes floor-arrow paths (2–3 steps) | Robotics/STEM / sequencing_algorithms | awaiting review | lesson-robo-arrows-001 | — |
-| `robo.age3_4.ramps-balance` Tests ramps and balance with safe objects | Robotics/STEM / mechanics | awaiting review | lesson-robo-ramps-001 | physical_safety |
-| `math.age3_4.count-10` Counts and matches up to 10 objects (one-to-one) | Maths (CPA) / number | awaiting review | lesson-pre-count10-001 | — |
-| `math.age3_4.ab-patterns` Copies and extends AB patterns | Maths (CPA) / data_problem_solving | awaiting review | lesson-pre-pattern-001 | — |
-| `math.age3_4.shapes-2d` Names circle, square, triangle and rectangle | Maths (CPA) / measurement_geometry | awaiting review | lesson-pre-shapes-001 | — |
-| `math.age3_4.compare-lengths` Compares lengths: longer, shorter | Maths (CPA) / measurement_geometry | awaiting review | lesson-pre-length-001 | — |
+| `mont.age3_4.dressing` Uses dressing frames or real clothes (buttons, zips) independently | Montessori / practical_life | published | lesson-pre-dress-001 | — |
+| `mont.age3_4.sound-games` Plays sound games: hears the first sound of familiar words | Montessori / language | published | lesson-pre-sounds-001 | — |
+| `mont.age3_4.prewriting` Strengthens the pincer grip and traces shapes (pre-writing) | Montessori / language | published | lesson-pre-prewrite-001 | physical_safety |
+| `mont.age3_4.three-period` Learns new words for textures and shapes through three-period lessons | Montessori / sensorial | published | lesson-pre-3period-001 | — |
+| `robo.age3_4.arrow-paths` Follows and makes floor-arrow paths (2–3 steps) | Robotics/STEM / sequencing_algorithms | published | lesson-robo-arrows-001 | — |
+| `robo.age3_4.ramps-balance` Tests ramps and balance with safe objects | Robotics/STEM / mechanics | published | lesson-robo-ramps-001 | physical_safety |
+| `math.age3_4.count-10` Counts and matches up to 10 objects (one-to-one) | Maths (CPA) / number | published | lesson-pre-count10-001 | — |
+| `math.age3_4.ab-patterns` Copies and extends AB patterns | Maths (CPA) / data_problem_solving | published | lesson-pre-pattern-001 | — |
+| `math.age3_4.shapes-2d` Names circle, square, triangle and rectangle | Maths (CPA) / measurement_geometry | published | lesson-pre-shapes-001 | — |
+| `math.age3_4.compare-lengths` Compares lengths: longer, shorter | Maths (CPA) / measurement_geometry | published | lesson-pre-length-001 | — |
 
 ### Age 4–5
 
@@ -72,13 +72,13 @@ Curriculum version 2026.11.0 · 120 objectives · 54 lessons
 | `islm.age4_5.short-surahs-listen` Listens to and, by choice, memorises selected short surahs with accurate recitation | Islamic studies / quran | planned | — | arabic_text, pronunciation_review, quran_text, religious_content |
 | `islm.age4_5.wudu-imitation` Imitates wudu steps with an adult | Islamic studies / worship_fiqh | planned | — | fiqh_ruling, religious_content |
 | `islm.age4_5.prophet-stories` Listens to selected prophetic stories about kindness | Islamic studies / seerah | planned | — | religious_content, source_verification |
-| `mont.age4_5.sound-letter` Connects sounds to letters with tactile letters | Montessori / language | awaiting review | lesson-prek-sound-letter-001 | — |
-| `mont.age4_5.movable-letters` Builds simple words with movable letters before writing them | Montessori / language | awaiting review | lesson-prek-movable-letters-001 | — |
-| `mont.age4_5.continents-life-cycles` Names continents on a globe and orders a simple life cycle | Montessori / culture | awaiting review | lesson-prek-world-cycles-001 | — |
-| `robo.age4_5.adult-robot-algorithm` Gives step-by-step instructions to an 'adult robot' and fixes mistakes | Robotics/STEM / sequencing_algorithms | awaiting review | lesson-robo-prek-adult-robot-001 | — |
-| `robo.age4_5.gears-building` Builds with gears and notices how they turn | Robotics/STEM / mechanics | awaiting review | lesson-robo-prek-gears-001 | physical_safety |
-| `math.age4_5.compose-10` Composes and decomposes numbers within 10 with objects | Maths (CPA) / number | awaiting review | lesson-prek-compose-10-001 | — |
-| `math.age4_5.add-sub-objects` Adds and takes away with counters within 10 | Maths (CPA) / operations | awaiting review | lesson-prek-add-sub-objects-001 | — |
+| `mont.age4_5.sound-letter` Connects sounds to letters with tactile letters | Montessori / language | published | lesson-prek-sound-letter-001 | — |
+| `mont.age4_5.movable-letters` Builds simple words with movable letters before writing them | Montessori / language | published | lesson-prek-movable-letters-001 | — |
+| `mont.age4_5.continents-life-cycles` Names continents on a globe and orders a simple life cycle | Montessori / culture | published | lesson-prek-world-cycles-001 | — |
+| `robo.age4_5.adult-robot-algorithm` Gives step-by-step instructions to an 'adult robot' and fixes mistakes | Robotics/STEM / sequencing_algorithms | published | lesson-robo-prek-adult-robot-001 | — |
+| `robo.age4_5.gears-building` Builds with gears and notices how they turn | Robotics/STEM / mechanics | published | lesson-robo-prek-gears-001 | physical_safety |
+| `math.age4_5.compose-10` Composes and decomposes numbers within 10 with objects | Maths (CPA) / number | published | lesson-prek-compose-10-001 | — |
+| `math.age4_5.add-sub-objects` Adds and takes away with counters within 10 | Maths (CPA) / operations | published | lesson-prek-add-sub-objects-001 | — |
 
 ### Kindergarten
 
@@ -87,14 +87,14 @@ Curriculum version 2026.11.0 · 120 objectives · 54 lessons
 | `islm.k.core-beliefs` Core beliefs in approved child language | Islamic studies / aqidah | planned | — | religious_content, scholar_wording_required, theological_interpretation |
 | `islm.k.wudu-prayer-sequence` Sequences the steps of wudu and prayer | Islamic studies / worship_fiqh | planned | — | fiqh_ruling, madhhab_selection, religious_content |
 | `islm.k.letter-recognition` Recognises Arabic letters and their sounds | Islamic studies / arabic | planned | — | arabic_text, pronunciation_review, religious_content |
-| `mont.k.read-simple-words` Reads simple phonetic words and short phrases | Montessori / language | awaiting review | lesson-k-read-words-001 | — |
-| `mont.k.maps-botany` Uses a simple map and names parts of a plant | Montessori / culture | awaiting review | lesson-k-maps-plants-001 | — |
-| `mont.k.time-routines` Sequences daily routines and talks about morning, afternoon and night | Montessori / practical_life | awaiting review | lesson-k-routines-001 | — |
-| `robo.k.loops-repeat` Uses repeat to shorten a sequence and predicts the result | Robotics/STEM / sequencing_algorithms | awaiting review | lesson-robo-k-loops-001 | — |
-| `robo.k.linkages` Builds a simple linkage (moving arm) from card | Robotics/STEM / mechanics | awaiting review | lesson-robo-k-linkage-001 | physical_safety |
+| `mont.k.read-simple-words` Reads simple phonetic words and short phrases | Montessori / language | published | lesson-k-read-words-001 | — |
+| `mont.k.maps-botany` Uses a simple map and names parts of a plant | Montessori / culture | published | lesson-k-maps-plants-001 | — |
+| `mont.k.time-routines` Sequences daily routines and talks about morning, afternoon and night | Montessori / practical_life | published | lesson-k-routines-001 | — |
+| `robo.k.loops-repeat` Uses repeat to shorten a sequence and predicts the result | Robotics/STEM / sequencing_algorithms | published | lesson-robo-k-loops-001 | — |
+| `robo.k.linkages` Builds a simple linkage (moving arm) from card | Robotics/STEM / mechanics | published | lesson-robo-k-linkage-001 | physical_safety |
 | `math.k.bonds-20` Number bonds within 20 with ten-frames | Maths (CPA) / number | planned | — | — |
 | `math.k.tens-ones-intro` Sees teen numbers as ten and some ones | Maths (CPA) / place_value | planned | — | — |
-| `math.k.picture-word-problems` Solves picture word problems by acting them out | Maths (CPA) / data_problem_solving | awaiting review | lesson-k-picture-problems-001 | — |
+| `math.k.picture-word-problems` Solves picture word problems by acting them out | Maths (CPA) / data_problem_solving | published | lesson-k-picture-problems-001 | — |
 
 ### Grade 1
 
@@ -108,17 +108,17 @@ Curriculum version 2026.11.0 · 120 objectives · 54 lessons
 | `mont.g1.reading-fluency` Reads short texts aloud with growing fluency and retells them | Montessori / language | planned | — | — |
 | `mont.g1.writing-sentences` Writes simple sentences about own experiences | Montessori / language | planned | — | — |
 | `mont.g1.nature-observation` Observes and records nature (weather, plants) in a journal | Montessori / culture | planned | — | — |
-| `robo.g1.grid-robot` Programs a floor robot (or unplugged grid) to reach a target | Robotics/STEM / programming | awaiting review | lesson-robo-g1-grid-001 | physical_safety |
-| `robo.g1.debug-path` Finds and fixes the wrong step in a path program | Robotics/STEM / programming | awaiting review | lesson-robo-g1-debug-001, lesson-robo-g1-trace-001 | — |
-| `robo.g1.sensors-observe` Observes how simple sensors respond (light, touch) and records it | Robotics/STEM / sensors_circuits | awaiting review | lesson-robo-g1-sensors-001 | physical_safety |
+| `robo.g1.grid-robot` Programs a floor robot (or unplugged grid) to reach a target | Robotics/STEM / programming | published | lesson-robo-g1-grid-001 | physical_safety |
+| `robo.g1.debug-path` Finds and fixes the wrong step in a path program | Robotics/STEM / programming | published | lesson-robo-g1-debug-001, lesson-robo-g1-trace-001 | — |
+| `robo.g1.sensors-observe` Observes how simple sensors respond (light, touch) and records it | Robotics/STEM / sensors_circuits | published | lesson-robo-g1-sensors-001 | physical_safety |
 | `math.g1.count-20` Counts objects to 20 using ten-frames | Maths (CPA) / number | published | lesson-g1-count-20-001, lesson-g1-count-20-002 | — |
 | `math.g1.bonds-10` Composes and decomposes 10 (part–part–whole) | Maths (CPA) / number | published | lesson-g1-bonds-10-001, lesson-g1-bonds-10-002, lesson-g1-bonds-10-003 | — |
 | `math.g1.compare-20` Compares numbers to 20 (more, fewer, same) | Maths (CPA) / number | draft | lesson-g1-draft-example | — |
-| `math.g1.add-sub-10` Adds and subtracts within 10 and explains the inverse | Maths (CPA) / operations | awaiting review | lesson-g1-add-10-001, lesson-g1-add-10-002, lesson-g1-add-10-003, lesson-g1-sub-10-001, lesson-g1-sub-10-002, lesson-g1-sub-10-003 | — |
+| `math.g1.add-sub-10` Adds and subtracts within 10 and explains the inverse | Maths (CPA) / operations | published | lesson-g1-add-10-001, lesson-g1-add-10-002, lesson-g1-add-10-003, lesson-g1-sub-10-001, lesson-g1-sub-10-002, lesson-g1-sub-10-003 | — |
 | `math.g1.add-sub-20` Adds and subtracts within 20 using make-ten | Maths (CPA) / operations | planned | — | — |
 | `math.g1.tens-ones` Groups ten ones as one ten; numbers to 100 | Maths (CPA) / place_value | planned | — | — |
 | `math.g1.measure-time-money` Compares lengths, tells time to the hour, counts coins | Maths (CPA) / measurement_geometry | planned | — | — |
-| `math.g1.word-problems-1` Solves one-step stories with pictures and bar models | Maths (CPA) / data_problem_solving | awaiting review | lesson-g1-word-1-001 | — |
+| `math.g1.word-problems-1` Solves one-step stories with pictures and bar models | Maths (CPA) / data_problem_solving | published | lesson-g1-word-1-001 | — |
 
 ### Grade 2
 
@@ -203,40 +203,6 @@ Curriculum version 2026.11.0 · 120 objectives · 54 lessons
 
 | Lesson | Status | Needs | Reasons |
 |---|---|---|---|
-| `lesson-g1-add-10-001` | agent_reviewed | content_review | — |
-| `lesson-g1-add-10-002` | agent_reviewed | content_review | — |
-| `lesson-g1-add-10-003` | agent_reviewed | content_review | — |
 | `lesson-g1-draft-example` | draft | author, content_review | Draft content cannot be published |
-| `lesson-g1-sub-10-001` | agent_reviewed | content_review | — |
-| `lesson-g1-sub-10-002` | agent_reviewed | content_review | — |
-| `lesson-g1-sub-10-003` | agent_reviewed | content_review | — |
-| `lesson-g1-word-1-001` | agent_reviewed | content_review | — |
 | `lesson-islm-meal-adab-001` | draft | author, religious_review, content_review | Draft content cannot be published; Religious review is unverified; Arabic phrases are not verified |
-| `lesson-k-maps-plants-001` | agent_reviewed | content_review | — |
-| `lesson-k-picture-problems-001` | agent_reviewed | content_review | — |
-| `lesson-k-read-words-001` | agent_reviewed | content_review | — |
-| `lesson-k-routines-001` | agent_reviewed | content_review | — |
-| `lesson-prek-add-sub-objects-001` | agent_reviewed | content_review | — |
-| `lesson-prek-compose-10-001` | agent_reviewed | content_review | — |
-| `lesson-prek-movable-letters-001` | agent_reviewed | content_review | — |
-| `lesson-prek-sound-letter-001` | agent_reviewed | content_review | — |
-| `lesson-prek-world-cycles-001` | agent_reviewed | content_review | — |
-| `lesson-pre-3period-001` | agent_reviewed | content_review | — |
-| `lesson-pre-count10-001` | agent_reviewed | content_review | — |
-| `lesson-pre-dress-001` | agent_reviewed | content_review | — |
-| `lesson-pre-length-001` | agent_reviewed | content_review | — |
-| `lesson-pre-pattern-001` | agent_reviewed | content_review | — |
-| `lesson-pre-prewrite-001` | agent_reviewed | content_review | — |
-| `lesson-pre-shapes-001` | agent_reviewed | content_review | — |
-| `lesson-pre-sounds-001` | agent_reviewed | content_review | — |
-| `lesson-robo-arrows-001` | agent_reviewed | content_review | — |
-| `lesson-robo-g1-debug-001` | agent_reviewed | content_review | — |
-| `lesson-robo-g1-grid-001` | agent_reviewed | content_review | — |
-| `lesson-robo-g1-sensors-001` | agent_reviewed | content_review | — |
-| `lesson-robo-g1-trace-001` | agent_reviewed | content_review | — |
-| `lesson-robo-k-linkage-001` | agent_reviewed | content_review | — |
-| `lesson-robo-k-loops-001` | agent_reviewed | content_review | — |
-| `lesson-robo-prek-adult-robot-001` | agent_reviewed | content_review | — |
-| `lesson-robo-prek-gears-001` | agent_reviewed | content_review | — |
-| `lesson-robo-ramps-001` | agent_reviewed | content_review | — |
 

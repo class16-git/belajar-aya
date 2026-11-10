@@ -23,11 +23,11 @@ for (const vp of [{ name: 'mobile', width: 390, height: 844 }, { name: 'tablet',
     const islamic = queue.locator('[data-review-item="lesson-islm-meal-adab-001"]');
     await expect(islamic).toContainText('Qualified religious review');
     await expect(islamic).toContainText('Arabic text');
-    await expect(queue.locator('[data-review-item="lesson-robo-arrows-001"]')).toContainText('Content review');
+    await expect(queue.locator('[data-review-item="lesson-robo-arrows-001"]')).toHaveCount(0); // owner-approved
     await expect(queue.locator('[data-review-item="lesson-g1-count-20-001"]')).toHaveCount(0);
 
     const matrix = page.getByTestId('coverage-matrix');
-    await expect(matrix.locator('[data-cell="g1:singapore_math"]')).toContainText('2/8');
+    await expect(matrix.locator('[data-cell="g1:singapore_math"]')).toContainText('4/8');
     await expect(matrix.locator('[data-cell="age2_3:islamic_studies"]')).toContainText('0/3');
     await page.locator('[data-stage="age2_3"] summary').click();
     await expect(page.locator('[data-objective="islm.age2_3.bismillah-alhamdulillah"]')).toContainText('Awaiting religious review');

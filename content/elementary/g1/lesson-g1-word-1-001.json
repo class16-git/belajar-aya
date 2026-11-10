@@ -66,7 +66,7 @@
     "en": "Kitchen stories: tell a short story with real objects (“There are 6 spoons. We use 2. How many are left?”). Your child draws a bar and labels the parts.",
     "id": "Cerita dapur: ceritakan kisah pendek dengan benda nyata (“Ada 6 sendok. Kita pakai 2. Berapa yang tersisa?”). Anak menggambar batang dan memberi label pada bagian-bagiannya."
   },
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -74,7 +74,10 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0",
   "framework": "singapore_math",

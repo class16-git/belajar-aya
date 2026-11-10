@@ -64,7 +64,7 @@
     "en": "Hide and find: show 9 blocks, hide some under a cup and show the rest. Write 9 − □ = 5 together.",
     "id": "Sembunyi dan temukan: tunjukkan 9 balok, sembunyikan beberapa di bawah gelas dan tunjukkan sisanya. Tulis 9 − □ = 5 bersama."
   },
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -72,7 +72,10 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0",
   "framework": "singapore_math",
