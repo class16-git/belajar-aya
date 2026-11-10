@@ -190,7 +190,7 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
             {p.kind === 'bond-equation' && (
               <>
                 <Equation whole={p.whole} part={p.knownPart} blank={p.blank} value={phase === 'correct' || phase === 'solution' ? String(solution?.answer ?? '') : typed} />
-                {showRep && <div className="mt-4"><NumberBond whole={p.whole} part={p.knownPart} unknownSide="right" /></div>}
+                {showRep && <div className="mt-4"><NumberBond whole={p.whole} part={p.knownPart} unknownSide="right" revealed={phase === 'correct' || phase === 'solution' ? (solution?.answer ?? null) : null} /></div>}
               </>
             )}
           </section>

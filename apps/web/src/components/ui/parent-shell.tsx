@@ -28,8 +28,8 @@ export function ParentShell({ t, active, children }: { t: Dictionary; active?: N
             <SignOutButton />
           </div>
         </div>
-        <nav aria-label={t.nav.menu} className="mx-auto max-w-6xl overflow-x-auto px-2">
-          <ul className="flex gap-1 pb-2">
+        <nav aria-label={t.nav.menu} className="mx-auto max-w-6xl px-2">
+          <ul className="flex flex-wrap gap-1 pb-2">
             {items.map((i) => (
               <li key={i.key}>
                 <Link

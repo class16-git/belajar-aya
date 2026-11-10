@@ -50,6 +50,8 @@ export function TenFrame({
               </span>
             ) : isMarked ? (
               <span className="relative block h-[72%] w-[72%] rounded-full bg-bead-blue shadow-inner"><Plus /></span>
+            ) : interactive && mode === 'fill' ? (
+              <span aria-hidden="true" className="block h-[60%] w-[60%] rounded-full border-[3px] border-dashed border-sand" />
             ) : null;
             const cls = `flex aspect-square min-h-11 items-center justify-center rounded-xl bg-white transition-transform duration-calm ${highlightEmpty && !isFixed && !isMarked ? 'outline-dashed outline-[3px] outline-clay' : ''}`;
             return interactive ? (

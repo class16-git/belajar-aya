@@ -384,6 +384,11 @@ test.describe('security', () => {
     expect(last).toBe(429);
   });
 
+  test('oversized request bodies are rejected', async ({ request, baseURL }) => {
+    const r = await request.post('/api/auth/signin', { headers: { Origin: baseURL! }, data: { email: 'x'.repeat(40_000), password: 'y' } });
+    expect(r.status()).toBe(413);
+  });
+
   test('security headers are present', async ({ request }) => {
     const r = await request.get('/');
     expect(r.headers()['content-security-policy']).toContain("frame-ancestors 'none'");

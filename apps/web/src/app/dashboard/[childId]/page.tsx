@@ -22,7 +22,7 @@ export default async function ChildDashboard({ params }: { params: Promise<{ chi
   const t = getDictionary(locale);
   const p = await buildProgress(child);
   const df = new Intl.DateTimeFormat(locale === 'id' ? 'id-ID' : 'en-GB', { dateStyle: 'medium', timeZone: p.ctx.timezone });
-  const dtf = new Intl.DateTimeFormat(locale === 'id' ? 'id-ID' : 'en-GB', { dateStyle: 'short', timeStyle: 'short', timeZone: p.ctx.timezone });
+  const dtf = new Intl.DateTimeFormat(locale === 'id' ? 'id-ID' : 'en-GB', { dateStyle: 'medium', timeStyle: 'short', timeZone: p.ctx.timezone });
   const skillTitle = (id: string | null) => getCatalog().skills.find((s) => s.id === id)?.title[locale] ?? id ?? '';
   const lessonTitle = (id: string | null) => getCatalog().lessons.find((l) => l.id === id)?.title[locale] ?? '';
   const misc = (code: string) => (t.dashboard.misconception as Record<string, string>)[code] ?? code;
@@ -107,8 +107,8 @@ export default async function ChildDashboard({ params }: { params: Promise<{ chi
                         </span>
                         {s.score === null ? '—' : s.score.toFixed(2)}
                       </span>
-                      <span className="text-sm">{t.dashboard.independent}: {s.independentCorrect}/3</span>
-                      <span className="text-sm">{t.dashboard.formats}: {s.formats}/2</span>
+                      <span className="text-sm">{t.dashboard.independent}: {Math.min(s.independentCorrect, 3)}/3{s.independentCorrect >= 3 ? ' ✓' : ''}</span>
+                      <span className="text-sm">{t.dashboard.formats}: {Math.min(s.formats, 2)}/2{s.formats >= 2 ? ' ✓' : ''}</span>
                       <span className="text-sm">{t.dashboard.nextReview}: {s.nextReviewAt ? df.format(s.nextReviewAt) : '—'}</span>
                       <span className="text-sm font-semibold text-sky" aria-hidden="true">{t.dashboard.evidence} ▾</span>
                     </summary>

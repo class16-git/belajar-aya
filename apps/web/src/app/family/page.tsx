@@ -44,7 +44,7 @@ export default async function FamilyPage() {
                       {c.schoolGrade ? ` · ${c.schoolGrade}` : ''}
                     </p>
                   </div>
-                  <span className={`chip ${screen ? 'border-sky bg-sky-light text-[#2f5370]' : 'border-sage bg-sage-light text-sage-dark'}`}>
+                  <span className={`chip shrink-0 whitespace-nowrap ${screen ? 'border-sky bg-sky-light text-[#2f5370]' : 'border-sage bg-sage-light text-sage-dark'}`}>
                     {screen ? t.family.modeElementary : t.family.modeToddler}
                   </span>
                 </div>

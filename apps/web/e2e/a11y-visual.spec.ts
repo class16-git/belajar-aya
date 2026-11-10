@@ -2,7 +2,7 @@ import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { answer, answerFor, createFamily, currentActivityId, db, enterChildMode, signIn, startFirstChoice } from './helpers';
+import { answer, answerFor, createFamily, currentActivityId, db, enterChildMode, signIn } from './helpers';
 
 const OUT = join(process.cwd(), '../../artifacts/screenshots');
 mkdirSync(OUT, { recursive: true });
@@ -122,6 +122,9 @@ for (const vp of VIEWPORTS) {
         if (i === 5) {
           for (let h = 0; h < 5; h++) await page.getByRole('button', { name: 'I need help' }).click();
           await check(page, '29-runner-worked-example', vp, { childTargets: true });
+          // Regression: once the solution is shown, the number-bond picture must reveal it too (no "?").
+          const bond = page.getByRole('img', { name: /^Number bond/ });
+          if (await bond.count()) await expect(bond.first()).not.toHaveAttribute('aria-label', /unknown/);
         } else {
           await answer(page, await answerFor(id));
         }

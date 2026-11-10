@@ -30,9 +30,14 @@ export function assertSameOrigin(req: Request): void {
 }
 
 export async function parseBody<S extends ZodTypeAny>(req: Request, schema: S): Promise<output<S>> {
+  const MAX_BODY = 32 * 1024; // all Atlas payloads are tiny; reject oversized bodies before parsing
+  const declared = Number(req.headers.get('content-length') ?? '0');
+  if (declared > MAX_BODY) throw new HttpError(413, 'PAYLOAD_TOO_LARGE');
+  const text = await req.text();
+  if (text.length > MAX_BODY) throw new HttpError(413, 'PAYLOAD_TOO_LARGE');
   let raw: unknown;
   try {
-    raw = await req.json();
+    raw = JSON.parse(text);
   } catch {
     throw new HttpError(400, 'INVALID_JSON');
   }
