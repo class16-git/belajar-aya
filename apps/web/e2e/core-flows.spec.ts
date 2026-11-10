@@ -462,6 +462,32 @@ test.describe('final review regressions (R-F6, R-F7)', () => {
   });
 });
 
+test.describe('grade setting (Phase 1 content is Kindergarten/Grade 1 only)', () => {
+  test('a Grade 5 learner is not given Grade 1 work; Kindergarten still gets the lessons', async ({ page, request, baseURL }) => {
+    const fam = await createFamily(request, baseURL!, 'grade5');
+    const headers = { Origin: baseURL! };
+    const base = { timezone: 'Asia/Jakarta', locale: 'en', itemsPerSession: 5, targetMinutes: 15, audioEnabled: false, reducedMotion: false, focusSkillId: null, mode: 'ELEMENTARY_GUIDED' };
+    const g5 = (await (await request.post('/api/parent/children', { headers, data: { ...base, nickname: 'Besar', dateOfBirth: '2015-03-01', schoolGrade: 'Grade 5' } })).json()).id as string;
+    const kg = (await (await request.post('/api/parent/children', { headers, data: { ...base, nickname: 'Kecil', dateOfBirth: '2020-03-01', schoolGrade: 'Kindergarten' } })).json()).id as string;
+    await signIn(page, fam.email);
+
+    await page.goto(`/dashboard/${g5}`);
+    await expect(page.getByTestId('grade-not-supported')).toContainText('No lessons for Grade 5 yet');
+    await expect(page.getByTestId('recommendation')).toHaveCount(0);
+
+    await enterChildMode(page, 'Besar');
+    await expect(page.getByTestId('grade-coming-soon')).toBeVisible();
+    await expect(page.locator('[data-lesson]')).toHaveCount(0);
+    expect((await page.request.post('/api/learn/session', { headers, data: {} })).status()).toBe(403);
+    await exitChildMode(page);
+
+    await enterChildMode(page, 'Kecil');
+    await expect(page.locator('[data-lesson]').first()).toBeVisible();
+    await exitChildMode(page);
+    expect(kg).toBeTruthy();
+  });
+});
+
 test.describe('security', () => {
   test('IDOR: a parent cannot read or change another family’s child', async ({ browser, baseURL }) => {
     const a = await browser.newContext({ baseURL });

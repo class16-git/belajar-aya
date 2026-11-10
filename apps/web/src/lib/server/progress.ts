@@ -5,6 +5,7 @@ import { prisma, type ChildProfile } from '@atlas/database';
 import { ageContext } from './children';
 import { config } from './config';
 import { engineInput, toEngineState } from './learning';
+import { availabilityForBand, interactiveBandForGrade } from './availability';
 
 export interface SkillProgress {
   skill: Skill;
@@ -79,8 +80,11 @@ export async function buildProgress(child: ChildProfile, now = new Date()) {
   }
   const misconceptions = [...patterns.values()].sort((a, b) => b.count - a.count);
 
+  const gradeSupported = isToddler || interactiveBandForGrade(child.schoolGrade) !== null;
+  // Tell the parent when lessons exist but are waiting for their (human) review.
+  const availability = availabilityForBand(isToddler ? 'toddler' : 'g1', config.minReview);
   let recommendation = null;
-  if (!isToddler) {
+  if (!isToddler && gradeSupported) {
     const input = await engineInput(child, ctx, now, child.focusSkillId);
     recommendation = recommendNext(input);
   }
@@ -104,6 +108,8 @@ export async function buildProgress(child: ChildProfile, now = new Date()) {
   return {
     ctx,
     isToddler,
+    gradeSupported,
+    availability,
     skills,
     misconceptions,
     dueReviews: skills.filter((s) => s.status === 'review_due'),

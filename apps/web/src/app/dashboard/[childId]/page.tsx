@@ -52,7 +52,16 @@ export default async function ChildDashboard({ params }: { params: Promise<{ chi
         </section>
       )}
 
-      {p.isToddler ? (
+      {p.availability.awaitingReview > 0 && (
+        <p className="card mt-6 border-2 border-clay bg-clay-light/40" data-testid="awaiting-review">
+          {fmt(t.dashboard.awaitingReview, { n: p.availability.awaitingReview })}{' '}
+          <Link href="/curriculum" className="link">{t.nav.curriculum}</Link>
+        </p>
+      )}
+
+      {!p.gradeSupported ? (
+        <p className="card mt-6" data-testid="grade-not-supported">{fmt(t.dashboard.gradeNotSupported, { grade: gradeLabel(t, child.schoolGrade) })}</p>
+      ) : p.isToddler ? (
         <>
           <p className="card mt-6">{fmt(t.dashboard.toddlerIntro, { name: child.nickname })}</p>
           <section className="mt-6" aria-labelledby="offline-h">

@@ -5,6 +5,7 @@ import { ParentShell } from '@/components/ui/parent-shell';
 import { fmt, getDictionary } from '@/lib/i18n';
 import { config } from '@/lib/server/config';
 import { currentLocale, requireParentPage } from '@/lib/server/guards';
+import { availabilityForBand } from '@/lib/server/availability';
 
 export const metadata = { title: 'Activity cards' };
 
@@ -34,6 +35,12 @@ export default async function CardsPage({ searchParams }: { searchParams: Promis
           <Link key={s.id} href={`/cards${q(s.id)}`} aria-current={sp.skill === s.id ? 'page' : undefined} className={`chip min-h-11 px-4 ${sp.skill === s.id ? 'border-bark bg-bark text-white' : 'border-sand bg-white text-bark'}`}>{s.title[locale]}</Link>
         ))}
       </nav>
+      {cards.length === 0 && availabilityForBand('toddler', config.minReview).awaitingReview > 0 && (
+        <p className="card mt-6 border-2 border-clay bg-clay-light/40" data-testid="awaiting-review">
+          {fmt(t.dashboard.awaitingReview, { n: availabilityForBand('toddler', config.minReview).awaitingReview })}{' '}
+          <Link href="/curriculum" className="link">{t.nav.curriculum}</Link>
+        </p>
+      )}
       <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((c) => (
           <li key={c.id} className="card flex flex-col gap-2" data-card={c.id}>

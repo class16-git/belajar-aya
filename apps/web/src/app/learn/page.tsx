@@ -11,12 +11,14 @@ export default async function LearnPage() {
   const { child } = await requireChildPage();
   const locale = await currentLocale();
   const t = getDictionary(locale);
-  const { ctx, choices, rec } = await childChoices(child);
+  const { ctx, choices, rec, gradeSupported } = await childChoices(child);
   return (
     <ChildShell reducedMotion={child.reducedMotion}>
       <h1 className="text-3xl font-bold">{fmt(t.learn.hello, { name: child.nickname })}</h1>
       {!ctx.policy.childScreenActivitiesAllowed ? (
         <p className="card mt-6">{t.learn.offlineOnly}</p>
+      ) : !gradeSupported ? (
+        <p className="card mt-6" data-testid="grade-coming-soon">{t.learn.gradeComingSoon}</p>
       ) : choices.length === 0 ? (
         <p className="card mt-6">{t.learn.nothing}</p>
       ) : (
