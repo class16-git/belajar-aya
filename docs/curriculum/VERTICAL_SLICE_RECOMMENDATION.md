@@ -33,7 +33,7 @@
 About one working session for implementation and tests, plus your review time. Nothing is published until you approve.
 
 ## Next slices (proposed order)
-1. **Slice A extension — age 3–4 physical cards** (practical life, sound games, arrows/paths, counting to 10) so the
+1. ✅ *(implemented 2026-11-10, awaiting your review — see `SLICE_A_PRESCHOOL_REVIEW.md`)* **Slice A extension — age 3–4 physical cards** (practical life, sound games, arrows/paths, counting to 10) so the
    toddler profile has age-appropriate cards ready at the 3rd-birthday transition (offered only after parent confirmation).
 2. **Slice E — Islamic adab & duas (ages 2–5)**, authored as drafts once you decide the madhhab, reviewer and editions;
    published only after qualified religious review. The draft mealtime card is the template.

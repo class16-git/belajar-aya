@@ -1,0 +1,144 @@
+{
+  "id": "lesson-robo-ramps-001",
+  "skillId": "ROBO-P-RAMPS",
+  "framework": "robotics_stem",
+  "objectiveIds": [
+    "robo.age3_4.ramps-balance"
+  ],
+  "title": {
+    "en": "Ramp races",
+    "id": "Balapan di lereng"
+  },
+  "ageBand": "preschool",
+  "domain": "robotics_stem",
+  "mode": "offline",
+  "objective": {
+    "en": "Make a ramp, roll objects down it, and test what changes when the ramp is higher or lower.",
+    "id": "Membuat lereng, menggelindingkan benda, dan menguji apa yang berubah saat lereng lebih tinggi atau lebih rendah."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 5,
+  "activityMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "materials": [
+    {
+      "en": "A stiff board or large tray (about 50 cm long)",
+      "id": "Papan kaku atau nampan besar (kira-kira 50 cm)"
+    },
+    {
+      "en": "Two or three thick books to raise one end",
+      "id": "Dua atau tiga buku tebal untuk meninggikan satu ujung"
+    },
+    {
+      "en": "Large rolling things: a tennis ball, a toy car, an empty plastic bottle",
+      "id": "Benda besar yang bisa menggelinding: bola tenis, mobil mainan, botol plastik kosong"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Set up on the floor, away from stairs, with the ramp resting on one book.",
+      "id": "Siapkan di lantai, jauh dari tangga, dengan lereng bertumpu pada satu buku."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Roll the ball down. Ask: 'What do you think will happen if we add another book?'",
+      "id": "Gelindingkan bola. Tanyakan: 'Menurutmu apa yang terjadi jika kita tambah satu buku?'"
+    },
+    {
+      "en": "Add a book and try again. Talk about whether it went faster or further.",
+      "id": "Tambahkan buku dan coba lagi. Bicarakan apakah bola lebih cepat atau lebih jauh."
+    },
+    {
+      "en": "Try the other objects. Which ones roll? Which ones slide or stop?",
+      "id": "Coba benda lain. Mana yang menggelinding? Mana yang meluncur atau berhenti?"
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "What do you think will happen?",
+      "id": "Menurutmu apa yang akan terjadi?"
+    },
+    {
+      "en": "Let's test it and see.",
+      "id": "Ayo kita uji dan lihat."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Makes a guess before testing",
+      "id": "Menebak sebelum menguji"
+    },
+    {
+      "en": "Changes one thing and tries again",
+      "id": "Mengubah satu hal dan mencoba lagi"
+    },
+    {
+      "en": "Describes what happened",
+      "id": "Menceritakan apa yang terjadi"
+    }
+  ],
+  "cleanup": {
+    "en": "Put the books back on the shelf and the toys in their box.",
+    "id": "Kembalikan buku ke rak dan mainan ke kotaknya."
+  },
+  "variations": [
+    {
+      "en": "Build a tower of three blocks at the bottom: can the ball knock it over?",
+      "id": "Bangun menara tiga balok di bawah: bisakah bola merobohkannya?"
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    },
+    {
+      "en": "Keep the ramp low (no higher than three books) and on the floor.",
+      "id": "Buat lereng rendah (tidak lebih tinggi dari tiga buku) dan di lantai."
+    },
+    {
+      "en": "Use only objects bigger than your child's fist (nothing that fits through a toilet-roll tube).",
+      "id": "Gunakan hanya benda yang lebih besar dari kepalan tangan anak (tidak ada yang muat masuk ke gulungan tisu toilet)."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "Guess, test, look: this is the start of engineering thinking. There is no wrong guess.",
+      "id": "Menebak, menguji, melihat: ini awal cara berpikir teknik. Tidak ada tebakan yang salah."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [
+    "physical_safety"
+  ],
+  "arabicPhrases": []
+}
