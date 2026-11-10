@@ -1,0 +1,124 @@
+{
+  "id": "passage-g2-paper-boat",
+  "stage": "g2",
+  "title": {
+    "en": "The paper boat",
+    "id": "Perahu kertas"
+  },
+  "genre": "narrative",
+  "paragraphs": {
+    "en": [
+      "After the rain, Sari and her little brother Bima folded a boat from an old newspaper. They set it in the long puddle by the gate.",
+      "The boat sailed for a moment. Then its bottom grew dark and soft, and it began to sink. Bima's lip shook.",
+      "Sari had an idea. She folded a second boat, but first she rubbed a crayon all over the paper. This time the boat floated much longer, and Bima cheered."
+    ],
+    "id": [
+      "Setelah hujan, Sari dan adiknya, Bima, melipat perahu dari koran bekas. Mereka meletakkannya di genangan panjang dekat pagar.",
+      "Perahu itu berlayar sebentar. Lalu bagian bawahnya menjadi gelap dan lembek, dan perahu mulai tenggelam. Bibir Bima bergetar.",
+      "Sari punya ide. Ia melipat perahu kedua, tetapi lebih dulu menggosokkan krayon ke seluruh kertasnya. Kali ini perahu mengapung jauh lebih lama, dan Bima bersorak."
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did they make the first boat from?",
+        "id": "Dari apa mereka membuat perahu pertama?"
+      },
+      "choices": {
+        "en": [
+          "an old newspaper",
+          "a banana leaf",
+          "a plastic bag"
+        ],
+        "id": [
+          "koran bekas",
+          "daun pisang",
+          "kantong plastik"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "How did Bima feel when the first boat sank?",
+        "id": "Bagaimana perasaan Bima ketika perahu pertama tenggelam?"
+      },
+      "choices": {
+        "en": [
+          "upset",
+          "proud",
+          "sleepy"
+        ],
+        "id": [
+          "sedih",
+          "bangga",
+          "mengantuk"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did the second boat float longer?",
+        "id": "Mengapa perahu kedua mengapung lebih lama?"
+      },
+      "choices": {
+        "en": [
+          "The crayon helped keep the water out of the paper.",
+          "The puddle was deeper.",
+          "Bima held it up."
+        ],
+        "id": [
+          "Krayon membantu menahan air masuk ke kertas.",
+          "Genangannya lebih dalam.",
+          "Bima memeganginya."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q4",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happened first?",
+        "id": "Apa yang terjadi lebih dulu?"
+      },
+      "choices": {
+        "en": [
+          "They put the boat in the puddle.",
+          "Sari rubbed crayon on the paper.",
+          "Bima cheered."
+        ],
+        "id": [
+          "Mereka meletakkan perahu di genangan.",
+          "Sari menggosokkan krayon ke kertas.",
+          "Bima bersorak."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    }
+  ],
+  "copyrightStatus": "original",
+  "factChecks": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "physical-safety-check",
+      "pilot-batch-2026-11"
+    ]
+  }
+}

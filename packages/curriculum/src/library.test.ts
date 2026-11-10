@@ -162,10 +162,14 @@ describe('owner review (2026-11-10)', () => {
       expect(b.accessMode).toBe('external_link');
       expect(b.rights.titleLicenseConfirmed).toBe(false); // approval never changes rights facts
     }
-    // Passages corrected after the audit (ATL-08/09) await the owner's re-review; the rest stay published.
-    // passage-g4-mangroves: its Indonesia claim still needs a verified source.
+    // Passages corrected after the audit (ATL-08/09), the mangrove passage (claim needs a source) and the new pilot
+    // batch await a person's review; only owner-reviewed passages without open factual claims are live.
     const reReview = ['passage-g6-advert-report', 'passage-k-red-kite', 'passage-g4-mangroves'];
-    for (const p of lib.passages) expect(isPassageVisible(p, 'reviewed'), p.id).toBe(!reReview.includes(p.id));
+    for (const p of lib.passages) {
+      const pilot = p.review.agentChecks.includes('pilot-batch-2026-11');
+      if (pilot) expect(p.reviewStatus, p.id).toBe('agent_reviewed'); // generated content is never auto-published
+      expect(isPassageVisible(p, 'reviewed'), p.id).toBe(!reReview.includes(p.id) && !pilot);
+    }
   });
 });
 

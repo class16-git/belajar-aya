@@ -1,0 +1,124 @@
+{
+  "id": "passage-g3-market-list",
+  "stage": "g3",
+  "title": {
+    "en": "The wet shopping list",
+    "id": "Daftar belanja yang basah"
+  },
+  "genre": "narrative",
+  "paragraphs": {
+    "en": [
+      "Every Sunday, Dani helps his mother at the morning market. This week she gave him the shopping list to hold: eggs, spinach, chillies, tofu and bananas.",
+      "Near the fish stall, a splash of water hit the list. The ink ran into blue clouds, and Dani could not read a single word.",
+      "Dani closed his eyes. “We need things for breakfast, things for the soup, and something sweet,” he said slowly. Eggs and tofu for breakfast, spinach and chillies for the soup, bananas for something sweet. His mother smiled and handed him the basket."
+    ],
+    "id": [
+      "Setiap hari Minggu, Dani membantu ibunya di pasar pagi. Minggu ini Ibu memberinya daftar belanja untuk dipegang: telur, bayam, cabai, tahu, dan pisang.",
+      "Di dekat lapak ikan, cipratan air mengenai daftar itu. Tintanya meluber menjadi awan biru, dan Dani tidak bisa membaca satu kata pun.",
+      "Dani memejamkan mata. “Kita perlu bahan untuk sarapan, bahan untuk sup, dan sesuatu yang manis,” katanya pelan. Telur dan tahu untuk sarapan, bayam dan cabai untuk sup, pisang untuk yang manis. Ibu tersenyum dan menyerahkan keranjang kepadanya."
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why could Dani not read the list?",
+        "id": "Mengapa Dani tidak bisa membaca daftarnya?"
+      },
+      "choices": {
+        "en": [
+          "Water made the ink run.",
+          "He dropped it in the fish stall.",
+          "It was written very small."
+        ],
+        "id": [
+          "Air membuat tintanya meluber.",
+          "Daftarnya jatuh di lapak ikan.",
+          "Tulisannya sangat kecil."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "How did Dani remember the five things?",
+        "id": "Bagaimana Dani mengingat kelima barang itu?"
+      },
+      "choices": {
+        "en": [
+          "He sorted them into groups by meal.",
+          "He asked the fish seller.",
+          "He dried the list and read it again."
+        ],
+        "id": [
+          "Ia mengelompokkannya menurut waktu makan.",
+          "Ia bertanya kepada penjual ikan.",
+          "Ia mengeringkan daftar lalu membacanya lagi."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "In paragraph 2, “the ink ran” means the ink …",
+        "id": "Di paragraf 2, “tintanya meluber” berarti tinta itu …"
+      },
+      "choices": {
+        "en": [
+          "spread out and blurred",
+          "moved very fast",
+          "dried quickly"
+        ],
+        "id": [
+          "menyebar dan kabur",
+          "bergerak sangat cepat",
+          "cepat kering"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did his mother hand Dani the basket at the end?",
+        "id": "Mengapa di akhir cerita Ibu menyerahkan keranjang kepada Dani?"
+      },
+      "choices": {
+        "en": [
+          "She trusted him to keep helping with the shopping.",
+          "She was cross that the list got wet.",
+          "The basket was broken."
+        ],
+        "id": [
+          "Ibu percaya Dani bisa terus membantu berbelanja.",
+          "Ibu kesal karena daftarnya basah.",
+          "Keranjangnya rusak."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    }
+  ],
+  "copyrightStatus": "original",
+  "factChecks": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "physical-safety-check",
+      "pilot-batch-2026-11"
+    ]
+  }
+}

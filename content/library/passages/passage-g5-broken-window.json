@@ -1,0 +1,126 @@
+{
+  "id": "passage-g5-broken-window",
+  "stage": "g5",
+  "title": {
+    "en": "The broken window",
+    "id": "Jendela yang pecah"
+  },
+  "genre": "narrative",
+  "paragraphs": {
+    "en": [
+      "The ball left Arif's foot faster than he meant. It flew over the wall and, with a sharp crack, went through Bu Lastri's kitchen window.",
+      "His friends scattered in seconds. Arif stood alone in the lane, his heart thumping. Nobody had seen who kicked it. He could walk home, and Bu Lastri might never know.",
+      "Instead, he knocked on her gate. “It was my ball,” he said, staring at his sandals. “I will pay for the glass from my savings, even if it takes months.”",
+      "Bu Lastri looked at the broken pane, then at him. “Glass can be replaced,” she said. “Someone who tells the truth is harder to find. Your father and I will sweep up the glass, and then the three of us will talk.”"
+    ],
+    "id": [
+      "Bola melesat dari kaki Arif lebih cepat daripada yang ia kira. Bola itu terbang melewati tembok dan, dengan bunyi “prak” yang tajam, menembus jendela dapur Bu Lastri.",
+      "Teman-temannya berhamburan dalam hitungan detik. Arif berdiri sendirian di gang, jantungnya berdebar keras. Tidak ada yang melihat siapa yang menendang. Ia bisa saja pulang, dan Bu Lastri mungkin tidak akan pernah tahu.",
+      "Namun, ia malah mengetuk pagar rumah Bu Lastri. “Itu bola saya,” katanya sambil menatap sandalnya. “Saya akan mengganti kacanya dari tabungan saya, walaupun butuh berbulan-bulan.”",
+      "Bu Lastri memandang kaca yang pecah, lalu memandang Arif. “Kaca bisa diganti,” katanya. “Orang yang berkata jujur lebih sulit dicari. Ayahmu dan Ibu akan menyapu pecahan kacanya, lalu kita bertiga bicara.”"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Arif's friends run away?",
+        "id": "Mengapa teman-teman Arif lari?"
+      },
+      "choices": {
+        "en": [
+          "They did not want to be blamed.",
+          "They were late for dinner.",
+          "Bu Lastri chased them."
+        ],
+        "id": [
+          "Mereka tidak mau disalahkan.",
+          "Mereka terlambat makan malam.",
+          "Bu Lastri mengejar mereka."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which words show that Arif was nervous?",
+        "id": "Kata-kata mana yang menunjukkan Arif gugup?"
+      },
+      "choices": {
+        "en": [
+          "“his heart thumping”",
+          "“flew over the wall”",
+          "“Glass can be replaced”"
+        ],
+        "id": [
+          "“jantungnya berdebar keras”",
+          "“terbang melewati tembok”",
+          "“Kaca bisa diganti”"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "What does Bu Lastri mean by “Someone who tells the truth is harder to find”?",
+        "id": "Apa maksud Bu Lastri dengan “Orang yang berkata jujur lebih sulit dicari”?"
+      },
+      "choices": {
+        "en": [
+          "She values Arif's honesty more than the window.",
+          "She cannot find a glass shop.",
+          "She thinks Arif is lying."
+        ],
+        "id": [
+          "Ia lebih menghargai kejujuran Arif daripada jendelanya.",
+          "Ia tidak bisa menemukan toko kaca.",
+          "Ia mengira Arif berbohong."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q4",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main idea of the story?",
+        "id": "Apa gagasan utama cerita ini?"
+      },
+      "choices": {
+        "en": [
+          "Owning up to a mistake takes courage and earns trust.",
+          "Football should never be played near houses.",
+          "Windows are expensive to replace."
+        ],
+        "id": [
+          "Mengakui kesalahan butuh keberanian dan membuat orang percaya.",
+          "Sepak bola tidak boleh dimainkan di dekat rumah.",
+          "Mengganti jendela itu mahal."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "copyrightStatus": "original",
+  "factChecks": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "physical-safety-check",
+      "pilot-batch-2026-11"
+    ]
+  }
+}

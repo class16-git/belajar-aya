@@ -1,0 +1,148 @@
+{
+  "id": "passage-g6-grandfathers-radio",
+  "stage": "g6",
+  "title": {
+    "en": "Grandfather's radio",
+    "id": "Radio Kakek"
+  },
+  "genre": "narrative",
+  "paragraphs": {
+    "en": [
+      "Grandfather's battery radio sat on the shelf like an old cat, warm and humming, though nobody but him listened to it anymore. When it finally fell silent one evening, Nadia expected him to buy a new one, or simply to switch to her phone.",
+      "He did neither. He spread a cloth on the table, took out the batteries first, laid out tiny screwdrivers, and opened the back of the radio as carefully as if it were a letter. “Every machine tells you what is wrong,” he said, “if you are patient enough to listen.”",
+      "For two evenings Nadia held the torch while he tested wires and wrote notes in a cramped hand. She grew bored, then curious, then quietly determined. On the third evening it was Nadia who noticed the loose wire, its end blackened.",
+      "When the radio crackled back to life, Grandfather did not cheer. He simply turned the dial to his favourite station and slid the screwdrivers across the table to her. “Next time,” he said, “you open it.”"
+    ],
+    "id": [
+      "Radio baterai Kakek duduk di rak seperti kucing tua, hangat dan berdengung, meski tak ada lagi yang mendengarkannya selain Kakek. Ketika suatu malam radio itu akhirnya diam, Nadia mengira Kakek akan membeli yang baru, atau beralih saja ke ponsel Nadia.",
+      "Kakek tidak melakukan keduanya. Ia membentangkan kain di meja, mengeluarkan baterainya lebih dulu, menata obeng-obeng kecil, lalu membuka bagian belakang radio dengan hati-hati, seolah membuka sepucuk surat. “Setiap mesin memberi tahu apa yang rusak,” katanya, “kalau kita cukup sabar mendengarkan.”",
+      "Selama dua malam Nadia memegang senter sementara Kakek memeriksa kabel dan menulis catatan dengan huruf kecil-kecil. Nadia mulai bosan, lalu penasaran, lalu diam-diam bertekad. Pada malam ketiga, justru Nadia yang melihat kabel yang longgar, ujungnya menghitam.",
+      "Ketika radio itu kembali bersuara kresek-kresek, Kakek tidak bersorak. Ia hanya memutar tombol ke stasiun kesukaannya dan menggeser obeng-obeng itu ke arah Nadia. “Lain kali,” katanya, “kamu yang membukanya.”"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "The radio “sat on the shelf like an old cat”. This comparison suggests the radio was …",
+        "id": "Radio itu “duduk di rak seperti kucing tua”. Perbandingan ini menunjukkan radio itu …"
+      },
+      "choices": {
+        "en": [
+          "warm, familiar and always there",
+          "fast and dangerous",
+          "new and shiny"
+        ],
+        "id": [
+          "hangat, akrab, dan selalu ada",
+          "cepat dan berbahaya",
+          "baru dan mengilap"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "What does the way Grandfather fixes the radio show about him?",
+        "id": "Apa yang ditunjukkan cara Kakek memperbaiki radio tentang dirinya?"
+      },
+      "choices": {
+        "en": [
+          "He is patient and careful.",
+          "He is in a hurry.",
+          "He does not care about the radio."
+        ],
+        "id": [
+          "Ia sabar dan teliti.",
+          "Ia terburu-buru.",
+          "Ia tidak peduli pada radionya."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "How did Nadia's feelings change over the two evenings?",
+        "id": "Bagaimana perasaan Nadia berubah selama dua malam itu?"
+      },
+      "choices": {
+        "en": [
+          "bored, then curious, then determined",
+          "excited, then bored, then angry",
+          "scared, then sad, then bored"
+        ],
+        "id": [
+          "bosan, lalu penasaran, lalu bertekad",
+          "bersemangat, lalu bosan, lalu marah",
+          "takut, lalu sedih, lalu bosan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Grandfather slide the screwdrivers across to Nadia?",
+        "id": "Mengapa Kakek menggeser obeng-obeng itu ke arah Nadia?"
+      },
+      "choices": {
+        "en": [
+          "He trusted her to do the next repair.",
+          "He wanted her to put them away.",
+          "He was annoyed that she found the wire."
+        ],
+        "id": [
+          "Ia percaya Nadia bisa melakukan perbaikan berikutnya.",
+          "Ia ingin Nadia menyimpannya.",
+          "Ia kesal karena Nadia menemukan kabelnya."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q5",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "Which is the best statement of the story's theme?",
+        "id": "Manakah pernyataan terbaik tentang tema cerita ini?"
+      },
+      "choices": {
+        "en": [
+          "Patience and careful attention can be passed from one person to another.",
+          "Old radios are better than phones.",
+          "Broken machines should be thrown away."
+        ],
+        "id": [
+          "Kesabaran dan ketelitian bisa diwariskan dari satu orang ke orang lain.",
+          "Radio lama lebih baik daripada ponsel.",
+          "Mesin yang rusak sebaiknya dibuang."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "copyrightStatus": "original",
+  "factChecks": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "physical-safety-check",
+      "pilot-batch-2026-11"
+    ]
+  }
+}

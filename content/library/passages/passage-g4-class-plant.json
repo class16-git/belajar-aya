@@ -1,0 +1,126 @@
+{
+  "id": "passage-g4-class-plant",
+  "stage": "g4",
+  "title": {
+    "en": "The class chilli plant",
+    "id": "Tanaman cabai kelas"
+  },
+  "genre": "narrative",
+  "paragraphs": {
+    "en": [
+      "Before the school holiday, Pak Hadi asked who would take the class chilli plant home. Nobody answered, so Rina raised her hand, although she had never looked after a plant before.",
+      "On the third day the leaves hung down like wet socks. Rina pressed the soil with her finger. It was dry and hard, and she realised she had not watered it since she arrived home.",
+      "She watered it slowly, then made a small chart on the fridge with a box for every morning. Each day she ticked a box after watering. By the end of the holiday the plant had two new white flowers.",
+      "When school started, Rina taped the chart to the classroom wall. “Next holiday,” she said, “whoever takes the plant can use this.”"
+    ],
+    "id": [
+      "Sebelum libur sekolah, Pak Hadi bertanya siapa yang mau membawa pulang tanaman cabai kelas. Tidak ada yang menjawab, jadi Rina mengangkat tangan, padahal ia belum pernah merawat tanaman.",
+      "Pada hari ketiga, daunnya terkulai seperti kaus kaki basah. Rina menekan tanah dengan jarinya. Tanahnya kering dan keras, dan ia sadar belum menyiramnya sejak tiba di rumah.",
+      "Ia menyiram tanaman itu pelan-pelan, lalu membuat tabel kecil di kulkas dengan satu kotak untuk setiap pagi. Setiap hari ia mencentang kotak setelah menyiram. Di akhir liburan, tanaman itu punya dua bunga putih baru.",
+      "Ketika sekolah dimulai, Rina menempelkan tabel itu di dinding kelas. “Libur berikutnya,” katanya, “siapa pun yang membawa tanaman ini bisa memakai tabel ini.”"
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Rina raise her hand?",
+        "id": "Mengapa Rina mengangkat tangan?"
+      },
+      "choices": {
+        "en": [
+          "Nobody else offered to take the plant.",
+          "She was an expert gardener.",
+          "Pak Hadi had already chosen her."
+        ],
+        "id": [
+          "Tidak ada orang lain yang mau membawa tanaman itu.",
+          "Ia ahli berkebun.",
+          "Pak Hadi sudah memilihnya."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "How did Rina find out the plant needed water?",
+        "id": "Bagaimana Rina tahu tanaman itu perlu air?"
+      },
+      "choices": {
+        "en": [
+          "She felt that the soil was dry and hard.",
+          "Her mother told her.",
+          "The flowers fell off."
+        ],
+        "id": [
+          "Ia merasakan tanahnya kering dan keras.",
+          "Ibunya memberi tahu.",
+          "Bunganya rontok."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "“The leaves hung down like wet socks” tells us the leaves were …",
+        "id": "“Daunnya terkulai seperti kaus kaki basah” menunjukkan daunnya …"
+      },
+      "choices": {
+        "en": [
+          "drooping and limp",
+          "bright and shiny",
+          "growing fast"
+        ],
+        "id": [
+          "layu dan lemas",
+          "cerah dan mengilap",
+          "tumbuh cepat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q4",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the story mostly about?",
+        "id": "Cerita ini terutama tentang apa?"
+      },
+      "choices": {
+        "en": [
+          "Rina learns to care for something and helps others do it too.",
+          "How chilli plants make flowers.",
+          "Why school holidays are long."
+        ],
+        "id": [
+          "Rina belajar merawat sesuatu dan membantu orang lain melakukannya juga.",
+          "Bagaimana tanaman cabai berbunga.",
+          "Mengapa libur sekolah itu panjang."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "copyrightStatus": "original",
+  "factChecks": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "physical-safety-check",
+      "pilot-batch-2026-11"
+    ]
+  }
+}

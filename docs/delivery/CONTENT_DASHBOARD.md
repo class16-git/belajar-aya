@@ -13,9 +13,9 @@ The **Awaiting human** columns count content that passed the agent checks but is
 | Age 4–5 | 6 | 1 | 0 | 6/150 (4%) | 8 | 0 | 8/150 (5%) · 0 passages, 8 books |
 | Kindergarten | 10 | 1 | 0 | 10/150 (7%) | 8 | 1 | 8/150 (5%) · 1 passages, 8 books |
 | Grade 1 | 16 | 0 | 1 | 16/150 (11%) | 7 | 0 | 7/150 (5%) · 1 passages, 6 books |
-| Grade 2 | 0 | 0 | 0 | 0/150 (0%) | 3 | 0 | 3/150 (2%) · 1 passages, 2 books |
-| Grade 3 | 0 | 0 | 0 | 0/150 (0%) | 1 | 0 | 1/150 (1%) · 1 passages, 0 books |
-| Grade 4 | 0 | 0 | 0 | 0/150 (0%) | 0 | 1 | 0/150 (0%) · 1 passages, 0 books |
-| Grade 5 | 0 | 0 | 0 | 0/150 (0%) | 1 | 0 | 1/150 (1%) · 1 passages, 0 books |
-| Grade 6 | 0 | 0 | 0 | 0/150 (0%) | 0 | 1 | 0/150 (0%) · 1 passages, 0 books |
-| **All levels (unique units: 59)** | 55 | 2 | 2 | 4% | 37 | 3 | 2% |
+| Grade 2 | 0 | 0 | 0 | 0/150 (0%) | 3 | 1 | 3/150 (2%) · 2 passages, 2 books |
+| Grade 3 | 0 | 0 | 0 | 0/150 (0%) | 1 | 1 | 1/150 (1%) · 2 passages, 0 books |
+| Grade 4 | 0 | 0 | 0 | 0/150 (0%) | 0 | 2 | 0/150 (0%) · 2 passages, 0 books |
+| Grade 5 | 0 | 0 | 0 | 0/150 (0%) | 1 | 1 | 1/150 (1%) · 2 passages, 0 books |
+| Grade 6 | 0 | 0 | 0 | 0/150 (0%) | 0 | 2 | 0/150 (0%) · 2 passages, 0 books |
+| **All levels (unique units: 59)** | 55 | 2 | 2 | 4% | 37 | 8 | 2% |
