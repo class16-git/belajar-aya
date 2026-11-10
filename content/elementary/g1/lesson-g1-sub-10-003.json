@@ -1,0 +1,82 @@
+{
+  "id": "lesson-g1-sub-10-003",
+  "skillId": "MATH-G1-SUB-10",
+  "title": {
+    "en": "Subtraction sentences",
+    "id": "Kalimat pengurangan"
+  },
+  "ageBand": "g1",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": {
+    "en": "Solve subtraction number sentences within 10, including a missing part.",
+    "id": "Menyelesaikan kalimat pengurangan sampai 10, termasuk bagian yang hilang."
+  },
+  "prerequisites": [
+    "MATH-G1-BONDS-10"
+  ],
+  "cpaStage": "abstract",
+  "materials": [
+    {
+      "en": "Number pad",
+      "id": "Papan angka"
+    }
+  ],
+  "generator": "sub-equation",
+  "hintLadder": [
+    {
+      "en": "Read the number sentence. Which number is missing?",
+      "id": "Baca kalimat bilangannya. Bilangan mana yang hilang?"
+    },
+    {
+      "en": "The minus sign means we take away. The first number is the whole.",
+      "id": "Tanda kurang berarti kita mengambil. Bilangan pertama adalah keseluruhan."
+    },
+    {
+      "en": "Look at the number bond. The whole is at the top.",
+      "id": "Lihat ikatan bilangan. Keseluruhan ada di atas."
+    },
+    {
+      "en": "Start at {whole} and count back, one step at a time.",
+      "id": "Mulai dari {whole} lalu hitung mundur, satu langkah setiap kali."
+    },
+    {
+      "en": "{whole} − {part} = {missing}. Let’s try a new one.",
+      "id": "{whole} − {part} = {missing}. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "WRONG_OPERATION",
+    "PART_WHOLE_CONFUSION",
+    "WHOLE_AS_PART",
+    "COUNTED_TAKEN_AWAY",
+    "COUNT_BACK_WRONG_START",
+    "COUNTING_ERROR"
+  ],
+  "safetyNotes": [],
+  "parentNotes": [
+    {
+      "en": "If your child adds instead of subtracting, point to the minus sign and act it out with objects.",
+      "id": "Jika anak menjumlah padahal seharusnya mengurang, tunjuk tanda kurang dan peragakan dengan benda."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Hide and find: show 9 blocks, hide some under a cup and show the rest. Write 9 − □ = 5 together.",
+    "id": "Sembunyi dan temukan: tunjukkan 9 balok, sembunyikan beberapa di bawah gelas dan tunjukkan sisanya. Tulis 9 − □ = 5 bersama."
+  },
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.g1.add-sub-10"
+  ]
+}

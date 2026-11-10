@@ -4,12 +4,12 @@ import type { ActivityPayload } from '@/lib/server/learning';
 import { api } from '@/lib/api';
 import { fmt } from '@/lib/i18n';
 import { useI18n } from '@/lib/i18n/client';
-import { Choices, Keypad, NumberBond, ScatteredDots } from './models';
+import { BarModel, Bond, Choices, Keypad, NumberBond, ScatteredDots, Sentence, type SentenceToken } from './models';
 import { TenFrame } from './ten-frame';
 
 type Phase = 'loading' | 'intro' | 'answering' | 'wrong' | 'correct' | 'solution' | 'done' | 'error';
 interface Hint { level: number; text: string; showRepresentation: boolean; workedExample: boolean }
-interface Solution { part?: number; whole?: number; missing?: number; count?: number; answer: number }
+interface Solution { part?: number; other?: number; whole?: number; missing?: number; count?: number; answer: number }
 interface AttemptResult { correct: boolean; independent: boolean; misconception: string | null; finished: boolean; solution: Solution | null; triesLeft: number }
 interface Summary { worked: number; onOwn: number; withHelp: number }
 
@@ -84,7 +84,7 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
   if (!act) return null;
 
   const p = act.presentation;
-  const answer = p.kind === 'bond-equation' ? (typed === '' ? null : Number(typed)) : selected;
+  const answer = 'choices' in p ? selected : typed === '' ? null : Number(typed);
   const locked = phase !== 'answering' || busy;
   const showRep = (hint?.showRepresentation ?? false) || phase === 'wrong' || phase === 'solution';
 
@@ -120,7 +120,12 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
     if (r.data.finished) {
       setSolution(r.data.solution);
       setPhase('solution');
-    } else if (phase === 'wrong') setPhase('answering');
+    } else if (phase === 'wrong') {
+      // Same reset as "Try again": the previous wrong answer must not stay in the keypad and get extended.
+      setSelected(null);
+      setTyped('');
+      setPhase('answering');
+    }
   }
 
   const toggle = (i: number) =>
@@ -131,12 +136,25 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
       return n;
     });
 
-  const question = fmt(t.learn.q[act.generator], 'whole' in p ? { whole: p.whole, part: 'knownPart' in p ? p.knownPart : 0 } : {});
-  const solutionText = solution
-    ? solution.count !== undefined
+  const numbers = Object.fromEntries(Object.entries(p).filter((e): e is [string, number] => typeof e[1] === 'number'));
+  const question =
+    p.kind === 'bar-model-story'
+      ? fmt(t.learn.story[p.context][p.op], { a: p.a, b: p.b })
+      : fmt(t.learn.q[act.generator], { part: 'knownPart' in p ? p.knownPart : 0, ...numbers });
+  const revealed = phase === 'correct' || phase === 'solution' ? (solution?.answer ?? null) : null;
+  const sv = { part: solution?.part ?? 0, other: solution?.other ?? 0, whole: solution?.whole ?? 0, missing: solution?.missing ?? 0 };
+  const solutionText = !solution
+    ? ''
+    : solution.count !== undefined
       ? fmt(t.learn.solutionCount, { count: solution.count })
-      : fmt(t.learn.solution, { part: solution.part ?? 0, missing: solution.missing ?? 0, whole: solution.whole ?? 0 })
-    : '';
+      : act.generator === 'bar-model-story'
+        ? fmt(t.learn.solutionStory, sv)
+        : act.generator.startsWith('add-')
+          ? fmt(t.learn.solutionAdd, sv)
+          : act.generator.startsWith('sub-')
+            ? fmt(t.learn.solutionSub, sv)
+            : fmt(t.learn.solution, sv);
+  const box = phase === 'correct' || phase === 'solution' ? String(solution?.answer ?? '') : typed;
 
   return (
     <div className="space-y-5" data-phase={phase} data-activity-id={act.activityId}>
@@ -187,6 +205,72 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
                 {showRep && <div className="mt-4"><TenFrame filled={p.knownPart} mode="fill" marked={marked} onToggle={toggle} highlightEmpty /></div>}
               </>
             )}
+            {p.kind === 'add-counters' && (
+              <>
+                <TenFrame filled={p.first} second={p.second} mode="count" marked={marked} onToggle={toggle} disabled={locked && phase !== 'wrong'} />
+                <p className="mt-3 text-base text-muted">{t.learn.tapToCount} <span aria-live="polite">{fmt(t.learn.counted, { n: marked.size })}</span></p>
+                {showRep && <div className="mt-4"><Bond whole={null} left={p.first} right={p.second} revealed={revealed} /></div>}
+              </>
+            )}
+            {p.kind === 'add-bond' && (
+              <>
+                <Bond whole={null} left={p.first} right={p.second} revealed={revealed} />
+                {showRep && <div className="mt-4"><TenFrame filled={p.first} second={p.second} mode="static" marked={new Set()} /></div>}
+              </>
+            )}
+            {p.kind === 'add-equation' && (
+              <>
+                <Sentence tokens={[p.first, '+', p.second, '=', p.total] as SentenceToken[]} value={box} />
+                {showRep && (
+                  <div className="mt-4">
+                    {p.blank === 'total'
+                      ? <Bond whole={null} left={p.first} right={p.second} revealed={revealed} />
+                      : <Bond whole={p.total} left={p.first} right={null} revealed={revealed} />}
+                  </div>
+                )}
+              </>
+            )}
+            {p.kind === 'sub-takeaway' && (
+              <>
+                <TenFrame filled={p.whole} crossed={p.takeAway} mode="count" marked={marked} onToggle={toggle} disabled={locked && phase !== 'wrong'} />
+                <p className="mt-3 text-base text-muted">{t.learn.tapToCount} <span aria-live="polite">{fmt(t.learn.counted, { n: marked.size })}</span></p>
+                {showRep && <div className="mt-4"><Bond whole={p.whole} left={p.takeAway} right={null} revealed={revealed} /></div>}
+              </>
+            )}
+            {p.kind === 'sub-bond' && (
+              <>
+                <Bond whole={p.whole} left={p.knownPart} right={null} revealed={revealed} />
+                <Sentence tokens={[p.whole, '−', p.knownPart, '=', null]} value={revealed === null ? '' : String(revealed)} />
+                {showRep && <TenFrame filled={p.whole} crossed={p.knownPart} mode="static" marked={new Set()} />}
+              </>
+            )}
+            {p.kind === 'sub-equation' && (
+              <>
+                <Sentence tokens={[p.whole, '−', p.part, '=', p.result] as SentenceToken[]} value={box} />
+                {showRep && (
+                  <div className="mt-4">
+                    {p.blank === 'result'
+                      ? <Bond whole={p.whole} left={p.part} right={null} revealed={revealed} />
+                      : <Bond whole={p.whole} left={null} right={p.result} revealed={revealed} />}
+                  </div>
+                )}
+              </>
+            )}
+            {p.kind === 'bar-model-story' && (
+              <>
+                <p className="mb-3 text-base text-muted">{t.learn.q['bar-model-story']}</p>
+                {p.op === 'add'
+                  ? <BarModel whole={null} left={p.a} right={p.b} revealed={revealed} />
+                  : <BarModel whole={p.a} left={p.b} right={null} revealed={revealed} />}
+                {showRep && (
+                  <div className="mt-4">
+                    {p.op === 'add'
+                      ? <TenFrame filled={p.a} second={p.b} mode="static" marked={new Set()} />
+                      : <TenFrame filled={p.a} crossed={p.b} mode="static" marked={new Set()} />}
+                  </div>
+                )}
+              </>
+            )}
             {p.kind === 'bond-equation' && (
               <>
                 <Equation whole={p.whole} part={p.knownPart} blank={p.blank} value={phase === 'correct' || phase === 'solution' ? String(solution?.answer ?? '') : typed} />
@@ -196,7 +280,7 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
           </section>
 
           <section className="card space-y-5" aria-labelledby="q">
-            <h1 id="q" ref={headingRef} tabIndex={-1} className="text-2xl font-bold leading-snug focus:outline-none">{question}</h1>
+            <h1 id="q" ref={headingRef} tabIndex={-1} data-testid="question" className="text-2xl font-bold leading-snug focus:outline-none">{question}</h1>
             {'choices' in p ? (
               <Choices options={p.choices} selected={selected} onSelect={setSelected} disabled={locked} eliminated={eliminated} />
             ) : (

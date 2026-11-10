@@ -224,6 +224,74 @@ describe('golden learner traces (docs/spec/delivery/ROADMAP_ACCEPTANCE.md)', () 
   });
 });
 
+describe('slice B golden traces: addition & subtraction within 10, bar-model stories', () => {
+  const ADD = 'MATH-G1-ADD-10';
+  const SUB = 'MATH-G1-SUB-10';
+  const WORD = 'MATH-G1-WORD-1';
+  const secureCountAndBonds = (l: Learner) => {
+    for (const f of ['count-ten-frame', 'count-scattered', 'count-ten-frame', 'count-scattered']) l.answer(ok(COUNT, f));
+    for (const f of ['make-ten-frame', 'number-bond', 'make-ten-frame', 'number-bond']) l.answer(ok(BONDS, f));
+  };
+
+  it('once number bonds are secure, addition unlocks and starts with concrete counters', () => {
+    const l = new Learner();
+    secureCountAndBonds(l);
+    const rec = recommendNext(l.input(at(20)));
+    expect(rec.kind).toBe('interactive');
+    if (rec.kind !== 'interactive') return;
+    expect(rec.ruleId).toBe('R6_NEXT_UNLOCKED');
+    expect(rec.skillId).toBe(ADD);
+    expect(rec.lessonId).toBe('lesson-g1-add-10-001');
+    expect(rec.cpaStage).toBe('concrete');
+  });
+
+  it('addition becomes secure only with independent success in two formats (counters + bond)', () => {
+    const l = new Learner();
+    secureCountAndBonds(l);
+    for (let i = 0; i < 5; i++) l.answer(ok(ADD, 'add-counters'));
+    expect(masteryStatus(l.mastery.get(ADD), at(30))).toBe('in_progress');
+    l.answer(ok(ADD, 'add-bond'));
+    expect(masteryStatus(l.mastery.get(ADD), at(30))).toBe('secure');
+  });
+
+  it('story problems stay locked until BOTH addition and subtraction are secure — parent focus cannot skip this', () => {
+    const l = new Learner();
+    secureCountAndBonds(l);
+    for (const f of ['add-counters', 'add-bond', 'add-counters', 'add-bond']) l.answer(ok(ADD, f));
+    const focused = recommendNext(l.input(at(30), WORD));
+    expect(focused.kind === 'interactive' && focused.ruleId).not.toBe('R3_PARENT_FOCUS');
+    expect(focused.kind === 'interactive' && focused.skillId).toBe(SUB);
+    for (const f of ['sub-takeaway', 'sub-bond', 'sub-takeaway', 'sub-bond']) l.answer(ok(SUB, f));
+    const now = recommendNext(l.input(at(40), WORD));
+    expect(now.kind === 'interactive' && now.ruleId).toBe('R3_PARENT_FOCUS');
+    expect(now.kind === 'interactive' && now.lessonId).toBe('lesson-g1-word-1-001');
+  });
+
+  it('adding-and-taking-away stories give two formats, so one story lesson can reach secure', () => {
+    const l = new Learner();
+    for (const f of ['bar-model-story:add', 'bar-model-story:sub', 'bar-model-story:add', 'bar-model-story:sub', 'bar-model-story:add']) l.answer(ok(WORD, f));
+    expect(l.mastery.get(WORD)!.formats).toEqual(['bar-model-story:add', 'bar-model-story:sub']);
+    expect(masteryStatus(l.mastery.get(WORD), at(10))).toBe('secure');
+  });
+
+  it('repeated "added instead of subtracting" in stories routes back to subtraction while it is weak', () => {
+    const l = new Learner();
+    secureCountAndBonds(l);
+    for (const f of ['add-counters', 'add-bond', 'add-counters', 'add-bond']) l.answer(ok(ADD, f));
+    for (const f of ['sub-takeaway', 'sub-bond', 'sub-takeaway', 'sub-bond']) l.answer(ok(SUB, f));
+    // Subtraction drops back below secure after a lapse at its delayed check.
+    l.answer({ ...ok(SUB, 'sub-bond'), correct: false, misconception: 'WRONG_OPERATION', at: at(60 * 24) });
+    expect(masteryStatus(l.mastery.get(SUB), at(60 * 24))).toBe('in_progress');
+    l.answer({ ...ok(WORD, 'bar-model-story:sub'), correct: false, misconception: 'WRONG_OPERATION', at: at(60 * 24 + 1) });
+    l.answer({ ...ok(WORD, 'bar-model-story:sub'), correct: false, misconception: 'WRONG_OPERATION', at: at(60 * 24 + 2) });
+    const rec = recommendNext(l.input(at(60 * 24 + 3)));
+    expect(rec.kind === 'interactive' && rec.ruleId).toBe('R2_MISCONCEPTION_REMEDIATE_PREREQ');
+    expect(rec.kind === 'interactive' && rec.skillId).toBe(SUB);
+    expect(rec.kind === 'interactive' && rec.cpaStage).toBe('concrete');
+    expect(rec.kind === 'interactive' && rec.reason.en).toMatch(/WRONG_OPERATION/);
+  });
+});
+
 describe('offline card recommendations', () => {
   it('suggests varied skills, least recently observed first', () => {
     const cards = getCatalog().lessons.filter((l) => l.mode === 'offline');

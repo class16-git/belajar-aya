@@ -114,7 +114,21 @@ const base = {
   religiousReview: religiousReviewSchema.optional(),
 };
 
-export const GENERATOR_IDS = ['count-ten-frame', 'count-scattered', 'make-ten-frame', 'number-bond', 'bond-equation'] as const;
+export const GENERATOR_IDS = [
+  'count-ten-frame',
+  'count-scattered',
+  'make-ten-frame',
+  'number-bond',
+  'bond-equation',
+  // Slice B (Grade 1 addition & subtraction within 10, bar-model stories).
+  'add-counters',
+  'add-bond',
+  'add-equation',
+  'sub-takeaway',
+  'sub-bond',
+  'sub-equation',
+  'bar-model-story',
+] as const;
 export type GeneratorId = (typeof GENERATOR_IDS)[number];
 
 export const interactiveLessonSchema = z

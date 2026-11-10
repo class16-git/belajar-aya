@@ -146,3 +146,87 @@ export function Choices({
     </div>
   );
 }
+
+/**
+ * General part–part–whole bond: any one of the three values may be unknown (null → "?", dashed outline).
+ * Used for addition (whole unknown) and subtraction (one part unknown).
+ */
+export function Bond({ whole, left, right, revealed }: { whole: number | null; left: number | null; right: number | null; revealed?: number | null }) {
+  const { t } = useI18n();
+  const show = (v: number | null) => v ?? revealed ?? t.learn.a11y.unknown;
+  const label = fmt(t.learn.a11y.bond, { whole: show(whole), left: show(left), right: show(right) });
+  const circle = (cx: number, cy: number, r: number, v: number | null, dots: number) => (
+    <g>
+      <circle cx={cx} cy={cy} r={r} fill="#fff" stroke={v === null ? '#8F4A28' : '#5B4636'} strokeWidth="5" strokeDasharray={v === null && revealed == null ? '10 7' : undefined} />
+      <text x={cx} y={cy + 15} textAnchor="middle" fontSize="44" fontWeight="700" fill={v === null ? '#8F4A28' : '#2E2620'}>{v ?? revealed ?? '?'}</text>
+      {v !== null && dots > 0 && dots <= 10 && (
+        <g aria-hidden="true">
+          {Array.from({ length: dots }, (_, i) => (
+            <circle key={i} cx={cx - ((Math.min(dots, 5) - 1) * 9) + (i % 5) * 18} cy={cy + r + 16 + Math.floor(i / 5) * 16} r="6" fill="#B5443A" />
+          ))}
+        </g>
+      )}
+    </g>
+  );
+  return (
+    <svg viewBox="0 0 320 260" role="img" aria-label={label} className="mx-auto h-auto w-full max-w-sm" data-testid="bond">
+      <line x1="160" y1="80" x2="85" y2="155" stroke="#5B4636" strokeWidth="5" />
+      <line x1="160" y1="80" x2="235" y2="155" stroke="#5B4636" strokeWidth="5" />
+      {circle(160, 58, 46, whole, 0)}
+      {circle(80, 170, 40, left, left ?? 0)}
+      {circle(240, 170, 40, right, right ?? 0)}
+    </svg>
+  );
+}
+
+export type SentenceToken = number | '+' | '−' | '=' | null;
+
+/** Number sentence such as `3 + □ = 9`. `null` is the answer box (dashed border, not colour only). */
+export function Sentence({ tokens, value }: { tokens: SentenceToken[]; value: string }) {
+  const { t } = useI18n();
+  const text = tokens.map((x) => (x === null ? (value || t.learn.a11y.blank) : String(x))).join(' ');
+  return (
+    <p role="img" aria-label={fmt(t.learn.a11y.sentence, { text })} className="flex flex-wrap items-center justify-center gap-3 py-6 text-5xl font-bold" data-testid="sentence">
+      {tokens.map((x, i) =>
+        x === null ? (
+          <span key={i} aria-hidden="true" className="inline-flex h-20 w-20 items-center justify-center rounded-2xl border-4 border-dashed border-clay-dark bg-white text-5xl font-bold text-ink">{value || ' '}</span>
+        ) : (
+          <span key={i} aria-hidden="true">{x}</span>
+        ),
+      )}
+    </p>
+  );
+}
+
+/**
+ * Part–whole bar model (Singapore-style). The whole bar spans the top; the two part bars below are drawn to
+ * scale. The unknown box is dashed and labelled "?" so it never relies on colour.
+ */
+export function BarModel({ whole, left, right, revealed }: { whole: number | null; left: number | null; right: number | null; revealed?: number | null }) {
+  const { t } = useI18n();
+  const total = whole ?? (left ?? 0) + (right ?? 0);
+  const l = left ?? total - (right ?? 0);
+  const W = 300;
+  const x0 = 10;
+  const lw = Math.max(40, Math.round((l / Math.max(total, 1)) * W));
+  const show = (v: number | null) => v ?? revealed ?? '?';
+  const box = (x: number, y: number, w: number, v: number | null, fill: string) => (
+    <g>
+      <rect x={x} y={y} width={w} height={52} rx={8} fill={v === null ? '#fff' : fill} stroke={v === null ? '#8F4A28' : '#5B4636'} strokeWidth={4} strokeDasharray={v === null && revealed == null ? '10 7' : undefined} />
+      <text x={x + w / 2} y={y + 36} textAnchor="middle" fontSize="30" fontWeight="700" fill={v === null ? '#8F4A28' : '#2E2620'}>{show(v)}</text>
+    </g>
+  );
+  const label = fmt(t.learn.a11y.bar, {
+    whole: show(whole),
+    left: show(left),
+    right: show(right),
+  });
+  return (
+    <svg viewBox="0 0 320 170" role="img" aria-label={label} className="mx-auto h-auto w-full max-w-md" data-testid="bar-model">
+      {box(x0, 12, W, whole, '#F3E7D3')}
+      <path d={`M${x0} 80 v-8 h${W} v8`} fill="none" stroke="#5B4636" strokeWidth="3" aria-hidden="true" />
+      {box(x0, 96, lw, left, '#F6D7CF')}
+      {box(x0 + lw, 96, W - lw, right, '#D7E6F3')}
+    </svg>
+  );
+}

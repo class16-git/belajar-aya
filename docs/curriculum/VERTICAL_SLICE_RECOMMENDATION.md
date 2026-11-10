@@ -2,6 +2,9 @@
 
 ## Recommendation: Slice B — Grade 1 addition & subtraction within 10, with bar-model word problems
 
+> **Status (2026-11-10): implemented and agent-checked; awaiting your content review.** See
+> [`SLICE_B_REVIEW.md`](SLICE_B_REVIEW.md) for what was built, the evidence, and the approval command.
+
 **Objectives:** `math.g1.add-sub-10` (skills `MATH-G1-ADD-10`, `MATH-G1-SUB-10`) and `math.g1.word-problems-1`
 (`MATH-G1-WORD-1`). Prerequisite `math.g1.bonds-10` is already published.
 

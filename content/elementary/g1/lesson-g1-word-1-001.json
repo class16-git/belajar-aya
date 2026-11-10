@@ -1,0 +1,84 @@
+{
+  "id": "lesson-g1-word-1-001",
+  "skillId": "MATH-G1-WORD-1",
+  "title": {
+    "en": "Story problems with bar models",
+    "id": "Soal cerita dengan model batang"
+  },
+  "ageBand": "g1",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": {
+    "en": "Solve one-step adding and taking-away stories within 10 using a bar model.",
+    "id": "Menyelesaikan soal cerita satu langkah (menambah dan mengambil) sampai 10 dengan model batang."
+  },
+  "prerequisites": [
+    "MATH-G1-ADD-10",
+    "MATH-G1-SUB-10"
+  ],
+  "cpaStage": "pictorial",
+  "materials": [
+    {
+      "en": "Bar model",
+      "id": "Model batang"
+    }
+  ],
+  "generator": "bar-model-story",
+  "hintLadder": [
+    {
+      "en": "Read the story again. Is something joined, or taken away?",
+      "id": "Baca ceritanya lagi. Apakah ada yang digabung, atau diambil?"
+    },
+    {
+      "en": "In the bar model, the long bar is the whole. The short bars are the parts.",
+      "id": "Pada model batang, batang panjang adalah keseluruhan. Batang pendek adalah bagian-bagiannya."
+    },
+    {
+      "en": "Find the box with the question mark. Is it the whole or a part?",
+      "id": "Cari kotak bertanda tanya. Apakah itu keseluruhan atau bagian?"
+    },
+    {
+      "en": "If the whole is missing, put the parts together. If a part is missing, take the other part away from the whole.",
+      "id": "Jika keseluruhan hilang, gabungkan bagian-bagiannya. Jika satu bagian hilang, ambil bagian lainnya dari keseluruhan."
+    },
+    {
+      "en": "{part} and {other} make {whole}. Let’s try a new one.",
+      "id": "{part} dan {other} menjadi {whole}. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "COUNTED_TAKEN_AWAY",
+    "COUNTING_ERROR",
+    "COUNT_BACK_WRONG_START",
+    "COUNT_ON_WRONG_START",
+    "PART_WHOLE_CONFUSION",
+    "WHOLE_AS_PART",
+    "WRONG_OPERATION"
+  ],
+  "safetyNotes": [],
+  "parentNotes": [
+    {
+      "en": "Stories mix adding and taking away on purpose. Ask your child to retell the story before solving; the key skill is deciding what to do, not just calculating.",
+      "id": "Cerita sengaja mencampur menambah dan mengambil. Minta anak menceritakan ulang sebelum menjawab; keterampilan utamanya adalah memutuskan apa yang dilakukan, bukan hanya berhitung."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Kitchen stories: tell a short story with real objects (“There are 6 spoons. We use 2. How many are left?”). Your child draws a bar and labels the parts.",
+    "id": "Cerita dapur: ceritakan kisah pendek dengan benda nyata (“Ada 6 sendok. Kita pakai 2. Berapa yang tersisa?”). Anak menggambar batang dan memberi label pada bagian-bagiannya."
+  },
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.g1.word-problems-1"
+  ]
+}
