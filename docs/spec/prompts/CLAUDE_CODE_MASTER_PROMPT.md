@@ -39,7 +39,7 @@ At each milestone: run lint, typecheck, unit tests and relevant E2E tests; repor
 
 
 ## Mandatory updated instructions (supersede any conflicting earlier text)
-- Read `docs/product/LEARNER_PROFILES_AGE_ENGINE.md` and implement exact, timezone-aware age recalculation on every session and learner-local date change. Learner T (toddler) DOB [private DOB]; Learner G (Grade 1) DOB [private DOB]. Grade is parent-controlled and not inferred from birthday. Handle age transitions proactively and safely.
+- Read `docs/product/LEARNER_PROFILES_AGE_ENGINE.md` and implement exact, timezone-aware age recalculation on every session and learner-local date change. Adek (toddler) DOB [private DOB]; Kakak (Grade 1) DOB [private DOB]. Grade is parent-controlled and not inferred from birthday. Handle age transitions proactively and safely.
 - Read `docs/architecture/GITHUB_AI_DEPLOYMENT.md`; build a deployable application that runs independently of Claude Code. Core adaptive learning requires **no** AI API; optional runtime AI is server-side, opt-in, privacy-gated and resilient to outages.
 - Follow `docs/delivery/AUTONOMOUS_CLAUDE_CODE_SOP.md` as the mandatory iterative engineering protocol. Design, implement, test, visually review, fix and repeat; generate evidence artifacts and PR. The agent can certify internal QA, but **cannot claim owner-approved UI/UX**. Final handover and production deployment require explicit owner signoff.
 - Never use actual learner DOB/names in public demo data, screenshots, third-party model prompts, analytics, or CI. Ensure private repository and secure configuration. Do not commit real learner records into production source control.

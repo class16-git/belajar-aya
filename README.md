@@ -18,8 +18,8 @@ rule-based adaptive engine and a parent dashboard.
 Never commit real child names, dates of birth or learner records. Real profiles live only in the git-ignored
 `config/learners.private.json` (copy from `config/learners.private.example.json`, which is synthetic) and are
 loaded only into a **local** database with `pnpm db:seed:private`. `pnpm privacy:scan` (also run in CI) fails if
-private values appear in tracked files. Demo data, tests and screenshots use synthetic learners only
-("Mentari", Grade 1; "Bintang", toddler).
+private values appear in tracked files. Learners are referred to only by the nicknames "Kakak" (Grade 1) and
+"Adek" (toddler); demo data, tests and screenshots use these nicknames with **synthetic** birth dates.
 
 ## Quick start (local)
 

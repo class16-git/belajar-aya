@@ -8,9 +8,9 @@ export const DEMO_FAMILY: SeedFamily = {
   pin: '1357',
   timezone: 'Asia/Jakarta',
   learners: [
-    { nickname: 'Bintang', dateOfBirth: '2024-05-20', schoolGrade: null, mode: 'TODDLER_OFFLINE' },
+    { nickname: 'Adek', dateOfBirth: '2024-05-20', schoolGrade: null, mode: 'TODDLER_OFFLINE' },
     {
-      nickname: 'Mentari',
+      nickname: 'Kakak',
       dateOfBirth: '2019-08-15',
       schoolGrade: 'Grade 1',
       mode: 'ELEMENTARY_GUIDED',

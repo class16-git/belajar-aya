@@ -22,8 +22,13 @@ for (const f of forbidden) {
 const privatePath = 'config/learners.private.json';
 if (existsSync(privatePath)) {
   const cfg = JSON.parse(readFileSync(privatePath, 'utf8'));
+  // Nicknames that also appear in the committed synthetic example (e.g. "Kakak", "Adek") are public by choice.
+  const example = existsSync('config/learners.private.example.json')
+    ? JSON.parse(readFileSync('config/learners.private.example.json', 'utf8'))
+    : { learners: [] };
+  const publicNicknames = new Set((example.learners ?? []).map((l) => l.nickname));
   const needles = [
-    ...(cfg.learners ?? []).flatMap((l) => [l.nickname, l.dateOfBirth]),
+    ...(cfg.learners ?? []).flatMap((l) => [publicNicknames.has(l.nickname) ? null : l.nickname, l.dateOfBirth]),
     cfg.parent?.email,
   ].filter((v) => typeof v === 'string' && v.length >= 3);
   const files = tracked.filter((f) => !f.startsWith('legacy-site/') && !/\.(png|jpg|jpeg|gif|webp|ico)$/.test(f));

@@ -105,7 +105,7 @@
 
 
 ## Dynamic learner lifecycle (mandatory)
-Learner T (toddler): [private DOB]; Learner G (Grade 1): [private DOB]. All recommendations must use exact current age computed from server date and IANA learner timezone, and react to birthday transitions, new mastery evidence and parent preferences. Do not automatically change grade on birthdays. See `LEARNER_PROFILES_AGE_ENGINE.md`.
+Adek (toddler): [private DOB]; Kakak (Grade 1): [private DOB]. All recommendations must use exact current age computed from server date and IANA learner timezone, and react to birthday transitions, new mastery evidence and parent preferences. Do not automatically change grade on birthdays. See `LEARNER_PROFILES_AGE_ENGINE.md`.
 
 ## Runtime independence and autonomous build
 Claude Code is the engineering agent, not a runtime dependency. Deployed app runs deterministic mastery, lessons and recommendations without an LLM; optional AI must be explicit and protected. See `docs/architecture/GITHUB_AI_DEPLOYMENT.md`. Engineering must follow `docs/delivery/AUTONOMOUS_CLAUDE_CODE_SOP.md` until objective checks pass, then request owner approval and handover; agent self-review is not human signoff.

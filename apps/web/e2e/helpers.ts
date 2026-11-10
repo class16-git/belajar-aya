@@ -29,8 +29,8 @@ export async function createFamily(request: APIRequestContext, baseURL: string, 
   expect((await request.post('/api/parent/consent', { ...h, data: { agree: true, version: CONSENT_VERSION } })).ok()).toBe(true);
   expect((await request.post('/api/parent/pin', { ...h, data: { pin: PIN, password: PASSWORD } })).ok()).toBe(true);
   const base = { timezone: 'Asia/Jakarta', locale: 'en', itemsPerSession: 5, targetMinutes: 15, audioEnabled: false, reducedMotion: false, focusSkillId: null };
-  const g1 = await request.post('/api/parent/children', { ...h, data: { ...base, nickname: 'Mentari', dateOfBirth: '2019-08-15', schoolGrade: 'Grade 1', mode: 'ELEMENTARY_GUIDED' } });
-  const tod = await request.post('/api/parent/children', { ...h, data: { ...base, nickname: 'Bintang', dateOfBirth: '2024-05-20', schoolGrade: null, mode: 'TODDLER_OFFLINE' } });
+  const g1 = await request.post('/api/parent/children', { ...h, data: { ...base, nickname: 'Kakak', dateOfBirth: '2019-08-15', schoolGrade: 'Grade 1', mode: 'ELEMENTARY_GUIDED' } });
+  const tod = await request.post('/api/parent/children', { ...h, data: { ...base, nickname: 'Adek', dateOfBirth: '2024-05-20', schoolGrade: null, mode: 'TODDLER_OFFLINE' } });
   return { email, g1Id: (await g1.json()).id as string, toddlerId: (await tod.json()).id as string };
 }
 
@@ -71,7 +71,7 @@ export async function answer(page: Page, value: number) {
   await page.getByRole('button', { name: 'Check' }).click();
 }
 
-export async function enterChildMode(page: Page, childName = 'Mentari') {
+export async function enterChildMode(page: Page, childName = 'Kakak') {
   await page.goto('/family');
   await page.getByTestId(`child-${childName}`).getByRole('button', { name: 'Start learning' }).click();
   await page.waitForURL('**/learn');

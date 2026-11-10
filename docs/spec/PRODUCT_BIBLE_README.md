@@ -35,7 +35,7 @@ This ZIP is a **specification starter**, not a working application. Claude Code 
 
 
 ## November 2026 update: child age, deployment and autonomous delivery
-> Redaction note: real learner names and dates of birth were removed from this public copy of the specification. See `config/learners.private.example.json` (synthetic) and keep real values only in the git-ignored `config/learners.private.json`.
+> Redaction note: real learner names were replaced with the nicknames Kakak and Adek, and dates of birth were removed from this public copy of the specification. See `config/learners.private.example.json` (synthetic) and keep real values only in the git-ignored `config/learners.private.json`.
 - `docs/product/LEARNER_PROFILES_AGE_ENGINE.md` defines exact age-from-DOB calculations, timezone rules, adaptive age/grade separation and safety policies.
 - `docs/architecture/GITHUB_AI_DEPLOYMENT.md` explains how Claude Code builds from GitHub while the deployed product runs independently, with or without an AI provider.
 - `docs/delivery/AUTONOMOUS_CLAUDE_CODE_SOP.md` defines the design → build → test → visual QA → improve → handover loop and objective release gates.

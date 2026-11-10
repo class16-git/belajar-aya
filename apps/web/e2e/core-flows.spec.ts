@@ -39,7 +39,7 @@ test.describe('Phase 0 gate: onboarding, two profiles, parent gate', () => {
 
     // Grade 1 learner
     await page.getByRole('link', { name: /Add a child/ }).click();
-    await page.getByLabel('Nickname').fill('Mentari');
+    await page.getByLabel('Nickname').fill('Kakak');
     await page.getByLabel('Date of birth (optional)').fill('2019-08-15');
     await page.getByLabel(/School grade/).selectOption('Grade 1');
     await page.getByRole('radio', { name: /Guided practice/ }).check();
@@ -48,14 +48,14 @@ test.describe('Phase 0 gate: onboarding, two profiles, parent gate', () => {
 
     // Toddler learner, caregiver-led
     await page.getByRole('link', { name: /Add a child/ }).click();
-    await page.getByLabel('Nickname').fill('Bintang');
+    await page.getByLabel('Nickname').fill('Adek');
     await page.getByLabel('Date of birth (optional)').fill('2024-05-20');
     await page.getByRole('radio', { name: /Caregiver-led/ }).check();
     await page.getByRole('button', { name: 'Add learner' }).click();
     await page.waitForURL('**/family');
 
-    const g1 = page.getByTestId('child-Mentari');
-    const tod = page.getByTestId('child-Bintang');
+    const g1 = page.getByTestId('child-Kakak');
+    const tod = page.getByTestId('child-Adek');
     await expect(g1).toContainText('7 years 2 months');
     await expect(g1).toContainText('Grade 1');
     await expect(g1.getByRole('button', { name: 'Start learning' })).toBeEnabled();
@@ -100,7 +100,7 @@ test.describe('Phase 1: Grade 1 learning loop', () => {
     const fam = await createFamily(request, baseURL!, 'learn');
     await signIn(page, fam.email);
     await enterChildMode(page);
-    await expect(page.getByRole('heading', { name: 'Hello, Mentari!' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Hello, Kakak!' })).toBeVisible();
     await startFirstChoice(page);
 
     // Item 1 — concrete counting with the ten-frame: tap counters, then answer independently.
@@ -238,7 +238,7 @@ test.describe('Phase 1: toddler offline cards, observations, language, privacy',
     const fam = await createFamily(request, baseURL!, 'toddler');
     await signIn(page, fam.email);
     expect((await page.request.post('/api/parent/child-mode', { headers: { Origin: baseURL! }, data: { childId: fam.toddlerId } })).status()).toBe(403);
-    await page.getByTestId('child-Bintang').getByRole('link', { name: 'Open activity cards' }).click();
+    await page.getByTestId('child-Adek').getByRole('link', { name: 'Open activity cards' }).click();
     await page.waitForURL('**/cards?child=*');
     await expect(page.locator('[data-card]').first()).toBeVisible();
     expect(await page.locator('[data-card]').count()).toBeGreaterThanOrEqual(10);
@@ -285,12 +285,12 @@ test.describe('Phase 1: toddler offline cards, observations, language, privacy',
     expect(before).toBe(1);
     await page.goto(`/dashboard/${fam.g1Id}`);
     await page.getByRole('button', { name: /^ID/ }).click();
-    await expect(page.getByRole('heading', { name: 'Kemajuan Mentari' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Kemajuan Kakak' })).toBeVisible();
     await expect(page.locator('html')).toHaveAttribute('lang', 'id');
     await page.locator('[data-skill="MATH-G1-COUNT-20"] summary').click();
     await expect(page.locator('[data-skill="MATH-G1-COUNT-20"] tbody tr')).toHaveCount(1);
     await page.getByRole('button', { name: /^EN/ }).click();
-    await expect(page.getByRole('heading', { name: 'Progress for Mentari' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Progress for Kakak' })).toBeVisible();
     expect(await db.attempt.count({ where: { childId: fam.g1Id } })).toBe(before);
   });
 
@@ -306,7 +306,7 @@ test.describe('Phase 1: toddler offline cards, observations, language, privacy',
     expect(data.format).toBe('atlas-family-export');
     expect(data.children).toHaveLength(2);
     expect(JSON.stringify(data)).not.toContain('scrypt$');
-    expect(data.children.find((c: { nickname: string }) => c.nickname === 'Bintang').observations).toHaveLength(1);
+    expect(data.children.find((c: { nickname: string }) => c.nickname === 'Adek').observations).toHaveLength(1);
 
     await page.getByLabel('Type DELETE to confirm').fill('delete');
     await page.getByLabel('Password', { exact: true }).fill(PASSWORD);
@@ -362,7 +362,7 @@ test.describe('security', () => {
     expect(anon.status()).toBe(401);
     const fam = await createFamily(request, baseURL!, 'dob');
     const headers = { Origin: baseURL! };
-    const body = { nickname: 'Mentari', dateOfBirth: '2019-08-16', timezone: 'Asia/Jakarta', schoolGrade: 'Grade 1', mode: 'ELEMENTARY_GUIDED', locale: 'en' };
+    const body = { nickname: 'Kakak', dateOfBirth: '2019-08-16', timezone: 'Asia/Jakarta', schoolGrade: 'Grade 1', mode: 'ELEMENTARY_GUIDED', locale: 'en' };
     const noConfirm = await request.patch(`/api/parent/children/${fam.g1Id}`, { headers, data: body });
     expect(noConfirm.status()).toBe(400);
     expect((await noConfirm.json()).error).toBe('CONFIRM_SENSITIVE');

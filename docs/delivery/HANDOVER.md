@@ -7,9 +7,9 @@
 
 ## Try it locally (≈5 minutes)
 Follow README "Quick start". Sign in as the synthetic demo parent, then:
-1. **Family** → *Start learning* for Mentari → pick an activity → try a ten-frame item, ask for help, answer wrong once.
+1. **Family** → *Start learning* for Kakak → pick an activity → try a ten-frame item, ask for help, answer wrong once.
 2. **Grown-ups** → PIN `1357` → **Progress** → open *Evidence* on a skill; read *Suggested next* (rule + reason).
-3. **Activity cards** → open a card → toggle A4/Letter → Print → record an observation for Bintang.
+3. **Activity cards** → open a card → toggle A4/Letter → Print → record an observation for Adek.
 4. Switch **EN/ID**; visit **Privacy** to export or delete.
 
 To use your real children's profiles **locally only**: copy `config/learners.private.example.json` to

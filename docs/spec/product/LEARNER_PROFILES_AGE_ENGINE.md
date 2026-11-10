@@ -1,8 +1,8 @@
 # Learner identity, chronological age and adaptive developmental placement
 
 ## Initial private seed profiles
-- Learner T (toddler): date of birth `[private DOB]` (ISO local calendar date), toddler / Montessori early childhood. Exact age verified in private fixtures only.
-- Learner G (Grade 1): date of birth `[private DOB]` (ISO local calendar date), currently Grade 1 (parent-confirmed; do not infer grade solely from age). Exact age verified in private fixtures only.
+- Adek (toddler): date of birth `[private DOB]` (ISO local calendar date), toddler / Montessori early childhood. Exact age verified in private fixtures only.
+- Kakak (Grade 1): date of birth `[private DOB]` (ISO local calendar date), currently Grade 1 (parent-confirmed; do not infer grade solely from age). Exact age verified in private fixtures only.
 - Birth dates are private personal information about minors: only include in private development seed fixtures; do not expose in public repos, screenshots, telemetry, or third-party AI requests. Use placeholders in public demo seeds. Parents must be able to edit names, DOB, timezone, school grade and learning preferences.
 
 ## Required age calculation
@@ -17,10 +17,10 @@
 ## Adaptive decision hierarchy
 Hard safety restrictions (especially under 3) > parent-defined boundaries and language > verified prerequisite mastery > recent evidence and confidence > age-appropriate recommendations > interests and variety. Chronological age is context, not a performance label.
 
-### Learner T (toddler): under 3
+### Adek (toddler): under 3
 Parent-facing offline activity cards: sorting, matching, object permanence, sensory baskets, movement, practical life, oral language and simple quantity exposure. No autonomous child chat, prolonged screen sessions, performance pressure, or AI-generated unsafe physical activities. Always include supervision and choking hazard guidance. At age 3, propose new activities but require parent confirmation before introducing a different screen-use mode.
 
-### Learner G (Grade 1): Grade 1
+### Kakak (Grade 1): Grade 1
 Begin with diagnostic, low-pressure number sense and Singapore Math CPA progressions; use ten frames, manipulatives, number bonds, simple word problems and bar-model readiness. Grade 1 placement remains until changed by parent/educator; allow prerequisite remediation or enrichment independently of age. Record Montessori observation notes alongside digital attempts.
 
 ## Recommendation pseudocode
