@@ -3,6 +3,7 @@ import type { Dictionary } from './en';
 /** Bahasa Indonesia UI strings. Must mirror `en.ts` exactly. */
 export const id: Dictionary = {
   app: {
+    credit: 'Dibuat dengan ❤ oleh Ayah, untuk Kakak dan Adek',
     name: 'Atlas',
     tagline: 'Ruang belajar yang tenang dan pribadi untuk keluarga Anda',
     skip: 'Langsung ke konten utama',
@@ -186,6 +187,11 @@ export const id: Dictionary = {
       'bar-model-story': 'Baca ceritanya. Gunakan model batang untuk membantu.',
       'robot-trace': 'Ikuti panah dari robot. Di bintang mana robot berhenti?',
       'robot-debug': 'Ada satu langkah yang salah, jadi robot tidak sampai ke bendera. Langkah ke berapa yang salah?',
+      'teen-frames': 'Satu bingkai sepuluh sudah penuh. Berapa jumlah semua keping?',
+      'teen-equation': 'Cari angka yang hilang.',
+      'bond-20': 'Keseluruhannya {whole}. Satu bagian adalah {part}. Berapa bagian yang lain?',
+      'bond-20-equation': 'Cari angka yang hilang.',
+      'picture-story': 'Dengarkan ceritanya, lalu hitung kepingnya untuk menjawab.',
     },
     robot: {
       program: 'Program',
@@ -235,6 +241,7 @@ export const id: Dictionary = {
       TRACE_STOPPED_EARLY: 'Hampir! Sudahkah kamu memakai semua panah? Periksa yang terakhir.',
       LEFT_RIGHT_CONFUSION: 'Lihat lagi panah kiri dan kanan.',
       DEBUG_ADJACENT_STEP: 'Hampir! Ikuti panah satu per satu dan berhenti di tempat robot pertama kali salah arah.',
+      TEEN_ONES_ONLY: 'Jangan lupa bingkai sepuluh yang penuh: itu sudah 10.',
       UNCLASSIFIED: 'Ayo lihat gambarnya bersama-sama.',
     },
     solution: '{part} dan {missing} membuat {whole}.',
@@ -475,6 +482,7 @@ export const id: Dictionary = {
       TRACE_STOPPED_EARLY: 'Berhenti menelusuri satu langkah terlalu cepat',
       LEFT_RIGHT_CONFUSION: 'Tertukar kiri dan kanan saat menelusuri',
       DEBUG_ADJACENT_STEP: 'Menunjuk langkah di sebelah kesalahan yang sebenarnya',
+      TEEN_ONES_ONLY: 'Hanya menghitung satuan pada bilangan belasan (lupa sepuluhnya)',
       UNCLASSIFIED: 'Lainnya',
     },
     tryOffline: {
@@ -490,6 +498,7 @@ export const id: Dictionary = {
       TRACE_STOPPED_EARLY: 'Main robot di lantai: tunjuk setiap kartu panah saat melangkah.',
       LEFT_RIGHT_CONFUSION: 'Tempel stiker di tangan kiri dan main “belok kiri / belok kanan”.',
       DEBUG_ADJACENT_STEP: 'Jalankan program lantai satu kartu demi satu kartu dan berhenti saat mulai salah.',
+      TEEN_ONES_ONLY: 'Isi wadah telur dengan 10, tambah beberapa lagi, dan selalu ucapkan “sepuluh…” dulu.',
       UNCLASSIFIED: 'Bahas soalnya bersama dengan benda asli.',
     },
     gradeNotSupported: 'Belum ada pelajaran untuk {grade}. Saat ini Atlas berisi matematika TK dan Kelas 1; kelas lain sedang direncanakan. Anda dapat mengubah kelas di pengaturan anak.',

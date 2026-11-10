@@ -9,8 +9,17 @@ import type { AgeBand } from '@atlas/shared';
  * Grade is never inferred from age.
  */
 export function interactiveBandForGrade(grade: string | null): AgeBand | null {
-  if (grade === null || grade === 'Kindergarten' || grade === 'Grade 1') return 'g1';
-  return null;
+  return interactiveBandsForGrade(grade)[0] ?? null;
+}
+
+/**
+ * All interactive bands a grade may draw on, primary band first. Kindergarten learners get the Kindergarten skills
+ * plus the Grade 1 number-sense lessons they already used (prerequisites still decide what unlocks).
+ */
+export function interactiveBandsForGrade(grade: string | null): AgeBand[] {
+  if (grade === 'Kindergarten') return ['kindergarten', 'g1'];
+  if (grade === null || grade === 'Grade 1') return ['g1'];
+  return [];
 }
 
 export interface Availability {

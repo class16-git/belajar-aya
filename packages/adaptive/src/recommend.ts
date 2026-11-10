@@ -43,6 +43,8 @@ export interface RecommendInput {
   policy: SafetyPolicy;
   /** Parent-approved band for interactive content (grade is parent-controlled, never inferred). */
   band: Skill['band'];
+  /** All bands this learner may draw on (defaults to [band]). */
+  bands?: Skill['band'][];
   skills: Skill[];
   lessons: InteractiveLesson[]; // already filtered to visible/reviewed
   mastery: Map<string, MasteryState>;
@@ -122,7 +124,7 @@ export function recommendNext(input: RecommendInput): Recommendation {
     };
   }
   const eligible = skills
-    .filter((s) => s.band === input.band && s.evidence === 'digital_attempts')
+    .filter((s) => (input.bands ?? [input.band]).includes(s.band) && s.evidence === 'digital_attempts')
     .filter((s) => lessons.some((l) => l.skillId === s.id))
     .sort((a, b) => a.order - b.order);
   if (eligible.length === 0) {
@@ -218,10 +220,21 @@ export function lessonChoices(input: RecommendInput, rec: Recommendation, max = 
   const first = input.lessons.find((l) => l.id === rec.lessonId);
   const unlocked = input.lessons.filter((l) => {
     const skill = input.skills.find((s) => s.id === l.skillId);
-    return !!skill && skill.band === input.band && skill.prerequisites.every((p) => unlocksDependants(input.mastery.get(p)));
+    return !!skill && (input.bands ?? [input.band]).includes(skill.band) && skill.prerequisites.every((p) => unlocksDependants(input.mastery.get(p)));
   });
   const rest = unlocked.filter((l) => l.id !== rec.lessonId);
-  return [...(first ? [first] : []), ...rest].slice(0, max);
+  // Variety first: one lesson (gentlest CPA stage) per other unlocked skill, unfinished skills before secure ones;
+  // then fill any remaining slots with other lessons in file order.
+  const stageRank = (l: InteractiveLesson) => STAGE_ORDER.indexOf(l.cpaStage);
+  const done = (skillId: string) => unlocksDependants(input.mastery.get(skillId));
+  const skillOrder = (skillId: string) => input.skills.find((s) => s.id === skillId)?.order ?? 99;
+  const bySkill = new Map<string, InteractiveLesson>();
+  for (const l of [...rest].sort((a, b) => stageRank(a) - stageRank(b))) {
+    if (l.skillId !== first?.skillId && !bySkill.has(l.skillId)) bySkill.set(l.skillId, l);
+  }
+  const variety = [...bySkill.values()].sort((a, b) => Number(done(a.skillId)) - Number(done(b.skillId)) || skillOrder(a.skillId) - skillOrder(b.skillId));
+  const fill = rest.filter((l) => !variety.includes(l));
+  return [...(first ? [first] : []), ...variety, ...fill].slice(0, max);
 }
 
 export interface OfflineHistory {

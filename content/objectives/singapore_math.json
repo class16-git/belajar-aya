@@ -199,7 +199,9 @@
       "delivery": "blended",
       "assessment": "digital",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "K-MATH-BONDS-20"
+        ]
       },
       "reviewFlags": [],
       "requiresReligiousReview": false,
@@ -221,7 +223,9 @@
       "delivery": "blended",
       "assessment": "digital",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "K-MATH-TEENS"
+        ]
       },
       "reviewFlags": [],
       "requiresReligiousReview": false,
@@ -244,7 +248,8 @@
       "assessment": "observation",
       "implementation": {
         "skillIds": [
-          "K-MATH-PICTURE-PROBLEMS"
+          "K-MATH-PICTURE-PROBLEMS",
+          "K-MATH-STORIES"
         ]
       },
       "reviewFlags": [],

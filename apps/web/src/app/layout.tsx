@@ -23,6 +23,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <I18nProvider t={t} locale={locale}>
           {children}
         </I18nProvider>
+        <footer className="no-print mx-auto max-w-6xl px-4 pb-6 pt-2 text-center text-xs text-muted" data-testid="credit">
+          {t.app.credit}
+        </footer>
       </body>
     </html>
   );

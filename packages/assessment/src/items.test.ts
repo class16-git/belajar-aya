@@ -35,6 +35,11 @@ describe('item generators (property-based)', () => {
         expect(answer).toBeGreaterThanOrEqual(0);
         if (g.startsWith('count')) expect(answer).toBeLessThanOrEqual(20);
         else if (g.startsWith('robot')) expect(answer).toBeGreaterThanOrEqual(1);
+        else if (g.startsWith('teen') || g.startsWith('bond-20')) {
+          expect(params.whole).toBeLessThanOrEqual(20);
+          expect(params.whole).toBeGreaterThanOrEqual(11);
+          expect(answer).toBeGreaterThanOrEqual(1);
+        }
         else {
           expect(params.whole).toBeLessThanOrEqual(10);
           expect(params.part).toBeGreaterThanOrEqual(1);

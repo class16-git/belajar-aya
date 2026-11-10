@@ -698,6 +698,64 @@
         "en": "Build a simple moving arm from card strips and see how pushing one end moves the other.",
         "id": "Membuat lengan bergerak sederhana dari potongan karton dan melihat bagaimana mendorong satu ujung menggerakkan ujung lain."
       }
+    },
+    {
+      "id": "K-MATH-TEENS",
+      "domain": "mathematics",
+      "band": "kindergarten",
+      "order": 9,
+      "usesCpa": true,
+      "evidence": "digital_attempts",
+      "prerequisites": [
+        "MATH-G1-COUNT-20"
+      ],
+      "title": {
+        "en": "Teen numbers: ten and some ones",
+        "id": "Bilangan belasan: sepuluh dan satuan"
+      },
+      "description": {
+        "en": "See 11–19 as one ten and some ones.",
+        "id": "Melihat 11–19 sebagai satu puluhan dan beberapa satuan."
+      }
+    },
+    {
+      "id": "K-MATH-BONDS-20",
+      "domain": "mathematics",
+      "band": "kindergarten",
+      "order": 10,
+      "usesCpa": true,
+      "evidence": "digital_attempts",
+      "prerequisites": [
+        "MATH-G1-BONDS-10",
+        "K-MATH-TEENS"
+      ],
+      "title": {
+        "en": "Number bonds within 20",
+        "id": "Ikatan bilangan sampai 20"
+      },
+      "description": {
+        "en": "Split and join numbers up to 20 with ten-frames.",
+        "id": "Memisah dan menggabung bilangan sampai 20 dengan bingkai sepuluh."
+      }
+    },
+    {
+      "id": "K-MATH-STORIES",
+      "domain": "mathematics",
+      "band": "kindergarten",
+      "order": 11,
+      "usesCpa": true,
+      "evidence": "digital_attempts",
+      "prerequisites": [
+        "MATH-G1-COUNT-20"
+      ],
+      "title": {
+        "en": "Picture word problems",
+        "id": "Soal cerita bergambar"
+      },
+      "description": {
+        "en": "Joining and taking-away stories within 10 with pictures.",
+        "id": "Cerita menambah dan mengambil sampai 10 dengan gambar."
+      }
     }
   ]
 }

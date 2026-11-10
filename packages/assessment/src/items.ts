@@ -36,6 +36,8 @@ export type Presentation =
    */
   | { kind: 'bar-model-story'; op: 'add' | 'sub'; context: StoryContext; a: number; b: number; choices: number[] }
   /** Robotics: follow the arrow program from the robot's cell; which numbered star does it stop on? */
+  /** Kindergarten picture word problem: a short story with counters (no bar model yet); totals within 10. */
+  | { kind: 'picture-story'; op: 'add' | 'sub'; context: StoryContext; a: number; b: number; choices: number[] }
   | { kind: 'robot-trace'; size: number; start: Cell; program: Dir[]; markers: (Cell & { label: number })[]; choices: number[] }
   /** Robotics: the program should reach the flag but one step is wrong; which step number? (exactly one fix works) */
   | { kind: 'robot-debug'; size: number; start: Cell; target: Cell; program: Dir[]; choices: number[] };
@@ -96,7 +98,14 @@ const STAGE: Record<GeneratorId, CpaStage> = {
   'bar-model-story': 'pictorial',
   'robot-trace': 'pictorial',
   'robot-debug': 'abstract',
+  'teen-frames': 'concrete',
+  'teen-equation': 'abstract',
+  'bond-20': 'pictorial',
+  'bond-20-equation': 'abstract',
+  'picture-story': 'pictorial',
 };
+const TEEN_ONES: readonly [Range, Range, Range] = [[1, 5], [3, 9], [1, 9]];
+const WHOLE_20: readonly [Range, Range, Range] = [[11, 14], [12, 17], [13, 20]];
 
 const STEP: Record<Dir, Cell> = { up: { x: 0, y: -1 }, right: { x: 1, y: 0 }, down: { x: 0, y: 1 }, left: { x: -1, y: 0 } };
 const MIRROR: Record<Dir, Dir> = { up: 'up', down: 'down', left: 'right', right: 'left' };
@@ -382,6 +391,57 @@ export function generateItem(generator: GeneratorId, difficulty: Difficulty, see
         };
       }
     }
+    case 'teen-frames': {
+      const [lo, hi] = band(TEEN_ONES, difficulty);
+      const ones = randomInt(rng, lo, hi);
+      const total = 10 + ones;
+      // Distractors: counting only the loose counters (forgetting the full ten), and off-by-one.
+      const choices = buildChoices(total, [ones, total - 1, total + 1], 0, 20, rng);
+      return { ...base, params: { part: 10, missing: ones, whole: total }, answer: total, presentation: { kind: 'count-ten-frame', counters: total, frames: 2, choices } };
+    }
+    case 'teen-equation': {
+      const [lo, hi] = band(TEEN_ONES, difficulty);
+      const ones = randomInt(rng, lo, hi);
+      const total = 10 + ones;
+      const missingPart = difficulty === 3 && rng() < 0.5;
+      return {
+        ...base,
+        format: missingPart ? 'teen-equation:missing-part' : 'teen-equation',
+        params: { part: 10, other: ones, whole: total, missing: ones },
+        answer: missingPart ? ones : total,
+        presentation: missingPart
+          ? { kind: 'add-equation', first: 10, second: null, total, blank: 'second' }
+          : { kind: 'add-equation', first: 10, second: ones, total: null, blank: 'total' },
+      };
+    }
+    case 'bond-20':
+    case 'bond-20-equation': {
+      const [lo, hi] = band(WHOLE_20, difficulty);
+      const whole = randomInt(rng, lo, hi);
+      // Level 1 always splits off the ten (14 = 10 + 4); later levels use any split.
+      const part = difficulty === 1 ? 10 : randomInt(rng, 1, whole - 1);
+      const missing = whole - part;
+      if (generator === 'bond-20') {
+        const choices = buildChoices(missing, [missing + 1, missing - 1, part], 0, whole, rng);
+        return { ...base, params: { part, whole, missing }, answer: missing, presentation: { kind: 'number-bond', whole, knownPart: part, unknownSide: rng() < 0.5 ? 'left' : 'right', choices } };
+      }
+      return { ...base, params: { part, whole, missing }, answer: missing, presentation: { kind: 'bond-equation', whole, knownPart: part, blank: difficulty === 3 && rng() < 0.5 ? 'first' : 'second' } };
+    }
+    case 'picture-story': {
+      // Kindergarten: small numbers (2+), joining stories first; story numbers ≥ 2 keep the English natural.
+      const op: 'add' | 'sub' = difficulty === 1 ? 'add' : rng() < 0.5 ? 'add' : 'sub';
+      const context = STORY_CONTEXTS[randomInt(rng, 0, STORY_CONTEXTS.length - 1)] as StoryContext;
+      const hi = difficulty === 3 ? 10 : difficulty === 2 ? 8 : 6;
+      if (op === 'add') {
+        const [a, b] = addends(rng, 4, hi, 2);
+        const total = a + b;
+        return { ...base, format: 'picture-story:add', params: { part: a, other: b, whole: total }, answer: total, presentation: { kind: 'picture-story', op, context, a, b, choices: buildChoices(total, [Math.abs(a - b), total - 1, total + 1], 0, 10, rng) } };
+      }
+      const whole = randomInt(rng, 4, hi);
+      const part = randomInt(rng, 2, whole - 1);
+      const left = whole - part;
+      return { ...base, format: 'picture-story:sub', params: { whole, part, other: left, missing: left }, answer: left, presentation: { kind: 'picture-story', op, context, a: whole, b: part, choices: buildChoices(left, [whole + part, left + 1, part], 0, 10, rng) } };
+    }
     case 'bar-model-story': {
       // Difficulty 1 keeps to joining stories; 2–3 mix joining and taking away.
       const op: 'add' | 'sub' = difficulty === 1 ? (rng() < 0.7 ? 'add' : 'sub') : rng() < 0.5 ? 'add' : 'sub';
@@ -440,6 +500,7 @@ export function evaluate(p: Presentation): number {
     case 'sub-equation':
       return p.blank === 'result' ? p.whole - (p.part ?? NaN) : p.whole - (p.result ?? NaN);
     case 'bar-model-story':
+    case 'picture-story':
       return p.op === 'add' ? p.a + p.b : p.a - p.b;
     case 'robot-trace': {
       const path = runProgram(p.start, p.program, p.size);

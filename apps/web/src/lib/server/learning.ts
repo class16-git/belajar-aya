@@ -22,7 +22,7 @@ import { prisma, Prisma, type ChildProfile, type MasteryState as DbMastery } fro
 import { PLACEMENT_VERSION, isLocale, type Locale } from '@atlas/shared';
 import { randomSeed } from '@atlas/shared/server';
 import { ageContext, type AgeContext } from './children';
-import { interactiveBandForGrade } from './availability';
+import { interactiveBandForGrade, interactiveBandsForGrade } from './availability';
 import { config } from './config';
 import { HttpError } from './http';
 
@@ -56,14 +56,15 @@ export async function engineInput(child: ChildProfile, ctx: AgeContext, now: Dat
     misconception: a.misconceptionCodes[0] ?? null,
     at: a.createdAt,
   }));
-  const band = interactiveBandForGrade(child.schoolGrade);
+  const bands = interactiveBandsForGrade(child.schoolGrade);
   return {
     now,
     policy: ctx.policy,
     // Grade is parent-set and never inferred; grades without a curriculum band get no lessons (not Grade 1 work).
-    band: band ?? 'g1',
+    band: bands[0] ?? 'g1',
+    bands,
     skills: getCatalog().skills,
-    lessons: band ? visibleInteractiveLessons(config.minReview).filter((l) => l.ageBand === band) : [],
+    lessons: visibleInteractiveLessons(config.minReview).filter((l) => bands.includes(l.ageBand)),
     mastery: new Map(mastery.map((m) => [m.skillId, toEngineState(m)])),
     recentEvidence,
     focusSkillId: focus,
@@ -251,8 +252,7 @@ async function ownedActiveActivity(child: ChildProfile, activityId: string) {
   // invalidate the open item instead of accepting evidence under rules that no longer apply.
   const stillAllowed =
     ageContext(child).policy.childScreenActivitiesAllowed &&
-    interactiveBandForGrade(child.schoolGrade) !== null &&
-    visibleInteractiveLessons(config.minReview).some((l) => l.id === a.lessonId);
+    visibleInteractiveLessons(config.minReview).some((l) => l.id === a.lessonId && interactiveBandsForGrade(child.schoolGrade).includes(l.ageBand));
   if (!stillAllowed) {
     await prisma.activityInstance.updateMany({ where: { id: a.id, status: 'ACTIVE' }, data: { status: 'ABANDONED' } });
     throw new HttpError(409, 'POLICY_CHANGED');

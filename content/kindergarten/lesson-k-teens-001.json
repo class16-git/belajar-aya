@@ -1,0 +1,82 @@
+{
+  "id": "lesson-k-teens-001",
+  "skillId": "K-MATH-TEENS",
+  "title": {
+    "en": "A full ten and some more",
+    "id": "Sepuluh penuh dan beberapa lagi"
+  },
+  "ageBand": "kindergarten",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": {
+    "en": "See teen numbers as one full ten-frame and some more ones.",
+    "id": "Melihat bilangan belasan sebagai satu bingkai sepuluh penuh dan beberapa satuan."
+  },
+  "prerequisites": [
+    "MATH-G1-COUNT-20"
+  ],
+  "cpaStage": "concrete",
+  "materials": [
+    {
+      "en": "Two digital ten-frames",
+      "id": "Dua bingkai sepuluh digital"
+    }
+  ],
+  "generator": "teen-frames",
+  "hintLadder": [
+    {
+      "en": "One ten-frame is full. How many counters are there altogether?",
+      "id": "Satu bingkai sepuluh sudah penuh. Berapa jumlah semua keping?"
+    },
+    {
+      "en": "A full ten-frame always has 10. You don’t need to count it again.",
+      "id": "Bingkai sepuluh yang penuh selalu berisi 10. Tidak perlu dihitung lagi."
+    },
+    {
+      "en": "Say “ten” for the full frame, then count on the others.",
+      "id": "Ucapkan “sepuluh” untuk bingkai penuh, lalu lanjutkan menghitung yang lain."
+    },
+    {
+      "en": "Ten… then count on {missing} more.",
+      "id": "Sepuluh… lalu hitung lanjut {missing} lagi."
+    },
+    {
+      "en": "10 and {missing} make {whole}. Let’s try a new one.",
+      "id": "10 dan {missing} menjadi {whole}. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "TEEN_ONES_ONLY",
+    "PART_WHOLE_CONFUSION",
+    "COUNTING_ERROR"
+  ],
+  "safetyNotes": [],
+  "parentNotes": [
+    {
+      "en": "Children often count only the loose counters. Point to the full frame and say “ten” together first.",
+      "id": "Anak sering hanya menghitung keping yang terpisah. Tunjuk bingkai penuh dan ucapkan “sepuluh” bersama lebih dulu."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Fill an egg carton with 10 and put a few more beside it. Say: ten and three is thirteen.",
+    "id": "Isi wadah telur dengan 10 dan taruh beberapa lagi di sampingnya. Ucapkan: sepuluh dan tiga adalah tiga belas."
+  },
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
+  },
+  "contentVersion": "1.0.0",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.k.tens-ones-intro"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "lesson-k-bonds-20-002",
+  "skillId": "K-MATH-BONDS-20",
+  "title": {
+    "en": "Bond sentences within 20",
+    "id": "Kalimat ikatan bilangan sampai 20"
+  },
+  "ageBand": "kindergarten",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": {
+    "en": "Solve missing-number sentences with wholes up to 20.",
+    "id": "Menyelesaikan kalimat bilangan dengan bilangan hilang dan keseluruhan sampai 20."
+  },
+  "prerequisites": [
+    "MATH-G1-BONDS-10",
+    "K-MATH-TEENS"
+  ],
+  "cpaStage": "abstract",
+  "materials": [
+    {
+      "en": "Number pad",
+      "id": "Papan angka"
+    }
+  ],
+  "generator": "bond-20-equation",
+  "hintLadder": [
+    {
+      "en": "Read the number sentence. Which part is missing?",
+      "id": "Baca kalimat bilangannya. Bagian mana yang hilang?"
+    },
+    {
+      "en": "The number after = is the whole.",
+      "id": "Bilangan setelah = adalah keseluruhan."
+    },
+    {
+      "en": "Look at the number bond. Which circle is empty?",
+      "id": "Lihat ikatan bilangan. Lingkaran mana yang kosong?"
+    },
+    {
+      "en": "Start at {part} and count on to {whole}.",
+      "id": "Mulai dari {part} lalu hitung lanjut sampai {whole}."
+    },
+    {
+      "en": "{part} + {missing} = {whole}. Let’s try a new one.",
+      "id": "{part} + {missing} = {whole}. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "PART_WHOLE_CONFUSION",
+    "WHOLE_AS_PART",
+    "ADDED_PARTS",
+    "COUNTING_ERROR"
+  ],
+  "safetyNotes": [],
+  "parentNotes": [
+    {
+      "en": "Encourage making a ten first: 8 + □ = 15 is 8 + 2 = 10, then 5 more.",
+      "id": "Dorong anak membuat sepuluh dulu: 8 + □ = 15 adalah 8 + 2 = 10, lalu 5 lagi."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Write a missing-number sentence on paper; your child builds it with objects and fills the gap.",
+    "id": "Tulis kalimat bilangan dengan bilangan hilang di kertas; anak menyusunnya dengan benda dan mengisi bagian kosong."
+  },
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
+  },
+  "contentVersion": "1.0.0",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.k.bonds-20"
+  ]
+}
