@@ -1,0 +1,313 @@
+{
+  "id": "reading-g6-where-our-electricity-comes-from",
+  "version": "1.0.0",
+  "level": "g6",
+  "readingLevel": "advanced",
+  "genre": "report",
+  "mode": "independent",
+  "title": {
+    "en": "Where our electricity comes from",
+    "id": "Dari mana listrik kita berasal"
+  },
+  "text": {
+    "en": [
+      "When you switch on a fan, the electricity has often travelled a long way through cables from a power station. But how is that electricity made in the first place?",
+      "Most power stations work by spinning a machine called a generator. Inside it, coils of wire turn near magnets, and this movement produces an electric current. The big question is what makes the generator spin.",
+      "In coal and gas power stations, fuel is burned to boil water. The steam rushes through a turbine, a wheel with many blades, which turns the generator. These fuels are non-renewable: they took millions of years to form and will run out. Burning them also releases carbon dioxide, a gas that traps heat and adds to climate change.",
+      "Renewable sources can be used again and again. In a hydroelectric plant, water flowing from a dam spins the turbine. Wind turbines use moving air. Geothermal plants use heat from deep underground to make steam. Indonesia, with its many volcanoes, has geothermal power stations.",
+      "Solar panels are different: they have no spinning parts at all. Special materials in the panel turn sunlight straight into electricity. Because Indonesia lies on the equator, it receives strong sunlight all year round.",
+      "Each source has trade-offs. Solar and wind power depend on the weather, so they work best with batteries or other sources as back-up. Dams can flood valleys where people and animals live. Choosing an energy mix means weighing cost, reliability and harm to the environment.",
+      "You can help too. Turning off lights and devices you are not using means less electricity has to be made in the first place."
+    ],
+    "id": [
+      "Saat kamu menyalakan kipas angin, listriknya sering sudah menempuh perjalanan jauh lewat kabel dari pembangkit listrik. Tetapi bagaimana listrik itu dibuat sejak awal?",
+      "Sebagian besar pembangkit listrik bekerja dengan memutar mesin bernama generator. Di dalamnya, gulungan kawat berputar di dekat magnet, dan gerakan ini menghasilkan arus listrik. Pertanyaan besarnya adalah apa yang memutar generator itu.",
+      "Di pembangkit listrik batu bara dan gas, bahan bakar dibakar untuk mendidihkan air. Uapnya menyembur melewati turbin, roda dengan banyak bilah, yang memutar generator. Bahan bakar ini tidak terbarukan: butuh jutaan tahun untuk terbentuk dan suatu saat akan habis. Membakarnya juga melepaskan karbon dioksida, gas yang memerangkap panas dan menambah perubahan iklim.",
+      "Sumber terbarukan bisa dipakai terus-menerus. Di pembangkit listrik tenaga air, air yang mengalir dari bendungan memutar turbin. Turbin angin memakai udara yang bergerak. Pembangkit panas bumi memakai panas dari dalam tanah untuk menghasilkan uap. Indonesia, dengan banyak gunung apinya, memiliki pembangkit listrik tenaga panas bumi.",
+      "Panel surya berbeda: panel ini sama sekali tidak punya bagian yang berputar. Bahan khusus di dalam panel mengubah cahaya matahari langsung menjadi listrik. Karena Indonesia terletak di garis khatulistiwa, sinar matahari yang diterimanya kuat sepanjang tahun.",
+      "Setiap sumber punya untung-rugi. Tenaga surya dan angin bergantung pada cuaca, sehingga paling baik dipadukan dengan baterai atau sumber lain sebagai cadangan. Bendungan bisa menenggelamkan lembah tempat tinggal manusia dan hewan. Memilih bauran energi berarti menimbang biaya, keandalan, dan dampaknya pada lingkungan.",
+      "Kamu juga bisa membantu. Mematikan lampu dan peralatan yang tidak dipakai berarti listrik yang harus dibuat menjadi lebih sedikit."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a report and compares information about several energy sources.",
+      "id": "Membaca laporan dan membandingkan informasi tentang beberapa sumber energi."
+    },
+    {
+      "en": "Explains the difference between renewable and non-renewable energy and weighs trade-offs.",
+      "id": "Menjelaskan perbedaan energi terbarukan dan tidak terbarukan serta menimbang untung-ruginya."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "generator",
+        "id": "generator"
+      },
+      "meaning": {
+        "en": "a machine that turns movement into electricity",
+        "id": "mesin yang mengubah gerakan menjadi listrik"
+      }
+    },
+    {
+      "word": {
+        "en": "turbine",
+        "id": "turbin"
+      },
+      "meaning": {
+        "en": "a wheel with blades turned by steam, water or wind",
+        "id": "roda berbilah yang diputar oleh uap, air, atau angin"
+      }
+    },
+    {
+      "word": {
+        "en": "renewable",
+        "id": "terbarukan"
+      },
+      "meaning": {
+        "en": "able to be replaced naturally and used again",
+        "id": "dapat tergantikan secara alami dan dipakai lagi"
+      }
+    },
+    {
+      "word": {
+        "en": "trade-off",
+        "id": "untung-rugi"
+      },
+      "meaning": {
+        "en": "a balance between a good point and a bad point",
+        "id": "keseimbangan antara sisi baik dan sisi buruk"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What do coal, gas, hydro, wind and geothermal power stations all use to make electricity?",
+        "id": "Apa yang dipakai semua pembangkit batu bara, gas, air, angin, dan panas bumi untuk membuat listrik?"
+      },
+      "choices": {
+        "en": [
+          "a turbine that spins a generator",
+          "solar panels",
+          "batteries only"
+        ],
+        "id": [
+          "turbin yang memutar generator",
+          "panel surya",
+          "baterai saja"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "Why is coal called 'non-renewable'?",
+        "id": "Mengapa batu bara disebut 'tidak terbarukan'?"
+      },
+      "choices": {
+        "en": [
+          "it takes millions of years to form and will run out",
+          "it cannot be burned",
+          "it comes from the sun"
+        ],
+        "id": [
+          "butuh jutaan tahun untuk terbentuk dan akan habis",
+          "tidak bisa dibakar",
+          "berasal dari matahari"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why might geothermal power suit Indonesia well?",
+        "id": "Mengapa tenaga panas bumi cocok untuk Indonesia?"
+      },
+      "choices": {
+        "en": [
+          "its volcanic land has a lot of underground heat",
+          "it has very little rain",
+          "it has no coal"
+        ],
+        "id": [
+          "tanahnya yang bergunung api menyimpan banyak panas bawah tanah",
+          "curah hujannya sangat sedikit",
+          "tidak punya batu bara"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q4",
+      "kind": "critical",
+      "prompt": {
+        "en": "Which statement is a fair trade-off described in the report?",
+        "id": "Pernyataan mana yang merupakan untung-rugi yang dijelaskan dalam laporan?"
+      },
+      "choices": {
+        "en": [
+          "dams give renewable power but can flood valleys where people live",
+          "solar panels work equally well at night",
+          "coal causes no harm"
+        ],
+        "id": [
+          "bendungan memberi listrik terbarukan tetapi bisa menenggelamkan lembah tempat tinggal manusia",
+          "panel surya bekerja sama baiknya di malam hari",
+          "batu bara tidak menimbulkan kerugian"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q5",
+      "kind": "math",
+      "prompt": {
+        "en": "A school's solar panels make 2 kilowatt-hours of electricity a day. How much do they make in 30 days?",
+        "id": "Panel surya sebuah sekolah menghasilkan 2 kilowatt-jam listrik sehari. Berapa yang dihasilkan dalam 30 hari?"
+      },
+      "choices": {
+        "en": [
+          "60 kilowatt-hours",
+          "32 kilowatt-hours",
+          "15 kilowatt-hours"
+        ],
+        "id": [
+          "60 kilowatt-jam",
+          "32 kilowatt-jam",
+          "15 kilowatt-jam"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4,
+      "check": {
+        "expression": "2 * 30",
+        "result": "60"
+      }
+    },
+    {
+      "id": "q6",
+      "kind": "science",
+      "prompt": {
+        "en": "What makes a solar panel different from the other sources?",
+        "id": "Apa yang membedakan panel surya dari sumber lainnya?"
+      },
+      "choices": {
+        "en": [
+          "it turns sunlight into electricity with no spinning parts",
+          "it burns fuel",
+          "it needs a dam"
+        ],
+        "id": [
+          "mengubah cahaya matahari menjadi listrik tanpa bagian berputar",
+          "membakar bahan bakar",
+          "membutuhkan bendungan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Generators, turbines and solar cells are the engineering behind the power grid.",
+        "id": "Generator, turbin, dan sel surya adalah teknologi di balik jaringan listrik."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Burning fossil fuels releases carbon dioxide; renewable sources reduce it but have their own impacts.",
+        "id": "Pembakaran bahan bakar fosil melepaskan karbon dioksida; sumber terbarukan menguranginya tetapi punya dampak sendiri."
+      }
+    },
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Indonesia's equatorial position and volcanoes shape its energy options.",
+        "id": "Letak Indonesia di khatulistiwa dan gunung apinya memengaruhi pilihan energinya."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "If you planned electricity for a small island village, which mix of sources would you choose and why?",
+      "id": "Jika kamu merencanakan listrik untuk desa di pulau kecil, bauran sumber apa yang kamu pilih dan mengapa?"
+    },
+    {
+      "en": "Which devices at home could you switch off more often?",
+      "id": "Peralatan apa di rumah yang bisa lebih sering kamu matikan?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make a comparison table of five energy sources with columns for 'renewable?', 'depends on weather?' and 'one downside'. Fill it in from the report, then add one question you would like to find a reliable answer to.",
+    "id": "Buat tabel perbandingan lima sumber energi dengan kolom 'terbarukan?', 'bergantung cuaca?', dan 'satu kekurangan'. Isi dari laporan, lalu tambahkan satu pertanyaan yang ingin kamu cari jawabannya dari sumber terpercaya."
+  },
+  "factChecks": [
+    {
+      "claim": "Generators produce electricity when coils of wire rotate near magnets.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Coal and gas power stations burn fuel to make steam that drives turbines.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Fossil fuels are non-renewable and burning them releases carbon dioxide, a greenhouse gas.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Hydroelectric, wind and geothermal plants use turbines driven by water, wind and underground heat.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Indonesia has geothermal power stations.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Solar panels convert sunlight directly into electricity without moving parts.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Indonesia lies on the equator and receives strong sunlight throughout the year.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Large dams can flood valleys and displace people and wildlife.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

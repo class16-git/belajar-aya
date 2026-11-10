@@ -1,0 +1,274 @@
+{
+  "id": "reading-g3-living-with-volcanoes",
+  "version": "1.0.0",
+  "level": "g3",
+  "readingLevel": "transitional",
+  "genre": "report",
+  "mode": "independent",
+  "title": {
+    "en": "Living with volcanoes",
+    "id": "Hidup berdampingan dengan gunung api"
+  },
+  "text": {
+    "en": [
+      "A volcano is an opening in the Earth's surface where hot melted rock, ash and gas can escape. Deep underground, the melted rock is called magma. When it pours out onto the surface, we call it lava.",
+      "Indonesia has a great many volcanoes because it sits on the Ring of Fire, a horseshoe-shaped belt around the Pacific Ocean where the large plates of the Earth's crust meet and move.",
+      "Some Indonesian volcanoes are famous. Mount Merapi in Central Java erupts often, so scientists watch it very closely. The eruption of Krakatau in 1883 was so loud that it was heard thousands of kilometres away.",
+      "Volcanoes can be dangerous. Lava, hot ash clouds and falling rocks can destroy homes. Volcanic ash in the air also makes it hard to breathe and can stop planes from flying.",
+      "Yet many people choose to farm near volcanoes. Over many years, volcanic ash breaks down into rich soil, and crops such as rice, coffee and vegetables grow well in it.",
+      "To stay safe, volcano observers measure small earthquakes and gas from the mountain. When the danger rises, officials announce an alert level and tell families which areas to leave. Listening to these warnings saves lives."
+    ],
+    "id": [
+      "Gunung api adalah bukaan di permukaan Bumi tempat batuan cair yang panas, abu, dan gas bisa keluar. Jauh di bawah tanah, batuan cair itu disebut magma. Ketika keluar ke permukaan, kita menyebutnya lava.",
+      "Indonesia punya sangat banyak gunung api karena terletak di Cincin Api, sabuk berbentuk tapal kuda di sekeliling Samudra Pasifik tempat lempeng-lempeng besar kerak Bumi bertemu dan bergerak.",
+      "Beberapa gunung api di Indonesia terkenal. Gunung Merapi di Jawa Tengah sering meletus, sehingga para ahli mengawasinya dengan sangat teliti. Letusan Krakatau pada tahun 1883 begitu keras sampai terdengar ribuan kilometer jauhnya.",
+      "Gunung api bisa berbahaya. Lava, awan panas, dan batu yang berjatuhan bisa menghancurkan rumah. Abu vulkanik di udara juga membuat sulit bernapas dan bisa menghentikan penerbangan.",
+      "Namun, banyak orang memilih bertani di dekat gunung api. Setelah bertahun-tahun, abu vulkanik terurai menjadi tanah yang subur, dan tanaman seperti padi, kopi, dan sayuran tumbuh baik di sana.",
+      "Agar tetap aman, pengamat gunung api mengukur gempa kecil dan gas dari gunung. Ketika bahaya meningkat, petugas mengumumkan status siaga dan memberi tahu keluarga daerah mana yang harus ditinggalkan. Mematuhi peringatan ini menyelamatkan nyawa."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a report and identifies its main idea and supporting details.",
+      "id": "Membaca laporan dan menemukan gagasan utama serta detail pendukungnya."
+    },
+    {
+      "en": "Explains both the dangers and the benefits of living near a volcano.",
+      "id": "Menjelaskan bahaya sekaligus manfaat tinggal di dekat gunung api."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "magma",
+        "id": "magma"
+      },
+      "meaning": {
+        "en": "melted rock deep underground",
+        "id": "batuan cair jauh di bawah tanah"
+      }
+    },
+    {
+      "word": {
+        "en": "lava",
+        "id": "lava"
+      },
+      "meaning": {
+        "en": "melted rock that has come out onto the surface",
+        "id": "batuan cair yang sudah keluar ke permukaan"
+      }
+    },
+    {
+      "word": {
+        "en": "erupt",
+        "id": "meletus"
+      },
+      "meaning": {
+        "en": "when a volcano bursts out with lava, ash or gas",
+        "id": "saat gunung api mengeluarkan lava, abu, atau gas"
+      }
+    },
+    {
+      "word": {
+        "en": "fertile",
+        "id": "subur"
+      },
+      "meaning": {
+        "en": "good for growing plants",
+        "id": "baik untuk menumbuhkan tanaman"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What is the difference between magma and lava?",
+        "id": "Apa perbedaan magma dan lava?"
+      },
+      "choices": {
+        "en": [
+          "magma is underground; lava has reached the surface",
+          "magma is cold; lava is hot",
+          "they are different kinds of ash"
+        ],
+        "id": [
+          "magma di bawah tanah; lava sudah sampai ke permukaan",
+          "magma dingin; lava panas",
+          "keduanya jenis abu yang berbeda"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why does Indonesia have so many volcanoes?",
+        "id": "Mengapa Indonesia punya banyak gunung api?"
+      },
+      "choices": {
+        "en": [
+          "it lies on the Ring of Fire where plates meet",
+          "it has lots of rain",
+          "it is close to the Moon"
+        ],
+        "id": [
+          "terletak di Cincin Api tempat lempeng bertemu",
+          "curah hujannya tinggi",
+          "dekat dengan Bulan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why might a farmer stay near a volcano even though it is dangerous?",
+        "id": "Mengapa petani mungkin tetap tinggal di dekat gunung api meskipun berbahaya?"
+      },
+      "choices": {
+        "en": [
+          "the soil there helps crops grow well",
+          "lava keeps the crops warm",
+          "planes cannot fly there"
+        ],
+        "id": [
+          "tanah di sana membantu tanaman tumbuh baik",
+          "lava menghangatkan tanaman",
+          "pesawat tidak bisa terbang di sana"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main idea of the last paragraph?",
+        "id": "Apa gagasan utama paragraf terakhir?"
+      },
+      "choices": {
+        "en": [
+          "watching volcanoes and following warnings keeps people safe",
+          "volcanoes make good soil",
+          "Krakatau was very loud"
+        ],
+        "id": [
+          "mengawasi gunung api dan mematuhi peringatan membuat orang aman",
+          "gunung api menghasilkan tanah subur",
+          "Krakatau sangat keras bunyinya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q5",
+      "kind": "math",
+      "prompt": {
+        "en": "Imagine a family's village is 14 km from a volcano and the officials' danger zone reaches 10 km. How far outside the zone is the village?",
+        "id": "Bayangkan desa sebuah keluarga berjarak 14 km dari gunung api dan zona bahaya dari petugas sejauh 10 km. Seberapa jauh desa itu di luar zona?"
+      },
+      "choices": {
+        "en": [
+          "4 km",
+          "24 km",
+          "10 km"
+        ],
+        "id": [
+          "4 km",
+          "24 km",
+          "10 km"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5,
+      "check": {
+        "expression": "14 - 10",
+        "result": "4"
+      }
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Indonesia's place on the Ring of Fire explains its volcanoes and earthquakes.",
+        "id": "Letak Indonesia di Cincin Api menjelaskan banyaknya gunung api dan gempa bumi."
+      }
+    },
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Volcano alerts tell families when and where to move; ash masks protect breathing.",
+        "id": "Status gunung api memberi tahu keluarga kapan dan ke mana harus pindah; masker melindungi pernapasan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Would you live near a volcano? Give a reason for and a reason against.",
+      "id": "Apakah kamu mau tinggal di dekat gunung api? Berikan satu alasan setuju dan satu alasan tidak."
+    },
+    {
+      "en": "How does your family find out about warnings where you live?",
+      "id": "Bagaimana keluargamu mengetahui peringatan bahaya di tempat tinggalmu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Draw a cut-away diagram of a volcano. Label magma, lava, ash cloud and fertile farmland, and add an arrow showing the way to a safe area.",
+    "id": "Gambar penampang gunung api. Beri label magma, lava, awan abu, dan lahan pertanian subur, lalu tambahkan panah menuju daerah aman."
+  },
+  "factChecks": [
+    {
+      "claim": "Magma is melted rock underground; it is called lava when it reaches the surface.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Indonesia lies on the Pacific Ring of Fire, where tectonic plates meet.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Mount Merapi in Central Java is one of Indonesia's most active volcanoes.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The 1883 eruption of Krakatau was heard thousands of kilometres away.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Weathered volcanic ash forms fertile soil.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Volcano observers monitor small earthquakes and gas emissions and officials issue alert levels.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

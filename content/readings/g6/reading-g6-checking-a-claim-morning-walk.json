@@ -1,0 +1,305 @@
+{
+  "id": "reading-g6-checking-a-claim-morning-walk",
+  "version": "1.0.0",
+  "level": "g6",
+  "readingLevel": "advanced",
+  "genre": "article",
+  "mode": "independent",
+  "title": {
+    "en": "Does a morning walk help you focus? How to check a claim",
+    "id": "Apakah jalan pagi membantu fokus? Cara memeriksa sebuah klaim"
+  },
+  "text": {
+    "en": [
+      "Imagine you see this headline online: 'A ten-minute morning walk makes children focus better at school!' It sounds believable, and walking is healthy anyway. But how do we know whether the claim is true? Scientists and good readers ask questions before they believe.",
+      "To practise, here is a made-up example. It is invented for this article and is not a real study. A school asked 24 children to walk for ten minutes every morning for two weeks. Afterwards, 18 of the 24 said they felt more focused in class.",
+      "Question 1: Compared with what? Without a second group of children who did not walk, we cannot tell whether the walkers improved because of walking. Maybe everyone felt more focused because exams had finished, or the weather got cooler. A fair test compares two groups that differ in only one way.",
+      "Question 2: How was it measured? In our invented example, the children only said how they felt. Feelings matter, but they can be influenced by what people expect. A stronger test might also use a puzzle or a listening task, scored the same way for everyone.",
+      "Question 3: How many, and who? Twenty-four children from one school is a small group. A result from a few people can happen by chance. Results are more trustworthy when they are repeated with larger, different groups.",
+      "Question 4: Who is telling us, and why? If a company selling walking shoes paid for the work, that does not make it wrong, but it is a reason to look for other evidence. Ask where the information came from and whether experts who do not gain from it agree.",
+      "None of this means morning walks are useless — walking has many well-known health benefits. It means that a single exciting headline is a starting point for questions, not the final answer."
+    ],
+    "id": [
+      "Bayangkan kamu melihat judul berita ini di internet: 'Jalan pagi sepuluh menit membuat anak lebih fokus di sekolah!' Kedengarannya masuk akal, dan berjalan kaki memang sehat. Tetapi bagaimana kita tahu klaim itu benar? Ilmuwan dan pembaca yang baik bertanya dulu sebelum percaya.",
+      "Sebagai latihan, berikut contoh rekaan. Contoh ini dibuat untuk artikel ini dan bukan penelitian sungguhan. Sebuah sekolah meminta 24 anak berjalan sepuluh menit setiap pagi selama dua minggu. Setelah itu, 18 dari 24 anak mengatakan mereka merasa lebih fokus di kelas.",
+      "Pertanyaan 1: Dibandingkan dengan apa? Tanpa kelompok kedua yang tidak berjalan, kita tidak bisa tahu apakah anak-anak itu membaik karena berjalan. Mungkin semua orang merasa lebih fokus karena ujian sudah selesai, atau cuaca menjadi lebih sejuk. Uji yang adil membandingkan dua kelompok yang hanya berbeda dalam satu hal.",
+      "Pertanyaan 2: Bagaimana mengukurnya? Dalam contoh rekaan kita, anak-anak hanya mengatakan apa yang mereka rasakan. Perasaan itu penting, tetapi bisa dipengaruhi oleh apa yang diharapkan. Uji yang lebih kuat bisa juga memakai teka-teki atau tugas menyimak yang dinilai dengan cara yang sama untuk semua.",
+      "Pertanyaan 3: Berapa banyak, dan siapa? Dua puluh empat anak dari satu sekolah adalah kelompok kecil. Hasil dari sedikit orang bisa terjadi karena kebetulan. Hasil lebih bisa dipercaya jika diulang dengan kelompok yang lebih besar dan beragam.",
+      "Pertanyaan 4: Siapa yang memberi tahu kita, dan mengapa? Jika perusahaan penjual sepatu jalan membiayai kegiatan itu, bukan berarti hasilnya salah, tetapi itu alasan untuk mencari bukti lain. Tanyakan dari mana informasinya berasal dan apakah para ahli yang tidak diuntungkan juga setuju.",
+      "Semua ini tidak berarti jalan pagi tidak berguna — berjalan kaki punya banyak manfaat kesehatan yang sudah dikenal luas. Artinya, satu judul berita yang menarik adalah awal untuk bertanya, bukan jawaban akhir."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads an argument-based article and identifies the questions used to evaluate a claim.",
+      "id": "Membaca artikel argumentatif dan mengenali pertanyaan untuk menilai sebuah klaim."
+    },
+    {
+      "en": "Evaluates evidence by checking comparison groups, measurement, sample size and who benefits.",
+      "id": "Menilai bukti dengan memeriksa kelompok pembanding, cara mengukur, jumlah sampel, dan siapa yang diuntungkan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "claim",
+        "id": "klaim"
+      },
+      "meaning": {
+        "en": "a statement that something is true, which may or may not be proven",
+        "id": "pernyataan bahwa sesuatu benar, yang belum tentu terbukti"
+      }
+    },
+    {
+      "word": {
+        "en": "fair test",
+        "id": "uji yang adil"
+      },
+      "meaning": {
+        "en": "a comparison where only one thing is changed",
+        "id": "perbandingan yang hanya mengubah satu hal"
+      }
+    },
+    {
+      "word": {
+        "en": "evidence",
+        "id": "bukti"
+      },
+      "meaning": {
+        "en": "information that helps show whether something is true",
+        "id": "informasi yang membantu menunjukkan benar tidaknya sesuatu"
+      }
+    },
+    {
+      "word": {
+        "en": "by chance",
+        "id": "kebetulan"
+      },
+      "meaning": {
+        "en": "happening for no real reason",
+        "id": "terjadi tanpa alasan yang sebenarnya"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "math",
+      "prompt": {
+        "en": "In the made-up example, what percentage of the children said they felt more focused?",
+        "id": "Dalam contoh rekaan, berapa persen anak yang mengatakan merasa lebih fokus?"
+      },
+      "choices": {
+        "en": [
+          "75%",
+          "18%",
+          "24%",
+          "60%"
+        ],
+        "id": [
+          "75%",
+          "18%",
+          "24%",
+          "60%"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1,
+      "check": {
+        "expression": "18 / 24",
+        "result": "75%"
+      }
+    },
+    {
+      "id": "q2",
+      "kind": "critical",
+      "prompt": {
+        "en": "What is the biggest weakness of the made-up example?",
+        "id": "Apa kelemahan terbesar contoh rekaan itu?"
+      },
+      "choices": {
+        "en": [
+          "there was no group of children who did not walk to compare with",
+          "the walk was only ten minutes",
+          "it took place at a school"
+        ],
+        "id": [
+          "tidak ada kelompok anak yang tidak berjalan sebagai pembanding",
+          "jalannya hanya sepuluh menit",
+          "dilakukan di sekolah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why does the writer say a company paying for the work is not proof it is wrong?",
+        "id": "Mengapa penulis berkata perusahaan yang membiayai bukan bukti hasilnya salah?"
+      },
+      "choices": {
+        "en": [
+          "funding is a reason to check more, not a reason to reject automatically",
+          "companies are always honest",
+          "money makes results more accurate"
+        ],
+        "id": [
+          "pendanaan adalah alasan untuk memeriksa lebih jauh, bukan alasan langsung menolak",
+          "perusahaan selalu jujur",
+          "uang membuat hasil lebih akurat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which sentence tells the reader the example is not real?",
+        "id": "Kalimat mana yang memberi tahu pembaca bahwa contohnya tidak nyata?"
+      },
+      "choices": {
+        "en": [
+          "It is invented for this article and is not a real study.",
+          "Walking is healthy anyway.",
+          "Feelings matter."
+        ],
+        "id": [
+          "Contoh ini dibuat untuk artikel ini dan bukan penelitian sungguhan.",
+          "Berjalan kaki memang sehat.",
+          "Perasaan itu penting."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q5",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the writer's main message?",
+        "id": "Apa pesan utama penulis?"
+      },
+      "choices": {
+        "en": [
+          "ask careful questions before believing an exciting claim",
+          "morning walks do not work",
+          "never trust anything online"
+        ],
+        "id": [
+          "ajukan pertanyaan cermat sebelum memercayai klaim yang menarik",
+          "jalan pagi tidak ada gunanya",
+          "jangan pernah percaya apa pun di internet"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    },
+    {
+      "id": "q6",
+      "kind": "science",
+      "prompt": {
+        "en": "Which would make the test fairer?",
+        "id": "Mana yang membuat uji lebih adil?"
+      },
+      "choices": {
+        "en": [
+          "compare walkers with a similar group who do not walk, using the same puzzle task",
+          "ask only the children who liked walking",
+          "test one child for a longer time"
+        ],
+        "id": [
+          "membandingkan yang berjalan dengan kelompok serupa yang tidak berjalan, memakai teka-teki yang sama",
+          "hanya bertanya pada anak yang suka berjalan",
+          "menguji satu anak lebih lama"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Physical activity has known health benefits, and health claims deserve careful checking.",
+        "id": "Aktivitas fisik punya manfaat kesehatan yang dikenal, dan klaim kesehatan perlu diperiksa dengan cermat."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Turning '18 out of 24' into a percentage helps compare results.",
+        "id": "Mengubah '18 dari 24' menjadi persen membantu membandingkan hasil."
+      }
+    },
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Fair tests, control groups and repeated results are the heart of scientific inquiry.",
+        "id": "Uji yang adil, kelompok pembanding, dan hasil yang diulang adalah inti penyelidikan ilmiah."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Think of a headline you have seen recently. Which of the four questions would you ask about it?",
+      "id": "Pikirkan judul berita yang baru-baru ini kamu lihat. Pertanyaan mana dari keempat pertanyaan itu yang akan kamu ajukan?"
+    },
+    {
+      "en": "How could your family run a small fair test of a claim at home?",
+      "id": "Bagaimana keluargamu bisa melakukan uji adil kecil tentang sebuah klaim di rumah?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Design your own fair test of a simple claim, such as 'plants grow taller with music'. Write the two groups, the one thing you change, how you will measure, and how many plants you need.",
+    "id": "Rancang uji adil sendiri untuk klaim sederhana, misalnya 'tanaman tumbuh lebih tinggi jika diperdengarkan musik'. Tulis dua kelompoknya, satu hal yang diubah, cara mengukur, dan berapa tanaman yang diperlukan."
+  },
+  "factChecks": [
+    {
+      "claim": "The school example (24 children, 18 felt more focused) is invented for teaching and is not a real study.",
+      "status": "invented_example"
+    },
+    {
+      "claim": "A fair test compares groups that differ in only one variable.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Results from small samples are more likely to happen by chance; replication with larger groups increases confidence.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Self-reported feelings can be influenced by expectations.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Regular walking has well-known health benefits.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "invented_study_label"
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

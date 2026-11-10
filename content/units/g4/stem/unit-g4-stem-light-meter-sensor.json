@@ -86,8 +86,8 @@
     ],
     "abstract": [
       {
-        "en": "Write a threshold rule: if reading < 3 then lamp on else lamp off, and test it with your data.",
-        "id": "Tulis aturan ambang: jika pembacaan < 3 maka lampu nyala selain itu lampu mati, dan uji dengan datamu."
+        "en": "Write a threshold rule: if reading less than 3 then lamp on else lamp off, and test it with your data.",
+        "id": "Tulis aturan ambang: jika pembacaan kurang dari 3 maka lampu nyala selain itu lampu mati, dan uji dengan datamu."
       }
     ]
   },
@@ -129,8 +129,8 @@
       "id": "Pembacaan: di dekat jendela Rafi mendapat 8, 9, dan 8 lapis, jadi nilai tengahnya 8. Di lorong ia mendapat 3, 2, dan 3, nilai tengah 3. Jendela 8 - 3 = 5 lapis lebih terang pada pengukur ini."
     },
     {
-      "en": "Threshold rule: 'If reading < 4, then lamp on, else lamp off.' Hallway 3: lamp on. Window 8: lamp off. Improve the meter: light leaking in from the side gave a reading that was too high, so the black sleeve was added and the test repeated.",
-      "id": "Aturan ambang: 'Jika pembacaan < 4, maka lampu nyala, selain itu lampu mati.' Lorong 3: lampu nyala. Jendela 8: lampu mati. Memperbaiki pengukur: cahaya yang bocor dari samping membuat pembacaan terlalu tinggi, jadi lapisan hitam ditambahkan dan uji diulang."
+      "en": "Threshold rule: 'If reading less than 4, then lamp on, else lamp off.' Hallway 3: lamp on. Window 8: lamp off. Improve the meter: light leaking in from the side gave a reading that was too high, so the black sleeve was added and the test repeated.",
+      "id": "Aturan ambang: 'Jika pembacaan kurang dari 4, maka lampu nyala, selain itu lampu mati.' Lorong 3: lampu nyala. Jendela 8: lampu mati. Memperbaiki pengukur: cahaya yang bocor dari samping membuat pembacaan terlalu tinggi, jadi lapisan hitam ditambahkan dan uji diulang."
     }
   ],
   "practice": [
@@ -211,8 +211,8 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "Rule: if reading < 4, then lamp on, else lamp off. The reading is 2. What does the lamp do?",
-        "id": "Aturan: jika pembacaan < 4, maka lampu nyala, selain itu lampu mati. Pembacaannya 2. Apa yang dilakukan lampu?"
+        "en": "Rule: if reading less than 4, then lamp on, else lamp off. The reading is 2. What does the lamp do?",
+        "id": "Aturan: jika pembacaan kurang dari 4, maka lampu nyala, selain itu lampu mati. Pembacaannya 2. Apa yang dilakukan lampu?"
       },
       "choices": {
         "en": [

@@ -1,0 +1,265 @@
+{
+  "id": "reading-g4-make-a-rain-gauge",
+  "version": "1.0.0",
+  "level": "g4",
+  "readingLevel": "fluent",
+  "genre": "procedural",
+  "mode": "independent",
+  "title": {
+    "en": "How to make and use a rain gauge",
+    "id": "Cara membuat dan memakai penakar hujan"
+  },
+  "text": {
+    "en": [
+      "Weather watchers measure rain in millimetres: the depth of water that would cover flat ground. You can make your own rain gauge and keep a rainfall record.",
+      "You will need: a clear plastic bottle with straight sides, scissors (for an adult), a ruler marked in millimetres, waterproof tape, a permanent marker, and some small stones.",
+      "Step 1: An adult cuts the top off the bottle, about one third of the way down. Turn the top upside down and fit it into the bottle like a funnel. It helps catch rain and slows evaporation.",
+      "Step 2: Put a handful of stones in the bottom so the gauge does not blow over. Pour in water until it just covers the stones. Mark this level as 0.",
+      "Step 3: Tape the ruler to the outside so its 0 mark lines up with your 0 line. The sides must be straight, or the millimetres will not match the real rainfall.",
+      "Step 4: Stand the gauge in an open place, away from roofs and trees that could drip into it or block the rain.",
+      "Step 5: Check it at the same time every day. Write the height of water above the 0 line, then pour out water back down to 0.",
+      "Step 6: After a week, draw a bar chart. Which day was wettest? How much rain fell in total?"
+    ],
+    "id": [
+      "Pengamat cuaca mengukur hujan dalam milimeter: tinggi air yang akan menutupi tanah datar. Kamu bisa membuat penakar hujan sendiri dan mencatat curah hujan.",
+      "Yang kamu perlukan: botol plastik bening bersisi lurus, gunting (untuk orang dewasa), penggaris bertanda milimeter, selotip tahan air, spidol permanen, dan beberapa batu kecil.",
+      "Langkah 1: Orang dewasa memotong bagian atas botol, kira-kira sepertiga dari atas. Balikkan bagian atas itu dan pasang ke dalam botol seperti corong. Corong membantu menangkap hujan dan mengurangi penguapan.",
+      "Langkah 2: Masukkan segenggam batu di dasar agar penakar tidak roboh tertiup angin. Tuang air sampai batu tepat tertutup. Tandai ketinggian ini sebagai 0.",
+      "Langkah 3: Rekatkan penggaris di bagian luar sehingga tanda 0 sejajar dengan garis 0. Sisi botol harus lurus, kalau tidak, ukuran milimeternya tidak sesuai dengan curah hujan sebenarnya.",
+      "Langkah 4: Letakkan penakar di tempat terbuka, jauh dari atap dan pohon yang bisa meneteskan air ke dalamnya atau menghalangi hujan.",
+      "Langkah 5: Periksa pada jam yang sama setiap hari. Catat tinggi air di atas garis 0, lalu buang airnya sampai kembali ke 0.",
+      "Langkah 6: Setelah seminggu, buat diagram batang. Hari apa yang paling basah? Berapa jumlah hujan seluruhnya?"
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Follows a multi-step procedure and explains the reason behind key steps.",
+      "id": "Mengikuti prosedur bertahap dan menjelaskan alasan langkah-langkah penting."
+    },
+    {
+      "en": "Records measurements and adds them to find a total.",
+      "id": "Mencatat hasil pengukuran dan menjumlahkannya untuk mendapatkan total."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "gauge",
+        "id": "penakar"
+      },
+      "meaning": {
+        "en": "a tool that measures an amount",
+        "id": "alat untuk mengukur jumlah sesuatu"
+      }
+    },
+    {
+      "word": {
+        "en": "funnel",
+        "id": "corong"
+      },
+      "meaning": {
+        "en": "a cone that guides liquid into a narrow opening",
+        "id": "kerucut yang mengarahkan cairan ke lubang sempit"
+      }
+    },
+    {
+      "word": {
+        "en": "evaporation",
+        "id": "penguapan"
+      },
+      "meaning": {
+        "en": "when liquid water turns into vapour",
+        "id": "saat air cair berubah menjadi uap"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why do you put stones in the bottom?",
+        "id": "Mengapa batu dimasukkan ke dasar botol?"
+      },
+      "choices": {
+        "en": [
+          "so the gauge does not blow over",
+          "to make the rain cleaner",
+          "to measure the stones"
+        ],
+        "id": [
+          "agar penakar tidak roboh tertiup angin",
+          "agar air hujan lebih bersih",
+          "untuk mengukur batu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why should you check the gauge at the same time each day?",
+        "id": "Mengapa penakar harus diperiksa pada jam yang sama setiap hari?"
+      },
+      "choices": {
+        "en": [
+          "so each reading covers the same length of time and is fair to compare",
+          "because rain only falls at that time",
+          "so the ruler does not move"
+        ],
+        "id": [
+          "agar setiap catatan mencakup waktu yang sama dan adil dibandingkan",
+          "karena hujan hanya turun pada jam itu",
+          "agar penggaris tidak bergeser"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    },
+    {
+      "id": "q3",
+      "kind": "science",
+      "prompt": {
+        "en": "Why must the gauge stand away from roofs and trees?",
+        "id": "Mengapa penakar harus jauh dari atap dan pohon?"
+      },
+      "choices": {
+        "en": [
+          "drips or shelter would make the reading wrong",
+          "trees drink the water",
+          "roofs are too hot"
+        ],
+        "id": [
+          "tetesan atau naungan membuat hasilnya salah",
+          "pohon meminum airnya",
+          "atap terlalu panas"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "The gauge shows 12 mm, 5 mm and 8 mm on three days. How much rain fell in total?",
+        "id": "Penakar menunjukkan 12 mm, 5 mm, dan 8 mm dalam tiga hari. Berapa jumlah hujan seluruhnya?"
+      },
+      "choices": {
+        "en": [
+          "25 mm",
+          "20 mm",
+          "17 mm"
+        ],
+        "id": [
+          "25 mm",
+          "20 mm",
+          "17 mm"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6,
+      "check": {
+        "expression": "12 + 5 + 8",
+        "result": "25"
+      }
+    },
+    {
+      "id": "q5",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What do you do straight after writing down the day's reading?",
+        "id": "Apa yang kamu lakukan tepat setelah mencatat hasil hari itu?"
+      },
+      "choices": {
+        "en": [
+          "pour the water back down to the 0 line",
+          "draw a bar chart",
+          "cut the bottle"
+        ],
+        "id": [
+          "membuang air sampai kembali ke garis 0",
+          "membuat diagram batang",
+          "memotong botol"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Rainfall is measured in millimetres of depth; fair tests keep conditions the same.",
+        "id": "Curah hujan diukur dalam milimeter tinggi air; uji yang adil menjaga kondisi tetap sama."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Adding daily readings and drawing a bar chart turns measurements into data.",
+        "id": "Menjumlahkan catatan harian dan membuat diagram batang mengubah pengukuran menjadi data."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Would a rain gauge in Bogor and one in a drier town show the same totals? How could you find out?",
+      "id": "Apakah penakar hujan di Bogor dan di kota yang lebih kering menunjukkan jumlah yang sama? Bagaimana cara mengetahuinya?"
+    },
+    {
+      "en": "Why is a straight-sided bottle important?",
+      "id": "Mengapa botol bersisi lurus itu penting?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Build the gauge and keep a seven-day rainfall table. Then draw a bar chart and write two sentences about what it shows.",
+    "id": "Buat penakar hujan dan isi tabel curah hujan selama tujuh hari. Lalu buat diagram batang dan tulis dua kalimat tentang apa yang ditunjukkannya."
+  },
+  "factChecks": [
+    {
+      "claim": "Rainfall is measured as a depth of water, usually in millimetres.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A straight-sided container is needed so depth inside matches rainfall depth.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A funnel top reduces evaporation from a rain gauge.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "An adult does all cutting; the cut plastic edge can be sharp, so cover it with tape.",
+      "id": "Orang dewasa yang melakukan semua pemotongan; tepi plastik yang dipotong bisa tajam, jadi tutup dengan selotip."
+    },
+    {
+      "en": "Do not go outside to check the gauge during thunder and lightning.",
+      "id": "Jangan keluar untuk memeriksa penakar saat ada guntur dan petir."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

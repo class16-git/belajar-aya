@@ -86,8 +86,8 @@
     ],
     "abstract": [
       {
-        "en": "Write rules as text: if number > 5 then clap else stomp.",
-        "id": "Tulis aturan sebagai teks: jika angka > 5 maka tepuk selain itu hentak."
+        "en": "Write rules as text: if number greater than 5 then clap else stomp.",
+        "id": "Tulis aturan sebagai teks: jika angka lebih dari 5 maka tepuk selain itu hentak."
       }
     ]
   },
@@ -147,8 +147,8 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Rule: if number > 5 then clap, else stomp. The card is 7. What happens?",
-        "id": "Aturan: jika angka > 5 maka tepuk, selain itu hentak. Kartunya 7. Apa yang terjadi?"
+        "en": "Rule: if number greater than 5 then clap, else stomp. The card is 7. What happens?",
+        "id": "Aturan: jika angka lebih dari 5 maka tepuk, selain itu hentak. Kartunya 7. Apa yang terjadi?"
       },
       "choices": {
         "en": [

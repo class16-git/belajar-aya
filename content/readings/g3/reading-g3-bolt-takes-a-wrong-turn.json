@@ -1,0 +1,247 @@
+{
+  "id": "reading-g3-bolt-takes-a-wrong-turn",
+  "version": "1.0.0",
+  "level": "g3",
+  "readingLevel": "transitional",
+  "genre": "fiction",
+  "mode": "independent",
+  "title": {
+    "en": "Bolt takes a wrong turn",
+    "id": "Bolt salah belok"
+  },
+  "text": {
+    "en": [
+      "Putri and Gilang had built a little robot called Bolt from a kit at the school robotics club. Bolt had two wheels, a sealed battery box and a tiny computer that followed a program one block at a time.",
+      "Their challenge was to drive Bolt around a square of tape on the floor and stop exactly where it started. Each side of the square was 2 floor tiles long.",
+      "Gilang snapped the blocks together on the tablet: forward 2 tiles, turn right, forward 2 tiles, turn right, forward 2 tiles, turn right. 'Done!' he said, and pressed Run.",
+      "Bolt zipped along three sides of the square — and then stopped, one whole side away from the start. Gilang groaned. 'It's broken.'",
+      "'Robots don't get bored or forget,' said Putri. 'It did exactly what we told it. So the mistake must be in our program.' She read the blocks aloud, pointing to each one, while Gilang walked the route with his feet.",
+      "Halfway round the fourth side, Gilang stopped walking because the program had run out. 'We only told it three sides!' A square has four sides, so they needed one more 'forward 2'.",
+      "Putri had a neater idea. She replaced all the blocks with a loop: repeat 4 times — forward 2, turn right. Bolt rolled round the whole square and stopped right on the start line.",
+      "Their teacher smiled. 'Finding and fixing a mistake like that is called debugging. Every programmer does it, every day.'"
+    ],
+    "id": [
+      "Putri dan Gilang merakit robot kecil bernama Bolt dari sebuah kit di klub robotika sekolah. Bolt punya dua roda, kotak baterai tertutup, dan komputer mungil yang menjalankan program satu blok demi satu blok.",
+      "Tantangan mereka adalah menjalankan Bolt mengelilingi persegi dari selotip di lantai dan berhenti tepat di titik awal. Setiap sisi persegi panjangnya 2 ubin.",
+      "Gilang menyusun blok di tablet: maju 2 ubin, belok kanan, maju 2 ubin, belok kanan, maju 2 ubin, belok kanan. 'Selesai!' katanya, lalu menekan Jalankan.",
+      "Bolt melaju di tiga sisi persegi — lalu berhenti, satu sisi penuh dari titik awal. Gilang mengeluh. 'Robotnya rusak.'",
+      "'Robot tidak bisa bosan atau lupa,' kata Putri. 'Robot melakukan persis apa yang kita perintahkan. Jadi kesalahannya pasti di program kita.' Ia membacakan blok satu per satu sambil menunjuknya, sementara Gilang berjalan mengikuti rutenya.",
+      "Di tengah sisi keempat, Gilang berhenti berjalan karena programnya sudah habis. 'Kita cuma menyuruhnya tiga sisi!' Persegi punya empat sisi, jadi mereka butuh satu 'maju 2' lagi.",
+      "Putri punya ide yang lebih rapi. Ia mengganti semua blok dengan perulangan: ulangi 4 kali — maju 2, belok kanan. Bolt berkeliling seluruh persegi dan berhenti tepat di garis awal.",
+      "Guru mereka tersenyum. 'Menemukan dan memperbaiki kesalahan seperti itu disebut debugging. Setiap pemrogram melakukannya, setiap hari.'"
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a story and explains the problem, the attempts and the solution.",
+      "id": "Membaca cerita dan menjelaskan masalah, usaha, dan penyelesaiannya."
+    },
+    {
+      "en": "Understands that a robot follows its program exactly and that a loop repeats steps.",
+      "id": "Memahami bahwa robot menjalankan program persis dan perulangan mengulang langkah."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "program",
+        "id": "program"
+      },
+      "meaning": {
+        "en": "a set of instructions a computer follows",
+        "id": "kumpulan perintah yang dijalankan komputer"
+      }
+    },
+    {
+      "word": {
+        "en": "loop",
+        "id": "perulangan"
+      },
+      "meaning": {
+        "en": "an instruction that repeats some steps a set number of times",
+        "id": "perintah yang mengulang beberapa langkah sejumlah kali"
+      }
+    },
+    {
+      "word": {
+        "en": "debugging",
+        "id": "debugging"
+      },
+      "meaning": {
+        "en": "finding and fixing mistakes in a program",
+        "id": "menemukan dan memperbaiki kesalahan dalam program"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where did Bolt stop on the first try?",
+        "id": "Di mana Bolt berhenti pada percobaan pertama?"
+      },
+      "choices": {
+        "en": [
+          "one side away from the start",
+          "exactly on the start line",
+          "in the middle of the square"
+        ],
+        "id": [
+          "satu sisi dari titik awal",
+          "tepat di garis awal",
+          "di tengah persegi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Putri say the robot was not broken?",
+        "id": "Mengapa Putri berkata robotnya tidak rusak?"
+      },
+      "choices": {
+        "en": [
+          "it had carried out every instruction it was given",
+          "it was a brand-new kit",
+          "the battery box was sealed"
+        ],
+        "id": [
+          "robot itu sudah menjalankan semua perintah yang diberikan",
+          "kitnya masih baru",
+          "kotak baterainya tertutup"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did the children do right after Bolt stopped in the wrong place?",
+        "id": "Apa yang dilakukan anak-anak tepat setelah Bolt berhenti di tempat yang salah?"
+      },
+      "choices": {
+        "en": [
+          "read the program aloud while walking the route",
+          "bought a new robot",
+          "made the square smaller"
+        ],
+        "id": [
+          "membacakan program sambil berjalan mengikuti rute",
+          "membeli robot baru",
+          "mengecilkan perseginya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "With the loop 'repeat 4 times: forward 2', how many tiles does Bolt travel in all?",
+        "id": "Dengan perulangan 'ulangi 4 kali: maju 2', berapa ubin yang ditempuh Bolt seluruhnya?"
+      },
+      "choices": {
+        "en": [
+          "8 tiles",
+          "6 tiles",
+          "4 tiles"
+        ],
+        "id": [
+          "8 ubin",
+          "6 ubin",
+          "4 ubin"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6,
+      "check": {
+        "expression": "4 * 2",
+        "result": "8"
+      }
+    },
+    {
+      "id": "q5",
+      "kind": "critical",
+      "prompt": {
+        "en": "Why was Putri's loop a 'neater' fix than adding one more block?",
+        "id": "Mengapa perulangan Putri adalah perbaikan yang 'lebih rapi' daripada menambah satu blok?"
+      },
+      "choices": {
+        "en": [
+          "it is shorter and matches the four equal sides of a square",
+          "it makes Bolt drive faster",
+          "it uses more blocks"
+        ],
+        "id": [
+          "lebih pendek dan sesuai dengan empat sisi persegi yang sama",
+          "membuat Bolt melaju lebih cepat",
+          "memakai lebih banyak blok"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "robotics_computing",
+      "connection": {
+        "en": "Robots follow programs exactly; debugging and loops are key programming ideas.",
+        "id": "Robot menjalankan program dengan persis; debugging dan perulangan adalah gagasan penting dalam pemrograman."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "A square has four equal sides, so the same step repeats four times.",
+        "id": "Persegi punya empat sisi sama panjang, jadi langkah yang sama diulang empat kali."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Have you ever thought something was broken when really a step was missing?",
+      "id": "Pernahkah kamu mengira sesuatu rusak padahal sebenarnya ada langkah yang terlewat?"
+    },
+    {
+      "en": "How would you change the loop to drive around a triangle?",
+      "id": "Bagaimana kamu mengubah perulangan agar robot berkeliling segitiga?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Be the robot. Mark a square with tape or chalk. A family member writes a program on paper using 'forward', 'turn right' and 'repeat'. Walk it exactly, then debug it together.",
+    "id": "Jadilah robot. Tandai persegi dengan selotip atau kapur. Anggota keluarga menulis program di kertas dengan 'maju', 'belok kanan', dan 'ulangi'. Jalankan persis, lalu perbaiki bersama."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Classroom robot kits should use a sealed battery box with AA or AAA batteries and an adult present.",
+      "id": "Kit robot sekolah sebaiknya memakai kotak baterai tertutup dengan baterai AA atau AAA dan didampingi orang dewasa."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}
