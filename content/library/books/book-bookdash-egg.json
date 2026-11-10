@@ -110,12 +110,22 @@
       "id": "Hitung hewan yang menginginkan telur, lalu hitung lagi dengan urutan berbeda."
     }
   },
-  "publicationStatus": "metadata_reviewed",
+  "publicationStatus": "published",
   "agentChecks": [
     "schema",
     "source-policy-evidence",
     "title-page-metadata",
     "original-synopsis",
     "bilingual-parity"
-  ]
+  ],
+  "educationalReview": {
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10",
+    "checklistVersion": "rg-1"
+  },
+  "linkReview": {
+    "checkedBy": "agent (owner-delegated): HTTP 200 + title match",
+    "checkedAt": "2026-11-10"
+  }
 }

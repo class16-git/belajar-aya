@@ -71,7 +71,10 @@ describe('Reading Garden catalog (rights-aware, fail closed)', () => {
     expect(libraryMinStatus('reviewed')).toBe('published');
     expect(libraryMinStatus('agent_reviewed')).toBe('metadata_reviewed');
     const b = firstBook();
-    expect(b.publicationStatus).toBe('metadata_reviewed');
+    // Start from an unreviewed copy: the shipped books carry the owner's review (2026-11-10).
+    b.publicationStatus = 'metadata_reviewed';
+    delete b.educationalReview;
+    delete b.linkReview;
     expect(isBookVisible(b, lib.sources, 'published')).toBe(false);
     expect(isBookVisible(b, lib.sources, 'metadata_reviewed')).toBe(true);
     b.publicationStatus = 'published';
@@ -87,7 +90,9 @@ describe('Reading Garden catalog (rights-aware, fail closed)', () => {
 
   it('the agent cannot publish: published/educational_reviewed without a human record fails validation', () => {
     const r = raw();
-    (r.books[0] as { publicationStatus: string }).publicationStatus = 'published';
+    const raw0 = r.books[0] as { publicationStatus: string; educationalReview?: unknown };
+    raw0.publicationStatus = 'published';
+    delete raw0.educationalReview;
     expect(validateLibrary(r).errors.join()).toMatch(/needs a human educational review record/);
   });
 
@@ -109,7 +114,7 @@ describe('Reading Garden catalog (rights-aware, fail closed)', () => {
 });
 
 describe('Atlas-original comprehension passages', () => {
-  it('are original, agent-checked only until a human reviews them, and bilingual with matching structure', () => {
+  it('are original, visible only with a human review record, and bilingual with matching structure', () => {
     for (const p of lib.passages) {
       expect(p.copyrightStatus).toBe('original');
       expect(p.paragraphs.en.length).toBe(p.paragraphs.id.length);
@@ -144,5 +149,19 @@ describe('Atlas-original comprehension passages', () => {
       expect(gradePassage(p, wrong).correct).toBe(0);
       expect(gradePassage(p, {}).correct).toBe(0);
     }
+  });
+});
+
+describe('owner review (2026-11-10)', () => {
+  it('every book is published with a human educational review and a recorded link check, but stays link-only', () => {
+    for (const b of lib.books) {
+      expect(b.publicationStatus, b.id).toBe('published');
+      expect(b.educationalReview?.reviewedBy, b.id).toBe('owner');
+      expect(b.linkReview?.checkedBy, b.id).toMatch(/owner-delegated/);
+      expect(isBookVisible(b, lib.sources, 'published'), b.id).toBe(true);
+      expect(b.accessMode).toBe('external_link');
+      expect(b.rights.titleLicenseConfirmed).toBe(false); // approval never changes rights facts
+    }
+    for (const p of lib.passages) expect(isPassageVisible(p, 'reviewed'), p.id).toBe(true);
   });
 });
