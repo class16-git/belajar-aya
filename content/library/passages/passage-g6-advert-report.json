@@ -2,20 +2,22 @@
   "id": "passage-g6-advert-report",
   "stage": "g6",
   "title": {
-    "en": "An advert and a report",
-    "id": "Sebuah iklan dan sebuah laporan"
+    "en": "An advert and a report (an invented example)",
+    "id": "Sebuah iklan dan sebuah laporan (contoh rekaan)"
   },
   "genre": "informational",
   "paragraphs": {
     "en": [
+      "This lesson uses two made-up texts to practise checking evidence. Neither the drink nor the study is real.",
       "Advert: “ZoomFizz energy drink makes you smarter! Drink ZoomFizz before every test. Thousands of students love it!”",
-      "Report: “A study by a university nutrition team followed 300 students for one term. Students who slept at least nine hours and ate breakfast did better on tests than those who did not. The study found no link between energy drinks and test scores. Doctors advise children to avoid energy drinks because of their high sugar and caffeine.”",
-      "The advert is written to sell a product. The report describes what researchers measured and who did the research."
+      "Report: “A university nutrition team followed 300 students for one term. Students who slept at least nine hours and ate breakfast had higher test scores than those who did not. The team found no link between energy drinks and test scores.”",
+      "The advert is written to sell a product and gives no evidence. The report describes what was measured, but before trusting a real report you would still check who the researchers are, where the study was published, and whether other studies found the same. A link between sleep and scores also does not prove that sleep caused the higher scores."
     ],
     "id": [
+      "Pelajaran ini memakai dua teks rekaan untuk berlatih memeriksa bukti. Minuman dan penelitiannya tidak nyata.",
       "Iklan: “Minuman energi ZoomFizz membuatmu lebih pintar! Minum ZoomFizz sebelum setiap ujian. Ribuan siswa menyukainya!”",
-      "Laporan: “Sebuah penelitian oleh tim gizi universitas mengamati 300 siswa selama satu semester. Siswa yang tidur sedikitnya sembilan jam dan sarapan mendapat nilai ujian lebih baik daripada yang tidak. Penelitian itu tidak menemukan hubungan antara minuman energi dan nilai ujian. Dokter menyarankan anak-anak menghindari minuman energi karena tinggi gula dan kafein.”",
-      "Iklan ditulis untuk menjual produk. Laporan menjelaskan apa yang diukur peneliti dan siapa yang melakukan penelitian."
+      "Laporan: “Sebuah tim gizi universitas mengamati 300 siswa selama satu semester. Siswa yang tidur sedikitnya sembilan jam dan sarapan mendapat nilai ujian lebih tinggi daripada yang tidak. Tim itu tidak menemukan hubungan antara minuman energi dan nilai ujian.”",
+      "Iklan ditulis untuk menjual produk dan tidak memberi bukti. Laporan menjelaskan apa yang diukur, tetapi sebelum memercayai laporan sungguhan kamu tetap perlu memeriksa siapa penelitinya, di mana penelitian itu diterbitkan, dan apakah penelitian lain menemukan hal yang sama. Hubungan antara tidur dan nilai juga belum membuktikan bahwa tidurlah penyebab nilai yang lebih tinggi."
     ]
   },
   "questions": [
@@ -23,23 +25,23 @@
       "id": "q1",
       "kind": "evidence",
       "prompt": {
-        "en": "Which statement is a claim without evidence?",
+        "en": "Which statement is a claim with no evidence?",
         "id": "Pernyataan mana yang merupakan klaim tanpa bukti?"
       },
       "choices": {
         "en": [
           "“ZoomFizz makes you smarter!”",
-          "“The study followed 300 students.”",
-          "“Students who slept nine hours did better.”"
+          "“The team followed 300 students.”",
+          "“Some students slept nine hours.”"
         ],
         "id": [
           "“ZoomFizz membuatmu lebih pintar!”",
-          "“Penelitian mengamati 300 siswa.”",
-          "“Siswa yang tidur sembilan jam mendapat nilai lebih baik.”"
+          "“Tim itu mengamati 300 siswa.”",
+          "“Sebagian siswa tidur sembilan jam.”"
         ]
       },
       "answer": 0,
-      "evidenceParagraph": 0
+      "evidenceParagraph": 1
     },
     {
       "id": "q2",
@@ -61,65 +63,65 @@
         ]
       },
       "answer": 0,
-      "evidenceParagraph": 0
+      "evidenceParagraph": 1
     },
     {
       "id": "q3",
-      "kind": "main_idea",
+      "kind": "literal",
       "prompt": {
-        "en": "According to the report, what helped test scores?",
-        "id": "Menurut laporan, apa yang membantu nilai ujian?"
+        "en": "According to the report, which students had higher test scores?",
+        "id": "Menurut laporan, siswa mana yang mendapat nilai ujian lebih tinggi?"
       },
       "choices": {
         "en": [
-          "energy drinks",
-          "enough sleep and breakfast",
-          "studying late at night"
+          "students who drank energy drinks",
+          "students who slept at least nine hours and ate breakfast",
+          "students who studied late at night"
         ],
         "id": [
-          "minuman energi",
-          "tidur cukup dan sarapan",
-          "belajar sampai larut malam"
+          "siswa yang minum minuman energi",
+          "siswa yang tidur sedikitnya sembilan jam dan sarapan",
+          "siswa yang belajar sampai larut malam"
         ]
       },
       "answer": 1,
-      "evidenceParagraph": 1
+      "evidenceParagraph": 2
     },
     {
       "id": "q4",
       "kind": "evidence",
       "prompt": {
-        "en": "Why is the report more trustworthy than the advert?",
-        "id": "Mengapa laporan lebih dapat dipercaya daripada iklan?"
+        "en": "Before trusting a real report like this, what should you check?",
+        "id": "Sebelum memercayai laporan sungguhan seperti ini, apa yang perlu kamu periksa?"
       },
       "choices": {
         "en": [
-          "It says who measured what, and it is not selling anything.",
-          "It is longer.",
-          "It uses the word ‘doctors’."
+          "Who did the study, where it was published, and whether others found the same",
+          "Whether it is longer than the advert",
+          "Whether it uses the word “university”"
         ],
         "id": [
-          "Laporan menyebut siapa mengukur apa, dan tidak menjual apa pun.",
-          "Laporan lebih panjang.",
-          "Laporan memakai kata ‘dokter’."
+          "Siapa yang meneliti, di mana diterbitkan, dan apakah peneliti lain menemukan hal yang sama",
+          "Apakah laporannya lebih panjang daripada iklan",
+          "Apakah laporannya memakai kata “universitas”"
         ]
       },
       "answer": 0,
-      "evidenceParagraph": 2
+      "evidenceParagraph": 3
     }
   ],
   "copyrightStatus": "original",
-  "reviewStatus": "reviewed",
+  "reviewStatus": "agent_reviewed",
   "review": {
     "agentChecks": [
-      "original-text",
       "answer-key-check",
-      "evidence-paragraph-check",
       "bilingual-parity",
-      "readability-estimate"
-    ],
-    "reviewedBy": "owner",
-    "reviewerRole": "parent",
-    "reviewedAt": "2026-11-10"
+      "evidence-paragraph-check",
+      "fictional-example-label",
+      "no-causal-overclaim",
+      "original-text",
+      "readability-estimate",
+      "source-limitations"
+    ]
   }
 }

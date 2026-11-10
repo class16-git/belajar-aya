@@ -10,12 +10,12 @@
     "en": [
       "Dina has a red kite.",
       "The wind is big. The kite goes up, up, up.",
-      "Dina runs and the kite flies. Dina is glad."
+      "Dina runs and the kite flies. Dina laughs and claps."
     ],
     "id": [
       "Dina punya layang-layang merah.",
       "Anginnya kencang. Layang-layang naik, naik, naik.",
-      "Dina berlari dan layang-layang terbang. Dina senang."
+      "Dina berlari dan layang-layang terbang. Dina tertawa dan bertepuk tangan."
     ]
   },
   "questions": [
@@ -67,8 +67,8 @@
       "id": "q3",
       "kind": "inference",
       "prompt": {
-        "en": "How does Dina feel?",
-        "id": "Bagaimana perasaan Dina?"
+        "en": "How does Dina feel? Look at what she does.",
+        "id": "Bagaimana perasaan Dina? Lihat apa yang ia lakukan."
       },
       "choices": {
         "en": [
@@ -87,17 +87,15 @@
     }
   ],
   "copyrightStatus": "original",
-  "reviewStatus": "reviewed",
+  "reviewStatus": "agent_reviewed",
   "review": {
     "agentChecks": [
-      "original-text",
       "answer-key-check",
-      "evidence-paragraph-check",
       "bilingual-parity",
+      "evidence-paragraph-check",
+      "original-text",
+      "question-demand-check",
       "readability-estimate"
-    ],
-    "reviewedBy": "owner",
-    "reviewerRole": "parent",
-    "reviewedAt": "2026-11-10"
+    ]
   }
 }
