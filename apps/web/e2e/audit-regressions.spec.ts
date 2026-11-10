@@ -177,3 +177,48 @@ test('ATL-13: answer choices follow the radio-group keyboard pattern (one tab st
     }
   }
 });
+
+test('ATL-14: pages hydrate under the report-only nonce CSP with zero violations; an injected inline script is reported', async ({ page, request, baseURL }) => {
+  const violations: string[] = [];
+  page.on('console', (m) => { if (/Content Security Policy/i.test(m.text())) violations.push(`${page.url()}: ${m.text()}`); });
+  const first = await page.goto('/signin');
+  const csp = first!.headers()['content-security-policy-report-only']!;
+  expect(csp).toMatch(/script-src 'self' 'nonce-[A-Za-z0-9+/=]+' 'strict-dynamic'/);
+  expect(csp).not.toMatch(/script-src[^;]*unsafe-inline/);
+  const nonce = /'nonce-([^']+)'/.exec(csp)![1]!;
+  // Next.js put the nonce on its own scripts; every script element carries it.
+  const scripts = await page.evaluate(() => [...document.querySelectorAll('script')].map((s) => s.nonce));
+  expect(scripts.length).toBeGreaterThan(0);
+  expect(new Set(scripts)).toEqual(new Set([nonce]));
+  // A new nonce on every request.
+  expect((await page.request.get('/signin')).headers()['content-security-policy-report-only']).not.toBe(csp);
+
+  const fam = await g1WithCountingSecure(request, baseURL!, 'atl14');
+  await signIn(page, fam.email);
+  for (const path of ['/family', '/library', '/settings']) {
+    await page.goto(path);
+    await page.waitForLoadState('networkidle');
+  }
+  await enterChildMode(page);
+  await page.goto('/learn');
+  await page.waitForLoadState('networkidle');
+  await page.getByRole('link', { name: /./ }).first().waitFor();
+  expect(violations).toEqual([]);
+
+  // Interactivity proves hydration worked under the policy.
+  await page.goto('/learn/library');
+  await page.waitForLoadState('networkidle');
+  expect(violations).toEqual([]);
+
+  // Simulated HTML-injection bug: an inline <script> without the nonce in server HTML is reported
+  // (report-only: not yet blocked), while the page's own nonced scripts are not.
+  await page.route('**/privacy', async (route) => {
+    const res = await route.fetch();
+    const html = (await res.text()).replace('</body>', '<script>window.__injected = 1</script></body>');
+    await route.fulfill({ response: res, body: html });
+  });
+  await page.goto('/privacy');
+  await expect.poll(() => violations.filter((v) => /inline script violates/i.test(v)).length).toBe(1);
+  const rep = await page.request.post('/api/csp-report', { headers: { 'Content-Type': 'application/csp-report' }, data: { 'csp-report': { 'document-uri': `${baseURL}/privacy?x=1`, 'effective-directive': 'script-src-elem', 'blocked-uri': 'inline' } } });
+  expect(rep.status()).toBe(204);
+});
