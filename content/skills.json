@@ -477,6 +477,227 @@
         "en": "Notice and record how light and touch sensors respond.",
         "id": "Memperhatikan dan mencatat respons sensor cahaya dan sentuhan."
       }
+    },
+    {
+      "id": "PREK-LANG-SOUND-LETTER",
+      "domain": "language",
+      "band": "prek",
+      "order": 1,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Touch-and-say letters",
+        "id": "Huruf sentuh dan ucap"
+      },
+      "description": {
+        "en": "Trace a textured letter with two fingers while saying its sound.",
+        "id": "Menelusuri huruf bertekstur dengan dua jari sambil mengucapkan bunyinya."
+      }
+    },
+    {
+      "id": "PREK-LANG-MOVABLE",
+      "domain": "language",
+      "band": "prek",
+      "order": 2,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Build a word",
+        "id": "Menyusun kata"
+      },
+      "description": {
+        "en": "Build short sound-it-out words with letter cards before writing them.",
+        "id": "Menyusun kata pendek yang bisa dieja bunyinya dengan kartu huruf sebelum menulisnya."
+      }
+    },
+    {
+      "id": "PREK-CULT-WORLD",
+      "domain": "cultural",
+      "band": "prek",
+      "order": 3,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Globe and seed-to-plant",
+        "id": "Globe dan biji menjadi tanaman"
+      },
+      "description": {
+        "en": "Find land and water on a globe, then put three pictures of a plant's life cycle in order.",
+        "id": "Menemukan daratan dan air di globe, lalu mengurutkan tiga gambar siklus hidup tanaman."
+      }
+    },
+    {
+      "id": "PREK-MATH-COMPOSE-10",
+      "domain": "mathematics",
+      "band": "prek",
+      "order": 4,
+      "usesCpa": true,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Hiding hands",
+        "id": "Tangan yang bersembunyi"
+      },
+      "description": {
+        "en": "Split a group of up to 10 objects into two parts and find the hidden part.",
+        "id": "Membagi kelompok sampai 10 benda menjadi dua bagian dan menemukan bagian yang tersembunyi."
+      }
+    },
+    {
+      "id": "PREK-MATH-ADD-SUB",
+      "domain": "mathematics",
+      "band": "prek",
+      "order": 5,
+      "usesCpa": true,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Toy bus stories",
+        "id": "Cerita bus mainan"
+      },
+      "description": {
+        "en": "Act out adding on and taking away with toys, within 10.",
+        "id": "Memeragakan menambah dan mengambil dengan mainan, sampai 10."
+      }
+    },
+    {
+      "id": "ROBO-PK-ALGORITHM",
+      "domain": "robotics_stem",
+      "band": "prek",
+      "order": 1,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Program the grown-up robot",
+        "id": "Program robot dewasa"
+      },
+      "description": {
+        "en": "Give step-by-step instructions to build a 3-block tower, and fix any instruction that goes wrong.",
+        "id": "Memberi instruksi langkah demi langkah untuk membangun menara 3 balok, dan memperbaiki instruksi yang salah."
+      }
+    },
+    {
+      "id": "ROBO-PK-GEARS",
+      "domain": "robotics_stem",
+      "band": "prek",
+      "order": 2,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Turning lids",
+        "id": "Tutup yang berputar"
+      },
+      "description": {
+        "en": "Notice how one turning circle makes another turn, and in which direction.",
+        "id": "Memperhatikan bagaimana satu lingkaran yang berputar membuat lingkaran lain berputar, dan ke arah mana."
+      }
+    },
+    {
+      "id": "K-LANG-READ-WORDS",
+      "domain": "language",
+      "band": "kindergarten",
+      "order": 1,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Word and object match",
+        "id": "Mencocokkan kata dan benda"
+      },
+      "description": {
+        "en": "Read simple sound-it-out words and match each to an object.",
+        "id": "Membaca kata sederhana yang bisa dieja bunyinya dan mencocokkannya dengan benda."
+      }
+    },
+    {
+      "id": "K-CULT-MAPS-PLANTS",
+      "domain": "cultural",
+      "band": "kindergarten",
+      "order": 2,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "My room map and plant parts",
+        "id": "Peta kamarku dan bagian tanaman"
+      },
+      "description": {
+        "en": "Draw a simple map of a room, then name the parts of a real plant.",
+        "id": "Menggambar peta sederhana sebuah ruangan, lalu menyebut bagian-bagian tanaman sungguhan."
+      }
+    },
+    {
+      "id": "K-PRACT-ROUTINES",
+      "domain": "practical_life",
+      "band": "kindergarten",
+      "order": 3,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "My day in order",
+        "id": "Urutan hariku"
+      },
+      "description": {
+        "en": "Put drawings of daily routines in order and sort them into morning, afternoon and night.",
+        "id": "Mengurutkan gambar kegiatan sehari-hari dan memilahnya ke pagi, siang, dan malam."
+      }
+    },
+    {
+      "id": "K-MATH-PICTURE-PROBLEMS",
+      "domain": "mathematics",
+      "band": "kindergarten",
+      "order": 1,
+      "usesCpa": true,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Draw the story",
+        "id": "Gambar ceritanya"
+      },
+      "description": {
+        "en": "Solve picture word problems by acting them out and drawing them.",
+        "id": "Menyelesaikan soal cerita bergambar dengan memeragakan dan menggambarnya."
+      }
+    },
+    {
+      "id": "ROBO-K-LOOPS",
+      "domain": "robotics_stem",
+      "band": "kindergarten",
+      "order": 1,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Repeat dance",
+        "id": "Tarian berulang"
+      },
+      "description": {
+        "en": "Use a 'repeat' card to shorten a movement sequence and predict what it will do.",
+        "id": "Memakai kartu 'ulangi' untuk memperpendek urutan gerakan dan menebak hasilnya."
+      }
+    },
+    {
+      "id": "ROBO-K-LINKAGES",
+      "domain": "robotics_stem",
+      "band": "kindergarten",
+      "order": 2,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Card grabber arm",
+        "id": "Lengan penjepit dari karton"
+      },
+      "description": {
+        "en": "Build a simple moving arm from card strips and see how pushing one end moves the other.",
+        "id": "Membuat lengan bergerak sederhana dari potongan karton dan melihat bagaimana mendorong satu ujung menggerakkan ujung lain."
+      }
     }
   ]
 }

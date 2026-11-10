@@ -111,7 +111,9 @@
       "delivery": "offline",
       "assessment": "observation",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "ROBO-PK-ALGORITHM"
+        ]
       },
       "reviewFlags": [],
       "requiresReligiousReview": false,
@@ -133,7 +135,9 @@
       "delivery": "offline",
       "assessment": "observation",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "ROBO-PK-GEARS"
+        ]
       },
       "reviewFlags": [
         "physical_safety"
@@ -157,7 +161,9 @@
       "delivery": "blended",
       "assessment": "observation",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "ROBO-K-LOOPS"
+        ]
       },
       "reviewFlags": [],
       "requiresReligiousReview": false,
@@ -179,7 +185,9 @@
       "delivery": "offline",
       "assessment": "observation",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "ROBO-K-LINKAGES"
+        ]
       },
       "reviewFlags": [
         "physical_safety"

@@ -1,0 +1,134 @@
+{
+  "id": "lesson-prek-movable-letters-001",
+  "skillId": "PREK-LANG-MOVABLE",
+  "framework": "montessori",
+  "objectiveIds": [
+    "mont.age4_5.movable-letters"
+  ],
+  "title": {
+    "en": "Build a word",
+    "id": "Menyusun kata"
+  },
+  "ageBand": "prek",
+  "domain": "language",
+  "mode": "offline",
+  "objective": {
+    "en": "Build short sound-it-out words with letter cards before writing them.",
+    "id": "Menyusun kata pendek yang bisa dieja bunyinya dengan kartu huruf sebelum menulisnya."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 5,
+  "activityMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "materials": [
+    {
+      "en": "Paper letter cards (several of each letter your child knows)",
+      "id": "Kartu huruf dari kertas (beberapa untuk setiap huruf yang dikenal anak)"
+    },
+    {
+      "en": "Three objects with short phonetic names (for example 'cup', 'pen', 'mat' or 'bola', 'buku', 'topi')",
+      "id": "Tiga benda dengan nama pendek yang mudah dieja (misalnya 'bola', 'buku', 'topi')"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Lay the letter cards face up in a box or on a tray.",
+      "id": "Letakkan kartu huruf menghadap atas di kotak atau nampan."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Pick an object and say its name slowly, sound by sound: /b/ /o/ /l/ /a/.",
+      "id": "Ambil satu benda dan ucapkan namanya perlahan, bunyi demi bunyi: /b/ /o/ /l/ /a/."
+    },
+    {
+      "en": "Ask your child to find the letter for each sound and lay them in a row.",
+      "id": "Minta anak mencari huruf untuk setiap bunyi dan menyusunnya berderet."
+    },
+    {
+      "en": "Read the word together by running a finger under it.",
+      "id": "Baca kata itu bersama sambil menggeser jari di bawahnya."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "What sound comes next?",
+      "id": "Bunyi apa berikutnya?"
+    },
+    {
+      "en": "Let's read what you built.",
+      "id": "Ayo baca yang kamu susun."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Hears each sound in order",
+      "id": "Mendengar setiap bunyi secara berurutan"
+    },
+    {
+      "en": "Finds the letter for a sound",
+      "id": "Menemukan huruf untuk suatu bunyi"
+    },
+    {
+      "en": "Reads the built word back",
+      "id": "Membaca kembali kata yang disusun"
+    }
+  ],
+  "cleanup": {
+    "en": "Sort the letters back into the box.",
+    "id": "Pilah huruf kembali ke kotaknya."
+  },
+  "variations": [
+    {
+      "en": "Build the name of a family member or a pet.",
+      "id": "Susun nama anggota keluarga atau hewan peliharaan."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within reach for the whole activity.",
+      "id": "Orang dewasa tetap dalam jangkauan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    },
+    {
+      "en": "Use only objects bigger than your child's fist.",
+      "id": "Gunakan hanya benda yang lebih besar dari kepalan tangan anak."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "Spelling may be phonetic ('kat'). That is the point at this stage: hearing sounds. Do not correct spelling yet.",
+      "id": "Ejaan boleh mengikuti bunyi. Itulah tujuannya di tahap ini: mendengar bunyi. Jangan koreksi ejaan dulu."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [],
+  "arabicPhrases": []
+}

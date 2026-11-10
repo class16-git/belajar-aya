@@ -38,4 +38,4 @@ About one working session for implementation and tests, plus your review time. N
 2. **Slice E — Islamic adab & duas (ages 2–5)**, authored as drafts once you decide the madhhab, reviewer and editions;
    published only after qualified religious review. The draft mealtime card is the template.
 3. ✅ *(implemented 2026-11-10, awaiting your review — see `SLICE_D_ROBOTICS_REVIEW.md`)* **Slice D — Grade 1 unplugged robotics** (grid robot, debug the path) with rubric assessment.
-4. **Slice C — Kindergarten phonics and concrete maths**, then Grades 2–6 systematically.
+4. ◐ *(part 1 — age 4–5 and K cards — implemented 2026-11-10, see `SLICE_C_EARLY_YEARS_REVIEW.md`; part 2 — K on-screen maths — next)* **Slice C — Kindergarten phonics and concrete maths**, then Grades 2–6 systematically.

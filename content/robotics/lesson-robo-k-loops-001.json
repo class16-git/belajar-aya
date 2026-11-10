@@ -1,0 +1,134 @@
+{
+  "id": "lesson-robo-k-loops-001",
+  "skillId": "ROBO-K-LOOPS",
+  "framework": "robotics_stem",
+  "objectiveIds": [
+    "robo.k.loops-repeat"
+  ],
+  "title": {
+    "en": "Repeat dance",
+    "id": "Tarian berulang"
+  },
+  "ageBand": "kindergarten",
+  "domain": "robotics_stem",
+  "mode": "offline",
+  "objective": {
+    "en": "Use a 'repeat' card to shorten a movement sequence and predict what it will do.",
+    "id": "Memakai kartu 'ulangi' untuk memperpendek urutan gerakan dan menebak hasilnya."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 5,
+  "activityMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "materials": [
+    {
+      "en": "Movement cards you draw: clap, jump, spin, touch toes",
+      "id": "Kartu gerakan yang Anda gambar: tepuk, lompat, putar, sentuh jari kaki"
+    },
+    {
+      "en": "A 'repeat 2×' and a 'repeat 3×' card",
+      "id": "Kartu 'ulangi 2×' dan 'ulangi 3×'"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Clear a space to move safely.",
+      "id": "Kosongkan ruang agar aman bergerak."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Lay out: clap, jump, clap, jump, clap, jump. Do it together.",
+      "id": "Susun: tepuk, lompat, tepuk, lompat, tepuk, lompat. Lakukan bersama."
+    },
+    {
+      "en": "Ask: 'Can we say this with fewer cards?' Show 'repeat 3×' with clap, jump.",
+      "id": "Tanyakan: 'Bisakah kita menulis ini dengan kartu lebih sedikit?' Tunjukkan 'ulangi 3×' dengan tepuk, lompat."
+    },
+    {
+      "en": "Your child builds a repeat program; predict how many jumps before you dance it.",
+      "id": "Anak menyusun program berulang; tebak berapa lompatan sebelum menari."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "How many jumps will that be?",
+      "id": "Itu akan jadi berapa lompatan?"
+    },
+    {
+      "en": "Repeat means do it again.",
+      "id": "Ulangi artinya lakukan lagi."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Spots the repeating part",
+      "id": "Melihat bagian yang berulang"
+    },
+    {
+      "en": "Uses a repeat card",
+      "id": "Memakai kartu ulangi"
+    },
+    {
+      "en": "Predicts the total moves",
+      "id": "Menebak jumlah gerakan"
+    }
+  ],
+  "cleanup": {
+    "en": "Stack the cards and cool down with three slow breaths.",
+    "id": "Tumpuk kartu dan tenangkan diri dengan tiga tarikan napas pelan."
+  },
+  "variations": [
+    {
+      "en": "Nest repeats: 'repeat 2× (clap, repeat 2× (jump))'.",
+      "id": "Ulangan bersarang: 'ulangi 2× (tepuk, ulangi 2× (lompat))'."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within reach for the whole activity.",
+      "id": "Orang dewasa tetap dalam jangkauan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    },
+    {
+      "en": "Move on a non-slippery floor away from furniture corners.",
+      "id": "Bergerak di lantai yang tidak licin, jauh dari sudut perabot."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "Loops are a core programming idea; counting the total moves links it to multiplication later.",
+      "id": "Perulangan adalah ide inti pemrograman; menghitung total gerakan menghubungkannya ke perkalian nanti."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [],
+  "arabicPhrases": []
+}

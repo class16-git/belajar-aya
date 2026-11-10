@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { getCatalog } from '@atlas/curriculum';
-import { availabilityForBand, interactiveBandForGrade } from './availability';
+import { availabilityForBand, cardBandsFor, interactiveBandForGrade } from './availability';
 
 describe('grade → interactive curriculum band (Phase 1)', () => {
   it('Kindergarten, Grade 1 and an unset grade get the Grade 1 lessons', () => {
@@ -32,4 +32,18 @@ describe('availability counts for the parent review notice', () => {
       expect(a.awaitingReview).toBe(0);
     });
   }
+});
+
+describe('cardBandsFor', () => {
+  it('suggests only toddler cards until the parent confirms the age transition', () => {
+    expect(cardBandsFor(2, true)).toEqual(['toddler']);
+    expect(cardBandsFor(4, false)).toEqual(['toddler']);
+    expect(cardBandsFor(null, true)).toEqual(['toddler']);
+  });
+  it('follows the age once confirmed: own band plus the one below', () => {
+    expect(cardBandsFor(3, true)).toEqual(['toddler', 'preschool']);
+    expect(cardBandsFor(4, true)).toEqual(['preschool', 'prek']);
+    expect(cardBandsFor(5, true)).toEqual(['prek', 'kindergarten']);
+    expect(cardBandsFor(6, true)).toEqual(['prek', 'kindergarten']);
+  });
 });

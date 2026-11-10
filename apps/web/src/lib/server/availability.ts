@@ -27,3 +27,15 @@ export function availabilityForBand(band: AgeBand, minReview: ReviewStatus): Ava
   const awaitingReview = lessons.filter((l) => l.reviewStatus === 'agent_reviewed' && !isVisible(l, minReview)).length;
   return { visible, awaitingReview };
 }
+
+/**
+ * Offline card bands suggested for a learner's age. Without the parent's confirmation of the age transition
+ * (no automatic change), only toddler cards are suggested. After it, each age gets its own band plus the one
+ * below for review and confidence.
+ */
+export function cardBandsFor(ageYears: number | null, transitionAcknowledged: boolean): AgeBand[] {
+  if (ageYears === null || ageYears < 3 || !transitionAcknowledged) return ['toddler'];
+  if (ageYears < 4) return ['toddler', 'preschool'];
+  if (ageYears < 5) return ['preschool', 'prek'];
+  return ['prek', 'kindergarten'];
+}

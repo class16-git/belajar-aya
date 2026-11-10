@@ -1,0 +1,130 @@
+{
+  "id": "lesson-k-read-words-001",
+  "skillId": "K-LANG-READ-WORDS",
+  "framework": "montessori",
+  "objectiveIds": [
+    "mont.k.read-simple-words"
+  ],
+  "title": {
+    "en": "Word and object match",
+    "id": "Mencocokkan kata dan benda"
+  },
+  "ageBand": "kindergarten",
+  "domain": "language",
+  "mode": "offline",
+  "objective": {
+    "en": "Read simple sound-it-out words and match each to an object.",
+    "id": "Membaca kata sederhana yang bisa dieja bunyinya dan mencocokkannya dengan benda."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 5,
+  "activityMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "materials": [
+    {
+      "en": "Four objects with short phonetic names",
+      "id": "Empat benda dengan nama pendek yang mudah dieja"
+    },
+    {
+      "en": "Four small word cards you write in clear lower-case print",
+      "id": "Empat kartu kata kecil yang Anda tulis dengan huruf kecil yang jelas"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Put the objects in a row and the cards face down in a pile.",
+      "id": "Letakkan benda berderet dan kartu tertelungkup bertumpuk."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Your child turns over a card and sounds it out quietly.",
+      "id": "Anak membalik satu kartu dan mengeja bunyinya pelan-pelan."
+    },
+    {
+      "en": "They blend the sounds into the word and place the card by the matching object.",
+      "id": "Anak menggabungkan bunyi menjadi kata dan menaruh kartu di dekat benda yang cocok."
+    },
+    {
+      "en": "Read all the cards together at the end.",
+      "id": "Baca semua kartu bersama di akhir."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "Say the sounds, then say them fast.",
+      "id": "Ucapkan bunyinya, lalu ucapkan dengan cepat."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Blends three or four sounds into a word",
+      "id": "Menggabungkan tiga atau empat bunyi menjadi kata"
+    },
+    {
+      "en": "Matches the word to the object",
+      "id": "Mencocokkan kata dengan benda"
+    },
+    {
+      "en": "Reads without sounding out after a few tries",
+      "id": "Membaca tanpa mengeja setelah beberapa kali"
+    }
+  ],
+  "cleanup": {
+    "en": "Put the objects back and keep the cards for another day.",
+    "id": "Kembalikan benda dan simpan kartu untuk hari lain."
+  },
+  "variations": [
+    {
+      "en": "Write a two-word phrase ('red cup', 'bola merah') and act it out.",
+      "id": "Tulis frasa dua kata ('bola merah') dan peragakan."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within reach for the whole activity.",
+      "id": "Orang dewasa tetap dalam jangkauan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    },
+    {
+      "en": "Use only objects bigger than your child's fist.",
+      "id": "Gunakan hanya benda yang lebih besar dari kepalan tangan anak."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "Choose words that are spelled exactly as they sound in the language you use.",
+      "id": "Pilih kata yang ditulis persis seperti bunyinya dalam bahasa yang Anda gunakan."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [],
+  "arabicPhrases": []
+}
