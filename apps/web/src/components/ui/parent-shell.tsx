@@ -5,13 +5,14 @@ import { Logo } from './brand';
 import { LanguageSwitch } from './language-switch';
 import { SignOutButton } from './sign-out';
 
-export type NavKey = 'family' | 'dashboard' | 'cards' | 'curriculum' | 'privacy' | 'settings';
+export type NavKey = 'family' | 'dashboard' | 'cards' | 'library' | 'curriculum' | 'privacy' | 'settings';
 
 export function ParentShell({ t, active, children }: { t: Dictionary; active?: NavKey; children: ReactNode }) {
   const items: { key: NavKey; href: string; label: string }[] = [
     { key: 'family', href: '/family', label: t.nav.family },
     { key: 'dashboard', href: '/dashboard', label: t.nav.dashboard },
     { key: 'cards', href: '/cards', label: t.nav.cards },
+    { key: 'library', href: '/library', label: t.nav.library },
     { key: 'curriculum', href: '/curriculum', label: t.nav.curriculum },
     { key: 'privacy', href: '/privacy', label: t.nav.privacy },
     { key: 'settings', href: '/settings', label: t.nav.settings },

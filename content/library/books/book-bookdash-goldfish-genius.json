@@ -1,0 +1,109 @@
+{
+  "id": "book-bookdash-goldfish-genius",
+  "sourceId": "book_dash",
+  "title": "Goldfish Genius",
+  "creators": [
+    {
+      "name": "Sam Wilson",
+      "role": "writer"
+    },
+    {
+      "name": "Thea de Klerk",
+      "role": "illustrator"
+    },
+    {
+      "name": "Chenél Ferreira",
+      "role": "designer"
+    },
+    {
+      "name": "Ester Levinrad",
+      "role": "editor"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [],
+  "isbn": "978-1-928377-07-8",
+  "synopsis": {
+    "en": "A girl’s clever new goldfish tries to follow her outside to play and ends up on an unexpected adventure.",
+    "id": "Ikan mas baru yang pintar milik seorang anak perempuan mencoba mengikutinya bermain di luar dan akhirnya mengalami petualangan tak terduga."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/goldfish-genius/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“Goldfish Genius” by Sam Wilson, Thea de Klerk, published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/goldfish-genius/",
+        "quote": "Title page read: title, credits and ISBN 978-1-928377-07-8 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "age4_5",
+    "k",
+    "g1"
+  ],
+  "role": "shared_reading",
+  "topics": [
+    "animals",
+    "adventure"
+  ],
+  "sensitiveThemes": [],
+  "strands": [
+    "comprehension",
+    "oral_language"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "What makes a pet clever?",
+        "id": "Apa yang membuat hewan peliharaan pintar?"
+      }
+    ],
+    "during": [
+      {
+        "en": "Stop at one surprising moment: what do you think will happen next?",
+        "id": "Berhenti di satu bagian mengejutkan: menurutmu apa yang akan terjadi berikutnya?"
+      }
+    ],
+    "after": [
+      {
+        "en": "Was your prediction right? What clue could have helped?",
+        "id": "Apakah tebakanmu benar? Petunjuk apa yang bisa membantu?"
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Care routine: feed a real or pretend pet the right amount, using a small measuring spoon.",
+      "id": "Rutinitas merawat: beri makan hewan peliharaan sungguhan atau pura-pura dengan takaran yang tepat, memakai sendok takar kecil."
+    },
+    "stem": {
+      "en": "Design a safe bowl or path for the goldfish with blocks and explain your design.",
+      "id": "Rancang mangkuk atau jalur yang aman untuk ikan mas dengan balok dan jelaskan rancanganmu."
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}

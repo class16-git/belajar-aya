@@ -1,0 +1,1299 @@
+{
+  "version": "2026.11.0",
+  "journeys": [
+    {
+      "stage": "age2_3",
+      "title": {
+        "en": "Picture-book discovery",
+        "id": "Menjelajah buku bergambar"
+      },
+      "experience": {
+        "en": "Short shared reading (3–5 minutes) with a grown-up holding the book; pointing, naming and sounds. No independent screen time.",
+        "id": "Membaca bersama singkat (3–5 menit) dengan orang dewasa memegang buku; menunjuk, menamai, dan menirukan bunyi. Tanpa layar mandiri."
+      },
+      "screen": "none",
+      "strands": {
+        "oral_language": {
+          "en": "Names familiar pictures and joins in with sounds",
+          "id": "Menyebut gambar yang dikenal dan ikut menirukan bunyi"
+        },
+        "phonological": {
+          "en": "Enjoys rhythm and repeated sounds",
+          "id": "Menikmati irama dan bunyi berulang"
+        },
+        "vocabulary": {
+          "en": "Learns concrete nouns from pictures and real objects",
+          "id": "Mempelajari kata benda konkret dari gambar dan benda nyata"
+        },
+        "comprehension": {
+          "en": "Points to the right picture when asked",
+          "id": "Menunjuk gambar yang tepat saat ditanya"
+        },
+        "habits": {
+          "en": "Chooses a book to share and turns pages",
+          "id": "Memilih buku untuk dibaca bersama dan membalik halaman"
+        }
+      },
+      "routines": [
+        {
+          "title": {
+            "en": "Point and name",
+            "id": "Tunjuk dan sebut"
+          },
+          "steps": [
+            {
+              "en": "Hold the book at the child’s eye level.",
+              "id": "Pegang buku sejajar mata anak."
+            },
+            {
+              "en": "Point to one picture and name it slowly.",
+              "id": "Tunjuk satu gambar dan sebut namanya perlahan."
+            },
+            {
+              "en": "Wait for the child to point or babble back.",
+              "id": "Tunggu anak menunjuk atau mengoceh membalas."
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Book to real object",
+            "id": "Dari buku ke benda nyata"
+          },
+          "steps": [
+            {
+              "en": "Find a picture of something you own (a cup, a ball).",
+              "id": "Cari gambar benda yang ada di rumah (gelas, bola)."
+            },
+            {
+              "en": "Bring the real object and hold it next to the picture.",
+              "id": "Ambil benda aslinya dan letakkan di samping gambar."
+            },
+            {
+              "en": "Say the word for both.",
+              "id": "Sebut kata untuk keduanya."
+            }
+          ]
+        }
+      ],
+      "anyBookPrompts": {
+        "before": [
+          {
+            "en": "Let your child choose between two books.",
+            "id": "Biarkan anak memilih di antara dua buku."
+          }
+        ],
+        "during": [
+          {
+            "en": "Where is the …? Can you point?",
+            "id": "Di mana …? Bisa tunjuk?"
+          }
+        ],
+        "after": [
+          {
+            "en": "Which picture did you like? Let’s find it again.",
+            "id": "Gambar mana yang kamu suka? Ayo cari lagi."
+          }
+        ]
+      },
+      "rubric": {
+        "listening": [
+          {
+            "en": "Not interested yet today",
+            "id": "Belum tertarik hari ini"
+          },
+          {
+            "en": "Looks and points with help",
+            "id": "Melihat dan menunjuk dengan bantuan"
+          },
+          {
+            "en": "Names pictures or joins in sounds",
+            "id": "Menyebut gambar atau ikut menirukan bunyi"
+          },
+          {
+            "en": "Talks about the story unprompted",
+            "id": "Membicarakan cerita tanpa diminta"
+          }
+        ],
+        "decoding": null
+      },
+      "passageIds": []
+    },
+    {
+      "stage": "age3_4",
+      "title": {
+        "en": "Picture walks and rhymes",
+        "id": "Jalan-jalan gambar dan sajak"
+      },
+      "experience": {
+        "en": "Picture walks, oral storytelling, rhymes and sequencing 2–3 pictures, led by a grown-up.",
+        "id": "Jalan-jalan gambar, bercerita lisan, sajak, dan mengurutkan 2–3 gambar, dipandu orang dewasa."
+      },
+      "screen": "none",
+      "strands": {
+        "oral_language": {
+          "en": "Tells what is happening in a picture",
+          "id": "Menceritakan apa yang terjadi di gambar"
+        },
+        "phonological": {
+          "en": "Hears rhymes and first sounds",
+          "id": "Mendengar sajak dan bunyi awal"
+        },
+        "vocabulary": {
+          "en": "Uses describing words (big, soft, fast)",
+          "id": "Memakai kata sifat (besar, lembut, cepat)"
+        },
+        "comprehension": {
+          "en": "Orders 2–3 story pictures",
+          "id": "Mengurutkan 2–3 gambar cerita"
+        },
+        "habits": {
+          "en": "Asks for favourite books again",
+          "id": "Meminta buku favorit dibacakan lagi"
+        }
+      },
+      "routines": [
+        {
+          "title": {
+            "en": "Picture walk",
+            "id": "Jalan-jalan gambar"
+          },
+          "steps": [
+            {
+              "en": "Before reading, turn the pages and talk about the pictures only.",
+              "id": "Sebelum membaca, balik halaman dan bicarakan gambarnya saja."
+            },
+            {
+              "en": "Ask what might happen.",
+              "id": "Tanyakan apa yang mungkin terjadi."
+            },
+            {
+              "en": "Then read the words and compare.",
+              "id": "Lalu baca tulisannya dan bandingkan."
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Story basket",
+            "id": "Keranjang cerita"
+          },
+          "steps": [
+            {
+              "en": "Put 3 objects from a story in a basket.",
+              "id": "Masukkan 3 benda dari cerita ke keranjang."
+            },
+            {
+              "en": "Take them out one by one as the story mentions them.",
+              "id": "Keluarkan satu per satu saat disebut dalam cerita."
+            },
+            {
+              "en": "Let your child retell with the objects.",
+              "id": "Biarkan anak menceritakan ulang dengan benda-benda itu."
+            }
+          ]
+        }
+      ],
+      "anyBookPrompts": {
+        "before": [
+          {
+            "en": "What do you think this book is about?",
+            "id": "Menurutmu buku ini tentang apa?"
+          }
+        ],
+        "during": [
+          {
+            "en": "What is happening here?",
+            "id": "Apa yang terjadi di sini?"
+          }
+        ],
+        "after": [
+          {
+            "en": "What happened first? Then?",
+            "id": "Apa yang terjadi pertama? Lalu?"
+          }
+        ]
+      },
+      "rubric": {
+        "listening": [
+          {
+            "en": "Not interested yet today",
+            "id": "Belum tertarik hari ini"
+          },
+          {
+            "en": "Looks and points with help",
+            "id": "Melihat dan menunjuk dengan bantuan"
+          },
+          {
+            "en": "Names pictures or joins in sounds",
+            "id": "Menyebut gambar atau ikut menirukan bunyi"
+          },
+          {
+            "en": "Talks about the story unprompted",
+            "id": "Membicarakan cerita tanpa diminta"
+          }
+        ],
+        "decoding": null
+      },
+      "passageIds": []
+    },
+    {
+      "stage": "age4_5",
+      "title": {
+        "en": "Sounds, letters and stories",
+        "id": "Bunyi, huruf, dan cerita"
+      },
+      "experience": {
+        "en": "Letter-sound play, rhyming, new vocabulary and story prediction, with tactile letters off-screen.",
+        "id": "Bermain bunyi-huruf, sajak, kosakata baru, dan menebak cerita, dengan huruf sentuh tanpa layar."
+      },
+      "screen": "none",
+      "strands": {
+        "oral_language": {
+          "en": "Retells a short story in order",
+          "id": "Menceritakan ulang cerita pendek berurutan"
+        },
+        "phonological": {
+          "en": "Hears the first and last sounds in words",
+          "id": "Mendengar bunyi awal dan akhir kata"
+        },
+        "vocabulary": {
+          "en": "Learns 2–3 new words per book",
+          "id": "Mempelajari 2–3 kata baru per buku"
+        },
+        "comprehension": {
+          "en": "Predicts and checks predictions",
+          "id": "Menebak dan memeriksa tebakan"
+        },
+        "habits": {
+          "en": "Has favourite books and authors",
+          "id": "Punya buku dan penulis favorit"
+        }
+      },
+      "routines": [
+        {
+          "title": {
+            "en": "Sound hunt in a book",
+            "id": "Berburu bunyi di buku"
+          },
+          "steps": [
+            {
+              "en": "Choose one sound, e.g. /m/.",
+              "id": "Pilih satu bunyi, misalnya /m/."
+            },
+            {
+              "en": "Find pictures in the book that start with it.",
+              "id": "Cari gambar di buku yang berawalan bunyi itu."
+            },
+            {
+              "en": "Trace the letter with a finger.",
+              "id": "Telusuri hurufnya dengan jari."
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Predict and check",
+            "id": "Tebak dan periksa"
+          },
+          "steps": [
+            {
+              "en": "Stop before the last page.",
+              "id": "Berhenti sebelum halaman terakhir."
+            },
+            {
+              "en": "Ask how it will end and why.",
+              "id": "Tanyakan bagaimana akhirnya dan mengapa."
+            },
+            {
+              "en": "Read on and check together.",
+              "id": "Baca lanjut dan periksa bersama."
+            }
+          ]
+        }
+      ],
+      "anyBookPrompts": {
+        "before": [
+          {
+            "en": "Let’s look at the cover. What clues do you see?",
+            "id": "Ayo lihat sampulnya. Petunjuk apa yang kamu lihat?"
+          }
+        ],
+        "during": [
+          {
+            "en": "What does this new word mean? Let’s act it out.",
+            "id": "Apa arti kata baru ini? Ayo peragakan."
+          }
+        ],
+        "after": [
+          {
+            "en": "Was your guess right? How did you know?",
+            "id": "Apakah tebakanmu benar? Bagaimana kamu tahu?"
+          }
+        ]
+      },
+      "rubric": {
+        "listening": [
+          {
+            "en": "Not yet able to retell",
+            "id": "Belum bisa menceritakan ulang"
+          },
+          {
+            "en": "Retells parts with prompts",
+            "id": "Menceritakan sebagian dengan pancingan"
+          },
+          {
+            "en": "Retells beginning, middle and end",
+            "id": "Menceritakan awal, tengah, dan akhir"
+          },
+          {
+            "en": "Explains why things happened",
+            "id": "Menjelaskan mengapa sesuatu terjadi"
+          }
+        ],
+        "decoding": [
+          {
+            "en": "Not yet linking sounds and letters",
+            "id": "Belum menghubungkan bunyi dan huruf"
+          },
+          {
+            "en": "Knows a few letter sounds",
+            "id": "Mengenal beberapa bunyi huruf"
+          },
+          {
+            "en": "Knows most letter sounds",
+            "id": "Mengenal sebagian besar bunyi huruf"
+          },
+          {
+            "en": "Blends sounds into short words",
+            "id": "Menggabungkan bunyi menjadi kata pendek"
+          }
+        ]
+      },
+      "passageIds": []
+    },
+    {
+      "stage": "k",
+      "title": {
+        "en": "Blending and early decoding",
+        "id": "Menggabung bunyi dan mulai membaca"
+      },
+      "experience": {
+        "en": "Decodable words with support, high-frequency words, and reading aloud together. Decoding and listening are tracked separately.",
+        "id": "Kata yang bisa dieja dengan bantuan, kata yang sering muncul, dan membaca nyaring bersama. Kemampuan membaca kata dan menyimak dicatat terpisah."
+      },
+      "screen": "shared",
+      "strands": {
+        "oral_language": {
+          "en": "Retells with beginning, middle and end",
+          "id": "Menceritakan ulang awal, tengah, dan akhir"
+        },
+        "phonological": {
+          "en": "Blends sounds into short words",
+          "id": "Menggabungkan bunyi menjadi kata pendek"
+        },
+        "vocabulary": {
+          "en": "Uses new words from books in talk",
+          "id": "Memakai kata baru dari buku saat berbicara"
+        },
+        "comprehension": {
+          "en": "Answers who, where and what questions",
+          "id": "Menjawab pertanyaan siapa, di mana, dan apa"
+        },
+        "habits": {
+          "en": "Reads a familiar book to someone",
+          "id": "Membacakan buku yang dikenal kepada orang lain"
+        }
+      },
+      "routines": [
+        {
+          "title": {
+            "en": "Echo reading",
+            "id": "Membaca bergema"
+          },
+          "steps": [
+            {
+              "en": "Read one sentence with expression.",
+              "id": "Baca satu kalimat dengan ekspresi."
+            },
+            {
+              "en": "Your child repeats it, pointing to each word.",
+              "id": "Anak mengulanginya sambil menunjuk setiap kata."
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Word detective",
+            "id": "Detektif kata"
+          },
+          "steps": [
+            {
+              "en": "Pick two short words from the book.",
+              "id": "Pilih dua kata pendek dari buku."
+            },
+            {
+              "en": "Build them with letter cards.",
+              "id": "Susun dengan kartu huruf."
+            },
+            {
+              "en": "Find them again in the book.",
+              "id": "Temukan lagi di buku."
+            }
+          ]
+        }
+      ],
+      "anyBookPrompts": {
+        "before": [
+          {
+            "en": "Can you find a word you know on the cover?",
+            "id": "Bisakah kamu menemukan kata yang kamu kenal di sampul?"
+          }
+        ],
+        "during": [
+          {
+            "en": "Point under the words as I read.",
+            "id": "Tunjuk di bawah kata saat aku membaca."
+          }
+        ],
+        "after": [
+          {
+            "en": "Who was in the story? Where were they?",
+            "id": "Siapa saja di cerita? Di mana mereka?"
+          }
+        ]
+      },
+      "rubric": {
+        "listening": [
+          {
+            "en": "Not yet able to retell",
+            "id": "Belum bisa menceritakan ulang"
+          },
+          {
+            "en": "Retells parts with prompts",
+            "id": "Menceritakan sebagian dengan pancingan"
+          },
+          {
+            "en": "Retells beginning, middle and end",
+            "id": "Menceritakan awal, tengah, dan akhir"
+          },
+          {
+            "en": "Explains why things happened",
+            "id": "Menjelaskan mengapa sesuatu terjadi"
+          }
+        ],
+        "decoding": [
+          {
+            "en": "Not yet linking sounds and letters",
+            "id": "Belum menghubungkan bunyi dan huruf"
+          },
+          {
+            "en": "Knows a few letter sounds",
+            "id": "Mengenal beberapa bunyi huruf"
+          },
+          {
+            "en": "Knows most letter sounds",
+            "id": "Mengenal sebagian besar bunyi huruf"
+          },
+          {
+            "en": "Blends sounds into short words",
+            "id": "Menggabungkan bunyi menjadi kata pendek"
+          }
+        ]
+      },
+      "passageIds": [
+        "passage-k-red-kite"
+      ]
+    },
+    {
+      "stage": "g1",
+      "title": {
+        "en": "Early independent reading",
+        "id": "Mulai membaca mandiri"
+      },
+      "experience": {
+        "en": "Early readers, phonics practice, vocabulary, and literal and simple inference questions. Child chooses among parent-approved titles.",
+        "id": "Buku bacaan awal, latihan fonik, kosakata, serta pertanyaan literal dan simpulan sederhana. Anak memilih dari judul yang disetujui orang tua."
+      },
+      "screen": "independent",
+      "strands": {
+        "oral_language": {
+          "en": "Retells independently",
+          "id": "Menceritakan ulang secara mandiri"
+        },
+        "phonological": {
+          "en": "Decodes words with common spelling patterns",
+          "id": "Membaca kata dengan pola ejaan umum"
+        },
+        "vocabulary": {
+          "en": "Works out word meaning from pictures and sentences",
+          "id": "Menebak arti kata dari gambar dan kalimat"
+        },
+        "comprehension": {
+          "en": "Answers literal and simple inference questions",
+          "id": "Menjawab pertanyaan literal dan simpulan sederhana"
+        },
+        "habits": {
+          "en": "Reads daily for a short time",
+          "id": "Membaca setiap hari sebentar"
+        }
+      },
+      "routines": [
+        {
+          "title": {
+            "en": "Read-to-me, read-to-you",
+            "id": "Bacakan aku, aku bacakan kamu"
+          },
+          "steps": [
+            {
+              "en": "Take turns reading pages.",
+              "id": "Bergantian membaca halaman."
+            },
+            {
+              "en": "Praise effort and self-correction.",
+              "id": "Puji usaha dan saat anak membetulkan sendiri."
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Three-sentence retell",
+            "id": "Menceritakan ulang tiga kalimat"
+          },
+          "steps": [
+            {
+              "en": "After reading, ask for beginning, middle and end.",
+              "id": "Setelah membaca, minta awal, tengah, dan akhir."
+            },
+            {
+              "en": "Write or draw the three parts.",
+              "id": "Tulis atau gambar ketiga bagian itu."
+            }
+          ]
+        }
+      ],
+      "anyBookPrompts": {
+        "before": [
+          {
+            "en": "What do you want to find out from this book?",
+            "id": "Apa yang ingin kamu ketahui dari buku ini?"
+          }
+        ],
+        "during": [
+          {
+            "en": "If a word is tricky, sound it out, then check the picture.",
+            "id": "Jika ada kata sulit, eja bunyinya, lalu periksa gambarnya."
+          }
+        ],
+        "after": [
+          {
+            "en": "Why did the character do that? How do you know?",
+            "id": "Mengapa tokoh itu melakukannya? Bagaimana kamu tahu?"
+          }
+        ]
+      },
+      "rubric": {
+        "listening": [
+          {
+            "en": "Not yet able to retell",
+            "id": "Belum bisa menceritakan ulang"
+          },
+          {
+            "en": "Retells parts with prompts",
+            "id": "Menceritakan sebagian dengan pancingan"
+          },
+          {
+            "en": "Retells beginning, middle and end",
+            "id": "Menceritakan awal, tengah, dan akhir"
+          },
+          {
+            "en": "Explains why things happened",
+            "id": "Menjelaskan mengapa sesuatu terjadi"
+          }
+        ],
+        "decoding": [
+          {
+            "en": "Needs every word read aloud",
+            "id": "Perlu setiap kata dibacakan"
+          },
+          {
+            "en": "Sounds out short words with help",
+            "id": "Mengeja kata pendek dengan bantuan"
+          },
+          {
+            "en": "Reads simple text, some self-correction",
+            "id": "Membaca teks sederhana, kadang membetulkan sendiri"
+          },
+          {
+            "en": "Reads simple text smoothly",
+            "id": "Membaca teks sederhana dengan lancar"
+          }
+        ]
+      },
+      "passageIds": [
+        "passage-g1-rain-garden"
+      ]
+    },
+    {
+      "stage": "g2",
+      "title": {
+        "en": "Reading stamina and main ideas",
+        "id": "Daya tahan membaca dan gagasan utama"
+      },
+      "experience": {
+        "en": "Longer texts, narrative vs informational, main idea and simple research.",
+        "id": "Teks lebih panjang, cerita vs informasi, gagasan utama, dan penelitian sederhana."
+      },
+      "screen": "independent",
+      "strands": {
+        "oral_language": {
+          "en": "Summarises a story in a few sentences",
+          "id": "Merangkum cerita dalam beberapa kalimat"
+        },
+        "phonological": {
+          "en": "Reads longer words by syllables",
+          "id": "Membaca kata panjang per suku kata"
+        },
+        "vocabulary": {
+          "en": "Uses a picture dictionary or glossary",
+          "id": "Memakai kamus bergambar atau glosarium"
+        },
+        "comprehension": {
+          "en": "Finds the main idea of a paragraph",
+          "id": "Menemukan gagasan utama paragraf"
+        },
+        "habits": {
+          "en": "Chooses books by interest",
+          "id": "Memilih buku sesuai minat"
+        }
+      },
+      "routines": [
+        {
+          "title": {
+            "en": "Fiction or fact?",
+            "id": "Cerita atau fakta?"
+          },
+          "steps": [
+            {
+              "en": "Look at two books together.",
+              "id": "Lihat dua buku bersama."
+            },
+            {
+              "en": "Sort them: made-up story or real information.",
+              "id": "Pilah: cerita karangan atau informasi nyata."
+            },
+            {
+              "en": "Name one clue for each.",
+              "id": "Sebutkan satu petunjuk untuk masing-masing."
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Main-idea sticky note",
+            "id": "Catatan gagasan utama"
+          },
+          "steps": [
+            {
+              "en": "After each section, write one sentence about what it was mostly about.",
+              "id": "Setelah setiap bagian, tulis satu kalimat tentang inti bagian itu."
+            },
+            {
+              "en": "Read the notes back as a summary.",
+              "id": "Baca catatannya sebagai rangkuman."
+            }
+          ]
+        }
+      ],
+      "anyBookPrompts": {
+        "before": [
+          {
+            "en": "Is this a story or an information book? How can you tell?",
+            "id": "Ini buku cerita atau buku informasi? Bagaimana kamu tahu?"
+          }
+        ],
+        "during": [
+          {
+            "en": "What is this part mostly about?",
+            "id": "Bagian ini terutama tentang apa?"
+          }
+        ],
+        "after": [
+          {
+            "en": "Tell me the book in three sentences.",
+            "id": "Ceritakan buku ini dalam tiga kalimat."
+          }
+        ]
+      },
+      "rubric": {
+        "listening": [
+          {
+            "en": "Recalls little of the text",
+            "id": "Mengingat sedikit isi teks"
+          },
+          {
+            "en": "Recalls main facts with support",
+            "id": "Mengingat fakta utama dengan bantuan"
+          },
+          {
+            "en": "Explains main idea with evidence",
+            "id": "Menjelaskan gagasan utama dengan bukti"
+          },
+          {
+            "en": "Compares, questions or evaluates the text",
+            "id": "Membandingkan, mempertanyakan, atau menilai teks"
+          }
+        ],
+        "decoding": [
+          {
+            "en": "Reads word by word with many stops",
+            "id": "Membaca kata per kata dengan banyak berhenti"
+          },
+          {
+            "en": "Reads accurately but slowly",
+            "id": "Membaca dengan tepat tetapi lambat"
+          },
+          {
+            "en": "Reads smoothly with some expression",
+            "id": "Membaca lancar dengan sedikit ekspresi"
+          },
+          {
+            "en": "Reads fluently with expression",
+            "id": "Membaca lancar dan berekspresi"
+          }
+        ]
+      },
+      "passageIds": [
+        "passage-g2-honey-bees"
+      ]
+    },
+    {
+      "stage": "g3",
+      "title": {
+        "en": "Fluency and inference",
+        "id": "Kelancaran dan menyimpulkan"
+      },
+      "experience": {
+        "en": "Fluent reading, inference, comparing texts and finding information.",
+        "id": "Membaca lancar, menyimpulkan, membandingkan teks, dan mencari informasi."
+      },
+      "screen": "independent",
+      "strands": {
+        "oral_language": {
+          "en": "Explains answers using the text",
+          "id": "Menjelaskan jawaban dengan teks"
+        },
+        "phonological": {
+          "en": "Reads with expression and pacing",
+          "id": "Membaca dengan ekspresi dan tempo"
+        },
+        "vocabulary": {
+          "en": "Uses prefixes and suffixes to work out words",
+          "id": "Memakai awalan dan akhiran untuk memahami kata"
+        },
+        "comprehension": {
+          "en": "Makes inferences about characters",
+          "id": "Menyimpulkan tentang tokoh"
+        },
+        "habits": {
+          "en": "Keeps a reading log",
+          "id": "Membuat catatan bacaan"
+        }
+      },
+      "routines": [
+        {
+          "title": {
+            "en": "Reading with expression",
+            "id": "Membaca berekspresi"
+          },
+          "steps": [
+            {
+              "en": "Choose a dialogue page.",
+              "id": "Pilih halaman berisi percakapan."
+            },
+            {
+              "en": "Read it twice: once flat, once with feeling.",
+              "id": "Baca dua kali: sekali datar, sekali dengan perasaan."
+            },
+            {
+              "en": "Talk about which helped understanding.",
+              "id": "Bicarakan mana yang membantu pemahaman."
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Clue collector",
+            "id": "Pengumpul petunjuk"
+          },
+          "steps": [
+            {
+              "en": "Ask a ‘why’ question about a character.",
+              "id": "Ajukan pertanyaan ‘mengapa’ tentang tokoh."
+            },
+            {
+              "en": "Find two sentences that support the answer.",
+              "id": "Cari dua kalimat yang mendukung jawabannya."
+            }
+          ]
+        }
+      ],
+      "anyBookPrompts": {
+        "before": [
+          {
+            "en": "What do you already know about this topic?",
+            "id": "Apa yang sudah kamu ketahui tentang topik ini?"
+          }
+        ],
+        "during": [
+          {
+            "en": "How is the character feeling? Which words show it?",
+            "id": "Bagaimana perasaan tokohnya? Kata mana yang menunjukkannya?"
+          }
+        ],
+        "after": [
+          {
+            "en": "Which part would you show a friend as proof?",
+            "id": "Bagian mana yang akan kamu tunjukkan ke teman sebagai bukti?"
+          }
+        ]
+      },
+      "rubric": {
+        "listening": [
+          {
+            "en": "Recalls little of the text",
+            "id": "Mengingat sedikit isi teks"
+          },
+          {
+            "en": "Recalls main facts with support",
+            "id": "Mengingat fakta utama dengan bantuan"
+          },
+          {
+            "en": "Explains main idea with evidence",
+            "id": "Menjelaskan gagasan utama dengan bukti"
+          },
+          {
+            "en": "Compares, questions or evaluates the text",
+            "id": "Membandingkan, mempertanyakan, atau menilai teks"
+          }
+        ],
+        "decoding": [
+          {
+            "en": "Reads word by word with many stops",
+            "id": "Membaca kata per kata dengan banyak berhenti"
+          },
+          {
+            "en": "Reads accurately but slowly",
+            "id": "Membaca dengan tepat tetapi lambat"
+          },
+          {
+            "en": "Reads smoothly with some expression",
+            "id": "Membaca lancar dengan sedikit ekspresi"
+          },
+          {
+            "en": "Reads fluently with expression",
+            "id": "Membaca lancar dan berekspresi"
+          }
+        ]
+      },
+      "passageIds": [
+        "passage-g3-library-card"
+      ]
+    },
+    {
+      "stage": "g4",
+      "title": {
+        "en": "Analysing information texts",
+        "id": "Menganalisis teks informasi"
+      },
+      "experience": {
+        "en": "Multi-paragraph texts, science and history topics, author purpose and source-based answers.",
+        "id": "Teks beberapa paragraf, topik sains dan sejarah, tujuan penulis, dan jawaban berdasarkan sumber."
+      },
+      "screen": "independent",
+      "strands": {
+        "oral_language": {
+          "en": "Discusses the author’s purpose",
+          "id": "Membahas tujuan penulis"
+        },
+        "phonological": {
+          "en": "Reads unfamiliar words using roots",
+          "id": "Membaca kata asing dengan kata dasar"
+        },
+        "vocabulary": {
+          "en": "Learns subject words (habitat, erosion)",
+          "id": "Mempelajari istilah pelajaran (habitat, erosi)"
+        },
+        "comprehension": {
+          "en": "Answers with evidence from several paragraphs",
+          "id": "Menjawab dengan bukti dari beberapa paragraf"
+        },
+        "habits": {
+          "en": "Sets personal reading goals",
+          "id": "Menetapkan target membaca sendiri"
+        }
+      },
+      "routines": [
+        {
+          "title": {
+            "en": "Text features tour",
+            "id": "Tur fitur teks"
+          },
+          "steps": [
+            {
+              "en": "Find headings, captions and diagrams.",
+              "id": "Temukan judul bagian, keterangan gambar, dan diagram."
+            },
+            {
+              "en": "Ask what each one helps you understand.",
+              "id": "Tanyakan apa yang dibantu masing-masing."
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why did the author write this?",
+            "id": "Mengapa penulis menulis ini?"
+          },
+          "steps": [
+            {
+              "en": "Decide: to inform, to persuade or to entertain.",
+              "id": "Tentukan: memberi informasi, membujuk, atau menghibur."
+            },
+            {
+              "en": "Point to the words that show it.",
+              "id": "Tunjuk kata-kata yang menunjukkannya."
+            }
+          ]
+        }
+      ],
+      "anyBookPrompts": {
+        "before": [
+          {
+            "en": "Skim the headings. What will you learn?",
+            "id": "Baca sekilas judul bagiannya. Apa yang akan kamu pelajari?"
+          }
+        ],
+        "during": [
+          {
+            "en": "Which paragraph answers your question?",
+            "id": "Paragraf mana yang menjawab pertanyaanmu?"
+          }
+        ],
+        "after": [
+          {
+            "en": "What was the author’s purpose? How do you know?",
+            "id": "Apa tujuan penulis? Bagaimana kamu tahu?"
+          }
+        ]
+      },
+      "rubric": {
+        "listening": [
+          {
+            "en": "Recalls little of the text",
+            "id": "Mengingat sedikit isi teks"
+          },
+          {
+            "en": "Recalls main facts with support",
+            "id": "Mengingat fakta utama dengan bantuan"
+          },
+          {
+            "en": "Explains main idea with evidence",
+            "id": "Menjelaskan gagasan utama dengan bukti"
+          },
+          {
+            "en": "Compares, questions or evaluates the text",
+            "id": "Membandingkan, mempertanyakan, atau menilai teks"
+          }
+        ],
+        "decoding": [
+          {
+            "en": "Reads word by word with many stops",
+            "id": "Membaca kata per kata dengan banyak berhenti"
+          },
+          {
+            "en": "Reads accurately but slowly",
+            "id": "Membaca dengan tepat tetapi lambat"
+          },
+          {
+            "en": "Reads smoothly with some expression",
+            "id": "Membaca lancar dengan sedikit ekspresi"
+          },
+          {
+            "en": "Reads fluently with expression",
+            "id": "Membaca lancar dan berekspresi"
+          }
+        ]
+      },
+      "passageIds": [
+        "passage-g4-mangroves"
+      ]
+    },
+    {
+      "stage": "g5",
+      "title": {
+        "en": "Synthesis across sources",
+        "id": "Memadukan berbagai sumber"
+      },
+      "experience": {
+        "en": "Combining information from more than one source, noticing viewpoint, and longer independent reading.",
+        "id": "Menggabungkan informasi dari lebih dari satu sumber, memperhatikan sudut pandang, dan membaca mandiri lebih panjang."
+      },
+      "screen": "independent",
+      "strands": {
+        "oral_language": {
+          "en": "Explains how two texts agree or differ",
+          "id": "Menjelaskan persamaan atau perbedaan dua teks"
+        },
+        "phonological": {
+          "en": "Reads complex sentences fluently",
+          "id": "Membaca kalimat kompleks dengan lancar"
+        },
+        "vocabulary": {
+          "en": "Uses context and morphology for new words",
+          "id": "Memakai konteks dan bentuk kata untuk kata baru"
+        },
+        "comprehension": {
+          "en": "Supports claims with text evidence",
+          "id": "Mendukung pendapat dengan bukti teks"
+        },
+        "habits": {
+          "en": "Reads independently most days",
+          "id": "Membaca mandiri hampir setiap hari"
+        }
+      },
+      "routines": [
+        {
+          "title": {
+            "en": "Two-source compare",
+            "id": "Membandingkan dua sumber"
+          },
+          "steps": [
+            {
+              "en": "Read two short texts on one topic.",
+              "id": "Baca dua teks pendek dengan satu topik."
+            },
+            {
+              "en": "Make a table: same / different.",
+              "id": "Buat tabel: sama / berbeda."
+            },
+            {
+              "en": "Decide which is more useful and why.",
+              "id": "Tentukan mana yang lebih berguna dan mengapa."
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Claim and evidence",
+            "id": "Pendapat dan bukti"
+          },
+          "steps": [
+            {
+              "en": "State one claim about the book.",
+              "id": "Nyatakan satu pendapat tentang buku."
+            },
+            {
+              "en": "Support it with two quotes.",
+              "id": "Dukung dengan dua kutipan."
+            }
+          ]
+        }
+      ],
+      "anyBookPrompts": {
+        "before": [
+          {
+            "en": "What viewpoint do you expect from this author?",
+            "id": "Sudut pandang apa yang kamu harapkan dari penulis ini?"
+          }
+        ],
+        "during": [
+          {
+            "en": "Does this agree with what you read before?",
+            "id": "Apakah ini sesuai dengan yang kamu baca sebelumnya?"
+          }
+        ],
+        "after": [
+          {
+            "en": "Which source would you trust more? Why?",
+            "id": "Sumber mana yang lebih kamu percaya? Mengapa?"
+          }
+        ]
+      },
+      "rubric": {
+        "listening": [
+          {
+            "en": "Recalls little of the text",
+            "id": "Mengingat sedikit isi teks"
+          },
+          {
+            "en": "Recalls main facts with support",
+            "id": "Mengingat fakta utama dengan bantuan"
+          },
+          {
+            "en": "Explains main idea with evidence",
+            "id": "Menjelaskan gagasan utama dengan bukti"
+          },
+          {
+            "en": "Compares, questions or evaluates the text",
+            "id": "Membandingkan, mempertanyakan, atau menilai teks"
+          }
+        ],
+        "decoding": [
+          {
+            "en": "Reads word by word with many stops",
+            "id": "Membaca kata per kata dengan banyak berhenti"
+          },
+          {
+            "en": "Reads accurately but slowly",
+            "id": "Membaca dengan tepat tetapi lambat"
+          },
+          {
+            "en": "Reads smoothly with some expression",
+            "id": "Membaca lancar dengan sedikit ekspresi"
+          },
+          {
+            "en": "Reads fluently with expression",
+            "id": "Membaca lancar dan berekspresi"
+          }
+        ]
+      },
+      "passageIds": [
+        "passage-g5-school-garden"
+      ]
+    },
+    {
+      "stage": "g6",
+      "title": {
+        "en": "Critical reading and media literacy",
+        "id": "Membaca kritis dan literasi media"
+      },
+      "experience": {
+        "en": "Argument, media literacy, research and citation; evaluating the quality of evidence.",
+        "id": "Argumen, literasi media, penelitian dan kutipan; menilai kualitas bukti."
+      },
+      "screen": "independent",
+      "strands": {
+        "oral_language": {
+          "en": "Evaluates arguments and spots persuasion",
+          "id": "Menilai argumen dan mengenali bujukan"
+        },
+        "phonological": {
+          "en": "Reads fluently across genres",
+          "id": "Membaca lancar di berbagai genre"
+        },
+        "vocabulary": {
+          "en": "Uses precise academic vocabulary",
+          "id": "Memakai kosakata akademik yang tepat"
+        },
+        "comprehension": {
+          "en": "Judges the quality of evidence",
+          "id": "Menilai kualitas bukti"
+        },
+        "habits": {
+          "en": "Reflects on own reading choices",
+          "id": "Merefleksikan pilihan bacaan sendiri"
+        }
+      },
+      "routines": [
+        {
+          "title": {
+            "en": "Ad or report?",
+            "id": "Iklan atau laporan?"
+          },
+          "steps": [
+            {
+              "en": "Find one advert and one news report on a similar topic.",
+              "id": "Cari satu iklan dan satu laporan berita dengan topik serupa."
+            },
+            {
+              "en": "Underline claims; circle evidence.",
+              "id": "Garis bawahi klaim; lingkari bukti."
+            },
+            {
+              "en": "Discuss who benefits from each text.",
+              "id": "Diskusikan siapa yang diuntungkan dari tiap teks."
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Cite it",
+            "id": "Kutip sumbernya"
+          },
+          "steps": [
+            {
+              "en": "Write one fact you learned.",
+              "id": "Tulis satu fakta yang kamu pelajari."
+            },
+            {
+              "en": "Add where it came from (title, author, date).",
+              "id": "Tambahkan sumbernya (judul, penulis, tanggal)."
+            }
+          ]
+        }
+      ],
+      "anyBookPrompts": {
+        "before": [
+          {
+            "en": "Who wrote this, and why might they want you to believe it?",
+            "id": "Siapa penulisnya, dan mengapa ia ingin kamu percaya?"
+          }
+        ],
+        "during": [
+          {
+            "en": "Is this a fact, an opinion or a claim without evidence?",
+            "id": "Ini fakta, opini, atau klaim tanpa bukti?"
+          }
+        ],
+        "after": [
+          {
+            "en": "What evidence would change your mind?",
+            "id": "Bukti apa yang akan mengubah pendapatmu?"
+          }
+        ]
+      },
+      "rubric": {
+        "listening": [
+          {
+            "en": "Recalls little of the text",
+            "id": "Mengingat sedikit isi teks"
+          },
+          {
+            "en": "Recalls main facts with support",
+            "id": "Mengingat fakta utama dengan bantuan"
+          },
+          {
+            "en": "Explains main idea with evidence",
+            "id": "Menjelaskan gagasan utama dengan bukti"
+          },
+          {
+            "en": "Compares, questions or evaluates the text",
+            "id": "Membandingkan, mempertanyakan, atau menilai teks"
+          }
+        ],
+        "decoding": [
+          {
+            "en": "Reads word by word with many stops",
+            "id": "Membaca kata per kata dengan banyak berhenti"
+          },
+          {
+            "en": "Reads accurately but slowly",
+            "id": "Membaca dengan tepat tetapi lambat"
+          },
+          {
+            "en": "Reads smoothly with some expression",
+            "id": "Membaca lancar dengan sedikit ekspresi"
+          },
+          {
+            "en": "Reads fluently with expression",
+            "id": "Membaca lancar dan berekspresi"
+          }
+        ]
+      },
+      "passageIds": [
+        "passage-g6-advert-report"
+      ]
+    }
+  ]
+}

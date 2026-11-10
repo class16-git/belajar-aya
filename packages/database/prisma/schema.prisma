@@ -41,6 +41,8 @@ model Family {
   ownerId        String          @unique
   owner          ParentUser      @relation(fields: [ownerId], references: [id], onDelete: Cascade)
   consentVersion String?
+  /// Reading Garden: parent can switch off all links to external book websites.
+  libraryExternalLinks Boolean   @default(true)
   createdAt      DateTime        @default(now())
   children       ChildProfile[]
   consents       ConsentRecord[]
@@ -86,6 +88,8 @@ model ChildProfile {
   observations     ParentObservation[]
   learningSessions LearningSession[]
   recommendations  RecommendationLog[]
+  readingEvents    ReadingEvent[]
+  shelf            ShelfEntry[]
   @@index([familyId])
 }
 
@@ -230,4 +234,51 @@ model RateLimit {
   key         String   @id
   windowStart DateTime
   count       Int
+}
+
+enum ReadingEventKind {
+  SHARED_READ
+  INDEPENDENT_READ
+  RETELL
+  ACTIVITY
+  COMPREHENSION_CHECK
+  CHILD_FINISHED
+}
+
+/// Reading Garden history. No free text, audio or video: structured ratings only (Product Bible v3).
+/// Listening comprehension and decoding are recorded separately and never update maths mastery.
+model ReadingEvent {
+  id             String           @id @default(cuid())
+  childId        String
+  child          ChildProfile     @relation(fields: [childId], references: [id], onDelete: Cascade)
+  /// Catalog ids from content/library (books or Atlas passages), not foreign keys.
+  bookId         String?
+  passageId      String?
+  kind           ReadingEventKind
+  observedAt     DateTime
+  parentAssisted Boolean          @default(false)
+  /// 0–3 rubric levels; null when not observed.
+  listening      Int?
+  decoding       Int?
+  enjoyment      Int?
+  /// Server-graded comprehension checks only.
+  correct        Int?
+  total          Int?
+  createdAt      DateTime         @default(now())
+  @@index([childId, observedAt])
+}
+
+enum ShelfState {
+  ON_SHELF
+  HIDDEN
+}
+
+/// Parent-approved shelf: a child only sees books the parent put on their shelf.
+model ShelfEntry {
+  childId   String
+  child     ChildProfile @relation(fields: [childId], references: [id], onDelete: Cascade)
+  bookId    String
+  state     ShelfState
+  updatedAt DateTime     @updatedAt
+  @@id([childId, bookId])
 }

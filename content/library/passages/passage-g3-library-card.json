@@ -1,0 +1,122 @@
+{
+  "id": "passage-g3-library-card",
+  "stage": "g3",
+  "title": {
+    "en": "The lost library card",
+    "id": "Kartu perpustakaan yang hilang"
+  },
+  "genre": "narrative",
+  "paragraphs": {
+    "en": [
+      "Maya had waited all week to borrow the new book about volcanoes. On Saturday morning she emptied her backpack onto the bed, but her library card was not there.",
+      "She checked her coat pockets and under the sofa. Her shoulders drooped. Then she remembered: on Thursday she had used the card as a bookmark in her science notebook.",
+      "Maya opened the notebook, and there it was, between two pages about rocks. She grabbed her bag and raced her brother to the door."
+    ],
+    "id": [
+      "Maya sudah menunggu sepanjang minggu untuk meminjam buku baru tentang gunung berapi. Pada Sabtu pagi ia mengeluarkan semua isi ranselnya ke atas tempat tidur, tetapi kartu perpustakaannya tidak ada.",
+      "Ia memeriksa saku jaketnya dan bawah sofa. Bahunya terkulai. Lalu ia teringat: pada hari Kamis ia memakai kartu itu sebagai pembatas buku di buku catatan sainsnya.",
+      "Maya membuka buku catatan itu, dan kartunya ada di sana, di antara dua halaman tentang batuan. Ia menyambar tasnya dan berlomba dengan adiknya menuju pintu."
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "inference",
+      "prompt": {
+        "en": "How did Maya feel when she could not find the card?",
+        "id": "Bagaimana perasaan Maya ketika tidak menemukan kartunya?"
+      },
+      "choices": {
+        "en": [
+          "excited",
+          "disappointed",
+          "sleepy"
+        ],
+        "id": [
+          "bersemangat",
+          "kecewa",
+          "mengantuk"
+        ]
+      },
+      "answer": 1,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which words show that feeling best?",
+        "id": "Kata-kata mana yang paling menunjukkan perasaan itu?"
+      },
+      "choices": {
+        "en": [
+          "“Her shoulders drooped.”",
+          "“She grabbed her bag.”",
+          "“about volcanoes”"
+        ],
+        "id": [
+          "“Bahunya terkulai.”",
+          "“Ia menyambar tasnya.”",
+          "“tentang gunung berapi”"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where was the card?",
+        "id": "Di mana kartunya?"
+      },
+      "choices": {
+        "en": [
+          "under the sofa",
+          "in her coat pocket",
+          "in her science notebook"
+        ],
+        "id": [
+          "di bawah sofa",
+          "di saku jaket",
+          "di buku catatan sains"
+        ]
+      },
+      "answer": 2,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Maya race to the door at the end?",
+        "id": "Mengapa Maya berlari ke pintu di akhir cerita?"
+      },
+      "choices": {
+        "en": [
+          "She was late for school.",
+          "She could now go and borrow the volcano book.",
+          "Her brother was hiding the card."
+        ],
+        "id": [
+          "Ia terlambat ke sekolah.",
+          "Ia sekarang bisa pergi meminjam buku gunung berapi.",
+          "Adiknya menyembunyikan kartu."
+        ]
+      },
+      "answer": 1,
+      "evidenceParagraph": 2
+    }
+  ],
+  "copyrightStatus": "original",
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "readability-estimate"
+    ]
+  }
+}

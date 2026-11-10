@@ -1,0 +1,112 @@
+{
+  "id": "book-bookdash-a-tiny-seed",
+  "sourceId": "book_dash",
+  "title": "A Tiny Seed",
+  "creators": [
+    {
+      "name": "Nicola Rijsdijk",
+      "role": "writer"
+    },
+    {
+      "name": "Maya Marshak",
+      "role": "illustrator"
+    },
+    {
+      "name": "Tarryn-Anne Anderson",
+      "role": "designer"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [
+    "Tshivenḓa",
+    "Xitsonga",
+    "Setswana",
+    "SiSwati",
+    "isiNdebele",
+    "Sesotho"
+  ],
+  "isbn": "978-0-9946519-2-1",
+  "synopsis": {
+    "en": "A girl who helps her mother in the fields on a mountainside notices the forests disappearing, and discovers how much a single seed can do.",
+    "id": "Seorang anak perempuan yang membantu ibunya di ladang di lereng gunung melihat hutan semakin hilang, dan menemukan betapa besar arti sebutir biji."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/a-tiny-seed/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“A Tiny Seed” by Nicola Rijsdijk, Maya Marshak, published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/a-tiny-seed/",
+        "quote": "Title page read: title, credits and ISBN 978-0-9946519-2-1 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "age4_5",
+    "k",
+    "g1"
+  ],
+  "role": "shared_reading",
+  "topics": [
+    "nature",
+    "science"
+  ],
+  "sensitiveThemes": [],
+  "strands": [
+    "comprehension",
+    "vocabulary"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "What does a seed need to grow?",
+        "id": "Apa yang dibutuhkan biji untuk tumbuh?"
+      }
+    ],
+    "during": [
+      {
+        "en": "Why is the girl worried? What does she decide to do?",
+        "id": "Mengapa anak itu khawatir? Apa yang ia putuskan untuk dilakukan?"
+      }
+    ],
+    "after": [
+      {
+        "en": "How can one small seed make a big difference?",
+        "id": "Bagaimana sebutir biji kecil bisa membuat perbedaan besar?"
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Plant a bean in a clear cup with damp cotton wool and care for it each day.",
+      "id": "Tanam kacang di gelas bening dengan kapas basah dan rawat setiap hari."
+    },
+    "stem": {
+      "en": "Measure the sprout every two days with paper strips and line them up into a growth chart.",
+      "id": "Ukur kecambah setiap dua hari dengan potongan kertas dan susun menjadi grafik pertumbuhan."
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}

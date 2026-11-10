@@ -1,0 +1,100 @@
+{
+  "id": "passage-g1-rain-garden",
+  "stage": "g1",
+  "title": {
+    "en": "Rain for the garden",
+    "id": "Hujan untuk kebun"
+  },
+  "genre": "narrative",
+  "paragraphs": {
+    "en": [
+      "Raka and his grandmother planted beans in a small garden. Every day they looked for green shoots, but the soil stayed dry.",
+      "One afternoon, dark clouds came. Big drops fell on the roof, tap, tap, tap. Raka ran to the window and smiled.",
+      "The next morning, tiny green leaves poked out of the wet soil. “The rain gave our beans a drink,” said Grandmother."
+    ],
+    "id": [
+      "Raka dan neneknya menanam kacang di kebun kecil. Setiap hari mereka mencari tunas hijau, tetapi tanahnya tetap kering.",
+      "Suatu sore, awan gelap datang. Tetes air besar jatuh di atap, tik, tik, tik. Raka berlari ke jendela dan tersenyum.",
+      "Keesokan paginya, daun hijau kecil muncul dari tanah yang basah. “Hujan memberi minum kacang kita,” kata Nenek."
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Raka and his grandmother plant?",
+        "id": "Apa yang ditanam Raka dan neneknya?"
+      },
+      "choices": {
+        "en": [
+          "beans",
+          "flowers",
+          "trees"
+        ],
+        "id": [
+          "kacang",
+          "bunga",
+          "pohon"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happened after the rain?",
+        "id": "Apa yang terjadi setelah hujan?"
+      },
+      "choices": {
+        "en": [
+          "The soil got dry.",
+          "Green leaves came up.",
+          "They planted seeds."
+        ],
+        "id": [
+          "Tanahnya menjadi kering.",
+          "Daun hijau muncul.",
+          "Mereka menanam biji."
+        ]
+      },
+      "answer": 1,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Raka smile at the window?",
+        "id": "Mengapa Raka tersenyum di jendela?"
+      },
+      "choices": {
+        "en": [
+          "He was cold.",
+          "He knew rain would help the beans.",
+          "He wanted to go outside to play."
+        ],
+        "id": [
+          "Ia kedinginan.",
+          "Ia tahu hujan akan membantu kacangnya.",
+          "Ia ingin bermain di luar."
+        ]
+      },
+      "answer": 1,
+      "evidenceParagraph": 1
+    }
+  ],
+  "copyrightStatus": "original",
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "readability-estimate"
+    ]
+  }
+}

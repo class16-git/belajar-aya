@@ -1,0 +1,124 @@
+{
+  "id": "passage-g4-mangroves",
+  "stage": "g4",
+  "title": {
+    "en": "Mangroves: guardians of the coast",
+    "id": "Mangrove: penjaga pantai"
+  },
+  "genre": "informational",
+  "paragraphs": {
+    "en": [
+      "Mangroves are trees that grow along warm coasts, where the land meets the sea. Unlike most trees, they can live with their roots in salty water. Many mangroves have roots that arch above the mud like stilts.",
+      "These tangled roots protect the coast. When waves roll in, the roots slow the water down, so less sand and soil are washed away. Scientists call this washing away erosion.",
+      "Mangrove roots are also a nursery. Young fish, crabs and shrimp hide among them, safe from bigger animals, until they are large enough to swim into open water.",
+      "Indonesia has some of the largest mangrove forests in the world. When mangroves are cut down, coasts can wear away faster and fish can lose their nurseries, so many communities now plant new mangroves."
+    ],
+    "id": [
+      "Mangrove adalah pohon yang tumbuh di sepanjang pantai yang hangat, tempat daratan bertemu laut. Berbeda dari kebanyakan pohon, mangrove dapat hidup dengan akar di air asin. Banyak mangrove memiliki akar yang melengkung di atas lumpur seperti egrang.",
+      "Akar yang saling terjalin ini melindungi pantai. Ketika ombak datang, akar memperlambat air sehingga lebih sedikit pasir dan tanah yang terbawa. Para ilmuwan menyebut pengikisan ini erosi.",
+      "Akar mangrove juga menjadi tempat pembesaran. Ikan, kepiting, dan udang muda bersembunyi di antaranya, aman dari hewan yang lebih besar, sampai cukup besar untuk berenang ke laut lepas.",
+      "Indonesia memiliki salah satu hutan mangrove terluas di dunia. Ketika mangrove ditebang, pantai dapat terkikis lebih cepat dan ikan kehilangan tempat pembesarannya, sehingga banyak masyarakat kini menanam mangrove baru."
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main idea of the whole text?",
+        "id": "Apa gagasan utama seluruh teks?"
+      },
+      "choices": {
+        "en": [
+          "Mangroves are useful to coasts and sea life.",
+          "Fish like to swim in open water.",
+          "Salt water is bad for trees."
+        ],
+        "id": [
+          "Mangrove bermanfaat bagi pantai dan kehidupan laut.",
+          "Ikan suka berenang di laut lepas.",
+          "Air asin buruk bagi pohon."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "In paragraph 2, ‘erosion’ means…",
+        "id": "Di paragraf 2, ‘erosi’ berarti…"
+      },
+      "choices": {
+        "en": [
+          "the land being washed away",
+          "a kind of root",
+          "a big wave"
+        ],
+        "id": [
+          "tanah yang terkikis",
+          "sejenis akar",
+          "ombak besar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which paragraph best explains why young fish need mangroves?",
+        "id": "Paragraf mana yang paling menjelaskan mengapa ikan muda membutuhkan mangrove?"
+      },
+      "choices": {
+        "en": [
+          "paragraph 1",
+          "paragraph 3",
+          "paragraph 4"
+        ],
+        "id": [
+          "paragraf 1",
+          "paragraf 3",
+          "paragraf 4"
+        ]
+      },
+      "answer": 1,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why do you think communities plant new mangroves?",
+        "id": "Menurutmu mengapa masyarakat menanam mangrove baru?"
+      },
+      "choices": {
+        "en": [
+          "to protect the coast and the fish",
+          "to make the sea saltier",
+          "to stop the tide"
+        ],
+        "id": [
+          "untuk melindungi pantai dan ikan",
+          "agar laut lebih asin",
+          "untuk menghentikan pasang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "copyrightStatus": "original",
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "readability-estimate"
+    ]
+  }
+}

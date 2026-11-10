@@ -1,0 +1,100 @@
+{
+  "id": "passage-g2-honey-bees",
+  "stage": "g2",
+  "title": {
+    "en": "How bees make honey",
+    "id": "Bagaimana lebah membuat madu"
+  },
+  "genre": "informational",
+  "paragraphs": {
+    "en": [
+      "Honeybees live together in a hive. Some bees fly from flower to flower to collect a sweet liquid called nectar.",
+      "Back at the hive, the bees put the nectar into tiny wax rooms called cells. The cells fit together like a honeycomb pattern.",
+      "Then the bees fan their wings over the cells. The moving air dries the nectar until it becomes thick, sticky honey. The honey is food for the bees in the hive."
+    ],
+    "id": [
+      "Lebah madu hidup bersama di sebuah sarang. Sebagian lebah terbang dari bunga ke bunga untuk mengumpulkan cairan manis yang disebut nektar.",
+      "Di sarang, lebah memasukkan nektar ke ruang-ruang lilin kecil yang disebut sel. Sel-sel itu tersusun rapat membentuk pola sarang madu.",
+      "Lalu lebah mengipaskan sayapnya di atas sel. Udara yang bergerak mengeringkan nektar sampai menjadi madu yang kental dan lengket. Madu itu menjadi makanan bagi lebah di sarang."
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is this text mostly about?",
+        "id": "Teks ini terutama tentang apa?"
+      },
+      "choices": {
+        "en": [
+          "how flowers grow",
+          "how bees make honey",
+          "why bees sting"
+        ],
+        "id": [
+          "bagaimana bunga tumbuh",
+          "bagaimana lebah membuat madu",
+          "mengapa lebah menyengat"
+        ]
+      },
+      "answer": 1,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What is nectar?",
+        "id": "Apa itu nektar?"
+      },
+      "choices": {
+        "en": [
+          "a sweet liquid from flowers",
+          "a wax room",
+          "a kind of bee"
+        ],
+        "id": [
+          "cairan manis dari bunga",
+          "ruang dari lilin",
+          "sejenis lebah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What do bees do just before the nectar becomes honey?",
+        "id": "Apa yang dilakukan lebah tepat sebelum nektar menjadi madu?"
+      },
+      "choices": {
+        "en": [
+          "They visit flowers.",
+          "They fan their wings over the cells.",
+          "They build a new hive."
+        ],
+        "id": [
+          "Mereka mendatangi bunga.",
+          "Mereka mengipaskan sayap di atas sel.",
+          "Mereka membangun sarang baru."
+        ]
+      },
+      "answer": 1,
+      "evidenceParagraph": 2
+    }
+  ],
+  "copyrightStatus": "original",
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "readability-estimate"
+    ]
+  }
+}

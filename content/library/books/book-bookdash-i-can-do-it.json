@@ -1,0 +1,107 @@
+{
+  "id": "book-bookdash-i-can-do-it",
+  "sourceId": "book_dash",
+  "title": "I can do it!",
+  "creators": [
+    {
+      "name": "Wandile Mathe",
+      "role": "writer"
+    },
+    {
+      "name": "Elliot Taylor",
+      "role": "illustrator"
+    },
+    {
+      "name": "Terri Lourens",
+      "role": "designer"
+    },
+    {
+      "name": "Cherie Wright",
+      "role": "editor"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [],
+  "isbn": "978-1-997453-75-8",
+  "synopsis": {
+    "en": "A girl who uses a wheelchair appreciates help, but sometimes she just wants to do things herself.",
+    "id": "Seorang anak perempuan yang memakai kursi roda menghargai bantuan, tetapi terkadang ia hanya ingin melakukan sesuatu sendiri."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/i-can-do-it/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“I can do it!” by Wandile Mathe, Elliot Taylor, published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/i-can-do-it/",
+        "quote": "Title page read: title, credits and ISBN 978-1-997453-75-8 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "age4_5",
+    "k",
+    "g1"
+  ],
+  "role": "shared_reading",
+  "topics": [
+    "inclusion",
+    "feelings"
+  ],
+  "sensitiveThemes": [
+    "disability_representation"
+  ],
+  "strands": [
+    "comprehension",
+    "oral_language"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "What is something you like to do all by yourself?",
+        "id": "Apa yang suka kamu lakukan sendiri?"
+      }
+    ],
+    "during": [
+      {
+        "en": "How does she feel when people help? When she does it herself?",
+        "id": "Bagaimana perasaannya ketika orang membantu? Ketika ia melakukannya sendiri?"
+      }
+    ],
+    "after": [
+      {
+        "en": "How can we ask before we help someone?",
+        "id": "Bagaimana kita bisa bertanya dulu sebelum membantu seseorang?"
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Practical life: choose one new everyday task your child does independently this week (pouring, buttoning, setting a place).",
+      "id": "Kehidupan praktis: pilih satu tugas harian baru yang dilakukan anak sendiri minggu ini (menuang, mengancing, menata alat makan)."
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}

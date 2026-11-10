@@ -1,0 +1,112 @@
+{
+  "id": "book-bookdash-a-house-for-mouse",
+  "sourceId": "book_dash",
+  "title": "A house for Mouse",
+  "creators": [
+    {
+      "name": "Michele Fry",
+      "role": "writer"
+    },
+    {
+      "name": "Amy Richards (Uzzell)",
+      "role": "illustrator"
+    },
+    {
+      "name": "Jennifer Jacobs",
+      "role": "designer"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [
+    "isiNdebele",
+    "isiZulu",
+    "isiXhosa",
+    "Tshivenḓa",
+    "Xitsonga"
+  ],
+  "isbn": "978-0-9922357-5-8",
+  "synopsis": {
+    "en": "Mouse is looking for a new home. Other animals kindly offer to share theirs, but Mouse keeps looking until he finds a small, cosy place of his own.",
+    "id": "Tikus mencari rumah baru. Hewan-hewan lain dengan baik hati menawarkan rumah mereka, tetapi Tikus terus mencari sampai menemukan tempat kecil yang nyaman miliknya sendiri."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/a-house-for-mouse/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“A house for Mouse” by Michele Fry, Amy Richards (Uzzell), published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/a-house-for-mouse/",
+        "quote": "Title page read: title, credits and ISBN 978-0-9922357-5-8 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "age2_3",
+    "age3_4",
+    "age4_5"
+  ],
+  "role": "read_aloud",
+  "topics": [
+    "animals",
+    "family"
+  ],
+  "sensitiveThemes": [],
+  "strands": [
+    "oral_language",
+    "vocabulary",
+    "comprehension"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "Look at the cover. Where do you think Mouse might live?",
+        "id": "Lihat sampulnya. Menurutmu di mana Tikus mungkin tinggal?"
+      }
+    ],
+    "during": [
+      {
+        "en": "At each new home ask: is this right for Mouse? Why or why not?",
+        "id": "Di setiap rumah baru tanyakan: apakah ini cocok untuk Tikus? Mengapa?"
+      }
+    ],
+    "after": [
+      {
+        "en": "Where did Mouse feel cosy in the end? Where do you feel cosy?",
+        "id": "Di mana Tikus merasa nyaman pada akhirnya? Di mana kamu merasa nyaman?"
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Match toy animals to pictures of homes (nest, hole, pond) on cards you draw together.",
+      "id": "Cocokkan mainan hewan dengan gambar rumahnya (sarang, lubang, kolam) pada kartu yang digambar bersama."
+    },
+    "maths": {
+      "en": "Big and small: line up the animals from biggest to smallest home.",
+      "id": "Besar dan kecil: urutkan hewan dari rumah terbesar sampai terkecil."
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}

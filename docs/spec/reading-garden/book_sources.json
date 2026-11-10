@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0",
+  "notice": "Candidate source directory, not verified licenses, endorsements, API integrations, or current access guarantees. Check official terms and each title before use.",
+  "sources": [
+    {
+      "id": "sibi",
+      "name": "SIBI / Buku Kemendikdasmen",
+      "candidateUrl": "https://buku.kemdikbud.go.id/",
+      "purpose": "Indonesian government educational books",
+      "verificationStatus": "verification_required",
+      "rightsStatus": "unknown",
+      "allowedDefault": "metadata_and_reviewed_external_link_only",
+      "lastVerifiedAt": null
+    },
+    {
+      "id": "literacy_cloud",
+      "name": "Literacy Cloud",
+      "candidateUrl": "https://literacycloud.org/",
+      "purpose": "Children’s literacy and read-aloud materials",
+      "verificationStatus": "verification_required",
+      "rightsStatus": "unknown",
+      "allowedDefault": "metadata_and_reviewed_external_link_only",
+      "lastVerifiedAt": null
+    },
+    {
+      "id": "lets_read",
+      "name": "Let’s Read Asia",
+      "candidateUrl": "https://www.letsreadasia.org/",
+      "purpose": "Multilingual children’s stories",
+      "verificationStatus": "verification_required",
+      "rightsStatus": "unknown",
+      "allowedDefault": "metadata_and_reviewed_external_link_only",
+      "lastVerifiedAt": null
+    },
+    {
+      "id": "book_dash",
+      "name": "Book Dash",
+      "candidateUrl": "https://bookdash.org/",
+      "purpose": "Illustrated early readers; check per-title licensing",
+      "verificationStatus": "verification_required",
+      "rightsStatus": "unknown",
+      "allowedDefault": "metadata_and_reviewed_external_link_only",
+      "lastVerifiedAt": null
+    },
+    {
+      "id": "storyweaver",
+      "name": "StoryWeaver",
+      "candidateUrl": "https://storyweaver.org.in/",
+      "purpose": "Multilingual graded reading; verify per-title license",
+      "verificationStatus": "verification_required",
+      "rightsStatus": "unknown",
+      "allowedDefault": "metadata_and_reviewed_external_link_only",
+      "lastVerifiedAt": null
+    },
+    {
+      "id": "oxford_owl",
+      "name": "Oxford Owl",
+      "candidateUrl": "https://home.oxfordowl.co.uk/",
+      "purpose": "English reading and phonics resources",
+      "verificationStatus": "verification_required",
+      "rightsStatus": "unknown",
+      "allowedDefault": "metadata_and_reviewed_external_link_only",
+      "lastVerifiedAt": null
+    },
+    {
+      "id": "booktime",
+      "name": "Booktime",
+      "candidateUrl": null,
+      "purpose": "Ambiguous provider name; verify exact website before inclusion",
+      "verificationStatus": "verification_required",
+      "rightsStatus": "unknown",
+      "allowedDefault": "metadata_and_reviewed_external_link_only",
+      "lastVerifiedAt": null
+    },
+    {
+      "id": "unite_for_literacy",
+      "name": "Unite for Literacy",
+      "candidateUrl": "https://www.uniteforliteracy.com/",
+      "purpose": "Illustrated early reading and narration",
+      "verificationStatus": "verification_required",
+      "rightsStatus": "unknown",
+      "allowedDefault": "metadata_and_reviewed_external_link_only",
+      "lastVerifiedAt": null
+    },
+    {
+      "id": "icdl",
+      "name": "International Children’s Digital Library",
+      "candidateUrl": null,
+      "purpose": "Historical library; verify present availability and canonical URL",
+      "verificationStatus": "verification_required",
+      "rightsStatus": "unknown",
+      "allowedDefault": "metadata_and_reviewed_external_link_only",
+      "lastVerifiedAt": null
+    }
+  ]
+}

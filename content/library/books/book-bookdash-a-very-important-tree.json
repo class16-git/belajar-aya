@@ -1,0 +1,111 @@
+{
+  "id": "book-bookdash-a-very-important-tree",
+  "sourceId": "book_dash",
+  "title": "A Very Important Tree",
+  "creators": [
+    {
+      "name": "Elana Bregin",
+      "role": "writer"
+    },
+    {
+      "name": "Liam Longland",
+      "role": "illustrator"
+    },
+    {
+      "name": "Heni Andrag",
+      "role": "designer"
+    },
+    {
+      "name": "Carla Lever",
+      "role": "editor"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [],
+  "isbn": "978-1-77632-411-8",
+  "synopsis": {
+    "en": "A girl loves the big tree outside her home, but her brother wants to cut it down, and she has to find a way to stop him.",
+    "id": "Seorang anak perempuan menyayangi pohon besar di depan rumahnya, tetapi kakak laki-lakinya ingin menebangnya, dan ia harus mencari cara untuk mencegahnya."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/a-very-important-tree/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“A Very Important Tree” by Elana Bregin, Liam Longland, published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/a-very-important-tree/",
+        "quote": "Title page read: title, credits and ISBN 978-1-77632-411-8 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "k",
+    "g1",
+    "g2"
+  ],
+  "role": "shared_reading",
+  "topics": [
+    "nature",
+    "family"
+  ],
+  "sensitiveThemes": [
+    "sibling_conflict"
+  ],
+  "strands": [
+    "comprehension",
+    "vocabulary"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "Why might a tree be important to a family?",
+        "id": "Mengapa sebuah pohon bisa penting bagi sebuah keluarga?"
+      }
+    ],
+    "during": [
+      {
+        "en": "What reasons does each sibling give? Which reasons are strongest?",
+        "id": "Alasan apa yang diberikan masing-masing? Alasan mana yang paling kuat?"
+      }
+    ],
+    "after": [
+      {
+        "en": "How was the problem solved? Would you have solved it differently?",
+        "id": "Bagaimana masalahnya diselesaikan? Apakah kamu akan menyelesaikannya dengan cara lain?"
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Adopt a tree nearby: visit it weekly, bark-rub with paper and crayon, and draw what changes.",
+      "id": "Adopsi sebuah pohon di dekat rumah: kunjungi setiap minggu, gosok kulit kayunya dengan kertas dan krayon, dan gambar perubahannya."
+    },
+    "stem": {
+      "en": "List what lives on or uses the tree. Sort the list into animals, plants and people.",
+      "id": "Daftar apa saja yang hidup di atau memakai pohon itu. Pilah daftarnya menjadi hewan, tumbuhan, dan manusia."
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}

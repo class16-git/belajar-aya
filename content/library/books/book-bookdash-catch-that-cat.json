@@ -1,0 +1,110 @@
+{
+  "id": "book-bookdash-catch-that-cat",
+  "sourceId": "book_dash",
+  "title": "Catch That Cat!",
+  "creators": [
+    {
+      "name": "Megan Pirie",
+      "role": "writer"
+    },
+    {
+      "name": "Lindy Pelzl",
+      "role": "illustrator"
+    },
+    {
+      "name": "Jessica Bailing",
+      "role": "designer"
+    },
+    {
+      "name": "Sarah Heron",
+      "role": "editor"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [],
+  "isbn": "978-1-928497-94-3",
+  "synopsis": {
+    "en": "A sneaky cat runs off with a child’s sock, and the child and their dog set off on a chase to get it back.",
+    "id": "Seekor kucing nakal membawa lari kaus kaki seorang anak, dan anak itu bersama anjingnya mengejar untuk mengambilnya kembali."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/catch-that-cat/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“Catch That Cat!” by Megan Pirie, Lindy Pelzl, published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/catch-that-cat/",
+        "quote": "Title page read: title, credits and ISBN 978-1-928497-94-3 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "age3_4",
+    "age4_5",
+    "k"
+  ],
+  "role": "shared_reading",
+  "topics": [
+    "animals",
+    "adventure"
+  ],
+  "sensitiveThemes": [],
+  "strands": [
+    "oral_language",
+    "comprehension",
+    "vocabulary"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "What do you think a cat might steal?",
+        "id": "Menurutmu apa yang mungkin dicuri seekor kucing?"
+      }
+    ],
+    "during": [
+      {
+        "en": "Use place words as you read: over, under, through, behind.",
+        "id": "Gunakan kata tempat saat membaca: di atas, di bawah, melalui, di belakang."
+      }
+    ],
+    "after": [
+      {
+        "en": "Retell the chase in order: first, then, last.",
+        "id": "Ceritakan ulang pengejarannya berurutan: pertama, lalu, terakhir."
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Make a sock chase in the room: hide a sock and give place-word clues (under the chair, behind the door).",
+      "id": "Buat permainan mencari kaus kaki: sembunyikan kaus kaki dan beri petunjuk kata tempat (di bawah kursi, di belakang pintu)."
+    },
+    "stem": {
+      "en": "Draw the chase as a map with arrows, then follow it like a robot.",
+      "id": "Gambar pengejaran sebagai peta dengan panah, lalu ikuti seperti robot."
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}

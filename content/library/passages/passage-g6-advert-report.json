@@ -1,0 +1,122 @@
+{
+  "id": "passage-g6-advert-report",
+  "stage": "g6",
+  "title": {
+    "en": "An advert and a report",
+    "id": "Sebuah iklan dan sebuah laporan"
+  },
+  "genre": "informational",
+  "paragraphs": {
+    "en": [
+      "Advert: “ZoomFizz energy drink makes you smarter! Drink ZoomFizz before every test. Thousands of students love it!”",
+      "Report: “A study by a university nutrition team followed 300 students for one term. Students who slept at least nine hours and ate breakfast did better on tests than those who did not. The study found no link between energy drinks and test scores. Doctors advise children to avoid energy drinks because of their high sugar and caffeine.”",
+      "The advert is written to sell a product. The report describes what researchers measured and who did the research."
+    ],
+    "id": [
+      "Iklan: “Minuman energi ZoomFizz membuatmu lebih pintar! Minum ZoomFizz sebelum setiap ujian. Ribuan siswa menyukainya!”",
+      "Laporan: “Sebuah penelitian oleh tim gizi universitas mengamati 300 siswa selama satu semester. Siswa yang tidur sedikitnya sembilan jam dan sarapan mendapat nilai ujian lebih baik daripada yang tidak. Penelitian itu tidak menemukan hubungan antara minuman energi dan nilai ujian. Dokter menyarankan anak-anak menghindari minuman energi karena tinggi gula dan kafein.”",
+      "Iklan ditulis untuk menjual produk. Laporan menjelaskan apa yang diukur peneliti dan siapa yang melakukan penelitian."
+    ]
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which statement is a claim without evidence?",
+        "id": "Pernyataan mana yang merupakan klaim tanpa bukti?"
+      },
+      "choices": {
+        "en": [
+          "“ZoomFizz makes you smarter!”",
+          "“The study followed 300 students.”",
+          "“Students who slept nine hours did better.”"
+        ],
+        "id": [
+          "“ZoomFizz membuatmu lebih pintar!”",
+          "“Penelitian mengamati 300 siswa.”",
+          "“Siswa yang tidur sembilan jam mendapat nilai lebih baik.”"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why is “Thousands of students love it” weak evidence that the drink makes you smarter?",
+        "id": "Mengapa “Ribuan siswa menyukainya” adalah bukti lemah bahwa minuman itu membuat lebih pintar?"
+      },
+      "choices": {
+        "en": [
+          "Liking a drink does not show it improves learning.",
+          "Thousands is too small a number.",
+          "Students cannot taste drinks."
+        ],
+        "id": [
+          "Menyukai minuman tidak menunjukkan minuman itu meningkatkan belajar.",
+          "Ribuan adalah angka yang terlalu kecil.",
+          "Siswa tidak bisa merasakan minuman."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q3",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "According to the report, what helped test scores?",
+        "id": "Menurut laporan, apa yang membantu nilai ujian?"
+      },
+      "choices": {
+        "en": [
+          "energy drinks",
+          "enough sleep and breakfast",
+          "studying late at night"
+        ],
+        "id": [
+          "minuman energi",
+          "tidur cukup dan sarapan",
+          "belajar sampai larut malam"
+        ]
+      },
+      "answer": 1,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q4",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Why is the report more trustworthy than the advert?",
+        "id": "Mengapa laporan lebih dapat dipercaya daripada iklan?"
+      },
+      "choices": {
+        "en": [
+          "It says who measured what, and it is not selling anything.",
+          "It is longer.",
+          "It uses the word ‘doctors’."
+        ],
+        "id": [
+          "Laporan menyebut siapa mengukur apa, dan tidak menjual apa pun.",
+          "Laporan lebih panjang.",
+          "Laporan memakai kata ‘dokter’."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    }
+  ],
+  "copyrightStatus": "original",
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "original-text",
+      "answer-key-check",
+      "evidence-paragraph-check",
+      "bilingual-parity",
+      "readability-estimate"
+    ]
+  }
+}

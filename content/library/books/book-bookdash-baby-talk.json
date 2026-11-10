@@ -1,0 +1,108 @@
+{
+  "id": "book-bookdash-baby-talk",
+  "sourceId": "book_dash",
+  "title": "Baby Talk",
+  "creators": [
+    {
+      "name": "Sope Martins",
+      "role": "writer"
+    },
+    {
+      "name": "Alex Latimer",
+      "role": "illustrator"
+    },
+    {
+      "name": "Thokozani Mkhize",
+      "role": "designer"
+    },
+    {
+      "name": "Zanri Kritzinger",
+      "role": "editor"
+    }
+  ],
+  "language": "en",
+  "otherLanguagesListed": [
+    "isiZulu",
+    "isiXhosa",
+    "Afrikaans"
+  ],
+  "isbn": "978-1-77623-100-3",
+  "synopsis": {
+    "en": "A big brother tries to work out why his baby sister keeps crying, and what she might be telling him.",
+    "id": "Seorang kakak laki-laki mencoba memahami mengapa adik bayinya terus menangis, dan apa yang mungkin ingin disampaikan adiknya."
+  },
+  "sourcePageUrl": "https://bookdash.org/books/baby-talk/",
+  "accessMode": "external_link",
+  "rights": {
+    "status": "SOURCE_OPEN_LICENSE_TITLE_UNCONFIRMED",
+    "sourceLicense": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "titleLicenseConfirmed": false,
+    "attributionText": "“Baby Talk” by Sope Martins, Alex Latimer, published by Book Dash (bookdash.org).",
+    "hostingAllowed": false,
+    "adaptationAllowed": null,
+    "narrationAllowed": null,
+    "evidence": [
+      {
+        "url": "https://bookdash.org/who-we-are/open-content-partners/",
+        "quote": "We publish all of our books under a Creative Commons CC BY 4.0 license – our creative volunteers’ gift to the world. Under this license, there is no restriction on what people can do with the books, as long as they acknowledge Book Dash and the original creators.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      },
+      {
+        "url": "https://bookdash.org/books/baby-talk/",
+        "quote": "Title page read: title, credits and ISBN 978-1-77623-100-3 shown; no licence line on the title page.",
+        "checkedAt": "2026-11-10",
+        "checkedBy": "agent"
+      }
+    ]
+  },
+  "stages": [
+    "age3_4",
+    "age4_5"
+  ],
+  "role": "read_aloud",
+  "topics": [
+    "family",
+    "feelings"
+  ],
+  "sensitiveThemes": [],
+  "strands": [
+    "oral_language",
+    "comprehension"
+  ],
+  "prompts": {
+    "before": [
+      {
+        "en": "Babies can’t talk yet. How do you think they tell us what they need?",
+        "id": "Bayi belum bisa bicara. Menurutmu bagaimana mereka memberi tahu apa yang mereka butuhkan?"
+      }
+    ],
+    "during": [
+      {
+        "en": "Each time the baby cries, pause: what could she need now?",
+        "id": "Setiap kali bayi menangis, berhenti sejenak: apa yang mungkin ia butuhkan sekarang?"
+      }
+    ],
+    "after": [
+      {
+        "en": "How did the brother feel at the start, and at the end?",
+        "id": "Bagaimana perasaan sang kakak di awal, dan di akhir?"
+      }
+    ]
+  },
+  "extensions": {
+    "montessori": {
+      "en": "Care for a doll together: feed, wrap and rock it, naming each step.",
+      "id": "Rawat boneka bersama: beri makan, selimuti, dan timang, sambil menyebut setiap langkah."
+    }
+  },
+  "publicationStatus": "metadata_reviewed",
+  "agentChecks": [
+    "schema",
+    "source-policy-evidence",
+    "title-page-metadata",
+    "original-synopsis",
+    "bilingual-parity"
+  ]
+}
