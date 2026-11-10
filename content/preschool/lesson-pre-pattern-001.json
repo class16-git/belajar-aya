@@ -1,0 +1,126 @@
+{
+  "id": "lesson-pre-pattern-001",
+  "skillId": "PRE-MATH-PATTERN-AB",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.age3_4.ab-patterns"
+  ],
+  "title": {
+    "en": "Spoon, fork, spoon, fork",
+    "id": "Sendok, garpu, sendok, garpu"
+  },
+  "ageBand": "preschool",
+  "domain": "mathematics",
+  "mode": "offline",
+  "objective": {
+    "en": "Copy and continue a simple repeating pattern of two kinds of object.",
+    "id": "Meniru dan melanjutkan pola berulang sederhana dari dua jenis benda."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 2,
+  "activityMinutes": {
+    "min": 3,
+    "max": 8
+  },
+  "materials": [
+    {
+      "en": "Six child-safe spoons and six blunt plastic forks (or two kinds of large blocks)",
+      "id": "Enam sendok yang aman untuk anak dan enam garpu plastik tumpul (atau dua jenis balok besar)"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Lay out spoon, fork, spoon, fork in a line.",
+      "id": "Susun sendok, garpu, sendok, garpu dalam satu baris."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Point and say the pattern in a rhythm: 'spoon, fork, spoon, fork'.",
+      "id": "Tunjuk dan ucapkan polanya dengan irama: 'sendok, garpu, sendok, garpu'."
+    },
+    {
+      "en": "Ask: 'What comes next?' Let your child add the next one.",
+      "id": "Tanyakan: 'Apa berikutnya?' Biarkan anak menambahkan yang berikutnya."
+    },
+    {
+      "en": "Make a new line underneath and let your child copy the pattern.",
+      "id": "Buat baris baru di bawahnya dan biarkan anak meniru polanya."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "Spoon, fork, spoon, fork… what comes next?",
+      "id": "Sendok, garpu, sendok, garpu… apa berikutnya?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Continues the pattern",
+      "id": "Melanjutkan pola"
+    },
+    {
+      "en": "Copies a pattern in a new line",
+      "id": "Meniru pola di baris baru"
+    },
+    {
+      "en": "Says the pattern aloud",
+      "id": "Mengucapkan pola dengan suara"
+    }
+  ],
+  "cleanup": {
+    "en": "Put the cutlery back in the drawer together, sorting spoons and forks.",
+    "id": "Kembalikan alat makan ke laci bersama, sambil memilah sendok dan garpu."
+  },
+  "variations": [
+    {
+      "en": "Clap–tap patterns with hands and knees, or a 'big step, small step' walk.",
+      "id": "Pola tepuk–tepuk dengan tangan dan lutut, atau berjalan 'langkah besar, langkah kecil'."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    },
+    {
+      "en": "Use blunt plastic forks only.",
+      "id": "Gunakan garpu plastik tumpul saja."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "Patterns are early algebra: noticing what repeats and predicting what comes next.",
+      "id": "Pola adalah awal aljabar: memperhatikan apa yang berulang dan menebak yang berikutnya."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [],
+  "arabicPhrases": []
+}

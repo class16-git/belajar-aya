@@ -1,0 +1,134 @@
+{
+  "id": "lesson-pre-count10-001",
+  "skillId": "PRE-MATH-COUNT-10",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.age3_4.count-10"
+  ],
+  "title": {
+    "en": "Counting into the egg box",
+    "id": "Membilang ke kotak telur"
+  },
+  "ageBand": "preschool",
+  "domain": "mathematics",
+  "mode": "offline",
+  "objective": {
+    "en": "Count up to 10 large objects, touching and moving each one once.",
+    "id": "Membilang sampai 10 benda besar, menyentuh dan memindahkan masing-masing satu kali."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 5,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "An empty egg box for 10 (or two for 6)",
+      "id": "Kotak telur kosong untuk 10 (atau dua untuk 6)"
+    },
+    {
+      "en": "Ten large objects such as wooden blocks or clean bottle caps from big bottles",
+      "id": "Sepuluh benda besar seperti balok kayu atau tutup botol besar yang bersih"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Put the objects in a basket next to the egg box.",
+      "id": "Letakkan benda-benda di keranjang di samping kotak telur."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Ask for a small number first: 'Can you put three in?' Count aloud together as each one goes in.",
+      "id": "Mulai dengan bilangan kecil: 'Bisakah kamu memasukkan tiga?' Membilang bersama setiap kali satu benda dimasukkan."
+    },
+    {
+      "en": "Ask: 'How many are in the box?' Let your child count again by touching each one.",
+      "id": "Tanyakan: 'Ada berapa di kotak?' Biarkan anak membilang lagi sambil menyentuh setiap benda."
+    },
+    {
+      "en": "Grow towards 10 only when smaller numbers are easy.",
+      "id": "Naikkan menuju 10 hanya jika bilangan kecil sudah mudah."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "One… two… three. Three blocks!",
+      "id": "Satu… dua… tiga. Tiga balok!"
+    },
+    {
+      "en": "The last number tells us how many.",
+      "id": "Bilangan terakhir memberi tahu berapa banyaknya."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Touches each object once while counting",
+      "id": "Menyentuh setiap benda sekali saat membilang"
+    },
+    {
+      "en": "Says the last number as 'how many'",
+      "id": "Menyebut bilangan terakhir sebagai 'berapa banyak'"
+    },
+    {
+      "en": "Stops at the number asked for",
+      "id": "Berhenti pada bilangan yang diminta"
+    }
+  ],
+  "cleanup": {
+    "en": "Count the objects back into the basket together.",
+    "id": "Bilang bersama sambil memasukkan benda kembali ke keranjang."
+  },
+  "variations": [
+    {
+      "en": "Count real things during the day: steps on the stairs, spoons on the table.",
+      "id": "Bilang benda nyata sepanjang hari: anak tangga, sendok di meja."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    },
+    {
+      "en": "Use only objects bigger than your child's fist (nothing that fits through a toilet-roll tube).",
+      "id": "Gunakan hanya benda yang lebih besar dari kepalan tangan anak (tidak ada yang muat masuk ke gulungan tisu toilet)."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "Counting the same set twice and getting the same answer is a big step. Numerals can wait.",
+      "id": "Membilang kumpulan yang sama dua kali dan mendapat jawaban sama adalah langkah besar. Angka tertulis bisa menunggu."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [],
+  "arabicPhrases": []
+}

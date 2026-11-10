@@ -85,7 +85,9 @@
       "delivery": "offline",
       "assessment": "observation",
       "implementation": {
-        "skillIds": []
+        "skillIds": [
+          "ROBO-P-RAMPS"
+        ]
       },
       "reviewFlags": [
         "physical_safety"

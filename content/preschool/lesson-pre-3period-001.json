@@ -1,0 +1,138 @@
+{
+  "id": "lesson-pre-3period-001",
+  "skillId": "PRE-LANG-3PERIOD",
+  "framework": "montessori",
+  "objectiveIds": [
+    "mont.age3_4.three-period"
+  ],
+  "title": {
+    "en": "Rough, smooth, soft",
+    "id": "Kasar, halus, lembut"
+  },
+  "ageBand": "preschool",
+  "domain": "language",
+  "mode": "offline",
+  "objective": {
+    "en": "Learn three texture words in three steps: hear the name, find the object, then say the name.",
+    "id": "Mempelajari tiga kata tekstur dalam tiga tahap: mendengar nama, menemukan benda, lalu menyebut namanya."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 8
+  },
+  "materials": [
+    {
+      "en": "Three hand-sized things: a piece of fine sandpaper or a rough sponge, a smooth spoon or tile, a soft cloth",
+      "id": "Tiga benda sebesar telapak tangan: amplas halus atau spons kasar, sendok atau ubin licin, kain lembut"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Put the three things in a row on a mat.",
+      "id": "Letakkan ketiga benda berjajar di atas alas."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Step 1 — Name it: touch each thing and say one word only: 'rough', 'smooth', 'soft'.",
+      "id": "Tahap 1 — Menamai: sentuh setiap benda dan ucapkan satu kata saja: 'kasar', 'halus', 'lembut'."
+    },
+    {
+      "en": "Step 2 — Find it: 'Can you touch the smooth one?' Repeat in a playful way, moving the things around.",
+      "id": "Tahap 2 — Menemukan: 'Bisakah kamu menyentuh yang halus?' Ulangi dengan main-main sambil memindahkan bendanya."
+    },
+    {
+      "en": "Step 3 — Say it: point to one and ask 'What is this?' Only do step 3 when step 2 is easy.",
+      "id": "Tahap 3 — Menyebut: tunjuk satu benda dan tanyakan 'Ini apa?' Lakukan tahap 3 hanya jika tahap 2 sudah mudah."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "This is rough.",
+      "id": "Ini kasar."
+    },
+    {
+      "en": "Show me the soft one.",
+      "id": "Tunjukkan yang lembut."
+    },
+    {
+      "en": "What is this?",
+      "id": "Ini apa?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Finds the right thing when it is named",
+      "id": "Menemukan benda yang benar saat namanya disebut"
+    },
+    {
+      "en": "Says the word by themselves",
+      "id": "Menyebut kata itu sendiri"
+    },
+    {
+      "en": "Uses the word later in daily life",
+      "id": "Memakai kata itu di kehidupan sehari-hari"
+    }
+  ],
+  "cleanup": {
+    "en": "Put the things back on a tray for next time.",
+    "id": "Kembalikan benda-benda ke nampan untuk lain kali."
+  },
+  "variations": [
+    {
+      "en": "Use the same three steps for shapes (circle, square, triangle) or for heavy and light.",
+      "id": "Gunakan tiga tahap yang sama untuk bentuk (lingkaran, persegi, segitiga) atau untuk berat dan ringan."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    },
+    {
+      "en": "Choose sandpaper that is fine, not coarse, and wash hands afterwards.",
+      "id": "Pilih amplas yang halus, bukan kasar, dan cuci tangan setelahnya."
+    },
+    {
+      "en": "Use only objects bigger than your child's fist (nothing that fits through a toilet-roll tube).",
+      "id": "Gunakan hanya benda yang lebih besar dari kepalan tangan anak (tidak ada yang muat masuk ke gulungan tisu toilet)."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "If your child gets a word wrong, just go back to step 2 another day. Never say 'wrong'.",
+      "id": "Jika anak salah menyebut, cukup kembali ke tahap 2 di hari lain. Jangan pernah berkata 'salah'."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "reviewFlags": [],
+  "arabicPhrases": []
+}

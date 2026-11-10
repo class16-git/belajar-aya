@@ -271,6 +271,159 @@
         "en": "Hearing Bismillah and Alhamdulillah with family.",
         "id": "Mendengar Bismillah dan Alhamdulillah bersama keluarga."
       }
+    },
+    {
+      "id": "PRE-PRACT-DRESS",
+      "domain": "practical_life",
+      "band": "preschool",
+      "order": 2,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Dressing myself",
+        "id": "Berpakaian sendiri"
+      },
+      "description": {
+        "en": "Buttons, zips and putting on clothes independently.",
+        "id": "Kancing, ritsleting, dan memakai pakaian sendiri."
+      }
+    },
+    {
+      "id": "PRE-LANG-SOUNDS",
+      "domain": "language",
+      "band": "preschool",
+      "order": 3,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Hearing first sounds",
+        "id": "Mendengar bunyi awal"
+      },
+      "description": {
+        "en": "Sound games: the first sound of familiar words.",
+        "id": "Permainan bunyi: bunyi awal kata yang dikenal."
+      }
+    },
+    {
+      "id": "PRE-PREWRITE",
+      "domain": "practical_life",
+      "band": "preschool",
+      "order": 4,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Getting ready to write",
+        "id": "Bersiap menulis"
+      },
+      "description": {
+        "en": "Pincer grip and tracing shapes.",
+        "id": "Genggaman menjepit dan menelusuri bentuk."
+      }
+    },
+    {
+      "id": "PRE-LANG-3PERIOD",
+      "domain": "language",
+      "band": "preschool",
+      "order": 5,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "New words for textures and shapes",
+        "id": "Kata baru untuk tekstur dan bentuk"
+      },
+      "description": {
+        "en": "Three-period lessons: name it, find it, say it.",
+        "id": "Pelajaran tiga tahap: menamai, menemukan, menyebut."
+      }
+    },
+    {
+      "id": "PRE-MATH-COUNT-10",
+      "domain": "mathematics",
+      "band": "preschool",
+      "order": 6,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Counting to 10",
+        "id": "Membilang sampai 10"
+      },
+      "description": {
+        "en": "One-to-one counting and matching up to 10 objects.",
+        "id": "Membilang satu per satu dan mencocokkan sampai 10 benda."
+      }
+    },
+    {
+      "id": "PRE-MATH-PATTERN-AB",
+      "domain": "mathematics",
+      "band": "preschool",
+      "order": 7,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "AB patterns",
+        "id": "Pola AB"
+      },
+      "description": {
+        "en": "Copy and extend AB patterns.",
+        "id": "Meniru dan melanjutkan pola AB."
+      }
+    },
+    {
+      "id": "PRE-MATH-SHAPES",
+      "domain": "mathematics",
+      "band": "preschool",
+      "order": 8,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Flat shapes",
+        "id": "Bangun datar"
+      },
+      "description": {
+        "en": "Name circle, square, triangle and rectangle.",
+        "id": "Menamai lingkaran, persegi, segitiga, dan persegi panjang."
+      }
+    },
+    {
+      "id": "PRE-MATH-LENGTH",
+      "domain": "mathematics",
+      "band": "preschool",
+      "order": 9,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Comparing lengths",
+        "id": "Membandingkan panjang"
+      },
+      "description": {
+        "en": "Longer and shorter.",
+        "id": "Lebih panjang dan lebih pendek."
+      }
+    },
+    {
+      "id": "ROBO-P-RAMPS",
+      "domain": "robotics_stem",
+      "band": "preschool",
+      "order": 2,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Ramps and balance",
+        "id": "Lereng dan keseimbangan"
+      },
+      "description": {
+        "en": "Testing ramps and balance with safe objects.",
+        "id": "Menguji lereng dan keseimbangan dengan benda aman."
+      }
     }
   ]
 }

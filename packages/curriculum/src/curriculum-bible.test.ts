@@ -166,3 +166,24 @@ describe('slice B (Grade 1 addition & subtraction within 10, bar-model stories)'
     }
   });
 });
+
+describe('slice A extension (age 3–4 caregiver-led cards)', () => {
+  it('every non-Islamic age 3–4 objective has an agent-checked preschool card with safety notes and no choking hazard', () => {
+    const cat = getCatalog();
+    const objectives = cat.objectives.filter((o) => o.stage === 'age3_4' && o.framework !== 'islamic_studies');
+    expect(objectives.length).toBe(10);
+    for (const o of objectives) {
+      const cards = cat.lessons.filter((l) => l.objectiveIds.includes(o.id) && l.mode === 'offline');
+      expect(cards.length, o.id).toBeGreaterThanOrEqual(1);
+      for (const c of cards) {
+        if (c.mode !== 'offline') continue;
+        expect(c.ageBand, c.id).toBe('preschool');
+        expect(c.hazards.chokingRisk, c.id).toBe(false);
+        expect(c.safetyNotes.length, c.id).toBeGreaterThanOrEqual(2);
+        expect(['agent_reviewed', 'reviewed', 'published'], c.id).toContain(c.reviewStatus);
+      }
+    }
+    // Still hidden in production until a human reviews them.
+    expect(cat.lessons.filter((l) => l.id.startsWith('lesson-pre-') && l.reviewStatus === 'reviewed')).toEqual([]);
+  });
+});
