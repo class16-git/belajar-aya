@@ -163,6 +163,26 @@ export const hazardFlags = z
   })
   .strict();
 
+/**
+ * Hazard-keyword consistency (audit ATL-10). A hazard word in what the family handles (materials, preparation,
+ * steps, variations) needs either the matching hazard flag, or a safety note that names the same thing and says
+ * how it is handled (the inherent hazard is then recorded as mitigated, not hidden).
+ */
+export const HAZARD_KEYWORDS: { flag: 'chokingRisk' | 'sharp'; re: RegExp }[] = [
+  ...[/split pins?/, /paper fasteners?/, /\bbrads?\b/, /push ?pins?/, /drawing pins?/, /thumb ?tacks?/, /\bbeads?\b/, /\bbuttons?\b/, /magnets?/, /\bcoins?\b/, /\bmarbles?\b/, /batter(?:y|ies)/, /small parts?/, /\bbeans?\b/, /balloons?/].map((re) => ({ flag: 'chokingRisk' as const, re })),
+  ...[/scissors/, /knife|knives/, /needles?/, /skewers?/, /toothpicks?/, /\bpins?\b/, /staples?/, /blades?/, /graters?/, /peelers?/].map((re) => ({ flag: 'sharp' as const, re })),
+];
+export function hazardKeywordIssues(card: { materials: { en: string }[]; preparation: { en: string }[]; steps: { en: string }[]; variations?: { en: string }[]; safetyNotes: { en: string }[]; hazards: Record<'chokingRisk' | 'sharp', boolean> }): string[] {
+  const handled = [...card.materials, ...card.preparation, ...card.steps, ...(card.variations ?? [])].map((x) => x.en.toLowerCase()).join(' ');
+  const notes = card.safetyNotes.map((x) => x.en.toLowerCase()).join(' ');
+  const issues: string[] = [];
+  for (const { flag, re } of HAZARD_KEYWORDS) {
+    const m = handled.match(re);
+    if (m && !card.hazards[flag] && !re.test(notes)) issues.push(`"${m[0]}" appears in the activity but hazards.${flag} is false and no safety note addresses it`);
+  }
+  return issues;
+}
+
 export const offlineCardSchema = z
   .object({
     ...base,
@@ -186,6 +206,7 @@ export const offlineCardSchema = z
     if (card.safetyNotes.length === 0) {
       ctx.addIssue({ code: 'custom', message: 'Offline cards need at least one safety note' });
     }
+    for (const message of hazardKeywordIssues(card)) ctx.addIssue({ code: 'custom', message });
     if (card.hazards.chokingRisk && card.ageBand === 'toddler') {
       ctx.addIssue({
         code: 'custom',
