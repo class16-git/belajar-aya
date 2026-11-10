@@ -53,7 +53,6 @@ the owner. Never paste secrets into chat, issues or commits.
 - Audio prompts/TTS not implemented (toggle shown as "coming soon").
 - PWA/offline caching not implemented (not promised in Phase 1).
 - Mastery thresholds are heuristics awaiting educator validation (ADR-0005).
-- CI workflow is written but has not run on GitHub yet.
 
 ## Next iteration backlog (prioritised)
 1. Owner/educator content review + Indonesian copy review (P0 for release).

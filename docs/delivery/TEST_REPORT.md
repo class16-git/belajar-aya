@@ -63,5 +63,5 @@ Scenario 8 (AI unavailable) is covered by unit tests and by the whole E2E suite 
 | T4 | P1 | Advisories: zod <4.6.6 (memory exhaustion), postcss, deepmerge-ts | upgrade/overrides + 32 KB body cap | audit + E2E #22 |
 
 ## How to reproduce
-See README "Commands". CI (`.github/workflows/ci.yml`) runs the same steps on every PR. CI has not yet run on
-GitHub because the branch could not be pushed from the build container (see HANDOVER).
+See README "Commands". CI (`.github/workflows/ci.yml`) runs the same steps on every PR; its first run on
+GitHub (PR #1, run 42741425627) passed all steps including E2E and accessibility.
