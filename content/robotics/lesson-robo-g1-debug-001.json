@@ -1,0 +1,81 @@
+{
+  "ageBand": "g1",
+  "domain": "robotics_stem",
+  "framework": "robotics_stem",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "arabicPhrases": [],
+  "contentVersion": "1.0.0",
+  "safetyNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "id": "lesson-robo-g1-debug-001",
+  "skillId": "ROBO-G1-DEBUG",
+  "objectiveIds": [
+    "robo.g1.debug-path"
+  ],
+  "reviewFlags": [],
+  "title": {
+    "en": "Fix the robot’s path",
+    "id": "Perbaiki jalur robot"
+  },
+  "mode": "interactive",
+  "objective": {
+    "en": "Find the one wrong step that stops the robot reaching the flag.",
+    "id": "Menemukan satu langkah salah yang membuat robot tidak sampai ke bendera."
+  },
+  "prerequisites": [
+    "MATH-G1-COUNT-20"
+  ],
+  "cpaStage": "abstract",
+  "materials": [
+    {
+      "en": "Grid with a robot, a flag and a program with one bug",
+      "id": "Petak dengan robot, bendera, dan program dengan satu kesalahan"
+    }
+  ],
+  "generator": "robot-debug",
+  "hintLadder": [
+    {
+      "en": "The robot should reach the flag, but one arrow is wrong. Which step is it?",
+      "id": "Robot seharusnya sampai ke bendera, tetapi ada satu panah yang salah. Langkah ke berapa?"
+    },
+    {
+      "en": "Follow the arrows one at a time. Stop when the robot starts to go the wrong way.",
+      "id": "Ikuti panah satu per satu. Berhenti saat robot mulai salah arah."
+    },
+    {
+      "en": "Look at the dotted line: it shows where this program really goes.",
+      "id": "Lihat garis titik-titik: itu menunjukkan ke mana program ini benar-benar pergi."
+    },
+    {
+      "en": "Count the steps carefully. The bug is in one of the {steps} steps; check each step’s arrow against the way to the flag.",
+      "id": "Hitung langkahnya dengan teliti. Kesalahannya ada di salah satu dari {steps} langkah; periksa panah setiap langkah dibandingkan arah ke bendera."
+    },
+    {
+      "en": "Step {wrong} was the bug. Changing that one arrow sends the robot to the flag. Let’s try a new one.",
+      "id": "Langkah {wrong} adalah kesalahannya. Mengganti satu panah itu membuat robot sampai ke bendera. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "DEBUG_ADJACENT_STEP"
+  ],
+  "parentNotes": [
+    {
+      "en": "Finding and fixing a mistake is called debugging. Celebrate bugs: they are how programs get better.",
+      "id": "Menemukan dan memperbaiki kesalahan disebut debugging. Rayakan kesalahan: begitulah program menjadi lebih baik."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Play ‘robot’ again: give your child a program with one wrong arrow on purpose and ask them to find and fix it.",
+    "id": "Main ‘robot’ lagi: beri anak program dengan satu panah yang sengaja salah dan minta anak menemukan dan memperbaikinya."
+  },
+  "review": {
+    "agentChecks": [
+      "schema",
+      "solvability-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ]
+  }
+}

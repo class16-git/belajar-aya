@@ -15,6 +15,10 @@ export const MISCONCEPTIONS = [
   'COUNT_BACK_WRONG_START',
   'WRONG_OPERATION',
   'COUNTED_TAKEN_AWAY',
+  // Slice D: robotics tracing and debugging.
+  'TRACE_STOPPED_EARLY',
+  'LEFT_RIGHT_CONFUSION',
+  'DEBUG_ADJACENT_STEP',
   'UNCLASSIFIED',
 ] as const;
 export type Misconception = (typeof MISCONCEPTIONS)[number];
@@ -34,6 +38,14 @@ export function grade(item: Item, response: ItemResponse): GradeResult {
       return { correct: false, misconception: 'RECOUNT_FULL_FRAME' };
     }
     return { correct: false, misconception: 'COUNTING_ERROR' };
+  }
+  if (item.generator === 'robot-trace') {
+    if (v === item.params.stoppedEarly) return { correct: false, misconception: 'TRACE_STOPPED_EARLY' };
+    if (v === item.params.mirrored) return { correct: false, misconception: 'LEFT_RIGHT_CONFUSION' };
+    return { correct: false, misconception: 'UNCLASSIFIED' };
+  }
+  if (item.generator === 'robot-debug') {
+    return { correct: false, misconception: Math.abs(v - item.answer) === 1 ? 'DEBUG_ADJACENT_STEP' : 'UNCLASSIFIED' };
   }
   const slice = gradeAddSub(item, v);
   if (slice) return { correct: false, misconception: slice };

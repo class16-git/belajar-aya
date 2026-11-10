@@ -424,6 +424,59 @@
         "en": "Testing ramps and balance with safe objects.",
         "id": "Menguji lereng dan keseimbangan dengan benda aman."
       }
+    },
+    {
+      "id": "ROBO-G1-DEBUG",
+      "domain": "robotics_stem",
+      "band": "g1",
+      "order": 20,
+      "usesCpa": false,
+      "evidence": "digital_attempts",
+      "prerequisites": [
+        "MATH-G1-COUNT-20"
+      ],
+      "title": {
+        "en": "Trace and debug a path program",
+        "id": "Menelusuri dan memperbaiki program jalur"
+      },
+      "description": {
+        "en": "Predict where an arrow program ends and find the wrong step.",
+        "id": "Menebak akhir program panah dan menemukan langkah yang salah."
+      }
+    },
+    {
+      "id": "ROBO-G1-GRID",
+      "domain": "robotics_stem",
+      "band": "g1",
+      "order": 21,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Program a floor-grid robot",
+        "id": "Memprogram robot petak lantai"
+      },
+      "description": {
+        "en": "Plan, predict, test and fix an arrow program on a floor grid.",
+        "id": "Merencanakan, menebak, menguji, dan memperbaiki program panah di petak lantai."
+      }
+    },
+    {
+      "id": "ROBO-G1-SENSORS",
+      "domain": "robotics_stem",
+      "band": "g1",
+      "order": 22,
+      "usesCpa": false,
+      "evidence": "parent_observation",
+      "prerequisites": [],
+      "title": {
+        "en": "Observe sensors",
+        "id": "Mengamati sensor"
+      },
+      "description": {
+        "en": "Notice and record how light and touch sensors respond.",
+        "id": "Memperhatikan dan mencatat respons sensor cahaya dan sentuhan."
+      }
     }
   ]
 }

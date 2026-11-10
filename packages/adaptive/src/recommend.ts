@@ -63,7 +63,12 @@ function lessonFor(lessons: InteractiveLesson[], skillId: string, stage: CpaStag
     const l = forSkill.find((x) => x.cpaStage === STAGE_ORDER[i]);
     if (l) return l;
   }
-  return forSkill.find((x) => STAGE_ORDER.indexOf(x.cpaStage) > idx);
+  // Otherwise the nearest stage above (e.g. pictorial before abstract), never whichever file sorts first.
+  for (let i = idx + 1; i < STAGE_ORDER.length; i++) {
+    const l = forSkill.find((x) => x.cpaStage === STAGE_ORDER[i]);
+    if (l) return l;
+  }
+  return undefined;
 }
 
 /** CPA choice: concrete when new/misunderstood, pictorial after supported success, abstract after robust independent success. */

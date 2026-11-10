@@ -1,0 +1,148 @@
+{
+  "ageBand": "g1",
+  "domain": "robotics_stem",
+  "framework": "robotics_stem",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "arabicPhrases": [],
+  "contentVersion": "1.0.0",
+  "safetyNotes": [
+    {
+      "en": "An adult stays within reach for the whole activity.",
+      "id": "Orang dewasa tetap dalam jangkauan selama kegiatan."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    },
+    {
+      "en": "Never shine a torch into anyone’s eyes.",
+      "id": "Jangan pernah menyorotkan senter ke mata siapa pun."
+    },
+    {
+      "en": "The adult holds the phone and checks the torch’s battery cover is screwed shut; button batteries are dangerous if swallowed.",
+      "id": "Orang dewasa memegang ponsel dan memastikan tutup baterai senter terkunci rapat; baterai kancing berbahaya jika tertelan."
+    }
+  ],
+  "reviewStatus": "agent_reviewed",
+  "mode": "offline",
+  "cpaStage": "not_applicable",
+  "prerequisites": [],
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "review": {
+    "agentChecks": [
+      "schema",
+      "physical-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "id": "lesson-robo-g1-sensors-001",
+  "skillId": "ROBO-G1-SENSORS",
+  "objectiveIds": [
+    "robo.g1.sensors-observe"
+  ],
+  "reviewFlags": [
+    "physical_safety"
+  ],
+  "title": {
+    "en": "Light and touch detectives",
+    "id": "Detektif cahaya dan sentuhan"
+  },
+  "objective": {
+    "en": "Notice how everyday sensors respond to light and touch, and record what happens with drawings.",
+    "id": "Memperhatikan bagaimana sensor sehari-hari merespons cahaya dan sentuhan, lalu mencatatnya dengan gambar."
+  },
+  "prepMinutes": 5,
+  "activityMinutes": {
+    "min": 10,
+    "max": 15
+  },
+  "materials": [
+    {
+      "en": "A torch (battery compartment screwed shut)",
+      "id": "Senter (tutup baterai terkunci rapat)"
+    },
+    {
+      "en": "A phone or tablet held by the adult, with auto-brightness on",
+      "id": "Ponsel atau tablet yang dipegang orang dewasa, dengan kecerahan otomatis menyala"
+    },
+    {
+      "en": "Paper and crayons for a ‘sensor notebook’",
+      "id": "Kertas dan krayon untuk ‘buku catatan sensor’"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Find two safe sensors at home: for example the screen’s auto-brightness and a touch lamp or the lift button.",
+      "id": "Cari dua sensor yang aman di rumah: misalnya kecerahan otomatis layar dan lampu sentuh atau tombol lift."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Explain: a sensor is how a machine notices something, like our eyes and skin.",
+      "id": "Jelaskan: sensor adalah cara mesin memperhatikan sesuatu, seperti mata dan kulit kita."
+    },
+    {
+      "en": "Cover the top of the phone with a hand (the adult holds the phone). Watch the screen get darker. Uncover it.",
+      "id": "Tutup bagian atas ponsel dengan tangan (orang dewasa memegang ponsel). Lihat layarnya menjadi lebih redup. Buka lagi."
+    },
+    {
+      "en": "Shine the torch on the wall in a dim room and off again. Ask: what changed? What noticed it?",
+      "id": "Sorotkan senter ke dinding di ruangan redup lalu matikan. Tanyakan: apa yang berubah? Apa yang memperhatikannya?"
+    },
+    {
+      "en": "Draw one picture for each sensor: what we did, and what the machine did.",
+      "id": "Gambar satu gambar untuk setiap sensor: apa yang kita lakukan, dan apa yang dilakukan mesin."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "What do you think the machine will do?",
+      "id": "Menurutmu apa yang akan dilakukan mesin?"
+    },
+    {
+      "en": "How did it know?",
+      "id": "Bagaimana mesin itu tahu?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Predicts before testing",
+      "id": "Menebak sebelum menguji"
+    },
+    {
+      "en": "Describes cause and effect (‘when I cover it, it gets dark’)",
+      "id": "Menjelaskan sebab-akibat (‘kalau ditutup, jadi gelap’)"
+    },
+    {
+      "en": "Records with a drawing",
+      "id": "Mencatat dengan gambar"
+    }
+  ],
+  "cleanup": {
+    "en": "Switch off the torch and put the drawings in the sensor notebook.",
+    "id": "Matikan senter dan simpan gambar di buku catatan sensor."
+  },
+  "variations": [
+    {
+      "en": "Look for sensors outside: automatic doors, street lights that switch on at dusk.",
+      "id": "Cari sensor di luar: pintu otomatis, lampu jalan yang menyala saat senja."
+    }
+  ],
+  "parentNotes": [
+    {
+      "en": "This builds the idea that robots sense, think and act. The notebook is the portfolio evidence for this objective.",
+      "id": "Ini membangun gagasan bahwa robot merasakan, berpikir, dan bertindak. Buku catatan menjadi bukti portofolio untuk tujuan ini."
+    }
+  ]
+}

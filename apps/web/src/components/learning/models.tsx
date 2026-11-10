@@ -230,3 +230,87 @@ export function BarModel({ whole, left, right, revealed }: { whole: number | nul
     </svg>
   );
 }
+
+type RobotDir = 'up' | 'right' | 'down' | 'left';
+type RobotCell = { x: number; y: number };
+const ARROW: Record<RobotDir, string> = { up: '↑', right: '→', down: '↓', left: '←' };
+const MOVE: Record<RobotDir, RobotCell> = { up: { x: 0, y: -1 }, right: { x: 1, y: 0 }, down: { x: 0, y: 1 }, left: { x: -1, y: 0 } };
+
+/** The arrow program as a numbered list (screen readers hear "Step 2: left"). */
+export function RobotProgram({ program, highlight }: { program: RobotDir[]; highlight?: number | null }) {
+  const { t } = useI18n();
+  return (
+    <div>
+      <p className="text-sm font-semibold text-muted">{t.learn.robot.program}</p>
+      <ol className="mt-1 flex flex-wrap gap-2" data-testid="robot-program">
+        {program.map((d, i) => (
+          <li key={i} aria-label={`${fmt(t.learn.robot.step, { n: i + 1 })}: ${t.learn.robot.dir[d]}`}
+            className={`flex min-w-14 flex-col items-center rounded-xl border-2 px-2 py-1 ${highlight === i + 1 ? 'border-clay-dark bg-clay-light' : 'border-sand bg-white'}`}>
+            <span aria-hidden="true" className="text-xs font-semibold text-muted">{i + 1}</span>
+            <span aria-hidden="true" className="text-3xl font-bold leading-none">{ARROW[d]}</span>
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+}
+
+/**
+ * Unplugged-style robot grid. Robot, stars and flag are distinct shapes with labels (never colour only).
+ * `pathSteps` draws a dotted path for the first n steps of the program (hint representation).
+ */
+export function RobotGrid({ size, start, program, markers = [], target, pathSteps = 0 }: {
+  size: number; start: RobotCell; program: RobotDir[]; markers?: (RobotCell & { label: number })[]; target?: RobotCell; pathSteps?: number;
+}) {
+  const { t } = useI18n();
+  const C = 60;
+  const W = size * C;
+  const mid = (v: number) => v * C + C / 2;
+  const path: RobotCell[] = [start];
+  for (const d of program.slice(0, pathSteps)) {
+    const last = path[path.length - 1]!;
+    path.push({ x: last.x + MOVE[d].x, y: last.y + MOVE[d].y });
+  }
+  const pos = (c: RobotCell) => ({ x: c.x + 1, y: c.y + 1 });
+  const label = [
+    fmt(t.learn.robot.grid, { size, ...pos(start) }),
+    ...markers.map((m) => fmt(t.learn.robot.star, { label: m.label, ...pos(m) })),
+    ...(target ? [fmt(t.learn.robot.flag, pos(target))] : []),
+    ...(pathSteps > 0 ? [t.learn.robot.path] : []),
+  ].join(' ');
+  const star = (cx: number, cy: number) =>
+    Array.from({ length: 10 }, (_, i) => {
+      const r = i % 2 === 0 ? 24 : 11;
+      const a = (Math.PI / 5) * i - Math.PI / 2;
+      return `${cx + r * Math.cos(a)},${cy + r * Math.sin(a)}`;
+    }).join(' ');
+  return (
+    <svg viewBox={`-4 -4 ${W + 8} ${W + 8}`} role="img" aria-label={label} className="mx-auto h-auto w-full max-w-sm" data-testid="robot-grid">
+      {Array.from({ length: size * size }, (_, i) => (
+        <rect key={i} x={(i % size) * C} y={Math.floor(i / size) * C} width={C} height={C} fill={(Math.floor(i / size) + i) % 2 ? '#F3E7D3' : '#FFFDF8'} stroke="#5B4636" strokeWidth={2} />
+      ))}
+      {pathSteps > 0 && (
+        <polyline points={path.map((c) => `${mid(c.x)},${mid(c.y)}`).join(' ')} fill="none" stroke="#2f5370" strokeWidth={5} strokeDasharray="4 8" strokeLinecap="round" />
+      )}
+      {markers.map((m) => (
+        <g key={m.label} data-marker={m.label}>
+          <polygon points={star(mid(m.x), mid(m.y))} fill="#E9B949" stroke="#5B4636" strokeWidth={2} />
+          <text x={mid(m.x)} y={mid(m.y) + 6} textAnchor="middle" fontSize="18" fontWeight="700" fill="#2E2620">{m.label}</text>
+        </g>
+      ))}
+      {target && (
+        <g data-testid="robot-flag">
+          <line x1={mid(target.x) - 12} y1={mid(target.y) - 20} x2={mid(target.x) - 12} y2={mid(target.y) + 22} stroke="#2E2620" strokeWidth={4} />
+          <polygon points={`${mid(target.x) - 12},${mid(target.y) - 20} ${mid(target.x) + 18},${mid(target.y) - 10} ${mid(target.x) - 12},${mid(target.y)}`} fill="#B5443A" />
+        </g>
+      )}
+      <g data-testid="robot">
+        <rect x={mid(start.x) - 18} y={mid(start.y) - 16} width={36} height={32} rx={8} fill="#5B4636" />
+        <line x1={mid(start.x)} y1={mid(start.y) - 16} x2={mid(start.x)} y2={mid(start.y) - 24} stroke="#5B4636" strokeWidth={3} />
+        <circle cx={mid(start.x) - 7} cy={mid(start.y) - 3} r={4} fill="#fff" />
+        <circle cx={mid(start.x) + 7} cy={mid(start.y) - 3} r={4} fill="#fff" />
+        <rect x={mid(start.x) - 8} y={mid(start.y) + 6} width={16} height={3} rx={1.5} fill="#fff" />
+      </g>
+    </svg>
+  );
+}

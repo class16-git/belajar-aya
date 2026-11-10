@@ -34,7 +34,15 @@ export type Presentation =
    * The story text is rendered from localized templates keyed by `context`, so the server never sends prose
    * that has not been through content review.
    */
-  | { kind: 'bar-model-story'; op: 'add' | 'sub'; context: StoryContext; a: number; b: number; choices: number[] };
+  | { kind: 'bar-model-story'; op: 'add' | 'sub'; context: StoryContext; a: number; b: number; choices: number[] }
+  /** Robotics: follow the arrow program from the robot's cell; which numbered star does it stop on? */
+  | { kind: 'robot-trace'; size: number; start: Cell; program: Dir[]; markers: (Cell & { label: number })[]; choices: number[] }
+  /** Robotics: the program should reach the flag but one step is wrong; which step number? (exactly one fix works) */
+  | { kind: 'robot-debug'; size: number; start: Cell; target: Cell; program: Dir[]; choices: number[] };
+
+export const DIRS = ['up', 'right', 'down', 'left'] as const;
+export type Dir = (typeof DIRS)[number];
+export interface Cell { x: number; y: number }
 
 export const STORY_CONTEXTS = ['apples', 'birds', 'books', 'boats', 'shells', 'kites'] as const;
 export type StoryContext = (typeof STORY_CONTEXTS)[number];
@@ -46,6 +54,12 @@ export interface ItemParams {
   missing?: number;
   /** Second addend (addition items). */
   other?: number;
+  /** Robotics: program length, and the labels/step numbers used for grading and hints. */
+  steps?: number;
+  end?: number;
+  stoppedEarly?: number;
+  mirrored?: number;
+  wrong?: number;
 }
 
 /** Full server-side item, including the answer key. */
@@ -80,7 +94,65 @@ const STAGE: Record<GeneratorId, CpaStage> = {
   'sub-bond': 'pictorial',
   'sub-equation': 'abstract',
   'bar-model-story': 'pictorial',
+  'robot-trace': 'pictorial',
+  'robot-debug': 'abstract',
 };
+
+const STEP: Record<Dir, Cell> = { up: { x: 0, y: -1 }, right: { x: 1, y: 0 }, down: { x: 0, y: 1 }, left: { x: -1, y: 0 } };
+const MIRROR: Record<Dir, Dir> = { up: 'up', down: 'down', left: 'right', right: 'left' };
+const inGrid = (c: Cell, size: number) => c.x >= 0 && c.y >= 0 && c.x < size && c.y < size;
+const same = (a: Cell, b: Cell) => a.x === b.x && a.y === b.y;
+
+/** Every cell the robot visits (start first), or null if it would leave the grid. */
+export function runProgram(start: Cell, program: readonly Dir[], size: number): Cell[] | null {
+  const path = [start];
+  let c = start;
+  for (const d of program) {
+    c = { x: c.x + STEP[d].x, y: c.y + STEP[d].y };
+    if (!inGrid(c, size)) return null;
+    path.push(c);
+  }
+  return path;
+}
+
+/** A random in-grid walk that never revisits a square (keeps programs readable for 6-year-olds). */
+function walk(rng: () => number, size: number, length: number): { start: Cell; program: Dir[] } {
+  for (;;) {
+    const start = { x: randomInt(rng, 0, size - 1), y: randomInt(rng, 0, size - 1) };
+    const program: Dir[] = [];
+    const visited = [start];
+    let c = start;
+    for (let i = 0; i < length; i++) {
+      const options = DIRS.filter((d) => {
+        const n = { x: c.x + STEP[d].x, y: c.y + STEP[d].y };
+        return inGrid(n, size) && !visited.some((v) => same(v, n));
+      });
+      if (options.length === 0) break;
+      const d = options[randomInt(rng, 0, options.length - 1)] as Dir;
+      program.push(d);
+      c = { x: c.x + STEP[d].x, y: c.y + STEP[d].y };
+      visited.push(c);
+    }
+    if (program.length === length && !same(c, start)) return { start, program };
+  }
+}
+
+/** Step numbers (1-based) whose single change makes the program reach `target` without leaving the grid. */
+export function fixingSteps(start: Cell, program: readonly Dir[], target: Cell, size: number): number[] {
+  const out: number[] = [];
+  program.forEach((d, i) => {
+    for (const alt of DIRS) {
+      if (alt === d) continue;
+      const path = runProgram(start, program.map((x, j) => (j === i ? alt : x)), size);
+      if (path && same(path[path.length - 1]!, target)) {
+        out.push(i + 1);
+        return;
+      }
+    }
+  });
+  return out;
+}
+const ROBOT_LEN: readonly [Range, Range, Range] = [[2, 2], [3, 3], [4, 5]];
 
 /** Two addends a, b ≥ min whose total lies in [lo, hi] (hi ≤ 10). */
 function addends(rng: () => number, lo: number, hi: number, min = 1): [number, number] {
@@ -255,6 +327,61 @@ export function generateItem(generator: GeneratorId, difficulty: Difficulty, see
           : { kind: generator, whole, part, result: null, blank: 'result' },
       };
     }
+    case 'robot-trace': {
+      const size = difficulty === 3 ? 5 : 4;
+      const [lo, hi] = band(ROBOT_LEN, difficulty);
+      const { start, program } = walk(rng, size, randomInt(rng, lo, hi));
+      const path = runProgram(start, program, size)!;
+      const end = path[path.length - 1]!;
+      // Distractors model real tracing slips: stopping one step early, and swapping left/right.
+      const early = path[path.length - 2]!;
+      const mirroredPath = runProgram(start, program.map((d) => MIRROR[d]), size);
+      const mirrored = mirroredPath ? mirroredPath[mirroredPath.length - 1]! : null;
+      const cells: { cell: Cell; role: 'end' | 'early' | 'mirrored' | 'other' }[] = [{ cell: end, role: 'end' }];
+      const add = (cell: Cell | null, role: 'early' | 'mirrored' | 'other') => {
+        if (cell && inGrid(cell, size) && !same(cell, start) && !cells.some((c) => same(c.cell, cell))) cells.push({ cell, role });
+      };
+      add(early, 'early');
+      add(mirrored, 'mirrored');
+      while (cells.length < 4) add({ x: randomInt(rng, 0, size - 1), y: randomInt(rng, 0, size - 1) }, 'other');
+      const labelled = shuffle(rng, cells).map((c, i) => ({ ...c, label: i + 1 }));
+      const label = (role: string) => labelled.find((c) => c.role === role)?.label;
+      const answer = label('end')!;
+      const params: ItemParams = { steps: program.length, end: answer };
+      const e = label('early');
+      const m = label('mirrored');
+      if (e !== undefined) params.stoppedEarly = e;
+      if (m !== undefined) params.mirrored = m;
+      return {
+        ...base,
+        params,
+        answer,
+        presentation: { kind: generator, size, start, program, markers: labelled.map((c) => ({ ...c.cell, label: c.label })), choices: [1, 2, 3, 4] },
+      };
+    }
+    case 'robot-debug': {
+      const size = difficulty === 3 ? 5 : 4;
+      const [lo, hi] = band(ROBOT_LEN, difficulty);
+      for (;;) {
+        const { start, program } = walk(rng, size, Math.max(3, randomInt(rng, lo, hi)));
+        const target = runProgram(start, program, size)!.at(-1)!;
+        const k = randomInt(rng, 0, program.length - 1);
+        const alts = DIRS.filter((d) => d !== program[k]);
+        const bug = alts[randomInt(rng, 0, alts.length - 1)] as Dir;
+        const buggy = program.map((d, i) => (i === k ? bug : d));
+        const buggyPath = runProgram(start, buggy, size);
+        if (!buggyPath) continue;
+        // Exactly one step can be fixed to reach the flag, so the question has a single right answer.
+        const fixes = fixingSteps(start, buggy, target, size);
+        if (fixes.length !== 1 || fixes[0] !== k + 1) continue;
+        return {
+          ...base,
+          params: { steps: buggy.length, wrong: k + 1 },
+          answer: k + 1,
+          presentation: { kind: generator, size, start, target, program: buggy, choices: buggy.map((_, i) => i + 1) },
+        };
+      }
+    }
     case 'bar-model-story': {
       // Difficulty 1 keeps to joining stories; 2–3 mix joining and taking away.
       const op: 'add' | 'sub' = difficulty === 1 ? (rng() < 0.7 ? 'add' : 'sub') : rng() < 0.5 ? 'add' : 'sub';
@@ -314,5 +441,14 @@ export function evaluate(p: Presentation): number {
       return p.blank === 'result' ? p.whole - (p.part ?? NaN) : p.whole - (p.result ?? NaN);
     case 'bar-model-story':
       return p.op === 'add' ? p.a + p.b : p.a - p.b;
+    case 'robot-trace': {
+      const path = runProgram(p.start, p.program, p.size);
+      const end = path?.at(-1);
+      return p.markers.find((m) => end && m.x === end.x && m.y === end.y)?.label ?? NaN;
+    }
+    case 'robot-debug': {
+      const fixes = fixingSteps(p.start, p.program, p.target, p.size);
+      return fixes.length === 1 ? fixes[0]! : NaN;
+    }
   }
 }

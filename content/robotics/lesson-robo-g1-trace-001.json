@@ -1,0 +1,82 @@
+{
+  "ageBand": "g1",
+  "domain": "robotics_stem",
+  "framework": "robotics_stem",
+  "copyrightStatus": "original",
+  "namcReferenceStatus": "not_applicable",
+  "arabicPhrases": [],
+  "contentVersion": "1.0.0",
+  "safetyNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "id": "lesson-robo-g1-trace-001",
+  "skillId": "ROBO-G1-DEBUG",
+  "objectiveIds": [
+    "robo.g1.debug-path"
+  ],
+  "reviewFlags": [],
+  "title": {
+    "en": "Where will the robot stop?",
+    "id": "Di mana robot akan berhenti?"
+  },
+  "mode": "interactive",
+  "objective": {
+    "en": "Follow an arrow program step by step and predict where the robot stops.",
+    "id": "Mengikuti program panah langkah demi langkah dan menebak di mana robot berhenti."
+  },
+  "prerequisites": [
+    "MATH-G1-COUNT-20"
+  ],
+  "cpaStage": "pictorial",
+  "materials": [
+    {
+      "en": "Grid with a robot, arrow program and numbered stars",
+      "id": "Petak dengan robot, program panah, dan bintang bernomor"
+    }
+  ],
+  "generator": "robot-trace",
+  "hintLadder": [
+    {
+      "en": "Start at the robot. Follow the arrows in order.",
+      "id": "Mulai dari robot. Ikuti panah secara berurutan."
+    },
+    {
+      "en": "Each arrow moves the robot one square. There are {steps} arrows.",
+      "id": "Setiap panah menggerakkan robot satu kotak. Ada {steps} panah."
+    },
+    {
+      "en": "Put your finger on the robot and move it one square for each arrow.",
+      "id": "Letakkan jarimu di robot dan gerakkan satu kotak untuk setiap panah."
+    },
+    {
+      "en": "Check the last arrow too, and take care not to mix up left and right.",
+      "id": "Periksa juga panah terakhir, dan hati-hati jangan sampai kiri dan kanan tertukar."
+    },
+    {
+      "en": "The robot stops on star {end}. Let’s try a new one.",
+      "id": "Robot berhenti di bintang {end}. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "TRACE_STOPPED_EARLY",
+    "LEFT_RIGHT_CONFUSION"
+  ],
+  "parentNotes": [
+    {
+      "en": "Reading a program one step at a time is called tracing. Programmers do it to check their code.",
+      "id": "Membaca program satu langkah demi satu langkah disebut menelusuri. Programmer melakukannya untuk memeriksa kodenya."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Draw a 4 × 4 grid on paper. Write three arrows; your child moves a toy and predicts where it stops before trying.",
+    "id": "Gambar petak 4 × 4 di kertas. Tulis tiga panah; anak menggerakkan mainan dan menebak di mana berhenti sebelum mencoba."
+  },
+  "review": {
+    "agentChecks": [
+      "schema",
+      "solvability-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ]
+  }
+}

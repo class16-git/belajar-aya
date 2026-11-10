@@ -34,6 +34,7 @@ describe('item generators (property-based)', () => {
         expect(Number.isInteger(answer)).toBe(true);
         expect(answer).toBeGreaterThanOrEqual(0);
         if (g.startsWith('count')) expect(answer).toBeLessThanOrEqual(20);
+        else if (g.startsWith('robot')) expect(answer).toBeGreaterThanOrEqual(1);
         else {
           expect(params.whole).toBeLessThanOrEqual(10);
           expect(params.part).toBeGreaterThanOrEqual(1);
@@ -52,7 +53,7 @@ describe('item generators (property-based)', () => {
         expect(p.choices).toContain(item.answer);
         expect(new Set(p.choices).size).toBe(p.choices.length);
         expect(p.choices.length).toBeGreaterThanOrEqual(2);
-        expect(p.choices.length).toBeLessThanOrEqual(4);
+        expect(p.choices.length).toBeLessThanOrEqual(g === 'robot-debug' ? 5 : 4); // one option per program step
         const max = 'whole' in p ? p.whole : 20;
         for (const c of p.choices) {
           expect(Number.isInteger(c)).toBe(true);
