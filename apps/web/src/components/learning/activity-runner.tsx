@@ -32,12 +32,22 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
   const [summary, setSummary] = useState<Summary | null>(null);
   const [busy, setBusy] = useState(false);
   const [netError, setNetError] = useState(false);
+  const [finishFailed, setFinishFailed] = useState(false);
   const headingRef = useRef<HTMLHeadingElement>(null);
   const feedbackRef = useRef<HTMLDivElement>(null);
 
   const finish = useCallback(async () => {
+    // Only show the completed screen once the server has confirmed the finish (ATL-15). Finishing is idempotent
+    // on the server, so "Try again" simply re-sends it.
     const r = await api<Summary>(`/api/learn/session/${sessionId}/finish`, { method: 'POST' });
-    if (r.ok) setSummary(r.data);
+    if (!r.ok) {
+      setNetError(r.status === 0);
+      setFinishFailed(true);
+      setPhase('error');
+      return;
+    }
+    setFinishFailed(false);
+    setSummary(r.data);
     setPhase('done');
   }, [sessionId]);
 
@@ -77,10 +87,10 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
     return (
       <div role="alert" className="card space-y-4 text-center">
         <p>{netError ? t.app.offline : t.app.error}</p>
-        <button type="button" className="btn-primary btn-xl" onClick={() => void load()}>{t.learn.tryAgain}</button>
+        <button type="button" className="btn-primary btn-xl" onClick={() => void (finishFailed ? finish() : load())}>{t.learn.tryAgain}</button>
       </div>
     );
-  if (phase === 'done') return <SessionSummary summary={summary} />;
+  if (phase === 'done' && summary) return <SessionSummary summary={summary} />;
   if (!act) return null;
 
   const p = act.presentation;
@@ -399,19 +409,17 @@ function Progress({ n, total }: { n: number; total: number }) {
   );
 }
 
-function SessionSummary({ summary }: { summary: Summary | null }) {
+function SessionSummary({ summary }: { summary: Summary }) {
   const { t } = useI18n();
   return (
     <div className="card mx-auto max-w-xl space-y-4 text-center" data-testid="summary">
       <h1 className="h1">{t.learn.summaryTitle}</h1>
       <p className="text-xl">{t.learn.finished}</p>
-      {summary && (
-        <ul className="space-y-1">
-          <li>{fmt(t.learn.summaryWorked, { n: summary.worked })}</li>
-          <li>{fmt(t.learn.summaryOnOwn, { n: summary.onOwn })}</li>
-          <li>{fmt(t.learn.summaryHelp, { n: summary.withHelp })}</li>
-        </ul>
-      )}
+      <ul className="space-y-1">
+        <li>{fmt(t.learn.summaryWorked, { n: summary.worked })}</li>
+        <li>{fmt(t.learn.summaryOnOwn, { n: summary.onOwn })}</li>
+        <li>{fmt(t.learn.summaryHelp, { n: summary.withHelp })}</li>
+      </ul>
       <p className="muted">{t.learn.summaryNext}</p>
       <a href="/learn" className="btn-primary btn-xl">{t.learn.backToChoices}</a>
     </div>

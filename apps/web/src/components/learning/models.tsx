@@ -1,6 +1,7 @@
 'use client';
 import { fmt } from '@/lib/i18n';
 import { useI18n } from '@/lib/i18n/client';
+import { useRef, type KeyboardEvent } from 'react';
 
 /** Scattered dots (pictorial counting). Tap a dot to mark it counted. */
 export function ScatteredDots({
@@ -122,19 +123,58 @@ export function Choices({
   eliminated: Set<number>;
 }) {
   const { t } = useI18n();
+  const refs = useRef<(HTMLButtonElement | null)[]>([]);
+  // WAI-ARIA radio group (ATL-13): one tab stop (the checked option, else the first available one); arrow keys,
+  // Home and End move to and check the next available option, skipping eliminated ones; Space/Enter check.
+  const available = options.map((o) => !disabled && !eliminated.has(o));
+  const selectedIdx = options.findIndex((o) => o === selected);
+  const tabStop = selectedIdx >= 0 && available[selectedIdx] ? selectedIdx : available.indexOf(true);
+  function move(from: number, step: 1 | -1, absolute?: 'first' | 'last') {
+    const n = options.length;
+    let i = absolute === 'first' ? -1 : absolute === 'last' ? n : from;
+    const dir = absolute === 'last' ? -1 : absolute === 'first' ? 1 : step;
+    for (let k = 0; k < n; k++) {
+      i = (i + dir + n) % n;
+      if (available[i]) {
+        onSelect(options[i]!);
+        refs.current[i]?.focus();
+        return;
+      }
+    }
+  }
+  function onKeyDown(e: KeyboardEvent<HTMLButtonElement>, i: number) {
+    const keys: Record<string, () => void> = {
+      ArrowRight: () => move(i, 1),
+      ArrowDown: () => move(i, 1),
+      ArrowLeft: () => move(i, -1),
+      ArrowUp: () => move(i, -1),
+      Home: () => move(i, 1, 'first'),
+      End: () => move(i, -1, 'last'),
+    };
+    const fn = keys[e.key];
+    if (fn) {
+      e.preventDefault();
+      fn();
+    }
+  }
   return (
     <div role="radiogroup" aria-label={t.learn.chooseAnswer} className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-      {options.map((o) => {
+      {options.map((o, i) => {
         const on = selected === o;
         const out = eliminated.has(o);
         return (
           <button
             key={o}
+            ref={(el) => {
+              refs.current[i] = el;
+            }}
             type="button"
             role="radio"
             aria-checked={on}
+            tabIndex={i === tabStop ? 0 : -1}
             disabled={disabled || out}
             onClick={() => onSelect(o)}
+            onKeyDown={(e) => onKeyDown(e, i)}
             className={`flex min-h-16 items-center justify-center rounded-2xl border-4 text-3xl font-bold transition-colors duration-calm focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-focus disabled:cursor-not-allowed ${
               on ? 'border-sky bg-sky-light text-ink' : out ? 'border-sand bg-linen text-muted line-through' : 'border-sand bg-white text-ink hover:border-bark'
             }`}

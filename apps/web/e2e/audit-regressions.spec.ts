@@ -88,3 +88,92 @@ test('ATL-06: the skills API follows canonical grade/age eligibility for every g
   await db.childProfile.update({ where: { id: fam.g1Id }, data: { mode: 'TODDLER_OFFLINE' } });
   expect((await get(fam.g1Id)).mode).toBe('offline');
 });
+
+test('ATL-15: a failed finish is not shown as finished; "Try again" re-sends it and finishing is idempotent', async ({ page, request, baseURL }) => {
+  const fam = await g1WithCountingSecure(request, baseURL!, 'atl15');
+  await signIn(page, fam.email);
+  await enterChildMode(page);
+  await db.learningSession.updateMany({ where: { childId: fam.g1Id, endedAt: null }, data: { endedAt: new Date() } });
+  const s = await db.learningSession.create({ data: { childId: fam.g1Id, targetItems: 1, localDate: new Date().toISOString().slice(0, 10), skillId: 'MATH-G1-BONDS-10', lessonId: 'lesson-g1-bonds-10-002' } });
+  await page.goto(`/learn/session/${s.id}`);
+  await page.getByRole('button', { name: 'Start' }).click();
+  await answer(page, await answerFor(await currentActivityId(page)));
+  let calls = 0;
+  await page.route(`**/api/learn/session/${s.id}/finish`, (route) => { calls++; return route.fulfill({ status: 500, contentType: 'application/json', body: '{"error":"boom"}' }); });
+  await page.getByRole('button', { name: 'Finish' }).click();
+  await expect(page.locator('div.card[role="alert"]')).toContainText('Something went wrong');
+  await expect(page.getByTestId('summary')).toHaveCount(0);
+  expect(calls).toBe(1);
+  // Network abort is also an error, not a completion.
+  await page.unroute(`**/api/learn/session/${s.id}/finish`);
+  await page.route(`**/api/learn/session/${s.id}/finish`, (route) => route.abort());
+  await page.getByRole('button', { name: 'Try again' }).click();
+  await expect(page.locator('div.card[role="alert"]')).toBeVisible();
+  await expect(page.getByTestId('summary')).toHaveCount(0);
+  await page.unroute(`**/api/learn/session/${s.id}/finish`);
+  await page.getByRole('button', { name: 'Try again' }).click();
+  await expect(page.getByTestId('summary')).toContainText('You finished!');
+  await expect(page.getByTestId('summary')).toContainText('1');
+  const ended = (await db.learningSession.findUniqueOrThrow({ where: { id: s.id } })).endedAt;
+  expect(ended).not.toBeNull();
+  const again = await page.request.post(`/api/learn/session/${s.id}/finish`, { headers: { Origin: baseURL! } });
+  expect(again.status()).toBe(200);
+  expect((await db.learningSession.findUniqueOrThrow({ where: { id: s.id } })).endedAt).toEqual(ended);
+});
+
+test('ATL-13: answer choices follow the radio-group keyboard pattern (one tab stop, arrows, Home/End, skip eliminated)', async ({ page, request, baseURL }) => {
+  const fam = await g1WithCountingSecure(request, baseURL!, 'atl13');
+  await signIn(page, fam.email);
+  await enterChildMode(page);
+  await db.learningSession.updateMany({ where: { childId: fam.g1Id, endedAt: null }, data: { endedAt: new Date() } });
+  const s = await db.learningSession.create({ data: { childId: fam.g1Id, targetItems: 3, localDate: new Date().toISOString().slice(0, 10), skillId: 'MATH-G1-BONDS-10', lessonId: 'lesson-g1-bonds-10-002' } });
+  await page.goto(`/learn/session/${s.id}`);
+  await page.getByRole('button', { name: 'Start' }).click();
+  const radios = page.getByRole('radiogroup').getByRole('radio');
+  const n = await radios.count();
+  expect(n).toBeGreaterThan(2);
+  const focusedIndex = () => page.evaluate(() => [...document.querySelectorAll('[role="radiogroup"] [role="radio"]')].indexOf(document.activeElement as Element));
+  const checkedIndex = () => page.evaluate(() => [...document.querySelectorAll('[role="radiogroup"] [role="radio"]')].findIndex((e) => e.getAttribute('aria-checked') === 'true'));
+  // Exactly one tab stop in the group.
+  expect(await page.locator('[role="radiogroup"] [role="radio"][tabindex="0"]').count()).toBe(1);
+  // Tab into the group lands on the first option without checking it.
+  for (let i = 0; i < 40 && (await focusedIndex()) < 0; i++) await page.keyboard.press('Tab');
+  expect(await focusedIndex()).toBe(0);
+  expect(await checkedIndex()).toBe(-1);
+  await page.keyboard.press('ArrowRight');
+  expect([await focusedIndex(), await checkedIndex()]).toEqual([1, 1]);
+  await page.keyboard.press('ArrowDown');
+  expect([await focusedIndex(), await checkedIndex()]).toEqual([2, 2]);
+  await page.keyboard.press('ArrowUp');
+  await page.keyboard.press('ArrowLeft');
+  expect([await focusedIndex(), await checkedIndex()]).toEqual([0, 0]);
+  await page.keyboard.press('ArrowLeft'); // wraps
+  expect([await focusedIndex(), await checkedIndex()]).toEqual([n - 1, n - 1]);
+  await page.keyboard.press('Home');
+  expect(await checkedIndex()).toBe(0);
+  await page.keyboard.press('End');
+  expect(await checkedIndex()).toBe(n - 1);
+  // The tab stop follows the checked option, and Tab leaves the group in one press.
+  expect(await page.locator('[role="radiogroup"] [role="radio"][tabindex="0"]').getAttribute('aria-checked')).toBe('true');
+  await page.keyboard.press('Tab');
+  expect(await focusedIndex()).toBe(-1);
+  // Answer wrongly with the keyboard; eliminated (disabled) options are never reached by arrows.
+  const right = await answerFor(await currentActivityId(page));
+  const values = await radios.allTextContents();
+  const wrongIdx = values.findIndex((v) => Number(v) !== right);
+  await radios.nth(wrongIdx).focus();
+  await page.keyboard.press('Space');
+  await page.getByRole('button', { name: 'Check' }).click();
+  await expect(page.getByText('Not yet. Let’s look again.')).toBeVisible();
+  await page.getByRole('button', { name: 'Try again' }).click();
+  const disabled = await page.evaluate(() => [...document.querySelectorAll('[role="radiogroup"] [role="radio"]')].map((e) => (e as HTMLButtonElement).disabled));
+  expect(disabled.filter(Boolean)).toHaveLength(1);
+  {
+    const start = disabled.indexOf(false);
+    await radios.nth(start).focus();
+    for (let k = 0; k < n * 2; k++) {
+      await page.keyboard.press('ArrowRight');
+      expect(disabled[await focusedIndex()]).toBe(false);
+    }
+  }
+});
