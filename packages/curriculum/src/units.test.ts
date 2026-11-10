@@ -85,6 +85,11 @@ describe('structure, prerequisites, duplicates, safety, religion', () => {
     const v = { ...u, reviewStatus: 'reviewed' as const, review: { agentChecks: [], reviewedBy: 'owner', reviewerRole: 'parent' as const, reviewedAt: '2026-11-10' }, religiousReview: { doctrinalSchool: null, fiqhSchool: null, arabicSource: null, edition: null, pageOrSection: null, translationReviewer: null, scholarReviewer: null, reviewedAt: null, approvalStatus: 'unverified' as const, notes: [] } };
     expect(isExpansionVisible(v as Unit, 'reviewed')).toBe(false);
   });
+  it('a rejected item is never visible, even in preview', () => {
+    const u = validateExpansion({ units: [refUnit()], readings: [] }).content.units[0]!;
+    expect(isExpansionVisible(u, 'agent_reviewed')).toBe(true);
+    expect(isExpansionVisible({ ...u, review: { ...u.review, rejectedReason: 'Wrong level' } }, 'agent_reviewed')).toBe(false);
+  });
   it('AI-drafted content cannot be marked reviewed without a human record', () => {
     const u = refUnit();
     u.reviewStatus = 'published';

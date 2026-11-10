@@ -437,6 +437,7 @@ export function validateExpansion(raw: { units: unknown[]; readings: unknown[] }
 
 /** Production visibility: human review recorded, no open factual claims, and (Islamic/Arabic) an approved scholar review. */
 export function isExpansionVisible(x: Unit | Reading, minReview: ReviewStatus): boolean {
+  if (x.review.rejectedReason) return false; // a rejected item is never shown, in any environment
   if (rank(x.reviewStatus) < rank(minReview)) return false;
   if (rank(minReview) >= rank('reviewed')) {
     if (!(x.review.reviewedBy && x.review.reviewedAt)) return false;
