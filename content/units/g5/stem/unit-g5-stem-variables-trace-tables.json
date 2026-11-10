@@ -1,0 +1,438 @@
+{
+  "id": "unit-g5-stem-variables-trace-tables",
+  "version": "1.0.0",
+  "level": "g5",
+  "framework": "stem",
+  "strand": "programming",
+  "title": {
+    "en": "Variables: boxes that remember",
+    "id": "Variabel: kotak yang mengingat"
+  },
+  "prerequisites": [
+    "unit-g4-stem-if-then-else"
+  ],
+  "objective": {
+    "en": "Use variables to store and change values in a program, trace a program's variables step by step in a table, and fix a bug caused by forgetting to reset a variable.",
+    "id": "Menggunakan variabel untuk menyimpan dan mengubah nilai dalam program, menelusuri variabel program langkah demi langkah dalam tabel, dan memperbaiki bug karena lupa mengatur ulang variabel."
+  },
+  "rationale": {
+    "en": "A variable is a named place that holds one value at a time, which a program can set, change and read. Tracing values on paper, with real labelled cups, is how programmers predict what code will do in any block tool or language.",
+    "id": "Variabel adalah tempat bernama yang menyimpan satu nilai setiap kali, yang bisa diatur, diubah, dan dibaca program. Menelusuri nilai di kertas, dengan gelas berlabel sungguhan, adalah cara pemrogram menebak apa yang dilakukan kode di alat blok atau bahasa apa pun."
+  },
+  "outcomes": [
+    {
+      "en": "Traces a program of up to eight steps and states each variable's final value.",
+      "id": "Menelusuri program sampai delapan langkah dan menyebut nilai akhir setiap variabel."
+    },
+    {
+      "en": "Explains and fixes a missing reset bug.",
+      "id": "Menjelaskan dan memperbaiki bug karena tidak diatur ulang."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can fill in a trace table line by line.",
+      "id": "Aku bisa mengisi tabel penelusuran baris demi baris."
+    },
+    {
+      "en": "I set my variables at the start so the program works every time.",
+      "id": "Aku mengatur variabel di awal supaya program bekerja setiap kali."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Make the variable physical: a cup labelled 'water' holding counters or folded paper squares. 'Set' empties the cup and puts in a new amount; 'change by' adds or takes away.",
+      "id": "Buat variabel menjadi nyata: gelas berlabel 'air' berisi potongan kertas terlipat. 'Atur' mengosongkan gelas dan mengisi jumlah baru; 'ubah sebesar' menambah atau mengambil."
+    },
+    {
+      "en": "Ask for a prediction of the final value before tracing, and write it at the top of the trace table.",
+      "id": "Minta tebakan nilai akhir sebelum menelusuri, dan tulis di atas tabel penelusuran."
+    },
+    {
+      "en": "In free block tools, variables usually have 'set' and 'change by' blocks; the cup game is the same idea.",
+      "id": "Di alat blok gratis, variabel biasanya punya blok 'atur' dan 'ubah sebesar'; permainan gelas adalah gagasan yang sama."
+    },
+    {
+      "en": "Reflect: 'Where did your prediction go wrong? Which line surprised you?'",
+      "id": "Renungkan: 'Di mana tebakanmu meleset? Baris mana yang mengejutkan?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Predict the final value. Then run the program one line at a time, changing the cup and writing the value in the table.",
+      "id": "Tebak nilai akhirnya. Lalu jalankan program satu baris demi satu baris, mengubah isi gelas dan menulis nilainya di tabel."
+    },
+    {
+      "en": "Run the program twice. Does it give the same answer both times? If not, find the bug.",
+      "id": "Jalankan program dua kali. Apakah hasilnya sama kedua kalinya? Jika tidak, cari bugnya."
+    },
+    {
+      "en": "Write your own program with a variable and trade it with a family member to trace.",
+      "id": "Tulis programmu sendiri dengan variabel dan tukar dengan anggota keluarga untuk ditelusuri."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Act out programs with labelled cups and folded paper squares as values.",
+        "id": "Peragakan program dengan gelas berlabel dan potongan kertas terlipat sebagai nilai."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Fill in a trace table: one row per line of code, one column per variable.",
+        "id": "Isi tabel penelusuran: satu baris per baris kode, satu kolom per variabel."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Read programs as text, for example: set score to 5; change score by 3; change score by -2.",
+        "id": "Baca program sebagai teks, misalnya: atur skor menjadi 5; ubah skor sebesar 3; ubah skor sebesar -2."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Three paper cups labelled with variable names (water, score, total)",
+      "id": "Tiga gelas kertas berlabel nama variabel (air, skor, total)"
+    },
+    {
+      "en": "About 30 folded paper squares as values",
+      "id": "Sekitar 30 potongan kertas terlipat sebagai nilai"
+    },
+    {
+      "en": "Program cards written by the adult, and squared paper for trace tables",
+      "id": "Kartu program yang ditulis orang dewasa, dan kertas berpetak untuk tabel penelusuran"
+    },
+    {
+      "en": "Optional: a computer with any free block-based coding tool, used with an adult",
+      "id": "Pilihan: komputer dengan alat pemrograman blok gratis apa pun, dipakai bersama orang dewasa"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write three short programs on cards (see the guided examples) and draw empty trace tables.",
+      "id": "Tulis tiga program pendek di kartu (lihat contoh terbimbing) dan gambar tabel penelusuran kosong."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Plant-watering robot: set water to 0; repeat 3 times [change water by 2]; if water is more than 5 then say 'enough'. Trace: 0, 2, 4, 6. Final water = 6, and 6 is more than 5, so it says 'enough'.",
+      "id": "Robot penyiram tanaman: atur air menjadi 0; ulangi 3 kali [ubah air sebesar 2]; jika air lebih dari 5 maka katakan 'cukup'. Telusuri: 0, 2, 4, 6. Air akhir = 6, dan 6 lebih dari 5, jadi robot berkata 'cukup'."
+    },
+    {
+      "en": "Score: set score to 5; change score by 3; change score by -2. Trace: 5, 8, 6. A common slip is 10 (adding 5 + 3 + 2 and ignoring the minus).",
+      "id": "Skor: atur skor menjadi 5; ubah skor sebesar 3; ubah skor sebesar -2. Telusuri: 5, 8, 6. Kesalahan yang sering terjadi adalah 10 (menjumlahkan 5 + 3 + 2 dan mengabaikan tanda minus)."
+    },
+    {
+      "en": "The reset bug: a step counter program has only 'change steps by 1' each time a step is taken, and no 'set steps to 0' at the start. Run 1 finishes at 4; run 2 starts at 4 and finishes at 8. Fix: add 'set steps to 0' as the first line.",
+      "id": "Bug atur ulang: program penghitung langkah hanya punya 'ubah langkah sebesar 1' setiap kali melangkah, tanpa 'atur langkah menjadi 0' di awal. Jalan pertama berakhir di 4; jalan kedua mulai dari 4 dan berakhir di 8. Perbaikan: tambahkan 'atur langkah menjadi 0' di baris pertama."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Trace three adult-written programs with cups, then with a table only.",
+      "id": "Telusuri tiga program yang ditulis orang dewasa dengan gelas, lalu hanya dengan tabel."
+    },
+    {
+      "en": "Write a program for a 'piggy bank robot' with a variable called savings, predict its final value, then trace it with a family member and fix any mismatch.",
+      "id": "Tulis program untuk 'robot celengan' dengan variabel bernama tabungan, tebak nilai akhirnya, lalu telusuri bersama anggota keluarga dan perbaiki ketidakcocokan."
+    },
+    {
+      "en": "Optional on a computer: build the plant-watering program in a free block tool and check that the value shown matches your trace.",
+      "id": "Pilihan di komputer: buat program penyiram tanaman di alat blok gratis dan periksa apakah nilai yang ditampilkan cocok dengan penelusuranmu."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "set score to 5; change score by 3; change score by -2. What is score at the end?",
+        "id": "atur skor menjadi 5; ubah skor sebesar 3; ubah skor sebesar -2. Berapa skor di akhir?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "10",
+          "-2"
+        ],
+        "id": [
+          "6",
+          "10",
+          "-2"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Trace: 5, then 5 + 3 = 8, then 8 - 2 = 6.",
+        "id": "Telusuri: 5, lalu 5 + 3 = 8, lalu 8 - 2 = 6."
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_NEGATIVE_CHANGE",
+        "2": "KEEPS_LAST_CHANGE"
+      },
+      "check": {
+        "expression": "5 + 3 - 2",
+        "result": "6"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "set x to 4; set x to x × 2. What is x now?",
+        "id": "atur x menjadi 4; atur x menjadi x × 2. Berapa x sekarang?"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "4",
+          "2"
+        ],
+        "id": [
+          "8",
+          "4",
+          "2"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The new value uses the old one: 4 × 2 = 8. A variable holds one value at a time.",
+        "id": "Nilai baru memakai yang lama: 4 × 2 = 8. Variabel menyimpan satu nilai setiap kali."
+      },
+      "distractorMisconceptions": {
+        "1": "VARIABLE_KEEPS_FIRST_VALUE",
+        "2": "KEEPS_LAST_CHANGE"
+      },
+      "check": {
+        "expression": "4 × 2",
+        "result": "8"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "set total to 0; repeat 4 times [change total by 3]. What is total at the end?",
+        "id": "atur total menjadi 0; ulangi 4 kali [ubah total sebesar 3]. Berapa total di akhir?"
+      },
+      "choices": {
+        "en": [
+          "12",
+          "7",
+          "3"
+        ],
+        "id": [
+          "12",
+          "7",
+          "3"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each repeat adds 3: 4 × 3 = 12.",
+        "id": "Setiap ulangan menambah 3: 4 × 3 = 12."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_COUNT_AND_STEP",
+        "2": "KEEPS_LAST_CHANGE"
+      },
+      "check": {
+        "expression": "4 × 3",
+        "result": "12"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A step counter shows 8 on its second run instead of 4. What is the best fix?",
+        "id": "Penghitung langkah menunjukkan 8 pada jalan keduanya, bukan 4. Apa perbaikan terbaik?"
+      },
+      "choices": {
+        "en": [
+          "Add 'set steps to zero' at the start",
+          "Change by 1 becomes change by 2",
+          "Run it only once"
+        ],
+        "id": [
+          "Tambahkan 'atur langkah menjadi nol' di awal",
+          "Ubah sebesar 1 menjadi ubah sebesar 2",
+          "Jalankan sekali saja"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Without a reset, the variable keeps its old value from the last run.",
+        "id": "Tanpa diatur ulang, variabel menyimpan nilai lamanya dari jalan sebelumnya."
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_RESET",
+        "2": "FORGETS_RESET"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "What does a variable hold?",
+        "id": "Apa yang disimpan sebuah variabel?"
+      },
+      "choices": {
+        "en": [
+          "One value at a time, which can change",
+          "Every value it has ever had",
+          "Only numbers that never change"
+        ],
+        "id": [
+          "Satu nilai setiap kali, yang bisa berubah",
+          "Semua nilai yang pernah dimilikinya",
+          "Hanya angka yang tidak pernah berubah"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Setting a new value replaces the old one.",
+        "id": "Mengatur nilai baru menggantikan yang lama."
+      },
+      "distractorMisconceptions": {
+        "1": "VARIABLE_HOLDS_MANY",
+        "2": "VARIABLE_KEEPS_FIRST_VALUE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "IGNORES_NEGATIVE_CHANGE",
+      "description": {
+        "en": "Treats 'change by -2' as adding 2.",
+        "id": "Menganggap 'ubah sebesar -2' sebagai menambah 2."
+      },
+      "remediation": {
+        "en": "Use the cup: 'change by -2' means take two squares out. Do it with your hands.",
+        "id": "Gunakan gelas: 'ubah sebesar -2' berarti mengambil dua potongan. Lakukan dengan tangan."
+      }
+    },
+    {
+      "code": "KEEPS_LAST_CHANGE",
+      "description": {
+        "en": "Reports the last number in the program instead of the variable's value.",
+        "id": "Melaporkan angka terakhir di program, bukan nilai variabel."
+      },
+      "remediation": {
+        "en": "Write the variable's value in the table after every line before reading the next line.",
+        "id": "Tulis nilai variabel di tabel setelah setiap baris sebelum membaca baris berikutnya."
+      }
+    },
+    {
+      "code": "VARIABLE_KEEPS_FIRST_VALUE",
+      "description": {
+        "en": "Thinks the first value set stays, even after a new set.",
+        "id": "Mengira nilai pertama tetap ada, walaupun sudah diatur ulang."
+      },
+      "remediation": {
+        "en": "Empty the cup completely for every 'set' line, then put in the new amount.",
+        "id": "Kosongkan gelas sepenuhnya untuk setiap baris 'atur', lalu isi jumlah baru."
+      }
+    },
+    {
+      "code": "ADDS_COUNT_AND_STEP",
+      "description": {
+        "en": "Adds the repeat count and the change instead of multiplying.",
+        "id": "Menjumlahkan jumlah ulangan dan perubahan, bukan mengalikan."
+      },
+      "remediation": {
+        "en": "Unroll the loop into four 'change total by 3' lines and trace each.",
+        "id": "Uraikan perulangan menjadi empat baris 'ubah total sebesar 3' dan telusuri masing-masing."
+      }
+    },
+    {
+      "code": "FORGETS_RESET",
+      "description": {
+        "en": "Does not realise variables keep their value between runs.",
+        "id": "Tidak menyadari variabel menyimpan nilainya di antara jalan program."
+      },
+      "remediation": {
+        "en": "Run the cup program twice without emptying it, then again with a 'set to 0' card first; compare.",
+        "id": "Jalankan program gelas dua kali tanpa mengosongkannya, lalu lagi dengan kartu 'atur menjadi 0' di awal; bandingkan."
+      }
+    },
+    {
+      "code": "VARIABLE_HOLDS_MANY",
+      "description": {
+        "en": "Thinks a variable is a list that remembers all past values.",
+        "id": "Mengira variabel adalah daftar yang mengingat semua nilai lama."
+      },
+      "remediation": {
+        "en": "Show that the cup has only one amount in it now; the trace table, not the variable, keeps the history.",
+        "id": "Tunjukkan bahwa gelas sekarang hanya berisi satu jumlah; tabel penelusuran, bukan variabel, yang menyimpan riwayat."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Use two variables that affect each other: set a to 3; set b to a + 4; change a by 1. Is b updated automatically? Trace and discuss.",
+      "id": "Gunakan dua variabel yang saling memengaruhi: atur a menjadi 3; atur b menjadi a + 4; ubah a sebesar 1. Apakah b ikut berubah? Telusuri dan diskusikan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use large-print program cards and allow the child to say values aloud while an adult writes the trace table.",
+      "id": "Gunakan kartu program berhuruf besar dan izinkan anak mengucapkan nilai sementara orang dewasa menulis tabel penelusuran."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Paper-based activity with no physical hazards; if a computer is used, an adult sets it up and screen time stays short.",
+        "id": "Kegiatan berbasis kertas tanpa bahaya fisik; jika memakai komputer, orang dewasa menyiapkannya dan waktu layar tetap singkat."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "assessment",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child traces three different programs correctly and fixes a reset bug, on two different days.",
+      "id": "Dikuasai jika anak menelusuri tiga program berbeda dengan benar dan memperbaiki bug atur ulang, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

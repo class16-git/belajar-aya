@@ -68,15 +68,15 @@ for (const vp of [{ name: 'mobile', width: 390, height: 844 }, { name: 'tablet',
 
     // Filters are server-side GET params.
     const level = (await units.first().getAttribute('data-level'))!;
-    await page.getByLabel('Level').selectOption(level);
-    await page.getByLabel('Show').selectOption('units');
+    await page.getByRole('combobox', { name: 'Level' }).selectOption(level);
+    await page.getByRole('combobox', { name: 'Show' }).selectOption('units');
     await page.getByRole('button', { name: 'Apply' }).click();
     await page.waitForURL(/kind=units/);
     expect(new Set(await page.locator('[data-unit]').evaluateAll((els) => els.map((e) => e.getAttribute('data-level'))))).toEqual(new Set([level]));
     await expect(page.getByTestId('reading-list')).toHaveCount(0);
     await page.goto('/units?status=published&kind=bogus&level=nope');
-    await expect(page.getByLabel('Status')).toHaveValue('published');
-    await expect(page.getByLabel('Show')).toHaveValue('all'); // unknown values fall back safely
+    await expect(page.getByRole('combobox', { name: 'Status' })).toHaveValue('published');
+    await expect(page.getByRole('combobox', { name: 'Show' })).toHaveValue('all'); // unknown values fall back safely
 
     // Unit guide: every section, the answer key, hazard chips, provenance.
     await page.goto('/units');

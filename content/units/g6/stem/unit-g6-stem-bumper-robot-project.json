@@ -1,0 +1,484 @@
+{
+  "id": "unit-g6-stem-bumper-robot-project",
+  "version": "1.0.0",
+  "level": "g6",
+  "framework": "stem",
+  "strand": "robotics",
+  "title": {
+    "en": "Robot project: the bumper rover",
+    "id": "Proyek robot: penjelajah bemper"
+  },
+  "prerequisites": [
+    "unit-g5-stem-led-circuit-switch",
+    "unit-g6-stem-functions-parameters"
+  ],
+  "objective": {
+    "en": "Design, build and improve a cardboard rover with a foil bumper switch that lights an LED when it touches an obstacle, write its sense-think-act program as a flowchart using functions, and reflect on the design process.",
+    "id": "Merancang, membuat, dan memperbaiki penjelajah kardus dengan saklar bemper foil yang menyalakan LED saat menyentuh rintangan, menulis program merasakan-berpikir-bertindak sebagai diagram alir dengan fungsi, dan merenungkan proses perancangan."
+  },
+  "rationale": {
+    "en": "A robot combines a body, sensors, a controller and outputs. This capstone project joins the circuit skills of Grade 5 with conditionals and functions: the bumper is a real touch sensor, a family member acts as the motors following the program, and repeated reliability tests drive design iteration.",
+    "id": "Robot menggabungkan badan, sensor, pengendali, dan keluaran. Proyek puncak ini menyatukan keterampilan rangkaian Kelas 5 dengan kondisional dan fungsi: bemper adalah sensor sentuh nyata, anggota keluarga berperan sebagai motor yang mengikuti program, dan uji keandalan berulang mendorong perbaikan rancangan."
+  },
+  "outcomes": [
+    {
+      "en": "Builds a bumper sensor that lights an LED reliably and improves it based on test data.",
+      "id": "Membuat sensor bemper yang menyalakan LED dengan andal dan memperbaikinya berdasarkan data uji."
+    },
+    {
+      "en": "Writes a flowchart program using a condition and functions, and reflects on the design process in a journal.",
+      "id": "Menulis program diagram alir memakai kondisi dan fungsi, dan merenungkan proses rancangan di jurnal."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "My bumper lights the LED every time it touches a wall, and stays off the rest of the time.",
+      "id": "Bemperku menyalakan LED setiap kali menyentuh dinding, dan mati selebihnya."
+    },
+    {
+      "en": "I can explain my robot as sense, think and act, and say what I would change next.",
+      "id": "Aku bisa menjelaskan robotku sebagai merasakan, berpikir, dan bertindak, serta mengatakan apa yang akan kuubah berikutnya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Plan the project over two or three sessions: design and build, test and improve, program and reflect.",
+      "id": "Rencanakan proyek dalam dua atau tiga sesi: rancang dan bangun, uji dan perbaiki, program dan renungkan."
+    },
+    {
+      "en": "Stay present whenever the circuit is connected. Reuse the Grade 5 circuit: sealed 2 AA holder, resistor and LED.",
+      "id": "Hadir setiap kali rangkaian tersambung. Gunakan kembali rangkaian Kelas 5: tempat 2 baterai AA tertutup, resistor, dan LED."
+    },
+    {
+      "en": "Insist on predictions before every test and a written result after it: 'out of 10 bumps, how many lit the LED? Did it ever light without a bump?'",
+      "id": "Wajibkan tebakan sebelum setiap uji dan hasil tertulis setelahnya: 'dari 10 benturan, berapa yang menyalakan LED? Apakah pernah menyala tanpa benturan?'"
+    },
+    {
+      "en": "Close with a reflection conversation: what worked, what failed, what the evidence showed, and what version 3 would change.",
+      "id": "Tutup dengan percakapan refleksi: apa yang berhasil, apa yang gagal, apa yang ditunjukkan bukti, dan apa yang akan diubah di versi 3."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Sketch your rover and bumper in your design journal, with labels.",
+      "id": "Gambar penjelajah dan bempermu di jurnal rancangan, dengan label."
+    },
+    {
+      "en": "Build, then test 10 bumps. Record hits, misses and false alarms.",
+      "id": "Buat, lalu uji 10 benturan. Catat yang berhasil, yang gagal, dan alarm palsu."
+    },
+    {
+      "en": "Improve one thing at a time and test again. Write your program as a flowchart and run it with a human 'motor'.",
+      "id": "Perbaiki satu hal setiap kali dan uji lagi. Tulis programmu sebagai diagram alir dan jalankan dengan 'motor' manusia."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build the rover and bumper circuit and push it gently into a wall of books.",
+        "id": "Buat penjelajah dan rangkaian bemper lalu dorong pelan ke dinding buku."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a flowchart: move forward, then a diamond 'bumper pressed?', yes to back_up() and turn_right(), no back to move forward.",
+        "id": "Gambar diagram alir: maju, lalu belah ketupat 'bemper tertekan?', ya ke mundur() dan belok_kanan(), tidak kembali ke maju."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the program as text with functions: repeat forever [if bumper pressed then back_up(1), turn_right() else forward(1)].",
+        "id": "Tulis program sebagai teks dengan fungsi: ulangi selamanya [jika bemper tertekan maka mundur(1), belok_kanan() selain itu maju(1)]."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A shoe box or similar cardboard box as the rover body, and 4 toilet-roll tubes as rollers",
+      "id": "Kotak sepatu atau kardus serupa sebagai badan penjelajah, dan 4 tabung tisu toilet sebagai roda gelinding"
+    },
+    {
+      "en": "The Grade 5 circuit parts: a sealed holder for 2 AA batteries with switch, 2 AA batteries, an LED, a resistor (about 100 to 220 ohms) and 4 crocodile-clip leads",
+      "id": "Komponen rangkaian Kelas 5: tempat tertutup untuk 2 baterai AA dengan saklar, 2 baterai AA, LED, resistor (sekitar 100 sampai 220 ohm), dan 4 kabel penjepit buaya"
+    },
+    {
+      "en": "Aluminium foil, thin card, a strip of thick card for the bumper, sticky tape",
+      "id": "Aluminium foil, karton tipis, potongan karton tebal untuk bemper, selotip"
+    },
+    {
+      "en": "Scissors, used with an adult nearby (the adult cuts thick cardboard)",
+      "id": "Gunting, dipakai dengan orang dewasa di dekatnya (orang dewasa memotong kardus tebal)"
+    },
+    {
+      "en": "A 'wall' of stacked books and a design journal",
+      "id": "'Dinding' dari tumpukan buku dan jurnal rancangan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult cuts the thick cardboard, checks the battery holder is sealed and inserts the batteries with the holder switch off.",
+      "id": "Orang dewasa memotong kardus tebal, memeriksa tempat baterai tertutup, dan memasang baterai dengan saklar tempat baterai mati."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Bumper version 1: a strip of card hinged at the front of the box, with a foil pad on the back of the strip and another foil pad on the box. Clip one pad into the LED loop on each side. Pushing into the books presses the pads together and the LED lights. Test: 7 of 10 bumps lit the LED, 3 missed.",
+      "id": "Bemper versi 1: potongan karton berengsel di depan kotak, dengan bantalan foil di belakang potongan dan bantalan foil lain di kotak. Jepit masing-masing bantalan ke jalur LED. Mendorong ke tumpukan buku menekan kedua bantalan dan LED menyala. Uji: 7 dari 10 benturan menyalakan LED, 3 gagal."
+    },
+    {
+      "en": "Version 2: the journal shows misses happened on angled bumps, so the foil pads are made wider. New problem: the LED is on all the time because the pads now touch at rest. Fix: a folded-card spring holds a 5 mm gap. Test: 10 of 10, no false alarms.",
+      "id": "Versi 2: jurnal menunjukkan kegagalan terjadi pada benturan miring, jadi bantalan foil dilebarkan. Masalah baru: LED menyala terus karena bantalan kini bersentuhan saat diam. Perbaikan: pegas karton terlipat menjaga celah 5 mm. Uji: 10 dari 10, tanpa alarm palsu."
+    },
+    {
+      "en": "Program run: Kakak writes forward(1) and the condition, with functions back_up(1) and turn_right(). Adik is the motor: pushes the rover one tube length per forward(1), watches the LED, and follows the yes branch when it lights. The rover finds its way along the book wall.",
+      "id": "Menjalankan program: Kakak menulis maju(1) dan kondisinya, dengan fungsi mundur(1) dan belok_kanan(). Adik menjadi motor: mendorong penjelajah sejauh satu tabung untuk setiap maju(1), mengamati LED, dan mengikuti cabang ya saat menyala. Penjelajah menemukan jalannya menyusuri dinding buku."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Build bumper version 1, predict its score out of 10, test and record hits, misses and false alarms.",
+      "id": "Buat bemper versi 1, tebak skornya dari 10, uji, dan catat yang berhasil, yang gagal, dan alarm palsu."
+    },
+    {
+      "en": "Make at least two improvements, changing one thing each time, and test 10 bumps after each.",
+      "id": "Lakukan paling sedikit dua perbaikan, mengubah satu hal setiap kali, dan uji 10 benturan setelah masing-masing."
+    },
+    {
+      "en": "Write the flowchart program with two functions, run it with a family member as the motor through a simple book maze, and write a half-page reflection: problem, evidence, changes, next steps.",
+      "id": "Tulis program diagram alir dengan dua fungsi, jalankan dengan anggota keluarga sebagai motor melalui labirin buku sederhana, dan tulis refleksi setengah halaman: masalah, bukti, perubahan, langkah berikutnya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "In the sense-think-act model, what is the bumper switch?",
+        "id": "Dalam model merasakan-berpikir-bertindak, saklar bemper itu apa?"
+      },
+      "choices": {
+        "en": [
+          "The sensor (sense)",
+          "The decision (think)",
+          "The motor (act)"
+        ],
+        "id": [
+          "Sensor (merasakan)",
+          "Keputusan (berpikir)",
+          "Motor (bertindak)"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The bumper detects touching an obstacle; the program decides and the motor acts.",
+        "id": "Bemper mendeteksi sentuhan dengan rintangan; program memutuskan dan motor bertindak."
+      },
+      "distractorMisconceptions": {
+        "1": "SENSOR_DECIDES",
+        "2": "OUTPUT_IS_SENSOR"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "In 10 test bumps the LED lit 7 times. How many bumps were missed?",
+        "id": "Dalam 10 benturan uji, LED menyala 7 kali. Berapa benturan yang gagal?"
+      },
+      "choices": {
+        "en": [
+          "3 bumps",
+          "17 bumps",
+          "7 bumps"
+        ],
+        "id": [
+          "3 benturan",
+          "17 benturan",
+          "7 benturan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Missed = total - hits: 10 - 7 = 3.",
+        "id": "Gagal = total - berhasil: 10 - 7 = 3."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "CONFUSES_HITS_AND_MISSES"
+      },
+      "check": {
+        "expression": "10 - 7",
+        "result": "3"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "After making the foil pads wider, the LED stays on even when nothing is touching the bumper. What is the most likely cause?",
+        "id": "Setelah bantalan foil dilebarkan, LED tetap menyala walaupun tidak ada yang menyentuh bemper. Apa penyebab yang paling mungkin?"
+      },
+      "choices": {
+        "en": [
+          "The pads touch at rest, so the switch is always closed",
+          "The batteries are too new",
+          "The LED is the wrong way round"
+        ],
+        "id": [
+          "Bantalan bersentuhan saat diam, jadi saklar selalu tertutup",
+          "Baterainya terlalu baru",
+          "LED terbalik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "An always-closed switch keeps the loop complete; a reversed LED would stay dark, not on.",
+        "id": "Saklar yang selalu tertutup membuat jalur selalu lengkap; LED terbalik akan tetap gelap, bukan menyala."
+      },
+      "distractorMisconceptions": {
+        "1": "ALWAYS_BLAME_BATTERY",
+        "2": "REVERSED_LED_STAYS_ON"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Program: repeat forever [if bumper pressed then back_up(1), turn_right() else forward(1)]. The rover is in open space. What does it do?",
+        "id": "Program: ulangi selamanya [jika bemper tertekan maka mundur(1), belok_kanan() selain itu maju(1)]. Penjelajah berada di ruang terbuka. Apa yang dilakukannya?"
+      },
+      "choices": {
+        "en": [
+          "Keeps moving forward",
+          "Backs up and turns",
+          "Stops"
+        ],
+        "id": [
+          "Terus maju",
+          "Mundur dan berbelok",
+          "Berhenti"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Nothing presses the bumper, so the else branch runs each time.",
+        "id": "Tidak ada yang menekan bemper, jadi cabang selain itu berjalan setiap kali."
+      },
+      "distractorMisconceptions": {
+        "1": "SWAPS_BRANCHES",
+        "2": "ELSE_MEANS_STOP"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Your rover misses some bumps. What is the best way to improve it?",
+        "id": "Penjelajahmu gagal mendeteksi beberapa benturan. Apa cara terbaik memperbaikinya?"
+      },
+      "choices": {
+        "en": [
+          "Change one thing, test ten bumps again and compare",
+          "Change everything at once",
+          "Stop testing and trust it"
+        ],
+        "id": [
+          "Ubah satu hal, uji sepuluh benturan lagi dan bandingkan",
+          "Ubah semuanya sekaligus",
+          "Berhenti menguji dan percaya saja"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Changing one thing at a time shows which change helped.",
+        "id": "Mengubah satu hal setiap kali menunjukkan perubahan mana yang membantu."
+      },
+      "distractorMisconceptions": {
+        "1": "CHANGE_EVERYTHING_AT_ONCE",
+        "2": "CHANGE_EVERYTHING_AT_ONCE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SENSOR_DECIDES",
+      "description": {
+        "en": "Thinks the sensor itself chooses what the robot does.",
+        "id": "Mengira sensor sendiri yang memilih apa yang dilakukan robot."
+      },
+      "remediation": {
+        "en": "Keep the bumper the same but swap the program's yes branch to 'turn_left()'; the robot's behaviour changes, the sensor did not.",
+        "id": "Pertahankan bemper yang sama tetapi ganti cabang ya program menjadi 'belok_kiri()'; perilaku robot berubah, sensornya tidak."
+      }
+    },
+    {
+      "code": "OUTPUT_IS_SENSOR",
+      "description": {
+        "en": "Mixes up outputs (motor, LED) with inputs (sensor).",
+        "id": "Tertukar antara keluaran (motor, LED) dan masukan (sensor)."
+      },
+      "remediation": {
+        "en": "Label every part of the rover with an input or output sticker and explain each label aloud.",
+        "id": "Beri label setiap bagian penjelajah dengan stiker masukan atau keluaran dan jelaskan setiap label dengan suara."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds hits and the total instead of subtracting.",
+        "id": "Menjumlahkan yang berhasil dan total, bukan mengurangkan."
+      },
+      "remediation": {
+        "en": "Draw ten boxes, tick the 7 hits, and count the empty boxes.",
+        "id": "Gambar sepuluh kotak, centang 7 yang berhasil, dan hitung kotak kosong."
+      }
+    },
+    {
+      "code": "CONFUSES_HITS_AND_MISSES",
+      "description": {
+        "en": "Reports the hits when asked for the misses.",
+        "id": "Melaporkan yang berhasil saat ditanya yang gagal."
+      },
+      "remediation": {
+        "en": "Use two columns in the journal headed 'lit' and 'missed' and fill both after every test.",
+        "id": "Gunakan dua kolom di jurnal berjudul 'menyala' dan 'gagal' dan isi keduanya setelah setiap uji."
+      }
+    },
+    {
+      "code": "ALWAYS_BLAME_BATTERY",
+      "description": {
+        "en": "Blames the batteries for any fault.",
+        "id": "Menyalahkan baterai untuk setiap masalah."
+      },
+      "remediation": {
+        "en": "Trace the loop with a finger and check each joint before touching the batteries; write what you checked.",
+        "id": "Telusuri jalur dengan jari dan periksa setiap sambungan sebelum menyentuh baterai; tulis apa yang diperiksa."
+      }
+    },
+    {
+      "code": "REVERSED_LED_STAYS_ON",
+      "description": {
+        "en": "Thinks a reversed LED would stay lit.",
+        "id": "Mengira LED terbalik akan tetap menyala."
+      },
+      "remediation": {
+        "en": "Turn the LED round while the bumper is pressed and see that it goes dark.",
+        "id": "Balik LED saat bemper ditekan dan lihat LED menjadi gelap."
+      }
+    },
+    {
+      "code": "SWAPS_BRANCHES",
+      "description": {
+        "en": "Runs the yes branch when the condition is false.",
+        "id": "Menjalankan cabang ya saat kondisinya salah."
+      },
+      "remediation": {
+        "en": "Ask the condition aloud at each step and answer yes or no before moving.",
+        "id": "Ajukan pertanyaan kondisi dengan suara di setiap langkah dan jawab ya atau tidak sebelum bergerak."
+      }
+    },
+    {
+      "code": "ELSE_MEANS_STOP",
+      "description": {
+        "en": "Thinks the else branch means doing nothing.",
+        "id": "Mengira cabang selain itu berarti tidak melakukan apa-apa."
+      },
+      "remediation": {
+        "en": "Read the else branch out loud and act it: forward(1) is an action, not a stop.",
+        "id": "Bacakan cabang selain itu dan peragakan: maju(1) adalah aksi, bukan berhenti."
+      }
+    },
+    {
+      "code": "CHANGE_EVERYTHING_AT_ONCE",
+      "description": {
+        "en": "Changes several parts at once or stops testing.",
+        "id": "Mengubah beberapa bagian sekaligus atau berhenti menguji."
+      },
+      "remediation": {
+        "en": "Make a change log in the journal with one line per version: the one change, and the score out of 10.",
+        "id": "Buat catatan perubahan di jurnal dengan satu baris per versi: satu perubahan, dan skor dari 10."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add a second bumper on the left with its own LED, and extend the program: if left bumper then turn_right(), if right bumper then turn_left().",
+      "id": "Tambahkan bemper kedua di kiri dengan LED-nya sendiri, dan kembangkan program: jika bemper kiri maka belok_kanan(), jika bemper kanan maka belok_kiri()."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Pairs can share roles: one child builds, another records and reads the program; large crocodile clips and colour-coded wires help a child with fine-motor or vision difficulties.",
+      "id": "Pasangan bisa berbagi peran: satu anak membuat, yang lain mencatat dan membacakan program; penjepit buaya besar dan kabel berkode warna membantu anak yang kesulitan motorik halus atau penglihatan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": true,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": true
+    },
+    "notes": [
+      {
+        "en": "Electricity: use only a sealed, store-bought holder for 2 AA batteries. No mains electricity, no wall sockets or chargers, and no button or coin cells.",
+        "id": "Listrik: gunakan hanya tempat baterai tertutup buatan pabrik untuk 2 baterai AA. Tanpa listrik PLN, tanpa stopkontak atau pengisi daya, dan tanpa baterai kancing atau koin."
+      },
+      {
+        "en": "Never join the two battery wires directly to each other (a short circuit): the batteries can get hot. If anything feels warm, open the switch and disconnect at once.",
+        "id": "Jangan pernah menghubungkan dua kabel baterai langsung satu sama lain (korsleting): baterai bisa panas. Jika ada yang terasa hangat, matikan saklar dan lepaskan segera."
+      },
+      {
+        "en": "An adult is present for the whole build. LEDs, resistors and batteries are small parts: count them back into a box and keep them away from younger siblings. LED and resistor legs are pointed; do not poke skin.",
+        "id": "Orang dewasa hadir selama seluruh perakitan. LED, resistor, dan baterai adalah bagian kecil: hitung kembali ke dalam kotak dan jauhkan dari adik yang lebih kecil. Kaki LED dan resistor runcing; jangan ditusukkan ke kulit."
+      },
+      {
+        "en": "Always use the resistor with the LED, and remove the batteries from the holder when you finish.",
+        "id": "Selalu gunakan resistor bersama LED, dan keluarkan baterai dari tempatnya setelah selesai."
+      },
+      {
+        "en": "Scissors: the adult cuts thick cardboard; push the rover gently by hand and keep the test area on the floor away from stairs.",
+        "id": "Gunting: orang dewasa memotong kardus tebal; dorong penjelajah pelan dengan tangan dan jaga area uji di lantai jauh dari tangga."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 40,
+    "max": 60
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      7,
+      14,
+      30
+    ],
+    "masteryRule": {
+      "en": "Secure when the rover scores 10 out of 10 with no false alarms after recorded improvements, the flowchart runs correctly, and the reflection names evidence and a next step.",
+      "id": "Dikuasai jika penjelajah mencapai 10 dari 10 tanpa alarm palsu setelah perbaikan yang tercatat, diagram alir berjalan benar, dan refleksi menyebut bukti serta langkah berikutnya."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

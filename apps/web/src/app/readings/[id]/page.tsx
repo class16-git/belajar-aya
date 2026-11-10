@@ -118,7 +118,7 @@ export default async function ReadingPage({ params }: { params: Promise<{ id: st
                     </li>
                   ))}
                 </ul>
-                <p className="mt-2 text-sm"><a href={`#p-${q.evidenceParagraph + 1}`} className="link">{fmt(R.evidenceIn, { n: q.evidenceParagraph + 1 })}</a></p>
+                <p className="mt-2 text-sm"><a href={`#p-${q.evidenceParagraph + 1}`} className="link text-[#2f5370]">{fmt(R.evidenceIn, { n: q.evidenceParagraph + 1 })}</a></p>
                 {q.check && <p className="mt-1 text-sm muted"><span className="font-semibold">{U.guide.check}:</span> <code className="break-all">{q.check.expression} = {q.check.result}</code></p>}
               </li>
             ))}

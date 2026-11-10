@@ -1,0 +1,366 @@
+{
+  "id": "unit-g3-literacy-paragraph-main-idea",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "literacy",
+  "strand": "comprehension",
+  "title": {
+    "en": "What is this paragraph mostly about?",
+    "id": "Paragraf ini terutama tentang apa?"
+  },
+  "prerequisites": [
+    "unit-g2-literacy-retelling-with-sequence-words"
+  ],
+  "objective": {
+    "en": "Identify the main idea of an informational paragraph, tell it apart from supporting details, and write the main idea in one sentence of their own.",
+    "id": "Menentukan gagasan utama paragraf informasi, membedakannya dari kalimat penjelas, dan menuliskan gagasan utama dalam satu kalimat sendiri."
+  },
+  "rationale": {
+    "en": "Finding the main idea is the core of understanding nonfiction and the base for summarising later. Children often choose the most interesting detail instead of the idea that all sentences support. Indonesian schools teach this with the terms \"gagasan utama\" and \"kalimat utama\" and the idea that the main sentence is often at the start (deduktif) or the end (induktif) of a paragraph, so the Indonesian version uses those terms. The English version uses the umbrella picture: the main idea covers every detail. Paragraphs are written for each language separately, about the same everyday topics.",
+    "id": "Menemukan gagasan utama adalah inti memahami teks nonfiksi dan dasar untuk meringkas nanti. Anak sering memilih detail yang paling menarik, bukan gagasan yang didukung semua kalimat. Sekolah di Indonesia mengajarkan ini dengan istilah \"gagasan utama\" dan \"kalimat utama\" serta letaknya yang sering di awal (deduktif) atau di akhir (induktif) paragraf, jadi versi Indonesia memakai istilah itu. Versi Inggris memakai gambaran payung: gagasan utama menaungi semua detail. Paragraf ditulis terpisah untuk tiap bahasa, tentang topik sehari-hari yang sama."
+  },
+  "outcomes": [
+    {
+      "en": "Chooses the main idea of a paragraph from options that include a detail and an idea that is too broad.",
+      "id": "Memilih gagasan utama paragraf dari pilihan yang mencakup sebuah detail dan gagasan yang terlalu luas."
+    },
+    {
+      "en": "Lists two supporting details for a main idea.",
+      "id": "Menyebut dua kalimat penjelas untuk sebuah gagasan utama."
+    },
+    {
+      "en": "Writes a one-sentence main idea for a new paragraph.",
+      "id": "Menulis gagasan utama satu kalimat untuk paragraf baru."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can say what the whole paragraph is mostly about.",
+      "id": "Aku bisa mengatakan paragraf itu terutama tentang apa."
+    },
+    {
+      "en": "I can show which sentences are details that support it.",
+      "id": "Aku bisa menunjukkan kalimat mana yang menjadi penjelasnya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Read each paragraph together twice. After the first reading, ask: What is the topic in one or two words? After the second: What does the writer say about that topic?",
+      "id": "Bacakan setiap paragraf bersama dua kali. Setelah bacaan pertama, tanyakan: Apa topiknya dalam satu atau dua kata? Setelah bacaan kedua: Apa yang dikatakan penulis tentang topik itu?"
+    },
+    {
+      "en": "Draw an umbrella: the main idea goes on top; each detail is a raindrop that must fit under it.",
+      "id": "Gambar payung: gagasan utama di atas; setiap kalimat penjelas adalah tetes air yang harus muat di bawahnya."
+    },
+    {
+      "en": "Test any answer by asking: Does every sentence in the paragraph fit under this?",
+      "id": "Uji setiap jawaban dengan bertanya: Apakah setiap kalimat di paragraf cocok di bawah gagasan ini?"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Read the paragraph. Say the topic in two words.",
+      "id": "Baca paragrafnya. Sebutkan topiknya dalam dua kata."
+    },
+    {
+      "en": "Find the sentence that tells the big idea. Underline it.",
+      "id": "Temukan kalimat utamanya. Garis bawahi."
+    },
+    {
+      "en": "Check that each other sentence fits under your umbrella.",
+      "id": "Periksa bahwa setiap kalimat lain cocok di bawah payungmu."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "The three paragraphs in this unit, written or printed",
+      "id": "Tiga paragraf dalam unit ini, ditulis atau dicetak"
+    },
+    {
+      "en": "Coloured pencils (one for main idea, one for details)",
+      "id": "Pensil warna (satu untuk gagasan utama, satu untuk penjelas)"
+    },
+    {
+      "en": "Paper for an umbrella diagram",
+      "id": "Kertas untuk diagram payung"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Copy the paragraphs onto paper with space between lines.",
+      "id": "Salin paragraf ke kertas dengan jarak antarbaris."
+    },
+    {
+      "en": "Draw an empty umbrella with four raindrops for each paragraph.",
+      "id": "Gambar payung kosong dengan empat tetes air untuk setiap paragraf."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Paragraph A (main idea first): \"Cats use their whiskers to find their way. Whiskers can feel small movements in the air. They help a cat know if a gap is wide enough to squeeze through. In the dark, whiskers help a cat sense things it cannot see.\" Main idea: whiskers help cats find their way. Each other sentence is a way they help.",
+      "id": "Paragraf A (deduktif): \"Kumis kucing membantunya mengenali sekitarnya. Kumis itu dapat merasakan gerakan udara yang kecil. Kumis membantu kucing tahu apakah celah cukup lebar untuk dilewati. Dalam gelap, kumis membantu kucing merasakan benda yang tidak terlihat.\" Kalimat utama ada di awal; kalimat lain adalah penjelas."
+    },
+    {
+      "en": "Paragraph B (main idea last): \"On Sunday morning Dad sweeps the yard. Mum washes the clothes. My brother and I water the plants and feed the chickens. Everyone in our family helps to look after the house.\" The last sentence covers every detail, so it is the main idea. \"Feeding the chickens\" is only a detail.",
+      "id": "Paragraf B (induktif): \"Minggu pagi Ayah menyapu halaman. Ibu mencuci pakaian. Aku dan adik menyiram tanaman dan memberi makan ayam. Semua anggota keluarga kami ikut merawat rumah.\" Kalimat terakhir menaungi semua detail, jadi itulah kalimat utama. \"Memberi makan ayam\" hanya penjelas."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Colour code: in a new paragraph, colour the main-idea sentence blue and the details green.",
+      "id": "Kode warna: pada paragraf baru, warnai kalimat utama biru dan kalimat penjelas hijau."
+    },
+    {
+      "en": "No main sentence: read Paragraph C, which has no main sentence, and write one yourself: \"Bananas can be eaten raw. They can be fried with flour. They can be steamed in leaves or mashed for a baby.\"",
+      "id": "Tanpa kalimat utama: baca Paragraf C, yang tidak punya kalimat utama, lalu tulis sendiri: \"Pisang bisa dimakan langsung. Pisang bisa digoreng dengan tepung. Pisang bisa dikukus dalam daun atau dilumatkan untuk bayi.\""
+    },
+    {
+      "en": "Odd one out: the adult adds one sentence that does not belong (\"My cousin likes football.\") to Paragraph B; your child finds it and explains why.",
+      "id": "Mana yang tidak cocok: orang dewasa menambahkan satu kalimat yang tidak sesuai (\"Sepupuku suka sepak bola.\") ke Paragraf B; anak menemukannya dan menjelaskan alasannya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "What is the main idea of Paragraph A?",
+        "id": "Apa gagasan utama Paragraf A?"
+      },
+      "choices": {
+        "en": [
+          "Whiskers help cats find their way.",
+          "Cats can see in the dark.",
+          "Animals have many body parts."
+        ],
+        "id": [
+          "Kumis membantu kucing mengenali sekitarnya.",
+          "Kucing bisa melihat dalam gelap.",
+          "Hewan punya banyak bagian tubuh."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Every sentence explains how whiskers help a cat find its way.",
+        "id": "Setiap kalimat menjelaskan cara kumis membantu kucing."
+      },
+      "distractorMisconceptions": {
+        "1": "DETAIL_AS_MAIN_IDEA",
+        "2": "TOO_BROAD"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "In Paragraph B, which sentence is a supporting detail?",
+        "id": "Pada Paragraf B, kalimat mana yang merupakan kalimat penjelas?"
+      },
+      "choices": {
+        "en": [
+          "Mum washes the clothes.",
+          "Everyone in our family helps to look after the house.",
+          "Families live in many countries."
+        ],
+        "id": [
+          "Ibu mencuci pakaian.",
+          "Semua anggota keluarga kami ikut merawat rumah.",
+          "Keluarga tinggal di banyak negara."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Washing clothes is one example of helping; the last sentence is the main idea; the third is not in the paragraph.",
+        "id": "Mencuci pakaian adalah salah satu contoh membantu; kalimat terakhir adalah kalimat utama; pilihan ketiga tidak ada di paragraf."
+      },
+      "distractorMisconceptions": {
+        "1": "MAIN_IDEA_AS_DETAIL",
+        "2": "OUTSIDE_TEXT"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which is the best main idea for Paragraph C (bananas)?",
+        "id": "Gagasan utama mana yang paling tepat untuk Paragraf C (pisang)?"
+      },
+      "choices": {
+        "en": [
+          "Bananas can be eaten in many ways.",
+          "Bananas can be fried with flour.",
+          "Fruit is good food."
+        ],
+        "id": [
+          "Pisang bisa dimakan dengan berbagai cara.",
+          "Pisang bisa digoreng dengan tepung.",
+          "Buah adalah makanan yang baik."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "All three sentences are different ways of eating bananas.",
+        "id": "Ketiga kalimat adalah cara berbeda memakan pisang."
+      },
+      "distractorMisconceptions": {
+        "1": "DETAIL_AS_MAIN_IDEA",
+        "2": "TOO_BROAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Where is the main sentence in Paragraph B?",
+        "id": "Di mana letak kalimat utama Paragraf B?"
+      },
+      "choices": {
+        "en": [
+          "At the end",
+          "At the start",
+          "In the middle"
+        ],
+        "id": [
+          "Di akhir (induktif)",
+          "Di awal (deduktif)",
+          "Di tengah"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The last sentence gathers all the details together.",
+        "id": "Kalimat terakhir merangkum semua penjelas, jadi paragraf ini induktif."
+      },
+      "distractorMisconceptions": {
+        "1": "ASSUMES_FIRST_SENTENCE",
+        "2": "ASSUMES_FIRST_SENTENCE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "DETAIL_AS_MAIN_IDEA",
+      "description": {
+        "en": "Chooses one interesting detail as the main idea.",
+        "id": "Memilih satu detail menarik sebagai gagasan utama."
+      },
+      "remediation": {
+        "en": "Write each sentence on a paper raindrop and try to fit them all under the chosen umbrella; a detail umbrella leaves drops outside.",
+        "id": "Tulis setiap kalimat di tetes air kertas dan coba muatkan semuanya di bawah payung yang dipilih; payung detail meninggalkan tetes di luar."
+      }
+    },
+    {
+      "code": "TOO_BROAD",
+      "description": {
+        "en": "Chooses an idea so general it could describe many other paragraphs.",
+        "id": "Memilih gagasan yang terlalu umum sehingga bisa menggambarkan banyak paragraf lain."
+      },
+      "remediation": {
+        "en": "Ask: Could this be the main idea of a paragraph about fish, or rice? If yes, it is too big; add what this paragraph says.",
+        "id": "Tanyakan: Bisakah ini menjadi gagasan utama paragraf tentang ikan atau nasi? Jika ya, terlalu luas; tambahkan apa yang dikatakan paragraf ini."
+      }
+    },
+    {
+      "code": "MAIN_IDEA_AS_DETAIL",
+      "description": {
+        "en": "Cannot tell a summary sentence from an example sentence.",
+        "id": "Tidak bisa membedakan kalimat rangkuman dari kalimat contoh."
+      },
+      "remediation": {
+        "en": "Add \"for example\" in front of each sentence; it sounds right before details but not before the main idea.",
+        "id": "Tambahkan \"misalnya\" di depan setiap kalimat; terdengar pas di depan penjelas tetapi tidak di depan kalimat utama."
+      }
+    },
+    {
+      "code": "OUTSIDE_TEXT",
+      "description": {
+        "en": "Picks a true-sounding sentence that is not in the text.",
+        "id": "Memilih kalimat yang terdengar benar tetapi tidak ada di teks."
+      },
+      "remediation": {
+        "en": "Insist on pointing to the words in the paragraph before choosing.",
+        "id": "Wajibkan menunjuk kata-katanya di paragraf sebelum memilih."
+      }
+    },
+    {
+      "code": "ASSUMES_FIRST_SENTENCE",
+      "description": {
+        "en": "Believes the main idea is always the first sentence.",
+        "id": "Mengira gagasan utama selalu kalimat pertama."
+      },
+      "remediation": {
+        "en": "Compare Paragraph A and B side by side and use the umbrella test on the first and last sentences of each.",
+        "id": "Bandingkan Paragraf A dan B berdampingan dan uji kalimat pertama dan terakhir masing-masing dengan tes payung."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Write your own paragraph of four sentences about a hobby, with the main sentence first, then rewrite it with the main sentence last.",
+      "id": "Tulis paragraf empat kalimat tentang hobimu dengan kalimat utama di awal, lalu tulis ulang dengan kalimat utama di akhir."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Read paragraphs aloud for children who are still building fluency, so that the thinking skill is not blocked by decoding.",
+      "id": "Bacakan paragraf untuk anak yang kelancaran membacanya masih berkembang, agar keterampilan berpikir tidak terhambat oleh membaca kata."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "No physical hazards.",
+        "id": "Tidak ada bahaya fisik."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "assessment",
+    "reviewAfterDays": [
+      4,
+      10,
+      30
+    ],
+    "masteryRule": {
+      "en": "Secure when your child identifies the main idea of three new paragraphs (including one with the main sentence last) and writes one of their own, on two different days.",
+      "id": "Dikuasai jika anak menentukan gagasan utama tiga paragraf baru (termasuk satu yang kalimat utamanya di akhir) dan menulis satu sendiri, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable",
+      "note": "Whisker facts in Paragraph A are general school science; a reviewer should confirm wording."
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "single-answer-check",
+      "misconception-map",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-literacy",
+    "createdAt": "2026-11-10"
+  }
+}

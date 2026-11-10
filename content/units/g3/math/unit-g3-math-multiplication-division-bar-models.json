@@ -1,0 +1,451 @@
+{
+  "id": "unit-g3-math-multiplication-division-bar-models",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "math",
+  "strand": "multiplication_division",
+  "title": {
+    "en": "Multiplication and division with bar models",
+    "id": "Perkalian dan pembagian dengan model batang"
+  },
+  "prerequisites": [
+    "unit-g2-math-multiplication-equal-groups"
+  ],
+  "objective": {
+    "en": "Recall multiplication and division facts for 2 to 10 and use bar models to solve sharing, grouping and 'times as many' word problems.",
+    "id": "Mengingat fakta perkalian dan pembagian 2 sampai 10 serta memakai model batang untuk menyelesaikan soal cerita berbagi, mengelompokkan, dan 'kali lipat'."
+  },
+  "rationale": {
+    "en": "Bar models make the structure of a word problem visible before any calculation: equal units, a known total or a known unit. Children who draw the bar decide correctly whether to multiply or divide instead of guessing from key words.",
+    "id": "Model batang membuat struktur soal cerita terlihat sebelum menghitung: satuan sama besar, total yang diketahui, atau satuan yang diketahui. Anak yang menggambar batang dapat memutuskan dengan benar apakah mengali atau membagi, bukan menebak dari kata kunci."
+  },
+  "outcomes": [
+    {
+      "en": "Uses known facts and the link between multiplication and division (fact families).",
+      "id": "Memakai fakta yang dikuasai dan hubungan perkalian dengan pembagian (keluarga fakta)."
+    },
+    {
+      "en": "Draws a bar model for sharing, grouping and comparison problems and writes the matching number sentence.",
+      "id": "Menggambar model batang untuk soal berbagi, mengelompokkan, dan membandingkan serta menulis kalimat bilangan yang sesuai."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can write the fact family 6 × 7 = 42, 7 × 6 = 42, 42 ÷ 6 = 7, 42 ÷ 7 = 6.",
+      "id": "Aku bisa menulis keluarga fakta 6 × 7 = 42, 7 × 6 = 42, 42 ÷ 6 = 7, 42 ÷ 7 = 6."
+    },
+    {
+      "en": "I can draw a bar model and decide whether to multiply or divide.",
+      "id": "Aku bisa menggambar model batang dan memutuskan apakah mengali atau membagi."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Before each problem ask: What do we know, the total or one unit? How many units are there?",
+      "id": "Sebelum setiap soal tanyakan: Apa yang kita tahu, totalnya atau satu satuannya? Ada berapa satuan?"
+    },
+    {
+      "en": "Draw bars with equal-sized boxes using a ruler; write the known number on the bar or the bracket.",
+      "id": "Gambar batang dengan kotak sama besar memakai penggaris; tulis bilangan yang diketahui di batang atau kurung kurawalnya."
+    },
+    {
+      "en": "For tricky facts, build them from easier ones: 6 × 7 = 5 × 7 + 7.",
+      "id": "Untuk fakta yang sulit, bangun dari yang lebih mudah: 6 × 7 = 5 × 7 + 7."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Read the story. Draw the bar. Mark what you know and put a question mark on what you need. Then calculate.",
+      "id": "Baca ceritanya. Gambar batangnya. Tandai yang diketahui dan beri tanda tanya pada yang dicari. Lalu hitung."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Share 32 rambutan equally into 4 bowls, one at a time, then pack 45 crackers into bags of 5; compare sharing and grouping.",
+        "id": "Bagikan 32 rambutan sama rata ke 4 mangkuk, satu per satu, lalu masukkan 45 kerupuk ke kantong berisi 5; bandingkan berbagi dan mengelompokkan."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a bar of 4 equal boxes with a bracket labelled 32 over the whole; each box is 32 ÷ 4 = 8.",
+        "id": "Gambar batang 4 kotak sama besar dengan kurung kurawal bertuliskan 32 di atas seluruhnya; setiap kotak 32 ÷ 4 = 8."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write fact families and solve 8 × 7, 56 ÷ 8 and 56 ÷ 7 without drawings.",
+        "id": "Tulis keluarga fakta dan selesaikan 8 × 7, 56 ÷ 8, dan 56 ÷ 7 tanpa gambar."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Fruit or crackers for sharing (about 45), bowls and small bags",
+      "id": "Buah atau kerupuk untuk dibagi (sekitar 45), mangkuk, dan kantong kecil"
+    },
+    {
+      "en": "Squared paper, a ruler and coloured pencils for bar models",
+      "id": "Kertas berpetak, penggaris, dan pensil warna untuk model batang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Count out 32 pieces of fruit and 45 crackers; write five word problems on cards.",
+      "id": "Hitung 32 buah dan 45 kerupuk; tulis lima soal cerita di kartu."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Sharing (unit unknown): Bu Rina shares 32 rambutan into 4 bags. Bar: 4 units = 32, so 1 unit = 32 ÷ 4 = 8.",
+      "id": "Berbagi (satuan dicari): Bu Rina membagi 32 rambutan ke 4 kantong. Batang: 4 satuan = 32, jadi 1 satuan = 32 ÷ 4 = 8."
+    },
+    {
+      "en": "Grouping (number of units unknown): 45 kerupuk packed 5 per bag. How many 5s in 45? 9 × 5 = 45, so 9 bags.",
+      "id": "Mengelompokkan (banyak satuan dicari): 45 kerupuk dikemas 5 per kantong. Ada berapa 5 dalam 45? 9 × 5 = 45, jadi 9 kantong."
+    },
+    {
+      "en": "Times as many: a long batik cloth is 4 times as long as a short one of 6 m. Draw 1 box for the short cloth and 4 boxes for the long one. Long = 24 m; the difference is 3 boxes = 18 m.",
+      "id": "Kali lipat: kain batik panjang 4 kali panjang kain pendek yang 6 m. Gambar 1 kotak untuk kain pendek dan 4 kotak untuk yang panjang. Panjang = 24 m; selisihnya 3 kotak = 18 m."
+    },
+    {
+      "en": "Derived fact: 6 × 7 is 5 sevens (35) and one more seven: 35 + 7 = 42.",
+      "id": "Fakta turunan: 6 × 7 adalah 5 kali tujuh (35) ditambah satu tujuh lagi: 35 + 7 = 42."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Solve the five word-problem cards with a bar model each, then write the number sentence.",
+      "id": "Selesaikan lima kartu soal cerita dengan satu model batang masing-masing, lalu tulis kalimat bilangannya."
+    },
+    {
+      "en": "Play fact-family cards: draw a card such as 9 × 6 and write all four related facts.",
+      "id": "Main kartu keluarga fakta: ambil kartu seperti 9 × 6 dan tulis keempat fakta terkaitnya."
+    },
+    {
+      "en": "Write your own 'times as many' story about family members' ages or heights and draw its bar.",
+      "id": "Tulis cerita 'kali lipat' sendiri tentang umur atau tinggi anggota keluarga dan gambar batangnya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "6 × 7 = ?",
+        "id": "6 × 7 = ?"
+      },
+      "choices": {
+        "en": [
+          "42",
+          "48",
+          "13"
+        ],
+        "id": [
+          "42",
+          "48",
+          "13"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "5 × 7 = 35 and one more 7 makes 42.",
+        "id": "5 × 7 = 35 dan satu 7 lagi menjadi 42."
+      },
+      "check": {
+        "expression": "6 * 7",
+        "result": "42"
+      },
+      "distractorMisconceptions": {
+        "1": "FACT_NEIGHBOUR_SLIP",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Bu Rina shares 32 rambutan equally into 4 bags. How many are in each bag?",
+        "id": "Bu Rina membagi 32 rambutan sama rata ke 4 kantong. Berapa isi setiap kantong?"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "28",
+          "36"
+        ],
+        "id": [
+          "8",
+          "28",
+          "36"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 equal units make 32, so one unit is 32 ÷ 4 = 8.",
+        "id": "4 satuan sama besar menjadi 32, jadi satu satuan 32 ÷ 4 = 8."
+      },
+      "check": {
+        "expression": "32 / 4",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "45 kerupuk are packed 5 in each bag. How many bags are needed?",
+        "id": "45 kerupuk dikemas 5 di setiap kantong. Berapa kantong yang diperlukan?"
+      },
+      "choices": {
+        "en": [
+          "9",
+          "40",
+          "225"
+        ],
+        "id": [
+          "9",
+          "40",
+          "225"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count the fives in 45: 9 × 5 = 45, so 9 bags.",
+        "id": "Hitung berapa 5 dalam 45: 9 × 5 = 45, jadi 9 kantong."
+      },
+      "check": {
+        "expression": "45 / 5",
+        "result": "9"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "MULTIPLIES_INSTEAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A bar model has 8 equal units and each unit is 7. What is the total?",
+        "id": "Sebuah model batang punya 8 satuan sama besar dan setiap satuan 7. Berapa totalnya?"
+      },
+      "choices": {
+        "en": [
+          "56",
+          "15",
+          "54"
+        ],
+        "id": [
+          "56",
+          "15",
+          "54"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "8 units of 7: 8 × 7 = 56.",
+        "id": "8 satuan berisi 7: 8 × 7 = 56."
+      },
+      "check": {
+        "expression": "8 * 7",
+        "result": "56"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "FACT_NEIGHBOUR_SLIP"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A long batik cloth is 4 times as long as a short cloth. The short cloth is 6 m. How much longer is the long cloth?",
+        "id": "Kain batik panjang 4 kali panjang kain pendek. Kain pendek 6 m. Berapa meter kain panjang lebih panjang?"
+      },
+      "choices": {
+        "en": [
+          "18 m",
+          "24 m",
+          "10 m"
+        ],
+        "id": [
+          "18 m",
+          "24 m",
+          "10 m"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The long cloth is 4 units and the short is 1 unit; the difference is 3 units = 3 × 6 = 18 m.",
+        "id": "Kain panjang 4 satuan dan kain pendek 1 satuan; selisihnya 3 satuan = 3 × 6 = 18 m."
+      },
+      "check": {
+        "expression": "4*6 - 6",
+        "result": "18"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_TOTAL_NOT_DIFFERENCE",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "9 × 6 = 54. So 54 ÷ 9 = ?",
+        "id": "9 × 6 = 54. Jadi 54 ÷ 9 = ?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "45",
+          "63"
+        ],
+        "id": [
+          "6",
+          "45",
+          "63"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Division undoes multiplication in the same fact family: 54 ÷ 9 = 6.",
+        "id": "Pembagian membalik perkalian dalam keluarga fakta yang sama: 54 ÷ 9 = 6."
+      },
+      "check": {
+        "expression": "54 / 9",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "ADDS_INSTEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "FACT_NEIGHBOUR_SLIP",
+      "description": {
+        "en": "Gives a neighbouring fact, such as 48 for 6 × 7.",
+        "id": "Memberi fakta tetangga, misalnya 48 untuk 6 × 7."
+      },
+      "remediation": {
+        "en": "Build the fact from a known one (5 × 7 + 7) with an array drawn on squared paper.",
+        "id": "Bangun fakta dari yang sudah dikuasai (5 × 7 + 7) dengan susunan di kertas berpetak."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the two numbers in the problem.",
+        "id": "Menjumlahkan kedua bilangan dalam soal."
+      },
+      "remediation": {
+        "en": "Draw the bar and count the units; each unit stands for the same amount.",
+        "id": "Gambar batangnya dan hitung satuannya; setiap satuan mewakili jumlah yang sama."
+      }
+    },
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Subtracts once instead of sharing into equal parts.",
+        "id": "Mengurangkan sekali, bukan membagi menjadi bagian sama besar."
+      },
+      "remediation": {
+        "en": "Share real objects one at a time into the bowls and count one bowl.",
+        "id": "Bagikan benda sungguhan satu per satu ke mangkuk dan hitung isi satu mangkuk."
+      }
+    },
+    {
+      "code": "MULTIPLIES_INSTEAD",
+      "description": {
+        "en": "Multiplies when the total is already known and must be grouped.",
+        "id": "Mengali padahal total sudah diketahui dan harus dikelompokkan."
+      },
+      "remediation": {
+        "en": "Mark the total on the bar first; ask 'Is 45 the whole bar or one box?'",
+        "id": "Tandai total di batang lebih dulu; tanya 'Apakah 45 itu seluruh batang atau satu kotak?'"
+      }
+    },
+    {
+      "code": "GIVES_TOTAL_NOT_DIFFERENCE",
+      "description": {
+        "en": "Gives the longer amount when the question asks how much longer.",
+        "id": "Memberi panjang yang lebih panjang padahal ditanya selisihnya."
+      },
+      "remediation": {
+        "en": "Line up the two bars and shade only the boxes that stick out beyond the shorter bar.",
+        "id": "Jajarkan kedua batang dan arsir hanya kotak yang menonjol melewati batang yang lebih pendek."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Two-step problem: 3 boxes of 8 mangoes are shared among 4 families. Draw two bars and find each family's share (6).",
+      "id": "Soal dua langkah: 3 kotak berisi 8 mangga dibagi ke 4 keluarga. Gambar dua batang dan cari bagian setiap keluarga (6)."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Offer squared paper so units are equal without measuring; a child can say the reasoning while an adult scribes.",
+      "id": "Sediakan kertas berpetak agar satuan sama besar tanpa mengukur; anak boleh menjelaskan secara lisan sementara orang dewasa menuliskan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": true,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Remove rambutan seeds before younger children eat any fruit; check crackers for allergens.",
+        "id": "Buang biji rambutan sebelum anak kecil makan; periksa alergen pada kerupuk."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves one sharing, one grouping and one comparison problem with correct bar models and recalls ten mixed facts, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan satu soal berbagi, satu mengelompokkan, dan satu membandingkan dengan model batang yang benar serta mengingat sepuluh fakta campuran, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,419 @@
+{
+  "id": "unit-g3-math-perimeter",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "math",
+  "strand": "measurement",
+  "title": {
+    "en": "Perimeter of shapes",
+    "id": "Keliling bangun datar"
+  },
+  "prerequisites": [
+    "unit-g2-math-addition-regrouping-1000"
+  ],
+  "objective": {
+    "en": "Measure and calculate the perimeter of rectangles, squares, triangles and simple compound shapes, and find a missing side from a known perimeter.",
+    "id": "Mengukur dan menghitung keliling persegi panjang, persegi, segitiga, dan bangun gabungan sederhana, serta mencari sisi yang hilang dari keliling yang diketahui."
+  },
+  "rationale": {
+    "en": "Walking round the edge of a real space makes perimeter a distance, not a formula. Children who have traced and measured an edge do not confuse perimeter with area later, and can reason about missing sides.",
+    "id": "Berjalan mengelilingi tepi ruang sungguhan membuat keliling menjadi jarak, bukan rumus. Anak yang pernah menelusuri dan mengukur tepi tidak akan tertukar antara keliling dan luas nanti, dan bisa bernalar tentang sisi yang hilang."
+  },
+  "outcomes": [
+    {
+      "en": "Finds the perimeter by adding all side lengths, and uses shortcuts for rectangles and squares.",
+      "id": "Mencari keliling dengan menjumlahkan semua panjang sisi, dan memakai cara singkat untuk persegi panjang dan persegi."
+    },
+    {
+      "en": "Works backwards from a perimeter to a missing side.",
+      "id": "Bekerja mundur dari keliling untuk mencari sisi yang hilang."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can measure the perimeter of a book with a ruler and a string.",
+      "id": "Aku bisa mengukur keliling buku dengan penggaris dan tali."
+    },
+    {
+      "en": "I can find the width of a rectangle when I know its perimeter and length.",
+      "id": "Aku bisa mencari lebar persegi panjang jika keliling dan panjangnya diketahui."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Start outside: walk round a mat or a small garden bed and count steps, then measure with a tape.",
+      "id": "Mulai di luar: berjalan mengelilingi tikar atau petak kebun kecil dan hitung langkah, lalu ukur dengan meteran."
+    },
+    {
+      "en": "Ask the child to mark a starting corner and trace every side once with a finger before adding.",
+      "id": "Minta anak menandai sudut awal dan menelusuri setiap sisi sekali dengan jari sebelum menjumlah."
+    },
+    {
+      "en": "Write all side lengths on the drawing, including sides that are not labelled but can be worked out.",
+      "id": "Tulis semua panjang sisi di gambar, termasuk sisi yang tidak diberi label tetapi bisa dihitung."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Start at one corner. Go round the edge and add every side until you are back where you started.",
+      "id": "Mulai dari satu sudut. Kelilingi tepinya dan jumlahkan setiap sisi sampai kembali ke tempat awal."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Lay a string around the edge of a placemat, mark where it meets, then straighten the string along a ruler or tape measure to read the perimeter.",
+        "id": "Letakkan tali mengelilingi tepi tatakan piring, tandai titik pertemuannya, lalu luruskan tali di samping penggaris atau meteran untuk membaca kelilingnya."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "On squared paper (1 square = 1 cm), draw a rectangle 8 by 5 and an L-shape; write every side length and colour the edge.",
+        "id": "Di kertas berpetak (1 petak = 1 cm), gambar persegi panjang 8 kali 5 dan bangun L; tulis setiap panjang sisi dan warnai tepinya."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write 8 + 5 + 8 + 5 = 26 and 2 × (8 + 5) = 26; for a square of side 7, 4 × 7 = 28.",
+        "id": "Tulis 8 + 5 + 8 + 5 = 26 dan 2 × (8 + 5) = 26; untuk persegi bersisi 7, 4 × 7 = 28."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A 30 cm ruler, a cloth tape measure, string",
+      "id": "Penggaris 30 cm, meteran kain, tali"
+    },
+    {
+      "en": "Squared paper and coloured pencils; household rectangles such as a book, a placemat and a tile",
+      "id": "Kertas berpetak dan pensil warna; benda persegi panjang di rumah seperti buku, tatakan piring, dan ubin"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Choose three rectangular objects and one outdoor space such as a doormat area or garden bed.",
+      "id": "Pilih tiga benda persegi panjang dan satu tempat di luar seperti area keset atau petak kebun."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Rectangle: a placemat 8 cm by 5 cm (scaled drawing). 8 + 5 + 8 + 5 = 26 cm, or double 8 + 5 = 13 to get 26 cm.",
+      "id": "Persegi panjang: tatakan 8 cm kali 5 cm (gambar skala). 8 + 5 + 8 + 5 = 26 cm, atau gandakan 8 + 5 = 13 menjadi 26 cm."
+    },
+    {
+      "en": "Square: a floor tile with side 7 m in a drawing. All four sides are equal: 4 × 7 = 28 m.",
+      "id": "Persegi: ubin bersisi 7 m dalam gambar. Keempat sisi sama: 4 × 7 = 28 m."
+    },
+    {
+      "en": "Fence with a gate: a vegetable bed 12 m by 9 m with a 2 m gate. Perimeter 2 × (12 + 9) = 42 m; fencing needed 42 - 2 = 40 m.",
+      "id": "Pagar dengan pintu: petak sayur 12 m kali 9 m dengan pintu 2 m. Keliling 2 × (12 + 9) = 42 m; pagar yang diperlukan 42 - 2 = 40 m."
+    },
+    {
+      "en": "Missing side: a rectangle has perimeter 30 cm and length 9 cm. Half the perimeter is length + width = 15, so width = 15 - 9 = 6 cm.",
+      "id": "Sisi hilang: persegi panjang berkeliling 30 cm dan panjang 9 cm. Setengah keliling adalah panjang + lebar = 15, jadi lebar = 15 - 9 = 6 cm."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Measure the perimeter of a book, a tile and the table top, recording each side.",
+      "id": "Ukur keliling buku, ubin, dan permukaan meja, catat setiap sisinya."
+    },
+    {
+      "en": "Draw three different rectangles on squared paper that each have a perimeter of 20 cm.",
+      "id": "Gambar tiga persegi panjang berbeda di kertas berpetak yang kelilingnya masing-masing 20 cm."
+    },
+    {
+      "en": "Find the perimeter of an L-shaped room drawn by a parent, working out the two unlabelled sides first.",
+      "id": "Cari keliling ruangan berbentuk L yang digambar orang tua, hitung dulu dua sisi yang tidak diberi label."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "What is the perimeter of a rectangle 8 cm long and 5 cm wide?",
+        "id": "Berapa keliling persegi panjang dengan panjang 8 cm dan lebar 5 cm?"
+      },
+      "choices": {
+        "en": [
+          "26 cm",
+          "13 cm",
+          "40 cm"
+        ],
+        "id": [
+          "26 cm",
+          "13 cm",
+          "40 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "8 + 5 + 8 + 5 = 26 cm.",
+        "id": "8 + 5 + 8 + 5 = 26 cm."
+      },
+      "check": {
+        "expression": "2*(8 + 5)",
+        "result": "26"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TWO_SIDES_ONLY",
+        "2": "MULTIPLIES_SIDES"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A square has sides of 7 m. What is its perimeter?",
+        "id": "Sebuah persegi bersisi 7 m. Berapa kelilingnya?"
+      },
+      "choices": {
+        "en": [
+          "28 m",
+          "14 m",
+          "49 m"
+        ],
+        "id": [
+          "28 m",
+          "14 m",
+          "49 m"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A square has 4 equal sides: 4 × 7 = 28 m.",
+        "id": "Persegi punya 4 sisi sama panjang: 4 × 7 = 28 m."
+      },
+      "check": {
+        "expression": "4*7",
+        "result": "28"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TWO_SIDES_ONLY",
+        "2": "MULTIPLIES_SIDES"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A triangle has sides 6 cm, 8 cm and 10 cm. What is its perimeter?",
+        "id": "Sebuah segitiga bersisi 6 cm, 8 cm, dan 10 cm. Berapa kelilingnya?"
+      },
+      "choices": {
+        "en": [
+          "24 cm",
+          "14 cm",
+          "480 cm"
+        ],
+        "id": [
+          "24 cm",
+          "14 cm",
+          "480 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Add all three sides: 6 + 8 + 10 = 24 cm.",
+        "id": "Jumlahkan ketiga sisi: 6 + 8 + 10 = 24 cm."
+      },
+      "check": {
+        "expression": "6 + 8 + 10",
+        "result": "24"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TWO_SIDES_ONLY",
+        "2": "MULTIPLIES_SIDES"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A vegetable bed is 12 m by 9 m. A fence goes all round it except for a 2 m gate. How many metres of fence are needed?",
+        "id": "Petak sayur berukuran 12 m kali 9 m. Pagar mengelilinginya kecuali pintu selebar 2 m. Berapa meter pagar yang diperlukan?"
+      },
+      "choices": {
+        "en": [
+          "40 m",
+          "42 m",
+          "21 m"
+        ],
+        "id": [
+          "40 m",
+          "42 m",
+          "21 m"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Perimeter 2 × (12 + 9) = 42 m, minus the 2 m gate = 40 m.",
+        "id": "Keliling 2 × (12 + 9) = 42 m, dikurangi pintu 2 m = 40 m."
+      },
+      "check": {
+        "expression": "2*(12 + 9) - 2",
+        "result": "40"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_GAP",
+        "2": "ADDS_TWO_SIDES_ONLY"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A rectangle has a perimeter of 30 cm. Its length is 9 cm. What is its width?",
+        "id": "Sebuah persegi panjang kelilingnya 30 cm. Panjangnya 9 cm. Berapa lebarnya?"
+      },
+      "choices": {
+        "en": [
+          "6 cm",
+          "21 cm",
+          "12 cm"
+        ],
+        "id": [
+          "6 cm",
+          "21 cm",
+          "12 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Length + width is half the perimeter: 15 cm. 15 - 9 = 6 cm.",
+        "id": "Panjang + lebar adalah setengah keliling: 15 cm. 15 - 9 = 6 cm."
+      },
+      "check": {
+        "expression": "30/2 - 9",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_ONE_SIDE_ONLY",
+        "2": "GIVES_BOTH_WIDTHS"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_TWO_SIDES_ONLY",
+      "description": {
+        "en": "Adds only the labelled sides and forgets the sides opposite them.",
+        "id": "Hanya menjumlahkan sisi yang diberi label dan lupa sisi di seberangnya."
+      },
+      "remediation": {
+        "en": "Trace the edge with a finger, writing each side length on the drawing as you pass it.",
+        "id": "Telusuri tepi dengan jari, tulis panjang setiap sisi di gambar saat melewatinya."
+      }
+    },
+    {
+      "code": "MULTIPLIES_SIDES",
+      "description": {
+        "en": "Multiplies side lengths, confusing perimeter with area.",
+        "id": "Mengalikan panjang sisi, tertukar antara keliling dan luas."
+      },
+      "remediation": {
+        "en": "Wrap a string around the shape: perimeter is how long the string is, not how much space is inside.",
+        "id": "Lilitkan tali mengelilingi bangun: keliling adalah panjang tali, bukan banyaknya ruang di dalam."
+      }
+    },
+    {
+      "code": "IGNORES_GAP",
+      "description": {
+        "en": "Forgets to take away a gap such as a gate.",
+        "id": "Lupa mengurangi celah seperti pintu."
+      },
+      "remediation": {
+        "en": "Draw the fence with the gate left open and add only the fenced sides.",
+        "id": "Gambar pagar dengan pintu terbuka dan jumlahkan hanya sisi yang berpagar."
+      }
+    },
+    {
+      "code": "SUBTRACTS_ONE_SIDE_ONLY",
+      "description": {
+        "en": "Subtracts the length once from the whole perimeter.",
+        "id": "Mengurangkan panjang sekali saja dari seluruh keliling."
+      },
+      "remediation": {
+        "en": "Draw the rectangle and label both lengths; subtract both before sharing the rest between two widths.",
+        "id": "Gambar persegi panjang dan beri label kedua panjang; kurangkan keduanya sebelum membagi sisanya ke dua lebar."
+      }
+    },
+    {
+      "code": "GIVES_BOTH_WIDTHS",
+      "description": {
+        "en": "Finds the total of the two widths but does not halve it.",
+        "id": "Menemukan jumlah kedua lebar tetapi tidak membaginya dua."
+      },
+      "remediation": {
+        "en": "Ask 'Is 12 one width or both widths?' and point to the two short sides.",
+        "id": "Tanyakan 'Apakah 12 itu satu lebar atau kedua lebar?' dan tunjuk kedua sisi pendek."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Design a rectangular garden bed with 24 m of bamboo fencing; which length and width give the biggest bed?",
+      "id": "Rancang petak kebun persegi panjang dengan 24 m pagar bambu; panjang dan lebar berapa yang memberi petak terbesar?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use a tactile edge (string glued on card) for children who need to feel the perimeter; allow calculators for checking.",
+      "id": "Pakai tepi yang bisa diraba (tali yang ditempel di karton) bagi anak yang perlu merasakan keliling; boleh memakai kalkulator untuk memeriksa."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Measure outdoor spaces away from roads with an adult present; wind up the tape measure carefully.",
+        "id": "Ukur tempat di luar yang jauh dari jalan dengan orang dewasa hadir; gulung meteran dengan hati-hati."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child finds the perimeter of a rectangle, a triangle and an L-shape and one missing side correctly, on two different days.",
+      "id": "Dikuasai jika anak mencari keliling persegi panjang, segitiga, dan bangun L serta satu sisi yang hilang dengan benar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}
