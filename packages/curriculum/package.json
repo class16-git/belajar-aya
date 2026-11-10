@@ -19,7 +19,8 @@
     "coverage": "tsx scripts/coverage.ts",
     "library-approve": "tsx scripts/library-approve.ts",
     "library-withdraw": "LIBRARY_ACTION=withdraw tsx scripts/library-approve.ts",
-    "release-manifest": "tsx scripts/release-manifest.ts"
+    "release-manifest": "tsx scripts/release-manifest.ts",
+    "dashboard": "tsx scripts/dashboard.ts"
   },
   "dependencies": {
     "@atlas/shared": "workspace:*",

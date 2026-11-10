@@ -47,6 +47,8 @@ jobs:
         run: pnpm content:validate
       - name: Curriculum coverage report is current
         run: pnpm --filter @atlas/curriculum coverage --check
+      - name: Content dashboard is current
+        run: pnpm --filter @atlas/curriculum dashboard --check
       - run: pnpm --filter @atlas/database generate
       - run: pnpm lint
       - run: pnpm typecheck
