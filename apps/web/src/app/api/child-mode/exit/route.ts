@@ -13,6 +13,8 @@ export const POST = handle('child_mode.exit', async (req) => {
   if (!auth) throw new HttpError(401, 'UNAUTHENTICATED');
   if (!auth.session.childModeChildId) return json({ ok: true });
   await rateLimit(`pin:${auth.session.id}`, 5, 600);
+  // Account-wide daily cap so guesses cannot be spread across sessions/devices.
+  await rateLimit(`pin-user:${auth.user.id}`, 20, 86_400);
   const { pin } = await parseBody(req, schema).catch(() => {
     throw new HttpError(401, 'WRONG_PIN');
   });

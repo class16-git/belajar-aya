@@ -17,7 +17,10 @@ Cost: free (Vercel Hobby + Neon free tier). Region: Singapore. About 10 minutes,
 ## 2. Add the database (Neon)
 1. In the project, open **Storage → Create Database → Neon (Serverless Postgres)**.
 2. Region: **Singapore (ap-southeast-1)**. Plan: Free.
-3. Connect it to the project for the **Preview** environment (Development is optional).
+3. Connect it to the project for the **Preview** environment only. **Untick Production** — the preview database
+   must never be the production database. (As a safety net, the first preview build marks this database
+   "synthetic"; a production build will then refuse to use it, and a preview build refuses any database marked
+   "production" or holding non-demo accounts.)
    Vercel adds `DATABASE_URL` and `DATABASE_URL_UNPOOLED` automatically — you never copy a password.
 
 ## 3. Add three settings
@@ -43,13 +46,15 @@ New pushes to the PR redeploy automatically. When it is ready, open the link and
 Each deploy re-seeds the demo family, so demo progress resets after every push.
 
 ## What the build does
-`apps/web/scripts/vercel-build.mjs`: generate Prisma client → apply migrations (direct connection) →
+`apps/web/scripts/vercel-build.mjs`: generate Prisma client → check the database's role marker
+(`synthetic` for previews, `production` for production) → apply migrations (direct connection) →
 seed the synthetic demo family **only when `ATLAS_ENV=preview`** → `next build`.
 A production environment (`ATLAS_ENV` unset or `production`) never seeds and shows only human-reviewed lessons.
 
 ## Troubleshooting
 | Symptom | Fix |
 |---|---|
+| "This database is marked …" | The build is connected to the wrong database (preview ↔ production). Fix the Storage connection; never edit the marker to force it |
 | "DATABASE_URL is not set" | Step 2 not done, or the database is not connected to **Preview** |
 | Signed in but no activities for Kakak | `ATLAS_ENV=preview` / `ATLAS_CONTENT_MIN_REVIEW=agent_reviewed` missing for Preview |
 | Anything else | Copy the build log error into the chat with Claude |

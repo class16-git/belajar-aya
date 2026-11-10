@@ -4,7 +4,9 @@ import { hashSecret } from '@atlas/shared/server';
 import { audit } from '@/lib/server/audit';
 import { clientIp, handle, HttpError, json, parseBody } from '@/lib/server/http';
 import { rateLimit } from '@/lib/server/rate-limit';
-import { createSession } from '@/lib/server/session';
+import { createSession, getAuth } from '@/lib/server/session';
+import { config } from '@/lib/server/config';
+import { signupDecision } from '@/lib/server/signup-policy';
 
 const schema = z.object({
   email: z.string().trim().toLowerCase().email().max(200),
@@ -13,8 +15,14 @@ const schema = z.object({
 }).strict();
 
 export const POST = handle('auth.signup', async (req) => {
+  // A child in child mode must not be able to replace the locked session (leaving needs the parent PIN).
+  if ((await getAuth())?.session.childModeChildId) throw new HttpError(403, 'PARENT_GATE');
   await rateLimit(`signup:${clientIp(req)}`, 10, 3600);
   const body = await parseBody(req, schema);
+  // Private deployment: only allow-listed parents may register (production is closed if no list is set).
+  if (signupDecision(body.email, config.signupAllowlist, config.deployEnv) === 'closed') {
+    throw new HttpError(403, 'SIGNUP_CLOSED');
+  }
   const exists = await prisma.parentUser.findUnique({ where: { email: body.email } });
   if (exists) throw new HttpError(409, 'EMAIL_EXISTS');
   const user = await prisma.parentUser.create({

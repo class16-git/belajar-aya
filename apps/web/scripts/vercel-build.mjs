@@ -20,6 +20,10 @@ if (!process.env.DATABASE_URL) {
 const direct = process.env.DATABASE_URL_UNPOOLED || process.env.DATABASE_URL;
 
 run('pnpm --filter @atlas/database generate');
+// Check WHICH database this is before changing it: previews may only touch a "synthetic" database and
+// production only a "production" one (marker stored in the database itself).
+const expectedRole = atlasEnv === 'preview' || atlasEnv === 'development' ? 'synthetic' : 'production';
+run(`pnpm --filter @atlas/database db-role ${expectedRole}`, { DATABASE_URL: direct });
 run('pnpm --filter @atlas/database migrate:deploy', { DATABASE_URL: direct });
 if (atlasEnv === 'preview') {
   console.log('Preview environment: seeding the synthetic demo family.');

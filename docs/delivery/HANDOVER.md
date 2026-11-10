@@ -30,9 +30,12 @@ To use your real children's profiles **locally only**: copy `config/learners.pri
 ## Deployment runbook (when authorised)
 1. Provision PostgreSQL 16; create a least-privilege app role. Enable automated backups + restore test.
 2. Set env vars in the host's secret store (never in git): `DATABASE_URL`, `ATLAS_ENV=production`,
-   `ATLAS_SECURE_COOKIES=true`, `ATLAS_PUBLIC_ORIGIN=https://<your-domain>`.
+   `ATLAS_SECURE_COOKIES=true`, `ATLAS_PUBLIC_ORIGIN=https://<your-domain>`,
+   `ATLAS_SIGNUP_ALLOWED_EMAILS=<parent email(s)>` (without it, production sign-up is closed to everyone).
    Never set `ATLAS_ENV` to `preview` in Production (on Vercel the build refuses to run if you do). Do not set `ATLAS_CONTENT_MIN_REVIEW` below `reviewed` (it is ignored anyway).
-3. `pnpm install --frozen-lockfile && pnpm db:migrate` (backup first), then `pnpm build` and `pnpm --filter @atlas/web start`,
+3. Use a **separate** production database (never the preview one). On Vercel the build marks it `production` on first
+   deploy and refuses databases marked `synthetic`. Elsewhere run `pnpm --filter @atlas/database db-role production` first.
+   Then `pnpm install --frozen-lockfile && pnpm db:migrate` (backup first), then `pnpm build` and `pnpm --filter @atlas/web start`,
    or `docker build -t atlas . && docker run -e DATABASE_URL=… -p 3000:3000 atlas` (run `pnpm db:migrate` as a release step).
 4. Smoke test: `GET /api/health` → `{"ok":true,"db":true,"ai":"disabled"}`; sign up a test parent; delete it.
 5. Put behind HTTPS on a trusted proxy that sets `X-Forwarded-For`.

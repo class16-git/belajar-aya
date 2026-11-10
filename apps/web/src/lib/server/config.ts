@@ -1,5 +1,6 @@
 import 'server-only';
 import { resolveDeployEnv, resolveMinReview } from '@atlas/curriculum';
+import { parseAllowlist } from './signup-policy';
 
 const deployEnv = resolveDeployEnv(process.env.ATLAS_ENV, process.env.NODE_ENV, process.env.VERCEL_ENV);
 
@@ -10,4 +11,5 @@ export const config = {
   sessionDays: 14,
   maxTriesPerItem: 3,
   aiEnabled: false as const,
+  signupAllowlist: parseAllowlist(process.env.ATLAS_SIGNUP_ALLOWED_EMAILS),
 };

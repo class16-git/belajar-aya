@@ -26,6 +26,7 @@ export function AuthForm({ mode }: { mode: 'signin' | 'signup' }) {
     setError(
       r.status === 429 ? t.auth.rateLimited
       : r.data.error === 'EMAIL_EXISTS' ? t.auth.exists
+      : r.data.error === 'SIGNUP_CLOSED' ? t.auth.signupClosed
       : r.status === 401 ? t.auth.invalid
       : r.status === 0 ? t.app.offline
       : r.data.error === 'VALIDATION_ERROR' && signup ? t.auth.passwordHint

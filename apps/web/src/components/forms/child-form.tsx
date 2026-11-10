@@ -96,7 +96,7 @@ export function ChildForm({
           <label htmlFor="grade" className="field-label">{t.child.grade}</label>
           <select id="grade" className="input" value={v.schoolGrade ?? ''} onChange={(e) => set('schoolGrade', e.target.value || null)} aria-describedby="grade-hint">
             <option value="">{t.child.gradeNone}</option>
-            {grades.map((g) => <option key={g} value={g}>{g}</option>)}
+            {grades.map((g) => <option key={g} value={g}>{(t.child.grades as Record<string, string>)[g] ?? g}</option>)}
           </select>
           <p id="grade-hint" className="field-hint">{t.child.gradeHint}</p>
         </div>

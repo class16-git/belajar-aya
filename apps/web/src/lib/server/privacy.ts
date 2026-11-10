@@ -3,6 +3,7 @@ import { prisma } from '@atlas/database';
 import { curriculumVersion } from '@atlas/curriculum';
 import type { Auth } from './session';
 import { isoFromDbDate } from './children';
+import { clearRateLimits } from './rate-limit';
 
 /** Portable export of everything stored for the family. Secrets (hashes, session ids) are excluded. */
 export async function buildExport(auth: Auth) {
@@ -39,4 +40,6 @@ export async function buildExport(auth: Auth) {
 /** Hard delete. Cascades remove family, children, attempts, observations, logs and sessions. */
 export async function deleteFamily(auth: Auth): Promise<void> {
   await prisma.parentUser.delete({ where: { id: auth.user.id } });
+  const u = auth.user.id;
+  await clearRateLimits([`signin-email:${auth.user.email}`, `pin-set:${u}`, `pin-user:${u}`, `delete:${u}`, `pin:${auth.session.id}`]);
 }
