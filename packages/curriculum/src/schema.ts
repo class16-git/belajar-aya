@@ -131,6 +131,12 @@ export const GENERATOR_IDS = [
   // Slice D (Grade 1 unplugged robotics, on screen): trace a program, find the wrong step.
   'robot-trace',
   'robot-debug',
+  // Kindergarten: teen numbers as ten and some ones; number bonds within 20 (reuse existing renderers).
+  'teen-frames',
+  'teen-equation',
+  'bond-20',
+  'bond-20-equation',
+  'picture-story',
 ] as const;
 export type GeneratorId = (typeof GENERATOR_IDS)[number];
 

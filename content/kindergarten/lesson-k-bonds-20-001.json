@@ -1,0 +1,81 @@
+{
+  "id": "lesson-k-bonds-20-001",
+  "skillId": "K-MATH-BONDS-20",
+  "title": {
+    "en": "Bonds within 20",
+    "id": "Ikatan bilangan sampai 20"
+  },
+  "ageBand": "kindergarten",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": {
+    "en": "Find the missing part of a number bond with a whole up to 20.",
+    "id": "Menemukan bagian yang hilang dari ikatan bilangan dengan keseluruhan sampai 20."
+  },
+  "prerequisites": [
+    "MATH-G1-BONDS-10",
+    "K-MATH-TEENS"
+  ],
+  "cpaStage": "pictorial",
+  "materials": [
+    {
+      "en": "Number bond diagram",
+      "id": "Diagram ikatan bilangan"
+    }
+  ],
+  "generator": "bond-20",
+  "hintLadder": [
+    {
+      "en": "The whole is {whole}. One part is {part}. What is the other part?",
+      "id": "Keseluruhannya {whole}. Satu bagian adalah {part}. Berapa bagian lainnya?"
+    },
+    {
+      "en": "The two parts together make the whole.",
+      "id": "Kedua bagian bersama menjadi keseluruhan."
+    },
+    {
+      "en": "Use the ten-frames: fill {part}, then count how many more to reach {whole}.",
+      "id": "Gunakan bingkai sepuluh: isi {part}, lalu hitung berapa lagi untuk mencapai {whole}."
+    },
+    {
+      "en": "Start at {part} and count on to {whole}.",
+      "id": "Mulai dari {part} lalu hitung lanjut sampai {whole}."
+    },
+    {
+      "en": "{part} and {missing} make {whole}. Let’s try a new one.",
+      "id": "{part} dan {missing} menjadi {whole}. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "PART_WHOLE_CONFUSION",
+    "WHOLE_AS_PART",
+    "ADDED_PARTS",
+    "COUNTING_ERROR"
+  ],
+  "safetyNotes": [],
+  "parentNotes": [
+    {
+      "en": "Level 1 always splits off a ten (14 is 10 and 4); later levels use any split.",
+      "id": "Tingkat 1 selalu memisahkan sepuluh (14 adalah 10 dan 4); tingkat berikutnya memakai pemisahan apa pun."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Use two egg cartons and up to 20 large objects: split them into two groups and name both parts.",
+    "id": "Gunakan dua wadah telur dan sampai 20 benda besar: bagi menjadi dua kelompok dan sebut kedua bagiannya."
+  },
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.k.bonds-20"
+  ]
+}

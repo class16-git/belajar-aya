@@ -1,0 +1,80 @@
+{
+  "id": "lesson-k-teens-002",
+  "skillId": "K-MATH-TEENS",
+  "title": {
+    "en": "Teen number sentences",
+    "id": "Kalimat bilangan belasan"
+  },
+  "ageBand": "kindergarten",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": {
+    "en": "Write teen numbers as 10 and some more ones.",
+    "id": "Menulis bilangan belasan sebagai 10 dan beberapa satuan."
+  },
+  "prerequisites": [
+    "MATH-G1-COUNT-20"
+  ],
+  "cpaStage": "abstract",
+  "materials": [
+    {
+      "en": "Number pad",
+      "id": "Papan angka"
+    }
+  ],
+  "generator": "teen-equation",
+  "hintLadder": [
+    {
+      "en": "Read the number sentence. Which number is missing?",
+      "id": "Baca kalimat bilangannya. Bilangan mana yang hilang?"
+    },
+    {
+      "en": "Teen numbers are made of a ten and some ones.",
+      "id": "Bilangan belasan terdiri dari sepuluh dan beberapa satuan."
+    },
+    {
+      "en": "Look at the number bond: 10 is one part.",
+      "id": "Lihat ikatan bilangan: 10 adalah satu bagian."
+    },
+    {
+      "en": "The ones are the {missing} after the ten.",
+      "id": "Satuannya adalah {missing} setelah sepuluh."
+    },
+    {
+      "en": "10 + {missing} = {whole}. Let’s try a new one.",
+      "id": "10 + {missing} = {whole}. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "TEEN_ONES_ONLY",
+    "PART_WHOLE_CONFUSION",
+    "WHOLE_AS_PART",
+    "COUNTING_ERROR"
+  ],
+  "safetyNotes": [],
+  "parentNotes": [
+    {
+      "en": "Saying the number aloud helps: “four-teen” has the four in it.",
+      "id": "Mengucapkan bilangannya membantu: “empat belas” mengandung empat."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Teen cards: write 10 on one card and 1–9 on small cards; place a small card over the 0 to make 13, 17…",
+    "id": "Kartu belasan: tulis 10 di satu kartu dan 1–9 di kartu kecil; tutup angka 0 dengan kartu kecil untuk membuat 13, 17…"
+  },
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.k.tens-ones-intro"
+  ]
+}

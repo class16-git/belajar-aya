@@ -5,7 +5,7 @@ import { prisma, type ChildProfile } from '@atlas/database';
 import { ageContext } from './children';
 import { config } from './config';
 import { engineInput, toEngineState } from './learning';
-import { availabilityForBand, cardBandsFor, interactiveBandForGrade } from './availability';
+import { availabilityForBand, cardBandsFor, interactiveBandForGrade, interactiveBandsForGrade } from './availability';
 
 export interface SkillProgress {
   skill: Skill;
@@ -39,7 +39,11 @@ export async function buildProgress(child: ChildProfile, now = new Date()) {
   ]);
   const mById = new Map(mastery.map((m) => [m.skillId, m]));
 
-  const interactiveSkills = catalog.skills.filter((s) => s.band === 'g1').sort((a, b) => a.order - b.order);
+  // On-screen skills for this learner's grade (Kindergarten: K + Grade 1), in sequence order.
+  const bands = interactiveBandsForGrade(child.schoolGrade);
+  const interactiveSkills = catalog.skills
+    .filter((s) => (bands.length ? bands : ['g1']).includes(s.band) && s.evidence === 'digital_attempts')
+    .sort((a, b) => a.order - b.order);
   const skills: SkillProgress[] = interactiveSkills.map((skill) => {
     const m = mById.get(skill.id);
     const st = m ? toEngineState(m) : null;

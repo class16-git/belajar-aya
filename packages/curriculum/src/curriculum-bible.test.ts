@@ -192,12 +192,13 @@ describe('slice C (age 4–5 and Kindergarten caregiver-led cards)', () => {
     const cat = getCatalog();
     const objectives = cat.objectives.filter((o) => (o.stage === 'age4_5' || o.stage === 'k') && o.framework !== 'islamic_studies');
     const covered = objectives.filter((o) => cat.lessons.some((l) => l.objectiveIds.includes(o.id)));
-    // K number bonds to 20 and teen numbers are on-screen work, planned as the next slice.
-    expect(objectives.filter((o) => !covered.includes(o)).map((o) => o.id).sort()).toEqual(['math.k.bonds-20', 'math.k.tens-ones-intro']);
+    // Every objective is now covered; K bonds to 20 and teen numbers are on-screen lessons.
+    expect(objectives.filter((o) => !covered.includes(o)).map((o) => o.id)).toEqual([]);
     for (const l of cat.lessons.filter((x) => x.ageBand === 'prek' || x.ageBand === 'kindergarten')) {
-      expect(l.mode, l.id).toBe('offline');
       if (l.mode === 'offline') expect(l.hazards.chokingRisk, l.id).toBe(false);
-      expect(l.reviewStatus, l.id).toBe('reviewed');
+      else expect(['math.k.bonds-20', 'math.k.tens-ones-intro', 'math.k.picture-word-problems']).toContain(l.objectiveIds[0]);
+      // Offline cards were owner-approved; on-screen K lessons await the owner's own review (no blanket approval).
+      expect(l.reviewStatus, l.id).toBe(l.mode === 'offline' ? 'reviewed' : 'agent_reviewed');
     }
   });
 });

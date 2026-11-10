@@ -138,7 +138,7 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
 
   const numbers = Object.fromEntries(Object.entries(p).filter((e): e is [string, number] => typeof e[1] === 'number'));
   const question =
-    p.kind === 'bar-model-story'
+    p.kind === 'bar-model-story' || p.kind === 'picture-story'
       ? fmt(t.learn.story[p.context][p.op], { a: p.a, b: p.b })
       : fmt(t.learn.q[act.generator], { part: 'knownPart' in p ? p.knownPart : 0, ...numbers });
   const revealed = phase === 'correct' || phase === 'solution' ? (solution?.answer ?? null) : null;
@@ -151,7 +151,7 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
         ? fmt(t.learn.solutionRobotTrace, { end: solution.answer })
       : act.generator === 'robot-debug'
         ? fmt(t.learn.solutionRobotDebug, { wrong: solution.answer })
-      : act.generator === 'bar-model-story'
+      : act.generator === 'bar-model-story' || act.generator === 'picture-story'
         ? fmt(t.learn.solutionStory, sv)
         : act.generator.startsWith('add-')
           ? fmt(t.learn.solutionAdd, sv)
@@ -286,6 +286,20 @@ export function ActivityRunner({ sessionId }: { sessionId: string }) {
                 <RobotGrid size={p.size} start={p.start} program={p.program} target={p.target} pathSteps={showRep ? p.program.length : 0} />
                 <RobotProgram program={p.program} highlight={revealed} />
               </div>
+            )}
+            {p.kind === 'picture-story' && (
+              <>
+                <p className="mb-3 text-base text-muted">{t.learn.q['picture-story']}</p>
+                {p.op === 'add'
+                  ? <TenFrame filled={p.a} second={p.b} mode="count" marked={marked} onToggle={toggle} disabled={locked && phase !== 'wrong'} />
+                  : <TenFrame filled={p.a} crossed={p.b} mode="count" marked={marked} onToggle={toggle} disabled={locked && phase !== 'wrong'} />}
+                <p className="mt-3 text-base text-muted">{t.learn.tapToCount} <span aria-live="polite">{fmt(t.learn.counted, { n: marked.size })}</span></p>
+                {showRep && (
+                  <div className="mt-4">
+                    {p.op === 'add' ? <Bond whole={null} left={p.a} right={p.b} revealed={revealed} /> : <Bond whole={p.a} left={p.b} right={null} revealed={revealed} />}
+                  </div>
+                )}
+              </>
             )}
             {p.kind === 'bond-equation' && (
               <>

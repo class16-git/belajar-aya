@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { coverage, coverageMatrix, getCatalog, isVisible, reviewQueue, type CoverageStatus } from '@atlas/curriculum';
-import { FRAMEWORKS, STAGES } from '@atlas/shared';
+import { AGE_BANDS, FRAMEWORKS, STAGES } from '@atlas/shared';
 import { ParentShell } from '@/components/ui/parent-shell';
 import { getDictionary } from '@/lib/i18n';
 import { config } from '@/lib/server/config';
@@ -25,7 +25,8 @@ export default async function CurriculumPage() {
   const rows = coverage(cat);
   const matrix = coverageMatrix(rows);
   const queue = reviewQueue(cat);
-  const bands = ['g1', 'preschool', 'toddler'] as const;
+  // Every band that has skills, youngest first (now includes ages 3–6, Kindergarten and robotics).
+  const bands = AGE_BANDS.filter((b) => cat.skills.some((s) => s.band === b));
 
   return (
     <ParentShell t={t} active="curriculum">

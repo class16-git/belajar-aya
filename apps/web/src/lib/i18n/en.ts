@@ -1,6 +1,7 @@
 /** English UI strings. `id.ts` must have exactly the same keys (enforced by tests). */
 export const en = {
   app: {
+    credit: 'Made with ❤ by Ayah, for Kakak and Adek',
     name: 'Atlas',
     tagline: 'A calm, private learning space for your family',
     skip: 'Skip to main content',
@@ -184,6 +185,11 @@ export const en = {
       'bar-model-story': 'Read the story. Use the bar model to help.',
       'robot-trace': 'Follow the arrows from the robot. On which star does it stop?',
       'robot-debug': 'One step is wrong, so the robot misses the flag. Which step is wrong?',
+      'teen-frames': 'One ten-frame is full. How many counters are there altogether?',
+      'teen-equation': 'Find the missing number.',
+      'bond-20': 'The whole is {whole}. One part is {part}. What is the other part?',
+      'bond-20-equation': 'Find the missing number.',
+      'picture-story': 'Listen to the story, then count the counters to answer.',
     },
     robot: {
       program: 'Program',
@@ -233,6 +239,7 @@ export const en = {
       TRACE_STOPPED_EARLY: 'Close! Did you use every arrow? Check the last one.',
       LEFT_RIGHT_CONFUSION: 'Look again at the left and right arrows.',
       DEBUG_ADJACENT_STEP: 'So close! Follow the arrows one at a time and stop where the robot first goes the wrong way.',
+      TEEN_ONES_ONLY: 'Don’t forget the full ten-frame: that is 10 already.',
       UNCLASSIFIED: 'Let’s look at the picture together.',
     },
     solution: '{part} and {missing} make {whole}.',
@@ -473,6 +480,7 @@ export const en = {
       TRACE_STOPPED_EARLY: 'Stops tracing one step early',
       LEFT_RIGHT_CONFUSION: 'Mixes up left and right when tracing',
       DEBUG_ADJACENT_STEP: 'Finds a step next to the real bug',
+      TEEN_ONES_ONLY: 'Counts only the loose ones in a teen number (forgets the ten)',
       UNCLASSIFIED: 'Other',
     },
     tryOffline: {
@@ -488,6 +496,7 @@ export const en = {
       TRACE_STOPPED_EARLY: 'Play robot on the floor: point to each arrow card as you take that step.',
       LEFT_RIGHT_CONFUSION: 'Put a sticker on the left hand and play “turn left / turn right” games.',
       DEBUG_ADJACENT_STEP: 'Run a floor program one card at a time and freeze when it goes wrong.',
+      TEEN_ONES_ONLY: 'Fill an egg carton with 10, add a few more, and always say “ten…” first.',
       UNCLASSIFIED: 'Talk through the problem with real objects.',
     },
     gradeNotSupported: 'No lessons for {grade} yet. Atlas currently has Kindergarten and Grade 1 maths; more grades are planned. You can change the grade in the learner’s settings.',

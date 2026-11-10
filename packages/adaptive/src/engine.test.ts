@@ -309,6 +309,37 @@ describe('slice D golden traces: Grade 1 robotics (trace and debug)', () => {
   });
 });
 
+describe('Kindergarten: Kindergarten skills plus Grade 1 number sense', () => {
+  it('a K learner starts with counting; teen numbers unlock after counting, bonds to 20 after bonds to 10 and teens', () => {
+    const l = new Learner();
+    const k = (now: Date, focus: string | null = null) => ({ ...l.input(now, focus), band: 'kindergarten' as const, bands: ['kindergarten' as const, 'g1' as const] });
+    const first = recommendNext(k(at(0)));
+    expect(first.kind === 'interactive' && first.skillId).toBe(COUNT);
+    expect(lessonChoices(k(at(0)), first).every((c) => c.skillId === COUNT)).toBe(true);
+    for (const f of ['count-ten-frame', 'count-scattered', 'count-ten-frame', 'count-scattered']) l.answer(ok(COUNT, f));
+    const teens = recommendNext(k(at(10), 'K-MATH-TEENS'));
+    expect(teens.kind === 'interactive' && teens.ruleId).toBe('R3_PARENT_FOCUS');
+    expect(teens.kind === 'interactive' && teens.lessonId).toBe('lesson-k-teens-001');
+    const locked = recommendNext(k(at(10), 'K-MATH-BONDS-20'));
+    expect(locked.kind === 'interactive' && locked.skillId).not.toBe('K-MATH-BONDS-20');
+    // A Grade 1 learner never sees Kindergarten-only skills.
+    expect(lessonChoices(l.input(at(10)), recommendNext(l.input(at(10)))).some((c) => c.skillId.startsWith('K-'))).toBe(false);
+  });
+});
+
+describe('lesson choices show variety', () => {
+  it('after counting is secure: the suggestion, then one lesson from each other unlocked skill (unfinished first)', () => {
+    const l = new Learner();
+    for (const f of ['count-ten-frame', 'count-scattered', 'count-ten-frame', 'count-scattered']) l.answer(ok(COUNT, f));
+    const input = l.input(at(10));
+    const choices = lessonChoices(input, recommendNext(input));
+    expect(choices[0]!.skillId).toBe(BONDS);
+    expect(new Set(choices.map((c) => c.skillId)).size).toBe(choices.length); // no skill repeated while others are available
+    expect(choices.map((c) => c.skillId)).toContain('ROBO-G1-DEBUG');
+    expect(choices.at(-1)!.skillId).toBe(COUNT); // already-secure skill comes last
+  });
+});
+
 describe('offline card recommendations', () => {
   it('suggests varied skills, least recently observed first', () => {
     const cards = getCatalog().lessons.filter((l) => l.mode === 'offline');
