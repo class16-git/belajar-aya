@@ -47,6 +47,7 @@ model Family {
   children       ChildProfile[]
   consents       ConsentRecord[]
   auditEvents    AuditEvent[]
+  reviewDecisions ContentReviewDecision[]
 }
 
 /// Opaque session; only the SHA-256 of the cookie token is stored.
@@ -288,4 +289,33 @@ model ShelfEntry {
   state     ShelfState
   updatedAt DateTime     @updatedAt
   @@id([childId, bookId])
+}
+
+enum ContentReviewDecisionKind {
+  approve
+  reject
+}
+
+enum ContentReviewerRole {
+  parent
+  educator
+}
+
+/// A parent's (or educator's) human review of one expansion unit or reading at one version. Stored per family and
+/// applied to the content files offline (apps/web/scripts/apply-reviews.mjs). Never a religious/scholarly approval.
+model ContentReviewDecision {
+  id           String                    @id @default(cuid())
+  familyId     String
+  family       Family                    @relation(fields: [familyId], references: [id], onDelete: Cascade)
+  /// Content id (unit-* or reading-*), not a foreign key.
+  itemId       String
+  itemVersion  String
+  decision     ContentReviewDecisionKind
+  /// Initials typed by the reviewer.
+  reviewerName String
+  reviewerRole ContentReviewerRole
+  /// Reason (required for reject); plain text, always rendered as text.
+  note         String                    @default("")
+  createdAt    DateTime                  @default(now())
+  @@index([familyId, itemId, createdAt])
 }
