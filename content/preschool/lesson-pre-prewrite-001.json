@@ -125,14 +125,17 @@
       "id": "Otot tangan yang kuat datang sebelum tulisan rapi. Pujilah usahanya, bukan kerapiannya."
     }
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
       "physical-safety-checklist",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0",
   "copyrightStatus": "original",

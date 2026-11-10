@@ -42,5 +42,8 @@
       "cache": false,
       "persistent": true
     }
-  }
+  },
+  "globalDependencies": [
+    "content/**"
+  ]
 }

@@ -7,7 +7,7 @@
   "arabicPhrases": [],
   "contentVersion": "1.0.0",
   "safetyNotes": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "id": "lesson-robo-g1-trace-001",
   "skillId": "ROBO-G1-DEBUG",
   "objectiveIds": [
@@ -77,6 +77,9 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   }
 }

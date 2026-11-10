@@ -24,7 +24,7 @@
       "id": "Orang dewasa memegang ponsel dan memastikan tutup baterai senter terkunci rapat; baterai kancing berbahaya jika tertelan."
     }
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "mode": "offline",
   "cpaStage": "not_applicable",
   "prerequisites": [],
@@ -44,7 +44,10 @@
       "physical-safety-checklist",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "id": "lesson-robo-g1-sensors-001",
   "skillId": "ROBO-G1-SENSORS",

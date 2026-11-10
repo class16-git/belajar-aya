@@ -62,7 +62,7 @@
     "en": "Two hands: put up to 10 large blocks into two groups on the table. Ask: how many altogether? Then push them together and count to check.",
     "id": "Dua tangan: letakkan sampai 10 balok besar menjadi dua kelompok di meja. Tanyakan: berapa semuanya? Lalu satukan dan hitung untuk memeriksa."
   },
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -70,7 +70,10 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0",
   "framework": "singapore_math",

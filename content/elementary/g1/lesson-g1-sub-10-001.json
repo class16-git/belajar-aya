@@ -63,7 +63,7 @@
     "en": "Snack plate: put up to 10 pieces of fruit on a plate, eat some together, and ask how many are left.",
     "id": "Piring camilan: taruh sampai 10 potong buah di piring, makan beberapa bersama, lalu tanyakan berapa yang tersisa."
   },
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -71,7 +71,10 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0",
   "framework": "singapore_math",

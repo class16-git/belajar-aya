@@ -63,7 +63,7 @@
     "en": "Fact family: with 8 blocks, make 5 and 3. Say together: 5 + 3 = 8, 3 + 5 = 8, 8 − 3 = 5, 8 − 5 = 3.",
     "id": "Keluarga fakta: dengan 8 balok, buat 5 dan 3. Ucapkan bersama: 5 + 3 = 8, 3 + 5 = 8, 8 − 3 = 5, 8 − 5 = 3."
   },
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -71,7 +71,10 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0",
   "framework": "singapore_math",
