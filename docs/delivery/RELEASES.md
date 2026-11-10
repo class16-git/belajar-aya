@@ -1,0 +1,18 @@
+# Release record
+
+One row per production release. Each row ties a commit to the curriculum that was live and the deployment that
+served it. Rows are filled in only after the checks in [RELEASE_RUNBOOK.md](RELEASE_RUNBOOK.md) §2 pass.
+
+**How each column is filled in:**
+- **Content digest:** run `pnpm release:manifest` on that commit. From the ATL-12 release onwards, `/api/health` also reports `contentDigest`, and the two values must match.
+- **Verified live:** the values `/api/health` returned on the production domain.
+- **Rollback target:** the previous production deployment, which must be READY.
+
+| Released (UTC) | Commit / PR | Vercel deployment | Content digest (`reviewed`) | Verified live (lessons / books / passages) | Human approvals in this release | Rollback target |
+|---|---|---|---|---|---|---|
+| 2026-11-10 | `0d97af9` (PR #13, Kindergarten maths) | `dpl_8a3WZqVe8Vt8fqVnsL3LLDKNfjgr` READY | `88019be7c54dc76f` (from the checkout; health had no digest yet) | `release: 0d97af9`; 52 / 12 / 7 | None new. The 5 K lessons stayed `agent_reviewed` and hidden. | `dpl_CyTRnkMJLWzua65ADY4xgPdnAouy` (`3a2e074`, PR #12) READY |
+| 2026-11-10 | `3a2e074` (PR #12, Reading Garden publication) | `dpl_CyTRnkMJLWzua65ADY4xgPdnAouy` READY | not recorded (before ATL-12) | `{"ok":true,"db":true}` (health had no counts yet) | Books and passages approved by `owner`, under the owner's standing approval | earlier production deployment |
+
+The Vercel build log for `0d97af9` could not be read through the API: only 12 lines came back. PR #13 added no
+migration. The previous migration, `20261110120000_reading_garden`, was applied in production during an earlier
+deployment (logged as "Applying migration").

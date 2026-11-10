@@ -1,9 +1,10 @@
 import { getCatalog, visibleInteractiveLessons } from '@atlas/curriculum';
-import { exactCalendarAge, safetyPolicy } from '@atlas/shared';
+import { exactCalendarAge, mulberry32, safetyPolicy } from '@atlas/shared';
 import { describe, expect, it } from 'vitest';
 import {
   initialState,
   masteryStatus,
+  unlocksDependants,
   updateMastery,
   type Evidence,
   type MasteryState,
@@ -337,6 +338,80 @@ describe('lesson choices show variety', () => {
     expect(new Set(choices.map((c) => c.skillId)).size).toBe(choices.length); // no skill repeated while others are available
     expect(choices.map((c) => c.skillId)).toContain('ROBO-G1-DEBUG');
     expect(choices.at(-1)!.skillId).toBe(COUNT); // already-secure skill comes last
+  });
+});
+
+describe('mastery lapse after sustained errors (audit ATL-02)', () => {
+  const mastered = () => {
+    const l = new Learner();
+    for (const f of ['make-ten-frame', 'number-bond', 'make-ten-frame', 'number-bond']) l.answer(ok(BONDS, f));
+    l.answer({ ...ok(BONDS, 'number-bond'), at: at(60 * 24) });
+    expect(l.mastery.get(BONDS)!.phase).toBe('mastered');
+    return l;
+  };
+  it('replays the audit counterexample: twenty failures after mastery no longer leave it mastered or unlocking', () => {
+    const l = mastered();
+    for (let i = 0; i < 20; i++) l.answer({ ...ok(BONDS, 'number-bond'), correct: false, at: at(60 * 25 + i) });
+    const s = l.mastery.get(BONDS)!;
+    expect(s.phase).toBe('learning');
+    expect(masteryStatus(s, at(60 * 26))).toBe('in_progress');
+    expect(unlocksDependants(s)).toBe(false);
+    expect(l.rules.flat()).toContain('M10_MASTERY_LAPSED');
+  });
+  it('one isolated slip after mastery keeps mastery (documented tolerance)', () => {
+    const l = mastered();
+    l.answer({ ...ok(BONDS, 'number-bond'), correct: false, at: at(60 * 25) });
+    expect(l.mastery.get(BONDS)!.phase).toBe('mastered');
+    expect(unlocksDependants(l.mastery.get(BONDS))).toBe(true);
+  });
+  it('lapses at the threshold: the first error that takes the score below 0.6 relocks dependants', () => {
+    const l = mastered();
+    let n = 0;
+    while (l.mastery.get(BONDS)!.phase === 'mastered' && n < 20) {
+      l.answer({ ...ok(BONDS, 'number-bond'), correct: false, at: at(60 * 25 + n) });
+      n++;
+    }
+    expect(l.mastery.get(BONDS)!.score).toBeLessThan(0.6);
+    expect(n).toBeGreaterThanOrEqual(3); // sustained, not a single slip
+    // Dependants re-lock: addition (needs bonds) is no longer offered by the engine.
+    const rec = recommendNext(l.input(at(60 * 26)));
+    expect(rec.kind === 'interactive' && rec.skillId).not.toBe('MATH-G1-ADD-10');
+  });
+  it('legacy rows already stored as mastered with a collapsed score are not treated as mastered', () => {
+    const s = { ...initialState(BONDS), phase: 'mastered' as const, score: 0.1, attempts: 25 };
+    expect(masteryStatus(s, at(0))).toBe('in_progress');
+    expect(unlocksDependants(s)).toBe(false);
+  });
+});
+
+describe('every recommendation respects prerequisites (audit ATL-04)', () => {
+  it('replays the audit counterexample: an unpublished prerequisite never lets the dependent appear as "light practice"', () => {
+    const l = new Learner();
+    // Catalog where the prerequisite (counting) has no visible lessons: only bonds lessons are published.
+    const input = { ...l.input(at(0)), lessons: l.input(at(0)).lessons.filter((x) => x.skillId === BONDS) };
+    const rec = recommendNext(input);
+    expect(rec.kind).toBe('none');
+    expect(rec.ruleId).toBe('R9_NO_ELIGIBLE_CONTENT');
+  });
+  it('property: across partial catalogs and random evidence, ordinary recommendations satisfy prerequisites', () => {
+    const cat = getCatalog();
+    const lessons = visibleInteractiveLessons('agent_reviewed');
+    let checked = 0;
+    for (let seed = 1; seed <= 300; seed++) {
+      const rng = mulberry32(seed);
+      const l = new Learner();
+      const n = Math.floor(rng() * 12);
+      const skills = ['MATH-G1-COUNT-20', BONDS, 'MATH-G1-ADD-10', 'MATH-G1-SUB-10'];
+      for (let i = 0; i < n; i++) l.answer({ ...ok(skills[Math.floor(rng() * skills.length)]!, rng() < 0.5 ? 'a' : 'b'), correct: rng() < 0.7 });
+      const subset = lessons.filter(() => rng() < 0.6);
+      const input = { ...l.input(at(100)), lessons: subset };
+      const rec = recommendNext(input);
+      if (rec.kind !== 'interactive' || rec.ruleId.startsWith('R2_')) continue;
+      const skill = cat.skills.find((x) => x.id === rec.skillId)!;
+      for (const p of skill.prerequisites) expect(unlocksDependants(l.mastery.get(p)), `${seed}: ${rec.ruleId} ${rec.skillId} needs ${p}`).toBe(true);
+      checked++;
+    }
+    expect(checked).toBeGreaterThan(50);
   });
 });
 

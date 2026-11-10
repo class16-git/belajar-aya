@@ -18,7 +18,8 @@
     "religious-approve": "tsx scripts/religious-approve.ts",
     "coverage": "tsx scripts/coverage.ts",
     "library-approve": "tsx scripts/library-approve.ts",
-    "library-withdraw": "LIBRARY_ACTION=withdraw tsx scripts/library-approve.ts"
+    "library-withdraw": "LIBRARY_ACTION=withdraw tsx scripts/library-approve.ts",
+    "release-manifest": "tsx scripts/release-manifest.ts"
   },
   "dependencies": {
     "@atlas/shared": "workspace:*",
@@ -30,6 +31,6 @@
     "tsx": "4.23.15",
     "typescript": "5.9.3",
     "typescript-eslint": "8.72.0",
-    "vitest": "3.2.7"
+    "vitest": "4.1.12"
   }
 }

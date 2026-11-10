@@ -162,6 +162,32 @@ describe('owner review (2026-11-10)', () => {
       expect(b.accessMode).toBe('external_link');
       expect(b.rights.titleLicenseConfirmed).toBe(false); // approval never changes rights facts
     }
-    for (const p of lib.passages) expect(isPassageVisible(p, 'reviewed'), p.id).toBe(true);
+    // Passages corrected after the audit (ATL-08/09) await the owner's re-review; the rest stay published.
+    const reReview = ['passage-g6-advert-report', 'passage-k-red-kite'];
+    for (const p of lib.passages) expect(isPassageVisible(p, 'reviewed'), p.id).toBe(!reReview.includes(p.id));
+  });
+});
+
+describe('literacy content integrity (audit ATL-08, ATL-09)', () => {
+  it('ATL-09: an "inference" answer is never stated verbatim in the passage', () => {
+    for (const p of lib.passages) {
+      for (const q of p.questions.filter((x) => x.kind === 'inference')) {
+        for (const loc of ['en', 'id'] as const) {
+          const answer = q.choices[loc][q.answer]!.toLowerCase().replace(/[.!?]$/, '');
+          const text = p.paragraphs[loc].join(' ').toLowerCase();
+          if (answer.split(/\s+/).length <= 2) expect(text, `${p.id}/${q.id} ${loc}`).not.toMatch(new RegExp(`\\b${answer}\\b`));
+        }
+      }
+    }
+  });
+  it('ATL-08: passages that describe a study are labelled as invented examples in both languages and teach what to check', () => {
+    for (const p of lib.passages.filter((x) => /study|research|team followed/i.test(x.paragraphs.en.join(' ')))) {
+      expect(p.title.en.toLowerCase()).toContain('invented');
+      expect(p.title.id.toLowerCase()).toContain('rekaan');
+      expect(p.paragraphs.en[0]).toMatch(/made-up/);
+      expect(p.paragraphs.id[0]).toMatch(/rekaan/);
+      expect(p.paragraphs.en.join(' ')).toMatch(/does not prove/);
+      expect(p.questions.some((q) => /check/i.test(q.prompt.en))).toBe(true);
+    }
   });
 });

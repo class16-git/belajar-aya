@@ -1,3 +1,4 @@
+import { randomUUID } from 'node:crypto';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { passageForClient } from '@atlas/curriculum';
@@ -32,7 +33,7 @@ export default async function ReadPassagePage({ params }: { params: Promise<{ pa
             </p>
           ))}
         </article>
-        <Comprehension passageId={view.id} questions={view.questions} />
+        <Comprehension passageId={view.id} attemptId={randomUUID()} questions={view.questions} />
       </div>
     </ChildShell>
   );

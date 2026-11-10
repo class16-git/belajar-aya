@@ -83,8 +83,8 @@
   },
   "variations": [
     {
-      "en": "Plant a bean in a clear cup and watch the real cycle.",
-      "id": "Tanam kacang di gelas bening dan amati siklus sebenarnya."
+      "en": "Look at a real plant at home or in the park together: find a bud, a flower and, if you can, a seed pod still on the plant.",
+      "id": "Amati tanaman sungguhan di rumah atau di taman bersama: cari kuncup, bunga, dan jika bisa, polong biji yang masih menempel di tanaman."
     }
   ],
   "hazards": {
@@ -113,19 +113,17 @@
       "id": "Nama benua bisa menunggu; gagasan besarnya adalah daratan dan air, serta makhluk hidup berubah secara berurutan."
     }
   ],
-  "reviewStatus": "reviewed",
+  "reviewStatus": "agent_reviewed",
   "review": {
     "agentChecks": [
       "schema",
       "physical-safety-checklist",
+      "hazard-keyword-consistency",
       "bilingual-parity",
       "tone"
-    ],
-    "reviewedBy": "owner",
-    "reviewerRole": "parent",
-    "reviewedAt": "2026-11-10"
+    ]
   },
-  "contentVersion": "1.0.0",
+  "contentVersion": "1.1.0",
   "copyrightStatus": "original",
   "namcReferenceStatus": "not_applicable",
   "reviewFlags": [],

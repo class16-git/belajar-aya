@@ -1,33 +1,29 @@
 import { prisma } from '@atlas/database';
-import { getCatalog, isVisible } from '@atlas/curriculum';
+import { contentManifest } from '@atlas/curriculum';
 import { NextResponse } from 'next/server';
 import { config } from '@/lib/server/config';
-import { libraryView } from '@/lib/server/library';
 import { logError } from '@/lib/server/log';
 
 export const dynamic = 'force-dynamic';
 
 /**
  * Liveness plus release reconciliation: the deployed commit and how much content this environment shows children.
- * Counts only — no family, learner or content data.
+ * Counts and a content digest only — no family, learner or content data (ATL-12).
  */
 export async function GET() {
   try {
     await prisma.$queryRaw`SELECT 1`;
-    const c = getCatalog();
-    const lib = libraryView();
+    const m = contentManifest(config.minReview);
     return NextResponse.json({
       ok: true,
       db: true,
-      curriculumVersion: c.curriculumVersion,
+      curriculumVersion: m.curriculumVersion,
       ai: 'disabled',
       release: (process.env.VERCEL_GIT_COMMIT_SHA ?? 'local').slice(0, 7),
-      minReview: config.minReview,
-      visible: {
-        lessons: c.lessons.filter((l) => isVisible(l, config.minReview)).length,
-        books: lib.books.length,
-        passages: lib.passages.length,
-      },
+      deployment: process.env.VERCEL_DEPLOYMENT_ID ?? null,
+      minReview: m.minReview,
+      contentDigest: m.contentDigest,
+      visible: m.visible,
     });
   } catch (e) {
     logError('health.failed', e);

@@ -63,7 +63,7 @@
     "en": "Write a missing-number sentence on paper; your child builds it with objects and fills the gap.",
     "id": "Tulis kalimat bilangan dengan bilangan hilang di kertas; anak menyusunnya dengan benda dan mengisi bagian kosong."
   },
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -71,7 +71,10 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0",
   "framework": "singapore_math",

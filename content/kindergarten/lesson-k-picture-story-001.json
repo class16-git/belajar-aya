@@ -65,7 +65,7 @@
     "en": "Act the story out with toys first, then count them together.",
     "id": "Peragakan ceritanya dengan mainan dulu, lalu hitung bersama."
   },
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -73,7 +73,10 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0",
   "framework": "singapore_math",

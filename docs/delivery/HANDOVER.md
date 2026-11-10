@@ -1,3 +1,7 @@
+> **Historical document (Phase 0 + 1, superseded).** Atlas has since been merged and deployed. For the current
+> state, see [FINAL_HANDOVER.md](FINAL_HANDOVER.md), [RELEASES.md](RELEASES.md) and
+> [RELEASE_SCOPE.md](RELEASE_SCOPE.md).
+
 # Handover — Atlas Phase 0 + 1
 
 ## What you are receiving

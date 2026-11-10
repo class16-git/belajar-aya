@@ -2,7 +2,7 @@
  * Rule-based mastery model (docs/spec/ai/ADAPTIVE_ENGINE.md). MVP heuristic — NOT psychometrically
  * validated; thresholds are configuration to be tuned with educator feedback.
  */
-export const MASTERY_MODEL_VERSION = 'mastery-rules-2026.11.1';
+export const MASTERY_MODEL_VERSION = 'mastery-rules-2026.11.2';
 
 export interface MasteryConfig {
   initialScore: number;
@@ -10,6 +10,11 @@ export interface MasteryConfig {
   supportedCorrectDelta: number;
   incorrectDelta: number;
   masteryScore: number;
+  /**
+   * A "mastered" skill lapses back to learning when sustained errors push the score below this (audit ATL-02).
+   * Below masteryScore so one isolated slip does not undo mastery; policy to be confirmed by an educator.
+   */
+  lapseScore: number;
   minIndependentCorrect: number;
   minFormats: number;
   /** Hours after reaching "secure" before the delayed retention check is due. */
@@ -24,6 +29,7 @@ export const DEFAULT_MASTERY_CONFIG: MasteryConfig = {
   supportedCorrectDelta: 0.05,
   incorrectDelta: -0.08,
   masteryScore: 0.8,
+  lapseScore: 0.6,
   minIndependentCorrect: 3,
   minFormats: 2,
   delayedCheckHours: 20,
@@ -152,12 +158,22 @@ export function updateMastery(
     s.phase = 'learning';
     s.nextReviewAt = null;
     rules.push('M9_SECURE_DROPPED');
+  } else if (s.phase === 'mastered' && s.score < cfg.lapseScore) {
+    // Sustained errors after mastery: mastery must be re-earned (and dependants re-lock) — ATL-02.
+    s.phase = 'learning';
+    s.nextReviewAt = null;
+    s.reviewStep = 0;
+    rules.push('M10_MASTERY_LAPSED');
   }
   return { state: s, rules };
 }
 
+/** A stored mastered state whose evidence has fallen below the lapse score is not treated as mastered (legacy rows). */
+const lapsed = (s: MasteryState, cfg = DEFAULT_MASTERY_CONFIG) => s.phase === 'mastered' && s.score < cfg.lapseScore;
+
 export function masteryStatus(s: MasteryState | null | undefined, now: Date): MasteryStatus {
   if (!s || s.attempts === 0) return 'not_started';
+  if (lapsed(s)) return 'in_progress';
   if (isCheckDue(s, now)) return 'review_due';
   if (s.phase === 'mastered') return 'mastered';
   if (s.phase === 'secure') return 'secure';
@@ -166,4 +182,4 @@ export function masteryStatus(s: MasteryState | null | undefined, now: Date): Ma
 
 /** Prerequisites unlock dependants once "secure"; full mastery still needs the delayed check. */
 export const unlocksDependants = (s: MasteryState | null | undefined) =>
-  !!s && (s.phase === 'secure' || s.phase === 'mastered');
+  !!s && (s.phase === 'secure' || s.phase === 'mastered') && !lapsed(s);

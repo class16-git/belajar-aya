@@ -147,7 +147,7 @@ test('child mode: only shelf books, PIN gate for external links, finished event,
   expect(html).not.toMatch(/"answer"|evidenceParagraph/);
   const forged = await page.request.post('/api/library/comprehension', { headers, data: { passageId: 'passage-g1-rain-garden', answers: { q1: 0, q2: 0, q3: 0 }, correct: 3 } });
   expect(forged.status()).toBe(400);
-  const otherStage = await page.request.post('/api/library/comprehension', { headers, data: { passageId: 'passage-g6-advert-report', answers: { q1: 0, q2: 0, q3: 0, q4: 0 } } });
+  const otherStage = await page.request.post('/api/library/comprehension', { headers, data: { passageId: 'passage-g6-advert-report', attemptId: crypto.randomUUID(), answers: { q1: 0, q2: 0, q3: 0, q4: 0 } } });
   expect(otherStage.status()).toBe(404);
   const comp = page.getByTestId('comprehension');
   await comp.getByRole('button', { name: 'Check my answers' }).click();

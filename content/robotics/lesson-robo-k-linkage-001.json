@@ -25,28 +25,32 @@
   },
   "materials": [
     {
-      "en": "Four strips of thick card (about 2 × 20 cm) cut by the adult",
-      "id": "Empat potongan karton tebal (kira-kira 2 × 20 cm) yang digunting orang dewasa"
+      "en": "Four strips of thick card (about 3 × 20 cm), cut and hole-punched by the adult before the activity",
+      "id": "Empat potongan karton tebal (kira-kira 3 × 20 cm), digunting dan dilubangi orang dewasa sebelum kegiatan"
     },
     {
-      "en": "Three paper fasteners (split pins), pushed through by the adult",
-      "id": "Tiga paku kertas (split pin), dipasang oleh orang dewasa"
+      "en": "Three pieces of thick wool, each about 15 cm long",
+      "id": "Tiga potong benang wol tebal, masing-masing kira-kira 15 cm"
     }
   ],
   "preparation": [
     {
-      "en": "Make the holes and push the fasteners through yourself; fold the legs flat.",
-      "id": "Buat lubang dan pasang paku kertas sendiri; lipat kakinya hingga rata."
+      "en": "Before your child joins you, cut the strips and punch a hole at each end and in the middle. Put the scissors and hole punch away.",
+      "id": "Sebelum anak bergabung, gunting potongan karton dan lubangi kedua ujung serta bagian tengahnya. Simpan gunting dan pelubang kertas."
+    },
+    {
+      "en": "Join the strips with wool: thread it through the holes and tie a loose double knot so the strips still turn. Trim the ends to about 2 cm.",
+      "id": "Sambungkan potongan dengan benang wol: masukkan ke lubang dan ikat simpul ganda yang longgar agar potongan masih bisa berputar. Potong sisa ujungnya hingga kira-kira 2 cm."
     }
   ],
   "steps": [
     {
-      "en": "Join two strips in an X with one fastener in the middle (like scissors handles).",
-      "id": "Satukan dua potongan membentuk X dengan satu paku kertas di tengah (seperti pegangan gunting)."
+      "en": "Show the first joint: two strips crossed in an X, tied in the middle (like scissors handles). Let your child open and close it.",
+      "id": "Tunjukkan sambungan pertama: dua potongan bersilang membentuk X, diikat di tengah (seperti pegangan gunting). Biarkan anak membuka dan menutupnya."
     },
     {
-      "en": "Add the other two strips to make a lazy-tongs shape. Push the handles together and watch the end reach out.",
-      "id": "Tambahkan dua potongan lain membentuk penjepit lipat. Dorong pegangannya dan lihat ujungnya memanjang."
+      "en": "Look at the finished lazy-tongs shape together. Push the handles together and watch the far end reach out.",
+      "id": "Amati bersama bentuk penjepit lipat yang sudah jadi. Dorong pegangannya dan lihat ujung jauhnya memanjang."
     },
     {
       "en": "Try picking up a scrunched paper ball.",
@@ -74,13 +78,13 @@
     }
   ],
   "cleanup": {
-    "en": "Keep the arm on a shelf; check the fasteners are still folded flat.",
-    "id": "Simpan lengan di rak; pastikan paku kertas masih terlipat rata."
+    "en": "Check that every knot is still tied, then keep the arm on a high shelf, out of reach of children under 3.",
+    "id": "Periksa semua simpul masih terikat, lalu simpan lengan di rak tinggi, jauh dari jangkauan anak di bawah 3 tahun."
   },
   "variations": [
     {
-      "en": "Add more strips to make the arm longer.",
-      "id": "Tambahkan potongan agar lengannya lebih panjang."
+      "en": "Add two more strips to make the arm longer.",
+      "id": "Tambahkan dua potongan lagi agar lengannya lebih panjang."
     }
   ],
   "hazards": {
@@ -103,12 +107,12 @@
       "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
     },
     {
-      "en": "The adult does all cutting and keeps scissors away from the child.",
-      "id": "Orang dewasa yang menggunting dan menjauhkan gunting dari anak."
+      "en": "The adult does all cutting and hole-punching before the activity and puts the scissors and hole punch away; nothing sharp is used while your child plays.",
+      "id": "Orang dewasa yang menggunting dan melubangi sebelum kegiatan lalu menyimpan gunting dan pelubang; tidak ada benda tajam saat anak bermain."
     },
     {
-      "en": "Only the adult handles the paper fasteners; fold their legs flat so no points stick out.",
-      "id": "Hanya orang dewasa yang memegang paku kertas; lipat kakinya rata agar tidak ada ujung yang mencuat."
+      "en": "There are no metal fasteners or loose small parts: the joints are wool tied to the card. Never leave wool loose or long, and do not use it near the neck.",
+      "id": "Tidak ada paku kertas logam atau bagian kecil yang lepas: sambungannya benang wol yang diikat ke karton. Jangan biarkan benang lepas atau panjang, dan jangan dipakai di dekat leher."
     }
   ],
   "parentNotes": [
@@ -117,19 +121,17 @@
       "id": "Mekanisme penghubung mengubah satu gerakan menjadi gerakan lain, seperti pada lengan robot dan penjepit."
     }
   ],
-  "reviewStatus": "reviewed",
+  "reviewStatus": "agent_reviewed",
   "review": {
     "agentChecks": [
       "schema",
       "physical-safety-checklist",
+      "hazard-keyword-consistency",
       "bilingual-parity",
       "tone"
-    ],
-    "reviewedBy": "owner",
-    "reviewerRole": "parent",
-    "reviewedAt": "2026-11-10"
+    ]
   },
-  "contentVersion": "1.0.0",
+  "contentVersion": "1.1.0",
   "copyrightStatus": "original",
   "namcReferenceStatus": "not_applicable",
   "reviewFlags": [

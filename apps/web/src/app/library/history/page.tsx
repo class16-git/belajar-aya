@@ -38,6 +38,7 @@ export default async function ReadingHistoryPage({ searchParams }: { searchParam
                   <td className="p-2">{name(e)}</td>
                   <td className="p-2">
                     {e.total !== null && fmt(L.history.score, { correct: e.correct ?? 0, total: e.total })}
+                    {e.kind === 'COMPREHENSION_CHECK' && <span className="ml-2 chip border-sand bg-linen text-bark">{e.firstAttempt ? L.history.firstTry : L.history.review}</span>}
                     {e.listening !== null && <span className="mr-2">{L.record.listening}: {e.listening}</span>}
                     {e.decoding !== null && <span>{L.record.decoding}: {e.decoding}</span>}
                   </td>

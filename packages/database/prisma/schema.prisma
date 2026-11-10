@@ -256,7 +256,14 @@ model ReadingEvent {
   passageId      String?
   kind           ReadingEventKind
   observedAt     DateTime
-  parentAssisted Boolean          @default(false)
+  /// null = unknown (e.g. a child-mode check: Atlas cannot tell whether a grown-up helped). Audit ATL-05.
+  parentAssisted Boolean?         @default(false)
+  /// Server-issued id for one comprehension attempt; unique so retries/double submits are idempotent.
+  attemptId      String?          @unique
+  /// true only for the child's first check of a passage; later checks are reviews.
+  firstAttempt   Boolean?
+  /// Display-position answers of a comprehension check, kept so a retried request returns the same result.
+  answers        Json?
   /// 0–3 rubric levels; null when not observed.
   listening      Int?
   decoding       Int?

@@ -118,3 +118,38 @@ describe('malicious or malformed content is rejected', () => {
     expect(validateContent([l], RAW_SKILLS).ok).toBe(false);
   });
 });
+
+describe('physical-safety hazard consistency (audit ATL-10)', () => {
+  it('every offline card: a hazard word in the activity has its flag set or a safety note naming it', async () => {
+    const { hazardKeywordIssues } = await import('./schema');
+    for (const l of getCatalog().lessons) if (l.mode === 'offline') expect(hazardKeywordIssues(l), l.id).toEqual([]);
+  });
+  it('the pre-audit linkage card (split pins, all flags false) is rejected by validation', () => {
+    const old = findRaw('lesson-robo-k-linkage-001') as Extract<Lesson, { mode: 'offline' }>;
+    old.materials = [{ en: 'Three paper fasteners (split pins), pushed through by the adult', id: 'Tiga paku kertas (split pin), dipasang oleh orang dewasa' }];
+    old.safetyNotes = old.safetyNotes.slice(0, 2);
+    const r = validateContent([...RAW_LESSONS.filter((l) => (l as Lesson).id !== old.id), old], RAW_SKILLS, RAW_OBJECTIVES);
+    expect(r.errors.join('\n')).toMatch(/split pin.*chokingRisk/);
+    expect(r.errors.join('\n')).toMatch(/pin.*sharp/);
+  });
+  it('the corrected linkage card has no metal fasteners and is withheld from production until a person reviews it', () => {
+    const card = getCatalog().lessons.find((l) => l.id === 'lesson-robo-k-linkage-001')!;
+    expect(JSON.stringify(card).toLowerCase()).not.toMatch(/split pin|paper fastener/);
+    expect(isVisible(card, 'reviewed')).toBe(false);
+    expect(isVisible(card, 'agent_reviewed')).toBe(true);
+  });
+});
+
+describe('release manifest (audit ATL-12)', () => {
+  it('is deterministic, counts what each threshold shows, and the digest changes with the visible content', async () => {
+    const { contentManifest } = await import('./manifest');
+    const a = contentManifest('reviewed');
+    expect(contentManifest('reviewed')).toEqual(a);
+    expect(a.contentDigest).toMatch(/^[0-9a-f]{16}$/);
+    expect(a.visible.lessons).toBe(getCatalog().lessons.filter((l) => isVisible(l, 'reviewed')).length);
+    expect(a.ids.lessons).not.toContain('lesson-robo-k-linkage-001'); // withheld (ATL-10)
+    const preview = contentManifest('agent_reviewed');
+    expect(preview.contentDigest).not.toBe(a.contentDigest);
+    expect(preview.visible.lessons).toBeGreaterThan(a.visible.lessons);
+  });
+});

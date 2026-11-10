@@ -9,6 +9,8 @@ import { useI18n } from '@/lib/i18n/client';
  * - mode "static": display only.
  * - `second`: a second group of fixed counters after the first (addition); drawn with a ring, not colour alone.
  * - `crossed`: the last `crossed` fixed counters are crossed out (take-away subtraction) and cannot be counted.
+ * - `capacity`: cells beyond this are marked "not used" and can never be filled, so a part–whole scaffold shows
+ *   exactly whole − part spaces (audit ATL-03). Defaults to all cells.
  * Correctness is never shown by colour alone: placed/counted counters also get a mark.
  */
 export function TenFrame({
@@ -21,6 +23,7 @@ export function TenFrame({
   disabled = false,
   second = 0,
   crossed = 0,
+  capacity,
 }: {
   filled: number;
   frames?: 1 | 2;
@@ -31,9 +34,11 @@ export function TenFrame({
   disabled?: boolean;
   second?: number;
   crossed?: number;
+  capacity?: number;
 }) {
   const { t } = useI18n();
   const total = frames * 10;
+  const cap = Math.min(capacity ?? total, total);
   const fixed = filled + second;
   return (
     <div className="flex flex-col gap-3" role="group" aria-label={fmt(t.learn.a11y.tenFrame, { filled: mode === 'fill' ? filled + marked.size : fixed, total })}>
@@ -45,6 +50,15 @@ export function TenFrame({
             const isSecond = i >= filled && i < fixed;
             const isCrossed = crossed > 0 && i >= fixed - crossed && i < fixed;
             const isMarked = marked.has(i);
+            const unused = !isFixed && i >= cap;
+            if (unused) {
+              return (
+                <span key={i} role="img" aria-label={t.learn.a11y.unusedCell} data-cell="unused"
+                  className="flex aspect-square min-h-11 items-center justify-center rounded-xl border-2 border-dashed border-sand bg-linen/60">
+                  <span aria-hidden="true" className="text-lg text-muted">·</span>
+                </span>
+              );
+            }
             const interactive = !disabled && ((mode === 'fill' && !isFixed) || (mode === 'count' && isFixed && !isCrossed));
             const label = isCrossed
               ? fmt(t.learn.a11y.takenCounter, { n: i + 1 })
@@ -70,7 +84,7 @@ export function TenFrame({
             ) : null;
             const cls = `flex aspect-square min-h-11 items-center justify-center rounded-xl bg-white transition-transform duration-calm ${highlightEmpty && !isFixed && !isMarked ? 'outline-dashed outline-[3px] outline-clay' : ''}`;
             return interactive ? (
-              <button key={i} type="button" aria-label={label} aria-pressed={isMarked} onClick={() => onToggle?.(i)}
+              <button key={i} type="button" aria-label={label} aria-pressed={isMarked} onClick={() => onToggle?.(i)} data-cell={mode === 'fill' && !isMarked ? 'fillable' : undefined}
                 className={`${cls} cursor-pointer hover:bg-paper focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-focus active:scale-95`}>
                 {counter}
               </button>

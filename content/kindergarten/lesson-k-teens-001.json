@@ -61,7 +61,7 @@
     "en": "Fill an egg carton with 10 and put a few more beside it. Say: ten and three is thirteen.",
     "id": "Isi wadah telur dengan 10 dan taruh beberapa lagi di sampingnya. Ucapkan: sepuluh dan tiga adalah tiga belas."
   },
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -69,7 +69,10 @@
       "misconception-coverage-tests",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   },
   "contentVersion": "1.0.0",
   "framework": "singapore_math",

@@ -255,6 +255,7 @@ export const en = {
       filledCell: 'Counter {n}',
       placedCell: 'Placed counter {n}. Tap to remove.',
       bond: 'Number bond. Whole {whole}. Parts {left} and {right}.',
+      unusedCell: 'Not part of this number',
       unknown: 'unknown',
       secondCounter: 'Counter {n}, second group',
       takenCounter: 'Counter {n}, taken away',
@@ -382,6 +383,8 @@ export const en = {
       when: 'When',
       what: 'What',
       item: 'Book or text',
+      firstTry: 'First try',
+      review: 'Review (repeat)',
       ratings: 'Ratings',
     },
     progress: {

@@ -1,8 +1,18 @@
 import { expect, type APIRequestContext, type Page } from '@playwright/test';
 import { PrismaClient } from '@prisma/client';
+import { assertSafeTestDatabaseUrl, assertSyntheticMarker } from '../src/lib/test-db-guard';
 
 const TEST_DB = process.env.E2E_DATABASE_URL ?? 'postgresql://postgres@localhost:5432/atlas_test';
+// ATL-01: refuse non-local / non-test databases before a client even exists.
+assertSafeTestDatabaseUrl(TEST_DB, (process.env.E2E_ALLOWED_DB_HOSTS ?? '').split(','));
 export const db = new PrismaClient({ datasources: { db: { url: TEST_DB } } });
+let markerChecked = false;
+/** ATL-01: every destructive helper first proves the database is marked "synthetic". */
+async function ensureSyntheticDatabase() {
+  if (markerChecked) return;
+  await assertSyntheticMarker(db);
+  markerChecked = true;
+}
 
 export const PASSWORD = 'synthetic-password-123';
 export const PIN = '2468';
@@ -13,6 +23,7 @@ let n = 0;
 export const testEmail = (tag: string) => `e2e.${tag}.${Date.now()}.${n++}@example.test`;
 
 export async function resetDb() {
+  await ensureSyntheticDatabase();
   await db.$executeRawUnsafe(
     'TRUNCATE "ParentUser","Family","Session","ChildProfile","LearningSession","ActivityInstance","Attempt","MasteryState","ParentObservation","RecommendationLog","ConsentRecord","AuditEvent","RateLimit" CASCADE',
   );
@@ -36,6 +47,7 @@ export async function createFamily(request: APIRequestContext, baseURL: string, 
 
 /** Tests create many families from one IP; reset the limiter in the TEST database only. */
 export async function clearRateLimits() {
+  await ensureSyntheticDatabase();
   await db.rateLimit.deleteMany({});
 }
 
