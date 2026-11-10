@@ -1,0 +1,82 @@
+{
+  "id": "lesson-g1-add-10-003",
+  "skillId": "MATH-G1-ADD-10",
+  "title": {
+    "en": "Addition sentences",
+    "id": "Kalimat penjumlahan"
+  },
+  "ageBand": "g1",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": {
+    "en": "Solve addition number sentences within 10, including a missing part.",
+    "id": "Menyelesaikan kalimat penjumlahan sampai 10, termasuk bagian yang hilang."
+  },
+  "prerequisites": [
+    "MATH-G1-BONDS-10"
+  ],
+  "cpaStage": "abstract",
+  "materials": [
+    {
+      "en": "Number pad",
+      "id": "Papan angka"
+    }
+  ],
+  "generator": "add-equation",
+  "hintLadder": [
+    {
+      "en": "Read the number sentence. Which number is missing?",
+      "id": "Baca kalimat bilangannya. Bilangan mana yang hilang?"
+    },
+    {
+      "en": "The plus sign means we put two parts together. The number after = is the whole.",
+      "id": "Tanda tambah berarti kita menggabungkan dua bagian. Bilangan setelah = adalah keseluruhan."
+    },
+    {
+      "en": "Look at the number bond. Which part or whole is empty?",
+      "id": "Lihat ikatan bilangan. Bagian atau keseluruhan mana yang kosong?"
+    },
+    {
+      "en": "Start at {part} and count on, one finger for each step.",
+      "id": "Mulai dari {part} lalu hitung lanjut, satu jari untuk setiap langkah."
+    },
+    {
+      "en": "{part} + {other} = {whole}. Let’s try a new one.",
+      "id": "{part} + {other} = {whole}. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "WRONG_OPERATION",
+    "PART_WHOLE_CONFUSION",
+    "WHOLE_AS_PART",
+    "ADDED_PARTS",
+    "COUNT_ON_WRONG_START",
+    "COUNTING_ERROR"
+  ],
+  "safetyNotes": [],
+  "parentNotes": [
+    {
+      "en": "Missing-part sentences (3 + □ = 9) appear only after strong independent work. They connect addition to subtraction.",
+      "id": "Kalimat bagian hilang (3 + □ = 9) hanya muncul setelah anak kuat bekerja mandiri. Ini menghubungkan penjumlahan dengan pengurangan."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Number sentence cards: write 3 + 4 = □ on paper. Your child builds it with objects and writes the answer.",
+    "id": "Kartu kalimat bilangan: tulis 3 + 4 = □ di kertas. Anak menyusunnya dengan benda lalu menulis jawabannya."
+  },
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.g1.add-sub-10"
+  ]
+}

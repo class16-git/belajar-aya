@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { RAW_LESSONS, RAW_OBJECTIVES, RAW_SKILLS } from './content-index';
-import { getCatalog, validateContent } from './catalog';
+import { getCatalog, validateContent, visibleInteractiveLessons } from './catalog';
 import { coverage, coverageMatrix, reviewQueue } from './coverage';
 import { isVisible, religiousIssues, requiresReligiousReview } from './publication';
 import type { Lesson } from './schema';
@@ -117,7 +117,9 @@ describe('coverage and review queue', () => {
     expect(status('math.g1.count-20')).toBe('published');
     expect(status('math.g1.bonds-10')).toBe('published');
     expect(status('mont.age2_3.match-sort')).toBe('published');
-    expect(status('math.g1.add-sub-10')).toBe('planned');
+    expect(status('math.g1.add-sub-10')).toBe('awaiting_review'); // slice B: agent-checked, needs your review
+    expect(status('math.g1.word-problems-1')).toBe('awaiting_review');
+    expect(status('math.g1.add-sub-20')).toBe('planned');
     expect(status('islm.age2_3.bismillah-alhamdulillah')).toBe('awaiting_religious_review');
     expect(status('robo.age3_4.arrow-paths')).toBe('awaiting_review');
   });
@@ -133,5 +135,34 @@ describe('coverage and review queue', () => {
     expect(q.find((x) => x.lesson.id === ISLM)!.needs).toEqual(['author', 'religious_review', 'content_review']);
     expect(q.find((x) => x.lesson.id === 'lesson-robo-arrows-001')!.needs).toEqual(['content_review']);
     expect(q.some((x) => x.lesson.id === 'lesson-g1-count-20-001')).toBe(false);
+  });
+});
+
+describe('slice B (Grade 1 addition & subtraction within 10, bar-model stories)', () => {
+  const SLICE_B = ['lesson-g1-add-10-001', 'lesson-g1-add-10-002', 'lesson-g1-add-10-003', 'lesson-g1-sub-10-001', 'lesson-g1-sub-10-002', 'lesson-g1-sub-10-003', 'lesson-g1-word-1-001'];
+  it('is agent-checked only: visible in previews, hidden in production until a human runs content:approve', () => {
+    const cat = getCatalog();
+    for (const id of SLICE_B) {
+      const l = cat.lessons.find((x) => x.id === id);
+      expect(l?.reviewStatus, id).toBe('agent_reviewed');
+      expect(l?.review.reviewedBy, id).toBeUndefined();
+    }
+    const prod = visibleInteractiveLessons('reviewed').map((l) => l.id);
+    const preview = visibleInteractiveLessons('agent_reviewed').map((l) => l.id);
+    for (const id of SLICE_B) {
+      expect(prod).not.toContain(id);
+      expect(preview).toContain(id);
+    }
+  });
+  it('covers concrete → pictorial → abstract for both operations and links to the bible objectives', () => {
+    const cat = getCatalog();
+    const stages = (skill: string) => cat.lessons.filter((l) => l.skillId === skill && l.mode === 'interactive').map((l) => l.cpaStage).sort();
+    expect(stages('MATH-G1-ADD-10')).toEqual(['abstract', 'concrete', 'pictorial']);
+    expect(stages('MATH-G1-SUB-10')).toEqual(['abstract', 'concrete', 'pictorial']);
+    for (const id of SLICE_B) {
+      const l = cat.lessons.find((x) => x.id === id)!;
+      expect(l.objectiveIds.length, id).toBe(1);
+      expect(l.mode === 'interactive' && l.offlineExtension.en.length > 20, id).toBe(true);
+    }
   });
 });

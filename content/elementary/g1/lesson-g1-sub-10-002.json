@@ -1,0 +1,81 @@
+{
+  "id": "lesson-g1-sub-10-002",
+  "skillId": "MATH-G1-SUB-10",
+  "title": {
+    "en": "Subtract with a number bond",
+    "id": "Mengurang dengan ikatan bilangan"
+  },
+  "ageBand": "g1",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": {
+    "en": "Use a number bond to find the part that is left, within 10.",
+    "id": "Menggunakan ikatan bilangan untuk menemukan bagian yang tersisa, sampai 10."
+  },
+  "prerequisites": [
+    "MATH-G1-BONDS-10"
+  ],
+  "cpaStage": "pictorial",
+  "materials": [
+    {
+      "en": "Number bond diagram and subtraction sentence",
+      "id": "Diagram ikatan bilangan dan kalimat pengurangan"
+    }
+  ],
+  "generator": "sub-bond",
+  "hintLadder": [
+    {
+      "en": "We know the whole and one part. What is the other part?",
+      "id": "Kita tahu keseluruhan dan satu bagian. Berapa bagian lainnya?"
+    },
+    {
+      "en": "Taking away one part from the whole leaves the other part.",
+      "id": "Mengambil satu bagian dari keseluruhan menyisakan bagian lainnya."
+    },
+    {
+      "en": "Use the ten-frame: start with the whole and take away the known part.",
+      "id": "Gunakan bingkai sepuluh: mulai dari keseluruhan lalu ambil bagian yang diketahui."
+    },
+    {
+      "en": "Start at {whole} and count back {part}.",
+      "id": "Mulai dari {whole} lalu hitung mundur {part}."
+    },
+    {
+      "en": "{whole} − {part} = {missing}. {part} and {missing} make {whole}. Let’s try a new one.",
+      "id": "{whole} − {part} = {missing}. {part} dan {missing} menjadi {whole}. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "WRONG_OPERATION",
+    "WHOLE_AS_PART",
+    "COUNTED_TAKEN_AWAY",
+    "COUNT_BACK_WRONG_START",
+    "COUNTING_ERROR"
+  ],
+  "safetyNotes": [],
+  "parentNotes": [
+    {
+      "en": "This lesson links subtraction to the number bonds your child already knows: the same three numbers make an addition and a subtraction.",
+      "id": "Pelajaran ini menghubungkan pengurangan dengan ikatan bilangan yang sudah dikenal anak: tiga bilangan yang sama membentuk penjumlahan dan pengurangan."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Fact family: with 8 blocks, make 5 and 3. Say together: 5 + 3 = 8, 3 + 5 = 8, 8 − 3 = 5, 8 − 5 = 3.",
+    "id": "Keluarga fakta: dengan 8 balok, buat 5 dan 3. Ucapkan bersama: 5 + 3 = 8, 3 + 5 = 8, 8 − 3 = 5, 8 − 5 = 3."
+  },
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.g1.add-sub-10"
+  ]
+}

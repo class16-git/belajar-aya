@@ -1,0 +1,81 @@
+{
+  "id": "lesson-g1-sub-10-001",
+  "skillId": "MATH-G1-SUB-10",
+  "title": {
+    "en": "Take away counters",
+    "id": "Mengambil keping"
+  },
+  "ageBand": "g1",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": {
+    "en": "Take some counters away and find how many are left, within 10.",
+    "id": "Mengambil beberapa keping dan menemukan berapa yang tersisa, sampai 10."
+  },
+  "prerequisites": [
+    "MATH-G1-BONDS-10"
+  ],
+  "cpaStage": "concrete",
+  "materials": [
+    {
+      "en": "Digital ten-frame with crossed-out counters",
+      "id": "Bingkai sepuluh digital dengan keping yang dicoret"
+    }
+  ],
+  "generator": "sub-takeaway",
+  "hintLadder": [
+    {
+      "en": "Some counters are taken away. How many are left?",
+      "id": "Beberapa keping diambil. Berapa yang tersisa?"
+    },
+    {
+      "en": "The crossed-out counters are gone. Count only the ones that stay.",
+      "id": "Keping yang dicoret sudah diambil. Hitung hanya yang tersisa."
+    },
+    {
+      "en": "Tap each counter that is left as you count it.",
+      "id": "Ketuk setiap keping yang tersisa saat menghitungnya."
+    },
+    {
+      "en": "There were {whole}. Count back one step for each counter taken away.",
+      "id": "Tadinya ada {whole}. Hitung mundur satu langkah untuk setiap keping yang diambil."
+    },
+    {
+      "en": "{whole} take away {part} leaves {missing}. {whole} − {part} = {missing}. Let’s try a new one.",
+      "id": "{whole} diambil {part} sisa {missing}. {whole} − {part} = {missing}. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "WRONG_OPERATION",
+    "WHOLE_AS_PART",
+    "COUNTED_TAKEN_AWAY",
+    "COUNT_BACK_WRONG_START",
+    "COUNTING_ERROR"
+  ],
+  "safetyNotes": [],
+  "parentNotes": [
+    {
+      "en": "If your child gives the number taken away, cover those objects with your hand and ask what is still on the table.",
+      "id": "Jika anak menyebut jumlah yang diambil, tutup benda itu dengan tangan dan tanyakan apa yang masih ada di meja."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Snack plate: put up to 10 pieces of fruit on a plate, eat some together, and ask how many are left.",
+    "id": "Piring camilan: taruh sampai 10 potong buah di piring, makan beberapa bersama, lalu tanyakan berapa yang tersisa."
+  },
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.g1.add-sub-10"
+  ]
+}

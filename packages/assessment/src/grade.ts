@@ -10,6 +10,11 @@ export const MISCONCEPTIONS = [
   'PART_WHOLE_CONFUSION',
   'WHOLE_AS_PART',
   'ADDED_PARTS',
+  // Slice B: addition & subtraction within 10 and one-step stories.
+  'COUNT_ON_WRONG_START',
+  'COUNT_BACK_WRONG_START',
+  'WRONG_OPERATION',
+  'COUNTED_TAKEN_AWAY',
   'UNCLASSIFIED',
 ] as const;
 export type Misconception = (typeof MISCONCEPTIONS)[number];
@@ -30,6 +35,8 @@ export function grade(item: Item, response: ItemResponse): GradeResult {
     }
     return { correct: false, misconception: 'COUNTING_ERROR' };
   }
+  const slice = gradeAddSub(item, v);
+  if (slice) return { correct: false, misconception: slice };
   // Part–whole items: structural confusions first, then off-by-one counting slips.
   if (whole !== undefined && part !== undefined) {
     if (v === part) return { correct: false, misconception: 'PART_WHOLE_CONFUSION' };
@@ -38,4 +45,39 @@ export function grade(item: Item, response: ItemResponse): GradeResult {
   }
   if (Math.abs(v - item.answer) === 1) return { correct: false, misconception: 'COUNTING_ERROR' };
   return { correct: false, misconception: 'UNCLASSIFIED' };
+}
+
+/**
+ * Misconceptions for addition/subtraction items. Structural errors (wrong operation, giving a part or the
+ * whole) take precedence over counting slips, because they need a different response from the adult.
+ */
+function gradeAddSub(item: Item, v: number): Misconception | null {
+  const p = item.presentation;
+  const isAdd =
+    p.kind === 'add-counters' || p.kind === 'add-bond' || (p.kind === 'add-equation' && p.blank === 'total') || (p.kind === 'bar-model-story' && p.op === 'add');
+  const isSub =
+    p.kind === 'sub-takeaway' || p.kind === 'sub-bond' || (p.kind === 'sub-equation' && p.blank === 'result') || (p.kind === 'bar-model-story' && p.op === 'sub');
+  const { part = 0, other = 0, whole = 0 } = item.params;
+  if (isAdd) {
+    if (v === Math.abs(part - other)) return 'WRONG_OPERATION';
+    if (v === part || v === other) return 'PART_WHOLE_CONFUSION';
+    // "4 + 3": saying "4, 5, 6" (counting the start number again) gives one less.
+    if (v === whole - 1) return 'COUNT_ON_WRONG_START';
+    if (v === whole + 1) return 'COUNTING_ERROR';
+    return 'UNCLASSIFIED';
+  }
+  if (isSub) {
+    if (v === whole + part) return 'WRONG_OPERATION';
+    if (v === whole) return 'WHOLE_AS_PART';
+    if (v === part) return 'COUNTED_TAKEN_AWAY';
+    // "8 − 3": saying "8, 7, 6" (counting the start number) gives one more.
+    if (v === item.answer + 1) return 'COUNT_BACK_WRONG_START';
+    if (v === item.answer - 1) return 'COUNTING_ERROR';
+    return 'UNCLASSIFIED';
+  }
+  // Missing-part forms (first + □ = total, whole − □ = result) fall through to the part–whole rules,
+  // plus "added instead of subtracting" when the child combines the two numbers shown.
+  if (p.kind === 'add-equation' && p.total !== null && v === p.total + p.first) return 'ADDED_PARTS';
+  if (p.kind === 'sub-equation' && p.result !== null && v === p.whole + p.result) return 'WRONG_OPERATION';
+  return null;
 }

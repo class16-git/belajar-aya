@@ -1,0 +1,80 @@
+{
+  "id": "lesson-g1-add-10-001",
+  "skillId": "MATH-G1-ADD-10",
+  "title": {
+    "en": "Add with counters",
+    "id": "Menjumlah dengan keping"
+  },
+  "ageBand": "g1",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": {
+    "en": "Join two groups of counters and find how many altogether, up to 10.",
+    "id": "Menggabungkan dua kelompok keping dan menemukan jumlah seluruhnya, sampai 10."
+  },
+  "prerequisites": [
+    "MATH-G1-BONDS-10"
+  ],
+  "cpaStage": "concrete",
+  "materials": [
+    {
+      "en": "Digital ten-frame with two kinds of counters",
+      "id": "Bingkai sepuluh digital dengan dua jenis keping"
+    }
+  ],
+  "generator": "add-counters",
+  "hintLadder": [
+    {
+      "en": "There are two groups of counters. How many are there altogether?",
+      "id": "Ada dua kelompok keping. Berapa jumlah semuanya?"
+    },
+    {
+      "en": "Look at the full ones and the ringed ones. Both groups count.",
+      "id": "Lihat keping yang penuh dan yang bercincin. Kedua kelompok dihitung."
+    },
+    {
+      "en": "Tap each counter as you count, so you count every counter once.",
+      "id": "Ketuk setiap keping saat menghitung, supaya setiap keping dihitung sekali."
+    },
+    {
+      "en": "The first group has {part}. Say {part}, then count on one more for each counter in the other group.",
+      "id": "Ada {part} di kelompok pertama. Sebut {part}, lalu lanjutkan menghitung satu per satu untuk setiap keping di kelompok lain."
+    },
+    {
+      "en": "{part} and {other} make {whole}. {part} + {other} = {whole}. Let’s try a new one.",
+      "id": "{part} dan {other} menjadi {whole}. {part} + {other} = {whole}. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "WRONG_OPERATION",
+    "PART_WHOLE_CONFUSION",
+    "COUNT_ON_WRONG_START",
+    "COUNTING_ERROR"
+  ],
+  "safetyNotes": [],
+  "parentNotes": [
+    {
+      "en": "Counting on: say the first number, then count the second group one by one. Children often say the first number twice (4, 5, 6 for 4 + 3) — show the step on objects.",
+      "id": "Menghitung lanjut: sebut bilangan pertama, lalu hitung kelompok kedua satu per satu. Anak sering menyebut bilangan pertama dua kali (4, 5, 6 untuk 4 + 3) — tunjukkan langkahnya dengan benda."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Two hands: put up to 10 large blocks into two groups on the table. Ask: how many altogether? Then push them together and count to check.",
+    "id": "Dua tangan: letakkan sampai 10 balok besar menjadi dua kelompok di meja. Tanyakan: berapa semuanya? Lalu satukan dan hitung untuk memeriksa."
+  },
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "misconception-coverage-tests",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0",
+  "framework": "singapore_math",
+  "objectiveIds": [
+    "math.g1.add-sub-10"
+  ]
+}
