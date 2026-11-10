@@ -22,6 +22,7 @@ import { prisma, Prisma, type ChildProfile, type MasteryState as DbMastery } fro
 import { PLACEMENT_VERSION, isLocale, type Locale } from '@atlas/shared';
 import { randomSeed } from '@atlas/shared/server';
 import { ageContext, type AgeContext } from './children';
+import { interactiveBandForGrade } from './availability';
 import { config } from './config';
 import { HttpError } from './http';
 
@@ -55,12 +56,14 @@ export async function engineInput(child: ChildProfile, ctx: AgeContext, now: Dat
     misconception: a.misconceptionCodes[0] ?? null,
     at: a.createdAt,
   }));
+  const band = interactiveBandForGrade(child.schoolGrade);
   return {
     now,
     policy: ctx.policy,
-    band: 'g1', // Phase 1: Grade 1 is the only interactive band; grade is parent-set, never inferred.
+    // Grade is parent-set and never inferred; grades without a curriculum band get no lessons (not Grade 1 work).
+    band: band ?? 'g1',
     skills: getCatalog().skills,
-    lessons: visibleInteractiveLessons(config.minReview),
+    lessons: band ? visibleInteractiveLessons(config.minReview).filter((l) => l.ageBand === band) : [],
     mastery: new Map(mastery.map((m) => [m.skillId, toEngineState(m)])),
     recentEvidence,
     focusSkillId: focus,
@@ -74,16 +77,20 @@ const childLocale = (c: ChildProfile): Locale => (isLocale(c.locale) ? c.locale 
 /** The child's small curated choice set (Montessori: choice among a few). */
 export async function childChoices(child: ChildProfile, now = new Date()) {
   const ctx = ageContext(child, now);
-  if (!ctx.policy.childScreenActivitiesAllowed) return { ctx, rec: null, choices: [] as InteractiveLesson[] };
+  const gradeSupported = interactiveBandForGrade(child.schoolGrade) !== null;
+  if (!ctx.policy.childScreenActivitiesAllowed || !gradeSupported) {
+    return { ctx, rec: null, choices: [] as InteractiveLesson[], gradeSupported };
+  }
   const input = await engineInput(child, ctx, now, child.focusSkillId);
   const rec = recommendNext(input);
-  return { ctx, rec, choices: lessonChoices(input, rec, 3) };
+  return { ctx, rec, choices: lessonChoices(input, rec, 3), gradeSupported };
 }
 
 export async function startSession(child: ChildProfile, lessonId: string | undefined) {
   const now = new Date();
-  const { ctx, rec, choices } = await childChoices(child, now);
+  const { ctx, rec, choices, gradeSupported } = await childChoices(child, now);
   if (!ctx.policy.childScreenActivitiesAllowed) throw new HttpError(403, 'OFFLINE_ONLY');
+  if (!gradeSupported) throw new HttpError(403, 'GRADE_NOT_SUPPORTED');
   const lesson = lessonId ? choices.find((l) => l.id === lessonId) : choices[0];
   if (!lesson || !rec) throw new HttpError(lessonId ? 403 : 409, lessonId ? 'LESSON_NOT_AVAILABLE' : 'NO_CONTENT');
   try {
