@@ -1,0 +1,27 @@
+{
+  "id": "lesson-g1-count-20-001",
+  "skillId": "MATH-G1-COUNT-20",
+  "title": { "en": "How many counters?", "id": "Ada berapa keping?" },
+  "ageBand": "g1",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": { "en": "Count up to 20 counters arranged in ten-frames.", "id": "Membilang sampai 20 keping yang disusun di bingkai sepuluh." },
+  "prerequisites": [],
+  "cpaStage": "concrete",
+  "materials": [{ "en": "Digital ten-frames (and real beans or buttons at the table, with an adult)", "id": "Bingkai sepuluh digital (dan kacang atau kancing asli di meja, didampingi orang dewasa)" }],
+  "generator": "count-ten-frame",
+  "hintLadder": [
+    { "en": "Count every counter once. How many are there?", "id": "Hitung setiap keping satu kali. Ada berapa semuanya?" },
+    { "en": "Touch each counter as you count it. It will be marked.", "id": "Sentuh setiap keping saat kamu menghitungnya. Keping itu akan ditandai." },
+    { "en": "A full ten-frame has 10. Is the first frame full?", "id": "Bingkai sepuluh yang penuh berisi 10. Apakah bingkai pertama penuh?" },
+    { "en": "Start at 10 for the full frame, then count on the rest.", "id": "Mulai dari 10 untuk bingkai yang penuh, lalu lanjutkan menghitung sisanya." },
+    { "en": "There are {count} counters. Let's try a new one.", "id": "Ada {count} keping. Ayo coba soal baru." }
+  ],
+  "misconceptionCodes": ["COUNTING_ERROR", "RECOUNT_FULL_FRAME"],
+  "safetyNotes": [],
+  "parentNotes": [{ "en": "Counting real objects at the table builds the same skill. Keep beans or buttons away from younger siblings.", "id": "Menghitung benda asli di meja melatih kemampuan yang sama. Jauhkan kacang atau kancing dari adik yang masih kecil." }],
+  "offlineExtension": { "en": "Count spoons while setting the table, then check by pairing each spoon with a plate.", "id": "Hitung sendok saat menata meja, lalu periksa dengan memasangkan setiap sendok dengan piring." },
+  "reviewStatus": "agent_reviewed",
+  "review": { "agentChecks": ["schema", "math-truth-property-tests", "bilingual-parity", "tone"] },
+  "contentVersion": "1.0.0"
+}

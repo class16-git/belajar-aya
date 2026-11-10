@@ -1,0 +1,108 @@
+{
+  "id": "lesson-tod-match-003",
+  "skillId": "TOD-MATCH-OBJECT",
+  "title": {
+    "en": "Object to picture",
+    "id": "Benda ke gambar"
+  },
+  "ageBand": "toddler",
+  "domain": "sensorial",
+  "mode": "offline",
+  "objective": {
+    "en": "Match a real object to a large picture of it.",
+    "id": "Mencocokkan benda asli dengan gambar besarnya."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "Three large household objects (e.g. a cup, a hairbrush, a ball bigger than your fist)",
+      "id": "Tiga benda rumah tangga yang besar (mis. gelas, sisir, bola lebih besar dari kepalan tangan)"
+    },
+    {
+      "en": "Clear photos or drawings of the same objects on card",
+      "id": "Foto atau gambar yang jelas dari benda yang sama di atas kertas karton"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Print or draw one picture per object, roughly life-size.",
+      "id": "Cetak atau gambar satu gambar untuk setiap benda, kira-kira seukuran aslinya."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Lay the pictures on the mat.",
+      "id": "Letakkan gambar di atas alas."
+    },
+    {
+      "en": "Name an object and place it on its picture.",
+      "id": "Sebut nama benda dan letakkan di atas gambarnya."
+    },
+    {
+      "en": "Offer the next object to your child.",
+      "id": "Tawarkan benda berikutnya kepada anak."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "Ball. Here is the picture of the ball.",
+      "id": "Bola. Ini gambar bolanya."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Recognises an object in a picture",
+      "id": "Mengenali benda dalam gambar"
+    },
+    {
+      "en": "Points to a picture when you name it",
+      "id": "Menunjuk gambar saat Anda menyebut namanya"
+    }
+  ],
+  "cleanup": {
+    "en": "Stack the picture cards and return the objects.",
+    "id": "Tumpuk kartu gambar dan kembalikan benda-bendanya."
+  },
+  "variations": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

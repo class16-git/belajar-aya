@@ -1,0 +1,117 @@
+{
+  "id": "lesson-tod-sort-001",
+  "skillId": "TOD-SORT-COLOR",
+  "title": {
+    "en": "Two colours, two bowls",
+    "id": "Dua warna, dua mangkuk"
+  },
+  "ageBand": "toddler",
+  "domain": "sensorial",
+  "mode": "offline",
+  "objective": {
+    "en": "Sort large blocks of two very different colours into two bowls.",
+    "id": "Memilah balok besar dengan dua warna yang sangat berbeda ke dalam dua mangkuk."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "Six large blocks in two clearly different colours (e.g. three red, three blue)",
+      "id": "Enam balok besar dengan dua warna yang jelas berbeda (mis. tiga merah, tiga biru)"
+    },
+    {
+      "en": "Two unbreakable bowls",
+      "id": "Dua mangkuk yang tidak mudah pecah"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Put one block of each colour in each bowl as a guide.",
+      "id": "Letakkan satu balok dari setiap warna di masing-masing mangkuk sebagai contoh."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Pick up a block, look at it, and place it in the bowl with the same colour.",
+      "id": "Ambil satu balok, perhatikan, lalu letakkan di mangkuk dengan warna yang sama."
+    },
+    {
+      "en": "Offer the next block to your child.",
+      "id": "Tawarkan balok berikutnya kepada anak."
+    },
+    {
+      "en": "Accept any sorting your child chooses; you can model again later.",
+      "id": "Terima cara memilah apa pun yang dipilih anak; Anda bisa memberi contoh lagi nanti."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "Red goes with red.",
+      "id": "Merah bersama merah."
+    },
+    {
+      "en": "Where does this one go?",
+      "id": "Yang ini masuk ke mana?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Sorts by colour without help",
+      "id": "Memilah berdasarkan warna tanpa bantuan"
+    },
+    {
+      "en": "Says or signs a colour word",
+      "id": "Mengucapkan atau memberi isyarat kata warna"
+    }
+  ],
+  "cleanup": {
+    "en": "Pour the blocks back into their basket together.",
+    "id": "Tuang balok kembali ke keranjangnya bersama-sama."
+  },
+  "variations": [
+    {
+      "en": "Later, sort by kind instead of colour: spoons and cups.",
+      "id": "Nanti, pilah berdasarkan jenis, bukan warna: sendok dan gelas."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "lesson-g1-count-20-002",
+  "skillId": "MATH-G1-COUNT-20",
+  "title": {
+    "en": "Count the dots",
+    "id": "Hitung titik-titiknya"
+  },
+  "ageBand": "g1",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": {
+    "en": "Count up to 20 scattered dots without missing or repeating any.",
+    "id": "Membilang sampai 20 titik yang tersebar tanpa ada yang terlewat atau terhitung dua kali."
+  },
+  "prerequisites": [],
+  "cpaStage": "pictorial",
+  "materials": [
+    {
+      "en": "Picture of scattered dots",
+      "id": "Gambar titik-titik yang tersebar"
+    }
+  ],
+  "generator": "count-scattered",
+  "hintLadder": [
+    {
+      "en": "Count every dot once. How many are there?",
+      "id": "Hitung setiap titik satu kali. Ada berapa semuanya?"
+    },
+    {
+      "en": "Touch each dot as you count it. It will be marked.",
+      "id": "Sentuh setiap titik saat kamu menghitungnya. Titik itu akan ditandai."
+    },
+    {
+      "en": "Count row by row, from the top, so you don't miss any.",
+      "id": "Hitung baris demi baris dari atas, agar tidak ada yang terlewat."
+    },
+    {
+      "en": "Make groups of five as you go, then count the groups and the rest.",
+      "id": "Buat kelompok lima sambil menghitung, lalu hitung kelompok dan sisanya."
+    },
+    {
+      "en": "There are {count} dots. Let's try a new one.",
+      "id": "Ada {count} titik. Ayo coba soal baru."
+    }
+  ],
+  "misconceptionCodes": [
+    "COUNTING_ERROR"
+  ],
+  "safetyNotes": [],
+  "parentNotes": [
+    {
+      "en": "Counting real objects at the table builds the same skill. Keep beans or buttons away from younger siblings.",
+      "id": "Menghitung benda asli di meja melatih kemampuan yang sama. Jauhkan kacang atau kancing dari adik yang masih kecil."
+    }
+  ],
+  "offlineExtension": {
+    "en": "Count spoons while setting the table, then check by pairing each spoon with a plate.",
+    "id": "Hitung sendok saat menata meja, lalu periksa dengan memasangkan setiap sendok dengan piring."
+  },
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-truth-property-tests",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

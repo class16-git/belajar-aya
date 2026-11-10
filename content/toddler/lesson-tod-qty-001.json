@@ -1,0 +1,109 @@
+{
+  "id": "lesson-tod-qty-001",
+  "skillId": "TOD-QUANTITY-3",
+  "title": {
+    "en": "One, two, three animals",
+    "id": "Satu, dua, tiga hewan"
+  },
+  "ageBand": "toddler",
+  "domain": "mathematics",
+  "mode": "offline",
+  "objective": {
+    "en": "Notice groups of one, two and three while playing.",
+    "id": "Mengenali kelompok satu, dua, dan tiga saat bermain."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "Three large toy animals (bigger than your palm)",
+      "id": "Tiga mainan hewan besar (lebih besar dari telapak tangan)"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Line up the animals on a mat.",
+      "id": "Susun hewan berjajar di atas alas."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Touch each animal as you say 'one… two… three'.",
+      "id": "Sentuh setiap hewan sambil mengucapkan 'satu… dua… tiga'."
+    },
+    {
+      "en": "Make the animals walk: 'One cow is walking.' 'Two cows are walking.'",
+      "id": "Buat hewan berjalan: 'Satu sapi berjalan.' 'Dua sapi berjalan.'"
+    },
+    {
+      "en": "Let your child play freely; counting is optional.",
+      "id": "Biarkan anak bermain bebas; menghitung tidak wajib."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "One, two. Two ducks.",
+      "id": "Satu, dua. Dua bebek."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Shows interest when you count",
+      "id": "Tertarik saat Anda menghitung"
+    },
+    {
+      "en": "Holds up fingers or says a number word",
+      "id": "Mengangkat jari atau menyebut kata bilangan"
+    }
+  ],
+  "cleanup": {
+    "en": "The animals 'go to sleep' in their box.",
+    "id": "Hewan-hewan 'tidur' di kotaknya."
+  },
+  "variations": [
+    {
+      "en": "Do not quiz. Numerals are not needed at this age.",
+      "id": "Jangan menguji. Angka tertulis belum diperlukan di usia ini."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

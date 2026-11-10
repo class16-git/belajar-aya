@@ -1,0 +1,125 @@
+{
+  "id": "lesson-tod-lang-001",
+  "skillId": "TOD-LANG-NAME",
+  "title": {
+    "en": "Three fruits (three-period lesson)",
+    "id": "Tiga buah (pelajaran tiga tahap)"
+  },
+  "ageBand": "toddler",
+  "domain": "language",
+  "mode": "offline",
+  "objective": {
+    "en": "Hear, recognise and perhaps say the names of three whole fruits.",
+    "id": "Mendengar, mengenali, dan mungkin menyebut nama tiga buah utuh."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "Three whole fruits the child knows (e.g. banana, orange, apple)",
+      "id": "Tiga buah utuh yang dikenal anak (mis. pisang, jeruk, apel)"
+    },
+    {
+      "en": "A tray",
+      "id": "Nampan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Wash the fruit. This activity is for naming; do not offer pieces to eat during it.",
+      "id": "Cuci buahnya. Kegiatan ini untuk menyebut nama; jangan memberi potongan untuk dimakan selama kegiatan."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Naming: hold each fruit and say its name clearly, once or twice.",
+      "id": "Menamai: pegang setiap buah dan sebut namanya dengan jelas, sekali atau dua kali."
+    },
+    {
+      "en": "Recognising: ask 'Can you show me the banana?' Move the fruits around and ask again.",
+      "id": "Mengenali: tanya 'Bisa tunjukkan pisangnya?' Pindahkan buahnya dan tanya lagi."
+    },
+    {
+      "en": "Recalling (only if your child is ready): point and ask 'What is this?'",
+      "id": "Mengingat (hanya jika anak siap): tunjuk dan tanya 'Ini apa?'"
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "This is a banana. Banana.",
+      "id": "Ini pisang. Pisang."
+    },
+    {
+      "en": "Can you give me the orange?",
+      "id": "Bisa berikan jeruknya?"
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Points to the named fruit",
+      "id": "Menunjuk buah yang disebut"
+    },
+    {
+      "en": "Says a fruit name or a sound like it",
+      "id": "Menyebut nama buah atau bunyi yang mirip"
+    },
+    {
+      "en": "Uses words from home languages — all count",
+      "id": "Menggunakan kata dari bahasa di rumah — semuanya dihitung"
+    }
+  ],
+  "cleanup": {
+    "en": "Put the fruit back in the kitchen together.",
+    "id": "Kembalikan buah ke dapur bersama-sama."
+  },
+  "variations": [
+    {
+      "en": "Use any home language. Gestures and pointing are real answers.",
+      "id": "Gunakan bahasa apa pun di rumah. Gerakan dan menunjuk adalah jawaban yang sah."
+    }
+  ],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": true
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Check for food allergies first. Offer food only as you would at a normal meal, cut safely.",
+      "id": "Periksa alergi makanan terlebih dahulu. Berikan makanan hanya seperti saat makan biasa, dipotong dengan aman."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

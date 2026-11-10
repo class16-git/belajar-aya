@@ -1,0 +1,104 @@
+{
+  "id": "lesson-tod-lang-003",
+  "skillId": "TOD-LANG-NAME",
+  "title": {
+    "en": "Kitchen basket",
+    "id": "Keranjang dapur"
+  },
+  "ageBand": "toddler",
+  "domain": "language",
+  "mode": "offline",
+  "objective": {
+    "en": "Explore and name familiar kitchen tools.",
+    "id": "Menjelajah dan menyebut nama alat dapur yang dikenal."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "A basket with three or four large, unbreakable kitchen items (wooden spoon, plastic cup, small pot, whisk)",
+      "id": "Keranjang berisi tiga atau empat alat dapur besar yang tidak mudah pecah (sendok kayu, gelas plastik, panci kecil, pengocok)"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Check that nothing is sharp, heavy or hot, and that no part can come loose.",
+      "id": "Pastikan tidak ada yang tajam, berat, atau panas, dan tidak ada bagian yang bisa lepas."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Let your child explore the basket freely first.",
+      "id": "Biarkan anak menjelajah keranjang dengan bebas terlebih dahulu."
+    },
+    {
+      "en": "When they pick something up, name it and describe one thing about it.",
+      "id": "Saat ia mengambil sesuatu, sebutkan namanya dan jelaskan satu hal tentang benda itu."
+    },
+    {
+      "en": "Show what the item is for, e.g. stir the empty pot.",
+      "id": "Tunjukkan kegunaannya, mis. mengaduk panci kosong."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "Spoon. A wooden spoon. We stir with it.",
+      "id": "Sendok. Sendok kayu. Kita mengaduk dengannya."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Imitates using the object",
+      "id": "Meniru cara memakai benda"
+    },
+    {
+      "en": "Brings an object to you to be named",
+      "id": "Membawa benda kepada Anda untuk disebutkan namanya"
+    }
+  ],
+  "cleanup": {
+    "en": "Put each item back in the basket, naming it once more.",
+    "id": "Masukkan setiap benda kembali ke keranjang, sambil menyebut namanya sekali lagi."
+  },
+  "variations": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}

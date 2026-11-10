@@ -1,0 +1,27 @@
+{
+  "id": "lesson-g1-draft-example",
+  "skillId": "MATH-G1-COMPARE-20",
+  "title": { "en": "Which has more? (draft)", "id": "Mana yang lebih banyak? (draf)" },
+  "ageBand": "g1",
+  "domain": "mathematics",
+  "mode": "interactive",
+  "objective": { "en": "Compare two groups up to 20.", "id": "Membandingkan dua kelompok sampai 20." },
+  "prerequisites": ["MATH-G1-COUNT-20"],
+  "cpaStage": "concrete",
+  "materials": [{ "en": "Two ten-frames", "id": "Dua bingkai sepuluh" }],
+  "generator": "count-ten-frame",
+  "hintLadder": [
+    { "en": "Draft hint 0", "id": "Petunjuk draf 0" },
+    { "en": "Draft hint 1", "id": "Petunjuk draf 1" },
+    { "en": "Draft hint 2", "id": "Petunjuk draf 2" },
+    { "en": "Draft hint 3", "id": "Petunjuk draf 3" },
+    { "en": "Draft hint 4", "id": "Petunjuk draf 4" }
+  ],
+  "misconceptionCodes": [],
+  "safetyNotes": [],
+  "parentNotes": [],
+  "offlineExtension": { "en": "Draft", "id": "Draf" },
+  "reviewStatus": "draft",
+  "review": { "agentChecks": [] },
+  "contentVersion": "0.1.0"
+}

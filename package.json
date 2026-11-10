@@ -1,0 +1,33 @@
+{
+  "name": "project-atlas",
+  "private": true,
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev --filter=@atlas/web",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:e2e": "pnpm --filter @atlas/web test:e2e",
+    "content:validate": "pnpm --filter @atlas/curriculum validate",
+    "content:approve": "pnpm --filter @atlas/curriculum approve",
+    "db:migrate": "pnpm --filter @atlas/database migrate:deploy",
+    "db:migrate:dev": "pnpm --filter @atlas/database migrate:dev",
+    "db:seed": "pnpm --filter @atlas/database seed",
+    "db:seed:private": "pnpm --filter @atlas/database seed:private",
+    "privacy:scan": "node scripts/privacy-scan.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "3.6.2",
+    "turbo": "2.11.10",
+    "typescript": "5.9.3",
+    "eslint": "9.39.5",
+    "typescript-eslint": "8.72.0",
+    "@types/node": "22.20.5"
+  }
+}

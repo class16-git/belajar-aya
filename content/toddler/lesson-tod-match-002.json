@@ -1,0 +1,112 @@
+{
+  "id": "lesson-tod-match-002",
+  "skillId": "TOD-MATCH-OBJECT",
+  "title": {
+    "en": "Sock pairs",
+    "id": "Pasangan kaus kaki"
+  },
+  "ageBand": "toddler",
+  "domain": "practical_life",
+  "mode": "offline",
+  "objective": {
+    "en": "Find pairs of socks from the clean laundry.",
+    "id": "Menemukan pasangan kaus kaki dari cucian bersih."
+  },
+  "prerequisites": [],
+  "cpaStage": "not_applicable",
+  "prepMinutes": 3,
+  "activityMinutes": {
+    "min": 3,
+    "max": 10
+  },
+  "materials": [
+    {
+      "en": "Three or four pairs of clean socks with clearly different colours or patterns",
+      "id": "Tiga atau empat pasang kaus kaki bersih dengan warna atau motif yang jelas berbeda"
+    },
+    {
+      "en": "A basket",
+      "id": "Keranjang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Choose socks that look very different from each other.",
+      "id": "Pilih kaus kaki yang terlihat sangat berbeda satu sama lain."
+    }
+  ],
+  "steps": [
+    {
+      "en": "Lay one sock from each pair in a row.",
+      "id": "Susun satu kaus kaki dari setiap pasangan dalam satu baris."
+    },
+    {
+      "en": "Pick a sock from the basket, hold it beside each sock in the row, and place it with its pair.",
+      "id": "Ambil satu kaus kaki dari keranjang, dekatkan ke setiap kaus kaki di baris, lalu letakkan dengan pasangannya."
+    },
+    {
+      "en": "Hand your child a sock and wait.",
+      "id": "Berikan satu kaus kaki kepada anak dan tunggu."
+    }
+  ],
+  "adultWording": [
+    {
+      "en": "Where is its friend?",
+      "id": "Di mana temannya?"
+    },
+    {
+      "en": "You found the pair.",
+      "id": "Kamu menemukan pasangannya."
+    }
+  ],
+  "observationCues": [
+    {
+      "en": "Compares colours or patterns",
+      "id": "Membandingkan warna atau motif"
+    },
+    {
+      "en": "Matches at least one pair",
+      "id": "Mencocokkan setidaknya satu pasang"
+    }
+  ],
+  "cleanup": {
+    "en": "Put the pairs in the basket together.",
+    "id": "Masukkan pasangan-pasangan ke keranjang bersama-sama."
+  },
+  "variations": [],
+  "hazards": {
+    "chokingRisk": false,
+    "water": false,
+    "sharp": false,
+    "heat": false,
+    "allergens": false
+  },
+  "supervisionRequired": true,
+  "hintLadder": [],
+  "misconceptionCodes": [],
+  "safetyNotes": [
+    {
+      "en": "An adult stays within arm's reach for the whole activity.",
+      "id": "Orang dewasa tetap berada dalam jangkauan tangan selama kegiatan."
+    },
+    {
+      "en": "Use only objects too big to fit through a toilet-paper tube (no small parts, coins, beads, batteries or magnets).",
+      "id": "Gunakan hanya benda yang terlalu besar untuk masuk ke dalam gulungan tisu (tanpa bagian kecil, koin, manik, baterai, atau magnet)."
+    },
+    {
+      "en": "Stop whenever your child loses interest. Try again another day.",
+      "id": "Berhenti kapan pun anak kehilangan minat. Coba lagi di hari lain."
+    }
+  ],
+  "parentNotes": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "toddler-safety-checklist",
+      "bilingual-parity",
+      "tone"
+    ]
+  },
+  "contentVersion": "1.0.0"
+}
