@@ -87,7 +87,7 @@
     }
   ],
   "copyrightStatus": "original",
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "original-text",
@@ -95,6 +95,9 @@
       "evidence-paragraph-check",
       "bilingual-parity",
       "readability-estimate"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10"
   }
 }

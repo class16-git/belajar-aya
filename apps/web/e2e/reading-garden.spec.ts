@@ -30,7 +30,7 @@ for (const vp of [{ name: 'mobile', width: 390, height: 844 }, { name: 'tablet',
     await page.waitForURL('**/library');
     await expect(page.getByTestId('journey-card')).toHaveAttribute('data-stage', 'g1');
     await expect(page.getByTestId('all-books').locator('[data-book]')).toHaveCount(12);
-    await expect(page.getByTestId('preview-badge').first()).toBeVisible();
+    await expect(page.getByTestId('preview-badge')).toHaveCount(0); // all books owner-reviewed and published
     await noOverflow(page, 'library');
     await page.screenshot({ path: join(OUT, `${vp.name}-90-reading-garden.png`), fullPage: true });
     await axe(page, `library@${vp.name}`);
@@ -55,7 +55,7 @@ for (const vp of [{ name: 'mobile', width: 390, height: 844 }, { name: 'tablet',
     await expect(rights).toContainText('Link only');
     await expect(rights).toContainText('CC-BY-4.0');
     await expect(rights).toContainText('bookdash.org/who-we-are/open-content-partners');
-    await expect(rights).toContainText('Not yet reviewed by a person.');
+    await expect(rights).toContainText('Reviewed by owner on');
     await noOverflow(page, 'book');
     await page.screenshot({ path: join(OUT, `${vp.name}-92-book-detail.png`), fullPage: true });
     await axe(page, `book@${vp.name}`);
@@ -137,6 +137,9 @@ test('child mode: only shelf books, PIN gate for external links, finished event,
   await expect(page.getByText('Well done!')).toBeVisible();
   expect(await db.readingEvent.count({ where: { childId: fam.g1Id, kind: 'CHILD_FINISHED' } })).toBe(1);
   expect((await page.request.get('/library')).url()).toMatch(/\/learn$/); // parent area stays locked
+  await page.getByTestId('child-home').click(); // the logo takes the child home, never to parent areas
+  await page.waitForURL(/\/learn$/);
+  await page.goto(`/learn/library/${EGG}`);
 
   // Comprehension: the page carries no answer key; the server grades; client claims are rejected.
   await page.goto('/learn/library/read/passage-g1-rain-garden');

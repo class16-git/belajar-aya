@@ -98,12 +98,22 @@
       "id": "Rancang mangkuk atau jalur yang aman untuk ikan mas dengan balok dan jelaskan rancanganmu."
     }
   },
-  "publicationStatus": "metadata_reviewed",
+  "publicationStatus": "published",
   "agentChecks": [
     "schema",
     "source-policy-evidence",
     "title-page-metadata",
     "original-synopsis",
     "bilingual-parity"
-  ]
+  ],
+  "educationalReview": {
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-10",
+    "checklistVersion": "rg-1"
+  },
+  "linkReview": {
+    "checkedBy": "agent (owner-delegated): HTTP 200 + title match",
+    "checkedAt": "2026-11-10"
+  }
 }
