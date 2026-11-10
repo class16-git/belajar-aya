@@ -255,7 +255,8 @@ export async function submitAttempt(child: ChildProfile, activityId: string, val
     // Optimistic concurrency on BOTH tries and hintsUsed: a double-submit, or a hint issued while this
     // answer was being graded, makes the claim fail (409) instead of recording stale "independent" evidence.
     const claimed = await tx.activityInstance.updateMany({
-      where: { id: activity.id, status: 'ACTIVE', tries: activity.tries, hintsUsed: activity.hintsUsed },
+      // The item's session must still be open: items stranded in an ended session are never answerable.
+      where: { id: activity.id, status: 'ACTIVE', tries: activity.tries, hintsUsed: activity.hintsUsed, session: { is: { endedAt: null } } },
       data: { tries: tryNumber, ...(finished ? { status: 'COMPLETED', completedAt: now } : {}) },
     });
     if (claimed.count !== 1) throw new HttpError(409, 'CONFLICT');
@@ -325,7 +326,7 @@ export async function requestHint(child: ChildProfile, activityId: string) {
   const level = Math.min(MAX_HINT_LEVEL, activity.hintsUsed);
   const hint = hintFor(lesson, item, level, childLocale(child));
   const claimed = await prisma.activityInstance.updateMany({
-    where: { id: activity.id, status: 'ACTIVE', hintsUsed: activity.hintsUsed, tries: activity.tries },
+    where: { id: activity.id, status: 'ACTIVE', hintsUsed: activity.hintsUsed, tries: activity.tries, session: { is: { endedAt: null } } },
     data: {
       hintsUsed: activity.hintsUsed + 1,
       // H4 is a worked example: close this item; the next one is a fresh analogous item.

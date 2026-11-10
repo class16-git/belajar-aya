@@ -3,7 +3,7 @@ import { prisma } from '@atlas/database';
 import { PinForm } from '@/components/forms/pin-form';
 import { StartLearningButton } from '@/components/forms/start-learning';
 import { ParentShell } from '@/components/ui/parent-shell';
-import { fmt, getDictionary } from '@/lib/i18n';
+import { fmt, getDictionary, gradeLabel } from '@/lib/i18n';
 import { ageContext } from '@/lib/server/children';
 import { currentLocale, requireParentPage } from '@/lib/server/guards';
 
@@ -41,7 +41,7 @@ export default async function FamilyPage() {
                     <h2 className="h2">{c.nickname}</h2>
                     <p className="muted">
                       {ctx.age ? fmt(t.dashboard.years, { y: ctx.age.years, m: ctx.age.months }) : t.family.ageUnknown}
-                      {c.schoolGrade ? ` · ${c.schoolGrade}` : ''}
+                      {c.schoolGrade ? ` · ${gradeLabel(t, c.schoolGrade)}` : ''}
                     </p>
                   </div>
                   <span className={`chip shrink-0 whitespace-nowrap ${screen ? 'border-sky bg-sky-light text-[#2f5370]' : 'border-sage bg-sage-light text-sage-dark'}`}>

@@ -97,6 +97,7 @@ export const id: Dictionary = {
     timezone: 'Zona waktu',
     grade: 'Kelas sekolah (Anda yang menentukan)',
     gradeNone: 'Belum sekolah',
+    grades: { Toddler: 'Balita', Preschool: 'Prasekolah', Kindergarten: 'TK', 'Grade 1': 'Kelas 1', 'Grade 2': 'Kelas 2', 'Grade 3': 'Kelas 3', 'Grade 4': 'Kelas 4', 'Grade 5': 'Kelas 5', 'Grade 6': 'Kelas 6' },
     gradeHint: 'Atlas tidak pernah mengubah kelas secara otomatis saat ulang tahun.',
     mode: 'Mode belajar',
     modeToddlerHelp: 'Anda membaca kartu dan memandu kegiatan. Anak tidak perlu memakai layar.',

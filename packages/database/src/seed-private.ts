@@ -7,6 +7,18 @@ import { join } from 'node:path';
 import { PrismaClient } from '@prisma/client';
 import { seedFamily, type SeedFamily } from './seed-lib';
 
+// Real learner data may only ever be written to a database on this machine.
+const host = (() => {
+  try {
+    return new URL(process.env.DATABASE_URL ?? '').hostname;
+  } catch {
+    return '';
+  }
+})();
+if (!['localhost', '127.0.0.1', '::1', '[::1]'].includes(host)) {
+  console.error('Refusing to seed private learner data: DATABASE_URL must point to a local database (localhost).');
+  process.exit(2);
+}
 const path = join(import.meta.dirname, '../../../config/learners.private.json');
 if (!existsSync(path)) {
   console.error(

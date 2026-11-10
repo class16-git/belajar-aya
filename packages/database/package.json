@@ -15,7 +15,8 @@
     "seed": "tsx src/seed.ts",
     "seed:private": "tsx src/seed-private.ts",
     "typecheck": "tsc -p tsconfig.json",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "db-role": "tsx src/db-role.ts"
   },
   "dependencies": {
     "@prisma/client": "6.19.3",

@@ -6,7 +6,7 @@ import { AckTransition } from '@/components/forms/ack-transition';
 import { ObservationForm } from '@/components/forms/observation-form';
 import { ParentShell } from '@/components/ui/parent-shell';
 import { StatusBadge } from '@/components/ui/status';
-import { fmt, getDictionary } from '@/lib/i18n';
+import { fmt, getDictionary, gradeLabel } from '@/lib/i18n';
 import { currentLocale, requireParentPage } from '@/lib/server/guards';
 import { buildProgress } from '@/lib/server/progress';
 
@@ -35,7 +35,7 @@ export default async function ChildDashboard({ params }: { params: Promise<{ chi
           <h1 className="h1">{fmt(t.dashboard.title, { name: child.nickname })}</h1>
           <dl className="mt-2 flex flex-wrap gap-x-6 gap-y-1 text-base">
             <div className="flex gap-1"><dt className="muted">{t.dashboard.age}:</dt><dd className="font-semibold">{p.ctx.age ? fmt(t.dashboard.years, { y: p.ctx.age.years, m: p.ctx.age.months }) : t.family.ageUnknown}</dd></div>
-            <div className="flex gap-1"><dt className="muted">{t.dashboard.grade}:</dt><dd className="font-semibold">{child.schoolGrade ?? '—'}</dd></div>
+            <div className="flex gap-1"><dt className="muted">{t.dashboard.grade}:</dt><dd className="font-semibold">{child.schoolGrade ? gradeLabel(t, child.schoolGrade) : '—'}</dd></div>
             <div className="flex gap-1"><dt className="muted">{t.dashboard.mode}:</dt><dd className="font-semibold">{p.isToddler ? t.family.modeToddler : t.family.modeElementary}</dd></div>
             <div className="flex gap-1"><dt className="muted">{t.dashboard.localDate}:</dt><dd className="font-semibold">{p.ctx.localDate} ({p.ctx.timezone})</dd></div>
           </dl>

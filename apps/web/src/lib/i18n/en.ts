@@ -95,6 +95,7 @@ export const en = {
     timezone: 'Timezone',
     grade: 'School grade (you decide)',
     gradeNone: 'Not in school yet',
+    grades: { Toddler: 'Toddler', Preschool: 'Preschool', Kindergarten: 'Kindergarten', 'Grade 1': 'Grade 1', 'Grade 2': 'Grade 2', 'Grade 3': 'Grade 3', 'Grade 4': 'Grade 4', 'Grade 5': 'Grade 5', 'Grade 6': 'Grade 6' },
     gradeHint: 'Atlas never changes the grade automatically on birthdays.',
     mode: 'Learning mode',
     modeToddlerHelp: 'You read the card and guide the activity. No child screen use is needed.',

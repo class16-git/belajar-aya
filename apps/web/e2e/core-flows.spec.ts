@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { expect, test } from '@playwright/test';
+import { createHash } from 'node:crypto';
 import {
   answer,
   answerFor,
@@ -13,7 +14,10 @@ import {
   signIn,
   startFirstChoice,
   testEmail,
+  clearRateLimits,
 } from './helpers';
+
+const rlKey = (k: string) => createHash('sha256').update(k).digest('hex');
 
 test.describe('Phase 0 gate: onboarding, two profiles, parent gate', () => {
   test('parent signs up, consents, sets a PIN and creates both learner profiles', async ({ page }) => {
@@ -287,6 +291,7 @@ test.describe('Phase 1: toddler offline cards, observations, language, privacy',
     await page.getByRole('button', { name: /^ID/ }).click();
     await expect(page.getByRole('heading', { name: 'Kemajuan Kakak' })).toBeVisible();
     await expect(page.locator('html')).toHaveAttribute('lang', 'id');
+    await expect(page.getByText('Kelas 1', { exact: true })).toBeVisible(); // grade label is localised too
     await page.locator('[data-skill="MATH-G1-COUNT-20"] summary').click();
     await expect(page.locator('[data-skill="MATH-G1-COUNT-20"] tbody tr')).toHaveCount(1);
     await page.getByRole('button', { name: /^EN/ }).click();
@@ -388,6 +393,72 @@ test.describe('concurrency (review findings F1, F3, F4)', () => {
     await page.request.post('/api/learn/session', { headers, data: {} });
     const late = await page.request.post('/api/attempts', { headers, data: { activityId: activity.activityId, response: { value: await answerFor(activity.activityId) } } });
     expect(late.status()).toBe(409);
+  });
+});
+
+test.describe('final review regressions (N3, N4, N7)', () => {
+  test('N3: a child in child mode cannot replace the session via sign-up or sign-in', async ({ page, request, baseURL }) => {
+    const fam = await createFamily(request, baseURL!, 'n3');
+    await signIn(page, fam.email);
+    await enterChildMode(page);
+    const headers = { Origin: baseURL! };
+    const up = await page.request.post('/api/auth/signup', { headers, data: { email: testEmail('n3-escape'), password: 'synthetic-password-123', locale: 'en' } });
+    expect(up.status()).toBe(403);
+    const inn = await page.request.post('/api/auth/signin', { headers, data: { email: fam.email, password: PASSWORD } });
+    expect(inn.status()).toBe(403);
+    await page.goto('/family');
+    await expect(page).toHaveURL(/\/learn$/);
+  });
+
+  test('N4: an item left ACTIVE in an ended session cannot be answered or hinted', async ({ page, request, baseURL }) => {
+    const fam = await createFamily(request, baseURL!, 'n4');
+    await signIn(page, fam.email);
+    await enterChildMode(page);
+    const headers = { Origin: baseURL! };
+    const s = await (await page.request.post('/api/learn/session', { headers, data: {} })).json();
+    const { activity } = await (await page.request.post('/api/activities/next', { headers, data: { sessionId: s.sessionId } })).json();
+    // Simulate the race outcome: the session was ended while this item was being created.
+    await db.learningSession.update({ where: { id: s.sessionId }, data: { endedAt: new Date() } });
+    const value = await answerFor(activity.activityId);
+    expect((await page.request.post('/api/attempts', { headers, data: { activityId: activity.activityId, response: { value } } })).status()).toBe(409);
+    expect((await page.request.post(`/api/activities/${activity.activityId}/hint`, { headers })).status()).toBe(409);
+    expect(await db.attempt.count({ where: { childId: fam.g1Id } })).toBe(0);
+  });
+
+  test('N7: PIN guesses are also limited per parent account, across sessions', async ({ page, request, baseURL }) => {
+    const fam = await createFamily(request, baseURL!, 'n7');
+    await signIn(page, fam.email);
+    await enterChildMode(page);
+    const user = await db.parentUser.findUniqueOrThrow({ where: { email: fam.email } });
+    // Simulate 20 earlier wrong guesses from other sessions today.
+    await db.rateLimit.create({ data: { key: rlKey(`pin-user:${user.id}`), windowStart: new Date(), count: 20 } });
+    const r = await page.request.post('/api/child-mode/exit', { headers: { Origin: baseURL! }, data: { pin: '0000' } });
+    expect(r.status()).toBe(429);
+  });
+});
+
+test.describe('final review regressions (R-F6, R-F7)', () => {
+  test('R-F7: failed sign-ins from one IP do not lock the parent out from another IP', async ({ request, baseURL }) => {
+    const fam = await createFamily(request, baseURL!, 'rf7');
+    await clearRateLimits();
+    const attacker = { Origin: baseURL!, 'x-forwarded-for': '203.0.113.66' };
+    for (let i = 0; i < 12; i++) await request.post('/api/auth/signin', { headers: attacker, data: { email: fam.email, password: 'wrong-password-xx' } });
+    expect((await request.post('/api/auth/signin', { headers: attacker, data: { email: fam.email, password: 'wrong-password-xx' } })).status()).toBe(429);
+    const parent = await request.post('/api/auth/signin', { headers: { Origin: baseURL!, 'x-forwarded-for': '198.51.100.20' }, data: { email: fam.email, password: PASSWORD } });
+    expect(parent.status()).toBe(200);
+  });
+
+  test('R-F6: rate-limit rows never store plain emails and are removed when the family is deleted', async ({ page, request, baseURL }) => {
+    const fam = await createFamily(request, baseURL!, 'rf6');
+    await signIn(page, fam.email);
+    const user = await db.parentUser.findUniqueOrThrow({ where: { email: fam.email } });
+    await page.request.post('/api/parent/pin', { headers: { Origin: baseURL! }, data: { pin: '2468', password: PASSWORD } });
+    const keys = (await db.rateLimit.findMany()).map((r) => r.key);
+    expect(keys.some((k) => k.includes('@'))).toBe(false);
+    expect(keys).toContain(rlKey(`pin-set:${user.id}`));
+    expect((await page.request.delete('/api/parent/family', { headers: { Origin: baseURL! }, data: { confirm: 'DELETE', password: PASSWORD } })).ok()).toBe(true);
+    const after = (await db.rateLimit.findMany()).map((r) => r.key);
+    for (const k of [`pin-set:${user.id}`, `delete:${user.id}`, `signin-email:${fam.email}`]) expect(after).not.toContain(rlKey(k));
   });
 });
 
