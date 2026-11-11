@@ -403,6 +403,28 @@ export interface ExpansionContent {
 }
 
 /** Validates raw unit and reading JSON: schema, subject checks, prerequisites (existence, level, cycles), duplicates. */
+/**
+ * Schema plus per-item subject checks only (no prerequisite, cycle or near-duplicate checks across files). Used when
+ * one level is loaded at runtime; the whole-corpus `validateExpansion` runs in CI and in the indexer, and its
+ * cross-file errors are carried in the generated summary.
+ */
+export function parseExpansionItems(raw: { units: unknown[]; readings: unknown[] }): { content: ExpansionContent; errors: string[] } {
+  const errors: string[] = [];
+  const units: Unit[] = [];
+  const readings: Reading[] = [];
+  for (const x of raw.units) {
+    const r = unitSchema.safeParse(x);
+    if (r.success) { units.push(r.data); errors.push(...unitIssues(r.data)); }
+    else errors.push(`unit ${(x as { id?: string })?.id ?? '?'}: ${r.error.issues.slice(0, 6).map((i) => `${i.path.join('.')} ${i.message}`).join('; ')}`);
+  }
+  for (const x of raw.readings) {
+    const r = readingSchema.safeParse(x);
+    if (r.success) { readings.push(r.data); errors.push(...readingIssues(r.data)); }
+    else errors.push(`reading ${(x as { id?: string })?.id ?? '?'}: ${r.error.issues.slice(0, 6).map((i) => `${i.path.join('.')} ${i.message}`).join('; ')}`);
+  }
+  return { content: { units, readings }, errors };
+}
+
 export function validateExpansion(raw: { units: unknown[]; readings: unknown[] }): { content: ExpansionContent; errors: string[] } {
   const errors: string[] = [];
   const units: Unit[] = [];
@@ -497,16 +519,4 @@ export function gradeUnitAssessment(u: Unit, answers: Record<string, number>) {
     return { id: a.id, correct, misconception: !correct && given !== undefined ? (a.distractorMisconceptions[String(given)] ?? null) : null, explanation: a.explanation };
   });
   return { correct: results.filter((r) => r.correct).length, total: results.length, results };
-}
-
-// ── Loaded corpus ────────────────────────────────────────────────────────────────────────────────────────────────────
-import { RAW_READINGS, RAW_UNITS } from './content-index';
-let cached: (ExpansionContent & { errors: string[] }) | null = null;
-/** The validated expansion corpus (cached). Items with validation errors are still returned, flagged via `errors`. */
-export function getExpansion(): ExpansionContent & { errors: string[] } {
-  if (!cached) {
-    const { content, errors } = validateExpansion({ units: RAW_UNITS, readings: RAW_READINGS });
-    cached = { ...content, errors };
-  }
-  return cached;
 }

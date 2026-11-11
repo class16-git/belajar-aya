@@ -25,7 +25,7 @@ export default async function UnitsPage({ searchParams }: { searchParams: Promis
   const locale = await currentLocale();
   const t = getDictionary(locale);
   const U = t.units;
-  const { units, readings } = expansionView();
+  const { units, readings } = await expansionView();
   const kind: Kind = pick(KINDS, sp.kind) ?? 'all';
   const level = pick(STAGES, sp.level);
   const framework = pick(UNIT_FRAMEWORKS, sp.framework);

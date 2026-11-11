@@ -3,11 +3,11 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { getCatalog } from '../src/catalog';
 import { contentDashboardMarkdown, expansionDashboard, expansionDashboardMarkdown } from '../src/dashboard';
-import { getExpansion } from '../src/units';
+import { expansionSummary } from '../src/expansion-store';
 import { getLibrary } from '../src/library';
 
 const out = join(import.meta.dirname, '../../../docs/delivery/CONTENT_DASHBOARD.md');
-const exp = getExpansion();
+const exp = expansionSummary();
 const md = contentDashboardMarkdown(getCatalog(), getLibrary()) + expansionDashboardMarkdown(exp);
 const jsonOut = join(import.meta.dirname, '../../../docs/delivery/content-dashboard.json');
 const json = JSON.stringify(expansionDashboard(exp), null, 2) + '\n';

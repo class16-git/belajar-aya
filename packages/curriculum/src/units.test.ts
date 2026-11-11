@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { evaluateArithmetic, gradeUnitAssessment, isExpansionVisible, parseResult, pipelineState, unitAssessmentForClient, validateExpansion, type Unit } from './units';
-import { RAW_READINGS, RAW_UNITS } from './content-index';
+import { expansionSummary, findExpansionItem, loadExpansionLevel, loadRawExpansion } from './expansion-store';
 
 const repo = join(import.meta.dirname, '../../..');
 const refUnit = () => JSON.parse(readFileSync(join(repo, 'content/units/g2/math/unit-g2-math-place-value-hundreds.json'), 'utf8')) as Unit & Record<string, unknown>;
@@ -10,11 +10,39 @@ const refReading = () => JSON.parse(readFileSync(join(repo, 'content/readings/ag
 const errs = (units: unknown[], readings: unknown[] = []) => validateExpansion({ units, readings }).errors;
 
 describe('expansion corpus', () => {
-  it('every indexed unit and reading passes structural and subject validation', () => {
-    expect(validateExpansion({ units: RAW_UNITS, readings: RAW_READINGS }).errors).toEqual([]);
+  it('every indexed unit and reading passes structural and subject validation', async () => {
+    expect(validateExpansion(await loadRawExpansion()).errors).toEqual([]);
   });
-  it('nothing AI-drafted is visible in production without a human review record', () => {
-    const { content } = validateExpansion({ units: RAW_UNITS, readings: RAW_READINGS });
+  it('the precomputed summary matches the content: same ids, states and production visibility (index is current)', async () => {
+    const raw = await loadRawExpansion();
+    const { content, errors } = validateExpansion(raw);
+    const s = expansionSummary();
+    expect(s.errors).toEqual(errors);
+    const all = [...content.units, ...content.readings];
+    expect(s.items.map((x) => x.id).sort()).toEqual(all.map((x) => x.id).sort());
+    for (const x of all) {
+      const row = s.items.find((r) => r.id === x.id)!;
+      expect(row.version, x.id).toBe(x.version);
+      expect(row.state, x.id).toBe(pipelineState(x, errors));
+      expect(row.visibleAt.reviewed, x.id).toBe(isExpansionVisible(x, 'reviewed'));
+    }
+  });
+  it('the generated index is current: every unit and reading file on disk is indexed (run `pnpm --filter @atlas/curriculum index`)', async () => {
+    const { readdirSync, statSync } = await import('node:fs');
+    const ids: string[] = [];
+    const walk = (d: string) => { for (const f of readdirSync(d)) { const p = join(d, f); if (statSync(p).isDirectory()) walk(p); else if (/^(unit|reading)-.*\.json$/.test(f)) ids.push(f.replace(/\.json$/, '')); } };
+    walk(join(repo, 'content/units'));
+    walk(join(repo, 'content/readings'));
+    expect(expansionSummary().items.map((x) => x.id).sort()).toEqual(ids.sort());
+  });
+  it('loads one level at a time and finds an item by id without loading other levels', async () => {
+    const g2 = await loadExpansionLevel('g2');
+    expect(g2.units.every((u) => u.level === 'g2') && g2.readings.every((r) => r.level === 'g2')).toBe(true);
+    expect((await findExpansionItem('unit-g2-math-place-value-hundreds'))?.item.id).toBe('unit-g2-math-place-value-hundreds');
+    expect(await findExpansionItem('unit-zz-math-nope')).toBeNull();
+  });
+  it('nothing AI-drafted is visible in production without a human review record', async () => {
+    const { content } = validateExpansion(await loadRawExpansion());
     for (const x of [...content.units, ...content.readings]) if (!x.review.reviewedBy) expect(isExpansionVisible(x, 'reviewed'), x.id).toBe(false);
   });
 });

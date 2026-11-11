@@ -7,3 +7,4 @@ export * from './library';
 export * from './manifest';
 export * from './dashboard';
 export * from './units';
+export * from './expansion-store';
