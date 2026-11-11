@@ -1,3 +1,7 @@
+> **Historical record (Phase 0 + 1, before the first production deployment).** Atlas is now live; this file is
+> kept as evidence of that phase only. For the current state see the [README](../../README.md),
+> [FINAL_HANDOVER.md](FINAL_HANDOVER.md), [RELEASES.md](RELEASES.md) and [release-manifest.json](release-manifest.json).
+
 # PR #1 — Final release-readiness report
 
 | | |

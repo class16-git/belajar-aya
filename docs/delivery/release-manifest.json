@@ -1,19 +1,19 @@
 {
   "schema": "atlas-release-manifest/1",
   "release": {
-    "gitSha": "ac4b3c9a32d096ca2d0d8ebf21b74d4a5cc63168",
-    "shortSha": "ac4b3c9",
-    "commitDate": "2026-11-11T08:40:50+07:00",
-    "subject": "Merge pull request #16 from class16-git/claude/github-repo-access-nkrthi"
+    "gitSha": "6fb21350796804b8971549facbfc9911ac9eceb6",
+    "shortSha": "6fb2135",
+    "commitDate": "2026-11-11T09:07:50+07:00",
+    "subject": "Merge pull request #17 from class16-git/claude/github-repo-access-nkrthi"
   },
   "deployment": {
     "provider": "vercel",
-    "id": "dpl_8xk7M83yFUBd94B6D8BFXjzn8Ti2",
+    "id": "dpl_Gq58t4cT7YANovnvmgvSriBpApZn",
     "url": "https://atlas.ichlasulamalsudarmi.com",
     "vercel": {
       "readyState": "READY",
       "target": "production",
-      "readyAt": "2026-11-11T01:42:17.922Z",
+      "readyAt": "2026-11-11T02:09:04.689Z",
       "aliases": [
         "atlas.ichlasulamalsudarmi.com",
         "atlas-ichlasul-amal-sudarmis-projects.vercel.app",
@@ -22,7 +22,7 @@
       "regions": [
         "sin1"
       ],
-      "githubCommitSha": "ac4b3c9a32d096ca2d0d8ebf21b74d4a5cc63168"
+      "githubCommitSha": "6fb21350796804b8971549facbfc9911ac9eceb6"
     },
     "vercelVerified": true
   },
@@ -52,11 +52,11 @@
     "note": "Applied by the Vercel build (vercel-build.mjs) after the database role check; see the build log."
   },
   "verification": {
-    "verifiedAt": "2026-11-11T01:56:02.446Z",
+    "verifiedAt": "2026-11-11T03:34:04.441Z",
     "by": "Claude Code (agent), automated read-only verification",
     "checks": [
       "GET /api/health ok and db true",
-      "checkout c565258 descends from the deployed release with identical content/ and curriculum code",
+      "checkout 0021370 descends from the deployed release with identical content/ and curriculum code",
       "live contentDigest equals checkout contentDigest",
       "curriculum version equal",
       "Vercel deployment READY, production target, same commit"

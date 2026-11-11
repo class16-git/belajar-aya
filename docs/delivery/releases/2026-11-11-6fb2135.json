@@ -1,0 +1,65 @@
+{
+  "schema": "atlas-release-manifest/1",
+  "release": {
+    "gitSha": "6fb21350796804b8971549facbfc9911ac9eceb6",
+    "shortSha": "6fb2135",
+    "commitDate": "2026-11-11T09:07:50+07:00",
+    "subject": "Merge pull request #17 from class16-git/claude/github-repo-access-nkrthi"
+  },
+  "deployment": {
+    "provider": "vercel",
+    "id": "dpl_Gq58t4cT7YANovnvmgvSriBpApZn",
+    "url": "https://atlas.ichlasulamalsudarmi.com",
+    "vercel": {
+      "readyState": "READY",
+      "target": "production",
+      "readyAt": "2026-11-11T02:09:04.689Z",
+      "aliases": [
+        "atlas.ichlasulamalsudarmi.com",
+        "atlas-ichlasul-amal-sudarmis-projects.vercel.app",
+        "atlas-git-main-ichlasul-amal-sudarmis-projects.vercel.app"
+      ],
+      "regions": [
+        "sin1"
+      ],
+      "githubCommitSha": "6fb21350796804b8971549facbfc9911ac9eceb6"
+    },
+    "vercelVerified": true
+  },
+  "curriculum": {
+    "version": "2026.11.0",
+    "minReview": "reviewed",
+    "contentDigest": "0fcf3ab0a7bd5fdb",
+    "digestMatchesCheckout": true,
+    "visible": {
+      "lessons": 55,
+      "books": 12,
+      "passages": 4,
+      "units": 0,
+      "readings": 0
+    }
+  },
+  "database": {
+    "migrationsInRelease": [
+      "20261110003726_init",
+      "20261110004029_learning_session_choice",
+      "20261110060000_one_open_session_one_active_item",
+      "20261110120000_reading_garden",
+      "20261110130000_reading_attempts",
+      "20261110140000_content_review_decisions"
+    ],
+    "latestMigration": "20261110140000_content_review_decisions",
+    "note": "Applied by the Vercel build (vercel-build.mjs) after the database role check; see the build log."
+  },
+  "verification": {
+    "verifiedAt": "2026-11-11T03:34:04.441Z",
+    "by": "Claude Code (agent), automated read-only verification",
+    "checks": [
+      "GET /api/health ok and db true",
+      "checkout 0021370 descends from the deployed release with identical content/ and curriculum code",
+      "live contentDigest equals checkout contentDigest",
+      "curriculum version equal",
+      "Vercel deployment READY, production target, same commit"
+    ]
+  }
+}
