@@ -70,7 +70,7 @@ The full reports are in `docs/curriculum/qa/`. Three QA findings became permanen
   - **Review decisions API:** parent-only, same-origin, zod `.strict()`, rate-limited and family-isolated, with an
     end-to-end test for the isolation.
   - **Export:** includes the family's decisions.
-- **Deployed release:** see [RELEASES.md](RELEASES.md). Production shows **0** expansion items to children.
+- **Deployed release:** `ac4b3c9` (`dpl_8xk7M83yFUBd94B6D8BFXjzn8Ti2`), verified on 2026-11-11. `/api/health` reports content digest `0fcf3ab0a7bd5fdb` and units 0, readings 0; the build log shows the role check and the review-decisions migration. See [RELEASES.md](RELEASES.md). Production shows **0** expansion items to children.
 
 ## 5. Blockers and outstanding approvals
 | Blocker | Who | What unblocks it |
