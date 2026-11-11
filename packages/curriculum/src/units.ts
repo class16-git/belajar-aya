@@ -297,9 +297,17 @@ const enText = (o: unknown): string =>
 export const UNIT_NEAR_DUPLICATE = 0.45;
 export const READING_NEAR_DUPLICATE = 0.3;
 
+/** Content text may never claim approval it does not have (QA finding: "scholar-approved" wording in a draft). */
+const APPROVAL_CLAIM = /\b(scholar[- ]approved|approved by (a |the )?(scholar|ulama|ustadz|educator|teacher)|certified|accredited)\b|disetujui (oleh )?(ulama|ustadz|guru)|sudah diverifikasi ulama/i;
+function approvalClaimIssues(id: string, x: unknown): string[] {
+  const m = allText(x).match(APPROVAL_CLAIM);
+  return m ? [`${id}: text claims approval ("${m[0]}") — approvals live only in review records`] : [];
+}
+
 /** Subject-level checks for one unit (beyond the schema). */
 export function unitIssues(u: Unit): string[] {
   const out: string[] = [];
+  out.push(...approvalClaimIssues(u.id, { ...u, review: null, religiousReview: null, sources: null }));
   const p = u.id.split('-');
   if (p[1] !== u.level) out.push(`${u.id}: id level ${p[1]} ≠ level ${u.level}`);
   if (!UNIT_STRANDS[u.framework].includes(u.strand)) out.push(`${u.id}: strand ${u.strand} is not a ${u.framework} strand`);
@@ -318,6 +326,16 @@ export function unitIssues(u: Unit): string[] {
     if (a.check) out.push(...checkMath(`${u.id}/${a.id}`, a.check, a.choices.en[a.answer] ?? ''));
   }
   if (new Set(u.assessment.map((a) => a.id)).size !== u.assessment.length) out.push(`${u.id}: duplicate assessment ids`);
+  // Assessment must test transfer, not recall (QA finding): an item may not reuse the exact set of numbers of a worked
+  // example or CPA activity.
+  if (u.framework === 'math') {
+    const sig = (t: string) => (t.match(/\d+(?:[.,]\d+)?/g) ?? []).sort().join('|');
+    const taught = new Set(enText([u.guidedExamples, u.cpa?.concrete ?? [], u.cpa?.pictorial ?? [], u.cpa?.abstract ?? []]).split(/(?<=[.!?])\s+/).map(sig).filter((x) => x.split('|').length >= 2));
+    for (const a of u.assessment) {
+      const k = sig(a.prompt.en);
+      if (k.split('|').length >= 2 && taught.has(k)) out.push(`${u.id}/${a.id}: repeats the numbers of a worked example; use new numbers so it tests the objective`);
+    }
+  }
   // Physical safety: hazard words in what the family handles need a flag or a safety note naming them.
   const handled = enText([u.materials, u.preparation, u.cpa?.concrete ?? [], u.practice, u.extension]).toLowerCase();
   const notes = enText(u.safety.notes).toLowerCase();
@@ -341,6 +359,7 @@ export function unitIssues(u: Unit): string[] {
 
 export function readingIssues(r: Reading): string[] {
   const out: string[] = [];
+  out.push(...approvalClaimIssues(r.id, { ...r, review: null, religiousReview: null }));
   if (r.id.split('-')[1] !== r.level) out.push(`${r.id}: id level ≠ level ${r.level}`);
   if (r.text.en.length !== r.text.id.length) out.push(`${r.id}: EN and ID must have the same paragraphs`);
   if (CAREGIVER_LED_LEVELS.includes(r.level) && r.mode !== 'parent_read') out.push(`${r.id}: pre-reader materials are parent-read`);
@@ -440,7 +459,6 @@ export function validateExpansion(raw: { units: unknown[]; readings: unknown[] }
       const s = textSimilarity(a.text.en.join(' '), b.text.en.join(' '));
       if (s >= READING_NEAR_DUPLICATE) errors.push(`readings ${a.id} and ${b.id} are near-duplicates (${s.toFixed(2)})`);
     }
-  void allText;
   return { content: { units, readings }, errors };
 }
 
