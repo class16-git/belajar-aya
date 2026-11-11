@@ -13,10 +13,10 @@ A transparent, rule-based adaptive engine and a parent dashboard tie them togeth
 >
 > | | |
 > |---|---|
-> | Latest verified release | `ac4b3c9` (PR #16), deployment `dpl_8xk7M83yFUBd94B6D8BFXjzn8Ti2` |
+> | Latest verified release | `6fb2135` (PR #17, documentation; content unchanged since `ac4b3c9`), deployment `dpl_Gq58t4cT7YANovnvmgvSriBpApZn` |
 > | Curriculum version | `2026.11.0` |
 > | Content digest | `0fcf3ab0a7bd5fdb` |
-> | Verified | 2026-11-11T01:56Z, see [`docs/delivery/release-manifest.json`](docs/delivery/release-manifest.json) |
+> | Verified | 2026-11-11T02:09Z, see [`docs/delivery/release-manifest.json`](docs/delivery/release-manifest.json) |
 >
 > - **What is released:** the scope is in [`docs/delivery/RELEASE_SCOPE.md`](docs/delivery/RELEASE_SCOPE.md), and the
 >   owner's sign-off on it is still outstanding.
