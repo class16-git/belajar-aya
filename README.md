@@ -13,16 +13,17 @@ A transparent, rule-based adaptive engine and a parent dashboard tie them togeth
 >
 > | | |
 > |---|---|
-> | Latest verified release | `6fb2135` (PR #17, documentation; content unchanged since `ac4b3c9`), deployment `dpl_Gq58t4cT7YANovnvmgvSriBpApZn` |
+> | Live commit and deployment | Reported by <https://atlas.ichlasulamalsudarmi.com/api/health> (`release`, `deployment`). Every merge to `main` deploys, so this README does not hard-code a commit |
+> | Last verified release manifest | [`docs/delivery/release-manifest.json`](docs/delivery/release-manifest.json) (Git SHA, deployment id, curriculum version, content digest, verification timestamp), history in [`docs/delivery/releases/`](docs/delivery/releases/) |
 > | Curriculum version | `2026.11.0` |
-> | Content digest | `0fcf3ab0a7bd5fdb` |
-> | Verified | 2026-11-11T02:09Z, see [`docs/delivery/release-manifest.json`](docs/delivery/release-manifest.json) |
+> | Content digest (what children can see) | `0fcf3ab0a7bd5fdb`. It changes only when visible content changes |
 >
 > - **What is released:** the scope is in [`docs/delivery/RELEASE_SCOPE.md`](docs/delivery/RELEASE_SCOPE.md), and the
 >   owner's sign-off on it is still outstanding.
 > - **Release history:** [`docs/delivery/RELEASES.md`](docs/delivery/RELEASES.md).
-> - **Documentation-only merges** also deploy. Check the live commit with `/api/health`; the manifest is updated by
->   `pnpm release:record` after each verified release.
+> - **Recording releases:** after each release, `pnpm release:record` re-verifies production and writes a new
+>   manifest. Because recording happens after deployment, the manifest on `main` can lag the live commit by one
+>   documentation-only merge. The content digest is the stable check.
 >
 > Facts in this README were verified against the source on `main`, the production `/api/health` endpoint and the
 > Vercel API on 2026-11-11. Planning documents were not taken as evidence of implementation.

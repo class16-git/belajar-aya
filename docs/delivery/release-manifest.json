@@ -52,11 +52,11 @@
     "note": "Applied by the Vercel build (vercel-build.mjs) after the database role check; see the build log."
   },
   "verification": {
-    "verifiedAt": "2026-11-11T02:09:38.085Z",
+    "verifiedAt": "2026-11-11T03:34:04.441Z",
     "by": "Claude Code (agent), automated read-only verification",
     "checks": [
       "GET /api/health ok and db true",
-      "checkout HEAD equals deployed release",
+      "checkout 0021370 descends from the deployed release with identical content/ and curriculum code",
       "live contentDigest equals checkout contentDigest",
       "curriculum version equal",
       "Vercel deployment READY, production target, same commit"
