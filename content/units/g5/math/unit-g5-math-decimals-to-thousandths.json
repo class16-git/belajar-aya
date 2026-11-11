@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-math-decimals-to-thousandths",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "framework": "math",
   "strand": "decimals",
@@ -13,7 +13,7 @@
   ],
   "objective": {
     "en": "Read, write, compare and round decimals to three places, connect them to fractions with denominators 10, 100 and 1000, and convert grams to kilograms.",
-    "id": "Membaca, menulis, membandingkan, dan membulatkan desimal sampai tiga tempat, menghubungkannya dengan pecahan berpenyebut 10, 100, dan 1000, serta mengubah gram menjadi kilogram."
+    "id": "Membaca, menulis, membandingkan, dan membulatkan desimal sampai tiga tempat, menghubungkannya dengan pecahan berpenyebut 10, 100, dan 1.000, serta mengubah gram menjadi kilogram."
   },
   "rationale": {
     "en": "Decimals extend place value to the right of the ones. Children who think of decimals as 'two whole numbers with a dot' believe 0.405 is bigger than 0.45. Place-value charts and measurement in kilograms and metres build the correct picture.",
@@ -41,8 +41,8 @@
   ],
   "parentInstructions": [
     {
-      "en": "Note: English writes 3.472 with a point; Indonesian writes 3,472 with a comma. In this unit the Indonesian text uses the comma.",
-      "id": "Catatan: bahasa Inggris menulis 3.472 dengan titik; bahasa Indonesia menulis 3,472 dengan koma. Di unit ini teks Indonesia memakai koma."
+      "en": "Note: English writes 3.472 with a point; Indonesian writes 3,472 with a comma. In this unit the Indonesian text uses the comma. Indonesian also uses a point for thousands: 1.375 g means one thousand three hundred seventy-five grams.",
+      "id": "Catatan: bahasa Inggris menulis 3.472 dengan titik; bahasa Indonesia menulis 3,472 dengan koma. Di unit ini teks Indonesia memakai koma. Bahasa Indonesia juga memakai titik untuk ribuan: 1.375 g berarti seribu tiga ratus tujuh puluh lima gram."
     },
     {
       "en": "Use a place-value chart with columns ones, tenths, hundredths, thousandths and write each digit in a box.",
@@ -135,29 +135,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "What is the value of the 7 in 3.472?",
-        "id": "Berapa nilai angka 7 pada 3,472?"
+        "en": "What is the value of the 5 in 6.159?",
+        "id": "Berapa nilai angka 5 pada 6,159?"
       },
       "choices": {
         "en": [
-          "0.07",
-          "7",
-          "0.7"
+          "0.05",
+          "5",
+          "0.5"
         ],
         "id": [
-          "0,07",
-          "7",
-          "0,7"
+          "0,05",
+          "5",
+          "0,5"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The 7 is in the hundredths place: 7 hundredths = 0.07.",
-        "id": "Angka 7 ada di tempat perseratusan: 7 perseratus = 0,07."
+        "en": "The 5 is in the hundredths place: 5 hundredths = 0.05.",
+        "id": "Angka 5 ada di tempat perseratusan: 5 perseratus = 0,05."
       },
       "check": {
-        "expression": "7/100",
-        "result": "0.07"
+        "expression": "5/100",
+        "result": "0.05"
       },
       "distractorMisconceptions": {
         "1": "FACE_VALUE",
@@ -167,29 +167,29 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Which is greater: 0.45 or 0.405?",
-        "id": "Mana yang lebih besar: 0,45 atau 0,405?"
+        "en": "Which is greater: 0.3 or 0.299?",
+        "id": "Mana yang lebih besar: 0,3 atau 0,299?"
       },
       "choices": {
         "en": [
-          "0.45",
-          "0.405",
+          "0.3",
+          "0.299",
           "They are equal"
         ],
         "id": [
-          "0,45",
-          "0,405",
+          "0,3",
+          "0,299",
           "Keduanya sama"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "0.45 = 0.450. Both have 4 tenths, but 0.450 has 5 hundredths and 0.405 has 0 hundredths.",
-        "id": "0,45 = 0,450. Keduanya punya 4 persepuluhan, tetapi 0,450 punya 5 perseratusan dan 0,405 punya 0 perseratusan."
+        "en": "0.3 = 0.300. Compare tenths: 3 tenths is more than 2 tenths, so 0.3 is greater.",
+        "id": "0,3 = 0,300. Bandingkan persepuluhan: 3 persepuluh lebih dari 2 persepuluh, jadi 0,3 lebih besar."
       },
       "check": {
-        "expression": "45/100",
-        "result": "0.45"
+        "expression": "3/10",
+        "result": "0.3"
       },
       "distractorMisconceptions": {
         "1": "LONGER_IS_LARGER",
@@ -231,29 +231,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Ibu buys 1,375 g of chicken. How many kilograms is that?",
-        "id": "Ibu membeli 1.375 g ayam. Berapa kilogram itu?"
+        "en": "Ibu buys 2060 g of beef. How many kilograms is that?",
+        "id": "Ibu membeli 2060 g daging sapi. Berapa kilogram itu?"
       },
       "choices": {
         "en": [
-          "1.375 kg",
-          "13.75 kg",
-          "1.0375 kg"
+          "2.06 kg",
+          "20.6 kg",
+          "2.6 kg"
         ],
         "id": [
-          "1,375 kg",
-          "13,75 kg",
-          "1,0375 kg"
+          "2,06 kg",
+          "20,6 kg",
+          "2,6 kg"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "1000 g = 1 kg, so divide by 1000: 1,375 ÷ 1000 = 1.375 kg.",
-        "id": "1.000 g = 1 kg, jadi bagi dengan 1.000: 1.375 ÷ 1.000 = 1,375 kg."
+        "en": "1000 g = 1 kg, so divide by 1000: 2060 ÷ 1000 = 2.06 kg.",
+        "id": "1.000 g = 1 kg, jadi bagi dengan 1.000: 2060 ÷ 1.000 = 2,06 kg."
       },
       "check": {
-        "expression": "1375 / 1000",
-        "result": "1.375"
+        "expression": "2060 / 1000",
+        "result": "2.06"
       },
       "distractorMisconceptions": {
         "1": "PLACE_SHIFT",
@@ -263,29 +263,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "Round 4.638 to the nearest hundredth.",
-        "id": "Bulatkan 4,638 ke perseratusan terdekat."
+        "en": "Round 7.315 to the nearest hundredth.",
+        "id": "Bulatkan 7,315 ke perseratusan terdekat."
       },
       "choices": {
         "en": [
-          "4.64",
-          "4.63",
-          "4.6"
+          "7.32",
+          "7.31",
+          "7.3"
         ],
         "id": [
-          "4,64",
-          "4,63",
-          "4,6"
+          "7,32",
+          "7,31",
+          "7,3"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "4.638 is between 4.63 and 4.64 and closer to 4.64, because the thousandths digit is 8.",
-        "id": "4,638 terletak antara 4,63 dan 4,64 dan lebih dekat ke 4,64, karena angka perseribuannya 8."
+        "en": "7.315 is half way between 7.31 and 7.32; a thousandths digit of 5 rounds up, so 7.32.",
+        "id": "7,315 tepat di tengah antara 7,31 dan 7,32; angka perseribuan 5 dibulatkan ke atas, jadi 7,32."
       },
       "check": {
-        "expression": "4.64",
-        "result": "4.64"
+        "expression": "7.31 + 0.01",
+        "result": "7.32"
       },
       "distractorMisconceptions": {
         "1": "TRUNCATES_NOT_ROUNDS",

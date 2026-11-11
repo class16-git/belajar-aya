@@ -14,8 +14,8 @@
     "id": "Mengurutkan langkah wudu yang diikuti keluarga dengan kartu gambar, lalu berlatih di wastafel bersama orang dewasa, dengan sedikit air."
   },
   "rationale": {
-    "en": "Wudu is a sequence, and kindergarten children learn sequences well with cards they can hold and move. Rehearsing the order dry first lets them succeed at the sink. Which steps are required and some details differ between schools of fiqh, so the family's teacher confirms them.",
-    "id": "Wudu adalah urutan, dan anak TK belajar urutan dengan baik lewat kartu yang bisa dipegang dan dipindahkan. Berlatih urutan tanpa air dulu membantu mereka berhasil di wastafel. Langkah mana yang wajib dan beberapa rinciannya berbeda antar mazhab fikih, jadi guru keluarga yang memastikannya."
+    "en": "Wudu is a sequence, and kindergarten children learn sequences well with cards they can hold and move. Rehearsing the order dry first lets them succeed at the sink. Which steps are required, some details, and whether the order itself is required differ between schools of fiqh, so the family's teacher confirms them.",
+    "id": "Wudu adalah urutan, dan anak TK belajar urutan dengan baik lewat kartu yang bisa dipegang dan dipindahkan. Berlatih urutan tanpa air dulu membantu mereka berhasil di wastafel. Langkah mana yang wajib, beberapa rinciannya, dan apakah urutannya sendiri wajib berbeda antar mazhab fikih, jadi guru keluarga yang memastikannya."
   },
   "outcomes": [
     {
@@ -143,7 +143,7 @@
         "id": "Dalam langkah pada kartu kita, kaki dibasuh terakhir."
       },
       "distractorMisconceptions": {
-        "2": "ORDER_DOES_NOT_MATTER"
+        "2": "SKIPS_FAMILY_ORDER"
       }
     },
     {
@@ -203,14 +203,14 @@
   ],
   "misconceptions": [
     {
-      "code": "ORDER_DOES_NOT_MATTER",
+      "code": "SKIPS_FAMILY_ORDER",
       "description": {
-        "en": "Does the steps in any order, for example starting with the feet.",
-        "id": "Melakukan langkah dalam urutan sembarang, misalnya mulai dari kaki."
+        "en": "Does not yet follow the family's card order, for example starting with the feet. (Whether the order is required differs between schools; this is about learning the family's sequence.)",
+        "id": "Belum mengikuti urutan kartu keluarga, misalnya mulai dari kaki. (Apakah urutan itu wajib berbeda antar mazhab; ini tentang mempelajari urutan keluarga.)"
       },
       "remediation": {
-        "en": "Number the cards with dots on the back and walk along the card line on the floor, stepping on each in turn while saying the step.",
-        "id": "Beri titik nomor di balik kartu dan berjalan di sepanjang deretan kartu di lantai, menginjak satu per satu sambil menyebut langkahnya."
+        "en": "Number the cards with dots on the back and lay the line on a dry floor away from the sink; walk beside it, pointing to each card in turn while saying the step.",
+        "id": "Beri titik nomor di balik kartu dan letakkan deretannya di lantai kering yang jauh dari wastafel; berjalan di sampingnya, menunjuk satu per satu sambil menyebut langkahnya."
       }
     },
     {
@@ -220,8 +220,8 @@
         "id": "Mengira lebih banyak air membuat wudu lebih baik, lalu banyak menciprat."
       },
       "remediation": {
-        "en": "Fill one small cup and try to finish a whole dry-run wash of the hands and face with it; talk about how little was needed.",
-        "id": "Isi satu gelas kecil dan coba membasuh tangan dan wajah hanya dengan itu; bicarakan betapa sedikit air yang dibutuhkan."
+        "en": "Fill one small cup and do a practice wash of the hands and face using only this cup; talk about how little was needed.",
+        "id": "Isi satu gelas kecil dan lakukan latihan membasuh tangan dan wajah hanya dengan air segelas itu; bicarakan betapa sedikit air yang dibutuhkan."
       }
     }
   ],
@@ -326,7 +326,9 @@
     "notes": [
       "Select the family's madhhab (an open owner decision) and confirm the exact steps, their order and which are required or recommended in it.",
       "Confirm whether intention, saying Bismillah, and repeating steps (for example three times) should appear on the cards, and how.",
-      "Check the plain-words reason given for not wasting water; no text is quoted."
+      "Check the plain-words reason given for not wasting water; no text is quoted.",
+      "May the cards treat the order of the steps (tartib) as required, or should they stay neutral between madhhabs? The draft presents only the family's common order.",
+      "Should rinsing the mouth and nose and wiping the ears be separate cards, and should steps done three times be shown?"
     ]
   },
   "provenance": {

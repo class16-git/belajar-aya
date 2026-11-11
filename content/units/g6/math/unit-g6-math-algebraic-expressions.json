@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-math-algebraic-expressions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "math",
   "strand": "algebraic_thinking",
@@ -131,29 +131,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Find the value of 3p + 5 when p = 4.",
-        "id": "Hitung nilai 3p + 5 jika p = 4."
+        "en": "Find the value of 4q + 3 when q = 5.",
+        "id": "Hitung nilai 4q + 3 jika q = 5."
       },
       "choices": {
         "en": [
-          "17",
-          "39",
+          "23",
+          "48",
           "12"
         ],
         "id": [
-          "17",
-          "39",
+          "23",
+          "48",
           "12"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "3p means 3 × p = 12; then 12 + 5 = 17.",
-        "id": "3p berarti 3 × p = 12; lalu 12 + 5 = 17."
+        "en": "4q means 4 × q = 20; then 20 + 3 = 23.",
+        "id": "4q berarti 4 × q = 20; lalu 20 + 3 = 23."
       },
       "check": {
-        "expression": "3*4 + 5",
-        "result": "17"
+        "expression": "4*5 + 3",
+        "result": "23"
       },
       "distractorMisconceptions": {
         "1": "CONCATENATES_COEFFICIENT",
@@ -163,60 +163,60 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "In a story, an ojek ride costs Rp 5,000 + Rp 2,500k, where k is the number of km. What does a 6 km ride cost?",
-        "id": "Dalam sebuah cerita, ongkos ojek adalah Rp5.000 + Rp2.500k, dengan k banyak km. Berapa ongkos untuk 6 km?"
+        "en": "In a story, a delivery costs Rp 4,000 + Rp 3,000k, where k is the number of km. What does a 5 km delivery cost?",
+        "id": "Dalam sebuah cerita, ongkos antar adalah Rp4.000 + Rp3.000k, dengan k banyak km. Berapa ongkos untuk 5 km?"
       },
       "choices": {
         "en": [
-          "Rp 20,000",
-          "Rp 45,000",
-          "Rp 13,500"
+          "Rp 19,000",
+          "Rp 35,000",
+          "Rp 7,000"
         ],
         "id": [
-          "Rp20.000",
-          "Rp45.000",
-          "Rp13.500"
+          "Rp19.000",
+          "Rp35.000",
+          "Rp7.000"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Multiply first: 2,500 × 6 = 15,000; then 5,000 + 15,000 = 20,000.",
-        "id": "Kalikan dulu: 2.500 × 6 = 15.000; lalu 5.000 + 15.000 = 20.000."
+        "en": "Multiply first: 3,000 × 5 = 15,000; then 4,000 + 15,000 = 19,000.",
+        "id": "Kalikan dulu: 3.000 × 5 = 15.000; lalu 4.000 + 15.000 = 19.000."
       },
       "check": {
-        "expression": "5000 + 2500*6",
-        "result": "20000"
+        "expression": "4000 + 3000*5",
+        "result": "19000"
       },
       "distractorMisconceptions": {
         "1": "IGNORES_ORDER_OF_OPERATIONS",
-        "2": "ADDS_COEFFICIENT"
+        "2": "IGNORES_VARIABLE"
       }
     },
     {
       "id": "a3",
       "prompt": {
-        "en": "Simplify 4a + 3a - 2a.",
-        "id": "Sederhanakan 4a + 3a - 2a."
+        "en": "Simplify 6b - 2b + b.",
+        "id": "Sederhanakan 6b - 2b + b."
       },
       "choices": {
         "en": [
-          "5a",
-          "9a",
+          "5b",
+          "9b",
           "5"
         ],
         "id": [
-          "5a",
-          "9a",
+          "5b",
+          "9b",
           "5"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "4 + 3 - 2 = 5 groups of a: 5a. The letter stays.",
-        "id": "4 + 3 - 2 = 5 kelompok a: 5a. Hurufnya tetap ada."
+        "en": "6 - 2 + 1 = 5 groups of b: 5b. The letter stays.",
+        "id": "6 - 2 + 1 = 5 kelompok b: 5b. Hurufnya tetap ada."
       },
       "check": {
-        "expression": "4 + 3 - 2",
+        "expression": "6 - 2 + 1",
         "result": "5"
       },
       "distractorMisconceptions": {
@@ -227,29 +227,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Simplify 2x + 3 + 4x + 1.",
-        "id": "Sederhanakan 2x + 3 + 4x + 1."
+        "en": "Simplify 3y + 5 + 2y + 4.",
+        "id": "Sederhanakan 3y + 5 + 2y + 4."
       },
       "choices": {
         "en": [
-          "6x + 4",
-          "10x",
-          "6x + 3"
+          "5y + 9",
+          "14y",
+          "5y + 5"
         ],
         "id": [
-          "6x + 4",
-          "10x",
-          "6x + 3"
+          "5y + 9",
+          "14y",
+          "5y + 5"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "x terms: 2x + 4x = 6x. Numbers: 3 + 1 = 4. Unlike terms stay separate: 6x + 4.",
-        "id": "Suku x: 2x + 4x = 6x. Bilangan: 3 + 1 = 4. Suku tidak sejenis tetap terpisah: 6x + 4."
+        "en": "y terms: 3y + 2y = 5y. Numbers: 5 + 4 = 9. So 5y + 9. Check with y = 1: 3 + 5 + 2 + 4 = 14 and 5 + 9 = 14.",
+        "id": "Suku y: 3y + 2y = 5y. Bilangan: 5 + 4 = 9. Jadi 5y + 9. Periksa dengan y = 1: 3 + 5 + 2 + 4 = 14 dan 5 + 9 = 14."
       },
       "check": {
-        "expression": "2 + 4",
-        "result": "6"
+        "expression": "3 + 2",
+        "result": "5"
       },
       "distractorMisconceptions": {
         "1": "COMBINES_UNLIKE_TERMS",
@@ -259,29 +259,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "Find the value of 2(m + 3) when m = 5.",
-        "id": "Hitung nilai 2(m + 3) jika m = 5."
+        "en": "Find the value of 3(n + 2) when n = 4.",
+        "id": "Hitung nilai 3(n + 2) jika n = 4."
       },
       "choices": {
         "en": [
-          "16",
-          "13",
-          "10"
+          "18",
+          "14",
+          "9"
         ],
         "id": [
-          "16",
-          "13",
-          "10"
+          "18",
+          "14",
+          "9"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Brackets first: 5 + 3 = 8; then 2 × 8 = 16.",
-        "id": "Kurung dulu: 5 + 3 = 8; lalu 2 × 8 = 16."
+        "en": "Brackets first: 4 + 2 = 6; then 3 × 6 = 18.",
+        "id": "Kurung dulu: 4 + 2 = 6; lalu 3 × 6 = 18."
       },
       "check": {
-        "expression": "2*(5 + 3)",
-        "result": "16"
+        "expression": "3*(4 + 2)",
+        "result": "18"
       },
       "distractorMisconceptions": {
         "1": "MULTIPLIES_FIRST_TERM_ONLY",
@@ -347,8 +347,8 @@
     {
       "code": "IGNORES_ORDER_OF_OPERATIONS",
       "description": {
-        "en": "Works left to right, adding before multiplying, or ignores where brackets are not.",
-        "id": "Menghitung dari kiri ke kanan, menjumlah sebelum mengali, atau salah membaca letak kurung."
+        "en": "Adds before multiplying, working strictly left to right.",
+        "id": "Menjumlah sebelum mengali, menghitung begitu saja dari kiri ke kanan."
       },
       "remediation": {
         "en": "Circle the multiplication part first and calculate it before anything else.",
@@ -408,6 +408,17 @@
       "remediation": {
         "en": "Draw two bars of (m + 3): each bar has an m part and a 3 part, so there are two 3s.",
         "id": "Gambar dua batang (m + 3): setiap batang punya bagian m dan bagian 3, jadi ada dua angka 3."
+      }
+    },
+    {
+      "code": "IGNORES_VARIABLE",
+      "description": {
+        "en": "Leaves out the letter term, as if k were 1 or not there.",
+        "id": "Mengabaikan suku berhuruf, seolah-olah k bernilai 1 atau tidak ada."
+      },
+      "remediation": {
+        "en": "Write the expression with the value in brackets, 4,000 + 3,000 × (5), and point to every letter before calculating.",
+        "id": "Tulis bentuk aljabar dengan nilainya dalam kurung, 4.000 + 3.000 × (5), dan tunjuk setiap huruf sebelum menghitung."
       }
     }
   ],

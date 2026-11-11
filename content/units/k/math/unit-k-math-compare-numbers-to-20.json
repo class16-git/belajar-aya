@@ -1,6 +1,6 @@
 {
   "id": "unit-k-math-compare-numbers-to-20",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "math",
   "strand": "number_sense",
@@ -113,8 +113,8 @@
   ],
   "practice": [
     {
-      "en": "Roll two large dice or turn over two number cards from 1 to 20; the child builds both numbers with blocks and says which is greater.",
-      "id": "Lempar dua dadu besar atau buka dua kartu angka 1 sampai 20; anak menyusun kedua bilangan dengan balok dan menyebut mana yang lebih besar."
+      "en": "Turn over two number cards from 1 to 20; the child builds both numbers with blocks and says which is greater.",
+      "id": "Buka dua kartu angka 1 sampai 20; anak menyusun kedua bilangan dengan balok dan menyebut mana yang lebih besar."
     },
     {
       "en": "At snack time count crackers on two plates and ask: which plate has fewer? How many fewer?",
@@ -257,29 +257,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "One row has 10 blocks close together. Another row has 10 blocks spread far apart. Which row has more?",
-        "id": "Satu baris berisi 10 balok berdekatan. Baris lain berisi 10 balok berjauhan. Baris mana yang lebih banyak?"
+        "en": "One row has 8 cups close together. Another row has 8 cups spread far apart. Which row has more?",
+        "id": "Satu baris berisi 8 gelas berdekatan. Baris lain berisi 8 gelas berjauhan. Baris mana yang lebih banyak?"
       },
       "choices": {
         "en": [
-          "Both rows have 10, the same",
+          "Both rows have 8, the same",
           "The spread-out row",
           "The close-together row"
         ],
         "id": [
-          "Kedua baris berisi 10, sama banyak",
+          "Kedua baris berisi 8, sama banyak",
           "Baris yang berjauhan",
           "Baris yang berdekatan"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Every block can be matched with a partner, so both rows have 10. Moving blocks apart does not change how many.",
-        "id": "Setiap balok bisa dipasangkan, jadi kedua baris berisi 10. Memindahkan balok berjauhan tidak mengubah jumlahnya."
+        "en": "Every cup can be matched with a partner, so both rows have 8. Moving cups apart does not change how many.",
+        "id": "Setiap gelas bisa dipasangkan, jadi kedua baris berisi 8. Memindahkan gelas berjauhan tidak mengubah jumlahnya."
       },
       "check": {
-        "expression": "10",
-        "result": "10"
+        "expression": "16 - 8",
+        "result": "8"
       },
       "distractorMisconceptions": {
         "1": "SPREAD_MEANS_MORE",
@@ -396,13 +396,17 @@
       "sharp": false,
       "water": false,
       "heat": false,
-      "allergens": false,
+      "allergens": true,
       "electrical": false
     },
     "notes": [
       {
         "en": "Use large blocks or kitchen items that younger siblings cannot swallow; put plastic cups away after the lesson.",
         "id": "Pakai balok besar atau alat dapur yang tidak bisa ditelan adik; simpan gelas plastik setelah pelajaran."
+      },
+      {
+        "en": "Check crackers for shrimp or other allergens before counting them at snack time, or use plain rice crackers.",
+        "id": "Periksa kerupuk dari udang atau alergen lain sebelum dihitung saat makan camilan, atau pakai kerupuk beras biasa."
       }
     ]
   },

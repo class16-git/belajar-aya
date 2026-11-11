@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-math-perimeter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "framework": "math",
   "strand": "measurement",
@@ -9,7 +9,8 @@
     "id": "Keliling bangun datar"
   },
   "prerequisites": [
-    "unit-g2-math-addition-regrouping-1000"
+    "unit-g2-math-addition-regrouping-1000",
+    "unit-g3-math-multiplication-division-bar-models"
   ],
   "objective": {
     "en": "Measure and calculate the perimeter of rectangles, squares, triangles and simple compound shapes, and find a missing side from a known perimeter.",
@@ -97,12 +98,12 @@
   ],
   "guidedExamples": [
     {
-      "en": "Rectangle: a placemat 8 cm by 5 cm (scaled drawing). 8 + 5 + 8 + 5 = 26 cm, or double 8 + 5 = 13 to get 26 cm.",
-      "id": "Persegi panjang: tatakan 8 cm kali 5 cm (gambar skala). 8 + 5 + 8 + 5 = 26 cm, atau gandakan 8 + 5 = 13 menjadi 26 cm."
+      "en": "Rectangle: a card 8 cm by 5 cm. 8 + 5 + 8 + 5 = 26 cm, or double 8 + 5 = 13 to get 26 cm.",
+      "id": "Persegi panjang: kartu 8 cm kali 5 cm. 8 + 5 + 8 + 5 = 26 cm, atau gandakan 8 + 5 = 13 menjadi 26 cm."
     },
     {
-      "en": "Square: a floor tile with side 7 m in a drawing. All four sides are equal: 4 × 7 = 28 m.",
-      "id": "Persegi: ubin bersisi 7 m dalam gambar. Keempat sisi sama: 4 × 7 = 28 m."
+      "en": "Square: a square courtyard (halaman) with side 7 m. All four sides are equal: 4 × 7 = 28 m.",
+      "id": "Persegi: halaman persegi bersisi 7 m. Keempat sisi sama: 4 × 7 = 28 m."
     },
     {
       "en": "Fence with a gate: a vegetable bed 12 m by 9 m with a 2 m gate. Perimeter 2 × (12 + 9) = 42 m; fencing needed 42 - 2 = 40 m.",
@@ -131,28 +132,28 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "What is the perimeter of a rectangle 8 cm long and 5 cm wide?",
-        "id": "Berapa keliling persegi panjang dengan panjang 8 cm dan lebar 5 cm?"
+        "en": "What is the perimeter of a rectangle 9 cm long and 4 cm wide?",
+        "id": "Berapa keliling persegi panjang dengan panjang 9 cm dan lebar 4 cm?"
       },
       "choices": {
         "en": [
           "26 cm",
           "13 cm",
-          "40 cm"
+          "36 cm"
         ],
         "id": [
           "26 cm",
           "13 cm",
-          "40 cm"
+          "36 cm"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "8 + 5 + 8 + 5 = 26 cm.",
-        "id": "8 + 5 + 8 + 5 = 26 cm."
+        "en": "9 + 4 + 9 + 4 = 26 cm.",
+        "id": "9 + 4 + 9 + 4 = 26 cm."
       },
       "check": {
-        "expression": "2*(8 + 5)",
+        "expression": "2*(9 + 4)",
         "result": "26"
       },
       "distractorMisconceptions": {
@@ -163,29 +164,29 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "A square has sides of 7 m. What is its perimeter?",
-        "id": "Sebuah persegi bersisi 7 m. Berapa kelilingnya?"
+        "en": "A square has sides of 6 m. What is its perimeter?",
+        "id": "Sebuah persegi bersisi 6 m. Berapa kelilingnya?"
       },
       "choices": {
         "en": [
-          "28 m",
-          "14 m",
-          "49 m"
+          "24 m",
+          "12 m",
+          "36 m"
         ],
         "id": [
-          "28 m",
-          "14 m",
-          "49 m"
+          "24 m",
+          "12 m",
+          "36 m"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "A square has 4 equal sides: 4 × 7 = 28 m.",
-        "id": "Persegi punya 4 sisi sama panjang: 4 × 7 = 28 m."
+        "en": "A square has 4 equal sides: 4 × 6 = 24 m.",
+        "id": "Persegi punya 4 sisi sama panjang: 4 × 6 = 24 m."
       },
       "check": {
-        "expression": "4*7",
-        "result": "28"
+        "expression": "4*6",
+        "result": "24"
       },
       "distractorMisconceptions": {
         "1": "ADDS_TWO_SIDES_ONLY",
@@ -227,29 +228,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "A vegetable bed is 12 m by 9 m. A fence goes all round it except for a 2 m gate. How many metres of fence are needed?",
-        "id": "Petak sayur berukuran 12 m kali 9 m. Pagar mengelilinginya kecuali pintu selebar 2 m. Berapa meter pagar yang diperlukan?"
+        "en": "A garden bed is 10 m by 7 m. A fence goes all round it except for a 3 m gate. How many metres of fence are needed?",
+        "id": "Petak kebun berukuran 10 m kali 7 m. Pagar mengelilinginya kecuali pintu selebar 3 m. Berapa meter pagar yang diperlukan?"
       },
       "choices": {
         "en": [
-          "40 m",
-          "42 m",
-          "21 m"
+          "31 m",
+          "34 m",
+          "17 m"
         ],
         "id": [
-          "40 m",
-          "42 m",
-          "21 m"
+          "31 m",
+          "34 m",
+          "17 m"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Perimeter 2 × (12 + 9) = 42 m, minus the 2 m gate = 40 m.",
-        "id": "Keliling 2 × (12 + 9) = 42 m, dikurangi pintu 2 m = 40 m."
+        "en": "Perimeter 2 × (10 + 7) = 34 m, minus the 3 m gate = 31 m.",
+        "id": "Keliling 2 × (10 + 7) = 34 m, dikurangi pintu 3 m = 31 m."
       },
       "check": {
-        "expression": "2*(12 + 9) - 2",
-        "result": "40"
+        "expression": "2*(10 + 7) - 3",
+        "result": "31"
       },
       "distractorMisconceptions": {
         "1": "IGNORES_GAP",
@@ -259,29 +260,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "A rectangle has a perimeter of 30 cm. Its length is 9 cm. What is its width?",
-        "id": "Sebuah persegi panjang kelilingnya 30 cm. Panjangnya 9 cm. Berapa lebarnya?"
+        "en": "A rectangle has a perimeter of 36 cm. Its length is 11 cm. What is its width?",
+        "id": "Sebuah persegi panjang kelilingnya 36 cm. Panjangnya 11 cm. Berapa lebarnya?"
       },
       "choices": {
         "en": [
-          "6 cm",
-          "21 cm",
-          "12 cm"
+          "7 cm",
+          "25 cm",
+          "14 cm"
         ],
         "id": [
-          "6 cm",
-          "21 cm",
-          "12 cm"
+          "7 cm",
+          "25 cm",
+          "14 cm"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Length + width is half the perimeter: 15 cm. 15 - 9 = 6 cm.",
-        "id": "Panjang + lebar adalah setengah keliling: 15 cm. 15 - 9 = 6 cm."
+        "en": "Length + width is half the perimeter: 18 cm. 18 - 11 = 7 cm.",
+        "id": "Panjang + lebar adalah setengah keliling: 18 cm. 18 - 11 = 7 cm."
       },
       "check": {
-        "expression": "30/2 - 9",
-        "result": "6"
+        "expression": "36/2 - 11",
+        "result": "7"
       },
       "distractorMisconceptions": {
         "1": "SUBTRACTS_ONE_SIDE_ONLY",
@@ -348,8 +349,8 @@
   ],
   "extension": [
     {
-      "en": "Design a rectangular garden bed with 24 m of bamboo fencing; which length and width give the biggest bed?",
-      "id": "Rancang petak kebun persegi panjang dengan 24 m pagar bambu; panjang dan lebar berapa yang memberi petak terbesar?"
+      "en": "With 24 m of bamboo fencing, how many different rectangles with whole-metre sides can you make? List their lengths and widths.",
+      "id": "Dengan 24 m pagar bambu, berapa persegi panjang berbeda bersisi meter bulat yang bisa dibuat? Daftar panjang dan lebarnya."
     }
   ],
   "accessibility": [

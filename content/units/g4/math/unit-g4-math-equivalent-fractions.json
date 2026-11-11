@@ -1,6 +1,6 @@
 {
   "id": "unit-g4-math-equivalent-fractions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "framework": "math",
   "strand": "fractions",
@@ -132,29 +132,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "2/3 = ?/12",
-        "id": "2/3 = ?/12"
+        "en": "3/4 = ?/12",
+        "id": "3/4 = ?/12"
       },
       "choices": {
         "en": [
-          "8",
+          "9",
           "11",
-          "2"
+          "3"
         ],
         "id": [
-          "8",
+          "9",
           "11",
-          "2"
+          "3"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "3 × 4 = 12, so multiply the numerator by 4 too: 2 × 4 = 8.",
-        "id": "3 × 4 = 12, jadi kalikan pembilang dengan 4 juga: 2 × 4 = 8."
+        "en": "4 × 3 = 12, so multiply the numerator by 3 too: 3 × 3 = 9.",
+        "id": "4 × 3 = 12, jadi kalikan pembilang dengan 3 juga: 3 × 3 = 9."
       },
       "check": {
-        "expression": "2/3 * 12",
-        "result": "8"
+        "expression": "3/4 * 12",
+        "result": "9"
       },
       "distractorMisconceptions": {
         "1": "ADDITIVE_SCALING",
@@ -164,28 +164,28 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "What is 12/18 in simplest form?",
-        "id": "Apa bentuk paling sederhana dari 12/18?"
+        "en": "What is 20/30 in simplest form?",
+        "id": "Apa bentuk paling sederhana dari 20/30?"
       },
       "choices": {
         "en": [
           "2/3",
-          "6/9",
+          "10/15",
           "4/6"
         ],
         "id": [
           "2/3",
-          "6/9",
+          "10/15",
           "4/6"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The highest common factor of 12 and 18 is 6: 12 ÷ 6 = 2 and 18 ÷ 6 = 3.",
-        "id": "FPB dari 12 dan 18 adalah 6: 12 ÷ 6 = 2 dan 18 ÷ 6 = 3."
+        "en": "The highest common factor of 20 and 30 is 10: 20 ÷ 10 = 2 and 30 ÷ 10 = 3.",
+        "id": "FPB dari 20 dan 30 adalah 10: 20 ÷ 10 = 2 dan 30 ÷ 10 = 3."
       },
       "check": {
-        "expression": "12/18",
+        "expression": "20/30",
         "result": "2/3"
       },
       "distractorMisconceptions": {
@@ -228,8 +228,8 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "One kue lapis is cut into 4 equal parts and Aya takes 1. An identical kue is cut into 8 equal parts. How many eighths equal Aya's piece?",
-        "id": "Satu kue lapis dipotong 4 bagian sama besar dan Aya mengambil 1. Kue yang sama dipotong 8 bagian sama besar. Berapa perdelapan yang sama dengan potongan Aya?"
+        "en": "One kue is cut into 3 equal parts and Dimas takes 1. An identical kue is cut into 6 equal parts. How many sixths equal Dimas's piece?",
+        "id": "Satu kue dipotong 3 bagian sama besar dan Dimas mengambil 1. Kue yang sama dipotong 6 bagian sama besar. Berapa perenam yang sama dengan potongan Dimas?"
       },
       "choices": {
         "en": [
@@ -245,11 +245,11 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Each quarter is split into 2 eighths: 1/4 = 2/8.",
-        "id": "Setiap perempat dibagi menjadi 2 perdelapan: 1/4 = 2/8."
+        "en": "Each third is split into 2 sixths: 1/3 = 2/6.",
+        "id": "Setiap pertiga dibagi menjadi 2 perenam: 1/3 = 2/6."
       },
       "check": {
-        "expression": "1/4 * 8",
+        "expression": "1/3 * 6",
         "result": "2"
       },
       "distractorMisconceptions": {
@@ -260,29 +260,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "Which is greater: 3/4 or 5/8?",
-        "id": "Mana yang lebih besar: 3/4 atau 5/8?"
+        "en": "Which is greater: 2/3 or 5/9?",
+        "id": "Mana yang lebih besar: 2/3 atau 5/9?"
       },
       "choices": {
         "en": [
-          "3/4",
-          "5/8",
+          "2/3",
+          "5/9",
           "They are equal"
         ],
         "id": [
-          "3/4",
-          "5/8",
+          "2/3",
+          "5/9",
           "Keduanya sama"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "3/4 = 6/8, and 6/8 is greater than 5/8.",
-        "id": "3/4 = 6/8, dan 6/8 lebih besar dari 5/8."
+        "en": "2/3 = 6/9, and 6/9 is greater than 5/9.",
+        "id": "2/3 = 6/9, dan 6/9 lebih besar dari 5/9."
       },
       "check": {
-        "expression": "6/8",
-        "result": "3/4"
+        "expression": "6/9",
+        "result": "2/3"
       },
       "distractorMisconceptions": {
         "1": "BIGGER_NUMBERS_BIGGER_FRACTION",

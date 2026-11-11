@@ -1,12 +1,12 @@
 {
   "id": "unit-g2-math-addition-regrouping-1000",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "math",
   "strand": "addition_subtraction",
   "title": {
     "en": "Adding with regrouping to 1000",
-    "id": "Penjumlahan dengan menyimpan sampai 1000"
+    "id": "Penjumlahan dengan menyimpan sampai 1.000"
   },
   "prerequisites": [
     "unit-g2-math-place-value-hundreds",
@@ -14,7 +14,7 @@
   ],
   "objective": {
     "en": "Add two three-digit numbers with totals up to 1000, regrouping ones into tens and tens into hundreds, and choose a mental strategy when the numbers are friendly.",
-    "id": "Menjumlahkan dua bilangan tiga angka dengan hasil sampai 1000, menukar satuan menjadi puluhan dan puluhan menjadi ratusan, serta memilih strategi mental jika bilangannya mudah."
+    "id": "Menjumlahkan dua bilangan tiga angka dengan hasil sampai 1.000, menukar satuan menjadi puluhan dan puluhan menjadi ratusan, serta memilih strategi mental jika bilangannya mudah."
   },
   "rationale": {
     "en": "The written column method only makes sense when children have physically traded ten ones for a ten. Linking the trade to the small 1 written in the column stops 'carrying' from being a meaningless rule.",
@@ -107,7 +107,7 @@
     },
     {
       "en": "Total exactly 1000: 586 + 414. Ones 10, tens 10, hundreds 10: each place makes a new unit of the next place, ending with one thousand.",
-      "id": "Hasil tepat 1000: 586 + 414. Satuan 10, puluhan 10, ratusan 10: setiap tempat membuat satu satuan baru di tempat berikutnya, sampai menjadi seribu."
+      "id": "Hasil tepat 1.000: 586 + 414. Satuan 10, puluhan 10, ratusan 10: setiap tempat membuat satu satuan baru di tempat berikutnya, sampai menjadi seribu."
     },
     {
       "en": "Round and adjust: 399 + 245 = 400 + 245 - 1 = 644. Or move 1 from 245 to 399: 400 + 244 = 644.",
@@ -120,8 +120,8 @@
       "id": "Selesaikan 167 + 258, 409 + 293, dan 555 + 345 dengan kartu, lalu bersusun; perkirakan masing-masing dulu."
     },
     {
-      "en": "Use two shopping receipts or food labels with three-digit numbers (grams, prices in hundreds of rupiah) and add them.",
-      "id": "Pakai dua struk belanja atau label makanan dengan bilangan tiga angka (gram, harga ratusan rupiah) lalu jumlahkan."
+      "en": "Use two food labels with three-digit masses in grams, or two prices in thousands of rupiah (for example 125 thousand and 248 thousand), and add them.",
+      "id": "Pakai dua label makanan dengan massa tiga angka dalam gram, atau dua harga dalam ribuan rupiah (misalnya 125 ribu dan 248 ribu), lalu jumlahkan."
     },
     {
       "en": "Find the mistake: a parent writes 368 + 254 = 512 (no regrouping); the child explains and corrects it to 622.",
@@ -132,29 +132,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "358 + 267 = ?",
-        "id": "358 + 267 = ?"
+        "en": "467 + 385 = ?",
+        "id": "467 + 385 = ?"
       },
       "choices": {
         "en": [
-          "625",
-          "515",
-          "51115"
+          "852",
+          "742",
+          "71412"
         ],
         "id": [
-          "625",
-          "515",
-          "51115"
+          "852",
+          "742",
+          "71412"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Ones 15: write 5, regroup 1 ten. Tens 5 + 6 + 1 = 12: write 2, regroup 1 hundred. Hundreds 3 + 2 + 1 = 6.",
-        "id": "Satuan 15: tulis 5, simpan 1 puluhan. Puluhan 5 + 6 + 1 = 12: tulis 2, simpan 1 ratusan. Ratusan 3 + 2 + 1 = 6."
+        "en": "Ones 7 + 5 = 12: write 2, regroup 1 ten. Tens 6 + 8 + 1 = 15: write 5, regroup 1 hundred. Hundreds 4 + 3 + 1 = 8.",
+        "id": "Satuan 7 + 5 = 12: tulis 2, simpan 1 puluhan. Puluhan 6 + 8 + 1 = 15: tulis 5, simpan 1 ratusan. Ratusan 4 + 3 + 1 = 8."
       },
       "check": {
-        "expression": "358 + 267",
-        "result": "625"
+        "expression": "467 + 385",
+        "result": "852"
       },
       "distractorMisconceptions": {
         "1": "NO_REGROUP",
@@ -164,29 +164,29 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Ibu uses 475 g of flour and 348 g of sugar. What is the total mass?",
-        "id": "Ibu memakai 475 g tepung dan 348 g gula. Berapa massa totalnya?"
+        "en": "Ibu uses 386 g of rice flour and 457 g of sugar. What is the total mass?",
+        "id": "Ibu memakai 386 g tepung beras dan 457 g gula. Berapa massa totalnya?"
       },
       "choices": {
         "en": [
-          "823 g",
-          "723 g",
-          "813 g"
+          "843 g",
+          "743 g",
+          "833 g"
         ],
         "id": [
-          "823 g",
-          "723 g",
-          "813 g"
+          "843 g",
+          "743 g",
+          "833 g"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "5 + 8 = 13, 7 + 4 + 1 = 12, 4 + 3 + 1 = 8, so 823 g.",
-        "id": "5 + 8 = 13, 7 + 4 + 1 = 12, 4 + 3 + 1 = 8, jadi 823 g."
+        "en": "6 + 7 = 13, 8 + 5 + 1 = 14, 3 + 4 + 1 = 8, so 843 g.",
+        "id": "6 + 7 = 13, 8 + 5 + 1 = 14, 3 + 4 + 1 = 8, jadi 843 g."
       },
       "check": {
-        "expression": "475 + 348",
-        "result": "823"
+        "expression": "386 + 457",
+        "result": "843"
       },
       "distractorMisconceptions": {
         "1": "FORGETS_REGROUPED_HUNDRED",
@@ -260,29 +260,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "To work out 399 + 245, Sari changes it to 400 + ?. What number goes in the box?",
-        "id": "Untuk menghitung 399 + 245, Sari mengubahnya menjadi 400 + ?. Bilangan berapa di kotak?"
+        "en": "To work out 298 + 356, Sari changes it to 300 + ?. What number goes in the box?",
+        "id": "Untuk menghitung 298 + 356, Sari mengubahnya menjadi 300 + ?. Bilangan berapa di kotak?"
       },
       "choices": {
         "en": [
-          "244",
-          "245",
-          "246"
+          "354",
+          "356",
+          "358"
         ],
         "id": [
-          "244",
-          "245",
-          "246"
+          "354",
+          "356",
+          "358"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Sari gave 1 to 399 to make 400, so she takes 1 from 245: 244. Both totals are 644.",
-        "id": "Sari memberi 1 kepada 399 agar menjadi 400, jadi ia mengambil 1 dari 245: 244. Kedua jumlahnya 644."
+        "en": "Sari gave 2 to 298 to make 300, so she takes 2 from 356: 354. Both totals are 654.",
+        "id": "Sari memberi 2 kepada 298 agar menjadi 300, jadi ia mengambil 2 dari 356: 354. Kedua jumlahnya 654."
       },
       "check": {
-        "expression": "399 + 245 - 400",
-        "result": "244"
+        "expression": "298 + 356 - 300",
+        "result": "354"
       },
       "distractorMisconceptions": {
         "1": "FORGETS_COMPENSATION",
@@ -411,7 +411,7 @@
     ],
     "masteryRule": {
       "en": "Secure when the child solves four additions with two regroupings correctly, including one totalling 1000, and explains one trade with cards, on two different days.",
-      "id": "Dikuasai jika anak menyelesaikan empat penjumlahan dengan dua kali menyimpan dengan benar, termasuk satu yang hasilnya 1000, dan menjelaskan satu penukaran dengan kartu, pada dua hari berbeda."
+      "id": "Dikuasai jika anak menyelesaikan empat penjumlahan dengan dua kali menyimpan dengan benar, termasuk satu yang hasilnya 1.000, dan menjelaskan satu penukaran dengan kartu, pada dua hari berbeda."
     }
   },
   "sources": [

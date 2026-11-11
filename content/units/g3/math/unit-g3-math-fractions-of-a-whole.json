@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-math-fractions-of-a-whole",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "framework": "math",
   "strand": "fractions",
@@ -46,7 +46,7 @@
     },
     {
       "en": "Fold paper strips of the same length into halves, thirds, quarters, sixths and eighths and keep them as a fraction wall.",
-      "id": "Lipat potongan kertas yang sama panjang menjadi perdua, pertiga, perempat, perenam, dan perdelapan lalu simpan sebagai dinding pecahan."
+      "id": "Lipat potongan kertas yang sama panjang menjadi setengah, pertiga, perempat, perenam, dan perdelapan lalu simpan sebagai dinding pecahan."
     },
     {
       "en": "Show one unequal split on purpose and ask whether it shows thirds.",
@@ -68,8 +68,8 @@
     ],
     "pictorial": [
       {
-        "en": "Draw a fraction wall: one whole bar, then rows split into 2, 3, 4, 6 and 8 equal parts; shade 1/3 and 1/5 of a same-size bar and compare.",
-        "id": "Gambar dinding pecahan: satu batang utuh, lalu baris yang dibagi menjadi 2, 3, 4, 6, dan 8 bagian sama besar; arsir 1/3 dan 1/5 dari batang yang sama panjang lalu bandingkan."
+        "en": "Draw a fraction wall: one whole bar, then rows split into 2, 3, 4, 5, 6 and 8 equal parts; shade 1/3 and 1/5 of a same-size bar and compare.",
+        "id": "Gambar dinding pecahan: satu batang utuh, lalu baris yang dibagi menjadi 2, 3, 4, 5, 6, dan 8 bagian sama besar; arsir 1/3 dan 1/5 dari batang yang sama panjang lalu bandingkan."
       }
     ],
     "abstract": [
@@ -109,8 +109,8 @@
       "id": "Bagian harus sama besar: kertas yang dilipat menjadi 3 bagian berbeda ukuran tidak menunjukkan pertiga."
     },
     {
-      "en": "Fraction of a set: 1/4 of 12 eggs. Share 12 into 4 equal groups: 3 in each, so 1/4 of 12 is 3 and 3/4 of 12 is 9.",
-      "id": "Pecahan sekumpulan benda: 1/4 dari 12 telur. Bagi 12 menjadi 4 kelompok sama: masing-masing 3, jadi 1/4 dari 12 adalah 3 dan 3/4 dari 12 adalah 9."
+      "en": "Stretch, a bridge to division. Fraction of a set: 1/4 of 12 eggs. Share 12 into 4 equal groups: 3 in each, so 1/4 of 12 is 3 and 3/4 of 12 is 9.",
+      "id": "Tantangan, jembatan ke pembagian. Pecahan sekumpulan benda: 1/4 dari 12 telur. Bagi 12 menjadi 4 kelompok sama: masing-masing 3, jadi 1/4 dari 12 adalah 3 dan 3/4 dari 12 adalah 9."
     }
   ],
   "practice": [
@@ -131,29 +131,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "A martabak is cut into 8 equal pieces. Aya eats 3 pieces. What fraction did she eat?",
-        "id": "Martabak dipotong menjadi 8 potong sama besar. Aya makan 3 potong. Pecahan berapa yang ia makan?"
+        "en": "A roti is cut into 6 equal pieces. Bayu eats 5 pieces. What fraction did he eat?",
+        "id": "Sebuah roti dipotong menjadi 6 potong sama besar. Bayu makan 5 potong. Pecahan berapa yang ia makan?"
       },
       "choices": {
         "en": [
-          "3/8",
-          "3/5",
-          "8/3"
+          "5/6",
+          "5/1",
+          "6/5"
         ],
         "id": [
-          "3/8",
-          "3/5",
-          "8/3"
+          "5/6",
+          "5/1",
+          "6/5"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "8 equal parts make the whole, and she ate 3 of them: 3/8.",
-        "id": "8 bagian sama besar membentuk satu utuh, dan ia makan 3: 3/8."
+        "en": "6 equal parts make the whole, and he ate 5 of them: 5/6.",
+        "id": "6 bagian sama besar membentuk satu utuh, dan ia makan 5: 5/6."
       },
       "check": {
-        "expression": "3/8",
-        "result": "3/8"
+        "expression": "1 - 1/6",
+        "result": "5/6"
       },
       "distractorMisconceptions": {
         "1": "PART_OVER_REST",
@@ -163,29 +163,29 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Which is more cake: 1/3 or 1/5 of the same cake?",
-        "id": "Mana yang lebih banyak: 1/3 atau 1/5 dari kue yang sama?"
+        "en": "Which is more cake: 1/4 or 1/6 of the same cake?",
+        "id": "Mana yang lebih banyak: 1/4 atau 1/6 dari kue yang sama?"
       },
       "choices": {
         "en": [
-          "1/3",
-          "1/5",
+          "1/4",
+          "1/6",
           "They are the same"
         ],
         "id": [
-          "1/3",
-          "1/5",
+          "1/4",
+          "1/6",
           "Keduanya sama"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Sharing among 3 gives bigger pieces than sharing among 5.",
-        "id": "Dibagi 3 orang memberi potongan lebih besar daripada dibagi 5 orang."
+        "en": "Sharing among 4 gives bigger pieces than sharing among 6.",
+        "id": "Dibagi 4 orang memberi potongan lebih besar daripada dibagi 6 orang."
       },
       "check": {
-        "expression": "1/3",
-        "result": "1/3"
+        "expression": "1/4",
+        "result": "1/4"
       },
       "distractorMisconceptions": {
         "1": "BIGGER_DENOMINATOR_BIGGER",
@@ -287,29 +287,29 @@
     {
       "id": "a6",
       "prompt": {
-        "en": "What is 1/4 of 12 eggs?",
-        "id": "Berapa 1/4 dari 12 telur?"
+        "en": "What is 1/3 of 15 spoons?",
+        "id": "Berapa 1/3 dari 15 sendok?"
       },
       "choices": {
         "en": [
+          "5",
           "3",
-          "4",
-          "8"
+          "12"
         ],
         "id": [
+          "5",
           "3",
-          "4",
-          "8"
+          "12"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Share 12 into 4 equal groups: 12 ÷ 4 = 3.",
-        "id": "Bagi 12 menjadi 4 kelompok sama: 12 ÷ 4 = 3."
+        "en": "Share 15 into 3 equal groups: 15 ÷ 3 = 5.",
+        "id": "Bagi 15 menjadi 3 kelompok sama: 15 ÷ 3 = 5."
       },
       "check": {
-        "expression": "12 / 4",
-        "result": "3"
+        "expression": "15 / 3",
+        "result": "5"
       },
       "distractorMisconceptions": {
         "1": "GIVES_DENOMINATOR",

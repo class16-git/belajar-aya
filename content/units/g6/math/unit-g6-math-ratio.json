@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-math-ratio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "math",
   "strand": "ratio_percentage",
@@ -10,7 +10,8 @@
   },
   "prerequisites": [
     "unit-g4-math-factors-and-multiples",
-    "unit-g4-math-equivalent-fractions"
+    "unit-g4-math-equivalent-fractions",
+    "unit-g5-math-adding-unlike-fractions"
   ],
   "objective": {
     "en": "Write and simplify ratios, find equivalent ratios, and solve sharing, scaling and difference problems with bar models and the unit method.",
@@ -132,29 +133,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "A recipe uses 2 cups of rice for every 3 cups of water. How much water is needed for 6 cups of rice?",
-        "id": "Sebuah resep memakai 2 gelas beras untuk setiap 3 gelas air. Berapa air yang diperlukan untuk 6 gelas beras?"
+        "en": "A pancake batter uses 3 cups of flour for every 2 cups of milk. How much milk is needed for 9 cups of flour?",
+        "id": "Adonan panekuk memakai 3 gelas tepung untuk setiap 2 gelas susu. Berapa susu yang diperlukan untuk 9 gelas tepung?"
       },
       "choices": {
         "en": [
-          "9 cups",
-          "7 cups",
-          "4 cups"
+          "6 cups",
+          "8 cups",
+          "13 1/2 cups"
         ],
         "id": [
-          "9 gelas",
-          "7 gelas",
-          "4 gelas"
+          "6 gelas",
+          "8 gelas",
+          "13 1/2 gelas"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "6 cups of rice is 3 times 2 cups, so the water is 3 times 3 cups = 9 cups.",
-        "id": "6 gelas beras adalah 3 kali 2 gelas, jadi air 3 kali 3 gelas = 9 gelas."
+        "en": "9 cups of flour is 3 times 3 cups, so the milk is 3 times 2 cups = 6 cups.",
+        "id": "9 gelas tepung adalah 3 kali 3 gelas, jadi susu 3 kali 2 gelas = 6 gelas."
       },
       "check": {
-        "expression": "6/2 * 3",
-        "result": "9"
+        "expression": "9/3 * 2",
+        "result": "6"
       },
       "distractorMisconceptions": {
         "1": "ADDITIVE_REASONING",
@@ -164,28 +165,28 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "12 : 18 = 2 : ?",
-        "id": "12 : 18 = 2 : ?"
+        "en": "16 : 24 = 2 : ?",
+        "id": "16 : 24 = 2 : ?"
       },
       "choices": {
         "en": [
           "3",
-          "8",
-          "9"
+          "10",
+          "6"
         ],
         "id": [
           "3",
-          "8",
-          "9"
+          "10",
+          "6"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Divide both parts by 6: 12 ÷ 6 = 2 and 18 ÷ 6 = 3.",
-        "id": "Bagi kedua bagian dengan 6: 12 ÷ 6 = 2 dan 18 ÷ 6 = 3."
+        "en": "Divide both parts by 8: 16 ÷ 8 = 2 and 24 ÷ 8 = 3.",
+        "id": "Bagi kedua bagian dengan 8: 16 ÷ 8 = 2 dan 24 ÷ 8 = 3."
       },
       "check": {
-        "expression": "18 / 6",
+        "expression": "24 / 8",
         "result": "3"
       },
       "distractorMisconceptions": {
@@ -196,29 +197,29 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "Rp 40,000 is shared between Aya and Bayu in the ratio 3 : 5. How much does Bayu get?",
-        "id": "Rp40.000 dibagi antara Aya dan Bayu dengan perbandingan 3 : 5. Berapa bagian Bayu?"
+        "en": "Rp 56,000 is shared between Aya and Bayu in the ratio 3 : 4. How much does Bayu get?",
+        "id": "Rp56.000 dibagi antara Aya dan Bayu dengan perbandingan 3 : 4. Berapa bagian Bayu?"
       },
       "choices": {
         "en": [
-          "Rp 25,000",
-          "Rp 8,000",
-          "Rp 15,000"
+          "Rp 32,000",
+          "Rp 14,000",
+          "Rp 24,000"
         ],
         "id": [
-          "Rp25.000",
-          "Rp8.000",
-          "Rp15.000"
+          "Rp32.000",
+          "Rp14.000",
+          "Rp24.000"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "8 units = Rp 40,000, so 1 unit = Rp 5,000 and Bayu's 5 units = Rp 25,000.",
-        "id": "8 satuan = Rp40.000, jadi 1 satuan = Rp5.000 dan 5 satuan Bayu = Rp25.000."
+        "en": "7 units = Rp 56,000, so 1 unit = Rp 8,000 and Bayu's 4 units = Rp 32,000.",
+        "id": "7 satuan = Rp56.000, jadi 1 satuan = Rp8.000 dan 4 satuan Bayu = Rp32.000."
       },
       "check": {
-        "expression": "40000/8*5",
-        "result": "25000"
+        "expression": "56000/7*4",
+        "result": "32000"
       },
       "distractorMisconceptions": {
         "1": "DIVIDES_BY_ONE_PART",
@@ -228,29 +229,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Es buah is made with syrup and water in the ratio 2 : 7. What fraction of the drink is syrup?",
-        "id": "Es buah dibuat dari sirup dan air dengan perbandingan 2 : 7. Pecahan berapa dari minuman itu yang berupa sirup?"
+        "en": "A drink is made with juice and water in the ratio 3 : 5. What fraction of the drink is juice?",
+        "id": "Sebuah minuman dibuat dari jus dan air dengan perbandingan 3 : 5. Pecahan berapa dari minuman itu yang berupa jus?"
       },
       "choices": {
         "en": [
-          "2/9",
-          "2/7",
-          "7/9"
+          "3/8",
+          "3/5",
+          "5/8"
         ],
         "id": [
-          "2/9",
-          "2/7",
-          "7/9"
+          "3/8",
+          "3/5",
+          "5/8"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "There are 2 + 7 = 9 parts in all, and 2 of them are syrup: 2/9.",
-        "id": "Seluruhnya ada 2 + 7 = 9 bagian, dan 2 di antaranya sirup: 2/9."
+        "en": "There are 3 + 5 = 8 parts in all, and 3 of them are juice: 3/8.",
+        "id": "Seluruhnya ada 3 + 5 = 8 bagian, dan 3 di antaranya jus: 3/8."
       },
       "check": {
-        "expression": "2/(2 + 7)",
-        "result": "2/9"
+        "expression": "3/(3 + 5)",
+        "result": "3/8"
       },
       "distractorMisconceptions": {
         "1": "PART_TO_PART_AS_FRACTION",
@@ -260,29 +261,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "Aya and Bayu have stickers in the ratio 5 : 3. Aya has 12 more stickers than Bayu. How many stickers does Bayu have?",
-        "id": "Stiker Aya dan Bayu berbanding 5 : 3. Aya punya 12 stiker lebih banyak dari Bayu. Berapa stiker Bayu?"
+        "en": "Aya and Bayu have marbles in the ratio 7 : 4. Aya has 15 more than Bayu. How many does Bayu have?",
+        "id": "Kelereng Aya dan Bayu berbanding 7 : 4. Aya punya 15 lebih banyak dari Bayu. Berapa kelereng Bayu?"
       },
       "choices": {
         "en": [
-          "18",
-          "36",
-          "30"
+          "20",
+          "60",
+          "35"
         ],
         "id": [
-          "18",
-          "36",
-          "30"
+          "20",
+          "60",
+          "35"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The difference is 5 - 3 = 2 units = 12, so 1 unit = 6 and Bayu has 3 × 6 = 18.",
-        "id": "Selisihnya 5 - 3 = 2 satuan = 12, jadi 1 satuan = 6 dan Bayu punya 3 × 6 = 18."
+        "en": "The difference is 7 - 4 = 3 units = 15, so 1 unit = 5 and Bayu has 4 × 5 = 20.",
+        "id": "Selisihnya 7 - 4 = 3 satuan = 15, jadi 1 satuan = 5 dan Bayu punya 4 × 5 = 20."
       },
       "check": {
-        "expression": "12/2*3",
-        "result": "18"
+        "expression": "15/3*4",
+        "result": "20"
       },
       "distractorMisconceptions": {
         "1": "DIFFERENCE_AS_ONE_UNIT",

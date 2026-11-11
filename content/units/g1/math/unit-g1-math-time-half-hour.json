@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-math-time-half-hour",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "math",
   "strand": "time",
@@ -41,8 +41,8 @@
   ],
   "parentInstructions": [
     {
-      "en": "Make a paper-plate clock together; the adult does any cutting and fastens the hands with a split pin pushed through the centre.",
-      "id": "Buat jam dari piring kertas bersama; orang dewasa melakukan pemotongan dan memasang jarum dengan paku pines di tengahnya."
+      "en": "Make a paper-plate clock together; the adult does any cutting, makes a small hole in the centre and holds the hands on with a pencil stub or a rolled paper plug.",
+      "id": "Buat jam dari piring kertas bersama; orang dewasa melakukan pemotongan, membuat lubang kecil di tengah, dan menahan jarum dengan potongan pensil atau gulungan kertas."
     },
     {
       "en": "Begin with only the short hand: talk about 'just after 7', 'halfway to 8'.",
@@ -81,8 +81,8 @@
   },
   "materials": [
     {
-      "en": "A paper plate, a strip of card for two hands of different lengths, and a split pin (paper fastener)",
-      "id": "Piring kertas, potongan karton untuk dua jarum berbeda panjang, dan paku pines (paper fastener)"
+      "en": "A paper plate, a strip of card for two hands of different lengths, and a short pencil stub or a tight roll of paper to hold the hands on (a split pin, also called a paper fastener, is an alternative)",
+      "id": "Piring kertas, potongan karton untuk dua jarum berbeda panjang, dan potongan pensil pendek atau gulungan kertas padat untuk menahan jarum (paku keling kertas atau split pin bisa menjadi alternatif)"
     },
     {
       "en": "A marker; a real wall clock to look at",
@@ -91,8 +91,8 @@
   ],
   "preparation": [
     {
-      "en": "An adult cuts the two hands from card and attaches them to the plate with the split pin; write 1 to 12 around the edge.",
-      "id": "Orang dewasa memotong dua jarum dari karton dan memasangnya ke piring dengan paku pines; tulis 1 sampai 12 di tepinya."
+      "en": "An adult cuts the two hands from card and fixes them to the centre of the plate with a pencil stub or paper plug (or a split pin); write 1 to 12 around the edge.",
+      "id": "Orang dewasa memotong dua jarum dari karton dan memasangnya di tengah piring dengan potongan pensil atau gulungan kertas (atau paku keling kertas); tulis 1 sampai 12 di tepinya."
     }
   ],
   "guidedExamples": [
@@ -221,7 +221,7 @@
       },
       "distractorMisconceptions": {
         "1": "HOUR_HAND_STAYS",
-        "2": "HALF_PAST_CONFUSION"
+        "2": "HALF_TO_HOUR"
       }
     },
     {
@@ -277,7 +277,7 @@
       "answer": 0,
       "explanation": {
         "en": "The short hand has passed 9 but not reached 10, so the hour is still 9; the long hand on 6 means half past.",
-        "id": "Jarum pendek sudah lewat 9 tetapi belum sampai 10, jadi jamnya masih 9; jarum panjang di 6 berarti lewat setengah jam."
+        "id": "Jarum pendek sudah lewat 9 tetapi belum sampai 10, jadi jamnya masih 9; jarum panjang di 6 berarti sudah 30 menit lewat pukul 9."
       },
       "check": {
         "expression": "9",
@@ -366,6 +366,17 @@
         "en": "Say both forms: 'nine thirty' is 'setengah sepuluh', half way to ten, and the hour written is still 9.",
         "id": "Ucapkan kedua bentuk: 'sembilan lewat tiga puluh' sama dengan 'setengah sepuluh', setengah jalan ke sepuluh, dan jam yang ditulis tetap 9."
       }
+    },
+    {
+      "code": "HALF_TO_HOUR",
+      "description": {
+        "en": "Reads 'half past 7' as 'half way to 7', placing the short hand between 6 and 7.",
+        "id": "Membaca 'pukul 7.30' sebagai 'setengah jalan ke 7', sehingga meletakkan jarum pendek di antara 6 dan 7."
+      },
+      "remediation": {
+        "en": "Start at 7 o'clock on the paper clock and turn the long hand half way round; watch the short hand move forward, past 7.",
+        "id": "Mulai dari pukul 7 di jam kertas dan putar jarum panjang setengah putaran; lihat jarum pendek bergerak maju, melewati 7."
+      }
     }
   ],
   "extension": [
@@ -392,8 +403,8 @@
     },
     "notes": [
       {
-        "en": "The split pin is sharp-ended and small: the adult inserts it, folds the legs flat and keeps spare split pins (paper fasteners) away from young children.",
-        "id": "Paku pines berujung tajam dan kecil: orang dewasa memasangnya, melipat kakinya rata, dan menjauhkan paku pines cadangan dari anak kecil."
+        "en": "Use the pin-free fastener by default. If you use a split pin (paper fastener) instead, it is small with pointed legs: the adult inserts it, folds the legs flat and keeps spare split pins away from young children.",
+        "id": "Pakai pengikat tanpa paku sebagai pilihan utama. Jika memakai paku keling kertas (split pin), benda itu kecil dan kakinya runcing: orang dewasa yang memasangnya, melipat kakinya rata, dan menjauhkan cadangannya dari anak kecil."
       }
     ]
   },

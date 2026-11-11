@@ -12,7 +12,7 @@
   "text": {
     "en": [
       "A mosque is a place where Muslims gather to pray. In Indonesia you may hear it called a masjid, and smaller ones are often called a musala or langgar.",
-      "Five times a day, the adhan, the call to prayer, is called from the mosque. It tells people that the time for prayer has come.",
+      "At each of the five daily prayer times, the adhan, the call to prayer, is called from the mosque. It tells people that the time for prayer has come.",
       "Before going in, people take off their shoes and leave them by the door. This helps keep the prayer area clean.",
       "Most mosques have a place for wudu, with taps where people wash before praying.",
       "Inside, there is a niche in the wall called the mihrab. It shows the direction of the qiblah, towards the Kaaba in Makkah, which Muslims face when they pray.",
@@ -21,7 +21,7 @@
     ],
     "id": [
       "Masjid adalah tempat umat Islam berkumpul untuk salat. Di Indonesia, yang lebih kecil sering disebut musala atau langgar.",
-      "Lima kali sehari, azan dikumandangkan dari masjid. Azan memberi tahu bahwa waktu salat telah tiba.",
+      "Pada setiap waktu dari lima salat wajib, azan dikumandangkan dari masjid. Azan memberi tahu bahwa waktu salat telah tiba.",
       "Sebelum masuk, orang melepas sepatu dan meletakkannya di dekat pintu. Ini membantu menjaga tempat salat tetap bersih.",
       "Kebanyakan masjid punya tempat wudu, dengan keran tempat orang membasuh diri sebelum salat.",
       "Di dalam, ada ceruk di dinding yang disebut mihrab. Mihrab menunjukkan arah kiblat, ke Kakbah di Makkah, yang dihadap umat Islam saat salat.",
@@ -78,19 +78,19 @@
       "id": "q1",
       "kind": "literal",
       "prompt": {
-        "en": "How many times a day is the adhan called?",
-        "id": "Berapa kali sehari azan dikumandangkan?"
+        "en": "When is the adhan called?",
+        "id": "Kapan azan dikumandangkan?"
       },
       "choices": {
         "en": [
-          "five times",
-          "once",
-          "ten times"
+          "at each of the five daily prayer times",
+          "only on Fridays",
+          "once a week"
         ],
         "id": [
-          "lima kali",
-          "sekali",
-          "sepuluh kali"
+          "pada setiap waktu dari lima salat wajib",
+          "hanya pada hari Jumat",
+          "seminggu sekali"
         ]
       },
       "answer": 0,
@@ -217,7 +217,7 @@
   },
   "factChecks": [
     {
-      "claim": "The adhan is called five times a day for the five daily prayers.",
+      "claim": "The adhan is called at each of the five daily prayer times.",
       "status": "common_knowledge"
     },
     {

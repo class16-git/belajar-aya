@@ -1,6 +1,6 @@
 {
   "id": "unit-g4-math-factors-and-multiples",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "framework": "math",
   "strand": "number_sense",
@@ -16,8 +16,8 @@
     "id": "Mencari semua pasangan faktor bilangan sampai 100, mendaftar kelipatan, menentukan faktor persekutuan dan kelipatan persekutuan, serta mengenali bilangan prima."
   },
   "rationale": {
-    "en": "Factors and multiples are the language of simplifying fractions, finding common denominators and solving 'when will it happen together' problems. Building rectangles from squares shows factor pairs as shapes, so the ideas are seen rather than memorised.",
-    "id": "Faktor dan kelipatan adalah bahasa untuk menyederhanakan pecahan, mencari penyebut yang sama, dan menyelesaikan soal 'kapan terjadi bersamaan'. Menyusun persegi panjang dari persegi menunjukkan pasangan faktor sebagai bentuk, sehingga gagasannya dilihat, bukan dihafal."
+    "en": "Factors and multiples are the language of simplifying fractions, finding common denominators and solving 'when will it happen together' problems. Building rectangles from squares shows factor pairs as shapes, so the ideas are seen rather than memorised. Primes and FPB/KPK by name follow the Indonesian SD sequence (grades 4 to 5).",
+    "id": "Faktor dan kelipatan adalah bahasa untuk menyederhanakan pecahan, mencari penyebut yang sama, dan menyelesaikan soal 'kapan terjadi bersamaan'. Menyusun persegi panjang dari persegi menunjukkan pasangan faktor sebagai bentuk, sehingga gagasannya dilihat, bukan dihafal. Bilangan prima serta istilah FPB/KPK mengikuti urutan SD di Indonesia (kelas 4 sampai 5)."
   },
   "outcomes": [
     {
@@ -163,8 +163,8 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "How many factors does 12 have?",
-        "id": "Berapa banyak faktor dari 12?"
+        "en": "How many factors does 18 have?",
+        "id": "Berapa banyak faktor dari 18?"
       },
       "choices": {
         "en": [
@@ -180,8 +180,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Pairs 1 × 12, 2 × 6, 3 × 4 give 1, 2, 3, 4, 6, 12: six factors.",
-        "id": "Pasangan 1 × 12, 2 × 6, 3 × 4 memberi 1, 2, 3, 4, 6, 12: enam faktor."
+        "en": "Pairs 1 × 18, 2 × 9, 3 × 6 give 1, 2, 3, 6, 9, 18: six factors. (Three pairs give six factors here because no pair repeats a number.)",
+        "id": "Pasangan 1 × 18, 2 × 9, 3 × 6 memberi 1, 2, 3, 6, 9, 18: enam faktor. (Tiga pasangan memberi enam faktor karena tidak ada pasangan dengan bilangan kembar.)"
       },
       "check": {
         "expression": "3 * 2",
@@ -227,29 +227,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Angkot A leaves every 6 minutes and angkot B every 9 minutes. They both leave at 7:00. After how many minutes do they next leave together?",
-        "id": "Angkot A berangkat setiap 6 menit dan angkot B setiap 9 menit. Keduanya berangkat pukul 7.00. Setelah berapa menit mereka berangkat bersama lagi?"
+        "en": "Bus A leaves every 8 minutes and bus B every 12 minutes. They both leave at 6:00. After how many minutes do they next leave together?",
+        "id": "Bus A berangkat setiap 8 menit dan bus B setiap 12 menit. Keduanya berangkat pukul 6.00. Setelah berapa menit mereka berangkat bersama lagi?"
       },
       "choices": {
         "en": [
-          "18 minutes",
-          "54 minutes",
-          "3 minutes"
+          "24 minutes",
+          "96 minutes",
+          "4 minutes"
         ],
         "id": [
-          "18 menit",
-          "54 menit",
-          "3 menit"
+          "24 menit",
+          "96 menit",
+          "4 menit"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The lowest common multiple of 6 and 9 is 18.",
-        "id": "KPK dari 6 dan 9 adalah 18."
+        "en": "Multiples of 8: 8, 16, 24; of 12: 12, 24. The KPK is 24.",
+        "id": "Kelipatan 8: 8, 16, 24; kelipatan 12: 12, 24. KPK-nya 24."
       },
       "check": {
-        "expression": "6 * 3",
-        "result": "18"
+        "expression": "8 * 3",
+        "result": "24"
       },
       "distractorMisconceptions": {
         "1": "ALWAYS_MULTIPLIES_FOR_LCM",
@@ -259,29 +259,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "What is the highest common factor (FPB) of 18 and 24?",
-        "id": "Berapa faktor persekutuan terbesar (FPB) dari 18 dan 24?"
+        "en": "What is the highest common factor (FPB) of 16 and 24?",
+        "id": "Berapa faktor persekutuan terbesar (FPB) dari 16 dan 24?"
       },
       "choices": {
         "en": [
-          "6",
-          "3",
-          "72"
+          "8",
+          "2",
+          "48"
         ],
         "id": [
-          "6",
-          "3",
-          "72"
+          "8",
+          "2",
+          "48"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Common factors are 1, 2, 3 and 6; the highest is 6.",
-        "id": "Faktor persekutuannya 1, 2, 3, dan 6; yang terbesar 6."
+        "en": "Common factors are 1, 2, 4 and 8; the highest is 8.",
+        "id": "Faktor persekutuannya 1, 2, 4, dan 8; yang terbesar 8."
       },
       "check": {
-        "expression": "18 / 3",
-        "result": "6"
+        "expression": "16 / 2",
+        "result": "8"
       },
       "distractorMisconceptions": {
         "1": "STOPS_AT_FIRST_COMMON",
@@ -296,24 +296,24 @@
       },
       "choices": {
         "en": [
-          "17",
-          "21",
-          "27"
+          "23",
+          "27",
+          "33"
         ],
         "id": [
-          "17",
-          "21",
-          "27"
+          "23",
+          "27",
+          "33"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "17 has only the factors 1 and 17. 21 = 3 × 7 and 27 = 3 × 9.",
-        "id": "17 hanya punya faktor 1 dan 17. 21 = 3 × 7 dan 27 = 3 × 9."
+        "en": "23 has only the factors 1 and 23. 27 = 3 × 9 and 33 = 3 × 11.",
+        "id": "23 hanya punya faktor 1 dan 23. 27 = 3 × 9 dan 33 = 3 × 11."
       },
       "check": {
-        "expression": "17",
-        "result": "17"
+        "expression": "23",
+        "result": "23"
       },
       "distractorMisconceptions": {
         "1": "ODD_MEANS_PRIME",

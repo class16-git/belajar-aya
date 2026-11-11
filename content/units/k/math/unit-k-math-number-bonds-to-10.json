@@ -1,6 +1,6 @@
 {
   "id": "unit-k-math-number-bonds-to-10",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "math",
   "strand": "addition_subtraction",
@@ -106,7 +106,7 @@
     },
     {
       "en": "Hidden part story: 'Ibu put 8 rambutan on two plates. I can see 5. How many are under the towel?' Count on from 5 to 8: 6, 7, 8, so 3 are hidden.",
-      "id": "Cerita bagian tersembunyi: 'Ibu menaruh 8 rambutan di dua piring. Aku bisa melihat 5. Berapa yang di bawah handuk?' Bilang lanjut dari 5 ke 8: 6, 7, 8, jadi 3 tersembunyi."
+      "id": "Cerita bagian tersembunyi: 'Ibu menaruh 8 rambutan di dua piring. Aku bisa melihat 5. Berapa yang di bawah handuk?' Hitung lanjut dari 5 ke 8: 6, 7, 8, jadi 3 tersembunyi."
     },
     {
       "en": "Partners of ten with fingers: show 10 fingers and fold down 3; 7 stay up, so 10 is 3 and 7.",
@@ -163,29 +163,29 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Ibu makes 8 kue. 3 are pandan and the rest are chocolate. How many are chocolate?",
-        "id": "Ibu membuat 8 kue. 3 rasa pandan dan sisanya cokelat. Berapa kue cokelat?"
+        "en": "Ibu makes 9 kue. 2 are pandan and the rest are chocolate. How many are chocolate?",
+        "id": "Ibu membuat 9 kue. 2 rasa pandan dan sisanya cokelat. Berapa kue cokelat?"
       },
       "choices": {
         "en": [
-          "5",
+          "7",
           "11",
-          "3"
+          "2"
         ],
         "id": [
-          "5",
+          "7",
           "11",
-          "3"
+          "2"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The whole is 8 and one part is 3. 3 and 5 make 8, so 5 are chocolate.",
-        "id": "Keseluruhannya 8 dan satu bagian 3. 3 dan 5 menjadi 8, jadi 5 kue cokelat."
+        "en": "The whole is 9 and one part is 2. 2 and 7 make 9, so 7 are chocolate.",
+        "id": "Keseluruhannya 9 dan satu bagian 2. 2 dan 7 menjadi 9, jadi 7 kue cokelat."
       },
       "check": {
-        "expression": "8 - 3",
-        "result": "5"
+        "expression": "9 - 2",
+        "result": "7"
       },
       "distractorMisconceptions": {
         "1": "ADDS_WHOLE_AND_PART",
@@ -399,7 +399,7 @@
     ],
     "masteryRule": {
       "en": "Secure when the child lists all splits of one number up to 10 and finds three missing parts without objects, on two different days.",
-      "id": "Dikuasai jika anak menyebut semua pecahan satu bilangan sampai 10 dan menemukan tiga bagian yang hilang tanpa benda, pada dua hari berbeda."
+      "id": "Dikuasai jika anak menyebut semua cara memecah satu bilangan sampai 10 dan menemukan tiga bagian yang hilang tanpa benda, pada dua hari berbeda."
     }
   },
   "sources": [

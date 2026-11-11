@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-math-tens-and-ones-to-100",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "math",
   "strand": "place_value",
@@ -189,35 +189,35 @@
       },
       "distractorMisconceptions": {
         "1": "FACE_VALUE",
-        "2": "FACE_VALUE"
+        "2": "GIVES_WHOLE_NUMBER"
       }
     },
     {
       "id": "a3",
       "prompt": {
-        "en": "Which number is greater: 58 or 85?",
-        "id": "Bilangan mana yang lebih besar: 58 atau 85?"
+        "en": "Which number is greater: 47 or 74?",
+        "id": "Bilangan mana yang lebih besar: 47 atau 74?"
       },
       "choices": {
         "en": [
-          "85",
-          "58",
+          "74",
+          "47",
           "They are equal"
         ],
         "id": [
-          "85",
-          "58",
+          "74",
+          "47",
           "Keduanya sama"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "85 has 8 tens and 58 has only 5 tens, so 85 is greater.",
-        "id": "85 punya 8 puluhan dan 58 hanya 5 puluhan, jadi 85 lebih besar."
+        "en": "74 has 7 tens and 47 has only 4 tens, so 74 is greater.",
+        "id": "74 punya 7 puluhan dan 47 hanya 4 puluhan, jadi 74 lebih besar."
       },
       "check": {
-        "expression": "8*10 + 5",
-        "result": "85"
+        "expression": "7*10 + 4",
+        "result": "74"
       },
       "distractorMisconceptions": {
         "1": "COMPARES_ONES_FIRST",
@@ -387,6 +387,17 @@
       "remediation": {
         "en": "Rule: no more than 9 loose straws. Whenever there are 10, make a bundle.",
         "id": "Aturan: tidak boleh lebih dari 9 sedotan lepas. Setiap ada 10, buat ikatan."
+      }
+    },
+    {
+      "code": "GIVES_WHOLE_NUMBER",
+      "description": {
+        "en": "Gives the whole number when asked for the value of one digit.",
+        "id": "Menyebut seluruh bilangan padahal ditanya nilai satu angka."
+      },
+      "remediation": {
+        "en": "Cover the ones digit with a finger and ask what the bundles alone are worth.",
+        "id": "Tutup angka satuan dengan jari dan tanya berapa nilai ikatannya saja."
       }
     }
   ],

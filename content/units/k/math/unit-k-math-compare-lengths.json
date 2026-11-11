@@ -1,6 +1,6 @@
 {
   "id": "unit-k-math-compare-lengths",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "math",
   "strand": "measurement",
@@ -66,8 +66,8 @@
     ],
     "pictorial": [
       {
-        "en": "Draw three ribbons as strips of different lengths starting at one line; colour the longest red and the shortest blue.",
-        "id": "Gambar tiga pita sebagai garis-garis dengan panjang berbeda yang mulai dari satu garis; warnai yang terpanjang merah dan yang terpendek biru."
+        "en": "Draw three ribbons as strips of different lengths starting at one line; colour the longest red and the shortest blue; draw the blocks under each strip and write the count.",
+        "id": "Gambar tiga pita sebagai garis-garis dengan panjang berbeda yang mulai dari satu garis; warnai yang terpanjang merah dan yang terpendek biru; gambar balok di bawah setiap garis dan tulis banyaknya."
       }
     ],
     "abstract": [
@@ -80,7 +80,7 @@
   "materials": [
     {
       "en": "Masking tape or a long string for a starting line",
-      "id": "Selotip kertas atau tali panjang untuk garis awal"
+      "id": "Lakban kertas (masking tape) atau tali panjang untuk garis awal"
     },
     {
       "en": "About 20 same-size building blocks",
@@ -89,6 +89,10 @@
     {
       "en": "Household objects: spoon, toothbrush, wooden spatula, book, broom, sandal",
       "id": "Benda rumah: sendok, sikat gigi, spatula kayu, buku, sapu, sandal"
+    },
+    {
+      "en": "Two pencils of the same length",
+      "id": "Dua pensil yang sama panjang"
     }
   ],
   "preparation": [
@@ -165,25 +169,25 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Raka measures the table and gets 6 hand spans. Mama measures the same table and gets 4 hand spans. Why are the numbers different?",
-        "id": "Raka mengukur meja dan mendapat 6 jengkal. Mama mengukur meja yang sama dan mendapat 4 jengkal. Mengapa hasilnya berbeda?"
+        "en": "Bayu measures the bed and gets 8 hand spans. Ibu measures the same bed and gets 5 hand spans. Why are the numbers different?",
+        "id": "Bayu mengukur tempat tidur dan mendapat 8 jengkal. Ibu mengukur tempat tidur yang sama dan mendapat 5 jengkal. Mengapa hasilnya berbeda?"
       },
       "choices": {
         "en": [
-          "Mama's hand span is longer than Raka's",
-          "The table got shorter",
-          "Mama's table is a different size"
+          "Ibu's hand span is longer than Bayu's",
+          "The bed got shorter",
+          "Ibu's bed is a different size"
         ],
         "id": [
-          "Jengkal Mama lebih panjang dari jengkal Raka",
-          "Mejanya menjadi lebih pendek",
-          "Meja Mama ukurannya berbeda"
+          "Jengkal Ibu lebih panjang dari jengkal Bayu",
+          "Tempat tidurnya menjadi lebih pendek",
+          "Tempat tidur Ibu ukurannya berbeda"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "It is the same table. A longer unit fits fewer times, so Mama counts fewer spans.",
-        "id": "Mejanya sama. Satuan yang lebih panjang muat lebih sedikit kali, jadi Mama menghitung lebih sedikit jengkal."
+        "en": "It is the same bed. A longer unit is needed fewer times, so Ibu counts fewer spans.",
+        "id": "Tempat tidurnya sama. Satuan yang lebih panjang muat lebih sedikit, jadi hitungan Ibu lebih kecil."
       },
       "distractorMisconceptions": {
         "1": "UNIT_SIZE_IGNORED",
@@ -221,32 +225,32 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "A sandal is 4 blocks, a book is 6 blocks and a broom is 15 blocks long. How long is the longest one?",
-        "id": "Sandal panjangnya 4 balok, buku 6 balok, dan sapu 15 balok. Berapa panjang benda yang terpanjang?"
+        "en": "A spoon is 4 blocks, a towel is 9 blocks and a mat is 12 blocks long. How many blocks longer is the mat than the towel?",
+        "id": "Sendok panjangnya 4 balok, handuk 9 balok, dan keset 12 balok. Keset lebih panjang berapa balok daripada handuk?"
       },
       "choices": {
         "en": [
-          "15 blocks, the broom",
-          "6 blocks, the book",
-          "25 blocks, all together"
+          "3 blocks",
+          "12 blocks",
+          "21 blocks"
         ],
         "id": [
-          "15 balok, sapunya",
-          "6 balok, bukunya",
-          "25 balok, semuanya"
+          "3 balok",
+          "12 balok",
+          "21 balok"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "15 is the greatest of 4, 6 and 15, so the broom is longest.",
-        "id": "15 adalah yang terbesar dari 4, 6, dan 15, jadi sapu yang terpanjang."
+        "en": "Line up the mat and the towel: the mat sticks out 3 blocks. 12 - 9 = 3.",
+        "id": "Jajarkan keset dan handuk: keset menonjol 3 balok. 12 - 9 = 3."
       },
       "check": {
-        "expression": "15",
-        "result": "15"
+        "expression": "12 - 9",
+        "result": "3"
       },
       "distractorMisconceptions": {
-        "1": "MIDDLE_AS_LONGEST",
+        "1": "GIVES_LONGER_LENGTH",
         "2": "ADDS_LENGTHS"
       }
     },

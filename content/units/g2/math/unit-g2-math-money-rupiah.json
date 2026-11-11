@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-math-money-rupiah",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "math",
   "strand": "money",
@@ -62,8 +62,8 @@
   "cpa": {
     "concrete": [
       {
-        "en": "Set up a home warung with price tags (es teh Rp 4,000, gorengan Rp 3,500, buku tulis Rp 4,500); the child pays with play notes and coins and the parent gives change.",
-        "id": "Buat warung di rumah dengan label harga (es teh Rp4.000, gorengan Rp3.500, buku tulis Rp4.500); anak membayar dengan uang mainan dan orang tua memberi kembalian."
+        "en": "Set up a home warung with price tags (es teh Rp 4,000, 3 gorengan Rp 3,500, buku tulis Rp 4,500); the child pays with play notes and coins and the parent gives change.",
+        "id": "Buat warung di rumah dengan label harga (es teh Rp4.000, 3 gorengan Rp3.500, buku tulis Rp4.500); anak membayar dengan uang mainan dan orang tua memberi kembalian."
       }
     ],
     "pictorial": [
@@ -98,19 +98,19 @@
   "guidedExamples": [
     {
       "en": "Count by value: Rp 5,000, Rp 2,000, Rp 2,000 and a Rp 500 coin. Start with 5 thousand, then 7 thousand, 9 thousand, then 9 thousand 500: Rp 9,500. Four pieces, but the value is 9,500.",
-      "id": "Hitung menurut nilai: Rp5.000, Rp2.000, Rp2.000, dan koin Rp500. Mulai dari 5 ribu, lalu 7 ribu, 9 ribu, lalu 9 ribu 500: Rp9.500. Empat keping, tetapi nilainya 9.500."
+      "id": "Hitung menurut nilai: Rp5.000, Rp2.000, Rp2.000, dan koin Rp500. Mulai dari 5 ribu, lalu 7 ribu, 9 ribu, lalu 9 ribu 500: Rp9.500. Empat lembar dan keping, tetapi nilainya 9.500."
     },
     {
-      "en": "Total of two prices: es teh Rp 4,000 + gorengan Rp 3,500. 4 thousand + 3 thousand = 7 thousand, plus 500: Rp 7,500.",
-      "id": "Total dua harga: es teh Rp4.000 + gorengan Rp3.500. 4 ribu + 3 ribu = 7 ribu, ditambah 500: Rp7.500."
+      "en": "Total of two prices: es teh Rp 4,000 + 3 gorengan Rp 3,500. 4 thousand + 3 thousand = 7 thousand, plus 500: Rp 7,500.",
+      "id": "Total dua harga: es teh Rp4.000 + 3 gorengan Rp3.500. 4 ribu + 3 ribu = 7 ribu, ditambah 500: Rp7.500."
     },
     {
       "en": "Change by counting up: martabak Rp 15,000 paid with Rp 20,000. Count up from 15 thousand: 16, 17, 18, 19, 20 thousand: Rp 5,000 change.",
       "id": "Kembalian dengan menghitung naik: martabak Rp15.000 dibayar Rp20.000. Hitung naik dari 15 ribu: 16, 17, 18, 19, 20 ribu: kembalian Rp5.000."
     },
     {
-      "en": "Change with regrouping: Bayu has Rp 12,000 and buys a notebook for Rp 4,500. Count up: 4,500 to 5,000 is 500; 5,000 to 12,000 is 7,000. Change is Rp 7,500.",
-      "id": "Kembalian dengan meminjam: Bayu punya Rp12.000 dan membeli buku tulis Rp4.500. Hitung naik: 4.500 ke 5.000 adalah 500; 5.000 ke 12.000 adalah 7.000. Kembaliannya Rp7.500."
+      "en": "Change across a thousand: Bayu has Rp 12,000 and buys a notebook for Rp 4,500. Count up: 4,500 to 5,000 is 500; 5,000 to 12,000 is 7,000. Change is Rp 7,500.",
+      "id": "Kembalian melewati ribuan: Bayu punya Rp12.000 dan membeli buku tulis Rp4.500. Hitung naik: 4.500 ke 5.000 adalah 500; 5.000 ke 12.000 adalah 7.000. Kembaliannya Rp7.500."
     }
   ],
   "practice": [
@@ -131,29 +131,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Aya has one Rp 5,000 note, two Rp 2,000 notes and one Rp 500 coin. How much money is that?",
-        "id": "Aya punya selembar Rp5.000, dua lembar Rp2.000, dan satu koin Rp500. Berapa uangnya?"
+        "en": "Aya has one Rp 10,000 note, one Rp 2,000 note, one Rp 1,000 coin and one Rp 500 coin. How much money is that?",
+        "id": "Aya punya selembar Rp10.000, selembar Rp2.000, satu koin Rp1.000, dan satu koin Rp500. Berapa uangnya?"
       },
       "choices": {
         "en": [
-          "Rp 9,500",
+          "Rp 13,500",
           "Rp 4",
-          "Rp 9,000"
+          "Rp 13,000"
         ],
         "id": [
-          "Rp9.500",
+          "Rp13.500",
           "Rp4",
-          "Rp9.000"
+          "Rp13.000"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "5,000 + 2,000 + 2,000 = 9,000, and 500 more is Rp 9,500.",
-        "id": "5.000 + 2.000 + 2.000 = 9.000, ditambah 500 menjadi Rp9.500."
+        "en": "10,000 + 2,000 + 1,000 = 13,000, and 500 more is Rp 13,500.",
+        "id": "10.000 + 2.000 + 1.000 = 13.000, ditambah 500 menjadi Rp13.500."
       },
       "check": {
-        "expression": "5000 + 2000 + 2000 + 500",
-        "result": "9500"
+        "expression": "10000 + 2000 + 1000 + 500",
+        "result": "13500"
       },
       "distractorMisconceptions": {
         "1": "COUNTS_PIECES_NOT_VALUE",
@@ -163,29 +163,29 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Martabak manis costs Rp 15,000. Ayah pays with a Rp 20,000 note. How much change does he get?",
-        "id": "Martabak manis harganya Rp15.000. Ayah membayar dengan uang Rp20.000. Berapa kembaliannya?"
+        "en": "Nasi goreng costs Rp 13,000. Ayah pays with a Rp 20,000 note. How much change does he get?",
+        "id": "Nasi goreng harganya Rp13.000. Ayah membayar dengan uang Rp20.000. Berapa kembaliannya?"
       },
       "choices": {
         "en": [
-          "Rp 5,000",
-          "Rp 35,000",
-          "Rp 15,000"
+          "Rp 7,000",
+          "Rp 33,000",
+          "Rp 13,000"
         ],
         "id": [
-          "Rp5.000",
-          "Rp35.000",
-          "Rp15.000"
+          "Rp7.000",
+          "Rp33.000",
+          "Rp13.000"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Count up from 15 thousand to 20 thousand: 5 thousand. 20,000 - 15,000 = 5,000.",
-        "id": "Hitung naik dari 15 ribu ke 20 ribu: 5 ribu. 20.000 - 15.000 = 5.000."
+        "en": "Count up from 13 thousand to 20 thousand: 7 thousand. 20,000 - 13,000 = 7,000.",
+        "id": "Hitung naik dari 13 ribu ke 20 ribu: 7 ribu. 20.000 - 13.000 = 7.000."
       },
       "check": {
-        "expression": "20000 - 15000",
-        "result": "5000"
+        "expression": "20000 - 13000",
+        "result": "7000"
       },
       "distractorMisconceptions": {
         "1": "OPERATION_MIXUP",
@@ -195,29 +195,29 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "Es teh costs Rp 4,000 and gorengan costs Rp 3,500. What is the total?",
-        "id": "Es teh harganya Rp4.000 dan gorengan Rp3.500. Berapa totalnya?"
+        "en": "A roti costs Rp 6,500 and a bottle of water costs Rp 2,000. What is the total?",
+        "id": "Sebungkus roti harganya Rp6.500 dan sebotol air Rp2.000. Berapa totalnya?"
       },
       "choices": {
         "en": [
-          "Rp 7,500",
-          "Rp 7,000",
-          "Rp 500"
+          "Rp 8,500",
+          "Rp 8,000",
+          "Rp 4,500"
         ],
         "id": [
-          "Rp7.500",
-          "Rp7.000",
-          "Rp500"
+          "Rp8.500",
+          "Rp8.000",
+          "Rp4.500"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "4 thousand + 3 thousand = 7 thousand, plus 500 makes Rp 7,500.",
-        "id": "4 ribu + 3 ribu = 7 ribu, ditambah 500 menjadi Rp7.500."
+        "en": "6 thousand + 2 thousand = 8 thousand, plus 500 makes Rp 8,500.",
+        "id": "6 ribu + 2 ribu = 8 ribu, ditambah 500 menjadi Rp8.500."
       },
       "check": {
-        "expression": "4000 + 3500",
-        "result": "7500"
+        "expression": "6500 + 2000",
+        "result": "8500"
       },
       "distractorMisconceptions": {
         "1": "IGNORES_SMALL_VALUE",
@@ -259,28 +259,28 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "Bayu has Rp 12,000. He buys a notebook for Rp 4,500. How much money is left?",
-        "id": "Bayu punya Rp12.000. Ia membeli buku tulis seharga Rp4.500. Berapa sisa uangnya?"
+        "en": "Sari has Rp 15,000. She buys a pencil case for Rp 7,500. How much money is left?",
+        "id": "Sari punya Rp15.000. Ia membeli tempat pensil seharga Rp7.500. Berapa sisa uangnya?"
       },
       "choices": {
         "en": [
           "Rp 7,500",
           "Rp 8,500",
-          "Rp 16,500"
+          "Rp 22,500"
         ],
         "id": [
           "Rp7.500",
           "Rp8.500",
-          "Rp16.500"
+          "Rp22.500"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Count up: 4,500 to 5,000 is 500, and 5,000 to 12,000 is 7,000. 500 + 7,000 = 7,500.",
-        "id": "Hitung naik: 4.500 ke 5.000 adalah 500, dan 5.000 ke 12.000 adalah 7.000. 500 + 7.000 = 7.500."
+        "en": "Count up: 7,500 to 8,000 is 500, and 8,000 to 15,000 is 7,000. 500 + 7,000 = 7,500.",
+        "id": "Hitung naik: 7.500 ke 8.000 adalah 500, dan 8.000 ke 15.000 adalah 7.000. 500 + 7.000 = 7.500."
       },
       "check": {
-        "expression": "12000 - 4500",
+        "expression": "15000 - 7500",
         "result": "7500"
       },
       "distractorMisconceptions": {

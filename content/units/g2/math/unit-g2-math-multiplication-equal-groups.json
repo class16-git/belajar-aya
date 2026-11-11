@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-math-multiplication-equal-groups",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "math",
   "strand": "multiplication_division",
@@ -13,7 +13,7 @@
   ],
   "objective": {
     "en": "Understand multiplication as equal groups and arrays, write a multiplication sentence for a picture or story, and see that 3 × 4 and 4 × 3 give the same total.",
-    "id": "Memahami perkalian sebagai kelompok sama banyak dan susunan berjajar, menulis kalimat perkalian untuk gambar atau cerita, dan melihat bahwa 3 × 4 dan 4 × 3 hasilnya sama."
+    "id": "Memahami perkalian sebagai kelompok sama banyak dan susunan berjajar (larik), menulis kalimat perkalian untuk gambar atau cerita, dan melihat bahwa 3 × 4 dan 4 × 3 hasilnya sama."
   },
   "rationale": {
     "en": "Multiplication is not just faster addition: it describes a number of groups and the size of each group. Seeing groups and arrays first prevents the common error of adding the two numbers and prepares for division and area.",
@@ -131,29 +131,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "There are 4 plates with 3 kue on each plate. How many kue are there?",
-        "id": "Ada 4 piring dengan 3 kue di setiap piring. Berapa kue semuanya?"
+        "en": "There are 5 plates with 4 kue on each plate. How many kue are there?",
+        "id": "Ada 5 piring dengan 4 kue di setiap piring. Berapa kue semuanya?"
       },
       "choices": {
         "en": [
-          "12",
-          "7",
-          "43"
+          "20",
+          "9",
+          "54"
         ],
         "id": [
-          "12",
-          "7",
-          "43"
+          "20",
+          "9",
+          "54"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "4 groups of 3: 3, 6, 9, 12. 4 × 3 = 12.",
-        "id": "4 kelompok berisi 3: 3, 6, 9, 12. 4 × 3 = 12."
+        "en": "5 groups of 4: 4, 8, 12, 16, 20. 5 × 4 = 20.",
+        "id": "5 kelompok berisi 4: 4, 8, 12, 16, 20. 5 × 4 = 20."
       },
       "check": {
-        "expression": "4 * 3",
-        "result": "12"
+        "expression": "5 * 4",
+        "result": "20"
       },
       "distractorMisconceptions": {
         "1": "ADDS_GROUPS_AND_SIZE",
@@ -223,29 +223,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "A becak carries 2 passengers. How many passengers can 7 becak carry?",
-        "id": "Satu becak membawa 2 penumpang. Berapa penumpang yang bisa dibawa 7 becak?"
+        "en": "A bajaj carries 3 passengers. How many passengers can 6 bajaj carry?",
+        "id": "Satu bajaj membawa 3 penumpang. Berapa penumpang yang bisa dibawa 6 bajaj?"
       },
       "choices": {
         "en": [
-          "14",
+          "18",
           "9",
-          "72"
+          "63"
         ],
         "id": [
-          "14",
+          "18",
           "9",
-          "72"
+          "63"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "7 groups of 2: 2, 4, 6, 8, 10, 12, 14.",
-        "id": "7 kelompok berisi 2: 2, 4, 6, 8, 10, 12, 14."
+        "en": "6 groups of 3: 3, 6, 9, 12, 15, 18.",
+        "id": "6 kelompok berisi 3: 3, 6, 9, 12, 15, 18."
       },
       "check": {
-        "expression": "7 * 2",
-        "result": "14"
+        "expression": "6 * 3",
+        "result": "18"
       },
       "distractorMisconceptions": {
         "1": "ADDS_GROUPS_AND_SIZE",
@@ -255,29 +255,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "A crate has 3 rows of 6 bottles. How many bottles are in the crate?",
-        "id": "Sebuah krat berisi 3 baris dengan 6 botol per baris. Berapa botol dalam krat?"
+        "en": "A crate has 4 rows of 6 bottles. How many bottles are in the crate?",
+        "id": "Sebuah krat berisi 4 baris dengan 6 botol per baris. Berapa botol dalam krat?"
       },
       "choices": {
         "en": [
-          "18",
-          "9",
+          "24",
+          "10",
           "36"
         ],
         "id": [
-          "18",
-          "9",
+          "24",
+          "10",
           "36"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "3 rows of 6: 6, 12, 18.",
-        "id": "3 baris berisi 6: 6, 12, 18."
+        "en": "4 rows of 6: 6, 12, 18, 24.",
+        "id": "4 baris berisi 6: 6, 12, 18, 24."
       },
       "check": {
-        "expression": "3 * 6",
-        "result": "18"
+        "expression": "4 * 6",
+        "result": "24"
       },
       "distractorMisconceptions": {
         "1": "ADDS_GROUPS_AND_SIZE",
@@ -287,29 +287,29 @@
     {
       "id": "a6",
       "prompt": {
-        "en": "4 × 5 = 5 × ?",
-        "id": "4 × 5 = 5 × ?"
+        "en": "3 × 5 = 5 × ?",
+        "id": "3 × 5 = 5 × ?"
       },
       "choices": {
         "en": [
-          "4",
+          "3",
           "5",
-          "20"
+          "15"
         ],
         "id": [
-          "4",
+          "3",
           "5",
-          "20"
+          "15"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Turning an array of 4 rows of 5 gives 5 rows of 4: both are 20.",
-        "id": "Memutar susunan 4 baris berisi 5 menjadi 5 baris berisi 4: keduanya 20."
+        "en": "Turning an array of 3 rows of 5 gives 5 rows of 3: both are 15.",
+        "id": "Memutar susunan 3 baris berisi 5 menjadi 5 baris berisi 3: keduanya 15."
       },
       "check": {
-        "expression": "4 * 5 / 5",
-        "result": "4"
+        "expression": "3 * 5 / 5",
+        "result": "3"
       },
       "distractorMisconceptions": {
         "1": "COPIES_FACTOR",

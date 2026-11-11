@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-math-make-ten-addition",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "math",
   "strand": "addition_subtraction",
@@ -10,7 +10,7 @@
   },
   "prerequisites": [
     "unit-k-math-number-bonds-to-10",
-    "unit-g1-math-tens-and-ones-to-100"
+    "unit-k-math-compare-numbers-to-20"
   ],
   "objective": {
     "en": "Add two one-digit numbers with a total from 11 to 20 by making a ten first, and find a missing addend using the same idea.",
@@ -136,29 +136,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "9 + 4 = ?",
-        "id": "9 + 4 = ?"
+        "en": "9 + 6 = ?",
+        "id": "9 + 6 = ?"
       },
       "choices": {
         "en": [
-          "13",
-          "12",
-          "94"
+          "15",
+          "14",
+          "96"
         ],
         "id": [
-          "13",
-          "12",
-          "94"
+          "15",
+          "14",
+          "96"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "9 needs 1 to make ten; 4 is 1 and 3, so 10 + 3 = 13.",
-        "id": "9 butuh 1 untuk menjadi sepuluh; 4 adalah 1 dan 3, jadi 10 + 3 = 13."
+        "en": "9 needs 1 to make ten; 6 is 1 and 5, so 10 + 5 = 15.",
+        "id": "9 butuh 1 untuk menjadi sepuluh; 6 adalah 1 dan 5, jadi 10 + 5 = 15."
       },
       "check": {
-        "expression": "9 + 4",
-        "result": "13"
+        "expression": "9 + 6",
+        "result": "15"
       },
       "distractorMisconceptions": {
         "1": "LOSES_ONE_WHEN_SPLITTING",
@@ -226,35 +226,35 @@
       },
       "distractorMisconceptions": {
         "1": "FORGETS_TO_SPLIT",
-        "2": "WRONG_PARTNER_OF_TEN"
+        "2": "GIVES_MOVED_PART"
       }
     },
     {
       "id": "a4",
       "prompt": {
-        "en": "Pak Budi sells 8 mangoes in the morning and 7 in the afternoon. How many does he sell?",
-        "id": "Pak Budi menjual 8 mangga pagi hari dan 7 sore hari. Berapa mangga yang terjual?"
+        "en": "Bu Sari picks 6 rambutan in the morning and 8 in the afternoon. How many does she pick?",
+        "id": "Bu Sari memetik 6 rambutan pagi hari dan 8 sore hari. Berapa rambutan yang dipetik?"
       },
       "choices": {
         "en": [
-          "15",
           "14",
-          "1"
+          "13",
+          "2"
         ],
         "id": [
-          "15",
           "14",
-          "1"
+          "13",
+          "2"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "8 + 2 = 10 and 5 are left from the 7, so 15.",
-        "id": "8 + 2 = 10 dan sisa 5 dari 7, jadi 15."
+        "en": "Start from 8: 8 + 2 = 10, and 4 are left from the 6, so 14.",
+        "id": "Mulai dari 8: 8 + 2 = 10, dan sisa 4 dari 6, jadi 14."
       },
       "check": {
-        "expression": "8 + 7",
-        "result": "15"
+        "expression": "6 + 8",
+        "result": "14"
       },
       "distractorMisconceptions": {
         "1": "LOSES_ONE_WHEN_SPLITTING",
@@ -264,29 +264,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "17 = 9 + ?",
-        "id": "17 = 9 + ?"
+        "en": "15 = 8 + ?",
+        "id": "15 = 8 + ?"
       },
       "choices": {
         "en": [
-          "8",
           "7",
-          "26"
+          "6",
+          "23"
         ],
         "id": [
-          "8",
           "7",
-          "26"
+          "6",
+          "23"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "From 9 to 10 is 1 and from 10 to 17 is 7; 1 + 7 = 8. Check: 9 + 8 = 17.",
-        "id": "Dari 9 ke 10 adalah 1 dan dari 10 ke 17 adalah 7; 1 + 7 = 8. Periksa: 9 + 8 = 17."
+        "en": "From 8 to 10 is 2 and from 10 to 15 is 5; 2 + 5 = 7. Check: 8 + 7 = 15.",
+        "id": "Dari 8 ke 10 adalah 2 dan dari 10 ke 15 adalah 5; 2 + 5 = 7. Periksa: 8 + 7 = 15."
       },
       "check": {
-        "expression": "17 - 9",
-        "result": "8"
+        "expression": "15 - 8",
+        "result": "7"
       },
       "distractorMisconceptions": {
         "1": "LOSES_ONE_WHEN_SPLITTING",
@@ -298,8 +298,8 @@
     {
       "code": "LOSES_ONE_WHEN_SPLITTING",
       "description": {
-        "en": "Loses or double-counts one object when splitting, giving an answer one too small.",
-        "id": "Kehilangan atau menghitung dua kali satu benda saat memecah, sehingga jawabannya kurang satu."
+        "en": "Loses one object when splitting, giving an answer one too small.",
+        "id": "Kehilangan satu benda saat memecah, sehingga jawabannya kurang satu."
       },
       "remediation": {
         "en": "Physically move the blocks into the first frame and count what stays in the second frame.",
@@ -370,6 +370,17 @@
       "remediation": {
         "en": "Build 9 on the frames and add blocks one at a time until there are 17; count the blocks you added.",
         "id": "Susun 9 di bingkai dan tambahkan balok satu per satu sampai 17; hitung balok yang ditambahkan."
+      }
+    },
+    {
+      "code": "GIVES_MOVED_PART",
+      "description": {
+        "en": "Answers with the amount moved to make ten instead of what is left over.",
+        "id": "Menjawab dengan banyak yang dipindahkan untuk membuat sepuluh, bukan sisanya."
+      },
+      "remediation": {
+        "en": "On the ten-frames, colour the moved blocks and the blocks still in the second frame differently; read the second frame.",
+        "id": "Di bingkai sepuluh, warnai balok yang dipindahkan dan balok yang masih di bingkai kedua dengan warna berbeda; baca bingkai kedua."
       }
     }
   ],

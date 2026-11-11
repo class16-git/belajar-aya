@@ -48,7 +48,7 @@
     },
     {
       "en": "Do not draw, show or describe any picture of Allah. If your child asks what Allah looks like, say: 'Allah is not like anything. Let's ask our teacher together.'",
-      "id": "Jangan menggambar, menunjukkan, atau menggambarkan Allah. Jika anak bertanya Allah seperti apa, katakan: 'Allah tidak serupa dengan apa pun. Yuk kita tanyakan pada guru bersama.'"
+      "id": "Jangan menggambar atau menunjukkan gambar apa pun yang dimaksudkan sebagai Allah. Jika anak bertanya Allah seperti apa, katakan: 'Allah tidak serupa dengan apa pun. Yuk kita tanyakan pada guru bersama.'"
     },
     {
       "en": "Keep the tone warm: Allah created the things we love. Avoid talk that may frighten.",
@@ -63,8 +63,8 @@
       "id": "Dua kain atau handuk sebagai dua 'alas'"
     },
     {
-      "en": "From nature: a large leaf, a whole orange, a flower, a feather (large)",
-      "id": "Dari alam: daun besar, jeruk utuh, bunga, bulu burung (besar)"
+      "en": "From nature: a large leaf, a whole orange, a flower, a large clean craft feather",
+      "id": "Dari alam: daun besar, jeruk utuh, bunga, bulu kerajinan yang besar dan bersih"
     },
     {
       "en": "Made by people: a wooden spoon, a plastic cup, a large toy block",
@@ -101,8 +101,8 @@
       "id": "Saat jalan-jalan, main 'Allah menciptakan...': bergantian menyebut yang terlihat (kucing, awan, pohon)."
     },
     {
-      "en": "Make a sandwich or bake together and say: 'We made this from food Allah created: wheat, eggs, bananas.'",
-      "id": "Membuat roti isi atau kue bersama lalu katakan: 'Kita membuat ini dari makanan ciptaan Allah: gandum, telur, pisang.'"
+      "en": "Make a simple no-cook banana sandwich together and say: 'We made this from food Allah created: wheat and bananas.'",
+      "id": "Membuat roti isi pisang sederhana tanpa dimasak bersama lalu katakan: 'Kita membuat ini dari makanan ciptaan Allah: gandum dan pisang.'"
     }
   ],
   "assessment": [
@@ -231,13 +231,17 @@
       "sharp": false,
       "water": false,
       "heat": false,
-      "allergens": false,
+      "allergens": true,
       "electrical": false
     },
     "notes": [
       {
         "en": "Use only items larger than your child's fist; check the flower is not toxic and keep the feather away from mouths.",
         "id": "Gunakan hanya benda yang lebih besar dari kepalan tangan anak; pastikan bunga tidak beracun dan jauhkan bulu dari mulut."
+      },
+      {
+        "en": "The sandwich contains wheat (gluten): check allergies first, and cut the banana into safe pieces for your child's age.",
+        "id": "Roti isi mengandung gandum (gluten): periksa alergi lebih dulu, dan potong pisang menjadi potongan yang aman sesuai usia anak."
       }
     ]
   },
@@ -314,6 +318,7 @@
     "notes": [
       "Check the distinction 'Allah creates; people make (from what Allah created)' and its Indonesian wording (menciptakan / membuat) against the Ash'ari-Maturidi teaching that only Allah creates.",
       "Approve the safe fallback answer to 'What does Allah look like?': 'Allah is not like anything. Let's ask our teacher together.'",
+      "Given the Ash'ari teaching that Allah creates human acts too, is 'people make things' acceptable at age 3, or should it become 'people make things with what Allah created and the ability Allah gave'?",
       "Al-Qawl al-Jaliyy is listed only as an unverified title; its identity, edition and attribution must be verified before any citation. No passage is drawn from it."
     ]
   },

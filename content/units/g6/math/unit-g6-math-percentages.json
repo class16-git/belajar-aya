@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-math-percentages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "math",
   "strand": "ratio_percentage",
@@ -63,8 +63,8 @@
   "cpa": {
     "concrete": [
       {
-        "en": "Colour 25 squares of a 10 by 10 grid made from squared paper; show that 25 out of 100 is 1/4, 0.25 and 25%. Then shade 40 squares for 0.4.",
-        "id": "Warnai 25 persegi dari petak 10 kali 10 di kertas berpetak; tunjukkan bahwa 25 dari 100 adalah 1/4, 0,25, dan 25%. Lalu arsir 40 persegi untuk 0,4."
+        "en": "Count out 100 ice-cream sticks or straws and take 25 of them: 25 out of 100 is 25%, 1/4 and 0.25. Then share Rp 10,000 in play notes and coins into 10 equal piles to see that each pile is 10%.",
+        "id": "Hitung 100 stik es krim atau sedotan dan ambil 25: 25 dari 100 adalah 25%, 1/4, dan 0,25. Lalu bagi Rp10.000 uang mainan menjadi 10 tumpukan sama besar untuk melihat bahwa setiap tumpukan adalah 10%."
       }
     ],
     "pictorial": [
@@ -88,6 +88,10 @@
     {
       "en": "Shop advertisements or price tags showing discounts",
       "id": "Iklan toko atau label harga yang menunjukkan diskon"
+    },
+    {
+      "en": "100 ice-cream sticks or straws; play money",
+      "id": "100 stik es krim atau sedotan; uang mainan"
     }
   ],
   "preparation": [
@@ -132,29 +136,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "What is 25% of Rp 80,000?",
-        "id": "Berapa 25% dari Rp80.000?"
+        "en": "What is 15% of Rp 60,000?",
+        "id": "Berapa 15% dari Rp60.000?"
       },
       "choices": {
         "en": [
-          "Rp 20,000",
-          "Rp 25,000",
-          "Rp 55,000"
+          "Rp 9,000",
+          "Rp 15,000",
+          "Rp 45,000"
         ],
         "id": [
-          "Rp20.000",
-          "Rp25.000",
-          "Rp55.000"
+          "Rp9.000",
+          "Rp15.000",
+          "Rp45.000"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "25% is one quarter: 80,000 ÷ 4 = 20,000.",
-        "id": "25% adalah seperempat: 80.000 ÷ 4 = 20.000."
+        "en": "10% of 60,000 is 6,000 and 5% is 3,000, so 15% is 9,000.",
+        "id": "10% dari 60.000 adalah 6.000 dan 5% adalah 3.000, jadi 15% adalah 9.000."
       },
       "check": {
-        "expression": "25/100 * 80000",
-        "result": "20000"
+        "expression": "15/100 * 60000",
+        "result": "9000"
       },
       "distractorMisconceptions": {
         "1": "PERCENT_AS_AMOUNT",
@@ -164,29 +168,29 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Shoes cost Rp 150,000. There is a 20% discount. What is the sale price?",
-        "id": "Sepatu harganya Rp150.000. Ada diskon 20%. Berapa harga setelah diskon?"
+        "en": "A bag costs Rp 120,000. There is a 25% discount. What is the sale price?",
+        "id": "Sebuah tas harganya Rp120.000. Ada diskon 25%. Berapa harga setelah diskon?"
       },
       "choices": {
         "en": [
-          "Rp 120,000",
+          "Rp 90,000",
           "Rp 30,000",
-          "Rp 130,000"
+          "Rp 95,000"
         ],
         "id": [
-          "Rp120.000",
+          "Rp90.000",
           "Rp30.000",
-          "Rp130.000"
+          "Rp95.000"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "20% of 150,000 is 30,000; 150,000 - 30,000 = 120,000.",
-        "id": "20% dari 150.000 adalah 30.000; 150.000 - 30.000 = 120.000."
+        "en": "25% of 120,000 is 30,000; 120,000 - 30,000 = 90,000.",
+        "id": "25% dari 120.000 adalah 30.000; 120.000 - 30.000 = 90.000."
       },
       "check": {
-        "expression": "150000 - 20/100*150000",
-        "result": "120000"
+        "expression": "120000 - 25/100*120000",
+        "result": "90000"
       },
       "distractorMisconceptions": {
         "1": "GIVES_DISCOUNT_NOT_PRICE",
@@ -260,28 +264,28 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "In a story, the price of 1 kg of rice rises from Rp 12,000 to Rp 15,000. What is the percentage increase?",
-        "id": "Dalam sebuah cerita, harga 1 kg beras naik dari Rp12.000 menjadi Rp15.000. Berapa persen kenaikannya?"
+        "en": "In a story, a bottle of cooking oil rises from Rp 8,000 to Rp 10,000. What is the percentage increase?",
+        "id": "Dalam sebuah cerita, harga sebotol minyak goreng naik dari Rp8.000 menjadi Rp10.000. Berapa persen kenaikannya?"
       },
       "choices": {
         "en": [
           "25%",
           "20%",
-          "3%"
+          "2%"
         ],
         "id": [
           "25%",
           "20%",
-          "3%"
+          "2%"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The increase is 3,000 compared with the old price 12,000: 3,000/12,000 = 1/4 = 25%.",
-        "id": "Kenaikannya 3.000 dibandingkan harga lama 12.000: 3.000/12.000 = 1/4 = 25%."
+        "en": "The increase is 2,000 compared with the old price 8,000: 2,000/8,000 = 1/4 = 25%.",
+        "id": "Kenaikannya 2.000 dibandingkan harga lama 8.000: 2.000/8.000 = 1/4 = 25%."
       },
       "check": {
-        "expression": "(15000 - 12000)/12000",
+        "expression": "(10000 - 8000)/8000",
         "result": "25%"
       },
       "distractorMisconceptions": {
@@ -292,29 +296,29 @@
     {
       "id": "a6",
       "prompt": {
-        "en": "40% of a number is 18. What is the number?",
-        "id": "40% dari suatu bilangan adalah 18. Berapa bilangan itu?"
+        "en": "30% of a number is 27. What is the number?",
+        "id": "30% dari suatu bilangan adalah 27. Berapa bilangan itu?"
       },
       "choices": {
         "en": [
-          "45",
-          "7.2",
-          "58"
+          "90",
+          "8.1",
+          "57"
         ],
         "id": [
-          "45",
-          "7,2",
-          "58"
+          "90",
+          "8,1",
+          "57"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "40% = 18, so 10% = 4.5 and 100% = 45.",
-        "id": "40% = 18, jadi 10% = 4,5 dan 100% = 45."
+        "en": "30% = 27, so 10% = 9 and 100% = 90.",
+        "id": "30% = 27, jadi 10% = 9 dan 100% = 90."
       },
       "check": {
-        "expression": "18 / 40 * 100",
-        "result": "45"
+        "expression": "27 / 30 * 100",
+        "result": "90"
       },
       "distractorMisconceptions": {
         "1": "REVERSES_PERCENT",

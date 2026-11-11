@@ -57,7 +57,7 @@ drawn from it. The title may be a transliteration variant (al-Qawl al-Jaliyy / a
 | Bismillah; Alhamdulillah | drafted Arabic, copied from the existing meal-adab lesson | age2_3 reflection, age4_5 duas, g2 duas |
 | Assalamu alaikum; Wa alaikum assalam | drafted Arabic | age3_4 arabic unit and reading |
 | Bismika Allahumma amutu wa ahya (before sleep) | placeholder | age4_5 duas |
-| Alhamdu lillahil-ladhi ahyana ba'da ma amatana wa ilayhin-nushur (on waking) | placeholder | age4_5 duas |
+| Alhamdu lillahil-ladhi ahyana ba'da ma amatana wa ilayhin-nushur (on waking; *nushur* drafted as rising or resurrection, "dibangkitkan") | placeholder | age4_5 duas |
 | Bismillah, tawakkaltu 'alallah, wa la hawla wa la quwwata illa billah (leaving home) | placeholder | g2 duas |
 | Yarhamukallah; Yahdikumullah wa yuslihu balakum (sneezing) | placeholder | g2 duas |
 | Allah mawjud bila makan | placeholder | g4 aqidah unit and reading |
@@ -74,7 +74,7 @@ No Qur'anic text is reproduced anywhere in the batch. Surahs are named only: Al-
 | # | Outline | Where |
 |---|---|---|
 | H1 | Abu al-Hasan al-Ash'ari (Basra, Baghdad) and Abu Mansur al-Maturidi (Samarqand), roughly 3rd to 4th Islamic centuries | g5 history unit |
-| H2 | Spread of Islam in the archipelago: gradual, through trade, marriage, teaching and pesantren; origin theories (Gujarat, Arabia, Persia, southern China); evidence types; early kingdoms in northern Sumatra; Wali Songo traditions | g6 history unit; g6 reading (every claim marked `needs_source`) |
+| H2 | Spread of Islam in the archipelago: gradual, through trade, marriage, teaching and pesantren; origin theories (Gujarat, Arabia, Persia, southern China); evidence types; early kingdoms in northern Sumatra; Wali Songo accounts presented respectfully as historical records and passed-down traditions, including karamah | g6 history unit; g6 reading (every claim marked `needs_source`) |
 
 ## 7. Questions a qualified scholar must answer
 1. **F3:** What is the exact Arabic title, author, publisher and edition of *Al-Qawl al-Jaliyy*, and is it the intended
@@ -96,6 +96,34 @@ No Qur'anic text is reproduced anywhere in the batch. Surahs are named only: Al-
 9. **Plain-words teachings T1 to T8:** Confirm or correct each summary, and add an approved text where one is wanted.
 10. Confirm the rule used throughout: no depiction of Allah, the Prophet, or any prophet or companion, and no
     role-playing them.
+
+### Added after the pre-scholar consistency check (2026-11-11)
+These come from `docs/curriculum/qa/PILOT_ISLAMIC_PRESCHOLAR_QA.md`, which is an AI consistency check and not
+scholarly approval. Each question is also recorded in the relevant file's `religiousReview.notes`.
+11. **Wudu order (K):** may the cards treat the order of the steps (*tartib*) as required, or should they stay neutral
+    between madhhabs? The draft now presents only the family's common card order, with no claim that it is required.
+12. **Seerah role-play (G3):** may children ever role-play unnamed people of Madinah, given that the Ansar were
+    companions? The draft now uses narration, a map and objects only.
+13. **Karamah (G6 unit and reading):** what approved wording handles Wali Songo karamah accounts within a
+    historical-evidence lesson? The draft calls them passed-down traditions and says that Muslims of this tradition
+    accept that Allah can grant karamah. That sentence needs scholar wording.
+14. **Waking and bedtime duas (age 4–5):** what is the verified translation of *nushur* in English and Indonesian? Which
+    form of the bedtime dua should be taught, "Bismika Allahumma amutu wa ahya" or "Bismika Allahumma ahya wa bismika
+    amut"?
+15. **Aqidah teaching aid (G1, G4):** may "everything we can picture has a size and a place, so it is created" be used?
+    How should the divine name an-Nur be handled, given that "a light" is listed as a picture to avoid? Should the time
+    wording ("before ... Allah existed", "sudah ada") be replaced, for example with "Allah ada tanpa permulaan"?
+16. **Recitation (G4):** may a deliberately rushed pronunciation example be used? The draft limits it to everyday or
+    Iqra' words, never Qur'anic words.
+17. **Arabic orthography:** should stand-alone greeting and Alhamdulillah cards use hamzat al-wasl (ٱ) or a plain alif?
+    Which transliteration convention should each language use?
+18. **Creation of acts (age 3–4):** is "people make things" acceptable at this age, or should it become "people make
+    things with what Allah created and the ability Allah gave"?
+19. **Other points:**
+    - Where should a child stand in family prayer (G2)?
+    - How should the Hijri year be explained, given that it is counted from the year of the Hijrah but begins in
+      Muharram (G3)?
+    - Which exceptions to the ghibah prohibition (for example telling a grown-up) should older children hear (G5)?
 
 ## Review procedure
 Record each answer with `pnpm content:religious-approve` (reviewer, source, edition, page). Only a qualified human may

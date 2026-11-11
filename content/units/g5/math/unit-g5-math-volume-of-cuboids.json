@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-math-volume-of-cuboids",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "framework": "math",
   "strand": "measurement",
@@ -31,8 +31,8 @@
   ],
   "successCriteria": [
     {
-      "en": "I can build a 3 by 2 by 2 cuboid from cubes and say its volume is 12 cm³.",
-      "id": "Aku bisa menyusun balok 3 kali 2 kali 2 dari kubus dan menyebut volumenya 12 cm³."
+      "en": "I can build a 3 by 2 by 2 cuboid from cubes and say its volume is 12 cubic units (12 cm³ if the cubes are 1 cm).",
+      "id": "Aku bisa menyusun balok 3 kali 2 kali 2 dari kubus dan menyebut volumenya 12 kubus satuan (12 cm³ jika kubusnya 1 cm)."
     },
     {
       "en": "I can find how many litres an aquarium holds from its measurements.",
@@ -131,29 +131,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "What is the volume of a cuboid 5 cm long, 3 cm wide and 2 cm high?",
-        "id": "Berapa volume balok dengan panjang 5 cm, lebar 3 cm, dan tinggi 2 cm?"
+        "en": "What is the volume of a cuboid 6 cm long, 4 cm wide and 3 cm high?",
+        "id": "Berapa volume balok dengan panjang 6 cm, lebar 4 cm, dan tinggi 3 cm?"
       },
       "choices": {
         "en": [
-          "30 cm³",
-          "10 cm³",
-          "62 cm²"
+          "72 cm³",
+          "13 cm³",
+          "108 cm²"
         ],
         "id": [
-          "30 cm³",
-          "10 cm³",
-          "62 cm²"
+          "72 cm³",
+          "13 cm³",
+          "108 cm²"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Base 5 × 3 = 15 cubes, 2 layers: 15 × 2 = 30 cm³.",
-        "id": "Alas 5 × 3 = 15 kubus, 2 lapisan: 15 × 2 = 30 cm³."
+        "en": "Base 6 × 4 = 24 cubes, 3 layers: 24 × 3 = 72 cm³.",
+        "id": "Alas 6 × 4 = 24 kubus, 3 lapisan: 24 × 3 = 72 cm³."
       },
       "check": {
-        "expression": "5*3*2",
-        "result": "30"
+        "expression": "6*4*3",
+        "result": "72"
       },
       "distractorMisconceptions": {
         "1": "ADDS_DIMENSIONS",
@@ -163,29 +163,29 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "An aquarium is 40 cm long, 25 cm wide and 30 cm high. How many litres does it hold when full? (1000 cm³ = 1 L)",
-        "id": "Akuarium panjangnya 40 cm, lebar 25 cm, dan tinggi 30 cm. Berapa liter isinya jika penuh? (1.000 cm³ = 1 L)"
+        "en": "A fish tank is 50 cm long, 30 cm wide and 40 cm high. How many litres does it hold when full? (1000 cm³ = 1 L)",
+        "id": "Akuarium panjangnya 50 cm, lebar 30 cm, dan tinggi 40 cm. Berapa liter isinya jika penuh? (1.000 cm³ = 1 L)"
       },
       "choices": {
         "en": [
-          "30 L",
-          "300 L",
-          "3 L"
+          "60 L",
+          "600 L",
+          "6 L"
         ],
         "id": [
-          "30 L",
-          "300 L",
-          "3 L"
+          "60 L",
+          "600 L",
+          "6 L"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "40 × 25 × 30 = 30,000 cm³, and 30,000 ÷ 1000 = 30 L.",
-        "id": "40 × 25 × 30 = 30.000 cm³, dan 30.000 ÷ 1.000 = 30 L."
+        "en": "50 × 30 × 40 = 60,000 cm³, and 60,000 ÷ 1000 = 60 L.",
+        "id": "50 × 30 × 40 = 60.000 cm³, dan 60.000 ÷ 1.000 = 60 L."
       },
       "check": {
-        "expression": "40*25*30/1000",
-        "result": "30"
+        "expression": "50*30*40/1000",
+        "result": "60"
       },
       "distractorMisconceptions": {
         "1": "CONVERSION_SHIFT",
@@ -195,28 +195,28 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "A cuboid has a volume of 60 cm³ and a base 4 cm by 5 cm. What is its height?",
-        "id": "Sebuah balok bervolume 60 cm³ dengan alas 4 cm kali 5 cm. Berapa tingginya?"
+        "en": "A cuboid has a volume of 84 cm³ and a base 4 cm by 7 cm. What is its height?",
+        "id": "Sebuah balok bervolume 84 cm³ dengan alas 4 cm kali 7 cm. Berapa tingginya?"
       },
       "choices": {
         "en": [
           "3 cm",
-          "51 cm",
-          "15 cm"
+          "73 cm",
+          "21 cm"
         ],
         "id": [
           "3 cm",
-          "51 cm",
-          "15 cm"
+          "73 cm",
+          "21 cm"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Base area 4 × 5 = 20 cm²; 60 ÷ 20 = 3 cm.",
-        "id": "Luas alas 4 × 5 = 20 cm²; 60 ÷ 20 = 3 cm."
+        "en": "Base area 4 × 7 = 28 cm²; 84 ÷ 28 = 3 cm.",
+        "id": "Luas alas 4 × 7 = 28 cm²; 84 ÷ 28 = 3 cm."
       },
       "check": {
-        "expression": "60/(4*5)",
+        "expression": "84/(4*7)",
         "result": "3"
       },
       "distractorMisconceptions": {
@@ -227,29 +227,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "What is the volume of a cube with edges of 4 cm?",
-        "id": "Berapa volume kubus dengan rusuk 4 cm?"
+        "en": "What is the volume of a cube with edges of 5 cm?",
+        "id": "Berapa volume kubus dengan rusuk 5 cm?"
       },
       "choices": {
         "en": [
-          "64 cm³",
-          "12 cm³",
-          "16 cm³"
+          "125 cm³",
+          "15 cm³",
+          "25 cm³"
         ],
         "id": [
-          "64 cm³",
-          "12 cm³",
-          "16 cm³"
+          "125 cm³",
+          "15 cm³",
+          "25 cm³"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "4 × 4 = 16 cubes in each layer and 4 layers: 64 cm³.",
-        "id": "4 × 4 = 16 kubus setiap lapisan dan 4 lapisan: 64 cm³."
+        "en": "5 × 5 = 25 cubes in each layer and 5 layers: 125 cm³.",
+        "id": "5 × 5 = 25 kubus setiap lapisan dan 5 lapisan: 125 cm³."
       },
       "check": {
-        "expression": "4*4*4",
-        "result": "64"
+        "expression": "5*5*5",
+        "result": "125"
       },
       "distractorMisconceptions": {
         "1": "ADDS_DIMENSIONS",
@@ -319,8 +319,8 @@
         "id": "Membagi dengan 100 atau 10.000, bukan 1.000, saat mengubah cm³ ke liter."
       },
       "remediation": {
-        "en": "Measure a 1-litre carton: about 10 cm by 10 cm by 10 cm = 1000 cm³. Count how many cartons fit.",
-        "id": "Ukur kotak 1 liter: sekitar 10 cm kali 10 cm kali 10 cm = 1.000 cm³. Hitung berapa kotak yang muat."
+        "en": "Measure a 1-litre carton (about 6 cm × 9.5 cm × 17.5 cm, close to 1000 cm³), or build a 10 cm × 10 cm × 10 cm card cube and pour 1 litre of water into it.",
+        "id": "Ukur kotak minuman 1 liter (sekitar 6 cm × 9,5 cm × 17,5 cm, mendekati 1.000 cm³), atau buat kubus karton 10 cm × 10 cm × 10 cm dan tuang 1 liter air ke dalamnya."
       }
     },
     {
@@ -372,7 +372,7 @@
   "safety": {
     "supervision": "adult_present",
     "hazards": {
-      "chokingRisk": false,
+      "chokingRisk": true,
       "sharp": false,
       "water": false,
       "heat": false,
