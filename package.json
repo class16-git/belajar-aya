@@ -26,7 +26,8 @@
     "library:approve": "pnpm --filter @atlas/curriculum library-approve",
     "library:withdraw": "pnpm --filter @atlas/curriculum library-withdraw",
     "release:manifest": "pnpm --silent --filter @atlas/curriculum release-manifest",
-    "content:dashboard": "pnpm --filter @atlas/curriculum dashboard"
+    "content:dashboard": "pnpm --filter @atlas/curriculum dashboard",
+    "release:record": "pnpm --silent --filter @atlas/curriculum release-record"
   },
   "devDependencies": {
     "prettier": "3.6.2",
