@@ -1,0 +1,216 @@
+{
+  "id": "reading-g1-fruit-for-the-picnic",
+  "version": "1.0.0",
+  "level": "g1",
+  "readingLevel": "early",
+  "genre": "fiction",
+  "mode": "independent",
+  "title": {
+    "en": "Fruit for the picnic",
+    "id": "Buah untuk piknik"
+  },
+  "text": {
+    "en": [
+      "Lia and Dad are going to the market. They need fruit for a picnic with Lia's two cousins.",
+      "Lia writes a list. 'One banana for each of us. That is me, Dad, and my two cousins.'",
+      "At the market, the fruit seller has a big pile of yellow bananas and green guavas.",
+      "Lia counts out the bananas: one, two, three, four. 'Four bananas for four people!'",
+      "Dad picks two guavas too. 'We can cut these and share them,' he says.",
+      "At the picnic, everyone has a banana and a piece of guava. Lia's list worked!"
+    ],
+    "id": [
+      "Lia dan Ayah akan pergi ke pasar. Mereka perlu buah untuk piknik bersama dua sepupu Lia.",
+      "Lia menulis daftar. 'Satu pisang untuk setiap orang. Aku, Ayah, dan dua sepupuku.'",
+      "Di pasar, penjual buah punya setumpuk besar pisang kuning dan jambu biji hijau.",
+      "Lia menghitung pisang: satu, dua, tiga, empat. 'Empat pisang untuk empat orang!'",
+      "Ayah juga memilih dua jambu biji. 'Kita bisa memotong dan membaginya,' katanya.",
+      "Saat piknik, semua orang mendapat satu pisang dan sepotong jambu biji. Daftar Lia berhasil!"
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a short story independently and retells it in order.",
+      "id": "Membaca cerita pendek sendiri dan menceritakannya kembali secara urut."
+    },
+    {
+      "en": "Uses counting to match one item to each person.",
+      "id": "Menggunakan hitungan untuk mencocokkan satu benda untuk setiap orang."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "list",
+        "id": "daftar"
+      },
+      "meaning": {
+        "en": "words written one under another to help you remember",
+        "id": "kata-kata yang ditulis berurutan agar kita ingat"
+      }
+    },
+    {
+      "word": {
+        "en": "cousin",
+        "id": "sepupu"
+      },
+      "meaning": {
+        "en": "the child of your aunt or uncle",
+        "id": "anak dari paman atau bibi"
+      }
+    },
+    {
+      "word": {
+        "en": "share",
+        "id": "berbagi"
+      },
+      "meaning": {
+        "en": "to give some to others",
+        "id": "memberikan sebagian kepada orang lain"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where did Lia and Dad buy the fruit?",
+        "id": "Di mana Lia dan Ayah membeli buah?"
+      },
+      "choices": {
+        "en": [
+          "at the market",
+          "at school",
+          "at the park"
+        ],
+        "id": [
+          "di pasar",
+          "di sekolah",
+          "di taman"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "math",
+      "prompt": {
+        "en": "Lia, Dad and two cousins each get one banana. How many bananas do they need?",
+        "id": "Lia, Ayah, dan dua sepupu masing-masing mendapat satu pisang. Berapa pisang yang diperlukan?"
+      },
+      "choices": {
+        "en": [
+          "4 bananas",
+          "3 bananas",
+          "2 bananas"
+        ],
+        "id": [
+          "4 pisang",
+          "3 pisang",
+          "2 pisang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3,
+      "check": {
+        "expression": "1 + 1 + 2",
+        "result": "4"
+      }
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Lia do before going to the market?",
+        "id": "Apa yang Lia lakukan sebelum ke pasar?"
+      },
+      "choices": {
+        "en": [
+          "wrote a list",
+          "cut the guavas",
+          "ate a banana"
+        ],
+        "id": [
+          "menulis daftar",
+          "memotong jambu biji",
+          "makan pisang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Dad say they could cut the guavas?",
+        "id": "Mengapa Ayah bilang jambu bijinya bisa dipotong?"
+      },
+      "choices": {
+        "en": [
+          "two guavas are not enough for four people to have one each",
+          "guavas are too hard to eat",
+          "Lia does not like guavas"
+        ],
+        "id": [
+          "dua jambu biji tidak cukup untuk satu buah per orang",
+          "jambu biji terlalu keras",
+          "Lia tidak suka jambu biji"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Matching one banana to one person is one-to-one counting.",
+        "id": "Mencocokkan satu pisang untuk satu orang adalah korespondensi satu-satu."
+      }
+    },
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Fruit is a healthy picnic food.",
+        "id": "Buah adalah makanan piknik yang sehat."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What would you put on a picnic list?",
+      "id": "Apa yang akan kamu tulis di daftar piknik?"
+    },
+    {
+      "en": "How else could the family share two guavas fairly?",
+      "id": "Bagaimana lagi keluarga itu bisa membagi dua jambu biji dengan adil?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Before your next shopping trip, let your child write or draw a short list and count how many of each thing the family needs.",
+    "id": "Sebelum belanja berikutnya, biarkan anak menulis atau menggambar daftar pendek dan menghitung berapa banyak setiap barang yang dibutuhkan keluarga."
+  },
+  "factChecks": [],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

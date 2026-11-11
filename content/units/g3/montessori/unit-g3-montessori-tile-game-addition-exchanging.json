@@ -1,0 +1,449 @@
+{
+  "id": "unit-g3-montessori-tile-game-addition-exchanging",
+  "version": "1.0.1",
+  "level": "g3",
+  "framework": "montessori",
+  "strand": "mathematics",
+  "title": {
+    "en": "Big additions with exchanging, using place-value tiles",
+    "id": "Penjumlahan besar dengan menukar, memakai keping nilai tempat"
+  },
+  "prerequisites": [
+    "unit-k-montessori-spindle-box-zero-to-nine",
+    "unit-g2-math-place-value-hundreds"
+  ],
+  "objective": {
+    "en": "Add two four-digit numbers with home-made place-value tiles, exchanging ten of one kind for one of the next, and record the written sum.",
+    "id": "Menjumlahkan dua bilangan empat angka dengan keping nilai tempat buatan sendiri, menukar sepuluh dari satu jenis dengan satu dari jenis berikutnya, dan mencatat hasil tertulisnya."
+  },
+  "rationale": {
+    "en": "Seeing ten unit tiles actually traded for one ten tile shows why we 'carry' in written addition. The colour code (units green, tens blue, hundreds red, thousands green again) echoes the Montessori stamp game with cheap home-made tiles.",
+    "id": "Melihat sepuluh keping satuan benar-benar ditukar dengan satu keping puluhan menunjukkan mengapa kita 'menyimpan' dalam penjumlahan tertulis. Kode warna (satuan hijau, puluhan biru, ratusan merah, ribuan hijau lagi) mengikuti permainan perangko Montessori dengan keping buatan sendiri yang murah."
+  },
+  "outcomes": [
+    {
+      "en": "Builds two four-digit numbers with tiles and combines them.",
+      "id": "Menyusun dua bilangan empat angka dengan keping lalu menggabungkannya."
+    },
+    {
+      "en": "Exchanges ten tiles of one value for one tile of the next value.",
+      "id": "Menukar sepuluh keping satu nilai dengan satu keping nilai berikutnya."
+    },
+    {
+      "en": "Records the sum in column form with the exchanged digit written above.",
+      "id": "Mencatat hasil dalam bentuk bersusun dengan angka tukaran ditulis di atas."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can add 2,456 + 1,378 with tiles and get 3,834.",
+      "id": "Aku bisa menjumlahkan 2.456 + 1.378 dengan keping dan mendapat 3.834."
+    },
+    {
+      "en": "I can explain what the small 1 above the tens column means.",
+      "id": "Aku bisa menjelaskan arti angka 1 kecil di atas kolom puluhan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Always start with the units, on the right, as in written addition.",
+      "id": "Selalu mulai dari satuan, di sebelah kanan, seperti penjumlahan tertulis."
+    },
+    {
+      "en": "When there are ten or more of a kind, say: 'Ten units are too many for one column. Let's go to the bank and exchange them for one ten.'",
+      "id": "Jika ada sepuluh atau lebih satu jenis, katakan: 'Sepuluh satuan terlalu banyak untuk satu kolom. Ayo ke bank untuk menukarnya dengan satu puluhan.'"
+    },
+    {
+      "en": "Write the paper sum only after the tiles are finished, so the writing records what the hands did.",
+      "id": "Tulis penjumlahan di kertas hanya setelah keping selesai, agar tulisan mencatat apa yang dikerjakan tangan."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Build the first number with tiles in columns: thousands, hundreds, tens, units.",
+      "id": "Susun bilangan pertama dengan keping dalam kolom: ribuan, ratusan, puluhan, satuan."
+    },
+    {
+      "en": "Build the second number underneath. Push each column together, starting with the units.",
+      "id": "Susun bilangan kedua di bawahnya. Gabungkan setiap kolom, mulai dari satuan."
+    },
+    {
+      "en": "If a column has ten or more tiles, swap ten of them at the bank for one tile of the next column. Then count each column and write the answer.",
+      "id": "Jika satu kolom punya sepuluh keping atau lebih, tukar sepuluh di bank dengan satu keping kolom berikutnya. Lalu hitung setiap kolom dan tulis jawabannya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build and combine four-digit numbers with colour-coded tiles, exchanging at the bank.",
+        "id": "Menyusun dan menggabungkan bilangan empat angka dengan keping berkode warna, menukar di bank."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the tiles as coloured squares in columns and circle each group of ten.",
+        "id": "Menggambar keping sebagai kotak berwarna dalam kolom dan melingkari setiap kelompok sepuluh."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the column addition with exchanged 1s, for example 2,456 + 1,378 = 3,834.",
+        "id": "Menulis penjumlahan bersusun dengan angka 1 tukaran, misalnya 2.456 + 1.378 = 3.834."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 120 small squares of card (3 cm), in four sets: 40 green marked 1, 30 blue marked 10, 30 red marked 100, 20 green marked 1000",
+      "id": "Sekitar 120 kotak karton kecil (3 cm), empat set: 40 hijau bertulisan 1, 30 biru bertulisan 10, 30 merah bertulisan 100, 20 hijau bertulisan 1000"
+    },
+    {
+      "en": "A sheet with four columns headed 1000, 100, 10, 1, and an extra pile of tiles as the 'bank'",
+      "id": "Lembar dengan empat kolom berjudul 1000, 100, 10, 1, dan tumpukan keping tambahan sebagai 'bank'"
+    },
+    {
+      "en": "Pencil and squared paper for recording",
+      "id": "Pensil dan kertas berpetak untuk mencatat"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult cuts the card squares with scissors or a paper trimmer and the child writes the values on them.",
+      "id": "Orang dewasa memotong kotak karton dengan gunting atau pemotong kertas dan anak menulis nilainya."
+    },
+    {
+      "en": "Keep each kind of tile in its own labelled envelope.",
+      "id": "Simpan setiap jenis keping di amplopnya sendiri yang berlabel."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Without exchange first: 1,234 + 2,345. Build both, combine: 3 thousands, 5 hundreds, 7 tens, 9 units = 3,579.",
+      "id": "Tanpa menukar dulu: 1.234 + 2.345. Susun keduanya, gabungkan: 3 ribuan, 5 ratusan, 7 puluhan, 9 satuan = 3.579."
+    },
+    {
+      "en": "With exchange: 2,456 + 1,378. Units: 6 + 8 = 14 tiles. Count out ten, take them to the bank, bring back one ten tile; 4 units stay. Tens: 5 + 7 + 1 = 13; exchange ten tens for one hundred, 3 tens stay. Hundreds: 4 + 3 + 1 = 8. Thousands: 2 + 1 = 3. Answer 3,834.",
+      "id": "Dengan menukar: 2.456 + 1.378. Satuan: 6 + 8 = 14 keping. Hitung sepuluh, bawa ke bank, ambil satu keping puluhan; 4 satuan tetap. Puluhan: 5 + 7 + 1 = 13; tukar sepuluh puluhan dengan satu ratusan, 3 puluhan tetap. Ratusan: 4 + 3 + 1 = 8. Ribuan: 2 + 1 = 3. Jawaban 3.834."
+    },
+    {
+      "en": "Record it in columns: write the small 1 above the tens and above the hundreds to show the exchanged tiles.",
+      "id": "Catat dalam bentuk bersusun: tulis angka 1 kecil di atas puluhan dan di atas ratusan untuk menunjukkan keping yang ditukar."
+    }
+  ],
+  "practice": [
+    {
+      "en": "With tiles, then on paper: 3,167 + 2,425; 1,589 + 4,236; 2,708 + 3,595.",
+      "id": "Dengan keping, lalu di kertas: 3.167 + 2.425; 1.589 + 4.236; 2.708 + 3.595."
+    },
+    {
+      "en": "Exchange hunt: the adult gives a pile of 23 unit tiles and 14 ten tiles; the child exchanges until no column has ten or more, and says the number.",
+      "id": "Berburu tukar: orang dewasa memberi tumpukan 23 keping satuan dan 14 keping puluhan; anak menukar sampai tidak ada kolom yang punya sepuluh atau lebih, lalu menyebut bilangannya."
+    },
+    {
+      "en": "Write a word problem about a family market stall: 1,250 bananas on Monday and 1,375 on Tuesday. How many altogether?",
+      "id": "Tulis soal cerita tentang lapak keluarga di pasar: 1.250 pisang hari Senin dan 1.375 hari Selasa. Berapa semuanya?"
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "2,456 + 1,378 = ?",
+        "id": "2.456 + 1.378 = ?"
+      },
+      "choices": {
+        "en": [
+          "3,834",
+          "3,724",
+          "371,214"
+        ],
+        "id": [
+          "3.834",
+          "3.724",
+          "371.214"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Units 14 → 4 and exchange; tens 5+7+1 = 13 → 3 and exchange; hundreds 4+3+1 = 8; thousands 3.",
+        "id": "Satuan 14 → 4 dan tukar; puluhan 5+7+1 = 13 → 3 dan tukar; ratusan 4+3+1 = 8; ribuan 3."
+      },
+      "check": {
+        "expression": "2456 + 1378",
+        "result": "3834"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_EXCHANGED_TILE",
+        "2": "WRITES_TEEN_IN_COLUMN"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A column has 16 unit tiles. After exchanging, what is left in the units column?",
+        "id": "Satu kolom punya 16 keping satuan. Setelah ditukar, berapa yang tersisa di kolom satuan?"
+      },
+      "choices": {
+        "en": [
+          "6 units, plus 1 new ten",
+          "16 units",
+          "1 unit, plus 6 new tens"
+        ],
+        "id": [
+          "6 satuan, ditambah 1 puluhan baru",
+          "16 satuan",
+          "1 satuan, ditambah 6 puluhan baru"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Ten units become one ten, so 16 − 10 = 6 units stay.",
+        "id": "Sepuluh satuan menjadi satu puluhan, jadi 16 − 10 = 6 satuan tersisa."
+      },
+      "check": {
+        "expression": "16 - 10",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "NO_EXCHANGE",
+        "2": "DIGITS_SWAPPED_EXCHANGE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "3,167 + 2,425 = ?",
+        "id": "3.167 + 2.425 = ?"
+      },
+      "choices": {
+        "en": [
+          "5,592",
+          "5,582",
+          "55,812"
+        ],
+        "id": [
+          "5.592",
+          "5.582",
+          "55.812"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Units 7+5 = 12 → 2, exchange one ten; tens 6+2+1 = 9; hundreds 1+4 = 5; thousands 3+2 = 5.",
+        "id": "Satuan 7+5 = 12 → 2, tukar satu puluhan; puluhan 6+2+1 = 9; ratusan 1+4 = 5; ribuan 3+2 = 5."
+      },
+      "check": {
+        "expression": "3167 + 2425",
+        "result": "5592"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_EXCHANGED_TILE",
+        "2": "WRITES_TEEN_IN_COLUMN"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "1,589 + 4,236 = ?",
+        "id": "1.589 + 4.236 = ?"
+      },
+      "choices": {
+        "en": [
+          "5,825",
+          "5,715",
+          "571,115"
+        ],
+        "id": [
+          "5.825",
+          "5.715",
+          "571.115"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Units 15 → 5; tens 8+3+1 = 12 → 2; hundreds 5+2+1 = 8; thousands 1+4 = 5.",
+        "id": "Satuan 15 → 5; puluhan 8+3+1 = 12 → 2; ratusan 5+2+1 = 8; ribuan 1+4 = 5."
+      },
+      "check": {
+        "expression": "1589 + 4236",
+        "result": "5825"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_EXCHANGED_TILE",
+        "2": "WRITES_TEEN_IN_COLUMN"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "You have 23 unit tiles and 14 ten tiles. After all exchanges, what number is shown?",
+        "id": "Kamu punya 23 keping satuan dan 14 keping puluhan. Setelah semua ditukar, bilangan berapa yang ditunjukkan?"
+      },
+      "choices": {
+        "en": [
+          "163",
+          "1,423",
+          "37"
+        ],
+        "id": [
+          "163",
+          "1.423",
+          "37"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "14 tens and 23 units = 140 + 23 = 163 (1 hundred, 6 tens, 3 units).",
+        "id": "14 puluhan dan 23 satuan = 140 + 23 = 163 (1 ratusan, 6 puluhan, 3 satuan)."
+      },
+      "check": {
+        "expression": "14 * 10 + 23",
+        "result": "163"
+      },
+      "distractorMisconceptions": {
+        "1": "WRITES_TEEN_IN_COLUMN",
+        "2": "ADDS_COUNTS_NOT_VALUES"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "FORGETS_EXCHANGED_TILE",
+      "description": {
+        "en": "Exchanges but forgets to count the new tile in the next column.",
+        "id": "Menukar tetapi lupa menghitung keping baru di kolom berikutnya."
+      },
+      "remediation": {
+        "en": "Place the exchanged tile on top of the next column's heading, so it is the first tile counted there; record it as a small 1 at once.",
+        "id": "Letakkan keping tukaran di atas judul kolom berikutnya, agar menjadi keping pertama yang dihitung; catat langsung sebagai angka 1 kecil."
+      }
+    },
+    {
+      "code": "WRITES_TEEN_IN_COLUMN",
+      "description": {
+        "en": "Writes a two-digit total such as 14 inside one column.",
+        "id": "Menulis jumlah dua angka seperti 14 di dalam satu kolom."
+      },
+      "remediation": {
+        "en": "Rule: a column may hold at most nine tiles. Count tiles into the column one at a time and stop at ten to go to the bank.",
+        "id": "Aturan: satu kolom paling banyak sembilan keping. Hitung keping ke kolom satu per satu dan berhenti di sepuluh untuk ke bank."
+      }
+    },
+    {
+      "code": "NO_EXCHANGE",
+      "description": {
+        "en": "Leaves ten or more tiles in a column.",
+        "id": "Membiarkan sepuluh keping atau lebih di satu kolom."
+      },
+      "remediation": {
+        "en": "Use bundles of ten sticks: ten loose sticks are tied into one bundle, then match the bundle to a ten tile.",
+        "id": "Pakai ikatan sepuluh lidi: sepuluh lidi lepas diikat menjadi satu ikatan, lalu cocokkan ikatan dengan keping puluhan."
+      }
+    },
+    {
+      "code": "DIGITS_SWAPPED_EXCHANGE",
+      "description": {
+        "en": "Swaps the digits after exchanging.",
+        "id": "Menukar posisi angka setelah penukaran."
+      },
+      "remediation": {
+        "en": "Say the exchange aloud: 'sixteen is one ten and six units', and put the ten tile on the left, the six units on the right.",
+        "id": "Ucapkan penukarannya: 'enam belas adalah satu puluhan dan enam satuan', lalu letakkan keping puluhan di kiri, enam satuan di kanan."
+      }
+    },
+    {
+      "code": "ADDS_COUNTS_NOT_VALUES",
+      "description": {
+        "en": "Adds the number of tiles without their values.",
+        "id": "Menjumlahkan banyak keping tanpa melihat nilainya."
+      },
+      "remediation": {
+        "en": "Turn each ten tile over and count it as 'ten' aloud: 10, 20, 30 ... before adding the units.",
+        "id": "Balik setiap keping puluhan dan hitung sebagai 'sepuluh' dengan suara: 10, 20, 30 ... sebelum menambahkan satuan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add three numbers at once, such as 1,245 + 2,368 + 1,497.",
+      "id": "Jumlahkan tiga bilangan sekaligus, seperti 1.245 + 2.368 + 1.497."
+    },
+    {
+      "en": "Use the tiles for subtraction, exchanging one ten at the bank for ten units when a column runs short.",
+      "id": "Pakai keping untuk pengurangan, menukar satu puluhan di bank dengan sepuluh satuan saat kolom kekurangan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Larger tiles (5 cm) suit children with fine-motor difficulties; the colour code can also be marked with shapes for colour-blind children.",
+      "id": "Keping lebih besar (5 cm) cocok untuk anak dengan kesulitan motorik halus; kode warna juga bisa ditandai dengan bentuk untuk anak buta warna."
+    },
+    {
+      "en": "Use squared paper with one digit per square to keep columns lined up.",
+      "id": "Pakai kertas berpetak satu angka per kotak agar kolom tetap lurus."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult cuts the card squares with scissors or a trimmer; keep the small tiles away from children under 4.",
+        "id": "Orang dewasa memotong kotak karton dengan gunting atau pemotong; jauhkan keping kecil dari anak di bawah 4 tahun."
+      },
+      {
+        "en": "Store tiles in envelopes so they are not left on the floor.",
+        "id": "Simpan keping di amplop agar tidak tertinggal di lantai."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves three exchange additions with tiles and on paper without error, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan tiga penjumlahan dengan menukar memakai keping dan di kertas tanpa kesalahan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

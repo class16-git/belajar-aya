@@ -1,0 +1,452 @@
+{
+  "id": "unit-g1-math-time-half-hour",
+  "version": "1.0.1",
+  "level": "g1",
+  "framework": "math",
+  "strand": "time",
+  "title": {
+    "en": "Telling time to the half hour",
+    "id": "Membaca jam sampai setengah jam"
+  },
+  "prerequisites": [
+    "unit-k-math-compare-numbers-to-20"
+  ],
+  "objective": {
+    "en": "Read and show times to the hour and half hour on an analogue clock, and link them to daily routines.",
+    "id": "Membaca dan menunjukkan waktu tepat jam dan setengah jam pada jam jarum, serta mengaitkannya dengan kegiatan sehari-hari."
+  },
+  "rationale": {
+    "en": "Clock reading combines counting, halves and the movement of two hands. Starting with the hour hand alone, then adding the minute hand, prevents the common mix-up of the two hands.",
+    "id": "Membaca jam menggabungkan membilang, setengah, dan gerak dua jarum. Mulai dengan jarum pendek saja, lalu menambah jarum panjang, mencegah anak tertukar membaca kedua jarum."
+  },
+  "outcomes": [
+    {
+      "en": "Reads o'clock and half-past times and shows them on a clock face.",
+      "id": "Membaca waktu tepat jam dan setengah jam serta menunjukkannya di muka jam."
+    },
+    {
+      "en": "Explains that half an hour is 30 minutes and the hour hand is halfway at half past.",
+      "id": "Menjelaskan bahwa setengah jam adalah 30 menit dan jarum pendek ada di tengah saat setengah jam."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show half past 7 on my paper-plate clock.",
+      "id": "Aku bisa menunjukkan pukul setengah delapan di jam piring kertasku."
+    },
+    {
+      "en": "I can tell which hand shows the hour.",
+      "id": "Aku bisa menyebut jarum mana yang menunjukkan jam."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Make a paper-plate clock together; the adult does any cutting, makes a small hole in the centre and holds the hands on with a pencil stub or a tight roll of paper.",
+      "id": "Buat jam dari piring kertas bersama; orang dewasa melakukan pemotongan, membuat lubang kecil di tengah, dan menahan jarum dengan potongan pensil atau gulungan kertas."
+    },
+    {
+      "en": "Begin with only the short hand: talk about 'just after 7', 'halfway to 8'.",
+      "id": "Mulai dengan jarum pendek saja: bicarakan 'baru lewat 7', 'setengah jalan ke 8'."
+    },
+    {
+      "en": "In Indonesian, half past 7 is said 'setengah delapan' (half-way to eight); say both forms and point to the hand between 7 and 8.",
+      "id": "Dalam bahasa Indonesia, pukul 7.30 diucapkan 'setengah delapan'; sebutkan juga 'tujuh lewat tiga puluh' dan tunjuk jarum pendek di antara 7 dan 8."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Find the short hand first: it tells the hour. Then look at the long hand: on 12 it is o'clock, on 6 it is half past.",
+      "id": "Cari jarum pendek dulu: ia menunjukkan jam. Lalu lihat jarum panjang: di 12 berarti tepat, di 6 berarti setengah jam."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Fold a paper plate in half to see two halves of the hour; turn the long hand from 12 to 6 and watch the short hand move halfway to the next number.",
+        "id": "Lipat piring kertas menjadi dua untuk melihat dua bagian jam; putar jarum panjang dari 12 ke 6 dan lihat jarum pendek bergerak setengah jalan ke angka berikutnya."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw clock faces for four routine times, such as waking at 5 o'clock for Subuh and lunch at half past 12, and draw the hands.",
+        "id": "Gambar muka jam untuk empat waktu kegiatan, seperti bangun pukul 5 untuk Subuh dan makan siang pukul setengah satu, lalu gambar jarumnya."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write times in digits: 7:00 and 7:30, and match each to a clock drawing.",
+        "id": "Tulis waktu dengan angka: 7.00 dan 7.30, lalu cocokkan masing-masing dengan gambar jam."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A paper plate, a strip of card for two hands of different lengths, and a short pencil stub or a tight roll of paper to hold the hands on (a split pin, also called a paper fastener, is an alternative)",
+      "id": "Piring kertas, potongan karton untuk dua jarum berbeda panjang, dan potongan pensil pendek atau gulungan kertas padat untuk menahan jarum (paku keling kertas atau split pin bisa menjadi alternatif)"
+    },
+    {
+      "en": "A marker; a real wall clock to look at",
+      "id": "Spidol; jam dinding sungguhan untuk diamati"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "An adult cuts the two hands from card and fixes them to the centre of the plate with a pencil stub or tight roll of paper (or a split pin); write 1 to 12 around the edge.",
+      "id": "Orang dewasa memotong dua jarum dari karton dan memasangnya di tengah piring dengan potongan pensil atau gulungan kertas (atau paku keling kertas); tulis 1 sampai 12 di tepinya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "3 o'clock: short hand on 3, long hand on 12. Say: three o'clock, written 3:00.",
+      "id": "Pukul 3: jarum pendek di 3, jarum panjang di 12. Ucapkan: pukul tiga, ditulis 3.00."
+    },
+    {
+      "en": "Half past 3: the long hand has gone half way round to 6; the short hand has moved half way from 3 to 4. Written 3:30; in Indonesian 'setengah empat'.",
+      "id": "Pukul 3.30: jarum panjang sudah setengah putaran ke 6; jarum pendek bergerak setengah jalan dari 3 ke 4. Ditulis 3.30; diucapkan 'setengah empat'."
+    },
+    {
+      "en": "Half an hour is 30 minutes: the long hand goes all the way round in 60 minutes, so half way round is 30 minutes.",
+      "id": "Setengah jam adalah 30 menit: jarum panjang berputar penuh dalam 60 menit, jadi setengah putaran adalah 30 menit."
+    },
+    {
+      "en": "One hour later: Maghrib is at about 6 o'clock in our story; dinner is one hour later, at 7 o'clock. Move the long hand once round and the short hand goes from 6 to 7.",
+      "id": "Satu jam kemudian: dalam cerita kita Maghrib sekitar pukul 6; makan malam satu jam kemudian, pukul 7. Putar jarum panjang satu kali dan jarum pendek bergerak dari 6 ke 7."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Parent says a time; child sets the paper-plate clock. Then swap roles.",
+      "id": "Orang tua menyebut waktu; anak mengatur jam piring kertas. Lalu bertukar peran."
+    },
+    {
+      "en": "Look at the wall clock at three moments in the day and say the nearest o'clock or half past time.",
+      "id": "Lihat jam dinding pada tiga saat dalam sehari dan sebutkan waktu tepat atau setengah jam yang terdekat."
+    },
+    {
+      "en": "Make a picture timetable for Saturday with four activities and their times.",
+      "id": "Buat jadwal bergambar untuk hari Sabtu dengan empat kegiatan dan waktunya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "The short hand points at 3 and the long hand points at 12. What time is it?",
+        "id": "Jarum pendek menunjuk 3 dan jarum panjang menunjuk 12. Pukul berapa?"
+      },
+      "choices": {
+        "en": [
+          "3 o'clock",
+          "12 o'clock",
+          "Half past 3"
+        ],
+        "id": [
+          "Pukul 3",
+          "Pukul 12",
+          "Pukul setengah 4"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The short hand gives the hour (3) and the long hand on 12 means o'clock.",
+        "id": "Jarum pendek menunjukkan jam (3) dan jarum panjang di 12 berarti tepat."
+      },
+      "check": {
+        "expression": "3",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "SWAPS_HANDS",
+        "2": "HALF_PAST_CONFUSION"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "How many minutes are in half an hour?",
+        "id": "Berapa menit dalam setengah jam?"
+      },
+      "choices": {
+        "en": [
+          "30 minutes",
+          "50 minutes",
+          "12 minutes"
+        ],
+        "id": [
+          "30 menit",
+          "50 menit",
+          "12 menit"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "An hour is 60 minutes. Half of 60 is 30.",
+        "id": "Satu jam adalah 60 menit. Setengah dari 60 adalah 30."
+      },
+      "check": {
+        "expression": "60 / 2",
+        "result": "30"
+      },
+      "distractorMisconceptions": {
+        "1": "HALF_IS_FIFTY",
+        "2": "COUNTS_CLOCK_NUMBERS"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "At half past 7, where does the short hand point?",
+        "id": "Pada pukul 7.30 (setengah delapan), ke mana jarum pendek menunjuk?"
+      },
+      "choices": {
+        "en": [
+          "Between 7 and 8",
+          "Exactly on 7",
+          "Between 6 and 7"
+        ],
+        "id": [
+          "Di antara 7 dan 8",
+          "Tepat di 7",
+          "Di antara 6 dan 7"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "After 7 o'clock the short hand moves towards 8; at half past it is half way between 7 and 8.",
+        "id": "Setelah pukul 7 jarum pendek bergerak menuju 8; pada pukul 7.30 ia berada di tengah antara 7 dan 8."
+      },
+      "check": {
+        "expression": "7",
+        "result": "7"
+      },
+      "distractorMisconceptions": {
+        "1": "HOUR_HAND_STAYS",
+        "2": "HALF_TO_HOUR"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "In a story, Maghrib is at 6 o'clock and dinner is one hour later. What time is dinner?",
+        "id": "Dalam sebuah cerita, Maghrib pukul 6 dan makan malam satu jam kemudian. Pukul berapa makan malam?"
+      },
+      "choices": {
+        "en": [
+          "7 o'clock",
+          "5 o'clock",
+          "6 o'clock"
+        ],
+        "id": [
+          "Pukul 7",
+          "Pukul 5",
+          "Pukul 6"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "One hour after 6 o'clock is 7 o'clock: 6 + 1 = 7.",
+        "id": "Satu jam setelah pukul 6 adalah pukul 7: 6 + 1 = 7."
+      },
+      "check": {
+        "expression": "6 + 1",
+        "result": "7"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_BACK",
+        "2": "HOUR_HAND_STAYS"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "The long hand points at 6 and the short hand is between 9 and 10. What time is it?",
+        "id": "Jarum panjang menunjuk 6 dan jarum pendek di antara 9 dan 10. Pukul berapa?"
+      },
+      "choices": {
+        "en": [
+          "9:30, half past 9",
+          "10:30, half past 10",
+          "6 o'clock"
+        ],
+        "id": [
+          "9.30, setengah sepuluh",
+          "10.30, setengah sebelas",
+          "Pukul 6"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The short hand has passed 9 but not reached 10, so the hour is still 9; the long hand on 6 means half past.",
+        "id": "Jarum pendek sudah lewat 9 tetapi belum sampai 10, jadi jamnya masih 9; jarum panjang di 6 berarti sudah 30 menit lewat pukul 9."
+      },
+      "check": {
+        "expression": "9",
+        "result": "9"
+      },
+      "distractorMisconceptions": {
+        "1": "READS_NEXT_HOUR",
+        "2": "SWAPS_HANDS"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SWAPS_HANDS",
+      "description": {
+        "en": "Reads the long hand as the hour.",
+        "id": "Membaca jarum panjang sebagai jam."
+      },
+      "remediation": {
+        "en": "Colour the short hand red and say 'short and slow tells the hour'; practise with the long hand removed.",
+        "id": "Warnai jarum pendek merah dan katakan 'pendek dan lambat menunjukkan jam'; berlatih dengan jarum panjang dilepas."
+      }
+    },
+    {
+      "code": "HALF_PAST_CONFUSION",
+      "description": {
+        "en": "Mixes up o'clock and half-past positions of the long hand.",
+        "id": "Tertukar posisi jarum panjang untuk tepat jam dan setengah jam."
+      },
+      "remediation": {
+        "en": "Fold the plate: the long hand at the bottom fold line (6) means half the hour has gone.",
+        "id": "Lipat piringnya: jarum panjang di garis lipatan bawah (6) berarti setengah jam sudah berlalu."
+      }
+    },
+    {
+      "code": "HALF_IS_FIFTY",
+      "description": {
+        "en": "Thinks half an hour is 50 minutes because numbers are often split into tens.",
+        "id": "Mengira setengah jam adalah 50 menit karena bilangan sering dibagi per puluhan."
+      },
+      "remediation": {
+        "en": "Count round the clock in fives to 60, then stop at the half way point: 30.",
+        "id": "Hitung keliling jam lompat lima sampai 60, lalu berhenti di tengah: 30."
+      }
+    },
+    {
+      "code": "COUNTS_CLOCK_NUMBERS",
+      "description": {
+        "en": "Uses the 12 numbers on the clock as minutes.",
+        "id": "Memakai 12 angka di jam sebagai menit."
+      },
+      "remediation": {
+        "en": "Write the minutes 5, 10, 15 ... in small numbers outside each clock number.",
+        "id": "Tulis menit 5, 10, 15 ... dengan angka kecil di luar setiap angka jam."
+      }
+    },
+    {
+      "code": "HOUR_HAND_STAYS",
+      "description": {
+        "en": "Thinks the short hand stays exactly on the number for the whole hour.",
+        "id": "Mengira jarum pendek tetap tepat di angka selama satu jam penuh."
+      },
+      "remediation": {
+        "en": "Watch a real clock for a few minutes, or turn the long hand slowly on a geared toy clock, and notice the short hand creep.",
+        "id": "Amati jam sungguhan beberapa menit, atau putar pelan jarum panjang pada jam mainan bergigi, dan perhatikan jarum pendek bergeser."
+      }
+    },
+    {
+      "code": "COUNTS_BACK",
+      "description": {
+        "en": "Moves backwards in time when asked for later.",
+        "id": "Mundur waktunya padahal ditanya kemudian."
+      },
+      "remediation": {
+        "en": "Turn the long hand forward one full turn on the paper clock and read the new hour.",
+        "id": "Putar jarum panjang ke depan satu putaran penuh di jam kertas dan baca jam yang baru."
+      }
+    },
+    {
+      "code": "READS_NEXT_HOUR",
+      "description": {
+        "en": "Names the hour the short hand is moving towards; this can be confused with the Indonesian 'setengah sepuluh' for 9:30.",
+        "id": "Menyebut jam yang dituju jarum pendek; ini bisa tertukar dengan ucapan 'setengah sepuluh' untuk 9.30."
+      },
+      "remediation": {
+        "en": "Say both forms: 'nine thirty' is 'setengah sepuluh', half way to ten, and the hour written is still 9.",
+        "id": "Ucapkan kedua bentuk: 'sembilan lewat tiga puluh' sama dengan 'setengah sepuluh', setengah jalan ke sepuluh, dan jam yang ditulis tetap 9."
+      }
+    },
+    {
+      "code": "HALF_TO_HOUR",
+      "description": {
+        "en": "Reads 'half past 7' as 'half way to 7', placing the short hand between 6 and 7.",
+        "id": "Membaca 'pukul 7.30' sebagai 'setengah jalan ke 7', sehingga meletakkan jarum pendek di antara 6 dan 7."
+      },
+      "remediation": {
+        "en": "Start at 7 o'clock on the paper clock and turn the long hand half way round; watch the short hand move forward, past 7.",
+        "id": "Mulai dari pukul 7 di jam kertas dan putar jarum panjang setengah putaran; lihat jarum pendek bergerak maju, melewati 7."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Notice the times on the family's daily schedule (school, mengaji, bedtime) and set the paper clock for each.",
+      "id": "Perhatikan waktu di jadwal harian keluarga (sekolah, mengaji, tidur) dan atur jam kertas untuk masing-masing."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use a clock with large, high-contrast numbers; let the child trace the hands with a finger while saying the time.",
+      "id": "Pakai jam dengan angka besar dan kontras; biarkan anak menelusuri jarum dengan jari sambil mengucapkan waktunya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": true,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use the pin-free fastener by default. If you use a split pin (paper fastener) instead, it is small with pointed legs: the adult inserts it, folds the legs flat and keeps spare split pins away from young children.",
+        "id": "Pakai pengikat tanpa paku sebagai pilihan utama. Jika memakai paku keling kertas (split pin), benda itu kecil dan kakinya runcing: orang dewasa yang memasangnya, melipat kakinya rata, dan menjauhkan cadangannya dari anak kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child reads and sets four o'clock and half-past times correctly, naming the hour hand first, on two different days.",
+      "id": "Dikuasai jika anak membaca dan mengatur empat waktu tepat dan setengah jam dengan benar, menyebut jarum jam dulu, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

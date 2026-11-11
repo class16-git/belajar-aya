@@ -1,0 +1,261 @@
+{
+  "id": "reading-age4_5-robot-rafi-follows-steps",
+  "version": "1.0.0",
+  "level": "age4_5",
+  "readingLevel": "pre_reader",
+  "genre": "oral_story",
+  "mode": "parent_read",
+  "title": {
+    "en": "Robot Rafi follows the steps",
+    "id": "Robot Rafi mengikuti langkah"
+  },
+  "text": {
+    "en": [
+      "Rafi is a toy robot. He does exactly what you tell him, one step at a time. Beep!",
+      "Nia wants Rafi to fetch her ball. She says, 'Forward, forward, forward.' Rafi rolls three steps. Beep, beep, beep!",
+      "Oh dear. Rafi bumps into the sofa! The ball is to the left. Nia forgot a step.",
+      "Nia thinks hard. 'Rafi, go back one step. Turn left. Forward, forward.'",
+      "Rafi rolls, turns and rolls. Bump! He touches the ball. 'Ball found!' says Rafi.",
+      "Nia claps. 'The steps have to be in the right order, and I must not miss any out!'"
+    ],
+    "id": [
+      "Rafi adalah robot mainan. Ia melakukan persis apa yang diperintahkan, satu langkah demi satu langkah. Bip!",
+      "Nia ingin Rafi mengambil bolanya. Ia berkata, 'Maju, maju, maju.' Rafi bergerak tiga langkah. Bip, bip, bip!",
+      "Waduh. Rafi menabrak sofa! Bolanya ada di sebelah kiri. Nia lupa satu langkah.",
+      "Nia berpikir keras. 'Rafi, mundur satu langkah. Belok kiri. Maju, maju.'",
+      "Rafi bergerak, berbelok, dan bergerak lagi. Duk! Ia menyentuh bola. 'Bola ditemukan!' kata Rafi.",
+      "Nia bertepuk tangan. 'Langkahnya harus urut, dan aku tidak boleh melewatkan satu pun!'"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Use a flat, beepy robot voice for Rafi and move your arms stiffly.",
+      "id": "Gunakan suara robot yang datar dan gerakkan lengan dengan kaku."
+    },
+    {
+      "en": "Take three stiff robot steps across the room as you count.",
+      "id": "Ambil tiga langkah robot yang kaku di ruangan sambil menghitung."
+    },
+    {
+      "en": "Gently bump into a cushion and say 'oh dear' with a puzzled face.",
+      "id": "Tabrak bantal pelan dan ucapkan 'waduh' dengan wajah bingung."
+    },
+    {
+      "en": "Ask your child, 'Which way is left?' and point together.",
+      "id": "Tanyakan kepada anak, 'Kiri yang mana?' lalu tunjuk bersama."
+    },
+    {
+      "en": "Act out each step slowly: back, turn, forward, forward.",
+      "id": "Peragakan setiap langkah pelan-pelan: mundur, belok, maju, maju."
+    },
+    {
+      "en": "Clap together and say the big idea: right order, no missing steps.",
+      "id": "Bertepuk tangan bersama dan ucapkan pesannya: urut dan tidak ada langkah yang terlewat."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a smiling toy robot",
+      "id": "Kartu 1: robot mainan tersenyum"
+    },
+    {
+      "en": "Card 2: the robot rolling forward three steps",
+      "id": "Kartu 2: robot maju tiga langkah"
+    },
+    {
+      "en": "Card 3: the robot bumping the sofa",
+      "id": "Kartu 3: robot menabrak sofa"
+    },
+    {
+      "en": "Card 4: arrows showing back, left, forward, forward",
+      "id": "Kartu 4: panah mundur, kiri, maju, maju"
+    },
+    {
+      "en": "Card 5: the robot touching the ball",
+      "id": "Kartu 5: robot menyentuh bola"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Understands that a robot follows instructions one at a time, in order.",
+      "id": "Memahami bahwa robot mengikuti perintah satu per satu secara urut."
+    },
+    {
+      "en": "Fixes a set of instructions when something goes wrong.",
+      "id": "Memperbaiki urutan perintah ketika ada yang salah."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "forward",
+        "id": "maju"
+      },
+      "meaning": {
+        "en": "moving towards the front",
+        "id": "bergerak ke depan"
+      }
+    },
+    {
+      "word": {
+        "en": "instructions",
+        "id": "perintah"
+      },
+      "meaning": {
+        "en": "steps that tell someone what to do",
+        "id": "langkah-langkah yang memberi tahu apa yang harus dilakukan"
+      }
+    },
+    {
+      "word": {
+        "en": "order",
+        "id": "urutan"
+      },
+      "meaning": {
+        "en": "which step comes first, next and last",
+        "id": "langkah mana yang pertama, berikutnya, dan terakhir"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Rafi bump into?",
+        "id": "Rafi menabrak apa?"
+      },
+      "choices": {
+        "en": [
+          "the sofa",
+          "the ball",
+          "Nia"
+        ],
+        "id": [
+          "sofa",
+          "bola",
+          "Nia"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Rafi miss the ball the first time?",
+        "id": "Mengapa Rafi tidak sampai ke bola pada percobaan pertama?"
+      },
+      "choices": {
+        "en": [
+          "Nia did not tell him to turn left",
+          "Rafi was sleepy",
+          "the ball rolled away"
+        ],
+        "id": [
+          "Nia tidak menyuruhnya belok kiri",
+          "Rafi mengantuk",
+          "bolanya menggelinding pergi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "In Nia's new steps, what did Rafi do before turning left?",
+        "id": "Dalam langkah baru Nia, apa yang Rafi lakukan sebelum belok kiri?"
+      },
+      "choices": {
+        "en": [
+          "went back one step",
+          "touched the ball",
+          "went forward three times"
+        ],
+        "id": [
+          "mundur satu langkah",
+          "menyentuh bola",
+          "maju tiga kali"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "How many 'forward' steps did Rafi take in the first try?",
+        "id": "Berapa langkah 'maju' yang Rafi ambil di percobaan pertama?"
+      },
+      "choices": {
+        "en": [
+          "3 steps",
+          "2 steps",
+          "1 step"
+        ],
+        "id": [
+          "3 langkah",
+          "2 langkah",
+          "1 langkah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1,
+      "check": {
+        "expression": "1 + 1 + 1",
+        "result": "3"
+      }
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "robotics_computing",
+      "connection": {
+        "en": "Robots and computers follow instructions exactly in order; fixing a wrong step is called debugging.",
+        "id": "Robot dan komputer mengikuti perintah persis sesuai urutan; memperbaiki langkah yang salah disebut debugging."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What steps do you follow to put on your shoes?",
+      "id": "Langkah apa yang kamu ikuti untuk memakai sepatu?"
+    },
+    {
+      "en": "What would happen if Nia said 'turn left' at the very start?",
+      "id": "Apa yang terjadi jika Nia berkata 'belok kiri' paling awal?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Play 'Robot Rafi': your child is the robot and you give one step at a time to reach a soft toy across the room. Then swap so your child gives the steps.",
+    "id": "Main 'Robot Rafi': anak menjadi robot dan kamu memberi perintah satu per satu untuk mencapai boneka di seberang ruangan. Lalu bertukar peran agar anak yang memberi perintah."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Clear the floor of toys and sharp corners before playing the robot game.",
+      "id": "Bersihkan lantai dari mainan dan sudut tajam sebelum bermain robot."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

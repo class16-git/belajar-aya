@@ -23,7 +23,8 @@ test('pilot passages render with questions, no answer key, no overflow and no ax
     const html = await page.content();
     expect(html, id).not.toMatch(/"answer"|evidenceParagraph/);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), `${id} overflow`).toBe(true);
-    const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+    await page.waitForFunction(() => document.title.trim().length > 0); // Next streams metadata; a missing title still fails here
+  const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
     expect(res.violations.map((v) => v.id), `${id} axe`).toEqual([]);
   }
   await page.screenshot({ path: join(OUT, 'mobile-110-pilot-g6-passage.png'), fullPage: true });

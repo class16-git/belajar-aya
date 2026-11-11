@@ -1,0 +1,358 @@
+{
+  "id": "unit-k-literacy-high-frequency-words",
+  "version": "1.0.1",
+  "level": "k",
+  "framework": "literacy",
+  "strand": "phonics",
+  "title": {
+    "en": "Words we see every day",
+    "id": "Kata yang sering kita temui"
+  },
+  "prerequisites": [
+    "unit-k-literacy-blending-to-read-words"
+  ],
+  "objective": {
+    "en": "Read eight high-frequency words on sight and use them to read and build short sentences.",
+    "id": "Membaca delapan kata yang sering muncul secara langsung dan memakainya untuk membaca dan menyusun kalimat pendek."
+  },
+  "rationale": {
+    "en": "A small set of words makes up a large share of every simple text, so reading them instantly frees attention for meaning. In English several of these words have a tricky part that does not follow the sounds a child knows (the e in \"the\", the ai in \"said\"), so the English version sounds out the regular part and learns only the tricky part \"by heart\". Indonesian high-frequency words (ini, itu, aku, ada, mau, dan, di, ke) are fully decodable, so the Indonesian version reads them by syllable first and then practises speed and meaning, especially di and ke as words that tell where.",
+    "id": "Sekelompok kecil kata menyusun sebagian besar teks sederhana, jadi membacanya dengan cepat membebaskan perhatian untuk makna. Dalam bahasa Inggris beberapa kata ini punya bagian sulit yang tidak mengikuti bunyi yang dikenal anak (e pada \"the\", ai pada \"said\"), jadi versi bahasa Inggris membunyikan bagian yang teratur dan hanya menghafal bagian sulitnya. Kata yang sering muncul dalam bahasa Indonesia (ini, itu, aku, ada, mau, dan, di, ke) seluruhnya bisa dieja, jadi versi Indonesia membacanya per suku kata dulu, lalu melatih kecepatan dan makna, terutama di dan ke sebagai kata penunjuk tempat."
+  },
+  "outcomes": [
+    {
+      "en": "Reads the eight words instantly in any order.",
+      "id": "Membaca kedelapan kata dengan cepat dalam urutan apa pun."
+    },
+    {
+      "en": "Reads and builds a three- or four-word sentence using the words and one picture word.",
+      "id": "Membaca dan menyusun kalimat tiga atau empat kata memakai kata-kata itu dan satu kata bergambar."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can read my eight word cards quickly.",
+      "id": "Aku bisa membaca delapan kartu kataku dengan cepat."
+    },
+    {
+      "en": "I can make a sentence with my word cards.",
+      "id": "Aku bisa membuat kalimat dengan kartu kataku."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "English set: I, a, the, is, my, see, to, said. Mark the tricky part of each word with a small heart (the th and e in the, the s in is, the y in my, the ai in said, the o in to).",
+      "id": "Set bahasa Indonesia: ini, itu, aku, ada, mau, dan, di, ke. Semua bisa dieja, jadi tidak perlu dihafal sebagai gambar; latih sampai terbaca dalam sekejap."
+    },
+    {
+      "en": "Introduce two new words a day and keep the earlier ones in the pile.",
+      "id": "Kenalkan dua kata baru setiap hari dan tetap simpan kata sebelumnya di tumpukan."
+    },
+    {
+      "en": "Keep it calm: there is no timer and no scoring; praise effort and checking.",
+      "id": "Jaga suasana tenang: tanpa pengatur waktu dan tanpa skor; puji usaha dan kebiasaan memeriksa."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Read the word. If it is tricky, look for the heart part.",
+      "id": "Baca katanya. Kalau ragu, baca per suku kata dulu."
+    },
+    {
+      "en": "Put the cards in order to make a sentence. Read it with your finger.",
+      "id": "Susun kartu menjadi kalimat. Baca sambil menunjuk dengan jari."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Eight word cards, written large",
+      "id": "Delapan kartu kata, ditulis besar"
+    },
+    {
+      "en": "Four picture-word cards (cat, ball, mum, home; Indonesian: kucing, bola, ibu, rumah)",
+      "id": "Empat kartu kata bergambar (kucing, bola, ibu, rumah)"
+    },
+    {
+      "en": "A cloth to hide cards under",
+      "id": "Sehelai kain untuk menyembunyikan kartu"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write the word cards and picture cards. Draw a small heart over the tricky parts on the English cards.",
+      "id": "Tulis kartu kata dan kartu bergambar. Untuk versi bahasa Inggris, gambar hati kecil di atas bagian yang sulit."
+    },
+    {
+      "en": "Write two model sentences on a strip: \"I see the cat.\" \"My ball is at home.\" Indonesian: \"Ibu ada di rumah.\" \"Aku mau ke rumah.\"",
+      "id": "Tulis dua kalimat contoh di secarik kertas: \"Ibu ada di rumah.\" \"Aku mau ke rumah.\" Versi Inggris: \"I see the cat.\" \"My ball is at home.\""
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "English: \"said\". Sound s and d: they are regular. The ai in the middle says /e/ here; that is the heart part to remember. Read it three times, then use it: \"Mum said hello.\"",
+      "id": "Bahasa Indonesia: \"ada\". Baca per suku: a-da, ada. Lalu langsung dalam frasa: \"ada kucing\". Ulangi tiga kali sampai terbaca dalam sekejap tanpa dieja."
+    },
+    {
+      "en": "Building: lay out I, see, the, cat. Read \"I see the cat.\" Swap cat for ball: \"I see the ball.\" Indonesian: lay out Ibu, ada, di, rumah: \"Ibu ada di rumah.\" Then build: \"Aku mau ke rumah.\"",
+      "id": "Menyusun: letakkan Ibu, ada, di, rumah. Baca \"Ibu ada di rumah.\" Ganti menjadi \"Aku mau ke rumah.\" Bicarakan bedanya: di berarti berada di tempat, ke berarti pergi menuju tempat."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Hide and read: hide a card under the cloth, lift it quickly and your child reads it.",
+      "id": "Sembunyi dan baca: sembunyikan kartu di bawah kain, buka dengan cepat dan anak membacanya."
+    },
+    {
+      "en": "Sentence builder: your child builds a sentence from the cards and reads it to a toy.",
+      "id": "Penyusun kalimat: anak menyusun kalimat dari kartu dan membacakannya untuk boneka."
+    },
+    {
+      "en": "Word spotting: find the words in a picture book you already own and point to each one.",
+      "id": "Mencari kata: temukan kata-kata itu di buku cerita yang sudah dimiliki dan tunjuk masing-masing."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which card says \"said\"?",
+        "id": "Kartu mana yang bertuliskan \"ada\"?"
+      },
+      "choices": {
+        "en": [
+          "said",
+          "sad",
+          "sand"
+        ],
+        "id": [
+          "ada",
+          "apa",
+          "aku"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Said has the tricky ai in the middle; sad and sand only start the same way.",
+        "id": "A-da dibaca ada. Apa dan aku hanya sama huruf awalnya."
+      },
+      "distractorMisconceptions": {
+        "1": "FIRST_LETTER_GUESS",
+        "2": "FIRST_LETTER_GUESS"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which word completes the sentence: \"I ___ the cat.\"",
+        "id": "Kata mana yang melengkapi kalimat: \"Aku ___ ke pasar.\""
+      },
+      "choices": {
+        "en": [
+          "see",
+          "the",
+          "my"
+        ],
+        "id": [
+          "mau",
+          "di",
+          "itu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "\"I see the cat\" makes sense; the and my do not fit after I here.",
+        "id": "\"Aku mau ke pasar\" bermakna; \"aku di ke pasar\" dan \"aku itu ke pasar\" tidak."
+      },
+      "distractorMisconceptions": {
+        "1": "WORD_WITHOUT_MEANING",
+        "2": "WORD_WITHOUT_MEANING"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Read: \"My ball is at home.\" Where is the ball?",
+        "id": "Baca: \"Bola ada di rumah.\" Di mana bolanya?"
+      },
+      "choices": {
+        "en": [
+          "At home",
+          "With the cat",
+          "At school"
+        ],
+        "id": [
+          "Di rumah",
+          "Pada kucing",
+          "Di sekolah"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The sentence says the ball is at home.",
+        "id": "Kalimatnya mengatakan bola ada di rumah."
+      },
+      "distractorMisconceptions": {
+        "1": "GUESSES_FROM_PICTURE_WORD",
+        "2": "GUESSES_FROM_PICTURE_WORD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Which sentence is in the right order?",
+        "id": "Kalimat mana yang urutannya benar?"
+      },
+      "choices": {
+        "en": [
+          "I see the cat.",
+          "I the cat see.",
+          "See cat the I."
+        ],
+        "id": [
+          "Aku mau ke rumah.",
+          "Aku ke rumah mau.",
+          "Ke aku rumah mau."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Who (I), then doing (see), then what (the cat).",
+        "id": "Siapa (aku), lalu mau, lalu ke tempat yang dituju (ke rumah)."
+      },
+      "distractorMisconceptions": {
+        "1": "WORD_ORDER",
+        "2": "WORD_ORDER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SOUNDS_OUT_TRICKY_PART",
+      "description": {
+        "en": "Sounds out the irregular part of an English word as if it were regular, or writes it that way.",
+        "id": "Membunyikan atau menulis bagian tidak teratur kata bahasa Inggris seolah teratur (khusus versi bahasa Inggris)."
+      },
+      "remediation": {
+        "en": "Trace the heart part with a finger while saying the whole word, then write the word in the air three times.",
+        "id": "Telusuri bagian bertanda hati dengan jari sambil mengucapkan seluruh kata, lalu tulis kata itu di udara tiga kali."
+      }
+    },
+    {
+      "code": "WORD_ORDER",
+      "description": {
+        "en": "Puts the right words in an unusual order.",
+        "id": "Menyusun kata yang benar dalam urutan yang tidak wajar."
+      },
+      "remediation": {
+        "en": "Read the model sentence aloud, then build it with cards, who card first, and swap only one word at a time.",
+        "id": "Baca kalimat contoh keras-keras, lalu susun dengan kartu, kartu siapa di depan, dan tukar hanya satu kata setiap kali."
+      }
+    },
+    {
+      "code": "FIRST_LETTER_GUESS",
+      "description": {
+        "en": "Reads the first letter and guesses a word that looks similar.",
+        "id": "Membaca huruf pertama lalu menebak kata yang mirip."
+      },
+      "remediation": {
+        "en": "Run a finger under the whole word, left to right, before saying it; compare look-alike cards side by side.",
+        "id": "Gerakkan jari di bawah seluruh kata dari kiri ke kanan sebelum mengucapkannya; bandingkan kartu yang mirip berdampingan."
+      }
+    },
+    {
+      "code": "WORD_WITHOUT_MEANING",
+      "description": {
+        "en": "Reads words correctly but does not check whether the sentence makes sense.",
+        "id": "Membaca kata dengan benar tetapi tidak memeriksa apakah kalimatnya bermakna."
+      },
+      "remediation": {
+        "en": "Act each sentence out with toys; if you cannot act it out, it does not make sense yet.",
+        "id": "Peragakan setiap kalimat dengan mainan; kalau tidak bisa diperagakan, kalimatnya belum bermakna."
+      }
+    },
+    {
+      "code": "GUESSES_FROM_PICTURE_WORD",
+      "description": {
+        "en": "Answers from the picture cards seen earlier rather than from the sentence.",
+        "id": "Menjawab berdasarkan kartu bergambar yang dilihat sebelumnya, bukan dari kalimat."
+      },
+      "remediation": {
+        "en": "Put the sentence strip alone on the table and point to the word that answers where.",
+        "id": "Taruh secarik kalimat sendirian di meja dan tunjuk kata yang menjawab di mana."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Write a two-sentence note to a family member using the word cards, such as \"I see you. My cat is at home.\" or \"Aku mau ke rumah Nenek.\"",
+      "id": "Tulis catatan dua kalimat untuk anggota keluarga memakai kartu kata, misalnya \"Aku mau ke rumah Nenek. Ibu ada di rumah.\""
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For children who find fast recall stressful, play hide-and-read slowly; speed comes with familiarity, not pressure.",
+      "id": "Untuk anak yang tertekan dengan mengingat cepat, mainkan sembunyi-dan-baca dengan pelan; kecepatan datang dari keakraban, bukan tekanan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "No physical hazards; keep sessions short and stop if your child becomes frustrated.",
+        "id": "Tidak ada bahaya fisik; buat sesi singkat dan berhenti jika anak mulai frustrasi."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 15
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      2,
+      7,
+      14,
+      30
+    ],
+    "masteryRule": {
+      "en": "Secure when your child reads all eight words in mixed order and reads two new sentences using them, on two different days.",
+      "id": "Dikuasai jika anak membaca kedelapan kata dalam urutan acak dan membaca dua kalimat baru yang memakainya, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "single-answer-check",
+      "misconception-map",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-literacy",
+    "createdAt": "2026-11-10"
+  }
+}

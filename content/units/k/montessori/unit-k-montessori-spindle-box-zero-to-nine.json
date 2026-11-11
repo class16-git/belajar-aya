@@ -1,0 +1,437 @@
+{
+  "id": "unit-k-montessori-spindle-box-zero-to-nine",
+  "version": "1.0.1",
+  "level": "k",
+  "framework": "montessori",
+  "strand": "mathematics",
+  "title": {
+    "en": "The spindle box: counting 0 to 9, and zero",
+    "id": "Kotak stik: menghitung 0 sampai 9, dan nol"
+  },
+  "prerequisites": [
+    "unit-age4_5-montessori-number-rods-one-to-ten"
+  ],
+  "objective": {
+    "en": "Put the right number of loose sticks into compartments labelled 0 to 9, bundling each group, and explain that zero means none.",
+    "id": "Memasukkan jumlah stik lepas yang tepat ke sekat berlabel 0 sampai 9, mengikat setiap kelompok, dan menjelaskan bahwa nol berarti tidak ada."
+  },
+  "rationale": {
+    "en": "After counting fixed rods, the child now counts separate objects to match a written numeral. The empty zero compartment gives zero a meaning, and the box checks itself: 45 sticks are used exactly when every number is right.",
+    "id": "Setelah menghitung batang tetap, anak kini menghitung benda terpisah untuk mencocokkan angka tertulis. Sekat nol yang kosong memberi makna pada nol, dan kotak ini mengecek dirinya sendiri: 45 stik habis tepat jika semua bilangan benar."
+  },
+  "outcomes": [
+    {
+      "en": "Counts out 0 to 9 loose sticks to match each numeral.",
+      "id": "Menghitung 0 sampai 9 stik lepas sesuai setiap angka."
+    },
+    {
+      "en": "Explains that the 0 compartment stays empty because zero means none.",
+      "id": "Menjelaskan bahwa sekat 0 tetap kosong karena nol berarti tidak ada."
+    },
+    {
+      "en": "Uses the 'all sticks used' check to find a counting mistake.",
+      "id": "Memakai pengecekan 'semua stik habis' untuk menemukan kesalahan hitung."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "Every compartment has the right number of sticks and none are left over.",
+      "id": "Setiap sekat berisi jumlah stik yang benar dan tidak ada sisa."
+    },
+    {
+      "en": "The child says, 'Zero is nothing — there are no sticks here.'",
+      "id": "Anak berkata, 'Nol itu tidak ada — di sini tidak ada stik.'"
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Before starting, show the full basket and say: 'If we count well, these sticks will be used up exactly.'",
+      "id": "Sebelum mulai, tunjukkan keranjang penuh dan katakan: 'Kalau kita menghitung dengan baik, stik ini akan habis tepat.'"
+    },
+    {
+      "en": "Count sticks into the hand first, then wrap them with a hair tie or paper band, then place the bundle in the box: count, bundle, place.",
+      "id": "Hitung stik ke tangan dulu, lalu ikat dengan karet rambut atau pita kertas, lalu taruh ikatan di sekat: hitung, ikat, taruh."
+    },
+    {
+      "en": "If sticks are left over or run out, do not say which one is wrong; ask your child to re-count each compartment.",
+      "id": "Jika stik tersisa atau kurang, jangan beri tahu mana yang salah; minta anak menghitung ulang setiap sekat."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Read the number on the box, count that many sticks into your hand, and tie them together.",
+      "id": "Baca angka di sekat, hitung stik sebanyak itu ke tanganmu, lalu ikat."
+    },
+    {
+      "en": "Leave the zero box empty. Zero means none.",
+      "id": "Biarkan sekat nol kosong. Nol berarti tidak ada."
+    },
+    {
+      "en": "At the end, look in the basket. Is it empty? Then your counting is right.",
+      "id": "Di akhir, lihat keranjang. Sudah kosong? Berarti hitunganmu benar."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Count loose sticks into compartments 0 to 9 and bundle each group.",
+        "id": "Menghitung stik lepas ke sekat 0 sampai 9 dan mengikat setiap kelompok."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the matching number of sticks next to each numeral 0 to 9.",
+        "id": "Menggambar stik sejumlah angka di samping setiap angka 0 sampai 9."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Read and write numerals 0 to 9 and say what zero means.",
+        "id": "Membaca dan menulis angka 0 sampai 9 dan menyebut arti nol."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "45 ice-cream sticks or wooden coffee stirrers",
+      "id": "45 stik es krim atau pengaduk kopi kayu"
+    },
+    {
+      "en": "Ten small cups or an egg carton cut to ten sections by the adult, labelled 0 to 9 in large numerals",
+      "id": "Sepuluh gelas kecil atau wadah telur yang dipotong orang dewasa menjadi sepuluh bagian, diberi label 0 sampai 9 dengan angka besar"
+    },
+    {
+      "en": "Nine soft hair ties or strips of paper with tape for bundling",
+      "id": "Sembilan karet rambut lembut atau potongan kertas dan selotip untuk mengikat"
+    },
+    {
+      "en": "A basket for the sticks",
+      "id": "Keranjang untuk stik"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Count exactly 45 sticks into the basket (0 + 1 + 2 + ... + 9 = 45) and keep the set together.",
+      "id": "Hitung tepat 45 stik ke keranjang (0 + 1 + 2 + ... + 9 = 45) dan simpan dalam satu set."
+    },
+    {
+      "en": "Line the cups up left to right from 0 to 9.",
+      "id": "Jajarkan gelas dari kiri ke kanan mulai 0 sampai 9."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Point to 0: 'Zero. Zero means none. Nothing goes in here.' Show an empty hand.",
+      "id": "Tunjuk 0: 'Nol. Nol berarti tidak ada. Tidak ada yang masuk ke sini.' Tunjukkan tangan kosong."
+    },
+    {
+      "en": "Point to 1, take one stick: 'one'. Tie it and place it. Point to 2, count two into your hand, tie and place them.",
+      "id": "Tunjuk 1, ambil satu stik: 'satu'. Ikat dan taruh. Tunjuk 2, hitung dua stik ke tangan, ikat dan taruh."
+    },
+    {
+      "en": "Let your child continue to 9. At the end, tip the basket: 'Empty! Every stick has its place.' If not, re-count together from 1.",
+      "id": "Biarkan anak meneruskan sampai 9. Di akhir, miringkan keranjang: 'Kosong! Setiap stik punya tempatnya.' Jika belum, hitung ulang bersama dari 1."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Fill the whole box from 0 to 9 and use the empty basket as the check.",
+      "id": "Mengisi seluruh kotak dari 0 sampai 9 dan memakai keranjang kosong sebagai pengecekan."
+    },
+    {
+      "en": "Mixed order: the adult points to 6, then 2, then 9; the child fills only those.",
+      "id": "Urutan acak: orang dewasa menunjuk 6, lalu 2, lalu 9; anak mengisi hanya sekat itu."
+    },
+    {
+      "en": "Zero game: the adult asks 'Bring me zero spoons' and the child laughs and brings nothing.",
+      "id": "Permainan nol: orang dewasa meminta 'Bawakan nol sendok' dan anak tertawa lalu tidak membawa apa-apa."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Your child counts out a bundle for the 8 compartment. Which bundle is right?",
+        "id": "Anak menghitung satu ikatan untuk sekat 8. Ikatan mana yang benar?"
+      },
+      "choices": {
+        "en": [
+          "8 sticks",
+          "9 sticks",
+          "7 sticks"
+        ],
+        "id": [
+          "8 stik",
+          "9 stik",
+          "7 stik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The label tells how many: 8 sticks.",
+        "id": "Label menunjukkan jumlahnya: 8 stik."
+      },
+      "check": {
+        "expression": "8",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "SKIPS_ONE",
+        "2": "COUNTS_TWICE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "How many sticks go in the 0 compartment?",
+        "id": "Berapa stik masuk ke sekat 0?"
+      },
+      "choices": {
+        "en": [
+          "0 sticks — it stays empty",
+          "1 stick",
+          "10 sticks"
+        ],
+        "id": [
+          "0 stik — tetap kosong",
+          "1 stik",
+          "10 stik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Zero means none, so the compartment stays empty.",
+        "id": "Nol berarti tidak ada, jadi kotaknya tetap kosong."
+      },
+      "check": {
+        "expression": "0",
+        "result": "0"
+      },
+      "distractorMisconceptions": {
+        "1": "ZERO_IS_ONE",
+        "2": "ZERO_IS_TEN"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "The whole box is filled from 0 to 9. How many sticks are used in all?",
+        "id": "Seluruh kotak diisi dari 0 sampai 9. Berapa stik terpakai semuanya?"
+      },
+      "choices": {
+        "en": [
+          "45",
+          "10",
+          "55"
+        ],
+        "id": [
+          "45",
+          "10",
+          "55"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "0+1+2+3+4+5+6+7+8+9 = 45 (10 would be one stick in each, 55 would include a 10).",
+        "id": "0+1+2+3+4+5+6+7+8+9 = 45 (10 berarti satu stik di setiap sekat, 55 berarti ikut menghitung 10)."
+      },
+      "check": {
+        "expression": "0+1+2+3+4+5+6+7+8+9",
+        "result": "45"
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_PER_BOX",
+        "2": "INCLUDES_TEN"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "When the box is finished, 2 sticks are left in the basket. What does that tell us?",
+        "id": "Saat kotak selesai, ada 2 stik tersisa di keranjang. Apa artinya?"
+      },
+      "choices": {
+        "en": [
+          "Some compartment has too few sticks",
+          "The counting is right",
+          "We need more sticks"
+        ],
+        "id": [
+          "Ada kotak yang stiknya kurang",
+          "Hitungannya benar",
+          "Kita perlu stik tambahan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "All 45 sticks should be used; leftovers mean a compartment is short.",
+        "id": "Semua 45 stik harus terpakai; sisa berarti ada sekat yang kurang."
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_CONTROL",
+        "2": "IGNORES_CONTROL"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "COUNTS_TWICE",
+      "description": {
+        "en": "Counts a stick twice so the bundle has one too few.",
+        "id": "Menghitung satu stik dua kali sehingga ikatan kurang satu."
+      },
+      "remediation": {
+        "en": "Move each stick from one hand to the other as it is counted, so a counted stick cannot be counted again.",
+        "id": "Pindahkan setiap stik dari satu tangan ke tangan lain saat dihitung, agar stik yang sudah dihitung tidak terhitung lagi."
+      }
+    },
+    {
+      "code": "SKIPS_ONE",
+      "description": {
+        "en": "Skips a number word and puts one stick too many.",
+        "id": "Melewatkan satu kata bilangan sehingga stiknya kelebihan satu."
+      },
+      "remediation": {
+        "en": "Count with the number rods first, then lay the sticks along the matching rod to check.",
+        "id": "Hitung dengan batang bilangan dulu, lalu letakkan stik di sepanjang batang yang sesuai untuk mengecek."
+      }
+    },
+    {
+      "code": "ZERO_IS_ONE",
+      "description": {
+        "en": "Thinks zero is a number you must put something for.",
+        "id": "Mengira nol adalah bilangan yang harus diisi sesuatu."
+      },
+      "remediation": {
+        "en": "Use empty plates at lunch: 'How many crackers on this plate? Zero.' Then return to the box.",
+        "id": "Pakai piring kosong saat makan: 'Berapa kerupuk di piring ini? Nol.' Lalu kembali ke kotak."
+      }
+    },
+    {
+      "code": "ZERO_IS_TEN",
+      "description": {
+        "en": "Confuses the 0 in 10 with the number zero.",
+        "id": "Mengira 0 pada 10 sama dengan bilangan nol."
+      },
+      "remediation": {
+        "en": "Show 10 as 'one bundle and zero loose sticks' with the bundles from the box.",
+        "id": "Tunjukkan 10 sebagai 'satu ikatan dan nol stik lepas' dengan ikatan dari kotak."
+      }
+    },
+    {
+      "code": "ONE_PER_BOX",
+      "description": {
+        "en": "Thinks every compartment gets one stick.",
+        "id": "Mengira setiap sekat mendapat satu stik."
+      },
+      "remediation": {
+        "en": "Read each label aloud before filling it and match it to the number rod of the same number.",
+        "id": "Bacakan setiap label sebelum diisi dan cocokkan dengan batang bilangan yang sama."
+      }
+    },
+    {
+      "code": "INCLUDES_TEN",
+      "description": {
+        "en": "Adds a ten that is not in the box.",
+        "id": "Menambahkan sepuluh yang tidak ada di kotak."
+      },
+      "remediation": {
+        "en": "Point along the labels and show the last one is 9.",
+        "id": "Tunjuk sepanjang label dan perlihatkan bahwa yang terakhir 9."
+      }
+    },
+    {
+      "code": "IGNORES_CONTROL",
+      "description": {
+        "en": "Does not use the leftover sticks as a sign of a mistake.",
+        "id": "Tidak memakai sisa stik sebagai tanda kesalahan."
+      },
+      "remediation": {
+        "en": "Do the box once together with one deliberate mistake and find it by re-counting.",
+        "id": "Isi kotak bersama sekali dengan satu kesalahan yang disengaja, lalu temukan dengan menghitung ulang."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Write the numerals 0 to 9 on paper and draw the right number of sticks beside each.",
+      "id": "Tulis angka 0 sampai 9 di kertas dan gambar stik sejumlah itu di sampingnya."
+    },
+    {
+      "en": "Use the bundles to show 10: nine sticks plus one more make a new bundle of ten.",
+      "id": "Pakai ikatan untuk menunjukkan 10: sembilan stik ditambah satu menjadi ikatan sepuluh yang baru."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Larger craft sticks are easier to pick up for children with fine-motor difficulties.",
+      "id": "Stik kerajinan yang lebih besar lebih mudah diambil anak dengan kesulitan motorik halus."
+    },
+    {
+      "en": "Add raised dots to each label for a child who reads by touch.",
+      "id": "Tambahkan titik timbul pada setiap label untuk anak yang membaca dengan meraba."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult cuts the egg carton; check sticks for splinters and keep hair ties away from younger siblings under 4.",
+        "id": "Orang dewasa yang memotong wadah telur; periksa serpihan pada stik dan jauhkan karet rambut dari adik di bawah 4 tahun."
+      },
+      {
+        "en": "Sticks are for counting, not for poking; put them back in the basket after use.",
+        "id": "Lidi untuk menghitung, bukan untuk menusuk; kembalikan ke keranjang setelah dipakai."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child fills the whole box correctly, using the empty basket as the check, on two different days.",
+      "id": "Dikuasai jika anak mengisi seluruh kotak dengan benar, memakai keranjang kosong sebagai pengecekan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "bilingual-parity",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

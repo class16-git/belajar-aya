@@ -1,0 +1,474 @@
+{
+  "id": "unit-g1-math-tens-and-ones-to-100",
+  "version": "1.0.1",
+  "level": "g1",
+  "framework": "math",
+  "strand": "place_value",
+  "title": {
+    "en": "Tens and ones to 100",
+    "id": "Puluhan dan satuan sampai 100"
+  },
+  "prerequisites": [
+    "unit-k-math-compare-numbers-to-20"
+  ],
+  "objective": {
+    "en": "Group objects into tens and ones to build, read, write and compare two-digit numbers up to 100.",
+    "id": "Mengelompokkan benda menjadi puluhan dan satuan untuk menyusun, membaca, menulis, dan membandingkan bilangan dua angka sampai 100."
+  },
+  "rationale": {
+    "en": "Counting large groups one by one is slow and error-prone. Grouping in tens shows why 47 is written with a 4 and a 7, and prepares children for make-ten addition and regrouping.",
+    "id": "Menghitung kelompok besar satu per satu lambat dan mudah salah. Mengelompokkan per sepuluh menunjukkan mengapa 47 ditulis dengan angka 4 dan 7, serta menyiapkan anak untuk penjumlahan membuat sepuluh dan menyimpan."
+  },
+  "outcomes": [
+    {
+      "en": "Groups a collection into tens and ones and writes the number.",
+      "id": "Mengelompokkan kumpulan benda menjadi puluhan dan satuan lalu menulis bilangannya."
+    },
+    {
+      "en": "Says the value of each digit in a two-digit number and compares two numbers by their tens first.",
+      "id": "Menyebut nilai setiap angka pada bilangan dua angka dan membandingkan dua bilangan menurut puluhannya dulu."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can count 36 straws by making 3 bundles of ten and 6 loose straws.",
+      "id": "Aku bisa menghitung 36 sedotan dengan membuat 3 ikat sepuluhan dan 6 sedotan lepas."
+    },
+    {
+      "en": "I can explain why 85 is greater than 58.",
+      "id": "Aku bisa menjelaskan mengapa 85 lebih besar dari 58."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Give your child a messy pile of 30 to 60 straws and ask 'How many?' before you teach grouping, so they feel why tens help.",
+      "id": "Beri anak tumpukan acak 30 sampai 60 sedotan dan tanya 'Berapa banyak?' sebelum mengajarkan pengelompokan, supaya ia merasakan mengapa puluhan membantu."
+    },
+    {
+      "en": "Keep a ten-bundle and a single straw on the table as a key while working.",
+      "id": "Simpan satu ikat sepuluhan dan satu sedotan lepas di meja sebagai kunci selama bekerja."
+    },
+    {
+      "en": "Ask both 'How many tens?' and 'How many altogether?' for every number.",
+      "id": "Tanyakan 'Berapa puluhan?' dan 'Berapa semuanya?' untuk setiap bilangan."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Make bundles of ten. Count the bundles: ten, twenty, thirty. Then count on the loose ones.",
+      "id": "Buat ikatan sepuluh. Hitung ikatannya: sepuluh, dua puluh, tiga puluh. Lalu lanjutkan dengan yang lepas."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Bundle a pile of 47 straws into tens with hair ties; count 10, 20, 30, 40, then 41 to 47 on the loose ones.",
+        "id": "Ikat tumpukan 47 sedotan per sepuluh dengan ikat rambut; hitung 10, 20, 30, 40, lalu 41 sampai 47 untuk yang lepas."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw tens as long sticks and ones as dots: 4 sticks and 7 dots for 47. Find 47 on a hundred chart.",
+        "id": "Gambar puluhan sebagai batang panjang dan satuan sebagai titik: 4 batang dan 7 titik untuk 47. Cari 47 di tabel seratus."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write 47 = 40 + 7 and in a tens-ones chart: tens 4, ones 7.",
+        "id": "Tulis 47 = 40 + 7 dan di tabel puluhan-satuan: puluhan 4, satuan 7."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 100 drinking straws or ice-cream sticks and some hair ties",
+      "id": "Sekitar 100 sedotan atau stik es krim dan beberapa ikat rambut"
+    },
+    {
+      "en": "A hundred chart (10 rows of 10 numbers) and a two-column tens-ones chart on paper",
+      "id": "Tabel seratus (10 baris berisi 10 bilangan) dan tabel dua kolom puluhan-satuan di kertas"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write a hundred chart from 1 to 100 on a large sheet, ten numbers to a row.",
+      "id": "Tulis tabel seratus dari 1 sampai 100 di kertas besar, sepuluh bilangan setiap baris."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Read and write: 6 bundles and 3 straws. Count 10, 20, 30, 40, 50, 60, 61, 62, 63. Write 63 = 60 + 3. The 6 means 6 tens.",
+      "id": "Membaca dan menulis: 6 ikat dan 3 sedotan. Hitung 10, 20, 30, 40, 50, 60, 61, 62, 63. Tulis 63 = 60 + 3. Angka 6 berarti 6 puluhan."
+    },
+    {
+      "en": "Compare 58 and 85: 58 has 5 tens and 85 has 8 tens. More tens means greater, so 85 is greater than 58. We look at the ones only when the tens are equal.",
+      "id": "Bandingkan 58 dan 85: 58 punya 5 puluhan dan 85 punya 8 puluhan. Lebih banyak puluhan berarti lebih besar, jadi 85 lebih besar dari 58. Satuan dilihat hanya jika puluhannya sama."
+    },
+    {
+      "en": "Too many ones: 2 bundles and 13 straws. Make a new bundle from 10 of the straws: 3 bundles and 3 straws, so 33.",
+      "id": "Satuan terlalu banyak: 2 ikat dan 13 sedotan. Buat ikat baru dari 10 sedotan: 3 ikat dan 3 sedotan, jadi 33."
+    },
+    {
+      "en": "Hundred chart patterns: moving down one row adds ten (24, 34, 44); moving right one box adds one (24, 25, 26).",
+      "id": "Pola tabel seratus: turun satu baris menambah sepuluh (24, 34, 44); geser ke kanan satu kotak menambah satu (24, 25, 26)."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Grab a handful of straws, estimate how many, then bundle and count to check.",
+      "id": "Ambil segenggam sedotan, perkirakan jumlahnya, lalu ikat dan hitung untuk memeriksa."
+    },
+    {
+      "en": "Parent writes 72, 27, 70 and 7; the child builds each one and orders them from least to greatest.",
+      "id": "Orang tua menulis 72, 27, 70, dan 7; anak menyusun masing-masing dan mengurutkannya dari terkecil sampai terbesar."
+    },
+    {
+      "en": "Find ten more and ten less than 46, 59 and 90 on the hundred chart.",
+      "id": "Cari sepuluh lebih dan sepuluh kurang dari 46, 59, dan 90 di tabel seratus."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "What number is 4 tens and 7 ones?",
+        "id": "Bilangan berapakah 4 puluhan dan 7 satuan?"
+      },
+      "choices": {
+        "en": [
+          "47",
+          "74",
+          "11"
+        ],
+        "id": [
+          "47",
+          "74",
+          "11"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 tens is 40 and 7 ones is 7; 40 + 7 = 47.",
+        "id": "4 puluhan adalah 40 dan 7 satuan adalah 7; 40 + 7 = 47."
+      },
+      "check": {
+        "expression": "4*10 + 7",
+        "result": "47"
+      },
+      "distractorMisconceptions": {
+        "1": "REVERSES_TENS_ONES",
+        "2": "ADDS_DIGITS"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "What is the value of the 6 in 62?",
+        "id": "Berapa nilai angka 6 pada 62?"
+      },
+      "choices": {
+        "en": [
+          "60",
+          "6",
+          "62"
+        ],
+        "id": [
+          "60",
+          "6",
+          "62"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The 6 is in the tens place: 6 tens, which is 60.",
+        "id": "Angka 6 ada di tempat puluhan: 6 puluhan, yaitu 60."
+      },
+      "check": {
+        "expression": "6 * 10",
+        "result": "60"
+      },
+      "distractorMisconceptions": {
+        "1": "FACE_VALUE",
+        "2": "GIVES_WHOLE_NUMBER"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which number is greater: 47 or 74?",
+        "id": "Bilangan mana yang lebih besar: 47 atau 74?"
+      },
+      "choices": {
+        "en": [
+          "74",
+          "47",
+          "They are equal"
+        ],
+        "id": [
+          "74",
+          "47",
+          "Keduanya sama"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "74 has 7 tens and 47 has only 4 tens, so 74 is greater.",
+        "id": "74 punya 7 puluhan dan 47 hanya 4 puluhan, jadi 74 lebih besar."
+      },
+      "check": {
+        "expression": "7*10 + 4",
+        "result": "74"
+      },
+      "distractorMisconceptions": {
+        "1": "COMPARES_ONES_FIRST",
+        "2": "SAME_DIGITS_SAME_VALUE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "What is ten more than 39?",
+        "id": "Berapa sepuluh lebih banyak dari 39?"
+      },
+      "choices": {
+        "en": [
+          "49",
+          "40",
+          "139"
+        ],
+        "id": [
+          "49",
+          "40",
+          "139"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Add one bundle: 3 tens become 4 tens and the 9 ones stay, so 49.",
+        "id": "Tambah satu ikat: 3 puluhan menjadi 4 puluhan dan 9 satuan tetap, jadi 49."
+      },
+      "check": {
+        "expression": "39 + 10",
+        "result": "49"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_ONE_NOT_TEN",
+        "2": "WRITES_TEN_IN_FRONT"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Bayu has 3 bundles of ten and 14 loose straws. How many straws is that?",
+        "id": "Bayu punya 3 ikat sepuluhan dan 14 sedotan lepas. Berapa banyak sedotannya?"
+      },
+      "choices": {
+        "en": [
+          "44",
+          "314",
+          "34"
+        ],
+        "id": [
+          "44",
+          "314",
+          "34"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "14 loose straws make 1 more ten and 4 ones. 3 tens + 1 ten = 4 tens, so 44.",
+        "id": "14 sedotan lepas menjadi 1 puluhan lagi dan 4 satuan. 3 puluhan + 1 puluhan = 4 puluhan, jadi 44."
+      },
+      "check": {
+        "expression": "3*10 + 14",
+        "result": "44"
+      },
+      "distractorMisconceptions": {
+        "1": "WRITES_PARTS_SIDE_BY_SIDE",
+        "2": "IGNORES_EXTRA_TEN"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "REVERSES_TENS_ONES",
+      "description": {
+        "en": "Writes the ones digit in the tens place.",
+        "id": "Menulis angka satuan di tempat puluhan."
+      },
+      "remediation": {
+        "en": "Put bundles on the left column and loose straws on the right column of the chart before writing.",
+        "id": "Letakkan ikatan di kolom kiri dan sedotan lepas di kolom kanan tabel sebelum menulis."
+      }
+    },
+    {
+      "code": "ADDS_DIGITS",
+      "description": {
+        "en": "Adds the number of tens and ones as if all were ones.",
+        "id": "Menjumlahkan banyak puluhan dan satuan seolah-olah semuanya satuan."
+      },
+      "remediation": {
+        "en": "Unbundle one ten and count its straws: a bundle is ten, not one.",
+        "id": "Buka satu ikatan dan hitung sedotannya: satu ikat itu sepuluh, bukan satu."
+      }
+    },
+    {
+      "code": "FACE_VALUE",
+      "description": {
+        "en": "Reads a digit by its shape and not by its place.",
+        "id": "Membaca angka menurut bentuknya, bukan tempatnya."
+      },
+      "remediation": {
+        "en": "Build the number and ask 'How many straws do these 6 bundles hold?'",
+        "id": "Susun bilangannya dan tanya 'Berapa sedotan dalam 6 ikat ini?'"
+      }
+    },
+    {
+      "code": "COMPARES_ONES_FIRST",
+      "description": {
+        "en": "Compares ones digits first, so thinks 58 is greater because 8 is greater than 5.",
+        "id": "Membandingkan satuan dulu, sehingga mengira 58 lebih besar karena 8 lebih besar dari 5."
+      },
+      "remediation": {
+        "en": "Build both numbers and compare the bundles first; the number with more bundles is greater.",
+        "id": "Susun kedua bilangan dan bandingkan ikatannya dulu; bilangan dengan ikatan lebih banyak lebih besar."
+      }
+    },
+    {
+      "code": "SAME_DIGITS_SAME_VALUE",
+      "description": {
+        "en": "Thinks numbers with the same digits are equal.",
+        "id": "Mengira bilangan dengan angka yang sama nilainya sama."
+      },
+      "remediation": {
+        "en": "Build 58 and 85 side by side and count all the straws in each.",
+        "id": "Susun 58 dan 85 berdampingan dan hitung semua sedotan di masing-masing."
+      }
+    },
+    {
+      "code": "ADDS_ONE_NOT_TEN",
+      "description": {
+        "en": "Adds one instead of ten.",
+        "id": "Menambah satu, bukan sepuluh."
+      },
+      "remediation": {
+        "en": "Add a whole bundle and move down one row on the hundred chart.",
+        "id": "Tambahkan satu ikat utuh dan turun satu baris di tabel seratus."
+      }
+    },
+    {
+      "code": "WRITES_TEN_IN_FRONT",
+      "description": {
+        "en": "Writes 1 in front of the number to show 'ten more'.",
+        "id": "Menulis 1 di depan bilangan untuk menunjukkan 'sepuluh lebih'."
+      },
+      "remediation": {
+        "en": "Write the new number in the tens-ones chart: the tens digit changes, nothing new appears in front.",
+        "id": "Tulis bilangan baru di tabel puluhan-satuan: angka puluhan berubah, tidak ada angka baru di depan."
+      }
+    },
+    {
+      "code": "WRITES_PARTS_SIDE_BY_SIDE",
+      "description": {
+        "en": "Writes 3 and 14 next to each other as 314.",
+        "id": "Menulis 3 dan 14 bersebelahan menjadi 314."
+      },
+      "remediation": {
+        "en": "Bundle the extra ten first, then write one digit in each column.",
+        "id": "Ikat sepuluhan tambahannya dulu, lalu tulis satu angka di setiap kolom."
+      }
+    },
+    {
+      "code": "IGNORES_EXTRA_TEN",
+      "description": {
+        "en": "Does not notice that 14 ones contain another ten.",
+        "id": "Tidak menyadari bahwa 14 satuan berisi satu puluhan lagi."
+      },
+      "remediation": {
+        "en": "Rule: no more than 9 loose straws. Whenever there are 10, make a bundle.",
+        "id": "Aturan: tidak boleh lebih dari 9 sedotan lepas. Setiap ada 10, buat ikatan."
+      }
+    },
+    {
+      "code": "GIVES_WHOLE_NUMBER",
+      "description": {
+        "en": "Gives the whole number when asked for the value of one digit.",
+        "id": "Menyebut seluruh bilangan padahal ditanya nilai satu angka."
+      },
+      "remediation": {
+        "en": "Cover the ones digit with a finger and ask what the bundles alone are worth.",
+        "id": "Tutup angka satuan dengan jari dan tanya berapa nilai ikatannya saja."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Count the rambutan or salak at the market in tens with the seller's bags, and write the total as tens and ones.",
+      "id": "Hitung rambutan atau salak di pasar per sepuluh dengan kantong penjual, lalu tulis totalnya sebagai puluhan dan satuan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use straws in two colours (one colour for bundles) and a large-print hundred chart; the child can say numbers instead of writing.",
+      "id": "Pakai sedotan dua warna (satu warna untuk ikatan) dan tabel seratus berhuruf besar; anak boleh mengucapkan bilangan alih-alih menulis."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Hair ties and straws stay at the table; keep them away from toddlers.",
+        "id": "Ikat rambut dan sedotan tetap di meja; jauhkan dari balita."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child builds and writes four two-digit numbers, including one with more than 9 loose ones, and compares two of them, on two different days.",
+      "id": "Dikuasai jika anak menyusun dan menulis empat bilangan dua angka, termasuk satu dengan lebih dari 9 satuan lepas, dan membandingkan dua di antaranya, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

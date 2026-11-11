@@ -1,0 +1,252 @@
+{
+  "id": "reading-g4-how-a-lever-helps",
+  "version": "1.0.1",
+  "level": "g4",
+  "readingLevel": "fluent",
+  "genre": "explanatory",
+  "mode": "independent",
+  "title": {
+    "en": "How a lever helps you lift",
+    "id": "Bagaimana tuas membantu kita mengangkat"
+  },
+  "text": {
+    "en": [
+      "Have you ever wondered how a small child can lift a grown-up on a seesaw? The answer is a simple machine called a lever.",
+      "A lever is a stiff bar that turns on a point called the fulcrum. The thing you want to move is the load. The push or pull you give is the effort.",
+      "The closer the load is to the fulcrum, the less effort you need to lift it. That is why a long handle helps: your hands are far from the fulcrum, so your push has more turning power.",
+      "A seesaw balances when the weight on each side multiplied by its distance from the middle is the same. A heavier person must sit closer to the middle; a lighter person can sit further out.",
+      "Levers are all around you. A bottle opener, a wheelbarrow and even your own forearm are levers. In a wheelbarrow, the wheel is the fulcrum, the soil in the tray is the load, and you lift the handles.",
+      "Engineers use levers in cranes, scissors and brakes. Next time something feels too heavy, look for a way to use a longer lever."
+    ],
+    "id": [
+      "Pernahkah kamu bertanya-tanya bagaimana anak kecil bisa mengangkat orang dewasa di jungkat-jungkit? Jawabannya adalah pesawat sederhana yang disebut tuas.",
+      "Tuas adalah batang kaku yang berputar pada sebuah titik yang disebut titik tumpu. Benda yang ingin kamu pindahkan disebut beban. Dorongan atau tarikan yang kamu berikan disebut kuasa.",
+      "Makin dekat beban ke titik tumpu, makin sedikit kuasa yang kamu perlukan untuk mengangkatnya. Itulah sebabnya pegangan panjang membantu: tanganmu jauh dari titik tumpu, sehingga doronganmu punya daya putar lebih besar.",
+      "Jungkat-jungkit seimbang ketika berat di setiap sisi dikali jaraknya dari tengah hasilnya sama. Orang yang lebih berat harus duduk lebih dekat ke tengah; orang yang lebih ringan bisa duduk lebih jauh.",
+      "Tuas ada di sekelilingmu. Pembuka botol, gerobak dorong, bahkan lengan bawahmu adalah tuas. Pada gerobak dorong, roda adalah titik tumpu, tanah di bak adalah beban, dan kamu mengangkat pegangannya.",
+      "Insinyur memakai tuas pada derek, gunting, dan rem. Lain kali ada benda yang terasa terlalu berat, carilah cara memakai tuas yang lebih panjang."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads an explanation and uses diagrams-in-words to identify fulcrum, load and effort.",
+      "id": "Membaca penjelasan dan mengenali titik tumpu, beban, dan kuasa dari uraian."
+    },
+    {
+      "en": "Applies the balance rule (weight × distance) to a seesaw problem.",
+      "id": "Menerapkan aturan keseimbangan (berat × jarak) pada soal jungkat-jungkit."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "fulcrum",
+        "id": "titik tumpu"
+      },
+      "meaning": {
+        "en": "the point a lever turns on",
+        "id": "titik tempat tuas berputar"
+      }
+    },
+    {
+      "word": {
+        "en": "load",
+        "id": "beban"
+      },
+      "meaning": {
+        "en": "the object a lever moves",
+        "id": "benda yang dipindahkan oleh tuas"
+      }
+    },
+    {
+      "word": {
+        "en": "effort",
+        "id": "kuasa"
+      },
+      "meaning": {
+        "en": "the push or pull used to move the lever",
+        "id": "dorongan atau tarikan untuk menggerakkan tuas"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "On a seesaw, where is the fulcrum?",
+        "id": "Pada jungkat-jungkit, di mana titik tumpunya?"
+      },
+      "choices": {
+        "en": [
+          "the middle point it turns on",
+          "the seat at each end",
+          "the child sitting on it"
+        ],
+        "id": [
+          "titik tengah tempatnya berputar",
+          "tempat duduk di setiap ujung",
+          "anak yang duduk di atasnya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "In a wheelbarrow, what is the load?",
+        "id": "Pada gerobak dorong, apa bebannya?"
+      },
+      "choices": {
+        "en": [
+          "the soil in the tray",
+          "the wheel",
+          "the handles"
+        ],
+        "id": [
+          "tanah di dalam bak",
+          "roda",
+          "pegangan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "A 20 kg child sits 1.5 m from the middle of a seesaw. How far from the middle must a 30 kg child sit to balance?",
+        "id": "Anak 20 kg duduk 1,5 m dari tengah jungkat-jungkit. Berapa jarak dari tengah anak 30 kg harus duduk agar seimbang?"
+      },
+      "choices": {
+        "en": [
+          "1 m",
+          "1.5 m",
+          "2.25 m"
+        ],
+        "id": [
+          "1 m",
+          "1,5 m",
+          "2,25 m"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3,
+      "check": {
+        "expression": "20 * 1.5 / 30",
+        "result": "1"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why is it easier to open a tin lid with a long spoon handle than with your fingernail?",
+        "id": "Mengapa lebih mudah membuka tutup kaleng dengan gagang sendok yang panjang daripada dengan kuku?"
+      },
+      "choices": {
+        "en": [
+          "the long handle puts your push far from the fulcrum",
+          "spoons are sharper than nails",
+          "metal is heavier"
+        ],
+        "id": [
+          "gagang panjang membuat doronganmu jauh dari titik tumpu",
+          "sendok lebih tajam daripada kuku",
+          "logam lebih berat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q5",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main message of the text?",
+        "id": "Apa pesan utama teks ini?"
+      },
+      "choices": {
+        "en": [
+          "levers let a small effort move a bigger load",
+          "seesaws are fun",
+          "engineers build cranes"
+        ],
+        "id": [
+          "tuas membuat kuasa kecil bisa memindahkan beban lebih besar",
+          "jungkat-jungkit itu menyenangkan",
+          "insinyur membuat derek"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Levers are simple machines used in tools and engineering designs.",
+        "id": "Tuas adalah pesawat sederhana yang dipakai pada alat dan rancangan teknik."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Balancing uses multiplication: weight × distance must match on both sides.",
+        "id": "Keseimbangan memakai perkalian: berat × jarak harus sama di kedua sisi."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Find three levers in your kitchen. Where is the fulcrum on each?",
+      "id": "Temukan tiga tuas di dapurmu. Di mana titik tumpu masing-masing?"
+    },
+    {
+      "en": "Why might a playground seesaw have handles at both ends?",
+      "id": "Mengapa jungkat-jungkit di taman bermain punya pegangan di kedua ujung?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Balance a 30 cm ruler on a pencil. Put 2 identical small erasers 5 cm from the middle on one side. Where must 1 eraser go on the other side? Test and record.",
+    "id": "Seimbangkan penggaris 30 cm di atas pensil. Letakkan 2 penghapus kecil yang sama 5 cm dari tengah di satu sisi. Di mana 1 penghapus harus diletakkan di sisi lain? Uji dan catat."
+  },
+  "factChecks": [
+    {
+      "claim": "A lever is a rigid bar that pivots on a fulcrum.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A lever balances when weight times distance from the fulcrum is equal on both sides.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Bottle openers, wheelbarrows and the human forearm act as levers.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

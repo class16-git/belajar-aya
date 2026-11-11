@@ -1,0 +1,224 @@
+{
+  "id": "reading-age2_3-bunny-sleepy-time",
+  "version": "1.0.1",
+  "level": "age2_3",
+  "readingLevel": "pre_reader",
+  "genre": "oral_story",
+  "mode": "parent_read",
+  "title": {
+    "en": "Bunny's sleepy time",
+    "id": "Waktunya Kelinci tidur"
+  },
+  "text": {
+    "en": [
+      "The sky is dark. Bunny yawns a big yawn. Haaaa.",
+      "Bunny brushes her teeth. Brush, brush, brush.",
+      "Bunny puts on her soft pyjamas with stars.",
+      "Papa reads a little book. Bunny snuggles close.",
+      "Lights off. Goodnight, Bunny. Shhh, shhh."
+    ],
+    "id": [
+      "Langit sudah gelap. Kelinci menguap lebar. Haaaa.",
+      "Kelinci menyikat gigi. Sikat, sikat, sikat.",
+      "Kelinci memakai piyama lembut bergambar bintang.",
+      "Ayah membacakan buku kecil. Kelinci meringkuk dekat Ayah.",
+      "Lampu dimatikan. Selamat tidur, Kelinci. Ssst, ssst."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Do a big slow yawn and stretch your arms. Invite your child to copy.",
+      "id": "Menguaplah pelan dan lebar sambil meregangkan lengan. Ajak anak menirukan."
+    },
+    {
+      "en": "Pretend to brush your teeth with one finger.",
+      "id": "Pura-pura menyikat gigi dengan satu jari."
+    },
+    {
+      "en": "Touch your child's sleeve or tummy as if putting on pyjamas.",
+      "id": "Sentuh lengan baju atau perut anak seolah memakaikan piyama."
+    },
+    {
+      "en": "Pull your child in for a cuddle and turn a pretend page.",
+      "id": "Peluk anak dan buka halaman pura-pura."
+    },
+    {
+      "en": "Whisper the last line very softly and put a finger to your lips.",
+      "id": "Bisikkan kalimat terakhir sangat pelan dan letakkan jari di bibir."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a bunny yawning under a dark sky",
+      "id": "Kartu 1: kelinci menguap di bawah langit gelap"
+    },
+    {
+      "en": "Card 2: a bunny with a toothbrush",
+      "id": "Kartu 2: kelinci memegang sikat gigi"
+    },
+    {
+      "en": "Card 3: a bunny in star pyjamas",
+      "id": "Kartu 3: kelinci memakai piyama bintang"
+    },
+    {
+      "en": "Card 4: a bunny reading a book with Papa",
+      "id": "Kartu 4: kelinci membaca buku bersama Ayah"
+    },
+    {
+      "en": "Card 5: a bunny asleep with the light off",
+      "id": "Kartu 5: kelinci tidur dengan lampu mati"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to and retells a bedtime routine in order.",
+      "id": "Mendengarkan dan menceritakan kembali urutan sebelum tidur."
+    },
+    {
+      "en": "Joins in with actions for each step.",
+      "id": "Ikut melakukan gerakan untuk setiap langkah."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "yawn",
+        "id": "menguap"
+      },
+      "meaning": {
+        "en": "opening your mouth wide when you are sleepy",
+        "id": "membuka mulut lebar saat mengantuk"
+      }
+    },
+    {
+      "word": {
+        "en": "pyjamas",
+        "id": "piyama"
+      },
+      "meaning": {
+        "en": "soft clothes we wear to sleep",
+        "id": "baju lembut untuk tidur"
+      }
+    },
+    {
+      "word": {
+        "en": "snuggle",
+        "id": "meringkuk"
+      },
+      "meaning": {
+        "en": "to cuddle up close and cosy",
+        "id": "meringkuk dekat-dekat supaya hangat dan nyaman"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Bunny brush?",
+        "id": "Apa yang disikat Kelinci?"
+      },
+      "choices": {
+        "en": [
+          "her teeth",
+          "her ears",
+          "her shoes"
+        ],
+        "id": [
+          "giginya",
+          "telinganya",
+          "sepatunya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happened last?",
+        "id": "Apa yang terjadi paling akhir?"
+      },
+      "choices": {
+        "en": [
+          "the lights went off",
+          "Bunny brushed her teeth",
+          "Bunny put on pyjamas"
+        ],
+        "id": [
+          "lampu dimatikan",
+          "Kelinci menyikat gigi",
+          "Kelinci memakai piyama"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Bunny yawn?",
+        "id": "Mengapa Kelinci menguap?"
+      },
+      "choices": {
+        "en": [
+          "she was ready to sleep",
+          "she was hungry",
+          "she wanted to play"
+        ],
+        "id": [
+          "dia sudah siap tidur",
+          "dia lapar",
+          "dia ingin bermain"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Brushing teeth and a calm routine help our bodies rest well.",
+        "id": "Menyikat gigi dan rutinitas yang tenang membantu tubuh beristirahat dengan baik."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What do you do before you sleep?",
+      "id": "Apa yang kamu lakukan sebelum tidur?"
+    },
+    {
+      "en": "Which pyjamas do you like best?",
+      "id": "Piyama mana yang paling kamu suka?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Tonight, tell the story again as you do each step of your own bedtime routine, saying 'just like Bunny' at each step.",
+    "id": "Malam ini, ceritakan lagi kisahnya sambil menjalani setiap langkah rutinitas tidur anak, dan ucapkan 'seperti Kelinci' di setiap langkah."
+  },
+  "factChecks": [],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

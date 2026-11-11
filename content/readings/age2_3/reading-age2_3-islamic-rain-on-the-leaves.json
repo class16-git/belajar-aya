@@ -1,0 +1,235 @@
+{
+  "id": "reading-age2_3-islamic-rain-on-the-leaves",
+  "version": "0.1.0",
+  "level": "age2_3",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Rain on the leaves",
+    "id": "Hujan di dedaunan"
+  },
+  "text": {
+    "en": [
+      "Pitter, patter. Rain is falling. Adi looks out of the window.",
+      "The leaves go drip, drip. The flowers get a drink.",
+      "Ibu holds Adi's hand. 'Alhamdulillah for the rain,' says Ibu.",
+      "The rain stops. Adi touches a wet leaf. Cool and shiny! Adi smiles."
+    ],
+    "id": [
+      "Tik, tik, tik. Hujan turun. Adi melihat dari jendela.",
+      "Daun-daun meneteskan air, tes, tes. Bunga-bunga dapat minum.",
+      "Ibu menggandeng tangan Adi. 'Alhamdulillah, ada hujan,' kata Ibu.",
+      "Hujan berhenti. Adi menyentuh daun yang basah. Dingin dan mengilap! Adi tersenyum."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Tap your fingers softly on the table for 'pitter, patter'.",
+      "id": "Ketuk jari pelan-pelan di meja untuk 'tik, tik, tik'."
+    },
+    {
+      "en": "Wiggle your fingers downwards like drops for 'drip, drip'.",
+      "id": "Gerakkan jari ke bawah seperti tetesan untuk 'tes, tes'."
+    },
+    {
+      "en": "Hold your child's hand as you say Alhamdulillah warmly; no need for them to repeat.",
+      "id": "Gandeng tangan anak sambil mengucapkan Alhamdulillah dengan hangat; anak tidak perlu mengulang."
+    },
+    {
+      "en": "Touch your child's palm gently for the cool leaf, then smile together.",
+      "id": "Sentuh telapak tangan anak dengan lembut untuk daun yang dingin, lalu tersenyum bersama."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a window with raindrops",
+      "id": "Kartu 1: jendela dengan tetesan hujan"
+    },
+    {
+      "en": "Card 2: leaves and flowers with drops of water",
+      "id": "Kartu 2: daun dan bunga dengan tetesan air"
+    },
+    {
+      "en": "Card 3: a mother and child holding hands by the window",
+      "id": "Kartu 3: ibu dan anak bergandengan di dekat jendela"
+    },
+    {
+      "en": "Card 4: a child's hand touching a shiny wet leaf",
+      "id": "Kartu 4: tangan anak menyentuh daun basah yang mengilap"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a short story and joins in with sounds and actions.",
+      "id": "Mendengarkan cerita pendek dan ikut menirukan bunyi serta gerakan."
+    },
+    {
+      "en": "Hears a gentle expression of gratitude for rain.",
+      "id": "Mendengar ungkapan syukur yang lembut atas hujan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "rain",
+        "id": "hujan"
+      },
+      "meaning": {
+        "en": "water falling from the clouds",
+        "id": "air yang jatuh dari awan"
+      }
+    },
+    {
+      "word": {
+        "en": "leaf",
+        "id": "daun"
+      },
+      "meaning": {
+        "en": "the green part of a plant",
+        "id": "bagian tanaman yang berwarna hijau"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What is falling?",
+        "id": "Apa yang turun?"
+      },
+      "choices": {
+        "en": [
+          "rain",
+          "leaves",
+          "toys"
+        ],
+        "id": [
+          "hujan",
+          "daun",
+          "mainan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Adi do when the rain stopped?",
+        "id": "Apa yang Adi lakukan saat hujan berhenti?"
+      },
+      "choices": {
+        "en": [
+          "touched a wet leaf",
+          "went to sleep",
+          "ate a banana"
+        ],
+        "id": [
+          "menyentuh daun basah",
+          "tidur",
+          "makan pisang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "How does Adi feel at the end?",
+        "id": "Bagaimana perasaan Adi di akhir?"
+      },
+      "choices": {
+        "en": [
+          "happy",
+          "scared of the rain",
+          "very hungry"
+        ],
+        "id": [
+          "senang",
+          "takut pada hujan",
+          "sangat lapar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "islamic_values",
+      "connection": {
+        "en": "Saying Alhamdulillah for rain is a simple, gentle first step in gratitude for what Allah created.",
+        "id": "Mengucapkan Alhamdulillah atas hujan adalah langkah pertama yang sederhana dan lembut dalam bersyukur atas ciptaan Allah."
+      }
+    },
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Plants need water to grow; rain gives them a drink.",
+        "id": "Tanaman butuh air untuk tumbuh; hujan memberi mereka minum."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Can you make the rain sound with your fingers?",
+      "id": "Bisakah kamu membuat bunyi hujan dengan jarimu?"
+    },
+    {
+      "en": "What gets a drink when it rains?",
+      "id": "Apa yang dapat minum saat hujan turun?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "After rain, step outside with your child to touch a wet leaf together and say Alhamdulillah. Stay right beside them and keep away from puddles deeper than a few centimetres.",
+    "id": "Setelah hujan, keluar bersama anak untuk menyentuh daun basah dan mengucapkan Alhamdulillah. Tetaplah di sampingnya dan jauhi genangan yang lebih dalam dari beberapa sentimeter."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Stay within arm's reach outdoors; avoid going out during thunder or lightning.",
+      "id": "Tetap dalam jangkauan tangan saat di luar; jangan keluar saat ada guruh atau petir."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "religious_content",
+    "scholar_wording_required",
+    "translation_review"
+  ],
+  "reviewStatus": "draft",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "tone",
+      "no-invented-citations"
+    ]
+  },
+  "religiousReview": {
+    "doctrinalSchool": null,
+    "fiqhSchool": null,
+    "arabicSource": null,
+    "edition": null,
+    "pageOrSection": null,
+    "translationReviewer": null,
+    "scholarReviewer": null,
+    "reviewedAt": null,
+    "approvalStatus": "unverified",
+    "notes": [
+      "Reading drafted by an AI; teachings are described in plain words and must be confirmed by a qualified scholar. No verse, hadith or quotation is reproduced.",
+      "Confirm the gratitude wording 'Alhamdulillah for the rain' and its Indonesian form for toddlers."
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-islamic",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,431 @@
+{
+  "id": "unit-g4-math-area-of-rectangles",
+  "version": "1.0.1",
+  "level": "g4",
+  "framework": "math",
+  "strand": "measurement",
+  "title": {
+    "en": "Area of rectangles",
+    "id": "Luas persegi panjang"
+  },
+  "prerequisites": [
+    "unit-g3-math-perimeter",
+    "unit-g2-math-multiplication-equal-groups"
+  ],
+  "objective": {
+    "en": "Find the area of rectangles and squares by counting unit squares and by multiplying length by width, find a missing side, and find the area of shapes made of rectangles.",
+    "id": "Mencari luas persegi panjang dan persegi dengan menghitung persegi satuan dan dengan mengalikan panjang dan lebar, mencari sisi yang hilang, dan mencari luas bangun gabungan persegi panjang."
+  },
+  "rationale": {
+    "en": "Area as 'rows of squares' links directly to multiplication arrays. Covering real surfaces with squares, and comparing with perimeter, prevents the frequent confusion between the two measures.",
+    "id": "Luas sebagai 'baris-baris persegi' terhubung langsung dengan susunan perkalian. Menutupi permukaan nyata dengan persegi, dan membandingkannya dengan keliling, mencegah kebingungan yang sering terjadi antara kedua ukuran itu."
+  },
+  "outcomes": [
+    {
+      "en": "Calculates the area of a rectangle in square units and explains why length × width works.",
+      "id": "Menghitung luas persegi panjang dalam satuan persegi dan menjelaskan mengapa panjang × lebar berlaku."
+    },
+    {
+      "en": "Finds a missing side from the area and finds the area of L-shapes by splitting or subtracting.",
+      "id": "Mencari sisi yang hilang dari luas dan mencari luas bangun L dengan memecah atau mengurangkan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can cover a book with sticky notes and say its area in squares.",
+      "id": "Aku bisa menutupi buku dengan kertas tempel dan menyebut luasnya dalam persegi."
+    },
+    {
+      "en": "I can explain the difference between area and perimeter for the same rectangle.",
+      "id": "Aku bisa menjelaskan perbedaan luas dan keliling untuk persegi panjang yang sama."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Begin with covering: tiles, sticky notes or paper squares, with no gaps and no overlaps.",
+      "id": "Mulai dengan menutupi: ubin, kertas tempel, atau persegi kertas, tanpa celah dan tanpa tumpang tindih."
+    },
+    {
+      "en": "Point out the rows: '3 rows of 5 squares is 3 × 5'.",
+      "id": "Tunjukkan barisnya: '3 baris berisi 5 persegi adalah 3 × 5'."
+    },
+    {
+      "en": "Always say the unit: square centimetres (cm²) or square metres (m²).",
+      "id": "Selalu sebutkan satuannya: sentimeter persegi (cm²) atau meter persegi (m²)."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Count the squares in one row and the number of rows. Multiply. Write the answer in square units.",
+      "id": "Hitung persegi dalam satu baris dan banyak barisnya. Kalikan. Tulis jawabannya dalam satuan persegi."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Count the floor tiles in a rectangular room or porch: rows and tiles in each row, for example 5 tiles by 3 rows makes an area of 15 tiles. Then measure one tile and say the area in square units of that size.",
+        "id": "Hitung ubin lantai di ruang atau teras persegi panjang: banyak baris dan ubin setiap baris, misalnya 5 ubin kali 3 baris memberi luas 15 ubin. Lalu ukur satu ubin dan sebutkan luasnya dalam satuan persegi seukuran itu."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "On centimetre squared paper draw a 7 by 4 rectangle, shade it and count the squares; then draw an L-shape and split it into two rectangles.",
+        "id": "Di kertas berpetak sentimeter gambar persegi panjang 7 kali 4, arsir dan hitung perseginya; lalu gambar bangun L dan pecah menjadi dua persegi panjang."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write Area = length × width: 7 × 4 = 28 cm². Missing side: 36 ÷ 9 = 4 cm.",
+        "id": "Tulis Luas = panjang × lebar: 7 × 4 = 28 cm². Sisi hilang: 36 ÷ 9 = 4 cm."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Centimetre squared paper, a ruler, sticky notes or paper squares",
+      "id": "Kertas berpetak sentimeter, penggaris, kertas tempel atau persegi kertas"
+    },
+    {
+      "en": "A rectangular tiled floor or a board game box to measure",
+      "id": "Lantai ubin persegi panjang atau kotak permainan untuk diukur"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Find a rectangular tiled area at home and prepare 30 paper squares of the same size.",
+      "id": "Cari area ubin persegi panjang di rumah dan siapkan 30 persegi kertas yang sama besar."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "From counting to multiplying: a 7 cm by 4 cm card has 4 rows of 7 squares; 7 × 4 = 28 cm². Its perimeter is 22 cm, a different measure.",
+      "id": "Dari menghitung ke mengali: kartu 7 cm kali 4 cm punya 4 baris berisi 7 persegi; 7 × 4 = 28 cm². Kelilingnya 22 cm, ukuran yang berbeda."
+    },
+    {
+      "en": "Missing side: a rectangle has an area of 36 cm² and length 9 cm. 9 × ? = 36, so the width is 4 cm.",
+      "id": "Sisi hilang: persegi panjang luasnya 36 cm² dan panjangnya 9 cm. 9 × ? = 36, jadi lebarnya 4 cm."
+    },
+    {
+      "en": "Compound shape by subtracting: a 10 m by 6 m yard with a 4 m by 3 m corner taken out for a kitchen. 60 - 12 = 48 m².",
+      "id": "Bangun gabungan dengan mengurangkan: halaman 10 m kali 6 m dengan sudut 4 m kali 3 m dipakai dapur. 60 - 12 = 48 m²."
+    },
+    {
+      "en": "Same area, different shape: a 6 by 6 square and a 9 by 4 rectangle both have area 36, but perimeters of 24 and 26.",
+      "id": "Luas sama, bentuk berbeda: persegi 6 kali 6 dan persegi panjang 9 kali 4 sama-sama luasnya 36, tetapi kelilingnya 24 dan 26."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Measure a book and a table mat in centimetres and calculate their areas; check one by counting squares on traced paper.",
+      "id": "Ukur buku dan tatakan meja dalam sentimeter lalu hitung luasnya; periksa satu dengan menghitung persegi di kertas jiplakan."
+    },
+    {
+      "en": "Draw every rectangle with whole-number sides that has an area of 24 cm² and record each perimeter.",
+      "id": "Gambar setiap persegi panjang bersisi bilangan bulat yang luasnya 24 cm² dan catat kelilingnya."
+    },
+    {
+      "en": "Find the area of an L-shaped room drawn by a parent in two ways: by splitting and by subtracting.",
+      "id": "Cari luas ruangan berbentuk L yang digambar orang tua dengan dua cara: memecah dan mengurangkan."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "What is the area of a rectangle 8 cm long and 6 cm wide?",
+        "id": "Berapa luas persegi panjang dengan panjang 8 cm dan lebar 6 cm?"
+      },
+      "choices": {
+        "en": [
+          "48 cm²",
+          "28 cm",
+          "14 cm²"
+        ],
+        "id": [
+          "48 cm²",
+          "28 cm",
+          "14 cm²"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6 rows of 8 square centimetres: 8 × 6 = 48 cm².",
+        "id": "6 baris berisi 8 sentimeter persegi: 8 × 6 = 48 cm²."
+      },
+      "check": {
+        "expression": "8*6",
+        "result": "48"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_PERIMETER",
+        "2": "ADDS_SIDES"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A floor 6 m by 4 m is covered with tiles 1 m by 1 m. How many tiles are needed?",
+        "id": "Lantai 6 m kali 4 m ditutup ubin 1 m kali 1 m. Berapa ubin yang diperlukan?"
+      },
+      "choices": {
+        "en": [
+          "24",
+          "20",
+          "10"
+        ],
+        "id": [
+          "24",
+          "20",
+          "10"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 rows of 6 tiles: 6 × 4 = 24 tiles.",
+        "id": "4 baris berisi 6 ubin: 6 × 4 = 24 ubin."
+      },
+      "check": {
+        "expression": "6*4",
+        "result": "24"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_PERIMETER",
+        "2": "ADDS_SIDES"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A rectangle has an area of 42 cm² and a length of 7 cm. What is its width?",
+        "id": "Sebuah persegi panjang luasnya 42 cm² dan panjangnya 7 cm. Berapa lebarnya?"
+      },
+      "choices": {
+        "en": [
+          "6 cm",
+          "35 cm",
+          "21 cm"
+        ],
+        "id": [
+          "6 cm",
+          "35 cm",
+          "21 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "7 × width = 42, so width = 42 ÷ 7 = 6 cm.",
+        "id": "7 × lebar = 42, jadi lebar = 42 ÷ 7 = 6 cm."
+      },
+      "check": {
+        "expression": "42/7",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "HALVES_INSTEAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A yard is 12 m by 8 m. A 5 m by 4 m corner is used for a kitchen. What is the area of the rest of the yard?",
+        "id": "Halaman berukuran 12 m kali 8 m. Sudut 5 m kali 4 m dipakai untuk dapur. Berapa luas sisa halaman?"
+      },
+      "choices": {
+        "en": [
+          "76 m²",
+          "96 m²",
+          "40 m²"
+        ],
+        "id": [
+          "76 m²",
+          "96 m²",
+          "40 m²"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Whole yard 12 × 8 = 96 m²; kitchen 5 × 4 = 20 m²; 96 - 20 = 76 m².",
+        "id": "Seluruh halaman 12 × 8 = 96 m²; dapur 5 × 4 = 20 m²; 96 - 20 = 76 m²."
+      },
+      "check": {
+        "expression": "12*8 - 5*4",
+        "result": "76"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_CUTOUT",
+        "2": "GIVES_PERIMETER"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Which has the greater area: a 4 cm by 9 cm rectangle or a 3 cm by 12 cm rectangle?",
+        "id": "Mana yang luasnya lebih besar: persegi panjang 4 cm kali 9 cm atau 3 cm kali 12 cm?"
+      },
+      "choices": {
+        "en": [
+          "Both are 36 cm²",
+          "The 3 cm by 12 cm one, because it is longer",
+          "The 4 cm by 9 cm one, because it is wider"
+        ],
+        "id": [
+          "Keduanya 36 cm²",
+          "Yang 3 cm kali 12 cm, karena lebih panjang",
+          "Yang 4 cm kali 9 cm, karena lebih lebar"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 × 9 = 36 and 3 × 12 = 36: the areas are equal, even though the shapes differ.",
+        "id": "4 × 9 = 36 dan 3 × 12 = 36: luasnya sama, walaupun bentuknya berbeda."
+      },
+      "check": {
+        "expression": "4*9",
+        "result": "36"
+      },
+      "distractorMisconceptions": {
+        "1": "LONGER_MEANS_BIGGER",
+        "2": "LONGER_MEANS_BIGGER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "GIVES_PERIMETER",
+      "description": {
+        "en": "Calculates the perimeter when asked for area.",
+        "id": "Menghitung keliling padahal ditanya luas."
+      },
+      "remediation": {
+        "en": "Colour the edge in one colour and the inside squares in another; area counts the inside.",
+        "id": "Warnai tepi dengan satu warna dan persegi di dalam dengan warna lain; luas menghitung bagian dalam."
+      }
+    },
+    {
+      "code": "ADDS_SIDES",
+      "description": {
+        "en": "Adds length and width instead of multiplying.",
+        "id": "Menjumlahkan panjang dan lebar, bukan mengalikan."
+      },
+      "remediation": {
+        "en": "Cover the rectangle row by row with squares and count each row as a group.",
+        "id": "Tutupi persegi panjang baris demi baris dengan persegi dan hitung setiap baris sebagai satu kelompok."
+      }
+    },
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Subtracts the known side from the area.",
+        "id": "Mengurangkan sisi yang diketahui dari luas."
+      },
+      "remediation": {
+        "en": "Arrange 36 squares into rows of 9 and count the rows.",
+        "id": "Susun 36 persegi menjadi baris berisi 9 dan hitung barisnya."
+      }
+    },
+    {
+      "code": "HALVES_INSTEAD",
+      "description": {
+        "en": "Halves the area as if dividing by 2.",
+        "id": "Membagi dua luasnya seolah-olah dibagi 2."
+      },
+      "remediation": {
+        "en": "Write the multiplication with a box: 9 × ☐ = 36, and test numbers in the box.",
+        "id": "Tulis perkalian dengan kotak: 9 × ☐ = 36, lalu uji bilangan di kotak."
+      }
+    },
+    {
+      "code": "IGNORES_CUTOUT",
+      "description": {
+        "en": "Uses the whole rectangle and forgets the removed part.",
+        "id": "Memakai seluruh persegi panjang dan lupa bagian yang diambil."
+      },
+      "remediation": {
+        "en": "Draw the shape on squared paper and cross out the squares of the removed corner.",
+        "id": "Gambar bangunnya di kertas berpetak dan coret persegi di sudut yang diambil."
+      }
+    },
+    {
+      "code": "LONGER_MEANS_BIGGER",
+      "description": {
+        "en": "Judges area by one dimension or by how the shape looks.",
+        "id": "Menilai luas dari satu ukuran atau dari tampilan bangunnya."
+      },
+      "remediation": {
+        "en": "Cut both shapes from squared paper and count the squares in each.",
+        "id": "Gunting kedua bangun dari kertas berpetak dan hitung persegi di masing-masing."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Plan a pretend new floor: the room is 4 m by 3 m and each tile is 50 cm by 50 cm. How many tiles? (48)",
+      "id": "Rencanakan lantai baru pura-pura: ruangan 4 m kali 3 m dan setiap ubin 50 cm kali 50 cm. Berapa ubin? (48)"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Squared paper with bold lines, or a tiled floor, supports children who find counting small squares hard.",
+      "id": "Kertas berpetak bergaris tebal, atau lantai ubin, membantu anak yang kesulitan menghitung persegi kecil."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Measure floors in a clear, dry area; any cutting of paper shapes is done by an adult with scissors.",
+        "id": "Ukur lantai di area yang lapang dan kering; pemotongan bangun kertas dilakukan orang dewasa dengan gunting."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child finds three rectangle areas, one missing side and one L-shape area correctly, with units, on two different days.",
+      "id": "Dikuasai jika anak mencari tiga luas persegi panjang, satu sisi yang hilang, dan satu luas bangun L dengan benar beserta satuannya, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

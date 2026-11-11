@@ -1,0 +1,288 @@
+{
+  "id": "unit-age4_5-stem-room-treasure-map",
+  "version": "1.0.1",
+  "level": "age4_5",
+  "framework": "stem",
+  "strand": "spatial_reasoning",
+  "title": {
+    "en": "A treasure map of our room",
+    "id": "Peta harta karun ruangan kita"
+  },
+  "prerequisites": [
+    "unit-age2_3-stem-in-on-under"
+  ],
+  "objective": {
+    "en": "Use a simple bird's-eye map of a familiar room to find a hidden toy, then draw a map for someone else and improve it after they test it.",
+    "id": "Menggunakan peta sederhana tampak atas dari ruangan yang akrab untuk menemukan mainan tersembunyi, lalu menggambar peta untuk orang lain dan memperbaikinya setelah mereka mengujinya."
+  },
+  "rationale": {
+    "en": "Reading a map means imagining the room from above and matching shapes to real furniture. This spatial step underpins geography, geometry and later the grids robots move on. Testing a map on another person adds a first taste of design iteration.",
+    "id": "Membaca peta berarti membayangkan ruangan dari atas dan mencocokkan bentuk dengan perabot sungguhan. Langkah ruang ini menjadi dasar geografi, geometri, dan nanti petak tempat robot bergerak. Menguji peta pada orang lain memberi rasa pertama perbaikan rancangan."
+  },
+  "outcomes": [
+    {
+      "en": "Matches map shapes to real furniture.",
+      "id": "Mencocokkan bentuk di peta dengan perabot sungguhan."
+    },
+    {
+      "en": "Draws a map with at least two landmarks and an X that another person can use.",
+      "id": "Menggambar peta dengan paling sedikit dua penanda dan tanda X yang bisa dipakai orang lain."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can find the sofa on the map.",
+      "id": "Aku bisa menemukan sofa di peta."
+    },
+    {
+      "en": "My map helped someone find the treasure.",
+      "id": "Petaku membantu orang menemukan harta karun."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "First, look at things from above together: stand on the floor and look down at a cup, then at a shoe. 'From the top, the cup is a circle.'",
+      "id": "Pertama, lihat benda dari atas bersama: berdiri dan lihat ke bawah ke gelas, lalu ke sepatu. 'Dari atas, gelas terlihat seperti lingkaran.'"
+    },
+    {
+      "en": "Draw big, simple shapes: a long rectangle for the sofa, a square for the table, a gap for the door. Name each shape as you draw.",
+      "id": "Gambar bentuk besar dan sederhana: persegi panjang untuk sofa, persegi untuk meja, celah untuk pintu. Sebutkan setiap bentuk sambil menggambar."
+    },
+    {
+      "en": "Before searching, ask your child to predict: 'Where will the X lead us? Point to the real place.'",
+      "id": "Sebelum mencari, minta anak menebak: 'Tanda X membawa kita ke mana? Tunjuk tempat yang sebenarnya.'"
+    },
+    {
+      "en": "When your child's own map is tested and the searcher gets lost, ask 'What could we add to the map to help?'",
+      "id": "Saat peta buatan anak diuji dan pencari tersesat, tanyakan 'Apa yang bisa kita tambahkan di peta supaya membantu?'"
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Large paper (A3 or two A4 sheets taped together) and thick crayons",
+      "id": "Kertas besar (A3 atau dua A4 yang disambung) dan krayon tebal"
+    },
+    {
+      "en": "A favourite toy to hide as treasure",
+      "id": "Mainan kesayangan untuk disembunyikan sebagai harta karun"
+    },
+    {
+      "en": "The everyday furniture of one room",
+      "id": "Perabot sehari-hari di satu ruangan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw a map of the living room from above before the session: door, sofa, table, window. Keep it on the floor, turned the same way as the room.",
+      "id": "Gambar peta ruang tamu dari atas sebelum kegiatan: pintu, sofa, meja, jendela. Letakkan di lantai, menghadap sama dengan ruangan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Matching: stand at the door with the map. 'Here is the door on the map. Where is the sofa on the map? Where is the real sofa?' Walk to it.",
+      "id": "Mencocokkan: berdiri di pintu dengan peta. 'Ini pintu di peta. Di mana sofa di peta? Di mana sofa yang asli?' Berjalan ke sana."
+    },
+    {
+      "en": "First treasure: hide the toy beside the table leg and draw an X next to the table square. Child predicts, then searches. 'X was next to the table, and here it is!'",
+      "id": "Harta karun pertama: sembunyikan mainan di samping kaki meja dan gambar X di samping persegi meja. Anak menebak, lalu mencari. 'X ada di samping meja, dan ini dia!'"
+    },
+    {
+      "en": "Child's map: your child draws the room and an X for a toy they hide. You search using only the map. If you get lost, say what confused you: 'I could not find the window.'",
+      "id": "Peta anak: anak menggambar ruangan dan X untuk mainan yang ia sembunyikan. Anda mencari hanya dengan peta. Jika tersesat, katakan apa yang membingungkan: 'Aku tidak menemukan jendelanya.'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Hide the toy three times in different places; each time draw only the X on the same map.",
+      "id": "Sembunyikan mainan tiga kali di tempat berbeda; setiap kali gambar hanya X di peta yang sama."
+    },
+    {
+      "en": "Improve the child's map by adding one missing landmark, then test it on another family member.",
+      "id": "Perbaiki peta anak dengan menambah satu penanda yang kurang, lalu uji pada anggota keluarga lain."
+    },
+    {
+      "en": "Draw a map of the bedroom together and hide a sock for a sibling.",
+      "id": "Gambar peta kamar tidur bersama dan sembunyikan kaus kaki untuk kakak atau adik."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Point to the table on the map. Ask: 'How is the map drawn?'",
+        "id": "Tunjuk meja di peta. Tanyakan: 'Peta ini digambar dari mana?'"
+      },
+      "choices": {
+        "en": [
+          "As if we look down from above",
+          "As if we look from the side"
+        ],
+        "id": [
+          "Seperti kita melihat dari atas",
+          "Seperti kita melihat dari samping"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Maps show the room from the top, so the table looks like a square.",
+        "id": "Peta menunjukkan ruangan dari atas, jadi meja terlihat seperti persegi."
+      },
+      "distractorMisconceptions": {
+        "1": "MAP_IS_SIDE_PICTURE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "The X is drawn right next to the long rectangle (the sofa). Where is the toy?",
+        "id": "Tanda X digambar tepat di samping persegi panjang (sofa). Di mana mainannya?"
+      },
+      "choices": {
+        "en": [
+          "Near the sofa",
+          "Near the door",
+          "In the kitchen"
+        ],
+        "id": [
+          "Dekat sofa",
+          "Dekat pintu",
+          "Di dapur"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The X is beside the sofa shape, so the toy is near the real sofa.",
+        "id": "X ada di samping bentuk sofa, jadi mainan ada dekat sofa asli."
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_LANDMARK",
+        "2": "IGNORES_LANDMARK"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Your child's map has only an X and no furniture. The searcher is lost. What would help most?",
+        "id": "Peta anak hanya berisi X tanpa perabot. Pencari tersesat. Apa yang paling membantu?"
+      },
+      "choices": {
+        "en": [
+          "Add the sofa and table so the X has something next to it",
+          "Make the X bigger"
+        ],
+        "id": [
+          "Tambahkan sofa dan meja agar X punya sesuatu di sampingnya",
+          "Buat X lebih besar"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Landmarks tell the searcher where the X is in the room.",
+        "id": "Penanda memberi tahu pencari di mana X berada di ruangan."
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_LANDMARK"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "MAP_IS_SIDE_PICTURE",
+      "description": {
+        "en": "Draws or reads furniture as seen from the side, like a picture.",
+        "id": "Menggambar atau membaca perabot seperti dilihat dari samping, seperti lukisan."
+      },
+      "remediation": {
+        "en": "Stand on the floor and look straight down at a stool, a box and a plate, then trace their outlines from above onto paper.",
+        "id": "Berdiri dan lihat lurus ke bawah ke bangku, kotak, dan piring, lalu jiplak garis luarnya dari atas di kertas."
+      }
+    },
+    {
+      "code": "IGNORES_LANDMARK",
+      "description": {
+        "en": "Looks at the X but not at what is next to it.",
+        "id": "Melihat X tetapi tidak melihat apa yang ada di sampingnya."
+      },
+      "remediation": {
+        "en": "Put a real cushion on the map next to the X and a real cushion in the room, then walk from one to the other.",
+        "id": "Taruh bantal sungguhan di peta dekat X dan bantal sungguhan di ruangan, lalu berjalan dari satu ke yang lain."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add a path line from the door to the X, like a road, and follow it with a toy car on the map before walking it.",
+      "id": "Tambahkan garis jalan dari pintu ke X, seperti jalan raya, dan ikuti dengan mobil-mobilan di peta sebelum berjalan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child with low vision, make a tactile map with folded card shapes glued on cardboard.",
+      "id": "Untuk anak dengan penglihatan rendah, buat peta raba dengan bentuk karton terlipat yang ditempel di kardus."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Hide treasure only at floor level in safe places: never in cupboards with cleaning products, near stoves or behind heavy furniture.",
+        "id": "Sembunyikan harta karun hanya di lantai di tempat aman: jangan di lemari berisi pembersih, dekat kompor, atau di balik perabot berat."
+      },
+      {
+        "en": "Use a toy bigger than the child's fist as treasure.",
+        "id": "Gunakan mainan yang lebih besar dari kepalan anak sebagai harta karun."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child finds a hidden toy from a map and draws a map another person can use, on two different days.",
+      "id": "Dikuasai jika anak menemukan mainan dari peta dan menggambar peta yang bisa dipakai orang lain, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

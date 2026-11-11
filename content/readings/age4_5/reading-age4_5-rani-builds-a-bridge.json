@@ -1,0 +1,267 @@
+{
+  "id": "reading-age4_5-rani-builds-a-bridge",
+  "version": "1.0.1",
+  "level": "age4_5",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Rani builds a bridge",
+    "id": "Rani membuat jembatan"
+  },
+  "text": {
+    "en": [
+      "Rani's toy car wants to visit Grandpa's house. But a blue paper river is in the way!",
+      "Rani lays one thin sheet of paper across the river, resting on two books. The car drives on and… flop! The paper bends, and the car sinks.",
+      "Rani thinks. 'My bridge needs to be stronger.' She folds the paper back and forth, like a fan.",
+      "She lays the folded paper across the same two books. She pushes the car on gently.",
+      "The car rolls over the fan bridge. It does not bend! 'Hooray, the folds made it strong!'",
+      "Grandpa's toy house is waiting on the other side. Toot toot! The car has arrived."
+    ],
+    "id": [
+      "Mobil mainan Rani ingin pergi ke rumah Kakek. Tetapi ada sungai dari kertas biru yang menghalangi!",
+      "Rani meletakkan selembar kertas tipis di atas sungai, bertumpu pada dua buku. Mobilnya melaju dan… plek! Kertasnya melengkung, dan mobilnya tenggelam.",
+      "Rani berpikir. 'Jembatanku harus lebih kuat.' Ia melipat kertas bolak-balik seperti kipas.",
+      "Ia meletakkan kertas berlipat itu di atas dua buku yang sama. Ia mendorong mobilnya pelan-pelan.",
+      "Mobil itu melewati jembatan kipas. Jembatannya tidak melengkung! 'Hore, lipatannya membuatnya kuat!'",
+      "Rumah mainan Kakek sudah menunggu di seberang. Tin tin! Mobilnya sudah sampai."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Make a sad 'oh no' face and point to the river.",
+      "id": "Buat wajah sedih 'aduh' dan tunjuk ke sungai."
+    },
+    {
+      "en": "Hold a flat hand out, then let it droop down on 'flop'.",
+      "id": "Rentangkan tangan datar, lalu biarkan terkulai saat 'plek'."
+    },
+    {
+      "en": "Make a zigzag shape in the air with your finger for the folds.",
+      "id": "Buat bentuk zig-zag di udara dengan jari untuk lipatannya."
+    },
+    {
+      "en": "Put two fists down as the books and lay your other arm across them.",
+      "id": "Letakkan dua kepalan tangan sebagai buku dan bentangkan lengan lain di atasnya."
+    },
+    {
+      "en": "Cheer together and drive a finger 'car' slowly across your arm.",
+      "id": "Bersorak bersama dan jalankan jari sebagai 'mobil' pelan-pelan di lengan."
+    },
+    {
+      "en": "Honk 'toot toot' and wave to Grandpa.",
+      "id": "Bunyikan 'tin tin' dan lambaikan tangan kepada Kakek."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a toy car at a paper river",
+      "id": "Kartu 1: mobil mainan di depan sungai kertas"
+    },
+    {
+      "en": "Card 2: a flat paper bridge bending",
+      "id": "Kartu 2: jembatan kertas datar yang melengkung"
+    },
+    {
+      "en": "Card 3: hands folding paper like a fan",
+      "id": "Kartu 3: tangan melipat kertas seperti kipas"
+    },
+    {
+      "en": "Card 4: the folded bridge resting on two books",
+      "id": "Kartu 4: jembatan berlipat di atas dua buku"
+    },
+    {
+      "en": "Card 5: the car crossing the strong bridge",
+      "id": "Kartu 5: mobil menyeberangi jembatan yang kuat"
+    },
+    {
+      "en": "Card 6: the car at Grandpa's house",
+      "id": "Kartu 6: mobil sampai di rumah Kakek"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Follows a problem-and-solution story: try, notice a problem, change the design, try again.",
+      "id": "Mengikuti cerita masalah dan solusi: mencoba, melihat masalah, mengubah rancangan, mencoba lagi."
+    },
+    {
+      "en": "Discovers that folding paper makes it stronger.",
+      "id": "Menemukan bahwa melipat kertas membuatnya lebih kuat."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "bridge",
+        "id": "jembatan"
+      },
+      "meaning": {
+        "en": "something that goes over water or a gap so you can cross",
+        "id": "sesuatu di atas air atau celah agar kita bisa menyeberang"
+      }
+    },
+    {
+      "word": {
+        "en": "fold",
+        "id": "lipat"
+      },
+      "meaning": {
+        "en": "to bend paper over so it lies on itself",
+        "id": "menekuk kertas sehingga bertumpuk"
+      }
+    },
+    {
+      "word": {
+        "en": "strong",
+        "id": "kuat"
+      },
+      "meaning": {
+        "en": "able to hold something up without breaking or bending",
+        "id": "mampu menahan sesuatu tanpa patah atau melengkung"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What happened to the first flat bridge?",
+        "id": "Apa yang terjadi pada jembatan datar yang pertama?"
+      },
+      "choices": {
+        "en": [
+          "it bent and the car sank",
+          "it flew away",
+          "it turned blue"
+        ],
+        "id": [
+          "melengkung dan mobilnya tenggelam",
+          "terbang",
+          "berubah biru"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Rani do after the first bridge failed?",
+        "id": "Apa yang Rani lakukan setelah jembatan pertama gagal?"
+      },
+      "choices": {
+        "en": [
+          "folded the paper like a fan",
+          "gave up",
+          "drove to Grandpa's on the road"
+        ],
+        "id": [
+          "melipat kertas seperti kipas",
+          "menyerah",
+          "lewat jalan lain ke rumah Kakek"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "science",
+      "prompt": {
+        "en": "What made the new bridge strong?",
+        "id": "Apa yang membuat jembatan baru kuat?"
+      },
+      "choices": {
+        "en": [
+          "the folds in the paper",
+          "the blue colour",
+          "a heavier car"
+        ],
+        "id": [
+          "lipatan pada kertas",
+          "warna biru",
+          "mobil yang lebih berat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "How did Rani feel when the car crossed?",
+        "id": "Bagaimana perasaan Rani saat mobilnya berhasil menyeberang?"
+      },
+      "choices": {
+        "en": [
+          "proud that her idea worked",
+          "bored",
+          "upset with the car"
+        ],
+        "id": [
+          "bangga idenya berhasil",
+          "bosan",
+          "kesal pada mobil"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Engineers test, look at what goes wrong, and improve their design; folds and shapes can make thin materials stronger.",
+        "id": "Insinyur menguji, melihat apa yang salah, lalu memperbaiki rancangan; lipatan dan bentuk bisa membuat bahan tipis lebih kuat."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What else could Rani try to make her bridge stronger?",
+      "id": "Apa lagi yang bisa Rani coba agar jembatannya lebih kuat?"
+    },
+    {
+      "en": "Have you ever tried something again a new way?",
+      "id": "Pernahkah kamu mencoba lagi dengan cara baru?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make the paper river and two book 'banks'. Test a flat sheet, then a fan-folded sheet, with a small toy car. Which holds the car?",
+    "id": "Buat sungai kertas dan dua buku sebagai tepian. Uji selembar kertas datar, lalu kertas yang dilipat seperti kipas, dengan mobil mainan kecil. Mana yang kuat menahan mobil?"
+  },
+  "factChecks": [
+    {
+      "claim": "Folding paper into pleats makes it stiffer and able to hold more weight across a gap.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Use a toy car larger than your child's fist, and keep books low so nothing falls on toes.",
+      "id": "Gunakan mobil mainan yang lebih besar dari kepalan tangan anak, dan letakkan buku rendah agar tidak jatuh mengenai kaki."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "id": "unit-g3-stem-paper-bridge-design",
+  "version": "1.0.1",
+  "level": "g3",
+  "framework": "stem",
+  "strand": "engineering_design",
+  "title": {
+    "en": "Build, test, improve: a paper bridge",
+    "id": "Bangun, uji, perbaiki: jembatan kertas"
+  },
+  "prerequisites": [
+    "unit-g2-stem-paper-spinner-fair-test"
+  ],
+  "objective": {
+    "en": "Design a bridge from one sheet of paper that spans a 20 cm gap, test how many coins it holds, and improve the design through at least two test cycles.",
+    "id": "Merancang jembatan dari satu lembar kertas yang membentang di celah 20 cm, menguji berapa koin yang bisa ditahannya, dan memperbaiki rancangan dalam paling sedikit dua siklus uji."
+  },
+  "rationale": {
+    "en": "The engineering design cycle (ask, imagine, plan, build, test, improve) works best when a test gives a number. A flat sheet sags, but folding the same paper changes its shape and stiffness, so children discover that shape, not just material, makes structures strong.",
+    "id": "Siklus rancangan rekayasa (tanya, bayangkan, rencanakan, bangun, uji, perbaiki) paling berhasil jika uji memberi angka. Selembar kertas datar melengkung, tetapi melipat kertas yang sama mengubah bentuk dan kekakuannya, sehingga anak menemukan bahwa bentuk, bukan hanya bahan, membuat struktur kuat."
+  },
+  "outcomes": [
+    {
+      "en": "Tests at least three bridge designs fairly with the same gap and paper.",
+      "id": "Menguji paling sedikit tiga rancangan jembatan dengan adil memakai celah dan kertas yang sama."
+    },
+    {
+      "en": "Uses test results to explain why a folded shape held more.",
+      "id": "Memakai hasil uji untuk menjelaskan mengapa bentuk terlipat menahan lebih banyak."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I predict, build, test and write down my result.",
+      "id": "Aku menebak, membangun, menguji, dan mencatat hasilku."
+    },
+    {
+      "en": "I improve my design using what the test showed me.",
+      "id": "Aku memperbaiki rancanganku memakai apa yang ditunjukkan uji."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Keep the rules the same for every bridge: one sheet of A4 paper, up to 20 cm of tape, a 20 cm gap between two equal stacks of books.",
+      "id": "Jaga aturan sama untuk setiap jembatan: satu lembar kertas A4, selotip paling banyak 20 cm, celah 20 cm di antara dua tumpukan buku yang sama tinggi."
+    },
+    {
+      "en": "Before each test your child writes a prediction: how many coins will it hold?",
+      "id": "Sebelum setiap uji, anak menulis tebakan: berapa koin yang bisa ditahan?"
+    },
+    {
+      "en": "Add coins one at a time to the middle of the bridge in a small paper cup. Stop when the bridge touches the table; record the last number it held.",
+      "id": "Tambahkan koin satu per satu ke tengah jembatan di dalam gelas kertas kecil. Berhenti saat jembatan menyentuh meja; catat angka terakhir yang tertahan."
+    },
+    {
+      "en": "After each test ask: 'Where did it fail? What will you change?' and keep all broken bridges as evidence.",
+      "id": "Setelah setiap uji tanyakan: 'Di mana gagalnya? Apa yang akan kamu ubah?' dan simpan semua jembatan yang rusak sebagai bukti."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Build a bridge from one sheet of paper. It must cross the 20 cm gap.",
+      "id": "Bangun jembatan dari satu lembar kertas. Harus melintasi celah 20 cm."
+    },
+    {
+      "en": "Predict, then add coins one at a time. Write how many it held.",
+      "id": "Tebak, lalu tambahkan koin satu per satu. Tulis berapa yang tertahan."
+    },
+    {
+      "en": "Change one thing and test again. Which design was best, and why?",
+      "id": "Ubah satu hal dan uji lagi. Rancangan mana yang terbaik, dan mengapa?"
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build and load real paper bridges between two book stacks.",
+        "id": "Bangun dan beri beban jembatan kertas sungguhan di antara dua tumpukan buku."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Sketch each design from the side and the end, and record its result in a table.",
+        "id": "Gambar setiap rancangan dari samping dan dari ujung, dan catat hasilnya di tabel."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Compare results with subtraction: how many more coins did the improved design hold?",
+        "id": "Bandingkan hasil dengan pengurangan: berapa koin lebih banyak yang ditahan rancangan yang diperbaiki?"
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Several sheets of A4 paper (one per design)",
+      "id": "Beberapa lembar kertas A4 (satu per rancangan)"
+    },
+    {
+      "en": "Sticky tape and a ruler",
+      "id": "Selotip dan penggaris"
+    },
+    {
+      "en": "Two equal stacks of books about 10 cm high",
+      "id": "Dua tumpukan buku yang sama, tinggi sekitar 10 cm"
+    },
+    {
+      "en": "About 50 coins of one kind, and a small paper cup",
+      "id": "Sekitar 50 koin satu jenis, dan gelas kertas kecil"
+    },
+    {
+      "en": "Scissors for trimming paper, used with an adult nearby",
+      "id": "Gunting untuk merapikan kertas, dipakai dengan orang dewasa di dekatnya"
+    },
+    {
+      "en": "A design journal: paper and pencil",
+      "id": "Jurnal rancangan: kertas dan pensil"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Set the book stacks exactly 20 cm apart and measure again before every test.",
+      "id": "Letakkan tumpukan buku tepat berjarak 20 cm dan ukur lagi sebelum setiap uji."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Design 1, flat: lay the sheet across the gap. Prediction: 10 coins. Test: it sags as soon as the cup goes on and holds 3 coins. Journal: 'Flat paper bends easily.'",
+      "id": "Rancangan 1, datar: bentangkan kertas di atas celah. Tebakan: 10 koin. Uji: langsung melengkung saat gelas diletakkan dan menahan 3 koin. Jurnal: 'Kertas datar mudah melengkung.'"
+    },
+    {
+      "en": "Design 2, folded edges: fold up 3 cm along both long sides to make a U-shaped channel. Test: 14 coins. The folded sides act like walls that stop the bending.",
+      "id": "Rancangan 2, tepi dilipat: lipat 3 cm ke atas di kedua sisi panjang membentuk saluran berbentuk U. Uji: 14 koin. Sisi yang dilipat bekerja seperti dinding yang mencegah lengkungan."
+    },
+    {
+      "en": "Design 3, zigzag: fold the whole sheet back and forth into a fan, with the fold lines running from one book stack to the other, and stand the cup on the folds. Test: 27 coins. 27 minus 3 is 24 more coins than the flat bridge, with the same one sheet of paper.",
+      "id": "Rancangan 3, zigzag: lipat seluruh kertas bolak-balik seperti kipas, dengan garis lipatan memanjang dari satu tumpukan buku ke tumpukan lainnya, lalu letakkan gelas di atas lipatan. Uji: 27 koin. 27 dikurangi 3 adalah 24 koin lebih banyak daripada jembatan datar, dengan satu lembar kertas yang sama."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Test the flat, U-channel and zigzag designs and record your own numbers (they will be different from the examples).",
+      "id": "Uji rancangan datar, saluran U, dan zigzag lalu catat angkamu sendiri (akan berbeda dari contoh)."
+    },
+    {
+      "en": "Invent a fourth design, such as tubes rolled from strips of the one sheet and taped side by side, predict its result and test it.",
+      "id": "Ciptakan rancangan keempat, seperti tabung yang digulung dari potongan satu lembar kertas itu dan direkatkan berdampingan, tebak hasilnya, dan uji."
+    },
+    {
+      "en": "Improve your best design once more by changing only one thing (fold width, number of folds or tube size) and compare (keep fold lines running bank to bank).",
+      "id": "Perbaiki rancangan terbaikmu sekali lagi dengan mengubah hanya satu hal (lebar lipatan, jumlah lipatan, atau ukuran tabung) dan bandingkan (jaga garis lipatan memanjang dari tepi ke tepi)."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A flat bridge held 3 coins. A zigzag bridge held 27 coins. How many more coins did the zigzag bridge hold?",
+        "id": "Jembatan datar menahan 3 koin. Jembatan zigzag menahan 27 koin. Berapa koin lebih banyak yang ditahan jembatan zigzag?"
+      },
+      "choices": {
+        "en": [
+          "24 more coins",
+          "30 more coins",
+          "9 more coins"
+        ],
+        "id": [
+          "24 koin lebih banyak",
+          "30 koin lebih banyak",
+          "9 koin lebih banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Compare by subtracting: 27 - 3 = 24.",
+        "id": "Bandingkan dengan mengurangkan: 27 - 3 = 24."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "DIVIDES_TO_COMPARE"
+      },
+      "check": {
+        "expression": "27 - 3",
+        "result": "24"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Why did the zigzag bridge hold more than the flat one?",
+        "id": "Mengapa jembatan zigzag menahan lebih banyak daripada yang datar?"
+      },
+      "choices": {
+        "en": [
+          "The folds made the paper deeper and stiffer, so it bent less",
+          "It used more paper",
+          "The coins were lighter"
+        ],
+        "id": [
+          "Lipatan membuat kertas lebih tinggi penampangnya dan lebih kaku, sehingga kurang melengkung",
+          "Memakai lebih banyak kertas",
+          "Koinnya lebih ringan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Same paper, same coins: only the shape changed.",
+        "id": "Kertas sama, koin sama: hanya bentuknya yang berubah."
+      },
+      "distractorMisconceptions": {
+        "1": "MORE_MATERIAL_ONLY_REASON",
+        "2": "CHANGES_TEST_CONDITIONS"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Ana wants to compare two designs fairly. What must stay the same?",
+        "id": "Ana ingin membandingkan dua rancangan dengan adil. Apa yang harus tetap sama?"
+      },
+      "choices": {
+        "en": [
+          "The gap, the paper size and the way coins are added",
+          "Only the colour of the paper",
+          "Nothing; a wider gap makes it more exciting"
+        ],
+        "id": [
+          "Celah, ukuran kertas, dan cara menambahkan koin",
+          "Hanya warna kertas",
+          "Tidak ada; celah lebih lebar lebih seru"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "If the gap or load method changes, we cannot tell whether the design caused the difference.",
+        "id": "Jika celah atau cara memberi beban berubah, kita tidak bisa tahu apakah rancangan yang menyebabkan perbedaan."
+      },
+      "distractorMisconceptions": {
+        "1": "CHANGES_TEST_CONDITIONS",
+        "2": "CHANGES_TEST_CONDITIONS"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A bridge collapsed in the middle. What is the best next step?",
+        "id": "Sebuah jembatan runtuh di tengah. Apa langkah berikutnya yang terbaik?"
+      },
+      "choices": {
+        "en": [
+          "Look at where it failed and strengthen the middle, then test again",
+          "Wrap it in lots more tape",
+          "Give up on paper bridges"
+        ],
+        "id": [
+          "Lihat di mana gagalnya dan perkuat bagian tengah, lalu uji lagi",
+          "Bungkus dengan lebih banyak selotip",
+          "Berhenti membuat jembatan kertas"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Engineers use the failure point to decide what to improve.",
+        "id": "Insinyur memakai titik kegagalan untuk menentukan apa yang diperbaiki."
+      },
+      "distractorMisconceptions": {
+        "1": "MORE_TAPE_ALWAYS_STRONGER",
+        "2": "FAILURE_MEANS_STOP"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds the two results instead of finding the difference.",
+        "id": "Menjumlahkan dua hasil, bukan mencari selisih."
+      },
+      "remediation": {
+        "en": "Make two coin towers, 3 and 27, side by side, and count only the extra coins above the shorter tower.",
+        "id": "Buat dua menara koin, 3 dan 27, berdampingan, dan hitung hanya koin tambahan di atas menara yang lebih pendek."
+      }
+    },
+    {
+      "code": "DIVIDES_TO_COMPARE",
+      "description": {
+        "en": "Says 'how many times' when the question asks 'how many more'.",
+        "id": "Menjawab 'berapa kali lipat' padahal pertanyaannya 'berapa lebih banyak'."
+      },
+      "remediation": {
+        "en": "Draw a bar model with the shorter bar inside the longer one and label the extra piece.",
+        "id": "Gambar model batang dengan batang pendek di dalam batang panjang dan beri label pada bagian lebihnya."
+      }
+    },
+    {
+      "code": "MORE_MATERIAL_ONLY_REASON",
+      "description": {
+        "en": "Believes only more material makes a structure stronger.",
+        "id": "Percaya hanya bahan yang lebih banyak yang membuat struktur lebih kuat."
+      },
+      "remediation": {
+        "en": "Hold a flat sheet by one end (it droops), then fold it into a U-channel and hold it again (it stays straight).",
+        "id": "Pegang selembar kertas datar di satu ujung (melengkung), lalu lipat menjadi saluran U dan pegang lagi (tetap lurus)."
+      }
+    },
+    {
+      "code": "CHANGES_TEST_CONDITIONS",
+      "description": {
+        "en": "Changes the gap, load or method between tests.",
+        "id": "Mengubah celah, beban, atau cara uji di antara pengujian."
+      },
+      "remediation": {
+        "en": "Write a 'test card' with the gap, the cup and the coin rule, and tick each item before every test.",
+        "id": "Tulis 'kartu uji' berisi celah, gelas, dan aturan koin, lalu centang setiap butir sebelum setiap uji."
+      }
+    },
+    {
+      "code": "MORE_TAPE_ALWAYS_STRONGER",
+      "description": {
+        "en": "Thinks adding tape fixes any weakness.",
+        "id": "Mengira menambah selotip memperbaiki semua kelemahan."
+      },
+      "remediation": {
+        "en": "Test a flat sheet covered in tape against a folded sheet with almost none and compare the numbers.",
+        "id": "Uji kertas datar yang dibalut selotip melawan kertas terlipat yang hampir tanpa selotip dan bandingkan angkanya."
+      }
+    },
+    {
+      "code": "FAILURE_MEANS_STOP",
+      "description": {
+        "en": "Treats a collapse as the end rather than information.",
+        "id": "Menganggap keruntuhan sebagai akhir, bukan informasi."
+      },
+      "remediation": {
+        "en": "Label every broken bridge with what it taught you and line them up as a 'learning museum'.",
+        "id": "Beri label setiap jembatan rusak dengan pelajaran yang diberikannya dan jajarkan sebagai 'museum belajar'."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make the gap 30 cm and see which design still works; explain why longer bridges are harder.",
+      "id": "Perlebar celah menjadi 30 cm dan lihat rancangan mana yang masih berhasil; jelaskan mengapa jembatan lebih panjang lebih sulit."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use larger, easier-to-grip blocks or tins as weights for a child with fine-motor difficulty, counting each one the same way.",
+      "id": "Gunakan balok atau kaleng yang lebih besar dan mudah digenggam sebagai beban untuk anak yang kesulitan motorik halus, menghitung setiap beban dengan cara yang sama."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": true,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Coins are a choking hazard: count them back into a jar after each session and keep them away from younger siblings.",
+        "id": "Koin berbahaya jika tertelan: hitung kembali ke toples setelah setiap kegiatan dan jauhkan dari adik yang lebih kecil."
+      },
+      {
+        "en": "Scissors: the adult stays nearby while paper is trimmed.",
+        "id": "Gunting: orang dewasa berada di dekat anak saat kertas dirapikan."
+      },
+      {
+        "en": "Keep book stacks low and steady on the table.",
+        "id": "Jaga tumpukan buku tetap rendah dan stabil di meja."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 50
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child runs three fair tests, records results, and justifies an improved design with evidence, on two different days.",
+      "id": "Dikuasai jika anak menjalankan tiga uji yang adil, mencatat hasil, dan membenarkan rancangan yang diperbaiki dengan bukti, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,5 +1,5 @@
 /** Regenerates src/content-index.ts from content/**: lessons, skills.json, objectives/*.json and the Reading Garden library. */
-import { readdirSync, statSync, writeFileSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const root = join(import.meta.dirname, '../../../content');
@@ -7,6 +7,8 @@ const lessons = [];
 const objectives = [];
 const books = [];
 const passages = [];
+const units = [];
+const readings = [];
 const walk = (dir) => {
   for (const f of readdirSync(dir).sort()) {
     const p = join(dir, f);
@@ -15,6 +17,8 @@ const walk = (dir) => {
     else if (relative(root, dir) === 'objectives' && f.endsWith('.json')) objectives.push(relative(root, p));
     else if (/^book-.*\.json$/.test(f)) books.push(relative(root, p));
     else if (/^passage-.*\.json$/.test(f)) passages.push(relative(root, p));
+    else if (/^unit-.*\.json$/.test(f)) units.push(relative(root, p));
+    else if (/^reading-.*\.json$/.test(f)) readings.push(relative(root, p));
   }
 };
 walk(root);
@@ -29,7 +33,8 @@ books.forEach((f, i) => lines.push(`import b${i} from '../../../content/${f}';`)
 passages.forEach((f, i) => lines.push(`import p${i} from '../../../content/${f}';`));
 lines.push("import skills from '../../../content/skills.json';");
 lines.push("import librarySources from '../../../content/library/sources.json';");
-lines.push("import libraryJourneys from '../../../content/library/journeys.json';", '');
+lines.push("import libraryJourneys from '../../../content/library/journeys.json';");
+lines.push("import expansion from './generated/expansion.json';", '');
 lines.push(`export const RAW_LESSONS: unknown[] = [${lessons.map((_, i) => `l${i}`).join(', ')}];`);
 lines.push(`export const RAW_LESSON_FILES: string[] = ${JSON.stringify(lessons)};`);
 lines.push(`export const RAW_OBJECTIVES: unknown[] = [${objectives.map((_, i) => `o${i}`).join(', ')}];`);
@@ -39,6 +44,15 @@ lines.push(`export const RAW_BOOKS: unknown[] = [${books.map((_, i) => `b${i}`).
 lines.push(`export const RAW_BOOK_FILES: string[] = ${JSON.stringify(books)};`);
 lines.push(`export const RAW_PASSAGES: unknown[] = [${passages.map((_, i) => `p${i}`).join(', ')}];`);
 lines.push('export const RAW_LIBRARY_SOURCES: unknown = librarySources;');
-lines.push('export const RAW_JOURNEYS: unknown = libraryJourneys;', '');
+lines.push('export const RAW_JOURNEYS: unknown = libraryJourneys;');
+lines.push('/** Expansion units and readings (content/units, content/readings), aggregated into one generated JSON file. */');
+lines.push('export const RAW_UNITS: unknown[] = expansion.units;');
+lines.push('export const RAW_READINGS: unknown[] = expansion.readings;');
+lines.push('export const RAW_UNIT_FILES: string[] = expansion.unitFiles;');
+lines.push('export const RAW_READING_FILES: string[] = expansion.readingFiles;', '');
+units.sort();
+readings.sort();
+const load = (f) => JSON.parse(readFileSync(join(root, f), 'utf8'));
+writeFileSync(join(import.meta.dirname, '../src/generated/expansion.json'), JSON.stringify({ units: units.map(load), readings: readings.map(load), unitFiles: units, readingFiles: readings }));
 writeFileSync(join(import.meta.dirname, '../src/content-index.ts'), lines.join('\n'));
-console.log(`Indexed ${lessons.length} lessons, ${objectives.length} objective files, ${books.length} books and ${passages.length} passages.`);
+console.log(`Indexed ${lessons.length} lessons, ${objectives.length} objective files, ${books.length} books, ${passages.length} passages, ${units.length} units and ${readings.length} readings.`);

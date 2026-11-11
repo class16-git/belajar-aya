@@ -1,0 +1,392 @@
+{
+  "id": "unit-g4-stem-if-then-else",
+  "version": "1.0.1",
+  "level": "g4",
+  "framework": "stem",
+  "strand": "block_coding",
+  "title": {
+    "en": "If, then, else: making decisions",
+    "id": "Jika, maka, selain itu: membuat keputusan"
+  },
+  "prerequisites": [
+    "unit-g3-stem-events-when-this-happens"
+  ],
+  "objective": {
+    "en": "Write and run if-then-else rules whose condition is a yes-or-no test, predict which branch runs for given inputs, and test edge cases such as a value equal to the limit.",
+    "id": "Menulis dan menjalankan aturan jika-maka-selain itu yang syaratnya berupa uji ya atau tidak, menebak cabang mana yang berjalan untuk masukan tertentu, dan menguji kasus tepi seperti nilai yang sama dengan batas."
+  },
+  "rationale": {
+    "en": "Conditionals let programs respond to their world. Children already make if-else decisions (if it rains, take an umbrella). Making the condition exact, and testing the boundary case, is the step from everyday reasoning to programming, in any block tool or language.",
+    "id": "Kondisional membuat program bisa menanggapi lingkungannya. Anak sudah membuat keputusan jika-selain itu (jika hujan, bawa payung). Membuat syarat yang tepat, dan menguji kasus batas, adalah langkah dari penalaran sehari-hari ke pemrograman, di alat blok atau bahasa apa pun."
+  },
+  "outcomes": [
+    {
+      "en": "Predicts the branch an if-then-else rule takes for any input card.",
+      "id": "Menebak cabang yang diambil aturan jika-maka-selain itu untuk kartu masukan apa pun."
+    },
+    {
+      "en": "Tests boundary inputs and rewrites a rule to fix an edge-case bug.",
+      "id": "Menguji masukan batas dan menulis ulang aturan untuk memperbaiki bug kasus tepi."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can say which branch runs before I test it.",
+      "id": "Aku bisa mengatakan cabang mana yang berjalan sebelum mengujinya."
+    },
+    {
+      "en": "I test the tricky case right at the limit.",
+      "id": "Aku menguji kasus sulit tepat di batas."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use a deck of number cards 1 to 10. The condition must be a question with only yes or no as an answer, for example 'Is the number greater than 5?'",
+      "id": "Gunakan setumpuk kartu angka 1 sampai 10. Syaratnya harus pertanyaan yang jawabannya hanya ya atau tidak, misalnya 'Apakah angkanya lebih dari 5?'"
+    },
+    {
+      "en": "Lay out the rule on paper as a fork: the condition at the top, the 'then' branch on the yes side and the 'else' branch on the no side.",
+      "id": "Susun aturan di kertas seperti garpu: syarat di atas, cabang 'maka' di sisi ya dan cabang 'selain itu' di sisi tidak."
+    },
+    {
+      "en": "Ask for a prediction for every card before acting it out, and keep a tally of predictions that matched.",
+      "id": "Minta tebakan untuk setiap kartu sebelum diperagakan, dan catat tebakan yang cocok."
+    },
+    {
+      "en": "In free block tools, conditions usually sit inside an 'if' block in a pointed or hexagon-shaped slot; the unplugged fork is the same idea.",
+      "id": "Di alat blok gratis, syarat biasanya berada di dalam blok 'jika' pada celah berbentuk runcing atau segi enam; garpu tanpa komputer adalah gagasan yang sama."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Turn over a card. Ask the condition question. Yes: do the 'then' action. No: do the 'else' action.",
+      "id": "Buka satu kartu. Ajukan pertanyaan syarat. Ya: lakukan aksi 'maka'. Tidak: lakukan aksi 'selain itu'."
+    },
+    {
+      "en": "Always test the number right at the limit. Did your rule do what you wanted?",
+      "id": "Selalu uji angka tepat di batas. Apakah aturanmu melakukan yang kamu inginkan?"
+    },
+    {
+      "en": "Design a sorting robot rule, test it on every card and improve it.",
+      "id": "Rancang aturan robot penyortir, uji pada setiap kartu, dan perbaiki."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Act out if-then-else rules with number cards: clap or stomp.",
+        "id": "Peragakan aturan jika-maka-selain itu dengan kartu angka: tepuk atau hentak."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw each rule as a flowchart with a diamond for the question and two arrows for yes and no.",
+        "id": "Gambar setiap aturan sebagai diagram alir dengan belah ketupat untuk pertanyaan dan dua panah untuk ya dan tidak."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write rules as text: if number greater than 5 then clap else stomp.",
+        "id": "Tulis aturan sebagai teks: jika angka lebih dari 5 maka tepuk selain itu hentak."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Number cards 1 to 10 (playing cards or home-made)",
+      "id": "Kartu angka 1 sampai 10 (kartu remi atau buatan sendiri)"
+    },
+    {
+      "en": "A large sheet of paper and markers for the flowchart fork",
+      "id": "Selembar kertas besar dan spidol untuk garpu diagram alir"
+    },
+    {
+      "en": "Picture cards of fruits and vegetables drawn by the child",
+      "id": "Kartu gambar buah dan sayur yang digambar anak"
+    },
+    {
+      "en": "Optional: a computer with any free block-based coding tool, used with an adult",
+      "id": "Pilihan: komputer dengan alat pemrograman blok gratis apa pun, dipakai bersama orang dewasa"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw a large diamond with 'Is the number greater than 5?' and two arrows labelled yes (clap) and no (stomp).",
+      "id": "Gambar belah ketupat besar bertuliskan 'Apakah angkanya lebih dari 5?' dan dua panah berlabel ya (tepuk) dan tidak (hentak)."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Card 8: is 8 greater than 5? Yes, so clap. Card 3: no, so stomp. Card 5: is 5 greater than 5? No! 5 equals 5, so stomp. This is the edge case.",
+      "id": "Kartu 8: apakah 8 lebih dari 5? Ya, jadi tepuk. Kartu 3: tidak, jadi hentak. Kartu 5: apakah 5 lebih dari 5? Tidak! 5 sama dengan 5, jadi hentak. Ini kasus tepi."
+    },
+    {
+      "en": "Fixing a rule: the goal is 'clap for 5 and above'. The rule 'greater than 5' stomps on 5: a bug. Rewrite it as 'Is the number greater than 4?' and retest cards 4, 5 and 6. (Another correct fix: 'Is the number 5 or more?'; 'greater than 4' works only because the cards are whole numbers.)",
+      "id": "Memperbaiki aturan: tujuannya 'tepuk untuk 5 ke atas'. Aturan 'lebih dari 5' menghentak di 5: sebuah bug. Tulis ulang menjadi 'Apakah angkanya lebih dari 4?' dan uji lagi kartu 4, 5, dan 6. (Perbaikan lain yang benar: 'Apakah angkanya 5 atau lebih?'; 'lebih dari 4' hanya berhasil karena kartunya bilangan bulat.)"
+    },
+    {
+      "en": "If without else: 'If it is raining, take an umbrella.' On a sunny day nothing happens, and that is correct. An else branch is optional.",
+      "id": "Jika tanpa selain itu: 'Jika hujan, bawa payung.' Pada hari cerah tidak terjadi apa-apa, dan itu benar. Cabang selain itu bersifat pilihan."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Play ten cards through the clap-or-stomp rule, predicting first and keeping a tally of correct predictions.",
+      "id": "Mainkan sepuluh kartu dengan aturan tepuk-atau-hentak, menebak dulu dan mencatat tebakan yang benar."
+    },
+    {
+      "en": "Design a fruit-sorting robot: 'If it is a fruit, put it in the basket, else put it on the plate.' Find a card that confuses the rule (like a tomato), discuss it, and make the rule clearer.",
+      "id": "Rancang robot penyortir buah: 'Jika itu buah, taruh di keranjang, selain itu taruh di piring.' Cari kartu yang membingungkan aturan (seperti tomat), diskusikan, dan buat aturannya lebih jelas."
+    },
+    {
+      "en": "Optional on a computer: build the clap-or-stomp rule in a free block tool with a 'say' action for each branch, then test 4, 5 and 6.",
+      "id": "Pilihan di komputer: buat aturan tepuk-atau-hentak di alat blok gratis dengan aksi 'katakan' untuk setiap cabang, lalu uji 4, 5, dan 6."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Rule: if number greater than 5 then clap, else stomp. The card is 7. What happens?",
+        "id": "Aturan: jika angka lebih dari 5 maka tepuk, selain itu hentak. Kartunya 7. Apa yang terjadi?"
+      },
+      "choices": {
+        "en": [
+          "Clap",
+          "Stomp",
+          "Clap and stomp"
+        ],
+        "id": [
+          "Tepuk",
+          "Hentak",
+          "Tepuk dan hentak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "7 is greater than 5, so the 'then' branch runs.",
+        "id": "7 lebih dari 5, jadi cabang 'maka' berjalan."
+      },
+      "distractorMisconceptions": {
+        "1": "SWAPS_BRANCHES",
+        "2": "BOTH_BRANCHES_RUN"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Same rule. The card is 5. What happens?",
+        "id": "Aturan yang sama. Kartunya 5. Apa yang terjadi?"
+      },
+      "choices": {
+        "en": [
+          "Stomp",
+          "Clap"
+        ],
+        "id": [
+          "Hentak",
+          "Tepuk"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "5 is not greater than 5, so the condition is false and the else branch runs.",
+        "id": "5 tidak lebih dari 5, jadi syaratnya tidak terpenuhi (bernilai salah) dan cabang selain itu berjalan."
+      },
+      "distractorMisconceptions": {
+        "1": "GREATER_INCLUDES_EQUAL"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Same rule. You play the cards 2, 6, 9, 4 and 8. How many claps are there?",
+        "id": "Aturan yang sama. Kamu memainkan kartu 2, 6, 9, 4, dan 8. Berapa kali tepukan?"
+      },
+      "choices": {
+        "en": [
+          "3 claps",
+          "2 claps",
+          "5 claps"
+        ],
+        "id": [
+          "3 tepukan",
+          "2 tepukan",
+          "5 tepukan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6, 9 and 8 are greater than 5. Five cards minus the two that are not: 5 - 2 = 3.",
+        "id": "6, 9, dan 8 lebih dari 5. Lima kartu dikurangi dua yang tidak: 5 - 2 = 3."
+      },
+      "distractorMisconceptions": {
+        "1": "SWAPS_BRANCHES",
+        "2": "BOTH_BRANCHES_RUN"
+      },
+      "check": {
+        "expression": "5 - 2",
+        "result": "3"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Rule: if it is raining, take an umbrella (no else). It is sunny. What happens?",
+        "id": "Aturan: jika hujan, bawa payung (tanpa selain itu). Hari cerah. Apa yang terjadi?"
+      },
+      "choices": {
+        "en": [
+          "Nothing; the program carries on",
+          "You take the umbrella anyway",
+          "The program stops with an error"
+        ],
+        "id": [
+          "Tidak ada; program berlanjut",
+          "Tetap membawa payung",
+          "Program berhenti karena error"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "When the condition is false and there is no else, the if block is skipped.",
+        "id": "Saat syarat salah dan tidak ada selain itu, blok jika dilewati."
+      },
+      "distractorMisconceptions": {
+        "1": "ELSE_ALWAYS_HAPPENS",
+        "2": "NO_ELSE_MEANS_ERROR"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SWAPS_BRANCHES",
+      "description": {
+        "en": "Runs the else branch when the condition is true, or the reverse.",
+        "id": "Menjalankan cabang selain itu saat syarat benar, atau sebaliknya."
+      },
+      "remediation": {
+        "en": "Say the condition aloud and answer 'yes' or 'no' first, then walk your finger down the matching arrow on the flowchart.",
+        "id": "Ucapkan syaratnya dan jawab 'ya' atau 'tidak' dulu, lalu jalankan jari menyusuri panah yang sesuai di diagram alir."
+      }
+    },
+    {
+      "code": "BOTH_BRANCHES_RUN",
+      "description": {
+        "en": "Thinks both branches run, one after the other.",
+        "id": "Mengira kedua cabang berjalan, satu demi satu."
+      },
+      "remediation": {
+        "en": "Make the fork a real path on the floor with tape: you can walk down only one side at a time.",
+        "id": "Buat garpu menjadi jalur nyata di lantai dengan selotip: kamu hanya bisa berjalan di satu sisi setiap kali."
+      }
+    },
+    {
+      "code": "GREATER_INCLUDES_EQUAL",
+      "description": {
+        "en": "Treats 'greater than' as 'greater than or equal to'.",
+        "id": "Menganggap 'lebih dari' sama dengan 'lebih dari atau sama dengan'."
+      },
+      "remediation": {
+        "en": "Lay cards 4, 5 and 6 on a number line and cover everything 'greater than 5' with a sheet of paper; 5 stays uncovered.",
+        "id": "Letakkan kartu 4, 5, dan 6 di garis bilangan dan tutup semua yang 'lebih dari 5' dengan kertas; 5 tetap terbuka."
+      }
+    },
+    {
+      "code": "ELSE_ALWAYS_HAPPENS",
+      "description": {
+        "en": "Thinks something must always happen, even without an else.",
+        "id": "Mengira harus selalu terjadi sesuatu, walaupun tanpa selain itu."
+      },
+      "remediation": {
+        "en": "Act out the umbrella rule on a sunny day: the actor simply carries on walking.",
+        "id": "Peragakan aturan payung pada hari cerah: pemeran hanya terus berjalan."
+      }
+    },
+    {
+      "code": "NO_ELSE_MEANS_ERROR",
+      "description": {
+        "en": "Believes an if without an else is broken.",
+        "id": "Percaya jika tanpa selain itu adalah rusak."
+      },
+      "remediation": {
+        "en": "Show everyday rules with no else, such as 'if the plate is dirty, wash it', and decide together that they are complete.",
+        "id": "Tunjukkan aturan sehari-hari tanpa selain itu, seperti 'jika piring kotor, cuci', dan putuskan bersama bahwa aturan itu lengkap."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Combine conditions: if the number is greater than 3 and less than 8, clap. Test 3, 4, 7 and 8.",
+      "id": "Gabungkan syarat: jika angka lebih dari 3 dan kurang dari 8, tepuk. Uji 3, 4, 7, dan 8."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Replace claps and stomps with raising a red or a green card for a child who prefers quiet or still responses.",
+      "id": "Ganti tepuk dan hentak dengan mengangkat kartu merah atau hijau untuk anak yang lebih suka respons tenang atau diam."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Stomp gently on a soft floor; keep the space clear of furniture.",
+        "id": "Hentak pelan di lantai yang empuk; jaga area bebas dari perabot."
+      },
+      {
+        "en": "If a computer is used, an adult sets it up and screen time stays short.",
+        "id": "Jika memakai komputer, orang dewasa menyiapkannya dan waktu layar tetap singkat."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child predicts all ten cards correctly, including the boundary card, and fixes one edge-case rule, on two different days.",
+      "id": "Dikuasai jika anak menebak kesepuluh kartu dengan benar, termasuk kartu batas, dan memperbaiki satu aturan kasus tepi, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

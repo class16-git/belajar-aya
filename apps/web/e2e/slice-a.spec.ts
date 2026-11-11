@@ -21,6 +21,7 @@ const PRESCHOOL = [
 ];
 
 async function axe(page: Page, name: string) {
+  await page.waitForFunction(() => document.title.trim().length > 0); // Next streams metadata; a missing title still fails here
   const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
   expect(res.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(' | ')}`), `${name} axe`).toEqual([]);
 }

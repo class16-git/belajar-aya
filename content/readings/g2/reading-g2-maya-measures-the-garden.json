@@ -1,0 +1,216 @@
+{
+  "id": "reading-g2-maya-measures-the-garden",
+  "version": "1.0.1",
+  "level": "g2",
+  "readingLevel": "early",
+  "genre": "fiction",
+  "mode": "independent",
+  "title": {
+    "en": "Maya measures the garden bed",
+    "id": "Maya mengukur bedeng kebun"
+  },
+  "text": {
+    "en": [
+      "Maya and her big brother Doni want to build a fence along one side of the vegetable bed. First they need to know how long it is.",
+      "Maya walks along the bed, heel to toe. 'It is 10 of my feet long!' she says.",
+      "Doni walks along it too. 'No, it is only 8 of my feet long,' he says. They frown. Who is right?",
+      "Mother laughs. 'You are both right. Doni's feet are bigger, so he needs fewer steps.'",
+      "'But the shop will not know how big our feet are,' says Maya. Mother hands her a tape measure.",
+      "Together they measure the bed. It is 2 metres long. 'Now anyone can understand the size,' says Doni."
+    ],
+    "id": [
+      "Maya dan kakaknya, Doni, ingin membuat pagar di satu sisi bedeng sayur. Pertama, mereka perlu tahu berapa panjangnya.",
+      "Maya berjalan di sepanjang bedeng, tumit menyentuh ujung kaki. 'Panjangnya 10 telapak kakiku!' katanya.",
+      "Doni juga berjalan di sepanjang bedeng. 'Bukan, panjangnya cuma 8 telapak kakiku,' katanya. Mereka mengerutkan dahi. Siapa yang benar?",
+      "Ibu tertawa. 'Kalian berdua benar. Kaki Doni lebih besar, jadi ia butuh lebih sedikit langkah.'",
+      "'Tapi toko tidak tahu sebesar apa kaki kita,' kata Maya. Ibu memberinya meteran.",
+      "Bersama-sama mereka mengukur bedeng itu. Panjangnya 2 meter. 'Sekarang semua orang bisa mengerti ukurannya,' kata Doni."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a story and explains why two measurements of the same thing differ.",
+      "id": "Membaca cerita dan menjelaskan mengapa dua ukuran benda yang sama bisa berbeda."
+    },
+    {
+      "en": "Understands why we use standard units like metres.",
+      "id": "Memahami mengapa kita menggunakan satuan baku seperti meter."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "measure",
+        "id": "mengukur"
+      },
+      "meaning": {
+        "en": "to find out how long, heavy or big something is",
+        "id": "mencari tahu panjang, berat, atau besar sesuatu"
+      }
+    },
+    {
+      "word": {
+        "en": "metre",
+        "id": "meter"
+      },
+      "meaning": {
+        "en": "a standard unit for measuring length",
+        "id": "satuan baku untuk mengukur panjang"
+      }
+    },
+    {
+      "word": {
+        "en": "tape measure",
+        "id": "meteran"
+      },
+      "meaning": {
+        "en": "a long strip marked in centimetres and metres",
+        "id": "pita panjang bertanda sentimeter dan meter"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "How many of her feet long was the bed when Maya measured it?",
+        "id": "Berapa telapak kaki Maya panjang bedeng itu?"
+      },
+      "choices": {
+        "en": [
+          "10 feet",
+          "8 feet",
+          "2 feet"
+        ],
+        "id": [
+          "10 telapak kaki",
+          "8 telapak kaki",
+          "2 telapak kaki"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Doni count fewer feet than Maya?",
+        "id": "Mengapa hitungan Doni lebih sedikit daripada Maya?"
+      },
+      "choices": {
+        "en": [
+          "each of his steps covers more ground",
+          "he walked faster",
+          "the bed got shorter"
+        ],
+        "id": [
+          "setiap langkahnya menempuh jarak lebih jauh",
+          "ia berjalan lebih cepat",
+          "bedengnya memendek"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "How many more foot-lengths did Maya count than Doni?",
+        "id": "Berapa telapak kaki lebih banyak hitungan Maya daripada Doni?"
+      },
+      "choices": {
+        "en": [
+          "2 more",
+          "18 more",
+          "8 more"
+        ],
+        "id": [
+          "2 lebih banyak",
+          "18 lebih banyak",
+          "8 lebih banyak"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2,
+      "check": {
+        "expression": "10 - 8",
+        "result": "2"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "critical",
+      "prompt": {
+        "en": "Why was the tape measure better for buying a fence?",
+        "id": "Mengapa meteran lebih baik untuk membeli pagar?"
+      },
+      "choices": {
+        "en": [
+          "a metre is the same for everyone",
+          "it is quicker than walking",
+          "it is a nicer colour"
+        ],
+        "id": [
+          "satu meter sama untuk semua orang",
+          "lebih cepat daripada berjalan",
+          "warnanya lebih bagus"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Non-standard units (feet) give different answers; standard units (metres) let everyone agree.",
+        "id": "Satuan tidak baku (telapak kaki) memberi hasil berbeda; satuan baku (meter) membuat semua orang sepakat."
+      }
+    },
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Builders measure before they make something so the parts fit.",
+        "id": "Pembangun mengukur sebelum membuat sesuatu agar bagian-bagiannya pas."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What else could you use to measure a table without a ruler?",
+      "id": "Apa lagi yang bisa kamu pakai untuk mengukur meja tanpa penggaris?"
+    },
+    {
+      "en": "Would a grown-up get more or fewer steps than Doni? Why?",
+      "id": "Apakah orang dewasa akan menghitung lebih banyak atau lebih sedikit langkah daripada Doni? Mengapa?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Measure a rug or bed with your own feet, then with an adult's feet, then with a tape measure. Write all three results and talk about why they differ.",
+    "id": "Ukur karpet atau tempat tidur dengan telapak kakimu, lalu dengan kaki orang dewasa, lalu dengan meteran. Tulis ketiga hasilnya dan bahas mengapa berbeda."
+  },
+  "factChecks": [],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

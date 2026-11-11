@@ -1,0 +1,310 @@
+{
+  "id": "unit-age3_4-montessori-colour-pairs-matching",
+  "version": "1.0.1",
+  "level": "age3_4",
+  "framework": "montessori",
+  "strand": "sensorial",
+  "title": {
+    "en": "Colour pairs: find the twin",
+    "id": "Pasangan warna: cari kembarannya"
+  },
+  "prerequisites": [],
+  "objective": {
+    "en": "Match six pairs of colour cards by sight alone, and name at least three of the colours.",
+    "id": "Mencocokkan enam pasang kartu warna hanya dengan melihat, dan menyebut nama minimal tiga warna."
+  },
+  "rationale": {
+    "en": "Matching identical colours sharpens visual discrimination and prepares the eye for grading shades later. Separating the cards from any other differences (same size, same shape) isolates colour as the only thing to notice.",
+    "id": "Mencocokkan warna yang sama mempertajam kemampuan membedakan secara visual dan menyiapkan mata untuk mengurutkan gradasi nanti. Kartu dibuat sama ukuran dan bentuknya agar warna menjadi satu-satunya hal yang diperhatikan."
+  },
+  "outcomes": [
+    {
+      "en": "Matches three, then six, pairs of colour cards.",
+      "id": "Mencocokkan tiga, lalu enam, pasang kartu warna."
+    },
+    {
+      "en": "Names red, blue and yellow, and later green, orange and purple.",
+      "id": "Menyebut merah, biru, dan kuning, lalu hijau, oranye, dan ungu."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "All six pairs are matched without the adult's help.",
+      "id": "Keenam pasangan dicocokkan tanpa bantuan orang dewasa."
+    },
+    {
+      "en": "The child finds an object in the room that matches a card.",
+      "id": "Anak menemukan benda di ruangan yang warnanya sama dengan satu kartu."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Start with the three primary colours only: red, blue and yellow, two cards of each.",
+      "id": "Mulai hanya dengan tiga warna dasar: merah, biru, dan kuning, masing-masing dua kartu."
+    },
+    {
+      "en": "Hold cards by the edges so fingers do not cover the colour, and show your child to do the same.",
+      "id": "Pegang kartu di bagian tepi agar jari tidak menutupi warna, dan tunjukkan anak cara yang sama."
+    },
+    {
+      "en": "Teach names in three steps on a later day: 'This is red' — 'Show me red' — 'What is this?' Move to the third step only when the second is easy.",
+      "id": "Ajarkan nama dalam tiga langkah di hari lain: 'Ini merah' — 'Tunjukkan yang merah' — 'Ini warna apa?' Lanjut ke langkah ketiga hanya jika langkah kedua sudah mudah."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Twelve cards of thick card, each at least 8 cm by 5 cm, in six colours (two of each), made from paint sample strips, coloured paper or fabric glued on",
+      "id": "Dua belas kartu dari karton tebal, masing-masing minimal 8 cm x 5 cm, dalam enam warna (dua per warna), dibuat dari contoh cat, kertas warna, atau kain yang ditempel"
+    },
+    {
+      "en": "A small box to keep the cards in",
+      "id": "Kotak kecil untuk menyimpan kartu"
+    },
+    {
+      "en": "A table or mat with a plain, light surface",
+      "id": "Meja atau tikar berpermukaan polos dan terang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult cuts and glues the cards; check both cards of a pair are exactly the same shade.",
+      "id": "Orang dewasa yang memotong dan menempel kartu; pastikan dua kartu sepasang berwarna sama persis."
+    },
+    {
+      "en": "Cover the cards with clear tape so they wipe clean and last longer.",
+      "id": "Lapisi kartu dengan selotip bening agar mudah dibersihkan dan awet."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Lay one card of each colour in a column on the left. Mix their twins in a loose group on the right.",
+      "id": "Letakkan satu kartu setiap warna dalam satu kolom di kiri. Campur kembarannya dalam kelompok di kanan."
+    },
+    {
+      "en": "Pick a card from the group, hold it beside each card in the column in turn, pause at the one that matches, and lay it next to it. Look from one to the other and nod.",
+      "id": "Ambil satu kartu dari kelompok, dekatkan ke setiap kartu di kolom satu per satu, berhenti di yang cocok, dan letakkan di sampingnya. Lihat bergantian lalu mengangguk."
+    },
+    {
+      "en": "Hand your child the next card and let her search the column the same way.",
+      "id": "Berikan kartu berikutnya kepada anak dan biarkan ia mencari di kolom dengan cara yang sama."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Match the three primary pairs, then all six pairs, on the mat.",
+      "id": "Mencocokkan tiga pasang warna dasar, lalu keenam pasang, di atas tikar."
+    },
+    {
+      "en": "Spread one set across the room; the child carries each twin across to its partner.",
+      "id": "Sebar satu set di seberang ruangan; anak membawa kembarannya ke pasangannya satu per satu."
+    },
+    {
+      "en": "Walk around the house with one card and find things of the same colour: a red rambutan, a blue bucket.",
+      "id": "Berkeliling rumah membawa satu kartu dan mencari benda berwarna sama: rambutan merah, ember biru."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Show the red card and three choices. Which does your child choose?",
+        "id": "Tunjukkan kartu merah dan tiga pilihan. Mana yang dipilih anak?"
+      },
+      "choices": {
+        "en": [
+          "The other red card",
+          "The orange card",
+          "The purple card"
+        ],
+        "id": [
+          "Kartu merah yang lain",
+          "Kartu oranye",
+          "Kartu ungu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Only the identical colour is the twin; orange and purple are close neighbours of red.",
+        "id": "Hanya warna yang sama persis yang menjadi kembarannya; oranye dan ungu adalah tetangga dekat merah."
+      },
+      "distractorMisconceptions": {
+        "1": "NEAR_COLOUR_CONFUSION",
+        "2": "NEAR_COLOUR_CONFUSION"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Ask 'Show me blue' with three cards out. Which response shows the name is known?",
+        "id": "Minta 'Tunjukkan yang biru' dengan tiga kartu terbuka. Respons mana yang menunjukkan anak tahu namanya?"
+      },
+      "choices": {
+        "en": [
+          "Points to blue",
+          "Points to whichever card is nearest",
+          "Points to green"
+        ],
+        "id": [
+          "Menunjuk biru",
+          "Menunjuk kartu yang paling dekat",
+          "Menunjuk hijau"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Pointing to the right colour whatever its place shows the name is linked to the colour.",
+        "id": "Menunjuk warna yang benar di mana pun letaknya menunjukkan nama terhubung dengan warnanya."
+      },
+      "distractorMisconceptions": {
+        "1": "GUESSES_BY_POSITION",
+        "2": "NEAR_COLOUR_CONFUSION"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Observe: how does your child decide a pair matches?",
+        "id": "Amati: bagaimana anak memutuskan sepasang kartu cocok?"
+      },
+      "choices": {
+        "en": [
+          "Holds the cards side by side and looks",
+          "Puts down the first card she touches",
+          "Matches the card that is nearest"
+        ],
+        "id": [
+          "Mendekatkan kartu berdampingan lalu melihat",
+          "Meletakkan kartu pertama yang disentuh",
+          "Mencocokkan kartu yang paling dekat"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Side-by-side checking is the careful looking this activity trains; all the cards have the same shape.",
+        "id": "Mengecek berdampingan adalah cara melihat dengan teliti yang dilatih kegiatan ini; semua kartu sama bentuknya."
+      },
+      "distractorMisconceptions": {
+        "1": "RUSHES_MATCH",
+        "2": "GUESSES_BY_POSITION"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "NEAR_COLOUR_CONFUSION",
+      "description": {
+        "en": "Matches colours that are close, such as red with orange.",
+        "id": "Mencocokkan warna yang mirip, seperti merah dengan oranye."
+      },
+      "remediation": {
+        "en": "Go back to three very different colours. Add the close colour later, laid next to its partner so the difference shows.",
+        "id": "Kembali ke tiga warna yang sangat berbeda. Tambahkan warna yang mirip nanti, diletakkan di sebelah pasangannya agar perbedaannya terlihat."
+      }
+    },
+    {
+      "code": "GUESSES_BY_POSITION",
+      "description": {
+        "en": "Points to a place rather than a colour.",
+        "id": "Menunjuk tempat, bukan warna."
+      },
+      "remediation": {
+        "en": "Shuffle the cards' places between each question and use only two cards at first.",
+        "id": "Acak letak kartu di antara setiap pertanyaan dan pakai dua kartu saja dulu."
+      }
+    },
+    {
+      "code": "RUSHES_MATCH",
+      "description": {
+        "en": "Puts cards down quickly without comparing.",
+        "id": "Meletakkan kartu dengan cepat tanpa membandingkan."
+      },
+      "remediation": {
+        "en": "Slow down your own demonstration and make the comparing gesture big: card to card, look, look.",
+        "id": "Perlambat demonstrasi Anda dan buat gerakan membandingkan lebih jelas: kartu ke kartu, lihat, lihat."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a third card of each colour in a lighter shade and talk about 'light blue' and 'dark blue'.",
+      "id": "Buat kartu ketiga setiap warna dengan warna lebih muda dan bicarakan 'biru muda' dan 'biru tua'."
+    },
+    {
+      "en": "Play the matching game in reverse: the child hides a card and the adult finds its twin.",
+      "id": "Main kebalikannya: anak menyembunyikan satu kartu dan orang dewasa mencari kembarannya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child with colour-vision differences, add a small matching texture or symbol on the back of each pair and mention it to your child's doctor or teacher if colour matching stays hard.",
+      "id": "Untuk anak dengan perbedaan penglihatan warna, tambahkan tekstur atau simbol yang sama di belakang setiap pasangan, dan sampaikan kepada dokter atau guru anak jika mencocokkan warna tetap sulit."
+    },
+    {
+      "en": "Large cards on a plain surface help children with low vision.",
+      "id": "Kartu besar di permukaan polos membantu anak dengan penglihatan rendah."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Cards must be at least 8 cm long so none fits in the mouth; the adult does all cutting and keeps scissors and glue out of reach.",
+        "id": "Kartu minimal 8 cm panjangnya agar tidak muat di mulut; orang dewasa yang memotong dan menyimpan gunting serta lem jauh dari jangkauan."
+      },
+      {
+        "en": "Check that the tape covering is not peeling at the corners.",
+        "id": "Pastikan lapisan selotip tidak mengelupas di sudut."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 5,
+    "max": 15
+  },
+  "mastery": {
+    "evidence": "parent_observation",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child matches six pairs alone and names three colours on two different days.",
+      "id": "Dikuasai jika anak mencocokkan enam pasang sendiri dan menyebut tiga warna pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

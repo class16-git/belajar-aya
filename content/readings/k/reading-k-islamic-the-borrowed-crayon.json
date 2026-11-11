@@ -1,0 +1,218 @@
+{
+  "id": "reading-k-islamic-the-borrowed-crayon",
+  "version": "0.1.0",
+  "level": "k",
+  "readingLevel": "emergent",
+  "genre": "fiction",
+  "mode": "shared",
+  "title": {
+    "en": "The borrowed crayon",
+    "id": "Krayon pinjaman"
+  },
+  "text": {
+    "en": [
+      "Dina wants to draw a red flower. But her red crayon is lost.",
+      "Her friend Bima says, 'You can borrow my red one.' Dina says, 'Thank you!'",
+      "Dina draws a big red flower. It is so pretty. She wants to keep the crayon.",
+      "Then Dina remembers what Bu Guru said: the Prophet Muhammad (peace be upon him) was called al-Amin, because people could trust him.",
+      "Dina gives the crayon back. 'Thank you, Bima.' Bima smiles. 'You can borrow it again tomorrow.'"
+    ],
+    "id": [
+      "Dina ingin menggambar bunga merah. Tetapi krayon merahnya hilang.",
+      "Temannya, Bima, berkata, 'Pakai saja krayon merahku.' Dina berkata, 'Terima kasih!'",
+      "Dina menggambar bunga merah yang besar. Cantik sekali. Ia ingin menyimpan krayon itu.",
+      "Lalu Dina ingat kata Bu Guru: Nabi Muhammad shallallahu 'alaihi wa sallam disebut al-Amin, karena orang-orang bisa memercayai beliau.",
+      "Dina mengembalikan krayon itu. 'Terima kasih, Bima.' Bima tersenyum. 'Besok kamu boleh pinjam lagi.'"
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Retells a short story in order.",
+      "id": "Menceritakan ulang cerita pendek secara berurutan."
+    },
+    {
+      "en": "Explains what being trustworthy means with an example.",
+      "id": "Menjelaskan arti amanah dengan contoh."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "borrow",
+        "id": "meminjam"
+      },
+      "meaning": {
+        "en": "to use something and then give it back",
+        "id": "memakai sesuatu lalu mengembalikannya"
+      }
+    },
+    {
+      "word": {
+        "en": "trust",
+        "id": "percaya"
+      },
+      "meaning": {
+        "en": "to believe someone will do the right thing",
+        "id": "yakin seseorang akan berbuat benar"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Dina want to draw?",
+        "id": "Apa yang ingin Dina gambar?"
+      },
+      "choices": {
+        "en": [
+          "a red flower",
+          "a blue car",
+          "a cat"
+        ],
+        "id": [
+          "bunga merah",
+          "mobil biru",
+          "kucing"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Dina do after she drew the flower?",
+        "id": "Apa yang Dina lakukan setelah menggambar bunga?"
+      },
+      "choices": {
+        "en": [
+          "remembered al-Amin and gave the crayon back",
+          "lost the crayon again",
+          "went home"
+        ],
+        "id": [
+          "mengingat al-Amin lalu mengembalikan krayon",
+          "menghilangkan krayon lagi",
+          "pulang ke rumah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why will Bima lend Dina the crayon again?",
+        "id": "Mengapa Bima mau meminjamkan krayon lagi kepada Dina?"
+      },
+      "choices": {
+        "en": [
+          "because Dina showed she can be trusted",
+          "because Bima has no crayons",
+          "because Dina asked loudly"
+        ],
+        "id": [
+          "karena Dina menunjukkan bahwa ia bisa dipercaya",
+          "karena Bima tidak punya krayon",
+          "karena Dina meminta dengan keras"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What does 'borrow' mean?",
+        "id": "Apa arti 'meminjam'?"
+      },
+      "choices": {
+        "en": [
+          "use something and give it back",
+          "keep something forever",
+          "throw something away"
+        ],
+        "id": [
+          "memakai sesuatu lalu mengembalikannya",
+          "menyimpan sesuatu selamanya",
+          "membuang sesuatu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "islamic_values",
+      "connection": {
+        "en": "Being trustworthy (amanah), like the Prophet who was called al-Amin, means looking after what is not ours and giving it back.",
+        "id": "Bersikap amanah, seperti Nabi yang disebut al-Amin, berarti menjaga milik orang lain dan mengembalikannya."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Have you ever borrowed something? What did you do?",
+      "id": "Pernahkah kamu meminjam sesuatu? Apa yang kamu lakukan?"
+    },
+    {
+      "en": "How do you think Dina felt when she gave it back?",
+      "id": "Menurutmu bagaimana perasaan Dina saat mengembalikannya?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Borrow a crayon or pencil from a family member, use it for a drawing, and give it back with a thank you.",
+    "id": "Pinjam krayon atau pensil dari anggota keluarga, pakai untuk menggambar, lalu kembalikan sambil berterima kasih."
+  },
+  "factChecks": [
+    {
+      "claim": "The Prophet Muhammad was known as al-Amin, the trustworthy one, because people could trust him.",
+      "status": "needs_source"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "religious_content",
+    "scholar_wording_required",
+    "source_verification"
+  ],
+  "reviewStatus": "draft",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "tone",
+      "no-invented-citations"
+    ]
+  },
+  "religiousReview": {
+    "doctrinalSchool": null,
+    "fiqhSchool": null,
+    "arabicSource": null,
+    "edition": null,
+    "pageOrSection": null,
+    "translationReviewer": null,
+    "scholarReviewer": null,
+    "reviewedAt": null,
+    "approvalStatus": "unverified",
+    "notes": [
+      "Reading drafted by an AI; teachings are described in plain words and must be confirmed by a qualified scholar. No verse, hadith or quotation is reproduced.",
+      "Confirm the reference to the Prophet as al-Amin and that the honorific should be added after his name in the printed text."
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-islamic",
+    "createdAt": "2026-11-10"
+  }
+}

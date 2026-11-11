@@ -1,0 +1,288 @@
+{
+  "id": "reading-g4-marie-curie-two-sciences",
+  "version": "1.0.1",
+  "level": "g4",
+  "readingLevel": "fluent",
+  "genre": "biography",
+  "mode": "independent",
+  "title": {
+    "en": "Marie Curie: a scientist in two sciences",
+    "id": "Marie Curie: ilmuwan di dua bidang ilmu"
+  },
+  "text": {
+    "en": [
+      "Marie Curie was born Maria Skłodowska in Warsaw, Poland, which was then ruled by Russia, in 1867. She loved learning, but at that time women were not allowed to attend the university in Warsaw.",
+      "Maria saved money and, in 1891, moved to Paris, France, to learn physics and mathematics at a famous university there. She often studied late into the night in a cold little room, and she finished at the top of her class.",
+      "In Paris she met another scientist, Pierre Curie. They married and worked side by side. Marie was fascinated by a strange energy that some substances gave off. She named it radioactivity.",
+      "In 1898, after hard, careful work, the Curies announced the discovery of two new chemical elements. Marie named one polonium, after her home country, Poland. The other they called radium.",
+      "In 1903 Marie, Pierre and another scientist shared the Nobel Prize in Physics. Marie was the first woman to win a Nobel Prize. In 1911 she won a second Nobel Prize, this time in Chemistry, becoming the first person to win Nobel Prizes in two different sciences.",
+      "At the time, nobody fully understood how harmful radioactivity could be to the body. Marie worked with radioactive materials without protection, and her health suffered. She died in 1934. Today scientists who use radioactive materials wear protection and follow strict safety rules.",
+      "Marie Curie's work helped lead to new ways of treating illness and of seeing inside the body. Her life shows how curiosity and patience can change what everyone knows."
+    ],
+    "id": [
+      "Marie Curie lahir dengan nama Maria Skłodowska di Warsawa, Polandia, yang saat itu dikuasai Rusia, pada tahun 1867. Ia suka belajar, tetapi pada masa itu perempuan tidak diizinkan kuliah di universitas di Warsawa.",
+      "Maria menabung lalu, pada tahun 1891, pindah ke Paris, Prancis, untuk belajar fisika dan matematika di sebuah universitas terkenal. Ia sering belajar sampai larut malam di kamar kecil yang dingin, dan lulus dengan nilai terbaik di kelasnya.",
+      "Di Paris ia bertemu ilmuwan lain bernama Pierre Curie. Mereka menikah dan bekerja berdampingan. Marie sangat tertarik pada energi aneh yang dipancarkan beberapa zat. Ia menamainya radioaktivitas.",
+      "Pada tahun 1898, setelah bekerja keras dan teliti, pasangan Curie mengumumkan penemuan dua unsur kimia baru. Marie menamai salah satunya polonium, dari nama negara asalnya, Polandia. Unsur yang lain mereka namai radium.",
+      "Pada tahun 1903, Marie, Pierre, dan seorang ilmuwan lain bersama-sama menerima Hadiah Nobel Fisika. Marie adalah perempuan pertama yang meraih Hadiah Nobel. Pada tahun 1911 ia meraih Hadiah Nobel kedua, kali ini di bidang Kimia, menjadi orang pertama yang memenangkan Hadiah Nobel di dua bidang ilmu yang berbeda.",
+      "Saat itu, belum ada yang benar-benar memahami betapa berbahayanya radioaktivitas bagi tubuh. Marie bekerja dengan bahan radioaktif tanpa pelindung, dan kesehatannya memburuk. Ia meninggal pada tahun 1934. Kini, ilmuwan yang memakai bahan radioaktif mengenakan pelindung dan mematuhi aturan keselamatan yang ketat.",
+      "Karya Marie Curie membantu lahirnya cara-cara baru untuk mengobati penyakit dan melihat bagian dalam tubuh. Hidupnya menunjukkan bahwa rasa ingin tahu dan kesabaran dapat mengubah pengetahuan semua orang."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a biography and places key events on a timeline.",
+      "id": "Membaca biografi dan menempatkan peristiwa penting pada garis waktu."
+    },
+    {
+      "en": "Explains how a person's choices and character shaped their achievements.",
+      "id": "Menjelaskan bagaimana pilihan dan watak seseorang membentuk pencapaiannya."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "element",
+        "id": "unsur"
+      },
+      "meaning": {
+        "en": "a basic substance that cannot be split into simpler substances by chemistry",
+        "id": "zat dasar yang tidak bisa diuraikan menjadi zat lebih sederhana secara kimia"
+      }
+    },
+    {
+      "word": {
+        "en": "radioactivity",
+        "id": "radioaktivitas"
+      },
+      "meaning": {
+        "en": "energy given off by certain substances as they change",
+        "id": "energi yang dipancarkan zat tertentu saat berubah"
+      }
+    },
+    {
+      "word": {
+        "en": "fascinated",
+        "id": "sangat tertarik"
+      },
+      "meaning": {
+        "en": "extremely interested",
+        "id": "sangat berminat"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why did Maria move to Paris?",
+        "id": "Mengapa Maria pindah ke Paris?"
+      },
+      "choices": {
+        "en": [
+          "to study at a university, which women could not do in Warsaw then",
+          "to meet Pierre Curie",
+          "to win a Nobel Prize"
+        ],
+        "id": [
+          "untuk kuliah, yang saat itu tidak boleh dilakukan perempuan di Warsawa",
+          "untuk bertemu Pierre Curie",
+          "untuk memenangkan Hadiah Nobel"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why do you think Marie named an element after Poland?",
+        "id": "Menurutmu mengapa Marie menamai sebuah unsur dari nama Polandia?"
+      },
+      "choices": {
+        "en": [
+          "she was proud of and loved her home country",
+          "Poland discovered it first",
+          "it was found in Polish soil"
+        ],
+        "id": [
+          "ia bangga dan mencintai negara asalnya",
+          "Polandia yang pertama menemukannya",
+          "unsur itu ditemukan di tanah Polandia"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "How many years passed between Marie's first and second Nobel Prizes?",
+        "id": "Berapa tahun jarak antara Hadiah Nobel pertama dan kedua Marie?"
+      },
+      "choices": {
+        "en": [
+          "8 years",
+          "18 years",
+          "10 years"
+        ],
+        "id": [
+          "8 tahun",
+          "18 tahun",
+          "10 tahun"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4,
+      "check": {
+        "expression": "1911 - 1903",
+        "result": "8"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "sequence",
+      "prompt": {
+        "en": "Which happened first?",
+        "id": "Peristiwa mana yang terjadi lebih dulu?"
+      },
+      "choices": {
+        "en": [
+          "Marie met Pierre Curie",
+          "Marie won the Nobel Prize in Chemistry",
+          "polonium was named"
+        ],
+        "id": [
+          "Marie bertemu Pierre Curie",
+          "Marie meraih Hadiah Nobel Kimia",
+          "polonium diberi nama"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q5",
+      "kind": "critical",
+      "prompt": {
+        "en": "What lesson did later scientists learn from Marie's illness?",
+        "id": "Pelajaran apa yang dipetik ilmuwan berikutnya dari penyakit Marie?"
+      },
+      "choices": {
+        "en": [
+          "radioactive materials must be handled with protection",
+          "science should stop",
+          "only men should do experiments"
+        ],
+        "id": [
+          "bahan radioaktif harus ditangani dengan pelindung",
+          "ilmu pengetahuan harus berhenti",
+          "hanya laki-laki yang boleh bereksperimen"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Elements and radioactivity are core ideas in chemistry and physics.",
+        "id": "Unsur dan radioaktivitas adalah gagasan penting dalam kimia dan fisika."
+      }
+    },
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Modern labs protect scientists from radiation with shields and safety rules.",
+        "id": "Laboratorium modern melindungi ilmuwan dari radiasi dengan pelindung dan aturan keselamatan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which of Marie's qualities would help you most in your own learning?",
+      "id": "Sifat Marie yang mana yang paling membantu dalam belajarmu?"
+    },
+    {
+      "en": "Why is it important that a rule stopping girls from studying no longer exists in most places?",
+      "id": "Mengapa penting bahwa aturan yang melarang anak perempuan belajar kini sudah tidak ada di banyak tempat?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make a timeline strip from 1867 to 1934. Mark at least five events from the text, with the year and a small drawing for each.",
+    "id": "Buat garis waktu dari tahun 1867 sampai 1934. Tandai paling sedikit lima peristiwa dari teks, lengkap dengan tahun dan gambar kecil."
+  },
+  "factChecks": [
+    {
+      "claim": "Marie Curie was born Maria Skłodowska in Warsaw, Poland, which was then ruled by Russia, in 1867.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Women could not attend university in Warsaw at that time, so she studied in Paris.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Warsaw was under Russian rule in 1867.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "She moved to Paris in 1891.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The Curies announced the discovery of polonium and radium in 1898.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Marie and Pierre Curie discovered polonium and radium; polonium is named after Poland.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Marie Curie coined the term radioactivity.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "She shared the 1903 Nobel Prize in Physics and was the first woman to win a Nobel Prize.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "She won the 1911 Nobel Prize in Chemistry, the first person to win Nobel Prizes in two different sciences.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "She died in 1934; her illness is widely attributed to long exposure to radiation.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "She finished at the top of her class in physics in Paris.",
+      "status": "needs_source"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "historical_facts"
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

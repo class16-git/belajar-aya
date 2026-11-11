@@ -1,0 +1,302 @@
+{
+  "id": "unit-age2_3-stem-in-on-under",
+  "version": "1.0.1",
+  "level": "age2_3",
+  "framework": "stem",
+  "strand": "spatial_reasoning",
+  "title": {
+    "en": "In, on and under",
+    "id": "Di dalam, di atas, dan di bawah"
+  },
+  "prerequisites": [],
+  "objective": {
+    "en": "Place a large toy, and their own body, in, on and under big household objects when asked, and find a toy hidden in one of those places.",
+    "id": "Menempatkan mainan besar, dan tubuhnya sendiri, di dalam, di atas, dan di bawah benda rumah yang besar saat diminta, serta menemukan mainan yang disembunyikan di tempat itu."
+  },
+  "rationale": {
+    "en": "Position words are the language of spatial reasoning, which later supports maps, geometry and giving directions to a robot. Toddlers build these ideas by moving objects and climbing around them, not by looking at pictures.",
+    "id": "Kata posisi adalah bahasa penalaran ruang, yang kelak mendukung peta, geometri, dan memberi arah pada robot. Batita membangun gagasan ini dengan memindahkan benda dan bergerak di sekitarnya, bukan dengan melihat gambar."
+  },
+  "outcomes": [
+    {
+      "en": "Puts a toy in, on or under a large object when the word is said.",
+      "id": "Menaruh mainan di dalam, di atas, atau di bawah benda besar saat katanya diucapkan."
+    },
+    {
+      "en": "Looks in the named place to find a hidden toy.",
+      "id": "Mencari di tempat yang disebut untuk menemukan mainan yang disembunyikan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I put teddy under the cushion.",
+      "id": "Aku taruh boneka di bawah bantal."
+    },
+    {
+      "en": "I can sit in the box.",
+      "id": "Aku bisa duduk di dalam kardus."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Say one position word at a time and stress it: 'Teddy goes UNDER.' Use the same three words all week.",
+      "id": "Ucapkan satu kata posisi setiap kali dan tekankan: 'Boneka di BAWAH.' Gunakan tiga kata yang sama selama seminggu."
+    },
+    {
+      "en": "Before you hide teddy, ask 'Where will teddy hide? Guess!' Any guess is welcome; then show where and name it.",
+      "id": "Sebelum menyembunyikan boneka, tanyakan 'Boneka mau sembunyi di mana? Tebak!' Tebakan apa pun disambut; lalu tunjukkan dan sebutkan tempatnya."
+    },
+    {
+      "en": "Let your child be the one who hides teddy, and you follow their word to find it. If you look in the wrong place, they get to correct you.",
+      "id": "Biarkan anak yang menyembunyikan boneka, dan Anda mengikuti katanya untuk mencarinya. Jika Anda mencari di tempat yang salah, anak boleh membetulkan Anda."
+    },
+    {
+      "en": "Finish by asking 'Where was teddy?' and let your child point or show.",
+      "id": "Akhiri dengan bertanya 'Tadi boneka di mana?' dan biarkan anak menunjuk atau memperagakan."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "A large empty cardboard box the child can sit in",
+      "id": "Kardus besar kosong yang muat untuk anak duduk"
+    },
+    {
+      "en": "A big floor cushion or folded blanket",
+      "id": "Bantal lantai besar atau selimut terlipat"
+    },
+    {
+      "en": "A low, sturdy chair or small table",
+      "id": "Kursi pendek yang kokoh atau meja kecil"
+    },
+    {
+      "en": "A large soft toy",
+      "id": "Boneka besar"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Clear a soft space on the floor. Check the box edges are smooth and the chair cannot tip.",
+      "id": "Kosongkan area lantai yang empuk. Periksa tepi kardus halus dan kursi tidak mudah terguling."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "In: put teddy in the box, say 'IN', and let your child take it out and put it back in.",
+      "id": "Di dalam: masukkan boneka ke kardus, ucapkan 'DI DALAM', dan biarkan anak mengeluarkan lalu memasukkannya kembali."
+    },
+    {
+      "en": "On and under: put teddy on the cushion ('ON'), then slide it under the cushion ('UNDER'). Lift the cushion together: 'There it is, under!'",
+      "id": "Di atas dan di bawah: taruh boneka di atas bantal ('DI ATAS'), lalu selipkan di bawah bantal ('DI BAWAH'). Angkat bantal bersama: 'Itu dia, di bawah!'"
+    },
+    {
+      "en": "Body turn: 'Can YOU go in the box? Can you crawl under the table?' Name each place as your child moves.",
+      "id": "Giliran tubuh: 'Bisakah KAMU masuk ke kardus? Bisakah kamu merangkak di bawah meja?' Sebutkan setiap tempat saat anak bergerak."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Hide and find: hide teddy under the cushion while your child watches, then say 'Find teddy, under!'",
+      "id": "Sembunyi dan cari: sembunyikan boneka di bawah bantal saat anak melihat, lalu ucapkan 'Cari boneka, di bawah!'"
+    },
+    {
+      "en": "Change the hiding place: turn the box on its side to make a little cave and see if teddy can go in from the side.",
+      "id": "Ubah tempat sembunyi: miringkan kardus menjadi gua kecil dan lihat apakah boneka bisa masuk dari samping."
+    },
+    {
+      "en": "At tidy-up time, ask your child to put a shoe under the chair and a book on the table.",
+      "id": "Saat beres-beres, minta anak menaruh sepatu di bawah kursi dan buku di atas meja."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Say 'Put teddy under the cushion.' What does your child do?",
+        "id": "Ucapkan 'Taruh boneka di bawah bantal.' Apa yang dilakukan anak?"
+      },
+      "choices": {
+        "en": [
+          "Lifts the cushion and puts teddy beneath it",
+          "Puts teddy on top of the cushion"
+        ],
+        "id": [
+          "Mengangkat bantal dan menaruh boneka di bawahnya",
+          "Menaruh boneka di atas bantal"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Under means below the cushion, covered by it.",
+        "id": "Di bawah berarti di sisi bawah bantal, tertutup olehnya."
+      },
+      "distractorMisconceptions": {
+        "1": "ON_UNDER_SWAPPED"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Hide teddy in the box while your child watches. Ask 'Where is teddy?'",
+        "id": "Sembunyikan boneka di dalam kardus saat anak melihat. Tanyakan 'Boneka di mana?'"
+      },
+      "choices": {
+        "en": [
+          "Looks inside the box",
+          "Looks under the chair"
+        ],
+        "id": [
+          "Melihat ke dalam kardus",
+          "Melihat di bawah kursi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Teddy was put in the box, so that is where to look.",
+        "id": "Boneka dimasukkan ke kardus, jadi di situlah mencarinya."
+      },
+      "distractorMisconceptions": {
+        "1": "OUT_OF_SIGHT_GONE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Say 'Can you sit in the box?' What does your child do?",
+        "id": "Ucapkan 'Bisakah kamu duduk di dalam kardus?' Apa yang dilakukan anak?"
+      },
+      "choices": {
+        "en": [
+          "Climbs in and sits inside the box",
+          "Sits next to the box"
+        ],
+        "id": [
+          "Masuk dan duduk di dalam kardus",
+          "Duduk di samping kardus"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Being in the box means the box is around the child.",
+        "id": "Berada di dalam kardus berarti kardus mengelilingi anak."
+      },
+      "distractorMisconceptions": {
+        "1": "NEXT_TO_FOR_IN"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ON_UNDER_SWAPPED",
+      "description": {
+        "en": "Mixes up the position words, often using 'on' for every place.",
+        "id": "Tertukar kata posisi, sering memakai 'di atas' untuk semua tempat."
+      },
+      "remediation": {
+        "en": "Practise one word for a whole day with the child's own body first (sit ON the cushion, hide UNDER the blanket), then go back to the toy.",
+        "id": "Latih satu kata seharian dengan tubuh anak dulu (duduk DI ATAS bantal, sembunyi DI BAWAH selimut), lalu kembali ke mainan."
+      }
+    },
+    {
+      "code": "OUT_OF_SIGHT_GONE",
+      "description": {
+        "en": "Stops searching once a toy is covered, as if it has disappeared.",
+        "id": "Berhenti mencari begitu mainan tertutup, seolah mainan itu hilang."
+      },
+      "remediation": {
+        "en": "Hide teddy only halfway so a leg sticks out, then cover a little more each round.",
+        "id": "Sembunyikan boneka setengah saja sehingga kakinya terlihat, lalu tutup sedikit lebih banyak setiap putaran."
+      }
+    },
+    {
+      "code": "NEXT_TO_FOR_IN",
+      "description": {
+        "en": "Treats being beside an object as being in it.",
+        "id": "Menganggap berada di samping benda sama dengan berada di dalamnya."
+      },
+      "remediation": {
+        "en": "Climb in together and say 'the box is all around us'.",
+        "id": "Masuk bersama dan ucapkan 'kardusnya ada di sekeliling kita'."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add 'next to' for a child who is secure with the first three words.",
+      "id": "Tambahkan 'di samping' untuk anak yang sudah mantap dengan tiga kata pertama."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child with limited mobility, bring the cushion and box to them and let them move the toy only.",
+      "id": "Untuk anak dengan keterbatasan gerak, dekatkan bantal dan kardus kepadanya dan biarkan ia hanya memindahkan mainan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_within_reach",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use only sturdy furniture that will not tip, and stay within reach when your child climbs in or crawls under.",
+        "id": "Gunakan hanya perabot kokoh yang tidak mudah terguling, dan tetap dalam jangkauan saat anak masuk atau merangkak di bawahnya."
+      },
+      {
+        "en": "Never cover your child's face with the blanket or cushion; screen-free activity.",
+        "id": "Jangan pernah menutup wajah anak dengan selimut atau bantal; kegiatan tanpa layar."
+      },
+      {
+        "en": "Never close or tape the flaps while your child is inside the box.",
+        "id": "Jangan pernah menutup atau merekatkan lipatan kardus saat anak di dalamnya."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "mastery": {
+    "evidence": "parent_observation",
+    "reviewAfterDays": [
+      2,
+      5,
+      14
+    ],
+    "masteryRule": {
+      "en": "Secure when the child places a toy correctly for in, on and under, and finds a hidden toy, on two different days.",
+      "id": "Dikuasai jika anak menaruh mainan dengan benar untuk di dalam, di atas, dan di bawah, serta menemukan mainan yang disembunyikan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

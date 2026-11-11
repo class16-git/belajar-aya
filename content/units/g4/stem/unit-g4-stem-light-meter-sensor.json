@@ -1,0 +1,469 @@
+{
+  "id": "unit-g4-stem-light-meter-sensor",
+  "version": "1.0.1",
+  "level": "g4",
+  "framework": "stem",
+  "strand": "sensors",
+  "title": {
+    "en": "Be a light sensor",
+    "id": "Menjadi sensor cahaya"
+  },
+  "prerequisites": [
+    "unit-g4-stem-if-then-else"
+  ],
+  "objective": {
+    "en": "Build a paper light meter, take repeated readings in different places, and use a reading with a threshold rule to explain how a sensor, a decision and an action work together.",
+    "id": "Membuat pengukur cahaya dari kertas, mengambil pembacaan berulang di berbagai tempat, dan memakai pembacaan dengan aturan ambang untuk menjelaskan bagaimana sensor, keputusan, dan aksi bekerja bersama."
+  },
+  "rationale": {
+    "en": "Robots and smart devices follow a sense, decide, act pattern: a sensor turns the world into a number, a rule compares it to a threshold, and an output acts. Building a simple meter makes the 'number from the world' idea concrete and shows why readings vary and must be repeated.",
+    "id": "Robot dan perangkat pintar mengikuti pola merasakan, memutuskan, bertindak: sensor mengubah dunia menjadi angka, aturan membandingkannya dengan ambang, dan keluaran bertindak. Membuat pengukur sederhana menjadikan gagasan 'angka dari dunia' nyata dan menunjukkan mengapa pembacaan bervariasi dan harus diulang."
+  },
+  "outcomes": [
+    {
+      "en": "Takes and records three readings in at least three places.",
+      "id": "Mengambil dan mencatat tiga pembacaan di paling sedikit tiga tempat."
+    },
+    {
+      "en": "Explains a device as sensor, decision and action, using a threshold rule.",
+      "id": "Menjelaskan perangkat sebagai sensor, keputusan, dan aksi, memakai aturan ambang."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "My meter gives a number for how bright a place is.",
+      "id": "Pengukurku memberi angka untuk seberapa terang suatu tempat."
+    },
+    {
+      "en": "I can write a rule that uses my reading to decide what to do.",
+      "id": "Aku bisa menulis aturan yang memakai pembacaanku untuk memutuskan apa yang dilakukan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "The meter works by stacking layers of baking paper over the end of a tube and counting how many layers you can add before you can no longer see a bright mark through it. More layers means a brighter place.",
+      "id": "Pengukur bekerja dengan menumpuk lapisan kertas roti di ujung tabung dan menghitung berapa lapisan yang bisa ditambahkan sebelum tanda terang tidak terlihat lagi. Makin banyak lapisan berarti tempat makin terang."
+    },
+    {
+      "en": "Ask your child to rank the places from brightest to darkest before measuring.",
+      "id": "Minta anak mengurutkan tempat dari paling terang sampai paling gelap sebelum mengukur."
+    },
+    {
+      "en": "Take three readings in each place and use the middle one, explaining that sensors are not perfect.",
+      "id": "Ambil tiga pembacaan di setiap tempat dan pakai nilai tengahnya, sambil menjelaskan bahwa sensor tidak sempurna."
+    },
+    {
+      "en": "Never point the meter at the sun or a bright lamp; aim it at a white sheet of paper in the place being measured.",
+      "id": "Jangan pernah mengarahkan pengukur ke matahari atau lampu terang; arahkan ke selembar kertas putih di tempat yang diukur."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Look through the tube at the white paper. Add one layer at a time until you cannot see the black X. Write the number.",
+      "id": "Lihat melalui tabung ke kertas putih. Tambah satu lapis demi satu lapis sampai tanda X hitam tidak terlihat. Tulis angkanya."
+    },
+    {
+      "en": "Measure three times in each place. Which place is brightest?",
+      "id": "Ukur tiga kali di setiap tempat. Tempat mana yang paling terang?"
+    },
+    {
+      "en": "Write a rule: if my reading is less than a number, then turn on the lamp.",
+      "id": "Tulis aturan: jika pembacaanku kurang dari suatu angka, maka nyalakan lampu."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build the tube meter and take readings in real places at home.",
+        "id": "Buat pengukur tabung dan ambil pembacaan di tempat nyata di rumah."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a bar chart of the middle readings for each place.",
+        "id": "Gambar diagram batang dari pembacaan tengah untuk setiap tempat."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write a threshold rule: if reading less than 3 then lamp on else lamp off, and test it with your data.",
+        "id": "Tulis aturan ambang: jika pembacaan kurang dari 3 maka lampu nyala selain itu lampu mati, dan uji dengan datamu."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A cardboard tube (from kitchen roll) and black paper to wrap around it",
+      "id": "Tabung karton (dari tisu dapur) dan kertas hitam untuk membungkusnya"
+    },
+    {
+      "en": "About 12 squares of baking paper or tracing paper, each a little larger than the tube end",
+      "id": "Sekitar 12 persegi kertas roti atau kertas kalkir, masing-masing sedikit lebih besar dari ujung tabung"
+    },
+    {
+      "en": "A white sheet of paper with a thick black X drawn on it, and a ruler",
+      "id": "Selembar kertas putih dengan tanda X hitam tebal, dan penggaris"
+    },
+    {
+      "en": "Scissors, used with an adult nearby, and sticky tape",
+      "id": "Gunting, dipakai dengan orang dewasa di dekatnya, dan selotip"
+    },
+    {
+      "en": "A recording table: place, reading 1, 2, 3, middle",
+      "id": "Tabel catatan: tempat, pembacaan 1, 2, 3, nilai tengah"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Cut the baking-paper squares. Wrap the tube in black paper so light only enters through the ends.",
+      "id": "Gunting persegi kertas roti. Bungkus tabung dengan kertas hitam agar cahaya hanya masuk dari ujungnya."
+    },
+    {
+      "en": "Fix the setup for every reading: lay the X sheet flat in the place being measured, hold the layered end of the tube 10 cm above the X (check with the ruler), and look through the open end with one eye. An adult tries it first in a bright and a dim place to check that the bright place needs more layers.",
+      "id": "Tetapkan cara yang sama untuk setiap pembacaan: letakkan kertas X datar di tempat yang diukur, pegang ujung tabung yang berlapis 10 cm di atas X (periksa dengan penggaris), dan lihat melalui ujung yang terbuka dengan satu mata. Orang dewasa mencobanya dulu di tempat terang dan redup untuk memastikan tempat terang memerlukan lebih banyak lapisan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Sensor spotting: the automatic light on a porch or in a corridor. Sensor: detects darkness or movement. Decision: is it dark enough? Action: switch the light on. Name each part aloud.",
+      "id": "Mencari sensor: lampu otomatis di teras atau lorong. Sensor: mendeteksi gelap atau gerakan. Keputusan: apakah sudah cukup gelap? Aksi: menyalakan lampu. Sebutkan setiap bagian dengan suara."
+    },
+    {
+      "en": "Readings: by the window Rafi gets 8, 9 and 8 layers, so the middle reading is 8. In the hallway he gets 3, 2 and 3, middle 3. The window is 8 - 3 = 5 layers brighter on this meter.",
+      "id": "Pembacaan: di dekat jendela Rafi mendapat 8, 9, dan 8 lapis, jadi nilai tengahnya 8. Di lorong ia mendapat 3, 2, dan 3, nilai tengah 3. Jendela 8 - 3 = 5 lapis lebih terang pada pengukur ini."
+    },
+    {
+      "en": "Threshold rule: 'If reading less than 4, then lamp on, else lamp off.' Hallway 3: lamp on. Window 8: lamp off. Improve the meter: Rafi's readings jumped about because light leaked through a gap in the sleeve, so he taped the gap and repeated the test.",
+      "id": "Aturan ambang: 'Jika pembacaan kurang dari 4, maka lampu nyala, selain itu lampu mati.' Lorong 3: lampu nyala. Jendela 8: lampu mati. Memperbaiki pengukur: pembacaan Rafi naik-turun karena cahaya bocor lewat celah di pembungkus, jadi ia menutup celah itu dengan selotip dan mengulang uji."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Predict a ranking, then measure four places three times each and compare with your prediction.",
+      "id": "Tebak urutan, lalu ukur empat tempat masing-masing tiga kali dan bandingkan dengan tebakanmu."
+    },
+    {
+      "en": "Measure the same place in the morning and the evening and explain the change.",
+      "id": "Ukur tempat yang sama pada pagi dan sore hari dan jelaskan perubahannya."
+    },
+    {
+      "en": "Choose a threshold for a 'reading lamp robot' and test whether your rule would turn the lamp on in the right places; adjust the threshold if not.",
+      "id": "Pilih ambang untuk 'robot lampu baca' dan uji apakah aturanmu menyalakan lampu di tempat yang tepat; sesuaikan ambangnya jika tidak."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "An automatic night light turns on when it gets dark. Which part is the sensor?",
+        "id": "Lampu tidur otomatis menyala saat gelap. Bagian mana yang merupakan sensor?"
+      },
+      "choices": {
+        "en": [
+          "The part that detects how much light there is",
+          "The bulb that shines",
+          "The plastic cover"
+        ],
+        "id": [
+          "Bagian yang mendeteksi banyaknya cahaya",
+          "Bohlam yang bersinar",
+          "Penutup plastik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The sensor measures the world; the bulb is the action.",
+        "id": "Sensor mengukur dunia; bohlam adalah aksi."
+      },
+      "distractorMisconceptions": {
+        "1": "OUTPUT_IS_SENSOR",
+        "2": "NAMES_CASING_AS_SENSOR"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "The window reading is 8 layers and the hallway reading is 3 layers. How many layers brighter is the window?",
+        "id": "Pembacaan jendela 8 lapis dan lorong 3 lapis. Berapa lapis lebih terang jendela?"
+      },
+      "choices": {
+        "en": [
+          "5 layers",
+          "11 layers",
+          "3 layers"
+        ],
+        "id": [
+          "5 lapis",
+          "11 lapis",
+          "3 lapis"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Difference: 8 - 3 = 5.",
+        "id": "Selisih: 8 - 3 = 5."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "REPORTS_SMALLER_READING"
+      },
+      "check": {
+        "expression": "8 - 3",
+        "result": "5"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Rule: if reading less than 4, then lamp on, else lamp off. The reading is 2. What does the lamp do?",
+        "id": "Aturan: jika pembacaan kurang dari 4, maka lampu nyala, selain itu lampu mati. Pembacaannya 2. Apa yang dilakukan lampu?"
+      },
+      "choices": {
+        "en": [
+          "Turns on",
+          "Turns off"
+        ],
+        "id": [
+          "Menyala",
+          "Mati"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2 is less than 4, so the condition is true.",
+        "id": "2 kurang dari 4, jadi syaratnya benar."
+      },
+      "distractorMisconceptions": {
+        "1": "SWAPS_BRANCHES"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Your three readings in one place are 6, 7 and 6. Why take three?",
+        "id": "Tiga pembacaanmu di satu tempat adalah 6, 7, dan 6. Mengapa mengambil tiga?"
+      },
+      "choices": {
+        "en": [
+          "Readings vary a little, so repeating gives a more trustworthy value",
+          "The first reading is always wrong",
+          "To make the number bigger"
+        ],
+        "id": [
+          "Pembacaan sedikit bervariasi, jadi mengulang memberi nilai yang lebih bisa dipercaya",
+          "Pembacaan pertama selalu salah",
+          "Supaya angkanya lebih besar"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Real sensors vary; repeated readings show the typical value.",
+        "id": "Sensor nyata bervariasi; pembacaan berulang menunjukkan nilai yang biasa."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_READING_ENOUGH",
+        "2": "ONE_READING_ENOUGH"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "In a sense, decide, act device, which part compares the reading with the threshold?",
+        "id": "Pada perangkat merasakan, memutuskan, bertindak, bagian mana yang membandingkan pembacaan dengan ambang?"
+      },
+      "choices": {
+        "en": [
+          "The decision (the rule or program)",
+          "The sensor",
+          "The light bulb"
+        ],
+        "id": [
+          "Keputusan (aturan atau program)",
+          "Sensor",
+          "Bohlam lampu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The sensor only measures; the program decides.",
+        "id": "Sensor hanya mengukur; program yang memutuskan."
+      },
+      "distractorMisconceptions": {
+        "1": "SENSOR_DECIDES",
+        "2": "OUTPUT_IS_SENSOR"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "OUTPUT_IS_SENSOR",
+      "description": {
+        "en": "Names the visible output (the light) as the sensor.",
+        "id": "Menyebut keluaran yang terlihat (lampu) sebagai sensor."
+      },
+      "remediation": {
+        "en": "Play 'human device': one person covers and uncovers their eyes (sensor), one says the rule (decision), one switches a torch (action).",
+        "id": "Main 'perangkat manusia': satu orang menutup dan membuka mata (sensor), satu mengucapkan aturan (keputusan), satu menyalakan senter (aksi)."
+      }
+    },
+    {
+      "code": "SENSOR_DECIDES",
+      "description": {
+        "en": "Thinks the sensor itself chooses what happens.",
+        "id": "Mengira sensor sendiri yang memilih apa yang terjadi."
+      },
+      "remediation": {
+        "en": "Keep the same reading but change the rule's threshold, and show the action changes while the sensor did not.",
+        "id": "Pertahankan pembacaan yang sama tetapi ubah ambang aturannya, dan tunjukkan aksinya berubah sementara sensornya tidak."
+      }
+    },
+    {
+      "code": "BIGGER_NUMBER_DARKER",
+      "description": {
+        "en": "Reverses the scale, thinking more layers means darker.",
+        "id": "Membalik skala, mengira lebih banyak lapisan berarti lebih gelap."
+      },
+      "remediation": {
+        "en": "Measure the window and a cupboard side by side and write 'bright' and 'dark' next to the numbers.",
+        "id": "Ukur jendela dan lemari berdampingan dan tulis 'terang' dan 'gelap' di samping angkanya."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds two readings to compare them.",
+        "id": "Menjumlahkan dua pembacaan untuk membandingkannya."
+      },
+      "remediation": {
+        "en": "Build two stacks of layers, 8 and 3, and count only the extra layers on the taller stack.",
+        "id": "Buat dua tumpukan lapisan, 8 dan 3, dan hitung hanya lapisan tambahan di tumpukan yang lebih tinggi."
+      }
+    },
+    {
+      "code": "ONE_READING_ENOUGH",
+      "description": {
+        "en": "Trusts a single reading.",
+        "id": "Mempercayai satu pembacaan saja."
+      },
+      "remediation": {
+        "en": "Take five quick readings in one spot and line them up; talk about which value appears most.",
+        "id": "Ambil lima pembacaan cepat di satu tempat dan jajarkan; bicarakan nilai mana yang paling sering muncul."
+      }
+    },
+    {
+      "code": "NAMES_CASING_AS_SENSOR",
+      "description": {
+        "en": "Names the outer case or cover as the sensor.",
+        "id": "Menyebut penutup atau casing luar sebagai sensor."
+      },
+      "remediation": {
+        "en": "Ask 'which part would stop the light working if you covered it?' and cover each part in turn.",
+        "id": "Tanyakan 'bagian mana yang membuat lampu berhenti bekerja jika ditutup?' dan tutup setiap bagian bergantian."
+      }
+    },
+    {
+      "code": "REPORTS_SMALLER_READING",
+      "description": {
+        "en": "Gives one of the readings instead of the difference.",
+        "id": "Memberikan salah satu pembacaan, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Draw both readings as bars and shade only the part of the longer bar that sticks out.",
+        "id": "Gambar kedua pembacaan sebagai batang dan arsir hanya bagian batang panjang yang lebih."
+      }
+    },
+    {
+      "code": "SWAPS_BRANCHES",
+      "description": {
+        "en": "Runs the else branch when the condition is true, or the reverse.",
+        "id": "Menjalankan cabang selain itu saat syarat benar, atau sebaliknya."
+      },
+      "remediation": {
+        "en": "Say the condition aloud, answer yes or no first, then follow the matching arrow on the flowchart.",
+        "id": "Ucapkan syaratnya, jawab ya atau tidak dulu, lalu ikuti panah yang sesuai di diagram alir."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a 'sound meter' scale for how loud places are, from 0 (silent) to 5 (very loud), and write a rule for a quiet-room sign.",
+      "id": "Buat skala 'pengukur suara' untuk seberapa bising tempat, dari 0 (sunyi) sampai 5 (sangat bising), dan tulis aturan untuk tanda ruang tenang."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child with low vision can work with a partner who reports when the X disappears, while the child stacks and counts the layers by touch.",
+      "id": "Anak dengan penglihatan rendah bisa bekerja dengan pasangan yang memberi tahu saat X hilang, sementara anak menumpuk dan menghitung lapisan dengan meraba."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": true,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Never look at the sun or straight into a lamp, with or without the tube; always aim at the white paper.",
+        "id": "Jangan pernah melihat matahari atau langsung ke lampu, dengan atau tanpa tabung; selalu arahkan ke kertas putih."
+      },
+      {
+        "en": "Scissors: an adult stays nearby while squares are cut.",
+        "id": "Gunting: orang dewasa berada di dekat anak saat persegi digunting."
+      },
+      {
+        "en": "Do not touch light fittings or switches with wet hands while measuring.",
+        "id": "Jangan menyentuh lampu atau saklar dengan tangan basah saat mengukur."
+      },
+      {
+        "en": "Do not move or unplug lamps to take readings.",
+        "id": "Jangan memindahkan atau mencabut lampu untuk mengambil pembacaan."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 45
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child records repeated readings, explains sense-decide-act with a threshold rule and improves the meter after a test.",
+      "id": "Dikuasai jika anak mencatat pembacaan berulang, menjelaskan merasakan-memutuskan-bertindak dengan aturan ambang, dan memperbaiki pengukur setelah diuji."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

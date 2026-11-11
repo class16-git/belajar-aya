@@ -1,0 +1,230 @@
+{
+  "id": "reading-g1-islamic-wudu-with-kakek",
+  "version": "0.1.0",
+  "level": "g1",
+  "readingLevel": "early",
+  "genre": "fiction",
+  "mode": "shared",
+  "title": {
+    "en": "Wudu with Kakek",
+    "id": "Berwudu bersama Kakek"
+  },
+  "text": {
+    "en": [
+      "It is almost time for Zuhur. Kakek and Fajar go to the tap in the yard.",
+      "Fajar turns the tap on all the way. Whoosh! The water splashes everywhere.",
+      "Kakek smiles and turns it down. 'A little water is enough, Fajar. Water is a gift. We do not waste it.'",
+      "Fajar watches Kakek carefully. Hands, mouth, nose, face. Then arms, head, ears and feet.",
+      "Now it is Fajar's turn. He goes slowly, one step at a time, with a thin stream of water.",
+      "'Look, Kakek, only a little puddle!' Kakek pats his shoulder. 'Now we are ready to pray.'"
+    ],
+    "id": [
+      "Hampir waktu Zuhur. Kakek dan Fajar pergi ke keran di halaman.",
+      "Fajar membuka keran sampai penuh. Byur! Air memercik ke mana-mana.",
+      "Kakek tersenyum dan mengecilkannya. 'Sedikit air sudah cukup, Fajar. Air itu nikmat. Kita tidak menyia-nyiakannya.'",
+      "Fajar memperhatikan Kakek dengan saksama. Tangan, mulut, hidung, wajah. Lalu lengan, kepala, telinga, dan kaki.",
+      "Sekarang giliran Fajar. Ia berwudu pelan-pelan, satu langkah demi satu langkah, dengan aliran air yang kecil.",
+      "'Lihat, Kek, genangannya sedikit saja!' Kakek menepuk bahunya. 'Sekarang kita siap salat.'"
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Retells the story in order.",
+      "id": "Menceritakan ulang cerita secara berurutan."
+    },
+    {
+      "en": "Explains why Kakek used a little water.",
+      "id": "Menjelaskan mengapa Kakek memakai sedikit air."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "wudu",
+        "id": "wudu"
+      },
+      "meaning": {
+        "en": "washing and wiping parts of the body in order before prayer",
+        "id": "membasuh dan mengusap anggota tubuh secara berurutan sebelum salat"
+      }
+    },
+    {
+      "word": {
+        "en": "waste",
+        "id": "menyia-nyiakan"
+      },
+      "meaning": {
+        "en": "to use more than we need",
+        "id": "memakai lebih dari yang dibutuhkan"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where did Kakek and Fajar do wudu?",
+        "id": "Di mana Kakek dan Fajar berwudu?"
+      },
+      "choices": {
+        "en": [
+          "at the tap in the yard",
+          "at the river",
+          "in the kitchen"
+        ],
+        "id": [
+          "di keran halaman",
+          "di sungai",
+          "di dapur"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happened right after Fajar turned the tap on all the way?",
+        "id": "Apa yang terjadi tepat setelah Fajar membuka keran sampai penuh?"
+      },
+      "choices": {
+        "en": [
+          "water splashed everywhere",
+          "Kakek went inside",
+          "they started praying"
+        ],
+        "id": [
+          "air memercik ke mana-mana",
+          "Kakek masuk ke rumah",
+          "mereka mulai salat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why was Fajar pleased with the little puddle?",
+        "id": "Mengapa Fajar senang dengan genangan yang sedikit?"
+      },
+      "choices": {
+        "en": [
+          "it showed he had not wasted water",
+          "he likes jumping in puddles",
+          "the tap was broken"
+        ],
+        "id": [
+          "itu menunjukkan ia tidak membuang-buang air",
+          "ia suka melompat di genangan",
+          "kerannya rusak"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "In the story, what does 'waste' mean?",
+        "id": "Dalam cerita, apa arti 'menyia-nyiakan'?"
+      },
+      "choices": {
+        "en": [
+          "use more than we need",
+          "keep something clean",
+          "share with others"
+        ],
+        "id": [
+          "memakai lebih dari yang dibutuhkan",
+          "menjaga sesuatu tetap bersih",
+          "berbagi dengan orang lain"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "islamic_values",
+      "connection": {
+        "en": "Wudu is done in order with care, and using water without waste is part of good Muslim manners.",
+        "id": "Wudu dilakukan berurutan dengan cermat, dan memakai air tanpa berlebihan adalah bagian dari adab Muslim yang baik."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Saving water at the tap helps care for the earth.",
+        "id": "Menghemat air di keran membantu menjaga bumi."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "How can you use less water when you wash your hands?",
+      "id": "Bagaimana kamu bisa memakai lebih sedikit air saat mencuci tangan?"
+    },
+    {
+      "en": "Who helps you learn wudu?",
+      "id": "Siapa yang membantumu belajar wudu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Do wudu beside a grown-up with a thin stream of water, then look at how much water is left in the basin or on the floor.",
+    "id": "Berwudulah di samping orang dewasa dengan aliran air yang kecil, lalu lihat berapa banyak air yang tersisa di baskom atau di lantai."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Wudu is practised with a grown-up beside the child; wipe wet floors to prevent slipping.",
+      "id": "Wudu dilatih dengan orang dewasa di samping anak; lap lantai basah agar tidak terpeleset."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "religious_content",
+    "scholar_wording_required",
+    "fiqh_ruling",
+    "madhhab_selection",
+    "source_verification"
+  ],
+  "reviewStatus": "draft",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "tone",
+      "no-invented-citations"
+    ]
+  },
+  "religiousReview": {
+    "doctrinalSchool": null,
+    "fiqhSchool": null,
+    "arabicSource": null,
+    "edition": null,
+    "pageOrSection": null,
+    "translationReviewer": null,
+    "scholarReviewer": null,
+    "reviewedAt": null,
+    "approvalStatus": "unverified",
+    "notes": [
+      "Reading drafted by an AI; teachings are described in plain words and must be confirmed by a qualified scholar. No verse, hadith or quotation is reproduced.",
+      "The wudu steps are listed only in outline; confirm their order and wording for the family's madhhab.",
+      "Confirm the plain-words teaching on not wasting water."
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-islamic",
+    "createdAt": "2026-11-10"
+  }
+}

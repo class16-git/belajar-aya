@@ -1,0 +1,295 @@
+{
+  "id": "reading-g5-why-the-moon-changes-shape",
+  "version": "1.0.1",
+  "level": "g5",
+  "readingLevel": "fluent",
+  "genre": "explanatory",
+  "mode": "independent",
+  "title": {
+    "en": "Why the Moon seems to change shape",
+    "id": "Mengapa Bulan tampak berubah bentuk"
+  },
+  "text": {
+    "en": [
+      "On some nights the Moon is a bright round disc. On others it is a thin curve, and on some nights we cannot see it at all. Yet the Moon itself never changes shape. So what is going on?",
+      "The Moon does not make its own light. Like a ball lit by a torch in a dark room, it shines only because sunlight falls on it and bounces off towards us.",
+      "At every moment, the Sun lights up exactly half of the Moon — the half facing the Sun. The other half is in darkness.",
+      "The Moon travels around the Earth, taking about 29.5 days for one full cycle of shapes. As it moves, we see different amounts of its sunlit half. These changing views are called the phases of the Moon.",
+      "When the Moon is between the Earth and the Sun, its sunlit half faces away from us, so we see almost nothing: this is the new moon. As it moves on, a thin crescent appears and grows, or waxes, night by night.",
+      "About halfway through the cycle, the Earth is between the Sun and the Moon, and we see the whole sunlit face: a full moon. After that, the lit part shrinks, or wanes, back towards the next new moon.",
+      "You can test this yourself with a lamp, a ball on a stick and your own head playing the part of the Earth."
+    ],
+    "id": [
+      "Pada malam tertentu, Bulan berupa piringan bulat yang terang. Pada malam lain, Bulan berupa lengkungan tipis, dan ada malam-malam ketika kita sama sekali tidak bisa melihatnya. Padahal bentuk Bulan sendiri tidak pernah berubah. Jadi apa yang terjadi?",
+      "Bulan tidak menghasilkan cahayanya sendiri. Seperti bola yang disorot senter di ruangan gelap, Bulan bersinar hanya karena cahaya Matahari jatuh ke permukaannya lalu dipantulkan ke arah kita.",
+      "Setiap saat, Matahari menerangi tepat separuh Bulan — separuh yang menghadap Matahari. Separuh lainnya gelap.",
+      "Bulan mengelilingi Bumi, dan satu siklus penuh perubahan bentuknya memakan waktu sekitar 29,5 hari. Saat Bulan bergerak, kita melihat bagian sisi terangnya dalam jumlah berbeda. Perubahan penampakan ini disebut fase Bulan.",
+      "Saat Bulan berada di antara Bumi dan Matahari, sisi terangnya membelakangi kita, sehingga kita hampir tidak melihat apa-apa: inilah bulan baru. Saat Bulan terus bergerak, sabit tipis muncul dan membesar malam demi malam.",
+      "Kira-kira di pertengahan siklus, Bumi berada di antara Matahari dan Bulan, dan kita melihat seluruh wajah Bulan yang terang: bulan purnama. Setelah itu, bagian yang terang mengecil kembali menuju bulan baru berikutnya.",
+      "Kamu bisa membuktikannya sendiri dengan lampu, bola yang ditusuk tongkat, dan kepalamu sendiri sebagai Bumi."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads an explanation of a cause-and-effect process and retells it in its own words.",
+      "id": "Membaca penjelasan sebab-akibat dan menceritakannya kembali dengan kata-kata sendiri."
+    },
+    {
+      "en": "Explains that Moon phases come from our changing view of its sunlit half.",
+      "id": "Menjelaskan bahwa fase Bulan terjadi karena sudut pandang kita terhadap sisi terangnya berubah."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "phase",
+        "id": "fase"
+      },
+      "meaning": {
+        "en": "one stage in a repeating pattern of change",
+        "id": "satu tahap dalam pola perubahan yang berulang"
+      }
+    },
+    {
+      "word": {
+        "en": "wax",
+        "id": "membesar"
+      },
+      "meaning": {
+        "en": "for the lit part of the Moon to grow",
+        "id": "bagian Bulan yang terang bertambah besar"
+      }
+    },
+    {
+      "word": {
+        "en": "wane",
+        "id": "mengecil"
+      },
+      "meaning": {
+        "en": "for the lit part of the Moon to shrink",
+        "id": "bagian Bulan yang terang berkurang"
+      }
+    },
+    {
+      "word": {
+        "en": "crescent",
+        "id": "sabit"
+      },
+      "meaning": {
+        "en": "a thin curved shape, like a slice of a circle's edge",
+        "id": "bentuk lengkung tipis seperti tepi lingkaran"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main reason the Moon seems to change shape?",
+        "id": "Apa alasan utama Bulan tampak berubah bentuk?"
+      },
+      "choices": {
+        "en": [
+          "we see different amounts of its sunlit half as it orbits",
+          "the Moon grows and shrinks",
+          "the Earth's shadow covers it each night"
+        ],
+        "id": [
+          "kita melihat bagian sisi terangnya dalam jumlah berbeda saat Bulan beredar",
+          "Bulan membesar dan mengecil",
+          "bayangan Bumi menutupinya setiap malam"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where does moonlight come from?",
+        "id": "Dari mana cahaya Bulan berasal?"
+      },
+      "choices": {
+        "en": [
+          "sunlight bouncing off the Moon",
+          "fires on the Moon",
+          "light from the Earth's cities"
+        ],
+        "id": [
+          "cahaya Matahari yang dipantulkan Bulan",
+          "api di Bulan",
+          "cahaya kota-kota di Bumi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "Suppose a cycle of phases is 29.5 days and the full moon comes exactly halfway. How many days after the new moon is that?",
+        "id": "Misalkan satu siklus fase 29,5 hari dan purnama datang tepat di pertengahan. Berapa hari setelah bulan baru itu?"
+      },
+      "choices": {
+        "en": [
+          "14.75 days",
+          "29.5 days",
+          "7 days"
+        ],
+        "id": [
+          "14,75 hari",
+          "29,5 hari",
+          "7 hari"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5,
+      "check": {
+        "expression": "29.5 / 2",
+        "result": "14.75"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why can't we see the new moon even though it is still there?",
+        "id": "Mengapa kita tidak bisa melihat bulan baru padahal Bulan tetap ada?"
+      },
+      "choices": {
+        "en": [
+          "its lit side faces away from Earth",
+          "it has moved behind the Sun for ever",
+          "clouds always cover it"
+        ],
+        "id": [
+          "sisi terangnya membelakangi Bumi",
+          "Bulan pindah ke belakang Matahari selamanya",
+          "awan selalu menutupinya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q5",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "If the Moon is 'waning', it is…",
+        "id": "Jika Bulan sedang 'mengecil', berarti…"
+      },
+      "choices": {
+        "en": [
+          "showing less of its lit side each night",
+          "showing more of its lit side each night",
+          "not moving"
+        ],
+        "id": [
+          "menampakkan sisi terang yang makin sedikit setiap malam",
+          "menampakkan sisi terang yang makin banyak setiap malam",
+          "tidak bergerak"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q6",
+      "kind": "science",
+      "prompt": {
+        "en": "Which model best shows the Moon's phases?",
+        "id": "Model mana yang paling tepat menunjukkan fase Bulan?"
+      },
+      "choices": {
+        "en": [
+          "a lamp as the Sun, a ball as the Moon, your head as the Earth",
+          "a ball that you squash and stretch",
+          "a torch shining through coloured paper"
+        ],
+        "id": [
+          "lampu sebagai Matahari, bola sebagai Bulan, kepala sebagai Bumi",
+          "bola yang dipencet dan direnggangkan",
+          "senter yang disorot menembus kertas berwarna"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "astronomy",
+      "connection": {
+        "en": "The Moon orbits the Earth and reflects sunlight; its phases repeat about every 29.5 days.",
+        "id": "Bulan mengelilingi Bumi dan memantulkan cahaya Matahari; fasenya berulang sekitar setiap 29,5 hari."
+      }
+    },
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Many calendars, including some used in Indonesia, are based on Moon phases.",
+        "id": "Banyak kalender, termasuk yang dipakai di Indonesia, didasarkan pada fase Bulan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Why do you think people long ago used the Moon to keep track of time?",
+      "id": "Menurutmu mengapa orang zaman dulu memakai Bulan untuk menghitung waktu?"
+    },
+    {
+      "en": "If you stood on the Moon during a new moon, what might the Earth look like?",
+      "id": "Jika kamu berdiri di Bulan saat bulan baru, seperti apa Bumi terlihat?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "In a dark room, use one lamp as the Sun. Hold a ball on a stick at arm's length and turn slowly on the spot. Draw the shape of the lit part at eight positions.",
+    "id": "Di ruangan gelap, gunakan satu lampu sebagai Matahari. Pegang bola yang ditusuk tongkat sejauh lengan dan berputar pelan di tempat. Gambar bentuk bagian yang terang di delapan posisi."
+  },
+  "factChecks": [
+    {
+      "claim": "The Moon does not produce its own light; it reflects sunlight.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Half of the Moon is always lit by the Sun.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A full cycle of Moon phases takes about 29.5 days.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A new moon occurs when the Moon is roughly between the Earth and the Sun; a full moon when the Earth is roughly between the Sun and the Moon.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Use a lamp with a shade or a torch, keep the cord out of the way, and do not touch hot bulbs.",
+      "id": "Gunakan lampu berkap atau senter, rapikan kabelnya, dan jangan menyentuh bohlam yang panas."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "id": "reading-age3_4-little-angkot-friends",
+  "version": "1.0.1",
+  "level": "age3_4",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "The little green bus",
+    "id": "Angkot hijau kecil"
+  },
+  "text": {
+    "en": [
+      "Beep beep! The little green bus starts its trip. The driver waves. Nobody is on board yet.",
+      "Stop one! Grandma climbs on with a basket of bananas. One friend on the bus.",
+      "Stop two! A boy with a blue kite climbs on. Two friends on the bus.",
+      "Stop three! A girl with a yellow umbrella climbs on. Three friends on the bus.",
+      "The bus stops at the park. Everyone climbs off and says, 'Thank you, driver!'"
+    ],
+    "id": [
+      "Tin tin! Angkot hijau kecil mulai berjalan. Pak sopir melambai. Belum ada penumpang.",
+      "Pemberhentian satu! Nenek naik membawa keranjang pisang. Satu teman di angkot.",
+      "Pemberhentian dua! Anak laki-laki membawa layang-layang biru naik. Dua teman di angkot.",
+      "Pemberhentian tiga! Anak perempuan membawa payung kuning naik. Tiga teman di angkot.",
+      "Angkot berhenti di taman. Semua turun dan berkata, 'Terima kasih, Pak Sopir!'"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Hold a pretend steering wheel and say 'Beep beep!' together.",
+      "id": "Pegang setir pura-pura dan ucapkan 'Tin tin!' bersama."
+    },
+    {
+      "en": "Hold up one finger and pretend to carry a heavy basket.",
+      "id": "Angkat satu jari dan pura-pura membawa keranjang yang berat."
+    },
+    {
+      "en": "Hold up two fingers and fly a pretend kite.",
+      "id": "Angkat dua jari dan terbangkan layang-layang pura-pura."
+    },
+    {
+      "en": "Hold up three fingers and open a pretend umbrella. Count all three again.",
+      "id": "Angkat tiga jari dan buka payung pura-pura. Hitung ketiganya lagi."
+    },
+    {
+      "en": "Wave goodbye and say thank you in a cheerful voice.",
+      "id": "Lambaikan tangan dan ucapkan terima kasih dengan riang."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: an empty green bus",
+      "id": "Kartu 1: angkot hijau yang kosong"
+    },
+    {
+      "en": "Card 2: grandma with bananas getting on",
+      "id": "Kartu 2: nenek dengan pisang naik"
+    },
+    {
+      "en": "Card 3: a boy with a blue kite getting on",
+      "id": "Kartu 3: anak laki-laki dengan layang-layang biru naik"
+    },
+    {
+      "en": "Card 4: a girl with a yellow umbrella getting on",
+      "id": "Kartu 4: anak perempuan dengan payung kuning naik"
+    },
+    {
+      "en": "Card 5: everyone waving at the park",
+      "id": "Kartu 5: semua melambai di taman"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Counts on by one as each passenger joins: one, two, three.",
+      "id": "Menghitung maju satu per satu saat setiap penumpang naik: satu, dua, tiga."
+    },
+    {
+      "en": "Remembers to say thank you to people who help us.",
+      "id": "Ingat mengucapkan terima kasih kepada orang yang membantu kita."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "passenger",
+        "id": "penumpang"
+      },
+      "meaning": {
+        "en": "a person riding in a bus or car",
+        "id": "orang yang naik bus atau mobil"
+      }
+    },
+    {
+      "word": {
+        "en": "stop",
+        "id": "pemberhentian"
+      },
+      "meaning": {
+        "en": "a place where a bus waits for people",
+        "id": "tempat bus menunggu orang"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "math",
+      "prompt": {
+        "en": "How many passengers were on the bus when it reached the park?",
+        "id": "Ada berapa penumpang di angkot saat sampai di taman?"
+      },
+      "choices": {
+        "en": [
+          "3 passengers",
+          "2 passengers",
+          "4 passengers"
+        ],
+        "id": [
+          "3 penumpang",
+          "2 penumpang",
+          "4 penumpang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3,
+      "check": {
+        "expression": "1 + 1 + 1",
+        "result": "3"
+      }
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Who got on the bus first?",
+        "id": "Siapa yang naik angkot pertama kali?"
+      },
+      "choices": {
+        "en": [
+          "Grandma",
+          "the boy",
+          "the girl"
+        ],
+        "id": [
+          "Nenek",
+          "anak laki-laki",
+          "anak perempuan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "A passenger is…",
+        "id": "Penumpang adalah…"
+      },
+      "choices": {
+        "en": [
+          "a person riding on the bus",
+          "the bus wheel",
+          "a kind of fruit"
+        ],
+        "id": [
+          "orang yang naik angkot",
+          "roda angkot",
+          "sejenis buah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did everyone thank the driver?",
+        "id": "Mengapa semua berterima kasih kepada sopir?"
+      },
+      "choices": {
+        "en": [
+          "he took them where they wanted to go",
+          "he gave them bananas",
+          "he flew the kite"
+        ],
+        "id": [
+          "dia mengantar mereka ke tempat tujuan",
+          "dia memberi mereka pisang",
+          "dia menerbangkan layang-layang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Each stop adds one more passenger, so we count on: one, two, three.",
+        "id": "Setiap pemberhentian menambah satu penumpang, jadi kita menghitung maju: satu, dua, tiga."
+      }
+    },
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Many towns in Indonesia have small minibuses called angkot.",
+        "id": "Banyak kota di Indonesia punya angkot."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Who do you say thank you to every day?",
+      "id": "Kepada siapa kamu berterima kasih setiap hari?"
+    },
+    {
+      "en": "Where would you like the little bus to take you?",
+      "id": "Ke mana kamu ingin angkot kecil mengantarmu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Line up three chairs as a bus. Your child is the driver and drives soft toys to the 'park', counting one more at every stop.",
+    "id": "Susun tiga kursi menjadi angkot. Anak menjadi sopir dan mengantar boneka ke 'taman', menghitung tambah satu di setiap pemberhentian."
+  },
+  "factChecks": [],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

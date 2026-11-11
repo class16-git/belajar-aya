@@ -1,0 +1,467 @@
+{
+  "id": "unit-g6-stem-functions-parameters",
+  "version": "1.0.1",
+  "level": "g6",
+  "framework": "stem",
+  "strand": "programming",
+  "title": {
+    "en": "Functions with parameters",
+    "id": "Fungsi dengan parameter"
+  },
+  "prerequisites": [
+    "unit-g5-stem-variables-trace-tables"
+  ],
+  "objective": {
+    "en": "Define and call functions with parameters, predict what a call produces, and refactor a long program into reusable functions.",
+    "id": "Mendefinisikan dan memanggil fungsi dengan parameter, menebak hasil suatu panggilan, dan menyusun ulang program panjang menjadi fungsi yang bisa dipakai ulang."
+  },
+  "rationale": {
+    "en": "Functions let programmers name a set of steps once and reuse it; parameters make one function work for many cases. Drawing shapes on squared paper with a function like square(size) makes the idea visible and gives exact lengths to check.",
+    "id": "Fungsi membuat pemrogram bisa menamai sekumpulan langkah sekali dan memakainya berulang; parameter membuat satu fungsi bekerja untuk banyak kasus. Menggambar bentuk di kertas berpetak dengan fungsi seperti persegi(ukuran) membuat gagasannya terlihat dan memberi panjang yang tepat untuk diperiksa."
+  },
+  "outcomes": [
+    {
+      "en": "Defines a function with a parameter and calls it with different values.",
+      "id": "Mendefinisikan fungsi dengan parameter dan memanggilnya dengan nilai berbeda."
+    },
+    {
+      "en": "Refactors a repeated program into functions and explains the benefit.",
+      "id": "Menyusun ulang program yang berulang menjadi fungsi dan menjelaskan manfaatnya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can predict what square(3) will draw before I draw it.",
+      "id": "Aku bisa menebak apa yang digambar persegi(3) sebelum menggambarnya."
+    },
+    {
+      "en": "I can make a long program shorter with a function.",
+      "id": "Aku bisa membuat program panjang lebih pendek dengan fungsi."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Write a function definition on a card with a box for its parameter: 'define square(size): repeat 4 [draw size squares forward, turn right]'.",
+      "id": "Tulis definisi fungsi di kartu dengan kotak untuk parameternya: 'definisikan persegi(ukuran): ulangi 4 [gambar maju ukuran kotak, belok kanan]'."
+    },
+    {
+      "en": "Make clear that defining is not running: a recipe in a book does not cook anything until someone uses it.",
+      "id": "Tegaskan bahwa mendefinisikan bukan menjalankan: resep di buku tidak memasak apa pun sampai seseorang memakainya."
+    },
+    {
+      "en": "Ask for predictions before each drawing: shape, side length and total line length.",
+      "id": "Minta tebakan sebelum setiap gambar: bentuk, panjang sisi, dan panjang garis total."
+    },
+    {
+      "en": "Reflect: 'How many lines did the function save? What would be hard without it?'",
+      "id": "Renungkan: 'Berapa baris yang dihemat fungsi? Apa yang sulit tanpa fungsi?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Read the function definition. Predict what each call will draw, then draw it on squared paper.",
+      "id": "Baca definisi fungsi. Tebak apa yang digambar setiap panggilan, lalu gambar di kertas berpetak."
+    },
+    {
+      "en": "Find repeated parts in a long program and turn them into a function with a parameter.",
+      "id": "Cari bagian berulang di program panjang dan ubah menjadi fungsi dengan parameter."
+    },
+    {
+      "en": "Test your function with three different values and improve it if one does not work.",
+      "id": "Uji fungsimu dengan tiga nilai berbeda dan perbaiki jika ada yang tidak bekerja."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Act out a function: a family member is the 'drawer' who follows a function card with the parameter you call out.",
+        "id": "Peragakan fungsi: anggota keluarga menjadi 'penggambar' yang mengikuti kartu fungsi dengan parameter yang kamu sebutkan."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw function calls on squared paper with a pencil, starting from a dot.",
+        "id": "Gambar panggilan fungsi di kertas berpetak dengan pensil, mulai dari sebuah titik."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the programs as text with define, call and parameters, and calculate total line lengths.",
+        "id": "Tulis program sebagai teks dengan definisikan, panggil, dan parameter, lalu hitung panjang garis total."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Squared paper (1 cm squares), pencils, an eraser and a ruler",
+      "id": "Kertas berpetak (kotak 1 cm), pensil, penghapus, dan penggaris"
+    },
+    {
+      "en": "Function cards and program cards written by the adult",
+      "id": "Kartu fungsi dan kartu program yang ditulis orang dewasa"
+    },
+    {
+      "en": "Optional: a computer with any free block-based coding tool that lets you make your own blocks, used with an adult",
+      "id": "Pilihan: komputer dengan alat pemrograman blok gratis apa pun yang bisa membuat blok sendiri, dipakai bersama orang dewasa"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write the square(size) function on a card, and a 12-line program that draws squares of sizes 2, 4 and 6 the long way.",
+      "id": "Tulis fungsi persegi(ukuran) di kartu, serta program 12 baris yang menggambar persegi berukuran 2, 4, dan 6 dengan cara panjang."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Call square(3): repeat 4 times, draw 3 squares forward and turn right. Prediction: a square with sides of 3, total line 4 × 3 = 12 units. Draw and count: 12.",
+      "id": "Panggil persegi(3): ulangi 4 kali, gambar maju 3 kotak dan belok kanan. Tebakan: persegi bersisi 3, garis total 4 × 3 = 12 satuan. Gambar dan hitung: 12."
+    },
+    {
+      "en": "Two calls: square(5) then square(2) from the same corner. Total line: 4 × 5 + 4 × 2 = 28 units. A common slip is 7 (adding the parameters).",
+      "id": "Dua panggilan: persegi(5) lalu persegi(2) dari sudut yang sama. Garis total: 4 × 5 + 4 × 2 = 28 satuan. Kesalahan yang sering terjadi adalah 7 (menjumlahkan parameternya)."
+    },
+    {
+      "en": "Refactoring: Yusuf's long program repeats the same four-line pattern three times, changing only the size (2, 4, 6). He replaces it with square(2), square(4), square(6) plus the definition: 3 calls and a 2-line definition instead of 12 lines.",
+      "id": "Menyusun ulang: program panjang Yusuf mengulang pola empat baris yang sama tiga kali, hanya ukurannya yang berubah (2, 4, 6). Ia menggantinya dengan persegi(2), persegi(4), persegi(6) ditambah definisinya: 3 panggilan dan definisi 2 baris, bukan 12 baris."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Predict and draw square(1), square(4) and square(6); write the total line length for each.",
+      "id": "Tebak dan gambar persegi(1), persegi(4), dan persegi(6); tulis panjang garis total masing-masing."
+    },
+    {
+      "en": "Design a function with two parameters, rectangle(width, height), test it with three pairs of values, and fix it if any shape fails to close.",
+      "id": "Rancang fungsi dengan dua parameter, persegiPanjang(lebar, tinggi), uji dengan tiga pasang nilai, dan perbaiki jika ada bentuk yang tidak tertutup."
+    },
+    {
+      "en": "Draw a street of houses using a house(size) function that calls square(size); reflect on how one change to square changes every house.",
+      "id": "Gambar deretan rumah memakai fungsi rumah(ukuran) yang memanggil persegi(ukuran); renungkan bagaimana satu perubahan pada persegi mengubah setiap rumah."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "square(size) draws 4 sides of length size. How long is the total line drawn by square(3)?",
+        "id": "persegi(ukuran) menggambar 4 sisi sepanjang ukuran. Berapa panjang garis total yang digambar persegi(3)?"
+      },
+      "choices": {
+        "en": [
+          "12 units",
+          "7 units",
+          "3 units"
+        ],
+        "id": [
+          "12 satuan",
+          "7 satuan",
+          "3 satuan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Four sides of 3: 4 × 3 = 12.",
+        "id": "Empat sisi sepanjang 3: 4 × 3 = 12."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_SIDES_AND_SIZE",
+        "2": "PARAMETER_IS_TOTAL"
+      },
+      "check": {
+        "expression": "4 × 3",
+        "result": "12"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A program calls square(5) and then square(2). What is the total line length?",
+        "id": "Sebuah program memanggil persegi(5) lalu persegi(2). Berapa panjang garis totalnya?"
+      },
+      "choices": {
+        "en": [
+          "28 units",
+          "7 units",
+          "20 units"
+        ],
+        "id": [
+          "28 satuan",
+          "7 satuan",
+          "20 satuan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 × 5 + 4 × 2 = 20 + 8 = 28.",
+        "id": "4 × 5 + 4 × 2 = 20 + 8 = 28."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_PARAMETERS",
+        "2": "ONLY_FIRST_CALL_RUNS"
+      },
+      "check": {
+        "expression": "4 × 5 + 4 × 2",
+        "result": "28"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A program defines square(size) but never calls it. What is drawn?",
+        "id": "Sebuah program mendefinisikan persegi(ukuran) tetapi tidak pernah memanggilnya. Apa yang digambar?"
+      },
+      "choices": {
+        "en": [
+          "Nothing",
+          "One square of size 1",
+          "A square of every size"
+        ],
+        "id": [
+          "Tidak ada",
+          "Satu persegi berukuran 1",
+          "Persegi dengan semua ukuran"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Defining a function only describes the steps; a call runs them.",
+        "id": "Mendefinisikan fungsi hanya menjelaskan langkahnya; panggilan yang menjalankannya."
+      },
+      "distractorMisconceptions": {
+        "1": "DEFINITION_RUNS_ITSELF",
+        "2": "DEFINITION_RUNS_ITSELF"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Why give square a size parameter instead of writing square3, square4 and square5?",
+        "id": "Mengapa memberi persegi parameter ukuran alih-alih menulis persegi3, persegi4, dan persegi5?"
+      },
+      "choices": {
+        "en": [
+          "One function can draw any size, so there is less code to write and fix",
+          "Parameters make the drawing faster",
+          "Each size needs its own function anyway"
+        ],
+        "id": [
+          "Satu fungsi bisa menggambar ukuran apa pun, jadi kode yang ditulis dan diperbaiki lebih sedikit",
+          "Parameter membuat gambar lebih cepat",
+          "Setiap ukuran tetap perlu fungsinya sendiri"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Parameters make a function reusable for many values.",
+        "id": "Parameter membuat fungsi bisa dipakai ulang untuk banyak nilai."
+      },
+      "distractorMisconceptions": {
+        "1": "PARAMETER_MEANS_SPEED",
+        "2": "PARAMETER_IS_FIXED"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A program repeats the same 4-line pattern 3 times. After refactoring, it has a 2-line definition and 3 one-line calls. How many lines does it have now?",
+        "id": "Sebuah program mengulang pola 4 baris yang sama sebanyak 3 kali. Setelah disusun ulang, program punya definisi 2 baris dan 3 panggilan satu baris. Berapa baris sekarang?"
+      },
+      "choices": {
+        "en": [
+          "5 lines",
+          "12 lines",
+          "3 lines"
+        ],
+        "id": [
+          "5 baris",
+          "12 baris",
+          "3 baris"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2 + 3 = 5 lines, instead of 4 × 3 = 12.",
+        "id": "2 + 3 = 5 baris, bukan 4 × 3 = 12."
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_REFACTOR",
+        "2": "FORGETS_DEFINITION_LINES"
+      },
+      "check": {
+        "expression": "2 + 3",
+        "result": "5"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_PARAMETERS",
+      "description": {
+        "en": "Adds the parameter values instead of working out what the function draws.",
+        "id": "Menjumlahkan nilai parameter, bukan menghitung apa yang digambar fungsi."
+      },
+      "remediation": {
+        "en": "Draw the call on squared paper, numbering each unit of line as you draw it.",
+        "id": "Gambar panggilannya di kertas berpetak, memberi nomor setiap satuan garis saat menggambar."
+      }
+    },
+    {
+      "code": "PARAMETER_IS_TOTAL",
+      "description": {
+        "en": "Thinks the parameter is the total length, not the length of one side.",
+        "id": "Mengira parameter adalah panjang total, bukan panjang satu sisi."
+      },
+      "remediation": {
+        "en": "Colour one side of the drawn square and label it with the parameter value.",
+        "id": "Warnai satu sisi persegi yang digambar dan beri label dengan nilai parameternya."
+      }
+    },
+    {
+      "code": "ONLY_FIRST_CALL_RUNS",
+      "description": {
+        "en": "Counts only the first function call.",
+        "id": "Hanya menghitung panggilan fungsi pertama."
+      },
+      "remediation": {
+        "en": "Tick each call line as it runs and draw each square in a different colour.",
+        "id": "Centang setiap baris panggilan saat berjalan dan gambar setiap persegi dengan warna berbeda."
+      }
+    },
+    {
+      "code": "DEFINITION_RUNS_ITSELF",
+      "description": {
+        "en": "Believes defining a function makes it run.",
+        "id": "Percaya mendefinisikan fungsi membuatnya berjalan."
+      },
+      "remediation": {
+        "en": "Put a recipe card on the table and wait: nothing cooks until someone says 'make it'.",
+        "id": "Taruh kartu resep di meja dan tunggu: tidak ada yang dimasak sampai seseorang berkata 'buat'."
+      }
+    },
+    {
+      "code": "PARAMETER_MEANS_SPEED",
+      "description": {
+        "en": "Thinks parameters change speed rather than reuse.",
+        "id": "Mengira parameter mengubah kecepatan, bukan untuk dipakai ulang."
+      },
+      "remediation": {
+        "en": "Draw square(2) and square(5) at the same pace and compare what changed: only the size.",
+        "id": "Gambar persegi(2) dan persegi(5) dengan kecepatan sama dan bandingkan apa yang berubah: hanya ukurannya."
+      }
+    },
+    {
+      "code": "PARAMETER_IS_FIXED",
+      "description": {
+        "en": "Thinks each value needs a separate function.",
+        "id": "Mengira setiap nilai perlu fungsi terpisah."
+      },
+      "remediation": {
+        "en": "Call one function card three times with different numbers written on sticky notes in its parameter box.",
+        "id": "Panggil satu kartu fungsi tiga kali dengan angka berbeda yang ditulis di kertas tempel pada kotak parameternya."
+      }
+    },
+    {
+      "code": "IGNORES_REFACTOR",
+      "description": {
+        "en": "Counts the old program's lines after refactoring.",
+        "id": "Menghitung baris program lama setelah disusun ulang."
+      },
+      "remediation": {
+        "en": "Write the new program on a fresh card and count only what is on it.",
+        "id": "Tulis program baru di kartu baru dan hitung hanya yang ada di kartu itu."
+      }
+    },
+    {
+      "code": "FORGETS_DEFINITION_LINES",
+      "description": {
+        "en": "Counts the calls but not the definition.",
+        "id": "Menghitung panggilan tetapi tidak menghitung definisinya."
+      },
+      "remediation": {
+        "en": "Remind them that the definition is part of the program: without it, calls do nothing.",
+        "id": "Ingatkan bahwa definisi adalah bagian dari program: tanpanya, panggilan tidak melakukan apa-apa."
+      }
+    },
+    {
+      "code": "ADDS_SIDES_AND_SIZE",
+      "description": {
+        "en": "Adds the number of sides to the side length.",
+        "id": "Menjumlahkan banyak sisi dengan panjang sisi."
+      },
+      "remediation": {
+        "en": "Draw square(3) and write 3 beside each of its four sides, then add the four labels.",
+        "id": "Gambar persegi(3) dan tulis 3 di samping keempat sisinya, lalu jumlahkan keempat label itu."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Write a function that returns a value, such as perimeter(size) = 4 × size, and use it inside another function.",
+      "id": "Tulis fungsi yang mengembalikan nilai, seperti keliling(ukuran) = 4 × ukuran, dan gunakan di dalam fungsi lain."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who finds drawing hard can build the shapes with straws cut to length by an adult, or describe them aloud while a partner draws.",
+      "id": "Anak yang sulit menggambar bisa menyusun bentuk dengan sedotan yang dipotong orang dewasa, atau menjelaskannya dengan suara sementara pasangannya menggambar."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Paper-based activity with no physical hazards; if a computer is used, an adult sets it up and screen time stays short.",
+        "id": "Kegiatan berbasis kertas tanpa bahaya fisik; jika memakai komputer, orang dewasa menyiapkannya dan waktu layar tetap singkat."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 45
+  },
+  "mastery": {
+    "evidence": "assessment",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child predicts three function calls correctly, explains define versus call, and refactors one program, on two different days.",
+      "id": "Dikuasai jika anak menebak tiga panggilan fungsi dengan benar, menjelaskan perbedaan mendefinisikan dan memanggil, serta menyusun ulang satu program, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

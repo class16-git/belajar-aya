@@ -1,0 +1,275 @@
+{
+  "id": "reading-g6-a-nation-of-islands",
+  "version": "1.0.1",
+  "level": "g6",
+  "readingLevel": "advanced",
+  "genre": "poetry",
+  "mode": "independent",
+  "title": {
+    "en": "A nation of islands",
+    "id": "Negeri kepulauan"
+  },
+  "text": {
+    "en": [
+      "Count us if you can: more than seventeen thousand, / some wide as kingdoms, some no bigger than a field, / scattered like rice grains thrown across a blue mat, / a necklace laid along the belly of the world.",
+      "The equator runs through us like a warm thread; / our days and nights stay almost the same length all year. / We do not wait for winter or for snow; / we count our year in two: the wet, the dry.",
+      "To the west and south, the Indian Ocean breathes; / to the north and east, the Pacific rolls and roars. / Between them, straits and seas join island to island — / water is not our wall but our road.",
+      "Beneath our feet, the restless plates are grinding. / Mountains smoke; the ground can shiver without warning. / Fire gave us danger, and fire gave us soil / where rice terraces climb like stairs toward the clouds.",
+      "Hundreds of languages ripple from our shores, / yet one shared tongue lets the fisher talk to the farmer. / Count us if you can — but better, come and listen: / every island has a story the sea has carried home."
+    ],
+    "id": [
+      "Hitunglah kami jika bisa: lebih dari tujuh belas ribu, / ada yang luas seperti kerajaan, ada yang tak lebih besar dari ladang, / bertebaran seperti butir beras yang ditabur di atas tikar biru, / seuntai kalung yang terbentang di perut dunia.",
+      "Khatulistiwa melintasi kami bagai benang hangat; / siang dan malam kami nyaris sama panjang sepanjang tahun. / Kami tidak menunggu musim dingin atau salju; / tahun kami terbagi dua: musim hujan, musim kemarau.",
+      "Di barat dan selatan, Samudra Hindia bernapas; / di utara dan timur, Samudra Pasifik bergulung dan bergemuruh. / Di antaranya, selat dan laut menyambung pulau ke pulau — / air bukan tembok kami, melainkan jalan kami.",
+      "Di bawah kaki kami, lempeng-lempeng gelisah bergesekan. / Gunung berasap; tanah bisa bergetar tanpa peringatan. / Api memberi kami bahaya, dan api memberi kami tanah / tempat sawah terasering mendaki seperti tangga menuju awan.",
+      "Ratusan bahasa beriak dari pantai-pantai kami, / namun satu bahasa bersama membuat nelayan bisa bercakap dengan petani. / Hitunglah kami jika bisa — tetapi lebih baik, datang dan dengarlah: / setiap pulau punya kisah yang dibawa pulang oleh laut."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Analyses how a poet uses simile, metaphor and personification to present geographical facts.",
+      "id": "Menganalisis cara penyair memakai simile, metafora, dan personifikasi untuk menyajikan fakta geografi."
+    },
+    {
+      "en": "Identifies the geographical features of Indonesia described in each stanza.",
+      "id": "Mengenali ciri geografis Indonesia yang digambarkan di setiap bait."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "strait",
+        "id": "selat"
+      },
+      "meaning": {
+        "en": "a narrow stretch of sea between two pieces of land",
+        "id": "laut sempit di antara dua daratan"
+      }
+    },
+    {
+      "word": {
+        "en": "equator",
+        "id": "khatulistiwa"
+      },
+      "meaning": {
+        "en": "the imaginary line around the middle of the Earth",
+        "id": "garis khayal yang melingkari tengah Bumi"
+      }
+    },
+    {
+      "word": {
+        "en": "metaphor",
+        "id": "metafora"
+      },
+      "meaning": {
+        "en": "describing something as if it were something else",
+        "id": "menggambarkan sesuatu seolah-olah benda lain"
+      }
+    },
+    {
+      "word": {
+        "en": "terraces",
+        "id": "terasering"
+      },
+      "meaning": {
+        "en": "flat steps cut into a hillside for farming",
+        "id": "undakan datar di lereng bukit untuk bertani"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "'Water is not our wall but our road' is an example of…",
+        "id": "'Air bukan tembok kami, melainkan jalan kami' adalah contoh…"
+      },
+      "choices": {
+        "en": [
+          "a metaphor",
+          "a list of facts",
+          "a rhyme"
+        ],
+        "id": [
+          "metafora",
+          "daftar fakta",
+          "rima"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "What does 'water is not our wall but our road' suggest about life in Indonesia?",
+        "id": "Apa makna 'air bukan tembok kami, melainkan jalan kami' tentang kehidupan di Indonesia?"
+      },
+      "choices": {
+        "en": [
+          "the seas connect islands so people travel and trade across them",
+          "people cannot cross the sea",
+          "roads are built on water"
+        ],
+        "id": [
+          "laut menghubungkan pulau sehingga orang bisa bepergian dan berdagang",
+          "orang tidak bisa menyeberangi laut",
+          "jalan dibangun di atas air"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "science",
+      "prompt": {
+        "en": "Why does the poem say days and nights stay almost the same length all year?",
+        "id": "Mengapa puisi mengatakan siang dan malam nyaris sama panjang sepanjang tahun?"
+      },
+      "choices": {
+        "en": [
+          "places near the equator have similar day lengths all year",
+          "the islands are small",
+          "there are two seasons"
+        ],
+        "id": [
+          "tempat dekat khatulistiwa punya panjang siang yang hampir sama sepanjang tahun",
+          "pulaunya kecil",
+          "ada dua musim"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q4",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which stanza explains why Indonesia has both volcanoes and fertile farmland?",
+        "id": "Bait mana yang menjelaskan mengapa Indonesia punya gunung api sekaligus lahan subur?"
+      },
+      "choices": {
+        "en": [
+          "the fourth stanza",
+          "the first stanza",
+          "the second stanza"
+        ],
+        "id": [
+          "bait keempat",
+          "bait pertama",
+          "bait kedua"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q5",
+      "kind": "critical",
+      "prompt": {
+        "en": "Why does the poet change 'Count us if you can' to 'better, come and listen' at the end?",
+        "id": "Mengapa penyair mengubah 'Hitunglah kami jika bisa' menjadi 'lebih baik, datang dan dengarlah' di akhir?"
+      },
+      "choices": {
+        "en": [
+          "to say the people and stories matter more than the number of islands",
+          "because the islands cannot be counted at all",
+          "to make the poem rhyme"
+        ],
+        "id": [
+          "untuk mengatakan bahwa manusia dan kisahnya lebih penting daripada jumlah pulau",
+          "karena pulau-pulau itu sama sekali tidak bisa dihitung",
+          "agar puisinya berima"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Indonesia is an archipelago on the equator between the Indian and Pacific Oceans, on the Ring of Fire.",
+        "id": "Indonesia adalah negara kepulauan di khatulistiwa, di antara Samudra Hindia dan Pasifik, di Cincin Api."
+      }
+    },
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Hundreds of local languages and a shared national language, Bahasa Indonesia.",
+        "id": "Ratusan bahasa daerah dan satu bahasa persatuan, Bahasa Indonesia."
+      }
+    },
+    {
+      "subject": "creativity",
+      "connection": {
+        "en": "Figurative language can turn facts into vivid images.",
+        "id": "Bahasa kiasan dapat mengubah fakta menjadi gambaran yang hidup."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which image in the poem would make the best illustration? Why?",
+      "id": "Gambaran mana dalam puisi yang paling cocok dijadikan ilustrasi? Mengapa?"
+    },
+    {
+      "en": "What story might the sea carry home from your island or town?",
+      "id": "Kisah apa yang mungkin dibawa pulang laut dari pulau atau kotamu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Choose one island or region. Write a four-line stanza in the same style, with one simile, one metaphor and one true geographical fact, and list your fact separately so someone can check it.",
+    "id": "Pilih satu pulau atau daerah. Tulis bait empat baris dengan gaya yang sama, berisi satu simile, satu metafora, dan satu fakta geografi yang benar, lalu tulis faktanya terpisah agar bisa diperiksa orang lain."
+  },
+  "factChecks": [
+    {
+      "claim": "Indonesia has more than 17,000 islands (counts vary by source and method).",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The equator passes through Indonesia, so day length changes very little through the year.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Indonesia lies between the Indian and Pacific Oceans.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Much of Indonesia has a wet season and a dry season rather than four seasons.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Indonesia lies on the Ring of Fire, with active volcanoes and earthquakes.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Hundreds of languages are spoken in Indonesia, with Bahasa Indonesia as the national language.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

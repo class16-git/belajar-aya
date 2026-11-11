@@ -1,0 +1,442 @@
+{
+  "id": "unit-g2-math-addition-regrouping-1000",
+  "version": "1.0.1",
+  "level": "g2",
+  "framework": "math",
+  "strand": "addition_subtraction",
+  "title": {
+    "en": "Adding with regrouping to 1000",
+    "id": "Penjumlahan dengan menyimpan sampai 1.000"
+  },
+  "prerequisites": [
+    "unit-g2-math-place-value-hundreds",
+    "unit-g1-math-make-ten-addition"
+  ],
+  "objective": {
+    "en": "Add two three-digit numbers with totals up to 1000, regrouping ones into tens and tens into hundreds, and choose a mental strategy when the numbers are friendly.",
+    "id": "Menjumlahkan dua bilangan tiga angka dengan hasil sampai 1.000, menukar satuan menjadi puluhan dan puluhan menjadi ratusan, serta memilih strategi mental jika bilangannya mudah."
+  },
+  "rationale": {
+    "en": "The written column method only makes sense when children have physically traded ten ones for a ten. Linking the trade to the small 1 written in the column stops 'carrying' from being a meaningless rule.",
+    "id": "Cara bersusun hanya bermakna jika anak pernah benar-benar menukar sepuluh satuan dengan satu puluhan. Mengaitkan penukaran itu dengan angka 1 kecil di kolom membuat 'menyimpan' bukan sekadar aturan tanpa arti."
+  },
+  "outcomes": [
+    {
+      "en": "Adds three-digit numbers in columns, regrouping once or twice, and explains each trade.",
+      "id": "Menjumlahkan bilangan tiga angka bersusun, menyimpan sekali atau dua kali, dan menjelaskan setiap penukaran."
+    },
+    {
+      "en": "Uses a mental strategy such as rounding and adjusting for numbers like 399 + 245.",
+      "id": "Memakai strategi mental seperti membulatkan lalu menyesuaikan untuk bilangan seperti 399 + 245."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show 358 + 267 with place-value cards and trade ten ones for a ten.",
+      "id": "Aku bisa menunjukkan 358 + 267 dengan kartu nilai tempat dan menukar sepuluh satuan dengan satu puluhan."
+    },
+    {
+      "en": "I can check my answer by estimating first.",
+      "id": "Aku bisa memeriksa jawabanku dengan memperkirakan dulu."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Estimate together before calculating: 358 + 267 is about 360 + 270, so about 630.",
+      "id": "Perkirakan bersama sebelum menghitung: 358 + 267 kira-kira 360 + 270, jadi sekitar 630."
+    },
+    {
+      "en": "Build both numbers on a place-value mat; add the ones first and ask 'Do we have ten or more?'",
+      "id": "Susun kedua bilangan di alas nilai tempat; jumlahkan satuan dulu dan tanya 'Apakah ada sepuluh atau lebih?'"
+    },
+    {
+      "en": "Write the column method only after the child has made each trade with cards.",
+      "id": "Tulis cara bersusun hanya setelah anak melakukan setiap penukaran dengan kartu."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Add the ones. If there are ten or more, trade ten ones for one ten. Then add the tens, then the hundreds.",
+      "id": "Jumlahkan satuan. Jika ada sepuluh atau lebih, tukar sepuluh satuan dengan satu puluhan. Lalu jumlahkan puluhan, kemudian ratusan."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Use place-value cards (100s, 10s, 1s) cut from paper: build 358 and 267, combine the ones (15), trade 10 ones for a ten card, then combine the tens (12) and trade 10 tens for a hundred card.",
+        "id": "Pakai kartu nilai tempat (100, 10, 1) dari kertas: susun 358 dan 267, gabungkan satuan (15), tukar 10 satuan dengan kartu puluhan, lalu gabungkan puluhan (12) dan tukar 10 puluhan dengan kartu ratusan."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the place-value chart with discs: circle 10 one-discs and draw an arrow to a new ten-disc in the tens column.",
+        "id": "Gambar tabel nilai tempat dengan cakram: lingkari 10 cakram satuan dan gambar panah ke cakram puluhan baru di kolom puluhan."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write 358 + 267 in columns: 8 + 7 = 15, write 5 and regroup 1 ten; 5 + 6 + 1 = 12 tens, write 2 and regroup 1 hundred; 3 + 2 + 1 = 6. Total 625.",
+        "id": "Tulis 358 + 267 bersusun: 8 + 7 = 15, tulis 5 dan simpan 1 puluhan; 5 + 6 + 1 = 12 puluhan, tulis 2 dan simpan 1 ratusan; 3 + 2 + 1 = 6. Hasilnya 625."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Place-value cards or discs drawn on paper: about 20 hundreds, 20 tens and 20 ones",
+      "id": "Kartu atau cakram nilai tempat dari kertas: sekitar 20 ratusan, 20 puluhan, dan 20 satuan"
+    },
+    {
+      "en": "A place-value mat with three columns (hundreds, tens, ones)",
+      "id": "Alas nilai tempat dengan tiga kolom (ratusan, puluhan, satuan)"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw and label the cards in three colours; an adult cuts them out in advance.",
+      "id": "Gambar dan beri label kartu dengan tiga warna; orang dewasa menggunting kartu sebelumnya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Regroup ones only: 246 + 137. Ones 6 + 7 = 13: trade 10 ones, write 3, regroup 1 ten. Tens 4 + 3 + 1 = 8. Hundreds 2 + 1 = 3. Total 383.",
+      "id": "Menyimpan satuan saja: 246 + 137. Satuan 6 + 7 = 13: tukar 10 satuan, tulis 3, simpan 1 puluhan. Puluhan 4 + 3 + 1 = 8. Ratusan 2 + 1 = 3. Hasilnya 383."
+    },
+    {
+      "en": "Regroup twice: 475 g flour + 348 g sugar. 5 + 8 = 13, write 3 regroup 1; 7 + 4 + 1 = 12, write 2 regroup 1; 4 + 3 + 1 = 8. Total 823 g.",
+      "id": "Menyimpan dua kali: 475 g tepung + 348 g gula. 5 + 8 = 13, tulis 3 simpan 1; 7 + 4 + 1 = 12, tulis 2 simpan 1; 4 + 3 + 1 = 8. Hasilnya 823 g."
+    },
+    {
+      "en": "Total exactly 1000: 586 + 414. Ones 10, tens 10, hundreds 10: each place makes a new unit of the next place, ending with one thousand.",
+      "id": "Hasil tepat 1.000: 586 + 414. Satuan 10, puluhan 10, ratusan 10: setiap tempat membuat satu satuan baru di tempat berikutnya, sampai menjadi seribu."
+    },
+    {
+      "en": "Round and adjust: 399 + 245 = 400 + 245 - 1 = 644. Or move 1 from 245 to 399: 400 + 244 = 644.",
+      "id": "Bulatkan lalu sesuaikan: 399 + 245 = 400 + 245 - 1 = 644. Atau pindahkan 1 dari 245 ke 399: 400 + 244 = 644."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Solve 167 + 258, 409 + 293 and 555 + 345 with cards, then in columns; estimate each first.",
+      "id": "Selesaikan 167 + 258, 409 + 293, dan 555 + 345 dengan kartu, lalu bersusun; perkirakan masing-masing dulu."
+    },
+    {
+      "en": "Use two food labels with three-digit masses in grams, or two prices in thousands of rupiah (for example 125 thousand and 248 thousand), and add them.",
+      "id": "Pakai dua label makanan dengan massa tiga angka dalam gram, atau dua harga dalam ribuan rupiah (misalnya 125 ribu dan 248 ribu), lalu jumlahkan."
+    },
+    {
+      "en": "Find the mistake: a parent writes 368 + 254 = 512 (no regrouping); the child explains and corrects it to 622.",
+      "id": "Cari kesalahan: orang tua menulis 368 + 254 = 512 (tanpa menyimpan); anak menjelaskan dan membetulkannya menjadi 622."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "467 + 385 = ?",
+        "id": "467 + 385 = ?"
+      },
+      "choices": {
+        "en": [
+          "852",
+          "742",
+          "71412"
+        ],
+        "id": [
+          "852",
+          "742",
+          "71412"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Ones 7 + 5 = 12: write 2, regroup 1 ten. Tens 6 + 8 + 1 = 15: write 5, regroup 1 hundred. Hundreds 4 + 3 + 1 = 8.",
+        "id": "Satuan 7 + 5 = 12: tulis 2, simpan 1 puluhan. Puluhan 6 + 8 + 1 = 15: tulis 5, simpan 1 ratusan. Ratusan 4 + 3 + 1 = 8."
+      },
+      "check": {
+        "expression": "467 + 385",
+        "result": "852"
+      },
+      "distractorMisconceptions": {
+        "1": "NO_REGROUP",
+        "2": "WRITES_COLUMN_SUMS"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Ibu uses 386 g of rice flour and 457 g of sugar. What is the total mass?",
+        "id": "Ibu memakai 386 g tepung beras dan 457 g gula. Berapa massa totalnya?"
+      },
+      "choices": {
+        "en": [
+          "843 g",
+          "743 g",
+          "833 g"
+        ],
+        "id": [
+          "843 g",
+          "743 g",
+          "833 g"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6 + 7 = 13, 8 + 5 + 1 = 14, 3 + 4 + 1 = 8, so 843 g.",
+        "id": "6 + 7 = 13, 8 + 5 + 1 = 14, 3 + 4 + 1 = 8, jadi 843 g."
+      },
+      "check": {
+        "expression": "386 + 457",
+        "result": "843"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_REGROUPED_HUNDRED",
+        "2": "FORGETS_REGROUPED_TEN"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "In 296 + 138, what do the ones add up to, and what do you do?",
+        "id": "Pada 296 + 138, berapa jumlah satuannya, dan apa yang dilakukan?"
+      },
+      "choices": {
+        "en": [
+          "14 ones: write 4 and regroup 1 ten",
+          "4 ones: write 4 and nothing else",
+          "13 ones: write 3 and regroup 1 ten"
+        ],
+        "id": [
+          "14 satuan: tulis 4 dan simpan 1 puluhan",
+          "4 satuan: tulis 4 saja",
+          "13 satuan: tulis 3 dan simpan 1 puluhan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6 + 8 = 14 ones, which is 1 ten and 4 ones.",
+        "id": "6 + 8 = 14 satuan, yaitu 1 puluhan dan 4 satuan."
+      },
+      "check": {
+        "expression": "6 + 8",
+        "result": "14"
+      },
+      "distractorMisconceptions": {
+        "1": "NO_REGROUP",
+        "2": "FACT_SLIP"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A library has 586 books and receives 214 more. How many books does it have now?",
+        "id": "Sebuah perpustakaan punya 586 buku dan menerima 214 lagi. Berapa buku sekarang?"
+      },
+      "choices": {
+        "en": [
+          "800",
+          "790",
+          "700"
+        ],
+        "id": [
+          "800",
+          "790",
+          "700"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6 + 4 = 10: write 0, regroup 1. 8 + 1 + 1 = 10: write 0, regroup 1. 5 + 2 + 1 = 8.",
+        "id": "6 + 4 = 10: tulis 0, simpan 1. 8 + 1 + 1 = 10: tulis 0, simpan 1. 5 + 2 + 1 = 8."
+      },
+      "check": {
+        "expression": "586 + 214",
+        "result": "800"
+      },
+      "distractorMisconceptions": {
+        "1": "NO_REGROUP",
+        "2": "FORGETS_REGROUPED_HUNDRED"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "To work out 298 + 356, Sari changes it to 300 + ?. What number goes in the box?",
+        "id": "Untuk menghitung 298 + 356, Sari mengubahnya menjadi 300 + ?. Bilangan berapa di kotak?"
+      },
+      "choices": {
+        "en": [
+          "354",
+          "356",
+          "358"
+        ],
+        "id": [
+          "354",
+          "356",
+          "358"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Sari gave 2 to 298 to make 300, so she takes 2 from 356: 354. Both totals are 654.",
+        "id": "Sari memberi 2 kepada 298 agar menjadi 300, jadi ia mengambil 2 dari 356: 354. Kedua jumlahnya 654."
+      },
+      "check": {
+        "expression": "298 + 356 - 300",
+        "result": "354"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_COMPENSATION",
+        "2": "COMPENSATES_WRONG_WAY"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "NO_REGROUP",
+      "description": {
+        "en": "Writes the ones total without trading ten ones for a ten.",
+        "id": "Menulis jumlah satuan tanpa menukar sepuluh satuan dengan satu puluhan."
+      },
+      "remediation": {
+        "en": "Go back to cards: a column may hold at most 9; trade a bundle of 10 every time.",
+        "id": "Kembali ke kartu: satu kolom paling banyak berisi 9; tukar setiap kumpulan 10."
+      }
+    },
+    {
+      "code": "WRITES_COLUMN_SUMS",
+      "description": {
+        "en": "Writes each column's sum in full, side by side.",
+        "id": "Menulis jumlah setiap kolom secara utuh, bersebelahan."
+      },
+      "remediation": {
+        "en": "Use a chart with one box per column: only one digit may go in each box.",
+        "id": "Pakai tabel dengan satu kotak per kolom: hanya satu angka boleh masuk ke setiap kotak."
+      }
+    },
+    {
+      "code": "FORGETS_REGROUPED_HUNDRED",
+      "description": {
+        "en": "Regroups into the hundreds but forgets to add that hundred.",
+        "id": "Menyimpan ke ratusan tetapi lupa menjumlahkan ratusan itu."
+      },
+      "remediation": {
+        "en": "Place the traded hundred card physically in the hundreds column before adding that column.",
+        "id": "Letakkan kartu ratusan hasil tukar di kolom ratusan sebelum menjumlahkan kolom itu."
+      }
+    },
+    {
+      "code": "FORGETS_REGROUPED_TEN",
+      "description": {
+        "en": "Regroups from the ones but forgets to add the ten.",
+        "id": "Menyimpan dari satuan tetapi lupa menjumlahkan puluhan itu."
+      },
+      "remediation": {
+        "en": "Write the small regrouped 1 at the top of the tens column and circle it as a reminder.",
+        "id": "Tulis angka 1 kecil hasil simpanan di atas kolom puluhan dan lingkari sebagai pengingat."
+      }
+    },
+    {
+      "code": "FACT_SLIP",
+      "description": {
+        "en": "Makes a slip in a basic addition fact.",
+        "id": "Keliru pada fakta penjumlahan dasar."
+      },
+      "remediation": {
+        "en": "Use make-ten: 6 + 8 = 6 + 4 + 4 = 14; check with ten-frames.",
+        "id": "Pakai membuat sepuluh: 6 + 8 = 6 + 4 + 4 = 14; periksa dengan bingkai sepuluh."
+      }
+    },
+    {
+      "code": "FORGETS_COMPENSATION",
+      "description": {
+        "en": "Rounds one number but does not adjust the other.",
+        "id": "Membulatkan satu bilangan tetapi tidak menyesuaikan bilangan lainnya."
+      },
+      "remediation": {
+        "en": "Model it with two piles of cards: move one card from one pile to the other; the total stays the same.",
+        "id": "Peragakan dengan dua tumpukan kartu: pindahkan satu kartu dari satu tumpukan ke tumpukan lain; jumlahnya tetap."
+      }
+    },
+    {
+      "code": "COMPENSATES_WRONG_WAY",
+      "description": {
+        "en": "Adjusts in the wrong direction, adding to both numbers.",
+        "id": "Menyesuaikan ke arah yang salah, menambah kedua bilangan."
+      },
+      "remediation": {
+        "en": "Draw a bar model: if one bar grows by 1, the other must shrink by 1 to keep the same total.",
+        "id": "Gambar model batang: jika satu batang bertambah 1, yang lain harus berkurang 1 supaya total tetap."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add three numbers such as 125 + 248 + 316 and check by adding in a different order.",
+      "id": "Jumlahkan tiga bilangan seperti 125 + 248 + 316 dan periksa dengan urutan berbeda."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use squared paper so digits stay in columns; let the child say each trade aloud.",
+      "id": "Pakai kertas berpetak agar angka tetap di kolomnya; biarkan anak mengucapkan setiap penukaran."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Paper cards only; the adult does any cutting with scissors.",
+        "id": "Hanya kartu kertas; orang dewasa melakukan pemotongan dengan gunting."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves four additions with two regroupings correctly, including one totalling 1000, and explains one trade with cards, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan empat penjumlahan dengan dua kali menyimpan dengan benar, termasuk satu yang hasilnya 1.000, dan menjelaskan satu penukaran dengan kartu, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

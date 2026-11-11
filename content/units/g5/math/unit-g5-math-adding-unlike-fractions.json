@@ -1,0 +1,484 @@
+{
+  "id": "unit-g5-math-adding-unlike-fractions",
+  "version": "1.0.1",
+  "level": "g5",
+  "framework": "math",
+  "strand": "fractions",
+  "title": {
+    "en": "Adding fractions with unlike denominators",
+    "id": "Menjumlahkan pecahan berpenyebut berbeda"
+  },
+  "prerequisites": [
+    "unit-g4-math-equivalent-fractions"
+  ],
+  "objective": {
+    "en": "Add and subtract fractions and mixed numbers with unlike denominators by renaming them with a common denominator, and solve word problems with them.",
+    "id": "Menjumlahkan dan mengurangkan pecahan dan pecahan campuran berpenyebut berbeda dengan mengubahnya ke penyebut yang sama, serta menyelesaikan soal cerita."
+  },
+  "rationale": {
+    "en": "Adding numerators and denominators separately is the most persistent fraction error. Fraction strips and area models show that only same-sized parts can be counted together, so the common denominator becomes a necessity, not a rule.",
+    "id": "Menjumlahkan pembilang dan penyebut secara terpisah adalah kesalahan pecahan yang paling bertahan. Kertas pecahan dan model luas menunjukkan bahwa hanya bagian yang sama besar yang bisa dihitung bersama, sehingga penyebut yang sama menjadi kebutuhan, bukan sekadar aturan."
+  },
+  "outcomes": [
+    {
+      "en": "Finds a common denominator (preferably the least) and renames both fractions.",
+      "id": "Mencari penyebut yang sama (sebaiknya yang terkecil) dan mengubah kedua pecahan."
+    },
+    {
+      "en": "Adds and subtracts fractions and mixed numbers, regrouping an improper fraction into a whole.",
+      "id": "Menjumlahkan dan mengurangkan pecahan dan pecahan campuran, mengubah pecahan tidak sejati (pecahan biasa yang lebih dari satu) menjadi bilangan utuh."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show 1/2 + 1/3 = 5/6 with fraction strips.",
+      "id": "Aku bisa menunjukkan 1/2 + 1/3 = 5/6 dengan kertas pecahan."
+    },
+    {
+      "en": "I can explain why 1/2 + 1/3 is not 2/5.",
+      "id": "Aku bisa menjelaskan mengapa 1/2 + 1/3 bukan 2/5."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Estimate first: is the answer more or less than 1? 1/2 + 1/3 is less than 1 but more than 1/2.",
+      "id": "Perkirakan dulu: apakah hasilnya lebih atau kurang dari 1? 1/2 + 1/3 kurang dari 1 tetapi lebih dari 1/2."
+    },
+    {
+      "en": "Ask 'Are these pieces the same size?' before any adding.",
+      "id": "Tanyakan 'Apakah potongan ini sama besar?' sebelum menjumlah."
+    },
+    {
+      "en": "Use the least common multiple (KPK) of the denominators so the numbers stay small.",
+      "id": "Pakai KPK dari penyebut agar bilangannya tetap kecil."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Make the pieces the same size first: find a common denominator, rename both fractions, then add the numerators.",
+      "id": "Samakan ukuran potongan dulu: cari penyebut yang sama, ubah kedua pecahan, lalu jumlahkan pembilangnya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Lay a 1/2 strip and a 1/3 strip end to end under a whole strip; find the sixths strip that matches: 3/6 + 2/6 = 5/6.",
+        "id": "Jajarkan kertas 1/2 dan 1/3 ujung ke ujung di bawah kertas utuh; cari kertas perenam yang pas: 3/6 + 2/6 = 5/6."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a rectangle split into 3 columns and 2 rows (6 parts); shade 1/2 by rows and 1/3 by columns to see both as sixths.",
+        "id": "Gambar persegi panjang dibagi 3 kolom dan 2 baris (6 bagian); arsir 1/2 menurut baris dan 1/3 menurut kolom untuk melihat keduanya sebagai perenam."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write 3/4 + 2/3 = 9/12 + 8/12 = 17/12 = 1 5/12.",
+        "id": "Tulis 3/4 + 2/3 = 9/12 + 8/12 = 17/12 = 1 5/12."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Fraction strips for halves, thirds, quarters, sixths, eighths and twelfths (made in the equivalent fractions unit), plus fifths and tenths made from a 20 cm strip",
+      "id": "Kertas pecahan untuk perdua, pertiga, perempat, perenam, perdelapan, dan perduabelas (dibuat di unit pecahan senilai), ditambah perlima dan persepuluh dari kertas sepanjang 20 cm"
+    },
+    {
+      "en": "Squared paper and coloured pencils",
+      "id": "Kertas berpetak dan pensil warna"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Check the strip set is complete and write four word problems on cards.",
+      "id": "Periksa kelengkapan kertas pecahan dan tulis empat soal cerita di kartu."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Basic: 1/2 + 1/3. KPK of 2 and 3 is 6. 1/2 = 3/6, 1/3 = 2/6, total 5/6. Check by estimate: a bit less than 1.",
+      "id": "Dasar: 1/2 + 1/3. KPK dari 2 dan 3 adalah 6. 1/2 = 3/6, 1/3 = 2/6, jumlahnya 5/6. Periksa dengan perkiraan: sedikit kurang dari 1."
+    },
+    {
+      "en": "Total more than one: 3/4 + 2/3 = 9/12 + 8/12 = 17/12. 12 twelfths make a whole, so 17/12 = 1 5/12.",
+      "id": "Hasil lebih dari satu: 3/4 + 2/3 = 9/12 + 8/12 = 17/12. 12 perduabelas menjadi satu utuh, jadi 17/12 = 1 5/12."
+    },
+    {
+      "en": "Subtraction: 5/6 - 1/4 = 10/12 - 3/12 = 7/12.",
+      "id": "Pengurangan: 5/6 - 1/4 = 10/12 - 3/12 = 7/12."
+    },
+    {
+      "en": "Mixed numbers: 1 2/3 + 2 1/2. Add wholes: 3. Add fractions: 4/6 + 3/6 = 7/6 = 1 1/6. Total 4 1/6.",
+      "id": "Pecahan campuran: 1 2/3 + 2 1/2. Jumlahkan bilangan utuh: 3. Jumlahkan pecahan: 4/6 + 3/6 = 7/6 = 1 1/6. Hasilnya 4 1/6."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Solve 2/5 + 1/3, 3/8 + 1/6 and 7/10 - 1/4 and show one with strips.",
+      "id": "Selesaikan 2/5 + 1/3, 3/8 + 1/6, dan 7/10 - 1/4 lalu tunjukkan satu dengan kertas pecahan."
+    },
+    {
+      "en": "Recipe problem: a kue recipe uses 3/4 cup of sugar and 2/3 cup of flour. How many cups of dry ingredients altogether?",
+      "id": "Soal resep: resep kue memakai 3/4 gelas gula dan 2/3 gelas tepung. Berapa gelas bahan kering semuanya?"
+    },
+    {
+      "en": "Find the mistake: 2/3 + 1/4 = 3/7. Explain with a drawing and correct it to 11/12.",
+      "id": "Cari kesalahan: 2/3 + 1/4 = 3/7. Jelaskan dengan gambar dan betulkan menjadi 11/12."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "1/2 + 1/5 = ?",
+        "id": "1/2 + 1/5 = ?"
+      },
+      "choices": {
+        "en": [
+          "7/10",
+          "2/7",
+          "1/10"
+        ],
+        "id": [
+          "7/10",
+          "2/7",
+          "1/10"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "1/2 = 5/10 and 1/5 = 2/10, so the total is 7/10.",
+        "id": "1/2 = 5/10 dan 1/5 = 2/10, jadi jumlahnya 7/10."
+      },
+      "check": {
+        "expression": "1/2 + 1/5",
+        "result": "7/10"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TOPS_AND_BOTTOMS",
+        "2": "MULTIPLIES_INSTEAD"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "5/6 + 3/4 = ?",
+        "id": "5/6 + 3/4 = ?"
+      },
+      "choices": {
+        "en": [
+          "1 7/12",
+          "8/10",
+          "19/24"
+        ],
+        "id": [
+          "1 7/12",
+          "8/10",
+          "19/24"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "10/12 + 9/12 = 19/12 = 1 7/12.",
+        "id": "10/12 + 9/12 = 19/12 = 1 7/12."
+      },
+      "check": {
+        "expression": "5/6 + 3/4",
+        "result": "1 7/12"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TOPS_AND_BOTTOMS",
+        "2": "ADDS_DENOMINATORS_AFTER_RENAMING"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "3/4 - 1/6 = ?",
+        "id": "3/4 - 1/6 = ?"
+      },
+      "choices": {
+        "en": [
+          "7/12",
+          "2/12",
+          "11/12"
+        ],
+        "id": [
+          "7/12",
+          "2/12",
+          "11/12"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "9/12 - 2/12 = 7/12.",
+        "id": "9/12 - 2/12 = 7/12."
+      },
+      "check": {
+        "expression": "3/4 - 1/6",
+        "result": "7/12"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_TO_SCALE_NUMERATORS",
+        "2": "OPERATION_MIXUP"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Ayah paints 2/5 of a fence in the morning and 1/4 of it in the afternoon. What fraction of the fence has he painted?",
+        "id": "Ayah mengecat 2/5 pagar pada pagi hari dan 1/4 pagar pada sore hari. Pecahan berapa dari pagar yang sudah dicat?"
+      },
+      "choices": {
+        "en": [
+          "13/20",
+          "3/9",
+          "3/20"
+        ],
+        "id": [
+          "13/20",
+          "3/9",
+          "3/20"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2/5 = 8/20 and 1/4 = 5/20; 8/20 + 5/20 = 13/20.",
+        "id": "2/5 = 8/20 dan 1/4 = 5/20; 8/20 + 5/20 = 13/20."
+      },
+      "check": {
+        "expression": "2/5 + 1/4",
+        "result": "13/20"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TOPS_AND_BOTTOMS",
+        "2": "FORGETS_TO_SCALE_NUMERATORS"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "2 3/4 + 1 2/3 = ?",
+        "id": "2 3/4 + 1 2/3 = ?"
+      },
+      "choices": {
+        "en": [
+          "4 5/12",
+          "3 5/7",
+          "3 5/12"
+        ],
+        "id": [
+          "4 5/12",
+          "3 5/7",
+          "3 5/12"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Wholes 2 + 1 = 3; fractions 9/12 + 8/12 = 17/12 = 1 5/12; total 4 5/12.",
+        "id": "Bilangan utuh 2 + 1 = 3; pecahan 9/12 + 8/12 = 17/12 = 1 5/12; hasilnya 4 5/12."
+      },
+      "check": {
+        "expression": "(2 + 3/4) + (1 + 2/3)",
+        "result": "4 5/12"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TOPS_AND_BOTTOMS",
+        "2": "FORGETS_TO_REGROUP_WHOLE"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "What is the least common denominator for 1/6 + 3/8?",
+        "id": "Berapa penyebut persekutuan terkecil untuk 1/6 + 3/8?"
+      },
+      "choices": {
+        "en": [
+          "24",
+          "48",
+          "14"
+        ],
+        "id": [
+          "24",
+          "48",
+          "14"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The KPK of 6 and 8 is 24 (6 × 4 = 24 and 8 × 3 = 24).",
+        "id": "KPK dari 6 dan 8 adalah 24 (6 × 4 = 24 dan 8 × 3 = 24)."
+      },
+      "check": {
+        "expression": "6 * 4",
+        "result": "24"
+      },
+      "distractorMisconceptions": {
+        "1": "ALWAYS_MULTIPLIES_DENOMINATORS",
+        "2": "ADDS_DENOMINATORS"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_TOPS_AND_BOTTOMS",
+      "description": {
+        "en": "Adds (or subtracts) numerators and denominators separately.",
+        "id": "Menjumlahkan (atau mengurangkan) pembilang dan penyebut secara terpisah."
+      },
+      "remediation": {
+        "en": "Show 1/2 + 1/2 = 2/4 with strips: two halves cannot be one half. Then rename to same-size parts.",
+        "id": "Tunjukkan 1/2 + 1/2 = 2/4 dengan kertas: dua setengah tidak mungkin setengah. Lalu ubah ke bagian yang sama besar."
+      }
+    },
+    {
+      "code": "MULTIPLIES_INSTEAD",
+      "description": {
+        "en": "Multiplies the fractions when asked to add.",
+        "id": "Mengalikan pecahan padahal diminta menjumlah."
+      },
+      "remediation": {
+        "en": "Estimate: adding two positive amounts must give more than either one; 1/6 is smaller than both.",
+        "id": "Perkirakan: menjumlah dua bilangan positif pasti lebih dari masing-masing; 1/6 lebih kecil dari keduanya."
+      }
+    },
+    {
+      "code": "ADDS_DENOMINATORS_AFTER_RENAMING",
+      "description": {
+        "en": "Renames correctly but then adds the denominators too.",
+        "id": "Mengubah dengan benar tetapi lalu menjumlahkan penyebutnya juga."
+      },
+      "remediation": {
+        "en": "Say the denominator as a word: '9 twelfths + 8 twelfths = 17 twelfths', like '9 apples + 8 apples'.",
+        "id": "Ucapkan penyebut sebagai kata: '9 perduabelas + 8 perduabelas = 17 perduabelas', seperti '9 apel + 8 apel'."
+      }
+    },
+    {
+      "code": "OPERATION_MIXUP",
+      "description": {
+        "en": "Adds when the problem asks to subtract.",
+        "id": "Menjumlah padahal soal meminta mengurangkan."
+      },
+      "remediation": {
+        "en": "Read the sign aloud and draw the take-away on the strip by crossing out parts.",
+        "id": "Baca tandanya dengan suara keras dan gambar pengambilan di kertas dengan mencoret bagian."
+      }
+    },
+    {
+      "code": "FORGETS_TO_SCALE_NUMERATORS",
+      "description": {
+        "en": "Changes the denominators but keeps the old numerators.",
+        "id": "Mengubah penyebut tetapi tetap memakai pembilang lama."
+      },
+      "remediation": {
+        "en": "Write the multiplier beside both numbers: 2/5 × 4/4 = 8/20.",
+        "id": "Tulis pengali di samping kedua bilangan: 2/5 × 4/4 = 8/20."
+      }
+    },
+    {
+      "code": "FORGETS_TO_REGROUP_WHOLE",
+      "description": {
+        "en": "Drops the extra whole made when the fraction parts add to more than one.",
+        "id": "Menghilangkan bilangan utuh tambahan yang terbentuk saat bagian pecahan berjumlah lebih dari satu."
+      },
+      "remediation": {
+        "en": "Build 7/6 with sixth strips and lay it over a whole: one whole and 1/6 extra.",
+        "id": "Susun 7/6 dengan kertas perenam dan letakkan di atas satu utuh: satu utuh dan lebih 1/6."
+      }
+    },
+    {
+      "code": "ALWAYS_MULTIPLIES_DENOMINATORS",
+      "description": {
+        "en": "Multiplies denominators even when a smaller common denominator exists.",
+        "id": "Mengalikan penyebut walaupun ada penyebut bersama yang lebih kecil."
+      },
+      "remediation": {
+        "en": "List multiples of the larger denominator and stop at the first one the smaller denominator divides.",
+        "id": "Daftar kelipatan penyebut yang lebih besar dan berhenti di kelipatan pertama yang habis dibagi penyebut yang lebih kecil."
+      }
+    },
+    {
+      "code": "ADDS_DENOMINATORS",
+      "description": {
+        "en": "Adds the denominators to find a common denominator.",
+        "id": "Menjumlahkan penyebut untuk mencari penyebut yang sama."
+      },
+      "remediation": {
+        "en": "Try to rename 1/6 as fourteenths with strips: it does not work, because 14 is not a multiple of 6.",
+        "id": "Coba ubah 1/6 menjadi perempat belas dengan kertas: tidak bisa, karena 14 bukan kelipatan 6."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a magic square or a path puzzle where fractions along each line add to 1.",
+      "id": "Buat persegi ajaib atau teka-teki jalan yang pecahan di setiap garisnya berjumlah 1."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Allow fraction strips during assessment for children who need them; a multiplication grid helps find common multiples.",
+      "id": "Izinkan kertas pecahan saat penilaian bagi anak yang membutuhkan; tabel perkalian membantu mencari kelipatan persekutuan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "No special hazards; any cutting of new strips is done by an adult with scissors.",
+        "id": "Tidak ada bahaya khusus; pemotongan kertas baru dilakukan orang dewasa dengan gunting."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child adds three pairs and subtracts one pair of unlike fractions, including one mixed-number sum, correctly and simplified, on two different days.",
+      "id": "Dikuasai jika anak menjumlahkan tiga pasang dan mengurangkan satu pasang pecahan berpenyebut beda, termasuk satu penjumlahan pecahan campuran, dengan benar dan sederhana, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

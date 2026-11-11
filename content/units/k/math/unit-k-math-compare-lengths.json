@@ -1,0 +1,424 @@
+{
+  "id": "unit-k-math-compare-lengths",
+  "version": "1.0.1",
+  "level": "k",
+  "framework": "math",
+  "strand": "measurement",
+  "title": {
+    "en": "Longer, shorter, same length",
+    "id": "Lebih panjang, lebih pendek, sama panjang"
+  },
+  "prerequisites": [],
+  "objective": {
+    "en": "Compare and order the lengths of objects directly by lining up their ends, and measure with equal non-standard units such as blocks and hand spans.",
+    "id": "Membandingkan dan mengurutkan panjang benda secara langsung dengan meratakan ujungnya, serta mengukur dengan satuan tak baku yang sama besar seperti balok dan jengkal."
+  },
+  "rationale": {
+    "en": "Fair comparison needs a common starting line, and fair measuring needs equal units with no gaps or overlaps. These ideas come before rulers and centimetres and explain why rulers work.",
+    "id": "Membandingkan dengan adil memerlukan garis awal yang sama, dan mengukur dengan adil memerlukan satuan yang sama tanpa celah atau tumpang tindih. Gagasan ini datang sebelum penggaris dan sentimeter serta menjelaskan mengapa penggaris bekerja."
+  },
+  "outcomes": [
+    {
+      "en": "Compares two or three objects by lining up one end and uses longer, shorter and the same length.",
+      "id": "Membandingkan dua atau tiga benda dengan meratakan satu ujung dan memakai kata lebih panjang, lebih pendek, dan sama panjang."
+    },
+    {
+      "en": "Measures an object with equal units laid end to end and says how many units long it is.",
+      "id": "Mengukur benda dengan satuan yang sama yang dijajarkan ujung ke ujung dan menyebut panjangnya berapa satuan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can put the ends together on the starting line before I compare.",
+      "id": "Aku bisa meratakan ujung-ujungnya di garis awal sebelum membandingkan."
+    },
+    {
+      "en": "I can measure a book with blocks without leaving gaps.",
+      "id": "Aku bisa mengukur buku dengan balok tanpa meninggalkan celah."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Put a strip of tape on the floor as a starting line; every comparison starts there.",
+      "id": "Tempel selotip di lantai sebagai garis awal; setiap perbandingan dimulai dari sana."
+    },
+    {
+      "en": "When measuring with units, ask the child to check: no gaps, no overlaps, all the same unit.",
+      "id": "Saat mengukur dengan satuan, minta anak memeriksa: tidak ada celah, tidak tumpang tindih, semua satuan sama."
+    },
+    {
+      "en": "Compare your hand span with your child's so they discover why the same table can be '4 spans' or '6 spans'.",
+      "id": "Bandingkan jengkal Anda dengan jengkal anak supaya ia menemukan mengapa meja yang sama bisa '4 jengkal' atau '6 jengkal'."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Line up the ends on the tape. Look at the other ends. Say which is longer.",
+      "id": "Ratakan ujungnya di selotip. Lihat ujung yang lain. Katakan mana yang lebih panjang."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Line up a spoon, a toothbrush and a wooden spatula on the tape line and order them from shortest to longest.",
+        "id": "Jajarkan sendok, sikat gigi, dan spatula kayu di garis selotip lalu urutkan dari yang terpendek sampai terpanjang."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw three ribbons as strips of different lengths starting at one line; colour the longest red and the shortest blue; draw the blocks under each strip and write the count.",
+        "id": "Gambar tiga pita sebagai garis-garis dengan panjang berbeda yang mulai dari satu garis; warnai yang terpanjang merah dan yang terpendek biru; gambar balok di bawah setiap garis dan tulis banyaknya."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Record measurements as numbers: book = 6 blocks, spoon = 3 blocks; the book is 3 blocks longer.",
+        "id": "Catat hasil ukur sebagai bilangan: buku = 6 balok, sendok = 3 balok; buku 3 balok lebih panjang."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Masking tape or a long string for a starting line",
+      "id": "Lakban kertas (masking tape) atau tali panjang untuk garis awal"
+    },
+    {
+      "en": "About 20 same-size building blocks",
+      "id": "Sekitar 20 balok mainan yang sama besar"
+    },
+    {
+      "en": "Household objects: spoon, toothbrush, wooden spatula, book, broom, sandal",
+      "id": "Benda rumah: sendok, sikat gigi, spatula kayu, buku, sapu, sandal"
+    },
+    {
+      "en": "Two pencils of the same length",
+      "id": "Dua pensil yang sama panjang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Stick a 1-metre strip of tape on the floor and collect six objects of clearly different lengths.",
+      "id": "Tempel selotip sepanjang 1 meter di lantai dan kumpulkan enam benda yang panjangnya jelas berbeda."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Unfair start: Hold two pencils with ends at different heights; one looks longer. Now line both ends on the tape: they are the same length. We always start at the same line.",
+      "id": "Awal yang tidak adil: Pegang dua pensil dengan ujung di ketinggian berbeda; satu tampak lebih panjang. Sekarang ratakan kedua ujung di selotip: ternyata sama panjang. Kita selalu mulai dari garis yang sama."
+    },
+    {
+      "en": "Measuring with blocks: Lay blocks along a book from the tape, end to end. Count: 6 blocks. Then try with a gap between blocks and count 4; the gaps make the count wrong.",
+      "id": "Mengukur dengan balok: Jajarkan balok di sepanjang buku dari selotip, ujung ke ujung. Hitung: 6 balok. Lalu coba dengan celah di antara balok dan hitung 4; celah membuat hitungannya salah."
+    },
+    {
+      "en": "Different units: The table is 4 of Mama's hand spans but 6 of Raka's. Raka's span is shorter, so he needs more of them.",
+      "id": "Satuan berbeda: Meja panjangnya 4 jengkal Mama tetapi 6 jengkal Raka. Jengkal Raka lebih pendek, jadi ia butuh lebih banyak."
+    },
+    {
+      "en": "Ordering three: sandal 4 blocks, book 6 blocks, broom 15 blocks. Shortest to longest: sandal, book, broom.",
+      "id": "Mengurutkan tiga: sandal 4 balok, buku 6 balok, sapu 15 balok. Dari terpendek ke terpanjang: sandal, buku, sapu."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Find something in the house longer than your arm and something shorter than your hand.",
+      "id": "Cari benda di rumah yang lebih panjang dari lenganmu dan benda yang lebih pendek dari tanganmu."
+    },
+    {
+      "en": "Measure the doormat, a pillow and a towel in blocks, write the numbers and order the three.",
+      "id": "Ukur keset, bantal, dan handuk dengan balok, tulis bilangannya, dan urutkan ketiganya."
+    },
+    {
+      "en": "Lie down beside a long string; an adult marks your height with a knot, then compare it with a sibling's or a parent's knot.",
+      "id": "Berbaringlah di samping tali panjang; orang dewasa menandai tinggimu dengan simpul, lalu bandingkan dengan simpul saudara atau orang tua."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A ribbon is 7 blocks long. A shoelace is 5 blocks long. How many blocks longer is the ribbon?",
+        "id": "Sebuah pita panjangnya 7 balok. Tali sepatu panjangnya 5 balok. Pita lebih panjang berapa balok?"
+      },
+      "choices": {
+        "en": [
+          "2 blocks",
+          "12 blocks",
+          "7 blocks"
+        ],
+        "id": [
+          "2 balok",
+          "12 balok",
+          "7 balok"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Line them up: the ribbon goes 2 blocks past the shoelace. 7 - 5 = 2.",
+        "id": "Jajarkan: pita melewati tali sepatu sejauh 2 balok. 7 - 5 = 2."
+      },
+      "check": {
+        "expression": "7 - 5",
+        "result": "2"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_LENGTHS",
+        "2": "GIVES_LONGER_LENGTH"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Bayu measures the bed and gets 8 hand spans. Ibu measures the same bed and gets 5 hand spans. Why are the numbers different?",
+        "id": "Bayu mengukur tempat tidur dan mendapat 8 jengkal. Ibu mengukur tempat tidur yang sama dan mendapat 5 jengkal. Mengapa hasilnya berbeda?"
+      },
+      "choices": {
+        "en": [
+          "Ibu's hand span is longer than Bayu's",
+          "The bed got shorter",
+          "Ibu's bed is a different size"
+        ],
+        "id": [
+          "Jengkal Ibu lebih panjang dari jengkal Bayu",
+          "Tempat tidurnya menjadi lebih pendek",
+          "Tempat tidur Ibu ukurannya berbeda"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "It is the same bed. A longer unit is needed fewer times, so Ibu counts fewer spans.",
+        "id": "Tempat tidurnya sama. Satuan yang lebih panjang muat lebih sedikit, jadi hitungan Ibu lebih kecil."
+      },
+      "distractorMisconceptions": {
+        "1": "UNIT_SIZE_IGNORED",
+        "2": "UNIT_SIZE_IGNORED"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which is a fair way to see which of two pencils is longer?",
+        "id": "Cara mana yang adil untuk melihat pensil mana yang lebih panjang?"
+      },
+      "choices": {
+        "en": [
+          "Put one end of both pencils on the same line",
+          "Hold one pencil higher than the other",
+          "Look at them from across the room"
+        ],
+        "id": [
+          "Letakkan satu ujung kedua pensil di garis yang sama",
+          "Pegang satu pensil lebih tinggi dari yang lain",
+          "Lihat dari seberang ruangan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Only when the ends start together can we see which one reaches further.",
+        "id": "Hanya jika ujungnya mulai bersama kita bisa melihat mana yang lebih jauh."
+      },
+      "distractorMisconceptions": {
+        "1": "ENDS_NOT_ALIGNED",
+        "2": "ENDS_NOT_ALIGNED"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A spoon is 4 blocks, a towel is 9 blocks and a mat is 12 blocks long. How many blocks longer is the mat than the towel?",
+        "id": "Sendok panjangnya 4 balok, handuk 9 balok, dan keset 12 balok. Keset lebih panjang berapa balok daripada handuk?"
+      },
+      "choices": {
+        "en": [
+          "3 blocks",
+          "12 blocks",
+          "21 blocks"
+        ],
+        "id": [
+          "3 balok",
+          "12 balok",
+          "21 balok"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Line up the mat and the towel: the mat sticks out 3 blocks. 12 - 9 = 3.",
+        "id": "Jajarkan keset dan handuk: keset menonjol 3 balok. 12 - 9 = 3."
+      },
+      "check": {
+        "expression": "12 - 9",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_LONGER_LENGTH",
+        "2": "ADDS_LENGTHS"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Dina measures a stick with blocks but leaves gaps between them. She counts 5 blocks. Without gaps, would she count more or fewer?",
+        "id": "Dina mengukur tongkat dengan balok tetapi ada celah di antaranya. Ia menghitung 5 balok. Tanpa celah, apakah hitungannya lebih banyak atau lebih sedikit?"
+      },
+      "choices": {
+        "en": [
+          "More blocks",
+          "Fewer blocks",
+          "Exactly the same"
+        ],
+        "id": [
+          "Lebih banyak balok",
+          "Lebih sedikit balok",
+          "Persis sama"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The gaps hide space that blocks should fill. Filling the gaps needs more blocks.",
+        "id": "Celah menyembunyikan ruang yang seharusnya diisi balok. Mengisi celah memerlukan lebih banyak balok."
+      },
+      "distractorMisconceptions": {
+        "1": "GAPS_IGNORED",
+        "2": "GAPS_IGNORED"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_LENGTHS",
+      "description": {
+        "en": "Adds the two lengths when asked how much longer.",
+        "id": "Menjumlahkan dua panjang padahal ditanya berapa lebih panjang."
+      },
+      "remediation": {
+        "en": "Lay both objects side by side on the start line and count only the blocks that stick out past the shorter one.",
+        "id": "Letakkan kedua benda berdampingan di garis awal dan hitung hanya balok yang menonjol melewati benda yang lebih pendek."
+      }
+    },
+    {
+      "code": "GIVES_LONGER_LENGTH",
+      "description": {
+        "en": "Gives the longer object's length instead of the difference.",
+        "id": "Menyebut panjang benda yang lebih panjang, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Cover the matched part with a cloth so only the extra part shows, then count it.",
+        "id": "Tutup bagian yang sama panjang dengan kain sehingga hanya bagian lebihnya yang terlihat, lalu hitung."
+      }
+    },
+    {
+      "code": "UNIT_SIZE_IGNORED",
+      "description": {
+        "en": "Thinks the object changed, rather than seeing that a different-size unit gives a different count.",
+        "id": "Mengira bendanya berubah, bukan melihat bahwa satuan berbeda ukuran memberi hitungan berbeda."
+      },
+      "remediation": {
+        "en": "Measure the same mat with big books and with small blocks; talk about why big units need fewer.",
+        "id": "Ukur keset yang sama dengan buku besar dan balok kecil; bicarakan mengapa satuan besar dibutuhkan lebih sedikit."
+      }
+    },
+    {
+      "code": "ENDS_NOT_ALIGNED",
+      "description": {
+        "en": "Compares objects without lining up their starting ends.",
+        "id": "Membandingkan benda tanpa meratakan ujung awalnya."
+      },
+      "remediation": {
+        "en": "Use the tape start line every time; the child places both ends on the tape before looking.",
+        "id": "Pakai garis selotip setiap kali; anak meletakkan kedua ujung di selotip sebelum melihat."
+      }
+    },
+    {
+      "code": "MIDDLE_AS_LONGEST",
+      "description": {
+        "en": "Picks a familiar or middle value instead of the greatest.",
+        "id": "Memilih nilai yang dikenal atau yang tengah, bukan yang terbesar."
+      },
+      "remediation": {
+        "en": "Build each length as a tower of blocks and stand the towers side by side.",
+        "id": "Susun setiap panjang sebagai menara balok dan dirikan menaranya berdampingan."
+      }
+    },
+    {
+      "code": "GAPS_IGNORED",
+      "description": {
+        "en": "Does not see that gaps between units make the measurement too small.",
+        "id": "Tidak melihat bahwa celah antar satuan membuat hasil ukur terlalu kecil."
+      },
+      "remediation": {
+        "en": "Measure twice, once with gaps and once without, and compare the two counts.",
+        "id": "Ukur dua kali, sekali dengan celah dan sekali tanpa celah, lalu bandingkan kedua hitungannya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a 'longer than my foot' collection: the child traces a foot on paper and finds five things longer and five shorter.",
+      "id": "Buat koleksi 'lebih panjang dari kakiku': anak menjiplak kakinya di kertas dan mencari lima benda yang lebih panjang dan lima yang lebih pendek."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use objects with strong colour contrast against the floor; children who find counting hard can compare directly without numbers first.",
+      "id": "Pakai benda yang warnanya kontras dengan lantai; anak yang kesulitan menghitung bisa membandingkan langsung tanpa bilangan dulu."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Choose a wooden spatula, not a knife, and keep the broom flat on the floor while measuring.",
+        "id": "Pilih spatula kayu, bukan pisau, dan letakkan sapu mendatar di lantai saat mengukur."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child lines up ends without reminders and measures two objects with blocks, no gaps, on two different days.",
+      "id": "Dikuasai jika anak meratakan ujung tanpa diingatkan dan mengukur dua benda dengan balok tanpa celah, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

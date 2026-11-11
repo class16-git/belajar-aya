@@ -1,0 +1,495 @@
+{
+  "id": "unit-g6-math-algebraic-expressions",
+  "version": "1.0.1",
+  "level": "g6",
+  "framework": "math",
+  "strand": "algebraic_thinking",
+  "title": {
+    "en": "Algebraic expressions",
+    "id": "Bentuk aljabar"
+  },
+  "prerequisites": [
+    "unit-g4-math-factors-and-multiples"
+  ],
+  "objective": {
+    "en": "Use letters to stand for unknown numbers, write expressions for situations, evaluate expressions by substitution in the correct order of operations, and simplify by collecting like terms.",
+    "id": "Memakai huruf untuk mewakili bilangan yang belum diketahui, menulis bentuk aljabar untuk situasi, menghitung nilai bentuk aljabar dengan substitusi sesuai urutan operasi, dan menyederhanakan dengan mengumpulkan suku sejenis."
+  },
+  "rationale": {
+    "en": "Algebra generalises arithmetic the child already knows. Starting from cups that hide an unknown number of items, then bar models with a letter, shows that 3p means 3 groups of p and not 'thirty-something', and that only like terms can be collected.",
+    "id": "Aljabar memperumum aritmetika yang sudah dikenal anak. Mulai dari gelas yang menyembunyikan banyak benda yang tidak diketahui, lalu model batang dengan huruf, menunjukkan bahwa 3p berarti 3 kelompok p, bukan 'tiga puluh sekian', dan hanya suku sejenis yang bisa dikumpulkan."
+  },
+  "outcomes": [
+    {
+      "en": "Writes an expression for a word situation and evaluates it for a given value.",
+      "id": "Menulis bentuk aljabar untuk situasi cerita dan menghitung nilainya untuk nilai tertentu."
+    },
+    {
+      "en": "Simplifies expressions by collecting like terms and keeps constants separate.",
+      "id": "Menyederhanakan bentuk aljabar dengan mengumpulkan suku sejenis dan memisahkan konstanta."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can explain that 3p means p + p + p and find its value when p = 4.",
+      "id": "Aku bisa menjelaskan bahwa 3p berarti p + p + p dan mencari nilainya jika p = 4."
+    },
+    {
+      "en": "I can simplify 2x + 3 + 4x + 1 and say why x terms and numbers stay apart.",
+      "id": "Aku bisa menyederhanakan 2x + 3 + 4x + 1 dan mengatakan mengapa suku x dan bilangan tetap terpisah."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use opaque cups as 'mystery boxes' holding the same unknown number of items; the letter is the cup.",
+      "id": "Pakai gelas tidak tembus pandang sebagai 'kotak misteri' yang berisi banyak benda yang sama tetapi tidak diketahui; hurufnya adalah gelas itu."
+    },
+    {
+      "en": "Read 3p as '3 times p' or '3 groups of p', never as 'three p' without meaning.",
+      "id": "Baca 3p sebagai '3 kali p' atau '3 kelompok p', jangan hanya 'tiga p' tanpa makna."
+    },
+    {
+      "en": "When substituting, rewrite with brackets and a multiplication sign: 3p becomes 3 × (4).",
+      "id": "Saat substitusi, tulis ulang dengan kurung dan tanda kali: 3p menjadi 3 × (4)."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Replace the letter with its number. Multiply before you add. Collect only terms with the same letter.",
+      "id": "Ganti huruf dengan bilangannya. Kalikan sebelum menjumlah. Kumpulkan hanya suku dengan huruf yang sama."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Put 3 cups each hiding the same number of crackers and 5 loose crackers on the table: 3c + 5. Lift the cups to reveal 4 in each: 3 × 4 + 5 = 17.",
+        "id": "Letakkan 3 gelas yang masing-masing menyembunyikan banyak kerupuk yang sama dan 5 kerupuk lepas di meja: 3c + 5. Angkat gelas dan lihat masing-masing berisi 4: 3 × 4 + 5 = 17."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a bar model with 2 boxes labelled x and a small box labelled 3 for 'twice Bayu's age plus 3'.",
+        "id": "Gambar model batang dengan 2 kotak berlabel x dan satu kotak kecil berlabel 3 untuk 'dua kali umur Bayu ditambah 3'."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write and simplify: 4a + 3a - 2a = 5a; 2x + 3 + 4x + 1 = 6x + 4; evaluate 2(m + 3) when m = 5 to get 16.",
+        "id": "Tulis dan sederhanakan: 4a + 3a - 2a = 5a; 2x + 3 + 4x + 1 = 6x + 4; hitung 2(m + 3) jika m = 5 hasilnya 16."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Six opaque cups and about 40 crackers or large counters",
+      "id": "Enam gelas tidak tembus pandang dan sekitar 40 kerupuk atau kepingan besar"
+    },
+    {
+      "en": "Paper, pencils and cards with expressions written on them",
+      "id": "Kertas, pensil, dan kartu bertuliskan bentuk aljabar"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Hide the same number of crackers under each cup before the child arrives and write six expression cards.",
+      "id": "Sembunyikan kerupuk yang sama banyak di bawah setiap gelas sebelum anak datang dan tulis enam kartu bentuk aljabar."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Writing an expression: an ojek ride in a story costs Rp 5,000 plus Rp 2,500 for each km. For k km: 5,000 + 2,500k. For 6 km: 5,000 + 2,500 × 6 = Rp 20,000.",
+      "id": "Menulis bentuk aljabar: dalam sebuah cerita naik ojek Rp5.000 ditambah Rp2.500 per km. Untuk k km: 5.000 + 2.500k. Untuk 6 km: 5.000 + 2.500 × 6 = Rp20.000."
+    },
+    {
+      "en": "Order of operations: evaluate 3p + 5 when p = 4. 3 × 4 = 12 first, then 12 + 5 = 17. Writing 34 + 5 treats 3p as a two-digit number, which is wrong.",
+      "id": "Urutan operasi: hitung 3p + 5 jika p = 4. 3 × 4 = 12 dulu, lalu 12 + 5 = 17. Menulis 34 + 5 menganggap 3p sebagai bilangan dua angka, itu salah."
+    },
+    {
+      "en": "Like terms: 2x + 3 + 4x + 1. The x cups go together (6x) and the loose crackers go together (4): 6x + 4. 6x and 4 cannot join into 10x.",
+      "id": "Suku sejenis: 2x + 3 + 4x + 1. Gelas x dikumpulkan (6x) dan kerupuk lepas dikumpulkan (4): 6x + 4. 6x dan 4 tidak bisa digabung menjadi 10x."
+    },
+    {
+      "en": "Brackets: 2(m + 3) means two groups of (m + 3). When m = 5, m + 3 = 8 and 2 × 8 = 16.",
+      "id": "Kurung: 2(m + 3) berarti dua kelompok (m + 3). Jika m = 5, m + 3 = 8 dan 2 × 8 = 16."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Write expressions for: 5 more than n; 3 times y; half of a number t; the cost of p pencils at Rp 2,000 each.",
+      "id": "Tulis bentuk aljabar untuk: 5 lebih dari n; 3 kali y; setengah dari bilangan t; harga p pensil seharga Rp2.000 masing-masing."
+    },
+    {
+      "en": "Evaluate the six expression cards when the letter is 3, then when it is 10.",
+      "id": "Hitung nilai enam kartu bentuk aljabar jika hurufnya 3, lalu jika 10."
+    },
+    {
+      "en": "Simplify 5b + 2 - 3b + 7 and 4k + 2j + k - j, then check by substituting numbers.",
+      "id": "Sederhanakan 5b + 2 - 3b + 7 dan 4k + 2j + k - j, lalu periksa dengan substitusi bilangan."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Find the value of 4q + 7 when q = 6.",
+        "id": "Hitung nilai 4q + 7 jika q = 6."
+      },
+      "choices": {
+        "en": [
+          "31",
+          "53",
+          "17"
+        ],
+        "id": [
+          "31",
+          "53",
+          "17"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4q means 4 × q = 24; then 24 + 7 = 31.",
+        "id": "4q berarti 4 × q = 24; lalu 24 + 7 = 31."
+      },
+      "check": {
+        "expression": "4*6 + 7",
+        "result": "31"
+      },
+      "distractorMisconceptions": {
+        "1": "CONCATENATES_COEFFICIENT",
+        "2": "ADDS_COEFFICIENT"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "In a story, a delivery costs Rp 4,000 + Rp 3,000k, where k is the number of km. What does a 5 km delivery cost?",
+        "id": "Dalam sebuah cerita, ongkos antar adalah Rp4.000 + Rp3.000k, dengan k banyak km. Berapa ongkos untuk 5 km?"
+      },
+      "choices": {
+        "en": [
+          "Rp 19,000",
+          "Rp 35,000",
+          "Rp 7,000"
+        ],
+        "id": [
+          "Rp19.000",
+          "Rp35.000",
+          "Rp7.000"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Multiply first: 3,000 × 5 = 15,000; then 4,000 + 15,000 = 19,000.",
+        "id": "Kalikan dulu: 3.000 × 5 = 15.000; lalu 4.000 + 15.000 = 19.000."
+      },
+      "check": {
+        "expression": "4000 + 3000*5",
+        "result": "19000"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_ORDER_OF_OPERATIONS",
+        "2": "IGNORES_VARIABLE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Simplify 6b - 2b + b.",
+        "id": "Sederhanakan 6b - 2b + b."
+      },
+      "choices": {
+        "en": [
+          "5b",
+          "9b",
+          "5"
+        ],
+        "id": [
+          "5b",
+          "9b",
+          "5"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6 - 2 + 1 = 5 groups of b: 5b. The letter stays.",
+        "id": "6 - 2 + 1 = 5 kelompok b: 5b. Hurufnya tetap ada."
+      },
+      "check": {
+        "expression": "6 - 2 + 1",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_SUBTRACTION_SIGN",
+        "2": "DROPS_VARIABLE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Simplify 3y + 5 + 2y + 4.",
+        "id": "Sederhanakan 3y + 5 + 2y + 4."
+      },
+      "choices": {
+        "en": [
+          "5y + 9",
+          "14y",
+          "5y + 5"
+        ],
+        "id": [
+          "5y + 9",
+          "14y",
+          "5y + 5"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "y terms: 3y + 2y = 5y. Numbers: 5 + 4 = 9. So 5y + 9. Check with y = 1: 3 + 5 + 2 + 4 = 14 and 5 + 9 = 14.",
+        "id": "Suku y: 3y + 2y = 5y. Bilangan: 5 + 4 = 9. Jadi 5y + 9. Periksa dengan y = 1: 3 + 5 + 2 + 4 = 14 dan 5 + 9 = 14."
+      },
+      "check": {
+        "expression": "3 + 2",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "COMBINES_UNLIKE_TERMS",
+        "2": "DROPS_A_CONSTANT"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Find the value of 3(n + 2) when n = 4.",
+        "id": "Hitung nilai 3(n + 2) jika n = 4."
+      },
+      "choices": {
+        "en": [
+          "18",
+          "14",
+          "9"
+        ],
+        "id": [
+          "18",
+          "14",
+          "9"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Brackets first: 4 + 2 = 6; then 3 × 6 = 18.",
+        "id": "Kurung dulu: 4 + 2 = 6; lalu 3 × 6 = 18."
+      },
+      "check": {
+        "expression": "3*(4 + 2)",
+        "result": "18"
+      },
+      "distractorMisconceptions": {
+        "1": "MULTIPLIES_FIRST_TERM_ONLY",
+        "2": "ADDS_COEFFICIENT"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "Bayu is y years old. His sister's age is 2y + 3. How old is his sister when Bayu is 4?",
+        "id": "Bayu berumur y tahun. Umur kakaknya adalah 2y + 3. Berapa umur kakaknya jika Bayu berumur 4?"
+      },
+      "choices": {
+        "en": [
+          "11",
+          "14",
+          "27"
+        ],
+        "id": [
+          "11",
+          "14",
+          "27"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2 × 4 = 8, then 8 + 3 = 11.",
+        "id": "2 × 4 = 8, lalu 8 + 3 = 11."
+      },
+      "check": {
+        "expression": "2*4 + 3",
+        "result": "11"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_ORDER_OF_OPERATIONS",
+        "2": "CONCATENATES_COEFFICIENT"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "CONCATENATES_COEFFICIENT",
+      "description": {
+        "en": "Reads 3p with p = 4 as the two-digit number 34.",
+        "id": "Membaca 3p dengan p = 4 sebagai bilangan dua angka 34."
+      },
+      "remediation": {
+        "en": "Rewrite with the hidden sign: 3p = 3 × p = 3 × (4), and model it with 3 cups of 4.",
+        "id": "Tulis ulang dengan tanda yang tersembunyi: 3p = 3 × p = 3 × (4), dan peragakan dengan 3 gelas berisi 4."
+      }
+    },
+    {
+      "code": "ADDS_COEFFICIENT",
+      "description": {
+        "en": "Adds the coefficient to the value instead of multiplying.",
+        "id": "Menjumlahkan koefisien dengan nilainya, bukan mengalikan."
+      },
+      "remediation": {
+        "en": "Lift each cup and count: 3 cups of 4 is 4 + 4 + 4, not 3 + 4.",
+        "id": "Angkat setiap gelas dan hitung: 3 gelas berisi 4 adalah 4 + 4 + 4, bukan 3 + 4."
+      }
+    },
+    {
+      "code": "IGNORES_ORDER_OF_OPERATIONS",
+      "description": {
+        "en": "Adds before multiplying, working strictly left to right.",
+        "id": "Menjumlah sebelum mengali, menghitung begitu saja dari kiri ke kanan."
+      },
+      "remediation": {
+        "en": "Circle the multiplication part first and calculate it before anything else.",
+        "id": "Lingkari bagian perkalian dulu dan hitung sebelum yang lain."
+      }
+    },
+    {
+      "code": "IGNORES_SUBTRACTION_SIGN",
+      "description": {
+        "en": "Adds a term that should be subtracted.",
+        "id": "Menjumlahkan suku yang seharusnya dikurangkan."
+      },
+      "remediation": {
+        "en": "Use cups: put out 4, then 3, then take 2 cups away; count the cups left.",
+        "id": "Pakai gelas: letakkan 4, lalu 3, lalu ambil 2 gelas; hitung gelas yang tersisa."
+      }
+    },
+    {
+      "code": "DROPS_VARIABLE",
+      "description": {
+        "en": "Writes only the number and loses the letter.",
+        "id": "Menulis bilangannya saja dan menghilangkan hurufnya."
+      },
+      "remediation": {
+        "en": "Ask '5 what?': 5 cups, so the answer is 5a.",
+        "id": "Tanyakan '5 apa?': 5 gelas, jadi jawabannya 5a."
+      }
+    },
+    {
+      "code": "COMBINES_UNLIKE_TERMS",
+      "description": {
+        "en": "Adds letter terms and numbers together into one term.",
+        "id": "Menjumlahkan suku berhuruf dan bilangan menjadi satu suku."
+      },
+      "remediation": {
+        "en": "Sort the cups and loose crackers into two separate piles; they cannot be counted as the same thing.",
+        "id": "Pisahkan gelas dan kerupuk lepas menjadi dua tumpukan; keduanya tidak bisa dihitung sebagai benda yang sama."
+      }
+    },
+    {
+      "code": "DROPS_A_CONSTANT",
+      "description": {
+        "en": "Forgets one of the number terms when collecting.",
+        "id": "Melupakan salah satu suku bilangan saat mengumpulkan."
+      },
+      "remediation": {
+        "en": "Tick each term as you use it so none is left behind.",
+        "id": "Centang setiap suku saat dipakai supaya tidak ada yang tertinggal."
+      }
+    },
+    {
+      "code": "MULTIPLIES_FIRST_TERM_ONLY",
+      "description": {
+        "en": "Multiplies only the first term inside the brackets.",
+        "id": "Hanya mengalikan suku pertama di dalam kurung."
+      },
+      "remediation": {
+        "en": "Draw two bars of (m + 3): each bar has an m part and a 3 part, so there are two 3s.",
+        "id": "Gambar dua batang (m + 3): setiap batang punya bagian m dan bagian 3, jadi ada dua angka 3."
+      }
+    },
+    {
+      "code": "IGNORES_VARIABLE",
+      "description": {
+        "en": "Leaves out the letter term, as if k were 1 or not there.",
+        "id": "Mengabaikan suku berhuruf, seolah-olah k bernilai 1 atau tidak ada."
+      },
+      "remediation": {
+        "en": "Write the expression with the value in brackets, 4,000 + 3,000 × (5), and point to every letter before calculating.",
+        "id": "Tulis bentuk aljabar dengan nilainya dalam kurung, 4.000 + 3.000 × (5), dan tunjuk setiap huruf sebelum menghitung."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Create a number puzzle: 'Think of a number, double it, add 6, halve it, take away the number you started with.' Use algebra to show why the answer is always 3.",
+      "id": "Buat teka-teki bilangan: 'Pikirkan sebuah bilangan, gandakan, tambah 6, bagi dua, kurangi bilangan awalmu.' Pakai aljabar untuk menunjukkan mengapa hasilnya selalu 3."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Cups and counters give a physical model; read expressions aloud in words for children who find symbols hard.",
+      "id": "Gelas dan kepingan memberi model nyata; bacakan bentuk aljabar dengan kata-kata bagi anak yang kesulitan dengan simbol."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": true,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use large counters or crackers suited to the children present; check crackers for allergies.",
+        "id": "Pakai kepingan besar atau kerupuk yang sesuai dengan anak yang hadir; periksa alergi pada kerupuk."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child writes two expressions from stories, evaluates three expressions including one with brackets, and simplifies two expressions, on two different days.",
+      "id": "Dikuasai jika anak menulis dua bentuk aljabar dari cerita, menghitung tiga bentuk aljabar termasuk satu dengan kurung, dan menyederhanakan dua bentuk aljabar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

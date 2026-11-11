@@ -1,0 +1,275 @@
+{
+  "id": "reading-age3_4-slow-snail-garden",
+  "version": "1.0.1",
+  "level": "age3_4",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Slow Snail's garden walk",
+    "id": "Siput Pelan jalan-jalan di kebun"
+  },
+  "text": {
+    "en": [
+      "Slow Snail wakes up under a wet leaf. She carries her shell on her back like a little house.",
+      "She slides past a red flower. Slide, slide. She leaves a shiny silver line behind her.",
+      "A fast ant runs by. Zoom! 'Hurry up, Snail!' says Ant. Snail smiles. 'I like to go slowly.'",
+      "Slow Snail stops at a green lettuce leaf. Munch, munch. Yum!",
+      "The sun gets hot. Slow Snail pulls her soft body into her shell to rest in the shade.",
+      "Ant comes back, tired and hot. Snail says, 'Come and rest in the cool shade with me.'"
+    ],
+    "id": [
+      "Siput Pelan bangun di bawah daun yang basah. Ia membawa cangkang di punggungnya seperti rumah kecil.",
+      "Ia meluncur melewati bunga merah. Sret, sret. Ia meninggalkan garis perak yang mengilap di belakangnya.",
+      "Semut yang cepat berlari lewat. Wus! 'Ayo cepat, Siput!' kata Semut. Siput tersenyum. 'Aku suka berjalan pelan.'",
+      "Siput Pelan berhenti di daun selada hijau. Nyam, nyam. Enak!",
+      "Matahari mulai panas. Siput Pelan menarik tubuhnya yang lunak ke dalam cangkang untuk beristirahat di tempat teduh.",
+      "Semut kembali, lelah dan kepanasan. Siput berkata, 'Ayo istirahat di tempat yang sejuk bersamaku.'"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Make a fist on your back for the shell and ask, 'Where is Snail's house?'",
+      "id": "Kepalkan tangan di punggung sebagai cangkang dan tanyakan, 'Di mana rumah Siput?'"
+    },
+    {
+      "en": "Slide one finger very slowly along your child's arm for the silver line.",
+      "id": "Geser satu jari sangat pelan di lengan anak untuk garis perak."
+    },
+    {
+      "en": "Use a quick squeaky voice for Ant and a slow calm voice for Snail.",
+      "id": "Gunakan suara cepat dan melengking untuk Semut, suara pelan dan tenang untuk Siput."
+    },
+    {
+      "en": "Pretend to munch a leaf and rub your tummy.",
+      "id": "Pura-pura mengunyah daun lalu usap perut."
+    },
+    {
+      "en": "Curl up small together like a snail in its shell.",
+      "id": "Meringkuk kecil bersama seperti siput di dalam cangkangnya."
+    },
+    {
+      "en": "Ask, 'What a kind friend! What did Snail share?' before you answer together.",
+      "id": "Tanyakan, 'Teman yang baik! Apa yang dibagi Siput?' sebelum menjawab bersama."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a snail under a wet leaf",
+      "id": "Kartu 1: siput di bawah daun basah"
+    },
+    {
+      "en": "Card 2: the snail passing a red flower with a shiny trail",
+      "id": "Kartu 2: siput melewati bunga merah dengan jejak mengilap"
+    },
+    {
+      "en": "Card 3: an ant running past the snail",
+      "id": "Kartu 3: semut berlari melewati siput"
+    },
+    {
+      "en": "Card 4: the snail eating a lettuce leaf",
+      "id": "Kartu 4: siput makan daun selada"
+    },
+    {
+      "en": "Card 5: the snail inside its shell in the shade",
+      "id": "Kartu 5: siput di dalam cangkang di tempat teduh"
+    },
+    {
+      "en": "Card 6: the ant and the snail resting together",
+      "id": "Kartu 6: semut dan siput beristirahat bersama"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a story and puts six picture cards in order.",
+      "id": "Mendengarkan cerita dan mengurutkan enam kartu gambar."
+    },
+    {
+      "en": "Learns two true things about snails: they carry a shell and they like damp, shady places.",
+      "id": "Mempelajari dua fakta tentang siput: membawa cangkang dan menyukai tempat lembap serta teduh."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "shell",
+        "id": "cangkang"
+      },
+      "meaning": {
+        "en": "the hard home on a snail's back",
+        "id": "rumah keras di punggung siput"
+      }
+    },
+    {
+      "word": {
+        "en": "shade",
+        "id": "tempat teduh"
+      },
+      "meaning": {
+        "en": "a cool place out of the sun",
+        "id": "tempat sejuk yang tidak terkena matahari"
+      }
+    },
+    {
+      "word": {
+        "en": "slide",
+        "id": "meluncur"
+      },
+      "meaning": {
+        "en": "to move smoothly along",
+        "id": "bergerak dengan halus"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What does Slow Snail carry on her back?",
+        "id": "Apa yang dibawa Siput Pelan di punggungnya?"
+      },
+      "choices": {
+        "en": [
+          "her shell",
+          "a flower",
+          "a lettuce leaf"
+        ],
+        "id": [
+          "cangkangnya",
+          "bunga",
+          "daun selada"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Snail do when the sun got hot?",
+        "id": "Apa yang dilakukan Siput saat matahari panas?"
+      },
+      "choices": {
+        "en": [
+          "went into her shell in the shade",
+          "ran fast like Ant",
+          "climbed the red flower"
+        ],
+        "id": [
+          "masuk ke cangkang di tempat teduh",
+          "berlari cepat seperti Semut",
+          "memanjat bunga merah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Ant come back tired?",
+        "id": "Mengapa Semut kembali dengan lelah?"
+      },
+      "choices": {
+        "en": [
+          "he rushed around in the hot sun",
+          "he ate too much lettuce",
+          "he had slept all day"
+        ],
+        "id": [
+          "dia terburu-buru di bawah matahari panas",
+          "dia makan terlalu banyak selada",
+          "dia tidur seharian"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What is 'shade'?",
+        "id": "Apa arti 'tempat teduh'?"
+      },
+      "choices": {
+        "en": [
+          "a cool place out of the sun",
+          "a kind of food",
+          "a fast run"
+        ],
+        "id": [
+          "tempat sejuk yang tidak terkena matahari",
+          "sejenis makanan",
+          "lari yang cepat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Snails carry their shells, eat leaves, and hide from hot sun in damp shady places.",
+        "id": "Siput membawa cangkang, makan daun, dan bersembunyi dari panas di tempat lembap yang teduh."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Is it good to go slowly sometimes? When?",
+      "id": "Apakah kadang baik berjalan pelan? Kapan?"
+    },
+    {
+      "en": "How was Snail kind to Ant?",
+      "id": "Bagaimana Siput bersikap baik kepada Semut?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "After rain, go on a slow 'snail walk' in a garden or park. Look under leaves for snails and silver trails, but just look, without picking them up. Wash hands afterwards.",
+    "id": "Setelah hujan, berjalan pelan seperti siput di kebun atau taman. Cari siput dan jejak perak di bawah daun, cukup dilihat tanpa diambil. Cuci tangan sesudahnya."
+  },
+  "factChecks": [
+    {
+      "claim": "Snails carry a shell on their backs.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Snails leave a shiny slime trail.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Many garden snails eat leaves and prefer damp, shady places.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Look at snails without touching them, and wash hands after the garden walk.",
+      "id": "Lihat siput tanpa menyentuhnya, dan cuci tangan setelah berjalan di kebun."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

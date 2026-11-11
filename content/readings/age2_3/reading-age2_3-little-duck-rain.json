@@ -1,0 +1,235 @@
+{
+  "id": "reading-age2_3-little-duck-rain",
+  "version": "1.0.1",
+  "level": "age2_3",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Little Duck and the rain",
+    "id": "Bebek Kecil dan hujan"
+  },
+  "text": {
+    "en": [
+      "Grey clouds float over the pond. Little Duck looks up. Quack?",
+      "Drip. Drop. Drip. Drop. Rain falls on Little Duck's head.",
+      "Plip, plop! Little Duck jumps in a puddle. Splash!",
+      "The rain stops. Little Duck shakes her wings. Shake, shake, shake.",
+      "The sun comes out. Little Duck sits in the warm sun. Quack, quack!"
+    ],
+    "id": [
+      "Awan abu-abu melayang di atas kolam. Bebek Kecil melihat ke atas. Kwek?",
+      "Tik. Tik. Tik. Tik. Hujan jatuh di kepala Bebek Kecil.",
+      "Plup, plap! Bebek Kecil melompat ke genangan air. Byur!",
+      "Hujan berhenti. Bebek Kecil mengibaskan sayapnya. Kibas, kibas, kibas.",
+      "Matahari muncul. Bebek Kecil duduk di bawah sinar matahari yang hangat. Kwek, kwek!"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Point up to the sky and say 'Quack?' in a wondering voice.",
+      "id": "Tunjuk ke langit dan ucapkan 'Kwek?' dengan suara bertanya-tanya."
+    },
+    {
+      "en": "Tap your fingertips gently on your child's head for each 'drip, drop'.",
+      "id": "Ketuk lembut ujung jari di kepala anak untuk setiap 'tik'."
+    },
+    {
+      "en": "Bounce your child on your knee for the jump and say 'Splash!' together.",
+      "id": "Ayun anak di pangkuan untuk lompatan dan ucapkan 'Byur!' bersama."
+    },
+    {
+      "en": "Wiggle your arms like wings and invite your child to shake too.",
+      "id": "Goyangkan lengan seperti sayap dan ajak anak ikut mengibas."
+    },
+    {
+      "en": "Spread your arms wide like the sun and give a warm hug.",
+      "id": "Bentangkan lengan seperti matahari lalu peluk anak dengan hangat."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a duck looking up at grey clouds",
+      "id": "Kartu 1: bebek melihat ke awan abu-abu"
+    },
+    {
+      "en": "Card 2: raindrops falling on the duck",
+      "id": "Kartu 2: tetes hujan jatuh di atas bebek"
+    },
+    {
+      "en": "Card 3: the duck jumping in a puddle",
+      "id": "Kartu 3: bebek melompat ke genangan"
+    },
+    {
+      "en": "Card 4: the duck shaking water off its wings",
+      "id": "Kartu 4: bebek mengibaskan air dari sayapnya"
+    },
+    {
+      "en": "Card 5: the duck sitting in yellow sunshine",
+      "id": "Kartu 5: bebek duduk di bawah sinar matahari kuning"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a short weather story and joins in with sounds.",
+      "id": "Mendengarkan cerita pendek tentang cuaca dan ikut menirukan bunyi."
+    },
+    {
+      "en": "Notices that rain comes from clouds and that the sun comes after rain.",
+      "id": "Menyadari bahwa hujan datang dari awan dan matahari bisa muncul setelah hujan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "puddle",
+        "id": "genangan"
+      },
+      "meaning": {
+        "en": "a little pool of rainwater on the ground",
+        "id": "air hujan yang berkumpul di tanah"
+      }
+    },
+    {
+      "word": {
+        "en": "cloud",
+        "id": "awan"
+      },
+      "meaning": {
+        "en": "the soft grey or white shape in the sky",
+        "id": "bentuk lembut abu-abu atau putih di langit"
+      }
+    },
+    {
+      "word": {
+        "en": "shake",
+        "id": "kibas"
+      },
+      "meaning": {
+        "en": "to move quickly from side to side",
+        "id": "bergerak cepat ke kanan dan ke kiri"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What fell on Little Duck's head?",
+        "id": "Apa yang jatuh di kepala Bebek Kecil?"
+      },
+      "choices": {
+        "en": [
+          "rain",
+          "leaves",
+          "sand"
+        ],
+        "id": [
+          "hujan",
+          "daun",
+          "pasir"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Little Duck do after the rain stopped?",
+        "id": "Apa yang dilakukan Bebek Kecil setelah hujan berhenti?"
+      },
+      "choices": {
+        "en": [
+          "shook her wings",
+          "jumped in a puddle",
+          "looked at the clouds"
+        ],
+        "id": [
+          "mengibaskan sayap",
+          "melompat ke genangan",
+          "melihat awan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "How does Little Duck feel in the sunshine?",
+        "id": "Bagaimana perasaan Bebek Kecil di bawah sinar matahari?"
+      },
+      "choices": {
+        "en": [
+          "warm and happy",
+          "cold and sad",
+          "scared"
+        ],
+        "id": [
+          "hangat dan senang",
+          "dingin dan sedih",
+          "takut"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Rain falls from clouds, makes puddles, and the sun can come out again afterwards.",
+        "id": "Hujan turun dari awan, membuat genangan, dan matahari bisa muncul lagi sesudahnya."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What do we wear when it rains?",
+      "id": "Apa yang kita pakai saat hujan?"
+    },
+    {
+      "en": "Can you shake like Little Duck?",
+      "id": "Bisakah kamu mengibas seperti Bebek Kecil?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "After a rain shower, hold hands and look at a puddle together from the edge. Drop a leaf on it and watch it float. Stay right beside your child.",
+    "id": "Setelah hujan reda, bergandengan tangan dan lihat genangan bersama dari pinggirnya. Jatuhkan sehelai daun dan lihat daun itu mengapung. Tetaplah tepat di samping anak."
+  },
+  "factChecks": [
+    {
+      "claim": "Rain falls from clouds.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Puddles only: avoid deep water, drains and ditches, and keep holding your toddler's hand outdoors.",
+      "id": "Hanya genangan kecil: jauhi air dalam, selokan dan parit, dan tetap genggam tangan balita di luar rumah."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

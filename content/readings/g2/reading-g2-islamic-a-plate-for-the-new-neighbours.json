@@ -1,0 +1,232 @@
+{
+  "id": "reading-g2-islamic-a-plate-for-the-new-neighbours",
+  "version": "0.1.0",
+  "level": "g2",
+  "readingLevel": "early",
+  "genre": "fiction",
+  "mode": "independent",
+  "title": {
+    "en": "A plate for the new neighbours",
+    "id": "Sepiring kue untuk tetangga baru"
+  },
+  "text": {
+    "en": [
+      "A truck stopped next door. Boxes, chairs and a big green sofa came out. 'New neighbours!' said Laila.",
+      "Laila saw a girl about her age sitting on a box. She looked tired and a little lonely.",
+      "'Ibu, can we welcome them?' asked Laila. Ibu nodded. 'Good neighbours share and help. Let's take them some kue lapis.'",
+      "Laila arranged the cakes on a plate. She drew a card: a house, a sun and the words 'Selamat datang'.",
+      "They knocked and said salam. The girl's mother opened the door. The girl peeked out from behind her.",
+      "'My name is Laila. These are for you.' The girl smiled shyly. 'I'm Tari. Thank you.'",
+      "The next morning, Tari knocked on Laila's door with the clean plate and a question: 'Do you want to walk to school together?'"
+    ],
+    "id": [
+      "Sebuah truk berhenti di rumah sebelah. Kardus, kursi, dan sofa hijau besar diturunkan. 'Tetangga baru!' seru Laila.",
+      "Laila melihat seorang anak perempuan seusianya duduk di atas kardus. Ia tampak lelah dan agak kesepian.",
+      "'Bu, boleh kita menyambut mereka?' tanya Laila. Ibu mengangguk. 'Tetangga yang baik suka berbagi dan menolong. Yuk kita antar kue lapis.'",
+      "Laila menata kue di piring. Ia menggambar kartu: sebuah rumah, matahari, dan tulisan 'Selamat datang'.",
+      "Mereka mengetuk dan mengucapkan salam. Ibu anak itu membuka pintu. Anak perempuan itu mengintip dari belakangnya.",
+      "'Namaku Laila. Ini untuk kalian.' Anak itu tersenyum malu-malu. 'Aku Tari. Terima kasih.'",
+      "Keesokan paginya, Tari mengetuk pintu Laila sambil membawa piring yang sudah bersih dan sebuah pertanyaan: 'Mau berangkat sekolah bareng?'"
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Identifies the problem and how a character helped solve it.",
+      "id": "Mengenali masalah dan bagaimana tokoh membantu menyelesaikannya."
+    },
+    {
+      "en": "Connects the story to Islamic teaching on caring for neighbours.",
+      "id": "Menghubungkan cerita dengan ajaran Islam tentang peduli kepada tetangga."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "neighbour",
+        "id": "tetangga"
+      },
+      "meaning": {
+        "en": "someone who lives near you",
+        "id": "orang yang tinggal di dekatmu"
+      }
+    },
+    {
+      "word": {
+        "en": "lonely",
+        "id": "kesepian"
+      },
+      "meaning": {
+        "en": "sad because you are alone",
+        "id": "sedih karena sendirian"
+      }
+    },
+    {
+      "word": {
+        "en": "shyly",
+        "id": "malu-malu"
+      },
+      "meaning": {
+        "en": "in a quiet, a bit nervous way",
+        "id": "dengan cara pelan dan agak gugup"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Laila and Ibu take next door?",
+        "id": "Apa yang Laila dan Ibu antar ke rumah sebelah?"
+      },
+      "choices": {
+        "en": [
+          "kue lapis and a card",
+          "a green sofa",
+          "some boxes"
+        ],
+        "id": [
+          "kue lapis dan kartu",
+          "sofa hijau",
+          "beberapa kardus"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Laila want to welcome the new family?",
+        "id": "Mengapa Laila ingin menyambut keluarga baru itu?"
+      },
+      "choices": {
+        "en": [
+          "she noticed the girl looked lonely",
+          "she wanted their sofa",
+          "Ibu told her to stay away"
+        ],
+        "id": [
+          "ia melihat anak itu tampak kesepian",
+          "ia ingin sofa mereka",
+          "Ibu menyuruhnya menjauh"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happened the next morning?",
+        "id": "Apa yang terjadi keesokan paginya?"
+      },
+      "choices": {
+        "en": [
+          "Tari returned the plate and asked to walk to school together",
+          "the truck came back",
+          "Laila moved house"
+        ],
+        "id": [
+          "Tari mengembalikan piring dan mengajak berangkat sekolah bersama",
+          "truknya datang lagi",
+          "Laila pindah rumah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    },
+    {
+      "id": "q4",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the story mostly about?",
+        "id": "Cerita ini terutama tentang apa?"
+      },
+      "choices": {
+        "en": [
+          "how a small kindness helps a new neighbour feel welcome",
+          "how to move house",
+          "how to bake kue lapis"
+        ],
+        "id": [
+          "bagaimana kebaikan kecil membuat tetangga baru merasa diterima",
+          "cara pindah rumah",
+          "cara membuat kue lapis"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "islamic_values",
+      "connection": {
+        "en": "Islam teaches care for neighbours: greeting them, sharing and helping. Laila does all three.",
+        "id": "Islam mengajarkan peduli kepada tetangga: menyapa, berbagi, dan menolong. Laila melakukan ketiganya."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "How do you think Tari felt before and after the visit?",
+      "id": "Menurutmu bagaimana perasaan Tari sebelum dan sesudah dikunjungi?"
+    },
+    {
+      "en": "What could our family do for a neighbour this week?",
+      "id": "Apa yang bisa keluarga kita lakukan untuk tetangga minggu ini?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make a welcome or thank-you card for a neighbour and deliver it together with a grown-up. Ask about allergies before sharing any food.",
+    "id": "Buat kartu sambutan atau terima kasih untuk tetangga dan antarkan bersama orang dewasa. Tanyakan alergi sebelum berbagi makanan."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Children visit neighbours only with a grown-up.",
+      "id": "Anak berkunjung ke tetangga hanya bersama orang dewasa."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "religious_content",
+    "scholar_wording_required",
+    "source_verification"
+  ],
+  "reviewStatus": "draft",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "tone",
+      "no-invented-citations"
+    ]
+  },
+  "religiousReview": {
+    "doctrinalSchool": null,
+    "fiqhSchool": null,
+    "arabicSource": null,
+    "edition": null,
+    "pageOrSection": null,
+    "translationReviewer": null,
+    "scholarReviewer": null,
+    "reviewedAt": null,
+    "approvalStatus": "unverified",
+    "notes": [
+      "Reading drafted by an AI; teachings are described in plain words and must be confirmed by a qualified scholar. No verse, hadith or quotation is reproduced.",
+      "Confirm Ibu's line 'Good neighbours share and help' as a fair plain-words summary of the teaching on neighbours."
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-islamic",
+    "createdAt": "2026-11-10"
+  }
+}

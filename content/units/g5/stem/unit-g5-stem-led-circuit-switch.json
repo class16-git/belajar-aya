@@ -1,0 +1,541 @@
+{
+  "id": "unit-g5-stem-led-circuit-switch",
+  "version": "1.0.1",
+  "level": "g5",
+  "framework": "stem",
+  "strand": "electronics",
+  "title": {
+    "en": "Light an LED: circuits and switches",
+    "id": "Menyalakan LED: rangkaian dan saklar"
+  },
+  "prerequisites": [
+    "unit-g4-stem-light-meter-sensor"
+  ],
+  "objective": {
+    "en": "Build a complete circuit with a sealed AA battery holder, a resistor and an LED, explain why the loop must be closed and the LED must face the right way, and design and improve a paper-and-foil switch.",
+    "id": "Merakit rangkaian lengkap dengan tempat baterai AA tertutup, resistor, dan LED, menjelaskan mengapa jalur harus tertutup dan LED harus menghadap arah yang benar, serta merancang dan memperbaiki saklar dari kertas dan aluminium foil."
+  },
+  "rationale": {
+    "en": "Every robot and gadget depends on circuits. A low-voltage LED circuit is safe with an adult present and gives instant feedback: it lights only when the loop is complete and the LED's long leg is on the positive side. A home-made switch turns that feedback into a design problem to test and improve.",
+    "id": "Setiap robot dan gawai bergantung pada rangkaian. Rangkaian LED bertegangan rendah aman jika ada orang dewasa dan memberi umpan balik langsung: LED hanya menyala saat jalur lengkap dan kaki panjang LED ada di sisi positif. Saklar buatan sendiri mengubah umpan balik itu menjadi masalah rancangan untuk diuji dan diperbaiki."
+  },
+  "outcomes": [
+    {
+      "en": "Builds a working LED circuit and finds and fixes an open loop or a reversed LED.",
+      "id": "Merakit rangkaian LED yang bekerja dan menemukan serta memperbaiki jalur terbuka atau LED terbalik."
+    },
+    {
+      "en": "Designs a foil switch, tests it ten times and improves its reliability.",
+      "id": "Merancang saklar foil, mengujinya sepuluh kali, dan meningkatkan keandalannya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can trace the loop from the battery, through the LED, and back.",
+      "id": "Aku bisa menelusuri jalur dari baterai, melalui LED, dan kembali."
+    },
+    {
+      "en": "My switch works every time I press it.",
+      "id": "Saklarku bekerja setiap kali aku tekan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Stay with your child for the whole session. Check the battery holder is sealed and fully closed before batteries go in.",
+      "id": "Dampingi anak selama seluruh kegiatan. Periksa tempat baterai tertutup rapat sebelum baterai dimasukkan."
+    },
+    {
+      "en": "Before connecting anything, ask your child to predict: 'Will it light? Why?' Then test, and compare.",
+      "id": "Sebelum menyambung apa pun, minta anak menebak: 'Akan menyala? Mengapa?' Lalu uji, dan bandingkan."
+    },
+    {
+      "en": "Teach the trace: put a finger on the red wire and follow the path all the way round to the black wire. A gap anywhere means no light.",
+      "id": "Ajarkan penelusuran: taruh jari di kabel merah dan ikuti jalurnya berkeliling sampai kabel hitam. Celah di mana pun berarti tidak ada cahaya."
+    },
+    {
+      "en": "Keep a design journal: sketch each switch, record ten presses, and write what you will change.",
+      "id": "Buat jurnal rancangan: gambar setiap saklar, catat sepuluh kali tekan, dan tulis apa yang akan diubah."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Predict first. Then connect: red wire, resistor, LED long leg; LED short leg, black wire.",
+      "id": "Tebak dulu. Lalu sambung: kabel merah, resistor, kaki panjang LED; kaki pendek LED, kabel hitam."
+    },
+    {
+      "en": "If it does not light, trace the loop with your finger and look for a gap or a backwards LED.",
+      "id": "Jika tidak menyala, telusuri jalur dengan jari dan cari celah atau LED yang terbalik."
+    },
+    {
+      "en": "Build a foil switch. Test it ten times, write the result, improve it and test again.",
+      "id": "Buat saklar foil. Uji sepuluh kali, tulis hasilnya, perbaiki, dan uji lagi."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build the real circuit with crocodile-clip leads and test it.",
+        "id": "Rakit rangkaian nyata dengan kabel penjepit buaya dan uji."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the circuit as a loop diagram, marking plus and minus and the LED's long leg.",
+        "id": "Gambar rangkaian sebagai diagram jalur, tandai plus dan minus serta kaki panjang LED."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Work out the battery voltage: two 1.5 volt AA cells in a row give 2 × 1.5 = 3 volts.",
+        "id": "Hitung tegangan baterai: dua sel AA 1,5 volt berjajar memberi 2 × 1,5 = 3 volt."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A sealed battery holder for 2 AA batteries, with an on-off switch and red and black wires",
+      "id": "Tempat baterai tertutup untuk 2 baterai AA, dengan saklar nyala-mati dan kabel merah dan hitam"
+    },
+    {
+      "en": "2 AA batteries",
+      "id": "2 baterai AA"
+    },
+    {
+      "en": "2 or 3 standard 5 mm red or yellow LEDs (not white or blue, which need more than 3 volts) and the same number of resistors (about 100 to 220 ohms) from an electronics starter kit",
+      "id": "2 atau 3 LED standar 5 mm merah atau kuning (bukan putih atau biru, yang butuh lebih dari 3 volt) dan resistor dengan jumlah sama (sekitar 100 sampai 220 ohm) dari kit elektronika pemula"
+    },
+    {
+      "en": "4 crocodile-clip leads",
+      "id": "4 kabel penjepit buaya"
+    },
+    {
+      "en": "Aluminium foil, thin card, sticky tape and a pencil",
+      "id": "Aluminium foil, karton tipis, selotip, dan pensil"
+    },
+    {
+      "en": "A small box to keep all parts in",
+      "id": "Kotak kecil untuk menyimpan semua komponen"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult checks the holder is sealed, puts in the batteries with the holder switch off, and lays out the parts on a dry table.",
+      "id": "Orang dewasa memeriksa tempat baterai tertutup, memasang baterai dengan saklar tempat baterai mati, dan menata komponen di meja yang kering."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "First circuit: red wire clipped to the resistor, resistor to the LED's long leg, LED's short leg to the black wire. Prediction: 'it will light'. Switch the holder on: it lights. Trace the loop with a finger.",
+      "id": "Rangkaian pertama: kabel merah dijepit ke resistor, resistor ke kaki panjang LED, kaki pendek LED ke kabel hitam. Tebakan: 'akan menyala'. Nyalakan saklar tempat baterai: menyala. Telusuri jalur dengan jari."
+    },
+    {
+      "en": "Two bugs: unclip the black wire; the LED goes out because the loop is open. Clip it back, then turn the LED round: it stays dark because an LED lets current through only one way. Turn it back: light.",
+      "id": "Dua bug: lepas kabel hitam; LED padam karena jalurnya terbuka. Jepit kembali, lalu balik LED: tetap gelap karena LED hanya mengalirkan arus satu arah. Kembalikan: menyala."
+    },
+    {
+      "en": "Foil switch, version 1: two foil strips taped on a folded card, one on each half, so they touch when the card is pressed shut. Lina's test: 6 lights out of 10 presses. She sees the strips only half overlap, makes them wider, and the next test gives 10 out of 10.",
+      "id": "Saklar foil, versi 1: dua potong foil ditempel di karton terlipat, satu di setiap sisi, sehingga bersentuhan saat karton ditekan. Uji Lina: 6 kali menyala dari 10 kali tekan. Ia melihat foilnya hanya setengah bertumpuk, melebarkannya, dan uji berikutnya memberi 10 dari 10."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Build the circuit, then deliberately make one bug for a family member to find by tracing. Allowed bugs: unclip one wire, or turn the LED round. Never remove the resistor or join the battery wires.",
+      "id": "Rakit rangkaian, lalu sengaja buat satu bug untuk ditemukan anggota keluarga dengan menelusuri. Bug yang boleh: lepas satu jepitan, atau balik LED. Jangan pernah melepas resistor atau menyambung kabel baterai."
+    },
+    {
+      "en": "Add your foil switch into the loop (between the resistor and the LED), test it ten times, improve it and test again.",
+      "id": "Pasang saklar foilmu di jalur (di antara resistor dan LED), uji sepuluh kali, perbaiki, dan uji lagi."
+    },
+    {
+      "en": "Design a 'quiet please' sign for a door: the LED lights when the card is pressed. Sketch, build and reflect on what you would change next.",
+      "id": "Rancang tanda 'harap tenang' untuk pintu: LED menyala saat karton ditekan. Gambar, rakit, dan renungkan apa yang akan diubah berikutnya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Two 1.5 volt AA batteries sit end to end in the holder. What voltage do they give together?",
+        "id": "Dua baterai AA 1,5 volt berjajar ujung ke ujung di tempatnya. Berapa tegangannya bersama-sama?"
+      },
+      "choices": {
+        "en": [
+          "3 volts",
+          "1.5 volts",
+          "15 volts"
+        ],
+        "id": [
+          "3 volt",
+          "1,5 volt",
+          "15 volt"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Cells in a row add up: 2 × 1.5 = 3 volts.",
+        "id": "Sel yang berjajar dijumlahkan: 2 × 1,5 = 3 volt."
+      },
+      "distractorMisconceptions": {
+        "1": "BATTERIES_DONT_ADD",
+        "2": "DECIMAL_SLIP"
+      },
+      "check": {
+        "expression": "2 × 1.5",
+        "result": "3"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "The loop is complete, the holder switch is on and the LED is red, but it stays dark. What is the most likely fix?",
+        "id": "Jalurnya lengkap, saklar tempat baterai menyala dan LED-nya merah, tetapi tetap gelap. Perbaikan yang paling mungkin apa?"
+      },
+      "choices": {
+        "en": [
+          "Turn the LED round so the long leg is on the positive side",
+          "Remove the resistor",
+          "Add a third battery"
+        ],
+        "id": [
+          "Balik LED agar kaki panjang di sisi positif",
+          "Lepas resistornya",
+          "Tambah baterai ketiga"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "An LED works only one way round. Removing the resistor can damage the LED.",
+        "id": "LED hanya bekerja satu arah. Melepas resistor bisa merusak LED."
+      },
+      "distractorMisconceptions": {
+        "1": "RESISTOR_BLOCKS_LIGHT",
+        "2": "MORE_POWER_FIXES_ALL"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Why do we put a resistor in the circuit with the LED?",
+        "id": "Mengapa kita memasang resistor di rangkaian bersama LED?"
+      },
+      "choices": {
+        "en": [
+          "It limits the current so the LED is not damaged",
+          "It makes the LED much brighter",
+          "It stores electricity"
+        ],
+        "id": [
+          "Membatasi arus agar LED tidak rusak",
+          "Membuat LED jauh lebih terang",
+          "Menyimpan listrik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The resistor protects the LED by limiting the current.",
+        "id": "Resistor melindungi LED dengan membatasi arus."
+      },
+      "distractorMisconceptions": {
+        "1": "RESISTOR_ADDS_POWER",
+        "2": "RESISTOR_ADDS_POWER"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Your foil switch is open (the card is not pressed). What happens?",
+        "id": "Saklar foilmu terbuka (karton tidak ditekan). Apa yang terjadi?"
+      },
+      "choices": {
+        "en": [
+          "The loop is broken, so the LED is off",
+          "The LED stays on",
+          "The batteries get used up faster"
+        ],
+        "id": [
+          "Jalurnya terputus, jadi LED mati",
+          "LED tetap menyala",
+          "Baterai lebih cepat habis"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A switch works by opening and closing the loop.",
+        "id": "Saklar bekerja dengan membuka dan menutup jalur."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_WIRE_ENOUGH",
+        "2": "OPEN_SWITCH_STILL_DRAINS"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Your first switch lit 6 times out of 10 presses. After improving it, it lit 10 times out of 10. How many more presses worked?",
+        "id": "Saklar pertamamu menyala 6 kali dari 10 tekan. Setelah diperbaiki, menyala 10 kali dari 10. Berapa tekan lebih banyak yang berhasil?"
+      },
+      "choices": {
+        "en": [
+          "4 more",
+          "16 more",
+          "10 more"
+        ],
+        "id": [
+          "4 lebih banyak",
+          "16 lebih banyak",
+          "10 lebih banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Compare the results: 10 - 6 = 4.",
+        "id": "Bandingkan hasilnya: 10 - 6 = 4."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "REPORTS_FINAL_SCORE"
+      },
+      "check": {
+        "expression": "10 - 6",
+        "result": "4"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "Which of these is safe for this activity?",
+        "id": "Manakah yang aman untuk kegiatan ini?"
+      },
+      "choices": {
+        "en": [
+          "A sealed AA battery holder with an adult present",
+          "A wall socket",
+          "Joining the two battery wires straight together"
+        ],
+        "id": [
+          "Tempat baterai AA tertutup dengan orang dewasa hadir",
+          "Stopkontak di dinding",
+          "Menyambung dua kabel baterai langsung"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Mains electricity is never used, and joining the wires directly makes a short circuit that can heat the batteries.",
+        "id": "Listrik PLN tidak pernah dipakai, dan menyambung kabel langsung membuat korsleting yang bisa memanaskan baterai."
+      },
+      "distractorMisconceptions": {
+        "1": "MAINS_IS_SAME",
+        "2": "SHORT_IS_SHORTCUT"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "BATTERIES_DONT_ADD",
+      "description": {
+        "en": "Thinks two cells in a row give the same voltage as one.",
+        "id": "Mengira dua sel berjajar memberi tegangan yang sama dengan satu."
+      },
+      "remediation": {
+        "en": "Draw each cell as a 1.5-step staircase and stack two of them to see the total height.",
+        "id": "Gambar setiap sel sebagai tangga setinggi 1,5 dan tumpuk dua untuk melihat tinggi totalnya."
+      }
+    },
+    {
+      "code": "DECIMAL_SLIP",
+      "description": {
+        "en": "Ignores the decimal point and reads 1.5 as 15.",
+        "id": "Mengabaikan koma dan membaca 1,5 sebagai 15."
+      },
+      "remediation": {
+        "en": "Say 'one and a half' aloud and show it with one whole and one half paper strip.",
+        "id": "Ucapkan 'satu setengah' dan tunjukkan dengan satu potong kertas utuh dan setengah potong."
+      }
+    },
+    {
+      "code": "RESISTOR_BLOCKS_LIGHT",
+      "description": {
+        "en": "Blames the resistor when the LED does not light.",
+        "id": "Menyalahkan resistor saat LED tidak menyala."
+      },
+      "remediation": {
+        "en": "Keep the resistor in, change only the LED direction, and observe.",
+        "id": "Biarkan resistor terpasang, ubah hanya arah LED, dan amati."
+      }
+    },
+    {
+      "code": "MORE_POWER_FIXES_ALL",
+      "description": {
+        "en": "Thinks adding batteries fixes any circuit problem.",
+        "id": "Mengira menambah baterai memperbaiki semua masalah rangkaian."
+      },
+      "remediation": {
+        "en": "Trace the loop with a finger before changing any part; list what you found.",
+        "id": "Telusuri jalur dengan jari sebelum mengganti komponen; catat apa yang ditemukan."
+      }
+    },
+    {
+      "code": "RESISTOR_ADDS_POWER",
+      "description": {
+        "en": "Thinks a resistor adds power or stores electricity.",
+        "id": "Mengira resistor menambah daya atau menyimpan listrik."
+      },
+      "remediation": {
+        "en": "Compare the LED with a 100 ohm and a 220 ohm resistor: the larger resistor makes it dimmer, because it lets less current through.",
+        "id": "Bandingkan LED dengan resistor 100 ohm dan 220 ohm: resistor yang lebih besar membuatnya lebih redup, karena mengalirkan arus lebih sedikit."
+      }
+    },
+    {
+      "code": "ONE_WIRE_ENOUGH",
+      "description": {
+        "en": "Believes one wire from the battery is enough to light the LED.",
+        "id": "Percaya satu kabel dari baterai cukup untuk menyalakan LED."
+      },
+      "remediation": {
+        "en": "Walk a loop of string around the room as the circuit; cut it anywhere and the 'current' walker cannot get home.",
+        "id": "Jalankan seutas tali melingkar di ruangan sebagai rangkaian; potong di mana saja dan pejalan 'arus' tidak bisa pulang."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds two results when asked how many more.",
+        "id": "Menjumlahkan dua hasil saat ditanya berapa lebih banyak."
+      },
+      "remediation": {
+        "en": "Line up tally marks for both tests and pair them off; count the unpaired marks.",
+        "id": "Jajarkan turus kedua uji dan pasangkan; hitung turus yang tidak berpasangan."
+      }
+    },
+    {
+      "code": "MAINS_IS_SAME",
+      "description": {
+        "en": "Thinks household electricity is like batteries, only bigger.",
+        "id": "Mengira listrik rumah sama seperti baterai, hanya lebih besar."
+      },
+      "remediation": {
+        "en": "Read the warning label on an unplugged charger together, without plugging it in, and talk about why mains electricity is only for qualified adults.",
+        "id": "Baca bersama label peringatan di pengisi daya yang tidak tercolok, tanpa mencolokkannya, dan bicarakan mengapa listrik PLN hanya untuk orang dewasa yang ahli."
+      }
+    },
+    {
+      "code": "SHORT_IS_SHORTCUT",
+      "description": {
+        "en": "Thinks joining the battery wires directly is a quicker circuit.",
+        "id": "Mengira menyambung kabel baterai langsung adalah rangkaian yang lebih cepat."
+      },
+      "remediation": {
+        "en": "Explain with a water picture: with nothing in the way, everything rushes through at once and heats up; the LED and resistor are the 'useful path'.",
+        "id": "Jelaskan dengan gambaran air: tanpa penghalang, semuanya mengalir sekaligus dan memanas; LED dan resistor adalah 'jalur yang berguna'."
+      }
+    },
+    {
+      "code": "OPEN_SWITCH_STILL_DRAINS",
+      "description": {
+        "en": "Thinks batteries are used up even when the switch is open.",
+        "id": "Mengira baterai tetap terpakai walaupun saklar terbuka."
+      },
+      "remediation": {
+        "en": "Trace the loop with the switch open: the path has a gap, so no current flows and nothing is used.",
+        "id": "Telusuri jalur saat saklar terbuka: ada celah, jadi tidak ada arus yang mengalir dan tidak ada yang terpakai."
+      }
+    },
+    {
+      "code": "REPORTS_FINAL_SCORE",
+      "description": {
+        "en": "Gives the new score instead of the difference.",
+        "id": "Memberikan skor baru, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Write both scores, 6 and 10, and count up from 6 to 10 on your fingers.",
+        "id": "Tulis kedua skor, 6 dan 10, lalu hitung maju dari 6 sampai 10 dengan jari."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add a second LED with its own resistor and find out whether both can share one switch.",
+      "id": "Tambahkan LED kedua dengan resistornya sendiri dan cari tahu apakah keduanya bisa berbagi satu saklar."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use large crocodile clips and colour-code wires with tape for a child with fine-motor or vision difficulties; a partner can read the journal aloud.",
+      "id": "Gunakan penjepit buaya besar dan beri kode warna kabel dengan selotip untuk anak yang kesulitan motorik halus atau penglihatan; pasangan bisa membacakan jurnal."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": true,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": true
+    },
+    "notes": [
+      {
+        "en": "Foil: the foil switch always goes in the loop with the resistor and LED, never straight across the red and black wires. Foil touching both battery wires short-circuits the batteries and can get hot enough to burn paper. Keep loose foil off the table while the batteries are in.",
+        "id": "Foil: saklar foil selalu dipasang di jalur bersama resistor dan LED, tidak pernah langsung di antara kabel merah dan hitam. Foil yang menyentuh kedua kabel baterai membuat korsleting dan bisa cukup panas untuk membakar kertas. Singkirkan sisa foil dari meja selama baterai terpasang."
+      },
+      {
+        "en": "Electricity: use only a sealed, store-bought holder for 2 AA batteries. No mains electricity, no wall sockets or chargers, and no button or coin cells.",
+        "id": "Listrik: gunakan hanya tempat baterai tertutup buatan pabrik untuk 2 baterai AA. Tanpa listrik PLN, tanpa stopkontak atau pengisi daya, dan tanpa baterai kancing atau koin."
+      },
+      {
+        "en": "Never join the two battery wires directly to each other (a short circuit): the batteries can get hot. If anything feels warm, open the switch and disconnect at once.",
+        "id": "Jangan pernah menghubungkan dua kabel baterai langsung satu sama lain (korsleting): baterai bisa panas. Jika ada yang terasa hangat, matikan saklar dan lepaskan segera."
+      },
+      {
+        "en": "An adult is present for the whole build. LEDs, resistors and batteries are small parts: count them back into a box and keep them away from younger siblings. LED and resistor legs are pointed; do not poke skin.",
+        "id": "Orang dewasa hadir selama seluruh perakitan. LED, resistor, dan baterai adalah bagian kecil: hitung kembali ke dalam kotak dan jauhkan dari adik yang lebih kecil. Kaki LED dan resistor runcing; jangan ditusukkan ke kulit."
+      },
+      {
+        "en": "Always use the resistor with the LED, and remove the batteries from the holder when you finish.",
+        "id": "Selalu gunakan resistor bersama LED, dan keluarkan baterai dari tempatnya setelah selesai."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 50
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child builds and debugs the circuit, explains the loop, the LED direction and the resistor, and improves a switch to 10 out of 10.",
+      "id": "Dikuasai jika anak merakit dan memperbaiki rangkaian, menjelaskan jalur, arah LED, dan resistor, serta memperbaiki saklar hingga 10 dari 10."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "id": "unit-g5-montessori-bce-ce-timeline-reckoning",
+  "version": "1.0.1",
+  "level": "g5",
+  "framework": "montessori",
+  "strand": "history",
+  "title": {
+    "en": "Before and after year 1: reading a BCE and CE timeline",
+    "id": "Sebelum dan sesudah tahun 1: membaca garis waktu SM dan M"
+  },
+  "prerequisites": [
+    "unit-g4-montessori-ribbon-timeline-of-life"
+  ],
+  "objective": {
+    "en": "Read and build a timeline that crosses from BCE (SM) into CE (M), order dates correctly on both sides, and calculate the years between two dates, including across the boundary where there is no year 0.",
+    "id": "Membaca dan membuat garis waktu yang melintas dari SM ke M, mengurutkan tanggal dengan benar di kedua sisi, dan menghitung jarak tahun antara dua tanggal, termasuk melewati batas yang tidak memiliki tahun 0."
+  },
+  "rationale": {
+    "en": "History books mix BCE and CE dates. Children often think 500 BCE comes after 300 BCE because 500 is bigger. Working on a physical number-line-style timeline makes the 'counting backwards' of BCE visible.",
+    "id": "Buku sejarah mencampur tanggal SM dan M. Anak sering mengira 500 SM datang setelah 300 SM karena 500 lebih besar. Bekerja dengan garis waktu nyata seperti garis bilangan membuat 'hitungan mundur' SM terlihat."
+  },
+  "outcomes": [
+    {
+      "en": "Orders a mix of BCE and CE dates from earliest to latest.",
+      "id": "Mengurutkan campuran tanggal SM dan M dari paling awal ke paling akhir."
+    },
+    {
+      "en": "Calculates elapsed years within BCE, within CE and across the boundary.",
+      "id": "Menghitung jarak tahun di dalam SM, di dalam M, dan melewati batas."
+    },
+    {
+      "en": "Explains that BCE years count down towards year 1 CE and that there is no year 0 in this system.",
+      "id": "Menjelaskan bahwa tahun SM dihitung mundur menuju tahun 1 M dan tidak ada tahun 0 dalam sistem ini."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can put 800 BCE, 200 BCE, 150 CE and 1200 CE in order.",
+      "id": "Aku bisa mengurutkan 800 SM, 200 SM, 150 M, dan 1200 M."
+    },
+    {
+      "en": "I can work out the years from 100 BCE to 100 CE and explain why it is 199, not 200.",
+      "id": "Aku bisa menghitung jarak dari 100 SM ke 100 M dan menjelaskan mengapa 199, bukan 200."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use a long strip with 1 cm per 10 years, from 1000 BCE to 2000 CE (3 m). Mark the boundary between 1 BCE and 1 CE clearly.",
+      "id": "Pakai kertas panjang dengan 1 cm per 10 tahun, dari 1000 SM sampai 2000 M (3 m). Tandai batas antara 1 SM dan 1 M dengan jelas."
+    },
+    {
+      "en": "This unit uses invented villages and events so the focus stays on reading dates, not memorising facts.",
+      "id": "Unit ini memakai desa dan peristiwa khayalan agar fokus pada membaca tanggal, bukan menghafal fakta."
+    },
+    {
+      "en": "The 'no year 0' rule surprises adults too. Show it with a tiny strip: 2 BCE, 1 BCE, 1 CE, 2 CE. From 1 BCE to 1 CE is one year.",
+      "id": "Aturan 'tidak ada tahun 0' juga mengejutkan orang dewasa. Tunjukkan dengan kertas kecil: 2 SM, 1 SM, 1 M, 2 M. Dari 1 SM ke 1 M adalah satu tahun."
+    },
+    {
+      "en": "In Indonesian, BCE is SM (Sebelum Masehi) and CE is M (Masehi).",
+      "id": "Dalam bahasa Inggris, SM ditulis BCE dan M ditulis CE."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Find the boundary on the strip. BCE is to the left, CE to the right.",
+      "id": "Temukan batas pada kertas. SM ada di kiri, M di kanan."
+    },
+    {
+      "en": "On the BCE side, bigger numbers are further back in time. Place each date card in its spot.",
+      "id": "Di sisi SM, angka lebih besar berarti lebih jauh ke masa lalu. Tempatkan setiap kartu tanggal di tempatnya."
+    },
+    {
+      "en": "To find years between two BCE dates, subtract. Between two CE dates, subtract. Across the boundary, add both numbers and take away 1.",
+      "id": "Untuk mencari jarak dua tanggal SM, kurangkan. Antara dua tanggal M, kurangkan. Melewati batas, jumlahkan kedua angka lalu kurangi 1."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "A 3 m paper strip, a metre rule and pencils",
+      "id": "Kertas panjang 3 m, penggaris satu meter, dan pensil"
+    },
+    {
+      "en": "Eight date cards for invented events: a village is founded (800 BCE), its first bridge (450 BCE), a great flood (200 BCE), a market opens (1 BCE), a temple is built (1 CE), a new road (150 CE), a library (700 CE), a harbour (1200 CE)",
+      "id": "Delapan kartu tanggal untuk peristiwa khayalan: desa didirikan (800 SM), jembatan pertama (450 SM), banjir besar (200 SM), pasar dibuka (1 SM), kuil dibangun (1 M), jalan baru (150 M), perpustakaan (700 M), pelabuhan (1200 M)"
+    },
+    {
+      "en": "Notebook for calculations",
+      "id": "Buku tulis untuk perhitungan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Mark every 100 years (every 10 cm) on the strip and label them: 1000 BCE ... 100 BCE | 1 CE, 100 CE ... 2000 CE.",
+      "id": "Tandai setiap 100 tahun (setiap 10 cm) pada kertas dan beri label: 1000 SM ... 100 SM | 1 M, 100 M ... 2000 M."
+    },
+    {
+      "en": "Write the invented-village story on one card so it is clear the events are made up.",
+      "id": "Tulis cerita desa khayalan pada satu kartu agar jelas bahwa peristiwanya rekaan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Place 800 BCE and 200 BCE. Ask: 'Which happened first?' Walk the strip: 800 BCE is further left, so earlier. Years between: 800 − 200 = 600.",
+      "id": "Tempatkan 800 SM dan 200 SM. Tanyakan: 'Mana yang lebih dulu?' Telusuri kertas: 800 SM lebih ke kiri, jadi lebih awal. Jaraknya: 800 − 200 = 600."
+    },
+    {
+      "en": "Place 150 CE and 700 CE: 700 − 150 = 550 years.",
+      "id": "Tempatkan 150 M dan 700 M: 700 − 150 = 550 tahun."
+    },
+    {
+      "en": "Across the boundary: 200 BCE to 150 CE. Count from 200 BCE to 1 BCE: 199 years. One more year to 1 CE: 200. Then 149 more to 150 CE: 349. Shortcut: 200 + 150 − 1 = 349. Check with the tiny strip that 1 BCE to 1 CE is one year.",
+      "id": "Melewati batas: 200 SM ke 150 M. Hitung dari 200 SM ke 1 SM: 199 tahun. Satu tahun lagi ke 1 M: 200. Lalu 149 lagi ke 150 M: 349. Cara cepat: 200 + 150 − 1 = 349. Cek dengan kertas kecil bahwa 1 SM ke 1 M adalah satu tahun."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Place all eight invented-village cards and write the order in the notebook.",
+      "id": "Menempatkan kedelapan kartu desa khayalan dan menulis urutannya di buku."
+    },
+    {
+      "en": "Calculate the years between five pairs: two within BCE, two within CE, one across the boundary.",
+      "id": "Menghitung jarak lima pasangan: dua di dalam SM, dua di dalam M, satu melewati batas."
+    },
+    {
+      "en": "Make up your own invented town with four dates and swap with the adult to order them.",
+      "id": "Membuat kota khayalan sendiri dengan empat tanggal dan bertukar dengan orang dewasa untuk diurutkan."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which happened first: an event in 450 BCE or one in 200 BCE?",
+        "id": "Mana yang terjadi lebih dulu: peristiwa tahun 450 SM atau 200 SM?"
+      },
+      "choices": {
+        "en": [
+          "450 BCE",
+          "200 BCE",
+          "They happened at the same time"
+        ],
+        "id": [
+          "450 SM",
+          "200 SM",
+          "Terjadi bersamaan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "BCE years count down, so 450 BCE is further back than 200 BCE.",
+        "id": "Tahun SM dihitung mundur, jadi 450 SM lebih jauh ke belakang daripada 200 SM."
+      },
+      "distractorMisconceptions": {
+        "1": "BIGGER_BCE_IS_LATER"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "How many years from 800 BCE to 200 BCE?",
+        "id": "Berapa tahun dari 800 SM ke 200 SM?"
+      },
+      "choices": {
+        "en": [
+          "600 years",
+          "1,000 years",
+          "999 years"
+        ],
+        "id": [
+          "600 tahun",
+          "1.000 tahun",
+          "999 tahun"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Both dates are BCE, so subtract: 800 − 200 = 600.",
+        "id": "Kedua tanggal SM, jadi kurangkan: 800 − 200 = 600."
+      },
+      "check": {
+        "expression": "800 - 200",
+        "result": "600"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_WITHIN_ERA",
+        "2": "ADDS_WITHIN_ERA"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "How many years from 100 BCE to 100 CE?",
+        "id": "Berapa tahun dari 100 SM ke 100 M?"
+      },
+      "choices": {
+        "en": [
+          "199 years",
+          "200 years",
+          "0 years"
+        ],
+        "id": [
+          "199 tahun",
+          "200 tahun",
+          "0 tahun"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "There is no year 0: 100 + 100 − 1 = 199.",
+        "id": "Tidak ada tahun 0: 100 + 100 − 1 = 199."
+      },
+      "check": {
+        "expression": "100 + 100 - 1",
+        "result": "199"
+      },
+      "distractorMisconceptions": {
+        "1": "ASSUMES_YEAR_ZERO",
+        "2": "SUBTRACTS_ACROSS_ERA"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "How many years from 150 CE to 1200 CE?",
+        "id": "Berapa tahun dari 150 M ke 1200 M?"
+      },
+      "choices": {
+        "en": [
+          "1,050 years",
+          "1,350 years",
+          "1,049 years"
+        ],
+        "id": [
+          "1.050 tahun",
+          "1.350 tahun",
+          "1.049 tahun"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Both dates are CE: 1,200 − 150 = 1,050. The minus-one rule is only for crossing the boundary.",
+        "id": "Kedua tanggal M: 1.200 − 150 = 1.050. Aturan kurangi satu hanya untuk melewati batas."
+      },
+      "check": {
+        "expression": "1200 - 150",
+        "result": "1050"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_WITHIN_ERA",
+        "2": "MINUS_ONE_OVERUSED"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Put in order, earliest first: 150 CE, 450 BCE, 800 BCE, 1 BCE.",
+        "id": "Urutkan dari paling awal: 150 M, 450 SM, 800 SM, 1 SM."
+      },
+      "choices": {
+        "en": [
+          "800 BCE, 450 BCE, 1 BCE, 150 CE",
+          "1 BCE, 450 BCE, 800 BCE, 150 CE",
+          "150 CE, 1 BCE, 450 BCE, 800 BCE"
+        ],
+        "id": [
+          "800 SM, 450 SM, 1 SM, 150 M",
+          "1 SM, 450 SM, 800 SM, 150 M",
+          "150 M, 1 SM, 450 SM, 800 SM"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "On the strip, left to right: 800 BCE, 450 BCE, 1 BCE, then 150 CE.",
+        "id": "Di kertas, dari kiri ke kanan: 800 SM, 450 SM, 1 SM, lalu 150 M."
+      },
+      "distractorMisconceptions": {
+        "1": "BIGGER_BCE_IS_LATER",
+        "2": "TIMELINE_REVERSED"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "BIGGER_BCE_IS_LATER",
+      "description": {
+        "en": "Thinks a bigger BCE number is a later date.",
+        "id": "Mengira angka SM yang lebih besar berarti tanggal lebih akhir."
+      },
+      "remediation": {
+        "en": "Use a countdown: a rocket counts 10, 9, 8 ... 1 before launch. BCE dates count down the same way towards year 1 CE.",
+        "id": "Pakai hitung mundur: roket menghitung 10, 9, 8 ... 1 sebelum meluncur. Tanggal SM dihitung mundur dengan cara yang sama menuju tahun 1 M."
+      }
+    },
+    {
+      "code": "ADDS_WITHIN_ERA",
+      "description": {
+        "en": "Adds two dates from the same era instead of subtracting.",
+        "id": "Menjumlahkan dua tanggal dari era yang sama alih-alih mengurangkan."
+      },
+      "remediation": {
+        "en": "Measure the gap on the strip with a tape measure and convert: 60 cm × 10 years = 600 years. Compare with the sum.",
+        "id": "Ukur jaraknya pada kertas dengan meteran lalu ubah: 60 cm × 10 tahun = 600 tahun. Bandingkan dengan hasil penjumlahan."
+      }
+    },
+    {
+      "code": "ASSUMES_YEAR_ZERO",
+      "description": {
+        "en": "Counts a year 0 when crossing from BCE to CE.",
+        "id": "Menghitung tahun 0 saat melintas dari SM ke M."
+      },
+      "remediation": {
+        "en": "Build the tiny strip 3 BCE, 2 BCE, 1 BCE, 1 CE, 2 CE, 3 CE and count the steps from 3 BCE to 3 CE: five, not six.",
+        "id": "Buat kertas kecil 3 SM, 2 SM, 1 SM, 1 M, 2 M, 3 M dan hitung langkah dari 3 SM ke 3 M: lima, bukan enam."
+      }
+    },
+    {
+      "code": "SUBTRACTS_ACROSS_ERA",
+      "description": {
+        "en": "Subtracts dates that are on opposite sides of the boundary.",
+        "id": "Mengurangkan tanggal yang berada di sisi batas yang berbeda."
+      },
+      "remediation": {
+        "en": "Walk the strip: from 100 BCE you must first walk to the boundary, then keep going into CE, so the two parts add up.",
+        "id": "Telusuri kertas: dari 100 SM kamu harus berjalan ke batas dulu, lalu terus ke M, sehingga kedua bagian dijumlahkan."
+      }
+    },
+    {
+      "code": "MINUS_ONE_OVERUSED",
+      "description": {
+        "en": "Takes away 1 even when both dates are in the same era.",
+        "id": "Mengurangi 1 walaupun kedua tanggal di era yang sama."
+      },
+      "remediation": {
+        "en": "Ask first: 'Does the journey cross the boundary line?' Only then is there a missing year 0 to allow for.",
+        "id": "Tanyakan dulu: 'Apakah perjalanannya melewati garis batas?' Hanya jika ya, ada tahun 0 yang hilang untuk diperhitungkan."
+      }
+    },
+    {
+      "code": "TIMELINE_REVERSED",
+      "description": {
+        "en": "Orders dates latest first.",
+        "id": "Mengurutkan dari yang paling akhir."
+      },
+      "remediation": {
+        "en": "Draw an arrow labelled 'towards today' along the strip, as on the personal timeline.",
+        "id": "Gambar panah berlabel 'menuju hari ini' di sepanjang kertas, seperti pada garis waktu pribadi."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Find three real dates in a history book, one BCE and two CE, and place them on the strip.",
+      "id": "Cari tiga tanggal nyata di buku sejarah, satu SM dan dua M, lalu tempatkan pada kertas."
+    },
+    {
+      "en": "Make a timeline of your town, school or a local building from the year it was founded (ask a librarian or read a plaque), and work out how many years ago each event happened.",
+      "id": "Buat garis waktu kotamu, sekolahmu, atau sebuah bangunan setempat sejak tahun didirikan (tanyakan kepada pustakawan atau baca prasastinya), lalu hitung berapa tahun yang lalu setiap peristiwa terjadi."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Provide a printed number line marked −10 to 10 as a bridge for children who know negative numbers, and point out that the number line has a 0 but the calendar goes straight from 1 BCE to 1 CE.",
+      "id": "Sediakan garis bilangan −10 sampai 10 sebagai jembatan untuk anak yang mengenal bilangan negatif, dan tunjukkan bahwa garis bilangan punya 0, tetapi kalender langsung dari 1 SM ke 1 M."
+    },
+    {
+      "en": "Allow a calculator for large subtractions so the focus stays on the method.",
+      "id": "Izinkan kalkulator untuk pengurangan besar agar fokus tetap pada caranya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Tape the long strip along a wall or floor edge so no one trips over it.",
+        "id": "Tempel kertas panjang di sepanjang dinding atau tepi lantai agar tidak ada yang tersandung."
+      },
+      {
+        "en": "Events are invented examples; label them clearly so they are not mistaken for real history.",
+        "id": "Peristiwa adalah contoh khayalan; beri label jelas agar tidak dikira sejarah sungguhan."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 45
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      5,
+      14,
+      30
+    ],
+    "masteryRule": {
+      "en": "Secure when the child orders mixed dates and calculates three elapsed-year questions, including one across the boundary, correctly on two different days.",
+      "id": "Dikuasai jika anak mengurutkan tanggal campuran dan menghitung tiga soal jarak tahun, termasuk satu yang melewati batas, dengan benar pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "year_zero_convention_check"
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

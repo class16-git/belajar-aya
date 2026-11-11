@@ -20,7 +20,8 @@
     "library-approve": "tsx scripts/library-approve.ts",
     "library-withdraw": "LIBRARY_ACTION=withdraw tsx scripts/library-approve.ts",
     "release-manifest": "tsx scripts/release-manifest.ts",
-    "dashboard": "tsx scripts/dashboard.ts"
+    "dashboard": "tsx scripts/dashboard.ts",
+    "units:check": "tsx scripts/units-check.ts"
   },
   "dependencies": {
     "@atlas/shared": "workspace:*",

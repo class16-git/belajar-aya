@@ -19,3 +19,47 @@ The **Awaiting human** columns count content that passed the agent checks but is
 | Grade 5 | 0 | 0 | 0 | 0/150 (0%) | 1 | 1 | 1/150 (1%) · 2 passages, 0 books |
 | Grade 6 | 0 | 0 | 0 | 0/150 (0%) | 0 | 2 | 0/150 (0%) · 2 passages, 0 books |
 | **All levels (unique units: 59)** | 55 | 2 | 2 | 4% | 37 | 8 | 2% |
+
+## Expansion content (new units and readings, 2026-11 mandate)
+
+Targets: 1500 new units and 1500 new readings (150 + 150 per level).
+Each cell shows the total authored, then: ✓ passed structural and subject validation · 👤 human-reviewed · ● published (live) · ✗ rejected.
+A draft that has not passed validation counts only in the total.
+Validation errors in the corpus: **0**. Islamic items waiting for a qualified scholar: **30**.
+
+| Level | Units | Units vs target | Readings | Readings vs target |
+|---|---|---|---|---|
+| Age 2–3 | 8 (✓ 8 · 👤 0 · ● 0) | 8/150 | 5 (✓ 5 · 👤 0 · ● 0) | 5/150 |
+| Age 3–4 | 8 (✓ 8 · 👤 0 · ● 0) | 8/150 | 4 (✓ 4 · 👤 0 · ● 0) | 4/150 |
+| Age 4–5 | 8 (✓ 8 · 👤 0 · ● 0) | 8/150 | 4 (✓ 4 · 👤 0 · ● 0) | 4/150 |
+| Kindergarten | 11 (✓ 11 · 👤 0 · ● 0) | 11/150 | 4 (✓ 4 · 👤 0 · ● 0) | 4/150 |
+| Grade 1 | 11 (✓ 11 · 👤 0 · ● 0) | 11/150 | 4 (✓ 4 · 👤 0 · ● 0) | 4/150 |
+| Grade 2 | 12 (✓ 12 · 👤 0 · ● 0) | 12/150 | 4 (✓ 4 · 👤 0 · ● 0) | 4/150 |
+| Grade 3 | 11 (✓ 11 · 👤 0 · ● 0) | 11/150 | 4 (✓ 4 · 👤 0 · ● 0) | 4/150 |
+| Grade 4 | 11 (✓ 11 · 👤 0 · ● 0) | 11/150 | 4 (✓ 4 · 👤 0 · ● 0) | 4/150 |
+| Grade 5 | 11 (✓ 11 · 👤 0 · ● 0) | 11/150 | 4 (✓ 4 · 👤 0 · ● 0) | 4/150 |
+| Grade 6 | 11 (✓ 11 · 👤 0 · ● 0) | 11/150 | 4 (✓ 4 · 👤 0 · ● 0) | 4/150 |
+| **Total** | 102 (✓ 102 · 👤 0 · ● 0) | 102/1500 | 41 (✓ 41 · 👤 0 · ● 0) | 41/1500 |
+
+| Units by framework | Count |
+|---|---|
+| montessori | 20 (✓ 20 · 👤 0 · ● 0) |
+| math | 22 (✓ 22 · 👤 0 · ● 0) |
+| stem | 20 (✓ 20 · 👤 0 · ● 0) |
+| islamic | 20 (✓ 20 · 👤 0 · ● 0) |
+| literacy | 20 (✓ 20 · 👤 0 · ● 0) |
+
+| Readings by genre | Count |
+|---|---|
+| fiction | 11 (✓ 11 · 👤 0 · ● 0) |
+| nonfiction | 3 (✓ 3 · 👤 0 · ● 0) |
+| biography | 2 (✓ 2 · 👤 0 · ● 0) |
+| explanatory | 4 (✓ 4 · 👤 0 · ● 0) |
+| procedural | 2 (✓ 2 · 👤 0 · ● 0) |
+| report | 2 (✓ 2 · 👤 0 · ● 0) |
+| poetry | 2 (✓ 2 · 👤 0 · ● 0) |
+| article | 2 (✓ 2 · 👤 0 · ● 0) |
+| picture_story_script | 10 (✓ 10 · 👤 0 · ● 0) |
+| oral_story | 3 (✓ 3 · 👤 0 · ● 0) |
+
+Machine-readable: [`content-dashboard.json`](content-dashboard.json).

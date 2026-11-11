@@ -1,0 +1,341 @@
+{
+  "id": "unit-age3_4-literacy-hearing-rhyme",
+  "version": "1.0.1",
+  "level": "age3_4",
+  "framework": "literacy",
+  "strand": "phonological_awareness",
+  "title": {
+    "en": "Do they rhyme? Listening for rhyme",
+    "id": "Apakah berima? Mendengar rima"
+  },
+  "prerequisites": [
+    "unit-age3_4-literacy-clapping-syllables"
+  ],
+  "objective": {
+    "en": "Tell whether two spoken words rhyme and pick the rhyming word from a choice of three.",
+    "id": "Menentukan apakah dua kata lisan berima dan memilih kata yang berima dari tiga pilihan."
+  },
+  "rationale": {
+    "en": "Noticing rhyme helps children attend to the ends of words, a skill they later use to read and spell word families. In English a rhyme shares the vowel and everything after it (c-at, h-at). In Indonesian, rhyme usually means the last syllable or two sound the same (to-pi, ko-pi; i-kan, ma-kan), which links to the end rhyme children will later meet in pantun. Each language uses its own word pairs and its own original rhyme rather than translations, because translated rhymes stop rhyming.",
+    "id": "Menyadari rima membantu anak memperhatikan akhir kata, keterampilan yang nanti dipakai untuk membaca dan mengeja keluarga kata. Dalam bahasa Inggris, rima berbagi vokal dan semua bunyi sesudahnya (c-at, h-at). Dalam bahasa Indonesia, rima biasanya berarti satu atau dua suku kata terakhir berbunyi sama (to-pi, ko-pi; i-kan, ma-kan), yang berkaitan dengan rima akhir pantun yang akan dikenal anak nanti. Setiap bahasa memakai pasangan kata dan sajak orisinalnya sendiri, bukan terjemahan, karena sajak terjemahan tidak lagi berima."
+  },
+  "outcomes": [
+    {
+      "en": "Says yes or no correctly when asked whether two words rhyme.",
+      "id": "Menjawab ya atau tidak dengan benar ketika ditanya apakah dua kata berima."
+    },
+    {
+      "en": "Chooses the word that rhymes with a target word from three spoken options.",
+      "id": "Memilih kata yang berima dengan kata sasaran dari tiga pilihan lisan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can hear when words sound the same at the end.",
+      "id": "Aku bisa mendengar kalau akhir kata bunyinya sama."
+    },
+    {
+      "en": "I can find the word that rhymes.",
+      "id": "Aku bisa menemukan kata yang berima."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Read or say the rhyme below twice, stressing the rhyming words a little.",
+      "id": "Bacakan atau ucapkan sajak di bawah dua kali, beri sedikit tekanan pada kata yang berima."
+    },
+    {
+      "en": "Play \"Rhyme or not?\": say two words; your child gives a thumbs up for a rhyme and a thumbs down for no rhyme. Mix yes and no pairs.",
+      "id": "Mainkan \"Berima atau tidak?\": ucapkan dua kata; anak mengacungkan jempol ke atas jika berima dan ke bawah jika tidak. Campur pasangan ya dan tidak."
+    },
+    {
+      "en": "Do not ask your child to make up rhymes yet; recognising comes before producing. Silly made-up words that rhyme are welcome if they appear.",
+      "id": "Jangan minta anak membuat rima sendiri dulu; mengenali datang sebelum membuat. Kata lucu karangan yang berima boleh saja jika muncul."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Picture cards drawn on paper: English set cat, hat, sun, bun, frog, log, bed, cup; Indonesian set topi, kopi, ikan, makan (child eating), bulan, jalan, batu, sapi",
+      "id": "Kartu gambar di kertas: set Indonesia topi, kopi, ikan, makan (anak makan), bulan, jalan, batu, sapi; set Inggris cat, hat, sun, bun, frog, log, bed, cup"
+    },
+    {
+      "en": "A shoebox with a slot as the \"rhyme box\"",
+      "id": "Kotak sepatu berlubang sebagai \"kotak rima\""
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw or print the cards; the adult cuts them out and cuts the slot in the box.",
+      "id": "Gambar atau cetak kartunya; orang dewasa yang menggunting kartu dan membuat lubang di kotak."
+    },
+    {
+      "en": "Learn the original rhyme. English: \"Red bed, sleepy head, / Bun in the sun, the day is done. / Frog on a log, hop to the bog!\" Indonesian: \"Kakek bertopi minum kopi, / Lihat sapi makan pagi. / Lihat ikan, ayo makan, / Pulang pelan di jalan.\"",
+      "id": "Hafalkan sajak orisinalnya. Bahasa Indonesia: \"Kakek bertopi minum kopi, / Lihat sapi makan pagi. / Lihat ikan, ayo makan, / Pulang pelan di jalan.\" Bahasa Inggris: \"Red bed, sleepy head, / Bun in the sun, the day is done. / Frog on a log, hop to the bog!\""
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "English: hold up cat and hat. \"Cat, hat. Listen to the end: -at, -at. They rhyme!\" Then cat and cup: \"Cat, cup. -at, -up. Not the same. No rhyme.\"",
+      "id": "Bahasa Indonesia: angkat topi dan kopi. \"To-pi, ko-pi. Dengar akhirnya: -pi, -pi. Berima!\" Lalu topi dan ikan: \"To-pi, i-kan. -pi, -kan. Tidak sama. Tidak berima.\""
+    },
+    {
+      "en": "Odd one out: say frog, log, sun. \"Two of them rhyme. Which one is different?\" Repeat each word slowly. Indonesian: bulan, jalan, batu; batu is the odd one.",
+      "id": "Mana yang beda: ucapkan bulan, jalan, batu. \"Dua kata berima. Mana yang berbeda?\" Ulangi setiap kata pelan-pelan. Bahasa Inggris: frog, log, sun; sun yang berbeda."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Rhyme box: give your child a card; they post it into the box only if it rhymes with the word you say.",
+      "id": "Kotak rima: beri anak satu kartu; anak memasukkannya ke kotak hanya jika berima dengan kata yang Anda ucapkan."
+    },
+    {
+      "en": "Snap pairs: lay four cards face up and find the two pairs that rhyme.",
+      "id": "Cari pasangan: letakkan empat kartu terbuka dan temukan dua pasangan yang berima."
+    },
+    {
+      "en": "Finish the rhyme: say the original rhyme and pause before the last rhyming word for your child to fill in.",
+      "id": "Lengkapi sajak: ucapkan sajak orisinal dan berhenti sebelum kata berima terakhir agar anak mengisinya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which word rhymes with \"cat\"?",
+        "id": "Kata mana yang berima dengan \"topi\"?"
+      },
+      "choices": {
+        "en": [
+          "hat",
+          "cup",
+          "dog"
+        ],
+        "id": [
+          "kopi",
+          "tomat",
+          "kepala"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Cat and hat both end in -at. Cup only starts like cat; a dog goes with a cat in meaning.",
+        "id": "Topi dan kopi sama-sama berakhir -pi. Tomat hanya awalnya sama; kepala berhubungan arti dengan topi."
+      },
+      "distractorMisconceptions": {
+        "1": "SAME_FIRST_SOUND",
+        "2": "MEANING_LINK"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Do \"sun\" and \"bun\" rhyme?",
+        "id": "Apakah \"bulan\" dan \"jalan\" berima?"
+      },
+      "choices": {
+        "en": [
+          "Yes, they rhyme",
+          "No, they do not rhyme"
+        ],
+        "id": [
+          "Ya, berima",
+          "Tidak, tidak berima"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Sun and bun both end in -un.",
+        "id": "Bulan dan jalan sama-sama berakhir -lan."
+      },
+      "distractorMisconceptions": {
+        "1": "GUESSES_NO"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which one does not rhyme: frog, log, sun?",
+        "id": "Mana yang tidak berima: ikan, makan, batu?"
+      },
+      "choices": {
+        "en": [
+          "sun",
+          "frog",
+          "log"
+        ],
+        "id": [
+          "batu",
+          "ikan",
+          "makan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Frog and log end in -og; sun ends differently.",
+        "id": "Ikan dan makan berakhir -kan; batu berakhir berbeda."
+      },
+      "distractorMisconceptions": {
+        "1": "PICKS_FIRST_WORD",
+        "2": "PICKS_LAST_HEARD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Which word rhymes with \"bed\"?",
+        "id": "Kata mana yang berima dengan \"sapi\"?"
+      },
+      "choices": {
+        "en": [
+          "red",
+          "bird",
+          "bus"
+        ],
+        "id": [
+          "kopi",
+          "sapu",
+          "sabun"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Bed and red share -ed. Bird and bus start like bed but end differently.",
+        "id": "Sapi dan kopi sama-sama berakhir -pi. Sapu dan sabun hanya sama di awal."
+      },
+      "distractorMisconceptions": {
+        "1": "SAME_FIRST_SOUND",
+        "2": "SAME_FIRST_SOUND"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SAME_FIRST_SOUND",
+      "description": {
+        "en": "Chooses a word that starts the same instead of ending the same.",
+        "id": "Memilih kata yang awalnya sama, bukan akhirnya."
+      },
+      "remediation": {
+        "en": "Cover your mouth for the start of the word and only uncover it for the ending, then compare endings: \"...at, ...at\".",
+        "id": "Tutup mulut saat bunyi awal dan buka hanya untuk akhirnya, lalu bandingkan akhirnya: \"...pi, ...pi\"."
+      }
+    },
+    {
+      "code": "MEANING_LINK",
+      "description": {
+        "en": "Pairs words that go together in meaning (cat and dog) rather than in sound.",
+        "id": "Memasangkan kata yang berhubungan artinya (kucing dan anjing), bukan bunyinya."
+      },
+      "remediation": {
+        "en": "Close eyes and listen only, without pictures, so meaning does not distract; then say the two endings aloud.",
+        "id": "Pejamkan mata dan dengarkan saja, tanpa gambar, agar arti tidak mengganggu; lalu ucapkan kedua akhirannya."
+      }
+    },
+    {
+      "code": "GUESSES_NO",
+      "description": {
+        "en": "Answers no to most pairs without listening.",
+        "id": "Menjawab tidak untuk hampir semua pasangan tanpa mendengarkan."
+      },
+      "remediation": {
+        "en": "Sing the two words to the same tune and hold the last part long: suuun, buuun; bulaaan, jalaaan.",
+        "id": "Nyanyikan kedua kata dengan nada yang sama dan panjangkan bagian akhirnya: bulaaan, jalaaan."
+      }
+    },
+    {
+      "code": "PICKS_FIRST_WORD",
+      "description": {
+        "en": "Always picks the first word heard in an odd-one-out set.",
+        "id": "Selalu memilih kata pertama yang didengar dalam soal mana yang beda."
+      },
+      "remediation": {
+        "en": "Use cards so the child can point while comparing; move the matching pair together physically.",
+        "id": "Pakai kartu agar anak bisa menunjuk sambil membandingkan; dekatkan pasangan yang cocok secara nyata."
+      }
+    },
+    {
+      "code": "PICKS_LAST_HEARD",
+      "description": {
+        "en": "Picks whichever word was said last because it is freshest in memory.",
+        "id": "Memilih kata yang terakhir diucapkan karena paling segar di ingatan."
+      },
+      "remediation": {
+        "en": "Say only two words at a time and decide rhyme or not before adding the third.",
+        "id": "Ucapkan dua kata saja setiap kali dan putuskan berima atau tidak sebelum menambah kata ketiga."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a family rhyme poster: draw two things that rhyme and hang it where your child can see it.",
+      "id": "Buat poster rima keluarga: gambar dua benda yang berima dan tempel di tempat yang terlihat anak."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Children with hearing difficulties benefit from facing the adult in good light so they can see the mouth shape of each ending.",
+      "id": "Anak dengan kesulitan pendengaran terbantu jika menghadap orang dewasa di tempat terang agar bisa melihat bentuk mulut pada setiap akhiran."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_within_reach",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult does all cutting of cards and the box slot; store the cutting tool out of reach.",
+        "id": "Orang dewasa yang menggunting kartu dan lubang kotak; simpan alat potong di luar jangkauan anak."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 8,
+    "max": 15
+  },
+  "mastery": {
+    "evidence": "parent_observation",
+    "reviewAfterDays": [
+      3,
+      10,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child correctly judges eight rhyme-or-not pairs out of ten, on two different days.",
+      "id": "Dikuasai jika anak benar menilai delapan dari sepuluh pasangan berima-atau-tidak, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "single-answer-check",
+      "misconception-map",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-literacy",
+    "createdAt": "2026-11-10"
+  }
+}

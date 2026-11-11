@@ -1,0 +1,454 @@
+{
+  "id": "unit-k-math-compare-numbers-to-20",
+  "version": "1.0.1",
+  "level": "k",
+  "framework": "math",
+  "strand": "number_sense",
+  "title": {
+    "en": "Comparing numbers to 20",
+    "id": "Membandingkan bilangan sampai 20"
+  },
+  "prerequisites": [],
+  "objective": {
+    "en": "Compare two groups and two numbers up to 20 by matching, counting and using a number line, saying which is more, fewer or the same.",
+    "id": "Membandingkan dua kelompok dan dua bilangan sampai 20 dengan memasangkan, membilang, dan memakai garis bilangan, lalu mengatakan mana yang lebih banyak, lebih sedikit, atau sama."
+  },
+  "rationale": {
+    "en": "Children often judge 'more' by how much space a group takes up. Matching objects one to one, then seeing numbers as a ten and some more, builds a reliable sense of size that later supports addition, subtraction and place value.",
+    "id": "Anak sering menilai 'lebih banyak' dari seberapa luas tempat yang dipakai sebuah kelompok. Memasangkan benda satu-satu, lalu melihat bilangan sebagai sepuluh dan sisanya, membangun rasa besar bilangan yang andal untuk penjumlahan, pengurangan, dan nilai tempat nanti."
+  },
+  "outcomes": [
+    {
+      "en": "Matches two groups one to one and says which has more or fewer.",
+      "id": "Memasangkan dua kelompok satu-satu dan mengatakan mana yang lebih banyak atau lebih sedikit."
+    },
+    {
+      "en": "Compares two numbers to 20 using ten-frames or a number line.",
+      "id": "Membandingkan dua bilangan sampai 20 dengan bingkai sepuluh atau garis bilangan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can line up two groups and show which has more.",
+      "id": "Aku bisa menjajarkan dua kelompok dan menunjukkan mana yang lebih banyak."
+    },
+    {
+      "en": "I can say 14 is greater than 11 because 14 is further along the number line.",
+      "id": "Aku bisa bilang 14 lebih besar dari 11 karena 14 lebih jauh di garis bilangan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Always start with real objects: line the two groups up in rows so each object has a partner.",
+      "id": "Selalu mulai dengan benda nyata: jajarkan dua kelompok dalam baris supaya setiap benda punya pasangan."
+    },
+    {
+      "en": "Use the words more, fewer, greater than, less than and the same; ask 'How do you know?' every time.",
+      "id": "Pakai kata lebih banyak, lebih sedikit, lebih besar dari, lebih kecil dari, dan sama; tanyakan 'Bagaimana kamu tahu?' setiap kali."
+    },
+    {
+      "en": "Once a number is above 10, fill a ten-frame first and look at the extra ones.",
+      "id": "Jika bilangannya lebih dari 10, penuhi bingkai sepuluh dulu lalu lihat sisa satuannya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Line up your two groups. Find the ones with no partner. Say which group has more.",
+      "id": "Jajarkan dua kelompokmu. Cari yang tidak punya pasangan. Katakan kelompok mana yang lebih banyak."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Put 12 spoons and 9 cups in two rows, one spoon beside each cup; the 3 spoons without a cup show that 12 is more than 9.",
+        "id": "Letakkan 12 sendok dan 9 gelas plastik dalam dua baris, satu sendok di samping setiap gelas; 3 sendok tanpa gelas menunjukkan 12 lebih banyak dari 9."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw two ten-frames: 16 dots and 13 dots. Both have one full ten; compare the extra dots, 6 and 3.",
+        "id": "Gambar dua bingkai sepuluh: 16 titik dan 13 titik. Keduanya punya satu sepuluh penuh; bandingkan titik sisanya, 6 dan 3."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "On a number line from 0 to 20, mark 14 and 11 and say: 14 is greater than 11; 11 is less than 14.",
+        "id": "Pada garis bilangan 0 sampai 20, tandai 14 dan 11 lalu ucapkan: 14 lebih besar dari 11; 11 lebih kecil dari 14."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 20 spoons and 20 plastic cups, or 20 large building blocks in two colours",
+      "id": "Sekitar 20 sendok dan 20 gelas plastik, atau 20 balok besar dua warna"
+    },
+    {
+      "en": "Paper with two ten-frames (2 rows of 5 boxes) and a 0–20 number line drawn along a strip",
+      "id": "Kertas berisi dua bingkai sepuluh (2 baris 5 kotak) dan garis bilangan 0–20 di sepotong kertas panjang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw the ten-frames and number line before the session; write the numbers large and evenly spaced.",
+      "id": "Gambar bingkai sepuluh dan garis bilangan sebelum mulai; tulis bilangannya besar dan berjarak sama."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Matching: Put 10 blocks spread far apart and 10 blocks close together. Ask which row has more. Pair them up: every block has a partner, so they are the same. Spreading out does not add blocks.",
+      "id": "Memasangkan: Letakkan 10 balok berjauhan dan 10 balok berdekatan. Tanya baris mana yang lebih banyak. Pasangkan: setiap balok punya pasangan, jadi sama banyak. Menyebar tidak menambah balok."
+    },
+    {
+      "en": "Ten and some more: 17 and 15 both have a full ten. Look at the ones: 7 is more than 5, so 17 is greater than 15.",
+      "id": "Sepuluh dan sisanya: 17 dan 15 sama-sama punya sepuluh penuh. Lihat satuannya: 7 lebih banyak dari 5, jadi 17 lebih besar dari 15."
+    },
+    {
+      "en": "Number line: Hop from 0 to 8 and from 0 to 18. The number further along the line is greater; 18 is ten hops further than 8.",
+      "id": "Garis bilangan: Lompat dari 0 ke 8 dan dari 0 ke 18. Bilangan yang lebih jauh di garis lebih besar; 18 sepuluh lompatan lebih jauh dari 8."
+    },
+    {
+      "en": "How many more: Rina has 13 crayons and Joko has 10. Match them; 3 of Rina's crayons have no partner, so Rina has 3 more.",
+      "id": "Berapa lebih banyak: Rina punya 13 krayon dan Joko punya 10. Pasangkan; 3 krayon Rina tidak punya pasangan, jadi Rina punya 3 lebih banyak."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Turn over two number cards from 1 to 20; the child builds both numbers with blocks and says which is greater.",
+      "id": "Buka dua kartu angka 1 sampai 20; anak menyusun kedua bilangan dengan balok dan menyebut mana yang lebih besar."
+    },
+    {
+      "en": "At snack time count crackers on two plates and ask: which plate has fewer? How many fewer?",
+      "id": "Saat makan camilan hitung kerupuk di dua piring dan tanya: piring mana yang lebih sedikit? Berapa lebih sedikit?"
+    },
+    {
+      "en": "Hide one number on the number line with a cup; the child says the number just before and just after it.",
+      "id": "Tutup satu bilangan di garis bilangan dengan gelas; anak menyebut bilangan tepat sebelum dan sesudahnya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which number is greater: 16 or 19?",
+        "id": "Bilangan mana yang lebih besar: 16 atau 19?"
+      },
+      "choices": {
+        "en": [
+          "19",
+          "16",
+          "They are the same"
+        ],
+        "id": [
+          "19",
+          "16",
+          "Keduanya sama"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Both have one ten. 19 has 9 ones and 16 has 6 ones, so 19 is greater.",
+        "id": "Keduanya punya satu puluhan. 19 punya 9 satuan dan 16 punya 6 satuan, jadi 19 lebih besar."
+      },
+      "check": {
+        "expression": "10 + 9",
+        "result": "19"
+      },
+      "distractorMisconceptions": {
+        "1": "FIRST_SEEN_IS_BIGGER",
+        "2": "TENS_ONLY"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Ayu has 8 spoons and 12 cups. How many more cups than spoons?",
+        "id": "Ayu punya 8 sendok dan 12 gelas. Berapa lebih banyak gelas daripada sendok?"
+      },
+      "choices": {
+        "en": [
+          "4",
+          "12",
+          "20"
+        ],
+        "id": [
+          "4",
+          "12",
+          "20"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Match each spoon with a cup: 4 cups have no partner, and 12 - 8 = 4.",
+        "id": "Pasangkan setiap sendok dengan gelas: 4 gelas tidak punya pasangan, dan 12 - 8 = 4."
+      },
+      "check": {
+        "expression": "12 - 8",
+        "result": "4"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_LARGER_NUMBER",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which number is less: 17 or 7?",
+        "id": "Bilangan mana yang lebih kecil: 17 atau 7?"
+      },
+      "choices": {
+        "en": [
+          "7",
+          "17",
+          "They are the same"
+        ],
+        "id": [
+          "7",
+          "17",
+          "Keduanya sama"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "17 is one ten and 7 ones; 7 has no ten. 7 is ten less than 17.",
+        "id": "17 adalah satu puluhan dan 7 satuan; 7 tidak punya puluhan. 7 sepuluh lebih kecil dari 17."
+      },
+      "check": {
+        "expression": "17 - 10",
+        "result": "7"
+      },
+      "distractorMisconceptions": {
+        "1": "FIRST_SEEN_IS_BIGGER",
+        "2": "SAME_DIGIT_SAME_NUMBER"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Which number comes just after 15 on the number line?",
+        "id": "Bilangan berapa yang tepat sesudah 15 di garis bilangan?"
+      },
+      "choices": {
+        "en": [
+          "16",
+          "14",
+          "51"
+        ],
+        "id": [
+          "16",
+          "14",
+          "51"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "One more than 15 is 16; the number just after is one step further along.",
+        "id": "Satu lebih dari 15 adalah 16; bilangan tepat sesudahnya satu langkah lebih jauh."
+      },
+      "check": {
+        "expression": "15 + 1",
+        "result": "16"
+      },
+      "distractorMisconceptions": {
+        "1": "BEFORE_AFTER_MIXUP",
+        "2": "REVERSES_DIGITS"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "One row has 8 cups close together. Another row has 8 cups spread far apart. Which row has more?",
+        "id": "Satu baris berisi 8 gelas berdekatan. Baris lain berisi 8 gelas berjauhan. Baris mana yang lebih banyak?"
+      },
+      "choices": {
+        "en": [
+          "Both rows have 8, the same",
+          "The spread-out row",
+          "The close-together row"
+        ],
+        "id": [
+          "Kedua baris berisi 8, sama banyak",
+          "Baris yang berjauhan",
+          "Baris yang berdekatan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Every cup can be matched with a partner, so both rows have 8. Moving cups apart does not change how many.",
+        "id": "Setiap gelas bisa dipasangkan, jadi kedua baris berisi 8. Memindahkan gelas berjauhan tidak mengubah jumlahnya."
+      },
+      "check": {
+        "expression": "16 - 8",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "SPREAD_MEANS_MORE",
+        "2": "SPREAD_MEANS_MORE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "FIRST_SEEN_IS_BIGGER",
+      "description": {
+        "en": "Chooses the first or most familiar number rather than comparing.",
+        "id": "Memilih bilangan yang pertama dilihat atau yang paling dikenal tanpa membandingkan."
+      },
+      "remediation": {
+        "en": "Build both numbers with blocks in two rows and match them one to one before answering.",
+        "id": "Susun kedua bilangan dengan balok dalam dua baris dan pasangkan satu-satu sebelum menjawab."
+      }
+    },
+    {
+      "code": "TENS_ONLY",
+      "description": {
+        "en": "Sees that both numbers have one ten and stops, calling them the same.",
+        "id": "Melihat kedua bilangan punya satu puluhan lalu berhenti dan menganggapnya sama."
+      },
+      "remediation": {
+        "en": "Fill a ten-frame for each number, cover the full tens with a cloth, and compare the extra dots.",
+        "id": "Penuhi bingkai sepuluh untuk tiap bilangan, tutup sepuluh penuhnya dengan kain, lalu bandingkan titik sisanya."
+      }
+    },
+    {
+      "code": "GIVES_LARGER_NUMBER",
+      "description": {
+        "en": "Answers 'how many more' with the larger amount instead of the difference.",
+        "id": "Menjawab 'berapa lebih banyak' dengan jumlah yang lebih besar, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Match the objects and count only the ones without a partner.",
+        "id": "Pasangkan bendanya dan hitung hanya yang tidak punya pasangan."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the two amounts when asked to compare them.",
+        "id": "Menjumlahkan dua banyak benda padahal diminta membandingkan."
+      },
+      "remediation": {
+        "en": "Keep the two rows separate on the table; push the matched pairs aside so only the extras remain.",
+        "id": "Biarkan dua baris terpisah di meja; geser pasangan yang cocok ke samping sehingga hanya sisanya yang tertinggal."
+      }
+    },
+    {
+      "code": "SAME_DIGIT_SAME_NUMBER",
+      "description": {
+        "en": "Thinks 7 and 17 are the same because they share the digit 7.",
+        "id": "Mengira 7 dan 17 sama karena sama-sama punya angka 7."
+      },
+      "remediation": {
+        "en": "Build 7 and 17 with blocks; point to the extra full ten that 17 has.",
+        "id": "Susun 7 dan 17 dengan balok; tunjuk sepuluh penuh tambahan yang dimiliki 17."
+      }
+    },
+    {
+      "code": "BEFORE_AFTER_MIXUP",
+      "description": {
+        "en": "Gives the number before when asked for the number after.",
+        "id": "Menyebut bilangan sebelum padahal ditanya bilangan sesudah."
+      },
+      "remediation": {
+        "en": "Walk along a floor number line: 'after' means one more step forward.",
+        "id": "Berjalan di garis bilangan di lantai: 'sesudah' berarti satu langkah lagi ke depan."
+      }
+    },
+    {
+      "code": "REVERSES_DIGITS",
+      "description": {
+        "en": "Writes the digits of a teen number in the wrong order, such as 51 for 15.",
+        "id": "Menulis angka bilangan belasan terbalik, misalnya 51 untuk 15."
+      },
+      "remediation": {
+        "en": "Say 'one ten and five ones' while placing a ten-stick on the left and 5 blocks on the right.",
+        "id": "Ucapkan 'satu puluhan dan lima satuan' sambil meletakkan sepuluh balok di kiri dan 5 balok di kanan."
+      }
+    },
+    {
+      "code": "SPREAD_MEANS_MORE",
+      "description": {
+        "en": "Judges a longer, spread-out row as having more objects.",
+        "id": "Menilai baris yang lebih panjang atau menyebar berisi lebih banyak benda."
+      },
+      "remediation": {
+        "en": "Count both rows aloud, then push the spread row together and count again: the number stays the same.",
+        "id": "Hitung kedua baris dengan suara keras, lalu rapatkan baris yang menyebar dan hitung lagi: jumlahnya tetap."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Play 'number detective': the parent thinks of a number to 20 and answers only 'greater' or 'less' to the child's guesses.",
+      "id": "Main 'detektif bilangan': orang tua memikirkan bilangan sampai 20 dan hanya menjawab 'lebih besar' atau 'lebih kecil' atas tebakan anak."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use blocks of two clearly different colours, and let the child touch each pair while matching; say every number aloud.",
+      "id": "Pakai balok dua warna yang jelas berbeda, dan biarkan anak menyentuh setiap pasangan saat memasangkan; ucapkan setiap bilangan dengan suara keras."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": true,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use large blocks or kitchen items that younger siblings cannot swallow; put plastic cups away after the lesson.",
+        "id": "Pakai balok besar atau alat dapur yang tidak bisa ditelan adik; simpan gelas plastik setelah pelajaran."
+      },
+      {
+        "en": "Check crackers for shrimp or other allergens before counting them at snack time, or use plain rice crackers.",
+        "id": "Periksa kerupuk dari udang atau alergen lain sebelum dihitung saat makan camilan, atau pakai kerupuk beras biasa."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      2,
+      7,
+      14
+    ],
+    "masteryRule": {
+      "en": "Secure when the child compares three pairs of numbers to 20 correctly and explains with matching or the number line, on two different days.",
+      "id": "Dikuasai jika anak membandingkan tiga pasang bilangan sampai 20 dengan benar dan menjelaskan dengan memasangkan atau garis bilangan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

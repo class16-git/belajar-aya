@@ -1,0 +1,350 @@
+{
+  "id": "unit-age3_4-stem-box-tower-test",
+  "version": "1.0.1",
+  "level": "age3_4",
+  "framework": "stem",
+  "strand": "engineering_design",
+  "title": {
+    "en": "Build a tower that stands",
+    "id": "Membangun menara yang kokoh"
+  },
+  "prerequisites": [
+    "unit-age2_3-stem-first-then-routines"
+  ],
+  "objective": {
+    "en": "Build a tower of big boxes or blocks, test it with a gentle 'wind', and improve it by putting the biggest pieces at the bottom.",
+    "id": "Membangun menara dari kardus atau balok besar, mengujinya dengan 'angin' lembut, dan memperbaikinya dengan menaruh potongan terbesar di bawah."
+  },
+  "rationale": {
+    "en": "Engineering is build, test, improve. Even very young children can notice that a wide base helps a tower stand. Testing on purpose turns a toppled tower into useful information instead of a disappointment.",
+    "id": "Rekayasa adalah membangun, menguji, memperbaiki. Bahkan anak yang sangat kecil bisa melihat bahwa alas yang lebar membantu menara berdiri. Menguji dengan sengaja mengubah menara yang roboh menjadi informasi berguna, bukan kekecewaan."
+  },
+  "outcomes": [
+    {
+      "en": "Builds a tower of at least three pieces and tests it.",
+      "id": "Membangun menara paling sedikit tiga potong dan mengujinya."
+    },
+    {
+      "en": "Moves bigger pieces to the bottom after a tower falls.",
+      "id": "Memindahkan potongan yang lebih besar ke bawah setelah menara roboh."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I put the big box at the bottom.",
+      "id": "Aku taruh kardus besar di bawah."
+    },
+    {
+      "en": "When it falls, I build it again better.",
+      "id": "Kalau roboh, aku bangun lagi lebih baik."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Ask for a prediction before every wind test: 'Will it stand or fall?' Children can show thumbs up or down.",
+      "id": "Minta tebakan sebelum setiap uji angin: 'Tetap berdiri atau roboh?' Anak bisa menunjukkan jempol ke atas atau ke bawah."
+    },
+    {
+      "en": "Treat falling as data: 'It fell! What could we change?' Offer two ideas if your child has none.",
+      "id": "Anggap robohnya sebagai data: 'Roboh! Apa yang bisa kita ubah?' Tawarkan dua ide jika anak belum punya."
+    },
+    {
+      "en": "Make the wind the same each time: three quick, strong waves of a big magazine from one step away (the same spot each time).",
+      "id": "Buat anginnya sama setiap kali: tiga kibasan cepat dan kuat majalah besar dari jarak satu langkah (tempat yang sama setiap kali)."
+    },
+    {
+      "en": "Reflect at the end: 'Which tower was strongest? Why?'",
+      "id": "Renungkan di akhir: 'Menara mana yang paling kuat? Mengapa?'"
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Six to eight empty boxes of different sizes (shoe box, tissue box, cereal box) or large foam blocks",
+      "id": "Enam sampai delapan kotak kosong berbagai ukuran (kotak sepatu, kotak tisu, kotak sereal) atau balok busa besar"
+    },
+    {
+      "en": "A large magazine or a sheet of cardboard for making wind",
+      "id": "Majalah besar atau lembar karton untuk membuat angin"
+    },
+    {
+      "en": "A teddy to measure against",
+      "id": "Boneka sebagai pembanding tinggi"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Remove any plastic film from the boxes and tape the boxes closed so they keep their shape.",
+      "id": "Lepaskan plastik dari kotak dan rekatkan kotaknya supaya bentuknya tetap."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Tower one: let your child build any way, perhaps small box at the bottom. Predict, wave the magazine three times. If it wobbles or falls, say 'Our test found a problem!'",
+      "id": "Menara pertama: biarkan anak membangun sesukanya, mungkin kotak kecil di bawah. Tebak, kibaskan majalah tiga kali. Jika goyang atau roboh, ucapkan 'Uji coba kita menemukan masalah!'"
+    },
+    {
+      "en": "Improve: hold the biggest box and the smallest box. 'Which one makes a strong bottom?' Rebuild with the shoe box at the bottom and test again with the same three waves.",
+      "id": "Perbaiki: pegang kotak terbesar dan terkecil. 'Yang mana membuat bagian bawah kuat?' Bangun ulang dengan kotak sepatu di bawah dan uji lagi dengan tiga kibasan yang sama."
+    },
+    {
+      "en": "Compare: stand teddy beside the tower. 'Is it as tall as teddy? Can it stay up and be tall?'",
+      "id": "Bandingkan: berdirikan boneka di samping menara. 'Setinggi boneka? Bisa tetap berdiri dan tinggi?'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Build two towers side by side, one big-at-bottom and one small-at-bottom, and test both.",
+      "id": "Bangun dua menara berdampingan, satu besar di bawah dan satu kecil di bawah, lalu uji keduanya."
+    },
+    {
+      "en": "Build a house for teddy with a flat roof and test whether teddy can sit on top.",
+      "id": "Bangun rumah untuk boneka dengan atap datar dan uji apakah boneka bisa duduk di atasnya."
+    },
+    {
+      "en": "Count the boxes in your tallest standing tower together.",
+      "id": "Hitung bersama kotak di menaramu yang paling tinggi dan tetap berdiri."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Show two towers: one with the big box at the bottom, one with the small box at the bottom. 'Which will stand in the wind?'",
+        "id": "Tunjukkan dua menara: satu dengan kotak besar di bawah, satu dengan kotak kecil di bawah. 'Yang mana tetap berdiri saat ditiup angin?'"
+      },
+      "choices": {
+        "en": [
+          "Big box at the bottom",
+          "Small box at the bottom"
+        ],
+        "id": [
+          "Kotak besar di bawah",
+          "Kotak kecil di bawah"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A wide base at the bottom keeps a tower steady.",
+        "id": "Alas yang lebar di bawah membuat menara stabil."
+      },
+      "distractorMisconceptions": {
+        "1": "BASE_DOES_NOT_MATTER"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "The tower fell in the test. Ask 'What do we do now?'",
+        "id": "Menara roboh saat diuji. Tanyakan 'Sekarang kita harus bagaimana?'"
+      },
+      "choices": {
+        "en": [
+          "Change something and test again",
+          "Stop building, it did not work"
+        ],
+        "id": [
+          "Ubah sesuatu dan uji lagi",
+          "Berhenti membangun, tidak berhasil"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Engineers learn from a fall and try an improved design.",
+        "id": "Insinyur belajar dari robohnya menara dan mencoba rancangan yang lebih baik."
+      },
+      "distractorMisconceptions": {
+        "1": "FALLING_MEANS_FAILURE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "'The tower has 3 boxes. We add 1 more. How many boxes now?'",
+        "id": "'Menara punya 3 kotak. Kita tambah 1 lagi. Sekarang berapa kotak?'"
+      },
+      "choices": {
+        "en": [
+          "4 boxes",
+          "3 boxes",
+          "1 box"
+        ],
+        "id": [
+          "4 kotak",
+          "3 kotak",
+          "1 kotak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Three and one more makes four.",
+        "id": "Tiga dan satu lagi menjadi empat."
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_ADDED_BOX",
+        "2": "SAYS_ADDED_NUMBER"
+      },
+      "check": {
+        "expression": "3 + 1",
+        "result": "4"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Ask: 'Is the tallest tower always the strongest?'",
+        "id": "Tanyakan: 'Apakah menara paling tinggi selalu paling kuat?'"
+      },
+      "choices": {
+        "en": [
+          "No, a very tall tower can wobble more",
+          "Yes, taller is always stronger"
+        ],
+        "id": [
+          "Tidak, menara yang sangat tinggi bisa lebih goyang",
+          "Ya, makin tinggi selalu makin kuat"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Taller towers catch more wind and tip more easily, so we test them.",
+        "id": "Menara yang lebih tinggi terkena lebih banyak angin dan lebih mudah terguling, jadi kita mengujinya."
+      },
+      "distractorMisconceptions": {
+        "1": "TALLER_IS_STRONGER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "BASE_DOES_NOT_MATTER",
+      "description": {
+        "en": "Puts pieces in any order and does not link the base to stability.",
+        "id": "Menyusun potongan sembarang dan tidak menghubungkan alas dengan kestabilan."
+      },
+      "remediation": {
+        "en": "Let your child press down gently on the top of each tower with one finger and feel which one wobbles.",
+        "id": "Biarkan anak menekan pelan puncak setiap menara dengan satu jari dan merasakan mana yang goyang."
+      }
+    },
+    {
+      "code": "FALLING_MEANS_FAILURE",
+      "description": {
+        "en": "Sees a fallen tower as a failure and wants to stop.",
+        "id": "Melihat menara roboh sebagai kegagalan dan ingin berhenti."
+      },
+      "remediation": {
+        "en": "Knock your own tower down in the test and say happily 'Now I know what to fix!', then show your fix.",
+        "id": "Robohkan menaramu sendiri saat diuji dan ucapkan dengan gembira 'Sekarang aku tahu apa yang harus diperbaiki!', lalu tunjukkan perbaikanmu."
+      }
+    },
+    {
+      "code": "IGNORES_ADDED_BOX",
+      "description": {
+        "en": "Repeats the starting number instead of counting the new box.",
+        "id": "Mengulang angka awal tanpa menghitung kotak baru."
+      },
+      "remediation": {
+        "en": "Touch and count every box from the bottom up after adding one.",
+        "id": "Sentuh dan hitung setiap kotak dari bawah ke atas setelah menambah satu."
+      }
+    },
+    {
+      "code": "SAYS_ADDED_NUMBER",
+      "description": {
+        "en": "Answers with the number added, not the total.",
+        "id": "Menjawab dengan angka yang ditambahkan, bukan jumlah seluruhnya."
+      },
+      "remediation": {
+        "en": "Count every box from the bottom up, touching each one, after the new box goes on.",
+        "id": "Hitung setiap kotak dari bawah ke atas sambil menyentuhnya, setelah kotak baru dipasang."
+      }
+    },
+    {
+      "code": "TALLER_IS_STRONGER",
+      "description": {
+        "en": "Believes height alone makes a tower strong.",
+        "id": "Percaya bahwa tinggi saja membuat menara kuat."
+      },
+      "remediation": {
+        "en": "Test a short tower and a very tall tower with the same three waves and watch which wobbles.",
+        "id": "Uji menara pendek dan menara sangat tinggi dengan tiga kibasan yang sama dan lihat mana yang goyang."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a bridge for teddy's car: two box towers with a piece of cardboard across the top.",
+      "id": "Buat jembatan untuk mobil boneka: dua menara kotak dengan karton di atasnya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use foam blocks for a child who startles at noise; a child can blow instead of waving the magazine.",
+      "id": "Gunakan balok busa untuk anak yang kaget dengan suara; anak bisa meniup sebagai ganti mengibaskan majalah."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use only light, empty boxes or foam blocks so a falling tower cannot hurt; keep towers below the child's shoulder height.",
+        "id": "Gunakan hanya kotak kosong ringan atau balok busa agar menara yang roboh tidak melukai; jaga tinggi menara di bawah bahu anak."
+      },
+      {
+        "en": "Remove plastic film and bags from the area.",
+        "id": "Singkirkan plastik dan kantong dari area bermain."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child improves a fallen tower by changing its base without being told, on two different days.",
+      "id": "Dikuasai jika anak memperbaiki menara yang roboh dengan mengubah alasnya tanpa diberi tahu, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

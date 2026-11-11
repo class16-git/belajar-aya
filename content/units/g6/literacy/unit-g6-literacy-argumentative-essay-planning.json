@@ -1,0 +1,406 @@
+{
+  "id": "unit-g6-literacy-argumentative-essay-planning",
+  "version": "1.0.1",
+  "level": "g6",
+  "framework": "literacy",
+  "strand": "writing",
+  "title": {
+    "en": "Planning an argument essay",
+    "id": "Merencanakan esai argumentasi"
+  },
+  "prerequisites": [
+    "unit-g5-literacy-persuasive-writing-structure"
+  ],
+  "objective": {
+    "en": "Plan an argumentative essay with a precise claim, two reasons each supported by evidence and reasoning, a fair counterclaim with a rebuttal, and a conclusion, using a paragraph-by-paragraph outline.",
+    "id": "Merencanakan esai argumentasi dengan klaim yang tepat, dua alasan yang masing-masing didukung bukti dan penalaran, klaim tandingan yang adil beserta sanggahannya, dan simpulan, memakai kerangka per paragraf."
+  },
+  "rationale": {
+    "en": "Argument goes beyond persuasion: instead of only pushing one side, the writer weighs the other side fairly and answers it with reasons. Planning first is where most of the thinking happens. The English version uses the claim - evidence - reasoning - counterclaim - rebuttal model. Indonesian schools teach \"teks eksposisi\" with tesis, rangkaian argumen and penegasan ulang; this unit uses those terms and adds \"klaim tandingan\" (counterclaim) and \"sanggahan\" (rebuttal), with connectors such as \"memang... namun\" that suit Indonesian academic writing.",
+    "id": "Argumentasi melampaui persuasi: penulis tidak hanya mendorong satu sisi, tetapi menimbang sisi lain dengan adil dan menjawabnya dengan alasan. Sebagian besar proses berpikir terjadi saat merencanakan. Versi bahasa Inggris memakai model claim - evidence - reasoning - counterclaim - rebuttal. Sekolah di Indonesia mengajarkan teks eksposisi dengan tesis, rangkaian argumen, dan penegasan ulang; unit ini memakai istilah itu dan menambahkan klaim tandingan serta sanggahan, dengan penghubung seperti \"memang... namun\" yang cocok untuk tulisan ilmiah berbahasa Indonesia."
+  },
+  "outcomes": [
+    {
+      "en": "Writes a specific, debatable claim (thesis).",
+      "id": "Menulis klaim (tesis) yang spesifik dan bisa diperdebatkan."
+    },
+    {
+      "en": "Supports each reason with evidence and explains how the evidence supports it.",
+      "id": "Mendukung setiap alasan dengan bukti dan menjelaskan bagaimana bukti itu mendukungnya."
+    },
+    {
+      "en": "States a fair counterclaim and answers it with a rebuttal.",
+      "id": "Menyatakan klaim tandingan yang adil dan menjawabnya dengan sanggahan."
+    },
+    {
+      "en": "Produces a five-paragraph outline ready for drafting.",
+      "id": "Menghasilkan kerangka lima paragraf yang siap dikembangkan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "My claim is specific and someone could reasonably disagree with it.",
+      "id": "Klaimku spesifik dan bisa ditolak orang dengan alasan yang masuk akal."
+    },
+    {
+      "en": "Each reason has evidence and an explanation of why it matters.",
+      "id": "Setiap alasan punya bukti dan penjelasan mengapa itu penting."
+    },
+    {
+      "en": "I described the other side fairly before answering it.",
+      "id": "Aku menjelaskan pihak lain dengan adil sebelum menanggapinya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Choose a question with two reasonable sides, such as \"Should students have homework every day?\" or \"Should our town ban plastic bags at markets?\"",
+      "id": "Pilih pertanyaan dengan dua sisi yang masuk akal, misalnya \"Apakah siswa sebaiknya mendapat PR setiap hari?\" atau \"Apakah pasar di kota kita sebaiknya melarang kantong plastik?\""
+    },
+    {
+      "en": "Before your child decides, list reasons on both sides together for five minutes. A good argument starts by understanding the other view.",
+      "id": "Sebelum anak memutuskan, daftarlah alasan kedua sisi bersama selama lima menit. Argumen yang baik dimulai dengan memahami pandangan lain."
+    },
+    {
+      "en": "Evidence can be observations, interviews with family members, or facts from reliable sources checked with the five-questions habit. No invented statistics.",
+      "id": "Bukti bisa berupa pengamatan, wawancara dengan anggota keluarga, atau fakta dari sumber tepercaya yang diperiksa dengan kebiasaan lima pertanyaan. Tanpa statistik karangan."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "List reasons on both sides. Then choose your claim.",
+      "id": "Daftar alasan kedua sisi. Lalu pilih klaimmu."
+    },
+    {
+      "en": "Fill in the outline: claim, reason 1, reason 2, counterclaim and rebuttal, conclusion.",
+      "id": "Isi kerangka: tesis, argumen 1, argumen 2, klaim tandingan dan sanggahan, penegasan ulang."
+    },
+    {
+      "en": "Check the outline against the success criteria before drafting.",
+      "id": "Periksa kerangka dengan kriteria keberhasilan sebelum menulis draf."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "A T-chart for both sides",
+      "id": "Tabel T untuk kedua sisi"
+    },
+    {
+      "en": "A five-box outline sheet",
+      "id": "Lembar kerangka lima kotak"
+    },
+    {
+      "en": "Highlighters or coloured pencils",
+      "id": "Stabilo atau pensil warna"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw the T-chart and the five-box outline.",
+      "id": "Gambar tabel T dan kerangka lima kotak."
+    },
+    {
+      "en": "Agree on a topic and gather any family interviews or checked sources beforehand.",
+      "id": "Sepakati topik dan kumpulkan wawancara keluarga atau sumber yang sudah diperiksa sebelumnya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Weak vs precise claim: \"Homework is bad\" (vague) becomes \"Primary students should have homework no more than three days a week, so that they have time to read and rest.\" Evidence for reason 1: \"In my own week, I read most on the days with no homework\" (observation). Reasoning: this suggests free time is used for reading.",
+      "id": "Klaim lemah dan tepat: \"PR itu buruk\" (kabur) menjadi \"Siswa SD sebaiknya mendapat PR paling banyak tiga hari seminggu agar punya waktu membaca dan beristirahat.\" Bukti argumen 1: \"Dalam mingguku, aku paling banyak membaca pada hari tanpa PR\" (pengamatan). Penalaran: ini menunjukkan waktu luang dipakai untuk membaca."
+    },
+    {
+      "en": "Counterclaim and rebuttal: \"Some people argue that daily homework builds good habits. This is a fair point; however, a habit such as daily reading can be built without set homework, and fewer homework days leave time for it.\"",
+      "id": "Klaim tandingan dan sanggahan: \"Memang ada yang berpendapat bahwa PR setiap hari membangun kebiasaan baik. Pendapat ini masuk akal; namun, kebiasaan seperti membaca setiap hari bisa dibangun tanpa PR, dan hari tanpa PR justru memberi waktu untuk itu.\""
+    }
+  ],
+  "practice": [
+    {
+      "en": "Complete a full five-box outline on the homework topic or one of your own.",
+      "id": "Lengkapi kerangka lima kotak tentang PR atau topik pilihanmu sendiri."
+    },
+    {
+      "en": "Swap sides: write the strongest counterclaim you can against your own claim, then improve your rebuttal.",
+      "id": "Tukar posisi: tulis klaim tandingan terkuat terhadap klaimmu sendiri, lalu perbaiki sanggahanmu."
+    },
+    {
+      "en": "Colour-code a finished outline: claim blue, evidence green, reasoning yellow, counterclaim red.",
+      "id": "Beri kode warna pada kerangka yang selesai: tesis biru, bukti hijau, penalaran kuning, klaim tandingan merah."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which is the strongest claim for an argumentative essay?",
+        "id": "Mana tesis yang paling kuat untuk esai argumentasi?"
+      },
+      "choices": {
+        "en": [
+          "Markets in our town should stop giving free plastic bags, because reusable bags reduce litter.",
+          "Plastic bags exist.",
+          "I think about plastic sometimes."
+        ],
+        "id": [
+          "Pasar di kota kita sebaiknya berhenti memberi kantong plastik gratis, karena tas pakai ulang mengurangi sampah.",
+          "Kantong plastik itu ada.",
+          "Kadang aku memikirkan plastik."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "It is specific, debatable and gives a direction for reasons.",
+        "id": "Tesis itu spesifik, bisa diperdebatkan, dan memberi arah bagi argumen."
+      },
+      "distractorMisconceptions": {
+        "1": "FACT_AS_CLAIM",
+        "2": "VAGUE_CLAIM"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "What is the job of a rebuttal?",
+        "id": "Apa fungsi sanggahan terhadap klaim tandingan?"
+      },
+      "choices": {
+        "en": [
+          "To answer the other side's point with reasons",
+          "To repeat the claim louder",
+          "To list new topics"
+        ],
+        "id": [
+          "Menjawab pendapat pihak lain dengan alasan",
+          "Mengulang tesis dengan lebih keras",
+          "Mendaftar topik baru"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A rebuttal responds to the counterclaim with reasoning or evidence.",
+        "id": "Sanggahan menjawab klaim tandingan dengan penalaran atau bukti."
+      },
+      "distractorMisconceptions": {
+        "1": "REPEATS_NOT_REBUTS",
+        "2": "OFF_TOPIC"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which piece of evidence best supports \"Reusable bags reduce litter at our market\"?",
+        "id": "Bukti mana yang paling mendukung \"Tas pakai ulang mengurangi sampah di pasar kita\"?"
+      },
+      "choices": {
+        "en": [
+          "On two visits, I counted fewer bags on the ground near stalls that used cloth bags.",
+          "Cloth bags come in nice colours.",
+          "Everyone knows plastic is bad."
+        ],
+        "id": [
+          "Pada dua kunjungan, aku menghitung lebih sedikit kantong di tanah dekat lapak yang memakai tas kain.",
+          "Tas kain warnanya bagus.",
+          "Semua orang tahu plastik itu buruk."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "It is a real, specific observation linked to the reason.",
+        "id": "Bukti itu pengamatan nyata dan spesifik yang terkait dengan argumen."
+      },
+      "distractorMisconceptions": {
+        "1": "IRRELEVANT_EVIDENCE",
+        "2": "ASSERTION_AS_EVIDENCE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "How should a counterclaim be presented?",
+        "id": "Bagaimana klaim tandingan sebaiknya disajikan?"
+      },
+      "choices": {
+        "en": [
+          "Fairly, in its strongest reasonable form",
+          "As a silly idea that nobody believes",
+          "Not at all; leave it out"
+        ],
+        "id": [
+          "Secara adil, dalam bentuk terkuat yang masuk akal",
+          "Sebagai ide konyol yang tidak dipercaya siapa pun",
+          "Tidak perlu; dihilangkan saja"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Answering the strongest form of the other view makes the argument more convincing and honest.",
+        "id": "Menjawab bentuk terkuat pandangan lain membuat argumen lebih meyakinkan dan jujur."
+      },
+      "distractorMisconceptions": {
+        "1": "STRAW_MAN",
+        "2": "ONE_SIDED"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "FACT_AS_CLAIM",
+      "description": {
+        "en": "Uses a fact nobody disputes as the claim.",
+        "id": "Memakai fakta yang tidak diperdebatkan sebagai tesis."
+      },
+      "remediation": {
+        "en": "Apply the disagree test: if no reasonable person could disagree, it is a fact, not a claim.",
+        "id": "Pakai tes tidak setuju: jika tidak ada orang berakal yang bisa menolak, itu fakta, bukan tesis."
+      }
+    },
+    {
+      "code": "VAGUE_CLAIM",
+      "description": {
+        "en": "Writes a claim too vague to argue.",
+        "id": "Menulis tesis yang terlalu kabur untuk diperdebatkan."
+      },
+      "remediation": {
+        "en": "Add who, what and why: \"Who should do what, and why?\"",
+        "id": "Tambahkan siapa, apa, dan mengapa: \"Siapa sebaiknya melakukan apa, dan mengapa?\""
+      }
+    },
+    {
+      "code": "REPEATS_NOT_REBUTS",
+      "description": {
+        "en": "Answers a counterclaim by restating the claim.",
+        "id": "Menjawab klaim tandingan dengan mengulang tesis."
+      },
+      "remediation": {
+        "en": "Use the frame \"This is a fair point; however, ... because ...\" and require a new reason after because.",
+        "id": "Pakai kerangka \"Memang ...; namun, ... karena ...\" dan wajibkan alasan baru setelah karena."
+      }
+    },
+    {
+      "code": "OFF_TOPIC",
+      "description": {
+        "en": "Drifts to a related but different issue.",
+        "id": "Beralih ke isu yang berkaitan tetapi berbeda."
+      },
+      "remediation": {
+        "en": "Write the claim at the top of every box in the outline and check each box against it.",
+        "id": "Tulis tesis di atas setiap kotak kerangka dan periksa setiap kotak terhadapnya."
+      }
+    },
+    {
+      "code": "IRRELEVANT_EVIDENCE",
+      "description": {
+        "en": "Gives evidence that is true but does not support the reason.",
+        "id": "Memberi bukti yang benar tetapi tidak mendukung argumen."
+      },
+      "remediation": {
+        "en": "Ask \"So what?\" after the evidence; if the answer is not the reason, the evidence does not fit.",
+        "id": "Tanyakan \"Lalu apa hubungannya?\" setelah bukti; jika jawabannya bukan argumen itu, buktinya tidak cocok."
+      }
+    },
+    {
+      "code": "ASSERTION_AS_EVIDENCE",
+      "description": {
+        "en": "Treats a confident statement as evidence.",
+        "id": "Menganggap pernyataan yakin sebagai bukti."
+      },
+      "remediation": {
+        "en": "Ask: how do we know? Who saw, counted or tested this?",
+        "id": "Tanyakan: bagaimana kita tahu? Siapa yang melihat, menghitung, atau menguji ini?"
+      }
+    },
+    {
+      "code": "STRAW_MAN",
+      "description": {
+        "en": "Presents the other side in a weak or silly form.",
+        "id": "Menyajikan pihak lain dalam bentuk yang lemah atau konyol."
+      },
+      "remediation": {
+        "en": "Interview a family member who holds the other view and write their best reason in their own words.",
+        "id": "Wawancarai anggota keluarga yang berpandangan lain dan tulis alasan terbaik mereka dengan kata-kata mereka."
+      }
+    },
+    {
+      "code": "ONE_SIDED",
+      "description": {
+        "en": "Leaves out the other side entirely, as in a persuasive text.",
+        "id": "Menghilangkan pihak lain sepenuhnya, seperti pada teks persuasi."
+      },
+      "remediation": {
+        "en": "Compare a persuasive text and an argument on the same topic and mark where the argument deals with the other side.",
+        "id": "Bandingkan teks persuasi dan esai argumentasi dengan topik sama, lalu tandai di mana esai menanggapi pihak lain."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Draft the full essay from your outline and hold a calm family debate where each side presents and rebuts.",
+      "id": "Kembangkan esai lengkap dari kerangkamu dan adakan debat keluarga yang tenang, setiap pihak menyampaikan pendapat dan sanggahan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Offer sentence frames and allow the outline to be spoken and recorded by the adult for children who find planning on paper hard.",
+      "id": "Sediakan kerangka kalimat dan izinkan kerangka diucapkan lalu dicatat orang dewasa untuk anak yang kesulitan merencanakan di kertas."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "No physical hazards. Family interviews are voluntary and private details stay at home.",
+        "id": "Tidak ada bahaya fisik. Wawancara keluarga bersifat sukarela dan data pribadi tetap di rumah."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 50
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      7,
+      21,
+      45
+    ],
+    "masteryRule": {
+      "en": "Secure when your child produces two outlines on different topics that meet every success criterion.",
+      "id": "Dikuasai jika anak menghasilkan dua kerangka dengan topik berbeda yang memenuhi semua kriteria keberhasilan."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "single-answer-check",
+      "misconception-map",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-literacy",
+    "createdAt": "2026-11-10"
+  }
+}

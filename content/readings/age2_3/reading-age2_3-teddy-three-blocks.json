@@ -1,0 +1,230 @@
+{
+  "id": "reading-age2_3-teddy-three-blocks",
+  "version": "1.0.0",
+  "level": "age2_3",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Teddy's three blocks",
+    "id": "Tiga balok Teddy"
+  },
+  "text": {
+    "en": [
+      "Teddy has a big block. One block. Up it goes!",
+      "Teddy puts another block on top. Two blocks. Up, up!",
+      "Teddy puts one more block on top. Three blocks. A tall tower!",
+      "Oh no, wobble, wobble. Crash! The blocks fall down.",
+      "Teddy laughs. Let's build it again. One, two, three!"
+    ],
+    "id": [
+      "Teddy punya satu balok besar. Satu balok. Naik!",
+      "Teddy menaruh balok lagi di atasnya. Dua balok. Naik, naik!",
+      "Teddy menaruh satu balok lagi di atas. Tiga balok. Menara yang tinggi!",
+      "Aduh, goyang, goyang. Brak! Baloknya jatuh.",
+      "Teddy tertawa. Ayo kita susun lagi. Satu, dua, tiga!"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Hold up one finger and lift your hand for 'up it goes'.",
+      "id": "Angkat satu jari dan naikkan tangan untuk 'naik'."
+    },
+    {
+      "en": "Stack your two fists, one on top of the other.",
+      "id": "Tumpuk dua kepalan tangan, satu di atas yang lain."
+    },
+    {
+      "en": "Add your child's fist on top to make three. Count them together.",
+      "id": "Tambahkan kepalan tangan anak di atas agar menjadi tiga. Hitung bersama."
+    },
+    {
+      "en": "Wobble all three fists and let them 'crash' gently into your lap.",
+      "id": "Goyangkan ketiga kepalan dan biarkan 'jatuh' pelan ke pangkuan."
+    },
+    {
+      "en": "Laugh together and count on your fingers: one, two, three.",
+      "id": "Tertawa bersama lalu hitung dengan jari: satu, dua, tiga."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: one big block",
+      "id": "Kartu 1: satu balok besar"
+    },
+    {
+      "en": "Card 2: two blocks stacked",
+      "id": "Kartu 2: dua balok bertumpuk"
+    },
+    {
+      "en": "Card 3: a tower of three blocks",
+      "id": "Kartu 3: menara tiga balok"
+    },
+    {
+      "en": "Card 4: blocks tumbling down",
+      "id": "Kartu 4: balok berjatuhan"
+    },
+    {
+      "en": "Card 5: Teddy smiling, ready to build again",
+      "id": "Kartu 5: Teddy tersenyum, siap menyusun lagi"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Hears counting to three in a story and counts along.",
+      "id": "Mendengar hitungan sampai tiga dalam cerita dan ikut menghitung."
+    },
+    {
+      "en": "Learns that it is fine to try again when something falls down.",
+      "id": "Belajar bahwa tidak apa-apa mencoba lagi ketika sesuatu jatuh."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "tower",
+        "id": "menara"
+      },
+      "meaning": {
+        "en": "something tall made by stacking",
+        "id": "sesuatu yang tinggi karena disusun ke atas"
+      }
+    },
+    {
+      "word": {
+        "en": "wobble",
+        "id": "goyang"
+      },
+      "meaning": {
+        "en": "to shake a little from side to side",
+        "id": "bergerak sedikit ke kanan dan kiri"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "math",
+      "prompt": {
+        "en": "How many blocks were in Teddy's tall tower?",
+        "id": "Ada berapa balok di menara tinggi Teddy?"
+      },
+      "choices": {
+        "en": [
+          "3 blocks",
+          "2 blocks",
+          "1 block"
+        ],
+        "id": [
+          "3 balok",
+          "2 balok",
+          "1 balok"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2,
+      "check": {
+        "expression": "1 + 1 + 1",
+        "result": "3"
+      }
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "What happened to the tower?",
+        "id": "Apa yang terjadi pada menaranya?"
+      },
+      "choices": {
+        "en": [
+          "it fell down",
+          "it flew away",
+          "it got wet"
+        ],
+        "id": [
+          "jatuh",
+          "terbang",
+          "basah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Was Teddy sad when the blocks fell?",
+        "id": "Apakah Teddy sedih saat baloknya jatuh?"
+      },
+      "choices": {
+        "en": [
+          "no, he thought it was funny",
+          "yes, he cried",
+          "he went to sleep"
+        ],
+        "id": [
+          "tidak, dia merasa lucu",
+          "ya, dia menangis",
+          "dia pergi tidur"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Counting one, two, three as each block goes on the tower.",
+        "id": "Menghitung satu, dua, tiga saat setiap balok ditaruh di menara."
+      }
+    },
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Towers wobble when they get tall; big blocks at the bottom help them stand.",
+        "id": "Menara bergoyang saat makin tinggi; balok besar di bawah membantunya berdiri."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "How many blocks can we stack?",
+      "id": "Berapa balok yang bisa kita tumpuk?"
+    },
+    {
+      "en": "What can we do when our tower falls?",
+      "id": "Apa yang bisa kita lakukan saat menara kita jatuh?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Build a three-block tower with large soft blocks or clean boxes bigger than your child's fist. Count each one, then knock it down and build again.",
+    "id": "Susun menara tiga balok dari balok lunak besar atau kotak bersih yang lebih besar dari kepalan tangan anak. Hitung setiap balok, lalu robohkan dan susun lagi."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Use only blocks or boxes larger than your child's fist, never small pieces.",
+      "id": "Gunakan hanya balok atau kotak yang lebih besar dari kepalan tangan anak, jangan benda kecil."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "id": "reading-g5-ki-hajar-dewantara-teacher",
+  "version": "1.0.1",
+  "level": "g5",
+  "readingLevel": "fluent",
+  "genre": "biography",
+  "mode": "independent",
+  "title": {
+    "en": "Ki Hajar Dewantara: schools for everyone",
+    "id": "Ki Hajar Dewantara: sekolah untuk semua"
+  },
+  "text": {
+    "en": [
+      "Every year on 2 May, Indonesian schools celebrate National Education Day. The date was chosen because it is the birthday of Ki Hajar Dewantara, one of the most important figures in the history of Indonesian education.",
+      "He was born in Yogyakarta in 1889 with the name Raden Mas Soewardi Soerjaningrat. At that time Indonesia was a Dutch colony, and few Indonesian children could go to school, and children from ordinary families had almost no chance.",
+      "As a young man, Soewardi became a journalist. He wrote articles criticising the colonial government. One famous article, written in Dutch in 1913, was called 'If I Were a Dutchman'. It said that if he were Dutch, he would be ashamed to celebrate his own country's freedom in a land whose people had lost theirs, and even to ask those people to help pay for the celebration. Because of his writing he was exiled to the Netherlands.",
+      "While he was away, he studied education. He came to believe that a good school does not only fill children with facts but helps them grow into free, thoughtful people who love their own culture.",
+      "Back home, in 1922, he founded a school in Yogyakarta called Taman Siswa, which means 'garden of students'. Its schools welcomed ordinary Indonesian children and taught in a way that respected Indonesian culture. Later he changed his name to Ki Hajar Dewantara, a simpler name that brought him closer to the people.",
+      "After Indonesia became independent, he served as the country's first Minister of Education. One of his teachings, 'Tut Wuri Handayani', means that a teacher supports and encourages from behind. These words still appear on the logo of Indonesia's education ministry today."
+    ],
+    "id": [
+      "Setiap tanggal 2 Mei, sekolah-sekolah di Indonesia memperingati Hari Pendidikan Nasional. Tanggal itu dipilih karena merupakan hari lahir Ki Hajar Dewantara, salah satu tokoh terpenting dalam sejarah pendidikan Indonesia.",
+      "Ia lahir di Yogyakarta pada tahun 1889 dengan nama Raden Mas Soewardi Soerjaningrat. Saat itu Indonesia masih dijajah Belanda, dan hanya sedikit anak Indonesia yang bisa bersekolah, apalagi anak dari keluarga biasa.",
+      "Ketika muda, Soewardi menjadi wartawan. Ia menulis artikel yang mengkritik pemerintah kolonial. Salah satu artikelnya yang terkenal, ditulis dalam bahasa Belanda pada tahun 1913, berjudul 'Seandainya Aku Seorang Belanda'. Isinya: jika ia orang Belanda, ia akan malu merayakan kemerdekaan negerinya di tanah yang rakyatnya dijajah, apalagi meminta rakyat itu ikut membiayai perayaannya. Karena tulisannya itu, ia diasingkan ke Belanda.",
+      "Selama di pengasingan, ia mempelajari ilmu pendidikan. Ia yakin bahwa sekolah yang baik tidak hanya mengisi anak dengan fakta, tetapi membantu mereka tumbuh menjadi manusia yang merdeka dan mampu berpikir sendiri serta mencintai budayanya.",
+      "Setelah pulang, pada tahun 1922 ia mendirikan sekolah di Yogyakarta bernama Taman Siswa, yang berarti 'taman para murid'. Sekolah-sekolahnya menerima anak-anak Indonesia dari keluarga biasa dan mengajar dengan cara yang menghargai budaya Indonesia. Kemudian ia mengganti namanya menjadi Ki Hajar Dewantara, nama yang lebih sederhana dan mendekatkannya kepada rakyat.",
+      "Setelah Indonesia merdeka, ia menjadi Menteri Pendidikan yang pertama. Salah satu ajarannya, 'Tut Wuri Handayani', berarti guru memberi dukungan dan dorongan dari belakang. Kata-kata ini masih ada di logo kementerian pendidikan Indonesia hingga sekarang."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a biography and explains how events in a person's life shaped their beliefs.",
+      "id": "Membaca biografi dan menjelaskan bagaimana peristiwa dalam hidup seseorang membentuk keyakinannya."
+    },
+    {
+      "en": "Distinguishes facts in the text from the person's ideas and opinions.",
+      "id": "Membedakan fakta dalam teks dari gagasan dan pendapat tokoh."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "colony",
+        "id": "jajahan"
+      },
+      "meaning": {
+        "en": "a land ruled by another country",
+        "id": "wilayah yang diperintah negara lain"
+      }
+    },
+    {
+      "word": {
+        "en": "exiled",
+        "id": "diasingkan"
+      },
+      "meaning": {
+        "en": "forced to leave your home country",
+        "id": "dipaksa meninggalkan negeri sendiri"
+      }
+    },
+    {
+      "word": {
+        "en": "criticise",
+        "id": "mengkritik"
+      },
+      "meaning": {
+        "en": "to point out what you think is wrong",
+        "id": "menunjukkan hal yang dianggap salah"
+      }
+    },
+    {
+      "word": {
+        "en": "founded",
+        "id": "mendirikan"
+      },
+      "meaning": {
+        "en": "started an organisation or school",
+        "id": "memulai sebuah organisasi atau sekolah"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why is National Education Day held on 2 May?",
+        "id": "Mengapa Hari Pendidikan Nasional diperingati pada 2 Mei?"
+      },
+      "choices": {
+        "en": [
+          "it is Ki Hajar Dewantara's birthday",
+          "Taman Siswa opened that day",
+          "it is the first day of school"
+        ],
+        "id": [
+          "itu hari lahir Ki Hajar Dewantara",
+          "Taman Siswa dibuka hari itu",
+          "itu hari pertama sekolah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "math",
+      "prompt": {
+        "en": "How old was he, in years, when he founded Taman Siswa in 1922?",
+        "id": "Berapa usianya saat mendirikan Taman Siswa pada tahun 1922?"
+      },
+      "choices": {
+        "en": [
+          "about 33 years old",
+          "about 22 years old",
+          "about 43 years old"
+        ],
+        "id": [
+          "sekitar 33 tahun",
+          "sekitar 22 tahun",
+          "sekitar 43 tahun"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4,
+      "check": {
+        "expression": "1922 - 1889",
+        "result": "33"
+      }
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did the colonial government send him away?",
+        "id": "Mengapa pemerintah kolonial mengasingkannya?"
+      },
+      "choices": {
+        "en": [
+          "his writing made people question colonial rule",
+          "he wanted to study abroad",
+          "he refused to go to school"
+        ],
+        "id": [
+          "tulisannya membuat orang mempertanyakan penjajahan",
+          "ia ingin belajar di luar negeri",
+          "ia menolak bersekolah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q4",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What does 'Tut Wuri Handayani' describe?",
+        "id": "Apa yang digambarkan 'Tut Wuri Handayani'?"
+      },
+      "choices": {
+        "en": [
+          "a teacher encouraging students from behind",
+          "a teacher who does all the work",
+          "students teaching the teacher"
+        ],
+        "id": [
+          "guru yang mendorong murid dari belakang",
+          "guru yang mengerjakan semua tugas",
+          "murid yang mengajari guru"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q5",
+      "kind": "critical",
+      "prompt": {
+        "en": "Which sentence is an idea he believed, rather than an event?",
+        "id": "Kalimat mana yang merupakan gagasan yang ia yakini, bukan peristiwa?"
+      },
+      "choices": {
+        "en": [
+          "a good school helps children grow into free, thoughtful people",
+          "he founded Taman Siswa in 1922",
+          "he was born in Yogyakarta"
+        ],
+        "id": [
+          "sekolah yang baik membantu anak tumbuh menjadi manusia yang merdeka dan mampu berpikir sendiri",
+          "ia mendirikan Taman Siswa pada 1922",
+          "ia lahir di Yogyakarta"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q6",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which detail shows his ideas still matter today?",
+        "id": "Detail mana yang menunjukkan gagasannya masih penting sekarang?"
+      },
+      "choices": {
+        "en": [
+          "his words are on the education ministry's logo",
+          "he was a journalist",
+          "his first name was Soewardi"
+        ],
+        "id": [
+          "kata-katanya ada di logo kementerian pendidikan",
+          "ia seorang wartawan",
+          "nama awalnya Soewardi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Indonesian education history and National Education Day (Hardiknas).",
+        "id": "Sejarah pendidikan Indonesia dan Hari Pendidikan Nasional (Hardiknas)."
+      }
+    },
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Yogyakarta and the Netherlands mark key places on his life map.",
+        "id": "Yogyakarta dan Belanda adalah tempat penting dalam peta perjalanan hidupnya."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What does a teacher who 'supports from behind' do in a lesson?",
+      "id": "Apa yang dilakukan guru yang 'mendukung dari belakang' dalam pelajaran?"
+    },
+    {
+      "en": "Why might writing an article be a brave act?",
+      "id": "Mengapa menulis artikel bisa menjadi tindakan berani?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Interview an older family member about their school days. Write three facts and one opinion they share, and compare their school with Taman Siswa's ideas.",
+    "id": "Wawancarai anggota keluarga yang lebih tua tentang masa sekolahnya. Tulis tiga fakta dan satu pendapat mereka, lalu bandingkan sekolah mereka dengan gagasan Taman Siswa."
+  },
+  "factChecks": [
+    {
+      "claim": "Ki Hajar Dewantara was born on 2 May 1889 in Yogyakarta as Raden Mas Soewardi Soerjaningrat.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "National Education Day in Indonesia (Hari Pendidikan Nasional) is on 2 May, his birthday.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "He wrote a critical Dutch-language article (Als ik een Nederlander was) and was exiled to the Netherlands.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Als ik een Nederlander was was published in 1913.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "He founded Taman Siswa in Yogyakarta in 1922.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "He was Indonesia's first Minister of Education.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The phrase 'Tut Wuri Handayani' appears on the logo of Indonesia's education ministry.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "He studied education during his exile.",
+      "status": "needs_source"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "historical_facts"
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}

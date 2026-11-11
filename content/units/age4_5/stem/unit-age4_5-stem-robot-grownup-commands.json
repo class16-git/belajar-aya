@@ -1,0 +1,310 @@
+{
+  "id": "unit-age4_5-stem-robot-grownup-commands",
+  "version": "1.0.1",
+  "level": "age4_5",
+  "framework": "stem",
+  "strand": "algorithms",
+  "title": {
+    "en": "Program the grown-up robot",
+    "id": "Memprogram robot: Ayah atau Ibu jadi robot"
+  },
+  "prerequisites": [
+    "unit-age2_3-stem-first-then-routines"
+  ],
+  "objective": {
+    "en": "Give a grown-up 'robot' a short, exact sequence of movement commands to reach a goal, and fix the commands when the robot goes wrong.",
+    "id": "Memberi 'robot' orang dewasa urutan perintah gerak yang pendek dan tepat untuk mencapai tujuan, dan memperbaiki perintah saat robot salah arah."
+  },
+  "rationale": {
+    "en": "An algorithm is a set of exact steps. When a grown-up acts as a robot that does only what it is told, children feel why instructions must be precise and in order. This prepares them for arrows on a grid and later for code.",
+    "id": "Algoritma adalah langkah-langkah yang tepat. Saat orang dewasa berperan sebagai robot yang hanya melakukan apa yang diperintahkan, anak merasakan mengapa perintah harus tepat dan berurutan. Ini menyiapkan mereka untuk panah di petak dan nanti untuk kode."
+  },
+  "outcomes": [
+    {
+      "en": "Gives three to five exact commands in order.",
+      "id": "Memberi tiga sampai lima perintah tepat secara berurutan."
+    },
+    {
+      "en": "Changes a command when the robot misses the goal.",
+      "id": "Mengubah perintah saat robot meleset dari tujuan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I tell the robot how many steps.",
+      "id": "Aku bilang ke robot berapa langkah."
+    },
+    {
+      "en": "If the robot goes wrong, I fix my command.",
+      "id": "Kalau robot salah, aku perbaiki perintahku."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Agree on four commands only: 'step forward', 'step back', 'turn' (a quarter turn to the side the child points), and 'pick up'.",
+      "id": "Sepakati empat perintah saja: 'maju selangkah', 'mundur selangkah', 'belok' (seperempat putaran ke arah yang ditunjuk anak), dan 'ambil'."
+    },
+    {
+      "en": "Be a very literal robot. If the command is 'go there', freeze and say in a robot voice 'I do not understand'. Keep it playful, never mocking.",
+      "id": "Jadilah robot yang sangat harfiah. Jika perintahnya 'ke sana', diam dan ucapkan dengan suara robot 'Saya tidak mengerti'. Tetap ceria, jangan mengejek."
+    },
+    {
+      "en": "Before the robot moves, ask your child to predict: 'How many steps to the teddy? Show me with fingers.'",
+      "id": "Sebelum robot bergerak, minta anak menebak: 'Berapa langkah sampai boneka? Tunjukkan dengan jari.'"
+    },
+    {
+      "en": "After each run, ask 'Did the robot reach it? Which command would you change?'",
+      "id": "Setelah setiap percobaan, tanyakan 'Apakah robot sampai? Perintah mana yang mau kamu ubah?'"
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "A teddy or cushion as the goal",
+      "id": "Boneka atau bantal sebagai tujuan"
+    },
+    {
+      "en": "A clear floor space of about four by four big steps",
+      "id": "Lantai kosong sekitar empat kali empat langkah besar"
+    },
+    {
+      "en": "Masking tape to mark a start line",
+      "id": "Selotip kertas untuk menandai garis mulai"
+    },
+    {
+      "en": "A plastic cup or a soft toy for the robot to 'pick up'",
+      "id": "Gelas plastik atau boneka kecil untuk 'diambil' robot"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Mark a start line with tape. Clear toys and furniture corners from the path.",
+      "id": "Tandai garis mulai dengan selotip. Singkirkan mainan dan sudut perabot dari jalur."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Straight line: teddy is three big steps ahead. Child predicts 'three'. Commands: 'step forward, step forward, step forward'. Robot arrives. 'Your program worked!'",
+      "id": "Garis lurus: boneka tiga langkah besar di depan. Anak menebak 'tiga'. Perintah: 'maju selangkah, maju selangkah, maju selangkah'. Robot sampai. 'Programmu berhasil!'"
+    },
+    {
+      "en": "A bug: move teddy one step to the side. The child repeats the same three commands; robot ends beside teddy. Ask 'What is missing?' The child adds 'turn' and 'step forward'.",
+      "id": "Kesalahan: geser boneka satu langkah ke samping. Anak mengulang tiga perintah yang sama; robot berhenti di samping boneka. Tanyakan 'Apa yang kurang?' Anak menambah 'belok' dan 'maju selangkah'."
+    },
+    {
+      "en": "A vague command: the child says 'go to teddy'. Robot freezes: 'I do not understand.' Together turn it into steps.",
+      "id": "Perintah samar: anak berkata 'pergi ke boneka'. Robot diam: 'Saya tidak mengerti.' Bersama ubah menjadi langkah-langkah."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Swap roles: you give commands and your child is the robot who must do exactly what you say, even when you make a deliberate mistake.",
+      "id": "Tukar peran: Anda memberi perintah dan anak menjadi robot yang harus melakukan persis yang Anda katakan, bahkan saat Anda sengaja salah."
+    },
+    {
+      "en": "Add 'pick up' at the end: the robot must walk to the cup and pick it up.",
+      "id": "Tambahkan 'ambil' di akhir: robot harus berjalan ke gelas dan mengambilnya."
+    },
+    {
+      "en": "Move the goal behind a cushion so the robot must go around it.",
+      "id": "Pindahkan tujuan ke belakang bantal sehingga robot harus memutarinya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Teddy is 3 big steps straight ahead. Which program reaches teddy?",
+        "id": "Boneka 3 langkah besar lurus di depan. Program mana yang sampai ke boneka?"
+      },
+      "choices": {
+        "en": [
+          "3 steps forward",
+          "2 steps forward",
+          "Go over there"
+        ],
+        "id": [
+          "3 langkah maju",
+          "2 langkah maju",
+          "Pergi ke sana"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "One step for each of the three spaces: 1 + 1 + 1 = 3.",
+        "id": "Satu langkah untuk tiap ruang: 1 + 1 + 1 = 3."
+      },
+      "distractorMisconceptions": {
+        "1": "GUESSES_STEP_COUNT",
+        "2": "VAGUE_IS_ENOUGH"
+      },
+      "check": {
+        "expression": "1 + 1 + 1",
+        "result": "3"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "The robot must fetch the cup. The program is 'step forward, step forward'. The robot stops next to the cup. What is missing?",
+        "id": "Robot harus mengambil gelas. Programnya 'maju selangkah, maju selangkah'. Robot berhenti di samping gelas. Apa yang kurang?"
+      },
+      "choices": {
+        "en": [
+          "A 'pick up' command at the end",
+          "Nothing, the robot will know"
+        ],
+        "id": [
+          "Perintah 'ambil' di akhir",
+          "Tidak ada, robot pasti tahu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A robot does only what it is told; it needs the pick-up command.",
+        "id": "Robot hanya melakukan yang diperintahkan; ia perlu perintah ambil."
+      },
+      "distractorMisconceptions": {
+        "1": "ROBOT_KNOWS_GOAL"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which command can a robot follow exactly?",
+        "id": "Perintah mana yang bisa diikuti robot dengan tepat?"
+      },
+      "choices": {
+        "en": [
+          "Step forward",
+          "Go and be quick",
+          "Go to the nice place"
+        ],
+        "id": [
+          "Maju selangkah",
+          "Pergi dan cepat",
+          "Pergi ke tempat yang bagus"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "'Step forward' says exactly what to do.",
+        "id": "'Maju selangkah' mengatakan dengan tepat apa yang harus dilakukan."
+      },
+      "distractorMisconceptions": {
+        "1": "VAGUE_IS_ENOUGH",
+        "2": "VAGUE_IS_ENOUGH"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "VAGUE_IS_ENOUGH",
+      "description": {
+        "en": "Gives general directions like 'go there' and expects the robot to understand.",
+        "id": "Memberi arah umum seperti 'ke sana' dan mengira robot akan mengerti."
+      },
+      "remediation": {
+        "en": "Draw each command as a footprint on a paper strip; the robot steps only on drawn footprints.",
+        "id": "Gambar setiap perintah sebagai jejak kaki di kertas; robot hanya melangkah di jejak yang digambar."
+      }
+    },
+    {
+      "code": "ROBOT_KNOWS_GOAL",
+      "description": {
+        "en": "Assumes the robot knows what the child wants without being told.",
+        "id": "Mengira robot tahu keinginan anak tanpa diberi tahu."
+      },
+      "remediation": {
+        "en": "Play 'silly robot': stop right next to the goal and wait until the missing command is given.",
+        "id": "Main 'robot konyol': berhenti tepat di samping tujuan dan tunggu sampai perintah yang kurang diberikan."
+      }
+    },
+    {
+      "code": "GUESSES_STEP_COUNT",
+      "description": {
+        "en": "Guesses the number of steps without checking the path.",
+        "id": "Menebak jumlah langkah tanpa memeriksa jalurnya."
+      },
+      "remediation": {
+        "en": "Lay a cushion or paper on each step-space and count them together before programming.",
+        "id": "Taruh bantal atau kertas di setiap ruang langkah dan hitung bersama sebelum memprogram."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Record a program with drawn footprints and arrows so another family member can run it later.",
+      "id": "Catat program dengan gambar jejak kaki dan panah agar anggota keluarga lain bisa menjalankannya nanti."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who does not yet speak clearly can program by tapping the robot's shoulder: one tap, one step.",
+      "id": "Anak yang belum lancar berbicara bisa memprogram dengan menepuk bahu robot: satu tepukan, satu langkah."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Clear the path of furniture corners and loose toys; robot moves are slow walking steps only.",
+        "id": "Bersihkan jalur dari sudut perabot dan mainan; gerakan robot hanya langkah jalan yang pelan."
+      },
+      {
+        "en": "When the child is the robot, the adult stays beside them and stops any move towards stairs or doors.",
+        "id": "Saat anak menjadi robot, orang dewasa berada di sampingnya dan menghentikan gerakan ke arah tangga atau pintu."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child gives a correct three-to-five step program and fixes one bug without help, on two different days.",
+      "id": "Dikuasai jika anak memberi program tiga sampai lima langkah yang benar dan memperbaiki satu kesalahan tanpa bantuan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

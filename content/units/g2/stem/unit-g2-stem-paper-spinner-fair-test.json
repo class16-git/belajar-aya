@@ -1,0 +1,396 @@
+{
+  "id": "unit-g2-stem-paper-spinner-fair-test",
+  "version": "1.0.1",
+  "level": "g2",
+  "framework": "stem",
+  "strand": "science_inquiry",
+  "title": {
+    "en": "Paper spinners: a fair test",
+    "id": "Baling-baling kertas: uji yang adil"
+  },
+  "prerequisites": [
+    "unit-k-stem-rolls-or-slides",
+    "unit-g1-stem-sort-by-two-rules"
+  ],
+  "objective": {
+    "en": "Plan and run a fair test to find out whether wing length changes how fast a paper spinner falls, changing only one thing and repeating each trial.",
+    "id": "Merencanakan dan menjalankan uji yang adil untuk mengetahui apakah panjang sayap mengubah kecepatan jatuh baling-baling kertas, dengan hanya mengubah satu hal dan mengulang setiap percobaan."
+  },
+  "rationale": {
+    "en": "A fair test is the heart of science inquiry: change one thing, keep everything else the same, and repeat to be sure. Racing two spinners side by side lets children compare without timers and make a claim from their own evidence.",
+    "id": "Uji yang adil adalah inti penyelidikan sains: ubah satu hal, jaga semua yang lain tetap sama, dan ulangi untuk memastikan. Melombakan dua baling-baling berdampingan membuat anak bisa membandingkan tanpa pengatur waktu dan membuat kesimpulan dari bukti sendiri."
+  },
+  "outcomes": [
+    {
+      "en": "Names the one thing changed and two things kept the same.",
+      "id": "Menyebut satu hal yang diubah dan dua hal yang dijaga sama."
+    },
+    {
+      "en": "Records repeated results and makes a claim that matches them.",
+      "id": "Mencatat hasil yang berulang dan membuat kesimpulan yang sesuai."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I change only the wing length.",
+      "id": "Aku hanya mengubah panjang sayap."
+    },
+    {
+      "en": "I drop each pair three times before I decide.",
+      "id": "Aku menjatuhkan setiap pasang tiga kali sebelum memutuskan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Help your child write a prediction first: 'I think the spinner with longer wings will land first / last / at the same time.'",
+      "id": "Bantu anak menulis tebakan dulu: 'Kurasa baling-baling bersayap lebih panjang akan mendarat lebih dulu / terakhir / bersamaan.'"
+    },
+    {
+      "en": "Drop both spinners together from the same height: arms stretched up while standing on the floor. Never stand on a chair or table.",
+      "id": "Jatuhkan kedua baling-baling bersamaan dari tinggi yang sama: tangan diangkat lurus sambil berdiri di lantai. Jangan pernah berdiri di kursi atau meja."
+    },
+    {
+      "en": "Record each race with a tick in the chart. Three races per pair.",
+      "id": "Catat setiap lomba dengan centang di bagan. Tiga lomba setiap pasang."
+    },
+    {
+      "en": "Improve the design at the end: 'What would you change to make the slowest spinner of all?' Then build it and test it.",
+      "id": "Perbaiki rancangan di akhir: 'Apa yang akan kamu ubah untuk membuat baling-baling paling lambat?' Lalu buat dan uji."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Make two spinners that are the same except for wing length.",
+      "id": "Buat dua baling-baling yang sama kecuali panjang sayapnya."
+    },
+    {
+      "en": "Drop them together from the same height three times. Tick which lands first each time.",
+      "id": "Jatuhkan bersamaan dari ketinggian yang sama tiga kali. Centang mana yang mendarat lebih dulu setiap kali."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build and drop paper spinners in pairs.",
+        "id": "Buat dan jatuhkan baling-baling kertas berpasangan."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Record each race as ticks in a three-row results table.",
+        "id": "Catat setiap lomba sebagai centang di tabel hasil tiga baris."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write a claim sentence: 'Longer wings made the spinner fall ... in 3 out of 3 races.'",
+        "id": "Tulis kalimat kesimpulan: 'Sayap lebih panjang membuat baling-baling jatuh ... dalam 3 dari 3 lomba.'"
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Three sheets of A4 paper cut into strips 5 cm wide and 20 cm long",
+      "id": "Tiga lembar kertas A4 yang digunting menjadi potongan 5 cm kali 20 cm"
+    },
+    {
+      "en": "Child-safe scissors, used with an adult beside the child",
+      "id": "Gunting aman anak, dipakai dengan orang dewasa di samping anak"
+    },
+    {
+      "en": "Four paper clips (the same size)",
+      "id": "Empat penjepit kertas (ukuran sama)"
+    },
+    {
+      "en": "A ruler, a pencil and a results chart",
+      "id": "Penggaris, pensil, dan bagan hasil"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw the spinner pattern on each strip: a centre line from the top down (the wings: 9 cm for long-wing spinners, 5 cm for short-wing ones) and two short side cuts at the end of that line (the body). Long-wing spinners have 9 cm wings; short-wing spinners have 5 cm wings, with the strip trimmed shorter from the top.",
+      "id": "Gambar pola baling-baling di setiap potongan: garis tengah dari atas ke bawah (sayap: 9 cm untuk baling-baling bersayap panjang, 5 cm untuk yang bersayap pendek) dan dua potongan pendek di samping pada ujung garis itu (badan). Baling-baling bersayap panjang punya sayap 9 cm; yang bersayap pendek 5 cm, dengan potongan dipendekkan dari atas."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Build: cut the centre line, fold one wing forward and one back, fold the body sides in and clip one paper clip at the bottom. Drop one: it spins as it falls.",
+      "id": "Membuat: gunting garis tengah, lipat satu sayap ke depan dan satu ke belakang, lipat sisi badan ke dalam dan pasang satu penjepit kertas di bawah. Jatuhkan satu: berputar saat jatuh."
+    },
+    {
+      "en": "Fair or not? Dad drops the long-wing spinner from higher than the short one. Ask 'Is that fair?' No: only wing length should be different. Drop again from the same height.",
+      "id": "Adil atau tidak? Ayah menjatuhkan baling-baling bersayap panjang dari lebih tinggi daripada yang pendek. Tanyakan 'Adil tidak?' Tidak: hanya panjang sayap yang boleh berbeda. Jatuhkan lagi dari tinggi yang sama."
+    },
+    {
+      "en": "Example results: in 3 races, the short-wing spinner landed first all 3 times. Claim: 'In our test, longer wings made the spinner fall more slowly.'",
+      "id": "Contoh hasil: dalam 3 lomba, baling-baling bersayap pendek mendarat lebih dulu ketiga kalinya. Kesimpulan: 'Dalam uji kami, sayap lebih panjang membuat baling-baling jatuh lebih lambat.'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Run the wing-length test with three races and record the ticks.",
+      "id": "Jalankan uji panjang sayap dengan tiga lomba dan catat centangnya."
+    },
+    {
+      "en": "Plan a new fair test: one paper clip or two paper clips, same wings. Write what stays the same before you drop.",
+      "id": "Rencanakan uji adil baru: satu penjepit atau dua penjepit, sayap sama. Tulis apa yang tetap sama sebelum menjatuhkan."
+    },
+    {
+      "en": "Design challenge: build the slowest spinner you can, test it against your best one, and improve it once more.",
+      "id": "Tantangan rancangan: buat baling-baling paling lambat yang kamu bisa, uji melawan yang terbaik, dan perbaiki sekali lagi."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "You are testing wing length. What must stay the same?",
+        "id": "Kamu menguji panjang sayap. Apa yang harus tetap sama?"
+      },
+      "choices": {
+        "en": [
+          "The drop height and the number of paper clips",
+          "Nothing, change everything",
+          "Only the colour of the paper"
+        ],
+        "id": [
+          "Tinggi jatuhan dan jumlah penjepit kertas",
+          "Tidak ada, ubah semuanya",
+          "Hanya warna kertasnya"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Only the wing length changes; everything else stays the same.",
+        "id": "Hanya panjang sayap yang berubah; semua yang lain tetap sama."
+      },
+      "distractorMisconceptions": {
+        "1": "CHANGES_TWO_THINGS",
+        "2": "CHANGES_TWO_THINGS"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "You test 2 spinners and drop each pair 3 times. How many races do you record?",
+        "id": "Kamu menguji 2 baling-baling dan menjatuhkan pasangan itu 3 kali. Berapa lomba yang kamu catat?"
+      },
+      "choices": {
+        "en": [
+          "3 races",
+          "6 races",
+          "1 race"
+        ],
+        "id": [
+          "3 lomba",
+          "6 lomba",
+          "1 lomba"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Both spinners fall together in each race, so 3 drops of the pair is 3 races: 3 × 1 = 3.",
+        "id": "Kedua baling-baling jatuh bersamaan di setiap lomba, jadi 3 kali menjatuhkan pasangan adalah 3 lomba: 3 × 1 = 3."
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_EACH_SPINNER_AS_RACE",
+        "2": "ONE_TRIAL_ENOUGH"
+      },
+      "check": {
+        "expression": "3 × 1",
+        "result": "3"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "The short-wing spinner landed first in 3 out of 3 races. What is the best claim?",
+        "id": "Baling-baling bersayap pendek mendarat lebih dulu dalam 3 dari 3 lomba. Apa kesimpulan terbaik?"
+      },
+      "choices": {
+        "en": [
+          "Longer wings made our spinner fall more slowly",
+          "Short wings are better",
+          "Paper always falls fast"
+        ],
+        "id": [
+          "Sayap lebih panjang membuat baling-baling kami jatuh lebih lambat",
+          "Sayap pendek lebih bagus",
+          "Kertas selalu jatuh cepat"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The claim describes what the evidence showed about falling speed.",
+        "id": "Kesimpulan menjelaskan apa yang ditunjukkan bukti tentang kecepatan jatuh."
+      },
+      "distractorMisconceptions": {
+        "1": "CLAIM_BEYOND_EVIDENCE",
+        "2": "CLAIM_BEYOND_EVIDENCE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Why do we repeat the race three times?",
+        "id": "Mengapa kita mengulang lomba tiga kali?"
+      },
+      "choices": {
+        "en": [
+          "One race could be luck, so repeating checks the result",
+          "So the longer-wing spinner can win",
+          "Because the first race is always wrong"
+        ],
+        "id": [
+          "Satu lomba bisa kebetulan, jadi mengulang memeriksa hasilnya",
+          "Supaya baling-baling bersayap panjang menang",
+          "Karena lomba pertama selalu salah"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Repeated results we can trust more than a single one.",
+        "id": "Hasil yang berulang lebih bisa dipercaya daripada satu hasil saja."
+      },
+      "distractorMisconceptions": {
+        "1": "REPEAT_UNTIL_WANTED_RESULT",
+        "2": "ONE_TRIAL_ENOUGH"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "CHANGES_TWO_THINGS",
+      "description": {
+        "en": "Changes more than one thing between spinners.",
+        "id": "Mengubah lebih dari satu hal di antara baling-baling."
+      },
+      "remediation": {
+        "en": "Lay the two spinners side by side and circle every difference; there should be only one circle.",
+        "id": "Letakkan dua baling-baling berdampingan dan lingkari setiap perbedaan; seharusnya hanya ada satu lingkaran."
+      }
+    },
+    {
+      "code": "COUNTS_EACH_SPINNER_AS_RACE",
+      "description": {
+        "en": "Counts each spinner's fall as a separate race.",
+        "id": "Menghitung jatuhnya setiap baling-baling sebagai lomba terpisah."
+      },
+      "remediation": {
+        "en": "Say 'ready, drop' for each race and make one tick per 'drop', not per spinner.",
+        "id": "Ucapkan 'siap, lepas' untuk setiap lomba dan buat satu centang per 'lepas', bukan per baling-baling."
+      }
+    },
+    {
+      "code": "ONE_TRIAL_ENOUGH",
+      "description": {
+        "en": "Decides after one race.",
+        "id": "Memutuskan setelah satu lomba."
+      },
+      "remediation": {
+        "en": "Show a race where a breeze changes the winner, then repeat to see which result happens most.",
+        "id": "Tunjukkan lomba yang pemenangnya berubah karena angin, lalu ulangi untuk melihat hasil mana yang paling sering."
+      }
+    },
+    {
+      "code": "CLAIM_BEYOND_EVIDENCE",
+      "description": {
+        "en": "Makes a claim the test did not measure, like 'better' or 'always'.",
+        "id": "Membuat kesimpulan yang tidak diukur oleh uji, seperti 'lebih bagus' atau 'selalu'."
+      },
+      "remediation": {
+        "en": "Underline the words in the claim that the ticks in the chart can prove, and remove the rest.",
+        "id": "Garis bawahi kata di kesimpulan yang bisa dibuktikan centang di bagan, dan hapus sisanya."
+      }
+    },
+    {
+      "code": "REPEAT_UNTIL_WANTED_RESULT",
+      "description": {
+        "en": "Repeats only until the hoped-for result appears.",
+        "id": "Mengulang hanya sampai muncul hasil yang diharapkan."
+      },
+      "remediation": {
+        "en": "Agree on the number of races before the first drop, write it at the top of the chart, and count every race.",
+        "id": "Sepakati jumlah lomba sebelum jatuhan pertama, tulis di atas bagan, dan hitung setiap lomba."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Test a spinner outdoors in a light breeze and talk about why the result is harder to trust.",
+      "id": "Uji baling-baling di luar saat ada angin pelan dan bicarakan mengapa hasilnya lebih sulit dipercaya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "An adult can pre-cut the strips for a child who finds scissors difficult; the child folds, drops and records.",
+      "id": "Orang dewasa bisa menggunting potongan lebih dulu untuk anak yang sulit memakai gunting; anak melipat, menjatuhkan, dan mencatat."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": true,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Scissors: use child-safe scissors with an adult beside the child; the adult does any difficult cuts.",
+        "id": "Gunting: pakai gunting aman anak dengan orang dewasa di samping anak; orang dewasa mengerjakan potongan yang sulit."
+      },
+      {
+        "en": "Drop spinners while standing on the floor; never climb on chairs, tables or stairs to drop them.",
+        "id": "Jatuhkan baling-baling sambil berdiri di lantai; jangan memanjat kursi, meja, atau tangga."
+      },
+      {
+        "en": "Keep paper clips away from younger siblings.",
+        "id": "Jauhkan penjepit kertas dari adik yang lebih kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child plans a fair test, names what stays the same, repeats trials and writes a claim matching the data, on two different days.",
+      "id": "Dikuasai jika anak merencanakan uji yang adil, menyebut yang dijaga sama, mengulang percobaan, dan menulis kesimpulan sesuai data, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-stem",
+    "createdAt": "2026-11-10"
+  }
+}

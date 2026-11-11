@@ -1,0 +1,466 @@
+{
+  "id": "unit-g5-math-decimals-to-thousandths",
+  "version": "1.0.1",
+  "level": "g5",
+  "framework": "math",
+  "strand": "decimals",
+  "title": {
+    "en": "Decimals to thousandths",
+    "id": "Desimal sampai perseribuan"
+  },
+  "prerequisites": [
+    "unit-g4-math-equivalent-fractions"
+  ],
+  "objective": {
+    "en": "Read, write, compare and round decimals to three places, connect them to fractions with denominators 10, 100 and 1000, and convert grams to kilograms.",
+    "id": "Membaca, menulis, membandingkan, dan membulatkan desimal sampai tiga tempat, menghubungkannya dengan pecahan berpenyebut 10, 100, dan 1.000, serta mengubah gram menjadi kilogram."
+  },
+  "rationale": {
+    "en": "Decimals extend place value to the right of the ones. Children who think of decimals as 'two whole numbers with a dot' believe 0.405 is bigger than 0.45. Place-value charts and measurement in kilograms and metres build the correct picture.",
+    "id": "Desimal memperluas nilai tempat ke kanan satuan. Anak yang menganggap desimal sebagai 'dua bilangan bulat dengan titik' mengira 0,405 lebih besar dari 0,45. Tabel nilai tempat dan pengukuran dalam kilogram dan meter membangun gambaran yang benar."
+  },
+  "outcomes": [
+    {
+      "en": "Says the value of any digit in a decimal with up to three places.",
+      "id": "Menyebut nilai setiap angka pada desimal sampai tiga tempat."
+    },
+    {
+      "en": "Compares, orders and rounds decimals, and converts between grams and kilograms.",
+      "id": "Membandingkan, mengurutkan, dan membulatkan desimal, serta mengubah gram dan kilogram."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can explain why 0.45 is greater than 0.405.",
+      "id": "Aku bisa menjelaskan mengapa 0,45 lebih besar dari 0,405."
+    },
+    {
+      "en": "I can write 1,375 g as 1.375 kg.",
+      "id": "Aku bisa menulis 1.375 g sebagai 1,375 kg."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Note: English writes 3.472 with a point; Indonesian writes 3,472 with a comma. In this unit the Indonesian text uses the comma. Indonesian also uses a point for thousands: 1.375 g means one thousand three hundred seventy-five grams.",
+      "id": "Catatan: bahasa Inggris menulis 3.472 dengan titik; bahasa Indonesia menulis 3,472 dengan koma. Di unit ini teks Indonesia memakai koma. Bahasa Indonesia juga memakai titik untuk ribuan: 1.375 g berarti seribu tiga ratus tujuh puluh lima gram."
+    },
+    {
+      "en": "Use a place-value chart with columns ones, tenths, hundredths, thousandths and write each digit in a box.",
+      "id": "Pakai tabel nilai tempat dengan kolom satuan, persepuluhan, perseratusan, perseribuan dan tulis setiap angka dalam kotak."
+    },
+    {
+      "en": "Connect to measuring: kitchen scales in grams, a metre tape in millimetres.",
+      "id": "Kaitkan dengan mengukur: timbangan dapur dalam gram, meteran dalam milimeter."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Line up the decimal points. Compare tenths first, then hundredths, then thousandths. Fill empty places with zeros if it helps.",
+      "id": "Sejajarkan tanda desimalnya. Bandingkan persepuluhan dulu, lalu perseratusan, lalu perseribuan. Isi tempat kosong dengan nol jika membantu."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Weigh 1 kg of rice on a kitchen scale, then smaller amounts: 375 g, 250 g and 125 g; write each as a decimal of a kilogram.",
+        "id": "Timbang 1 kg beras di timbangan dapur, lalu jumlah lebih kecil: 375 g, 250 g, dan 125 g; tulis masing-masing sebagai desimal kilogram."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Shade a 10 by 10 grid to show 0.45 (45 small squares) and 0.405 (40 small squares and half of one); compare the shaded areas.",
+        "id": "Arsir petak 10 kali 10 untuk menunjukkan 0,45 (45 persegi kecil) dan 0,405 (40 persegi kecil dan setengah persegi); bandingkan luas yang diarsir."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write 3.472 = 3 + 4/10 + 7/100 + 2/1000 and 1375 g = 1375/1000 kg = 1.375 kg.",
+        "id": "Tulis 3,472 = 3 + 4/10 + 7/100 + 2/1000 dan 1.375 g = 1.375/1.000 kg = 1,375 kg."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A kitchen scale and about 1 kg of uncooked rice in a bowl",
+      "id": "Timbangan dapur dan sekitar 1 kg beras dalam mangkuk"
+    },
+    {
+      "en": "Squared paper with 10 by 10 grids and a four-column place-value chart",
+      "id": "Kertas berpetak dengan petak 10 kali 10 dan tabel nilai tempat empat kolom"
+    },
+    {
+      "en": "A metre tape measure marked in millimetres",
+      "id": "Meteran yang bertanda milimeter"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw three 10 by 10 grids and the place-value chart; set the scale to zero with an empty bowl.",
+      "id": "Gambar tiga petak 10 kali 10 dan tabel nilai tempat; atur timbangan ke nol dengan mangkuk kosong."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Value of digits: in 3.472 the 4 is 4 tenths (0.4), the 7 is 7 hundredths (0.07) and the 2 is 2 thousandths (0.002).",
+      "id": "Nilai angka: pada 3,472 angka 4 bernilai 4 persepuluhan (0,4), angka 7 bernilai 7 perseratusan (0,07), dan angka 2 bernilai 2 perseribuan (0,002)."
+    },
+    {
+      "en": "Comparing: 0.45 and 0.405. Write 0.45 as 0.450. Tenths are equal (4); hundredths 5 and 0: so 0.45 is greater. More digits does not mean bigger.",
+      "id": "Membandingkan: 0,45 dan 0,405. Tulis 0,45 sebagai 0,450. Persepuluhan sama (4); perseratusan 5 dan 0: jadi 0,45 lebih besar. Lebih banyak angka tidak berarti lebih besar."
+    },
+    {
+      "en": "Grams to kilograms: Ibu buys 1,375 g of chicken. 1000 g = 1 kg, so 1,375 g = 1.375 kg.",
+      "id": "Gram ke kilogram: Ibu membeli 1.375 g ayam. 1.000 g = 1 kg, jadi 1.375 g = 1,375 kg."
+    },
+    {
+      "en": "Rounding: 4.638 to the nearest hundredth. It lies between 4.63 and 4.64; the thousandths digit is 8, so round up to 4.64.",
+      "id": "Membulatkan: 4,638 ke perseratusan terdekat. Letaknya antara 4,63 dan 4,64; angka perseribuannya 8, jadi dibulatkan ke atas menjadi 4,64."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Weigh three foods and write each mass in grams and in kilograms.",
+      "id": "Timbang tiga bahan makanan dan tulis massanya dalam gram dan kilogram."
+    },
+    {
+      "en": "Order 0.7, 0.07, 0.707 and 0.077 from smallest to greatest using the place-value chart.",
+      "id": "Urutkan 0,7; 0,07; 0,707; dan 0,077 dari terkecil sampai terbesar dengan tabel nilai tempat."
+    },
+    {
+      "en": "Count on in thousandths from 2.396 to 2.405 and say each number aloud.",
+      "id": "Hitung maju per perseribuan dari 2,396 sampai 2,405 dan ucapkan setiap bilangan."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "What is the value of the 5 in 6.159?",
+        "id": "Berapa nilai angka 5 pada 6,159?"
+      },
+      "choices": {
+        "en": [
+          "0.05",
+          "5",
+          "0.5"
+        ],
+        "id": [
+          "0,05",
+          "5",
+          "0,5"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The 5 is in the hundredths place: 5 hundredths = 0.05.",
+        "id": "Angka 5 ada di tempat perseratusan: 5 perseratus = 0,05."
+      },
+      "check": {
+        "expression": "5/100",
+        "result": "0.05"
+      },
+      "distractorMisconceptions": {
+        "1": "FACE_VALUE",
+        "2": "PLACE_SHIFT"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which is greater: 0.3 or 0.299?",
+        "id": "Mana yang lebih besar: 0,3 atau 0,299?"
+      },
+      "choices": {
+        "en": [
+          "0.3",
+          "0.299",
+          "They are equal"
+        ],
+        "id": [
+          "0,3",
+          "0,299",
+          "Keduanya sama"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "0.3 = 0.300. Compare tenths: 3 tenths is more than 2 tenths, so 0.3 is greater.",
+        "id": "0,3 = 0,300. Bandingkan persepuluhan: 3 persepuluh lebih dari 2 persepuluh, jadi 0,3 lebih besar."
+      },
+      "check": {
+        "expression": "3/10",
+        "result": "0.3"
+      },
+      "distractorMisconceptions": {
+        "1": "LONGER_IS_LARGER",
+        "2": "IGNORES_ZERO_PLACEHOLDER"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "2 + 0.3 + 0.006 = ?",
+        "id": "2 + 0,3 + 0,006 = ?"
+      },
+      "choices": {
+        "en": [
+          "2.306",
+          "2.36",
+          "2.0306"
+        ],
+        "id": [
+          "2,306",
+          "2,36",
+          "2,0306"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2 ones, 3 tenths, 0 hundredths, 6 thousandths: 2.306.",
+        "id": "2 satuan, 3 persepuluhan, 0 perseratusan, 6 perseribuan: 2,306."
+      },
+      "check": {
+        "expression": "2 + 0.3 + 0.006",
+        "result": "2.306"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_ZERO_PLACEHOLDER",
+        "2": "PLACE_SHIFT"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Ibu buys 2060 g of beef. How many kilograms is that?",
+        "id": "Ibu membeli 2060 g daging sapi. Berapa kilogram itu?"
+      },
+      "choices": {
+        "en": [
+          "2.06 kg",
+          "20.6 kg",
+          "2.6 kg"
+        ],
+        "id": [
+          "2,06 kg",
+          "20,6 kg",
+          "2,6 kg"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "1000 g = 1 kg, so divide by 1000: 2060 ÷ 1000 = 2.06 kg.",
+        "id": "1.000 g = 1 kg, jadi bagi dengan 1.000: 2060 ÷ 1.000 = 2,06 kg."
+      },
+      "check": {
+        "expression": "2060 / 1000",
+        "result": "2.06"
+      },
+      "distractorMisconceptions": {
+        "1": "PLACE_SHIFT",
+        "2": "IGNORES_ZERO_PLACEHOLDER"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Round 7.315 to the nearest hundredth.",
+        "id": "Bulatkan 7,315 ke perseratusan terdekat."
+      },
+      "choices": {
+        "en": [
+          "7.32",
+          "7.31",
+          "7.3"
+        ],
+        "id": [
+          "7,32",
+          "7,31",
+          "7,3"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "7.315 is half way between 7.31 and 7.32; a thousandths digit of 5 rounds up, so 7.32.",
+        "id": "7,315 tepat di tengah antara 7,31 dan 7,32; angka perseribuan 5 dibulatkan ke atas, jadi 7,32."
+      },
+      "check": {
+        "expression": "7.31 + 0.01",
+        "result": "7.32"
+      },
+      "distractorMisconceptions": {
+        "1": "TRUNCATES_NOT_ROUNDS",
+        "2": "ROUNDS_WRONG_PLACE"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "What is 0.01 more than 2.399?",
+        "id": "Berapa 0,01 lebih dari 2,399?"
+      },
+      "choices": {
+        "en": [
+          "2.409",
+          "2.4",
+          "3.399"
+        ],
+        "id": [
+          "2,409",
+          "2,4",
+          "3,399"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Add one hundredth: 9 hundredths + 1 = 10 hundredths = 1 tenth, so 2.399 becomes 2.409.",
+        "id": "Tambah satu perseratus: 9 perseratus + 1 = 10 perseratus = 1 persepuluh, jadi 2,399 menjadi 2,409."
+      },
+      "check": {
+        "expression": "2.399 + 0.01",
+        "result": "2.409"
+      },
+      "distractorMisconceptions": {
+        "1": "PLACE_SHIFT",
+        "2": "PLACE_SHIFT"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "FACE_VALUE",
+      "description": {
+        "en": "Gives the digit without its place value.",
+        "id": "Menyebut angka tanpa nilai tempatnya."
+      },
+      "remediation": {
+        "en": "Write the number in the place-value chart and read the column heading above the digit.",
+        "id": "Tulis bilangan di tabel nilai tempat dan baca judul kolom di atas angka itu."
+      }
+    },
+    {
+      "code": "PLACE_SHIFT",
+      "description": {
+        "en": "Puts a digit or a change in the wrong decimal place.",
+        "id": "Menaruh angka atau perubahan di tempat desimal yang salah."
+      },
+      "remediation": {
+        "en": "Use the chart with one digit per box and move digits physically on cards when multiplying or dividing by 10, 100 or 1000.",
+        "id": "Pakai tabel dengan satu angka per kotak dan geser kartu angka saat mengali atau membagi dengan 10, 100, atau 1.000."
+      }
+    },
+    {
+      "code": "LONGER_IS_LARGER",
+      "description": {
+        "en": "Thinks a decimal with more digits is larger.",
+        "id": "Mengira desimal dengan angka lebih banyak lebih besar."
+      },
+      "remediation": {
+        "en": "Shade both decimals on 10 by 10 grids, or add zeros so both have three places, then compare.",
+        "id": "Arsir kedua desimal di petak 10 kali 10, atau tambahkan nol agar keduanya punya tiga tempat, lalu bandingkan."
+      }
+    },
+    {
+      "code": "IGNORES_ZERO_PLACEHOLDER",
+      "description": {
+        "en": "Leaves out or adds a zero that holds a place.",
+        "id": "Menghilangkan atau menambahkan nol yang menjaga tempat."
+      },
+      "remediation": {
+        "en": "Fill every column of the chart, writing 0 where there is nothing.",
+        "id": "Isi setiap kolom tabel, tulis 0 jika kosong."
+      }
+    },
+    {
+      "code": "TRUNCATES_NOT_ROUNDS",
+      "description": {
+        "en": "Cuts off digits instead of rounding.",
+        "id": "Memotong angka, bukan membulatkan."
+      },
+      "remediation": {
+        "en": "Mark the two neighbouring hundredths on a number line and place the number between them.",
+        "id": "Tandai dua perseratusan terdekat di garis bilangan dan letakkan bilangannya di antara keduanya."
+      }
+    },
+    {
+      "code": "ROUNDS_WRONG_PLACE",
+      "description": {
+        "en": "Rounds to tenths when hundredths are asked for.",
+        "id": "Membulatkan ke persepuluhan padahal diminta perseratusan."
+      },
+      "remediation": {
+        "en": "Underline the hundredths digit before rounding and keep two decimal places in the answer.",
+        "id": "Garis bawahi angka perseratusan sebelum membulatkan dan pertahankan dua tempat desimal di jawabannya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Compare the prices of rice per kilogram from two packets, for example 5 kg and 2.5 kg packets, and find which is cheaper per kilogram.",
+      "id": "Bandingkan harga beras per kilogram dari dua kemasan, misalnya kemasan 5 kg dan 2,5 kg, dan cari mana yang lebih murah per kilogram."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use large-print charts and let children use the scale display directly; read decimals aloud by place ('two point four zero nine').",
+      "id": "Pakai tabel berhuruf besar dan biarkan anak membaca layar timbangan langsung; bacakan desimal per tempat ('dua koma empat nol sembilan')."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use dry rice only and keep it away from toddlers; return it to the storage container afterwards.",
+        "id": "Pakai beras kering saja dan jauhkan dari balita; kembalikan ke wadahnya setelah selesai."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child orders four decimals, rounds two numbers to the nearest hundredth, and converts two masses correctly, on two different days.",
+      "id": "Dikuasai jika anak mengurutkan empat desimal, membulatkan dua bilangan ke perseratusan terdekat, dan mengubah dua massa dengan benar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-math",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "id": "unit-g4-literacy-summarising-text",
+  "version": "1.0.1",
+  "level": "g4",
+  "framework": "literacy",
+  "strand": "comprehension",
+  "title": {
+    "en": "Say it short: summarising",
+    "id": "Singkat dan padat: meringkas"
+  },
+  "prerequisites": [
+    "unit-g3-literacy-paragraph-main-idea"
+  ],
+  "objective": {
+    "en": "Write a summary of an informational text in three or four sentences of their own words, keeping the main ideas and leaving out minor details and repetition.",
+    "id": "Menulis ringkasan teks informasi dalam tiga atau empat kalimat dengan kata-kata sendiri, mempertahankan gagasan pokok dan membuang detail kecil serta pengulangan."
+  },
+  "rationale": {
+    "en": "Summarising is one of the most useful comprehension skills: it forces the reader to decide what matters. It builds on finding the main idea of one paragraph and extends it to a whole text. Children are taught four moves: delete small details, delete repeats, replace a list with one group word, and use or write a main sentence for each paragraph. Indonesian schools usually call this writing a \"ringkasan\" from the \"gagasan pokok\" of each paragraph, using \"kata kunci\" (key words), so the Indonesian version names those steps; the thinking is the same in both languages.",
+    "id": "Meringkas adalah salah satu keterampilan memahami yang paling berguna: pembaca harus memutuskan apa yang penting. Keterampilan ini melanjutkan menemukan gagasan utama satu paragraf ke seluruh teks. Anak diajari empat langkah: buang detail kecil, buang pengulangan, ganti daftar dengan satu kata kelompok, dan pakai atau tulis kalimat utama untuk setiap paragraf. Sekolah di Indonesia biasanya menyebutnya menulis ringkasan dari gagasan pokok setiap paragraf dengan kata kunci, jadi versi Indonesia memakai istilah itu; cara berpikirnya sama di kedua bahasa."
+  },
+  "outcomes": [
+    {
+      "en": "Writes the main idea of each paragraph in a few key words.",
+      "id": "Menulis gagasan pokok setiap paragraf dalam beberapa kata kunci."
+    },
+    {
+      "en": "Combines them into a summary of three or four sentences in their own words.",
+      "id": "Menggabungkannya menjadi ringkasan tiga atau empat kalimat dengan kata-kata sendiri."
+    },
+    {
+      "en": "Judges which of several summaries is best and explains why.",
+      "id": "Menilai ringkasan mana yang terbaik dari beberapa pilihan dan menjelaskan alasannya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "My summary has only the most important ideas.",
+      "id": "Ringkasanku hanya berisi gagasan terpenting."
+    },
+    {
+      "en": "I used my own words and kept the ideas in the same order.",
+      "id": "Aku memakai kata-kataku sendiri dan menjaga urutan gagasan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Read the whole text once for enjoyment before any summarising.",
+      "id": "Bacalah seluruh teks sekali untuk dinikmati sebelum mulai meringkas."
+    },
+    {
+      "en": "Model the four moves aloud on paragraph 1, crossing out lightly in pencil.",
+      "id": "Contohkan empat langkah dengan suara keras pada paragraf 1, mencoret tipis dengan pensil."
+    },
+    {
+      "en": "Ask your child to close the text before writing the summary so they use their own words.",
+      "id": "Minta anak menutup teks sebelum menulis ringkasan agar memakai kata-katanya sendiri."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Read the text. For each paragraph, write two to four key words.",
+      "id": "Baca teksnya. Untuk setiap paragraf, tulis dua sampai empat kata kunci."
+    },
+    {
+      "en": "Cross out small details and repeats. Turn lists into one group word.",
+      "id": "Coret detail kecil dan pengulangan. Ganti daftar dengan satu kata kelompok."
+    },
+    {
+      "en": "Close the text. Write your summary in three or four sentences.",
+      "id": "Tutup teksnya. Tulis ringkasanmu dalam tiga atau empat kalimat."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "The text below, copied onto paper",
+      "id": "Teks di bawah, disalin ke kertas"
+    },
+    {
+      "en": "A pencil and an eraser",
+      "id": "Pensil dan penghapus"
+    },
+    {
+      "en": "A key-word table with one row per paragraph",
+      "id": "Tabel kata kunci dengan satu baris per paragraf"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Copy the three paragraphs with wide line spacing.",
+      "id": "Salin ketiga paragraf dengan jarak baris lebar."
+    },
+    {
+      "en": "Prepare the key-word table.",
+      "id": "Siapkan tabel kata kunci."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Text, paragraph 1: \"A seed is a tiny plant waiting to grow. Inside the hard coat there is a baby plant and a store of food. Beans, corn and sunflower seeds all have this food store. The food keeps the baby plant alive until it can make its own.\" Paragraph 2: \"To start growing, most seeds need water, air and warmth. When water soaks in, the seed swells and the coat splits. A small root pushes down first, and then a shoot pushes up.\"",
+      "id": "Teks, paragraf 1: \"Biji adalah tumbuhan kecil yang menunggu untuk tumbuh. Di dalam kulitnya yang keras ada bakal tumbuhan dan cadangan makanan. Biji kacang, jagung, dan bunga matahari semuanya punya cadangan makanan ini. Makanan itu menjaga bakal tumbuhan tetap hidup sampai ia bisa membuat makanannya sendiri.\" Paragraf 2: \"Untuk mulai tumbuh, kebanyakan biji memerlukan air, udara, dan kehangatan. Ketika air meresap, biji menggembung dan kulitnya pecah. Akar kecil keluar ke bawah lebih dulu, lalu tunas tumbuh ke atas.\""
+    },
+    {
+      "en": "Paragraph 3: \"When the shoot reaches the light, it opens its first leaves. Now the young plant can use sunlight to make its own food. It no longer needs the store inside the seed.\" Model: key words P1 seed = baby plant + food store; P2 needs water, air, warmth, root then shoot; P3 leaves make food from light. Summary: \"A seed holds a baby plant and a food store. With water, air and warmth it splits, and a root then a shoot grow. When its leaves reach light, the plant makes its own food.\"",
+      "id": "Paragraf 3: \"Ketika tunas mencapai cahaya, daun pertamanya membuka. Sekarang tumbuhan muda bisa memakai cahaya matahari untuk membuat makanannya sendiri. Ia tidak lagi memerlukan cadangan di dalam biji.\" Contoh kata kunci P1 biji = bakal tumbuhan + cadangan makanan; P2 perlu air, udara, hangat, akar lalu tunas; P3 daun membuat makanan dari cahaya. Ringkasan: \"Biji berisi bakal tumbuhan dan cadangan makanan. Dengan air, udara, dan kehangatan, biji pecah, lalu akar dan tunas tumbuh. Setelah daunnya terkena cahaya, tumbuhan membuat makanannya sendiri.\""
+    }
+  ],
+  "practice": [
+    {
+      "en": "Summary judge: compare three summaries the adult writes (one too long, one with a wrong detail, one good) and choose the best.",
+      "id": "Juri ringkasan: bandingkan tiga ringkasan yang ditulis orang dewasa (satu terlalu panjang, satu dengan detail salah, satu baik) dan pilih yang terbaik."
+    },
+    {
+      "en": "Group words: replace lists with one word (mangoes, bananas and papayas becomes fruit; chairs, tables and cupboards becomes furniture).",
+      "id": "Kata kelompok: ganti daftar dengan satu kata (mangga, pisang, dan pepaya menjadi buah; kursi, meja, dan lemari menjadi perabot)."
+    },
+    {
+      "en": "Summarise a new text from a children's encyclopedia or school book at home in four sentences.",
+      "id": "Ringkas teks baru dari ensiklopedia anak atau buku pelajaran di rumah dalam empat kalimat."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which is the best summary of paragraph 2?",
+        "id": "Mana ringkasan terbaik untuk paragraf 2?"
+      },
+      "choices": {
+        "en": [
+          "With water, air and warmth, a seed splits and grows a root, then a shoot.",
+          "Water soaks in.",
+          "Seeds are very interesting and everyone should plant them."
+        ],
+        "id": [
+          "Dengan air, udara, dan kehangatan, biji pecah lalu tumbuh akar dan tunas.",
+          "Air meresap.",
+          "Biji sangat menarik dan semua orang harus menanamnya."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "It keeps the main idea and the order, in few words. The second is one detail; the third is an opinion not in the text.",
+        "id": "Ringkasan ini memuat gagasan pokok dan urutannya dengan sedikit kata. Pilihan kedua hanya satu detail; pilihan ketiga adalah pendapat yang tidak ada di teks."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_DETAIL_ONLY",
+        "2": "ADDS_OPINION"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which group word can replace \"beans, corn and sunflower seeds\"?",
+        "id": "Kata kelompok apa yang bisa menggantikan \"kacang, jagung, dan biji bunga matahari\"?"
+      },
+      "choices": {
+        "en": [
+          "seeds",
+          "food",
+          "beans"
+        ],
+        "id": [
+          "biji",
+          "makanan",
+          "kacang"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "They are all examples of seeds in this text.",
+        "id": "Semuanya contoh biji dalam teks ini."
+      },
+      "distractorMisconceptions": {
+        "1": "TOO_GENERAL_GROUP",
+        "2": "ONE_DETAIL_ONLY"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which sentence from paragraph 1 can be left out of a summary?",
+        "id": "Kalimat mana dari paragraf 1 yang boleh dibuang dari ringkasan?"
+      },
+      "choices": {
+        "en": [
+          "Beans, corn and sunflower seeds all have this food store.",
+          "A seed is a tiny plant waiting to grow.",
+          "Inside the hard coat there is a baby plant and a store of food."
+        ],
+        "id": [
+          "Biji kacang, jagung, dan bunga matahari semuanya punya cadangan makanan ini.",
+          "Biji adalah tumbuhan kecil yang menunggu untuk tumbuh.",
+          "Di dalam kulitnya yang keras ada bakal tumbuhan dan cadangan makanan."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "It only gives examples; the main idea stands without it.",
+        "id": "Kalimat itu hanya memberi contoh; gagasan pokok tetap utuh tanpanya."
+      },
+      "distractorMisconceptions": {
+        "1": "DELETES_MAIN_IDEA",
+        "2": "DELETES_MAIN_IDEA"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "What is wrong with a summary that copies whole sentences from the text?",
+        "id": "Apa yang kurang tepat dari ringkasan yang menyalin kalimat utuh dari teks?"
+      },
+      "choices": {
+        "en": [
+          "It is not in the writer's own words and is usually too long.",
+          "Nothing; copying is the best way.",
+          "It has too few details."
+        ],
+        "id": [
+          "Tidak memakai kata-kata sendiri dan biasanya terlalu panjang.",
+          "Tidak ada; menyalin adalah cara terbaik.",
+          "Detailnya terlalu sedikit."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A summary restates the main ideas briefly in your own words.",
+        "id": "Ringkasan menyatakan ulang gagasan pokok secara singkat dengan kata-kata sendiri."
+      },
+      "distractorMisconceptions": {
+        "1": "COPIES_TEXT",
+        "2": "KEEPS_ALL_DETAILS"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ONE_DETAIL_ONLY",
+      "description": {
+        "en": "Gives one detail instead of the whole idea.",
+        "id": "Memberi satu detail, bukan seluruh gagasan."
+      },
+      "remediation": {
+        "en": "Ask the paragraph a question: What is this paragraph mostly about? Then check the answer covers every sentence.",
+        "id": "Ajukan pertanyaan pada paragraf: Paragraf ini terutama tentang apa? Lalu periksa jawabannya mencakup setiap kalimat."
+      }
+    },
+    {
+      "code": "ADDS_OPINION",
+      "description": {
+        "en": "Adds personal opinions or new information to the summary.",
+        "id": "Menambahkan pendapat pribadi atau informasi baru ke ringkasan."
+      },
+      "remediation": {
+        "en": "Highlight each idea in the summary and find where it came from in the text; anything without a source is removed.",
+        "id": "Tandai setiap gagasan di ringkasan dan cari asalnya di teks; yang tidak ada asalnya dibuang."
+      }
+    },
+    {
+      "code": "TOO_GENERAL_GROUP",
+      "description": {
+        "en": "Picks a group word so wide that it loses the meaning.",
+        "id": "Memilih kata kelompok yang terlalu luas sehingga makna hilang."
+      },
+      "remediation": {
+        "en": "Use a ladder drawing: specific at the bottom, general at the top; choose the lowest rung that fits all items.",
+        "id": "Pakai gambar tangga: khusus di bawah, umum di atas; pilih anak tangga terendah yang mencakup semua."
+      }
+    },
+    {
+      "code": "DELETES_MAIN_IDEA",
+      "description": {
+        "en": "Removes the key sentence and keeps examples.",
+        "id": "Membuang kalimat kunci dan mempertahankan contoh."
+      },
+      "remediation": {
+        "en": "Read the paragraph without the chosen sentence; if it no longer makes sense, that sentence was needed.",
+        "id": "Baca paragraf tanpa kalimat yang dipilih; jika tidak lagi masuk akal, kalimat itu diperlukan."
+      }
+    },
+    {
+      "code": "COPIES_TEXT",
+      "description": {
+        "en": "Believes copying sentences is summarising.",
+        "id": "Mengira menyalin kalimat adalah meringkas."
+      },
+      "remediation": {
+        "en": "Turn the text over, say the summary aloud to a family member, then write what you said.",
+        "id": "Balik teksnya, ucapkan ringkasan kepada anggota keluarga, lalu tulis apa yang kamu ucapkan."
+      }
+    },
+    {
+      "code": "KEEPS_ALL_DETAILS",
+      "description": {
+        "en": "Thinks a good summary keeps as many details as possible.",
+        "id": "Mengira ringkasan yang baik memuat sebanyak mungkin detail."
+      },
+      "remediation": {
+        "en": "Set a word budget: the summary must fit on one small sticky note.",
+        "id": "Tetapkan batas kata: ringkasan harus muat di satu kertas tempel kecil."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Summarise a family film or story for a grandparent in exactly three sentences.",
+      "id": "Ringkas film atau cerita keluarga untuk kakek atau nenek dalam tepat tiga kalimat."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Allow an oral summary first, recorded on paper by the adult, for children who find writing slow.",
+      "id": "Izinkan ringkasan lisan dulu, ditulis oleh orang dewasa, untuk anak yang lambat menulis."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "No physical hazards.",
+        "id": "Tidak ada bahaya fisik."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      5,
+      14,
+      30
+    ],
+    "masteryRule": {
+      "en": "Secure when your child writes a three- or four-sentence summary of a new informational text that keeps every main idea and adds nothing new, on two different days.",
+      "id": "Dikuasai jika anak menulis ringkasan tiga atau empat kalimat untuk teks informasi baru yang memuat semua gagasan pokok tanpa tambahan baru, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable",
+      "note": "The seed text uses general school science (germination); a reviewer should confirm wording."
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "single-answer-check",
+      "misconception-map",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-literacy",
+    "createdAt": "2026-11-10"
+  }
+}

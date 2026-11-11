@@ -5,7 +5,7 @@ import { Logo } from './brand';
 import { LanguageSwitch } from './language-switch';
 import { SignOutButton } from './sign-out';
 
-export type NavKey = 'family' | 'dashboard' | 'cards' | 'library' | 'curriculum' | 'privacy' | 'settings';
+export type NavKey = 'family' | 'dashboard' | 'cards' | 'library' | 'curriculum' | 'units' | 'review' | 'privacy' | 'settings';
 
 export function ParentShell({ t, active, children }: { t: Dictionary; active?: NavKey; children: ReactNode }) {
   const items: { key: NavKey; href: string; label: string }[] = [
@@ -14,6 +14,8 @@ export function ParentShell({ t, active, children }: { t: Dictionary; active?: N
     { key: 'cards', href: '/cards', label: t.nav.cards },
     { key: 'library', href: '/library', label: t.nav.library },
     { key: 'curriculum', href: '/curriculum', label: t.nav.curriculum },
+    { key: 'units', href: '/units', label: t.nav.units },
+    { key: 'review', href: '/review', label: t.nav.review },
     { key: 'privacy', href: '/privacy', label: t.nav.privacy },
     { key: 'settings', href: '/settings', label: t.nav.settings },
   ];

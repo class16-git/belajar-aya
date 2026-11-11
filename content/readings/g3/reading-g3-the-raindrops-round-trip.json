@@ -1,0 +1,256 @@
+{
+  "id": "reading-g3-the-raindrops-round-trip",
+  "version": "1.0.1",
+  "level": "g3",
+  "readingLevel": "transitional",
+  "genre": "poetry",
+  "mode": "independent",
+  "title": {
+    "en": "The raindrop's round trip",
+    "id": "Perjalanan pulang-pergi setetes hujan"
+  },
+  "text": {
+    "en": [
+      "I lay in the sea, so salty and still, / till the sun warmed my back with a gentle thrill. / I rose up as vapour, a gas none could see, / leaving the salt in the waves of blue-green.",
+      "Up in the cold, I met millions of friends; / we huddled together where the blue sky ends. / We held hands as droplets, a cloud soft and grey, / and drifted on breezes for most of the day.",
+      "We grew heavy and full, we could not stay high, / so down we came tumbling, all out of the sky. / Pitter on rooftops and patter on leaves, / we filled up the rice fields and dripped from the eaves.",
+      "I ran down a hillside and into a stream, / past buffalo wallowing, past fishermen's dreams. / The river grew wider, it rolled to the shore, / and there was the sea — I was home once more.",
+      "So if you are thirsty and sip from your cup, / remember the journey: down, then around, then up. / The water you drink has been ocean and rain, / and one day it will travel the circle again."
+    ],
+    "id": [
+      "Aku berbaring di laut, asin dan tenang, / sampai matahari menghangatkan punggungku dengan senang. / Aku naik menjadi uap, terlalu ringan untuk dilihat, / meninggalkan garam di ombak biru yang pekat.",
+      "Di atas yang dingin, kutemui jutaan kawan; / kami berkumpul rapat di batas awan. / Kami bergandeng menjadi titik air, awan kelabu yang lembut, / dan melayang ditiup angin dari pagi sampai larut.",
+      "Kami makin berat dan penuh, tak bisa bertahan tinggi, / maka kami jatuh berjatuhan dari langit sekali lagi. / Tik-tik di atap dan tak-tak di dedaunan, / kami mengisi sawah dan menetes dari cucuran atap.",
+      "Aku mengalir menuruni bukit dan masuk ke sungai kecil, / melewati kerbau berkubang dan nelayan yang memanggil. / Sungai makin lebar, menuju pantai ia berlari, / dan di sanalah laut — aku pulang kembali.",
+      "Jadi saat kamu haus dan minum dari gelasmu, / ingat perjalanannya: naik, turun, lalu berkeliling selalu. / Air yang kamu minum pernah jadi laut dan hujan, / dan suatu hari ia akan berkelana lagi tanpa bosan."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a narrative poem and explains what each stanza describes.",
+      "id": "Membaca puisi naratif dan menjelaskan isi setiap bait."
+    },
+    {
+      "en": "Links the poem's events to the stages of the water cycle.",
+      "id": "Menghubungkan peristiwa dalam puisi dengan tahap-tahap siklus air."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "vapour",
+        "id": "uap"
+      },
+      "meaning": {
+        "en": "water as an invisible gas",
+        "id": "air dalam bentuk gas yang tidak terlihat"
+      }
+    },
+    {
+      "word": {
+        "en": "droplet",
+        "id": "titik air"
+      },
+      "meaning": {
+        "en": "a very small drop of water",
+        "id": "tetesan air yang sangat kecil"
+      }
+    },
+    {
+      "word": {
+        "en": "eaves",
+        "id": "cucuran atap"
+      },
+      "meaning": {
+        "en": "the edge of a roof where rain drips off",
+        "id": "tepi atap tempat air hujan menetes"
+      }
+    },
+    {
+      "word": {
+        "en": "stanza",
+        "id": "bait"
+      },
+      "meaning": {
+        "en": "a group of lines in a poem",
+        "id": "kelompok baris dalam puisi"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "science",
+      "prompt": {
+        "en": "Which stage of the water cycle does the first stanza describe?",
+        "id": "Tahap siklus air apa yang digambarkan bait pertama?"
+      },
+      "choices": {
+        "en": [
+          "evaporation: water warms and rises as vapour",
+          "rain falling",
+          "a river reaching the sea"
+        ],
+        "id": [
+          "penguapan: air menghangat dan naik menjadi uap",
+          "hujan turun",
+          "sungai sampai ke laut"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Who is the 'I' telling the poem?",
+        "id": "Siapa 'aku' yang bercerita dalam puisi ini?"
+      },
+      "choices": {
+        "en": [
+          "a drop of water",
+          "a fisherman",
+          "the sun"
+        ],
+        "id": [
+          "setetes air",
+          "seorang nelayan",
+          "matahari"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q3",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why did the droplets fall from the cloud?",
+        "id": "Mengapa titik-titik air jatuh dari awan?"
+      },
+      "choices": {
+        "en": [
+          "they grew too heavy to stay up",
+          "the wind stopped",
+          "the sun pushed them"
+        ],
+        "id": [
+          "mereka terlalu berat untuk tetap di atas",
+          "anginnya berhenti",
+          "matahari mendorong mereka"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q4",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which line shows that sea salt stays behind when water evaporates?",
+        "id": "Baris mana yang menunjukkan garam laut tertinggal saat air menguap?"
+      },
+      "choices": {
+        "en": [
+          "leaving the salt in the waves of blue-green",
+          "we filled up the rice fields",
+          "and drifted on breezes"
+        ],
+        "id": [
+          "meninggalkan garam di ombak biru yang pekat",
+          "kami mengisi sawah",
+          "dan melayang ditiup angin"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q5",
+      "kind": "critical",
+      "prompt": {
+        "en": "Why does the poem end by talking to the reader about their cup?",
+        "id": "Mengapa puisi diakhiri dengan berbicara kepada pembaca tentang gelasnya?"
+      },
+      "choices": {
+        "en": [
+          "to show the water cycle connects to our own lives",
+          "to tell us to drink seawater",
+          "because the poem is about cups"
+        ],
+        "id": [
+          "untuk menunjukkan siklus air berhubungan dengan hidup kita",
+          "untuk menyuruh kita minum air laut",
+          "karena puisinya tentang gelas"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Evaporation, condensation, precipitation and collection form the water cycle.",
+        "id": "Penguapan, pengembunan, presipitasi, dan pengumpulan membentuk siklus air."
+      }
+    },
+    {
+      "subject": "creativity",
+      "connection": {
+        "en": "Personification lets a raindrop tell its own story.",
+        "id": "Personifikasi membuat setetes hujan bisa menceritakan kisahnya sendiri."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which picture in the poem can you see most clearly in your mind?",
+      "id": "Gambaran mana dalam puisi yang paling jelas di pikiranmu?"
+    },
+    {
+      "en": "What might a raindrop see if it fell on your town?",
+      "id": "Apa yang mungkin dilihat setetes hujan jika jatuh di kotamu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Write your own four-line stanza from the point of view of a raindrop landing somewhere you know, such as your own street, garden or market.",
+    "id": "Tulis satu bait empat baris dari sudut pandang setetes hujan yang jatuh di tempat yang kamu kenal, seperti jalanmu, kebun, atau pasar."
+  },
+  "factChecks": [
+    {
+      "claim": "When seawater evaporates, the salt is left behind.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Water vapour cools and condenses into droplets that form clouds.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Rivers carry water back to the sea, completing the water cycle.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-pilot-reading",
+    "createdAt": "2026-11-10"
+  }
+}
