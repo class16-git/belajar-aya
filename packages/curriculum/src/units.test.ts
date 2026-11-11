@@ -5,7 +5,13 @@ import { evaluateArithmetic, gradeUnitAssessment, isExpansionVisible, parseResul
 import { expansionSummary, findExpansionItem, loadExpansionLevel, loadRawExpansion } from './expansion-store';
 
 const repo = join(import.meta.dirname, '../../..');
-const refUnit = () => JSON.parse(readFileSync(join(repo, 'content/units/g2/math/unit-g2-math-place-value-hundreds.json'), 'utf8')) as Unit & Record<string, unknown>;
+/** The reference unit as an UNREVIEWED copy (the shipped file carries the owner's approval). */
+const refUnit = () => {
+  const u = JSON.parse(readFileSync(join(repo, 'content/units/g2/math/unit-g2-math-place-value-hundreds.json'), 'utf8')) as Unit & Record<string, unknown>;
+  u.reviewStatus = 'agent_reviewed';
+  u.review = { agentChecks: u.review.agentChecks };
+  return u;
+};
 const refReading = () => JSON.parse(readFileSync(join(repo, 'content/readings/age2_3/reading-age2_3-little-cat-bath.json'), 'utf8'));
 const errs = (units: unknown[], readings: unknown[] = []) => validateExpansion({ units, readings }).errors;
 

@@ -1,0 +1,387 @@
+{
+  "id": "unit-k-stem-sort-by-size-algorithm",
+  "version": "1.0.0",
+  "level": "k",
+  "framework": "stem",
+  "strand": "algorithms",
+  "title": {
+    "en": "Line them up: a sorting recipe",
+    "id": "Berbaris rapi: resep mengurutkan"
+  },
+  "prerequisites": [
+    "unit-age3_4-stem-box-tower-test",
+    "unit-age4_5-stem-robot-grownup-commands"
+  ],
+  "objective": {
+    "en": "Follow and explain a step-by-step recipe for sorting objects from shortest to longest: find the shortest of the ones left, move it to the line, and repeat until none are left.",
+    "id": "Mengikuti dan menjelaskan resep langkah demi langkah untuk mengurutkan benda dari yang terpendek sampai terpanjang: cari yang terpendek dari yang tersisa, pindahkan ke barisan, dan ulangi sampai tidak ada yang tersisa."
+  },
+  "rationale": {
+    "en": "Most children can sort by size by eye, but an algorithm is a way of sorting that always works, even for a robot that cannot 'see' the answer. Comparing two things at a time and repeating the same steps is exactly how computers sort lists.",
+    "id": "Kebanyakan anak bisa mengurutkan ukuran dengan melihat sekilas, tetapi algoritma adalah cara mengurutkan yang selalu berhasil, bahkan untuk robot yang tidak bisa 'melihat' jawabannya. Membandingkan dua benda sekaligus dan mengulang langkah yang sama persis adalah cara komputer mengurutkan daftar."
+  },
+  "outcomes": [
+    {
+      "en": "Compares two objects fairly by lining up their ends.",
+      "id": "Membandingkan dua benda dengan adil dengan menyejajarkan ujungnya."
+    },
+    {
+      "en": "Follows the find-move-repeat recipe to sort five or six objects and says which step comes next.",
+      "id": "Mengikuti resep cari-pindah-ulangi untuk mengurutkan lima atau enam benda dan menyebut langkah berikutnya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I line up the ends before I compare.",
+      "id": "Aku sejajarkan ujungnya sebelum membandingkan."
+    },
+    {
+      "en": "I find the shortest, move it, and do it again.",
+      "id": "Aku cari yang terpendek, pindahkan, lalu lakukan lagi."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Make a recipe card with three pictures: an eye (look at the ones left), a small arrow pointing to the shortest (find the shortest), and a hand moving it to the line (move it). Draw a circle arrow under them for 'repeat'.",
+      "id": "Buat kartu resep dengan tiga gambar: mata (lihat yang tersisa), panah kecil ke yang terpendek (cari yang terpendek), dan tangan yang memindahkannya ke barisan (pindahkan). Gambar panah melingkar di bawahnya untuk 'ulangi'."
+    },
+    {
+      "en": "Teach the fair comparison first: stand two strips side by side with their bottoms on the table edge. Only then can you see which is taller.",
+      "id": "Ajarkan perbandingan yang adil lebih dulu: berdirikan dua potongan berdampingan dengan bagian bawahnya di tepi meja. Baru setelah itu terlihat mana yang lebih tinggi."
+    },
+    {
+      "en": "Let your child be the 'sorting robot' who must follow the card. You point to each picture; your child says it aloud and does it.",
+      "id": "Biarkan anak menjadi 'robot pengurut' yang harus mengikuti kartu. Kamu menunjuk setiap gambar; anak mengucapkannya dan melakukannya."
+    },
+    {
+      "en": "When the pile is empty, check the line together from left to right: each one should be a little longer than the one before.",
+      "id": "Saat tumpukan kosong, periksa barisan bersama dari kiri ke kanan: setiap potongan harus sedikit lebih panjang dari sebelumnya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Look at the strips that are left.",
+      "id": "Lihat potongan yang tersisa."
+    },
+    {
+      "en": "Find the shortest one. Compare two at a time with their ends lined up.",
+      "id": "Cari yang terpendek. Bandingkan dua-dua dengan ujung yang disejajarkan."
+    },
+    {
+      "en": "Move it to the end of your line. Repeat until there are none left.",
+      "id": "Pindahkan ke ujung barisanmu. Ulangi sampai tidak ada yang tersisa."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Sort six paper strips of different lengths into a line using the recipe card.",
+        "id": "Urutkan enam potongan kertas berbeda panjang menjadi barisan dengan kartu resep."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the finished line as bars, shortest on the left, and colour the shortest one.",
+        "id": "Gambar barisan yang sudah jadi sebagai batang, yang terpendek di kiri, dan warnai yang terpendek."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Number the strips 1 to 6 in the order they joined the line, and say: strip 1 is the shortest, strip 6 is the longest.",
+        "id": "Beri nomor potongan 1 sampai 6 sesuai urutan masuk barisan, lalu ucapkan: potongan 1 paling pendek, potongan 6 paling panjang."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Six strips of coloured card or thick paper, all the same width, cut by the adult to clearly different lengths (for example from a hand-span to a forearm long)",
+      "id": "Enam potongan karton atau kertas tebal berwarna, sama lebar, dipotong orang dewasa dengan panjang yang jelas berbeda (misalnya dari sejengkal sampai sepanjang lengan bawah)"
+    },
+    {
+      "en": "Five household objects of different lengths, such as a spoon, a pencil, a ruler, a toothbrush and a wooden spoon",
+      "id": "Lima benda rumah tangga yang berbeda panjang, seperti sendok, pensil, penggaris, sikat gigi, dan sendok kayu"
+    },
+    {
+      "en": "A recipe card drawn on paper",
+      "id": "Kartu resep yang digambar di kertas"
+    },
+    {
+      "en": "A table with a straight edge",
+      "id": "Meja dengan tepi yang lurus"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult cuts the strips with scissors before the session, mixes them up, and puts them in a pile. Put the scissors away.",
+      "id": "Orang dewasa memotong potongan kertas dengan gunting sebelum kegiatan, mengacaknya, dan menaruhnya dalam tumpukan. Simpan guntingnya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Fair compare: Laila holds the red and the green strip up in the air: the red looks longer because she is holding it higher. Stand both on the table edge, bottoms touching the edge: now the green one is clearly longer. 'Line up the ends first.'",
+      "id": "Membandingkan dengan adil: Laila memegang potongan merah dan hijau di udara: yang merah tampak lebih panjang karena dipegang lebih tinggi. Berdirikan keduanya di tepi meja, bagian bawah menyentuh tepi: sekarang yang hijau jelas lebih panjang. 'Sejajarkan ujungnya dulu.'"
+    },
+    {
+      "en": "Round 1 of the recipe: look at all six. Compare red and green: keep the shorter, red. Compare red with yellow: yellow is shorter, keep yellow. Keep going through the pile. The shortest is the blue strip. Move it to the start of the line.",
+      "id": "Putaran 1 resep: lihat keenamnya. Bandingkan merah dan hijau: simpan yang lebih pendek, merah. Bandingkan merah dengan kuning: kuning lebih pendek, simpan kuning. Lanjutkan ke seluruh tumpukan. Yang terpendek adalah potongan biru. Pindahkan ke awal barisan."
+    },
+    {
+      "en": "Repeat: 'Look at the ones left.' Five are left. Find the shortest of those five and put it next to blue. Keep repeating. After the sixth round the pile is empty, and the line goes from shortest to longest.",
+      "id": "Ulangi: 'Lihat yang tersisa.' Tersisa lima. Cari yang terpendek dari kelima itu dan taruh di sebelah biru. Terus ulangi. Setelah putaran keenam tumpukannya kosong, dan barisannya urut dari yang terpendek sampai terpanjang."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Sort the five household objects with the same recipe, lying them flat with one end touching a book's edge to line them up.",
+      "id": "Urutkan lima benda rumah tangga dengan resep yang sama, letakkan mendatar dengan satu ujung menyentuh tepi buku agar sejajar."
+    },
+    {
+      "en": "Swap jobs: the adult is the robot and follows the card exactly. Your child checks each step and says 'Stop!' if the robot skips one.",
+      "id": "Tukar tugas: orang dewasa menjadi robot dan mengikuti kartu dengan tepat. Anak memeriksa setiap langkah dan berkata 'Berhenti!' jika robot melewatkan satu langkah."
+    },
+    {
+      "en": "Change the recipe to 'find the longest' and build the line from longest to shortest. Does it still work?",
+      "id": "Ubah resepnya menjadi 'cari yang terpanjang' dan susun barisan dari terpanjang sampai terpendek. Apakah tetap berhasil?"
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Two pencils are held at different heights. Before saying which is longer, what should you do?",
+        "id": "Dua pensil dipegang di ketinggian berbeda. Sebelum menyebut mana yang lebih panjang, apa yang harus dilakukan?"
+      },
+      "choices": {
+        "en": [
+          "Line up their ends on the table edge",
+          "Pick the one whose top is higher"
+        ],
+        "id": [
+          "Sejajarkan ujungnya di tepi meja",
+          "Pilih yang ujung atasnya lebih tinggi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Only with the ends lined up can you compare lengths fairly.",
+        "id": "Hanya dengan ujung yang sejajar kita bisa membandingkan panjang dengan adil."
+      },
+      "distractorMisconceptions": {
+        "1": "ENDS_NOT_ALIGNED"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "You found the shortest spoon and put it in the line. What does the recipe say to do next?",
+        "id": "Kamu sudah menemukan sendok terpendek dan menaruhnya di barisan. Menurut resep, apa langkah berikutnya?"
+      },
+      "choices": {
+        "en": [
+          "Look at the ones left and find the shortest again",
+          "Stop, the sorting is finished"
+        ],
+        "id": [
+          "Lihat yang tersisa dan cari yang terpendek lagi",
+          "Berhenti, pengurutan sudah selesai"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The recipe repeats until there are none left.",
+        "id": "Resepnya diulang sampai tidak ada yang tersisa."
+      },
+      "distractorMisconceptions": {
+        "1": "STOPS_AFTER_ONE_ROUND"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "There are 7 toy cars to sort. 3 are already in the line. How many are still in the pile?",
+        "id": "Ada 7 mobil mainan yang akan diurutkan. 3 sudah ada di barisan. Berapa yang masih di tumpukan?"
+      },
+      "choices": {
+        "en": [
+          "4 cars",
+          "3 cars",
+          "10 cars"
+        ],
+        "id": [
+          "4 mobil",
+          "3 mobil",
+          "10 mobil"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Take the ones in the line away from all of them: 7 - 3 = 4.",
+        "id": "Kurangi semua mobil dengan yang sudah di barisan: 7 - 3 = 4."
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_THE_LINE",
+        "2": "ADDS_INSTEAD_OF_TAKING"
+      },
+      "check": {
+        "expression": "7 - 3",
+        "result": "4"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A robot's line goes: short, long, medium. Which step did the robot get wrong?",
+        "id": "Barisan robot: pendek, panjang, sedang. Langkah mana yang salah dilakukan robot?"
+      },
+      "choices": {
+        "en": [
+          "It did not find the shortest of the ones left in round 2",
+          "It started with the shortest, which was wrong"
+        ],
+        "id": [
+          "Pada putaran 2 ia tidak mencari yang terpendek dari yang tersisa",
+          "Ia mulai dengan yang terpendek, itu yang salah"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "After 'short', the shortest of the two left was medium, so medium should come next.",
+        "id": "Setelah 'pendek', yang terpendek dari dua yang tersisa adalah sedang, jadi sedang seharusnya berikutnya."
+      },
+      "distractorMisconceptions": {
+        "1": "BLAMES_THE_FIRST_STEP"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ENDS_NOT_ALIGNED",
+      "description": {
+        "en": "Compares lengths without lining up the ends.",
+        "id": "Membandingkan panjang tanpa menyejajarkan ujungnya."
+      },
+      "remediation": {
+        "en": "Stand back to back with the adult on a flat floor, then with the adult on a step: who looks taller each time? Feet must start at the same level.",
+        "id": "Berdiri saling membelakangi dengan orang dewasa di lantai datar, lalu dengan orang dewasa di atas anak tangga: siapa yang tampak lebih tinggi? Kaki harus mulai di ketinggian yang sama."
+      }
+    },
+    {
+      "code": "STOPS_AFTER_ONE_ROUND",
+      "description": {
+        "en": "Thinks the recipe ends after the first item is moved.",
+        "id": "Mengira resepnya selesai setelah benda pertama dipindahkan."
+      },
+      "remediation": {
+        "en": "Point to the pile and ask 'Is the pile empty?' Draw a big tick on the recipe card next to the words 'until none are left'.",
+        "id": "Tunjuk tumpukan dan tanya 'Apakah tumpukannya kosong?' Gambar centang besar di kartu resep di samping kata 'sampai tidak ada yang tersisa'."
+      }
+    },
+    {
+      "code": "COUNTS_THE_LINE",
+      "description": {
+        "en": "Gives the number already sorted instead of the number left.",
+        "id": "Menyebut jumlah yang sudah diurutkan, bukan jumlah yang tersisa."
+      },
+      "remediation": {
+        "en": "Use real cars: put 7 in the pile, move 3 to the line, then cover the line with a cloth and count only the pile.",
+        "id": "Pakai mobil sungguhan: taruh 7 di tumpukan, pindahkan 3 ke barisan, lalu tutup barisan dengan kain dan hitung hanya tumpukannya."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD_OF_TAKING",
+      "description": {
+        "en": "Adds the two numbers when some have been taken away.",
+        "id": "Menjumlahkan dua angka padahal sebagian sudah diambil."
+      },
+      "remediation": {
+        "en": "Act it out: hold 7 fingers up and fold down 3 as each car joins the line; count the fingers still up.",
+        "id": "Peragakan: angkat 7 jari dan lipat 3 saat setiap mobil masuk barisan; hitung jari yang masih terangkat."
+      }
+    },
+    {
+      "code": "BLAMES_THE_FIRST_STEP",
+      "description": {
+        "en": "Blames the first step of a program even when it was correct.",
+        "id": "Menyalahkan langkah pertama program walaupun langkah itu benar."
+      },
+      "remediation": {
+        "en": "Check the line one step at a time, saying 'right' or 'oops' after each round, and stop at the first 'oops'.",
+        "id": "Periksa barisan satu langkah demi satu langkah, ucapkan 'benar' atau 'ups' setelah setiap putaran, dan berhenti di 'ups' yang pertama."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Sort six family shoes by length using the recipe, lining up the heels against a wall.",
+      "id": "Urutkan enam sepatu keluarga berdasarkan panjang dengan resep, sejajarkan tumitnya ke tembok."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child with low vision, use strips with very different lengths and let the child feel the ends against the table edge; a child who does not yet speak can point to each recipe picture.",
+      "id": "Untuk anak dengan penglihatan terbatas, pakai potongan yang panjangnya sangat berbeda dan biarkan anak meraba ujungnya di tepi meja; anak yang belum bicara bisa menunjuk setiap gambar resep."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": true,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult does all cutting with scissors before the session and puts the scissors away.",
+        "id": "Orang dewasa melakukan semua pemotongan dengan gunting sebelum kegiatan dan menyimpan guntingnya."
+      },
+      {
+        "en": "Use objects without sharp points; hand over pencils point down and put them away afterwards.",
+        "id": "Gunakan benda yang tidak runcing; berikan pensil dengan ujung menghadap ke bawah dan simpan setelahnya."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child sorts a new set of five or six objects with the recipe, lining up ends, and says what comes next at each step, on two different days.",
+      "id": "Dikuasai jika anak mengurutkan lima atau enam benda baru dengan resep, menyejajarkan ujungnya, dan menyebut langkah berikutnya di setiap tahap, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

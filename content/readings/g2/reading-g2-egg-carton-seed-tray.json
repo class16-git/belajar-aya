@@ -247,7 +247,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -255,7 +255,10 @@
       "readability",
       "question-answerability",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-11"
   },
   "provenance": {
     "origin": "ai_drafted",

@@ -377,14 +377,17 @@
   "reviewFlags": [
     "cultural_sensitivity_check"
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
       "bilingual-parity",
       "safety",
       "age-fit"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-11"
   },
   "provenance": {
     "origin": "ai_drafted",

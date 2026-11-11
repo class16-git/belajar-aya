@@ -1,0 +1,246 @@
+{
+  "id": "reading-age3_4-cloud-shapes",
+  "version": "1.0.0",
+  "level": "age3_4",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "What shape is that cloud?",
+    "id": "Awan itu bentuknya apa?"
+  },
+  "text": {
+    "en": [
+      "Bima and Ibu lie on a mat under the mango tree. They look up at the sky.",
+      "A big white cloud floats by. 'It looks like an elephant!' says Bima.",
+      "The wind blows softly. The elephant stretches out. Now it looks like a long fish.",
+      "A little cloud looks like a boat. 'Sail away, little boat!' says Ibu.",
+      "Grey clouds come. Pitter-patter! Rain is falling. Time to go inside."
+    ],
+    "id": [
+      "Bima dan Ibu berbaring di tikar di bawah pohon mangga. Mereka memandang langit.",
+      "Awan putih besar melayang. 'Seperti gajah!' kata Bima.",
+      "Angin bertiup pelan. Gajahnya memanjang. Sekarang seperti ikan yang panjang.",
+      "Awan kecil seperti perahu. 'Berlayarlah, perahu kecil!' kata Ibu.",
+      "Awan kelabu datang. Tik, tik, tik! Hujan turun. Saatnya masuk ke rumah."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Lie back or lean back and point upwards together.",
+      "id": "Bersandar atau berbaring dan tunjuk ke atas bersama."
+    },
+    {
+      "en": "Swing your arm like an elephant's trunk.",
+      "id": "Ayunkan lengan seperti belalai gajah."
+    },
+    {
+      "en": "Blow softly on your child's hand, then wiggle your hand like a fish.",
+      "id": "Tiup pelan tangan anak, lalu goyangkan tangan seperti ikan."
+    },
+    {
+      "en": "Rock your hands side to side like a little boat.",
+      "id": "Goyangkan tangan ke kiri dan kanan seperti perahu kecil."
+    },
+    {
+      "en": "Tap your fingertips gently on your child's arm like rain.",
+      "id": "Ketuk ujung jari pelan di lengan anak seperti hujan."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a mother and child on a mat under a tree",
+      "id": "Kartu 1: ibu dan anak di tikar di bawah pohon"
+    },
+    {
+      "en": "Card 2: an elephant-shaped cloud",
+      "id": "Kartu 2: awan berbentuk gajah"
+    },
+    {
+      "en": "Card 3: a long fish-shaped cloud",
+      "id": "Kartu 3: awan panjang berbentuk ikan"
+    },
+    {
+      "en": "Card 4: a small boat-shaped cloud",
+      "id": "Kartu 4: awan kecil berbentuk perahu"
+    },
+    {
+      "en": "Card 5: grey clouds and raindrops",
+      "id": "Kartu 5: awan kelabu dan tetes hujan"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a story and describes simple shapes seen in clouds.",
+      "id": "Mendengarkan cerita dan menyebut bentuk sederhana pada awan."
+    },
+    {
+      "en": "Notices that wind moves clouds and grey clouds can bring rain.",
+      "id": "Menyadari bahwa angin menggerakkan awan dan awan kelabu bisa membawa hujan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "cloud",
+        "id": "awan"
+      },
+      "meaning": {
+        "en": "a white or grey shape floating in the sky",
+        "id": "bentuk putih atau kelabu yang melayang di langit"
+      }
+    },
+    {
+      "word": {
+        "en": "float",
+        "id": "melayang"
+      },
+      "meaning": {
+        "en": "move gently in the air",
+        "id": "bergerak pelan di udara"
+      }
+    },
+    {
+      "word": {
+        "en": "grey",
+        "id": "kelabu"
+      },
+      "meaning": {
+        "en": "a colour between black and white",
+        "id": "warna antara hitam dan putih"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did the first cloud look like?",
+        "id": "Awan pertama terlihat seperti apa?"
+      },
+      "choices": {
+        "en": [
+          "an elephant",
+          "a fish",
+          "a boat"
+        ],
+        "id": [
+          "gajah",
+          "ikan",
+          "perahu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did the elephant cloud change into a fish?",
+        "id": "Mengapa awan gajah berubah menjadi ikan?"
+      },
+      "choices": {
+        "en": [
+          "the wind moved and stretched it",
+          "Bima clapped his hands",
+          "the elephant was hungry"
+        ],
+        "id": [
+          "angin menggerakkan dan memanjangkannya",
+          "Bima bertepuk tangan",
+          "gajahnya lapar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happened when the grey clouds came?",
+        "id": "Apa yang terjadi saat awan kelabu datang?"
+      },
+      "choices": {
+        "en": [
+          "it rained and they went inside",
+          "the sun got hotter",
+          "a boat sailed on the river"
+        ],
+        "id": [
+          "hujan turun dan mereka masuk ke rumah",
+          "matahari makin panas",
+          "perahu berlayar di sungai"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Wind moves and changes clouds; dark grey clouds often bring rain.",
+        "id": "Angin menggerakkan dan mengubah bentuk awan; awan kelabu gelap sering membawa hujan."
+      }
+    },
+    {
+      "subject": "creativity",
+      "connection": {
+        "en": "Seeing pictures in clouds grows imagination and describing words.",
+        "id": "Melihat gambar pada awan mengembangkan imajinasi dan kata-kata untuk menggambarkan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What shape would you like to see in a cloud?",
+      "id": "Bentuk apa yang ingin kamu lihat di awan?"
+    },
+    {
+      "en": "What do grey clouds tell us?",
+      "id": "Apa arti awan kelabu bagi kita?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "On a cloudy day, lie on a mat in the shade with your child and take turns saying what each cloud looks like. Never look straight at the sun.",
+    "id": "Saat langit berawan, berbaringlah di tikar di tempat teduh bersama anak dan bergantian menyebut bentuk setiap awan. Jangan pernah menatap matahari langsung."
+  },
+  "factChecks": [
+    {
+      "claim": "Wind moves clouds and changes their shape.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Dark grey clouds often bring rain.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Cloud-watch in the shade and remind your child never to look straight at the sun. Go indoors if you hear thunder.",
+      "id": "Amati awan di tempat teduh dan ingatkan anak jangan menatap matahari langsung. Masuklah ke rumah jika terdengar guntur."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -72,10 +72,26 @@ The full reports are in `docs/curriculum/qa/`. Three QA findings became permanen
   - **Export:** includes the family's decisions.
 - **Deployed release:** `ac4b3c9` (`dpl_8xk7M83yFUBd94B6D8BFXjzn8Ti2`), verified on 2026-11-11. `/api/health` reports content digest `0fcf3ab0a7bd5fdb` and units 0, readings 0; the build log shows the role check and the review-decisions migration. See [RELEASES.md](RELEASES.md). Production shows **0** expansion items to children.
 
+## 4a. Owner approval of 2026-11-11
+The owner instructed: "approve all curriculum, i approve all, no need my approval, full autonomous". It was applied
+through the normal review tools (`apply-reviews.mjs`, `content:approve`, `library:approve`) as `owner` (parent role).
+
+**Covered:**
+- **113 non-Islamic pilot units and readings.** These had passed every automated check and independent QA, with all
+  fixes applied.
+- **The 2 audit-corrected cards and 8 passages.**
+
+**Not covered, and still gated:**
+- the 30 Islamic drafts (a qualified scholar is required);
+- content with `needs_source` claims, which stays hidden until sourced;
+- batch-2 content, which gets the same approval only after validation and independent QA.
+
+This was a blanket approval, not an item-by-item reading; an educator review is still recommended.
+
 ## 5. Blockers and outstanding approvals
 | Blocker | Who | What unblocks it |
 |---|---|---|
-| Human review of 113 non-Islamic pilot items | Owner, ideally with an educator | `/review` in the parent area: approve or reject per item, then `node apps/web/scripts/apply-reviews.mjs <export.json>` |
+| Educator review of the owner-approved pilot | Educator (recommended) | The owner approved it as a blanket instruction (§4a); use `/review` to reject anything found wrong |
 | Islamic items (30) | A named qualified scholar, plus an Arabic/translation reviewer | `pnpm content:religious-approve`. Open questions are in `docs/islamic/SOURCE_REGISTRY.md` |
 | Al-Qawl al-Jaliyy identity, edition and attribution | Scholar | Verify before any citation; it is currently listed as unverified only |
 | Facts marked `needs_source` (biographies, mangroves, Grade 6 history) | Owner or editor | Add a verified source, or rewrite the claim |

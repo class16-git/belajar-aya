@@ -1,0 +1,263 @@
+{
+  "id": "reading-age4_5-tono-crosses-the-road",
+  "version": "1.0.0",
+  "level": "age4_5",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Tono crosses the road",
+    "id": "Tono menyeberang jalan"
+  },
+  "text": {
+    "en": [
+      "Tono and Mama are walking to the warung to buy eggs.",
+      "They come to a busy road. Motorbikes go brrm, brrm! Tono holds Mama's hand tight.",
+      "They stop at the zebra crossing. Look one way. Look the other way. Listen!",
+      "A motorbike is coming. Wait, wait... Whoosh! It goes past.",
+      "Now the road is clear. They look again, then walk straight across. No running!",
+      "At the warung Tono says, 'We stopped, we looked, we listened, and we walked!'"
+    ],
+    "id": [
+      "Tono dan Mama berjalan ke warung untuk membeli telur.",
+      "Mereka sampai di jalan yang ramai. Motor berbunyi brem, brem! Tono menggenggam tangan Mama erat-erat.",
+      "Mereka berhenti di zebra cross. Lihat ke satu arah. Lihat ke arah lain. Dengarkan!",
+      "Ada motor datang. Tunggu, tunggu... Wus! Motornya lewat.",
+      "Sekarang jalannya kosong. Mereka melihat sekali lagi, lalu berjalan lurus menyeberang. Tidak berlari!",
+      "Di warung Tono berkata, 'Kita berhenti, melihat, mendengar, lalu berjalan!'"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Walk your fingers along the page like two people walking.",
+      "id": "Jalankan jari di halaman seperti dua orang berjalan."
+    },
+    {
+      "en": "Make a motorbike sound and squeeze your child's hand gently.",
+      "id": "Tirukan suara motor dan genggam tangan anak dengan lembut."
+    },
+    {
+      "en": "Turn your head slowly one way, then the other, and cup a hand to your ear.",
+      "id": "Tolehkan kepala pelan ke satu arah, lalu ke arah lain, dan dekatkan tangan ke telinga."
+    },
+    {
+      "en": "Hold up a hand for 'wait', then sweep it past for 'whoosh'.",
+      "id": "Angkat tangan untuk 'tunggu', lalu ayunkan untuk 'wus'."
+    },
+    {
+      "en": "Look both ways once more before you 'walk' your fingers across.",
+      "id": "Lihat ke dua arah sekali lagi sebelum jari 'berjalan' menyeberang."
+    },
+    {
+      "en": "Say the four words together, counting them on your fingers.",
+      "id": "Ucapkan empat kata itu bersama sambil menghitung dengan jari."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a boy and his mother walking on a pavement",
+      "id": "Kartu 1: anak laki-laki dan ibunya berjalan di trotoar"
+    },
+    {
+      "en": "Card 2: the two of them stopped at a zebra crossing, looking",
+      "id": "Kartu 2: keduanya berhenti di zebra cross sambil melihat"
+    },
+    {
+      "en": "Card 3: a motorbike passing while they wait",
+      "id": "Kartu 3: motor lewat saat mereka menunggu"
+    },
+    {
+      "en": "Card 4: the two of them walking across the empty road",
+      "id": "Kartu 4: keduanya berjalan menyeberangi jalan yang kosong"
+    },
+    {
+      "en": "Card 5: the boy at a small shop holding eggs",
+      "id": "Kartu 5: anak itu di warung memegang telur"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Sequences the steps for crossing a road with an adult.",
+      "id": "Mengurutkan langkah menyeberang jalan bersama orang dewasa."
+    },
+    {
+      "en": "Explains why we wait until the road is clear.",
+      "id": "Menjelaskan mengapa kita menunggu sampai jalan kosong."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "zebra crossing",
+        "id": "zebra cross"
+      },
+      "meaning": {
+        "en": "white stripes on the road where people cross",
+        "id": "garis putih di jalan tempat orang menyeberang"
+      }
+    },
+    {
+      "word": {
+        "en": "clear",
+        "id": "kosong"
+      },
+      "meaning": {
+        "en": "with nothing coming",
+        "id": "tidak ada kendaraan yang datang"
+      }
+    },
+    {
+      "word": {
+        "en": "busy",
+        "id": "ramai"
+      },
+      "meaning": {
+        "en": "full of people or traffic",
+        "id": "penuh orang atau kendaraan"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Tono and Mama do first at the road?",
+        "id": "Apa yang pertama dilakukan Tono dan Mama di jalan?"
+      },
+      "choices": {
+        "en": [
+          "stopped at the zebra crossing",
+          "ran across",
+          "bought eggs"
+        ],
+        "id": [
+          "berhenti di zebra cross",
+          "berlari menyeberang",
+          "membeli telur"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why did they wait?",
+        "id": "Mengapa mereka menunggu?"
+      },
+      "choices": {
+        "en": [
+          "a motorbike was coming",
+          "the warung was closed",
+          "Tono was tired"
+        ],
+        "id": [
+          "ada motor yang datang",
+          "warungnya tutup",
+          "Tono lelah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "In the story, what does 'the road is clear' mean?",
+        "id": "Dalam cerita, apa arti 'jalannya kosong'?"
+      },
+      "choices": {
+        "en": [
+          "nothing is coming",
+          "the road is very clean",
+          "the road is full of cars"
+        ],
+        "id": [
+          "tidak ada kendaraan yang datang",
+          "jalannya sangat bersih",
+          "jalannya penuh mobil"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Tono hold Mama's hand tight?",
+        "id": "Mengapa Tono menggenggam tangan Mama erat-erat?"
+      },
+      "choices": {
+        "en": [
+          "to stay safe near the busy road",
+          "because his hands were cold",
+          "because he wanted to run"
+        ],
+        "id": [
+          "supaya aman di dekat jalan ramai",
+          "karena tangannya dingin",
+          "karena ia ingin berlari"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Young children cross roads only with an adult: stop, look both ways, listen, then walk.",
+        "id": "Anak kecil menyeberang hanya bersama orang dewasa: berhenti, lihat ke dua arah, dengarkan, lalu berjalan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What sounds tell us a car or motorbike is coming?",
+      "id": "Suara apa yang memberi tahu kita ada mobil atau motor datang?"
+    },
+    {
+      "en": "Who do you hold hands with near the road?",
+      "id": "Dengan siapa kamu bergandengan tangan di dekat jalan?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make a pretend road on the floor with two lines of tape or rope and roll a toy car along it. Practise 'stop, look, listen, walk' while holding hands. Later, practise the same words on a real walk, always holding hands.",
+    "id": "Buat jalan pura-pura di lantai dengan dua garis selotip atau tali, lalu gelindingkan mobil mainan. Latih 'berhenti, lihat, dengar, jalan' sambil bergandengan tangan. Nanti, latih kata-kata yang sama saat berjalan sungguhan, selalu sambil bergandengan tangan."
+  },
+  "factChecks": [
+    {
+      "claim": "Young children should cross roads only with an adult.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Children of this age must never cross a road alone. Practise on a quiet path first, and always hold hands near traffic.",
+      "id": "Anak seusia ini tidak boleh menyeberang jalan sendirian. Berlatihlah dulu di jalan yang sepi, dan selalu bergandengan tangan di dekat kendaraan."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

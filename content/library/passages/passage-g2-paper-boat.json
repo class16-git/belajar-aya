@@ -110,7 +110,7 @@
   ],
   "copyrightStatus": "original",
   "factChecks": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "original-text",
@@ -119,6 +119,9 @@
       "bilingual-parity",
       "physical-safety-check",
       "pilot-batch-2026-11"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-11"
   }
 }

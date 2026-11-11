@@ -449,7 +449,7 @@
   "rights": "original",
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -457,7 +457,10 @@
       "misconception-map",
       "bilingual-parity",
       "safety"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-11"
   },
   "provenance": {
     "origin": "ai_drafted",

@@ -1,0 +1,231 @@
+{
+  "id": "reading-age2_3-cicak-on-the-wall",
+  "version": "1.0.0",
+  "level": "age2_3",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Cicak on the wall",
+    "id": "Cicak di dinding"
+  },
+  "text": {
+    "en": [
+      "Look! A little cicak on the wall. Hello, cicak!",
+      "Cicak goes up, up, up. Tap, tap, tap.",
+      "Cicak goes down, down, down. Tap, tap.",
+      "Cicak sees the bright lamp. Cek, cek, cek!",
+      "Sleepy cicak hides behind the picture frame. Night, night, cicak."
+    ],
+    "id": [
+      "Lihat! Ada cicak kecil di dinding. Halo, cicak!",
+      "Cicak naik, naik, naik. Tap, tap, tap.",
+      "Cicak turun, turun, turun. Tap, tap.",
+      "Cicak melihat lampu yang terang. Cek, cek, cek!",
+      "Cicak mengantuk bersembunyi di balik bingkai foto. Selamat tidur, cicak."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Point to a wall and wave hello.",
+      "id": "Tunjuk dinding dan lambaikan tangan."
+    },
+    {
+      "en": "Walk two fingers slowly up your child's arm on each 'up'.",
+      "id": "Jalankan dua jari pelan-pelan naik di lengan anak setiap kata 'naik'."
+    },
+    {
+      "en": "Walk your fingers back down to the hand.",
+      "id": "Jalankan jari turun lagi ke tangan."
+    },
+    {
+      "en": "Say 'cek, cek, cek' in a small voice and invite your child to copy.",
+      "id": "Ucapkan 'cek, cek, cek' dengan suara kecil dan ajak anak menirukan."
+    },
+    {
+      "en": "Cover your eyes with your hands to 'hide', then whisper goodnight.",
+      "id": "Tutup mata dengan tangan seperti bersembunyi, lalu bisikkan selamat tidur."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a small cicak on a pale wall",
+      "id": "Kartu 1: cicak kecil di dinding berwarna terang"
+    },
+    {
+      "en": "Card 2: the cicak near the ceiling with an arrow pointing up",
+      "id": "Kartu 2: cicak dekat langit-langit dengan panah ke atas"
+    },
+    {
+      "en": "Card 3: the cicak low on the wall with an arrow pointing down",
+      "id": "Kartu 3: cicak di bagian bawah dinding dengan panah ke bawah"
+    },
+    {
+      "en": "Card 4: the cicak peeping out from behind a picture frame",
+      "id": "Kartu 4: cicak mengintip dari balik bingkai foto"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a short story and joins in with up and down movements.",
+      "id": "Mendengarkan cerita pendek dan ikut bergerak naik dan turun."
+    },
+    {
+      "en": "Understands the position words up and down.",
+      "id": "Memahami kata posisi naik dan turun."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "up",
+        "id": "naik"
+      },
+      "meaning": {
+        "en": "towards the top",
+        "id": "bergerak ke atas"
+      }
+    },
+    {
+      "word": {
+        "en": "down",
+        "id": "turun"
+      },
+      "meaning": {
+        "en": "towards the bottom",
+        "id": "bergerak ke bawah"
+      }
+    },
+    {
+      "word": {
+        "en": "hide",
+        "id": "bersembunyi"
+      },
+      "meaning": {
+        "en": "go where others cannot see you",
+        "id": "pergi ke tempat yang tidak terlihat"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where was the little cicak?",
+        "id": "Di mana cicak kecil itu?"
+      },
+      "choices": {
+        "en": [
+          "on the wall",
+          "in the bath",
+          "under the bed"
+        ],
+        "id": [
+          "di dinding",
+          "di bak mandi",
+          "di bawah kasur"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "Where did the cicak go at the end?",
+        "id": "Ke mana cicak pergi di akhir cerita?"
+      },
+      "choices": {
+        "en": [
+          "behind the picture frame",
+          "up to the moon",
+          "into a cup"
+        ],
+        "id": [
+          "ke balik bingkai foto",
+          "ke bulan",
+          "ke dalam gelas"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did we say 'night, night' at the end?",
+        "id": "Mengapa kita bilang 'selamat tidur' di akhir?"
+      },
+      "choices": {
+        "en": [
+          "because the cicak was going to rest",
+          "because the cicak was cross",
+          "because the lamp was noisy"
+        ],
+        "id": [
+          "karena cicak mau beristirahat",
+          "karena cicak sedang marah",
+          "karena lampunya berisik"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "A cicak (house gecko) can walk up a wall because of special pads on its toes.",
+        "id": "Cicak bisa berjalan di dinding karena jari kakinya punya bantalan khusus."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Can you make your fingers climb up like a cicak?",
+      "id": "Bisakah jarimu memanjat naik seperti cicak?"
+    },
+    {
+      "en": "Where do you think the cicak sleeps in our house?",
+      "id": "Menurutmu, di mana cicak tidur di rumah kita?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "At dusk, look together for a cicak near a lamp. Say 'up' or 'down' each time it moves. Just watch it; do not try to catch it.",
+    "id": "Saat senja, cari cicak di dekat lampu bersama-sama. Ucapkan 'naik' atau 'turun' setiap kali ia bergerak. Cukup dilihat; jangan mencoba menangkapnya."
+  },
+  "factChecks": [
+    {
+      "claim": "House geckos can climb walls because of special pads on their toes.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Watch geckos without catching them, and wash hands if your child touches places where they have left droppings.",
+      "id": "Amati cicak tanpa menangkapnya, dan cuci tangan anak jika ia menyentuh tempat yang terkena kotoran cicak."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

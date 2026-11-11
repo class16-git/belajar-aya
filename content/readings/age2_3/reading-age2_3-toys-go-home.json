@@ -1,0 +1,229 @@
+{
+  "id": "reading-age2_3-toys-go-home",
+  "version": "1.0.0",
+  "level": "age2_3",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "The toys go home",
+    "id": "Mainan pulang ke rumahnya"
+  },
+  "text": {
+    "en": [
+      "Play time is done. Where do the toys go?",
+      "The car goes in the box. Vroom, vroom, in!",
+      "The doll goes on the shelf. Up you go, doll!",
+      "The books go in the basket. Flap, flap, in!",
+      "All the toys are home. Clap, clap! What a tidy room."
+    ],
+    "id": [
+      "Waktu bermain sudah selesai. Ke mana mainan pergi?",
+      "Mobil masuk ke kotak. Brum, brum, masuk!",
+      "Boneka naik ke rak. Ayo naik, boneka!",
+      "Buku masuk ke keranjang. Plak, plak, masuk!",
+      "Semua mainan sudah pulang. Prok, prok! Kamarnya rapi sekali."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Spread your hands and look around with a puzzled face.",
+      "id": "Buka kedua tangan dan lihat sekeliling dengan wajah bingung."
+    },
+    {
+      "en": "Push a pretend car along your child's leg and say 'vroom'.",
+      "id": "Dorong mobil pura-pura di kaki anak sambil berkata 'brum'."
+    },
+    {
+      "en": "Lift your hands high on 'up you go'.",
+      "id": "Angkat tangan tinggi saat 'ayo naik'."
+    },
+    {
+      "en": "Clap your palms softly like closing a book.",
+      "id": "Tepukkan telapak tangan pelan seperti menutup buku."
+    },
+    {
+      "en": "Clap together and look around the room proudly.",
+      "id": "Bertepuk tangan bersama dan lihat kamar dengan bangga."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: toys scattered on a mat",
+      "id": "Kartu 1: mainan berserakan di tikar"
+    },
+    {
+      "en": "Card 2: a toy car going into a box",
+      "id": "Kartu 2: mobil mainan masuk ke kotak"
+    },
+    {
+      "en": "Card 3: a doll sitting on a shelf",
+      "id": "Kartu 3: boneka duduk di rak"
+    },
+    {
+      "en": "Card 4: books in a basket and a tidy room",
+      "id": "Kartu 4: buku di keranjang dan kamar yang rapi"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Follows a simple tidy-up routine in a story.",
+      "id": "Mengikuti rutinitas merapikan sederhana dalam cerita."
+    },
+    {
+      "en": "Matches each toy to its place.",
+      "id": "Mencocokkan setiap mainan dengan tempatnya."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "tidy",
+        "id": "rapi"
+      },
+      "meaning": {
+        "en": "everything is in its place",
+        "id": "semua ada di tempatnya"
+      }
+    },
+    {
+      "word": {
+        "en": "shelf",
+        "id": "rak"
+      },
+      "meaning": {
+        "en": "a flat board on the wall or in a cupboard for keeping things",
+        "id": "papan datar untuk menaruh barang"
+      }
+    },
+    {
+      "word": {
+        "en": "basket",
+        "id": "keranjang"
+      },
+      "meaning": {
+        "en": "a woven box for carrying or keeping things",
+        "id": "wadah anyaman untuk membawa atau menyimpan barang"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where did the car go?",
+        "id": "Ke mana mobil pergi?"
+      },
+      "choices": {
+        "en": [
+          "in the box",
+          "on the shelf",
+          "under the table"
+        ],
+        "id": [
+          "ke dalam kotak",
+          "ke atas rak",
+          "ke bawah meja"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did we do when all the toys were home?",
+        "id": "Apa yang kita lakukan saat semua mainan sudah pulang?"
+      },
+      "choices": {
+        "en": [
+          "we clapped",
+          "we went to sleep",
+          "we ate rice"
+        ],
+        "id": [
+          "kita bertepuk tangan",
+          "kita tidur",
+          "kita makan nasi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why does each toy have its own home?",
+        "id": "Mengapa setiap mainan punya rumahnya sendiri?"
+      },
+      "choices": {
+        "en": [
+          "so we can find it easily next time",
+          "so the toys can eat dinner",
+          "so the room gets messy"
+        ],
+        "id": [
+          "supaya mudah ditemukan lagi nanti",
+          "supaya mainan bisa makan malam",
+          "supaya kamar jadi berantakan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "practical_life",
+      "connection": {
+        "en": "Putting things back in the same place each day builds independence and order.",
+        "id": "Mengembalikan barang ke tempat yang sama setiap hari melatih kemandirian dan keteraturan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Where does your favourite toy live?",
+      "id": "Di mana rumah mainan kesayanganmu?"
+    },
+    {
+      "en": "Which toy should we put away first?",
+      "id": "Mainan mana yang kita rapikan duluan?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Choose three large toys and give each a 'home': a box, a shelf and a basket. Say the story words as your child carries each toy home, then clap together.",
+    "id": "Pilih tiga mainan besar dan beri masing-masing 'rumah': kotak, rak, dan keranjang. Ucapkan kata-kata dalam cerita saat anak membawa setiap mainan pulang, lalu bertepuk tangan bersama."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Use only large toys with no small parts that could be swallowed.",
+      "id": "Pakai hanya mainan besar tanpa bagian kecil yang bisa tertelan."
+    },
+    {
+      "en": "Keep the shelf low and steady so nothing can fall on your child.",
+      "id": "Pastikan rak rendah dan kokoh supaya tidak ada yang jatuh menimpa anak."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

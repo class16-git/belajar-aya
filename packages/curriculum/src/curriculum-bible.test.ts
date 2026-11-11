@@ -199,7 +199,7 @@ describe('slice C (age 4–5 and Kindergarten caregiver-led cards)', () => {
       else expect(['math.k.bonds-20', 'math.k.tens-ones-intro', 'math.k.picture-word-problems']).toContain(l.objectiveIds[0]);
       // Offline cards were owner-approved; on-screen K lessons await the owner's own review (no blanket approval).
       // Cards corrected after the audit (ATL-10) await a person's re-review; the rest are owner-approved.
-      expect(l.reviewStatus, l.id).toBe(['lesson-robo-k-linkage-001', 'lesson-prek-world-cycles-001'].includes(l.id) ? 'agent_reviewed' : 'reviewed');
+      expect(l.reviewStatus, l.id).toBe('reviewed'); // the two audit-corrected cards were owner-approved on 2026-11-11
     }
   });
 });
