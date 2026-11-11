@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-montessori-five-classes-of-vertebrates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "framework": "montessori",
   "strand": "zoology",
@@ -53,6 +53,10 @@
     {
       "en": "When your child is unsure, ask 'What covers its body? How does it breathe? How are its babies born?' rather than giving the answer.",
       "id": "Saat anak ragu, tanyakan 'Apa penutup tubuhnya? Bagaimana ia bernapas? Bagaimana anaknya lahir?' alih-alih memberi jawaban."
+    },
+    {
+      "en": "Scientists today split 'fish' into several groups; 'five classes' is the traditional school grouping.",
+      "id": "Ilmuwan kini membagi 'ikan' menjadi beberapa kelompok; 'lima kelas' adalah pengelompokan tradisional di sekolah."
     }
   ],
   "childInstructions": [
@@ -87,7 +91,7 @@
   "preparation": [
     {
       "en": "Write the header features: Fish — gills, fins, most have scales. Amphibians — moist skin, most young live in water and breathe with gills, adults usually breathe air. Reptiles — dry scaly skin, breathe air, most lay eggs with leathery shells. Birds — feathers, beak, lay hard-shelled eggs. Mammals — hair or fur, feed young on milk.",
-      "id": "Tulis ciri pada kartu judul: Ikan — insang, sirip, kebanyakan bersisik. Amfibi — kulit lembap, kebanyakan anaknya hidup di air dan bernapas dengan insang, dewasanya biasanya bernapas di udara. Reptil — kulit kering bersisik, bernapas di udara, kebanyakan bertelur bercangkang lunak. Burung — bulu, paruh, bertelur bercangkang keras. Mamalia — rambut atau bulu halus, menyusui anaknya."
+      "id": "Tulis ciri pada kartu judul: Ikan — insang, sirip, kebanyakan bersisik. Amfibi — kulit lembap, kebanyakan anaknya hidup di air dan bernapas dengan insang, dewasanya biasanya bernapas di udara. Reptil — kulit kering bersisik, bernapas di udara, kebanyakan bertelur bercangkang liat seperti kulit. Burung — bulu, paruh, bertelur bercangkang keras. Mamalia — rambut atau bulu halus, menyusui anaknya."
     },
     {
       "en": "The adult cuts out pictures with scissors beforehand.",
@@ -260,7 +264,7 @@
       },
       "distractorMisconceptions": {
         "1": "AMPHIBIAN_REPTILE_MIX",
-        "2": "FLYING_DEFINES_BIRD"
+        "2": "CLASSIFIES_BY_HABITAT"
       }
     }
   ],
@@ -272,8 +276,8 @@
         "id": "Mengelompokkan hewan berdasarkan tempat hidup (laut, udara, darat)."
       },
       "remediation": {
-        "en": "Put all the sea animals in one pile, then ask the three questions about each; watch the pile split into fish, mammal and reptile.",
-        "id": "Kumpulkan semua hewan laut dalam satu tumpukan, lalu ajukan tiga pertanyaan untuk masing-masing; lihat tumpukan terbagi menjadi ikan, mamalia, dan reptil."
+        "en": "Put all the sea animals in one pile, then ask the three questions about each; watch the pile split into fish, mammal, reptile and bird.",
+        "id": "Kumpulkan semua hewan laut dalam satu tumpukan, lalu ajukan tiga pertanyaan untuk masing-masing; lihat tumpukan terbagi menjadi ikan, mamalia, reptil, dan burung."
       }
     },
     {

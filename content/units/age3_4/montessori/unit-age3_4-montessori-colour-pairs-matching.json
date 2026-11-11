@@ -1,6 +1,6 @@
 {
   "id": "unit-age3_4-montessori-colour-pairs-matching",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "framework": "montessori",
   "strand": "sensorial",
@@ -172,12 +172,12 @@
         "en": [
           "Holds the cards side by side and looks",
           "Puts down the first card she touches",
-          "Matches by the card's shape"
+          "Matches the card that is nearest"
         ],
         "id": [
           "Mendekatkan kartu berdampingan lalu melihat",
           "Meletakkan kartu pertama yang disentuh",
-          "Mencocokkan berdasarkan bentuk kartu"
+          "Mencocokkan kartu yang paling dekat"
         ]
       },
       "answer": 0,
@@ -187,7 +187,7 @@
       },
       "distractorMisconceptions": {
         "1": "RUSHES_MATCH",
-        "2": "ATTENDS_TO_SHAPE"
+        "2": "GUESSES_BY_POSITION"
       }
     }
   ],
@@ -224,17 +224,6 @@
         "en": "Slow down your own demonstration and make the comparing gesture big: card to card, look, look.",
         "id": "Perlambat demonstrasi Anda dan buat gerakan membandingkan lebih jelas: kartu ke kartu, lihat, lihat."
       }
-    },
-    {
-      "code": "ATTENDS_TO_SHAPE",
-      "description": {
-        "en": "Looks at the card itself rather than its colour.",
-        "id": "Memperhatikan bentuk kartu, bukan warnanya."
-      },
-      "remediation": {
-        "en": "Match colourful everyday objects of different shapes (a yellow cup with a yellow sock) so colour is the only common thing.",
-        "id": "Cocokkan benda sehari-hari berwarna dengan bentuk berbeda (gelas kuning dengan kaus kaki kuning) sehingga hanya warna yang sama."
-      }
     }
   ],
   "extension": [
@@ -249,8 +238,8 @@
   ],
   "accessibility": [
     {
-      "en": "For a child with colour-vision differences, add a small matching texture or symbol on the back of each pair and tell a reviewer if colour matching is hard.",
-      "id": "Untuk anak dengan perbedaan penglihatan warna, tambahkan tekstur atau simbol yang sama di belakang setiap pasangan, dan sampaikan jika mencocokkan warna terasa sulit."
+      "en": "For a child with colour-vision differences, add a small matching texture or symbol on the back of each pair and mention it to your child's doctor or teacher if colour matching stays hard.",
+      "id": "Untuk anak dengan perbedaan penglihatan warna, tambahkan tekstur atau simbol yang sama di belakang setiap pasangan, dan sampaikan kepada dokter atau guru anak jika mencocokkan warna tetap sulit."
     },
     {
       "en": "Large cards on a plain surface help children with low vision.",

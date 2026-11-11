@@ -1,6 +1,6 @@
 {
   "id": "unit-age3_4-montessori-jacket-flip-and-zip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "framework": "montessori",
   "strand": "independence",
@@ -105,8 +105,8 @@
       "id": "Berlatih membalik jaket di dalam rumah tiga kali berturut-turut sebagai permainan."
     },
     {
-      "en": "Before a walk, the child puts the jacket on alone and the adult joins the zip.",
-      "id": "Sebelum jalan-jalan, anak memakai jaket sendiri dan orang dewasa menyatukan ritsleting."
+      "en": "Before a motorbike ride or going out in the rain, the child puts the jacket on alone and the adult joins the zip.",
+      "id": "Sebelum naik motor atau keluar saat hujan, anak memakai jaket sendiri dan orang dewasa menyatukan ritsleting."
     },
     {
       "en": "Hang the jacket on the low hook after coming home.",
@@ -151,12 +151,12 @@
       "choices": {
         "en": [
           "Lift it up and over the head",
-          "Lie down on the jacket",
+          "Stand up without lifting the jacket",
           "Pull the zip"
         ],
         "id": [
           "Angkat dan balik lewat kepala",
-          "Berbaring di atas jaket",
+          "Berdiri tanpa mengangkat jaket",
           "Tarik ritsleting"
         ]
       },
@@ -208,12 +208,12 @@
         "en": [
           "On its low hook",
           "On the floor by the door",
-          "Handed to the adult"
+          "On a chair or sofa"
         ],
         "id": [
           "Di gantungan rendahnya",
           "Di lantai dekat pintu",
-          "Diberikan kepada orang dewasa"
+          "Di kursi atau sofa"
         ]
       },
       "answer": 0,

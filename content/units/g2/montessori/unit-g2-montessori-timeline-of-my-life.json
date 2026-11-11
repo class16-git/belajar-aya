@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-montessori-timeline-of-my-life",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "montessori",
   "strand": "history",
@@ -177,8 +177,8 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Raka is 7. He started school when he was 6. How many years ago was that?",
-        "id": "Raka berusia 7 tahun. Ia mulai sekolah saat berusia 6 tahun. Berapa tahun yang lalu itu?"
+        "en": "Raka is 7 today. He started school on his 6th birthday. How many years ago was that?",
+        "id": "Raka berusia 7 tahun hari ini. Ia mulai sekolah tepat di hari ulang tahunnya yang ke-6. Berapa tahun yang lalu itu?"
       },
       "choices": {
         "en": [
@@ -203,7 +203,7 @@
       },
       "distractorMisconceptions": {
         "1": "AGE_AS_YEARS_AGO",
-        "2": "ADDS_INSTEAD_OF_MULTIPLIES"
+        "2": "ADDS_INSTEAD_OF_SUBTRACTS"
       }
     },
     {
@@ -317,6 +317,17 @@
       "remediation": {
         "en": "Draw an arrow along the strip pointing right and write 'towards today' on it.",
         "id": "Gambar panah di sepanjang kertas yang menunjuk ke kanan dan tulis 'menuju hari ini'."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD_OF_SUBTRACTS",
+      "description": {
+        "en": "Adds the ages instead of finding the difference.",
+        "id": "Menjumlahkan usia alih-alih mencari selisihnya."
+      },
+      "remediation": {
+        "en": "Walk from the age-6 line to the age-7 line and count the lines crossed.",
+        "id": "Berjalan dari garis usia 6 ke garis usia 7 dan hitung garis yang dilewati."
       }
     }
   ],

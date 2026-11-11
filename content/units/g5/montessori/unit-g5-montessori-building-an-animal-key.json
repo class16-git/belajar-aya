@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-montessori-building-an-animal-key",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "framework": "montessori",
   "strand": "zoology",
@@ -55,6 +55,10 @@
     {
       "en": "Observe live animals only by looking, in a clear container for a few minutes at most, then return them where they were found.",
       "id": "Amati hewan hidup hanya dengan melihat, di wadah bening paling lama beberapa menit, lalu kembalikan ke tempat ditemukan."
+    },
+    {
+      "en": "Some butterflies tuck their front legs up; look closely with the magnifier.",
+      "id": "Beberapa kupu-kupu melipat kaki depannya; amati dengan teliti memakai kaca pembesar."
     }
   ],
   "childInstructions": [
@@ -88,8 +92,8 @@
   ],
   "preparation": [
     {
-      "en": "Write the sample key on the paper: 1. Has legs? yes → 2, no → 5. 2. Has exactly 6 legs? yes → 3, no → 4. 3. Has large wings? yes → butterfly, no → ant. 4. Has 8 legs? yes → spider, no (many legs) → centipede. 5. Has a shell? yes → snail, no → earthworm.",
-      "id": "Tulis contoh kunci di kertas: 1. Berkaki? ya → 2, tidak → 5. 2. Kakinya tepat 6? ya → 3, tidak → 4. 3. Bersayap lebar? ya → kupu-kupu, tidak → semut. 4. Kakinya 8? ya → laba-laba, tidak (banyak kaki) → lipan. 5. Bercangkang? ya → siput, tidak → cacing tanah."
+      "en": "Write the sample key on the paper: 1. Has legs? yes → 2, no → 5. 2. Has exactly 6 legs? yes → 3, no → 4. 3. Has wings covered in coloured scales? yes → butterfly, no → ant. 4. Has 8 legs? yes → spider, no (many legs) → centipede. 5. Has a shell? yes → snail, no → earthworm.",
+      "id": "Tulis contoh kunci di kertas: 1. Berkaki? ya → 2, tidak → 5. 2. Kakinya tepat 6? ya → 3, tidak → 4. 3. Sayapnya bersisik berwarna? ya → kupu-kupu, tidak → semut. 4. Kakinya 8? ya → laba-laba, tidak (banyak kaki) → lipan. 5. Bercangkang? ya → siput, tidak → cacing tanah."
     },
     {
       "en": "Check that the pictures show legs and wings clearly.",
@@ -333,6 +337,10 @@
       {
         "en": "Wash hands after handling soil, snails or leaves.",
         "id": "Cuci tangan setelah memegang tanah, siput, atau daun."
+      },
+      {
+        "en": "Do not pick up snails or ants with bare hands.",
+        "id": "Jangan memegang bekicot atau semut dengan tangan telanjang."
       }
     ]
   },

@@ -1,6 +1,6 @@
 {
   "id": "unit-age4_5-montessori-number-rods-one-to-ten",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age4_5",
   "framework": "montessori",
   "strand": "mathematics",
@@ -193,7 +193,7 @@
         "result": "7"
       },
       "distractorMisconceptions": {
-        "1": "COUNTS_TWICE",
+        "1": "SKIPS_A_SECTION",
         "2": "JOINS_DIGITS"
       }
     },
@@ -217,8 +217,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Going down the staircase from 5, the next rod has one more section: 6.",
-        "id": "Turun di tangga dari 5, batang berikutnya punya satu bagian lebih: 6."
+        "en": "Going up the staircase from rod 5, towards the longer rods, the next rod has one more section: 6.",
+        "id": "Naik di tangga dari batang 5 ke arah batang yang lebih panjang, batang berikutnya punya satu bagian lebih: 6."
       },
       "check": {
         "expression": "5 + 1",
@@ -355,8 +355,8 @@
         "id": "Orang dewasa yang mengukur, memotong, dan mengampelas, memakai pisau kerajinan atau gergaji jauh dari anak; periksa serpihan sebelum dipakai."
       },
       {
-        "en": "Show your child to carry long rods by both ends, upright and slowly, so no one is poked.",
-        "id": "Tunjukkan anak membawa batang panjang dengan memegang kedua ujungnya, tegak dan pelan, agar tidak mengenai orang lain."
+        "en": "Show your child to carry long rods level, one hand at each end, walking slowly, so no one is poked.",
+        "id": "Tunjukkan anak cara membawa batang panjang mendatar, satu tangan di setiap ujung, berjalan pelan, agar tidak mengenai orang lain."
       }
     ]
   },

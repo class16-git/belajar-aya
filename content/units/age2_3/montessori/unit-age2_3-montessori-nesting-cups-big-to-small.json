@@ -1,6 +1,6 @@
 {
   "id": "unit-age2_3-montessori-nesting-cups-big-to-small",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "framework": "montessori",
   "strand": "sensorial",
@@ -105,8 +105,8 @@
       "id": "Menumpuk gelas terbalik menjadi menara, yang terbesar di bawah."
     },
     {
-      "en": "At bath or kitchen time, nest the family's plastic bowls together.",
-      "id": "Saat mandi atau di dapur, susun mangkuk plastik keluarga bersama-sama."
+      "en": "At kitchen time, nest the family's plastic bowls together.",
+      "id": "Saat di dapur, susun mangkuk plastik keluarga bersama-sama."
     }
   ],
   "assessment": [
@@ -141,8 +141,8 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Line up three cups and ask 'Give me the big one.' Which response shows understanding?",
-        "id": "Jajarkan tiga gelas dan minta 'Berikan yang besar.' Respons mana yang menunjukkan pemahaman?"
+        "en": "Put out only the biggest and the smallest cup and ask 'Give me the big one.' Which response shows understanding?",
+        "id": "Keluarkan hanya gelas terbesar dan terkecil lalu minta 'Berikan yang besar.' Respons mana yang menunjukkan pemahaman?"
       },
       "choices": {
         "en": [
@@ -176,12 +176,12 @@
         "en": [
           "All cups are inside the biggest",
           "Two cups are side by side",
-          "The smallest is at the outside"
+          "The cups are stacked but one is left out"
         ],
         "id": [
           "Semua gelas ada di dalam yang terbesar",
           "Dua gelas berdampingan",
-          "Yang terkecil ada di paling luar"
+          "Gelas tersusun tetapi satu tertinggal"
         ]
       },
       "answer": 0,
@@ -191,7 +191,7 @@
       },
       "distractorMisconceptions": {
         "1": "STOPS_AFTER_ONE_PAIR",
-        "2": "FORCES_FIT"
+        "2": "STOPS_AFTER_ONE_PAIR"
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-montessori-parts-of-a-leaf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "montessori",
   "strand": "botany",
@@ -23,8 +23,8 @@
       "id": "Memberi label tujuh bagian daun pada gambar."
     },
     {
-      "en": "Explains that the stalk joins the leaf to the stem and veins carry water through the leaf.",
-      "id": "Menjelaskan bahwa tangkai menghubungkan daun ke batang dan tulang daun mengalirkan air di dalam daun."
+      "en": "Explains that the stalk joins the leaf to the stem and veins carry water through the leaf, and carry the food the leaf makes to the rest of the plant.",
+      "id": "Menjelaskan bahwa tangkai menghubungkan daun ke batang dan tulang daun mengalirkan air di dalam daun, dan mengangkut makanan buatan daun ke bagian tanaman lain."
     },
     {
       "en": "Compares the margins of two different leaves (smooth or toothed).",
@@ -179,8 +179,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "The coloured water rising into the veins showed that they carry water.",
-        "id": "Air berwarna yang naik ke tulang daun menunjukkan bahwa tulang daun mengalirkan air."
+        "en": "The coloured water rising into the veins showed that they carry water, and carry the food the leaf makes to the rest of the plant.",
+        "id": "Air berwarna yang naik ke tulang daun menunjukkan bahwa tulang daun mengalirkan air, dan mengangkut makanan buatan daun ke bagian tanaman lain."
       },
       "distractorMisconceptions": {
         "1": "PART_NAME_MIXUP",
@@ -270,8 +270,8 @@
     {
       "code": "VEINS_AS_STALK",
       "description": {
-        "en": "Thinks only the stalk carries water.",
-        "id": "Mengira hanya tangkai yang mengalirkan air."
+        "en": "Gives the veins the stalk's job of holding the leaf on.",
+        "id": "Memberi tulang daun tugas tangkai, yaitu menempelkan daun."
       },
       "remediation": {
         "en": "Look again at the coloured celery with the magnifier; follow the colour from the stalk into the smallest veins.",
@@ -328,6 +328,10 @@
       {
         "en": "Some children are sensitive to plant sap or pollen; stop if skin becomes red or itchy.",
         "id": "Beberapa anak peka terhadap getah atau serbuk sari; hentikan jika kulit kemerahan atau gatal."
+      },
+      {
+        "en": "Fresh mango sap can irritate skin; prefer fallen leaves. Do not leave the magnifier in direct sun.",
+        "id": "Getah mangga segar bisa membuat kulit iritasi; pilih daun yang sudah jatuh. Jangan tinggalkan kaca pembesar di bawah sinar matahari langsung."
       }
     ]
   },

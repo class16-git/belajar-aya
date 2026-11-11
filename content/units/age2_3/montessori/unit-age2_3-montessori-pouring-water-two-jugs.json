@@ -1,6 +1,6 @@
 {
   "id": "unit-age2_3-montessori-pouring-water-two-jugs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "framework": "montessori",
   "strand": "practical_life",
@@ -92,7 +92,7 @@
   "guidedExamples": [
     {
       "en": "Sit on your child's left. Lift the full jug by the handle, rest two fingers of the other hand under the spout end, bring the spout to the rim of the empty jug and tip slowly. Pause, put the jug down, and look at the water in the other jug.",
-      "id": "Duduk di sebelah kiri anak. Angkat teko berisi pada gagangnya, letakkan dua jari tangan lain di bawah ujung teko, dekatkan corong ke bibir teko kosong, lalu miringkan pelan-pelan. Berhenti, letakkan teko, dan lihat air di teko satunya."
+      "id": "Duduk di sebelah kiri anak. Angkat teko berisi pada gagangnya, letakkan dua jari tangan lain di bawah ujung teko, dekatkan mulut teko ke bibir teko kosong, lalu miringkan pelan-pelan. Berhenti, letakkan teko, dan lihat air di teko satunya."
     },
     {
       "en": "Spot a drip on the tray, pick up the sponge, press it on the drip, squeeze it over the empty jug, and put it back in its place.",
@@ -113,8 +113,8 @@
       "id": "Menyiram tanaman pot dengan teko kecil berisi air sebanyak yang sama."
     },
     {
-      "en": "At snack time, pour water from the small jug into the child's own cup and drink it.",
-      "id": "Saat camilan, menuang air dari teko kecil ke gelas sendiri lalu meminumnya."
+      "en": "At snack time, pour water from the small jug into the child's own cup and drink it. (use a clean jug of fresh drinking water, not the tray water)",
+      "id": "Saat camilan, menuang air dari teko kecil ke gelas sendiri lalu meminumnya. (pakai teko bersih berisi air minum baru, bukan air dari nampan)"
     }
   ],
   "assessment": [
@@ -122,7 +122,7 @@
       "id": "a1",
       "prompt": {
         "en": "Observe: when your child pours, where does the spout go?",
-        "id": "Amati: saat anak menuang, ke mana corong teko diarahkan?"
+        "id": "Amati: saat anak menuang, ke mana mulut teko diarahkan?"
       },
       "choices": {
         "en": [
@@ -139,7 +139,7 @@
       "answer": 0,
       "explanation": {
         "en": "Resting the spout on the rim gives the most control and the fewest spills.",
-        "id": "Menempelkan corong di bibir teko memberi kendali terbaik dan paling sedikit tumpahan."
+        "id": "Menempelkan mulut teko di bibir teko memberi kendali terbaik dan paling sedikit tumpahan."
       },
       "distractorMisconceptions": {
         "1": "POURS_FROM_HEIGHT",
@@ -156,12 +156,12 @@
         "en": [
           "Takes the sponge and wipes it",
           "Keeps pouring and ignores it",
-          "Calls for the adult to clean it"
+          "Wipes with a hand or sleeve"
         ],
         "id": [
           "Mengambil spons dan mengelapnya",
           "Terus menuang dan membiarkannya",
-          "Memanggil orang dewasa untuk membersihkan"
+          "Mengelap dengan tangan atau lengan baju"
         ]
       },
       "answer": 0,
@@ -308,6 +308,10 @@
       {
         "en": "The adult does all cutting of the sponge. Use plastic jugs, never glass, and wipe the floor so no one slips.",
         "id": "Orang dewasa yang memotong spons. Pakai teko plastik, jangan kaca, dan lap lantai agar tidak ada yang terpeleset."
+      },
+      {
+        "en": "Use a firm sponge, not crumbly foam, and take it away if your child bites it.",
+        "id": "Pakai spons yang padat, bukan busa yang mudah hancur, dan ambil jika anak menggigitnya."
       }
     ]
   },

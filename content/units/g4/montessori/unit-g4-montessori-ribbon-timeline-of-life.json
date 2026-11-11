@@ -1,6 +1,6 @@
 {
   "id": "unit-g4-montessori-ribbon-timeline-of-life",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "framework": "montessori",
   "strand": "cosmic_education",
@@ -29,8 +29,8 @@
       "id": "Menempatkan lima peristiwa pada pita dengan urutan dan posisi yang benar."
     },
     {
-      "en": "Explains that for most of Earth's history life was tiny and lived only in water.",
-      "id": "Menjelaskan bahwa sebagian besar sejarah Bumi, kehidupan berukuran sangat kecil dan hanya ada di air."
+      "en": "Explains that there was no life at first, and that for most of Earth's history afterwards life was tiny and lived only in water.",
+      "id": "Menjelaskan bahwa awalnya belum ada kehidupan, dan sesudahnya sebagian besar sejarah Bumi kehidupan berukuran sangat kecil dan hanya ada di air."
     }
   ],
   "successCriteria": [
@@ -59,6 +59,10 @@
     {
       "en": "Families may hold beliefs about creation; this unit describes the scientific timeline, and you can talk about your family's view alongside it.",
       "id": "Keluarga mungkin punya keyakinan tentang penciptaan; unit ini menjelaskan garis waktu ilmiah, dan Anda bisa membicarakan pandangan keluarga di sampingnya."
+    },
+    {
+      "en": "Many families connect this timeline to their own faith teaching. You are welcome to talk with your child about what your family believes alongside the science, or ask your child's religious teacher.",
+      "id": "Banyak keluarga menghubungkan garis waktu ini dengan ajaran agamanya. Silakan bicarakan dengan anak apa yang diyakini keluarga Anda di samping penjelasan ilmiah ini, atau tanyakan kepada guru agama anak."
     }
   ],
   "childInstructions": [
@@ -86,8 +90,8 @@
       "id": "Meteran, selotip kertas, dan spidol"
     },
     {
-      "en": "Six event cards written by the child: Earth forms (about 4,600 million years ago), first simple life in the sea (about 3,500 million), first fish (about 500 million), first dinosaurs (about 230 million), dinosaurs die out (about 66 million), modern humans (about 0.3 million)",
-      "id": "Enam kartu peristiwa ditulis anak: Bumi terbentuk (sekitar 4.600 juta tahun lalu), kehidupan sederhana pertama di laut (sekitar 3.500 juta), ikan pertama (sekitar 500 juta), dinosaurus pertama (sekitar 230 juta), dinosaurus punah (sekitar 66 juta), manusia modern (sekitar 0,3 juta)"
+      "en": "Seven event cards written by the child: Earth forms (about 4,600 million years ago), first simple life in the sea (about 3,500 million), first fish (about 500 million), first land plants (about 470 million years ago, 47 cm), first dinosaurs (about 230 million), most dinosaurs die out (about 66 million; birds are their living relatives), modern humans (about 0.3 million)",
+      "id": "Tujuh kartu peristiwa ditulis anak: Bumi terbentuk (sekitar 4.600 juta tahun lalu), kehidupan sederhana pertama di laut (sekitar 3.500 juta), ikan pertama (sekitar 500 juta), tumbuhan darat pertama (sekitar 470 juta tahun lalu, 47 cm), dinosaurus pertama (sekitar 230 juta), sebagian besar dinosaurus punah (sekitar 66 juta; burung adalah kerabatnya yang masih hidup), manusia modern (sekitar 0,3 juta)"
     },
     {
       "en": "A calculator for checking",
@@ -124,8 +128,8 @@
       "id": "Menghitung dan menempatkan kartu peristiwa lainnya."
     },
     {
-      "en": "Colour the part of the ribbon with only life in water blue and the part with life on land green.",
-      "id": "Mewarnai bagian pita yang hanya ada kehidupan di air dengan biru dan bagian dengan kehidupan di darat dengan hijau."
+      "en": "Colour the first 110 cm grey (no life yet), the part with life only in water blue, and the part from the first land plants (47 cm from today) green.",
+      "id": "Warnai 110 cm pertama abu-abu (belum ada kehidupan), bagian dengan kehidupan hanya di air biru, dan bagian sejak tumbuhan darat pertama (47 cm dari hari ini) hijau."
     },
     {
       "en": "Write a short paragraph: 'If the ribbon were one day long, humans would arrive ...' and estimate using a 24-hour clock face.",
@@ -249,8 +253,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Fish only appear in the last 50 cm; before that, life was microscopic and in the sea.",
-        "id": "Ikan baru muncul di 50 cm terakhir; sebelumnya, kehidupan mikroskopis dan di laut."
+        "en": "For the first 110 cm there was no life; then for most of the ribbon, until about 60 cm from today, life was tiny and lived in water.",
+        "id": "Pada 110 cm pertama belum ada kehidupan; lalu di sebagian besar pita, sampai sekitar 60 cm dari hari ini, kehidupan berukuran sangat kecil dan hidup di air."
       },
       "distractorMisconceptions": {
         "1": "DINOSAUR_TIME_OVERESTIMATE",
@@ -383,7 +387,8 @@
   "arabicPhrases": [],
   "reviewFlags": [
     "science_dates_check",
-    "origins_family_sensitivity"
+    "origins_family_sensitivity",
+    "worldview_alignment"
   ],
   "reviewStatus": "agent_reviewed",
   "review": {
