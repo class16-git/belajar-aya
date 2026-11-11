@@ -1,0 +1,358 @@
+{
+  "id": "unit-age3_4-stem-boat-that-carries",
+  "version": "1.0.0",
+  "level": "age3_4",
+  "framework": "stem",
+  "strand": "engineering_design",
+  "title": {
+    "en": "Make a boat that carries stones",
+    "id": "Membuat perahu yang bisa mengangkut batu"
+  },
+  "prerequisites": [
+    "unit-age2_3-stem-sink-or-float-big-things"
+  ],
+  "objective": {
+    "en": "Use a floating plastic tub as a boat, predict how many big stones it will carry before water comes in, test by counting, and try a wider boat to carry more.",
+    "id": "Memakai wadah plastik yang mengapung sebagai perahu, menebak berapa batu besar yang bisa diangkut sebelum air masuk, menguji sambil berhitung, dan mencoba perahu yang lebih lebar agar mengangkut lebih banyak."
+  },
+  "rationale": {
+    "en": "After learning that stones sink, children love the surprise that a boat can carry them. This is engineering at its simplest: a goal, a guess, a test, and a better design. Counting stones gives the test a clear result to compare.",
+    "id": "Setelah tahu bahwa batu tenggelam, anak senang dengan kejutan bahwa perahu bisa mengangkutnya. Inilah rekayasa paling sederhana: ada tujuan, tebakan, uji coba, dan rancangan yang lebih baik. Menghitung batu memberi hasil uji yang jelas untuk dibandingkan."
+  },
+  "outcomes": [
+    {
+      "en": "Makes a stone 'ride' in a floating tub and explains that the boat keeps it up.",
+      "id": "Membuat batu 'naik' perahu di wadah yang mengapung dan menjelaskan bahwa perahu yang menahannya tetap di atas."
+    },
+    {
+      "en": "Counts the stones a boat carries and tries a second, wider boat.",
+      "id": "Menghitung batu yang diangkut perahu dan mencoba perahu kedua yang lebih lebar."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "My boat can carry a stone.",
+      "id": "Perahuku bisa mengangkut batu."
+    },
+    {
+      "en": "I count the stones, then try a better boat.",
+      "id": "Aku hitung batunya, lalu coba perahu yang lebih baik."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Stay right beside the basin the whole time. The water is only about 5 centimetres deep: enough for the boat to float, never deeper.",
+      "id": "Tetap di samping baskom sepanjang waktu. Air hanya sekitar 5 sentimeter: cukup untuk perahu mengapung, tidak pernah lebih dalam."
+    },
+    {
+      "en": "Start with a reminder: drop one stone in the water. 'Stone sinks.' Then put one stone in the floating tub. 'Now it floats! The boat is carrying it.'",
+      "id": "Mulai dengan pengingat: jatuhkan satu batu ke air. 'Batu tenggelam.' Lalu taruh satu batu di wadah yang mengapung. 'Sekarang mengapung! Perahunya yang mengangkut.'"
+    },
+    {
+      "en": "Before loading, ask 'How many stones can the boat carry?' Hold up fingers together. Add stones one at a time, counting aloud.",
+      "id": "Sebelum mengisi, tanya 'Berapa batu yang bisa diangkut perahu?' Tunjukkan jari bersama. Tambahkan batu satu per satu, sambil berhitung keras."
+    },
+    {
+      "en": "When water starts to come in, stop: 'Our test found the answer!' Then ask 'What could we change?' and try the wider tub.",
+      "id": "Saat air mulai masuk, berhenti: 'Uji coba kita menemukan jawabannya!' Lalu tanya 'Apa yang bisa kita ubah?' dan coba wadah yang lebih lebar."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "A large basin or baby bath filled about 5 centimetres deep",
+      "id": "Baskom besar atau bak mandi bayi berisi air sekitar 5 sentimeter"
+    },
+    {
+      "en": "Two plastic food tubs as boats: one narrow (such as a yoghurt or margarine tub) and one wide (such as an ice-cream tub or lunch box)",
+      "id": "Dua wadah plastik sebagai perahu: satu sempit (seperti wadah yoghurt atau margarin) dan satu lebar (seperti wadah es krim atau kotak bekal)"
+    },
+    {
+      "en": "Five or six smooth stones, each bigger than your child's fist, all about the same size",
+      "id": "Lima atau enam batu halus, masing-masing lebih besar dari kepalan anak, kira-kira sama besar"
+    },
+    {
+      "en": "A towel under the basin and a cloth for drips",
+      "id": "Handuk di bawah baskom dan lap untuk tetesan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Wash the stones and check that each is bigger than your child's fist and has no sharp edges. Fill the basin about 5 centimetres deep on a towel on the floor.",
+      "id": "Cuci batu dan pastikan setiap batu lebih besar dari kepalan anak dan tidak bertepi tajam. Isi baskom sekitar 5 sentimeter di atas handuk di lantai."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "The surprise: 'Stone in the water?' It sinks. 'Stone in the boat?' Put the narrow tub on the water, then a stone in it. It floats. Ask 'Why didn't it sink?' Accept 'the boat holds it'.",
+      "id": "Kejutan: 'Batu di air?' Tenggelam. 'Batu di perahu?' Taruh wadah sempit di air, lalu batu di dalamnya. Mengapung. Tanya 'Kenapa tidak tenggelam?' Terima jawaban 'perahunya menahan'."
+    },
+    {
+      "en": "Narrow boat test: Dimas guesses 'three!' Load: one, two… with the second stone the tub tips and water pours in. 'Two was too many for this boat. It carried 1 stone safely.' Lift the boat out and pour the water away.",
+      "id": "Uji perahu sempit: Dimas menebak 'tiga!' Isi: satu, dua… saat batu kedua, wadahnya miring dan air masuk. 'Dua terlalu banyak untuk perahu ini. Perahu ini mengangkut 1 batu dengan aman.' Angkat perahu dan buang airnya."
+    },
+    {
+      "en": "Wide boat test: 'Will the wide boat carry more or fewer?' Load slowly, putting stones in the middle and spread out. It carries 4 before water comes over the edge. 'The wide boat carried more!'",
+      "id": "Uji perahu lebar: 'Perahu lebar mengangkut lebih banyak atau lebih sedikit?' Isi pelan-pelan, taruh batu di tengah dan menyebar. Perahu mengangkut 4 batu sebelum air masuk dari tepi. 'Perahu lebar mengangkut lebih banyak!'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Load the wide boat again, but put all the stones at one end. Does it tip sooner? Talk about putting the load in the middle.",
+      "id": "Isi perahu lebar lagi, tetapi taruh semua batu di satu ujung. Apakah lebih cepat miring? Bicarakan tentang menaruh muatan di tengah."
+    },
+    {
+      "en": "Give a soft toy a 'ride': which boat keeps teddy dry? Test it, with the toy held just above the water by the adult if it starts to tip.",
+      "id": "Ajak boneka 'naik perahu': perahu mana yang membuat boneka tetap kering? Uji, dengan orang dewasa memegang boneka tepat di atas air jika perahunya mulai miring."
+    },
+    {
+      "en": "Another day, let your child choose a new boat from the kitchen plastics and guess how many stones it will carry.",
+      "id": "Di hari lain, biarkan anak memilih perahu baru dari wadah plastik dapur dan menebak berapa batu yang bisa diangkut."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Put one stone in the floating tub. Ask 'Why is the stone not sinking?' What does your child say or show?",
+        "id": "Taruh satu batu di wadah yang mengapung. Tanya 'Kenapa batunya tidak tenggelam?' Apa yang dikatakan atau ditunjukkan anak?"
+      },
+      "choices": {
+        "en": [
+          "The boat is holding it up",
+          "The stone has learned to float"
+        ],
+        "id": [
+          "Perahunya yang menahannya di atas",
+          "Batunya sudah belajar mengapung"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The stone still sinks by itself; the boat is what floats and carries it.",
+        "id": "Batu tetap tenggelam kalau sendirian; perahulah yang mengapung dan mengangkutnya."
+      },
+      "distractorMisconceptions": {
+        "1": "OBJECT_CHANGED_ITSELF"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Ask 'Which boat do you think will carry more stones?' while showing the narrow and the wide tub. What does your child choose after the tests?",
+        "id": "Tanya 'Menurutmu perahu mana yang mengangkut lebih banyak batu?' sambil menunjukkan wadah sempit dan lebar. Apa yang dipilih anak setelah uji coba?"
+      },
+      "choices": {
+        "en": [
+          "The wide boat",
+          "The narrow boat, because it is taller"
+        ],
+        "id": [
+          "Perahu yang lebar",
+          "Perahu yang sempit, karena lebih tinggi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The wide boat sits on more water and carried more stones in our test.",
+        "id": "Perahu lebar menapak di air yang lebih luas dan mengangkut lebih banyak batu dalam uji kita."
+      },
+      "distractorMisconceptions": {
+        "1": "TALLER_IS_BETTER"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Say 'The boat has 2 stones. I put in 1 more and it still floats. How many stones are in the boat now?' What does your child answer?",
+        "id": "Ucapkan 'Perahu membawa 2 batu. Aku tambah 1 lagi dan masih mengapung. Sekarang ada berapa batu di perahu?' Apa jawaban anak?"
+      },
+      "choices": {
+        "en": [
+          "3 stones",
+          "1 stone",
+          "2 stones"
+        ],
+        "id": [
+          "3 batu",
+          "1 batu",
+          "2 batu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count them all: 2 and 1 more makes 3.",
+        "id": "Hitung semuanya: 2 tambah 1 lagi menjadi 3."
+      },
+      "distractorMisconceptions": {
+        "1": "SAYS_ADDED_NUMBER",
+        "2": "FORGETS_NEW_STONE"
+      },
+      "check": {
+        "expression": "2 + 1",
+        "result": "3"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Water starts coming into the boat. Ask 'What can we do now?' What does your child suggest?",
+        "id": "Air mulai masuk ke perahu. Tanya 'Sekarang kita harus bagaimana?' Apa usul anak?"
+      },
+      "choices": {
+        "en": [
+          "Take a stone out, or try a different boat",
+          "Add more stones"
+        ],
+        "id": [
+          "Keluarkan satu batu, atau coba perahu lain",
+          "Tambah batu lagi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Too much load lets water in; less load or a better boat fixes it.",
+        "id": "Muatan terlalu banyak membuat air masuk; muatan dikurangi atau perahu yang lebih baik memperbaikinya."
+      },
+      "distractorMisconceptions": {
+        "1": "MORE_IS_ALWAYS_BETTER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "OBJECT_CHANGED_ITSELF",
+      "description": {
+        "en": "Thinks the stone itself now floats.",
+        "id": "Mengira batunya sendiri sekarang mengapung."
+      },
+      "remediation": {
+        "en": "Take the stone out of the boat and drop it in the water again: it sinks. Put it back in the boat: it rides. 'The boat does the floating.'",
+        "id": "Keluarkan batu dari perahu dan jatuhkan lagi ke air: tenggelam. Masukkan kembali ke perahu: ikut naik. 'Perahulah yang mengapung.'"
+      }
+    },
+    {
+      "code": "TALLER_IS_BETTER",
+      "description": {
+        "en": "Thinks a taller boat will always carry more.",
+        "id": "Mengira perahu yang lebih tinggi selalu mengangkut lebih banyak."
+      },
+      "remediation": {
+        "en": "Press each empty tub down into the water with a flat hand and feel which one pushes back harder: the wide one.",
+        "id": "Tekan setiap wadah kosong ke dalam air dengan telapak tangan dan rasakan mana yang mendorong balik lebih kuat: yang lebar."
+      }
+    },
+    {
+      "code": "SAYS_ADDED_NUMBER",
+      "description": {
+        "en": "Answers with the number added, not the total.",
+        "id": "Menjawab dengan angka yang ditambahkan, bukan jumlah semuanya."
+      },
+      "remediation": {
+        "en": "Touch and count every stone in the boat from the first one, moving each to one side as you count.",
+        "id": "Sentuh dan hitung setiap batu di perahu dari yang pertama, geser masing-masing ke samping sambil berhitung."
+      }
+    },
+    {
+      "code": "FORGETS_NEW_STONE",
+      "description": {
+        "en": "Gives the number from before the new stone went in.",
+        "id": "Menyebut jumlah sebelum batu baru dimasukkan."
+      },
+      "remediation": {
+        "en": "Count the stones before adding, add one with a big 'and one more!', then count again from one.",
+        "id": "Hitung batu sebelum menambah, tambahkan satu sambil berseru 'dan satu lagi!', lalu hitung lagi dari satu."
+      }
+    },
+    {
+      "code": "MORE_IS_ALWAYS_BETTER",
+      "description": {
+        "en": "Thinks adding more always helps, even when it causes the problem.",
+        "id": "Mengira menambah lebih banyak selalu membantu, walaupun itulah penyebab masalahnya."
+      },
+      "remediation": {
+        "en": "Add one stone and watch the water line climb up the side of the tub; take one out and watch it go down.",
+        "id": "Tambah satu batu dan lihat batas air naik di sisi wadah; keluarkan satu dan lihat batas air turun."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Draw a line with a marker on the side of the wide tub. Add stones one by one and watch the line move down towards the water.",
+      "id": "Gambar garis dengan spidol di sisi wadah lebar. Tambahkan batu satu per satu dan lihat garisnya turun mendekati air."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Hold the boat steady for a child with less hand control while they place stones; a child who does not yet count can show the number on fingers or line up the stones on the towel.",
+      "id": "Pegangi perahu agar stabil untuk anak yang kendali tangannya belum kuat saat ia menaruh batu; anak yang belum bisa berhitung bisa menunjukkan jumlah dengan jari atau menjajarkan batu di handuk."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": true,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Water: young children can drown in very shallow water. Keep it about 5 centimetres deep, stay right beside your child, and empty the basin as soon as you finish. Never leave water standing.",
+        "id": "Air: anak kecil bisa tenggelam di air yang sangat dangkal. Jaga sekitar 5 sentimeter, tetap di samping anak, dan kosongkan baskom begitu selesai. Jangan pernah membiarkan air tergenang."
+      },
+      {
+        "en": "Use only stones bigger than your child's fist with no sharp edges. Lower them gently; never throw stones. Count them back into a box afterwards.",
+        "id": "Gunakan hanya batu yang lebih besar dari kepalan anak dan tidak bertepi tajam. Turunkan pelan-pelan; jangan pernah melempar batu. Hitung kembali ke dalam kotak setelahnya."
+      },
+      {
+        "en": "Wipe splashes so nobody slips. Screen-free activity.",
+        "id": "Lap cipratan agar tidak ada yang terpeleset. Kegiatan tanpa layar."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "parent_observation",
+    "reviewAfterDays": [
+      2,
+      5,
+      14
+    ],
+    "masteryRule": {
+      "en": "Secure when the child guesses, counts the stones a boat carries, and suggests a fix when water comes in, on two different days.",
+      "id": "Dikuasai jika anak menebak, menghitung batu yang diangkut perahu, dan mengusulkan perbaikan saat air masuk, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}
