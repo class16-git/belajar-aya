@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-stem-bumper-robot-project",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "stem",
   "strand": "robotics",
@@ -94,12 +94,12 @@
   },
   "materials": [
     {
-      "en": "A shoe box or similar cardboard box as the rover body, and 4 toilet-roll tubes as rollers",
-      "id": "Kotak sepatu atau kardus serupa sebagai badan penjelajah, dan 4 tabung tisu toilet sebagai roda gelinding"
+      "en": "A shoe box or similar cardboard box as the rover body, and 4 toilet-roll tubes as rollers (or slide the box on the floor)",
+      "id": "Kotak sepatu atau kardus serupa sebagai badan penjelajah, dan 4 gulungan karton tisu toilet sebagai rol (atau geser kotak di lantai)"
     },
     {
-      "en": "The Grade 5 circuit parts: a sealed holder for 2 AA batteries with switch, 2 AA batteries, an LED, a resistor (about 100 to 220 ohms) and 4 crocodile-clip leads",
-      "id": "Komponen rangkaian Kelas 5: tempat tertutup untuk 2 baterai AA dengan saklar, 2 baterai AA, LED, resistor (sekitar 100 sampai 220 ohm), dan 4 kabel penjepit buaya"
+      "en": "The Grade 5 circuit parts: a sealed holder for 2 AA batteries with switch, 2 AA batteries, a red or yellow LED (not white or blue), a resistor (about 100 to 220 ohms) and 4 crocodile-clip leads",
+      "id": "Komponen rangkaian Kelas 5: tempat tertutup untuk 2 baterai AA dengan saklar, 2 baterai AA, LED merah atau kuning (bukan putih atau biru), resistor (sekitar 100 sampai 220 ohm), dan 4 kabel penjepit buaya"
     },
     {
       "en": "Aluminium foil, thin card, a strip of thick card for the bumper, sticky tape",
@@ -122,16 +122,16 @@
   ],
   "guidedExamples": [
     {
-      "en": "Bumper version 1: a strip of card hinged at the front of the box, with a foil pad on the back of the strip and another foil pad on the box. Clip one pad into the LED loop on each side. Pushing into the books presses the pads together and the LED lights. Test: 7 of 10 bumps lit the LED, 3 missed.",
-      "id": "Bemper versi 1: potongan karton berengsel di depan kotak, dengan bantalan foil di belakang potongan dan bantalan foil lain di kotak. Jepit masing-masing bantalan ke jalur LED. Mendorong ke tumpukan buku menekan kedua bantalan dan LED menyala. Uji: 7 dari 10 benturan menyalakan LED, 3 gagal."
+      "en": "Bumper version 1: a strip of card hinged at the front of the box, with a foil pad on the back of the strip and another foil pad on the box. Wire it in this order: red wire → resistor → LED long leg; LED short leg → front foil pad; box foil pad → black wire. The resistor and LED must always be in the loop. Pushing into the books presses the pads together and the LED lights. Test: 7 of 10 bumps lit the LED, 3 missed.",
+      "id": "Bemper versi 1: potongan karton berengsel di depan kotak, dengan bantalan foil di belakang potongan dan bantalan foil lain di kotak. Sambung dengan urutan: kabel merah → resistor → kaki panjang LED; kaki pendek LED → bantalan foil depan; bantalan foil di kotak → kabel hitam. Resistor dan LED harus selalu ada di jalur. Mendorong ke tumpukan buku menekan kedua bantalan dan LED menyala. Uji: 7 dari 10 benturan menyalakan LED, 3 gagal."
     },
     {
       "en": "Version 2: the journal shows misses happened on angled bumps, so the foil pads are made wider. New problem: the LED is on all the time because the pads now touch at rest. Fix: a folded-card spring holds a 5 mm gap. Test: 10 of 10, no false alarms.",
       "id": "Versi 2: jurnal menunjukkan kegagalan terjadi pada benturan miring, jadi bantalan foil dilebarkan. Masalah baru: LED menyala terus karena bantalan kini bersentuhan saat diam. Perbaikan: pegas karton terlipat menjaga celah 5 mm. Uji: 10 dari 10, tanpa alarm palsu."
     },
     {
-      "en": "Program run: Kakak writes forward(1) and the condition, with functions back_up(1) and turn_right(). Adik is the motor: pushes the rover one tube length per forward(1), watches the LED, and follows the yes branch when it lights. The rover finds its way along the book wall.",
-      "id": "Menjalankan program: Kakak menulis maju(1) dan kondisinya, dengan fungsi mundur(1) dan belok_kanan(). Adik menjadi motor: mendorong penjelajah sejauh satu tabung untuk setiap maju(1), mengamati LED, dan mengikuti cabang ya saat menyala. Penjelajah menemukan jalannya menyusuri dinding buku."
+      "en": "Program run: Kakak writes forward(1) and the condition, with functions back_up(1) and turn_right(). Adik (aged 6 or over; the circuit is taped inside the box) is the motor: pushes the rover one tube length per forward(1), watches the LED, and follows the yes branch when it lights. The rover finds its way along the book wall.",
+      "id": "Menjalankan program: Kakak menulis maju(1) dan kondisinya, dengan fungsi mundur(1) dan belok_kanan(). Adik (berusia 6 tahun ke atas; rangkaian direkatkan di dalam kotak) menjadi motor: mendorong penjelajah sejauh satu tabung untuk setiap maju(1), mengamati LED, dan mengikuti cabang ya saat menyala. Penjelajah menemukan jalannya menyusuri dinding buku."
     }
   ],
   "practice": [
@@ -397,8 +397,8 @@
   ],
   "extension": [
     {
-      "en": "Add a second bumper on the left with its own LED, and extend the program: if left bumper then turn_right(), if right bumper then turn_left().",
-      "id": "Tambahkan bemper kedua di kiri dengan LED-nya sendiri, dan kembangkan program: jika bemper kiri maka belok_kanan(), jika bemper kanan maka belok_kiri()."
+      "en": "Replace the front bumper with a left and a right bumper, each with its own LED and resistor, and extend the program: if left bumper then turn_right(), if right bumper then turn_left().",
+      "id": "Ganti bemper depan dengan bemper kiri dan kanan, masing-masing dengan LED dan resistornya sendiri, dan kembangkan program: jika bemper kiri maka belok_kanan(), jika bemper kanan maka belok_kiri()."
     }
   ],
   "accessibility": [
@@ -419,6 +419,10 @@
     },
     "notes": [
       {
+        "en": "Foil: the foil switch always goes in the loop with the resistor and LED, never straight across the red and black wires. Foil touching both battery wires short-circuits the batteries and can get hot enough to burn paper. Keep loose foil off the table while the batteries are in.",
+        "id": "Foil: saklar foil selalu dipasang di jalur bersama resistor dan LED, tidak pernah langsung di antara kabel merah dan hitam. Foil yang menyentuh kedua kabel baterai membuat korsleting dan bisa cukup panas untuk membakar kertas. Singkirkan sisa foil dari meja selama baterai terpasang."
+      },
+      {
         "en": "Electricity: use only a sealed, store-bought holder for 2 AA batteries. No mains electricity, no wall sockets or chargers, and no button or coin cells.",
         "id": "Listrik: gunakan hanya tempat baterai tertutup buatan pabrik untuk 2 baterai AA. Tanpa listrik PLN, tanpa stopkontak atau pengisi daya, dan tanpa baterai kancing atau koin."
       },
@@ -433,6 +437,10 @@
       {
         "en": "Always use the resistor with the LED, and remove the batteries from the holder when you finish.",
         "id": "Selalu gunakan resistor bersama LED, dan keluarkan baterai dari tempatnya setelah selesai."
+      },
+      {
+        "en": "Tape the battery holder and all clips firmly inside the box so no two clips can touch; never connect the foil pads straight to the red and black wires.",
+        "id": "Rekatkan tempat baterai dan semua jepitan dengan kuat di dalam kotak agar tidak ada dua jepitan yang bersentuhan; jangan pernah menyambung bantalan foil langsung ke kabel merah dan hitam."
       },
       {
         "en": "Scissors: the adult cuts thick cardboard; push the rover gently by hand and keep the test area on the floor away from stairs.",

@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-stem-loops-floor-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "stem",
   "strand": "programming",
@@ -143,8 +143,8 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "'Repeat 3 [forward 2]'. How many squares does the walker move?",
-        "id": "'Ulangi 3 [maju 2]'. Berapa kotak pejalan bergerak?"
+        "en": "'Repeat 3 [forward 2]' (on paper). How many squares does the walker move?",
+        "id": "'Ulangi 3 [maju 2]' (di kertas). Berapa kotak pejalan bergerak?"
       },
       "choices": {
         "en": [
@@ -207,8 +207,8 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "A long program has 8 forward cards in a row. As a loop, what is it?",
-        "id": "Program panjang punya 8 kartu maju berjajar. Sebagai perulangan, menjadi apa?"
+        "en": "A long program (on paper) has 8 forward cards in a row. As a loop, what is it?",
+        "id": "Program panjang (di kertas) punya 8 kartu maju berjajar. Sebagai perulangan, menjadi apa?"
       },
       "choices": {
         "en": [
@@ -260,7 +260,8 @@
         "id": "Mengubah satu angka di perulangan mengubah semua ulangan sekaligus."
       },
       "distractorMisconceptions": {
-        "1": "LOOP_MEANS_FASTER"
+        "1": "LOOP_MEANS_FASTER",
+        "2": "LOOPS_ALWAYS_REQUIRED"
       }
     }
   ],
@@ -318,6 +319,17 @@
       "remediation": {
         "en": "Walk the long program and the loop at the same pace and notice they take the same time.",
         "id": "Jalankan program panjang dan perulangan dengan kecepatan yang sama dan perhatikan waktunya sama."
+      }
+    },
+    {
+      "code": "LOOPS_ALWAYS_REQUIRED",
+      "description": {
+        "en": "Thinks every program must contain a loop.",
+        "id": "Mengira setiap program harus berisi perulangan."
+      },
+      "remediation": {
+        "en": "Run a three-card program from Grade 1 with no loop and see that it works perfectly.",
+        "id": "Jalankan program tiga kartu dari Kelas 1 tanpa perulangan dan lihat bahwa program itu berhasil."
       }
     }
   ],

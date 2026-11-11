@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-stem-led-circuit-switch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "framework": "stem",
   "strand": "electronics",
@@ -101,8 +101,8 @@
       "id": "2 baterai AA"
     },
     {
-      "en": "2 or 3 standard 5 mm LEDs and the same number of resistors (about 100 to 220 ohms) from an electronics starter kit",
-      "id": "2 atau 3 LED standar 5 mm dan resistor dengan jumlah sama (sekitar 100 sampai 220 ohm) dari kit elektronika pemula"
+      "en": "2 or 3 standard 5 mm red or yellow LEDs (not white or blue, which need more than 3 volts) and the same number of resistors (about 100 to 220 ohms) from an electronics starter kit",
+      "id": "2 atau 3 LED standar 5 mm merah atau kuning (bukan putih atau biru, yang butuh lebih dari 3 volt) dan resistor dengan jumlah sama (sekitar 100 sampai 220 ohm) dari kit elektronika pemula"
     },
     {
       "en": "4 crocodile-clip leads",
@@ -139,8 +139,8 @@
   ],
   "practice": [
     {
-      "en": "Build the circuit, then deliberately make one bug for a family member to find by tracing.",
-      "id": "Rakit rangkaian, lalu sengaja buat satu bug untuk ditemukan anggota keluarga dengan menelusuri."
+      "en": "Build the circuit, then deliberately make one bug for a family member to find by tracing. Allowed bugs: unclip one wire, or turn the LED round. Never remove the resistor or join the battery wires.",
+      "id": "Rakit rangkaian, lalu sengaja buat satu bug untuk ditemukan anggota keluarga dengan menelusuri. Bug yang boleh: lepas satu jepitan, atau balik LED. Jangan pernah melepas resistor atau menyambung kabel baterai."
     },
     {
       "en": "Add your foil switch into the loop (between the resistor and the LED), test it ten times, improve it and test again.",
@@ -187,8 +187,8 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "The loop is complete but the LED stays dark. What is the most likely fix?",
-        "id": "Jalurnya lengkap tetapi LED tetap gelap. Perbaikan yang paling mungkin apa?"
+        "en": "The loop is complete, the holder switch is on and the LED is red, but it stays dark. What is the most likely fix?",
+        "id": "Jalurnya lengkap, saklar tempat baterai menyala dan LED-nya merah, tetapi tetap gelap. Perbaikan yang paling mungkin apa?"
       },
       "choices": {
         "en": [
@@ -204,8 +204,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "An LED works only one way round.",
-        "id": "LED hanya bekerja satu arah."
+        "en": "An LED works only one way round. Removing the resistor can damage the LED.",
+        "id": "LED hanya bekerja satu arah. Melepas resistor bisa merusak LED."
       },
       "distractorMisconceptions": {
         "1": "RESISTOR_BLOCKS_LIGHT",
@@ -265,7 +265,7 @@
       },
       "distractorMisconceptions": {
         "1": "ONE_WIRE_ENOUGH",
-        "2": "ONE_WIRE_ENOUGH"
+        "2": "OPEN_SWITCH_STILL_DRAINS"
       }
     },
     {
@@ -293,7 +293,7 @@
       },
       "distractorMisconceptions": {
         "1": "ADDS_TO_COMPARE",
-        "2": "ADDS_TO_COMPARE"
+        "2": "REPORTS_FINAL_SCORE"
       },
       "check": {
         "expression": "10 - 6",
@@ -349,7 +349,7 @@
       },
       "remediation": {
         "en": "Say 'one and a half' aloud and show it with one whole and one half paper strip.",
-        "id": "Ucapkan 'satu setengah' dan tunjukkan dengan satu potong kertas utuh dan satu setengah potong."
+        "id": "Ucapkan 'satu setengah' dan tunjukkan dengan satu potong kertas utuh dan setengah potong."
       }
     },
     {
@@ -414,8 +414,8 @@
         "id": "Mengira listrik rumah sama seperti baterai, hanya lebih besar."
       },
       "remediation": {
-        "en": "Read the warning label on a charger together and talk about why mains electricity is only for qualified adults.",
-        "id": "Baca bersama label peringatan di pengisi daya dan bicarakan mengapa listrik PLN hanya untuk orang dewasa yang ahli."
+        "en": "Read the warning label on an unplugged charger together, without plugging it in, and talk about why mains electricity is only for qualified adults.",
+        "id": "Baca bersama label peringatan di pengisi daya yang tidak tercolok, tanpa mencolokkannya, dan bicarakan mengapa listrik PLN hanya untuk orang dewasa yang ahli."
       }
     },
     {
@@ -427,6 +427,28 @@
       "remediation": {
         "en": "Explain with a water picture: with nothing in the way, everything rushes through at once and heats up; the LED and resistor are the 'useful path'.",
         "id": "Jelaskan dengan gambaran air: tanpa penghalang, semuanya mengalir sekaligus dan memanas; LED dan resistor adalah 'jalur yang berguna'."
+      }
+    },
+    {
+      "code": "OPEN_SWITCH_STILL_DRAINS",
+      "description": {
+        "en": "Thinks batteries are used up even when the switch is open.",
+        "id": "Mengira baterai tetap terpakai walaupun saklar terbuka."
+      },
+      "remediation": {
+        "en": "Trace the loop with the switch open: the path has a gap, so no current flows and nothing is used.",
+        "id": "Telusuri jalur saat saklar terbuka: ada celah, jadi tidak ada arus yang mengalir dan tidak ada yang terpakai."
+      }
+    },
+    {
+      "code": "REPORTS_FINAL_SCORE",
+      "description": {
+        "en": "Gives the new score instead of the difference.",
+        "id": "Memberikan skor baru, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Write both scores, 6 and 10, and count up from 6 to 10 on your fingers.",
+        "id": "Tulis kedua skor, 6 dan 10, lalu hitung maju dari 6 sampai 10 dengan jari."
       }
     }
   ],
@@ -453,6 +475,10 @@
       "electrical": true
     },
     "notes": [
+      {
+        "en": "Foil: the foil switch always goes in the loop with the resistor and LED, never straight across the red and black wires. Foil touching both battery wires short-circuits the batteries and can get hot enough to burn paper. Keep loose foil off the table while the batteries are in.",
+        "id": "Foil: saklar foil selalu dipasang di jalur bersama resistor dan LED, tidak pernah langsung di antara kabel merah dan hitam. Foil yang menyentuh kedua kabel baterai membuat korsleting dan bisa cukup panas untuk membakar kertas. Singkirkan sisa foil dari meja selama baterai terpasang."
+      },
       {
         "en": "Electricity: use only a sealed, store-bought holder for 2 AA batteries. No mains electricity, no wall sockets or chargers, and no button or coin cells.",
         "id": "Listrik: gunakan hanya tempat baterai tertutup buatan pabrik untuk 2 baterai AA. Tanpa listrik PLN, tanpa stopkontak atau pengisi daya, dan tanpa baterai kancing atau koin."

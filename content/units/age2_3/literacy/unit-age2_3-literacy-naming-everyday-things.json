@@ -1,6 +1,6 @@
 {
   "id": "unit-age2_3-literacy-naming-everyday-things",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "framework": "literacy",
   "strand": "vocabulary",
@@ -67,8 +67,8 @@
       "id": "Sebuah keranjang atau kotak"
     },
     {
-      "en": "Five large, unbreakable everyday objects: a plastic cup, a spoon, a sandal, a hat and a hairbrush (each bigger than the child's fist)",
-      "id": "Lima benda sehari-hari yang besar dan tidak mudah pecah: gelas plastik, sendok, sandal, topi, dan sisir besar (masing-masing lebih besar dari kepalan tangan anak)"
+      "en": "Five large, unbreakable everyday objects: a plastic cup, a spoon, a sandal, a hat (or a peci or headscarf) and a hairbrush (each bigger than the child's fist)",
+      "id": "Lima benda sehari-hari yang besar dan tidak mudah pecah: gelas plastik, sendok, sandal, topi (atau peci, atau kerudung), dan sisir besar (masing-masing lebih besar dari kepalan tangan anak)"
     }
   ],
   "preparation": [
@@ -213,7 +213,10 @@
         "en": "Adding one word to what the child says models the next step without correcting or pressuring.",
         "id": "Menambah satu kata pada ucapan anak memberi contoh langkah berikutnya tanpa mengoreksi atau menekan."
       },
-      "distractorMisconceptions": {}
+      "distractorMisconceptions": {
+        "1": "CORRECTS_INSTEAD_OF_EXPANDS",
+        "2": "REPEATS_WITHOUT_ADDING"
+      }
     }
   ],
   "misconceptions": [
@@ -260,6 +263,28 @@
         "en": "Leave a pause after the first sound (\"This is a h...\") and accept any attempt or sign with delight.",
         "id": "Beri jeda setelah bunyi pertama (\"Ini to...\") dan sambut usaha atau isyarat apa pun dengan gembira."
       }
+    },
+    {
+      "code": "CORRECTS_INSTEAD_OF_EXPANDS",
+      "description": {
+        "en": "Caregiver check: the adult corrects or asks for a full sentence, which can make a toddler stop talking.",
+        "id": "Cek pengasuh: orang dewasa mengoreksi atau meminta kalimat lengkap, yang bisa membuat balita berhenti bicara."
+      },
+      "remediation": {
+        "en": "Accept the child's word warmly and give it back with one word added; never ask the child to repeat.",
+        "id": "Terima kata anak dengan hangat dan kembalikan dengan tambahan satu kata; jangan minta anak mengulang."
+      }
+    },
+    {
+      "code": "REPEATS_WITHOUT_ADDING",
+      "description": {
+        "en": "Caregiver check: the adult repeats the word but adds nothing new for the child to hear.",
+        "id": "Cek pengasuh: orang dewasa mengulang kata tetapi tidak menambahkan hal baru untuk didengar anak."
+      },
+      "remediation": {
+        "en": "Add one describing or action word each time: cup, blue cup, drink from the cup.",
+        "id": "Tambahkan satu kata sifat atau kata kerja setiap kali: gelas, gelas biru, minum dari gelas."
+      }
     }
   ],
   "extension": [
@@ -270,8 +295,8 @@
   ],
   "accessibility": [
     {
-      "en": "If your child uses signs or gestures, accept and say the word as you copy the sign. For children who are learning both languages, name each object in one language per session rather than mixing within a sentence.",
-      "id": "Jika anak memakai isyarat atau gerakan, terima dan ucapkan katanya sambil meniru isyaratnya. Untuk anak yang belajar dua bahasa, sebut nama benda dalam satu bahasa per sesi, jangan dicampur dalam satu kalimat."
+      "en": "If your child uses signs or gestures, accept and say the word as you copy the sign. For children learning both languages, either language is fine; using one language for a whole game can make the new word easier to hear.",
+      "id": "Jika anak memakai isyarat atau gerakan, terima dan ucapkan katanya sambil meniru isyaratnya. Untuk anak yang belajar dua bahasa, bahasa mana pun boleh; memakai satu bahasa selama satu permainan bisa membuat kata baru lebih mudah didengar."
     }
   ],
   "safety": {

@@ -1,6 +1,6 @@
 {
   "id": "unit-age2_3-stem-in-on-under",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "framework": "stem",
   "strand": "spatial_reasoning",
@@ -119,13 +119,11 @@
       "choices": {
         "en": [
           "Lifts the cushion and puts teddy beneath it",
-          "Puts teddy on top of the cushion",
-          "Hands teddy to you"
+          "Puts teddy on top of the cushion"
         ],
         "id": [
           "Mengangkat bantal dan menaruh boneka di bawahnya",
-          "Menaruh boneka di atas bantal",
-          "Memberikan boneka kepada Anda"
+          "Menaruh boneka di atas bantal"
         ]
       },
       "answer": 0,
@@ -184,7 +182,7 @@
         "id": "Berada di dalam kardus berarti kardus mengelilingi anak."
       },
       "distractorMisconceptions": {
-        "1": "ON_UNDER_SWAPPED"
+        "1": "NEXT_TO_FOR_IN"
       }
     }
   ],
@@ -209,6 +207,17 @@
       "remediation": {
         "en": "Hide teddy only halfway so a leg sticks out, then cover a little more each round.",
         "id": "Sembunyikan boneka setengah saja sehingga kakinya terlihat, lalu tutup sedikit lebih banyak setiap putaran."
+      }
+    },
+    {
+      "code": "NEXT_TO_FOR_IN",
+      "description": {
+        "en": "Treats being beside an object as being in it.",
+        "id": "Menganggap berada di samping benda sama dengan berada di dalamnya."
+      },
+      "remediation": {
+        "en": "Climb in together and say 'the box is all around us'.",
+        "id": "Masuk bersama dan ucapkan 'kardusnya ada di sekeliling kita'."
       }
     }
   ],
@@ -242,6 +251,10 @@
       {
         "en": "Never cover your child's face with the blanket or cushion; screen-free activity.",
         "id": "Jangan pernah menutup wajah anak dengan selimut atau bantal; kegiatan tanpa layar."
+      },
+      {
+        "en": "Never close or tape the flaps while your child is inside the box.",
+        "id": "Jangan pernah menutup atau merekatkan lipatan kardus saat anak di dalamnya."
       }
     ]
   },

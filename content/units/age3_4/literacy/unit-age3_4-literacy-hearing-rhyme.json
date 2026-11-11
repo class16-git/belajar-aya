@@ -1,6 +1,6 @@
 {
   "id": "unit-age3_4-literacy-hearing-rhyme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "framework": "literacy",
   "strand": "phonological_awareness",
@@ -71,8 +71,8 @@
       "id": "Gambar atau cetak kartunya; orang dewasa yang menggunting kartu dan membuat lubang di kotak."
     },
     {
-      "en": "Learn the original rhyme. English: \"A cat in a hat sat down on a mat. / A frog on a log said, hop, hop, like that!\" Indonesian: \"Pakai topi, minum kopi, / Lihat sapi makan pagi. / Lihat ikan, ayo makan, / Pulang pelan di jalan.\"",
-      "id": "Hafalkan sajak orisinalnya. Bahasa Indonesia: \"Pakai topi, minum kopi, / Lihat sapi makan pagi. / Lihat ikan, ayo makan, / Pulang pelan di jalan.\" Bahasa Inggris: \"A cat in a hat sat down on a mat. / A frog on a log said, hop, hop, like that!\""
+      "en": "Learn the original rhyme. English: \"Red bed, sleepy head, / Bun in the sun, the day is done. / Frog on a log, hop to the bog!\" Indonesian: \"Kakek bertopi minum kopi, / Lihat sapi makan pagi. / Lihat ikan, ayo makan, / Pulang pelan di jalan.\"",
+      "id": "Hafalkan sajak orisinalnya. Bahasa Indonesia: \"Kakek bertopi minum kopi, / Lihat sapi makan pagi. / Lihat ikan, ayo makan, / Pulang pelan di jalan.\" Bahasa Inggris: \"Red bed, sleepy head, / Bun in the sun, the day is done. / Frog on a log, hop to the bog!\""
     }
   ],
   "guidedExamples": [
@@ -114,14 +114,14 @@
         ],
         "id": [
           "kopi",
-          "meja",
-          "buku"
+          "tomat",
+          "kepala"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Cat and hat both end in -at.",
-        "id": "Topi dan kopi sama-sama berakhir -pi."
+        "en": "Cat and hat both end in -at. Cup only starts like cat; a dog goes with a cat in meaning.",
+        "id": "Topi dan kopi sama-sama berakhir -pi. Tomat hanya awalnya sama; kepala berhubungan arti dengan topi."
       },
       "distractorMisconceptions": {
         "1": "SAME_FIRST_SOUND",

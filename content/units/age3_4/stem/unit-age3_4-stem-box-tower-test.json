@@ -1,6 +1,6 @@
 {
   "id": "unit-age3_4-stem-box-tower-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "framework": "stem",
   "strand": "engineering_design",
@@ -49,8 +49,8 @@
       "id": "Anggap robohnya sebagai data: 'Roboh! Apa yang bisa kita ubah?' Tawarkan dua ide jika anak belum punya."
     },
     {
-      "en": "Make the wind the same each time: three slow waves of a big magazine from the same spot.",
-      "id": "Buat anginnya sama setiap kali: tiga kibasan pelan majalah besar dari tempat yang sama."
+      "en": "Make the wind the same each time: three quick, strong waves of a big magazine from one step away (the same spot each time).",
+      "id": "Buat anginnya sama setiap kali: tiga kibasan cepat dan kuat majalah besar dari jarak satu langkah (tempat yang sama setiap kali)."
     },
     {
       "en": "Reflect at the end: 'Which tower was strongest? Why?'",
@@ -82,7 +82,7 @@
   "guidedExamples": [
     {
       "en": "Tower one: let your child build any way, perhaps small box at the bottom. Predict, wave the magazine three times. If it wobbles or falls, say 'Our test found a problem!'",
-      "id": "Menara pertama: biarkan anak membangun sesukanya, mungkin kotak kecil di bawah. Tebak, kibaskan majalah tiga kali. Jika goyang atau roboh, ucapkan 'Ujian kita menemukan masalah!'"
+      "id": "Menara pertama: biarkan anak membangun sesukanya, mungkin kotak kecil di bawah. Tebak, kibaskan majalah tiga kali. Jika goyang atau roboh, ucapkan 'Uji coba kita menemukan masalah!'"
     },
     {
       "en": "Improve: hold the biggest box and the smallest box. 'Which one makes a strong bottom?' Rebuild with the shoe box at the bottom and test again with the same three waves.",
@@ -112,7 +112,7 @@
       "id": "a1",
       "prompt": {
         "en": "Show two towers: one with the big box at the bottom, one with the small box at the bottom. 'Which will stand in the wind?'",
-        "id": "Tunjukkan dua menara: satu dengan kotak besar di bawah, satu dengan kotak kecil di bawah. 'Yang mana tetap berdiri saat diangin?'"
+        "id": "Tunjukkan dua menara: satu dengan kotak besar di bawah, satu dengan kotak kecil di bawah. 'Yang mana tetap berdiri saat ditiup angin?'"
       },
       "choices": {
         "en": [
@@ -126,8 +126,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "A wide, heavy base keeps a tower steady.",
-        "id": "Alas yang lebar dan berat membuat menara stabil."
+        "en": "A wide base at the bottom keeps a tower steady.",
+        "id": "Alas yang lebar di bawah membuat menara stabil."
       },
       "distractorMisconceptions": {
         "1": "BASE_DOES_NOT_MATTER"
@@ -137,7 +137,7 @@
       "id": "a2",
       "prompt": {
         "en": "The tower fell in the test. Ask 'What do we do now?'",
-        "id": "Menara roboh saat diuji. Tanyakan 'Sekarang kita ngapain?'"
+        "id": "Menara roboh saat diuji. Tanyakan 'Sekarang kita harus bagaimana?'"
       },
       "choices": {
         "en": [
@@ -182,7 +182,8 @@
         "id": "Tiga dan satu lagi menjadi empat."
       },
       "distractorMisconceptions": {
-        "1": "IGNORES_ADDED_BOX"
+        "1": "IGNORES_ADDED_BOX",
+        "2": "SAYS_ADDED_NUMBER"
       },
       "check": {
         "expression": "3 + 1",
@@ -247,6 +248,17 @@
       "remediation": {
         "en": "Touch and count every box from the bottom up after adding one.",
         "id": "Sentuh dan hitung setiap kotak dari bawah ke atas setelah menambah satu."
+      }
+    },
+    {
+      "code": "SAYS_ADDED_NUMBER",
+      "description": {
+        "en": "Answers with the number added, not the total.",
+        "id": "Menjawab dengan angka yang ditambahkan, bukan jumlah seluruhnya."
+      },
+      "remediation": {
+        "en": "Count every box from the bottom up, touching each one, after the new box goes on.",
+        "id": "Hitung setiap kotak dari bawah ke atas sambil menyentuhnya, setelah kotak baru dipasang."
       }
     },
     {

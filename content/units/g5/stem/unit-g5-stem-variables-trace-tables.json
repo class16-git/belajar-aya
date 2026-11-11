@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-stem-variables-trace-tables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "framework": "stem",
   "strand": "programming",
@@ -42,7 +42,7 @@
   "parentInstructions": [
     {
       "en": "Make the variable physical: a cup labelled 'water' holding counters or folded paper squares. 'Set' empties the cup and puts in a new amount; 'change by' adds or takes away.",
-      "id": "Buat variabel menjadi nyata: gelas berlabel 'air' berisi potongan kertas terlipat. 'Atur' mengosongkan gelas dan mengisi jumlah baru; 'ubah sebesar' menambah atau mengambil."
+      "id": "Buat variabel menjadi nyata: gelas berlabel 'air' berisi keping penghitung atau potongan kertas terlipat. 'Atur' mengosongkan gelas dan mengisi jumlah baru; 'ubah sebesar' menambah atau mengambil."
     },
     {
       "en": "Ask for a prediction of the final value before tracing, and write it at the top of the trace table.",
@@ -126,7 +126,7 @@
     },
     {
       "en": "The reset bug: a step counter program has only 'change steps by 1' each time a step is taken, and no 'set steps to 0' at the start. Run 1 finishes at 4; run 2 starts at 4 and finishes at 8. Fix: add 'set steps to 0' as the first line.",
-      "id": "Bug atur ulang: program penghitung langkah hanya punya 'ubah langkah sebesar 1' setiap kali melangkah, tanpa 'atur langkah menjadi 0' di awal. Jalan pertama berakhir di 4; jalan kedua mulai dari 4 dan berakhir di 8. Perbaikan: tambahkan 'atur langkah menjadi 0' di baris pertama."
+      "id": "Bug atur ulang: program penghitung langkah hanya punya 'ubah langkah sebesar 1' setiap kali melangkah, tanpa 'atur langkah menjadi 0' di awal. Saat dijalankan pertama kali berakhir di 4; saat dijalankan kedua kali mulai dari 4 dan berakhir di 8. Perbaikan: tambahkan 'atur langkah menjadi 0' di baris pertama."
     }
   ],
   "practice": [
@@ -244,7 +244,7 @@
       "id": "a4",
       "prompt": {
         "en": "A step counter shows 8 on its second run instead of 4. What is the best fix?",
-        "id": "Penghitung langkah menunjukkan 8 pada jalan keduanya, bukan 4. Apa perbaikan terbaik?"
+        "id": "Penghitung langkah menunjukkan 8 saat dijalankan kedua kali, bukan 4. Apa perbaikan terbaik?"
       },
       "choices": {
         "en": [
@@ -261,10 +261,10 @@
       "answer": 0,
       "explanation": {
         "en": "Without a reset, the variable keeps its old value from the last run.",
-        "id": "Tanpa diatur ulang, variabel menyimpan nilai lamanya dari jalan sebelumnya."
+        "id": "Tanpa diatur ulang, variabel menyimpan nilai lamanya dari putaran sebelumnya."
       },
       "distractorMisconceptions": {
-        "1": "FORGETS_RESET",
+        "1": "PATCHES_SYMPTOM",
         "2": "FORGETS_RESET"
       }
     },
@@ -346,7 +346,7 @@
       "code": "FORGETS_RESET",
       "description": {
         "en": "Does not realise variables keep their value between runs.",
-        "id": "Tidak menyadari variabel menyimpan nilainya di antara jalan program."
+        "id": "Tidak menyadari variabel menyimpan nilainya di antara putaran program."
       },
       "remediation": {
         "en": "Run the cup program twice without emptying it, then again with a 'set to 0' card first; compare.",
@@ -362,6 +362,17 @@
       "remediation": {
         "en": "Show that the cup has only one amount in it now; the trace table, not the variable, keeps the history.",
         "id": "Tunjukkan bahwa gelas sekarang hanya berisi satu jumlah; tabel penelusuran, bukan variabel, yang menyimpan riwayat."
+      }
+    },
+    {
+      "code": "PATCHES_SYMPTOM",
+      "description": {
+        "en": "Changes a number to hide the bug instead of fixing its cause.",
+        "id": "Mengubah angka untuk menyembunyikan bug, bukan memperbaiki penyebabnya."
+      },
+      "remediation": {
+        "en": "Run the 'fixed' program three times and watch the count keep growing; then find the line that should reset it.",
+        "id": "Jalankan program yang 'diperbaiki' tiga kali dan lihat hitungannya terus bertambah; lalu cari baris yang seharusnya mengatur ulang."
       }
     }
   ],

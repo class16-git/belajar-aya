@@ -1,6 +1,6 @@
 {
   "id": "unit-k-literacy-blending-to-read-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "literacy",
   "strand": "phonics",
@@ -109,7 +109,7 @@
     },
     {
       "en": "Change one part: map becomes mat, then sat; dog becomes dig. Read each new word.",
-      "id": "Ubah satu bagian: sapi menjadi sapu, lalu susu; baju menjadi buku. Bacakan setiap kata baru."
+      "id": "Ubah satu bagian: sapi menjadi sapu; buku menjadi bulu; baju menjadi bahu. Bacakan setiap kata baru."
     },
     {
       "en": "Silly or real? Read made-up and real words and sort them: vim, mat, sog, sit.",
@@ -148,25 +148,25 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Which word matches a picture of a pig?",
+        "en": "Which word matches a picture of a pan?",
         "id": "Kata mana yang cocok dengan gambar sapi?"
       },
       "choices": {
         "en": [
-          "pig",
-          "pin",
-          "big"
+          "pan",
+          "pat",
+          "man"
         ],
         "id": [
           "sapi",
           "sapu",
-          "sopi"
+          "topi"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "P-i-g is pig. Pin changes the last sound and big changes the first.",
-        "id": "Sa-pi adalah sapi. Sapu mengubah suku terakhir; sopi bukan kata."
+        "en": "P-a-n is pan. Pat changes the last sound and man changes the first.",
+        "id": "Sa-pi adalah sapi. Sapu mengubah suku terakhir; topi mengubah suku pertama."
       },
       "distractorMisconceptions": {
         "1": "GUESSES_FROM_FIRST",
@@ -204,25 +204,25 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Read: m - u - g. What is it?",
-        "id": "Baca: i - bu. Siapa itu?"
+        "en": "Read: p - o - t. What is the word?",
+        "id": "Baca: i - bu. Apa katanya?"
       },
       "choices": {
         "en": [
-          "mug",
-          "mud",
-          "hug"
+          "pot",
+          "pod",
+          "dot"
         ],
         "id": [
           "ibu",
-          "ubi",
-          "bibi"
+          "itu",
+          "abu"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "M-u-g blends to mug.",
-        "id": "I-bu digabung menjadi ibu."
+        "en": "P-o-t blends to pot. Pod keeps only the start; dot keeps only the end.",
+        "id": "I-bu digabung menjadi ibu. Itu hanya sama awalnya; abu hanya sama akhirnya."
       },
       "distractorMisconceptions": {
         "1": "GUESSES_FROM_FIRST",
@@ -300,7 +300,7 @@
   ],
   "extension": [
     {
-      "en": "Write a three-word list for a pretend shop and read it aloud: map, pot, mug.",
+      "en": "Write a three-word list for a pretend shop and read it aloud: map, pot, nap.",
       "id": "Tulis daftar tiga kata untuk permainan toko dan bacakan: susu, ubi, kopi."
     }
   ],

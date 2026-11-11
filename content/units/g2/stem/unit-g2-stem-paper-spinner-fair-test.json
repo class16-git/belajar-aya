@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-stem-paper-spinner-fair-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "stem",
   "strand": "science_inquiry",
@@ -9,6 +9,7 @@
     "id": "Baling-baling kertas: uji yang adil"
   },
   "prerequisites": [
+    "unit-k-stem-rolls-or-slides",
     "unit-g1-stem-sort-by-two-rules"
   ],
   "objective": {
@@ -107,8 +108,8 @@
   ],
   "preparation": [
     {
-      "en": "Draw the spinner pattern on each strip: a centre line from the top down to halfway (the wings) and two short side cuts at the halfway mark (the body). Long-wing spinners have 9 cm wings; short-wing spinners have 5 cm wings, with the strip trimmed shorter from the top.",
-      "id": "Gambar pola baling-baling di setiap potongan: garis tengah dari atas sampai setengah (sayap) dan dua potongan pendek di samping pada tanda tengah (badan). Baling-baling bersayap panjang punya sayap 9 cm; yang bersayap pendek 5 cm, dengan potongan dipendekkan dari atas."
+      "en": "Draw the spinner pattern on each strip: a centre line from the top down (the wings: 9 cm for long-wing spinners, 5 cm for short-wing ones) and two short side cuts at the end of that line (the body). Long-wing spinners have 9 cm wings; short-wing spinners have 5 cm wings, with the strip trimmed shorter from the top.",
+      "id": "Gambar pola baling-baling di setiap potongan: garis tengah dari atas ke bawah (sayap: 9 cm untuk baling-baling bersayap panjang, 5 cm untuk yang bersayap pendek) dan dua potongan pendek di samping pada ujung garis itu (badan). Baling-baling bersayap panjang punya sayap 9 cm; yang bersayap pendek 5 cm, dengan potongan dipendekkan dari atas."
     }
   ],
   "guidedExamples": [
@@ -237,12 +238,12 @@
       "choices": {
         "en": [
           "One race could be luck, so repeating checks the result",
-          "To get tired",
+          "So the longer-wing spinner can win",
           "Because the first race is always wrong"
         ],
         "id": [
           "Satu lomba bisa kebetulan, jadi mengulang memeriksa hasilnya",
-          "Supaya capek",
+          "Supaya baling-baling bersayap panjang menang",
           "Karena lomba pertama selalu salah"
         ]
       },
@@ -252,7 +253,7 @@
         "id": "Hasil yang berulang lebih bisa dipercaya daripada satu hasil saja."
       },
       "distractorMisconceptions": {
-        "1": "ONE_TRIAL_ENOUGH",
+        "1": "REPEAT_UNTIL_WANTED_RESULT",
         "2": "ONE_TRIAL_ENOUGH"
       }
     }
@@ -300,6 +301,17 @@
       "remediation": {
         "en": "Underline the words in the claim that the ticks in the chart can prove, and remove the rest.",
         "id": "Garis bawahi kata di kesimpulan yang bisa dibuktikan centang di bagan, dan hapus sisanya."
+      }
+    },
+    {
+      "code": "REPEAT_UNTIL_WANTED_RESULT",
+      "description": {
+        "en": "Repeats only until the hoped-for result appears.",
+        "id": "Mengulang hanya sampai muncul hasil yang diharapkan."
+      },
+      "remediation": {
+        "en": "Agree on the number of races before the first drop, write it at the top of the chart, and count every race.",
+        "id": "Sepakati jumlah lomba sebelum jatuhan pertama, tulis di atas bagan, dan hitung setiap lomba."
       }
     }
   ],

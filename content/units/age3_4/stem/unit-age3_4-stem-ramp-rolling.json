@@ -1,6 +1,6 @@
 {
   "id": "unit-age3_4-stem-ramp-rolling",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "framework": "stem",
   "strand": "science_inquiry",
@@ -67,8 +67,8 @@
       "id": "Empat atau lima buku tebal atau bantal untuk meninggikan papan"
     },
     {
-      "en": "A ball at least the size of an orange, and a chunky toy car",
-      "id": "Bola paling kecil seukuran jeruk, dan mobil-mobilan yang besar"
+      "en": "A ball at least the size of an orange, and a chunky toy car with wheels that cannot be pulled off",
+      "id": "Bola paling kecil seukuran jeruk, dan mobil-mobilan besar yang rodanya tidak bisa dicabut"
     },
     {
       "en": "A large wooden or foam block and an empty tissue box",
@@ -189,7 +189,7 @@
         "id": "Hanya lantainya yang berubah, jadi handuklah penyebabnya."
       },
       "distractorMisconceptions": {
-        "1": "HEIGHT_DOES_NOTHING"
+        "1": "WRONG_CAUSE"
       }
     }
   ],
@@ -225,6 +225,17 @@
       "remediation": {
         "en": "Let your child roll the ball and the block across the floor with their hands first, feeling the round side and the flat side.",
         "id": "Biarkan anak menggelindingkan bola dan balok di lantai dengan tangan dulu, merasakan sisi bulat dan sisi datar."
+      }
+    },
+    {
+      "code": "WRONG_CAUSE",
+      "description": {
+        "en": "Names something that did not change as the cause.",
+        "id": "Menyebut sesuatu yang tidak berubah sebagai penyebab."
+      },
+      "remediation": {
+        "en": "List what we changed, which is only the towel, and test with and without it.",
+        "id": "Sebutkan apa yang kita ubah, yaitu hanya handuk, lalu uji dengan dan tanpa handuk."
       }
     }
   ],

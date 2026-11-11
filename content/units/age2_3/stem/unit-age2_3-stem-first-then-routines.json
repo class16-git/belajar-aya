@@ -1,6 +1,6 @@
 {
   "id": "unit-age2_3-stem-first-then-routines",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "framework": "stem",
   "strand": "sequencing",
@@ -71,8 +71,8 @@
       "id": "Sepatu atau sandal anak dan topi"
     },
     {
-      "en": "Two A5 cards drawn by the adult: one with a big '1' and a box, one with a big '2' and the teddy inside",
-      "id": "Dua kartu ukuran A5 yang digambar orang dewasa: satu dengan angka '1' besar dan kotak, satu dengan angka '2' besar dan boneka di dalam kotak"
+      "en": "Two A5 cards drawn by the adult: one with a big '1' and an open box, one with a big '2' and the teddy inside",
+      "id": "Dua kartu ukuran A5 yang digambar orang dewasa: satu dengan angka '1' besar dan kotak terbuka, satu dengan angka '2' besar dan boneka di dalam kotak"
     }
   ],
   "preparation": [
@@ -101,8 +101,8 @@
   ],
   "practice": [
     {
-      "en": "At bath or dressing time, give one 'first, then' pair a day: first hat on, then look in the mirror.",
-      "id": "Saat mandi atau berpakaian, beri satu pasangan 'pertama, lalu' setiap hari: pertama pakai topi, lalu lihat cermin."
+      "en": "At dressing time, give one 'first, then' pair a day: first socks on, then shoes on.",
+      "id": "Saat berpakaian, beri satu pasangan 'pertama, lalu' setiap hari: pertama pakai kaus kaki, lalu sepatu."
     },
     {
       "en": "Lay the two cards on the floor in the wrong order. Ask your child to move the '1' card to the start, then act it out.",
@@ -117,8 +117,8 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Show the two cards. Ask: 'Which card shows what we do first to put teddy in the box?'",
-        "id": "Tunjukkan dua kartu. Tanyakan: 'Kartu mana yang menunjukkan apa yang kita lakukan dulu untuk memasukkan boneka ke kotak?'"
+        "en": "Show the open box card first, then the teddy card. Ask: 'Which card shows what we do first to put teddy in the box?'",
+        "id": "Tunjukkan kartu kotak terbuka dulu, lalu kartu boneka. Tanyakan: 'Kartu mana yang menunjukkan apa yang kita lakukan dulu untuk memasukkan boneka ke kotak?'"
       },
       "choices": {
         "en": [
@@ -148,13 +148,11 @@
       "choices": {
         "en": [
           "Opens the flaps, then puts teddy in",
-          "Pushes teddy on top of the closed lid",
-          "Walks away from the box"
+          "Pushes teddy on top of the closed lid"
         ],
         "id": [
           "Membuka lipatan, lalu memasukkan boneka",
-          "Menekan boneka di atas tutup yang tertutup",
-          "Pergi meninggalkan kotak"
+          "Menekan boneka di atas tutup yang tertutup"
         ]
       },
       "answer": 0,

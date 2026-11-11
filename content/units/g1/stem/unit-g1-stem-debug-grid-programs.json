@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-stem-debug-grid-programs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "stem",
   "strand": "debugging",
@@ -46,7 +46,7 @@
     },
     {
       "en": "Ask your child to predict where the walker will end before running a buggy program.",
-      "id": "Minta anak menebak di mana pejalan berhenti sebelum menjalankan program yang berbug."
+      "id": "Minta anak menebak di mana pejalan berhenti sebelum menjalankan program yang bermasalah."
     },
     {
       "en": "Teach the debugging routine: run, stop at the first surprise, point to that card, change one thing, run again.",
@@ -71,7 +71,7 @@
     "concrete": [
       {
         "en": "Walk buggy programs on the floor grid and swap one card to fix each.",
-        "id": "Jalankan program berbug di petak lantai dan tukar satu kartu untuk memperbaiki setiap program."
+        "id": "Jalankan program bermasalah di petak lantai dan tukar satu kartu untuk memperbaiki setiap program."
       }
     ],
     "pictorial": [
@@ -108,7 +108,7 @@
   "preparation": [
     {
       "en": "Write three buggy programs on paper strips: one wrong direction, one missing card, one extra card.",
-      "id": "Tulis tiga program berbug di potongan kertas: satu arah salah, satu kartu kurang, satu kartu lebih."
+      "id": "Tulis tiga program bermasalah di potongan kertas: satu arah salah, satu kartu kurang, satu kartu lebih."
     }
   ],
   "guidedExamples": [
@@ -128,11 +128,11 @@
   "practice": [
     {
       "en": "Parent writes a buggy program; child predicts, walks, finds and fixes the bug.",
-      "id": "Orang tua menulis program berbug; anak menebak, menjalankan, menemukan, dan memperbaiki bug."
+      "id": "Orang tua menulis program bermasalah; anak menebak, menjalankan, menemukan, dan memperbaiki bug."
     },
     {
       "en": "Child writes a buggy program on purpose for a parent to fix, and checks the parent's fix.",
-      "id": "Anak sengaja menulis program berbug untuk diperbaiki orang tua, lalu memeriksa perbaikan orang tua."
+      "id": "Anak sengaja menulis program bermasalah untuk diperbaiki orang tua, lalu memeriksa perbaikan orang tua."
     },
     {
       "en": "On paper grids, fix two programs without walking them, then test one on the floor.",
@@ -143,25 +143,25 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Teddy is 3 squares right and 1 square up. The program is right, right, up. What is the bug?",
-        "id": "Boneka 3 kotak ke kanan dan 1 kotak ke atas. Programnya kanan, kanan, atas. Apa bugnya?"
+        "en": "Teddy is 3 squares right and 1 square up. The program is right, right, up. Which one change fixes it?",
+        "id": "Boneka 3 kotak ke kanan dan 1 kotak ke atas. Programnya kanan, kanan, atas. Satu perubahan mana yang memperbaikinya?"
       },
       "choices": {
         "en": [
-          "One right card is missing",
-          "The up card is wrong",
-          "The program must start again"
+          "Add one more right card",
+          "Change the up card to a right card",
+          "Throw it away and start again"
         ],
         "id": [
-          "Kurang satu kartu kanan",
-          "Kartu atasnya salah",
-          "Program harus diulang dari awal"
+          "Tambah satu kartu kanan lagi",
+          "Ganti kartu atas menjadi kartu kanan",
+          "Buang dan mulai lagi dari awal"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Three squares right need three right cards; only two are there.",
-        "id": "Tiga kotak ke kanan perlu tiga kartu kanan; hanya ada dua."
+        "en": "Three squares right need three right cards. Changing up to right gives right, right, right, which still misses teddy by one square up.",
+        "id": "Tiga kotak ke kanan perlu tiga kartu kanan. Mengganti atas menjadi kanan menghasilkan kanan, kanan, kanan, yang masih meleset satu kotak ke atas dari boneka."
       },
       "distractorMisconceptions": {
         "1": "BLAMES_LAST_CARD",
@@ -220,7 +220,7 @@
         "id": "Membuang satu kartu: 6 - 1 = 5."
       },
       "distractorMisconceptions": {
-        "1": "BLAMES_LAST_CARD",
+        "1": "FORGETS_TO_APPLY_FIX",
         "2": "ADDS_WHEN_FIXING"
       },
       "check": {
@@ -281,11 +281,22 @@
       "code": "ADDS_WHEN_FIXING",
       "description": {
         "en": "Adds cards to every buggy program, even when one is extra.",
-        "id": "Menambah kartu di setiap program berbug, padahal ada yang kelebihan."
+        "id": "Menambah kartu di setiap program bermasalah, padahal ada yang kelebihan."
       },
       "remediation": {
         "en": "Mark teddy's square and stop the walker exactly there; any card left over is extra.",
         "id": "Tandai kotak boneka dan hentikan pejalan tepat di situ; kartu yang tersisa adalah kelebihan."
+      }
+    },
+    {
+      "code": "FORGETS_TO_APPLY_FIX",
+      "description": {
+        "en": "Reports the count before the change was made.",
+        "id": "Melaporkan jumlah sebelum perubahan dilakukan."
+      },
+      "remediation": {
+        "en": "Physically take the extra card away, then count the cards that are left in the row.",
+        "id": "Ambil kartu yang berlebih secara nyata, lalu hitung kartu yang tersisa di barisan."
       }
     },
     {

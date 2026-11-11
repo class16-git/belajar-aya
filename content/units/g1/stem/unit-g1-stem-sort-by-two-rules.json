@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-stem-sort-by-two-rules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "stem",
   "strand": "algorithms",
@@ -41,8 +41,8 @@
   ],
   "parentInstructions": [
     {
-      "en": "Write each question on a card so it is asked the same way every time, for example 'Is it bigger than my hand?' and 'Is it made of plastic?'",
-      "id": "Tulis setiap pertanyaan di kartu supaya selalu ditanyakan dengan cara yang sama, misalnya 'Apakah lebih besar dari tanganku?' dan 'Apakah terbuat dari plastik?'"
+      "en": "Write each question on a card so it is asked the same way every time, for example 'Is it longer than my hand?' and 'Is it made of plastic?'",
+      "id": "Tulis setiap pertanyaan di kartu supaya selalu ditanyakan dengan cara yang sama, misalnya 'Apakah lebih panjang dari tanganku?' dan 'Apakah terbuat dari plastik?'"
     },
     {
       "en": "Ask your child to predict where an object will go before asking the questions.",
@@ -82,15 +82,15 @@
     ],
     "abstract": [
       {
-        "en": "Write the rule in words: if big and plastic, box A; if big and not plastic, box B; and so on.",
-        "id": "Tulis aturan dengan kata: jika besar dan plastik, kotak A; jika besar dan bukan plastik, kotak B; dan seterusnya."
+        "en": "Write the rule in words: if long and plastic, box A; if long and not plastic, box B; and so on.",
+        "id": "Tulis aturan dengan kata: jika panjang dan plastik, kotak A; jika panjang dan bukan plastik, kotak B; dan seterusnya."
       }
     ]
   },
   "materials": [
     {
-      "en": "About 12 objects larger than a fist: plastic cup, metal spoon, wooden spoon, plastic plate, book, sock, toy car, ladle, pot lid, apple, sandal, plastic bottle",
-      "id": "Sekitar 12 benda yang lebih besar dari kepalan: gelas plastik, sendok logam, sendok kayu, piring plastik, buku, kaus kaki, mobil-mobilan, sendok sayur, tutup panci, apel, sandal, botol plastik"
+      "en": "About 12 everyday objects, none small enough to fit in the mouth: plastic cup, metal teaspoon, wooden spoon, plastic plate, book, sock, toy car, ladle, pot lid, apple, sandal, plastic bottle",
+      "id": "Sekitar 12 benda sehari-hari, tidak ada yang cukup kecil untuk masuk mulut: gelas plastik, sendok teh logam, sendok kayu, piring plastik, buku, kaus kaki, mobil-mobilan, sendok sayur, tutup panci, apel, sandal, botol plastik"
     },
     {
       "en": "A large sheet of paper with a two-by-two table drawn on it",
@@ -103,8 +103,8 @@
   ],
   "preparation": [
     {
-      "en": "Draw the table. Label the rows 'bigger than my hand: yes / no' and the columns 'plastic: yes / no'.",
-      "id": "Gambar tabelnya. Beri label baris 'lebih besar dari tanganku: ya / tidak' dan kolom 'plastik: ya / tidak'."
+      "en": "Draw the table. Label the rows 'longer than my hand: yes / no' and the columns 'plastic: yes / no'.",
+      "id": "Gambar tabelnya. Beri label baris 'lebih panjang dari tanganku: ya / tidak' dan kolom 'plastik: ya / tidak'."
     }
   ],
   "guidedExamples": [
@@ -113,8 +113,8 @@
       "id": "Satu pertanyaan: 'Apakah terbuat dari plastik?' Gelas: ya. Sendok kayu: tidak. Kelompokkan kedua belas benda menjadi dua tumpukan."
     },
     {
-      "en": "Two questions: plate. Bigger than my hand? Yes. Plastic? Yes. It goes in the 'yes, yes' box. Metal spoon: bigger? No. Plastic? No. 'No, no' box.",
-      "id": "Dua pertanyaan: piring. Lebih besar dari tanganku? Ya. Plastik? Ya. Masuk kotak 'ya, ya'. Sendok logam: lebih besar? Tidak. Plastik? Tidak. Kotak 'tidak, tidak'."
+      "en": "Two questions: plate. Longer than my hand? Yes. Plastic? Yes. It goes in the 'yes, yes' box. Metal teaspoon: longer than my hand? No. Plastic? No. 'No, no' box.",
+      "id": "Dua pertanyaan: piring. Lebih panjang dari tanganku? Ya. Plastik? Ya. Masuk kotak 'ya, ya'. Sendok teh logam: lebih panjang dari tanganku? Tidak. Plastik? Tidak. Kotak 'tidak, tidak'."
     },
     {
       "en": "Guess my rule: the parent secretly puts spoon, ladle and wooden spoon in one group and plate, book and lid in the other. Rina guesses 'things with a long handle' and tests it with a new object, a spatula: it joins the handle group.",
@@ -139,8 +139,8 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Questions: 'Bigger than my hand?' and 'Plastic?'. Where does a big plastic plate go?",
-        "id": "Pertanyaan: 'Lebih besar dari tanganku?' dan 'Plastik?'. Ke mana piring plastik besar diletakkan?"
+        "en": "Questions: 'Longer than my hand?' and 'Plastic?'. Where does a big plastic plate go?",
+        "id": "Pertanyaan: 'Lebih panjang dari tanganku?' dan 'Plastik?'. Ke mana piring plastik besar diletakkan?"
       },
       "choices": {
         "en": [
@@ -156,8 +156,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "It is bigger than a hand (yes) and plastic (yes).",
-        "id": "Piring lebih besar dari tangan (ya) dan plastik (ya)."
+        "en": "It is longer than a hand (yes) and plastic (yes).",
+        "id": "Piring lebih panjang dari tangan (ya) dan plastik (ya)."
       },
       "distractorMisconceptions": {
         "1": "ANSWERS_ONE_QUESTION_ONLY",
@@ -167,8 +167,8 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Group A: spoon, ladle, spatula. Group B: plate, book, lid. What is the rule?",
-        "id": "Kelompok A: sendok, sendok sayur, sutil. Kelompok B: piring, buku, tutup. Apa aturannya?"
+        "en": "Group A: metal spoon, metal ladle, wooden spatula. Group B: plastic plate, book, metal pot lid. What is the rule?",
+        "id": "Kelompok A: sendok logam, sendok sayur logam, sutil kayu. Kelompok B: piring plastik, buku, tutup panci logam. Apa aturannya?"
       },
       "choices": {
         "en": [
@@ -184,8 +184,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Every object in A has a long handle and none in B does; a wooden spatula is not metal, and a ladle is for serving.",
-        "id": "Setiap benda di A bergagang panjang dan tidak ada di B; sutil kayu bukan logam, dan sendok sayur untuk menyendok kuah."
+        "en": "Every object in A has a long handle and none in B does. Metal does not fit, because the spatula is wooden and the pot lid in B is metal; eating does not fit either, because a ladle and a spatula are for cooking and serving.",
+        "id": "Setiap benda di A bergagang panjang dan tidak ada di B. Logam tidak cocok, karena sutilnya kayu dan tutup panci di B logam; untuk makan juga tidak cocok, karena sendok sayur dan sutil dipakai untuk memasak dan menyendok."
       },
       "distractorMisconceptions": {
         "1": "RULE_FROM_ONE_EXAMPLE",
@@ -217,7 +217,7 @@
       },
       "distractorMisconceptions": {
         "1": "ONE_BOX_PER_QUESTION",
-        "2": "ONE_BOX_PER_QUESTION"
+        "2": "ADDS_ONE_FOR_BOTH"
       },
       "check": {
         "expression": "2 × 2",
@@ -246,7 +246,7 @@
         "id": "Aturan pengelompokan harus memberi satu jawaban jelas untuk setiap benda."
       },
       "distractorMisconceptions": {
-        "1": "ANSWERS_ONE_QUESTION_ONLY"
+        "1": "UNCLEAR_QUESTION_IS_FINE"
       }
     }
   ],
@@ -293,6 +293,28 @@
       "remediation": {
         "en": "Draw the sorting tree: one question splits into 2 branches, and each branch splits again into 2.",
         "id": "Gambar pohon pengelompokan: satu pertanyaan bercabang 2, dan setiap cabang bercabang lagi menjadi 2."
+      }
+    },
+    {
+      "code": "ADDS_ONE_FOR_BOTH",
+      "description": {
+        "en": "Counts the questions plus one extra box for 'both'.",
+        "id": "Menghitung jumlah pertanyaan ditambah satu kotak untuk 'keduanya'."
+      },
+      "remediation": {
+        "en": "List every pair of answers aloud (yes-yes, yes-no, no-yes, no-no) and draw one box for each.",
+        "id": "Sebutkan setiap pasangan jawaban (ya-ya, ya-tidak, tidak-ya, tidak-tidak) dan gambar satu kotak untuk masing-masing."
+      }
+    },
+    {
+      "code": "UNCLEAR_QUESTION_IS_FINE",
+      "description": {
+        "en": "Accepts a question that gives different answers for the same object.",
+        "id": "Menerima pertanyaan yang memberi jawaban berbeda untuk benda yang sama."
+      },
+      "remediation": {
+        "en": "Ask two people the question about the same object and compare their answers.",
+        "id": "Ajukan pertanyaan tentang benda yang sama kepada dua orang dan bandingkan jawabannya."
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-literacy-analysing-authors-purpose",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "literacy",
   "strand": "comprehension",
@@ -13,7 +13,7 @@
   ],
   "objective": {
     "en": "Identify an author's main purpose (to inform, persuade, entertain, instruct or reflect) and explain how word choice, structure and included or missing information reveal it.",
-    "id": "Menentukan tujuan utama penulis (memberi informasi, membujuk, menghibur, memberi petunjuk, atau merenung) dan menjelaskan bagaimana pilihan kata, struktur, serta informasi yang dimuat atau dihilangkan menunjukkan tujuan itu."
+    "id": "Menentukan tujuan utama penulis (memberi informasi, membujuk, menghibur, memberi petunjuk, atau mengungkapkan perasaan (refleksi)) dan menjelaskan bagaimana pilihan kata, struktur, serta informasi yang dimuat atau dihilangkan menunjukkan tujuan itu."
   },
   "rationale": {
     "en": "At this level children move beyond naming a purpose to proving it from the text. Many texts mix purposes, so the task is to find the main one and show the evidence: loaded words, the order of ideas, what is left out. The skill is the same in both languages, but the language evidence differs. English persuasive texts often use modal verbs (must, should) and emotive adjectives; Indonesian texts signal persuasion with words such as harus, sebaiknya, ayo and mari, and politeness forms. Each version uses original short texts written for its language.",
@@ -103,7 +103,7 @@
     },
     {
       "en": "Text 3 (invented): \"When I sat on the bench in the new park, I remembered the empty field that used to be here, where my brother taught me to fly a kite. I felt glad and a little sad at the same time.\" Purpose: reflect. Evidence: I, remembered, felt; personal memory and feelings, no instructions and no call to act.",
-      "id": "Teks 3 (karangan): \"Ketika duduk di bangku taman baru, aku teringat lapangan kosong yang dulu ada di sini, tempat kakakku mengajariku bermain layang-layang. Aku merasa senang sekaligus sedikit sedih.\" Tujuan: merenung. Bukti: aku, teringat, merasa; kenangan dan perasaan pribadi, tanpa petunjuk dan tanpa ajakan."
+      "id": "Teks 3 (karangan): \"Ketika duduk di bangku taman baru, aku teringat lapangan kosong yang dulu ada di sini, tempat kakakku mengajariku bermain layang-layang. Aku merasa senang sekaligus sedikit sedih.\" Tujuan: mengungkapkan perasaan (refleksi). Bukti: aku, teringat, merasa; kenangan dan perasaan pribadi, tanpa petunjuk dan tanpa ajakan."
     }
   ],
   "practice": [
@@ -145,7 +145,7 @@
         "id": "Kata seperti harus dan ayo mendorong pembaca untuk bertindak."
       },
       "distractorMisconceptions": {
-        "1": "TOPIC_FOR_PURPOSE",
+        "1": "PURPOSE_MIX",
         "2": "PURPOSE_MIX"
       }
     },

@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-stem-functions-parameters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "stem",
   "strand": "programming",
@@ -121,8 +121,8 @@
       "id": "Dua panggilan: persegi(5) lalu persegi(2) dari sudut yang sama. Garis total: 4 × 5 + 4 × 2 = 28 satuan. Kesalahan yang sering terjadi adalah 7 (menjumlahkan parameternya)."
     },
     {
-      "en": "Refactoring: Yusuf's long program repeats the same four lines three times with sizes 2, 4 and 6. He replaces it with square(2), square(4), square(6) plus the definition: 3 calls and a 2-line definition instead of 12 lines.",
-      "id": "Menyusun ulang: program panjang Yusuf mengulang empat baris yang sama tiga kali dengan ukuran 2, 4, dan 6. Ia menggantinya dengan persegi(2), persegi(4), persegi(6) ditambah definisinya: 3 panggilan dan definisi 2 baris, bukan 12 baris."
+      "en": "Refactoring: Yusuf's long program repeats the same four-line pattern three times, changing only the size (2, 4, 6). He replaces it with square(2), square(4), square(6) plus the definition: 3 calls and a 2-line definition instead of 12 lines.",
+      "id": "Menyusun ulang: program panjang Yusuf mengulang pola empat baris yang sama tiga kali, hanya ukurannya yang berubah (2, 4, 6). Ia menggantinya dengan persegi(2), persegi(4), persegi(6) ditambah definisinya: 3 panggilan dan definisi 2 baris, bukan 12 baris."
     }
   ],
   "practice": [
@@ -164,7 +164,7 @@
         "id": "Empat sisi sepanjang 3: 4 × 3 = 12."
       },
       "distractorMisconceptions": {
-        "1": "ADDS_PARAMETERS",
+        "1": "ADDS_SIDES_AND_SIZE",
         "2": "PARAMETER_IS_TOTAL"
       },
       "check": {
@@ -263,8 +263,8 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "A program repeats 4 identical lines 3 times. After refactoring, it has a 2-line definition and 3 one-line calls. How many lines does it have now?",
-        "id": "Sebuah program mengulang 4 baris yang sama sebanyak 3 kali. Setelah disusun ulang, program punya definisi 2 baris dan 3 panggilan satu baris. Berapa baris sekarang?"
+        "en": "A program repeats the same 4-line pattern 3 times. After refactoring, it has a 2-line definition and 3 one-line calls. How many lines does it have now?",
+        "id": "Sebuah program mengulang pola 4 baris yang sama sebanyak 3 kali. Setelah disusun ulang, program punya definisi 2 baris dan 3 panggilan satu baris. Berapa baris sekarang?"
       },
       "choices": {
         "en": [
@@ -380,6 +380,17 @@
       "remediation": {
         "en": "Remind them that the definition is part of the program: without it, calls do nothing.",
         "id": "Ingatkan bahwa definisi adalah bagian dari program: tanpanya, panggilan tidak melakukan apa-apa."
+      }
+    },
+    {
+      "code": "ADDS_SIDES_AND_SIZE",
+      "description": {
+        "en": "Adds the number of sides to the side length.",
+        "id": "Menjumlahkan banyak sisi dengan panjang sisi."
+      },
+      "remediation": {
+        "en": "Draw square(3) and write 3 beside each of its four sides, then add the four labels.",
+        "id": "Gambar persegi(3) dan tulis 3 di samping keempat sisinya, lalu jumlahkan keempat label itu."
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "id": "unit-g4-stem-if-then-else",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "framework": "stem",
   "strand": "block_coding",
@@ -121,8 +121,8 @@
       "id": "Kartu 8: apakah 8 lebih dari 5? Ya, jadi tepuk. Kartu 3: tidak, jadi hentak. Kartu 5: apakah 5 lebih dari 5? Tidak! 5 sama dengan 5, jadi hentak. Ini kasus tepi."
     },
     {
-      "en": "Fixing a rule: the goal is 'clap for 5 and above'. The rule 'greater than 5' stomps on 5: a bug. Rewrite it as 'Is the number greater than 4?' and retest cards 4, 5 and 6.",
-      "id": "Memperbaiki aturan: tujuannya 'tepuk untuk 5 ke atas'. Aturan 'lebih dari 5' menghentak di 5: sebuah bug. Tulis ulang menjadi 'Apakah angkanya lebih dari 4?' dan uji lagi kartu 4, 5, dan 6."
+      "en": "Fixing a rule: the goal is 'clap for 5 and above'. The rule 'greater than 5' stomps on 5: a bug. Rewrite it as 'Is the number greater than 4?' and retest cards 4, 5 and 6. (Another correct fix: 'Is the number 5 or more?'; 'greater than 4' works only because the cards are whole numbers.)",
+      "id": "Memperbaiki aturan: tujuannya 'tepuk untuk 5 ke atas'. Aturan 'lebih dari 5' menghentak di 5: sebuah bug. Tulis ulang menjadi 'Apakah angkanya lebih dari 4?' dan uji lagi kartu 4, 5, dan 6. (Perbaikan lain yang benar: 'Apakah angkanya 5 atau lebih?'; 'lebih dari 4' hanya berhasil karena kartunya bilangan bulat.)"
     },
     {
       "en": "If without else: 'If it is raining, take an umbrella.' On a sunny day nothing happens, and that is correct. An else branch is optional.",
@@ -191,7 +191,7 @@
       "answer": 0,
       "explanation": {
         "en": "5 is not greater than 5, so the condition is false and the else branch runs.",
-        "id": "5 tidak lebih dari 5, jadi syaratnya salah dan cabang selain itu berjalan."
+        "id": "5 tidak lebih dari 5, jadi syaratnya tidak terpenuhi (bernilai salah) dan cabang selain itu berjalan."
       },
       "distractorMisconceptions": {
         "1": "GREATER_INCLUDES_EQUAL"

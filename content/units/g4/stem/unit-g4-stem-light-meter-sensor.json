@@ -1,6 +1,6 @@
 {
   "id": "unit-g4-stem-light-meter-sensor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "framework": "stem",
   "strand": "sensors",
@@ -101,8 +101,8 @@
       "id": "Sekitar 12 persegi kertas roti atau kertas kalkir, masing-masing sedikit lebih besar dari ujung tabung"
     },
     {
-      "en": "A white sheet of paper with a thick black X drawn on it",
-      "id": "Selembar kertas putih dengan tanda X hitam tebal"
+      "en": "A white sheet of paper with a thick black X drawn on it, and a ruler",
+      "id": "Selembar kertas putih dengan tanda X hitam tebal, dan penggaris"
     },
     {
       "en": "Scissors, used with an adult nearby, and sticky tape",
@@ -117,6 +117,10 @@
     {
       "en": "Cut the baking-paper squares. Wrap the tube in black paper so light only enters through the ends.",
       "id": "Gunting persegi kertas roti. Bungkus tabung dengan kertas hitam agar cahaya hanya masuk dari ujungnya."
+    },
+    {
+      "en": "Fix the setup for every reading: lay the X sheet flat in the place being measured, hold the layered end of the tube 10 cm above the X (check with the ruler), and look through the open end with one eye. An adult tries it first in a bright and a dim place to check that the bright place needs more layers.",
+      "id": "Tetapkan cara yang sama untuk setiap pembacaan: letakkan kertas X datar di tempat yang diukur, pegang ujung tabung yang berlapis 10 cm di atas X (periksa dengan penggaris), dan lihat melalui ujung yang terbuka dengan satu mata. Orang dewasa mencobanya dulu di tempat terang dan redup untuk memastikan tempat terang memerlukan lebih banyak lapisan."
     }
   ],
   "guidedExamples": [
@@ -129,8 +133,8 @@
       "id": "Pembacaan: di dekat jendela Rafi mendapat 8, 9, dan 8 lapis, jadi nilai tengahnya 8. Di lorong ia mendapat 3, 2, dan 3, nilai tengah 3. Jendela 8 - 3 = 5 lapis lebih terang pada pengukur ini."
     },
     {
-      "en": "Threshold rule: 'If reading less than 4, then lamp on, else lamp off.' Hallway 3: lamp on. Window 8: lamp off. Improve the meter: light leaking in from the side gave a reading that was too high, so the black sleeve was added and the test repeated.",
-      "id": "Aturan ambang: 'Jika pembacaan kurang dari 4, maka lampu nyala, selain itu lampu mati.' Lorong 3: lampu nyala. Jendela 8: lampu mati. Memperbaiki pengukur: cahaya yang bocor dari samping membuat pembacaan terlalu tinggi, jadi lapisan hitam ditambahkan dan uji diulang."
+      "en": "Threshold rule: 'If reading less than 4, then lamp on, else lamp off.' Hallway 3: lamp on. Window 8: lamp off. Improve the meter: Rafi's readings jumped about because light leaked through a gap in the sleeve, so he taped the gap and repeated the test.",
+      "id": "Aturan ambang: 'Jika pembacaan kurang dari 4, maka lampu nyala, selain itu lampu mati.' Lorong 3: lampu nyala. Jendela 8: lampu mati. Memperbaiki pengukur: pembacaan Rafi naik-turun karena cahaya bocor lewat celah di pembungkus, jadi ia menutup celah itu dengan selotip dan mengulang uji."
     }
   ],
   "practice": [
@@ -173,7 +177,7 @@
       },
       "distractorMisconceptions": {
         "1": "OUTPUT_IS_SENSOR",
-        "2": "OUTPUT_IS_SENSOR"
+        "2": "NAMES_CASING_AS_SENSOR"
       }
     },
     {
@@ -201,7 +205,7 @@
       },
       "distractorMisconceptions": {
         "1": "ADDS_TO_COMPARE",
-        "2": "BIGGER_NUMBER_DARKER"
+        "2": "REPORTS_SMALLER_READING"
       },
       "check": {
         "expression": "8 - 3",
@@ -230,7 +234,7 @@
         "id": "2 kurang dari 4, jadi syaratnya benar."
       },
       "distractorMisconceptions": {
-        "1": "BIGGER_NUMBER_DARKER"
+        "1": "SWAPS_BRANCHES"
       }
     },
     {
@@ -345,6 +349,39 @@
         "en": "Take five quick readings in one spot and line them up; talk about which value appears most.",
         "id": "Ambil lima pembacaan cepat di satu tempat dan jajarkan; bicarakan nilai mana yang paling sering muncul."
       }
+    },
+    {
+      "code": "NAMES_CASING_AS_SENSOR",
+      "description": {
+        "en": "Names the outer case or cover as the sensor.",
+        "id": "Menyebut penutup atau casing luar sebagai sensor."
+      },
+      "remediation": {
+        "en": "Ask 'which part would stop the light working if you covered it?' and cover each part in turn.",
+        "id": "Tanyakan 'bagian mana yang membuat lampu berhenti bekerja jika ditutup?' dan tutup setiap bagian bergantian."
+      }
+    },
+    {
+      "code": "REPORTS_SMALLER_READING",
+      "description": {
+        "en": "Gives one of the readings instead of the difference.",
+        "id": "Memberikan salah satu pembacaan, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Draw both readings as bars and shade only the part of the longer bar that sticks out.",
+        "id": "Gambar kedua pembacaan sebagai batang dan arsir hanya bagian batang panjang yang lebih."
+      }
+    },
+    {
+      "code": "SWAPS_BRANCHES",
+      "description": {
+        "en": "Runs the else branch when the condition is true, or the reverse.",
+        "id": "Menjalankan cabang selain itu saat syarat benar, atau sebaliknya."
+      },
+      "remediation": {
+        "en": "Say the condition aloud, answer yes or no first, then follow the matching arrow on the flowchart.",
+        "id": "Ucapkan syaratnya, jawab ya atau tidak dulu, lalu ikuti panah yang sesuai di diagram alir."
+      }
     }
   ],
   "extension": [
@@ -381,6 +418,10 @@
       {
         "en": "Do not touch light fittings or switches with wet hands while measuring.",
         "id": "Jangan menyentuh lampu atau saklar dengan tangan basah saat mengukur."
+      },
+      {
+        "en": "Do not move or unplug lamps to take readings.",
+        "id": "Jangan memindahkan atau mencabut lampu untuk mengambil pembacaan."
       }
     ]
   },

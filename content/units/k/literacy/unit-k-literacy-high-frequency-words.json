@@ -1,6 +1,6 @@
 {
   "id": "unit-k-literacy-high-frequency-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "literacy",
   "strand": "phonics",
@@ -41,7 +41,7 @@
   ],
   "parentInstructions": [
     {
-      "en": "English set: I, a, the, is, my, see, to, said. Mark the tricky part of each word with a small heart (the e in the, the ai in said, the o in to).",
+      "en": "English set: I, a, the, is, my, see, to, said. Mark the tricky part of each word with a small heart (the th and e in the, the s in is, the y in my, the ai in said, the o in to).",
       "id": "Set bahasa Indonesia: ini, itu, aku, ada, mau, dan, di, ke. Semua bisa dieja, jadi tidak perlu dihafal sebagai gambar; latih sampai terbaca dalam sekejap."
     },
     {
@@ -84,7 +84,7 @@
       "id": "Tulis kartu kata dan kartu bergambar. Untuk versi bahasa Inggris, gambar hati kecil di atas bagian yang sulit."
     },
     {
-      "en": "Write two model sentences on a strip: \"I see the cat.\" \"My ball is at home.\" Indonesian: \"Ini bola aku.\" \"Ibu ada di rumah.\"",
+      "en": "Write two model sentences on a strip: \"I see the cat.\" \"My ball is at home.\" Indonesian: \"Ibu ada di rumah.\" \"Aku mau ke rumah.\"",
       "id": "Tulis dua kalimat contoh di secarik kertas: \"Ibu ada di rumah.\" \"Aku mau ke rumah.\" Versi Inggris: \"I see the cat.\" \"My ball is at home.\""
     }
   ],
@@ -94,7 +94,7 @@
       "id": "Bahasa Indonesia: \"ada\". Baca per suku: a-da, ada. Lalu langsung dalam frasa: \"ada kucing\". Ulangi tiga kali sampai terbaca dalam sekejap tanpa dieja."
     },
     {
-      "en": "Building: lay out I, see, the, cat. Read \"I see the cat.\" Swap cat for ball: \"I see the ball.\" Indonesian: lay out Ibu, ada, di, rumah: \"Ibu ada di rumah.\" Swap ke for di and ada for mau: \"Ibu mau ke rumah.\"",
+      "en": "Building: lay out I, see, the, cat. Read \"I see the cat.\" Swap cat for ball: \"I see the ball.\" Indonesian: lay out Ibu, ada, di, rumah: \"Ibu ada di rumah.\" Then build: \"Aku mau ke rumah.\"",
       "id": "Menyusun: letakkan Ibu, ada, di, rumah. Baca \"Ibu ada di rumah.\" Ganti menjadi \"Aku mau ke rumah.\" Bicarakan bedanya: di berarti berada di tempat, ke berarti pergi menuju tempat."
     }
   ],
@@ -128,16 +128,16 @@
         "id": [
           "ada",
           "apa",
-          "dua"
+          "aku"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Said has the tricky ai in the middle; sad and sand do not.",
-        "id": "A-da dibaca ada. Apa dan dua berbeda hurufnya."
+        "en": "Said has the tricky ai in the middle; sad and sand only start the same way.",
+        "id": "A-da dibaca ada. Apa dan aku hanya sama huruf awalnya."
       },
       "distractorMisconceptions": {
-        "1": "SOUNDS_OUT_TRICKY_PART",
+        "1": "FIRST_LETTER_GUESS",
         "2": "FIRST_LETTER_GUESS"
       }
     },
@@ -200,29 +200,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Which word is spelled correctly?",
-        "id": "Kalimat mana yang memakai \"ke\" dengan benar?"
+        "en": "Which sentence is in the right order?",
+        "id": "Kalimat mana yang urutannya benar?"
       },
       "choices": {
         "en": [
-          "the",
-          "teh",
-          "th"
+          "I see the cat.",
+          "I the cat see.",
+          "See cat the I."
         ],
         "id": [
           "Aku mau ke rumah.",
-          "Aku ke rumah ada.",
-          "Ke aku rumah."
+          "Aku ke rumah mau.",
+          "Ke aku rumah mau."
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The is spelled t-h-e.",
-        "id": "Ke dipakai sebelum tempat yang dituju: ke rumah."
+        "en": "Who (I), then doing (see), then what (the cat).",
+        "id": "Siapa (aku), lalu mau, lalu ke tempat yang dituju (ke rumah)."
       },
       "distractorMisconceptions": {
-        "1": "SOUNDS_OUT_TRICKY_PART",
-        "2": "WORD_WITHOUT_MEANING"
+        "1": "WORD_ORDER",
+        "2": "WORD_ORDER"
       }
     }
   ],
@@ -231,11 +231,22 @@
       "code": "SOUNDS_OUT_TRICKY_PART",
       "description": {
         "en": "Sounds out the irregular part of an English word as if it were regular, or writes it that way.",
-        "id": "Membunyikan atau menulis bagian tidak teratur kata bahasa Inggris seolah teratur; dalam bahasa Indonesia: menyusun kata dengan urutan yang tidak wajar."
+        "id": "Membunyikan atau menulis bagian tidak teratur kata bahasa Inggris seolah teratur (khusus versi bahasa Inggris)."
       },
       "remediation": {
         "en": "Trace the heart part with a finger while saying the whole word, then write the word in the air three times.",
-        "id": "Untuk bahasa Indonesia, baca kalimat contoh keras-keras lalu tukar satu kata saja sehingga anak mendengar urutan yang benar."
+        "id": "Telusuri bagian bertanda hati dengan jari sambil mengucapkan seluruh kata, lalu tulis kata itu di udara tiga kali."
+      }
+    },
+    {
+      "code": "WORD_ORDER",
+      "description": {
+        "en": "Puts the right words in an unusual order.",
+        "id": "Menyusun kata yang benar dalam urutan yang tidak wajar."
+      },
+      "remediation": {
+        "en": "Read the model sentence aloud, then build it with cards, who card first, and swap only one word at a time.",
+        "id": "Baca kalimat contoh keras-keras, lalu susun dengan kartu, kartu siapa di depan, dan tukar hanya satu kata setiap kali."
       }
     },
     {

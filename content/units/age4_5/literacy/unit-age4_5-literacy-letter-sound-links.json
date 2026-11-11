@@ -1,6 +1,6 @@
 {
   "id": "unit-age4_5-literacy-letter-sound-links",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age4_5",
   "framework": "literacy",
   "strand": "phonics",
@@ -16,8 +16,8 @@
     "id": "Menghubungkan bunyi enam huruf dengan bentuk tulisannya dan menelusuri setiap bentuk sambil mengucapkan bunyinya."
   },
   "rationale": {
-    "en": "Knowing that a written shape stands for a sound is the alphabetic principle. English starts with s, a, t, m, i and n because these letters make many short words (sat, man, tin) and each has one clear main sound. Indonesian starts with the vowels a, i, u and the consonants b, m and s, then joins them straight away into syllable cards (ba, bi, bu, ma, mi, mu), because Indonesian is read syllable by syllable and these letters keep one sound in almost every word. The letter e is left for later in Indonesian because it has two sounds (as in enam and enak).",
-    "id": "Mengetahui bahwa bentuk tulisan mewakili bunyi adalah prinsip alfabet. Versi bahasa Inggris mulai dengan s, a, t, m, i, dan n karena huruf-huruf ini membentuk banyak kata pendek (sat, man, tin) dan masing-masing punya satu bunyi utama yang jelas. Versi bahasa Indonesia mulai dengan vokal a, i, u dan konsonan b, m, s, lalu langsung menggabungkannya menjadi kartu suku kata (ba, bi, bu, ma, mi, mu), karena bahasa Indonesia dibaca suku demi suku dan huruf-huruf ini berbunyi sama di hampir semua kata. Huruf e ditunda karena punya dua bunyi (seperti pada enam dan enak)."
+    "en": "Knowing that a written shape stands for a sound is the alphabetic principle. English starts with s, a, t, m, i and n because these letters make many short words (sat, man, tin) and each has one clear main sound. Indonesian starts with the vowels a, i, u and the consonants b, m and s, then joins them straight away into syllable cards (ba, bi, bu, ma, mi, mu), because Indonesian is read syllable by syllable and these letters keep one sound in almost every word. The letter e is left for later in Indonesian because it has two sounds (as in enam and ekor).",
+    "id": "Mengetahui bahwa bentuk tulisan mewakili bunyi adalah prinsip alfabet. Versi bahasa Inggris mulai dengan s, a, t, m, i, dan n karena huruf-huruf ini membentuk banyak kata pendek (sat, man, tin) dan masing-masing punya satu bunyi utama yang jelas. Versi bahasa Indonesia mulai dengan vokal a, i, u dan konsonan b, m, s, lalu langsung menggabungkannya menjadi kartu suku kata (ba, bi, bu, ma, mi, mu), karena bahasa Indonesia dibaca suku demi suku dan huruf-huruf ini berbunyi sama di hampir semua kata. Huruf e ditunda karena punya dua bunyi (seperti pada enam dan ekor)."
   },
   "outcomes": [
     {
@@ -145,7 +145,7 @@
       "choices": {
         "en": [
           "t",
-          "s",
+          "f",
           "i"
         ],
         "id": [
@@ -156,25 +156,25 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "The sound /t/ is written t.",
+        "en": "The sound /t/ is written t; f has a similar shape.",
         "id": "Bunyi /b/ ditulis b, bukan d yang bentuknya seperti bayangan cermin b."
       },
       "distractorMisconceptions": {
-        "1": "GUESSES_LETTER",
+        "1": "REVERSES_SIMILAR_SHAPES",
         "2": "GUESSES_LETTER"
       }
     },
     {
       "id": "a3",
       "prompt": {
-        "en": "Which word starts with the letter s?",
+        "en": "Which card says \"at\"?",
         "id": "Kartu suku kata mana yang dibaca \"mi\"?"
       },
       "choices": {
         "en": [
-          "sun",
-          "moon",
-          "tap"
+          "at",
+          "an",
+          "ta"
         ],
         "id": [
           "mi",
@@ -184,7 +184,7 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Sun starts with sss, written s.",
+        "en": "a + t reads at. An ends with n; ta has the letters the wrong way round.",
         "id": "m + i dibaca mi. Ma memakai vokal a; im urutannya terbalik."
       },
       "distractorMisconceptions": {
@@ -208,8 +208,8 @@
     {
       "code": "REVERSES_SIMILAR_SHAPES",
       "description": {
-        "en": "Confuses letters with similar shapes or sounds (m and n; b and d).",
-        "id": "Tertukar huruf yang bentuk atau bunyinya mirip (m dan n; b dan d)."
+        "en": "Confuses letters with similar shapes or sounds (m and n; t and f; b and d).",
+        "id": "Tertukar huruf yang bentuk atau bunyinya mirip (m dan n; t dan f; b dan d)."
       },
       "remediation": {
         "en": "Trace the textured card with eyes closed: m has two humps, n has one. For b, the line comes first, then the round tummy.",
@@ -230,8 +230,8 @@
     {
       "code": "ORDER_REVERSED",
       "description": {
-        "en": "Reads a syllable card from right to left (im for mi).",
-        "id": "Membaca kartu suku kata dari kanan ke kiri (im untuk mi)."
+        "en": "Reads a card from right to left (ta for at; im for mi).",
+        "id": "Membaca kartu dari kanan ke kiri (im untuk mi)."
       },
       "remediation": {
         "en": "Put a small green dot under the first letter and sweep a finger from the dot to the right while sounding.",

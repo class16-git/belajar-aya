@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-literacy-persuasive-writing-structure",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "framework": "literacy",
   "strand": "writing",
@@ -17,7 +17,7 @@
   },
   "rationale": {
     "en": "Persuasive writing shows children that supported opinions are stronger, and gives them a structure they will use in many subjects. The English version follows the common opinion - reasons - call to action pattern with linking words (firstly, in addition, most importantly). Indonesian schools teach \"teks persuasi\" with pengenalan isu, rangkaian argumen, pernyataan ajakan and penegasan kembali, using persuasive words such as ayo, mari, sebaiknya and hendaknya, so the Indonesian version uses those parts and words. Evidence must be honest: children use real observations, not invented numbers.",
-    "id": "Menulis persuasi mengajarkan anak bahwa pendapat lebih kuat jika didukung, dan memberi struktur yang akan dipakai di banyak pelajaran. Versi bahasa Inggris mengikuti pola pendapat - alasan - ajakan dengan kata penghubung (firstly, in addition, most importantly). Sekolah di Indonesia mengajarkan teks persuasi dengan pengenalan isu, rangkaian argumen, pernyataan ajakan, dan penegasan kembali, memakai kata ajakan seperti ayo, mari, sebaiknya, dan hendaknya, jadi versi Indonesia memakai bagian dan kata itu. Bukti harus jujur: anak memakai pengamatan nyata, bukan angka karangan."
+    "id": "Menulis persuasi mengajarkan bahwa pendapat yang didukung lebih kuat, dan memberi struktur untuk banyak pelajaran. Versi bahasa Inggris mengikuti pola pendapat - alasan - ajakan dengan kata penghubung (firstly, in addition, most importantly). Sekolah di Indonesia mengajarkan teks persuasi dengan pengenalan isu, rangkaian argumen, pernyataan ajakan, dan penegasan kembali, memakai kata ajakan seperti ayo, mari, sebaiknya, dan hendaknya, jadi versi Indonesia memakai bagian dan kata itu (model SMP, di sini sebagai tantangan). Bukti harus jujur: pengamatan nyata, bukan angka karangan."
   },
   "outcomes": [
     {
@@ -205,7 +205,7 @@
         "id": "Kalimat itu mengajak pembaca melakukan sesuatu."
       },
       "distractorMisconceptions": {
-        "1": "FACT_AS_OPINION",
+        "1": "STATEMENT_NOT_ACTION",
         "2": "PERSONAL_PREFERENCE"
       }
     },
@@ -270,6 +270,17 @@
       "remediation": {
         "en": "Ask: how do you know? If the answer is \"I made it up\", replace it with something seen, done or asked.",
         "id": "Tanyakan: bagaimana kamu tahu? Jika jawabannya \"aku mengarang\", ganti dengan hal yang dilihat, dilakukan, atau ditanyakan."
+      }
+    },
+    {
+      "code": "STATEMENT_NOT_ACTION",
+      "description": {
+        "en": "Writes a statement instead of telling the reader what to do.",
+        "id": "Menulis pernyataan, bukan mengajak pembaca melakukan sesuatu."
+      },
+      "remediation": {
+        "en": "Ask: after reading this, what will the reader do? If nothing, start again with Let's or Please.",
+        "id": "Tanyakan: setelah membaca ini, apa yang akan dilakukan pembaca? Jika tidak ada, mulai lagi dengan Ayo atau Mari."
       }
     },
     {

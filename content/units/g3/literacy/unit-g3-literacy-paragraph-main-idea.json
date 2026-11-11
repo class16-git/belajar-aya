@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-literacy-paragraph-main-idea",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "framework": "literacy",
   "strand": "comprehension",
@@ -98,8 +98,8 @@
   ],
   "guidedExamples": [
     {
-      "en": "Paragraph A (main idea first): \"Cats use their whiskers to find their way. Whiskers can feel small movements in the air. They help a cat know if a gap is wide enough to squeeze through. In the dark, whiskers help a cat sense things it cannot see.\" Main idea: whiskers help cats find their way. Each other sentence is a way they help.",
-      "id": "Paragraf A (deduktif): \"Kumis kucing membantunya mengenali sekitarnya. Kumis itu dapat merasakan gerakan udara yang kecil. Kumis membantu kucing tahu apakah celah cukup lebar untuk dilewati. Dalam gelap, kumis membantu kucing merasakan benda yang tidak terlihat.\" Kalimat utama ada di awal; kalimat lain adalah penjelas."
+      "en": "Paragraph A (main idea first): \"Cats use their whiskers to find their way. Whiskers can feel small movements in the air. They can help a cat tell whether a gap is wide enough to squeeze through. In the dark, whiskers help a cat sense things it cannot see.\" Main idea: whiskers help cats find their way. Each other sentence is a way they help.",
+      "id": "Paragraf A (deduktif): \"Kumis kucing membantunya mengenali sekitarnya. Kumis itu dapat merasakan gerakan udara yang kecil. Kumis dapat membantu kucing mengetahui apakah celah cukup lebar untuk dilewati. Dalam gelap, kumis membantu kucing merasakan benda yang tidak terlihat.\" Kalimat utama ada di awal; kalimat lain adalah penjelas."
     },
     {
       "en": "Paragraph B (main idea last): \"On Sunday morning Dad sweeps the yard. Mum washes the clothes. My brother and I water the plants and feed the chickens. Everyone in our family helps to look after the house.\" The last sentence covers every detail, so it is the main idea. \"Feeding the chickens\" is only a detail.",
@@ -130,12 +130,12 @@
       "choices": {
         "en": [
           "Whiskers help cats find their way.",
-          "Cats can see in the dark.",
+          "Whiskers can feel small movements in the air.",
           "Animals have many body parts."
         ],
         "id": [
           "Kumis membantu kucing mengenali sekitarnya.",
-          "Kucing bisa melihat dalam gelap.",
+          "Kumis dapat merasakan gerakan udara yang kecil.",
           "Hewan punya banyak bagian tubuh."
         ]
       },
@@ -215,12 +215,12 @@
         "en": [
           "At the end",
           "At the start",
-          "In the middle"
+          "In every sentence"
         ],
         "id": [
           "Di akhir (induktif)",
           "Di awal (deduktif)",
-          "Di tengah"
+          "Di setiap kalimat"
         ]
       },
       "answer": 0,
@@ -341,7 +341,7 @@
       "kind": "original",
       "title": "Atlas original literacy unit (bilingual EN/ID design)",
       "verification": "not_applicable",
-      "note": "Whisker facts in Paragraph A are general school science; a reviewer should confirm wording."
+      "note": "Whisker facts in Paragraph A are general school science, simplified and hedged (can help); a reviewer should confirm wording."
     }
   ],
   "rights": "original",

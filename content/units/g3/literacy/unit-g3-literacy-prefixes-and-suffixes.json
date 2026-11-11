@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-literacy-prefixes-and-suffixes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "framework": "literacy",
   "strand": "vocabulary",
@@ -46,7 +46,7 @@
     },
     {
       "en": "Always say the meaning of the root first, then the new meaning: kind means nice; unkind means not nice.",
-      "id": "Selalu sebut makna kata dasar dulu, lalu makna barunya: makan adalah kegiatan; makanan adalah benda yang dimakan."
+      "id": "Selalu sebut makna kata dasar dulu, lalu makna barunya: makan adalah kegiatan; makanan adalah benda yang dimakan. Ter- juga bisa berarti tidak sengaja atau sudah (tertidur, terbawa); di unit ini kita pakai ter- = paling dengan kata sifat."
     },
     {
       "en": "Show that not every word that starts with the same letters has a prefix: uncle is not un + cle, and under is not un + der.",
@@ -108,8 +108,8 @@
       "id": "Penjumlahan kata: bentuk sepuluh kata dari kartu dan tulis makna masing-masing."
     },
     {
-      "en": "Real or not: decide whether a built word is real (English: unhappy yes, unrun no; Indonesian: bertopi yes, berbesar no).",
-      "id": "Asli atau tidak: tentukan apakah kata yang dibentuk itu kata yang wajar (bertopi ya, berbesar tidak; versi Inggris: unhappy ya, unrun tidak)."
+      "en": "Real or not: decide whether a built word is real (English: unhappy yes, unrun no; Indonesian: bertopi yes, berminum no).",
+      "id": "Asli atau tidak: tentukan apakah kata yang dibentuk itu kata yang wajar (bertopi ya, berminum tidak; versi Inggris: unhappy ya, unrun tidak)."
     },
     {
       "en": "Spot them in a book: list five words with the target affixes and split each one.",
@@ -159,8 +159,8 @@
         ],
         "id": [
           "makanan",
-          "bermakan",
-          "termakan"
+          "termakan",
+          "bermakan"
         ]
       },
       "answer": 0,
@@ -197,8 +197,8 @@
         "id": "Beras adalah kata dasar; tanpa ber tersisa as, yang bukan kata dasarnya."
       },
       "distractorMisconceptions": {
-        "1": "LETTERS_AS_AFFIX",
-        "2": "LETTERS_AS_AFFIX"
+        "1": "MISSES_REAL_AFFIX",
+        "2": "MISSES_REAL_AFFIX"
       }
     },
     {
@@ -211,11 +211,11 @@
         "en": [
           "useless",
           "useful",
-          "reuse"
+          "reuseful"
         ],
         "id": [
           "bersepeda",
-          "sepedaan",
+          "persepeda",
           "tersepeda"
         ]
       },
@@ -265,10 +265,21 @@
       }
     },
     {
+      "code": "MISSES_REAL_AFFIX",
+      "description": {
+        "en": "Does not recognise a real affix and root (unlock = un + lock; bertopi = ber + topi).",
+        "id": "Tidak mengenali imbuhan dan kata dasar yang nyata (bertopi = ber + topi; berlari = ber + lari)."
+      },
+      "remediation": {
+        "en": "Cover the affix and read what is left: if it is a word with a related meaning (lock, topi), the word has an affix.",
+        "id": "Tutup imbuhannya dan baca sisanya: jika sisanya kata yang maknanya berkaitan (topi, lari), kata itu berimbuhan."
+      }
+    },
+    {
       "code": "OPPOSITE_AFFIX",
       "description": {
         "en": "Picks the affix with the opposite meaning (useful for useless).",
-        "id": "Memilih imbuhan dengan makna berlawanan."
+        "id": "Memilih bentuk imbuhan yang tidak lazim."
       },
       "remediation": {
         "en": "Draw two jars: a full one for -ful and an empty one for -less, and sort words into them.",

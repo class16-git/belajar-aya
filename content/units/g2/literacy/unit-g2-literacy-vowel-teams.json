@@ -1,12 +1,12 @@
 {
   "id": "unit-g2-literacy-vowel-teams",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "literacy",
   "strand": "phonics",
   "title": {
     "en": "Vowel teams and diphthongs",
-    "id": "Tim vokal dan diftong"
+    "id": "Diftong dan deret vokal"
   },
   "prerequisites": [
     "unit-g1-literacy-consonant-digraphs"
@@ -17,7 +17,7 @@
   },
   "rationale": {
     "en": "Both languages have letters that team up to make a vowel sound, but the teaching problem is different. In English the challenge is spelling: the same long vowel can be written several ways (rain, play, cake), so children learn the common teams and when they appear. In Indonesian spelling is regular, so the challenge is syllables: ai in pantai is one sound (pan-tai) but ai in main is two vowels in two syllables (ma-in). Reading and dividing syllables correctly is what makes Indonesian reading fluent, so the Indonesian version focuses there.",
-    "id": "Kedua bahasa punya huruf yang bergabung membentuk bunyi vokal, tetapi masalah pengajarannya berbeda. Dalam bahasa Inggris tantangannya ejaan: satu vokal panjang bisa ditulis dengan beberapa cara (rain, play, cake), jadi anak mempelajari tim yang umum dan kapan muncul. Ejaan bahasa Indonesia teratur, jadi tantangannya suku kata: ai pada pantai adalah satu bunyi (pan-tai), tetapi ai pada main adalah dua vokal di dua suku kata (ma-in). Membaca dan memenggal suku kata dengan benar membuat bacaan bahasa Indonesia lancar, jadi versi Indonesia berfokus di situ."
+    "id": "Kedua bahasa punya huruf yang bergabung membentuk bunyi vokal, tetapi masalah pengajarannya berbeda. Dalam bahasa Inggris tantangannya ejaan: satu vokal panjang bisa ditulis dengan beberapa cara (rain, play, cake), jadi anak mempelajari tim yang umum dan kapan muncul. Ejaan bahasa Indonesia teratur, jadi tantangannya suku kata (diftong ei, seperti pada survei, jarang ditemui anak): ai pada pantai adalah satu bunyi (pan-tai), tetapi ai pada main adalah dua vokal di dua suku kata (ma-in). Memenggal suku kata dengan benar membuat bacaan lancar, jadi versi Indonesia berfokus di situ."
   },
   "outcomes": [
     {
@@ -99,7 +99,7 @@
     },
     {
       "en": "English: spelling choice. \"Rain\" uses ai in the middle of a word; \"play\" uses ay at the end. Write tr__ for tree: ee.",
-      "id": "Bahasa Indonesia: baca kalimat \"Angin sepoi-sepoi bertiup di pantai.\" Tandai se-poi dan pan-tai. Lalu \"Adik main air di sungai.\" Tandai ma-in, a-ir, su-ngai."
+      "id": "Bahasa Indonesia: baca kalimat \"Angin sepoi-sepoi bertiup di pantai.\" Tandai se-poi dan pan-tai. Lalu \"Adik main air bersama Ayah di sungai.\" Tandai ma-in, a-ir, su-ngai."
     }
   ],
   "practice": [

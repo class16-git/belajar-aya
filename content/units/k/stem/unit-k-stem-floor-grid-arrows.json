@@ -1,6 +1,6 @@
 {
   "id": "unit-k-stem-floor-grid-arrows",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "stem",
   "strand": "algorithms",
@@ -89,8 +89,8 @@
   },
   "materials": [
     {
-      "en": "Masking tape (about 5 metres) for a 4 by 4 floor grid",
-      "id": "Selotip kertas (sekitar 5 meter) untuk petak lantai 4 kali 4"
+      "en": "Masking tape (one roll, about 20–25 metres) for a 4 by 4 floor grid, or about 5 metres if you mark only the corners of the squares with small crosses",
+      "id": "Selotip kertas (satu gulung, sekitar 20–25 meter) untuk petak lantai 4 kali 4, atau sekitar 5 meter jika hanya menandai sudut kotak dengan tanda silang kecil"
     },
     {
       "en": "About 12 arrow cards cut by the adult from card, with thick arrows",
@@ -190,11 +190,11 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Moving right is the only way towards teddy.",
-        "id": "Bergerak ke kanan adalah satu-satunya arah menuju boneka."
+        "en": "The shortest program starts with a right arrow, because teddy is to the right.",
+        "id": "Program terpendek dimulai dengan panah kanan, karena boneka ada di sebelah kanan."
       },
       "distractorMisconceptions": {
-        "1": "COUNTS_DIRECTIONS_NOT_SQUARES"
+        "1": "ARROW_DIRECTION_MIXUP"
       }
     },
     {
@@ -290,6 +290,17 @@
       "remediation": {
         "en": "Ask two family members to walk two different programs at the same time and both arrive at teddy.",
         "id": "Minta dua anggota keluarga menjalankan dua program berbeda bersamaan dan keduanya sampai ke boneka."
+      }
+    },
+    {
+      "code": "ARROW_DIRECTION_MIXUP",
+      "description": {
+        "en": "Picks an arrow that does not point towards the goal.",
+        "id": "Memilih panah yang tidak mengarah ke tujuan."
+      },
+      "remediation": {
+        "en": "Stand on the start, point at teddy, then pick the card that points the same way.",
+        "id": "Berdiri di kotak mulai, tunjuk boneka, lalu pilih kartu yang menunjuk ke arah yang sama."
       }
     }
   ],

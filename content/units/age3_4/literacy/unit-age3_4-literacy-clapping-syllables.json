@@ -1,6 +1,6 @@
 {
   "id": "unit-age3_4-literacy-clapping-syllables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "framework": "literacy",
   "strand": "phonological_awareness",
@@ -14,8 +14,8 @@
     "id": "Menepuk dan menghitung suku kata dalam nama dan kata lisan yang terdiri atas satu sampai empat suku kata."
   },
   "rationale": {
-    "en": "Hearing that words break into smaller sound chunks is an early step towards reading. The two languages need different emphasis. Indonesian syllables are clear and regular (ku-cing, se-pa-tu), and the syllable becomes the main unit for learning to read later (ba-ca, bu-ku), so the Indonesian version also asks the child to say each syllable back. English syllables are less tidy and often contain blended consonants (but-ter-fly, el-e-phant), so the English version stays with clapping the beats and does not split words into written parts.",
-    "id": "Mendengar bahwa kata bisa dipecah menjadi potongan bunyi yang lebih kecil adalah langkah awal menuju membaca. Kedua bahasa membutuhkan penekanan berbeda. Suku kata bahasa Indonesia jelas dan teratur (ku-cing, se-pa-tu), dan suku kata akan menjadi satuan utama saat belajar membaca nanti (ba-ca, bu-ku), jadi versi bahasa Indonesia juga meminta anak mengucapkan ulang tiap suku kata. Suku kata bahasa Inggris kurang rapi dan sering berisi gugus konsonan (but-ter-fly, el-e-phant), jadi versi bahasa Inggris cukup menepuk ketukannya tanpa memecah kata tertulis."
+    "en": "Hearing that words break into smaller sound chunks is an early step towards reading. The two languages need different emphasis. Indonesian syllables are clear and regular (ku-cing, se-pa-tu), and the syllable becomes the main unit for learning to read later (ba-ca, bu-ku), so the Indonesian version also asks the child to say each syllable back. English syllables are less tidy and often have weak, unstressed beats and unclear boundaries (el-e-phant, straw-ber-ry), so the English version stays with clapping the beats and does not split words into written parts.",
+    "id": "Mendengar bahwa kata bisa dipecah menjadi potongan bunyi yang lebih kecil adalah langkah awal menuju membaca. Kedua bahasa membutuhkan penekanan berbeda. Suku kata bahasa Indonesia jelas dan teratur (ku-cing, se-pa-tu), dan suku kata akan menjadi satuan utama saat belajar membaca nanti (ba-ca, bu-ku), jadi versi bahasa Indonesia juga meminta anak mengucapkan ulang tiap suku kata. Suku kata bahasa Inggris kurang rapi dan sering punya ketukan lemah dan batas yang kurang jelas (el-e-phant, straw-ber-ry), jadi versi bahasa Inggris cukup menepuk ketukannya tanpa memecah kata tertulis."
   },
   "outcomes": [
     {
@@ -93,8 +93,8 @@
       "id": "Parade nama: tepuk nama setiap anggota keluarga, lalu jajarkan mainan dari tepukan paling sedikit ke paling banyak."
     },
     {
-      "en": "Stepping game: take one big step for each syllable on the way to the bath (English: towel = 2 steps; Indonesian: han-duk = 2 steps).",
-      "id": "Permainan melangkah: ambil satu langkah besar untuk setiap suku kata dalam perjalanan ke kamar mandi (han-duk = 2 langkah; bahasa Inggris towel = 2 langkah)."
+      "en": "Stepping game: take one big step for each syllable on the way to the bath (English: bath-tub = 2 steps; Indonesian: han-duk = 2 steps).",
+      "id": "Permainan melangkah: ambil satu langkah besar untuk setiap suku kata dalam perjalanan ke kamar mandi (han-duk = 2 langkah; bahasa Inggris bath-tub = 2 langkah)."
     },
     {
       "en": "Drum it: tap the syllables of foods at lunch on the table (English: rice, carrot; Indonesian: na-si, wor-tel).",
@@ -133,23 +133,23 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Which word has more claps: \"ball\" or \"teddy\"?",
-        "id": "Kata mana yang tepukannya lebih banyak: \"bola\" atau \"boneka\"?"
+        "en": "Which word has more claps: \"bus\" or \"caterpillar\"?",
+        "id": "Kata mana yang tepukannya lebih banyak: \"bus\" atau \"kupu-kupu\"?"
       },
       "choices": {
         "en": [
-          "teddy",
-          "ball"
+          "caterpillar",
+          "bus"
         ],
         "id": [
-          "boneka",
-          "bola"
+          "kupu-kupu",
+          "bus"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Ted-dy has two claps and ball has one, even though a ball can be bigger than a teddy.",
-        "id": "Bo-ne-ka punya tiga tepukan dan bo-la punya dua, walaupun bola bisa lebih besar dari boneka."
+        "en": "Cat-er-pil-lar has four claps and bus has one, even though a bus is much bigger.",
+        "id": "Ku-pu-ku-pu punya empat tepukan dan bus hanya satu, walaupun bus jauh lebih besar."
       },
       "distractorMisconceptions": {
         "1": "BIG_THING_LONG_WORD"
@@ -179,8 +179,8 @@
         "id": "Jam hanya satu ketukan; ku-cing dua dan u-lat bu-lu empat. Kata Indonesia satu suku kata memang jarang."
       },
       "distractorMisconceptions": {
-        "1": "MISSES_A_SYLLABLE",
-        "2": "MISSES_A_SYLLABLE"
+        "1": "WHOLE_WORD_ONE_BEAT",
+        "2": "WHOLE_WORD_ONE_BEAT"
       }
     },
     {
@@ -233,6 +233,17 @@
       "remediation": {
         "en": "Sing the word on a tune, one note per beat, and clap only on the notes.",
         "id": "Nyanyikan kata dengan nada, satu nada per ketukan, dan tepuk hanya pada nadanya."
+      }
+    },
+    {
+      "code": "WHOLE_WORD_ONE_BEAT",
+      "description": {
+        "en": "Claps once for the whole word instead of once per beat.",
+        "id": "Menepuk sekali untuk seluruh kata, bukan sekali per ketukan."
+      },
+      "remediation": {
+        "en": "Use the chin check: hand under the chin, say the word slowly and clap each time the jaw drops.",
+        "id": "Pakai cek dagu: tangan di bawah dagu, ucapkan kata pelan-pelan dan tepuk setiap kali rahang turun."
       }
     },
     {

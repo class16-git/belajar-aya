@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-literacy-argumentative-essay-planning",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "literacy",
   "strand": "writing",
@@ -13,11 +13,11 @@
   ],
   "objective": {
     "en": "Plan an argumentative essay with a precise claim, two reasons each supported by evidence and reasoning, a fair counterclaim with a rebuttal, and a conclusion, using a paragraph-by-paragraph outline.",
-    "id": "Merencanakan esai argumentasi dengan klaim yang tepat, dua alasan yang masing-masing didukung bukti dan penalaran, sanggahan yang adil beserta tanggapannya, dan simpulan, memakai kerangka per paragraf."
+    "id": "Merencanakan esai argumentasi dengan klaim yang tepat, dua alasan yang masing-masing didukung bukti dan penalaran, klaim tandingan yang adil beserta sanggahannya, dan simpulan, memakai kerangka per paragraf."
   },
   "rationale": {
-    "en": "Argument goes beyond persuasion: instead of only pushing one side, the writer weighs the other side fairly and answers it with reasons. Planning first is where most of the thinking happens. The English version uses the claim - evidence - reasoning - counterclaim - rebuttal model. Indonesian schools teach \"teks eksposisi\" with tesis, rangkaian argumen and penegasan ulang; this unit uses those terms and adds \"sanggahan\" (counterclaim) and \"tanggapan\" (rebuttal), with connectors such as \"memang... namun\" that suit Indonesian academic writing.",
-    "id": "Argumentasi melampaui persuasi: penulis tidak hanya mendorong satu sisi, tetapi menimbang sisi lain dengan adil dan menjawabnya dengan alasan. Sebagian besar proses berpikir terjadi saat merencanakan. Versi bahasa Inggris memakai model claim - evidence - reasoning - counterclaim - rebuttal. Sekolah di Indonesia mengajarkan teks eksposisi dengan tesis, rangkaian argumen, dan penegasan ulang; unit ini memakai istilah itu dan menambahkan sanggahan serta tanggapan, dengan penghubung seperti \"memang... namun\" yang cocok untuk tulisan ilmiah berbahasa Indonesia."
+    "en": "Argument goes beyond persuasion: instead of only pushing one side, the writer weighs the other side fairly and answers it with reasons. Planning first is where most of the thinking happens. The English version uses the claim - evidence - reasoning - counterclaim - rebuttal model. Indonesian schools teach \"teks eksposisi\" with tesis, rangkaian argumen and penegasan ulang; this unit uses those terms and adds \"klaim tandingan\" (counterclaim) and \"sanggahan\" (rebuttal), with connectors such as \"memang... namun\" that suit Indonesian academic writing.",
+    "id": "Argumentasi melampaui persuasi: penulis tidak hanya mendorong satu sisi, tetapi menimbang sisi lain dengan adil dan menjawabnya dengan alasan. Sebagian besar proses berpikir terjadi saat merencanakan. Versi bahasa Inggris memakai model claim - evidence - reasoning - counterclaim - rebuttal. Sekolah di Indonesia mengajarkan teks eksposisi dengan tesis, rangkaian argumen, dan penegasan ulang; unit ini memakai istilah itu dan menambahkan klaim tandingan serta sanggahan, dengan penghubung seperti \"memang... namun\" yang cocok untuk tulisan ilmiah berbahasa Indonesia."
   },
   "outcomes": [
     {
@@ -30,7 +30,7 @@
     },
     {
       "en": "States a fair counterclaim and answers it with a rebuttal.",
-      "id": "Menyatakan sanggahan yang adil dan menjawabnya dengan tanggapan."
+      "id": "Menyatakan klaim tandingan yang adil dan menjawabnya dengan sanggahan."
     },
     {
       "en": "Produces a five-paragraph outline ready for drafting.",
@@ -72,7 +72,7 @@
     },
     {
       "en": "Fill in the outline: claim, reason 1, reason 2, counterclaim and rebuttal, conclusion.",
-      "id": "Isi kerangka: tesis, argumen 1, argumen 2, sanggahan dan tanggapan, penegasan ulang."
+      "id": "Isi kerangka: tesis, argumen 1, argumen 2, klaim tandingan dan sanggahan, penegasan ulang."
     },
     {
       "en": "Check the outline against the success criteria before drafting.",
@@ -111,7 +111,7 @@
     },
     {
       "en": "Counterclaim and rebuttal: \"Some people argue that daily homework builds good habits. This is a fair point; however, a habit such as daily reading can be built without set homework, and fewer homework days leave time for it.\"",
-      "id": "Sanggahan dan tanggapan: \"Memang ada yang berpendapat bahwa PR setiap hari membangun kebiasaan baik. Pendapat ini masuk akal; namun, kebiasaan seperti membaca setiap hari bisa dibangun tanpa PR, dan hari tanpa PR justru memberi waktu untuk itu.\""
+      "id": "Klaim tandingan dan sanggahan: \"Memang ada yang berpendapat bahwa PR setiap hari membangun kebiasaan baik. Pendapat ini masuk akal; namun, kebiasaan seperti membaca setiap hari bisa dibangun tanpa PR, dan hari tanpa PR justru memberi waktu untuk itu.\""
     }
   ],
   "practice": [
@@ -121,11 +121,11 @@
     },
     {
       "en": "Swap sides: write the strongest counterclaim you can against your own claim, then improve your rebuttal.",
-      "id": "Tukar posisi: tulis sanggahan terkuat terhadap klaimmu sendiri, lalu perbaiki tanggapanmu."
+      "id": "Tukar posisi: tulis klaim tandingan terkuat terhadap klaimmu sendiri, lalu perbaiki sanggahanmu."
     },
     {
       "en": "Colour-code a finished outline: claim blue, evidence green, reasoning yellow, counterclaim red.",
-      "id": "Beri kode warna pada kerangka yang selesai: tesis biru, bukti hijau, penalaran kuning, sanggahan merah."
+      "id": "Beri kode warna pada kerangka yang selesai: tesis biru, bukti hijau, penalaran kuning, klaim tandingan merah."
     }
   ],
   "assessment": [
@@ -161,7 +161,7 @@
       "id": "a2",
       "prompt": {
         "en": "What is the job of a rebuttal?",
-        "id": "Apa fungsi tanggapan terhadap sanggahan?"
+        "id": "Apa fungsi sanggahan terhadap klaim tandingan?"
       },
       "choices": {
         "en": [
@@ -178,7 +178,7 @@
       "answer": 0,
       "explanation": {
         "en": "A rebuttal responds to the counterclaim with reasoning or evidence.",
-        "id": "Tanggapan menjawab sanggahan dengan penalaran atau bukti."
+        "id": "Sanggahan menjawab klaim tandingan dengan penalaran atau bukti."
       },
       "distractorMisconceptions": {
         "1": "REPEATS_NOT_REBUTS",
@@ -217,7 +217,7 @@
       "id": "a4",
       "prompt": {
         "en": "How should a counterclaim be presented?",
-        "id": "Bagaimana sanggahan sebaiknya disajikan?"
+        "id": "Bagaimana klaim tandingan sebaiknya disajikan?"
       },
       "choices": {
         "en": [
@@ -269,7 +269,7 @@
       "code": "REPEATS_NOT_REBUTS",
       "description": {
         "en": "Answers a counterclaim by restating the claim.",
-        "id": "Menjawab sanggahan dengan mengulang tesis."
+        "id": "Menjawab klaim tandingan dengan mengulang tesis."
       },
       "remediation": {
         "en": "Use the frame \"This is a fair point; however, ... because ...\" and require a new reason after because.",
@@ -335,7 +335,7 @@
   "extension": [
     {
       "en": "Draft the full essay from your outline and hold a calm family debate where each side presents and rebuts.",
-      "id": "Kembangkan esai lengkap dari kerangkamu dan adakan debat keluarga yang tenang, setiap pihak menyampaikan pendapat dan tanggapan."
+      "id": "Kembangkan esai lengkap dari kerangkamu dan adakan debat keluarga yang tenang, setiap pihak menyampaikan pendapat dan sanggahan."
     }
   ],
   "accessibility": [

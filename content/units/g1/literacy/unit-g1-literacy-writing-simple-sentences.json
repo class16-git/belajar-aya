@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-literacy-writing-simple-sentences",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "literacy",
   "strand": "writing",
@@ -16,8 +16,8 @@
     "id": "Menulis kalimat sederhana yang menyebut siapa dan melakukan apa, diawali huruf kapital, berspasi antarkata, dan diakhiri titik."
   },
   "rationale": {
-    "en": "A sentence is a complete thought, and children learn this best by saying it aloud before writing it. Both languages need a who part and a doing part, a capital letter and a full stop. They differ in grammar: English sentences need an article (the, a) and the verb must agree (the cat naps, the cats nap), while Indonesian sentences have no articles and the verb does not change (kucing tidur, kucing-kucing tidur) but follow a clear subject-predicate order (Adik makan pisang). Each version practises the grammar that its own language needs.",
-    "id": "Kalimat adalah pikiran yang lengkap, paling mudah dipelajari dengan diucapkan dulu sebelum ditulis. Kedua bahasa membutuhkan bagian siapa dan bagian melakukan apa, huruf kapital, dan titik. Tata bahasanya berbeda: kalimat bahasa Inggris memerlukan kata sandang (the, a) dan kata kerjanya harus sesuai (the cat naps, the cats nap), sedangkan kalimat bahasa Indonesia tidak memakai kata sandang dan kata kerjanya tidak berubah (kucing tidur, kucing-kucing tidur) tetapi mengikuti urutan subjek-predikat yang jelas (Adik makan pisang). Setiap versi melatih tata bahasa yang dibutuhkan bahasanya sendiri."
+    "en": "A sentence is a complete thought, and children learn this best by saying it aloud before writing it. Both languages need a who part and a doing part, a capital letter and a full stop. They differ in grammar: English sentences need an article (the, a) and the verb must agree (the cat naps, the cats nap), while Indonesian has no articles like a and the and the verb does not change (kucing tidur, kucing-kucing tidur) but follow a clear subject-predicate order (Adik makan pisang). Each version practises the grammar that its own language needs.",
+    "id": "Kalimat adalah pikiran yang lengkap, paling mudah dipelajari lewat ucapan sebelum tulisan. Kedua bahasa membutuhkan bagian siapa dan bagian melakukan apa, huruf kapital, dan titik. Tata bahasanya berbeda: kalimat bahasa Inggris memerlukan kata sandang (the, a) dan kata kerjanya harus sesuai (the cat naps, the cats nap), sedangkan bahasa Indonesia tidak memakai kata sandang seperti a dan the dan kata kerjanya tidak berubah (kucing tidur, kucing-kucing tidur), tetapi mengikuti urutan subjek-predikat yang jelas (Adik makan pisang). Setiap versi melatih tata bahasanya sendiri."
   },
   "outcomes": [
     {
@@ -153,14 +153,14 @@
       },
       "choices": {
         "en": [
-          "My cat is black.",
-          "my dog is brown.",
-          "Our hen is white"
+          "My cat sleeps.",
+          "my dog runs.",
+          "Our hen eats"
         ],
         "id": [
-          "Kucingku hitam.",
-          "anjingku cokelat.",
-          "Ayamku putih"
+          "Kucingku tidur.",
+          "anjingku berlari.",
+          "Ayamku makan"
         ]
       },
       "answer": 0,
@@ -188,7 +188,7 @@
         "id": [
           "Ibu memasak nasi.",
           "Memasak nasi Ibu.",
-          "Nasi memasak Ibu."
+          "Memasak nasi."
         ]
       },
       "answer": 0,

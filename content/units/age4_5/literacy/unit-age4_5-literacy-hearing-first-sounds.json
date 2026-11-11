@@ -1,12 +1,12 @@
 {
   "id": "unit-age4_5-literacy-hearing-first-sounds",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age4_5",
   "framework": "literacy",
   "strand": "phonological_awareness",
   "title": {
     "en": "I spy a first sound",
-    "id": "Aku melihat bunyi awal"
+    "id": "Tebak bunyi awal"
   },
   "prerequisites": [
     "unit-age3_4-literacy-hearing-rhyme"
@@ -100,7 +100,7 @@
       "id": "a1",
       "prompt": {
         "en": "What is the first sound in \"moon\"?",
-        "id": "Apa bunyi awal kata \"meja\"?"
+        "id": "Apa bunyi awal kata \"makan\"?"
       },
       "choices": {
         "en": [
@@ -110,14 +110,14 @@
         ],
         "id": [
           "/m/ (mmm)",
-          "/j/",
+          "/n/",
           "\"em\", nama hurufnya"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Moon starts with the sound mmm. The letter name \"em\" is not the sound.",
-        "id": "Me-ja diawali suku me, dengan bunyi pertama mmm. Nama huruf \"em\" bukan bunyinya."
+        "en": "Moon starts with the sound mmm; /n/ is its last sound. The letter name \"em\" is not the sound.",
+        "id": "Ma-kan diawali suku ma, dengan bunyi pertama mmm; /n/ adalah bunyi terakhirnya. Nama huruf \"em\" bukan bunyinya."
       },
       "distractorMisconceptions": {
         "1": "LISTENS_TO_END",
@@ -138,14 +138,14 @@
         ],
         "id": [
           "sendok",
-          "bola",
-          "meja"
+          "cangkir",
+          "pengki"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Sun and sock both start with sss.",
-        "id": "Sapu dan sendok sama-sama diawali sss."
+        "en": "Sun and sock both start with sss. Fish starts with a sound made in a similar way; the moon goes with the sun in meaning.",
+        "id": "Sapu dan sendok sama-sama diawali sss. Cangkir diawali bunyi /c/ yang mirip; pengki berhubungan arti dengan sapu."
       },
       "distractorMisconceptions": {
         "1": "SIMILAR_SOUNDS",
@@ -183,12 +183,12 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "The child says \"bo\" for \"bola\". What is the next step?",
+        "en": "The child says \"so\" for \"sock\". What is the next step?",
         "id": "Anak mengucapkan \"bo\" untuk \"bola\". Apa langkah berikutnya?"
       },
       "choices": {
         "en": [
-          "Ask for just the first sound: /b/",
+          "Ask for just the first sound: sss",
           "Tell the child the answer is wrong",
           "Move to a new word at once"
         ],
@@ -200,7 +200,7 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "\"Bo\" is the first syllable, which is a good step. Ask what the very first sound of bo is.",
+        "en": "\"So\" is the start of the word, which is a good step. Ask for the very first sound only: sss.",
         "id": "\"Bo\" adalah suku kata pertama, langkah yang bagus. Tanyakan apa bunyi paling awal dari bo."
       },
       "distractorMisconceptions": {
@@ -236,18 +236,18 @@
       "code": "SIMILAR_SOUNDS",
       "description": {
         "en": "Confuses sounds made in a similar way, such as /s/ and /f/.",
-        "id": "Tertukar bunyi yang dibuat dengan cara mirip, seperti /s/ dan /f/."
+        "id": "Tertukar bunyi yang dibuat dengan cara mirip, seperti /s/ dan /c/."
       },
       "remediation": {
         "en": "Use a small mirror: /s/ shows teeth together, /f/ shows the top teeth on the lip.",
-        "id": "Pakai cermin kecil: /s/ memperlihatkan gigi rapat, /f/ memperlihatkan gigi atas di bibir bawah."
+        "id": "Pakai cermin kecil: /s/ adalah desis panjang dengan gigi rapat, /c/ adalah bunyi pendek dengan lidah menyentuh langit-langit."
       }
     },
     {
       "code": "GUESSES_FROM_PICTURE",
       "description": {
         "en": "Picks the object that goes with the target in meaning (sun and moon).",
-        "id": "Memilih benda yang artinya berhubungan dengan sasaran (misalnya matahari dengan bulan)."
+        "id": "Memilih benda yang artinya berhubungan dengan sasaran (misalnya pengki dengan sapu)."
       },
       "remediation": {
         "en": "Say the words without showing the objects, then show them only after the child decides.",

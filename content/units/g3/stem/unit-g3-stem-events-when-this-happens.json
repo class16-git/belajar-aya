@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-stem-events-when-this-happens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "framework": "stem",
   "strand": "block_coding",
@@ -135,8 +135,8 @@
       "id": "Susun tiga skrip untuk tiga tokoh, masing-masing dengan event berbeda. Jalankan dalam urutan acak."
     },
     {
-      "en": "Design a 'pet' game: when fed, the pet dances; when patted, it says 'purr'; when the green card is shown, it sleeps. Test it, note one thing that confused the players, and change that script.",
-      "id": "Rancang permainan 'hewan peliharaan': ketika diberi makan, hewan menari; ketika dielus, ia berkata 'purr'; ketika kartu hijau ditunjukkan, ia tidur. Uji, catat satu hal yang membingungkan pemain, dan ubah skrip itu."
+      "en": "Design a 'pet' game: when fed, the pet dances; when patted, it says 'meow'; when the green card is shown, it sleeps. Test it, note one thing that confused the players, and change that script.",
+      "id": "Rancang permainan 'hewan peliharaan': ketika diberi makan, hewan menari; ketika dielus, ia berkata 'meong'; ketika kartu hijau ditunjukkan, ia tidur. Uji, catat satu hal yang membingungkan pemain, dan ubah skrip itu."
     },
     {
       "en": "Optional on a computer: rebuild the pet game in a free block tool, looking for event blocks that start each stack.",
@@ -225,7 +225,7 @@
       },
       "distractorMisconceptions": {
         "1": "ONE_SCRIPT_PER_EVENT",
-        "2": "ONE_SCRIPT_PER_EVENT"
+        "2": "SHARED_EVENT_CLASH"
       }
     },
     {
@@ -253,7 +253,7 @@
       },
       "distractorMisconceptions": {
         "1": "ONE_ACTION_PER_EVENT",
-        "2": "ONE_ACTION_PER_EVENT"
+        "2": "ADDS_INSTEAD_OF_MULTIPLYING"
       },
       "check": {
         "expression": "3 × 2",
@@ -315,6 +315,28 @@
       "remediation": {
         "en": "Lay the three stacks side by side, run each and tick every action card as it is done.",
         "id": "Letakkan tiga tumpukan berdampingan, jalankan masing-masing, dan centang setiap kartu aksi saat dilakukan."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD_OF_MULTIPLYING",
+      "description": {
+        "en": "Adds the number of scripts and the number of actions instead of multiplying.",
+        "id": "Menjumlahkan banyak skrip dan banyak aksi, bukan mengalikan."
+      },
+      "remediation": {
+        "en": "Run each script in turn and make one tally mark per action; count the marks: 2, 4, 6.",
+        "id": "Jalankan setiap skrip bergantian dan buat satu turus per aksi; hitung turusnya: 2, 4, 6."
+      }
+    },
+    {
+      "code": "SHARED_EVENT_CLASH",
+      "description": {
+        "en": "Thinks two scripts on one event cancel each other out.",
+        "id": "Mengira dua skrip pada satu event saling membatalkan."
+      },
+      "remediation": {
+        "en": "Give two people the same clap script and clap once; both act, nothing cancels.",
+        "id": "Beri dua orang skrip tepukan yang sama dan bertepuk sekali; keduanya bertindak, tidak ada yang batal."
       }
     }
   ],

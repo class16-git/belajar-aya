@@ -1,6 +1,6 @@
 {
   "id": "unit-k-stem-rolls-or-slides",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "stem",
   "strand": "science_inquiry",
@@ -76,8 +76,8 @@
     ],
     "pictorial": [
       {
-        "en": "Draw each object in a two-column chart: rolled, slid or stopped.",
-        "id": "Gambar setiap benda di bagan dua kolom: menggelinding, meluncur atau berhenti."
+        "en": "Draw each object in a two-column chart: rolled / slid or stayed still.",
+        "id": "Gambar setiap benda di bagan dua kolom: menggelinding / meluncur atau diam."
       }
     ],
     "abstract": [
@@ -103,8 +103,8 @@
   ],
   "preparation": [
     {
-      "en": "Set up the ramp on the floor and lay the hoops at the bottom, one on each side.",
-      "id": "Pasang papan di lantai dan letakkan lingkaran di bawah, satu di setiap sisi."
+      "en": "Set up the ramp on the floor and lay the hoops at the bottom, one on each side. Label one hoop 'rolled' and the other 'slid or stayed still'.",
+      "id": "Pasang papan di lantai dan letakkan lingkaran di bawah, satu di setiap sisi. Beri label satu lingkaran 'menggelinding' dan yang lain 'meluncur atau diam'."
     }
   ],
   "guidedExamples": [
@@ -128,7 +128,7 @@
     },
     {
       "en": "Challenge: make the book move down the ramp by laying it on two toilet-roll tubes as rollers. Test, then improve by adding a third tube.",
-      "id": "Tantangan: buat buku bergerak turun dengan meletakkannya di atas dua tabung tisu toilet sebagai roda. Uji, lalu perbaiki dengan menambah tabung ketiga."
+      "id": "Tantangan: buat buku bergerak turun dengan meletakkannya di atas dua gulungan karton tisu toilet bekas sebagai rol penggelinding. Uji, lalu perbaiki dengan menambah gulungan ketiga."
     },
     {
       "en": "Find three new objects in the house and predict before testing.",
@@ -195,8 +195,8 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "Budi guessed the cup would slide, but it rolled. What should he do?",
-        "id": "Budi menebak gelas akan meluncur, tetapi gelas menggelinding. Apa yang sebaiknya ia lakukan?"
+        "en": "Budi guessed the cup lying on its side would slide, but it rolled. What should he do?",
+        "id": "Budi menebak gelas yang dibaringkan akan meluncur, tetapi gelas menggelinding. Apa yang sebaiknya ia lakukan?"
       },
       "choices": {
         "en": [
