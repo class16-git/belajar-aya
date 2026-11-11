@@ -1,5 +1,8 @@
 # Release record
 
+The latest verified release is also kept as a machine-readable manifest: [`release-manifest.json`](release-manifest.json),
+with history in [`releases/`](releases/), written by `pnpm release:record`.
+
 One row per production release. Each row ties a commit to the curriculum that was live and the deployment that
 served it. Rows are filled in only after the checks in [RELEASE_RUNBOOK.md](RELEASE_RUNBOOK.md) §2 pass.
 

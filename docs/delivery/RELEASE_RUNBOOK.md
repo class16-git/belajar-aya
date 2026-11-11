@@ -29,7 +29,15 @@ database, whose role marker is `synthetic`; they seed only the synthetic demo fa
    `production`. Prisma then prints either "Applying migration …" or "No pending migrations". The deployments API
    sometimes returns a shortened log: if so, record that it was unreadable rather than guessing. Every migration so far is additive (expand only). Migrations must stay additive, so
    that the previous build still runs against the new schema.
-4. Add a row to [RELEASES.md](RELEASES.md).
+4. Run `pnpm release:record` on a checkout of the deployed commit, or on a later commit whose `content/` and
+   `packages/curriculum/src` are identical to it. It only reads. It fails unless:
+   - the live health check is ok;
+   - the live content digest and curriculum version equal the checkout's;
+   - the Vercel deployment, when the API is reachable, is READY in production on that commit.
+
+   It writes `docs/delivery/releases/<date>-<sha>.json` and `docs/delivery/release-manifest.json`, schema
+   `atlas-release-manifest/1`.
+5. Add a row to [RELEASES.md](RELEASES.md).
 
 ## 3. Rollback
 **Code (minutes):**
