@@ -26,7 +26,7 @@ Verdict: **pass** = no blocker or major; **fix required** = at least one blocker
 | age4_5-hearing-first-sounds | **fix required** | 0 | 2 | 2 |
 | age4_5-letter-sound-links | **fix required** | 0 | 2 | 1 |
 | k-blending-to-read-words | **fix required** | 0 | 1 | 4 |
-| k-high-frequency-words | **fix required** | 0 | 1 | 3 |
+| k-high-frequency-words | **fix required** | 0 | 1 | 2 |
 | g1-consonant-digraphs | pass | 0 | 0 | 2 |
 | g1-writing-simple-sentences | pass | 0 | 0 | 3 |
 | g2-retelling-with-sequence-words | pass | 0 | 0 | 0 |
@@ -40,7 +40,7 @@ Verdict: **pass** = no blocker or major; **fix required** = at least one blocker
 | g6-analysing-authors-purpose | pass | 0 | 0 | 2 |
 | g6-argumentative-essay-planning | **fix required** | 0 | 1 | 0 |
 
-**Totals: 11 pass, 9 fix required. 0 blockers, 12 majors, 40 minors.**
+**Totals: 11 pass, 9 fix required. 0 blockers, 12 majors, 39 minors.**
 
 ### Cross-cutting findings
 
