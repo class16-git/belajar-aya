@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { READING_GENRES, UNIT_FRAMEWORKS, type PipelineState, type Reading, type Unit } from '@atlas/curriculum';
 import { STAGES, type Locale } from '@atlas/shared';
+import { Select } from '@/components/units/select';
 import { EntryBadges } from '@/components/units/badges';
 import { ParentShell } from '@/components/ui/parent-shell';
 import { fmt, getDictionary, type Dictionary } from '@/lib/i18n';
@@ -77,18 +78,6 @@ export default async function UnitsPage({ searchParams }: { searchParams: Promis
         </section>
       )}
     </ParentShell>
-  );
-}
-
-function Select({ name, label, value, options, any }: { name: string; label: string; value: string; options: [string, string][]; any?: string }) {
-  return (
-    <label className="block min-w-0">
-      <span className="text-sm font-semibold">{label}</span>
-      <select name={name} defaultValue={value} className="input mt-1">
-        {any && <option value="">{any}</option>}
-        {options.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
-      </select>
-    </label>
   );
 }
 

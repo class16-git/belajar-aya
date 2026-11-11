@@ -3,6 +3,9 @@ import type { Reading, Unit } from '@atlas/curriculum';
 import type { Locale } from '@atlas/shared';
 import { EntryBadges } from '@/components/units/badges';
 import { ReviewDecisionForm } from '@/components/units/review-form';
+import { Select } from '@/components/units/select';
+import { STAGES } from '@atlas/shared';
+import { UNIT_FRAMEWORKS } from '@atlas/curriculum';
 import { ParentShell } from '@/components/ui/parent-shell';
 import { fmt, getDictionary, type Dictionary } from '@/lib/i18n';
 import { expansionView, isReviewable, type ExpansionEntry } from '@/lib/server/expansion';
@@ -15,16 +18,40 @@ export const dynamic = 'force-dynamic';
 const day = (d: Date) => d.toISOString().slice(0, 10);
 
 /** Human review queue for expansion content. Decisions are stored per family (ContentReviewDecision). */
-export default async function ReviewPage() {
+const PAGE_SIZE = 10;
+type SP = { kind?: string; level?: string; framework?: string; decided?: string; page?: string; item?: string };
+const pick = <T extends string>(xs: readonly T[], v?: string) => (xs as readonly string[]).includes(v ?? '') ? (v as T) : undefined;
+
+export default async function ReviewPage({ searchParams }: { searchParams: Promise<SP> }) {
+  const sp = await searchParams;
   const auth = await requireParentPage();
   const locale = await currentLocale();
   const t = getDictionary(locale);
   const R = t.review;
   const { units, readings } = expansionView();
   const all = [...units, ...readings];
-  const queue = all.filter((e) => isReviewable(e) && e.errors.length === 0);
   const rows = await familyDecisions(auth.family.id);
   const latest = latestByItem(rows);
+  // Batch review: filter by kind, level and framework, hide items already decided, 10 per page.
+  const kind = pick(['units', 'readings', 'islamic'] as const, sp.kind);
+  const level = pick(STAGES, sp.level);
+  const framework = pick(UNIT_FRAMEWORKS, sp.framework);
+  const decided = sp.decided === 'all' ? 'all' : 'undecided';
+  const isIslamic = (e: ExpansionEntry) => ('framework' in e.item && e.item.framework === 'islamic') || ('crossCurricular' in e.item && e.item.crossCurricular.some((c) => c.subject === 'islamic_values'));
+  const reviewable = all.filter((e) => isReviewable(e) && e.errors.length === 0);
+  const single = sp.item ? reviewable.filter((e) => e.item.id === sp.item) : null; // deep link to one item (decided or not)
+  const matching = single ?? reviewable.filter(
+    (e) =>
+      (!kind || (kind === 'units' ? e.item.id.startsWith('unit-') : kind === 'readings' ? e.item.id.startsWith('reading-') : isIslamic(e))) &&
+      (!level || e.item.level === level) &&
+      (!framework || ('framework' in e.item && e.item.framework === framework)) &&
+      (decided === 'all' || !latest.has(e.item.id)),
+  );
+  const pages = Math.max(1, Math.ceil(matching.length / PAGE_SIZE));
+  const page = Math.min(pages, Math.max(1, Number.parseInt(sp.page ?? '1', 10) || 1));
+  const queue = matching.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const qs = (p: number) => `?${new URLSearchParams({ ...(kind ? { kind } : {}), ...(level ? { level } : {}), ...(framework ? { framework } : {}), ...(decided === 'all' ? { decided } : {}), page: String(p) })}`;
+  const U = t.units;
   const titleOf = (id: string) => all.find((e) => e.item.id === id)?.item.title[locale] ?? id;
 
   return (
@@ -32,10 +59,29 @@ export default async function ReviewPage() {
       <h1 className="h1">{R.title}</h1>
       <p className="mt-2 max-w-prose">{R.intro}</p>
 
+      <form method="get" className="card mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-[repeat(4,minmax(0,1fr))_auto]" aria-label={U.filters} data-testid="review-filters">
+        <Select name="kind" label={U.filterKind} value={kind ?? ''} any={U.kind.all} options={[['units', U.kind.units], ['readings', U.kind.readings], ['islamic', R.islamicOnly]]} />
+        <Select name="level" label={U.filterLevel} value={level ?? ''} any={U.any} options={STAGES.map((s) => [s, t.curriculum.stage[s]])} />
+        <Select name="framework" label={U.filterFramework} value={framework ?? ''} any={U.any} options={UNIT_FRAMEWORKS.map((f) => [f, U.framework[f]])} />
+        <Select name="decided" label={R.filterDecided} value={decided === 'all' ? 'all' : ''} any={R.undecidedOnly} options={[['all', R.includeDecided]]} />
+        <div className="flex flex-wrap items-end gap-2">
+          <button type="submit" className="btn-secondary">{U.apply}</button>
+          <Link href="/review" className="btn-ghost">{U.clear}</Link>
+        </div>
+      </form>
+      <p className="mt-3 text-sm muted" data-testid="review-count">{fmt(R.showing, { n: queue.length, total: matching.length, all: reviewable.length, page, pages })}</p>
+
       {queue.length === 0 ? <p className="card mt-6">{R.empty}</p> : (
         <ul className="mt-6 space-y-5" data-testid="review-queue">
           {queue.map((e) => <QueueItem key={e.item.id} e={e} t={t} locale={locale} latest={latest.get(e.item.id)} />)}
         </ul>
+      )}
+      {pages > 1 && (
+        <nav className="mt-6 flex items-center justify-between gap-3" aria-label={R.pagination} data-testid="review-pagination">
+          {page > 1 ? <Link href={qs(page - 1)} className="btn-secondary">← {R.prev}</Link> : <span />}
+          <span className="text-sm">{fmt(R.pageOf, { page, pages })}</span>
+          {page < pages ? <Link href={qs(page + 1)} className="btn-secondary">{R.next} →</Link> : <span />}
+        </nav>
       )}
 
       <section className="card mt-8" aria-labelledby="history-h" data-testid="decision-history">

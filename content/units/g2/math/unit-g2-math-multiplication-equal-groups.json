@@ -223,29 +223,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "A bajaj carries 3 passengers. How many passengers can 6 bajaj carry?",
-        "id": "Satu bajaj membawa 3 penumpang. Berapa penumpang yang bisa dibawa 6 bajaj?"
+        "en": "A bajaj carries 3 passengers. How many passengers can 7 bajaj carry?",
+        "id": "Satu bajaj membawa 3 penumpang. Berapa penumpang yang bisa dibawa 7 bajaj?"
       },
       "choices": {
         "en": [
-          "18",
-          "9",
-          "63"
+          "21",
+          "10",
+          "73"
         ],
         "id": [
-          "18",
-          "9",
-          "63"
+          "21",
+          "10",
+          "73"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "6 groups of 3: 3, 6, 9, 12, 15, 18.",
-        "id": "6 kelompok berisi 3: 3, 6, 9, 12, 15, 18."
+        "en": "7 groups of 3: 3, 6, 9, 12, 15, 18, 21.",
+        "id": "7 kelompok berisi 3: 3, 6, 9, 12, 15, 18, 21."
       },
       "check": {
-        "expression": "6 * 3",
-        "result": "18"
+        "expression": "7 * 3",
+        "result": "21"
       },
       "distractorMisconceptions": {
         "1": "ADDS_GROUPS_AND_SIZE",

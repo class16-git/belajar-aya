@@ -25,6 +25,7 @@ test('Kindergarten learner: teen numbers unlock after counting; full ten-frame i
   await expect(page.getByTestId('question')).toContainText('One ten-frame is full');
   await answer(page, ones);
   await expect(page.getByText('Don’t forget the full ten-frame')).toBeVisible();
+  await page.waitForFunction(() => document.title.trim().length > 0); // Next streams metadata; a missing title still fails here
   const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
   expect(res.violations.map((v) => v.id)).toEqual([]);
   await page.screenshot({ path: join(OUT, 'tablet-95-k-teen-numbers.png'), fullPage: true });
@@ -83,7 +84,8 @@ for (const vp of [{ name: 'mobile', width: 390, height: 844 }, { name: 'tablet',
       expect(overflow).toBeLessThanOrEqual(1);
       const small = await page.locator('main button:visible').evaluateAll((els) => els.map((e) => e.getBoundingClientRect()).filter((r) => r.width > 0 && (r.width < 44 || r.height < 44)).length);
       expect(small).toBe(0);
-      const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+      await page.waitForFunction(() => document.title.trim().length > 0); // Next streams metadata; a missing title still fails here
+  const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
       expect(res.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(' | ')}`)).toEqual([]);
       await page.screenshot({ path: join(OUT, `${vp.name}-${l.shot}.png`), fullPage: true });
       await answer(page, right);
@@ -99,6 +101,7 @@ test('parent view of a Kindergarten learner: dashboard lists K skills; curriculu
   await page.goto(`/dashboard/${fam.g1Id}`);
   for (const s of ['K-MATH-TEENS', 'K-MATH-BONDS-20', 'K-MATH-STORIES', 'MATH-G1-COUNT-20']) await expect(page.locator(`[data-skill="${s}"]`)).toBeVisible();
   await page.screenshot({ path: join(OUT, 'tablet-101-dashboard-kindergarten.png'), fullPage: true });
+  await page.waitForFunction(() => document.title.trim().length > 0); // Next streams metadata; a missing title still fails here
   const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
   expect(res.violations.map((v) => v.id)).toEqual([]);
   await page.goto('/curriculum');

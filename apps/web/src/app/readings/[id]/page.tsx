@@ -51,7 +51,7 @@ export default async function ReadingPage({ params }: { params: Promise<{ id: st
           <EntryBadges e={e} t={t} />
           <p className="rounded-xl bg-linen p-3 text-sm font-semibold"><span aria-hidden="true">🔒 </span>{U.guide.parentOnly}</p>
           {e.religious && <p className="rounded-xl border-2 border-clay bg-clay-light/50 p-3 text-sm font-semibold">{U.guide.religiousNote}</p>}
-          {isReviewable(e) && <Link href={`/review#${r.id}`} className="btn-secondary no-print w-fit">{U.guide.reviewThis}</Link>}
+          {isReviewable(e) && <Link href={`/review?item=${r.id}`} className="btn-secondary no-print w-fit">{U.guide.reviewThis}</Link>}
         </header>
 
         <section className="card print-card" aria-labelledby="text-h" data-testid="reading-text">

@@ -28,7 +28,8 @@ async function check(page: Page, name: string, vp: (typeof VIEWPORTS)[number], o
   }
   await page.screenshot({ path: join(OUT, `${vp.name}-${name}.png`), fullPage: true });
   if (vp.name === 'tablet' || vp.name === 'mobile') {
-    const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+    await page.waitForFunction(() => document.title.trim().length > 0); // Next streams metadata; a missing title still fails here
+  const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
     for (const v of res.violations) axeViolations.push({ page: `${name}@${vp.name}`, id: v.id, impact: v.impact, nodes: v.nodes.length });
     expect(res.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(' | ')}`), `${name}@${vp.name} axe`).toEqual([]);
   }

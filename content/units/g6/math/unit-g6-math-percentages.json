@@ -431,7 +431,7 @@
   "safety": {
     "supervision": "adult_present",
     "hazards": {
-      "chokingRisk": false,
+      "chokingRisk": true,
       "sharp": false,
       "water": false,
       "heat": false,
@@ -442,6 +442,10 @@
       {
         "en": "No physical hazards; use printed advertisements rather than browsing shopping sites.",
         "id": "Tidak ada bahaya fisik; pakai iklan cetak daripada menjelajah situs belanja."
+      },
+      {
+        "en": "Play coins are a choking risk for toddlers: keep coins at the table and put them away afterwards.",
+        "id": "Koin mainan berbahaya tersedak bagi balita: simpan koin di meja dan bereskan setelahnya."
       }
     ]
   },

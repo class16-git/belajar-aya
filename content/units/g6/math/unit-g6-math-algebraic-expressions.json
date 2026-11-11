@@ -131,29 +131,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Find the value of 4q + 3 when q = 5.",
-        "id": "Hitung nilai 4q + 3 jika q = 5."
+        "en": "Find the value of 4q + 7 when q = 6.",
+        "id": "Hitung nilai 4q + 7 jika q = 6."
       },
       "choices": {
         "en": [
-          "23",
-          "48",
-          "12"
+          "31",
+          "53",
+          "17"
         ],
         "id": [
-          "23",
-          "48",
-          "12"
+          "31",
+          "53",
+          "17"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "4q means 4 × q = 20; then 20 + 3 = 23.",
-        "id": "4q berarti 4 × q = 20; lalu 20 + 3 = 23."
+        "en": "4q means 4 × q = 24; then 24 + 7 = 31.",
+        "id": "4q berarti 4 × q = 24; lalu 24 + 7 = 31."
       },
       "check": {
-        "expression": "4*5 + 3",
-        "result": "23"
+        "expression": "4*6 + 7",
+        "result": "31"
       },
       "distractorMisconceptions": {
         "1": "CONCATENATES_COEFFICIENT",

@@ -13,6 +13,7 @@ const CONTENT = join(process.cwd(), '../../content');
 const CLI = join(process.cwd(), 'scripts/apply-reviews.mjs');
 
 async function axe(page: Page, name: string) {
+  await page.waitForFunction(() => document.title.trim().length > 0); // Next streams metadata; a missing title still fails here
   const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
   expect(res.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(' | ')}`), `${name} axe`).toEqual([]);
 }
@@ -34,14 +35,16 @@ const contentFile = (id: string) => walk(join(CONTENT, 'units')).concat(walk(joi
 
 /** First item of each kind waiting for review (ids discovered from the page, so new content does not break this). */
 async function queueItems(page: Page) {
-  await page.goto('/review');
+  await page.goto('/review?kind=units');
   const unit = await page.locator('[data-review-item][data-kind="unit"]').first().getAttribute('data-review-item');
+  await page.goto('/review?kind=readings');
   const reading = await page.locator('[data-review-item][data-kind="reading"]').first().getAttribute('data-review-item');
   expect(unit && reading, 'needs one unit and one reading awaiting review').toBeTruthy();
   return { unit: unit!, reading: reading! };
 }
 
 async function decide(page: Page, itemId: string, decision: 'Approve' | 'Reject', note = '') {
+  await page.goto(`/review?item=${itemId}`);
   const item = page.locator(`[data-review-item="${itemId}"]`);
   await item.getByLabel('Your initials').fill('AB');
   if (note) await item.getByLabel('Note').fill(note);
@@ -179,6 +182,7 @@ test('approve and reject persist, export, and apply to a temp copy of the conten
 
   await decide(page, unit, 'Approve');
   // Reject needs a reason (client check, then the server).
+  await page.goto(`/review?item=${reading}`);
   const ri = page.locator(`[data-review-item="${reading}"]`);
   await ri.getByLabel('Your initials').fill('AB');
   await ri.getByRole('button', { name: 'Reject' }).click();
@@ -191,7 +195,7 @@ test('approve and reject persist, export, and apply to a temp copy of the conten
   await decide(page, reading, 'Reject', 'Paragraph 2 needs a simpler word.');
 
   // Persisted (reload) and listed in the history table.
-  await page.reload();
+  await page.goto(`/review?item=${unit}`);
   await expect(page.locator(`[data-review-item="${unit}"]`).getByTestId('latest-decision')).toContainText('Approved by AB (parent)');
   await expect(page.getByTestId('decision-history').locator('tr[data-decision]')).toHaveCount(2);
   const rows = await db.contentReviewDecision.findMany({ orderBy: { createdAt: 'asc' } });
@@ -268,7 +272,7 @@ test('cross-family isolation: another family can neither read nor change decisio
   const pb = await cb.newPage();
   await signIn(pb, b.email);
   expect((await (await pb.request.get('/api/review/export')).json()).decisions).toEqual([]);
-  await pb.goto('/review');
+  await pb.goto(`/review?item=${unit}`);
   await expect(pb.getByTestId('decision-history').locator('tr[data-decision]')).toHaveCount(0);
   await expect(pb.locator(`[data-review-item="${unit}"]`).getByTestId('latest-decision')).toHaveCount(0);
   // A forged familyId is rejected; B's own decisions are always stored under B.
@@ -280,7 +284,7 @@ test('cross-family isolation: another family can neither read nor change decisio
   expect(await db.contentReviewDecision.count({ where: { familyId: famB.id } })).toBe(1);
   const expA = await (await pa.request.get('/api/review/export')).json();
   expect(expA.decisions.map((d: { decision: string; reviewerName: string }) => [d.decision, d.reviewerName])).toEqual([['approve', 'AB']]);
-  await pa.goto('/review');
+  await pa.goto(`/review?item=${unit}`);
   await expect(pa.getByTestId('decision-history').locator('tr[data-decision]')).toHaveCount(1);
   await ca.close();
   await cb.close();

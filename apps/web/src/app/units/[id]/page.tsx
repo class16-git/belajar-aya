@@ -50,7 +50,7 @@ export default async function UnitGuidePage({ params }: { params: Promise<{ id: 
             <Fact label={G.safety} value={G.supervision[u.safety.supervision]} />
             <Fact label={G.version} value={`v${u.version}`} />
           </dl>
-          {isReviewable(e) && <Link href={`/review#${u.id}`} className="btn-secondary no-print w-fit">{G.reviewThis}</Link>}
+          {isReviewable(e) && <Link href={`/review?item=${u.id}`} className="btn-secondary no-print w-fit">{G.reviewThis}</Link>}
         </header>
 
         <div className="card print-card space-y-6">
