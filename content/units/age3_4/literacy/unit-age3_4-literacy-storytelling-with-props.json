@@ -1,6 +1,6 @@
 {
   "id": "unit-age3_4-literacy-storytelling-with-props",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "framework": "literacy",
   "strand": "speaking_listening",
@@ -46,7 +46,7 @@
   "parentInstructions": [
     {
       "en": "Tell the story slowly, moving one prop for each event. Use a different voice for Kitten and make the rain with your fingers.",
-      "id": "Ceritakan pelan-pelan, gerakkan satu alat peraga untuk setiap peristiwa. Pakai suara berbeda untuk Kucing dan buat hujan dengan jari-jari Anda."
+      "id": "Ceritakan pelan-pelan, gerakkan satu alat peraga untuk setiap peristiwa. Pakai suara berbeda untuk Anak Kucing dan buat hujan dengan jari-jari Anda."
     },
     {
       "en": "Tell it again the next day and pause before each event so your child can say what comes next.",
@@ -77,6 +77,10 @@
       "id": "Handuk kecil sebagai handuk hangat di rumah"
     },
     {
+      "en": "A teddy, an empty plastic cup and an empty bowl for a new story (the water is pretend)",
+      "id": "Boneka beruang, gelas plastik kosong, dan mangkuk kosong untuk cerita baru (airnya pura-pura)"
+    },
+    {
       "en": "A cloth bag or basket to keep the story props in",
       "id": "Tas kain atau keranjang untuk menyimpan alat peraga cerita"
     }
@@ -98,7 +102,7 @@
     },
     {
       "en": "Model retelling with props: holding the kitten, 'Kitten went out to play.' Wiggling fingers, 'Then the rain came.' Lifting the towel-leaf, 'She hid under the leaf, but it had a hole.' Moving to the box, 'Then she hid under the bench, but it was windy.' Wrapping the hand towel, 'And then she went home and got warm.'",
-      "id": "Contoh bercerita dengan alat peraga: memegang boneka, 'Kucing keluar main.' Menggoyangkan jari, 'Terus hujan turun.' Mengangkat serbet-daun, 'Dia berteduh di bawah daun, tapi daunnya sobek.' Pindah ke kardus, 'Lalu dia ke bawah bangku, tapi anginnya kencang.' Membungkus dengan handuk, 'Terus dia pulang dan jadi hangat.'"
+      "id": "Contoh bercerita dengan alat peraga: memegang boneka, 'Anak Kucing keluar main.' Menggoyangkan jari, 'Terus hujan turun.' Mengangkat serbet-daun, 'Dia berteduh di bawah daun, tapi daunnya sobek.' Pindah ke kardus, 'Lalu dia ke bawah bangku, tapi anginnya kencang.' Membungkus dengan handuk, 'Terus dia pulang dan jadi hangat.'"
     }
   ],
   "practice": [
@@ -112,68 +116,12 @@
     },
     {
       "en": "Make a new ending together: what else could Kitten hide under? Act it with a real object from the room.",
-      "id": "Buat akhir baru bersama: Kucing bisa berteduh di bawah apa lagi? Peragakan dengan benda di ruangan."
+      "id": "Buat akhir baru bersama: Anak Kucing bisa berteduh di bawah apa lagi? Peragakan dengan benda di ruangan."
     }
   ],
   "assessment": [
     {
       "id": "a1",
-      "prompt": {
-        "en": "Hold up the hand towel. Ask: 'When did the towel come in the story?' Which answer is right?",
-        "id": "Angkat handuk kecil. Tanyakan: 'Kapan handuk ada di cerita?' Jawaban mana yang benar?"
-      },
-      "choices": {
-        "en": [
-          "At the end, when Kitten got home",
-          "At the start, before the rain",
-          "When Kitten was under the leaf"
-        ],
-        "id": [
-          "Di akhir, saat Kucing sampai di rumah",
-          "Di awal, sebelum hujan",
-          "Saat Kucing di bawah daun"
-        ]
-      },
-      "answer": 0,
-      "explanation": {
-        "en": "The warm towel is the ending: Kitten got home and was wrapped up.",
-        "id": "Handuk hangat adalah akhir cerita: Kucing pulang dan diselimuti."
-      },
-      "distractorMisconceptions": {
-        "1": "ORDER_MIXUP",
-        "2": "ORDER_MIXUP"
-      }
-    },
-    {
-      "id": "a2",
-      "prompt": {
-        "en": "Ask: 'What was Kitten's problem?' Which answer shows your child understood?",
-        "id": "Tanyakan: 'Apa masalah Anak Kucing?' Jawaban mana yang menunjukkan anak paham?"
-      },
-      "choices": {
-        "en": [
-          "The rain was making her wet",
-          "She was hungry",
-          "She went home"
-        ],
-        "id": [
-          "Hujan membuatnya basah",
-          "Dia lapar",
-          "Dia pulang"
-        ]
-      },
-      "answer": 0,
-      "explanation": {
-        "en": "The rain is the problem; going home is how it ended, and hunger was not in the story.",
-        "id": "Hujan adalah masalahnya; pulang adalah akhir cerita, dan lapar tidak ada di cerita."
-      },
-      "distractorMisconceptions": {
-        "1": "INVENTS_DETAIL",
-        "2": "ENDING_FOR_PROBLEM"
-      }
-    },
-    {
-      "id": "a3",
       "prompt": {
         "en": "Tell a new tiny story with a teddy, an empty cup and a bowl: Teddy is thirsty, finds the cup but it is empty, then finds water in the bowl and drinks. Ask your child to tell it back with the props. Which retelling shows the skill?",
         "id": "Ceritakan kisah baru yang pendek dengan boneka beruang, gelas kosong, dan mangkuk: Beruang haus, menemukan gelas tetapi kosong, lalu menemukan air di mangkuk dan minum. Minta anak menceritakannya kembali dengan alat peraga. Cerita kembali mana yang menunjukkan keterampilan ini?"
@@ -198,6 +146,62 @@
       "distractorMisconceptions": {
         "1": "NAMES_PROPS_NOT_EVENTS",
         "2": "JUMPS_TO_END"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Hold up the bowl from the Teddy story. Ask: 'When did the bowl come in the story?' Which answer is right?",
+        "id": "Angkat mangkuk dari cerita Beruang. Tanyakan: 'Kapan mangkuk ada di cerita?' Jawaban mana yang benar?"
+      },
+      "choices": {
+        "en": [
+          "At the end, when Teddy found water and drank",
+          "At the start, before Teddy was thirsty",
+          "When Teddy found the cup was empty"
+        ],
+        "id": [
+          "Di akhir, saat Beruang menemukan air dan minum",
+          "Di awal, sebelum Beruang haus",
+          "Saat Beruang melihat gelasnya kosong"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The bowl is the ending: Teddy found water in it and drank.",
+        "id": "Mangkuk adalah akhir cerita: Beruang menemukan air di dalamnya dan minum."
+      },
+      "distractorMisconceptions": {
+        "1": "ORDER_MIXUP",
+        "2": "ORDER_MIXUP"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Ask about the Teddy story: 'What was Teddy's problem?' Which answer shows your child understood?",
+        "id": "Tanyakan tentang cerita Beruang: 'Apa masalah Beruang?' Jawaban mana yang menunjukkan anak paham?"
+      },
+      "choices": {
+        "en": [
+          "He was thirsty and the cup was empty",
+          "He was sleepy",
+          "He drank the water"
+        ],
+        "id": [
+          "Ia haus dan gelasnya kosong",
+          "Ia mengantuk",
+          "Ia minum air"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Being thirsty with an empty cup is the problem; drinking is how it ended, and sleepiness was not in the story.",
+        "id": "Haus dengan gelas kosong adalah masalahnya; minum adalah akhir cerita, dan mengantuk tidak ada di cerita."
+      },
+      "distractorMisconceptions": {
+        "1": "INVENTS_DETAIL",
+        "2": "ENDING_FOR_PROBLEM"
       }
     },
     {
@@ -248,8 +252,8 @@
         "id": "Menambahkan hal yang tidak ada di cerita."
       },
       "remediation": {
-        "en": "Tell the story again and ask your child to hold up a prop each time it is mentioned. Then ask: 'Did we have food in the story?'",
-        "id": "Ceritakan lagi dan minta anak mengangkat alat peraga setiap kali disebut. Lalu tanyakan: 'Ada makanan di cerita kita?'"
+        "en": "Tell the story again and ask your child to hold up a prop each time it is mentioned. Then ask: 'Was anyone sleepy in the story?'",
+        "id": "Ceritakan lagi dan minta anak mengangkat alat peraga setiap kali disebut. Lalu tanyakan: 'Ada yang mengantuk di cerita kita?'"
       }
     },
     {

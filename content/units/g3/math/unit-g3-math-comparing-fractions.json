@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-math-comparing-fractions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "level": "g3",
   "framework": "math",
   "strand": "fractions",
@@ -211,29 +211,29 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "Which fraction is greater than 1/2?",
-        "id": "Pecahan mana yang lebih dari 1/2?"
+        "en": "Which fraction is more than one half?",
+        "id": "Pecahan mana yang lebih dari setengah?"
       },
       "choices": {
         "en": [
-          "5/8",
-          "4/8",
-          "3/10"
+          "7/12",
+          "6/12",
+          "4/10"
         ],
         "id": [
-          "5/8",
-          "4/8",
-          "3/10"
+          "7/12",
+          "6/12",
+          "4/10"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Half of 8 eighths is 4/8, so 4/8 is exactly a half. 5/8 is one eighth more: 4/8 + 1/8 = 5/8. 3/10 is less than 5/10, which is a half.",
-        "id": "Setengah dari 8 perdelapan adalah 4/8, jadi 4/8 tepat setengah. 5/8 lebih satu perdelapan: 4/8 + 1/8 = 5/8. 3/10 kurang dari 5/10, yaitu setengah."
+        "en": "Half of 12 twelfths is 6/12, so 6/12 is exactly a half. 7/12 is one twelfth more: 6/12 + 1/12 = 7/12. 4/10 is less than 5/10, which is a half.",
+        "id": "Setengah dari 12 perduabelas adalah 6/12, jadi 6/12 tepat setengah. 7/12 lebih satu perduabelas: 6/12 + 1/12 = 7/12. 4/10 kurang dari 5/10, yaitu setengah."
       },
       "check": {
-        "expression": "4/8 + 1/8",
-        "result": "5/8"
+        "expression": "6/12 + 1/12",
+        "result": "7/12"
       },
       "distractorMisconceptions": {
         "1": "EQUAL_TO_HALF_COUNTED_AS_MORE",
