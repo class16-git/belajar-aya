@@ -1,6 +1,6 @@
 {
   "id": "unit-age4_5-literacy-making-rhymes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age4_5",
   "framework": "literacy",
   "strand": "phonological_awareness",
@@ -14,7 +14,7 @@
   ],
   "objective": {
     "en": "Produce a word (real or made-up) that rhymes with a spoken word by keeping the end and changing the start, and finish a simple two-line rhyme.",
-    "id": "Menghasilkan kata (sungguhan atau karangan) yang berakhiran sama dengan kata yang diucapkan, dengan mempertahankan bagian akhir dan mengganti bagian awal, serta melengkapi sajak dua baris sederhana."
+    "id": "Menghasilkan kata (sungguhan atau karangan) yang berima dengan kata yang diucapkan, dengan mempertahankan bagian akhir dan mengganti bagian awal, serta melengkapi sajak dua baris sederhana."
   },
   "rationale": {
     "en": "Hearing that two words rhyme is easier than making a rhyme. To make one, a child must hold the end of the word in mind, drop the start and put a new start on: a real step towards handling sounds inside words. English rhymes share the rime, the vowel and everything after it (hen, ten, pen), so the child swaps the first sound. Indonesian rhyme (rima) is felt in the last syllable (bulan, jalan; kolam, malam), so the child keeps the final syllable and changes what comes before it. Made-up words count in both languages, because the skill is the sound, not the meaning.",
@@ -36,7 +36,7 @@
   ],
   "successCriteria": [
     {
-      "en": "Your child says 'jalan' or 'mulan' when you say 'bulan'.",
+      "en": "Your child says 'ten' or 'jen' when you say 'hen'.",
       "id": "Anak berkata 'jalan' atau 'mulan' saat Anda berkata 'bulan'."
     },
     {
@@ -50,8 +50,8 @@
       "id": "Mulai dengan sajak yang sudah dikenal, lalu main 'akhir sama, awal baru': ucapkan kata, tekankan akhirnya ('bu-LAN'), dan coba awal baru bersama: 'ja-LAN, ma-LAN, te-LAN!'"
     },
     {
-      "en": "Celebrate silly words. 'Zat' and 'mulan' are not real words but they rhyme, which is exactly the skill.",
-      "id": "Rayakan kata yang lucu. 'Mulan' dan 'zat' mungkin bukan kata sungguhan, tetapi berima, dan itulah keterampilannya."
+      "en": "Celebrate silly words. 'Zat' and 'jen' are not real words but they rhyme, which is exactly the skill.",
+      "id": "Rayakan kata yang lucu. 'Talan' dan 'mulan' bukan kata sungguhan, tetapi berima, dan itulah keterampilannya."
     },
     {
       "en": "Read the two-line rhymes slowly and stop before the last word with a hopeful look.",
@@ -87,7 +87,7 @@
     },
     {
       "en": "Finish the rhyme (original): 'A big brown bug sat in a... mug!' 'The fish made a wish and jumped in a... dish!'",
-      "id": "Lengkapi sajak (orisinal): 'Kucing kecil makan ikan, sambil duduk di atas... papan!' 'Kupu-kupu terbang ke taman, hinggap di bunga bersama... teman!'"
+      "id": "Lengkapi sajak (orisinal): 'Kucing kecil duduk di papan, melihat burung terbang ke... depan!' 'Kupu-kupu terbang ke taman, hinggap di bunga bersama... teman!'"
     }
   ],
   "practice": [
@@ -100,7 +100,7 @@
       "id": "Tas rima: ambil satu benda; anak mencari pasangan rimanya di dalam tas, lalu membuat satu kata berima lagi."
     },
     {
-      "en": "Silly name rhymes: 'Kakak, Bakak, Takak!' Each family member gets a silly rhyme for their name.",
+      "en": "Silly name rhymes: 'Sam, Pam, Tam!' Each family member gets a silly rhyme for their name.",
       "id": "Rima nama lucu: 'Nenek, Senek, Penek!' Setiap anggota keluarga mendapat rima lucu untuk namanya."
     }
   ],
@@ -108,19 +108,19 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Say: 'Tell me a word that rhymes with hen.' Which answer shows the skill?",
-        "id": "Katakan: 'Sebutkan kata yang berakhiran sama dengan jalan.' Jawaban mana yang menunjukkan keterampilan ini?"
+        "en": "Say: 'Tell me a word that rhymes with sun.' Which answer shows the skill?",
+        "id": "Katakan: 'Sebutkan kata yang berima dengan dapur.' Jawaban mana yang menunjukkan keterampilan ini?"
       },
       "choices": {
         "en": [
-          "'ten', 'pen', or a made-up word like 'jen'",
-          "'hat' (it starts like hen)",
-          "'egg' (a hen lays eggs)"
+          "'fun', 'run', or a made-up word like 'zun'",
+          "'sock' (it starts like sun)",
+          "'hot' (the sun is hot)"
         ],
         "id": [
-          "'bulan', 'pelan', atau kata karangan seperti 'talan'",
-          "'jari' (awalnya sama dengan jalan)",
-          "'mobil' (mobil ada di jalan)"
+          "'lumpur', atau kata karangan seperti 'tapur'",
+          "'dasi' (awalnya sama dengan dapur)",
+          "'kompor' (kompor ada di dapur)"
         ]
       },
       "answer": 0,
@@ -137,7 +137,7 @@
       "id": "a2",
       "prompt": {
         "en": "Say: 'A goat in a boat put on a warm...' Which ending makes a rhyme?",
-        "id": "Katakan: 'Bebek berenang di kolam, pulang ke kandang sudah...' Akhiran mana yang membuat sajak berima?"
+        "id": "Katakan: 'Kucing kecil tidur di kursi, bangun pagi minta...' Kata penutup mana yang membuat sajak berima?"
       },
       "choices": {
         "en": [
@@ -146,15 +146,15 @@
           "boat"
         ],
         "id": [
-          "malam",
-          "sore",
-          "kolam"
+          "nasi",
+          "susu",
+          "kursi"
         ]
       },
       "answer": 0,
       "explanation": {
         "en": "Coat rhymes with goat and boat and makes sense. Hat makes sense but does not rhyme; repeating boat is not a new rhyme.",
-        "id": "Malam berima dengan kolam dan masuk akal. Sore masuk akal tetapi tidak berima; mengulang kolam bukan kata berima baru."
+        "id": "Nasi berima dengan kursi dan masuk akal. Susu masuk akal tetapi tidak berima; mengulang kursi bukan kata berima baru."
       },
       "distractorMisconceptions": {
         "1": "MEANING_NOT_SOUND",
@@ -165,7 +165,7 @@
       "id": "a3",
       "prompt": {
         "en": "Which set of words all rhyme?",
-        "id": "Kelompok kata mana yang semuanya berakhiran sama?"
+        "id": "Kelompok kata mana yang semuanya berima?"
       },
       "choices": {
         "en": [
@@ -182,7 +182,7 @@
       "answer": 0,
       "explanation": {
         "en": "Fan, man and pan share the end -an. The other sets share a first sound or a meaning.",
-        "id": "Lari, jari, dan tari sama-sama berakhiran -ri. Kelompok lain sama bunyi awalnya atau berhubungan artinya."
+        "id": "Lari, jari, dan tari sama-sama berbunyi akhir -ri. Kelompok lain sama bunyi awalnya atau berhubungan artinya."
       },
       "distractorMisconceptions": {
         "1": "SAME_FIRST_SOUND",
@@ -192,17 +192,17 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Your child says 'gog' as a rhyme for 'log'. What is the best reply?",
-        "id": "Anak berkata 'gatu' sebagai kata yang berakhiran sama dengan 'batu'. Balasan mana yang terbaik?"
+        "en": "Your child says 'zake' as a rhyme for 'lake'. What is the best reply?",
+        "id": "Anak berkata 'gatu' sebagai kata yang berima dengan 'batu'. Balasan mana yang terbaik?"
       },
       "choices": {
         "en": [
-          "'Yes! Gog rhymes with log. Silly words count.'",
+          "'Yes! Zake rhymes with lake. Silly words count.'",
           "'That is not a real word. Try again.'",
-          "'Log starts with l. Can you hear the l?'"
+          "'Lake starts with l. Can you hear the l?'"
         ],
         "id": [
-          "'Ya! Gatu berakhiran sama dengan batu. Kata lucu boleh.'",
+          "'Ya! Gatu berima dengan batu. Kata lucu boleh.'",
           "'Itu bukan kata sungguhan. Coba lagi.'",
           "'Batu diawali bunyi b. Dengar bunyi b-nya?'"
         ]
@@ -249,7 +249,7 @@
       },
       "remediation": {
         "en": "Say the line again and stress the rhyming word: 'goAT, boAT...' Ask: 'Which word sounds like those at the end?'",
-        "id": "Ucapkan barisnya lagi dan tekankan kata berimanya: 'kolAM... malAM?' Tanyakan: 'Kata mana yang akhirnya sama bunyinya?'"
+        "id": "Ucapkan barisnya lagi dan tekankan kata berimanya: 'kurSI... naSI?' Tanyakan: 'Kata mana yang akhirnya sama bunyinya?'"
       }
     },
     {
@@ -260,7 +260,7 @@
       },
       "remediation": {
         "en": "Point out that it must be a new word, and give the new start: 'It starts with c...'",
-        "id": "Jelaskan bahwa harus kata baru, dan berikan awal barunya: 'Awalnya ma...'"
+        "id": "Jelaskan bahwa harus kata baru, dan berikan awal barunya: 'Awalnya na...'"
       }
     },
     {

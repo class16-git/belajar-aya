@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-stem-bumper-robot-project",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "level": "g6",
   "framework": "stem",
   "strand": "robotics",
@@ -240,8 +240,8 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Program: repeat forever [if bumper pressed then back_up(1), turn_right() else forward(1)]. The rover is in open space. What does it do?",
-        "id": "Program: ulangi selamanya [jika bemper tertekan maka mundur(1), belok_kanan() selain itu maju(1)]. Penjelajah berada di ruang terbuka. Apa yang dilakukannya?"
+        "en": "Program: repeat forever [if bumper pressed then back_up(2), turn_right() else forward(3)]. The rover is in open space. What does it do?",
+        "id": "Program: ulangi selamanya [jika bemper tertekan maka mundur(2), belok_kanan() selain itu maju(3)]. Penjelajah berada di ruang terbuka. Apa yang dilakukannya?"
       },
       "choices": {
         "en": [
