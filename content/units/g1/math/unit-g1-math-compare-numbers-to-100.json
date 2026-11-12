@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-math-compare-numbers-to-100",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "math",
   "strand": "number_sense",
@@ -101,8 +101,8 @@
       "id": "Tabel seratus (1 sampai 100) yang digambar atau dicetak, pita kertas panjang untuk garis bilangan"
     },
     {
-      "en": "Three sign cards: 'greater than' (an open beak pointing to the smaller number), 'less than' and '='",
-      "id": "Tiga kartu tanda: 'lebih dari' (paruh terbuka menghadap bilangan yang lebih besar), 'kurang dari', dan '='"
+      "en": "Three sign cards: 'greater than', 'less than' and '='; on each comparison sign the wide open side faces the greater number and the point faces the smaller number",
+      "id": "Tiga kartu tanda: 'lebih dari', 'kurang dari', dan '='; pada setiap tanda perbandingan sisi yang terbuka lebar menghadap bilangan yang lebih besar dan ujung runcingnya menghadap bilangan yang lebih kecil"
     }
   ],
   "preparation": [
@@ -209,7 +209,7 @@
       "id": "a3",
       "prompt": {
         "en": "What number is 10 more than 46?",
-        "id": "Bilangan berapa yang 10 lebih dari 46?"
+        "id": "Bilangan berapa yang 10 lebih besar dari 46?"
       },
       "choices": {
         "en": [
@@ -241,7 +241,7 @@
       "id": "a4",
       "prompt": {
         "en": "What number is 1 less than 70?",
-        "id": "Bilangan berapa yang 1 kurang dari 70?"
+        "id": "Bilangan berapa yang 1 lebih kecil dari 70?"
       },
       "choices": {
         "en": [
@@ -321,8 +321,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "52 has 5 tens and 25 has 2 tens, so 52 is greater than 25: 52 is greater than 25.",
-        "id": "52 punya 5 puluhan dan 25 punya 2 puluhan, jadi 52 lebih dari 25: 52 lebih dari 25."
+        "en": "52 has 5 tens and 25 has 2 tens, so 52 is greater than 25.",
+        "id": "52 punya 5 puluhan dan 25 punya 2 puluhan, jadi 52 lebih dari 25."
       },
       "distractorMisconceptions": {
         "1": "SIGN_DIRECTION_CONFUSED",

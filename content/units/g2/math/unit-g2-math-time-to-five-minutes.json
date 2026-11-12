@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-math-time-to-five-minutes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "math",
   "strand": "time",
@@ -46,7 +46,7 @@
   ],
   "parentInstructions": [
     {
-      "en": "Use a real wall clock or the paper-plate clock from the half-hour unit. Fasten its hands with a rolled paper stopper through the centre hole; the adult makes the hole.",
+      "en": "Use a real wall clock or the paper-plate clock from the half-hour unit. Fasten its hands with a short pencil stub or a tight roll of paper pushed through the centre hole; the adult makes the hole.",
       "id": "Pakai jam dinding sungguhan atau jam piring kertas dari unit setengah jam. Pasang jarumnya dengan gulungan kertas di lubang tengah; orang dewasa yang membuat lubangnya."
     },
     {
@@ -94,7 +94,7 @@
   },
   "materials": [
     {
-      "en": "A real analogue wall clock, or a paper-plate clock with card hands held by a rolled paper stopper",
+      "en": "A real analogue wall clock, or a paper-plate clock with card hands held by a short pencil stub or a tight roll of paper pushed through the centre hole",
       "id": "Jam dinding jarum sungguhan, atau jam piring kertas dengan jarum karton yang ditahan gulungan kertas"
     },
     {
@@ -181,9 +181,9 @@
       },
       "choices": {
         "en": [
-          "10 minutes past 4 (4:10)",
-          "2 minutes past 4 (4:02)",
-          "10 minutes past 5 (5:10)"
+          "10 minutes past 4 (4.10)",
+          "2 minutes past 4 (4.02)",
+          "10 minutes past 5 (5.10)"
         ],
         "id": [
           "Pukul 4 lewat 10 menit (4.10)",
@@ -213,9 +213,9 @@
       },
       "choices": {
         "en": [
-          "45 minutes past 3 (3:45)",
-          "5 minutes past 3 (3:05)",
-          "45 minutes past 4 (4:45)"
+          "45 minutes past 3 (3.45)",
+          "5 minutes past 3 (3.05)",
+          "45 minutes past 4 (4.45)"
         ],
         "id": [
           "Pukul 3 lewat 45 menit (3.45)",
@@ -240,7 +240,7 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "How many minutes is it from 1:40 to 2:00?",
+        "en": "How many minutes is it from 1.40 to 2.00?",
         "id": "Berapa menit dari pukul 1.40 sampai pukul 2.00?"
       },
       "choices": {
@@ -272,29 +272,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "The long hand points at 11 and the short hand is just before 6. What time is it?",
-        "id": "Jarum panjang menunjuk 11 dan jarum pendek hampir di 6. Pukul berapa sekarang?"
+        "en": "The long hand points at 10 and the short hand is just before 9. What time is it?",
+        "id": "Jarum panjang menunjuk 10 dan jarum pendek hampir di 9. Pukul berapa sekarang?"
       },
       "choices": {
         "en": [
-          "55 minutes past 5 (5:55)",
-          "55 minutes past 6 (6:55)",
-          "11 minutes past 5 (5:11)"
+          "50 minutes past 8 (8.50)",
+          "50 minutes past 9 (9.50)",
+          "10 minutes past 8 (8.10)"
         ],
         "id": [
-          "Pukul 5 lewat 55 menit (5.55)",
-          "Pukul 6 lewat 55 menit (6.55)",
-          "Pukul 5 lewat 11 menit (5.11)"
+          "Pukul 8 lewat 50 menit (8.50)",
+          "Pukul 9 lewat 50 menit (9.50)",
+          "Pukul 8 lewat 10 menit (8.10)"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The short hand has not reached 6 yet, so the hour is still 5. The long hand at 11 is 11 × 5 = 55 minutes.",
-        "id": "Jarum pendek belum sampai di 6, jadi jamnya masih 5. Jarum panjang di 11 berarti 11 × 5 = 55 menit."
+        "en": "The short hand has not reached 9 yet, so the hour is still 8. The long hand at 10 is 10 × 5 = 50 minutes. It is also 10 minutes to 9.",
+        "id": "Jarum pendek belum sampai di 9, jadi jamnya masih 8. Jarum panjang di 10 berarti 10 × 5 = 50 menit. Bisa juga disebut pukul 9 kurang 10 menit."
       },
       "check": {
-        "expression": "11 * 5",
-        "result": "55"
+        "expression": "10 * 5",
+        "result": "50"
       },
       "distractorMisconceptions": {
         "1": "READS_NEXT_HOUR",
@@ -405,8 +405,12 @@
     },
     "notes": [
       {
-        "en": "The adult makes the centre hole of a paper-plate clock with a pencil point; no sharp fasteners are needed.",
-        "id": "Orang dewasa membuat lubang tengah jam piring kertas dengan ujung pensil; tidak perlu pengikat yang tajam."
+        "en": "The adult makes the centre hole of a paper-plate clock with a pencil point; a pencil stub or a roll of paper holds the hands, so no sharp fastener is needed.",
+        "id": "Orang dewasa membuat lubang tengah jam piring kertas dengan ujung pensil; potongan pensil atau gulungan kertas menahan jarumnya, jadi tidak perlu pengikat yang tajam."
+      },
+      {
+        "en": "If your clock from the half-hour unit has a split pin (paper fastener), the adult replaces it with the pencil stub or roll of paper, or keeps the clock and spare split pins away from younger children.",
+        "id": "Jika jam dari unit setengah jam memakai paku keling kertas (split pin), orang dewasa menggantinya dengan potongan pensil atau gulungan kertas, atau menjauhkan jam dan cadangan paku keling dari adik yang lebih kecil."
       }
     ]
   },

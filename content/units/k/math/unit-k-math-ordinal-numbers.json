@@ -1,6 +1,6 @@
 {
   "id": "unit-k-math-ordinal-numbers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "math",
   "strand": "number_sense",
@@ -171,8 +171,8 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Bayu is 2nd in a line. Then 3 more children join behind him and no one else comes. How many children are in the line now?",
-        "id": "Bayu berada di urutan kedua dalam barisan. Lalu 3 anak lagi berbaris di belakangnya dan tidak ada yang datang lagi. Berapa anak dalam barisan sekarang?"
+        "en": "Bayu is 2nd and last in a line. Then 3 more children join the end of the line. How many children are in the line now?",
+        "id": "Bayu berada di urutan kedua dan paling belakang dalam barisan. Lalu 3 anak lagi berbaris di belakangnya. Berapa anak dalam barisan sekarang?"
       },
       "choices": {
         "en": [
@@ -268,7 +268,7 @@
       "id": "a5",
       "prompt": {
         "en": "In a sack race, Sari finishes just after the 6th runner and just before the 8th runner. What place is Sari?",
-        "id": "Dalam lomba balap karung, Sari sampai tepat setelah pelari keenam dan tepat sebelum pelari kedelapan. Sari juara ke berapa?"
+        "id": "Dalam lomba balap karung, Sari sampai tepat setelah pelari keenam dan tepat sebelum pelari kedelapan. Sari sampai di garis finis urutan ke berapa?"
       },
       "choices": {
         "en": [
@@ -292,8 +292,8 @@
         "result": "7"
       },
       "distractorMisconceptions": {
-        "1": "BEFORE_AFTER_CONFUSION",
-        "2": "BEFORE_AFTER_CONFUSION"
+        "1": "GIVES_NAMED_NEIGHBOUR",
+        "2": "GIVES_NAMED_NEIGHBOUR"
       }
     },
     {
@@ -415,14 +415,14 @@
       }
     },
     {
-      "code": "BEFORE_AFTER_CONFUSION",
+      "code": "GIVES_NAMED_NEIGHBOUR",
       "description": {
-        "en": "Mixes up 'just before' and 'just after'.",
-        "id": "Tertukar antara 'tepat sebelum' dan 'tepat setelah'."
+        "en": "Answers with one of the positions named in the question instead of the one between them.",
+        "id": "Menjawab dengan salah satu posisi yang disebut dalam soal, bukan posisi di antaranya."
       },
       "remediation": {
-        "en": "Walk along a number line on the floor: before means a step back, after means a step forward.",
-        "id": "Berjalan di garis bilangan di lantai: sebelum berarti satu langkah mundur, setelah berarti satu langkah maju."
+        "en": "Stand toys 6th, ?, 8th on the floor and point to the gap between them; say the position of the gap.",
+        "id": "Berdirikan boneka keenam, ?, kedelapan di lantai dan tunjuk celah di antaranya; sebutkan posisi celah itu."
       }
     }
   ],
@@ -452,6 +452,10 @@
       {
         "en": "On the stair game, hold your child's hand and use only a few low steps.",
         "id": "Pada permainan tangga, pegang tangan anak dan gunakan hanya beberapa anak tangga yang rendah."
+      },
+      {
+        "en": "If you act out the plate question, use plastic plates.",
+        "id": "Jika memeragakan soal piring, pakai piring plastik."
       }
     ]
   },

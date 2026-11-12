@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-math-division-as-sharing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "math",
   "strand": "multiplication_division",
@@ -243,29 +243,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "24 ÷ 6 = ? Which answer, with its check, is correct?",
-        "id": "24 ÷ 6 = ? Jawaban mana, beserta pemeriksaannya, yang benar?"
+        "en": "24 ÷ 3 = ? Which answer, with its check, is correct?",
+        "id": "24 ÷ 3 = ? Jawaban mana, beserta pemeriksaannya, yang benar?"
       },
       "choices": {
         "en": [
-          "4, because 6 × 4 = 24",
-          "18, because 24 - 6 = 18",
-          "30, because 24 + 6 = 30"
+          "8, because 3 × 8 = 24",
+          "21, because 24 - 3 = 21",
+          "27, because 24 + 3 = 27"
         ],
         "id": [
-          "4, karena 6 × 4 = 24",
-          "18, karena 24 - 6 = 18",
-          "30, karena 24 + 6 = 30"
+          "8, karena 3 × 8 = 24",
+          "21, karena 24 - 3 = 21",
+          "27, karena 24 + 3 = 27"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Division is checked with multiplication: 6 groups of 4 make 24, so 24 ÷ 6 = 4.",
-        "id": "Pembagian diperiksa dengan perkalian: 6 kelompok berisi 4 menjadi 24, jadi 24 ÷ 6 = 4."
+        "en": "Division is checked with multiplication: 3 groups of 8 make 24, so 24 ÷ 3 = 8.",
+        "id": "Pembagian diperiksa dengan perkalian: 3 kelompok berisi 8 menjadi 24, jadi 24 ÷ 3 = 8."
       },
       "check": {
-        "expression": "24 / 6",
-        "result": "4"
+        "expression": "24 / 3",
+        "result": "8"
       },
       "distractorMisconceptions": {
         "1": "SUBTRACTS_INSTEAD",
@@ -403,8 +403,8 @@
     },
     "notes": [
       {
-        "en": "If real kue or onde-onde are used, check for allergies (sesame on onde-onde) and keep small blocks away from younger siblings.",
-        "id": "Jika memakai kue atau onde-onde sungguhan, periksa alergi (wijen pada onde-onde) dan jauhkan balok kecil dari adik yang lebih kecil."
+        "en": "If real kue or onde-onde are used, check for allergies (sesame on onde-onde); onde-onde are sticky, so cut them small for younger children; keep small blocks away from younger siblings.",
+        "id": "Jika memakai kue atau onde-onde sungguhan, periksa alergi (wijen pada onde-onde); onde-onde lengket, jadi potong kecil untuk anak yang lebih kecil; jauhkan balok kecil dari adik yang lebih kecil."
       }
     ]
   },

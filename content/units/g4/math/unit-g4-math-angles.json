@@ -1,6 +1,6 @@
 {
   "id": "unit-g4-math-angles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "framework": "math",
   "strand": "geometry",
@@ -56,6 +56,10 @@
     {
       "en": "With the protractor, always estimate first (less than or more than a right angle) so the child picks the correct one of its two scales.",
       "id": "Dengan busur derajat, selalu perkirakan dulu (kurang atau lebih dari sudut siku-siku) agar anak memilih skala yang benar dari dua skalanya."
+    },
+    {
+      "en": "Calculating angles on a straight line and around a point is a stretch at this grade (Singapore teaches it in P5); go slowly and use the turn facts.",
+      "id": "Menghitung sudut pada garis lurus dan di sekeliling titik adalah tantangan tambahan di kelas ini (di Singapura diajarkan di kelas 5); lakukan perlahan dan pakai fakta putaran."
     }
   ],
   "childInstructions": [
@@ -334,8 +338,8 @@
         "id": "Sudut mengukur putaran di antara kedua kaki, bukan panjangnya. Bukaan yang sama berarti sudut yang sama."
       },
       "distractorMisconceptions": {
-        "1": "LONGER_ARMS_BIGGER_ANGLE",
-        "2": "LONGER_ARMS_BIGGER_ANGLE"
+        "1": "ARM_LENGTH_CHANGES_ANGLE",
+        "2": "ARM_LENGTH_CHANGES_ANGLE"
       }
     }
   ],
@@ -429,10 +433,10 @@
       }
     },
     {
-      "code": "LONGER_ARMS_BIGGER_ANGLE",
+      "code": "ARM_LENGTH_CHANGES_ANGLE",
       "description": {
-        "en": "Thinks an angle with longer arms is bigger.",
-        "id": "Mengira sudut dengan kaki lebih panjang lebih besar."
+        "en": "Thinks the length of the arms changes the size of the angle.",
+        "id": "Mengira panjang kaki sudut mengubah besar sudutnya."
       },
       "remediation": {
         "en": "Lay the short-armed angle on top of the long-armed one: the openings match exactly.",
@@ -442,8 +446,8 @@
   ],
   "extension": [
     {
-      "en": "At what other times does a clock show a right angle between its hands? Find two times on the hour and explain.",
-      "id": "Pada pukul berapa lagi jam menunjukkan sudut siku-siku di antara jarumnya? Cari dua waktu tepat dan jelaskan."
+      "en": "3 o'clock shows a right angle between the hands. Find the other time on the hour that does, and explain why 6 o'clock does not.",
+      "id": "Pukul 3 menunjukkan sudut siku-siku di antara jarumnya. Cari satu waktu tepat lain yang juga begitu, dan jelaskan mengapa pukul 6 tidak."
     }
   ],
   "accessibility": [

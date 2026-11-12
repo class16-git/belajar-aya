@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-math-subtraction-within-20",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "math",
   "strand": "addition_subtraction",
@@ -94,8 +94,8 @@
   },
   "materials": [
     {
-      "en": "Two egg cartons cut down to 10 cups each (the adult cuts), and 20 large bottle caps",
-      "id": "Dua wadah telur yang dipotong menjadi 10 lubang masing-masing (dipotong orang dewasa), dan 20 tutup botol besar"
+      "en": "Two egg cartons cut down to 10 cups each (the adult cuts), and 20 large plastic screw caps (not metal crown caps)",
+      "id": "Dua wadah telur yang dipotong menjadi 10 lubang masing-masing (dipotong orang dewasa), dan 20 tutup botol plastik ulir yang besar (bukan tutup logam bergerigi)"
     },
     {
       "en": "A number line from 0 to 20 on a paper strip, paper, pencils",
@@ -122,8 +122,8 @@
       "id": "Pikirkan penjumlahan: 16 - 9. Tanyakan: 9 dan berapa menjadi 16? 9 + 1 = 10 dan 10 + 6 = 16, jadi bagian yang hilang 7. 16 - 9 = 7."
     },
     {
-      "en": "Story: Pak Joko's angkot has 18 passengers and 9 get off at the pasar. Double 9 is 18, so 9 are still riding: 18 - 9 = 9.",
-      "id": "Cerita: angkot Pak Joko membawa 18 penumpang dan 9 turun di pasar. Dua kali 9 adalah 18, jadi masih 9 yang naik: 18 - 9 = 9."
+      "en": "Story: Pak Joko's bus has 18 passengers and 9 get off at the pasar. Double 9 is 18, so 9 are still riding: 18 - 9 = 9.",
+      "id": "Cerita: bus Pak Joko membawa 18 penumpang dan 9 turun di pasar. Dua kali 9 adalah 18, jadi masih 9 yang naik: 18 - 9 = 9."
     }
   ],
   "practice": [
@@ -374,7 +374,7 @@
   "safety": {
     "supervision": "adult_present",
     "hazards": {
-      "chokingRisk": false,
+      "chokingRisk": true,
       "sharp": false,
       "water": false,
       "heat": false,
@@ -383,8 +383,12 @@
     },
     "notes": [
       {
-        "en": "Use large bottle caps and keep them away from younger siblings; the adult cuts the egg cartons.",
-        "id": "Pakai tutup botol besar dan jauhkan dari adik yang lebih kecil; orang dewasa memotong wadah telur."
+        "en": "Bottle caps are a choking risk for younger siblings: count them back into a lidded box after the lesson. Do not use metal crown caps, which have sharp edges. The adult cuts the egg cartons.",
+        "id": "Tutup botol berbahaya tertelan oleh adik yang lebih kecil: hitung dan kembalikan ke kotak bertutup setelah belajar. Jangan pakai tutup botol logam bergerigi, yang tepinya tajam. Orang dewasa memotong wadah telur."
+      },
+      {
+        "en": "Wash hands after handling raw eggs.",
+        "id": "Cuci tangan setelah memegang telur mentah."
       }
     ]
   },

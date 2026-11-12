@@ -331,9 +331,9 @@ export function unitIssues(u: Unit): string[] {
   if (new Set(u.assessment.map((a) => a.id)).size !== u.assessment.length) out.push(`${u.id}: duplicate assessment ids`);
   // Assessment must test transfer, not recall (QA finding): an item may not reuse the exact set of numbers of a worked
   // example or CPA activity.
-  if (u.framework === 'math') {
+  if (u.framework === 'math' || /\d/.test(enText(u.assessment.map((a) => a.prompt)))) {
     const sig = (t: string) => (t.match(/\d+(?:[.,]\d+)?/g) ?? []).sort().join('|');
-    const taught = new Set(enText([u.guidedExamples, u.cpa?.concrete ?? [], u.cpa?.pictorial ?? [], u.cpa?.abstract ?? []]).split(/(?<=[.!?])\s+/).map(sig).filter((x) => x.split('|').length >= 2));
+    const taught = new Set(enText([u.guidedExamples, u.practice, u.childInstructions, u.cpa?.concrete ?? [], u.cpa?.pictorial ?? [], u.cpa?.abstract ?? []]).split(/(?<=[.!?])\s+/).map(sig).filter((x) => x.split('|').length >= 2));
     for (const a of u.assessment) {
       const k = sig(a.prompt.en);
       if (k.split('|').length >= 2 && taught.has(k)) out.push(`${u.id}/${a.id}: repeats the numbers of a worked example; use new numbers so it tests the objective`);

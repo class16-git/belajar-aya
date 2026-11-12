@@ -1,6 +1,6 @@
 {
   "id": "unit-k-math-shapes-and-patterns",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "math",
   "strand": "geometry",
@@ -13,7 +13,7 @@
   ],
   "objective": {
     "en": "Name circles, triangles, squares and rectangles by counting their sides and corners, and copy, continue and make repeating patterns (AB, ABB, ABC).",
-    "id": "Menyebut lingkaran, segitiga, persegi, dan persegi panjang dengan menghitung sisi dan sudutnya, serta meniru, melanjutkan, dan membuat pola berulang (AB, ABB, ABC)."
+    "id": "Menyebut lingkaran, segitiga, persegi, dan persegi panjang dengan menghitung sisi dan pojoknya (titik sudut), serta meniru, melanjutkan, dan membuat pola berulang (AB, ABB, ABC)."
   },
   "rationale": {
     "en": "Children who sort shapes by their features, not by how they look at first glance, start to reason like mathematicians: a triangle stays a triangle when it is turned over. Finding the part of a pattern that repeats is early algebraic thinking and prepares skip counting.",
@@ -70,8 +70,8 @@
   "cpa": {
     "concrete": [
       {
-        "en": "Sort the cardboard shapes and real objects (a plate, a tissue box face, a sandwich cut corner to corner) into four trays: circle, triangle, square, rectangle. Turn each triangle a different way and check it still has three sides.",
-        "id": "Kelompokkan bangun kardus dan benda nyata (piring, sisi kotak tisu, roti tawar yang dipotong dari sudut ke sudut) ke empat nampan: lingkaran, segitiga, persegi, persegi panjang. Putar setiap segitiga ke arah lain dan periksa sisinya tetap tiga."
+        "en": "Sort the cardboard shapes and real objects (a plate, a tissue box face, a paper napkin folded corner to corner) into four trays: circle, triangle, square, rectangle. Turn each triangle a different way and check it still has three sides.",
+        "id": "Kelompokkan bangun kardus dan benda nyata (piring, sisi kotak tisu, serbet kertas yang dilipat dari pojok ke pojok) ke empat nampan: lingkaran, segitiga, persegi, persegi panjang. Putar setiap segitiga ke arah lain dan periksa sisinya tetap tiga."
       },
       {
         "en": "Build a pattern on the floor with plastic cups and large spoons: cup, spoon, cup, spoon. Then a new rule: cup, spoon, spoon.",
@@ -279,8 +279,8 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "A window has 4 straight sides: 2 long and 2 short. Which shape is it?",
-        "id": "Sebuah jendela punya 4 sisi lurus: 2 panjang dan 2 pendek. Bangun apakah itu?"
+        "en": "A window has 4 straight sides, 2 long and 2 short, and 4 square corners. Which shape is it?",
+        "id": "Sebuah jendela punya 4 sisi lurus, 2 panjang dan 2 pendek, serta 4 pojok siku-siku. Bangun apakah itu?"
       },
       "choices": {
         "en": [

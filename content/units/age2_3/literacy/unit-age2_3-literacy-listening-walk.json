@@ -1,6 +1,6 @@
 {
   "id": "unit-age2_3-literacy-listening-walk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "framework": "literacy",
   "strand": "speaking_listening",
@@ -94,7 +94,7 @@
     },
     {
       "en": "At home: you sweep the floor out of sight while your child sits with another adult. You stop and ask: 'What can you hear?' Your child walks over and points at the broom. You say: 'Swish, swish. The broom!'",
-      "id": "Di rumah: Anda menyapu lantai di tempat yang tidak terlihat sementara anak duduk bersama orang dewasa lain. Anda berhenti dan bertanya: 'Dengar apa, ya?' Anak menghampiri dan menunjuk sapu. Anda berkata: 'Sret, sret. Sapu!'"
+      "id": "Di rumah: Anda menyapu lantai di tempat yang tidak terlihat sementara anak duduk bersama orang dewasa lain. Anda berhenti dan bertanya: 'Dengar apa, ya?' Anak menghampiri dan menunjuk sapu. Anda berkata: 'Srek, srek. Sapu!'"
     }
   ],
   "practice": [
@@ -115,25 +115,25 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "On the walk you stop. A bird sings in a tree. You ask: 'What's that?' Which response shows your child linked the sound to its source?",
-        "id": "Saat jalan Anda berhenti. Seekor burung berkicau di pohon. Anda bertanya: 'Apa itu?' Respons mana yang menunjukkan anak menghubungkan bunyi dengan sumbernya?"
+        "en": "On the walk you stop. A rooster crows behind a fence. You ask: 'What's that?' Which response shows your child linked the sound to its source?",
+        "id": "Saat jalan Anda berhenti. Seekor ayam jantan berkokok di balik pagar. Anda bertanya: 'Apa itu?' Respons mana yang menunjukkan anak menghubungkan bunyi dengan sumbernya?"
       },
       "choices": {
         "en": [
-          "Looks or points up at the tree, or says 'bird' or 'tweet'",
+          "Looks or points towards the fence, or says 'rooster' or 'cock-a-doodle-doo'",
           "Keeps walking and does not stop",
           "Points at the closest thing, your shoe"
         ],
         "id": [
-          "Melihat atau menunjuk ke pohon, atau berkata 'burung' atau 'cuit'",
+          "Melihat atau menunjuk ke arah pagar, atau berkata 'ayam' atau 'kukuruyuk'",
           "Terus berjalan dan tidak berhenti",
           "Menunjuk benda terdekat, yaitu sepatu Anda"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Looking towards the tree or naming the bird shows the sound was heard and linked to its source.",
-        "id": "Melihat ke arah pohon atau menyebut burung menunjukkan bunyi itu didengar dan dihubungkan dengan sumbernya."
+        "en": "Looking towards the fence or naming the rooster shows the sound was heard and linked to its source.",
+        "id": "Melihat ke arah pagar atau menyebut ayam menunjukkan bunyi itu didengar dan dihubungkan dengan sumbernya."
       },
       "distractorMisconceptions": {
         "1": "NOT_YET_ATTENDING",
@@ -148,7 +148,7 @@
       },
       "choices": {
         "en": [
-          "Says 'water' or 'drip', or goes to look at the bowl",
+          "Says 'water' or 'splash', or goes to look at the bowl",
           "Says 'bird' again, like the last answer",
           "Keeps talking loudly over the sound"
         ],
@@ -178,12 +178,12 @@
         "en": [
           "Copies the big knock or points to show the first one",
           "Copies the soft knock",
-          "Always picks the one heard last"
+          "Knocks both times the same, with no loud or soft"
         ],
         "id": [
           "Menirukan ketukan keras atau menunjukkan yang pertama",
           "Menirukan ketukan pelan",
-          "Selalu memilih yang terdengar terakhir"
+          "Mengetuk dua kali sama saja, tanpa keras atau pelan"
         ]
       },
       "answer": 0,
@@ -193,7 +193,7 @@
       },
       "distractorMisconceptions": {
         "1": "LOUD_QUIET_MIX",
-        "2": "PICKS_LAST_HEARD"
+        "2": "LOUD_QUIET_MIX"
       }
     },
     {
@@ -271,17 +271,6 @@
       }
     },
     {
-      "code": "PICKS_LAST_HEARD",
-      "description": {
-        "en": "Chooses the sound heard last because it is freshest in memory.",
-        "id": "Memilih bunyi terakhir karena paling diingat."
-      },
-      "remediation": {
-        "en": "Play the two sounds in a different order each time, and pause to copy each one straight after you hear it.",
-        "id": "Mainkan dua bunyi dengan urutan berbeda setiap kali, dan berhenti untuk menirukan setiap bunyi tepat setelah terdengar."
-      }
-    },
-    {
       "code": "CORRECTS_INSTEAD_OF_EXPANDS",
       "description": {
         "en": "The adult corrects the child's sound word instead of building on it.",
@@ -325,7 +314,7 @@
     "hazards": {
       "chokingRisk": false,
       "sharp": false,
-      "water": false,
+      "water": true,
       "heat": false,
       "allergens": false,
       "electrical": false
@@ -340,8 +329,8 @@
         "id": "Tanpa layar atau headphone: ini permainan mendengarkan bunyi nyata saja."
       },
       {
-        "en": "Keep the pot game at a gentle volume close to your child's ears, and empty the water bowl after the game.",
-        "id": "Jaga permainan panci tetap tidak terlalu keras di dekat telinga anak, dan kosongkan mangkuk air setelah bermain."
+        "en": "Keep the pot game at a gentle volume close to your child's ears, and empty the water bowl after the game. Pour only a few centimetres of water and stay right by the bowl.",
+        "id": "Jaga permainan panci tetap tidak terlalu keras di dekat telinga anak, dan kosongkan mangkuk air setelah bermain. Tuang air hanya beberapa sentimeter dan tetap berada di dekat mangkuk."
       }
     ]
   },

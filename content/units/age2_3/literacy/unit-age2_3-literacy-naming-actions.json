@@ -1,6 +1,6 @@
 {
   "id": "unit-age2_3-literacy-naming-actions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "framework": "literacy",
   "strand": "vocabulary",
@@ -108,25 +108,25 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Make Teddy hop up and down. Ask: 'What is Teddy doing?' Which response shows your child named the action?",
-        "id": "Buat boneka melompat-lompat. Tanyakan: 'Beruang sedang apa?' Respons mana yang menunjukkan anak menyebut kegiatannya?"
+        "en": "Make a different toy (a doll or a cloth kitten) hop up and down. Ask: 'What is Kitty doing?' Which response shows your child named the action?",
+        "id": "Buat boneka lain (boneka kucing) melompat-lompat. Tanyakan: 'Kucing sedang apa?' Respons mana yang menunjukkan anak menyebut kegiatannya?"
       },
       "choices": {
         "en": [
           "Says 'jump' or a clear try such as 'jum'",
-          "Says 'Teddy' and nothing more",
+          "Says 'Kitty' and nothing more",
           "Hops too, without a word"
         ],
         "id": [
           "Berkata 'lompat' atau usaha yang jelas seperti 'pat'",
-          "Berkata 'Beruang' saja",
+          "Berkata 'Kucing' saja",
           "Ikut melompat, tanpa kata"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The question asks what Teddy is doing, so the answer is the action word. Hopping along shows understanding but not yet saying.",
-        "id": "Pertanyaannya tentang apa yang dilakukan boneka, jadi jawabannya kata kerja. Ikut melompat menunjukkan paham, tetapi belum mengucapkan."
+        "en": "The question asks what Kitty is doing, so the answer is the action word. Hopping along shows understanding but not yet saying.",
+        "id": "Pertanyaannya tentang apa yang dilakukan boneka kucing, jadi jawabannya kata kerja. Ikut melompat menunjukkan paham, tetapi belum mengucapkan."
       },
       "distractorMisconceptions": {
         "1": "NAMES_WHO_NOT_ACTION",

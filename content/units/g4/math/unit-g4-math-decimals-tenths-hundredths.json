@@ -1,6 +1,6 @@
 {
   "id": "unit-g4-math-decimals-tenths-hundredths",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "framework": "math",
   "strand": "decimals",
@@ -397,8 +397,8 @@
     {
       "code": "DIGIT_ORDER_SWAPPED",
       "description": {
-        "en": "Writes the digits in the order the words were heard rather than by place.",
-        "id": "Menulis angka sesuai urutan kata yang didengar, bukan menurut tempatnya."
+        "en": "Swaps the tenths and hundredths digits.",
+        "id": "Menukar angka persepuluhan dan perseratusan."
       },
       "remediation": {
         "en": "Write each part in its labelled column before reading the number.",

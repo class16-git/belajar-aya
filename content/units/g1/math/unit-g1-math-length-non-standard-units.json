@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-math-length-non-standard-units",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "math",
   "strand": "measurement",
@@ -118,8 +118,8 @@
       "id": "Ukur lebar pintu dengan stik: taruh stik pertama tepat di kusen, lalu stik berikutnya bersentuhan. Hitung 8 stik. Tulis: pintu, stik, 8."
     },
     {
-      "en": "A pencil is 5 crayons long and a spoon is 3 crayons long. The pencil is longer by 5 - 3 = 2 crayons.",
-      "id": "Pensil panjangnya 5 krayon dan sendok panjangnya 3 krayon. Pensil lebih panjang 5 - 3 = 2 krayon."
+      "en": "A book is 3 crayons long and a pencil case is 2 crayons long. The book is longer by 3 - 2 = 1 crayon.",
+      "id": "Buku panjangnya 3 krayon dan kotak pensil panjangnya 2 krayon. Buku lebih panjang 3 - 2 = 1 krayon."
     },
     {
       "en": "Ayah measures the mat with his hand span and gets 12 spans; Aya gets 16 spans. Same mat, so why? Aya's hand is smaller, so more of her spans fit.",
@@ -149,7 +149,7 @@
       "id": "a1",
       "prompt": {
         "en": "A sarong is 7 sticks long. A towel is 12 sticks long. How much longer is the towel?",
-        "id": "Sebuah sarung panjangnya 7 stik. Sebuah handuk panjangnya 12 stik. Berapa lebih panjang handuknya?"
+        "id": "Sebuah sarung panjangnya 7 stik. Sebuah handuk panjangnya 12 stik. Handuk itu lebih panjang berapa stik?"
       },
       "choices": {
         "en": [

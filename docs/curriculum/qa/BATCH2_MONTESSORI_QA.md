@@ -42,14 +42,14 @@ Severity and verdicts are as in the pilot QA:
 | g3-from-gathering-to-farming | **fix required** (owner flag) | 0 | 1 | 1 |
 | g3-tile-game-subtraction-exchanging | pass | 0 | 0 | 2 |
 | g4-food-chains-in-a-rice-field | pass | 0 | 0 | 4 |
-| g4-paper-fraction-circles | **fix required** | 0 | 1 | 4 |
+| g4-paper-fraction-circles | **fix required** | 0 | 1 | 3 |
 | g5-how-seeds-travel | pass | 0 | 0 | 4 |
-| g5-story-of-writing-systems | **fix required** | 0 | 1 | 4 |
+| g5-story-of-writing-systems | **fix required** | 0 | 1 | 3 |
 | g6-plates-and-the-ring-of-fire | pass (owner note) | 0 | 0 | 4 |
 | g6-squares-of-numbers | pass | 0 | 0 | 2 |
 | k-continents-puzzle-map | pass | 0 | 0 | 3 |
-| k-parts-of-a-plant | **fix required** | 0 | 1 | 3 |
-| **Total** | 15 pass, 5 fix required | **0** | **5** | **59** |
+| k-parts-of-a-plant | **fix required** | 0 | 1 | 2 |
+| **Total** | 15 pass, 5 fix required | **0** | **5** | **56** |
 
 **Arithmetic.** I recomputed every `check` and every number in the text and found no errors:
 - tile subtraction: 5,342 − 2,718 = 2,624; 4,005 − 1,238 = 2,767, with the exchange state 3 thousands, 9 hundreds, 9 tens and 15 units; 6,251 − 3,476 = 2,775; a1 7,423 − 2,658 = 4,765; a3 3,002 − 1,547 = 1,455; a4 2,140 − 865 = 1,275;

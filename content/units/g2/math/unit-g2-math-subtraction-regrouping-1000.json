@@ -1,12 +1,12 @@
 {
   "id": "unit-g2-math-subtraction-regrouping-1000",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "math",
   "strand": "addition_subtraction",
   "title": {
     "en": "Subtraction with regrouping within 1,000",
-    "id": "Pengurangan dengan meminjam sampai 1.000"
+    "id": "Pengurangan dengan menukar (meminjam) sampai 1.000"
   },
   "prerequisites": [
     "unit-g2-math-addition-regrouping-1000",
@@ -105,8 +105,8 @@
   ],
   "preparation": [
     {
-      "en": "Make at least 7 hundreds bags, 10 spare bundles and 20 loose sticks so any renaming can be acted out.",
-      "id": "Siapkan setidaknya 7 kantong ratusan, 10 ikatan cadangan, dan 20 stik lepas sehingga setiap penukaran bisa diperagakan."
+      "en": "Make at least 9 hundreds bags, 10 spare bundles and 20 loose sticks so any renaming can be acted out.",
+      "id": "Siapkan setidaknya 9 kantong ratusan, 10 ikatan cadangan, dan 20 stik lepas sehingga setiap penukaran bisa diperagakan."
     }
   ],
   "guidedExamples": [
@@ -258,8 +258,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "The missing part is 610 - 276. Ones 10 - 6 = 4 (open a ten, and since there is only 1 ten, open a hundred too); tens 10 - 7 = 3; hundreds 5 - 2 = 3. Check: 334 + 276 = 610.",
-        "id": "Bagian yang hilang adalah 610 - 276. Satuan 10 - 6 = 4 (buka satu puluhan, dan karena puluhannya hanya 1, buka juga satu ratusan); puluhan 10 - 7 = 3; ratusan 5 - 2 = 3. Periksa: 334 + 276 = 610."
+        "en": "The missing part is 610 - 276. Ones: 0 - 6 is not possible, so open the 1 ten: 10 - 6 = 4. Tens: now 0 - 7, so open a hundred: 10 - 7 = 3. Hundreds: 5 - 2 = 3. Check: 334 + 276 = 610.",
+        "id": "Bagian yang hilang adalah 610 - 276. Satuan: 0 - 6 tidak bisa, jadi buka 1 puluhan: 10 - 6 = 4. Puluhan: sekarang 0 - 7, jadi buka satu ratusan: 10 - 7 = 3. Ratusan: 5 - 2 = 3. Periksa: 334 + 276 = 610."
       },
       "check": {
         "expression": "610 - 276",

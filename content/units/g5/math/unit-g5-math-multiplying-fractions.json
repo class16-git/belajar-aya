@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-math-multiplying-fractions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "framework": "math",
   "strand": "fractions",
@@ -98,8 +98,8 @@
       "id": "Beberapa lembar kertas bekas untuk dilipat, dua pensil warna"
     },
     {
-      "en": "8 to 15 identical small household objects such as spoons or bottle tops",
-      "id": "8 sampai 15 benda rumah tangga kecil yang sama, seperti sendok atau tutup botol"
+      "en": "8 to 15 identical spoons or large plastic jar lids",
+      "id": "8 sampai 15 sendok atau tutup stoples plastik besar yang sama"
     },
     {
       "en": "Squared paper and a ruler for area models",
@@ -404,7 +404,7 @@
   "safety": {
     "supervision": "adult_present",
     "hazards": {
-      "chokingRisk": true,
+      "chokingRisk": false,
       "sharp": false,
       "water": false,
       "heat": false,
@@ -413,8 +413,8 @@
     },
     "notes": [
       {
-        "en": "Small bottle tops are a choking risk for younger siblings: count them back into a container after the lesson.",
-        "id": "Tutup botol kecil berbahaya tertelan oleh adik yang lebih kecil: hitung dan kembalikan ke wadah setelah belajar."
+        "en": "Use spoons or large jar lids, not small bottle caps or tops, which are a choking risk for younger siblings.",
+        "id": "Pakai sendok atau tutup stoples besar, bukan tutup botol kecil, yang berbahaya tertelan oleh adik yang lebih kecil."
       }
     ]
   },

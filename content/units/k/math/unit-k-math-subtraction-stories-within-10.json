@@ -1,6 +1,6 @@
 {
   "id": "unit-k-math-subtraction-stories-within-10",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "math",
   "strand": "addition_subtraction",
@@ -216,7 +216,7 @@
       "id": "a3",
       "prompt": {
         "en": "Rina has 9 stickers and Doni has 6 stickers. How many more stickers does Rina have?",
-        "id": "Rina punya 9 stiker dan Doni punya 6 stiker. Berapa stiker lebih banyak yang dimiliki Rina?"
+        "id": "Rina punya 9 stiker dan Doni punya 6 stiker. Stiker Rina lebih banyak berapa dari stiker Doni?"
       },
       "choices": {
         "en": [
@@ -225,9 +225,9 @@
           "6 more"
         ],
         "id": [
-          "3 lebih banyak",
-          "15 lebih banyak",
-          "6 lebih banyak"
+          "3 stiker",
+          "15 stiker",
+          "6 stiker"
         ]
       },
       "answer": 0,
@@ -273,7 +273,7 @@
       },
       "distractorMisconceptions": {
         "1": "ADDS_INSTEAD",
-        "2": "GIVES_PART_TAKEN"
+        "2": "GIVES_KNOWN_PART"
       }
     },
     {
@@ -333,6 +333,17 @@
       }
     },
     {
+      "code": "GIVES_KNOWN_PART",
+      "description": {
+        "en": "Answers with the part already given in the story instead of the missing part.",
+        "id": "Menjawab dengan bagian yang sudah diberikan dalam cerita, bukan bagian yang hilang."
+      },
+      "remediation": {
+        "en": "Hide 3 cups under a cloth and show 5; lift the cloth and count only the hidden part.",
+        "id": "Sembunyikan 3 gelas di bawah kain dan tunjukkan 5; angkat kain dan hitung hanya bagian yang tersembunyi."
+      }
+    },
+    {
       "code": "COUNTS_START_NUMBER",
       "description": {
         "en": "Counts back including the starting number, so the answer is one too big.",
@@ -385,13 +396,13 @@
       "sharp": false,
       "water": false,
       "heat": false,
-      "allergens": false,
+      "allergens": true,
       "electrical": false
     },
     "notes": [
       {
-        "en": "If you use real food, cut it into pieces suitable for the child's age and check for allergies first.",
-        "id": "Jika memakai makanan sungguhan, potong sesuai usia anak dan periksa alergi lebih dulu."
+        "en": "Kue can contain egg, milk, wheat, peanut or sesame: check before eating, and cut kue and fruit into pieces suitable for the child's age.",
+        "id": "Kue bisa mengandung telur, susu, gandum, kacang tanah, atau wijen: periksa sebelum dimakan, dan potong kue dan buah sesuai usia anak."
       }
     ]
   },

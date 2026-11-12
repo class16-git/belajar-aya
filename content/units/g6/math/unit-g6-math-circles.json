@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-math-circles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "math",
   "strand": "measurement",
@@ -46,16 +46,16 @@
   ],
   "parentInstructions": [
     {
-      "en": "Collect round objects with different sizes: a plate, a tin lid, a cup, a bicycle wheel if you have one.",
-      "id": "Kumpulkan benda bulat berbagai ukuran: piring, tutup kaleng, cangkir, roda sepeda jika ada."
+      "en": "Collect round objects with different sizes: a plate, a biscuit-tin lid or plastic jar lid, a cup, a bicycle wheel if you have one.",
+      "id": "Kumpulkan benda bulat berbagai ukuran: piring, tutup kaleng biskuit atau tutup stoples plastik, cangkir, roda sepeda jika ada."
     },
     {
       "en": "Insist that each answer names the value of π used; 22/7 suits radii and diameters that are multiples of 7, and 3.14 suits other numbers.",
       "id": "Pastikan setiap jawaban menyebut nilai π yang dipakai; 22/7 cocok untuk jari-jari dan diameter kelipatan 7, dan 3,14 cocok untuk bilangan lain."
     },
     {
-      "en": "The adult cuts the paper circle into sectors; tin lids may have sharp edges, so handle them by the flat face only.",
-      "id": "Orang dewasa memotong lingkaran kertas menjadi juring; tutup kaleng bisa bertepi tajam, jadi pegang hanya di permukaan datarnya."
+      "en": "The adult cuts the paper circle into sectors; use only biscuit-tin or plastic jar lids, never the cut-off lid of a food can, which is razor-sharp.",
+      "id": "Orang dewasa memotong lingkaran kertas menjadi juring; pakai hanya tutup kaleng biskuit atau tutup stoples plastik, jangan tutup kaleng makanan yang dipotong, karena sangat tajam."
     }
   ],
   "childInstructions": [
@@ -71,8 +71,8 @@
   "cpa": {
     "concrete": [
       {
-        "en": "Wrap a string around a plate with a 22 cm diameter, mark it, straighten it and measure: about 69 cm. 69 ÷ 22 is about 3.1. Repeat with a cup and a tin lid and compare the ratios.",
-        "id": "Lilitkan tali di sekeliling piring berdiameter 22 cm, tandai, luruskan, lalu ukur: sekitar 69 cm. 69 ÷ 22 sekitar 3,1. Ulangi dengan cangkir dan tutup kaleng lalu bandingkan perbandingannya."
+        "en": "Wrap a string around a plate with a 22 cm diameter, mark it, straighten it and measure: about 69 cm. 69 ÷ 22 is about 3.1. Repeat with a cup and a jar lid and compare the ratios.",
+        "id": "Lilitkan tali di sekeliling piring berdiameter 22 cm, tandai, luruskan, lalu ukur: sekitar 69 cm. 69 ÷ 22 sekitar 3,1. Ulangi dengan cangkir dan tutup stoples lalu bandingkan perbandingannya."
       }
     ],
     "pictorial": [
@@ -90,8 +90,8 @@
   },
   "materials": [
     {
-      "en": "Round household objects (a plate, a cup, a tin lid), string, a ruler or tape measure",
-      "id": "Benda bulat di rumah (piring, cangkir, tutup kaleng), tali, penggaris atau meteran"
+      "en": "Round household objects (a plate, a cup, a biscuit-tin lid or plastic jar lid, never the cut-off lid of a food can), string, a ruler or tape measure",
+      "id": "Benda bulat di rumah (piring, cangkir, tutup kaleng biskuit atau tutup stoples plastik, jangan tutup kaleng makanan yang dipotong), tali, penggaris atau meteran"
     },
     {
       "en": "A paper circle cut into 16 equal sectors by the adult, glue, paper",
@@ -104,8 +104,8 @@
   ],
   "preparation": [
     {
-      "en": "Cut the paper circle into 16 sectors and check the tin lid has no sharp edge; use a lid opened with a safe-edge opener or skip it.",
-      "id": "Potong lingkaran kertas menjadi 16 juring dan periksa tutup kaleng tidak bertepi tajam; pakai tutup yang dibuka dengan pembuka bertepi aman atau lewati saja."
+      "en": "Cut the paper circle into 16 sectors and check that every lid used has smooth edges.",
+      "id": "Potong lingkaran kertas menjadi 16 juring dan pastikan setiap tutup yang dipakai bertepi halus."
     }
   ],
   "guidedExamples": [
@@ -118,8 +118,8 @@
       "id": "Keliling lingkaran berjari-jari 7 cm, dengan π = 22/7: diameter 14 cm, K = 22/7 × 14 = 44 cm."
     },
     {
-      "en": "Area of a round table top with radius 20 cm, using π = 3.14: A = 3.14 × 20 × 20 = 1,256 cm².",
-      "id": "Luas permukaan meja bundar berjari-jari 20 cm, dengan π = 3,14: L = 3,14 × 20 × 20 = 1.256 cm²."
+      "en": "Area of a round stool top with radius 20 cm, using π = 3.14: A = 3.14 × 20 × 20 = 1,256 cm².",
+      "id": "Luas permukaan kursi bundar berjari-jari 20 cm, dengan π = 3,14: L = 3,14 × 20 × 20 = 1.256 cm²."
     },
     {
       "en": "Perimeter of a semicircle with diameter 14 cm, using π = 22/7: the curve is half of 44 = 22 cm, plus the straight diameter 14 cm, so 36 cm.",
@@ -128,8 +128,8 @@
   ],
   "practice": [
     {
-      "en": "Measure the diameter of three round objects, calculate each circumference with π = 3.14, then check with string.",
-      "id": "Ukur diameter tiga benda bulat, hitung setiap keliling dengan π = 3,14, lalu periksa dengan tali."
+      "en": "Measure the diameter of three round objects, calculate each circumference with π = 3.14, round it to 1 decimal place, then check with string and expect a difference of about 1 cm.",
+      "id": "Ukur diameter tiga benda bulat, hitung setiap keliling dengan π = 3,14, bulatkan sampai 1 tempat desimal, lalu periksa dengan tali dan perkirakan selisih sekitar 1 cm."
     },
     {
       "en": "Glue the 16 sectors into the near-rectangle and label its length (half the circumference) and height (the radius).",
@@ -459,8 +459,8 @@
     },
     "notes": [
       {
-        "en": "The adult cuts the paper sectors; tin lids can have sharp edges, so check them first and hold them by the flat face; the compass point is sharp, so use a traced lid instead for younger children.",
-        "id": "Orang dewasa memotong juring kertas; tutup kaleng bisa bertepi tajam, jadi periksa dulu dan pegang di permukaan datarnya; ujung jangka tajam, jadi pakai tutup yang dijiplak untuk anak yang lebih kecil."
+        "en": "The adult cuts the paper sectors; use only biscuit-tin or plastic jar lids, never the cut-off lid of a food can; the compass point is sharp, so use a traced lid instead for younger children.",
+        "id": "Orang dewasa memotong juring kertas; pakai hanya tutup kaleng biskuit atau tutup stoples plastik, jangan tutup kaleng makanan yang dipotong; ujung jangka tajam, jadi pakai tutup yang dijiplak untuk anak yang lebih kecil."
       }
     ]
   },

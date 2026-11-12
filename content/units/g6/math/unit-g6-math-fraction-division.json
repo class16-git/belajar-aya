@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-math-fraction-division",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "math",
   "strand": "fractions",
@@ -45,8 +45,8 @@
   ],
   "parentInstructions": [
     {
-      "en": "Use real kitchen measuring: a 1-cup measure and a 1/4-cup measure (or a glass and a smaller cup that fills it exactly 4 times) with rice or water.",
-      "id": "Pakai takaran dapur sungguhan: takaran 1 cangkir dan 1/4 cangkir (atau gelas dan cangkir kecil yang tepat 4 kali mengisinya) dengan beras atau air."
+      "en": "Use real kitchen measuring: a 1-cup measure and a 1/4-cup measure (or a glass and a smaller cup that fills it exactly 4 times) with rice.",
+      "id": "Pakai takaran dapur sungguhan: takaran 1 cangkir dan 1/4 cangkir (atau gelas dan cangkir kecil yang tepat 4 kali mengisinya) dengan beras."
     },
     {
       "en": "Say the question in words every time: '3 ÷ 1/4 means how many quarters fit into 3?'",
@@ -208,7 +208,7 @@
         "result": "2/7"
       },
       "distractorMisconceptions": {
-        "1": "MULTIPLIES_INSTEAD",
+        "1": "MULTIPLIES_BY_WHOLE_DIVISOR",
         "2": "FLIPS_DIVIDEND"
       }
     },
@@ -322,14 +322,25 @@
       }
     },
     {
+      "code": "MULTIPLIES_BY_WHOLE_DIVISOR",
+      "description": {
+        "en": "Multiplies by the whole number when dividing a fraction by it.",
+        "id": "Mengalikan dengan bilangan cacah ketika membagi pecahan dengan bilangan itu."
+      },
+      "remediation": {
+        "en": "Fold the 6/7 strip into 3 equal shares: each share is smaller than 6/7, so the answer must be smaller too.",
+        "id": "Lipat pita 6/7 menjadi 3 bagian sama: setiap bagian lebih kecil dari 6/7, jadi jawabannya juga harus lebih kecil."
+      }
+    },
+    {
       "code": "FLIPS_DIVIDEND",
       "description": {
         "en": "Flips the first fraction (or both) instead of the divisor.",
         "id": "Membalik pecahan pertama (atau keduanya), bukan pembaginya."
       },
       "remediation": {
-        "en": "Check by multiplying back: answer × divisor must give the first number. Then redo with common denominators to see which fraction is being measured by which.",
-        "id": "Periksa dengan mengalikan kembali: hasil × pembagi harus sama dengan bilangan pertama. Lalu kerjakan ulang dengan penyebut sama untuk melihat pecahan mana yang diukur dengan pecahan mana."
+        "en": "Check by multiplying back: answer × divisor must give the first number. Then redo with common denominators to see which fraction is being measured by which. For 7/8 ÷ 1/4, draw 7/8 as a bar of eighths and ring quarter-sized groups (2 eighths): 3 1/2 groups fit.",
+        "id": "Periksa dengan mengalikan kembali: hasil × pembagi harus sama dengan bilangan pertama. Lalu kerjakan ulang dengan penyebut sama untuk melihat pecahan mana yang diukur dengan pecahan mana. Untuk 7/8 ÷ 1/4, gambar 7/8 sebagai batang perdelapan dan lingkari kelompok seukuran seperempat (2 perdelapan): muat 3 1/2 kelompok."
       }
     }
   ],
