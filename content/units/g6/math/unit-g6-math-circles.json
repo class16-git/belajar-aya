@@ -1,0 +1,509 @@
+{
+  "id": "unit-g6-math-circles",
+  "version": "1.0.0",
+  "level": "g6",
+  "framework": "math",
+  "strand": "measurement",
+  "title": {
+    "en": "Circles: radius, diameter, circumference and area",
+    "id": "Lingkaran: jari-jari, diameter, keliling, dan luas"
+  },
+  "prerequisites": [
+    "unit-g5-math-area-of-triangles",
+    "unit-g5-math-decimals-to-thousandths"
+  ],
+  "objective": {
+    "en": "Name the radius and diameter of a circle, find its circumference (π × d) and area (π × r × r) using the value of π stated in the question (22/7 or 3.14), and solve problems with semicircles, quarter circles and rolling wheels.",
+    "id": "Menyebut jari-jari dan diameter lingkaran, menentukan keliling (π × d) dan luasnya (π × r × r) dengan nilai π yang disebut dalam soal (22/7 atau 3,14), serta menyelesaikan soal setengah lingkaran, seperempat lingkaran, dan roda yang menggelinding."
+  },
+  "rationale": {
+    "en": "Measuring real round objects with string shows that every circle's circumference is a little over 3 times its diameter, which is where π comes from. Cutting a circle into sectors and rearranging them into a near-rectangle shows why the area is π × r × r. Both 22/7 and 3.14 are approximations of π, so each question states which to use.",
+    "id": "Mengukur benda bulat sungguhan dengan tali menunjukkan bahwa keliling setiap lingkaran sedikit lebih dari 3 kali diameternya, dari situlah π berasal. Memotong lingkaran menjadi juring dan menyusunnya menjadi hampir persegi panjang menunjukkan mengapa luasnya π × r × r. 22/7 dan 3,14 sama-sama pendekatan π, jadi setiap soal menyebut mana yang dipakai."
+  },
+  "outcomes": [
+    {
+      "en": "Measures circumference and diameter of round objects and finds that their ratio is about 3.1.",
+      "id": "Mengukur keliling dan diameter benda bulat dan menemukan bahwa perbandingannya sekitar 3,1."
+    },
+    {
+      "en": "Calculates circumference and area with the stated value of π.",
+      "id": "Menghitung keliling dan luas dengan nilai π yang disebutkan."
+    },
+    {
+      "en": "Finds perimeters and areas of semicircles and quarter circles, including the straight edges.",
+      "id": "Menentukan keliling dan luas setengah lingkaran dan seperempat lingkaran, termasuk sisi lurusnya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can check whether a question gives me the radius or the diameter before using a formula.",
+      "id": "Aku bisa memeriksa apakah soal memberi jari-jari atau diameter sebelum memakai rumus."
+    },
+    {
+      "en": "I can remember to add the straight edges for the perimeter of a semicircle.",
+      "id": "Aku ingat menambahkan sisi lurus untuk keliling setengah lingkaran."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Collect round objects with different sizes: a plate, a tin lid, a cup, a bicycle wheel if you have one.",
+      "id": "Kumpulkan benda bulat berbagai ukuran: piring, tutup kaleng, cangkir, roda sepeda jika ada."
+    },
+    {
+      "en": "Insist that each answer names the value of π used; 22/7 suits radii and diameters that are multiples of 7, and 3.14 suits other numbers.",
+      "id": "Pastikan setiap jawaban menyebut nilai π yang dipakai; 22/7 cocok untuk jari-jari dan diameter kelipatan 7, dan 3,14 cocok untuk bilangan lain."
+    },
+    {
+      "en": "The adult cuts the paper circle into sectors; tin lids may have sharp edges, so handle them by the flat face only.",
+      "id": "Orang dewasa memotong lingkaran kertas menjadi juring; tutup kaleng bisa bertepi tajam, jadi pegang hanya di permukaan datarnya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Circumference: π × diameter. Area: π × radius × radius.",
+      "id": "Keliling: π × diameter. Luas: π × jari-jari × jari-jari."
+    },
+    {
+      "en": "Use the value of π the question gives. Write the units: cm for lengths, cm² for areas.",
+      "id": "Pakai nilai π yang diberikan soal. Tulis satuannya: cm untuk panjang, cm² untuk luas."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Wrap a string around a plate with a 22 cm diameter, mark it, straighten it and measure: about 69 cm. 69 ÷ 22 is about 3.1. Repeat with a cup and a tin lid and compare the ratios.",
+        "id": "Lilitkan tali di sekeliling piring berdiameter 22 cm, tandai, luruskan, lalu ukur: sekitar 69 cm. 69 ÷ 22 sekitar 3,1. Ulangi dengan cangkir dan tutup kaleng lalu bandingkan perbandingannya."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a circle with radius 7 cm and mark a radius and a diameter. Then draw a paper circle cut (by the adult) into 16 sectors and rearranged as a near-rectangle: its length is half the circumference and its height is the radius.",
+        "id": "Gambar lingkaran berjari-jari 7 cm dan tandai jari-jari dan diameternya. Lalu gambar lingkaran kertas yang dipotong orang dewasa menjadi 16 juring dan disusun menjadi hampir persegi panjang: panjangnya setengah keliling dan tingginya jari-jari."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the formulas with the value of π shown: C = 22/7 × 14 = 44 cm; A = 3.14 × 20 × 20 = 1,256 cm².",
+        "id": "Tulis rumus dengan nilai π yang ditunjukkan: K = 22/7 × 14 = 44 cm; L = 3,14 × 20 × 20 = 1.256 cm²."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Round household objects (a plate, a cup, a tin lid), string, a ruler or tape measure",
+      "id": "Benda bulat di rumah (piring, cangkir, tutup kaleng), tali, penggaris atau meteran"
+    },
+    {
+      "en": "A paper circle cut into 16 equal sectors by the adult, glue, paper",
+      "id": "Lingkaran kertas yang dipotong orang dewasa menjadi 16 juring sama, lem, kertas"
+    },
+    {
+      "en": "A compass for drawing circles or a round lid to trace around",
+      "id": "Jangka untuk menggambar lingkaran atau tutup bulat untuk dijiplak"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Cut the paper circle into 16 sectors and check the tin lid has no sharp edge; use a lid opened with a safe-edge opener or skip it.",
+      "id": "Potong lingkaran kertas menjadi 16 juring dan periksa tutup kaleng tidak bertepi tajam; pakai tutup yang dibuka dengan pembuka bertepi aman atau lewati saja."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "The plate: string length about 69 cm, diameter 22 cm, ratio about 3.1. Every circle gives nearly the same ratio: that number is π.",
+      "id": "Piring: panjang tali sekitar 69 cm, diameter 22 cm, perbandingan sekitar 3,1. Setiap lingkaran memberi perbandingan yang hampir sama: bilangan itu adalah π."
+    },
+    {
+      "en": "Circumference of a circle with radius 7 cm, using π = 22/7: diameter 14 cm, C = 22/7 × 14 = 44 cm.",
+      "id": "Keliling lingkaran berjari-jari 7 cm, dengan π = 22/7: diameter 14 cm, K = 22/7 × 14 = 44 cm."
+    },
+    {
+      "en": "Area of a round table top with radius 20 cm, using π = 3.14: A = 3.14 × 20 × 20 = 1,256 cm².",
+      "id": "Luas permukaan meja bundar berjari-jari 20 cm, dengan π = 3,14: L = 3,14 × 20 × 20 = 1.256 cm²."
+    },
+    {
+      "en": "Perimeter of a semicircle with diameter 14 cm, using π = 22/7: the curve is half of 44 = 22 cm, plus the straight diameter 14 cm, so 36 cm.",
+      "id": "Keliling setengah lingkaran berdiameter 14 cm, dengan π = 22/7: lengkungnya setengah dari 44 = 22 cm, ditambah diameter lurus 14 cm, jadi 36 cm."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Measure the diameter of three round objects, calculate each circumference with π = 3.14, then check with string.",
+      "id": "Ukur diameter tiga benda bulat, hitung setiap keliling dengan π = 3,14, lalu periksa dengan tali."
+    },
+    {
+      "en": "Glue the 16 sectors into the near-rectangle and label its length (half the circumference) and height (the radius).",
+      "id": "Tempel 16 juring menjadi hampir persegi panjang dan beri label panjangnya (setengah keliling) dan tingginya (jari-jari)."
+    },
+    {
+      "en": "Design a garden bed made of a rectangle and a semicircle and calculate its area and the length of edging it needs.",
+      "id": "Rancang petak taman dari persegi panjang dan setengah lingkaran lalu hitung luasnya dan panjang pembatas yang dibutuhkan."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A circular tray has a diameter of 35 cm. Using π = 22/7, what is its circumference?",
+        "id": "Sebuah nampan bundar berdiameter 35 cm. Dengan π = 22/7, berapa kelilingnya?"
+      },
+      "choices": {
+        "en": [
+          "110 cm",
+          "55 cm",
+          "3,850 cm"
+        ],
+        "id": [
+          "110 cm",
+          "55 cm",
+          "3.850 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "C = π × d = 22/7 × 35 = 22 × 5 = 110 cm.",
+        "id": "K = π × d = 22/7 × 35 = 22 × 5 = 110 cm."
+      },
+      "check": {
+        "expression": "22/7 * 35",
+        "result": "110"
+      },
+      "distractorMisconceptions": {
+        "1": "USES_RADIUS_FOR_DIAMETER",
+        "2": "CONFUSES_AREA_AND_CIRCUMFERENCE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A circle has a radius of 5 cm. Using π = 3.14, what is its area?",
+        "id": "Sebuah lingkaran berjari-jari 5 cm. Dengan π = 3,14, berapa luasnya?"
+      },
+      "choices": {
+        "en": [
+          "78.5 cm²",
+          "31.4 cm²",
+          "314 cm²"
+        ],
+        "id": [
+          "78,5 cm²",
+          "31,4 cm²",
+          "314 cm²"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A = π × r × r = 3.14 × 5 × 5 = 3.14 × 25 = 78.5 cm².",
+        "id": "L = π × r × r = 3,14 × 5 × 5 = 3,14 × 25 = 78,5 cm²."
+      },
+      "check": {
+        "expression": "3.14 * 5 * 5",
+        "result": "78.5"
+      },
+      "distractorMisconceptions": {
+        "1": "DOUBLES_INSTEAD_OF_SQUARING",
+        "2": "SQUARES_THE_DIAMETER"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A flower bed is a semicircle with a diameter of 28 m. Using π = 22/7, what is the length of its whole boundary?",
+        "id": "Sebuah petak bunga berbentuk setengah lingkaran berdiameter 28 m. Dengan π = 22/7, berapa panjang seluruh batasnya?"
+      },
+      "choices": {
+        "en": [
+          "72 m",
+          "44 m",
+          "88 m"
+        ],
+        "id": [
+          "72 m",
+          "44 m",
+          "88 m"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Curved part: half of 22/7 × 28 = half of 88 = 44 m. Add the straight diameter: 44 + 28 = 72 m.",
+        "id": "Bagian lengkung: setengah dari 22/7 × 28 = setengah dari 88 = 44 m. Tambahkan diameter lurus: 44 + 28 = 72 m."
+      },
+      "check": {
+        "expression": "22/7 * 28 / 2 + 28",
+        "result": "72"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_STRAIGHT_EDGE",
+        "2": "USES_FULL_CIRCLE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A quarter circle has a radius of 14 cm. Using π = 22/7, what is its area?",
+        "id": "Sebuah seperempat lingkaran berjari-jari 14 cm. Dengan π = 22/7, berapa luasnya?"
+      },
+      "choices": {
+        "en": [
+          "154 cm²",
+          "616 cm²",
+          "22 cm²"
+        ],
+        "id": [
+          "154 cm²",
+          "616 cm²",
+          "22 cm²"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Whole circle: 22/7 × 14 × 14 = 616 cm². A quarter: 616 ÷ 4 = 154 cm².",
+        "id": "Lingkaran penuh: 22/7 × 14 × 14 = 616 cm². Seperempatnya: 616 ÷ 4 = 154 cm²."
+      },
+      "check": {
+        "expression": "1/4 * 22/7 * 14 * 14",
+        "result": "154"
+      },
+      "distractorMisconceptions": {
+        "1": "USES_FULL_CIRCLE",
+        "2": "CONFUSES_AREA_AND_CIRCUMFERENCE"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "The circumference of a circle is 62.8 cm. Using π = 3.14, what is its diameter?",
+        "id": "Keliling sebuah lingkaran 62,8 cm. Dengan π = 3,14, berapa diameternya?"
+      },
+      "choices": {
+        "en": [
+          "20 cm",
+          "10 cm",
+          "197.192 cm"
+        ],
+        "id": [
+          "20 cm",
+          "10 cm",
+          "197,192 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "C = π × d, so d = C ÷ π = 62.8 ÷ 3.14 = 20 cm. Check: 3.14 × 20 = 62.8.",
+        "id": "K = π × d, jadi d = K ÷ π = 62,8 ÷ 3,14 = 20 cm. Periksa: 3,14 × 20 = 62,8."
+      },
+      "check": {
+        "expression": "62.8 / 3.14",
+        "result": "20"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_RADIUS",
+        "2": "MULTIPLIES_INSTEAD"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "A bicycle wheel has a diameter of 70 cm. Using π = 22/7, how far does the bicycle move when the wheel turns 10 times?",
+        "id": "Roda sepeda berdiameter 70 cm. Dengan π = 22/7, berapa jauh sepeda bergerak ketika roda berputar 10 kali?"
+      },
+      "choices": {
+        "en": [
+          "2,200 cm",
+          "220 cm",
+          "1,100 cm"
+        ],
+        "id": [
+          "2.200 cm",
+          "220 cm",
+          "1.100 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "One turn moves the bicycle one circumference: 22/7 × 70 = 220 cm. Ten turns: 220 × 10 = 2,200 cm, which is 22 m.",
+        "id": "Satu putaran memindahkan sepeda sejauh satu keliling: 22/7 × 70 = 220 cm. Sepuluh putaran: 220 × 10 = 2.200 cm, yaitu 22 m."
+      },
+      "check": {
+        "expression": "22/7 * 70 * 10",
+        "result": "2200"
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_TURN_ONLY",
+        "2": "USES_RADIUS_FOR_DIAMETER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "USES_RADIUS_FOR_DIAMETER",
+      "description": {
+        "en": "Uses the radius where the diameter is needed (or the other way round), so the answer is half or double.",
+        "id": "Memakai jari-jari padahal yang diperlukan diameter (atau sebaliknya), sehingga jawabannya setengah atau dua kali."
+      },
+      "remediation": {
+        "en": "Before calculating, draw the circle and label the given length as r or d; write d = 2 × r beside it.",
+        "id": "Sebelum menghitung, gambar lingkaran dan beri label panjang yang diberikan sebagai r atau d; tulis d = 2 × r di sampingnya."
+      }
+    },
+    {
+      "code": "CONFUSES_AREA_AND_CIRCUMFERENCE",
+      "description": {
+        "en": "Uses the area formula for a length or the circumference formula for an area.",
+        "id": "Memakai rumus luas untuk panjang atau rumus keliling untuk luas."
+      },
+      "remediation": {
+        "en": "Ask whether the answer is a length (string around the edge, cm) or a surface (paint to cover it, cm²), then choose the formula.",
+        "id": "Tanyakan apakah jawabannya panjang (tali di sekeliling tepi, cm) atau permukaan (cat untuk menutupinya, cm²), lalu pilih rumusnya."
+      }
+    },
+    {
+      "code": "DOUBLES_INSTEAD_OF_SQUARING",
+      "description": {
+        "en": "Calculates r × 2 instead of r × r.",
+        "id": "Menghitung r × 2, bukan r × r."
+      },
+      "remediation": {
+        "en": "Look at the sector rectangle: its height is r and its length is π × r, so the area is π × r × r. Write r × r, not r².",
+        "id": "Lihat persegi panjang juring: tingginya r dan panjangnya π × r, jadi luasnya π × r × r. Tulis r × r agar jelas."
+      }
+    },
+    {
+      "code": "SQUARES_THE_DIAMETER",
+      "description": {
+        "en": "Uses diameter × diameter in the area formula.",
+        "id": "Memakai diameter × diameter dalam rumus luas."
+      },
+      "remediation": {
+        "en": "Mark the radius on the drawing and halve the diameter before using the area formula.",
+        "id": "Tandai jari-jari pada gambar dan bagi dua diameter sebelum memakai rumus luas."
+      }
+    },
+    {
+      "code": "FORGETS_STRAIGHT_EDGE",
+      "description": {
+        "en": "Gives only the curved part of a semicircle's perimeter.",
+        "id": "Hanya memberi bagian lengkung dari keliling setengah lingkaran."
+      },
+      "remediation": {
+        "en": "Walk a finger all the way round the drawn semicircle and list every part touched: curve and straight edge.",
+        "id": "Telusuri seluruh tepi gambar setengah lingkaran dengan jari dan daftar setiap bagian yang disentuh: lengkung dan sisi lurus."
+      }
+    },
+    {
+      "code": "USES_FULL_CIRCLE",
+      "description": {
+        "en": "Uses the whole circle's circumference or area for a part of a circle.",
+        "id": "Memakai keliling atau luas lingkaran penuh untuk bagian lingkaran."
+      },
+      "remediation": {
+        "en": "Draw the full circle lightly and shade the part asked for; write the fraction (1/2 or 1/4) next to it.",
+        "id": "Gambar lingkaran penuh tipis-tipis dan arsir bagian yang ditanya; tulis pecahannya (1/2 atau 1/4) di sampingnya."
+      }
+    },
+    {
+      "code": "GIVES_RADIUS",
+      "description": {
+        "en": "Halves the result as if the radius were asked for.",
+        "id": "Membagi dua hasilnya seolah-olah yang ditanya jari-jari."
+      },
+      "remediation": {
+        "en": "Reread the question and underline what it asks for: diameter or radius.",
+        "id": "Baca ulang soal dan garis bawahi yang ditanya: diameter atau jari-jari."
+      }
+    },
+    {
+      "code": "MULTIPLIES_INSTEAD",
+      "description": {
+        "en": "Multiplies by π when working backwards instead of dividing.",
+        "id": "Mengalikan dengan π saat menghitung mundur, bukan membagi."
+      },
+      "remediation": {
+        "en": "Write C = π × d with the known values and ask which number times 3.14 gives 62.8.",
+        "id": "Tulis K = π × d dengan nilai yang diketahui dan tanyakan bilangan berapa dikali 3,14 menghasilkan 62,8."
+      }
+    },
+    {
+      "code": "ONE_TURN_ONLY",
+      "description": {
+        "en": "Gives the distance for one turn of the wheel only.",
+        "id": "Hanya memberi jarak untuk satu putaran roda."
+      },
+      "remediation": {
+        "en": "Roll a lid along a strip of paper with a chalk mark, counting turns; each turn adds one circumference.",
+        "id": "Gelindingkan tutup di sepanjang pita kertas dengan tanda kapur sambil menghitung putaran; setiap putaran menambah satu keliling."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "A running track has two straight sides of 100 m and two semicircular ends of diameter 63 m. Using π = 22/7, how long is one lap?",
+      "id": "Lintasan lari punya dua sisi lurus 100 m dan dua ujung setengah lingkaran berdiameter 63 m. Dengan π = 22/7, berapa panjang satu putaran?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "String measurements and rolled lids give a hands-on route; a calculator may be used for 3.14 multiplications so the focus stays on choosing the formula.",
+      "id": "Mengukur dengan tali dan menggelindingkan tutup memberi jalur langsung; kalkulator boleh dipakai untuk perkalian 3,14 agar fokus tetap pada memilih rumus."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": true,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult cuts the paper sectors; tin lids can have sharp edges, so check them first and hold them by the flat face; the compass point is sharp, so use a traced lid instead for younger children.",
+        "id": "Orang dewasa memotong juring kertas; tutup kaleng bisa bertepi tajam, jadi periksa dulu dan pegang di permukaan datarnya; ujung jangka tajam, jadi pakai tutup yang dijiplak untuk anak yang lebih kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 45
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves one new circumference, one area, one semicircle or quarter-circle problem and one reverse problem, stating the value of π each time, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan satu soal keliling, satu luas, satu setengah atau seperempat lingkaran, dan satu soal kebalikan yang baru, dengan menyebut nilai π setiap kali, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

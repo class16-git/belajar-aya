@@ -1,0 +1,456 @@
+{
+  "id": "unit-g6-math-speed-distance-time",
+  "version": "1.0.0",
+  "level": "g6",
+  "framework": "math",
+  "strand": "measurement",
+  "title": {
+    "en": "Speed, distance and time",
+    "id": "Kecepatan, jarak, dan waktu"
+  },
+  "prerequisites": [
+    "unit-g6-math-ratio",
+    "unit-g5-math-decimals-to-thousandths",
+    "unit-g6-math-fraction-division"
+  ],
+  "objective": {
+    "en": "Use speed as distance travelled per unit of time, calculate speed, distance or time from the other two (km/h, m/min), convert minutes to fractions or decimals of an hour, and find average speed for a whole journey.",
+    "id": "Memakai kecepatan sebagai jarak yang ditempuh per satuan waktu, menghitung kecepatan, jarak, atau waktu dari dua lainnya (km/jam, m/menit), mengubah menit menjadi pecahan atau desimal jam, dan menentukan kecepatan rata-rata untuk seluruh perjalanan."
+  },
+  "rationale": {
+    "en": "Speed is a rate, a ratio of distance to time. Timing a real walk gives a speed the child owns. Two errors dominate: reading 30 minutes as 0.3 hours, and averaging two speeds instead of dividing total distance by total time. Both are confronted directly.",
+    "id": "Kecepatan adalah laju, perbandingan jarak dengan waktu. Mengukur waktu jalan kaki sungguhan memberi kecepatan milik anak sendiri. Dua kesalahan paling sering: membaca 30 menit sebagai 0,3 jam, dan merata-ratakan dua kecepatan alih-alih membagi jarak total dengan waktu total. Keduanya dihadapi langsung."
+  },
+  "outcomes": [
+    {
+      "en": "Calculates speed, distance or time when the other two are known, with correct units.",
+      "id": "Menghitung kecepatan, jarak, atau waktu jika dua lainnya diketahui, dengan satuan yang benar."
+    },
+    {
+      "en": "Converts minutes to hours as fractions or decimals (40 min = 2/3 h).",
+      "id": "Mengubah menit ke jam sebagai pecahan atau desimal (40 menit = 2/3 jam)."
+    },
+    {
+      "en": "Finds average speed as total distance ÷ total time.",
+      "id": "Menentukan kecepatan rata-rata sebagai jarak total ÷ waktu total."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can measure my own walking speed in metres per minute.",
+      "id": "Aku bisa mengukur kecepatan jalanku sendiri dalam meter per menit."
+    },
+    {
+      "en": "I can explain why 2 h 30 min is 2.5 h, not 2.3 h.",
+      "id": "Aku bisa menjelaskan mengapa 2 jam 30 menit adalah 2,5 jam, bukan 2,3 jam."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Measure a safe walking route away from traffic (a field or a long corridor) with a tape measure, for example 60 m, and time a normal walk with a phone stopwatch.",
+      "id": "Ukur rute jalan yang aman jauh dari lalu lintas (lapangan atau lorong panjang) dengan meteran, misalnya 60 m, dan catat waktu jalan biasa dengan stopwatch ponsel."
+    },
+    {
+      "en": "Read km/h as 'kilometres in one hour'; in Indonesian 'km/jam', 'kilometer per jam'.",
+      "id": "Baca km/jam sebagai 'kilometer dalam satu jam'; dalam bahasa Inggris 'km/h'."
+    },
+    {
+      "en": "Use a simple table (time | distance) to show that equal time steps give equal distance steps at a steady speed.",
+      "id": "Pakai tabel sederhana (waktu | jarak) untuk menunjukkan bahwa langkah waktu yang sama memberi langkah jarak yang sama pada kecepatan tetap."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Speed = distance ÷ time. Distance = speed × time. Time = distance ÷ speed.",
+      "id": "Kecepatan = jarak ÷ waktu. Jarak = kecepatan × waktu. Waktu = jarak ÷ kecepatan."
+    },
+    {
+      "en": "Make the time unit match the speed unit before you calculate.",
+      "id": "Samakan satuan waktu dengan satuan kecepatan sebelum menghitung."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Walk a measured 60 m route at a normal pace while an adult times it. If it takes 1 minute, the speed is 60 m/min; then walk for 3 minutes and check you cover about 180 m.",
+        "id": "Berjalan di rute 60 m yang sudah diukur dengan langkah biasa sementara orang dewasa mencatat waktunya. Jika butuh 1 menit, kecepatannya 60 m/menit; lalu berjalan 3 menit dan periksa apakah menempuh sekitar 180 m."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a train journey as a bar split into 3 equal hours with 240 km above the whole bar; each hour-part is 240 ÷ 3 = 80 km.",
+        "id": "Gambar perjalanan kereta sebagai batang yang dibagi menjadi 3 jam sama dengan 240 km di atas seluruh batang; setiap bagian jam adalah 240 ÷ 3 = 80 km."
+      },
+      {
+        "en": "Draw a clock face shaded for 40 minutes to see it is 40/60 = 2/3 of an hour.",
+        "id": "Gambar muka jam yang diarsir 40 menit untuk melihat bahwa itu 40/60 = 2/3 jam."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write and use the three relationships, with units: 45 km/h × 2/3 h = 30 km; average speed = total distance ÷ total time.",
+        "id": "Tulis dan pakai ketiga hubungan, dengan satuan: 45 km/jam × 2/3 jam = 30 km; kecepatan rata-rata = jarak total ÷ waktu total."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A tape measure (at least 10 m) or a known distance such as a sports field",
+      "id": "Meteran (setidaknya 10 m) atau jarak yang sudah diketahui seperti lapangan olahraga"
+    },
+    {
+      "en": "A stopwatch or phone timer used by the adult, paper and pencil",
+      "id": "Stopwatch atau pengatur waktu ponsel yang dipegang orang dewasa, kertas dan pensil"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Measure and mark a 60 m route on safe, flat ground away from roads.",
+      "id": "Ukur dan tandai rute 60 m di tanah datar yang aman dan jauh dari jalan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Aya walks 60 m in 1 minute: 60 m/min. In 10 minutes at the same speed she walks 60 × 10 = 600 m.",
+      "id": "Aya berjalan 60 m dalam 1 menit: 60 m/menit. Dalam 10 menit dengan kecepatan sama ia berjalan 60 × 10 = 600 m."
+    },
+    {
+      "en": "A train travels 240 km in 3 hours. Speed = 240 ÷ 3 = 80 km/h.",
+      "id": "Kereta menempuh 240 km dalam 3 jam. Kecepatan = 240 ÷ 3 = 80 km/jam."
+    },
+    {
+      "en": "A motorbike rides at 45 km/h for 40 minutes. 40 min = 40/60 h = 2/3 h. Distance = 45 × 2/3 = 30 km.",
+      "id": "Sepeda motor melaju 45 km/jam selama 40 menit. 40 menit = 40/60 jam = 2/3 jam. Jarak = 45 × 2/3 = 30 km."
+    },
+    {
+      "en": "Average speed: a car goes 30 km in 1 hour, then 30 km more in 30 minutes. Total 60 km in 1.5 h, so 60 ÷ 1.5 = 40 km/h, not the 45 km/h you get by averaging 30 and 60.",
+      "id": "Kecepatan rata-rata: mobil menempuh 30 km dalam 1 jam, lalu 30 km lagi dalam 30 menit. Total 60 km dalam 1,5 jam, jadi 60 ÷ 1,5 = 40 km/jam, bukan 45 km/jam yang didapat dengan merata-ratakan 30 dan 60."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Time three different ways of moving along the 60 m route (walking, fast walking, hopping) and calculate each speed in m/min.",
+      "id": "Catat waktu tiga cara bergerak di rute 60 m (berjalan, berjalan cepat, melompat) dan hitung setiap kecepatan dalam m/menit."
+    },
+    {
+      "en": "Plan a family trip: with a distance from a printed map or road sign and an expected speed, estimate the journey time in hours and minutes.",
+      "id": "Rencanakan perjalanan keluarga: dengan jarak dari peta cetak atau papan jalan dan perkiraan kecepatan, perkirakan waktu tempuh dalam jam dan menit."
+    },
+    {
+      "en": "Convert ten durations into hours as fractions and decimals (15 min, 20 min, 45 min, 1 h 12 min).",
+      "id": "Ubah sepuluh lama waktu ke jam sebagai pecahan dan desimal (15 menit, 20 menit, 45 menit, 1 jam 12 menit)."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A bus travels 180 km in 4 hours. What is its average speed?",
+        "id": "Sebuah bus menempuh 180 km dalam 4 jam. Berapa kecepatan rata-ratanya?"
+      },
+      "choices": {
+        "en": [
+          "45 km/h",
+          "720 km/h",
+          "176 km/h"
+        ],
+        "id": [
+          "45 km/jam",
+          "720 km/jam",
+          "176 km/jam"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Speed = distance ÷ time = 180 ÷ 4 = 45 km/h.",
+        "id": "Kecepatan = jarak ÷ waktu = 180 ÷ 4 = 45 km/jam."
+      },
+      "check": {
+        "expression": "180 / 4",
+        "result": "45"
+      },
+      "distractorMisconceptions": {
+        "1": "MULTIPLIES_INSTEAD",
+        "2": "SUBTRACTS_INSTEAD"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A cyclist rides at 12 km/h for 2 hours 30 minutes. How far does she ride?",
+        "id": "Seorang pesepeda melaju 12 km/jam selama 2 jam 30 menit. Berapa jauh ia bersepeda?"
+      },
+      "choices": {
+        "en": [
+          "30 km",
+          "27.6 km",
+          "360 km"
+        ],
+        "id": [
+          "30 km",
+          "27,6 km",
+          "360 km"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "30 minutes is half an hour, so the time is 2.5 h. Distance = 12 × 2.5 = 30 km.",
+        "id": "30 menit adalah setengah jam, jadi waktunya 2,5 jam. Jarak = 12 × 2,5 = 30 km."
+      },
+      "check": {
+        "expression": "12 * 2.5",
+        "result": "30"
+      },
+      "distractorMisconceptions": {
+        "1": "MINUTES_AS_DECIMAL_DIGITS",
+        "2": "USES_MINUTES_AS_HOURS"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A ferry sails 63 km at 18 km/h. How long does the trip take?",
+        "id": "Sebuah kapal feri berlayar 63 km dengan kecepatan 18 km/jam. Berapa lama perjalanannya?"
+      },
+      "choices": {
+        "en": [
+          "3.5 hours (3 h 30 min)",
+          "3 h 50 min",
+          "1,134 hours"
+        ],
+        "id": [
+          "3,5 jam (3 jam 30 menit)",
+          "3 jam 50 menit",
+          "1.134 jam"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Time = distance ÷ speed = 63 ÷ 18 = 3.5 h. 0.5 h is 30 minutes, so 3 h 30 min.",
+        "id": "Waktu = jarak ÷ kecepatan = 63 ÷ 18 = 3,5 jam. 0,5 jam adalah 30 menit, jadi 3 jam 30 menit."
+      },
+      "check": {
+        "expression": "63 / 18",
+        "result": "3.5"
+      },
+      "distractorMisconceptions": {
+        "1": "DECIMAL_HOURS_AS_MINUTES",
+        "2": "MULTIPLIES_INSTEAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Bayu walks 900 m to school in 12 minutes. What is his speed in metres per minute?",
+        "id": "Bayu berjalan 900 m ke sekolah dalam 12 menit. Berapa kecepatannya dalam meter per menit?"
+      },
+      "choices": {
+        "en": [
+          "75 m/min",
+          "10,800 m/min",
+          "888 m/min"
+        ],
+        "id": [
+          "75 m/menit",
+          "10.800 m/menit",
+          "888 m/menit"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Speed = 900 ÷ 12 = 75 m/min. Check: 75 × 12 = 900.",
+        "id": "Kecepatan = 900 ÷ 12 = 75 m/menit. Periksa: 75 × 12 = 900."
+      },
+      "check": {
+        "expression": "900 / 12",
+        "result": "75"
+      },
+      "distractorMisconceptions": {
+        "1": "MULTIPLIES_INSTEAD",
+        "2": "SUBTRACTS_INSTEAD"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A car travels 150 km in 3 hours, then 90 km in the next 1 hour. What is its average speed for the whole journey?",
+        "id": "Sebuah mobil menempuh 150 km dalam 3 jam, lalu 90 km dalam 1 jam berikutnya. Berapa kecepatan rata-ratanya untuk seluruh perjalanan?"
+      },
+      "choices": {
+        "en": [
+          "60 km/h",
+          "70 km/h",
+          "80 km/h"
+        ],
+        "id": [
+          "60 km/jam",
+          "70 km/jam",
+          "80 km/jam"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Total distance 150 + 90 = 240 km, total time 3 + 1 = 4 h, so 240 ÷ 4 = 60 km/h. Averaging 50 km/h and 90 km/h gives 70, which ignores that the car spent longer at the slower speed.",
+        "id": "Jarak total 150 + 90 = 240 km, waktu total 3 + 1 = 4 jam, jadi 240 ÷ 4 = 60 km/jam. Merata-ratakan 50 km/jam dan 90 km/jam memberi 70, yang mengabaikan bahwa mobil lebih lama melaju dengan kecepatan lebih rendah."
+      },
+      "check": {
+        "expression": "(150 + 90) / (3 + 1)",
+        "result": "60"
+      },
+      "distractorMisconceptions": {
+        "1": "AVERAGES_THE_SPEEDS",
+        "2": "FORGETS_PART_OF_TIME"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "MULTIPLIES_INSTEAD",
+      "description": {
+        "en": "Multiplies distance and time when speed or time is asked for.",
+        "id": "Mengalikan jarak dan waktu ketika yang ditanya kecepatan atau waktu."
+      },
+      "remediation": {
+        "en": "Say the unit aloud: km per hour means km ÷ hours. Check that the answer is sensible for a bus or a walker.",
+        "id": "Ucapkan satuannya: km per jam berarti km ÷ jam. Periksa apakah jawabannya masuk akal untuk bus atau pejalan kaki."
+      }
+    },
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Subtracts one quantity from the other.",
+        "id": "Mengurangkan satu besaran dari yang lain."
+      },
+      "remediation": {
+        "en": "Draw the bar model of equal time-parts and ask what goes in one part.",
+        "id": "Gambar model batang bagian-bagian waktu yang sama dan tanyakan apa isi satu bagian."
+      }
+    },
+    {
+      "code": "MINUTES_AS_DECIMAL_DIGITS",
+      "description": {
+        "en": "Writes 2 h 30 min as 2.3 h, treating minutes like tenths.",
+        "id": "Menulis 2 jam 30 menit sebagai 2,3 jam, menganggap menit seperti persepuluhan."
+      },
+      "remediation": {
+        "en": "Shade 30 minutes on a clock face: it is half the clock, so 0.5 h. An hour has 60 minutes, not 100.",
+        "id": "Arsir 30 menit pada muka jam: setengah jam, jadi 0,5 jam. Satu jam ada 60 menit, bukan 100."
+      }
+    },
+    {
+      "code": "USES_MINUTES_AS_HOURS",
+      "description": {
+        "en": "Uses the number of minutes as if it were hours.",
+        "id": "Memakai banyak menit seolah-olah jam."
+      },
+      "remediation": {
+        "en": "Convert every time to the unit in the speed before calculating, and write the unit at each step.",
+        "id": "Ubah setiap waktu ke satuan pada kecepatan sebelum menghitung, dan tulis satuannya di setiap langkah."
+      }
+    },
+    {
+      "code": "DECIMAL_HOURS_AS_MINUTES",
+      "description": {
+        "en": "Reads the decimal part of hours as minutes (3.5 h as 3 h 50 min).",
+        "id": "Membaca bagian desimal jam sebagai menit (3,5 jam sebagai 3 jam 50 menit)."
+      },
+      "remediation": {
+        "en": "Multiply the decimal part by 60: 0.5 × 60 = 30 minutes. Check on a clock face.",
+        "id": "Kalikan bagian desimal dengan 60: 0,5 × 60 = 30 menit. Periksa di muka jam."
+      }
+    },
+    {
+      "code": "AVERAGES_THE_SPEEDS",
+      "description": {
+        "en": "Averages the two speeds instead of dividing total distance by total time.",
+        "id": "Merata-ratakan dua kecepatan, bukan membagi jarak total dengan waktu total."
+      },
+      "remediation": {
+        "en": "Draw the journey hour by hour: 50, 50, 50, then 90 km. Four hours, 240 km in all, so each hour averages 60 km.",
+        "id": "Gambar perjalanan jam demi jam: 50, 50, 50, lalu 90 km. Empat jam, total 240 km, jadi setiap jam rata-rata 60 km."
+      }
+    },
+    {
+      "code": "FORGETS_PART_OF_TIME",
+      "description": {
+        "en": "Divides the total distance by only part of the time.",
+        "id": "Membagi jarak total hanya dengan sebagian waktunya."
+      },
+      "remediation": {
+        "en": "List every stage of the journey in a table with distance and time columns, and total both columns.",
+        "id": "Daftar setiap tahap perjalanan di tabel dengan kolom jarak dan waktu, lalu jumlahkan kedua kolom."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Two friends start 10 km apart and cycle towards each other at 12 km/h and 8 km/h. How long until they meet? Draw it as a bar model.",
+      "id": "Dua teman berjarak 10 km dan bersepeda saling mendekat dengan kecepatan 12 km/jam dan 8 km/jam. Berapa lama sampai mereka bertemu? Gambar sebagai model batang."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Children who cannot walk the route can time a toy car rolling down a measured ramp or a family member walking; give times in whole minutes at first.",
+      "id": "Anak yang tidak bisa berjalan di rute bisa mencatat waktu mobil mainan yang meluncur di papan miring yang diukur atau anggota keluarga yang berjalan; berikan waktu dalam menit bulat lebih dulu."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Walk the route only on safe ground away from roads and traffic, with an adult present; no running races.",
+        "id": "Berjalan di rute hanya di tanah yang aman jauh dari jalan dan lalu lintas, dengan orang dewasa; tidak ada lomba lari."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 45
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves one new problem of each type (speed, distance, time with minutes) and one average-speed problem with units, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan satu soal baru dari setiap jenis (kecepatan, jarak, waktu dengan menit) dan satu soal kecepatan rata-rata dengan satuannya, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}
