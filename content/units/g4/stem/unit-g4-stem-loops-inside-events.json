@@ -1,0 +1,472 @@
+{
+  "id": "unit-g4-stem-loops-inside-events",
+  "version": "1.0.0",
+  "level": "g4",
+  "framework": "stem",
+  "strand": "programming",
+  "title": {
+    "en": "Loops inside events: repeat until and forever",
+    "id": "Perulangan di dalam peristiwa: ulangi sampai dan selamanya"
+  },
+  "prerequisites": [
+    "unit-g3-stem-events-when-this-happens",
+    "unit-g2-stem-loops-floor-grid"
+  ],
+  "objective": {
+    "en": "Combine events and loops in unplugged scripts: use 'repeat until' that stops on a condition, a 'forever' loop that keeps checking, and an event script that runs a loop, and predict and count what each script does.",
+    "id": "Menggabungkan peristiwa dan perulangan dalam skrip tanpa komputer: memakai 'ulangi sampai' yang berhenti karena suatu syarat, perulangan 'selamanya' yang terus memeriksa, dan skrip peristiwa yang menjalankan perulangan, lalu menebak dan menghitung apa yang dilakukan setiap skrip."
+  },
+  "rationale": {
+    "en": "Children know that a loop repeats a fixed number of times and that an event starts a script. Real programs mix the two: a game keeps checking forever, a robot drives until it reaches a wall, and a button press starts a repeated action. Acting these scripts out makes the flow of control something children can see and count.",
+    "id": "Anak sudah tahu bahwa perulangan mengulang sejumlah kali tertentu dan bahwa peristiwa memulai sebuah skrip. Program sungguhan mencampur keduanya: permainan terus memeriksa selamanya, robot berjalan sampai mencapai tembok, dan tekanan tombol memulai gerakan yang berulang. Memperagakan skrip ini membuat alur kendali menjadi sesuatu yang bisa dilihat dan dihitung anak."
+  },
+  "outcomes": [
+    {
+      "en": "Predicts how many times a 'repeat until' loop runs and explains what makes it stop.",
+      "id": "Menebak berapa kali perulangan 'ulangi sampai' berjalan dan menjelaskan apa yang membuatnya berhenti."
+    },
+    {
+      "en": "Writes and tests a script where an event starts a loop, and counts the actions correctly, including for nested loops.",
+      "id": "Menulis dan menguji skrip yang peristiwanya memulai perulangan, dan menghitung gerakannya dengan benar, termasuk untuk perulangan bersarang."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can say what makes my loop stop.",
+      "id": "Aku bisa menyebut apa yang membuat perulanganku berhenti."
+    },
+    {
+      "en": "I can predict how many actions a script makes before I run it.",
+      "id": "Aku bisa menebak berapa gerakan yang dibuat skrip sebelum menjalankannya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Make the script cards with your child: event cards ('When the clap happens', 'When the green card is shown'), loop cards ('repeat 3 times', 'repeat until …', 'forever'), and action cards (step, jump, wave, turn around).",
+      "id": "Buat kartu skrip bersama anak: kartu peristiwa ('Saat ada tepukan', 'Saat kartu hijau ditunjukkan'), kartu perulangan ('ulangi 3 kali', 'ulangi sampai …', 'selamanya'), dan kartu gerakan (melangkah, melompat, melambai, berbalik)."
+    },
+    {
+      "en": "Before running any script, the child writes a prediction: how many actions, and when it stops. Then a family member acts it out exactly, like a robot.",
+      "id": "Sebelum menjalankan skrip, anak menulis tebakan: berapa gerakan, dan kapan berhenti. Lalu anggota keluarga memperagakannya persis, seperti robot."
+    },
+    {
+      "en": "For a 'forever' loop, agree a stop sign first: the adult says 'program stop' to end it. Talk about why real devices need an off switch.",
+      "id": "Untuk perulangan 'selamanya', sepakati tanda berhenti lebih dulu: orang dewasa berkata 'program berhenti' untuk mengakhirinya. Bicarakan mengapa perangkat sungguhan butuh tombol mati."
+    },
+    {
+      "en": "When a prediction is wrong, trace the script card by card together to find where the thinking slipped.",
+      "id": "Jika tebakan salah, telusuri skrip kartu demi kartu bersama untuk menemukan di mana pikirannya meleset."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Read the whole script and write your prediction: how many actions, and when does it stop?",
+      "id": "Baca seluruh skrip dan tulis tebakanmu: berapa gerakan, dan kapan berhenti?"
+    },
+    {
+      "en": "Run it with a family member as the robot. Count every action.",
+      "id": "Jalankan dengan anggota keluarga sebagai robot. Hitung setiap gerakan."
+    },
+    {
+      "en": "Compare with your prediction and fix the script or your thinking.",
+      "id": "Bandingkan dengan tebakanmu dan perbaiki skrip atau cara berpikirmu."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Lay out script cards and run them with a person as the robot.",
+        "id": "Susun kartu skrip dan jalankan dengan seseorang sebagai robot."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw each script as stacked blocks, with the loop wrapped around the actions it repeats like the jaws of a C.",
+        "id": "Gambar setiap skrip sebagai balok bertumpuk, dengan perulangan membungkus gerakan yang diulang seperti huruf C."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the number of actions as a calculation, such as 3 × 2 for 'repeat 3 times: [repeat 2 times: jump]'.",
+        "id": "Tulis jumlah gerakan sebagai hitungan, seperti 3 × 2 untuk 'ulangi 3 kali: [ulangi 2 kali: lompat]'."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 20 index cards in three colours: one colour for events, one for loops, one for actions",
+      "id": "Sekitar 20 kartu indeks dalam tiga warna: satu warna untuk peristiwa, satu untuk perulangan, satu untuk gerakan"
+    },
+    {
+      "en": "A marker, a notebook for predictions, and a green card for the 'green card' event",
+      "id": "Spidol, buku catatan untuk tebakan, dan kartu hijau untuk peristiwa 'kartu hijau'"
+    },
+    {
+      "en": "Floor space with a wall or a door about 4 to 8 steps away",
+      "id": "Lantai lapang dengan tembok atau pintu sekitar 4 sampai 8 langkah jauhnya"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write the cards and clear a straight path to the wall. Agree that steps are small, heel-to-toe steps so they are the same each time.",
+      "id": "Tulis kartu-kartunya dan kosongkan jalur lurus ke tembok. Sepakati bahwa langkahnya kecil, tumit menyentuh ujung kaki, agar sama setiap kali."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Repeat until: the script is 'When the green card is shown: repeat until you touch the wall: [step]. Then wave.' The wall is 6 heel-to-toe steps from Ayu. Her brother Bayu predicts '6 steps, then 1 wave'. She shows the green card; Bayu steps 6 times, touches the wall and waves. 'The loop did not count; it checked the wall before every step.'",
+      "id": "Ulangi sampai: skripnya 'Saat kartu hijau ditunjukkan: ulangi sampai menyentuh tembok: [melangkah]. Lalu melambai.' Tembok berjarak 6 langkah tumit-ke-ujung dari Ayu. Kakaknya, Bayu, menebak '6 langkah, lalu 1 lambaian'. Ia menunjukkan kartu hijau; Bayu melangkah 6 kali, menyentuh tembok, lalu melambai. 'Perulangan ini tidak menghitung; ia memeriksa tembok sebelum setiap langkah.'"
+    },
+    {
+      "en": "Forever with an event inside: 'When the game starts: forever [step; if you touch the wall, turn around].' Bayu walks to the wall, turns, walks back to the other wall, turns… It never ends on its own, until Mum says 'program stop'. 'A forever loop keeps checking. That is how a game watches for a key press all the time.'",
+      "id": "Selamanya dengan pemeriksaan di dalamnya: 'Saat permainan dimulai: selamanya [melangkah; jika menyentuh tembok, berbalik].' Bayu berjalan ke tembok, berbalik, berjalan kembali ke tembok lain, berbalik… Tidak pernah berakhir sendiri, sampai Ibu berkata 'program berhenti'. 'Perulangan selamanya terus memeriksa. Begitulah permainan mengawasi tekanan tombol sepanjang waktu.'"
+    },
+    {
+      "en": "Nested loop in an event: 'When the clap happens: repeat 2 times: [repeat 4 times: jump; wave].' Prediction: 2 × 4 = 8 jumps and 2 waves, so 10 actions. Bayu acts it out and Ayu tallies: 8 jumps, 2 waves. 'The inner loop runs completely each time the outer loop goes round.'",
+      "id": "Perulangan bersarang di dalam peristiwa: 'Saat ada tepukan: ulangi 2 kali: [ulangi 4 kali: lompat; lambaikan tangan].' Tebakan: 2 × 4 = 8 lompatan dan 2 lambaian, jadi 10 gerakan. Bayu memperagakannya dan Ayu membuat turus: 8 lompatan, 2 lambaian. 'Perulangan dalam berjalan sampai selesai setiap kali perulangan luar berputar sekali.'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Write a 'repeat until' script for crossing the room to a cushion. Measure how many steps it really takes, then start from a different place: does the script still work without changing it?",
+      "id": "Tulis skrip 'ulangi sampai' untuk menyeberangi ruangan ke bantal. Ukur berapa langkah yang sebenarnya diperlukan, lalu mulai dari tempat lain: apakah skripnya tetap berhasil tanpa diubah?"
+    },
+    {
+      "en": "Design a 'clap counter' game: 'When the clap happens: repeat 3 times: [stamp].' Predict the stamps for 4 claps, then test.",
+      "id": "Rancang permainan 'penghitung tepukan': 'Saat ada tepukan: ulangi 3 kali: [hentak].' Tebak jumlah hentakan untuk 4 tepukan, lalu uji."
+    },
+    {
+      "en": "Find the bug: 'repeat until you touch the wall: [wave]'. Act it out. Why does it never stop? Fix it.",
+      "id": "Temukan bug-nya: 'ulangi sampai menyentuh tembok: [melambai]'. Peragakan. Mengapa tidak pernah berhenti? Perbaiki."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "'When the clap happens: repeat 3 times: [repeat 2 times: hop].' One clap happens. How many hops?",
+        "id": "'Saat ada tepukan: ulangi 3 kali: [ulangi 2 kali: lompat].' Terjadi satu tepukan. Berapa lompatan?"
+      },
+      "choices": {
+        "en": [
+          "6 hops",
+          "5 hops",
+          "2 hops"
+        ],
+        "id": [
+          "6 lompatan",
+          "5 lompatan",
+          "2 lompatan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The inner loop runs fully each time: 3 × 2 = 6.",
+        "id": "Perulangan dalam berjalan penuh setiap kali: 3 × 2 = 6."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD_OF_MULTIPLYING",
+        "2": "INNER_LOOP_ONLY"
+      },
+      "check": {
+        "expression": "3 × 2",
+        "result": "6"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "'Repeat until you reach the door: [step].' The door is 9 steps away. How many times does the step run?",
+        "id": "'Ulangi sampai mencapai pintu: [melangkah].' Pintunya 9 langkah jauhnya. Berapa kali langkah dijalankan?"
+      },
+      "choices": {
+        "en": [
+          "9 times",
+          "10 times",
+          "1 time"
+        ],
+        "id": [
+          "9 kali",
+          "10 kali",
+          "1 kali"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The loop checks before each step and stops when the door is reached, after 9 steps.",
+        "id": "Perulangan memeriksa sebelum setiap langkah dan berhenti saat pintu tercapai, setelah 9 langkah."
+      },
+      "distractorMisconceptions": {
+        "1": "EXTRA_RUN_AFTER_CONDITION",
+        "2": "LOOP_RUNS_ONCE"
+      },
+      "check": {
+        "expression": "9",
+        "result": "9"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "'When the bell rings: repeat 2 times: [stamp].' The bell rings 5 times. How many stamps altogether?",
+        "id": "'Saat bel berbunyi: ulangi 2 kali: [hentak].' Bel berbunyi 5 kali. Berapa hentakan seluruhnya?"
+      },
+      "choices": {
+        "en": [
+          "10 stamps",
+          "7 stamps",
+          "2 stamps"
+        ],
+        "id": [
+          "10 hentakan",
+          "7 hentakan",
+          "2 hentakan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each ring starts the script again: 5 × 2 = 10.",
+        "id": "Setiap bunyi bel memulai skrip lagi: 5 × 2 = 10."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD_OF_MULTIPLYING",
+        "2": "EVENT_RUNS_ONCE"
+      },
+      "check": {
+        "expression": "5 × 2",
+        "result": "10"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Why does 'repeat until you touch the wall: [wave]' never stop?",
+        "id": "Mengapa 'ulangi sampai menyentuh tembok: [melambai]' tidak pernah berhenti?"
+      },
+      "choices": {
+        "en": [
+          "Waving never brings the robot closer to the wall, so the condition never becomes true",
+          "Waving is too slow",
+          "The loop needs a number instead"
+        ],
+        "id": [
+          "Melambai tidak pernah membuat robot lebih dekat ke tembok, jadi syaratnya tidak pernah terpenuhi",
+          "Melambai terlalu lambat",
+          "Perulangannya harus memakai angka"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A 'repeat until' loop must contain an action that can make its condition true.",
+        "id": "Perulangan 'ulangi sampai' harus berisi gerakan yang bisa membuat syaratnya terpenuhi."
+      },
+      "distractorMisconceptions": {
+        "1": "WRONG_CAUSE",
+        "2": "UNTIL_NEEDS_NUMBER"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A game must keep checking whether the player presses the jump key at any moment. Which loop fits best?",
+        "id": "Sebuah permainan harus terus memeriksa apakah pemain menekan tombol lompat kapan saja. Perulangan mana yang paling cocok?"
+      },
+      "choices": {
+        "en": [
+          "A forever loop that checks the key each time round",
+          "Repeat 3 times",
+          "No loop; check once at the start"
+        ],
+        "id": [
+          "Perulangan selamanya yang memeriksa tombol setiap putaran",
+          "Ulangi 3 kali",
+          "Tanpa perulangan; periksa sekali di awal"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The game does not know when the key will be pressed, so it must keep checking.",
+        "id": "Permainan tidak tahu kapan tombol akan ditekan, jadi harus terus memeriksa."
+      },
+      "distractorMisconceptions": {
+        "1": "FIXED_COUNT_ALWAYS",
+        "2": "CHECK_ONCE_ENOUGH"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_INSTEAD_OF_MULTIPLYING",
+      "description": {
+        "en": "Adds the loop numbers instead of multiplying them.",
+        "id": "Menjumlahkan angka perulangan, bukan mengalikannya."
+      },
+      "remediation": {
+        "en": "Lay out a real copy of the inner actions for every turn of the outer loop, then count all the cards.",
+        "id": "Jajarkan salinan nyata dari gerakan di dalam untuk setiap putaran perulangan luar, lalu hitung semua kartunya."
+      }
+    },
+    {
+      "code": "INNER_LOOP_ONLY",
+      "description": {
+        "en": "Counts only one run of the inner loop.",
+        "id": "Hanya menghitung satu kali jalannya perulangan dalam."
+      },
+      "remediation": {
+        "en": "Put a paper clip on the outer loop card and slide it along once for each time the inner loop finishes.",
+        "id": "Pasang penjepit di kartu perulangan luar dan geser sekali setiap perulangan dalam selesai."
+      }
+    },
+    {
+      "code": "EXTRA_RUN_AFTER_CONDITION",
+      "description": {
+        "en": "Thinks a 'repeat until' loop runs one extra time after the condition is met.",
+        "id": "Mengira perulangan 'ulangi sampai' berjalan sekali lagi setelah syaratnya terpenuhi."
+      },
+      "remediation": {
+        "en": "Act it slowly and say the check aloud before each step: 'Am I at the door? No: step.' At the door, the answer is 'yes', so no step.",
+        "id": "Peragakan pelan dan ucapkan pemeriksaannya sebelum setiap langkah: 'Sudah di pintu? Belum: melangkah.' Di pintu, jawabannya 'sudah', jadi tidak melangkah."
+      }
+    },
+    {
+      "code": "LOOP_RUNS_ONCE",
+      "description": {
+        "en": "Thinks the actions inside a loop run only once.",
+        "id": "Mengira gerakan di dalam perulangan hanya berjalan sekali."
+      },
+      "remediation": {
+        "en": "Tally each run of the loop on paper while a partner acts it out.",
+        "id": "Buat turus setiap jalannya perulangan di kertas sementara teman memperagakannya."
+      }
+    },
+    {
+      "code": "EVENT_RUNS_ONCE",
+      "description": {
+        "en": "Thinks an event script can run only once.",
+        "id": "Mengira skrip peristiwa hanya bisa berjalan sekali."
+      },
+      "remediation": {
+        "en": "Clap three times with pauses and watch the robot start the script again after each clap.",
+        "id": "Bertepuk tiga kali dengan jeda dan lihat robot memulai skrip lagi setelah setiap tepukan."
+      }
+    },
+    {
+      "code": "WRONG_CAUSE",
+      "description": {
+        "en": "Blames something that does not affect whether the loop stops.",
+        "id": "Menyalahkan sesuatu yang tidak memengaruhi berhentinya perulangan."
+      },
+      "remediation": {
+        "en": "Ask 'What would have to change for the condition to become true?' and check whether any action inside the loop changes it.",
+        "id": "Tanya 'Apa yang harus berubah agar syaratnya terpenuhi?' dan periksa apakah ada gerakan di dalam perulangan yang mengubahnya."
+      }
+    },
+    {
+      "code": "UNTIL_NEEDS_NUMBER",
+      "description": {
+        "en": "Thinks every loop must have a fixed number.",
+        "id": "Mengira setiap perulangan harus punya angka tetap."
+      },
+      "remediation": {
+        "en": "Start the 'reach the door' script from two different places: a number would be wrong for one of them, but 'until' works for both.",
+        "id": "Mulai skrip 'mencapai pintu' dari dua tempat berbeda: angka tetap akan salah untuk salah satunya, tetapi 'sampai' berhasil untuk keduanya."
+      }
+    },
+    {
+      "code": "FIXED_COUNT_ALWAYS",
+      "description": {
+        "en": "Chooses a fixed-count loop when the number of repeats is unknown.",
+        "id": "Memilih perulangan berjumlah tetap padahal jumlah ulangannya tidak diketahui."
+      },
+      "remediation": {
+        "en": "Play 'press the key whenever you like' while the robot checks only 3 times; press on the 4th moment and watch the robot miss it.",
+        "id": "Mainkan 'tekan tombol kapan saja' sementara robot hanya memeriksa 3 kali; tekan di saat ke-4 dan lihat robot melewatkannya."
+      }
+    },
+    {
+      "code": "CHECK_ONCE_ENOUGH",
+      "description": {
+        "en": "Thinks checking once at the start is enough.",
+        "id": "Mengira memeriksa sekali di awal sudah cukup."
+      },
+      "remediation": {
+        "en": "The robot checks once and then stops watching; press the key later and see that nothing happens.",
+        "id": "Robot memeriksa sekali lalu berhenti mengawasi; tekan tombol belakangan dan lihat tidak terjadi apa-apa."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Combine everything: 'When the game starts: forever [step; if you touch a wall, turn around]' and 'When the clap happens: repeat 3 times: [spin]'. Predict what the robot does if you clap while it is walking, then test.",
+      "id": "Gabungkan semuanya: 'Saat permainan dimulai: selamanya [melangkah; jika menyentuh tembok, berbalik]' dan 'Saat ada tepukan: ulangi 3 kali: [berputar]'. Tebak apa yang dilakukan robot jika kamu bertepuk saat ia berjalan, lalu uji."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who uses a wheelchair can be the robot with 'roll' instead of 'step'; a child with hearing loss can use the green card event instead of the clap.",
+      "id": "Anak pengguna kursi roda bisa menjadi robot dengan 'menggelinding' sebagai ganti 'melangkah'; anak dengan gangguan pendengaran bisa memakai peristiwa kartu hijau sebagai ganti tepukan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Walk slowly on a clear, non-slippery path. The robot touches the wall with a hand, never by bumping into it.",
+        "id": "Berjalan pelan di jalur yang lapang dan tidak licin. Robot menyentuh tembok dengan tangan, tidak pernah dengan menabraknya."
+      },
+      {
+        "en": "Spins and jumps are slow and small; stop if anyone feels dizzy.",
+        "id": "Putaran dan lompatan dilakukan pelan dan kecil; berhenti jika ada yang merasa pusing."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child predicts the actions of new scripts with 'repeat until', 'forever' and nested loops inside events, explains what stops each loop, and fixes a loop that never stops.",
+      "id": "Dikuasai jika anak menebak gerakan skrip baru dengan 'ulangi sampai', 'selamanya', dan perulangan bersarang di dalam peristiwa, menjelaskan apa yang menghentikan setiap perulangan, dan memperbaiki perulangan yang tidak pernah berhenti."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

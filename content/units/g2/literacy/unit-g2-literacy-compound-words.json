@@ -1,0 +1,382 @@
+{
+  "id": "unit-g2-literacy-compound-words",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "literacy",
+  "strand": "vocabulary",
+  "title": {
+    "en": "Compound words / Kata majemuk",
+    "id": "Kata majemuk"
+  },
+  "prerequisites": [
+    "unit-g1-literacy-capitals-and-full-stops"
+  ],
+  "objective": {
+    "en": "Recognise, build and explain compound words, and write them with the spacing each language uses: English compounds such as sunflower are usually written as one word; Indonesian kata majemuk such as rumah sakit are usually written as two words, with a few joined ones such as matahari.",
+    "id": "Mengenali, membentuk, dan menjelaskan kata majemuk, serta menuliskannya dengan spasi yang benar untuk setiap bahasa: kata majemuk bahasa Indonesia seperti rumah sakit umumnya ditulis terpisah, dengan beberapa yang ditulis serangkai seperti matahari; kata majemuk bahasa Inggris seperti sunflower umumnya ditulis menjadi satu kata."
+  },
+  "rationale": {
+    "en": "Compound words show children that new words can be built from words they already know, and that the new word has its own meaning: a hospital is not a 'sick house', and mata kaki is the ankle, not an eye. The two languages write compounds very differently. Most everyday English compounds for children are closed (one word). In Indonesian, the spelling rules (EYD/PUEBI) write most kata majemuk as separate words (kereta api, meja makan) and only a fixed list joined (matahari, kacamata, saputangan). One 'join them up' rule for both languages would cause spelling errors.",
+    "id": "Kata majemuk menunjukkan bahwa kata baru bisa dibentuk dari kata yang sudah dikenal, dan kata baru itu punya arti sendiri: rumah sakit bukan rumah yang sakit, dan mata kaki bukan mata. Kedua bahasa menulis kata majemuk dengan sangat berbeda. Menurut kaidah ejaan (EYD/PUEBI), sebagian besar kata majemuk bahasa Indonesia ditulis terpisah (kereta api, meja makan) dan hanya daftar tertentu yang ditulis serangkai (matahari, kacamata, saputangan). Kata majemuk bahasa Inggris untuk anak umumnya ditulis menjadi satu kata. Satu aturan 'gabungkan' untuk kedua bahasa akan menimbulkan salah ejaan."
+  },
+  "outcomes": [
+    {
+      "en": "Finds compound words in sentences and splits them into their two parts.",
+      "id": "Menemukan kata majemuk dalam kalimat dan memisahkannya menjadi dua bagian."
+    },
+    {
+      "en": "Explains the meaning of a compound, including one whose meaning is not just its parts.",
+      "id": "Menjelaskan arti kata majemuk, termasuk yang artinya bukan sekadar gabungan bagiannya."
+    },
+    {
+      "en": "Writes compounds with the correct spacing for the language.",
+      "id": "Menulis kata majemuk dengan spasi yang benar untuk bahasanya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can find the two words inside a compound word.",
+      "id": "Aku bisa menemukan dua kata di dalam kata majemuk."
+    },
+    {
+      "en": "I can explain what the compound word means and spell it correctly.",
+      "id": "Aku bisa menjelaskan arti kata majemuk dan menuliskannya dengan benar."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Write word cards for single words (EN: rain, coat, sun, flower, bed, time; ID: rumah, sakit, meja, makan, mata, hari). Your child joins two cards to make a compound and says what it means.",
+      "id": "Tulis kartu kata tunggal (ID: rumah, sakit, meja, makan, mata, hari; EN: rain, coat, sun, flower, bed, time). Anak menggabungkan dua kartu menjadi kata majemuk dan mengatakan artinya."
+    },
+    {
+      "en": "Show the spelling rule for the language: English cards are pushed together with no gap; Indonesian cards usually keep a finger space, except the joined list (matahari, kacamata, saputangan).",
+      "id": "Tunjukkan aturan ejaan bahasanya: kartu bahasa Indonesia umumnya diberi jarak selebar jari, kecuali daftar serangkai (matahari, kacamata, saputangan); kartu bahasa Inggris didempetkan tanpa celah."
+    },
+    {
+      "en": "Test meaning: can you put another word in the middle? 'rumah yang sakit' changes the meaning, so rumah sakit is one unit. In English, a 'blackboard' may be green, so the meaning is the whole word, not the parts.",
+      "id": "Uji arti: bisakah kata lain disisipkan di tengah? 'rumah yang sakit' mengubah artinya, jadi rumah sakit adalah satu kesatuan. Dalam bahasa Inggris, 'blackboard' bisa berwarna hijau, jadi artinya ada pada kata utuh."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Find the two words inside.",
+      "id": "Temukan dua kata di dalamnya."
+    },
+    {
+      "en": "Say what the new word means.",
+      "id": "Katakan arti kata barunya."
+    },
+    {
+      "en": "Check the spacing: together or apart?",
+      "id": "Periksa spasinya: digabung atau dipisah?"
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Index cards or paper strips with single words",
+      "id": "Kartu indeks atau potongan kertas berisi kata tunggal"
+    },
+    {
+      "en": "A pencil and a notebook for a compound word list",
+      "id": "Pensil dan buku tulis untuk daftar kata majemuk"
+    },
+    {
+      "en": "A story book to hunt for compounds",
+      "id": "Buku cerita untuk berburu kata majemuk"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Prepare about twelve single-word cards that make at least five compounds.",
+      "id": "Siapkan sekitar dua belas kartu kata tunggal yang bisa membentuk sedikitnya lima kata majemuk."
+    },
+    {
+      "en": "Draw a two-column chart: 'parts' and 'whole word and meaning'.",
+      "id": "Gambar tabel dua kolom: 'bagian' dan 'kata utuh dan artinya'."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "English: rain + coat = raincoat, a coat for the rain. sun + flower = sunflower, a tall flower that turns its face to the sun. bed + time = bedtime. But butterfly is not butter + a fly: some compounds have a meaning of their own, so check the meaning in a sentence.",
+      "id": "Bahasa Indonesia: rumah + sakit = rumah sakit, tempat orang sakit dirawat (ditulis terpisah). meja + makan = meja makan. mata + hari = matahari (ditulis serangkai). mata + kaki = mata kaki, yaitu tonjolan tulang di pergelangan kaki, bukan mata: arti kata majemuk perlu dicek dalam kalimat."
+    },
+    {
+      "en": "Sentence check: 'Grandpa wore his raincoat to water the sunflowers.' Your child spots the two compounds, explains each and checks the spelling.",
+      "id": "Cek kalimat: 'Adik memakai kacamata Kakek sambil duduk di meja makan.' Anak menemukan dua kata majemuk dan menjelaskan masing-masing serta cara menulisnya."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Compound hunt: find five compounds in a story book and add them to the chart.",
+      "id": "Berburu kata majemuk: temukan lima kata majemuk di buku cerita dan tambahkan ke tabel."
+    },
+    {
+      "en": "Card pairs: mix all the cards; your child makes as many compounds as possible (EN: cupcake, goldfish, homework; ID: kamar tidur, sapu lidi, saputangan).",
+      "id": "Pasangan kartu: campur semua kartu; anak membuat kata majemuk sebanyak mungkin (ID: kamar tidur, sapu lidi, saputangan; EN: cupcake, goldfish, homework)."
+    },
+    {
+      "en": "Silly compounds: invent a new compound and draw it (a 'shoe-car', 'sepatu terbang'), then explain its meaning.",
+      "id": "Kata majemuk lucu: ciptakan kata majemuk baru dan gambar (sepatu terbang, 'shoe-car'), lalu jelaskan artinya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which is a compound word?",
+        "id": "Mana yang merupakan kata majemuk?"
+      },
+      "choices": {
+        "en": [
+          "toothbrush",
+          "brushing",
+          "brush"
+        ],
+        "id": [
+          "kamar mandi",
+          "memandikan",
+          "mandi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A compound is made of two words. Brushing is one word with an ending added.",
+        "id": "Kata majemuk dibentuk dari dua kata. Memandikan adalah satu kata yang diberi imbuhan."
+      },
+      "distractorMisconceptions": {
+        "1": "AFFIX_AS_COMPOUND",
+        "2": "SINGLE_WORD_AS_COMPOUND"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "What is a 'greenhouse'?",
+        "id": "Apa arti 'rumah makan'?"
+      },
+      "choices": {
+        "en": [
+          "A glass building where plants are grown",
+          "A house painted green",
+          "A green plant"
+        ],
+        "id": [
+          "Tempat orang membeli dan menyantap makanan",
+          "Rumah yang bisa dimakan",
+          "Makanan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The compound has its own meaning; it is not just its two parts side by side.",
+        "id": "Kata majemuk punya arti sendiri; bukan sekadar dua bagiannya yang dijajarkan."
+      },
+      "distractorMisconceptions": {
+        "1": "LITERAL_PARTS",
+        "2": "USES_ONE_PART"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which is spelled correctly?",
+        "id": "Mana yang ditulis dengan benar?"
+      },
+      "choices": {
+        "en": [
+          "football",
+          "foot ball",
+          "ballfoot"
+        ],
+        "id": [
+          "kereta api",
+          "keretaapi",
+          "api kereta"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "This English compound is written as one word. The parts stay in their order.",
+        "id": "Kata majemuk ini ditulis terpisah. Urutan bagiannya tidak boleh dibalik."
+      },
+      "distractorMisconceptions": {
+        "1": "WRONG_SPACING_FOR_LANGUAGE",
+        "2": "PARTS_SWAPPED"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Which sentence has a compound word?",
+        "id": "Kalimat mana yang memuat kata majemuk?"
+      },
+      "choices": {
+        "en": [
+          "We packed a lunchbox.",
+          "We packed our lunch.",
+          "We are packing."
+        ],
+        "id": [
+          "Kami naik kapal laut.",
+          "Kami naik kapal.",
+          "Kami berlayar."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Lunch + box makes one new word. The others have single words or an ending.",
+        "id": "Kapal + laut membentuk satu kesatuan arti. Kalimat lain hanya memuat kata tunggal atau kata berimbuhan."
+      },
+      "distractorMisconceptions": {
+        "1": "SINGLE_WORD_AS_COMPOUND",
+        "2": "AFFIX_AS_COMPOUND"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "AFFIX_AS_COMPOUND",
+      "description": {
+        "en": "Thinks a word with a prefix or suffix is a compound.",
+        "id": "Mengira kata berimbuhan adalah kata majemuk."
+      },
+      "remediation": {
+        "en": "Cover each part: can it stand alone as a word? 'brush' yes, '-ing' no. 'me-...-kan' cannot stand alone, so memandikan is not a compound.",
+        "id": "Tutup setiap bagian: bisakah berdiri sendiri sebagai kata? 'mandi' bisa, 'me-...-kan' tidak, jadi memandikan bukan kata majemuk."
+      }
+    },
+    {
+      "code": "SINGLE_WORD_AS_COMPOUND",
+      "description": {
+        "en": "Picks a single word as a compound.",
+        "id": "Memilih kata tunggal sebagai kata majemuk."
+      },
+      "remediation": {
+        "en": "Clap the word parts and try to split it into two real words with the cards. If it cannot be split, it is not a compound.",
+        "id": "Coba pisahkan kata itu menjadi dua kata sungguhan dengan kartu. Jika tidak bisa, itu bukan kata majemuk."
+      }
+    },
+    {
+      "code": "LITERAL_PARTS",
+      "description": {
+        "en": "Reads the meaning as just the two parts side by side.",
+        "id": "Mengartikan kata majemuk hanya dari dua bagiannya."
+      },
+      "remediation": {
+        "en": "Use the 'middle word' test and a picture: draw what the literal parts would mean, then the real thing, and talk about the difference.",
+        "id": "Pakai uji 'sisip kata di tengah' dan gambar: gambar arti harfiah bagiannya, lalu benda sebenarnya, dan bicarakan perbedaannya."
+      }
+    },
+    {
+      "code": "USES_ONE_PART",
+      "description": {
+        "en": "Takes the meaning from only one of the two parts.",
+        "id": "Mengambil arti dari salah satu bagian saja."
+      },
+      "remediation": {
+        "en": "Ask two questions: what does the first part tell us, and what does the second? Then put them together in a sentence.",
+        "id": "Ajukan dua pertanyaan: apa yang diceritakan bagian pertama, dan apa yang diceritakan bagian kedua? Lalu gabungkan dalam kalimat."
+      }
+    },
+    {
+      "code": "WRONG_SPACING_FOR_LANGUAGE",
+      "description": {
+        "en": "Uses the spacing of the other language: splits an English closed compound or joins an Indonesian separate one.",
+        "id": "Memakai spasi bahasa lain: menggabungkan kata majemuk bahasa Indonesia yang seharusnya terpisah, atau memisah kata majemuk bahasa Inggris yang tertutup."
+      },
+      "remediation": {
+        "en": "Keep a two-list chart on the wall: 'Indonesian: apart (except matahari, kacamata, saputangan)' and 'English: usually together'. Check new compounds against the list or a dictionary.",
+        "id": "Tempel tabel dua daftar: 'Bahasa Indonesia: terpisah (kecuali matahari, kacamata, saputangan)' dan 'Bahasa Inggris: umumnya digabung'. Cocokkan kata majemuk baru dengan daftar atau kamus."
+      }
+    },
+    {
+      "code": "PARTS_SWAPPED",
+      "description": {
+        "en": "Puts the two parts in the wrong order.",
+        "id": "Menaruh dua bagian dengan urutan terbalik."
+      },
+      "remediation": {
+        "en": "Show how order changes meaning with cards: a 'house boat' is different from a 'boat house'; 'kereta api' names the train, 'api kereta' would be the train's fire.",
+        "id": "Tunjukkan dengan kartu bahwa urutan mengubah arti: 'kereta api' adalah nama kendaraan, 'api kereta' berarti api milik kereta."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a mini dictionary page: five compounds, each with its parts, meaning and a picture. Older children can look up the joined Indonesian list in KBBI with an adult.",
+      "id": "Buat satu halaman kamus mini: lima kata majemuk, masing-masing dengan bagian, arti, dan gambarnya. Anak bisa mencari daftar serangkai di KBBI bersama orang dewasa."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Children who find spelling hard can sort printed compound cards into 'together' and 'apart' piles instead of writing.",
+      "id": "Anak yang kesulitan mengeja bisa memilah kartu kata majemuk cetak ke tumpukan 'serangkai' dan 'terpisah' alih-alih menulis."
+    },
+    {
+      "en": "Use pictures for every compound for children who are still building vocabulary.",
+      "id": "Pakai gambar untuk setiap kata majemuk bagi anak yang masih membangun kosakata."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "No safety concerns; an adult prepares the cards.",
+        "id": "Tidak ada masalah keselamatan; orang dewasa menyiapkan kartu."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      10,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child correctly splits, explains and spells five new compounds, including one with a non-literal meaning, on two different days.",
+      "id": "Dikuasai jika anak dengan benar memisah, menjelaskan, dan menulis lima kata majemuk baru, termasuk satu yang artinya bukan harfiah, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "parallel-distractors",
+      "single-answer-check",
+      "misconception-map",
+      "transfer-not-recall",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-literacy",
+    "createdAt": "2026-11-10"
+  }
+}
