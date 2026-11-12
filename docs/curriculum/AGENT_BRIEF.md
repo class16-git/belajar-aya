@@ -54,6 +54,41 @@ Fix every error before you finish. The check also reports near-duplicates agains
 9. **Child-facing tone is calm and warm.** No streaks, points, timers, shaming, or comparisons with other children.
 10. **No real people's private data.** Historical figures are fine when facts are common knowledge.
 
+## Lessons from the pilot QA (2026-11); these are now hard rules
+Independent reviewers found the problems below in the pilot batch. Several are now enforced by validators.
+
+11. **Assessment tests transfer, not recall.** Never reuse the numbers, words or sentences of a guided example,
+    practice task or CPA activity in an assessment item. Use new numbers and new contexts (validator enforced for
+    maths).
+12. **Bilingual distractors are parallel.** `distractorMisconceptions` is shared by choice index across languages.
+    The Indonesian choice at index *n* must be wrong for the same reason as the English choice at index *n*, and
+    must never be a second defensible answer.
+13. **Check terminology in both languages.** Examples from the pilot:
+    - *paku pines* means thumbtack, not split pin;
+    - counterclaim is *klaim tandingan*, rebuttal is *sanggahan*;
+    - *nushur* means resurrection or rising.
+14. **Science must be accurate, not folk belief.** Examples from the pilot:
+    - a chrysalis forms from the caterpillar's last moulted skin;
+    - cats do not see in total darkness;
+    - stray light lowers a shaded light reading;
+    - 1 litre is 1,000 cm³, so a 1-litre carton is not 10 × 10 × 10 cm unless it is a cube.
+15. **Activity safety beyond the hazard flags:**
+    - no standing water left for days (dengue mosquitoes): empty it daily;
+    - seeds and beans are handled only by the adult under age 5;
+    - circuits use red or yellow LEDs with a 100–220 Ω resistor on 2 × AA;
+    - never remove the resistor, and never join battery wires directly;
+    - the wiring order is explicit.
+16. **Respect the family's faith context outside the Islamic track:**
+    - no animals carrying shoes or other objects in their mouths indoors (use a kitten, not a puppy);
+    - no religious-calendar or ritual claims in general content (that belongs to the Islamic track and its scholar
+      gate);
+    - topics about origins (for example, timelines of life) get the `worldview_alignment` flag and a neutral parent
+      note.
+17. **Self-consistency.** A unit must obey its own rules, for example "one sheet of paper". Every question needs
+    exactly one defensible answer: ask yourself whether a second choice could also be argued for.
+18. **Never write approval words into content** ("scholar-approved", "disetujui ulama", "certified"). Approval lives
+    only in review records (validator enforced).
+
 ## Quality bar
 Write as an experienced teacher would for a premium product:
 - concrete materials found at home;

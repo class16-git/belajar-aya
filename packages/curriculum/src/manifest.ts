@@ -3,7 +3,7 @@ import { getCatalog } from './catalog';
 import { getLibrary, isBookVisible, isPassageVisible, libraryMinStatus } from './library';
 import { isVisible } from './publication';
 import type { ReviewStatus } from './schema';
-import { getExpansion, isExpansionVisible } from './units';
+import { expansionSummary } from './expansion-store';
 
 /**
  * Release manifest (audit ATL-12): which content a given review threshold shows children, plus a SHA-256 digest of
@@ -16,14 +16,15 @@ export function contentManifest(minReview: ReviewStatus) {
   const lessons = cat.lessons.filter((l) => isVisible(l, minReview));
   const books = lib.books.filter((b) => isBookVisible(b, lib.sources, libraryMinStatus(minReview)));
   const passages = lib.passages.filter((p) => isPassageVisible(p, minReview));
-  const exp = getExpansion();
-  const units = exp.units.filter((u) => isExpansionVisible(u, minReview));
-  const readings = exp.readings.filter((r) => isExpansionVisible(r, minReview));
+  // Expansion items come from the precomputed summary (no content chunk is loaded for health or the manifest).
+  const exp = expansionSummary().items.filter((x) => x.visibleAt[minReview]);
+  const units = exp.filter((x) => x.kind === 'unit');
+  const readings = exp.filter((x) => x.kind === 'reading');
   const h = createHash('sha256');
   h.update(`curriculum:${cat.curriculumVersion}\n`);
   // Expansion items hash only when visible, so an empty set leaves earlier digests unchanged.
   for (const [kind, items] of [['lesson', lessons], ['book', books], ['passage', passages], ['unit', units], ['reading', readings]] as const) {
-    for (const item of [...items].sort((a, b) => a.id.localeCompare(b.id))) h.update(`${kind}:${item.id}:${JSON.stringify(item)}\n`);
+    for (const item of [...items].sort((a, b) => a.id.localeCompare(b.id))) h.update(`${kind}:${item.id}:${'hash' in item && (kind === 'unit' || kind === 'reading') ? item.hash : JSON.stringify(item)}\n`);
   }
   return {
     curriculumVersion: cat.curriculumVersion,

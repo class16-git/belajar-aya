@@ -1,0 +1,353 @@
+{
+  "id": "unit-age4_5-stem-repeat-cards-loops",
+  "version": "1.0.1",
+  "level": "age4_5",
+  "framework": "stem",
+  "strand": "sequencing",
+  "title": {
+    "en": "Repeat cards: patterns that loop",
+    "id": "Kartu ulangi: pola yang berulang"
+  },
+  "prerequisites": [
+    "unit-age2_3-stem-clap-pat-patterns",
+    "unit-age4_5-stem-robot-grownup-commands"
+  ],
+  "objective": {
+    "en": "Read a short action pattern from picture cards, notice the part that repeats, and replace it with a 'repeat 3 times' loop card that does the same job.",
+    "id": "Membaca pola gerak pendek dari kartu bergambar, mengenali bagian yang berulang, dan menggantinya dengan kartu perulangan 'ulangi 3 kali' yang melakukan hal yang sama."
+  },
+  "rationale": {
+    "en": "Children who can follow and give commands are ready for the idea that a program can say 'do this again' instead of repeating itself. A loop card turns a long row of cards into a short one. Spotting the repeating unit is also the heart of early pattern work in mathematics.",
+    "id": "Anak yang sudah bisa mengikuti dan memberi perintah siap untuk gagasan bahwa program bisa berkata 'lakukan ini lagi' daripada menulis berulang-ulang. Kartu perulangan mengubah barisan kartu yang panjang menjadi pendek. Mengenali bagian yang berulang juga merupakan inti dari pola dalam matematika awal."
+  },
+  "outcomes": [
+    {
+      "en": "Acts out a row of action cards in order, including a repeated pair.",
+      "id": "Memperagakan barisan kartu gerak secara berurutan, termasuk pasangan yang berulang."
+    },
+    {
+      "en": "Replaces a repeating row with the repeating unit and a 'repeat 3 times' card, and checks that it does the same thing.",
+      "id": "Mengganti barisan berulang dengan bagian yang berulang dan kartu 'ulangi 3 kali', lalu memeriksa bahwa hasilnya sama."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can find the part that repeats.",
+      "id": "Aku bisa menemukan bagian yang berulang."
+    },
+    {
+      "en": "My loop card does the same as the long row.",
+      "id": "Kartu perulanganku melakukan hal yang sama dengan barisan panjang."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Make the cards with your child: draw a simple picture on each (hands for clap, a spring for jump, a foot for stamp). Make one special loop card: a big circle arrow and three dots.",
+      "id": "Buat kartu bersama anak: gambar sederhana di setiap kartu (tangan untuk tepuk, per untuk lompat, telapak kaki untuk hentak). Buat satu kartu perulangan khusus: panah melingkar besar dan tiga titik."
+    },
+    {
+      "en": "Run the long row first: lay out clap, jump, clap, jump, clap, jump. Act it out together, touching each card as you go.",
+      "id": "Jalankan barisan panjang dulu: jajarkan tepuk, lompat, tepuk, lompat, tepuk, lompat. Peragakan bersama, sentuh setiap kartu satu per satu."
+    },
+    {
+      "en": "Ask 'Is there a part that comes again and again?' Cover the cards in twos with your hand to help your child see the pair.",
+      "id": "Tanya 'Ada bagian yang muncul lagi dan lagi?' Tutup kartu dua-dua dengan tangan untuk membantu anak melihat pasangannya."
+    },
+    {
+      "en": "Build the short program together, act it out, and compare: 'Did we do the same moves?' Count the claps both times.",
+      "id": "Susun program pendek bersama, peragakan, lalu bandingkan: 'Apakah gerakan kita sama?' Hitung tepukan pada kedua cara."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "About 12 index cards or squares of thin card, and a thick crayon",
+      "id": "Sekitar 12 kartu indeks atau potongan karton tipis, dan krayon tebal"
+    },
+    {
+      "en": "One loop card: a big circle arrow with three dots for 'repeat 3 times'",
+      "id": "Satu kartu perulangan: panah melingkar besar dengan tiga titik untuk 'ulangi 3 kali'"
+    },
+    {
+      "en": "A loop of wool or a big paper ring laid around the cards that repeat",
+      "id": "Seutas benang wol melingkar, atau lingkaran kertas besar, untuk diletakkan mengelilingi kartu yang diulang"
+    },
+    {
+      "en": "Floor space for jumping",
+      "id": "Lantai lapang untuk melompat"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw the cards: four clap cards, four jump cards, two stamp cards, and the loop card. The adult cuts any card shapes from bigger sheets.",
+      "id": "Gambar kartunya: empat kartu tepuk, empat kartu lompat, dua kartu hentak, dan kartu perulangan. Orang dewasa yang menggunting bentuk kartu dari lembaran besar."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Long row: clap, jump, clap, jump, clap, jump. Act it together. 'That was six cards.' Cover the first two: 'clap, jump'. Cover the next two: 'clap, jump again!'",
+      "id": "Barisan panjang: tepuk, lompat, tepuk, lompat, tepuk, lompat. Peragakan bersama. 'Itu enam kartu.' Tutup dua kartu pertama: 'tepuk, lompat'. Tutup dua berikutnya: 'tepuk, lompat lagi!'"
+    },
+    {
+      "en": "Short program: put only clap and jump inside the wool loop, and the loop card in front. Touch the dots: 'Repeat… one, two, three times.' Act it: clap, jump, clap, jump, clap, jump. 'Same moves, but only three cards!'",
+      "id": "Program pendek: taruh hanya tepuk dan lompat di dalam lingkaran benang, dan kartu perulangan di depannya. Sentuh titiknya: 'Ulangi… satu, dua, tiga kali.' Peragakan: tepuk, lompat, tepuk, lompat, tepuk, lompat. 'Gerakannya sama, tetapi cuma tiga kartu!'"
+    },
+    {
+      "en": "A loop bug: Bima puts clap, jump, jump inside the loop. He acts it: clap, jump, jump, three times. 'Too many jumps! The inside of the loop must be exactly the part that repeats.' He takes one jump out.",
+      "id": "Bug perulangan: Bima menaruh tepuk, lompat, lompat di dalam lingkaran. Ia memperagakan: tepuk, lompat, lompat, tiga kali. 'Lompatnya kebanyakan! Isi lingkaran harus persis bagian yang berulang.' Ia mengeluarkan satu lompat."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Make a new long row with stamp and clap: stamp, clap, stamp, clap, stamp, clap. Find the repeating pair and build the loop version.",
+      "id": "Buat barisan panjang baru dengan hentak dan tepuk: hentak, tepuk, hentak, tepuk, hentak, tepuk. Temukan pasangan yang berulang dan susun versi perulangannya."
+    },
+    {
+      "en": "Your child is the programmer: they build a loop program for the grown-up 'robot', who acts it out exactly, mistakes and all.",
+      "id": "Anak menjadi pemrogram: ia menyusun program perulangan untuk 'robot' orang dewasa, yang memperagakannya persis, termasuk kesalahannya."
+    },
+    {
+      "en": "Put a single card inside the loop, such as jump. Predict: how many jumps will the robot do? Then act it out.",
+      "id": "Taruh satu kartu saja di dalam lingkaran, misalnya lompat. Tebak: berapa kali robot akan melompat? Lalu peragakan."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Lay out stamp, jump, stamp, jump, stamp, jump. Ask 'Which part repeats?' What does your child show?",
+        "id": "Jajarkan hentak, lompat, hentak, lompat, hentak, lompat. Tanya 'Bagian mana yang berulang?' Apa yang ditunjukkan anak?"
+      },
+      "choices": {
+        "en": [
+          "The pair stamp, jump",
+          "Only the last card, jump"
+        ],
+        "id": [
+          "Pasangan hentak, lompat",
+          "Hanya kartu terakhir, lompat"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Stamp and jump together come again and again.",
+        "id": "Hentak dan lompat bersama-sama muncul lagi dan lagi."
+      },
+      "distractorMisconceptions": {
+        "1": "REPEATS_SINGLE_CARD"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Inside the loop: clap. The loop card says repeat 3 times. Ask 'How many claps will the robot do?' What does your child answer?",
+        "id": "Di dalam lingkaran: tepuk. Kartu perulangan berkata ulangi 3 kali. Tanya 'Berapa kali robot bertepuk?' Apa jawaban anak?"
+      },
+      "choices": {
+        "en": [
+          "3 claps",
+          "1 clap"
+        ],
+        "id": [
+          "3 tepukan",
+          "1 tepukan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The loop runs the clap card three times.",
+        "id": "Perulangan menjalankan kartu tepuk tiga kali."
+      },
+      "distractorMisconceptions": {
+        "1": "LOOP_RUNS_ONCE"
+      },
+      "check": {
+        "expression": "1 × 3",
+        "result": "3"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Inside the loop: stamp, clap. Repeat 3 times. Ask 'How many moves is that altogether?' What does your child answer after acting it out?",
+        "id": "Di dalam lingkaran: hentak, tepuk. Ulangi 3 kali. Tanya 'Semuanya berapa gerakan?' Apa jawaban anak setelah memperagakannya?"
+      },
+      "choices": {
+        "en": [
+          "6 moves",
+          "2 moves",
+          "5 moves"
+        ],
+        "id": [
+          "6 gerakan",
+          "2 gerakan",
+          "5 gerakan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Two moves, done three times: 2 × 3 = 6.",
+        "id": "Dua gerakan, dilakukan tiga kali: 2 × 3 = 6."
+      },
+      "distractorMisconceptions": {
+        "1": "LOOP_RUNS_ONCE",
+        "2": "ADDS_LOOP_NUMBER"
+      },
+      "check": {
+        "expression": "2 × 3",
+        "result": "6"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Show a loop with clap, clap, jump inside for a clap-jump pattern. Ask 'Is this right?' What does your child say?",
+        "id": "Tunjukkan lingkaran berisi tepuk, tepuk, lompat untuk pola tepuk-lompat. Tanya 'Ini benar?' Apa kata anak?"
+      },
+      "choices": {
+        "en": [
+          "No, there is one clap too many inside the loop",
+          "Yes, more cards make it better"
+        ],
+        "id": [
+          "Tidak, ada satu tepuk kebanyakan di dalam lingkaran",
+          "Ya, kartu lebih banyak membuatnya lebih baik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The inside of the loop must be exactly the repeating part: clap, jump.",
+        "id": "Isi lingkaran harus persis bagian yang berulang: tepuk, lompat."
+      },
+      "distractorMisconceptions": {
+        "1": "EXTRA_CARDS_HARMLESS"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "REPEATS_SINGLE_CARD",
+      "description": {
+        "en": "Sees only one card as the repeating part when a pair repeats.",
+        "id": "Hanya melihat satu kartu sebagai bagian berulang padahal yang berulang adalah pasangan."
+      },
+      "remediation": {
+        "en": "Put a paper ring around each clap-jump pair in the long row, then count the rings: one, two, three.",
+        "id": "Letakkan lingkaran kertas di sekeliling setiap pasangan tepuk-lompat di barisan panjang, lalu hitung lingkarannya: satu, dua, tiga."
+      }
+    },
+    {
+      "code": "LOOP_RUNS_ONCE",
+      "description": {
+        "en": "Thinks the cards inside a loop run only once.",
+        "id": "Mengira kartu di dalam perulangan hanya dijalankan sekali."
+      },
+      "remediation": {
+        "en": "Put three counting fingers up. Act the inside once and fold one finger down; keep going until no fingers are left.",
+        "id": "Angkat tiga jari. Peragakan isi lingkaran sekali lalu lipat satu jari; teruskan sampai tidak ada jari tersisa."
+      }
+    },
+    {
+      "code": "ADDS_LOOP_NUMBER",
+      "description": {
+        "en": "Adds the repeat number to the number of cards instead of doing the cards again.",
+        "id": "Menjumlahkan angka ulangi dengan jumlah kartu, bukan menjalankan kartu lagi."
+      },
+      "remediation": {
+        "en": "Lay out a real copy of the inside cards for each repeat, then count all the cards on the floor.",
+        "id": "Jajarkan salinan nyata dari kartu di dalam lingkaran untuk setiap pengulangan, lalu hitung semua kartu di lantai."
+      }
+    },
+    {
+      "code": "EXTRA_CARDS_HARMLESS",
+      "description": {
+        "en": "Thinks extra cards in a program do no harm.",
+        "id": "Mengira kartu tambahan dalam program tidak berpengaruh."
+      },
+      "remediation": {
+        "en": "Act out the wrong loop slowly while the child watches the long row, and stop at the first move that does not match.",
+        "id": "Peragakan perulangan yang salah pelan-pelan sementara anak melihat barisan panjang, dan berhenti pada gerakan pertama yang tidak cocok."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a loop card with two dots and another with four dots. Which one gives more jumps? Test both.",
+      "id": "Buat kartu perulangan dengan dua titik dan satu lagi dengan empat titik. Mana yang memberi lebih banyak lompatan? Uji keduanya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who cannot jump can use arm moves such as 'arms up' and 'arms out'; use big, high-contrast drawings for a child with low vision.",
+      "id": "Anak yang tidak bisa melompat bisa memakai gerakan lengan seperti 'tangan ke atas' dan 'tangan ke samping'; gunakan gambar besar dan kontras untuk anak dengan penglihatan terbatas."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Jump on a clear, non-slippery floor away from furniture corners, in bare feet or non-slip socks.",
+        "id": "Melompat di lantai lapang yang tidak licin dan jauh dari sudut perabot, dengan kaki telanjang atau kaus kaki anti-selip."
+      },
+      {
+        "en": "The adult does all cutting of card shapes.",
+        "id": "Orang dewasa yang melakukan semua pengguntingan bentuk kartu."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child finds the repeating part of a new pattern, builds a working loop program for it, and predicts the number of moves, on two different days.",
+      "id": "Dikuasai jika anak menemukan bagian berulang dari pola baru, menyusun program perulangan yang bekerja, dan menebak jumlah gerakannya, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "b369968dbc9ea639"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

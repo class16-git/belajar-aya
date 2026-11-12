@@ -1,0 +1,482 @@
+{
+  "id": "unit-g1-math-length-non-standard-units",
+  "version": "1.0.1",
+  "level": "g1",
+  "framework": "math",
+  "strand": "measurement",
+  "title": {
+    "en": "Measuring length with non-standard units",
+    "id": "Mengukur panjang dengan satuan tidak baku"
+  },
+  "prerequisites": [
+    "unit-k-math-compare-lengths",
+    "unit-k-math-subtraction-stories-within-10"
+  ],
+  "objective": {
+    "en": "Measure lengths by laying identical units end to end without gaps or overlaps, record the measurement as a number of units, and compare and add measurements made with the same unit.",
+    "id": "Mengukur panjang dengan menjajarkan satuan yang sama ujung ke ujung tanpa celah atau tumpang tindih, mencatat hasilnya sebagai banyak satuan, serta membandingkan dan menjumlahkan hasil ukur dengan satuan yang sama."
+  },
+  "rationale": {
+    "en": "In Kindergarten children compared lengths directly. Now a length becomes a number: 'the table is 9 sticks long'. Working with numbers of units, and noticing that different units give different numbers, shows why people agreed on centimetres and metres, which come next.",
+    "id": "Di TK anak membandingkan panjang secara langsung. Sekarang panjang menjadi bilangan: 'meja itu 9 stik panjangnya'. Bekerja dengan banyak satuan, dan menyadari bahwa satuan berbeda memberi bilangan berbeda, menunjukkan mengapa orang menyepakati sentimeter dan meter, yang dipelajari berikutnya."
+  },
+  "outcomes": [
+    {
+      "en": "Measures an object with identical units laid end to end and records the number with the unit name.",
+      "id": "Mengukur benda dengan satuan yang sama yang dijajarkan ujung ke ujung dan mencatat bilangannya dengan nama satuannya."
+    },
+    {
+      "en": "Finds how much longer one object is than another using the same unit.",
+      "id": "Menentukan berapa lebih panjang satu benda dari benda lain dengan satuan yang sama."
+    },
+    {
+      "en": "Explains why a smaller unit gives a bigger number.",
+      "id": "Menjelaskan mengapa satuan yang lebih kecil memberi bilangan yang lebih besar."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can measure the table with sticks touching end to end, starting exactly at the edge.",
+      "id": "Aku bisa mengukur meja dengan stik yang bersentuhan ujung ke ujung, mulai tepat di tepinya."
+    },
+    {
+      "en": "I can write my answer as a number and a unit, like 9 sticks.",
+      "id": "Aku bisa menulis jawabanku sebagai bilangan dan satuan, seperti 9 stik."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use only identical units in one measurement: all the ice-cream sticks must be the same size.",
+      "id": "Pakai hanya satuan yang sama dalam satu pengukuran: semua stik es krim harus sama ukurannya."
+    },
+    {
+      "en": "If the last unit does not fit exactly, say 'about 9 sticks' or 'a bit more than 8 sticks'; that is honest measuring.",
+      "id": "Jika satuan terakhir tidak pas, ucapkan 'kira-kira 9 stik' atau 'sedikit lebih dari 8 stik'; begitulah mengukur dengan jujur."
+    },
+    {
+      "en": "Record each measurement in a small table: object, unit, number. The table is used later for comparing.",
+      "id": "Catat setiap pengukuran dalam tabel kecil: benda, satuan, bilangan. Tabel itu dipakai nanti untuk membandingkan."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Start at the very edge. Put the units end to end, touching, in a straight line.",
+      "id": "Mulai tepat di tepi. Jajarkan satuan ujung ke ujung, bersentuhan, dalam garis lurus."
+    },
+    {
+      "en": "Count the units and write the number and the unit.",
+      "id": "Hitung satuannya dan tulis bilangan dan nama satuannya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Measure the length of the dining table with ice-cream sticks laid end to end along one edge. Then measure the same edge with large spoons and compare the two counts.",
+        "id": "Ukur panjang meja makan dengan stik es krim yang dijajarkan ujung ke ujung di sepanjang satu tepi. Lalu ukur tepi yang sama dengan sendok besar dan bandingkan kedua hitungannya."
+      },
+      {
+        "en": "Walk heel to toe along the hall and count your foot lengths; the adult does the same and you compare.",
+        "id": "Berjalan tumit ke ujung jari di sepanjang lorong dan hitung panjang telapak kakimu; orang dewasa melakukan hal yang sama lalu bandingkan."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a ribbon and a row of identical boxes under it, one box per stick; write the count at the end. Draw a second ribbon with gaps between the boxes and explain why that count is wrong.",
+        "id": "Gambar pita dan barisan kotak yang sama di bawahnya, satu kotak untuk setiap stik; tulis hitungannya di ujung. Gambar pita kedua dengan celah di antara kotak dan jelaskan mengapa hitungan itu salah."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Use the table of results to write sentences such as: the door is 8 sticks wide, the bed is 15 sticks long, 15 - 8 = 7, so the bed is 7 sticks longer.",
+        "id": "Pakai tabel hasil untuk menulis kalimat seperti: pintu lebarnya 8 stik, kasur panjangnya 15 stik, 15 - 8 = 7, jadi kasur 7 stik lebih panjang."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 20 identical ice-cream sticks, 10 large spoons of one size, a few same-size crayons",
+      "id": "Sekitar 20 stik es krim yang sama, 10 sendok besar yang sama ukurannya, beberapa krayon yang sama ukurannya"
+    },
+    {
+      "en": "Ribbon or string, masking tape, paper for a results table",
+      "id": "Pita atau tali, lakban kertas, kertas untuk tabel hasil"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Check that the sticks really are the same length by lining them up side by side; set aside any odd ones.",
+      "id": "Periksa bahwa stik benar-benar sama panjang dengan menjajarkannya berdampingan; sisihkan yang berbeda."
+    },
+    {
+      "en": "Draw a results table with three columns: object, unit, how many.",
+      "id": "Gambar tabel hasil dengan tiga kolom: benda, satuan, berapa banyak."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Measure the door width with sticks: put the first stick exactly at the frame, then the next touching it. Count 8 sticks. Write: door, sticks, 8.",
+      "id": "Ukur lebar pintu dengan stik: taruh stik pertama tepat di kusen, lalu stik berikutnya bersentuhan. Hitung 8 stik. Tulis: pintu, stik, 8."
+    },
+    {
+      "en": "A book is 3 crayons long and a pencil case is 2 crayons long. The book is longer by 3 - 2 = 1 crayon.",
+      "id": "Buku panjangnya 3 krayon dan kotak pensil panjangnya 2 krayon. Buku lebih panjang 3 - 2 = 1 krayon."
+    },
+    {
+      "en": "Ayah measures the mat with his hand span and gets 12 spans; Aya gets 16 spans. Same mat, so why? Aya's hand is smaller, so more of her spans fit.",
+      "id": "Ayah mengukur tikar dengan jengkalnya dan mendapat 12 jengkal; Aya mendapat 16 jengkal. Tikarnya sama, jadi mengapa? Tangan Aya lebih kecil, jadi lebih banyak jengkalnya yang muat."
+    },
+    {
+      "en": "Spread out the sticks with gaps along the bookshelf: it looks like 7 sticks. Push them together with no gaps: now 9 sticks fit. Gaps make the count too small.",
+      "id": "Jajarkan stik dengan celah di sepanjang rak buku: tampak 7 stik. Rapatkan tanpa celah: sekarang muat 9 stik. Celah membuat hitungan terlalu kecil."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Measure five things at home with sticks and fill in the table; then order them from shortest to longest.",
+      "id": "Ukur lima benda di rumah dengan stik dan isi tabelnya; lalu urutkan dari yang terpendek ke terpanjang."
+    },
+    {
+      "en": "Measure one thing with two different units (sticks and spoons) and explain which count is bigger and why.",
+      "id": "Ukur satu benda dengan dua satuan berbeda (stik dan sendok) dan jelaskan hitungan mana yang lebih besar dan mengapa."
+    },
+    {
+      "en": "Estimate first: guess how many sticks long the bed is, then measure and see how close the guess was.",
+      "id": "Perkirakan dulu: tebak berapa stik panjang kasur, lalu ukur dan lihat seberapa dekat tebakannya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A sarong is 7 sticks long. A towel is 12 sticks long. How much longer is the towel?",
+        "id": "Sebuah sarung panjangnya 7 stik. Sebuah handuk panjangnya 12 stik. Handuk itu lebih panjang berapa stik?"
+      },
+      "choices": {
+        "en": [
+          "5 sticks",
+          "19 sticks",
+          "12 sticks"
+        ],
+        "id": [
+          "5 stik",
+          "19 stik",
+          "12 stik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Both are measured in the same sticks, so compare the numbers: 12 - 7 = 5 sticks longer.",
+        "id": "Keduanya diukur dengan stik yang sama, jadi bandingkan bilangannya: 12 - 7 = 5 stik lebih panjang."
+      },
+      "check": {
+        "expression": "12 - 7",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "GIVES_LONGER_LENGTH"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "One ribbon is 4 sticks long. Ibu joins 3 of these ribbons end to end. How long is the long ribbon?",
+        "id": "Satu pita panjangnya 4 stik. Ibu menyambung 3 pita seperti itu ujung ke ujung. Berapa panjang pita panjangnya?"
+      },
+      "choices": {
+        "en": [
+          "12 sticks",
+          "7 sticks",
+          "4 sticks"
+        ],
+        "id": [
+          "12 stik",
+          "7 stik",
+          "4 stik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Three ribbons of 4 sticks each: 4 + 4 + 4 = 12 sticks.",
+        "id": "Tiga pita masing-masing 4 stik: 4 + 4 + 4 = 12 stik."
+      },
+      "check": {
+        "expression": "4 + 4 + 4",
+        "result": "12"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_COUNT_OF_PIECES",
+        "2": "MEASURES_ONE_PIECE_ONLY"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A table is 6 long sticks long. A short stick is exactly half as long as a long stick. How many short sticks long is the table?",
+        "id": "Sebuah meja panjangnya 6 stik panjang. Stik pendek tepat setengah panjang stik panjang. Berapa stik pendek panjang meja itu?"
+      },
+      "choices": {
+        "en": [
+          "12 short sticks",
+          "3 short sticks",
+          "6 short sticks"
+        ],
+        "id": [
+          "12 stik pendek",
+          "3 stik pendek",
+          "6 stik pendek"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each long stick is the same as 2 short sticks, so 6 long sticks are 6 + 6 = 12 short sticks. A smaller unit gives a bigger number.",
+        "id": "Setiap stik panjang sama dengan 2 stik pendek, jadi 6 stik panjang sama dengan 6 + 6 = 12 stik pendek. Satuan lebih kecil memberi bilangan lebih besar."
+      },
+      "check": {
+        "expression": "6 + 6",
+        "result": "12"
+      },
+      "distractorMisconceptions": {
+        "1": "SMALLER_UNIT_SMALLER_NUMBER",
+        "2": "IGNORES_UNIT_SIZE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "The bed is 13 sticks long. The mat beside it is 4 sticks shorter. How long is the mat?",
+        "id": "Kasur panjangnya 13 stik. Tikar di sampingnya 4 stik lebih pendek. Berapa panjang tikarnya?"
+      },
+      "choices": {
+        "en": [
+          "9 sticks",
+          "17 sticks",
+          "4 sticks"
+        ],
+        "id": [
+          "9 stik",
+          "17 stik",
+          "4 stik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Shorter means fewer sticks: 13 - 4 = 9 sticks.",
+        "id": "Lebih pendek berarti lebih sedikit stik: 13 - 4 = 9 stik."
+      },
+      "check": {
+        "expression": "13 - 4",
+        "result": "9"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "GIVES_DIFFERENCE_AS_LENGTH"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Bayu measures the rug but leaves gaps between his sticks. What can you say about his count?",
+        "id": "Bayu mengukur karpet tetapi ada celah di antara stiknya. Apa yang bisa dikatakan tentang hitungannya?"
+      },
+      "choices": {
+        "en": [
+          "It is too small: the rug is longer than his count",
+          "It is too big: the rug is shorter than his count",
+          "It is exactly right"
+        ],
+        "id": [
+          "Terlalu kecil: karpetnya lebih panjang dari hitungannya",
+          "Terlalu besar: karpetnya lebih pendek dari hitungannya",
+          "Tepat benar"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The gaps are parts of the rug that no stick covers, so more sticks would fit. His count is too small.",
+        "id": "Celah adalah bagian karpet yang tidak tertutup stik, jadi lebih banyak stik yang bisa muat. Hitungannya terlalu kecil."
+      },
+      "distractorMisconceptions": {
+        "1": "GAPS_MAKE_IT_LONGER",
+        "2": "GAPS_DO_NOT_MATTER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds two measurements when the question asks for the difference.",
+        "id": "Menjumlahkan dua hasil ukur ketika pertanyaan meminta selisih."
+      },
+      "remediation": {
+        "en": "Lay the two rows of sticks side by side from the same start line and count only the sticks that stick out.",
+        "id": "Jajarkan dua barisan stik berdampingan dari garis awal yang sama dan hitung hanya stik yang menonjol."
+      }
+    },
+    {
+      "code": "GIVES_LONGER_LENGTH",
+      "description": {
+        "en": "Answers with the length of the longer object, not how much longer it is.",
+        "id": "Menjawab dengan panjang benda yang lebih panjang, bukan selisih panjangnya."
+      },
+      "remediation": {
+        "en": "Cover the matching part of the two rows with a cloth; only the extra part answers 'how much longer'.",
+        "id": "Tutup bagian yang sama dari kedua barisan dengan kain; hanya bagian lebihnya yang menjawab 'berapa lebih panjang'."
+      }
+    },
+    {
+      "code": "ADDS_COUNT_OF_PIECES",
+      "description": {
+        "en": "Adds the number of pieces to one piece's length (4 + 3) instead of adding the lengths.",
+        "id": "Menjumlahkan banyak potongan dengan panjang satu potongan (4 + 3), bukan menjumlahkan panjangnya."
+      },
+      "remediation": {
+        "en": "Lay out the three ribbons with 4 sticks under each, then count all the sticks.",
+        "id": "Jajarkan ketiga pita dengan 4 stik di bawah masing-masing, lalu hitung semua stiknya."
+      }
+    },
+    {
+      "code": "MEASURES_ONE_PIECE_ONLY",
+      "description": {
+        "en": "Gives the length of one piece instead of the joined length.",
+        "id": "Memberi panjang satu potongan, bukan panjang sambungannya."
+      },
+      "remediation": {
+        "en": "Join real strips of paper with tape and measure the whole strip again.",
+        "id": "Sambung pita kertas sungguhan dengan selotip dan ukur ulang seluruh pita."
+      }
+    },
+    {
+      "code": "SMALLER_UNIT_SMALLER_NUMBER",
+      "description": {
+        "en": "Thinks a smaller unit gives a smaller number.",
+        "id": "Mengira satuan lebih kecil memberi bilangan lebih kecil."
+      },
+      "remediation": {
+        "en": "Measure the same edge with spoons and then with short crayons, and put the two counts in the table next to each other.",
+        "id": "Ukur tepi yang sama dengan sendok lalu dengan krayon pendek, dan tulis kedua hitungan berdampingan di tabel."
+      }
+    },
+    {
+      "code": "IGNORES_UNIT_SIZE",
+      "description": {
+        "en": "Thinks the count stays the same whatever unit is used.",
+        "id": "Mengira hitungannya tetap sama apa pun satuannya."
+      },
+      "remediation": {
+        "en": "Lay two short sticks on top of one long stick to see that they match, then rebuild the table length.",
+        "id": "Letakkan dua stik pendek di atas satu stik panjang untuk melihat bahwa panjangnya sama, lalu susun ulang panjang meja."
+      }
+    },
+    {
+      "code": "GIVES_DIFFERENCE_AS_LENGTH",
+      "description": {
+        "en": "Answers with the difference instead of the length of the shorter object.",
+        "id": "Menjawab dengan selisih, bukan panjang benda yang lebih pendek."
+      },
+      "remediation": {
+        "en": "Draw both objects as rows of boxes; shade the 4 extra boxes on the bed and count the boxes of the mat.",
+        "id": "Gambar kedua benda sebagai barisan kotak; arsir 4 kotak lebih pada kasur dan hitung kotak tikar."
+      }
+    },
+    {
+      "code": "GAPS_MAKE_IT_LONGER",
+      "description": {
+        "en": "Thinks gaps make the measurement bigger.",
+        "id": "Mengira celah membuat hasil ukur lebih besar."
+      },
+      "remediation": {
+        "en": "Measure the same rug twice, with and without gaps, and compare the two counts.",
+        "id": "Ukur karpet yang sama dua kali, dengan dan tanpa celah, dan bandingkan kedua hitungannya."
+      }
+    },
+    {
+      "code": "GAPS_DO_NOT_MATTER",
+      "description": {
+        "en": "Thinks the units need not touch as long as they are counted.",
+        "id": "Mengira satuan tidak harus bersentuhan asalkan dihitung."
+      },
+      "remediation": {
+        "en": "Fill each gap with an extra stick and count how many more were needed.",
+        "id": "Isi setiap celah dengan stik tambahan dan hitung berapa lagi yang dibutuhkan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a measuring strip: tape 10 identical sticks onto a long card and number the joins 1 to 10. Use it like a ruler and talk about why rulers have numbers.",
+      "id": "Buat pita ukur: tempel 10 stik yang sama di kartu panjang dan beri nomor 1 sampai 10 pada sambungannya. Pakai seperti penggaris dan bicarakan mengapa penggaris memiliki angka."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Sticks can be felt end to end; a child who finds counting while holding units can place each unit and then count with a partner.",
+      "id": "Stik bisa diraba ujung ke ujung; anak yang kesulitan menghitung sambil memegang satuan bisa menaruh setiap satuan lalu menghitung bersama."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Check the sticks for splinters; keep the walking path clear when pacing heel to toe.",
+        "id": "Periksa stik dari serpihan; pastikan jalur kosong saat berjalan tumit ke ujung jari."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child measures two new objects correctly with no gaps or overlaps, records the unit, and finds the difference in units, on two different days.",
+      "id": "Dikuasai jika anak mengukur dua benda baru dengan benar tanpa celah atau tumpang tindih, mencatat satuannya, dan menemukan selisihnya dalam satuan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "14d3bcfc00bf0eb9"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

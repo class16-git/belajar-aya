@@ -1,0 +1,423 @@
+{
+  "id": "unit-g4-math-long-multiplication",
+  "version": "1.0.1",
+  "level": "g4",
+  "framework": "math",
+  "strand": "multiplication_division",
+  "title": {
+    "en": "Long multiplication: 2-digit and 3-digit by 2-digit numbers",
+    "id": "Perkalian bersusun panjang: bilangan 2 dan 3 angka dengan 2 angka"
+  },
+  "prerequisites": [
+    "unit-g3-math-multiplication-with-regrouping",
+    "unit-g4-math-area-of-rectangles"
+  ],
+  "objective": {
+    "en": "Multiply 2-digit and 3-digit numbers by 2-digit numbers using the area model and the long multiplication method, including the placeholder zero for the tens row, and check with an estimate.",
+    "id": "Mengalikan bilangan 2 angka dan 3 angka dengan bilangan 2 angka memakai model luas dan cara bersusun panjang, termasuk nol penjaga tempat pada baris puluhan, lalu memeriksa dengan perkiraan."
+  },
+  "rationale": {
+    "en": "Long multiplication is two short multiplications and an addition. The area model shows why: 46 × 27 is 46 × 7 plus 46 × 20. The commonest error, forgetting that the second row is multiplied by tens, disappears when children say 'times twenty', not 'times two'.",
+    "id": "Perkalian bersusun panjang adalah dua perkalian pendek dan satu penjumlahan. Model luas menunjukkan alasannya: 46 × 27 adalah 46 × 7 ditambah 46 × 20. Kesalahan paling umum, lupa bahwa baris kedua dikalikan puluhan, hilang ketika anak mengucapkan 'kali dua puluh', bukan 'kali dua'."
+  },
+  "outcomes": [
+    {
+      "en": "Uses an area model to split both factors and adds the four partial products.",
+      "id": "Memakai model luas untuk memecah kedua faktor dan menjumlahkan empat hasil kali bagian."
+    },
+    {
+      "en": "Uses long multiplication with a placeholder zero for the tens row.",
+      "id": "Memakai perkalian bersusun panjang dengan nol penjaga tempat pada baris puluhan."
+    },
+    {
+      "en": "Estimates a product by rounding to check that an answer is reasonable.",
+      "id": "Memperkirakan hasil kali dengan membulatkan untuk memeriksa kewajaran jawaban."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can explain the zero at the start of the second row: I am multiplying by tens.",
+      "id": "Aku bisa menjelaskan nol di awal baris kedua: aku sedang mengalikan dengan puluhan."
+    },
+    {
+      "en": "I can estimate first and say whether my answer is close.",
+      "id": "Aku bisa memperkirakan dulu dan menyebut apakah jawabanku dekat."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Draw the area model on squared paper first; only move to the column method once your child can explain each box.",
+      "id": "Gambar model luas di kertas berpetak dulu; pindah ke cara bersusun setelah anak bisa menjelaskan setiap kotak."
+    },
+    {
+      "en": "Say the second row as 'times twenty' (or the right tens) aloud; write the zero before multiplying.",
+      "id": "Ucapkan baris kedua sebagai 'kali dua puluh' (atau puluhan yang sesuai); tulis nol sebelum mengalikan."
+    },
+    {
+      "en": "Ask for an estimate before every calculation and compare at the end.",
+      "id": "Minta perkiraan sebelum setiap hitungan dan bandingkan di akhir."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Multiply by the ones digit for the first row.",
+      "id": "Kalikan dengan angka satuan untuk baris pertama."
+    },
+    {
+      "en": "Write a 0, then multiply by the tens digit for the second row. Add the two rows.",
+      "id": "Tulis 0, lalu kalikan dengan angka puluhan untuk baris kedua. Jumlahkan kedua baris."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build 23 × 14 on squared paper as a real rectangle: cut out (the adult cuts) a 23 by 14 grid and split it with two lines into 20 + 3 and 10 + 4. Count the squares in each part: 200, 30, 80 and 12.",
+        "id": "Susun 23 × 14 di kertas berpetak sebagai persegi panjang sungguhan: orang dewasa memotong petak 23 kali 14 dan membaginya dengan dua garis menjadi 20 + 3 dan 10 + 4. Hitung kotak di setiap bagian: 200, 30, 80, dan 12."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw an area model for 46 × 27 with 40 and 6 across and 20 and 7 down; write 800, 120, 280 and 42 in the four boxes.",
+        "id": "Gambar model luas untuk 46 × 27 dengan 40 dan 6 di atas serta 20 dan 7 di samping; tulis 800, 120, 280, dan 42 di keempat kotak."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write long multiplication for 46 × 27: first row 46 × 7 = 322, second row 46 × 20 = 920, total 1,242, matching 800 + 120 + 280 + 42.",
+        "id": "Tulis perkalian bersusun panjang untuk 46 × 27: baris pertama 46 × 7 = 322, baris kedua 46 × 20 = 920, jumlah 1.242, sama dengan 800 + 120 + 280 + 42."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Squared paper (1 cm squares), a ruler, coloured pencils",
+      "id": "Kertas berpetak (kotak 1 cm), penggaris, pensil warna"
+    },
+    {
+      "en": "A whiteboard or paper for the column method",
+      "id": "Papan tulis kecil atau kertas untuk cara bersusun"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Prepare a 23 by 14 grid on squared paper for the concrete step; the adult cuts it out.",
+      "id": "Siapkan petak 23 kali 14 di kertas berpetak untuk langkah konkret; orang dewasa yang memotongnya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "23 × 14 as an area: 20 × 10 = 200, 3 × 10 = 30, 20 × 4 = 80, 3 × 4 = 12. Add: 200 + 30 + 80 + 12 = 322.",
+      "id": "23 × 14 sebagai luas: 20 × 10 = 200, 3 × 10 = 30, 20 × 4 = 80, 3 × 4 = 12. Jumlahkan: 200 + 30 + 80 + 12 = 322."
+    },
+    {
+      "en": "46 × 27 in columns: first row 46 × 7 = 322. Second row: write 0, then 46 × 2 tens = 92 tens, so 920. Add: 322 + 920 = 1,242. Estimate: 50 × 30 = 1,500, so the answer is reasonable.",
+      "id": "46 × 27 bersusun: baris pertama 46 × 7 = 322. Baris kedua: tulis 0, lalu 46 × 2 puluhan = 92 puluhan, jadi 920. Jumlahkan: 322 + 920 = 1.242. Perkiraan: 50 × 30 = 1.500, jadi jawabannya wajar."
+    },
+    {
+      "en": "135 × 24: first row 135 × 4 = 540; second row 135 × 20 = 2,700; total 3,240.",
+      "id": "135 × 24: baris pertama 135 × 4 = 540; baris kedua 135 × 20 = 2.700; jumlah 3.240."
+    },
+    {
+      "en": "Story: a community hall has 18 rows of 32 seats. 32 × 18 = 32 × 8 + 32 × 10 = 256 + 320 = 576 seats.",
+      "id": "Cerita: sebuah balai warga punya 18 baris berisi 32 kursi. 32 × 18 = 32 × 8 + 32 × 10 = 256 + 320 = 576 kursi."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Solve three multiplications by both the area model and the column method; colour the matching parts the same colour in both.",
+      "id": "Selesaikan tiga perkalian dengan model luas dan cara bersusun; warnai bagian yang sama dengan warna yang sama pada keduanya."
+    },
+    {
+      "en": "Real problem: how many hours are there in 28 days? Estimate, calculate, and check with a calendar idea (4 weeks).",
+      "id": "Soal nyata: berapa jam dalam 28 hari? Perkirakan, hitung, dan periksa dengan ide kalender (4 minggu)."
+    },
+    {
+      "en": "Error doctor: the adult writes 57 × 34 with the second row missing its zero; the child explains and fixes it.",
+      "id": "Dokter kesalahan: orang dewasa menulis 57 × 34 dengan baris kedua tanpa nol; anak menjelaskan dan memperbaikinya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "37 × 24 = ?",
+        "id": "37 × 24 = ?"
+      },
+      "choices": {
+        "en": [
+          "888",
+          "222",
+          "628"
+        ],
+        "id": [
+          "888",
+          "222",
+          "628"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "37 × 4 = 148 and 37 × 20 = 740. 148 + 740 = 888. Estimate 40 × 20 = 800: close.",
+        "id": "37 × 4 = 148 dan 37 × 20 = 740. 148 + 740 = 888. Perkiraan 40 × 20 = 800: dekat."
+      },
+      "check": {
+        "expression": "37 * 24",
+        "result": "888"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_PLACEHOLDER_ZERO",
+        "2": "MULTIPLIES_MATCHING_PLACES_ONLY"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "58 × 36 = ?",
+        "id": "58 × 36 = ?"
+      },
+      "choices": {
+        "en": [
+          "2,088",
+          "522",
+          "1,548"
+        ],
+        "id": [
+          "2.088",
+          "522",
+          "1.548"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "58 × 6 = 348 and 58 × 30 = 1,740. 348 + 1,740 = 2,088.",
+        "id": "58 × 6 = 348 dan 58 × 30 = 1.740. 348 + 1.740 = 2.088."
+      },
+      "check": {
+        "expression": "58 * 36",
+        "result": "2088"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_PLACEHOLDER_ZERO",
+        "2": "MULTIPLIES_MATCHING_PLACES_ONLY"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A school orders 26 boxes of pencils with 144 pencils in each box. How many pencils is that?",
+        "id": "Sebuah sekolah memesan 26 kotak pensil dengan 144 pensil di setiap kotak. Berapa banyak pensilnya?"
+      },
+      "choices": {
+        "en": [
+          "3,744 pencils",
+          "1,152 pencils",
+          "170 pencils"
+        ],
+        "id": [
+          "3.744 pensil",
+          "1.152 pensil",
+          "170 pensil"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "144 × 6 = 864 and 144 × 20 = 2,880. 864 + 2,880 = 3,744.",
+        "id": "144 × 6 = 864 dan 144 × 20 = 2.880. 864 + 2.880 = 3.744."
+      },
+      "check": {
+        "expression": "144 * 26",
+        "result": "3744"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_PLACEHOLDER_ZERO",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Which is the best estimate of 49 × 31?",
+        "id": "Manakah perkiraan terbaik untuk 49 × 31?"
+      },
+      "choices": {
+        "en": [
+          "1,500",
+          "150",
+          "80"
+        ],
+        "id": [
+          "1.500",
+          "150",
+          "80"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Round to 50 × 30 = 1,500. The exact answer is 1,519, close to the estimate.",
+        "id": "Bulatkan menjadi 50 × 30 = 1.500. Jawaban tepatnya 1.519, dekat dengan perkiraan."
+      },
+      "check": {
+        "expression": "50 * 30",
+        "result": "1500"
+      },
+      "distractorMisconceptions": {
+        "1": "DROPS_ZERO_IN_ESTIMATE",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "(30 + 5) × (20 + 8) = ?",
+        "id": "(30 + 5) × (20 + 8) = ?"
+      },
+      "choices": {
+        "en": [
+          "980",
+          "640",
+          "63"
+        ],
+        "id": [
+          "980",
+          "640",
+          "63"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Four parts: 30 × 20 = 600, 30 × 8 = 240, 5 × 20 = 100, 5 × 8 = 40. Total 600 + 240 + 100 + 40 = 980, which is 35 × 28.",
+        "id": "Empat bagian: 30 × 20 = 600, 30 × 8 = 240, 5 × 20 = 100, 5 × 8 = 40. Jumlah 600 + 240 + 100 + 40 = 980, yaitu 35 × 28."
+      },
+      "check": {
+        "expression": "(30 + 5) * (20 + 8)",
+        "result": "980"
+      },
+      "distractorMisconceptions": {
+        "1": "MULTIPLIES_MATCHING_PLACES_ONLY",
+        "2": "ADDS_INSTEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "FORGETS_PLACEHOLDER_ZERO",
+      "description": {
+        "en": "Multiplies by the tens digit as if it were ones, so the second row is ten times too small.",
+        "id": "Mengalikan dengan angka puluhan seolah-olah satuan, sehingga baris kedua sepuluh kali terlalu kecil."
+      },
+      "remediation": {
+        "en": "Go back to the area model: the bottom strip is 20 squares tall, not 2. Say 'times twenty' and write the zero first.",
+        "id": "Kembali ke model luas: pita bawah tingginya 20 kotak, bukan 2. Ucapkan 'kali dua puluh' dan tulis nol lebih dulu."
+      }
+    },
+    {
+      "code": "MULTIPLIES_MATCHING_PLACES_ONLY",
+      "description": {
+        "en": "Multiplies tens by tens and ones by ones only, missing the two cross products.",
+        "id": "Hanya mengalikan puluhan dengan puluhan dan satuan dengan satuan, melewatkan dua hasil kali silang."
+      },
+      "remediation": {
+        "en": "Shade all four boxes of the area model in different colours and tick each one as it is calculated.",
+        "id": "Arsir keempat kotak model luas dengan warna berbeda dan centang setiap kotak yang sudah dihitung."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the factors or the parts instead of multiplying.",
+        "id": "Menjumlahkan faktor atau bagian, bukan mengalikan."
+      },
+      "remediation": {
+        "en": "Ask what the story describes: equal groups or rows, then draw the rectangle to see the total.",
+        "id": "Tanyakan apa yang digambarkan cerita: kelompok atau baris yang sama, lalu gambar persegi panjang untuk melihat totalnya."
+      }
+    },
+    {
+      "code": "DROPS_ZERO_IN_ESTIMATE",
+      "description": {
+        "en": "Rounds correctly but loses a zero when multiplying the rounded numbers (50 × 30 = 150).",
+        "id": "Membulatkan dengan benar tetapi kehilangan nol saat mengalikan bilangan bulatan (50 × 30 = 150)."
+      },
+      "remediation": {
+        "en": "Write 50 × 30 as 5 tens × 3 tens = 15 hundreds, and read it back as 1,500.",
+        "id": "Tulis 50 × 30 sebagai 5 puluhan × 3 puluhan = 15 ratusan, lalu baca sebagai 1.500."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Use the digits 2, 4, 6 and 8 once each to make a 2-digit × 2-digit multiplication with the greatest product; test your ideas.",
+      "id": "Pakai angka 2, 4, 6, dan 8 masing-masing satu kali untuk membuat perkalian 2 angka × 2 angka dengan hasil terbesar; uji idemu."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Large-squared paper and coloured rows help children with visual or attention difficulties keep the columns straight.",
+      "id": "Kertas berpetak besar dan baris berwarna membantu anak dengan kesulitan penglihatan atau perhatian menjaga kolom tetap lurus."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult does any cutting of the paper grid.",
+        "id": "Orang dewasa yang memotong petak kertas."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves three new 2-digit × 2-digit and one 3-digit × 2-digit multiplication correctly, each with an estimate, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan tiga perkalian 2 angka × 2 angka dan satu perkalian 3 angka × 2 angka yang baru dengan benar, masing-masing dengan perkiraan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "1baad5947e306d5a"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

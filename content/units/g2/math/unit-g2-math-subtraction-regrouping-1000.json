@@ -1,0 +1,417 @@
+{
+  "id": "unit-g2-math-subtraction-regrouping-1000",
+  "version": "1.0.1",
+  "level": "g2",
+  "framework": "math",
+  "strand": "addition_subtraction",
+  "title": {
+    "en": "Subtraction with regrouping within 1,000",
+    "id": "Pengurangan dengan menukar (meminjam) sampai 1.000"
+  },
+  "prerequisites": [
+    "unit-g2-math-addition-regrouping-1000",
+    "unit-g2-math-place-value-hundreds",
+    "unit-g1-math-subtraction-within-20"
+  ],
+  "objective": {
+    "en": "Subtract three-digit numbers in columns, renaming 1 ten as 10 ones or 1 hundred as 10 tens when needed (including across a zero), and check the answer by adding.",
+    "id": "Mengurangkan bilangan tiga angka dengan cara bersusun, menukar 1 puluhan menjadi 10 satuan atau 1 ratusan menjadi 10 puluhan bila perlu (termasuk melewati nol), dan memeriksa hasilnya dengan penjumlahan."
+  },
+  "rationale": {
+    "en": "The most common column-subtraction error is taking the smaller digit from the larger in every column. Opening a real bundle of ten when there are not enough ones makes renaming visible, so the written step means something. Checking by adding links back to the addition unit.",
+    "id": "Kesalahan pengurangan bersusun yang paling sering adalah mengurangkan angka yang lebih kecil dari yang lebih besar di setiap kolom. Membuka ikatan sepuluh sungguhan ketika satuannya tidak cukup membuat penukaran terlihat, sehingga langkah tertulisnya bermakna. Memeriksa dengan penjumlahan mengaitkan kembali ke unit penjumlahan."
+  },
+  "outcomes": [
+    {
+      "en": "Decides in each column whether renaming is needed, starting from the ones.",
+      "id": "Memutuskan di setiap kolom apakah perlu meminjam, mulai dari satuan."
+    },
+    {
+      "en": "Subtracts across a zero, such as 500 - 236, by renaming a hundred as 9 tens and 10 ones.",
+      "id": "Mengurangkan melewati nol, seperti 500 - 236, dengan menukar satu ratusan menjadi 9 puluhan dan 10 satuan."
+    },
+    {
+      "en": "Checks a difference by adding it to the number taken away.",
+      "id": "Memeriksa selisih dengan menjumlahkannya dengan bilangan pengurang."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show 452 - 127 with bundles and explain why I opened a ten.",
+      "id": "Aku bisa menunjukkan 452 - 127 dengan ikatan dan menjelaskan mengapa aku membuka satu puluhan."
+    },
+    {
+      "en": "I can check my answer: answer + number taken away = starting number.",
+      "id": "Aku bisa memeriksa jawabanku: hasil + bilangan pengurang = bilangan awal."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Build only the starting number with bundles. Take away from it; never build the second number.",
+      "id": "Susun hanya bilangan awal dengan ikatan. Ambil darinya; jangan pernah menyusun bilangan kedua."
+    },
+    {
+      "en": "Use the words 'not enough ones, open a ten' rather than 'borrow', because nothing is given back. In Indonesian schools the step is often called meminjam; that is fine as long as the child sees the ten being opened.",
+      "id": "Pakai kalimat 'satuannya tidak cukup, buka satu puluhan'. Di sekolah langkah ini sering disebut meminjam; itu tidak masalah asalkan anak melihat puluhan dibuka."
+    },
+    {
+      "en": "Ask your child to check every answer by adding; if the check fails, look for the column where renaming was missed.",
+      "id": "Minta anak memeriksa setiap jawaban dengan penjumlahan; jika tidak cocok, cari kolom tempat penukaran terlewat."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Start with the ones. If the top digit is smaller, open one bundle from the next place.",
+      "id": "Mulai dari satuan. Jika angka atas lebih kecil, buka satu ikatan dari tempat berikutnya."
+    },
+    {
+      "en": "When you finish, add your answer and the number you took away. You should get the starting number.",
+      "id": "Setelah selesai, jumlahkan jawabanmu dan bilangan yang diambil. Hasilnya harus bilangan awal."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build 452 with 4 bags of a hundred, 5 bundles of ten and 2 loose sticks. To take away 127, there are not enough ones: open one bundle, now 4 tens and 12 ones. Take 7 ones, 2 tens and 1 hundred; 325 is left.",
+        "id": "Susun 452 dengan 4 kantong ratusan, 5 ikatan puluhan, dan 2 stik lepas. Untuk mengambil 127, satuannya tidak cukup: buka satu ikatan, sekarang 4 puluhan dan 12 satuan. Ambil 7 satuan, 2 puluhan, dan 1 ratusan; tersisa 325."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw place-value discs for 634: 6 hundreds, 3 tens, 4 ones. To take 281, cross out 1 one; there are not enough tens, so draw an arrow from one hundred to 10 new tens and cross out 8 of the 13 tens.",
+        "id": "Gambar keping nilai tempat untuk 634: 6 ratusan, 3 puluhan, 4 satuan. Untuk mengambil 281, coret 1 satuan; puluhannya tidak cukup, jadi gambar panah dari satu ratusan ke 10 puluhan baru dan coret 8 dari 13 puluhan."
+      },
+      {
+        "en": "Draw a part-whole bar: the whole bar is 750 ml, one part is 285 ml, the other part is the unknown.",
+        "id": "Gambar model batang bagian-keseluruhan: seluruh batang 750 ml, satu bagian 285 ml, bagian lain yang dicari."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the column method with the renaming shown in small digits above the columns, then write the addition check underneath.",
+        "id": "Tulis cara bersusun dengan penukaran ditunjukkan dengan angka kecil di atas kolom, lalu tulis pemeriksaan penjumlahan di bawahnya."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Ice-cream sticks bundled in tens with rubber bands, and bags each holding ten bundles (hundreds)",
+      "id": "Stik es krim yang diikat per sepuluh dengan karet gelang, dan kantong berisi sepuluh ikatan (ratusan)"
+    },
+    {
+      "en": "A place-value chart (hundreds, tens, ones) on paper, pencil, squared paper for columns",
+      "id": "Tabel nilai tempat (ratusan, puluhan, satuan) di kertas, pensil, kertas berpetak untuk bersusun"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Make at least 9 hundreds bags, 10 spare bundles and 20 loose sticks so any renaming can be acted out.",
+      "id": "Siapkan setidaknya 9 kantong ratusan, 10 ikatan cadangan, dan 20 stik lepas sehingga setiap penukaran bisa diperagakan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "452 - 127: ones 2 - 7 is not possible, so rename 1 ten. The tens become 4 and the ones 12. 12 - 7 = 5, 4 - 2 = 2, 4 - 1 = 3. Answer 325. Check: 325 + 127 = 452.",
+      "id": "452 - 127: satuan 2 - 7 tidak bisa, jadi tukar 1 puluhan. Puluhan menjadi 4 dan satuan 12. 12 - 7 = 5, 4 - 2 = 2, 4 - 1 = 3. Hasilnya 325. Periksa: 325 + 127 = 452."
+    },
+    {
+      "en": "634 - 281: ones 4 - 1 = 3. Tens 3 - 8 is not possible, so rename 1 hundred as 10 tens: 13 - 8 = 5. Hundreds 5 - 2 = 3. Answer 353.",
+      "id": "634 - 281: satuan 4 - 1 = 3. Puluhan 3 - 8 tidak bisa, jadi tukar 1 ratusan menjadi 10 puluhan: 13 - 8 = 5. Ratusan 5 - 2 = 3. Hasilnya 353."
+    },
+    {
+      "en": "Across zero, 500 - 236: there are no tens to open, so open a hundred into 10 tens, then one ten into 10 ones. Now 4 hundreds, 9 tens, 10 ones. 10 - 6 = 4, 9 - 3 = 6, 4 - 2 = 2. Answer 264.",
+      "id": "Melewati nol, 500 - 236: tidak ada puluhan untuk dibuka, jadi buka satu ratusan menjadi 10 puluhan, lalu satu puluhan menjadi 10 satuan. Sekarang 4 ratusan, 9 puluhan, 10 satuan. 10 - 6 = 4, 9 - 3 = 6, 4 - 2 = 2. Hasilnya 264."
+    },
+    {
+      "en": "Bar model: a bottle holds 750 ml of es teh and 285 ml is poured out. The part left is 750 - 285 = 465 ml. Check: 465 + 285 = 750.",
+      "id": "Model batang: sebotol berisi 750 ml es teh dan 285 ml dituang. Sisanya 750 - 285 = 465 ml. Periksa: 465 + 285 = 750."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Act out three subtractions with bundles where only some columns need renaming, and say before starting which columns will need it.",
+      "id": "Peragakan tiga pengurangan dengan ikatan yang hanya sebagian kolomnya perlu meminjam, dan sebutkan sebelum mulai kolom mana yang akan perlu."
+    },
+    {
+      "en": "Shopping-list difference: the family has 900 grams of flour and a recipe needs 375 grams; find what is left and check by adding.",
+      "id": "Selisih daftar belanja: keluarga punya 900 gram tepung dan resep perlu 375 gram; cari sisanya dan periksa dengan penjumlahan."
+    },
+    {
+      "en": "Spot the mistake: the adult writes a subtraction where the smaller digit was taken from the larger; your child finds and fixes the column.",
+      "id": "Temukan kesalahan: orang dewasa menulis pengurangan yang angka kecilnya dikurangkan dari yang besar; anak menemukan dan memperbaiki kolomnya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "563 - 248 = ?",
+        "id": "563 - 248 = ?"
+      },
+      "choices": {
+        "en": [
+          "315",
+          "325",
+          "811"
+        ],
+        "id": [
+          "315",
+          "325",
+          "811"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Ones 3 - 8 needs renaming: 13 - 8 = 5. Tens 5 - 4 = 1. Hundreds 5 - 2 = 3. Check: 315 + 248 = 563.",
+        "id": "Satuan 3 - 8 perlu meminjam: 13 - 8 = 5. Puluhan 5 - 4 = 1. Ratusan 5 - 2 = 3. Periksa: 315 + 248 = 563."
+      },
+      "check": {
+        "expression": "563 - 248",
+        "result": "315"
+      },
+      "distractorMisconceptions": {
+        "1": "SMALLER_FROM_LARGER",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "700 - 358 = ?",
+        "id": "700 - 358 = ?"
+      },
+      "choices": {
+        "en": [
+          "342",
+          "458",
+          "352"
+        ],
+        "id": [
+          "342",
+          "458",
+          "352"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Open a hundred into 9 tens and 10 ones: 6 hundreds, 9 tens, 10 ones. 10 - 8 = 2, 9 - 5 = 4, 6 - 3 = 3. Answer 342.",
+        "id": "Buka satu ratusan menjadi 9 puluhan dan 10 satuan: 6 ratusan, 9 puluhan, 10 satuan. 10 - 8 = 2, 9 - 5 = 4, 6 - 3 = 3. Hasilnya 342."
+      },
+      "check": {
+        "expression": "700 - 358",
+        "result": "342"
+      },
+      "distractorMisconceptions": {
+        "1": "SMALLER_FROM_LARGER",
+        "2": "ACROSS_ZERO_SLIP"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "The school library has 925 books. 467 books are lent out. How many books are still on the shelves?",
+        "id": "Perpustakaan sekolah punya 925 buku. 467 buku sedang dipinjam. Berapa buku yang masih di rak?"
+      },
+      "choices": {
+        "en": [
+          "458 books",
+          "542 books",
+          "1,392 books"
+        ],
+        "id": [
+          "458 buku",
+          "542 buku",
+          "1.392 buku"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Ones 15 - 7 = 8 after renaming a ten; tens 11 - 6 = 5 after renaming a hundred; hundreds 8 - 4 = 4. Check: 458 + 467 = 925.",
+        "id": "Satuan 15 - 7 = 8 setelah menukar satu puluhan; puluhan 11 - 6 = 5 setelah menukar satu ratusan; ratusan 8 - 4 = 4. Periksa: 458 + 467 = 925."
+      },
+      "check": {
+        "expression": "925 - 467",
+        "result": "458"
+      },
+      "distractorMisconceptions": {
+        "1": "SMALLER_FROM_LARGER",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "? + 276 = 610. What is the missing number?",
+        "id": "? + 276 = 610. Berapa bilangan yang hilang?"
+      },
+      "choices": {
+        "en": [
+          "334",
+          "886",
+          "466"
+        ],
+        "id": [
+          "334",
+          "886",
+          "466"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The missing part is 610 - 276. Ones: 0 - 6 is not possible, so open the 1 ten: 10 - 6 = 4. Tens: now 0 - 7, so open a hundred: 10 - 7 = 3. Hundreds: 5 - 2 = 3. Check: 334 + 276 = 610.",
+        "id": "Bagian yang hilang adalah 610 - 276. Satuan: 0 - 6 tidak bisa, jadi buka 1 puluhan: 10 - 6 = 4. Puluhan: sekarang 0 - 7, jadi buka satu ratusan: 10 - 7 = 3. Ratusan: 5 - 2 = 3. Periksa: 334 + 276 = 610."
+      },
+      "check": {
+        "expression": "610 - 276",
+        "result": "334"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "SMALLER_FROM_LARGER"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A red rope is 640 cm long and a blue rope is 385 cm long. How much longer is the red rope?",
+        "id": "Tali merah panjangnya 640 cm dan tali biru 385 cm. Berapa lebih panjang tali merah?"
+      },
+      "choices": {
+        "en": [
+          "255 cm",
+          "345 cm",
+          "1,025 cm"
+        ],
+        "id": [
+          "255 cm",
+          "345 cm",
+          "1.025 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Compare with bars: the difference is 640 - 385. Ones 10 - 5 = 5, tens 13 - 8 = 5, hundreds 5 - 3 = 2. Check: 255 + 385 = 640.",
+        "id": "Bandingkan dengan batang: selisihnya 640 - 385. Satuan 10 - 5 = 5, puluhan 13 - 8 = 5, ratusan 5 - 3 = 2. Periksa: 255 + 385 = 640."
+      },
+      "check": {
+        "expression": "640 - 385",
+        "result": "255"
+      },
+      "distractorMisconceptions": {
+        "1": "SMALLER_FROM_LARGER",
+        "2": "ADDS_INSTEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SMALLER_FROM_LARGER",
+      "description": {
+        "en": "Takes the smaller digit from the larger in each column, whichever is on top.",
+        "id": "Mengurangkan angka yang lebih kecil dari yang lebih besar di setiap kolom, mana pun yang di atas."
+      },
+      "remediation": {
+        "en": "Build only the top number with bundles and try to take 8 loose sticks from 3: the child sees it cannot be done without opening a bundle.",
+        "id": "Susun hanya bilangan atas dengan ikatan dan coba ambil 8 stik lepas dari 3: anak melihat itu tidak bisa tanpa membuka ikatan."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds because two numbers are given, without deciding what the story asks.",
+        "id": "Menjumlahkan karena ada dua bilangan, tanpa memutuskan apa yang ditanyakan cerita."
+      },
+      "remediation": {
+        "en": "Draw the bar model first: if the whole is known and a part is missing, the operation is subtraction.",
+        "id": "Gambar model batang dulu: jika keseluruhan diketahui dan satu bagian hilang, operasinya pengurangan."
+      }
+    },
+    {
+      "code": "ACROSS_ZERO_SLIP",
+      "description": {
+        "en": "When renaming across a zero, writes 10 tens instead of 9 tens after giving one ten to the ones.",
+        "id": "Saat meminjam melewati nol, menulis 10 puluhan, bukan 9 puluhan, setelah memberikan satu puluhan ke satuan."
+      },
+      "remediation": {
+        "en": "Open a real hundreds bag into 10 bundles, then open one bundle: count the bundles still closed (9).",
+        "id": "Buka kantong ratusan sungguhan menjadi 10 ikatan, lalu buka satu ikatan: hitung ikatan yang masih tertutup (9)."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Find three different subtractions of three-digit numbers that all have the answer 199, and explain the pattern you notice.",
+      "id": "Cari tiga pengurangan bilangan tiga angka berbeda yang semuanya berhasil 199, dan jelaskan pola yang kamu lihat."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Squared paper keeps the digits in columns; children with fine-motor difficulties can use digit cards instead of writing.",
+      "id": "Kertas berpetak menjaga angka tetap di kolomnya; anak dengan kesulitan motorik halus bisa memakai kartu angka daripada menulis."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Keep rubber bands away from younger siblings.",
+        "id": "Jauhkan karet gelang dari adik yang lebih kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves four new subtractions, including one across a zero, and checks each by adding, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan empat pengurangan baru, termasuk satu yang melewati nol, dan memeriksa masing-masing dengan penjumlahan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "635b3e8289cce89a"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

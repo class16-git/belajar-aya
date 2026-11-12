@@ -1,0 +1,513 @@
+{
+  "id": "unit-k-math-shapes-and-patterns",
+  "version": "1.0.1",
+  "level": "k",
+  "framework": "math",
+  "strand": "geometry",
+  "title": {
+    "en": "Shapes and repeating patterns",
+    "id": "Bangun datar dan pola berulang"
+  },
+  "prerequisites": [
+    "unit-k-math-compare-numbers-to-20"
+  ],
+  "objective": {
+    "en": "Name circles, triangles, squares and rectangles by counting their sides and corners, and copy, continue and make repeating patterns (AB, ABB, ABC).",
+    "id": "Menyebut lingkaran, segitiga, persegi, dan persegi panjang dengan menghitung sisi dan pojoknya (titik sudut), serta meniru, melanjutkan, dan membuat pola berulang (AB, ABB, ABC)."
+  },
+  "rationale": {
+    "en": "Children who sort shapes by their features, not by how they look at first glance, start to reason like mathematicians: a triangle stays a triangle when it is turned over. Finding the part of a pattern that repeats is early algebraic thinking and prepares skip counting.",
+    "id": "Anak yang mengelompokkan bangun menurut cirinya, bukan menurut kesan pertama, mulai bernalar seperti matematikawan: segitiga tetap segitiga walaupun dibalik. Menemukan bagian pola yang berulang adalah awal berpikir aljabar dan menyiapkan hitung loncat."
+  },
+  "outcomes": [
+    {
+      "en": "Names four flat shapes and tells how many sides and corners each has.",
+      "id": "Menyebut empat bangun datar dan mengatakan berapa sisi dan sudut masing-masing."
+    },
+    {
+      "en": "Finds the repeating unit in a pattern and says what comes next.",
+      "id": "Menemukan satuan yang berulang dalam pola dan mengatakan apa yang datang berikutnya."
+    },
+    {
+      "en": "Makes an own pattern and explains its rule.",
+      "id": "Membuat pola sendiri dan menjelaskan aturannya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can count the sides of a shape by touching each one once.",
+      "id": "Aku bisa menghitung sisi bangun dengan menyentuh setiap sisi satu kali."
+    },
+    {
+      "en": "I can show the part of my pattern that repeats.",
+      "id": "Aku bisa menunjukkan bagian polaku yang berulang."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Cut shapes from cardboard boxes yourself before the lesson: two sizes of each shape, and some triangles that are long and thin.",
+      "id": "Gunting sendiri bangun dari kardus sebelum belajar: dua ukuran untuk setiap bangun, dan beberapa segitiga yang panjang dan ramping."
+    },
+    {
+      "en": "Ask 'how do you know?' every time your child names a shape, so the answer is about sides and corners.",
+      "id": "Tanyakan 'bagaimana kamu tahu?' setiap kali anak menyebut bangun, supaya jawabannya tentang sisi dan sudut."
+    },
+    {
+      "en": "For patterns, say the rule aloud in a rhythm (cup, spoon, spoon; cup, spoon, spoon) and pause where your child should continue.",
+      "id": "Untuk pola, ucapkan aturannya dengan berirama (gelas, sendok, sendok; gelas, sendok, sendok) lalu berhenti di tempat anak harus melanjutkan."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Run your finger along each side and count. Then press each corner and count.",
+      "id": "Jalankan jarimu di setiap sisi dan hitung. Lalu tekan setiap sudut dan hitung."
+    },
+    {
+      "en": "Find the part that repeats. Put your hands around it, then build the next part.",
+      "id": "Cari bagian yang berulang. Lingkari dengan tanganmu, lalu susun bagian berikutnya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Sort the cardboard shapes and real objects (a plate, a tissue box face, a paper napkin folded corner to corner) into four trays: circle, triangle, square, rectangle. Turn each triangle a different way and check it still has three sides.",
+        "id": "Kelompokkan bangun kardus dan benda nyata (piring, sisi kotak tisu, serbet kertas yang dilipat dari pojok ke pojok) ke empat nampan: lingkaran, segitiga, persegi, persegi panjang. Putar setiap segitiga ke arah lain dan periksa sisinya tetap tiga."
+      },
+      {
+        "en": "Build a pattern on the floor with plastic cups and large spoons: cup, spoon, cup, spoon. Then a new rule: cup, spoon, spoon.",
+        "id": "Susun pola di lantai dengan gelas plastik dan sendok besar: gelas, sendok, gelas, sendok. Lalu aturan baru: gelas, sendok, sendok."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw each shape and put a dot on every corner. Write the number of dots under the shape.",
+        "id": "Gambar setiap bangun dan beri titik di setiap sudut. Tulis banyak titik di bawah bangun."
+      },
+      {
+        "en": "Colour a strip of 12 squares in a red, yellow, blue pattern and draw a ring around each repeating group.",
+        "id": "Warnai pita 12 kotak dengan pola merah, kuning, biru dan lingkari setiap kelompok yang berulang."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Label patterns with letters: cup, spoon, spoon is A B B. Read a letter pattern such as A B C A B C and build it with any objects.",
+        "id": "Beri label huruf pada pola: gelas, sendok, sendok adalah A B B. Baca pola huruf seperti A B C A B C dan susun dengan benda apa saja."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Cardboard circles, triangles, squares and rectangles in two sizes (cut by the adult)",
+      "id": "Lingkaran, segitiga, persegi, dan persegi panjang dari kardus dalam dua ukuran (digunting orang dewasa)"
+    },
+    {
+      "en": "About 8 plastic cups and 8 large spoons, crayons, paper",
+      "id": "Sekitar 8 gelas plastik dan 8 sendok besar, krayon, kertas"
+    },
+    {
+      "en": "Four trays or plates for sorting",
+      "id": "Empat nampan atau piring untuk mengelompokkan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Cut the cardboard shapes, sand rough edges with a nail file, and lay the trays out with one example shape on each.",
+      "id": "Gunting bangun kardus, haluskan pinggirnya yang kasar dengan kikir kuku, dan siapkan nampan dengan satu contoh bangun di masing-masing."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Hold up a long thin triangle. Touch each side: one, two, three. Touch each corner: one, two, three. Turn it upside down and count again: still a triangle.",
+      "id": "Angkat segitiga yang panjang dan ramping. Sentuh setiap sisi: satu, dua, tiga. Sentuh setiap sudut: satu, dua, tiga. Balik dan hitung lagi: tetap segitiga."
+    },
+    {
+      "en": "Put a square next to a rectangle. Both have four sides and four corners. Lay a spoon along each side of the square: all the sides are the same length. The rectangle has two long sides and two short sides.",
+      "id": "Letakkan persegi di samping persegi panjang. Keduanya punya empat sisi dan empat sudut. Taruh sendok di sepanjang setiap sisi persegi: semua sisinya sama panjang. Persegi panjang punya dua sisi panjang dan dua sisi pendek."
+    },
+    {
+      "en": "Build cup, spoon, cup, spoon, cup. Ask: what comes next? A spoon, because the part cup-spoon repeats. Say the letters: A B A B A, so next is B.",
+      "id": "Susun gelas, sendok, gelas, sendok, gelas. Tanyakan: apa berikutnya? Sendok, karena bagian gelas-sendok berulang. Ucapkan hurufnya: A B A B A, jadi berikutnya B."
+    },
+    {
+      "en": "Build spoon, cup, cup, spoon, cup, cup, spoon. The repeating part has three things. Next come a cup and another cup.",
+      "id": "Susun sendok, gelas, gelas, sendok, gelas, gelas, sendok. Bagian yang berulang berisi tiga benda. Berikutnya gelas lalu gelas lagi."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Shape hunt: find one circle, one triangle, one square and one rectangle in the house (a clock face, a roof shape in a picture, a floor tile, a door). Count the corners of each.",
+      "id": "Berburu bangun: cari satu lingkaran, satu segitiga, satu persegi, dan satu persegi panjang di rumah (muka jam, bentuk atap di gambar, ubin lantai, pintu). Hitung sudut masing-masing."
+    },
+    {
+      "en": "Sound patterns: clap, stamp, clap, stamp; then clap, clap, tap the knees. Your child continues and names the rule with letters.",
+      "id": "Pola bunyi: tepuk, hentak, tepuk, hentak; lalu tepuk, tepuk, tepuk lutut. Anak melanjutkan dan menyebut aturannya dengan huruf."
+    },
+    {
+      "en": "Your child makes a pattern with cardboard shapes, then you make a mistake on purpose in the next part and your child fixes it.",
+      "id": "Anak membuat pola dengan bangun kardus, lalu Anda sengaja membuat kesalahan di bagian berikutnya dan anak memperbaikinya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Dina puts 2 triangles on the table. How many sides do they have altogether?",
+        "id": "Dina menaruh 2 segitiga di meja. Berapa banyak sisinya semuanya?"
+      },
+      "choices": {
+        "en": [
+          "6 sides",
+          "3 sides",
+          "2 sides"
+        ],
+        "id": [
+          "6 sisi",
+          "3 sisi",
+          "2 sisi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each triangle has 3 sides, so 3 + 3 = 6 sides.",
+        "id": "Setiap segitiga punya 3 sisi, jadi 3 + 3 = 6 sisi."
+      },
+      "check": {
+        "expression": "3 + 3",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_ONE_SHAPE_ONLY",
+        "2": "COUNTS_SHAPES_NOT_SIDES"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A square card and a triangle card are on the floor. How many corners are there altogether?",
+        "id": "Ada kartu persegi dan kartu segitiga di lantai. Berapa banyak sudutnya semuanya?"
+      },
+      "choices": {
+        "en": [
+          "7 corners",
+          "8 corners",
+          "2 corners"
+        ],
+        "id": [
+          "7 sudut",
+          "8 sudut",
+          "2 sudut"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A square has 4 corners and a triangle has 3, so 4 + 3 = 7.",
+        "id": "Persegi punya 4 sudut dan segitiga punya 3, jadi 4 + 3 = 7."
+      },
+      "check": {
+        "expression": "4 + 3",
+        "result": "7"
+      },
+      "distractorMisconceptions": {
+        "1": "THINKS_EVERY_SHAPE_HAS_FOUR",
+        "2": "COUNTS_SHAPES_NOT_SIDES"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Raka makes the pattern clap, clap, stamp. He does the whole pattern 3 times. How many claps does he make?",
+        "id": "Raka membuat pola tepuk, tepuk, hentak. Ia melakukan seluruh pola 3 kali. Berapa kali ia bertepuk?"
+      },
+      "choices": {
+        "en": [
+          "6 claps",
+          "3 claps",
+          "9 claps"
+        ],
+        "id": [
+          "6 tepukan",
+          "3 tepukan",
+          "9 tepukan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each time there are 2 claps: 2 + 2 + 2 = 6 claps. The stamps are not claps.",
+        "id": "Setiap kali ada 2 tepukan: 2 + 2 + 2 = 6 tepukan. Hentakan bukan tepukan."
+      },
+      "check": {
+        "expression": "2 + 2 + 2",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_REPEATS_NOT_ITEMS",
+        "2": "COUNTS_EVERY_ACTION"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Blocks go red, blue, blue, red, blue, blue. In the next repeating group, how many blocks are blue?",
+        "id": "Balok tersusun merah, biru, biru, merah, biru, biru. Pada kelompok berulang berikutnya, berapa balok yang biru?"
+      },
+      "choices": {
+        "en": [
+          "2 blue blocks",
+          "1 blue block",
+          "3 blue blocks"
+        ],
+        "id": [
+          "2 balok biru",
+          "1 balok biru",
+          "3 balok biru"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each group is red, blue, blue: 3 blocks, and 1 of them is red, so 3 - 1 = 2 are blue.",
+        "id": "Setiap kelompok adalah merah, biru, biru: 3 balok, dan 1 di antaranya merah, jadi 3 - 1 = 2 biru."
+      },
+      "check": {
+        "expression": "3 - 1",
+        "result": "2"
+      },
+      "distractorMisconceptions": {
+        "1": "SEES_ONLY_AB_PATTERNS",
+        "2": "COUNTS_WHOLE_GROUP"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A window has 4 straight sides, 2 long and 2 short, and 4 square corners. Which shape is it?",
+        "id": "Sebuah jendela punya 4 sisi lurus, 2 panjang dan 2 pendek, serta 4 pojok siku-siku. Bangun apakah itu?"
+      },
+      "choices": {
+        "en": [
+          "Rectangle",
+          "Square",
+          "Triangle"
+        ],
+        "id": [
+          "Persegi panjang",
+          "Persegi",
+          "Segitiga"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Four sides with two long and two short is a rectangle. A square has all four sides the same length.",
+        "id": "Empat sisi dengan dua panjang dan dua pendek adalah persegi panjang. Persegi punya empat sisi yang sama panjang."
+      },
+      "distractorMisconceptions": {
+        "1": "SQUARE_RECTANGLE_SAME",
+        "2": "COUNTS_SHAPES_NOT_SIDES"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "Star, moon, sun, star, moon, sun, star. What comes next?",
+        "id": "Bintang, bulan, matahari, bintang, bulan, matahari, bintang. Apa berikutnya?"
+      },
+      "choices": {
+        "en": [
+          "Moon",
+          "Sun",
+          "Star"
+        ],
+        "id": [
+          "Bulan",
+          "Matahari",
+          "Bintang"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The group star, moon, sun repeats. After star comes moon.",
+        "id": "Kelompok bintang, bulan, matahari berulang. Setelah bintang datang bulan."
+      },
+      "distractorMisconceptions": {
+        "1": "SEES_ONLY_AB_PATTERNS",
+        "2": "REPEATS_LAST_ITEM"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "COUNTS_ONE_SHAPE_ONLY",
+      "description": {
+        "en": "Counts the sides of one shape and forgets the others.",
+        "id": "Menghitung sisi satu bangun saja dan melupakan yang lain."
+      },
+      "remediation": {
+        "en": "Put a sticker on every side as it is counted, moving from one shape to the next; count the stickers at the end.",
+        "id": "Tempel stiker di setiap sisi yang sudah dihitung, pindah dari satu bangun ke bangun berikutnya; hitung stikernya di akhir."
+      }
+    },
+    {
+      "code": "COUNTS_SHAPES_NOT_SIDES",
+      "description": {
+        "en": "Counts how many shapes there are instead of their sides or corners.",
+        "id": "Menghitung banyak bangun, bukan sisi atau sudutnya."
+      },
+      "remediation": {
+        "en": "Trace each side with a crayon in a different colour, then count the colours you used.",
+        "id": "Telusuri setiap sisi dengan krayon warna berbeda, lalu hitung warna yang dipakai."
+      }
+    },
+    {
+      "code": "THINKS_EVERY_SHAPE_HAS_FOUR",
+      "description": {
+        "en": "Assumes every shape has four corners, like the most familiar shapes at home.",
+        "id": "Mengira setiap bangun punya empat sudut, seperti bangun yang paling sering dilihat di rumah."
+      },
+      "remediation": {
+        "en": "Press a fingertip into each corner of a cardboard triangle and say 'one, two, three, finished'; then do the same with a square.",
+        "id": "Tekan ujung jari ke setiap sudut segitiga kardus dan ucapkan 'satu, dua, tiga, selesai'; lalu lakukan hal yang sama dengan persegi."
+      }
+    },
+    {
+      "code": "SQUARE_RECTANGLE_SAME",
+      "description": {
+        "en": "Does not notice that a square has all sides equal while a rectangle has two long and two short sides.",
+        "id": "Tidak memperhatikan bahwa persegi punya semua sisi sama panjang, sedangkan persegi panjang punya dua sisi panjang dan dua sisi pendek."
+      },
+      "remediation": {
+        "en": "Measure each side with the same spoon: on the square every side is one spoon; on the rectangle two sides need more spoons.",
+        "id": "Ukur setiap sisi dengan sendok yang sama: pada persegi setiap sisi satu sendok; pada persegi panjang dua sisi perlu lebih banyak sendok."
+      }
+    },
+    {
+      "code": "SEES_ONLY_AB_PATTERNS",
+      "description": {
+        "en": "Expects every pattern to alternate two things, so misses groups of three.",
+        "id": "Mengira setiap pola hanya bergantian dua benda, sehingga tidak melihat kelompok tiga."
+      },
+      "remediation": {
+        "en": "Put each repeating group on its own plate so the groups are visible, then count the things on one plate.",
+        "id": "Taruh setiap kelompok berulang di piringnya sendiri sehingga kelompoknya terlihat, lalu hitung benda di satu piring."
+      }
+    },
+    {
+      "code": "COUNTS_REPEATS_NOT_ITEMS",
+      "description": {
+        "en": "Counts how many times the pattern repeats instead of the items inside it.",
+        "id": "Menghitung berapa kali pola berulang, bukan benda di dalamnya."
+      },
+      "remediation": {
+        "en": "Do the pattern with real claps while the adult drops one cup on the table for each clap; count the cups.",
+        "id": "Lakukan pola dengan tepukan nyata sambil orang dewasa menaruh satu gelas di meja untuk setiap tepukan; hitung gelasnya."
+      }
+    },
+    {
+      "code": "COUNTS_EVERY_ACTION",
+      "description": {
+        "en": "Counts every part of the pattern, including the parts that were not asked about.",
+        "id": "Menghitung setiap bagian pola, termasuk bagian yang tidak ditanyakan."
+      },
+      "remediation": {
+        "en": "Use two colours of cups, one for claps and one for stamps, and count only the clap colour.",
+        "id": "Pakai dua warna gelas, satu untuk tepukan dan satu untuk hentakan, lalu hitung warna tepukan saja."
+      }
+    },
+    {
+      "code": "COUNTS_WHOLE_GROUP",
+      "description": {
+        "en": "Counts all the items in the repeating group instead of only the ones of one kind.",
+        "id": "Menghitung semua benda dalam kelompok berulang, bukan hanya yang satu jenis."
+      },
+      "remediation": {
+        "en": "Cover the red block with a hand and count only what is still visible.",
+        "id": "Tutup balok merah dengan tangan dan hitung hanya yang masih terlihat."
+      }
+    },
+    {
+      "code": "REPEATS_LAST_ITEM",
+      "description": {
+        "en": "Copies the last item instead of following the rule.",
+        "id": "Mengulang benda terakhir, bukan mengikuti aturan."
+      },
+      "remediation": {
+        "en": "Say the pattern aloud from the start with a rhythm and let the voice carry on to the next word.",
+        "id": "Ucapkan pola dari awal dengan berirama dan biarkan suara berlanjut ke kata berikutnya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a growing pattern with cups: 1 cup, then 2, then 3. Ask how many cups the next step needs and why it is not a repeating pattern.",
+      "id": "Buat pola bertambah dengan gelas: 1 gelas, lalu 2, lalu 3. Tanyakan berapa gelas pada langkah berikutnya dan mengapa ini bukan pola berulang."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Cardboard shapes can be explored by touch with eyes closed; sound and movement patterns suit children who find drawing hard.",
+      "id": "Bangun kardus bisa dikenali dengan meraba sambil memejamkan mata; pola bunyi dan gerak cocok untuk anak yang kesulitan menggambar."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult cuts all the cardboard and smooths sharp corners; use large spoons and cups that cannot be swallowed.",
+        "id": "Orang dewasa menggunting semua kardus dan menghaluskan sudut yang tajam; pakai sendok dan gelas besar yang tidak bisa tertelan."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      2,
+      7,
+      14
+    ],
+    "masteryRule": {
+      "en": "Secure when the child names the four shapes with a reason about sides or corners, and continues an ABB and an ABC pattern without help, on two different days.",
+      "id": "Dikuasai jika anak menyebut keempat bangun dengan alasan tentang sisi atau sudut, dan melanjutkan pola ABB dan ABC tanpa bantuan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "a4547d1381a4d544"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

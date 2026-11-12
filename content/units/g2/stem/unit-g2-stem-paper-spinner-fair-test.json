@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-stem-paper-spinner-fair-test",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "level": "g2",
   "framework": "stem",
   "strand": "science_inquiry",
@@ -204,8 +204,8 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "The short-wing spinner landed first in 3 out of 3 races. What is the best claim?",
-        "id": "Baling-baling bersayap pendek mendarat lebih dulu dalam 3 dari 3 lomba. Apa kesimpulan terbaik?"
+        "en": "The short-wing spinner landed first in 5 out of 5 races. What is the best claim?",
+        "id": "Baling-baling bersayap pendek mendarat lebih dulu dalam 5 dari 5 lomba. Apa kesimpulan terbaik?"
       },
       "choices": {
         "en": [
@@ -378,7 +378,7 @@
   "rights": "original",
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -386,7 +386,12 @@
       "misconception-map",
       "bilingual-parity",
       "safety"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.2",
+    "reviewedHash": "756c265e9c752c2b"
   },
   "provenance": {
     "origin": "ai_drafted",

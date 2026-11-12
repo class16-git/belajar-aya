@@ -1,5 +1,6 @@
 /** Regenerates src/content-index.ts from content/**: lessons, skills.json, objectives/*.json and the Reading Garden library. */
-import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 
 const root = join(import.meta.dirname, '../../../content');
@@ -34,7 +35,7 @@ passages.forEach((f, i) => lines.push(`import p${i} from '../../../content/${f}'
 lines.push("import skills from '../../../content/skills.json';");
 lines.push("import librarySources from '../../../content/library/sources.json';");
 lines.push("import libraryJourneys from '../../../content/library/journeys.json';");
-lines.push("import expansion from './generated/expansion.json';", '');
+lines.push("import expansionSummary from './generated/expansion-summary.json';", '');
 lines.push(`export const RAW_LESSONS: unknown[] = [${lessons.map((_, i) => `l${i}`).join(', ')}];`);
 lines.push(`export const RAW_LESSON_FILES: string[] = ${JSON.stringify(lessons)};`);
 lines.push(`export const RAW_OBJECTIVES: unknown[] = [${objectives.map((_, i) => `o${i}`).join(', ')}];`);
@@ -45,14 +46,36 @@ lines.push(`export const RAW_BOOK_FILES: string[] = ${JSON.stringify(books)};`);
 lines.push(`export const RAW_PASSAGES: unknown[] = [${passages.map((_, i) => `p${i}`).join(', ')}];`);
 lines.push('export const RAW_LIBRARY_SOURCES: unknown = librarySources;');
 lines.push('export const RAW_JOURNEYS: unknown = libraryJourneys;');
-lines.push('/** Expansion units and readings (content/units, content/readings), aggregated into one generated JSON file. */');
-lines.push('export const RAW_UNITS: unknown[] = expansion.units;');
-lines.push('export const RAW_READINGS: unknown[] = expansion.readings;');
-lines.push('export const RAW_UNIT_FILES: string[] = expansion.unitFiles;');
-lines.push('export const RAW_READING_FILES: string[] = expansion.readingFiles;', '');
+const STAGES = ['age2_3', 'age3_4', 'age4_5', 'k', 'g1', 'g2', 'g3', 'g4', 'g5', 'g6'];
+lines.push('/** Expansion content: a small precomputed summary (sync) and one lazily loaded chunk per level. */');
+lines.push('export const EXPANSION_SUMMARY: unknown = expansionSummary;');
+lines.push('export const EXPANSION_LEVEL_LOADERS: Record<string, () => Promise<{ units: unknown[]; readings: unknown[] }>> = {');
+for (const st of STAGES) lines.push(`  ${st}: () => import('./generated/expansion/${st}.json').then((m) => m.default as { units: unknown[]; readings: unknown[] }),`);
+lines.push('};', '');
 units.sort();
 readings.sort();
 const load = (f) => JSON.parse(readFileSync(join(root, f), 'utf8'));
-writeFileSync(join(import.meta.dirname, '../src/generated/expansion.json'), JSON.stringify({ units: units.map(load), readings: readings.map(load), unitFiles: units, readingFiles: readings }));
+const gen = join(import.meta.dirname, '../src/generated');
+mkdirSync(join(gen, 'expansion'), { recursive: true });
+if (existsSync(join(gen, 'expansion.json'))) rmSync(join(gen, 'expansion.json'));
+const levelOf = (f) => f.split('/')[1];
+for (const st of STAGES) {
+  const doc = { units: units.filter((f) => levelOf(f) === st).map(load), readings: readings.filter((f) => levelOf(f) === st).map(load) };
+  writeFileSync(join(gen, 'expansion', `${st}.json`), JSON.stringify(doc));
+}
+if (!existsSync(join(gen, 'expansion-summary.json'))) writeFileSync(join(gen, 'expansion-summary.json'), JSON.stringify({ items: [], errors: [] }));
 writeFileSync(join(import.meta.dirname, '../src/content-index.ts'), lines.join('\n'));
+// Phase 2: whole-corpus validation and the precomputed summary (needs the TypeScript validators; run with tsx).
+const { validateExpansion, pipelineState, isExpansionVisible } = await import('../src/units.ts');
+const { REVIEW_STATUSES } = await import('../src/schema.ts');
+const all = { units: units.map(load), readings: readings.map(load) };
+const { content, errors } = validateExpansion(all);
+const religious = (x) => x.framework === 'islamic' || (x.arabicPhrases ?? []).length > 0 || (x.crossCurricular ?? []).some((c) => c.subject === 'islamic_values');
+const row = (kind) => (x) => ({
+  id: x.id, kind, level: x.level, framework: x.framework ?? null, genre: x.genre ?? null, version: x.version, reviewStatus: x.reviewStatus,
+  religious: religious(x), state: pipelineState(x, errors),
+  visibleAt: Object.fromEntries(REVIEW_STATUSES.map((r) => [r, isExpansionVisible(x, r) && !errors.some((e) => e.includes(x.id))])),
+  hash: createHash('sha256').update(JSON.stringify(x)).digest('hex').slice(0, 16),
+});
+writeFileSync(join(gen, 'expansion-summary.json'), JSON.stringify({ items: [...content.units.map(row('unit')), ...content.readings.map(row('reading'))], errors }));
 console.log(`Indexed ${lessons.length} lessons, ${objectives.length} objective files, ${books.length} books, ${passages.length} passages, ${units.length} units and ${readings.length} readings.`);

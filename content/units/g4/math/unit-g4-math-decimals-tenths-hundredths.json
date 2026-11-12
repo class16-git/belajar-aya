@@ -1,0 +1,529 @@
+{
+  "id": "unit-g4-math-decimals-tenths-hundredths",
+  "version": "1.0.1",
+  "level": "g4",
+  "framework": "math",
+  "strand": "decimals",
+  "title": {
+    "en": "Decimals: tenths and hundredths",
+    "id": "Desimal: persepuluhan dan perseratusan"
+  },
+  "prerequisites": [
+    "unit-g4-math-equivalent-fractions",
+    "unit-g3-math-comparing-fractions"
+  ],
+  "objective": {
+    "en": "Read, write and compare decimals with tenths and hundredths, link them to fractions out of 10 and 100, add simple decimals, and convert metres and centimetres.",
+    "id": "Membaca, menulis, dan membandingkan desimal dengan persepuluhan dan perseratusan, mengaitkannya dengan pecahan per 10 dan per 100, menjumlahkan desimal sederhana, serta mengubah meter dan sentimeter."
+  },
+  "rationale": {
+    "en": "A decimal is a fraction written in place-value form. Shading a hundred grid shows that 0.4 and 0.40 cover the same area, which corrects the belief that a longer decimal is bigger. Metres and centimetres give a real use: 1 cm is one hundredth of a metre.",
+    "id": "Desimal adalah pecahan yang ditulis dalam bentuk nilai tempat. Mengarsir petak seratus menunjukkan bahwa 0,4 dan 0,40 menutup luas yang sama, yang memperbaiki anggapan bahwa desimal yang lebih panjang lebih besar. Meter dan sentimeter memberi kegunaan nyata: 1 cm adalah seperseratus meter."
+  },
+  "outcomes": [
+    {
+      "en": "Writes tenths and hundredths as fractions and decimals and says the value of each digit.",
+      "id": "Menulis persepuluhan dan perseratusan sebagai pecahan dan desimal dan menyebut nilai setiap angka."
+    },
+    {
+      "en": "Compares and orders decimals to two places using place value.",
+      "id": "Membandingkan dan mengurutkan desimal sampai dua tempat dengan nilai tempat."
+    },
+    {
+      "en": "Adds decimals by lining up the decimal points and converts m to cm.",
+      "id": "Menjumlahkan desimal dengan meluruskan tanda desimal dan mengubah m ke cm."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can shade 0.36 on a hundred grid and say it is 3 tenths and 6 hundredths.",
+      "id": "Aku bisa mengarsir 0,36 pada petak seratus dan menyebut itu 3 persepuluhan dan 6 perseratusan."
+    },
+    {
+      "en": "I can explain why 0.4 is greater than 0.38.",
+      "id": "Aku bisa menjelaskan mengapa 0,4 lebih besar dari 0,38."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "English writes a decimal point (0.36); Indonesian writes a decimal comma (0,36) and uses a point for thousands. Show both and say which language uses which.",
+      "id": "Bahasa Inggris memakai titik desimal (0.36); bahasa Indonesia memakai koma desimal (0,36) dan titik untuk ribuan. Tunjukkan keduanya dan sebutkan bahasa mana memakai yang mana."
+    },
+    {
+      "en": "Read decimals by place value, 'zero point three six' is fine, but also say 'thirty-six hundredths'.",
+      "id": "Baca desimal menurut nilai tempat; 'nol koma tiga enam' boleh, tetapi ucapkan juga 'tiga puluh enam perseratus'."
+    },
+    {
+      "en": "Use a metre tape: 1 m is 100 cm, so each centimetre is 0.01 m.",
+      "id": "Pakai meteran: 1 m adalah 100 cm, jadi setiap sentimeter adalah 0,01 m."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Line up the decimal points before comparing or adding.",
+      "id": "Luruskan tanda desimal sebelum membandingkan atau menjumlahkan."
+    },
+    {
+      "en": "Compare the tenths first, then the hundredths.",
+      "id": "Bandingkan persepuluhan dulu, lalu perseratusan."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Use a 1 m tape measure stretched on the floor: find 0.5 m (50 cm), 0.25 m (25 cm) and 0.07 m (7 cm). Lay a 10 cm card strip along it ten times to see that ten tenths make a metre.",
+        "id": "Pakai meteran 1 m yang dibentangkan di lantai: cari 0,5 m (50 cm), 0,25 m (25 cm), dan 0,07 m (7 cm). Letakkan pita kartu 10 cm sepanjang meteran sepuluh kali untuk melihat bahwa sepuluh persepuluh menjadi satu meter."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Shade hundred grids: 7 whole columns for 7/10 = 0.7 = 70 hundredths; 3 columns and 6 squares for 0.36.",
+        "id": "Arsir petak seratus: 7 kolom penuh untuk 7/10 = 0,7 = 70 perseratus; 3 kolom dan 6 kotak untuk 0,36."
+      },
+      {
+        "en": "Mark 0.4 and 0.38 on a number line from 0 to 1 divided into tenths, with the gap between 0.3 and 0.4 split into hundredths.",
+        "id": "Tandai 0,4 dan 0,38 pada garis bilangan 0 sampai 1 yang dibagi persepuluhan, dengan ruang antara 0,3 dan 0,4 dibagi perseratusan."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write decimals in a place-value table (ones, tenths, hundredths) and as fractions: 0.36 = 36/100 = 3/10 + 6/100; 1.25 m = 1 m 25 cm.",
+        "id": "Tulis desimal di tabel nilai tempat (satuan, persepuluhan, perseratusan) dan sebagai pecahan: 0,36 = 36/100 = 3/10 + 6/100; 1,25 m = 1 m 25 cm."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A 1 m tape measure or a metre stick, a 10 cm card strip",
+      "id": "Meteran 1 m atau tongkat meter, pita kartu 10 cm"
+    },
+    {
+      "en": "Hundred grids (10 by 10 squares) printed or drawn, coloured pencils",
+      "id": "Petak seratus (10 kali 10 kotak) yang dicetak atau digambar, pensil warna"
+    },
+    {
+      "en": "A place-value table with ones, tenths and hundredths columns",
+      "id": "Tabel nilai tempat dengan kolom satuan, persepuluhan, dan perseratusan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw or print six hundred grids and the place-value table.",
+      "id": "Gambar atau cetak enam petak seratus dan tabel nilai tempat."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Shade 7 columns of a hundred grid: that is 7 tenths, written 0.7, and also 70 hundredths, 0.70. Both cover the same area.",
+      "id": "Arsir 7 kolom petak seratus: itu 7 persepuluh, ditulis 0,7, dan juga 70 perseratus, 0,70. Keduanya menutup luas yang sama."
+    },
+    {
+      "en": "0.36: 3 columns and 6 single squares. The 3 is in the tenths place (0.3) and the 6 in the hundredths place (0.06). As a fraction, 36/100.",
+      "id": "0,36: 3 kolom dan 6 kotak satuan. Angka 3 di tempat persepuluhan (0,3) dan 6 di tempat perseratusan (0,06). Sebagai pecahan, 36/100."
+    },
+    {
+      "en": "Compare 0.4 and 0.38: write 0.4 as 0.40. Tenths: 4 is more than 3, so 0.4 is greater, even though 0.38 has more digits.",
+      "id": "Bandingkan 0,4 dan 0,38: tulis 0,4 sebagai 0,40. Persepuluhan: 4 lebih dari 3, jadi 0,4 lebih besar, walaupun 0,38 punya lebih banyak angka."
+    },
+    {
+      "en": "A rope is 1.25 m long. 1 m = 100 cm and 0.25 m = 25 cm, so the rope is 125 cm.",
+      "id": "Seutas tali panjangnya 1,25 m. 1 m = 100 cm dan 0,25 m = 25 cm, jadi tali itu 125 cm."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Measure five things in centimetres (a book, a table, a door) and write each length in metres as a decimal.",
+      "id": "Ukur lima benda dalam sentimeter (buku, meja, pintu) dan tulis setiap panjangnya dalam meter sebagai desimal."
+    },
+    {
+      "en": "Decimal order game: draw four decimal cards such as 0.6, 0.06, 0.65 and 0.5 and order them on a number line.",
+      "id": "Permainan urutan desimal: ambil empat kartu desimal seperti 0,6; 0,06; 0,65; dan 0,5 lalu urutkan pada garis bilangan."
+    },
+    {
+      "en": "Shade two decimals on the same hundred grid in different colours and write their sum.",
+      "id": "Arsir dua desimal pada petak seratus yang sama dengan warna berbeda dan tulis jumlahnya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Write 9/100 as a decimal.",
+        "id": "Tulis 9/100 sebagai desimal."
+      },
+      "choices": {
+        "en": [
+          "0.09",
+          "0.9",
+          "9.100"
+        ],
+        "id": [
+          "0,09",
+          "0,9",
+          "9,100"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "9 hundredths has 0 tenths and 9 hundredths: 0.09.",
+        "id": "9 perseratus berarti 0 persepuluhan dan 9 perseratusan: 0,09."
+      },
+      "check": {
+        "expression": "9 / 100",
+        "result": "0.09"
+      },
+      "distractorMisconceptions": {
+        "1": "HUNDREDTHS_AS_TENTHS",
+        "2": "WRITES_FRACTION_PARTS"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which number is the greatest: 0.6, 0.57 or 0.09?",
+        "id": "Bilangan mana yang terbesar: 0,6; 0,57; atau 0,09?"
+      },
+      "choices": {
+        "en": [
+          "0.6",
+          "0.57",
+          "0.09"
+        ],
+        "id": [
+          "0,6",
+          "0,57",
+          "0,09"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Compare tenths: 0.6 has 6 tenths, 0.57 has 5 tenths, 0.09 has 0 tenths. 0.6 = 0.57 + 0.03, so it is the greatest.",
+        "id": "Bandingkan persepuluhan: 0,6 punya 6 persepuluhan, 0,57 punya 5, 0,09 punya 0. 0,6 = 0,57 + 0,03, jadi paling besar."
+      },
+      "check": {
+        "expression": "0.57 + 0.03",
+        "result": "0.6"
+      },
+      "distractorMisconceptions": {
+        "1": "LONGER_IS_LARGER",
+        "2": "BIGGEST_DIGIT_WINS"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "What number has 4 tenths and 3 hundredths?",
+        "id": "Bilangan berapa yang punya 4 persepuluhan dan 3 perseratusan?"
+      },
+      "choices": {
+        "en": [
+          "0.43",
+          "4.3",
+          "0.34"
+        ],
+        "id": [
+          "0,43",
+          "4,3",
+          "0,34"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 tenths = 0.4 and 3 hundredths = 0.03, so 0.4 + 0.03 = 0.43.",
+        "id": "4 persepuluhan = 0,4 dan 3 perseratusan = 0,03, jadi 0,4 + 0,03 = 0,43."
+      },
+      "check": {
+        "expression": "4/10 + 3/100",
+        "result": "0.43"
+      },
+      "distractorMisconceptions": {
+        "1": "PLACE_SHIFT",
+        "2": "DIGIT_ORDER_SWAPPED"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A ribbon is 2.08 m long. How long is it in centimetres?",
+        "id": "Sebuah pita panjangnya 2,08 m. Berapa panjangnya dalam sentimeter?"
+      },
+      "choices": {
+        "en": [
+          "208 cm",
+          "280 cm",
+          "20.8 cm"
+        ],
+        "id": [
+          "208 cm",
+          "280 cm",
+          "20,8 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2 m = 200 cm and 0.08 m = 8 cm, so 2.08 m = 208 cm. In one step: 2.08 × 100 = 208.",
+        "id": "2 m = 200 cm dan 0,08 m = 8 cm, jadi 2,08 m = 208 cm. Dalam satu langkah: 2,08 × 100 = 208."
+      },
+      "check": {
+        "expression": "2.08 * 100",
+        "result": "208"
+      },
+      "distractorMisconceptions": {
+        "1": "HUNDREDTHS_AS_TENTHS",
+        "2": "MULTIPLIES_BY_TEN"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Aya drinks 0.3 l of water in the morning and 0.45 l in the afternoon. How much does she drink altogether?",
+        "id": "Aya minum 0,3 l air di pagi hari dan 0,45 l di sore hari. Berapa banyak semuanya?"
+      },
+      "choices": {
+        "en": [
+          "0.75 l",
+          "0.48 l",
+          "7.5 l"
+        ],
+        "id": [
+          "0,75 l",
+          "0,48 l",
+          "7,5 l"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Line up the points: 0.30 + 0.45 = 0.75 l.",
+        "id": "Luruskan tanda desimal: 0,30 + 0,45 = 0,75 l."
+      },
+      "check": {
+        "expression": "0.3 + 0.45",
+        "result": "0.75"
+      },
+      "distractorMisconceptions": {
+        "1": "LINES_UP_RIGHT_DIGITS",
+        "2": "PLACE_SHIFT"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "What is 1 tenth more than 2.95?",
+        "id": "Berapa 1 persepuluhan lebih dari 2,95?"
+      },
+      "choices": {
+        "en": [
+          "3.05",
+          "2.96",
+          "2.105"
+        ],
+        "id": [
+          "3,05",
+          "2,96",
+          "2,105"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Add 0.1: 9 tenths + 1 tenth = 10 tenths = 1 one, so 2.95 + 0.1 = 3.05.",
+        "id": "Tambah 0,1: 9 persepuluhan + 1 persepuluhan = 10 persepuluhan = 1 satuan, jadi 2,95 + 0,1 = 3,05."
+      },
+      "check": {
+        "expression": "2.95 + 0.1",
+        "result": "3.05"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_HUNDREDTH_NOT_TENTH",
+        "2": "DECIMAL_PART_AS_WHOLE_NUMBER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "HUNDREDTHS_AS_TENTHS",
+      "description": {
+        "en": "Puts a hundredths digit in the tenths place (0.09 written as 0.9, or 2.08 read as 2.8).",
+        "id": "Menaruh angka perseratusan di tempat persepuluhan (0,09 ditulis 0,9, atau 2,08 dibaca 2,8)."
+      },
+      "remediation": {
+        "en": "Shade 9 single squares on one grid and 9 columns on another; the two pictures are very different.",
+        "id": "Arsir 9 kotak satuan pada satu petak dan 9 kolom pada petak lain; kedua gambarnya sangat berbeda."
+      }
+    },
+    {
+      "code": "WRITES_FRACTION_PARTS",
+      "description": {
+        "en": "Writes the numerator and denominator around a point (9/100 as 9.100).",
+        "id": "Menulis pembilang dan penyebut di sekitar tanda desimal (9/100 sebagai 9,100)."
+      },
+      "remediation": {
+        "en": "Write the fraction in the place-value table: the denominator 100 tells which column the last digit goes in.",
+        "id": "Tulis pecahan di tabel nilai tempat: penyebut 100 menunjukkan kolom tempat angka terakhir."
+      }
+    },
+    {
+      "code": "LONGER_IS_LARGER",
+      "description": {
+        "en": "Thinks a decimal with more digits is bigger (0.57 is more than 0.6).",
+        "id": "Mengira desimal dengan lebih banyak angka lebih besar (0,57 lebih dari 0,6)."
+      },
+      "remediation": {
+        "en": "Shade both on hundred grids; also write 0.6 as 0.60 and compare 60 hundredths with 57 hundredths.",
+        "id": "Arsir keduanya pada petak seratus; tulis juga 0,6 sebagai 0,60 dan bandingkan 60 perseratus dengan 57 perseratus."
+      }
+    },
+    {
+      "code": "BIGGEST_DIGIT_WINS",
+      "description": {
+        "en": "Chooses the decimal with the largest single digit.",
+        "id": "Memilih desimal dengan angka tunggal terbesar."
+      },
+      "remediation": {
+        "en": "Put the numbers in the place-value table and compare column by column from the left.",
+        "id": "Masukkan bilangan ke tabel nilai tempat dan bandingkan kolom demi kolom dari kiri."
+      }
+    },
+    {
+      "code": "PLACE_SHIFT",
+      "description": {
+        "en": "Puts the digits one place too far left or right.",
+        "id": "Menaruh angka satu tempat terlalu ke kiri atau ke kanan."
+      },
+      "remediation": {
+        "en": "Build the number on the metre tape: 4.3 m is longer than the whole tape, 0.43 m is less than half of it.",
+        "id": "Tunjukkan bilangan pada meteran: 4,3 m lebih panjang dari seluruh meteran, 0,43 m kurang dari setengahnya."
+      }
+    },
+    {
+      "code": "DIGIT_ORDER_SWAPPED",
+      "description": {
+        "en": "Swaps the tenths and hundredths digits.",
+        "id": "Menukar angka persepuluhan dan perseratusan."
+      },
+      "remediation": {
+        "en": "Write each part in its labelled column before reading the number.",
+        "id": "Tulis setiap bagian di kolom berlabelnya sebelum membaca bilangannya."
+      }
+    },
+    {
+      "code": "MULTIPLIES_BY_TEN",
+      "description": {
+        "en": "Multiplies by 10 instead of 100 when changing metres to centimetres.",
+        "id": "Mengalikan dengan 10, bukan 100, saat mengubah meter ke sentimeter."
+      },
+      "remediation": {
+        "en": "Count the centimetre marks in 1 m on the tape: 100, not 10.",
+        "id": "Hitung tanda sentimeter dalam 1 m pada meteran: 100, bukan 10."
+      }
+    },
+    {
+      "code": "LINES_UP_RIGHT_DIGITS",
+      "description": {
+        "en": "Lines up the last digits instead of the decimal points, so adds 3 and 45 as 48.",
+        "id": "Meluruskan angka terakhir, bukan tanda desimal, sehingga menjumlahkan 3 dan 45 menjadi 48."
+      },
+      "remediation": {
+        "en": "Write 0.3 as 0.30 in the place-value table so both numbers have hundredths, then add column by column.",
+        "id": "Tulis 0,3 sebagai 0,30 di tabel nilai tempat sehingga keduanya punya perseratusan, lalu jumlahkan per kolom."
+      }
+    },
+    {
+      "code": "ADDS_HUNDREDTH_NOT_TENTH",
+      "description": {
+        "en": "Adds 0.01 when asked for one tenth more.",
+        "id": "Menambah 0,01 ketika diminta satu persepuluhan lebih."
+      },
+      "remediation": {
+        "en": "On the hundred grid, one tenth is a whole column; shade one more column, not one square.",
+        "id": "Pada petak seratus, satu persepuluhan adalah satu kolom penuh; arsir satu kolom lagi, bukan satu kotak."
+      }
+    },
+    {
+      "code": "DECIMAL_PART_AS_WHOLE_NUMBER",
+      "description": {
+        "en": "Treats the digits after the point as a whole number (95 + 10 = 105).",
+        "id": "Menganggap angka setelah koma sebagai bilangan bulat (95 + 10 = 105)."
+      },
+      "remediation": {
+        "en": "Count up in tenths on a number line: 2.8, 2.9, 3.0, and notice what happens after 9 tenths.",
+        "id": "Hitung maju per persepuluhan pada garis bilangan: 2,8; 2,9; 3,0; dan perhatikan apa yang terjadi setelah 9 persepuluhan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Find the heights of family members in metres to two decimal places and order them; work out the difference between the tallest and the shortest.",
+      "id": "Ukur tinggi anggota keluarga dalam meter sampai dua tempat desimal dan urutkan; hitung selisih yang tertinggi dan terpendek."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A tape measure can be followed with a finger; hundred grids with thick lines help children with low vision.",
+      "id": "Meteran bisa diikuti dengan jari; petak seratus dengan garis tebal membantu anak dengan penglihatan rendah."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Retractable tape measures can snap back: let the child pull it out slowly and hold the end.",
+        "id": "Meteran gulung bisa tertarik kembali dengan cepat: biarkan anak menariknya perlahan dan memegang ujungnya."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child writes, compares and adds new decimals to hundredths correctly, explains one comparison with place value, and converts one length, on two different days.",
+      "id": "Dikuasai jika anak menulis, membandingkan, dan menjumlahkan desimal baru sampai perseratusan dengan benar, menjelaskan satu perbandingan dengan nilai tempat, dan mengubah satu panjang, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "7006c33e3ac8b346"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "id": "reading-g2-the-orangutan-builds-a-bed",
+  "version": "1.0.1",
+  "level": "g2",
+  "readingLevel": "transitional",
+  "genre": "nonfiction",
+  "mode": "independent",
+  "title": {
+    "en": "The orangutan builds a bed",
+    "id": "Orangutan membuat tempat tidur"
+  },
+  "text": {
+    "en": [
+      "Orangutans are great apes with long arms and shaggy orange-brown hair. In the wild, they live only in the rainforests of Borneo and Sumatra.",
+      "Their name comes from the Malay and Indonesian words 'orang' and 'hutan'. It means 'person of the forest'.",
+      "Orangutans spend most of their lives up in the trees. They swing from branch to branch using their strong arms.",
+      "They eat mostly fruit, such as wild figs. They also eat leaves, bark, flowers and insects.",
+      "Every evening an orangutan builds a new bed high in a tree. It bends branches into a nest and lines it with leaves. On rainy nights, it may hold a big leaf over its head like an umbrella.",
+      "A baby orangutan stays close to its mother for many years. She teaches it which foods to eat and how to build a nest.",
+      "Orangutans are in danger because many forests have been cut down. Protecting forests protects their homes."
+    ],
+    "id": [
+      "Orangutan adalah kera besar berlengan panjang dengan rambut lebat berwarna cokelat kemerahan. Di alam liar, mereka hanya hidup di hutan hujan Kalimantan dan Sumatra.",
+      "Namanya berasal dari kata 'orang' dan 'hutan'. Artinya 'orang yang tinggal di hutan'.",
+      "Orangutan menghabiskan sebagian besar hidupnya di atas pohon. Mereka berayun dari dahan ke dahan dengan lengan yang kuat.",
+      "Makanan utamanya buah, misalnya buah ara hutan. Mereka juga makan daun, kulit kayu, bunga, dan serangga.",
+      "Setiap sore, orangutan membuat tempat tidur baru tinggi di pohon. Ia menekuk dahan menjadi sarang dan melapisinya dengan daun. Saat malam hujan, ia kadang memegang daun besar di atas kepala seperti payung.",
+      "Bayi orangutan tinggal dekat induknya selama bertahun-tahun. Induknya mengajarinya makanan apa yang boleh dimakan dan cara membuat sarang.",
+      "Orangutan terancam punah karena banyak hutan sudah ditebang. Menjaga hutan berarti melindungi rumah mereka."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads an information text and finds key facts about an Indonesian animal.",
+      "id": "Membaca teks informasi dan menemukan fakta penting tentang hewan Indonesia."
+    },
+    {
+      "en": "Identifies the main idea and explains why forests matter.",
+      "id": "Menemukan gagasan utama dan menjelaskan mengapa hutan penting."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "rainforest",
+        "id": "hutan hujan"
+      },
+      "meaning": {
+        "en": "a thick, warm forest where it rains a lot",
+        "id": "hutan lebat dan hangat yang sering hujan"
+      }
+    },
+    {
+      "word": {
+        "en": "nest",
+        "id": "sarang"
+      },
+      "meaning": {
+        "en": "a bed or home made by an animal",
+        "id": "tempat tidur atau rumah yang dibuat hewan"
+      }
+    },
+    {
+      "word": {
+        "en": "in danger",
+        "id": "terancam punah"
+      },
+      "meaning": {
+        "en": "at risk of disappearing",
+        "id": "berisiko hilang"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where do wild orangutans live?",
+        "id": "Di mana orangutan liar hidup?"
+      },
+      "choices": {
+        "en": [
+          "in the rainforests of Borneo and Sumatra",
+          "in deserts in Africa",
+          "in the snow of the mountains"
+        ],
+        "id": [
+          "di hutan hujan Kalimantan dan Sumatra",
+          "di gurun Afrika",
+          "di salju pegunungan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What does the name 'orangutan' mean?",
+        "id": "Apa arti nama 'orangutan'?"
+      },
+      "choices": {
+        "en": [
+          "person of the forest",
+          "orange monkey",
+          "tree swinger"
+        ],
+        "id": [
+          "orang yang tinggal di hutan",
+          "monyet oranye",
+          "pengayun pohon"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "literal",
+      "prompt": {
+        "en": "How often does an orangutan build a new bed?",
+        "id": "Seberapa sering orangutan membuat tempat tidur baru?"
+      },
+      "choices": {
+        "en": [
+          "every evening",
+          "once a year",
+          "only when it rains"
+        ],
+        "id": [
+          "setiap sore",
+          "setahun sekali",
+          "hanya saat hujan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main idea of the last paragraph?",
+        "id": "Apa gagasan utama paragraf terakhir?"
+      },
+      "choices": {
+        "en": [
+          "orangutans need forests to be protected",
+          "orangutans like to swing",
+          "babies stay with their mothers"
+        ],
+        "id": [
+          "orangutan butuh hutan yang dilindungi",
+          "orangutan suka berayun",
+          "bayi tinggal bersama induknya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why does a young orangutan need to stay with its mother for so long?",
+        "id": "Mengapa orangutan muda perlu lama tinggal bersama induknya?"
+      },
+      "choices": {
+        "en": [
+          "it must learn many skills, like finding food and building nests",
+          "it cannot grow hair by itself",
+          "the mother needs help carrying fruit"
+        ],
+        "id": [
+          "ia harus belajar banyak keterampilan, seperti mencari makan dan membuat sarang",
+          "ia tidak bisa menumbuhkan rambut sendiri",
+          "induknya butuh bantuan membawa buah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Orangutans live wild only on Sumatra and Borneo (Kalimantan, Sabah and Sarawak).",
+        "id": "Orangutan liar hanya hidup di pulau Kalimantan dan Sumatra."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Cutting down rainforests destroys orangutan homes.",
+        "id": "Penebangan hutan hujan menghancurkan rumah orangutan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "How is an orangutan's bed like your bed? How is it different?",
+      "id": "Apa persamaan dan perbedaan tempat tidur orangutan dengan tempat tidurmu?"
+    },
+    {
+      "en": "What could people do to help orangutans?",
+      "id": "Apa yang bisa dilakukan orang untuk membantu orangutan?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Find Borneo (Kalimantan) and Sumatra on a map of Indonesia and colour them green. Then make a 'nest' from cushions and a blanket and write three facts about orangutans to keep in it.",
+    "id": "Cari pulau Kalimantan dan Sumatra di peta Indonesia lalu warnai hijau. Kemudian buat 'sarang' dari bantal dan selimut, dan tulis tiga fakta tentang orangutan untuk disimpan di dalamnya."
+  },
+  "factChecks": [
+    {
+      "claim": "Wild orangutans live only on Borneo and Sumatra.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The name orangutan comes from Malay/Indonesian words meaning 'person of the forest'.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Orangutans eat mostly fruit and build a new sleeping nest in the trees each night.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Young orangutans stay with their mothers for many years.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Orangutans are endangered mainly because of forest loss.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "81c661e879fc4591"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

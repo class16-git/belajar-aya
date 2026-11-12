@@ -1,0 +1,478 @@
+{
+  "id": "unit-g4-stem-water-filter-design",
+  "version": "1.0.1",
+  "level": "g4",
+  "framework": "stem",
+  "strand": "engineering_design",
+  "title": {
+    "en": "Design a water filter (not for drinking)",
+    "id": "Merancang penyaring air (bukan untuk diminum)"
+  },
+  "prerequisites": [
+    "unit-g2-stem-paper-spinner-fair-test",
+    "unit-g3-stem-paper-bridge-design"
+  ],
+  "objective": {
+    "en": "Design, build and improve a layered filter from a plastic bottle, measure how clear the filtered water is and how much comes through, and explain why clear water is still not safe to drink.",
+    "id": "Merancang, membuat, dan memperbaiki penyaring berlapis dari botol plastik, mengukur seberapa jernih air hasil saringan dan berapa banyak yang keluar, serta menjelaskan mengapa air yang jernih tetap tidak aman diminum."
+  },
+  "rationale": {
+    "en": "Clean water is a real engineering problem in many communities. A home filter shows how layers of gravel, sand and cloth trap bits of mud, and a simple clarity scale turns 'looks cleaner' into a number. Just as important, children learn the limits of their design: a filter cannot remove germs or things dissolved in the water.",
+    "id": "Air bersih adalah masalah rekayasa yang nyata di banyak tempat. Penyaring buatan rumah menunjukkan bagaimana lapisan kerikil, pasir, dan kain menangkap butiran lumpur, dan skala kejernihan sederhana mengubah 'kelihatan lebih bersih' menjadi angka. Sama pentingnya, anak belajar batas rancangannya: penyaring tidak bisa menghilangkan kuman atau zat yang larut di dalam air."
+  },
+  "outcomes": [
+    {
+      "en": "Builds a layered filter, tests it with muddy water, and improves it using clarity and volume results.",
+      "id": "Membuat penyaring berlapis, mengujinya dengan air berlumpur, dan memperbaikinya memakai hasil kejernihan dan volume."
+    },
+    {
+      "en": "Explains that a filter removes particles but not germs or dissolved substances, so filtered water is never drunk.",
+      "id": "Menjelaskan bahwa penyaring menghilangkan butiran tetapi tidak menghilangkan kuman atau zat terlarut, sehingga air hasil saringan tidak pernah diminum."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can measure how clear my water is with the line card.",
+      "id": "Aku bisa mengukur kejernihan airku dengan kartu garis."
+    },
+    {
+      "en": "I know clear does not mean safe to drink.",
+      "id": "Aku tahu jernih tidak berarti aman diminum."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "State the rule at the start and repeat it at the end: 'We never drink, taste or cook with our filtered water. It goes on the garden or down the drain.'",
+      "id": "Sampaikan aturannya di awal dan ulangi di akhir: 'Kita tidak pernah meminum, mencicipi, atau memasak dengan air hasil saringan kita. Airnya untuk menyiram kebun atau dibuang ke saluran.'"
+    },
+    {
+      "en": "The adult cuts the bottle. Your child plans the layers, draws the design and predicts the clarity score before each test.",
+      "id": "Orang dewasa yang memotong botol. Anak merencanakan lapisannya, menggambar rancangan, dan menebak skor kejernihan sebelum setiap uji."
+    },
+    {
+      "en": "Make every test fair: the same muddy water (stir it the same way), the same amount poured (200 millilitres), and the same line card held behind the same clear cup.",
+      "id": "Buat setiap uji adil: air berlumpur yang sama (diaduk dengan cara yang sama), jumlah yang dituang sama (200 mililiter), dan kartu garis yang sama dipegang di belakang gelas bening yang sama."
+    },
+    {
+      "en": "Pour away all water the same day and wash hands afterwards.",
+      "id": "Buang semua air pada hari yang sama dan cuci tangan setelahnya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Draw your design and predict its clarity score.",
+      "id": "Gambar rancanganmu dan tebak skor kejernihannya."
+    },
+    {
+      "en": "Pour 200 millilitres of muddy water through. Measure how much comes out and how many lines you can read through it.",
+      "id": "Tuang 200 mililiter air berlumpur. Ukur berapa banyak yang keluar dan berapa garis yang bisa kamu baca menembusnya."
+    },
+    {
+      "en": "Change one layer, test again, and write what changed. Never drink the water.",
+      "id": "Ubah satu lapisan, uji lagi, dan tulis apa yang berubah. Jangan pernah meminum airnya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build the bottle filter and test it with muddy water.",
+        "id": "Buat penyaring botol dan uji dengan air berlumpur."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a cross-section of each design with the layers labelled and coloured.",
+        "id": "Gambar penampang setiap rancangan dengan lapisan yang diberi label dan diwarnai."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Record clarity scores (0 to 5) and volumes in a table and calculate how much water stayed in the filter.",
+        "id": "Catat skor kejernihan (0 sampai 5) dan volume di tabel lalu hitung berapa banyak air yang tertinggal di penyaring."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A clean 1.5 litre plastic bottle, cut in half by the adult",
+      "id": "Botol plastik bersih 1,5 liter, dipotong dua oleh orang dewasa"
+    },
+    {
+      "en": "Layer materials: a clean cotton cloth or cotton wool, washed sand, small gravel, and larger gravel",
+      "id": "Bahan lapisan: kain katun bersih atau kapas, pasir yang sudah dicuci, kerikil kecil, dan kerikil yang lebih besar"
+    },
+    {
+      "en": "Muddy water: 2 spoons of garden soil stirred into 1 litre of water in a jug",
+      "id": "Air berlumpur: 2 sendok tanah kebun diaduk dalam 1 liter air di teko"
+    },
+    {
+      "en": "A measuring jug marked in millilitres, and a clear plastic cup",
+      "id": "Gelas ukur bertanda mililiter, dan gelas plastik bening"
+    },
+    {
+      "en": "A line card: five lines of writing, each smaller than the one above, written with a black marker",
+      "id": "Kartu garis: lima baris tulisan, setiap baris lebih kecil dari baris di atasnya, ditulis dengan spidol hitam"
+    },
+    {
+      "en": "A tray or a spot outside for spills",
+      "id": "Nampan atau tempat di luar untuk tumpahan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult cuts the bottle about a third of the way down with a craft knife or scissors, then covers the cut edges with tape. Turn the top part upside down into the bottom part like a funnel, cap removed.",
+      "id": "Orang dewasa memotong botol kira-kira sepertiga dari atas dengan pisau cutter atau gunting, lalu menutup tepi potongan dengan selotip. Balik bagian atas ke dalam bagian bawah seperti corong, tanpa tutup botol."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Test 0, no filter: pour the muddy water into the clear cup and hold the line card behind it. Dewi can read 0 lines. This is the starting score to beat.",
+      "id": "Uji 0, tanpa penyaring: tuang air berlumpur ke gelas bening dan pegang kartu garis di belakangnya. Dewi bisa membaca 0 baris. Inilah skor awal yang harus dikalahkan."
+    },
+    {
+      "en": "Design 1: cloth in the neck, then sand, then small gravel on top. She pours 200 millilitres. Out come 120 millilitres, and she can read 3 lines. 'The gravel on top catches big bits first and the sand catches smaller ones. 80 millilitres stayed soaked in the layers.'",
+      "id": "Rancangan 1: kain di leher botol, lalu pasir, lalu kerikil kecil di atas. Ia menuang 200 mililiter. Yang keluar 120 mililiter, dan ia bisa membaca 3 baris. 'Kerikil di atas menangkap butiran besar lebih dulu dan pasir menangkap yang lebih kecil. 80 mililiter tertinggal meresap di lapisan.'"
+    },
+    {
+      "en": "Design 2, one change: a thicker sand layer (twice as deep). Example results: 100 millilitres out, 4 lines readable. 'Clearer, but slower and less water came out: a trade-off.' Then a test of the limit: a few drops of food colouring in water go through and the colour usually stays. 'The filter catches bits, not things dissolved in the water, and germs are far too small to see.'",
+      "id": "Rancangan 2, satu perubahan: lapisan pasir lebih tebal (dua kali lebih dalam). Contoh hasil: 100 mililiter keluar, 4 baris terbaca. 'Lebih jernih, tetapi lebih lambat dan air yang keluar lebih sedikit: ada untung-ruginya.' Lalu uji batasnya: beberapa tetes pewarna makanan di air melewati penyaring dan warnanya biasanya tetap. 'Penyaring menangkap butiran, bukan zat yang larut di air, dan kuman terlalu kecil untuk dilihat.'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Design 3: change the order, putting sand on top and gravel at the bottom. Predict first. Test, record, and explain what happened.",
+      "id": "Rancangan 3: ubah urutannya, pasir di atas dan kerikil di bawah. Tebak dulu. Uji, catat, dan jelaskan apa yang terjadi."
+    },
+    {
+      "en": "Pour the filtered water back through the same filter a second time. Does the clarity score go up? Record both numbers.",
+      "id": "Tuang air hasil saringan melewati penyaring yang sama untuk kedua kalinya. Apakah skor kejernihannya naik? Catat kedua angkanya."
+    },
+    {
+      "en": "Write a short 'warning label' for your filter that explains to a younger child why the water must not be drunk.",
+      "id": "Tulis 'label peringatan' singkat untuk penyaringmu yang menjelaskan kepada anak yang lebih kecil mengapa airnya tidak boleh diminum."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Rudi poured 400 millilitres of muddy water into his filter and collected 250 millilitres. How much water stayed in the filter?",
+        "id": "Rudi menuang 400 mililiter air berlumpur ke penyaringnya dan menampung 250 mililiter. Berapa banyak air yang tertinggal di penyaring?"
+      },
+      "choices": {
+        "en": [
+          "150 millilitres",
+          "650 millilitres",
+          "250 millilitres"
+        ],
+        "id": [
+          "150 mililiter",
+          "650 mililiter",
+          "250 mililiter"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Water in minus water out: 400 - 250 = 150 millilitres.",
+        "id": "Air masuk dikurangi air keluar: 400 - 250 = 150 mililiter."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "REPORTS_ONE_RESULT"
+      },
+      "check": {
+        "expression": "400 - 250",
+        "result": "150"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Filtered water looks completely clear. Is it safe to drink?",
+        "id": "Air hasil saringan terlihat sangat jernih. Apakah aman diminum?"
+      },
+      "choices": {
+        "en": [
+          "No; germs and dissolved substances can still be in it",
+          "Yes, clear water is always clean",
+          "Yes, if it went through the filter twice"
+        ],
+        "id": [
+          "Tidak; kuman dan zat terlarut masih bisa ada di dalamnya",
+          "Ya, air yang jernih selalu bersih",
+          "Ya, jika sudah melewati penyaring dua kali"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A home filter traps bits you can see; it does not remove germs or dissolved substances.",
+        "id": "Penyaring rumah menangkap butiran yang terlihat; tidak menghilangkan kuman atau zat terlarut."
+      },
+      "distractorMisconceptions": {
+        "1": "CLEAR_MEANS_SAFE",
+        "2": "MORE_FILTERING_MAKES_SAFE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Filter A scored 1 line on the line card. Filter B scored 4 lines. How many more lines could be read through filter B's water?",
+        "id": "Penyaring A mendapat skor 1 baris pada kartu garis. Penyaring B mendapat 4 baris. Berapa baris lebih banyak yang bisa dibaca menembus air penyaring B?"
+      },
+      "choices": {
+        "en": [
+          "3 more lines",
+          "5 more lines",
+          "4 more lines"
+        ],
+        "id": [
+          "3 baris lebih banyak",
+          "5 baris lebih banyak",
+          "4 baris lebih banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Compare by subtracting: 4 - 1 = 3.",
+        "id": "Bandingkan dengan mengurangkan: 4 - 1 = 3."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "REPORTS_ONE_RESULT"
+      },
+      "check": {
+        "expression": "4 - 1",
+        "result": "3"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Why do we usually put the larger gravel on top and fine sand lower down?",
+        "id": "Mengapa kita biasanya menaruh kerikil yang lebih besar di atas dan pasir halus di bawahnya?"
+      },
+      "choices": {
+        "en": [
+          "Big bits are caught first, so the fine sand does not clog as quickly",
+          "Gravel is heavier, so it must be on top",
+          "The order makes no difference"
+        ],
+        "id": [
+          "Butiran besar tertangkap lebih dulu, sehingga pasir halus tidak cepat tersumbat",
+          "Kerikil lebih berat, jadi harus di atas",
+          "Urutannya tidak berpengaruh"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Coarse layers stop big pieces, leaving the fine layer to catch small ones.",
+        "id": "Lapisan kasar menahan potongan besar, sehingga lapisan halus menangkap yang kecil."
+      },
+      "distractorMisconceptions": {
+        "1": "WRONG_CAUSE",
+        "2": "ORDER_DOES_NOT_MATTER"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Food colouring passed through the filter and the water stayed coloured. What does this show?",
+        "id": "Pewarna makanan melewati penyaring dan airnya tetap berwarna. Apa yang ditunjukkan hal ini?"
+      },
+      "choices": {
+        "en": [
+          "The filter cannot remove things that are dissolved in the water",
+          "The filter is broken",
+          "Colouring is a kind of mud"
+        ],
+        "id": [
+          "Penyaring tidak bisa menghilangkan zat yang larut di dalam air",
+          "Penyaringnya rusak",
+          "Pewarna adalah sejenis lumpur"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Dissolved substances are spread through the water and pass between the grains.",
+        "id": "Zat terlarut tersebar di dalam air dan lewat di antara butiran."
+      },
+      "distractorMisconceptions": {
+        "1": "BLAMES_EQUIPMENT",
+        "2": "DISSOLVED_IS_PARTICLES"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds two amounts when asked for a difference.",
+        "id": "Menjumlahkan dua jumlah saat ditanya selisihnya."
+      },
+      "remediation": {
+        "en": "Pour 400 millilitres into the jug, pour 250 into a cup, and read what is left in the jug.",
+        "id": "Tuang 400 mililiter ke gelas ukur, tuang 250 ke gelas lain, lalu baca sisanya di gelas ukur."
+      }
+    },
+    {
+      "code": "REPORTS_ONE_RESULT",
+      "description": {
+        "en": "Gives one of the amounts instead of the difference.",
+        "id": "Menyebut salah satu jumlah, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Draw two bars for the amounts and shade only the gap between them.",
+        "id": "Gambar dua batang untuk kedua jumlah dan arsir hanya celah di antaranya."
+      }
+    },
+    {
+      "code": "CLEAR_MEANS_SAFE",
+      "description": {
+        "en": "Thinks clear water is always safe to drink.",
+        "id": "Mengira air yang jernih selalu aman diminum."
+      },
+      "remediation": {
+        "en": "Stir a spoon of salt into a glass of tap water: it looks clear, but it is not the same as before. Germs are even harder to see.",
+        "id": "Aduk sesendok garam ke segelas air keran: terlihat jernih, tetapi tidak sama seperti sebelumnya. Kuman bahkan lebih sulit dilihat."
+      }
+    },
+    {
+      "code": "MORE_FILTERING_MAKES_SAFE",
+      "description": {
+        "en": "Thinks filtering again makes water safe to drink.",
+        "id": "Mengira menyaring lagi membuat air aman diminum."
+      },
+      "remediation": {
+        "en": "Compare the size of a sand grain with a germ: a germ is far too small for any gap between sand grains to catch reliably.",
+        "id": "Bandingkan ukuran butiran pasir dengan kuman: kuman terlalu kecil untuk bisa ditangkap dengan pasti oleh celah di antara butiran pasir."
+      }
+    },
+    {
+      "code": "WRONG_CAUSE",
+      "description": {
+        "en": "Gives a reason that does not explain how the layers work.",
+        "id": "Memberi alasan yang tidak menjelaskan cara kerja lapisan."
+      },
+      "remediation": {
+        "en": "Pour muddy water through fine sand alone and watch the top clog with mud, then try again with gravel on top.",
+        "id": "Tuang air berlumpur melewati pasir halus saja dan lihat bagian atasnya tersumbat lumpur, lalu coba lagi dengan kerikil di atasnya."
+      }
+    },
+    {
+      "code": "ORDER_DOES_NOT_MATTER",
+      "description": {
+        "en": "Thinks the order of the layers makes no difference.",
+        "id": "Mengira urutan lapisan tidak berpengaruh."
+      },
+      "remediation": {
+        "en": "Run design 3 with the order reversed and compare the volume that comes out with design 1.",
+        "id": "Jalankan rancangan 3 dengan urutan terbalik dan bandingkan volume yang keluar dengan rancangan 1."
+      }
+    },
+    {
+      "code": "BLAMES_EQUIPMENT",
+      "description": {
+        "en": "Blames the equipment when the result shows a real limit.",
+        "id": "Menyalahkan alat padahal hasilnya menunjukkan batas yang nyata."
+      },
+      "remediation": {
+        "en": "Test the same filter with muddy water again: it still works for mud, so the filter is not broken.",
+        "id": "Uji penyaring yang sama lagi dengan air berlumpur: masih bekerja untuk lumpur, jadi penyaringnya tidak rusak."
+      }
+    },
+    {
+      "code": "DISSOLVED_IS_PARTICLES",
+      "description": {
+        "en": "Thinks dissolved substances are tiny bits of mud.",
+        "id": "Mengira zat terlarut adalah butiran kecil lumpur."
+      },
+      "remediation": {
+        "en": "Leave a cup of muddy water and a cup of coloured water to stand for an hour: most of the mud settles and the water above gets clearer; the colour stays the same all the way down.",
+        "id": "Diamkan segelas air berlumpur dan segelas air berwarna selama satu jam: sebagian besar lumpur mengendap dan air di atasnya lebih jernih; warnanya tetap sama dari atas sampai bawah."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Research and draw how a real water treatment step that adults use, such as boiling, makes water safer, and explain why your filter is only the first step.",
+      "id": "Cari tahu dan gambar bagaimana satu langkah pengolahan air yang dipakai orang dewasa, seperti merebus, membuat air lebih aman, dan jelaskan mengapa penyaringmu hanya langkah pertama."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child with low vision can judge clarity by shining daylight through the cup onto white paper; a partner can read the jug's markings aloud.",
+      "id": "Anak dengan penglihatan terbatas bisa menilai kejernihan dengan menyinari gelas dengan cahaya siang ke kertas putih; teman bisa membacakan tanda di gelas ukur."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": true,
+      "water": true,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Never drink, taste or cook with filtered water from this activity. Wash hands after handling soil and muddy water.",
+        "id": "Jangan pernah meminum, mencicipi, atau memasak dengan air hasil saringan dari kegiatan ini. Cuci tangan setelah memegang tanah dan air berlumpur."
+      },
+      {
+        "en": "Only the adult cuts the bottle with a knife or scissors, and tapes the cut edges.",
+        "id": "Hanya orang dewasa yang memotong botol dengan pisau atau gunting, dan menempelkan selotip di tepi potongan."
+      },
+      {
+        "en": "Pour all water away on the garden the same day and empty the bottle, so no standing water is left for mosquitoes. Gravel is a choking hazard for children under 4.",
+        "id": "Buang semua air ke kebun pada hari yang sama dan kosongkan botolnya, agar tidak ada air tergenang untuk nyamuk. Kerikil berbahaya tersedak bagi anak di bawah 4 tahun."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 50
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child builds and improves a filter using clarity and volume results, calculates the water kept in the filter, and explains clearly why the water is not safe to drink.",
+      "id": "Dikuasai jika anak membuat dan memperbaiki penyaring memakai hasil kejernihan dan volume, menghitung air yang tertinggal di penyaring, dan menjelaskan dengan jelas mengapa airnya tidak aman diminum."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "fbd4f8b43f53b57d"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

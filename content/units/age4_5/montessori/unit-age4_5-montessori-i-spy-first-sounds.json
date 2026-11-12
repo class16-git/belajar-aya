@@ -1,0 +1,365 @@
+{
+  "id": "unit-age4_5-montessori-i-spy-first-sounds",
+  "version": "1.0.1",
+  "level": "age4_5",
+  "framework": "montessori",
+  "strand": "language",
+  "title": {
+    "en": "I spy: hearing the first sound",
+    "id": "Aku melihat: mendengar bunyi awal"
+  },
+  "prerequisites": [
+    "unit-age4_5-montessori-textured-letters-sounds"
+  ],
+  "objective": {
+    "en": "Hear and say the first sound of familiar spoken words, find the objects in a basket that begin with a given sound, and offer a new word that begins with the same sound.",
+    "id": "Mendengar dan mengucapkan bunyi awal kata lisan yang dikenal, menemukan benda di keranjang yang diawali bunyi tertentu, dan menyebut kata baru yang diawali bunyi yang sama."
+  },
+  "rationale": {
+    "en": "Before a child can link letters to sounds, she has to hear that spoken words are made of separate sounds. The I spy game trains this ear for the first sound using real objects and no letters at all, so the only thing to attend to is sound. It pairs naturally with the textured letters.",
+    "id": "Sebelum anak bisa menghubungkan huruf dengan bunyi, ia harus mendengar bahwa kata lisan tersusun dari bunyi-bunyi terpisah. Permainan \"Aku melihat\" melatih telinga untuk bunyi awal dengan benda nyata tanpa huruf sama sekali, sehingga satu-satunya yang diperhatikan adalah bunyi. Permainan ini cocok dipadukan dengan huruf bertekstur."
+  },
+  "outcomes": [
+    {
+      "en": "Says the first sound of a word as a sound (/m/), not as a letter name (\"em\").",
+      "id": "Mengucapkan bunyi awal kata sebagai bunyi (/m/), bukan nama huruf (\"em\")."
+    },
+    {
+      "en": "Picks out objects beginning with a given sound from a basket of four or five.",
+      "id": "Memilih benda yang diawali bunyi tertentu dari keranjang berisi empat atau lima benda."
+    },
+    {
+      "en": "Thinks of a new word with the same first sound.",
+      "id": "Memikirkan kata baru dengan bunyi awal yang sama."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "Your child finds the right object in three different rounds of I spy.",
+      "id": "Anak menemukan benda yang tepat dalam tiga putaran permainan yang berbeda."
+    },
+    {
+      "en": "Your child says the first sound of two words she has not played with before.",
+      "id": "Anak mengucapkan bunyi awal dua kata yang belum pernah dimainkan sebelumnya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Play in the language your child will read first, and keep each round in one language. Indonesian and English words for the same object usually start with different sounds (mug, mangkuk; ball, bola).",
+      "id": "Mainkan dalam bahasa yang akan dibaca anak lebih dulu, dan pakai satu bahasa dalam setiap putaran. Kata bahasa Indonesia dan Inggris untuk benda yang sama biasanya berbunyi awal berbeda (mangkuk, mug; bola, ball)."
+    },
+    {
+      "en": "Say sounds short and clean: /m/ is \"mmm\", not \"muh\"; /s/ is \"sss\". Stretchy sounds such as /m/, /s/ and /l/ are easiest to start with.",
+      "id": "Ucapkan bunyi dengan pendek dan jelas: /m/ adalah \"mmm\", bukan \"meh\"; /s/ adalah \"sss\". Bunyi yang bisa dipanjangkan seperti /m/, /s/, dan /l/ paling mudah untuk memulai."
+    },
+    {
+      "en": "Start with objects whose first sounds are very different, then make it harder, for example by adding an object that ends with the target sound.",
+      "id": "Mulailah dengan benda yang bunyi awalnya sangat berbeda, lalu tingkatkan kesulitannya, misalnya dengan menambahkan benda yang berakhir dengan bunyi sasaran."
+    },
+    {
+      "en": "This is a game, not a test: if your child chooses another object, say its first sound together and carry on.",
+      "id": "Ini permainan, bukan ujian: jika anak memilih benda lain, ucapkan bunyi awal benda itu bersama dan lanjutkan."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "A basket with four or five everyday objects, each bigger than a child's fist (for English rounds, for example: mug, map, pan, lid; for Indonesian rounds: mangkuk, mobil mainan, piring, gelas)",
+      "id": "Keranjang berisi empat atau lima benda sehari-hari, masing-masing lebih besar dari kepalan tangan anak (untuk putaran bahasa Indonesia, misalnya: mangkuk, mobil mainan, piring, gelas; untuk putaran bahasa Inggris: mug, map, pan, lid)"
+    },
+    {
+      "en": "A small mat to lay the objects on",
+      "id": "Alas kecil untuk meletakkan benda"
+    },
+    {
+      "en": "The textured letters from the earlier unit, for the extension only",
+      "id": "Huruf bertekstur dari unit sebelumnya, khusus untuk perluasan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Lay the objects on the mat in a row and name each one together once, so your child knows the words you will use.",
+      "id": "Letakkan benda berjajar di alas dan sebut nama masing-masing bersama sekali, agar anak tahu kata yang akan dipakai."
+    },
+    {
+      "en": "Choose the target sound before you begin and check that only one or two objects start with it.",
+      "id": "Pilih bunyi sasaran sebelum mulai dan pastikan hanya satu atau dua benda yang diawali bunyi itu."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Hold up the mug and say slowly, \"mmm-ug. Mug starts with mmm.\" Hold up the pan: \"ppp-an. Pan starts with ppp.\" Put them back on the mat.",
+      "id": "Angkat mangkuk dan ucapkan pelan, \"mmm-angkuk. Mangkuk diawali mmm.\" Angkat piring: \"ppp-iring. Piring diawali ppp.\" Kembalikan ke alas."
+    },
+    {
+      "en": "Play: \"I spy with my little eye something that begins with mmm.\" Wait. If your child picks the mug, say \"Mmm-ug, yes, mug starts with mmm.\" If she picks the lid, say \"Lll-id. Lid starts with lll\" and look again together.",
+      "id": "Main: \"Aku melihat sesuatu yang bunyinya diawali mmm.\" Tunggu. Jika anak memilih mangkuk, katakan \"Mmm-angkuk, ya, mangkuk diawali mmm.\" Jika ia memilih gelas, katakan \"Ggg-elas. Gelas diawali ggg\" lalu cari lagi bersama."
+    },
+    {
+      "en": "Make two objects share the sound (mug and map; or mangkuk and mobil mainan) and ask your child to find both.",
+      "id": "Buat dua benda berbunyi awal sama (mangkuk dan mobil mainan; atau mug dan map) dan minta anak menemukan keduanya."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Swap roles: your child says \"I spy something that begins with ...\" and you find it. Let her choose the sound.",
+      "id": "Bertukar peran: anak berkata \"Aku melihat sesuatu yang diawali ...\" dan Anda mencarinya. Biarkan ia memilih bunyinya."
+    },
+    {
+      "en": "Play I spy around the room or at the market without a basket, choosing things you can both see.",
+      "id": "Main \"Aku melihat\" di ruangan atau di pasar tanpa keranjang, memilih benda yang bisa dilihat berdua."
+    },
+    {
+      "en": "Name game at mealtime: say a family member's name and your child says its first sound, then finds a food that starts the same way.",
+      "id": "Permainan nama saat makan: sebut nama anggota keluarga dan anak mengucapkan bunyi awalnya, lalu mencari makanan yang diawali bunyi yang sama."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Ask: put a sock, a toy bus and a cup on the mat. \"I spy something that begins with sss.\" Which shows she hears the first sound?",
+        "id": "Tanyakan: taruh sapu kecil, tas, dan bola di alas. \"Aku melihat sesuatu yang diawali sss.\" Mana yang menunjukkan anak mendengar bunyi awal?"
+      },
+      "choices": {
+        "en": [
+          "Sock",
+          "Bus",
+          "Cup"
+        ],
+        "id": [
+          "Sapu",
+          "Tas",
+          "Bola"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Sock begins with /s/; bus only ends with it.",
+        "id": "Sapu diawali /s/; tas hanya berakhir dengan bunyi itu."
+      },
+      "distractorMisconceptions": {
+        "1": "LISTENS_TO_END_SOUND",
+        "2": "GUESSES_ANY_OBJECT"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Ask: \"Which word starts with the same sound as fish?\" (In Indonesian: \"...sama dengan nasi?\")",
+        "id": "Tanyakan: \"Kata mana yang bunyi awalnya sama dengan nasi?\" (Dalam bahasa Inggris: \"...sama dengan fish?\")"
+      },
+      "choices": {
+        "en": [
+          "Fan",
+          "Leaf",
+          "Dish"
+        ],
+        "id": [
+          "Nenek",
+          "Ikan",
+          "Basi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Fan starts with /f/ like fish. Leaf has the sound at the end, and dish only rhymes.",
+        "id": "Nenek diawali /n/ seperti nasi. Ikan punya bunyi itu di akhir, dan basi hanya berima."
+      },
+      "distractorMisconceptions": {
+        "1": "LISTENS_TO_END_SOUND",
+        "2": "RHYME_NOT_FIRST_SOUND"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Ask: \"What is the first sound in top?\" (In Indonesian: \"topi\".) Which answer shows the skill?",
+        "id": "Tanyakan: \"Apa bunyi pertama dalam topi?\" (Dalam bahasa Inggris: \"top\".) Jawaban mana yang menunjukkan keterampilan ini?"
+      },
+      "choices": {
+        "en": [
+          "/t/ (a short sound)",
+          "\"tee\" (the letter name)",
+          "/p/"
+        ],
+        "id": [
+          "/t/ (bunyi pendek)",
+          "\"te\" (nama hurufnya)",
+          "/i/"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The first sound is the short /t/. The letter name is a different thing, and the other choice is the last sound.",
+        "id": "Bunyi pertamanya adalah /t/ yang pendek. Nama huruf adalah hal yang berbeda, dan pilihan lainnya adalah bunyi terakhir."
+      },
+      "distractorMisconceptions": {
+        "1": "SAYS_LETTER_NAME",
+        "2": "LISTENS_TO_END_SOUND"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Ask: \"Tell me a word that starts like lamp.\" (In Indonesian: \"...seperti lari.\") Which answer shows the skill?",
+        "id": "Tanyakan: \"Sebutkan kata yang diawali seperti lari.\" (Dalam bahasa Inggris: \"...like lamp.\") Jawaban mana yang menunjukkan keterampilan ini?"
+      },
+      "choices": {
+        "en": [
+          "Lemon",
+          "Camp",
+          "Ball"
+        ],
+        "id": [
+          "Lele",
+          "Pari",
+          "Kapal"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Lemon starts with /l/. Camp rhymes with lamp, and ball ends with /l/.",
+        "id": "Lele diawali /l/. Pari berima dengan lari, dan kapal berakhir dengan /l/."
+      },
+      "distractorMisconceptions": {
+        "1": "RHYME_NOT_FIRST_SOUND",
+        "2": "LISTENS_TO_END_SOUND"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "LISTENS_TO_END_SOUND",
+      "description": {
+        "en": "Notices the sound but at the end of the word, not the start.",
+        "id": "Memperhatikan bunyinya tetapi di akhir kata, bukan di awal."
+      },
+      "remediation": {
+        "en": "Make the start physical: say the word while stepping forward on the first sound only (\"sss\" step, \"ock\"). Or hold up one finger for the first sound and keep the rest of the word in a closed fist.",
+        "id": "Buat awal kata terasa secara fisik: ucapkan kata sambil melangkah maju hanya pada bunyi pertama (\"sss\" melangkah, \"apu\"). Atau angkat satu jari untuk bunyi pertama dan simpan sisa kata dalam kepalan."
+      }
+    },
+    {
+      "code": "GUESSES_ANY_OBJECT",
+      "description": {
+        "en": "Chooses without comparing sounds.",
+        "id": "Memilih tanpa membandingkan bunyi."
+      },
+      "remediation": {
+        "en": "Reduce to two objects with very different sounds and say each word slowly while touching it before she chooses.",
+        "id": "Kurangi menjadi dua benda dengan bunyi yang sangat berbeda dan ucapkan setiap kata pelan sambil menyentuhnya sebelum anak memilih."
+      }
+    },
+    {
+      "code": "RHYME_NOT_FIRST_SOUND",
+      "description": {
+        "en": "Hears words that sound alike overall (rhymes) rather than the same first sound.",
+        "id": "Mendengar kata yang mirip secara keseluruhan (berima) alih-alih bunyi awal yang sama."
+      },
+      "remediation": {
+        "en": "Play a separate rhyme game so rhyme has its own name, then sort pictures into two piles: \"starts the same\" and \"ends the same\".",
+        "id": "Mainkan permainan rima tersendiri agar rima punya namanya sendiri, lalu pilah gambar ke dua tumpukan: \"awalnya sama\" dan \"akhirnya sama\"."
+      }
+    },
+    {
+      "code": "SAYS_LETTER_NAME",
+      "description": {
+        "en": "Gives the letter's name instead of its sound.",
+        "id": "Menyebut nama huruf alih-alih bunyinya."
+      },
+      "remediation": {
+        "en": "Use a mirror: watch your mouths make /t/ (a quick tap of the tongue) and \"tee\" (a longer sound). Say \"letters have names and sounds; in this game we use the sound.\"",
+        "id": "Pakai cermin: amati mulut saat mengucapkan /t/ (ketukan lidah yang cepat) dan \"te\" (bunyi lebih panjang). Katakan \"huruf punya nama dan bunyi; dalam permainan ini kita pakai bunyinya.\""
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Put the matching textured letter beside the objects that start with its sound, linking the sound to the symbol.",
+      "id": "Letakkan huruf bertekstur yang sesuai di samping benda yang diawali bunyinya, menghubungkan bunyi dengan lambang."
+    },
+    {
+      "en": "Play I spy for the last sound once first sounds are easy.",
+      "id": "Mainkan \"Aku melihat\" untuk bunyi akhir setelah bunyi awal sudah mudah."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child with speech difficulties, accept pointing to the object; she can show she hears the sound even if she cannot yet say it.",
+      "id": "Untuk anak dengan kesulitan bicara, terima jawaban berupa menunjuk benda; ia bisa menunjukkan bahwa ia mendengar bunyi walaupun belum bisa mengucapkannya."
+    },
+    {
+      "en": "Sit face to face in good light so your child can watch your mouth as well as hear.",
+      "id": "Duduk berhadapan di tempat yang terang agar anak bisa melihat mulut Anda sekaligus mendengar."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use only objects bigger than a child's fist; nothing that fits through a toilet-roll tube, in case younger siblings join in.",
+        "id": "Pakai hanya benda yang lebih besar dari kepalan tangan anak; jangan benda yang masuk ke tabung gulungan tisu toilet, untuk berjaga-jaga jika adik ikut bermain."
+      },
+      {
+        "en": "At the market, keep your child beside you and play only with things you can see from where you stand.",
+        "id": "Di pasar, jaga anak tetap di samping Anda dan main hanya dengan benda yang terlihat dari tempat Anda berdiri."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child finds the first-sound object and says the first sound of new words correctly in most rounds, on two different days.",
+      "id": "Dikuasai jika anak menemukan benda berbunyi awal yang tepat dan mengucapkan bunyi awal kata baru dengan benar di sebagian besar putaran, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "safety",
+      "age-fit",
+      "misconception-map"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "95431ab3c2ec2967"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

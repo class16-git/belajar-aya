@@ -1,0 +1,237 @@
+{
+  "id": "reading-g1-benis-wobbly-tooth",
+  "version": "1.0.0",
+  "level": "g1",
+  "readingLevel": "early",
+  "genre": "fiction",
+  "mode": "shared",
+  "title": {
+    "en": "Beni's wobbly tooth",
+    "id": "Gigi Beni goyang"
+  },
+  "text": {
+    "en": [
+      "Beni's front tooth feels funny. When he pushes it with his tongue, it wiggles.",
+      "Mum takes a look. 'It is a wobbly baby tooth,' she says. 'It is getting ready to come out.'",
+      "Beni feels a little worried. Will it hurt? 'Usually it just feels a bit strange,' says Mum.",
+      "At lunch Beni bites into a slice of guava. Crunch! Out pops the tooth. Now there is a gap.",
+      "'Look in the mirror,' says Mum. 'A new tooth is already coming under there. It is a grown-up tooth, and it has to last you all your life.'",
+      "That night Beni brushes extra carefully, around the gap and all his other teeth."
+    ],
+    "id": [
+      "Gigi depan Beni terasa aneh. Saat ia mendorongnya dengan lidah, giginya bergoyang.",
+      "Ibu melihatnya. 'Itu gigi susu yang goyang,' katanya. 'Sebentar lagi gigi itu akan tanggal.'",
+      "Beni sedikit khawatir. Apakah akan sakit? 'Biasanya hanya terasa agak aneh,' kata Ibu.",
+      "Saat makan siang, Beni menggigit sepotong jambu biji. Kres! Giginya copot. Sekarang ada celah.",
+      "'Coba lihat di cermin,' kata Ibu. 'Gigi baru sudah mulai tumbuh di situ. Itu gigi dewasa, dan harus kamu jaga seumur hidup.'",
+      "Malam itu Beni menyikat gigi dengan sangat hati-hati, di sekitar celah dan semua giginya yang lain."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a short story and explains how the character's feelings change.",
+      "id": "Membaca cerita pendek dan menjelaskan bagaimana perasaan tokoh berubah."
+    },
+    {
+      "en": "Knows that baby teeth are replaced by adult teeth that must last.",
+      "id": "Tahu bahwa gigi susu diganti gigi dewasa yang harus dijaga."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "wobbly",
+        "id": "goyang"
+      },
+      "meaning": {
+        "en": "moving a little because it is loose",
+        "id": "bergerak sedikit karena longgar"
+      }
+    },
+    {
+      "word": {
+        "en": "gap",
+        "id": "celah"
+      },
+      "meaning": {
+        "en": "an empty space between two things",
+        "id": "ruang kosong di antara dua benda"
+      }
+    },
+    {
+      "word": {
+        "en": "baby tooth",
+        "id": "gigi susu"
+      },
+      "meaning": {
+        "en": "one of the first teeth a child grows",
+        "id": "gigi pertama yang tumbuh pada anak"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What was Beni eating when the tooth came out?",
+        "id": "Apa yang sedang Beni makan saat giginya copot?"
+      },
+      "choices": {
+        "en": [
+          "a slice of guava",
+          "a bowl of rice",
+          "a biscuit"
+        ],
+        "id": [
+          "sepotong jambu biji",
+          "semangkuk nasi",
+          "sebuah biskuit"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happened right after the tooth came out?",
+        "id": "Apa yang terjadi tepat setelah giginya copot?"
+      },
+      "choices": {
+        "en": [
+          "Mum told Beni to look in the mirror",
+          "Beni pushed the tooth with his tongue",
+          "Beni felt worried it would hurt"
+        ],
+        "id": [
+          "Ibu menyuruh Beni bercermin",
+          "Beni mendorong gigi dengan lidah",
+          "Beni khawatir akan sakit"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What does 'wobbly' mean in the story?",
+        "id": "Apa arti 'goyang' dalam cerita?"
+      },
+      "choices": {
+        "en": [
+          "loose and moving a little",
+          "very white",
+          "broken in half"
+        ],
+        "id": [
+          "longgar dan bergerak sedikit",
+          "sangat putih",
+          "patah menjadi dua"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Beni brush extra carefully that night?",
+        "id": "Mengapa malam itu Beni menyikat gigi dengan sangat hati-hati?"
+      },
+      "choices": {
+        "en": [
+          "he wanted to look after his new tooth that must last",
+          "his toothbrush was new",
+          "Mum was in a hurry"
+        ],
+        "id": [
+          "ia ingin menjaga gigi barunya yang harus awet",
+          "sikat giginya baru",
+          "Ibu sedang terburu-buru"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Adult teeth are not replaced, so brushing and healthy food matter.",
+        "id": "Gigi dewasa tidak akan diganti lagi, jadi menyikat gigi dan makanan sehat itu penting."
+      }
+    },
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Children's baby teeth fall out and adult teeth grow in their place.",
+        "id": "Gigi susu anak tanggal dan gigi dewasa tumbuh menggantikannya."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "How did Beni feel at the start, and at the end?",
+      "id": "Bagaimana perasaan Beni di awal dan di akhir?"
+    },
+    {
+      "en": "What helps keep our teeth healthy?",
+      "id": "Apa yang membantu menjaga gigi tetap sehat?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Look in a mirror together and count your child's top teeth. Draw a big smile and colour in any gaps or new teeth. Talk about which foods are kind to teeth.",
+    "id": "Bercermin bersama dan hitung gigi atas anak. Gambar senyum besar dan warnai celah atau gigi baru. Bicarakan makanan apa yang baik untuk gigi."
+  },
+  "factChecks": [
+    {
+      "claim": "Baby teeth fall out and are replaced by adult (permanent) teeth.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Adult teeth are not replaced if they are lost.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Do not pull a wobbly tooth hard; let it come out on its own. If there is a little bleeding, rinse with water and press with clean gauze.",
+      "id": "Jangan cabut gigi goyang dengan paksa; biarkan tanggal sendiri. Jika sedikit berdarah, kumur dengan air dan tekan dengan kasa bersih."
+    },
+    {
+      "en": "The adult slices the guava.",
+      "id": "Orang dewasa yang mengiris jambu biji."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.0",
+    "reviewedHash": "83e808132953945d"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

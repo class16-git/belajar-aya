@@ -1,0 +1,456 @@
+{
+  "id": "unit-k-math-subtraction-stories-within-10",
+  "version": "1.0.1",
+  "level": "k",
+  "framework": "math",
+  "strand": "addition_subtraction",
+  "title": {
+    "en": "Subtraction stories within 10",
+    "id": "Cerita pengurangan sampai 10"
+  },
+  "prerequisites": [
+    "unit-k-math-number-bonds-to-10"
+  ],
+  "objective": {
+    "en": "Act out, draw and write take-away, part-whole and how-many-more stories within 10, and read the minus sign.",
+    "id": "Memeragakan, menggambar, dan menulis cerita mengambil, bagian-keseluruhan, dan berapa lebih banyak sampai 10, serta membaca tanda kurang."
+  },
+  "rationale": {
+    "en": "Subtraction is more than taking away. Children who meet three kinds of story (some go away, a part is unknown, two groups are compared) can later pick the right operation in word problems. Number bonds from the previous unit show that subtraction finds the missing part.",
+    "id": "Pengurangan lebih dari sekadar mengambil. Anak yang mengenal tiga jenis cerita (sebagian pergi, satu bagian tidak diketahui, dua kelompok dibandingkan) nanti bisa memilih operasi yang tepat dalam soal cerita. Ikatan bilangan dari unit sebelumnya menunjukkan bahwa pengurangan mencari bagian yang hilang."
+  },
+  "outcomes": [
+    {
+      "en": "Acts out a take-away story with objects and says the number sentence.",
+      "id": "Memeragakan cerita mengambil dengan benda dan mengucapkan kalimat bilangannya."
+    },
+    {
+      "en": "Finds a missing part when the whole and one part are known.",
+      "id": "Menemukan bagian yang hilang jika keseluruhan dan satu bagian diketahui."
+    },
+    {
+      "en": "Compares two groups by lining them up and says how many more.",
+      "id": "Membandingkan dua kelompok dengan menjajarkannya dan menyebut berapa lebih banyak."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can tell a story for 8 - 3 = 5 and show it with toys.",
+      "id": "Aku bisa bercerita untuk 8 - 3 = 5 dan menunjukkannya dengan mainan."
+    },
+    {
+      "en": "I can say that the minus sign means 'take away' or 'find the difference'.",
+      "id": "Aku bisa mengatakan bahwa tanda kurang berarti 'diambil' atau 'cari selisihnya'."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Tell short stories with the child's toys and let the child move the objects; write the number sentence only after acting it out.",
+      "id": "Ceritakan kisah pendek dengan mainan anak dan biarkan anak memindahkan bendanya; tulis kalimat bilangan hanya setelah memeragakannya."
+    },
+    {
+      "en": "Read 8 - 3 as 'eight take away three' and also 'eight minus three'; in Indonesian 'delapan dikurangi tiga'.",
+      "id": "Baca 8 - 3 sebagai 'delapan diambil tiga' dan juga 'delapan dikurangi tiga'; dalam bahasa Inggris 'eight minus three'."
+    },
+    {
+      "en": "For comparing, line the two groups up one-to-one so the extra ones stand out.",
+      "id": "Untuk membandingkan, jajarkan dua kelompok satu lawan satu sehingga kelebihannya terlihat."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Put out the whole amount first. Then move away the part that goes.",
+      "id": "Taruh jumlah semuanya dulu. Lalu pindahkan bagian yang pergi."
+    },
+    {
+      "en": "Count what is left and say the number sentence.",
+      "id": "Hitung yang tersisa dan ucapkan kalimat bilangannya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Put 8 kue (or 8 toy cars) on a plate. Adik 'eats' 3: move them off the plate. Count the 5 left and say: 8 take away 3 leaves 5.",
+        "id": "Taruh 8 kue (atau 8 mobil mainan) di piring. Adik 'makan' 3: pindahkan dari piring. Hitung 5 yang tersisa dan ucapkan: 8 diambil 3 sisa 5."
+      },
+      {
+        "en": "Line up 6 red cups above 4 blue cups, one under another. Two red cups have no partner: 6 is 2 more than 4.",
+        "id": "Jajarkan 6 gelas merah di atas 4 gelas biru, satu di bawah yang lain. Dua gelas merah tidak punya pasangan: 6 lebih 2 dari 4."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw 6 birds on a wire and cross out the 2 that fly away. Write 6 - 2 = 4 under the drawing.",
+        "id": "Gambar 6 burung di kabel dan coret 2 yang terbang. Tulis 6 - 2 = 4 di bawah gambar."
+      },
+      {
+        "en": "Draw a number bond with the whole 9 at the top and one part 4; write the missing part.",
+        "id": "Gambar ikatan bilangan dengan keseluruhan 9 di atas dan satu bagian 4; tulis bagian yang hilang."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Read and solve number sentences without pictures: 7 - 2, 10 - 3, 5 - 5; say a short story for one of them.",
+        "id": "Baca dan selesaikan kalimat bilangan tanpa gambar: 7 - 2, 10 - 3, 5 - 5; ceritakan kisah pendek untuk salah satunya."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "10 toy cars or 10 kue for a story, a plate",
+      "id": "10 mobil mainan atau 10 kue untuk cerita, piring"
+    },
+    {
+      "en": "10 plastic cups in two colours",
+      "id": "10 gelas plastik dua warna"
+    },
+    {
+      "en": "Paper, crayons, a whiteboard or slate",
+      "id": "Kertas, krayon, papan tulis kecil atau sabak"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Choose three toys for story characters and draw an empty number bond (one big circle joined to two small ones) on paper.",
+      "id": "Pilih tiga mainan untuk tokoh cerita dan gambar ikatan bilangan kosong (satu lingkaran besar tersambung ke dua lingkaran kecil) di kertas."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Take-away: there are 8 kue on the plate and Adik eats 3. Move 3 off, count 5 left. Write 8 - 3 = 5.",
+      "id": "Mengambil: ada 8 kue di piring dan Adik makan 3. Pindahkan 3, hitung sisa 5. Tulis 8 - 3 = 5."
+    },
+    {
+      "en": "Part-whole: 9 cups are on the table; 4 are red and the rest are blue. Put 9 in the whole circle, 4 in one part. The other part is 9 - 4 = 5 blue cups.",
+      "id": "Bagian-keseluruhan: ada 9 gelas di meja; 4 merah dan sisanya biru. Taruh 9 di lingkaran keseluruhan, 4 di satu bagian. Bagian lainnya 9 - 4 = 5 gelas biru."
+    },
+    {
+      "en": "Comparing: Kakak has 6 crayons, Adik has 4. Line them up in pairs: 2 crayons have no partner, so 6 - 4 = 2. Kakak has 2 more.",
+      "id": "Membandingkan: Kakak punya 6 krayon, Adik punya 4. Jajarkan berpasangan: 2 krayon tidak punya pasangan, jadi 6 - 4 = 2. Kakak punya 2 lebih banyak."
+    },
+    {
+      "en": "Taking away nothing: 5 ducks swim and none leave. 5 - 0 = 5, the amount stays the same.",
+      "id": "Tidak mengambil apa pun: 5 bebek berenang dan tidak ada yang pergi. 5 - 0 = 5, jumlahnya tetap."
+    }
+  ],
+  "practice": [
+    {
+      "en": "At snack time, count the pieces of fruit, eat some, and say the subtraction sentence for what is left.",
+      "id": "Saat camilan, hitung potongan buah, makan beberapa, dan ucapkan kalimat pengurangan untuk yang tersisa."
+    },
+    {
+      "en": "Hide-and-count: put 7 toys under a cloth, take some out where your child can see, and ask how many are still hiding.",
+      "id": "Sembunyi-dan-hitung: taruh 7 mainan di bawah kain, keluarkan beberapa di depan anak, dan tanyakan berapa yang masih bersembunyi."
+    },
+    {
+      "en": "Your child draws a subtraction story and you guess the number sentence; then swap roles.",
+      "id": "Anak menggambar cerita pengurangan dan Anda menebak kalimat bilangannya; lalu bertukar peran."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Ibu has 7 bananas. She gives 4 to Nenek. How many bananas does Ibu have left?",
+        "id": "Ibu punya 7 pisang. Ia memberikan 4 kepada Nenek. Berapa pisang yang masih dimiliki Ibu?"
+      },
+      "choices": {
+        "en": [
+          "3 bananas",
+          "11 bananas",
+          "4 bananas"
+        ],
+        "id": [
+          "3 pisang",
+          "11 pisang",
+          "4 pisang"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "7 take away 4 leaves 3: 7 - 4 = 3.",
+        "id": "7 diambil 4 sisa 3: 7 - 4 = 3."
+      },
+      "check": {
+        "expression": "7 - 4",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "GIVES_PART_TAKEN"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "10 - 6 = ?",
+        "id": "10 - 6 = ?"
+      },
+      "choices": {
+        "en": [
+          "4",
+          "5",
+          "16"
+        ],
+        "id": [
+          "4",
+          "5",
+          "16"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Start with 10 and take away 6: 10 - 6 = 4. Check with the bond 6 and 4 make 10.",
+        "id": "Mulai dari 10 dan ambil 6: 10 - 6 = 4. Periksa dengan ikatan 6 dan 4 menjadi 10."
+      },
+      "check": {
+        "expression": "10 - 6",
+        "result": "4"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_START_NUMBER",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Rina has 9 stickers and Doni has 6 stickers. How many more stickers does Rina have?",
+        "id": "Rina punya 9 stiker dan Doni punya 6 stiker. Stiker Rina lebih banyak berapa dari stiker Doni?"
+      },
+      "choices": {
+        "en": [
+          "3 more",
+          "15 more",
+          "6 more"
+        ],
+        "id": [
+          "3 stiker",
+          "15 stiker",
+          "6 stiker"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Pair the stickers: 6 pairs, and Rina has 3 without a partner. 9 - 6 = 3.",
+        "id": "Pasangkan stikernya: 6 pasang, dan Rina punya 3 tanpa pasangan. 9 - 6 = 3."
+      },
+      "check": {
+        "expression": "9 - 6",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "GIVES_SMALLER_GROUP"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "There were 8 fish in the pond. Some swam under a rock. Now 5 fish can be seen. How many swam under the rock?",
+        "id": "Ada 8 ikan di kolam. Beberapa berenang ke bawah batu. Sekarang terlihat 5 ikan. Berapa ikan yang ke bawah batu?"
+      },
+      "choices": {
+        "en": [
+          "3 fish",
+          "13 fish",
+          "5 fish"
+        ],
+        "id": [
+          "3 ikan",
+          "13 ikan",
+          "5 ikan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The whole is 8 and one part is 5. The missing part is 8 - 5 = 3.",
+        "id": "Keseluruhannya 8 dan satu bagian 5. Bagian yang hilang 8 - 5 = 3."
+      },
+      "check": {
+        "expression": "8 - 5",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "GIVES_KNOWN_PART"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "6 - 6 = ?",
+        "id": "6 - 6 = ?"
+      },
+      "choices": {
+        "en": [
+          "0",
+          "6",
+          "1"
+        ],
+        "id": [
+          "0",
+          "6",
+          "1"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "If all 6 are taken away, nothing is left: 6 - 6 = 0.",
+        "id": "Jika keenamnya diambil, tidak ada yang tersisa: 6 - 6 = 0."
+      },
+      "check": {
+        "expression": "6 - 6",
+        "result": "0"
+      },
+      "distractorMisconceptions": {
+        "1": "ZERO_CONFUSION",
+        "2": "ZERO_CONFUSION"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the two numbers because both appear in the story.",
+        "id": "Menjumlahkan kedua bilangan karena keduanya muncul dalam cerita."
+      },
+      "remediation": {
+        "en": "Act the story out with toys: ask whether the plate has more or fewer at the end, then choose + or -.",
+        "id": "Peragakan cerita dengan mainan: tanyakan apakah di akhir isi piring lebih banyak atau lebih sedikit, lalu pilih + atau -."
+      }
+    },
+    {
+      "code": "GIVES_PART_TAKEN",
+      "description": {
+        "en": "Answers with the number taken away instead of the number left.",
+        "id": "Menjawab dengan banyak yang diambil, bukan banyak yang tersisa."
+      },
+      "remediation": {
+        "en": "Put the taken objects in a box with a lid; count only what is still on the plate.",
+        "id": "Masukkan benda yang diambil ke kotak bertutup; hitung hanya yang masih di piring."
+      }
+    },
+    {
+      "code": "GIVES_KNOWN_PART",
+      "description": {
+        "en": "Answers with the part already given in the story instead of the missing part.",
+        "id": "Menjawab dengan bagian yang sudah diberikan dalam cerita, bukan bagian yang hilang."
+      },
+      "remediation": {
+        "en": "Hide 3 cups under a cloth and show 5; lift the cloth and count only the hidden part.",
+        "id": "Sembunyikan 3 gelas di bawah kain dan tunjukkan 5; angkat kain dan hitung hanya bagian yang tersembunyi."
+      }
+    },
+    {
+      "code": "COUNTS_START_NUMBER",
+      "description": {
+        "en": "Counts back including the starting number, so the answer is one too big.",
+        "id": "Menghitung mundur termasuk bilangan awal, sehingga jawabannya kelebihan satu."
+      },
+      "remediation": {
+        "en": "Use a ten-frame drawing: cross out one square for each number said, then count the squares that are not crossed out.",
+        "id": "Pakai gambar kerangka sepuluh: coret satu kotak untuk setiap bilangan yang diucapkan, lalu hitung kotak yang tidak dicoret."
+      }
+    },
+    {
+      "code": "GIVES_SMALLER_GROUP",
+      "description": {
+        "en": "In comparing stories, gives the size of the smaller group instead of the difference.",
+        "id": "Dalam cerita membandingkan, menyebut banyak kelompok yang lebih kecil, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Line the two groups up in pairs with real cups and circle only the cups without a partner.",
+        "id": "Jajarkan dua kelompok berpasangan dengan gelas sungguhan dan lingkari hanya gelas yang tidak punya pasangan."
+      }
+    },
+    {
+      "code": "ZERO_CONFUSION",
+      "description": {
+        "en": "Thinks taking all of a number away leaves the number itself, or leaves one.",
+        "id": "Mengira mengambil semua bilangan menyisakan bilangan itu sendiri, atau menyisakan satu."
+      },
+      "remediation": {
+        "en": "Put 6 cups on a tray and take them all away; show the empty tray and say 'zero left'.",
+        "id": "Taruh 6 gelas di nampan lalu ambil semuanya; tunjukkan nampan kosong dan ucapkan 'sisa nol'."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Write a 'fact family' of four sentences from one picture: 3 + 5 = 8, 5 + 3 = 8, 8 - 3 = 5, 8 - 5 = 3.",
+      "id": "Tulis 'keluarga fakta' empat kalimat dari satu gambar: 3 + 5 = 8, 5 + 3 = 8, 8 - 3 = 5, 8 - 5 = 3."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Children who find speaking hard can point to the result on a number line from 0 to 10; large objects suit children with fine-motor difficulties.",
+      "id": "Anak yang kesulitan bicara bisa menunjuk hasilnya di garis bilangan 0 sampai 10; benda besar cocok untuk anak dengan kesulitan motorik halus."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": true,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Kue can contain egg, milk, wheat, peanut or sesame: check before eating, and cut kue and fruit into pieces suitable for the child's age.",
+        "id": "Kue bisa mengandung telur, susu, gandum, kacang tanah, atau wijen: periksa sebelum dimakan, dan potong kue dan buah sesuai usia anak."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      2,
+      7,
+      14
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves one take-away, one part-whole and one comparing story within 10 with new numbers and says each number sentence, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan satu cerita mengambil, satu cerita bagian-keseluruhan, dan satu cerita membandingkan sampai 10 dengan bilangan baru dan mengucapkan kalimat bilangannya, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "64387b671127644c"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

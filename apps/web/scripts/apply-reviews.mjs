@@ -12,6 +12,7 @@
  * writes religiousReview: a family's content review is not a scholarly approval. Exit code 1 if anything was refused.
  * Afterwards run `pnpm --filter @atlas/curriculum index` and `pnpm content:validate`.
  */
+import { createHash } from 'node:crypto';
 import { readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -21,6 +22,25 @@ const ID = /^(unit|reading)-[a-z0-9_-]+$/;
 const SEMVER = /^\d+\.\d+\.\d+$/;
 const INITIALS = /^\p{L}[\p{L} .'’-]{0,39}$/u;
 const SAFE = /^[^<>]*$/;
+
+/** Same algorithm as contentHash in packages/curriculum/src/units.ts (a unit test checks they agree). */
+export function contentHash(x) {
+  const canon = (v, top = false) => {
+    if (Array.isArray(v)) return v.map((e) => canon(e));
+    if (v && typeof v === 'object') {
+      const out = {};
+      for (const k of Object.keys(v).sort()) {
+        if (top && (k === 'review' || k === 'reviewStatus' || k === 'religiousReview')) continue;
+        const c = canon(v[k]);
+        if (c === undefined || (Array.isArray(c) && c.length === 0) || (c && typeof c === 'object' && !Array.isArray(c) && Object.keys(c).length === 0)) continue;
+        out[k] = c;
+      }
+      return out;
+    }
+    return v;
+  };
+  return createHash('sha256').update(JSON.stringify(canon(x, true))).digest('hex').slice(0, 16);
+}
 
 function usage(msg) {
   if (msg) console.error(`apply-reviews: ${msg}`);
@@ -103,6 +123,8 @@ export function applyDecision(content, d) {
   review.reviewedBy = d.reviewerName;
   review.reviewerRole = d.reviewerRole;
   review.reviewedAt = date;
+  review.reviewedVersion = d.itemVersion; // approval is tied to this exact version
+  review.reviewedHash = contentHash(content); // and to this exact content
   const next = { ...content, review };
   if (d.decision === 'approve') {
     delete review.rejectedReason;

@@ -241,7 +241,7 @@
   "safetyNotes": [],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -249,7 +249,12 @@
       "readability",
       "question-answerability",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-11",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "2b87c7d87c1ad7a9"
   },
   "provenance": {
     "origin": "ai_drafted",

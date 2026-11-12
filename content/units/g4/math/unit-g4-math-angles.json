@@ -1,0 +1,523 @@
+{
+  "id": "unit-g4-math-angles",
+  "version": "1.0.1",
+  "level": "g4",
+  "framework": "math",
+  "strand": "geometry",
+  "title": {
+    "en": "Angles: turns, right angles and measuring in degrees",
+    "id": "Sudut: putaran, sudut siku-siku, dan mengukur dalam derajat"
+  },
+  "prerequisites": [
+    "unit-k-math-shapes-and-patterns",
+    "unit-g3-math-fractions-of-a-whole"
+  ],
+  "objective": {
+    "en": "Understand an angle as an amount of turn, recognise right, acute and obtuse angles, measure and draw angles with a protractor, and find unknown angles on a straight line and around a point.",
+    "id": "Memahami sudut sebagai besar putaran, mengenali sudut siku-siku, lancip, dan tumpul, mengukur dan menggambar sudut dengan busur derajat, serta menentukan sudut yang belum diketahui pada garis lurus dan di sekeliling titik."
+  },
+  "rationale": {
+    "en": "Children often think an angle with longer arms is bigger. Turning the body and a pair of card strips shows that an angle is about the turn, not the length of the lines. Quarter, half and full turns (90°, 180°, 360°) give the facts used to calculate unknown angles.",
+    "id": "Anak sering mengira sudut dengan kaki yang lebih panjang lebih besar. Memutar badan dan sepasang pita karton menunjukkan bahwa sudut adalah besar putaran, bukan panjang garisnya. Seperempat, setengah, dan satu putaran penuh (90°, 180°, 360°) memberi fakta yang dipakai untuk menghitung sudut yang belum diketahui."
+  },
+  "outcomes": [
+    {
+      "en": "Uses quarter, half, three-quarter and full turns and their sizes in degrees.",
+      "id": "Memakai seperempat, setengah, tiga perempat, dan satu putaran penuh beserta besarnya dalam derajat."
+    },
+    {
+      "en": "Measures angles with a protractor, choosing the correct scale.",
+      "id": "Mengukur sudut dengan busur derajat, memilih skala yang benar."
+    },
+    {
+      "en": "Calculates unknown angles on a straight line (180°) and around a point (360°).",
+      "id": "Menghitung sudut yang belum diketahui pada garis lurus (180°) dan di sekeliling titik (360°)."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can find right angles at home with a folded paper tester.",
+      "id": "Aku bisa menemukan sudut siku-siku di rumah dengan alat uji kertas lipat."
+    },
+    {
+      "en": "I can say whether an angle is acute or obtuse before I measure it, and check my protractor reading against that.",
+      "id": "Aku bisa menyebut apakah sudut lancip atau tumpul sebelum mengukurnya, lalu mencocokkan bacaan busur derajat dengan itu."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Start with the body: stand facing a window and make quarter turns, half turns and full turns, clockwise and anticlockwise.",
+      "id": "Mulai dengan badan: berdiri menghadap jendela dan lakukan seperempat, setengah, dan satu putaran penuh, searah dan berlawanan arah jarum jam."
+    },
+    {
+      "en": "Make a right-angle tester by folding any piece of paper in half and then in half again so the folds meet.",
+      "id": "Buat alat uji sudut siku-siku dengan melipat kertas apa saja menjadi dua lalu dua lagi sehingga lipatannya bertemu."
+    },
+    {
+      "en": "With the protractor, always estimate first (less than or more than a right angle) so the child picks the correct one of its two scales.",
+      "id": "Dengan busur derajat, selalu perkirakan dulu (kurang atau lebih dari sudut siku-siku) agar anak memilih skala yang benar dari dua skalanya."
+    },
+    {
+      "en": "Calculating angles on a straight line and around a point is a stretch at this grade (Singapore teaches it in P5); go slowly and use the turn facts.",
+      "id": "Menghitung sudut pada garis lurus dan di sekeliling titik adalah tantangan tambahan di kelas ini (di Singapura diajarkan di kelas 5); lakukan perlahan dan pakai fakta putaran."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Put the centre of the protractor on the corner and the zero line along one arm.",
+      "id": "Taruh titik tengah busur derajat di titik sudut dan garis nol di sepanjang satu kaki sudut."
+    },
+    {
+      "en": "Count up from the zero on that arm's scale to the other arm.",
+      "id": "Hitung naik dari nol pada skala kaki itu sampai kaki yang lain."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Join two card strips at one end with a glued paper hinge (a folded paper tab glued over both ends). Open them a little, a lot, then to a straight line, and compare with the folded right-angle tester.",
+        "id": "Sambungkan dua pita karton di satu ujung dengan engsel tanpa pengait (lipatan kertas yang dilem menutupi kedua ujung). Buka sedikit, banyak, lalu sampai lurus, dan bandingkan dengan alat uji sudut siku-siku dari kertas lipat."
+      },
+      {
+        "en": "Hunt for right angles at home with the tester: corners of a book, a window frame, a tile. Find one angle smaller and one larger.",
+        "id": "Cari sudut siku-siku di rumah dengan alat uji: sudut buku, kusen jendela, ubin. Temukan satu sudut yang lebih kecil dan satu yang lebih besar."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw angles with short arms and long arms that have the same opening and mark each with an arc; measure them to show they are equal.",
+        "id": "Gambar sudut dengan kaki pendek dan kaki panjang yang bukaannya sama dan tandai masing-masing dengan busur; ukur untuk menunjukkan keduanya sama."
+      },
+      {
+        "en": "Draw a clock face: each number is 360° ÷ 12 = 30° from the next.",
+        "id": "Gambar muka jam: setiap angka berjarak 360° ÷ 12 = 30° dari angka berikutnya."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write angle facts as equations: on a straight line 125° + ? = 180°, so ? = 55°; around a point a + b + c = 360°.",
+        "id": "Tulis fakta sudut sebagai persamaan: pada garis lurus 125° + ? = 180°, jadi ? = 55°; di sekeliling titik a + b + c = 360°."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A protractor (busur derajat), a ruler, a pencil",
+      "id": "Busur derajat, penggaris, pensil"
+    },
+    {
+      "en": "Scrap paper for folding, two card strips about 20 cm long, glue",
+      "id": "Kertas bekas untuk dilipat, dua pita karton sekitar 20 cm, lem"
+    },
+    {
+      "en": "A clock face drawing or a real analogue clock",
+      "id": "Gambar muka jam atau jam jarum sungguhan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Glue the card strips into a hinge and draw five angles of different sizes on paper for measuring.",
+      "id": "Lem pita karton menjadi engsel dan gambar lima sudut berbeda ukuran di kertas untuk diukur."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Fold a paper in half and in half again: the corner where the folds meet is a right angle, 90°. The corner of this book fits it exactly, so it is a right angle too.",
+      "id": "Lipat kertas menjadi dua lalu dua lagi: sudut tempat lipatan bertemu adalah sudut siku-siku, 90°. Sudut buku ini pas, jadi sudutnya juga siku-siku."
+    },
+    {
+      "en": "Turns: a quarter turn is 90°, a half turn is 180°, a three-quarter turn is 270° and a full turn is 360°.",
+      "id": "Putaran: seperempat putaran 90°, setengah putaran 180°, tiga perempat putaran 270°, dan satu putaran penuh 360°."
+    },
+    {
+      "en": "Protractor: the angle is smaller than a right angle (acute). The arm crosses 40 on the inner scale and 140 on the outer scale. It is acute, so the answer is 40°.",
+      "id": "Busur derajat: sudutnya lebih kecil dari siku-siku (lancip). Kakinya melewati 40 pada skala dalam dan 140 pada skala luar. Karena lancip, jawabannya 40°."
+    },
+    {
+      "en": "Straight line: one angle is 125°. Angles on a straight line add up to 180°, so the other is 180° - 125° = 55°.",
+      "id": "Garis lurus: satu sudut 125°. Sudut pada garis lurus berjumlah 180°, jadi sudut lainnya 180° - 125° = 55°."
+    },
+    {
+      "en": "Clock: at 3 o'clock the hands are 3 numbers apart: 3 × 30° = 90°, a right angle.",
+      "id": "Jam: pada pukul 3 kedua jarum berjarak 3 angka: 3 × 30° = 90°, sudut siku-siku."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Measure the five prepared angles: estimate (acute, right or obtuse, and a number), then measure and compare.",
+      "id": "Ukur lima sudut yang sudah disiapkan: perkirakan (lancip, siku-siku, atau tumpul, dan bilangannya), lalu ukur dan bandingkan."
+    },
+    {
+      "en": "Draw angles of 35°, 90° and 150° with a ruler and protractor; a family member measures them to check.",
+      "id": "Gambar sudut 35°, 90°, dan 150° dengan penggaris dan busur derajat; anggota keluarga mengukurnya untuk memeriksa."
+    },
+    {
+      "en": "Compass turns: stand facing north and follow instructions such as 'turn 180° clockwise'; say which direction you face.",
+      "id": "Putaran arah mata angin: berdiri menghadap utara dan ikuti perintah seperti 'putar 180° searah jarum jam'; sebutkan arah yang kamu hadapi."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Two angles lie on a straight line. One angle is 72°. What is the other angle?",
+        "id": "Dua sudut terletak pada garis lurus. Satu sudut 72°. Berapa sudut yang lain?"
+      },
+      "choices": {
+        "en": [
+          "108°",
+          "18°",
+          "288°"
+        ],
+        "id": [
+          "108°",
+          "18°",
+          "288°"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Angles on a straight line add up to 180°: 180° - 72° = 108°.",
+        "id": "Sudut pada garis lurus berjumlah 180°: 180° - 72° = 108°."
+      },
+      "check": {
+        "expression": "180 - 72",
+        "result": "108"
+      },
+      "distractorMisconceptions": {
+        "1": "USES_RIGHT_ANGLE_TOTAL",
+        "2": "USES_FULL_TURN_TOTAL"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Aya faces north and makes 3 quarter turns clockwise. How many degrees has she turned?",
+        "id": "Aya menghadap utara dan berputar 3 kali seperempat putaran searah jarum jam. Berapa derajat ia berputar?"
+      },
+      "choices": {
+        "en": [
+          "270°",
+          "3°",
+          "360°"
+        ],
+        "id": [
+          "270°",
+          "3°",
+          "360°"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each quarter turn is 90°, so 3 × 90° = 270°. She now faces west.",
+        "id": "Setiap seperempat putaran 90°, jadi 3 × 90° = 270°. Sekarang ia menghadap barat."
+      },
+      "check": {
+        "expression": "3 * 90",
+        "result": "270"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_TURNS_AS_DEGREES",
+        "2": "THINKS_ANY_TURNS_ARE_FULL"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "An acute angle is measured. One arm is on 0 of the inner scale. The other arm crosses 35 on the inner scale and 145 on the outer scale. What is the angle?",
+        "id": "Sebuah sudut lancip diukur. Satu kaki di angka 0 skala dalam. Kaki lainnya melewati 35 pada skala dalam dan 145 pada skala luar. Berapa besar sudutnya?"
+      },
+      "choices": {
+        "en": [
+          "35°",
+          "145°"
+        ],
+        "id": [
+          "35°",
+          "145°"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Read the scale that starts at 0 on the first arm, the inner one: 35°. An acute angle is less than 90°, which confirms it. 180 - 145 = 35.",
+        "id": "Baca skala yang dimulai dari 0 pada kaki pertama, yaitu skala dalam: 35°. Sudut lancip kurang dari 90°, yang memastikan jawabannya. 180 - 145 = 35."
+      },
+      "check": {
+        "expression": "180 - 145",
+        "result": "35"
+      },
+      "distractorMisconceptions": {
+        "1": "READS_WRONG_SCALE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Three angles meet around a point. Two of them are 150° and 90°. What is the third angle?",
+        "id": "Tiga sudut bertemu di sekeliling satu titik. Dua di antaranya 150° dan 90°. Berapa sudut ketiga?"
+      },
+      "choices": {
+        "en": [
+          "120°",
+          "210°",
+          "240°"
+        ],
+        "id": [
+          "120°",
+          "210°",
+          "240°"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Angles around a point add up to 360°: 360° - 150° - 90° = 120°.",
+        "id": "Sudut di sekeliling titik berjumlah 360°: 360° - 150° - 90° = 120°."
+      },
+      "check": {
+        "expression": "360 - 150 - 90",
+        "result": "120"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_AN_ANGLE",
+        "2": "ADDS_GIVEN_ANGLES"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "What is the smaller angle between the hands of a clock at 4 o'clock?",
+        "id": "Berapa sudut yang lebih kecil antara kedua jarum jam pada pukul 4?"
+      },
+      "choices": {
+        "en": [
+          "120°",
+          "4°",
+          "240°"
+        ],
+        "id": [
+          "120°",
+          "4°",
+          "240°"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The hands are 4 numbers apart and each step is 30°: 4 × 30° = 120°. The other way round is the larger angle, 240°.",
+        "id": "Kedua jarum berjarak 4 angka dan setiap langkah 30°: 4 × 30° = 120°. Ke arah sebaliknya adalah sudut yang lebih besar, 240°."
+      },
+      "check": {
+        "expression": "4 * 30",
+        "result": "120"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_TURNS_AS_DEGREES",
+        "2": "MEASURES_REFLEX_SIDE"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "Two angles have the same opening. Angle P has arms 3 cm long and angle Q has arms 10 cm long. Which is true?",
+        "id": "Dua sudut punya bukaan yang sama. Sudut P berkaki 3 cm dan sudut Q berkaki 10 cm. Mana yang benar?"
+      },
+      "choices": {
+        "en": [
+          "They are the same size",
+          "Angle Q is bigger",
+          "Angle P is bigger"
+        ],
+        "id": [
+          "Besarnya sama",
+          "Sudut Q lebih besar",
+          "Sudut P lebih besar"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "An angle measures the turn between the arms, not their length. The same opening means the same angle.",
+        "id": "Sudut mengukur putaran di antara kedua kaki, bukan panjangnya. Bukaan yang sama berarti sudut yang sama."
+      },
+      "distractorMisconceptions": {
+        "1": "ARM_LENGTH_CHANGES_ANGLE",
+        "2": "ARM_LENGTH_CHANGES_ANGLE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "USES_RIGHT_ANGLE_TOTAL",
+      "description": {
+        "en": "Uses 90° as the total for a straight line.",
+        "id": "Memakai 90° sebagai jumlah untuk garis lurus."
+      },
+      "remediation": {
+        "en": "Put two right-angle testers side by side along a straight edge: they make one straight line, so a straight line is 2 × 90° = 180°.",
+        "id": "Letakkan dua alat uji sudut siku-siku berdampingan di tepi lurus: keduanya membentuk satu garis lurus, jadi garis lurus 2 × 90° = 180°."
+      }
+    },
+    {
+      "code": "USES_FULL_TURN_TOTAL",
+      "description": {
+        "en": "Uses 360° as the total for angles on a straight line.",
+        "id": "Memakai 360° sebagai jumlah sudut pada garis lurus."
+      },
+      "remediation": {
+        "en": "Turn the body: facing the opposite way is a half turn, 180°; only coming back to the start is 360°.",
+        "id": "Putar badan: menghadap arah sebaliknya adalah setengah putaran, 180°; kembali ke awal barulah 360°."
+      }
+    },
+    {
+      "code": "COUNTS_TURNS_AS_DEGREES",
+      "description": {
+        "en": "Gives the number of turns or clock numbers instead of degrees.",
+        "id": "Memberi banyak putaran atau banyak angka jam, bukan derajat."
+      },
+      "remediation": {
+        "en": "Write 90° on a card for each quarter turn made and add the cards.",
+        "id": "Tulis 90° di kartu untuk setiap seperempat putaran dan jumlahkan kartunya."
+      }
+    },
+    {
+      "code": "THINKS_ANY_TURNS_ARE_FULL",
+      "description": {
+        "en": "Assumes several turns make a full turn without counting them.",
+        "id": "Mengira beberapa putaran pasti satu putaran penuh tanpa menghitungnya."
+      },
+      "remediation": {
+        "en": "Act it out facing north and point to the direction faced after each quarter turn.",
+        "id": "Peragakan dengan menghadap utara dan tunjuk arah yang dihadapi setelah setiap seperempat putaran."
+      }
+    },
+    {
+      "code": "READS_WRONG_SCALE",
+      "description": {
+        "en": "Reads the protractor scale that does not start at 0 on the first arm.",
+        "id": "Membaca skala busur derajat yang tidak dimulai dari 0 pada kaki pertama."
+      },
+      "remediation": {
+        "en": "Estimate first: acute or obtuse? Then put a finger on the 0 where the first arm lies and follow that scale only.",
+        "id": "Perkirakan dulu: lancip atau tumpul? Lalu letakkan jari di angka 0 tempat kaki pertama dan ikuti skala itu saja."
+      }
+    },
+    {
+      "code": "FORGETS_AN_ANGLE",
+      "description": {
+        "en": "Subtracts only one of the known angles from 360°.",
+        "id": "Hanya mengurangkan salah satu sudut yang diketahui dari 360°."
+      },
+      "remediation": {
+        "en": "Draw the three angles in different colours and tick each known one as it is subtracted.",
+        "id": "Gambar ketiga sudut dengan warna berbeda dan centang setiap sudut yang diketahui saat dikurangkan."
+      }
+    },
+    {
+      "code": "ADDS_GIVEN_ANGLES",
+      "description": {
+        "en": "Adds the known angles and gives their sum as the answer.",
+        "id": "Menjumlahkan sudut yang diketahui dan memberikan jumlahnya sebagai jawaban."
+      },
+      "remediation": {
+        "en": "Ask what the three angles must make together (360°) and compare that with the sum so far.",
+        "id": "Tanyakan berapa jumlah ketiga sudut seharusnya (360°) dan bandingkan dengan jumlah sejauh ini."
+      }
+    },
+    {
+      "code": "MEASURES_REFLEX_SIDE",
+      "description": {
+        "en": "Gives the larger angle on the other side when the smaller angle is asked for.",
+        "id": "Memberi sudut yang lebih besar di sisi lain ketika yang ditanya sudut yang lebih kecil."
+      },
+      "remediation": {
+        "en": "Shade the smaller opening between the hands and count the 30° steps in the shaded part only.",
+        "id": "Arsir bukaan yang lebih kecil di antara kedua jarum dan hitung langkah 30° di bagian yang diarsir saja."
+      }
+    },
+    {
+      "code": "ARM_LENGTH_CHANGES_ANGLE",
+      "description": {
+        "en": "Thinks the length of the arms changes the size of the angle.",
+        "id": "Mengira panjang kaki sudut mengubah besar sudutnya."
+      },
+      "remediation": {
+        "en": "Lay the short-armed angle on top of the long-armed one: the openings match exactly.",
+        "id": "Letakkan sudut berkaki pendek di atas sudut berkaki panjang: bukaannya pas sama."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "3 o'clock shows a right angle between the hands. Find the other time on the hour that does, and explain why 6 o'clock does not.",
+      "id": "Pukul 3 menunjukkan sudut siku-siku di antara jarumnya. Cari satu waktu tepat lain yang juga begitu, dan jelaskan mengapa pukul 6 tidak."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "The card hinge and the folded tester can be used by touch; a protractor with large, high-contrast numbers helps children with low vision.",
+      "id": "Engsel karton dan alat uji lipat bisa dipakai dengan meraba; busur derajat dengan angka besar dan kontras membantu anak dengan penglihatan rendah."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Clear a space before doing body turns so no one bumps into furniture.",
+        "id": "Kosongkan ruang sebelum berputar badan agar tidak ada yang menabrak perabot."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child measures and draws three new angles within 2° and calculates two unknown angles (one on a line, one around a point), on two different days.",
+      "id": "Dikuasai jika anak mengukur dan menggambar tiga sudut baru dengan selisih paling banyak 2° dan menghitung dua sudut yang belum diketahui (satu pada garis, satu di sekeliling titik), pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "245fec6b89807b2e"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

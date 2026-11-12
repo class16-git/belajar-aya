@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-stem-functions-parameters",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "level": "g6",
   "framework": "stem",
   "strand": "programming",
@@ -175,33 +175,33 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "A program calls square(5) and then square(2). What is the total line length?",
-        "id": "Sebuah program memanggil persegi(5) lalu persegi(2). Berapa panjang garis totalnya?"
+        "en": "A program calls square(7) and then square(2). What is the total line length?",
+        "id": "Sebuah program memanggil persegi(7) lalu persegi(2). Berapa panjang garis totalnya?"
       },
       "choices": {
         "en": [
-          "28 units",
-          "7 units",
-          "20 units"
+          "36 units",
+          "9 units",
+          "28 units"
         ],
         "id": [
-          "28 satuan",
-          "7 satuan",
-          "20 satuan"
+          "36 satuan",
+          "9 satuan",
+          "28 satuan"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "4 × 5 + 4 × 2 = 20 + 8 = 28.",
-        "id": "4 × 5 + 4 × 2 = 20 + 8 = 28."
+        "en": "4 × 7 + 4 × 2 = 28 + 8 = 36.",
+        "id": "4 × 7 + 4 × 2 = 28 + 8 = 36."
       },
       "distractorMisconceptions": {
         "1": "ADDS_PARAMETERS",
         "2": "ONLY_FIRST_CALL_RUNS"
       },
       "check": {
-        "expression": "4 × 5 + 4 × 2",
-        "result": "28"
+        "expression": "4 × 7 + 4 × 2",
+        "result": "36"
       }
     },
     {
@@ -449,7 +449,7 @@
   "rights": "original",
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -457,7 +457,12 @@
       "misconception-map",
       "bilingual-parity",
       "safety"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.2",
+    "reviewedHash": "ee3a0ba45c490945"
   },
   "provenance": {
     "origin": "ai_drafted",

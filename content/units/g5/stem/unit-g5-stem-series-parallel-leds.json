@@ -1,0 +1,511 @@
+{
+  "id": "unit-g5-stem-series-parallel-leds",
+  "version": "1.0.1",
+  "level": "g5",
+  "framework": "stem",
+  "strand": "electronics",
+  "title": {
+    "en": "Series and parallel: one path or many",
+    "id": "Seri dan paralel: satu jalur atau banyak"
+  },
+  "prerequisites": [
+    "unit-g5-stem-led-circuit-switch"
+  ],
+  "objective": {
+    "en": "Build two LEDs in series and in parallel on a sealed 2 × AA holder, explain why series red LEDs stay dark on 3 volts while parallel branches each light, and wire two foil switches in series (both needed) and in parallel (either works).",
+    "id": "Merakit dua LED secara seri dan paralel pada tempat baterai 2 × AA yang tertutup, menjelaskan mengapa LED merah yang diseri tetap gelap pada 3 volt sedangkan setiap cabang paralel menyala, serta memasang dua saklar foil secara seri (keduanya harus ditekan) dan paralel (salah satu cukup)."
+  },
+  "rationale": {
+    "en": "Once a child can light one LED, the next question is how to add more. Series and parallel answer it in opposite ways: one shared path, or separate branches. With LEDs on 3 volts the difference is dramatic and safe, and the same idea explains why house lights are wired so one can fail without the others going out, and how two switches can mean 'and' or 'or', the logic every robot uses.",
+    "id": "Setelah anak bisa menyalakan satu LED, pertanyaan berikutnya adalah bagaimana menambah lebih banyak. Seri dan paralel menjawabnya dengan cara berlawanan: satu jalur bersama, atau cabang-cabang terpisah. Dengan LED pada 3 volt perbedaannya sangat jelas dan aman, dan gagasan yang sama menjelaskan mengapa lampu rumah dirangkai sehingga satu bisa mati tanpa yang lain ikut padam, serta bagaimana dua saklar bisa berarti 'dan' atau 'atau', logika yang dipakai setiap robot."
+  },
+  "outcomes": [
+    {
+      "en": "Builds series and parallel LED circuits in the stated wiring order and predicts and explains the results.",
+      "id": "Merakit rangkaian LED seri dan paralel sesuai urutan sambungan yang ditentukan, serta menebak dan menjelaskan hasilnya."
+    },
+    {
+      "en": "Builds an 'and' circuit (switches in series) and an 'or' circuit (switches in parallel) and describes a use for each.",
+      "id": "Merakit rangkaian 'dan' (saklar seri) dan rangkaian 'atau' (saklar paralel) serta menjelaskan kegunaan masing-masing."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can trace one path in series and two paths in parallel.",
+      "id": "Aku bisa menelusuri satu jalur pada seri dan dua jalur pada paralel."
+    },
+    {
+      "en": "I can explain why each parallel branch has its own resistor.",
+      "id": "Aku bisa menjelaskan mengapa setiap cabang paralel punya resistornya sendiri."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Stay with your child for the whole session. Check the holder is sealed and switched off before batteries go in, and before every change to the wiring.",
+      "id": "Dampingi anak selama seluruh kegiatan. Periksa tempat baterai tertutup dan saklarnya mati sebelum baterai dipasang, dan sebelum setiap perubahan sambungan."
+    },
+    {
+      "en": "Read each wiring order aloud and tick each connection on the circuit card as your child makes it. Every LED path always includes a resistor.",
+      "id": "Bacakan setiap urutan sambungan dan centang setiap sambungan di kartu rangkaian saat anak membuatnya. Setiap jalur LED selalu memakai resistor."
+    },
+    {
+      "en": "Ask for a prediction before switching on: 'Brighter, the same, dimmer, or dark?' Then switch on, observe, and switch off before discussing.",
+      "id": "Minta tebakan sebelum menyalakan: 'Lebih terang, sama, lebih redup, atau gelap?' Lalu nyalakan, amati, dan matikan sebelum berdiskusi."
+    },
+    {
+      "en": "If anything feels warm, switch off at once and check for a short circuit before going on.",
+      "id": "Jika ada yang terasa hangat, segera matikan dan periksa korsleting sebelum melanjutkan."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Holder switch off. Make the connections in the order on the card, ticking each one.",
+      "id": "Saklar tempat baterai mati. Buat sambungan sesuai urutan di kartu, centang setiap sambungan."
+    },
+    {
+      "en": "Predict, switch on, observe, switch off.",
+      "id": "Tebak, nyalakan, amati, matikan."
+    },
+    {
+      "en": "Trace the path with your finger and explain what you saw.",
+      "id": "Telusuri jalurnya dengan jari dan jelaskan apa yang kamu lihat."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build series and parallel LED circuits and series and parallel switch circuits with crocodile-clip leads.",
+        "id": "Rakit rangkaian LED seri dan paralel serta rangkaian saklar seri dan paralel dengan kabel penjepit buaya."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw each circuit as a loop diagram: one loop for series, a ladder with two rungs for parallel. Mark the resistor in every LED path.",
+        "id": "Gambar setiap rangkaian sebagai diagram jalur: satu putaran untuk seri, tangga dengan dua anak tangga untuk paralel. Tandai resistor di setiap jalur LED."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Add voltages along a series path and compare with the battery's 3 volts; add branch currents for parallel.",
+        "id": "Jumlahkan tegangan di sepanjang jalur seri dan bandingkan dengan 3 volt baterai; jumlahkan arus cabang untuk paralel."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A sealed battery holder for 2 AA batteries, with an on-off switch and red and black wires, and 2 AA batteries",
+      "id": "Tempat baterai tertutup untuk 2 baterai AA, dengan saklar nyala-mati dan kabel merah dan hitam, serta 2 baterai AA"
+    },
+    {
+      "en": "2 standard 5 mm red LEDs (or one red and one yellow; not white, blue or green, which need more than 3 volts)",
+      "id": "2 LED merah standar 5 mm (atau satu merah dan satu kuning; bukan putih, biru, atau hijau, yang butuh lebih dari 3 volt)"
+    },
+    {
+      "en": "2 resistors of 220 ohms, one for each LED, and 1 extra 100-ohm resistor for comparing brightness",
+      "id": "2 resistor 220 ohm, satu untuk setiap LED, dan 1 resistor 100 ohm tambahan untuk membandingkan terang"
+    },
+    {
+      "en": "6 crocodile-clip leads",
+      "id": "6 kabel penjepit buaya"
+    },
+    {
+      "en": "Two foil switches made in the earlier circuit unit (foil strips on folded card)",
+      "id": "Dua saklar foil yang dibuat di unit rangkaian sebelumnya (potongan foil di karton terlipat)"
+    },
+    {
+      "en": "A circuit card with the wiring orders written out, and a box for all parts",
+      "id": "Kartu rangkaian berisi urutan sambungan, dan kotak untuk semua komponen"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult checks the holder is sealed, fits the batteries with the switch off, writes the four wiring orders on the circuit card, and clears the table of loose foil and metal objects.",
+      "id": "Orang dewasa memeriksa tempat baterai tertutup, memasang baterai dengan saklar mati, menulis empat urutan sambungan di kartu rangkaian, dan membersihkan meja dari sisa foil dan benda logam."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Series LEDs. Wiring order: red wire → resistor → long leg of LED A; short leg of LED A → long leg of LED B; short leg of LED B → black wire. Prediction: 'both light, a bit dimmer'. Switch on: both stay dark, or glow very faintly. Why? A red LED needs about 2 volts before it lights. In series the two LEDs share the battery's push, and together they need about 2 + 2 = 4 volts, more than the 3 volts available.",
+      "id": "LED seri. Urutan sambungan: kabel merah → resistor → kaki panjang LED A; kaki pendek LED A → kaki panjang LED B; kaki pendek LED B → kabel hitam. Tebakan: 'keduanya menyala, sedikit redup'. Nyalakan: keduanya tetap gelap, atau menyala sangat redup. Mengapa? LED merah butuh sekitar 2 volt sebelum menyala. Pada rangkaian seri kedua LED berbagi dorongan baterai, dan bersama-sama butuh sekitar 2 + 2 = 4 volt, lebih dari 3 volt yang tersedia."
+    },
+    {
+      "en": "Parallel LEDs, six leads, holder off. Lead 1: red wire → first leg of resistor A. Lead 2: second leg of resistor A → long leg of LED A. Lead 3: short leg of LED A → black wire. Lead 4: first leg of resistor A → first leg of resistor B. Lead 5: second leg of resistor B → long leg of LED B. Lead 6: short leg of LED B → short leg of LED A.",
+      "id": "LED paralel, enam kabel, saklar tempat baterai mati. Kabel 1: kabel merah → kaki pertama resistor A. Kabel 2: kaki kedua resistor A → kaki panjang LED A. Kabel 3: kaki pendek LED A → kabel hitam. Kabel 4: kaki pertama resistor A → kaki pertama resistor B. Kabel 5: kaki kedua resistor B → kaki panjang LED B. Kabel 6: kaki pendek LED B → kaki pendek LED A."
+    },
+    {
+      "en": "Switch on: both light brightly, because each branch gets the full 3 volts. Switch off, unclip lead 2, switch on: LED A goes out but LED B stays lit. Separate paths work separately. Two branches draw about twice the current, so the batteries run down faster.",
+      "id": "Nyalakan: keduanya menyala terang, karena setiap cabang mendapat 3 volt penuh. Matikan, lepas kabel 2, nyalakan: LED A padam tetapi LED B tetap menyala. Jalur terpisah bekerja terpisah. Dua cabang mengalirkan sekitar dua kali arus, sehingga baterai lebih cepat habis."
+    },
+    {
+      "en": "Switch logic, one LED and one resistor, holder off for every change. 'And' circuit (5 leads): lead 1 from the red wire to switch 1's left foil; lead 2 from switch 1's right foil to switch 2's left foil; lead 3 from switch 2's right foil to the resistor's first leg; lead 4 from the resistor's other leg to the LED's long leg; lead 5 from the LED's short leg to the black wire. Only pressing both switches lights the LED.",
+      "id": "Logika saklar, satu LED dan satu resistor, saklar tempat baterai dimatikan setiap ada perubahan. Rangkaian 'dan' (5 kabel): kabel 1 dari kabel merah ke foil kiri saklar 1; kabel 2 dari foil kanan saklar 1 ke foil kiri saklar 2; kabel 3 dari foil kanan saklar 2 ke kaki pertama resistor; kabel 4 dari kaki resistor yang lain ke kaki panjang LED; kabel 5 dari kaki pendek LED ke kabel hitam. Hanya menekan kedua saklar yang menyalakan LED."
+    },
+    {
+      "en": "'Or' circuit (6 leads): lead 1 from the red wire to switch 1's left foil; lead 2 from the red wire to switch 2's left foil; lead 3 from switch 1's right foil to the resistor's first leg; lead 4 from switch 2's right foil to the same resistor leg; lead 5 from the resistor's other leg to the LED's long leg; lead 6 from the LED's short leg to the black wire. Pressing either switch lights it. Nothing from a switch ever goes to the black wire. A safety guard that needs two hands pressed is 'and'; a doorbell with buttons at front and back is 'or'.",
+      "id": "Rangkaian 'atau' (6 kabel): kabel 1 dari kabel merah ke foil kiri saklar 1; kabel 2 dari kabel merah ke foil kiri saklar 2; kabel 3 dari foil kanan saklar 1 ke kaki pertama resistor; kabel 4 dari foil kanan saklar 2 ke kaki resistor yang sama; kabel 5 dari kaki resistor yang lain ke kaki panjang LED; kabel 6 dari kaki pendek LED ke kabel hitam. Menekan salah satu saklar menyalakannya. Tidak ada kabel dari saklar yang pernah langsung ke kabel hitam. Pengaman yang butuh dua tangan menekan adalah 'dan'; bel pintu dengan tombol di depan dan belakang adalah 'atau'."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Rebuild the parallel circuit from the card without help, ticking each connection. Then unclip branch B and predict what LED A will do.",
+      "id": "Rakit ulang rangkaian paralel dari kartu tanpa bantuan, centang setiap sambungan. Lalu lepas cabang B dan tebak apa yang akan terjadi pada LED A."
+    },
+    {
+      "en": "Draw a circuit diagram for a room with two lamps that must work separately. Label it series or parallel and explain your choice.",
+      "id": "Gambar diagram rangkaian untuk kamar dengan dua lampu yang harus bekerja terpisah. Beri label seri atau paralel dan jelaskan pilihanmu."
+    },
+    {
+      "en": "Design a 'two-key treasure box' alarm: the LED lights only when both lid switches are pressed. Build it, test every combination of pressed and not pressed, and record the results in a table.",
+      "id": "Rancang alarm 'kotak harta dua kunci': LED menyala hanya jika kedua saklar tutup ditekan. Rakit, uji setiap kombinasi ditekan dan tidak ditekan, dan catat hasilnya di tabel."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Three yellow LEDs, each needing about 2 volts, are wired in series. About how many volts do they need together?",
+        "id": "Tiga LED kuning, masing-masing butuh sekitar 2 volt, dirangkai seri. Sekitar berapa volt yang dibutuhkan bersama-sama?"
+      },
+      "choices": {
+        "en": [
+          "6 volts",
+          "2 volts",
+          "3 volts"
+        ],
+        "id": [
+          "6 volt",
+          "2 volt",
+          "3 volt"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "In series the voltages add: 3 × 2 = 6 volts, far more than 2 AA cells give.",
+        "id": "Pada seri tegangannya dijumlahkan: 3 × 2 = 6 volt, jauh lebih dari yang diberikan 2 sel AA."
+      },
+      "distractorMisconceptions": {
+        "1": "SERIES_SHARES_NOTHING",
+        "2": "COUNTS_LEDS_AS_VOLTS"
+      },
+      "check": {
+        "expression": "3 × 2",
+        "result": "6"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Two LEDs are in parallel, each in its own branch with its own resistor. One LED is unclipped. What happens to the other?",
+        "id": "Dua LED dirangkai paralel, masing-masing di cabangnya sendiri dengan resistornya sendiri. Satu LED dilepas. Apa yang terjadi pada yang lain?"
+      },
+      "choices": {
+        "en": [
+          "It stays lit, because its branch is still a complete loop",
+          "It goes out, because the circuit is broken",
+          "It gets twice as bright"
+        ],
+        "id": [
+          "Tetap menyala, karena cabangnya masih jalur yang lengkap",
+          "Padam, karena rangkaiannya terputus",
+          "Menjadi dua kali lebih terang"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each parallel branch is its own complete path back to the battery.",
+        "id": "Setiap cabang paralel adalah jalur lengkapnya sendiri kembali ke baterai."
+      },
+      "distractorMisconceptions": {
+        "1": "PARALLEL_ACTS_LIKE_SERIES",
+        "2": "CURRENT_REDIRECTS"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Each of 3 parallel LED branches draws about 5 milliamps. About how much current does the battery supply in total?",
+        "id": "Masing-masing dari 3 cabang LED paralel mengalirkan sekitar 5 miliampere. Sekitar berapa arus total yang diberikan baterai?"
+      },
+      "choices": {
+        "en": [
+          "15 milliamps",
+          "5 milliamps",
+          "8 milliamps"
+        ],
+        "id": [
+          "15 miliampere",
+          "5 miliampere",
+          "8 miliampere"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Branch currents add: 3 × 5 = 15 milliamps, so the batteries run down faster.",
+        "id": "Arus cabang dijumlahkan: 3 × 5 = 15 miliampere, sehingga baterai lebih cepat habis."
+      },
+      "distractorMisconceptions": {
+        "1": "BRANCHES_SHARE_ONE_CURRENT",
+        "2": "ADDS_INSTEAD_OF_MULTIPLYING"
+      },
+      "check": {
+        "expression": "3 × 5",
+        "result": "15"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A machine must only start when a worker presses two buttons, one with each hand. How should the two switches be wired?",
+        "id": "Sebuah mesin hanya boleh menyala jika pekerja menekan dua tombol, satu dengan setiap tangan. Bagaimana kedua saklar harus dirangkai?"
+      },
+      "choices": {
+        "en": [
+          "In series, so both must be closed",
+          "In parallel, so either one works",
+          "Straight across the battery wires"
+        ],
+        "id": [
+          "Seri, sehingga keduanya harus tertutup",
+          "Paralel, sehingga salah satu sudah cukup",
+          "Langsung di antara kabel baterai"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Series switches make an 'and': the path is complete only when both are closed.",
+        "id": "Saklar seri membuat 'dan': jalur lengkap hanya jika keduanya tertutup."
+      },
+      "distractorMisconceptions": {
+        "1": "AND_OR_SWAPPED",
+        "2": "SHORT_IS_SHORTCUT"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Why does each parallel LED branch need its own resistor?",
+        "id": "Mengapa setiap cabang LED paralel butuh resistornya sendiri?"
+      },
+      "choices": {
+        "en": [
+          "Each branch gets the full 3 volts, so each LED needs its own current limit",
+          "One resistor would make both LEDs brighter",
+          "Resistors are only needed in series circuits"
+        ],
+        "id": [
+          "Setiap cabang mendapat 3 volt penuh, jadi setiap LED butuh pembatas arusnya sendiri",
+          "Satu resistor akan membuat kedua LED lebih terang",
+          "Resistor hanya dibutuhkan di rangkaian seri"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Without its own resistor, an LED branch would take too much current and could be damaged.",
+        "id": "Tanpa resistornya sendiri, cabang LED akan mengalirkan arus terlalu besar dan bisa rusak."
+      },
+      "distractorMisconceptions": {
+        "1": "RESISTOR_ADDS_POWER",
+        "2": "RESISTOR_ONLY_IN_SERIES"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SERIES_SHARES_NOTHING",
+      "description": {
+        "en": "Thinks each LED in series gets the whole battery voltage.",
+        "id": "Mengira setiap LED pada seri mendapat seluruh tegangan baterai."
+      },
+      "remediation": {
+        "en": "Draw the battery as a 3-step staircase and each LED as a 2-step climb down: two climbs need 4 steps, but there are only 3.",
+        "id": "Gambar baterai sebagai tangga 3 anak tangga dan setiap LED sebagai turunan 2 anak tangga: dua turunan butuh 4 anak tangga, padahal hanya ada 3."
+      }
+    },
+    {
+      "code": "COUNTS_LEDS_AS_VOLTS",
+      "description": {
+        "en": "Gives the number of LEDs instead of the total voltage.",
+        "id": "Menyebut jumlah LED, bukan tegangan totalnya."
+      },
+      "remediation": {
+        "en": "Write '2 volts' on a sticky note for each LED, line them up, and add the notes.",
+        "id": "Tulis '2 volt' di kertas tempel untuk setiap LED, jajarkan, dan jumlahkan."
+      }
+    },
+    {
+      "code": "PARALLEL_ACTS_LIKE_SERIES",
+      "description": {
+        "en": "Thinks breaking any part of a parallel circuit turns everything off.",
+        "id": "Mengira memutus bagian mana pun dari rangkaian paralel mematikan semuanya."
+      },
+      "remediation": {
+        "en": "Trace each branch with a different coloured finger-path from red wire to black wire and see that the second path never passes the gap.",
+        "id": "Telusuri setiap cabang dengan jalur jari berwarna berbeda dari kabel merah ke kabel hitam dan lihat bahwa jalur kedua tidak pernah melewati celah."
+      }
+    },
+    {
+      "code": "CURRENT_REDIRECTS",
+      "description": {
+        "en": "Thinks the remaining branch gets the other branch's share and becomes brighter.",
+        "id": "Mengira cabang yang tersisa mendapat bagian cabang lain dan menjadi lebih terang."
+      },
+      "remediation": {
+        "en": "Compare LED B's brightness before and after unclipping LED A's lead: it looks the same.",
+        "id": "Bandingkan terangnya LED B sebelum dan sesudah kabel LED A dilepas: terlihat sama."
+      }
+    },
+    {
+      "code": "BRANCHES_SHARE_ONE_CURRENT",
+      "description": {
+        "en": "Thinks parallel branches share one fixed current.",
+        "id": "Mengira cabang paralel berbagi satu arus yang tetap."
+      },
+      "remediation": {
+        "en": "Picture water pipes: opening a second tap from the same tank lets more water flow out of the tank in total.",
+        "id": "Bayangkan pipa air: membuka keran kedua dari tangki yang sama membuat total air yang keluar dari tangki lebih banyak."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD_OF_MULTIPLYING",
+      "description": {
+        "en": "Adds the number of branches to the current instead of multiplying.",
+        "id": "Menjumlahkan banyak cabang dengan arusnya, bukan mengalikan."
+      },
+      "remediation": {
+        "en": "Write the branch currents as 5 + 5 + 5, one for each branch, before adding.",
+        "id": "Tulis arus cabang sebagai 5 + 5 + 5, satu untuk setiap cabang, sebelum menjumlahkan."
+      }
+    },
+    {
+      "code": "AND_OR_SWAPPED",
+      "description": {
+        "en": "Mixes up which wiring makes 'and' and which makes 'or'.",
+        "id": "Tertukar rangkaian mana yang membuat 'dan' dan mana yang membuat 'atau'."
+      },
+      "remediation": {
+        "en": "Make a table of both switches pressed or not pressed, test the circuit for every row, and match the pattern to the words 'both' or 'either'.",
+        "id": "Buat tabel kedua saklar ditekan atau tidak, uji rangkaiannya untuk setiap baris, dan cocokkan polanya dengan kata 'keduanya' atau 'salah satu'."
+      }
+    },
+    {
+      "code": "SHORT_IS_SHORTCUT",
+      "description": {
+        "en": "Thinks joining switches straight across the battery wires is a valid circuit.",
+        "id": "Mengira memasang saklar langsung di antara kabel baterai adalah rangkaian yang benar."
+      },
+      "remediation": {
+        "en": "Trace the path: from red wire, through the switch, straight to black with nothing useful in between. That is a short circuit that heats the batteries; the LED and resistor must be in the loop.",
+        "id": "Telusuri jalurnya: dari kabel merah, lewat saklar, langsung ke hitam tanpa ada yang berguna di antaranya. Itu korsleting yang memanaskan baterai; LED dan resistor harus ada di jalur."
+      }
+    },
+    {
+      "code": "RESISTOR_ADDS_POWER",
+      "description": {
+        "en": "Thinks a resistor adds power or brightness.",
+        "id": "Mengira resistor menambah daya atau terang."
+      },
+      "remediation": {
+        "en": "Compare one LED with a 100 ohm and then a 220 ohm resistor: the bigger resistor makes it dimmer, because it lets less current through.",
+        "id": "Bandingkan satu LED dengan resistor 100 ohm lalu 220 ohm: resistor yang lebih besar membuatnya lebih redup, karena mengalirkan arus lebih sedikit."
+      }
+    },
+    {
+      "code": "RESISTOR_ONLY_IN_SERIES",
+      "description": {
+        "en": "Thinks resistors are only needed in series circuits.",
+        "id": "Mengira resistor hanya dibutuhkan di rangkaian seri."
+      },
+      "remediation": {
+        "en": "Trace one parallel branch on its own: it is exactly the single-LED circuit from the earlier unit, which always needed a resistor.",
+        "id": "Telusuri satu cabang paralel sendirian: persis rangkaian satu LED dari unit sebelumnya, yang selalu butuh resistor."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Wire one red LED with its resistor in one branch and a red and a yellow LED in series with one resistor in a second branch. Predict which branch lights, then test.",
+      "id": "Rangkai satu LED merah dengan resistornya di satu cabang dan LED merah serta kuning secara seri dengan satu resistor di cabang kedua. Tebak cabang mana yang menyala, lalu uji."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use large crocodile clips and colour-code each branch with tape for a child with fine-motor or vision difficulties; a partner can read the wiring order aloud while the child ticks the card.",
+      "id": "Gunakan penjepit buaya besar dan beri kode warna setiap cabang dengan selotip untuk anak yang kesulitan motorik halus atau penglihatan; teman bisa membacakan urutan sambungan sementara anak mencentang kartu."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": true,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": true
+    },
+    "notes": [
+      {
+        "en": "Electricity: use only a sealed, store-bought holder for 2 AA batteries, with an adult present. No mains electricity, wall sockets or chargers, and no button or coin cells.",
+        "id": "Listrik: gunakan hanya tempat baterai tertutup buatan pabrik untuk 2 baterai AA, dengan orang dewasa hadir. Tanpa listrik PLN, stopkontak, atau pengisi daya, dan tanpa baterai kancing atau koin."
+      },
+      {
+        "en": "Every LED path always has its resistor. Never remove a resistor, and never join the red and black battery wires directly or through foil: that is a short circuit and the batteries can get hot.",
+        "id": "Setiap jalur LED selalu memakai resistornya. Jangan pernah melepas resistor, dan jangan pernah menyambung kabel baterai merah dan hitam secara langsung atau lewat foil: itu korsleting dan baterai bisa panas."
+      },
+      {
+        "en": "Foil switches always go in the loop with a resistor and an LED. Keep loose foil off the table. Switch off before every change; if anything feels warm, switch off and disconnect at once.",
+        "id": "Saklar foil selalu dipasang di jalur bersama resistor dan LED. Singkirkan sisa foil dari meja. Matikan sebelum setiap perubahan; jika ada yang terasa hangat, segera matikan dan lepaskan."
+      },
+      {
+        "en": "LEDs, resistors and batteries are small parts with pointed legs: count them back into the box, keep them away from younger siblings, and remove the batteries when you finish.",
+        "id": "LED, resistor, dan baterai adalah bagian kecil dengan kaki runcing: hitung kembali ke dalam kotak, jauhkan dari adik yang lebih kecil, dan keluarkan baterai setelah selesai."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 35,
+    "max": 55
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child builds series and parallel LED circuits and 'and'/'or' switch circuits from the wiring orders, keeps a resistor in every LED path, and explains each result.",
+      "id": "Dikuasai jika anak merakit rangkaian LED seri dan paralel serta rangkaian saklar 'dan'/'atau' dari urutan sambungan, menjaga resistor di setiap jalur LED, dan menjelaskan setiap hasil."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "3fbd958e8f9d3c90"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

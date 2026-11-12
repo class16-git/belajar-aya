@@ -1,0 +1,469 @@
+{
+  "id": "unit-g5-montessori-how-seeds-travel",
+  "version": "1.0.1",
+  "level": "g5",
+  "framework": "montessori",
+  "strand": "botany",
+  "title": {
+    "en": "How seeds travel",
+    "id": "Bagaimana biji berpindah"
+  },
+  "prerequisites": [
+    "unit-g4-montessori-parts-of-a-flower",
+    "unit-g2-montessori-roots-and-what-they-do"
+  ],
+  "objective": {
+    "en": "Classify seeds and fruits by how they are carried away from the parent plant (wind, water, animals, or bursting), link each method to the features that make it work, and run a fair test with paper winged seeds, using the mean of three timings.",
+    "id": "Mengelompokkan biji dan buah menurut cara berpindah menjauhi tumbuhan induknya (angin, air, hewan, atau meletus), menghubungkan setiap cara dengan ciri yang membuatnya berhasil, dan melakukan uji adil dengan biji bersayap dari kertas, memakai rata-rata tiga kali pengukuran waktu."
+  },
+  "rationale": {
+    "en": "After learning that the ovary of a flower becomes a fruit with seeds, the next question is how the seeds reach a good place to grow. Seed shapes are designs that solve a problem, which links botany to engineering. The paper-wing test practises a real fair test and simple statistics.",
+    "id": "Setelah mempelajari bahwa bakal buah pada bunga menjadi buah berbiji, pertanyaan berikutnya adalah bagaimana biji mencapai tempat yang baik untuk tumbuh. Bentuk biji adalah rancangan yang memecahkan masalah, sehingga botani terhubung dengan rekayasa. Uji sayap kertas melatih uji adil yang sesungguhnya dan statistik sederhana."
+  },
+  "outcomes": [
+    {
+      "en": "Sorts at least eight seeds or fruits into four dispersal groups and gives the feature behind each choice.",
+      "id": "Memilah sedikitnya delapan biji atau buah ke empat kelompok cara penyebaran dan menyebut ciri di balik setiap pilihan."
+    },
+    {
+      "en": "Explains why it helps a plant for its seeds to travel away from it.",
+      "id": "Menjelaskan mengapa tumbuhan diuntungkan jika bijinya berpindah menjauhinya."
+    },
+    {
+      "en": "Plans and carries out a fair test, changing one thing and keeping the rest the same, and calculates a mean.",
+      "id": "Merencanakan dan melakukan uji adil, mengubah satu hal dan menjaga yang lain tetap sama, serta menghitung rata-rata."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "The child sorts the collection correctly and justifies two tricky cases.",
+      "id": "Anak memilah koleksi dengan benar dan memberi alasan untuk dua kasus yang sulit."
+    },
+    {
+      "en": "The child's fair-test record names what was changed, what was kept the same, and the mean time for each design.",
+      "id": "Catatan uji adil anak menyebut apa yang diubah, apa yang dijaga tetap sama, dan rata-rata waktu untuk setiap rancangan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Collect a seed tray with your child from the neighbourhood and the kitchen: a mahogany (mahoni) winged seed from under a roadside tree, kapok fluff (kapuk randu) with its seeds, a coconut or a piece of its husk, hooked seeds from beggar-ticks weeds (ajeran) that stick to socks, guava or papaya seeds, and a balsam (pacar air) pod that bursts when touched.",
+      "id": "Kumpulkan nampan biji bersama anak dari lingkungan sekitar dan dapur: biji mahoni bersayap dari bawah pohon di pinggir jalan, kapuk randu dengan bijinya, kelapa atau sepotong sabutnya, biji ajeran berkait yang menempel di kaus kaki, biji jambu biji atau pepaya, dan polong pacar air yang meletus saat disentuh."
+    },
+    {
+      "en": "Accurate links: winged and fluffy seeds are carried by wind; coconuts and mangrove fruits float and travel by water; sweet, brightly coloured fruits are eaten by birds, bats and other animals, which drop the seeds elsewhere; hooked seeds catch on fur and clothes; some pods dry and burst, flinging seeds out.",
+      "id": "Hubungan yang akurat: biji bersayap dan berbulu terbawa angin; kelapa dan buah bakau mengapung dan berpindah lewat air; buah manis berwarna cerah dimakan burung, kelelawar, dan hewan lain, yang menjatuhkan bijinya di tempat lain; biji berkait tersangkut di bulu hewan dan pakaian; sebagian polong mengering lalu meletus, melontarkan bijinya."
+    },
+    {
+      "en": "Seeds that land right under the parent plant must share its shade, water and soil, so travelling gives them a better chance.",
+      "id": "Biji yang jatuh tepat di bawah tumbuhan induk harus berbagi naungan, air, dan tanah dengannya, sehingga berpindah memberi peluang yang lebih baik."
+    },
+    {
+      "en": "Do not collect seeds of the castor-oil plant or physic nut (jarak kepyar, jarak pagar), bright red saga seeds, or other unknown seeds; some are very poisonous. No seeds are tasted.",
+      "id": "Jangan mengumpulkan biji jarak kepyar, jarak pagar, biji saga yang merah cerah, atau biji lain yang tidak dikenal; sebagian sangat beracun. Tidak ada biji yang dicicipi."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Look closely at each seed or fruit with the magnifier. What feature does it have: wings, fluff, hooks, a light husk, sweet flesh, or a pod?",
+      "id": "Amati setiap biji atau buah dengan kaca pembesar. Ciri apa yang dimilikinya: sayap, bulu halus, kait, sabut yang ringan, daging buah yang manis, atau polong?"
+    },
+    {
+      "en": "Sort them into four groups: wind, water, animals, bursting. Write one reason for each.",
+      "id": "Pilah menjadi empat kelompok: angin, air, hewan, meletus. Tulis satu alasan untuk masing-masing."
+    },
+    {
+      "en": "Make paper winged seeds and test which design falls most slowly. Change only one thing.",
+      "id": "Buat biji bersayap dari kertas dan uji rancangan mana yang jatuh paling lambat. Ubah satu hal saja."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "A collection of six to ten seeds and fruits on a tray (see the parent notes), each in its own small dish",
+      "id": "Koleksi enam sampai sepuluh biji dan buah di nampan (lihat catatan orang tua), masing-masing di piring kecilnya sendiri"
+    },
+    {
+      "en": "A magnifying glass, four group cards (wind, water, animals, bursting) and a basin of water for the float test",
+      "id": "Kaca pembesar, empat kartu kelompok (angin, air, hewan, meletus), dan baskom berisi air untuk uji mengapung"
+    },
+    {
+      "en": "Paper, a ruler, paper clips for weight, a stopwatch or phone timer, and a tape measure for a 2 m drop height",
+      "id": "Kertas, penggaris, penjepit kertas sebagai pemberat, stopwatch atau pengatur waktu ponsel, dan meteran untuk ketinggian jatuh 2 m"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Prepare a paper winged-seed template: a strip 12 cm × 3 cm, cut halfway down the middle and folded into two wings, with a paper clip at the bottom.",
+      "id": "Siapkan pola biji bersayap dari kertas: potongan 12 cm × 3 cm, digunting separuh di tengahnya dan dilipat menjadi dua sayap, dengan penjepit kertas di bawahnya."
+    },
+    {
+      "en": "Mark a drop point 2 m high on a wall, away from fans and open windows.",
+      "id": "Tandai titik jatuh setinggi 2 m di dinding, jauh dari kipas angin dan jendela yang terbuka."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Hold up the mahogany seed: \"Feel how light it is, with one flat wing. Drop it.\" Watch it spin slowly down. \"A spinning wing slows the fall, so a breeze can carry it further from the tree. Wind.\" Place it on the wind card.",
+      "id": "Angkat biji mahoni: \"Rasakan betapa ringannya, dengan satu sayap pipih. Jatuhkan.\" Amati biji berputar pelan ke bawah. \"Sayap yang berputar memperlambat jatuhnya, sehingga angin bisa membawanya lebih jauh dari pohon. Angin.\" Letakkan di kartu angin."
+    },
+    {
+      "en": "Float a piece of coconut husk in the basin: \"It is light and full of air spaces. A coconut can float in the sea to another beach. Water.\" Press a hooked seed onto a sock: \"It catches on fur and clothes. Animals.\"",
+      "id": "Apungkan sepotong sabut kelapa di baskom: \"Sabut ringan dan penuh rongga udara. Kelapa bisa mengapung di laut ke pantai lain. Air.\" Tempelkan biji ajeran ke kaus kaki: \"Biji ini tersangkut di bulu hewan dan pakaian. Hewan.\""
+    },
+    {
+      "en": "Fair test: drop the 12 cm paper seed from the 2 m mark three times and time each fall: 1.8 s, 2.0 s and 2.2 s. Add them and divide by 3: 6.0 ÷ 3 = 2.0 s. Then make a seed with longer wings and keep everything else the same.",
+      "id": "Uji adil: jatuhkan biji kertas 12 cm dari tanda 2 m sebanyak tiga kali dan ukur waktu setiap jatuhnya: 1,8 detik, 2,0 detik, dan 2,2 detik. Jumlahkan dan bagi 3: 6,0 ÷ 3 = 2,0 detik. Lalu buat biji dengan sayap yang lebih panjang dan jaga semua yang lain tetap sama."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Sort the whole tray into the four groups and write the feature behind each choice in a table.",
+      "id": "Pilah seluruh nampan ke empat kelompok dan tulis ciri di balik setiap pilihan dalam tabel."
+    },
+    {
+      "en": "Test three wing lengths (8 cm, 12 cm and 16 cm strips), three drops each, and record the mean for each in a table.",
+      "id": "Uji tiga panjang sayap (potongan 8 cm, 12 cm, dan 16 cm), masing-masing tiga kali jatuh, dan catat rata-ratanya dalam tabel."
+    },
+    {
+      "en": "Sock walk: walk across a weedy patch in old socks over your shoes, then look at what has stuck to them.",
+      "id": "Jalan-jalan kaus kaki: berjalan melintasi tanah berumput dengan kaus kaki bekas di luar sepatu, lalu lihat apa yang menempel."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A seed is very light and has a ring of fine hairs on top, like a little parachute. How is it most likely carried away?",
+        "id": "Sebuah biji sangat ringan dan punya lingkaran rambut halus di atasnya, seperti parasut kecil. Bagaimana kemungkinan besar biji ini berpindah?"
+      },
+      "choices": {
+        "en": [
+          "By the wind",
+          "By floating on water",
+          "By its pod bursting"
+        ],
+        "id": [
+          "Terbawa angin",
+          "Mengapung di air",
+          "Polongnya meletus"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Light weight and a parachute of hairs let the air hold it up long enough for the wind to carry it.",
+        "id": "Bobot yang ringan dan parasut rambut membuat udara menahannya cukup lama agar angin bisa membawanya."
+      },
+      "distractorMisconceptions": {
+        "1": "LIGHT_MEANS_FLOATS",
+        "2": "GUESSES_WITHOUT_FEATURE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A plant has sweet, bright red fruits full of small hard seeds. How are its seeds most likely spread?",
+        "id": "Sebuah tumbuhan punya buah merah cerah yang manis, penuh biji kecil yang keras. Bagaimana kemungkinan besar bijinya tersebar?"
+      },
+      "choices": {
+        "en": [
+          "Animals eat the fruit and drop the seeds somewhere else",
+          "The wind blows the heavy fruits away",
+          "The fruits explode in the sun"
+        ],
+        "id": [
+          "Hewan memakan buahnya dan menjatuhkan bijinya di tempat lain",
+          "Angin meniup buah yang berat itu",
+          "Buahnya meledak di bawah matahari"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Sweet, colourful flesh attracts birds and other animals; the hard seeds pass through or are dropped away from the plant.",
+        "id": "Daging buah yang manis dan berwarna menarik burung dan hewan lain; biji yang keras keluar bersama kotoran atau dijatuhkan jauh dari tumbuhan."
+      },
+      "distractorMisconceptions": {
+        "1": "CONFUSES_CARRIER",
+        "2": "GUESSES_WITHOUT_FEATURE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Sari now tests whether the number of paper clips changes how long a paper seed takes to fall. What must she keep the same?",
+        "id": "Sari kini menguji apakah jumlah penjepit kertas mengubah lamanya biji kertas jatuh. Apa yang harus dijaga tetap sama?"
+      },
+      "choices": {
+        "en": [
+          "The wing length, the paper and the drop height",
+          "Nothing; she should change everything to see what happens",
+          "The number of paper clips"
+        ],
+        "id": [
+          "Panjang sayap, jenis kertas, dan ketinggian jatuh",
+          "Tidak ada; ia sebaiknya mengubah semuanya untuk melihat hasilnya",
+          "Jumlah penjepit kertasnya"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Only the number of paper clips changes; everything else stays the same, so any difference must come from the clips.",
+        "id": "Hanya jumlah penjepit kertas yang berubah; semua yang lain tetap sama, sehingga perbedaan apa pun pasti berasal dari penjepit kertas."
+      },
+      "distractorMisconceptions": {
+        "1": "CHANGES_EVERYTHING",
+        "2": "KEEPS_TESTED_VARIABLE_FIXED"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A paper seed's three falls took 2.9 s, 3.4 s and 3.3 s. What is the mean fall time?",
+        "id": "Tiga kali jatuhnya biji kertas memakan waktu 2,9 detik, 3,4 detik, dan 3,3 detik. Berapa rata-rata waktu jatuhnya?"
+      },
+      "choices": {
+        "en": [
+          "3.2 seconds",
+          "9.6 seconds",
+          "3.4 seconds"
+        ],
+        "id": [
+          "3,2 detik",
+          "9,6 detik",
+          "3,4 detik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Add the times and divide by how many there are: (2.9 + 3.4 + 3.3) ÷ 3 = 9.6 ÷ 3 = 3.2 s.",
+        "id": "Jumlahkan waktunya lalu bagi dengan banyaknya: (2,9 + 3,4 + 3,3) ÷ 3 = 9,6 ÷ 3 = 3,2 detik."
+      },
+      "check": {
+        "expression": "(2.9 + 3.4 + 3.3) / 3",
+        "result": "3.2"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_TO_DIVIDE",
+        "2": "PICKS_LARGEST_VALUE"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Why is it good for a plant if its seeds travel away from it?",
+        "id": "Mengapa tumbuhan diuntungkan jika bijinya berpindah menjauhinya?"
+      },
+      "choices": {
+        "en": [
+          "Seedlings far away do not have to share the parent's shade, water and soil",
+          "Seeds must travel so that rain can reach them",
+          "Seeds close to the parent always grow faster"
+        ],
+        "id": [
+          "Bibit yang jauh tidak perlu berbagi naungan, air, dan tanah dengan induknya",
+          "Biji harus berpindah agar terkena hujan",
+          "Biji yang dekat dengan induk selalu tumbuh lebih cepat"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Spreading out reduces crowding and competition, and lets the plant reach new places.",
+        "id": "Menyebar mengurangi kepadatan dan persaingan, serta membuat tumbuhan mencapai tempat baru."
+      },
+      "distractorMisconceptions": {
+        "1": "TRAVEL_FOR_WATER_ONLY",
+        "2": "CLOSE_IS_BETTER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "LIGHT_MEANS_FLOATS",
+      "description": {
+        "en": "Thinks any light seed is carried by water.",
+        "id": "Mengira semua biji ringan terbawa air."
+      },
+      "remediation": {
+        "en": "Do both tests on the same seed: blow it gently across the table, and drop it in the basin. Ask which feature (hairs or air-filled husk) suits which test.",
+        "id": "Lakukan kedua uji pada biji yang sama: tiup pelan di atas meja, dan jatuhkan ke baskom. Tanyakan ciri mana (rambut atau sabut berongga udara) yang cocok untuk uji yang mana."
+      }
+    },
+    {
+      "code": "GUESSES_WITHOUT_FEATURE",
+      "description": {
+        "en": "Chooses a group without naming a feature.",
+        "id": "Memilih kelompok tanpa menyebut cirinya."
+      },
+      "remediation": {
+        "en": "Before sorting, the child must say \"It has ...\" for each seed; write the feature on a sticky note beside it, then sort.",
+        "id": "Sebelum memilah, anak harus mengatakan \"Biji ini punya ...\" untuk setiap biji; tulis cirinya di kertas tempel di sampingnya, lalu pilah."
+      }
+    },
+    {
+      "code": "CONFUSES_CARRIER",
+      "description": {
+        "en": "Mixes up which carrier suits which feature.",
+        "id": "Tertukar pembawa mana yang cocok dengan ciri yang mana."
+      },
+      "remediation": {
+        "en": "Make a matching chart: feature cards (wings, fluff, hooks, sweet flesh, air-filled husk, dry pod) matched to carrier cards, checking with a real example for each.",
+        "id": "Buat bagan pencocokan: kartu ciri (sayap, bulu halus, kait, daging manis, sabut berongga, polong kering) dicocokkan dengan kartu pembawa, diperiksa dengan contoh nyata untuk masing-masing."
+      }
+    },
+    {
+      "code": "CHANGES_EVERYTHING",
+      "description": {
+        "en": "Changes several things at once in a test.",
+        "id": "Mengubah beberapa hal sekaligus dalam uji."
+      },
+      "remediation": {
+        "en": "Run a deliberately unfair test together: change both wing length and paper type, then ask \"Which change made the difference?\" and see that no one can tell.",
+        "id": "Lakukan uji yang sengaja tidak adil bersama: ubah panjang sayap dan jenis kertas sekaligus, lalu tanyakan \"Perubahan mana yang membuat perbedaan?\" dan lihat bahwa tidak ada yang bisa tahu."
+      }
+    },
+    {
+      "code": "KEEPS_TESTED_VARIABLE_FIXED",
+      "description": {
+        "en": "Keeps the very thing being tested the same.",
+        "id": "Menjaga hal yang justru sedang diuji tetap sama."
+      },
+      "remediation": {
+        "en": "Write the question at the top of the record, \"Does wing length change the fall time?\", and underline what must change: wing length.",
+        "id": "Tulis pertanyaannya di atas catatan, \"Apakah panjang sayap mengubah waktu jatuh?\", dan garis bawahi apa yang harus berubah: panjang sayap."
+      }
+    },
+    {
+      "code": "FORGETS_TO_DIVIDE",
+      "description": {
+        "en": "Gives the total instead of the mean.",
+        "id": "Memberikan jumlah alih-alih rata-rata."
+      },
+      "remediation": {
+        "en": "Show the mean as \"levelling out\": three paper strips cut to 3.1, 2.9 and 3.3 cm laid end to end, then cut into three equal pieces.",
+        "id": "Tunjukkan rata-rata sebagai \"meratakan\": tiga potong kertas sepanjang 3,1, 2,9, dan 3,3 cm disambung, lalu dipotong menjadi tiga bagian sama panjang."
+      }
+    },
+    {
+      "code": "PICKS_LARGEST_VALUE",
+      "description": {
+        "en": "Chooses the largest or a single reading as the answer.",
+        "id": "Memilih nilai terbesar atau satu hasil pengukuran sebagai jawaban."
+      },
+      "remediation": {
+        "en": "Ask whether the mean can be bigger than every reading. Mark the three times on a number line and see that the mean sits among them.",
+        "id": "Tanyakan apakah rata-rata bisa lebih besar dari setiap hasil. Tandai ketiga waktu di garis bilangan dan lihat bahwa rata-rata berada di antaranya."
+      }
+    },
+    {
+      "code": "TRAVEL_FOR_WATER_ONLY",
+      "description": {
+        "en": "Thinks seeds travel just to find rain.",
+        "id": "Mengira biji berpindah hanya untuk mencari hujan."
+      },
+      "remediation": {
+        "en": "Sow a spoonful of seeds in one tight pile in a pot and a spoonful spread across another pot; compare the seedlings after two weeks.",
+        "id": "Tabur sesendok biji dalam satu tumpukan rapat di satu pot dan sesendok lagi disebar di pot lain; bandingkan bibitnya setelah dua minggu."
+      }
+    },
+    {
+      "code": "CLOSE_IS_BETTER",
+      "description": {
+        "en": "Thinks staying near the parent is best.",
+        "id": "Mengira tetap dekat dengan induk adalah yang terbaik."
+      },
+      "remediation": {
+        "en": "Look under a large tree for seedlings: are many growing in its deep shade? Compare with seedlings in an open, sunny patch.",
+        "id": "Lihat bibit di bawah pohon besar: apakah banyak yang tumbuh di bawah naungannya yang gelap? Bandingkan dengan bibit di tempat terbuka yang terkena matahari."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Design a paper seed that stays up as long as possible, using what the tests showed, and explain each design choice.",
+      "id": "Rancang biji kertas yang melayang selama mungkin, memakai hasil uji, dan jelaskan setiap pilihan rancangan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who finds timing hard can work with a partner: one drops, one times, then swap.",
+      "id": "Anak yang kesulitan mengukur waktu boleh bekerja berpasangan: satu menjatuhkan, satu mengukur waktu, lalu bertukar."
+    },
+    {
+      "en": "Use large real fruits and a big magnifier for a child with low vision, and let her feel the wings, hooks and husk.",
+      "id": "Pakai buah asli yang besar dan kaca pembesar besar untuk anak dengan penglihatan rendah, dan biarkan ia meraba sayap, kait, dan sabutnya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": true,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Never taste seeds or fruits from the collection, and do not collect castor-oil plant or physic nut (jarak kepyar, jarak pagar) seeds, bright red saga seeds or unknown seeds. Wash hands after handling.",
+        "id": "Jangan pernah mencicipi biji atau buah dari koleksi, dan jangan mengumpulkan biji jarak kepyar, jarak pagar, biji saga merah, atau biji yang tidak dikenal. Cuci tangan setelah memegangnya."
+      },
+      {
+        "en": "Seeds and paper clips are small items: keep them away from children under five. The adult uses the scissors for cutting coconut husk or pods.",
+        "id": "Biji dan penjepit kertas adalah benda kecil: jauhkan dari anak di bawah lima tahun. Orang dewasa memakai gunting untuk memotong sabut kelapa atau polong."
+      },
+      {
+        "en": "The 2 m drop is done by an adult standing on the floor while the child times it; never stand on a chair. Empty the float basin straight after use.",
+        "id": "Jatuhan dari 2 m dilakukan oleh orang dewasa yang berdiri di lantai sementara anak mengukur waktunya; jangan pernah berdiri di atas kursi. Kosongkan baskom uji mengapung segera setelah dipakai."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 50
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      10,
+      30
+    ],
+    "masteryRule": {
+      "en": "Secure when the child sorts a new seed collection with reasons and completes a fair test with correct means, on two different days.",
+      "id": "Dikuasai jika anak memilah koleksi biji baru dengan alasan dan menyelesaikan uji adil dengan rata-rata yang benar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "science_facts_check"
+  ],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "age-fit"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "31159b3c56136c7a"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,467 @@
+{
+  "id": "unit-g3-stem-catapult-design-iteration",
+  "version": "1.0.1",
+  "level": "g3",
+  "framework": "stem",
+  "strand": "engineering_design",
+  "title": {
+    "en": "Catapult challenge: design, test, improve",
+    "id": "Tantangan ketapel: rancang, uji, perbaiki"
+  },
+  "prerequisites": [
+    "unit-g1-stem-ruler-lever-balance",
+    "unit-g3-stem-paper-bridge-design"
+  ],
+  "objective": {
+    "en": "Build a craft-stick catapult (a lever), change one design variable at a time, measure three launches for each version and use the middle result, and improve the design until a paper ball lands in a target basket.",
+    "id": "Membuat ketapel dari stik es krim (sebuah tuas), mengubah satu variabel rancangan setiap kali, mengukur tiga lemparan untuk setiap versi dan memakai hasil tengahnya, serta memperbaiki rancangan sampai bola kertas mendarat di keranjang sasaran."
+  },
+  "rationale": {
+    "en": "A catapult is a lever that stores energy in its bent sticks and rubber bands. It is the perfect engineering loop: every launch is a test, results vary, and changing one thing at a time shows what really matters. Using the middle of three results teaches children not to trust a single lucky shot.",
+    "id": "Ketapel adalah tuas yang menyimpan energi di stik yang melengkung dan karet gelangnya. Ini siklus rekayasa yang sempurna: setiap lemparan adalah uji, hasilnya bervariasi, dan mengubah satu hal setiap kali menunjukkan apa yang benar-benar berpengaruh. Memakai nilai tengah dari tiga hasil mengajarkan anak untuk tidak memercayai satu lemparan yang kebetulan bagus."
+  },
+  "outcomes": [
+    {
+      "en": "Builds a working catapult and identifies the bar, pivot and load as in a lever.",
+      "id": "Membuat ketapel yang berfungsi dan mengenali batang, titik tumpu, dan beban seperti pada tuas."
+    },
+    {
+      "en": "Tests at least two versions fairly, records three launches each, picks the middle value, and uses the results to hit a target.",
+      "id": "Menguji sedikitnya dua versi dengan adil, mencatat tiga lemparan untuk masing-masing, memilih nilai tengah, dan memakai hasilnya untuk mengenai sasaran."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I change one thing at a time.",
+      "id": "Aku mengubah satu hal setiap kali."
+    },
+    {
+      "en": "I use the middle of three launches, not my best one.",
+      "id": "Aku memakai nilai tengah dari tiga lemparan, bukan yang terbaik."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Set the safety rules before building: launch only paper balls, only towards the empty launch zone, and only when everyone is behind the catapult.",
+      "id": "Tetapkan aturan keselamatan sebelum membuat: luncurkan hanya bola kertas, hanya ke arah zona peluncuran yang kosong, dan hanya saat semua orang ada di belakang ketapel."
+    },
+    {
+      "en": "Mark a start line with tape and lay the tape measure along the floor. Agree how to measure: from the start line to where the ball first touches the floor.",
+      "id": "Tandai garis mulai dengan selotip dan bentangkan meteran di lantai. Sepakati cara mengukur: dari garis mulai sampai tempat bola pertama kali menyentuh lantai."
+    },
+    {
+      "en": "Help your child keep a design journal: sketch each version, write what changed, record three launches and circle the middle value.",
+      "id": "Bantu anak membuat jurnal rancangan: gambar setiap versi, tulis apa yang diubah, catat tiga lemparan, dan lingkari nilai tengahnya."
+    },
+    {
+      "en": "End with reflection: 'Which change made the biggest difference? What would you try next?'",
+      "id": "Akhiri dengan renungan: 'Perubahan mana yang paling berpengaruh? Apa yang ingin kamu coba berikutnya?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Build the catapult: a stack of sticks for the pivot, two sticks in a V for the arm, and a spoon on top.",
+      "id": "Buat ketapel: tumpukan stik untuk titik tumpu, dua stik membentuk huruf V untuk lengan, dan sendok di atas."
+    },
+    {
+      "en": "Launch three times, measure each one, and circle the middle number.",
+      "id": "Luncurkan tiga kali, ukur masing-masing, dan lingkari angka tengahnya."
+    },
+    {
+      "en": "Change one thing, predict, test again, and keep improving until you hit the basket.",
+      "id": "Ubah satu hal, tebak, uji lagi, dan terus perbaiki sampai mengenai keranjang."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build and launch the catapult and measure each landing with a tape measure.",
+        "id": "Buat dan luncurkan ketapel dan ukur setiap pendaratan dengan meteran."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw each version in the design journal with the change labelled, and mark landings as dots on a floor sketch.",
+        "id": "Gambar setiap versi di jurnal rancangan dengan perubahan yang diberi label, dan tandai pendaratan sebagai titik pada sketsa lantai."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Order each set of three distances from smallest to largest, circle the middle one, and find the difference between versions.",
+        "id": "Urutkan setiap set tiga jarak dari terkecil sampai terbesar, lingkari yang tengah, dan cari selisih antarversi."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "12 wooden ice-cream sticks",
+      "id": "12 stik es krim dari kayu"
+    },
+    {
+      "en": "6 rubber bands",
+      "id": "6 karet gelang"
+    },
+    {
+      "en": "A plastic spoon and sticky tape",
+      "id": "Sendok plastik dan selotip"
+    },
+    {
+      "en": "Paper balls: half sheets of scrap paper crumpled tightly, all the same size",
+      "id": "Bola kertas: setengah lembar kertas bekas yang diremas padat, semua sama besar"
+    },
+    {
+      "en": "A tape measure, masking tape for a start line, and a basket or box as the target",
+      "id": "Meteran, selotip kertas untuk garis mulai, dan keranjang atau kardus sebagai sasaran"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Check the sticks for splinters and the rubber bands for cracks. Clear a launch zone about 3 metres long with nothing breakable in it, and put the basket 150 cm from the start line.",
+      "id": "Periksa stik dari serpihan dan karet gelang dari retakan. Kosongkan zona peluncuran sepanjang sekitar 3 meter tanpa barang yang mudah pecah, dan taruh keranjang 150 cm dari garis mulai."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Version 1: stack 5 sticks and band both ends to make the pivot. Band 2 more sticks together at one end only to make a V. Slide the stack into the V, near the banded end, and band it in a cross shape. Tape the spoon to the top stick. Press the spoon down and let go.",
+      "id": "Versi 1: tumpuk 5 stik dan ikat kedua ujungnya dengan karet untuk titik tumpu. Ikat 2 stik lagi hanya di satu ujung sehingga membentuk huruf V. Selipkan tumpukan ke dalam V, dekat ujung yang diikat, lalu ikat bersilang. Rekatkan sendok ke stik atas. Tekan sendok ke bawah lalu lepaskan."
+    },
+    {
+      "en": "Three launches, example results: 95 cm, 120 cm, 104 cm. In order: 95, 104, 120. The middle value is 104 cm. 'We use the middle so one odd launch does not fool us.'",
+      "id": "Tiga lemparan, contoh hasil: 95 cm, 120 cm, 104 cm. Urutannya: 95, 104, 120. Nilai tengahnya 104 cm. 'Kita pakai nilai tengah agar satu lemparan yang aneh tidak menipu kita.'"
+    },
+    {
+      "en": "Version 2, one change only: a stack of 7 sticks instead of 5. Prediction: 'further'. Example results: 128, 140, 133; middle value 133 cm. The ball is now closer to the basket at 150 cm. Next idea: try 9 sticks, or press the spoon down further each time, but never both at once.",
+      "id": "Versi 2, hanya satu perubahan: tumpukan 7 stik, bukan 5. Tebakan: 'lebih jauh'. Contoh hasil: 128, 140, 133; nilai tengah 133 cm. Bolanya sekarang lebih dekat ke keranjang di 150 cm. Ide berikutnya: coba 9 stik, atau tekan sendok lebih dalam setiap kali, tetapi jangan keduanya sekaligus."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Test a third version that changes a different variable, such as where the spoon is taped or how many rubber bands hold the V. Record three launches and the middle value.",
+      "id": "Uji versi ketiga yang mengubah variabel lain, misalnya letak sendok direkatkan atau jumlah karet yang mengikat V. Catat tiga lemparan dan nilai tengahnya."
+    },
+    {
+      "en": "Target challenge: use your results to choose a design and get three paper balls into the basket. Write which version you chose and why.",
+      "id": "Tantangan sasaran: pakai hasilmu untuk memilih rancangan dan masukkan tiga bola kertas ke keranjang. Tulis versi mana yang kamu pilih dan mengapa."
+    },
+    {
+      "en": "Move the basket to 100 cm. Which version should work best now? Predict from your journal, then test.",
+      "id": "Pindahkan keranjang ke 100 cm. Versi mana yang sekarang paling cocok? Tebak dari jurnalmu, lalu uji."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A catapult's three launches landed at 140 cm, 90 cm and 115 cm. What is the middle value?",
+        "id": "Tiga lemparan ketapel mendarat di 140 cm, 90 cm, dan 115 cm. Berapa nilai tengahnya?"
+      },
+      "choices": {
+        "en": [
+          "115 cm",
+          "90 cm",
+          "140 cm"
+        ],
+        "id": [
+          "115 cm",
+          "90 cm",
+          "140 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Put them in order: 90, 115, 140. The middle one is 115 cm.",
+        "id": "Urutkan: 90, 115, 140. Yang tengah adalah 115 cm."
+      },
+      "distractorMisconceptions": {
+        "1": "MIDDLE_OF_LIST_AS_WRITTEN",
+        "2": "USES_BEST_RESULT"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Version A's middle value was 110 cm. Version B's was 145 cm. How much further did version B launch?",
+        "id": "Nilai tengah versi A 110 cm. Nilai tengah versi B 145 cm. Berapa lebih jauh lemparan versi B?"
+      },
+      "choices": {
+        "en": [
+          "35 cm",
+          "255 cm",
+          "145 cm"
+        ],
+        "id": [
+          "35 cm",
+          "255 cm",
+          "145 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Compare by subtracting: 145 - 110 = 35 cm.",
+        "id": "Bandingkan dengan mengurangkan: 145 - 110 = 35 cm."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "REPORTS_ONE_RESULT"
+      },
+      "check": {
+        "expression": "145 - 110",
+        "result": "35"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Lina added two sticks to the pivot and also used a bigger paper ball. Her ball went further. What can she conclude?",
+        "id": "Lina menambah dua stik ke titik tumpu dan juga memakai bola kertas yang lebih besar. Bolanya meluncur lebih jauh. Apa kesimpulannya?"
+      },
+      "choices": {
+        "en": [
+          "She cannot tell which change helped, because she changed two things",
+          "The bigger ball made it go further",
+          "The extra sticks made it go further"
+        ],
+        "id": [
+          "Ia tidak bisa tahu perubahan mana yang membantu, karena ia mengubah dua hal",
+          "Bola yang lebih besar membuatnya lebih jauh",
+          "Stik tambahan membuatnya lebih jauh"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "With two changes at once, the result cannot be pinned on either one.",
+        "id": "Dengan dua perubahan sekaligus, hasilnya tidak bisa dipastikan berasal dari salah satunya."
+      },
+      "distractorMisconceptions": {
+        "1": "PICKS_A_CAUSE_ANYWAY",
+        "2": "PICKS_A_CAUSE_ANYWAY"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "The basket is 150 cm away. A launch lands at 128 cm. How far short of the basket is it?",
+        "id": "Keranjang berada 150 cm jauhnya. Satu lemparan mendarat di 128 cm. Berapa kurangnya dari keranjang?"
+      },
+      "choices": {
+        "en": [
+          "22 cm",
+          "278 cm",
+          "38 cm"
+        ],
+        "id": [
+          "22 cm",
+          "278 cm",
+          "38 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "150 - 128 = 22 cm short.",
+        "id": "150 - 128 = kurang 22 cm."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "SUBTRACTION_DIGIT_SLIP"
+      },
+      "check": {
+        "expression": "150 - 128",
+        "result": "22"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Why do we launch three times instead of once?",
+        "id": "Mengapa kita meluncurkan tiga kali, bukan sekali?"
+      },
+      "choices": {
+        "en": [
+          "Results vary, so the middle of three is more trustworthy than one launch",
+          "So we can keep the best launch and forget the others",
+          "Because the rubber band needs to warm up"
+        ],
+        "id": [
+          "Hasilnya bervariasi, jadi nilai tengah dari tiga lebih bisa dipercaya daripada satu lemparan",
+          "Supaya kita bisa menyimpan lemparan terbaik dan melupakan yang lain",
+          "Karena karetnya perlu pemanasan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Repeating shows how much results vary; the middle value is a fair summary.",
+        "id": "Mengulang menunjukkan seberapa besar hasil bervariasi; nilai tengah adalah ringkasan yang adil."
+      },
+      "distractorMisconceptions": {
+        "1": "USES_BEST_RESULT",
+        "2": "WRONG_CAUSE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "MIDDLE_OF_LIST_AS_WRITTEN",
+      "description": {
+        "en": "Takes the middle number as written instead of putting the results in order first.",
+        "id": "Mengambil angka tengah sesuai urutan tulisan, bukan mengurutkan hasilnya lebih dulu."
+      },
+      "remediation": {
+        "en": "Write each result on a sticky note, line them up from shortest to longest on the floor, and point to the one in the middle.",
+        "id": "Tulis setiap hasil di kertas tempel, jajarkan dari terpendek sampai terjauh di lantai, dan tunjuk yang di tengah."
+      }
+    },
+    {
+      "code": "USES_BEST_RESULT",
+      "description": {
+        "en": "Reports or keeps only the best launch.",
+        "id": "Hanya melaporkan atau menyimpan lemparan terbaik."
+      },
+      "remediation": {
+        "en": "Ask 'If you showed only your best launch, would someone else get the same result with your catapult?' Try it with a partner.",
+        "id": "Tanya 'Kalau kamu hanya menunjukkan lemparan terbaikmu, apakah orang lain akan mendapat hasil yang sama dengan ketapelmu?' Coba bersama teman."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds two distances when asked how much further or how far short.",
+        "id": "Menjumlahkan dua jarak saat ditanya berapa lebih jauh atau berapa kurangnya."
+      },
+      "remediation": {
+        "en": "Walk both distances along the tape measure and count only the extra part between the two marks.",
+        "id": "Telusuri kedua jarak di sepanjang meteran dan hitung hanya bagian tambahan di antara kedua tanda."
+      }
+    },
+    {
+      "code": "REPORTS_ONE_RESULT",
+      "description": {
+        "en": "Gives one distance instead of the difference.",
+        "id": "Menyebut salah satu jarak, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Put a finger on 110 on the tape measure and count on to 145 in tens and ones.",
+        "id": "Taruh jari di 110 pada meteran dan hitung maju sampai 145 dengan puluhan dan satuan."
+      }
+    },
+    {
+      "code": "SUBTRACTION_DIGIT_SLIP",
+      "description": {
+        "en": "Subtracts the smaller digit from the larger in each column, ignoring regrouping.",
+        "id": "Mengurangkan angka yang lebih kecil dari yang lebih besar di setiap kolom, tanpa meminjam."
+      },
+      "remediation": {
+        "en": "Count up instead: from 128 to 130 is 2, from 130 to 150 is 20, so 22 in all.",
+        "id": "Hitung maju saja: dari 128 ke 130 adalah 2, dari 130 ke 150 adalah 20, jadi seluruhnya 22."
+      }
+    },
+    {
+      "code": "PICKS_A_CAUSE_ANYWAY",
+      "description": {
+        "en": "Names one cause even though two things were changed.",
+        "id": "Menyebut satu penyebab walaupun dua hal diubah."
+      },
+      "remediation": {
+        "en": "Run the two changes separately, one at a time, and compare the three results.",
+        "id": "Jalankan kedua perubahan secara terpisah, satu per satu, dan bandingkan ketiga hasilnya."
+      }
+    },
+    {
+      "code": "WRONG_CAUSE",
+      "description": {
+        "en": "Gives a reason that is not connected to the test.",
+        "id": "Memberi alasan yang tidak berhubungan dengan uji."
+      },
+      "remediation": {
+        "en": "Look at the three results together and ask 'Are they the same? What does that tell us about one launch?'",
+        "id": "Lihat ketiga hasil bersama dan tanya 'Apakah sama? Apa artinya bagi satu lemparan saja?'"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add a stopper: tape a stick across the V so the arm stops at the same point each time. Does it make the three launches closer together?",
+      "id": "Tambahkan penahan: rekatkan stik melintang di V agar lengan berhenti di titik yang sama setiap kali. Apakah ketiga lemparan jadi lebih berdekatan?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child with limited hand strength can use fewer rubber bands or press with a whole palm; a partner can measure and read the tape measure aloud.",
+      "id": "Anak dengan kekuatan tangan terbatas bisa memakai lebih sedikit karet atau menekan dengan seluruh telapak; teman bisa mengukur dan membacakan meteran."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Launch only soft paper balls, only towards the empty launch zone, and never at people or animals. Everyone stands behind the catapult.",
+        "id": "Luncurkan hanya bola kertas yang lunak, hanya ke arah zona peluncuran yang kosong, dan jangan pernah ke arah orang atau hewan. Semua orang berdiri di belakang ketapel."
+      },
+      {
+        "en": "Rubber bands can snap: keep faces back while banding and pressing the spoon. Keep rubber bands away from children under 4.",
+        "id": "Karet gelang bisa putus: jauhkan wajah saat mengikat karet dan menekan sendok. Jauhkan karet gelang dari anak di bawah 4 tahun."
+      },
+      {
+        "en": "Check sticks for splinters and sand or discard rough ones.",
+        "id": "Periksa stik dari serpihan, haluskan atau buang yang kasar."
+      },
+      {
+        "en": "Keep eyes out of the spoon's path: never look down along the arm while pressing or releasing.",
+        "id": "Jauhkan mata dari jalur sendok: jangan melihat menyusuri lengan ketapel saat menekan atau melepas."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 50
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child tests two versions fairly with three launches each, picks middle values correctly, explains which change helped, and uses the results to hit the target.",
+      "id": "Dikuasai jika anak menguji dua versi dengan adil dengan masing-masing tiga lemparan, memilih nilai tengah dengan benar, menjelaskan perubahan mana yang membantu, dan memakai hasilnya untuk mengenai sasaran."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "569c55e59b7ec5f0"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

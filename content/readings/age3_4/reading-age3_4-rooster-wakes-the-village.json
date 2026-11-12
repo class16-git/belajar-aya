@@ -1,0 +1,237 @@
+{
+  "id": "reading-age3_4-rooster-wakes-the-village",
+  "version": "1.0.1",
+  "level": "age3_4",
+  "readingLevel": "pre_reader",
+  "genre": "oral_story",
+  "mode": "parent_read",
+  "title": {
+    "en": "Jago wakes the village",
+    "id": "Jago membangunkan kampung"
+  },
+  "text": {
+    "en": [
+      "Early, early in the morning, Jago the rooster stretched his wings. Kukuruyuk!",
+      "Kukuruyuk woke up the goat. 'Mbeeek! Good morning!' said the goat.",
+      "Mbeeek woke up the duck. 'Kwek, kwek! Good morning!' said the duck.",
+      "Kwek, kwek woke up the cat. 'Meong! Good morning!' said the cat.",
+      "Meong woke up little Wulan. She rubbed her eyes and said, 'Good morning, everyone!'",
+      "Wulan and Nenek gave everyone breakfast: corn for Jago, grass for the goat, fish for the cat, and rice bran for the duck."
+    ],
+    "id": [
+      "Pagi-pagi sekali, Jago si ayam jantan merentangkan sayapnya. Kukuruyuk!",
+      "Kukuruyuk membangunkan kambing. 'Mbeeek! Selamat pagi!' kata kambing.",
+      "Mbeeek membangunkan bebek. 'Kwek, kwek! Selamat pagi!' kata bebek.",
+      "Kwek, kwek membangunkan kucing. 'Meong! Selamat pagi!' kata kucing.",
+      "Meong membangunkan Wulan kecil. Ia mengucek mata dan berkata, 'Selamat pagi, semuanya!'",
+      "Wulan dan Nenek memberi semua sarapan: jagung untuk Jago, rumput untuk kambing, ikan untuk kucing, dan dedak untuk bebek."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Tell it, do not read it: stretch your arms like wings and crow loudly.",
+      "id": "Ceritakan, jangan dibaca: rentangkan tangan seperti sayap dan berkokok keras."
+    },
+    {
+      "en": "Make two little horns with your fingers and bleat.",
+      "id": "Buat dua tanduk kecil dengan jari dan mengembik."
+    },
+    {
+      "en": "Waddle your hands like duck feet and quack.",
+      "id": "Gerakkan tangan seperti kaki bebek dan berbunyi kwek."
+    },
+    {
+      "en": "Stroke pretend whiskers and miaow softly.",
+      "id": "Usap kumis pura-pura dan mengeong pelan."
+    },
+    {
+      "en": "Rub your eyes and stretch, then say the line with your child.",
+      "id": "Kucek mata dan menggeliat, lalu ucapkan kalimatnya bersama anak."
+    },
+    {
+      "en": "Count the animals on your fingers as each one gets its breakfast.",
+      "id": "Hitung hewan dengan jari saat masing-masing mendapat sarapan."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a rooster crowing on a fence at sunrise",
+      "id": "Kartu 1: ayam jantan berkokok di pagar saat matahari terbit"
+    },
+    {
+      "en": "Card 2: a goat lifting its head",
+      "id": "Kartu 2: kambing mengangkat kepala"
+    },
+    {
+      "en": "Card 3: a duck flapping by a puddle",
+      "id": "Kartu 3: bebek mengepakkan sayap di dekat genangan"
+    },
+    {
+      "en": "Card 4: a cat stretching on a step",
+      "id": "Kartu 4: kucing menggeliat di tangga"
+    },
+    {
+      "en": "Card 5: a girl and her grandmother feeding the animals",
+      "id": "Kartu 5: anak perempuan dan neneknya memberi makan hewan"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Retells a cumulative oral story in order, joining in with animal sounds.",
+      "id": "Menceritakan kembali cerita berantai secara berurutan sambil menirukan suara hewan."
+    },
+    {
+      "en": "Names farm animals and their sounds.",
+      "id": "Menyebut hewan ternak dan suaranya."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "rooster",
+        "id": "ayam jantan"
+      },
+      "meaning": {
+        "en": "a grown-up male chicken",
+        "id": "ayam laki-laki yang sudah dewasa"
+      }
+    },
+    {
+      "word": {
+        "en": "breakfast",
+        "id": "sarapan"
+      },
+      "meaning": {
+        "en": "the first meal of the day",
+        "id": "makan pertama di pagi hari"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "sequence",
+      "prompt": {
+        "en": "Who woke up right after Jago crowed?",
+        "id": "Siapa yang bangun tepat setelah Jago berkokok?"
+      },
+      "choices": {
+        "en": [
+          "the goat",
+          "the cat",
+          "Wulan"
+        ],
+        "id": [
+          "kambing",
+          "kucing",
+          "Wulan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did the goat have for breakfast?",
+        "id": "Apa sarapan kambing?"
+      },
+      "choices": {
+        "en": [
+          "grass",
+          "corn",
+          "fish"
+        ],
+        "id": [
+          "rumput",
+          "jagung",
+          "ikan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did each animal wake up?",
+        "id": "Mengapa setiap hewan bangun?"
+      },
+      "choices": {
+        "en": [
+          "it heard the animal before it calling",
+          "the sun was very hot",
+          "Wulan rang a bell"
+        ],
+        "id": [
+          "karena mendengar suara hewan sebelumnya",
+          "karena matahari sangat panas",
+          "karena Wulan membunyikan lonceng"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Many Indonesian village families keep chickens, ducks and goats near the house.",
+        "id": "Banyak keluarga di kampung memelihara ayam, bebek, dan kambing di dekat rumah."
+      }
+    },
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Different animals eat different foods.",
+        "id": "Hewan yang berbeda memakan makanan yang berbeda."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which animal sound do you like best?",
+      "id": "Suara hewan mana yang paling kamu suka?"
+    },
+    {
+      "en": "Who wakes you up in the morning?",
+      "id": "Siapa yang membangunkanmu di pagi hari?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Tell the story again without the book. Pause before each sound and let your child make it. Then line up four large toy animals (bigger than your child's fist) or drawn animals in the order they woke up.",
+    "id": "Ceritakan lagi tanpa buku. Berhenti sebelum setiap suara dan biarkan anak menirukannya. Lalu jajarkan empat mainan hewan yang besar (lebih besar dari kepalan anak) atau gambar hewan sesuai urutan mereka bangun."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "If you visit real animals, stay with your child, let an adult hold any feed, and wash hands afterwards.",
+      "id": "Jika mengunjungi hewan sungguhan, tetap di samping anak, biarkan orang dewasa yang memegang pakan, dan cuci tangan sesudahnya."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "fbc5d6368b167826"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

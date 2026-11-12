@@ -14,9 +14,9 @@ const { decisionSchema, assertDecisionAllowed, exportDecisions } = await import(
 const { expansionView } = await import('./expansion');
 const { POST } = await import('@/app/api/review/decisions/route');
 
+const VIEW = await expansionView(); // content chunks load asynchronously, so resolve once at module level
 const reviewable = () => {
-  const v = expansionView();
-  const e = [...v.units, ...v.readings].find((x) => x.state === 'subject_validated' && x.errors.length === 0);
+  const e = [...VIEW.units, ...VIEW.readings].find((x) => x.state === 'subject_validated' && x.errors.length === 0);
   if (!e) throw new Error('test needs at least one item awaiting review');
   return e;
 };

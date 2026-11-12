@@ -287,7 +287,7 @@
   "reviewFlags": [
     "invented_study_label"
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -295,7 +295,12 @@
       "readability",
       "question-answerability",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-11",
+    "reviewedVersion": "1.0.0",
+    "reviewedHash": "2eb7417d2a887633"
   },
   "provenance": {
     "origin": "ai_drafted",

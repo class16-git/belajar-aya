@@ -91,6 +91,7 @@ model ChildProfile {
   recommendations  RecommendationLog[]
   readingEvents    ReadingEvent[]
   shelf            ShelfEntry[]
+  unitAttempts     UnitAttempt[]
   @@index([familyId])
 }
 
@@ -318,4 +319,27 @@ model ContentReviewDecision {
   note         String                    @default("")
   createdAt    DateTime                  @default(now())
   @@index([familyId, itemId, createdAt])
+}
+
+/// A child's server-graded check on one expansion learning unit. Answers are display positions (the server maps
+/// them to authored indices); no free text. parentAssisted is null in child mode (Atlas cannot tell). Mastery
+/// evidence for parents is derived from these rows (unitProgress), never from client claims.
+model UnitAttempt {
+  id             String       @id @default(cuid())
+  childId        String
+  child          ChildProfile @relation(fields: [childId], references: [id], onDelete: Cascade)
+  /// Content id (unit-*), not a foreign key.
+  unitId         String
+  unitVersion    String
+  /// Server-issued id for one attempt; unique so retries/double submits are idempotent.
+  attemptId      String       @unique
+  /// true only for the child's first check of this unit.
+  firstAttempt   Boolean
+  correct        Int
+  total          Int
+  answers        Json
+  misconceptions String[]
+  parentAssisted Boolean?
+  createdAt      DateTime     @default(now())
+  @@index([childId, unitId, createdAt])
 }

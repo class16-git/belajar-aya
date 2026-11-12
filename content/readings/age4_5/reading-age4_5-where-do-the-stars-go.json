@@ -1,0 +1,279 @@
+{
+  "id": "reading-age4_5-where-do-the-stars-go",
+  "version": "1.0.1",
+  "level": "age4_5",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Where do the stars go?",
+    "id": "Ke mana bintang pergi?"
+  },
+  "text": {
+    "en": [
+      "Nisa is staying with Kakek in the village. At night, Kakek switches off the porch light.",
+      "Nisa looks up. Wow! So many stars, twinkling everywhere.",
+      "'At home in the city I only see a few,' says Nisa. 'The bright city lights hide them,' says Kakek.",
+      "In the morning the sky is blue. 'Where did the stars go?' asks Nisa.",
+      "'They are still up there,' says Kakek. 'The sun is so bright that we cannot see them in the day.'",
+      "'And the sun is a star too,' says Kakek. 'It is our very own star, the closest one of all.'"
+    ],
+    "id": [
+      "Nisa menginap di rumah Kakek di desa. Malam hari, Kakek mematikan lampu teras.",
+      "Nisa memandang ke atas. Wah! Banyak sekali bintang berkelip di mana-mana.",
+      "'Di rumahku di kota, aku cuma melihat sedikit,' kata Nisa. 'Lampu kota yang terang menyembunyikannya,' kata Kakek.",
+      "Pagi harinya langit biru. 'Bintangnya ke mana?' tanya Nisa.",
+      "'Bintangnya masih di atas sana,' kata Kakek. 'Matahari sangat terang, jadi kita tidak bisa melihatnya di siang hari.'",
+      "'Matahari juga bintang,' kata Kakek. 'Itu bintang kita sendiri, yang paling dekat.'"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Make a 'click' sound and dim the room light if you can.",
+      "id": "Bersuara 'klik' dan redupkan lampu kamar jika bisa."
+    },
+    {
+      "en": "Open and close your fingers like twinkling stars.",
+      "id": "Buka-tutup jari seperti bintang berkelip."
+    },
+    {
+      "en": "Use a bright, excited voice for Nisa and a slow, kind voice for Kakek.",
+      "id": "Pakai suara ceria untuk Nisa dan suara pelan dan lembut untuk Kakek."
+    },
+    {
+      "en": "Shrug your shoulders with a puzzled face.",
+      "id": "Angkat bahu dengan wajah bingung."
+    },
+    {
+      "en": "Cover a twinkling hand with your other hand to show the stars being hidden.",
+      "id": "Tutup tangan yang 'berkelip' dengan tangan lain untuk menunjukkan bintang tersembunyi."
+    },
+    {
+      "en": "Draw a big circle in the air with both arms for the sun.",
+      "id": "Gambar lingkaran besar di udara dengan kedua tangan untuk matahari."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a girl and her grandfather on a dark porch",
+      "id": "Kartu 1: anak perempuan dan kakeknya di teras yang gelap"
+    },
+    {
+      "en": "Card 2: a sky full of stars over a village",
+      "id": "Kartu 2: langit penuh bintang di atas desa"
+    },
+    {
+      "en": "Card 3: a city at night with bright lights and few stars",
+      "id": "Kartu 3: kota di malam hari dengan lampu terang dan sedikit bintang"
+    },
+    {
+      "en": "Card 4: a blue morning sky with the sun",
+      "id": "Kartu 4: langit pagi yang biru dengan matahari"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a story and recalls why stars are hard to see in the city and in the day.",
+      "id": "Mendengarkan cerita dan mengingat mengapa bintang sulit terlihat di kota dan di siang hari."
+    },
+    {
+      "en": "Learns that the sun is a star.",
+      "id": "Mengetahui bahwa matahari adalah bintang."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "twinkle",
+        "id": "berkelip"
+      },
+      "meaning": {
+        "en": "shine with a light that seems to flicker",
+        "id": "bersinar seperti berkedip-kedip"
+      }
+    },
+    {
+      "word": {
+        "en": "porch",
+        "id": "teras"
+      },
+      "meaning": {
+        "en": "the covered space at the front of a house",
+        "id": "bagian depan rumah yang beratap"
+      }
+    },
+    {
+      "word": {
+        "en": "village",
+        "id": "desa"
+      },
+      "meaning": {
+        "en": "a small place in the countryside",
+        "id": "tempat kecil di daerah pedesaan"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why does Nisa see only a few stars in the city?",
+        "id": "Mengapa Nisa hanya melihat sedikit bintang di kota?"
+      },
+      "choices": {
+        "en": [
+          "the bright city lights hide them",
+          "the city has no sky",
+          "stars live only in villages"
+        ],
+        "id": [
+          "lampu kota yang terang menyembunyikannya",
+          "kota tidak punya langit",
+          "bintang hanya tinggal di desa"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Kakek switch off the porch light?",
+        "id": "Mengapa Kakek mematikan lampu teras?"
+      },
+      "choices": {
+        "en": [
+          "so they could see the stars better",
+          "because it was raining hard",
+          "so the lamp could cool down for the cats"
+        ],
+        "id": [
+          "supaya bintang terlihat lebih jelas",
+          "karena hujan deras",
+          "supaya lampunya dingin untuk kucing"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q3",
+      "kind": "science",
+      "prompt": {
+        "en": "Where are the stars during the day?",
+        "id": "Di mana bintang pada siang hari?"
+      },
+      "choices": {
+        "en": [
+          "still in the sky, hidden by the sun's light",
+          "asleep under the ground",
+          "inside the clouds"
+        ],
+        "id": [
+          "masih di langit, tertutup cahaya matahari",
+          "tidur di bawah tanah",
+          "di dalam awan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "literal",
+      "prompt": {
+        "en": "What does Kakek say the sun is?",
+        "id": "Menurut Kakek, matahari itu apa?"
+      },
+      "choices": {
+        "en": [
+          "a star",
+          "a planet",
+          "a big lamp"
+        ],
+        "id": [
+          "bintang",
+          "planet",
+          "lampu besar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "astronomy",
+      "connection": {
+        "en": "The sun is a star; other stars are still in the sky by day but the sun's light hides them.",
+        "id": "Matahari adalah bintang; bintang lain tetap ada di langit pada siang hari, tetapi tertutup cahaya matahari."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Too much outdoor light at night (light pollution) hides the stars.",
+        "id": "Terlalu banyak lampu di luar pada malam hari (polusi cahaya) menyembunyikan bintang."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Have you ever seen lots of stars? Where were you?",
+      "id": "Pernahkah kamu melihat banyak bintang? Di mana?"
+    },
+    {
+      "en": "What other things are hard to see when it is very bright?",
+      "id": "Benda apa lagi yang sulit terlihat saat sangat terang?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "In a dark room, shine a torch on the ceiling and look at the bright spot. Then switch on the big room light: the spot becomes hard to see, just like stars in the daytime. Never shine the torch into anyone's eyes.",
+    "id": "Di kamar yang gelap, sorotkan senter ke langit-langit dan lihat titik terangnya. Lalu nyalakan lampu kamar: titiknya jadi sulit terlihat, seperti bintang di siang hari. Jangan pernah menyorotkan senter ke mata siapa pun."
+  },
+  "factChecks": [
+    {
+      "claim": "The sun is a star, and it is the closest star to Earth.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Stars are still in the sky during the day but the sun's brightness hides them.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Bright outdoor lights make fewer stars visible at night.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Shine the torch only at walls or the ceiling, never into eyes. Stay with your child in the dark room.",
+      "id": "Sorotkan senter hanya ke dinding atau langit-langit, jangan ke mata. Temani anak di kamar yang gelap."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "b416912a9e5c806e"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

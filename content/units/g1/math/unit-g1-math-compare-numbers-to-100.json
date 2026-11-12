@@ -1,0 +1,499 @@
+{
+  "id": "unit-g1-math-compare-numbers-to-100",
+  "version": "1.0.1",
+  "level": "g1",
+  "framework": "math",
+  "strand": "number_sense",
+  "title": {
+    "en": "Comparing and ordering numbers to 100",
+    "id": "Membandingkan dan mengurutkan bilangan sampai 100"
+  },
+  "prerequisites": [
+    "unit-g1-math-tens-and-ones-to-100"
+  ],
+  "objective": {
+    "en": "Compare and order numbers to 100 by looking at tens first and then ones, use the words and signs for 'greater than', 'less than' and '=', and find 1 more, 1 less, 10 more and 10 less.",
+    "id": "Membandingkan dan mengurutkan bilangan sampai 100 dengan melihat puluhan dulu lalu satuan, memakai kata dan tanda 'lebih dari', 'kurang dari', dan '=', serta menentukan 1 lebih, 1 kurang, 10 lebih, dan 10 kurang."
+  },
+  "rationale": {
+    "en": "Once a child sees 63 as 6 tens and 3 ones, comparing becomes a reasoned check rather than a guess: the number with more tens is greater, whatever its ones. Children who compare the bigger digit (39 is greater than 40 because 9 is big) need to see the bundles again.",
+    "id": "Setelah anak melihat 63 sebagai 6 puluhan dan 3 satuan, membandingkan menjadi pemeriksaan bernalar, bukan tebakan: bilangan dengan puluhan lebih banyak lebih besar, berapa pun satuannya. Anak yang membandingkan angka yang tampak besar (39 lebih dari 40 karena 9 besar) perlu melihat ikatan lagi."
+  },
+  "outcomes": [
+    {
+      "en": "Compares two numbers to 100 and explains using tens and ones.",
+      "id": "Membandingkan dua bilangan sampai 100 dan menjelaskan dengan puluhan dan satuan."
+    },
+    {
+      "en": "Orders three or four numbers from smallest to greatest and from greatest to smallest.",
+      "id": "Mengurutkan tiga atau empat bilangan dari terkecil ke terbesar dan dari terbesar ke terkecil."
+    },
+    {
+      "en": "Finds 1 more, 1 less, 10 more and 10 less than a number on a hundred chart.",
+      "id": "Menentukan 1 lebih, 1 kurang, 10 lebih, dan 10 kurang dari suatu bilangan di tabel seratus."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can say which number is greater and tell how many tens each has.",
+      "id": "Aku bisa menyebut bilangan mana yang lebih besar dan berapa puluhan masing-masing."
+    },
+    {
+      "en": "I can write the correct sign: greater than, less than or equal to.",
+      "id": "Aku bisa menulis tanda yang benar: lebih dari, kurang dari, atau sama dengan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Build both numbers with bundles of ten straws before comparing; put the bundles side by side so the tens are compared first.",
+      "id": "Susun kedua bilangan dengan ikatan sepuluh sedotan sebelum membandingkan; letakkan ikatannya berdampingan sehingga puluhan dibandingkan lebih dulu."
+    },
+    {
+      "en": "Say each sign in words: the greater-than sign reads 'is greater than' (lebih dari), the less-than sign reads 'is less than' (kurang dari). The open side always faces the greater number.",
+      "id": "Ucapkan setiap tanda dengan kata: tanda lebih dari dibaca 'lebih dari', tanda kurang dari dibaca 'kurang dari'. Sisi yang terbuka selalu menghadap bilangan yang lebih besar."
+    },
+    {
+      "en": "On the hundred chart, moving one square right is 1 more and one row down is 10 more; let your child discover this before you name it.",
+      "id": "Di tabel seratus, bergeser satu kotak ke kanan berarti 1 lebih dan turun satu baris berarti 10 lebih; biarkan anak menemukannya sebelum Anda menyebutnya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Look at the tens first. More tens means a greater number.",
+      "id": "Lihat puluhan dulu. Puluhan lebih banyak berarti bilangan lebih besar."
+    },
+    {
+      "en": "If the tens are the same, look at the ones.",
+      "id": "Jika puluhannya sama, lihat satuannya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build 63 and 36 with straw bundles and loose straws. Put the bundles in two rows: 6 bundles against 3 bundles, so 63 is greater even before looking at the loose straws.",
+        "id": "Susun 63 dan 36 dengan ikatan sedotan dan sedotan lepas. Taruh ikatan dalam dua baris: 6 ikatan lawan 3 ikatan, jadi 63 lebih besar bahkan sebelum melihat sedotan lepas."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw tens as sticks and ones as dots for 58 and 52; circle the matching tens and compare the dots that are left.",
+        "id": "Gambar puluhan sebagai batang dan satuan sebagai titik untuk 58 dan 52; lingkari puluhan yang sama dan bandingkan titik yang tersisa."
+      },
+      {
+        "en": "Mark 27, 72 and 45 on a number line from 0 to 100 drawn on a long strip of paper; the one furthest right is the greatest.",
+        "id": "Tandai 27, 72, dan 45 pada garis bilangan 0 sampai 100 yang digambar di pita kertas panjang; yang paling kanan paling besar."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write comparisons with signs, such as 63 is greater than 36 and 52 is less than 58, and order lists of numbers using only the digits.",
+        "id": "Tulis perbandingan dengan tanda, seperti 63 lebih dari 36 dan 52 kurang dari 58, dan urutkan daftar bilangan hanya dengan angkanya."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 100 straws or ice-cream sticks with rubber bands for bundles of ten",
+      "id": "Sekitar 100 sedotan atau stik es krim dengan karet gelang untuk ikatan sepuluh"
+    },
+    {
+      "en": "A hundred chart (1 to 100) drawn or printed, a long paper strip for a number line",
+      "id": "Tabel seratus (1 sampai 100) yang digambar atau dicetak, pita kertas panjang untuk garis bilangan"
+    },
+    {
+      "en": "Three sign cards: 'greater than', 'less than' and '='; on each comparison sign the wide open side faces the greater number and the point faces the smaller number",
+      "id": "Tiga kartu tanda: 'lebih dari', 'kurang dari', dan '='; pada setiap tanda perbandingan sisi yang terbuka lebar menghadap bilangan yang lebih besar dan ujung runcingnya menghadap bilangan yang lebih kecil"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Make 9 bundles of ten and keep 9 loose straws; write the three sign cards.",
+      "id": "Buat 9 ikatan sepuluh dan sisakan 9 sedotan lepas; tulis tiga kartu tanda."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "63 or 36? Six tens is more than three tens, so 63 is greater than 36. The 3 ones in 63 do not matter here.",
+      "id": "63 atau 36? Enam puluhan lebih banyak dari tiga puluhan, jadi 63 lebih dari 36. Tiga satuan pada 63 tidak menentukan di sini."
+    },
+    {
+      "en": "58 or 52? Both have 5 tens. Compare ones: 8 ones is more than 2 ones, so 58 is greater than 52.",
+      "id": "58 atau 52? Keduanya punya 5 puluhan. Bandingkan satuan: 8 satuan lebih banyak dari 2 satuan, jadi 58 lebih dari 52."
+    },
+    {
+      "en": "40 or 39? It is tempting to say 39, because 9 looks big. But 40 has 4 tens and 39 has only 3 tens, so 40 is greater than 39. On the number line 40 comes just after 39.",
+      "id": "40 atau 39? Mudah tergoda menjawab 39, karena 9 tampak besar. Tetapi 40 punya 4 puluhan dan 39 hanya 3 puluhan, jadi 40 lebih dari 39. Di garis bilangan 40 datang tepat setelah 39."
+    },
+    {
+      "en": "On the hundred chart, start at 24. One square right is 25 (1 more). One row down is 34 (10 more). One row up is 14 (10 less).",
+      "id": "Di tabel seratus, mulai dari 24. Satu kotak ke kanan adalah 25 (1 lebih). Satu baris ke bawah adalah 34 (10 lebih). Satu baris ke atas adalah 14 (10 kurang)."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Card battle: each player turns over two digit cards and makes a two-digit number; say which is greater and why. Then try to make the greatest number possible with your cards.",
+      "id": "Adu kartu: setiap pemain membuka dua kartu angka dan membentuk bilangan dua angka; sebutkan mana yang lebih besar dan mengapa. Lalu coba buat bilangan terbesar dengan kartumu."
+    },
+    {
+      "en": "Price tags in thousands at the pasar: Rp 45 thousand or Rp 54 thousand for a shirt? Order three tags from cheapest to most expensive.",
+      "id": "Label harga dalam ribuan di pasar: Rp45 ribu atau Rp54 ribu untuk kaos? Urutkan tiga label dari termurah ke termahal."
+    },
+    {
+      "en": "Hundred-chart jumps: the adult names a start number and a move (10 more, 1 less), the child lands and says the new number.",
+      "id": "Lompatan tabel seratus: orang dewasa menyebut bilangan awal dan gerakan (10 lebih, 1 kurang), anak mendarat dan menyebut bilangan barunya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which number is greater: 83 or 38?",
+        "id": "Bilangan mana yang lebih besar: 83 atau 38?"
+      },
+      "choices": {
+        "en": [
+          "83",
+          "38"
+        ],
+        "id": [
+          "83",
+          "38"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "83 has 8 tens and 38 has 3 tens. More tens means greater, so 83 is greater than 38.",
+        "id": "83 punya 8 puluhan dan 38 punya 3 puluhan. Puluhan lebih banyak berarti lebih besar, jadi 83 lebih dari 38."
+      },
+      "check": {
+        "expression": "8*10 + 3",
+        "result": "83"
+      },
+      "distractorMisconceptions": {
+        "1": "COMPARES_ONES_FIRST"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which is the smallest number: 59, 61 or 56?",
+        "id": "Bilangan mana yang terkecil: 59, 61, atau 56?"
+      },
+      "choices": {
+        "en": [
+          "56",
+          "61",
+          "59"
+        ],
+        "id": [
+          "56",
+          "61",
+          "59"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "59 and 56 have 5 tens, 61 has 6 tens, so 61 is the greatest. Between 59 and 56, 6 ones is less than 9 ones, so 56 is the smallest.",
+        "id": "59 dan 56 punya 5 puluhan, 61 punya 6 puluhan, jadi 61 paling besar. Antara 59 dan 56, 6 satuan lebih sedikit dari 9 satuan, jadi 56 yang terkecil."
+      },
+      "check": {
+        "expression": "5*10 + 6",
+        "result": "56"
+      },
+      "distractorMisconceptions": {
+        "1": "COMPARES_ONES_FIRST",
+        "2": "STOPS_AT_EQUAL_TENS"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "What number is 10 more than 46?",
+        "id": "Bilangan berapa yang 10 lebih besar dari 46?"
+      },
+      "choices": {
+        "en": [
+          "56",
+          "47",
+          "36"
+        ],
+        "id": [
+          "56",
+          "47",
+          "36"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "10 more adds one ten: 4 tens become 5 tens, the ones stay 6. 46 + 10 = 56.",
+        "id": "10 lebih menambah satu puluhan: 4 puluhan menjadi 5 puluhan, satuan tetap 6. 46 + 10 = 56."
+      },
+      "check": {
+        "expression": "46 + 10",
+        "result": "56"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_ONE_NOT_TEN",
+        "2": "MORE_LESS_SWAPPED"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "What number is 1 less than 70?",
+        "id": "Bilangan berapa yang 1 lebih kecil dari 70?"
+      },
+      "choices": {
+        "en": [
+          "69",
+          "60",
+          "71"
+        ],
+        "id": [
+          "69",
+          "60",
+          "71"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "1 less than 70: open one ten into ones and take one away, leaving 6 tens and 9 ones. 70 - 1 = 69.",
+        "id": "1 kurang dari 70: buka satu puluhan menjadi satuan dan ambil satu, tersisa 6 puluhan dan 9 satuan. 70 - 1 = 69."
+      },
+      "check": {
+        "expression": "70 - 1",
+        "result": "69"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_TEN_NOT_ONE",
+        "2": "MORE_LESS_SWAPPED"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Put 34, 43 and 30 in order from smallest to greatest. Which number comes first?",
+        "id": "Urutkan 34, 43, dan 30 dari terkecil ke terbesar. Bilangan mana yang pertama?"
+      },
+      "choices": {
+        "en": [
+          "30",
+          "34",
+          "43"
+        ],
+        "id": [
+          "30",
+          "34",
+          "43"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "30 and 34 both have 3 tens; 0 ones is less than 4 ones, so 30 is the smallest. The order is 30, 34, 43.",
+        "id": "30 dan 34 sama-sama punya 3 puluhan; 0 satuan lebih sedikit dari 4 satuan, jadi 30 yang terkecil. Urutannya 30, 34, 43."
+      },
+      "check": {
+        "expression": "3*10 + 0",
+        "result": "30"
+      },
+      "distractorMisconceptions": {
+        "1": "STOPS_AT_EQUAL_TENS",
+        "2": "ORDERS_GREATEST_FIRST"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "Which words make this true? 52 __ 25",
+        "id": "Kata mana yang membuat kalimat ini benar? 52 __ 25"
+      },
+      "choices": {
+        "en": [
+          "is greater than",
+          "is less than",
+          "is equal to"
+        ],
+        "id": [
+          "lebih dari",
+          "kurang dari",
+          "sama dengan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "52 has 5 tens and 25 has 2 tens, so 52 is greater than 25.",
+        "id": "52 punya 5 puluhan dan 25 punya 2 puluhan, jadi 52 lebih dari 25."
+      },
+      "distractorMisconceptions": {
+        "1": "SIGN_DIRECTION_CONFUSED",
+        "2": "SAME_DIGITS_SAME_NUMBER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "COMPARES_ONES_FIRST",
+      "description": {
+        "en": "Looks at the ones digit (or the biggest digit) first, so thinks 38 is greater than 83 or 39 is greater than 40.",
+        "id": "Melihat angka satuan (atau angka terbesar) dulu, sehingga mengira 38 lebih dari 83 atau 39 lebih dari 40."
+      },
+      "remediation": {
+        "en": "Build both numbers with bundles and compare only the bundles first; the loose straws are checked only if the bundles are equal.",
+        "id": "Susun kedua bilangan dengan ikatan dan bandingkan ikatannya dulu; sedotan lepas diperiksa hanya jika ikatannya sama."
+      }
+    },
+    {
+      "code": "STOPS_AT_EQUAL_TENS",
+      "description": {
+        "en": "When the tens are equal, does not go on to compare the ones.",
+        "id": "Jika puluhannya sama, tidak melanjutkan membandingkan satuan."
+      },
+      "remediation": {
+        "en": "Write the numbers in a tens-and-ones table, cover the tens column with a card when it matches, and compare what is visible.",
+        "id": "Tulis bilangan di tabel puluhan dan satuan, tutup kolom puluhan dengan kartu jika sama, dan bandingkan yang terlihat."
+      }
+    },
+    {
+      "code": "ADDS_ONE_NOT_TEN",
+      "description": {
+        "en": "Adds one instead of ten when asked for 10 more.",
+        "id": "Menambah satu, bukan sepuluh, ketika diminta 10 lebih."
+      },
+      "remediation": {
+        "en": "Add a real bundle of ten to the straws and count the bundles again.",
+        "id": "Tambahkan satu ikatan sepuluh sungguhan pada sedotan dan hitung ulang ikatannya."
+      }
+    },
+    {
+      "code": "SUBTRACTS_TEN_NOT_ONE",
+      "description": {
+        "en": "Takes away a ten when asked for 1 less, often because the ones digit is 0.",
+        "id": "Mengambil satu puluhan ketika diminta 1 kurang, sering karena angka satuannya 0."
+      },
+      "remediation": {
+        "en": "Build 70 with 7 bundles; to take one straw you must open a bundle. Count what is left: 6 bundles and 9 straws.",
+        "id": "Susun 70 dengan 7 ikatan; untuk mengambil satu sedotan harus membuka satu ikatan. Hitung sisanya: 6 ikatan dan 9 sedotan."
+      }
+    },
+    {
+      "code": "MORE_LESS_SWAPPED",
+      "description": {
+        "en": "Moves the wrong way: gives 10 less for 10 more, or 1 more for 1 less.",
+        "id": "Bergerak ke arah yang salah: memberi 10 kurang untuk 10 lebih, atau 1 lebih untuk 1 kurang."
+      },
+      "remediation": {
+        "en": "Walk on a floor number line: 'more' means walk forward, 'less' means walk back.",
+        "id": "Berjalan di garis bilangan di lantai: 'lebih' berarti maju, 'kurang' berarti mundur."
+      }
+    },
+    {
+      "code": "ORDERS_GREATEST_FIRST",
+      "description": {
+        "en": "Reverses the order asked for.",
+        "id": "Membalik urutan yang diminta."
+      },
+      "remediation": {
+        "en": "Draw a small staircase: the smallest number goes on the lowest step, then climb.",
+        "id": "Gambar tangga kecil: bilangan terkecil di anak tangga paling bawah, lalu naik."
+      }
+    },
+    {
+      "code": "SIGN_DIRECTION_CONFUSED",
+      "description": {
+        "en": "Writes the less-than sign when the greater-than sign is needed, because the sign's direction is not yet linked to its meaning.",
+        "id": "Menulis tanda kurang dari ketika yang benar tanda lebih dari, karena arah tanda belum dikaitkan dengan artinya."
+      },
+      "remediation": {
+        "en": "Read the sign aloud from left to right ('52 is greater than 25') and check whether the sentence is true.",
+        "id": "Baca tanda dari kiri ke kanan ('52 lebih dari 25') dan periksa apakah kalimatnya benar."
+      }
+    },
+    {
+      "code": "SAME_DIGITS_SAME_NUMBER",
+      "description": {
+        "en": "Thinks two numbers with the same digits are equal.",
+        "id": "Mengira dua bilangan dengan angka yang sama nilainya sama."
+      },
+      "remediation": {
+        "en": "Build both numbers with bundles: 5 bundles and 2 straws looks very different from 2 bundles and 5 straws.",
+        "id": "Susun kedua bilangan dengan ikatan: 5 ikatan dan 2 sedotan tampak sangat berbeda dari 2 ikatan dan 5 sedotan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Number detective: 'I am between 40 and 50, and my ones digit is 2 more than my tens digit.' Your child finds the number (46) and writes a clue for you.",
+      "id": "Detektif bilangan: 'Aku di antara 40 dan 50, dan angka satuanku 2 lebih dari angka puluhanku.' Anak menemukan bilangannya (46) dan menulis petunjuk untukmu."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Straw bundles can be compared by touch; a large hundred chart on the floor lets the child jump the moves with the whole body.",
+      "id": "Ikatan sedotan bisa dibandingkan dengan meraba; tabel seratus besar di lantai membuat anak bisa melompat dengan seluruh badan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Keep rubber bands away from younger siblings.",
+        "id": "Jauhkan karet gelang dari adik yang lebih kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child compares three pairs with new numbers (including one like 40 and 39), explains with tens and ones, and orders four numbers correctly, on two different days.",
+      "id": "Dikuasai jika anak membandingkan tiga pasang bilangan baru (termasuk satu seperti 40 dan 39), menjelaskan dengan puluhan dan satuan, dan mengurutkan empat bilangan dengan benar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "7f364204831e2cfd"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

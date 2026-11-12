@@ -19,9 +19,10 @@ const LETTERS = ['A', 'B', 'C', 'D'];
 export default async function UnitGuidePage({ params }: { params: Promise<{ id: string }> }) {
   await requireParentPage();
   const { id } = await params;
-  const e = findExpansion(id);
+  const e = await findExpansion(id);
   if (!e || e.kind !== 'unit') notFound();
   const u = e.item as Unit;
+  const prereqTitles = new Map((await Promise.all(u.prerequisites.map(async (p) => [p, (await findExpansion(p))?.item.title] as const))).filter(([, t]) => t));
   const locale = await currentLocale();
   const t = getDictionary(locale);
   const U = t.units;
@@ -64,7 +65,7 @@ export default async function UnitGuidePage({ params }: { params: Promise<{ id: 
           </div>
           <Section id="prerequisites" title={G.prerequisites}>
             {u.prerequisites.length === 0 ? <p className="muted">{G.noPrerequisites}</p> : (
-              <ul className="flex flex-wrap gap-2">{u.prerequisites.map((p) => <li key={p}><Link href={`/units/${p}`} className="link break-all">{findExpansion(p) ? L((findExpansion(p)!.item as Unit).title) : p}</Link></li>)}</ul>
+              <ul className="flex flex-wrap gap-2">{u.prerequisites.map((p) => <li key={p}><Link href={`/units/${p}`} className="link break-all">{prereqTitles.get(p) ? L(prereqTitles.get(p)!) : p}</Link></li>)}</ul>
             )}
           </Section>
         </div>

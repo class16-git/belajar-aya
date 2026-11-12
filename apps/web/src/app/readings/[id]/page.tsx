@@ -25,7 +25,7 @@ const FACT_ICON = { common_knowledge: '✓', sourced: '✓', invented_example: '
 export default async function ReadingPage({ params }: { params: Promise<{ id: string }> }) {
   await requireParentPage();
   const { id } = await params;
-  const e = findExpansion(id);
+  const e = await findExpansion(id);
   if (!e || e.kind !== 'reading') notFound();
   const r = e.item as Reading;
   const locale = await currentLocale();

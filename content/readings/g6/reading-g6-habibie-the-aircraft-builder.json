@@ -1,0 +1,291 @@
+{
+  "id": "reading-g6-habibie-the-aircraft-builder",
+  "version": "1.0.1",
+  "level": "g6",
+  "readingLevel": "advanced",
+  "genre": "biography",
+  "mode": "independent",
+  "title": {
+    "en": "B. J. Habibie: the boy who wanted to build aeroplanes",
+    "id": "B. J. Habibie: anak yang ingin membuat pesawat"
+  },
+  "text": {
+    "en": [
+      "Bacharuddin Jusuf Habibie was born on 25 June 1936 in Parepare, a port town in South Sulawesi. As a boy he was curious about how things worked, and he was fascinated by aeroplanes.",
+      "After school he began studying in Bandung, and then travelled to Germany to train in aeronautical engineering, the science of designing aircraft. Far from home, he worked hard in a new language and a cold climate. He went on to earn a doctorate.",
+      "Habibie then worked for years in the German aircraft industry, where he became a senior engineer and leader. He is often remembered for his work on how tiny cracks grow in aircraft structures, which helps engineers make planes both light and safe.",
+      "In the 1970s he came home to help Indonesia build its own technology. He led the national aircraft company in Bandung and later served for many years as the government minister in charge of science and technology.",
+      "For an island nation, aircraft matter: they link places that are days apart by sea. On 10 August 1995, the N250 Gatotkaca, a passenger plane designed in Indonesia, made its first flight. That day is now remembered as National Technology Awakening Day.",
+      "In March 1998 Habibie became Vice President. In May 1998, a time of great change, he became Indonesia's third president when President Soeharto resigned. He served until 1999.",
+      "Habibie died in Jakarta on 11 September 2019. Many young Indonesians still see his life as proof that patient learning, at home and abroad, can open the sky."
+    ],
+    "id": [
+      "Bacharuddin Jusuf Habibie lahir pada 25 Juni 1936 di Parepare, sebuah kota pelabuhan di Sulawesi Selatan. Sejak kecil ia ingin tahu cara kerja berbagai benda, dan ia sangat tertarik pada pesawat terbang.",
+      "Setelah lulus sekolah, ia mulai kuliah di Bandung, lalu berangkat ke Jerman untuk belajar teknik penerbangan, ilmu merancang pesawat. Jauh dari rumah, ia bekerja keras dengan bahasa baru dan iklim yang dingin. Ia kemudian meraih gelar doktor.",
+      "Habibie kemudian bekerja bertahun-tahun di industri pesawat Jerman, dan menjadi insinyur senior serta pemimpin. Ia sering dikenang karena karyanya tentang bagaimana retakan kecil merambat pada struktur pesawat, yang membantu insinyur membuat pesawat ringan sekaligus aman.",
+      "Pada tahun 1970-an ia pulang untuk membantu Indonesia membangun teknologinya sendiri. Ia memimpin perusahaan pesawat nasional di Bandung dan kemudian bertahun-tahun menjabat sebagai Menteri Riset dan Teknologi.",
+      "Bagi negara kepulauan, pesawat sangat penting: pesawat menghubungkan tempat-tempat yang berjarak berhari-hari lewat laut. Pada 10 Agustus 1995, N250 Gatotkaca, pesawat penumpang rancangan Indonesia, melakukan terbang perdananya. Hari itu kini diperingati sebagai Hari Kebangkitan Teknologi Nasional.",
+      "Pada Maret 1998 Habibie menjadi Wakil Presiden. Pada Mei 1998, masa perubahan besar bagi negara, ia menjadi presiden ketiga Indonesia ketika Presiden Soeharto mengundurkan diri. Ia menjabat sampai tahun 1999.",
+      "Habibie wafat di Jakarta pada 11 September 2019. Banyak anak muda Indonesia masih memandang hidupnya sebagai bukti bahwa belajar dengan tekun, di dalam maupun di luar negeri, bisa membuka jalan ke langit."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a biography and explains how a person's early interests shaped their life.",
+      "id": "Membaca biografi dan menjelaskan bagaimana minat masa kecil membentuk hidup seseorang."
+    },
+    {
+      "en": "Uses dates in a text to calculate ages and time spans.",
+      "id": "Memakai tanggal dalam teks untuk menghitung usia dan rentang waktu."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "aeronautical engineering",
+        "id": "teknik penerbangan"
+      },
+      "meaning": {
+        "en": "the science of designing and building aircraft",
+        "id": "ilmu merancang dan membangun pesawat"
+      }
+    },
+    {
+      "word": {
+        "en": "doctorate",
+        "id": "gelar doktor"
+      },
+      "meaning": {
+        "en": "the highest university degree",
+        "id": "gelar tertinggi di universitas"
+      }
+    },
+    {
+      "word": {
+        "en": "structure",
+        "id": "struktur"
+      },
+      "meaning": {
+        "en": "the frame and parts that hold something together",
+        "id": "rangka dan bagian yang menyatukan sesuatu"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "math",
+      "prompt": {
+        "en": "How old was Habibie when the N250 made its first flight?",
+        "id": "Berapa usia Habibie saat N250 melakukan terbang perdananya?"
+      },
+      "choices": {
+        "en": [
+          "59 years old",
+          "60 years old",
+          "1995 years old"
+        ],
+        "id": [
+          "59 tahun",
+          "60 tahun",
+          "1995 tahun"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4,
+      "check": {
+        "expression": "1995 - 1936",
+        "result": "59"
+      }
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Habibie study in Germany?",
+        "id": "Apa yang dipelajari Habibie di Jerman?"
+      },
+      "choices": {
+        "en": [
+          "aeronautical engineering",
+          "medicine",
+          "music"
+        ],
+        "id": [
+          "teknik penerbangan",
+          "kedokteran",
+          "musik"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why might the text say aircraft matter especially for an island nation?",
+        "id": "Mengapa teks menyebut pesawat sangat penting bagi negara kepulauan?"
+      },
+      "choices": {
+        "en": [
+          "planes can link islands far more quickly than boats",
+          "islands have no roads at all",
+          "boats cannot carry people"
+        ],
+        "id": [
+          "pesawat dapat menghubungkan pulau jauh lebih cepat daripada kapal",
+          "pulau-pulau sama sekali tidak punya jalan",
+          "kapal tidak bisa membawa orang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which detail best supports the idea that Habibie wanted Indonesia to have its own technology?",
+        "id": "Rincian mana yang paling mendukung gagasan bahwa Habibie ingin Indonesia punya teknologi sendiri?"
+      },
+      "choices": {
+        "en": [
+          "he came home and led the national aircraft company",
+          "he was born in a port town",
+          "he died in Jakarta"
+        ],
+        "id": [
+          "ia pulang dan memimpin perusahaan pesawat nasional",
+          "ia lahir di kota pelabuhan",
+          "ia wafat di Jakarta"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q5",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "In paragraph 3, why does knowing how cracks grow in a 'structure' matter?",
+        "id": "Di paragraf 3, mengapa mengetahui cara retakan merambat pada 'struktur' itu penting?"
+      },
+      "choices": {
+        "en": [
+          "it helps keep the frame of a plane safe while staying light",
+          "it makes planes more colourful",
+          "it makes planes fly higher than the Moon"
+        ],
+        "id": [
+          "membantu rangka pesawat tetap aman sekaligus ringan",
+          "membuat pesawat lebih berwarna",
+          "membuat pesawat terbang lebih tinggi dari Bulan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Aircraft engineers balance weight and strength to keep planes safe.",
+        "id": "Insinyur pesawat menyeimbangkan berat dan kekuatan agar pesawat aman."
+      }
+    },
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Air links are vital for travel between Indonesia's many islands.",
+        "id": "Jalur udara sangat penting untuk perjalanan antarpulau di Indonesia."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Dates in a biography let us work out ages and time spans.",
+        "id": "Tanggal dalam biografi memungkinkan kita menghitung usia dan rentang waktu."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What childhood interest of yours might grow into a future job?",
+      "id": "Minat masa kecilmu yang mana yang bisa berkembang menjadi pekerjaan nanti?"
+    },
+    {
+      "en": "Why do you think Habibie chose to come back to Indonesia?",
+      "id": "Menurutmu, mengapa Habibie memilih pulang ke Indonesia?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make a timeline of Habibie's life using every date in the text, and calculate his age at three of the events. Then fold three paper gliders with different wing shapes and test which flies furthest, changing only one thing at a time.",
+    "id": "Buat garis waktu kehidupan Habibie memakai semua tanggal dalam teks, lalu hitung usianya pada tiga peristiwa. Kemudian lipat tiga pesawat kertas dengan bentuk sayap berbeda dan uji mana yang terbang paling jauh, dengan mengubah satu hal saja setiap kali."
+  },
+  "factChecks": [
+    {
+      "claim": "B. J. Habibie was born on 25 June 1936 in Parepare, South Sulawesi.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "He studied in Bandung, then aeronautical engineering in Germany, earning a doctorate.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "He worked in the German aircraft industry before returning to Indonesia in the 1970s.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "His research on crack propagation in aircraft structures is widely credited.",
+      "status": "needs_source"
+    },
+    {
+      "claim": "He led Indonesia's national aircraft company and served as the minister in charge of science and technology.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The N250 Gatotkaca first flew on 10 August 1995, commemorated as Hari Kebangkitan Teknologi Nasional.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "He was Indonesia's third president, 1998 to 1999.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "He died in Jakarta on 11 September 2019.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Habibie became Vice President in March 1998 and President in May 1998 when Soeharto resigned.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "2b841c44c3334339"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

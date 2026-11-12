@@ -1,0 +1,404 @@
+{
+  "id": "unit-g2-literacy-retelling-non-fiction",
+  "version": "1.0.1",
+  "level": "g2",
+  "framework": "literacy",
+  "strand": "comprehension",
+  "title": {
+    "en": "Retell what you learned",
+    "id": "Menceritakan kembali isi bacaan informasi"
+  },
+  "prerequisites": [
+    "unit-g2-literacy-retelling-with-sequence-words"
+  ],
+  "objective": {
+    "en": "Retell a short information text in their own words, using its headings as a frame: say what the text is about, then one or two key facts from each section, without adding opinions or facts that are not there.",
+    "id": "Menceritakan kembali teks informasi pendek dengan kata-kata sendiri, memakai subjudulnya sebagai kerangka: menyebut teks itu tentang apa, lalu satu atau dua fakta penting dari setiap bagian, tanpa menambahkan pendapat atau fakta yang tidak ada di teks."
+  },
+  "rationale": {
+    "en": "Story retelling follows time: first, next, finally. Information texts are organised by topic instead, so a child who tries 'first, then' on a fact text often gets lost. Headings are the skeleton of a non-fiction retell: under each heading, the reader keeps a few key words and turns them back into their own sentence. Copying sentences word for word is a common sign that the child has not yet processed the facts. The English and Indonesian texts share the facts but are written separately, with natural school vocabulary in each language (bristles / rambut halus; castings / kotoran cacing).",
+    "id": "Menceritakan kembali cerita mengikuti urutan waktu: pertama, kemudian, akhirnya. Teks informasi disusun menurut topik, sehingga anak yang memakai 'pertama, lalu' pada teks fakta sering bingung. Subjudul adalah kerangka untuk menceritakan kembali teks informasi: di bawah setiap subjudul, pembaca menyimpan beberapa kata kunci lalu mengubahnya kembali menjadi kalimat sendiri. Menyalin kalimat kata demi kata sering menandakan anak belum mengolah faktanya. Teks bahasa Indonesia dan Inggris memuat fakta yang sama tetapi ditulis terpisah dengan kosakata sekolah yang wajar."
+  },
+  "outcomes": [
+    {
+      "en": "Says what the whole text is about in one sentence.",
+      "id": "Menyebut isi seluruh teks dalam satu kalimat."
+    },
+    {
+      "en": "Retells one or two key facts from each section in their own words.",
+      "id": "Menceritakan kembali satu atau dua fakta penting dari setiap bagian dengan kata-kata sendiri."
+    },
+    {
+      "en": "Keeps facts and opinions apart and does not add facts that are not in the text.",
+      "id": "Memisahkan fakta dan pendapat serta tidak menambahkan fakta yang tidak ada di teks."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can use the headings to retell a fact text.",
+      "id": "Aku bisa memakai subjudul untuk menceritakan kembali teks fakta."
+    },
+    {
+      "en": "I can say facts in my own words.",
+      "id": "Aku bisa mengatakan fakta dengan kata-kataku sendiri."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Read the text aloud together. After each section, cover it and ask: 'What did this part tell us?'",
+      "id": "Bacalah teks bersama dengan nyaring. Setelah setiap bagian, tutup teksnya dan tanyakan: 'Bagian ini memberi tahu kita apa?'"
+    },
+    {
+      "en": "Make a heading frame: four boxes labelled with the headings. Your child writes two or three key words in each box (not full sentences).",
+      "id": "Buat kerangka subjudul: empat kotak berlabel subjudul. Anak menulis dua atau tiga kata kunci di setiap kotak (bukan kalimat lengkap)."
+    },
+    {
+      "en": "Retell from the key words only, with the text turned over, starting: 'This text is about...'",
+      "id": "Ceritakan kembali hanya dari kata kunci, dengan teks dibalik, dimulai dengan: 'Teks ini tentang...'"
+    },
+    {
+      "en": "If your child adds 'I think worms are cute', welcome it and put it in a 'my opinion' box beside the frame.",
+      "id": "Jika anak menambahkan 'menurutku cacing lucu', terima dan taruh di kotak 'pendapatku' di samping kerangka."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Read one part. Cover it. What did it tell you?",
+      "id": "Baca satu bagian. Tutup. Apa yang diceritakannya?"
+    },
+    {
+      "en": "Write two or three key words in the box.",
+      "id": "Tulis dua atau tiga kata kunci di kotak."
+    },
+    {
+      "en": "Retell it in your own words. Keep your opinion in its own box.",
+      "id": "Ceritakan kembali dengan kata-katamu sendiri. Simpan pendapatmu di kotaknya sendiri."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "The earthworm text below, printed or copied with its four headings",
+      "id": "Teks cacing tanah di bawah, dicetak atau disalin dengan empat subjudulnya"
+    },
+    {
+      "en": "A sheet with four heading boxes and one 'my opinion' box",
+      "id": "Lembar dengan empat kotak subjudul dan satu kotak 'pendapatku'"
+    },
+    {
+      "en": "A pencil",
+      "id": "Pensil"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Copy the text with clear headings, one section per paragraph.",
+      "id": "Salin teks dengan subjudul yang jelas, satu bagian per paragraf."
+    },
+    {
+      "en": "Draw the frame sheet.",
+      "id": "Gambar lembar kerangka."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Text (original). Body: An earthworm has no legs and no eyes, but its skin can sense light. Its long body is made of many rings, and tiny bristles help it grip the soil as it squeezes and stretches forward. Home: Earthworms live in damp soil. They breathe through their skin, which must stay moist. Food: They eat dead leaves and bits of soil. The waste they leave, called castings, is rich food for plants. Helping: Their tunnels let air and water into the soil, and they mix dead leaves into it.",
+      "id": "Teks (orisinal). Tubuh: Cacing tanah tidak punya kaki dan mata, tetapi kulitnya bisa merasakan cahaya. Tubuhnya yang panjang terdiri atas banyak ruas, dan rambut halus membantunya mencengkeram tanah saat ia memendek dan memanjang untuk maju. Rumah: Cacing tanah hidup di tanah yang lembap. Ia bernapas melalui kulit, yang harus tetap basah. Makanan: Cacing memakan daun mati dan butiran tanah. Kotoran yang ditinggalkannya sangat menyuburkan tanaman. Manfaat: Lubang-lubangnya membuat udara dan air masuk ke tanah, dan ia mencampurkan daun mati ke dalam tanah."
+    },
+    {
+      "en": "Model retell from key words: frame box 'Home: damp soil, breathes skin'. Retell: 'This text is about earthworms. They live in wet soil, because they breathe through their skin and it has to stay wet.' Note the change of words: damp became wet, and the two facts are joined with because.",
+      "id": "Contoh dari kata kunci: kotak 'Rumah: tanah lembap, napas kulit'. Cerita kembali: 'Teks ini tentang cacing tanah. Cacing tinggal di tanah yang basah, karena ia bernapas lewat kulit dan kulitnya harus tetap basah.' Perhatikan perubahan kata: lembap menjadi basah, dan dua fakta digabung dengan karena."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Frame and retell: your child fills the other three boxes and retells the whole text to a family member.",
+      "id": "Kerangka dan cerita kembali: anak mengisi tiga kotak lainnya dan menceritakan kembali seluruh teks kepada anggota keluarga."
+    },
+    {
+      "en": "Fact or opinion sort: read six sentences about worms aloud; your child sorts them into 'fact from the text' and 'opinion'.",
+      "id": "Pilah fakta atau pendapat: bacakan enam kalimat tentang cacing; anak memilahnya menjadi 'fakta dari teks' dan 'pendapat'."
+    },
+    {
+      "en": "New text: use the frame on a short information page from a school book about another animal.",
+      "id": "Teks baru: pakai kerangka pada satu halaman bacaan informasi dari buku sekolah tentang hewan lain."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Read this new text. 'Garden snails. Body: A snail has a soft body, one flat foot and a coiled shell on its back. Home: Snails live in damp, shady places, such as under leaves. In dry weather they hide inside their shells. Food: They eat leaves and rotting plants, scraping them with a rough tongue. Helping: By eating dead plants, they help break them down into soil.' Which is the best retelling of the 'Food' part?",
+        "id": "Baca teks baru ini. 'Siput kebun. Tubuh: Siput bertubuh lunak, punya satu kaki yang pipih, dan cangkang melingkar di punggungnya. Rumah: Siput hidup di tempat lembap dan teduh, misalnya di bawah daun. Saat cuaca kering, siput bersembunyi di dalam cangkangnya. Makanan: Siput memakan daun dan tumbuhan yang membusuk dengan lidahnya yang kasar. Manfaat: Dengan memakan tumbuhan mati, siput membantu menguraikannya menjadi tanah.' Mana cerita kembali terbaik untuk bagian 'Makanan'?"
+      },
+      "choices": {
+        "en": [
+          "Snails scrape up leaves and rotting plants with a rough tongue.",
+          "Snails hide in their shells when it is dry.",
+          "Snails are slow and boring."
+        ],
+        "id": [
+          "Siput memakan daun dan tumbuhan busuk dengan lidah kasarnya.",
+          "Siput bersembunyi di cangkang saat kering.",
+          "Siput itu lambat dan membosankan."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The Food part tells what snails eat and how. Hiding is in another part; slow and boring is an opinion.",
+        "id": "Bagian Makanan menceritakan apa yang dimakan siput dan caranya. Bersembunyi ada di bagian lain; lambat dan membosankan adalah pendapat."
+      },
+      "distractorMisconceptions": {
+        "1": "WRONG_SECTION",
+        "2": "OPINION_AS_FACT"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "What is the snail text mostly about?",
+        "id": "Teks siput itu terutama tentang apa?"
+      },
+      "choices": {
+        "en": [
+          "How garden snails live, eat and help the soil",
+          "Why snails hide when the weather is dry",
+          "All the animals in a garden"
+        ],
+        "id": [
+          "Cara hidup siput kebun, makanannya, dan manfaatnya bagi tanah",
+          "Mengapa siput bersembunyi saat cuaca kering",
+          "Semua hewan di kebun"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Every part is about garden snails. Hiding in dry weather is one side detail; all garden animals is too wide.",
+        "id": "Setiap bagian membahas siput kebun. Bersembunyi saat kering hanya satu detail sampingan; semua hewan di kebun terlalu luas."
+      },
+      "distractorMisconceptions": {
+        "1": "OFF_TOPIC_DETAIL",
+        "2": "TOO_BROAD"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Read: 'Bats sleep in the day, hanging upside down. At night they fly out to find food. Many bats eat insects, and some eat fruit.' Which retelling uses your own words and keeps the key facts?",
+        "id": "Baca: 'Kelelawar tidur pada siang hari sambil bergantung terbalik. Pada malam hari mereka terbang mencari makan. Banyak kelelawar makan serangga, dan ada juga yang makan buah.' Cerita kembali mana yang memakai kata-kata sendiri dan memuat fakta penting?"
+      },
+      "choices": {
+        "en": [
+          "Bats rest upside down by day and go out at night to eat insects or fruit.",
+          "Bats sleep in the day, hanging upside down.",
+          "Bats are birds that come out at night."
+        ],
+        "id": [
+          "Kelelawar beristirahat terbalik saat siang dan keluar malam hari untuk makan serangga atau buah.",
+          "Kelelawar tidur pada siang hari sambil bergantung terbalik.",
+          "Kelelawar adalah burung yang keluar pada malam hari."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The best retelling joins all the key facts in new words. Copying one sentence loses facts; bats are not birds, so the last answer adds a wrong fact.",
+        "id": "Cerita kembali terbaik menggabungkan semua fakta penting dengan kata baru. Menyalin satu kalimat menghilangkan fakta; kelelawar bukan burung, jadi jawaban terakhir menambah fakta yang salah."
+      },
+      "distractorMisconceptions": {
+        "1": "COPIES_ONE_SENTENCE",
+        "2": "ADDS_WRONG_FACT"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Which key words best help you remember the 'Helping' part of the snail text?",
+        "id": "Kata kunci mana yang paling membantu mengingat bagian 'Manfaat' dari teks siput?"
+      },
+      "choices": {
+        "en": [
+          "eat dead plants, break down, soil",
+          "soft body, one foot, shell",
+          "snail, the, it"
+        ],
+        "id": [
+          "makan tumbuhan mati, menguraikan, tanah",
+          "tubuh lunak, satu kaki, cangkang",
+          "siput, itu, ia"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Key words carry the facts of that part. Body facts belong to another part, and words like 'the' carry no fact.",
+        "id": "Kata kunci memuat fakta bagian itu. Fakta tentang tubuh ada di bagian lain, dan kata seperti 'itu' tidak memuat fakta."
+      },
+      "distractorMisconceptions": {
+        "1": "WRONG_SECTION",
+        "2": "WEAK_KEY_WORDS"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "WRONG_SECTION",
+      "description": {
+        "en": "Gives a true fact, but from a different section.",
+        "id": "Menyebut fakta yang benar, tetapi dari bagian lain."
+      },
+      "remediation": {
+        "en": "Fold the text so only one section shows, and find the key words only inside the fold.",
+        "id": "Lipat teks sehingga hanya satu bagian yang terlihat, dan cari kata kunci hanya di bagian yang terlihat itu."
+      }
+    },
+    {
+      "code": "OPINION_AS_FACT",
+      "description": {
+        "en": "Mixes their own opinion into the retelling as if it were in the text.",
+        "id": "Mencampurkan pendapat sendiri ke dalam cerita kembali seolah-olah ada di teks."
+      },
+      "remediation": {
+        "en": "Use the 'my opinion' box. Ask: 'Can we point to it in the text?' If not, it goes in the box.",
+        "id": "Pakai kotak 'pendapatku'. Tanyakan: 'Bisakah kita menunjuknya di teks?' Jika tidak, masukkan ke kotak."
+      }
+    },
+    {
+      "code": "OFF_TOPIC_DETAIL",
+      "description": {
+        "en": "Names a small or side detail as the topic of the whole text.",
+        "id": "Menyebut detail kecil atau sampingan sebagai topik seluruh teks."
+      },
+      "remediation": {
+        "en": "Read only the headings and the title aloud. What word is in all of them, or behind all of them?",
+        "id": "Bacakan hanya judul dan subjudulnya. Kata apa yang ada di semuanya, atau mendasari semuanya?"
+      }
+    },
+    {
+      "code": "TOO_BROAD",
+      "description": {
+        "en": "Gives a topic much wider than the text.",
+        "id": "Menyebut topik yang jauh lebih luas daripada teks."
+      },
+      "remediation": {
+        "en": "Ask: 'Does the text tell us about moles and ants too?' Narrow the topic until it fits every section.",
+        "id": "Tanyakan: 'Apakah teks juga bercerita tentang tikus tanah dan semut?' Persempit topiknya sampai cocok dengan setiap bagian."
+      }
+    },
+    {
+      "code": "COPIES_ONE_SENTENCE",
+      "description": {
+        "en": "Copies a sentence word for word, often losing other key facts.",
+        "id": "Menyalin satu kalimat kata demi kata, sering kehilangan fakta penting lain."
+      },
+      "remediation": {
+        "en": "Turn the text over and retell only from key words. Then check against the text: did every key fact get in?",
+        "id": "Balik teksnya dan ceritakan kembali hanya dari kata kunci. Lalu cocokkan dengan teks: apakah semua fakta penting sudah masuk?"
+      }
+    },
+    {
+      "code": "ADDS_WRONG_FACT",
+      "description": {
+        "en": "Adds a 'fact' that is not in the text and is not true.",
+        "id": "Menambahkan 'fakta' yang tidak ada di teks dan tidak benar."
+      },
+      "remediation": {
+        "en": "After retelling, point to the place in the text for each fact. A fact with no place is checked in a reliable book with an adult.",
+        "id": "Setelah bercerita kembali, tunjuk tempat setiap fakta di teks. Fakta yang tidak ada tempatnya diperiksa di buku tepercaya bersama orang dewasa."
+      }
+    },
+    {
+      "code": "WEAK_KEY_WORDS",
+      "description": {
+        "en": "Chooses small words or general words that carry no fact as key words.",
+        "id": "Memilih kata kecil atau kata umum yang tidak memuat fakta sebagai kata kunci."
+      },
+      "remediation": {
+        "en": "Ask of each key word: 'If you only had this word, would you remember a fact?' Keep the words that pass.",
+        "id": "Tanyakan untuk setiap kata kunci: 'Kalau hanya ada kata ini, apakah kamu ingat faktanya?' Simpan kata yang lolos."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Your child writes a four-sentence retelling of the earthworm text, one sentence per heading, then draws a labelled diagram.",
+      "id": "Anak menulis cerita kembali empat kalimat tentang cacing tanah, satu kalimat untuk setiap subjudul, lalu menggambar diagram berlabel."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who finds writing hard can draw a small picture in each heading box instead of key words.",
+      "id": "Anak yang sulit menulis bisa menggambar kecil di setiap kotak subjudul alih-alih kata kunci."
+    },
+    {
+      "en": "Read the text aloud for children still decoding, so the focus stays on understanding.",
+      "id": "Bacakan teks untuk anak yang masih belajar membaca, agar fokus tetap pada pemahaman."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "If you look for real earthworms in the garden, handle them gently with wet hands, put them back in the soil, and wash hands afterwards.",
+        "id": "Jika mencari cacing tanah sungguhan di kebun, pegang dengan lembut dengan tangan basah, kembalikan ke tanah, dan cuci tangan sesudahnya."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      10,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child retells a new information text with its topic and a key fact from each section, in their own words and with no added opinions, on two different days.",
+      "id": "Dikuasai jika anak menceritakan kembali teks informasi baru dengan topik dan satu fakta penting dari setiap bagian, dengan kata-kata sendiri dan tanpa pendapat tambahan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "fact_check"
+  ],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "parallel-distractors",
+      "single-answer-check",
+      "misconception-map",
+      "transfer-not-recall",
+      "safety",
+      "age-fit"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "f625d5d97fc55b8e"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-literacy",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,20 +1,64 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { evaluateArithmetic, gradeUnitAssessment, isExpansionVisible, parseResult, pipelineState, unitAssessmentForClient, validateExpansion, type Unit } from './units';
-import { RAW_READINGS, RAW_UNITS } from './content-index';
+import { contentHash, evaluateArithmetic, gradeUnitAssessment, isExpansionVisible, parseResult, pipelineState, unitAssessmentForClient, validateExpansion, type Unit } from './units';
+import { expansionSummary, findExpansionItem, loadExpansionLevel, loadRawExpansion } from './expansion-store';
 
 const repo = join(import.meta.dirname, '../../..');
-const refUnit = () => JSON.parse(readFileSync(join(repo, 'content/units/g2/math/unit-g2-math-place-value-hundreds.json'), 'utf8')) as Unit & Record<string, unknown>;
+/** The reference unit as an UNREVIEWED copy (the shipped file carries the owner's approval). */
+const refUnit = () => {
+  const u = JSON.parse(readFileSync(join(repo, 'content/units/g2/math/unit-g2-math-place-value-hundreds.json'), 'utf8')) as Unit & Record<string, unknown>;
+  u.reviewStatus = 'agent_reviewed';
+  u.review = { agentChecks: u.review.agentChecks };
+  return u;
+};
 const refReading = () => JSON.parse(readFileSync(join(repo, 'content/readings/age2_3/reading-age2_3-little-cat-bath.json'), 'utf8'));
 const errs = (units: unknown[], readings: unknown[] = []) => validateExpansion({ units, readings }).errors;
 
 describe('expansion corpus', () => {
-  it('every indexed unit and reading passes structural and subject validation', () => {
-    expect(validateExpansion({ units: RAW_UNITS, readings: RAW_READINGS }).errors).toEqual([]);
+  it('every indexed unit and reading passes structural and subject validation', async () => {
+    expect(validateExpansion(await loadRawExpansion()).errors).toEqual([]);
   });
-  it('nothing AI-drafted is visible in production without a human review record', () => {
-    const { content } = validateExpansion({ units: RAW_UNITS, readings: RAW_READINGS });
+  it('the precomputed summary matches the content: same ids, states and production visibility (index is current)', async () => {
+    const raw = await loadRawExpansion();
+    const { content, errors } = validateExpansion(raw);
+    const s = expansionSummary();
+    expect(s.errors).toEqual(errors);
+    const all = [...content.units, ...content.readings];
+    expect(s.items.map((x) => x.id).sort()).toEqual(all.map((x) => x.id).sort());
+    for (const x of all) {
+      const row = s.items.find((r) => r.id === x.id)!;
+      expect(row.version, x.id).toBe(x.version);
+      expect(row.state, x.id).toBe(pipelineState(x, errors));
+      expect(row.visibleAt.reviewed, x.id).toBe(isExpansionVisible(x, 'reviewed'));
+    }
+  });
+  it('the generated index is current: every unit and reading file on disk is indexed (run `pnpm --filter @atlas/curriculum index`)', async () => {
+    const { readdirSync, statSync } = await import('node:fs');
+    const ids: string[] = [];
+    const walk = (d: string) => { for (const f of readdirSync(d)) { const p = join(d, f); if (statSync(p).isDirectory()) walk(p); else if (/^(unit|reading)-.*\.json$/.test(f)) ids.push(f.replace(/\.json$/, '')); } };
+    walk(join(repo, 'content/units'));
+    walk(join(repo, 'content/readings'));
+    expect(expansionSummary().items.map((x) => x.id).sort()).toEqual(ids.sort());
+  });
+  it('every approved item is visible in production unless it has a documented reason (open source claim, scholar gate)', async () => {
+    const { content, errors } = validateExpansion(await loadRawExpansion());
+    for (const x of [...content.units, ...content.readings]) {
+      if (!x.review.reviewedBy) continue;
+      const religious = ('framework' in x && x.framework === 'islamic') || x.arabicPhrases.length > 0 || ('crossCurricular' in x && x.crossCurricular.some((c) => c.subject === 'islamic_values'));
+      const openClaim = 'factChecks' in x && x.factChecks.some((f) => f.status === 'needs_source');
+      if (religious || openClaim || x.review.rejectedReason || errors.some((e) => e.includes(x.id))) continue;
+      expect(isExpansionVisible(x, 'reviewed'), `${x.id}: approved but hidden (stale or missing reviewedVersion/reviewedHash?)`).toBe(true);
+    }
+  });
+  it('loads one level at a time and finds an item by id without loading other levels', async () => {
+    const g2 = await loadExpansionLevel('g2');
+    expect(g2.units.every((u) => u.level === 'g2') && g2.readings.every((r) => r.level === 'g2')).toBe(true);
+    expect((await findExpansionItem('unit-g2-math-place-value-hundreds'))?.item.id).toBe('unit-g2-math-place-value-hundreds');
+    expect(await findExpansionItem('unit-zz-math-nope')).toBeNull();
+  });
+  it('nothing AI-drafted is visible in production without a human review record', async () => {
+    const { content } = validateExpansion(await loadRawExpansion());
     for (const x of [...content.units, ...content.readings]) if (!x.review.reviewedBy) expect(isExpansionVisible(x, 'reviewed'), x.id).toBe(false);
   });
 });
@@ -84,6 +128,31 @@ describe('structure, prerequisites, duplicates, safety, religion', () => {
     expect(e).toMatch(/verified source needs verifiedBy/);
     const v = { ...u, reviewStatus: 'reviewed' as const, review: { agentChecks: [], reviewedBy: 'owner', reviewerRole: 'parent' as const, reviewedAt: '2026-11-10' }, religiousReview: { doctrinalSchool: null, fiqhSchool: null, arabicSource: null, edition: null, pageOrSection: null, translationReviewer: null, scholarReviewer: null, reviewedAt: null, approvalStatus: 'unverified' as const, notes: [] } };
     expect(isExpansionVisible(v as Unit, 'reviewed')).toBe(false);
+  });
+  it('an approval covers only the reviewed version: an edit after approval hides the item until it is re-reviewed', () => {
+    const u = validateExpansion({ units: [refUnit()], readings: [] }).content.units[0]!;
+    const approved = { ...u, reviewStatus: 'reviewed' as const, review: { ...u.review, reviewedBy: 'AB', reviewerRole: 'parent' as const, reviewedAt: '2026-11-11', reviewedVersion: u.version, reviewedHash: contentHash(u) } };
+    expect(isExpansionVisible(approved, 'reviewed')).toBe(true);
+    expect(isExpansionVisible({ ...approved, version: '9.9.9' }, 'reviewed')).toBe(false);
+    expect(isExpansionVisible({ ...approved, review: { ...approved.review, reviewedVersion: undefined } }, 'reviewed')).toBe(false);
+  });
+  it('the content fingerprint is identical in the validator and in apply-reviews.mjs, for every file (raw or parsed)', async () => {
+    // @ts-expect-error untyped .mjs script
+    const cli = (await import('../../../apps/web/scripts/apply-reviews.mjs')) as { contentHash: (x: unknown) => string };
+    const raw = await loadRawExpansion();
+    const { content } = validateExpansion(raw);
+    const parsed = new Map([...content.units, ...content.readings].map((x) => [x.id, x]));
+    for (const r of [...raw.units, ...raw.readings] as { id: string }[]) {
+      const p = parsed.get(r.id);
+      if (p) expect(contentHash(p), r.id).toBe(cli.contentHash(r));
+    }
+  });
+  it('an approval covers only the reviewed content: an edit without a version bump still hides the item', () => {
+    const u = validateExpansion({ units: [refUnit()], readings: [] }).content.units[0]!;
+    const approved = { ...u, reviewStatus: 'reviewed' as const, review: { ...u.review, reviewedBy: 'AB', reviewerRole: 'parent' as const, reviewedAt: '2026-11-11', reviewedVersion: u.version, reviewedHash: contentHash(u) } };
+    expect(isExpansionVisible(approved, 'reviewed')).toBe(true);
+    const edited = { ...approved, objective: { ...approved.objective, en: approved.objective.en + ' Edited.' } };
+    expect(isExpansionVisible(edited, 'reviewed')).toBe(false);
   });
   it('a rejected item is never visible, even in preview', () => {
     const u = validateExpansion({ units: [refUnit()], readings: [] }).content.units[0]!;

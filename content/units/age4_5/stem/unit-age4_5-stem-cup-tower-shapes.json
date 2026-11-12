@@ -1,0 +1,359 @@
+{
+  "id": "unit-age4_5-stem-cup-tower-shapes",
+  "version": "1.0.1",
+  "level": "age4_5",
+  "framework": "stem",
+  "strand": "engineering_design",
+  "title": {
+    "en": "Cup towers: tall and thin or wide and steady?",
+    "id": "Menara gelas: tinggi ramping atau lebar kokoh?"
+  },
+  "prerequisites": [
+    "unit-age3_4-stem-box-tower-test"
+  ],
+  "objective": {
+    "en": "Compare a one-cup-wide column with a pyramid that has a wider base, predict which stands better when the table is bumped, test it, and use a flat card 'floor' to build higher.",
+    "id": "Membandingkan menara satu gelas dengan piramida yang alasnya lebih lebar, menebak mana yang lebih kokoh saat meja disenggol, mengujinya, dan memakai 'lantai' karton datar untuk membangun lebih tinggi."
+  },
+  "rationale": {
+    "en": "Building on the box tower, children now change the shape on purpose and compare two designs with the same cups. They meet a real engineering trade-off: a thin column is taller for the same cups, but a wide base is steadier. Counting cups makes the comparison fair.",
+    "id": "Melanjutkan menara kardus, kini anak sengaja mengubah bentuk dan membandingkan dua rancangan dengan gelas yang sama. Mereka bertemu untung-rugi rekayasa yang nyata: menara ramping lebih tinggi dengan jumlah gelas yang sama, tetapi alas lebar lebih kokoh. Menghitung gelas membuat perbandingan adil."
+  },
+  "outcomes": [
+    {
+      "en": "Builds a column and a pyramid with the same number of cups and tests both the same way.",
+      "id": "Membangun menara ramping dan piramida dengan jumlah gelas yang sama dan menguji keduanya dengan cara yang sama."
+    },
+    {
+      "en": "Explains that a wider bottom helps a tower stay up, and uses a card floor to add a layer.",
+      "id": "Menjelaskan bahwa bagian bawah yang lebih lebar membantu menara tetap berdiri, dan memakai lantai karton untuk menambah lapisan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I build two towers with the same cups.",
+      "id": "Aku membangun dua menara dengan gelas yang sama."
+    },
+    {
+      "en": "A wide bottom keeps my tower up.",
+      "id": "Bagian bawah yang lebar membuat menaraku tetap berdiri."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Count out 6 cups together before each build so both towers use the same number: that makes the test fair.",
+      "id": "Hitung 6 gelas bersama sebelum setiap pembangunan agar kedua menara memakai jumlah yang sama: itu membuat uji coba adil."
+    },
+    {
+      "en": "Make the 'earthquake' the same every time: you knock on the table twice with your knuckles, at the same spot, not too hard.",
+      "id": "Buat 'gempa' yang sama setiap kali: kamu mengetuk meja dua kali dengan buku jari, di titik yang sama, tidak terlalu keras."
+    },
+    {
+      "en": "Always ask for a prediction first: 'Which one will still be standing after the earthquake?' Your child points or says a name for each tower.",
+      "id": "Selalu minta tebakan lebih dulu: 'Mana yang masih berdiri setelah gempa?' Anak menunjuk atau memberi nama untuk setiap menara."
+    },
+    {
+      "en": "Celebrate the fall as information: 'The thin one fell. What did the wide one have that helped?'",
+      "id": "Rayakan robohnya sebagai informasi: 'Yang ramping roboh. Apa yang dimiliki yang lebar sehingga membantu?'"
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Ten paper or plastic cups, all the same size",
+      "id": "Sepuluh gelas kertas atau plastik, semua sama besar"
+    },
+    {
+      "en": "Three pieces of thin card, each about the size of a page of a picture book, to use as flat floors",
+      "id": "Tiga lembar karton tipis, masing-masing kira-kira seukuran halaman buku cerita bergambar, untuk lantai datar"
+    },
+    {
+      "en": "A low table or a smooth floor",
+      "id": "Meja rendah atau lantai yang rata"
+    },
+    {
+      "en": "A soft toy to be 'the person at the top'",
+      "id": "Boneka sebagai 'orang di puncak'"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Clear the table of everything else. Count the cups into two piles of 6 and 4 so the first test is ready.",
+      "id": "Kosongkan meja dari barang lain. Hitung gelas menjadi dua tumpukan, 6 dan 4, agar uji pertama siap."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Column: stack 6 cups upside down, one on top of another, rim on base. 'Tall! Will it stand after the earthquake?' Sari points 'yes'. Knock, knock: it wobbles and topples. 'Our test found something!'",
+      "id": "Menara ramping: tumpuk 6 gelas terbalik, satu di atas yang lain, bibir gelas di atas dasar gelas. 'Tinggi! Apakah tetap berdiri setelah gempa?' Sari menunjuk 'ya'. Tok, tok: menara bergoyang lalu roboh. 'Uji coba kita menemukan sesuatu!'"
+    },
+    {
+      "en": "Pyramid: use the same 6 cups. Three upside down in a row at the bottom, two on top of them, one at the very top. Count: 3, 2, 1. Knock, knock: it stays. 'It is shorter, but the wide bottom held it up.'",
+      "id": "Piramida: pakai 6 gelas yang sama. Tiga terbalik berjajar di bawah, dua di atasnya, satu di paling atas. Hitung: 3, 2, 1. Tok, tok: tetap berdiri. 'Lebih pendek, tetapi bagian bawah yang lebar menahannya.'"
+    },
+    {
+      "en": "Card floor: build 3 cups in a row, lay a card on top, then 3 more cups on the card. 'The card made a flat floor so the cups on top have more to stand on.'",
+      "id": "Lantai karton: susun 3 gelas berjajar, letakkan karton di atasnya, lalu 3 gelas lagi di atas karton. 'Karton membuat lantai datar sehingga gelas di atas punya pijakan lebih luas.'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Use all 10 cups for the tallest pyramid you can: 4, then 3, then 2, then 1. Test with the earthquake. Then try 10 cups in one column and compare.",
+      "id": "Pakai semua 10 gelas untuk piramida tertinggi: 4, lalu 3, lalu 2, lalu 1. Uji dengan gempa. Lalu coba 10 gelas dalam satu menara ramping dan bandingkan."
+    },
+    {
+      "en": "Put the soft toy on top of each tower. Which tower can hold the toy without falling? Change one thing and try again.",
+      "id": "Taruh boneka di puncak setiap menara. Menara mana yang bisa menahan boneka tanpa roboh? Ubah satu hal dan coba lagi."
+    },
+    {
+      "en": "Invent your own tower shape with card floors. Tell a grown-up your plan first, then build and test it.",
+      "id": "Ciptakan bentuk menara sendiri dengan lantai karton. Ceritakan rencanamu kepada orang dewasa lebih dulu, lalu bangun dan uji."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Show a 5-cup column and a 5-cup pyramid (3 cups on the bottom, 2 on top). Ask 'After the earthquake, which will still be standing?' What does your child predict before the earthquake?",
+        "id": "Tunjukkan menara ramping 5 gelas dan piramida 5 gelas (3 gelas di bawah, 2 di atas). Tanya 'Setelah gempa, mana yang masih berdiri?' Apa tebakan anak sebelum gempa?"
+      },
+      "choices": {
+        "en": [
+          "The pyramid, because its bottom is wider",
+          "The column, because it is taller"
+        ],
+        "id": [
+          "Piramida, karena bagian bawahnya lebih lebar",
+          "Menara ramping, karena lebih tinggi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A wider base spreads the tower out so it does not tip over easily.",
+        "id": "Alas yang lebih lebar membuat menara melebar sehingga tidak mudah terguling."
+      },
+      "distractorMisconceptions": {
+        "1": "TALLER_IS_STRONGER"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Ask 'A pyramid has 2 cups on the bottom and 1 cup on top. How many cups is that?' What does your child answer?",
+        "id": "Tanya 'Sebuah piramida punya 2 gelas di bawah dan 1 gelas di atas. Berapa gelas semuanya?' Apa jawaban anak?"
+      },
+      "choices": {
+        "en": [
+          "3 cups",
+          "2 cups",
+          "1 cup"
+        ],
+        "id": [
+          "3 gelas",
+          "2 gelas",
+          "1 gelas"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count every cup: 2 and 1 make 3.",
+        "id": "Hitung setiap gelas: 2 dan 1 menjadi 3."
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_BOTTOM_ONLY",
+        "2": "COUNTS_TOP_ONLY"
+      },
+      "check": {
+        "expression": "2 + 1",
+        "result": "3"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Ask 'Before we compare two towers, what must be the same?' What does your child say?",
+        "id": "Tanya 'Sebelum membandingkan dua menara, apa yang harus sama?' Apa kata anak?"
+      },
+      "choices": {
+        "en": [
+          "The same number of cups and the same earthquake",
+          "Nothing, any towers will do"
+        ],
+        "id": [
+          "Jumlah gelas yang sama dan gempa yang sama",
+          "Tidak ada, menara apa saja boleh"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A fair test changes only the shape.",
+        "id": "Uji yang adil hanya mengubah bentuknya."
+      },
+      "distractorMisconceptions": {
+        "1": "UNFAIR_COMPARISON"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "The top cups keep slipping off a 3-cup bottom row. Ask 'What could help?' What does your child suggest?",
+        "id": "Gelas atas terus tergelincir dari barisan bawah yang berisi 3 gelas. Tanya 'Apa yang bisa membantu?' Apa usul anak?"
+      },
+      "choices": {
+        "en": [
+          "Put a flat card on the bottom row first",
+          "Push the top cups down hard"
+        ],
+        "id": [
+          "Taruh karton datar di atas barisan bawah dulu",
+          "Tekan gelas atas kuat-kuat"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A card floor gives the next cups a flat place to stand.",
+        "id": "Lantai karton memberi gelas berikutnya tempat berpijak yang datar."
+      },
+      "distractorMisconceptions": {
+        "1": "FORCE_FIXES_DESIGN"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "TALLER_IS_STRONGER",
+      "description": {
+        "en": "Thinks a taller tower is a stronger tower.",
+        "id": "Mengira menara yang lebih tinggi adalah menara yang lebih kuat."
+      },
+      "remediation": {
+        "en": "Stand with feet together and have the adult give a gentle nudge on the shoulder, then stand with feet wide apart and try again. Which way did you wobble less?",
+        "id": "Berdiri dengan kaki rapat dan minta orang dewasa mendorong bahu dengan lembut, lalu berdiri dengan kaki terbuka lebar dan coba lagi. Cara mana yang lebih sedikit goyang?"
+      }
+    },
+    {
+      "code": "COUNTS_BOTTOM_ONLY",
+      "description": {
+        "en": "Counts only the bottom row of a tower.",
+        "id": "Hanya menghitung barisan paling bawah sebuah menara."
+      },
+      "remediation": {
+        "en": "Take the tower apart, putting each cup in a line on the floor as you count, starting from the top.",
+        "id": "Bongkar menara, taruh setiap gelas berjajar di lantai sambil berhitung, mulai dari atas."
+      }
+    },
+    {
+      "code": "COUNTS_TOP_ONLY",
+      "description": {
+        "en": "Counts only the cup at the top.",
+        "id": "Hanya menghitung gelas di puncak."
+      },
+      "remediation": {
+        "en": "Touch each cup with a finger from the bottom up, saying a number for each touch.",
+        "id": "Sentuh setiap gelas dengan jari dari bawah ke atas, sebut satu angka untuk setiap sentuhan."
+      }
+    },
+    {
+      "code": "UNFAIR_COMPARISON",
+      "description": {
+        "en": "Compares two designs without keeping the other things the same.",
+        "id": "Membandingkan dua rancangan tanpa menjaga hal lainnya tetap sama."
+      },
+      "remediation": {
+        "en": "Race two toy cars where one gets a push and one does not, then ask whether that race was fair.",
+        "id": "Balapkan dua mobil mainan, yang satu didorong dan yang satu tidak, lalu tanya apakah balapan itu adil."
+      }
+    },
+    {
+      "code": "FORCE_FIXES_DESIGN",
+      "description": {
+        "en": "Tries to fix a design problem by pressing harder instead of changing the design.",
+        "id": "Mencoba memperbaiki masalah rancangan dengan menekan lebih keras, bukan mengubah rancangannya."
+      },
+      "remediation": {
+        "en": "Try to stand a cup on the gap between two cups, then on a card laid across them, and feel the difference.",
+        "id": "Coba dirikan gelas di celah antara dua gelas, lalu di atas karton yang diletakkan melintang, dan rasakan perbedaannya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Build the same pyramid on a cushion instead of a table. Is it steadier or wobblier? Why might that be?",
+      "id": "Bangun piramida yang sama di atas bantal, bukan di meja. Lebih kokoh atau lebih goyang? Kira-kira mengapa?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Larger cups are easier for small hands; a child who cannot stack can be the 'earthquake maker' and the predictor while the adult stacks.",
+      "id": "Gelas yang lebih besar lebih mudah untuk tangan kecil; anak yang belum bisa menumpuk bisa menjadi 'pembuat gempa' dan penebak sementara orang dewasa menumpuk."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use only light paper or plastic cups, never glasses or mugs, so a falling tower cannot break or hurt anyone.",
+        "id": "Gunakan hanya gelas kertas atau plastik yang ringan, jangan gelas kaca atau cangkir, agar menara yang roboh tidak pecah atau melukai."
+      },
+      {
+        "en": "The earthquake is a gentle knock by the adult, not a hit by the child. Keep faces back from the tower.",
+        "id": "Gempa adalah ketukan lembut oleh orang dewasa, bukan pukulan oleh anak. Jaga wajah agak jauh dari menara."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child builds two towers from the same cups, predicts and tests them the same way, and explains why the wide base stood, on two different days.",
+      "id": "Dikuasai jika anak membangun dua menara dari gelas yang sama, menebak dan mengujinya dengan cara yang sama, dan menjelaskan mengapa alas lebar tetap berdiri, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "0711129483ecdfaa"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

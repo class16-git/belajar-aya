@@ -1,0 +1,493 @@
+{
+  "id": "unit-g6-montessori-squares-of-numbers",
+  "version": "1.0.1",
+  "level": "g6",
+  "framework": "montessori",
+  "strand": "mathematics",
+  "title": {
+    "en": "Building squares of numbers",
+    "id": "Membangun kuadrat bilangan"
+  },
+  "prerequisites": [
+    "unit-g4-math-area-of-rectangles"
+  ],
+  "objective": {
+    "en": "Build the squares of 1 to 10 on squared paper as Montessori-style bead squares, discover that each square is the sum of consecutive odd numbers, and show by growing a square that the next square adds two sides and a corner: (n + 1)² = n² + 2n + 1.",
+    "id": "Membangun kuadrat 1 sampai 10 di kertas berpetak seperti persegi manik Montessori, menemukan bahwa setiap kuadrat adalah jumlah bilangan ganjil berurutan, dan menunjukkan dengan menumbuhkan persegi bahwa kuadrat berikutnya menambah dua sisi dan satu sudut: (n + 1)² = n² + 2n + 1."
+  },
+  "rationale": {
+    "en": "Montessori bead squares let children see a square number as a real square. Growing one square into the next makes a pattern visible that would otherwise be an algebra rule, so the child meets algebra first as a picture she has built herself. It prepares for square roots and for algebraic expressions.",
+    "id": "Persegi manik Montessori membuat anak melihat bilangan kuadrat sebagai persegi yang nyata. Menumbuhkan satu persegi menjadi persegi berikutnya membuat pola terlihat, yang sebelumnya hanya aturan aljabar, sehingga anak bertemu aljabar pertama kali sebagai gambar yang ia bangun sendiri. Ini menyiapkan anak untuk akar kuadrat dan bentuk aljabar."
+  },
+  "outcomes": [
+    {
+      "en": "Draws and calculates the squares of 1 to 10, and writes them as n × n and n².",
+      "id": "Menggambar dan menghitung kuadrat 1 sampai 10, dan menuliskannya sebagai n × n dan n²."
+    },
+    {
+      "en": "Shows and explains that the squares are sums of consecutive odd numbers.",
+      "id": "Menunjukkan dan menjelaskan bahwa kuadrat adalah jumlah bilangan ganjil berurutan."
+    },
+    {
+      "en": "Uses n² + 2n + 1 to find the next square from one already known.",
+      "id": "Memakai n² + 2n + 1 untuk mencari kuadrat berikutnya dari kuadrat yang sudah diketahui."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "The child completes a chart of squares 1 to 10 without error.",
+      "id": "Anak menyelesaikan tabel kuadrat 1 sampai 10 tanpa kesalahan."
+    },
+    {
+      "en": "The child finds two squares beyond 10 using the growing rule and checks one by multiplying.",
+      "id": "Anak menemukan dua kuadrat di atas 10 memakai aturan menumbuhkan dan memeriksa satu di antaranya dengan perkalian."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "The Montessori bead squares are made of coloured beads; here the child draws them on 1 cm squared paper and colours each square in its own colour, so no beads are needed. If you like, use the bead colours: 1 red, 2 green, 3 pink, 4 yellow, 5 light blue, 6 lilac, 7 white (outline only), 8 brown, 9 dark blue, 10 gold.",
+      "id": "Persegi manik Montessori terbuat dari manik-manik berwarna; di sini anak menggambarnya di kertas berpetak 1 cm dan mewarnai setiap persegi dengan warnanya sendiri, sehingga tidak perlu manik-manik. Jika mau, pakai warna manik: 1 merah, 2 hijau, 3 merah muda, 4 kuning, 5 biru muda, 6 ungu muda, 7 putih (garis tepi saja), 8 cokelat, 9 biru tua, 10 emas."
+    },
+    {
+      "en": "Let the child grow the squares and find the patterns before you name them. Ask \"How many squares did you add?\" rather than telling.",
+      "id": "Biarkan anak menumbuhkan persegi dan menemukan polanya sebelum Anda menyebutnya. Tanyakan \"Berapa kotak yang kamu tambahkan?\" daripada memberi tahu."
+    },
+    {
+      "en": "Use the word \"square\" for both the shape and the number: 5² is read \"five squared\" and means 5 × 5, a square with sides of 5.",
+      "id": "Pakai kata \"kuadrat\" untuk bilangannya dan \"persegi\" untuk bentuknya: 5² dibaca \"lima kuadrat\" dan berarti 5 × 5, persegi bersisi 5."
+    },
+    {
+      "en": "A common error is 5² = 10 (5 × 2). The drawn square shows at once why it is 25.",
+      "id": "Kesalahan yang umum adalah 5² = 10 (5 × 2). Persegi yang digambar langsung menunjukkan mengapa hasilnya 25."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "On squared paper, draw a square with sides of 1, then 2, then 3, up to 10. Count or calculate the small squares in each.",
+      "id": "Di kertas berpetak, gambar persegi bersisi 1, lalu 2, lalu 3, sampai 10. Hitung atau kalikan banyak kotak kecil di masing-masing."
+    },
+    {
+      "en": "Grow one square into the next with a new colour. How many squares did you add? Look for the pattern.",
+      "id": "Tumbuhkan satu persegi menjadi persegi berikutnya dengan warna baru. Berapa kotak yang kamu tambahkan? Cari polanya."
+    },
+    {
+      "en": "Use your pattern to find a square you have not drawn, then check by multiplying.",
+      "id": "Pakai polamu untuk mencari kuadrat yang belum kamu gambar, lalu periksa dengan perkalian."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Draw and colour square arrays on squared paper, and cut out L-shaped strips to grow one square into the next.",
+        "id": "Menggambar dan mewarnai susunan persegi di kertas berpetak, dan menggunting jalur berbentuk L untuk menumbuhkan satu persegi menjadi persegi berikutnya."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the growing squares in a row with each added L-shape in a new colour, labelled with how many squares it holds.",
+        "id": "Menggambar persegi yang tumbuh berjajar dengan setiap bentuk L yang ditambahkan diberi warna baru dan label banyak kotaknya."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the pattern with numbers and symbols, for example 10² = 100, so 11² = 100 + 10 + 10 + 1 = 121, and (n + 1)² = n² + 2n + 1.",
+        "id": "Menulis pola dengan angka dan lambang, misalnya 10² = 100, jadi 11² = 100 + 10 + 10 + 1 = 121, dan (n + 1)² = n² + 2n + 1."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "1 cm squared paper (several sheets) and coloured pencils, ten colours if possible",
+      "id": "Kertas berpetak 1 cm (beberapa lembar) dan pensil warna, sepuluh warna jika memungkinkan"
+    },
+    {
+      "en": "Scissors for cutting L-shaped strips, glue and a ruler",
+      "id": "Gunting untuk memotong jalur berbentuk L, lem, dan penggaris"
+    },
+    {
+      "en": "A chart with three columns: n, n × n, n²",
+      "id": "Tabel dengan tiga kolom: n, n × n, n²"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Rule the chart with rows for 1 to 10, plus three empty rows for later.",
+      "id": "Buat tabel dengan baris untuk 1 sampai 10, ditambah tiga baris kosong untuk nanti."
+    },
+    {
+      "en": "Lay out the colours in a fixed order so each square always has the same colour.",
+      "id": "Susun warna dalam urutan tetap agar setiap persegi selalu punya warna yang sama."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Draw a 4 by 4 square and colour it: \"Four rows of four: 4 × 4 = 16. We write 4² = 16.\" Now grow it: add a column of 4 on the right and a row of 4 along the bottom, then 1 corner square, in a new colour. \"We added 4 + 4 + 1 = 9. Now it is a 5 by 5 square: 16 + 9 = 25.\"",
+      "id": "Gambar persegi 4 kali 4 dan warnai: \"Empat baris berisi empat: 4 × 4 = 16. Kita tulis 4² = 16.\" Sekarang tumbuhkan: tambahkan satu kolom berisi 4 di kanan dan satu baris berisi 4 di bawah, lalu 1 kotak sudut, dengan warna baru. \"Kita menambah 4 + 4 + 1 = 9. Sekarang menjadi persegi 5 kali 5: 16 + 9 = 25.\""
+    },
+    {
+      "en": "Start again from one square and grow it step by step, writing what each L-shape adds: 1, then 3, then 5, then 7. \"Look: 1 + 3 + 5 + 7 = 16, which is 4². The squares are made of odd numbers in order.\"",
+      "id": "Mulai lagi dari satu kotak dan tumbuhkan langkah demi langkah, menulis berapa yang ditambahkan setiap bentuk L: 1, lalu 3, lalu 5, lalu 7. \"Lihat: 1 + 3 + 5 + 7 = 16, yaitu 4². Kuadrat tersusun dari bilangan ganjil berurutan.\""
+    },
+    {
+      "en": "Name the rule: \"To grow a square with side n, add two strips of n and one corner: n² + n + n + 1. We write (n + 1)² = n² + 2n + 1.\"",
+      "id": "Sebutkan aturannya: \"Untuk menumbuhkan persegi bersisi n, tambahkan dua jalur sepanjang n dan satu sudut: n² + n + n + 1. Kita tulis (n + 1)² = n² + 2n + 1.\""
+    }
+  ],
+  "practice": [
+    {
+      "en": "Draw all the squares from 1² to 10² in their colours and fill in the chart.",
+      "id": "Gambar semua persegi dari 1² sampai 10² dengan warnanya dan isi tabel."
+    },
+    {
+      "en": "Grow 6² into 7² by cutting and gluing an L-shaped strip, and write the addition beside it.",
+      "id": "Tumbuhkan 6² menjadi 7² dengan menggunting dan menempel jalur berbentuk L, lalu tulis penjumlahannya di sampingnya."
+    },
+    {
+      "en": "Use the rule to fill the three extra rows (11², 12², 13²) from the row above each time, and check one by multiplying.",
+      "id": "Pakai aturan untuk mengisi tiga baris tambahan (11², 12², 13²) dari baris di atasnya setiap kali, lalu periksa satu di antaranya dengan perkalian."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "7² = ?",
+        "id": "7² = ?"
+      },
+      "choices": {
+        "en": [
+          "49",
+          "14",
+          "42"
+        ],
+        "id": [
+          "49",
+          "14",
+          "42"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "7² means 7 × 7, a square with 7 rows of 7: 49.",
+        "id": "7² berarti 7 × 7, persegi dengan 7 baris berisi 7: 49."
+      },
+      "check": {
+        "expression": "7 × 7",
+        "result": "49"
+      },
+      "distractorMisconceptions": {
+        "1": "SQUARE_AS_DOUBLE",
+        "2": "OFF_BY_ONE_SIDE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "8² = 64. How many small squares must you add to grow it into 9²?",
+        "id": "8² = 64. Berapa kotak kecil yang harus ditambahkan untuk menumbuhkannya menjadi 9²?"
+      },
+      "choices": {
+        "en": [
+          "17",
+          "9",
+          "16"
+        ],
+        "id": [
+          "17",
+          "9",
+          "16"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Two strips of 8 and one corner: 8 + 8 + 1 = 17. Check: 81 − 64 = 17.",
+        "id": "Dua jalur berisi 8 dan satu sudut: 8 + 8 + 1 = 17. Periksa: 81 − 64 = 17."
+      },
+      "check": {
+        "expression": "9 × 9 - 8 × 8",
+        "result": "17"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_ONE_STRIP",
+        "2": "FORGETS_CORNER"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "1 + 3 + 5 + 7 + 9 + 11 = ?",
+        "id": "1 + 3 + 5 + 7 + 9 + 11 = ?"
+      },
+      "choices": {
+        "en": [
+          "36, which is 6²",
+          "25, which is 5²",
+          "121, which is 11²"
+        ],
+        "id": [
+          "36, yaitu 6²",
+          "25, yaitu 5²",
+          "121, yaitu 11²"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "There are six odd numbers, so they build a 6 by 6 square: 36.",
+        "id": "Ada enam bilangan ganjil, jadi menyusun persegi 6 kali 6: 36."
+      },
+      "check": {
+        "expression": "1 + 3 + 5 + 7 + 9 + 11",
+        "result": "36"
+      },
+      "distractorMisconceptions": {
+        "1": "MISCOUNTS_TERMS",
+        "2": "SQUARES_LAST_TERM"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A square courtyard is paved with 144 square tiles, all the same size. How many tiles are along one side?",
+        "id": "Halaman berbentuk persegi dipasangi 144 ubin persegi yang sama besar. Berapa ubin di sepanjang satu sisinya?"
+      },
+      "choices": {
+        "en": [
+          "12",
+          "72",
+          "36"
+        ],
+        "id": [
+          "12",
+          "72",
+          "36"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "We need the number that times itself makes 144: 12 × 12 = 144.",
+        "id": "Kita perlu bilangan yang jika dikalikan dengan dirinya sendiri menghasilkan 144: 12 × 12 = 144."
+      },
+      "check": {
+        "expression": "144 / 12",
+        "result": "12"
+      },
+      "distractorMisconceptions": {
+        "1": "HALVES_FOR_ROOT",
+        "2": "DIVIDES_BY_FOUR_SIDES"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "13² = 169. What is 14²?",
+        "id": "13² = 169. Berapa 14²?"
+      },
+      "choices": {
+        "en": [
+          "196",
+          "170",
+          "183"
+        ],
+        "id": [
+          "196",
+          "170",
+          "183"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Add two strips of 13 and a corner: 169 + 13 + 13 + 1 = 196. Check: 14 × 14 = 196.",
+        "id": "Tambahkan dua jalur berisi 13 dan satu sudut: 169 + 13 + 13 + 1 = 196. Periksa: 14 × 14 = 196."
+      },
+      "check": {
+        "expression": "169 + 2 × 13 + 1",
+        "result": "196"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_ONE_ONLY",
+        "2": "ADDS_ONE_STRIP"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SQUARE_AS_DOUBLE",
+      "description": {
+        "en": "Reads n² as n × 2.",
+        "id": "Membaca n² sebagai n × 2."
+      },
+      "remediation": {
+        "en": "Draw 7 × 2 as a rectangle and 7 × 7 as a square side by side on squared paper. Ask which one is a square.",
+        "id": "Gambar 7 × 2 sebagai persegi panjang dan 7 × 7 sebagai persegi berdampingan di kertas berpetak. Tanyakan mana yang berbentuk persegi."
+      }
+    },
+    {
+      "code": "OFF_BY_ONE_SIDE",
+      "description": {
+        "en": "Multiplies by a neighbouring number, such as 7 × 6.",
+        "id": "Mengalikan dengan bilangan tetangga, seperti 7 × 6."
+      },
+      "remediation": {
+        "en": "Draw the square and count the rows and the columns separately: both must be 7.",
+        "id": "Gambar perseginya dan hitung baris dan kolomnya secara terpisah: keduanya harus 7."
+      }
+    },
+    {
+      "code": "ADDS_ONE_STRIP",
+      "description": {
+        "en": "Adds only one strip (with or without the corner) when growing a square.",
+        "id": "Hanya menambah satu jalur (dengan atau tanpa sudut) saat menumbuhkan persegi."
+      },
+      "remediation": {
+        "en": "Add one strip to an 8 by 8 square and measure: it becomes 8 by 9, a rectangle, not a square. A second strip and a corner are needed.",
+        "id": "Tambahkan satu jalur ke persegi 8 kali 8 lalu ukur: menjadi 8 kali 9, persegi panjang, bukan persegi. Diperlukan jalur kedua dan satu sudut."
+      }
+    },
+    {
+      "code": "FORGETS_CORNER",
+      "description": {
+        "en": "Adds two strips but forgets the corner square.",
+        "id": "Menambah dua jalur tetapi lupa kotak sudutnya."
+      },
+      "remediation": {
+        "en": "Cut out the two strips and lay them on: there is a gap at the corner. Colour the missing square in bright red.",
+        "id": "Gunting kedua jalur dan pasang: ada celah di sudut. Warnai kotak yang kurang dengan merah terang."
+      }
+    },
+    {
+      "code": "MISCOUNTS_TERMS",
+      "description": {
+        "en": "Miscounts how many odd numbers are being added.",
+        "id": "Salah menghitung banyak bilangan ganjil yang dijumlahkan."
+      },
+      "remediation": {
+        "en": "Tick each odd number as you count it, and draw one L-shape for each tick.",
+        "id": "Centang setiap bilangan ganjil saat menghitungnya, dan gambar satu bentuk L untuk setiap centang."
+      }
+    },
+    {
+      "code": "SQUARES_LAST_TERM",
+      "description": {
+        "en": "Squares the last odd number instead of counting the terms.",
+        "id": "Mengkuadratkan bilangan ganjil terakhir alih-alih menghitung banyak sukunya."
+      },
+      "remediation": {
+        "en": "Build 1 + 3 + 5 as L-shapes: the square is 3 by 3, not 5 by 5. The side equals how many numbers were added.",
+        "id": "Susun 1 + 3 + 5 sebagai bentuk L: perseginya 3 kali 3, bukan 5 kali 5. Sisinya sama dengan banyak bilangan yang dijumlahkan."
+      }
+    },
+    {
+      "code": "HALVES_FOR_ROOT",
+      "description": {
+        "en": "Halves the number to find the side of a square.",
+        "id": "Membagi dua bilangan untuk mencari sisi persegi."
+      },
+      "remediation": {
+        "en": "Test the guess: 72 × 72 is far more than 144. Draw a 12 by 12 square on squared paper and count it.",
+        "id": "Uji tebakannya: 72 × 72 jauh lebih dari 144. Gambar persegi 12 kali 12 di kertas berpetak dan hitung."
+      }
+    },
+    {
+      "code": "DIVIDES_BY_FOUR_SIDES",
+      "description": {
+        "en": "Divides by 4 because a square has four sides.",
+        "id": "Membagi dengan 4 karena persegi punya empat sisi."
+      },
+      "remediation": {
+        "en": "Separate area and perimeter: the tiles cover the inside (area), while four sides are the edge (perimeter). Count the tiles along one edge of a drawn square.",
+        "id": "Pisahkan luas dan keliling: ubin menutupi bagian dalam (luas), sedangkan empat sisi adalah tepinya (keliling). Hitung ubin di sepanjang satu tepi persegi yang digambar."
+      }
+    },
+    {
+      "code": "ADDS_ONE_ONLY",
+      "description": {
+        "en": "Thinks the next square is just one more.",
+        "id": "Mengira kuadrat berikutnya hanya bertambah satu."
+      },
+      "remediation": {
+        "en": "Compare 3² and 4² as drawings: 9 and 16. How many more squares are in the bigger one? Clearly more than one.",
+        "id": "Bandingkan gambar 3² dan 4²: 9 dan 16. Berapa kotak lebih banyak di persegi yang lebih besar? Jelas lebih dari satu."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Build cubes of numbers from squares stacked in layers (for example 3³ = 3 × 3 × 3 = 27) using sugar cubes or drawn layers, and look for patterns.",
+      "id": "Bangun kubik bilangan dari persegi yang ditumpuk berlapis (misalnya 3³ = 3 × 3 × 3 = 27) memakai gula batu atau gambar lapisan, lalu cari polanya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use 2 cm squared paper for a child who finds small squares hard to colour or count.",
+      "id": "Pakai kertas berpetak 2 cm untuk anak yang kesulitan mewarnai atau menghitung kotak kecil."
+    },
+    {
+      "en": "A child who finds cutting hard can draw the L-shapes in a new colour instead of cutting them.",
+      "id": "Anak yang kesulitan menggunting boleh menggambar bentuk L dengan warna baru alih-alih menggunting."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use round-ended scissors for cutting paper strips, and keep scissors and paper offcuts away from younger children.",
+        "id": "Pakai gunting berujung tumpul untuk memotong jalur kertas, dan jauhkan gunting dan sisa potongan kertas dari anak yang lebih kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 45
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child completes the squares chart, explains the odd-number pattern and finds two new squares with the rule, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan tabel kuadrat, menjelaskan pola bilangan ganjil, dan menemukan dua kuadrat baru dengan aturan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "age-fit"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "cbbb48b8d44c0e91"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

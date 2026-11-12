@@ -1,0 +1,256 @@
+{
+  "id": "reading-g2-sintas-savings-jar",
+  "version": "1.0.0",
+  "level": "g2",
+  "readingLevel": "transitional",
+  "genre": "fiction",
+  "mode": "independent",
+  "title": {
+    "en": "Sinta's savings jar",
+    "id": "Celengan Sinta"
+  },
+  "text": {
+    "en": [
+      "Sinta saw a storybook about the sea at the bookshop. It cost Rp20,000. Sinta had only Rp5,000.",
+      "'How can I buy it?' she asked. Ayah said, 'You get Rp3,000 a week for pocket money. What if you save it?'",
+      "Sinta found an empty jar and put her Rp5,000 inside. She stuck a paper on it: 'Sea book: Rp20,000.'",
+      "Every Saturday, Sinta dropped her Rp3,000 into the jar and counted all the money again.",
+      "One hot Saturday, the es cendol seller rang his bell. Sinta's mouth watered. Then she looked at her jar and walked back inside.",
+      "At last came the Saturday when the jar held exactly Rp20,000. Sinta carried it to the bookshop with a big smile.",
+      "That night she read about whales and turtles. 'This book feels extra special,' she said, 'because I waited for it.'"
+    ],
+    "id": [
+      "Sinta melihat buku cerita tentang laut di toko buku. Harganya Rp20.000. Sinta hanya punya Rp5.000.",
+      "'Bagaimana aku bisa membelinya?' tanyanya. Ayah berkata, 'Kamu dapat uang jajan Rp3.000 seminggu. Bagaimana kalau kamu menabungnya?'",
+      "Sinta mencari stoples kosong dan memasukkan Rp5.000 ke dalamnya. Ia menempelkan kertas: 'Buku laut: Rp20.000.'",
+      "Setiap hari Sabtu, Sinta memasukkan Rp3.000 ke stoples dan menghitung lagi semua uangnya.",
+      "Pada suatu Sabtu yang panas, penjual es cendol membunyikan belnya. Sinta jadi ingin sekali. Lalu ia melihat stoplesnya dan masuk lagi ke rumah.",
+      "Akhirnya tiba hari Sabtu ketika isi stoples tepat Rp20.000. Sinta membawanya ke toko buku sambil tersenyum lebar.",
+      "Malam itu ia membaca tentang paus dan penyu. 'Buku ini terasa sangat istimewa,' katanya, 'karena aku menunggu untuk mendapatkannya.'"
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a story and follows how an amount grows by equal steps.",
+      "id": "Membaca cerita dan mengikuti bagaimana jumlah uang bertambah dengan langkah yang sama."
+    },
+    {
+      "en": "Explains why a character chose to wait.",
+      "id": "Menjelaskan mengapa tokoh memilih menunggu."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "save",
+        "id": "menabung"
+      },
+      "meaning": {
+        "en": "keep money instead of spending it",
+        "id": "menyimpan uang daripada membelanjakannya"
+      }
+    },
+    {
+      "word": {
+        "en": "pocket money",
+        "id": "uang jajan"
+      },
+      "meaning": {
+        "en": "money a child is given to spend or save",
+        "id": "uang yang diberikan kepada anak untuk dipakai atau ditabung"
+      }
+    },
+    {
+      "word": {
+        "en": "cost",
+        "id": "harga"
+      },
+      "meaning": {
+        "en": "how much money you must pay",
+        "id": "berapa uang yang harus dibayar"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "How much money did Sinta have at the start?",
+        "id": "Berapa uang Sinta di awal?"
+      },
+      "choices": {
+        "en": [
+          "Rp5,000",
+          "Rp20,000",
+          "Rp3,000"
+        ],
+        "id": [
+          "Rp5.000",
+          "Rp20.000",
+          "Rp3.000"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "math",
+      "prompt": {
+        "en": "How much more money did Sinta need at the start to buy the book?",
+        "id": "Di awal, berapa uang lagi yang Sinta perlukan untuk membeli buku?"
+      },
+      "choices": {
+        "en": [
+          "Rp15,000",
+          "Rp25,000",
+          "Rp5,000"
+        ],
+        "id": [
+          "Rp15.000",
+          "Rp25.000",
+          "Rp5.000"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0,
+      "check": {
+        "expression": "20000 - 5000",
+        "result": "15000"
+      }
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "How many Saturdays did Sinta have to save to reach Rp20,000?",
+        "id": "Berapa kali hari Sabtu Sinta harus menabung untuk mencapai Rp20.000?"
+      },
+      "choices": {
+        "en": [
+          "5 Saturdays",
+          "4 Saturdays",
+          "6 Saturdays"
+        ],
+        "id": [
+          "5 kali Sabtu",
+          "4 kali Sabtu",
+          "6 kali Sabtu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5,
+      "check": {
+        "expression": "(20000 - 5000) / 3000",
+        "result": "5"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Sinta walk back inside when she heard the cendol seller?",
+        "id": "Mengapa Sinta masuk lagi ke rumah saat mendengar penjual cendol?"
+      },
+      "choices": {
+        "en": [
+          "she chose to keep saving for the book",
+          "she did not like cendol",
+          "the seller had no ice left"
+        ],
+        "id": [
+          "ia memilih tetap menabung untuk buku",
+          "ia tidak suka cendol",
+          "penjualnya kehabisan es"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q5",
+      "kind": "reflection",
+      "prompt": {
+        "en": "Why did the book feel extra special to Sinta?",
+        "id": "Mengapa buku itu terasa sangat istimewa bagi Sinta?"
+      },
+      "choices": {
+        "en": [
+          "she had waited and saved for it herself",
+          "it was the only book in the shop",
+          "Ayah bought it for her"
+        ],
+        "id": [
+          "ia menunggu dan menabung sendiri untuk membelinya",
+          "itu satu-satunya buku di toko",
+          "Ayah yang membelikannya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Adding the same amount each week is repeated addition.",
+        "id": "Menambahkan jumlah yang sama setiap minggu adalah penjumlahan berulang."
+      }
+    },
+    {
+      "subject": "practical_life",
+      "connection": {
+        "en": "Saving towards a goal helps children plan and wait.",
+        "id": "Menabung untuk sebuah tujuan melatih anak merencanakan dan bersabar."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What would you like to save for? How long might it take?",
+      "id": "Kamu ingin menabung untuk apa? Berapa lama kira-kira?"
+    },
+    {
+      "en": "Was it hard for Sinta to say no to the cendol? Why?",
+      "id": "Apakah sulit bagi Sinta menolak cendol? Mengapa?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Draw a savings chart with one box for each Saturday. Write the starting amount, then add the same amount in each box until you reach a goal you choose. Use paper notes you draw yourself.",
+    "id": "Gambar tabel tabungan dengan satu kotak untuk setiap hari Sabtu. Tulis jumlah awal, lalu tambahkan jumlah yang sama di setiap kotak sampai mencapai tujuan yang kamu pilih. Pakai uang kertas yang kamu gambar sendiri."
+  },
+  "factChecks": [
+    {
+      "claim": "The prices and amounts in this story are invented for the story.",
+      "status": "invented_example"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.0",
+    "reviewedHash": "e60646a9bb6e6521"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

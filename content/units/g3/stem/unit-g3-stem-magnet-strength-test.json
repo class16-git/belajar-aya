@@ -1,0 +1,470 @@
+{
+  "id": "unit-g3-stem-magnet-strength-test",
+  "version": "1.0.1",
+  "level": "g3",
+  "framework": "stem",
+  "strand": "science_inquiry",
+  "title": {
+    "en": "Magnets: what they pull and how strongly",
+    "id": "Magnet: apa yang ditarik dan seberapa kuat"
+  },
+  "prerequisites": [
+    "unit-g1-stem-sort-by-two-rules",
+    "unit-g2-stem-paper-spinner-fair-test"
+  ],
+  "objective": {
+    "en": "Predict and test which household materials a large magnet attracts, discover that not all metals are attracted, and run a fair test of magnet strength by counting the sheets of paper it can pull through.",
+    "id": "Menebak dan menguji bahan rumah tangga mana yang ditarik magnet besar, menemukan bahwa tidak semua logam ditarik, dan menjalankan uji adil kekuatan magnet dengan menghitung lembar kertas yang bisa ditembusnya."
+  },
+  "rationale": {
+    "en": "Magnets give instant, surprising results that challenge a common belief: that magnets pick up all metal. Sorting by prediction and then by test shows why we check ideas. Counting sheets of paper turns 'strong' into a number, so two magnets can be compared fairly.",
+    "id": "Magnet memberi hasil yang langsung dan mengejutkan, yang menantang anggapan umum: bahwa magnet menarik semua logam. Memilah berdasarkan tebakan lalu berdasarkan uji menunjukkan mengapa kita memeriksa gagasan. Menghitung lembar kertas mengubah 'kuat' menjadi angka, sehingga dua magnet bisa dibandingkan dengan adil."
+  },
+  "outcomes": [
+    {
+      "en": "Sorts objects into 'attracted' and 'not attracted' after testing, and names a metal that is not attracted.",
+      "id": "Memilah benda menjadi 'ditarik' dan 'tidak ditarik' setelah menguji, dan menyebut logam yang tidak ditarik."
+    },
+    {
+      "en": "Runs a fair strength test, keeping everything the same except the magnet, and compares the results.",
+      "id": "Menjalankan uji kekuatan yang adil, menjaga semuanya tetap sama kecuali magnetnya, dan membandingkan hasilnya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I test before I decide.",
+      "id": "Aku menguji sebelum memutuskan."
+    },
+    {
+      "en": "My strength test changes only the magnet.",
+      "id": "Uji kekuatanku hanya mengubah magnetnya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Stay with your child for the whole session. Use only large magnets from a school science kit or a big fridge magnet; never small, strong button-shaped magnets.",
+      "id": "Dampingi anak selama seluruh kegiatan. Gunakan hanya magnet besar dari kit sains sekolah atau magnet kulkas yang besar; jangan pernah magnet kecil dan kuat berbentuk kancing."
+    },
+    {
+      "en": "Before testing, your child sorts every object into a 'yes' or 'no' pile by prediction. Then test each one and move it if needed. Talk about the surprises.",
+      "id": "Sebelum menguji, anak memilah setiap benda ke tumpukan 'ya' atau 'tidak' berdasarkan tebakan. Lalu uji satu per satu dan pindahkan jika perlu. Bicarakan kejutan-kejutannya."
+    },
+    {
+      "en": "For the strength test, agree the method together and write it down: same paper clip, same paper, magnet held flat on top of the pile, add one sheet at a time.",
+      "id": "Untuk uji kekuatan, sepakati caranya bersama dan tuliskan: klip kertas sama, kertas sama, magnet dipegang datar di atas tumpukan, tambah satu lembar setiap kali."
+    },
+    {
+      "en": "At the end, count every magnet and paper clip back into the box together.",
+      "id": "Di akhir, hitung bersama setiap magnet dan klip kertas kembali ke dalam kotak."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Sort the objects by your prediction: yes or no?",
+      "id": "Pilah benda sesuai tebakanmu: ya atau tidak?"
+    },
+    {
+      "en": "Test each object with the magnet and move it if your guess was wrong.",
+      "id": "Uji setiap benda dengan magnet dan pindahkan jika tebakanmu salah."
+    },
+    {
+      "en": "Strength test: add one sheet at a time between the magnet and the clip until the clip falls. Record the last number that worked.",
+      "id": "Uji kekuatan: tambah satu lembar setiap kali di antara magnet dan klip sampai klip jatuh. Catat angka terakhir yang masih berhasil."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Test real objects with the magnets and count sheets of paper.",
+        "id": "Uji benda nyata dengan magnet dan hitung lembar kertas."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Make a two-column chart, 'attracted' and 'not attracted', and draw each object in the right column after testing.",
+        "id": "Buat bagan dua kolom, 'ditarik' dan 'tidak ditarik', dan gambar setiap benda di kolom yang benar setelah menguji."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the strength results as numbers and work out the difference between the two magnets.",
+        "id": "Tulis hasil kekuatan sebagai angka dan hitung selisih antara kedua magnet."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "One large bar or horseshoe magnet from a school science kit, longer than your child's hand, and one large flat flexible (rubbery sheet) fridge magnet with no small magnet glued on",
+      "id": "Satu magnet batang atau magnet ladam besar dari kit sains sekolah, lebih panjang dari tangan anak, dan satu magnet kulkas lembaran lentur yang besar, tanpa magnet kecil yang ditempel"
+    },
+    {
+      "en": "A steel paper clip",
+      "id": "Satu klip kertas baja"
+    },
+    {
+      "en": "Test objects: an empty food tin with no sharp edges, an empty aluminium soft-drink can, a ball of aluminium foil, a steel spoon, a plastic spoon, a wooden pencil, an eraser, a sheet of paper",
+      "id": "Benda uji: kaleng makanan kosong yang tepinya tidak tajam, kaleng minuman ringan dari aluminium yang kosong, bola aluminium foil, sendok baja, sendok plastik, pensil kayu, penghapus, selembar kertas"
+    },
+    {
+      "en": "About 30 sheets of the same thin paper (old printer paper or a notebook)",
+      "id": "Sekitar 30 lembar kertas tipis yang sama (kertas printer bekas atau buku tulis)"
+    },
+    {
+      "en": "A box with a lid to keep the magnets and paper clip in",
+      "id": "Kotak bertutup untuk menyimpan magnet dan klip kertas"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult checks the food tin rim is smooth and the drinks can is rinsed. Lay out the objects on a table, away from phones and bank cards.",
+      "id": "Orang dewasa memeriksa bibir kaleng makanan halus dan kaleng minuman sudah dibilas. Tata benda di meja, jauh dari ponsel dan kartu bank."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Prediction sort: Rizky puts all the metal things in the 'yes' pile: the food tin, the drinks can, the foil, the steel spoon and the clip. He puts the plastic, wood, eraser and paper in 'no'.",
+      "id": "Pilah tebakan: Rizky menaruh semua benda logam di tumpukan 'ya': kaleng makanan, kaleng minuman, foil, sendok baja, dan klip. Ia menaruh plastik, kayu, penghapus, dan kertas di 'tidak'."
+    },
+    {
+      "en": "Test: the food tin and the clip jump to the magnet. The soft-drink can and the foil do not move: they are aluminium. (Some drink cans, such as canned milk, are steel and do stick: test yours!) The steel spoon pulls only weakly (some steel spoons are not attracted at all). 'Not every metal is attracted. Magnets pull iron and steel.'",
+      "id": "Uji: kaleng makanan dan klip melompat ke magnet. Kaleng minuman ringan dan foil tidak bergerak: keduanya aluminium. (Ada kaleng minuman, seperti susu kaleng, yang terbuat dari baja dan menempel: uji kalengmu!) Sendok baja hanya tertarik lemah (ada sendok baja yang sama sekali tidak tertarik). 'Tidak semua logam ditarik. Magnet menarik besi dan baja.'"
+    },
+    {
+      "en": "Strength test: the clip lies on the table under a pile of paper; the bar magnet is held flat on top. With 15 sheets the clip still jumps up to the paper; with 16 it stays down. The fridge magnet manages only 3 sheets. 'Same clip, same paper, same method: only the magnet changed, so the test is fair.'",
+      "id": "Uji kekuatan: klip diletakkan di meja di bawah tumpukan kertas; magnet batang dipegang datar di atasnya. Dengan 15 lembar klip masih melompat ke kertas; dengan 16 lembar klip tetap di bawah. Magnet kulkas hanya sanggup 3 lembar. 'Klip sama, kertas sama, cara sama: hanya magnetnya yang berubah, jadi ujinya adil.'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Find five new objects around the house (ask first). Predict, test and add them to your chart. Which result surprised you?",
+      "id": "Cari lima benda baru di sekitar rumah (minta izin dulu). Tebak, uji, dan tambahkan ke bagan. Hasil mana yang mengejutkan?"
+    },
+    {
+      "en": "Repeat the strength test for the bar magnet three times. Are the three numbers the same? Why might they be slightly different?",
+      "id": "Ulangi uji kekuatan magnet batang tiga kali. Apakah ketiga angkanya sama? Mengapa bisa sedikit berbeda?"
+    },
+    {
+      "en": "Does a magnet pull through other things? Test through a plastic lid, a wooden ruler and a cup of water with the clip at the bottom (held over a tray).",
+      "id": "Apakah magnet bisa menarik menembus benda lain? Uji menembus tutup plastik, penggaris kayu, dan gelas air dengan klip di dasarnya (di atas nampan)."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which of these will a magnet attract?",
+        "id": "Manakah yang akan ditarik magnet?"
+      },
+      "choices": {
+        "en": [
+          "A steel food tin",
+          "An aluminium drinks can",
+          "A ball of aluminium foil"
+        ],
+        "id": [
+          "Kaleng makanan dari baja",
+          "Kaleng minuman dari aluminium",
+          "Bola aluminium foil"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Magnets attract iron and steel, not aluminium.",
+        "id": "Magnet menarik besi dan baja, bukan aluminium."
+      },
+      "distractorMisconceptions": {
+        "1": "ALL_METALS_ATTRACTED",
+        "2": "ALL_METALS_ATTRACTED"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Magnet A pulled the clip through 7 sheets. Magnet B pulled it through 12 sheets. How many more sheets did magnet B manage?",
+        "id": "Magnet A menarik klip menembus 7 lembar. Magnet B menembus 12 lembar. Berapa lembar lebih banyak yang sanggup ditembus magnet B?"
+      },
+      "choices": {
+        "en": [
+          "5 more sheets",
+          "19 more sheets",
+          "12 more sheets"
+        ],
+        "id": [
+          "5 lembar lebih banyak",
+          "19 lembar lebih banyak",
+          "12 lembar lebih banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Compare by subtracting: 12 - 7 = 5.",
+        "id": "Bandingkan dengan mengurangkan: 12 - 7 = 5."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "REPORTS_ONE_RESULT"
+      },
+      "check": {
+        "expression": "12 - 7",
+        "result": "5"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Maya tested magnet A with a paper clip and magnet B with a heavy steel spoon. What is wrong with her test?",
+        "id": "Maya menguji magnet A dengan klip kertas dan magnet B dengan sendok baja yang berat. Apa yang salah dengan ujinya?"
+      },
+      "choices": {
+        "en": [
+          "She changed the object as well as the magnet, so it is not fair",
+          "She should have used more magnets",
+          "Nothing; any object will do"
+        ],
+        "id": [
+          "Ia mengubah benda ujinya juga selain magnetnya, jadi tidak adil",
+          "Seharusnya ia memakai lebih banyak magnet",
+          "Tidak ada; benda apa saja boleh"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A fair test changes only the one thing being tested.",
+        "id": "Uji yang adil hanya mengubah satu hal yang sedang diuji."
+      },
+      "distractorMisconceptions": {
+        "1": "MORE_DATA_IS_FAIR",
+        "2": "UNFAIR_COMPARISON"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A magnet pulls a paper clip through a plastic lid. What does this show?",
+        "id": "Magnet menarik klip kertas menembus tutup plastik. Apa yang ditunjukkan hal ini?"
+      },
+      "choices": {
+        "en": [
+          "A magnet's pull can pass through some materials that it does not attract",
+          "Plastic is attracted to magnets",
+          "The lid has turned into a magnet"
+        ],
+        "id": [
+          "Tarikan magnet bisa menembus beberapa bahan yang tidak ditariknya",
+          "Plastik ditarik magnet",
+          "Tutupnya sudah berubah menjadi magnet"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The plastic is not attracted, but the pull still reaches the steel clip.",
+        "id": "Plastik tidak ditarik, tetapi tarikannya tetap sampai ke klip baja."
+      },
+      "distractorMisconceptions": {
+        "1": "BLOCKER_IS_ATTRACTED",
+        "2": "BLOCKER_IS_ATTRACTED"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A younger cousin, aged 3, wants to play with the magnets. What should you do?",
+        "id": "Sepupu yang lebih kecil, umur 3 tahun, ingin bermain dengan magnet. Apa yang harus kamu lakukan?"
+      },
+      "choices": {
+        "en": [
+          "Put the magnets away and tell an adult; magnets are not for young children",
+          "Let them play if they promise not to eat them",
+          "Give them the smallest magnet because it is safer"
+        ],
+        "id": [
+          "Simpan magnetnya dan beri tahu orang dewasa; magnet bukan untuk anak kecil",
+          "Biarkan bermain kalau ia berjanji tidak memakannya",
+          "Beri magnet yang paling kecil karena lebih aman"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Swallowed magnets can cause serious injury, and small ones are the most dangerous.",
+        "id": "Magnet yang tertelan bisa menyebabkan cedera serius, dan magnet kecil paling berbahaya."
+      },
+      "distractorMisconceptions": {
+        "1": "PROMISE_IS_ENOUGH",
+        "2": "SMALL_IS_SAFER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ALL_METALS_ATTRACTED",
+      "description": {
+        "en": "Thinks magnets attract all metals.",
+        "id": "Mengira magnet menarik semua logam."
+      },
+      "remediation": {
+        "en": "Hold the magnet against the food tin and then the drinks can, one after the other, and feel the difference.",
+        "id": "Tempelkan magnet ke kaleng makanan lalu ke kaleng minuman, bergantian, dan rasakan perbedaannya."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds two results when asked how many more.",
+        "id": "Menjumlahkan dua hasil saat ditanya berapa lebih banyak."
+      },
+      "remediation": {
+        "en": "Make two paper piles of 7 and 12 sheets, stand them side by side, and count the extra sheets on the taller pile.",
+        "id": "Buat dua tumpukan kertas 7 dan 12 lembar, letakkan berdampingan, dan hitung lembar tambahan di tumpukan yang lebih tinggi."
+      }
+    },
+    {
+      "code": "REPORTS_ONE_RESULT",
+      "description": {
+        "en": "Gives one result instead of the difference.",
+        "id": "Menyebut salah satu hasil, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Count up on a number line from 7 to 12, one hop per sheet.",
+        "id": "Hitung maju di garis bilangan dari 7 sampai 12, satu lompatan untuk setiap lembar."
+      }
+    },
+    {
+      "code": "MORE_DATA_IS_FAIR",
+      "description": {
+        "en": "Thinks a test is fair if it uses more things.",
+        "id": "Mengira uji itu adil jika memakai lebih banyak benda."
+      },
+      "remediation": {
+        "en": "List every part of each test in two columns and circle anything that is different.",
+        "id": "Daftar setiap bagian dari setiap uji dalam dua kolom dan lingkari apa pun yang berbeda."
+      }
+    },
+    {
+      "code": "UNFAIR_COMPARISON",
+      "description": {
+        "en": "Does not see that changing two things spoils a comparison.",
+        "id": "Belum melihat bahwa mengubah dua hal merusak perbandingan."
+      },
+      "remediation": {
+        "en": "Race two runners where one starts half-way along the track and ask who really ran faster.",
+        "id": "Adu lari dua pelari dengan salah satu mulai dari tengah lintasan, lalu tanya siapa yang sebenarnya lebih cepat."
+      }
+    },
+    {
+      "code": "BLOCKER_IS_ATTRACTED",
+      "description": {
+        "en": "Thinks a material the pull passes through must be magnetic.",
+        "id": "Mengira bahan yang ditembus tarikan pasti bersifat magnet."
+      },
+      "remediation": {
+        "en": "Test the plastic lid on its own with the magnet: it does not move, so only the clip is attracted.",
+        "id": "Uji tutup plastik sendirian dengan magnet: tidak bergerak, jadi hanya klip yang ditarik."
+      }
+    },
+    {
+      "code": "PROMISE_IS_ENOUGH",
+      "description": {
+        "en": "Thinks a young child's promise makes a hazard safe.",
+        "id": "Mengira janji anak kecil membuat bahaya menjadi aman."
+      },
+      "remediation": {
+        "en": "Talk about how toddlers explore with their mouths without meaning to, and agree a 'magnets live in the box' rule.",
+        "id": "Bicarakan bagaimana batita menjelajah dengan mulutnya tanpa sengaja, lalu sepakati aturan 'magnet tinggal di kotak'."
+      }
+    },
+    {
+      "code": "SMALL_IS_SAFER",
+      "description": {
+        "en": "Thinks a small magnet is safer than a big one.",
+        "id": "Mengira magnet kecil lebih aman daripada magnet besar."
+      },
+      "remediation": {
+        "en": "Compare the magnet's size with a toddler's mouth: a small magnet fits, which is exactly why it is dangerous.",
+        "id": "Bandingkan ukuran magnet dengan mulut batita: magnet kecil muat, itulah tepatnya mengapa berbahaya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Use the paper-sheet test to compare the two ends and the middle of the bar magnet. Where is it strongest?",
+      "id": "Pakai uji lembar kertas untuk membandingkan kedua ujung dan bagian tengah magnet batang. Di mana yang paling kuat?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child with fine-motor difficulty can slide the magnet along the table to the objects instead of picking them up; the chart can use photos or drawings.",
+      "id": "Anak yang kesulitan motorik halus bisa menggeser magnet di meja ke arah benda, bukan mengangkatnya; bagan bisa memakai foto atau gambar."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": false,
+      "water": true,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Magnets: use only large magnets. Swallowed magnets, or a magnet and a piece of metal, can pull together inside the body and cause serious injury. If you think anyone has swallowed a magnet, get medical help at once.",
+        "id": "Magnet: gunakan hanya magnet besar. Magnet yang tertelan, atau magnet dan potongan logam, bisa saling menarik di dalam tubuh dan menyebabkan cedera serius. Jika kamu menduga ada yang menelan magnet, segera cari pertolongan medis."
+      },
+      {
+        "en": "No small or strong button-shaped magnets for anyone under 8. Count the magnets and paper clip back into the lidded box and keep it away from younger siblings.",
+        "id": "Tidak ada magnet kecil atau magnet kuat berbentuk kancing untuk siapa pun di bawah 8 tahun. Hitung magnet dan klip kertas kembali ke dalam kotak bertutup dan jauhkan dari adik yang lebih kecil."
+      },
+      {
+        "en": "Keep magnets away from phones, bank cards and anyone with a medical device such as a pacemaker. The water test uses a cup over a tray; pour the water away straight after.",
+        "id": "Jauhkan magnet dari ponsel, kartu bank, dan siapa pun yang memakai alat medis seperti alat pacu jantung. Uji air memakai gelas di atas nampan; buang airnya segera setelahnya."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child predicts and tests a new set of objects, names a metal that is not attracted, and runs and explains a fair strength test with a correct comparison.",
+      "id": "Dikuasai jika anak menebak dan menguji benda-benda baru, menyebut logam yang tidak ditarik, serta menjalankan dan menjelaskan uji kekuatan yang adil dengan perbandingan yang benar."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "3e395361064c295a"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

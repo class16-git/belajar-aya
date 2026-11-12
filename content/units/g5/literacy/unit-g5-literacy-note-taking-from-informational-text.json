@@ -1,0 +1,406 @@
+{
+  "id": "unit-g5-literacy-note-taking-from-informational-text",
+  "version": "1.0.1",
+  "level": "g5",
+  "framework": "literacy",
+  "strand": "comprehension",
+  "title": {
+    "en": "Smart notes from a fact text",
+    "id": "Mencatat pokok-pokok dari teks informasi"
+  },
+  "prerequisites": [
+    "unit-g4-literacy-summarising-text"
+  ],
+  "objective": {
+    "en": "Take notes from an informational text under clear headings, using key words, abbreviations and symbols in their own words, keep the facts and their reasons accurate, and record the source.",
+    "id": "Mencatat pokok-pokok teks informasi di bawah subjudul yang jelas, memakai kata kunci, singkatan, dan simbol dengan kata-kata sendiri, menjaga fakta dan alasannya tetap tepat, serta mencatat sumbernya."
+  },
+  "rationale": {
+    "en": "Summarising turns a text into a short paragraph; note-taking turns it into a tool for later: for a report, a talk or revision. Good notes are short but keep relationships (cause, purpose, result), which is why symbols such as an arrow are so useful. Two errors are typical: copying whole sentences, and cutting so much that a fact loses its reason. Abbreviations differ by language: English notes use e.g., w/ and approx.; Indonesian school notes use yg (yang), dgn (dengan), krn (karena) and dll. (dan lain-lain). Each language uses its own common forms.",
+    "id": "Meringkas mengubah teks menjadi paragraf pendek; mencatat mengubahnya menjadi alat untuk nanti: untuk laporan, presentasi, atau belajar ulang. Catatan yang baik itu pendek tetapi tetap menjaga hubungan antarfakta (sebab, tujuan, akibat), karena itulah simbol seperti tanda panah sangat berguna. Dua kesalahan yang khas: menyalin kalimat utuh, dan memotong terlalu banyak sehingga fakta kehilangan alasannya. Singkatan berbeda antarbahasa: catatan sekolah bahasa Indonesia memakai yg (yang), dgn (dengan), krn (karena), dan dll. (dan lain-lain); catatan bahasa Inggris memakai e.g., w/, dan approx."
+  },
+  "outcomes": [
+    {
+      "en": "Organises notes under headings that name what each part of the text is about.",
+      "id": "Menyusun catatan di bawah subjudul yang menyebut isi setiap bagian teks."
+    },
+    {
+      "en": "Writes key-word notes with symbols that keep each fact and its reason.",
+      "id": "Menulis catatan kata kunci dengan simbol yang tetap memuat fakta dan alasannya."
+    },
+    {
+      "en": "Records the source title and uses the notes to explain the topic without the text.",
+      "id": "Mencatat judul sumber dan memakai catatan untuk menjelaskan topik tanpa melihat teks."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "My notes are short but still say why.",
+      "id": "Catatanku pendek tetapi tetap menjelaskan mengapa."
+    },
+    {
+      "en": "I can explain the topic from my notes alone.",
+      "id": "Aku bisa menjelaskan topiknya hanya dari catatanku."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Read the whole text once without writing. Then read one paragraph at a time and ask: 'What is this part about?' That becomes a heading.",
+      "id": "Baca seluruh teks sekali tanpa mencatat. Lalu baca satu paragraf demi satu dan tanyakan: 'Bagian ini tentang apa?' Itulah subjudulnya."
+    },
+    {
+      "en": "Under each heading, write two or three key-word lines. Use symbols: → (leads to, so), + (and), = (means), ≠ (is not). Agree on abbreviations first.",
+      "id": "Di bawah setiap subjudul, tulis dua atau tiga baris kata kunci. Pakai simbol: → (menyebabkan, jadi), + (dan), = (artinya), ≠ (bukan). Sepakati singkatan lebih dulu."
+    },
+    {
+      "en": "Test the notes: turn the text over and explain the topic to someone using only the notes. Anything missing goes back in.",
+      "id": "Uji catatan: balik teksnya dan jelaskan topiknya kepada seseorang hanya dengan catatan. Yang terlupa ditambahkan kembali."
+    },
+    {
+      "en": "Write the source at the top: title of the text, and the book or website it came from.",
+      "id": "Tulis sumbernya di bagian atas: judul teks, dan buku atau situs asalnya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Read it all once. Then one part at a time.",
+      "id": "Baca semuanya sekali. Lalu satu bagian demi satu."
+    },
+    {
+      "en": "Write a heading, then key words and symbols.",
+      "id": "Tulis subjudul, lalu kata kunci dan simbol."
+    },
+    {
+      "en": "Explain it from your notes. Write the source at the top.",
+      "id": "Jelaskan dari catatanmu. Tulis sumbernya di bagian atas."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "The mangrove text below, printed",
+      "id": "Teks mangrove di bawah, dicetak"
+    },
+    {
+      "en": "A notes page split into two columns: headings on the left, notes on the right, with a summary line at the bottom",
+      "id": "Halaman catatan yang dibagi dua kolom: subjudul di kiri, catatan di kanan, dengan satu baris ringkasan di bawah"
+    },
+    {
+      "en": "A list of symbols and agreed abbreviations",
+      "id": "Daftar simbol dan singkatan yang disepakati"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Print the text with numbered paragraphs.",
+      "id": "Cetak teks dengan paragraf bernomor."
+    },
+    {
+      "en": "Prepare the two-column notes page.",
+      "id": "Siapkan halaman catatan dua kolom."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Text (original), paragraphs 1 and 2: Mangroves, trees between land and sea. (1) Mangroves are trees and shrubs that grow on warm coasts, where salty sea water rises and falls with the tides. Indonesia, a country of thousands of islands, has mangrove forests along many of its coasts. (2) Their roots are special. Some mangroves stand on tall, arching roots like stilts. Others send up small roots that poke out of the mud like pencils; these help the roots get air, because wet mud holds very little oxygen.",
+      "id": "Teks (orisinal), bagian 1 dan 2: Mangrove, pohon di antara darat dan laut. (1) Mangrove (sering disebut bakau) adalah pohon dan semak yang tumbuh di pantai beriklim hangat, tempat air laut yang asin naik dan turun mengikuti pasang surut. Indonesia, negara dengan ribuan pulau, memiliki hutan mangrove di banyak pantainya. (2) Akarnya istimewa. Ada mangrove yang berdiri di atas akar tunjang yang tinggi dan melengkung. Ada pula yang menumbuhkan akar napas kecil yang mencuat dari lumpur seperti pensil; akar ini membantu mendapatkan udara, karena lumpur basah hanya sedikit mengandung oksigen."
+    },
+    {
+      "en": "Text, paragraphs 3 and 4: (3) The tangled roots hold mud in place and slow down waves, so less land is washed away in storms. (4) Young fish, crabs and shrimp shelter among the roots, where big hunters cannot easily reach them.",
+      "id": "Teks, bagian 3 dan 4: (3) Akar yang rapat menahan lumpur dan memperlambat ombak, sehingga daratan tidak mudah terkikis saat badai. (4) Ikan kecil, kepiting, dan udang berlindung di antara akar, tempat pemangsa besar sulit menjangkau mereka."
+    },
+    {
+      "en": "Model notes. Source: 'Mangroves, trees between land and sea' (Atlas). Where they grow: warm coasts, salty water, tides; Indonesia = mangroves on many coasts. Roots: stilt roots; pencil roots poke up → air (mud has little oxygen). Summary line: mangroves grow where sea meets land, and their roots help them breathe, protect coasts and shelter young sea animals.",
+      "id": "Contoh catatan. Sumber: 'Mangrove, pohon di antara darat dan laut' (Atlas). Tempat tumbuh: pantai hangat, air asin, pasang surut; Indonesia = mangrove di banyak pantai. Akar: akar tunjang; akar napas mencuat → dapat udara (lumpur sedikit oksigen). Ringkasan: mangrove tumbuh di pertemuan laut dan darat, dan akarnya membantu bernapas, melindungi pantai, dan menjadi tempat berlindung hewan laut muda."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Finish the notes: your child writes notes for paragraphs 3 and 4 and the summary line.",
+      "id": "Lengkapi catatan: anak menulis catatan untuk paragraf 3 dan 4 serta baris ringkasan."
+    },
+    {
+      "en": "Notes to talk: using only the notes, your child gives a one-minute explanation of mangroves to a family member.",
+      "id": "Dari catatan ke lisan: hanya dengan catatan, anak menjelaskan tentang mangrove selama satu menit kepada anggota keluarga."
+    },
+    {
+      "en": "New text: take notes from a short information page in a school book or encyclopedia, with the source at the top.",
+      "id": "Teks baru: buat catatan dari satu halaman bacaan informasi di buku sekolah atau ensiklopedia, dengan sumber di bagian atas."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which is the best note for this sentence: 'Earthworm tunnels let air and water into the soil, which helps plant roots grow.'",
+        "id": "Mana catatan terbaik untuk kalimat ini: 'Lubang yang dibuat cacing tanah membuat udara dan air masuk ke tanah, sehingga akar tanaman tumbuh lebih baik.'"
+      },
+      "choices": {
+        "en": [
+          "worm tunnels → air + water into soil → roots grow better",
+          "Earthworm tunnels let air and water into the soil, which helps plant roots grow.",
+          "worms, soil, roots"
+        ],
+        "id": [
+          "lubang cacing → udara + air masuk tanah → akar tumbuh lebih baik",
+          "Lubang yang dibuat cacing tanah membuat udara dan air masuk ke tanah, sehingga akar tanaman tumbuh lebih baik.",
+          "cacing, tanah, akar"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Good notes are short and keep the cause and result. Copying the whole sentence is not note-taking; three bare words lose the meaning.",
+        "id": "Catatan yang baik itu pendek dan tetap memuat sebab dan akibat. Menyalin kalimat utuh bukan mencatat; tiga kata tanpa hubungan kehilangan maknanya."
+      },
+      "distractorMisconceptions": {
+        "1": "COPIES_FULL_SENTENCES",
+        "2": "LOSES_THE_RELATIONSHIP"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Sentence: 'Owls have soft, comb-like edges on their feathers, so they fly almost silently and can surprise their prey.' A note says only: 'feathers like combs'. What key information is missing?",
+        "id": "Kalimat: 'Bulu burung hantu bertepi lembut seperti sisir, sehingga ia terbang hampir tanpa suara dan bisa mengejutkan mangsanya.' Catatan hanya berbunyi: 'bulu seperti sisir'. Informasi penting apa yang hilang?"
+      },
+      "choices": {
+        "en": [
+          "Why: soft edges → almost silent flight → can surprise prey",
+          "That combs are used for hair",
+          "Nothing, the note is complete"
+        ],
+        "id": [
+          "Alasannya: tepi lembut → terbang hampir tanpa suara → bisa mengejutkan mangsa",
+          "Bahwa sisir dipakai untuk rambut",
+          "Tidak ada, catatannya sudah lengkap"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The comb comparison only describes the shape. The fact that matters is what the edges do and why it helps.",
+        "id": "Perbandingan dengan sisir hanya menggambarkan bentuk. Fakta pentingnya adalah fungsi tepi bulu dan manfaatnya."
+      },
+      "distractorMisconceptions": {
+        "1": "IRRELEVANT_DETAIL",
+        "2": "KEEPS_IMAGE_LOSES_FACT"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Turn this sentence into a short note: 'Sea turtles lay their eggs in holes they dig in sandy beaches, usually at night.'",
+        "id": "Ubah kalimat ini menjadi catatan singkat: 'Penyu bertelur di lubang yang digalinya di pantai berpasir, biasanya pada malam hari.'"
+      },
+      "choices": {
+        "en": [
+          "sea turtles: lay eggs in dug holes, sandy beach, usu. at night",
+          "Sea turtles lay their eggs in holes they dig in sandy beaches, usually at night.",
+          "sea turtles: lay eggs in the sea"
+        ],
+        "id": [
+          "penyu: bertelur di lubang galian, pantai berpasir, biasanya malam",
+          "Penyu bertelur di lubang yang digalinya di pantai berpasir, biasanya pada malam hari.",
+          "penyu: bertelur di laut"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The note keeps every fact in fewer words. Copying is not shortening, and 'in the sea' changes the fact.",
+        "id": "Catatan itu memuat semua fakta dengan lebih sedikit kata. Menyalin bukan memendekkan, dan 'di laut' mengubah faktanya."
+      },
+      "distractorMisconceptions": {
+        "1": "COPIES_FULL_SENTENCES",
+        "2": "CHANGES_THE_FACT"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A text about bees has four paragraphs: a bee's body; life in the hive; making honey; carrying pollen between flowers. Which set of headings best organises notes on it?",
+        "id": "Sebuah teks tentang lebah punya empat paragraf: tubuh lebah; kehidupan di sarang; membuat madu; membawa serbuk sari antarbunga. Kumpulan subjudul mana yang paling tepat untuk menyusun catatannya?"
+      },
+      "choices": {
+        "en": [
+          "Body / Life in the hive / Making honey / Carrying pollen",
+          "Paragraph 1 / Paragraph 2 / Paragraph 3 / Paragraph 4",
+          "Wings / Queen / Jars / Yellow dust"
+        ],
+        "id": [
+          "Tubuh / Hidup di sarang / Membuat madu / Membawa serbuk sari",
+          "Paragraf 1 / Paragraf 2 / Paragraf 3 / Paragraf 4",
+          "Sayap / Ratu / Toples / Debu kuning"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Headings should say what each part is about. Paragraph numbers say nothing, and single details are too narrow.",
+        "id": "Subjudul harus menyebut isi setiap bagian. Nomor paragraf tidak menjelaskan apa pun, dan rincian tunggal terlalu sempit."
+      },
+      "distractorMisconceptions": {
+        "1": "HEADINGS_WITHOUT_CONTENT",
+        "2": "DETAIL_AS_HEADING"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "COPIES_FULL_SENTENCES",
+      "description": {
+        "en": "Copies sentences word for word instead of making notes.",
+        "id": "Menyalin kalimat kata demi kata, bukan membuat catatan."
+      },
+      "remediation": {
+        "en": "Read a sentence, cover it, then write from memory in no more than eight words. Uncover to check the facts, not the wording.",
+        "id": "Baca satu kalimat, tutup, lalu tulis dari ingatan tidak lebih dari delapan kata. Buka lagi untuk memeriksa faktanya, bukan susunan katanya."
+      }
+    },
+    {
+      "code": "LOSES_THE_RELATIONSHIP",
+      "description": {
+        "en": "Keeps the key words but drops how they connect, so the note no longer makes sense later.",
+        "id": "Menyimpan kata kunci tetapi menghilangkan hubungannya, sehingga catatan tidak bermakna nanti."
+      },
+      "remediation": {
+        "en": "For each note, ask 'what does what, and so what?' Add an arrow or + between the words to show the link.",
+        "id": "Untuk setiap catatan, tanyakan 'apa melakukan apa, lalu akibatnya apa?' Tambahkan panah atau + di antara kata untuk menunjukkan hubungannya."
+      }
+    },
+    {
+      "code": "IRRELEVANT_DETAIL",
+      "description": {
+        "en": "Adds a detail that is not about the topic.",
+        "id": "Menambahkan rincian yang tidak membahas topik."
+      },
+      "remediation": {
+        "en": "Hold up the heading and ask whether the detail tells us more about it. Pencils at school tell us nothing about roots.",
+        "id": "Angkat subjudulnya dan tanyakan apakah rincian itu menambah informasi tentangnya. Pensil di sekolah tidak menjelaskan apa pun tentang akar."
+      }
+    },
+    {
+      "code": "KEEPS_IMAGE_LOSES_FACT",
+      "description": {
+        "en": "Keeps the memorable comparison but not the fact behind it.",
+        "id": "Menyimpan perbandingan yang mudah diingat tetapi tidak menyimpan fakta di baliknya."
+      },
+      "remediation": {
+        "en": "Test the note on someone who has not read the text: can they tell what the roots do? If not, the fact is missing.",
+        "id": "Uji catatan pada orang yang belum membaca teksnya: bisakah ia mengatakan fungsi akar itu? Jika tidak, faktanya hilang."
+      }
+    },
+    {
+      "code": "CHANGES_THE_FACT",
+      "description": {
+        "en": "Shortens the note so much that the fact becomes wrong.",
+        "id": "Memendekkan catatan sampai faktanya menjadi salah."
+      },
+      "remediation": {
+        "en": "After writing, check each note against the text line by line: same fact, fewer words.",
+        "id": "Setelah menulis, cocokkan setiap catatan dengan teks baris demi baris: fakta sama, kata lebih sedikit."
+      }
+    },
+    {
+      "code": "HEADINGS_WITHOUT_CONTENT",
+      "description": {
+        "en": "Uses headings that do not say what the part is about.",
+        "id": "Memakai subjudul yang tidak menyebut isi bagiannya."
+      },
+      "remediation": {
+        "en": "For each paragraph, finish the sentence 'This part tells us about...' and use the end of that sentence as the heading.",
+        "id": "Untuk setiap paragraf, lengkapi kalimat 'Bagian ini menceritakan tentang...' dan pakai akhir kalimat itu sebagai subjudul."
+      }
+    },
+    {
+      "code": "DETAIL_AS_HEADING",
+      "description": {
+        "en": "Chooses one small detail as the heading for a whole part.",
+        "id": "Memilih satu rincian kecil sebagai subjudul untuk seluruh bagian."
+      },
+      "remediation": {
+        "en": "List every fact in the paragraph, then ask what one heading covers all of them.",
+        "id": "Daftar semua fakta dalam paragraf, lalu tanyakan satu subjudul apa yang mencakup semuanya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Use the notes to make a labelled poster or a short talk about mangroves for the family, with the source written at the bottom.",
+      "id": "Pakai catatan untuk membuat poster berlabel atau presentasi singkat tentang mangrove untuk keluarga, dengan sumber ditulis di bawah."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who writes slowly can take notes as a mind map with drawings and arrows.",
+      "id": "Anak yang menulis lambat bisa mencatat dalam bentuk peta pikiran dengan gambar dan panah."
+    },
+    {
+      "en": "Read the text aloud for children still building reading stamina, pausing after each paragraph.",
+      "id": "Bacakan teks untuk anak yang daya tahan membacanya masih terbatas, berhenti setelah setiap paragraf."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "If you visit a mangrove area, stay on boardwalks with an adult, watch the tide times and never wade into deep mud.",
+        "id": "Jika mengunjungi hutan mangrove, tetap di jalur papan bersama orang dewasa, perhatikan jadwal pasang surut, dan jangan berjalan ke lumpur yang dalam."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      10,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child takes headed notes with symbols from a new information text, keeps facts and reasons accurate, records the source and explains the topic from the notes, on two occasions.",
+      "id": "Dikuasai jika anak membuat catatan bersubjudul dengan simbol dari teks informasi baru, menjaga fakta dan alasannya tetap tepat, mencatat sumber, dan menjelaskan topik dari catatannya, pada dua kesempatan."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "parallel-distractors",
+      "single-answer-check",
+      "misconception-map",
+      "transfer-not-recall",
+      "safety",
+      "age-fit"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "bb21866bcc2d35e1"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-literacy",
+    "createdAt": "2026-11-10"
+  }
+}

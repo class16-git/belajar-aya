@@ -113,7 +113,7 @@
       "id": "Nama benua bisa menunggu; gagasan besarnya adalah daratan dan air, serta makhluk hidup berubah secara berurutan."
     }
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -121,7 +121,10 @@
       "hazard-keyword-consistency",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-11"
   },
   "contentVersion": "1.1.0",
   "copyrightStatus": "original",

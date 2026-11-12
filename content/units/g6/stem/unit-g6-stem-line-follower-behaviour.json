@@ -1,0 +1,482 @@
+{
+  "id": "unit-g6-stem-line-follower-behaviour",
+  "version": "1.0.1",
+  "level": "g6",
+  "framework": "stem",
+  "strand": "robotics",
+  "title": {
+    "en": "Design a line-following robot's brain",
+    "id": "Merancang otak robot pengikut garis"
+  },
+  "prerequisites": [
+    "unit-g6-stem-bumper-robot-project",
+    "unit-g4-stem-if-then-else",
+    "unit-g4-stem-light-meter-sensor"
+  ],
+  "objective": {
+    "en": "Design the behaviour of a robot with two downward-facing light sensors as a complete decision table, test it by stepping a paper robot along a drawn track, find the situations it cannot handle, and improve the design with a third sensor or a memory variable.",
+    "id": "Merancang perilaku robot dengan dua sensor cahaya yang menghadap ke bawah sebagai tabel keputusan yang lengkap, mengujinya dengan menjalankan robot kertas langkah demi langkah di lintasan yang digambar, menemukan keadaan yang tidak bisa ditanganinya, dan memperbaiki rancangan dengan sensor ketiga atau variabel ingatan."
+  },
+  "rationale": {
+    "en": "Line followers are the classic first autonomous robot: sense, decide, act, again and again. Designing the 'brain' on paper makes every decision visible. A complete decision table teaches children to consider every combination of inputs, and stepping the robot through curves shows how sensing speed, turning amount and missing information decide whether a design works.",
+    "id": "Pengikut garis adalah robot otonom pertama yang klasik: merasakan, memutuskan, bertindak, lagi dan lagi. Merancang 'otak' di atas kertas membuat setiap keputusan terlihat. Tabel keputusan yang lengkap mengajarkan anak mempertimbangkan setiap kombinasi masukan, dan menjalankan robot melewati tikungan menunjukkan bagaimana kecepatan membaca sensor, besar belokan, dan informasi yang hilang menentukan apakah sebuah rancangan berhasil."
+  },
+  "outcomes": [
+    {
+      "en": "Writes a decision table that covers every combination of two sensor readings and simulates it on a track.",
+      "id": "Menulis tabel keputusan yang mencakup setiap kombinasi dua bacaan sensor dan menyimulasikannya di lintasan."
+    },
+    {
+      "en": "Identifies a situation the two-sensor design cannot tell apart and proposes and tests an improvement.",
+      "id": "Mengenali keadaan yang tidak bisa dibedakan oleh rancangan dua sensor serta mengusulkan dan menguji perbaikannya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "My decision table has a row for every sensor combination.",
+      "id": "Tabel keputusanku punya satu baris untuk setiap kombinasi sensor."
+    },
+    {
+      "en": "I tested my robot on a curve and fixed what went wrong.",
+      "id": "Aku menguji robotku di tikungan dan memperbaiki yang salah."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Explain the robot first: two small light sensors under the front edge, one each side of a black line. Each sensor reads only 'black' or 'white'. The line sits between them when the robot is on track.",
+      "id": "Jelaskan robotnya dulu: dua sensor cahaya kecil di bawah tepi depan, satu di setiap sisi garis hitam. Setiap sensor hanya membaca 'hitam' atau 'putih'. Garis berada di antara keduanya saat robot tepat di jalurnya."
+    },
+    {
+      "en": "Run the simulation in 'ticks'. Each tick: read both sensors where the dots are, look up the row in the table, then do exactly one action: move forward 1 cm, or turn about 15 degrees on the spot. No guessing ahead.",
+      "id": "Jalankan simulasi dalam 'detak'. Setiap detak: baca kedua sensor di tempat titiknya, cari barisnya di tabel, lalu lakukan tepat satu gerakan: maju 1 cm, atau berbelok sekitar 15 derajat di tempat. Tidak boleh menebak ke depan."
+    },
+    {
+      "en": "Let your child be the designer and you be the strict robot. When the robot leaves the track, ask 'Which row made that happen? What information was missing?'",
+      "id": "Biarkan anak menjadi perancang dan kamu menjadi robot yang patuh. Saat robot keluar lintasan, tanya 'Baris mana yang menyebabkannya? Informasi apa yang kurang?'"
+    },
+    {
+      "en": "Keep a design journal: version, change, track tested, result, and next idea.",
+      "id": "Buat jurnal rancangan: versi, perubahan, lintasan yang diuji, hasil, dan ide berikutnya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "List every combination the two sensors can read and give each one an action.",
+      "id": "Daftar setiap kombinasi yang bisa dibaca kedua sensor dan beri setiap kombinasi satu gerakan."
+    },
+    {
+      "en": "Step the paper robot along the track one tick at a time, following only your table.",
+      "id": "Jalankan robot kertas di lintasan satu detak setiap kali, hanya mengikuti tabelmu."
+    },
+    {
+      "en": "When it fails, find the cause, change one thing, and test again on the same track.",
+      "id": "Saat gagal, temukan penyebabnya, ubah satu hal, dan uji lagi di lintasan yang sama."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Step a paper robot with sensor dots along a track drawn on paper.",
+        "id": "Jalankan robot kertas bertitik sensor di lintasan yang digambar di kertas."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the decision table and a flowchart of one tick: read sensors, choose a row, act, repeat.",
+        "id": "Gambar tabel keputusan dan diagram alir satu detak: baca sensor, pilih baris, bertindak, ulangi."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Count combinations (2 × 2 for two sensors, 2 × 2 × 2 for three) and calculate how many sensor checks happen in a stretch of track.",
+        "id": "Hitung kombinasi (2 × 2 untuk dua sensor, 2 × 2 × 2 untuk tiga) dan hitung berapa kali sensor diperiksa dalam satu bagian lintasan."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Two large sheets of paper taped together, and a thick black marker to draw a track line about 2 cm wide with a gentle curve, a sharp bend and a cross-line finish",
+      "id": "Dua lembar kertas besar yang direkatkan, dan spidol hitam tebal untuk menggambar garis lintasan selebar sekitar 2 cm dengan tikungan landai, belokan tajam, dan garis finis melintang"
+    },
+    {
+      "en": "A paper robot: a 6 cm card square with two dots drawn on its front edge, 3 cm apart, and an arrow showing forward",
+      "id": "Robot kertas: kotak karton 6 cm dengan dua titik di tepi depannya, berjarak 3 cm, dan panah yang menunjukkan arah maju"
+    },
+    {
+      "en": "A ruler, a pencil, and a design journal",
+      "id": "Penggaris, pensil, dan jurnal rancangan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw the track so that the 2 cm line fits between the two sensor dots when the robot is centred. Mark a start box. Prepare a blank decision table with columns: left sensor, right sensor, action.",
+      "id": "Gambar lintasan sehingga garis 2 cm muat di antara kedua titik sensor saat robot di tengah. Tandai kotak mulai. Siapkan tabel keputusan kosong dengan kolom: sensor kiri, sensor kanan, gerakan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Version 1 table, every combination (2 × 2 = 4 rows): white, white → forward. Black, white (the left sensor is over the line) → turn left. White, black → turn right. Black, black → stop. Laras checks the left-black row: if the line is under the left sensor, the line has curved left, so turning left brings it back between the sensors.",
+      "id": "Tabel versi 1, setiap kombinasi (2 × 2 = 4 baris): putih, putih → maju. Hitam, putih (sensor kiri di atas garis) → belok kiri. Putih, hitam → belok kanan. Hitam, hitam → berhenti. Laras memeriksa baris kiri-hitam: jika garis ada di bawah sensor kiri, berarti garis berbelok ke kiri, jadi belok kiri membawa garis kembali ke antara kedua sensor."
+    },
+    {
+      "en": "Test on the track: on the gentle curve the robot wiggles but follows the line, tick by tick. On the sharp bend it moves forward 1 cm per tick, the line slips past the right sensor in a single tick, and now both sensors read white. The table says 'forward', so the robot drives off the paper.",
+      "id": "Uji di lintasan: di tikungan landai robot bergoyang tetapi mengikuti garis, detak demi detak. Di belokan tajam robot maju 1 cm setiap detak, garis melewati sensor kanan dalam satu detak, dan sekarang kedua sensor membaca putih. Tabel berkata 'maju', jadi robot keluar dari kertas."
+    },
+    {
+      "en": "The hidden problem: 'white, white' means both 'centred on the line' and 'completely lost'. The robot cannot tell them apart.",
+      "id": "Masalah tersembunyi: 'putih, putih' berarti 'tepat di tengah garis' dan juga 'benar-benar tersesat'. Robot tidak bisa membedakannya."
+    },
+    {
+      "en": "Two fixes to test, one at a time: (a) a memory variable last_seen that stores which sensor last read black, and a counter lost_ticks. When both read white, move forward and add 1 to lost_ticks; when either sensor reads black, set lost_ticks to 0. If lost_ticks reaches 3, the robot is lost: turn towards last_seen until a sensor reads black.",
+      "id": "Dua perbaikan untuk diuji, satu per satu: (a) variabel ingatan terakhir_terlihat yang menyimpan sensor mana yang terakhir membaca hitam, dan penghitung detak_tersesat. Jika keduanya putih, maju dan tambahkan 1 ke detak_tersesat; jika salah satu sensor membaca hitam, atur detak_tersesat menjadi 0. Jika detak_tersesat mencapai 3, robot tersesat: berbelok ke arah terakhir_terlihat sampai ada sensor yang membaca hitam."
+    },
+    {
+      "en": "(b) a third sensor in the middle, which reads black when the robot is centred, so 'all white' can only mean lost. Laras tests fix (a) on both the gentle curve and the sharp bend; it still follows the curve and now finds the line again after the bend.",
+      "id": "(b) sensor ketiga di tengah, yang membaca hitam saat robot di tengah, sehingga 'semua putih' hanya bisa berarti tersesat. Laras menguji perbaikan (a) di tikungan landai dan di belokan tajam; robot tetap mengikuti tikungan dan sekarang menemukan garis lagi setelah belokan."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Write the full decision table for the three-sensor version (all 8 combinations). Decide an action for each, including the strange ones such as black, white, black.",
+      "id": "Tulis tabel keputusan lengkap untuk versi tiga sensor (kedelapan kombinasi). Tentukan gerakan untuk masing-masing, termasuk yang aneh seperti hitam, putih, hitam."
+    },
+    {
+      "en": "Change only the step size: move 0.5 cm per tick instead of 1 cm. Test the sharp bend again with version 1. What does this tell you about how often a real robot should check its sensors?",
+      "id": "Ubah hanya besar langkahnya: maju 0,5 cm setiap detak, bukan 1 cm. Uji lagi belokan tajam dengan versi 1. Apa artinya ini tentang seberapa sering robot sungguhan harus memeriksa sensornya?"
+    },
+    {
+      "en": "Draw a new track with a gap in the line. Design and test a behaviour that crosses the gap and finds the line on the other side.",
+      "id": "Gambar lintasan baru dengan celah di garis. Rancang dan uji perilaku yang menyeberangi celah dan menemukan garis di seberangnya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A robot has 2 sensors that each read only black or white. How many rows does a complete decision table need?",
+        "id": "Sebuah robot punya 2 sensor yang masing-masing hanya membaca hitam atau putih. Berapa baris yang dibutuhkan tabel keputusan yang lengkap?"
+      },
+      "choices": {
+        "en": [
+          "4 rows",
+          "2 rows",
+          "3 rows"
+        ],
+        "id": [
+          "4 baris",
+          "2 baris",
+          "3 baris"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each sensor has 2 readings: 2 × 2 = 4 combinations.",
+        "id": "Setiap sensor punya 2 bacaan: 2 × 2 = 4 kombinasi."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_ROW_PER_SENSOR",
+        "2": "MISSES_A_COMBINATION"
+      },
+      "check": {
+        "expression": "2 × 2",
+        "result": "4"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "The line was between the sensors. Now the left sensor reads black and the right reads white. Which action keeps the robot on the line?",
+        "id": "Tadinya garis di antara sensor. Sekarang sensor kiri membaca hitam dan sensor kanan putih. Gerakan mana yang membuat robot tetap di garis?"
+      },
+      "choices": {
+        "en": [
+          "Turn left",
+          "Turn right",
+          "Stop"
+        ],
+        "id": [
+          "Belok kiri",
+          "Belok kanan",
+          "Berhenti"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The line has moved under the left sensor, so the robot turns left to bring it back between the sensors.",
+        "id": "Garis berpindah ke bawah sensor kiri, jadi robot belok kiri untuk membawanya kembali ke antara sensor."
+      },
+      "distractorMisconceptions": {
+        "1": "STEERS_AWAY_FROM_LINE",
+        "2": "STOPS_ON_ANY_BLACK"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A robot checks its sensors 20 times a second. How many checks does it make in 3 seconds?",
+        "id": "Sebuah robot memeriksa sensornya 20 kali setiap detik. Berapa kali pemeriksaan dalam 3 detik?"
+      },
+      "choices": {
+        "en": [
+          "60 checks",
+          "23 checks",
+          "20 checks"
+        ],
+        "id": [
+          "60 pemeriksaan",
+          "23 pemeriksaan",
+          "20 pemeriksaan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "20 checks each second for 3 seconds: 20 × 3 = 60.",
+        "id": "20 pemeriksaan setiap detik selama 3 detik: 20 × 3 = 60."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD_OF_MULTIPLYING",
+        "2": "IGNORES_TIME"
+      },
+      "check": {
+        "expression": "20 × 3",
+        "result": "60"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A robot moves 2 cm between sensor checks. A sharp bend must be corrected within 8 cm. How many 2 cm moves fit in that distance?",
+        "id": "Sebuah robot bergerak 2 cm di antara pemeriksaan sensor. Belokan tajam harus dikoreksi dalam jarak 8 cm. Berapa gerakan 2 cm yang muat dalam jarak itu?"
+      },
+      "choices": {
+        "en": [
+          "4 moves",
+          "16 moves",
+          "10 moves"
+        ],
+        "id": [
+          "4 gerakan",
+          "16 gerakan",
+          "10 gerakan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Distance divided by distance per check: 8 ÷ 2 = 4.",
+        "id": "Jarak dibagi jarak per pemeriksaan: 8 ÷ 2 = 4."
+      },
+      "distractorMisconceptions": {
+        "1": "MULTIPLIES_INSTEAD_OF_DIVIDING",
+        "2": "ADDS_INSTEAD_OF_MULTIPLYING"
+      },
+      "check": {
+        "expression": "8 ÷ 2",
+        "result": "4"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "With two sensors straddling the line, both read white. Why is this a problem for the robot?",
+        "id": "Dengan dua sensor mengapit garis, keduanya membaca putih. Mengapa ini masalah bagi robot?"
+      },
+      "choices": {
+        "en": [
+          "It could mean centred on the line or completely lost, and the robot cannot tell which",
+          "White always means the robot is lost",
+          "The sensors must be broken"
+        ],
+        "id": [
+          "Bisa berarti tepat di tengah garis atau benar-benar tersesat, dan robot tidak bisa membedakannya",
+          "Putih selalu berarti robot tersesat",
+          "Sensornya pasti rusak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The same reading has two meanings; extra information (memory or a third sensor) is needed.",
+        "id": "Bacaan yang sama punya dua arti; dibutuhkan informasi tambahan (ingatan atau sensor ketiga)."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_MEANING_PER_READING",
+        "2": "BLAMES_EQUIPMENT"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ONE_ROW_PER_SENSOR",
+      "description": {
+        "en": "Gives one row per sensor instead of one per combination.",
+        "id": "Memberi satu baris untuk setiap sensor, bukan untuk setiap kombinasi."
+      },
+      "remediation": {
+        "en": "Use two two-sided cards as the sensors (one side black, one side white) and list every way they can be turned over.",
+        "id": "Pakai dua kartu bolak-balik sebagai sensor (satu sisi hitam, satu sisi putih) dan daftar setiap cara keduanya bisa terbuka."
+      }
+    },
+    {
+      "code": "MISSES_A_COMBINATION",
+      "description": {
+        "en": "Leaves out a combination, often black-black.",
+        "id": "Melewatkan satu kombinasi, sering kali hitam-hitam."
+      },
+      "remediation": {
+        "en": "Draw a 2 by 2 grid with left sensor down the side and right sensor across the top; every square is a row.",
+        "id": "Gambar petak 2 kali 2 dengan sensor kiri di samping dan sensor kanan di atas; setiap kotak adalah satu baris."
+      }
+    },
+    {
+      "code": "STEERS_AWAY_FROM_LINE",
+      "description": {
+        "en": "Turns away from the side where the line was detected.",
+        "id": "Berbelok menjauhi sisi tempat garis terdeteksi."
+      },
+      "remediation": {
+        "en": "Move the paper robot by hand: turn right with the line under the left dot and watch the line leave completely.",
+        "id": "Gerakkan robot kertas dengan tangan: belok kanan saat garis di bawah titik kiri dan lihat garisnya hilang sama sekali."
+      }
+    },
+    {
+      "code": "STOPS_ON_ANY_BLACK",
+      "description": {
+        "en": "Stops whenever any sensor sees black.",
+        "id": "Berhenti setiap kali ada sensor yang melihat hitam."
+      },
+      "remediation": {
+        "en": "Ask what the robot would do on a gentle curve with that rule, and step it to see it stop every few ticks.",
+        "id": "Tanya apa yang akan dilakukan robot di tikungan landai dengan aturan itu, lalu jalankan dan lihat robot berhenti setiap beberapa detak."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD_OF_MULTIPLYING",
+      "description": {
+        "en": "Adds two quantities that should be multiplied.",
+        "id": "Menjumlahkan dua besaran yang seharusnya dikalikan."
+      },
+      "remediation": {
+        "en": "Make a table with one row per second and fill in the checks for each row, then add the column.",
+        "id": "Buat tabel dengan satu baris untuk setiap detik dan isi jumlah pemeriksaan di setiap baris, lalu jumlahkan kolomnya."
+      }
+    },
+    {
+      "code": "IGNORES_TIME",
+      "description": {
+        "en": "Gives the rate per second instead of the total for the whole time.",
+        "id": "Menyebut laju per detik, bukan jumlah untuk seluruh waktu."
+      },
+      "remediation": {
+        "en": "Clap 20 times for each second while a partner counts seconds aloud, and tally the claps.",
+        "id": "Bertepuk 20 kali untuk setiap detik sementara teman menghitung detik dengan suara, lalu buat turus tepukannya."
+      }
+    },
+    {
+      "code": "MULTIPLIES_INSTEAD_OF_DIVIDING",
+      "description": {
+        "en": "Multiplies when the question asks how many steps fit in a distance.",
+        "id": "Mengalikan padahal pertanyaannya berapa langkah yang muat dalam suatu jarak."
+      },
+      "remediation": {
+        "en": "Mark 8 cm on a ruler and hop a pencil along it in 2 cm jumps, counting the jumps.",
+        "id": "Tandai 8 cm di penggaris dan lompatkan pensil sepanjangnya dengan lompatan 2 cm, sambil menghitung lompatannya."
+      }
+    },
+    {
+      "code": "ONE_MEANING_PER_READING",
+      "description": {
+        "en": "Assumes each sensor reading has only one possible meaning.",
+        "id": "Menganggap setiap bacaan sensor hanya punya satu arti."
+      },
+      "remediation": {
+        "en": "Place the paper robot centred on the line and then far off the paper: read the sensors both times and compare.",
+        "id": "Letakkan robot kertas tepat di tengah garis lalu jauh di luar kertas: baca sensornya kedua kali dan bandingkan."
+      }
+    },
+    {
+      "code": "BLAMES_EQUIPMENT",
+      "description": {
+        "en": "Blames the hardware for a limit of the design.",
+        "id": "Menyalahkan perangkat keras untuk batas rancangan."
+      },
+      "remediation": {
+        "en": "Check that the sensors read correctly in both places; they do, so the problem is the information, not the sensors.",
+        "id": "Periksa bahwa sensor membaca dengan benar di kedua tempat; ternyata benar, jadi masalahnya ada pada informasi, bukan sensornya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Write the version 2 behaviour as pseudocode with a forever loop, if-else rules and the variables last_seen and lost_ticks, then trace it for the sharp bend in a table.",
+      "id": "Tulis perilaku versi 2 sebagai pseudokode dengan perulangan selamanya, aturan jika-jika tidak, dan variabel terakhir_terlihat dan detak_tersesat, lalu telusuri untuk belokan tajam dalam tabel."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child with fine-motor difficulty can move a larger robot card on a wider track; a partner can read the sensor dots aloud while the child decides the action from the table.",
+      "id": "Anak yang kesulitan motorik halus bisa menggerakkan kartu robot yang lebih besar di lintasan yang lebih lebar; teman bisa membacakan titik sensor sementara anak memutuskan gerakan dari tabel."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Paper-only design activity: no electronics or moving parts. If the design is later built with a kit, follow the electrical safety rules of the circuit units with an adult present.",
+        "id": "Kegiatan rancangan hanya dengan kertas: tanpa elektronika atau bagian bergerak. Jika rancangan nanti dibuat dengan kit, ikuti aturan keselamatan listrik dari unit rangkaian dengan orang dewasa hadir."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 35,
+    "max": 55
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child writes a complete decision table, simulates it faithfully on a track, explains why white-white is ambiguous, and tests an improvement that fixes the sharp bend.",
+      "id": "Dikuasai jika anak menulis tabel keputusan yang lengkap, menyimulasikannya dengan setia di lintasan, menjelaskan mengapa putih-putih bermakna ganda, dan menguji perbaikan yang mengatasi belokan tajam."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "14e878cf5add6979"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

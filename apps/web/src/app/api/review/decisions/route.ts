@@ -13,7 +13,7 @@ import { assertDecisionAllowed, decisionSchema } from '@/lib/server/review';
 export const POST = parentRoute('review.decide', async (req, auth) => {
   await rateLimit(`review-decide:${auth.user.id}`, 60, 3600);
   const body = await parseBody(req, decisionSchema);
-  const entry = assertDecisionAllowed(findExpansion(body.itemId), body);
+  const entry = assertDecisionAllowed(await findExpansion(body.itemId), body);
   const row = await prisma.contentReviewDecision.create({
     data: {
       familyId: auth.family.id,

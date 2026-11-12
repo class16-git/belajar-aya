@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { z } from 'zod';
 import { STAGES, type Stage } from '@atlas/shared';
 import { arabicPhraseSchema, localized, REVIEW_STATUSES, religiousReviewSchema, type ReviewStatus } from './schema';
@@ -47,6 +48,11 @@ const reviewRecord = z
     reviewedBy: plain(80).optional(),
     reviewerRole: z.enum(['parent', 'educator', 'curriculum_reviewer']).optional(),
     reviewedAt: DATE.optional(),
+    /** The exact version a person approved. Any later edit (new version) needs a new review before children see it. */
+    reviewedVersion: SEMVER.optional(),
+    /** Fingerprint of the exact content a person approved (see contentHash). Any edit, even without a version bump, hides
+     *  the item until it is re-reviewed. */
+    reviewedHash: z.string().regex(/^[0-9a-f]{16}$/).optional(),
     rejectedReason: plain(400).optional(),
   })
   .strict();
@@ -294,6 +300,9 @@ const allText = (o: unknown): string => (typeof o === 'string' ? o : Array.isArr
 const enText = (o: unknown): string =>
   Array.isArray(o) ? o.map(enText).join(' ') : o && typeof o === 'object' ? ('en' in (o as object) && typeof (o as { en: unknown }).en === 'string' ? (o as { en: string }).en : Object.entries(o).filter(([k]) => k !== 'id').map(([, v]) => enText(v)).join(' ')) : '';
 
+/** Foods children handle or eat in an activity: allergy awareness required. */
+export const FOOD = /\b(peanuts?|nuts?|eggs?|milk|cheese|yogh?urt|wheat|flour|sesame|kue|cookies?|biscuits?|crackers?|kerupuk|onde-onde|bread|cakes?|snacks?|sweets|candy|chocolate|fruit slices?)\b/;
+
 export const UNIT_NEAR_DUPLICATE = 0.45;
 export const READING_NEAR_DUPLICATE = 0.3;
 
@@ -328,9 +337,9 @@ export function unitIssues(u: Unit): string[] {
   if (new Set(u.assessment.map((a) => a.id)).size !== u.assessment.length) out.push(`${u.id}: duplicate assessment ids`);
   // Assessment must test transfer, not recall (QA finding): an item may not reuse the exact set of numbers of a worked
   // example or CPA activity.
-  if (u.framework === 'math') {
+  if (u.framework === 'math' || /\d/.test(enText(u.assessment.map((a) => a.prompt)))) {
     const sig = (t: string) => (t.match(/\d+(?:[.,]\d+)?/g) ?? []).sort().join('|');
-    const taught = new Set(enText([u.guidedExamples, u.cpa?.concrete ?? [], u.cpa?.pictorial ?? [], u.cpa?.abstract ?? []]).split(/(?<=[.!?])\s+/).map(sig).filter((x) => x.split('|').length >= 2));
+    const taught = new Set(enText([u.guidedExamples, u.practice, u.childInstructions, u.cpa?.concrete ?? [], u.cpa?.pictorial ?? [], u.cpa?.abstract ?? []]).split(/(?<=[.!?])\s+/).map(sig).filter((x) => x.split('|').length >= 2));
     for (const a of u.assessment) {
       const k = sig(a.prompt.en);
       if (k.split('|').length >= 2 && taught.has(k)) out.push(`${u.id}/${a.id}: repeats the numbers of a worked example; use new numbers so it tests the objective`);
@@ -343,6 +352,18 @@ export function unitIssues(u: Unit): string[] {
     const m = handled.match(re);
     if (m && !u.safety.hazards[flag] && !re.test(notes)) out.push(`${u.id}: "${m[0]}" is used but hazards.${flag} is false and no safety note names it`);
   }
+  // QA finding (batch 2): bottle caps, tin lids and food were not covered by the shared hazard list.
+  for (const [flag, re] of [['chokingRisk', /\bbottle ?(caps?|tops?)\b|\bcrown caps?\b|\bdry (rice|grains?)\b/], ['sharp', /\b(tin|can|metal) lids?\b|\bcrown caps?\b|\bdrawing compass(es)?\b|\bpair of compasses\b|\bcompass point\b/]] as const) {
+    const m = handled.match(re);
+    if (m && !u.safety.hazards[flag] && !re.test(notes)) out.push(`${u.id}: "${m[0]}" is used but hazards.${flag} is false and no safety note names it`);
+  }
+  // Food: flagged when it is eaten (food in the materials and an eat/taste/snack word anywhere in the activity) or
+  // handled by touch (flour, dough, bread, rice), not when food words are only story text, rhymes or idioms.
+  const physical = enText([u.materials, u.preparation, u.cpa?.concrete ?? []]).toLowerCase().replace(/\begg[- ](cartons?|box(es)?|trays?|cups?)\b/g, '');
+  const eaten = /\b(eat|eats|eating|taste|tasting|snack|snacks|bite|chew)\b/.test(handled) && physical.match(FOOD);
+  const touched = physical.match(/\b(flour|dough|playdough|bread)\b/);
+  const food = eaten || touched;
+  if (food && !u.safety.hazards.allergens && !/allerg/.test(notes)) out.push(`${u.id}: food ("${food[0]}") is used but hazards.allergens is false and no safety note mentions allergies`);
   if (/\b(battery|batteries|wire|led|circuit|motor|plug|socket|mains)\b/.test(handled) && !u.safety.hazards.electrical && !/battery|electric|circuit|wire/.test(notes)) out.push(`${u.id}: electrical materials need hazards.electrical or an electrical safety note`);
   if (u.safety.hazards.chokingRisk && ['age2_3', 'age3_4'].includes(u.level)) out.push(`${u.id}: no choking-hazard materials for under-4s`);
   if (u.level === 'age2_3' && u.safety.supervision !== 'adult_within_reach') out.push(`${u.id}: toddler units need an adult within reach`);
@@ -391,6 +412,8 @@ export function readingIssues(r: Reading): string[] {
     const m = act.match(re);
     if (m && !re.test(rnotes)) out.push(`${r.id}: offline activity uses "${m[0]}" but no safety note names it`);
   }
+  const rfood = /\b(eat|taste|snack|bite)\b/.test(act) ? act.match(FOOD) : act.match(/\b(flour|dough|bread)\b/);
+  if (rfood && !/allerg/.test(rnotes)) out.push(`${r.id}: the offline activity uses food ("${rfood[0]}") but no safety note mentions allergies`);
   if (CAREGIVER_LED_LEVELS.includes(r.level) && /\b(beans?|seeds?|beads?|coins?|marbles?|buttons?|magnets?|balloons?)\b/.test(act) && !/adult (handles|holds|keeps|plants)/.test(act + ' ' + rnotes)) out.push(`${r.id}: small items in a pre-reader activity must be handled only by the adult`);
   if (/\b(standing water|leave (it|the bottle|the jar) (outside|out) for (a|one|two) week)/.test(act) && !/mosquito|empty/.test(act + ' ' + rnotes)) out.push(`${r.id}: standing water must be emptied daily (mosquito breeding)`);
   if (r.provenance.origin === 'ai_drafted' && rank(r.reviewStatus) >= rank('reviewed') && !(r.review.reviewedBy && r.review.reviewedAt)) out.push(`${r.id}: AI-drafted content cannot be reviewed/published without a human review record`);
@@ -403,6 +426,28 @@ export interface ExpansionContent {
 }
 
 /** Validates raw unit and reading JSON: schema, subject checks, prerequisites (existence, level, cycles), duplicates. */
+/**
+ * Schema plus per-item subject checks only (no prerequisite, cycle or near-duplicate checks across files). Used when
+ * one level is loaded at runtime; the whole-corpus `validateExpansion` runs in CI and in the indexer, and its
+ * cross-file errors are carried in the generated summary.
+ */
+export function parseExpansionItems(raw: { units: unknown[]; readings: unknown[] }): { content: ExpansionContent; errors: string[] } {
+  const errors: string[] = [];
+  const units: Unit[] = [];
+  const readings: Reading[] = [];
+  for (const x of raw.units) {
+    const r = unitSchema.safeParse(x);
+    if (r.success) { units.push(r.data); errors.push(...unitIssues(r.data)); }
+    else errors.push(`unit ${(x as { id?: string })?.id ?? '?'}: ${r.error.issues.slice(0, 6).map((i) => `${i.path.join('.')} ${i.message}`).join('; ')}`);
+  }
+  for (const x of raw.readings) {
+    const r = readingSchema.safeParse(x);
+    if (r.success) { readings.push(r.data); errors.push(...readingIssues(r.data)); }
+    else errors.push(`reading ${(x as { id?: string })?.id ?? '?'}: ${r.error.issues.slice(0, 6).map((i) => `${i.path.join('.')} ${i.message}`).join('; ')}`);
+  }
+  return { content: { units, readings }, errors };
+}
+
 export function validateExpansion(raw: { units: unknown[]; readings: unknown[] }): { content: ExpansionContent; errors: string[] } {
   const errors: string[] = [];
   const units: Unit[] = [];
@@ -462,12 +507,37 @@ export function validateExpansion(raw: { units: unknown[]; readings: unknown[] }
   return { content: { units, readings }, errors };
 }
 
+/**
+ * Content fingerprint used by review records. Canonical JSON (sorted keys; empty arrays and objects dropped, so schema
+ * defaults do not matter) of everything except the review state itself, SHA-256, first 16 hex characters. The same
+ * algorithm is implemented in apps/web/scripts/apply-reviews.mjs; a unit test checks they agree.
+ */
+export function contentHash(x: unknown): string {
+  const canon = (v: unknown, top = false): unknown => {
+    if (Array.isArray(v)) return v.map((e) => canon(e));
+    if (v && typeof v === 'object') {
+      const out: Record<string, unknown> = {};
+      for (const k of Object.keys(v as object).sort()) {
+        if (top && (k === 'review' || k === 'reviewStatus' || k === 'religiousReview')) continue;
+        const c = canon((v as Record<string, unknown>)[k]);
+        if (c === undefined || (Array.isArray(c) && c.length === 0) || (c && typeof c === 'object' && !Array.isArray(c) && Object.keys(c).length === 0)) continue;
+        out[k] = c;
+      }
+      return out;
+    }
+    return v;
+  };
+  return createHash('sha256').update(JSON.stringify(canon(x, true))).digest('hex').slice(0, 16);
+}
+
 /** Production visibility: human review recorded, no open factual claims, and (Islamic/Arabic) an approved scholar review. */
 export function isExpansionVisible(x: Unit | Reading, minReview: ReviewStatus): boolean {
   if (x.review.rejectedReason) return false; // a rejected item is never shown, in any environment
   if (rank(x.reviewStatus) < rank(minReview)) return false;
   if (rank(minReview) >= rank('reviewed')) {
     if (!(x.review.reviewedBy && x.review.reviewedAt)) return false;
+    if (x.review.reviewedVersion !== x.version) return false; // edited since the human review: re-review first
+    if (x.review.reviewedHash !== contentHash(x)) return false; // content changed since the human review
     const religious = ('framework' in x && x.framework === 'islamic') || x.arabicPhrases.length > 0 || ('crossCurricular' in x && x.crossCurricular.some((c) => c.subject === 'islamic_values'));
     if (religious && !(x.religiousReview?.approvalStatus === 'approved' && x.religiousReview.scholarReviewer && x.religiousReview.reviewedAt)) return false;
     if ('factChecks' in x && x.factChecks.some((f) => f.status === 'needs_source')) return false;
@@ -497,16 +567,4 @@ export function gradeUnitAssessment(u: Unit, answers: Record<string, number>) {
     return { id: a.id, correct, misconception: !correct && given !== undefined ? (a.distractorMisconceptions[String(given)] ?? null) : null, explanation: a.explanation };
   });
   return { correct: results.filter((r) => r.correct).length, total: results.length, results };
-}
-
-// ── Loaded corpus ────────────────────────────────────────────────────────────────────────────────────────────────────
-import { RAW_READINGS, RAW_UNITS } from './content-index';
-let cached: (ExpansionContent & { errors: string[] }) | null = null;
-/** The validated expansion corpus (cached). Items with validation errors are still returned, flagged via `errors`. */
-export function getExpansion(): ExpansionContent & { errors: string[] } {
-  if (!cached) {
-    const { content, errors } = validateExpansion({ units: RAW_UNITS, readings: RAW_READINGS });
-    cached = { ...content, errors };
-  }
-  return cached;
 }

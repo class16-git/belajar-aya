@@ -1,0 +1,500 @@
+{
+  "id": "unit-g5-stem-data-logging-sun-bottles",
+  "version": "1.0.1",
+  "level": "g5",
+  "framework": "stem",
+  "strand": "science_inquiry",
+  "title": {
+    "en": "Data logging: which bottle warms faster?",
+    "id": "Pencatatan data: botol mana yang lebih cepat hangat?"
+  },
+  "prerequisites": [
+    "unit-g4-stem-light-meter-sensor",
+    "unit-g3-stem-catapult-design-iteration"
+  ],
+  "objective": {
+    "en": "Plan a fair experiment comparing water in a black-wrapped and a white-wrapped bottle in the sun, log temperatures at fixed 10-minute intervals for an hour, draw a line graph, and calculate the rise and the average rate of warming.",
+    "id": "Merencanakan percobaan adil yang membandingkan air di botol berbungkus hitam dan berbungkus putih di bawah matahari, mencatat suhu pada selang tetap 10 menit selama satu jam, menggambar grafik garis, serta menghitung kenaikan dan laju rata-rata pemanasan."
+  },
+  "rationale": {
+    "en": "Data loggers in weather stations and robots do one simple thing very reliably: they take a reading at regular intervals and store it. Doing it by hand teaches why the interval must be fixed, why a table comes before a graph, and how a line graph shows change over time. Colour and warming is a safe, everyday question with a clear answer.",
+    "id": "Pencatat data di stasiun cuaca dan robot melakukan satu hal sederhana dengan sangat andal: mengambil bacaan pada selang waktu yang teratur dan menyimpannya. Melakukannya dengan tangan mengajarkan mengapa selangnya harus tetap, mengapa tabel dibuat sebelum grafik, dan bagaimana grafik garis menunjukkan perubahan dari waktu ke waktu. Warna dan pemanasan adalah pertanyaan sehari-hari yang aman dengan jawaban yang jelas."
+  },
+  "outcomes": [
+    {
+      "en": "Plans and runs a fair test, logging readings at a fixed interval in a table.",
+      "id": "Merencanakan dan menjalankan uji yang adil, mencatat bacaan pada selang tetap di tabel."
+    },
+    {
+      "en": "Draws a two-line graph with labelled axes and calculates the temperature rise and average rate for each bottle.",
+      "id": "Menggambar grafik dua garis dengan sumbu berlabel serta menghitung kenaikan suhu dan laju rata-rata setiap botol."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I take readings at the same interval every time.",
+      "id": "Aku mengambil bacaan pada selang yang sama setiap kali."
+    },
+    {
+      "en": "My graph has time across the bottom and temperature up the side.",
+      "id": "Grafikku punya waktu di bagian bawah dan suhu di bagian samping."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Plan together and write it down: question, prediction, what changes (the wrapping colour), what stays the same (bottle, amount of water, starting water, place, thermometer type) and what is measured (temperature every 10 minutes).",
+      "id": "Rencanakan bersama dan tuliskan: pertanyaan, tebakan, yang diubah (warna pembungkus), yang tetap sama (botol, banyak air, air awal, tempat, jenis termometer) dan yang diukur (suhu setiap 10 menit)."
+    },
+    {
+      "en": "Use a clock to take readings at fixed times, such as 9:00, 9:10, 9:20 and so on. Read the thermometer at eye level with its bulb still in the water.",
+      "id": "Pakai jam untuk mengambil bacaan pada waktu yang tetap, seperti 9.00, 9.10, 9.20, dan seterusnya. Baca termometer sejajar mata dengan ujungnya tetap di dalam air."
+    },
+    {
+      "en": "Between readings, wait in the shade with a hat and water. Readings are taken by the child; the adult checks the thermometers are handled gently.",
+      "id": "Di antara bacaan, tunggu di tempat teduh dengan topi dan air minum. Bacaan diambil oleh anak; orang dewasa memastikan termometer dipegang dengan hati-hati."
+    },
+    {
+      "en": "Afterwards, draw the graph together and ask: 'What does a steeper line mean? Was your prediction right? What would make the test better?'",
+      "id": "Setelahnya, gambar grafik bersama dan tanya: 'Apa artinya garis yang lebih curam? Apakah tebakanmu benar? Apa yang bisa membuat ujinya lebih baik?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Write your plan: what changes, what stays the same, what you measure.",
+      "id": "Tulis rencanamu: apa yang diubah, apa yang tetap sama, apa yang diukur."
+    },
+    {
+      "en": "Take a reading from each bottle every 10 minutes for an hour and write it in the table straight away.",
+      "id": "Ambil bacaan dari setiap botol setiap 10 menit selama satu jam dan langsung tulis di tabel."
+    },
+    {
+      "en": "Draw a line graph, calculate each bottle's rise, and write a conclusion.",
+      "id": "Gambar grafik garis, hitung kenaikan setiap botol, dan tulis kesimpulan."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Set up the two bottles and take real thermometer readings.",
+        "id": "Siapkan kedua botol dan ambil bacaan termometer yang sebenarnya."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a line graph with time from 0 to 60 minutes across the bottom and temperature up the side, one line per bottle with a key.",
+        "id": "Gambar grafik garis dengan waktu 0 sampai 60 menit di bagian bawah dan suhu di bagian samping, satu garis untuk setiap botol dengan keterangan."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Calculate rise = last reading − first reading, and average rate = rise ÷ number of 10-minute intervals.",
+        "id": "Hitung kenaikan = bacaan terakhir − bacaan pertama, dan laju rata-rata = kenaikan ÷ jumlah selang 10 menit."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Two identical clear plastic bottles (600 millilitres), each with 400 millilitres of tap water from the same jug",
+      "id": "Dua botol plastik bening yang sama (600 mililiter), masing-masing berisi 400 mililiter air keran dari teko yang sama"
+    },
+    {
+      "en": "Black paper and white paper, the same size, and sticky tape",
+      "id": "Kertas hitam dan kertas putih, sama ukurannya, dan selotip"
+    },
+    {
+      "en": "Two identical spirit-filled (red liquid) thermometers that read up to at least 50 °C",
+      "id": "Dua termometer alkohol (cairan merah) yang sama dengan skala sampai sedikitnya 50 °C"
+    },
+    {
+      "en": "A clock or watch, a pencil, a results table, and squared paper for the graph",
+      "id": "Jam dinding atau jam tangan, pensil, tabel hasil, dan kertas berpetak untuk grafik"
+    },
+    {
+      "en": "A sunny spot where both bottles get the same sunshine, and a shady place to wait",
+      "id": "Tempat cerah yang memberi kedua botol sinar matahari yang sama, dan tempat teduh untuk menunggu"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Wrap one bottle in black paper and one in white, leaving a small window to read the water level. Fill both from the same jug. Stand the thermometers in the bottles for 5 minutes in the shade, so both start at the same temperature, then take the 0-minute reading and move both into the sun together.",
+      "id": "Bungkus satu botol dengan kertas hitam dan satu dengan kertas putih, sisakan jendela kecil untuk melihat permukaan air. Isi keduanya dari teko yang sama. Masukkan termometer ke botol selama 5 menit di tempat teduh, agar keduanya mulai dari suhu yang sama, lalu ambil bacaan menit ke-0 dan pindahkan keduanya ke bawah matahari bersamaan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "The plan. Question: 'Does a black wrapping make water warm up faster in the sun than a white one?' Prediction: 'Black, because dark things feel hotter in the sun.' Same: bottle, 400 millilitres, starting temperature, place, thermometer. Change: wrapping colour. Measure: temperature every 10 minutes for 60 minutes, so 7 readings each.",
+      "id": "Rencana. Pertanyaan: 'Apakah pembungkus hitam membuat air lebih cepat hangat di bawah matahari daripada pembungkus putih?' Tebakan: 'Hitam, karena benda gelap terasa lebih panas di bawah matahari.' Sama: botol, 400 mililiter, suhu awal, tempat, termometer. Diubah: warna pembungkus. Diukur: suhu setiap 10 menit selama 60 menit, jadi 7 bacaan masing-masing."
+    },
+    {
+      "en": "Example log (made-up numbers to show the method; your results will differ). Black: 27, 29, 31, 32, 34, 35, 36 °C. White: 27, 28, 28, 29, 30, 30, 31 °C. Rise: black 36 − 27 = 9 °C; white 31 − 27 = 4 °C. Six intervals, so black averaged 9 ÷ 6 = 1.5 °C per 10 minutes.",
+      "id": "Contoh catatan (angka karangan untuk menunjukkan caranya; hasilmu akan berbeda). Hitam: 27, 29, 31, 32, 34, 35, 36 °C. Putih: 27, 28, 28, 29, 30, 30, 31 °C. Kenaikan: hitam 36 − 27 = 9 °C; putih 31 − 27 = 4 °C. Enam selang, jadi rata-rata hitam 9 ÷ 6 = 1,5 °C setiap 10 menit."
+    },
+    {
+      "en": "The graph and the conclusion. Plot each reading as a dot above its time and join the dots for each bottle. The black line is steeper: it warmed faster. Conclusion: 'In our test, the black-wrapped bottle warmed faster, because dark surfaces absorb more sunlight.' Improvement: a cloud passed at 30 minutes, so repeat on a clear day.",
+      "id": "Grafik dan kesimpulan. Gambar setiap bacaan sebagai titik di atas waktunya dan hubungkan titik-titik setiap botol. Garis hitam lebih curam: lebih cepat hangat. Kesimpulan: 'Dalam uji kami, botol berbungkus hitam lebih cepat hangat, karena permukaan gelap menyerap lebih banyak sinar matahari.' Perbaikan: ada awan lewat di menit ke-30, jadi ulangi pada hari yang cerah."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Run the experiment and keep your own log, then draw the two-line graph with a title, labelled axes and a key.",
+      "id": "Jalankan percobaannya dan buat catatanmu sendiri, lalu gambar grafik dua garis dengan judul, sumbu berlabel, dan keterangan."
+    },
+    {
+      "en": "Bring both bottles into the shade after 60 minutes and log for another 30 minutes. Which one cools faster? Add it to the graph.",
+      "id": "Bawa kedua botol ke tempat teduh setelah 60 menit dan catat selama 30 menit lagi. Mana yang lebih cepat dingin? Tambahkan ke grafik."
+    },
+    {
+      "en": "Explain in writing how an automatic data logger on a weather station would do the same job, and one advantage it has over a person.",
+      "id": "Jelaskan secara tertulis bagaimana pencatat data otomatis di stasiun cuaca melakukan pekerjaan yang sama, dan satu keunggulannya dibandingkan manusia."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A bottle's first reading was 26 °C and its last reading was 34 °C. What was the temperature rise?",
+        "id": "Bacaan pertama sebuah botol 26 °C dan bacaan terakhirnya 34 °C. Berapa kenaikan suhunya?"
+      },
+      "choices": {
+        "en": [
+          "8 °C",
+          "60 °C",
+          "34 °C"
+        ],
+        "id": [
+          "8 °C",
+          "60 °C",
+          "34 °C"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Rise = last − first: 34 − 26 = 8 °C.",
+        "id": "Kenaikan = terakhir − pertama: 34 − 26 = 8 °C."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "REPORTS_FINAL_SCORE"
+      },
+      "check": {
+        "expression": "34 - 26",
+        "result": "8"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Over 50 minutes, logged every 10 minutes, a bottle rose 10 °C. What was its average rate per 10 minutes?",
+        "id": "Selama 50 menit, dicatat setiap 10 menit, suhu sebuah botol naik 10 °C. Berapa laju rata-ratanya setiap 10 menit?"
+      },
+      "choices": {
+        "en": [
+          "2 °C per 10 minutes",
+          "10 °C per 10 minutes",
+          "1 °C per 10 minutes"
+        ],
+        "id": [
+          "2 °C setiap 10 menit",
+          "10 °C setiap 10 menit",
+          "1 °C setiap 10 menit"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "50 minutes is 5 intervals: 10 ÷ 5 = 2 °C per 10 minutes.",
+        "id": "50 menit adalah 5 selang: 10 ÷ 5 = 2 °C setiap 10 menit."
+      },
+      "distractorMisconceptions": {
+        "1": "RISE_IS_RATE",
+        "2": "DIVIDES_BY_MINUTES_WRONGLY"
+      },
+      "check": {
+        "expression": "10 ÷ 5",
+        "result": "2"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Ani repeated the experiment on three sunny days. At 30 minutes the black bottle read 29 °C, 31 °C and 30 °C. What is the mean?",
+        "id": "Ani mengulang percobaan pada tiga hari yang cerah. Pada menit ke-30 botol hitam terbaca 29 °C, 31 °C, dan 30 °C. Berapa rata-ratanya?"
+      },
+      "choices": {
+        "en": [
+          "30 °C",
+          "90 °C",
+          "31 °C"
+        ],
+        "id": [
+          "30 °C",
+          "90 °C",
+          "31 °C"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Add and share equally: (29 + 31 + 30) ÷ 3 = 30 °C.",
+        "id": "Jumlahkan lalu bagi rata: (29 + 31 + 30) ÷ 3 = 30 °C."
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_TO_DIVIDE",
+        "2": "USES_BEST_RESULT"
+      },
+      "check": {
+        "expression": "(29 + 31 + 30) ÷ 3",
+        "result": "30"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "On the graph, the black bottle's line is steeper than the white bottle's line. What does that mean?",
+        "id": "Pada grafik, garis botol hitam lebih curam daripada garis botol putih. Apa artinya?"
+      },
+      "choices": {
+        "en": [
+          "The black bottle's temperature rose faster",
+          "The black bottle was measured for longer",
+          "The black bottle started hotter"
+        ],
+        "id": [
+          "Suhu botol hitam naik lebih cepat",
+          "Botol hitam diukur lebih lama",
+          "Botol hitam mulai lebih panas"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Steepness shows how fast the value changes over time; both started at the same temperature and time.",
+        "id": "Kecuraman menunjukkan seberapa cepat nilai berubah dari waktu ke waktu; keduanya mulai pada suhu dan waktu yang sama."
+      },
+      "distractorMisconceptions": {
+        "1": "STEEP_MEANS_LONGER",
+        "2": "STEEP_MEANS_HIGHER_START"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Andi read the black bottle at 10, 20 and 40 minutes, and the white bottle at 15, 30 and 45 minutes. What is the main problem?",
+        "id": "Andi membaca botol hitam pada menit 10, 20, dan 40, dan botol putih pada menit 15, 30, dan 45. Apa masalah utamanya?"
+      },
+      "choices": {
+        "en": [
+          "The readings were not taken at the same fixed times, so they cannot be compared fairly",
+          "He used too few bottles",
+          "Thermometers should be read only once"
+        ],
+        "id": [
+          "Bacaan tidak diambil pada waktu tetap yang sama, jadi tidak bisa dibandingkan dengan adil",
+          "Ia memakai terlalu sedikit botol",
+          "Termometer seharusnya dibaca sekali saja"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A data log needs the same fixed interval for every series so the values line up.",
+        "id": "Catatan data membutuhkan selang tetap yang sama untuk setiap seri agar nilainya sejajar."
+      },
+      "distractorMisconceptions": {
+        "1": "MORE_DATA_IS_FAIR",
+        "2": "ONE_READING_ENOUGH"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds two readings when asked for the change.",
+        "id": "Menjumlahkan dua bacaan saat ditanya perubahannya."
+      },
+      "remediation": {
+        "en": "Mark both readings on a vertical number line like a thermometer and count the degrees between them.",
+        "id": "Tandai kedua bacaan pada garis bilangan tegak seperti termometer dan hitung derajat di antaranya."
+      }
+    },
+    {
+      "code": "REPORTS_FINAL_SCORE",
+      "description": {
+        "en": "Gives the final reading instead of the change.",
+        "id": "Menyebut bacaan terakhir, bukan perubahannya."
+      },
+      "remediation": {
+        "en": "Ask 'How many degrees did it climb?' and point to the start and the end of the climb on the graph.",
+        "id": "Tanya 'Naik berapa derajat?' dan tunjuk awal dan akhir kenaikan pada grafik."
+      }
+    },
+    {
+      "code": "RISE_IS_RATE",
+      "description": {
+        "en": "Gives the total rise as the rate per interval.",
+        "id": "Menyebut kenaikan total sebagai laju setiap selang."
+      },
+      "remediation": {
+        "en": "Draw the 5 intervals as 5 boxes and share the 10 degrees equally among them.",
+        "id": "Gambar 5 selang sebagai 5 kotak dan bagi 10 derajat sama rata ke dalamnya."
+      }
+    },
+    {
+      "code": "DIVIDES_BY_MINUTES_WRONGLY",
+      "description": {
+        "en": "Divides by the wrong number, such as the 10 minutes of one interval or the number of readings, instead of the number of intervals.",
+        "id": "Membagi dengan angka yang salah, seperti 10 menit dari satu selang atau jumlah bacaan, bukan jumlah selang."
+      },
+      "remediation": {
+        "en": "Count the gaps between fence posts: 6 readings have 5 gaps. Divide by the gaps.",
+        "id": "Hitung celah di antara tiang pagar: 6 bacaan punya 5 celah. Bagi dengan jumlah celah."
+      }
+    },
+    {
+      "code": "FORGETS_TO_DIVIDE",
+      "description": {
+        "en": "Adds the values but does not divide by how many there are.",
+        "id": "Menjumlahkan nilai tetapi tidak membaginya dengan banyaknya nilai."
+      },
+      "remediation": {
+        "en": "Share 90 counters equally between 3 cups and count one cup.",
+        "id": "Bagi 90 keping sama rata ke 3 gelas dan hitung satu gelas."
+      }
+    },
+    {
+      "code": "USES_BEST_RESULT",
+      "description": {
+        "en": "Picks the highest reading instead of a summary.",
+        "id": "Memilih bacaan tertinggi, bukan ringkasannya."
+      },
+      "remediation": {
+        "en": "Level the three readings like towers of blocks: move blocks from the tallest to the shortest until all are equal.",
+        "id": "Ratakan ketiga bacaan seperti menara balok: pindahkan balok dari yang tertinggi ke yang terendah sampai semuanya sama."
+      }
+    },
+    {
+      "code": "STEEP_MEANS_LONGER",
+      "description": {
+        "en": "Thinks a steeper line means a longer time.",
+        "id": "Mengira garis yang lebih curam berarti waktu yang lebih lama."
+      },
+      "remediation": {
+        "en": "Put a finger on each line at 0 and 60 minutes: both lines cover the same time, but one climbs higher.",
+        "id": "Taruh jari di setiap garis pada menit 0 dan 60: kedua garis mencakup waktu yang sama, tetapi satu naik lebih tinggi."
+      }
+    },
+    {
+      "code": "STEEP_MEANS_HIGHER_START",
+      "description": {
+        "en": "Confuses the height of a line with its steepness.",
+        "id": "Tertukar antara tinggi garis dan kecuraman garis."
+      },
+      "remediation": {
+        "en": "Draw two lines that start at different heights but climb the same amount, and compare their slopes.",
+        "id": "Gambar dua garis yang mulai di ketinggian berbeda tetapi naik sama banyak, lalu bandingkan kemiringannya."
+      }
+    },
+    {
+      "code": "MORE_DATA_IS_FAIR",
+      "description": {
+        "en": "Thinks a test is fair as long as there is enough data.",
+        "id": "Mengira uji itu adil asalkan datanya cukup banyak."
+      },
+      "remediation": {
+        "en": "Put both sets of readings in one table with a row for each minute and notice the empty cells.",
+        "id": "Masukkan kedua set bacaan ke satu tabel dengan satu baris untuk setiap menit dan perhatikan sel yang kosong."
+      }
+    },
+    {
+      "code": "ONE_READING_ENOUGH",
+      "description": {
+        "en": "Thinks one reading is enough to describe change over time.",
+        "id": "Mengira satu bacaan cukup untuk menggambarkan perubahan dari waktu ke waktu."
+      },
+      "remediation": {
+        "en": "Try to draw a line graph from one dot, then from seven dots.",
+        "id": "Coba gambar grafik garis dari satu titik, lalu dari tujuh titik."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add a third bottle wrapped in aluminium foil. Predict where its line will fall on the graph before you test it.",
+      "id": "Tambahkan botol ketiga yang dibungkus aluminium foil. Tebak di mana garisnya akan berada pada grafik sebelum mengujinya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child with low vision can use a thermometer with large markings and a magnifier, or call out readings for a partner to log; the graph can be made with stickers on large squared paper.",
+      "id": "Anak dengan penglihatan terbatas bisa memakai termometer bertanda besar dan kaca pembesar, atau menyebutkan bacaan untuk dicatat temannya; grafik bisa dibuat dengan stiker di kertas berpetak besar."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": true,
+      "water": true,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Thermometers are glass: carry and read them gently. Use only spirit-filled (red liquid) thermometers, never silver mercury ones. If one breaks, the adult clears up the glass.",
+        "id": "Termometer terbuat dari kaca: bawa dan baca dengan hati-hati. Gunakan hanya termometer alkohol (cairan merah), jangan pernah yang berisi raksa perak. Jika pecah, orang dewasa yang membersihkan kacanya."
+      },
+      {
+        "en": "Sun: wait in the shade between readings, wear a hat and drink water. Never look at the sun.",
+        "id": "Matahari: tunggu di tempat teduh di antara bacaan, pakai topi, dan minum air. Jangan pernah melihat ke matahari."
+      },
+      {
+        "en": "Do not drink the bottle water. Pour it on plants the same day and leave no standing water for mosquitoes.",
+        "id": "Jangan meminum air di botol. Siramkan ke tanaman pada hari yang sama dan jangan biarkan air tergenang untuk nyamuk."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 60
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child plans a fair test, logs readings at a fixed interval, draws a correct labelled line graph, and calculates rise, rate and mean accurately.",
+      "id": "Dikuasai jika anak merencanakan uji yang adil, mencatat bacaan pada selang tetap, menggambar grafik garis berlabel yang benar, serta menghitung kenaikan, laju, dan rata-rata dengan tepat."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "0b3b1b51d3b3961f"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

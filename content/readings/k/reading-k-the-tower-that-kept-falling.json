@@ -1,0 +1,227 @@
+{
+  "id": "reading-k-the-tower-that-kept-falling",
+  "version": "1.0.0",
+  "level": "k",
+  "readingLevel": "emergent",
+  "genre": "fiction",
+  "mode": "shared",
+  "title": {
+    "en": "The tower that kept falling",
+    "id": "Menara yang terus roboh"
+  },
+  "text": {
+    "en": [
+      "Dewi wants to build a tower as tall as her chair.",
+      "She puts one block on top of another, and another. Wobble, wobble... crash! The tower falls.",
+      "Dewi tries again. She stacks the blocks faster. Crash! It falls again.",
+      "Dewi takes a deep breath. She looks at the bottom of her tower. Just one block holds everything up.",
+      "This time she puts four blocks side by side at the bottom. On top go three blocks, then two, then one.",
+      "The tower stands still. 'A wide bottom makes a strong tower!' says Dewi."
+    ],
+    "id": [
+      "Dewi ingin membangun menara setinggi kursinya.",
+      "Ia menaruh satu balok di atas balok lain, lalu lagi dan lagi. Goyang, goyang... gubrak! Menaranya roboh.",
+      "Dewi mencoba lagi. Ia menumpuk balok lebih cepat. Gubrak! Roboh lagi.",
+      "Dewi menarik napas panjang. Ia melihat bagian bawah menaranya. Hanya satu balok yang menahan semuanya.",
+      "Kali ini ia menaruh empat balok berjajar di bawah. Di atasnya tiga balok, lalu dua, lalu satu.",
+      "Menaranya berdiri tegak. 'Bagian bawah yang lebar membuat menara kuat!' kata Dewi."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Retells a story of trying, noticing a problem and changing the plan.",
+      "id": "Menceritakan kembali kisah mencoba, menemukan masalah, dan mengubah rencana."
+    },
+    {
+      "en": "Learns that a wide base makes a structure more stable.",
+      "id": "Mengetahui bahwa alas yang lebar membuat bangunan lebih stabil."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "tower",
+        "id": "menara"
+      },
+      "meaning": {
+        "en": "a tall, narrow building",
+        "id": "bangunan yang tinggi dan ramping"
+      }
+    },
+    {
+      "word": {
+        "en": "wobble",
+        "id": "goyang"
+      },
+      "meaning": {
+        "en": "move from side to side as if about to fall",
+        "id": "bergerak ke kiri dan kanan seperti mau jatuh"
+      }
+    },
+    {
+      "word": {
+        "en": "wide",
+        "id": "lebar"
+      },
+      "meaning": {
+        "en": "big from one side to the other",
+        "id": "besar dari sisi ke sisi"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Dewi do after the tower fell the second time?",
+        "id": "Apa yang Dewi lakukan setelah menaranya roboh kedua kali?"
+      },
+      "choices": {
+        "en": [
+          "she looked at the bottom of her tower",
+          "she stacked the blocks faster",
+          "she went to sleep"
+        ],
+        "id": [
+          "ia melihat bagian bawah menaranya",
+          "ia menumpuk balok lebih cepat",
+          "ia pergi tidur"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did stacking faster not help?",
+        "id": "Mengapa menumpuk lebih cepat tidak membantu?"
+      },
+      "choices": {
+        "en": [
+          "the bottom was still too narrow",
+          "the blocks were too heavy to lift",
+          "the chair pushed the tower"
+        ],
+        "id": [
+          "bagian bawahnya masih terlalu sempit",
+          "baloknya terlalu berat untuk diangkat",
+          "kursinya mendorong menara"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "How many blocks did Dewi use in her strong tower?",
+        "id": "Berapa balok yang Dewi pakai untuk menaranya yang kuat?"
+      },
+      "choices": {
+        "en": [
+          "10 blocks",
+          "4 blocks",
+          "1 block"
+        ],
+        "id": [
+          "10 balok",
+          "4 balok",
+          "1 balok"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4,
+      "check": {
+        "expression": "4 + 3 + 2 + 1",
+        "result": "10"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What did Dewi learn?",
+        "id": "Apa yang Dewi pelajari?"
+      },
+      "choices": {
+        "en": [
+          "a wide bottom makes a tower strong",
+          "towers should be built quickly",
+          "blocks always fall down"
+        ],
+        "id": [
+          "bagian bawah yang lebar membuat menara kuat",
+          "menara harus dibangun cepat-cepat",
+          "balok selalu roboh"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Engineers make tall buildings stable with a wide, strong base.",
+        "id": "Insinyur membuat bangunan tinggi stabil dengan alas yang lebar dan kuat."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Counting rows of 4, 3, 2 and 1 makes 10 altogether.",
+        "id": "Menghitung baris 4, 3, 2, dan 1 hasilnya 10."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What do you do when something you build falls down?",
+      "id": "Apa yang kamu lakukan jika bangunanmu roboh?"
+    },
+    {
+      "en": "Where have you seen a building with a wide bottom?",
+      "id": "Di mana kamu pernah melihat bangunan dengan bagian bawah yang lebar?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Build two towers with blocks or empty boxes: one only one block wide, and one with a wide bottom. Gently tap the table next to each one. Which tower stays up? Count the blocks in each.",
+    "id": "Bangun dua menara dari balok atau kotak bekas: satu hanya selebar satu balok, satu lagi dengan bagian bawah lebar. Ketuk meja pelan di samping masing-masing. Menara mana yang tetap berdiri? Hitung baloknya."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Use light blocks or empty boxes and keep towers below your child's head height so nothing heavy falls on them.",
+      "id": "Gunakan balok ringan atau kotak kosong dan buat menara lebih rendah dari kepala anak supaya tidak ada benda berat yang jatuh menimpanya."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.0",
+    "reviewedHash": "48ac956eb3d0eb87"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

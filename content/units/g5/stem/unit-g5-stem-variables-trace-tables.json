@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-stem-variables-trace-tables",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "level": "g5",
   "framework": "stem",
   "strand": "programming",
@@ -147,33 +147,33 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "set score to 5; change score by 3; change score by -2. What is score at the end?",
-        "id": "atur skor menjadi 5; ubah skor sebesar 3; ubah skor sebesar -2. Berapa skor di akhir?"
+        "en": "set score to 7; change score by 4; change score by -3. What is score at the end?",
+        "id": "atur skor menjadi 7; ubah skor sebesar 4; ubah skor sebesar -3. Berapa skor di akhir?"
       },
       "choices": {
         "en": [
-          "6",
-          "10",
-          "-2"
+          "8",
+          "14",
+          "-3"
         ],
         "id": [
-          "6",
-          "10",
-          "-2"
+          "8",
+          "14",
+          "-3"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Trace: 5, then 5 + 3 = 8, then 8 - 2 = 6.",
-        "id": "Telusuri: 5, lalu 5 + 3 = 8, lalu 8 - 2 = 6."
+        "en": "Trace: 7, then 7 + 4 = 11, then 11 - 3 = 8.",
+        "id": "Telusuri: 7, lalu 7 + 4 = 11, lalu 11 - 3 = 8."
       },
       "distractorMisconceptions": {
         "1": "IGNORES_NEGATIVE_CHANGE",
         "2": "KEEPS_LAST_CHANGE"
       },
       "check": {
-        "expression": "5 + 3 - 2",
-        "result": "6"
+        "expression": "7 + 4 - 3",
+        "result": "8"
       }
     },
     {
@@ -431,7 +431,7 @@
   "rights": "original",
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -439,7 +439,12 @@
       "misconception-map",
       "bilingual-parity",
       "safety"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.2",
+    "reviewedHash": "383868d9ff7f5ccb"
   },
   "provenance": {
     "origin": "ai_drafted",

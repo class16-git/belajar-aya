@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-montessori-bce-ce-timeline-reckoning",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "level": "g5",
   "framework": "montessori",
   "strand": "history",
@@ -159,33 +159,33 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "How many years from 800 BCE to 200 BCE?",
-        "id": "Berapa tahun dari 800 SM ke 200 SM?"
+        "en": "How many years from 950 BCE to 300 BCE?",
+        "id": "Berapa tahun dari 950 SM ke 300 SM?"
       },
       "choices": {
         "en": [
-          "600 years",
-          "1,000 years",
-          "999 years"
+          "650 years",
+          "1,250 years",
+          "649 years"
         ],
         "id": [
-          "600 tahun",
-          "1.000 tahun",
-          "999 tahun"
+          "650 tahun",
+          "1.250 tahun",
+          "649 tahun"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Both dates are BCE, so subtract: 800 − 200 = 600.",
-        "id": "Kedua tanggal SM, jadi kurangkan: 800 − 200 = 600."
+        "en": "Both dates are BCE, so subtract: 950 − 300 = 650. No year-0 adjustment is needed within one era.",
+        "id": "Kedua tanggal SM, jadi kurangkan: 950 − 300 = 650. Tidak perlu penyesuaian tahun 0 dalam satu era."
       },
       "check": {
-        "expression": "800 - 200",
-        "result": "600"
+        "expression": "950 - 300",
+        "result": "650"
       },
       "distractorMisconceptions": {
         "1": "ADDS_WITHIN_ERA",
-        "2": "ADDS_WITHIN_ERA"
+        "2": "MINUS_ONE_OVERUSED"
       }
     },
     {
@@ -418,7 +418,7 @@
   "reviewFlags": [
     "year_zero_convention_check"
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -426,7 +426,12 @@
       "misconception-map",
       "bilingual-parity",
       "safety"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedHash": "f072cbde708b28fc",
+    "reviewedVersion": "1.0.2"
   },
   "provenance": {
     "origin": "ai_drafted",

@@ -1,0 +1,255 @@
+{
+  "id": "reading-age4_5-lala-sorts-the-rubbish",
+  "version": "1.0.0",
+  "level": "age4_5",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Lala sorts the rubbish",
+    "id": "Lala memilah sampah"
+  },
+  "text": {
+    "en": [
+      "After lunch, Lala helps Nenek tidy the kitchen. There is a pile of things to throw away.",
+      "Banana peels and vegetable scraps go in the green bucket. They will become compost for the garden.",
+      "Paper and old boxes go in the brown box. They can be made into new paper.",
+      "Clean plastic bottles go in the yellow bag. Nenek will take them to the bank sampah.",
+      "Only a little is left for the bin. 'Good sorting, Lala!' says Nenek. 'Our garden and our town will thank you.'"
+    ],
+    "id": [
+      "Setelah makan siang, Lala membantu Nenek merapikan dapur. Ada setumpuk barang yang mau dibuang.",
+      "Kulit pisang dan sisa sayur masuk ke ember hijau. Nanti semuanya menjadi kompos untuk kebun.",
+      "Kertas dan kardus bekas masuk ke kotak cokelat. Semuanya bisa dibuat menjadi kertas baru.",
+      "Botol plastik yang bersih masuk ke kantong kuning. Nenek akan membawanya ke bank sampah.",
+      "Hanya sedikit yang tersisa untuk tempat sampah. 'Pintar memilahnya, Lala!' kata Nenek. 'Kebun dan kota kita berterima kasih.'"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Point to the pile and ask, 'What shall we do with all this?'",
+      "id": "Tunjuk tumpukan dan tanya, 'Mau kita apakan semua ini?'"
+    },
+    {
+      "en": "Pretend to drop a peel into a bucket: plop!",
+      "id": "Pura-pura menjatuhkan kulit pisang ke ember: plung!"
+    },
+    {
+      "en": "Pretend to fold a box flat and slide it in.",
+      "id": "Pura-pura melipat kardus dan memasukkannya."
+    },
+    {
+      "en": "Pretend to squash a bottle and pop it in the bag.",
+      "id": "Pura-pura memipihkan botol dan memasukkannya ke kantong."
+    },
+    {
+      "en": "Hold up a small pinch for 'only a little', then clap.",
+      "id": "Tunjukkan sejumput kecil untuk 'hanya sedikit', lalu bertepuk tangan."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a girl and her grandmother by a pile of rubbish",
+      "id": "Kartu 1: anak perempuan dan neneknya di dekat tumpukan sampah"
+    },
+    {
+      "en": "Card 2: banana peels going into a green bucket",
+      "id": "Kartu 2: kulit pisang masuk ke ember hijau"
+    },
+    {
+      "en": "Card 3: paper and boxes in a brown box",
+      "id": "Kartu 3: kertas dan kardus di kotak cokelat"
+    },
+    {
+      "en": "Card 4: bottles in a yellow bag",
+      "id": "Kartu 4: botol di kantong kuning"
+    },
+    {
+      "en": "Card 5: a nearly empty bin and a smiling girl",
+      "id": "Kartu 5: tempat sampah yang hampir kosong dan anak yang tersenyum"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Sorts household waste into groups and names what each group becomes.",
+      "id": "Memilah sampah rumah tangga ke dalam kelompok dan menyebut akan menjadi apa setiap kelompok."
+    },
+    {
+      "en": "Understands that sorting means less rubbish is thrown away.",
+      "id": "Memahami bahwa memilah membuat sampah yang dibuang lebih sedikit."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "compost",
+        "id": "kompos"
+      },
+      "meaning": {
+        "en": "soil food made from rotted plant scraps",
+        "id": "pupuk dari sisa tanaman yang membusuk"
+      }
+    },
+    {
+      "word": {
+        "en": "sort",
+        "id": "memilah"
+      },
+      "meaning": {
+        "en": "put things into groups that belong together",
+        "id": "mengelompokkan barang yang sejenis"
+      }
+    },
+    {
+      "word": {
+        "en": "scraps",
+        "id": "sisa"
+      },
+      "meaning": {
+        "en": "small leftover pieces",
+        "id": "potongan kecil yang tersisa"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where did the banana peels go?",
+        "id": "Ke mana kulit pisang dimasukkan?"
+      },
+      "choices": {
+        "en": [
+          "the green bucket",
+          "the brown box",
+          "the yellow bag"
+        ],
+        "id": [
+          "ember hijau",
+          "kotak cokelat",
+          "kantong kuning"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "What can old paper be made into?",
+        "id": "Kertas bekas bisa dibuat menjadi apa?"
+      },
+      "choices": {
+        "en": [
+          "new paper",
+          "compost for fish",
+          "plastic bottles"
+        ],
+        "id": [
+          "kertas baru",
+          "kompos untuk ikan",
+          "botol plastik"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why was only a little left for the bin?",
+        "id": "Mengapa hanya sedikit yang tersisa untuk tempat sampah?"
+      },
+      "choices": {
+        "en": [
+          "most things were sorted to be used again",
+          "Lala ate most of it",
+          "the wind blew it away"
+        ],
+        "id": [
+          "sebagian besar sudah dipilah untuk dipakai lagi",
+          "Lala memakan sebagian besar",
+          "angin menerbangkannya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Composting and recycling mean less rubbish goes to the landfill.",
+        "id": "Membuat kompos dan mendaur ulang membuat sampah yang dibuang ke TPA lebih sedikit."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Sorting into groups by a rule is an early maths skill.",
+        "id": "Mengelompokkan menurut aturan adalah keterampilan matematika awal."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What could we put in a compost bucket at our house?",
+      "id": "Apa yang bisa kita masukkan ke ember kompos di rumah?"
+    },
+    {
+      "en": "Why did Nenek want the bottles to be clean?",
+      "id": "Mengapa Nenek ingin botolnya bersih?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Set out three baskets with a picture on each: paper, plastic and food scraps. Give your child clean, dry items to sort, such as a newspaper, an empty clean bottle and a cardboard box. The adult handles any real food waste.",
+    "id": "Siapkan tiga keranjang yang masing-masing diberi gambar: kertas, plastik, dan sisa makanan. Beri anak barang yang bersih dan kering untuk dipilah, seperti koran, botol kosong yang bersih, dan kardus. Orang dewasa yang memegang sisa makanan sungguhan."
+  },
+  "factChecks": [
+    {
+      "claim": "Fruit and vegetable scraps can be made into compost.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Paper and many plastic bottles can be recycled.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Bank sampah are community waste banks in Indonesia that collect sorted recyclables.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Use only clean, dry items for the game: no glass, cans or anything with sharp edges. Wash hands after sorting.",
+      "id": "Gunakan hanya barang yang bersih dan kering: tanpa kaca, kaleng, atau benda bertepi tajam. Cuci tangan setelah memilah."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.0",
+    "reviewedHash": "f9cc1d46e91e73f5"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

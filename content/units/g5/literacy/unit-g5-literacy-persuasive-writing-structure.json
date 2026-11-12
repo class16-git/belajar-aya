@@ -361,7 +361,7 @@
   "rights": "original",
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -370,7 +370,12 @@
       "misconception-map",
       "safety",
       "age-fit"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-11",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "2a8f645732391e26"
   },
   "provenance": {
     "origin": "ai_drafted",

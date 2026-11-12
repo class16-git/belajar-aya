@@ -199,14 +199,19 @@
   "safetyNotes": [],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
       "bilingual-parity",
       "readability",
       "question-answerability"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-11",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "3b52edd77b287dee"
   },
   "provenance": {
     "origin": "ai_drafted",

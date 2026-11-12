@@ -1,0 +1,487 @@
+{
+  "id": "unit-g5-math-average",
+  "version": "1.0.1",
+  "level": "g5",
+  "framework": "math",
+  "strand": "data",
+  "title": {
+    "en": "Average (mean)",
+    "id": "Rata-rata"
+  },
+  "prerequisites": [
+    "unit-g4-math-long-multiplication",
+    "unit-g3-math-multiplication-division-bar-models",
+    "unit-g4-math-decimals-tenths-hundredths"
+  ],
+  "objective": {
+    "en": "Understand the average as the equal share when a total is levelled out, calculate it as total ÷ number of items, find a total from an average, and find a missing value or the effect of a new value.",
+    "id": "Memahami rata-rata sebagai bagian yang sama ketika jumlah diratakan, menghitungnya sebagai jumlah ÷ banyak data, menentukan jumlah dari rata-rata, serta menentukan nilai yang hilang atau pengaruh nilai baru."
+  },
+  "rationale": {
+    "en": "Levelling towers of blocks or pouring water into equal glasses shows what an average is before any formula. Working backwards from an average (average × number = total) is where most errors happen in Singapore P5 problems, so it is practised with bar models.",
+    "id": "Meratakan menara balok atau menuang air ke gelas yang sama menunjukkan apa itu rata-rata sebelum rumus apa pun. Menghitung mundur dari rata-rata (rata-rata × banyak data = jumlah) adalah tempat kesalahan paling sering terjadi pada soal kelas 5, jadi dilatih dengan model batang."
+  },
+  "outcomes": [
+    {
+      "en": "Explains the average as levelling out.",
+      "id": "Menjelaskan rata-rata sebagai meratakan."
+    },
+    {
+      "en": "Calculates an average as total ÷ number of items, including zero values.",
+      "id": "Menghitung rata-rata sebagai jumlah ÷ banyak data, termasuk nilai nol."
+    },
+    {
+      "en": "Uses average × number = total to find totals and missing values.",
+      "id": "Memakai rata-rata × banyak data = jumlah untuk mencari jumlah dan nilai yang hilang."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can level three towers of blocks and say the average height.",
+      "id": "Aku bisa meratakan tiga menara balok dan menyebut tinggi rata-ratanya."
+    },
+    {
+      "en": "I can find a missing value when I know the average.",
+      "id": "Aku bisa mencari nilai yang hilang jika rata-ratanya diketahui."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use data from the household: rainfall, daily water drunk, plant heights, warung sales. Do not compare children's scores or marks.",
+      "id": "Pakai data dari rumah tangga: curah hujan, air yang diminum per hari, tinggi tanaman, penjualan warung. Jangan membandingkan nilai atau skor anak."
+    },
+    {
+      "en": "Before every calculation ask: 'Will the average be between the smallest and the largest value?'",
+      "id": "Sebelum setiap hitungan tanyakan: 'Apakah rata-ratanya akan di antara nilai terkecil dan terbesar?'"
+    },
+    {
+      "en": "Draw bars for each value and a dotted line at the average so the 'extra' above the line fills the 'gaps' below it.",
+      "id": "Gambar batang untuk setiap nilai dan garis putus-putus di rata-rata sehingga 'kelebihan' di atas garis mengisi 'kekurangan' di bawahnya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Add all the values, then divide by how many values there are.",
+      "id": "Jumlahkan semua nilai, lalu bagi dengan banyak nilainya."
+    },
+    {
+      "en": "Working backwards? Average × how many = total.",
+      "id": "Menghitung mundur? Rata-rata × banyak data = jumlah."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build three towers of building blocks 3, 7 and 5 blocks high. Move blocks from the tallest to the shortest until all towers are equal: each is 5 blocks. The average is 5.",
+        "id": "Susun tiga menara balok setinggi 3, 7, dan 5 balok. Pindahkan balok dari menara tertinggi ke terpendek sampai semua sama: masing-masing 5 balok. Rata-ratanya 5."
+      },
+      {
+        "en": "Pour water into four identical glasses to different heights, then pour between them until they are level; measure one glass.",
+        "id": "Tuang air ke empat gelas yang sama dengan ketinggian berbeda, lalu tuang antar gelas sampai sama rata; ukur satu gelas."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a bar graph of four days of pisang goreng sales: 42, 35, 50 and 41. Draw a dotted line at 42 and shade how the extra above the line fills the gaps below.",
+        "id": "Gambar diagram batang penjualan pisang goreng empat hari: 42, 35, 50, dan 41. Gambar garis putus-putus di 42 dan arsir bagaimana kelebihan di atas garis mengisi kekurangan di bawahnya."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write average = total ÷ number of items and total = average × number of items, and use them in both directions.",
+        "id": "Tulis rata-rata = jumlah ÷ banyak data dan jumlah = rata-rata × banyak data, lalu pakai ke dua arah."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 20 building blocks of the same size",
+      "id": "Sekitar 20 balok mainan yang sama ukurannya"
+    },
+    {
+      "en": "Four identical clear plastic glasses, a jug of water, a ruler",
+      "id": "Empat gelas plastik bening yang sama, seteko air, penggaris"
+    },
+    {
+      "en": "Squared paper for bar graphs, a calculator for checking only",
+      "id": "Kertas berpetak untuk diagram batang, kalkulator hanya untuk memeriksa"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Collect a week of real household data (for example millilitres of water drunk each day) to use in practice.",
+      "id": "Kumpulkan data rumah tangga sungguhan selama seminggu (misalnya mililiter air yang diminum setiap hari) untuk latihan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Towers of 3, 7 and 5 blocks: the total is 15 blocks shared among 3 towers, 15 ÷ 3 = 5.",
+      "id": "Menara 3, 7, dan 5 balok: jumlahnya 15 balok dibagi ke 3 menara, 15 ÷ 3 = 5."
+    },
+    {
+      "en": "Bu Ani's warung sold 42, 35, 50 and 41 pisang goreng on four days. Total 168, and 168 ÷ 4 = 42 a day on average.",
+      "id": "Warung Bu Ani menjual 42, 35, 50, dan 41 pisang goreng dalam empat hari. Jumlahnya 168, dan 168 ÷ 4 = 42 per hari rata-ratanya."
+    },
+    {
+      "en": "Total from an average: a family drinks an average of 1.5 l of water a day for 6 days. Total = 1.5 × 6 = 9 l.",
+      "id": "Jumlah dari rata-rata: sebuah keluarga minum rata-rata 1,5 l air per hari selama 6 hari. Jumlah = 1,5 × 6 = 9 l."
+    },
+    {
+      "en": "Missing value: three chilli plants have an average height of 12 cm. Two are 10 cm and 15 cm. Total must be 3 × 12 = 36 cm, so the third is 36 - 10 - 15 = 11 cm.",
+      "id": "Nilai yang hilang: tiga tanaman cabai tingginya rata-rata 12 cm. Dua di antaranya 10 cm dan 15 cm. Jumlahnya harus 3 × 12 = 36 cm, jadi yang ketiga 36 - 10 - 15 = 11 cm."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Use the week of household data: find the daily average and mark it as a line on a bar graph.",
+      "id": "Pakai data rumah tangga seminggu: cari rata-rata harian dan tandai sebagai garis pada diagram batang."
+    },
+    {
+      "en": "Weigh five pieces of fruit, find their average mass, and say whether any piece is far from the average.",
+      "id": "Timbang lima buah, cari massa rata-ratanya, dan sebutkan apakah ada buah yang jauh dari rata-rata."
+    },
+    {
+      "en": "Make up a set of four numbers with an average of 20 where no number is 20, and explain how you chose them.",
+      "id": "Buat empat bilangan dengan rata-rata 20 yang tidak satu pun 20, dan jelaskan cara memilihnya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Rain fell on 5 days: 12 mm, 0 mm, 8 mm, 15 mm and 10 mm. What was the average daily rainfall?",
+        "id": "Hujan turun selama 5 hari: 12 mm, 0 mm, 8 mm, 15 mm, dan 10 mm. Berapa rata-rata curah hujan per hari?"
+      },
+      "choices": {
+        "en": [
+          "9 mm",
+          "11.25 mm",
+          "45 mm"
+        ],
+        "id": [
+          "9 mm",
+          "11,25 mm",
+          "45 mm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Total 12 + 0 + 8 + 15 + 10 = 45 mm over 5 days (the dry day counts), so 45 ÷ 5 = 9 mm.",
+        "id": "Jumlah 12 + 0 + 8 + 15 + 10 = 45 mm selama 5 hari (hari kering tetap dihitung), jadi 45 ÷ 5 = 9 mm."
+      },
+      "check": {
+        "expression": "(12 + 0 + 8 + 15 + 10) / 5",
+        "result": "9"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_ZERO_VALUE",
+        "2": "GIVES_TOTAL"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "The average mass of 4 watermelons is 3.5 kg. What is their total mass?",
+        "id": "Massa rata-rata 4 semangka adalah 3,5 kg. Berapa massa totalnya?"
+      },
+      "choices": {
+        "en": [
+          "14 kg",
+          "0.875 kg",
+          "7.5 kg"
+        ],
+        "id": [
+          "14 kg",
+          "0,875 kg",
+          "7,5 kg"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Total = average × number = 3.5 × 4 = 14 kg.",
+        "id": "Jumlah = rata-rata × banyak = 3,5 × 4 = 14 kg."
+      },
+      "check": {
+        "expression": "3.5 * 4",
+        "result": "14"
+      },
+      "distractorMisconceptions": {
+        "1": "DIVIDES_INSTEAD",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "The average of three numbers is 20. Two of the numbers are 18 and 25. What is the third number?",
+        "id": "Rata-rata tiga bilangan adalah 20. Dua bilangan itu 18 dan 25. Berapa bilangan ketiga?"
+      },
+      "choices": {
+        "en": [
+          "17",
+          "20",
+          "21.5"
+        ],
+        "id": [
+          "17",
+          "20",
+          "21,5"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The total must be 3 × 20 = 60. 60 - 18 - 25 = 17.",
+        "id": "Jumlahnya harus 3 × 20 = 60. 60 - 18 - 25 = 17."
+      },
+      "check": {
+        "expression": "3 * 20 - 18 - 25",
+        "result": "17"
+      },
+      "distractorMisconceptions": {
+        "1": "MISSING_VALUE_EQUALS_AVERAGE",
+        "2": "AVERAGES_KNOWN_VALUES"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A stall sold an average of 30 glasses of es kelapa a day for 4 days. On the 5th day it sold 45 glasses. What is the new average for the 5 days?",
+        "id": "Sebuah kios menjual rata-rata 30 gelas es kelapa per hari selama 4 hari. Pada hari ke-5 terjual 45 gelas. Berapa rata-rata baru untuk 5 hari?"
+      },
+      "choices": {
+        "en": [
+          "33 glasses",
+          "37.5 glasses",
+          "15 glasses"
+        ],
+        "id": [
+          "33 gelas",
+          "37,5 gelas",
+          "15 gelas"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Total for 4 days: 4 × 30 = 120. Add day 5: 120 + 45 = 165. New average: 165 ÷ 5 = 33.",
+        "id": "Jumlah 4 hari: 4 × 30 = 120. Tambah hari ke-5: 120 + 45 = 165. Rata-rata baru: 165 ÷ 5 = 33."
+      },
+      "check": {
+        "expression": "(4 * 30 + 45) / 5",
+        "result": "33"
+      },
+      "distractorMisconceptions": {
+        "1": "AVERAGES_THE_AVERAGES",
+        "2": "USES_AVERAGE_AS_TOTAL"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Four glasses hold 150 ml, 220 ml, 180 ml and 250 ml of water. If the water is poured so that every glass has the same amount, how much will each glass hold?",
+        "id": "Empat gelas berisi 150 ml, 220 ml, 180 ml, dan 250 ml air. Jika airnya dituang sehingga setiap gelas berisi sama banyak, berapa isi setiap gelas?"
+      },
+      "choices": {
+        "en": [
+          "200 ml",
+          "800 ml",
+          "100 ml"
+        ],
+        "id": [
+          "200 ml",
+          "800 ml",
+          "100 ml"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Total 150 + 220 + 180 + 250 = 800 ml, shared among 4 glasses: 800 ÷ 4 = 200 ml.",
+        "id": "Jumlah 150 + 220 + 180 + 250 = 800 ml, dibagi ke 4 gelas: 800 ÷ 4 = 200 ml."
+      },
+      "check": {
+        "expression": "(150 + 220 + 180 + 250) / 4",
+        "result": "200"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_TOTAL",
+        "2": "USES_RANGE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "IGNORES_ZERO_VALUE",
+      "description": {
+        "en": "Leaves a zero value out of the count of items.",
+        "id": "Tidak menghitung nilai nol sebagai data."
+      },
+      "remediation": {
+        "en": "Draw an empty bar for the dry day on the bar graph and level the bars again; the empty bar still needs its share.",
+        "id": "Gambar batang kosong untuk hari kering pada diagram dan ratakan lagi; batang kosong tetap mendapat bagian."
+      }
+    },
+    {
+      "code": "GIVES_TOTAL",
+      "description": {
+        "en": "Gives the total instead of dividing it among the items.",
+        "id": "Memberi jumlah, bukan membaginya ke setiap data."
+      },
+      "remediation": {
+        "en": "Ask: 'Is this how much one day or one glass gets?' Check the answer lies between the smallest and the largest value.",
+        "id": "Tanyakan: 'Apakah ini bagian satu hari atau satu gelas?' Periksa apakah jawabannya di antara nilai terkecil dan terbesar."
+      }
+    },
+    {
+      "code": "DIVIDES_INSTEAD",
+      "description": {
+        "en": "Divides the average by the number of items when a total is asked for.",
+        "id": "Membagi rata-rata dengan banyak data ketika yang ditanya jumlah."
+      },
+      "remediation": {
+        "en": "Draw 4 equal bars of 3.5 kg and ask what all four bars weigh together.",
+        "id": "Gambar 4 batang sama masing-masing 3,5 kg dan tanyakan berapa berat keempatnya bersama."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the average and the number of items.",
+        "id": "Menjumlahkan rata-rata dan banyak data."
+      },
+      "remediation": {
+        "en": "Say the meaning: an average of 3.5 kg means each of the 4 watermelons counts as 3.5 kg, so it is 4 groups of 3.5.",
+        "id": "Ucapkan artinya: rata-rata 3,5 kg berarti setiap semangka dari 4 semangka dihitung 3,5 kg, jadi 4 kelompok berisi 3,5."
+      }
+    },
+    {
+      "code": "MISSING_VALUE_EQUALS_AVERAGE",
+      "description": {
+        "en": "Assumes the missing value must equal the average.",
+        "id": "Mengira nilai yang hilang pasti sama dengan rata-rata."
+      },
+      "remediation": {
+        "en": "Draw towers of 18 and 25 squares on squared paper with a line at 20: the 5 squares above the line on the 25 tower must fill the 2 missing under 20 on the 18 tower and the gap in a third tower, so the third tower is shorter than 20.",
+        "id": "Gambar menara 18 dan 25 kotak di kertas berpetak dengan garis di 20: 5 kotak di atas garis pada menara 25 harus mengisi 2 kotak yang kurang pada menara 18 dan kekurangan menara ketiga, jadi menara ketiga lebih pendek dari 20."
+      }
+    },
+    {
+      "code": "AVERAGES_KNOWN_VALUES",
+      "description": {
+        "en": "Finds the average of the known values and gives that as the missing value.",
+        "id": "Mencari rata-rata nilai yang diketahui dan memberikannya sebagai nilai yang hilang."
+      },
+      "remediation": {
+        "en": "Write the total needed (3 × 20) in a bar model and subtract the known parts.",
+        "id": "Tulis jumlah yang dibutuhkan (3 × 20) di model batang dan kurangkan bagian yang diketahui."
+      }
+    },
+    {
+      "code": "AVERAGES_THE_AVERAGES",
+      "description": {
+        "en": "Averages the old average and the new value as if they had equal weight.",
+        "id": "Merata-ratakan rata-rata lama dan nilai baru seolah-olah bobotnya sama."
+      },
+      "remediation": {
+        "en": "Draw 4 bars of 30 and 1 bar of 45; the 45 is shared among 5 bars, not 2.",
+        "id": "Gambar 4 batang 30 dan 1 batang 45; kelebihan 45 dibagi ke 5 batang, bukan 2."
+      }
+    },
+    {
+      "code": "USES_AVERAGE_AS_TOTAL",
+      "description": {
+        "en": "Adds the average to the new value as if the average were the total so far.",
+        "id": "Menjumlahkan rata-rata dengan nilai baru seolah-olah rata-rata adalah jumlah sejauh ini."
+      },
+      "remediation": {
+        "en": "First rebuild the total from the average (4 × 30), then add the new value.",
+        "id": "Bangun dulu jumlah dari rata-rata (4 × 30), lalu tambahkan nilai baru."
+      }
+    },
+    {
+      "code": "USES_RANGE",
+      "description": {
+        "en": "Subtracts the smallest from the largest value instead of finding the average.",
+        "id": "Mengurangkan nilai terkecil dari nilai terbesar, bukan mencari rata-rata."
+      },
+      "remediation": {
+        "en": "Pour the four glasses until level and measure; compare with the difference between the fullest and emptiest glass.",
+        "id": "Tuang keempat gelas sampai rata lalu ukur; bandingkan dengan selisih gelas terpenuh dan terkosong."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Explain why the average number of people in a family can be 4.5 even though nobody has half a person; find another real average that is not a whole number.",
+      "id": "Jelaskan mengapa rata-rata banyak anggota keluarga bisa 4,5 walaupun tidak ada setengah orang; cari rata-rata nyata lain yang bukan bilangan bulat."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Block towers and water glasses let children see and feel levelling; a calculator may be used for the division so the focus stays on the reasoning.",
+      "id": "Menara balok dan gelas air membuat anak melihat dan merasakan perataan; kalkulator boleh dipakai untuk pembagian agar fokus tetap pada penalaran."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": true,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Pour water over a tray and wipe spills at once; use plastic glasses.",
+        "id": "Tuang air di atas nampan dan segera lap tumpahan; pakai gelas plastik."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child finds one new average (with a zero value), one total from an average and one missing value, explaining each with levelling or a bar model, on two different days.",
+      "id": "Dikuasai jika anak menemukan satu rata-rata baru (dengan nilai nol), satu jumlah dari rata-rata, dan satu nilai yang hilang, menjelaskan masing-masing dengan perataan atau model batang, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "4d316c6e798bd0ce"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

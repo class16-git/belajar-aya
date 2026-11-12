@@ -1,0 +1,390 @@
+{
+  "id": "unit-k-stem-if-red-then-hop",
+  "version": "1.0.1",
+  "level": "k",
+  "framework": "stem",
+  "strand": "algorithms",
+  "title": {
+    "en": "If red, then hop! A rule game",
+    "id": "Kalau merah, lompat! Permainan aturan"
+  },
+  "prerequisites": [
+    "unit-age4_5-stem-robot-grownup-commands"
+  ],
+  "objective": {
+    "en": "Follow an 'if … then …' rule with coloured cards, do nothing when the rule does not match, and invent and test a new rule for someone else.",
+    "id": "Mengikuti aturan 'kalau … maka …' dengan kartu berwarna, tidak melakukan apa-apa saat aturan tidak cocok, serta membuat dan menguji aturan baru untuk orang lain."
+  },
+  "rationale": {
+    "en": "Programs make choices with conditions: if something is true, do this. Children already know rules like 'if it rains, take an umbrella'. A movement game makes the condition visible: the card is checked first, and the action happens only when the rule matches.",
+    "id": "Program membuat pilihan dengan syarat: kalau sesuatu benar, lakukan ini. Anak sudah tahu aturan seperti 'kalau hujan, bawa payung'. Permainan gerak membuat syarat itu terlihat: kartu diperiksa dulu, dan gerakan hanya dilakukan saat aturannya cocok."
+  },
+  "outcomes": [
+    {
+      "en": "Checks the card before moving and hops only when the rule matches.",
+      "id": "Memeriksa kartu sebelum bergerak dan hanya melompat saat aturannya cocok."
+    },
+    {
+      "en": "Makes up a clear 'if … then …' rule and tests it with a family member.",
+      "id": "Membuat aturan 'kalau … maka …' yang jelas dan mengujinya dengan anggota keluarga."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I look at the card first, then I decide.",
+      "id": "Aku lihat kartunya dulu, lalu aku putuskan."
+    },
+    {
+      "en": "I can make my own if-then rule.",
+      "id": "Aku bisa membuat aturan kalau-maka sendiri."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Show the rule card and read it together: 'If the card is red, then hop.' Explain: 'If it is not red, stand still like a statue.'",
+      "id": "Tunjukkan kartu aturan dan bacakan bersama: 'Kalau kartunya merah, maka lompat.' Jelaskan: 'Kalau bukan merah, diam seperti patung.'"
+    },
+    {
+      "en": "Hold up one colour card at a time, slowly. Before your child moves, ask 'Does the rule match?' The thinking pause matters more than speed.",
+      "id": "Angkat satu kartu warna sekali, pelan-pelan. Sebelum anak bergerak, tanya 'Aturannya cocok?' Jeda berpikir lebih penting daripada kecepatan."
+    },
+    {
+      "en": "Play with two rules on the floor: 'If red, then hop. If blue, then clap.' Any other colour: statue.",
+      "id": "Main dengan dua aturan di lantai: 'Kalau merah, maka lompat. Kalau biru, maka tepuk.' Warna lain: patung."
+    },
+    {
+      "en": "Let your child invent a rule and be the card holder. Follow it exactly, and let them check whether you did it right.",
+      "id": "Biarkan anak membuat aturan dan menjadi pemegang kartu. Ikuti aturannya dengan tepat, dan biarkan anak memeriksa apakah kamu benar."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Look at the card.",
+      "id": "Lihat kartunya."
+    },
+    {
+      "en": "If it matches the rule, do the action. If not, stand still.",
+      "id": "Kalau cocok dengan aturan, lakukan gerakannya. Kalau tidak, diam."
+    },
+    {
+      "en": "Make your own rule and play it with your family.",
+      "id": "Buat aturanmu sendiri dan mainkan bersama keluarga."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Eight colour cards: three red, two blue, two yellow, one green (coloured paper or card)",
+      "id": "Delapan kartu warna: tiga merah, dua biru, dua kuning, satu hijau (kertas atau karton berwarna)"
+    },
+    {
+      "en": "Two rule cards drawn on paper: a red square, an arrow, and a hopping stick figure; a blue square, an arrow, and clapping hands",
+      "id": "Dua kartu aturan yang digambar di kertas: kotak merah, panah, dan orang lidi yang melompat; kotak biru, panah, dan tangan bertepuk"
+    },
+    {
+      "en": "Blank paper and crayons for new rule cards",
+      "id": "Kertas kosong dan krayon untuk kartu aturan baru"
+    },
+    {
+      "en": "Clear floor space",
+      "id": "Lantai yang lapang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Colour or cut the cards from coloured paper; the adult does any cutting. Draw the two rule cards and lay them where everyone can see.",
+      "id": "Warnai atau potong kartu dari kertas berwarna; orang dewasa yang memotong. Gambar dua kartu aturan dan letakkan di tempat yang terlihat semua orang."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "One rule: 'If red, then hop.' Show red: Fikri looks, says 'red, match!' and hops once. Show yellow: 'Not red, statue.' He stands still. Show red again: hop. That was red, yellow, red: 2 hops.",
+      "id": "Satu aturan: 'Kalau merah, maka lompat.' Tunjukkan merah: Fikri melihat, berkata 'merah, cocok!' dan melompat sekali. Tunjukkan kuning: 'Bukan merah, patung.' Ia diam. Tunjukkan merah lagi: lompat. Tadi merah, kuning, merah: 2 kali lompat."
+    },
+    {
+      "en": "The tricky card: show green quickly after two reds. Fikri starts to hop, then stops. Talk about it: 'Your body wanted to keep hopping. A rule makes us check every single card.'",
+      "id": "Kartu yang menjebak: tunjukkan hijau dengan cepat setelah dua merah. Fikri mulai melompat, lalu berhenti. Bicarakan: 'Tubuhmu ingin terus melompat. Aturan membuat kita memeriksa setiap kartu.'"
+    },
+    {
+      "en": "Two rules: red means hop and blue means clap. Show blue: clap. Show yellow: no rule matches, so statue. Point to each rule card as you check it.",
+      "id": "Dua aturan: merah berarti lompat dan biru berarti tepuk. Tunjukkan biru: tepuk. Tunjukkan kuning: tidak ada aturan yang cocok, jadi patung. Tunjuk setiap kartu aturan saat memeriksanya."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Play the two-rule game with a shuffled pile of all eight cards. Take turns being the card holder.",
+      "id": "Mainkan permainan dua aturan dengan tumpukan kedelapan kartu yang sudah diacak. Bergantian menjadi pemegang kartu."
+    },
+    {
+      "en": "Draw your own rule card, for example 'If yellow, then touch your nose.' Test it with a family member: did they follow it?",
+      "id": "Gambar kartu aturanmu sendiri, misalnya 'Kalau kuning, maka sentuh hidung.' Uji dengan anggota keluarga: apakah mereka mengikutinya?"
+    },
+    {
+      "en": "Fix a confusing rule: 'If red or maybe blue, then jump a bit.' Make it clearer so everyone does the same thing.",
+      "id": "Perbaiki aturan yang membingungkan: 'Kalau merah atau mungkin biru, maka lompat sedikit.' Buat lebih jelas agar semua orang melakukan hal yang sama."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "The rule is 'If yellow, then touch your nose.' The card is red. What do you do?",
+        "id": "Aturannya 'Kalau kuning, maka sentuh hidung.' Kartunya merah. Apa yang kamu lakukan?"
+      },
+      "choices": {
+        "en": [
+          "Stand still",
+          "Touch your nose"
+        ],
+        "id": [
+          "Diam",
+          "Sentuh hidung"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Red is not yellow, so the rule does not match.",
+        "id": "Merah bukan kuning, jadi aturannya tidak cocok."
+      },
+      "distractorMisconceptions": {
+        "1": "ACTS_WITHOUT_CHECKING"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "The rule is 'If red, then hop once.' The cards are red, blue, red, red. How many hops?",
+        "id": "Aturannya 'Kalau merah, maka lompat sekali.' Kartunya merah, biru, merah, merah. Berapa kali lompat?"
+      },
+      "choices": {
+        "en": [
+          "3 hops",
+          "4 hops",
+          "1 hop"
+        ],
+        "id": [
+          "3 kali lompat",
+          "4 kali lompat",
+          "1 kali lompat"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Only the three red cards match: 1 + 1 + 1 = 3.",
+        "id": "Hanya tiga kartu merah yang cocok: 1 + 1 + 1 = 3."
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_EVERY_CARD",
+        "2": "STOPS_AFTER_FIRST_MATCH"
+      },
+      "check": {
+        "expression": "1 + 1 + 1",
+        "result": "3"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Rules: 'If red, then hop. If blue, then clap.' The card is blue. What do you do?",
+        "id": "Aturan: 'Kalau merah, maka lompat. Kalau biru, maka tepuk.' Kartunya biru. Apa yang kamu lakukan?"
+      },
+      "choices": {
+        "en": [
+          "Clap",
+          "Hop",
+          "Hop and clap"
+        ],
+        "id": [
+          "Tepuk",
+          "Lompat",
+          "Lompat dan tepuk"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Blue matches only the clap rule.",
+        "id": "Biru hanya cocok dengan aturan tepuk."
+      },
+      "distractorMisconceptions": {
+        "1": "USES_FIRST_RULE_ALWAYS",
+        "2": "DOES_ALL_ACTIONS"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Which rule is clear enough for everyone to do the same thing?",
+        "id": "Aturan mana yang cukup jelas sehingga semua orang melakukan hal yang sama?"
+      },
+      "choices": {
+        "en": [
+          "If green, then touch your toes",
+          "If it looks nice, then do something fun"
+        ],
+        "id": [
+          "Kalau hijau, maka sentuh jari kaki",
+          "Kalau kelihatannya bagus, maka lakukan sesuatu yang seru"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A clear rule names one thing to check and one action.",
+        "id": "Aturan yang jelas menyebut satu hal untuk diperiksa dan satu gerakan."
+      },
+      "distractorMisconceptions": {
+        "1": "VAGUE_RULE_OK"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ACTS_WITHOUT_CHECKING",
+      "description": {
+        "en": "Does the action whatever the card says.",
+        "id": "Melakukan gerakan apa pun kartunya."
+      },
+      "remediation": {
+        "en": "Add a 'look' step: the child must say the colour aloud and point to the rule card before moving.",
+        "id": "Tambahkan langkah 'lihat': anak harus menyebut warnanya dan menunjuk kartu aturan sebelum bergerak."
+      }
+    },
+    {
+      "code": "COUNTS_EVERY_CARD",
+      "description": {
+        "en": "Counts all the cards instead of only the ones that match.",
+        "id": "Menghitung semua kartu, bukan hanya yang cocok."
+      },
+      "remediation": {
+        "en": "Lay the cards in a row and put a hop token (a folded paper) only on the red ones, then count the tokens.",
+        "id": "Jajarkan kartu dan taruh tanda lompat (kertas terlipat) hanya pada kartu merah, lalu hitung tandanya."
+      }
+    },
+    {
+      "code": "STOPS_AFTER_FIRST_MATCH",
+      "description": {
+        "en": "Thinks the rule is used only once.",
+        "id": "Mengira aturan hanya dipakai sekali."
+      },
+      "remediation": {
+        "en": "Play a round where every card is red and hop for each one, saying 'check again!' between cards.",
+        "id": "Mainkan satu putaran yang semua kartunya merah dan lompat untuk masing-masing, sambil berkata 'periksa lagi!' di antara kartu."
+      }
+    },
+    {
+      "code": "USES_FIRST_RULE_ALWAYS",
+      "description": {
+        "en": "Always uses the first rule, whatever the card.",
+        "id": "Selalu memakai aturan pertama, apa pun kartunya."
+      },
+      "remediation": {
+        "en": "Put a matching colour square on each rule card and slide the shown card next to each rule until the colours match.",
+        "id": "Tempel kotak warna yang sesuai di setiap kartu aturan dan geser kartu yang ditunjukkan ke samping setiap aturan sampai warnanya cocok."
+      }
+    },
+    {
+      "code": "DOES_ALL_ACTIONS",
+      "description": {
+        "en": "Does every action listed, not only the matching one.",
+        "id": "Melakukan semua gerakan yang tertulis, bukan hanya yang cocok."
+      },
+      "remediation": {
+        "en": "Cover the rule that does not match with a hand, then do only what is left uncovered.",
+        "id": "Tutup aturan yang tidak cocok dengan tangan, lalu lakukan hanya yang tidak tertutup."
+      }
+    },
+    {
+      "code": "VAGUE_RULE_OK",
+      "description": {
+        "en": "Thinks a rule can be vague and still work.",
+        "id": "Mengira aturan boleh samar-samar dan tetap berhasil."
+      },
+      "remediation": {
+        "en": "Ask two people to follow the vague rule at the same time and compare what they do.",
+        "id": "Minta dua orang mengikuti aturan yang samar secara bersamaan dan bandingkan apa yang mereka lakukan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add an 'otherwise' card: 'If red, then hop; otherwise, spin round slowly.' Now every card has an action.",
+      "id": "Tambahkan kartu 'kalau tidak': 'Kalau merah, maka lompat; kalau tidak, berputar pelan.' Sekarang setiap kartu punya gerakan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use shapes as well as colours for a child with colour-vision difficulty (red circle, blue square); a child who cannot hop can raise both arms instead.",
+      "id": "Pakai bentuk selain warna untuk anak yang sulit membedakan warna (lingkaran merah, kotak biru); anak yang tidak bisa melompat bisa mengangkat kedua tangan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Hop on a clear, non-slippery floor away from furniture and stairs, in bare feet or non-slip socks.",
+        "id": "Melompat di lantai lapang yang tidak licin, jauh dari perabot dan tangga, dengan kaki telanjang atau kaus kaki anti-selip."
+      },
+      {
+        "en": "The adult does any cutting of the coloured paper.",
+        "id": "Orang dewasa yang melakukan pemotongan kertas berwarna."
+      },
+      {
+        "en": "Spins are one slow turn; stop if your child feels dizzy.",
+        "id": "Berputar cukup satu putaran pelan; berhenti jika anak pusing."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child follows two rules correctly for a shuffled set of cards, stays still when no rule matches, and invents a clear rule, on two different days.",
+      "id": "Dikuasai jika anak mengikuti dua aturan dengan benar untuk kartu yang diacak, diam saat tidak ada aturan yang cocok, dan membuat aturan yang jelas, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "443c835a043bb4d0"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "id": "reading-age2_3-hello-sun-goodnight-sun",
+  "version": "1.0.1",
+  "level": "age2_3",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Hello, Sun! Goodnight, Sun!",
+    "id": "Halo, Matahari! Selamat Malam, Matahari!"
+  },
+  "text": {
+    "en": [
+      "Morning! The sun comes up. Hello, sun!",
+      "The sun is high and hot. Adik plays in the shade. Hat on!",
+      "The sun goes down, down, down. The sky turns orange.",
+      "Now it is dark. Goodnight, sun! See you in the morning."
+    ],
+    "id": [
+      "Pagi! Matahari terbit. Halo, matahari!",
+      "Matahari tinggi dan panas. Adik bermain di tempat teduh. Pakai topi!",
+      "Matahari turun, turun, turun. Langit menjadi jingga.",
+      "Sekarang sudah gelap. Selamat malam, matahari! Sampai jumpa besok pagi."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Stretch your arms up slowly like the rising sun.",
+      "id": "Rentangkan tangan pelan-pelan ke atas seperti matahari terbit."
+    },
+    {
+      "en": "Pat your child's head as if putting on a hat.",
+      "id": "Tepuk kepala anak seolah-olah memakaikan topi."
+    },
+    {
+      "en": "Lower your arms slowly, saying 'down, down, down'.",
+      "id": "Turunkan tangan pelan-pelan sambil berkata 'turun, turun, turun'."
+    },
+    {
+      "en": "Wave goodbye, then give a big pretend yawn.",
+      "id": "Lambaikan tangan, lalu pura-pura menguap lebar."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: the sun peeping over the hills",
+      "id": "Kartu 1: matahari mengintip di balik bukit"
+    },
+    {
+      "en": "Card 2: a child in a hat playing under a tree",
+      "id": "Kartu 2: anak bertopi bermain di bawah pohon"
+    },
+    {
+      "en": "Card 3: an orange sky with the sun low",
+      "id": "Kartu 3: langit jingga dengan matahari rendah"
+    },
+    {
+      "en": "Card 4: a dark sky over a sleeping house",
+      "id": "Kartu 4: langit gelap di atas rumah yang lampunya sudah padam"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a short story about the parts of a day and joins in with actions.",
+      "id": "Mendengarkan cerita pendek tentang bagian-bagian hari dan ikut bergerak."
+    },
+    {
+      "en": "Begins to link morning, midday and night with what the sky looks like.",
+      "id": "Mulai menghubungkan pagi, siang, dan malam dengan keadaan langit."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "shade",
+        "id": "tempat teduh"
+      },
+      "meaning": {
+        "en": "a cool place out of the sun",
+        "id": "tempat sejuk yang tidak terkena matahari"
+      }
+    },
+    {
+      "word": {
+        "en": "dark",
+        "id": "gelap"
+      },
+      "meaning": {
+        "en": "when there is no light",
+        "id": "saat tidak ada cahaya"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Adik put on?",
+        "id": "Apa yang dipakai Adik?"
+      },
+      "choices": {
+        "en": [
+          "a hat",
+          "boots",
+          "a scarf"
+        ],
+        "id": [
+          "topi",
+          "sepatu bot",
+          "syal"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happened after the sun was high?",
+        "id": "Apa yang terjadi setelah matahari tinggi?"
+      },
+      "choices": {
+        "en": [
+          "the sun went down and the sky turned orange",
+          "the sun came up",
+          "Adik woke up"
+        ],
+        "id": [
+          "matahari turun dan langit menjadi jingga",
+          "matahari terbit",
+          "Adik bangun tidur"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Adik play in the shade?",
+        "id": "Mengapa Adik bermain di tempat teduh?"
+      },
+      "choices": {
+        "en": [
+          "to stay cool away from the hot sun",
+          "because it was raining",
+          "because it was night"
+        ],
+        "id": [
+          "supaya tetap sejuk, jauh dari matahari yang panas",
+          "karena sedang hujan",
+          "karena sudah malam"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "astronomy",
+      "connection": {
+        "en": "Every day the sun seems to rise, cross the sky and set because the Earth turns.",
+        "id": "Setiap hari matahari tampak terbit, melintasi langit, lalu terbenam karena Bumi berputar."
+      }
+    },
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "A hat and shade protect us from the hot midday sun.",
+        "id": "Topi dan tempat teduh melindungi kita dari panas matahari siang."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What do we do when the sun comes up?",
+      "id": "Apa yang kita lakukan saat matahari terbit?"
+    },
+    {
+      "en": "What colour was the sky when the sun went down?",
+      "id": "Apa warna langit saat matahari terbenam?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "At the end of the day, stand by a window or outside with your child as the sky changes colour. Wave goodnight to the sun together. Never look straight at the sun.",
+    "id": "Di sore hari, berdirilah bersama anak di dekat jendela atau di luar saat warna langit berubah. Lambaikan tangan bersama untuk matahari. Jangan pernah menatap matahari langsung."
+  },
+  "factChecks": [
+    {
+      "claim": "The sun appears to rise and set each day because the Earth turns.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Never let your child look straight at the sun; it can hurt the eyes.",
+      "id": "Jangan biarkan anak menatap matahari langsung; itu bisa merusak mata."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "135d3c00307f8565"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

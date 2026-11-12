@@ -1,0 +1,421 @@
+{
+  "id": "unit-g4-montessori-food-chains-in-a-rice-field",
+  "version": "1.0.1",
+  "level": "g4",
+  "framework": "montessori",
+  "strand": "cosmic_education",
+  "title": {
+    "en": "Who eats whom: food chains in a rice field",
+    "id": "Siapa memakan siapa: rantai makanan di sawah"
+  },
+  "prerequisites": [
+    "unit-g1-montessori-what-animals-need",
+    "unit-g2-montessori-life-cycle-of-a-frog"
+  ],
+  "objective": {
+    "en": "Build food chains and a small food web from a rice-field community, with arrows pointing from the food to the eater, name the producers, consumers and decomposers, and predict what happens to the others when one living thing is removed.",
+    "id": "Menyusun rantai makanan dan jaring-jaring makanan kecil dari komunitas sawah, dengan panah dari makanan ke pemakannya, menyebut produsen, konsumen, dan pengurai, serta memperkirakan apa yang terjadi pada makhluk lain jika satu makhluk hidup dihilangkan."
+  },
+  "rationale": {
+    "en": "Cosmic education shows that every living thing has a job in the whole and depends on others. A rice field is a place many Indonesian children know, and its plants, insects, frogs, snakes, birds and soil life form a clear web. Following the arrows shows that energy from the sun passes from plant to animal, and that removing one link changes the others.",
+    "id": "Pendidikan kosmik menunjukkan bahwa setiap makhluk hidup punya tugas dalam keseluruhan dan saling bergantung. Sawah adalah tempat yang dikenal banyak anak Indonesia, dan tumbuhan, serangga, katak, ular, burung, serta makhluk di tanahnya membentuk jaring yang jelas. Mengikuti panah menunjukkan bahwa energi dari matahari berpindah dari tumbuhan ke hewan, dan bahwa menghilangkan satu mata rantai mengubah yang lain."
+  },
+  "outcomes": [
+    {
+      "en": "Builds a food chain of four or more links with arrows in the right direction.",
+      "id": "Menyusun rantai makanan berisi empat mata rantai atau lebih dengan arah panah yang benar."
+    },
+    {
+      "en": "Sorts cards into producers, consumers and decomposers, and explains each role.",
+      "id": "Memilah kartu menjadi produsen, konsumen, dan pengurai, serta menjelaskan setiap peran."
+    },
+    {
+      "en": "Predicts and explains one effect of removing a living thing from the web.",
+      "id": "Memperkirakan dan menjelaskan satu akibat dari hilangnya satu makhluk hidup dari jaring-jaring."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "The child builds two chains and joins them into a web without arrow mistakes.",
+      "id": "Anak menyusun dua rantai dan menggabungkannya menjadi jaring-jaring tanpa kesalahan arah panah."
+    },
+    {
+      "en": "The child gives a reasoned prediction for a removed link.",
+      "id": "Anak memberi perkiraan yang beralasan tentang mata rantai yang hilang."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Make picture cards: sun, rice plant, grass, brown planthopper (wereng), grasshopper, rice-field rat, frog, spider, rice-field snake, owl, egret, earthworm, mushrooms or mould (fungi). Draw them or cut them from old magazines.",
+      "id": "Buat kartu gambar: matahari, tanaman padi, rumput, wereng cokelat, belalang, tikus sawah, katak, laba-laba, ular sawah, burung hantu, kuntul, cacing tanah, jamur. Gambar sendiri atau gunting dari majalah bekas."
+    },
+    {
+      "en": "The arrow means \"is eaten by\" and shows where the energy goes: rice → planthopper means the planthopper eats the rice. This is the most common confusion, so say it every time.",
+      "id": "Panah berarti \"dimakan oleh\" dan menunjukkan ke mana energi berpindah: padi → wereng berarti wereng memakan padi. Ini kebingungan yang paling umum, jadi ucapkan setiap kali."
+    },
+    {
+      "en": "Accurate links to use: rice and grass are eaten by planthoppers, grasshoppers and rats; spiders and frogs eat insects; snakes eat frogs and rats; owls eat rats; egrets eat frogs and small fish; earthworms, fungi and bacteria break down dead plants and animals. Some farmers put up nest boxes so owls stay near the fields and help control rats. (Earthworms break dead matter into small pieces; fungi and bacteria finish the job. Many school books group them all as decomposers.)",
+      "id": "Hubungan yang akurat untuk dipakai: padi dan rumput dimakan wereng, belalang, dan tikus; laba-laba dan katak memakan serangga; ular memakan katak dan tikus; burung hantu memakan tikus; kuntul memakan katak dan ikan kecil; cacing tanah, jamur, dan bakteri menguraikan tumbuhan dan hewan yang mati. Sebagian petani memasang rumah burung agar burung hantu tinggal dekat sawah dan membantu mengendalikan tikus. (Cacing tanah memecah bahan mati menjadi potongan kecil; jamur dan bakteri menuntaskannya. Banyak buku sekolah mengelompokkan semuanya sebagai pengurai.)"
+    },
+    {
+      "en": "If you visit a rice field, keep to the raised paths (pematang) and look without catching anything.",
+      "id": "Jika mengunjungi sawah, tetap berjalan di pematang dan amati tanpa menangkap apa pun."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Start with the sun. Which living thing uses sunlight to make its own food? Put it next.",
+      "id": "Mulailah dengan matahari. Makhluk hidup mana yang memakai sinar matahari untuk membuat makanannya sendiri? Letakkan berikutnya."
+    },
+    {
+      "en": "Add an animal that eats it, then an animal that eats that animal. Put an arrow from the food to the eater each time.",
+      "id": "Tambahkan hewan yang memakannya, lalu hewan yang memakan hewan itu. Setiap kali, letakkan panah dari makanan ke pemakannya."
+    },
+    {
+      "en": "Join your chains into a web. Then take one card away and talk about what would happen.",
+      "id": "Gabungkan rantai-rantaimu menjadi jaring-jaring. Lalu ambil satu kartu dan bicarakan apa yang akan terjadi."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "12 picture cards of rice-field living things, plus a sun card",
+      "id": "12 kartu gambar makhluk hidup di sawah, ditambah kartu matahari"
+    },
+    {
+      "en": "Arrow cards cut from paper (about 20), and three heading cards: producer, consumer, decomposer",
+      "id": "Kartu panah dari kertas (sekitar 20), dan tiga kartu judul: produsen, konsumen, pengurai"
+    },
+    {
+      "en": "A large sheet of paper and coloured pencils for the final web",
+      "id": "Selembar kertas besar dan pensil warna untuk jaring-jaring akhir"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write on the back of each animal card what it eats, so the child can check links.",
+      "id": "Tulis di balik setiap kartu hewan apa yang dimakannya, agar anak bisa memeriksa hubungannya."
+    },
+    {
+      "en": "Clear a floor space or a large table for laying out the web.",
+      "id": "Siapkan tempat di lantai atau meja besar untuk menyusun jaring-jaring."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Lay down the sun, then the rice plant: \"The rice plant uses sunlight, air and water to make its own food. It is a producer.\" Put an arrow from the rice to the planthopper: \"The planthopper sucks juice from the rice. The arrow means: the rice is eaten by the planthopper.\"",
+      "id": "Letakkan matahari, lalu tanaman padi: \"Tanaman padi memakai sinar matahari, udara, dan air untuk membuat makanannya sendiri. Padi adalah produsen.\" Letakkan panah dari padi ke wereng: \"Wereng mengisap cairan padi. Panah ini berarti: padi dimakan oleh wereng.\""
+    },
+    {
+      "en": "Continue: planthopper → spider → frog → snake. \"The planthopper, spider, frog and snake are consumers: they eat other living things.\" Read the chain aloud, following the arrows.",
+      "id": "Lanjutkan: wereng → laba-laba → katak → ular. \"Wereng, laba-laba, katak, dan ular adalah konsumen: mereka memakan makhluk hidup lain.\" Baca rantai dengan suara keras, mengikuti panah."
+    },
+    {
+      "en": "Lay the earthworm and the fungi below the chain: \"When any of these die, earthworms, fungi and bacteria break them down and return their goodness to the soil, where the rice uses it. They are decomposers.\" Draw arrows from every card to them.",
+      "id": "Letakkan cacing tanah dan jamur di bawah rantai: \"Saat salah satu dari mereka mati, cacing tanah, jamur, dan bakteri menguraikannya dan mengembalikan zat-zatnya ke tanah, tempat padi memakainya. Mereka adalah pengurai.\" Gambar panah dari setiap kartu ke mereka."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Build a second chain from the cards: grass → grasshopper → frog → egret. Find a card that appears in both chains and join them into a web.",
+      "id": "Susun rantai kedua dari kartu: rumput → belalang → katak → kuntul. Temukan kartu yang muncul di kedua rantai dan gabungkan menjadi jaring-jaring."
+    },
+    {
+      "en": "Add the rat, the owl and the snake to the web, with every arrow you can find.",
+      "id": "Tambahkan tikus, burung hantu, dan ular ke jaring-jaring, dengan semua panah yang bisa kamu temukan."
+    },
+    {
+      "en": "Draw the final web on the large sheet, colouring producers green, consumers orange and decomposers brown.",
+      "id": "Gambar jaring-jaring akhir di kertas besar, warnai produsen hijau, konsumen oranye, dan pengurai cokelat."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "In a food chain, what does the arrow in \"leaf → caterpillar\" mean?",
+        "id": "Dalam rantai makanan, apa arti panah pada \"daun → ulat\"?"
+      },
+      "choices": {
+        "en": [
+          "The leaf is eaten by the caterpillar, so energy goes to the caterpillar",
+          "The leaf eats the caterpillar",
+          "The caterpillar lives next to the leaf"
+        ],
+        "id": [
+          "Daun dimakan oleh ulat, sehingga energi berpindah ke ulat",
+          "Daun memakan ulat",
+          "Ulat tinggal di samping daun"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Arrows point from the food to the eater: they show the direction the energy travels.",
+        "id": "Panah menunjuk dari makanan ke pemakannya: panah menunjukkan arah perpindahan energi."
+      },
+      "distractorMisconceptions": {
+        "1": "ARROW_MEANS_EATS",
+        "2": "ARROW_MEANS_LIVES_NEAR"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "In a pond: algae → tadpole → small fish → heron. Which one is the producer?",
+        "id": "Di kolam: ganggang → berudu → ikan kecil → cangak. Mana yang merupakan produsen?"
+      },
+      "choices": {
+        "en": [
+          "The algae",
+          "The heron",
+          "The small fish"
+        ],
+        "id": [
+          "Ganggang",
+          "Cangak",
+          "Ikan kecil"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Algae use sunlight to make their own food, like the rice plant does; the animals all eat something else.",
+        "id": "Ganggang memakai sinar matahari untuk membuat makanannya sendiri, seperti tanaman padi; hewan-hewannya semua memakan makhluk lain."
+      },
+      "distractorMisconceptions": {
+        "1": "TOP_OF_CHAIN_IS_PRODUCER",
+        "2": "ANY_WATER_LIVING_IS_PRODUCER"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "In a field web, rats are eaten by snakes and owls. If people caught all the snakes, what would most likely happen to the rats first?",
+        "id": "Dalam jaring-jaring di sawah, tikus dimakan ular dan burung hantu. Jika orang menangkap semua ular, apa yang paling mungkin terjadi pada tikus lebih dulu?"
+      },
+      "choices": {
+        "en": [
+          "There would be more rats, because fewer are eaten",
+          "There would be fewer rats, because snakes are gone too",
+          "Nothing would change for the rats"
+        ],
+        "id": [
+          "Tikus akan bertambah, karena lebih sedikit yang dimakan",
+          "Tikus akan berkurang, karena ular juga hilang",
+          "Tidak ada yang berubah bagi tikus"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "With one of their predators gone, more rats survive and breed, and the rice may suffer; owls alone eat fewer.",
+        "id": "Dengan hilangnya salah satu pemangsa, lebih banyak tikus bertahan dan berkembang biak, dan padi bisa rusak; burung hantu saja memakan lebih sedikit."
+      },
+      "distractorMisconceptions": {
+        "1": "REMOVAL_HARMS_ALL_ALIKE",
+        "2": "NO_INTERDEPENDENCE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A fallen banana leaf lies on the pematang. After a few weeks it is gone. What happened to it?",
+        "id": "Sehelai daun pisang jatuh di pematang. Setelah beberapa minggu daun itu hilang. Apa yang terjadi padanya?"
+      },
+      "choices": {
+        "en": [
+          "Fungi, bacteria and earthworms broke it down into the soil",
+          "The sun turned it into food for itself, like a plant does",
+          "Nothing used it; leaves just disappear"
+        ],
+        "id": [
+          "Jamur, bakteri, dan cacing tanah menguraikannya menjadi bagian dari tanah",
+          "Matahari mengubahnya menjadi makanan bagi dirinya, seperti tumbuhan",
+          "Tidak ada yang memakainya; daun memang hilang begitu saja"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Decomposers recycle dead material into nutrients that the plants use again.",
+        "id": "Pengurai mendaur ulang bahan yang mati menjadi zat hara yang dipakai lagi oleh tumbuhan."
+      },
+      "distractorMisconceptions": {
+        "1": "DECOMPOSER_IS_PRODUCER",
+        "2": "DECOMPOSERS_ARE_PESTS"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ARROW_MEANS_EATS",
+      "description": {
+        "en": "Reads the arrow as \"eats\", so the chain is backwards.",
+        "id": "Membaca panah sebagai \"memakan\", sehingga rantainya terbalik."
+      },
+      "remediation": {
+        "en": "Pass a real snack along a line of family members, each holding a card: the snack (energy) moves in the arrow's direction. Say \"is eaten by\" at every step.",
+        "id": "Oper camilan sungguhan di sepanjang barisan anggota keluarga, masing-masing memegang kartu: camilan (energi) berpindah searah panah. Ucapkan \"dimakan oleh\" di setiap langkah."
+      }
+    },
+    {
+      "code": "ARROW_MEANS_LIVES_NEAR",
+      "description": {
+        "en": "Thinks arrows show who lives near whom.",
+        "id": "Mengira panah menunjukkan siapa tinggal dekat siapa."
+      },
+      "remediation": {
+        "en": "Lay two cards side by side with no arrow (\"they live together\") and two with an arrow (\"one is food for the other\"), and sort pairs into the two kinds.",
+        "id": "Letakkan dua kartu berdampingan tanpa panah (\"mereka tinggal bersama\") dan dua dengan panah (\"yang satu makanan bagi yang lain\"), lalu pilah pasangan ke dua jenis itu."
+      }
+    },
+    {
+      "code": "TOP_OF_CHAIN_IS_PRODUCER",
+      "description": {
+        "en": "Thinks the biggest or last animal is the producer.",
+        "id": "Mengira hewan terbesar atau terakhir adalah produsen."
+      },
+      "remediation": {
+        "en": "Ask of each card, \"Does it make its own food from sunlight?\" Only green plants and algae get a sun sticker.",
+        "id": "Tanyakan untuk setiap kartu, \"Apakah ia membuat makanannya sendiri dari sinar matahari?\" Hanya tumbuhan hijau dan ganggang yang mendapat stiker matahari."
+      }
+    },
+    {
+      "code": "ANY_WATER_LIVING_IS_PRODUCER",
+      "description": {
+        "en": "Thinks anything living in water makes its own food.",
+        "id": "Mengira semua yang hidup di air membuat makanannya sendiri."
+      },
+      "remediation": {
+        "en": "Sort pond cards into \"green, uses sunlight\" and \"eats others\", and talk about what the fish was eating.",
+        "id": "Pilah kartu kolam menjadi \"hijau, memakai sinar matahari\" dan \"memakan makhluk lain\", lalu bicarakan apa yang dimakan ikan."
+      }
+    },
+    {
+      "code": "REMOVAL_HARMS_ALL_ALIKE",
+      "description": {
+        "en": "Thinks removing any animal makes all the others fewer.",
+        "id": "Mengira hilangnya satu hewan membuat semua yang lain berkurang."
+      },
+      "remediation": {
+        "en": "Act the web with string between family members holding cards. Remove the \"snake\" and ask each person whether they are now eaten more, or have less to eat.",
+        "id": "Peragakan jaring-jaring dengan tali di antara anggota keluarga yang memegang kartu. Singkirkan \"ular\" dan tanyakan kepada setiap orang apakah kini mereka lebih sedikit dimakan, atau lebih sedikit makanannya."
+      }
+    },
+    {
+      "code": "NO_INTERDEPENDENCE",
+      "description": {
+        "en": "Thinks living things do not affect each other.",
+        "id": "Mengira makhluk hidup tidak saling memengaruhi."
+      },
+      "remediation": {
+        "en": "Use the string web: when one person lets go of their strings, everyone feels the tug change. Talk about which links were connected.",
+        "id": "Pakai jaring-jaring tali: saat satu orang melepas talinya, semua merasakan tarikannya berubah. Bicarakan hubungan mana yang tersambung."
+      }
+    },
+    {
+      "code": "DECOMPOSER_IS_PRODUCER",
+      "description": {
+        "en": "Thinks fungi make their own food like plants.",
+        "id": "Mengira jamur membuat makanannya sendiri seperti tumbuhan."
+      },
+      "remediation": {
+        "en": "Look at mushrooms growing on a fallen log in shade: they are not green and grow in the dark on dead wood, feeding on it.",
+        "id": "Amati jamur yang tumbuh di batang kayu tumbang di tempat teduh: jamur tidak hijau dan tumbuh di tempat gelap di atas kayu mati, memakannya."
+      }
+    },
+    {
+      "code": "DECOMPOSERS_ARE_PESTS",
+      "description": {
+        "en": "Sees decomposers only as dirty or harmful.",
+        "id": "Menganggap pengurai hanya kotor atau merugikan."
+      },
+      "remediation": {
+        "en": "Start a small covered compost of fruit peels in a pot of soil and check it weekly as it turns to dark soil.",
+        "id": "Buat kompos kecil tertutup dari kulit buah di pot berisi tanah dan periksa setiap minggu saat berubah menjadi tanah gelap."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Find out why farmers worry about planthoppers, and how spiders and frogs help control them, from a school science book.",
+      "id": "Cari tahu dari buku IPA sekolah mengapa petani khawatir tentang wereng, dan bagaimana laba-laba dan katak membantu mengendalikannya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use large cards and thick arrows for a child with low vision; read the chain aloud together.",
+      "id": "Pakai kartu besar dan panah tebal untuk anak dengan penglihatan rendah; baca rantai bersama dengan suara keras."
+    },
+    {
+      "en": "A child who finds writing hard can photograph the finished web instead of drawing it.",
+      "id": "Anak yang kesulitan menulis boleh memotret jaring-jaring yang selesai alih-alih menggambarnya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "At a rice field, an adult stays beside the child on the raised paths. Watch for snakes and leeches, do not touch animals, wear a hat in strong sun, and wash hands with soap afterwards.",
+        "id": "Di sawah, orang dewasa tetap berada di samping anak di pematang. Waspadai ular dan lintah, jangan menyentuh hewan, pakai topi saat matahari terik, dan cuci tangan dengan sabun sesudahnya."
+      },
+      {
+        "en": "The adult cuts the cards with scissors; the compost pot stays covered and outdoors.",
+        "id": "Orang dewasa memotong kartu dengan gunting; pot kompos tetap tertutup dan diletakkan di luar."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 45
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      10,
+      30
+    ],
+    "masteryRule": {
+      "en": "Secure when the child builds a web with correct arrows, names each role, and explains a removal effect, on two different days.",
+      "id": "Dikuasai jika anak menyusun jaring-jaring dengan panah yang benar, menyebut setiap peran, dan menjelaskan akibat suatu kehilangan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "science_facts_check"
+  ],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "safety",
+      "age-fit",
+      "misconception-map"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "06cc813c60958ee1"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -28,7 +28,7 @@ export default async function ReviewPage({ searchParams }: { searchParams: Promi
   const locale = await currentLocale();
   const t = getDictionary(locale);
   const R = t.review;
-  const { units, readings } = expansionView();
+  const { units, readings } = await expansionView();
   const all = [...units, ...readings];
   const rows = await familyDecisions(auth.family.id);
   const latest = latestByItem(rows);

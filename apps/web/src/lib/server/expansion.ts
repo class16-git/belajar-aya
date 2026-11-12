@@ -1,5 +1,5 @@
 import 'server-only';
-import { getExpansion, isExpansionVisible, pipelineState, type PipelineState, type Reading, type Unit } from '@atlas/curriculum';
+import { findExpansionItem, getExpansion, isExpansionVisible, pipelineState, type PipelineState, type Reading, type Unit } from '@atlas/curriculum';
 import { config } from './config';
 
 /**
@@ -43,17 +43,20 @@ function entry<T extends Unit | Reading>(kind: ExpansionKind, item: T, errors: s
   };
 }
 
-export function expansionView() {
-  const { units, readings, errors } = getExpansion();
+/** Every level (browse and review pages). Content chunks are loaded on demand, per level, and cached. */
+export async function expansionView() {
+  const { units, readings, errors } = await getExpansion();
   return {
     units: units.map((u) => entry('unit', u, errors)),
     readings: readings.map((r) => entry('reading', r, errors)),
   };
 }
 
-export function findExpansion(id: string): ExpansionEntry | undefined {
-  const v = expansionView();
-  return [...v.units, ...v.readings].find((e) => e.item.id === id);
+/** One item: loads only its level's chunk. */
+export async function findExpansion(id: string): Promise<ExpansionEntry | undefined> {
+  const found = await findExpansionItem(id);
+  if (!found) return undefined;
+  return entry(found.item.id.startsWith('unit-') ? 'unit' : 'reading', found.item, found.errors);
 }
 
 /** Only items that passed every automated check and still await a person can receive a decision. */

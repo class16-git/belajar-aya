@@ -1,0 +1,478 @@
+{
+  "id": "unit-g6-stem-functions-return-values",
+  "version": "1.0.1",
+  "level": "g6",
+  "framework": "stem",
+  "strand": "programming",
+  "title": {
+    "en": "Functions that give back an answer",
+    "id": "Fungsi yang mengembalikan jawaban"
+  },
+  "prerequisites": [
+    "unit-g6-stem-functions-parameters",
+    "unit-g5-stem-variables-trace-tables",
+    "unit-g5-stem-data-logging-sun-bottles"
+  ],
+  "objective": {
+    "en": "Write and trace pseudocode functions that loop over a list and return a value (total, biggest, average), use a returned value inside another calculation, and find and fix a bug in a function's starting value.",
+    "id": "Menulis dan menelusuri fungsi pseudokode yang mengulang daftar dan mengembalikan sebuah nilai (jumlah, terbesar, rata-rata), memakai nilai yang dikembalikan di dalam hitungan lain, serta menemukan dan memperbaiki bug pada nilai awal sebuah fungsi."
+  },
+  "rationale": {
+    "en": "Earlier functions did something, such as drawing a square. Functions that return a value are different: they work something out and hand the answer back, so it can be stored or used again. Combining a loop, a variable and a return is the heart of processing real data, such as the temperature logs children collected in Grade 5.",
+    "id": "Fungsi sebelumnya melakukan sesuatu, seperti menggambar persegi. Fungsi yang mengembalikan nilai berbeda: fungsi itu menghitung sesuatu dan menyerahkan jawabannya kembali, sehingga bisa disimpan atau dipakai lagi. Menggabungkan perulangan, variabel, dan pengembalian nilai adalah inti dari mengolah data nyata, seperti catatan suhu yang dikumpulkan anak di kelas 5."
+  },
+  "outcomes": [
+    {
+      "en": "Traces total, biggest and average on new lists with a trace table and states the returned value.",
+      "id": "Menelusuri jumlah, terbesar, dan rata-rata pada daftar baru dengan tabel telusur dan menyebut nilai yang dikembalikan."
+    },
+    {
+      "en": "Uses one function's returned value inside another, and fixes a function whose starting value is wrong.",
+      "id": "Memakai nilai kembalian satu fungsi di dalam fungsi lain, dan memperbaiki fungsi yang nilai awalnya salah."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can trace a function and say what it returns.",
+      "id": "Aku bisa menelusuri fungsi dan menyebut apa yang dikembalikannya."
+    },
+    {
+      "en": "I can test a function with a tricky list to find bugs.",
+      "id": "Aku bisa menguji fungsi dengan daftar yang menjebak untuk menemukan bug."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Write the three functions on a card in plain pseudocode. Read 'return' aloud as 'hand the answer back to whoever called me'.",
+      "id": "Tulis ketiga fungsi di kartu dalam pseudokode sederhana. Bacakan 'kembalikan' sebagai 'serahkan jawabannya kepada yang memanggilku'."
+    },
+    {
+      "en": "For every trace, draw a table with one column per variable and one row per loop step. Your child fills it in before saying the answer.",
+      "id": "Untuk setiap penelusuran, gambar tabel dengan satu kolom untuk setiap variabel dan satu baris untuk setiap langkah perulangan. Anak mengisinya sebelum menyebut jawabannya."
+    },
+    {
+      "en": "Play 'function machine': one person is the function, receives a list on paper, works in secret, and passes back only the answer on a slip. The caller cannot see the working, only the returned value.",
+      "id": "Mainkan 'mesin fungsi': satu orang menjadi fungsi, menerima daftar di kertas, bekerja secara rahasia, dan hanya menyerahkan jawabannya di secarik kertas. Pemanggil tidak bisa melihat cara kerjanya, hanya nilai yang dikembalikan."
+    },
+    {
+      "en": "Encourage testing with awkward lists: a list of one item, a list where the biggest is first, a list of negative numbers.",
+      "id": "Dorong pengujian dengan daftar yang menyulitkan: daftar satu anggota, daftar yang terbesarnya di depan, daftar bilangan negatif."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Trace each function with a table: one row for each item in the list.",
+      "id": "Telusuri setiap fungsi dengan tabel: satu baris untuk setiap anggota daftar."
+    },
+    {
+      "en": "Write the returned value, then use it in the next calculation.",
+      "id": "Tulis nilai yang dikembalikan, lalu pakai dalam hitungan berikutnya."
+    },
+    {
+      "en": "Test with a tricky list. If the answer is wrong, find the line that causes it and fix it.",
+      "id": "Uji dengan daftar yang menjebak. Jika jawabannya salah, temukan baris penyebabnya dan perbaiki."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Play the function machine with lists on paper slips.",
+        "id": "Mainkan mesin fungsi dengan daftar di secarik kertas."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a trace table for each call, with a column for each variable.",
+        "id": "Gambar tabel telusur untuk setiap pemanggilan, dengan satu kolom untuk setiap variabel."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the pseudocode and calculate returned values, including average(list) = total(list) ÷ length(list).",
+        "id": "Tulis pseudokodenya dan hitung nilai yang dikembalikan, termasuk rata_rata(daftar) = jumlah(daftar) ÷ panjang(daftar)."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A function card with the three functions written out",
+      "id": "Kartu fungsi berisi tiga fungsi yang sudah ditulis"
+    },
+    {
+      "en": "Squared paper or a notebook for trace tables, and a pencil",
+      "id": "Kertas berpetak atau buku catatan untuk tabel telusur, dan pensil"
+    },
+    {
+      "en": "Paper slips for the function machine game",
+      "id": "Secarik kertas untuk permainan mesin fungsi"
+    },
+    {
+      "en": "Optional: the temperature log from the Grade 5 data-logging unit",
+      "id": "Pilihan: catatan suhu dari unit pencatatan data kelas 5"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write the card. total(list): sum ← 0; for each item in list: sum ← sum + item; return sum. biggest(list): best ← first item of list; for each item in list: if item is greater than best then best ← item; return best. average(list): return total(list) ÷ length(list).",
+      "id": "Tulis kartunya. jumlah(daftar): total ← 0; untuk setiap anggota di daftar: total ← total + anggota; kembalikan total. terbesar(daftar): terbaik ← anggota pertama daftar; untuk setiap anggota di daftar: jika anggota lebih besar dari terbaik maka terbaik ← anggota; kembalikan terbaik. rata_rata(daftar): kembalikan jumlah(daftar) ÷ panjang(daftar)."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Trace total([4, 7, 2]). Start: sum = 0. Item 4: sum = 4. Item 7: sum = 11. Item 2: sum = 13. The loop ends and the function returns 13. 'The 13 is handed back; the variable sum disappears when the function finishes.'",
+      "id": "Telusuri jumlah([4, 7, 2]). Awal: total = 0. Anggota 4: total = 4. Anggota 7: total = 11. Anggota 2: total = 13. Perulangan selesai dan fungsi mengembalikan 13. 'Angka 13 diserahkan kembali; variabel total hilang saat fungsi selesai.'"
+    },
+    {
+      "en": "Trace biggest([5, 12, 9]). best starts as the first item, 5. Item 5: not greater, best stays 5. Item 12: greater, best = 12. Item 9: not greater. Return 12.",
+      "id": "Telusuri terbesar([5, 12, 9]). terbaik dimulai dari anggota pertama, 5. Anggota 5: tidak lebih besar, terbaik tetap 5. Anggota 12: lebih besar, terbaik = 12. Anggota 9: tidak lebih besar. Kembalikan 12."
+    },
+    {
+      "en": "Functions calling functions: Reza's three 9 a.m. readings from his data log are [27, 29, 31]. average calls total, which returns 87, then divides by length 3: 87 ÷ 3 = 29. He stores it: morning ← average([27, 29, 31]), so morning = 29, and later prints morning + 2 to show what 2 degrees warmer would be: 31.",
+      "id": "Fungsi memanggil fungsi: tiga bacaan pukul 9 pagi dari catatan data Reza adalah [27, 29, 31]. rata_rata memanggil jumlah, yang mengembalikan 87, lalu membaginya dengan panjang 3: 87 ÷ 3 = 29. Ia menyimpannya: pagi ← rata_rata([27, 29, 31]), jadi pagi = 29, lalu mencetak pagi + 2 untuk menunjukkan suhu jika 2 derajat lebih hangat: 31."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Trace all three functions on the list [8, 3, 10, 6, 3] with full trace tables.",
+      "id": "Telusuri ketiga fungsi pada daftar [8, 3, 10, 6, 3] dengan tabel telusur lengkap."
+    },
+    {
+      "en": "Write a new function smallest(list) that returns the smallest item. Test it on a list where the smallest item is last, and on a list with only one item.",
+      "id": "Tulis fungsi baru terkecil(daftar) yang mengembalikan anggota terkecil. Uji pada daftar yang anggota terkecilnya di akhir, dan pada daftar yang hanya berisi satu anggota."
+    },
+    {
+      "en": "Write range(list) that returns biggest(list) − smallest(list), using your functions. Use it on a week of temperatures.",
+      "id": "Tulis jangkauan(daftar) yang mengembalikan terbesar(daftar) − terkecil(daftar), dengan memakai fungsi-fungsimu. Pakai pada suhu selama seminggu."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "What does total([3, 8, 5, 6]) return?",
+        "id": "Apa yang dikembalikan jumlah([3, 8, 5, 6])?"
+      },
+      "choices": {
+        "en": [
+          "22",
+          "6",
+          "8"
+        ],
+        "id": [
+          "22",
+          "6",
+          "8"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "sum goes 0, 3, 11, 16, 22, and 22 is returned.",
+        "id": "total berubah 0, 3, 11, 16, 22, dan 22 dikembalikan."
+      },
+      "distractorMisconceptions": {
+        "1": "RETURNS_LAST_ITEM",
+        "2": "RETURNS_BIGGEST"
+      },
+      "check": {
+        "expression": "3 + 8 + 5 + 6",
+        "result": "22"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "What does average([6, 9, 12, 5]) return?",
+        "id": "Apa yang dikembalikan rata_rata([6, 9, 12, 5])?"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "32",
+          "9"
+        ],
+        "id": [
+          "8",
+          "32",
+          "9"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "total returns 32, and 32 ÷ 4 = 8.",
+        "id": "jumlah mengembalikan 32, dan 32 ÷ 4 = 8."
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_TO_DIVIDE",
+        "2": "MIDDLE_ITEM_AS_AVERAGE"
+      },
+      "check": {
+        "expression": "(6 + 9 + 12 + 5) ÷ 4",
+        "result": "8"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "x ← biggest([3, 11, 6]) + 1. What is x?",
+        "id": "x ← terbesar([3, 11, 6]) + 1. Berapa x?"
+      },
+      "choices": {
+        "en": [
+          "12",
+          "4",
+          "11"
+        ],
+        "id": [
+          "12",
+          "4",
+          "11"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "biggest returns 11, which is then used in the calculation: 11 + 1 = 12.",
+        "id": "terbesar mengembalikan 11, lalu dipakai dalam hitungan: 11 + 1 = 12."
+      },
+      "distractorMisconceptions": {
+        "1": "APPLIES_TO_FIRST_ITEM",
+        "2": "IGNORES_REST_OF_LINE"
+      },
+      "check": {
+        "expression": "11 + 1",
+        "result": "12"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A buggy biggest starts with best ← 0 instead of the first item. For which list does it return a wrong answer?",
+        "id": "Fungsi terbesar yang ada bug-nya dimulai dengan terbaik ← 0, bukan anggota pertama. Untuk daftar mana fungsi itu mengembalikan jawaban yang salah?"
+      },
+      "choices": {
+        "en": [
+          "A list of temperatures below zero, such as minus 4, minus 2 and minus 7",
+          "A list of positive numbers such as 2, 9 and 4",
+          "A list whose biggest item comes first, such as 9, 2 and 4"
+        ],
+        "id": [
+          "Daftar suhu di bawah nol, seperti minus 4, minus 2, dan minus 7",
+          "Daftar bilangan positif seperti 2, 9, dan 4",
+          "Daftar yang anggota terbesarnya di depan, seperti 9, 2, dan 4"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "With all items below zero, none is greater than 0, so it wrongly returns 0 instead of minus 2. Starting from the first item fixes it.",
+        "id": "Jika semua anggota di bawah nol, tidak ada yang lebih besar dari 0, sehingga fungsi salah mengembalikan 0, bukan minus 2. Memulai dari anggota pertama memperbaikinya."
+      },
+      "distractorMisconceptions": {
+        "1": "TESTS_ONLY_EASY_CASES",
+        "2": "ORDER_CAUSES_BUG"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "What is the difference between a function that prints its answer and one that returns it?",
+        "id": "Apa bedanya fungsi yang mencetak jawabannya dan fungsi yang mengembalikannya?"
+      },
+      "choices": {
+        "en": [
+          "A returned value can be stored or used in another calculation; a printed one is only shown",
+          "There is no difference",
+          "Printing is faster, so it is always better"
+        ],
+        "id": [
+          "Nilai yang dikembalikan bisa disimpan atau dipakai dalam hitungan lain; yang dicetak hanya ditampilkan",
+          "Tidak ada bedanya",
+          "Mencetak lebih cepat, jadi selalu lebih baik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Only a returned value can be put into a variable, like morning ← average(readings).",
+        "id": "Hanya nilai yang dikembalikan yang bisa dimasukkan ke variabel, seperti pagi ← rata_rata(bacaan)."
+      },
+      "distractorMisconceptions": {
+        "1": "PRINT_EQUALS_RETURN",
+        "2": "PRINT_EQUALS_RETURN"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "RETURNS_LAST_ITEM",
+      "description": {
+        "en": "Gives the last item processed instead of the accumulated value.",
+        "id": "Menyebut anggota terakhir yang diproses, bukan nilai yang terkumpul."
+      },
+      "remediation": {
+        "en": "Keep a running total with counters in a cup: add each item's counters and never empty the cup, then count the cup at the end.",
+        "id": "Simpan jumlah berjalan dengan keping di gelas: tambahkan keping setiap anggota dan jangan pernah mengosongkan gelas, lalu hitung isi gelas di akhir."
+      }
+    },
+    {
+      "code": "RETURNS_BIGGEST",
+      "description": {
+        "en": "Confuses what total returns with what biggest returns.",
+        "id": "Tertukar antara yang dikembalikan jumlah dan yang dikembalikan terbesar."
+      },
+      "remediation": {
+        "en": "Read the return line of each function aloud and underline the variable it returns.",
+        "id": "Bacakan baris kembalikan dari setiap fungsi dan garis bawahi variabel yang dikembalikannya."
+      }
+    },
+    {
+      "code": "FORGETS_TO_DIVIDE",
+      "description": {
+        "en": "Returns the total instead of dividing by the length.",
+        "id": "Mengembalikan jumlah, bukan membaginya dengan panjang daftar."
+      },
+      "remediation": {
+        "en": "Share 32 counters equally into 4 cups and count one cup.",
+        "id": "Bagi 32 keping sama rata ke 4 gelas dan hitung satu gelas."
+      }
+    },
+    {
+      "code": "MIDDLE_ITEM_AS_AVERAGE",
+      "description": {
+        "en": "Picks a middle item of the list as the average.",
+        "id": "Memilih anggota di tengah daftar sebagai rata-rata."
+      },
+      "remediation": {
+        "en": "Build towers of 6, 9, 12 and 5 blocks and level them until all are the same height.",
+        "id": "Buat menara 6, 9, 12, dan 5 balok lalu ratakan sampai semuanya sama tinggi."
+      }
+    },
+    {
+      "code": "APPLIES_TO_FIRST_ITEM",
+      "description": {
+        "en": "Uses the first item of the list instead of the function's returned value.",
+        "id": "Memakai anggota pertama daftar, bukan nilai yang dikembalikan fungsi."
+      },
+      "remediation": {
+        "en": "Run the function machine: hand over the list, wait for the slip, and only then add 1 to the number on the slip.",
+        "id": "Mainkan mesin fungsi: serahkan daftarnya, tunggu kertas jawabannya, dan baru tambahkan 1 pada angka di kertas itu."
+      }
+    },
+    {
+      "code": "IGNORES_REST_OF_LINE",
+      "description": {
+        "en": "Stops after the function call and ignores the rest of the line.",
+        "id": "Berhenti setelah pemanggilan fungsi dan mengabaikan sisa barisnya."
+      },
+      "remediation": {
+        "en": "Cover the function call with the returned number on a sticky note, then read the whole line again: 11 + 1.",
+        "id": "Tutup pemanggilan fungsi dengan angka kembaliannya di kertas tempel, lalu baca lagi seluruh barisnya: 11 + 1."
+      }
+    },
+    {
+      "code": "TESTS_ONLY_EASY_CASES",
+      "description": {
+        "en": "Tests only ordinary lists, so a bug stays hidden.",
+        "id": "Hanya menguji daftar biasa, sehingga bug tetap tersembunyi."
+      },
+      "remediation": {
+        "en": "Make a test checklist: one item, biggest first, biggest last, all equal, all below zero. Run every one.",
+        "id": "Buat daftar uji: satu anggota, terbesar di depan, terbesar di akhir, semua sama, semua di bawah nol. Jalankan semuanya."
+      }
+    },
+    {
+      "code": "ORDER_CAUSES_BUG",
+      "description": {
+        "en": "Blames the order of the list for a bug caused by the starting value.",
+        "id": "Menyalahkan urutan daftar untuk bug yang disebabkan nilai awal."
+      },
+      "remediation": {
+        "en": "Trace the buggy function on 9, 2, 4: it returns 9 correctly, so order is not the problem. Then trace the below-zero list.",
+        "id": "Telusuri fungsi yang ada bug-nya pada 9, 2, 4: hasilnya 9 dengan benar, jadi urutannya bukan masalah. Lalu telusuri daftar di bawah nol."
+      }
+    },
+    {
+      "code": "PRINT_EQUALS_RETURN",
+      "description": {
+        "en": "Thinks printing and returning do the same job.",
+        "id": "Mengira mencetak dan mengembalikan melakukan pekerjaan yang sama."
+      },
+      "remediation": {
+        "en": "In the function machine, the function shouts the answer instead of passing a slip: the caller now has nothing to write into a variable.",
+        "id": "Dalam mesin fungsi, fungsi meneriakkan jawabannya alih-alih memberi kertas: pemanggil sekarang tidak punya apa-apa untuk ditulis ke variabel."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Write count_above(list, limit) that returns how many items are greater than limit. Use it on your temperature log to count the readings above 30 °C.",
+      "id": "Tulis hitung_di_atas(daftar, batas) yang mengembalikan berapa anggota yang lebih besar dari batas. Pakai pada catatan suhumu untuk menghitung bacaan di atas 30 °C."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Lists can be written on separate cards that a child moves through one by one; a partner can scribe the trace table while the child calls out each value.",
+      "id": "Daftar bisa ditulis di kartu terpisah yang dipindahkan anak satu per satu; teman bisa menuliskan tabel telusur sementara anak menyebutkan setiap nilai."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Paper-only activity; no special safety needs. Take short movement breaks between long traces.",
+        "id": "Kegiatan hanya dengan kertas; tidak ada kebutuhan keselamatan khusus. Beri jeda bergerak singkat di antara penelusuran yang panjang."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 50
+  },
+  "mastery": {
+    "evidence": "assessment",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child traces all three functions on new lists, uses a returned value correctly in another expression, and finds and fixes the starting-value bug with a test list.",
+      "id": "Dikuasai jika anak menelusuri ketiga fungsi pada daftar baru, memakai nilai kembalian dengan benar dalam ekspresi lain, serta menemukan dan memperbaiki bug nilai awal dengan daftar uji."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "8a12ee8bb8742823"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "id": "reading-g1-the-night-the-lights-went-out",
+  "version": "1.0.1",
+  "level": "g1",
+  "readingLevel": "early",
+  "genre": "fiction",
+  "mode": "shared",
+  "title": {
+    "en": "The night the lights went out",
+    "id": "Malam saat mati lampu"
+  },
+  "text": {
+    "en": [
+      "Click! Suddenly the whole house went dark. Even the fan stopped turning.",
+      "Sari held Mama's hand. 'I can't see anything!' Mama said softly, 'Let's wait a moment. Our eyes will get used to the dark.'",
+      "Slowly Sari began to see shapes: the table, the window, Mama's smile.",
+      "Papa found the torch in the drawer where it always lives. Click! A circle of light shone on the floor.",
+      "With no TV and no fan, the house was quiet. Sari could hear crickets and frogs outside.",
+      "They sat together on the step and sang songs. Then, click! The lights came back on. Sari was almost sorry."
+    ],
+    "id": [
+      "Klik! Tiba-tiba seluruh rumah gelap. Kipas angin pun berhenti berputar.",
+      "Sari memegang tangan Mama. 'Aku tidak bisa melihat apa-apa!' Mama berkata pelan, 'Kita tunggu sebentar. Mata kita akan terbiasa dengan gelap.'",
+      "Pelan-pelan Sari mulai melihat bentuk-bentuk: meja, jendela, senyum Mama.",
+      "Papa menemukan senter di laci, tempat senter selalu disimpan. Klik! Lingkaran cahaya menyinari lantai.",
+      "Tanpa TV dan kipas angin, rumah jadi sunyi. Sari bisa mendengar jangkrik dan katak di luar.",
+      "Mereka duduk bersama di tangga dan bernyanyi. Lalu, klik! Lampu menyala lagi. Sari malah sedikit kecewa."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a story and explains how the main character's feelings change.",
+      "id": "Membaca cerita dan menjelaskan bagaimana perasaan tokoh utama berubah."
+    },
+    {
+      "en": "Knows that our eyes slowly adjust to the dark and that a torch is safer than a candle.",
+      "id": "Tahu bahwa mata pelan-pelan menyesuaikan diri dengan gelap dan senter lebih aman daripada lilin."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "torch",
+        "id": "senter"
+      },
+      "meaning": {
+        "en": "a small lamp you hold in your hand",
+        "id": "lampu kecil yang dipegang tangan"
+      }
+    },
+    {
+      "word": {
+        "en": "get used to",
+        "id": "terbiasa"
+      },
+      "meaning": {
+        "en": "slowly become comfortable with something new",
+        "id": "pelan-pelan menjadi biasa dengan hal baru"
+      }
+    },
+    {
+      "word": {
+        "en": "cricket",
+        "id": "jangkrik"
+      },
+      "meaning": {
+        "en": "an insect that chirps at night",
+        "id": "serangga yang berbunyi di malam hari"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where did Papa find the torch?",
+        "id": "Di mana Papa menemukan senter?"
+      },
+      "choices": {
+        "en": [
+          "in the drawer where it is always kept",
+          "under Sari's bed",
+          "outside by the frogs"
+        ],
+        "id": [
+          "di laci tempat senter selalu disimpan",
+          "di bawah tempat tidur Sari",
+          "di luar dekat katak"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "What happened to Sari's eyes in the dark?",
+        "id": "Apa yang terjadi pada mata Sari dalam gelap?"
+      },
+      "choices": {
+        "en": [
+          "they slowly got used to the dark and saw shapes",
+          "they could see in total darkness straight away",
+          "they stopped working until the lights came back"
+        ],
+        "id": [
+          "pelan-pelan terbiasa dengan gelap dan melihat bentuk",
+          "langsung bisa melihat dalam gelap gulita",
+          "berhenti bekerja sampai lampu menyala"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did the family do after Papa found the torch?",
+        "id": "Apa yang dilakukan keluarga itu setelah Papa menemukan senter?"
+      },
+      "choices": {
+        "en": [
+          "they sat on the step and sang songs",
+          "they turned on the fan",
+          "they went to the shop"
+        ],
+        "id": [
+          "mereka duduk di tangga dan bernyanyi",
+          "mereka menyalakan kipas angin",
+          "mereka pergi ke toko"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why was Sari almost sorry when the lights came back?",
+        "id": "Mengapa Sari sedikit kecewa saat lampu menyala lagi?"
+      },
+      "choices": {
+        "en": [
+          "she had enjoyed the quiet time singing together",
+          "she was afraid of the light",
+          "she wanted to keep the torch"
+        ],
+        "id": [
+          "ia senang dengan waktu tenang bernyanyi bersama",
+          "ia takut pada cahaya",
+          "ia ingin menyimpan senter itu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Our eyes need a few minutes to adjust to the dark; they still need a little light to see.",
+        "id": "Mata butuh beberapa menit untuk menyesuaikan diri dengan gelap; mata tetap butuh sedikit cahaya untuk melihat."
+      }
+    },
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Keeping a torch in a known place makes a power cut safer.",
+        "id": "Menyimpan senter di tempat yang diketahui membuat mati lampu lebih aman."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "How did Sari feel at the start? How did she feel at the end?",
+      "id": "Bagaimana perasaan Sari di awal? Bagaimana di akhir?"
+    },
+    {
+      "en": "What sounds can you hear at night when the house is quiet?",
+      "id": "Suara apa yang bisa kamu dengar di malam hari saat rumah sunyi?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Choose one place at home for a 'lights-out' torch and show your child where it is. In the evening, turn off the lights for five minutes, sit together and list every sound you can hear.",
+    "id": "Pilih satu tempat di rumah untuk menyimpan senter 'mati lampu' dan tunjukkan kepada anak. Pada malam hari, matikan lampu selama lima menit, duduk bersama, dan sebutkan semua suara yang terdengar."
+  },
+  "factChecks": [
+    {
+      "claim": "Human eyes take several minutes to adjust to the dark but cannot see in total darkness.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Use a torch rather than candles during a power cut, and do not shine it into anyone's eyes.",
+      "id": "Pakai senter, bukan lilin, saat mati lampu, dan jangan menyorotkannya ke mata orang."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "f49a731fe76fd9fe"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

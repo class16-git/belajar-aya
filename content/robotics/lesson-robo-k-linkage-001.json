@@ -121,7 +121,7 @@
       "id": "Mekanisme penghubung mengubah satu gerakan menjadi gerakan lain, seperti pada lengan robot dan penjepit."
     }
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -129,7 +129,10 @@
       "hazard-keyword-consistency",
       "bilingual-parity",
       "tone"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-11"
   },
   "contentVersion": "1.1.0",
   "copyrightStatus": "original",

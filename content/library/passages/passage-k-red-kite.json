@@ -87,7 +87,7 @@
     }
   ],
   "copyrightStatus": "original",
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "answer-key-check",
@@ -96,6 +96,9 @@
       "original-text",
       "question-demand-check",
       "readability-estimate"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-11"
   }
 }

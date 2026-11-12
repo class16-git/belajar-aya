@@ -10,6 +10,7 @@ import { fmt, getDictionary, gradeLabel } from '@/lib/i18n';
 import { currentLocale, requireParentPage } from '@/lib/server/guards';
 import { buildProgress } from '@/lib/server/progress';
 import { readingSummary } from '@/lib/server/library';
+import { unitProgress } from '@/lib/server/child-units';
 
 export const metadata = { title: 'Progress' };
 export const dynamic = 'force-dynamic';
@@ -20,6 +21,7 @@ export default async function ChildDashboard({ params }: { params: Promise<{ chi
   const child = await prisma.childProfile.findFirst({ where: { id: childId, familyId: auth.family.id } });
   if (!child) notFound();
   const reading = await readingSummary(child.id);
+  const unitsDone = await unitProgress(child.id);
   const locale = await currentLocale();
   const t = getDictionary(locale);
   const p = await buildProgress(child);
@@ -75,6 +77,47 @@ export default async function ChildDashboard({ params }: { params: Promise<{ chi
           </ul>
         )}
         <p className="mt-2 text-sm muted">{t.library.progress.separate}</p>
+      </section>
+
+      <section className="card mt-6" aria-labelledby="unit-progress-h" data-testid="unit-progress">
+        <h2 id="unit-progress-h" className="h2">{t.unitProgress.title}</h2>
+        <p className="mt-1 text-sm muted">{t.unitProgress.intro}</p>
+        {unitsDone.length === 0 ? <p className="mt-2 muted">{t.unitProgress.none}</p> : (
+          <ul className="mt-3 divide-y divide-sand">
+            {unitsDone.map((u) => {
+              const day = (d: string) => new Intl.DateTimeFormat(locale === 'id' ? 'id-ID' : 'en-GB', { dateStyle: 'medium', timeZone: 'UTC' }).format(new Date(`${d}T00:00:00Z`));
+              return (
+                <li key={u.unitId} className="py-3" data-unit-progress={u.unitId} data-secure={u.secure ? 'true' : 'false'}>
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                    <span className="min-w-[12rem] flex-1 font-semibold">{u.unit?.title[locale] ?? t.unitProgress.unknownUnit}</span>
+                    <span className={`chip ${u.secure ? 'border-sage-dark bg-sage-light text-sage-dark' : 'border-sand bg-white text-bark'}`}>
+                      <span aria-hidden="true">{u.secure ? '✓' : '◐'}</span> {u.secure && u.secureOn ? fmt(t.unitProgress.secureSince, { date: day(u.secureOn) }) : t.unitProgress.building}
+                    </span>
+                    <span className="text-sm">{fmt(t.unitProgress.attempts, { n: u.attempts })}</span>
+                    <span className="text-sm">{fmt(t.unitProgress.best, { pct: Math.round(u.best * 100) })}</span>
+                    {u.secure && <span className="text-sm">{u.nextReviewAt ? fmt(t.unitProgress.nextReview, { date: day(u.nextReviewAt) }) : t.unitProgress.noReview}</span>}
+                  </div>
+                  {u.misconceptions.length > 0 && (
+                    <div className="mt-2">
+                      <p className="text-sm font-semibold">{t.unitProgress.misconceptions}</p>
+                      <ul className="mt-1 space-y-2">
+                        {u.misconceptions.map((m) => {
+                          const d = u.unit?.misconceptions.find((x) => x.code === m.code);
+                          return (
+                            <li key={m.code} className="rounded-xl bg-linen p-3 text-sm" data-unit-misconception={m.code}>
+                              <p className="font-semibold">{d?.description[locale] ?? m.code} <span className="font-normal muted">· {fmt(t.unitProgress.seen, { n: m.count })}</span></p>
+                              {d && <p className="mt-1">→ {d.remediation[locale]}</p>}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </section>
 
       {!p.gradeSupported ? (

@@ -1,0 +1,240 @@
+{
+  "id": "reading-age3_4-brush-little-teeth",
+  "version": "1.0.1",
+  "level": "age3_4",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Brush, brush, little teeth",
+    "id": "Sikat, sikat, gigi kecil"
+  },
+  "text": {
+    "en": [
+      "Rara has finished her dinner. Now it is time to brush her teeth.",
+      "Dad puts a tiny blob of toothpaste on the brush, as small as a pea.",
+      "Brush the top teeth. Swish, swish, swish!",
+      "Brush the bottom teeth. Swish, swish, swish! And the back teeth too.",
+      "Spit it out. Ptuh! Rara smiles in the mirror. Clean and shiny!"
+    ],
+    "id": [
+      "Rara sudah selesai makan malam. Sekarang waktunya menyikat gigi.",
+      "Ayah menaruh pasta gigi sedikit saja di sikat, sebesar kacang polong.",
+      "Sikat gigi atas. Srek, srek, srek!",
+      "Sikat gigi bawah. Srek, srek, srek! Gigi belakang juga.",
+      "Buang busanya. Ptuh! Rara tersenyum di depan cermin. Bersih dan berkilau!"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Rub your tummy and say 'mmm, dinner'.",
+      "id": "Usap perut dan berkata 'hmm, makan malam'."
+    },
+    {
+      "en": "Show the size of a pea with your finger and thumb.",
+      "id": "Tunjukkan ukuran kacang polong dengan jari telunjuk dan jempol."
+    },
+    {
+      "en": "Move a pretend brush over your top teeth.",
+      "id": "Gerakkan sikat pura-pura di gigi atas."
+    },
+    {
+      "en": "Move it over your bottom teeth, then open wide to show the back.",
+      "id": "Gerakkan di gigi bawah, lalu buka mulut lebar untuk menunjukkan gigi belakang."
+    },
+    {
+      "en": "Make a gentle 'ptuh' sound and give a big smile.",
+      "id": "Bersuara 'ptuh' pelan lalu tersenyum lebar."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a girl with an empty plate",
+      "id": "Kartu 1: anak perempuan dengan piring kosong"
+    },
+    {
+      "en": "Card 2: a toothbrush with a pea-sized dot of paste",
+      "id": "Kartu 2: sikat gigi dengan pasta sebesar kacang polong"
+    },
+    {
+      "en": "Card 3: the girl brushing her top teeth",
+      "id": "Kartu 3: anak menyikat gigi atas"
+    },
+    {
+      "en": "Card 4: the girl smiling in a mirror",
+      "id": "Kartu 4: anak tersenyum di depan cermin"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a story and sequences the steps of brushing teeth.",
+      "id": "Mendengarkan cerita dan mengurutkan langkah menyikat gigi."
+    },
+    {
+      "en": "Knows that toothpaste is used in a small amount and spat out.",
+      "id": "Tahu bahwa pasta gigi dipakai sedikit dan dibuang."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "toothpaste",
+        "id": "pasta gigi"
+      },
+      "meaning": {
+        "en": "a paste we put on a toothbrush to clean teeth",
+        "id": "pasta untuk membersihkan gigi"
+      }
+    },
+    {
+      "word": {
+        "en": "spit",
+        "id": "meludah"
+      },
+      "meaning": {
+        "en": "push something out of your mouth",
+        "id": "mengeluarkan busa atau air dari mulut"
+      }
+    },
+    {
+      "word": {
+        "en": "shiny",
+        "id": "berkilau"
+      },
+      "meaning": {
+        "en": "bright and clean",
+        "id": "terang dan bersih"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "How much toothpaste did Dad use?",
+        "id": "Berapa banyak pasta gigi yang dipakai Ayah?"
+      },
+      "choices": {
+        "en": [
+          "a tiny blob the size of a pea",
+          "the whole tube",
+          "a big spoonful"
+        ],
+        "id": [
+          "sedikit saja, sebesar kacang polong",
+          "satu tube penuh",
+          "satu sendok besar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Rara do after brushing?",
+        "id": "Apa yang Rara lakukan setelah menyikat gigi?"
+      },
+      "choices": {
+        "en": [
+          "spat it out",
+          "ate her dinner",
+          "put toothpaste on the brush"
+        ],
+        "id": [
+          "membuang busanya",
+          "makan malam",
+          "menaruh pasta gigi di sikat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why do we brush the back teeth too?",
+        "id": "Mengapa gigi belakang juga harus disikat?"
+      },
+      "choices": {
+        "en": [
+          "so every tooth gets clean",
+          "so the brush gets wet",
+          "because front teeth do not matter"
+        ],
+        "id": [
+          "supaya semua gigi bersih",
+          "supaya sikatnya basah",
+          "karena gigi depan tidak penting"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Brushing twice a day with a little fluoride toothpaste helps keep teeth healthy.",
+        "id": "Menyikat gigi dua kali sehari dengan sedikit pasta gigi berfluoride membantu menjaga gigi tetap sehat."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "When do you brush your teeth?",
+      "id": "Kapan kamu menyikat gigi?"
+    },
+    {
+      "en": "Can you show me how to brush the top teeth?",
+      "id": "Bisakah kamu tunjukkan cara menyikat gigi atas?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Brush teeth side by side tonight. The adult squeezes the toothpaste. Say 'top, bottom, back' as you go, then smile in the mirror together.",
+    "id": "Malam ini sikat gigi berdampingan. Orang dewasa yang menuang pasta gigi. Ucapkan 'atas, bawah, belakang' sambil menyikat, lalu tersenyum bersama di depan cermin."
+  },
+  "factChecks": [
+    {
+      "claim": "Children aged about 3 to 6 should use a pea-sized amount of fluoride toothpaste.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Brushing twice a day helps prevent tooth decay.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "An adult puts the toothpaste on and helps with brushing; young children should spit the toothpaste out, not swallow it.",
+      "id": "Orang dewasa yang menaruh pasta gigi dan membantu menyikat; anak kecil perlu membuang pasta giginya, bukan menelannya."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "6dcdd3a11283bec3"
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

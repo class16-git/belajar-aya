@@ -44,10 +44,14 @@ test('review queue: filters by kind, level and framework, pages 10 at a time, an
   expect(await page.locator('[data-testid="review-queue"] > li').count()).toBe(10);
   await page.getByTestId('review-pagination').getByRole('link', { name: /Next/ }).click();
   await expect(page.getByTestId('review-count')).toContainText('page 2 of');
-  await page.goto('/review?kind=units&level=g5&framework=math');
-  const ids = await page.locator('[data-testid="review-queue"] [data-review-id], [data-testid="review-queue"] li').evaluateAll((els) => els.map((e) => e.textContent ?? ''));
+  // Pick the filter from an item actually awaiting review (content approval state changes over time).
+  await page.goto('/review?kind=units');
+  const firstId = (await page.locator('[data-testid="review-queue"] [data-review-item]').first().getAttribute('data-review-item'))!;
+  const [, level, framework] = firstId.split('-');
+  await page.goto(`/review?kind=units&level=${level}&framework=${framework}`);
+  const ids = await page.locator('[data-testid="review-queue"] [data-review-item]').evaluateAll((els) => els.map((e) => e.getAttribute('data-review-item') ?? ''));
   expect(ids.length).toBeGreaterThan(0);
-  for (const txt of ids) expect(txt).toMatch(/unit-g5-math-/);
+  for (const id of ids) expect(id.startsWith(`unit-${level}-${framework}-`), id).toBe(true);
   await page.goto('/review?kind=islamic');
   const n = await page.locator('[data-testid="review-queue"] > li').count();
   expect(n).toBeGreaterThan(0);
