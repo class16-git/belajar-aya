@@ -1,0 +1,268 @@
+{
+  "id": "reading-g3-why-day-and-night",
+  "version": "1.0.0",
+  "level": "g3",
+  "readingLevel": "transitional",
+  "genre": "explanatory",
+  "mode": "independent",
+  "title": {
+    "en": "Why do we have day and night?",
+    "id": "Mengapa ada siang dan malam?"
+  },
+  "text": {
+    "en": [
+      "Every morning the sun seems to rise in the east. It climbs across the sky and sets in the west. It looks as if the sun is moving around us, but it is really the Earth that moves.",
+      "The Earth spins like a top. This spinning is called rotation. The Earth makes one full turn in about 24 hours, and that is one day.",
+      "The sun can only light up one half of the Earth at a time. The half facing the sun has day. The half facing away from the sun is dark, so it has night.",
+      "As the Earth turns, your town moves slowly into the sunlight. That is sunrise. Later, your town turns away from the sun. That is sunset.",
+      "When it is lunchtime in Jakarta, it is night-time for people on the other side of the world, in parts of South America.",
+      "Indonesia is so wide from west to east that it has three time zones: WIB, WITA and WIT. The Earth turns towards the east, so the sun rises in Papua before it rises in Sumatra.",
+      "Because Indonesia is close to the equator, day and night are each about 12 hours long all through the year."
+    ],
+    "id": [
+      "Setiap pagi matahari tampak terbit di timur. Ia naik melintasi langit lalu terbenam di barat. Seolah-olah mataharilah yang mengelilingi kita, padahal sebenarnya Bumi yang bergerak.",
+      "Bumi berputar seperti gasing. Putaran ini disebut rotasi. Bumi berputar satu kali penuh dalam kira-kira 24 jam, dan itulah satu hari.",
+      "Matahari hanya bisa menyinari separuh Bumi pada satu waktu. Separuh yang menghadap matahari mengalami siang. Separuh yang membelakangi matahari gelap, jadi mengalami malam.",
+      "Saat Bumi berputar, kotamu pelan-pelan bergerak masuk ke cahaya matahari. Itulah matahari terbit. Kemudian, kotamu berputar menjauh dari matahari. Itulah matahari terbenam.",
+      "Saat waktu makan siang di Jakarta, orang-orang di sisi lain dunia, di sebagian Amerika Selatan, sedang mengalami malam.",
+      "Indonesia sangat lebar dari barat ke timur sehingga punya tiga zona waktu: WIB, WITA, dan WIT. Bumi berputar ke arah timur, jadi matahari terbit di Papua lebih dulu daripada di Sumatra.",
+      "Karena Indonesia dekat dengan garis khatulistiwa, siang dan malam masing-masing lamanya sekitar 12 jam sepanjang tahun."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads an explanation and describes the cause of day and night.",
+      "id": "Membaca teks eksplanasi dan menjelaskan penyebab siang dan malam."
+    },
+    {
+      "en": "Connects Earth's rotation to Indonesia's three time zones.",
+      "id": "Menghubungkan rotasi Bumi dengan tiga zona waktu di Indonesia."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "rotation",
+        "id": "rotasi"
+      },
+      "meaning": {
+        "en": "spinning around a centre line",
+        "id": "berputar pada porosnya"
+      }
+    },
+    {
+      "word": {
+        "en": "time zone",
+        "id": "zona waktu"
+      },
+      "meaning": {
+        "en": "a region where everyone uses the same clock time",
+        "id": "wilayah yang memakai waktu jam yang sama"
+      }
+    },
+    {
+      "word": {
+        "en": "equator",
+        "id": "khatulistiwa"
+      },
+      "meaning": {
+        "en": "the imaginary line around the middle of the Earth",
+        "id": "garis khayal yang melingkari bagian tengah Bumi"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What causes day and night?",
+        "id": "Apa penyebab siang dan malam?"
+      },
+      "choices": {
+        "en": [
+          "the Earth spinning so each place faces towards or away from the sun",
+          "the sun going around the Earth every day",
+          "clouds covering the sun at night"
+        ],
+        "id": [
+          "Bumi berputar sehingga setiap tempat menghadap atau membelakangi matahari",
+          "matahari mengelilingi Bumi setiap hari",
+          "awan menutupi matahari di malam hari"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "About how long does the Earth take to turn once?",
+        "id": "Kira-kira berapa lama Bumi berputar satu kali?"
+      },
+      "choices": {
+        "en": [
+          "about 24 hours",
+          "about 12 hours",
+          "about one year"
+        ],
+        "id": [
+          "sekitar 24 jam",
+          "sekitar 12 jam",
+          "sekitar satu tahun"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why does the sun rise in Papua before it rises in Sumatra?",
+        "id": "Mengapa matahari terbit di Papua lebih dulu daripada di Sumatra?"
+      },
+      "choices": {
+        "en": [
+          "Papua is further east, so it turns into the sunlight first",
+          "Papua is closer to the sun",
+          "Papua has more mountains"
+        ],
+        "id": [
+          "Papua lebih ke timur, jadi lebih dulu berputar masuk ke cahaya matahari",
+          "Papua lebih dekat dengan matahari",
+          "Papua punya lebih banyak gunung"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "In a town, the sun rises at 06.00 and sets at 18.00. How many hours of daylight are there?",
+        "id": "Di sebuah kota, matahari terbit pukul 06.00 dan terbenam pukul 18.00. Berapa jam lamanya siang?"
+      },
+      "choices": {
+        "en": [
+          "12 hours",
+          "24 hours",
+          "6 hours"
+        ],
+        "id": [
+          "12 jam",
+          "24 jam",
+          "6 jam"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6,
+      "check": {
+        "expression": "18 - 6",
+        "result": "12"
+      }
+    },
+    {
+      "id": "q5",
+      "kind": "science",
+      "prompt": {
+        "en": "When it is day in Jakarta, what is happening on the opposite side of the Earth?",
+        "id": "Saat siang di Jakarta, apa yang terjadi di sisi Bumi yang berlawanan?"
+      },
+      "choices": {
+        "en": [
+          "it is night there",
+          "it is also midday there",
+          "the sun is setting everywhere"
+        ],
+        "id": [
+          "di sana sedang malam",
+          "di sana juga tengah hari",
+          "matahari terbenam di semua tempat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "astronomy",
+      "connection": {
+        "en": "Day and night come from Earth's rotation.",
+        "id": "Siang dan malam terjadi karena rotasi Bumi."
+      }
+    },
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Indonesia's width from Sumatra to Papua gives it three time zones.",
+        "id": "Lebar Indonesia dari Sumatra sampai Papua membuatnya memiliki tiga zona waktu."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "If you phoned a cousin in Jayapura at 07.00 WIB, what time would it be there?",
+      "id": "Jika kamu menelepon sepupu di Jayapura pukul 07.00 WIB, pukul berapa di sana?"
+    },
+    {
+      "en": "Why might people long ago have thought the sun moved around the Earth?",
+      "id": "Mengapa orang zaman dulu mungkin mengira matahari mengelilingi Bumi?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "In a dark room, shine a torch at a ball or an orange with a sticker on it for your town. Turn the ball slowly from west to east and say 'sunrise', 'midday', 'sunset' and 'night' as the sticker moves.",
+    "id": "Di ruangan gelap, sorotkan senter ke bola atau jeruk yang diberi stiker sebagai kotamu. Putar bola pelan-pelan dari barat ke timur dan ucapkan 'matahari terbit', 'tengah hari', 'matahari terbenam', dan 'malam' saat stiker bergerak."
+  },
+  "factChecks": [
+    {
+      "claim": "The Earth rotates once in about 24 hours, causing day and night.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The Earth rotates towards the east, so the sun appears to rise in the east.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Indonesia has three time zones: WIB, WITA and WIT.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Near the equator, day and night are each about 12 hours long all year.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The point on the opposite side of the Earth from Jakarta lies in northern South America.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Never look straight at the sun, and do not shine the torch into anyone's eyes.",
+      "id": "Jangan pernah menatap matahari langsung, dan jangan menyorotkan senter ke mata orang."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

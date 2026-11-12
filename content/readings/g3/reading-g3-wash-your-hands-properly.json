@@ -1,0 +1,260 @@
+{
+  "id": "reading-g3-wash-your-hands-properly",
+  "version": "1.0.0",
+  "level": "g3",
+  "readingLevel": "transitional",
+  "genre": "procedural",
+  "mode": "independent",
+  "title": {
+    "en": "How to wash your hands properly",
+    "id": "Cara mencuci tangan dengan benar"
+  },
+  "text": {
+    "en": [
+      "Germs are tiny living things that are too small to see. Some of them can make us ill. They stick to the dirt and oils on our hands. Soap loosens that dirt and oil, and running water rinses it, and the germs, away.",
+      "You need: clean running water, soap, and a clean towel or tissue.",
+      "Step 1: Wet your hands under the tap.",
+      "Step 2: Put on enough soap to cover both hands.",
+      "Step 3: Rub your palms together. Then rub the back of each hand with the other palm.",
+      "Step 4: Lace your fingers together and rub between them. Twist each thumb inside your other hand.",
+      "Step 5: Rub your fingertips and nails in the palm of the other hand. Keep scrubbing for about 20 seconds, as long as singing 'Selamat Ulang Tahun' twice.",
+      "Step 6: Rinse off all the soap under running water. Dry your hands well with a clean towel.",
+      "When should you wash? Before you eat or help to cook, after using the toilet, after playing outside, after touching animals, and after coughing or sneezing into your hands."
+    ],
+    "id": [
+      "Kuman adalah makhluk hidup kecil yang terlalu kecil untuk dilihat. Sebagian bisa membuat kita sakit. Kuman menempel pada kotoran dan minyak di tangan. Sabun melepaskan kotoran dan minyak itu, lalu air mengalir membilasnya bersama kumannya.",
+      "Yang kamu perlukan: air bersih yang mengalir, sabun, dan handuk atau tisu yang bersih.",
+      "Langkah 1: Basahi tangan di bawah keran.",
+      "Langkah 2: Tuang sabun secukupnya sampai menutupi kedua tangan.",
+      "Langkah 3: Gosok kedua telapak tangan. Lalu gosok punggung tangan dengan telapak tangan yang lain.",
+      "Langkah 4: Silangkan jari-jari dan gosok sela-selanya. Putar setiap jempol di dalam genggaman tangan yang lain.",
+      "Langkah 5: Gosok ujung jari dan kuku di telapak tangan yang lain. Terus gosok selama kira-kira 20 detik, selama menyanyikan 'Selamat Ulang Tahun' dua kali.",
+      "Langkah 6: Bilas semua sabun di bawah air mengalir. Keringkan tangan dengan handuk bersih.",
+      "Kapan harus mencuci tangan? Sebelum makan atau membantu memasak, setelah dari toilet, setelah bermain di luar, setelah menyentuh hewan, dan setelah batuk atau bersin ke tangan."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads and follows a procedural text with numbered steps.",
+      "id": "Membaca dan mengikuti teks prosedur dengan langkah bernomor."
+    },
+    {
+      "en": "Explains why each step helps remove germs.",
+      "id": "Menjelaskan mengapa setiap langkah membantu menghilangkan kuman."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "germs",
+        "id": "kuman"
+      },
+      "meaning": {
+        "en": "tiny living things that can cause illness",
+        "id": "makhluk hidup kecil yang bisa menyebabkan penyakit"
+      }
+    },
+    {
+      "word": {
+        "en": "rinse",
+        "id": "membilas"
+      },
+      "meaning": {
+        "en": "wash something off with clean water",
+        "id": "menghilangkan sesuatu dengan air bersih"
+      }
+    },
+    {
+      "word": {
+        "en": "palm",
+        "id": "telapak tangan"
+      },
+      "meaning": {
+        "en": "the inside, flat part of your hand",
+        "id": "bagian dalam tangan yang datar"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What should you do right after wetting your hands?",
+        "id": "Apa yang harus dilakukan tepat setelah membasahi tangan?"
+      },
+      "choices": {
+        "en": [
+          "put on soap",
+          "dry them with a towel",
+          "rub your fingertips in your palm"
+        ],
+        "id": [
+          "menuang sabun",
+          "mengeringkan dengan handuk",
+          "menggosok ujung jari di telapak tangan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "About how long should you keep scrubbing?",
+        "id": "Kira-kira berapa lama kamu harus terus menggosok?"
+      },
+      "choices": {
+        "en": [
+          "about 20 seconds",
+          "about 2 seconds",
+          "about 20 minutes"
+        ],
+        "id": [
+          "sekitar 20 detik",
+          "sekitar 2 detik",
+          "sekitar 20 menit"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why does the text tell you to rub between your fingers and around your thumbs?",
+        "id": "Mengapa teks menyuruhmu menggosok sela-sela jari dan jempol?"
+      },
+      "choices": {
+        "en": [
+          "germs can stay in places a quick rub misses",
+          "it makes more bubbles to play with",
+          "it dries your hands faster"
+        ],
+        "id": [
+          "kuman bisa tertinggal di bagian yang terlewat jika menggosok sebentar",
+          "supaya busanya lebih banyak untuk bermain",
+          "supaya tangan lebih cepat kering"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "science",
+      "prompt": {
+        "en": "What does soap do?",
+        "id": "Apa yang dilakukan sabun?"
+      },
+      "choices": {
+        "en": [
+          "it loosens dirt and oil so water can wash germs away",
+          "it kills every germ in the room",
+          "it makes water hotter"
+        ],
+        "id": [
+          "melepaskan kotoran dan minyak sehingga air bisa membilas kuman",
+          "membunuh semua kuman di ruangan",
+          "membuat air lebih panas"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q5",
+      "kind": "math",
+      "prompt": {
+        "en": "Dimas washes his hands 6 times in a day and scrubs for 20 seconds each time. How many seconds does he scrub altogether?",
+        "id": "Dimas mencuci tangan 6 kali sehari dan menggosok selama 20 detik setiap kali. Berapa detik ia menggosok semuanya?"
+      },
+      "choices": {
+        "en": [
+          "120 seconds",
+          "26 seconds",
+          "60 seconds"
+        ],
+        "id": [
+          "120 detik",
+          "26 detik",
+          "60 detik"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6,
+      "check": {
+        "expression": "6 * 20",
+        "result": "120"
+      }
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Washing hands with soap is one of the simplest ways to stop germs spreading.",
+        "id": "Mencuci tangan dengan sabun adalah salah satu cara paling sederhana untuk mencegah penyebaran kuman."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Multiplying times by seconds shows how small habits add up.",
+        "id": "Mengalikan jumlah kali dengan detik menunjukkan bagaimana kebiasaan kecil terkumpul."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which step do people most often skip? Why might that be?",
+      "id": "Langkah mana yang paling sering dilewati orang? Mengapa?"
+    },
+    {
+      "en": "Where in your home or school could a reminder poster help?",
+      "id": "Di mana di rumah atau sekolah poster pengingat bisa membantu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Rub a few drops of cooking oil and a pinch of cocoa powder over your hands to stand for 'germs'. Rinse with water only and see what is left. Then wash again following all six steps with soap. Make a poster of the steps for your bathroom.",
+    "id": "Oleskan beberapa tetes minyak goreng dan sejumput bubuk cokelat di tangan sebagai pengganti 'kuman'. Bilas dengan air saja dan lihat apa yang tersisa. Lalu cuci lagi dengan sabun mengikuti keenam langkah. Buat poster langkah-langkahnya untuk kamar mandi."
+  },
+  "factChecks": [
+    {
+      "claim": "Washing hands with soap and water removes many germs.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Health guidance recommends scrubbing hands with soap for at least about 20 seconds.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Keep the oil and powder away from your eyes, and wipe up any spills so the floor is not slippery.",
+      "id": "Jauhkan minyak dan bubuk dari mata, dan lap tumpahan supaya lantai tidak licin."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

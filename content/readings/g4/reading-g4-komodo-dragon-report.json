@@ -1,0 +1,278 @@
+{
+  "id": "reading-g4-komodo-dragon-report",
+  "version": "1.0.0",
+  "level": "g4",
+  "readingLevel": "fluent",
+  "genre": "report",
+  "mode": "independent",
+  "title": {
+    "en": "Report: the Komodo dragon",
+    "id": "Laporan: komodo"
+  },
+  "text": {
+    "en": [
+      "Introduction. The Komodo dragon is the largest lizard alive today. It is found in the wild only in Indonesia.",
+      "Where it lives. Komodo dragons live on a few islands in East Nusa Tenggara, including Komodo, Rinca and parts of Flores. Their homes are hot, dry grasslands and forests. Much of this area is protected as Komodo National Park.",
+      "Body. An adult can grow to about 3 metres long, which is longer than a family car is wide. It has a long, strong tail, sharp claws and tough, scaly skin.",
+      "Senses. A Komodo dragon flicks out its long, forked tongue to collect smells from the air. This helps it find food from far away.",
+      "Food. Komodo dragons are meat-eaters. They hunt animals such as deer and wild pigs, and they also eat animals that are already dead.",
+      "Young. A female lays her eggs in a hole in the ground. When the babies hatch, they are only about 40 centimetres long. Young dragons spend much of their time up in trees, where they are safer from adult dragons.",
+      "People and dragons. Visitors to the national park walk with trained rangers and keep a safe distance. Protecting the islands and the animals the dragons eat helps this rare lizard survive."
+    ],
+    "id": [
+      "Pendahuluan. Komodo adalah kadal terbesar yang masih hidup saat ini. Di alam liar, komodo hanya ditemukan di Indonesia.",
+      "Habitat. Komodo hidup di beberapa pulau di Nusa Tenggara Timur, antara lain Pulau Komodo, Rinca, dan sebagian Flores. Tempat tinggalnya padang rumput dan hutan yang panas dan kering. Sebagian besar wilayah ini dilindungi sebagai Taman Nasional Komodo.",
+      "Tubuh. Komodo dewasa bisa tumbuh sampai sekitar 3 meter, lebih panjang daripada lebar sebuah mobil keluarga. Ekornya panjang dan kuat, cakarnya tajam, dan kulitnya keras bersisik.",
+      "Indra. Komodo menjulurkan lidahnya yang panjang dan bercabang untuk menangkap bau di udara. Ini membantunya menemukan makanan dari jauh.",
+      "Makanan. Komodo adalah pemakan daging. Mereka memburu hewan seperti rusa dan babi hutan, dan juga memakan bangkai hewan.",
+      "Anak komodo. Komodo betina bertelur di lubang di tanah. Saat menetas, panjang bayinya hanya sekitar 40 sentimeter. Komodo muda banyak menghabiskan waktu di atas pohon, tempat mereka lebih aman dari komodo dewasa.",
+      "Manusia dan komodo. Pengunjung taman nasional berjalan bersama jagawana terlatih dan menjaga jarak aman. Melindungi pulau-pulau dan hewan mangsa komodo membantu kadal langka ini bertahan hidup."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a report and uses its section headings to find information.",
+      "id": "Membaca teks laporan dan memakai judul bagian untuk mencari informasi."
+    },
+    {
+      "en": "Compares sizes using multiplication and division.",
+      "id": "Membandingkan ukuran dengan perkalian dan pembagian."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "forked",
+        "id": "bercabang"
+      },
+      "meaning": {
+        "en": "split into two points at the end",
+        "id": "terbelah menjadi dua ujung"
+      }
+    },
+    {
+      "word": {
+        "en": "ranger",
+        "id": "jagawana"
+      },
+      "meaning": {
+        "en": "a person whose job is to look after a park and its visitors",
+        "id": "petugas yang menjaga taman nasional dan pengunjungnya"
+      }
+    },
+    {
+      "word": {
+        "en": "hatch",
+        "id": "menetas"
+      },
+      "meaning": {
+        "en": "come out of an egg",
+        "id": "keluar dari telur"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Which heading would you read to find out what Komodo dragons eat?",
+        "id": "Bagian mana yang kamu baca untuk mengetahui makanan komodo?"
+      },
+      "choices": {
+        "en": [
+          "Food",
+          "Senses",
+          "Where it lives"
+        ],
+        "id": [
+          "Makanan",
+          "Indra",
+          "Habitat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "How does a Komodo dragon's tongue help it?",
+        "id": "Bagaimana lidah komodo membantunya?"
+      },
+      "choices": {
+        "en": [
+          "it collects smells from the air to find food",
+          "it helps the dragon climb trees",
+          "it keeps the dragon cool"
+        ],
+        "id": [
+          "menangkap bau di udara untuk mencari makanan",
+          "membantunya memanjat pohon",
+          "membuatnya tetap sejuk"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why do young dragons spend time in trees?",
+        "id": "Mengapa komodo muda banyak berada di pohon?"
+      },
+      "choices": {
+        "en": [
+          "to stay away from adult dragons that could hurt them",
+          "because they eat only leaves",
+          "because the ground is too wet"
+        ],
+        "id": [
+          "supaya jauh dari komodo dewasa yang bisa membahayakannya",
+          "karena mereka hanya makan daun",
+          "karena tanahnya terlalu basah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "A hatchling is 40 cm long and an adult is 300 cm long. How many times longer is the adult?",
+        "id": "Bayi komodo panjangnya 40 cm dan komodo dewasa 300 cm. Berapa kali lebih panjang komodo dewasa?"
+      },
+      "choices": {
+        "en": [
+          "7.5 times",
+          "260 times",
+          "12 times"
+        ],
+        "id": [
+          "7,5 kali",
+          "260 kali",
+          "12 kali"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5,
+      "check": {
+        "expression": "300 / 40",
+        "result": "7.5"
+      }
+    },
+    {
+      "id": "q5",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main purpose of the last section?",
+        "id": "Apa tujuan utama bagian terakhir?"
+      },
+      "choices": {
+        "en": [
+          "to explain how people visit safely and help protect the dragons",
+          "to describe the dragon's claws",
+          "to list the islands of Indonesia"
+        ],
+        "id": [
+          "menjelaskan cara berkunjung dengan aman dan membantu melindungi komodo",
+          "menggambarkan cakar komodo",
+          "menyebutkan pulau-pulau di Indonesia"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Komodo dragons live wild only on a few islands of East Nusa Tenggara.",
+        "id": "Komodo liar hanya hidup di beberapa pulau di Nusa Tenggara Timur."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Comparing 40 cm with 300 cm uses division.",
+        "id": "Membandingkan 40 cm dengan 300 cm memakai pembagian."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Protecting habitats and prey keeps rare animals alive.",
+        "id": "Melindungi habitat dan mangsa menjaga hewan langka tetap hidup."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Why do you think rangers walk with visitors?",
+      "id": "Menurutmu, mengapa jagawana menemani pengunjung?"
+    },
+    {
+      "en": "Which fact surprised you most? Why?",
+      "id": "Fakta mana yang paling mengejutkanmu? Mengapa?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Choose another Indonesian animal, such as the anoa or the bird of paradise. Write a short report with four headings: Where it lives, Body, Food and Young. Measure and mark the animal's length on the floor with string if you can.",
+    "id": "Pilih hewan Indonesia lain, misalnya anoa atau cendrawasih. Tulis laporan singkat dengan empat judul: Habitat, Tubuh, Makanan, dan Anak. Jika bisa, ukur dan tandai panjang hewan itu di lantai dengan tali."
+  },
+  "factChecks": [
+    {
+      "claim": "The Komodo dragon is the largest living lizard.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Wild Komodo dragons live only on a few Indonesian islands including Komodo, Rinca and Flores, much of it in Komodo National Park.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Adults can reach about 3 metres in length.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Komodo dragons use their forked tongues to sense smells.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "They eat deer, pigs and carrion.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Hatchlings are roughly 40 cm long and young dragons often live in trees.",
+      "status": "needs_source"
+    },
+    {
+      "claim": "Visitors to Komodo National Park walk with rangers.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

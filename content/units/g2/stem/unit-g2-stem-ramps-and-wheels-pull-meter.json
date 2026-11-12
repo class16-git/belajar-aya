@@ -1,0 +1,454 @@
+{
+  "id": "unit-g2-stem-ramps-and-wheels-pull-meter",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "stem",
+  "strand": "engineering_design",
+  "title": {
+    "en": "Ramps and wheels: measuring an easier pull",
+    "id": "Bidang miring dan roda: mengukur tarikan yang lebih ringan"
+  },
+  "prerequisites": [
+    "unit-g1-stem-ruler-lever-balance",
+    "unit-k-stem-rolls-or-slides"
+  ],
+  "objective": {
+    "en": "Use a rubber-band pull meter to compare lifting a load straight up, dragging it up a ramp, and rolling it up the ramp on wheels, and explain the trade-off: an easier pull over a longer distance.",
+    "id": "Memakai pengukur tarikan dari karet gelang untuk membandingkan mengangkat beban lurus ke atas, menyeretnya di bidang miring, dan menggelindingkannya di bidang miring dengan roda, lalu menjelaskan tarik-ulurnya: tarikan lebih ringan tetapi jarak lebih jauh."
+  },
+  "rationale": {
+    "en": "Ramps (inclined planes) and wheels are simple machines children see every day: wheelchair ramps, trolleys, a motorbike pushed up a plank into a shop. A rubber band stretches more when you pull harder, so it becomes a simple measuring tool, and the numbers show what a ramp and wheels really save.",
+    "id": "Bidang miring dan roda adalah pesawat sederhana yang dilihat anak setiap hari: jalur landai kursi roda, troli, motor yang didorong naik papan ke dalam toko. Karet gelang makin memanjang saat ditarik lebih kuat, jadi bisa menjadi alat ukur sederhana, dan angkanya menunjukkan apa yang sebenarnya dihemat oleh bidang miring dan roda."
+  },
+  "outcomes": [
+    {
+      "en": "Measures the pull for three ways of raising the same load and records the results in a table.",
+      "id": "Mengukur tarikan untuk tiga cara menaikkan beban yang sama dan mencatat hasilnya di tabel."
+    },
+    {
+      "en": "Explains that the ramp makes the pull smaller but the distance longer, and that wheels reduce rubbing.",
+      "id": "Menjelaskan bahwa bidang miring membuat tarikan lebih kecil tetapi jaraknya lebih jauh, dan roda mengurangi gesekan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I measure how far the band stretches each time.",
+      "id": "Aku mengukur seberapa panjang karet memanjang setiap kali."
+    },
+    {
+      "en": "I can say what the ramp saves and what it costs.",
+      "id": "Aku bisa menjelaskan apa yang dihemat bidang miring dan apa ruginya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Build the pull meter with your child: loop a rubber band onto an opened paper clip hook at one end. Tape a ruler beside it so the band's length can be read.",
+      "id": "Buat pengukur tarikan bersama anak: kaitkan karet gelang pada kait dari klip kertas yang dibuka di satu ujung. Rekatkan penggaris di sampingnya agar panjang karet bisa dibaca."
+    },
+    {
+      "en": "Agree how to read it: pull slowly and steadily, and read the band's stretched length once the load is moving gently.",
+      "id": "Sepakati cara membacanya: tarik pelan dan stabil, dan baca panjang karet yang memanjang saat beban sudah bergerak pelan."
+    },
+    {
+      "en": "Ask for a prediction before each of the three tests and write it in the table first.",
+      "id": "Minta tebakan sebelum setiap uji dari tiga uji dan tulis di tabel lebih dulu."
+    },
+    {
+      "en": "Measure the distance too: the height of the books, and the length of the ramp. Talk about the trade-off at the end.",
+      "id": "Ukur juga jaraknya: tinggi tumpukan buku dan panjang bidang miring. Bicarakan tarik-ulurnya di akhir."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Hook the load and lift it straight up to the top of the books. Read the stretch.",
+      "id": "Kaitkan beban dan angkat lurus ke atas sampai puncak tumpukan buku. Baca panjang karetnya."
+    },
+    {
+      "en": "Drag the load slowly up the ramp. Read the stretch.",
+      "id": "Seret beban pelan-pelan naik bidang miring. Baca panjang karetnya."
+    },
+    {
+      "en": "Put the load in a toy truck and roll it up the ramp. Read the stretch. Compare all three.",
+      "id": "Taruh beban di truk mainan dan gelindingkan naik bidang miring. Baca panjang karetnya. Bandingkan ketiganya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Measure the pull with the rubber-band meter for lift, drag and roll.",
+        "id": "Ukur tarikan dengan pengukur karet untuk angkat, seret, dan gelinding."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw three bars for the three stretches and label the ramp length and the book height on a side-view sketch.",
+        "id": "Gambar tiga batang untuk ketiga panjang karet dan beri label panjang bidang miring dan tinggi buku pada sketsa tampak samping."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Find how much less the band stretched for each way by subtracting from the straight-lift result.",
+        "id": "Cari berapa lebih pendek karet memanjang untuk setiap cara dengan mengurangkan dari hasil angkat lurus."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A strong rubber band and a large paper clip opened into a hook",
+      "id": "Karet gelang yang kuat dan klip kertas besar yang dibuka menjadi kait"
+    },
+    {
+      "en": "A 30 cm ruler and sticky tape",
+      "id": "Penggaris 30 cm dan selotip"
+    },
+    {
+      "en": "The load: a small cardboard box holding one full food tin, with a loop of string taped to it",
+      "id": "Beban: kotak kardus kecil berisi satu kaleng makanan penuh, dengan tali melingkar yang direkatkan padanya"
+    },
+    {
+      "en": "A toy truck or car big enough to carry the box",
+      "id": "Truk atau mobil mainan yang cukup besar untuk membawa kotak"
+    },
+    {
+      "en": "A ramp: a stiff board or a piece of thick cardboard about 60 cm long, resting on a stack of books about 20 cm high",
+      "id": "Bidang miring: papan kaku atau kardus tebal sepanjang sekitar 60 cm, disandarkan pada tumpukan buku setinggi sekitar 20 cm"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult opens the paper clip into a hook and checks the rubber band for cracks. Measure and write the unstretched band length. Set up the ramp on the floor so nothing can fall far.",
+      "id": "Orang dewasa membuka klip kertas menjadi kait dan memeriksa karet gelang dari retakan. Ukur dan tulis panjang karet sebelum ditarik. Pasang bidang miring di lantai agar tidak ada yang jatuh dari tempat tinggi."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Straight lift: Tia hooks the string and lifts the box slowly from the floor to the top of the books. The band stretches to 12 cm longer than before. She writes '12 cm' in the table.",
+      "id": "Angkat lurus: Tia mengaitkan tali dan mengangkat kotak pelan-pelan dari lantai ke puncak tumpukan buku. Karetnya memanjang 12 cm dari semula. Ia menulis '12 cm' di tabel."
+    },
+    {
+      "en": "Drag up the ramp: she pulls the box up the 60 cm ramp, keeping the band level with the ramp. It stretches 8 cm. 'Less pull, but I pulled it a lot further: 60 cm along the ramp instead of 20 cm straight up.'",
+      "id": "Seret di bidang miring: ia menarik kotak naik bidang miring 60 cm, menjaga karet sejajar dengan bidang miring. Karetnya memanjang 8 cm. 'Tarikannya lebih ringan, tetapi aku menariknya jauh lebih jauh: 60 cm di sepanjang bidang miring, bukan 20 cm lurus ke atas.'"
+    },
+    {
+      "en": "Roll on wheels: the box rides in the toy truck up the same ramp. The band stretches only 4 cm. 'The wheels roll instead of rubbing on the ramp, so even less pull is needed.' These are example numbers; your band will give its own.",
+      "id": "Gelinding dengan roda: kotak naik truk mainan di bidang miring yang sama. Karetnya hanya memanjang 4 cm. 'Roda menggelinding, bukan bergesekan dengan bidang miring, jadi tarikan yang diperlukan lebih kecil lagi.' Ini angka contoh; karetmu akan memberi angkanya sendiri."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Make the ramp steeper by adding books (keep the same board). Predict, then measure the drag and the roll again. Write a sentence about what you found.",
+      "id": "Buat bidang miring lebih curam dengan menambah buku (pakai papan yang sama). Tebak, lalu ukur lagi seretan dan gelindingannya. Tulis satu kalimat tentang temuanmu."
+    },
+    {
+      "en": "Test the drag on a smoother ramp surface by taping a sheet of shiny paper over the board. Change only the surface.",
+      "id": "Uji seretan pada permukaan yang lebih licin dengan menempelkan kertas mengilap di atas papan. Ubah hanya permukaannya."
+    },
+    {
+      "en": "Find ramps and wheels around your home or street and draw two of them, labelling what they help lift or move.",
+      "id": "Cari bidang miring dan roda di sekitar rumah atau jalan, lalu gambar dua di antaranya dan beri label apa yang mereka bantu angkat atau pindahkan."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Why does the rubber band show how hard you are pulling?",
+        "id": "Mengapa karet gelang bisa menunjukkan seberapa kuat kamu menarik?"
+      },
+      "choices": {
+        "en": [
+          "It stretches more when the pull is bigger",
+          "It gets shorter when the pull is bigger",
+          "It changes colour when you pull"
+        ],
+        "id": [
+          "Karet makin memanjang saat tarikannya makin besar",
+          "Karet makin memendek saat tarikannya makin besar",
+          "Karet berubah warna saat ditarik"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A bigger pull stretches the band further, so its length is our measure.",
+        "id": "Tarikan yang lebih besar membuat karet lebih panjang, jadi panjangnya adalah ukuran kita."
+      },
+      "distractorMisconceptions": {
+        "1": "STRETCH_BACKWARDS",
+        "2": "NO_MEASURE_IDEA"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Lifting a bag straight up stretched the band 10 cm. Rolling it up a ramp on wheels stretched it 3 cm. How much less did the band stretch on the ramp?",
+        "id": "Mengangkat tas lurus ke atas membuat karet memanjang 10 cm. Menggelindingkannya naik bidang miring dengan roda membuatnya memanjang 3 cm. Berapa lebih pendek karet memanjang di bidang miring?"
+      },
+      "choices": {
+        "en": [
+          "7 cm",
+          "13 cm",
+          "3 cm"
+        ],
+        "id": [
+          "7 cm",
+          "13 cm",
+          "3 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Subtract to compare: 10 - 3 = 7 cm.",
+        "id": "Kurangkan untuk membandingkan: 10 - 3 = 7 cm."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "REPORTS_ONE_RESULT"
+      },
+      "check": {
+        "expression": "10 - 3",
+        "result": "7"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A ramp is 50 cm long and rises 20 cm. How much further does the load travel along the ramp than if you lifted it straight up?",
+        "id": "Sebuah bidang miring panjangnya 50 cm dan tingginya 20 cm. Berapa lebih jauh beban bergerak di sepanjang bidang miring dibandingkan jika diangkat lurus ke atas?"
+      },
+      "choices": {
+        "en": [
+          "30 cm",
+          "70 cm",
+          "20 cm"
+        ],
+        "id": [
+          "30 cm",
+          "70 cm",
+          "20 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The ramp path is longer: 50 - 20 = 30 cm. That is the cost of the easier pull.",
+        "id": "Jalur bidang miring lebih panjang: 50 - 20 = 30 cm. Itulah ruginya demi tarikan yang lebih ringan."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "REPORTS_ONE_RESULT"
+      },
+      "check": {
+        "expression": "50 - 20",
+        "result": "30"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Why did the truck with wheels need less pull than dragging the box up the same ramp?",
+        "id": "Mengapa truk beroda memerlukan tarikan lebih kecil daripada menyeret kotak di bidang miring yang sama?"
+      },
+      "choices": {
+        "en": [
+          "The wheels roll, so there is much less rubbing",
+          "The truck makes the box lighter",
+          "The ramp became shorter"
+        ],
+        "id": [
+          "Roda menggelinding, jadi gesekannya jauh lebih kecil",
+          "Truknya membuat kotak lebih ringan",
+          "Bidang miringnya menjadi lebih pendek"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The load is the same; rolling wheels rub far less than a sliding box.",
+        "id": "Bebannya sama; roda yang menggelinding bergesekan jauh lebih sedikit daripada kotak yang diseret."
+      },
+      "distractorMisconceptions": {
+        "1": "MACHINES_REDUCE_WEIGHT",
+        "2": "WRONG_CAUSE"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Pak Joko pushes his motorbike up a plank into his shop instead of lifting it. What is the trade-off?",
+        "id": "Pak Joko mendorong motornya naik papan ke dalam tokonya, bukan mengangkatnya. Apa tarik-ulurnya?"
+      },
+      "choices": {
+        "en": [
+          "He pushes with less force but over a longer distance",
+          "He needs more force and a shorter distance",
+          "There is no trade-off; it is easier in every way"
+        ],
+        "id": [
+          "Ia mendorong dengan gaya lebih kecil tetapi jaraknya lebih jauh",
+          "Ia perlu gaya lebih besar dan jarak lebih pendek",
+          "Tidak ada tarik-ulur; lebih mudah dalam segala hal"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A ramp swaps a big lift over a short distance for a smaller push over a longer one.",
+        "id": "Bidang miring menukar angkatan besar dengan jarak pendek menjadi dorongan lebih kecil dengan jarak lebih jauh."
+      },
+      "distractorMisconceptions": {
+        "1": "STRETCH_BACKWARDS",
+        "2": "MACHINES_ARE_MAGIC"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "STRETCH_BACKWARDS",
+      "description": {
+        "en": "Reverses the link between force and the measurement or the trade-off.",
+        "id": "Membalik hubungan antara gaya dan ukurannya atau tarik-ulurnya."
+      },
+      "remediation": {
+        "en": "Hang one tin, then two tins, from the band and measure both lengths: more weight, longer band.",
+        "id": "Gantungkan satu kaleng, lalu dua kaleng, pada karet dan ukur kedua panjangnya: makin berat, makin panjang karetnya."
+      }
+    },
+    {
+      "code": "NO_MEASURE_IDEA",
+      "description": {
+        "en": "Does not yet see the band as a measuring tool.",
+        "id": "Belum melihat karet sebagai alat ukur."
+      },
+      "remediation": {
+        "en": "Compare it to a kitchen scale: the scale's needle moves further for heavier food, and the band stretches further for a harder pull.",
+        "id": "Bandingkan dengan timbangan dapur: jarum timbangan bergerak lebih jauh untuk makanan yang lebih berat, dan karet memanjang lebih jauh untuk tarikan yang lebih kuat."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds two measurements when asked for the difference.",
+        "id": "Menjumlahkan dua ukuran saat ditanya selisihnya."
+      },
+      "remediation": {
+        "en": "Lay two paper strips, cut to the two lengths, side by side and measure only the part that sticks out.",
+        "id": "Letakkan dua potongan kertas sepanjang kedua ukuran berdampingan dan ukur hanya bagian yang menonjol."
+      }
+    },
+    {
+      "code": "REPORTS_ONE_RESULT",
+      "description": {
+        "en": "Gives one of the measurements instead of the difference.",
+        "id": "Menyebut salah satu ukuran, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Ask 'how much more?' as 'how far must I count up from the smaller number to reach the bigger?' and count along the ruler.",
+        "id": "Ubah 'berapa lebih?' menjadi 'berapa jauh aku harus menghitung maju dari angka kecil sampai angka besar?' lalu hitung di sepanjang penggaris."
+      }
+    },
+    {
+      "code": "MACHINES_REDUCE_WEIGHT",
+      "description": {
+        "en": "Thinks a machine makes the load lighter.",
+        "id": "Mengira pesawat sederhana membuat beban lebih ringan."
+      },
+      "remediation": {
+        "en": "Hang the box from the band before and after riding in the truck: its weight is the same.",
+        "id": "Gantungkan kotak pada karet sebelum dan sesudah naik truk: beratnya sama."
+      }
+    },
+    {
+      "code": "WRONG_CAUSE",
+      "description": {
+        "en": "Names something that did not change as the cause.",
+        "id": "Menyebut sesuatu yang tidak berubah sebagai penyebab."
+      },
+      "remediation": {
+        "en": "List what changed between the two tests (only wheels or no wheels) and what stayed the same (ramp, box, tin).",
+        "id": "Daftar apa yang berubah di antara dua uji (hanya ada roda atau tidak) dan apa yang tetap sama (bidang miring, kotak, kaleng)."
+      }
+    },
+    {
+      "code": "MACHINES_ARE_MAGIC",
+      "description": {
+        "en": "Thinks a simple machine makes work easier in every way at no cost.",
+        "id": "Mengira pesawat sederhana membuat pekerjaan lebih mudah dalam segala hal tanpa ada ruginya."
+      },
+      "remediation": {
+        "en": "Walk the load's path with a string: measure the straight-up string and the ramp string and compare the lengths.",
+        "id": "Telusuri jalur beban dengan tali: ukur tali yang lurus ke atas dan tali di sepanjang bidang miring, lalu bandingkan panjangnya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make your own wheels: tape two round pencils under a box as rollers and test the pull on a flat floor. Are rollers as good as the truck's wheels?",
+      "id": "Buat roda sendiri: rekatkan dua pensil bulat di bawah kotak sebagai rol dan uji tarikannya di lantai datar. Apakah rol sebaik roda truk?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child with limited hand strength can pull with both hands or hold the ruler while a partner pulls; results can be shown by marking the band's end on a paper strip.",
+      "id": "Anak dengan kekuatan tangan terbatas bisa menarik dengan dua tangan atau memegang penggaris sementara temannya menarik; hasil bisa ditunjukkan dengan menandai ujung karet di potongan kertas."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Rubber bands can snap: check the band for cracks, never stretch it towards anyone's face, and stop if it looks thin. Keep rubber bands and paper clips away from children under 4.",
+        "id": "Karet gelang bisa putus: periksa retakannya, jangan pernah menariknya ke arah wajah siapa pun, dan berhenti jika tampak menipis. Jauhkan karet gelang dan klip kertas dari anak di bawah 4 tahun."
+      },
+      {
+        "en": "The adult opens the paper clip into a hook; its end is pointed, so handle it carefully. Keep the ramp low on the floor so the tin cannot fall onto feet.",
+        "id": "Orang dewasa membuka klip kertas menjadi kait; ujungnya runcing, jadi pegang dengan hati-hati. Jaga bidang miring tetap rendah di lantai agar kaleng tidak jatuh ke kaki."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child measures all three ways fairly, finds the differences correctly, and explains the trade-off between force and distance in their own words.",
+      "id": "Dikuasai jika anak mengukur ketiga cara dengan adil, menemukan selisihnya dengan benar, dan menjelaskan tarik-ulur antara gaya dan jarak dengan kata-katanya sendiri."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

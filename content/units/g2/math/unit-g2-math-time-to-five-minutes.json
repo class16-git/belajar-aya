@@ -1,0 +1,455 @@
+{
+  "id": "unit-g2-math-time-to-five-minutes",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "math",
+  "strand": "time",
+  "title": {
+    "en": "Telling time to 5 minutes",
+    "id": "Membaca jam sampai 5 menit"
+  },
+  "prerequisites": [
+    "unit-g1-math-time-half-hour",
+    "unit-g2-math-multiplication-equal-groups"
+  ],
+  "objective": {
+    "en": "Read and show times to the nearest 5 minutes on an analogue clock by counting in fives with the long hand, read the hour correctly from the short hand, and find a time 5 to 30 minutes later.",
+    "id": "Membaca dan menunjukkan waktu sampai 5 menit terdekat pada jam jarum dengan menghitung loncat lima pada jarum panjang, membaca jam dengan benar dari jarum pendek, dan menentukan waktu 5 sampai 30 menit kemudian."
+  },
+  "rationale": {
+    "en": "From the half-hour unit the child knows the two hands. Counting in fives (from the multiplication unit) around the numbers turns the long hand into minutes. The hardest part is the short hand just before the next number: at 6.55 it is almost on 7 but the hour is still 6.",
+    "id": "Dari unit setengah jam anak sudah mengenal kedua jarum. Menghitung loncat lima (dari unit perkalian) di sekeliling angka mengubah jarum panjang menjadi menit. Bagian tersulit adalah jarum pendek yang hampir sampai di angka berikutnya: pada 6.55 jarum hampir di 7 tetapi jamnya masih 6."
+  },
+  "outcomes": [
+    {
+      "en": "Counts in fives around the clock face to read the minutes.",
+      "id": "Menghitung loncat lima di sekeliling muka jam untuk membaca menit."
+    },
+    {
+      "en": "Reads the hour from the short hand, including just before the next hour.",
+      "id": "Membaca jam dari jarum pendek, termasuk saat hampir jam berikutnya."
+    },
+    {
+      "en": "Finds the time a number of minutes later in steps of 5.",
+      "id": "Menentukan waktu beberapa menit kemudian dengan langkah 5."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can read 8.20 on a clock and say 'twenty past eight'.",
+      "id": "Aku bisa membaca 8.20 di jam dan menyebut 'pukul delapan lewat dua puluh menit'."
+    },
+    {
+      "en": "I can explain why the time is still 6 o'clock-something when the short hand is close to 7.",
+      "id": "Aku bisa menjelaskan mengapa waktunya masih pukul enam lebih ketika jarum pendek dekat angka 7."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use a real wall clock or the paper-plate clock from the half-hour unit. Fasten its hands with a rolled paper stopper through the centre hole; the adult makes the hole.",
+      "id": "Pakai jam dinding sungguhan atau jam piring kertas dari unit setengah jam. Pasang jarumnya dengan gulungan kertas di lubang tengah; orang dewasa yang membuat lubangnya."
+    },
+    {
+      "en": "Write 5, 10, 15 ... 55 in small numbers outside each clock number for the first lessons, then cover them once your child counts in fives confidently.",
+      "id": "Tulis 5, 10, 15 ... 55 dengan angka kecil di luar setiap angka jam untuk pelajaran awal, lalu tutup setelah anak yakin menghitung loncat lima."
+    },
+    {
+      "en": "Indonesian clocks are written with a point (pukul 8.20). 'Pukul 3 kurang 15 menit' or 'kurang seperempat' means 2.45; in English that is 'quarter to three'.",
+      "id": "Waktu dalam bahasa Indonesia ditulis dengan titik (pukul 8.20). 'Pukul 3 kurang 15 menit' atau 'kurang seperempat' berarti 2.45; dalam bahasa Inggris 'quarter to three'."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Look at the short hand first: which number has it passed? That is the hour.",
+      "id": "Lihat jarum pendek dulu: angka mana yang sudah dilewatinya? Itulah jamnya."
+    },
+    {
+      "en": "Then count in fives to the long hand: 5, 10, 15...",
+      "id": "Lalu hitung loncat lima sampai jarum panjang: 5, 10, 15..."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Move the long hand of the clock from 12 to each number in turn while counting aloud in fives; stop at 4 and say '20 minutes past'. Then set the short hand just past 8: the time is 8.20.",
+        "id": "Gerakkan jarum panjang jam dari 12 ke setiap angka secara bergantian sambil menghitung loncat lima; berhenti di 4 dan ucapkan 'lewat 20 menit'. Lalu taruh jarum pendek sedikit lewat 8: waktunya 8.20."
+      },
+      {
+        "en": "Over one real hour, look at the kitchen clock every 10 minutes and watch how far the short hand has crept.",
+        "id": "Selama satu jam sungguhan, lihat jam dapur setiap 10 menit dan perhatikan seberapa jauh jarum pendek bergeser."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw clock faces showing 2.45 and 6.55. Shade the part the long hand has swept and draw an arrow showing which number the short hand has just passed.",
+        "id": "Gambar muka jam yang menunjukkan 2.45 dan 6.55. Arsir bagian yang sudah dilewati jarum panjang dan gambar panah yang menunjukkan angka yang baru dilewati jarum pendek."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Match written times to words: 9.35 is 'thirty-five minutes past nine'; 2.45 is 'quarter to three' or 'pukul 3 kurang seperempat'.",
+        "id": "Pasangkan waktu tertulis dengan kata: 9.35 adalah 'pukul sembilan lewat tiga puluh lima menit'; 2.45 adalah 'pukul 3 kurang seperempat' atau 'quarter to three'."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A real analogue wall clock, or a paper-plate clock with card hands held by a rolled paper stopper",
+      "id": "Jam dinding jarum sungguhan, atau jam piring kertas dengan jarum karton yang ditahan gulungan kertas"
+    },
+    {
+      "en": "Paper with blank clock faces, pencils, a small sticky note for each 5-minute mark",
+      "id": "Kertas dengan muka jam kosong, pensil, kertas tempel kecil untuk setiap tanda 5 menit"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write the 5-minute numbers around the outside of the clock on sticky notes so they can be removed later.",
+      "id": "Tulis angka 5 menit di sekeliling luar jam pada kertas tempel agar bisa dilepas nanti."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "The long hand points at 4: count 5, 10, 15, 20. The short hand has just passed 8. The time is 8.20, twenty past eight.",
+      "id": "Jarum panjang menunjuk 4: hitung 5, 10, 15, 20. Jarum pendek baru melewati 8. Waktunya 8.20, pukul delapan lewat dua puluh menit."
+    },
+    {
+      "en": "The long hand points at 9: 9 fives are 45 minutes. The short hand is between 2 and 3, so it is 2.45. There are 15 minutes left until 3, so we also say quarter to three.",
+      "id": "Jarum panjang menunjuk 9: 9 kali lima adalah 45 menit. Jarum pendek di antara 2 dan 3, jadi pukul 2.45. Masih 15 menit lagi menuju 3, jadi bisa juga disebut pukul 3 kurang seperempat."
+    },
+    {
+      "en": "The long hand points at 11 and the short hand is almost on 7. It is not yet 7, so the time is 6.55.",
+      "id": "Jarum panjang menunjuk 11 dan jarum pendek hampir di 7. Belum pukul 7, jadi waktunya 6.55."
+    },
+    {
+      "en": "It is 9.35. What time is it 10 minutes later? Move the long hand two numbers on: 9.45.",
+      "id": "Sekarang pukul 9.35. Pukul berapa 10 menit lagi? Gerakkan jarum panjang dua angka: 9.45."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Clock check: three times a day, your child reads the kitchen clock and writes the time in a small notebook.",
+      "id": "Cek jam: tiga kali sehari, anak membaca jam dapur dan menulis waktunya di buku kecil."
+    },
+    {
+      "en": "Set the clock: the adult says a time such as 'ten to five' and the child sets both hands, then explains where the short hand goes.",
+      "id": "Atur jam: orang dewasa menyebut waktu seperti 'pukul lima kurang sepuluh' dan anak mengatur kedua jarum, lalu menjelaskan letak jarum pendek."
+    },
+    {
+      "en": "Later on: the child chooses a start time and a number of minutes (5 to 30) and moves the long hand to find the end time.",
+      "id": "Kemudian: anak memilih waktu mulai dan banyak menit (5 sampai 30) lalu menggerakkan jarum panjang untuk menemukan waktu selesai."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "The long hand points at 7. How many minutes past the hour is it?",
+        "id": "Jarum panjang menunjuk 7. Lewat berapa menit dari jamnya?"
+      },
+      "choices": {
+        "en": [
+          "35 minutes",
+          "7 minutes",
+          "40 minutes"
+        ],
+        "id": [
+          "35 menit",
+          "7 menit",
+          "40 menit"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each number is 5 minutes: 7 × 5 = 35 minutes past.",
+        "id": "Setiap angka bernilai 5 menit: 7 × 5 = 35 menit lewat."
+      },
+      "check": {
+        "expression": "7 * 5",
+        "result": "35"
+      },
+      "distractorMisconceptions": {
+        "1": "READS_NUMBER_AS_MINUTES",
+        "2": "COUNTS_ONE_FIVE_TOO_MANY"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "The short hand is between 4 and 5 and the long hand points at 2. What time is it?",
+        "id": "Jarum pendek di antara 4 dan 5 dan jarum panjang menunjuk 2. Pukul berapa sekarang?"
+      },
+      "choices": {
+        "en": [
+          "10 minutes past 4 (4:10)",
+          "2 minutes past 4 (4:02)",
+          "10 minutes past 5 (5:10)"
+        ],
+        "id": [
+          "Pukul 4 lewat 10 menit (4.10)",
+          "Pukul 4 lewat 2 menit (4.02)",
+          "Pukul 5 lewat 10 menit (5.10)"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The short hand has passed 4, so the hour is 4. The long hand at 2 is 2 × 5 = 10 minutes.",
+        "id": "Jarum pendek sudah melewati 4, jadi jamnya 4. Jarum panjang di 2 berarti 2 × 5 = 10 menit."
+      },
+      "check": {
+        "expression": "2 * 5",
+        "result": "10"
+      },
+      "distractorMisconceptions": {
+        "1": "READS_NUMBER_AS_MINUTES",
+        "2": "READS_NEXT_HOUR"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Aya starts reading at 25 minutes past 3. She reads for 20 minutes. When does she finish?",
+        "id": "Aya mulai membaca pukul 3 lewat 25 menit. Ia membaca selama 20 menit. Kapan ia selesai?"
+      },
+      "choices": {
+        "en": [
+          "45 minutes past 3 (3:45)",
+          "5 minutes past 3 (3:05)",
+          "45 minutes past 4 (4:45)"
+        ],
+        "id": [
+          "Pukul 3 lewat 45 menit (3.45)",
+          "Pukul 3 lewat 5 menit (3.05)",
+          "Pukul 4 lewat 45 menit (4.45)"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Move the long hand 4 numbers on from 5 to 9: 25 + 20 = 45. The hour does not change because 45 is less than 60.",
+        "id": "Gerakkan jarum panjang 4 angka dari 5 ke 9: 25 + 20 = 45. Jamnya tidak berubah karena 45 kurang dari 60."
+      },
+      "check": {
+        "expression": "25 + 20",
+        "result": "45"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "CHANGES_HOUR_WRONGLY"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "How many minutes is it from 1:40 to 2:00?",
+        "id": "Berapa menit dari pukul 1.40 sampai pukul 2.00?"
+      },
+      "choices": {
+        "en": [
+          "20 minutes",
+          "60 minutes",
+          "40 minutes"
+        ],
+        "id": [
+          "20 menit",
+          "60 menit",
+          "40 menit"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "An hour has 60 minutes. From 40 minutes past to the next hour is 60 - 40 = 20 minutes.",
+        "id": "Satu jam ada 60 menit. Dari lewat 40 menit sampai jam berikutnya adalah 60 - 40 = 20 menit."
+      },
+      "check": {
+        "expression": "60 - 40",
+        "result": "20"
+      },
+      "distractorMisconceptions": {
+        "1": "HOUR_AS_100_MINUTES",
+        "2": "GIVES_MINUTES_PAST"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "The long hand points at 11 and the short hand is just before 6. What time is it?",
+        "id": "Jarum panjang menunjuk 11 dan jarum pendek hampir di 6. Pukul berapa sekarang?"
+      },
+      "choices": {
+        "en": [
+          "55 minutes past 5 (5:55)",
+          "55 minutes past 6 (6:55)",
+          "11 minutes past 5 (5:11)"
+        ],
+        "id": [
+          "Pukul 5 lewat 55 menit (5.55)",
+          "Pukul 6 lewat 55 menit (6.55)",
+          "Pukul 5 lewat 11 menit (5.11)"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The short hand has not reached 6 yet, so the hour is still 5. The long hand at 11 is 11 × 5 = 55 minutes.",
+        "id": "Jarum pendek belum sampai di 6, jadi jamnya masih 5. Jarum panjang di 11 berarti 11 × 5 = 55 menit."
+      },
+      "check": {
+        "expression": "11 * 5",
+        "result": "55"
+      },
+      "distractorMisconceptions": {
+        "1": "READS_NEXT_HOUR",
+        "2": "READS_NUMBER_AS_MINUTES"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "READS_NUMBER_AS_MINUTES",
+      "description": {
+        "en": "Reads the number the long hand points to as the minutes (7 means 7 minutes).",
+        "id": "Membaca angka yang ditunjuk jarum panjang sebagai menit (7 berarti 7 menit)."
+      },
+      "remediation": {
+        "en": "Put the sticky-note fives back around the clock and count aloud in fives while moving a finger from 12 to the long hand.",
+        "id": "Pasang lagi kertas tempel angka lima di sekeliling jam dan hitung loncat lima sambil menggerakkan jari dari 12 ke jarum panjang."
+      }
+    },
+    {
+      "code": "COUNTS_ONE_FIVE_TOO_MANY",
+      "description": {
+        "en": "Starts counting with 5 at 12, so the count is 5 minutes too many.",
+        "id": "Mulai menghitung 5 di angka 12, sehingga hitungannya kelebihan 5 menit."
+      },
+      "remediation": {
+        "en": "Say 'zero' at 12 and touch each number as you say the next five.",
+        "id": "Ucapkan 'nol' di 12 dan sentuh setiap angka sambil menyebut lima berikutnya."
+      }
+    },
+    {
+      "code": "READS_NEXT_HOUR",
+      "description": {
+        "en": "Reads the hour from the number the short hand is nearest, even when it has not reached it.",
+        "id": "Membaca jam dari angka yang paling dekat dengan jarum pendek, walaupun belum sampai."
+      },
+      "remediation": {
+        "en": "Move the hands together from 5.00 to 6.00 slowly; the hour changes only when the long hand reaches 12.",
+        "id": "Gerakkan kedua jarum perlahan bersama dari 5.00 ke 6.00; jamnya berganti hanya ketika jarum panjang sampai di 12."
+      }
+    },
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Takes the minutes away instead of moving forward in time.",
+        "id": "Mengurangkan menit, bukan maju dalam waktu."
+      },
+      "remediation": {
+        "en": "Act it out: set the start time and move the long hand forward, clockwise, while counting the fives.",
+        "id": "Peragakan: atur waktu mulai dan gerakkan jarum panjang maju, searah jarum jam, sambil menghitung loncat lima."
+      }
+    },
+    {
+      "code": "CHANGES_HOUR_WRONGLY",
+      "description": {
+        "en": "Moves the hour on even though the long hand did not pass 12.",
+        "id": "Memajukan jam walaupun jarum panjang tidak melewati 12."
+      },
+      "remediation": {
+        "en": "Watch the long hand on the clock: the hour changes only when the long hand passes 12.",
+        "id": "Perhatikan jarum panjang di jam: jamnya berganti hanya ketika jarum panjang melewati 12."
+      }
+    },
+    {
+      "code": "HOUR_AS_100_MINUTES",
+      "description": {
+        "en": "Treats an hour as 100 minutes, as if time worked like place value.",
+        "id": "Menganggap satu jam 100 menit, seolah-olah waktu seperti nilai tempat."
+      },
+      "remediation": {
+        "en": "Count the fives all the way round the clock: twelve fives make 60, not 100.",
+        "id": "Hitung loncat lima mengelilingi jam: dua belas kali lima adalah 60, bukan 100."
+      }
+    },
+    {
+      "code": "GIVES_MINUTES_PAST",
+      "description": {
+        "en": "Gives the minutes already past the hour instead of the minutes still to go.",
+        "id": "Memberi menit yang sudah lewat, bukan menit yang masih tersisa."
+      },
+      "remediation": {
+        "en": "Shade the part of the clock from the long hand forward to 12 and count only the fives in the shaded part.",
+        "id": "Arsir bagian jam dari jarum panjang maju sampai 12 dan hitung hanya angka lima di bagian yang diarsir."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a family timetable for one afternoon with times to 5 minutes, and work out how long each activity lasts.",
+      "id": "Buat jadwal keluarga untuk satu sore dengan waktu sampai 5 menit, dan hitung berapa lama setiap kegiatan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A clock with raised numbers or a tactile dot at each 5-minute mark helps children with low vision; say each time aloud as well as writing it.",
+      "id": "Jam dengan angka timbul atau titik timbul di setiap tanda 5 menit membantu anak dengan penglihatan rendah; ucapkan setiap waktu selain menuliskannya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult makes the centre hole of a paper-plate clock with a pencil point; no sharp fasteners are needed.",
+        "id": "Orang dewasa membuat lubang tengah jam piring kertas dengan ujung pensil; tidak perlu pengikat yang tajam."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child reads and sets five new times to 5 minutes, including two just before the hour, and finds one later time, on two different days.",
+      "id": "Dikuasai jika anak membaca dan mengatur lima waktu baru sampai 5 menit, termasuk dua yang hampir jam berikutnya, dan menemukan satu waktu kemudian, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

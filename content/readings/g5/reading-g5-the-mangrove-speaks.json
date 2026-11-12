@@ -1,0 +1,266 @@
+{
+  "id": "reading-g5-the-mangrove-speaks",
+  "version": "1.0.0",
+  "level": "g5",
+  "readingLevel": "fluent",
+  "genre": "poetry",
+  "mode": "independent",
+  "title": {
+    "en": "The mangrove speaks",
+    "id": "Bakau berbicara"
+  },
+  "text": {
+    "en": [
+      "I stand where the river meets the sea, / my feet in salt, my head in sun. / Twice a day the tide comes in to visit, / and twice a day it turns to run.",
+      "I hold the shore in my fingers: / a tangle of roots like stilts and knees. / When storm waves come running at the land, / I slow them down and soften their seas.",
+      "Between my roots the small ones hide: / young fish, shrimp and scuttling crabs. / They grow up safe in my muddy rooms, / then swim out into the open sea.",
+      "My roots catch mud the rivers carry, / and slowly, slowly, land is made. / My leaves breathe in the air's extra carbon / and lock it deep in mud and shade.",
+      "So when you walk along the boardwalk, / and hear the water lap and sigh, / remember me, the coast's old guardian, / and let me grow, and do not let me die."
+    ],
+    "id": [
+      "Aku berdiri di tempat sungai bertemu laut, / kakiku di air asin, kepalaku di bawah matahari. / Dua kali sehari pasang datang bertamu, / dan dua kali sehari ia surut pergi.",
+      "Kugenggam pantai dengan jari-jariku: / akar-akar berjalin seperti tongkat dan lutut. / Saat ombak badai berlari ke daratan, / kuperlambat langkahnya, kubuat ia surut.",
+      "Di sela akarku yang kecil bersembunyi: / ikan muda, udang, dan kepiting yang berlari. / Mereka tumbuh aman di kamar-kamarku yang berlumpur, / lalu berenang ke laut lepas yang luas sekali.",
+      "Akarku menangkap lumpur yang dibawa sungai, / dan pelan-pelan, daratan pun tercipta. / Daunku menghirup karbon dari udara / dan menyimpannya dalam lumpur dan teduhnya.",
+      "Maka saat kau berjalan di titian kayu, / mendengar air berbisik dan mendesah, / ingatlah aku, penjaga pantai yang tua, / biarkan aku tumbuh, jangan biarkan aku musnah."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a poem written in the voice of a living thing and explains its message.",
+      "id": "Membaca puisi yang ditulis dengan suara makhluk hidup dan menjelaskan pesannya."
+    },
+    {
+      "en": "Explains figurative language using facts about mangroves.",
+      "id": "Menjelaskan bahasa kiasan dengan fakta tentang bakau."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "tide",
+        "id": "pasang surut"
+      },
+      "meaning": {
+        "en": "the regular rise and fall of the sea",
+        "id": "naik turunnya air laut secara teratur"
+      }
+    },
+    {
+      "word": {
+        "en": "guardian",
+        "id": "penjaga"
+      },
+      "meaning": {
+        "en": "someone who protects something",
+        "id": "seseorang yang melindungi sesuatu"
+      }
+    },
+    {
+      "word": {
+        "en": "tangle",
+        "id": "jalinan"
+      },
+      "meaning": {
+        "en": "many things twisted together",
+        "id": "banyak benda yang saling terbelit"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "inference",
+      "prompt": {
+        "en": "Who is speaking in the poem?",
+        "id": "Siapa yang berbicara dalam puisi ini?"
+      },
+      "choices": {
+        "en": [
+          "a mangrove tree",
+          "a fisherman",
+          "a crab"
+        ],
+        "id": [
+          "pohon bakau",
+          "nelayan",
+          "kepiting"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "critical",
+      "prompt": {
+        "en": "What does 'I hold the shore in my fingers' mean?",
+        "id": "Apa arti 'Kugenggam pantai dengan jari-jariku'?"
+      },
+      "choices": {
+        "en": [
+          "the roots grip the mud and keep the coast from washing away",
+          "the tree picks up sand to play with",
+          "the tree has real hands"
+        ],
+        "id": [
+          "akar mencengkeram lumpur dan menjaga pantai agar tidak terkikis",
+          "pohon memungut pasir untuk bermain",
+          "pohon itu punya tangan sungguhan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "science",
+      "prompt": {
+        "en": "According to stanza 3, how do mangroves help sea life?",
+        "id": "Menurut bait 3, bagaimana bakau membantu kehidupan laut?"
+      },
+      "choices": {
+        "en": [
+          "young fish, shrimp and crabs shelter among the roots",
+          "they make the sea water fresh",
+          "they feed sharks with leaves"
+        ],
+        "id": [
+          "ikan muda, udang, dan kepiting berlindung di sela akar",
+          "mereka membuat air laut menjadi tawar",
+          "mereka memberi makan hiu dengan daun"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q4",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main message of the last stanza?",
+        "id": "Apa pesan utama bait terakhir?"
+      },
+      "choices": {
+        "en": [
+          "people should protect mangroves",
+          "boardwalks are fun to walk on",
+          "the sea is noisy at night"
+        ],
+        "id": [
+          "manusia harus melindungi bakau",
+          "titian kayu menyenangkan untuk dilalui",
+          "laut berisik di malam hari"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q5",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "In stanza 1, what is the 'tide'?",
+        "id": "Pada bait 1, apa yang dimaksud 'pasang'?"
+      },
+      "choices": {
+        "en": [
+          "the sea rising and falling each day",
+          "a storm cloud",
+          "a kind of fish"
+        ],
+        "id": [
+          "air laut yang naik dan turun setiap hari",
+          "awan badai",
+          "sejenis ikan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Mangroves protect coasts, shelter young sea creatures and store carbon.",
+        "id": "Bakau melindungi pantai, menjadi tempat berlindung hewan laut muda, dan menyimpan karbon."
+      }
+    },
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Indonesia has some of the largest mangrove forests in the world.",
+        "id": "Indonesia memiliki salah satu hutan bakau terluas di dunia."
+      }
+    },
+    {
+      "subject": "creativity",
+      "connection": {
+        "en": "Writing in the voice of a living thing (personification) helps readers care.",
+        "id": "Menulis dengan suara makhluk hidup (personifikasi) membuat pembaca peduli."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Why do you think the poet let the mangrove speak, instead of describing it?",
+      "id": "Menurutmu, mengapa penyair membiarkan bakau berbicara, bukan hanya menggambarkannya?"
+    },
+    {
+      "en": "What might happen to a coast if its mangroves were cut down?",
+      "id": "Apa yang mungkin terjadi pada pantai jika bakaunya ditebang?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Write a poem of three or four stanzas in the voice of something in nature near you, such as a rice field, a river or a big tree. Include at least two true facts about it and one comparison.",
+    "id": "Tulis puisi tiga atau empat bait dengan suara sesuatu di alam sekitarmu, misalnya sawah, sungai, atau pohon besar. Masukkan sedikitnya dua fakta yang benar tentangnya dan satu perbandingan."
+  },
+  "factChecks": [
+    {
+      "claim": "Mangroves grow in salty or brackish water where rivers meet the sea.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Most coasts have two high tides and two low tides each day.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Mangrove roots slow waves and help protect coasts.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Young fish, shrimp and crabs shelter among mangrove roots.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Mangroves trap sediment and store carbon in their mud.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Indonesia has some of the largest mangrove areas in the world.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

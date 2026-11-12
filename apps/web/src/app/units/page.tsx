@@ -84,7 +84,7 @@ export default async function UnitsPage({ searchParams }: { searchParams: Promis
 function UnitCard({ e, t, locale }: { e: ExpansionEntry<Unit>; t: Dictionary; locale: Locale }) {
   const u = e.item;
   return (
-    <li className="card flex flex-col gap-2" data-unit={u.id} data-level={u.level} data-state={e.state}>
+    <li className="card flex flex-col gap-2" data-unit={u.id} data-level={u.level} data-state={e.state} data-visible={e.visibleToChildren ? 'true' : 'false'} data-framework={u.framework}>
       <p className="text-sm font-semibold text-sage-dark">{t.curriculum.stage[u.level]} · {t.units.framework[u.framework]} · {t.units.strand[u.strand as keyof Dictionary['units']['strand']] ?? u.strand}</p>
       <h3 className="text-lg font-bold leading-snug">{u.title[locale]}</h3>
       <p className="line-clamp-3 text-sm">{u.objective[locale]}</p>

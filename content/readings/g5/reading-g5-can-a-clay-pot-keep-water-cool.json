@@ -1,0 +1,285 @@
+{
+  "id": "reading-g5-can-a-clay-pot-keep-water-cool",
+  "version": "1.0.0",
+  "level": "g5",
+  "readingLevel": "fluent",
+  "genre": "article",
+  "mode": "independent",
+  "title": {
+    "en": "Can a clay pot keep water cool?",
+    "id": "Bisakah kendi tanah liat menjaga air tetap sejuk?"
+  },
+  "text": {
+    "en": [
+      "In many Indonesian homes, before fridges were common, drinking water was kept in an unglazed clay jug called a kendi. People often say that water from a kendi tastes cooler. Is that true, and if so, why?",
+      "The science idea is evaporation. When water evaporates, it takes heat away from the surface it leaves. That is why you feel cool when a breeze blows on wet skin. Unglazed clay has tiny holes called pores. A little water seeps through the pores and evaporates from the outside of the pot, carrying heat away.",
+      "To show how a claim like this can be checked, here is an invented example. It was made up for this article and is not a real study. A Grade 5 class filled an unglazed clay pot and a glass jar with 1 litre of water each, from the same tap, at 28 °C. They placed both side by side in the shade on the school veranda.",
+      "After 4 hours, they measured again with the same thermometer. The water in the glass jar was 29 °C, close to the warm air around it. The water in the clay pot was 24 °C. The outside of the clay pot felt damp.",
+      "Was it a fair test? The class kept the water, the amount, the starting temperature, the place and the time the same. Only the container was different. They also repeated the test on two more days and got similar results.",
+      "Every test has limits. On a humid, rainy day, water evaporates more slowly, so the pot may cool the water much less. The class tested only one pot, so another pot with thicker walls might give a different result. A careful reader should not decide that every kendi cools water by exactly the same amount.",
+      "So what can we conclude? The evidence fits the science: an unglazed clay pot can keep water a few degrees cooler than the air, especially in dry, breezy weather. To keep the water safe to drink, the pot must be kept clean and covered."
+    ],
+    "id": [
+      "Di banyak rumah di Indonesia, sebelum kulkas umum dimiliki, air minum disimpan dalam kendi tanah liat yang tidak dilapisi glasir. Orang sering bilang air dari kendi terasa lebih sejuk. Benarkah begitu? Jika benar, mengapa?",
+      "Gagasan sainsnya adalah penguapan. Saat air menguap, air membawa panas dari permukaan yang ditinggalkannya. Itulah sebabnya kulit yang basah terasa sejuk saat tertiup angin. Tanah liat tanpa glasir punya lubang-lubang kecil yang disebut pori. Sedikit air merembes melalui pori dan menguap dari luar kendi sambil membawa panas pergi.",
+      "Untuk menunjukkan cara memeriksa klaim seperti ini, berikut contoh rekaan. Contoh ini dibuat untuk artikel ini dan bukan penelitian sungguhan. Sebuah kelas 5 mengisi kendi tanah liat tanpa glasir dan stoples kaca, masing-masing dengan 1 liter air dari keran yang sama, bersuhu 28 °C. Keduanya diletakkan berdampingan di tempat teduh di beranda sekolah.",
+      "Setelah 4 jam, mereka mengukur lagi dengan termometer yang sama. Air di stoples kaca bersuhu 29 °C, hampir sama dengan udara hangat di sekitarnya. Air di kendi bersuhu 24 °C. Bagian luar kendi terasa lembap.",
+      "Apakah ujinya adil? Kelas itu menjaga air, jumlahnya, suhu awal, tempat, dan lamanya tetap sama. Hanya wadahnya yang berbeda. Mereka juga mengulang uji itu dua hari lagi dan mendapat hasil yang mirip.",
+      "Setiap uji punya keterbatasan. Pada hari yang lembap dan hujan, air menguap lebih lambat, jadi kendi mungkin mendinginkan air jauh lebih sedikit. Kelas itu hanya menguji satu kendi, jadi kendi lain yang dindingnya lebih tebal bisa memberi hasil berbeda. Pembaca yang cermat tidak boleh menyimpulkan bahwa setiap kendi mendinginkan air dengan jumlah yang persis sama.",
+      "Jadi, apa kesimpulannya? Buktinya sesuai dengan sains: kendi tanah liat tanpa glasir dapat menjaga air beberapa derajat lebih sejuk daripada udara, terutama saat cuaca kering dan berangin. Supaya airnya aman diminum, kendi harus selalu bersih dan tertutup."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads an evidence-based article and separates the claim, the evidence and the limits.",
+      "id": "Membaca artikel berbasis bukti dan memisahkan klaim, bukti, dan keterbatasannya."
+    },
+    {
+      "en": "Explains evaporative cooling and what makes a test fair.",
+      "id": "Menjelaskan pendinginan karena penguapan dan apa yang membuat uji menjadi adil."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "evaporation",
+        "id": "penguapan"
+      },
+      "meaning": {
+        "en": "when a liquid turns into a gas",
+        "id": "saat zat cair berubah menjadi gas"
+      }
+    },
+    {
+      "word": {
+        "en": "pores",
+        "id": "pori"
+      },
+      "meaning": {
+        "en": "tiny holes that let water or air pass through",
+        "id": "lubang kecil yang bisa dilewati air atau udara"
+      }
+    },
+    {
+      "word": {
+        "en": "humid",
+        "id": "lembap"
+      },
+      "meaning": {
+        "en": "with a lot of water vapour in the air",
+        "id": "udaranya banyak mengandung uap air"
+      }
+    },
+    {
+      "word": {
+        "en": "conclude",
+        "id": "menyimpulkan"
+      },
+      "meaning": {
+        "en": "decide what is true after looking at the evidence",
+        "id": "memutuskan apa yang benar setelah melihat bukti"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "math",
+      "prompt": {
+        "en": "After 4 hours, how many degrees cooler was the clay-pot water than the glass-jar water?",
+        "id": "Setelah 4 jam, berapa derajat lebih sejuk air di kendi dibandingkan air di stoples kaca?"
+      },
+      "choices": {
+        "en": [
+          "5 °C",
+          "4 °C",
+          "53 °C"
+        ],
+        "id": [
+          "5 °C",
+          "4 °C",
+          "53 °C"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3,
+      "check": {
+        "expression": "29 - 24",
+        "result": "5"
+      }
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "Why does the water inside the clay pot get cooler?",
+        "id": "Mengapa air di dalam kendi menjadi lebih sejuk?"
+      },
+      "choices": {
+        "en": [
+          "water seeping through the pores evaporates and carries heat away",
+          "clay is colder than glass by nature",
+          "the shade freezes the outside of the pot"
+        ],
+        "id": [
+          "air yang merembes melalui pori menguap dan membawa panas pergi",
+          "tanah liat memang lebih dingin daripada kaca",
+          "tempat teduh membekukan bagian luar kendi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "critical",
+      "prompt": {
+        "en": "Which change would have made the class's test unfair?",
+        "id": "Perubahan mana yang akan membuat uji kelas itu tidak adil?"
+      },
+      "choices": {
+        "en": [
+          "putting the clay pot in the shade and the glass jar in the sun",
+          "using a thermometer for both containers",
+          "starting both with 1 litre of water"
+        ],
+        "id": [
+          "meletakkan kendi di tempat teduh dan stoples kaca di bawah matahari",
+          "memakai termometer untuk kedua wadah",
+          "mengisi keduanya dengan 1 liter air di awal"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which detail is a limit of the test, not a result?",
+        "id": "Rincian mana yang merupakan keterbatasan uji, bukan hasilnya?"
+      },
+      "choices": {
+        "en": [
+          "the class tested only one pot",
+          "the glass-jar water was 29 °C",
+          "the outside of the pot felt damp"
+        ],
+        "id": [
+          "kelas itu hanya menguji satu kendi",
+          "air di stoples kaca bersuhu 29 °C",
+          "bagian luar kendi terasa lembap"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": {
+        "en": "On which day would a kendi probably cool water the most?",
+        "id": "Pada hari seperti apa kendi kemungkinan paling banyak mendinginkan air?"
+      },
+      "choices": {
+        "en": [
+          "a dry, breezy day",
+          "a humid, rainy day",
+          "a still, foggy morning"
+        ],
+        "id": [
+          "hari yang kering dan berangin",
+          "hari yang lembap dan hujan",
+          "pagi yang tenang dan berkabut"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Evaporation takes heat away, which is how sweating and clay pots cool things.",
+        "id": "Penguapan membawa panas pergi; begitulah keringat dan kendi mendinginkan."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Comparing temperatures uses subtraction.",
+        "id": "Membandingkan suhu memakai pengurangan."
+      }
+    },
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "The kendi is a traditional Indonesian water jug.",
+        "id": "Kendi adalah wadah air tradisional Indonesia."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Why does the article say the example is invented? Why does that matter?",
+      "id": "Mengapa artikel menyebut contohnya rekaan? Mengapa hal itu penting?"
+    },
+    {
+      "en": "How else could you keep drinking water cool without a fridge?",
+      "id": "Dengan cara apa lagi kamu bisa menjaga air minum tetap sejuk tanpa kulkas?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Wrap one cup of water in a damp cloth and leave a second cup uncovered, side by side in the shade. Measure both with a thermometer at the start and after two hours. Write what you kept the same, what you changed, and one limit of your test. Pour the water away when you finish.",
+    "id": "Bungkus satu gelas air dengan kain basah dan biarkan gelas kedua terbuka, berdampingan di tempat teduh. Ukur keduanya dengan termometer di awal dan setelah dua jam. Tulis apa yang kamu buat tetap sama, apa yang kamu ubah, dan satu keterbatasan ujimu. Buang airnya setelah selesai."
+  },
+  "factChecks": [
+    {
+      "claim": "The Grade 5 class test and all its temperatures are an invented example, labelled as such in the text.",
+      "status": "invented_example"
+    },
+    {
+      "claim": "Evaporation takes heat away from a surface.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Unglazed clay is porous, so water can seep through and evaporate from the outside.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Evaporation is slower in humid air, so evaporative cooling is weaker.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The kendi is a traditional clay water jug used in Indonesia.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Use a thermometer meant for liquids or air, not a glass mercury thermometer. Do not leave cups of water outside overnight.",
+      "id": "Pakai termometer untuk cairan atau udara, bukan termometer raksa kaca. Jangan biarkan gelas berisi air di luar semalaman."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

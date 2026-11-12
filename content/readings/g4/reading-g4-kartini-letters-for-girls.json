@@ -1,0 +1,275 @@
+{
+  "id": "reading-g4-kartini-letters-for-girls",
+  "version": "1.0.0",
+  "level": "g4",
+  "readingLevel": "fluent",
+  "genre": "biography",
+  "mode": "independent",
+  "title": {
+    "en": "Kartini: letters that asked for schools",
+    "id": "Kartini: surat-surat yang memperjuangkan sekolah"
+  },
+  "text": {
+    "en": [
+      "Raden Ajeng Kartini was born on 21 April 1879 in Jepara, on the north coast of Central Java. Her father was an important Javanese official, and Indonesia was then ruled by the Dutch.",
+      "As a girl, Kartini went to a Dutch-language primary school. She loved reading and learning. But at about twelve years old she had to leave school and stay at home, because that was the custom for girls from noble families at the time.",
+      "At home, Kartini kept learning by reading books and newspapers. She wrote long letters to friends in the Netherlands. In them she wrote about her wish that Indonesian girls could go to school and choose their own futures.",
+      "Kartini did more than write. With her sisters, she opened a small school for girls, where they learned reading, writing and handicrafts.",
+      "In 1903 Kartini married the regent of Rembang. Sadly, she died in 1904, when she was only 25 years old, a few days after her son was born.",
+      "In 1911 her letters were collected and published as a book. In Indonesian it is known as 'Habis Gelap Terbitlah Terang', which means 'After Darkness Comes Light'. Her ideas inspired many people, and schools for girls were later named after her.",
+      "Kartini is a National Hero of Indonesia. Every year on 21 April, Hari Kartini, many schools celebrate her and the right of every child to learn."
+    ],
+    "id": [
+      "Raden Ajeng Kartini lahir pada 21 April 1879 di Jepara, di pantai utara Jawa Tengah. Ayahnya seorang pejabat Jawa yang penting, dan saat itu Indonesia dijajah Belanda.",
+      "Semasa kecil, Kartini bersekolah di sekolah dasar berbahasa Belanda. Ia suka membaca dan belajar. Namun pada usia sekitar dua belas tahun ia harus berhenti sekolah dan tinggal di rumah, karena itulah adat bagi anak perempuan bangsawan pada masa itu.",
+      "Di rumah, Kartini terus belajar dengan membaca buku dan surat kabar. Ia menulis surat-surat panjang kepada sahabatnya di Belanda. Di dalamnya ia menuliskan harapannya agar anak perempuan Indonesia bisa bersekolah dan menentukan masa depan sendiri.",
+      "Kartini tidak hanya menulis. Bersama adik-adiknya, ia membuka sekolah kecil untuk anak perempuan, tempat mereka belajar membaca, menulis, dan keterampilan tangan.",
+      "Pada tahun 1903 Kartini menikah dengan Bupati Rembang. Sayangnya, ia wafat pada tahun 1904, saat usianya baru 25 tahun, beberapa hari setelah putranya lahir.",
+      "Pada tahun 1911 surat-suratnya dikumpulkan dan diterbitkan menjadi buku. Dalam bahasa Indonesia buku itu dikenal sebagai 'Habis Gelap Terbitlah Terang'. Gagasannya menginspirasi banyak orang, dan kemudian ada sekolah-sekolah perempuan yang dinamai menurut namanya.",
+      "Kartini adalah Pahlawan Nasional Indonesia. Setiap tanggal 21 April, Hari Kartini, banyak sekolah memperingatinya dan hak setiap anak untuk belajar."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a biography and puts key life events in order.",
+      "id": "Membaca biografi dan mengurutkan peristiwa penting dalam hidup tokoh."
+    },
+    {
+      "en": "Explains how a person's actions and ideas changed things for others.",
+      "id": "Menjelaskan bagaimana tindakan dan gagasan seseorang mengubah keadaan bagi orang lain."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "custom",
+        "id": "adat"
+      },
+      "meaning": {
+        "en": "the usual way things are done by a group of people",
+        "id": "kebiasaan yang biasa dilakukan sekelompok orang"
+      }
+    },
+    {
+      "word": {
+        "en": "noble",
+        "id": "bangsawan"
+      },
+      "meaning": {
+        "en": "from a family with a high rank in society",
+        "id": "dari keluarga berkedudukan tinggi dalam masyarakat"
+      }
+    },
+    {
+      "word": {
+        "en": "inspire",
+        "id": "menginspirasi"
+      },
+      "meaning": {
+        "en": "give someone the wish and courage to do something",
+        "id": "memberi seseorang keinginan dan semangat untuk melakukan sesuatu"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why did Kartini have to leave school at about twelve?",
+        "id": "Mengapa Kartini harus berhenti sekolah pada usia sekitar dua belas tahun?"
+      },
+      "choices": {
+        "en": [
+          "it was the custom for girls from noble families",
+          "the school closed down",
+          "she did not like reading"
+        ],
+        "id": [
+          "itu adat bagi anak perempuan bangsawan",
+          "sekolahnya ditutup",
+          "ia tidak suka membaca"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "Which of these happened last?",
+        "id": "Manakah yang terjadi paling akhir?"
+      },
+      "choices": {
+        "en": [
+          "her letters were published as a book",
+          "she opened a small school for girls",
+          "she married the regent of Rembang"
+        ],
+        "id": [
+          "surat-suratnya diterbitkan menjadi buku",
+          "ia membuka sekolah kecil untuk anak perempuan",
+          "ia menikah dengan Bupati Rembang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "How many years after Kartini died were her letters published?",
+        "id": "Berapa tahun setelah Kartini wafat surat-suratnya diterbitkan?"
+      },
+      "choices": {
+        "en": [
+          "7 years",
+          "32 years",
+          "25 years"
+        ],
+        "id": [
+          "7 tahun",
+          "32 tahun",
+          "25 tahun"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5,
+      "check": {
+        "expression": "1911 - 1904",
+        "result": "7"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why is 'After Darkness Comes Light' a fitting title?",
+        "id": "Mengapa 'Habis Gelap Terbitlah Terang' adalah judul yang cocok?"
+      },
+      "choices": {
+        "en": [
+          "it hopes that a time without schooling for girls would give way to a brighter future",
+          "the letters were written only at night",
+          "Kartini was afraid of the dark"
+        ],
+        "id": [
+          "judul itu berharap masa tanpa sekolah bagi perempuan berganti menjadi masa depan yang lebih cerah",
+          "surat-suratnya hanya ditulis di malam hari",
+          "Kartini takut gelap"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q5",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What does 'inspired' mean in paragraph 6?",
+        "id": "Apa arti 'menginspirasi' di paragraf 6?"
+      },
+      "choices": {
+        "en": [
+          "gave people the wish and courage to act",
+          "made people angry",
+          "made people forget"
+        ],
+        "id": [
+          "memberi orang keinginan dan semangat untuk bertindak",
+          "membuat orang marah",
+          "membuat orang lupa"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Kartini's story shows how education for girls became a national goal.",
+        "id": "Kisah Kartini menunjukkan bagaimana pendidikan bagi perempuan menjadi cita-cita bangsa."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Working out ages and gaps between years uses subtraction.",
+        "id": "Menghitung usia dan selisih tahun memakai pengurangan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Kartini kept learning even when she could not go to school. How else can people learn?",
+      "id": "Kartini terus belajar walaupun tidak bisa sekolah. Dengan cara apa lagi orang bisa belajar?"
+    },
+    {
+      "en": "What would you write in a letter about something you hope will change?",
+      "id": "Apa yang akan kamu tulis dalam surat tentang sesuatu yang kamu harap berubah?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Write a letter to a friend or relative about one thing you hope will change in your school or town, and why. Then make a timeline of Kartini's life with at least five dated events from the text.",
+    "id": "Tulis surat kepada teman atau saudara tentang satu hal yang kamu harap berubah di sekolah atau kotamu, dan alasannya. Lalu buat garis waktu kehidupan Kartini dengan sedikitnya lima peristiwa bertanggal dari teks."
+  },
+  "factChecks": [
+    {
+      "claim": "Kartini was born on 21 April 1879 in Jepara, Central Java.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "She attended a Dutch-language primary school and left at about 12, as was the custom for noble girls (pingitan).",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "She wrote letters to friends in the Netherlands about education for Indonesian girls.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "She opened a small school for girls.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "She married the regent of Rembang in 1903 and died in 1904, aged 25, a few days after giving birth.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Her letters were published in 1911; the Indonesian edition is titled Habis Gelap Terbitlah Terang.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Kartini is a National Hero of Indonesia, and 21 April is Hari Kartini.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Schools for girls were later named after Kartini.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

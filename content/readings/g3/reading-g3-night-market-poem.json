@@ -1,0 +1,231 @@
+{
+  "id": "reading-g3-night-market-poem",
+  "version": "1.0.0",
+  "level": "g3",
+  "readingLevel": "transitional",
+  "genre": "poetry",
+  "mode": "independent",
+  "title": {
+    "en": "The night market",
+    "id": "Pasar malam"
+  },
+  "text": {
+    "en": [
+      "When the sun slips down and the streetlights glow, / the night market wakes in a long bright row. / Lamps swing gently on poles and strings, / and the air is full of sizzling things.",
+      "Martabak flips on a pan so wide, / sweet and thick with chocolate inside. / Satay smoke curls in a silver cloud, / and the sellers call out, cheerful and loud.",
+      "A carousel horse goes round and round, / with bells and laughter, a happy sound. / Bright balloons bob above the crowd, / like little moons inside a cloud.",
+      "I hold Dad's hand down the crowded lane, / and count the stalls, then count again. / When my eyes grow heavy and the moon is high, / I wave the night market a sleepy goodbye."
+    ],
+    "id": [
+      "Saat matahari turun dan lampu jalan menyala, / pasar malam terbangun, ramai dan bercahaya. / Lampu-lampu bergoyang di tiang dan tali, / udara penuh desis gorengan di sana-sini.",
+      "Martabak dibalik di wajan yang lebar, / manis dan tebal, cokelatnya bertebar. / Asap sate naik seperti awan perak, / penjual berseru riang, suaranya semarak.",
+      "Kuda komidi putar berputar dan berputar, / tawa dan lonceng riang terdengar. / Balon-balon terang melayang di atas kerumunan, / seperti bulan kecil di dalam awan.",
+      "Kugenggam tangan Ayah di lorong yang ramai, / kuhitung kios satu per satu sampai usai. / Saat mataku berat dan bulan tinggi di sana, / kulambaikan tangan mengantuk: dadah, pasar malam tercinta."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a rhyming poem aloud with rhythm and expression.",
+      "id": "Membaca puisi berirama dengan lantang, berirama, dan berekspresi."
+    },
+    {
+      "en": "Identifies rhyming words and sensory images in a poem.",
+      "id": "Menemukan kata berima dan gambaran indra dalam puisi."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "sizzling",
+        "id": "berdesis"
+      },
+      "meaning": {
+        "en": "making the hissing sound of food frying in hot oil",
+        "id": "berbunyi seperti makanan yang digoreng di minyak panas"
+      }
+    },
+    {
+      "word": {
+        "en": "stall",
+        "id": "kios"
+      },
+      "meaning": {
+        "en": "a small table or stand where things are sold",
+        "id": "meja atau lapak kecil tempat berjualan"
+      }
+    },
+    {
+      "word": {
+        "en": "stanza",
+        "id": "bait"
+      },
+      "meaning": {
+        "en": "a group of lines in a poem",
+        "id": "kelompok baris dalam puisi"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What is inside the martabak?",
+        "id": "Apa isi martabaknya?"
+      },
+      "choices": {
+        "en": [
+          "chocolate",
+          "cheese",
+          "egg"
+        ],
+        "id": [
+          "cokelat",
+          "keju",
+          "telur"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "critical",
+      "prompt": {
+        "en": "Which two words rhyme at the ends of the first two lines of the poem?",
+        "id": "Dua kata mana yang berima di akhir dua baris pertama puisi?"
+      },
+      "choices": {
+        "en": [
+          "glow and row",
+          "glow and strings",
+          "down and bright"
+        ],
+        "id": [
+          "menyala dan bercahaya",
+          "menyala dan tali",
+          "turun dan ramai"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q3",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What does 'sizzling' make you imagine?",
+        "id": "Kata 'desis gorengan' membuatmu membayangkan apa?"
+      },
+      "choices": {
+        "en": [
+          "food frying in hot oil",
+          "rain on a roof",
+          "a quiet library"
+        ],
+        "id": [
+          "makanan yang digoreng di minyak panas",
+          "hujan di atap",
+          "perpustakaan yang sepi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "How does the child feel at the end of the poem?",
+        "id": "Bagaimana perasaan anak di akhir puisi?"
+      },
+      "choices": {
+        "en": [
+          "tired but happy after a fun evening",
+          "frightened of the crowd",
+          "angry at Dad"
+        ],
+        "id": [
+          "lelah tetapi senang setelah malam yang seru",
+          "takut pada kerumunan",
+          "marah kepada Ayah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q5",
+      "kind": "critical",
+      "prompt": {
+        "en": "In stanza 3, the balloons are compared to what?",
+        "id": "Pada bait 3, balon dibandingkan dengan apa?"
+      },
+      "choices": {
+        "en": [
+          "little moons",
+          "satay smoke",
+          "carousel horses"
+        ],
+        "id": [
+          "bulan kecil",
+          "asap sate",
+          "kuda komidi putar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Night markets (pasar malam) are a lively part of town life across Indonesia.",
+        "id": "Pasar malam adalah bagian kehidupan kota yang meriah di seluruh Indonesia."
+      }
+    },
+    {
+      "subject": "creativity",
+      "connection": {
+        "en": "Poets use rhyme and pictures for the senses to bring a place to life.",
+        "id": "Penyair memakai rima dan gambaran indra untuk menghidupkan suatu tempat."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which line helps you hear the night market best? Which helps you smell it?",
+      "id": "Baris mana yang paling membuatmu 'mendengar' pasar malam? Baris mana yang membuatmu 'mencium' baunya?"
+    },
+    {
+      "en": "What place would you write a poem about?",
+      "id": "Tempat apa yang ingin kamu jadikan puisi?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Write a four-line stanza about a busy place you know, such as a bus stop or the school canteen. Make lines 1 and 2 rhyme, and lines 3 and 4 rhyme. Read it aloud to someone at home.",
+    "id": "Tulis satu bait empat baris tentang tempat ramai yang kamu kenal, misalnya halte bus atau kantin sekolah. Buat baris 1 dan 2 berima, serta baris 3 dan 4 berima. Bacakan dengan lantang kepada seseorang di rumah."
+  },
+  "factChecks": [],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

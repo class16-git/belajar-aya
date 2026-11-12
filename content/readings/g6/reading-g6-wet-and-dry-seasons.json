@@ -1,0 +1,276 @@
+{
+  "id": "reading-g6-wet-and-dry-seasons",
+  "version": "1.0.0",
+  "level": "g6",
+  "readingLevel": "advanced",
+  "genre": "explanatory",
+  "mode": "independent",
+  "title": {
+    "en": "Why Indonesia has wet and dry seasons, not four",
+    "id": "Mengapa Indonesia punya musim hujan dan kemarau, bukan empat musim"
+  },
+  "text": {
+    "en": [
+      "In storybooks from other countries, the year has four seasons: spring, summer, autumn and winter. In Indonesia we talk about two: the rainy season and the dry season. Why the difference?",
+      "The answer starts with a tilt. The Earth's axis, the line it spins around, is tilted by about 23.5 degrees. As the Earth travels around the sun during the year, first one half and then the other leans towards the sun.",
+      "The half leaning towards the sun gets more direct sunlight and longer days, so it has summer. The half leaning away gets weaker sunlight and shorter days, so it has winter. Far from the equator, in places such as Japan or Australia's south, this makes four clear seasons.",
+      "A common mistake is to think seasons happen because the Earth moves closer to the sun and then further away. In fact, the Earth is closest to the sun in early January, which is winter in the northern half of the world.",
+      "Indonesia lies across the equator. Here the sun is high in the sky all year, and day length stays close to 12 hours. So temperatures hardly change from month to month. The tilt does not give us a cold winter.",
+      "Instead, our seasons are about rain, and they are driven by monsoon winds that change direction during the year. In much of Indonesia, from about October or November to March or April, winds blow from the north-west across warm oceans and carry a lot of moisture: that is the rainy season.",
+      "From about April or May to September or October, winds blow from the south-east, from the dry land of Australia, and bring less rain: that is the dry season.",
+      "These dates are only a rough guide. The timing differs from region to region, and in some places, such as parts of Maluku, the rainiest months come in the middle of the year. In some years, ocean changes such as El Niño make the dry season longer and drier."
+    ],
+    "id": [
+      "Dalam buku cerita dari negara lain, satu tahun punya empat musim: semi, panas, gugur, dan dingin. Di Indonesia kita mengenal dua: musim hujan dan musim kemarau. Mengapa berbeda?",
+      "Jawabannya berawal dari kemiringan. Sumbu Bumi, garis tempat Bumi berputar, miring sekitar 23,5 derajat. Saat Bumi mengelilingi matahari selama setahun, mula-mula belahan yang satu, lalu belahan yang lain, condong ke arah matahari.",
+      "Belahan yang condong ke matahari mendapat sinar lebih langsung dan siang yang lebih panjang, jadi mengalami musim panas. Belahan yang menjauh mendapat sinar lebih lemah dan siang lebih pendek, jadi mengalami musim dingin. Jauh dari khatulistiwa, misalnya di Jepang atau Australia bagian selatan, hal ini menghasilkan empat musim yang jelas.",
+      "Kesalahan umum adalah mengira musim terjadi karena Bumi mendekat lalu menjauh dari matahari. Kenyataannya, Bumi paling dekat dengan matahari pada awal Januari, yang justru musim dingin di belahan Bumi utara.",
+      "Indonesia terletak melintasi khatulistiwa. Di sini matahari tinggi di langit sepanjang tahun, dan panjang siang tetap sekitar 12 jam. Jadi suhu hampir tidak berubah dari bulan ke bulan. Kemiringan Bumi tidak memberi kita musim dingin.",
+      "Musim kita justru ditentukan oleh hujan, dan digerakkan oleh angin muson yang berganti arah sepanjang tahun. Di sebagian besar Indonesia, sekitar bulan Oktober atau November sampai Maret atau April, angin bertiup dari barat laut melintasi samudra yang hangat dan membawa banyak uap air: itulah musim hujan.",
+      "Sekitar bulan April atau Mei sampai September atau Oktober, angin bertiup dari tenggara, dari daratan Australia yang kering, dan membawa lebih sedikit hujan: itulah musim kemarau.",
+      "Bulan-bulan ini hanya perkiraan kasar. Waktunya berbeda di setiap daerah, dan di beberapa tempat, misalnya sebagian Maluku, bulan-bulan paling basah justru terjadi di pertengahan tahun. Pada tahun-tahun tertentu, perubahan di samudra seperti El Niño membuat musim kemarau lebih panjang dan lebih kering."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads an explanation that links cause and effect across several paragraphs.",
+      "id": "Membaca teks eksplanasi yang menghubungkan sebab dan akibat di beberapa paragraf."
+    },
+    {
+      "en": "Explains why seasons near the equator depend on rainfall rather than temperature.",
+      "id": "Menjelaskan mengapa musim di dekat khatulistiwa bergantung pada curah hujan, bukan suhu."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "axis",
+        "id": "sumbu"
+      },
+      "meaning": {
+        "en": "the imaginary line the Earth spins around",
+        "id": "garis khayal tempat Bumi berputar"
+      }
+    },
+    {
+      "word": {
+        "en": "monsoon",
+        "id": "muson"
+      },
+      "meaning": {
+        "en": "a wind that changes direction with the seasons and brings wet or dry weather",
+        "id": "angin yang berganti arah menurut musim dan membawa cuaca basah atau kering"
+      }
+    },
+    {
+      "word": {
+        "en": "moisture",
+        "id": "uap air"
+      },
+      "meaning": {
+        "en": "water held in the air",
+        "id": "air yang terkandung di udara"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What mainly causes Indonesia's two seasons?",
+        "id": "Apa penyebab utama dua musim di Indonesia?"
+      },
+      "choices": {
+        "en": [
+          "monsoon winds that change direction and bring wet or dry air",
+          "the Earth moving closer to and further from the sun",
+          "the moon pulling the clouds"
+        ],
+        "id": [
+          "angin muson yang berganti arah dan membawa udara basah atau kering",
+          "Bumi mendekat dan menjauh dari matahari",
+          "bulan menarik awan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "Which fact shows that distance from the sun does not cause seasons?",
+        "id": "Fakta mana yang menunjukkan bahwa jarak ke matahari bukan penyebab musim?"
+      },
+      "choices": {
+        "en": [
+          "the Earth is closest to the sun in early January, during the northern winter",
+          "the Earth's axis is tilted about 23.5 degrees",
+          "Indonesia has about 12 hours of daylight"
+        ],
+        "id": [
+          "Bumi paling dekat dengan matahari pada awal Januari, saat musim dingin di belahan utara",
+          "sumbu Bumi miring sekitar 23,5 derajat",
+          "siang di Indonesia sekitar 12 jam"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why do winds from the north-west bring more rain than winds from the south-east?",
+        "id": "Mengapa angin dari barat laut membawa lebih banyak hujan daripada angin dari tenggara?"
+      },
+      "choices": {
+        "en": [
+          "they pass over warm oceans and pick up moisture, while the south-east winds come from dry land",
+          "north-west winds are always colder",
+          "south-east winds blow only at night"
+        ],
+        "id": [
+          "angin itu melewati samudra hangat dan membawa uap air, sedangkan angin tenggara datang dari daratan kering",
+          "angin barat laut selalu lebih dingin",
+          "angin tenggara hanya bertiup di malam hari"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "In one town, the dry season lasts from May to September, counting both months. How many months is that?",
+        "id": "Di sebuah kota, musim kemarau berlangsung dari Mei sampai September, termasuk kedua bulan itu. Berapa bulan lamanya?"
+      },
+      "choices": {
+        "en": [
+          "5 months",
+          "4 months",
+          "14 months"
+        ],
+        "id": [
+          "5 bulan",
+          "4 bulan",
+          "14 bulan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6,
+      "check": {
+        "expression": "9 - 5 + 1",
+        "result": "5"
+      }
+    },
+    {
+      "id": "q5",
+      "kind": "critical",
+      "prompt": {
+        "en": "Why does the writer call the dates 'only a rough guide'?",
+        "id": "Mengapa penulis menyebut bulan-bulan itu 'hanya perkiraan kasar'?"
+      },
+      "choices": {
+        "en": [
+          "timing differs between regions and between years",
+          "nobody has ever recorded rainfall",
+          "the seasons change every week"
+        ],
+        "id": [
+          "waktunya berbeda antardaerah dan antartahun",
+          "belum pernah ada yang mencatat curah hujan",
+          "musim berganti setiap minggu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 7
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "astronomy",
+      "connection": {
+        "en": "Earth's tilted axis causes four seasons far from the equator.",
+        "id": "Kemiringan sumbu Bumi menyebabkan empat musim di daerah yang jauh dari khatulistiwa."
+      }
+    },
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Monsoon winds shape rainy and dry seasons across Indonesia.",
+        "id": "Angin muson membentuk musim hujan dan kemarau di seluruh Indonesia."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "El Niño years can bring drought and a higher risk of forest fires.",
+        "id": "Tahun El Niño bisa membawa kekeringan dan risiko kebakaran hutan yang lebih tinggi."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "How do the rainy and dry seasons change life in your area, for example for farmers?",
+      "id": "Bagaimana musim hujan dan kemarau mengubah kehidupan di daerahmu, misalnya bagi petani?"
+    },
+    {
+      "en": "Why do you think the 'distance from the sun' idea is such a common mistake?",
+      "id": "Menurutmu, mengapa gagasan 'jarak dari matahari' menjadi kesalahan yang sangat umum?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "For four weeks, record each day whether it rained at home, using a simple tally chart. Then ask an older family member which months are usually wettest where you live, and compare their answer with the text and your record.",
+    "id": "Selama empat minggu, catat setiap hari apakah turun hujan di rumahmu, dengan tabel turus sederhana. Lalu tanyakan kepada anggota keluarga yang lebih tua bulan apa yang biasanya paling basah di daerahmu, dan bandingkan jawabannya dengan teks dan catatanmu."
+  },
+  "factChecks": [
+    {
+      "claim": "The Earth's axis is tilted about 23.5 degrees, which causes seasons away from the equator.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The Earth is closest to the sun in early January.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Near the equator, day length stays close to 12 hours all year and temperatures vary little.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Indonesia's wet season is broadly linked to the north-west (west) monsoon and the dry season to the south-east (east) monsoon from Australia.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "In parts of Maluku, the rainiest months fall in the middle of the year.",
+      "status": "needs_source"
+    },
+    {
+      "claim": "El Niño years tend to make Indonesia's dry season longer and drier.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "id": "reading-g6-draw-a-scale-plan",
+  "version": "1.0.0",
+  "level": "g6",
+  "readingLevel": "advanced",
+  "genre": "procedural",
+  "mode": "independent",
+  "title": {
+    "en": "How to draw a scale plan of your room",
+    "id": "Cara menggambar denah berskala kamarmu"
+  },
+  "text": {
+    "en": [
+      "A plan is a map of a room seen from above, like a bird looking down through the roof. A scale plan shrinks every length by the same amount, so the drawing has exactly the same shape as the real room.",
+      "You will need: a tape measure, squared paper with 1 cm squares, a sharp pencil, a ruler, an eraser and a helper to hold the other end of the tape.",
+      "Step 1: Choose a scale. For most bedrooms, 1 cm on paper for every 50 cm in real life works well. This is written as 1 : 50.",
+      "Step 2: Measure the length and width of the room along the floor, in centimetres. Write the measurements down straight away. For example, if a room is 350 cm long and 300 cm wide, divide each by 50: you draw a rectangle 7 cm by 6 cm.",
+      "Step 3: Measure the big furniture from above: its length and its width. A bed 200 cm by 100 cm becomes a rectangle 4 cm by 2 cm.",
+      "Step 4: Measure how far each piece of furniture is from two walls, scale those distances too, and draw it in the right place.",
+      "Step 5: Mark the door with a gap in the wall and a quarter-circle to show which way it swings. Mark windows with a double line.",
+      "Step 6: Add a title, the scale, a key for your symbols and an arrow pointing north. If you do not have a compass, remember that the sun rises roughly in the east.",
+      "Step 7: Check your work. Measure one line on your plan, multiply by 50 and compare it with the real length. If they do not match, find the step where the mistake crept in."
+    ],
+    "id": [
+      "Denah adalah peta ruangan yang dilihat dari atas, seperti burung yang memandang ke bawah menembus atap. Denah berskala mengecilkan setiap panjang dengan perbandingan yang sama, sehingga gambarnya punya bentuk yang persis sama dengan ruangan sebenarnya.",
+      "Yang kamu perlukan: meteran, kertas berpetak 1 cm, pensil yang runcing, penggaris, penghapus, dan seorang teman untuk memegang ujung meteran.",
+      "Langkah 1: Pilih skala. Untuk kebanyakan kamar tidur, 1 cm di kertas untuk setiap 50 cm sebenarnya sudah cocok. Skala ini ditulis 1 : 50.",
+      "Langkah 2: Ukur panjang dan lebar ruangan di lantai, dalam sentimeter. Langsung tulis hasilnya. Misalnya, jika kamar panjangnya 350 cm dan lebarnya 300 cm, bagi masing-masing dengan 50: kamu menggambar persegi panjang 7 cm kali 6 cm.",
+      "Langkah 3: Ukur perabot besar dari atas: panjang dan lebarnya. Tempat tidur 200 cm kali 100 cm menjadi persegi panjang 4 cm kali 2 cm.",
+      "Langkah 4: Ukur jarak setiap perabot dari dua dinding, ubah juga jarak itu dengan skala, lalu gambar di tempat yang tepat.",
+      "Langkah 5: Tandai pintu dengan celah di dinding dan seperempat lingkaran untuk menunjukkan arah bukaannya. Tandai jendela dengan garis ganda.",
+      "Langkah 6: Tambahkan judul, skala, keterangan simbol, dan panah yang menunjuk ke utara. Jika tidak punya kompas, ingatlah bahwa matahari terbit kira-kira di timur.",
+      "Langkah 7: Periksa hasilnya. Ukur satu garis di denahmu, kalikan dengan 50, lalu bandingkan dengan panjang sebenarnya. Jika tidak cocok, cari langkah tempat kesalahan terjadi."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Follows a multi-step procedure that uses measurement and scale.",
+      "id": "Mengikuti prosedur bertahap yang memakai pengukuran dan skala."
+    },
+    {
+      "en": "Converts between real lengths and scaled lengths by dividing and multiplying.",
+      "id": "Mengubah panjang sebenarnya menjadi panjang berskala dan sebaliknya dengan membagi dan mengalikan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "scale",
+        "id": "skala"
+      },
+      "meaning": {
+        "en": "the ratio between a length on a drawing and the real length",
+        "id": "perbandingan antara panjang di gambar dan panjang sebenarnya"
+      }
+    },
+    {
+      "word": {
+        "en": "plan",
+        "id": "denah"
+      },
+      "meaning": {
+        "en": "a drawing of a place seen from directly above",
+        "id": "gambar suatu tempat yang dilihat tepat dari atas"
+      }
+    },
+    {
+      "word": {
+        "en": "key",
+        "id": "keterangan"
+      },
+      "meaning": {
+        "en": "a list explaining what the symbols on a map mean",
+        "id": "daftar yang menjelaskan arti simbol di peta"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "math",
+      "prompt": {
+        "en": "On a 1 : 50 plan, a wardrobe is drawn 2.4 cm wide. How wide is the real wardrobe?",
+        "id": "Pada denah berskala 1 : 50, sebuah lemari digambar selebar 2,4 cm. Berapa lebar lemari sebenarnya?"
+      },
+      "choices": {
+        "en": [
+          "120 cm",
+          "2.4 cm",
+          "52.4 cm"
+        ],
+        "id": [
+          "120 cm",
+          "2,4 cm",
+          "52,4 cm"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2,
+      "check": {
+        "expression": "2.4 * 50",
+        "result": "120"
+      }
+    },
+    {
+      "id": "q2",
+      "kind": "math",
+      "prompt": {
+        "en": "A real desk is 90 cm long. How long should it be on a 1 : 50 plan?",
+        "id": "Sebuah meja belajar panjangnya 90 cm. Berapa panjangnya pada denah berskala 1 : 50?"
+      },
+      "choices": {
+        "en": [
+          "1.8 cm",
+          "4,500 cm",
+          "40 cm"
+        ],
+        "id": [
+          "1,8 cm",
+          "4.500 cm",
+          "40 cm"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3,
+      "check": {
+        "expression": "90 / 50",
+        "result": "1.8"
+      }
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What should you do straight after measuring the room?",
+        "id": "Apa yang harus kamu lakukan tepat setelah mengukur ruangan?"
+      },
+      "choices": {
+        "en": [
+          "write the measurements down",
+          "draw the north arrow",
+          "measure the furniture's distance from the walls"
+        ],
+        "id": [
+          "menulis hasil ukurnya",
+          "menggambar panah utara",
+          "mengukur jarak perabot dari dinding"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why must every length be divided by the same number?",
+        "id": "Mengapa setiap panjang harus dibagi dengan bilangan yang sama?"
+      },
+      "choices": {
+        "en": [
+          "so the plan keeps exactly the same shape as the real room",
+          "so the plan uses less paper",
+          "so the pencil lines are thinner"
+        ],
+        "id": [
+          "supaya denah punya bentuk yang persis sama dengan ruangan sebenarnya",
+          "supaya denah memakai lebih sedikit kertas",
+          "supaya garis pensilnya lebih tipis"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q5",
+      "kind": "literal",
+      "prompt": {
+        "en": "How does the text tell you to show which way a door swings?",
+        "id": "Bagaimana teks menyuruhmu menunjukkan arah bukaan pintu?"
+      },
+      "choices": {
+        "en": [
+          "with a quarter-circle",
+          "with a double line",
+          "with an arrow pointing north"
+        ],
+        "id": [
+          "dengan seperempat lingkaran",
+          "dengan garis ganda",
+          "dengan panah yang menunjuk ke utara"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Scale drawing uses ratio, multiplication and division.",
+        "id": "Gambar berskala memakai perbandingan, perkalian, dan pembagian."
+      }
+    },
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Plans and maps share the same tools: scale, key and north arrow.",
+        "id": "Denah dan peta memakai alat yang sama: skala, keterangan, dan panah utara."
+      }
+    },
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Architects draw scale plans before anything is built.",
+        "id": "Arsitek menggambar denah berskala sebelum sesuatu dibangun."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Why would a 1 : 50 scale be a poor choice for a plan of your whole school?",
+      "id": "Mengapa skala 1 : 50 kurang cocok untuk denah seluruh sekolahmu?"
+    },
+    {
+      "en": "How could a scale plan help you decide where to move your bed?",
+      "id": "Bagaimana denah berskala bisa membantumu memutuskan di mana memindahkan tempat tidur?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Draw a 1 : 50 scale plan of your bedroom or another room at home, following all seven steps. Then cut out paper shapes of your furniture at the same scale and try two new arrangements before choosing the best one.",
+    "id": "Gambar denah berskala 1 : 50 untuk kamar tidurmu atau ruangan lain di rumah, mengikuti ketujuh langkah. Lalu buat potongan kertas berbentuk perabot dengan skala yang sama dan coba dua susunan baru sebelum memilih yang terbaik."
+  },
+  "factChecks": [
+    {
+      "claim": "1 metre equals 100 centimetres.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The sun rises roughly in the east.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "On plans, doors are commonly shown with a quarter-circle swing and windows with a double line.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The room and furniture measurements are invented examples.",
+      "status": "invented_example"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Ask an adult before moving furniture; never climb on furniture to measure. Use safety scissors to cut the paper shapes.",
+      "id": "Minta izin orang dewasa sebelum memindahkan perabot; jangan memanjat perabot untuk mengukur. Pakai gunting yang aman untuk memotong kertas."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

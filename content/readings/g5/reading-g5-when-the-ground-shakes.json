@@ -1,0 +1,285 @@
+{
+  "id": "reading-g5-when-the-ground-shakes",
+  "version": "1.0.0",
+  "level": "g5",
+  "readingLevel": "fluent",
+  "genre": "report",
+  "mode": "independent",
+  "title": {
+    "en": "When the ground shakes: earthquake and tsunami safety",
+    "id": "Saat bumi berguncang: keselamatan gempa dan tsunami"
+  },
+  "text": {
+    "en": [
+      "Indonesia sits where several of the giant plates of the Earth's crust meet. These plates move very slowly, a few centimetres a year. Sometimes they stick, then slip suddenly, and the ground shakes. That is an earthquake. It is why Indonesia has many earthquakes and volcanoes.",
+      "Most earthquakes are small, and nobody even feels them. But knowing what to do in a strong one keeps people safe. The best time to learn is now, while everything is calm.",
+      "Indoors: Drop, Cover, Hold On. Drop down onto your hands and knees. Cover your head and neck, under a strong table if there is one. Hold on until the shaking stops. Stay away from windows, shelves and anything that could fall.",
+      "Outdoors: move to an open space away from buildings, trees, walls and power lines. Then crouch down and protect your head.",
+      "Near the sea: a strong earthquake under the sea can cause a tsunami, a series of huge waves. If you are near the coast and the shaking is strong or lasts a long time, or the sea suddenly pulls back from the beach, go to high ground or far inland at once. Do not wait for an announcement, and do not go to look at the sea.",
+      "A tsunami can come as several waves, and the later ones can be bigger. Stay on high ground until officials, such as BMKG or the local disaster agency, say it is safe to return.",
+      "Be ready as a family. Agree on a meeting place. Learn the evacuation route if you live near the coast. Keep an emergency bag with drinking water, a torch, a first-aid kit, some food and copies of important papers."
+    ],
+    "id": [
+      "Indonesia terletak di tempat beberapa lempeng raksasa kerak Bumi bertemu. Lempeng-lempeng itu bergerak sangat lambat, beberapa sentimeter per tahun. Kadang lempeng tersangkut, lalu tiba-tiba bergeser, dan tanah pun berguncang. Itulah gempa bumi. Karena itu Indonesia sering mengalami gempa dan punya banyak gunung api.",
+      "Sebagian besar gempa itu kecil, bahkan tidak terasa. Tetapi tahu apa yang harus dilakukan saat gempa kuat membuat kita tetap selamat. Waktu terbaik untuk belajar adalah sekarang, saat semuanya tenang.",
+      "Di dalam ruangan: Berlutut, Berlindung, Berpegangan. Turunkan badan dengan bertumpu pada tangan dan lutut. Lindungi kepala dan leher, di bawah meja yang kokoh jika ada. Berpeganganlah sampai guncangan berhenti. Jauhi jendela, rak, dan benda yang bisa jatuh.",
+      "Di luar ruangan: pindah ke tempat terbuka, jauh dari bangunan, pohon, tembok, dan tiang listrik. Lalu berjongkok dan lindungi kepala.",
+      "Di dekat laut: gempa kuat di bawah laut bisa menimbulkan tsunami, yaitu rangkaian gelombang besar. Jika kamu berada di dekat pantai dan guncangannya kuat atau lama, atau air laut tiba-tiba surut dari pantai, segera pergi ke tempat tinggi atau jauh ke daratan. Jangan menunggu pengumuman, dan jangan pergi melihat laut.",
+      "Tsunami bisa datang sebagai beberapa gelombang, dan gelombang berikutnya bisa lebih besar. Tetaplah di tempat tinggi sampai petugas, seperti BMKG atau badan penanggulangan bencana setempat, menyatakan aman untuk kembali.",
+      "Bersiaplah sebagai keluarga. Sepakati tempat berkumpul. Pelajari jalur evakuasi jika tinggal di dekat pantai. Siapkan tas siaga berisi air minum, senter, kotak P3K, sedikit makanan, dan salinan dokumen penting."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a safety report and identifies the right action for different places.",
+      "id": "Membaca laporan keselamatan dan menentukan tindakan yang tepat di tempat yang berbeda."
+    },
+    {
+      "en": "Explains, in simple terms, why earthquakes are common in Indonesia.",
+      "id": "Menjelaskan secara sederhana mengapa gempa sering terjadi di Indonesia."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "plate",
+        "id": "lempeng"
+      },
+      "meaning": {
+        "en": "a giant slab of the Earth's outer layer",
+        "id": "bongkahan raksasa lapisan luar Bumi"
+      }
+    },
+    {
+      "word": {
+        "en": "tsunami",
+        "id": "tsunami"
+      },
+      "meaning": {
+        "en": "a series of huge sea waves usually caused by an undersea earthquake",
+        "id": "rangkaian gelombang laut besar yang biasanya disebabkan gempa di bawah laut"
+      }
+    },
+    {
+      "word": {
+        "en": "evacuation route",
+        "id": "jalur evakuasi"
+      },
+      "meaning": {
+        "en": "a planned way to leave a dangerous place",
+        "id": "jalan yang direncanakan untuk meninggalkan tempat berbahaya"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What are the three actions to take indoors during an earthquake?",
+        "id": "Apa tiga tindakan yang dilakukan di dalam ruangan saat gempa?"
+      },
+      "choices": {
+        "en": [
+          "Drop, Cover, Hold On",
+          "Run, Shout, Hide",
+          "Stand in a doorway, look outside, wait"
+        ],
+        "id": [
+          "Berlutut, Berlindung, Berpegangan",
+          "Lari, Teriak, Sembunyi",
+          "Berdiri di pintu, lihat keluar, tunggu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why should you go to high ground at once if the sea suddenly pulls back?",
+        "id": "Mengapa kamu harus segera ke tempat tinggi jika air laut tiba-tiba surut?"
+      },
+      "choices": {
+        "en": [
+          "it can be a sign that a tsunami is coming, perhaps before any warning",
+          "the beach becomes good for collecting shells",
+          "the water will be too cold to swim in"
+        ],
+        "id": [
+          "itu bisa menjadi tanda tsunami akan datang, mungkin sebelum ada peringatan",
+          "pantai jadi bagus untuk mengumpulkan kerang",
+          "airnya akan terlalu dingin untuk berenang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "science",
+      "prompt": {
+        "en": "Why does Indonesia have many earthquakes?",
+        "id": "Mengapa Indonesia sering mengalami gempa?"
+      },
+      "choices": {
+        "en": [
+          "it lies where several moving plates of the Earth's crust meet",
+          "it has many tall buildings",
+          "it is close to the Moon"
+        ],
+        "id": [
+          "letaknya di pertemuan beberapa lempeng kerak Bumi yang bergerak",
+          "punya banyak gedung tinggi",
+          "letaknya dekat dengan Bulan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q4",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which sentence explains why you should not go home right after the first tsunami wave?",
+        "id": "Kalimat mana yang menjelaskan mengapa kamu tidak boleh langsung pulang setelah gelombang tsunami pertama?"
+      },
+      "choices": {
+        "en": [
+          "A tsunami can come as several waves, and the later ones can be bigger.",
+          "Agree on a meeting place.",
+          "Most earthquakes are small."
+        ],
+        "id": [
+          "Tsunami bisa datang sebagai beberapa gelombang, dan gelombang berikutnya bisa lebih besar.",
+          "Sepakati tempat berkumpul.",
+          "Sebagian besar gempa itu kecil."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q5",
+      "kind": "math",
+      "prompt": {
+        "en": "Suppose a family plans 2 litres of drinking water per person per day. How much do 4 people need for 3 days?",
+        "id": "Misalkan sebuah keluarga menyiapkan 2 liter air minum per orang per hari. Berapa yang dibutuhkan 4 orang selama 3 hari?"
+      },
+      "choices": {
+        "en": [
+          "24 litres",
+          "9 litres",
+          "8 litres"
+        ],
+        "id": [
+          "24 liter",
+          "9 liter",
+          "8 liter"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6,
+      "check": {
+        "expression": "2 * 4 * 3",
+        "result": "24"
+      }
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Knowing Drop, Cover, Hold On and tsunami warning signs saves lives.",
+        "id": "Mengetahui Berlutut, Berlindung, Berpegangan serta tanda-tanda tsunami menyelamatkan nyawa."
+      }
+    },
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Indonesia lies where tectonic plates meet, part of the Pacific Ring of Fire.",
+        "id": "Indonesia terletak di pertemuan lempeng tektonik, bagian dari Cincin Api Pasifik."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Planning supplies uses multiplication.",
+        "id": "Merencanakan persediaan memakai perkalian."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Where is the safest place to shelter in your classroom or bedroom?",
+      "id": "Di mana tempat berlindung paling aman di kelas atau kamarmu?"
+    },
+    {
+      "en": "What would you put in your family's emergency bag?",
+      "id": "Apa yang akan kamu masukkan ke tas siaga keluargamu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "With your family, practise Drop, Cover, Hold On in each room and choose a meeting place outside. Make a checklist for an emergency bag. If you live near the coast, find your nearest high ground and walk the route together.",
+    "id": "Bersama keluarga, latih Berlutut, Berlindung, Berpegangan di setiap ruangan dan pilih tempat berkumpul di luar. Buat daftar periksa tas siaga. Jika tinggal di dekat pantai, cari tempat tinggi terdekat dan telusuri jalurnya bersama."
+  },
+  "factChecks": [
+    {
+      "claim": "Indonesia lies where several tectonic plates meet and has frequent earthquakes and volcanoes.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Tectonic plates move a few centimetres a year.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Drop, Cover, Hold On is the recommended action indoors during an earthquake.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Strong or long shaking near the coast, or the sea suddenly receding, are natural tsunami warning signs: go to high ground at once.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A tsunami can arrive as several waves, and later waves can be larger.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "BMKG is Indonesia's agency that issues earthquake and tsunami warnings.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The 2 litres per person per day figure in the maths question is a stated supposition for practice, not an official guideline.",
+      "status": "invented_example"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Some children feel anxious about disasters. Keep the tone calm: most earthquakes are small, and practising makes families safer.",
+      "id": "Sebagian anak merasa cemas tentang bencana. Jaga suasana tetap tenang: sebagian besar gempa itu kecil, dan berlatih membuat keluarga lebih aman."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "safety_critical_content"
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

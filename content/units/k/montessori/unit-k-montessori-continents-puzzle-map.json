@@ -1,0 +1,393 @@
+{
+  "id": "unit-k-montessori-continents-puzzle-map",
+  "version": "1.0.0",
+  "level": "k",
+  "framework": "montessori",
+  "strand": "geography",
+  "title": {
+    "en": "The continents puzzle map",
+    "id": "Peta teka-teki benua"
+  },
+  "prerequisites": [
+    "unit-k-montessori-land-and-water-globe"
+  ],
+  "objective": {
+    "en": "Name the seven continents on a home-made puzzle map, fit each piece into its outline, and find where Indonesia lies, between Asia and Australia.",
+    "id": "Menyebut tujuh benua pada peta teka-teki buatan sendiri, memasang setiap kepingan pada garis tepinya, dan menemukan letak Indonesia, di antara Asia dan Australia."
+  },
+  "rationale": {
+    "en": "After learning land and water on the globe, the child is ready to see that the land is divided into large pieces with names. A puzzle map lets the hands hold each continent, so shape and name are learned together, and the outline sheet shows at once if a piece is in the wrong place.",
+    "id": "Setelah mengenal darat dan air di globe, anak siap melihat bahwa daratan terbagi menjadi bagian-bagian besar yang punya nama. Peta teka-teki membuat tangan bisa memegang setiap benua, sehingga bentuk dan nama dipelajari bersama, dan lembar garis tepi langsung menunjukkan jika kepingan salah tempat."
+  },
+  "outcomes": [
+    {
+      "en": "Names at least five of the seven continents when pointing to them.",
+      "id": "Menyebut sedikitnya lima dari tujuh benua sambil menunjuknya."
+    },
+    {
+      "en": "Fits every piece into its outline on the control map.",
+      "id": "Memasang setiap kepingan pada garis tepinya di peta pengendali."
+    },
+    {
+      "en": "Shows where Indonesia is, between Asia and Australia, and knows Indonesia is a country, not a continent.",
+      "id": "Menunjukkan letak Indonesia, di antara Asia dan Australia, dan tahu bahwa Indonesia adalah negara, bukan benua."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "Your child assembles the whole puzzle map alone.",
+      "id": "Anak menyusun seluruh peta teka-teki sendiri."
+    },
+    {
+      "en": "Your child names five continents and points to Indonesia.",
+      "id": "Anak menyebut lima benua dan menunjuk Indonesia."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Trace a simple world map from an atlas onto a large sheet of card. Keep the coastlines smooth and leave out small islands; the adult cuts out the seven continents with scissors or a craft knife.",
+      "id": "Jiplak peta dunia sederhana dari atlas ke lembar karton besar. Buat garis pantai yang sederhana dan abaikan pulau-pulau kecil; orang dewasa menggunting ketujuh benua dengan gunting atau pisau cutter."
+    },
+    {
+      "en": "Colour each continent its own colour. A common Montessori scheme is Asia yellow, Africa green, Europe red, North America orange, South America pink, Australia brown and Antarctica white. Any fixed scheme works, as long as it never changes.",
+      "id": "Warnai setiap benua dengan warnanya sendiri. Skema Montessori yang umum adalah Asia kuning, Afrika hijau, Eropa merah, Amerika Utara oranye, Amerika Selatan merah muda, Australia cokelat, dan Antartika putih. Skema apa pun boleh, asalkan tidak pernah berubah."
+    },
+    {
+      "en": "Indonesian school books may count the continents as five or six instead of seven; tell your child that people group the land in different ways, and follow your child's school when it matters.",
+      "id": "Buku sekolah di Indonesia bisa menghitung benua sebagai lima atau enam, bukan tujuh; sampaikan kepada anak bahwa orang mengelompokkan daratan dengan cara berbeda, dan ikuti sekolah anak bila diperlukan."
+    },
+    {
+      "en": "Introduce only two or three continents in one sitting with the three-period lesson. Start with Asia, our home, and Australia, our neighbour.",
+      "id": "Kenalkan hanya dua atau tiga benua dalam satu kali duduk dengan pelajaran tiga tahap. Mulailah dengan Asia, tempat kita tinggal, dan Australia, tetangga kita."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Take the pieces out one by one and lay them above the map.",
+      "id": "Ambil kepingan satu per satu dan letakkan di atas peta."
+    },
+    {
+      "en": "Pick up a piece, say its name if you know it, and turn it until it fits its own outline.",
+      "id": "Ambil satu kepingan, sebut namanya jika kamu tahu, lalu putar sampai pas dengan garis tepinya."
+    },
+    {
+      "en": "When all the pieces are in, find the little islands of Indonesia between Asia and Australia.",
+      "id": "Setelah semua kepingan terpasang, cari pulau-pulau kecil Indonesia di antara Asia dan Australia."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "A large sheet of card painted blue, with the seven continent outlines traced on it (the control map)",
+      "id": "Lembar karton besar dicat biru, dengan garis tepi tujuh benua dijiplak di atasnya (peta pengendali)"
+    },
+    {
+      "en": "Seven continent pieces cut from thick card and coloured, each with a small knob made from a cotton reel or bottle cap glued on",
+      "id": "Tujuh kepingan benua dari karton tebal yang diwarnai, masing-masing dengan pegangan kecil dari gulungan benang atau tutup botol yang ditempel"
+    },
+    {
+      "en": "The home-made globe from the earlier unit, and Indonesia drawn on the map with a dark pen",
+      "id": "Globe buatan sendiri dari unit sebelumnya, dan Indonesia digambar di peta dengan pulpen gelap"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult cuts the pieces, smooths the edges with tape and glues the knobs on firmly.",
+      "id": "Orang dewasa memotong kepingan, menghaluskan tepinya dengan selotip, dan menempel pegangan dengan kuat."
+    },
+    {
+      "en": "Lay the map on the floor on a rug with the pieces in it, the globe beside it.",
+      "id": "Letakkan peta di lantai di atas karpet dengan kepingan terpasang, dan globe di sampingnya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Turn the globe until you find the big yellow land. Then lift the yellow piece from the map: \"This is Asia.\" Trace its edge with two fingers and put it back. Do the same with Australia: \"This is Australia.\"",
+      "id": "Putar globe sampai menemukan daratan kuning yang besar. Lalu angkat kepingan kuning dari peta: \"Ini Asia.\" Telusuri tepinya dengan dua jari dan kembalikan. Lakukan hal yang sama dengan Australia: \"Ini Australia.\""
+    },
+    {
+      "en": "Point to the dark dots between them: \"This is Indonesia, where we live. Indonesia is a country with many islands, between Asia and Australia.\"",
+      "id": "Tunjuk titik-titik gelap di antara keduanya: \"Ini Indonesia, tempat kita tinggal. Indonesia adalah negara dengan banyak pulau, di antara Asia dan Australia.\""
+    },
+    {
+      "en": "Second period: \"Show me Asia. Put Australia in its place.\" Third period, only if easy: \"What is this one?\"",
+      "id": "Tahap kedua: \"Tunjukkan Asia. Pasang Australia di tempatnya.\" Tahap ketiga, hanya jika sudah mudah: \"Yang ini apa namanya?\""
+    }
+  ],
+  "practice": [
+    {
+      "en": "On other days, add Africa and Antarctica, then Europe and the two Americas, two at a time.",
+      "id": "Di hari lain, tambahkan Afrika dan Antartika, lalu Eropa dan kedua Amerika, dua sekaligus."
+    },
+    {
+      "en": "Take all the pieces out, mix them, and rebuild the map.",
+      "id": "Keluarkan semua kepingan, acak, lalu susun kembali petanya."
+    },
+    {
+      "en": "Trace round each piece on paper, colour it the same colour, and make your own continents map to hang up.",
+      "id": "Jiplak setiap kepingan di kertas, warnai dengan warna yang sama, dan buat peta benuamu sendiri untuk digantung."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Ask: \"Indonesia is between which two continents?\"",
+        "id": "Tanyakan: \"Indonesia terletak di antara dua benua yang mana?\""
+      },
+      "choices": {
+        "en": [
+          "Asia and Australia",
+          "Africa and Europe",
+          "North America and South America"
+        ],
+        "id": [
+          "Asia dan Australia",
+          "Afrika dan Eropa",
+          "Amerika Utara dan Amerika Selatan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Our islands lie between the big yellow piece, Asia, and the brown piece, Australia.",
+        "id": "Pulau-pulau kita terletak di antara kepingan kuning besar, Asia, dan kepingan cokelat, Australia."
+      },
+      "distractorMisconceptions": {
+        "1": "GUESSES_WITHOUT_MAP",
+        "2": "GUESSES_WITHOUT_MAP"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Ask: \"Which continent is covered in ice, all round the South Pole?\"",
+        "id": "Tanyakan: \"Benua mana yang tertutup es, mengelilingi Kutub Selatan?\""
+      },
+      "choices": {
+        "en": [
+          "Antarctica",
+          "Australia",
+          "Africa"
+        ],
+        "id": [
+          "Antartika",
+          "Australia",
+          "Afrika"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Antarctica is the white piece at the bottom of the map and of the globe.",
+        "id": "Antartika adalah kepingan putih di bagian bawah peta dan globe."
+      },
+      "distractorMisconceptions": {
+        "1": "NAMES_SOUND_ALIKE",
+        "2": "NAMES_SOUND_ALIKE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Ask: \"Is Indonesia a continent?\"",
+        "id": "Tanyakan: \"Apakah Indonesia sebuah benua?\""
+      },
+      "choices": {
+        "en": [
+          "No, it is a country made of many islands",
+          "Yes, Indonesia is a continent",
+          "No, it is a sea"
+        ],
+        "id": [
+          "Bukan, Indonesia adalah negara yang terdiri dari banyak pulau",
+          "Ya, Indonesia adalah benua",
+          "Bukan, Indonesia adalah laut"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A continent is a very big piece of land; Indonesia is a country, and its islands lie between two continents.",
+        "id": "Benua adalah daratan yang sangat luas; Indonesia adalah negara, dan pulau-pulaunya terletak di antara dua benua."
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTRY_IS_CONTINENT",
+        "2": "LAND_WATER_CONFUSED"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Observe: a piece does not fit where your child put it. What does she do?",
+        "id": "Amati: satu kepingan tidak pas di tempat yang dipilih anak. Apa yang dilakukannya?"
+      },
+      "choices": {
+        "en": [
+          "Turns it, or tries another outline, until it fits",
+          "Pushes it down hard where it is",
+          "Puts it aside and leaves a hole"
+        ],
+        "id": [
+          "Memutarnya, atau mencoba garis tepi lain, sampai pas",
+          "Menekannya keras di tempat itu",
+          "Menyisihkannya dan membiarkan lubang"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The outline is the control of error; turning and trying again uses it.",
+        "id": "Garis tepi adalah pengendali kesalahan; memutar dan mencoba lagi berarti memanfaatkannya."
+      },
+      "distractorMisconceptions": {
+        "1": "FORCES_FIT",
+        "2": "GIVES_UP_ON_FIT"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "GUESSES_WITHOUT_MAP",
+      "description": {
+        "en": "Names continents without looking at where they are.",
+        "id": "Menyebut benua tanpa melihat letaknya."
+      },
+      "remediation": {
+        "en": "Go on a \"finger journey\": start with a finger on Indonesia and walk it north to Asia, then south across the sea to Australia, saying each name as you arrive.",
+        "id": "Lakukan \"perjalanan jari\": letakkan jari di Indonesia lalu jalankan ke utara menuju Asia, kemudian ke selatan menyeberangi laut ke Australia, sambil menyebut setiap nama saat tiba."
+      }
+    },
+    {
+      "code": "NAMES_SOUND_ALIKE",
+      "description": {
+        "en": "Mixes up continent names that sound alike, such as Australia and Antarctica.",
+        "id": "Tertukar nama benua yang bunyinya mirip, seperti Australia dan Antartika."
+      },
+      "remediation": {
+        "en": "Link each name to a strong picture: Antarctica with a penguin sticker on the white piece, Australia with a kangaroo sticker on the brown one.",
+        "id": "Kaitkan setiap nama dengan gambar yang kuat: Antartika dengan stiker penguin di kepingan putih, Australia dengan stiker kanguru di kepingan cokelat."
+      }
+    },
+    {
+      "code": "COUNTRY_IS_CONTINENT",
+      "description": {
+        "en": "Thinks Indonesia is a continent.",
+        "id": "Mengira Indonesia adalah benua."
+      },
+      "remediation": {
+        "en": "Lay a drawing of Indonesia's islands, at the same scale, on top of the Asia piece and the Australia piece: much smaller. Say \"Indonesia is a country; Asia is a continent.\"",
+        "id": "Letakkan gambar pulau-pulau Indonesia dengan skala yang sama di atas kepingan Asia dan kepingan Australia: jauh lebih kecil. Katakan \"Indonesia adalah negara; Asia adalah benua.\""
+      }
+    },
+    {
+      "code": "LAND_WATER_CONFUSED",
+      "description": {
+        "en": "Is still unsure which parts of the map are land and which are water.",
+        "id": "Masih ragu bagian peta mana yang darat dan mana yang air."
+      },
+      "remediation": {
+        "en": "Go back to the textured globe: rough is land, smooth is water. Then feel the cut edge of a continent piece and the flat blue sea of the map.",
+        "id": "Kembali ke globe bertekstur: kasar itu darat, halus itu air. Lalu raba tepi kepingan benua dan laut biru yang datar di peta."
+      }
+    },
+    {
+      "code": "FORCES_FIT",
+      "description": {
+        "en": "Pushes a piece into the wrong place.",
+        "id": "Memaksa kepingan masuk ke tempat yang salah."
+      },
+      "remediation": {
+        "en": "Give just two pieces with very different shapes and show turning a piece slowly in the air above its outline before lowering it.",
+        "id": "Berikan dua kepingan saja dengan bentuk yang sangat berbeda dan tunjukkan cara memutar kepingan pelan-pelan di atas garis tepinya sebelum menurunkannya."
+      }
+    },
+    {
+      "code": "GIVES_UP_ON_FIT",
+      "description": {
+        "en": "Leaves a piece out when it does not fit at once.",
+        "id": "Meninggalkan kepingan jika tidak langsung pas."
+      },
+      "remediation": {
+        "en": "Point to the empty hole and the leftover piece together: \"This hole is waiting for a piece.\" Then trace both edges with your finger.",
+        "id": "Tunjuk lubang kosong dan kepingan yang tersisa bersama-sama: \"Lubang ini menunggu kepingannya.\" Lalu telusuri kedua tepinya dengan jari."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make picture folders for two continents with photos of animals, plants and homes from each, and sort the photos onto the right piece.",
+      "id": "Buat map gambar untuk dua benua berisi foto hewan, tumbuhan, dan rumah dari masing-masing, lalu pilah foto ke kepingan yang tepat."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child with low vision, glue string around the edge of each piece so the shapes can be felt.",
+      "id": "Untuk anak dengan penglihatan rendah, tempel tali di sekeliling tepi setiap kepingan agar bentuknya bisa diraba."
+    },
+    {
+      "en": "For a child who finds small grips hard, use bigger knobs or none, and lift pieces by the edge.",
+      "id": "Untuk anak yang sulit memegang benda kecil, pakai pegangan lebih besar atau tanpa pegangan, dan angkat kepingan dari tepinya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult does all cutting with scissors or a craft knife, and keeps the knife away from the child.",
+        "id": "Orang dewasa yang melakukan semua pemotongan dengan gunting atau pisau cutter, dan menjauhkan pisau dari anak."
+      },
+      {
+        "en": "Glue the knobs on firmly and check them; a loose bottle cap is a choking risk for younger siblings.",
+        "id": "Tempel pegangan dengan kuat dan periksa; tutup botol yang lepas berisiko membuat adik tersedak."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      10,
+      30
+    ],
+    "masteryRule": {
+      "en": "Secure when your child assembles the map alone, names five continents and points to Indonesia, on two different days.",
+      "id": "Dikuasai jika anak menyusun peta sendiri, menyebut lima benua, dan menunjuk Indonesia, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "continent_count_convention"
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "safety",
+      "age-fit",
+      "misconception-map"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

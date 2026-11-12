@@ -4,6 +4,7 @@ import { StartLesson } from '@/components/child/start-lesson';
 import { fmt, getDictionary } from '@/lib/i18n';
 import { currentLocale, requireChildPage } from '@/lib/server/guards';
 import { childChoices } from '@/lib/server/learning';
+import { childUnits } from '@/lib/server/child-units';
 
 export const metadata = { title: 'Learn' };
 export const dynamic = 'force-dynamic';
@@ -13,6 +14,7 @@ export default async function LearnPage() {
   const locale = await currentLocale();
   const t = getDictionary(locale);
   const { ctx, choices, rec, gradeSupported } = await childChoices(child);
+  const units = await childUnits(child); // fail closed: empty unless visible to children in this deployment
   return (
     <ChildShell reducedMotion={child.reducedMotion}>
       <div className="flex flex-wrap items-center justify-between gap-3">
@@ -40,6 +42,22 @@ export default async function LearnPage() {
             ))}
           </ul>
         </>
+      )}
+      {units.length > 0 && (
+        <section className="mt-10" aria-labelledby="units-h" data-testid="child-units">
+          <h2 id="units-h" className="text-2xl font-bold">{t.unitChild.heading}</h2>
+          <p className="mt-1 text-lg">{t.unitChild.intro}</p>
+          <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {units.map((u) => (
+              <li key={u.id} className="card flex flex-col gap-2" data-child-unit={u.id}>
+                <h3 className="text-xl font-bold leading-snug">{u.title[locale]}</h3>
+                <p className="text-base">{u.objective[locale]}</p>
+                <p className="text-sm muted">⏱ {fmt(t.unitChild.minutes, u.durationMinutes)}</p>
+                <Link href={`/learn/unit/${u.id}`} className="btn-secondary btn-xl mt-auto w-fit" aria-label={`${t.unitChild.open}: ${u.title[locale]}`}>{t.unitChild.open}</Link>
+              </li>
+            ))}
+          </ul>
+        </section>
       )}
     </ChildShell>
   );

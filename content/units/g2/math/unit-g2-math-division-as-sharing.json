@@ -1,0 +1,453 @@
+{
+  "id": "unit-g2-math-division-as-sharing",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "math",
+  "strand": "multiplication_division",
+  "title": {
+    "en": "Division as equal sharing",
+    "id": "Pembagian sebagai berbagi sama banyak"
+  },
+  "prerequisites": [
+    "unit-g2-math-multiplication-equal-groups"
+  ],
+  "objective": {
+    "en": "Divide by sharing a quantity equally into a given number of groups (and by grouping into equal sets), write the division sentence with ÷, and check it with the matching multiplication fact.",
+    "id": "Membagi dengan membagikan suatu jumlah sama banyak ke sejumlah kelompok (dan dengan mengelompokkan menjadi kumpulan yang sama), menulis kalimat pembagian dengan ÷, dan memeriksanya dengan fakta perkalian pasangannya."
+  },
+  "rationale": {
+    "en": "Sharing out one by one is how children first meet division. Writing the result as 12 ÷ 3 = 4 and linking it to 3 × 4 = 12 turns the action into a fact family. Meeting both sharing (how many in each group) and grouping (how many groups) prevents the idea that division only ever means one thing.",
+    "id": "Membagikan satu per satu adalah cara anak pertama kali mengenal pembagian. Menulis hasilnya sebagai 12 ÷ 3 = 4 dan mengaitkannya dengan 3 × 4 = 12 mengubah kegiatan menjadi keluarga fakta. Mengenal berbagi (berapa di setiap kelompok) dan mengelompokkan (berapa kelompok) mencegah anggapan bahwa pembagian hanya punya satu arti."
+  },
+  "outcomes": [
+    {
+      "en": "Shares objects equally and says how many are in each group.",
+      "id": "Membagikan benda sama banyak dan menyebut berapa banyak di setiap kelompok."
+    },
+    {
+      "en": "Writes and reads division sentences such as 15 ÷ 5 = 3.",
+      "id": "Menulis dan membaca kalimat pembagian seperti 15 ÷ 5 = 3."
+    },
+    {
+      "en": "Uses a multiplication fact to check a division.",
+      "id": "Memakai fakta perkalian untuk memeriksa pembagian."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can share 12 kue onto 3 plates so every plate has the same.",
+      "id": "Aku bisa membagikan 12 kue ke 3 piring sehingga setiap piring sama banyak."
+    },
+    {
+      "en": "I can say the multiplication that checks my division.",
+      "id": "Aku bisa menyebut perkalian yang memeriksa pembagianku."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Let your child deal the objects one at a time onto the plates, like dealing cards, until none are left.",
+      "id": "Biarkan anak membagikan benda satu per satu ke piring, seperti membagikan kartu, sampai habis."
+    },
+    {
+      "en": "Say 12 ÷ 3 as '12 shared among 3' and also 'twelve divided by three'; in Indonesian, '12 dibagi 3'.",
+      "id": "Ucapkan 12 ÷ 3 sebagai '12 dibagikan ke 3' dan juga '12 dibagi 3'; dalam bahasa Inggris 'twelve divided by three'."
+    },
+    {
+      "en": "Only use numbers that share exactly in this unit; remainders come later.",
+      "id": "Pakai hanya bilangan yang terbagi habis dalam unit ini; sisa dipelajari nanti."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Give one to each plate, then another to each plate, until none are left.",
+      "id": "Beri satu ke setiap piring, lalu satu lagi ke setiap piring, sampai habis."
+    },
+    {
+      "en": "Count one plate. Check: plates × number on each plate = all of them.",
+      "id": "Hitung satu piring. Periksa: banyak piring × isi setiap piring = semuanya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Deal 12 kue (or 12 toy blocks) onto 3 plates, one at a time to each plate. Each plate gets 4. Then put the 12 back and make groups of 4 instead: there are 3 groups.",
+        "id": "Bagikan 12 kue (atau 12 balok mainan) ke 3 piring, satu per satu ke setiap piring. Setiap piring mendapat 4. Lalu kumpulkan lagi 12 dan buat kelompok berisi 4: ada 3 kelompok."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw 5 circles as children and deal 15 dots into them; write the number in each circle.",
+        "id": "Gambar 5 lingkaran sebagai anak dan bagikan 15 titik ke dalamnya; tulis bilangan di setiap lingkaran."
+      },
+      {
+        "en": "Draw a bar for 20 split into 4 equal parts; write 20 above the bar and ? in each part.",
+        "id": "Gambar batang untuk 20 yang dibagi menjadi 4 bagian sama; tulis 20 di atas batang dan ? di setiap bagian."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write division sentences with their checks: 12 ÷ 3 = 4 because 3 × 4 = 12; 20 ÷ 4 = 5 because 4 × 5 = 20.",
+        "id": "Tulis kalimat pembagian dengan pemeriksaannya: 12 ÷ 3 = 4 karena 3 × 4 = 12; 20 ÷ 4 = 5 karena 4 × 5 = 20."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 30 toy blocks, kue or crayons, and 6 small plates or bowls",
+      "id": "Sekitar 30 balok mainan, kue, atau krayon, dan 6 piring atau mangkuk kecil"
+    },
+    {
+      "en": "Paper, pencils, a ruler for drawing bars",
+      "id": "Kertas, pensil, penggaris untuk menggambar batang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Count out the objects for each sharing task in advance and keep them in separate bags.",
+      "id": "Hitung benda untuk setiap tugas berbagi lebih dulu dan simpan di kantong terpisah."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "12 kue shared onto 3 plates: deal one to each plate four times. Each plate has 4. 12 ÷ 3 = 4, and 3 × 4 = 12.",
+      "id": "12 kue dibagikan ke 3 piring: bagikan satu ke setiap piring empat kali. Setiap piring berisi 4. 12 ÷ 3 = 4, dan 3 × 4 = 12."
+    },
+    {
+      "en": "15 crayons shared among 5 children: each child gets 3. 15 ÷ 5 = 3, check 5 × 3 = 15.",
+      "id": "15 krayon dibagikan kepada 5 anak: setiap anak mendapat 3. 15 ÷ 5 = 3, periksa 5 × 3 = 15."
+    },
+    {
+      "en": "Bar model: 20 cm of tape is cut into 4 equal pieces. The bar for 20 has 4 equal parts. Think 4 × ? = 20, so each piece is 5 cm.",
+      "id": "Model batang: selotip 20 cm dipotong menjadi 4 bagian sama. Batang 20 punya 4 bagian sama. Pikirkan 4 × ? = 20, jadi setiap potong 5 cm."
+    },
+    {
+      "en": "Grouping: 18 sandals are put in pairs. Count groups of 2: there are 9 pairs. 18 ÷ 2 = 9.",
+      "id": "Mengelompokkan: 18 sandal dipasangkan. Hitung kelompok berisi 2: ada 9 pasang. 18 ÷ 2 = 9."
+    },
+    {
+      "en": "Not equal sharing: 10 blocks onto 2 plates as 6 and 4 is sharing, but not equal sharing, so it is not 10 ÷ 2.",
+      "id": "Bukan berbagi sama banyak: 10 balok ke 2 piring menjadi 6 dan 4 memang berbagi, tetapi tidak sama banyak, jadi bukan 10 ÷ 2."
+    }
+  ],
+  "practice": [
+    {
+      "en": "At snack time, share pieces of fruit equally among the family and say the division sentence.",
+      "id": "Saat camilan, bagikan potongan buah sama banyak kepada keluarga dan ucapkan kalimat pembagiannya."
+    },
+    {
+      "en": "Draw bars to solve three sharing stories made up by the child, then check each with multiplication.",
+      "id": "Gambar batang untuk menyelesaikan tiga cerita berbagi buatan anak, lalu periksa masing-masing dengan perkalian."
+    },
+    {
+      "en": "Sharing or grouping? The adult reads stories and the child sorts them before solving, for example '24 eggs in trays of 6' or '24 eggs onto 4 plates'.",
+      "id": "Berbagi atau mengelompokkan? Orang dewasa membacakan cerita dan anak memilahnya sebelum menyelesaikan, misalnya '24 telur di wadah isi 6' atau '24 telur ke 4 piring'."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Ibu shares 16 onde-onde equally onto 4 plates. How many are on each plate?",
+        "id": "Ibu membagikan 16 onde-onde sama banyak ke 4 piring. Berapa onde-onde di setiap piring?"
+      },
+      "choices": {
+        "en": [
+          "4",
+          "12",
+          "64"
+        ],
+        "id": [
+          "4",
+          "12",
+          "64"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Deal them out: each plate gets 4, because 4 × 4 = 16. So 16 ÷ 4 = 4.",
+        "id": "Bagikan: setiap piring mendapat 4, karena 4 × 4 = 16. Jadi 16 ÷ 4 = 4."
+      },
+      "check": {
+        "expression": "16 / 4",
+        "result": "4"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "MULTIPLIES_INSTEAD"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "30 ÷ 5 = ?",
+        "id": "30 ÷ 5 = ?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "25",
+          "150"
+        ],
+        "id": [
+          "6",
+          "25",
+          "150"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Think 5 × ? = 30. 5 × 6 = 30, so 30 ÷ 5 = 6.",
+        "id": "Pikirkan 5 × ? = 30. 5 × 6 = 30, jadi 30 ÷ 5 = 6."
+      },
+      "check": {
+        "expression": "30 / 5",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "MULTIPLIES_INSTEAD"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Kakek has 21 rambutan and puts 3 in each bag. How many bags does he fill?",
+        "id": "Kakek punya 21 rambutan dan memasukkan 3 ke setiap kantong. Berapa kantong yang terisi?"
+      },
+      "choices": {
+        "en": [
+          "7 bags",
+          "18 bags",
+          "24 bags"
+        ],
+        "id": [
+          "7 kantong",
+          "18 kantong",
+          "24 kantong"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Make groups of 3 from 21: 3, 6, 9, 12, 15, 18, 21 is 7 groups. 21 ÷ 3 = 7, check 7 × 3 = 21.",
+        "id": "Buat kelompok berisi 3 dari 21: 3, 6, 9, 12, 15, 18, 21 ada 7 kelompok. 21 ÷ 3 = 7, periksa 7 × 3 = 21."
+      },
+      "check": {
+        "expression": "21 / 3",
+        "result": "7"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "24 ÷ 6 = ? Which answer, with its check, is correct?",
+        "id": "24 ÷ 6 = ? Jawaban mana, beserta pemeriksaannya, yang benar?"
+      },
+      "choices": {
+        "en": [
+          "4, because 6 × 4 = 24",
+          "18, because 24 - 6 = 18",
+          "30, because 24 + 6 = 30"
+        ],
+        "id": [
+          "4, karena 6 × 4 = 24",
+          "18, karena 24 - 6 = 18",
+          "30, karena 24 + 6 = 30"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Division is checked with multiplication: 6 groups of 4 make 24, so 24 ÷ 6 = 4.",
+        "id": "Pembagian diperiksa dengan perkalian: 6 kelompok berisi 4 menjadi 24, jadi 24 ÷ 6 = 4."
+      },
+      "check": {
+        "expression": "24 / 6",
+        "result": "4"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A 14 m rope is cut into 2 equal pieces. How long is each piece?",
+        "id": "Tali 14 m dipotong menjadi 2 bagian sama panjang. Berapa panjang setiap potong?"
+      },
+      "choices": {
+        "en": [
+          "7 m",
+          "12 m",
+          "28 m"
+        ],
+        "id": [
+          "7 m",
+          "12 m",
+          "28 m"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A bar of 14 split into 2 equal parts: 2 × 7 = 14, so each piece is 7 m.",
+        "id": "Batang 14 dibagi menjadi 2 bagian sama: 2 × 7 = 14, jadi setiap potong 7 m."
+      },
+      "check": {
+        "expression": "14 / 2",
+        "result": "7"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "MULTIPLIES_INSTEAD"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "Doni puts 8 blocks on one plate and 4 on another. Has he shared 12 blocks equally between 2 plates?",
+        "id": "Doni menaruh 8 balok di satu piring dan 4 di piring lain. Apakah ia membagi 12 balok sama banyak ke 2 piring?"
+      },
+      "choices": {
+        "en": [
+          "No, the plates must have the same number",
+          "Yes, all the blocks are on plates",
+          "Yes, because there are 2 plates"
+        ],
+        "id": [
+          "Tidak, setiap piring harus berisi sama banyak",
+          "Ya, semua balok sudah di piring",
+          "Ya, karena ada 2 piring"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Equal sharing means every group has the same amount. Here the plates are different, so it is not 12 ÷ 2.",
+        "id": "Berbagi sama banyak berarti setiap kelompok berisi sama. Di sini isinya berbeda, jadi bukan 12 ÷ 2."
+      },
+      "distractorMisconceptions": {
+        "1": "UNEQUAL_SHARING_ACCEPTED",
+        "2": "UNEQUAL_SHARING_ACCEPTED"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Takes the divisor away once (16 - 4) instead of sharing into that many groups.",
+        "id": "Mengurangkan pembagi satu kali (16 - 4), bukan membagikan ke kelompok sebanyak itu."
+      },
+      "remediation": {
+        "en": "Act it out with real plates: count how many plates there are, then deal until no objects are left.",
+        "id": "Peragakan dengan piring sungguhan: hitung banyak piring, lalu bagikan sampai benda habis."
+      }
+    },
+    {
+      "code": "MULTIPLIES_INSTEAD",
+      "description": {
+        "en": "Multiplies the two numbers because both appear in the story.",
+        "id": "Mengalikan kedua bilangan karena keduanya muncul dalam cerita."
+      },
+      "remediation": {
+        "en": "Ask whether each plate will have more or fewer than the whole amount; sharing always makes each part smaller than the whole.",
+        "id": "Tanyakan apakah setiap piring akan berisi lebih banyak atau lebih sedikit dari seluruhnya; berbagi selalu membuat setiap bagian lebih kecil dari keseluruhan."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the numbers in the story.",
+        "id": "Menjumlahkan bilangan dalam cerita."
+      },
+      "remediation": {
+        "en": "Draw the bar for the whole amount first and mark the equal parts; the answer must fit inside the bar.",
+        "id": "Gambar batang untuk seluruh jumlah dulu dan tandai bagian-bagiannya; jawabannya harus muat di dalam batang."
+      }
+    },
+    {
+      "code": "UNEQUAL_SHARING_ACCEPTED",
+      "description": {
+        "en": "Thinks any sharing counts as division, even when the groups are not equal.",
+        "id": "Mengira setiap pembagian dihitung sebagai pembagian matematika, walaupun kelompoknya tidak sama."
+      },
+      "remediation": {
+        "en": "Line the two plates' objects up side by side; the extra ones without a partner show the sharing is not fair yet.",
+        "id": "Jajarkan isi kedua piring berdampingan; benda lebih yang tidak punya pasangan menunjukkan pembagiannya belum adil."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Find every way to share 24 blocks equally with no blocks left over (1, 2, 3, 4, 6, 8, 12 or 24 groups) and write each division sentence.",
+      "id": "Cari semua cara membagi 24 balok sama banyak tanpa sisa (1, 2, 3, 4, 6, 8, 12, atau 24 kelompok) dan tulis setiap kalimat pembagiannya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Bowls with high sides make dealing easier for children with fine-motor difficulties; the child can say each sentence while the adult writes it.",
+      "id": "Mangkuk bertepi tinggi memudahkan anak dengan kesulitan motorik halus; anak bisa mengucapkan kalimatnya sementara orang dewasa menuliskannya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": true,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "If real kue or onde-onde are used, check for allergies (sesame on onde-onde) and keep small blocks away from younger siblings.",
+        "id": "Jika memakai kue atau onde-onde sungguhan, periksa alergi (wijen pada onde-onde) dan jauhkan balok kecil dari adik yang lebih kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves four new sharing or grouping stories, writes each division sentence and checks it with multiplication, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan empat cerita berbagi atau mengelompokkan yang baru, menulis setiap kalimat pembagian, dan memeriksanya dengan perkalian, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

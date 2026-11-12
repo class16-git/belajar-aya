@@ -1,0 +1,418 @@
+{
+  "id": "unit-g2-stem-swap-sort-number-cards",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "stem",
+  "strand": "algorithms",
+  "title": {
+    "en": "Swap sort: neighbours trade places",
+    "id": "Urut tukar: tetangga bertukar tempat"
+  },
+  "prerequisites": [
+    "unit-k-stem-sort-by-size-algorithm",
+    "unit-g1-stem-sort-by-two-rules"
+  ],
+  "objective": {
+    "en": "Sort a row of number cards with a swap algorithm (compare each pair of neighbours, swap if the left one is bigger, repeat passes until a pass has no swaps), count the comparisons and swaps, and fix a buggy version.",
+    "id": "Mengurutkan barisan kartu angka dengan algoritma tukar (bandingkan setiap pasangan tetangga, tukar jika yang kiri lebih besar, ulangi putaran sampai ada putaran tanpa tukar), menghitung perbandingan dan tukarnya, serta memperbaiki versi yang ada bug-nya."
+  },
+  "rationale": {
+    "en": "In Kindergarten children sorted by finding the smallest of a pile. A swap sort is a different recipe: it only ever looks at two neighbours, which is how a machine with a tiny view works. Counting comparisons and swaps is a first taste of asking how much work an algorithm does.",
+    "id": "Di TK anak mengurutkan dengan mencari yang terkecil dari tumpukan. Urut tukar adalah resep berbeda: hanya pernah melihat dua tetangga, seperti cara kerja mesin yang pandangannya sempit. Menghitung perbandingan dan tukar adalah awal dari bertanya seberapa banyak kerja yang dilakukan sebuah algoritma."
+  },
+  "outcomes": [
+    {
+      "en": "Carries out the swap sort correctly on four or five cards and knows when to stop.",
+      "id": "Menjalankan urut tukar dengan benar pada empat atau lima kartu dan tahu kapan berhenti."
+    },
+    {
+      "en": "Counts comparisons and swaps, and finds the bug in a version that swaps the wrong way.",
+      "id": "Menghitung perbandingan dan tukar, serta menemukan bug pada versi yang menukar dengan arah yang salah."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I compare only two neighbours at a time.",
+      "id": "Aku membandingkan hanya dua tetangga setiap kali."
+    },
+    {
+      "en": "I stop when a whole pass has no swaps.",
+      "id": "Aku berhenti saat satu putaran penuh tidak ada tukar."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Write the algorithm on a card: 1. Start at the left. 2. Compare two neighbours. 3. If the left one is bigger, swap them. 4. Move one place right and repeat until the end. 5. If you swapped anything, do another pass. If not, stop.",
+      "id": "Tulis algoritmanya di kartu: 1. Mulai dari kiri. 2. Bandingkan dua tetangga. 3. Jika yang kiri lebih besar, tukar. 4. Geser satu tempat ke kanan dan ulangi sampai ujung. 5. Jika ada yang ditukar, lakukan putaran lagi. Jika tidak, berhenti."
+    },
+    {
+      "en": "Use two fingers as the 'window' that sees only two cards. Your child may not look at the whole row to decide: only the window.",
+      "id": "Pakai dua jari sebagai 'jendela' yang hanya melihat dua kartu. Anak tidak boleh melihat seluruh barisan untuk memutuskan: hanya jendelanya."
+    },
+    {
+      "en": "Keep a tally on paper: one mark for every comparison, a circle for every swap, and a line under each pass.",
+      "id": "Buat turus di kertas: satu garis untuk setiap perbandingan, satu lingkaran untuk setiap tukar, dan garis bawah untuk setiap putaran."
+    },
+    {
+      "en": "Ask your child to predict before starting: 'How many passes will this row need?' Compare with the tally at the end.",
+      "id": "Minta anak menebak sebelum mulai: 'Berapa putaran yang dibutuhkan barisan ini?' Bandingkan dengan turus di akhir."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Put your two-finger window on the first two cards.",
+      "id": "Taruh jendela dua jarimu di dua kartu pertama."
+    },
+    {
+      "en": "If the left card is bigger, swap. Then move the window one place right.",
+      "id": "Jika kartu kiri lebih besar, tukar. Lalu geser jendela satu tempat ke kanan."
+    },
+    {
+      "en": "At the end of the row, start a new pass. Stop when a pass has no swaps.",
+      "id": "Di ujung barisan, mulai putaran baru. Berhenti saat satu putaran tidak ada tukar."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Sort number cards on the table with the two-finger window.",
+        "id": "Urutkan kartu angka di meja dengan jendela dua jari."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the row after every pass, one row under another, circling each pair that swapped.",
+        "id": "Gambar barisan setelah setiap putaran, satu baris di bawah yang lain, lingkari setiap pasangan yang ditukar."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the tally totals: comparisons per pass, swaps per pass, and the total number of swaps.",
+        "id": "Tulis jumlah turus: perbandingan setiap putaran, tukar setiap putaran, dan jumlah seluruh tukar."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Number cards 1 to 9 written on paper squares, two sets",
+      "id": "Kartu angka 1 sampai 9 yang ditulis di potongan kertas, dua set"
+    },
+    {
+      "en": "A pencil and paper for the tally",
+      "id": "Pensil dan kertas untuk turus"
+    },
+    {
+      "en": "An algorithm card written by the adult and child together",
+      "id": "Kartu algoritma yang ditulis bersama orang dewasa dan anak"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write the numbers in large, clear digits. Shuffle one set and deal out four cards in a row for the first example: 4, 2, 3, 1.",
+      "id": "Tulis angka dengan besar dan jelas. Kocok satu set dan jajarkan empat kartu untuk contoh pertama: 4, 2, 3, 1."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Pass 1 on 4, 2, 3, 1: window on 4 and 2: left bigger, swap → 2, 4, 3, 1. Window on 4 and 3: swap → 2, 3, 4, 1. Window on 4 and 1: swap → 2, 3, 1, 4. Three comparisons, three swaps. 'The biggest card has travelled all the way to the end.'",
+      "id": "Putaran 1 pada 4, 2, 3, 1: jendela di 4 dan 2: kiri lebih besar, tukar → 2, 4, 3, 1. Jendela di 4 dan 3: tukar → 2, 3, 4, 1. Jendela di 4 dan 1: tukar → 2, 3, 1, 4. Tiga perbandingan, tiga tukar. 'Kartu terbesar sudah berjalan sampai ke ujung.'"
+    },
+    {
+      "en": "Passes 2 and 3: pass 2 gives 2, 1, 3, 4 (one swap: 3 and 1). Pass 3 gives 1, 2, 3, 4 (one swap: 2 and 1). Pass 4 has no swaps, so the robot stops. Total: 5 swaps in 4 passes.",
+      "id": "Putaran 2 dan 3: putaran 2 menghasilkan 2, 1, 3, 4 (satu tukar: 3 dan 1). Putaran 3 menghasilkan 1, 2, 3, 4 (satu tukar: 2 dan 1). Putaran 4 tidak ada tukar, jadi robot berhenti. Jumlah: 5 tukar dalam 4 putaran."
+    },
+    {
+      "en": "Why pass 4? After pass 3 the row looks sorted to us, but the robot only sees two cards at a time. It needs one pass with no swaps to know for sure.",
+      "id": "Mengapa putaran 4? Setelah putaran 3 barisan tampak urut bagi kita, tetapi robot hanya melihat dua kartu setiap kali. Robot butuh satu putaran tanpa tukar agar yakin."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Sort 5, 1, 4, 2, 8 with the algorithm, keeping a full tally. Predict the number of passes first.",
+      "id": "Urutkan 5, 1, 4, 2, 8 dengan algoritma, sambil membuat turus lengkap. Tebak dulu jumlah putarannya."
+    },
+    {
+      "en": "Try an already sorted row, 2, 3, 6, 7. How many passes and swaps does it need? Why is it still one pass, not zero?",
+      "id": "Coba barisan yang sudah urut, 2, 3, 6, 7. Berapa putaran dan tukar yang dibutuhkan? Mengapa tetap satu putaran, bukan nol?"
+    },
+    {
+      "en": "Change the algorithm so the row ends biggest-first. Which one word on the card do you change? Test it.",
+      "id": "Ubah algoritmanya agar barisan berakhir dari yang terbesar. Satu kata mana di kartu yang kamu ubah? Uji."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Cards: 3, 1, 2. Using the swap sort, how many swaps happen in total?",
+        "id": "Kartu: 3, 1, 2. Dengan urut tukar, berapa kali tukar terjadi seluruhnya?"
+      },
+      "choices": {
+        "en": [
+          "2 swaps",
+          "1 swap",
+          "3 swaps"
+        ],
+        "id": [
+          "2 tukar",
+          "1 tukar",
+          "3 tukar"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Pass 1: swap 3 and 1 → 1, 3, 2; swap 3 and 2 → 1, 2, 3. Pass 2 has no swaps. That is 1 + 1 = 2.",
+        "id": "Putaran 1: tukar 3 dan 1 → 1, 3, 2; tukar 3 dan 2 → 1, 2, 3. Putaran 2 tidak ada tukar. Jadi 1 + 1 = 2."
+      },
+      "distractorMisconceptions": {
+        "1": "STOPS_AFTER_FIRST_SWAP",
+        "2": "COUNTS_COMPARISONS_AS_SWAPS"
+      },
+      "check": {
+        "expression": "1 + 1",
+        "result": "2"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A row has 6 cards. How many neighbour comparisons are there in one pass?",
+        "id": "Sebuah barisan berisi 6 kartu. Berapa perbandingan tetangga dalam satu putaran?"
+      },
+      "choices": {
+        "en": [
+          "5 comparisons",
+          "6 comparisons",
+          "3 comparisons"
+        ],
+        "id": [
+          "5 perbandingan",
+          "6 perbandingan",
+          "3 perbandingan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each comparison uses a pair of neighbours; 6 cards have 6 - 1 = 5 pairs.",
+        "id": "Setiap perbandingan memakai sepasang tetangga; 6 kartu punya 6 - 1 = 5 pasangan."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_COMPARISON_PER_CARD",
+        "2": "PAIRS_DO_NOT_OVERLAP"
+      },
+      "check": {
+        "expression": "6 - 1",
+        "result": "5"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "When does the swap sort stop?",
+        "id": "Kapan urut tukar berhenti?"
+      },
+      "choices": {
+        "en": [
+          "After a whole pass with no swaps",
+          "As soon as the smallest card is first",
+          "After exactly one pass"
+        ],
+        "id": [
+          "Setelah satu putaran penuh tanpa tukar",
+          "Begitu kartu terkecil ada di depan",
+          "Tepat setelah satu putaran"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Only a pass with no swaps proves every neighbour pair is in order.",
+        "id": "Hanya putaran tanpa tukar yang membuktikan setiap pasangan tetangga sudah urut."
+      },
+      "distractorMisconceptions": {
+        "1": "FIRST_PLACE_MEANS_DONE",
+        "2": "ONE_PASS_ENOUGH"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Doni's robot swaps when the left card is smaller. He starts with 2, 7, 4. What row does he end with?",
+        "id": "Robot Doni menukar jika kartu kiri lebih kecil. Ia mulai dengan 2, 7, 4. Barisan apa yang dihasilkannya?"
+      },
+      "choices": {
+        "en": [
+          "7, 4, 2",
+          "2, 4, 7",
+          "7, 2, 4"
+        ],
+        "id": [
+          "7, 4, 2",
+          "2, 4, 7",
+          "7, 2, 4"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Swapping when the left is smaller sorts biggest-first: the bug is the word 'smaller'.",
+        "id": "Menukar saat kiri lebih kecil mengurutkan dari yang terbesar: bug-nya ada di kata 'lebih kecil'."
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_THE_BUG",
+        "2": "STOPS_AFTER_FIRST_SWAP"
+      },
+      "check": {
+        "expression": "7",
+        "result": "7"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "STOPS_AFTER_FIRST_SWAP",
+      "description": {
+        "en": "Stops the pass after the first swap instead of moving on.",
+        "id": "Menghentikan putaran setelah tukar pertama, bukan melanjutkan."
+      },
+      "remediation": {
+        "en": "Move a paper arrow one place right after every comparison, swap or not, until it reaches the end of the row.",
+        "id": "Geser panah kertas satu tempat ke kanan setelah setiap perbandingan, ada tukar atau tidak, sampai ke ujung barisan."
+      }
+    },
+    {
+      "code": "COUNTS_COMPARISONS_AS_SWAPS",
+      "description": {
+        "en": "Counts every comparison as a swap.",
+        "id": "Menghitung setiap perbandingan sebagai tukar."
+      },
+      "remediation": {
+        "en": "Use two tally columns, 'looked' and 'swapped', and only mark 'swapped' when the cards really move.",
+        "id": "Pakai dua kolom turus, 'dilihat' dan 'ditukar', dan hanya tandai 'ditukar' saat kartunya benar-benar berpindah."
+      }
+    },
+    {
+      "code": "ONE_COMPARISON_PER_CARD",
+      "description": {
+        "en": "Thinks there is one comparison for each card.",
+        "id": "Mengira ada satu perbandingan untuk setiap kartu."
+      },
+      "remediation": {
+        "en": "Lay out 3 cards and slide the two-finger window along: count the window positions (2), then try 4 cards.",
+        "id": "Jajarkan 3 kartu dan geser jendela dua jari: hitung posisi jendelanya (2), lalu coba 4 kartu."
+      }
+    },
+    {
+      "code": "PAIRS_DO_NOT_OVERLAP",
+      "description": {
+        "en": "Splits the row into separate pairs instead of overlapping neighbours.",
+        "id": "Membagi barisan menjadi pasangan terpisah, bukan tetangga yang saling bertumpuk."
+      },
+      "remediation": {
+        "en": "Colour each card; show that the second card is in the first window and in the second window.",
+        "id": "Warnai setiap kartu; tunjukkan bahwa kartu kedua ada di jendela pertama dan juga di jendela kedua."
+      }
+    },
+    {
+      "code": "FIRST_PLACE_MEANS_DONE",
+      "description": {
+        "en": "Thinks the row is sorted when the first card is right.",
+        "id": "Mengira barisan sudah urut saat kartu pertama benar."
+      },
+      "remediation": {
+        "en": "Show 1, 4, 3, 2: the first card is right but the row is not sorted. Run a pass and count the swaps.",
+        "id": "Tunjukkan 1, 4, 3, 2: kartu pertama benar tetapi barisan belum urut. Jalankan satu putaran dan hitung tukarnya."
+      }
+    },
+    {
+      "code": "ONE_PASS_ENOUGH",
+      "description": {
+        "en": "Thinks one pass always sorts the row.",
+        "id": "Mengira satu putaran selalu mengurutkan barisan."
+      },
+      "remediation": {
+        "en": "Run one pass on 3, 2, 1 and look at the result, 2, 1, 3: not yet sorted.",
+        "id": "Jalankan satu putaran pada 3, 2, 1 dan lihat hasilnya, 2, 1, 3: belum urut."
+      }
+    },
+    {
+      "code": "IGNORES_THE_BUG",
+      "description": {
+        "en": "Assumes a program does what was intended rather than what it says.",
+        "id": "Menganggap program melakukan yang dimaksud, bukan yang tertulis."
+      },
+      "remediation": {
+        "en": "Read the robot's rule aloud word by word and act it out exactly, like a robot that cannot guess.",
+        "id": "Bacakan aturan robot kata demi kata dan peragakan persis, seperti robot yang tidak bisa menebak."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Race two algorithms on the same 5 cards: the Kindergarten 'find the smallest' recipe and the swap sort. Count the comparisons each one makes.",
+      "id": "Adu dua algoritma pada 5 kartu yang sama: resep TK 'cari yang terkecil' dan urut tukar. Hitung perbandingan yang dibuat masing-masing."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use large cards and let a child with motor difficulties say 'swap' or 'stay' while a partner moves the cards; a tally can be kept with counters.",
+      "id": "Pakai kartu besar dan biarkan anak dengan kesulitan motorik berkata 'tukar' atau 'tetap' sementara temannya memindahkan kartu; turus bisa dicatat dengan keping penghitung."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Paper-only activity; no special safety needs. Take movement breaks between sorts.",
+        "id": "Kegiatan hanya dengan kertas; tidak ada kebutuhan keselamatan khusus. Beri jeda bergerak di antara pengurutan."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "assessment",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child sorts a new row of five cards with the swap sort, keeps an accurate tally, explains the stopping rule, and finds a swap-direction bug.",
+      "id": "Dikuasai jika anak mengurutkan barisan lima kartu baru dengan urut tukar, membuat turus yang tepat, menjelaskan aturan berhenti, dan menemukan bug arah tukar."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}

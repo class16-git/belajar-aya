@@ -1,0 +1,271 @@
+{
+  "id": "reading-g4-why-heavy-ships-float",
+  "version": "1.0.0",
+  "level": "g4",
+  "readingLevel": "fluent",
+  "genre": "explanatory",
+  "mode": "independent",
+  "title": {
+    "en": "Why do heavy ships float?",
+    "id": "Mengapa kapal yang berat bisa mengapung?"
+  },
+  "text": {
+    "en": [
+      "Drop a small steel nail into water and it sinks at once. Yet a huge steel ferry, heavier than thousands of nails, floats across the sea from island to island. How can that be?",
+      "When an object goes into water, it pushes some water out of the way. The water pushes back up on the object. This upward push is called upthrust.",
+      "The more water an object pushes aside, the bigger the upthrust. An object floats if it can push aside water that weighs as much as the object itself before it is completely under the water.",
+      "A nail is small and solid, so it pushes aside only a tiny amount of water. A ship's hull is wide and hollow, and the space inside is filled with air. So the ship sits low in the water and pushes aside a very large amount of water, enough to hold it up.",
+      "You can test this with modelling clay. Roll it into a ball and it sinks. Press the same clay into a wide, thin bowl shape and it floats. The amount of clay has not changed; only its shape has.",
+      "When a ship is loaded with cargo, it gets heavier and sinks lower until it pushes aside enough extra water. Ships have a line painted on the hull to show how low they can safely sit. Overloading is dangerous.",
+      "In an island nation like Indonesia, boat builders have understood this for centuries. Ferries, fishing boats and the wooden pinisi of South Sulawesi all float because of their shape."
+    ],
+    "id": [
+      "Jatuhkan paku baja kecil ke air dan paku itu langsung tenggelam. Tetapi kapal feri baja yang sangat besar, lebih berat dari ribuan paku, mengapung menyeberangi laut dari pulau ke pulau. Bagaimana bisa?",
+      "Saat sebuah benda masuk ke air, benda itu mendorong sebagian air menyingkir. Air lalu mendorong balik benda itu ke atas. Dorongan ke atas ini disebut gaya apung.",
+      "Makin banyak air yang didorong menyingkir, makin besar gaya apungnya. Benda akan mengapung jika ia bisa mendorong menyingkir air yang beratnya sama dengan berat benda itu sebelum benda itu seluruhnya terbenam.",
+      "Paku itu kecil dan padat, jadi hanya mendorong sedikit sekali air. Lambung kapal lebar dan berongga, dan ruang di dalamnya berisi udara. Jadi kapal duduk agak dalam di air dan mendorong menyingkir air dalam jumlah sangat besar, cukup untuk menahannya.",
+      "Kamu bisa mengujinya dengan lilin mainan. Bentuk menjadi bola dan lilin itu tenggelam. Tekan lilin yang sama menjadi bentuk mangkuk yang lebar dan tipis, lalu lilin itu mengapung. Jumlah lilinnya tidak berubah; hanya bentuknya.",
+      "Saat kapal diisi muatan, kapal menjadi lebih berat dan turun lebih dalam sampai mendorong menyingkir cukup banyak air tambahan. Kapal punya garis yang dicat di lambungnya untuk menunjukkan seberapa dalam kapal boleh terbenam dengan aman. Kelebihan muatan itu berbahaya.",
+      "Di negara kepulauan seperti Indonesia, para pembuat kapal sudah memahami hal ini selama berabad-abad. Kapal feri, perahu nelayan, dan pinisi kayu dari Sulawesi Selatan semuanya mengapung karena bentuknya."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads an explanation and describes why some objects float.",
+      "id": "Membaca teks eksplanasi dan menjelaskan mengapa beberapa benda mengapung."
+    },
+    {
+      "en": "Explains how shape changes the amount of water an object pushes aside.",
+      "id": "Menjelaskan bagaimana bentuk mengubah jumlah air yang didorong sebuah benda."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "upthrust",
+        "id": "gaya apung"
+      },
+      "meaning": {
+        "en": "the upward push of water on an object",
+        "id": "dorongan air ke atas pada sebuah benda"
+      }
+    },
+    {
+      "word": {
+        "en": "hull",
+        "id": "lambung kapal"
+      },
+      "meaning": {
+        "en": "the main body of a ship that sits in the water",
+        "id": "badan utama kapal yang berada di air"
+      }
+    },
+    {
+      "word": {
+        "en": "cargo",
+        "id": "muatan"
+      },
+      "meaning": {
+        "en": "goods carried by a ship or vehicle",
+        "id": "barang yang diangkut kapal atau kendaraan"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main reason a steel ship floats?",
+        "id": "Apa alasan utama kapal baja bisa mengapung?"
+      },
+      "choices": {
+        "en": [
+          "its wide, hollow shape pushes aside enough water",
+          "steel is lighter than water",
+          "the engines keep it up"
+        ],
+        "id": [
+          "bentuknya yang lebar dan berongga mendorong cukup banyak air",
+          "baja lebih ringan daripada air",
+          "mesinnya menahan kapal tetap di atas"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which test in the text shows that shape matters?",
+        "id": "Uji mana dalam teks yang menunjukkan bahwa bentuk itu penting?"
+      },
+      "choices": {
+        "en": [
+          "a clay ball sinks but the same clay as a bowl floats",
+          "a nail sinks in water",
+          "a ferry crosses the sea"
+        ],
+        "id": [
+          "bola lilin tenggelam, tetapi lilin yang sama berbentuk mangkuk mengapung",
+          "paku tenggelam di air",
+          "kapal feri menyeberangi laut"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "What would happen if a ship were loaded far past its painted line?",
+        "id": "Apa yang terjadi jika kapal dimuati jauh melewati garis catnya?"
+      },
+      "choices": {
+        "en": [
+          "it could sit dangerously low and might sink",
+          "it would rise higher in the water",
+          "it would sail faster"
+        ],
+        "id": [
+          "kapal bisa terbenam terlalu dalam dan mungkin tenggelam",
+          "kapal akan naik lebih tinggi di air",
+          "kapal akan berlayar lebih cepat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "1 cm³ of water has a mass of 1 gram. A floating toy boat pushes aside 180 cm³ of water. What is the mass of the boat?",
+        "id": "1 cm³ air bermassa 1 gram. Sebuah perahu mainan yang mengapung mendorong 180 cm³ air. Berapa massa perahu itu?"
+      },
+      "choices": {
+        "en": [
+          "180 grams",
+          "18 grams",
+          "1,800 grams"
+        ],
+        "id": [
+          "180 gram",
+          "18 gram",
+          "1.800 gram"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2,
+      "check": {
+        "expression": "180 * 1",
+        "result": "180"
+      }
+    },
+    {
+      "id": "q5",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What is 'upthrust'?",
+        "id": "Apa itu 'gaya apung'?"
+      },
+      "choices": {
+        "en": [
+          "the push of water upwards on an object",
+          "the weight of the cargo",
+          "a wave hitting the ship"
+        ],
+        "id": [
+          "dorongan air ke atas pada benda",
+          "berat muatan",
+          "ombak yang menghantam kapal"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Boat designers choose shapes that push aside enough water to float safely.",
+        "id": "Perancang kapal memilih bentuk yang mendorong cukup air untuk mengapung dengan aman."
+      }
+    },
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Indonesia's islands are linked by ferries and traditional boats such as the pinisi.",
+        "id": "Pulau-pulau Indonesia dihubungkan oleh kapal feri dan perahu tradisional seperti pinisi."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Linking volume of water pushed aside to mass uses measurement.",
+        "id": "Menghubungkan volume air yang didorong dengan massa memakai pengukuran."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Why might a life jacket help a person float?",
+      "id": "Mengapa pelampung bisa membantu orang mengapung?"
+    },
+    {
+      "en": "How could you change a boat so it carries more cargo?",
+      "id": "Bagaimana kamu bisa mengubah perahu agar bisa membawa lebih banyak muatan?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make a ball and a bowl from the same piece of modelling clay and test both in a basin with a few centimetres of water. Then load your clay boat with paper clips one at a time. How many can it carry before it sinks? Empty the water when you finish.",
+    "id": "Buat bola dan mangkuk dari lilin mainan yang sama, lalu uji keduanya di baskom berisi air beberapa sentimeter. Lalu muati perahu lilinmu dengan penjepit kertas satu per satu. Berapa banyak yang bisa dibawanya sebelum tenggelam? Buang airnya setelah selesai."
+  },
+  "factChecks": [
+    {
+      "claim": "An object floats when it pushes aside water weighing as much as itself (Archimedes' principle).",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "1 cm³ of water has a mass of about 1 gram.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Ships carry a load line painted on the hull to show safe loading.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The pinisi is a traditional wooden sailing ship of South Sulawesi.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Use only a few centimetres of water, wipe up spills, and empty the basin afterwards. Keep paper clips away from younger brothers and sisters.",
+      "id": "Gunakan air beberapa sentimeter saja, lap tumpahan, dan buang airnya setelah selesai. Jauhkan penjepit kertas dari adik yang masih kecil."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}
