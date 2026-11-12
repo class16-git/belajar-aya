@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { evaluateArithmetic, gradeUnitAssessment, isExpansionVisible, parseResult, pipelineState, unitAssessmentForClient, validateExpansion, type Unit } from './units';
+import { contentHash, evaluateArithmetic, gradeUnitAssessment, isExpansionVisible, parseResult, pipelineState, unitAssessmentForClient, validateExpansion, type Unit } from './units';
 import { expansionSummary, findExpansionItem, loadExpansionLevel, loadRawExpansion } from './expansion-store';
 
 const repo = join(import.meta.dirname, '../../..');
@@ -121,10 +121,28 @@ describe('structure, prerequisites, duplicates, safety, religion', () => {
   });
   it('an approval covers only the reviewed version: an edit after approval hides the item until it is re-reviewed', () => {
     const u = validateExpansion({ units: [refUnit()], readings: [] }).content.units[0]!;
-    const approved = { ...u, reviewStatus: 'reviewed' as const, review: { ...u.review, reviewedBy: 'AB', reviewerRole: 'parent' as const, reviewedAt: '2026-11-11', reviewedVersion: u.version } };
+    const approved = { ...u, reviewStatus: 'reviewed' as const, review: { ...u.review, reviewedBy: 'AB', reviewerRole: 'parent' as const, reviewedAt: '2026-11-11', reviewedVersion: u.version, reviewedHash: contentHash(u) } };
     expect(isExpansionVisible(approved, 'reviewed')).toBe(true);
     expect(isExpansionVisible({ ...approved, version: '9.9.9' }, 'reviewed')).toBe(false);
     expect(isExpansionVisible({ ...approved, review: { ...approved.review, reviewedVersion: undefined } }, 'reviewed')).toBe(false);
+  });
+  it('the content fingerprint is identical in the validator and in apply-reviews.mjs, for every file (raw or parsed)', async () => {
+    // @ts-expect-error untyped .mjs script
+    const cli = (await import('../../../apps/web/scripts/apply-reviews.mjs')) as { contentHash: (x: unknown) => string };
+    const raw = await loadRawExpansion();
+    const { content } = validateExpansion(raw);
+    const parsed = new Map([...content.units, ...content.readings].map((x) => [x.id, x]));
+    for (const r of [...raw.units, ...raw.readings] as { id: string }[]) {
+      const p = parsed.get(r.id);
+      if (p) expect(contentHash(p), r.id).toBe(cli.contentHash(r));
+    }
+  });
+  it('an approval covers only the reviewed content: an edit without a version bump still hides the item', () => {
+    const u = validateExpansion({ units: [refUnit()], readings: [] }).content.units[0]!;
+    const approved = { ...u, reviewStatus: 'reviewed' as const, review: { ...u.review, reviewedBy: 'AB', reviewerRole: 'parent' as const, reviewedAt: '2026-11-11', reviewedVersion: u.version, reviewedHash: contentHash(u) } };
+    expect(isExpansionVisible(approved, 'reviewed')).toBe(true);
+    const edited = { ...approved, objective: { ...approved.objective, en: approved.objective.en + ' Edited.' } };
+    expect(isExpansionVisible(edited, 'reviewed')).toBe(false);
   });
   it('a rejected item is never visible, even in preview', () => {
     const u = validateExpansion({ units: [refUnit()], readings: [] }).content.units[0]!;

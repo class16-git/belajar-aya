@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { z } from 'zod';
 import { STAGES, type Stage } from '@atlas/shared';
 import { arabicPhraseSchema, localized, REVIEW_STATUSES, religiousReviewSchema, type ReviewStatus } from './schema';
@@ -49,6 +50,9 @@ const reviewRecord = z
     reviewedAt: DATE.optional(),
     /** The exact version a person approved. Any later edit (new version) needs a new review before children see it. */
     reviewedVersion: SEMVER.optional(),
+    /** Fingerprint of the exact content a person approved (see contentHash). Any edit, even without a version bump, hides
+     *  the item until it is re-reviewed. */
+    reviewedHash: z.string().regex(/^[0-9a-f]{16}$/).optional(),
     rejectedReason: plain(400).optional(),
   })
   .strict();
@@ -503,6 +507,29 @@ export function validateExpansion(raw: { units: unknown[]; readings: unknown[] }
   return { content: { units, readings }, errors };
 }
 
+/**
+ * Content fingerprint used by review records. Canonical JSON (sorted keys; empty arrays and objects dropped, so schema
+ * defaults do not matter) of everything except the review state itself, SHA-256, first 16 hex characters. The same
+ * algorithm is implemented in apps/web/scripts/apply-reviews.mjs; a unit test checks they agree.
+ */
+export function contentHash(x: unknown): string {
+  const canon = (v: unknown, top = false): unknown => {
+    if (Array.isArray(v)) return v.map((e) => canon(e));
+    if (v && typeof v === 'object') {
+      const out: Record<string, unknown> = {};
+      for (const k of Object.keys(v as object).sort()) {
+        if (top && (k === 'review' || k === 'reviewStatus' || k === 'religiousReview')) continue;
+        const c = canon((v as Record<string, unknown>)[k]);
+        if (c === undefined || (Array.isArray(c) && c.length === 0) || (c && typeof c === 'object' && !Array.isArray(c) && Object.keys(c).length === 0)) continue;
+        out[k] = c;
+      }
+      return out;
+    }
+    return v;
+  };
+  return createHash('sha256').update(JSON.stringify(canon(x, true))).digest('hex').slice(0, 16);
+}
+
 /** Production visibility: human review recorded, no open factual claims, and (Islamic/Arabic) an approved scholar review. */
 export function isExpansionVisible(x: Unit | Reading, minReview: ReviewStatus): boolean {
   if (x.review.rejectedReason) return false; // a rejected item is never shown, in any environment
@@ -510,6 +537,7 @@ export function isExpansionVisible(x: Unit | Reading, minReview: ReviewStatus): 
   if (rank(minReview) >= rank('reviewed')) {
     if (!(x.review.reviewedBy && x.review.reviewedAt)) return false;
     if (x.review.reviewedVersion !== x.version) return false; // edited since the human review: re-review first
+    if (x.review.reviewedHash !== contentHash(x)) return false; // content changed since the human review
     const religious = ('framework' in x && x.framework === 'islamic') || x.arabicPhrases.length > 0 || ('crossCurricular' in x && x.crossCurricular.some((c) => c.subject === 'islamic_values'));
     if (religious && !(x.religiousReview?.approvalStatus === 'approved' && x.religiousReview.scholarReviewer && x.religiousReview.reviewedAt)) return false;
     if ('factChecks' in x && x.factChecks.some((f) => f.status === 'needs_source')) return false;

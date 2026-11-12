@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-montessori-tile-game-subtraction-exchanging",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "framework": "montessori",
   "strand": "mathematics",
@@ -129,8 +129,8 @@
       "id": "Ratusan: kita perlu 7 tetapi hanya ada 3, jadi tukar satu ribuan dengan sepuluh ratusan: 13 ratusan dan 4 ribuan. Ambil 7: sisa 6. Ribuan: 4 − 2 = 2. Hitung sisanya: 2.624. Di kertas, coret setiap angka yang ditukar dan tulis angka barunya di atasnya."
     },
     {
-      "en": "Across zeros: 4,005 − 1,238. Units are short, and there are no tens or hundreds to exchange. Change one thousand for ten hundreds, one of those hundreds for ten tens, and one of those tens for ten units. Now 3 thousands, 9 hundreds, 9 tens and 15 units. Take away: 7 units, 6 tens, 7 hundreds, 2 thousands: 2,767.",
-      "id": "Melewati nol: 4.005 − 1.238. Satuan kurang, dan tidak ada puluhan atau ratusan untuk ditukar. Tukar satu ribuan dengan sepuluh ratusan, satu dari ratusan itu dengan sepuluh puluhan, dan satu dari puluhan itu dengan sepuluh satuan. Sekarang 3 ribuan, 9 ratusan, 9 puluhan, dan 15 satuan. Ambil: 7 satuan, 6 puluhan, 7 ratusan, 2 ribuan: 2.767."
+      "en": "Across zeros: 4,005 − 1,238. Units are short, and there are no tens or hundreds to exchange. Change one thousand for ten hundreds, one of those hundreds for ten tens, and one of those tens for ten units. Now 3 thousands, 9 hundreds, 9 tens and 15 units. Take away 8 units, 3 tens, 2 hundreds and 1 thousand. What is left: 7 units, 6 tens, 7 hundreds, 2 thousands: 2,767.",
+      "id": "Melewati nol: 4.005 − 1.238. Satuan kurang, dan tidak ada puluhan atau ratusan untuk ditukar. Tukar satu ribuan dengan sepuluh ratusan, satu dari ratusan itu dengan sepuluh puluhan, dan satu dari puluhan itu dengan sepuluh satuan. Sekarang 3 ribuan, 9 ratusan, 9 puluhan, dan 15 satuan. Ambil 8 satuan, 3 puluhan, 2 ratusan, dan 1 ribuan. Sisanya: 7 satuan, 6 puluhan, 7 ratusan, 2 ribuan: 2.767."
     }
   ],
   "practice": [
@@ -314,8 +314,8 @@
     {
       "code": "ZERO_EXCHANGE_NOT_REDUCED",
       "description": {
-        "en": "Across zeros, makes tens and hundreds appear without exchanging from the thousand.",
-        "id": "Saat melewati nol, memunculkan puluhan dan ratusan tanpa menukar dari ribuan."
+        "en": "Across zeros, turns each zero into 10 instead of 9, forgetting that one tile was passed on down.",
+        "id": "Saat melewati nol, menjadikan setiap nol 10, bukan 9, lupa bahwa satu keping sudah diteruskan ke kolom berikutnya."
       },
       "remediation": {
         "en": "Do 1,000 − 1 with tiles only: one thousand tile becomes ten hundreds, one hundred becomes ten tens, one ten becomes ten units. Count the tiles at each step: always the same total value.",

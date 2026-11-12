@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-montessori-puzzle-map-of-indonesia",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "montessori",
   "strand": "geography",
@@ -46,16 +46,16 @@
   ],
   "parentInstructions": [
     {
-      "en": "Trace a map of Indonesia from an atlas onto a large sheet of card painted blue. Draw the national borders on Borneo, New Guinea and Timor with a dotted line. The adult cuts out the islands: one piece each for Sumatra, Java, Kalimantan, Sulawesi and Papua, and one piece each for the Bali–Nusa Tenggara chain and the Maluku islands.",
-      "id": "Jiplak peta Indonesia dari atlas ke lembar karton besar yang dicat biru. Gambar batas negara di Kalimantan, Papua, dan Timor dengan garis putus-putus. Orang dewasa menggunting pulau-pulaunya: satu kepingan untuk Sumatra, Jawa, Kalimantan, Sulawesi, dan Papua, serta satu kepingan untuk gugusan Bali–Nusa Tenggara dan satu untuk Kepulauan Maluku."
+      "en": "Trace a map of Indonesia from an atlas onto a large sheet of card painted blue. Draw the national borders on Borneo, New Guinea and Timor with a dotted line. The adult cuts out the islands: one piece each for Sumatra, Java, Kalimantan, Sulawesi and Papua, and one piece each for the Bali–Nusa Tenggara chain and the Maluku islands. Cut the chain as one piece joined by thin blue \"sea bridges\", and cut only the Indonesian (western) half of Timor.",
+      "id": "Jiplak peta Indonesia dari atlas ke lembar karton besar yang dicat biru. Gambar batas negara di Kalimantan, Papua, dan Timor dengan garis putus-putus. Orang dewasa menggunting pulau-pulaunya: satu kepingan untuk Sumatra, Jawa, Kalimantan, Sulawesi, dan Papua, serta satu kepingan untuk gugusan Bali–Nusa Tenggara dan satu untuk Kepulauan Maluku. Gunting gugusan itu sebagai satu kepingan yang disambung \"jembatan laut\" biru yang tipis, dan gunting hanya separuh barat Timor yang milik Indonesia."
     },
     {
       "en": "Small islands can be drawn on the blue base instead of cut out. The aim is the big shapes, not every island.",
       "id": "Pulau-pulau kecil cukup digambar di dasar biru, tidak perlu digunting. Tujuannya bentuk-bentuk besar, bukan setiap pulau."
     },
     {
-      "en": "Facts you can rely on: the equator crosses Sumatra, Kalimantan and Sulawesi; Borneo is shared by Indonesia (Kalimantan), Malaysia and Brunei; New Guinea is shared by Indonesia (Papua) and Papua New Guinea; Java is the island where the most Indonesians live.",
-      "id": "Fakta yang dapat diandalkan: garis khatulistiwa melintasi Sumatra, Kalimantan, dan Sulawesi; Pulau Kalimantan dimiliki bersama Indonesia, Malaysia, dan Brunei; Pulau Papua (Nugini) dimiliki bersama Indonesia dan Papua Nugini; Jawa adalah pulau tempat tinggal penduduk Indonesia terbanyak."
+      "en": "Facts you can rely on: the equator crosses Sumatra, Kalimantan and Sulawesi, and some smaller islands in North Maluku and Raja Ampat; Borneo is shared by Indonesia (Kalimantan), Malaysia and Brunei; New Guinea is shared by Indonesia (Papua) and Papua New Guinea; Java is the island where the most Indonesians live.",
+      "id": "Fakta yang dapat diandalkan: garis khatulistiwa melintasi Sumatra, Kalimantan, dan Sulawesi, serta beberapa pulau kecil di Maluku Utara dan Raja Ampat; Pulau Kalimantan dimiliki bersama Indonesia, Malaysia, dan Brunei; Pulau Papua (Nugini) dimiliki bersama Indonesia dan Papua Nugini; Jawa adalah pulau tempat tinggal penduduk Indonesia terbanyak."
     },
     {
       "en": "Introduce two or three islands at a time with the three-period lesson, starting with the island where your family lives.",
@@ -107,12 +107,12 @@
       "id": "Tunjukkan titik-titik Indonesia di peta benua, lalu keluarkan peta Indonesia: \"Ini gambar besar dari titik-titik itu.\" Angkat Jawa: \"Ini Jawa.\" Telusuri tepinya, lalu kembalikan. Lakukan hal yang sama dengan Sumatra, di sebelah baratnya."
     },
     {
-      "en": "Lay the red wool across the map where the equator line is drawn: \"This is the equator. It crosses Sumatra, Kalimantan and Sulawesi.\"",
-      "id": "Bentangkan benang wol merah melintasi peta di tempat garis khatulistiwa digambar: \"Ini garis khatulistiwa. Garis ini melintasi Sumatra, Kalimantan, dan Sulawesi.\""
+      "en": "Lay the red wool across the map where the equator line is drawn: \"This is the equator. It crosses Sumatra, Kalimantan and Sulawesi, and some smaller islands in North Maluku and Raja Ampat.\"",
+      "id": "Bentangkan benang wol merah melintasi peta di tempat garis khatulistiwa digambar: \"Ini garis khatulistiwa. Garis ini melintasi Sumatra, Kalimantan, dan Sulawesi, serta beberapa pulau kecil di Maluku Utara dan Raja Ampat.\""
     },
     {
       "en": "Lift Kalimantan and show the dotted line on the base: \"Part of this island belongs to Malaysia and Brunei. Our part is called Kalimantan.\"",
-      "id": "Angkat Kalimantan dan tunjukkan garis putus-putus di dasar peta: \"Sebagian pulau ini milik Malaysia dan Brunei. Bagian milik kita disebut Kalimantan.\""
+      "id": "Angkat Kalimantan dan tunjukkan garis putus-putus di dasar peta: \"Bagian utara pulau ini milik Malaysia dan Brunei. Bagian lainnya milik Indonesia.\""
     }
   ],
   "practice": [
@@ -151,7 +151,7 @@
       "answer": 0,
       "explanation": {
         "en": "The dotted border lines cross Borneo; the Indonesian part is called Kalimantan.",
-        "id": "Garis batas putus-putus melintasi pulau Kalimantan; bagian Indonesia disebut Kalimantan."
+        "id": "Garis batas putus-putus melintasi Pulau Kalimantan; bagian utaranya milik Malaysia (Sabah dan Sarawak) dan Brunei, sisanya milik Indonesia."
       },
       "distractorMisconceptions": {
         "1": "NEAREST_MEANS_SHARED",
@@ -217,29 +217,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "The red wool is the equator. Which group of islands does it cross?",
-        "id": "Benang wol merah adalah garis khatulistiwa. Kelompok pulau mana yang dilintasinya?"
+        "en": "Pontianak in West Kalimantan is known as the \"equator city\". Which of these cities is closest to the red wool (the equator)?",
+        "id": "Pontianak di Kalimantan Barat dikenal sebagai \"kota khatulistiwa\". Kota mana yang paling dekat dengan benang wol merah (garis khatulistiwa)?"
       },
       "choices": {
         "en": [
-          "Sumatra, Kalimantan and Sulawesi",
-          "Java, Bali and Nusa Tenggara",
-          "Only Papua"
+          "Pontianak",
+          "Surabaya",
+          "Kupang"
         ],
         "id": [
-          "Sumatra, Kalimantan, dan Sulawesi",
-          "Jawa, Bali, dan Nusa Tenggara",
-          "Hanya Papua"
+          "Pontianak",
+          "Surabaya",
+          "Kupang"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The equator runs across the middle of Sumatra, Kalimantan and Sulawesi. Java, Bali and Nusa Tenggara are south of it.",
-        "id": "Garis khatulistiwa melintasi bagian tengah Sumatra, Kalimantan, dan Sulawesi. Jawa, Bali, dan Nusa Tenggara berada di selatannya."
+        "en": "Pontianak lies almost on the equator. Surabaya (Java) and Kupang (Timor) are well to the south of it.",
+        "id": "Pontianak terletak hampir tepat di garis khatulistiwa. Surabaya (Jawa) dan Kupang (Timor) jauh di selatannya."
       },
       "distractorMisconceptions": {
-        "1": "EQUATOR_IS_BOTTOM_EDGE",
-        "2": "GUESSES_ISLAND_NAMES"
+        "1": "GUESSES_ISLAND_NAMES",
+        "2": "EQUATOR_IS_BOTTOM_EDGE"
       }
     }
   ],

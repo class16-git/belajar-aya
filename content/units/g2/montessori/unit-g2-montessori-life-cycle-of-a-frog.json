@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-montessori-life-cycle-of-a-frog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "montessori",
   "strand": "zoology",
@@ -49,8 +49,8 @@
       "id": "Buat dua set kartu tahap dengan menggambar di karton: katak (telur dalam gumpalan lendir, berudu, berudu berkaki belakang, katak muda berekor pendek, katak dewasa) dan ayam (telur, anak ayam menetas, anak ayam, ayam dewasa)."
     },
     {
-      "en": "Accurate facts to share: frog eggs are laid in water in jelly; tadpoles breathe with gills and eat mainly algae; the back legs grow first, then the front legs; the tail shrinks as the body takes it back in; lungs develop and the froglet leaves the water.",
-      "id": "Fakta yang akurat untuk disampaikan: telur katak diletakkan di air dalam lendir; berudu bernapas dengan insang dan terutama memakan ganggang; kaki belakang tumbuh lebih dulu, lalu kaki depan; ekornya menyusut karena diserap kembali oleh tubuh; paru-paru berkembang dan katak muda keluar dari air."
+      "en": "Accurate facts to share: frog eggs are laid in water in jelly; tadpoles breathe with gills and eat mainly algae; the back legs grow first, then the front legs; the tail shrinks as the body takes it back in; lungs develop and the froglet leaves the water. (This is true of most frogs; some tree frogs make a foam nest on a leaf above water so the tadpoles drop in, and toads lay long strings of eggs.)",
+      "id": "Fakta yang akurat untuk disampaikan: telur katak diletakkan di air dalam lendir; berudu bernapas dengan insang dan terutama memakan ganggang; kaki belakang tumbuh lebih dulu, lalu kaki depan; ekornya menyusut karena diserap kembali oleh tubuh; paru-paru berkembang dan katak muda keluar dari air. (Ini berlaku untuk kebanyakan katak; sebagian katak pohon membuat sarang busa di daun di atas air sehingga berudunya jatuh ke air, dan kodok meletakkan telur berupa untaian panjang.)"
     },
     {
       "en": "If you can, visit a rice field edge or pond in the rainy season to look for tadpoles. Look only; do not take them home, and stay on firm ground with an adult beside the child.",
@@ -110,8 +110,8 @@
       "id": "Letakkan kartu berikutnya: \"Mula-mula kaki belakang tumbuh. Lalu kaki depan keluar. Ekornya makin pendek, karena diserap kembali oleh tubuh. Paru-paru tumbuh di dalam. Sekarang ia katak muda, dan ia naik ke darat.\""
     },
     {
-      "en": "Lay the adult frog and follow the arrow back to the eggs: \"The adult frog breathes with lungs and through its damp skin. One day it lays eggs, and the cycle starts again.\" Then build the chicken circle the same way.",
-      "id": "Letakkan katak dewasa dan ikuti panah kembali ke telur: \"Katak dewasa bernapas dengan paru-paru dan melalui kulitnya yang lembap. Suatu hari ia bertelur, dan daur dimulai lagi.\" Lalu susun lingkaran ayam dengan cara yang sama."
+      "en": "Lay the adult frog and follow the arrow back to the eggs: \"The adult frog breathes with lungs and through its damp skin. One day a female frog lays eggs, and the cycle starts again.\" Then build the chicken circle the same way.",
+      "id": "Letakkan katak dewasa dan ikuti panah kembali ke telur: \"Katak dewasa bernapas dengan paru-paru dan melalui kulitnya yang lembap. Suatu hari katak betina bertelur, dan daur dimulai lagi.\" Lalu susun lingkaran ayam dengan cara yang sama."
     }
   ],
   "practice": [
@@ -132,29 +132,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Which legs appear first on a growing tadpole?",
-        "id": "Kaki mana yang muncul lebih dulu pada berudu yang sedang tumbuh?"
+        "en": "A drawing shows a tadpole with two front legs and no back legs. What is wrong with it?",
+        "id": "Sebuah gambar menunjukkan berudu dengan dua kaki depan tanpa kaki belakang. Apa yang salah?"
       },
       "choices": {
         "en": [
-          "The back legs",
-          "The front legs",
-          "All four legs at the same time"
+          "Back legs grow first, so they should be there already",
+          "Nothing is wrong",
+          "Tadpoles never grow legs"
         ],
         "id": [
-          "Kaki belakang",
-          "Kaki depan",
-          "Keempat kaki bersamaan"
+          "Kaki belakang tumbuh lebih dulu, jadi seharusnya sudah ada",
+          "Tidak ada yang salah",
+          "Berudu tidak pernah berkaki"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Back legs grow first; the front legs come out later.",
-        "id": "Kaki belakang tumbuh lebih dulu; kaki depan keluar kemudian."
+        "en": "Back legs grow first, so a tadpole that has front legs would already have back legs.",
+        "id": "Kaki belakang tumbuh lebih dulu, jadi berudu yang sudah berkaki depan pasti sudah berkaki belakang."
       },
       "distractorMisconceptions": {
         "1": "FRONT_LEGS_FIRST",
-        "2": "LEGS_ALL_AT_ONCE"
+        "2": "NO_METAMORPHOSIS"
       }
     },
     {
@@ -216,8 +216,8 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Why do frogs lay their eggs in water?",
-        "id": "Mengapa katak meletakkan telurnya di air?"
+        "en": "Why do most frogs lay their eggs in water?",
+        "id": "Mengapa kebanyakan katak meletakkan telurnya di air?"
       },
       "choices": {
         "en": [
@@ -252,6 +252,17 @@
       "remediation": {
         "en": "Make a flip book: draw the tadpole on six small pages, adding back legs on page 3 and front legs on page 5, and flip through it.",
         "id": "Buat buku bergerak: gambar berudu di enam halaman kecil, tambahkan kaki belakang di halaman 3 dan kaki depan di halaman 5, lalu balik halamannya dengan cepat."
+      }
+    },
+    {
+      "code": "NO_METAMORPHOSIS",
+      "description": {
+        "en": "Does not yet know that tadpoles grow legs and change into frogs.",
+        "id": "Belum tahu bahwa berudu menumbuhkan kaki dan berubah menjadi katak."
+      },
+      "remediation": {
+        "en": "Lay the five stage cards in order and run a finger from the tadpole to the frog, naming each new body part as it appears.",
+        "id": "Susun kelima kartu tahap berurutan dan jalankan jari dari berudu ke katak, sambil menyebut setiap bagian tubuh baru saat muncul."
       }
     },
     {

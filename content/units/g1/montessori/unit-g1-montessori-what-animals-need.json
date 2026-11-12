@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-montessori-what-animals-need",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "montessori",
   "strand": "zoology",
@@ -132,25 +132,25 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Fish live in water. Do they need air (oxygen)?",
-        "id": "Ikan hidup di air. Apakah mereka membutuhkan udara (oksigen)?"
+        "en": "A shrimp lives in water all its life. Does it need oxygen?",
+        "id": "Udang hidup di air sepanjang hidupnya. Apakah udang membutuhkan oksigen?"
       },
       "choices": {
         "en": [
-          "Yes, they take oxygen from the water with their gills",
-          "No, fish do not need any air",
-          "Yes, they breathe through their noses like us"
+          "Yes, it takes oxygen from the water with its gills",
+          "No, animals in water need no oxygen",
+          "Yes, it comes up to breathe through its nose like us"
         ],
         "id": [
-          "Ya, mereka mengambil oksigen dari air dengan insang",
-          "Tidak, ikan sama sekali tidak butuh udara",
-          "Ya, mereka bernapas melalui hidung seperti kita"
+          "Ya, udang mengambil oksigen dari air dengan insangnya",
+          "Tidak, hewan di air tidak butuh oksigen",
+          "Ya, udang naik ke permukaan untuk bernapas lewat hidung seperti kita"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Every animal needs oxygen. A fish's gills take the oxygen that is mixed into the water.",
-        "id": "Setiap hewan butuh oksigen. Insang ikan mengambil oksigen yang tercampur di dalam air."
+        "en": "Every animal needs oxygen. A shrimp, like a fish, has gills that take the oxygen mixed into the water.",
+        "id": "Setiap hewan butuh oksigen. Udang, seperti ikan, punya insang yang mengambil oksigen yang tercampur di dalam air."
       },
       "distractorMisconceptions": {
         "1": "WATER_ANIMALS_NEED_NO_AIR",
@@ -362,6 +362,10 @@
       {
         "en": "Do not touch stray cats, dogs or chickens; watch from a distance. Wash hands with soap after touching any animal or its food, cage or water.",
         "id": "Jangan menyentuh kucing liar, anjing, atau ayam; amati dari jauh. Cuci tangan dengan sabun setelah menyentuh hewan atau makanan, kandang, atau airnya."
+      },
+      {
+        "en": "If an animal bites or scratches, wash the wound with soap and running water for 15 minutes and see a doctor the same day.",
+        "id": "Jika digigit atau dicakar hewan, cuci luka dengan sabun dan air mengalir selama 15 menit dan segera periksa ke dokter hari itu juga."
       },
       {
         "en": "Never feed someone else's animal without asking its owner first.",

@@ -1,6 +1,6 @@
 {
   "id": "unit-age3_4-montessori-rough-and-smooth-boards",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "framework": "montessori",
   "strand": "sensorial",
@@ -45,8 +45,8 @@
   ],
   "parentInstructions": [
     {
-      "en": "Make the materials yourself: buy coarse and fine sandpaper (amplas) at a hardware shop. The adult cuts it with old scissors, glues it onto card, and covers the cut edges with tape.",
-      "id": "Buat bahannya sendiri: beli amplas kasar dan halus di toko bangunan. Orang dewasa memotongnya dengan gunting bekas, menempelkannya pada karton, dan menutup tepi potongan dengan selotip."
+      "en": "Make the materials yourself: buy coarse and fine sandpaper (amplas) at a hardware shop (for example grit 40–60 for coarse and 180–240 for fine). The adult cuts it with old scissors, glues it onto card, and covers the cut edges with tape.",
+      "id": "Buat bahannya sendiri: beli amplas kasar dan halus di toko bangunan (misalnya amplas nomor 40–60 untuk kasar dan 180–240 untuk halus). Orang dewasa memotongnya dengan gunting bekas, menempelkannya pada karton, dan menutup tepi potongan dengan selotip."
     },
     {
       "en": "Before each lesson, wash and dry hands together. Clean, dry fingertips feel much more.",
@@ -175,25 +175,25 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "Ask: put a pandan straw mat and a steel spoon in front of your child and say \"Show me the smooth one.\" What does she do?",
-        "id": "Tanyakan: taruh tikar pandan dan sendok besi di depan anak dan katakan \"Tunjukkan yang halus.\" Apa yang dilakukannya?"
+        "en": "Ask: put a coconut-fibre doormat and a steel spoon in front of your child and say \"Show me the smooth one.\" What does she do?",
+        "id": "Tanyakan: taruh keset sabut kelapa dan sendok besi di depan anak dan katakan \"Tunjukkan yang halus.\" Apa yang dilakukannya?"
       },
       "choices": {
         "en": [
           "Feels both, then gives you the spoon",
-          "Gives you the mat",
+          "Gives you the doormat",
           "Points without touching, at the one she likes the look of"
         ],
         "id": [
           "Meraba keduanya, lalu memberikan sendok",
-          "Memberikan tikar",
+          "Memberikan keset",
           "Menunjuk tanpa meraba, ke benda yang menurutnya bagus"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The polished spoon is smooth and the woven mat has ridges; feeling them first is the habit we want.",
-        "id": "Sendok yang mengilap itu halus dan tikar anyaman bergerigi; meraba lebih dulu adalah kebiasaan yang kita harapkan."
+        "en": "The polished spoon is smooth and the coconut-fibre doormat is bristly; feeling them first is the habit we want.",
+        "id": "Sendok yang mengilap itu halus dan keset sabut kelapa berserat kasar; meraba lebih dulu adalah kebiasaan yang kita harapkan."
       },
       "distractorMisconceptions": {
         "1": "LABELS_SWAPPED",

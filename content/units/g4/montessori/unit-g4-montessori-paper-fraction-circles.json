@@ -1,6 +1,6 @@
 {
   "id": "unit-g4-montessori-paper-fraction-circles",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "framework": "montessori",
   "strand": "mathematics",
@@ -90,8 +90,8 @@
     ],
     "abstract": [
       {
-        "en": "Write comparisons and equivalences with symbols, for example 1/3 is greater than 1/4, and 2/6 = 1/3.",
-        "id": "Menulis perbandingan dan kesetaraan dengan lambang, misalnya 1/3 lebih besar dari 1/4, dan 2/6 = 1/3."
+        "en": "Write comparisons and equivalences with symbols, for example 1/3 is greater than 1/4, 2/6 = 1/3, and 1/8 + 3/8 = 4/8.",
+        "id": "Menulis perbandingan dan kesetaraan dengan lambang, misalnya 1/3 lebih besar dari 1/4, 2/6 = 1/3, dan 1/8 + 3/8 = 4/8."
       }
     ]
   },
@@ -131,6 +131,10 @@
     {
       "en": "Equivalence: cover one half with quarters: two quarters fit exactly. Write 2/4 = 1/2. Cover one third with sixths: two sixths fit exactly. Write 2/6 = 1/3.",
       "id": "Kesetaraan: tutup setengah dengan keping seperempat: dua keping seperempat pas. Tulis 2/4 = 1/2. Tutup sepertiga dengan keping seperenam: dua keping seperenam pas. Tulis 2/6 = 1/3."
+    },
+    {
+      "en": "Adding: lay one sixth on the whole circle, then two more sixths beside it. \"One sixth and two sixths make three sixths: 1/6 + 2/6 = 3/6. The pieces are still sixths, so only the top number changes.\" Lay the three sixths on a half: they cover it exactly, so 3/6 = 1/2.",
+      "id": "Menjumlahkan: letakkan satu keping seperenam di atas lingkaran utuh, lalu dua keping seperenam lagi di sampingnya. \"Satu perenam dan dua perenam menjadi tiga perenam: 1/6 + 2/6 = 3/6. Kepingnya tetap perenam, jadi hanya angka atas yang berubah.\" Letakkan tiga keping seperenam di atas setengah: pas menutupinya, jadi 3/6 = 1/2."
     }
   ],
   "practice": [
@@ -145,6 +149,10 @@
     {
       "en": "Draw a circle for a martabak cut into eight slices, shade 3/8, and write how many eighths are left.",
       "id": "Gambar lingkaran untuk martabak yang dipotong delapan, arsir 3/8, dan tulis berapa perdelapan yang tersisa."
+    },
+    {
+      "en": "Add with the pieces and write each sum: 1/8 + 3/8, 1/3 + 1/3, 2/6 + 3/6.",
+      "id": "Jumlahkan dengan kepingan dan tulis hasilnya: 1/8 + 3/8, 1/3 + 1/3, 2/6 + 3/6."
     }
   ],
   "assessment": [
@@ -211,33 +219,33 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "Which fraction is the same amount as 1/2?",
-        "id": "Pecahan mana yang sama besarnya dengan 1/2?"
+        "en": "Which fraction is the same amount as 2/3?",
+        "id": "Pecahan mana yang sama besarnya dengan 2/3?"
       },
       "choices": {
         "en": [
-          "4/8",
-          "2/8",
-          "1/8"
+          "4/6",
+          "2/6",
+          "3/4"
         ],
         "id": [
-          "4/8",
-          "2/8",
-          "1/8"
+          "4/6",
+          "2/6",
+          "3/4"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Four eighths cover a half exactly, so 4/8 = 1/2.",
-        "id": "Empat keping seperdelapan tepat menutupi setengah, jadi 4/8 = 1/2."
+        "en": "Each third is covered by two sixths, so two thirds are covered by four sixths: 4/6 = 2/3.",
+        "id": "Setiap sepertiga ditutupi dua keping seperenam, jadi dua pertiga ditutupi empat keping seperenam: 4/6 = 2/3."
       },
       "check": {
-        "expression": "4 / 8",
-        "result": "1/2"
+        "expression": "4 / 6",
+        "result": "2/3"
       },
       "distractorMisconceptions": {
         "1": "DOUBLES_ONLY_ONE_PART",
-        "2": "LARGER_DENOMINATOR_LARGER"
+        "2": "ADDS_ONE_TO_BOTH"
       }
     },
     {
@@ -278,12 +286,12 @@
         "en": [
           "1/2",
           "2/8",
-          "1/8"
+          "1/16"
         ],
         "id": [
           "1/2",
           "2/8",
-          "1/8"
+          "1/16"
         ]
       },
       "answer": 0,
@@ -297,7 +305,7 @@
       },
       "distractorMisconceptions": {
         "1": "ADDS_DENOMINATORS",
-        "2": "LARGER_DENOMINATOR_LARGER"
+        "2": "MULTIPLIES_DENOMINATORS"
       }
     }
   ],
@@ -353,8 +361,8 @@
         "id": "Mengubah hanya angka atas atau hanya angka bawah untuk membuat pecahan senilai."
       },
       "remediation": {
-        "en": "Lay 2/8 on the half: it covers only part. Add eighths until the half is covered and count them; note that both numbers changed.",
-        "id": "Letakkan 2/8 di atas setengah: hanya menutupi sebagian. Tambahkan keping seperdelapan sampai setengah tertutup lalu hitung; perhatikan bahwa kedua angka berubah."
+        "en": "Lay 2/6 on two thirds: it covers only part. Add sixths until the two thirds are covered and count them; note that both numbers changed.",
+        "id": "Letakkan 2/6 di atas dua pertiga: hanya menutupi sebagian. Tambahkan keping seperenam sampai dua pertiga tertutup lalu hitung; perhatikan bahwa kedua angka berubah."
       }
     },
     {
@@ -366,6 +374,28 @@
       "remediation": {
         "en": "Build both fractions with the pieces side by side, then lay one on top of the other to see which covers more.",
         "id": "Susun kedua pecahan dengan kepingan berdampingan, lalu tumpuk satu di atas yang lain untuk melihat mana yang menutupi lebih banyak."
+      }
+    },
+    {
+      "code": "MULTIPLIES_DENOMINATORS",
+      "description": {
+        "en": "Multiplies the bottom numbers when adding.",
+        "id": "Mengalikan angka bawah saat menjumlahkan."
+      },
+      "remediation": {
+        "en": "Lay two quarter pieces on the whole circle: do they look like a sixteenth? Count \"one quarter, two quarters\".",
+        "id": "Letakkan dua keping seperempat di atas lingkaran utuh: apakah terlihat seperti seperenambelas? Hitung \"satu perempat, dua perempat\"."
+      }
+    },
+    {
+      "code": "ADDS_ONE_TO_BOTH",
+      "description": {
+        "en": "Adds the same number to the top and bottom to make an equivalent fraction.",
+        "id": "Menambahkan bilangan yang sama ke angka atas dan bawah untuk membuat pecahan senilai."
+      },
+      "remediation": {
+        "en": "Build 2/3 and 3/4 with the pieces and lay them on top of each other: they do not cover the same amount. Then cover each third with two sixths and count them.",
+        "id": "Susun 2/3 dan 3/4 dengan kepingan lalu tumpuk: keduanya tidak menutupi jumlah yang sama. Lalu tutup setiap sepertiga dengan dua keping seperenam dan hitung."
       }
     },
     {
@@ -408,8 +438,8 @@
     },
     "notes": [
       {
-        "en": "The adult does the cutting with scissors and handles the protractor point; keep small pieces away from children under 4.",
-        "id": "Orang dewasa yang memotong dengan gunting dan memegang ujung busur derajat; jauhkan kepingan kecil dari anak di bawah 4 tahun."
+        "en": "The adult does the cutting with scissors; keep small pieces away from children under 4.",
+        "id": "Orang dewasa yang memotong dengan gunting; jauhkan kepingan kecil dari anak di bawah 4 tahun."
       }
     ]
   },

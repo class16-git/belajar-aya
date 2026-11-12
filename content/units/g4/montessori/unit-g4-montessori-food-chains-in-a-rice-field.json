@@ -1,6 +1,6 @@
 {
   "id": "unit-g4-montessori-food-chains-in-a-rice-field",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "framework": "montessori",
   "strand": "cosmic_education",
@@ -54,8 +54,8 @@
       "id": "Panah berarti \"dimakan oleh\" dan menunjukkan ke mana energi berpindah: padi → wereng berarti wereng memakan padi. Ini kebingungan yang paling umum, jadi ucapkan setiap kali."
     },
     {
-      "en": "Accurate links to use: rice and grass are eaten by planthoppers, grasshoppers and rats; spiders and frogs eat insects; snakes eat frogs and rats; owls eat rats; egrets eat frogs and small fish; earthworms, fungi and bacteria break down dead plants and animals. Some farmers put up nest boxes so owls stay near the fields and help control rats.",
-      "id": "Hubungan yang akurat untuk dipakai: padi dan rumput dimakan wereng, belalang, dan tikus; laba-laba dan katak memakan serangga; ular memakan katak dan tikus; burung hantu memakan tikus; kuntul memakan katak dan ikan kecil; cacing tanah, jamur, dan bakteri menguraikan tumbuhan dan hewan yang mati. Sebagian petani memasang rumah burung agar burung hantu tinggal dekat sawah dan membantu mengendalikan tikus."
+      "en": "Accurate links to use: rice and grass are eaten by planthoppers, grasshoppers and rats; spiders and frogs eat insects; snakes eat frogs and rats; owls eat rats; egrets eat frogs and small fish; earthworms, fungi and bacteria break down dead plants and animals. Some farmers put up nest boxes so owls stay near the fields and help control rats. (Earthworms break dead matter into small pieces; fungi and bacteria finish the job. Many school books group them all as decomposers.)",
+      "id": "Hubungan yang akurat untuk dipakai: padi dan rumput dimakan wereng, belalang, dan tikus; laba-laba dan katak memakan serangga; ular memakan katak dan tikus; burung hantu memakan tikus; kuntul memakan katak dan ikan kecil; cacing tanah, jamur, dan bakteri menguraikan tumbuhan dan hewan yang mati. Sebagian petani memasang rumah burung agar burung hantu tinggal dekat sawah dan membantu mengendalikan tikus. (Cacing tanah memecah bahan mati menjadi potongan kecil; jamur dan bakteri menuntaskannya. Banyak buku sekolah mengelompokkan semuanya sebagai pengurai.)"
     },
     {
       "en": "If you visit a rice field, keep to the raised paths (pematang) and look without catching anything.",
@@ -79,8 +79,8 @@
   "cpa": null,
   "materials": [
     {
-      "en": "About 13 picture cards of rice-field living things, plus a sun card",
-      "id": "Sekitar 13 kartu gambar makhluk hidup di sawah, ditambah kartu matahari"
+      "en": "12 picture cards of rice-field living things, plus a sun card",
+      "id": "12 kartu gambar makhluk hidup di sawah, ditambah kartu matahari"
     },
     {
       "en": "Arrow cards cut from paper (about 20), and three heading cards: producer, consumer, decomposer",
@@ -162,7 +162,7 @@
       "id": "a2",
       "prompt": {
         "en": "In a pond: algae → tadpole → small fish → heron. Which one is the producer?",
-        "id": "Di kolam: ganggang → berudu → ikan kecil → bangau. Mana yang merupakan produsen?"
+        "id": "Di kolam: ganggang → berudu → ikan kecil → cangak. Mana yang merupakan produsen?"
       },
       "choices": {
         "en": [
@@ -172,7 +172,7 @@
         ],
         "id": [
           "Ganggang",
-          "Bangau",
+          "Cangak",
           "Ikan kecil"
         ]
       },
@@ -217,19 +217,19 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "What do earthworms and fungi do for the rice field?",
-        "id": "Apa yang dilakukan cacing tanah dan jamur bagi sawah?"
+        "en": "A fallen banana leaf lies on the pematang. After a few weeks it is gone. What happened to it?",
+        "id": "Sehelai daun pisang jatuh di pematang. Setelah beberapa minggu daun itu hilang. Apa yang terjadi padanya?"
       },
       "choices": {
         "en": [
-          "Break down dead plants and animals and return nutrients to the soil",
-          "Make their own food from sunlight, like rice",
-          "Nothing useful; they are only pests"
+          "Fungi, bacteria and earthworms broke it down into the soil",
+          "The sun turned it into food for itself, like a plant does",
+          "Nothing used it; leaves just disappear"
         ],
         "id": [
-          "Menguraikan tumbuhan dan hewan mati dan mengembalikan zat hara ke tanah",
-          "Membuat makanannya sendiri dari sinar matahari, seperti padi",
-          "Tidak ada gunanya; mereka hanya hama"
+          "Jamur, bakteri, dan cacing tanah menguraikannya menjadi bagian dari tanah",
+          "Matahari mengubahnya menjadi makanan bagi dirinya, seperti tumbuhan",
+          "Tidak ada yang memakainya; daun memang hilang begitu saja"
         ]
       },
       "answer": 0,

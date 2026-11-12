@@ -1,6 +1,6 @@
 {
   "id": "unit-k-montessori-continents-puzzle-map",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "montessori",
   "strand": "geography",
@@ -53,8 +53,8 @@
       "id": "Warnai setiap benua dengan warnanya sendiri. Skema Montessori yang umum adalah Asia kuning, Afrika hijau, Eropa merah, Amerika Utara oranye, Amerika Selatan merah muda, Australia cokelat, dan Antartika putih. Skema apa pun boleh, asalkan tidak pernah berubah."
     },
     {
-      "en": "Indonesian school books may count the continents as five or six instead of seven; tell your child that people group the land in different ways, and follow your child's school when it matters.",
-      "id": "Buku sekolah di Indonesia bisa menghitung benua sebagai lima atau enam, bukan tujuh; sampaikan kepada anak bahwa orang mengelompokkan daratan dengan cara berbeda, dan ikuti sekolah anak bila diperlukan."
+      "en": "Indonesian school books may count the continents as five or six instead of seven; tell your child that people group the land in different ways, and follow your child's school when it matters. Most world atlases count Indonesia as part of Asia; Indonesian school books say it lies between the continents of Asia and Australia. Both are fine to hear.",
+      "id": "Buku sekolah di Indonesia bisa menghitung benua sebagai lima atau enam, bukan tujuh; sampaikan kepada anak bahwa orang mengelompokkan daratan dengan cara berbeda, dan ikuti sekolah anak bila diperlukan. Sebagian besar atlas dunia memasukkan Indonesia ke Asia; buku sekolah di Indonesia menyebut Indonesia terletak di antara Benua Asia dan Australia. Keduanya boleh didengar anak."
     },
     {
       "en": "Introduce only two or three continents in one sitting with the three-period lesson. Start with Asia, our home, and Australia, our neighbour.",
@@ -132,25 +132,25 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Ask: \"Indonesia is between which two continents?\"",
-        "id": "Tanyakan: \"Indonesia terletak di antara dua benua yang mana?\""
+        "en": "Ask: \"If you sailed south from Indonesia, which continent would you reach?\"",
+        "id": "Tanyakan: \"Jika kamu berlayar ke selatan dari Indonesia, benua mana yang akan kamu capai?\""
       },
       "choices": {
         "en": [
-          "Asia and Australia",
-          "Africa and Europe",
-          "North America and South America"
+          "Australia",
+          "Africa",
+          "Europe"
         ],
         "id": [
-          "Asia dan Australia",
-          "Afrika dan Eropa",
-          "Amerika Utara dan Amerika Selatan"
+          "Australia",
+          "Afrika",
+          "Eropa"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Our islands lie between the big yellow piece, Asia, and the brown piece, Australia.",
-        "id": "Pulau-pulau kita terletak di antara kepingan kuning besar, Asia, dan kepingan cokelat, Australia."
+        "en": "South of our islands, across the sea, lies the brown piece: Australia.",
+        "id": "Di selatan pulau-pulau kita, di seberang laut, ada kepingan cokelat: Australia."
       },
       "distractorMisconceptions": {
         "1": "GUESSES_WITHOUT_MAP",
@@ -182,7 +182,7 @@
       },
       "distractorMisconceptions": {
         "1": "NAMES_SOUND_ALIKE",
-        "2": "NAMES_SOUND_ALIKE"
+        "2": "GUESSES_WITHOUT_MAP"
       }
     },
     {

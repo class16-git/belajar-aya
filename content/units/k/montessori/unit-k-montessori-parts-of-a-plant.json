@@ -1,6 +1,6 @@
 {
   "id": "unit-k-montessori-parts-of-a-plant",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "montessori",
   "strand": "botany",
@@ -163,7 +163,7 @@
       "id": "a2",
       "prompt": {
         "en": "Ask, under a mango tree: \"Which part of the tree is its stem?\"",
-        "id": "Tanyakan, di bawah pohon mangga: \"Bagian pohon mana yang merupakan batangnya?\""
+        "id": "Tanyakan, di bawah pohon mangga: \"Bagian pohon mana yang sama tugasnya dengan batang pada tumbuhan kecil?\""
       },
       "choices": {
         "en": [
@@ -172,7 +172,7 @@
           "The fruit"
         ],
         "id": [
-          "Batang pohon yang besar itu",
+          "Bagian besar berkayu yang tegak menopang pohon",
           "Akarnya",
           "Buahnya"
         ]
@@ -218,8 +218,8 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Ask: \"Where should we pour water for a potted plant?\"",
-        "id": "Tanyakan: \"Di mana kita sebaiknya menuang air untuk tanaman pot?\""
+        "en": "Ask: \"The leaves of our chilli plant are drooping. Where should we pour the water?\"",
+        "id": "Tanyakan: \"Daun tanaman cabai kita layu. Di mana kita sebaiknya menuang airnya?\""
       },
       "choices": {
         "en": [
@@ -252,8 +252,8 @@
         "id": "Mengira batang menyerap air dari tanah."
       },
       "remediation": {
-        "en": "Stand a plant with roots in a clear cup of water for a day and mark the water level with tape: the level drops, and only the roots are in the water.",
-        "id": "Letakkan tumbuhan berakar di gelas bening berisi air selama sehari dan tandai tinggi air dengan selotip: airnya berkurang, dan hanya akar yang terendam air."
+        "en": "Stand a plant with roots in a clear cup of water for a day and mark the water level with tape: the level drops, and only the roots are in the water. Put a second cup of water with no plant beside it: the cup with the plant drops more.",
+        "id": "Letakkan tumbuhan berakar di gelas bening berisi air selama sehari dan tandai tinggi air dengan selotip: airnya berkurang, dan hanya akar yang terendam air. Letakkan gelas kedua berisi air tanpa tumbuhan di sampingnya: air di gelas bertumbuhan berkurang lebih banyak."
       }
     },
     {
@@ -285,8 +285,8 @@
         "id": "Mengira tumbuhan minum melalui daun, kelopak, atau udara."
       },
       "remediation": {
-        "en": "Put two cut white flowers side by side: one with its stem in coloured water, one with only its petals sprinkled with coloured water. Next day, compare.",
-        "id": "Letakkan dua bunga putih berdampingan: satu dengan batang di air berwarna, satu hanya kelopaknya yang dipercik air berwarna. Besok, bandingkan."
+        "en": "Stand two white flowers side by side: one with its stem in coloured water, one with its stem in plain water. Next day, the adult cuts both stems across: only the first shows coloured dots inside the stem and coloured petal edges. The colour went in at the bottom and up the stem.",
+        "id": "Letakkan dua bunga putih berdampingan: satu dengan batang di air berwarna, satu dengan batang di air biasa. Besok, orang dewasa memotong melintang kedua batang: hanya yang pertama menunjukkan titik-titik berwarna di dalam batang dan tepi kelopak berwarna. Warnanya masuk dari bawah dan naik lewat batang."
       }
     },
     {

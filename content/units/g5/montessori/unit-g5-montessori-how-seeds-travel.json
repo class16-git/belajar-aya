@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-montessori-how-seeds-travel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "framework": "montessori",
   "strand": "botany",
@@ -58,8 +58,8 @@
       "id": "Biji yang jatuh tepat di bawah tumbuhan induk harus berbagi naungan, air, dan tanah dengannya, sehingga berpindah memberi peluang yang lebih baik."
     },
     {
-      "en": "Do not collect seeds of the castor-oil plant (jarak) or other unknown seeds; some are poisonous. No seeds are tasted.",
-      "id": "Jangan mengumpulkan biji tanaman jarak atau biji lain yang tidak dikenal; sebagian beracun. Tidak ada biji yang dicicipi."
+      "en": "Do not collect seeds of the castor-oil plant or physic nut (jarak kepyar, jarak pagar), bright red saga seeds, or other unknown seeds; some are very poisonous. No seeds are tasted.",
+      "id": "Jangan mengumpulkan biji jarak kepyar, jarak pagar, biji saga yang merah cerah, atau biji lain yang tidak dikenal; sebagian sangat beracun. Tidak ada biji yang dicicipi."
     }
   ],
   "childInstructions": [
@@ -189,25 +189,25 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "Sari wants to test whether wing length changes how long a paper seed takes to fall. What must she keep the same?",
-        "id": "Sari ingin menguji apakah panjang sayap mengubah lamanya biji kertas jatuh. Apa yang harus dijaga tetap sama?"
+        "en": "Sari now tests whether the number of paper clips changes how long a paper seed takes to fall. What must she keep the same?",
+        "id": "Sari kini menguji apakah jumlah penjepit kertas mengubah lamanya biji kertas jatuh. Apa yang harus dijaga tetap sama?"
       },
       "choices": {
         "en": [
-          "The drop height, the paper and the paper clip",
+          "The wing length, the paper and the drop height",
           "Nothing; she should change everything to see what happens",
-          "The wing length"
+          "The number of paper clips"
         ],
         "id": [
-          "Ketinggian jatuh, jenis kertas, dan penjepit kertasnya",
+          "Panjang sayap, jenis kertas, dan ketinggian jatuh",
           "Tidak ada; ia sebaiknya mengubah semuanya untuk melihat hasilnya",
-          "Panjang sayapnya"
+          "Jumlah penjepit kertasnya"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Only the wing length changes; everything else stays the same, so any difference must come from the wings.",
-        "id": "Hanya panjang sayap yang berubah; semua yang lain tetap sama, sehingga perbedaan apa pun pasti berasal dari sayap."
+        "en": "Only the number of paper clips changes; everything else stays the same, so any difference must come from the clips.",
+        "id": "Hanya jumlah penjepit kertas yang berubah; semua yang lain tetap sama, sehingga perbedaan apa pun pasti berasal dari penjepit kertas."
       },
       "distractorMisconceptions": {
         "1": "CHANGES_EVERYTHING",
@@ -217,29 +217,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "A paper seed's three falls took 3.1 s, 2.9 s and 3.3 s. What is the mean fall time?",
-        "id": "Tiga kali jatuhnya biji kertas memakan waktu 3,1 detik, 2,9 detik, dan 3,3 detik. Berapa rata-rata waktu jatuhnya?"
+        "en": "A paper seed's three falls took 2.9 s, 3.4 s and 3.3 s. What is the mean fall time?",
+        "id": "Tiga kali jatuhnya biji kertas memakan waktu 2,9 detik, 3,4 detik, dan 3,3 detik. Berapa rata-rata waktu jatuhnya?"
       },
       "choices": {
         "en": [
-          "3.1 seconds",
-          "9.3 seconds",
-          "3.3 seconds"
+          "3.2 seconds",
+          "9.6 seconds",
+          "3.4 seconds"
         ],
         "id": [
-          "3,1 detik",
-          "9,3 detik",
-          "3,3 detik"
+          "3,2 detik",
+          "9,6 detik",
+          "3,4 detik"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Add the times and divide by how many there are: (3.1 + 2.9 + 3.3) ÷ 3 = 9.3 ÷ 3 = 3.1 s.",
-        "id": "Jumlahkan waktunya lalu bagi dengan banyaknya: (3,1 + 2,9 + 3,3) ÷ 3 = 9,3 ÷ 3 = 3,1 detik."
+        "en": "Add the times and divide by how many there are: (2.9 + 3.4 + 3.3) ÷ 3 = 9.6 ÷ 3 = 3.2 s.",
+        "id": "Jumlahkan waktunya lalu bagi dengan banyaknya: (2,9 + 3,4 + 3,3) ÷ 3 = 9,6 ÷ 3 = 3,2 detik."
       },
       "check": {
-        "expression": "(3.1 + 2.9 + 3.3) / 3",
-        "result": "3.1"
+        "expression": "(2.9 + 3.4 + 3.3) / 3",
+        "result": "3.2"
       },
       "distractorMisconceptions": {
         "1": "FORGETS_TO_DIVIDE",
@@ -404,16 +404,16 @@
     },
     "notes": [
       {
-        "en": "Never taste seeds or fruits from the collection, and do not collect castor-oil plant (jarak) seeds or unknown seeds. Wash hands after handling.",
-        "id": "Jangan pernah mencicipi biji atau buah dari koleksi, dan jangan mengumpulkan biji jarak atau biji yang tidak dikenal. Cuci tangan setelah memegangnya."
+        "en": "Never taste seeds or fruits from the collection, and do not collect castor-oil plant or physic nut (jarak kepyar, jarak pagar) seeds, bright red saga seeds or unknown seeds. Wash hands after handling.",
+        "id": "Jangan pernah mencicipi biji atau buah dari koleksi, dan jangan mengumpulkan biji jarak kepyar, jarak pagar, biji saga merah, atau biji yang tidak dikenal. Cuci tangan setelah memegangnya."
       },
       {
         "en": "Seeds and paper clips are small items: keep them away from children under five. The adult uses the scissors for cutting coconut husk or pods.",
         "id": "Biji dan penjepit kertas adalah benda kecil: jauhkan dari anak di bawah lima tahun. Orang dewasa memakai gunting untuk memotong sabut kelapa atau polong."
       },
       {
-        "en": "The 2 m drop is done by an adult or by the child from the floor reaching up to the mark, never by standing on a chair. Empty the float basin straight after use.",
-        "id": "Jatuhan dari 2 m dilakukan oleh orang dewasa atau oleh anak yang berdiri di lantai menjangkau tanda, jangan pernah berdiri di atas kursi. Kosongkan baskom uji mengapung segera setelah dipakai."
+        "en": "The 2 m drop is done by an adult standing on the floor while the child times it; never stand on a chair. Empty the float basin straight after use.",
+        "id": "Jatuhan dari 2 m dilakukan oleh orang dewasa yang berdiri di lantai sementara anak mengukur waktunya; jangan pernah berdiri di atas kursi. Kosongkan baskom uji mengapung segera setelah dipakai."
       }
     ]
   },

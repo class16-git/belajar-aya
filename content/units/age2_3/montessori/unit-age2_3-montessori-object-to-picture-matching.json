@@ -1,6 +1,6 @@
 {
   "id": "unit-age2_3-montessori-object-to-picture-matching",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "framework": "montessori",
   "strand": "language",
@@ -147,8 +147,8 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Observe: put the sandal and the board book on the floor, with no cards. Say \"Give me the sandal.\" Which response shows the word is learned?",
-        "id": "Amati: taruh sandal dan buku papan di lantai, tanpa kartu. Katakan \"Berikan sandalnya.\" Respons mana yang menunjukkan kata itu sudah dikenal?"
+        "en": "Observe: put the board book near your child and the sandal a little further away, with no cards. Say \"Give me the sandal.\" Which response shows the word is learned?",
+        "id": "Amati: taruh buku papan dekat anak dan sandal sedikit lebih jauh, tanpa kartu. Katakan \"Berikan sandalnya.\" Respons mana yang menunjukkan kata itu sudah dikenal?"
       },
       "choices": {
         "en": [
@@ -303,8 +303,8 @@
       "id": "Mencocokkan gambar dengan gambar: dua foto yang sama untuk setiap benda, dicocokkan tanpa benda aslinya."
     },
     {
-      "en": "Sort the photo cards into two groups: things we eat with and things we wear.",
-      "id": "Pilah kartu foto menjadi dua kelompok: alat untuk makan dan barang yang dipakai."
+      "en": "Sort the photo cards into three groups: things we eat with, things we wear, and other things.",
+      "id": "Pilah kartu foto menjadi tiga kelompok: alat untuk makan, barang yang dipakai, dan barang lainnya."
     }
   ],
   "accessibility": [
@@ -335,6 +335,10 @@
       {
         "en": "The adult does all cutting of the cards and rounds the corners. Print the photos on paper; no screens at this age.",
         "id": "Orang dewasa yang memotong semua kartu dan membulatkan sudutnya. Cetak foto di kertas; tanpa layar untuk usia ini."
+      },
+      {
+        "en": "Cover each photo card with clear packing tape so it can be wiped and does not peel if mouthed.",
+        "id": "Lapisi setiap kartu foto dengan selotip bening lebar agar bisa dilap dan tidak mengelupas jika digigit."
       }
     ]
   },

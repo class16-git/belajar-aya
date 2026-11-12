@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-montessori-squares-of-numbers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "montessori",
   "strand": "mathematics",
@@ -45,8 +45,8 @@
   ],
   "parentInstructions": [
     {
-      "en": "The Montessori bead squares are made of coloured beads; here the child draws them on 1 cm squared paper and colours each square in its own colour, so no beads are needed.",
-      "id": "Persegi manik Montessori terbuat dari manik-manik berwarna; di sini anak menggambarnya di kertas berpetak 1 cm dan mewarnai setiap persegi dengan warnanya sendiri, sehingga tidak perlu manik-manik."
+      "en": "The Montessori bead squares are made of coloured beads; here the child draws them on 1 cm squared paper and colours each square in its own colour, so no beads are needed. If you like, use the bead colours: 1 red, 2 green, 3 pink, 4 yellow, 5 light blue, 6 lilac, 7 white (outline only), 8 brown, 9 dark blue, 10 gold.",
+      "id": "Persegi manik Montessori terbuat dari manik-manik berwarna; di sini anak menggambarnya di kertas berpetak 1 cm dan mewarnai setiap persegi dengan warnanya sendiri, sehingga tidak perlu manik-manik. Jika mau, pakai warna manik: 1 merah, 2 hijau, 3 merah muda, 4 kuning, 5 biru muda, 6 ungu muda, 7 putih (garis tepi saja), 8 cokelat, 9 biru tua, 10 emas."
     },
     {
       "en": "Let the child grow the squares and find the patterns before you name them. Ask \"How many squares did you add?\" rather than telling.",
@@ -335,8 +335,8 @@
     {
       "code": "ADDS_ONE_STRIP",
       "description": {
-        "en": "Adds only one strip when growing a square.",
-        "id": "Hanya menambah satu jalur saat menumbuhkan persegi."
+        "en": "Adds only one strip (with or without the corner) when growing a square.",
+        "id": "Hanya menambah satu jalur (dengan atau tanpa sudut) saat menumbuhkan persegi."
       },
       "remediation": {
         "en": "Add one strip to an 8 by 8 square and measure: it becomes 8 by 9, a rectangle, not a square. A second strip and a corner are needed.",

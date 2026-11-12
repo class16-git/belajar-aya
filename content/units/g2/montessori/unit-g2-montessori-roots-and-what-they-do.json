@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-montessori-roots-and-what-they-do",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "montessori",
   "strand": "botany",
@@ -199,19 +199,19 @@
       "choices": {
         "en": [
           "A radish",
-          "A potato",
-          "An onion"
+          "Ginger",
+          "Taro"
         ],
         "id": [
           "Lobak",
-          "Kentang",
-          "Bawang"
+          "Jahe",
+          "Talas"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "A radish is a swollen taproot. A potato is a swollen underground stem, and an onion is mainly layers of leaves.",
-        "id": "Lobak adalah akar tunggang yang menggembung. Kentang adalah batang di dalam tanah yang menggembung, dan bawang sebagian besar berupa lapisan daun."
+        "en": "A radish is a swollen taproot. Ginger and taro grow underground too, but both are swollen underground stems.",
+        "id": "Lobak adalah akar tunggang yang menggembung. Jahe dan talas juga tumbuh di dalam tanah, tetapi keduanya batang di dalam tanah yang menggembung."
       },
       "distractorMisconceptions": {
         "1": "UNDERGROUND_MEANS_ROOT",
@@ -277,8 +277,8 @@
         "id": "Mengira air masuk melalui bagian akar yang tebal dan tua."
       },
       "remediation": {
-        "en": "Cut a paper towel into a fringe and dip only the fringe tips into coloured water next to a plain strip: the fringe soaks up faster. Fine hairs work the same way.",
-        "id": "Gunting tisu dapur menjadi berumbai dan celupkan hanya ujung rumbainya ke air berwarna di samping potongan polos: rumbai menyerap lebih cepat. Rambut akar yang halus bekerja dengan cara yang sama."
+        "en": "Dip a pencil and a paintbrush of the same thickness in water and dab each on paper: the many fine hairs hold far more water. Root hairs work the same way.",
+        "id": "Celupkan pensil dan kuas yang sama tebalnya ke air lalu tempelkan masing-masing ke kertas: bulu-bulu halus kuas menahan air jauh lebih banyak. Rambut akar bekerja dengan cara yang sama."
       }
     },
     {
@@ -288,8 +288,8 @@
         "id": "Mengira semua yang tumbuh di dalam tanah adalah akar."
       },
       "remediation": {
-        "en": "Leave a potato in a dark cupboard for two weeks until it sprouts from its \"eyes\", which are buds, a sign of a stem. Compare with a carrot, which has no eyes.",
-        "id": "Simpan kentang di lemari gelap selama dua minggu sampai bertunas dari \"mata\"-nya, yaitu kuncup, tanda batang. Bandingkan dengan wortel, yang tidak punya mata tunas."
+        "en": "Leave a potato in a dark cupboard for two weeks until it sprouts from its \"eyes\", which are buds, a sign of a stem. Compare with a carrot, which has no eyes. Do not eat the sprouted potato afterwards.",
+        "id": "Simpan kentang di lemari gelap selama dua minggu sampai bertunas dari \"mata\"-nya, yaitu kuncup, tanda batang. Bandingkan dengan wortel, yang tidak punya mata tunas. Jangan memakan kentang yang sudah bertunas itu."
       }
     },
     {
@@ -345,6 +345,10 @@
       {
         "en": "The adult does all cutting with the knife. Wash hands with soap after handling soil.",
         "id": "Orang dewasa yang melakukan semua pemotongan dengan pisau. Cuci tangan dengan sabun setelah memegang tanah."
+      },
+      {
+        "en": "Do not leave the magnifier in direct sun.",
+        "id": "Jangan tinggalkan kaca pembesar di bawah sinar matahari langsung."
       },
       {
         "en": "Mung beans are a choking risk for children under five; younger siblings do not handle them, and the adult stores the packet out of reach.",

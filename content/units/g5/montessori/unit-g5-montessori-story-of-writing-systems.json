@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-montessori-story-of-writing-systems",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "framework": "montessori",
   "strand": "history",
@@ -53,22 +53,22 @@
       "id": "Fakta yang dibulatkan dan dapat diandalkan: tulisan tertua yang diketahui, aksara paku, ditekan ke tanah liat di Mesopotamia sekitar 3200 SM; hieroglif Mesir muncul sekitar waktu yang sama; aksara Tionghoa, yang kebanyakan tanda kata, telah dipakai lebih dari 3.000 tahun; prasasti tertua yang diketahui di Indonesia adalah prasasti Yupa dari Kerajaan Kutai di Kalimantan Timur, ditulis dengan aksara Pallawa dalam bahasa Sanskerta sekitar tahun 400 M."
     },
     {
-      "en": "Aksara Jawa and the related scripts of Bali and Sunda are syllable-based: each basic letter is a consonant that carries the sound \"a\", and small marks change the vowel. Use a chart from a school book to write names; do not guess the letter shapes.",
-      "id": "Aksara Jawa dan aksara serumpun dari Bali dan Sunda berbasis suku kata: setiap huruf dasar adalah konsonan yang membawa bunyi \"a\", dan tanda kecil (sandhangan) mengubah vokalnya. Pakai tabel dari buku sekolah untuk menulis nama; jangan menebak bentuk hurufnya."
+      "en": "Aksara Jawa and the related scripts of Bali and Sunda are syllable-based: each basic letter is a consonant that carries the sound \"a\", and small marks change the vowel. Use a chart from a school book to write names; do not guess the letter shapes. Scholars call this kind of script an abugida. In Javanese the built-in vowel is often pronounced like \"o\".",
+      "id": "Aksara Jawa dan aksara serumpun dari Bali dan Sunda berbasis suku kata: setiap huruf dasar adalah konsonan yang membawa bunyi \"a\", dan tanda kecil (sandhangan) mengubah vokalnya. Pakai tabel dari buku sekolah untuk menulis nama; jangan menebak bentuk hurufnya. Para ahli menyebut jenis aksara ini abugida. Dalam bahasa Jawa, vokal bawaannya sering dilafalkan seperti \"o\"."
     },
     {
-      "en": "Malay was also written for centuries in an Arabic-based script (Jawi). Present all scripts with equal respect as part of the history of writing.",
-      "id": "Bahasa Melayu juga ditulis selama berabad-abad dengan aksara berbasis Arab (Jawi). Sajikan semua aksara dengan penghargaan yang sama sebagai bagian dari sejarah tulisan."
+      "en": "Malay was also written for centuries in an Arabic-based script (Jawi); Javanese written this way is called Pegon. Present all scripts with equal respect as part of the history of writing.",
+      "id": "Bahasa Melayu juga ditulis selama berabad-abad dengan aksara berbasis Arab (Jawi); bahasa Jawa yang ditulis dengan cara ini disebut Pegon. Sajikan semua aksara dengan penghargaan yang sama sebagai bagian dari sejarah tulisan."
     }
   ],
   "childInstructions": [
     {
-      "en": "Press wedge-shaped marks into a slab of clay with a stick, like the first writers, to record a message of three things.",
+      "en": "Press wedge-shaped marks into a slab of plasticine with a stick, like the first writers, to record a message of three things.",
       "id": "Tekan tanda berbentuk baji ke lempeng plastisin dengan stik, seperti para penulis pertama, untuk mencatat pesan tentang tiga hal."
     },
     {
       "en": "Sort the writing cards into four kinds: picture signs, word signs, syllable-based scripts and alphabets.",
-      "id": "Pilah kartu tulisan ke empat jenis: tanda gambar, tanda kata, aksara berbasis suku kata, dan abjad."
+      "id": "Pilah kartu tulisan ke empat jenis: tanda gambar, tanda kata, aksara berbasis suku kata, dan alfabet (abjad Latin)."
     },
     {
       "en": "Put the dates on your timeline and work out the years between them. Remember: there is no year 0.",
@@ -132,29 +132,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "An inscription is dated 400 CE. How many years before 2026 CE is that?",
-        "id": "Sebuah prasasti bertarikh 400 M. Berapa tahun sebelum 2026 M?"
+        "en": "An inscription is dated 750 CE (an example). How many years before 2026 CE is that?",
+        "id": "Sebuah prasasti bertarikh 750 M (contoh). Berapa tahun sebelum 2026 M?"
       },
       "choices": {
         "en": [
-          "1,626 years",
-          "2,426 years",
-          "1,627 years"
+          "1,276 years",
+          "2,776 years",
+          "1,275 years"
         ],
         "id": [
-          "1.626 tahun",
-          "2.426 tahun",
-          "1.627 tahun"
+          "1.276 tahun",
+          "2.776 tahun",
+          "1.275 tahun"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Both dates are CE, so simply subtract: 2,026 − 400 = 1,626. The \"minus 1\" rule is only for crossing from BCE to CE.",
-        "id": "Kedua tanggal sama-sama Masehi, jadi cukup dikurangkan: 2.026 − 400 = 1.626. Aturan \"kurang 1\" hanya untuk melintas dari SM ke M."
+        "en": "Both dates are CE, so simply subtract: 2,026 − 750 = 1,276. The \"minus 1\" rule is only for crossing from BCE to CE.",
+        "id": "Kedua tanggal sama-sama Masehi, jadi cukup dikurangkan: 2.026 − 750 = 1.276. Aturan \"kurang 1\" hanya untuk melintas dari SM ke M."
       },
       "check": {
-        "expression": "2026 - 400",
-        "result": "1626"
+        "expression": "2026 - 750",
+        "result": "1276"
       },
       "distractorMisconceptions": {
         "1": "ADDS_DATES",
@@ -164,29 +164,29 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Using rounded dates, how many years are there from 3200 BCE (cuneiform) to 400 CE (the Yupa inscriptions)?",
-        "id": "Dengan tanggal yang dibulatkan, berapa tahun dari 3200 SM (aksara paku) sampai 400 M (prasasti Yupa)?"
+        "en": "A clay tablet is dated 1200 BCE and a stone inscription 800 CE (example dates). How many years are there between them?",
+        "id": "Sebuah lempeng tanah liat bertarikh 1200 SM dan sebuah prasasti batu bertarikh 800 M (tanggal contoh). Berapa tahun jarak keduanya?"
       },
       "choices": {
         "en": [
-          "3,599 years",
-          "3,600 years",
-          "2,800 years"
+          "1,999 years",
+          "2,000 years",
+          "400 years"
         ],
         "id": [
-          "3.599 tahun",
-          "3.600 tahun",
-          "2.800 tahun"
+          "1.999 tahun",
+          "2.000 tahun",
+          "400 tahun"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Across the boundary, add the two numbers and subtract 1 because there is no year 0: 3,200 + 400 − 1 = 3,599.",
-        "id": "Melintasi batas, jumlahkan kedua angka lalu kurangi 1 karena tidak ada tahun 0: 3.200 + 400 − 1 = 3.599."
+        "en": "Across the boundary, add the two numbers and subtract 1 because there is no year 0: 1,200 + 800 − 1 = 1,999.",
+        "id": "Melintasi batas, jumlahkan kedua angka lalu kurangi 1 karena tidak ada tahun 0: 1.200 + 800 − 1 = 1.999."
       },
       "check": {
-        "expression": "3200 + 400 - 1",
-        "result": "3599"
+        "expression": "1200 + 800 - 1",
+        "result": "1999"
       },
       "distractorMisconceptions": {
         "1": "ASSUMES_YEAR_ZERO",

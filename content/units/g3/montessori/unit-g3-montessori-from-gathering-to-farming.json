@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-montessori-from-gathering-to-farming",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "framework": "montessori",
   "strand": "history",
@@ -46,8 +46,8 @@
   ],
   "parentInstructions": [
     {
-      "en": "This unit is about ways of life, not about where the first people came from. Families may have their own beliefs and stories about the first people; you can share them alongside this lesson.",
-      "id": "Unit ini membahas cara hidup, bukan asal-usul manusia pertama. Keluarga mungkin punya keyakinan dan kisah sendiri tentang manusia pertama; Anda bisa menyampaikannya bersama pelajaran ini."
+      "en": "This unit is about ways of life, not about where the first people came from. Families may have their own beliefs and stories about the first people; you can share them alongside this lesson. This story describes many communities in the distant past; it does not describe the very first people.",
+      "id": "Unit ini membahas cara hidup, bukan asal-usul manusia pertama. Keluarga mungkin punya keyakinan dan kisah sendiri tentang manusia pertama; Anda bisa menyampaikannya bersama pelajaran ini. Kisah ini menggambarkan banyak masyarakat pada masa lampau; kisah ini tidak menggambarkan manusia yang paling pertama."
     },
     {
       "en": "Facts you can rely on, as rounded school figures: for a very long time people lived by gathering plants and hunting or fishing, moving with the seasons; farming began in several parts of the world at different times, the earliest about 10,000 years ago; different places grew different first crops, such as wheat in South-West Asia, rice in East Asia and maize in the Americas.",
@@ -107,8 +107,8 @@
       "id": "Ceritakan dengan sederhana: \"Dalam waktu yang sangat lama, keluarga hidup dengan meramu buah, umbi, dan daun, serta berburu dan menangkap ikan. Ketika makanan di satu tempat menipis atau musim berganti, mereka berkemas dan pindah.\" Letakkan kartu keranjang, alat batu, api, dan gua di kolom pertama."
     },
     {
-      "en": "\"Then, in some places, people learned to plant seeds and keep the best plants growing. Now they had to stay near their fields. They built houses close together, a village, and made jars to store the harvest for later.\" Place the rice plant, jar and village cards in the second column.",
-      "id": "\"Lalu, di beberapa tempat, manusia belajar menanam biji dan memelihara tanaman terbaik. Kini mereka harus tinggal dekat ladangnya. Mereka membangun rumah berdekatan, sebuah desa, dan membuat tempayan untuk menyimpan hasil panen untuk nanti.\" Letakkan kartu tanaman padi, tempayan, dan desa di kolom kedua."
+      "en": "\"Then, in some places, people learned to plant seeds and keep the best plants growing. Now they had to stay near their fields. They built houses close together, a village, and stored the harvest in baskets, pits and, later, clay jars.\" Place the rice plant, jar and village cards in the second column.",
+      "id": "\"Lalu, di beberapa tempat, manusia belajar menanam biji dan memelihara tanaman terbaik. Kini mereka harus tinggal dekat ladangnya. Mereka membangun rumah berdekatan, sebuah desa, dan menyimpan hasil panen di keranjang, lubang, dan kemudian tempayan tanah liat.\" Letakkan kartu tanaman padi, tempayan, dan desa di kolom kedua."
     },
     {
       "en": "Timeline practice with a different date: \"Our scale is 1 cm for 100 years. Your great-great-grandparents lived about 100 years ago: 1 cm from today. The year 1 CE was about 2,000 years ago: 2,000 ÷ 100 = 20 cm from today.\"",
@@ -217,29 +217,29 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Farming began in some places about 10,000 years ago. On a timeline where 1 cm stands for 100 years, how far from \"today\" do you put that card?",
-        "id": "Pertanian dimulai di beberapa tempat sekitar 10.000 tahun lalu. Pada garis waktu di mana 1 cm mewakili 100 tahun, seberapa jauh dari \"hari ini\" kartu itu diletakkan?"
+        "en": "In one place, people began making clay pots about 3,500 years ago (an example date). On the same timeline, where 1 cm stands for 100 years, how far from \"today\" does that card go?",
+        "id": "Di suatu tempat, orang mulai membuat tembikar sekitar 3.500 tahun lalu (tanggal contoh). Pada garis waktu yang sama, di mana 1 cm mewakili 100 tahun, seberapa jauh dari \"hari ini\" kartu itu diletakkan?"
       },
       "choices": {
         "en": [
-          "100 cm",
-          "10 cm",
-          "1,000 cm"
+          "35 cm",
+          "3.5 cm",
+          "350 cm"
         ],
         "id": [
-          "100 cm",
-          "10 cm",
-          "1.000 cm"
+          "35 cm",
+          "3,5 cm",
+          "350 cm"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Each centimetre is 100 years, so 10,000 ÷ 100 = 100 cm, one metre from today.",
-        "id": "Setiap sentimeter adalah 100 tahun, jadi 10.000 ÷ 100 = 100 cm, satu meter dari hari ini."
+        "en": "Each centimetre is 100 years, so 3,500 ÷ 100 = 35 cm from today.",
+        "id": "Setiap sentimeter adalah 100 tahun, jadi 3.500 ÷ 100 = 35 cm dari hari ini."
       },
       "check": {
-        "expression": "10000 / 100",
-        "result": "100"
+        "expression": "3500 / 100",
+        "result": "35"
       },
       "distractorMisconceptions": {
         "1": "SCALE_DIVIDES_TOO_MUCH",

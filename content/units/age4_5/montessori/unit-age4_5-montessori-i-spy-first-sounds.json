@@ -1,6 +1,6 @@
 {
   "id": "unit-age4_5-montessori-i-spy-first-sounds",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age4_5",
   "framework": "montessori",
   "strand": "language",
@@ -65,8 +65,8 @@
   "cpa": null,
   "materials": [
     {
-      "en": "A basket with four or five everyday objects, each bigger than a child's fist (for English rounds, for example: mug, map, pan, lid; for Indonesian rounds: mangkuk, mainan, piring, gelas)",
-      "id": "Keranjang berisi empat atau lima benda sehari-hari, masing-masing lebih besar dari kepalan tangan anak (untuk putaran bahasa Indonesia, misalnya: mangkuk, mainan, piring, gelas; untuk putaran bahasa Inggris: mug, map, pan, lid)"
+      "en": "A basket with four or five everyday objects, each bigger than a child's fist (for English rounds, for example: mug, map, pan, lid; for Indonesian rounds: mangkuk, mobil mainan, piring, gelas)",
+      "id": "Keranjang berisi empat atau lima benda sehari-hari, masing-masing lebih besar dari kepalan tangan anak (untuk putaran bahasa Indonesia, misalnya: mangkuk, mobil mainan, piring, gelas; untuk putaran bahasa Inggris: mug, map, pan, lid)"
     },
     {
       "en": "A small mat to lay the objects on",
@@ -97,8 +97,8 @@
       "id": "Main: \"Aku melihat sesuatu yang bunyinya diawali mmm.\" Tunggu. Jika anak memilih mangkuk, katakan \"Mmm-angkuk, ya, mangkuk diawali mmm.\" Jika ia memilih gelas, katakan \"Ggg-elas. Gelas diawali ggg\" lalu cari lagi bersama."
     },
     {
-      "en": "Make two objects share the sound (mug and map; or mangkuk and mainan) and ask your child to find both.",
-      "id": "Buat dua benda berbunyi awal sama (mangkuk dan mainan; atau mug dan map) dan minta anak menemukan keduanya."
+      "en": "Make two objects share the sound (mug and map; or mangkuk and mobil mainan) and ask your child to find both.",
+      "id": "Buat dua benda berbunyi awal sama (mangkuk dan mobil mainan; atau mug dan map) dan minta anak menemukan keduanya."
     }
   ],
   "practice": [
@@ -136,8 +136,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Sock (sapu) begins with /s/; bus (tas) only ends with it.",
-        "id": "Sapu (sock) diawali /s/; tas (bus) hanya berakhir dengan bunyi itu."
+        "en": "Sock begins with /s/; bus only ends with it.",
+        "id": "Sapu diawali /s/; tas hanya berakhir dengan bunyi itu."
       },
       "distractorMisconceptions": {
         "1": "LISTENS_TO_END_SOUND",
@@ -164,8 +164,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Fan starts with /f/ like fish (nenek starts with /n/ like nasi). Leaf (ikan) has the sound at the end, and dish (basi) only rhymes.",
-        "id": "Nenek diawali /n/ seperti nasi (fan diawali /f/ seperti fish). Ikan (leaf) punya bunyi itu di akhir, dan basi (dish) hanya berima."
+        "en": "Fan starts with /f/ like fish. Leaf has the sound at the end, and dish only rhymes.",
+        "id": "Nenek diawali /n/ seperti nasi. Ikan punya bunyi itu di akhir, dan basi hanya berima."
       },
       "distractorMisconceptions": {
         "1": "LISTENS_TO_END_SOUND",
@@ -220,8 +220,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Lemon (lele) starts with /l/. Camp (pari) rhymes, and ball (kapal) ends with /l/.",
-        "id": "Lele (lemon) diawali /l/. Pari (camp) berima, dan kapal (ball) berakhir dengan /l/."
+        "en": "Lemon starts with /l/. Camp rhymes with lamp, and ball ends with /l/.",
+        "id": "Lele diawali /l/. Pari berima dengan lari, dan kapal berakhir dengan /l/."
       },
       "distractorMisconceptions": {
         "1": "RHYME_NOT_FIRST_SOUND",
