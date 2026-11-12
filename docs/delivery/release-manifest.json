@@ -1,19 +1,19 @@
 {
   "schema": "atlas-release-manifest/1",
   "release": {
-    "gitSha": "6fb21350796804b8971549facbfc9911ac9eceb6",
-    "shortSha": "6fb2135",
-    "commitDate": "2026-11-11T09:07:50+07:00",
-    "subject": "Merge pull request #17 from class16-git/claude/github-repo-access-nkrthi"
+    "gitSha": "96793d0d54b7139f1b927a59b64ce5753c9822b7",
+    "shortSha": "96793d0",
+    "commitDate": "2026-11-13T02:44:19+07:00",
+    "subject": "Merge pull request #19 from class16-git/claude/github-repo-access-nkrthi"
   },
   "deployment": {
     "provider": "vercel",
-    "id": "dpl_Gq58t4cT7YANovnvmgvSriBpApZn",
+    "id": "dpl_Dc3HWzudh9b7nja3BzDo7AdyLLWq",
     "url": "https://atlas.ichlasulamalsudarmi.com",
     "vercel": {
       "readyState": "READY",
       "target": "production",
-      "readyAt": "2026-11-11T02:09:04.689Z",
+      "readyAt": "2026-11-12T19:45:38.098Z",
       "aliases": [
         "atlas.ichlasulamalsudarmi.com",
         "atlas-ichlasul-amal-sudarmis-projects.vercel.app",
@@ -22,21 +22,21 @@
       "regions": [
         "sin1"
       ],
-      "githubCommitSha": "6fb21350796804b8971549facbfc9911ac9eceb6"
+      "githubCommitSha": "96793d0d54b7139f1b927a59b64ce5753c9822b7"
     },
     "vercelVerified": true
   },
   "curriculum": {
     "version": "2026.11.0",
     "minReview": "reviewed",
-    "contentDigest": "0fcf3ab0a7bd5fdb",
+    "contentDigest": "6771594c2985254f",
     "digestMatchesCheckout": true,
     "visible": {
-      "lessons": 55,
+      "lessons": 57,
       "books": 12,
-      "passages": 4,
-      "units": 0,
-      "readings": 0
+      "passages": 11,
+      "units": 162,
+      "readings": 55
     }
   },
   "database": {
@@ -46,17 +46,18 @@
       "20261110060000_one_open_session_one_active_item",
       "20261110120000_reading_garden",
       "20261110130000_reading_attempts",
-      "20261110140000_content_review_decisions"
+      "20261110140000_content_review_decisions",
+      "20261111120000_unit_attempts"
     ],
-    "latestMigration": "20261110140000_content_review_decisions",
+    "latestMigration": "20261111120000_unit_attempts",
     "note": "Applied by the Vercel build (vercel-build.mjs) after the database role check; see the build log."
   },
   "verification": {
-    "verifiedAt": "2026-11-11T03:34:04.441Z",
+    "verifiedAt": "2026-11-12T19:46:18.613Z",
     "by": "Claude Code (agent), automated read-only verification",
     "checks": [
       "GET /api/health ok and db true",
-      "checkout 0021370 descends from the deployed release with identical content/ and curriculum code",
+      "checkout HEAD equals deployed release",
       "live contentDigest equals checkout contentDigest",
       "curriculum version equal",
       "Vercel deployment READY, production target, same commit"
