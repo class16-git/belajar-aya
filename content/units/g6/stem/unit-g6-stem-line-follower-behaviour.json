@@ -123,8 +123,16 @@
       "id": "Uji di lintasan: di tikungan landai robot bergoyang tetapi mengikuti garis, detak demi detak. Di belokan tajam robot maju 1 cm setiap detak, garis melewati sensor kanan dalam satu detak, dan sekarang kedua sensor membaca putih. Tabel berkata 'maju', jadi robot keluar dari kertas."
     },
     {
-      "en": "The hidden problem: 'white, white' means both 'centred on the line' and 'completely lost'. The robot cannot tell them apart. Two fixes to test, one at a time: (a) a memory variable last_seen that stores which sensor last read black, and a counter lost_ticks. When both read white, move forward and add 1 to lost_ticks; when either sensor reads black, set lost_ticks to 0. If lost_ticks reaches 3, the robot is lost: turn towards last_seen until a sensor reads black. (b) a third sensor in the middle, which reads black when the robot is centred, so 'all white' can only mean lost. Laras tests fix (a) on both the gentle curve and the sharp bend; it still follows the curve and now finds the line again after the bend.",
-      "id": "Masalah tersembunyi: 'putih, putih' berarti 'tepat di tengah garis' dan juga 'benar-benar tersesat'. Robot tidak bisa membedakannya. Dua perbaikan untuk diuji, satu per satu: (a) variabel ingatan terakhir_terlihat yang menyimpan sensor mana yang terakhir membaca hitam, dan penghitung detak_tersesat. Jika keduanya putih, maju dan tambahkan 1 ke detak_tersesat; jika salah satu sensor membaca hitam, atur detak_tersesat menjadi 0. Jika detak_tersesat mencapai 3, robot tersesat: berbelok ke arah terakhir_terlihat sampai ada sensor yang membaca hitam. (b) sensor ketiga di tengah, yang membaca hitam saat robot di tengah, sehingga 'semua putih' hanya bisa berarti tersesat. Laras menguji perbaikan (a) di tikungan landai dan di belokan tajam; robot tetap mengikuti tikungan dan sekarang menemukan garis lagi setelah belokan."
+      "en": "The hidden problem: 'white, white' means both 'centred on the line' and 'completely lost'. The robot cannot tell them apart.",
+      "id": "Masalah tersembunyi: 'putih, putih' berarti 'tepat di tengah garis' dan juga 'benar-benar tersesat'. Robot tidak bisa membedakannya."
+    },
+    {
+      "en": "Two fixes to test, one at a time: (a) a memory variable last_seen that stores which sensor last read black, and a counter lost_ticks. When both read white, move forward and add 1 to lost_ticks; when either sensor reads black, set lost_ticks to 0. If lost_ticks reaches 3, the robot is lost: turn towards last_seen until a sensor reads black.",
+      "id": "Dua perbaikan untuk diuji, satu per satu: (a) variabel ingatan terakhir_terlihat yang menyimpan sensor mana yang terakhir membaca hitam, dan penghitung detak_tersesat. Jika keduanya putih, maju dan tambahkan 1 ke detak_tersesat; jika salah satu sensor membaca hitam, atur detak_tersesat menjadi 0. Jika detak_tersesat mencapai 3, robot tersesat: berbelok ke arah terakhir_terlihat sampai ada sensor yang membaca hitam."
+    },
+    {
+      "en": "(b) a third sensor in the middle, which reads black when the robot is centred, so 'all white' can only mean lost. Laras tests fix (a) on both the gentle curve and the sharp bend; it still follows the curve and now finds the line again after the bend.",
+      "id": "(b) sensor ketiga di tengah, yang membaca hitam saat robot di tengah, sehingga 'semua putih' hanya bisa berarti tersesat. Laras menguji perbaikan (a) di tikungan landai dan di belokan tajam; robot tetap mengikuti tikungan dan sekarang menemukan garis lagi setelah belokan."
     }
   ],
   "practice": [

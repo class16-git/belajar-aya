@@ -43,7 +43,7 @@ taught example; **minor** = polish, recommended. **pass** = no blocker or major;
 
 ### Cross-cutting findings
 
-1. **Rule 11 is still the main weak point.** Five of the seven majors are assessment items that re-test the guided example: the
+1. **Rule 11 is still the main weak point.** Six of the seven majors are assessment items that re-test the guided example: the
    same words (`tas`, `agar supaya`, `kind/unkind`, `ramah/tidak ramah`, `jalan/bulan/pelan/talan`) or the same passage (the
    earthworm and mangrove texts). The maths validator enforces this rule; literacy has no such check, so the authors must
    check it themselves. A useful self-test: search the guided examples, practice and rationale for each answer word.
@@ -197,7 +197,7 @@ reviewer as common knowledge.
 | 2 | minor | parentInstructions[3]; a1 | The a1 foil pairs (tiny/tidy, pandai/pandan) are given beforehand as the look-alike examples. | parentInstructions[3]: EN "(quiet, quite)", ID "(pasar, pagar)". In the ANTONYM_FOR_SYNONYM remediation, use a neutral example: "'SAME as small'" / "'SAMA dengan cepat'". |
 | 3 | minor | assessment a4 ID | "murka" is defensible as the strongest word (KBBI: *sangat marah; berang*), but it is literary and, in this family's faith context, strongly tied to divine wrath (*murka Allah*). It is an odd word for a child's own feelings. | choices.id `["geram", "kesal", "tenang"]` (KBBI geram: *marah sekali*); explanation "Pada garis kata: kesal, marah, geram. Geram paling kuat…". |
 
-Klaim/terms aside, I checked the shades of meaning: melirik < melihat < menatap and cross < angry < furious are correct.
+Shades of meaning checked: melirik < melihat < menatap and cross < angry < furious are correct.
 
 ### unit-g3-literacy-writing-a-recount — pass
 | # | Severity | Where | Issue | Exact fix |
@@ -266,6 +266,6 @@ bagus sekali*, *naik ke atas*, *mundur ke belakang*.
 ## Verdict
 
 No blockers. Six files need fixes before human review: making-rhymes, segmenting-words-for-spelling,
-retelling-non-fiction, synonyms-and-antonyms, note-taking-from-informational-text and editing-for-clarity. Five of their
-seven majors are rule-11 reuse of taught examples. The sixth is the unsourced mangrove ranking claim. The other 14 files pass
+retelling-non-fiction, synonyms-and-antonyms, note-taking-from-informational-text and editing-for-clarity. Six of their
+seven majors are rule-11 reuse of taught examples. The seventh is the unsourced mangrove ranking claim. The other 14 files pass
 and need only the minor fixes above. The debate unit's coin hazard is fixed.
