@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-literacy-debate-preparation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "literacy",
   "strand": "speaking_listening",
@@ -184,19 +184,19 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "The opposition says: 'A school garden costs too much money.' Which is the best rebuttal?",
-        "id": "Tim oposisi berkata: 'Kebun sekolah terlalu mahal.' Sanggahan mana yang terbaik?"
+        "en": "Motion: 'Every classroom should have a reading corner.' The opposition says: 'A reading corner takes up too much space.' Which is the best rebuttal?",
+        "id": "Mosi: 'Setiap kelas sebaiknya memiliki pojok baca.' Tim oposisi berkata: 'Pojok baca memakan terlalu banyak tempat.' Sanggahan mana yang terbaik?"
       },
       "choices": {
         "en": [
-          "A garden can start small, with seeds and recycled containers, so it does not need much money.",
-          "The opposition speaker is just lazy.",
-          "Gardens help students learn science."
+          "A reading corner can be one shelf and a mat by the wall, so it needs very little space.",
+          "The opposition speaker never reads anyway.",
+          "Reading corners help students enjoy books."
         ],
         "id": [
-          "Kebun bisa dimulai kecil, dengan benih dan wadah bekas, jadi tidak perlu banyak biaya.",
-          "Pembicara oposisi itu hanya malas.",
-          "Kebun membantu siswa belajar IPA."
+          "Pojok baca cukup satu rak dan satu tikar di dekat dinding, jadi hanya perlu sedikit tempat.",
+          "Pembicara oposisi itu memang tidak pernah membaca.",
+          "Pojok baca membuat siswa senang membaca."
         ]
       },
       "answer": 0,
@@ -337,7 +337,7 @@
   "accessibility": [
     {
       "en": "Anxious speakers can first deliver arguments to one family member, or record and replay them privately; speaking cards with key words reduce pressure.",
-      "id": "Pembicara yang cemas bisa menyampaikan argumen kepada satu anggota keluarga dulu; kartu bicara dengan kata kunci mengurangi tekanan."
+      "id": "Pembicara yang cemas bisa menyampaikan argumen kepada satu anggota keluarga dulu, atau merekam lalu memutarnya sendiri; kartu bicara dengan kata kunci mengurangi tekanan."
     },
     {
       "en": "A child who processes language slowly can be given the motion a day ahead.",
@@ -387,7 +387,7 @@
   "rights": "original",
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -398,7 +398,11 @@
       "transfer-not-recall",
       "safety",
       "age-fit"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1"
   },
   "provenance": {
     "origin": "ai_drafted",

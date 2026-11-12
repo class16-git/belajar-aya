@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-literacy-note-taking-from-informational-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "framework": "literacy",
   "strand": "comprehension",
@@ -79,7 +79,7 @@
   "materials": [
     {
       "en": "The mangrove text below, printed",
-      "id": "Teks bakau di bawah, dicetak"
+      "id": "Teks mangrove di bawah, dicetak"
     },
     {
       "en": "A notes page split into two columns: headings on the left, notes on the right, with a summary line at the bottom",
@@ -102,16 +102,16 @@
   ],
   "guidedExamples": [
     {
-      "en": "Text (original), paragraphs 1 and 2: Mangroves, trees between land and sea. (1) Mangroves are trees and shrubs that grow on warm coasts, where salty sea water rises and falls with the tides. Indonesia has one of the largest areas of mangrove forest in the world. (2) Their roots are special. Some mangroves stand on tall, arching roots like stilts. Others send up small roots that poke out of the mud like pencils; these help the roots get air, because wet mud holds very little oxygen.",
-      "id": "Teks (orisinal), bagian 1 dan 2: Bakau, pohon di antara darat dan laut. (1) Bakau atau mangrove adalah pohon dan semak yang tumbuh di pantai beriklim hangat, tempat air laut yang asin naik dan turun mengikuti pasang surut. Indonesia memiliki salah satu hutan bakau terluas di dunia. (2) Akarnya istimewa. Ada bakau yang berdiri di atas akar tunjang yang tinggi dan melengkung. Ada pula yang menumbuhkan akar napas kecil yang mencuat dari lumpur seperti pensil; akar ini membantu mendapatkan udara, karena lumpur basah hanya sedikit mengandung oksigen."
+      "en": "Text (original), paragraphs 1 and 2: Mangroves, trees between land and sea. (1) Mangroves are trees and shrubs that grow on warm coasts, where salty sea water rises and falls with the tides. Indonesia, a country of thousands of islands, has mangrove forests along many of its coasts. (2) Their roots are special. Some mangroves stand on tall, arching roots like stilts. Others send up small roots that poke out of the mud like pencils; these help the roots get air, because wet mud holds very little oxygen.",
+      "id": "Teks (orisinal), bagian 1 dan 2: Mangrove, pohon di antara darat dan laut. (1) Mangrove (sering disebut bakau) adalah pohon dan semak yang tumbuh di pantai beriklim hangat, tempat air laut yang asin naik dan turun mengikuti pasang surut. Indonesia, negara dengan ribuan pulau, memiliki hutan mangrove di banyak pantainya. (2) Akarnya istimewa. Ada mangrove yang berdiri di atas akar tunjang yang tinggi dan melengkung. Ada pula yang menumbuhkan akar napas kecil yang mencuat dari lumpur seperti pensil; akar ini membantu mendapatkan udara, karena lumpur basah hanya sedikit mengandung oksigen."
     },
     {
       "en": "Text, paragraphs 3 and 4: (3) The tangled roots hold mud in place and slow down waves, so less land is washed away in storms. (4) Young fish, crabs and shrimp shelter among the roots, where big hunters cannot easily reach them.",
       "id": "Teks, bagian 3 dan 4: (3) Akar yang rapat menahan lumpur dan memperlambat ombak, sehingga daratan tidak mudah terkikis saat badai. (4) Ikan kecil, kepiting, dan udang berlindung di antara akar, tempat pemangsa besar sulit menjangkau mereka."
     },
     {
-      "en": "Model notes. Source: 'Mangroves, trees between land and sea' (Atlas). Where they grow: warm coasts, salty water, tides; Indonesia = one of largest areas. Roots: stilt roots; pencil roots poke up → air (mud has little oxygen). Summary line: mangroves grow where sea meets land, and their roots help them breathe, protect coasts and shelter young sea animals.",
-      "id": "Contoh catatan. Sumber: 'Bakau, pohon di antara darat dan laut' (Atlas). Tempat tumbuh: pantai hangat, air asin, pasang surut; Indonesia = salah satu terluas. Akar: akar tunjang; akar napas mencuat → dapat udara (lumpur sedikit oksigen). Ringkasan: bakau tumbuh di pertemuan laut dan darat, dan akarnya membantu bernapas, melindungi pantai, dan menjadi tempat berlindung hewan laut muda."
+      "en": "Model notes. Source: 'Mangroves, trees between land and sea' (Atlas). Where they grow: warm coasts, salty water, tides; Indonesia = mangroves on many coasts. Roots: stilt roots; pencil roots poke up → air (mud has little oxygen). Summary line: mangroves grow where sea meets land, and their roots help them breathe, protect coasts and shelter young sea animals.",
+      "id": "Contoh catatan. Sumber: 'Mangrove, pohon di antara darat dan laut' (Atlas). Tempat tumbuh: pantai hangat, air asin, pasang surut; Indonesia = mangrove di banyak pantai. Akar: akar tunjang; akar napas mencuat → dapat udara (lumpur sedikit oksigen). Ringkasan: mangrove tumbuh di pertemuan laut dan darat, dan akarnya membantu bernapas, melindungi pantai, dan menjadi tempat berlindung hewan laut muda."
     }
   ],
   "practice": [
@@ -121,7 +121,7 @@
     },
     {
       "en": "Notes to talk: using only the notes, your child gives a one-minute explanation of mangroves to a family member.",
-      "id": "Dari catatan ke lisan: hanya dengan catatan, anak menjelaskan tentang bakau selama satu menit kepada anggota keluarga."
+      "id": "Dari catatan ke lisan: hanya dengan catatan, anak menjelaskan tentang mangrove selama satu menit kepada anggota keluarga."
     },
     {
       "en": "New text: take notes from a short information page in a school book or encyclopedia, with the source at the top.",
@@ -160,25 +160,25 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "A note says only: 'roots like pencils'. What key information is missing?",
-        "id": "Sebuah catatan hanya berbunyi: 'akar seperti pensil'. Informasi penting apa yang hilang?"
+        "en": "Sentence: 'Owls have soft, comb-like edges on their feathers, so they fly almost silently and can surprise their prey.' A note says only: 'feathers like combs'. What key information is missing?",
+        "id": "Kalimat: 'Bulu burung hantu bertepi lembut seperti sisir, sehingga ia terbang hampir tanpa suara dan bisa mengejutkan mangsanya.' Catatan hanya berbunyi: 'bulu seperti sisir'. Informasi penting apa yang hilang?"
       },
       "choices": {
         "en": [
-          "Why: they help the roots get air because the mud has little oxygen",
-          "That pencils are used at school",
+          "Why: soft edges → almost silent flight → can surprise prey",
+          "That combs are used for hair",
           "Nothing, the note is complete"
         ],
         "id": [
-          "Alasannya: akar itu membantu mendapat udara karena lumpur sedikit oksigen",
-          "Bahwa pensil dipakai di sekolah",
+          "Alasannya: tepi lembut → terbang hampir tanpa suara → bisa mengejutkan mangsa",
+          "Bahwa sisir dipakai untuk rambut",
           "Tidak ada, catatannya sudah lengkap"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The pencil comparison only describes the shape. The fact that matters is what the roots do and why.",
-        "id": "Perbandingan dengan pensil hanya menggambarkan bentuk. Fakta pentingnya adalah fungsi akar dan alasannya."
+        "en": "The comb comparison only describes the shape. The fact that matters is what the edges do and why it helps.",
+        "id": "Perbandingan dengan sisir hanya menggambarkan bentuk. Fakta pentingnya adalah fungsi tepi bulu dan manfaatnya."
       },
       "distractorMisconceptions": {
         "1": "IRRELEVANT_DETAIL",
@@ -193,12 +193,12 @@
       },
       "choices": {
         "en": [
-          "sea turtles: lay eggs → dug holes, sandy beach, usu. at night",
+          "sea turtles: lay eggs in dug holes, sandy beach, usu. at night",
           "Sea turtles lay their eggs in holes they dig in sandy beaches, usually at night.",
           "sea turtles: lay eggs in the sea"
         ],
         "id": [
-          "penyu: bertelur → lubang galian, pantai berpasir, biasanya malam",
+          "penyu: bertelur di lubang galian, pantai berpasir, biasanya malam",
           "Penyu bertelur di lubang yang digalinya di pantai berpasir, biasanya pada malam hari.",
           "penyu: bertelur di laut"
         ]
@@ -216,19 +216,19 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Which set of headings best organises notes on the mangrove text?",
-        "id": "Kumpulan subjudul mana yang paling tepat untuk menyusun catatan teks bakau?"
+        "en": "A text about bees has four paragraphs: a bee's body; life in the hive; making honey; carrying pollen between flowers. Which set of headings best organises notes on it?",
+        "id": "Sebuah teks tentang lebah punya empat paragraf: tubuh lebah; kehidupan di sarang; membuat madu; membawa serbuk sari antarbunga. Kumpulan subjudul mana yang paling tepat untuk menyusun catatannya?"
       },
       "choices": {
         "en": [
-          "Where they grow / Roots / Protecting the coast / Shelter for young animals",
+          "Body / Life in the hive / Making honey / Carrying pollen",
           "Paragraph 1 / Paragraph 2 / Paragraph 3 / Paragraph 4",
-          "Trees / Pencils / Storms / Crabs"
+          "Wings / Queen / Jars / Yellow dust"
         ],
         "id": [
-          "Tempat tumbuh / Akar / Melindungi pantai / Tempat berlindung hewan muda",
+          "Tubuh / Hidup di sarang / Membuat madu / Membawa serbuk sari",
           "Paragraf 1 / Paragraf 2 / Paragraf 3 / Paragraf 4",
-          "Pohon / Pensil / Badai / Kepiting"
+          "Sayap / Ratu / Toples / Debu kuning"
         ]
       },
       "answer": 0,
@@ -324,7 +324,7 @@
   "extension": [
     {
       "en": "Use the notes to make a labelled poster or a short talk about mangroves for the family, with the source written at the bottom.",
-      "id": "Pakai catatan untuk membuat poster berlabel atau presentasi singkat tentang bakau untuk keluarga, dengan sumber ditulis di bawah."
+      "id": "Pakai catatan untuk membuat poster berlabel atau presentasi singkat tentang mangrove untuk keluarga, dengan sumber ditulis di bawah."
     }
   ],
   "accessibility": [
@@ -350,7 +350,7 @@
     "notes": [
       {
         "en": "If you visit a mangrove area, stay on boardwalks with an adult, watch the tide times and never wade into deep mud.",
-        "id": "Jika mengunjungi hutan bakau, tetap di jalur papan bersama orang dewasa, perhatikan jadwal pasang surut, dan jangan berjalan ke lumpur yang dalam."
+        "id": "Jika mengunjungi hutan mangrove, tetap di jalur papan bersama orang dewasa, perhatikan jadwal pasang surut, dan jangan berjalan ke lumpur yang dalam."
       }
     ]
   },
@@ -379,10 +379,8 @@
   ],
   "rights": "original",
   "arabicPhrases": [],
-  "reviewFlags": [
-    "fact_check"
-  ],
-  "reviewStatus": "agent_reviewed",
+  "reviewFlags": [],
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -393,7 +391,11 @@
       "transfer-not-recall",
       "safety",
       "age-fit"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1"
   },
   "provenance": {
     "origin": "ai_drafted",

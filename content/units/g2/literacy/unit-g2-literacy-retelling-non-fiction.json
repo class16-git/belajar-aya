@@ -378,7 +378,7 @@
   "reviewFlags": [
     "fact_check"
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -389,7 +389,11 @@
       "transfer-not-recall",
       "safety",
       "age-fit"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1"
   },
   "provenance": {
     "origin": "ai_drafted",

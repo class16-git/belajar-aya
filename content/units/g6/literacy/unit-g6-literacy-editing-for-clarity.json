@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-literacy-editing-for-clarity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "literacy",
   "strand": "writing",
@@ -129,19 +129,19 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Which is the clearest edit of: 'We need to return back the library books before the deadline date.'",
-        "id": "Mana suntingan paling jelas dari: 'Kita harus naik ke atas panggung agar supaya penonton bisa melihat.'"
+        "en": "Which is the clearest edit of: 'The team met together to plan ahead for the next match.'",
+        "id": "Mana suntingan paling jelas dari: 'Warga saling bantu-membantu membersihkan selokan demi untuk mencegah banjir.'"
       },
       "choices": {
         "en": [
-          "We need to return the library books before the deadline.",
-          "We need to return back the library books before the deadline.",
-          "We need to keep the library books after the deadline."
+          "The team met to plan for the next match.",
+          "The team met together to plan for the next match.",
+          "The team cancelled the plan for the next match."
         ],
         "id": [
-          "Kita harus naik ke panggung agar penonton bisa melihat.",
-          "Kita harus naik ke atas panggung agar penonton bisa melihat.",
-          "Kita harus turun dari panggung agar penonton bisa melihat."
+          "Warga saling membantu membersihkan selokan untuk mencegah banjir.",
+          "Warga saling bantu-membantu membersihkan selokan untuk mencegah banjir.",
+          "Warga saling membantu membersihkan selokan setelah banjir."
         ]
       },
       "answer": 0,
@@ -174,8 +174,8 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Her and she could each mean Dina or Sari. Name the person: 'Sari smiled when Dina gave her the book.'",
-        "id": "Bukunya dan ia bisa berarti Dina atau Sari. Sebutkan orangnya: 'Sari tersenyum ketika Dina memberikan buku milik Dina kepadanya.'"
+        "en": "Her and she could each mean Dina or Sari. Name the people: 'Dina gave her own book to Sari, and Sari smiled.'",
+        "id": "Bukunya dan ia bisa berarti Dina atau Sari. Sebutkan orangnya: 'Dina memberikan bukunya sendiri kepada Sari, dan Sari tersenyum.'"
       },
       "distractorMisconceptions": {
         "1": "WRONG_PROBLEM",
@@ -388,7 +388,7 @@
   "rights": "original",
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -399,7 +399,11 @@
       "transfer-not-recall",
       "safety",
       "age-fit"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1"
   },
   "provenance": {
     "origin": "ai_drafted",
