@@ -1,6 +1,6 @@
 {
   "id": "reading-g3-wash-your-hands-properly",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "readingLevel": "transitional",
   "genre": "procedural",
@@ -17,7 +17,7 @@
       "Step 2: Put on enough soap to cover both hands.",
       "Step 3: Rub your palms together. Then rub the back of each hand with the other palm.",
       "Step 4: Lace your fingers together and rub between them. Twist each thumb inside your other hand.",
-      "Step 5: Rub your fingertips and nails in the palm of the other hand. Keep scrubbing for about 20 seconds, as long as singing 'Selamat Ulang Tahun' twice.",
+      "Step 5: Rub your fingertips and nails in the palm of the other hand. Keep scrubbing for about 20 seconds: count slowly from 1 to 20.",
       "Step 6: Rinse off all the soap under running water. Dry your hands well with a clean towel.",
       "When should you wash? Before you eat or help to cook, after using the toilet, after playing outside, after touching animals, and after coughing or sneezing into your hands."
     ],
@@ -28,7 +28,7 @@
       "Langkah 2: Tuang sabun secukupnya sampai menutupi kedua tangan.",
       "Langkah 3: Gosok kedua telapak tangan. Lalu gosok punggung tangan dengan telapak tangan yang lain.",
       "Langkah 4: Silangkan jari-jari dan gosok sela-selanya. Putar setiap jempol di dalam genggaman tangan yang lain.",
-      "Langkah 5: Gosok ujung jari dan kuku di telapak tangan yang lain. Terus gosok selama kira-kira 20 detik, selama menyanyikan 'Selamat Ulang Tahun' dua kali.",
+      "Langkah 5: Gosok ujung jari dan kuku di telapak tangan yang lain. Terus gosok kira-kira 20 detik: hitung pelan-pelan dari 1 sampai 20.",
       "Langkah 6: Bilas semua sabun di bawah air mengalir. Keringkan tangan dengan handuk bersih.",
       "Kapan harus mencuci tangan? Sebelum makan atau membantu memasak, setelah dari toilet, setelah bermain di luar, setelah menyentuh hewan, dan setelah batuk atau bersin ke tangan."
     ]
@@ -241,7 +241,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -250,7 +250,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

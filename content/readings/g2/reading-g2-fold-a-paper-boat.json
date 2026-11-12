@@ -1,6 +1,6 @@
 {
   "id": "reading-g2-fold-a-paper-boat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "readingLevel": "early",
   "genre": "procedural",
@@ -82,8 +82,8 @@
       "id": "q1",
       "kind": "sequence",
       "prompt": {
-        "en": "What do you make just before the boat's diamond shape?",
-        "id": "Apa yang kamu buat tepat sebelum bentuk belah ketupat pertama?"
+        "en": "What have you made just before you get the first diamond shape?",
+        "id": "Apa yang sudah kamu buat tepat sebelum mendapat bentuk belah ketupat pertama?"
       },
       "choices": {
         "en": [
@@ -215,8 +215,8 @@
       "id": "Langkah mana yang paling sulit? Bagaimana kamu mengatasinya?"
     },
     {
-      "en": "What could you use instead of paper to make a boat last longer?",
-      "id": "Bahan apa selain kertas yang bisa membuat perahu lebih awet?"
+      "en": "Which step would you draw as a picture to help a younger child?",
+      "id": "Langkah mana yang akan kamu gambar untuk membantu anak yang lebih kecil?"
     }
   ],
   "offlineActivity": {
@@ -237,7 +237,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -246,7 +246,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

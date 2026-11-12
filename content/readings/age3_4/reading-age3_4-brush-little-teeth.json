@@ -1,6 +1,6 @@
 {
   "id": "reading-age3_4-brush-little-teeth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "readingLevel": "pre_reader",
   "genre": "picture_story_script",
@@ -89,11 +89,11 @@
     {
       "word": {
         "en": "spit",
-        "id": "membuang ludah"
+        "id": "meludah"
       },
       "meaning": {
         "en": "push something out of your mouth",
-        "id": "mengeluarkan sesuatu dari mulut"
+        "id": "mengeluarkan busa atau air dari mulut"
       }
     },
     {
@@ -216,7 +216,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -225,7 +225,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

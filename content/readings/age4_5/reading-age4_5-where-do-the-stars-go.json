@@ -1,6 +1,6 @@
 {
   "id": "reading-age4_5-where-do-the-stars-go",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age4_5",
   "readingLevel": "pre_reader",
   "genre": "picture_story_script",
@@ -37,7 +37,7 @@
       "id": "Buka-tutup jari seperti bintang berkelip."
     },
     {
-      "en": "Use a 'city' voice for Nisa and a slow, kind voice for Kakek.",
+      "en": "Use a bright, excited voice for Nisa and a slow, kind voice for Kakek.",
       "id": "Pakai suara ceria untuk Nisa dan suara pelan dan lembut untuk Kakek."
     },
     {
@@ -255,7 +255,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -264,7 +264,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

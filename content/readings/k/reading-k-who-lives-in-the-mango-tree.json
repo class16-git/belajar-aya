@@ -1,6 +1,6 @@
 {
   "id": "reading-k-who-lives-in-the-mango-tree",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "readingLevel": "emergent",
   "genre": "nonfiction",
@@ -211,13 +211,13 @@
   ],
   "safetyNotes": [
     {
-      "en": "Weaver ants bite and sting: look from a distance. Do not climb the tree, and wash hands after the walk.",
-      "id": "Semut rangrang menggigit dan perih: lihat dari jauh. Jangan memanjat pohon, dan cuci tangan setelah berjalan-jalan."
+      "en": "Weaver ants bite hard and the bite smarts: look from a distance. Do not climb the tree, and wash hands after the walk.",
+      "id": "Gigitan semut rangrang perih: lihat dari jauh. Jangan memanjat pohon, dan cuci tangan setelah berjalan-jalan."
     }
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -226,7 +226,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

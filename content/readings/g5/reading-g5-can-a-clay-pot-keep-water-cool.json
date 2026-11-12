@@ -1,6 +1,6 @@
 {
   "id": "reading-g5-can-a-clay-pot-keep-water-cool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "readingLevel": "fluent",
   "genre": "article",
@@ -17,7 +17,7 @@
       "After 4 hours, they measured again with the same thermometer. The water in the glass jar was 29 °C, close to the warm air around it. The water in the clay pot was 24 °C. The outside of the clay pot felt damp.",
       "Was it a fair test? The class kept the water, the amount, the starting temperature, the place and the time the same. Only the container was different. They also repeated the test on two more days and got similar results.",
       "Every test has limits. On a humid, rainy day, water evaporates more slowly, so the pot may cool the water much less. The class tested only one pot, so another pot with thicker walls might give a different result. A careful reader should not decide that every kendi cools water by exactly the same amount.",
-      "So what can we conclude? The evidence fits the science: an unglazed clay pot can keep water a few degrees cooler than the air, especially in dry, breezy weather. To keep the water safe to drink, the pot must be kept clean and covered."
+      "So what can we conclude? The evidence fits the science: an unglazed clay pot can keep water a few degrees cooler than water in a sealed glass jar. To keep the water safe to drink, the pot must be kept clean and covered."
     ],
     "id": [
       "Di banyak rumah di Indonesia, sebelum kulkas umum dimiliki, air minum disimpan dalam kendi tanah liat yang tidak dilapisi glasir. Orang sering bilang air dari kendi terasa lebih sejuk. Benarkah begitu? Jika benar, mengapa?",
@@ -26,7 +26,7 @@
       "Setelah 4 jam, mereka mengukur lagi dengan termometer yang sama. Air di stoples kaca bersuhu 29 °C, hampir sama dengan udara hangat di sekitarnya. Air di kendi bersuhu 24 °C. Bagian luar kendi terasa lembap.",
       "Apakah ujinya adil? Kelas itu menjaga air, jumlahnya, suhu awal, tempat, dan lamanya tetap sama. Hanya wadahnya yang berbeda. Mereka juga mengulang uji itu dua hari lagi dan mendapat hasil yang mirip.",
       "Setiap uji punya keterbatasan. Pada hari yang lembap dan hujan, air menguap lebih lambat, jadi kendi mungkin mendinginkan air jauh lebih sedikit. Kelas itu hanya menguji satu kendi, jadi kendi lain yang dindingnya lebih tebal bisa memberi hasil berbeda. Pembaca yang cermat tidak boleh menyimpulkan bahwa setiap kendi mendinginkan air dengan jumlah yang persis sama.",
-      "Jadi, apa kesimpulannya? Buktinya sesuai dengan sains: kendi tanah liat tanpa glasir dapat menjaga air beberapa derajat lebih sejuk daripada udara, terutama saat cuaca kering dan berangin. Supaya airnya aman diminum, kendi harus selalu bersih dan tertutup."
+      "Jadi, apa kesimpulannya? Buktinya sesuai dengan sains: kendi tanah liat tanpa glasir dapat menjaga air beberapa derajat lebih sejuk daripada air di stoples kaca yang tertutup rapat. Supaya airnya aman diminum, kendi harus selalu bersih dan tertutup."
     ]
   },
   "readAloudNotes": [],
@@ -196,7 +196,7 @@
         ]
       },
       "answer": 0,
-      "evidenceParagraph": 5
+      "evidenceParagraph": 1
     }
   ],
   "crossCurricular": [
@@ -266,7 +266,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -275,7 +275,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

@@ -1,6 +1,6 @@
 {
   "id": "reading-g4-komodo-dragon-report",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "readingLevel": "fluent",
   "genre": "report",
@@ -13,7 +13,7 @@
     "en": [
       "Introduction. The Komodo dragon is the largest lizard alive today. It is found in the wild only in Indonesia.",
       "Where it lives. Komodo dragons live on a few islands in East Nusa Tenggara, including Komodo, Rinca and parts of Flores. Their homes are hot, dry grasslands and forests. Much of this area is protected as Komodo National Park.",
-      "Body. An adult can grow to about 3 metres long, which is longer than a family car is wide. It has a long, strong tail, sharp claws and tough, scaly skin.",
+      "Body. An adult can grow to about 3 metres long, about the length of two adults lying head to toe. It has a long, strong tail, sharp claws and tough, scaly skin.",
       "Senses. A Komodo dragon flicks out its long, forked tongue to collect smells from the air. This helps it find food from far away.",
       "Food. Komodo dragons are meat-eaters. They hunt animals such as deer and wild pigs, and they also eat animals that are already dead.",
       "Young. A female lays her eggs in a hole in the ground. When the babies hatch, they are only about 40 centimetres long. Young dragons spend much of their time up in trees, where they are safer from adult dragons.",
@@ -22,7 +22,7 @@
     "id": [
       "Pendahuluan. Komodo adalah kadal terbesar yang masih hidup saat ini. Di alam liar, komodo hanya ditemukan di Indonesia.",
       "Habitat. Komodo hidup di beberapa pulau di Nusa Tenggara Timur, antara lain Pulau Komodo, Rinca, dan sebagian Flores. Tempat tinggalnya padang rumput dan hutan yang panas dan kering. Sebagian besar wilayah ini dilindungi sebagai Taman Nasional Komodo.",
-      "Tubuh. Komodo dewasa bisa tumbuh sampai sekitar 3 meter, lebih panjang daripada lebar sebuah mobil keluarga. Ekornya panjang dan kuat, cakarnya tajam, dan kulitnya keras bersisik.",
+      "Tubuh. Komodo dewasa bisa tumbuh sampai sekitar 3 meter, kira-kira sepanjang dua orang dewasa yang berbaring berurutan. Ekornya panjang dan kuat, cakarnya tajam, dan kulitnya keras bersisik.",
       "Indra. Komodo menjulurkan lidahnya yang panjang dan bercabang untuk menangkap bau di udara. Ini membantunya menemukan makanan dari jauh.",
       "Makanan. Komodo adalah pemakan daging. Mereka memburu hewan seperti rusa dan babi hutan, dan juga memakan bangkai hewan.",
       "Anak komodo. Komodo betina bertelur di lubang di tanah. Saat menetas, panjang bayinya hanya sekitar 40 sentimeter. Komodo muda banyak menghabiskan waktu di atas pohon, tempat mereka lebih aman dari komodo dewasa.",
@@ -259,7 +259,7 @@
   "safetyNotes": [],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -268,7 +268,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

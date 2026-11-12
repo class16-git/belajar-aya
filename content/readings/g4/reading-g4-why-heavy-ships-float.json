@@ -1,6 +1,6 @@
 {
   "id": "reading-g4-why-heavy-ships-float",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "readingLevel": "fluent",
   "genre": "explanatory",
@@ -14,19 +14,19 @@
       "Drop a small steel nail into water and it sinks at once. Yet a huge steel ferry, heavier than thousands of nails, floats across the sea from island to island. How can that be?",
       "When an object goes into water, it pushes some water out of the way. The water pushes back up on the object. This upward push is called upthrust.",
       "The more water an object pushes aside, the bigger the upthrust. An object floats if it can push aside water that weighs as much as the object itself before it is completely under the water.",
-      "A nail is small and solid, so it pushes aside only a tiny amount of water. A ship's hull is wide and hollow, and the space inside is filled with air. So the ship sits low in the water and pushes aside a very large amount of water, enough to hold it up.",
+      "A nail is small and solid, so it pushes aside only a tiny amount of water. A ship's hull is wide and hollow, and the space inside is filled with air. So even though the ship is heavy, it pushes aside a very large amount of water, enough to hold it up.",
       "You can test this with modelling clay. Roll it into a ball and it sinks. Press the same clay into a wide, thin bowl shape and it floats. The amount of clay has not changed; only its shape has.",
       "When a ship is loaded with cargo, it gets heavier and sinks lower until it pushes aside enough extra water. Ships have a line painted on the hull to show how low they can safely sit. Overloading is dangerous.",
-      "In an island nation like Indonesia, boat builders have understood this for centuries. Ferries, fishing boats and the wooden pinisi of South Sulawesi all float because of their shape."
+      "In an island nation like Indonesia, boat builders have understood this for centuries. Ferries, fishing boats and the wooden pinisi of South Sulawesi all rely on a hull shape that pushes aside enough water to carry their load."
     ],
     "id": [
       "Jatuhkan paku baja kecil ke air dan paku itu langsung tenggelam. Tetapi kapal feri baja yang sangat besar, lebih berat dari ribuan paku, mengapung menyeberangi laut dari pulau ke pulau. Bagaimana bisa?",
       "Saat sebuah benda masuk ke air, benda itu mendorong sebagian air menyingkir. Air lalu mendorong balik benda itu ke atas. Dorongan ke atas ini disebut gaya apung.",
       "Makin banyak air yang didorong menyingkir, makin besar gaya apungnya. Benda akan mengapung jika ia bisa mendorong menyingkir air yang beratnya sama dengan berat benda itu sebelum benda itu seluruhnya terbenam.",
-      "Paku itu kecil dan padat, jadi hanya mendorong sedikit sekali air. Lambung kapal lebar dan berongga, dan ruang di dalamnya berisi udara. Jadi kapal duduk agak dalam di air dan mendorong menyingkir air dalam jumlah sangat besar, cukup untuk menahannya.",
+      "Paku itu kecil dan padat, jadi hanya mendorong sedikit sekali air. Lambung kapal lebar dan berongga, dan ruang di dalamnya berisi udara. Jadi walaupun kapal itu berat, ia mendorong menyingkir air dalam jumlah sangat besar, cukup untuk menahannya.",
       "Kamu bisa mengujinya dengan lilin mainan. Bentuk menjadi bola dan lilin itu tenggelam. Tekan lilin yang sama menjadi bentuk mangkuk yang lebar dan tipis, lalu lilin itu mengapung. Jumlah lilinnya tidak berubah; hanya bentuknya.",
       "Saat kapal diisi muatan, kapal menjadi lebih berat dan turun lebih dalam sampai mendorong menyingkir cukup banyak air tambahan. Kapal punya garis yang dicat di lambungnya untuk menunjukkan seberapa dalam kapal boleh terbenam dengan aman. Kelebihan muatan itu berbahaya.",
-      "Di negara kepulauan seperti Indonesia, para pembuat kapal sudah memahami hal ini selama berabad-abad. Kapal feri, perahu nelayan, dan pinisi kayu dari Sulawesi Selatan semuanya mengapung karena bentuknya."
+      "Di negara kepulauan seperti Indonesia, para pembuat kapal sudah memahami hal ini selama berabad-abad. Kapal feri, perahu nelayan, dan pinisi kayu dari Sulawesi Selatan semuanya mengandalkan bentuk lambung yang mendorong cukup banyak air untuk membawa muatannya."
     ]
   },
   "readAloudNotes": [],
@@ -252,7 +252,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -261,7 +261,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

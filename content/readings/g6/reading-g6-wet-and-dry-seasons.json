@@ -1,6 +1,6 @@
 {
   "id": "reading-g6-wet-and-dry-seasons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "readingLevel": "advanced",
   "genre": "explanatory",
@@ -16,7 +16,7 @@
       "The half leaning towards the sun gets more direct sunlight and longer days, so it has summer. The half leaning away gets weaker sunlight and shorter days, so it has winter. Far from the equator, in places such as Japan or Australia's south, this makes four clear seasons.",
       "A common mistake is to think seasons happen because the Earth moves closer to the sun and then further away. In fact, the Earth is closest to the sun in early January, which is winter in the northern half of the world.",
       "Indonesia lies across the equator. Here the sun is high in the sky all year, and day length stays close to 12 hours. So temperatures hardly change from month to month. The tilt does not give us a cold winter.",
-      "Instead, our seasons are about rain, and they are driven by monsoon winds that change direction during the year. In much of Indonesia, from about October or November to March or April, winds blow from the north-west across warm oceans and carry a lot of moisture: that is the rainy season.",
+      "Instead, our seasons are about rain, and they are driven by monsoon winds that change direction during the year. In much of Indonesia, from about October or November to March or April, winds blow from the north-west (north of the equator they arrive from the north-east, then turn) across warm oceans and carry a lot of moisture: that is the rainy season.",
       "From about April or May to September or October, winds blow from the south-east, from the dry land of Australia, and bring less rain: that is the dry season.",
       "These dates are only a rough guide. The timing differs from region to region, and in some places, such as parts of Maluku, the rainiest months come in the middle of the year. In some years, ocean changes such as El Niño make the dry season longer and drier."
     ],
@@ -26,7 +26,7 @@
       "Belahan yang condong ke matahari mendapat sinar lebih langsung dan siang yang lebih panjang, jadi mengalami musim panas. Belahan yang menjauh mendapat sinar lebih lemah dan siang lebih pendek, jadi mengalami musim dingin. Jauh dari khatulistiwa, misalnya di Jepang atau Australia bagian selatan, hal ini menghasilkan empat musim yang jelas.",
       "Kesalahan umum adalah mengira musim terjadi karena Bumi mendekat lalu menjauh dari matahari. Kenyataannya, Bumi paling dekat dengan matahari pada awal Januari, yang justru musim dingin di belahan Bumi utara.",
       "Indonesia terletak melintasi khatulistiwa. Di sini matahari tinggi di langit sepanjang tahun, dan panjang siang tetap sekitar 12 jam. Jadi suhu hampir tidak berubah dari bulan ke bulan. Kemiringan Bumi tidak memberi kita musim dingin.",
-      "Musim kita justru ditentukan oleh hujan, dan digerakkan oleh angin muson yang berganti arah sepanjang tahun. Di sebagian besar Indonesia, sekitar bulan Oktober atau November sampai Maret atau April, angin bertiup dari barat laut melintasi samudra yang hangat dan membawa banyak uap air: itulah musim hujan.",
+      "Musim kita justru ditentukan oleh hujan, dan digerakkan oleh angin muson yang berganti arah sepanjang tahun. Di sebagian besar Indonesia, sekitar bulan Oktober atau November sampai Maret atau April, angin bertiup dari barat laut (di utara khatulistiwa angin datang dari timur laut, lalu berbelok) melintasi samudra yang hangat dan membawa banyak uap air: itulah musim hujan.",
       "Sekitar bulan April atau Mei sampai September atau Oktober, angin bertiup dari tenggara, dari daratan Australia yang kering, dan membawa lebih sedikit hujan: itulah musim kemarau.",
       "Bulan-bulan ini hanya perkiraan kasar. Waktunya berbeda di setiap daerah, dan di beberapa tempat, misalnya sebagian Maluku, bulan-bulan paling basah justru terjadi di pertengahan tahun. Pada tahun-tahun tertentu, perubahan di samudra seperti El Niño membuat musim kemarau lebih panjang dan lebih kering."
     ]
@@ -257,7 +257,7 @@
   "safetyNotes": [],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -266,7 +266,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

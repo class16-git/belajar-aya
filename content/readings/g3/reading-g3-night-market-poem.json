@@ -1,6 +1,6 @@
 {
   "id": "reading-g3-night-market-poem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "readingLevel": "transitional",
   "genre": "poetry",
@@ -18,7 +18,7 @@
     ],
     "id": [
       "Saat matahari turun dan lampu jalan menyala, / pasar malam terbangun, ramai dan bercahaya. / Lampu-lampu bergoyang di tiang dan tali, / udara penuh desis gorengan di sana-sini.",
-      "Martabak dibalik di wajan yang lebar, / manis dan tebal, cokelatnya bertebar. / Asap sate naik seperti awan perak, / penjual berseru riang, suaranya semarak.",
+      "Martabak dibalik di wajan yang lebar, / manis dan tebal, cokelat di dalamnya terhampar. / Asap sate naik seperti awan perak, / penjual berseru riang, suaranya semarak.",
       "Kuda komidi putar berputar dan berputar, / tawa dan lonceng riang terdengar. / Balon-balon terang melayang di atas kerumunan, / seperti bulan kecil di dalam awan.",
       "Kugenggam tangan Ayah di lorong yang ramai, / kuhitung kios satu per satu sampai usai. / Saat mataku berat dan bulan tinggi di sana, / kulambaikan tangan mengantuk: dadah, pasar malam tercinta."
     ]
@@ -117,7 +117,7 @@
       "kind": "vocabulary",
       "prompt": {
         "en": "What does 'sizzling' make you imagine?",
-        "id": "Kata 'desis gorengan' membuatmu membayangkan apa?"
+        "id": "Frasa 'desis gorengan' membuatmu membayangkan apa?"
       },
       "choices": {
         "en": [
@@ -213,7 +213,7 @@
   "safetyNotes": [],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -221,7 +221,10 @@
       "readability",
       "question-answerability",
       "safety"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

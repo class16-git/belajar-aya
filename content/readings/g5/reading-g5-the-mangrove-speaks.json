@@ -1,6 +1,6 @@
 {
   "id": "reading-g5-the-mangrove-speaks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "readingLevel": "fluent",
   "genre": "poetry",
@@ -162,8 +162,8 @@
       "id": "q5",
       "kind": "vocabulary",
       "prompt": {
-        "en": "In stanza 1, what is the 'tide'?",
-        "id": "Pada bait 1, apa yang dimaksud 'pasang'?"
+        "en": "In stanza 1, what do the tide 'coming in' and 'turning to run' describe?",
+        "id": "Pada bait 1, apa yang dimaksud dengan 'pasang' dan 'surut'?"
       },
       "choices": {
         "en": [
@@ -224,7 +224,7 @@
       "status": "common_knowledge"
     },
     {
-      "claim": "Most coasts have two high tides and two low tides each day.",
+      "claim": "Many coasts have two high and two low tides a day; some Indonesian coasts have one or a mixed pattern.",
       "status": "common_knowledge"
     },
     {
@@ -247,7 +247,7 @@
   "safetyNotes": [],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -256,7 +256,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

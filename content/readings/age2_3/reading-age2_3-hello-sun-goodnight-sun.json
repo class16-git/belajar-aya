@@ -1,6 +1,6 @@
 {
   "id": "reading-age2_3-hello-sun-goodnight-sun",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "readingLevel": "pre_reader",
   "genre": "picture_story_script",
@@ -56,7 +56,7 @@
     },
     {
       "en": "Card 4: a dark sky over a sleeping house",
-      "id": "Kartu 4: langit gelap di atas rumah yang sepi"
+      "id": "Kartu 4: langit gelap di atas rumah yang lampunya sudah padam"
     }
   ],
   "objectives": [
@@ -203,7 +203,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -212,7 +212,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

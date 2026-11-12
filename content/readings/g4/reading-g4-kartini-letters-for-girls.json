@@ -1,6 +1,6 @@
 {
   "id": "reading-g4-kartini-letters-for-girls",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "readingLevel": "fluent",
   "genre": "biography",
@@ -16,7 +16,7 @@
       "At home, Kartini kept learning by reading books and newspapers. She wrote long letters to friends in the Netherlands. In them she wrote about her wish that Indonesian girls could go to school and choose their own futures.",
       "Kartini did more than write. With her sisters, she opened a small school for girls, where they learned reading, writing and handicrafts.",
       "In 1903 Kartini married the regent of Rembang. Sadly, she died in 1904, when she was only 25 years old, a few days after her son was born.",
-      "In 1911 her letters were collected and published as a book. In Indonesian it is known as 'Habis Gelap Terbitlah Terang', which means 'After Darkness Comes Light'. Her ideas inspired many people, and schools for girls were later named after her.",
+      "In 1911 her letters were collected and published as a book in Dutch, titled 'Door Duisternis tot Licht'. The Indonesian translation is known as 'Habis Gelap Terbitlah Terang', which means 'After Darkness Comes Light'. Her ideas inspired many people, and schools for girls were later named after her.",
       "Kartini is a National Hero of Indonesia. Every year on 21 April, Hari Kartini, many schools celebrate her and the right of every child to learn."
     ],
     "id": [
@@ -25,7 +25,7 @@
       "Di rumah, Kartini terus belajar dengan membaca buku dan surat kabar. Ia menulis surat-surat panjang kepada sahabatnya di Belanda. Di dalamnya ia menuliskan harapannya agar anak perempuan Indonesia bisa bersekolah dan menentukan masa depan sendiri.",
       "Kartini tidak hanya menulis. Bersama adik-adiknya, ia membuka sekolah kecil untuk anak perempuan, tempat mereka belajar membaca, menulis, dan keterampilan tangan.",
       "Pada tahun 1903 Kartini menikah dengan Bupati Rembang. Sayangnya, ia wafat pada tahun 1904, saat usianya baru 25 tahun, beberapa hari setelah putranya lahir.",
-      "Pada tahun 1911 surat-suratnya dikumpulkan dan diterbitkan menjadi buku. Dalam bahasa Indonesia buku itu dikenal sebagai 'Habis Gelap Terbitlah Terang'. Gagasannya menginspirasi banyak orang, dan kemudian ada sekolah-sekolah perempuan yang dinamai menurut namanya.",
+      "Pada tahun 1911 surat-suratnya dikumpulkan dan diterbitkan menjadi buku berbahasa Belanda berjudul 'Door Duisternis tot Licht'. Terjemahannya dalam bahasa Indonesia dikenal sebagai 'Habis Gelap Terbitlah Terang'. Gagasannya menginspirasi banyak orang, dan kemudian ada sekolah-sekolah perempuan yang dinamai menurut namanya.",
       "Kartini adalah Pahlawan Nasional Indonesia. Setiap tanggal 21 April, Hari Kartini, banyak sekolah memperingatinya dan hak setiap anak untuk belajar."
     ]
   },
@@ -241,7 +241,7 @@
       "status": "common_knowledge"
     },
     {
-      "claim": "Her letters were published in 1911; the Indonesian edition is titled Habis Gelap Terbitlah Terang.",
+      "claim": "Her letters were published in Dutch in 1911 as Door Duisternis tot Licht (compiled by J. H. Abendanon); the later Indonesian translation is titled Habis Gelap Terbitlah Terang.",
       "status": "common_knowledge"
     },
     {
@@ -256,7 +256,7 @@
   "safetyNotes": [],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -265,7 +265,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

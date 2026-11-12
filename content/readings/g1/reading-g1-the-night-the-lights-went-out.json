@@ -1,6 +1,6 @@
 {
   "id": "reading-g1-the-night-the-lights-went-out",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "readingLevel": "early",
   "genre": "fiction",
@@ -24,7 +24,7 @@
       "Pelan-pelan Sari mulai melihat bentuk-bentuk: meja, jendela, senyum Mama.",
       "Papa menemukan senter di laci, tempat senter selalu disimpan. Klik! Lingkaran cahaya menyinari lantai.",
       "Tanpa TV dan kipas angin, rumah jadi sunyi. Sari bisa mendengar jangkrik dan katak di luar.",
-      "Mereka duduk bersama di tangga dan bernyanyi. Lalu, klik! Lampu menyala lagi. Sari hampir merasa sayang."
+      "Mereka duduk bersama di tangga dan bernyanyi. Lalu, klik! Lampu menyala lagi. Sari malah sedikit kecewa."
     ]
   },
   "readAloudNotes": [],
@@ -143,7 +143,7 @@
       "kind": "inference",
       "prompt": {
         "en": "Why was Sari almost sorry when the lights came back?",
-        "id": "Mengapa Sari hampir merasa sayang saat lampu menyala lagi?"
+        "id": "Mengapa Sari sedikit kecewa saat lampu menyala lagi?"
       },
       "choices": {
         "en": [
@@ -205,7 +205,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -214,7 +214,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

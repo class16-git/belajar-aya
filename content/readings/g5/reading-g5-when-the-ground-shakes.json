@@ -1,6 +1,6 @@
 {
   "id": "reading-g5-when-the-ground-shakes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "readingLevel": "fluent",
   "genre": "report",
@@ -13,18 +13,18 @@
     "en": [
       "Indonesia sits where several of the giant plates of the Earth's crust meet. These plates move very slowly, a few centimetres a year. Sometimes they stick, then slip suddenly, and the ground shakes. That is an earthquake. It is why Indonesia has many earthquakes and volcanoes.",
       "Most earthquakes are small, and nobody even feels them. But knowing what to do in a strong one keeps people safe. The best time to learn is now, while everything is calm.",
-      "Indoors: Drop, Cover, Hold On. Drop down onto your hands and knees. Cover your head and neck, under a strong table if there is one. Hold on until the shaking stops. Stay away from windows, shelves and anything that could fall.",
+      "Indoors: Drop, Cover, Hold On. Drop down onto your hands and knees. Cover your head and neck, under a strong table if there is one. Hold on until the shaking stops. Stay away from windows, shelves and anything that could fall. When the shaking stops, leave carefully by the stairs, not a lift, and watch out for aftershocks and broken glass.",
       "Outdoors: move to an open space away from buildings, trees, walls and power lines. Then crouch down and protect your head.",
-      "Near the sea: a strong earthquake under the sea can cause a tsunami, a series of huge waves. If you are near the coast and the shaking is strong or lasts a long time, or the sea suddenly pulls back from the beach, go to high ground or far inland at once. Do not wait for an announcement, and do not go to look at the sea.",
+      "Near the sea: a strong earthquake under the sea can cause a tsunami, a series of huge waves. If you are near the coast and the shaking is strong or lasts a long time, first protect yourself until it stops. Then, as soon as the shaking stops, go to high ground or far inland at once, on foot if you can. If the sea suddenly pulls back from the beach, go at once. Do not wait for an announcement, and do not go to look at the sea.",
       "A tsunami can come as several waves, and the later ones can be bigger. Stay on high ground until officials, such as BMKG or the local disaster agency, say it is safe to return.",
       "Be ready as a family. Agree on a meeting place. Learn the evacuation route if you live near the coast. Keep an emergency bag with drinking water, a torch, a first-aid kit, some food and copies of important papers."
     ],
     "id": [
       "Indonesia terletak di tempat beberapa lempeng raksasa kerak Bumi bertemu. Lempeng-lempeng itu bergerak sangat lambat, beberapa sentimeter per tahun. Kadang lempeng tersangkut, lalu tiba-tiba bergeser, dan tanah pun berguncang. Itulah gempa bumi. Karena itu Indonesia sering mengalami gempa dan punya banyak gunung api.",
       "Sebagian besar gempa itu kecil, bahkan tidak terasa. Tetapi tahu apa yang harus dilakukan saat gempa kuat membuat kita tetap selamat. Waktu terbaik untuk belajar adalah sekarang, saat semuanya tenang.",
-      "Di dalam ruangan: Berlutut, Berlindung, Berpegangan. Turunkan badan dengan bertumpu pada tangan dan lutut. Lindungi kepala dan leher, di bawah meja yang kokoh jika ada. Berpeganganlah sampai guncangan berhenti. Jauhi jendela, rak, dan benda yang bisa jatuh.",
+      "Di dalam ruangan: Merunduk, Berlindung, Berpegangan. Turunkan badan dengan bertumpu pada tangan dan lutut. Lindungi kepala dan leher, di bawah meja yang kokoh jika ada. Berpeganganlah sampai guncangan berhenti. Jauhi jendela, rak, dan benda yang bisa jatuh. Setelah guncangan berhenti, keluar dengan hati-hati lewat tangga, bukan lift, dan waspadai gempa susulan serta pecahan kaca.",
       "Di luar ruangan: pindah ke tempat terbuka, jauh dari bangunan, pohon, tembok, dan tiang listrik. Lalu berjongkok dan lindungi kepala.",
-      "Di dekat laut: gempa kuat di bawah laut bisa menimbulkan tsunami, yaitu rangkaian gelombang besar. Jika kamu berada di dekat pantai dan guncangannya kuat atau lama, atau air laut tiba-tiba surut dari pantai, segera pergi ke tempat tinggi atau jauh ke daratan. Jangan menunggu pengumuman, dan jangan pergi melihat laut.",
+      "Di dekat laut: gempa kuat di bawah laut bisa menimbulkan tsunami, yaitu rangkaian gelombang besar. Jika kamu berada di dekat pantai dan guncangannya kuat atau lama, pertama-tama lindungi dirimu sampai guncangan berhenti. Begitu guncangan berhenti, segera pergi ke tempat tinggi atau jauh ke daratan, sebaiknya berjalan kaki. Jika air laut tiba-tiba surut, segera pergi. Jangan menunggu pengumuman, dan jangan pergi melihat laut.",
       "Tsunami bisa datang sebagai beberapa gelombang, dan gelombang berikutnya bisa lebih besar. Tetaplah di tempat tinggi sampai petugas, seperti BMKG atau badan penanggulangan bencana setempat, menyatakan aman untuk kembali.",
       "Bersiaplah sebagai keluarga. Sepakati tempat berkumpul. Pelajari jalur evakuasi jika tinggal di dekat pantai. Siapkan tas siaga berisi air minum, senter, kotak P3K, sedikit makanan, dan salinan dokumen penting."
     ]
@@ -88,7 +88,7 @@
           "Stand in a doorway, look outside, wait"
         ],
         "id": [
-          "Berlutut, Berlindung, Berpegangan",
+          "Merunduk, Berlindung, Berpegangan",
           "Lari, Teriak, Sembunyi",
           "Berdiri di pintu, lihat keluar, tunggu"
         ]
@@ -194,7 +194,7 @@
       "subject": "health_safety",
       "connection": {
         "en": "Knowing Drop, Cover, Hold On and tsunami warning signs saves lives.",
-        "id": "Mengetahui Berlutut, Berlindung, Berpegangan serta tanda-tanda tsunami menyelamatkan nyawa."
+        "id": "Mengetahui Merunduk, Berlindung, Berpegangan serta tanda-tanda tsunami menyelamatkan nyawa."
       }
     },
     {
@@ -224,7 +224,7 @@
   ],
   "offlineActivity": {
     "en": "With your family, practise Drop, Cover, Hold On in each room and choose a meeting place outside. Make a checklist for an emergency bag. If you live near the coast, find your nearest high ground and walk the route together.",
-    "id": "Bersama keluarga, latih Berlutut, Berlindung, Berpegangan di setiap ruangan dan pilih tempat berkumpul di luar. Buat daftar periksa tas siaga. Jika tinggal di dekat pantai, cari tempat tinggi terdekat dan telusuri jalurnya bersama."
+    "id": "Bersama keluarga, latih Merunduk, Berlindung, Berpegangan di setiap ruangan dan pilih tempat berkumpul di luar. Buat daftar periksa tas siaga. Jika tinggal di dekat pantai, cari tempat tinggi terdekat dan telusuri jalurnya bersama."
   },
   "factChecks": [
     {
@@ -240,7 +240,7 @@
       "status": "common_knowledge"
     },
     {
-      "claim": "Strong or long shaking near the coast, or the sea suddenly receding, are natural tsunami warning signs: go to high ground at once.",
+      "claim": "Near the coast, protect yourself during shaking; as soon as strong or long shaking stops, or if the sea suddenly recedes, go to high ground at once without waiting for a warning.",
       "status": "common_knowledge"
     },
     {

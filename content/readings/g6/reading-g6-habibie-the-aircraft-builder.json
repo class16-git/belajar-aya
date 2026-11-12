@@ -1,6 +1,6 @@
 {
   "id": "reading-g6-habibie-the-aircraft-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "readingLevel": "advanced",
   "genre": "biography",
@@ -16,7 +16,7 @@
       "Habibie then worked for years in the German aircraft industry, where he became a senior engineer and leader. He is often remembered for his work on how tiny cracks grow in aircraft structures, which helps engineers make planes both light and safe.",
       "In the 1970s he came home to help Indonesia build its own technology. He led the national aircraft company in Bandung and later served for many years as the government minister in charge of science and technology.",
       "For an island nation, aircraft matter: they link places that are days apart by sea. On 10 August 1995, the N250 Gatotkaca, a passenger plane designed in Indonesia, made its first flight. That day is now remembered as National Technology Awakening Day.",
-      "In 1998, a time of great change for the country, Habibie became Indonesia's third president. He served until 1999.",
+      "In March 1998 Habibie became Vice President. In May 1998, a time of great change, he became Indonesia's third president when President Soeharto resigned. He served until 1999.",
       "Habibie died in Jakarta on 11 September 2019. Many young Indonesians still see his life as proof that patient learning, at home and abroad, can open the sky."
     ],
     "id": [
@@ -25,7 +25,7 @@
       "Habibie kemudian bekerja bertahun-tahun di industri pesawat Jerman, dan menjadi insinyur senior serta pemimpin. Ia sering dikenang karena karyanya tentang bagaimana retakan kecil merambat pada struktur pesawat, yang membantu insinyur membuat pesawat ringan sekaligus aman.",
       "Pada tahun 1970-an ia pulang untuk membantu Indonesia membangun teknologinya sendiri. Ia memimpin perusahaan pesawat nasional di Bandung dan kemudian bertahun-tahun menjabat sebagai Menteri Riset dan Teknologi.",
       "Bagi negara kepulauan, pesawat sangat penting: pesawat menghubungkan tempat-tempat yang berjarak berhari-hari lewat laut. Pada 10 Agustus 1995, N250 Gatotkaca, pesawat penumpang rancangan Indonesia, melakukan terbang perdananya. Hari itu kini diperingati sebagai Hari Kebangkitan Teknologi Nasional.",
-      "Pada tahun 1998, masa perubahan besar bagi negara, Habibie menjadi presiden ketiga Indonesia. Ia menjabat sampai tahun 1999.",
+      "Pada Maret 1998 Habibie menjadi Wakil Presiden. Pada Mei 1998, masa perubahan besar bagi negara, ia menjadi presiden ketiga Indonesia ketika Presiden Soeharto mengundurkan diri. Ia menjabat sampai tahun 1999.",
       "Habibie wafat di Jakarta pada 11 September 2019. Banyak anak muda Indonesia masih memandang hidupnya sebagai bukti bahwa belajar dengan tekun, di dalam maupun di luar negeri, bisa membuka jalan ke langit."
     ]
   },
@@ -258,12 +258,16 @@
     {
       "claim": "He died in Jakarta on 11 September 2019.",
       "status": "common_knowledge"
+    },
+    {
+      "claim": "Habibie became Vice President in March 1998 and President in May 1998 when Soeharto resigned.",
+      "status": "common_knowledge"
     }
   ],
   "safetyNotes": [],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -272,7 +276,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

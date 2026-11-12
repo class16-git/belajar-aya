@@ -1,6 +1,6 @@
 {
   "id": "reading-g2-the-orangutan-builds-a-bed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "readingLevel": "transitional",
   "genre": "nonfiction",
@@ -189,7 +189,7 @@
     {
       "subject": "geography",
       "connection": {
-        "en": "Orangutans live wild only on the Indonesian and Malaysian islands of Borneo and Sumatra.",
+        "en": "Orangutans live wild only on Sumatra and Borneo (Kalimantan, Sabah and Sarawak).",
         "id": "Orangutan liar hanya hidup di pulau Kalimantan dan Sumatra."
       }
     },
@@ -240,7 +240,7 @@
   "safetyNotes": [],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -249,7 +249,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

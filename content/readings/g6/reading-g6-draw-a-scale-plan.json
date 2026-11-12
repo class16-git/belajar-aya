@@ -1,6 +1,6 @@
 {
   "id": "reading-g6-draw-a-scale-plan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "readingLevel": "advanced",
   "genre": "procedural",
@@ -156,19 +156,19 @@
       "id": "q4",
       "kind": "inference",
       "prompt": {
-        "en": "Why must every length be divided by the same number?",
-        "id": "Mengapa setiap panjang harus dibagi dengan bilangan yang sama?"
+        "en": "Arif divides the room's length by 50 but its width by 100. What goes wrong?",
+        "id": "Arif membagi panjang kamar dengan 50 tetapi lebarnya dengan 100. Apa yang salah?"
       },
       "choices": {
         "en": [
-          "so the plan keeps exactly the same shape as the real room",
-          "so the plan uses less paper",
-          "so the pencil lines are thinner"
+          "the plan is squashed and no longer the same shape as the room",
+          "the plan is exactly right",
+          "the plan becomes bigger than the room"
         ],
         "id": [
-          "supaya denah punya bentuk yang persis sama dengan ruangan sebenarnya",
-          "supaya denah memakai lebih sedikit kertas",
-          "supaya garis pensilnya lebih tipis"
+          "denahnya gepeng dan bentuknya tidak sama lagi dengan kamar",
+          "denahnya benar sekali",
+          "denahnya lebih besar dari kamar"
         ]
       },
       "answer": 0,
@@ -260,7 +260,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -269,7 +269,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

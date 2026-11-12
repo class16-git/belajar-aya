@@ -1,6 +1,6 @@
 {
   "id": "reading-age3_4-rooster-wakes-the-village",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "readingLevel": "pre_reader",
   "genre": "oral_story",
@@ -16,15 +16,15 @@
       "Mbeeek woke up the duck. 'Kwek, kwek! Good morning!' said the duck.",
       "Kwek, kwek woke up the cat. 'Meong! Good morning!' said the cat.",
       "Meong woke up little Wulan. She rubbed her eyes and said, 'Good morning, everyone!'",
-      "Wulan and Nenek gave everyone breakfast: corn for Jago, grass for the goat, fish for the cat, and a bowl of water for the duck."
+      "Wulan and Nenek gave everyone breakfast: corn for Jago, grass for the goat, fish for the cat, and rice bran for the duck."
     ],
     "id": [
-      "Pagi-pagi sekali, Jago si ayam jantan mengepakkan sayapnya. Kukuruyuk!",
+      "Pagi-pagi sekali, Jago si ayam jantan merentangkan sayapnya. Kukuruyuk!",
       "Kukuruyuk membangunkan kambing. 'Mbeeek! Selamat pagi!' kata kambing.",
       "Mbeeek membangunkan bebek. 'Kwek, kwek! Selamat pagi!' kata bebek.",
       "Kwek, kwek membangunkan kucing. 'Meong! Selamat pagi!' kata kucing.",
       "Meong membangunkan Wulan kecil. Ia mengucek mata dan berkata, 'Selamat pagi, semuanya!'",
-      "Wulan dan Nenek memberi semua sarapan: jagung untuk Jago, rumput untuk kambing, ikan untuk kucing, dan semangkuk air untuk bebek."
+      "Wulan dan Nenek memberi semua sarapan: jagung untuk Jago, rumput untuk kambing, ikan untuk kucing, dan dedak untuk bebek."
     ]
   },
   "readAloudNotes": [
@@ -202,8 +202,8 @@
     }
   ],
   "offlineActivity": {
-    "en": "Tell the story again without the book. Pause before each sound and let your child make it. Then line up four toy or drawn animals in the order they woke up.",
-    "id": "Ceritakan lagi tanpa buku. Berhenti sebelum setiap suara dan biarkan anak menirukannya. Lalu jajarkan empat mainan atau gambar hewan sesuai urutan mereka bangun."
+    "en": "Tell the story again without the book. Pause before each sound and let your child make it. Then line up four large toy animals (bigger than your child's fist) or drawn animals in the order they woke up.",
+    "id": "Ceritakan lagi tanpa buku. Berhenti sebelum setiap suara dan biarkan anak menirukannya. Lalu jajarkan empat mainan hewan yang besar (lebih besar dari kepalan anak) atau gambar hewan sesuai urutan mereka bangun."
   },
   "factChecks": [],
   "safetyNotes": [
@@ -214,7 +214,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -222,7 +222,10 @@
       "readability",
       "question-answerability",
       "safety"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

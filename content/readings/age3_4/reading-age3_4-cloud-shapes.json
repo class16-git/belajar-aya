@@ -1,6 +1,6 @@
 {
   "id": "reading-age3_4-cloud-shapes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "readingLevel": "pre_reader",
   "genre": "picture_story_script",
@@ -223,11 +223,15 @@
     {
       "en": "Cloud-watch in the shade and remind your child never to look straight at the sun. Go indoors if you hear thunder.",
       "id": "Amati awan di tempat teduh dan ingatkan anak jangan menatap matahari langsung. Masuklah ke rumah jika terdengar guntur."
+    },
+    {
+      "en": "Choose shade away from fruit trees in fruiting season and from ant trails.",
+      "id": "Pilih tempat teduh yang jauh dari pohon yang sedang berbuah dan dari jalur semut."
     }
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -236,7 +240,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

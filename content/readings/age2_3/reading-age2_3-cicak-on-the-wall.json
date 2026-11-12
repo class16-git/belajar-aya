@@ -1,6 +1,6 @@
 {
   "id": "reading-age2_3-cicak-on-the-wall",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "readingLevel": "pre_reader",
   "genre": "picture_story_script",
@@ -15,14 +15,14 @@
       "Cicak goes up, up, up. Tap, tap, tap.",
       "Cicak goes down, down, down. Tap, tap.",
       "Cicak sees the bright lamp. Cek, cek, cek!",
-      "Sleepy cicak hides behind the picture frame. Night, night, cicak."
+      "Cicak catches a little bug. Yum! Now it is our bedtime. Night, night, cicak!"
     ],
     "id": [
       "Lihat! Ada cicak kecil di dinding. Halo, cicak!",
       "Cicak naik, naik, naik. Tap, tap, tap.",
       "Cicak turun, turun, turun. Tap, tap.",
       "Cicak melihat lampu yang terang. Cek, cek, cek!",
-      "Cicak mengantuk bersembunyi di balik bingkai foto. Selamat tidur, cicak."
+      "Cicak menangkap serangga kecil. Nyam! Sekarang waktunya kita tidur. Selamat malam, cicak!"
     ]
   },
   "readAloudNotes": [
@@ -43,8 +43,8 @@
       "id": "Ucapkan 'cek, cek, cek' dengan suara kecil dan ajak anak menirukan."
     },
     {
-      "en": "Cover your eyes with your hands to 'hide', then whisper goodnight.",
-      "id": "Tutup mata dengan tangan seperti bersembunyi, lalu bisikkan selamat tidur."
+      "en": "Make a quick 'snap' with your fingers for catching the bug, then whisper goodnight.",
+      "id": "Jentikkan jari dengan cepat untuk cicak menangkap serangga, lalu bisikkan selamat malam."
     }
   ],
   "sequenceCards": [
@@ -61,8 +61,8 @@
       "id": "Kartu 3: cicak di bagian bawah dinding dengan panah ke bawah"
     },
     {
-      "en": "Card 4: the cicak peeping out from behind a picture frame",
-      "id": "Kartu 4: cicak mengintip dari balik bingkai foto"
+      "en": "Card 4: the cicak by the lamp with a small bug",
+      "id": "Kartu 4: cicak di dekat lampu dengan serangga kecil"
     }
   ],
   "objectives": [
@@ -98,12 +98,12 @@
     },
     {
       "word": {
-        "en": "hide",
-        "id": "bersembunyi"
+        "en": "catch",
+        "id": "menangkap"
       },
       "meaning": {
-        "en": "go where others cannot see you",
-        "id": "pergi ke tempat yang tidak terlihat"
+        "en": "grab something that is moving",
+        "id": "meraih sesuatu yang bergerak"
       }
     }
   ],
@@ -134,19 +134,19 @@
       "id": "q2",
       "kind": "sequence",
       "prompt": {
-        "en": "Where did the cicak go at the end?",
-        "id": "Ke mana cicak pergi di akhir cerita?"
+        "en": "What did the cicak catch at the end?",
+        "id": "Apa yang ditangkap cicak di akhir cerita?"
       },
       "choices": {
         "en": [
-          "behind the picture frame",
-          "up to the moon",
-          "into a cup"
+          "a little bug",
+          "a ball",
+          "a fish"
         ],
         "id": [
-          "ke balik bingkai foto",
-          "ke bulan",
-          "ke dalam gelas"
+          "serangga kecil",
+          "bola",
+          "ikan"
         ]
       },
       "answer": 0,
@@ -154,19 +154,19 @@
     },
     {
       "id": "q3",
-      "kind": "inference",
+      "kind": "literal",
       "prompt": {
         "en": "Why did we say 'night, night' at the end?",
         "id": "Mengapa kita bilang 'selamat tidur' di akhir?"
       },
       "choices": {
         "en": [
-          "because the cicak was going to rest",
+          "because it was our bedtime",
           "because the cicak was cross",
           "because the lamp was noisy"
         ],
         "id": [
-          "karena cicak mau beristirahat",
+          "karena sudah waktunya kita tidur",
           "karena cicak sedang marah",
           "karena lampunya berisik"
         ]
@@ -202,6 +202,10 @@
     {
       "claim": "House geckos can climb walls because of special pads on their toes.",
       "status": "common_knowledge"
+    },
+    {
+      "claim": "House geckos are active at night and often hunt insects near lamps.",
+      "status": "common_knowledge"
     }
   ],
   "safetyNotes": [
@@ -212,7 +216,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -221,7 +225,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

@@ -1,6 +1,6 @@
 {
   "id": "reading-k-five-senses-at-the-pasar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "readingLevel": "emergent",
   "genre": "nonfiction",
@@ -142,8 +142,8 @@
       "id": "q4",
       "kind": "inference",
       "prompt": {
-        "en": "If you closed your eyes at the pasar, how could you tell a motorbike was coming?",
-        "id": "Jika kamu menutup mata di pasar, bagaimana kamu tahu ada motor datang?"
+        "en": "If a motorbike came up behind you at the pasar, how could you tell it was coming without seeing it?",
+        "id": "Jika ada motor datang dari belakangmu di pasar, bagaimana kamu tahu tanpa melihatnya?"
       },
       "choices": {
         "en": [
@@ -213,7 +213,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -222,7 +222,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

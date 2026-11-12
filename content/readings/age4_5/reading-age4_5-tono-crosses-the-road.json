@@ -1,6 +1,6 @@
 {
   "id": "reading-age4_5-tono-crosses-the-road",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age4_5",
   "readingLevel": "pre_reader",
   "genre": "picture_story_script",
@@ -13,7 +13,7 @@
     "en": [
       "Tono and Mama are walking to the warung to buy eggs.",
       "They come to a busy road. Motorbikes go brrm, brrm! Tono holds Mama's hand tight.",
-      "They stop at the zebra crossing. Look one way. Look the other way. Listen!",
+      "They stop at the zebra crossing. Look right. Look left. Look right again. Listen!",
       "A motorbike is coming. Wait, wait... Whoosh! It goes past.",
       "Now the road is clear. They look again, then walk straight across. No running!",
       "At the warung Tono says, 'We stopped, we looked, we listened, and we walked!'"
@@ -21,7 +21,7 @@
     "id": [
       "Tono dan Mama berjalan ke warung untuk membeli telur.",
       "Mereka sampai di jalan yang ramai. Motor berbunyi brem, brem! Tono menggenggam tangan Mama erat-erat.",
-      "Mereka berhenti di zebra cross. Lihat ke satu arah. Lihat ke arah lain. Dengarkan!",
+      "Mereka berhenti di zebra cross. Lihat kanan. Lihat kiri. Lihat kanan lagi. Dengarkan!",
       "Ada motor datang. Tunggu, tunggu... Wus! Motornya lewat.",
       "Sekarang jalannya kosong. Mereka melihat sekali lagi, lalu berjalan lurus menyeberang. Tidak berlari!",
       "Di warung Tono berkata, 'Kita berhenti, melihat, mendengar, lalu berjalan!'"
@@ -37,16 +37,16 @@
       "id": "Tirukan suara motor dan genggam tangan anak dengan lembut."
     },
     {
-      "en": "Turn your head slowly one way, then the other, and cup a hand to your ear.",
-      "id": "Tolehkan kepala pelan ke satu arah, lalu ke arah lain, dan dekatkan tangan ke telinga."
+      "en": "Turn your head slowly right, then left, then right again, and cup a hand to your ear.",
+      "id": "Tolehkan kepala pelan ke kanan, ke kiri, lalu ke kanan lagi, dan dekatkan tangan ke telinga."
     },
     {
       "en": "Hold up a hand for 'wait', then sweep it past for 'whoosh'.",
       "id": "Angkat tangan untuk 'tunggu', lalu ayunkan untuk 'wus'."
     },
     {
-      "en": "Look both ways once more before you 'walk' your fingers across.",
-      "id": "Lihat ke dua arah sekali lagi sebelum jari 'berjalan' menyeberang."
+      "en": "Look right, left and right once more before you 'walk' your fingers across.",
+      "id": "Lihat kanan, kiri, dan kanan sekali lagi sebelum jari 'berjalan' menyeberang."
     },
     {
       "en": "Say the four words together, counting them on your fingers.",
@@ -244,7 +244,7 @@
   ],
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -253,7 +253,10 @@
       "question-answerability",
       "safety",
       "fact-claims-listed"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",
