@@ -22,6 +22,7 @@ export async function buildExport(auth: Auth) {
           observations: true,
           recommendations: true,
           readingEvents: true,
+          unitAttempts: { orderBy: { createdAt: 'asc' } },
           shelf: true,
         },
       },
@@ -41,7 +42,7 @@ export async function buildExport(auth: Auth) {
   };
 }
 
-/** Hard delete. Cascades remove family, children, attempts, observations, logs and sessions. */
+/** Hard delete. Cascades remove family, children, attempts (incl. unit attempts), observations, logs and sessions. */
 export async function deleteFamily(auth: Auth): Promise<void> {
   await prisma.parentUser.delete({ where: { id: auth.user.id } });
   const u = auth.user.id;

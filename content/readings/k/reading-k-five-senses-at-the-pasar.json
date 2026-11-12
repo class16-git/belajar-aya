@@ -1,0 +1,232 @@
+{
+  "id": "reading-k-five-senses-at-the-pasar",
+  "version": "1.0.0",
+  "level": "k",
+  "readingLevel": "emergent",
+  "genre": "nonfiction",
+  "mode": "shared",
+  "title": {
+    "en": "My five senses at the pasar",
+    "id": "Lima indraku di pasar"
+  },
+  "text": {
+    "en": [
+      "We have five senses. They help us learn about the world. Let's take them to the pasar!",
+      "I see with my eyes. I see red chillies and green kangkung.",
+      "I hear with my ears. I hear a seller call, 'Fresh fish! Fresh fish!'",
+      "I smell with my nose. I smell sweet, ripe mangoes.",
+      "I touch with my hands. The rambutan feels hairy and soft.",
+      "I taste with my tongue. Ibu buys me a kue lapis. Mmm, sweet!"
+    ],
+    "id": [
+      "Kita punya lima indra. Indra membantu kita mengenal dunia. Ayo bawa semuanya ke pasar!",
+      "Aku melihat dengan mata. Aku melihat cabai merah dan kangkung hijau.",
+      "Aku mendengar dengan telinga. Aku mendengar penjual berseru, 'Ikan segar! Ikan segar!'",
+      "Aku mencium dengan hidung. Aku mencium mangga matang yang harum.",
+      "Aku meraba dengan tangan. Rambutan terasa berbulu dan lembut.",
+      "Aku mengecap dengan lidah. Ibu membelikanku kue lapis. Hmm, manis!"
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Names the five senses and the body part used for each.",
+      "id": "Menyebut lima indra dan bagian tubuh untuk masing-masing."
+    },
+    {
+      "en": "Reads a simple pattern text with support.",
+      "id": "Membaca teks berpola sederhana dengan bantuan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "senses",
+        "id": "indra"
+      },
+      "meaning": {
+        "en": "the ways our body notices the world: seeing, hearing, smelling, touching and tasting",
+        "id": "cara tubuh mengenal dunia: melihat, mendengar, mencium, meraba, dan mengecap"
+      }
+    },
+    {
+      "word": {
+        "en": "ripe",
+        "id": "matang"
+      },
+      "meaning": {
+        "en": "ready to eat",
+        "id": "siap dimakan"
+      }
+    },
+    {
+      "word": {
+        "en": "fresh",
+        "id": "segar"
+      },
+      "meaning": {
+        "en": "new and not old or stale",
+        "id": "baru, tidak basi"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What do we hear with?",
+        "id": "Kita mendengar dengan apa?"
+      },
+      "choices": {
+        "en": [
+          "our ears",
+          "our eyes",
+          "our nose"
+        ],
+        "id": [
+          "telinga",
+          "mata",
+          "hidung"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "How did the rambutan feel?",
+        "id": "Bagaimana rasanya rambutan saat diraba?"
+      },
+      "choices": {
+        "en": [
+          "hairy and soft",
+          "hard and cold",
+          "wet and sticky"
+        ],
+        "id": [
+          "berbulu dan lembut",
+          "keras dan dingin",
+          "basah dan lengket"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is this book mostly about?",
+        "id": "Buku ini terutama tentang apa?"
+      },
+      "choices": {
+        "en": [
+          "using our five senses at the market",
+          "how to cook fish",
+          "buying new shoes"
+        ],
+        "id": [
+          "memakai lima indra di pasar",
+          "cara memasak ikan",
+          "membeli sepatu baru"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "If you closed your eyes at the pasar, how could you tell a motorbike was coming?",
+        "id": "Jika kamu menutup mata di pasar, bagaimana kamu tahu ada motor datang?"
+      },
+      "choices": {
+        "en": [
+          "by listening for its engine with your ears",
+          "by tasting the air",
+          "by touching a mango"
+        ],
+        "id": [
+          "dengan mendengarkan suara mesinnya",
+          "dengan mengecap udara",
+          "dengan meraba mangga"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Our senses collect information about the world around us.",
+        "id": "Indra mengumpulkan informasi tentang dunia di sekitar kita."
+      }
+    },
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "A traditional Indonesian market is full of sights, sounds and smells.",
+        "id": "Pasar tradisional penuh warna, suara, dan aroma."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which sense do you use most at the market?",
+      "id": "Indra mana yang paling sering kamu pakai di pasar?"
+    },
+    {
+      "en": "What is your favourite smell?",
+      "id": "Bau apa yang paling kamu suka?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "At home, play a senses game: your child closes their eyes and guesses three kitchen things by smell (a lime, a slice of ginger, a cup of tea) and by touch. Only taste foods the adult offers.",
+    "id": "Di rumah, mainkan permainan indra: anak menutup mata dan menebak tiga benda dapur lewat bau (jeruk nipis, irisan jahe, secangkir teh) dan rabaan. Hanya cicipi makanan yang diberikan orang dewasa."
+  },
+  "factChecks": [
+    {
+      "claim": "People are usually taught to have five senses: sight, hearing, smell, touch and taste.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "We see with our eyes, hear with our ears, smell with our nose, touch with our skin and taste with our tongue.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Check for food allergies before tasting, and let the adult prepare and slice any food.",
+      "id": "Periksa alergi makanan sebelum mencicipi, dan biarkan orang dewasa yang menyiapkan dan mengiris makanan."
+    },
+    {
+      "en": "Keep hot tea out of reach; let it cool before your child smells it.",
+      "id": "Jauhkan teh panas dari jangkauan; biarkan dingin dulu sebelum dicium anak."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

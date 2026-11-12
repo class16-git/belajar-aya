@@ -1,0 +1,236 @@
+{
+  "id": "reading-k-who-lives-in-the-mango-tree",
+  "version": "1.0.0",
+  "level": "k",
+  "readingLevel": "emergent",
+  "genre": "nonfiction",
+  "mode": "shared",
+  "title": {
+    "en": "Who lives in the mango tree?",
+    "id": "Siapa yang tinggal di pohon mangga?"
+  },
+  "text": {
+    "en": [
+      "A mango tree is a home for many animals. Let's look!",
+      "High on a branch, a bird sits on its nest. It keeps its eggs warm.",
+      "On a leaf, a caterpillar munches. Munch, munch!",
+      "Red weaver ants join leaves together to make a nest. Their bite stings, so we only look.",
+      "At night, a fruit bat flies to the tree to eat ripe fruit.",
+      "One tree, many homes. Trees are important for animals!"
+    ],
+    "id": [
+      "Pohon mangga adalah rumah bagi banyak hewan. Ayo kita lihat!",
+      "Tinggi di dahan, seekor burung duduk di sarangnya. Ia menghangatkan telurnya.",
+      "Di sehelai daun, seekor ulat sedang makan. Nyam, nyam!",
+      "Semut rangrang merekatkan daun-daun menjadi sarang. Gigitannya perih, jadi kita lihat saja.",
+      "Malam hari, kelelawar buah terbang ke pohon untuk makan buah yang matang.",
+      "Satu pohon, banyak rumah. Pohon penting bagi hewan!"
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a simple information text and names animals that use a tree.",
+      "id": "Membaca teks informasi sederhana dan menyebut hewan yang memakai pohon."
+    },
+    {
+      "en": "Explains that a tree gives animals food and shelter.",
+      "id": "Menjelaskan bahwa pohon memberi hewan makanan dan tempat tinggal."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "nest",
+        "id": "sarang"
+      },
+      "meaning": {
+        "en": "a home an animal makes",
+        "id": "rumah yang dibuat hewan"
+      }
+    },
+    {
+      "word": {
+        "en": "branch",
+        "id": "dahan"
+      },
+      "meaning": {
+        "en": "an arm of a tree that grows out from the trunk",
+        "id": "bagian pohon yang tumbuh dari batang"
+      }
+    },
+    {
+      "word": {
+        "en": "weaver ant",
+        "id": "semut rangrang"
+      },
+      "meaning": {
+        "en": "a red ant that makes nests from leaves",
+        "id": "semut merah yang membuat sarang dari daun"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Who keeps its eggs warm in a nest?",
+        "id": "Siapa yang menghangatkan telurnya di sarang?"
+      },
+      "choices": {
+        "en": [
+          "the bird",
+          "the bat",
+          "the caterpillar"
+        ],
+        "id": [
+          "burung",
+          "kelelawar",
+          "ulat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "When does the fruit bat come to the tree?",
+        "id": "Kapan kelelawar buah datang ke pohon?"
+      },
+      "choices": {
+        "en": [
+          "at night",
+          "in the morning",
+          "at lunchtime"
+        ],
+        "id": [
+          "malam hari",
+          "pagi hari",
+          "siang hari"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "How many different kinds of animals did we meet in the tree?",
+        "id": "Berapa jenis hewan yang kita temui di pohon?"
+      },
+      "choices": {
+        "en": [
+          "4 kinds",
+          "3 kinds",
+          "6 kinds"
+        ],
+        "id": [
+          "4 jenis",
+          "3 jenis",
+          "6 jenis"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5,
+      "check": {
+        "expression": "1 + 1 + 1 + 1",
+        "result": "4"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "What would happen to these animals if the tree were cut down?",
+        "id": "Apa yang terjadi pada hewan-hewan ini jika pohonnya ditebang?"
+      },
+      "choices": {
+        "en": [
+          "they would lose their homes and food",
+          "they would get bigger",
+          "nothing would change for them"
+        ],
+        "id": [
+          "mereka kehilangan rumah dan makanan",
+          "mereka menjadi lebih besar",
+          "tidak ada yang berubah bagi mereka"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Trees give animals food and shelter.",
+        "id": "Pohon memberi hewan makanan dan tempat berlindung."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Keeping trees protects animal homes.",
+        "id": "Menjaga pohon berarti melindungi rumah hewan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which animal would you like to watch in a tree?",
+      "id": "Hewan mana yang ingin kamu amati di pohon?"
+    },
+    {
+      "en": "Why do we only look at weaver ants?",
+      "id": "Mengapa kita hanya melihat semut rangrang?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Visit a tree near your home and look for signs of animals: nests, nibbled leaves, ant trails. Draw what you find. Look only; do not touch ants or nests.",
+    "id": "Kunjungi pohon di dekat rumah dan cari tanda-tanda hewan: sarang, daun yang tergigit, jejak semut. Gambar apa yang kamu temukan. Lihat saja; jangan sentuh semut atau sarang."
+  },
+  "factChecks": [
+    {
+      "claim": "Weaver ants make nests by joining leaves together and are common in mango trees.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Fruit bats feed on ripe fruit at night.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Caterpillars eat leaves.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Weaver ants bite and sting: look from a distance. Do not climb the tree, and wash hands after the walk.",
+      "id": "Semut rangrang menggigit dan perih: lihat dari jauh. Jangan memanjat pohon, dan cuci tangan setelah berjalan-jalan."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

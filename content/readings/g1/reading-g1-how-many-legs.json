@@ -1,0 +1,240 @@
+{
+  "id": "reading-g1-how-many-legs",
+  "version": "1.0.0",
+  "level": "g1",
+  "readingLevel": "early",
+  "genre": "nonfiction",
+  "mode": "shared",
+  "title": {
+    "en": "How many legs?",
+    "id": "Berapa jumlah kakinya?"
+  },
+  "text": {
+    "en": [
+      "Animals have different numbers of legs. Let's count them!",
+      "A chicken has 2 legs. People have 2 legs too.",
+      "A cat has 4 legs. So do goats and buffaloes.",
+      "An ant has 6 legs. Every insect has 6 legs.",
+      "A spider has 8 legs. That is why a spider is not an insect!",
+      "A snake has no legs at all. It slides along on its belly."
+    ],
+    "id": [
+      "Hewan punya jumlah kaki yang berbeda-beda. Ayo kita hitung!",
+      "Ayam punya 2 kaki. Manusia juga punya 2 kaki.",
+      "Kucing punya 4 kaki. Begitu juga kambing dan kerbau.",
+      "Semut punya 6 kaki. Semua serangga punya 6 kaki.",
+      "Laba-laba punya 8 kaki. Itulah sebabnya laba-laba bukan serangga!",
+      "Ular tidak punya kaki sama sekali. Ia meluncur dengan perutnya."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a short information text and recalls facts about animal legs.",
+      "id": "Membaca teks informasi pendek dan mengingat fakta tentang kaki hewan."
+    },
+    {
+      "en": "Uses addition to count legs on more than one animal.",
+      "id": "Memakai penjumlahan untuk menghitung kaki lebih dari satu hewan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "insect",
+        "id": "serangga"
+      },
+      "meaning": {
+        "en": "a small animal with 6 legs",
+        "id": "hewan kecil berkaki 6"
+      }
+    },
+    {
+      "word": {
+        "en": "spider",
+        "id": "laba-laba"
+      },
+      "meaning": {
+        "en": "a small animal with 8 legs that spins webs",
+        "id": "hewan kecil berkaki 8 yang membuat jaring"
+      }
+    },
+    {
+      "word": {
+        "en": "belly",
+        "id": "perut"
+      },
+      "meaning": {
+        "en": "the front, lower part of the body",
+        "id": "bagian bawah depan tubuh"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "How many legs does an ant have?",
+        "id": "Berapa kaki semut?"
+      },
+      "choices": {
+        "en": [
+          "6 legs",
+          "8 legs",
+          "4 legs"
+        ],
+        "id": [
+          "6 kaki",
+          "8 kaki",
+          "4 kaki"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "Why is a spider not an insect?",
+        "id": "Mengapa laba-laba bukan serangga?"
+      },
+      "choices": {
+        "en": [
+          "it has 8 legs, not 6",
+          "it is too small",
+          "it lives in a web"
+        ],
+        "id": [
+          "kakinya 8, bukan 6",
+          "ia terlalu kecil",
+          "ia tinggal di jaring"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "Two cats are sleeping in the sun. How many legs do they have altogether?",
+        "id": "Dua ekor kucing tidur berjemur. Berapa jumlah kaki mereka semuanya?"
+      },
+      "choices": {
+        "en": [
+          "8 legs",
+          "4 legs",
+          "6 legs"
+        ],
+        "id": [
+          "8 kaki",
+          "4 kaki",
+          "6 kaki"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2,
+      "check": {
+        "expression": "4 + 4",
+        "result": "8"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "A chicken stands next to a goat. How many legs are there in all?",
+        "id": "Seekor ayam berdiri di samping kambing. Berapa jumlah kaki semuanya?"
+      },
+      "choices": {
+        "en": [
+          "6 legs",
+          "2 legs",
+          "8 legs"
+        ],
+        "id": [
+          "6 kaki",
+          "2 kaki",
+          "8 kaki"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2,
+      "check": {
+        "expression": "2 + 4",
+        "result": "6"
+      }
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Counting legs is one way scientists sort animals into groups.",
+        "id": "Menghitung kaki adalah salah satu cara ilmuwan mengelompokkan hewan."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Adding the legs of several animals practises addition.",
+        "id": "Menjumlahkan kaki beberapa hewan melatih penjumlahan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which animal in our house or garden has the most legs?",
+      "id": "Hewan apa di rumah atau kebun kita yang kakinya paling banyak?"
+    },
+    {
+      "en": "Can you think of another animal with no legs?",
+      "id": "Bisakah kamu menyebut hewan lain yang tidak berkaki?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Go on a leg hunt in the garden or in a picture book. Draw each animal you find and write how many legs it has. Make a tally: 0, 2, 4, 6 or 8 legs. Look at spiders and ants without touching.",
+    "id": "Lakukan perburuan kaki di kebun atau di buku bergambar. Gambar setiap hewan yang kamu temukan dan tulis berapa kakinya. Buat turus: 0, 2, 4, 6, atau 8 kaki. Amati laba-laba dan semut tanpa menyentuhnya."
+  },
+  "factChecks": [
+    {
+      "claim": "Insects have 6 legs.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Spiders have 8 legs and are not insects.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Chickens have 2 legs; cats, goats and buffaloes have 4; snakes have none.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Some ants bite and some spiders can bite: look closely, but do not touch.",
+      "id": "Beberapa semut dan laba-laba bisa menggigit: amati dari dekat, tetapi jangan disentuh."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}

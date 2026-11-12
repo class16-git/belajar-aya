@@ -1,0 +1,433 @@
+{
+  "id": "unit-g1-math-subtraction-within-20",
+  "version": "1.0.0",
+  "level": "g1",
+  "framework": "math",
+  "strand": "addition_subtraction",
+  "title": {
+    "en": "Subtraction within 20: count back, go through ten, think addition",
+    "id": "Pengurangan sampai 20: hitung mundur, lewat sepuluh, pikirkan penjumlahan"
+  },
+  "prerequisites": [
+    "unit-g1-math-make-ten-addition",
+    "unit-k-math-subtraction-stories-within-10"
+  ],
+  "objective": {
+    "en": "Subtract within 20 by choosing a strategy: count back for small numbers, subtract through ten, or use a known addition bond, and check with a fact family.",
+    "id": "Mengurangkan sampai 20 dengan memilih strategi: hitung mundur untuk bilangan kecil, mengurangkan lewat sepuluh, atau memakai ikatan penjumlahan yang sudah diketahui, lalu memeriksa dengan keluarga fakta."
+  },
+  "rationale": {
+    "en": "Counting back one at a time works for 12 - 2 but is slow and error-prone for 15 - 8. Breaking the number to reach ten, the mirror of make-ten addition, and thinking of the matching addition build fluent facts that the column method later relies on.",
+    "id": "Menghitung mundur satu per satu cocok untuk 12 - 2 tetapi lambat dan mudah salah untuk 15 - 8. Memecah bilangan untuk mencapai sepuluh, kebalikan dari penjumlahan membuat sepuluh, dan memikirkan penjumlahan pasangannya membangun fakta yang lancar yang nanti dibutuhkan cara bersusun."
+  },
+  "outcomes": [
+    {
+      "en": "Counts back correctly for subtracting 1, 2 or 3.",
+      "id": "Menghitung mundur dengan benar untuk mengurangkan 1, 2, atau 3."
+    },
+    {
+      "en": "Subtracts through ten by splitting the number taken away.",
+      "id": "Mengurangkan lewat sepuluh dengan memecah bilangan pengurang."
+    },
+    {
+      "en": "Uses an addition fact to find a difference and writes the fact family.",
+      "id": "Memakai fakta penjumlahan untuk mencari selisih dan menulis keluarga faktanya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show 14 - 6 on two ten-frames by taking 4 to reach 10 and then 2 more.",
+      "id": "Aku bisa menunjukkan 14 - 6 di dua kerangka sepuluh dengan mengambil 4 untuk sampai ke 10 lalu 2 lagi."
+    },
+    {
+      "en": "I can say which strategy I chose and why.",
+      "id": "Aku bisa menyebut strategi yang kupilih dan alasannya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use two egg-carton ten-frames: fill the first completely before using the second, so teen numbers show as 10 and some more.",
+      "id": "Pakai dua kerangka sepuluh dari wadah telur: isi penuh yang pertama sebelum memakai yang kedua, sehingga bilangan belasan terlihat sebagai 10 dan sisanya."
+    },
+    {
+      "en": "When counting back, the first number said is one less than the start; tap the table for each number said.",
+      "id": "Saat menghitung mundur, bilangan pertama yang diucapkan adalah satu kurang dari bilangan awal; ketuk meja untuk setiap bilangan yang diucapkan."
+    },
+    {
+      "en": "Ask 'which way is quickest for this one?'; there is no single right strategy.",
+      "id": "Tanyakan 'cara mana yang paling cepat untuk soal ini?'; tidak ada satu strategi yang paling benar."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Taking away 1, 2 or 3? Count back.",
+      "id": "Mengambil 1, 2, atau 3? Hitung mundur."
+    },
+    {
+      "en": "Taking away more? Take some to get to 10, then take the rest. Or think: what do I add to get there?",
+      "id": "Mengambil lebih banyak? Ambil sebagian sampai ke 10, lalu ambil sisanya. Atau pikirkan: berapa yang harus kutambah untuk sampai ke sana?"
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Show 14 with a full egg-carton ten-frame and 4 caps in the second. To take away 6, first remove the 4 loose caps (now 10), then 2 caps from the full frame: 8 are left.",
+        "id": "Tunjukkan 14 dengan satu kerangka sepuluh penuh dan 4 tutup botol di kerangka kedua. Untuk mengambil 6, ambil dulu 4 tutup lepas (sekarang 10), lalu 2 tutup dari kerangka penuh: tersisa 8."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "On a number line from 0 to 20, draw a jump back from 14 to 10 labelled 4 and a jump from 10 to 8 labelled 2.",
+        "id": "Pada garis bilangan 0 sampai 20, gambar lompatan mundur dari 14 ke 10 berlabel 4 dan lompatan dari 10 ke 8 berlabel 2."
+      },
+      {
+        "en": "Draw a number bond: 16 at the top, 9 as one part; think 9 + ? = 16 and fill in 7.",
+        "id": "Gambar ikatan bilangan: 16 di atas, 9 sebagai satu bagian; pikirkan 9 + ? = 16 dan isi 7."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the steps: 14 - 6 = 14 - 4 - 2 = 10 - 2 = 8. Write the fact family 5 + 6 = 11, 6 + 5 = 11, 11 - 5 = 6, 11 - 6 = 5.",
+        "id": "Tulis langkahnya: 14 - 6 = 14 - 4 - 2 = 10 - 2 = 8. Tulis keluarga fakta 5 + 6 = 11, 6 + 5 = 11, 11 - 5 = 6, 11 - 6 = 5."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Two egg cartons cut down to 10 cups each (the adult cuts), and 20 large bottle caps",
+      "id": "Dua wadah telur yang dipotong menjadi 10 lubang masing-masing (dipotong orang dewasa), dan 20 tutup botol besar"
+    },
+    {
+      "en": "A number line from 0 to 20 on a paper strip, paper, pencils",
+      "id": "Garis bilangan 0 sampai 20 di pita kertas, kertas, pensil"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Cut the egg cartons and draw the number line; write a few subtraction cards, such as 12 - 3, 15 - 7 and 17 - 9.",
+      "id": "Potong wadah telur dan gambar garis bilangan; tulis beberapa kartu pengurangan, seperti 12 - 3, 15 - 7, dan 17 - 9."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Count back: 12 - 3. Say the start silently, then count three taps: 11, 10, 9. So 12 - 3 = 9.",
+      "id": "Hitung mundur: 12 - 3. Ucapkan bilangan awal dalam hati, lalu hitung tiga ketukan: 11, 10, 9. Jadi 12 - 3 = 9."
+    },
+    {
+      "en": "Through ten: 14 - 6. Split 6 into 4 and 2. 14 - 4 = 10, then 10 - 2 = 8.",
+      "id": "Lewat sepuluh: 14 - 6. Pecah 6 menjadi 4 dan 2. 14 - 4 = 10, lalu 10 - 2 = 8."
+    },
+    {
+      "en": "Think addition: 16 - 9. Ask: 9 and what make 16? 9 + 1 = 10 and 10 + 6 = 16, so the missing part is 7. 16 - 9 = 7.",
+      "id": "Pikirkan penjumlahan: 16 - 9. Tanyakan: 9 dan berapa menjadi 16? 9 + 1 = 10 dan 10 + 6 = 16, jadi bagian yang hilang 7. 16 - 9 = 7."
+    },
+    {
+      "en": "Story: Pak Joko's angkot has 18 passengers and 9 get off at the pasar. Double 9 is 18, so 9 are still riding: 18 - 9 = 9.",
+      "id": "Cerita: angkot Pak Joko membawa 18 penumpang dan 9 turun di pasar. Dua kali 9 adalah 18, jadi masih 9 yang naik: 18 - 9 = 9."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Strategy sort: put cards like 13 - 2, 15 - 7 and 19 - 10 into three piles (count back, through ten, think addition) and solve one from each pile.",
+      "id": "Memilah strategi: taruh kartu seperti 13 - 2, 15 - 7, dan 19 - 10 ke tiga tumpukan (hitung mundur, lewat sepuluh, pikirkan penjumlahan) dan selesaikan satu dari setiap tumpukan."
+    },
+    {
+      "en": "Kitchen story: count the eggs in the tray, use some for cooking, and work out how many are left without recounting.",
+      "id": "Cerita dapur: hitung telur di wadah, pakai sebagian untuk memasak, dan hitung sisanya tanpa menghitung ulang."
+    },
+    {
+      "en": "Make a fact family house: write three numbers on the roof (for example 7, 6, 13) and the four facts in the windows.",
+      "id": "Buat rumah keluarga fakta: tulis tiga bilangan di atap (misalnya 7, 6, 13) dan empat fakta di jendelanya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "13 - 4 = ?",
+        "id": "13 - 4 = ?"
+      },
+      "choices": {
+        "en": [
+          "9",
+          "10",
+          "17"
+        ],
+        "id": [
+          "9",
+          "10",
+          "17"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Split 4 into 3 and 1: 13 - 3 = 10, and 10 - 1 = 9.",
+        "id": "Pecah 4 menjadi 3 dan 1: 13 - 3 = 10, dan 10 - 1 = 9."
+      },
+      "check": {
+        "expression": "13 - 4",
+        "result": "9"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_START_NUMBER",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Bu Sari had 15 eggs. She used 7 to make martabak. How many eggs are left?",
+        "id": "Bu Sari punya 15 telur. Ia memakai 7 untuk membuat martabak. Berapa telur yang tersisa?"
+      },
+      "choices": {
+        "en": [
+          "8 eggs",
+          "12 eggs",
+          "22 eggs"
+        ],
+        "id": [
+          "8 telur",
+          "12 telur",
+          "22 telur"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "15 - 5 = 10, then take the other 2: 10 - 2 = 8. Or think 7 + 8 = 15.",
+        "id": "15 - 5 = 10, lalu ambil 2 lainnya: 10 - 2 = 8. Atau pikirkan 7 + 8 = 15."
+      },
+      "check": {
+        "expression": "15 - 7",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_DIGITS_REVERSED",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "17 - ? = 9",
+        "id": "17 - ? = 9"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "7",
+          "26"
+        ],
+        "id": [
+          "8",
+          "7",
+          "26"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Think 9 + ? = 17: 9 + 1 = 10 and 10 + 7 = 17, so 1 + 7 = 8. Check: 17 - 8 = 9.",
+        "id": "Pikirkan 9 + ? = 17: 9 + 1 = 10 dan 10 + 7 = 17, jadi 1 + 7 = 8. Periksa: 17 - 8 = 9."
+      },
+      "check": {
+        "expression": "17 - 9",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "LOSES_ONE_IN_BRIDGE",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Siti has 11 coloured pencils and Rudi has 6. How many more pencils does Siti have?",
+        "id": "Siti punya 11 pensil warna dan Rudi punya 6. Berapa pensil lebih banyak yang dimiliki Siti?"
+      },
+      "choices": {
+        "en": [
+          "5 more",
+          "17 more",
+          "6 more"
+        ],
+        "id": [
+          "5 lebih banyak",
+          "17 lebih banyak",
+          "6 lebih banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Think 6 + ? = 11: 6 + 4 = 10, then 1 more makes 11, so 4 + 1 = 5. 11 - 6 = 5.",
+        "id": "Pikirkan 6 + ? = 11: 6 + 4 = 10, lalu 1 lagi menjadi 11, jadi 4 + 1 = 5. 11 - 6 = 5."
+      },
+      "check": {
+        "expression": "11 - 6",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "GIVES_SMALLER_GROUP"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "14 - 8 = ? Which answer, with its reason, is correct?",
+        "id": "14 - 8 = ? Jawaban mana, beserta alasannya, yang benar?"
+      },
+      "choices": {
+        "en": [
+          "6, because 8 + 6 = 14",
+          "5, because 8 + 5 = 14",
+          "22, because 14 + 8 = 22"
+        ],
+        "id": [
+          "6, karena 8 + 6 = 14",
+          "5, karena 8 + 5 = 14",
+          "22, karena 14 + 8 = 22"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "8 + 2 = 10 and 10 + 4 = 14, so 8 + 6 = 14 and 14 - 8 = 6. 8 + 5 is only 13.",
+        "id": "8 + 2 = 10 dan 10 + 4 = 14, jadi 8 + 6 = 14 dan 14 - 8 = 6. 8 + 5 hanya 13."
+      },
+      "check": {
+        "expression": "14 - 8",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "LOSES_ONE_IN_BRIDGE",
+        "2": "ADDS_INSTEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "COUNTS_START_NUMBER",
+      "description": {
+        "en": "Says the starting number as the first count when counting back, so the answer is one too big.",
+        "id": "Mengucapkan bilangan awal sebagai hitungan pertama saat menghitung mundur, sehingga jawabannya kelebihan satu."
+      },
+      "remediation": {
+        "en": "Hop back on the floor number line: the first hop lands on the number before the start; count hops, not numbers said.",
+        "id": "Lompat mundur di garis bilangan di lantai: lompatan pertama mendarat di bilangan sebelum awal; hitung lompatan, bukan bilangan yang diucapkan."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the two numbers instead of finding the difference.",
+        "id": "Menjumlahkan kedua bilangan, bukan mencari selisih."
+      },
+      "remediation": {
+        "en": "Act the story with caps: does the pile get bigger or smaller? Choose the sign after acting.",
+        "id": "Peragakan cerita dengan tutup botol: apakah tumpukan bertambah atau berkurang? Pilih tanda setelah memeragakan."
+      }
+    },
+    {
+      "code": "SUBTRACTS_DIGITS_REVERSED",
+      "description": {
+        "en": "Subtracts the smaller ones digit from the larger (7 - 5 = 2) and keeps the ten, giving 12.",
+        "id": "Mengurangkan angka satuan yang lebih kecil dari yang lebih besar (7 - 5 = 2) dan mempertahankan puluhan, sehingga mendapat 12."
+      },
+      "remediation": {
+        "en": "Build 15 on the two ten-frames and physically remove 7 caps; there are not 7 loose caps, so a full frame must be used.",
+        "id": "Susun 15 di dua kerangka sepuluh dan ambil 7 tutup sungguhan; tidak ada 7 tutup lepas, jadi kerangka penuh harus dipakai."
+      }
+    },
+    {
+      "code": "LOSES_ONE_IN_BRIDGE",
+      "description": {
+        "en": "Forgets one of the two jumps when going through ten, so the answer is one off.",
+        "id": "Melupakan salah satu dari dua lompatan saat lewat sepuluh, sehingga jawabannya selisih satu."
+      },
+      "remediation": {
+        "en": "Draw both jumps on the number line and write the size of each jump above it before adding them.",
+        "id": "Gambar kedua lompatan di garis bilangan dan tulis besar setiap lompatan di atasnya sebelum menjumlahkannya."
+      }
+    },
+    {
+      "code": "GIVES_SMALLER_GROUP",
+      "description": {
+        "en": "In a comparing problem, answers with the smaller amount instead of the difference.",
+        "id": "Dalam soal membandingkan, menjawab dengan jumlah yang lebih kecil, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Line the two groups of pencils up in pairs and count only the pencils without a partner.",
+        "id": "Jajarkan dua kelompok pensil berpasangan dan hitung hanya pensil yang tidak punya pasangan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Find all the subtraction facts within 20 that have the answer 7 (for example 15 - 8, 13 - 6) and look for a pattern in the pairs.",
+      "id": "Cari semua fakta pengurangan sampai 20 yang hasilnya 7 (misalnya 15 - 8, 13 - 6) dan cari pola pada pasangannya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Large caps in egg cartons can be felt; children who find writing hard can say the steps while the adult writes them.",
+      "id": "Tutup botol besar di wadah telur bisa diraba; anak yang kesulitan menulis bisa mengucapkan langkahnya sementara orang dewasa menuliskannya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use large bottle caps and keep them away from younger siblings; the adult cuts the egg cartons.",
+        "id": "Pakai tutup botol besar dan jauhkan dari adik yang lebih kecil; orang dewasa memotong wadah telur."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      2,
+      7,
+      14
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves five new subtraction facts within 20, choosing and naming a sensible strategy for each, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan lima fakta pengurangan baru sampai 20, memilih dan menyebut strategi yang masuk akal untuk masing-masing, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

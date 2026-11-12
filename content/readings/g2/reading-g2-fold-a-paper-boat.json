@@ -1,0 +1,256 @@
+{
+  "id": "reading-g2-fold-a-paper-boat",
+  "version": "1.0.0",
+  "level": "g2",
+  "readingLevel": "early",
+  "genre": "procedural",
+  "mode": "independent",
+  "title": {
+    "en": "How to fold a paper boat",
+    "id": "Cara melipat perahu kertas"
+  },
+  "text": {
+    "en": [
+      "You will need one rectangle of paper, such as a sheet of A4 or a page of old newspaper, and a flat table.",
+      "Step 1: Fold the paper in half from top to bottom. Keep the fold at the top.",
+      "Step 2: Fold the two top corners down so they meet in the middle. Now it looks like a house with a roof.",
+      "Step 3: Fold the bottom strip at the front up over the roof. Turn the paper over and fold the other strip up too. You have made a paper hat!",
+      "Step 4: Open the hat from the bottom and press it flat the other way, so it becomes a diamond.",
+      "Step 5: Fold the bottom corner of the front up to the top. Turn it over and do the same on the back. Now you have a triangle.",
+      "Step 6: Open the triangle from the bottom and press it flat into a diamond again.",
+      "Step 7: Hold the two top corners and gently pull them apart. The boat pops open! Press the bottom flat so it can sit up.",
+      "Tip: Press every fold hard with your fingernail. Sharp folds help the boat keep its shape. Paper soaks up water, so your boat will float for a while and then go soft."
+    ],
+    "id": [
+      "Kamu perlu selembar kertas persegi panjang, misalnya kertas A4 atau selembar koran bekas, dan meja yang datar.",
+      "Langkah 1: Lipat kertas menjadi dua dari atas ke bawah. Biarkan lipatannya di atas.",
+      "Langkah 2: Lipat kedua sudut atas ke bawah sampai bertemu di tengah. Sekarang bentuknya seperti rumah beratap.",
+      "Langkah 3: Lipat pita kertas bagian bawah di depan ke atas menutupi atap. Balik kertas dan lipat pita yang lain ke atas juga. Kamu sudah membuat topi kertas!",
+      "Langkah 4: Buka topi dari bawah dan tekan rata ke arah lain sehingga menjadi bentuk belah ketupat.",
+      "Langkah 5: Lipat sudut bawah bagian depan ke atas sampai ujung. Balik dan lakukan hal yang sama di belakang. Sekarang bentuknya segitiga.",
+      "Langkah 6: Buka segitiga dari bawah dan tekan rata menjadi belah ketupat lagi.",
+      "Langkah 7: Pegang kedua sudut atas dan tarik pelan ke arah luar. Perahunya terbuka! Ratakan bagian bawah supaya bisa berdiri.",
+      "Tips: Tekan setiap lipatan kuat-kuat dengan kuku. Lipatan yang tegas membantu perahu tetap berbentuk. Kertas menyerap air, jadi perahumu akan mengapung sebentar lalu menjadi lembek."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Follows written steps in order to make something.",
+      "id": "Mengikuti langkah tertulis secara berurutan untuk membuat sesuatu."
+    },
+    {
+      "en": "Uses sequence words and shape words (triangle, diamond) while reading.",
+      "id": "Memakai kata urutan dan kata bentuk (segitiga, belah ketupat) saat membaca."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "fold",
+        "id": "lipatan"
+      },
+      "meaning": {
+        "en": "a line where paper has been bent over",
+        "id": "garis tempat kertas ditekuk"
+      }
+    },
+    {
+      "word": {
+        "en": "diamond",
+        "id": "belah ketupat"
+      },
+      "meaning": {
+        "en": "a shape with four equal sides that stands on a corner",
+        "id": "bentuk bersisi empat sama panjang yang berdiri di sudutnya"
+      }
+    },
+    {
+      "word": {
+        "en": "soak up",
+        "id": "menyerap"
+      },
+      "meaning": {
+        "en": "take in water like a sponge",
+        "id": "mengisap air seperti spons"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What do you make just before the boat's diamond shape?",
+        "id": "Apa yang kamu buat tepat sebelum bentuk belah ketupat pertama?"
+      },
+      "choices": {
+        "en": [
+          "a paper hat",
+          "a triangle",
+          "a house with a roof"
+        ],
+        "id": [
+          "topi kertas",
+          "segitiga",
+          "rumah beratap"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where should the fold be after Step 1?",
+        "id": "Di mana lipatan seharusnya berada setelah Langkah 1?"
+      },
+      "choices": {
+        "en": [
+          "at the top",
+          "at the bottom",
+          "in the middle of the side"
+        ],
+        "id": [
+          "di atas",
+          "di bawah",
+          "di tengah sisi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why does the tip tell you to press every fold hard?",
+        "id": "Mengapa tipsnya menyuruhmu menekan setiap lipatan kuat-kuat?"
+      },
+      "choices": {
+        "en": [
+          "so the boat holds its shape",
+          "so the paper gets wet faster",
+          "so the boat becomes heavier"
+        ],
+        "id": [
+          "supaya perahu tetap berbentuk",
+          "supaya kertas lebih cepat basah",
+          "supaya perahu menjadi lebih berat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 8
+    },
+    {
+      "id": "q4",
+      "kind": "science",
+      "prompt": {
+        "en": "Why does a paper boat go soft after a while in water?",
+        "id": "Mengapa perahu kertas menjadi lembek setelah beberapa saat di air?"
+      },
+      "choices": {
+        "en": [
+          "the paper soaks up water",
+          "the water gets hot",
+          "the folds turn into plastic"
+        ],
+        "id": [
+          "kertasnya menyerap air",
+          "airnya menjadi panas",
+          "lipatannya berubah menjadi plastik"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 8
+    },
+    {
+      "id": "q5",
+      "kind": "math",
+      "prompt": {
+        "en": "Rina has 7 sheets of paper. She folds 4 boats, one sheet each. How many sheets are left?",
+        "id": "Rina punya 7 lembar kertas. Ia melipat 4 perahu, masing-masing satu lembar. Berapa lembar yang tersisa?"
+      },
+      "choices": {
+        "en": [
+          "3 sheets",
+          "11 sheets",
+          "4 sheets"
+        ],
+        "id": [
+          "3 lembar",
+          "11 lembar",
+          "4 lembar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0,
+      "check": {
+        "expression": "7 - 4",
+        "result": "3"
+      }
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Shape and folding make thin paper strong enough to float as a boat.",
+        "id": "Bentuk dan lipatan membuat kertas tipis cukup kuat untuk mengapung sebagai perahu."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Folding makes triangles and diamonds and shows halves.",
+        "id": "Melipat membentuk segitiga dan belah ketupat serta menunjukkan setengah."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which step was the hardest? How did you work it out?",
+      "id": "Langkah mana yang paling sulit? Bagaimana kamu mengatasinya?"
+    },
+    {
+      "en": "What could you use instead of paper to make a boat last longer?",
+      "id": "Bahan apa selain kertas yang bisa membuat perahu lebih awet?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Fold two boats, one from newspaper and one from thicker paper. Float them side by side in a basin with a few centimetres of water and watch which stays up longer. Empty the basin when you finish.",
+    "id": "Lipat dua perahu, satu dari koran dan satu dari kertas yang lebih tebal. Apungkan berdampingan di baskom berisi air beberapa sentimeter dan amati mana yang lebih lama mengapung. Buang airnya setelah selesai."
+  },
+  "factChecks": [
+    {
+      "claim": "Paper soaks up water and goes soft.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Use only a few centimetres of water with an adult nearby, and empty the basin afterwards.",
+      "id": "Gunakan air hanya beberapa sentimeter dengan orang dewasa di dekatmu, dan buang airnya setelah selesai."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-reading",
+    "createdAt": "2026-11-10"
+  }
+}
