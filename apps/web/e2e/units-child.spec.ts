@@ -78,6 +78,7 @@ for (const vp of [{ name: 'mobile', width: 390, height: 844 }, { name: 'tablet',
     await list.locator(`[data-child-unit="${unitId}"]`).getByRole('link').click();
     await page.waitForURL(`**/learn/unit/${unitId}`);
     await expect(page.getByTestId('unit-child')).toBeVisible();
+    await expect(page.getByTestId('unit-examples')).toBeVisible(); // the material the check asks about is on the child's screen
     // Nothing in the HTML (including the RSC payload) reveals the key before answering.
     const html = await page.content();
     expect(html).not.toContain('distractorMisconceptions');

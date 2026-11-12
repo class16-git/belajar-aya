@@ -1,0 +1,458 @@
+{
+  "id": "unit-g4-montessori-paper-fraction-circles",
+  "version": "1.0.0",
+  "level": "g4",
+  "framework": "montessori",
+  "strand": "mathematics",
+  "title": {
+    "en": "Paper fraction circles: comparing and finding equal fractions",
+    "id": "Lingkaran pecahan dari kertas: membandingkan dan menemukan pecahan senilai"
+  },
+  "prerequisites": [
+    "unit-g3-math-fractions-of-a-whole"
+  ],
+  "objective": {
+    "en": "Make paper fraction circles for halves, thirds, quarters, sixths and eighths, use them to show that more equal parts means smaller parts, find equivalent fractions by laying pieces on top of each other, and add fractions with the same denominator.",
+    "id": "Membuat lingkaran pecahan dari kertas untuk setengah, sepertiga, seperempat, seperenam, dan seperdelapan, memakainya untuk menunjukkan bahwa makin banyak bagian yang sama berarti makin kecil bagiannya, menemukan pecahan senilai dengan menumpuk kepingan, dan menjumlahkan pecahan berpenyebut sama."
+  },
+  "rationale": {
+    "en": "Montessori fraction circles let the child hold a fraction and lay one piece on another, so \"1/3 is bigger than 1/4\" and \"2/6 is the same as 1/3\" become things seen and felt, not rules. Making the circles by folding and measuring also shows why the parts must be equal.",
+    "id": "Lingkaran pecahan Montessori membuat anak bisa memegang pecahan dan menumpuk satu keping di atas keping lain, sehingga \"1/3 lebih besar dari 1/4\" dan \"2/6 sama dengan 1/3\" menjadi hal yang dilihat dan dirasakan, bukan aturan. Membuat lingkaran dengan melipat dan mengukur juga menunjukkan mengapa bagian-bagiannya harus sama besar."
+  },
+  "outcomes": [
+    {
+      "en": "Names each piece as a fraction of the whole circle (1/2, 1/3, 1/4, 1/6, 1/8).",
+      "id": "Menyebut setiap keping sebagai pecahan dari lingkaran utuh (1/2, 1/3, 1/4, 1/6, 1/8)."
+    },
+    {
+      "en": "Compares unit fractions and explains that a larger denominator means smaller pieces.",
+      "id": "Membandingkan pecahan satuan dan menjelaskan bahwa penyebut yang lebih besar berarti kepingan yang lebih kecil."
+    },
+    {
+      "en": "Finds at least four pairs of equivalent fractions by covering one piece with others.",
+      "id": "Menemukan sedikitnya empat pasang pecahan senilai dengan menutup satu keping dengan keping lain."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "The child orders 1/2, 1/3, 1/4, 1/6 and 1/8 from largest to smallest with the pieces and explains why.",
+      "id": "Anak mengurutkan 1/2, 1/3, 1/4, 1/6, dan 1/8 dari yang terbesar ke terkecil dengan kepingan dan menjelaskan alasannya."
+    },
+    {
+      "en": "The child answers the equivalence and comparison items correctly.",
+      "id": "Anak menjawab soal kesetaraan dan perbandingan dengan benar."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Draw six circles of the same size (trace a side plate, about 16 cm across) on six colours of paper or card. One circle stays whole.",
+      "id": "Gambar enam lingkaran yang sama besar (jiplak piring kecil, diameter sekitar 16 cm) di enam warna kertas atau karton. Satu lingkaran tetap utuh."
+    },
+    {
+      "en": "Halves, quarters and eighths come from folding in half again and again. For thirds and sixths, the adult marks lines from the centre with a protractor at 120° (thirds) or 60° (sixths), because folding thirds by eye is not accurate.",
+      "id": "Setengah, seperempat, dan seperdelapan didapat dengan melipat dua berulang-ulang. Untuk sepertiga dan seperenam, orang dewasa menandai garis dari titik pusat dengan busur derajat setiap 120° (sepertiga) atau 60° (seperenam), karena melipat sepertiga dengan perkiraan tidak akurat."
+    },
+    {
+      "en": "The adult cuts the pieces along the lines with scissors. Write the fraction on the back of each piece in pencil.",
+      "id": "Orang dewasa memotong kepingan mengikuti garis dengan gunting. Tulis pecahannya di balik setiap keping dengan pensil."
+    },
+    {
+      "en": "Let the child discover by laying pieces on top of each other before you name any rule.",
+      "id": "Biarkan anak menemukan sendiri dengan menumpuk kepingan sebelum Anda menyebut aturan apa pun."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Build each circle back into a whole. Count the pieces: that is the number under the line.",
+      "id": "Susun setiap lingkaran kembali menjadi utuh. Hitung kepingannya: itulah angka di bawah garis."
+    },
+    {
+      "en": "Lay one piece on top of another. Which is bigger? Why?",
+      "id": "Letakkan satu keping di atas keping lain. Mana yang lebih besar? Mengapa?"
+    },
+    {
+      "en": "Find pieces of one colour that exactly cover a piece of another colour, and write what you found, such as 2/4 = 1/2.",
+      "id": "Temukan kepingan satu warna yang tepat menutupi keping warna lain, lalu tulis temuanmu, misalnya 2/4 = 1/2."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Make and handle the paper fraction circles, laying pieces on top of each other to compare and to find equal amounts.",
+        "id": "Membuat dan memegang lingkaran pecahan dari kertas, menumpuk kepingan untuk membandingkan dan menemukan jumlah yang sama."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw circles split into equal parts, shade fractions, and draw what covers what.",
+        "id": "Menggambar lingkaran yang dibagi menjadi bagian yang sama, mengarsir pecahan, dan menggambar keping mana menutupi keping mana."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write comparisons and equivalences with symbols, for example 1/3 is greater than 1/4, and 2/6 = 1/3.",
+        "id": "Menulis perbandingan dan kesetaraan dengan lambang, misalnya 1/3 lebih besar dari 1/4, dan 2/6 = 1/3."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Six sheets of paper or thin card in different colours",
+      "id": "Enam lembar kertas atau karton tipis berwarna berbeda"
+    },
+    {
+      "en": "A side plate to trace round, a pencil, a ruler and a protractor",
+      "id": "Piring kecil untuk dijiplak, pensil, penggaris, dan busur derajat"
+    },
+    {
+      "en": "Scissors for the adult, and envelopes to keep each circle's pieces",
+      "id": "Gunting untuk orang dewasa, dan amplop untuk menyimpan kepingan setiap lingkaran"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Prepare the thirds and sixths lines in advance with the protractor; fold the halves, quarters and eighths together with the child.",
+      "id": "Siapkan garis sepertiga dan seperenam sebelumnya dengan busur derajat; lipat setengah, seperempat, dan seperdelapan bersama anak."
+    },
+    {
+      "en": "Keep each circle in its own labelled envelope.",
+      "id": "Simpan setiap lingkaran di amplopnya sendiri yang diberi label."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Lay the whole circle down. Fold another circle in half, open it and cut along the fold (adult): \"Two equal pieces. Each one is one half, 1/2.\" Lay the two halves on the whole: they cover it exactly.",
+      "id": "Letakkan lingkaran utuh. Lipat lingkaran lain menjadi dua, buka, dan potong di lipatannya (oleh orang dewasa): \"Dua keping sama besar. Masing-masing setengah, 1/2.\" Letakkan dua keping setengah di atas lingkaran utuh: pas menutupinya."
+    },
+    {
+      "en": "Compare: lay one third on top of one quarter. \"The third sticks out. The whole was cut into 3 pieces instead of 4, so each piece is bigger. 1/3 is bigger than 1/4.\"",
+      "id": "Bandingkan: letakkan sepertiga di atas seperempat. \"Sepertiga lebih menjorok keluar. Lingkaran utuh dipotong menjadi 3 keping, bukan 4, jadi setiap kepingnya lebih besar. 1/3 lebih besar dari 1/4.\""
+    },
+    {
+      "en": "Equivalence: cover one half with quarters: two quarters fit exactly. Write 2/4 = 1/2. Cover one third with sixths: two sixths fit exactly. Write 2/6 = 1/3.",
+      "id": "Kesetaraan: tutup setengah dengan keping seperempat: dua keping seperempat pas. Tulis 2/4 = 1/2. Tutup sepertiga dengan keping seperenam: dua keping seperenam pas. Tulis 2/6 = 1/3."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Line up one piece of each kind from largest to smallest, and write the order in words: 1/2 is greater than 1/3, and so on.",
+      "id": "Jajarkan satu keping dari setiap jenis dari yang terbesar ke terkecil, lalu tulis urutannya dengan kata-kata: 1/2 lebih besar dari 1/3, dan seterusnya."
+    },
+    {
+      "en": "Find every way to cover a half exactly using one kind of piece at a time, and record each one.",
+      "id": "Temukan semua cara untuk tepat menutup setengah dengan satu jenis keping dalam satu waktu, lalu catat masing-masing."
+    },
+    {
+      "en": "Draw a circle for a martabak cut into eight slices, shade 3/8, and write how many eighths are left.",
+      "id": "Gambar lingkaran untuk martabak yang dipotong delapan, arsir 3/8, dan tulis berapa perdelapan yang tersisa."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which piece is bigger: one sixth or one eighth?",
+        "id": "Keping mana yang lebih besar: seperenam atau seperdelapan?"
+      },
+      "choices": {
+        "en": [
+          "One sixth",
+          "One eighth",
+          "They are the same size"
+        ],
+        "id": [
+          "Seperenam",
+          "Seperdelapan",
+          "Sama besar"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A whole cut into 6 equal pieces has bigger pieces than a whole cut into 8.",
+        "id": "Lingkaran utuh yang dipotong menjadi 6 keping sama besar punya keping yang lebih besar daripada yang dipotong menjadi 8."
+      },
+      "distractorMisconceptions": {
+        "1": "LARGER_DENOMINATOR_LARGER",
+        "2": "ALL_UNIT_PIECES_EQUAL"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "How many eighth-pieces exactly cover one quarter?",
+        "id": "Berapa keping seperdelapan yang tepat menutupi seperempat?"
+      },
+      "choices": {
+        "en": [
+          "2",
+          "4",
+          "8"
+        ],
+        "id": [
+          "2",
+          "4",
+          "8"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Folding a quarter in half makes two eighths, so 2 eighths cover 1 quarter: 2/8 = 1/4.",
+        "id": "Melipat seperempat menjadi dua menghasilkan dua perdelapan, jadi 2 keping seperdelapan menutupi 1 keping seperempat: 2/8 = 1/4."
+      },
+      "check": {
+        "expression": "(1/4) / (1/8)",
+        "result": "2"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_DENOMINATORS",
+        "2": "USES_DENOMINATOR_AS_COUNT"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which fraction is the same amount as 1/2?",
+        "id": "Pecahan mana yang sama besarnya dengan 1/2?"
+      },
+      "choices": {
+        "en": [
+          "4/8",
+          "2/8",
+          "1/8"
+        ],
+        "id": [
+          "4/8",
+          "2/8",
+          "1/8"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Four eighths cover a half exactly, so 4/8 = 1/2.",
+        "id": "Empat keping seperdelapan tepat menutupi setengah, jadi 4/8 = 1/2."
+      },
+      "check": {
+        "expression": "4 / 8",
+        "result": "1/2"
+      },
+      "distractorMisconceptions": {
+        "1": "DOUBLES_ONLY_ONE_PART",
+        "2": "LARGER_DENOMINATOR_LARGER"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Rina ate 2/6 of a martabak. Dodi ate 1/2 of a martabak of the same size. Who ate more?",
+        "id": "Rina makan 2/6 martabak. Dodi makan 1/2 martabak yang sama besarnya. Siapa yang makan lebih banyak?"
+      },
+      "choices": {
+        "en": [
+          "Dodi",
+          "Rina",
+          "They ate the same amount"
+        ],
+        "id": [
+          "Dodi",
+          "Rina",
+          "Mereka makan sama banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2/6 is the same as 1/3, and a third is smaller than a half, so Dodi ate more.",
+        "id": "2/6 sama dengan 1/3, dan sepertiga lebih kecil dari setengah, jadi Dodi makan lebih banyak."
+      },
+      "distractorMisconceptions": {
+        "1": "COMPARES_NUMERATORS_ONLY",
+        "2": "ALL_UNIT_PIECES_EQUAL"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "1/4 + 1/4 = ?",
+        "id": "1/4 + 1/4 = ?"
+      },
+      "choices": {
+        "en": [
+          "1/2",
+          "2/8",
+          "1/8"
+        ],
+        "id": [
+          "1/2",
+          "2/8",
+          "1/8"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Two quarter pieces cover a half: 2/4 = 1/2. The pieces stay quarters, so the denominator does not change.",
+        "id": "Dua keping seperempat menutupi setengah: 2/4 = 1/2. Kepingnya tetap seperempat, jadi penyebutnya tidak berubah."
+      },
+      "check": {
+        "expression": "1/4 + 1/4",
+        "result": "1/2"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_DENOMINATORS",
+        "2": "LARGER_DENOMINATOR_LARGER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "LARGER_DENOMINATOR_LARGER",
+      "description": {
+        "en": "Thinks a bigger number on the bottom means a bigger piece.",
+        "id": "Mengira angka bawah yang lebih besar berarti keping yang lebih besar."
+      },
+      "remediation": {
+        "en": "Share a real circle of paper \"pizza\" among 2 people, then another among 8 people. Ask who gets more when more people share.",
+        "id": "Bagikan lingkaran kertas \"pizza\" kepada 2 orang, lalu lingkaran lain kepada 8 orang. Tanyakan siapa yang mendapat lebih banyak saat lebih banyak orang berbagi."
+      }
+    },
+    {
+      "code": "ALL_UNIT_PIECES_EQUAL",
+      "description": {
+        "en": "Thinks all \"one piece\" fractions are the same size.",
+        "id": "Mengira semua pecahan \"satu keping\" sama besar."
+      },
+      "remediation": {
+        "en": "Stack one piece of each colour on top of each other with their points at the centre, like a fan, so the different sizes are seen together.",
+        "id": "Tumpuk satu keping dari setiap warna dengan ujungnya di titik pusat, seperti kipas, sehingga perbedaan ukurannya terlihat bersamaan."
+      }
+    },
+    {
+      "code": "SUBTRACTS_DENOMINATORS",
+      "description": {
+        "en": "Finds the difference of the denominators instead of covering.",
+        "id": "Mencari selisih penyebut alih-alih menutupi."
+      },
+      "remediation": {
+        "en": "Always answer cover questions with the pieces first: lay eighths on the quarter one at a time and count aloud until it is covered.",
+        "id": "Selalu jawab soal menutupi dengan kepingan lebih dulu: letakkan keping seperdelapan di atas seperempat satu per satu dan hitung dengan suara keras sampai tertutup."
+      }
+    },
+    {
+      "code": "USES_DENOMINATOR_AS_COUNT",
+      "description": {
+        "en": "Gives the number of pieces in the whole circle, not in the part.",
+        "id": "Menyebut jumlah keping dalam lingkaran utuh, bukan dalam bagian itu."
+      },
+      "remediation": {
+        "en": "Put the quarter piece on its own on a plain sheet and cover only that, sliding the extra eighths away to the side.",
+        "id": "Letakkan keping seperempat sendiri di kertas polos dan tutup hanya keping itu, geser keping seperdelapan yang lain ke samping."
+      }
+    },
+    {
+      "code": "DOUBLES_ONLY_ONE_PART",
+      "description": {
+        "en": "Changes only the top or only the bottom number to make an equivalent.",
+        "id": "Mengubah hanya angka atas atau hanya angka bawah untuk membuat pecahan senilai."
+      },
+      "remediation": {
+        "en": "Lay 2/8 on the half: it covers only part. Add eighths until the half is covered and count them; note that both numbers changed.",
+        "id": "Letakkan 2/8 di atas setengah: hanya menutupi sebagian. Tambahkan keping seperdelapan sampai setengah tertutup lalu hitung; perhatikan bahwa kedua angka berubah."
+      }
+    },
+    {
+      "code": "COMPARES_NUMERATORS_ONLY",
+      "description": {
+        "en": "Compares only the top numbers.",
+        "id": "Membandingkan hanya angka atas."
+      },
+      "remediation": {
+        "en": "Build both fractions with the pieces side by side, then lay one on top of the other to see which covers more.",
+        "id": "Susun kedua pecahan dengan kepingan berdampingan, lalu tumpuk satu di atas yang lain untuk melihat mana yang menutupi lebih banyak."
+      }
+    },
+    {
+      "code": "ADDS_DENOMINATORS",
+      "description": {
+        "en": "Adds the bottom numbers when adding fractions.",
+        "id": "Menjumlahkan angka bawah saat menjumlahkan pecahan."
+      },
+      "remediation": {
+        "en": "Put two quarter pieces together and ask \"Did the pieces turn into eighths?\" Count them as \"one quarter, two quarters\".",
+        "id": "Gabungkan dua keping seperempat dan tanyakan \"Apakah kepingnya berubah menjadi perdelapan?\" Hitung sebagai \"satu perempat, dua perempat\"."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a tenths circle (lines every 36°) and find which other circles have pieces that tenths can or cannot cover exactly.",
+      "id": "Buat lingkaran persepuluhan (garis setiap 36°) dan cari lingkaran lain mana yang kepingnya bisa atau tidak bisa ditutup tepat oleh persepuluhan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use thick card for a child who finds thin paper pieces hard to handle, and mark the fraction on the front in large writing.",
+      "id": "Pakai karton tebal untuk anak yang kesulitan memegang kepingan kertas tipis, dan tulis pecahannya di depan dengan huruf besar."
+    },
+    {
+      "en": "For a child with colour-vision difficulties, add a pattern (dots, stripes) to each circle as well as a colour.",
+      "id": "Untuk anak dengan kesulitan membedakan warna, tambahkan pola (titik, garis) pada setiap lingkaran selain warna."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult does the cutting with scissors and handles the protractor point; keep small pieces away from children under 4.",
+        "id": "Orang dewasa yang memotong dengan gunting dan memegang ujung busur derajat; jauhkan kepingan kecil dari anak di bawah 4 tahun."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 45
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child orders unit fractions, finds four equivalent pairs and answers the assessment items correctly, on two different days.",
+      "id": "Dikuasai jika anak mengurutkan pecahan satuan, menemukan empat pasang pecahan senilai, dan menjawab soal penilaian dengan benar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

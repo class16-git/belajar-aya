@@ -34,6 +34,15 @@ export default async function ChildUnitPage({ params }: { params: Promise<{ id: 
               <span className="mt-1 block text-base font-normal">{T.withGrownUpNote}</span>
             </p>
           )}
+          {view.examples.length > 0 && (
+            <section className="space-y-2 rounded-xl bg-linen p-4" aria-labelledby="look-together" data-testid="unit-examples">
+              <h2 id="look-together" className="text-2xl font-bold">{T.lookTogether}</h2>
+              <p className="text-base muted">{T.lookTogetherNote}</p>
+              <ul className="space-y-2 text-xl leading-relaxed">
+                {view.examples.map((s, i) => <li key={i}>{s}</li>)}
+              </ul>
+            </section>
+          )}
           <h2 className="text-2xl font-bold">{T.steps}</h2>
           <ol className="list-decimal space-y-2 pl-7 text-xl leading-relaxed">
             {view.instructions.map((s, i) => <li key={i}>{s}</li>)}

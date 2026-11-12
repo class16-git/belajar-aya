@@ -830,6 +830,8 @@ export const en = {
     minutes: 'About {min}–{max} minutes',
     withGrownUp: 'Do this with a grown-up',
     withGrownUpNote: 'Grown-up: read these steps and do the activity together.',
+    lookTogether: 'Let’s look together',
+    lookTogetherNote: 'Read or do these with a grown-up first. The little check asks about them.',
     steps: 'What to do',
     check: 'Little check',
     checkIntro: 'Choose one answer for each question. There is no hurry.',

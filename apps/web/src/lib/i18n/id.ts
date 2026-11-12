@@ -832,6 +832,8 @@ export const id: Dictionary = {
     minutes: 'Sekitar {min}–{max} menit',
     withGrownUp: 'Lakukan bersama orang dewasa',
     withGrownUpNote: 'Untuk orang dewasa: bacalah langkah-langkah ini dan lakukan kegiatannya bersama.',
+    lookTogether: 'Mari lihat bersama',
+    lookTogetherNote: 'Baca atau lakukan ini bersama orang dewasa dulu. Pertanyaan kecil nanti menanyakan tentang ini.',
     steps: 'Yang dilakukan',
     check: 'Cek kecil',
     checkIntro: 'Pilih satu jawaban untuk setiap pertanyaan. Tidak perlu terburu-buru.',

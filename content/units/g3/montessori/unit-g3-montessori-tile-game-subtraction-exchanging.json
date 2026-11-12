@@ -1,0 +1,416 @@
+{
+  "id": "unit-g3-montessori-tile-game-subtraction-exchanging",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "montessori",
+  "strand": "mathematics",
+  "title": {
+    "en": "Big subtractions with exchanging, using place-value tiles",
+    "id": "Pengurangan besar dengan menukar, memakai keping nilai tempat"
+  },
+  "prerequisites": [
+    "unit-g3-montessori-tile-game-addition-exchanging"
+  ],
+  "objective": {
+    "en": "Subtract a four-digit number from a larger four-digit number with home-made place-value tiles, exchanging one tile of a larger place for ten of the next smaller place when a column is short, including across zeros, and record the written subtraction.",
+    "id": "Mengurangkan bilangan empat angka dari bilangan empat angka yang lebih besar dengan keping nilai tempat buatan sendiri, menukar satu keping nilai lebih besar dengan sepuluh keping nilai berikutnya yang lebih kecil saat suatu kolom kurang, termasuk melewati angka nol, dan mencatat pengurangan tertulisnya."
+  },
+  "rationale": {
+    "en": "Subtraction with tiles is the mirror of the addition the child already knows: in addition ten small tiles go up for one bigger; in subtraction one bigger tile comes down as ten smaller. The child sees why the written \"borrowing\" marks work, so the method is understood, not memorised.",
+    "id": "Pengurangan dengan keping adalah cerminan penjumlahan yang sudah dikenal anak: pada penjumlahan sepuluh keping kecil naik menjadi satu keping lebih besar; pada pengurangan satu keping lebih besar turun menjadi sepuluh keping lebih kecil. Anak melihat mengapa tanda \"meminjam\" dalam tulisan itu berhasil, sehingga caranya dipahami, bukan dihafal."
+  },
+  "outcomes": [
+    {
+      "en": "Builds only the first (larger) number with tiles and takes the second number away, starting with the units.",
+      "id": "Menyusun hanya bilangan pertama (yang lebih besar) dengan keping dan mengambil bilangan kedua, dimulai dari satuan."
+    },
+    {
+      "en": "Exchanges one ten for ten units (or one hundred for ten tens, one thousand for ten hundreds) when a column is short, including across a zero.",
+      "id": "Menukar satu puluhan dengan sepuluh satuan (atau satu ratusan dengan sepuluh puluhan, satu ribuan dengan sepuluh ratusan) saat suatu kolom kurang, termasuk melewati angka nol."
+    },
+    {
+      "en": "Records the subtraction in columns and checks it by adding.",
+      "id": "Mencatat pengurangan dalam kolom dan memeriksanya dengan penjumlahan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "The child solves three subtractions with exchanging, one across a zero, with tiles and on paper.",
+      "id": "Anak menyelesaikan tiga pengurangan dengan menukar, satu di antaranya melewati nol, dengan keping dan di kertas."
+    },
+    {
+      "en": "The child explains in words what one exchange did.",
+      "id": "Anak menjelaskan dengan kata-kata apa yang dilakukan satu penukaran."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use the tiles from the addition unit: green units, blue tens, red hundreds and green thousands, each square marked 1, 10, 100 or 1000. Make sure the bank holds at least 20 of each kind.",
+      "id": "Pakai keping dari unit penjumlahan: satuan hijau, puluhan biru, ratusan merah, dan ribuan hijau, setiap kotak bertanda 1, 10, 100, atau 1000. Pastikan bank berisi sedikitnya 20 keping untuk setiap jenis."
+    },
+    {
+      "en": "In subtraction, build only the first number. The second number is taken away from it, so it is never built.",
+      "id": "Dalam pengurangan, susun hanya bilangan pertama. Bilangan kedua diambil darinya, jadi tidak pernah disusun."
+    },
+    {
+      "en": "Always start with the units column. If there are not enough tiles in a column, take one tile from the next column to the left to the bank and bring back ten of the smaller kind.",
+      "id": "Selalu mulai dari kolom satuan. Jika keping di suatu kolom tidak cukup, bawa satu keping dari kolom berikutnya di sebelah kiri ke bank dan kembalikan sepuluh keping jenis yang lebih kecil."
+    },
+    {
+      "en": "Write the subtraction at the same time as the tiles, crossing out and rewriting the digit each time you exchange, so the written marks match what the hands did.",
+      "id": "Tulis pengurangan bersamaan dengan keping, mencoret dan menulis ulang angka setiap kali menukar, sehingga tanda tertulis sesuai dengan yang dilakukan tangan."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Build the first number with tiles in columns: thousands, hundreds, tens, units.",
+      "id": "Susun bilangan pertama dengan keping dalam kolom: ribuan, ratusan, puluhan, satuan."
+    },
+    {
+      "en": "Start with the units. Take away the units of the second number. If there are not enough, change one ten at the bank for ten units.",
+      "id": "Mulai dari satuan. Ambil satuan bilangan kedua. Jika tidak cukup, tukar satu puluhan di bank dengan sepuluh satuan."
+    },
+    {
+      "en": "Do the same for tens, hundreds and thousands. Count what is left and write the answer. Check by adding.",
+      "id": "Lakukan hal yang sama untuk puluhan, ratusan, dan ribuan. Hitung sisanya dan tulis jawabannya. Periksa dengan penjumlahan."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build the first number with tiles, take away the second, and exchange at the bank when a column is short.",
+        "id": "Menyusun bilangan pertama dengan keping, mengambil bilangan kedua, dan menukar di bank saat suatu kolom kurang."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the tiles as coloured squares in columns, cross out the ones taken away, and draw an arrow for each exchange.",
+        "id": "Menggambar keping sebagai kotak berwarna dalam kolom, mencoret yang diambil, dan menggambar panah untuk setiap penukaran."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the column subtraction with exchanges, for example 6,251 − 3,476 = 2,775, and check it: 2,775 + 3,476 = 6,251.",
+        "id": "Menulis pengurangan bersusun dengan penukaran, misalnya 6.251 − 3.476 = 2.775, dan memeriksanya: 2.775 + 3.476 = 6.251."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "The place-value tiles and bank from the addition unit (card squares marked 1, 10, 100 and 1000 in their colours)",
+      "id": "Keping nilai tempat dan bank dari unit penjumlahan (kotak karton bertanda 1, 10, 100, dan 1000 sesuai warnanya)"
+    },
+    {
+      "en": "A large sheet with four column headings: thousands, hundreds, tens, units",
+      "id": "Lembar besar dengan empat judul kolom: ribuan, ratusan, puluhan, satuan"
+    },
+    {
+      "en": "Squared paper and a pencil for recording",
+      "id": "Kertas berpetak dan pensil untuk mencatat"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Sort the bank into four envelopes or bowls by kind, placed above the column sheet.",
+      "id": "Pilah bank ke empat amplop atau mangkuk menurut jenisnya, diletakkan di atas lembar kolom."
+    },
+    {
+      "en": "Write each problem on a small card so the child picks one at a time.",
+      "id": "Tulis setiap soal di kartu kecil agar anak mengambil satu per satu."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "5,342 − 2,718. Build 5 thousands, 3 hundreds, 4 tens and 2 units. Units: we need to take 8 but have only 2. Take one ten to the bank and bring back ten units: now 12 units and 3 tens. Take 8 units away: 4 left. Tens: take 1 ten from 3: 2 left.",
+      "id": "5.342 − 2.718. Susun 5 ribuan, 3 ratusan, 4 puluhan, dan 2 satuan. Satuan: kita perlu mengambil 8 tetapi hanya ada 2. Bawa satu puluhan ke bank dan kembalikan sepuluh satuan: sekarang 12 satuan dan 3 puluhan. Ambil 8 satuan: sisa 4. Puluhan: ambil 1 puluhan dari 3: sisa 2."
+    },
+    {
+      "en": "Hundreds: we need 7 but have 3, so change one thousand for ten hundreds: 13 hundreds and 4 thousands. Take 7: 6 left. Thousands: 4 − 2 = 2. Count what is left: 2,624. On paper, cross out each digit you exchanged from and write the new one above it.",
+      "id": "Ratusan: kita perlu 7 tetapi hanya ada 3, jadi tukar satu ribuan dengan sepuluh ratusan: 13 ratusan dan 4 ribuan. Ambil 7: sisa 6. Ribuan: 4 − 2 = 2. Hitung sisanya: 2.624. Di kertas, coret setiap angka yang ditukar dan tulis angka barunya di atasnya."
+    },
+    {
+      "en": "Across zeros: 4,005 − 1,238. Units are short, and there are no tens or hundreds to exchange. Change one thousand for ten hundreds, one of those hundreds for ten tens, and one of those tens for ten units. Now 3 thousands, 9 hundreds, 9 tens and 15 units. Take away: 7 units, 6 tens, 7 hundreds, 2 thousands: 2,767.",
+      "id": "Melewati nol: 4.005 − 1.238. Satuan kurang, dan tidak ada puluhan atau ratusan untuk ditukar. Tukar satu ribuan dengan sepuluh ratusan, satu dari ratusan itu dengan sepuluh puluhan, dan satu dari puluhan itu dengan sepuluh satuan. Sekarang 3 ribuan, 9 ratusan, 9 puluhan, dan 15 satuan. Ambil: 7 satuan, 6 puluhan, 7 ratusan, 2 ribuan: 2.767."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Solve with tiles and on paper: 8,416 − 3,592 and 6,030 − 2,457. Check each by adding.",
+      "id": "Kerjakan dengan keping dan di kertas: 8.416 − 3.592 dan 6.030 − 2.457. Periksa masing-masing dengan penjumlahan."
+    },
+    {
+      "en": "Draw-only round: solve 7,204 − 4,816 by drawing squares and arrows, without tiles.",
+      "id": "Putaran menggambar saja: kerjakan 7.204 − 4.816 dengan menggambar kotak dan panah, tanpa keping."
+    },
+    {
+      "en": "Make up a story for 9,000 − 3,650 about rupiah saved for a family trip, and solve it.",
+      "id": "Buat cerita untuk 9.000 − 3.650 tentang rupiah yang ditabung untuk perjalanan keluarga, lalu selesaikan."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "7,423 − 2,658 = ?",
+        "id": "7.423 − 2.658 = ?"
+      },
+      "choices": {
+        "en": [
+          "4,765",
+          "5,235",
+          "5,875"
+        ],
+        "id": [
+          "4.765",
+          "5.235",
+          "5.875"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Units: exchange a ten, 13 − 8 = 5. Tens: 1 left, exchange a hundred, 11 − 5 = 6. Hundreds: 3 left, exchange a thousand, 13 − 6 = 7. Thousands: 6 − 2 = 4.",
+        "id": "Satuan: tukar satu puluhan, 13 − 8 = 5. Puluhan: sisa 1, tukar satu ratusan, 11 − 5 = 6. Ratusan: sisa 3, tukar satu ribuan, 13 − 6 = 7. Ribuan: 6 − 2 = 4."
+      },
+      "check": {
+        "expression": "7423 - 2658",
+        "result": "4765"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_SMALLER_FROM_LARGER",
+        "2": "FORGETS_TO_REDUCE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "You must take away 6 units, but the units column has only 2 tiles and the tens column has 3. After the right exchange, what do the two columns hold?",
+        "id": "Kamu harus mengambil 6 satuan, tetapi kolom satuan hanya punya 2 keping dan kolom puluhan punya 3. Setelah penukaran yang benar, apa isi kedua kolom itu?"
+      },
+      "choices": {
+        "en": [
+          "12 units and 2 tens",
+          "2 units and 3 tens; stop there",
+          "4 units, by doing 6 − 2"
+        ],
+        "id": [
+          "12 satuan dan 2 puluhan",
+          "2 satuan dan 3 puluhan; berhenti di situ",
+          "4 satuan, dengan menghitung 6 − 2"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "One ten goes to the bank and comes back as ten units: 2 + 10 = 12 units, and 3 − 1 = 2 tens remain.",
+        "id": "Satu puluhan dibawa ke bank dan kembali sebagai sepuluh satuan: 2 + 10 = 12 satuan, dan tersisa 3 − 1 = 2 puluhan."
+      },
+      "check": {
+        "expression": "2 + 10",
+        "result": "12"
+      },
+      "distractorMisconceptions": {
+        "1": "STOPS_WHEN_SHORT",
+        "2": "SUBTRACTS_SMALLER_FROM_LARGER"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "3,002 − 1,547 = ?",
+        "id": "3.002 − 1.547 = ?"
+      },
+      "choices": {
+        "en": [
+          "1,455",
+          "1,565",
+          "2,545"
+        ],
+        "id": [
+          "1.455",
+          "1.565",
+          "2.545"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Change a thousand into hundreds, a hundred into tens, a ten into units: 2 thousands, 9 hundreds, 9 tens, 12 units. Then 12 − 7 = 5, 9 − 4 = 5, 9 − 5 = 4, 2 − 1 = 1.",
+        "id": "Tukar satu ribuan menjadi ratusan, satu ratusan menjadi puluhan, satu puluhan menjadi satuan: 2 ribuan, 9 ratusan, 9 puluhan, 12 satuan. Lalu 12 − 7 = 5, 9 − 4 = 5, 9 − 5 = 4, 2 − 1 = 1."
+      },
+      "check": {
+        "expression": "3002 - 1547",
+        "result": "1455"
+      },
+      "distractorMisconceptions": {
+        "1": "ZERO_EXCHANGE_NOT_REDUCED",
+        "2": "SUBTRACTS_SMALLER_FROM_LARGER"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A school library has 2,140 books. 865 are out on loan. How many are on the shelves?",
+        "id": "Perpustakaan sekolah punya 2.140 buku. Sebanyak 865 sedang dipinjam. Berapa buku yang ada di rak?"
+      },
+      "choices": {
+        "en": [
+          "1,275",
+          "3,005",
+          "2,725"
+        ],
+        "id": [
+          "1.275",
+          "3.005",
+          "2.725"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Books on loan are taken away: 2,140 − 865 = 1,275. Check: 1,275 + 865 = 2,140.",
+        "id": "Buku yang dipinjam dikurangkan: 2.140 − 865 = 1.275. Periksa: 1.275 + 865 = 2.140."
+      },
+      "check": {
+        "expression": "2140 - 865",
+        "result": "1275"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD_OF_SUBTRACTS",
+        "2": "SUBTRACTS_SMALLER_FROM_LARGER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SUBTRACTS_SMALLER_FROM_LARGER",
+      "description": {
+        "en": "In each column takes the smaller digit from the larger, whichever number it belongs to.",
+        "id": "Di setiap kolom mengurangkan angka yang lebih kecil dari yang lebih besar, tanpa melihat milik bilangan mana."
+      },
+      "remediation": {
+        "en": "Go back to the tiles: build only the first number and say \"Can I take 8 tiles from 2 tiles?\" Let the child try to pick up 8 and find they are not there, then exchange.",
+        "id": "Kembali ke keping: susun hanya bilangan pertama dan katakan \"Bisakah aku mengambil 8 keping dari 2 keping?\" Biarkan anak mencoba mengambil 8 dan mendapati kepingnya tidak ada, lalu tukar."
+      }
+    },
+    {
+      "code": "FORGETS_TO_REDUCE",
+      "description": {
+        "en": "Exchanges but does not take the tile away from the next column.",
+        "id": "Menukar tetapi tidak mengurangi keping dari kolom berikutnya."
+      },
+      "remediation": {
+        "en": "Make the exchange a physical walk: the child carries the tile to the bank and comes back with ten. On paper, cross out the digit before writing the ten units.",
+        "id": "Jadikan penukaran sebagai perjalanan fisik: anak membawa keping ke bank dan kembali dengan sepuluh. Di kertas, coret angkanya sebelum menulis sepuluh satuan."
+      }
+    },
+    {
+      "code": "STOPS_WHEN_SHORT",
+      "description": {
+        "en": "Stops or gives up when a column does not have enough.",
+        "id": "Berhenti atau menyerah saat suatu kolom tidak cukup."
+      },
+      "remediation": {
+        "en": "Use rupiah play notes: you need Rp6 but have Rp2 and three Rp10 notes. Change one Rp10 at the \"shop\" for ten Rp1 coins drawn on paper.",
+        "id": "Pakai uang mainan rupiah: kamu perlu Rp6 tetapi punya Rp2 dan tiga lembar Rp10. Tukar satu lembar Rp10 di \"toko\" dengan sepuluh keping Rp1 yang digambar di kertas."
+      }
+    },
+    {
+      "code": "ZERO_EXCHANGE_NOT_REDUCED",
+      "description": {
+        "en": "Across zeros, makes tens and hundreds appear without exchanging from the thousand.",
+        "id": "Saat melewati nol, memunculkan puluhan dan ratusan tanpa menukar dari ribuan."
+      },
+      "remediation": {
+        "en": "Do 1,000 − 1 with tiles only: one thousand tile becomes ten hundreds, one hundred becomes ten tens, one ten becomes ten units. Count the tiles at each step: always the same total value.",
+        "id": "Kerjakan 1.000 − 1 dengan keping saja: satu keping ribuan menjadi sepuluh ratusan, satu ratusan menjadi sepuluh puluhan, satu puluhan menjadi sepuluh satuan. Hitung nilai keping di setiap langkah: totalnya selalu sama."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD_OF_SUBTRACTS",
+      "description": {
+        "en": "Adds when the story asks how many are left.",
+        "id": "Menjumlahkan padahal cerita menanyakan berapa yang tersisa."
+      },
+      "remediation": {
+        "en": "Act the story out with a stack of exercise books: some \"go out on loan\" and leave the table. Ask \"Are there more or fewer on the table now?\"",
+        "id": "Peragakan cerita dengan setumpuk buku tulis: sebagian \"dipinjam\" dan meninggalkan meja. Tanyakan \"Sekarang di meja lebih banyak atau lebih sedikit?\""
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Subtract a four-digit number from 10,000 using a ten-thousand tile drawn on paper, exchanging all the way down.",
+      "id": "Kurangkan bilangan empat angka dari 10.000 memakai keping sepuluh ribuan yang digambar di kertas, menukar sampai ke bawah."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child who mixes up columns, tape coloured strips on the table under each column to match the tile colours.",
+      "id": "Untuk anak yang tertukar kolom, tempel pita berwarna di meja di bawah setiap kolom sesuai warna keping."
+    },
+    {
+      "en": "Use bigger tiles (5 cm squares) for a child who finds small pieces hard to handle.",
+      "id": "Pakai keping lebih besar (kotak 5 cm) untuk anak yang kesulitan memegang kepingan kecil."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult cuts any new card tiles with scissors; keep the small tiles away from children under 4.",
+        "id": "Orang dewasa memotong keping karton baru dengan gunting; jauhkan keping kecil dari anak di bawah 4 tahun."
+      },
+      {
+        "en": "Store tiles in envelopes so they are not left on the floor.",
+        "id": "Simpan keping di amplop agar tidak tertinggal di lantai."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves three exchange subtractions, one across a zero, with tiles and on paper without error, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan tiga pengurangan dengan menukar, satu melewati nol, dengan keping dan di kertas tanpa kesalahan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

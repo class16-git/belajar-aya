@@ -76,6 +76,9 @@ export function unitForChild(u: Unit, locale: Locale) {
     objective: u.objective[locale],
     caregiverLed,
     instructions: (caregiverLed ? u.parentInstructions : u.childInstructions).map((x) => x[locale]),
+    /** Worked examples the check builds on (a story, a model). Assessment items use new numbers and contexts
+     *  (authoring rule 11), so showing these never reveals an answer. */
+    examples: u.guidedExamples.map((x) => x[locale]),
     minutes: u.durationMinutes,
     items: u.assessment.map((a) => ({
       id: a.id,
