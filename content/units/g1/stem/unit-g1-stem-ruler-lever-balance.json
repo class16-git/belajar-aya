@@ -1,0 +1,428 @@
+{
+  "id": "unit-g1-stem-ruler-lever-balance",
+  "version": "1.0.0",
+  "level": "g1",
+  "framework": "stem",
+  "strand": "engineering_design",
+  "title": {
+    "en": "Lift it with a lever",
+    "id": "Mengangkat dengan tuas"
+  },
+  "prerequisites": [
+    "unit-k-stem-rolls-or-slides"
+  ],
+  "objective": {
+    "en": "Build a lever from a ruler and a round pencil, and test how moving the load closer to the pivot changes how many bottle caps are needed to lift it.",
+    "id": "Membuat tuas dari penggaris dan pensil bulat, lalu menguji bagaimana memindahkan beban lebih dekat ke titik tumpu mengubah jumlah tutup botol yang diperlukan untuk mengangkatnya."
+  },
+  "rationale": {
+    "en": "A lever is one of the simple machines people have used for thousands of years: a bar that turns on a pivot. Children feel its power on a seesaw. Testing it with counted bottle caps turns that feeling into evidence, and changing one thing at a time keeps the test fair.",
+    "id": "Tuas adalah salah satu pesawat sederhana yang sudah dipakai manusia sejak ribuan tahun lalu: batang yang berputar pada titik tumpu. Anak merasakan kekuatannya di jungkat-jungkit. Mengujinya dengan menghitung tutup botol mengubah rasa itu menjadi bukti, dan mengubah satu hal setiap kali membuat ujinya adil."
+  },
+  "outcomes": [
+    {
+      "en": "Names the three parts of a lever (bar, pivot, load) and sets one up.",
+      "id": "Menyebut tiga bagian tuas (batang, titik tumpu, beban) dan merakitnya."
+    },
+    {
+      "en": "Tests the load at three places and explains that a load near the pivot needs fewer caps to lift.",
+      "id": "Menguji beban di tiga tempat dan menjelaskan bahwa beban dekat titik tumpu memerlukan lebih sedikit tutup untuk diangkat."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show the bar, the pivot and the load.",
+      "id": "Aku bisa menunjukkan batang, titik tumpu, dan beban."
+    },
+    {
+      "en": "I change only one thing in my test.",
+      "id": "Aku hanya mengubah satu hal dalam ujiku."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Help your child find the balance point first: lay the ruler across the pencil and slide it until it rests level on its own. Mark that spot with a pencil line. That is the pivot for every test.",
+      "id": "Bantu anak menemukan titik seimbang lebih dulu: letakkan penggaris melintang di atas pensil dan geser sampai datar dengan sendirinya. Tandai tempat itu dengan garis pensil. Itulah titik tumpu untuk setiap uji."
+    },
+    {
+      "en": "Ask for a prediction before every test: 'Will you need more caps, the same, or fewer?' Write the guess in the table before testing.",
+      "id": "Minta tebakan sebelum setiap uji: 'Perlu tutup lebih banyak, sama, atau lebih sedikit?' Tulis tebakan di tabel sebelum menguji."
+    },
+    {
+      "en": "Keep it fair: always the same load stack, always add caps at the very end of the other side, always one cap at a time until that end goes down.",
+      "id": "Jaga agar adil: beban selalu tumpukan yang sama, tutup selalu ditambahkan di ujung paling akhir sisi lain, selalu satu tutup setiap kali sampai ujung itu turun."
+    },
+    {
+      "en": "Finish with a reflection: 'Where would you put a heavy thing if you wanted to lift it easily?'",
+      "id": "Akhiri dengan renungan: 'Di mana kamu akan menaruh benda berat kalau ingin mengangkatnya dengan mudah?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Balance the ruler on the pencil and mark the middle.",
+      "id": "Seimbangkan penggaris di atas pensil dan tandai tengahnya."
+    },
+    {
+      "en": "Put the load stack on one side. Guess how many caps will lift it, then add caps one at a time at the other end.",
+      "id": "Taruh tumpukan beban di satu sisi. Tebak berapa tutup yang bisa mengangkatnya, lalu tambahkan tutup satu per satu di ujung sisi lain."
+    },
+    {
+      "en": "Move the load closer to the pencil and test again. Write every result in your table.",
+      "id": "Pindahkan beban lebih dekat ke pensil dan uji lagi. Tulis setiap hasil di tabelmu."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build the ruler lever and lift the load stack with caps.",
+        "id": "Rakit tuas penggaris dan angkat tumpukan beban dengan tutup botol."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a lever picture: a line for the bar, a triangle for the pivot, a stack for the load and an arrow for the push.",
+        "id": "Gambar tuas: garis untuk batang, segitiga untuk titik tumpu, tumpukan untuk beban, dan panah untuk dorongan."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Read the results table and find which load place needed the fewest caps.",
+        "id": "Baca tabel hasil dan temukan tempat beban mana yang memerlukan tutup paling sedikit."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A 30 cm wooden or stiff plastic ruler",
+      "id": "Penggaris kayu atau plastik kaku 30 cm"
+    },
+    {
+      "en": "A round pencil or a round marker pen, taped to the table so it cannot roll",
+      "id": "Pensil bulat atau spidol bulat, direkatkan ke meja agar tidak menggelinding"
+    },
+    {
+      "en": "About 15 plastic bottle caps, all the same size",
+      "id": "Sekitar 15 tutup botol plastik, semua sama besar"
+    },
+    {
+      "en": "Sticky tape, a pencil, and a paper results table with three rows: load far from the pivot, load in the middle of one side, load close to the pivot",
+      "id": "Selotip, pensil, dan tabel hasil di kertas dengan tiga baris: beban jauh dari titik tumpu, beban di tengah satu sisi, beban dekat titik tumpu"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Wash and dry the caps. Tape 6 caps together into one stack: this is the load. Tape the pencil to the table. Count the loose caps back into a box after the session.",
+      "id": "Cuci dan keringkan tutup botol. Rekatkan 6 tutup menjadi satu tumpukan: inilah bebannya. Rekatkan pensil ke meja. Hitung kembali tutup lepas ke dalam kotak setelah kegiatan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Far load: put the 6-cap load at the very end of the left side, 15 cm from the pivot. Rani guesses 'about 5 caps'. She adds caps one at a time at the right end: 1, 2, … the load lifts at 6. 'Same distance on each side: the same number of caps.'",
+      "id": "Beban jauh: taruh beban 6 tutup di ujung paling kiri, 15 cm dari titik tumpu. Rani menebak 'sekitar 5 tutup'. Ia menambah tutup satu per satu di ujung kanan: 1, 2, … beban terangkat pada tutup ke-6. 'Jarak yang sama di kedua sisi: jumlah tutup yang sama.'"
+    },
+    {
+      "en": "Close load: slide the load to 5 cm from the pivot. Rani predicts 'fewer'. Caps at the right end: 1, 2… it lifts at 2. 'Moving the load closer to the pivot made it much easier to lift!'",
+      "id": "Beban dekat: geser beban ke 5 cm dari titik tumpu. Rani menebak 'lebih sedikit'. Tutup di ujung kanan: 1, 2… terangkat pada tutup ke-2. 'Memindahkan beban lebih dekat ke titik tumpu membuatnya jauh lebih mudah diangkat!'"
+    },
+    {
+      "en": "Real levers: on a seesaw, a heavier person sits closer to the middle so a lighter person can lift them. Show your child how a grown-up uses the handle of a spoon to lift a tight lid: the handle is the bar and the edge of the tin is the pivot.",
+      "id": "Tuas sungguhan: di jungkat-jungkit, orang yang lebih berat duduk lebih dekat ke tengah agar orang yang lebih ringan bisa mengangkatnya. Tunjukkan kepada anak cara orang dewasa memakai gagang sendok untuk mencungkil tutup kaleng yang rapat: gagangnya adalah batang dan tepi kaleng adalah titik tumpu."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Test the middle place: put the load 10 cm from the pivot. Predict first, then test, then write the result between the other two.",
+      "id": "Uji tempat tengah: taruh beban 10 cm dari titik tumpu. Tebak dulu, lalu uji, lalu tulis hasilnya di antara dua hasil lainnya."
+    },
+    {
+      "en": "Make a 3-cap load and repeat the far and close tests. Does the pattern stay the same?",
+      "id": "Buat beban 3 tutup dan ulangi uji jauh dan dekat. Apakah polanya tetap sama?"
+    },
+    {
+      "en": "Seesaw at the playground: with an adult, find where a grown-up must sit so that you can lift them. Describe what you found.",
+      "id": "Jungkat-jungkit di taman bermain: bersama orang dewasa, cari di mana orang dewasa harus duduk agar kamu bisa mengangkatnya. Ceritakan temuanmu."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "On a lever, what is the pivot?",
+        "id": "Pada tuas, apa itu titik tumpu?"
+      },
+      "choices": {
+        "en": [
+          "The point the bar turns on",
+          "The thing being lifted",
+          "The push you give"
+        ],
+        "id": [
+          "Titik tempat batang berputar",
+          "Benda yang diangkat",
+          "Dorongan yang kamu berikan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The bar turns on the pivot; here it is the pencil.",
+        "id": "Batang berputar pada titik tumpu; di sini pensilnya."
+      },
+      "distractorMisconceptions": {
+        "1": "PIVOT_IS_LOAD",
+        "2": "PIVOT_IS_PUSH"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "You want to lift a heavy stack with as few caps as possible. Where should the stack go?",
+        "id": "Kamu ingin mengangkat tumpukan berat dengan tutup sesedikit mungkin. Di mana tumpukannya harus ditaruh?"
+      },
+      "choices": {
+        "en": [
+          "Close to the pivot",
+          "At the far end of the ruler",
+          "It makes no difference"
+        ],
+        "id": [
+          "Dekat titik tumpu",
+          "Di ujung terjauh penggaris",
+          "Tidak ada bedanya"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A load close to the pivot is easiest to lift from the far end.",
+        "id": "Beban yang dekat titik tumpu paling mudah diangkat dari ujung yang jauh."
+      },
+      "distractorMisconceptions": {
+        "1": "FAR_IS_EASIER",
+        "2": "POSITION_DOES_NOT_MATTER"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Budi's lever test: the load at the end needed 8 caps, and the load near the pivot needed 3 caps. How many fewer caps were needed near the pivot?",
+        "id": "Uji tuas Budi: beban di ujung memerlukan 8 tutup, dan beban dekat titik tumpu memerlukan 3 tutup. Berapa tutup lebih sedikit yang diperlukan di dekat titik tumpu?"
+      },
+      "choices": {
+        "en": [
+          "5 fewer",
+          "11 fewer",
+          "3 fewer"
+        ],
+        "id": [
+          "5 lebih sedikit",
+          "11 lebih sedikit",
+          "3 lebih sedikit"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Compare the two results: 8 - 3 = 5.",
+        "id": "Bandingkan kedua hasil: 8 - 3 = 5."
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TO_COMPARE",
+        "2": "REPORTS_ONE_RESULT"
+      },
+      "check": {
+        "expression": "8 - 3",
+        "result": "5"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Sinta moved the load closer to the pivot and also used a bigger load stack. Why is her test not fair?",
+        "id": "Sinta memindahkan beban lebih dekat ke titik tumpu dan juga memakai tumpukan beban yang lebih besar. Mengapa ujinya tidak adil?"
+      },
+      "choices": {
+        "en": [
+          "She changed two things, so she cannot tell which one made the difference",
+          "She used too few caps",
+          "The ruler was too long"
+        ],
+        "id": [
+          "Ia mengubah dua hal, jadi ia tidak tahu mana yang membuat perbedaan",
+          "Ia memakai terlalu sedikit tutup",
+          "Penggarisnya terlalu panjang"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A fair test changes only one thing at a time.",
+        "id": "Uji yang adil hanya mengubah satu hal setiap kali."
+      },
+      "distractorMisconceptions": {
+        "1": "MORE_DATA_IS_FAIR",
+        "2": "BLAMES_EQUIPMENT"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "PIVOT_IS_LOAD",
+      "description": {
+        "en": "Mixes up the pivot and the load.",
+        "id": "Tertukar antara titik tumpu dan beban."
+      },
+      "remediation": {
+        "en": "Put a sticker on the pencil saying 'turns here' and another on the load saying 'lifted'. Rock the ruler and watch which part stays still.",
+        "id": "Tempel stiker di pensil bertuliskan 'berputar di sini' dan di beban bertuliskan 'diangkat'. Goyangkan penggaris dan lihat bagian mana yang tetap diam."
+      }
+    },
+    {
+      "code": "PIVOT_IS_PUSH",
+      "description": {
+        "en": "Thinks the pivot is the push.",
+        "id": "Mengira titik tumpu adalah dorongan."
+      },
+      "remediation": {
+        "en": "Push the end with one finger and point with the other hand to the place that does not move: that is the pivot.",
+        "id": "Dorong ujung dengan satu jari dan tunjuk dengan tangan lain tempat yang tidak bergerak: itulah titik tumpu."
+      }
+    },
+    {
+      "code": "FAR_IS_EASIER",
+      "description": {
+        "en": "Thinks a load far from the pivot is easier to lift.",
+        "id": "Mengira beban yang jauh dari titik tumpu lebih mudah diangkat."
+      },
+      "remediation": {
+        "en": "On a seesaw, try lifting a grown-up sitting at the far end, then sitting close to the middle, and feel the difference.",
+        "id": "Di jungkat-jungkit, coba angkat orang dewasa yang duduk di ujung, lalu yang duduk dekat tengah, dan rasakan bedanya."
+      }
+    },
+    {
+      "code": "POSITION_DOES_NOT_MATTER",
+      "description": {
+        "en": "Thinks only the size of the load matters, not where it is.",
+        "id": "Mengira hanya besar beban yang penting, bukan letaknya."
+      },
+      "remediation": {
+        "en": "Keep the same load and test it at two places, writing both numbers side by side.",
+        "id": "Pakai beban yang sama dan uji di dua tempat, tulis kedua angka berdampingan."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds two results when asked how many fewer.",
+        "id": "Menjumlahkan dua hasil saat ditanya berapa lebih sedikit."
+      },
+      "remediation": {
+        "en": "Make two cap towers, 8 and 3, stand them side by side, and count the caps that stick up above the shorter tower.",
+        "id": "Buat dua menara tutup, 8 dan 3, dirikan berdampingan, dan hitung tutup yang lebih tinggi dari menara yang pendek."
+      }
+    },
+    {
+      "code": "REPORTS_ONE_RESULT",
+      "description": {
+        "en": "Gives one of the results instead of the difference.",
+        "id": "Menyebut salah satu hasil, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Ask 'how many fewer' as 'how many more would the short tower need to be as tall?' and add caps to find out.",
+        "id": "Ubah 'berapa lebih sedikit' menjadi 'berapa lagi yang dibutuhkan menara pendek agar sama tinggi?' lalu tambahkan tutup untuk mencari tahu."
+      }
+    },
+    {
+      "code": "MORE_DATA_IS_FAIR",
+      "description": {
+        "en": "Thinks a test is fair if it uses enough things.",
+        "id": "Mengira uji itu adil asalkan memakai cukup banyak benda."
+      },
+      "remediation": {
+        "en": "Run two toy-car races where one car gets a bigger push and also a steeper ramp; ask which change made it win.",
+        "id": "Adakan dua balapan mobil mainan, satu mobil didorong lebih kuat sekaligus jalurnya lebih curam; tanya perubahan mana yang membuatnya menang."
+      }
+    },
+    {
+      "code": "BLAMES_EQUIPMENT",
+      "description": {
+        "en": "Blames the equipment instead of the test plan.",
+        "id": "Menyalahkan alat, bukan rencana ujinya."
+      },
+      "remediation": {
+        "en": "List everything that changed between the two tests in a two-column table, then circle the changes.",
+        "id": "Daftar semua yang berubah di antara dua uji dalam tabel dua kolom, lalu lingkari perubahannya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Move the pivot instead of the load: slide the ruler so the pencil is under the 10 cm mark. What changes, and why is this test harder to keep fair? (Hint: the ruler's own weight now helps one side.)",
+      "id": "Pindahkan titik tumpu, bukan bebannya: geser penggaris agar pensil di bawah tanda 10 cm. Apa yang berubah, dan mengapa uji ini lebih sulit dibuat adil? (Petunjuk: berat penggaris sendiri sekarang membantu satu sisi.)"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child with fine-motor difficulty can place caps with a large spoon; the table can use pictures (far, middle, close) instead of words.",
+      "id": "Anak yang kesulitan motorik halus bisa menaruh tutup dengan sendok besar; tabel bisa memakai gambar (jauh, tengah, dekat) sebagai ganti kata."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Bottle caps are small: count them back into a box and keep them away from younger siblings under 4.",
+        "id": "Tutup botol berukuran kecil: hitung kembali ke dalam kotak dan jauhkan dari adik di bawah 4 tahun."
+      },
+      {
+        "en": "Only the adult uses a spoon to lift a tin lid. Seesaw tests happen only with an adult holding on and both feet ready to touch the ground.",
+        "id": "Hanya orang dewasa yang memakai sendok untuk mencungkil tutup kaleng. Uji jungkat-jungkit hanya dilakukan dengan orang dewasa yang berpegangan dan kedua kaki siap menapak tanah."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child sets up the lever, names its parts, tests the load in at least two places fairly, and explains where to put a load to lift it easily.",
+      "id": "Dikuasai jika anak merakit tuas, menyebut bagian-bagiannya, menguji beban di sedikitnya dua tempat dengan adil, dan menjelaskan di mana menaruh beban agar mudah diangkat."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-stem",
+    "createdAt": "2026-11-10"
+  }
+}
