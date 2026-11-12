@@ -1,0 +1,400 @@
+{
+  "id": "unit-g4-literacy-paragraph-structure",
+  "version": "1.0.0",
+  "level": "g4",
+  "framework": "literacy",
+  "strand": "writing",
+  "title": {
+    "en": "Build a strong paragraph",
+    "id": "Menyusun paragraf yang utuh"
+  },
+  "prerequisites": [
+    "unit-g3-literacy-paragraph-main-idea",
+    "unit-g3-literacy-writing-a-recount"
+  ],
+  "objective": {
+    "en": "Write an informational paragraph with a topic sentence, three supporting sentences that each add a detail or example, linking words, and a concluding sentence that sums up without copying the topic sentence.",
+    "id": "Menulis paragraf informasi dengan kalimat utama di awal (deduktif), tiga kalimat penjelas yang masing-masing menambah rincian atau contoh, kata penghubung, dan kalimat penutup yang menegaskan tanpa menyalin kalimat utama."
+  },
+  "rationale": {
+    "en": "In Grade 3 children found the main idea in someone else's paragraph; now they build their own. A paragraph is a promise and its proof: the topic sentence promises an idea and every other sentence must keep the promise. Indonesian school language names the parts kalimat utama, kalimat penjelas and kalimat penutup, and calls a main-idea-first paragraph deduktif; English schools use topic sentence, supporting sentences and concluding sentence. Linking words differ too: EN also, for example, as a result; ID selain itu, misalnya, oleh karena itu.",
+    "id": "Di kelas 3 anak menemukan gagasan utama dalam paragraf orang lain; kini mereka menyusun paragrafnya sendiri. Paragraf adalah janji dan buktinya: kalimat utama menjanjikan satu gagasan dan setiap kalimat lain harus menepati janji itu. Istilah sekolah dalam bahasa Indonesia adalah kalimat utama, kalimat penjelas, dan kalimat penutup, dan paragraf yang gagasan utamanya di awal disebut deduktif; dalam bahasa Inggris dipakai topic sentence, supporting sentences, dan concluding sentence. Kata penghubungnya juga berbeda: ID selain itu, misalnya, oleh karena itu; EN also, for example, as a result."
+  },
+  "outcomes": [
+    {
+      "en": "Writes a topic sentence that is neither a small detail nor too general.",
+      "id": "Menulis kalimat utama yang bukan rincian kecil dan tidak terlalu umum."
+    },
+    {
+      "en": "Writes three supporting sentences that each add a different detail or example, with linking words.",
+      "id": "Menulis tiga kalimat penjelas yang masing-masing menambah rincian atau contoh yang berbeda, dengan kata penghubung."
+    },
+    {
+      "en": "Finds and removes an off-topic sentence, and writes a concluding sentence in new words.",
+      "id": "Menemukan dan membuang kalimat yang keluar dari topik, serta menulis kalimat penutup dengan kata-kata baru."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "Every sentence in my paragraph is about my topic sentence.",
+      "id": "Setiap kalimat dalam paragrafku membahas kalimat utamanya."
+    },
+    {
+      "en": "My last sentence sums up in new words.",
+      "id": "Kalimat terakhirku menegaskan dengan kata-kata baru."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use the 'hamburger': top bun = topic sentence, three fillings = supporting sentences, bottom bun = concluding sentence. Draw it on paper as a plan.",
+      "id": "Pakai 'roti isi': roti atas = kalimat utama, tiga isian = kalimat penjelas, roti bawah = kalimat penutup. Gambar di kertas sebagai rencana."
+    },
+    {
+      "en": "Read the model paragraph and colour each part: topic green, supporting yellow, conclusion green again.",
+      "id": "Baca contoh paragraf dan warnai setiap bagian: kalimat utama hijau, kalimat penjelas kuning, penutup hijau lagi."
+    },
+    {
+      "en": "Your child plans their own paragraph on a topic they know (a favourite food, a game, a place nearby), then writes it.",
+      "id": "Anak merencanakan paragrafnya sendiri tentang topik yang ia kenal (makanan kesukaan, permainan, tempat di sekitar), lalu menuliskannya."
+    },
+    {
+      "en": "Check it with the 'promise test': read the topic sentence, then each other sentence, asking 'Does this keep the promise?'",
+      "id": "Periksa dengan 'uji janji': baca kalimat utama, lalu setiap kalimat lain, sambil bertanya 'Apakah ini menepati janji?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Plan your hamburger first.",
+      "id": "Rencanakan roti isimu dulu."
+    },
+    {
+      "en": "Start with a topic sentence. Add three details with linking words.",
+      "id": "Mulai dengan kalimat utama. Tambahkan tiga rincian dengan kata penghubung."
+    },
+    {
+      "en": "End with a new sentence that sums up. Do the promise test.",
+      "id": "Akhiri dengan kalimat baru yang menegaskan. Lakukan uji janji."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "A hamburger planning sheet",
+      "id": "Lembar rencana roti isi"
+    },
+    {
+      "en": "Green and yellow coloured pencils",
+      "id": "Pensil warna hijau dan kuning"
+    },
+    {
+      "en": "A list of linking words (EN: also, for example, in addition, as a result; ID: selain itu, misalnya, bahkan, oleh karena itu)",
+      "id": "Daftar kata penghubung (ID: selain itu, misalnya, bahkan, oleh karena itu; EN: also, for example, in addition, as a result)"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Copy the model paragraph onto a sheet.",
+      "id": "Salin contoh paragraf ke selembar kertas."
+    },
+    {
+      "en": "Help your child choose a topic they can give three real details about.",
+      "id": "Bantu anak memilih topik yang bisa diberi tiga rincian nyata."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Model paragraph (original): Bamboo is a very useful plant. In many villages, its strong stems are used to build fences and simple houses. It is also split into thin strips and woven into baskets and mats. In addition, the young shoots can be cooked and eaten. As a result, one plant can give a family building materials, tools and food.",
+      "id": "Contoh paragraf (orisinal): Bambu adalah tanaman yang sangat berguna. Di banyak desa, batangnya yang kuat dipakai untuk membuat pagar dan rumah sederhana. Selain itu, bambu dibelah menjadi bilah tipis lalu dianyam menjadi keranjang dan tikar. Bahkan, rebung, yaitu tunas mudanya, bisa dimasak dan dimakan. Oleh karena itu, satu jenis tanaman bisa memberi keluarga bahan bangunan, peralatan, dan makanan."
+    },
+    {
+      "en": "Talk through it: the topic sentence promises 'useful'. Each supporting sentence gives one use (building, weaving, food). The conclusion does not copy the first sentence; it gathers the three uses.",
+      "id": "Bahas bersama: kalimat utama menjanjikan 'berguna'. Setiap kalimat penjelas memberi satu kegunaan (bangunan, anyaman, makanan). Penutup tidak menyalin kalimat pertama; ia mengumpulkan ketiga kegunaan."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Spot the intruder: the adult adds one off-topic sentence to the bamboo paragraph; your child finds and removes it.",
+      "id": "Temukan penyusup: orang dewasa menambahkan satu kalimat yang keluar topik ke paragraf bambu; anak menemukan dan membuangnya."
+    },
+    {
+      "en": "Topic sentence sort: sort six sentences into 'too small (a detail)', 'too big (too general)' and 'just right'.",
+      "id": "Pilah kalimat utama: pilah enam kalimat menjadi 'terlalu kecil (rincian)', 'terlalu besar (terlalu umum)', dan 'pas'."
+    },
+    {
+      "en": "Own paragraph: plan, write and promise-test a paragraph on a new topic.",
+      "id": "Paragraf sendiri: rencanakan, tulis, dan uji janji paragraf dengan topik baru."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Which is the best topic sentence for a paragraph about the school library?",
+        "id": "Mana kalimat utama terbaik untuk paragraf tentang perpustakaan sekolah?"
+      },
+      "choices": {
+        "en": [
+          "Our school library is a great place to spend break time.",
+          "The library has twenty shelves.",
+          "Many places are nice."
+        ],
+        "id": [
+          "Perpustakaan sekolah kami tempat yang menyenangkan untuk menghabiskan waktu istirahat.",
+          "Perpustakaan itu punya dua puluh rak.",
+          "Banyak tempat yang bagus."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A topic sentence states one idea the rest can support. Twenty shelves is a detail; 'many places are nice' is too general.",
+        "id": "Kalimat utama menyatakan satu gagasan yang bisa dijelaskan kalimat lain. Dua puluh rak adalah rincian; 'banyak tempat yang bagus' terlalu umum."
+      },
+      "distractorMisconceptions": {
+        "1": "DETAIL_AS_TOPIC_SENTENCE",
+        "2": "TOO_GENERAL"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "'(1) Walking to school is good for us. (2) It keeps our bodies strong. (3) My uncle has a new car. (4) We also meet our friends on the way.' Which sentence does not support the topic sentence?",
+        "id": "'(1) Berjalan kaki ke sekolah baik untuk kita. (2) Tubuh kita jadi kuat. (3) Pamanku punya mobil baru. (4) Kita juga bisa bertemu teman di jalan.' Kalimat mana yang tidak mendukung kalimat utama?"
+      },
+      "choices": {
+        "en": [
+          "Sentence 3",
+          "Sentence 2",
+          "Sentence 4"
+        ],
+        "id": [
+          "Kalimat 3",
+          "Kalimat 2",
+          "Kalimat 4"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The uncle's car says nothing about why walking to school is good.",
+        "id": "Mobil paman tidak menjelaskan mengapa berjalan kaki ke sekolah itu baik."
+      },
+      "distractorMisconceptions": {
+        "1": "ACCEPTS_OFF_TOPIC",
+        "2": "ACCEPTS_OFF_TOPIC"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Choose the best linking word: 'Cycling is good exercise. ___, it does not make the air dirty.'",
+        "id": "Pilih kata penghubung terbaik: 'Bersepeda adalah olahraga yang baik. ___, bersepeda tidak mengotori udara.'"
+      },
+      "choices": {
+        "en": [
+          "Also",
+          "For example",
+          "But"
+        ],
+        "id": [
+          "Selain itu",
+          "Misalnya",
+          "Tetapi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The second sentence adds a new reason, so an adding word fits. It is not an example of exercise, and it does not disagree.",
+        "id": "Kalimat kedua menambah alasan baru, jadi kata penghubung penambahan yang cocok. Itu bukan contoh olahraga, dan tidak bertentangan."
+      },
+      "distractorMisconceptions": {
+        "1": "EXAMPLE_FOR_ADDITION",
+        "2": "CONTRAST_FOR_ADDITION"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Which is the best concluding sentence for the walking-to-school paragraph?",
+        "id": "Mana kalimat penutup terbaik untuk paragraf berjalan kaki ke sekolah?"
+      },
+      "choices": {
+        "en": [
+          "So walking to school helps both our bodies and our friendships.",
+          "My uncle drives to work every day.",
+          "Walking to school is good for us."
+        ],
+        "id": [
+          "Jadi, berjalan kaki ke sekolah bermanfaat bagi tubuh dan persahabatan kita.",
+          "Pamanku menyetir ke kantor setiap hari.",
+          "Berjalan kaki ke sekolah baik untuk kita."
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A conclusion gathers the points in new words. A new idea does not belong at the end, and copying the topic sentence adds nothing.",
+        "id": "Penutup mengumpulkan pokok-pokoknya dengan kata baru. Gagasan baru tidak cocok di akhir, dan menyalin kalimat utama tidak menambah apa pun."
+      },
+      "distractorMisconceptions": {
+        "1": "NEW_IDEA_AT_END",
+        "2": "COPIES_TOPIC_SENTENCE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "DETAIL_AS_TOPIC_SENTENCE",
+      "description": {
+        "en": "Uses a small detail as the topic sentence, so there is nothing left to explain.",
+        "id": "Memakai rincian kecil sebagai kalimat utama, sehingga tidak ada lagi yang bisa dijelaskan."
+      },
+      "remediation": {
+        "en": "Ask: 'Could I write three more sentences about this?' Twenty shelves... then what? If not, zoom out one step.",
+        "id": "Tanyakan: 'Bisakah aku menulis tiga kalimat lagi tentang ini?' Dua puluh rak... lalu apa? Jika tidak bisa, perluas satu langkah."
+      }
+    },
+    {
+      "code": "TOO_GENERAL",
+      "description": {
+        "en": "Writes a topic sentence so wide that any sentence could follow.",
+        "id": "Menulis kalimat utama yang terlalu luas sehingga kalimat apa pun bisa mengikutinya."
+      },
+      "remediation": {
+        "en": "Zoom in with questions: which place? what about it? Rewrite until the sentence names one topic and one idea about it.",
+        "id": "Persempit dengan pertanyaan: tempat yang mana? Ada apa dengannya? Tulis ulang sampai kalimat menyebut satu topik dan satu gagasan tentangnya."
+      }
+    },
+    {
+      "code": "ACCEPTS_OFF_TOPIC",
+      "description": {
+        "en": "Does not notice a sentence that breaks the paragraph's promise.",
+        "id": "Tidak menyadari kalimat yang melanggar janji paragraf."
+      },
+      "remediation": {
+        "en": "Write each sentence on a strip. Hold the topic sentence strip and place each strip under it only if it answers 'Why?' or 'How?' about the topic.",
+        "id": "Tulis setiap kalimat di secarik kertas. Pegang kertas kalimat utama dan taruh kertas lain di bawahnya hanya jika menjawab 'Mengapa?' atau 'Bagaimana?' tentang topik."
+      }
+    },
+    {
+      "code": "EXAMPLE_FOR_ADDITION",
+      "description": {
+        "en": "Uses 'for example' for a new point that is not an example.",
+        "id": "Memakai 'misalnya' untuk pokok baru yang bukan contoh."
+      },
+      "remediation": {
+        "en": "Sort linking words into boxes: adding (also, selain itu), example (for example, misalnya), contrast (but, tetapi), result (as a result, oleh karena itu). Ask which job the sentence does.",
+        "id": "Pilah kata penghubung ke dalam kotak: menambah (selain itu), contoh (misalnya), pertentangan (tetapi), akibat (oleh karena itu). Tanyakan tugas apa yang dilakukan kalimat itu."
+      }
+    },
+    {
+      "code": "CONTRAST_FOR_ADDITION",
+      "description": {
+        "en": "Uses a contrast word when the sentence agrees with the one before.",
+        "id": "Memakai kata pertentangan padahal kalimatnya sejalan dengan kalimat sebelumnya."
+      },
+      "remediation": {
+        "en": "Read both sentences and ask: 'Same direction or opposite direction?' Show it with two arrows.",
+        "id": "Baca kedua kalimat dan tanyakan: 'Searah atau berlawanan arah?' Tunjukkan dengan dua tanda panah."
+      }
+    },
+    {
+      "code": "NEW_IDEA_AT_END",
+      "description": {
+        "en": "Ends with a new idea instead of summing up.",
+        "id": "Mengakhiri dengan gagasan baru, bukan menegaskan."
+      },
+      "remediation": {
+        "en": "The bottom bun must match the top bun. Reread the topic sentence before writing the last line.",
+        "id": "Roti bawah harus cocok dengan roti atas. Baca ulang kalimat utama sebelum menulis kalimat terakhir."
+      }
+    },
+    {
+      "code": "COPIES_TOPIC_SENTENCE",
+      "description": {
+        "en": "Repeats the topic sentence word for word as the conclusion.",
+        "id": "Mengulang kalimat utama kata demi kata sebagai penutup."
+      },
+      "remediation": {
+        "en": "Begin with a summing-up word (So, In short / Jadi, Dengan demikian) and mention two of the supporting points in the sentence.",
+        "id": "Mulai dengan kata penegas (Jadi, Dengan demikian) dan sebut dua pokok dari kalimat penjelas."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Write a second paragraph that shows the idea from the other side (for example, one problem with bamboo, such as it can crack when it dries), with its own topic sentence.",
+      "id": "Tulis paragraf kedua yang menunjukkan sisi lain (misalnya satu kekurangan bambu, seperti bisa retak saat kering), dengan kalimat utamanya sendiri."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Offer sentence starters for each part of the hamburger for children who find it hard to begin.",
+      "id": "Sediakan awalan kalimat untuk setiap bagian roti isi bagi anak yang sulit memulai."
+    },
+    {
+      "en": "A child who finds handwriting slow can say the paragraph aloud while an adult types or scribes, then edit it.",
+      "id": "Anak yang menulis lambat bisa mengucapkan paragrafnya sementara orang dewasa menuliskan, lalu menyuntingnya."
+    }
+  ],
+  "safety": {
+    "supervision": "independent_ok",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "No safety concerns. If you look at real bamboo, an adult handles split pieces, which can have sharp edges.",
+        "id": "Tidak ada masalah keselamatan. Jika melihat bambu sungguhan, orang dewasa yang memegang bilah bambu, karena tepinya bisa tajam."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      10,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child writes a new paragraph with a fitting topic sentence, three on-topic supporting sentences with linking words and a new-words conclusion, on two occasions.",
+      "id": "Dikuasai jika anak menulis paragraf baru dengan kalimat utama yang tepat, tiga kalimat penjelas yang sesuai topik dengan kata penghubung, dan penutup dengan kata baru, pada dua kesempatan."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "fact_check"
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "parallel-distractors",
+      "single-answer-check",
+      "misconception-map",
+      "transfer-not-recall",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-literacy",
+    "createdAt": "2026-11-10"
+  }
+}

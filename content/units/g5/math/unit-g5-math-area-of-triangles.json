@@ -1,0 +1,444 @@
+{
+  "id": "unit-g5-math-area-of-triangles",
+  "version": "1.0.0",
+  "level": "g5",
+  "framework": "math",
+  "strand": "measurement",
+  "title": {
+    "en": "Area of triangles",
+    "id": "Luas segitiga"
+  },
+  "prerequisites": [
+    "unit-g4-math-area-of-rectangles",
+    "unit-g4-math-angles"
+  ],
+  "objective": {
+    "en": "Find the area of any triangle as 1/2 × base × height, choosing a height that is perpendicular to the chosen base (including heights outside an obtuse triangle), and find the area of composite figures and a missing base or height.",
+    "id": "Menentukan luas segitiga apa pun sebagai 1/2 × alas × tinggi, memilih tinggi yang tegak lurus terhadap alas yang dipilih (termasuk tinggi di luar segitiga tumpul), serta menentukan luas bangun gabungan dan alas atau tinggi yang belum diketahui."
+  },
+  "rationale": {
+    "en": "Cutting a rectangle along its diagonal shows that a triangle is half of a rectangle with the same base and height. The hard idea is height: it is the perpendicular distance to the base, not a slanting side. Using the right-angle tester from the angles unit makes this concrete.",
+    "id": "Memotong persegi panjang sepanjang diagonalnya menunjukkan bahwa segitiga adalah setengah dari persegi panjang dengan alas dan tinggi yang sama. Gagasan yang sulit adalah tinggi: jarak tegak lurus ke alas, bukan sisi miring. Memakai alat uji sudut siku-siku dari unit sudut membuatnya konkret."
+  },
+  "outcomes": [
+    {
+      "en": "Explains with a cut rectangle why a triangle's area is half of base × height.",
+      "id": "Menjelaskan dengan persegi panjang yang dipotong mengapa luas segitiga setengah dari alas × tinggi."
+    },
+    {
+      "en": "Identifies the height that goes with a given base, including outside an obtuse triangle.",
+      "id": "Menentukan tinggi yang sesuai dengan alas tertentu, termasuk di luar segitiga tumpul."
+    },
+    {
+      "en": "Finds the area of composite figures and a missing base or height.",
+      "id": "Menentukan luas bangun gabungan dan alas atau tinggi yang belum diketahui."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can mark the height of a triangle with a right-angle symbol on the base.",
+      "id": "Aku bisa menandai tinggi segitiga dengan tanda sudut siku-siku pada alasnya."
+    },
+    {
+      "en": "I can explain why the slanting side is not the height.",
+      "id": "Aku bisa menjelaskan mengapa sisi miring bukan tinggi."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Cut the paper rectangles yourself before the lesson; let your child place and compare the pieces.",
+      "id": "Potong sendiri persegi panjang kertas sebelum belajar; biarkan anak menaruh dan membandingkan potongannya."
+    },
+    {
+      "en": "Ask 'which side is the base, and where is the height for that base?' for every triangle; any side can be the base.",
+      "id": "Tanyakan 'sisi mana alasnya, dan di mana tinggi untuk alas itu?' untuk setiap segitiga; sisi mana pun bisa menjadi alas."
+    },
+    {
+      "en": "Check each height with the folded right-angle tester from the angles unit.",
+      "id": "Periksa setiap tinggi dengan alat uji sudut siku-siku dari unit sudut."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Choose a base. Find the height: the straight-up distance from the base (or its extension) to the opposite corner.",
+      "id": "Pilih alas. Cari tingginya: jarak tegak lurus dari alas (atau perpanjangannya) ke sudut di depannya."
+    },
+    {
+      "en": "Multiply base × height and halve it. Write cm² or m².",
+      "id": "Kalikan alas × tinggi dan bagi dua. Tulis cm² atau m²."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Take an 8 cm by 6 cm paper rectangle cut along its diagonal into two triangles (the adult cuts). Lay one triangle on the other: they match, so each has half of 48 cm², which is 24 cm².",
+        "id": "Ambil persegi panjang kertas 8 cm kali 6 cm yang dipotong sepanjang diagonal menjadi dua segitiga (orang dewasa yang memotong). Tumpuk satu segitiga di atas yang lain: sama persis, jadi masing-masing setengah dari 48 cm², yaitu 24 cm²."
+      },
+      {
+        "en": "Draw any triangle inside a 10 cm by 5 cm rectangle with its base on the bottom side and its top corner on the top side; cut (the adult) and rearrange the two leftover pieces to cover the triangle exactly.",
+        "id": "Gambar segitiga apa saja di dalam persegi panjang 10 cm kali 5 cm dengan alas di sisi bawah dan puncak di sisi atas; orang dewasa memotong, lalu susun dua potongan sisa sehingga menutup segitiga itu dengan pas."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw an obtuse triangle with base 6 cm. Extend the base with a dotted line and draw the 4 cm height from the top corner down to the dotted line, with a right-angle mark.",
+        "id": "Gambar segitiga tumpul dengan alas 6 cm. Perpanjang alas dengan garis putus-putus dan gambar tinggi 4 cm dari puncak ke garis putus-putus, dengan tanda sudut siku-siku."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the formula area = 1/2 × base × height and rearrange it: height = 2 × area ÷ base.",
+        "id": "Tulis rumus luas = 1/2 × alas × tinggi dan ubah bentuknya: tinggi = 2 × luas ÷ alas."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Squared paper or card, a ruler, a pencil, the folded right-angle tester from the angles unit",
+      "id": "Kertas berpetak atau karton, penggaris, pensil, alat uji sudut siku-siku dari unit sudut"
+    },
+    {
+      "en": "Paper rectangles prepared and cut by the adult, glue or tape",
+      "id": "Persegi panjang kertas yang disiapkan dan dipotong orang dewasa, lem atau selotip"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Cut an 8 cm by 6 cm rectangle along its diagonal and prepare a 10 cm by 5 cm rectangle with a triangle drawn in it.",
+      "id": "Potong persegi panjang 8 cm kali 6 cm sepanjang diagonalnya dan siapkan persegi panjang 10 cm kali 5 cm dengan segitiga tergambar di dalamnya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "The two triangles from the 8 by 6 rectangle match exactly, so each triangle is 1/2 × 8 × 6 = 24 cm².",
+      "id": "Dua segitiga dari persegi panjang 8 kali 6 sama persis, jadi setiap segitiga 1/2 × 8 × 6 = 24 cm²."
+    },
+    {
+      "en": "A triangle with base 10 cm and height 5 cm: 1/2 × 10 × 5 = 25 cm², half of the 50 cm² rectangle around it.",
+      "id": "Segitiga dengan alas 10 cm dan tinggi 5 cm: 1/2 × 10 × 5 = 25 cm², setengah dari persegi panjang 50 cm² di sekitarnya."
+    },
+    {
+      "en": "Obtuse triangle: base 6 cm and the height measured outside the triangle is 4 cm. Area = 1/2 × 6 × 4 = 12 cm².",
+      "id": "Segitiga tumpul: alas 6 cm dan tinggi yang diukur di luar segitiga 4 cm. Luas = 1/2 × 6 × 4 = 12 cm²."
+    },
+    {
+      "en": "Right-angled triangle with sides 9 cm, 12 cm and 15 cm: the two sides at the right angle are base and height, so 1/2 × 9 × 12 = 54 cm². The 15 cm side slants and is not a height.",
+      "id": "Segitiga siku-siku dengan sisi 9 cm, 12 cm, dan 15 cm: dua sisi pada sudut siku-siku adalah alas dan tinggi, jadi 1/2 × 9 × 12 = 54 cm². Sisi 15 cm miring dan bukan tinggi."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Draw three different triangles with base 8 cm and height 5 cm (acute, right, obtuse) and show they all have area 20 cm².",
+      "id": "Gambar tiga segitiga berbeda dengan alas 8 cm dan tinggi 5 cm (lancip, siku-siku, tumpul) dan tunjukkan semuanya berluas 20 cm²."
+    },
+    {
+      "en": "Find a triangle shape at home (a kite, a roof drawing, a folded napkin), measure a base and its height, and work out the area.",
+      "id": "Cari bentuk segitiga di rumah (layang-layang, gambar atap, serbet yang dilipat), ukur alas dan tingginya, lalu hitung luasnya."
+    },
+    {
+      "en": "Design a flag made of a rectangle and a triangle and calculate its total area.",
+      "id": "Rancang bendera yang terdiri atas persegi panjang dan segitiga lalu hitung luas totalnya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A triangle has a base of 14 cm and a height of 9 cm. What is its area?",
+        "id": "Sebuah segitiga beralas 14 cm dan tinggi 9 cm. Berapa luasnya?"
+      },
+      "choices": {
+        "en": [
+          "63 cm²",
+          "126 cm²",
+          "23 cm²"
+        ],
+        "id": [
+          "63 cm²",
+          "126 cm²",
+          "23 cm²"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "1/2 × 14 × 9 = 7 × 9 = 63 cm².",
+        "id": "1/2 × 14 × 9 = 7 × 9 = 63 cm²."
+      },
+      "check": {
+        "expression": "1/2 * 14 * 9",
+        "result": "63"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_HALF",
+        "2": "ADDS_DIMENSIONS"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A right-angled triangle has sides of 5 cm, 12 cm and 13 cm. The right angle is between the 5 cm and 12 cm sides. What is its area?",
+        "id": "Sebuah segitiga siku-siku bersisi 5 cm, 12 cm, dan 13 cm. Sudut siku-sikunya di antara sisi 5 cm dan 12 cm. Berapa luasnya?"
+      },
+      "choices": {
+        "en": [
+          "30 cm²",
+          "78 cm²",
+          "60 cm²"
+        ],
+        "id": [
+          "30 cm²",
+          "78 cm²",
+          "60 cm²"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The sides at the right angle are base and height: 1/2 × 5 × 12 = 30 cm².",
+        "id": "Sisi pada sudut siku-siku adalah alas dan tinggi: 1/2 × 5 × 12 = 30 cm²."
+      },
+      "check": {
+        "expression": "1/2 * 5 * 12",
+        "result": "30"
+      },
+      "distractorMisconceptions": {
+        "1": "USES_SLANT_SIDE_AS_HEIGHT",
+        "2": "FORGETS_HALF"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "An obtuse triangle has a base of 7 cm. Its height, drawn outside the triangle to the extended base, is 10 cm. What is its area?",
+        "id": "Sebuah segitiga tumpul beralas 7 cm. Tingginya, yang digambar di luar segitiga ke perpanjangan alas, 10 cm. Berapa luasnya?"
+      },
+      "choices": {
+        "en": [
+          "35 cm²",
+          "70 cm²",
+          "It cannot be found"
+        ],
+        "id": [
+          "35 cm²",
+          "70 cm²",
+          "Tidak bisa dihitung"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A height may lie outside the triangle. Area = 1/2 × 7 × 10 = 35 cm².",
+        "id": "Tinggi boleh berada di luar segitiga. Luas = 1/2 × 7 × 10 = 35 cm²."
+      },
+      "check": {
+        "expression": "1/2 * 7 * 10",
+        "result": "35"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_HALF",
+        "2": "HEIGHT_MUST_BE_INSIDE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A triangle has an area of 36 cm² and a base of 9 cm. What is its height?",
+        "id": "Sebuah segitiga berluas 36 cm² dan beralas 9 cm. Berapa tingginya?"
+      },
+      "choices": {
+        "en": [
+          "8 cm",
+          "4 cm",
+          "27 cm"
+        ],
+        "id": [
+          "8 cm",
+          "4 cm",
+          "27 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Base × height must be 2 × 36 = 72, so height = 72 ÷ 9 = 8 cm. Check: 1/2 × 9 × 8 = 36.",
+        "id": "Alas × tinggi harus 2 × 36 = 72, jadi tinggi = 72 ÷ 9 = 8 cm. Periksa: 1/2 × 9 × 8 = 36."
+      },
+      "check": {
+        "expression": "2 * 36 / 9",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_HALF",
+        "2": "SUBTRACTS_INSTEAD"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A card house shape is a 10 cm by 10 cm square with a triangle on top. The triangle's base is 10 cm and its height is 6 cm. What is the total area?",
+        "id": "Sebuah karton berbentuk rumah terdiri atas persegi 10 cm kali 10 cm dengan segitiga di atasnya. Alas segitiga 10 cm dan tingginya 6 cm. Berapa luas totalnya?"
+      },
+      "choices": {
+        "en": [
+          "130 cm²",
+          "160 cm²",
+          "30 cm²"
+        ],
+        "id": [
+          "130 cm²",
+          "160 cm²",
+          "30 cm²"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Square: 10 × 10 = 100 cm². Triangle: 1/2 × 10 × 6 = 30 cm². Total 100 + 30 = 130 cm².",
+        "id": "Persegi: 10 × 10 = 100 cm². Segitiga: 1/2 × 10 × 6 = 30 cm². Total 100 + 30 = 130 cm²."
+      },
+      "check": {
+        "expression": "10 * 10 + 1/2 * 10 * 6",
+        "result": "130"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_HALF",
+        "2": "COUNTS_ONE_PART_ONLY"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "FORGETS_HALF",
+      "description": {
+        "en": "Multiplies base × height and forgets to halve (or, working backwards, forgets to double).",
+        "id": "Mengalikan alas × tinggi dan lupa membagi dua (atau, saat menghitung mundur, lupa mengalikan dua)."
+      },
+      "remediation": {
+        "en": "Draw the rectangle around the triangle and shade the triangle: it covers only half of the rectangle.",
+        "id": "Gambar persegi panjang di sekitar segitiga dan arsir segitiganya: hanya menutup setengah persegi panjang."
+      }
+    },
+    {
+      "code": "ADDS_DIMENSIONS",
+      "description": {
+        "en": "Adds the base and height instead of multiplying.",
+        "id": "Menjumlahkan alas dan tinggi, bukan mengalikan."
+      },
+      "remediation": {
+        "en": "Count squares on squared paper: area is a number of squares, which comes from rows × columns.",
+        "id": "Hitung kotak di kertas berpetak: luas adalah banyak kotak, yang berasal dari baris × kolom."
+      }
+    },
+    {
+      "code": "USES_SLANT_SIDE_AS_HEIGHT",
+      "description": {
+        "en": "Uses a slanting side as the height.",
+        "id": "Memakai sisi miring sebagai tinggi."
+      },
+      "remediation": {
+        "en": "Test the side with the right-angle tester against the base: if it does not fit, it is not the height.",
+        "id": "Uji sisi itu dengan alat uji sudut siku-siku terhadap alas: jika tidak pas, itu bukan tinggi."
+      }
+    },
+    {
+      "code": "HEIGHT_MUST_BE_INSIDE",
+      "description": {
+        "en": "Thinks the height must lie inside the triangle, so an obtuse triangle's area cannot be found.",
+        "id": "Mengira tinggi harus berada di dalam segitiga, sehingga luas segitiga tumpul tidak bisa dihitung."
+      },
+      "remediation": {
+        "en": "Put the obtuse triangle inside a rectangle with the same base line and height and see that it is still half of a related rectangle.",
+        "id": "Letakkan segitiga tumpul di dalam persegi panjang dengan garis alas dan tinggi yang sama, lalu lihat bahwa segitiga itu tetap setengah dari persegi panjang terkait."
+      }
+    },
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Subtracts the base from the area when finding a missing height.",
+        "id": "Mengurangkan alas dari luas saat mencari tinggi yang belum diketahui."
+      },
+      "remediation": {
+        "en": "Write the formula with a box for the unknown, 1/2 × 9 × ? = 36, and try values in it.",
+        "id": "Tulis rumus dengan kotak untuk yang dicari, 1/2 × 9 × ? = 36, dan coba beberapa nilai."
+      }
+    },
+    {
+      "code": "COUNTS_ONE_PART_ONLY",
+      "description": {
+        "en": "Gives the area of only one part of a composite figure.",
+        "id": "Hanya memberi luas satu bagian dari bangun gabungan."
+      },
+      "remediation": {
+        "en": "Colour each part differently and write its area inside it before adding.",
+        "id": "Warnai setiap bagian berbeda dan tulis luasnya di dalamnya sebelum menjumlahkan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Draw a triangle on squared paper with an area of exactly 18 cm² in three different ways, and find one where no side is horizontal.",
+      "id": "Gambar segitiga di kertas berpetak dengan luas tepat 18 cm² dengan tiga cara berbeda, dan cari satu yang tidak punya sisi mendatar."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Cut-out triangles can be compared by touch; squared paper with large squares helps children who find accurate drawing hard.",
+      "id": "Segitiga potongan bisa dibandingkan dengan meraba; kertas berpetak besar membantu anak yang kesulitan menggambar dengan tepat."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult does all the cutting of paper and card.",
+        "id": "Orang dewasa yang memotong semua kertas dan karton."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child finds the area of three new triangles (including one obtuse and one with a slanting side given), one missing height and one composite area, on two different days.",
+      "id": "Dikuasai jika anak menentukan luas tiga segitiga baru (termasuk satu tumpul dan satu dengan sisi miring yang diberikan), satu tinggi yang dicari, dan satu luas bangun gabungan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

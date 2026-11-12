@@ -1,0 +1,463 @@
+{
+  "id": "unit-g5-math-multiplying-fractions",
+  "version": "1.0.0",
+  "level": "g5",
+  "framework": "math",
+  "strand": "fractions",
+  "title": {
+    "en": "Multiplying fractions",
+    "id": "Perkalian pecahan"
+  },
+  "prerequisites": [
+    "unit-g5-math-adding-unlike-fractions",
+    "unit-g4-math-area-of-rectangles"
+  ],
+  "objective": {
+    "en": "Multiply a fraction by a whole number, a fraction by a fraction, and a mixed number by a whole number, using sets and area models, and simplify the product.",
+    "id": "Mengalikan pecahan dengan bilangan cacah, pecahan dengan pecahan, dan pecahan campuran dengan bilangan cacah, memakai model himpunan dan model luas, lalu menyederhanakan hasilnya."
+  },
+  "rationale": {
+    "en": "'Of' means multiply: 2/3 of 1/2 is a part of a part. Folding paper one way and then the other shows why the denominators multiply, and a set of real objects shows 3/4 of 8. Children who expect multiplication always to make numbers bigger meet a product smaller than both factors here.",
+    "id": "'Dari' berarti kali: 2/3 dari 1/2 adalah bagian dari bagian. Melipat kertas ke satu arah lalu ke arah lain menunjukkan mengapa penyebutnya dikalikan, dan sekumpulan benda nyata menunjukkan 3/4 dari 8. Anak yang mengira perkalian selalu memperbesar bilangan di sini bertemu hasil kali yang lebih kecil dari kedua faktornya."
+  },
+  "outcomes": [
+    {
+      "en": "Finds a fraction of a whole number of objects or units.",
+      "id": "Menentukan pecahan dari sejumlah benda atau satuan."
+    },
+    {
+      "en": "Multiplies two proper fractions using an area model and then the rule numerator × numerator over denominator × denominator.",
+      "id": "Mengalikan dua pecahan biasa dengan model luas lalu dengan aturan pembilang × pembilang per penyebut × penyebut."
+    },
+    {
+      "en": "Multiplies a mixed number by a whole number and simplifies.",
+      "id": "Mengalikan pecahan campuran dengan bilangan cacah dan menyederhanakannya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can fold paper to show 2/3 × 1/2 and explain why the answer is 2/6.",
+      "id": "Aku bisa melipat kertas untuk menunjukkan 2/3 × 1/2 dan menjelaskan mengapa hasilnya 2/6."
+    },
+    {
+      "en": "I can say before calculating whether the product will be less than 1.",
+      "id": "Aku bisa menyebut sebelum menghitung apakah hasil kalinya akan kurang dari 1."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Read × as 'of' when the first factor is a fraction: 3/4 × 8 is 3/4 of 8.",
+      "id": "Baca × sebagai 'dari' ketika faktor pertama pecahan: 3/4 × 8 adalah 3/4 dari 8."
+    },
+    {
+      "en": "Fold a sheet of paper for every fraction × fraction example until the rule is obvious to your child; do not give the rule first.",
+      "id": "Lipat selembar kertas untuk setiap contoh pecahan × pecahan sampai aturannya jelas bagi anak; jangan memberi aturannya lebih dulu."
+    },
+    {
+      "en": "Ask for a quick estimate: 'Is 2/5 of 7/8 more or less than 7/8?'",
+      "id": "Minta perkiraan cepat: 'Apakah 2/5 dari 7/8 lebih atau kurang dari 7/8?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "For a fraction of a number: divide by the denominator, then multiply by the numerator.",
+      "id": "Untuk pecahan dari suatu bilangan: bagi dengan penyebut, lalu kalikan dengan pembilang."
+    },
+    {
+      "en": "For a fraction of a fraction: multiply the numerators and multiply the denominators, then simplify.",
+      "id": "Untuk pecahan dari pecahan: kalikan pembilang dengan pembilang dan penyebut dengan penyebut, lalu sederhanakan."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Put 8 spoons on the table and split them into 4 equal groups; take 3 groups. 3/4 of 8 is 6 spoons.",
+        "id": "Taruh 8 sendok di meja dan bagi menjadi 4 kelompok sama; ambil 3 kelompok. 3/4 dari 8 adalah 6 sendok."
+      },
+      {
+        "en": "Fold a sheet of paper in half and shade one half. Fold it into thirds the other way and shade 2/3 of the shaded half with another colour. Unfold: 2 of the 6 equal parts are double-shaded.",
+        "id": "Lipat selembar kertas menjadi dua dan arsir setengahnya. Lipat menjadi tiga ke arah lain dan arsir 2/3 dari bagian yang sudah diarsir dengan warna lain. Buka: 2 dari 6 bagian sama terarsir dua kali."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw an area model for 3/5 × 2/7: a rectangle split into 5 columns and 7 rows; shade 3 columns and 2 rows and count the 6 overlap squares out of 35.",
+        "id": "Gambar model luas untuk 3/5 × 2/7: persegi panjang yang dibagi menjadi 5 kolom dan 7 baris; arsir 3 kolom dan 2 baris lalu hitung 6 kotak yang bertumpang dari 35."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the rule from the pictures: 2/3 × 1/2 = (2 × 1)/(3 × 2) = 2/6 = 1/3, and 1 1/2 × 4 = 3/2 × 4 = 12/2 = 6.",
+        "id": "Tulis aturan dari gambar: 2/3 × 1/2 = (2 × 1)/(3 × 2) = 2/6 = 1/3, dan 1 1/2 × 4 = 3/2 × 4 = 12/2 = 6."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Several sheets of scrap paper for folding, two coloured pencils",
+      "id": "Beberapa lembar kertas bekas untuk dilipat, dua pensil warna"
+    },
+    {
+      "en": "8 to 15 identical small household objects such as spoons or bottle tops",
+      "id": "8 sampai 15 benda rumah tangga kecil yang sama, seperti sendok atau tutup botol"
+    },
+    {
+      "en": "Squared paper and a ruler for area models",
+      "id": "Kertas berpetak dan penggaris untuk model luas"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw a few blank rectangles on squared paper for area models.",
+      "id": "Gambar beberapa persegi panjang kosong di kertas berpetak untuk model luas."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "3/4 of 8: 8 ÷ 4 = 2 in each quarter, and 3 quarters is 3 × 2 = 6.",
+      "id": "3/4 dari 8: 8 ÷ 4 = 2 di setiap perempat, dan 3 perempat adalah 3 × 2 = 6."
+    },
+    {
+      "en": "2/3 × 1/2 by folding: the paper ends up in 3 × 2 = 6 equal parts, and the double-shaded part is 2 × 1 = 2 of them, so 2/6 = 1/3.",
+      "id": "2/3 × 1/2 dengan melipat: kertasnya menjadi 3 × 2 = 6 bagian sama, dan bagian yang terarsir dua kali adalah 2 × 1 = 2 bagian, jadi 2/6 = 1/3."
+    },
+    {
+      "en": "3/5 × 2/7 with the area model: 6 overlap squares out of 35, so 6/35. Check the rule: 3 × 2 = 6 and 5 × 7 = 35.",
+      "id": "3/5 × 2/7 dengan model luas: 6 kotak bertumpang dari 35, jadi 6/35. Periksa aturannya: 3 × 2 = 6 dan 5 × 7 = 35."
+    },
+    {
+      "en": "Story: Ibu has 3/4 l of milk and uses 2/5 of it in a pudding. 2/5 × 3/4 = 6/20 = 3/10 l.",
+      "id": "Cerita: Ibu punya 3/4 l susu dan memakai 2/5-nya untuk puding. 2/5 × 3/4 = 6/20 = 3/10 l."
+    },
+    {
+      "en": "Mixed number: 1 1/2 × 4 = 4 + 1/2 × 4 = 4 + 2 = 6. Or 3/2 × 4 = 12/2 = 6.",
+      "id": "Pecahan campuran: 1 1/2 × 4 = 4 + 1/2 × 4 = 4 + 2 = 6. Atau 3/2 × 4 = 12/2 = 6."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Fold paper to show three products of your choice and write each answer in simplest form.",
+      "id": "Lipat kertas untuk menunjukkan tiga hasil kali pilihanmu dan tulis setiap jawaban dalam bentuk paling sederhana."
+    },
+    {
+      "en": "Recipe scaling: halve a recipe that uses 3/4 cup of sugar and 1 1/2 cups of flour; write the new amounts.",
+      "id": "Mengubah resep: buat setengah resep yang memakai 3/4 cangkir gula dan 1 1/2 cangkir tepung; tulis takaran barunya."
+    },
+    {
+      "en": "Estimate first: sort products such as 4/5 × 9, 2/3 × 3/4 and 1 1/4 × 8 into 'less than the whole number' and 'more than the whole number', then calculate.",
+      "id": "Perkirakan dulu: pilah hasil kali seperti 4/5 × 9, 2/3 × 3/4, dan 1 1/4 × 8 ke 'kurang dari bilangan cacahnya' dan 'lebih dari bilangan cacahnya', lalu hitung."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "2/5 × 15 = ?",
+        "id": "2/5 × 15 = ?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "2/75",
+          "37 1/2"
+        ],
+        "id": [
+          "6",
+          "2/75",
+          "37 1/2"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2/5 of 15: 15 ÷ 5 = 3, and 2 × 3 = 6.",
+        "id": "2/5 dari 15: 15 ÷ 5 = 3, dan 2 × 3 = 6."
+      },
+      "check": {
+        "expression": "2/5 * 15",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "MULTIPLIES_DENOMINATOR_BY_WHOLE",
+        "2": "DIVIDES_BY_NUMERATOR"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "3/4 × 2/3 = ?",
+        "id": "3/4 × 2/3 = ?"
+      },
+      "choices": {
+        "en": [
+          "1/2",
+          "5/7",
+          "9/8"
+        ],
+        "id": [
+          "1/2",
+          "5/7",
+          "9/8"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "(3 × 2)/(4 × 3) = 6/12 = 1/2.",
+        "id": "(3 × 2)/(4 × 3) = 6/12 = 1/2."
+      },
+      "check": {
+        "expression": "3/4 * 2/3",
+        "result": "1/2"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TOPS_AND_BOTTOMS",
+        "2": "CROSS_MULTIPLIES"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A ribbon is 7/8 m long. Aya uses 2/5 of it for a bookmark. How long is the piece she uses?",
+        "id": "Sebuah pita panjangnya 7/8 m. Aya memakai 2/5-nya untuk pembatas buku. Berapa panjang potongan yang dipakai?"
+      },
+      "choices": {
+        "en": [
+          "7/20 m",
+          "9/13 m",
+          "35/16 m"
+        ],
+        "id": [
+          "7/20 m",
+          "9/13 m",
+          "35/16 m"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2/5 of 7/8 = (2 × 7)/(5 × 8) = 14/40 = 7/20 m. It is less than 7/8 m, as expected.",
+        "id": "2/5 dari 7/8 = (2 × 7)/(5 × 8) = 14/40 = 7/20 m. Hasilnya kurang dari 7/8 m, sesuai perkiraan."
+      },
+      "check": {
+        "expression": "2/5 * 7/8",
+        "result": "7/20"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_TOPS_AND_BOTTOMS",
+        "2": "DIVIDES_INSTEAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A rectangular mat is 3/4 m long and 5/6 m wide. What is its area?",
+        "id": "Sebuah tikar persegi panjang panjangnya 3/4 m dan lebarnya 5/6 m. Berapa luasnya?"
+      },
+      "choices": {
+        "en": [
+          "5/8 m²",
+          "19/12 m²",
+          "8/10 m²"
+        ],
+        "id": [
+          "5/8 m²",
+          "19/12 m²",
+          "8/10 m²"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Area = length × width = 3/4 × 5/6 = 15/24 = 5/8 m².",
+        "id": "Luas = panjang × lebar = 3/4 × 5/6 = 15/24 = 5/8 m²."
+      },
+      "check": {
+        "expression": "3/4 * 5/6",
+        "result": "5/8"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "ADDS_TOPS_AND_BOTTOMS"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "2 1/3 × 6 = ?",
+        "id": "2 1/3 × 6 = ?"
+      },
+      "choices": {
+        "en": [
+          "14",
+          "12 1/3",
+          "8 1/3"
+        ],
+        "id": [
+          "14",
+          "12 1/3",
+          "8 1/3"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2 × 6 = 12 and 1/3 × 6 = 2, so 12 + 2 = 14. Or 7/3 × 6 = 42/3 = 14.",
+        "id": "2 × 6 = 12 dan 1/3 × 6 = 2, jadi 12 + 2 = 14. Atau 7/3 × 6 = 42/3 = 14."
+      },
+      "check": {
+        "expression": "(2 + 1/3) * 6",
+        "result": "14"
+      },
+      "distractorMisconceptions": {
+        "1": "MULTIPLIES_WHOLE_PART_ONLY",
+        "2": "ADDS_INSTEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "MULTIPLIES_DENOMINATOR_BY_WHOLE",
+      "description": {
+        "en": "Multiplies the denominator by the whole number as well as, or instead of, the numerator.",
+        "id": "Mengalikan penyebut dengan bilangan cacah, juga atau bukan pembilangnya."
+      },
+      "remediation": {
+        "en": "Share 15 real objects into 5 groups and take 2; the result is a number of objects, not a tiny fraction.",
+        "id": "Bagikan 15 benda nyata ke 5 kelompok dan ambil 2; hasilnya sejumlah benda, bukan pecahan yang sangat kecil."
+      }
+    },
+    {
+      "code": "DIVIDES_BY_NUMERATOR",
+      "description": {
+        "en": "Divides by the numerator and multiplies by the denominator, swapping their roles.",
+        "id": "Membagi dengan pembilang dan mengalikan dengan penyebut, menukar perannya."
+      },
+      "remediation": {
+        "en": "Say what the denominator does: it says how many equal groups to make. Then the numerator says how many groups to take.",
+        "id": "Ucapkan tugas penyebut: menunjukkan berapa kelompok sama yang dibuat. Lalu pembilang menunjukkan berapa kelompok yang diambil."
+      }
+    },
+    {
+      "code": "ADDS_TOPS_AND_BOTTOMS",
+      "description": {
+        "en": "Adds the numerators and adds the denominators.",
+        "id": "Menjumlahkan pembilang dengan pembilang dan penyebut dengan penyebut."
+      },
+      "remediation": {
+        "en": "Fold the paper and count the parts: the number of parts multiplies with each fold, it does not add.",
+        "id": "Lipat kertas dan hitung bagiannya: banyak bagian berlipat dengan setiap lipatan, tidak bertambah."
+      }
+    },
+    {
+      "code": "CROSS_MULTIPLIES",
+      "description": {
+        "en": "Multiplies across diagonally, as in the method for comparing fractions.",
+        "id": "Mengalikan silang, seperti cara membandingkan pecahan."
+      },
+      "remediation": {
+        "en": "Draw the area model: the shaded overlap is counted out of rows × columns, the two denominators.",
+        "id": "Gambar model luas: bagian yang bertumpang dihitung dari baris × kolom, yaitu kedua penyebut."
+      }
+    },
+    {
+      "code": "DIVIDES_INSTEAD",
+      "description": {
+        "en": "Divides the fractions because the answer is a part of something.",
+        "id": "Membagi pecahan karena jawabannya bagian dari sesuatu."
+      },
+      "remediation": {
+        "en": "Replace the fraction with a whole number in the story ('2 of 7 m'): 'of' with a fraction still means multiply.",
+        "id": "Ganti pecahan dengan bilangan cacah dalam cerita ('2 dari 7 m'): 'dari' dengan pecahan tetap berarti kali."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the two numbers instead of multiplying them.",
+        "id": "Menjumlahkan kedua bilangan, bukan mengalikannya."
+      },
+      "remediation": {
+        "en": "Draw the mat to scale on squared paper and count the area squares; adding gives a length, not an area.",
+        "id": "Gambar tikar dengan skala di kertas berpetak dan hitung kotak luasnya; menjumlahkan memberi panjang, bukan luas."
+      }
+    },
+    {
+      "code": "MULTIPLIES_WHOLE_PART_ONLY",
+      "description": {
+        "en": "Multiplies only the whole-number part of a mixed number and keeps the fraction unchanged.",
+        "id": "Hanya mengalikan bagian bilangan cacah dari pecahan campuran dan membiarkan pecahannya."
+      },
+      "remediation": {
+        "en": "Draw 6 bars of 2 1/3 each: the six thirds must be counted too, and they make 2 more wholes.",
+        "id": "Gambar 6 batang masing-masing 2 1/3: keenam pertiga harus dihitung juga, dan menjadi 2 utuh lagi."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Find two fractions whose product is 1/6 in three different ways, and explain why multiplying by a fraction less than 1 makes the number smaller.",
+      "id": "Cari dua pecahan yang hasil kalinya 1/6 dengan tiga cara berbeda, dan jelaskan mengapa mengalikan dengan pecahan kurang dari 1 memperkecil bilangan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Folding and touching the double-shaded part helps children who think best with their hands; let them say the rule in their own words before writing it.",
+      "id": "Melipat dan meraba bagian yang terarsir dua kali membantu anak yang lebih mudah berpikir dengan tangan; biarkan mereka mengucapkan aturannya dengan kata sendiri sebelum menulis."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Small bottle tops are a choking risk for younger siblings: count them back into a container after the lesson.",
+        "id": "Tutup botol kecil berbahaya tertelan oleh adik yang lebih kecil: hitung dan kembalikan ke wadah setelah belajar."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 30,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves four new products (a fraction of a number, two fraction × fraction, one mixed number) in simplest form and draws a model for one, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan empat hasil kali baru (pecahan dari bilangan, dua pecahan × pecahan, satu pecahan campuran) dalam bentuk paling sederhana dan menggambar model untuk salah satunya, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}
