@@ -1,6 +1,6 @@
 {
   "id": "unit-g5-stem-series-parallel-leds",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g5",
   "framework": "stem",
   "strand": "electronics",
@@ -101,8 +101,8 @@
       "id": "2 LED merah standar 5 mm (atau satu merah dan satu kuning; bukan putih, biru, atau hijau, yang butuh lebih dari 3 volt)"
     },
     {
-      "en": "2 resistors of about 100 to 220 ohms, one for each LED",
-      "id": "2 resistor sekitar 100 sampai 220 ohm, satu untuk setiap LED"
+      "en": "2 resistors of 220 ohms, one for each LED, and 1 extra 100-ohm resistor for comparing brightness",
+      "id": "2 resistor 220 ohm, satu untuk setiap LED, dan 1 resistor 100 ohm tambahan untuk membandingkan terang"
     },
     {
       "en": "6 crocodile-clip leads",
@@ -129,12 +129,12 @@
       "id": "LED seri. Urutan sambungan: kabel merah → resistor → kaki panjang LED A; kaki pendek LED A → kaki panjang LED B; kaki pendek LED B → kabel hitam. Tebakan: 'keduanya menyala, sedikit redup'. Nyalakan: keduanya tetap gelap, atau menyala sangat redup. Mengapa? LED merah butuh sekitar 2 volt sebelum menyala. Pada rangkaian seri kedua LED berbagi dorongan baterai, dan bersama-sama butuh sekitar 2 + 2 = 4 volt, lebih dari 3 volt yang tersedia."
     },
     {
-      "en": "Parallel LEDs. Branch A: red wire → resistor A → long leg of LED A; short leg of LED A → black wire. Branch B: clip a new lead onto the same metal end of the red wire → resistor B → long leg of LED B; short leg of LED B → a lead clipped onto the same metal end of the black wire. Switch on: both light brightly, because each branch gets the full 3 volts. Switch off, unclip branch A's LED, switch on: LED B stays lit. Separate paths work separately. Two branches draw about twice the current, so the batteries run down faster.",
-      "id": "LED paralel. Cabang A: kabel merah → resistor A → kaki panjang LED A; kaki pendek LED A → kabel hitam. Cabang B: jepitkan kabel baru ke ujung logam kabel merah yang sama → resistor B → kaki panjang LED B; kaki pendek LED B → kabel yang dijepitkan ke ujung logam kabel hitam yang sama. Nyalakan: keduanya menyala terang, karena setiap cabang mendapat 3 volt penuh. Matikan, lepas LED cabang A, nyalakan: LED B tetap menyala. Jalur terpisah bekerja terpisah. Dua cabang mengalirkan sekitar dua kali arus, sehingga baterai lebih cepat habis."
+      "en": "Parallel LEDs, six leads, holder off. Lead 1: red wire → first leg of resistor A. Lead 2: second leg of resistor A → long leg of LED A. Lead 3: short leg of LED A → black wire. Lead 4: first leg of resistor A → first leg of resistor B. Lead 5: second leg of resistor B → long leg of LED B. Lead 6: short leg of LED B → short leg of LED A. Switch on: both light brightly, because each branch gets the full 3 volts. Switch off, unclip lead 2, switch on: LED A goes out but LED B stays lit. Separate paths work separately. Two branches draw about twice the current, so the batteries run down faster.",
+      "id": "LED paralel, enam kabel, saklar tempat baterai mati. Kabel 1: kabel merah → kaki pertama resistor A. Kabel 2: kaki kedua resistor A → kaki panjang LED A. Kabel 3: kaki pendek LED A → kabel hitam. Kabel 4: kaki pertama resistor A → kaki pertama resistor B. Kabel 5: kaki kedua resistor B → kaki panjang LED B. Kabel 6: kaki pendek LED B → kaki pendek LED A. Nyalakan: keduanya menyala terang, karena setiap cabang mendapat 3 volt penuh. Matikan, lepas kabel 2, nyalakan: LED A padam tetapi LED B tetap menyala. Jalur terpisah bekerja terpisah. Dua cabang mengalirkan sekitar dua kali arus, sehingga baterai lebih cepat habis."
     },
     {
-      "en": "Switch logic, one LED and one resistor. 'And' circuit: red wire → foil switch 1 → foil switch 2 → resistor → long leg; short leg → black wire. Only pressing both switches lights the LED. 'Or' circuit: red wire → both switch 1 and switch 2 side by side → both join to the resistor → long leg; short leg → black wire. Pressing either switch lights it. A safety guard that needs two hands pressed is 'and'; a doorbell with buttons at front and back is 'or'.",
-      "id": "Logika saklar, satu LED dan satu resistor. Rangkaian 'dan': kabel merah → saklar foil 1 → saklar foil 2 → resistor → kaki panjang; kaki pendek → kabel hitam. Hanya menekan kedua saklar yang menyalakan LED. Rangkaian 'atau': kabel merah → saklar 1 dan saklar 2 berdampingan → keduanya bergabung ke resistor → kaki panjang; kaki pendek → kabel hitam. Menekan salah satu saklar menyalakannya. Pengaman yang butuh dua tangan menekan adalah 'dan'; bel pintu dengan tombol di depan dan belakang adalah 'atau'."
+      "en": "Switch logic, one LED and one resistor, holder off for every change. 'And' circuit (5 leads): lead 1 from the red wire to switch 1's left foil; lead 2 from switch 1's right foil to switch 2's left foil; lead 3 from switch 2's right foil to the resistor's first leg; lead 4 from the resistor's other leg to the LED's long leg; lead 5 from the LED's short leg to the black wire. Only pressing both switches lights the LED. 'Or' circuit (6 leads): lead 1 from the red wire to switch 1's left foil; lead 2 from the red wire to switch 2's left foil; lead 3 from switch 1's right foil to the resistor's first leg; lead 4 from switch 2's right foil to the same resistor leg; lead 5 from the resistor's other leg to the LED's long leg; lead 6 from the LED's short leg to the black wire. Pressing either switch lights it. Nothing from a switch ever goes to the black wire. A safety guard that needs two hands pressed is 'and'; a doorbell with buttons at front and back is 'or'.",
+      "id": "Logika saklar, satu LED dan satu resistor, saklar tempat baterai dimatikan setiap ada perubahan. Rangkaian 'dan' (5 kabel): kabel 1 dari kabel merah ke foil kiri saklar 1; kabel 2 dari foil kanan saklar 1 ke foil kiri saklar 2; kabel 3 dari foil kanan saklar 2 ke kaki pertama resistor; kabel 4 dari kaki resistor yang lain ke kaki panjang LED; kabel 5 dari kaki pendek LED ke kabel hitam. Hanya menekan kedua saklar yang menyalakan LED. Rangkaian 'atau' (6 kabel): kabel 1 dari kabel merah ke foil kiri saklar 1; kabel 2 dari kabel merah ke foil kiri saklar 2; kabel 3 dari foil kanan saklar 1 ke kaki pertama resistor; kabel 4 dari foil kanan saklar 2 ke kaki resistor yang sama; kabel 5 dari kaki resistor yang lain ke kaki panjang LED; kabel 6 dari kaki pendek LED ke kabel hitam. Menekan salah satu saklar menyalakannya. Tidak ada kabel dari saklar yang pernah langsung ke kabel hitam. Pengaman yang butuh dua tangan menekan adalah 'dan'; bel pintu dengan tombol di depan dan belakang adalah 'atau'."
     }
   ],
   "practice": [
@@ -342,8 +342,8 @@
         "id": "Mengira cabang yang tersisa mendapat bagian cabang lain dan menjadi lebih terang."
       },
       "remediation": {
-        "en": "Compare LED B's brightness before and after unclipping A, side by side with a third LED on its own: they match.",
-        "id": "Bandingkan terangnya LED B sebelum dan sesudah A dilepas, berdampingan dengan LED ketiga yang dirangkai sendiri: sama terangnya."
+        "en": "Compare LED B's brightness before and after unclipping LED A's lead: it looks the same.",
+        "id": "Bandingkan terangnya LED B sebelum dan sesudah kabel LED A dilepas: terlihat sama."
       }
     },
     {

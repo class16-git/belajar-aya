@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-stem-swap-sort-number-cards",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "stem",
   "strand": "algorithms",
@@ -151,12 +151,12 @@
         "en": [
           "2 swaps",
           "1 swap",
-          "3 swaps"
+          "4 swaps"
         ],
         "id": [
           "2 tukar",
           "1 tukar",
-          "3 tukar"
+          "4 tukar"
         ]
       },
       "answer": 0,
@@ -259,10 +259,6 @@
       "distractorMisconceptions": {
         "1": "IGNORES_THE_BUG",
         "2": "STOPS_AFTER_FIRST_SWAP"
-      },
-      "check": {
-        "expression": "7",
-        "result": "7"
       }
     }
   ],

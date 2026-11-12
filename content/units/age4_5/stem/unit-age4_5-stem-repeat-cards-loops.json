@@ -1,6 +1,6 @@
 {
   "id": "unit-age4_5-stem-repeat-cards-loops",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age4_5",
   "framework": "stem",
   "strand": "sequencing",
@@ -70,7 +70,7 @@
       "id": "Satu kartu perulangan: panah melingkar besar dengan tiga titik untuk 'ulangi 3 kali'"
     },
     {
-      "en": "A loop of wool or a hair band drawn around the cards that repeat, or a big paper ring to lay around them",
+      "en": "A loop of wool or a big paper ring laid around the cards that repeat",
       "id": "Seutas benang wol melingkar, atau lingkaran kertas besar, untuk diletakkan mengelilingi kartu yang diulang"
     },
     {
@@ -170,33 +170,33 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "Inside the loop: stamp, clap. Repeat 2 times. Ask 'How many moves is that altogether?' What does your child answer after acting it out?",
-        "id": "Di dalam lingkaran: hentak, tepuk. Ulangi 2 kali. Tanya 'Semuanya berapa gerakan?' Apa jawaban anak setelah memperagakannya?"
+        "en": "Inside the loop: stamp, clap. Repeat 3 times. Ask 'How many moves is that altogether?' What does your child answer after acting it out?",
+        "id": "Di dalam lingkaran: hentak, tepuk. Ulangi 3 kali. Tanya 'Semuanya berapa gerakan?' Apa jawaban anak setelah memperagakannya?"
       },
       "choices": {
         "en": [
-          "4 moves",
+          "6 moves",
           "2 moves",
-          "3 moves"
+          "5 moves"
         ],
         "id": [
-          "4 gerakan",
+          "6 gerakan",
           "2 gerakan",
-          "3 gerakan"
+          "5 gerakan"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Two moves, done two times: stamp, clap, stamp, clap makes 4.",
-        "id": "Dua gerakan, dilakukan dua kali: hentak, tepuk, hentak, tepuk menjadi 4."
+        "en": "Two moves, done three times: 2 × 3 = 6.",
+        "id": "Dua gerakan, dilakukan tiga kali: 2 × 3 = 6."
       },
       "distractorMisconceptions": {
         "1": "LOOP_RUNS_ONCE",
         "2": "ADDS_LOOP_NUMBER"
       },
       "check": {
-        "expression": "2 × 2",
-        "result": "4"
+        "expression": "2 × 3",
+        "result": "6"
       }
     },
     {

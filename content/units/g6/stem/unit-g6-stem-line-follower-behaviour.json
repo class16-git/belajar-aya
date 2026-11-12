@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-stem-line-follower-behaviour",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "stem",
   "strand": "robotics",
@@ -123,8 +123,8 @@
       "id": "Uji di lintasan: di tikungan landai robot bergoyang tetapi mengikuti garis, detak demi detak. Di belokan tajam robot maju 1 cm setiap detak, garis melewati sensor kanan dalam satu detak, dan sekarang kedua sensor membaca putih. Tabel berkata 'maju', jadi robot keluar dari kertas."
     },
     {
-      "en": "The hidden problem: 'white, white' means both 'centred on the line' and 'completely lost'. The robot cannot tell them apart. Two fixes to test, one at a time: (a) a memory variable last_turn that stores the last turn made; when both read white after a turn, keep turning that way; (b) a third sensor in the middle, which reads black when the robot is centred, so 'all white' can only mean lost. Laras tests fix (a) first, and the robot now finds the line again on the sharp bend.",
-      "id": "Masalah tersembunyi: 'putih, putih' berarti 'tepat di tengah garis' dan juga 'benar-benar tersesat'. Robot tidak bisa membedakannya. Dua perbaikan untuk diuji, satu per satu: (a) variabel ingatan belok_terakhir yang menyimpan belokan terakhir; jika keduanya putih setelah berbelok, terus berbelok ke arah itu; (b) sensor ketiga di tengah, yang membaca hitam saat robot di tengah, sehingga 'semua putih' hanya bisa berarti tersesat. Laras menguji perbaikan (a) dulu, dan sekarang robot menemukan garis lagi di belokan tajam."
+      "en": "The hidden problem: 'white, white' means both 'centred on the line' and 'completely lost'. The robot cannot tell them apart. Two fixes to test, one at a time: (a) a memory variable last_seen that stores which sensor last read black, and a counter lost_ticks. When both read white, move forward and add 1 to lost_ticks; when either sensor reads black, set lost_ticks to 0. If lost_ticks reaches 3, the robot is lost: turn towards last_seen until a sensor reads black. (b) a third sensor in the middle, which reads black when the robot is centred, so 'all white' can only mean lost. Laras tests fix (a) on both the gentle curve and the sharp bend; it still follows the curve and now finds the line again after the bend.",
+      "id": "Masalah tersembunyi: 'putih, putih' berarti 'tepat di tengah garis' dan juga 'benar-benar tersesat'. Robot tidak bisa membedakannya. Dua perbaikan untuk diuji, satu per satu: (a) variabel ingatan terakhir_terlihat yang menyimpan sensor mana yang terakhir membaca hitam, dan penghitung detak_tersesat. Jika keduanya putih, maju dan tambahkan 1 ke detak_tersesat; jika salah satu sensor membaca hitam, atur detak_tersesat menjadi 0. Jika detak_tersesat mencapai 3, robot tersesat: berbelok ke arah terakhir_terlihat sampai ada sensor yang membaca hitam. (b) sensor ketiga di tengah, yang membaca hitam saat robot di tengah, sehingga 'semua putih' hanya bisa berarti tersesat. Laras menguji perbaikan (a) di tikungan landai dan di belokan tajam; robot tetap mengikuti tikungan dan sekarang menemukan garis lagi setelah belokan."
     }
   ],
   "practice": [
@@ -177,8 +177,8 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "The line is between the sensors. The left sensor now reads black and the right reads white. Which action keeps the robot on the line?",
-        "id": "Garis ada di antara sensor. Sensor kiri sekarang membaca hitam dan sensor kanan putih. Gerakan mana yang membuat robot tetap di garis?"
+        "en": "The line was between the sensors. Now the left sensor reads black and the right reads white. Which action keeps the robot on the line?",
+        "id": "Tadinya garis di antara sensor. Sekarang sensor kiri membaca hitam dan sensor kanan putih. Gerakan mana yang membuat robot tetap di garis?"
       },
       "choices": {
         "en": [
@@ -237,19 +237,19 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "A robot moves 2 cm between sensor checks. A sharp bend must be corrected within 8 cm. How many checks does the robot get in that distance?",
-        "id": "Sebuah robot bergerak 2 cm di antara pemeriksaan sensor. Belokan tajam harus dikoreksi dalam jarak 8 cm. Berapa kali pemeriksaan yang didapat robot dalam jarak itu?"
+        "en": "A robot moves 2 cm between sensor checks. A sharp bend must be corrected within 8 cm. How many 2 cm moves fit in that distance?",
+        "id": "Sebuah robot bergerak 2 cm di antara pemeriksaan sensor. Belokan tajam harus dikoreksi dalam jarak 8 cm. Berapa gerakan 2 cm yang muat dalam jarak itu?"
       },
       "choices": {
         "en": [
-          "4 checks",
-          "16 checks",
-          "10 checks"
+          "4 moves",
+          "16 moves",
+          "10 moves"
         ],
         "id": [
-          "4 pemeriksaan",
-          "16 pemeriksaan",
-          "10 pemeriksaan"
+          "4 gerakan",
+          "16 gerakan",
+          "10 gerakan"
         ]
       },
       "answer": 0,
@@ -398,8 +398,8 @@
   ],
   "extension": [
     {
-      "en": "Write the version 2 behaviour as pseudocode with a forever loop, if-else rules and the last_turn variable, then trace it for the sharp bend in a table.",
-      "id": "Tulis perilaku versi 2 sebagai pseudokode dengan perulangan selamanya, aturan jika-jika tidak, dan variabel belok_terakhir, lalu telusuri untuk belokan tajam dalam tabel."
+      "en": "Write the version 2 behaviour as pseudocode with a forever loop, if-else rules and the variables last_seen and lost_ticks, then trace it for the sharp bend in a table.",
+      "id": "Tulis perilaku versi 2 sebagai pseudokode dengan perulangan selamanya, aturan jika-jika tidak, dan variabel terakhir_terlihat dan detak_tersesat, lalu telusuri untuk belokan tajam dalam tabel."
     }
   ],
   "accessibility": [

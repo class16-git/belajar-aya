@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-stem-ramps-and-wheels-pull-meter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "stem",
   "strand": "engineering_design",
@@ -14,7 +14,7 @@
   ],
   "objective": {
     "en": "Use a rubber-band pull meter to compare lifting a load straight up, dragging it up a ramp, and rolling it up the ramp on wheels, and explain the trade-off: an easier pull over a longer distance.",
-    "id": "Memakai pengukur tarikan dari karet gelang untuk membandingkan mengangkat beban lurus ke atas, menyeretnya di bidang miring, dan menggelindingkannya di bidang miring dengan roda, lalu menjelaskan tarik-ulurnya: tarikan lebih ringan tetapi jarak lebih jauh."
+    "id": "Memakai pengukur tarikan dari karet gelang untuk membandingkan mengangkat beban lurus ke atas, menyeretnya di bidang miring, dan menggelindingkannya di bidang miring dengan roda, lalu menjelaskan untung-ruginya: tarikan lebih ringan tetapi jarak lebih jauh."
   },
   "rationale": {
     "en": "Ramps (inclined planes) and wheels are simple machines children see every day: wheelchair ramps, trolleys, a motorbike pushed up a plank into a shop. A rubber band stretches more when you pull harder, so it becomes a simple measuring tool, and the numbers show what a ramp and wheels really save.",
@@ -55,7 +55,7 @@
     },
     {
       "en": "Measure the distance too: the height of the books, and the length of the ramp. Talk about the trade-off at the end.",
-      "id": "Ukur juga jaraknya: tinggi tumpukan buku dan panjang bidang miring. Bicarakan tarik-ulurnya di akhir."
+      "id": "Ukur juga jaraknya: tinggi tumpukan buku dan panjang bidang miring. Bicarakan untung-ruginya di akhir."
     }
   ],
   "childInstructions": [
@@ -273,7 +273,7 @@
       "id": "a5",
       "prompt": {
         "en": "Pak Joko pushes his motorbike up a plank into his shop instead of lifting it. What is the trade-off?",
-        "id": "Pak Joko mendorong motornya naik papan ke dalam tokonya, bukan mengangkatnya. Apa tarik-ulurnya?"
+        "id": "Pak Joko mendorong motornya naik papan ke dalam tokonya, bukan mengangkatnya. Apa untung-ruginya?"
       },
       "choices": {
         "en": [
@@ -284,7 +284,7 @@
         "id": [
           "Ia mendorong dengan gaya lebih kecil tetapi jaraknya lebih jauh",
           "Ia perlu gaya lebih besar dan jarak lebih pendek",
-          "Tidak ada tarik-ulur; lebih mudah dalam segala hal"
+          "Tidak ada ruginya; lebih mudah dalam segala hal"
         ]
       },
       "answer": 0,
@@ -303,7 +303,7 @@
       "code": "STRETCH_BACKWARDS",
       "description": {
         "en": "Reverses the link between force and the measurement or the trade-off.",
-        "id": "Membalik hubungan antara gaya dan ukurannya atau tarik-ulurnya."
+        "id": "Membalik hubungan antara gaya dan ukurannya atau untung-ruginya."
       },
       "remediation": {
         "en": "Hang one tin, then two tins, from the band and measure both lengths: more weight, longer band.",
@@ -379,8 +379,8 @@
   ],
   "extension": [
     {
-      "en": "Make your own wheels: tape two round pencils under a box as rollers and test the pull on a flat floor. Are rollers as good as the truck's wheels?",
-      "id": "Buat roda sendiri: rekatkan dua pensil bulat di bawah kotak sebagai rol dan uji tarikannya di lantai datar. Apakah rol sebaik roda truk?"
+      "en": "Make rollers: lay three round pencils loose on the floor and rest the box on them; pull slowly and move the back pencil to the front as it rolls out. Compare the pull with dragging the box on the floor. Are rollers as good as the truck's wheels?",
+      "id": "Buat rol: letakkan tiga pensil bulat lepas di lantai dan taruh kotak di atasnya; tarik pelan dan pindahkan pensil paling belakang ke depan saat keluar. Bandingkan tarikannya dengan menyeret kotak di lantai. Apakah rol sebaik roda truk?"
     }
   ],
   "accessibility": [
@@ -423,7 +423,7 @@
     ],
     "masteryRule": {
       "en": "Secure when the child measures all three ways fairly, finds the differences correctly, and explains the trade-off between force and distance in their own words.",
-      "id": "Dikuasai jika anak mengukur ketiga cara dengan adil, menemukan selisihnya dengan benar, dan menjelaskan tarik-ulur antara gaya dan jarak dengan kata-katanya sendiri."
+      "id": "Dikuasai jika anak mengukur ketiga cara dengan adil, menemukan selisihnya dengan benar, dan menjelaskan untung-rugi antara gaya dan jarak dengan kata-katanya sendiri."
     }
   },
   "sources": [

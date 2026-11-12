@@ -294,6 +294,9 @@ const allText = (o: unknown): string => (typeof o === 'string' ? o : Array.isArr
 const enText = (o: unknown): string =>
   Array.isArray(o) ? o.map(enText).join(' ') : o && typeof o === 'object' ? ('en' in (o as object) && typeof (o as { en: unknown }).en === 'string' ? (o as { en: string }).en : Object.entries(o).filter(([k]) => k !== 'id').map(([, v]) => enText(v)).join(' ')) : '';
 
+/** Foods children handle or eat in an activity: allergy awareness required. */
+export const FOOD = /\b(peanuts?|nuts?|eggs?|milk|cheese|yogh?urt|wheat|flour|sesame|kue|cookies?|biscuits?|crackers?|kerupuk|onde-onde|bread|cakes?|snacks?|sweets|candy|chocolate|fruit slices?)\b/;
+
 export const UNIT_NEAR_DUPLICATE = 0.45;
 export const READING_NEAR_DUPLICATE = 0.3;
 
@@ -343,6 +346,18 @@ export function unitIssues(u: Unit): string[] {
     const m = handled.match(re);
     if (m && !u.safety.hazards[flag] && !re.test(notes)) out.push(`${u.id}: "${m[0]}" is used but hazards.${flag} is false and no safety note names it`);
   }
+  // QA finding (batch 2): bottle caps, tin lids and food were not covered by the shared hazard list.
+  for (const [flag, re] of [['chokingRisk', /\bbottle ?(caps?|tops?)\b|\bcrown caps?\b|\bdry (rice|grains?)\b/], ['sharp', /\b(tin|can|metal) lids?\b|\bcrown caps?\b|\bdrawing compass(es)?\b|\bpair of compasses\b|\bcompass point\b/]] as const) {
+    const m = handled.match(re);
+    if (m && !u.safety.hazards[flag] && !re.test(notes)) out.push(`${u.id}: "${m[0]}" is used but hazards.${flag} is false and no safety note names it`);
+  }
+  // Food: flagged when it is eaten (food in the materials and an eat/taste/snack word anywhere in the activity) or
+  // handled by touch (flour, dough, bread, rice), not when food words are only story text, rhymes or idioms.
+  const physical = enText([u.materials, u.preparation, u.cpa?.concrete ?? []]).toLowerCase().replace(/\begg[- ](cartons?|box(es)?|trays?|cups?)\b/g, '');
+  const eaten = /\b(eat|eats|eating|taste|tasting|snack|snacks|bite|chew)\b/.test(handled) && physical.match(FOOD);
+  const touched = physical.match(/\b(flour|dough|playdough|bread)\b/);
+  const food = eaten || touched;
+  if (food && !u.safety.hazards.allergens && !/allerg/.test(notes)) out.push(`${u.id}: food ("${food[0]}") is used but hazards.allergens is false and no safety note mentions allergies`);
   if (/\b(battery|batteries|wire|led|circuit|motor|plug|socket|mains)\b/.test(handled) && !u.safety.hazards.electrical && !/battery|electric|circuit|wire/.test(notes)) out.push(`${u.id}: electrical materials need hazards.electrical or an electrical safety note`);
   if (u.safety.hazards.chokingRisk && ['age2_3', 'age3_4'].includes(u.level)) out.push(`${u.id}: no choking-hazard materials for under-4s`);
   if (u.level === 'age2_3' && u.safety.supervision !== 'adult_within_reach') out.push(`${u.id}: toddler units need an adult within reach`);
@@ -391,6 +406,8 @@ export function readingIssues(r: Reading): string[] {
     const m = act.match(re);
     if (m && !re.test(rnotes)) out.push(`${r.id}: offline activity uses "${m[0]}" but no safety note names it`);
   }
+  const rfood = /\b(eat|taste|snack|bite)\b/.test(act) ? act.match(FOOD) : act.match(/\b(flour|dough|bread)\b/);
+  if (rfood && !/allerg/.test(rnotes)) out.push(`${r.id}: the offline activity uses food ("${rfood[0]}") but no safety note mentions allergies`);
   if (CAREGIVER_LED_LEVELS.includes(r.level) && /\b(beans?|seeds?|beads?|coins?|marbles?|buttons?|magnets?|balloons?)\b/.test(act) && !/adult (handles|holds|keeps|plants)/.test(act + ' ' + rnotes)) out.push(`${r.id}: small items in a pre-reader activity must be handled only by the adult`);
   if (/\b(standing water|leave (it|the bottle|the jar) (outside|out) for (a|one|two) week)/.test(act) && !/mosquito|empty/.test(act + ' ' + rnotes)) out.push(`${r.id}: standing water must be emptied daily (mosquito breeding)`);
   if (r.provenance.origin === 'ai_drafted' && rank(r.reviewStatus) >= rank('reviewed') && !(r.review.reviewedBy && r.review.reviewedAt)) out.push(`${r.id}: AI-drafted content cannot be reviewed/published without a human review record`);

@@ -1,6 +1,6 @@
 {
   "id": "unit-age2_3-stem-clap-pat-patterns",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "framework": "stem",
   "strand": "sequencing",
@@ -65,8 +65,8 @@
       "id": "Tanganmu dan tangan anak"
     },
     {
-      "en": "Two large cups of different colours, for example a red cup and a blue cup, or two big cushions of different colours",
-      "id": "Dua gelas besar berbeda warna, misalnya gelas merah dan gelas biru, atau dua bantal besar berbeda warna"
+      "en": "Two large plastic cups of different colours, for example a red cup and a blue cup, or two big cushions of different colours",
+      "id": "Dua gelas plastik besar berbeda warna, misalnya gelas merah dan gelas biru, atau dua bantal besar berbeda warna"
     },
     {
       "en": "A soft drum: an upturned plastic basin and your palm",
@@ -111,23 +111,23 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Clap, pat, clap, pat… then stop with your hands up. What does your child do?",
-        "id": "Tepuk, paha, tepuk, paha… lalu berhenti dengan tangan di atas. Apa yang dilakukan anak?"
+        "en": "Stamp, clap, stamp, clap… then stop with your hands up. What does your child do?",
+        "id": "Hentak, tepuk, hentak, tepuk… lalu berhenti dengan tangan di atas. Apa yang dilakukan anak?"
       },
       "choices": {
         "en": [
-          "Claps, because clap comes after pat",
-          "Pats again"
+          "Stamps, because stamp comes after clap",
+          "Claps again"
         ],
         "id": [
-          "Bertepuk tangan, karena setelah paha adalah tepuk",
-          "Menepuk paha lagi"
+          "Menghentakkan kaki, karena setelah tepuk adalah hentak",
+          "Bertepuk lagi"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "After pat the pattern goes back to clap.",
-        "id": "Setelah paha, pola kembali ke tepuk."
+        "en": "After clap the pattern goes back to stamp.",
+        "id": "Setelah tepuk, pola kembali ke hentak."
       },
       "distractorMisconceptions": {
         "1": "REPEATS_LAST_STEP"
@@ -167,11 +167,11 @@
       "choices": {
         "en": [
           "Asks for 'again', or starts clapping the pattern from the beginning",
-          "Moves away, as if the game cannot happen again"
+          "Waits and does not expect the pattern to start again"
         ],
         "id": [
           "Meminta 'lagi', atau mulai bertepuk dari awal pola",
-          "Pergi menjauh, seolah permainan tidak bisa diulang"
+          "Menunggu dan tidak menduga pola akan dimulai lagi"
         ]
       },
       "answer": 0,

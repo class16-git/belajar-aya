@@ -1,6 +1,6 @@
 {
   "id": "reading-g1-ants-work-together",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "readingLevel": "early",
   "genre": "nonfiction",
@@ -239,6 +239,10 @@
     {
       "en": "Some ants bite or sting. Watch from a distance and do not touch them.",
       "id": "Beberapa semut menggigit atau menyengat. Amati dari jauh dan jangan disentuh."
+    },
+    {
+      "en": "Bread contains wheat: if your child has a wheat or gluten allergy, use a crumb of fruit instead. Wash hands after handling food and watching the ants.",
+      "id": "Roti mengandung gandum: jika anak alergi gandum atau gluten, gunakan potongan kecil buah. Cuci tangan setelah memegang makanan dan mengamati semut."
     }
   ],
   "arabicPhrases": [],
@@ -250,11 +254,12 @@
       "bilingual-parity",
       "readability",
       "question-answerability",
-      "fact-claims-listed"
+      "fact-claims-listed",
+      "allergy-note-added"
     ],
     "reviewedBy": "owner",
     "reviewerRole": "parent",
-    "reviewedAt": "2026-11-11"
+    "reviewedAt": "2026-11-12"
   },
   "provenance": {
     "origin": "ai_drafted",

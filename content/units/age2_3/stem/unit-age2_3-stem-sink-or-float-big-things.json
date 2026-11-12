@@ -1,6 +1,6 @@
 {
   "id": "unit-age2_3-stem-sink-or-float-big-things",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age2_3",
   "framework": "stem",
   "strand": "science_inquiry",
@@ -63,8 +63,8 @@
       "id": "Baskom plastik lebar dan dangkal atau bak mandi bayi, diisi air sekitar 5 sentimeter"
     },
     {
-      "en": "Objects bigger than your child's fist: a plastic ball, a big wooden block, a large bath sponge, a metal serving ladle, a smooth stone bigger than a fist, an apple",
-      "id": "Benda yang lebih besar dari kepalan tangan anak: bola plastik, balok kayu besar, spons mandi besar, sendok sayur logam, batu halus yang lebih besar dari kepalan, sebuah apel"
+      "en": "Objects bigger than your child's fist that float high or sink clearly: a plastic ball, a large bath sponge, an empty plastic food box with its lid on, a thin wooden chopping board or flat wooden block no thicker than 3 cm, a metal serving ladle, a smooth stone bigger than a fist",
+      "id": "Benda yang lebih besar dari kepalan tangan anak yang jelas mengapung tinggi atau tenggelam: bola plastik, spons mandi besar, kotak makan plastik kosong yang tertutup, talenan kayu tipis atau balok kayu pipih yang tebalnya tidak lebih dari 3 cm, sendok sayur logam, batu halus yang lebih besar dari kepalan"
     },
     {
       "en": "Two towels: one with a paper arrow pointing up, one with an arrow pointing down",
@@ -105,8 +105,8 @@
       "id": "Di hari lain, uji benda yang sama lagi. Apakah bolanya masih mengapung? Mengulang uji dan mendapat jawaban yang sama adalah yang dilakukan ilmuwan."
     },
     {
-      "en": "Bring two new big things from the kitchen, for example a plastic food box and a big wooden spoon. Guess with an up or down point, then test.",
-      "id": "Bawa dua benda besar baru dari dapur, misalnya kotak makan plastik dan sendok kayu besar. Tebak dengan menunjuk atas atau bawah, lalu uji."
+      "en": "Bring two new big things from the kitchen, for example a plastic bowl and a big wooden spoon. Guess with an up or down point, then test.",
+      "id": "Bawa dua benda besar baru dari dapur, misalnya mangkuk plastik dan sendok kayu besar. Tebak dengan menunjuk atas atau bawah, lalu uji."
     },
     {
       "en": "At tidy-up time, sort the objects onto the UP and DOWN towels from memory, then check one by testing it again.",
@@ -117,8 +117,8 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Hold up the wooden block and ask 'Up or down?' before it goes in. What does your child do?",
-        "id": "Angkat balok kayu dan tanya 'Atas atau bawah?' sebelum dimasukkan. Apa yang dilakukan anak?"
+        "en": "Hold up the closed plastic food box and ask 'Up or down?' before it goes in. What does your child do?",
+        "id": "Angkat kotak makan plastik yang tertutup dan tanya 'Atas atau bawah?' sebelum dimasukkan. Apa yang dilakukan anak?"
       },
       "choices": {
         "en": [
@@ -167,8 +167,8 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "Push the floating sponge down and let go. Ask 'What will it do?' What does your child expect or say after watching?",
-        "id": "Tekan spons yang mengapung ke bawah lalu lepaskan. Tanya 'Nanti bagaimana?' Apa yang diharapkan atau dikatakan anak setelah melihat?"
+        "en": "Push the floating sponge down and hold it there. Before you let go, ask 'What will it do?' What does your child expect?",
+        "id": "Tekan spons yang mengapung ke bawah dan tahan. Sebelum dilepas, tanya 'Nanti bagaimana?' Apa dugaan anak?"
       },
       "choices": {
         "en": [
@@ -252,8 +252,8 @@
   ],
   "extension": [
     {
-      "en": "Try the apple: it is heavy in the hand, yet it floats. Big or heavy-feeling does not always mean sink.",
-      "id": "Coba apelnya: terasa berat di tangan, tetapi mengapung. Besar atau terasa berat tidak selalu berarti tenggelam."
+      "en": "Try a big empty plastic bottle with its cap on: it is big, yet it floats. Big does not always mean sink.",
+      "id": "Coba botol plastik besar yang kosong dan tertutup: besar, tetapi mengapung. Besar tidak selalu berarti tenggelam."
     }
   ],
   "accessibility": [

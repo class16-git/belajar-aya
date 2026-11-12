@@ -1,6 +1,6 @@
 {
   "id": "unit-g1-stem-seedlings-light-fair-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g1",
   "framework": "stem",
   "strand": "science_inquiry",
@@ -45,8 +45,8 @@
       "id": "Mulai dengan pertanyaan dan tebakan: 'Apakah kecambah di lemari gelap akan tumbuh sebaik kecambah di dekat jendela?' Tulis tebakan di bagan."
     },
     {
-      "en": "Make a 'same' list together: same cup, same soil, same number of seeds, same water each day. Only one thing changes: light or dark.",
-      "id": "Buat daftar 'sama' bersama: gelas sama, tanah sama, jumlah biji sama, air sama setiap hari. Hanya satu hal yang berubah: terang atau gelap."
+      "en": "Make a 'same' list together: same cup, same soil, same number of seeds, same water each day. Only one thing changes: light or dark. Put LIGHT in a bright spot out of direct midday sun, and check that both cups' soil feels equally damp before watering.",
+      "id": "Buat daftar 'sama' bersama: gelas sama, tanah sama, jumlah biji sama, air sama setiap hari. Hanya satu hal yang berubah: terang atau gelap. Taruh TERANG di tempat yang terang tetapi tidak terkena terik matahari siang, dan pastikan tanah di kedua gelas sama lembapnya sebelum menyiram."
     },
     {
       "en": "Water together each day with the same spoon, then empty any water left in the saucers so mosquitoes cannot breed.",
@@ -179,26 +179,26 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "On day 7, one seedling is tall, thin and yellow; another is shorter, green and stands up. Which grew in the light?",
-        "id": "Pada hari ke-7, satu kecambah tinggi, kurus, dan kuning; yang lain lebih pendek, hijau, dan tegak. Mana yang tumbuh di tempat terang?"
+        "en": "Two cups of seedlings grew under a box for 7 days. Then one was moved to the window for 3 days. Which now has greener leaves?",
+        "id": "Dua gelas kecambah tumbuh di bawah kardus selama 7 hari. Lalu satu dipindahkan ke jendela selama 3 hari. Mana yang sekarang daunnya lebih hijau?"
       },
       "choices": {
         "en": [
-          "The shorter, green one",
-          "The tall, yellow one"
+          "The one moved to the window",
+          "The one still under the box"
         ],
         "id": [
-          "Yang lebih pendek dan hijau",
-          "Yang tinggi dan kuning"
+          "Yang dipindahkan ke jendela",
+          "Yang masih di bawah kardus"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Light helps seedlings grow green and sturdy; in the dark they often stretch up pale and weak.",
-        "id": "Cahaya membantu kecambah tumbuh hijau dan kokoh; di tempat gelap kecambah sering memanjang, pucat, dan lemah."
+        "en": "Light lets seedlings make their green colour; the one left in the dark stays pale.",
+        "id": "Cahaya membuat kecambah membentuk warna hijaunya; yang tetap di tempat gelap tetap pucat."
       },
       "distractorMisconceptions": {
-        "1": "TALLEST_IS_HEALTHIEST"
+        "1": "LIGHT_HAS_NO_EFFECT"
       }
     },
     {
@@ -327,6 +327,17 @@
       "remediation": {
         "en": "Pour water on dry soil in a clear cup and watch it soak in and drip through the hole.",
         "id": "Tuang air ke tanah kering di gelas bening dan amati air meresap dan menetes keluar dari lubang."
+      }
+    },
+    {
+      "code": "LIGHT_HAS_NO_EFFECT",
+      "description": {
+        "en": "Thinks light makes no difference to how a seedling looks.",
+        "id": "Mengira cahaya tidak berpengaruh pada rupa kecambah."
+      },
+      "remediation": {
+        "en": "Put the two cups side by side after the move and compare leaf colour against a green crayon and a yellow crayon.",
+        "id": "Letakkan kedua gelas berdampingan setelah dipindah dan bandingkan warna daunnya dengan krayon hijau dan krayon kuning."
       }
     }
   ],

@@ -1,6 +1,6 @@
 {
   "id": "unit-g4-stem-loops-inside-events",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "framework": "stem",
   "strand": "programming",
@@ -87,8 +87,8 @@
     ],
     "abstract": [
       {
-        "en": "Write the number of actions as a calculation, such as 3 × 2 for 'repeat 3 times: [repeat 2 times: jump]'.",
-        "id": "Tulis jumlah gerakan sebagai hitungan, seperti 3 × 2 untuk 'ulangi 3 kali: [ulangi 2 kali: lompat]'."
+        "en": "Write the number of actions as a calculation, such as 4 × 3 for 'repeat 4 times: [ repeat 3 times: [clap] ]'. Every loop body goes inside its own square brackets.",
+        "id": "Tulis jumlah gerakan sebagai hitungan, seperti 4 × 3 untuk 'ulangi 4 kali: [ ulangi 3 kali: [tepuk] ]'. Setiap isi perulangan ditulis di dalam kurung sikunya sendiri."
       }
     ]
   },
@@ -114,16 +114,16 @@
   ],
   "guidedExamples": [
     {
-      "en": "Repeat until: the script is 'When the green card is shown: repeat until you touch the wall: [step]. Then wave.' The wall is 6 heel-to-toe steps from Ayu. Her brother Bayu predicts '6 steps, then 1 wave'. She shows the green card; Bayu steps 6 times, touches the wall and waves. 'The loop did not count; it checked the wall before every step.'",
-      "id": "Ulangi sampai: skripnya 'Saat kartu hijau ditunjukkan: ulangi sampai menyentuh tembok: [melangkah]. Lalu melambai.' Tembok berjarak 6 langkah tumit-ke-ujung dari Ayu. Kakaknya, Bayu, menebak '6 langkah, lalu 1 lambaian'. Ia menunjukkan kartu hijau; Bayu melangkah 6 kali, menyentuh tembok, lalu melambai. 'Perulangan ini tidak menghitung; ia memeriksa tembok sebelum setiap langkah.'"
+      "en": "Repeat until: the script is 'When the green card is shown: repeat until you touch the wall: [step]. Then wave.' The wall is 6 heel-to-toe steps from Bayu. Her brother Bayu predicts '6 steps, then 1 wave'. She shows the green card; Bayu steps 6 times, touches the wall and waves. 'The loop did not count; it checked the wall before every step.'",
+      "id": "Ulangi sampai: skripnya 'Saat kartu hijau ditunjukkan: ulangi sampai menyentuh tembok: [melangkah]. Lalu melambai.' Tembok berjarak 6 langkah tumit-ke-ujung dari Bayu. Kakaknya, Bayu, menebak '6 langkah, lalu 1 lambaian'. Ia menunjukkan kartu hijau; Bayu melangkah 6 kali, menyentuh tembok, lalu melambai. 'Perulangan ini tidak menghitung; ia memeriksa tembok sebelum setiap langkah.'"
     },
     {
-      "en": "Forever with an event inside: 'When the game starts: forever [step; if you touch the wall, turn around].' Bayu walks to the wall, turns, walks back to the other wall, turns… It never ends on its own, until Mum says 'program stop'. 'A forever loop keeps checking. That is how a game watches for a key press all the time.'",
+      "en": "Forever with a check inside: 'When the game starts: forever [step; if you touch the wall, turn around].' Bayu walks to the wall, turns, walks back to the other wall, turns… It never ends on its own, until Mum says 'program stop'. 'A forever loop keeps checking. That is how a game watches for a key press all the time.'",
       "id": "Selamanya dengan pemeriksaan di dalamnya: 'Saat permainan dimulai: selamanya [melangkah; jika menyentuh tembok, berbalik].' Bayu berjalan ke tembok, berbalik, berjalan kembali ke tembok lain, berbalik… Tidak pernah berakhir sendiri, sampai Ibu berkata 'program berhenti'. 'Perulangan selamanya terus memeriksa. Begitulah permainan mengawasi tekanan tombol sepanjang waktu.'"
     },
     {
-      "en": "Nested loop in an event: 'When the clap happens: repeat 2 times: [repeat 4 times: jump; wave].' Prediction: 2 × 4 = 8 jumps and 2 waves, so 10 actions. Bayu acts it out and Ayu tallies: 8 jumps, 2 waves. 'The inner loop runs completely each time the outer loop goes round.'",
-      "id": "Perulangan bersarang di dalam peristiwa: 'Saat ada tepukan: ulangi 2 kali: [ulangi 4 kali: lompat; lambaikan tangan].' Tebakan: 2 × 4 = 8 lompatan dan 2 lambaian, jadi 10 gerakan. Bayu memperagakannya dan Ayu membuat turus: 8 lompatan, 2 lambaian. 'Perulangan dalam berjalan sampai selesai setiap kali perulangan luar berputar sekali.'"
+      "en": "Nested loop in an event: 'When the clap happens: repeat 2 times: [ repeat 4 times: [jump] ; wave ]'. The wave is inside the outer loop but outside the inner one. Prediction: 2 × 4 = 8 jumps and 2 waves, so 10 actions. Bayu acts it out and Ayu tallies: 8 jumps, 2 waves. 'The inner loop runs completely each time the outer loop goes round.'",
+      "id": "Perulangan bersarang di dalam peristiwa: 'Saat ada tepukan: ulangi 2 kali: [ ulangi 4 kali: [lompat] ; lambaikan tangan ]'. Lambaian ada di dalam perulangan luar tetapi di luar perulangan dalam. Tebakan: 2 × 4 = 8 lompatan dan 2 lambaian, jadi 10 gerakan. Bayu memperagakannya dan Ayu membuat turus: 8 lompatan, 2 lambaian. 'Perulangan dalam berjalan sampai selesai setiap kali perulangan luar berputar sekali.'"
     }
   ],
   "practice": [
@@ -144,8 +144,8 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "'When the clap happens: repeat 3 times: [repeat 2 times: hop].' One clap happens. How many hops?",
-        "id": "'Saat ada tepukan: ulangi 3 kali: [ulangi 2 kali: lompat].' Terjadi satu tepukan. Berapa lompatan?"
+        "en": "'When the clap happens: repeat 3 times: [ repeat 2 times: [hop] ]'. One clap happens. How many hops?",
+        "id": "'Saat ada tepukan: ulangi 3 kali: [ ulangi 2 kali: [lompat] ]'. Terjadi satu tepukan. Berapa lompatan?"
       },
       "choices": {
         "en": [
@@ -199,10 +199,6 @@
       "distractorMisconceptions": {
         "1": "EXTRA_RUN_AFTER_CONDITION",
         "2": "LOOP_RUNS_ONCE"
-      },
-      "check": {
-        "expression": "9",
-        "result": "9"
       }
     },
     {

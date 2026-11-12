@@ -1,6 +1,6 @@
 {
   "id": "unit-age3_4-stem-shadow-play-sunlight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "age3_4",
   "framework": "stem",
   "strand": "science_inquiry",
@@ -140,26 +140,26 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "Ask 'Turn so that your shadow is in front of you.' What does your child do?",
-        "id": "Tanya 'Berbaliklah agar bayanganmu ada di depanmu.' Apa yang dilakukan anak?"
+        "en": "Ask 'Make teddy's shadow fall on the bucket.' What does your child do?",
+        "id": "Tanya 'Buat bayangan boneka jatuh ke ember.' Apa yang dilakukan anak?"
       },
       "choices": {
         "en": [
-          "Turns so the sun is behind them",
-          "Stays still and waits for the shadow to move by itself"
+          "Moves teddy so teddy is between the sun and the bucket",
+          "Puts teddy behind the bucket, away from the sun"
         ],
         "id": [
-          "Berbalik sehingga matahari ada di belakangnya",
-          "Diam saja dan menunggu bayangan pindah sendiri"
+          "Memindahkan boneka sehingga boneka berada di antara matahari dan ember",
+          "Menaruh boneka di belakang ember, menjauhi matahari"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "With the sun behind you, the shadow falls in front.",
-        "id": "Saat matahari di belakangmu, bayangan jatuh di depan."
+        "en": "The shadow falls on the side of teddy away from the sun, so teddy must be between the sun and the bucket.",
+        "id": "Bayangan jatuh di sisi boneka yang menjauhi matahari, jadi boneka harus berada di antara matahari dan ember."
       },
       "distractorMisconceptions": {
-        "1": "SHADOW_IS_ALIVE"
+        "1": "SHADOW_ON_SUNNY_SIDE"
       }
     },
     {
@@ -250,8 +250,8 @@
   ],
   "extension": [
     {
-      "en": "Draw around your child's shadow with chunky chalk in the morning, then stand in the same spot later in the day. Has the shadow changed?",
-      "id": "Gambar keliling bayangan anak dengan kapur tebal pada pagi hari, lalu berdiri di tempat yang sama siang atau sore harinya. Apakah bayangannya berubah?"
+      "en": "Draw around your child's shadow with chunky chalk in the morning, then stand in the same spot in the late afternoon. Has the shadow changed?",
+      "id": "Gambar keliling bayangan anak dengan kapur tebal pada pagi hari, lalu berdiri di tempat yang sama pada sore hari. Apakah bayangannya berubah?"
     }
   ],
   "accessibility": [

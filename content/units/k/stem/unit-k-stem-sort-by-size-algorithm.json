@@ -1,6 +1,6 @@
 {
   "id": "unit-k-stem-sort-by-size-algorithm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "stem",
   "strand": "algorithms",
@@ -17,8 +17,8 @@
     "id": "Mengikuti dan menjelaskan resep langkah demi langkah untuk mengurutkan benda dari yang terpendek sampai terpanjang: cari yang terpendek dari yang tersisa, pindahkan ke barisan, dan ulangi sampai tidak ada yang tersisa."
   },
   "rationale": {
-    "en": "Most children can sort by size by eye, but an algorithm is a way of sorting that always works, even for a robot that cannot 'see' the answer. Comparing two things at a time and repeating the same steps is exactly how computers sort lists.",
-    "id": "Kebanyakan anak bisa mengurutkan ukuran dengan melihat sekilas, tetapi algoritma adalah cara mengurutkan yang selalu berhasil, bahkan untuk robot yang tidak bisa 'melihat' jawabannya. Membandingkan dua benda sekaligus dan mengulang langkah yang sama persis adalah cara komputer mengurutkan daftar."
+    "en": "Most children can sort by size by eye, but an algorithm is a way of sorting that always works, even for a robot that cannot 'see' the answer. Comparing two things at a time and repeating the same steps is one way computers sort lists.",
+    "id": "Kebanyakan anak bisa mengurutkan ukuran dengan melihat sekilas, tetapi algoritma adalah cara mengurutkan yang selalu berhasil, bahkan untuk robot yang tidak bisa 'melihat' jawabannya. Membandingkan dua benda sekaligus dan mengulang langkah yang sama adalah salah satu cara komputer mengurutkan daftar."
   },
   "outcomes": [
     {
@@ -46,8 +46,8 @@
       "id": "Buat kartu resep dengan tiga gambar: mata (lihat yang tersisa), panah kecil ke yang terpendek (cari yang terpendek), dan tangan yang memindahkannya ke barisan (pindahkan). Gambar panah melingkar di bawahnya untuk 'ulangi'."
     },
     {
-      "en": "Teach the fair comparison first: stand two strips side by side with their bottoms on the table edge. Only then can you see which is taller.",
-      "id": "Ajarkan perbandingan yang adil lebih dulu: berdirikan dua potongan berdampingan dengan bagian bawahnya di tepi meja. Baru setelah itu terlihat mana yang lebih tinggi."
+      "en": "Teach the fair comparison first: hold two strips upright side by side with their bottoms touching the table. Only then can you see which is taller.",
+      "id": "Ajarkan perbandingan yang adil lebih dulu: pegang dua potongan tegak berdampingan dengan bagian bawahnya menyentuh meja. Baru setelah itu terlihat mana yang lebih tinggi."
     },
     {
       "en": "Let your child be the 'sorting robot' who must follow the card. You point to each picture; your child says it aloud and does it.",
@@ -98,8 +98,8 @@
       "id": "Enam potongan karton atau kertas tebal berwarna, sama lebar, dipotong orang dewasa dengan panjang yang jelas berbeda (misalnya dari sejengkal sampai sepanjang lengan bawah)"
     },
     {
-      "en": "Five household objects of different lengths, such as a spoon, a pencil, a ruler, a toothbrush and a wooden spoon",
-      "id": "Lima benda rumah tangga yang berbeda panjang, seperti sendok, pensil, penggaris, sikat gigi, dan sendok kayu"
+      "en": "Five household objects that clearly differ by at least a finger's width, such as a teaspoon, a crayon, a toothbrush, a 30 cm ruler and a long wooden spoon (check them yourself first)",
+      "id": "Lima benda rumah tangga yang panjangnya jelas berbeda sedikitnya selebar jari, seperti sendok teh, krayon, sikat gigi, penggaris 30 cm, dan sendok kayu panjang (periksa sendiri lebih dulu)"
     },
     {
       "en": "A recipe card drawn on paper",

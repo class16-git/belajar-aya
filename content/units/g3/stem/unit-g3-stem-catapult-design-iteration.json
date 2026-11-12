@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-stem-catapult-design-iteration",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "framework": "stem",
   "strand": "engineering_design",
@@ -17,8 +17,8 @@
     "id": "Membuat ketapel dari stik es krim (sebuah tuas), mengubah satu variabel rancangan setiap kali, mengukur tiga lemparan untuk setiap versi dan memakai hasil tengahnya, serta memperbaiki rancangan sampai bola kertas mendarat di keranjang sasaran."
   },
   "rationale": {
-    "en": "A catapult is a lever that stores energy in a stretched rubber band. It is the perfect engineering loop: every launch is a test, results vary, and changing one thing at a time shows what really matters. Using the middle of three results teaches children not to trust a single lucky shot.",
-    "id": "Ketapel adalah tuas yang menyimpan energi di karet gelang yang teregang. Ini siklus rekayasa yang sempurna: setiap lemparan adalah uji, hasilnya bervariasi, dan mengubah satu hal setiap kali menunjukkan apa yang benar-benar berpengaruh. Memakai nilai tengah dari tiga hasil mengajarkan anak untuk tidak memercayai satu lemparan yang kebetulan bagus."
+    "en": "A catapult is a lever that stores energy in its bent sticks and rubber bands. It is the perfect engineering loop: every launch is a test, results vary, and changing one thing at a time shows what really matters. Using the middle of three results teaches children not to trust a single lucky shot.",
+    "id": "Ketapel adalah tuas yang menyimpan energi di stik yang melengkung dan karet gelangnya. Ini siklus rekayasa yang sempurna: setiap lemparan adalah uji, hasilnya bervariasi, dan mengubah satu hal setiap kali menunjukkan apa yang benar-benar berpengaruh. Memakai nilai tengah dari tiga hasil mengajarkan anak untuk tidak memercayai satu lemparan yang kebetulan bagus."
   },
   "outcomes": [
     {
@@ -175,10 +175,6 @@
       "distractorMisconceptions": {
         "1": "MIDDLE_OF_LIST_AS_WRITTEN",
         "2": "USES_BEST_RESULT"
-      },
-      "check": {
-        "expression": "115",
-        "result": "115"
       }
     },
     {
@@ -415,6 +411,10 @@
       {
         "en": "Check sticks for splinters and sand or discard rough ones.",
         "id": "Periksa stik dari serpihan, haluskan atau buang yang kasar."
+      },
+      {
+        "en": "Keep eyes out of the spoon's path: never look down along the arm while pressing or releasing.",
+        "id": "Jauhkan mata dari jalur sendok: jangan melihat menyusuri lengan ketapel saat menekan atau melepas."
       }
     ]
   },

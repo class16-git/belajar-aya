@@ -1,6 +1,6 @@
 {
   "id": "unit-g6-stem-functions-return-values",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g6",
   "framework": "stem",
   "strand": "programming",
@@ -127,8 +127,8 @@
       "id": "Telusuri terbesar([5, 12, 9]). terbaik dimulai dari anggota pertama, 5. Anggota 5: tidak lebih besar, terbaik tetap 5. Anggota 12: lebih besar, terbaik = 12. Anggota 9: tidak lebih besar. Kembalikan 12."
     },
     {
-      "en": "Functions calling functions: Reza's three 9 a.m. readings from his data log are [27, 29, 31]. average calls total, which returns 87, then divides by length 3: 87 ÷ 3 = 29. He stores it: morning ← average([27, 29, 31]), so morning = 29, and later prints morning + 2 for a forecast of 31.",
-      "id": "Fungsi memanggil fungsi: tiga bacaan pukul 9 pagi dari catatan data Reza adalah [27, 29, 31]. rata_rata memanggil jumlah, yang mengembalikan 87, lalu membaginya dengan panjang 3: 87 ÷ 3 = 29. Ia menyimpannya: pagi ← rata_rata([27, 29, 31]), jadi pagi = 29, lalu mencetak pagi + 2 untuk perkiraan 31."
+      "en": "Functions calling functions: Reza's three 9 a.m. readings from his data log are [27, 29, 31]. average calls total, which returns 87, then divides by length 3: 87 ÷ 3 = 29. He stores it: morning ← average([27, 29, 31]), so morning = 29, and later prints morning + 2 to show what 2 degrees warmer would be: 31.",
+      "id": "Fungsi memanggil fungsi: tiga bacaan pukul 9 pagi dari catatan data Reza adalah [27, 29, 31]. rata_rata memanggil jumlah, yang mengembalikan 87, lalu membaginya dengan panjang 3: 87 ÷ 3 = 29. Ia menyimpannya: pagi ← rata_rata([27, 29, 31]), jadi pagi = 29, lalu mencetak pagi + 2 untuk menunjukkan suhu jika 2 derajat lebih hangat: 31."
     }
   ],
   "practice": [

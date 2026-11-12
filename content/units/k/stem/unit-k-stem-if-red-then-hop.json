@@ -1,6 +1,6 @@
 {
   "id": "unit-k-stem-if-red-then-hop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "stem",
   "strand": "algorithms",
@@ -128,23 +128,23 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "The rule is 'If blue, then clap.' The card is yellow. What do you do?",
-        "id": "Aturannya 'Kalau biru, maka tepuk.' Kartunya kuning. Apa yang kamu lakukan?"
+        "en": "The rule is 'If yellow, then touch your nose.' The card is red. What do you do?",
+        "id": "Aturannya 'Kalau kuning, maka sentuh hidung.' Kartunya merah. Apa yang kamu lakukan?"
       },
       "choices": {
         "en": [
           "Stand still",
-          "Clap"
+          "Touch your nose"
         ],
         "id": [
           "Diam",
-          "Tepuk"
+          "Sentuh hidung"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Yellow is not blue, so the rule does not match.",
-        "id": "Kuning bukan biru, jadi aturannya tidak cocok."
+        "en": "Red is not yellow, so the rule does not match.",
+        "id": "Merah bukan kuning, jadi aturannya tidak cocok."
       },
       "distractorMisconceptions": {
         "1": "ACTS_WITHOUT_CHECKING"
@@ -334,6 +334,10 @@
       {
         "en": "The adult does any cutting of the coloured paper.",
         "id": "Orang dewasa yang melakukan pemotongan kertas berwarna."
+      },
+      {
+        "en": "Spins are one slow turn; stop if your child feels dizzy.",
+        "id": "Berputar cukup satu putaran pelan; berhenti jika anak pusing."
       }
     ]
   },
