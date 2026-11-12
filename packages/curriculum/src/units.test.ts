@@ -119,6 +119,13 @@ describe('structure, prerequisites, duplicates, safety, religion', () => {
     const v = { ...u, reviewStatus: 'reviewed' as const, review: { agentChecks: [], reviewedBy: 'owner', reviewerRole: 'parent' as const, reviewedAt: '2026-11-10' }, religiousReview: { doctrinalSchool: null, fiqhSchool: null, arabicSource: null, edition: null, pageOrSection: null, translationReviewer: null, scholarReviewer: null, reviewedAt: null, approvalStatus: 'unverified' as const, notes: [] } };
     expect(isExpansionVisible(v as Unit, 'reviewed')).toBe(false);
   });
+  it('an approval covers only the reviewed version: an edit after approval hides the item until it is re-reviewed', () => {
+    const u = validateExpansion({ units: [refUnit()], readings: [] }).content.units[0]!;
+    const approved = { ...u, reviewStatus: 'reviewed' as const, review: { ...u.review, reviewedBy: 'AB', reviewerRole: 'parent' as const, reviewedAt: '2026-11-11', reviewedVersion: u.version } };
+    expect(isExpansionVisible(approved, 'reviewed')).toBe(true);
+    expect(isExpansionVisible({ ...approved, version: '9.9.9' }, 'reviewed')).toBe(false);
+    expect(isExpansionVisible({ ...approved, review: { ...approved.review, reviewedVersion: undefined } }, 'reviewed')).toBe(false);
+  });
   it('a rejected item is never visible, even in preview', () => {
     const u = validateExpansion({ units: [refUnit()], readings: [] }).content.units[0]!;
     expect(isExpansionVisible(u, 'agent_reviewed')).toBe(true);

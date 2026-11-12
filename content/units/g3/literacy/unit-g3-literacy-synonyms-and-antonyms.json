@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-literacy-synonyms-and-antonyms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g3",
   "framework": "literacy",
   "strand": "vocabulary",
@@ -57,8 +57,8 @@
       "id": "Pasangan lawan kata: ucapkan satu kata dan anak menjawab lawan katanya; lalu bertukar peran."
     },
     {
-      "en": "Look at words carefully: a word that looks like the target (tidy, tiny) is not a synonym.",
-      "id": "Perhatikan kata dengan cermat: kata yang bentuknya mirip (pandai, pandan) bukan sinonim."
+      "en": "Look at words carefully: a word that looks like the target (quiet, quite) is not a synonym.",
+      "id": "Perhatikan kata dengan cermat: kata yang bentuknya mirip (pasar, pagar) bukan sinonim."
     }
   ],
   "childInstructions": [
@@ -222,7 +222,7 @@
           "calm"
         ],
         "id": [
-          "murka",
+          "geram",
           "kesal",
           "tenang"
         ]
@@ -230,7 +230,7 @@
       "answer": 0,
       "explanation": {
         "en": "On a word line: cross, angry, furious. Furious is the strongest; calm is not angry at all.",
-        "id": "Pada garis kata: kesal, marah, murka. Murka paling kuat; tenang sama sekali tidak marah."
+        "id": "Pada garis kata: kesal, marah, geram. Geram paling kuat; tenang sama sekali tidak marah."
       },
       "distractorMisconceptions": {
         "1": "IGNORES_SHADES",
@@ -240,25 +240,25 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "What is the opposite of 'kind'?",
-        "id": "Apa lawan kata 'ramah'?"
+        "en": "What is the opposite of 'lucky'?",
+        "id": "Apa lawan kata 'sopan'?"
       },
       "choices": {
         "en": [
-          "unkind",
-          "kindly",
-          "nice"
+          "unlucky",
+          "luckily",
+          "fortunate"
         ],
         "id": [
-          "tidak ramah",
-          "keramahan",
-          "baik"
+          "tidak sopan",
+          "kesopanan",
+          "santun"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Un- makes the opposite here. Kindly just changes the word's job, and nice means nearly the same.",
-        "id": "Tidak ramah adalah lawannya. Keramahan hanya mengubah jenis kata, dan baik artinya hampir sama."
+        "en": "Un- makes the opposite here. Luckily only changes the word's job, and fortunate means nearly the same.",
+        "id": "Tidak sopan adalah lawannya. Kesopanan hanya mengubah jenis kata, dan santun artinya hampir sama."
       },
       "distractorMisconceptions": {
         "1": "AFFIX_CHANGES_JOB_NOT_MEANING",
@@ -274,8 +274,8 @@
         "id": "Memilih lawan kata saat diminta kata yang artinya sama."
       },
       "remediation": {
-        "en": "Use two boxes, 'same' and 'opposite', and sort word cards with pictures before answering. Say the question word aloud first: 'SAME as tiny'.",
-        "id": "Pakai dua kotak, 'sama' dan 'lawan', dan pilah kartu kata bergambar sebelum menjawab. Ucapkan kata kunci pertanyaannya dulu: 'SAMA dengan pandai'."
+        "en": "Use two boxes, 'same' and 'opposite', and sort word cards with pictures before answering. Say the question word aloud first: 'SAME as small'.",
+        "id": "Pakai dua kotak, 'sama' dan 'lawan', dan pilah kartu kata bergambar sebelum menjawab. Ucapkan kata kunci pertanyaannya dulu: 'SAMA dengan cepat'."
       }
     },
     {

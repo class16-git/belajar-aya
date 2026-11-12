@@ -47,6 +47,8 @@ const reviewRecord = z
     reviewedBy: plain(80).optional(),
     reviewerRole: z.enum(['parent', 'educator', 'curriculum_reviewer']).optional(),
     reviewedAt: DATE.optional(),
+    /** The exact version a person approved. Any later edit (new version) needs a new review before children see it. */
+    reviewedVersion: SEMVER.optional(),
     rejectedReason: plain(400).optional(),
   })
   .strict();
@@ -507,6 +509,7 @@ export function isExpansionVisible(x: Unit | Reading, minReview: ReviewStatus): 
   if (rank(x.reviewStatus) < rank(minReview)) return false;
   if (rank(minReview) >= rank('reviewed')) {
     if (!(x.review.reviewedBy && x.review.reviewedAt)) return false;
+    if (x.review.reviewedVersion !== x.version) return false; // edited since the human review: re-review first
     const religious = ('framework' in x && x.framework === 'islamic') || x.arabicPhrases.length > 0 || ('crossCurricular' in x && x.crossCurricular.some((c) => c.subject === 'islamic_values'));
     if (religious && !(x.religiousReview?.approvalStatus === 'approved' && x.religiousReview.scholarReviewer && x.religiousReview.reviewedAt)) return false;
     if ('factChecks' in x && x.factChecks.some((f) => f.status === 'needs_source')) return false;

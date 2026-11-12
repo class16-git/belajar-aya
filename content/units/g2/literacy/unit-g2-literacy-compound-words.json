@@ -1,11 +1,11 @@
 {
   "id": "unit-g2-literacy-compound-words",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "literacy",
   "strand": "vocabulary",
   "title": {
-    "en": "Compound words / Kata majemuk",
+    "en": "Compound words",
     "id": "Kata majemuk"
   },
   "prerequisites": [
@@ -116,7 +116,7 @@
       "id": "Pasangan kartu: campur semua kartu; anak membuat kata majemuk sebanyak mungkin (ID: kamar tidur, sapu lidi, saputangan; EN: cupcake, goldfish, homework)."
     },
     {
-      "en": "Silly compounds: invent a new compound and draw it (a 'shoe-car', 'sepatu terbang'), then explain its meaning.",
+      "en": "Silly compounds: invent a new compound and draw it (a 'shoecar', 'sepatu terbang'), then explain its meaning.",
       "id": "Kata majemuk lucu: ciptakan kata majemuk baru dan gambar (sepatu terbang, 'shoe-car'), lalu jelaskan artinya."
     }
   ],
@@ -190,9 +190,9 @@
           "ballfoot"
         ],
         "id": [
-          "kereta api",
-          "keretaapi",
-          "api kereta"
+          "meja tulis",
+          "mejatulis",
+          "tulis meja"
         ]
       },
       "answer": 0,
@@ -213,9 +213,9 @@
       },
       "choices": {
         "en": [
-          "We packed a lunchbox.",
-          "We packed our lunch.",
-          "We are packing."
+          "We found a seashell.",
+          "We found a shell.",
+          "We are finding shells."
         ],
         "id": [
           "Kami naik kapal laut.",
@@ -225,7 +225,7 @@
       },
       "answer": 0,
       "explanation": {
-        "en": "Lunch + box makes one new word. The others have single words or an ending.",
+        "en": "Sea + shell makes one new word. The others have single words or an ending.",
         "id": "Kapal + laut membentuk satu kesatuan arti. Kalimat lain hanya memuat kata tunggal atau kata berimbuhan."
       },
       "distractorMisconceptions": {

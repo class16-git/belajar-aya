@@ -1,6 +1,6 @@
 {
   "id": "unit-k-literacy-sentence-building-with-cards",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "literacy",
   "strand": "grammar",
@@ -16,8 +16,8 @@
     "id": "Menyusun, membaca, dan mengubah kalimat lisan dan kalimat kartu yang punya bagian siapa, bagian kegiatan, dan kemudian bagian di mana, sesuai susunan kata setiap bahasa (ID 'kucing besar'; EN 'a big cat')."
   },
   "rationale": {
-    "en": "Before children write sentences, they need to feel what a sentence is: someone doing something. Picture cards let a Kindergarten child build and rebuild sentences without the load of handwriting, and swapping one card shows how one change makes a new meaning. Word order is where the two languages differ most for a child: English puts a describing word before the thing (a big cat) and uses little words like the and a; Indonesian puts it after (kucing besar) and has no words like a and the, though itu often points to a known thing.",
-    "id": "Sebelum menulis kalimat, anak perlu merasakan apa itu kalimat: seseorang melakukan sesuatu. Kartu gambar memungkinkan anak TK menyusun dan menyusun ulang kalimat tanpa beban menulis tangan, dan menukar satu kartu menunjukkan bahwa satu perubahan menghasilkan arti baru. Susunan kata adalah perbedaan terbesar kedua bahasa bagi anak: bahasa Indonesia meletakkan kata sifat sesudah bendanya (kucing besar) dan tidak memakai kata seperti a dan the, walaupun itu sering menunjuk benda yang sudah diketahui; bahasa Inggris meletakkannya sebelum bendanya (a big cat)."
+    "en": "Before children write sentences, they need to feel what a sentence is: someone doing something. Picture cards let a Kindergarten child build and rebuild sentences without the load of handwriting, and swapping one card shows how one change makes a new meaning. Word order is where the two languages differ most for a child: English puts a describing word before the thing (a big cat) and uses little words like the and a; Indonesian puts it after (kucing besar) and has no articles like a and the (words such as seekor, sebuah and itu do some of that work).",
+    "id": "Sebelum menulis kalimat, anak perlu merasakan apa itu kalimat: seseorang melakukan sesuatu. Kartu gambar memungkinkan anak TK menyusun dan menyusun ulang kalimat tanpa beban menulis tangan, dan menukar satu kartu menunjukkan bahwa satu perubahan menghasilkan arti baru. Susunan kata adalah perbedaan terbesar kedua bahasa bagi anak: bahasa Indonesia meletakkan kata sifat sesudah bendanya (kucing besar) dan tidak memiliki artikel seperti a dan the (kata seperti seekor, sebuah, dan itu menjalankan sebagian tugasnya); bahasa Inggris meletakkannya sebelum bendanya (a big cat)."
   },
   "outcomes": [
     {
@@ -107,7 +107,7 @@
     },
     {
       "en": "Swap the who card: 'Mum sings in the kitchen.' Your child acts it out, then makes their own and reads it to you.",
-      "id": "Tukar kartu siapa: 'Ibu bernyanyi di dapur.' Anak memeragakannya, lalu membuat kalimat sendiri dan membacakannya kepada Anda."
+      "id": "Tukar kartu siapa: 'Ibu bernyanyi di dapur.' Anak memperagakannya, lalu membuat kalimat sendiri dan membacakannya kepada Anda."
     }
   ],
   "practice": [
@@ -181,25 +181,25 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "In this sentence, which card is the action? 'The bird sings.'",
-        "id": "Dalam kalimat ini, kartu mana yang menunjukkan kegiatan? 'Burung itu bernyanyi.'"
+        "en": "In this sentence, which card is the action? 'The frog jumps.'",
+        "id": "Dalam kalimat ini, kartu mana yang menunjukkan kegiatan? 'Katak itu melompat.'"
       },
       "choices": {
         "en": [
-          "sings",
-          "bird",
+          "jumps",
+          "frog",
           "The"
         ],
         "id": [
-          "bernyanyi",
-          "Burung",
+          "melompat",
+          "Katak",
           "itu"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The action card tells what the bird does: sings.",
-        "id": "Kartu kegiatan memberi tahu apa yang dilakukan burung: bernyanyi."
+        "en": "The action card tells what the frog does: jumps.",
+        "id": "Kartu kegiatan memberi tahu apa yang dilakukan katak: melompat."
       },
       "distractorMisconceptions": {
         "1": "NAMES_WHO_NOT_ACTION",
@@ -209,19 +209,19 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Add a where card to 'Grandma cooks.' Which sentence is right?",
-        "id": "Tambahkan kartu di mana pada 'Nenek memasak.' Kalimat mana yang benar?"
+        "en": "Add a where card to 'Grandpa reads.' Which sentence is right?",
+        "id": "Tambahkan kartu di mana pada 'Kakek membaca.' Kalimat mana yang benar?"
       },
       "choices": {
         "en": [
-          "Grandma cooks in the kitchen.",
-          "Grandma cooks the kitchen.",
-          "In the kitchen."
+          "Grandpa reads in the garden.",
+          "Grandpa reads the garden.",
+          "In the garden."
         ],
         "id": [
-          "Nenek memasak di dapur.",
-          "Nenek memasak dapur.",
-          "Di dapur."
+          "Kakek membaca di kebun.",
+          "Kakek membaca kebun.",
+          "Di kebun."
         ]
       },
       "answer": 0,

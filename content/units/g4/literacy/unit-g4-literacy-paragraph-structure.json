@@ -1,6 +1,6 @@
 {
   "id": "unit-g4-literacy-paragraph-structure",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g4",
   "framework": "literacy",
   "strand": "writing",
@@ -14,11 +14,11 @@
   ],
   "objective": {
     "en": "Write an informational paragraph with a topic sentence, three supporting sentences that each add a detail or example, linking words, and a concluding sentence that sums up without copying the topic sentence.",
-    "id": "Menulis paragraf informasi dengan kalimat utama di awal (deduktif), tiga kalimat penjelas yang masing-masing menambah rincian atau contoh, kata penghubung, dan kalimat penutup yang menegaskan tanpa menyalin kalimat utama."
+    "id": "Menulis paragraf informasi dengan kalimat utama di awal, tiga kalimat penjelas yang masing-masing menambah rincian atau contoh, kata penghubung, dan kalimat penutup yang menegaskan tanpa menyalin kalimat utama."
   },
   "rationale": {
-    "en": "In Grade 3 children found the main idea in someone else's paragraph; now they build their own. A paragraph is a promise and its proof: the topic sentence promises an idea and every other sentence must keep the promise. Indonesian school language names the parts kalimat utama, kalimat penjelas and kalimat penutup, and calls a main-idea-first paragraph deduktif; English schools use topic sentence, supporting sentences and concluding sentence. Linking words differ too: EN also, for example, as a result; ID selain itu, misalnya, oleh karena itu.",
-    "id": "Di kelas 3 anak menemukan gagasan utama dalam paragraf orang lain; kini mereka menyusun paragrafnya sendiri. Paragraf adalah janji dan buktinya: kalimat utama menjanjikan satu gagasan dan setiap kalimat lain harus menepati janji itu. Istilah sekolah dalam bahasa Indonesia adalah kalimat utama, kalimat penjelas, dan kalimat penutup, dan paragraf yang gagasan utamanya di awal disebut deduktif; dalam bahasa Inggris dipakai topic sentence, supporting sentences, dan concluding sentence. Kata penghubungnya juga berbeda: ID selain itu, misalnya, oleh karena itu; EN also, for example, as a result."
+    "en": "In Grade 3 children found the main idea in someone else's paragraph; now they build their own. A paragraph is a promise and its proof: the topic sentence promises an idea and every other sentence must keep the promise. Indonesian school language names the parts kalimat utama, kalimat penjelas and kalimat penutup, and calls a main-idea-first paragraph deduktif (with a restating conclusion, paragraf campuran); English schools use topic sentence, supporting sentences and concluding sentence. Linking words differ too: EN also, for example, as a result; ID selain itu, misalnya, oleh karena itu.",
+    "id": "Di kelas 3 anak menemukan gagasan utama dalam paragraf orang lain; kini mereka menyusun paragrafnya sendiri. Paragraf adalah janji dan buktinya: kalimat lain harus menepati janji kalimat utama. Istilah sekolah dalam bahasa Indonesia adalah kalimat utama, kalimat penjelas, dan kalimat penutup, dan paragraf yang gagasan utamanya di awal disebut deduktif; jika kalimat penutup menegaskan kembali gagasan utama, buku pelajaran menyebutnya paragraf campuran. Kata penghubungnya juga berbeda: ID selain itu, misalnya, oleh karena itu; EN also, for example, as a result."
   },
   "outcomes": [
     {
@@ -87,8 +87,8 @@
       "id": "Pensil warna hijau dan kuning"
     },
     {
-      "en": "A list of linking words (EN: also, for example, in addition, as a result; ID: selain itu, misalnya, bahkan, oleh karena itu)",
-      "id": "Daftar kata penghubung (ID: selain itu, misalnya, bahkan, oleh karena itu; EN: also, for example, in addition, as a result)"
+      "en": "A list of linking words (EN: also, for example, in addition, as a result; ID: selain itu, misalnya, bahkan, oleh karena itu, jadi)",
+      "id": "Daftar kata penghubung (ID: selain itu, misalnya, bahkan, oleh karena itu; EN: also, for example, in addition, as a result, in short)"
     }
   ],
   "preparation": [
@@ -103,8 +103,8 @@
   ],
   "guidedExamples": [
     {
-      "en": "Model paragraph (original): Bamboo is a very useful plant. In many villages, its strong stems are used to build fences and simple houses. It is also split into thin strips and woven into baskets and mats. In addition, the young shoots can be cooked and eaten. As a result, one plant can give a family building materials, tools and food.",
-      "id": "Contoh paragraf (orisinal): Bambu adalah tanaman yang sangat berguna. Di banyak desa, batangnya yang kuat dipakai untuk membuat pagar dan rumah sederhana. Selain itu, bambu dibelah menjadi bilah tipis lalu dianyam menjadi keranjang dan tikar. Bahkan, rebung, yaitu tunas mudanya, bisa dimasak dan dimakan. Oleh karena itu, satu jenis tanaman bisa memberi keluarga bahan bangunan, peralatan, dan makanan."
+      "en": "Model paragraph (original): Bamboo is a very useful plant. In many villages, its strong stems are used to build fences and simple houses. It is also split into thin strips and woven into baskets and mats. In addition, the young shoots can be cooked and eaten. In short, one plant can give a family building materials, tools and food.",
+      "id": "Contoh paragraf (orisinal): Bambu adalah tanaman yang sangat berguna. Di banyak desa, batangnya yang kuat dipakai untuk membuat pagar dan rumah sederhana. Selain itu, bambu dibelah menjadi bilah tipis lalu dianyam menjadi keranjang dan tikar. Bahkan, rebung, yaitu tunas mudanya, bisa dimasak dan dimakan. Jadi, satu jenis tanaman bisa memberi keluarga bahan bangunan, peralatan, dan makanan."
     },
     {
       "en": "Talk through it: the topic sentence promises 'useful'. Each supporting sentence gives one use (building, weaving, food). The conclusion does not copy the first sentence; it gathers the three uses.",

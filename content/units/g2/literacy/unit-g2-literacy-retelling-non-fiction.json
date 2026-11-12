@@ -1,6 +1,6 @@
 {
   "id": "unit-g2-literacy-retelling-non-fiction",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "g2",
   "framework": "literacy",
   "strand": "comprehension",
@@ -57,7 +57,7 @@
       "id": "Ceritakan kembali hanya dari kata kunci, dengan teks dibalik, dimulai dengan: 'Teks ini tentang...'"
     },
     {
-      "en": "If your child adds 'I think worms are cute', welcome it and put it in an 'my opinion' box beside the frame.",
+      "en": "If your child adds 'I think worms are cute', welcome it and put it in a 'my opinion' box beside the frame.",
       "id": "Jika anak menambahkan 'menurutku cacing lucu', terima dan taruh di kotak 'pendapatku' di samping kerangka."
     }
   ],
@@ -103,7 +103,7 @@
   "guidedExamples": [
     {
       "en": "Text (original). Body: An earthworm has no legs and no eyes, but its skin can sense light. Its long body is made of many rings, and tiny bristles help it grip the soil as it squeezes and stretches forward. Home: Earthworms live in damp soil. They breathe through their skin, which must stay moist. Food: They eat dead leaves and bits of soil. The waste they leave, called castings, is rich food for plants. Helping: Their tunnels let air and water into the soil, and they mix dead leaves into it.",
-      "id": "Teks (orisinal). Tubuh: Cacing tanah tidak punya kaki dan mata, tetapi kulitnya bisa merasakan cahaya. Tubuhnya yang panjang terdiri atas banyak cincin, dan rambut halus membantunya mencengkeram tanah saat ia memendek dan memanjang untuk maju. Rumah: Cacing tanah hidup di tanah yang lembap. Ia bernapas melalui kulit, yang harus tetap basah. Makanan: Cacing memakan daun mati dan butiran tanah. Kotoran yang ditinggalkannya sangat menyuburkan tanaman. Manfaat: Lubang-lubangnya membuat udara dan air masuk ke tanah, dan ia mencampurkan daun mati ke dalam tanah."
+      "id": "Teks (orisinal). Tubuh: Cacing tanah tidak punya kaki dan mata, tetapi kulitnya bisa merasakan cahaya. Tubuhnya yang panjang terdiri atas banyak ruas, dan rambut halus membantunya mencengkeram tanah saat ia memendek dan memanjang untuk maju. Rumah: Cacing tanah hidup di tanah yang lembap. Ia bernapas melalui kulit, yang harus tetap basah. Makanan: Cacing memakan daun mati dan butiran tanah. Kotoran yang ditinggalkannya sangat menyuburkan tanaman. Manfaat: Lubang-lubangnya membuat udara dan air masuk ke tanah, dan ia mencampurkan daun mati ke dalam tanah."
     },
     {
       "en": "Model retell from key words: frame box 'Home: damp soil, breathes skin'. Retell: 'This text is about earthworms. They live in wet soil, because they breathe through their skin and it has to stay wet.' Note the change of words: damp became wet, and the two facts are joined with because.",
@@ -128,25 +128,25 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "Which is the best retelling of the 'Food' part?",
-        "id": "Mana cerita kembali terbaik untuk bagian 'Makanan'?"
+        "en": "Read this new text. 'Garden snails. Body: A snail has a soft body, one flat foot and a coiled shell on its back. Home: Snails live in damp, shady places, such as under leaves. In dry weather they hide inside their shells. Food: They eat leaves and rotting plants, scraping them with a rough tongue. Helping: By eating dead plants, they help break them down into soil.' Which is the best retelling of the 'Food' part?",
+        "id": "Baca teks baru ini. 'Siput kebun. Tubuh: Siput bertubuh lunak, punya satu kaki yang pipih, dan cangkang melingkar di punggungnya. Rumah: Siput hidup di tempat lembap dan teduh, misalnya di bawah daun. Saat cuaca kering, siput bersembunyi di dalam cangkangnya. Makanan: Siput memakan daun dan tumbuhan yang membusuk dengan lidahnya yang kasar. Manfaat: Dengan memakan tumbuhan mati, siput membantu menguraikannya menjadi tanah.' Mana cerita kembali terbaik untuk bagian 'Makanan'?"
       },
       "choices": {
         "en": [
-          "Worms eat dead leaves and soil, and their waste feeds plants.",
-          "Worms breathe through their skin.",
-          "Worms are slimy and I do not like them."
+          "Snails scrape up leaves and rotting plants with a rough tongue.",
+          "Snails hide in their shells when it is dry.",
+          "Snails are slow and boring."
         ],
         "id": [
-          "Cacing makan daun mati dan tanah, dan kotorannya menyuburkan tanaman.",
-          "Cacing bernapas lewat kulit.",
-          "Cacing itu licin dan aku tidak suka."
+          "Siput memakan daun dan tumbuhan busuk dengan lidah kasarnya.",
+          "Siput bersembunyi di cangkang saat kering.",
+          "Siput itu lambat dan membosankan."
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "The Food section tells what worms eat and what happens to their waste. Breathing is in another section; slimy is an opinion.",
-        "id": "Bagian Makanan menceritakan apa yang dimakan cacing dan manfaat kotorannya. Bernapas ada di bagian lain; licin dan tidak suka adalah pendapat."
+        "en": "The Food part tells what snails eat and how. Hiding is in another part; slow and boring is an opinion.",
+        "id": "Bagian Makanan menceritakan apa yang dimakan siput dan caranya. Bersembunyi ada di bagian lain; lambat dan membosankan adalah pendapat."
       },
       "distractorMisconceptions": {
         "1": "WRONG_SECTION",
@@ -156,25 +156,25 @@
     {
       "id": "a2",
       "prompt": {
-        "en": "What is the whole text mostly about?",
-        "id": "Teks itu terutama tentang apa?"
+        "en": "What is the snail text mostly about?",
+        "id": "Teks siput itu terutama tentang apa?"
       },
       "choices": {
         "en": [
-          "How earthworms live and how they help the soil",
-          "What gardens look like after rain",
-          "All the animals that live underground"
+          "How garden snails live, eat and help the soil",
+          "Why snails hide when the weather is dry",
+          "All the animals in a garden"
         ],
         "id": [
-          "Cara hidup cacing tanah dan manfaatnya bagi tanah",
-          "Keadaan kebun setelah hujan",
-          "Semua hewan yang hidup di dalam tanah"
+          "Cara hidup siput kebun, makanannya, dan manfaatnya bagi tanah",
+          "Mengapa siput bersembunyi saat cuaca kering",
+          "Semua hewan di kebun"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Every section is about earthworms. The other answers are too narrow or too wide.",
-        "id": "Setiap bagian membahas cacing tanah. Jawaban lain terlalu sempit atau terlalu luas."
+        "en": "Every part is about garden snails. Hiding in dry weather is one side detail; all garden animals is too wide.",
+        "id": "Setiap bagian membahas siput kebun. Bersembunyi saat kering hanya satu detail sampingan; semua hewan di kebun terlalu luas."
       },
       "distractorMisconceptions": {
         "1": "OFF_TOPIC_DETAIL",
@@ -212,24 +212,24 @@
     {
       "id": "a4",
       "prompt": {
-        "en": "Which key words best help you remember the 'Helping' part?",
-        "id": "Kata kunci mana yang paling membantu mengingat bagian 'Manfaat'?"
+        "en": "Which key words best help you remember the 'Helping' part of the snail text?",
+        "id": "Kata kunci mana yang paling membantu mengingat bagian 'Manfaat' dari teks siput?"
       },
       "choices": {
         "en": [
-          "tunnels, air and water in, mix leaves",
-          "no legs, rings, bristles",
-          "soil, worms, the"
+          "eat dead plants, break down, soil",
+          "soft body, one foot, shell",
+          "snail, the, it"
         ],
         "id": [
-          "lubang, udara dan air masuk, campur daun",
-          "tanpa kaki, cincin, rambut halus",
-          "tanah, cacing, itu"
+          "makan tumbuhan mati, menguraikan, tanah",
+          "tubuh lunak, satu kaki, cangkang",
+          "siput, itu, ia"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Key words carry the facts of that section. Body facts belong to another section, and words like 'the' carry no fact.",
+        "en": "Key words carry the facts of that part. Body facts belong to another part, and words like 'the' carry no fact.",
         "id": "Kata kunci memuat fakta bagian itu. Fakta tentang tubuh ada di bagian lain, dan kata seperti 'itu' tidak memuat fakta."
       },
       "distractorMisconceptions": {

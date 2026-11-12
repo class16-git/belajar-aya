@@ -103,6 +103,7 @@ export function applyDecision(content, d) {
   review.reviewedBy = d.reviewerName;
   review.reviewerRole = d.reviewerRole;
   review.reviewedAt = date;
+  review.reviewedVersion = d.itemVersion; // approval is tied to this exact version
   const next = { ...content, review };
   if (d.decision === 'approve') {
     delete review.rejectedReason;

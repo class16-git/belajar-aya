@@ -1,6 +1,6 @@
 {
   "id": "unit-k-literacy-segmenting-words-for-spelling",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "level": "k",
   "framework": "literacy",
   "strand": "phonics",
@@ -92,8 +92,8 @@
   ],
   "preparation": [
     {
-      "en": "Choose practice words that use taught letters only (EN: sat, map, dog, tin; ID: sapu, bola, topi, sate, tas).",
-      "id": "Pilih kata latihan yang hanya memakai huruf yang sudah dipelajari (ID: sapu, bola, topi, sate, tas; EN: sat, map, dog, tin)."
+      "en": "Choose practice words that use taught letters only (EN: sat, map, dog, tin; ID: sapu, bola, topi, satu, tas).",
+      "id": "Pilih kata latihan yang hanya memakai huruf yang sudah dipelajari (ID: sapu, bola, topi, satu, tas; EN: sat, map, dog, tin)."
     },
     {
       "en": "Say each word yourself slowly first so you are sure how many sounds it has.",
@@ -213,7 +213,7 @@
       "id": "a4",
       "prompt": {
         "en": "Which sound is in the middle of 'sit'?",
-        "id": "Bunyi apa yang ada di tengah kata 'tas'?"
+        "id": "Bunyi apa yang ada di tengah kata 'bus'?"
       },
       "choices": {
         "en": [
@@ -222,15 +222,15 @@
           "/t/"
         ],
         "id": [
-          "/a/",
-          "/t/",
+          "/u/",
+          "/b/",
           "/s/"
         ]
       },
       "answer": 0,
       "explanation": {
         "en": "Push three tokens and point to the middle one: that is the vowel.",
-        "id": "Dorong tiga kartu dan tunjuk yang di tengah: itulah vokalnya."
+        "id": "Dorong tiga kartu untuk b-u-s dan tunjuk yang di tengah: itulah vokalnya."
       },
       "distractorMisconceptions": {
         "1": "GIVES_FIRST_SOUND",
@@ -308,8 +308,8 @@
   ],
   "extension": [
     {
-      "en": "Write a shopping list together by segmenting each item (EN, using taught letters only: mop, pot, mat; ID: tomat, tahu, sabun).",
-      "id": "Tulis daftar belanja bersama dengan memisah bunyi setiap barang (ID: tomat, tahu, sabun; EN: mop, pot)."
+      "en": "Write a shopping list together by segmenting each item (EN, using taught letters only: mop, pot, mat; ID: tomat, buku, sabun).",
+      "id": "Tulis daftar belanja bersama dengan memisah bunyi setiap barang (ID: tomat, buku, sabun; EN: mop, pot)."
     }
   ],
   "accessibility": [
