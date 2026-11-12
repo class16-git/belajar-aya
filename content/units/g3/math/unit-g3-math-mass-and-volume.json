@@ -1,0 +1,485 @@
+{
+  "id": "unit-g3-math-mass-and-volume",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "math",
+  "strand": "measurement",
+  "title": {
+    "en": "Mass and volume: grams, kilograms, millilitres and litres",
+    "id": "Massa dan volume: gram, kilogram, mililiter, dan liter"
+  },
+  "prerequisites": [
+    "unit-g3-math-multiplication-division-bar-models",
+    "unit-g2-math-subtraction-regrouping-1000"
+  ],
+  "objective": {
+    "en": "Measure mass in grams and kilograms and liquid volume in millilitres and litres, read scales with marked intervals, convert using 1 kg = 1,000 g and 1 l = 1,000 ml, and add and subtract measurements.",
+    "id": "Mengukur massa dalam gram dan kilogram serta volume cairan dalam mililiter dan liter, membaca skala dengan selang bertanda, mengubah satuan dengan 1 kg = 1.000 g dan 1 l = 1.000 ml, serta menjumlahkan dan mengurangkan hasil ukur."
+  },
+  "rationale": {
+    "en": "The kitchen is full of real measurements: a 1 kg bag of sugar, a 600 ml bottle, a recipe asking for 250 g of flour. Reading a scale means working out what each small mark is worth, which uses division. Converting compound measurements such as 2 kg 350 g uses place value.",
+    "id": "Dapur penuh dengan ukuran nyata: sekantong gula 1 kg, botol 600 ml, resep yang meminta 250 g tepung. Membaca skala berarti menentukan nilai setiap tanda kecil, yang memakai pembagian. Mengubah ukuran gabungan seperti 2 kg 350 g memakai nilai tempat."
+  },
+  "outcomes": [
+    {
+      "en": "Reads a kitchen scale and a measuring jug by first finding the value of each small mark.",
+      "id": "Membaca timbangan dapur dan gelas ukur dengan lebih dulu menentukan nilai setiap tanda kecil."
+    },
+    {
+      "en": "Converts between kg and g and between l and ml, including compound measurements.",
+      "id": "Mengubah antara kg dan g serta antara l dan ml, termasuk ukuran gabungan."
+    },
+    {
+      "en": "Adds and subtracts masses and volumes in word problems.",
+      "id": "Menjumlahkan dan mengurangkan massa dan volume dalam soal cerita."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can say what one small mark on the scale is worth before I read it.",
+      "id": "Aku bisa menyebut nilai satu tanda kecil pada skala sebelum membacanya."
+    },
+    {
+      "en": "I can write 2 kg 350 g as 2,350 g.",
+      "id": "Aku bisa menulis 2 kg 350 g sebagai 2.350 g."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Let your child hold a 1 kg bag of sugar or rice and a 1 l bottle of water so the units have a feel.",
+      "id": "Biarkan anak memegang sekantong gula atau beras 1 kg dan sebotol air 1 l supaya satuannya terasa."
+    },
+    {
+      "en": "On every scale, find two labelled numbers next to each other, count the spaces between them, and divide.",
+      "id": "Pada setiap skala, cari dua angka berlabel yang berdekatan, hitung ruang di antaranya, lalu bagi."
+    },
+    {
+      "en": "Indonesian packaging writes 1.000 g for one thousand grams and 1,5 l for one and a half litres; point this out on real labels.",
+      "id": "Kemasan di Indonesia menulis 1.000 g untuk seribu gram dan 1,5 l untuk satu setengah liter; tunjukkan ini pada label sungguhan."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Find what one small mark is worth, then read the pointer or the water line at eye level.",
+      "id": "Cari nilai satu tanda kecil, lalu baca jarum atau batas air sejajar mata."
+    },
+    {
+      "en": "Change to the same unit before you add or subtract.",
+      "id": "Ubah ke satuan yang sama sebelum menjumlahkan atau mengurangkan."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Weigh fruit on a kitchen scale: a bunch of bananas, an apple, a bag of rice. Fill a 1 l bottle using a 250 ml cup and count the cups: 4 cups make 1 l.",
+        "id": "Timbang buah dengan timbangan dapur: sesisir pisang, sebuah apel, sekantong beras. Isi botol 1 l dengan cangkir 250 ml dan hitung cangkirnya: 4 cangkir menjadi 1 l."
+      },
+      {
+        "en": "Pour water from a full 1 l jug into glasses and read how much is left in the jug after each glass.",
+        "id": "Tuang air dari teko 1 l penuh ke gelas-gelas dan baca berapa yang tersisa di teko setelah setiap gelas."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a scale with labels 400 g and 500 g and five equal spaces between them; mark a pointer on the 3rd small mark and work out 400 + 3 × 20 = 460 g.",
+        "id": "Gambar skala dengan label 400 g dan 500 g dan lima ruang sama di antaranya; tandai jarum pada tanda kecil ke-3 dan hitung 400 + 3 × 20 = 460 g."
+      },
+      {
+        "en": "Draw a bar model: a 1 kg bag of sugar as the whole, 375 g used, the rest unknown.",
+        "id": "Gambar model batang: sekantong gula 1 kg sebagai keseluruhan, 375 g dipakai, sisanya dicari."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Convert and calculate in writing: 2 kg 350 g = 2,000 g + 350 g = 2,350 g; 1,000 g - 375 g = 625 g.",
+        "id": "Ubah dan hitung secara tertulis: 2 kg 350 g = 2.000 g + 350 g = 2.350 g; 1.000 g - 375 g = 625 g."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A kitchen scale (dial or digital), a 1 kg bag of sugar or rice",
+      "id": "Timbangan dapur (jarum atau digital), sekantong gula atau beras 1 kg"
+    },
+    {
+      "en": "A measuring jug with ml marks, a 1 l bottle, a 250 ml cup, a few glasses",
+      "id": "Gelas ukur bertanda ml, botol 1 l, cangkir 250 ml, beberapa gelas"
+    },
+    {
+      "en": "A tray and a cloth for spills, paper and pencil",
+      "id": "Nampan dan lap untuk tumpahan, kertas dan pensil"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Check the scale shows zero with nothing on it; put the jug and glasses on a tray.",
+      "id": "Pastikan timbangan menunjuk nol saat kosong; taruh gelas ukur dan gelas di atas nampan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Read the scale: labels 400 g and 500 g have 5 spaces between them, so each mark is 100 ÷ 5 = 20 g. The pointer is 3 marks past 400, so 460 g.",
+      "id": "Baca skala: label 400 g dan 500 g punya 5 ruang di antaranya, jadi setiap tanda 100 ÷ 5 = 20 g. Jarum 3 tanda lewat 400, jadi 460 g."
+    },
+    {
+      "en": "Convert: a bag of flour weighs 2 kg 350 g. That is 2,000 g and 350 g, so 2,350 g.",
+      "id": "Ubah: sekantong tepung beratnya 2 kg 350 g. Itu 2.000 g dan 350 g, jadi 2.350 g."
+    },
+    {
+      "en": "Fill the 1 l bottle with the 250 ml cup: 250 + 250 + 250 + 250 = 1,000 ml, so 4 cups make 1 litre.",
+      "id": "Isi botol 1 l dengan cangkir 250 ml: 250 + 250 + 250 + 250 = 1.000 ml, jadi 4 cangkir menjadi 1 liter."
+    },
+    {
+      "en": "Ibu has a 1 kg bag of sugar and uses 375 g for kue. 1 kg = 1,000 g, and 1,000 - 375 = 625 g is left.",
+      "id": "Ibu punya sekantong gula 1 kg dan memakai 375 g untuk kue. 1 kg = 1.000 g, dan 1.000 - 375 = 625 g tersisa."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Label hunt: find five packages in the kitchen, read their mass or volume, and order them from smallest to largest after converting to g or ml.",
+      "id": "Berburu label: cari lima kemasan di dapur, baca massa atau volumenya, dan urutkan dari terkecil ke terbesar setelah diubah ke g atau ml."
+    },
+    {
+      "en": "Estimate then weigh: guess the mass of three fruits, weigh them, and find how far off each guess was.",
+      "id": "Perkirakan lalu timbang: tebak massa tiga buah, timbang, dan cari selisih setiap tebakan."
+    },
+    {
+      "en": "Recipe maths: a recipe for es buah needs 500 ml of syrup water for 4 glasses; how much for 8 glasses, in litres?",
+      "id": "Matematika resep: resep es buah perlu 500 ml air sirup untuk 4 gelas; berapa untuk 8 gelas, dalam liter?"
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A watermelon has a mass of 3 kg 80 g. What is its mass in grams?",
+        "id": "Sebuah semangka bermassa 3 kg 80 g. Berapa massanya dalam gram?"
+      },
+      "choices": {
+        "en": [
+          "3,080 g",
+          "380 g",
+          "3,800 g"
+        ],
+        "id": [
+          "3.080 g",
+          "380 g",
+          "3.800 g"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "3 kg = 3,000 g, and 3,000 + 80 = 3,080 g. The 0 in the hundreds place shows there are no hundreds of grams.",
+        "id": "3 kg = 3.000 g, dan 3.000 + 80 = 3.080 g. Angka 0 di tempat ratusan menunjukkan tidak ada ratusan gram."
+      },
+      "check": {
+        "expression": "3 * 1000 + 80",
+        "result": "3080"
+      },
+      "distractorMisconceptions": {
+        "1": "DROPS_ZERO_PLACEHOLDER",
+        "2": "PLACE_SHIFT"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A jug holds 2 l of water. How many 500 ml glasses can be filled from it?",
+        "id": "Sebuah teko berisi 2 l air. Berapa gelas 500 ml yang bisa diisi darinya?"
+      },
+      "choices": {
+        "en": [
+          "4 glasses",
+          "250 glasses",
+          "2 glasses"
+        ],
+        "id": [
+          "4 gelas",
+          "250 gelas",
+          "2 gelas"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2 l = 2,000 ml, and 2,000 ÷ 500 = 4 glasses.",
+        "id": "2 l = 2.000 ml, dan 2.000 ÷ 500 = 4 gelas."
+      },
+      "check": {
+        "expression": "2 * 1000 / 500",
+        "result": "4"
+      },
+      "distractorMisconceptions": {
+        "1": "DIVIDES_WITHOUT_CONVERTING",
+        "2": "IGNORES_UNITS"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A watermelon weighs 2 kg 300 g and a melon weighs 1 kg 650 g. How much heavier is the watermelon?",
+        "id": "Semangka beratnya 2 kg 300 g dan melon 1 kg 650 g. Berapa lebih berat semangka?"
+      },
+      "choices": {
+        "en": [
+          "650 g",
+          "1 kg 350 g",
+          "3 kg 950 g"
+        ],
+        "id": [
+          "650 g",
+          "1 kg 350 g",
+          "3 kg 950 g"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Change to grams: 2,300 g - 1,650 g = 650 g.",
+        "id": "Ubah ke gram: 2.300 g - 1.650 g = 650 g."
+      },
+      "check": {
+        "expression": "2300 - 1650",
+        "result": "650"
+      },
+      "distractorMisconceptions": {
+        "1": "SMALLER_FROM_LARGER",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A scale has labels 0, 200 g, 400 g, 600 g and 800 g, with 4 equal spaces between each label. The pointer is on the 3rd small mark after 600 g. What is the mass?",
+        "id": "Sebuah timbangan berlabel 0, 200 g, 400 g, 600 g, dan 800 g, dengan 4 ruang sama di antara setiap label. Jarumnya di tanda kecil ke-3 setelah 600 g. Berapa massanya?"
+      },
+      "choices": {
+        "en": [
+          "750 g",
+          "603 g",
+          "630 g"
+        ],
+        "id": [
+          "750 g",
+          "603 g",
+          "630 g"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each space is 200 ÷ 4 = 50 g. Three marks after 600 g is 600 + 3 × 50 = 750 g.",
+        "id": "Setiap ruang 200 ÷ 4 = 50 g. Tiga tanda setelah 600 g adalah 600 + 3 × 50 = 750 g."
+      },
+      "check": {
+        "expression": "600 + 3 * 200 / 4",
+        "result": "750"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_MARKS_AS_ONES",
+        "2": "COUNTS_MARKS_AS_TENS"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A bottle has 1 l of juice. Aya pours 3 glasses of 200 ml each. How much juice is left in the bottle?",
+        "id": "Sebotol berisi 1 l jus. Aya menuang 3 gelas masing-masing 200 ml. Berapa jus yang tersisa di botol?"
+      },
+      "choices": {
+        "en": [
+          "400 ml",
+          "800 ml",
+          "1,600 ml"
+        ],
+        "id": [
+          "400 ml",
+          "800 ml",
+          "1.600 ml"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "1 l = 1,000 ml. Poured: 3 × 200 = 600 ml. Left: 1,000 - 600 = 400 ml.",
+        "id": "1 l = 1.000 ml. Dituang: 3 × 200 = 600 ml. Sisa: 1.000 - 600 = 400 ml."
+      },
+      "check": {
+        "expression": "1000 - 3 * 200",
+        "result": "400"
+      },
+      "distractorMisconceptions": {
+        "1": "TAKES_AWAY_ONE_GROUP_ONLY",
+        "2": "ADDS_INSTEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "DROPS_ZERO_PLACEHOLDER",
+      "description": {
+        "en": "Writes 3 kg 80 g as 380 g, joining the numbers without keeping the empty hundreds place.",
+        "id": "Menulis 3 kg 80 g sebagai 380 g, menggabungkan bilangan tanpa menjaga tempat ratusan yang kosong."
+      },
+      "remediation": {
+        "en": "Write the grams in a thousands-hundreds-tens-ones chart: 3 goes in the thousands, 80 fills tens and ones, and the hundreds need a 0.",
+        "id": "Tulis gram di tabel ribuan-ratusan-puluhan-satuan: 3 di ribuan, 80 mengisi puluhan dan satuan, dan ratusan perlu 0."
+      }
+    },
+    {
+      "code": "PLACE_SHIFT",
+      "description": {
+        "en": "Puts the grams in the wrong place, for example reading 80 g as 800 g.",
+        "id": "Menaruh gram di tempat yang salah, misalnya membaca 80 g sebagai 800 g."
+      },
+      "remediation": {
+        "en": "Weigh 80 g of rice and 800 g of rice and hold them: the difference is easy to feel.",
+        "id": "Timbang 80 g beras dan 800 g beras lalu pegang: perbedaannya mudah terasa."
+      }
+    },
+    {
+      "code": "DIVIDES_WITHOUT_CONVERTING",
+      "description": {
+        "en": "Divides the numbers as written (500 ÷ 2) without changing litres to millilitres.",
+        "id": "Membagi bilangan apa adanya (500 ÷ 2) tanpa mengubah liter menjadi mililiter."
+      },
+      "remediation": {
+        "en": "Pour real water: fill 500 ml glasses from a 2 l bottle and count them.",
+        "id": "Tuang air sungguhan: isi gelas 500 ml dari botol 2 l dan hitung gelasnya."
+      }
+    },
+    {
+      "code": "IGNORES_UNITS",
+      "description": {
+        "en": "Treats litres and millilitres as the same size.",
+        "id": "Menganggap liter dan mililiter sama besar."
+      },
+      "remediation": {
+        "en": "Measure 1 ml with the dropper from a medicine bottle and put it next to 1 l in a bottle.",
+        "id": "Takar 1 ml dengan pipet dari botol obat dan letakkan di samping 1 l dalam botol."
+      }
+    },
+    {
+      "code": "SMALLER_FROM_LARGER",
+      "description": {
+        "en": "Subtracts kg from kg and g from g, taking the smaller g from the larger, so 300 - 650 becomes 350.",
+        "id": "Mengurangkan kg dari kg dan g dari g, dengan mengurangkan g yang lebih kecil dari yang lebih besar, sehingga 300 - 650 menjadi 350."
+      },
+      "remediation": {
+        "en": "Convert both masses to grams first and subtract in columns with renaming.",
+        "id": "Ubah kedua massa ke gram dulu dan kurangkan bersusun dengan meminjam."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the two quantities when the question asks for a difference or what is left.",
+        "id": "Menjumlahkan kedua besaran ketika pertanyaannya selisih atau sisa."
+      },
+      "remediation": {
+        "en": "Draw the bar model and mark what is known and what is asked before choosing the operation.",
+        "id": "Gambar model batang dan tandai yang diketahui dan yang ditanyakan sebelum memilih operasi."
+      }
+    },
+    {
+      "code": "COUNTS_MARKS_AS_ONES",
+      "description": {
+        "en": "Counts each small mark on a scale as 1 unit.",
+        "id": "Menghitung setiap tanda kecil pada skala sebagai 1 satuan."
+      },
+      "remediation": {
+        "en": "Count the spaces between two labels and divide the difference between the labels by the number of spaces.",
+        "id": "Hitung ruang di antara dua label dan bagi selisih kedua label dengan banyak ruang."
+      }
+    },
+    {
+      "code": "COUNTS_MARKS_AS_TENS",
+      "description": {
+        "en": "Assumes every small mark is worth 10, whatever the scale.",
+        "id": "Mengira setiap tanda kecil bernilai 10, apa pun skalanya."
+      },
+      "remediation": {
+        "en": "Compare two different scales (a kitchen scale and a bathroom scale) and work out the mark value on each.",
+        "id": "Bandingkan dua skala berbeda (timbangan dapur dan timbangan badan) dan hitung nilai tanda pada masing-masing."
+      }
+    },
+    {
+      "code": "TAKES_AWAY_ONE_GROUP_ONLY",
+      "description": {
+        "en": "Subtracts only one glass instead of all the glasses poured.",
+        "id": "Hanya mengurangkan satu gelas, bukan semua gelas yang dituang."
+      },
+      "remediation": {
+        "en": "Pour the three glasses for real and line them up; find the total poured before subtracting.",
+        "id": "Tuang tiga gelas sungguhan dan jajarkan; cari jumlah yang dituang sebelum mengurangkan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Find out how much one glass of rice weighs by weighing 4 glasses together and dividing; compare with weighing one glass directly.",
+      "id": "Cari tahu berat satu gelas beras dengan menimbang 4 gelas bersama lalu membagi; bandingkan dengan menimbang satu gelas langsung."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A digital scale with large numbers helps children who find dial scales hard to read; let the child feel the masses as well as read them.",
+      "id": "Timbangan digital dengan angka besar membantu anak yang kesulitan membaca timbangan jarum; biarkan anak merasakan beratnya selain membacanya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": true,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Pour water on a tray and wipe spills at once so the floor is not slippery; use plastic jugs and glasses.",
+        "id": "Tuang air di atas nampan dan segera lap tumpahan agar lantai tidak licin; pakai teko dan gelas plastik."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child reads two new scales with different mark values, converts two compound measurements and solves one word problem, on two different days.",
+      "id": "Dikuasai jika anak membaca dua skala baru dengan nilai tanda berbeda, mengubah dua ukuran gabungan, dan menyelesaikan satu soal cerita, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

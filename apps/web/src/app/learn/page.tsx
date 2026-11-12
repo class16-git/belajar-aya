@@ -53,7 +53,7 @@ export default async function LearnPage() {
                 <h3 className="text-xl font-bold leading-snug">{u.title[locale]}</h3>
                 <p className="text-base">{u.objective[locale]}</p>
                 <p className="text-sm muted">⏱ {fmt(t.unitChild.minutes, u.durationMinutes)}</p>
-                <Link href={`/learn/unit/${u.id}`} className="btn-secondary btn-xl mt-auto w-fit" aria-label={`${t.unitChild.open}: ${u.title[locale]}`}>{t.unitChild.open}</Link>
+                <Link href={`/learn/unit/${u.id}`} className="btn-secondary btn-xl mt-auto w-fit">{t.unitChild.open}<span className="sr-only">: {u.title[locale]}</span></Link>
               </li>
             ))}
           </ul>

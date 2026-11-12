@@ -1,0 +1,454 @@
+{
+  "id": "unit-g3-math-comparing-fractions",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "math",
+  "strand": "fractions",
+  "title": {
+    "en": "Comparing and ordering fractions",
+    "id": "Membandingkan dan mengurutkan pecahan"
+  },
+  "prerequisites": [
+    "unit-g3-math-fractions-of-a-whole"
+  ],
+  "objective": {
+    "en": "Compare and order fractions of the same whole: unit fractions, fractions with the same denominator, fractions with the same numerator, and fractions compared with one half.",
+    "id": "Membandingkan dan mengurutkan pecahan dari keseluruhan yang sama: pecahan satuan, pecahan berpenyebut sama, pecahan berpembilang sama, dan pecahan yang dibandingkan dengan setengah."
+  },
+  "rationale": {
+    "en": "Children often think 1/8 is bigger than 1/5 because 8 is bigger than 5. Folding the same strip into more parts and seeing each part get smaller corrects this. Comparing with one half gives a quick check that is used again with decimals and percentages.",
+    "id": "Anak sering mengira 1/8 lebih besar dari 1/5 karena 8 lebih besar dari 5. Melipat pita yang sama menjadi lebih banyak bagian dan melihat setiap bagian mengecil memperbaiki anggapan ini. Membandingkan dengan setengah memberi cara cepat yang dipakai lagi pada desimal dan persen."
+  },
+  "outcomes": [
+    {
+      "en": "Explains why a unit fraction with a larger denominator is smaller.",
+      "id": "Menjelaskan mengapa pecahan satuan dengan penyebut lebih besar nilainya lebih kecil."
+    },
+    {
+      "en": "Compares and orders fractions with the same denominator or the same numerator.",
+      "id": "Membandingkan dan mengurutkan pecahan berpenyebut sama atau berpembilang sama."
+    },
+    {
+      "en": "Decides whether a fraction is more or less than one half.",
+      "id": "Menentukan apakah suatu pecahan lebih atau kurang dari setengah."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can use fraction strips to show that 1/3 is greater than 1/6.",
+      "id": "Aku bisa memakai pita pecahan untuk menunjukkan bahwa 1/3 lebih besar dari 1/6."
+    },
+    {
+      "en": "I can say whether 5/8 is more or less than a half and why.",
+      "id": "Aku bisa menyebut apakah 5/8 lebih atau kurang dari setengah dan alasannya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Make all the strips the same length; comparing fractions only makes sense for the same whole.",
+      "id": "Buat semua pita sama panjang; membandingkan pecahan hanya masuk akal untuk keseluruhan yang sama."
+    },
+    {
+      "en": "Ask 'how big is each piece?' and 'how many pieces?' as two separate questions.",
+      "id": "Tanyakan 'seberapa besar setiap bagian?' dan 'berapa banyak bagian?' sebagai dua pertanyaan terpisah."
+    },
+    {
+      "en": "In Indonesian, the top number is the pembilang and the bottom number the penyebut; use those words.",
+      "id": "Bilangan atas disebut pembilang dan bilangan bawah penyebut; pakai kata-kata itu."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Same bottom number? Compare how many pieces.",
+      "id": "Penyebutnya sama? Bandingkan banyak bagiannya."
+    },
+    {
+      "en": "Same top number? The piece with fewer parts in the whole is bigger.",
+      "id": "Pembilangnya sama? Bagian dari keseluruhan yang dibagi lebih sedikit lebih besar."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Fold paper strips of the same length into halves, thirds, quarters, sixths and eighths and label them. Lay the 1/3 strip piece next to the 1/6 piece: the third is twice as long.",
+        "id": "Lipat pita kertas yang sama panjang menjadi setengah, pertiga, perempat, perenam, dan perdelapan lalu beri label. Letakkan potongan 1/3 di samping potongan 1/6: pertiga dua kali lebih panjang."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a fraction wall with rows for 1, 1/2, 1/3, 1/4, 1/6 and 1/8 lined up on the left. Shade 3/4 and 3/8 and compare the shaded lengths.",
+        "id": "Gambar dinding pecahan dengan baris untuk 1, 1/2, 1/3, 1/4, 1/6, dan 1/8 yang rata di kiri. Arsir 3/4 dan 3/8 lalu bandingkan panjang yang diarsir."
+      },
+      {
+        "en": "Draw a number line from 0 to 1 with 1/2 marked, and place 2/6 and 4/6 on it.",
+        "id": "Gambar garis bilangan dari 0 sampai 1 dengan tanda 1/2, dan letakkan 2/6 dan 4/6 di atasnya."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Order fractions with words: 2/6, 4/6 and 5/6 from smallest to greatest; then 1/2, 1/4 and 1/8 from greatest to smallest.",
+        "id": "Urutkan pecahan dengan kata: 2/6, 4/6, dan 5/6 dari terkecil ke terbesar; lalu 1/2, 1/4, dan 1/8 dari terbesar ke terkecil."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Six paper strips of exactly the same length (for example 24 cm), crayons, a ruler",
+      "id": "Enam pita kertas yang persis sama panjang (misalnya 24 cm), krayon, penggaris"
+    },
+    {
+      "en": "A round snack such as a roti or martabak for one real comparison (optional)",
+      "id": "Camilan bulat seperti roti atau martabak untuk satu perbandingan nyata (pilihan)"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Measure and mark the strips so the folds are accurate; label one strip '1 whole'.",
+      "id": "Ukur dan tandai pita supaya lipatannya tepat; beri label pada satu pita '1 utuh'."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "1/3 or 1/6? Put the strip pieces side by side. The whole was cut into more parts for sixths, so each part is smaller. 1/3 is greater.",
+      "id": "1/3 atau 1/6? Letakkan potongan pita berdampingan. Untuk perenam keseluruhan dipotong menjadi lebih banyak bagian, jadi setiap bagian lebih kecil. 1/3 lebih besar."
+    },
+    {
+      "en": "2/6 and 5/6 have the same size of piece. 5 pieces are more than 2 pieces, so 5/6 is greater.",
+      "id": "2/6 dan 5/6 punya ukuran bagian yang sama. 5 bagian lebih banyak dari 2 bagian, jadi 5/6 lebih besar."
+    },
+    {
+      "en": "3/4 or 3/8? Both have 3 pieces, but quarters are bigger pieces than eighths, so 3/4 is greater.",
+      "id": "3/4 atau 3/8? Keduanya punya 3 bagian, tetapi perempat lebih besar dari perdelapan, jadi 3/4 lebih besar."
+    },
+    {
+      "en": "Is 4/6 more than a half? Half of 6 sixths is 3 sixths, and 4 sixths is one more, so 4/6 is more than a half.",
+      "id": "Apakah 4/6 lebih dari setengah? Setengah dari 6 perenam adalah 3 perenam, dan 4 perenam lebih satu, jadi 4/6 lebih dari setengah."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Fraction war: each player draws a card with a fraction of the same whole; the child decides who has the greater fraction using the strips.",
+      "id": "Adu pecahan: setiap pemain mengambil kartu pecahan dari keseluruhan yang sama; anak menentukan siapa yang punya pecahan lebih besar dengan pita."
+    },
+    {
+      "en": "Sort fraction cards into three piles: less than a half, exactly a half, more than a half.",
+      "id": "Pilah kartu pecahan ke tiga tumpukan: kurang dari setengah, tepat setengah, lebih dari setengah."
+    },
+    {
+      "en": "Real comparison: cut a roti into quarters and another of the same size into eighths; compare 1 quarter with 2 eighths and talk about what you notice.",
+      "id": "Perbandingan nyata: potong satu roti menjadi perempat dan roti lain yang sama besar menjadi perdelapan; bandingkan 1 perempat dengan 2 perdelapan dan bicarakan apa yang terlihat."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Ani eats 1/5 of a martabak. Budi eats 1/8 of an identical martabak. Who eats more?",
+        "id": "Ani makan 1/5 martabak. Budi makan 1/8 martabak yang sama besar. Siapa yang makan lebih banyak?"
+      },
+      "choices": {
+        "en": [
+          "1/5, so Ani eats more",
+          "1/8, so Budi eats more",
+          "They eat the same amount"
+        ],
+        "id": [
+          "1/5, jadi Ani makan lebih banyak",
+          "1/8, jadi Budi makan lebih banyak",
+          "Mereka makan sama banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Fifths are bigger pieces than eighths, because the martabak is cut into fewer pieces. So 1/5 is more than 1/8.",
+        "id": "Perlima adalah potongan yang lebih besar dari perdelapan, karena martabak dipotong menjadi lebih sedikit bagian. Jadi 1/5 lebih dari 1/8."
+      },
+      "check": {
+        "expression": "1 / 5",
+        "result": "1/5"
+      },
+      "distractorMisconceptions": {
+        "1": "BIGGER_DENOMINATOR_BIGGER",
+        "2": "SAME_NUMERATOR_SAME_SIZE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Sari uses 7/10 of a ribbon. Dewi uses 4/10 of a ribbon of the same length. How much more does Sari use?",
+        "id": "Sari memakai 7/10 pita. Dewi memakai 4/10 pita yang sama panjang. Berapa lebih banyak yang dipakai Sari?"
+      },
+      "choices": {
+        "en": [
+          "3/10 of a ribbon",
+          "11/10 of a ribbon",
+          "3 ribbons"
+        ],
+        "id": [
+          "3/10 pita",
+          "11/10 pita",
+          "3 pita"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The pieces are the same size (tenths), so compare the numbers of pieces: 7 tenths - 4 tenths = 3 tenths.",
+        "id": "Bagiannya sama besar (persepuluh), jadi bandingkan banyak bagiannya: 7 persepuluh - 4 persepuluh = 3 persepuluh."
+      },
+      "check": {
+        "expression": "7/10 - 4/10",
+        "result": "3/10"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "DROPS_DENOMINATOR"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which fraction is greater than 1/2?",
+        "id": "Pecahan mana yang lebih dari 1/2?"
+      },
+      "choices": {
+        "en": [
+          "5/8",
+          "4/8",
+          "3/10"
+        ],
+        "id": [
+          "5/8",
+          "4/8",
+          "3/10"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Half of 8 eighths is 4/8, so 4/8 is exactly a half. 5/8 is one eighth more: 4/8 + 1/8 = 5/8. 3/10 is less than 5/10, which is a half.",
+        "id": "Setengah dari 8 perdelapan adalah 4/8, jadi 4/8 tepat setengah. 5/8 lebih satu perdelapan: 4/8 + 1/8 = 5/8. 3/10 kurang dari 5/10, yaitu setengah."
+      },
+      "check": {
+        "expression": "4/8 + 1/8",
+        "result": "5/8"
+      },
+      "distractorMisconceptions": {
+        "1": "EQUAL_TO_HALF_COUNTED_AS_MORE",
+        "2": "BIGGER_DENOMINATOR_BIGGER"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Rudi drinks 2/3 of a bottle of water. Wati drinks 2/5 of an identical bottle. Who drinks more?",
+        "id": "Rudi minum 2/3 botol air. Wati minum 2/5 botol yang sama. Siapa yang minum lebih banyak?"
+      },
+      "choices": {
+        "en": [
+          "2/3, so Rudi drinks more",
+          "2/5, so Wati drinks more",
+          "They drink the same amount"
+        ],
+        "id": [
+          "2/3, jadi Rudi minum lebih banyak",
+          "2/5, jadi Wati minum lebih banyak",
+          "Mereka minum sama banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Both drink 2 pieces, but thirds are bigger than fifths. Another way: Rudi leaves 1 - 2/3 = 1/3 and Wati leaves 3/5, which is more than half, so Rudi drinks more.",
+        "id": "Keduanya minum 2 bagian, tetapi pertiga lebih besar dari perlima. Cara lain: Rudi menyisakan 1 - 2/3 = 1/3 dan Wati menyisakan 3/5, yang lebih dari setengah, jadi Rudi minum lebih banyak."
+      },
+      "check": {
+        "expression": "1 - 1/3",
+        "result": "2/3"
+      },
+      "distractorMisconceptions": {
+        "1": "BIGGER_DENOMINATOR_BIGGER",
+        "2": "SAME_NUMERATOR_SAME_SIZE"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "A cake is cut into 10 equal pieces. How many pieces make exactly one half of the cake?",
+        "id": "Sebuah kue dipotong menjadi 10 bagian sama. Berapa potong yang tepat setengah kue?"
+      },
+      "choices": {
+        "en": [
+          "5 pieces",
+          "2 pieces",
+          "8 pieces"
+        ],
+        "id": [
+          "5 potong",
+          "2 potong",
+          "8 potong"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Half of 10 pieces is 10 ÷ 2 = 5 pieces, so 5/10 is one half.",
+        "id": "Setengah dari 10 potong adalah 10 ÷ 2 = 5 potong, jadi 5/10 sama dengan setengah."
+      },
+      "check": {
+        "expression": "10 / 2",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "DENOMINATOR_AS_PIECES",
+        "2": "SUBTRACTS_INSTEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "BIGGER_DENOMINATOR_BIGGER",
+      "description": {
+        "en": "Thinks a larger denominator means a larger fraction (1/8 is more than 1/5).",
+        "id": "Mengira penyebut lebih besar berarti pecahan lebih besar (1/8 lebih dari 1/5)."
+      },
+      "remediation": {
+        "en": "Fold two identical strips, one into 5 and one into 8, and lay one piece of each side by side.",
+        "id": "Lipat dua pita yang sama, satu menjadi 5 dan satu menjadi 8, lalu letakkan satu potong dari masing-masing berdampingan."
+      }
+    },
+    {
+      "code": "SAME_NUMERATOR_SAME_SIZE",
+      "description": {
+        "en": "Thinks fractions with the same numerator are equal.",
+        "id": "Mengira pecahan berpembilang sama nilainya sama."
+      },
+      "remediation": {
+        "en": "Shade 2 pieces on the thirds strip and 2 pieces on the fifths strip and compare the shaded lengths.",
+        "id": "Arsir 2 bagian pada pita pertiga dan 2 bagian pada pita perlima lalu bandingkan panjang yang diarsir."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the fractions when the question asks how much more.",
+        "id": "Menjumlahkan pecahan ketika pertanyaannya berapa lebih banyak."
+      },
+      "remediation": {
+        "en": "Lay the two shaded strips one above the other and shade only the part of the longer strip that sticks out.",
+        "id": "Letakkan dua pita yang diarsir satu di atas yang lain dan arsir hanya bagian pita yang lebih panjang yang menonjol."
+      }
+    },
+    {
+      "code": "DROPS_DENOMINATOR",
+      "description": {
+        "en": "Gives only the number of pieces and forgets the size of each piece.",
+        "id": "Hanya memberi banyak bagian dan melupakan ukuran setiap bagian."
+      },
+      "remediation": {
+        "en": "Ask '3 what?' and point to a piece of the strip: the answer is 3 tenths, not 3 ribbons.",
+        "id": "Tanyakan '3 apa?' dan tunjuk satu bagian pita: jawabannya 3 persepuluh, bukan 3 pita."
+      }
+    },
+    {
+      "code": "EQUAL_TO_HALF_COUNTED_AS_MORE",
+      "description": {
+        "en": "Counts a fraction that is exactly a half as more than a half.",
+        "id": "Menganggap pecahan yang tepat setengah sebagai lebih dari setengah."
+      },
+      "remediation": {
+        "en": "Fold the eighths strip in half and shade 4 pieces: the shading stops exactly at the fold.",
+        "id": "Lipat pita perdelapan menjadi dua dan arsir 4 bagian: arsirannya berhenti tepat di lipatan."
+      }
+    },
+    {
+      "code": "DENOMINATOR_AS_PIECES",
+      "description": {
+        "en": "Thinks 'half' means 2 pieces whatever the whole is cut into.",
+        "id": "Mengira 'setengah' berarti 2 potong, berapa pun bagian keseluruhannya."
+      },
+      "remediation": {
+        "en": "Cut a strip into 10 and fold it in half; count the pieces on one side of the fold.",
+        "id": "Potong pita menjadi 10 dan lipat menjadi dua; hitung potongan di satu sisi lipatan."
+      }
+    },
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Takes 2 away from 10 because 'half' suggests the number 2.",
+        "id": "Mengurangkan 2 dari 10 karena 'setengah' mengingatkan pada bilangan 2."
+      },
+      "remediation": {
+        "en": "Share the 10 pieces between two plates and count one plate.",
+        "id": "Bagikan 10 potong ke dua piring dan hitung isi satu piring."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Find a fraction between 1/4 and 1/2 using the eighths strip, and explain how you know it is between them.",
+      "id": "Cari pecahan di antara 1/4 dan 1/2 dengan pita perdelapan, dan jelaskan bagaimana kamu tahu letaknya di antara keduanya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Strips with folds that can be felt help children with low vision; colour each fraction family the same so comparisons are easy to see.",
+      "id": "Pita dengan lipatan yang bisa diraba membantu anak dengan penglihatan rendah; warnai setiap keluarga pecahan dengan warna yang sama agar perbandingan mudah terlihat."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": true,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "If real food is cut, the adult does the cutting; check for allergies (egg, wheat) before eating.",
+        "id": "Jika memotong makanan sungguhan, orang dewasa yang memotong; periksa alergi (telur, gandum) sebelum dimakan."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child compares four new pairs of fractions (unit, same denominator, same numerator, and against a half) with a reason for each, on two different days.",
+      "id": "Dikuasai jika anak membandingkan empat pasang pecahan baru (satuan, penyebut sama, pembilang sama, dan dengan setengah) dengan alasan untuk masing-masing, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}

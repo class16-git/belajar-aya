@@ -1,0 +1,440 @@
+{
+  "id": "unit-g3-math-multiplication-with-regrouping",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "math",
+  "strand": "multiplication_division",
+  "title": {
+    "en": "Multiplying 2-digit by 1-digit numbers with regrouping",
+    "id": "Perkalian bilangan 2 angka dengan 1 angka dengan menyimpan"
+  },
+  "prerequisites": [
+    "unit-g3-math-multiplication-division-bar-models",
+    "unit-g2-math-addition-regrouping-1000"
+  ],
+  "objective": {
+    "en": "Multiply a 2-digit number by a 1-digit number by splitting it into tens and ones, regroup 10 or more ones into tens, and record the column method with the carried digit.",
+    "id": "Mengalikan bilangan 2 angka dengan bilangan 1 angka dengan memecahnya menjadi puluhan dan satuan, menukar 10 satuan atau lebih menjadi puluhan, dan menulis cara bersusun dengan angka simpanan."
+  },
+  "rationale": {
+    "en": "Children know facts such as 7 × 5. Multiplying 47 × 5 means using those facts on the tens and the ones separately and then joining the parts. Seeing 35 ones become 3 tens and 5 ones explains the small carried digit, which is otherwise added at the wrong moment or forgotten.",
+    "id": "Anak sudah tahu fakta seperti 7 × 5. Mengalikan 47 × 5 berarti memakai fakta itu pada puluhan dan satuan secara terpisah lalu menggabungkan bagiannya. Melihat 35 satuan menjadi 3 puluhan dan 5 satuan menjelaskan angka simpanan kecil, yang kalau tidak dipahami sering ditambahkan pada saat yang salah atau terlupa."
+  },
+  "outcomes": [
+    {
+      "en": "Splits a 2-digit number into tens and ones and multiplies each part.",
+      "id": "Memecah bilangan 2 angka menjadi puluhan dan satuan lalu mengalikan setiap bagian."
+    },
+    {
+      "en": "Regroups ones into tens and adds the carried tens after multiplying the tens.",
+      "id": "Menukar satuan menjadi puluhan dan menambahkan puluhan simpanan setelah mengalikan puluhan."
+    },
+    {
+      "en": "Solves word problems with 2-digit × 1-digit multiplication.",
+      "id": "Menyelesaikan soal cerita perkalian 2 angka × 1 angka."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show 26 × 3 with bundles and explain why 18 ones became 1 ten and 8 ones.",
+      "id": "Aku bisa menunjukkan 26 × 3 dengan ikatan dan menjelaskan mengapa 18 satuan menjadi 1 puluhan dan 8 satuan."
+    },
+    {
+      "en": "I can add the carried digit after multiplying the tens, not before.",
+      "id": "Aku bisa menambahkan angka simpanan setelah mengalikan puluhan, bukan sebelumnya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Start with sticks: build the number once, then build it again for each group, and count the ones first.",
+      "id": "Mulai dengan stik: susun bilangannya satu kali, lalu susun lagi untuk setiap kelompok, dan hitung satuannya dulu."
+    },
+    {
+      "en": "Use the area model (a rectangle split into a tens part and a ones part) before the column method; both show the same two products.",
+      "id": "Pakai model luas (persegi panjang yang dibagi menjadi bagian puluhan dan bagian satuan) sebelum cara bersusun; keduanya menunjukkan dua hasil kali yang sama."
+    },
+    {
+      "en": "Before each calculation, ask for an estimate: 47 × 5 is a bit less than 50 × 5 = 250.",
+      "id": "Sebelum setiap hitungan, minta perkiraan: 47 × 5 sedikit kurang dari 50 × 5 = 250."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Multiply the ones first. If you get 10 or more, make tens and write the small carried digit.",
+      "id": "Kalikan satuan dulu. Jika hasilnya 10 atau lebih, jadikan puluhan dan tulis angka simpanan kecil."
+    },
+    {
+      "en": "Multiply the tens, then add the carried tens.",
+      "id": "Kalikan puluhan, lalu tambahkan puluhan simpanan."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build 26 three times with bundles of ten and loose sticks: 6 bundles and 18 loose sticks. Bundle 10 of the loose sticks: now 7 bundles and 8 sticks, so 26 × 3 = 78.",
+        "id": "Susun 26 tiga kali dengan ikatan sepuluh dan stik lepas: 6 ikatan dan 18 stik lepas. Ikat 10 stik lepas: sekarang 7 ikatan dan 8 stik, jadi 26 × 3 = 78."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw an area model for 38 × 6: a rectangle split into 30 and 8 along the top and 6 down the side. Write 180 and 48 inside and add them to get 228.",
+        "id": "Gambar model luas untuk 38 × 6: persegi panjang yang dibagi menjadi 30 dan 8 di atas dan 6 di samping. Tulis 180 dan 48 di dalam dan jumlahkan menjadi 228."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the column method for 47 × 5: 7 × 5 = 35, write 5 and carry 3; 4 × 5 = 20, add the 3 to get 23; the answer is 235.",
+        "id": "Tulis cara bersusun untuk 47 × 5: 7 × 5 = 35, tulis 5 dan simpan 3; 4 × 5 = 20, tambah 3 menjadi 23; hasilnya 235."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 100 ice-cream sticks or straws with rubber bands for bundles of ten",
+      "id": "Sekitar 100 stik es krim atau sedotan dengan karet gelang untuk ikatan sepuluh"
+    },
+    {
+      "en": "Squared paper, a ruler and a pencil for area models and columns",
+      "id": "Kertas berpetak, penggaris, dan pensil untuk model luas dan cara bersusun"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Make 9 bundles of ten and keep 30 loose sticks so regrouping can be done for real.",
+      "id": "Buat 9 ikatan sepuluh dan sisakan 30 stik lepas sehingga penukaran bisa dilakukan sungguhan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "26 × 3 with sticks: 3 groups of 2 tens and 6 ones give 6 tens and 18 ones. 18 ones = 1 ten and 8 ones, so the total is 7 tens and 8 ones: 78.",
+      "id": "26 × 3 dengan stik: 3 kelompok berisi 2 puluhan dan 6 satuan menjadi 6 puluhan dan 18 satuan. 18 satuan = 1 puluhan dan 8 satuan, jadi totalnya 7 puluhan dan 8 satuan: 78."
+    },
+    {
+      "en": "47 × 5 in columns: 7 × 5 = 35, write 5, carry 3. 4 tens × 5 = 20 tens, plus 3 tens = 23 tens. Answer 235. Estimate check: 50 × 5 = 250, close.",
+      "id": "47 × 5 bersusun: 7 × 5 = 35, tulis 5, simpan 3. 4 puluhan × 5 = 20 puluhan, ditambah 3 puluhan = 23 puluhan. Hasilnya 235. Cek perkiraan: 50 × 5 = 250, dekat."
+    },
+    {
+      "en": "Area model for 38 × 6: 30 × 6 = 180 and 8 × 6 = 48, then 180 + 48 = 228.",
+      "id": "Model luas untuk 38 × 6: 30 × 6 = 180 dan 8 × 6 = 48, lalu 180 + 48 = 228."
+    },
+    {
+      "en": "Story: a warung has 6 crates with 24 bottles of water in each. 24 × 6: 4 × 6 = 24, write 4 carry 2; 2 × 6 = 12, plus 2 = 14. There are 144 bottles.",
+      "id": "Cerita: sebuah warung punya 6 krat berisi 24 botol air masing-masing. 24 × 6: 4 × 6 = 24, tulis 4 simpan 2; 2 × 6 = 12, ditambah 2 = 14. Ada 144 botol."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Solve four multiplications with both the area model and the column method and check that the answers match.",
+      "id": "Selesaikan empat perkalian dengan model luas dan cara bersusun lalu periksa bahwa hasilnya sama."
+    },
+    {
+      "en": "Shopping estimate: a pack of 36 sheets of paper, 4 packs: estimate first, then calculate.",
+      "id": "Perkiraan belanja: satu pak berisi 36 lembar kertas, 4 pak: perkirakan dulu, lalu hitung."
+    },
+    {
+      "en": "Mistake hunt: the adult writes 58 × 4 = 202 (carry forgotten); the child finds and corrects the error.",
+      "id": "Cari kesalahan: orang dewasa menulis 58 × 4 = 202 (simpanan terlupa); anak menemukan dan memperbaiki kesalahannya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "34 × 6 = ?",
+        "id": "34 × 6 = ?"
+      },
+      "choices": {
+        "en": [
+          "204",
+          "184",
+          "1,824"
+        ],
+        "id": [
+          "204",
+          "184",
+          "1.824"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 × 6 = 24: write 4, carry 2. 3 × 6 = 18, plus 2 = 20. Answer 204.",
+        "id": "4 × 6 = 24: tulis 4, simpan 2. 3 × 6 = 18, ditambah 2 = 20. Hasilnya 204."
+      },
+      "check": {
+        "expression": "34 * 6",
+        "result": "204"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_CARRY",
+        "2": "WRITES_PRODUCTS_SIDE_BY_SIDE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "59 × 3 = ?",
+        "id": "59 × 3 = ?"
+      },
+      "choices": {
+        "en": [
+          "177",
+          "157",
+          "217"
+        ],
+        "id": [
+          "177",
+          "157",
+          "217"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "9 × 3 = 27: write 7, carry 2. 5 × 3 = 15, then add the 2: 17. Answer 177.",
+        "id": "9 × 3 = 27: tulis 7, simpan 2. 5 × 3 = 15, lalu tambah 2: 17. Hasilnya 177."
+      },
+      "check": {
+        "expression": "59 * 3",
+        "result": "177"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_CARRY",
+        "2": "ADDS_CARRY_BEFORE_MULTIPLYING"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A hall has 7 rows of chairs with 28 chairs in each row. How many chairs are there?",
+        "id": "Sebuah aula punya 7 baris kursi dengan 28 kursi di setiap baris. Berapa banyak kursinya?"
+      },
+      "choices": {
+        "en": [
+          "196 chairs",
+          "146 chairs",
+          "35 chairs"
+        ],
+        "id": [
+          "196 kursi",
+          "146 kursi",
+          "35 kursi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "28 × 7: 8 × 7 = 56, write 6 carry 5; 2 × 7 = 14, plus 5 = 19. Answer 196.",
+        "id": "28 × 7: 8 × 7 = 56, tulis 6 simpan 5; 2 × 7 = 14, ditambah 5 = 19. Hasilnya 196."
+      },
+      "check": {
+        "expression": "28 * 7",
+        "result": "196"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_CARRY",
+        "2": "ADDS_INSTEAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Using an area model, (40 + 3) × 8 = ?",
+        "id": "Dengan model luas, (40 + 3) × 8 = ?"
+      },
+      "choices": {
+        "en": [
+          "344",
+          "323",
+          "56"
+        ],
+        "id": [
+          "344",
+          "323",
+          "56"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "40 × 8 = 320 and 3 × 8 = 24, so 320 + 24 = 344.",
+        "id": "40 × 8 = 320 dan 3 × 8 = 24, jadi 320 + 24 = 344."
+      },
+      "check": {
+        "expression": "40 * 8 + 3 * 8",
+        "result": "344"
+      },
+      "distractorMisconceptions": {
+        "1": "MULTIPLIES_ONLY_ONE_PART",
+        "2": "TREATS_TENS_AS_ONES"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Rina says 76 × 5 = 3,530. What is the correct answer?",
+        "id": "Rina berkata 76 × 5 = 3.530. Berapa jawaban yang benar?"
+      },
+      "choices": {
+        "en": [
+          "380",
+          "3,530",
+          "350"
+        ],
+        "id": [
+          "380",
+          "3.530",
+          "350"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6 × 5 = 30: write 0, carry 3. 7 × 5 = 35, plus 3 = 38. Answer 380. Rina wrote 35 and 30 side by side.",
+        "id": "6 × 5 = 30: tulis 0, simpan 3. 7 × 5 = 35, ditambah 3 = 38. Hasilnya 380. Rina menulis 35 dan 30 berdampingan."
+      },
+      "check": {
+        "expression": "76 * 5",
+        "result": "380"
+      },
+      "distractorMisconceptions": {
+        "1": "WRITES_PRODUCTS_SIDE_BY_SIDE",
+        "2": "FORGETS_CARRY"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "FORGETS_CARRY",
+      "description": {
+        "en": "Writes the ones digit of the ones product but never adds the carried tens.",
+        "id": "Menulis angka satuan dari hasil kali satuan tetapi tidak pernah menambahkan puluhan simpanan."
+      },
+      "remediation": {
+        "en": "Rebuild with sticks: after bundling the extra ones, put the new bundle physically on the tens column before counting the tens.",
+        "id": "Susun ulang dengan stik: setelah mengikat satuan lebih, taruh ikatan baru di kolom puluhan sebelum menghitung puluhan."
+      }
+    },
+    {
+      "code": "WRITES_PRODUCTS_SIDE_BY_SIDE",
+      "description": {
+        "en": "Writes the tens product and the ones product next to each other (35 and 30 as 3530).",
+        "id": "Menulis hasil kali puluhan dan hasil kali satuan berdampingan (35 dan 30 menjadi 3530)."
+      },
+      "remediation": {
+        "en": "Use the area model: write 350 and 30 in the two boxes and add them; an estimate (about 400) shows 3,530 is far too big.",
+        "id": "Pakai model luas: tulis 350 dan 30 di kedua kotak lalu jumlahkan; perkiraan (sekitar 400) menunjukkan 3.530 terlalu besar."
+      }
+    },
+    {
+      "code": "ADDS_CARRY_BEFORE_MULTIPLYING",
+      "description": {
+        "en": "Adds the carried digit to the tens digit and then multiplies, so the carry is multiplied too.",
+        "id": "Menambahkan angka simpanan ke angka puluhan lalu mengalikan, sehingga simpanannya ikut dikalikan."
+      },
+      "remediation": {
+        "en": "With sticks, the carried bundle is made after the groups are built, so it is never copied into each group; say 'multiply, then add'.",
+        "id": "Dengan stik, ikatan simpanan dibuat setelah kelompok disusun, jadi tidak pernah disalin ke setiap kelompok; ucapkan 'kalikan, lalu tambahkan'."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the two numbers in a groups story instead of multiplying.",
+        "id": "Menjumlahkan kedua bilangan dalam cerita kelompok, bukan mengalikan."
+      },
+      "remediation": {
+        "en": "Draw the rows as a bar model with 7 equal parts of 28 and ask what one part and all parts are.",
+        "id": "Gambar baris sebagai model batang dengan 7 bagian sama berisi 28 dan tanyakan berapa satu bagian dan semua bagian."
+      }
+    },
+    {
+      "code": "MULTIPLIES_ONLY_ONE_PART",
+      "description": {
+        "en": "Multiplies only the tens (or only the ones) and adds the other part unchanged.",
+        "id": "Hanya mengalikan puluhan (atau hanya satuan) dan menambahkan bagian lain tanpa dikalikan."
+      },
+      "remediation": {
+        "en": "Shade both parts of the area model and write a multiplication inside each one before adding.",
+        "id": "Arsir kedua bagian model luas dan tulis perkalian di dalam masing-masing sebelum menjumlahkan."
+      }
+    },
+    {
+      "code": "TREATS_TENS_AS_ONES",
+      "description": {
+        "en": "Multiplies the tens digit as if it were ones (4 × 8 instead of 40 × 8).",
+        "id": "Mengalikan angka puluhan seolah-olah satuan (4 × 8, bukan 40 × 8)."
+      },
+      "remediation": {
+        "en": "Build 4 bundles of ten eight times and count them as tens: 32 tens is 320.",
+        "id": "Susun 4 ikatan sepuluh sebanyak delapan kali dan hitung sebagai puluhan: 32 puluhan adalah 320."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Use the digits 3, 6 and 8 once each to make a 2-digit × 1-digit multiplication with the greatest product, and explain your choice.",
+      "id": "Pakai angka 3, 6, dan 8 masing-masing satu kali untuk membuat perkalian 2 angka × 1 angka dengan hasil terbesar, dan jelaskan pilihanmu."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Squared paper keeps the columns aligned; children who find writing hard can use digit cards in a column grid.",
+      "id": "Kertas berpetak menjaga kolom tetap rapi; anak yang kesulitan menulis bisa memakai kartu angka di petak kolom."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Keep rubber bands away from younger siblings.",
+        "id": "Jauhkan karet gelang dari adik yang lebih kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child solves four new 2-digit × 1-digit multiplications with regrouping, with an estimate for each, on two different days.",
+      "id": "Dikuasai jika anak menyelesaikan empat perkalian 2 angka × 1 angka baru dengan menyimpan, disertai perkiraan untuk masing-masing, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch2-math",
+    "createdAt": "2026-11-10"
+  }
+}
