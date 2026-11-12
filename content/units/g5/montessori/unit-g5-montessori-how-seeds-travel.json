@@ -445,7 +445,7 @@
   "reviewFlags": [
     "science_facts_check"
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -454,7 +454,12 @@
       "bilingual-parity",
       "safety",
       "age-fit"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "31159b3c56136c7a"
   },
   "provenance": {
     "origin": "ai_drafted",

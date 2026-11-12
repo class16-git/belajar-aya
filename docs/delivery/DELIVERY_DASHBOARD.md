@@ -9,7 +9,7 @@ is updated with each release. Every number is an actual count; there are no esti
 ## 1. Targets and actual counts (pilot batch, 2026-11-11)
 | Deliverable | Target | Authored | Passed automated validation | Independent QA done, fixes applied | Human-reviewed | Published (live) |
 |---|---|---|---|---|---|---|
-| Curriculum units | 1,500 | **102** | 102 | 101 (the reference unit was not in a QA batch) | 0 | 0 |
+| Curriculum units | 1,500 | **183** | 183 | 182 (the reference unit was not in a QA batch) | 162 (owner, blanket) | 162 (not visible: 20 Islamic draft units, 1 unit held for a worldview decision) |
 | Original reading materials | 1,500 | **41** (plus 12 earlier passages) | 41 | 40 (the reference reading was not in a QA batch) | 0 | 0 |
 
 The 30 Islamic items (20 units and 10 readings) are drafts. They had a pre-scholar consistency check, and **none can
@@ -26,13 +26,13 @@ be published without a qualified scholar** (ADR-0010).
 
 Readings: 30 general and 10 Islamic drafts, plus 1 reference. Each level has 8 to 12 units and 4 to 5 readings.
 
-**Progress against target: 6.8% of units and 2.7% of readings authored; 0% published.** The rest is not started.
+**Progress against target: 12.2% of units and 4.7% of readings authored; 10.8% and 3.7% visible to children.** The rest is not started.
 Scaling resumes only after the owner reviews this pilot (see §5).
 
 ## 2. Validation and testing (local, on the release-candidate commit)
 | Gate | Result |
 |---|---|
-| Expansion validators (`units:check`) | ✅ 0 errors across 102 units and 41 readings |
+| Expansion validators (`units:check`) | ✅ 0 errors across 183 units and 71 readings |
 | Unit and property tests | ✅ 201 (curriculum 65, web 50, assessment 33, adaptive 31, shared 18, ai 4) |
 | Playwright end-to-end tests | ✅ 100. Every one of the 143 units and readings renders on a phone without overflow; axe WCAG 2.1 AA sample has 0 violations; review queue, decisions, export, apply CLI and cross-family isolation are covered |
 | Lint, strict typecheck, content validation, coverage report, privacy scan, dependency audit | ✅ |
@@ -71,6 +71,22 @@ The full reports are in `docs/curriculum/qa/`. Three QA findings became permanen
     end-to-end test for the isolation.
   - **Export:** includes the family's decisions.
 - **Deployed release:** `ac4b3c9` (`dpl_8xk7M83yFUBd94B6D8BFXjzn8Ti2`), verified on 2026-11-11. `/api/health` reports content digest `0fcf3ab0a7bd5fdb` and units 0, readings 0; the build log shows the role check and the review-decisions migration. See [RELEASES.md](RELEASES.md). Production shows **0** expansion items to children.
+
+## 3a. Batch 2 independent QA (2026-11-12)
+| Batch | Pass | Fix required | Blockers | Majors | Status |
+|---|---|---|---|---|---|
+| Readings (30) | 27 | 3 | 0 | 3 (tsunami advice timing, gecko behaviour, ambiguous shape question) | fixed |
+| STEM (20) | 13 | 7 | 0 | 8 | fixed |
+| Maths (21) | 15 | 6 | 0 | 6 (all arithmetic correct; hazard rewording was not evasion) | fixed |
+| Literacy (20) | 14 | 6 | 0 | 7 | fixed |
+| Montessori (20) | 15 | 5 | 0 | 5 | fixed |
+
+Validators added from batch 2 QA:
+- bottle caps, tin lids, drawing compasses and food allergens;
+- rule 11 extended to practice tasks and child instructions.
+
+**Publication-gate hardening:** an approval now covers only the reviewed version and the reviewed content fingerprint
+(`reviewedVersion`, `reviewedHash`). Any later edit hides the item until it is re-reviewed.
 
 ## 4a. Owner approval of 2026-11-11
 The owner instructed: "approve all curriculum, i approve all, no need my approval, full autonomous". It was applied

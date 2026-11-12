@@ -1,6 +1,6 @@
 {
   "id": "unit-k-montessori-spindle-box-zero-to-nine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "level": "k",
   "framework": "montessori",
   "strand": "mathematics",
@@ -215,29 +215,29 @@
     {
       "id": "a3",
       "prompt": {
-        "en": "The whole box is filled from 0 to 9. How many sticks are used in all?",
-        "id": "Seluruh kotak diisi dari 0 sampai 9. Berapa stik terpakai semuanya?"
+        "en": "Imagine a smaller spindle box with compartments from 0 to 5 only. How many sticks would fill it?",
+        "id": "Bayangkan kotak stik yang lebih kecil dengan sekat dari 0 sampai 5 saja. Berapa stik yang dibutuhkan untuk mengisinya?"
       },
       "choices": {
         "en": [
-          "45",
-          "10",
-          "55"
+          "15",
+          "6",
+          "21"
         ],
         "id": [
-          "45",
-          "10",
-          "55"
+          "15",
+          "6",
+          "21"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "0+1+2+3+4+5+6+7+8+9 = 45 (10 would be one stick in each, 55 would include a 10).",
-        "id": "0+1+2+3+4+5+6+7+8+9 = 45 (10 berarti satu stik di setiap sekat, 55 berarti ikut menghitung 10)."
+        "en": "0+1+2+3+4+5 = 15 (6 would be one stick in each compartment, 21 would add a 6 that is not in the box).",
+        "id": "0+1+2+3+4+5 = 15 (6 berarti satu stik di setiap sekat, 21 berarti menambahkan 6 yang tidak ada di kotak)."
       },
       "check": {
-        "expression": "0+1+2+3+4+5+6+7+8+9",
-        "result": "45"
+        "expression": "0+1+2+3+4+5",
+        "result": "15"
       },
       "distractorMisconceptions": {
         "1": "ONE_PER_BOX",
@@ -332,12 +332,12 @@
     {
       "code": "INCLUDES_TEN",
       "description": {
-        "en": "Adds a ten that is not in the box.",
-        "id": "Menambahkan sepuluh yang tidak ada di kotak."
+        "en": "Adds one more number than the box has, such as a 10 that is not there.",
+        "id": "Menambahkan satu bilangan lebih dari yang ada di kotak, misalnya 10 yang tidak ada."
       },
       "remediation": {
-        "en": "Point along the labels and show the last one is 9.",
-        "id": "Tunjuk sepanjang label dan perlihatkan bahwa yang terakhir 9."
+        "en": "Point along the labels and show which one is the last.",
+        "id": "Tunjuk sepanjang label dan perlihatkan label mana yang terakhir."
       }
     },
     {
@@ -430,7 +430,9 @@
     ],
     "reviewedBy": "owner",
     "reviewerRole": "parent",
-    "reviewedAt": "2026-11-11"
+    "reviewedAt": "2026-11-12",
+    "reviewedHash": "60a476041fd388b8",
+    "reviewedVersion": "1.0.2"
   },
   "provenance": {
     "origin": "ai_drafted",

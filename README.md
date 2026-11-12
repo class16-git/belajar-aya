@@ -52,7 +52,8 @@ A transparent, rule-based adaptive engine and a parent dashboard tie them togeth
 | Interactive practice (Kindergarten and Grade 1) | Server-generated, server-graded items with a hint ladder, misconception feedback and a CPA progression (ten-frames, number bonds, equations, bar models, picture stories, robot grids) |
 | Adaptive engine | Rule-based mastery, with secure, mastered, lapse and delayed-review states (§4) |
 | Reading Garden | 12 linked external books; 4 original passages, graded on the server; reading journeys; reading history (§2.5) |
-| Parent review tools | `/units`, unit guides, readings and the `/review` queue, for the 102 new units and 41 readings awaiting review (§3) |
+| Learning units (expansion) | **162 owner-approved units and 55 readings** across all 10 levels (Montessori, maths, STEM, literacy; original readings). Children open units from `/learn`, with a server-graded check; parents see attempts, secure/next-review status and misconceptions on the dashboard |
+| Parent review tools | `/units`, unit guides, readings and the `/review` queue (approve or reject, export, `apply-reviews.mjs`) |
 
 **Adaptive engine detail:**
 - A skill is **secure** after at least 3 independent correct answers in at least 2 formats, with a score of 0.8 or
@@ -91,12 +92,21 @@ are planned with no content yet**. The authoritative per-stage table, regenerate
 
 **Reading Garden:** all 9 book sources other than Book Dash are unverified (one, SIBI, is unreachable).
 
-**Expansion programme:** the target is 1,500 units plus 1,500 readings. The actual counts are **102 units and 41
-readings authored (6.8% and 2.7%), 0 published.** See
+**Expansion programme:** the target is 1,500 units plus 1,500 readings.
+- **Authored:** 183 units and 71 readings (12.2% and 4.7%).
+- **Visible to children:** 162 units and 55 readings.
+- **Not visible:**
+  - 30 Islamic drafts (a scholar is required);
+  - 5 readings with `needs_source` claims;
+  - 1 safety-critical reading awaiting an official-guidance check;
+  - 1 unit awaiting the owner's worldview decision.
+
+The owner gave approval as a blanket instruction (2026-11-11), applied only after automated validation and independent
+QA. It was not an item-by-item reading. See
 [`docs/delivery/DELIVERY_DASHBOARD.md`](docs/delivery/DELIVERY_DASHBOARD.md), and the generated
 [`docs/delivery/CONTENT_DASHBOARD.md`](docs/delivery/CONTENT_DASHBOARD.md) and
 [`content-dashboard.json`](docs/delivery/content-dashboard.json). Child-facing use of expansion units, with
-assessment results feeding mastery, is **not built yet**.
+assessment results recorded as evidence, is live for approved units.
 
 ## 3. Content publication safeguards (fail closed)
 
@@ -228,7 +238,7 @@ Run on 2026-11-11 against the content of `ac4b3c9` (`main`), locally on PostgreS
 | Unit and property tests | ✅ 201 (curriculum 65, web 50, assessment 33, adaptive 31, shared 18, ai 4) |
 | Playwright E2E | ✅ 100/100 tests (see the note below) |
 | Lint and strict typecheck | ✅ all 7 workspace packages |
-| Content | ✅ `content:validate` passes; expansion validators report 0 errors across 102 units and 41 readings; coverage report and dashboard current |
+| Content | ✅ `content:validate` passes; expansion validators report 0 errors across 183 units and 71 readings; coverage report and dashboard current |
 | Privacy and dependencies | ✅ privacy scan; `pnpm audit` reports no known vulnerabilities |
 | CI | ✅ `verify` green on PR #16 and on `main` |
 | Production | ✅ health check reports `ok` and `db`; release, digest and counts match the checkout; Vercel READY in production on the same SHA; build log shows the role check and migration `20261110140000_content_review_decisions` applied |
@@ -249,14 +259,15 @@ The independent content QA reports are in [`docs/curriculum/qa/`](docs/curriculu
   - UX acceptance;
   - sign-off on the limited-scope statement;
   - educator review of owner-approved content;
-  - review of the 113 non-Islamic expansion items and 4 corrected items;
+  - an item-by-item educator review of the owner-approved expansion content;
+  - a decision on `unit-g3-montessori-from-gathering-to-farming` (worldview);
+  - a check of `reading-g5-when-the-ground-shakes` against official BNPB/BMKG guidance;
   - a named qualified scholar for all Islamic content;
   - legal review of consent and data handling;
   - a rehearsal of Neon point-in-time restore. Only a synthetic dump-and-restore has been rehearsed.
 - **Curriculum gaps:**
   - no interactive maths or STEM beyond Grade 1;
   - 81 objectives have no content;
-  - expansion units are not usable by children yet;
   - no audio or read-aloud for pre-readers.
 - **Reading Garden:**
   - no verified Indonesian book source;

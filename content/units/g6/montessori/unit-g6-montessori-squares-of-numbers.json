@@ -469,7 +469,7 @@
   "rights": "original",
   "arabicPhrases": [],
   "reviewFlags": [],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -478,7 +478,12 @@
       "bilingual-parity",
       "safety",
       "age-fit"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "cbbb48b8d44c0e91"
   },
   "provenance": {
     "origin": "ai_drafted",

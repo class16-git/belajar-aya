@@ -404,7 +404,7 @@
     "safety_guidance_check",
     "emotional_sensitivity"
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -413,7 +413,12 @@
       "bilingual-parity",
       "safety",
       "age-fit"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "035cd9d94d251225"
   },
   "provenance": {
     "origin": "ai_drafted",

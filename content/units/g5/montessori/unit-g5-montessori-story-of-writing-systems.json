@@ -430,7 +430,7 @@
     "history_facts_check",
     "year_zero_convention_check"
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -439,7 +439,12 @@
       "bilingual-parity",
       "safety",
       "age-fit"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "4ffdc5f8a929b70c"
   },
   "provenance": {
     "origin": "ai_drafted",

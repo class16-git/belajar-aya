@@ -408,7 +408,7 @@
   "reviewFlags": [
     "science_facts_check"
   ],
-  "reviewStatus": "agent_reviewed",
+  "reviewStatus": "reviewed",
   "review": {
     "agentChecks": [
       "schema",
@@ -416,7 +416,12 @@
       "safety",
       "age-fit",
       "misconception-map"
-    ]
+    ],
+    "reviewedBy": "owner",
+    "reviewerRole": "parent",
+    "reviewedAt": "2026-11-12",
+    "reviewedVersion": "1.0.1",
+    "reviewedHash": "56955f202a9a7213"
   },
   "provenance": {
     "origin": "ai_drafted",

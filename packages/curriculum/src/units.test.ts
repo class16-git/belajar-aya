@@ -41,6 +41,16 @@ describe('expansion corpus', () => {
     walk(join(repo, 'content/readings'));
     expect(expansionSummary().items.map((x) => x.id).sort()).toEqual(ids.sort());
   });
+  it('every approved item is visible in production unless it has a documented reason (open source claim, scholar gate)', async () => {
+    const { content, errors } = validateExpansion(await loadRawExpansion());
+    for (const x of [...content.units, ...content.readings]) {
+      if (!x.review.reviewedBy) continue;
+      const religious = ('framework' in x && x.framework === 'islamic') || x.arabicPhrases.length > 0 || ('crossCurricular' in x && x.crossCurricular.some((c) => c.subject === 'islamic_values'));
+      const openClaim = 'factChecks' in x && x.factChecks.some((f) => f.status === 'needs_source');
+      if (religious || openClaim || x.review.rejectedReason || errors.some((e) => e.includes(x.id))) continue;
+      expect(isExpansionVisible(x, 'reviewed'), `${x.id}: approved but hidden (stale or missing reviewedVersion/reviewedHash?)`).toBe(true);
+    }
+  });
   it('loads one level at a time and finds an item by id without loading other levels', async () => {
     const g2 = await loadExpansionLevel('g2');
     expect(g2.units.every((u) => u.level === 'g2') && g2.readings.every((r) => r.level === 'g2')).toBe(true);

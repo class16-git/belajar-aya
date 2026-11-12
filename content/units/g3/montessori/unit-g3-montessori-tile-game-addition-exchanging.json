@@ -1,6 +1,6 @@
 {
   "id": "unit-g3-montessori-tile-game-addition-exchanging",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "level": "g3",
   "framework": "montessori",
   "strand": "mathematics",
@@ -148,29 +148,29 @@
     {
       "id": "a1",
       "prompt": {
-        "en": "2,456 + 1,378 = ?",
-        "id": "2.456 + 1.378 = ?"
+        "en": "3,648 + 2,475 = ?",
+        "id": "3.648 + 2.475 = ?"
       },
       "choices": {
         "en": [
-          "3,834",
-          "3,724",
-          "371,214"
+          "6,123",
+          "5,013",
+          "5,101,113"
         ],
         "id": [
-          "3.834",
-          "3.724",
-          "371.214"
+          "6.123",
+          "5.013",
+          "5.101.113"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "Units 14 → 4 and exchange; tens 5+7+1 = 13 → 3 and exchange; hundreds 4+3+1 = 8; thousands 3.",
-        "id": "Satuan 14 → 4 dan tukar; puluhan 5+7+1 = 13 → 3 dan tukar; ratusan 4+3+1 = 8; ribuan 3."
+        "en": "Units 8+5 = 13 → 3 and exchange; tens 4+7+1 = 12 → 2 and exchange; hundreds 6+4+1 = 11 → 1 and exchange; thousands 3+2+1 = 6.",
+        "id": "Satuan 8+5 = 13 → 3 dan tukar; puluhan 4+7+1 = 12 → 2 dan tukar; ratusan 6+4+1 = 11 → 1 dan tukar; ribuan 3+2+1 = 6."
       },
       "check": {
-        "expression": "2456 + 1378",
-        "result": "3834"
+        "expression": "3648 + 2475",
+        "result": "6123"
       },
       "distractorMisconceptions": {
         "1": "FORGETS_EXCHANGED_TILE",
@@ -276,29 +276,29 @@
     {
       "id": "a5",
       "prompt": {
-        "en": "You have 23 unit tiles and 14 ten tiles. After all exchanges, what number is shown?",
-        "id": "Kamu punya 23 keping satuan dan 14 keping puluhan. Setelah semua ditukar, bilangan berapa yang ditunjukkan?"
+        "en": "You have 31 unit tiles and 17 ten tiles. After all exchanges, what number is shown?",
+        "id": "Kamu punya 31 keping satuan dan 17 keping puluhan. Setelah semua ditukar, bilangan berapa yang ditunjukkan?"
       },
       "choices": {
         "en": [
-          "163",
-          "1,423",
-          "37"
+          "201",
+          "1,731",
+          "48"
         ],
         "id": [
-          "163",
-          "1.423",
-          "37"
+          "201",
+          "1.731",
+          "48"
         ]
       },
       "answer": 0,
       "explanation": {
-        "en": "14 tens and 23 units = 140 + 23 = 163 (1 hundred, 6 tens, 3 units).",
-        "id": "14 puluhan dan 23 satuan = 140 + 23 = 163 (1 ratusan, 6 puluhan, 3 satuan)."
+        "en": "17 tens and 31 units = 170 + 31 = 201 (2 hundreds, 0 tens, 1 unit).",
+        "id": "17 puluhan dan 31 satuan = 170 + 31 = 201 (2 ratusan, 0 puluhan, 1 satuan)."
       },
       "check": {
-        "expression": "14 * 10 + 23",
-        "result": "163"
+        "expression": "17 * 10 + 31",
+        "result": "201"
       },
       "distractorMisconceptions": {
         "1": "WRITES_TEEN_IN_COLUMN",
@@ -442,7 +442,9 @@
     ],
     "reviewedBy": "owner",
     "reviewerRole": "parent",
-    "reviewedAt": "2026-11-11"
+    "reviewedAt": "2026-11-12",
+    "reviewedHash": "37221108a32111dc",
+    "reviewedVersion": "1.0.2"
   },
   "provenance": {
     "origin": "ai_drafted",
