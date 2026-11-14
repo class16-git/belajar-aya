@@ -1,0 +1,450 @@
+{
+  "id": "unit-g1-math-2d-and-3d-shapes",
+  "version": "1.0.0",
+  "level": "g1",
+  "framework": "math",
+  "strand": "geometry",
+  "title": {
+    "en": "Flat shapes and solid shapes",
+    "id": "Bangun datar dan bangun ruang"
+  },
+  "prerequisites": [
+    "unit-k-math-shapes-and-patterns"
+  ],
+  "objective": {
+    "en": "Name and describe the solids cube, cuboid, cylinder, cone and sphere by their flat and curved faces and whether they roll, stack or slide, find the flat shapes on their faces, and combine flat shapes to make new ones.",
+    "id": "Menyebut dan menjelaskan bangun ruang kubus, balok, tabung, kerucut, dan bola menurut sisi datar dan sisi lengkungnya serta apakah bisa menggelinding, ditumpuk, atau digeser, menemukan bangun datar pada sisinya, dan menggabungkan bangun datar menjadi bangun baru."
+  },
+  "rationale": {
+    "en": "Children meet solids every day but often call a box a 'square' or a ball a 'circle'. Tracing the faces of real objects connects the two families of shapes, and testing roll, stack and slide makes the properties something they can check, not memorise.",
+    "id": "Anak bertemu bangun ruang setiap hari tetapi sering menyebut kardus 'persegi' atau bola 'lingkaran'. Menjiplak sisi benda nyata menghubungkan dua keluarga bangun itu, dan menguji menggelinding, ditumpuk, dan digeser membuat sifat bangun bisa diperiksa, bukan dihafal."
+  },
+  "outcomes": [
+    {
+      "en": "Names five solids and finds an everyday object for each.",
+      "id": "Menyebut lima bangun ruang dan menemukan benda sehari-hari untuk masing-masing."
+    },
+    {
+      "en": "Counts flat faces and tells flat faces from curved surfaces.",
+      "id": "Menghitung sisi datar dan membedakan sisi datar dari sisi lengkung."
+    },
+    {
+      "en": "Names the flat shape made by tracing a face.",
+      "id": "Menyebut bangun datar hasil menjiplak satu sisi."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can tell a cylinder from a cone by its faces.",
+      "id": "Aku bisa membedakan tabung dan kerucut dari sisinya."
+    },
+    {
+      "en": "I can trace a face of a box and name the flat shape I drew.",
+      "id": "Aku bisa menjiplak satu sisi kotak dan menyebut bangun datar yang kugambar."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Collect real solids from the kitchen and toy box. Use 'face' for a flat side and 'curved surface' for the round part.",
+      "id": "Kumpulkan bangun ruang nyata dari dapur dan kotak mainan. Pakai 'sisi datar' untuk bagian yang rata dan 'sisi lengkung' untuk bagian yang melengkung."
+    },
+    {
+      "en": "Keep the two families apart in words: a box is a cuboid (solid); its face is a rectangle (flat).",
+      "id": "Pisahkan dua keluarga ini dalam kata-kata: kardus adalah balok (bangun ruang); sisinya berbentuk persegi panjang (bangun datar)."
+    },
+    {
+      "en": "Let the child test each solid on a sloping board: does it roll, slide or both? Can another one stack on it?",
+      "id": "Biarkan anak menguji setiap bangun di papan miring: menggelinding, bergeser, atau keduanya? Bisakah bangun lain ditumpuk di atasnya?"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Touch each face. Is it flat or curved? Count the flat faces.",
+      "id": "Sentuh setiap sisinya. Datar atau lengkung? Hitung sisi datarnya."
+    },
+    {
+      "en": "Put the solid on paper and draw around one face. What flat shape did you make?",
+      "id": "Taruh bangun di atas kertas dan jiplak satu sisinya. Bangun datar apa yang kamu buat?"
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Shape hunt: find a tissue box (cuboid), a toy block (cube), a cup or a can of food left closed (cylinder), a party hat (cone) and a ball (sphere). Sort them by 'rolls' and 'does not roll'.",
+        "id": "Berburu bangun: cari kotak tisu (balok), balok mainan (kubus), gelas atau kaleng makanan yang masih tertutup (tabung), topi ulang tahun (kerucut), dan bola. Kelompokkan menjadi 'bisa menggelinding' dan 'tidak bisa menggelinding'."
+      },
+      {
+        "en": "Ramp test: tilt a tray or a board on a book and test each solid on its flat face and on its curved surface.",
+        "id": "Uji papan miring: miringkan nampan atau papan di atas buku dan uji setiap bangun pada sisi datarnya dan sisi lengkungnya."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Face prints: trace around each face of the tissue box, the cup bottom and the party hat base, label the drawings rectangle, circle and circle.",
+        "id": "Jiplakan sisi: jiplak setiap sisi kotak tisu, dasar gelas, dan alas topi ulang tahun, lalu beri label persegi panjang, lingkaran, dan lingkaran."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Complete a table: solid name, number of flat faces, curved surface yes or no, rolls yes or no.",
+        "id": "Lengkapi tabel: nama bangun ruang, banyak sisi datar, ada sisi lengkung atau tidak, bisa menggelinding atau tidak."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Everyday solids: a tissue box, a toy block, a plastic cup, a party hat, a ball",
+      "id": "Bangun ruang sehari-hari: kotak tisu, balok mainan, gelas plastik, topi ulang tahun, bola"
+    },
+    {
+      "en": "A tray or board and a book to make a ramp",
+      "id": "Nampan atau papan dan sebuah buku untuk membuat papan miring"
+    },
+    {
+      "en": "Paper, pencils and paper squares and triangles folded and torn from scrap paper",
+      "id": "Kertas, pensil, serta potongan persegi dan segitiga hasil melipat dan menyobek kertas bekas"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Fold and tear about six paper squares, then fold some corner to corner and tear them into triangles for the shape-making task.",
+      "id": "Lipat dan sobek sekitar enam persegi kertas, lalu lipat sebagian dari sudut ke sudut dan sobek menjadi segitiga untuk tugas menyusun bangun."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "The toy block (cube): touch the faces one at a time and count: top, bottom, front, back, left, right. 6 flat faces, all squares. It stacks and slides but does not roll.",
+      "id": "Balok mainan (kubus): sentuh sisinya satu per satu dan hitung: atas, bawah, depan, belakang, kiri, kanan. 6 sisi datar, semuanya persegi. Bisa ditumpuk dan digeser tetapi tidak menggelinding."
+    },
+    {
+      "en": "The cup (cylinder): 2 flat faces that are circles if it has a lid, plus 1 curved surface. On its side it rolls; standing up it stacks.",
+      "id": "Gelas (tabung): 2 sisi datar berbentuk lingkaran jika bertutup, ditambah 1 sisi lengkung. Saat rebah bisa menggelinding; saat berdiri bisa ditumpuk."
+    },
+    {
+      "en": "The party hat (cone): 1 flat face (a circle) and a curved surface that comes to a point. It rolls round in a circle.",
+      "id": "Topi ulang tahun (kerucut): 1 sisi datar (lingkaran) dan sisi lengkung yang meruncing ke satu titik. Ia menggelinding memutar."
+    },
+    {
+      "en": "Making shapes: two paper triangles from one folded square fit back together into a square; two squares side by side make a rectangle.",
+      "id": "Menyusun bangun: dua segitiga kertas dari satu persegi yang dilipat bisa disatukan lagi menjadi persegi; dua persegi berdampingan membentuk persegi panjang."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Kitchen sort: find two cylinders, two cuboids and one sphere-like object in the kitchen and say how you know.",
+      "id": "Memilah di dapur: cari dua tabung, dua balok, dan satu benda berbentuk bola di dapur dan jelaskan bagaimana kamu tahu."
+    },
+    {
+      "en": "Feely bag: the adult hides one solid in a cloth bag; the child names it by touch, describing the faces before guessing.",
+      "id": "Kantong rahasia: orang dewasa menyembunyikan satu bangun di kantong kain; anak menebak dengan meraba sambil menjelaskan sisinya dulu."
+    },
+    {
+      "en": "Build a tower: which solids can go at the bottom, which only at the top? Explain using flat faces and points.",
+      "id": "Susun menara: bangun mana yang bisa di bawah, mana yang hanya bisa di atas? Jelaskan dengan sisi datar dan ujung runcing."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A dice is a small cube. How many flat faces does it have?",
+        "id": "Dadu adalah kubus kecil. Berapa banyak sisi datarnya?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "3",
+          "8"
+        ],
+        "id": [
+          "6",
+          "3",
+          "8"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count opposite pairs: top and bottom, front and back, left and right. 2 + 2 + 2 = 6 faces. You see only about 3 at once.",
+        "id": "Hitung berpasangan: atas dan bawah, depan dan belakang, kiri dan kanan. 2 + 2 + 2 = 6 sisi. Kita hanya melihat sekitar 3 sekaligus."
+      },
+      "check": {
+        "expression": "2 + 2 + 2",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_VISIBLE_FACES",
+        "2": "CORNERS_FOR_FACES"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which solid can roll and can also be stacked on its flat face?",
+        "id": "Bangun ruang mana yang bisa menggelinding dan juga bisa ditumpuk pada sisi datarnya?"
+      },
+      "choices": {
+        "en": [
+          "A cylinder",
+          "A sphere",
+          "A cube"
+        ],
+        "id": [
+          "Tabung",
+          "Bola",
+          "Kubus"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A cylinder has a curved surface to roll on and 2 flat faces to stack on. A sphere only rolls; a cube only stacks.",
+        "id": "Tabung punya sisi lengkung untuk menggelinding dan 2 sisi datar untuk ditumpuk. Bola hanya menggelinding; kubus hanya bisa ditumpuk."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_PROPERTY_ONLY",
+        "2": "ONE_PROPERTY_ONLY"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Aya draws around the flat end of a round glue stick. What shape does she draw?",
+        "id": "Aya menjiplak ujung datar sebuah lem batang yang bulat. Bangun apa yang ia gambar?"
+      },
+      "choices": {
+        "en": [
+          "A circle",
+          "A cylinder",
+          "A rectangle"
+        ],
+        "id": [
+          "Lingkaran",
+          "Tabung",
+          "Persegi panjang"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The glue stick is a cylinder, but a drawing on paper is flat: its end makes a circle.",
+        "id": "Lem batang berbentuk tabung, tetapi gambar di kertas itu datar: ujungnya membentuk lingkaran."
+      },
+      "distractorMisconceptions": {
+        "1": "NAMES_SOLID_FOR_FACE",
+        "2": "TRACES_WRONG_FACE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A tin of biscuits with a lid is a cylinder. How many flat faces does it have?",
+        "id": "Kaleng kue bertutup berbentuk tabung. Berapa banyak sisi datarnya?"
+      },
+      "choices": {
+        "en": [
+          "2",
+          "3",
+          "0"
+        ],
+        "id": [
+          "2",
+          "3",
+          "0"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The top and the bottom are flat circles: 1 + 1 = 2. The round side is a curved surface, not a flat face.",
+        "id": "Tutup atas dan alas adalah lingkaran datar: 1 + 1 = 2. Bagian samping yang melengkung adalah sisi lengkung, bukan sisi datar."
+      },
+      "check": {
+        "expression": "1 + 1",
+        "result": "2"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_CURVED_AS_FLAT",
+        "2": "ROUND_MEANS_NO_FLAT_FACES"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Doni builds a tower of 4 toy blocks. Which solid will NOT stay still on the top?",
+        "id": "Doni menyusun menara dari 4 balok mainan. Bangun mana yang TIDAK bisa diam di puncaknya?"
+      },
+      "choices": {
+        "en": [
+          "A ball",
+          "A tissue box",
+          "A cube"
+        ],
+        "id": [
+          "Bola",
+          "Kotak tisu",
+          "Kubus"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A ball has no flat face, so it rolls off. The tissue box and the cube sit on a flat face.",
+        "id": "Bola tidak punya sisi datar, jadi akan menggelinding jatuh. Kotak tisu dan kubus bertumpu pada sisi datarnya."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_PROPERTY_ONLY",
+        "2": "ONE_PROPERTY_ONLY"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "COUNTS_VISIBLE_FACES",
+      "description": {
+        "en": "Counts only the faces that can be seen from one side.",
+        "id": "Hanya menghitung sisi yang terlihat dari satu arah."
+      },
+      "remediation": {
+        "en": "Stick a paper dot on each face as it is counted, turning the cube until every face has a dot.",
+        "id": "Tempel titik kertas di setiap sisi saat dihitung, putar kubus sampai semua sisi bertitik."
+      }
+    },
+    {
+      "code": "CORNERS_FOR_FACES",
+      "description": {
+        "en": "Counts the corners (vertices) instead of the faces.",
+        "id": "Menghitung titik sudut, bukan sisi."
+      },
+      "remediation": {
+        "en": "Press a whole flat hand on a face ('a face is flat, like your palm') and a fingertip on a corner ('a corner is a point').",
+        "id": "Tekan telapak tangan rata di satu sisi ('sisi itu datar seperti telapak tangan') dan ujung jari di titik sudut ('titik sudut itu runcing')."
+      }
+    },
+    {
+      "code": "ONE_PROPERTY_ONLY",
+      "description": {
+        "en": "Checks only one property (rolls or stacks) when the question needs two.",
+        "id": "Hanya memeriksa satu sifat (menggelinding atau ditumpuk) padahal pertanyaannya meminta dua."
+      },
+      "remediation": {
+        "en": "Test each solid twice on the ramp and on the table, ticking two columns: rolls, stacks.",
+        "id": "Uji setiap bangun dua kali di papan miring dan di meja, centang dua kolom: menggelinding, ditumpuk."
+      }
+    },
+    {
+      "code": "NAMES_SOLID_FOR_FACE",
+      "description": {
+        "en": "Uses the solid's name for the flat shape of its face (calls a circle a cylinder).",
+        "id": "Memakai nama bangun ruang untuk bangun datar sisinya (menyebut lingkaran sebagai tabung)."
+      },
+      "remediation": {
+        "en": "Lay the paper drawing flat next to the object: 'Can you pick up the drawing like a cup? No: it is flat, so it is a circle.'",
+        "id": "Letakkan gambar kertas di samping bendanya: 'Bisakah gambarnya diangkat seperti gelas? Tidak: ia datar, jadi namanya lingkaran.'"
+      }
+    },
+    {
+      "code": "TRACES_WRONG_FACE",
+      "description": {
+        "en": "Describes the side view of the object rather than the face that was traced.",
+        "id": "Menjelaskan tampak samping benda, bukan sisi yang dijiplak."
+      },
+      "remediation": {
+        "en": "Stand the object on the paper and trace only the part that touches the paper.",
+        "id": "Berdirikan benda di atas kertas dan jiplak hanya bagian yang menyentuh kertas."
+      }
+    },
+    {
+      "code": "COUNTS_CURVED_AS_FLAT",
+      "description": {
+        "en": "Counts the curved surface as one of the flat faces.",
+        "id": "Menghitung sisi lengkung sebagai salah satu sisi datar."
+      },
+      "remediation": {
+        "en": "Try to stand the cylinder on each surface: it stands on a flat face but rolls on the curved surface.",
+        "id": "Coba berdirikan tabung pada setiap sisinya: ia bisa berdiri di sisi datar tetapi menggelinding di sisi lengkung."
+      }
+    },
+    {
+      "code": "ROUND_MEANS_NO_FLAT_FACES",
+      "description": {
+        "en": "Thinks a solid that rolls has no flat faces at all.",
+        "id": "Mengira bangun yang bisa menggelinding sama sekali tidak punya sisi datar."
+      },
+      "remediation": {
+        "en": "Stand the tin on the table and run a finger round its flat top: rolling uses only the curved side.",
+        "id": "Berdirikan kaleng di meja dan jalankan jari di tutupnya yang datar: menggelinding hanya memakai sisi lengkungnya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a robot drawing using only traced faces of real solids, and label every flat shape you used.",
+      "id": "Buat gambar robot hanya dari jiplakan sisi bangun ruang nyata, dan beri label setiap bangun datar yang dipakai."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "All activities work by touch; describe faces aloud as the child feels them.",
+      "id": "Semua kegiatan bisa dilakukan dengan meraba; jelaskan sisi-sisinya dengan suara saat anak merabanya."
+    },
+    {
+      "en": "Tape the paper down for tracing if holding the object and the pencil together is hard.",
+      "id": "Rekatkan kertas ke meja saat menjiplak jika sulit memegang benda dan pensil bersamaan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use closed food cans or plastic cups only; never an opened can, whose rim is sharp. Paper shapes are folded and torn, so no cutting tools are needed.",
+        "id": "Pakai hanya kaleng makanan yang masih tertutup atau gelas plastik; jangan kaleng yang sudah dibuka karena pinggirnya tajam. Bangun kertas dilipat dan disobek, jadi tidak perlu alat potong."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child names all five solids with a reason about faces and names the flat shape of a traced face, on two different days.",
+      "id": "Dikuasai jika anak menyebut kelima bangun ruang dengan alasan tentang sisinya dan menyebut bangun datar dari sisi yang dijiplak, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}

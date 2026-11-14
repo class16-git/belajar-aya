@@ -1,0 +1,462 @@
+{
+  "id": "unit-g1-math-counting-rupiah-coins",
+  "version": "1.0.0",
+  "level": "g1",
+  "framework": "math",
+  "strand": "money",
+  "title": {
+    "en": "Counting coins in rupiah",
+    "id": "Menghitung uang logam rupiah"
+  },
+  "prerequisites": [
+    "unit-g1-math-tens-and-ones-to-100"
+  ],
+  "objective": {
+    "en": "Recognise the Rp100, Rp200, Rp500 and Rp1,000 coins and the Rp2,000 note, count a small collection up to Rp5,000 by starting with the largest and counting on in hundreds, and make an exact amount in more than one way.",
+    "id": "Mengenali uang logam Rp100, Rp200, Rp500, dan Rp1.000 serta uang kertas Rp2.000, menghitung sekumpulan kecil uang sampai Rp5.000 dengan mulai dari nilai terbesar dan menghitung lanjut per ratusan, dan membuat jumlah uang yang pas dengan lebih dari satu cara."
+  },
+  "rationale": {
+    "en": "Young children often think more coins means more money. Counting by value, and treating 'hundreds' like counting units (Rp700 is 7 hundreds), uses what they know about counting to 100. Grade 2 then moves on to notes, totals of prices and change.",
+    "id": "Anak kecil sering mengira lebih banyak keping berarti lebih banyak uang. Menghitung menurut nilai, dan memperlakukan 'ratusan' seperti satuan hitung (Rp700 adalah 7 ratusan), memakai kemampuan mereka menghitung sampai 100. Di kelas 2 pelajaran berlanjut ke uang kertas, jumlah harga, dan uang kembalian."
+  },
+  "outcomes": [
+    {
+      "en": "Names each coin by its value.",
+      "id": "Menyebut setiap uang logam menurut nilainya."
+    },
+    {
+      "en": "Counts mixed coins and a note by starting with the largest value.",
+      "id": "Menghitung campuran uang logam dan uang kertas dengan mulai dari nilai terbesar."
+    },
+    {
+      "en": "Makes the same amount with two different sets of coins.",
+      "id": "Membuat jumlah yang sama dengan dua kumpulan uang logam yang berbeda."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can say that one Rp500 coin is worth more than three Rp100 coins.",
+      "id": "Aku bisa menjelaskan bahwa satu keping Rp500 lebih bernilai daripada tiga keping Rp100."
+    },
+    {
+      "en": "I can count Rp1,000, Rp500, Rp200 and Rp100 as 1,000, 1,500, 1,700, 1,800.",
+      "id": "Aku bisa menghitung Rp1.000, Rp500, Rp200, dan Rp100 sebagai 1.000, 1.500, 1.700, 1.800."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use real coins on a tray. Put away all coins in a closed purse afterwards; count them back in before you finish.",
+      "id": "Pakai uang logam sungguhan di atas nampan. Simpan semua uang di dompet tertutup setelahnya; hitung kembali sebelum selesai."
+    },
+    {
+      "en": "Say hundreds as units: 'Rp500 is 5 hundreds, Rp200 is 2 hundreds.' Then count on: 5 hundreds, 6 hundreds, 7 hundreds.",
+      "id": "Ucapkan ratusan sebagai satuan: 'Rp500 adalah 5 ratusan, Rp200 adalah 2 ratusan.' Lalu hitung lanjut: 5 ratus, 6 ratus, 7 ratus."
+    },
+    {
+      "en": "Indonesian writes thousands with a point (Rp1.000) and English with a comma (Rp 1,000). Both mean one thousand rupiah.",
+      "id": "Bahasa Indonesia menulis ribuan dengan titik (Rp1.000), bahasa Inggris dengan koma (Rp 1,000). Keduanya berarti seribu rupiah."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Sort the coins by value. Start counting with the biggest one.",
+      "id": "Kelompokkan uang logam menurut nilainya. Mulai menghitung dari yang terbesar."
+    },
+    {
+      "en": "Count on in hundreds for each coin you add.",
+      "id": "Hitung lanjut per ratusan untuk setiap keping yang kamu tambahkan."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Coin sort: tip a small purse of coins onto a tray and sort into Rp100, Rp200, Rp500 and Rp1,000 piles. Read the number on each coin.",
+        "id": "Memilah uang: tuang dompet kecil berisi uang logam ke nampan dan kelompokkan menjadi tumpukan Rp100, Rp200, Rp500, dan Rp1.000. Baca angka di setiap keping."
+      },
+      {
+        "en": "Swap game: trade five Rp100 coins for one Rp500 coin, and two Rp500 coins for one Rp1,000 coin. Fewer coins, same money.",
+        "id": "Permainan tukar: tukar lima keping Rp100 dengan satu keping Rp500, dan dua keping Rp500 dengan satu keping Rp1.000. Kepingnya lebih sedikit, uangnya sama."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw coins as circles with their value written inside, then write the running total under each circle as you count on.",
+        "id": "Gambar uang logam sebagai lingkaran dengan nilainya di dalam, lalu tulis jumlah berjalan di bawah setiap lingkaran sambil menghitung lanjut."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the count as an addition: Rp500 + Rp200 + Rp200 = Rp900.",
+        "id": "Tulis hitungannya sebagai penjumlahan: Rp500 + Rp200 + Rp200 = Rp900."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Real coins: about five Rp100, four Rp200, three Rp500 and two Rp1,000 coins, kept in a purse",
+      "id": "Uang logam sungguhan: sekitar lima keping Rp100, empat keping Rp200, tiga keping Rp500, dan dua keping Rp1.000, disimpan di dompet"
+    },
+    {
+      "en": "One Rp2,000 note",
+      "id": "Satu lembar uang kertas Rp2.000"
+    },
+    {
+      "en": "A tray, paper and price labels for a pretend shop",
+      "id": "Nampan, kertas, dan label harga untuk warung pura-pura"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write price labels from Rp300 to Rp2,500 for toys or household items for the pretend shop.",
+      "id": "Tulis label harga dari Rp300 sampai Rp2.500 untuk mainan atau barang rumah di warung pura-pura."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Biggest first: Rp100, Rp1,000, Rp200, Rp500 are on the tray. Reorder: Rp1,000, then Rp500 (1,500), then Rp200 (1,700), then Rp100 (1,800). Total Rp1,800.",
+      "id": "Terbesar dulu: di nampan ada Rp100, Rp1.000, Rp200, Rp500. Urutkan: Rp1.000, lalu Rp500 (1.500), lalu Rp200 (1.700), lalu Rp100 (1.800). Jumlahnya Rp1.800."
+    },
+    {
+      "en": "More coins, less money: Bima has four Rp100 coins (Rp400). Sari has one Rp500 coin. Sari has more money, though Bima has more coins.",
+      "id": "Keping banyak, uang sedikit: Bima punya empat keping Rp100 (Rp400). Sari punya satu keping Rp500. Uang Sari lebih banyak, walaupun keping Bima lebih banyak."
+    },
+    {
+      "en": "Two ways to make Rp700: Rp500 + Rp200, or Rp200 + Rp200 + Rp200 + Rp100.",
+      "id": "Dua cara membuat Rp700: Rp500 + Rp200, atau Rp200 + Rp200 + Rp200 + Rp100."
+    },
+    {
+      "en": "Note and coins: the Rp2,000 note and two Rp500 coins: 2,000, 2,500, 3,000. Total Rp3,000.",
+      "id": "Uang kertas dan logam: lembar Rp2.000 dan dua keping Rp500: 2.000, 2.500, 3.000. Jumlahnya Rp3.000."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Pretend shop: the child buys items priced Rp300 to Rp2,500 and pays the exact amount from the tray.",
+      "id": "Warung pura-pura: anak membeli barang seharga Rp300 sampai Rp2.500 dan membayar dengan uang pas dari nampan."
+    },
+    {
+      "en": "Grab and count: take a small handful of coins, sort, order biggest first and count on. Check by counting again in a different order.",
+      "id": "Ambil dan hitung: ambil segenggam kecil uang logam, kelompokkan, urutkan dari terbesar, lalu hitung lanjut. Periksa dengan menghitung ulang dengan urutan lain."
+    },
+    {
+      "en": "Same amount, fewest coins: make Rp1,200 with as few coins as you can, then with as many as you can.",
+      "id": "Jumlah sama, keping paling sedikit: buat Rp1.200 dengan keping sesedikit mungkin, lalu dengan keping sebanyak mungkin."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "How much money is one Rp500 coin, one Rp200 coin and two Rp100 coins?",
+        "id": "Berapa jumlah uang dari satu keping Rp500, satu keping Rp200, dan dua keping Rp100?"
+      },
+      "choices": {
+        "en": [
+          "Rp 900",
+          "Rp 400",
+          "Rp 800"
+        ],
+        "id": [
+          "Rp900",
+          "Rp400",
+          "Rp800"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Biggest first: 500, then 700, then 800, then 900.",
+        "id": "Terbesar dulu: 500, lalu 700, lalu 800, lalu 900."
+      },
+      "check": {
+        "expression": "500 + 200 + 100 + 100",
+        "result": "900"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_EACH_COIN_AS_100",
+        "2": "COUNTS_REPEATED_COIN_ONCE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A pencil costs Rp 1,500. Aya has one Rp 1,000 coin. How much more money does she need?",
+        "id": "Harga sebatang pensil Rp1.500. Aya punya satu keping Rp1.000. Berapa uang lagi yang ia perlukan?"
+      },
+      "choices": {
+        "en": [
+          "Rp 500",
+          "Rp 2,500",
+          "Rp 1,000"
+        ],
+        "id": [
+          "Rp500",
+          "Rp2.500",
+          "Rp1.000"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count on from 1,000 to 1,500: that is 5 more hundreds, Rp500.",
+        "id": "Hitung lanjut dari 1.000 ke 1.500: itu 5 ratusan lagi, Rp500."
+      },
+      "check": {
+        "expression": "1500 - 1000",
+        "result": "500"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "GIVES_AMOUNT_HELD"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Dodi has a Rp 2,000 note and three Rp 200 coins. How much money does he have?",
+        "id": "Dodi punya selembar uang Rp2.000 dan tiga keping Rp200. Berapa jumlah uangnya?"
+      },
+      "choices": {
+        "en": [
+          "Rp 2,600",
+          "Rp 2,300",
+          "Rp 600"
+        ],
+        "id": [
+          "Rp2.600",
+          "Rp2.300",
+          "Rp600"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Start with the note: 2,000, then 2,200, 2,400, 2,600.",
+        "id": "Mulai dari uang kertas: 2.000, lalu 2.200, 2.400, 2.600."
+      },
+      "check": {
+        "expression": "2000 + 3 * 200",
+        "result": "2600"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_EACH_COIN_AS_100",
+        "2": "FORGETS_THE_NOTE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Raka has three Rp 500 coins. Sinta has four Rp 200 coins. Who has more money, and how much more?",
+        "id": "Raka punya tiga keping Rp500. Sinta punya empat keping Rp200. Siapa yang uangnya lebih banyak, dan berapa selisihnya?"
+      },
+      "choices": {
+        "en": [
+          "Rp 700 more, Raka",
+          "Sinta, because she has more coins",
+          "1 more, Sinta"
+        ],
+        "id": [
+          "Rp700 lebih banyak, Raka",
+          "Sinta, karena kepingnya lebih banyak",
+          "1 lebih banyak, Sinta"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Raka: 500, 1,000, 1,500. Sinta: 200, 400, 600, 800. Raka has 1,500 - 800 = Rp700 more.",
+        "id": "Raka: 500, 1.000, 1.500. Sinta: 200, 400, 600, 800. Uang Raka Rp700 lebih banyak, karena 1.500 - 800 = 700."
+      },
+      "check": {
+        "expression": "3 * 500 - 4 * 200",
+        "result": "700"
+      },
+      "distractorMisconceptions": {
+        "1": "MORE_COINS_MEANS_MORE_MONEY",
+        "2": "MORE_COINS_MEANS_MORE_MONEY"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Bima pays exactly for an eraser with one Rp 500 coin and three Rp 100 coins. What does the eraser cost?",
+        "id": "Bima membayar penghapus dengan uang pas: satu keping Rp500 dan tiga keping Rp100. Berapa harga penghapus itu?"
+      },
+      "choices": {
+        "en": [
+          "Rp 800",
+          "Rp 600",
+          "Rp 4"
+        ],
+        "id": [
+          "Rp800",
+          "Rp600",
+          "Rp4"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "500, then 600, 700, 800. The eraser costs Rp800.",
+        "id": "500, lalu 600, 700, 800. Harga penghapus Rp800."
+      },
+      "check": {
+        "expression": "500 + 3 * 100",
+        "result": "800"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_REPEATED_COIN_ONCE",
+        "2": "COUNTS_PIECES"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "COUNTS_EACH_COIN_AS_100",
+      "description": {
+        "en": "Counts every coin as one hundred, whatever its value.",
+        "id": "Menghitung setiap keping sebagai seratus, berapa pun nilainya."
+      },
+      "remediation": {
+        "en": "Swap each coin for that many Rp100 coins (a Rp500 coin for five Rp100 coins) and count the hundreds.",
+        "id": "Tukar setiap keping dengan keping Rp100 sebanyak nilainya (satu Rp500 dengan lima Rp100) lalu hitung ratusannya."
+      }
+    },
+    {
+      "code": "COUNTS_REPEATED_COIN_ONCE",
+      "description": {
+        "en": "Counts several coins of the same value only once.",
+        "id": "Menghitung beberapa keping bernilai sama hanya satu kali."
+      },
+      "remediation": {
+        "en": "Lay the coins in a line and touch each one as you count on; move each counted coin to the other side of the tray.",
+        "id": "Jajarkan uang logam dan sentuh satu per satu saat menghitung lanjut; pindahkan setiap keping yang sudah dihitung ke sisi lain nampan."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the price and the money held when asked how much more is needed.",
+        "id": "Menjumlahkan harga dan uang yang dimiliki saat ditanya berapa kekurangannya."
+      },
+      "remediation": {
+        "en": "Put the coin on the price label and count on with Rp100 coins until the label amount is reached; count only the added coins.",
+        "id": "Taruh keping di atas label harga dan hitung lanjut dengan keping Rp100 sampai jumlah di label tercapai; hitung hanya keping yang ditambahkan."
+      }
+    },
+    {
+      "code": "GIVES_AMOUNT_HELD",
+      "description": {
+        "en": "Answers with the money already held, not the amount still needed.",
+        "id": "Menjawab dengan uang yang sudah dimiliki, bukan kekurangannya."
+      },
+      "remediation": {
+        "en": "Draw a bar for the price, shade the part already paid, and point to the unshaded part.",
+        "id": "Gambar batang untuk harga, arsir bagian yang sudah dibayar, dan tunjuk bagian yang belum diarsir."
+      }
+    },
+    {
+      "code": "FORGETS_THE_NOTE",
+      "description": {
+        "en": "Counts only the coins and leaves out the note.",
+        "id": "Hanya menghitung uang logam dan melewatkan uang kertas."
+      },
+      "remediation": {
+        "en": "Always put the note at the start of the row and say its value aloud before touching any coin.",
+        "id": "Selalu taruh uang kertas di awal barisan dan ucapkan nilainya sebelum menyentuh uang logam."
+      }
+    },
+    {
+      "code": "MORE_COINS_MEANS_MORE_MONEY",
+      "description": {
+        "en": "Thinks the person with more coins has more money.",
+        "id": "Mengira orang dengan keping lebih banyak punya uang lebih banyak."
+      },
+      "remediation": {
+        "en": "Make both amounts out of Rp100 coins only and compare the two rows by matching.",
+        "id": "Buat kedua jumlah hanya dengan keping Rp100 dan bandingkan kedua barisan dengan memasangkannya."
+      }
+    },
+    {
+      "code": "COUNTS_PIECES",
+      "description": {
+        "en": "Gives the number of coins as the amount of money.",
+        "id": "Menyebut banyak keping sebagai jumlah uang."
+      },
+      "remediation": {
+        "en": "Ask 'how many coins?' and 'how much money?' as two separate questions, writing both answers.",
+        "id": "Tanyakan 'berapa keping?' dan 'berapa rupiah?' sebagai dua pertanyaan terpisah, lalu tulis kedua jawabannya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "At a real shop with an adult, read two prices under Rp5,000 and say which coins you could use to pay exactly.",
+      "id": "Di warung sungguhan bersama orang dewasa, baca dua harga di bawah Rp5.000 dan sebutkan uang logam apa yang bisa dipakai untuk membayar pas."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Coins differ in size and edge: let the child feel the Rp1,000 and the Rp100 coin and describe the difference.",
+      "id": "Uang logam berbeda ukuran dan pinggirannya: biarkan anak meraba keping Rp1.000 dan Rp100 lalu menjelaskan bedanya."
+    },
+    {
+      "en": "Use printed paper coin cards with large numbers for a child who finds small coins hard to handle.",
+      "id": "Pakai kartu uang dari kertas dengan angka besar untuk anak yang sulit memegang uang logam kecil."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Coins are a choking risk for younger siblings: use them only at the table with an adult, count them back into a closed purse, and wash hands after handling money.",
+        "id": "Uang logam bisa membuat tersedak adik yang lebih kecil: pakai hanya di meja bersama orang dewasa, hitung kembali ke dompet tertutup, dan cuci tangan setelah memegang uang."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child counts three mixed collections up to Rp5,000 correctly by starting with the largest value, and pays an exact price in two ways, on two different days.",
+      "id": "Dikuasai jika anak menghitung tiga kumpulan uang campuran sampai Rp5.000 dengan benar dimulai dari nilai terbesar, dan membayar harga pas dengan dua cara, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}

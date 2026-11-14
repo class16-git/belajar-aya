@@ -1,0 +1,241 @@
+{
+  "id": "reading-age2_3-little-fish-says-hello",
+  "version": "1.0.0",
+  "level": "age2_3",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Little Fish says hello",
+    "id": "Ikan Kecil menyapa"
+  },
+  "text": {
+    "en": [
+      "Little Fish lives in the blue, blue sea. Swish, swish goes her tail.",
+      "Here is the coral, pink and orange. \"Hello, coral!\" says Little Fish.",
+      "Here is Turtle, swimming slowly. Paddle, paddle. \"Hello, Turtle!\"",
+      "Here is Starfish, holding on to a rock. \"Hello, Starfish!\"",
+      "Little Fish is sleepy now. She rests by the coral. Bubble, bubble, goodnight."
+    ],
+    "id": [
+      "Ikan Kecil tinggal di laut yang biru, biru sekali. Kibas, kibas, ekornya bergoyang.",
+      "Ini karang, merah muda dan oranye. \"Halo, karang!\" sapa Ikan Kecil.",
+      "Ini Penyu, berenang pelan-pelan. Kayuh, kayuh. \"Halo, Penyu!\"",
+      "Ini Bintang Laut, menempel di batu. \"Halo, Bintang Laut!\"",
+      "Ikan Kecil mengantuk sekarang. Ia beristirahat di dekat karang. Blup, blup, selamat malam."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Wiggle your hand like a fish tail on \"swish, swish\".",
+      "id": "Goyangkan tangan seperti ekor ikan saat \"kibas, kibas\"."
+    },
+    {
+      "en": "Wave hello and invite your child to wave too. Point to the colours.",
+      "id": "Lambaikan tangan dan ajak anak ikut melambai. Tunjuk warnanya."
+    },
+    {
+      "en": "Paddle slowly with flat hands, as slowly as you can.",
+      "id": "Kayuh pelan dengan telapak tangan terbuka, sepelan mungkin."
+    },
+    {
+      "en": "Spread your fingers wide like a star and press them on your knee.",
+      "id": "Rentangkan jari seperti bintang dan tempelkan di lutut."
+    },
+    {
+      "en": "Make soft bubble sounds with your lips and lower your voice for goodnight.",
+      "id": "Buat bunyi gelembung pelan dengan bibir dan pelankan suara saat selamat malam."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a small yellow fish in blue water",
+      "id": "Kartu 1: ikan kecil kuning di air biru"
+    },
+    {
+      "en": "Card 2: pink and orange coral",
+      "id": "Kartu 2: karang merah muda dan oranye"
+    },
+    {
+      "en": "Card 3: a turtle swimming",
+      "id": "Kartu 3: penyu sedang berenang"
+    },
+    {
+      "en": "Card 4: a starfish on a rock",
+      "id": "Kartu 4: bintang laut di atas batu"
+    },
+    {
+      "en": "Card 5: the fish sleeping by the coral",
+      "id": "Kartu 5: ikan tidur di dekat karang"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Listens to a short story and joins in with repeated greetings and movements.",
+      "id": "Mendengarkan cerita pendek dan ikut mengucapkan sapaan serta gerakan yang berulang."
+    },
+    {
+      "en": "Names three sea animals from the pictures: fish, turtle and starfish.",
+      "id": "Menyebut tiga hewan laut dari gambar: ikan, penyu, dan bintang laut."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "sea",
+        "id": "laut"
+      },
+      "meaning": {
+        "en": "a very big area of salty water",
+        "id": "air asin yang sangat luas"
+      }
+    },
+    {
+      "word": {
+        "en": "turtle",
+        "id": "penyu"
+      },
+      "meaning": {
+        "en": "a sea animal with a hard shell and flippers",
+        "id": "hewan laut bercangkang keras dengan sirip seperti dayung"
+      }
+    },
+    {
+      "word": {
+        "en": "coral",
+        "id": "karang"
+      },
+      "meaning": {
+        "en": "a colourful living thing in the sea that looks like a plant or rock",
+        "id": "makhluk hidup berwarna-warni di laut yang tampak seperti tanaman atau batu"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where does Little Fish live?",
+        "id": "Di mana Ikan Kecil tinggal?"
+      },
+      "choices": {
+        "en": [
+          "in the sea",
+          "in a tree",
+          "in a box"
+        ],
+        "id": [
+          "di laut",
+          "di pohon",
+          "di dalam kotak"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Who swims slowly?",
+        "id": "Siapa yang berenang pelan-pelan?"
+      },
+      "choices": {
+        "en": [
+          "Turtle",
+          "Starfish",
+          "the coral"
+        ],
+        "id": [
+          "Penyu",
+          "Bintang Laut",
+          "karang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What does Little Fish do at the end?",
+        "id": "Apa yang dilakukan Ikan Kecil di akhir cerita?"
+      },
+      "choices": {
+        "en": [
+          "she rests and goes to sleep",
+          "she says hello to Turtle",
+          "she swims to the sky"
+        ],
+        "id": [
+          "beristirahat dan tidur",
+          "menyapa Penyu",
+          "berenang ke langit"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "The sea is home to many different animals, such as fish, turtles and starfish.",
+        "id": "Laut adalah rumah bagi banyak hewan, seperti ikan, penyu, dan bintang laut."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Coral is alive, so we look at it and never step on it.",
+        "id": "Karang itu hidup, jadi kita hanya melihatnya dan tidak menginjaknya."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Can you wave hello like Little Fish?",
+      "id": "Bisakah kamu melambai seperti Ikan Kecil menyapa?"
+    },
+    {
+      "en": "Which sea animal do you like best?",
+      "id": "Hewan laut mana yang paling kamu suka?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Spread a blue sarong or towel on the floor as the \"sea\". Your child \"swims\" across it with fish hands while you say hello to a pillow \"turtle\" and a cushion \"starfish\". There is no water in this game. Stay beside your child.",
+    "id": "Bentangkan sarung atau handuk biru di lantai sebagai \"laut\". Anak \"berenang\" melintasinya dengan tangan seperti ikan, sementara Anda menyapa bantal \"penyu\" dan bantal kecil \"bintang laut\". Permainan ini tanpa air. Tetaplah di samping anak."
+  },
+  "factChecks": [
+    {
+      "claim": "Coral reefs are home to fish, sea turtles and starfish.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Corals are living animals.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

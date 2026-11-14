@@ -1,0 +1,248 @@
+{
+  "id": "reading-age3_4-thump-thump-my-heart",
+  "version": "1.0.0",
+  "level": "age3_4",
+  "readingLevel": "pre_reader",
+  "genre": "oral_story",
+  "mode": "parent_read",
+  "title": {
+    "en": "Thump-thump goes my heart",
+    "id": "Dug-dug, jantungku berdetak"
+  },
+  "text": {
+    "en": [
+      "Rina sits very still on the mat. She puts her hand on her chest. Thump... thump... thump. Slow and soft.",
+      "\"What is that?\" asks Rina. \"That is your heart,\" says Ayah. \"It works all day and all night.\"",
+      "Rina runs around the yard. Run, run, run! Round the mango tree and back again.",
+      "She puts her hand on her chest. Thump-thump-thump-thump! Fast and strong!",
+      "\"Running makes your heart beat faster,\" says Ayah. \"It is helping your body work hard.\"",
+      "Rina lies down and rests. Soon her heart goes slow again. Thump... thump... thump."
+    ],
+    "id": [
+      "Rina duduk diam di tikar. Ia meletakkan tangan di dadanya. Dug... dug... dug. Pelan dan lembut.",
+      "\"Apa itu?\" tanya Rina. \"Itu jantungmu,\" kata Ayah. \"Jantung bekerja sepanjang siang dan malam.\"",
+      "Rina berlari keliling halaman. Lari, lari, lari! Mengitari pohon mangga lalu kembali lagi.",
+      "Ia meletakkan tangan di dadanya. Dug-dug-dug-dug! Cepat dan kuat!",
+      "\"Berlari membuat jantungmu berdetak lebih cepat,\" kata Ayah. \"Jantung sedang membantu tubuhmu bekerja keras.\"",
+      "Rina berbaring dan beristirahat. Tak lama, jantungnya berdetak pelan lagi. Dug... dug... dug."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Speak slowly and softly, and tap your chest gently for each thump.",
+      "id": "Bicara pelan dan lembut, dan tepuk dada pelan untuk setiap \"dug\"."
+    },
+    {
+      "en": "Use a deep, warm voice for Ayah.",
+      "id": "Gunakan suara Ayah yang berat dan hangat."
+    },
+    {
+      "en": "Pat your knees quickly like running feet.",
+      "id": "Tepuk lutut dengan cepat seperti kaki berlari."
+    },
+    {
+      "en": "Tap your chest fast and say the thumps quickly.",
+      "id": "Tepuk dada dengan cepat dan ucapkan \"dug\" dengan cepat."
+    },
+    {
+      "en": "Pause and ask: \"Is it fast or slow now?\"",
+      "id": "Berhenti dan tanyakan: \"Sekarang cepat atau pelan?\""
+    },
+    {
+      "en": "Lie back, breathe slowly and make the thumps slow again.",
+      "id": "Bersandar, bernapas pelan, dan buat bunyi \"dug\" pelan lagi."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a girl sitting on a mat, hand on chest",
+      "id": "Kartu 1: anak perempuan duduk di tikar, tangan di dada"
+    },
+    {
+      "en": "Card 2: the girl running round a mango tree",
+      "id": "Kartu 2: anak perempuan berlari mengitari pohon mangga"
+    },
+    {
+      "en": "Card 3: the girl panting, hand on chest, a big red heart",
+      "id": "Kartu 3: anak perempuan terengah-engah, tangan di dada, gambar hati merah besar"
+    },
+    {
+      "en": "Card 4: the girl lying down resting",
+      "id": "Kartu 4: anak perempuan berbaring beristirahat"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Notices that the heart beats faster after running and slower when resting.",
+      "id": "Menyadari bahwa jantung berdetak lebih cepat setelah berlari dan lebih pelan saat beristirahat."
+    },
+    {
+      "en": "Uses the words fast and slow to compare two moments in a story.",
+      "id": "Memakai kata cepat dan pelan untuk membandingkan dua saat dalam cerita."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "heart",
+        "id": "jantung"
+      },
+      "meaning": {
+        "en": "the part inside your chest that beats and pushes blood around your body",
+        "id": "bagian di dalam dada yang berdetak dan memompa darah ke seluruh tubuh"
+      }
+    },
+    {
+      "word": {
+        "en": "chest",
+        "id": "dada"
+      },
+      "meaning": {
+        "en": "the front of your body between your neck and your tummy",
+        "id": "bagian depan tubuh di antara leher dan perut"
+      }
+    },
+    {
+      "word": {
+        "en": "rest",
+        "id": "beristirahat"
+      },
+      "meaning": {
+        "en": "to stop and be still so your body can feel calm",
+        "id": "berhenti dan diam supaya tubuh merasa tenang"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where does Rina put her hand to feel her heart?",
+        "id": "Di mana Rina meletakkan tangannya untuk merasakan jantungnya?"
+      },
+      "choices": {
+        "en": [
+          "on her chest",
+          "on her foot",
+          "on her nose"
+        ],
+        "id": [
+          "di dadanya",
+          "di kakinya",
+          "di hidungnya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "What made Rina's heart beat fast?",
+        "id": "Apa yang membuat jantung Rina berdetak cepat?"
+      },
+      "choices": {
+        "en": [
+          "running around the yard",
+          "sitting on the mat",
+          "lying down"
+        ],
+        "id": [
+          "berlari keliling halaman",
+          "duduk di tikar",
+          "berbaring"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happened after Rina rested?",
+        "id": "Apa yang terjadi setelah Rina beristirahat?"
+      },
+      "choices": {
+        "en": [
+          "her heart went slow again",
+          "her heart stopped working",
+          "she ran round the tree"
+        ],
+        "id": [
+          "jantungnya berdetak pelan lagi",
+          "jantungnya berhenti bekerja",
+          "ia berlari mengitari pohon"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Running and playing are good exercise; resting afterwards helps the body calm down.",
+        "id": "Berlari dan bermain adalah olahraga yang baik; beristirahat sesudahnya membantu tubuh tenang kembali."
+      }
+    },
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "The heart beats all the time to move blood around the body.",
+        "id": "Jantung berdetak terus untuk mengalirkan darah ke seluruh tubuh."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Can you feel your heart now? Is it fast or slow?",
+      "id": "Bisakah kamu merasakan jantungmu sekarang? Cepat atau pelan?"
+    },
+    {
+      "en": "What games make your heart go fast?",
+      "id": "Permainan apa yang membuat jantungmu berdetak cepat?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Sit together quietly and place your child's hand flat on their chest (or let them press an ear gently to your chest) to feel the heartbeat. Then hop or march on the spot for about a minute and feel again. Finish lying down for a calm rest and feel it slow down.",
+    "id": "Duduk diam bersama dan letakkan telapak tangan anak di dadanya (atau biarkan ia menempelkan telinga pelan ke dada Anda) untuk merasakan detak jantung. Lalu melompat atau berbaris di tempat sekitar satu menit dan rasakan lagi. Akhiri dengan berbaring dan beristirahat tenang sambil merasakan detaknya melambat."
+  },
+  "factChecks": [
+    {
+      "claim": "The heart beats all the time and pumps blood around the body.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Exercise such as running makes the heart beat faster; resting lets it slow down.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Keep the movement short and playful; stop if your child feels dizzy or unwell.",
+      "id": "Lakukan gerakan dengan singkat dan menyenangkan; berhenti jika anak merasa pusing atau tidak enak badan."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

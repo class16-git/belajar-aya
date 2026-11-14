@@ -1,0 +1,509 @@
+{
+  "id": "unit-g2-math-times-tables-2-5-10",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "math",
+  "strand": "multiplication_division",
+  "title": {
+    "en": "The 2, 5 and 10 times tables",
+    "id": "Perkalian 2, 5, dan 10"
+  },
+  "prerequisites": [
+    "unit-g2-math-multiplication-equal-groups"
+  ],
+  "objective": {
+    "en": "Build and recall the multiplication facts for 2, 5 and 10 up to 10 × each, spot their patterns (even numbers, endings 0 and 5, ×5 is half of ×10), and use them to find related division facts.",
+    "id": "Menyusun dan mengingat fakta perkalian 2, 5, dan 10 sampai 10 kali, mengenali polanya (bilangan genap, berakhiran 0 dan 5, ×5 adalah setengah dari ×10), dan memakainya untuk menemukan fakta pembagian yang berkaitan."
+  },
+  "rationale": {
+    "en": "After understanding multiplication as equal groups, children need fast, reliable facts. The 2, 5 and 10 tables come first because they link to counting in twos, fives and tens, to hands, sandals and money, and their patterns let a child check an answer instead of guessing.",
+    "id": "Setelah memahami perkalian sebagai kelompok sama banyak, anak perlu fakta yang cepat dan tepat. Perkalian 2, 5, dan 10 didahulukan karena terhubung dengan membilang loncat dua, lima, dan sepuluh, dengan tangan, sandal, dan uang, dan polanya membuat anak bisa memeriksa jawaban, bukan menebak."
+  },
+  "outcomes": [
+    {
+      "en": "Skip-counts in 2s, 5s and 10s to 100 and links each count to a multiplication fact.",
+      "id": "Membilang loncat 2, 5, dan 10 sampai 100 dan menghubungkan setiap hitungan dengan fakta perkalian."
+    },
+    {
+      "en": "Recalls the 2, 5 and 10 facts in any order.",
+      "id": "Mengingat fakta perkalian 2, 5, dan 10 dalam urutan acak."
+    },
+    {
+      "en": "Uses a known fact to find a division fact and to check with patterns.",
+      "id": "Memakai fakta yang diketahui untuk menemukan fakta pembagian dan memeriksa dengan pola."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can say 6 × 5 by counting fives on my fingers and then without counting.",
+      "id": "Aku bisa menyebut 6 × 5 dengan membilang lima-lima di jariku, lalu tanpa membilang."
+    },
+    {
+      "en": "I can explain why 8 × 5 is half of 8 × 10.",
+      "id": "Aku bisa menjelaskan mengapa 8 × 5 adalah setengah dari 8 × 10."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Build each table with real groups first: pairs of sandals for 2s, hands for 5s, bundles of 10 sticks for 10s.",
+      "id": "Susun setiap perkalian dengan kelompok nyata dulu: pasangan sandal untuk 2, tangan untuk 5, ikatan 10 lidi untuk 10."
+    },
+    {
+      "en": "Read '4 × 5' as '4 groups of 5' (empat kali lima), matching the earlier unit.",
+      "id": "Baca '4 × 5' sebagai '4 kelompok berisi 5' (empat kali lima), sama seperti unit sebelumnya."
+    },
+    {
+      "en": "Practise a few facts daily in mixed order for a few minutes, with no timer. Praise the strategy, not the speed.",
+      "id": "Latih beberapa fakta setiap hari dalam urutan acak selama beberapa menit, tanpa pengatur waktu. Puji strateginya, bukan kecepatannya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Count in groups and write the times fact for each count.",
+      "id": "Bilang per kelompok dan tulis fakta perkaliannya untuk setiap hitungan."
+    },
+    {
+      "en": "Check your answer with a pattern: does it end in 0 or 5? Is it even?",
+      "id": "Periksa jawabanmu dengan pola: apakah berakhiran 0 atau 5? Apakah genap?"
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Line up pairs of sandals by the door and count in twos: 1 pair is 2 sandals, 2 pairs are 4, up to 10 pairs.",
+        "id": "Jajarkan pasangan sandal di dekat pintu dan bilang loncat dua: 1 pasang 2 sandal, 2 pasang 4, sampai 10 pasang."
+      },
+      {
+        "en": "Family hands: everyone holds up open hands and the child counts fingers in fives.",
+        "id": "Tangan keluarga: semua orang mengangkat telapak tangan terbuka dan anak membilang jari lima-lima."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Colour the 2s, 5s and 10s on three hundred charts and describe the stripes: 10s are one column, 5s are two columns, 2s are every other column.",
+        "id": "Warnai kelipatan 2, 5, dan 10 di tiga tabel seratus dan jelaskan polanya: kelipatan 10 satu kolom, kelipatan 5 dua kolom, kelipatan 2 selang-seling kolom."
+      },
+      {
+        "en": "Draw a ten-strip and a five-strip side by side: each ten is two fives, so 3 × 10 = 30 and 6 × 5 = 30.",
+        "id": "Gambar pita sepuluh dan pita lima berdampingan: setiap sepuluh adalah dua lima, jadi 3 × 10 = 30 dan 6 × 5 = 30."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write each table as a list and its matching division facts: 9 × 2 = 18, so 18 ÷ 2 = 9.",
+        "id": "Tulis setiap perkalian sebagai daftar dan fakta pembagiannya: 9 × 2 = 18, jadi 18 ÷ 2 = 9."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Sandals or shoes in pairs, and bundles of 10 ice-cream sticks with rubber bands",
+      "id": "Sandal atau sepatu berpasangan, dan ikatan 10 stik es krim dengan karet gelang"
+    },
+    {
+      "en": "Three printed or hand-drawn hundred charts and crayons",
+      "id": "Tiga tabel seratus yang dicetak atau digambar tangan, dan krayon"
+    },
+    {
+      "en": "Small cards with facts on the front and answers on the back",
+      "id": "Kartu kecil dengan fakta di depan dan jawaban di belakang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Make fact cards for the 2, 5 and 10 tables (up to × 10) and bundle 100 sticks into tens.",
+      "id": "Buat kartu fakta perkalian 2, 5, dan 10 (sampai × 10) dan ikat 100 stik menjadi puluhan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Twos: 6 pairs of sandals. Count 2, 4, 6, 8, 10, 12. Write 6 × 2 = 12. Every answer in the 2 table is even.",
+      "id": "Dua-dua: 6 pasang sandal. Bilang 2, 4, 6, 8, 10, 12. Tulis 6 × 2 = 12. Setiap hasil perkalian 2 adalah bilangan genap."
+    },
+    {
+      "en": "Fives: 4 hands, 5 fingers each. Count 5, 10, 15, 20. Write 4 × 5 = 20. The 5 table ends in 5 or 0, taking turns.",
+      "id": "Lima-lima: 4 tangan, masing-masing 5 jari. Bilang 5, 10, 15, 20. Tulis 4 × 5 = 20. Hasil perkalian 5 berakhiran 5 atau 0 bergantian."
+    },
+    {
+      "en": "Tens: 7 bundles of 10 sticks make 70. Write 7 × 10 = 70: the number of tens, then a zero.",
+      "id": "Puluhan: 7 ikat berisi 10 lidi menjadi 70. Tulis 7 × 10 = 70: banyak puluhannya, lalu nol."
+    },
+    {
+      "en": "Fives from tens: 8 × 10 = 80, and a five is half a ten, so 8 × 5 is half of 80, which is 40.",
+      "id": "Lima dari sepuluh: 8 × 10 = 80, dan lima adalah setengah dari sepuluh, jadi 8 × 5 adalah setengah dari 80, yaitu 40."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Fact-card sort: put each card in the 2, 5 or 10 pile by its answer pattern before turning it over. Some go in two piles (for example 10 and 20).",
+      "id": "Memilah kartu: taruh setiap kartu di tumpukan 2, 5, atau 10 menurut pola hasilnya sebelum dibalik. Beberapa masuk dua tumpukan (misalnya 10 dan 20)."
+    },
+    {
+      "en": "Missing number: fill in ? × 5 = 35, 2 × ? = 16 and ? × 10 = 90, and say the division fact for each.",
+      "id": "Bilangan yang hilang: isi ? × 5 = 35, 2 × ? = 16, dan ? × 10 = 90, lalu sebutkan fakta pembagiannya."
+    },
+    {
+      "en": "Story facts: write one story for a 2 fact, one for a 5 fact and one for a 10 fact using things at home.",
+      "id": "Cerita fakta: tulis satu cerita untuk fakta perkalian 2, satu untuk 5, dan satu untuk 10 memakai benda di rumah."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "7 × 5 = ?",
+        "id": "7 × 5 = ?"
+      },
+      "choices": {
+        "en": [
+          "35",
+          "12",
+          "30"
+        ],
+        "id": [
+          "35",
+          "12",
+          "30"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "7 groups of 5: 5, 10, 15, 20, 25, 30, 35. It ends in 5, which fits the 5 table.",
+        "id": "7 kelompok berisi 5: 5, 10, 15, 20, 25, 30, 35. Berakhiran 5, cocok dengan pola perkalian 5."
+      },
+      "check": {
+        "expression": "7 * 5",
+        "result": "35"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "SKIP_COUNT_SLIP"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Pak Dedi's shop sells 9 pairs of sandals. How many sandals is that?",
+        "id": "Toko Pak Dedi menjual 9 pasang sandal. Berapa banyak sandalnya?"
+      },
+      "choices": {
+        "en": [
+          "18",
+          "11",
+          "16"
+        ],
+        "id": [
+          "18",
+          "11",
+          "16"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "9 groups of 2: 9 × 2 = 18.",
+        "id": "9 kelompok berisi 2: 9 × 2 = 18."
+      },
+      "check": {
+        "expression": "9 * 2",
+        "result": "18"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "SKIP_COUNT_SLIP"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A packet holds 10 stickers. How many stickers are in 6 packets?",
+        "id": "Satu bungkus berisi 10 stiker. Berapa stiker dalam 6 bungkus?"
+      },
+      "choices": {
+        "en": [
+          "60",
+          "16",
+          "610"
+        ],
+        "id": [
+          "60",
+          "16",
+          "610"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6 tens is 60: 6 × 10 = 60.",
+        "id": "6 puluhan adalah 60: 6 × 10 = 60."
+      },
+      "check": {
+        "expression": "6 * 10",
+        "result": "60"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "WRITES_FACTORS_SIDE_BY_SIDE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "40 ÷ 5 = ?",
+        "id": "40 ÷ 5 = ?"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "35",
+          "7"
+        ],
+        "id": [
+          "8",
+          "35",
+          "7"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "How many fives make 40? 8 × 5 = 40, so 40 ÷ 5 = 8.",
+        "id": "Berapa lima yang membentuk 40? 8 × 5 = 40, jadi 40 ÷ 5 = 8."
+      },
+      "check": {
+        "expression": "40 / 5",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "SKIP_COUNT_SLIP"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Which number is in the 5 times table but NOT in the 10 times table?",
+        "id": "Bilangan mana yang termasuk hasil perkalian 5 tetapi TIDAK termasuk hasil perkalian 10?"
+      },
+      "choices": {
+        "en": [
+          "25",
+          "50",
+          "22"
+        ],
+        "id": [
+          "25",
+          "50",
+          "22"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "25 ends in 5, so it is in the 5 table (5 × 5) but not the 10 table. 50 is in both; 22 is in neither.",
+        "id": "25 berakhiran 5, jadi termasuk perkalian 5 (5 × 5) tetapi tidak perkalian 10. 50 ada di keduanya; 22 tidak ada di keduanya."
+      },
+      "check": {
+        "expression": "5 * 5",
+        "result": "25"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_NOT",
+        "2": "PATTERN_CONFUSION"
+      }
+    },
+    {
+      "id": "a6",
+      "prompt": {
+        "en": "Use 9 × 10 = 90. What is 9 × 5?",
+        "id": "Pakai 9 × 10 = 90. Berapa 9 × 5?"
+      },
+      "choices": {
+        "en": [
+          "45",
+          "85",
+          "180"
+        ],
+        "id": [
+          "45",
+          "85",
+          "180"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A five is half a ten, so 9 × 5 is half of 90, which is 45.",
+        "id": "Lima adalah setengah dari sepuluh, jadi 9 × 5 adalah setengah dari 90, yaitu 45."
+      },
+      "check": {
+        "expression": "90 / 2",
+        "result": "45"
+      },
+      "distractorMisconceptions": {
+        "1": "CHANGES_BY_ONE_GROUP",
+        "2": "DOUBLES_INSTEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the two numbers instead of multiplying (7 × 5 as 12).",
+        "id": "Menjumlahkan kedua bilangan, bukan mengalikan (7 × 5 menjadi 12)."
+      },
+      "remediation": {
+        "en": "Build the groups with real objects: 7 hands of 5 fingers, and count all the fingers.",
+        "id": "Susun kelompoknya dengan benda nyata: 7 tangan berisi 5 jari, lalu hitung semua jarinya."
+      }
+    },
+    {
+      "code": "SKIP_COUNT_SLIP",
+      "description": {
+        "en": "Loses track of how many groups were counted and stops one group early or late.",
+        "id": "Kehilangan jejak banyak kelompok yang dihitung sehingga berhenti satu kelompok terlalu cepat atau terlambat."
+      },
+      "remediation": {
+        "en": "Raise one finger for each group while skip-counting, and stop when the fingers show the number of groups.",
+        "id": "Angkat satu jari untuk setiap kelompok sambil membilang loncat, dan berhenti saat jari menunjukkan banyak kelompok."
+      }
+    },
+    {
+      "code": "WRITES_FACTORS_SIDE_BY_SIDE",
+      "description": {
+        "en": "Writes the two numbers next to each other (610) instead of finding the product.",
+        "id": "Menulis kedua bilangan berdampingan (610), bukan mencari hasil kalinya."
+      },
+      "remediation": {
+        "en": "Lay out 6 real bundles of 10 sticks and count them in tens: 10, 20, ... 60.",
+        "id": "Jajarkan 6 ikat lidi berisi 10 dan hitung per puluhan: 10, 20, ... 60."
+      }
+    },
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Subtracts the divisor once instead of finding how many groups fit.",
+        "id": "Mengurangkan pembagi satu kali, bukan mencari berapa kelompok yang muat."
+      },
+      "remediation": {
+        "en": "Share 40 sticks into piles of 5 and count the piles, not the sticks.",
+        "id": "Bagi 40 lidi menjadi tumpukan berisi 5 dan hitung tumpukannya, bukan lidinya."
+      }
+    },
+    {
+      "code": "IGNORES_NOT",
+      "description": {
+        "en": "Picks a number from the 5 table without checking the 'not in the 10 table' condition.",
+        "id": "Memilih bilangan dari perkalian 5 tanpa memeriksa syarat 'tidak termasuk perkalian 10'."
+      },
+      "remediation": {
+        "en": "Colour the 5s and 10s on one hundred chart in two colours and look for squares with only one colour.",
+        "id": "Warnai kelipatan 5 dan 10 di satu tabel seratus dengan dua warna dan cari kotak yang hanya berwarna satu."
+      }
+    },
+    {
+      "code": "PATTERN_CONFUSION",
+      "description": {
+        "en": "Mixes up the patterns of the tables (thinks every even number is in the 5 table).",
+        "id": "Tertukar pola antar perkalian (mengira setiap bilangan genap termasuk perkalian 5)."
+      },
+      "remediation": {
+        "en": "Skip-count in fives aloud on the hundred chart and see that 22 is never landed on.",
+        "id": "Bilang loncat lima dengan suara di tabel seratus dan lihat bahwa 22 tidak pernah dilewati."
+      }
+    },
+    {
+      "code": "CHANGES_BY_ONE_GROUP",
+      "description": {
+        "en": "Thinks changing the table from 10 to 5 just takes 5 away.",
+        "id": "Mengira mengganti perkalian 10 menjadi 5 hanya mengurangi 5."
+      },
+      "remediation": {
+        "en": "Draw 9 ten-strips and fold each one in half: every group loses 5, not just one group, so 9 groups lose 45.",
+        "id": "Gambar 9 pita sepuluh dan lipat masing-masing menjadi dua: setiap kelompok berkurang 5, bukan hanya satu kelompok, jadi 9 kelompok berkurang 45."
+      }
+    },
+    {
+      "code": "DOUBLES_INSTEAD",
+      "description": {
+        "en": "Doubles the known fact when it should be halved.",
+        "id": "Menggandakan fakta yang diketahui padahal seharusnya dibagi dua."
+      },
+      "remediation": {
+        "en": "Ask 'is a group of 5 bigger or smaller than a group of 10?' with the strips, then decide whether the answer grows or shrinks.",
+        "id": "Tanyakan 'apakah kelompok 5 lebih besar atau lebih kecil dari kelompok 10?' dengan pita, lalu putuskan apakah jawabannya membesar atau mengecil."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Use the 10 table to find 10 × 10 and 11 × 10, then explain the pattern for any number of tens.",
+      "id": "Pakai perkalian 10 untuk mencari 10 × 10 dan 11 × 10, lalu jelaskan pola untuk sebanyak apa pun puluhan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Let a child who finds recall hard keep a strip of the skip-count numbers to check against while practising.",
+      "id": "Biarkan anak yang sulit mengingat memegang pita bilangan loncat untuk dicocokkan saat berlatih."
+    },
+    {
+      "en": "Clap or step in groups for children who learn through movement.",
+      "id": "Bertepuk atau melangkah per kelompok untuk anak yang belajar melalui gerakan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Keep rubber bands away from younger siblings.",
+        "id": "Jauhkan karet gelang dari adik yang lebih kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child answers mixed 2, 5 and 10 facts and one related division fact for each table correctly without counting from the start, on two different days.",
+      "id": "Dikuasai jika anak menjawab fakta perkalian 2, 5, dan 10 secara acak dan satu fakta pembagian untuk setiap perkalian dengan benar tanpa membilang dari awal, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,434 @@
+{
+  "id": "unit-g3-montessori-provinces-of-indonesia",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "montessori",
+  "strand": "geography",
+  "title": {
+    "en": "The provinces of Indonesia",
+    "id": "Provinsi-provinsi di Indonesia"
+  },
+  "prerequisites": [
+    "unit-g1-montessori-puzzle-map-of-indonesia",
+    "unit-g2-montessori-compass-directions-home-map"
+  ],
+  "objective": {
+    "en": "Explain that Indonesia is divided into provinces, each with a capital city, build a home-made puzzle map of the six provinces of Java and place their capitals, find the province the family lives in, and read a map key to count and compare the provinces of the island groups.",
+    "id": "Menjelaskan bahwa Indonesia dibagi menjadi provinsi-provinsi yang masing-masing punya ibu kota, menyusun peta puzzle buatan sendiri dari enam provinsi di Pulau Jawa dan meletakkan ibu kotanya, menemukan provinsi tempat keluarga tinggal, serta membaca keterangan peta untuk menghitung dan membandingkan jumlah provinsi di setiap kelompok pulau."
+  },
+  "rationale": {
+    "en": "The child already knows the big islands. Now she sees that a country is also divided into parts that people have agreed on, with borders that are drawn rather than seen on the ground. Starting with one island (Java, six provinces) keeps the puzzle small enough to master; the child's own province, wherever it is, gives the work a personal anchor. Counting provinces by island group with a key is a first step in reading thematic maps.",
+    "id": "Anak sudah mengenal pulau-pulau besar. Kini ia melihat bahwa sebuah negara juga dibagi menjadi bagian-bagian yang disepakati orang, dengan batas yang digambar dan tidak terlihat di tanah. Memulai dengan satu pulau (Jawa, enam provinsi) membuat puzzle cukup kecil untuk dikuasai; provinsi tempat tinggal anak, di mana pun itu, memberi kegiatan ini pegangan pribadi. Menghitung provinsi per kelompok pulau dengan keterangan peta adalah langkah pertama membaca peta tematik."
+  },
+  "outcomes": [
+    {
+      "en": "Explains what a province and a provincial capital are.",
+      "id": "Menjelaskan apa itu provinsi dan ibu kota provinsi."
+    },
+    {
+      "en": "Builds the Java provinces puzzle from west to east and places the six capitals.",
+      "id": "Menyusun puzzle provinsi Pulau Jawa dari barat ke timur dan meletakkan keenam ibu kotanya."
+    },
+    {
+      "en": "Names the family's own province and its capital, and finds it on a map of all Indonesia.",
+      "id": "Menyebut provinsi tempat keluarga tinggal dan ibu kotanya, serta menemukannya di peta seluruh Indonesia."
+    },
+    {
+      "en": "Uses a map key to count the provinces in an island group.",
+      "id": "Memakai keterangan peta untuk menghitung jumlah provinsi dalam satu kelompok pulau."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "Your child builds the Java puzzle and matches the six capitals without the control map.",
+      "id": "Anak menyusun puzzle Jawa dan mencocokkan keenam ibu kota tanpa peta pengendali."
+    },
+    {
+      "en": "She answers a question that needs the key, such as which island group has the most provinces.",
+      "id": "Anak menjawab pertanyaan yang memerlukan keterangan peta, misalnya kelompok pulau mana yang provinsinya paling banyak."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use a current school atlas or the official government map to check borders and names before you trace. Indonesia has had 38 provinces since 2022, when new provinces were formed in Papua; check that this number is still current.",
+      "id": "Pakai atlas sekolah terbaru atau peta resmi pemerintah untuk mengecek batas dan nama sebelum menjiplak. Indonesia memiliki 38 provinsi sejak 2022, ketika provinsi-provinsi baru dibentuk di Papua; pastikan jumlah ini masih berlaku."
+    },
+    {
+      "en": "If you live outside Java, make a second small puzzle of your own island's provinces after the Java one.",
+      "id": "Jika Anda tinggal di luar Jawa, buat puzzle kecil kedua untuk provinsi di pulau Anda sendiri setelah puzzle Jawa."
+    },
+    {
+      "en": "Keep it a map lesson: talk about places, borders and capitals, and leave politics and comparisons of which province is \"better\" aside.",
+      "id": "Jadikan ini pelajaran peta: bicarakan tempat, batas, dan ibu kota, dan jauhkan pembicaraan politik serta perbandingan provinsi mana yang \"lebih baik\"."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Take the Java pieces out from west to east and lay them in a row.",
+      "id": "Keluarkan kepingan Jawa dari barat ke timur dan jajarkan."
+    },
+    {
+      "en": "Put the pieces back in the frame. Then put each capital dot in its province.",
+      "id": "Masukkan kembali kepingan ke bingkai. Lalu letakkan titik ibu kota di provinsinya masing-masing."
+    },
+    {
+      "en": "Use the key on the big map to count the provinces in each island group, and write the numbers in a table.",
+      "id": "Pakai keterangan di peta besar untuk menghitung provinsi di setiap kelompok pulau, lalu tulis angkanya di tabel."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build the Java provinces puzzle and place the capital cards.",
+        "id": "Menyusun puzzle provinsi Jawa dan meletakkan kartu ibu kota."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Colour the provinces of an island group on an outline map, one colour per province, and add a key.",
+        "id": "Mewarnai provinsi satu kelompok pulau di peta garis, satu warna untuk setiap provinsi, dan menambahkan keterangan."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write a table of island groups and their number of provinces and compare the numbers.",
+        "id": "Menulis tabel kelompok pulau dan jumlah provinsinya lalu membandingkan angkanya."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A current atlas or official map of Indonesia's provinces",
+      "id": "Atlas terbaru atau peta resmi provinsi Indonesia"
+    },
+    {
+      "en": "Thick card, tracing paper, coloured pencils and a craft knife for the adult only, to make a six-piece puzzle of Java's provinces: Banten, Jakarta, Jawa Barat, Jawa Tengah, Daerah Istimewa Yogyakarta and Jawa Timur",
+      "id": "Karton tebal, kertas kalkir, pensil warna, dan cutter khusus untuk orang dewasa, untuk membuat puzzle enam keping provinsi di Jawa: Banten, Jakarta, Jawa Barat, Jawa Tengah, Daerah Istimewa Yogyakarta, dan Jawa Timur"
+    },
+    {
+      "en": "Six small capital cards: Serang, Jakarta, Bandung, Semarang, Yogyakarta, Surabaya",
+      "id": "Enam kartu kecil ibu kota: Serang, Jakarta, Bandung, Semarang, Yogyakarta, Surabaya"
+    },
+    {
+      "en": "A printed or hand-coloured map of all Indonesia's provinces with a key that groups them by island group",
+      "id": "Peta semua provinsi Indonesia yang dicetak atau diwarnai sendiri dengan keterangan yang mengelompokkannya per kelompok pulau"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Trace Java and its province borders from the atlas onto card, colour each province differently, and cut the pieces along the borders. Keep a traced copy of the whole outline as the control map and frame.",
+      "id": "Jiplak Pulau Jawa dan batas provinsinya dari atlas ke karton, warnai setiap provinsi dengan warna berbeda, lalu potong kepingan mengikuti batasnya. Simpan salinan jiplakan seluruh garis tepi sebagai peta pengendali dan bingkai."
+    },
+    {
+      "en": "On the big map, check the key against the atlas: Sumatra and nearby islands 10 provinces, Java 6, Kalimantan 5, Sulawesi 6, Bali and Nusa Tenggara 3, Maluku 2, Papua 6.",
+      "id": "Di peta besar, cocokkan keterangan dengan atlas: Sumatra dan pulau di sekitarnya 10 provinsi, Jawa 6, Kalimantan 5, Sulawesi 6, Bali dan Nusa Tenggara 3, Maluku 2, Papua 6."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Show the island of Java on the Indonesia puzzle map. \"Java is one island, but it is divided into six parts called provinces. Each province has its own government and a capital city.\" Lift out the province pieces one at a time from west to east, naming each.",
+      "id": "Tunjukkan Pulau Jawa di peta puzzle Indonesia. \"Jawa adalah satu pulau, tetapi dibagi menjadi enam bagian yang disebut provinsi. Setiap provinsi punya pemerintahannya sendiri dan sebuah ibu kota.\" Angkat kepingan provinsi satu per satu dari barat ke timur sambil menyebut namanya."
+    },
+    {
+      "en": "\"The borders are lines that people agreed on. If you drive from Jawa Tengah into Jawa Timur, the land looks the same; you might only see a sign by the road.\"",
+      "id": "\"Batas provinsi adalah garis yang disepakati orang. Jika kita naik mobil dari Jawa Tengah ke Jawa Timur, tanahnya tampak sama; mungkin kita hanya melihat papan di pinggir jalan.\""
+    },
+    {
+      "en": "Place two capital cards together: \"Bandung is the capital of Jawa Barat. Surabaya is the capital of Jawa Timur.\" Use the three-period lesson for the six capitals over several days.",
+      "id": "Letakkan dua kartu ibu kota bersama: \"Bandung adalah ibu kota Jawa Barat. Surabaya adalah ibu kota Jawa Timur.\" Pakai pelajaran tiga tahap untuk keenam ibu kota selama beberapa hari."
+    },
+    {
+      "en": "Open the map of all provinces. Find your own province together and say its capital. Then read the key: \"This colour shows the Sulawesi group. Let's count its provinces: Sulawesi Utara, Gorontalo, Sulawesi Tengah, Sulawesi Barat, Sulawesi Selatan, Sulawesi Tenggara: six.\"",
+      "id": "Buka peta semua provinsi. Cari provinsi tempat tinggal bersama dan sebut ibu kotanya. Lalu baca keterangan peta: \"Warna ini menunjukkan kelompok Sulawesi. Ayo hitung provinsinya: Sulawesi Utara, Gorontalo, Sulawesi Tengah, Sulawesi Barat, Sulawesi Selatan, Sulawesi Tenggara: enam.\""
+    }
+  ],
+  "practice": [
+    {
+      "en": "Build the Java puzzle, place the capitals, and check with the control map; then build it again with the control map put away.",
+      "id": "Menyusun puzzle Jawa, meletakkan ibu kota, dan mengecek dengan peta pengendali; lalu menyusunnya lagi dengan peta pengendali disimpan."
+    },
+    {
+      "en": "Count the provinces of each island group from the key and fill in a table; find the group with the most and the fewest.",
+      "id": "Menghitung provinsi setiap kelompok pulau dari keterangan peta dan mengisi tabel; mencari kelompok dengan provinsi terbanyak dan paling sedikit."
+    },
+    {
+      "en": "Find three provinces with \"Barat\", \"Timur\" or \"Utara\" in their name and check on the map that the name matches the direction.",
+      "id": "Mencari tiga provinsi yang namanya mengandung \"Barat\", \"Timur\", atau \"Utara\" dan mengecek di peta bahwa namanya sesuai dengan arahnya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Makassar is the capital of a province. What does that tell you about Makassar?",
+        "id": "Makassar adalah ibu kota sebuah provinsi. Apa artinya bagi Makassar?"
+      },
+      "choices": {
+        "en": [
+          "It is the city where that province's government is based",
+          "It is the biggest island in that province",
+          "It is the capital of all Indonesia"
+        ],
+        "id": [
+          "Kota tempat pemerintahan provinsi itu berada",
+          "Pulau terbesar di provinsi itu",
+          "Ibu kota seluruh Indonesia"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A provincial capital is the city where the province is governed from (Makassar is the capital of Sulawesi Selatan).",
+        "id": "Ibu kota provinsi adalah kota tempat provinsi itu diperintah (Makassar adalah ibu kota Sulawesi Selatan)."
+      },
+      "distractorMisconceptions": {
+        "1": "CAPITAL_IS_ISLAND",
+        "2": "PROVINCIAL_IS_NATIONAL"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Using the key, how many provinces are there in the Kalimantan and Sulawesi groups together?",
+        "id": "Dengan memakai keterangan peta, berapa jumlah provinsi di kelompok Kalimantan dan Sulawesi jika digabung?"
+      },
+      "choices": {
+        "en": [
+          "11",
+          "2",
+          "10"
+        ],
+        "id": [
+          "11",
+          "2",
+          "10"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Kalimantan has 5 and Sulawesi has 6: 5 + 6 = 11.",
+        "id": "Kalimantan punya 5 dan Sulawesi punya 6: 5 + 6 = 11."
+      },
+      "check": {
+        "expression": "5 + 6",
+        "result": "11"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_ISLANDS_NOT_PROVINCES",
+        "2": "MISREADS_KEY"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A family drives east along the north coast of Java from Semarang. Which province do they enter next?",
+        "id": "Sebuah keluarga berkendara ke arah timur di sepanjang pantai utara Jawa dari Semarang. Mereka akan memasuki provinsi mana berikutnya?"
+      },
+      "choices": {
+        "en": [
+          "Jawa Timur",
+          "Jawa Barat",
+          "Banten"
+        ],
+        "id": [
+          "Jawa Timur",
+          "Jawa Barat",
+          "Banten"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Semarang is in Jawa Tengah; the province to its east is Jawa Timur.",
+        "id": "Semarang ada di Jawa Tengah; provinsi di sebelah timurnya adalah Jawa Timur."
+      },
+      "distractorMisconceptions": {
+        "1": "EAST_WEST_SWAP",
+        "2": "EAST_WEST_SWAP"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "How many more provinces does the Sumatra group have than the Maluku group?",
+        "id": "Berapa provinsi lebih banyak yang dimiliki kelompok Sumatra dibanding kelompok Maluku?"
+      },
+      "choices": {
+        "en": [
+          "8 more",
+          "12 more",
+          "2 more"
+        ],
+        "id": [
+          "8 lebih banyak",
+          "12 lebih banyak",
+          "2 lebih banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Sumatra 10, Maluku 2: 10 − 2 = 8.",
+        "id": "Sumatra 10, Maluku 2: 10 − 2 = 8."
+      },
+      "check": {
+        "expression": "10 - 2",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD_OF_COMPARING",
+        "2": "MISREADS_KEY"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "CAPITAL_IS_ISLAND",
+      "description": {
+        "en": "Confuses a capital city with an island or a whole region.",
+        "id": "Tertukar antara ibu kota dengan pulau atau seluruh wilayah."
+      },
+      "remediation": {
+        "en": "Put a small dot sticker for the capital on the province piece: \"The whole piece is the province; this one dot is its capital city.\"",
+        "id": "Tempel stiker titik kecil untuk ibu kota di kepingan provinsi: \"Seluruh kepingan adalah provinsi; satu titik ini ibu kotanya.\""
+      }
+    },
+    {
+      "code": "PROVINCIAL_IS_NATIONAL",
+      "description": {
+        "en": "Thinks every capital is the capital of the whole country.",
+        "id": "Mengira setiap ibu kota adalah ibu kota seluruh negara."
+      },
+      "remediation": {
+        "en": "Make a ladder on paper: house → village or kelurahan → city or regency → province → country. Write your own family's name for each step and the province capital on the province step.",
+        "id": "Buat tangga di kertas: rumah → desa atau kelurahan → kota atau kabupaten → provinsi → negara. Tulis nama tempat keluarga sendiri di setiap anak tangga dan ibu kota provinsi di anak tangga provinsi."
+      }
+    },
+    {
+      "code": "COUNTS_ISLANDS_NOT_PROVINCES",
+      "description": {
+        "en": "Counts the islands (2) instead of the provinces on them.",
+        "id": "Menghitung pulaunya (2) alih-alih provinsi di atasnya."
+      },
+      "remediation": {
+        "en": "Put one counter on each province colour in the group, then count the counters, not the islands.",
+        "id": "Letakkan satu penanda di setiap warna provinsi dalam kelompok itu, lalu hitung penandanya, bukan pulaunya."
+      }
+    },
+    {
+      "code": "MISREADS_KEY",
+      "description": {
+        "en": "Reads the wrong row or colour in the map key.",
+        "id": "Membaca baris atau warna yang salah di keterangan peta."
+      },
+      "remediation": {
+        "en": "Lay a ruler under the row of the key you are reading and touch the colour on the map with the other hand before writing the number.",
+        "id": "Letakkan penggaris di bawah baris keterangan yang sedang dibaca dan sentuh warnanya di peta dengan tangan lain sebelum menulis angkanya."
+      }
+    },
+    {
+      "code": "EAST_WEST_SWAP",
+      "description": {
+        "en": "Mixes up east and west on the map.",
+        "id": "Tertukar timur dan barat di peta."
+      },
+      "remediation": {
+        "en": "Lay the map on the floor with its north arrow pointing north in the room, stand at Semarang, and step towards the east wall card from the compass unit.",
+        "id": "Letakkan peta di lantai dengan panah utara menunjuk ke utara di ruangan, berdiri di Semarang, lalu melangkah ke arah kartu dinding timur dari unit arah mata angin."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD_OF_COMPARING",
+      "description": {
+        "en": "Adds the two numbers when the question asks \"how many more\".",
+        "id": "Menjumlahkan kedua angka padahal pertanyaannya \"berapa lebih banyak\"."
+      },
+      "remediation": {
+        "en": "Make two towers of blocks, 10 and 2, side by side and count only the blocks that stick up above the short tower.",
+        "id": "Buat dua menara balok, 10 dan 2, berdampingan dan hitung hanya balok yang lebih tinggi dari menara pendek."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a puzzle of the provinces of another island group, such as Sulawesi or Sumatra, and learn their capitals.",
+      "id": "Membuat puzzle provinsi kelompok pulau lain, seperti Sulawesi atau Sumatra, dan mempelajari ibu kotanya."
+    },
+    {
+      "en": "Choose one province far from home and make a small fact card: its capital, a traditional food, a traditional house and one natural feature.",
+      "id": "Memilih satu provinsi yang jauh dari rumah dan membuat kartu fakta kecil: ibu kotanya, makanan khas, rumah adat, dan satu ciri alamnya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Glue string along the province borders so they can be felt.",
+      "id": "Tempel tali di sepanjang batas provinsi agar bisa diraba."
+    },
+    {
+      "en": "Use larger puzzle pieces (draw Java across two sheets of card) for a child who finds small pieces hard to handle.",
+      "id": "Pakai kepingan puzzle yang lebih besar (gambar Jawa melintasi dua lembar karton) untuk anak yang kesulitan memegang kepingan kecil."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Only the adult uses the craft knife, on a cutting mat, and stores it away after cutting the puzzle.",
+        "id": "Hanya orang dewasa yang memakai cutter, di atas alas potong, dan menyimpannya setelah memotong puzzle."
+      },
+      {
+        "en": "Counters for the remediation can be paper squares; keep any small items away from younger siblings under 4.",
+        "id": "Penanda untuk kegiatan perbaikan bisa berupa potongan kertas; jauhkan benda kecil dari adik di bawah 4 tahun."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 25,
+    "max": 40
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child builds the Java puzzle with capitals, names her own province and capital, and answers two key-reading questions, on two different days.",
+      "id": "Dikuasai jika anak menyusun puzzle Jawa beserta ibu kotanya, menyebut provinsi dan ibu kota tempat tinggalnya, dan menjawab dua pertanyaan membaca keterangan peta, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "fact_check_province_count"
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "bilingual-parity",
+      "safety",
+      "age-fit",
+      "transfer-assessment"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

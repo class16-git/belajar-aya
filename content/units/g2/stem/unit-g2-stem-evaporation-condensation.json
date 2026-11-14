@@ -1,0 +1,453 @@
+{
+  "id": "unit-g2-stem-evaporation-condensation",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "stem",
+  "strand": "science_inquiry",
+  "title": {
+    "en": "Where does the water go? Drying and droplets",
+    "id": "Ke mana airnya pergi? Mengering dan titik air"
+  },
+  "prerequisites": [
+    "unit-k-stem-ice-melting-where",
+    "unit-g2-stem-paper-spinner-fair-test"
+  ],
+  "objective": {
+    "en": "Run a fair test of whether a wet cloth dries faster in the sun or in the shade, and observe droplets forming on the outside of a cold cup, explaining both with the idea that liquid water can turn into an invisible gas called water vapour, and water vapour can turn back into liquid water on a cold surface.",
+    "id": "Melakukan uji adil apakah kain basah lebih cepat kering di bawah matahari atau di tempat teduh, dan mengamati titik-titik air yang terbentuk di luar gelas dingin, lalu menjelaskan keduanya dengan gagasan bahwa air cair bisa berubah menjadi gas tak terlihat yang disebut uap air, dan uap air bisa kembali menjadi air cair di permukaan yang dingin."
+  },
+  "rationale": {
+    "en": "After melting and freezing, the next change of water is to and from a gas we cannot see. Two safe home investigations give evidence for an invisible idea: the cloth loses its water to the air, and the clear droplets on a cold cup come from the air, not from inside the cup.",
+    "id": "Setelah mencair dan membeku, perubahan air berikutnya adalah menjadi gas yang tidak terlihat dan kembali lagi. Dua penyelidikan rumah yang aman memberi bukti untuk gagasan yang tidak terlihat: kain kehilangan airnya ke udara, dan titik air bening di gelas dingin berasal dari udara, bukan dari dalam gelas."
+  },
+  "outcomes": [
+    {
+      "en": "Keeps everything the same except the place (sun or shade) in the drying test.",
+      "id": "Menjaga semuanya tetap sama kecuali tempatnya (matahari atau teduh) dalam uji pengeringan."
+    },
+    {
+      "en": "Records drying times and finds the difference.",
+      "id": "Mencatat waktu kering dan mencari selisihnya."
+    },
+    {
+      "en": "Explains that the water went into the air as water vapour (evaporation).",
+      "id": "Menjelaskan bahwa air pergi ke udara sebagai uap air (penguapan)."
+    },
+    {
+      "en": "Uses the coloured-water test to show that droplets on a cold cup come from the air (condensation).",
+      "id": "Menggunakan uji air berwarna untuk menunjukkan bahwa titik air di gelas dingin berasal dari udara (pengembunan)."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can run a fair drying test and say what I changed and what I kept the same.",
+      "id": "Aku bisa melakukan uji pengeringan yang adil dan menyebut apa yang kuubah dan apa yang kupertahankan."
+    },
+    {
+      "en": "I can explain where the water went and where the droplets came from.",
+      "id": "Aku bisa menjelaskan ke mana air pergi dan dari mana titik air berasal."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Plan the fair test together on paper: 'What are we changing?' (sun or shade) 'What must stay the same?' (same kind of cloth, equally wet, same hanging, same start time).",
+      "id": "Rencanakan uji adil bersama di kertas: 'Apa yang kita ubah?' (matahari atau teduh) 'Apa yang harus tetap sama?' (jenis kain sama, sama basahnya, cara menjemur sama, waktu mulai sama)."
+    },
+    {
+      "en": "Wet both cloths in the same bowl and let the same person wring each one until it stops dripping.",
+      "id": "Basahi kedua kain di mangkuk yang sama dan biarkan orang yang sama memeras masing-masing sampai tidak menetes."
+    },
+    {
+      "en": "Set a 15-minute check routine; you keep time and your child feels each cloth and writes \"wet\", \"damp\" or \"dry\".",
+      "id": "Buat rutinitas pemeriksaan setiap 15 menit; Anda menjaga waktu dan anak meraba setiap kain lalu menulis \"basah\", \"lembap\", atau \"kering\"."
+    },
+    {
+      "en": "Introduce the words 'evaporate' and 'water vapour' after your child has asked where the water went, not before.",
+      "id": "Kenalkan kata 'menguap' dan 'uap air' setelah anak bertanya ke mana airnya pergi, bukan sebelumnya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Predict which cloth will dry first and write your guess.",
+      "id": "Tebak kain mana yang kering duluan dan tulis tebakanmu."
+    },
+    {
+      "en": "Every 15 minutes, feel both cloths and write wet, damp or dry.",
+      "id": "Setiap 15 menit, raba kedua kain dan tulis basah, lembap, atau kering."
+    },
+    {
+      "en": "For the cups, wipe the outside with a white tissue and look at the colour.",
+      "id": "Untuk gelas, lap bagian luarnya dengan tisu putih dan lihat warnanya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Hang two identical wet face cloths, one in the sun and one in the shade, and feel them every 15 minutes; then stand a cup of cold coloured water and a cup of room-temperature coloured water side by side.",
+        "id": "Jemur dua waslap basah yang sama, satu di bawah matahari dan satu di tempat teduh, lalu raba setiap 15 menit; kemudian letakkan segelas air berwarna yang dingin dan segelas air berwarna bersuhu ruang berdampingan."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a water journey: the cloth with arrows going up into the air, and the cold cup with arrows coming in from the air.",
+        "id": "Gambar perjalanan air: kain dengan panah naik ke udara, dan gelas dingin dengan panah datang dari udara."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the drying times in minutes in a table and subtract to find how much longer the shade cloth took.",
+        "id": "Tulis waktu kering dalam menit di tabel dan kurangkan untuk mencari berapa lama lebih lama kain di tempat teduh."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Two identical face cloths or handkerchiefs",
+      "id": "Dua waslap atau sapu tangan yang sama"
+    },
+    {
+      "en": "A bowl of tap water",
+      "id": "Semangkuk air keran"
+    },
+    {
+      "en": "Two clothes hangers or clothes pegs and a line, one in the sun and one in the shade",
+      "id": "Dua gantungan baju atau jepit jemuran dan tali, satu di tempat terkena matahari dan satu di tempat teduh"
+    },
+    {
+      "en": "Two identical clear plastic cups, cold water from the fridge, tap water, and a few drops of food colouring",
+      "id": "Dua gelas plastik bening yang sama, air dingin dari kulkas, air keran, dan beberapa tetes pewarna makanan"
+    },
+    {
+      "en": "White tissues, a tray, a clock and a recording sheet",
+      "id": "Tisu putih, nampan, jam, dan lembar catatan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Find a sunny spot and a shady spot that are both sheltered from strong wind, so wind does not become a second change. Put the cups on a tray to catch drips.",
+      "id": "Cari tempat terkena matahari dan tempat teduh yang sama-sama terlindung dari angin kencang, supaya angin tidak menjadi perubahan kedua. Letakkan gelas di nampan untuk menampung tetesan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Drying test: Fajar predicts the sun cloth will dry first. Both cloths are wrung out and hung at 9:00. At the checks the sun cloth goes wet, damp, dry; it is dry at 45 minutes. The shade cloth is dry at 120 minutes. 120 − 45 = 75, so the shade cloth took 75 minutes longer.",
+      "id": "Uji pengeringan: Fajar menebak kain di bawah matahari kering duluan. Kedua kain diperas dan dijemur pukul 09.00. Pada setiap pemeriksaan, kain di bawah matahari berubah dari basah, lembap, lalu kering; kain itu kering pada menit ke-45. Kain di tempat teduh kering pada menit ke-120. 120 − 45 = 75, jadi kain di tempat teduh 75 menit lebih lama."
+    },
+    {
+      "en": "Where did the water go? Fajar says 'into the cloth'. Weigh the idea: the dry cloth feels just as light as before it was wet, and the water is not on the ground below. The water evaporated: it became water vapour, an invisible gas, and mixed into the air. The sun's warmth made it happen faster.",
+      "id": "Ke mana airnya pergi? Fajar berkata 'masuk ke kain'. Uji gagasan itu: kain yang kering terasa sama ringannya seperti sebelum dibasahi, dan airnya tidak ada di tanah di bawahnya. Airnya menguap: menjadi uap air, gas yang tidak terlihat, dan bercampur dengan udara. Hangat matahari membuatnya terjadi lebih cepat."
+    },
+    {
+      "en": "Cold cup: both cups have blue water. After 10 minutes the cold cup has droplets on the outside; the other does not. Fajar wipes them with a white tissue: the tissue stays white. The droplets are not blue, so they did not leak out of the cup. They came from water vapour in the air, which turned back into liquid on the cold cup. That is condensation.",
+      "id": "Gelas dingin: kedua gelas berisi air biru. Setelah 10 menit, gelas dingin punya titik-titik air di bagian luar; gelas yang lain tidak. Fajar mengelapnya dengan tisu putih: tisunya tetap putih. Titik airnya tidak biru, jadi bukan bocor dari gelas. Titik air itu berasal dari uap air di udara, yang kembali menjadi cair di gelas yang dingin. Itulah pengembunan."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Spread or fold: hang one cloth spread out and one folded in four, both in the sun. Which dries first? Keep everything else the same.",
+      "id": "Dibentangkan atau dilipat: jemur satu kain terbentang dan satu dilipat empat, keduanya di bawah matahari. Mana yang kering duluan? Jaga hal lain tetap sama."
+    },
+    {
+      "en": "Water cycle in a bowl: put a little water in a clear bowl, cover it tightly with cling film, and leave it in the sun for an hour. Look under the film: droplets! The water evaporated, then condensed on the cooler film. Pour the water away the same day.",
+      "id": "Siklus air di mangkuk: tuang sedikit air di mangkuk bening, tutup rapat dengan plastik pembungkus, lalu biarkan di bawah matahari selama satu jam. Lihat bagian bawah plastik: ada titik-titik air! Airnya menguap, lalu mengembun di plastik yang lebih sejuk. Buang airnya di hari yang sama."
+    },
+    {
+      "en": "Breath test: breathe gently on a cold spoon from the fridge and on a spoon at room temperature. Which one mists up?",
+      "id": "Uji napas: embuskan napas pelan ke sendok dingin dari kulkas dan ke sendok bersuhu ruang. Mana yang berembun?"
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "In a new test, the cloth in the sun was dry at 40 minutes and the cloth in the shade at 95 minutes. How much longer did the shade cloth take?",
+        "id": "Dalam uji baru, kain di bawah matahari kering pada menit ke-40 dan kain di tempat teduh pada menit ke-95. Berapa lama lebih lama kain di tempat teduh?"
+      },
+      "choices": {
+        "en": [
+          "55 minutes",
+          "95 minutes",
+          "135 minutes"
+        ],
+        "id": [
+          "55 menit",
+          "95 menit",
+          "135 menit"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Find the difference: 95 − 40 = 55 minutes.",
+        "id": "Cari selisihnya: 95 − 40 = 55 menit."
+      },
+      "check": {
+        "expression": "95 - 40",
+        "result": "55"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_BIGGER_NUMBER",
+        "2": "ADDS_TO_COMPARE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A wet school shirt hangs on the line and is dry by the afternoon. Where did the water go?",
+        "id": "Kemeja sekolah yang basah dijemur dan sudah kering pada sore hari. Ke mana airnya pergi?"
+      },
+      "choices": {
+        "en": [
+          "Into the air as invisible water vapour",
+          "Deep inside the threads of the shirt, where it stays",
+          "It was used up and does not exist any more"
+        ],
+        "id": [
+          "Ke udara sebagai uap air yang tidak terlihat",
+          "Masuk jauh ke dalam benang kemeja, dan tinggal di sana",
+          "Habis terpakai dan tidak ada lagi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The water evaporated: it turned into water vapour and mixed into the air. It still exists, but we cannot see it.",
+        "id": "Airnya menguap: berubah menjadi uap air dan bercampur dengan udara. Air itu masih ada, tetapi tidak terlihat."
+      },
+      "distractorMisconceptions": {
+        "1": "WATER_STAYS_IN_CLOTH",
+        "2": "WATER_VANISHES"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Mira fills a cup with cold red water from the fridge. Droplets form on the outside, and when she wipes them with a white tissue the tissue stays white. Where did the droplets come from?",
+        "id": "Mira mengisi gelas dengan air merah dingin dari kulkas. Titik-titik air terbentuk di luar gelas, dan saat ia mengelapnya dengan tisu putih, tisunya tetap putih. Dari mana titik-titik air itu berasal?"
+      },
+      "choices": {
+        "en": [
+          "From water vapour in the air, cooled by the cold cup",
+          "From the red water leaking through the cup",
+          "From the cold itself, which turns into water"
+        ],
+        "id": [
+          "Dari uap air di udara, yang didinginkan oleh gelas dingin",
+          "Dari air merah yang bocor menembus gelas",
+          "Dari dinginnya sendiri, yang berubah menjadi air"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The droplets are not red, so they did not come from inside. Water vapour in the air condensed on the cold surface.",
+        "id": "Titik airnya tidak merah, jadi bukan dari dalam gelas. Uap air di udara mengembun di permukaan yang dingin."
+      },
+      "distractorMisconceptions": {
+        "1": "CUP_LEAKS",
+        "2": "COLD_BECOMES_WATER"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Raka wants a fair test of sun against shade. Which of these must be the same for both cloths?",
+        "id": "Raka ingin uji adil antara matahari dan teduh. Mana yang harus sama untuk kedua kain?"
+      },
+      "choices": {
+        "en": [
+          "The kind of cloth and how wet it is",
+          "The place where each cloth hangs",
+          "Nothing, as long as both are wet"
+        ],
+        "id": [
+          "Jenis kain dan seberapa basahnya",
+          "Tempat setiap kain dijemur",
+          "Tidak ada, asalkan keduanya basah"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The place is the one thing we change on purpose. Everything else, including the cloth and how wet it is, stays the same.",
+        "id": "Tempat adalah satu-satunya hal yang sengaja diubah. Yang lain, termasuk kain dan tingkat basahnya, tetap sama."
+      },
+      "distractorMisconceptions": {
+        "1": "KEEPS_TEST_VARIABLE_SAME",
+        "2": "FAIR_TEST_UNNEEDED"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "GIVES_BIGGER_NUMBER",
+      "description": {
+        "en": "Answers \"how much longer\" with the bigger time.",
+        "id": "Menjawab \"berapa lama lebih lama\" dengan waktu yang lebih besar."
+      },
+      "remediation": {
+        "en": "Draw both times as bars on a strip of squared paper (one square for 5 minutes) and count only the extra part of the longer bar.",
+        "id": "Gambar kedua waktu sebagai batang di kertas berpetak (satu kotak untuk 5 menit) lalu hitung hanya bagian lebihan dari batang yang lebih panjang."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds the two times instead of finding the difference.",
+        "id": "Menjumlahkan kedua waktu alih-alih mencari selisihnya."
+      },
+      "remediation": {
+        "en": "Count on from the smaller time to the bigger one on a clock face, in 5-minute jumps.",
+        "id": "Hitung maju dari waktu yang lebih kecil ke waktu yang lebih besar pada muka jam, dengan lompatan 5 menit."
+      }
+    },
+    {
+      "code": "WATER_STAYS_IN_CLOTH",
+      "description": {
+        "en": "Thinks the water soaks deeper into the cloth and stays there.",
+        "id": "Mengira air meresap lebih dalam ke kain dan tinggal di sana."
+      },
+      "remediation": {
+        "en": "Weigh a dry cloth on a kitchen scale, wet and wring it, weigh it again, then weigh it once it is dry: it goes back to its dry weight.",
+        "id": "Timbang kain kering dengan timbangan dapur, basahi dan peras, timbang lagi, lalu timbang setelah kering: beratnya kembali seperti berat keringnya."
+      }
+    },
+    {
+      "code": "WATER_VANISHES",
+      "description": {
+        "en": "Believes the water no longer exists once it dries.",
+        "id": "Percaya air tidak ada lagi setelah mengering."
+      },
+      "remediation": {
+        "en": "Do the bowl-and-cling-film practice: the water that left the bowl appears again as droplets under the film.",
+        "id": "Lakukan latihan mangkuk dan plastik pembungkus: air yang meninggalkan mangkuk muncul lagi sebagai titik-titik air di bawah plastik."
+      }
+    },
+    {
+      "code": "CUP_LEAKS",
+      "description": {
+        "en": "Thinks droplets on the outside have leaked through the cup.",
+        "id": "Mengira titik air di luar gelas bocor menembus gelas."
+      },
+      "remediation": {
+        "en": "Repeat with a cup of room-temperature coloured water beside the cold one: same cup, same water, no droplets. Only the cold one gets them, and they are never coloured.",
+        "id": "Ulangi dengan gelas berisi air berwarna bersuhu ruang di samping gelas dingin: gelas sama, air sama, tidak ada titik air. Hanya yang dingin yang berembun, dan titik airnya tidak pernah berwarna."
+      }
+    },
+    {
+      "code": "COLD_BECOMES_WATER",
+      "description": {
+        "en": "Thinks cold itself turns into water.",
+        "id": "Mengira dingin itu sendiri berubah menjadi air."
+      },
+      "remediation": {
+        "en": "Do the breath test with the cold spoon: the mist appears where your warm, damp breath touches it. The water comes from the breath and the air.",
+        "id": "Lakukan uji napas dengan sendok dingin: embun muncul di tempat napas yang hangat dan lembap menyentuhnya. Airnya berasal dari napas dan udara."
+      }
+    },
+    {
+      "code": "KEEPS_TEST_VARIABLE_SAME",
+      "description": {
+        "en": "Picks the thing being tested as something to keep the same.",
+        "id": "Memilih hal yang sedang diuji sebagai sesuatu yang harus tetap sama."
+      },
+      "remediation": {
+        "en": "Fill in a two-column card, \"We change\" and \"We keep the same\", before every test, with only one thing in the first column.",
+        "id": "Isi kartu dua kolom, \"Yang kita ubah\" dan \"Yang tetap sama\", sebelum setiap uji, dengan hanya satu hal di kolom pertama."
+      }
+    },
+    {
+      "code": "FAIR_TEST_UNNEEDED",
+      "description": {
+        "en": "Thinks it does not matter if other things differ.",
+        "id": "Mengira tidak masalah jika hal lain berbeda."
+      },
+      "remediation": {
+        "en": "Run an unfair version on purpose: a thin handkerchief in the shade and a thick towel in the sun. The result is confusing, so we cannot tell what made the difference.",
+        "id": "Sengaja jalankan versi yang tidak adil: sapu tangan tipis di tempat teduh dan handuk tebal di bawah matahari. Hasilnya membingungkan, sehingga kita tidak tahu apa penyebab perbedaannya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Puddle watch: after rain, draw around a puddle with chalk every hour. Watch it shrink as the water evaporates. Does a puddle in the shade shrink more slowly?",
+      "id": "Amati genangan: setelah hujan, gambar garis di sekeliling genangan dengan kapur setiap jam. Lihat genangannya mengecil saat airnya menguap. Apakah genangan di tempat teduh mengecil lebih lambat?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who cannot easily feel damp cloth can press it onto a dry paper towel and look for a wet mark.",
+      "id": "Anak yang sulit merasakan kain lembap bisa menekannya ke tisu dapur kering dan mencari bekas basah."
+    },
+    {
+      "en": "Use a picture scale for wet, damp and dry (three water drops, one drop, no drop) instead of writing words.",
+      "id": "Gunakan skala gambar untuk basah, lembap, dan kering (tiga tetes air, satu tetes, tanpa tetes) alih-alih menulis kata."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": true,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "No hot water and no kettle steam are used in this unit: use only tap water and cold water from the fridge.",
+        "id": "Unit ini tidak memakai air panas dan uap ketel: gunakan hanya air keran dan air dingin dari kulkas."
+      },
+      {
+        "en": "Pour away all the water in the cups and the bowl the same day, so no standing water is left for mosquitoes. Wipe spills on the floor at once.",
+        "id": "Buang semua air di gelas dan mangkuk pada hari yang sama, sehingga tidak ada air tergenang untuk nyamuk. Segera lap tumpahan di lantai."
+      },
+      {
+        "en": "Food colouring can stain clothes and surfaces; use a tray. Wear a hat in the sun and never look straight at the sun.",
+        "id": "Pewarna makanan bisa menodai pakaian dan permukaan; gunakan nampan. Pakai topi di bawah matahari dan jangan pernah melihat langsung ke matahari."
+      },
+      {
+        "en": "Cling film is for the bowl only; keep it away from younger children's faces.",
+        "id": "Plastik pembungkus hanya untuk mangkuk; jauhkan dari wajah anak yang lebih kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 45
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child runs the sun-and-shade test fairly, calculates the difference in drying times, and uses the coloured-water evidence to explain where the droplets on a cold cup came from.",
+      "id": "Dikuasai jika anak menjalankan uji matahari dan teduh dengan adil, menghitung selisih waktu kering, dan menggunakan bukti air berwarna untuk menjelaskan asal titik air di gelas dingin."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-stem",
+    "createdAt": "2026-11-10"
+  }
+}

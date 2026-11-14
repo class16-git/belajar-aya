@@ -1,0 +1,274 @@
+{
+  "id": "reading-g6-market-then-and-now-poem",
+  "version": "1.0.0",
+  "level": "g6",
+  "readingLevel": "advanced",
+  "genre": "poetry",
+  "mode": "independent",
+  "title": {
+    "en": "The market, then and now",
+    "id": "Pasar, dulu dan kini"
+  },
+  "text": {
+    "en": [
+      "When I was your age, the market woke before the sun. / Lamps swung from bamboo poles, / and the path was mud that swallowed my sandals whole.",
+      "We carried rice in woven baskets, / tempeh wrapped in banana leaves, / coins knotted in the corner of my mother's scarf. / Every price was a conversation.",
+      "Now the market wears a tin roof that drums when it rains, / a concrete floor, a row of bright electric lights, / and a little square of black-and-white squares / that Ibu taps with her phone to pay.",
+      "The plastic bags came, and then the plastic bags went. / Today I carry Nenek's old cloth bag, / folded small in my pocket like a secret.",
+      "But some things the years forgot to change: / the sharp smell of chillies on the grinding stone, / the seller who still calls Nenek \"Bu Guru\", / and the way a mango is chosen, / pressed gently, sniffed, and turned in the hand.",
+      "Market, you are older than me and younger than tomorrow. / Keep your noise, your mud, your laughter. / Keep a place for us at the corner stall, / every Sunday morning."
+    ],
+    "id": [
+      "Waktu Nenek seumurmu, pasar bangun sebelum matahari. / Pelita berayun di tiang-tiang bambu, / dan jalannya lumpur yang menelan sandalku bulat-bulat.",
+      "Kami membawa beras dalam bakul anyaman, / tempe terbungkus daun pisang, / uang logam diikat di ujung selendang ibuku. / Setiap harga adalah percakapan.",
+      "Kini pasar beratap seng yang berdentam saat hujan, / berlantai semen, berderet lampu listrik yang terang, / dan sepetak kecil kotak-kotak hitam putih / yang disentuh Ibu dengan ponselnya untuk membayar.",
+      "Kantong plastik datang, lalu kantong plastik pergi. / Hari ini aku membawa tas kain lama milik Nenek, / terlipat kecil di sakuku seperti rahasia.",
+      "Tetapi ada yang lupa diubah oleh tahun-tahun: / aroma cabai yang tajam di atas cobek, / penjual yang masih memanggil Nenek \"Bu Guru\", / dan cara memilih mangga, / ditekan pelan, dicium, dan diputar di tangan.",
+      "Pasar, kau lebih tua dariku dan lebih muda dari hari esok. / Simpanlah riuhmu, lumpurmu, tawamu. / Sisakan tempat untuk kami di lapak pojok, / setiap Minggu pagi."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Analyses how a free-verse poem uses two voices and contrast to show change over time.",
+      "id": "Menganalisis bagaimana puisi bebas memakai dua suara dan perbandingan untuk menunjukkan perubahan dari waktu ke waktu."
+    },
+    {
+      "en": "Interprets figurative language: metaphor, personification and direct address.",
+      "id": "Menafsirkan bahasa kiasan: metafora, personifikasi, dan sapaan langsung."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "free verse",
+        "id": "puisi bebas"
+      },
+      "meaning": {
+        "en": "poetry without a fixed rhyme or rhythm pattern",
+        "id": "puisi tanpa pola rima atau irama yang tetap"
+      }
+    },
+    {
+      "word": {
+        "en": "contrast",
+        "id": "perbandingan"
+      },
+      "meaning": {
+        "en": "showing how two things are different",
+        "id": "menunjukkan perbedaan dua hal"
+      }
+    },
+    {
+      "word": {
+        "en": "personification",
+        "id": "personifikasi"
+      },
+      "meaning": {
+        "en": "describing a thing as if it were a person, such as a market that \"wakes\"",
+        "id": "menggambarkan benda seolah-olah manusia, misalnya pasar yang \"bangun\""
+      }
+    },
+    {
+      "word": {
+        "en": "grinding stone",
+        "id": "cobek"
+      },
+      "meaning": {
+        "en": "a stone bowl in which spices are crushed",
+        "id": "wadah batu untuk menghaluskan bumbu"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "inference",
+      "prompt": {
+        "en": "Who is speaking in the first two stanzas?",
+        "id": "Siapa yang berbicara pada dua bait pertama?"
+      },
+      "choices": {
+        "en": [
+          "the grandmother, remembering the market of her childhood",
+          "the market seller",
+          "Ibu, describing today's market"
+        ],
+        "id": [
+          "nenek, yang mengenang pasar masa kecilnya",
+          "penjual di pasar",
+          "Ibu, yang menggambarkan pasar masa kini"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What does \"Every price was a conversation\" suggest?",
+        "id": "Apa makna \"Setiap harga adalah percakapan\"?"
+      },
+      "choices": {
+        "en": [
+          "buyers and sellers talked and bargained to agree on a price",
+          "prices were written on signs",
+          "nobody spoke at the market"
+        ],
+        "id": [
+          "pembeli dan penjual berbincang dan menawar untuk menyepakati harga",
+          "harga ditulis di papan",
+          "tidak ada yang berbicara di pasar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "What is the \"little square of black-and-white squares\" in stanza 3?",
+        "id": "Apa \"sepetak kecil kotak-kotak hitam putih\" pada bait 3?"
+      },
+      "choices": {
+        "en": [
+          "a code that is scanned with a phone to pay",
+          "a chessboard for the sellers",
+          "a tiled floor"
+        ],
+        "id": [
+          "kode yang dipindai dengan ponsel untuk membayar",
+          "papan catur untuk para penjual",
+          "lantai ubin"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why does the grandchild carry Nenek's old cloth bag?",
+        "id": "Mengapa sang cucu membawa tas kain lama milik Nenek?"
+      },
+      "choices": {
+        "en": [
+          "people have moved away from plastic bags, so a reusable bag is used instead",
+          "the market sells only cloth",
+          "the cloth bag is a new fashion"
+        ],
+        "id": [
+          "orang sudah meninggalkan kantong plastik, jadi tas yang bisa dipakai ulang digunakan sebagai gantinya",
+          "pasar hanya menjual kain",
+          "tas kain adalah mode terbaru"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q5",
+      "kind": "critical",
+      "prompt": {
+        "en": "In the last stanza the poet speaks straight to the market: \"Market, you are older than me...\" What is the main effect?",
+        "id": "Pada bait terakhir penyair berbicara langsung kepada pasar: \"Pasar, kau lebih tua dariku...\" Apa efek utamanya?"
+      },
+      "choices": {
+        "en": [
+          "it makes the market feel like a loved friend the family wants to keep",
+          "it shows the market is a real person",
+          "it gives instructions for shopping"
+        ],
+        "id": [
+          "membuat pasar terasa seperti sahabat tercinta yang ingin dipertahankan keluarga",
+          "menunjukkan pasar adalah orang sungguhan",
+          "memberi petunjuk cara berbelanja"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q6",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "Which statement best describes the theme of the poem?",
+        "id": "Pernyataan mana yang paling tepat menggambarkan tema puisi ini?"
+      },
+      "choices": {
+        "en": [
+          "The market has changed in many ways, but the things that connect people have stayed the same.",
+          "Old markets were better in every way.",
+          "Modern markets have nothing in common with old ones."
+        ],
+        "id": [
+          "Pasar telah berubah dalam banyak hal, tetapi hal-hal yang menghubungkan orang tetap sama.",
+          "Pasar zaman dulu lebih baik dalam segala hal.",
+          "Pasar modern sama sekali tidak mirip dengan pasar dulu."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Traditional markets show how everyday life in Indonesia has changed and what has continued.",
+        "id": "Pasar tradisional menunjukkan bagaimana kehidupan sehari-hari di Indonesia berubah dan apa yang tetap bertahan."
+      }
+    },
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Digital payment codes and electric lighting are technologies that changed shopping.",
+        "id": "Kode pembayaran digital dan lampu listrik adalah teknologi yang mengubah cara berbelanja."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Moving from plastic bags to reusable bags reduces waste.",
+        "id": "Beralih dari kantong plastik ke tas pakai ulang mengurangi sampah."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which line do you think is the most surprising image? Explain why.",
+      "id": "Baris mana yang menurutmu gambarannya paling mengejutkan? Jelaskan alasannya."
+    },
+    {
+      "en": "If you wrote a seventh stanza from your own point of view in 30 years' time, what might the market look like?",
+      "id": "Jika kamu menulis bait ketujuh dari sudut pandangmu 30 tahun lagi, akan seperti apa pasarnya?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Interview an older relative about a place they knew as a child (a market, a school, a river or a station). Note three things that have changed and one thing that has stayed the same. Then write a short free-verse poem in two voices, theirs and yours, ending with a stanza that speaks directly to the place.",
+    "id": "Wawancarai kerabat yang lebih tua tentang tempat yang mereka kenal waktu kecil (pasar, sekolah, sungai, atau stasiun). Catat tiga hal yang berubah dan satu hal yang tetap sama. Lalu tulis puisi bebas pendek dengan dua suara, suara mereka dan suaramu, diakhiri bait yang berbicara langsung kepada tempat itu."
+  },
+  "factChecks": [],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

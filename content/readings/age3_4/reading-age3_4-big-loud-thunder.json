@@ -1,0 +1,270 @@
+{
+  "id": "reading-age3_4-big-loud-thunder",
+  "version": "1.0.0",
+  "level": "age3_4",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Big, loud thunder",
+    "id": "Guntur yang besar dan keras"
+  },
+  "text": {
+    "en": [
+      "The sky turns dark and grey. The wind blows the leaves. Whoosh!",
+      "Flash! A bright light zigzags across the sky. That is lightning.",
+      "BOOM! Rumble, rumble. That is thunder. Lightning makes the thunder sound.",
+      "Budi covers his ears. \"I don't like the big noise!\" Bunda gives him a cuddle.",
+      "\"We are safe inside the house,\" says Bunda. \"We stay in until the storm is over.\"",
+      "Pitter-patter, the rain gets softer. The rumbles go far away. Budi peeks out the window and smiles."
+    ],
+    "id": [
+      "Langit menjadi gelap dan kelabu. Angin meniup daun-daun. Wusss!",
+      "Wah! Cahaya terang berkelok-kelok di langit. Itu petir.",
+      "DUAR! Gemuruh, gemuruh. Itu guntur. Petir membuat bunyi guntur.",
+      "Budi menutup telinganya. \"Aku tidak suka suara keras itu!\" Bunda memeluknya.",
+      "\"Kita aman di dalam rumah,\" kata Bunda. \"Kita tetap di dalam sampai badai selesai.\"",
+      "Tik-tik-tik, hujan makin pelan. Gemuruh menjauh. Budi mengintip dari jendela dan tersenyum."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Make a soft whooshing sound and wave your hands like wind.",
+      "id": "Buat bunyi wusss pelan dan lambaikan tangan seperti angin."
+    },
+    {
+      "en": "Draw a zigzag in the air with your finger.",
+      "id": "Gambar garis berkelok di udara dengan jari."
+    },
+    {
+      "en": "Say BOOM in a big voice, then rumble low. Watch your child; keep it gentle if they are sensitive to noise.",
+      "id": "Ucapkan DUAR dengan suara besar, lalu gemuruh rendah. Perhatikan anak; buat lebih pelan jika ia peka terhadap suara."
+    },
+    {
+      "en": "Cover your ears, then give your child a cuddle.",
+      "id": "Tutup telinga, lalu peluk anak."
+    },
+    {
+      "en": "Use a calm, slow voice for Bunda.",
+      "id": "Gunakan suara Bunda yang tenang dan pelan."
+    },
+    {
+      "en": "Tap your fingers softly for the rain and smile at your child.",
+      "id": "Ketuk jari pelan seperti hujan dan tersenyumlah kepada anak."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: dark clouds and blowing leaves",
+      "id": "Kartu 1: awan gelap dan daun tertiup angin"
+    },
+    {
+      "en": "Card 2: a zigzag of lightning",
+      "id": "Kartu 2: kilatan petir berkelok"
+    },
+    {
+      "en": "Card 3: a boy covering his ears, his mother hugging him",
+      "id": "Kartu 3: anak laki-laki menutup telinga, ibunya memeluk"
+    },
+    {
+      "en": "Card 4: the boy smiling at the window as the rain stops",
+      "id": "Kartu 4: anak laki-laki tersenyum di jendela saat hujan reda"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Names lightning and thunder and knows that we stay indoors during a thunderstorm.",
+      "id": "Menyebut petir dan guntur dan tahu bahwa kita tetap di dalam rumah saat badai petir."
+    },
+    {
+      "en": "Talks about a scary feeling and what helps it feel better.",
+      "id": "Membicarakan perasaan takut dan hal yang membantunya merasa lebih baik."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "lightning",
+        "id": "petir"
+      },
+      "meaning": {
+        "en": "a bright flash of light in the sky during a storm",
+        "id": "kilatan cahaya terang di langit saat badai"
+      }
+    },
+    {
+      "word": {
+        "en": "thunder",
+        "id": "guntur"
+      },
+      "meaning": {
+        "en": "the loud booming sound that comes with lightning",
+        "id": "bunyi menggelegar yang datang bersama petir"
+      }
+    },
+    {
+      "word": {
+        "en": "storm",
+        "id": "badai"
+      },
+      "meaning": {
+        "en": "very strong wind and rain, sometimes with lightning",
+        "id": "angin dan hujan yang sangat kuat, kadang disertai petir"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What is the bright zigzag light in the sky called?",
+        "id": "Apa nama cahaya terang yang berkelok-kelok di langit?"
+      },
+      "choices": {
+        "en": [
+          "lightning",
+          "a rainbow",
+          "the moon"
+        ],
+        "id": [
+          "petir",
+          "pelangi",
+          "bulan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where do Budi and Bunda stay during the storm?",
+        "id": "Di mana Budi dan Bunda berada saat badai?"
+      },
+      "choices": {
+        "en": [
+          "inside the house",
+          "under a tree",
+          "in the yard"
+        ],
+        "id": [
+          "di dalam rumah",
+          "di bawah pohon",
+          "di halaman"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "How does Budi feel at the end?",
+        "id": "Bagaimana perasaan Budi di akhir cerita?"
+      },
+      "choices": {
+        "en": [
+          "calm and happy",
+          "cross with Bunda",
+          "very frightened"
+        ],
+        "id": [
+          "tenang dan senang",
+          "marah kepada Bunda",
+          "sangat ketakutan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What came first?",
+        "id": "Apa yang terjadi lebih dulu?"
+      },
+      "choices": {
+        "en": [
+          "the sky turned dark",
+          "Budi smiled at the window",
+          "the rain got softer"
+        ],
+        "id": [
+          "langit menjadi gelap",
+          "Budi tersenyum di jendela",
+          "hujan makin pelan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Lightning is a giant spark in the sky, and thunder is the sound it makes.",
+        "id": "Petir adalah percikan raksasa di langit, dan guntur adalah bunyi yang dibuatnya."
+      }
+    },
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "During a thunderstorm we stay indoors, away from open fields and tall trees.",
+        "id": "Saat badai petir kita tetap di dalam rumah, jauh dari lapangan terbuka dan pohon tinggi."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What do you do when you hear thunder?",
+      "id": "Apa yang kamu lakukan saat mendengar guntur?"
+    },
+    {
+      "en": "What helped Budi feel better?",
+      "id": "Apa yang membuat Budi merasa lebih baik?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make a \"storm\" indoors on a sunny day: flick the light on and off once for lightning, then drum softly and then loudly on a pot or the table for thunder. Hug your child and say together, \"We are safe inside.\" Let your child be the one who makes the thunder.",
+    "id": "Buat \"badai\" di dalam rumah pada hari cerah: nyalakan dan matikan lampu sekali sebagai petir, lalu tabuh panci atau meja pelan lalu keras sebagai guntur. Peluk anak dan ucapkan bersama, \"Kita aman di dalam rumah.\" Biarkan anak yang membuat bunyi guntur."
+  },
+  "factChecks": [
+    {
+      "claim": "Thunder is the sound caused by lightning.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Staying indoors is the safest place during a thunderstorm.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "In a real thunderstorm, stay indoors and keep away from open fields, tall trees and water.",
+      "id": "Saat badai petir sungguhan, tetap di dalam rumah dan jauhi lapangan terbuka, pohon tinggi, dan air."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

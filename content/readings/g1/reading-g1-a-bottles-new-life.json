@@ -1,0 +1,254 @@
+{
+  "id": "reading-g1-a-bottles-new-life",
+  "version": "1.0.0",
+  "level": "g1",
+  "readingLevel": "early",
+  "genre": "nonfiction",
+  "mode": "shared",
+  "title": {
+    "en": "A plastic bottle's new life",
+    "id": "Kehidupan baru botol plastik"
+  },
+  "text": {
+    "en": [
+      "You finish your water. Now you have an empty plastic bottle. Where should it go?",
+      "If we throw it on the ground, it can end up in a river or the sea. Plastic lasts a very long time and can hurt animals.",
+      "A better way is to recycle it. First, we empty the bottle and put it with the other plastic, not with food scraps.",
+      "Many neighbourhoods have a bank sampah, a waste bank. People bring clean, sorted rubbish there, and it is weighed and saved for them.",
+      "At a recycling factory, the bottles are washed and chopped into tiny flakes. The flakes are melted and made into something new.",
+      "Your old bottle might become a new bottle, a bag, or even threads for a warm jacket. Recycling gives plastic a new life."
+    ],
+    "id": [
+      "Airmu sudah habis. Sekarang kamu punya botol plastik kosong. Ke mana botol itu sebaiknya pergi?",
+      "Kalau kita membuangnya ke tanah, botol itu bisa sampai ke sungai atau laut. Plastik bisa bertahan sangat lama dan bisa melukai hewan.",
+      "Cara yang lebih baik adalah mendaur ulangnya. Pertama, kita kosongkan botolnya dan kumpulkan bersama plastik lain, bukan bersama sisa makanan.",
+      "Banyak lingkungan punya bank sampah. Orang membawa sampah yang bersih dan sudah dipilah ke sana, lalu sampahnya ditimbang dan dicatat sebagai tabungan mereka.",
+      "Di pabrik daur ulang, botol-botol dicuci dan dicacah menjadi serpihan kecil. Serpihan itu dilelehkan dan dibuat menjadi barang baru.",
+      "Botol lamamu bisa menjadi botol baru, tas, atau bahkan benang untuk jaket yang hangat. Daur ulang memberi plastik kehidupan baru."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads an information text and puts the steps of recycling a bottle in order.",
+      "id": "Membaca teks informasi dan mengurutkan langkah daur ulang botol."
+    },
+    {
+      "en": "Explains why plastic should not be thrown on the ground.",
+      "id": "Menjelaskan mengapa plastik tidak boleh dibuang ke tanah."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "recycle",
+        "id": "mendaur ulang"
+      },
+      "meaning": {
+        "en": "to turn old things into material for new things",
+        "id": "mengolah barang lama menjadi bahan untuk barang baru"
+      }
+    },
+    {
+      "word": {
+        "en": "flakes",
+        "id": "serpihan"
+      },
+      "meaning": {
+        "en": "very small, thin pieces",
+        "id": "potongan yang sangat kecil dan tipis"
+      }
+    },
+    {
+      "word": {
+        "en": "sorted",
+        "id": "dipilah"
+      },
+      "meaning": {
+        "en": "put into groups of the same kind",
+        "id": "dikelompokkan menurut jenisnya"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What can happen to a bottle thrown on the ground?",
+        "id": "Apa yang bisa terjadi pada botol yang dibuang ke tanah?"
+      },
+      "choices": {
+        "en": [
+          "it can end up in a river or the sea",
+          "it turns into a tree",
+          "it melts in the sun by the next day"
+        ],
+        "id": [
+          "bisa sampai ke sungai atau laut",
+          "berubah menjadi pohon",
+          "meleleh kena matahari keesokan harinya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happens to the bottles at the factory just before they are melted?",
+        "id": "Apa yang terjadi pada botol di pabrik tepat sebelum dilelehkan?"
+      },
+      "choices": {
+        "en": [
+          "they are washed and chopped into flakes",
+          "they are made into a jacket",
+          "they are thrown in the sea"
+        ],
+        "id": [
+          "dicuci dan dicacah menjadi serpihan",
+          "dibuat menjadi jaket",
+          "dibuang ke laut"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What is a bank sampah?",
+        "id": "Apa itu bank sampah?"
+      },
+      "choices": {
+        "en": [
+          "a place where people bring sorted rubbish and it is saved for them",
+          "a bank that keeps money in boxes",
+          "a big rubbish bin on the beach"
+        ],
+        "id": [
+          "tempat orang membawa sampah yang sudah dipilah dan dicatat sebagai tabungan",
+          "bank yang menyimpan uang di kotak",
+          "tempat sampah besar di pantai"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why should we keep bottles away from food scraps?",
+        "id": "Mengapa botol sebaiknya dipisahkan dari sisa makanan?"
+      },
+      "choices": {
+        "en": [
+          "so the plastic stays clean and can be recycled",
+          "so the food scraps can be melted",
+          "because bottles are heavier than food"
+        ],
+        "id": [
+          "supaya plastiknya tetap bersih dan bisa didaur ulang",
+          "supaya sisa makanan bisa dilelehkan",
+          "karena botol lebih berat daripada makanan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q5",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main idea of this text?",
+        "id": "Apa gagasan utama teks ini?"
+      },
+      "choices": {
+        "en": [
+          "recycling turns an old bottle into something new",
+          "bottles are good for holding water",
+          "jackets are warm"
+        ],
+        "id": [
+          "daur ulang mengubah botol lama menjadi barang baru",
+          "botol bagus untuk menyimpan air",
+          "jaket itu hangat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Recycling keeps plastic out of rivers and seas.",
+        "id": "Daur ulang menjauhkan plastik dari sungai dan laut."
+      }
+    },
+    {
+      "subject": "practical_life",
+      "connection": {
+        "en": "Sorting rubbish at home is a job a child can help with every day.",
+        "id": "Memilah sampah di rumah adalah tugas yang bisa dibantu anak setiap hari."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What rubbish do we throw away at home that could be recycled?",
+      "id": "Sampah apa di rumah yang bisa didaur ulang?"
+    },
+    {
+      "en": "What new thing would you like your old bottle to become?",
+      "id": "Barang baru apa yang kamu inginkan dari botol lamamu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Set up two boxes at home for one week: one for clean plastic bottles and cups, one for paper. Each day, help sort the family's rubbish into the right box (a grown-up handles anything sharp or dirty). At the end of the week, count the bottles and take them to a bank sampah or recycling point if there is one nearby.",
+    "id": "Siapkan dua kardus di rumah selama satu minggu: satu untuk botol dan gelas plastik yang bersih, satu untuk kertas. Setiap hari, bantu memilah sampah keluarga ke kardus yang benar (orang dewasa yang memegang benda tajam atau kotor). Di akhir minggu, hitung botolnya dan bawa ke bank sampah atau tempat daur ulang jika ada di dekat rumah."
+  },
+  "factChecks": [
+    {
+      "claim": "Plastic lasts a very long time and can harm animals in rivers and the sea.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Bank sampah (waste banks) operate in many Indonesian neighbourhoods; people deposit sorted waste and its value is recorded as savings.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Recycled plastic bottles are washed, shredded into flakes and melted to make new products, including new bottles and polyester fibres for clothing.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "A grown-up handles broken glass, cans with sharp edges and dirty rubbish; wash hands after sorting.",
+      "id": "Orang dewasa yang memegang kaca pecah, kaleng bertepi tajam, dan sampah kotor; cuci tangan setelah memilah."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

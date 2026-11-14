@@ -1,0 +1,258 @@
+{
+  "id": "reading-g2-why-do-we-sweat",
+  "version": "1.0.0",
+  "level": "g2",
+  "readingLevel": "early",
+  "genre": "explanatory",
+  "mode": "independent",
+  "title": {
+    "en": "Why do we sweat?",
+    "id": "Mengapa kita berkeringat?"
+  },
+  "text": {
+    "en": [
+      "After a game of tag in the sun, your face is wet and your shirt sticks to your back. You are sweating. But why does your body make sweat?",
+      "Your body works best when it is not too hot and not too cold. When you run, play or sit in hot weather, your body starts to warm up.",
+      "To cool down, tiny parts in your skin called sweat glands push out sweat. Sweat is mostly water, with a little salt in it. That is why it tastes salty.",
+      "When sweat dries on your skin, it turns into water vapour and floats away into the air. As it dries, it takes heat away from your skin. So drying sweat cools you down.",
+      "On a humid day, the air is already full of water. Sweat dries slowly, so you feel sticky and stay hot for longer. A fan helps because moving air dries sweat faster.",
+      "Because sweat is mostly water, your body loses water when you sweat. That is why you should drink water before, during and after you play."
+    ],
+    "id": [
+      "Setelah main kejar-kejaran di bawah matahari, wajahmu basah dan bajumu menempel di punggung. Kamu berkeringat. Tapi mengapa tubuhmu mengeluarkan keringat?",
+      "Tubuhmu bekerja paling baik saat tidak terlalu panas dan tidak terlalu dingin. Saat kamu berlari, bermain, atau duduk di cuaca panas, tubuhmu mulai menghangat.",
+      "Untuk mendinginkan diri, bagian kecil di kulitmu yang disebut kelenjar keringat mengeluarkan keringat. Keringat sebagian besar berupa air, dengan sedikit garam. Itulah sebabnya keringat terasa asin.",
+      "Saat keringat mengering di kulit, keringat berubah menjadi uap air dan melayang ke udara. Saat mengering, keringat membawa panas pergi dari kulitmu. Jadi keringat yang mengering mendinginkan tubuhmu.",
+      "Pada hari yang lembap, udara sudah penuh air. Keringat mengering pelan-pelan, jadi kamu merasa lengket dan tetap gerah lebih lama. Kipas angin membantu karena udara yang bergerak membuat keringat lebih cepat kering.",
+      "Karena keringat sebagian besar air, tubuhmu kehilangan air saat berkeringat. Itulah sebabnya kamu perlu minum air sebelum, selama, dan sesudah bermain."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Explains, in order, how sweating cools the body.",
+      "id": "Menjelaskan secara berurutan bagaimana keringat mendinginkan tubuh."
+    },
+    {
+      "en": "Uses cause-and-effect words (because, so, that is why) to explain.",
+      "id": "Memakai kata sebab-akibat (karena, jadi, itulah sebabnya) untuk menjelaskan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "sweat glands",
+        "id": "kelenjar keringat"
+      },
+      "meaning": {
+        "en": "tiny parts in the skin that make sweat",
+        "id": "bagian kecil di kulit yang membuat keringat"
+      }
+    },
+    {
+      "word": {
+        "en": "humid",
+        "id": "lembap"
+      },
+      "meaning": {
+        "en": "when the air has a lot of water in it",
+        "id": "saat udara banyak mengandung air"
+      }
+    },
+    {
+      "word": {
+        "en": "water vapour",
+        "id": "uap air"
+      },
+      "meaning": {
+        "en": "water that has turned into a gas in the air",
+        "id": "air yang sudah berubah menjadi gas di udara"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What is sweat mostly made of?",
+        "id": "Keringat sebagian besar terbuat dari apa?"
+      },
+      "choices": {
+        "en": [
+          "water",
+          "oil",
+          "sugar"
+        ],
+        "id": [
+          "air",
+          "minyak",
+          "gula"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "How does sweat cool you down?",
+        "id": "Bagaimana keringat mendinginkan tubuhmu?"
+      },
+      "choices": {
+        "en": [
+          "as it dries, it takes heat away from your skin",
+          "it is colder than ice",
+          "it stops your heart from beating"
+        ],
+        "id": [
+          "saat mengering, keringat membawa panas pergi dari kulitmu",
+          "keringat lebih dingin daripada es",
+          "keringat menghentikan detak jantung"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Two children run the same race. One day is dry and breezy; the other is humid and still. On which day will they stay hot for longer?",
+        "id": "Dua anak berlari di lomba yang sama. Satu hari udaranya kering dan berangin; hari lain lembap dan tanpa angin. Pada hari apa mereka akan gerah lebih lama?"
+      },
+      "choices": {
+        "en": [
+          "the humid, still day",
+          "the dry, breezy day",
+          "both days exactly the same"
+        ],
+        "id": [
+          "hari yang lembap dan tanpa angin",
+          "hari yang kering dan berangin",
+          "kedua hari sama persis"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main idea of this text?",
+        "id": "Apa gagasan utama teks ini?"
+      },
+      "choices": {
+        "en": [
+          "sweating helps the body cool down",
+          "tag is a fun game",
+          "salt makes food tasty"
+        ],
+        "id": [
+          "berkeringat membantu tubuh menjadi dingin",
+          "kejar-kejaran adalah permainan seru",
+          "garam membuat makanan lezat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q5",
+      "kind": "critical",
+      "prompt": {
+        "en": "Which is the best advice after a long game in the sun?",
+        "id": "Manakah saran terbaik setelah bermain lama di bawah matahari?"
+      },
+      "choices": {
+        "en": [
+          "drink water and rest in the shade",
+          "keep running so you sweat more",
+          "put on a thick jacket"
+        ],
+        "id": [
+          "minum air dan beristirahat di tempat teduh",
+          "terus berlari supaya lebih banyak berkeringat",
+          "memakai jaket tebal"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Evaporation, the same process that dries washing, is how sweat cools us.",
+        "id": "Penguapan, proses yang sama dengan mengeringnya jemuran, adalah cara keringat mendinginkan kita."
+      }
+    },
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Drinking water and resting in the shade help prevent getting too hot.",
+        "id": "Minum air dan beristirahat di tempat teduh membantu mencegah kepanasan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "When do you sweat the most?",
+      "id": "Kapan kamu paling banyak berkeringat?"
+    },
+    {
+      "en": "Why might people in hot places like loose, light clothes?",
+      "id": "Mengapa orang di tempat panas suka memakai baju yang longgar dan tipis?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Test the idea: dip one finger in water and leave another finger dry. Blow gently on both fingers. Which one feels cooler? Then wet the back of one hand and wave it in the air until it is dry. Write one sentence explaining what you felt, using the word \"because\".",
+    "id": "Uji gagasannya: celupkan satu jari ke air dan biarkan jari lain kering. Tiup pelan kedua jari. Jari mana yang terasa lebih dingin? Lalu basahi punggung satu tangan dan kibaskan di udara sampai kering. Tulis satu kalimat yang menjelaskan apa yang kamu rasakan, memakai kata \"karena\"."
+  },
+  "factChecks": [
+    {
+      "claim": "Sweat glands in the skin release sweat, which is mostly water with some salt.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Evaporation of sweat removes heat from the skin and cools the body.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "In humid air sweat evaporates more slowly; moving air speeds evaporation.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Sweating causes water loss, so people should drink water when active in heat.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Use a small cup of clean water at a table, and wipe up spills.",
+      "id": "Gunakan secangkir kecil air bersih di meja, dan lap air yang tumpah."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

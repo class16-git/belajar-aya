@@ -1,0 +1,291 @@
+{
+  "id": "reading-g3-wright-brothers-first-flight",
+  "version": "1.0.0",
+  "level": "g3",
+  "readingLevel": "transitional",
+  "genre": "biography",
+  "mode": "independent",
+  "title": {
+    "en": "The Wright brothers and the first aeroplane flight",
+    "id": "Wright bersaudara dan penerbangan pesawat pertama"
+  },
+  "text": {
+    "en": [
+      "A long time ago, people dreamed of flying like birds. Many tried, but no one had flown a machine with an engine that a pilot could steer. Two brothers from the United States, Wilbur and Orville Wright, decided to try.",
+      "Wilbur was born in 1867 and Orville in 1871. They grew up in Dayton, Ohio. As young men, they opened a bicycle shop, where they built and repaired bicycles. This work taught them a lot about light, strong machines and balance.",
+      "The brothers watched birds closely. They noticed that birds twist the tips of their wings to stay balanced and turn. They found a way to make an aeroplane's wings twist a little too, so a pilot could control it.",
+      "First they built gliders, which fly without an engine. They tested them at Kitty Hawk, North Carolina, a windy place with soft sand to land on. Many tests went wrong, so they built a small wind tunnel in their shop to test the shapes of hundreds of model wings.",
+      "Next they needed an engine that was strong but light. No company could make one that suited them, so they built their own with the help of their mechanic, Charlie Taylor. They also carved their own propellers.",
+      "On 17 December 1903, at Kitty Hawk, Orville lay on the lower wing of their Flyer and started the engine. The aeroplane rose into the air and flew for 12 seconds, about 37 metres. It was the first powered, controlled aeroplane flight.",
+      "The brothers took turns and flew four times that day. On the last flight, Wilbur stayed in the air for 59 seconds. Their careful watching, testing and fixing changed the world: today, aeroplanes carry people between the islands of Indonesia every day."
+    ],
+    "id": [
+      "Dahulu kala, orang bermimpi bisa terbang seperti burung. Banyak yang mencoba, tetapi belum ada yang berhasil menerbangkan mesin bermotor yang bisa dikendalikan pilot. Dua kakak beradik dari Amerika Serikat, Wilbur dan Orville Wright, memutuskan untuk mencoba.",
+      "Wilbur lahir pada tahun 1867 dan Orville pada tahun 1871. Mereka tumbuh di Dayton, Ohio. Ketika dewasa, mereka membuka toko sepeda, tempat mereka membuat dan memperbaiki sepeda. Pekerjaan itu mengajari mereka banyak hal tentang mesin yang ringan dan kuat, serta tentang keseimbangan.",
+      "Kakak beradik itu mengamati burung dengan teliti. Mereka melihat bahwa burung memuntir ujung sayapnya untuk menjaga keseimbangan dan berbelok. Mereka menemukan cara agar sayap pesawat juga bisa sedikit dipuntir, sehingga pilot dapat mengendalikannya.",
+      "Mula-mula mereka membuat pesawat layang, yang terbang tanpa mesin. Mereka mengujinya di Kitty Hawk, North Carolina, tempat berangin dengan pasir lembut untuk mendarat. Banyak uji coba gagal, jadi mereka membuat terowongan angin kecil di bengkel mereka untuk menguji bentuk ratusan model sayap.",
+      "Berikutnya mereka memerlukan mesin yang kuat tetapi ringan. Tidak ada perusahaan yang bisa membuat mesin yang cocok, jadi mereka membuatnya sendiri dengan bantuan montir mereka, Charlie Taylor. Mereka juga memahat baling-baling sendiri.",
+      "Pada 17 Desember 1903, di Kitty Hawk, Orville berbaring di sayap bawah pesawat Flyer mereka dan menyalakan mesin. Pesawat itu naik ke udara dan terbang selama 12 detik, sejauh sekitar 37 meter. Itulah penerbangan pesawat bermotor pertama yang bisa dikendalikan.",
+      "Kakak beradik itu bergantian dan terbang empat kali hari itu. Pada penerbangan terakhir, Wilbur bertahan di udara selama 59 detik. Pengamatan, pengujian, dan perbaikan mereka yang cermat mengubah dunia: kini pesawat membawa orang antarpulau di Indonesia setiap hari."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a biography and puts key events of an inventor's life in order.",
+      "id": "Membaca biografi dan mengurutkan peristiwa penting dalam hidup seorang penemu."
+    },
+    {
+      "en": "Explains how observing, testing and improving led to an invention.",
+      "id": "Menjelaskan bagaimana mengamati, menguji, dan memperbaiki menghasilkan sebuah penemuan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "glider",
+        "id": "pesawat layang"
+      },
+      "meaning": {
+        "en": "a light aircraft that flies without an engine",
+        "id": "pesawat ringan yang terbang tanpa mesin"
+      }
+    },
+    {
+      "word": {
+        "en": "wind tunnel",
+        "id": "terowongan angin"
+      },
+      "meaning": {
+        "en": "a tube where air is blown over a model to test how it flies",
+        "id": "tabung tempat udara ditiupkan ke model untuk menguji cara terbangnya"
+      }
+    },
+    {
+      "word": {
+        "en": "propeller",
+        "id": "baling-baling"
+      },
+      "meaning": {
+        "en": "spinning blades that push or pull an aircraft through the air",
+        "id": "bilah yang berputar untuk mendorong atau menarik pesawat di udara"
+      }
+    },
+    {
+      "word": {
+        "en": "powered",
+        "id": "bermotor"
+      },
+      "meaning": {
+        "en": "moved by an engine",
+        "id": "digerakkan oleh mesin"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What business did the Wright brothers run?",
+        "id": "Usaha apa yang dijalankan Wright bersaudara?"
+      },
+      "choices": {
+        "en": [
+          "a bicycle shop",
+          "an aeroplane factory",
+          "a farm"
+        ],
+        "id": [
+          "toko sepeda",
+          "pabrik pesawat",
+          "peternakan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did the brothers build before their powered Flyer?",
+        "id": "Apa yang dibuat kakak beradik itu sebelum pesawat bermotor Flyer?"
+      },
+      "choices": {
+        "en": [
+          "gliders and a wind tunnel",
+          "a helicopter",
+          "a car"
+        ],
+        "id": [
+          "pesawat layang dan terowongan angin",
+          "helikopter",
+          "mobil"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why did they build their own engine?",
+        "id": "Mengapa mereka membuat mesin sendiri?"
+      },
+      "choices": {
+        "en": [
+          "no company could make one that was light and strong enough for them",
+          "they wanted a very heavy engine",
+          "engines were not invented yet"
+        ],
+        "id": [
+          "tidak ada perusahaan yang bisa membuat mesin yang cukup ringan dan kuat untuk mereka",
+          "mereka menginginkan mesin yang sangat berat",
+          "mesin belum ditemukan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "Wilbur's last flight lasted 59 seconds and the first flight lasted 12 seconds. How many seconds longer was Wilbur's flight?",
+        "id": "Penerbangan terakhir Wilbur berlangsung 59 detik dan penerbangan pertama 12 detik. Berapa detik lebih lama penerbangan Wilbur?"
+      },
+      "choices": {
+        "en": [
+          "47 seconds",
+          "71 seconds",
+          "59 seconds"
+        ],
+        "id": [
+          "47 detik",
+          "71 detik",
+          "59 detik"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6,
+      "check": {
+        "expression": "59 - 12",
+        "result": "47"
+      }
+    },
+    {
+      "id": "q5",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "Which sentence best sums up this biography?",
+        "id": "Kalimat mana yang paling tepat merangkum biografi ini?"
+      },
+      "choices": {
+        "en": [
+          "By watching, testing and improving, two brothers made the first powered, controlled aeroplane flight.",
+          "Two brothers sold many bicycles in Ohio.",
+          "Birds are the best fliers in the world."
+        ],
+        "id": [
+          "Dengan mengamati, menguji, dan memperbaiki, dua kakak beradik berhasil melakukan penerbangan pesawat bermotor pertama yang bisa dikendalikan.",
+          "Dua kakak beradik menjual banyak sepeda di Ohio.",
+          "Burung adalah penerbang terbaik di dunia."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "The brothers used a design cycle: observe, build, test, improve.",
+        "id": "Kakak beradik itu memakai siklus rancangan: amati, buat, uji, perbaiki."
+      }
+    },
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Watching birds helped them understand balance and control in the air.",
+        "id": "Mengamati burung membantu mereka memahami keseimbangan dan kendali di udara."
+      }
+    },
+    {
+      "subject": "geography",
+      "connection": {
+        "en": "Aeroplanes now link Indonesia's many islands.",
+        "id": "Pesawat kini menghubungkan banyak pulau di Indonesia."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Why do you think the brothers did not give up when their gliders failed?",
+      "id": "Menurutmu mengapa kakak beradik itu tidak menyerah ketika pesawat layang mereka gagal?"
+    },
+    {
+      "en": "What did working in a bicycle shop teach them that helped with aeroplanes?",
+      "id": "Apa yang dipelajari dari bekerja di toko sepeda yang membantu mereka membuat pesawat?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make a paper glider by folding a sheet of paper into a dart. Fly it five times and measure each flight with footsteps. Then change one thing only, such as folding the back edges of the wings up a little, fly it five more times and compare. Write what you changed and what happened, like the Wright brothers did. Fly it in an open space, never towards anyone's face.",
+    "id": "Buat pesawat kertas dengan melipat selembar kertas menjadi bentuk anak panah. Terbangkan lima kali dan ukur setiap terbangnya dengan langkah kaki. Lalu ubah satu hal saja, misalnya menekuk sedikit ujung belakang sayap ke atas, terbangkan lima kali lagi dan bandingkan. Tulis apa yang kamu ubah dan apa yang terjadi, seperti yang dilakukan Wright bersaudara. Terbangkan di tempat terbuka, jangan ke arah wajah orang."
+  },
+  "factChecks": [
+    {
+      "claim": "Wilbur Wright was born in 1867 and Orville Wright in 1871; they lived in Dayton, Ohio, and ran a bicycle business.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The Wrights controlled their aircraft by wing warping, an idea inspired by watching birds.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "They tested gliders at Kitty Hawk, North Carolina, and built a wind tunnel to test wing shapes.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Their engine was built in their shop with mechanic Charlie Taylor.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "On 17 December 1903 Orville flew the Flyer for 12 seconds, about 37 metres (120 feet), the first powered, controlled aeroplane flight.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Four flights were made that day; the longest, by Wilbur, lasted 59 seconds.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Fly paper gliders in an open space and never aim them at faces or eyes.",
+      "id": "Terbangkan pesawat kertas di tempat terbuka dan jangan pernah mengarahkannya ke wajah atau mata."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "historical_facts"
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

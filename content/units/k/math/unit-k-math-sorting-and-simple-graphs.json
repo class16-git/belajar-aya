@@ -1,0 +1,450 @@
+{
+  "id": "unit-k-math-sorting-and-simple-graphs",
+  "version": "1.0.0",
+  "level": "k",
+  "framework": "math",
+  "strand": "data",
+  "title": {
+    "en": "Sorting and simple graphs",
+    "id": "Mengelompokkan dan grafik sederhana"
+  },
+  "prerequisites": [
+    "unit-k-math-compare-numbers-to-20"
+  ],
+  "objective": {
+    "en": "Sort a collection by one rule (colour, kind, size or what it does), explain the rule, show the groups as columns of real objects on a floor graph, and say which group has the most, the fewest and how many more.",
+    "id": "Mengelompokkan sekumpulan benda menurut satu aturan (warna, jenis, ukuran, atau kegunaannya), menjelaskan aturannya, menyusun kelompok itu sebagai kolom benda nyata pada grafik lantai, dan menyebut kelompok mana yang paling banyak, paling sedikit, dan selisihnya."
+  },
+  "rationale": {
+    "en": "Sorting is the first step of handling data: deciding what belongs together. Lining the groups up in columns that start at the same line turns a pile into a graph, so children can compare by matching rather than by guessing from how spread out a group looks.",
+    "id": "Mengelompokkan adalah langkah pertama mengolah data: memutuskan benda mana yang sejenis. Menjajarkan kelompok dalam kolom yang dimulai dari garis yang sama mengubah tumpukan menjadi grafik, sehingga anak membandingkan dengan memasangkan, bukan menebak dari seberapa lebar sebarannya."
+  },
+  "outcomes": [
+    {
+      "en": "Sorts a mixed collection by a rule and names the rule.",
+      "id": "Mengelompokkan kumpulan campuran menurut satu aturan dan menyebut aturannya."
+    },
+    {
+      "en": "Sorts the same collection in a second way.",
+      "id": "Mengelompokkan kumpulan yang sama dengan cara kedua."
+    },
+    {
+      "en": "Builds a floor graph and compares the columns: most, fewest, how many more.",
+      "id": "Menyusun grafik lantai dan membandingkan kolomnya: paling banyak, paling sedikit, berapa lebih banyak."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can sort the socks by colour and tell my rule.",
+      "id": "Aku bisa mengelompokkan kaus kaki menurut warna dan menyebut aturanku."
+    },
+    {
+      "en": "I can line up my groups from the same start line and say which has the most.",
+      "id": "Aku bisa menjajarkan kelompokku dari garis awal yang sama dan menyebut mana yang paling banyak."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Ask 'What is your rule?' after every sort. Any sensible rule is fine; the child must be able to say it.",
+      "id": "Tanyakan 'Apa aturanmu?' setiap selesai mengelompokkan. Aturan apa pun boleh asalkan masuk akal; anak harus bisa menyebutkannya."
+    },
+    {
+      "en": "Make the floor graph with masking tape: a start line and one lane per group, with one object per square.",
+      "id": "Buat grafik lantai dengan lakban kertas (masking tape): satu garis awal dan satu lajur untuk setiap kelompok, satu benda per kotak."
+    },
+    {
+      "en": "When comparing, match the columns side by side: the extra objects with no partner show 'how many more'.",
+      "id": "Saat membandingkan, pasangkan kolom berdampingan: benda yang tidak punya pasangan menunjukkan 'berapa lebih banyak'."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Put things that are the same in one group. Tell me your rule.",
+      "id": "Kumpulkan benda yang sama dalam satu kelompok. Sebutkan aturanmu."
+    },
+    {
+      "en": "Put one thing in each square, starting at the line. Which line is longest?",
+      "id": "Taruh satu benda di setiap kotak, mulai dari garis. Lajur mana yang paling panjang?"
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Laundry sort: tip out clean socks, small towels and T-shirts. Sort by kind, then mix them and sort again by colour.",
+        "id": "Memilah cucian: tuang kaus kaki, handuk kecil, dan kaus yang bersih. Kelompokkan menurut jenis, lalu campur lagi dan kelompokkan menurut warna."
+      },
+      {
+        "en": "Floor graph: tape a start line and three lanes. Put toy cars, toy animals and toy blocks in their lanes, one per square.",
+        "id": "Grafik lantai: tempel garis awal dan tiga lajur. Taruh mobil mainan, hewan mainan, dan balok mainan di lajurnya, satu per kotak."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "On squared paper with a start line, colour one square for each object in its column and draw a small picture at the bottom of each column as its label.",
+        "id": "Di kertas berpetak dengan garis awal, warnai satu kotak untuk setiap benda di kolomnya dan gambar ikon kecil di bawah setiap kolom sebagai labelnya."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the number under each column and use the words: 'Blocks has the most. Animals has the fewest. Cars has 2 more than animals.'",
+        "id": "Tulis bilangannya di bawah setiap kolom dan pakai kata-katanya: 'Balok paling banyak. Hewan paling sedikit. Mobil 2 lebih banyak daripada hewan.'"
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A basket of large household things: socks, small towels, plastic cups, large spoons, toy cars and toy animals",
+      "id": "Sekeranjang benda rumah yang besar: kaus kaki, handuk kecil, gelas plastik, sendok besar, mobil mainan, dan hewan mainan"
+    },
+    {
+      "en": "Masking tape for a floor graph",
+      "id": "Lakban kertas (masking tape) untuk grafik lantai"
+    },
+    {
+      "en": "Squared paper and crayons",
+      "id": "Kertas berpetak dan krayon"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Tape a start line and three or four lanes on the floor, each divided into about ten squares the size of a toy car.",
+      "id": "Tempel satu garis awal dan tiga atau empat lajur di lantai, masing-masing dibagi sekitar sepuluh kotak seukuran mobil mainan."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Two ways to sort: the same spoons, cups and socks are sorted first by kind (3 groups), then by colour (red things and blue things). Same objects, different rule.",
+      "id": "Dua cara mengelompokkan: sendok, gelas, dan kaus kaki yang sama dikelompokkan dulu menurut jenis (3 kelompok), lalu menurut warna (benda merah dan benda biru). Benda sama, aturan berbeda."
+    },
+    {
+      "en": "Guess my rule: the adult sorts toys into 'things with wheels' and 'things without wheels' without saying the rule. The child watches and guesses.",
+      "id": "Tebak aturanku: orang dewasa mengelompokkan mainan menjadi 'yang beroda' dan 'yang tidak beroda' tanpa menyebut aturannya. Anak mengamati lalu menebak."
+    },
+    {
+      "en": "Reading the floor graph: cars 5, animals 3, blocks 6. Blocks has the most; animals has the fewest. Match cars with animals: 2 cars have no partner, so there are 2 more cars than animals.",
+      "id": "Membaca grafik lantai: mobil 5, hewan 3, balok 6. Balok paling banyak; hewan paling sedikit. Pasangkan mobil dengan hewan: 2 mobil tidak punya pasangan, jadi mobil 2 lebih banyak daripada hewan."
+    },
+    {
+      "en": "Why the start line matters: spread 4 spoons far apart and push 5 cups close together. The spoon row looks longer, but moving both into the graph lanes shows the cups have more.",
+      "id": "Mengapa garis awal penting: sebar 4 sendok berjauhan dan rapatkan 5 gelas. Barisan sendok tampak lebih panjang, tetapi setelah dipindah ke lajur grafik, terlihat gelas lebih banyak."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Sort the shoes by the door: by who wears them, then by kind (sandals, shoes, slippers). Build a floor graph for one of the sorts.",
+      "id": "Kelompokkan alas kaki di dekat pintu: menurut pemiliknya, lalu menurut jenis (sandal, sepatu, selop). Buat grafik lantai untuk salah satunya."
+    },
+    {
+      "en": "Odd one out: show four things where one breaks the rule (three things that roll and a book). The child finds it and says why.",
+      "id": "Mana yang berbeda: tunjukkan empat benda dengan satu yang melanggar aturan (tiga benda yang bisa menggelinding dan sebuah buku). Anak menemukannya dan menjelaskan alasannya."
+    },
+    {
+      "en": "Colour a paper graph of the toys in the toy box and answer: which has the most, which has the fewest, how many more?",
+      "id": "Warnai grafik kertas dari mainan di kotak mainan dan jawab: mana yang paling banyak, mana yang paling sedikit, berapa lebih banyak?"
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Mira sorts 9 toy cars by colour. 4 cars are red and the rest are blue. How many blue cars are there?",
+        "id": "Mira mengelompokkan 9 mobil mainan menurut warna. 4 mobil berwarna merah dan sisanya biru. Berapa mobil yang biru?"
+      },
+      "choices": {
+        "en": [
+          "5 blue cars",
+          "9 blue cars",
+          "4 blue cars"
+        ],
+        "id": [
+          "5 mobil biru",
+          "9 mobil biru",
+          "4 mobil biru"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "9 cars in all, 4 are red, so 9 - 4 = 5 are blue.",
+        "id": "Semuanya 9 mobil, 4 merah, jadi 9 - 4 = 5 yang biru."
+      },
+      "check": {
+        "expression": "9 - 4",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_TOTAL",
+        "2": "GIVES_OTHER_GROUP"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "The rule is 'things that can roll'. Which thing does NOT belong?",
+        "id": "Aturannya 'benda yang bisa menggelinding'. Benda mana yang TIDAK termasuk?"
+      },
+      "choices": {
+        "en": [
+          "A book",
+          "A ball",
+          "A toy wheel"
+        ],
+        "id": [
+          "Buku",
+          "Bola",
+          "Roda mainan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A ball and a wheel roll. A book slides but does not roll, so it breaks the rule.",
+        "id": "Bola dan roda bisa menggelinding. Buku hanya bisa digeser, tidak menggelinding, jadi melanggar aturan."
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_THE_RULE",
+        "2": "IGNORES_THE_RULE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A floor graph shows sandals 3, school shoes 6 and slippers 7. Which column has the fewest?",
+        "id": "Grafik lantai menunjukkan sandal 3, sepatu sekolah 6, dan selop 7. Kolom mana yang paling sedikit?"
+      },
+      "choices": {
+        "en": [
+          "Sandals",
+          "Slippers",
+          "School shoes"
+        ],
+        "id": [
+          "Sandal",
+          "Selop",
+          "Sepatu sekolah"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "3 is the smallest number, so the sandals column is the shortest and has the fewest.",
+        "id": "3 adalah bilangan terkecil, jadi kolom sandal paling pendek dan paling sedikit."
+      },
+      "distractorMisconceptions": {
+        "1": "MOST_FEWEST_SWAP",
+        "2": "READS_MIDDLE_COLUMN"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A floor graph has 8 toy animals and 5 toy cars. How many more toy animals than toy cars are there?",
+        "id": "Grafik lantai berisi 8 hewan mainan dan 5 mobil mainan. Hewan mainan lebih banyak berapa daripada mobil mainan?"
+      },
+      "choices": {
+        "en": [
+          "3 more",
+          "13 more",
+          "8 more"
+        ],
+        "id": [
+          "3 lebih banyak",
+          "13 lebih banyak",
+          "8 lebih banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Match each car with an animal: 3 animals have no partner. 8 - 5 = 3.",
+        "id": "Pasangkan setiap mobil dengan seekor hewan: 3 hewan tidak punya pasangan. 8 - 5 = 3."
+      },
+      "check": {
+        "expression": "8 - 5",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "GIVES_TOTAL"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Bayu puts 6 cups in a long, spread-out row and 7 plates in a short, squashed row. Which group has more?",
+        "id": "Bayu menaruh 6 gelas dalam barisan panjang yang berjauhan dan 7 piring dalam barisan pendek yang rapat. Kelompok mana yang lebih banyak?"
+      },
+      "choices": {
+        "en": [
+          "The plates",
+          "The cups, because their row is longer",
+          "They have the same"
+        ],
+        "id": [
+          "Piringnya",
+          "Gelasnya, karena barisannya lebih panjang",
+          "Jumlahnya sama"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count or match one to one: 7 plates is more than 6 cups. How spread out a row is does not change how many there are.",
+        "id": "Hitung atau pasangkan satu-satu: 7 piring lebih banyak daripada 6 gelas. Lebar barisan tidak mengubah banyaknya."
+      },
+      "distractorMisconceptions": {
+        "1": "LONGER_ROW_MEANS_MORE",
+        "2": "LONGER_ROW_MEANS_MORE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "GIVES_TOTAL",
+      "description": {
+        "en": "Answers with the whole collection instead of one group or the difference.",
+        "id": "Menjawab dengan seluruh kumpulan, bukan satu kelompok atau selisihnya."
+      },
+      "remediation": {
+        "en": "Put each group in its own hoop or tray and point only to the tray the question asks about.",
+        "id": "Taruh setiap kelompok di nampan sendiri dan tunjuk hanya nampan yang ditanyakan."
+      }
+    },
+    {
+      "code": "GIVES_OTHER_GROUP",
+      "description": {
+        "en": "Gives the number of the group that was named instead of the group asked about.",
+        "id": "Menyebut banyak kelompok yang sudah disebutkan, bukan kelompok yang ditanyakan."
+      },
+      "remediation": {
+        "en": "Act it out: put 4 red cars aside, then count only the cars that are left.",
+        "id": "Peragakan: sisihkan 4 mobil merah, lalu hitung hanya mobil yang tersisa."
+      }
+    },
+    {
+      "code": "IGNORES_THE_RULE",
+      "description": {
+        "en": "Chooses by something other than the stated rule, such as favourite toy or colour.",
+        "id": "Memilih berdasarkan hal lain di luar aturan, seperti mainan kesukaan atau warna."
+      },
+      "remediation": {
+        "en": "Test each object against the rule with the real action: try to roll each one down a cushion.",
+        "id": "Uji setiap benda dengan tindakan nyata sesuai aturan: coba gelindingkan masing-masing di atas bantal miring."
+      }
+    },
+    {
+      "code": "MOST_FEWEST_SWAP",
+      "description": {
+        "en": "Mixes up most and fewest.",
+        "id": "Tertukar antara paling banyak dan paling sedikit."
+      },
+      "remediation": {
+        "en": "Stand at the end of each column: 'This one is tallest, it has the most; this one is shortest, it has the fewest.'",
+        "id": "Berdiri di ujung setiap kolom: 'Yang ini paling tinggi, paling banyak; yang ini paling pendek, paling sedikit.'"
+      }
+    },
+    {
+      "code": "READS_MIDDLE_COLUMN",
+      "description": {
+        "en": "Picks a column by its place in the graph rather than its length.",
+        "id": "Memilih kolom berdasarkan letaknya di grafik, bukan panjangnya."
+      },
+      "remediation": {
+        "en": "Rearrange the lanes in a different order and ask again: the answer moves with the column.",
+        "id": "Ubah urutan lajurnya dan tanyakan lagi: jawabannya ikut berpindah bersama kolomnya."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the two groups when asked how many more.",
+        "id": "Menjumlahkan kedua kelompok saat ditanya berapa lebih banyak."
+      },
+      "remediation": {
+        "en": "Match pairs one to one across the two columns and count only the objects left without a partner.",
+        "id": "Pasangkan satu-satu antara dua kolom dan hitung hanya benda yang tidak punya pasangan."
+      }
+    },
+    {
+      "code": "LONGER_ROW_MEANS_MORE",
+      "description": {
+        "en": "Thinks the row that takes up more space has more objects.",
+        "id": "Mengira barisan yang lebih panjang tempatnya berisi lebih banyak benda."
+      },
+      "remediation": {
+        "en": "Move both rows into the floor-graph squares, one object per square, and compare again.",
+        "id": "Pindahkan kedua barisan ke kotak grafik lantai, satu benda per kotak, lalu bandingkan lagi."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Ask the family 'Which drink do you like best: tea, water or juice?' and build a graph with one paper square per person.",
+      "id": "Tanyakan kepada keluarga 'Minuman apa yang paling kamu suka: teh, air putih, atau jus?' lalu buat grafik dengan satu kotak kertas per orang."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use objects with strong textures (towels, socks, plastic cups) so the child can sort by touch.",
+      "id": "Pakai benda dengan tekstur yang jelas (handuk, kaus kaki, gelas plastik) agar anak bisa mengelompokkan dengan meraba."
+    },
+    {
+      "en": "Make the tape lanes wide and bright for children who need clear visual borders.",
+      "id": "Buat lajur lakban yang lebar dan berwarna terang untuk anak yang butuh batas visual yang jelas."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use only objects larger than a toilet-roll tube so nothing can be swallowed by a younger sibling; put toys back in the box afterwards.",
+        "id": "Pakai hanya benda yang lebih besar dari gulungan tisu toilet agar tidak bisa tertelan adik; kembalikan mainan ke kotaknya setelah selesai."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      2,
+      7,
+      14
+    ],
+    "masteryRule": {
+      "en": "Secure when the child sorts one collection in two ways with stated rules and answers most, fewest and how many more from a floor graph without help, on two different days.",
+      "id": "Dikuasai jika anak mengelompokkan satu kumpulan dengan dua cara beserta aturannya dan menjawab paling banyak, paling sedikit, dan berapa lebih banyak dari grafik lantai tanpa bantuan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}

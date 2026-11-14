@@ -1,0 +1,481 @@
+{
+  "id": "unit-g2-math-bar-graphs",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "math",
+  "strand": "data",
+  "title": {
+    "en": "Bar graphs",
+    "id": "Diagram batang"
+  },
+  "prerequisites": [
+    "unit-g1-math-picture-graphs",
+    "unit-g2-math-times-tables-2-5-10"
+  ],
+  "objective": {
+    "en": "Read and draw bar graphs whose scale counts in 1s, 2s or 5s, read a bar that ends between two grid lines, and answer comparison and total questions from the graph.",
+    "id": "Membaca dan menggambar diagram batang dengan skala 1, 2, atau 5, membaca batang yang berakhir di antara dua garis, dan menjawab pertanyaan perbandingan dan jumlah dari diagram."
+  },
+  "rationale": {
+    "en": "A bar graph replaces one picture per item with the length of a bar measured against a scale. Children must read the scale, not count squares, which is where most errors happen. The 2, 5 and 10 tables make scaled axes possible.",
+    "id": "Diagram batang mengganti satu gambar per benda dengan panjang batang yang diukur terhadap skala. Anak harus membaca skalanya, bukan menghitung kotak, dan di situlah kebanyakan kesalahan terjadi. Perkalian 2, 5, dan 10 membuat skala bertingkat bisa dipahami."
+  },
+  "outcomes": [
+    {
+      "en": "Reads the value of a bar on a scale of 1, 2 or 5, including halfway between lines.",
+      "id": "Membaca nilai batang pada skala 1, 2, atau 5, termasuk di tengah antara dua garis."
+    },
+    {
+      "en": "Draws a bar graph with a title, labelled axes and an even scale.",
+      "id": "Menggambar diagram batang dengan judul, sumbu berlabel, dan skala yang teratur."
+    },
+    {
+      "en": "Answers how many more, how many fewer and total questions.",
+      "id": "Menjawab pertanyaan berapa lebih banyak, berapa lebih sedikit, dan berapa jumlahnya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can read the scale before I read a bar.",
+      "id": "Aku membaca skalanya dulu sebelum membaca batang."
+    },
+    {
+      "en": "I can draw a bar that ends halfway between two lines when the number is odd.",
+      "id": "Aku bisa menggambar batang yang berakhir di tengah dua garis jika bilangannya ganjil."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Build a bar with stacked blocks first, then draw it on squared paper, then on a graph with a scale of 2.",
+      "id": "Susun batang dengan balok bertumpuk dulu, lalu gambar di kertas berpetak, lalu di diagram dengan skala 2."
+    },
+    {
+      "en": "Before any question, ask: 'What does each line on the side stand for?'",
+      "id": "Sebelum menjawab pertanyaan apa pun, tanyakan: 'Setiap garis di samping mewakili berapa?'"
+    },
+    {
+      "en": "Use a ruler held flat from the top of a bar to the axis to read the value.",
+      "id": "Pakai penggaris yang dipegang mendatar dari ujung batang ke sumbu untuk membaca nilainya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Read the title and the scale. Then read each bar with a ruler.",
+      "id": "Baca judul dan skalanya. Lalu baca setiap batang dengan penggaris."
+    },
+    {
+      "en": "When a bar stops between lines, find the number in the middle.",
+      "id": "Jika batang berhenti di antara garis, cari bilangan di tengahnya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Block bars: count the family's shoes, cups and towels and stack one block for each. Lay the towers down side by side as bars.",
+        "id": "Batang balok: hitung sepatu, gelas, dan handuk keluarga lalu tumpuk satu balok untuk masing-masing. Rebahkan menara berdampingan sebagai batang."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the block bars on squared paper with one square per item, then redraw the same data on a graph whose side counts 0, 2, 4, 6, 8.",
+        "id": "Gambar batang balok di kertas berpetak dengan satu kotak per benda, lalu gambar ulang data yang sama pada diagram yang sumbunya 0, 2, 4, 6, 8."
+      },
+      {
+        "en": "Mark a bar of 9 on the scale of 2 so it ends halfway between 8 and 10.",
+        "id": "Tandai batang bernilai 9 pada skala 2 sehingga berakhir di tengah antara 8 dan 10."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write number sentences from the graph: tallest bar minus shortest bar, and the sum of all bars.",
+        "id": "Tulis kalimat bilangan dari diagram: batang tertinggi dikurangi batang terendah, dan jumlah semua batang."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 20 stacking blocks",
+      "id": "Sekitar 20 balok susun"
+    },
+    {
+      "en": "Squared paper, a ruler and coloured pencils",
+      "id": "Kertas berpetak, penggaris, dan pensil warna"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw two empty graph frames: one with a scale of 1 and one with a scale of 2, each with a title line and axis labels.",
+      "id": "Gambar dua kerangka diagram kosong: satu dengan skala 1 dan satu dengan skala 2, masing-masing dengan baris judul dan label sumbu."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Reading a scale of 2: the graph 'Fruit sold at a stall' has a side axis 0, 2, 4, 6, 8, 10, 12. The papaya bar ends on the 10 line, so 10 papayas were sold.",
+      "id": "Membaca skala 2: diagram 'Buah yang terjual di kios' punya sumbu 0, 2, 4, 6, 8, 10, 12. Batang pepaya berakhir di garis 10, jadi 10 pepaya terjual."
+    },
+    {
+      "en": "Halfway: the banana bar ends halfway between 4 and 6. The number halfway between 4 and 6 is 5, so 5 bananas.",
+      "id": "Di tengah: batang pisang berakhir di tengah antara 4 dan 6. Bilangan di tengah 4 dan 6 adalah 5, jadi 5 pisang."
+    },
+    {
+      "en": "Comparing: mango 12 and banana 5. 12 - 5 = 7, so 7 more mangoes than bananas were sold.",
+      "id": "Membandingkan: mangga 12 dan pisang 5. 12 - 5 = 7, jadi mangga terjual 7 lebih banyak daripada pisang."
+    },
+    {
+      "en": "Drawing with a scale of 5: votes for games are 15, 20 and 10. Count lines in fives and colour each bar up to its line.",
+      "id": "Menggambar dengan skala 5: suara untuk permainan adalah 15, 20, dan 10. Hitung garis per lima dan warnai setiap batang sampai garisnya."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Survey: ask at least 12 people their favourite colour, record with tallies and draw a bar graph with a scale of 2.",
+      "id": "Survei: tanyakan warna kesukaan sedikitnya 12 orang, catat dengan turus dan gambar diagram batang dengan skala 2."
+    },
+    {
+      "en": "Swap graphs with someone at home: each writes three questions for the other's graph and checks the answers.",
+      "id": "Tukar diagram dengan anggota keluarga: masing-masing menulis tiga pertanyaan untuk diagram lainnya dan memeriksa jawabannya."
+    },
+    {
+      "en": "Fix it: the adult draws a graph with uneven gaps on the axis (0, 2, 4, 8, 10). The child finds the mistake and redraws it.",
+      "id": "Perbaiki: orang dewasa menggambar diagram dengan jarak sumbu tidak teratur (0, 2, 4, 8, 10). Anak menemukan kesalahannya dan menggambar ulang."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A bar graph's side axis counts in 2s. The bar for 'football' ends halfway between the 6 line and the 8 line. How many children chose football?",
+        "id": "Sumbu samping sebuah diagram batang naik per 2. Batang 'sepak bola' berakhir di tengah antara garis 6 dan garis 8. Berapa anak yang memilih sepak bola?"
+      },
+      "choices": {
+        "en": [
+          "7",
+          "6",
+          "8"
+        ],
+        "id": [
+          "7",
+          "6",
+          "8"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The number halfway between 6 and 8 is 7.",
+        "id": "Bilangan di tengah antara 6 dan 8 adalah 7."
+      },
+      "check": {
+        "expression": "(6 + 8) / 2",
+        "result": "7"
+      },
+      "distractorMisconceptions": {
+        "1": "ROUNDS_TO_GRID_LINE",
+        "2": "ROUNDS_TO_GRID_LINE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A bar graph of books read in a month shows Aya 14, Bima 9, Citra 16 and Dodi 9. How many more books did Citra read than Bima?",
+        "id": "Diagram batang buku yang dibaca dalam sebulan menunjukkan Aya 14, Bima 9, Citra 16, dan Dodi 9. Citra membaca berapa buku lebih banyak daripada Bima?"
+      },
+      "choices": {
+        "en": [
+          "7",
+          "25",
+          "16"
+        ],
+        "id": [
+          "7",
+          "25",
+          "16"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "16 - 9 = 7 more books.",
+        "id": "16 - 9 = 7 buku lebih banyak."
+      },
+      "check": {
+        "expression": "16 - 9",
+        "result": "7"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "READS_ONE_BAR"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "In the same graph (Aya 14, Bima 9, Citra 16, Dodi 9), how many books did the four children read altogether?",
+        "id": "Pada diagram yang sama (Aya 14, Bima 9, Citra 16, Dodi 9), berapa semua buku yang dibaca keempat anak itu?"
+      },
+      "choices": {
+        "en": [
+          "48",
+          "4",
+          "39"
+        ],
+        "id": [
+          "48",
+          "4",
+          "39"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "14 + 9 + 16 + 9 = 48.",
+        "id": "14 + 9 + 16 + 9 = 48."
+      },
+      "check": {
+        "expression": "14 + 9 + 16 + 9",
+        "result": "48"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_BARS",
+        "2": "MISSES_A_BAR"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "On a bar graph, each line on the side axis stands for 5 cars. The bar for Monday reaches the 3rd line. How many cars is that?",
+        "id": "Pada sebuah diagram batang, setiap garis di sumbu samping mewakili 5 mobil. Batang hari Senin mencapai garis ke-3. Berapa mobil itu?"
+      },
+      "choices": {
+        "en": [
+          "15",
+          "3",
+          "8"
+        ],
+        "id": [
+          "15",
+          "3",
+          "8"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "3 lines of 5: 5, 10, 15. 3 × 5 = 15 cars.",
+        "id": "3 garis masing-masing 5: 5, 10, 15. 3 × 5 = 15 mobil."
+      },
+      "check": {
+        "expression": "3 * 5",
+        "result": "15"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_LINES_NOT_SCALE",
+        "2": "ADDS_SCALE"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "In a bar graph of fruit sold, the mango bar is twice as long as the salak bar. 8 salak were sold. How many mangoes were sold?",
+        "id": "Pada diagram batang buah yang terjual, batang mangga dua kali panjang batang salak. Salak terjual 8. Berapa mangga yang terjual?"
+      },
+      "choices": {
+        "en": [
+          "16",
+          "10",
+          "4"
+        ],
+        "id": [
+          "16",
+          "10",
+          "4"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Twice as long means double: 8 × 2 = 16.",
+        "id": "Dua kali panjang berarti dua kalinya: 8 × 2 = 16."
+      },
+      "check": {
+        "expression": "8 * 2",
+        "result": "16"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD_OF_DOUBLING",
+        "2": "HALVES_INSTEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ROUNDS_TO_GRID_LINE",
+      "description": {
+        "en": "Reads a bar between two lines as the line just below or just above it.",
+        "id": "Membaca batang di antara dua garis sebagai garis tepat di bawah atau di atasnya."
+      },
+      "remediation": {
+        "en": "Write the missing odd numbers in small print between the lines of the scale, then read again.",
+        "id": "Tulis bilangan ganjil yang tidak tertulis dengan huruf kecil di antara garis skala, lalu baca lagi."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds two bars when asked how many more.",
+        "id": "Menjumlahkan dua batang saat ditanya berapa lebih banyak."
+      },
+      "remediation": {
+        "en": "Hold a ruler across the top of the shorter bar and look at the part of the longer bar that sticks out above it.",
+        "id": "Pegang penggaris mendatar di ujung batang yang lebih pendek dan lihat bagian batang yang lebih panjang yang menonjol di atasnya."
+      }
+    },
+    {
+      "code": "READS_ONE_BAR",
+      "description": {
+        "en": "Gives the value of one bar instead of the difference.",
+        "id": "Menyebut nilai satu batang, bukan selisihnya."
+      },
+      "remediation": {
+        "en": "Build both bars with blocks, remove matching blocks in pairs, and count what is left.",
+        "id": "Susun kedua batang dengan balok, ambil balok berpasangan, dan hitung sisanya."
+      }
+    },
+    {
+      "code": "COUNTS_BARS",
+      "description": {
+        "en": "Counts how many bars there are instead of adding their values.",
+        "id": "Menghitung banyak batang, bukan menjumlahkan nilainya."
+      },
+      "remediation": {
+        "en": "Write each bar's value on a sticky note at its top, then add the notes.",
+        "id": "Tulis nilai setiap batang di kertas tempel di ujungnya, lalu jumlahkan kertas itu."
+      }
+    },
+    {
+      "code": "MISSES_A_BAR",
+      "description": {
+        "en": "Leaves out one bar when finding the total, often one with a repeated value.",
+        "id": "Melewatkan satu batang saat mencari jumlah, sering yang nilainya sama dengan batang lain."
+      },
+      "remediation": {
+        "en": "Tick each label on the bottom axis as it is added.",
+        "id": "Centang setiap label di sumbu bawah saat dijumlahkan."
+      }
+    },
+    {
+      "code": "COUNTS_LINES_NOT_SCALE",
+      "description": {
+        "en": "Counts grid lines as ones and ignores what each line stands for.",
+        "id": "Menghitung garis sebagai satuan dan mengabaikan nilai setiap garis."
+      },
+      "remediation": {
+        "en": "Write the scale value next to every line before reading: 5, 10, 15.",
+        "id": "Tulis nilai skala di samping setiap garis sebelum membaca: 5, 10, 15."
+      }
+    },
+    {
+      "code": "ADDS_SCALE",
+      "description": {
+        "en": "Adds the scale to the number of lines instead of multiplying.",
+        "id": "Menjumlahkan skala dengan banyak garis, bukan mengalikan."
+      },
+      "remediation": {
+        "en": "Skip-count in fives aloud, touching one line per count.",
+        "id": "Bilang loncat lima dengan suara sambil menyentuh satu garis untuk setiap hitungan."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD_OF_DOUBLING",
+      "description": {
+        "en": "Reads 'twice as long' as 'two more'.",
+        "id": "Membaca 'dua kali panjang' sebagai 'dua lebih banyak'."
+      },
+      "remediation": {
+        "en": "Cut a paper strip as long as the salak bar and lay it down twice to make the mango bar.",
+        "id": "Potong pita kertas sepanjang batang salak dan bentangkan dua kali untuk membuat batang mangga."
+      }
+    },
+    {
+      "code": "HALVES_INSTEAD",
+      "description": {
+        "en": "Halves the known bar instead of doubling it.",
+        "id": "Membagi dua batang yang diketahui, bukan menggandakannya."
+      },
+      "remediation": {
+        "en": "Ask which bar is longer before calculating: the answer must be bigger than 8.",
+        "id": "Tanyakan batang mana yang lebih panjang sebelum menghitung: jawabannya harus lebih dari 8."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Draw the same data twice, once with a scale of 1 and once with a scale of 5. Which is easier to read and why?",
+      "id": "Gambar data yang sama dua kali, sekali dengan skala 1 dan sekali dengan skala 5. Mana yang lebih mudah dibaca dan mengapa?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Make tactile bars with stacked blocks or glued strips of card so the child can compare heights by touch.",
+      "id": "Buat batang yang bisa diraba dari balok bertumpuk atau potongan kertas tebal yang ditempel, agar anak bisa membandingkan tinggi dengan meraba."
+    },
+    {
+      "en": "Use thick, bold grid lines and a different colour for every bar.",
+      "id": "Pakai garis tebal dan warna berbeda untuk setiap batang."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "No special hazards; keep blocks off the floor where people walk.",
+        "id": "Tidak ada bahaya khusus; jangan biarkan balok berserakan di lantai tempat orang berjalan."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child reads bars on scales of 2 and 5 (including halfway values) and draws a correct bar graph from tallies, on two different days.",
+      "id": "Dikuasai jika anak membaca batang pada skala 2 dan 5 (termasuk nilai di tengah) dan menggambar diagram batang yang benar dari turus, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}

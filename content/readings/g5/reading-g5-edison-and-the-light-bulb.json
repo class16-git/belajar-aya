@@ -1,0 +1,314 @@
+{
+  "id": "reading-g5-edison-and-the-light-bulb",
+  "version": "1.0.0",
+  "level": "g5",
+  "readingLevel": "fluent",
+  "genre": "biography",
+  "mode": "independent",
+  "title": {
+    "en": "Thomas Edison and the long-lasting light bulb",
+    "id": "Thomas Edison dan bola lampu yang tahan lama"
+  },
+  "text": {
+    "en": [
+      "When you flick a switch and a lamp comes on, you are using an idea that many inventors worked on. One of the best known is Thomas Alva Edison, an American inventor who lived from 1847 to 1931.",
+      "Edison was born in Milan, Ohio, in the United States. He went to school for only a short time, and his mother taught him at home. He loved reading and doing experiments. As a teenager he sold newspapers and snacks on trains, and later he worked as a telegraph operator, sending messages along electric wires.",
+      "In 1876 Edison set up a laboratory at Menlo Park, New Jersey. It was a new kind of workplace: a team of skilled workers whose whole job was to invent. There, in 1877, Edison's team made the phonograph, a machine that could record sound and play it back.",
+      "Electric lights already existed, but they were too bright, too costly or burned out too quickly to use at home. Inventors in several countries, including Joseph Swan in England, were working on the problem at the same time. Inside a light bulb, electricity flows through a thin thread called a filament, which glows. The hard part was finding a filament that did not burn up.",
+      "Edison's team tested a great many materials, one after another. In 1879 they made a bulb with a carbon filament inside a glass bulb with almost all the air pumped out, so the filament could not burn. It glowed for many hours. Later, filaments made from carbonised bamboo lasted even longer.",
+      "A bulb is no use without electricity to power it. So Edison's company also built a whole system: power stations, underground wires and meters. In 1882 its Pearl Street power station in New York City began sending electricity to homes and offices.",
+      "By the end of his life, Edison held more than 1,000 patents in the United States. His story shows that big inventions are rarely the work of one person alone. They grow from earlier ideas, teamwork and a great deal of patient testing."
+    ],
+    "id": [
+      "Saat kamu menekan saklar dan lampu menyala, kamu memakai gagasan yang dikerjakan banyak penemu. Salah satu yang paling terkenal adalah Thomas Alva Edison, penemu asal Amerika yang hidup dari tahun 1847 sampai 1931.",
+      "Edison lahir di Milan, Ohio, Amerika Serikat. Ia hanya sebentar bersekolah, dan ibunya mengajarinya di rumah. Ia suka membaca dan melakukan percobaan. Saat remaja ia berjualan koran dan makanan ringan di kereta, dan kemudian ia bekerja sebagai operator telegraf, mengirim pesan lewat kabel listrik.",
+      "Pada tahun 1876 Edison mendirikan laboratorium di Menlo Park, New Jersey. Itu jenis tempat kerja yang baru: sekelompok pekerja terampil yang tugasnya khusus menemukan hal baru. Di sana, pada tahun 1877, tim Edison membuat fonograf, mesin yang bisa merekam suara dan memutarnya kembali.",
+      "Lampu listrik sebenarnya sudah ada, tetapi terlalu terang, terlalu mahal, atau cepat putus sehingga tidak cocok untuk rumah. Para penemu di beberapa negara, termasuk Joseph Swan di Inggris, mengerjakan masalah yang sama pada waktu yang sama. Di dalam bola lampu, listrik mengalir melalui benang tipis yang disebut filamen, yang berpijar. Bagian tersulit adalah menemukan filamen yang tidak cepat terbakar.",
+      "Tim Edison menguji sangat banyak bahan, satu demi satu. Pada tahun 1879 mereka membuat bola lampu dengan filamen karbon di dalam bola kaca yang udaranya hampir seluruhnya dipompa keluar, sehingga filamen tidak bisa terbakar. Lampu itu menyala selama berjam-jam. Kemudian, filamen dari bambu yang dijadikan arang bertahan lebih lama lagi.",
+      "Bola lampu tidak berguna tanpa listrik untuk menyalakannya. Jadi perusahaan Edison juga membangun satu sistem lengkap: pembangkit listrik, kabel bawah tanah, dan meteran. Pada tahun 1882 pembangkit listrik Pearl Street milik perusahaannya di New York mulai mengalirkan listrik ke rumah dan kantor.",
+      "Sampai akhir hidupnya, Edison memegang lebih dari 1.000 paten di Amerika Serikat. Kisahnya menunjukkan bahwa penemuan besar jarang merupakan hasil kerja satu orang saja. Penemuan tumbuh dari gagasan sebelumnya, kerja sama tim, dan pengujian yang sabar dan panjang."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a biography and distinguishes what one person did from what a team or other inventors did.",
+      "id": "Membaca biografi dan membedakan apa yang dilakukan satu orang dari apa yang dilakukan tim atau penemu lain."
+    },
+    {
+      "en": "Explains the problem an invention solved and how testing led to the solution.",
+      "id": "Menjelaskan masalah yang diselesaikan sebuah penemuan dan bagaimana pengujian menghasilkan pemecahannya."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "filament",
+        "id": "filamen"
+      },
+      "meaning": {
+        "en": "the thin thread inside a bulb that glows when electricity flows through it",
+        "id": "benang tipis di dalam bola lampu yang berpijar saat dialiri listrik"
+      }
+    },
+    {
+      "word": {
+        "en": "patent",
+        "id": "paten"
+      },
+      "meaning": {
+        "en": "an official record that says an invention belongs to the person who made it",
+        "id": "catatan resmi yang menyatakan sebuah penemuan milik orang yang membuatnya"
+      }
+    },
+    {
+      "word": {
+        "en": "laboratory",
+        "id": "laboratorium"
+      },
+      "meaning": {
+        "en": "a room or building for experiments",
+        "id": "ruangan atau gedung untuk percobaan"
+      }
+    },
+    {
+      "word": {
+        "en": "phonograph",
+        "id": "fonograf"
+      },
+      "meaning": {
+        "en": "an early machine that recorded and played back sound",
+        "id": "mesin awal yang merekam dan memutar kembali suara"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "math",
+      "prompt": {
+        "en": "How old was Edison in 1879, when his team made the long-lasting bulb? (Assume his birthday had passed.)",
+        "id": "Berapa umur Edison pada tahun 1879, saat timnya membuat bola lampu yang tahan lama? (Anggap hari ulang tahunnya sudah lewat.)"
+      },
+      "choices": {
+        "en": [
+          "32 years old",
+          "28 years old",
+          "52 years old"
+        ],
+        "id": [
+          "32 tahun",
+          "28 tahun",
+          "52 tahun"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4,
+      "check": {
+        "expression": "1879 - 1847",
+        "result": "32"
+      }
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why did the filament not burn up in Edison's 1879 bulb?",
+        "id": "Mengapa filamen dalam bola lampu Edison tahun 1879 tidak terbakar?"
+      },
+      "choices": {
+        "en": [
+          "almost all the air had been pumped out of the bulb",
+          "the bulb was filled with water",
+          "the filament was made of glass"
+        ],
+        "id": [
+          "udara di dalam bola lampu hampir seluruhnya sudah dipompa keluar",
+          "bola lampu diisi air",
+          "filamennya terbuat dari kaca"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why was building power stations and wires important for the light bulb's success?",
+        "id": "Mengapa membangun pembangkit listrik dan kabel penting bagi keberhasilan bola lampu?"
+      },
+      "choices": {
+        "en": [
+          "homes needed a supply of electricity before they could use the bulbs",
+          "power stations made the bulbs brighter in the shop",
+          "wires were needed to make the glass"
+        ],
+        "id": [
+          "rumah perlu pasokan listrik dulu sebelum bisa memakai bola lampu",
+          "pembangkit listrik membuat bola lampu lebih terang di toko",
+          "kabel diperlukan untuk membuat kaca"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q4",
+      "kind": "critical",
+      "prompt": {
+        "en": "Which statement is most accurate according to the text?",
+        "id": "Pernyataan mana yang paling tepat menurut teks?"
+      },
+      "choices": {
+        "en": [
+          "Edison's team made a practical long-lasting bulb, building on work by many other inventors.",
+          "Edison alone invented the very first electric light.",
+          "Nobody else was working on electric light at the time."
+        ],
+        "id": [
+          "Tim Edison membuat bola lampu tahan lama yang praktis, dengan meneruskan karya banyak penemu lain.",
+          "Edison seorang diri menemukan lampu listrik yang pertama kali.",
+          "Tidak ada orang lain yang mengerjakan lampu listrik pada masa itu."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q5",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "In paragraph 3, the Menlo Park laboratory is called \"a new kind of workplace\". What made it new?",
+        "id": "Pada paragraf 3, laboratorium Menlo Park disebut \"jenis tempat kerja yang baru\". Apa yang membuatnya baru?"
+      },
+      "choices": {
+        "en": [
+          "a team of workers was employed just to invent things",
+          "it was the first building with windows",
+          "it was built under the ground"
+        ],
+        "id": [
+          "sekelompok pekerja dipekerjakan khusus untuk menemukan hal baru",
+          "itu gedung pertama yang berjendela",
+          "gedung itu dibangun di bawah tanah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q6",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is the main message of the last paragraph?",
+        "id": "Apa pesan utama paragraf terakhir?"
+      },
+      "choices": {
+        "en": [
+          "Big inventions grow from earlier ideas, teamwork and patient testing.",
+          "Patents are more important than inventions.",
+          "Edison never made a mistake."
+        ],
+        "id": [
+          "Penemuan besar tumbuh dari gagasan sebelumnya, kerja sama tim, dan pengujian yang sabar.",
+          "Paten lebih penting daripada penemuan.",
+          "Edison tidak pernah berbuat salah."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "An invention often needs a whole system around it, as the bulb needed power stations and wires.",
+        "id": "Sebuah penemuan sering memerlukan sistem lengkap di sekitarnya, seperti bola lampu memerlukan pembangkit listrik dan kabel."
+      }
+    },
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "A filament glows when electric current heats it; without oxygen it cannot burn.",
+        "id": "Filamen berpijar saat dipanaskan arus listrik; tanpa oksigen filamen tidak bisa terbakar."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Many people believe Edison invented the first electric light. Why do you think that story is so popular, even though it is not quite right?",
+      "id": "Banyak orang percaya Edison menemukan lampu listrik pertama. Menurutmu mengapa cerita itu begitu populer, padahal kurang tepat?"
+    },
+    {
+      "en": "Which of Edison's habits could help you with your own projects?",
+      "id": "Kebiasaan Edison mana yang bisa membantu proyekmu sendiri?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make an \"invention timeline\" for an everyday object in your home, such as a lamp, a fan or a rice cooker. Ask a grown-up what they used before it, look at what it is made of, and draw three stages: before, the first version you can imagine, and today. Add one sentence about who might have helped improve it. Do not open or take apart anything that plugs into the wall.",
+    "id": "Buat \"garis waktu penemuan\" untuk satu benda sehari-hari di rumahmu, misalnya lampu, kipas angin, atau penanak nasi. Tanyakan kepada orang dewasa apa yang mereka pakai sebelum ada benda itu, perhatikan bahan pembuatnya, lalu gambar tiga tahap: sebelumnya, versi pertama yang bisa kamu bayangkan, dan sekarang. Tambahkan satu kalimat tentang siapa yang mungkin ikut menyempurnakannya. Jangan membuka atau membongkar benda apa pun yang dicolokkan ke listrik."
+  },
+  "factChecks": [
+    {
+      "claim": "Thomas Edison was born in 1847 in Milan, Ohio, and died in 1931.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Edison had little formal schooling and was largely taught at home by his mother.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "He sold newspapers on trains as a teenager and worked as a telegraph operator.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Edison set up the Menlo Park laboratory in 1876 and his team developed the phonograph in 1877.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "In 1879 Edison's team produced a long-lasting carbon-filament bulb in a vacuum; later bulbs used carbonised bamboo filaments.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Joseph Swan in England developed an incandescent bulb at about the same time.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The Pearl Street Station in New York began supplying electricity in 1882.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Edison held more than 1,000 US patents.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Never open, take apart or poke anything that plugs into mains electricity; look and draw only.",
+      "id": "Jangan pernah membuka, membongkar, atau menusuk benda apa pun yang tersambung ke listrik rumah; cukup amati dan gambar."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [
+    "historical_facts"
+  ],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

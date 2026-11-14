@@ -1,0 +1,484 @@
+{
+  "id": "unit-g2-math-length-cm-and-m",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "math",
+  "strand": "measurement",
+  "title": {
+    "en": "Measuring length in centimetres and metres",
+    "id": "Mengukur panjang dalam sentimeter dan meter"
+  },
+  "prerequisites": [
+    "unit-g1-math-length-non-standard-units"
+  ],
+  "objective": {
+    "en": "Measure and draw lengths in centimetres with a ruler starting at 0, measure longer lengths in metres, choose the sensible unit, use 1 m = 100 cm to compare and convert, and add and subtract lengths in word problems.",
+    "id": "Mengukur dan menggambar panjang dalam sentimeter dengan penggaris yang dimulai dari 0, mengukur panjang yang lebih jauh dalam meter, memilih satuan yang masuk akal, memakai 1 m = 100 cm untuk membandingkan dan mengubah satuan, serta menjumlahkan dan mengurangkan panjang dalam soal cerita."
+  },
+  "rationale": {
+    "en": "Non-standard units showed that we need equal units with no gaps. Standard units let everyone get the same answer. The most common errors are starting at the 1 mark or the end of the ruler and comparing numbers without looking at units, so both are practised directly.",
+    "id": "Satuan tidak baku menunjukkan bahwa kita perlu satuan yang sama tanpa celah. Satuan baku membuat semua orang mendapat jawaban yang sama. Kesalahan paling umum adalah mulai dari angka 1 atau ujung penggaris dan membandingkan angka tanpa melihat satuannya, jadi keduanya dilatih langsung."
+  },
+  "outcomes": [
+    {
+      "en": "Measures objects to the nearest centimetre, starting at 0.",
+      "id": "Mengukur benda sampai sentimeter terdekat, dimulai dari 0."
+    },
+    {
+      "en": "Estimates and measures lengths in metres with a metre stick or tape.",
+      "id": "Memperkirakan dan mengukur panjang dalam meter dengan tongkat meter atau meteran."
+    },
+    {
+      "en": "Converts metres and centimetres and solves length word problems.",
+      "id": "Mengubah meter dan sentimeter dan menyelesaikan soal cerita panjang."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can line up the 0 on my ruler with the end of the pencil.",
+      "id": "Aku bisa menempatkan angka 0 penggaris tepat di ujung pensil."
+    },
+    {
+      "en": "I can explain why 2 m is longer than 150 cm.",
+      "id": "Aku bisa menjelaskan mengapa 2 m lebih panjang dari 150 cm."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Show your child where 0 is on the ruler: on many rulers it is a little way in from the end.",
+      "id": "Tunjukkan letak 0 pada penggaris: di banyak penggaris letaknya sedikit masuk dari ujung."
+    },
+    {
+      "en": "Make a metre strip from paper and a ruler (ten 10 cm sections) so the child sees 100 cm in one metre.",
+      "id": "Buat pita satu meter dari kertas dengan bantuan penggaris (sepuluh bagian 10 cm) agar anak melihat 100 cm dalam satu meter."
+    },
+    {
+      "en": "Always ask the child to estimate first, then measure, and say the unit with every number.",
+      "id": "Selalu minta anak memperkirakan dulu, lalu mengukur, dan menyebut satuan di setiap bilangan."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Put the 0 at one end. Read the number at the other end. Say 'centimetres'.",
+      "id": "Taruh angka 0 di satu ujung. Baca angka di ujung lainnya. Ucapkan 'sentimeter'."
+    },
+    {
+      "en": "Guess first, then measure. How close was your guess?",
+      "id": "Tebak dulu, lalu ukur. Seberapa dekat tebakanmu?"
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Measure a crayon, a spoon and a book with a 30 cm ruler, starting at 0 each time.",
+        "id": "Ukur krayon, sendok, dan buku dengan penggaris 30 cm, selalu dimulai dari 0."
+      },
+      {
+        "en": "Lay the metre strip along the bed, the door and the table and say whether each is more or less than 1 m.",
+        "id": "Bentangkan pita satu meter di sepanjang tempat tidur, pintu, dan meja, lalu sebutkan apakah masing-masing lebih atau kurang dari 1 m."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw lines of given lengths with a ruler (6 cm, 13 cm) and a number line from 0 to 100 cm showing 1 m.",
+        "id": "Gambar garis dengan panjang tertentu memakai penggaris (6 cm, 13 cm) dan garis bilangan dari 0 sampai 100 cm yang menunjukkan 1 m."
+      },
+      {
+        "en": "Draw a bar model for two lengths joined end to end and label each part with its unit.",
+        "id": "Gambar model batang untuk dua panjang yang disambung dan beri satuan di setiap bagian."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write conversions: 1 m = 100 cm, 3 m = 300 cm, 1 m 40 cm = 140 cm.",
+        "id": "Tulis pengubahan: 1 m = 100 cm, 3 m = 300 cm, 1 m 40 cm = 140 cm."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A 30 cm ruler and a tape measure",
+      "id": "Penggaris 30 cm dan meteran"
+    },
+    {
+      "en": "A long strip of paper or a piece of string about 1 m long",
+      "id": "Pita kertas panjang atau seutas tali sekitar 1 m"
+    },
+    {
+      "en": "Household objects to measure: crayons, spoons, books, a towel",
+      "id": "Benda rumah untuk diukur: krayon, sendok, buku, handuk"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Make the metre strip with the child: tape paper strips together, mark every 10 cm with the ruler up to 100 cm.",
+      "id": "Buat pita satu meter bersama anak: sambung potongan kertas, tandai setiap 10 cm dengan penggaris sampai 100 cm."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Starting at 0: a crayon from the 0 mark to the 9 mark is 9 cm. If we start at the 1 mark, the crayon ends at 10, but it is still 9 cm: count the spaces, not the marks.",
+      "id": "Mulai dari 0: krayon dari tanda 0 sampai tanda 9 panjangnya 9 cm. Jika kita mulai dari tanda 1, krayon berakhir di 10, tetapi tetap 9 cm: hitung jaraknya, bukan tandanya."
+    },
+    {
+      "en": "Choosing a unit: a door is measured in metres (about 2 m); an eraser is measured in centimetres (about 4 cm).",
+      "id": "Memilih satuan: pintu diukur dalam meter (sekitar 2 m); penghapus diukur dalam sentimeter (sekitar 4 cm)."
+    },
+    {
+      "en": "Converting: a towel is 1 m 30 cm long. 1 m is 100 cm, so the towel is 100 + 30 = 130 cm.",
+      "id": "Mengubah satuan: handuk panjangnya 1 m 30 cm. 1 m adalah 100 cm, jadi handuk panjangnya 100 + 30 = 130 cm."
+    },
+    {
+      "en": "Word problem: a ribbon of 64 cm has 25 cm cut off. Bar model: whole 64 cm, part 25 cm, so 64 - 25 = 39 cm is left.",
+      "id": "Soal cerita: pita sepanjang 64 cm dipotong 25 cm. Model batang: keseluruhan 64 cm, bagian 25 cm, jadi sisanya 64 - 25 = 39 cm."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Estimate then measure five objects in centimetres; record estimate, measurement and the difference.",
+      "id": "Perkirakan lalu ukur lima benda dalam sentimeter; catat perkiraan, hasil ukur, dan selisihnya."
+    },
+    {
+      "en": "Measure the length of a room in metres with the metre strip, then with a tape measure, and compare.",
+      "id": "Ukur panjang ruangan dalam meter dengan pita satu meter, lalu dengan meteran, dan bandingkan."
+    },
+    {
+      "en": "Draw a 15 cm line, then a line 8 cm longer, and write how long the second line is.",
+      "id": "Gambar garis 15 cm, lalu garis yang 8 cm lebih panjang, dan tulis berapa panjang garis kedua."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A key lies along a ruler. One end is at the 3 cm mark and the other end is at the 11 cm mark. How long is the key?",
+        "id": "Sebuah kunci diletakkan di sepanjang penggaris. Satu ujungnya di tanda 3 cm dan ujung lainnya di tanda 11 cm. Berapa panjang kunci itu?"
+      },
+      "choices": {
+        "en": [
+          "8 cm",
+          "11 cm",
+          "14 cm"
+        ],
+        "id": [
+          "8 cm",
+          "11 cm",
+          "14 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count the spaces from 3 to 11: 11 - 3 = 8 cm. The key does not start at 0.",
+        "id": "Hitung jarak dari 3 sampai 11: 11 - 3 = 8 cm. Kunci itu tidak dimulai dari 0."
+      },
+      "check": {
+        "expression": "11 - 3",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "READS_END_MARK",
+        "2": "ADDS_MARKS"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Which unit would you use to measure the length of a classroom?",
+        "id": "Satuan apa yang akan kamu pakai untuk mengukur panjang ruang kelas?"
+      },
+      "choices": {
+        "en": [
+          "Metres",
+          "Centimetres",
+          "Kilograms"
+        ],
+        "id": [
+          "Meter",
+          "Sentimeter",
+          "Kilogram"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A classroom is many metres long, so metres is sensible. Centimetres would give a very big number; kilograms measure mass, not length.",
+        "id": "Ruang kelas panjangnya beberapa meter, jadi meter yang masuk akal. Sentimeter akan menghasilkan bilangan yang sangat besar; kilogram mengukur massa, bukan panjang."
+      },
+      "distractorMisconceptions": {
+        "1": "UNIT_SIZE_CONFUSION",
+        "2": "MEASURE_TYPE_CONFUSION"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A curtain is 1 m 25 cm long. How many centimetres is that?",
+        "id": "Sebuah gorden panjangnya 1 m 25 cm. Berapa sentimeter panjangnya?"
+      },
+      "choices": {
+        "en": [
+          "125 cm",
+          "26 cm",
+          "1,025 cm"
+        ],
+        "id": [
+          "125 cm",
+          "26 cm",
+          "1.025 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "1 m = 100 cm, so 1 m 25 cm = 100 + 25 = 125 cm.",
+        "id": "1 m = 100 cm, jadi 1 m 25 cm = 100 + 25 = 125 cm."
+      },
+      "check": {
+        "expression": "100 + 25",
+        "result": "125"
+      },
+      "distractorMisconceptions": {
+        "1": "METRE_AS_ONE_CM",
+        "2": "METRE_AS_1000_CM"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A table is 2 m long. A mat is 150 cm long. How much longer is the table?",
+        "id": "Panjang sebuah meja 2 m. Panjang sebuah tikar 150 cm. Meja itu lebih panjang berapa?"
+      },
+      "choices": {
+        "en": [
+          "50 cm",
+          "148 cm",
+          "152 cm"
+        ],
+        "id": [
+          "50 cm",
+          "148 cm",
+          "152 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2 m = 200 cm. 200 - 150 = 50 cm, so the table is 50 cm longer.",
+        "id": "2 m = 200 cm. 200 - 150 = 50 cm, jadi meja 50 cm lebih panjang."
+      },
+      "check": {
+        "expression": "2 * 100 - 150",
+        "result": "50"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_UNITS",
+        "2": "IGNORES_UNITS"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Bayu lays a 46 cm stick and a 37 cm stick end to end. How long are they together?",
+        "id": "Bayu menyambung tongkat 46 cm dan tongkat 37 cm. Berapa panjang keduanya bersama-sama?"
+      },
+      "choices": {
+        "en": [
+          "83 cm",
+          "73 cm",
+          "9 cm"
+        ],
+        "id": [
+          "83 cm",
+          "73 cm",
+          "9 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "46 + 37: ones 6 + 7 = 13, regroup 1 ten. Tens 4 + 3 + 1 = 8. Total 83 cm.",
+        "id": "46 + 37: satuan 6 + 7 = 13, simpan 1 puluhan. Puluhan 4 + 3 + 1 = 8. Jumlahnya 83 cm."
+      },
+      "check": {
+        "expression": "46 + 37",
+        "result": "83"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_REGROUPED_TEN",
+        "2": "SUBTRACTS_INSTEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "READS_END_MARK",
+      "description": {
+        "en": "Reads the number at the far end even when the object does not start at 0.",
+        "id": "Membaca angka di ujung walaupun benda tidak dimulai dari 0."
+      },
+      "remediation": {
+        "en": "Slide the object back to 0 and measure again, then compare; or count the centimetre spaces with a finger.",
+        "id": "Geser benda kembali ke 0 dan ukur lagi, lalu bandingkan; atau hitung jarak sentimeter dengan jari."
+      }
+    },
+    {
+      "code": "ADDS_MARKS",
+      "description": {
+        "en": "Adds the start and end marks.",
+        "id": "Menjumlahkan tanda awal dan tanda akhir."
+      },
+      "remediation": {
+        "en": "Draw the object on a number line and hop from the start mark to the end mark, counting hops.",
+        "id": "Gambar benda di garis bilangan dan lompat dari tanda awal ke tanda akhir sambil menghitung lompatan."
+      }
+    },
+    {
+      "code": "UNIT_SIZE_CONFUSION",
+      "description": {
+        "en": "Chooses a unit that is far too small or too large for the object.",
+        "id": "Memilih satuan yang terlalu kecil atau terlalu besar untuk bendanya."
+      },
+      "remediation": {
+        "en": "Measure the room with the 30 cm ruler and then with the metre strip: count how many times each is laid down.",
+        "id": "Ukur ruangan dengan penggaris 30 cm lalu dengan pita satu meter: hitung berapa kali masing-masing dibentangkan."
+      }
+    },
+    {
+      "code": "MEASURE_TYPE_CONFUSION",
+      "description": {
+        "en": "Confuses units of length with units of mass.",
+        "id": "Tertukar antara satuan panjang dan satuan massa."
+      },
+      "remediation": {
+        "en": "Sort cards: 'how long?' with cm and m, 'how heavy?' with g and kg, using a ruler and a kitchen scale as labels.",
+        "id": "Memilah kartu: 'berapa panjang?' dengan cm dan m, 'berapa berat?' dengan g dan kg, memakai penggaris dan timbangan dapur sebagai label."
+      }
+    },
+    {
+      "code": "METRE_AS_ONE_CM",
+      "description": {
+        "en": "Treats 1 m as if it were 1 cm and adds it to the centimetres.",
+        "id": "Menganggap 1 m seperti 1 cm lalu menambahkannya ke sentimeter."
+      },
+      "remediation": {
+        "en": "Lay the metre strip next to the ruler: one metre covers more than three rulers, 100 cm.",
+        "id": "Bentangkan pita satu meter di samping penggaris: satu meter lebih panjang dari tiga penggaris, yaitu 100 cm."
+      }
+    },
+    {
+      "code": "METRE_AS_1000_CM",
+      "description": {
+        "en": "Thinks 1 m is 1,000 cm (mixing it up with 1 kg = 1,000 g).",
+        "id": "Mengira 1 m adalah 1.000 cm (tertukar dengan 1 kg = 1.000 g)."
+      },
+      "remediation": {
+        "en": "Count the 10 cm sections on the metre strip: ten tens make 100, not 1,000.",
+        "id": "Hitung bagian 10 cm di pita satu meter: sepuluh puluhan menjadi 100, bukan 1.000."
+      }
+    },
+    {
+      "code": "IGNORES_UNITS",
+      "description": {
+        "en": "Compares or subtracts the numbers without changing them to the same unit.",
+        "id": "Membandingkan atau mengurangkan bilangan tanpa mengubahnya ke satuan yang sama."
+      },
+      "remediation": {
+        "en": "Lay out 2 metre strips and the 150 cm length next to each other and see the difference.",
+        "id": "Bentangkan 2 pita satu meter dan panjang 150 cm berdampingan lalu lihat selisihnya."
+      }
+    },
+    {
+      "code": "FORGETS_REGROUPED_TEN",
+      "description": {
+        "en": "Forgets to add the regrouped ten when ones add up to more than 9.",
+        "id": "Lupa menambahkan puluhan yang disimpan saat jumlah satuan lebih dari 9."
+      },
+      "remediation": {
+        "en": "Build both numbers with bundles and loose sticks, make a new bundle from the loose ones, and count the tens again.",
+        "id": "Susun kedua bilangan dengan ikatan dan lidi lepas, buat ikatan baru dari lidi lepas, lalu hitung ulang puluhannya."
+      }
+    },
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Finds the difference when the lengths are joined.",
+        "id": "Mencari selisih padahal panjangnya disambung."
+      },
+      "remediation": {
+        "en": "Draw the two sticks end to end in one bar: joining makes one longer bar.",
+        "id": "Gambar kedua tongkat tersambung dalam satu batang: menyambung menghasilkan batang yang lebih panjang."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Measure each family member's height with the tape measure and record it as metres and centimetres and as centimetres only.",
+      "id": "Ukur tinggi badan setiap anggota keluarga dengan meteran dan catat dalam meter dan sentimeter, serta dalam sentimeter saja."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use a ruler with large, bold numbers, or stick a bright dot on the 0 mark.",
+      "id": "Pakai penggaris dengan angka besar dan tebal, atau tempel titik terang di tanda 0."
+    },
+    {
+      "en": "A child who finds holding the ruler hard can tape the object and ruler to the table.",
+      "id": "Anak yang sulit memegang penggaris bisa merekatkan benda dan penggaris ke meja."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "A metal tape measure snaps back quickly: let it roll back slowly and keep fingers away from the case opening.",
+        "id": "Meteran logam bisa menggulung kembali dengan cepat: gulung perlahan dan jauhkan jari dari lubang wadahnya."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child measures three objects accurately from 0, converts two m-and-cm lengths and solves a length word problem without help, on two different days.",
+      "id": "Dikuasai jika anak mengukur tiga benda dengan tepat dari 0, mengubah dua panjang dalam m dan cm, dan menyelesaikan satu soal cerita panjang tanpa bantuan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}

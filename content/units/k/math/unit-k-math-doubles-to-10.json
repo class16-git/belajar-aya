@@ -1,0 +1,447 @@
+{
+  "id": "unit-k-math-doubles-to-10",
+  "version": "1.0.0",
+  "level": "k",
+  "framework": "math",
+  "strand": "addition_subtraction",
+  "title": {
+    "en": "Doubles to 10",
+    "id": "Bilangan kembar (dobel) sampai 10"
+  },
+  "prerequisites": [
+    "unit-k-math-number-bonds-to-10"
+  ],
+  "objective": {
+    "en": "Recognise and make doubles from 1 + 1 to 5 + 5, say the double of a number up to 5, and split an even number up to 10 into two equal parts.",
+    "id": "Mengenali dan membuat penjumlahan kembar dari 1 + 1 sampai 5 + 5, menyebut dua kali (dobel) suatu bilangan sampai 5, dan membagi bilangan genap sampai 10 menjadi dua bagian yang sama."
+  },
+  "rationale": {
+    "en": "Doubles are the first addition facts most children remember without counting, and they are the anchor for later 'near doubles' and for halving. Mirror symmetry (two hands, butterfly wings) gives a strong picture of two equal parts.",
+    "id": "Penjumlahan kembar adalah fakta penjumlahan pertama yang biasanya diingat anak tanpa menghitung, dan menjadi dasar untuk 'hampir kembar' dan membagi dua di kemudian hari. Simetri cermin (dua tangan, sayap kupu-kupu) memberi gambaran kuat tentang dua bagian yang sama."
+  },
+  "outcomes": [
+    {
+      "en": "Shows a double with fingers or blocks and says the total.",
+      "id": "Menunjukkan penjumlahan kembar dengan jari atau balok dan menyebut jumlahnya."
+    },
+    {
+      "en": "Tells whether two parts make a double.",
+      "id": "Menentukan apakah dua bagian membentuk penjumlahan kembar."
+    },
+    {
+      "en": "Splits 2, 4, 6, 8 or 10 into two equal towers.",
+      "id": "Membagi 2, 4, 6, 8, atau 10 menjadi dua menara yang sama tinggi."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show double 5 with my two hands and say 10.",
+      "id": "Aku bisa menunjukkan dobel 5 dengan kedua tanganku dan menyebut 10."
+    },
+    {
+      "en": "I can make two towers that are the same height.",
+      "id": "Aku bisa membuat dua menara yang sama tinggi."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use the word 'double' and the sentence 'double 3 is 6' together with '3 + 3 = 6', so the child links them.",
+      "id": "Pakai kata 'dobel' bersama kalimat 'dobel 3 adalah 6' dan '3 + 3 = 6', supaya anak menghubungkan keduanya."
+    },
+    {
+      "en": "Start with the body (hands, feet, eyes), then blocks, then dot drawings, then the number sentence.",
+      "id": "Mulai dari tubuh (tangan, kaki, mata), lalu balok, lalu gambar titik, lalu kalimat bilangan."
+    },
+    {
+      "en": "When splitting, let the child share blocks one for you, one for me, then check the towers stand level.",
+      "id": "Saat membagi, biarkan anak membagi balok satu untukmu, satu untukku, lalu periksa apakah tingginya sama."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Make two groups that are the same. Count them all.",
+      "id": "Buat dua kelompok yang sama banyak. Hitung semuanya."
+    },
+    {
+      "en": "Share the blocks one by one into two towers. Are they the same height?",
+      "id": "Bagikan balok satu per satu ke dua menara. Apakah tingginya sama?"
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Hands: show 2 fingers on each hand, then 4 on each hand. Count all the fingers that are up each time.",
+        "id": "Tangan: angkat 2 jari di setiap tangan, lalu 4 jari di setiap tangan. Hitung semua jari yang terangkat setiap kali."
+      },
+      {
+        "en": "Blocks: build a tower of 3 and a matching tower of 3, stand them side by side, then join them and count.",
+        "id": "Balok: susun menara 3 dan menara kembarannya 3, berdirikan bersebelahan, lalu gabungkan dan hitung."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Butterfly print: fold a paper in half, paint 2 dots on one wing, press it closed and open it. Now there are 2 dots on each wing: double 2 is 4.",
+        "id": "Cetak kupu-kupu: lipat kertas menjadi dua, beri 2 titik cat di satu sayap, tekan, lalu buka. Sekarang ada 2 titik di setiap sayap: dobel 2 adalah 4."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the doubles ladder: 1 + 1 = 2, 2 + 2 = 4, 3 + 3 = 6, 4 + 4 = 8, 5 + 5 = 10. Notice every total is a jump of 2.",
+        "id": "Tulis tangga dobel: 1 + 1 = 2, 2 + 2 = 4, 3 + 3 = 6, 4 + 4 = 8, 5 + 5 = 10. Perhatikan setiap jumlah naik 2."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 10 large stacking blocks (or large toy bricks)",
+      "id": "Sekitar 10 balok susun berukuran besar (atau bata mainan besar)"
+    },
+    {
+      "en": "Paper, poster paint in a saucer and a paintbrush",
+      "id": "Kertas, cat poster di piring kecil, dan kuas"
+    },
+    {
+      "en": "A small hand mirror made of plastic (optional)",
+      "id": "Cermin kecil dari plastik (tidak wajib)"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Fold two sheets of paper in half for the butterfly prints and cover the table.",
+      "id": "Lipat dua lembar kertas menjadi dua untuk cetak kupu-kupu dan alasi meja."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Double 2 with the butterfly: 2 dots on one wing, 2 dots on the other wing, 4 dots in all. Say: 'Double 2 is 4. 2 + 2 = 4.'",
+      "id": "Dobel 2 dengan kupu-kupu: 2 titik di satu sayap, 2 titik di sayap lain, semuanya 4 titik. Ucapkan: 'Dobel 2 adalah 4. 2 + 2 = 4.'"
+    },
+    {
+      "en": "Double 5 with hands: hold up all fingers on both hands. Without counting one by one: 5 and 5 make 10.",
+      "id": "Dobel 5 dengan tangan: angkat semua jari di kedua tangan. Tanpa menghitung satu per satu: 5 dan 5 jadi 10."
+    },
+    {
+      "en": "Splitting 6: share 6 blocks one for each tower until none are left. Each tower has 3, so 6 is double 3.",
+      "id": "Membagi 6: bagikan 6 balok satu untuk setiap menara sampai habis. Setiap menara berisi 3, jadi 6 adalah dobel 3."
+    },
+    {
+      "en": "Not a double: towers of 4 and 3 are not the same height, so 4 + 3 is not a double.",
+      "id": "Bukan kembar: menara 4 dan 3 tidak sama tinggi, jadi 4 + 3 bukan penjumlahan kembar."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Doubles hunt around the house: eyes, ears, shoes in a pair, wheels on each side of a toy car. Say the double for each.",
+      "id": "Berburu dobel di rumah: mata, telinga, sepasang sepatu, roda di setiap sisi mobil mainan. Sebutkan dobelnya untuk masing-masing."
+    },
+    {
+      "en": "Mirror game: put 1 to 5 blocks in front of a plastic mirror and count the blocks you see in all.",
+      "id": "Permainan cermin: taruh 1 sampai 5 balok di depan cermin plastik dan hitung semua balok yang terlihat."
+    },
+    {
+      "en": "Quick show: the adult shows a number of fingers on one hand and the child shows the same on their hand; together say the double.",
+      "id": "Tunjuk cepat: orang dewasa menunjukkan sejumlah jari di satu tangan dan anak menunjukkan jumlah yang sama di tangannya; bersama-sama sebutkan dobelnya."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A domino has 4 dots on each half. How many dots are there in all?",
+        "id": "Sebuah kartu domino punya 4 titik di setiap sisinya. Berapa semua titiknya?"
+      },
+      "choices": {
+        "en": [
+          "8",
+          "4",
+          "44"
+        ],
+        "id": [
+          "8",
+          "4",
+          "44"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "4 and 4 is a double: double 4 is 8.",
+        "id": "4 dan 4 adalah penjumlahan kembar: dobel 4 adalah 8."
+      },
+      "check": {
+        "expression": "4 + 4",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_ONE_SIDE",
+        "2": "WRITES_DIGITS_TWICE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Each of 2 plates has 3 rambutan on it. How many rambutan are there altogether?",
+        "id": "Di setiap piring dari 2 piring ada 3 rambutan. Berapa semua rambutannya?"
+      },
+      "choices": {
+        "en": [
+          "6",
+          "5",
+          "3"
+        ],
+        "id": [
+          "6",
+          "5",
+          "3"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "3 on one plate and 3 on the other: 3 + 3 = 6.",
+        "id": "3 di satu piring dan 3 di piring lain: 3 + 3 = 6."
+      },
+      "check": {
+        "expression": "3 + 3",
+        "result": "6"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_PLATES_AS_ITEMS",
+        "2": "COUNTS_ONE_SIDE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Ibu shares 10 crayons equally into 2 cups. How many crayons go in each cup?",
+        "id": "Ibu membagi 10 krayon sama banyak ke dalam 2 gelas. Berapa krayon di setiap gelas?"
+      },
+      "choices": {
+        "en": [
+          "5",
+          "10",
+          "20"
+        ],
+        "id": [
+          "5",
+          "10",
+          "20"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "10 is double 5, so each cup gets 5 crayons.",
+        "id": "10 adalah dobel 5, jadi setiap gelas mendapat 5 krayon."
+      },
+      "check": {
+        "expression": "10 / 2",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_WHOLE",
+        "2": "DOUBLES_INSTEAD_OF_SPLITTING"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Which one is a double?",
+        "id": "Mana yang merupakan penjumlahan kembar?"
+      },
+      "choices": {
+        "en": [
+          "2 = 1 + 1",
+          "5 = 1 + 4",
+          "7 = 3 + 4"
+        ],
+        "id": [
+          "2 = 1 + 1",
+          "5 = 1 + 4",
+          "7 = 3 + 4"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A double has two equal parts. Only 1 + 1 has two parts that are the same.",
+        "id": "Penjumlahan kembar punya dua bagian yang sama. Hanya 1 + 1 yang kedua bagiannya sama."
+      },
+      "check": {
+        "expression": "1 + 1",
+        "result": "2"
+      },
+      "distractorMisconceptions": {
+        "1": "ANY_TWO_PARTS_IS_DOUBLE",
+        "2": "ANY_TWO_PARTS_IS_DOUBLE"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Can 7 blocks be shared into two towers of the same height, with no block left over?",
+        "id": "Bisakah 7 balok dibagi menjadi dua menara yang sama tinggi, tanpa sisa balok?"
+      },
+      "choices": {
+        "en": [
+          "No, one block is always left over",
+          "Yes, towers of 3 and 4",
+          "Yes, towers of 7 and 7"
+        ],
+        "id": [
+          "Tidak, selalu tersisa satu balok",
+          "Ya, menara 3 dan 4",
+          "Ya, menara 7 dan 7"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Share one by one: 3 and 3, and 1 block is left over. 3 and 4 are not the same height, so 7 is not a double.",
+        "id": "Bagikan satu per satu: 3 dan 3, dan tersisa 1 balok. 3 dan 4 tidak sama tinggi, jadi 7 bukan bilangan kembar."
+      },
+      "distractorMisconceptions": {
+        "1": "ANY_TWO_PARTS_IS_DOUBLE",
+        "2": "DOUBLES_INSTEAD_OF_SPLITTING"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "COUNTS_ONE_SIDE",
+      "description": {
+        "en": "Counts only one of the two equal parts and gives that as the total.",
+        "id": "Hanya menghitung salah satu dari dua bagian yang sama dan menyebutnya sebagai jumlah."
+      },
+      "remediation": {
+        "en": "Fold the butterfly print open and closed: 'Closed I see one wing; open I see both. Count both wings.'",
+        "id": "Buka dan tutup cetak kupu-kupu: 'Tertutup terlihat satu sayap; terbuka terlihat dua. Hitung kedua sayap.'"
+      }
+    },
+    {
+      "code": "WRITES_DIGITS_TWICE",
+      "description": {
+        "en": "Writes the number twice side by side (44 for double 4) instead of adding.",
+        "id": "Menulis angkanya dua kali berdampingan (44 untuk dobel 4), bukan menjumlahkan."
+      },
+      "remediation": {
+        "en": "Build the two towers of 4, push them together into one tower and count the blocks: the tower is 8 tall, not 44.",
+        "id": "Susun dua menara 4, gabungkan menjadi satu menara dan hitung baloknya: tingginya 8, bukan 44."
+      }
+    },
+    {
+      "code": "COUNTS_PLATES_AS_ITEMS",
+      "description": {
+        "en": "Adds the number of groups to the number in a group (2 plates + 3 fruits = 5).",
+        "id": "Menjumlahkan banyak kelompok dengan isi satu kelompok (2 piring + 3 buah = 5)."
+      },
+      "remediation": {
+        "en": "Draw the two plates as circles and put dots inside; count only the dots, never the circles.",
+        "id": "Gambar dua piring sebagai lingkaran dan beri titik di dalamnya; hitung titiknya saja, bukan lingkarannya."
+      }
+    },
+    {
+      "code": "GIVES_WHOLE",
+      "description": {
+        "en": "Gives the starting amount instead of the amount in each part.",
+        "id": "Menyebut jumlah awal, bukan jumlah di setiap bagian."
+      },
+      "remediation": {
+        "en": "Share real crayons into two cups, then tip out only one cup and count it.",
+        "id": "Bagikan krayon sungguhan ke dua gelas, lalu tuang satu gelas saja dan hitung."
+      }
+    },
+    {
+      "code": "DOUBLES_INSTEAD_OF_SPLITTING",
+      "description": {
+        "en": "Doubles the number when asked to split it into two equal parts.",
+        "id": "Menggandakan bilangan saat diminta membaginya menjadi dua bagian yang sama."
+      },
+      "remediation": {
+        "en": "Hold up 10 blocks: 'We are not getting more blocks; we only share these.' Share them one for each tower.",
+        "id": "Pegang 10 balok: 'Kita tidak menambah balok; kita hanya membagi yang ini.' Bagikan satu untuk setiap menara."
+      }
+    },
+    {
+      "code": "ANY_TWO_PARTS_IS_DOUBLE",
+      "description": {
+        "en": "Thinks any two parts that make a number are a double.",
+        "id": "Mengira dua bagian apa pun yang membentuk suatu bilangan adalah kembar."
+      },
+      "remediation": {
+        "en": "Build both parts as towers and stand them side by side: a double only when the tops are level.",
+        "id": "Susun kedua bagian sebagai menara dan berdirikan bersebelahan: kembar hanya jika puncaknya sejajar."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Near doubles: if double 3 is 6, what is 3 + 4? Build it as a double tower with one extra block on top.",
+      "id": "Hampir kembar: jika dobel 3 adalah 6, berapa 3 + 4? Susun sebagai menara kembar dengan satu balok tambahan di atasnya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use large blocks that click together so towers stay standing for children with weaker fine-motor control.",
+      "id": "Pakai balok besar yang bisa dikaitkan agar menara tetap berdiri untuk anak dengan motorik halus yang lebih lemah."
+    },
+    {
+      "en": "Say each double as a chant with clapping for children who learn best by listening.",
+      "id": "Ucapkan setiap dobel sebagai nyanyian dengan tepuk tangan untuk anak yang paling mudah belajar dengan mendengar."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use large blocks only and a plastic mirror, not glass; use washable, non-toxic paint and wash hands after painting.",
+        "id": "Pakai hanya balok besar dan cermin plastik, bukan kaca; pakai cat yang aman dan mudah dicuci, dan cuci tangan setelah mengecat."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      2,
+      7,
+      14
+    ],
+    "masteryRule": {
+      "en": "Secure when the child says doubles 1 to 5 without counting and splits 8 and 10 into equal towers, on two different days.",
+      "id": "Dikuasai jika anak menyebut dobel 1 sampai 5 tanpa menghitung dan membagi 8 dan 10 menjadi menara yang sama, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}

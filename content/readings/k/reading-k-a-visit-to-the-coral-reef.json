@@ -1,0 +1,235 @@
+{
+  "id": "reading-k-a-visit-to-the-coral-reef",
+  "version": "1.0.0",
+  "level": "k",
+  "readingLevel": "emergent",
+  "genre": "nonfiction",
+  "mode": "shared",
+  "title": {
+    "en": "A visit to the coral reef",
+    "id": "Berkunjung ke terumbu karang"
+  },
+  "text": {
+    "en": [
+      "Under the sea, in warm and clear water, there is a coral reef. It is full of colour.",
+      "Coral looks like rocks or plants, but coral is alive. It is made of many tiny animals.",
+      "Many fish live on the reef. A little orange-and-white clownfish hides in a soft sea anemone.",
+      "A sea turtle swims past, slowly. A starfish holds on to a rock with its five arms.",
+      "The reef is a home. Fish find food there and hide there when a big fish comes.",
+      "Coral can break easily. When we visit the sea, we look, but we do not touch or step on the coral."
+    ],
+    "id": [
+      "Di bawah laut, di air yang hangat dan jernih, ada terumbu karang. Terumbu karang penuh warna.",
+      "Karang tampak seperti batu atau tanaman, tetapi karang itu hidup. Karang terdiri dari banyak hewan kecil.",
+      "Banyak ikan tinggal di terumbu. Ikan badut kecil yang oranye dan putih bersembunyi di anemon laut yang lembut.",
+      "Seekor penyu berenang lewat dengan pelan. Bintang laut menempel di batu dengan kelima lengannya.",
+      "Terumbu adalah rumah. Ikan mencari makan di sana dan bersembunyi di sana saat ikan besar datang.",
+      "Karang mudah patah. Saat kita ke laut, kita melihat, tetapi tidak menyentuh atau menginjak karang."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a short information text with an adult and names animals that live on a coral reef.",
+      "id": "Membaca teks informasi pendek bersama orang dewasa dan menyebut hewan yang hidup di terumbu karang."
+    },
+    {
+      "en": "Explains why the reef is a home and why we do not touch coral.",
+      "id": "Menjelaskan mengapa terumbu adalah rumah dan mengapa kita tidak menyentuh karang."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "reef",
+        "id": "terumbu"
+      },
+      "meaning": {
+        "en": "a long line of coral under the sea",
+        "id": "deretan karang yang panjang di bawah laut"
+      }
+    },
+    {
+      "word": {
+        "en": "alive",
+        "id": "hidup"
+      },
+      "meaning": {
+        "en": "growing, eating and living, like animals and plants",
+        "id": "tumbuh, makan, dan hidup, seperti hewan dan tumbuhan"
+      }
+    },
+    {
+      "word": {
+        "en": "hide",
+        "id": "bersembunyi"
+      },
+      "meaning": {
+        "en": "to go where others cannot see you",
+        "id": "pergi ke tempat yang tidak terlihat orang lain"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What is coral made of?",
+        "id": "Karang terdiri dari apa?"
+      },
+      "choices": {
+        "en": [
+          "many tiny animals",
+          "plastic",
+          "sand and glass"
+        ],
+        "id": [
+          "banyak hewan kecil",
+          "plastik",
+          "pasir dan kaca"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where does the clownfish hide?",
+        "id": "Di mana ikan badut bersembunyi?"
+      },
+      "choices": {
+        "en": [
+          "in a sea anemone",
+          "under a turtle",
+          "on the beach"
+        ],
+        "id": [
+          "di anemon laut",
+          "di bawah penyu",
+          "di pantai"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What is this text mostly about?",
+        "id": "Teks ini terutama tentang apa?"
+      },
+      "choices": {
+        "en": [
+          "the coral reef and the animals that live there",
+          "how to catch fish",
+          "a turtle that gets lost"
+        ],
+        "id": [
+          "terumbu karang dan hewan yang tinggal di sana",
+          "cara menangkap ikan",
+          "penyu yang tersesat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why should we not step on coral?",
+        "id": "Mengapa kita tidak boleh menginjak karang?"
+      },
+      "choices": {
+        "en": [
+          "it is alive and could be hurt or broken",
+          "it tastes bad",
+          "it is too far away to reach"
+        ],
+        "id": [
+          "karang itu hidup dan bisa rusak atau patah",
+          "rasanya tidak enak",
+          "letaknya terlalu jauh"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Coral is a living animal, not a rock or a plant.",
+        "id": "Karang adalah hewan hidup, bukan batu atau tumbuhan."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Indonesia has many coral reefs, and people help protect them.",
+        "id": "Indonesia punya banyak terumbu karang, dan orang-orang ikut menjaganya."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which reef animal would you like to see?",
+      "id": "Hewan terumbu mana yang ingin kamu lihat?"
+    },
+    {
+      "en": "How can we look after the sea?",
+      "id": "Bagaimana kita bisa menjaga laut?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Draw a reef on a big sheet of paper together: colour the coral first, then add a clownfish in an anemone, a turtle and a starfish with five arms. Label each animal with the help of a grown-up.",
+    "id": "Gambar terumbu karang bersama di kertas besar: warnai karangnya dulu, lalu tambahkan ikan badut di anemon, penyu, dan bintang laut berlengan lima. Beri nama setiap hewan dengan bantuan orang dewasa."
+  },
+  "factChecks": [
+    {
+      "claim": "Corals are animals; a reef is built by many small coral animals.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Clownfish live among the tentacles of sea anemones.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Many starfish have five arms.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Coral is fragile and can be damaged by touching or stepping on it.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Indonesia has many coral reefs.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "id": "reading-age2_3-my-nose-my-toes",
+  "version": "1.0.0",
+  "level": "age2_3",
+  "readingLevel": "pre_reader",
+  "genre": "oral_story",
+  "mode": "parent_read",
+  "title": {
+    "en": "My nose, my toes",
+    "id": "Hidungku, jari kakiku"
+  },
+  "text": {
+    "en": [
+      "Good morning, body! Let us wake up together. Stretch, stretch, up high.",
+      "Here is my nose. Sniff, sniff! My nose smells the rice cooking.",
+      "Here are my ears. Listen, listen! My ears hear the bird outside.",
+      "Here are my hands. Clap, clap! My hands can clap and wave.",
+      "Here are my toes. Wiggle, wiggle! My feet go stamp, stamp, stamp. Hooray for my body!"
+    ],
+    "id": [
+      "Selamat pagi, badan! Ayo bangun bersama. Regang, regang, ke atas.",
+      "Ini hidungku. Endus, endus! Hidungku mencium nasi yang sedang dimasak.",
+      "Ini telingaku. Dengar, dengar! Telingaku mendengar burung di luar.",
+      "Ini tanganku. Tepuk, tepuk! Tanganku bisa bertepuk dan melambai.",
+      "Ini jari kakiku. Goyang, goyang! Kakiku menghentak, hentak, hentak. Hore, badanku hebat!"
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Stretch your arms up high with your child.",
+      "id": "Regangkan tangan ke atas bersama anak."
+    },
+    {
+      "en": "Touch your child's nose gently and make a sniffing sound.",
+      "id": "Sentuh lembut hidung anak dan buat bunyi mengendus."
+    },
+    {
+      "en": "Cup your hand behind your ear and pause to listen.",
+      "id": "Tangkupkan tangan di belakang telinga dan diam sejenak untuk mendengar."
+    },
+    {
+      "en": "Clap slowly, then wave. Let your child copy.",
+      "id": "Bertepuk pelan, lalu melambai. Biarkan anak menirukan."
+    },
+    {
+      "en": "Wiggle your child's toes, then stamp softly together and cheer.",
+      "id": "Goyangkan jari kaki anak, lalu hentakkan kaki pelan bersama dan bersorak."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a child stretching after waking up",
+      "id": "Kartu 1: anak meregang setelah bangun tidur"
+    },
+    {
+      "en": "Card 2: a nose and a steaming rice pot",
+      "id": "Kartu 2: hidung dan panci nasi yang mengepul"
+    },
+    {
+      "en": "Card 3: an ear and a small bird",
+      "id": "Kartu 3: telinga dan burung kecil"
+    },
+    {
+      "en": "Card 4: two hands clapping",
+      "id": "Kartu 4: dua tangan bertepuk"
+    },
+    {
+      "en": "Card 5: ten wiggly toes",
+      "id": "Kartu 5: sepuluh jari kaki bergoyang"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Names and points to nose, ears, hands and toes.",
+      "id": "Menyebut dan menunjuk hidung, telinga, tangan, dan jari kaki."
+    },
+    {
+      "en": "Links each body part with what it does: smell, hear, clap, walk.",
+      "id": "Menghubungkan tiap bagian tubuh dengan kegunaannya: mencium, mendengar, bertepuk, berjalan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "nose",
+        "id": "hidung"
+      },
+      "meaning": {
+        "en": "the part of your face you smell with",
+        "id": "bagian wajah untuk mencium bau"
+      }
+    },
+    {
+      "word": {
+        "en": "ears",
+        "id": "telinga"
+      },
+      "meaning": {
+        "en": "the parts of your head you hear with",
+        "id": "bagian kepala untuk mendengar"
+      }
+    },
+    {
+      "word": {
+        "en": "toes",
+        "id": "jari kaki"
+      },
+      "meaning": {
+        "en": "the little fingers on your feet",
+        "id": "jari-jari kecil di kaki"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What do we smell with?",
+        "id": "Kita mencium bau dengan apa?"
+      },
+      "choices": {
+        "en": [
+          "our nose",
+          "our toes",
+          "our hands"
+        ],
+        "id": [
+          "hidung",
+          "jari kaki",
+          "tangan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did the ears hear?",
+        "id": "Apa yang didengar telinga?"
+      },
+      "choices": {
+        "en": [
+          "a bird outside",
+          "the rice cooking",
+          "a clapping fish"
+        ],
+        "id": [
+          "burung di luar",
+          "nasi yang dimasak",
+          "ikan bertepuk tangan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "Which part came last in the story?",
+        "id": "Bagian tubuh mana yang muncul terakhir?"
+      },
+      "choices": {
+        "en": [
+          "the toes",
+          "the nose",
+          "the ears"
+        ],
+        "id": [
+          "jari kaki",
+          "hidung",
+          "telinga"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Knowing the names of body parts helps a small child tell a grown-up where something hurts.",
+        "id": "Tahu nama bagian tubuh membantu anak kecil memberi tahu orang dewasa bagian mana yang sakit."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Can you touch your nose? Now your ears?",
+      "id": "Bisakah kamu memegang hidungmu? Sekarang telingamu?"
+    },
+    {
+      "en": "What can your hands do?",
+      "id": "Apa yang bisa dilakukan tanganmu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Play \"touch and tell\": say a body part slowly and touch it together (nose, ears, hands, tummy, toes). Then let your child call one out and you touch it. Finish with a big stretch. Keep it gentle and stop while your child is still enjoying it.",
+    "id": "Main \"pegang dan sebut\": ucapkan satu bagian tubuh pelan-pelan dan pegang bersama (hidung, telinga, tangan, perut, jari kaki). Lalu biarkan anak menyebut satu bagian dan Anda memegangnya. Akhiri dengan peregangan besar. Lakukan dengan lembut dan berhenti selagi anak masih senang."
+  },
+  "factChecks": [],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

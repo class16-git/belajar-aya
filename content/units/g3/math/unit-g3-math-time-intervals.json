@@ -1,0 +1,451 @@
+{
+  "id": "unit-g3-math-time-intervals",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "math",
+  "strand": "time",
+  "title": {
+    "en": "How long does it take? Time intervals",
+    "id": "Berapa lama? Selang waktu"
+  },
+  "prerequisites": [
+    "unit-g2-math-time-to-five-minutes"
+  ],
+  "objective": {
+    "en": "Find how long something lasts in hours and minutes by counting on to the next hour and then on, find a finishing or starting time from a duration, convert between hours and minutes using 1 h = 60 min, and compare durations.",
+    "id": "Mencari lama suatu kegiatan dalam jam dan menit dengan menghitung maju ke jam berikutnya lalu lanjut, mencari waktu selesai atau waktu mulai dari lamanya, mengubah jam dan menit dengan 1 jam = 60 menit, dan membandingkan lama kegiatan."
+  },
+  "rationale": {
+    "en": "Clock times look like decimals (3.40), so children often subtract them as ordinary numbers and get 100 minutes in an hour. A time line that jumps to the next o'clock makes the 60-minute hour visible and turns a hard subtraction into easy counting on.",
+    "id": "Penulisan waktu tampak seperti desimal (3.40), sehingga anak sering mengurangkannya seperti bilangan biasa dan mendapat 100 menit dalam satu jam. Garis waktu yang melompat ke jam tepat berikutnya membuat satu jam = 60 menit terlihat dan mengubah pengurangan yang sulit menjadi hitung maju yang mudah."
+  },
+  "outcomes": [
+    {
+      "en": "Draws a time line and finds a duration across an hour.",
+      "id": "Menggambar garis waktu dan mencari lama kegiatan yang melewati satu jam."
+    },
+    {
+      "en": "Finds an end time or a start time from a duration.",
+      "id": "Mencari waktu selesai atau waktu mulai dari lamanya kegiatan."
+    },
+    {
+      "en": "Converts hours and minutes to minutes and back.",
+      "id": "Mengubah jam dan menit menjadi menit dan sebaliknya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can jump from 3.40 to 4.00 (20 minutes) and then to 4.15 (15 minutes): 35 minutes.",
+      "id": "Aku bisa melompat dari 3.40 ke 4.00 (20 menit) lalu ke 4.15 (15 menit): 35 menit."
+    },
+    {
+      "en": "I can explain why 1 h 20 min is 80 minutes, not 120.",
+      "id": "Aku bisa menjelaskan mengapa 1 jam 20 menit adalah 80 menit, bukan 120."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use the family's real day: when did lunch start and finish, how long was the drive, when does the TV show end?",
+      "id": "Pakai kegiatan keluarga yang nyata: kapan makan siang mulai dan selesai, berapa lama perjalanan, kapan acara TV selesai?"
+    },
+    {
+      "en": "Times are written with a point in both languages here (3.40, pukul 3.40). Say 'a.m./p.m.' in English and 'pagi/siang/sore/malam' in Indonesian.",
+      "id": "Di unit ini waktu ditulis dengan titik dalam kedua bahasa (3.40, pukul 3.40). Ucapkan 'a.m./p.m.' dalam bahasa Inggris dan 'pagi/siang/sore/malam' dalam bahasa Indonesia."
+    },
+    {
+      "en": "Always draw the time line: start time, jump to the next o'clock, whole hours, then the last minutes.",
+      "id": "Selalu gambar garis waktunya: waktu mulai, lompat ke jam tepat berikutnya, jam-jam utuh, lalu menit terakhir."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Draw a time line. Jump to the next o'clock first.",
+      "id": "Gambar garis waktu. Lompat ke jam tepat berikutnya dulu."
+    },
+    {
+      "en": "Add up your jumps. Remember: 60 minutes make 1 hour.",
+      "id": "Jumlahkan lompatanmu. Ingat: 60 menit sama dengan 1 jam."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Turn the hands of a geared or paper-plate clock from 2.50 to 3.25 and count the minutes in fives on the way, noticing the hour hand move past 3.",
+        "id": "Putar jarum jam mainan atau jam dari piring kertas dari 2.50 ke 3.25 dan hitung menitnya per lima, sambil memperhatikan jarum pendek melewati angka 3."
+      },
+      {
+        "en": "Time a real activity: note the time when a bath starts and ends, then work out how long it took.",
+        "id": "Ukur waktu kegiatan nyata: catat waktu mulai dan selesai mandi, lalu hitung berapa lama."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Time line: 8.35 → 9.00 is 25 min, 9.00 → 10.00 is 1 h, 10.00 → 10.10 is 10 min. Total 1 h 35 min.",
+        "id": "Garis waktu: 8.35 → 9.00 adalah 25 menit, 9.00 → 10.00 adalah 1 jam, 10.00 → 10.10 adalah 10 menit. Jumlahnya 1 jam 35 menit."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Convert: 2 h 10 min = 120 + 10 = 130 min; 75 min = 60 + 15 = 1 h 15 min.",
+        "id": "Ubah: 2 jam 10 menit = 120 + 10 = 130 menit; 75 menit = 60 + 15 = 1 jam 15 menit."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A clock with movable hands (toy, or the paper-plate clock with a rolled paper stopper in the centre)",
+      "id": "Jam dengan jarum yang bisa diputar (mainan, atau jam piring kertas dengan gulungan kertas di tengahnya)"
+    },
+    {
+      "en": "A household clock or watch to time real activities",
+      "id": "Jam dinding atau jam tangan untuk mengukur waktu kegiatan nyata"
+    },
+    {
+      "en": "Paper for time lines",
+      "id": "Kertas untuk garis waktu"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write the start and end times of three family activities from today on a card, such as breakfast, the drive to the market and homework.",
+      "id": "Tulis waktu mulai dan selesai tiga kegiatan keluarga hari ini di kartu, misalnya sarapan, perjalanan ke pasar, dan mengerjakan PR."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Across the hour: art class runs from 4.45 p.m. to 5.30 p.m. Jump 4.45 → 5.00 (15 min), 5.00 → 5.30 (30 min). 15 + 30 = 45 minutes.",
+      "id": "Melewati satu jam: les menggambar dari pukul 4.45 sore sampai 5.30 sore. Lompat 4.45 → 5.00 (15 menit), 5.00 → 5.30 (30 menit). 15 + 30 = 45 menit."
+    },
+    {
+      "en": "Not 100 minutes: 5.30 - 4.45 as ordinary numbers gives 0.85, which would mean 85 minutes. That is wrong because an hour has only 60 minutes.",
+      "id": "Bukan 100 menit: 5.30 - 4.45 sebagai bilangan biasa memberi 0,85, seolah-olah 85 menit. Itu salah karena satu jam hanya 60 menit."
+    },
+    {
+      "en": "End time: the drive to Nenek's house starts at 10.40 a.m. and takes 1 h 50 min. 10.40 + 1 h = 11.40; + 20 min = 12.00; + 30 min = 12.30 p.m.",
+      "id": "Waktu selesai: perjalanan ke rumah Nenek mulai pukul 10.40 pagi dan memakan waktu 1 jam 50 menit. 10.40 + 1 jam = 11.40; + 20 menit = 12.00; + 30 menit = 12.30 siang."
+    },
+    {
+      "en": "Start time, counting back: the cake must be out of the oven at 3.15 p.m. and bakes for 40 minutes. Back 15 min to 3.00, back 25 more to 2.35 p.m.",
+      "id": "Waktu mulai, hitung mundur: kue harus keluar dari oven pukul 3.15 sore dan dipanggang 40 menit. Mundur 15 menit ke 3.00, mundur 25 menit lagi ke 2.35 siang."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Time three real activities today and draw a time line for each.",
+      "id": "Ukur waktu tiga kegiatan nyata hari ini dan gambar garis waktu untuk masing-masing."
+    },
+    {
+      "en": "Read a bus or train timetable an adult shows you and find how long two journeys take.",
+      "id": "Baca jadwal bus atau kereta yang ditunjukkan orang dewasa dan cari berapa lama dua perjalanan."
+    },
+    {
+      "en": "Convert these to minutes: 1 h 5 min, 2 h 30 min, 3 h; and these to hours and minutes: 90 min, 140 min.",
+      "id": "Ubah menjadi menit: 1 jam 5 menit, 2 jam 30 menit, 3 jam; dan ubah menjadi jam dan menit: 90 menit, 140 menit."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A piano lesson starts at 3.40 p.m. and ends at 4.25 p.m. How long is the lesson?",
+        "id": "Les piano mulai pukul 3.40 sore dan selesai pukul 4.25 sore. Berapa lama les itu?"
+      },
+      "choices": {
+        "en": [
+          "45 minutes",
+          "85 minutes",
+          "25 minutes"
+        ],
+        "id": [
+          "45 menit",
+          "85 menit",
+          "25 menit"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "3.40 → 4.00 is 20 minutes, 4.00 → 4.25 is 25 minutes. 20 + 25 = 45 minutes.",
+        "id": "3.40 → 4.00 adalah 20 menit, 4.00 → 4.25 adalah 25 menit. 20 + 25 = 45 menit."
+      },
+      "check": {
+        "expression": "20 + 25",
+        "result": "45"
+      },
+      "distractorMisconceptions": {
+        "1": "HOUR_AS_100_MINUTES",
+        "2": "COUNTS_ONLY_LAST_PART"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "How many minutes are there in 1 h 45 min?",
+        "id": "Berapa menit dalam 1 jam 45 menit?"
+      },
+      "choices": {
+        "en": [
+          "105 minutes",
+          "145 minutes",
+          "46 minutes"
+        ],
+        "id": [
+          "105 menit",
+          "145 menit",
+          "46 menit"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "1 hour is 60 minutes: 60 + 45 = 105 minutes.",
+        "id": "1 jam adalah 60 menit: 60 + 45 = 105 menit."
+      },
+      "check": {
+        "expression": "60 + 45",
+        "result": "105"
+      },
+      "distractorMisconceptions": {
+        "1": "HOUR_AS_100_MINUTES",
+        "2": "HOUR_AS_ONE_MINUTE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A film starts at 7.35 p.m. and lasts 1 h 40 min. At what time does it end?",
+        "id": "Sebuah film mulai pukul 7.35 malam dan berlangsung 1 jam 40 menit. Pukul berapa film itu selesai?"
+      },
+      "choices": {
+        "en": [
+          "9.15 p.m.",
+          "8.75 p.m.",
+          "8.15 p.m."
+        ],
+        "id": [
+          "pukul 9.15 malam",
+          "pukul 8.75 malam",
+          "pukul 8.15 malam"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "7.35 + 1 h = 8.35. Then 8.35 → 9.00 is 25 min, and 15 more minutes gives 9.15 p.m.",
+        "id": "7.35 + 1 jam = 8.35. Lalu 8.35 → 9.00 adalah 25 menit, dan 15 menit lagi menjadi pukul 9.15 malam."
+      },
+      "check": {
+        "expression": "9 + (7 * 60 + 35 + 60 + 40 - 9 * 60) / 100",
+        "result": "9.15"
+      },
+      "distractorMisconceptions": {
+        "1": "HOUR_AS_100_MINUTES",
+        "2": "ADDS_ONLY_MINUTES"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A swimming lesson lasts 45 minutes and ends at 10.20 a.m. At what time did it start?",
+        "id": "Les renang berlangsung 45 menit dan selesai pukul 10.20 pagi. Pukul berapa les itu mulai?"
+      },
+      "choices": {
+        "en": [
+          "9.35 a.m.",
+          "9.75 a.m.",
+          "11.05 a.m."
+        ],
+        "id": [
+          "pukul 9.35 pagi",
+          "pukul 9.75 pagi",
+          "pukul 11.05 pagi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count back: 10.20 → 10.00 is 20 minutes, and 25 more minutes back from 10.00 is 9.35 a.m.",
+        "id": "Hitung mundur: 10.20 → 10.00 adalah 20 menit, dan mundur 25 menit lagi dari 10.00 menjadi pukul 9.35 pagi."
+      },
+      "check": {
+        "expression": "9 + (10 * 60 + 20 - 45 - 9 * 60) / 100",
+        "result": "9.35"
+      },
+      "distractorMisconceptions": {
+        "1": "HOUR_AS_100_MINUTES",
+        "2": "COUNTS_FORWARD_INSTEAD"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Aya reads for 1 h 10 min. Bima reads for 75 minutes. Who reads for longer, and by how many minutes?",
+        "id": "Aya membaca selama 1 jam 10 menit. Bima membaca selama 75 menit. Siapa yang membaca lebih lama, dan berapa menit lebih lama?"
+      },
+      "choices": {
+        "en": [
+          "5 minutes longer, Bima",
+          "35 minutes longer, Aya",
+          "65 minutes longer, Bima"
+        ],
+        "id": [
+          "5 menit lebih lama, Bima",
+          "35 menit lebih lama, Aya",
+          "65 menit lebih lama, Bima"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "1 h 10 min = 60 + 10 = 70 minutes. 75 - 70 = 5, so Bima reads 5 minutes longer.",
+        "id": "1 jam 10 menit = 60 + 10 = 70 menit. 75 - 70 = 5, jadi Bima membaca 5 menit lebih lama."
+      },
+      "check": {
+        "expression": "75 - (60 + 10)",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "HOUR_AS_100_MINUTES",
+        "2": "IGNORES_THE_HOUR"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "HOUR_AS_100_MINUTES",
+      "description": {
+        "en": "Subtracts or adds clock times as ordinary decimal numbers, as if an hour had 100 minutes.",
+        "id": "Mengurangkan atau menjumlahkan waktu seperti bilangan desimal biasa, seolah-olah satu jam berisi 100 menit."
+      },
+      "remediation": {
+        "en": "Turn the clock hands slowly through one full hour, counting the minutes in fives: the hour changes at 60, not 100.",
+        "id": "Putar jarum jam perlahan selama satu jam penuh sambil menghitung menit per lima: jamnya berganti di 60, bukan 100."
+      }
+    },
+    {
+      "code": "COUNTS_ONLY_LAST_PART",
+      "description": {
+        "en": "Counts only the minutes after the o'clock and forgets the minutes before it.",
+        "id": "Hanya menghitung menit setelah jam tepat dan melupakan menit sebelumnya."
+      },
+      "remediation": {
+        "en": "Draw both jumps on the time line in two colours and write each jump's minutes above it before adding.",
+        "id": "Gambar kedua lompatan di garis waktu dengan dua warna dan tulis menit setiap lompatan di atasnya sebelum dijumlahkan."
+      }
+    },
+    {
+      "code": "HOUR_AS_ONE_MINUTE",
+      "description": {
+        "en": "Treats the hour as 1 minute and adds it to the minutes.",
+        "id": "Menganggap satu jam sebagai 1 menit lalu menambahkannya ke menit."
+      },
+      "remediation": {
+        "en": "Watch the long hand for one hour on a real clock (or a timer) and count how many minute marks it passes.",
+        "id": "Amati jarum panjang selama satu jam di jam sungguhan (atau pengatur waktu) dan hitung berapa tanda menit yang dilewati."
+      }
+    },
+    {
+      "code": "ADDS_ONLY_MINUTES",
+      "description": {
+        "en": "Adds the minutes of the duration but forgets the whole hours.",
+        "id": "Menambahkan menit dari lamanya tetapi melupakan jam utuhnya."
+      },
+      "remediation": {
+        "en": "Split the duration into an hour card and a minutes card and move the clock for each card in turn.",
+        "id": "Pisahkan lamanya menjadi kartu jam dan kartu menit, lalu putar jam untuk setiap kartu bergantian."
+      }
+    },
+    {
+      "code": "COUNTS_FORWARD_INSTEAD",
+      "description": {
+        "en": "Adds the duration to the end time when the start time is asked for.",
+        "id": "Menambahkan lamanya ke waktu selesai padahal yang ditanya waktu mulai."
+      },
+      "remediation": {
+        "en": "Draw an arrow on the time line from the end time pointing backwards, and move the clock hands anticlockwise.",
+        "id": "Gambar panah di garis waktu dari waktu selesai mengarah ke belakang, dan putar jarum jam berlawanan arah."
+      }
+    },
+    {
+      "code": "IGNORES_THE_HOUR",
+      "description": {
+        "en": "Compares only the minute numbers and forgets the hour.",
+        "id": "Hanya membandingkan angka menit dan melupakan jamnya."
+      },
+      "remediation": {
+        "en": "Convert every duration to minutes on a card before comparing; line the cards up from shortest to longest.",
+        "id": "Ubah setiap lamanya menjadi menit di kartu sebelum membandingkan; jajarkan kartu dari yang tersingkat ke yang terlama."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Plan a Saturday schedule from 8.00 a.m. to 12.00 noon with four activities of different lengths that fill the time exactly.",
+      "id": "Rencanakan jadwal hari Sabtu dari pukul 8.00 pagi sampai 12.00 siang dengan empat kegiatan berbeda lama yang mengisi waktu tepat."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A talking clock or a large clock face helps a child with low vision; let them feel the hand positions.",
+      "id": "Jam berbicara atau muka jam yang besar membantu anak dengan penglihatan rendah; biarkan mereka meraba posisi jarum."
+    },
+    {
+      "en": "Pre-printed time lines with the o'clock marks already drawn reduce writing load.",
+      "id": "Garis waktu yang sudah dicetak dengan tanda jam tepat mengurangi beban menulis."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "If an older paper-plate clock has a split pin (paper fastener), the adult replaces it with a rolled paper stopper or keeps the clock away from younger children.",
+        "id": "Jika jam piring kertas lama memakai paku keling kertas (split pin), orang dewasa menggantinya dengan gulungan kertas atau menjauhkan jam dari adik yang lebih kecil."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child finds a duration across an hour, an end time and a start time correctly with a time line, and converts hours and minutes both ways, on two different days.",
+      "id": "Dikuasai jika anak mencari lama kegiatan yang melewati satu jam, waktu selesai, dan waktu mulai dengan benar memakai garis waktu, serta mengubah jam dan menit bolak-balik, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}

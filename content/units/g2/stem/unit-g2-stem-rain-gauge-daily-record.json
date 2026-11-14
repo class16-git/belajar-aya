@@ -1,0 +1,456 @@
+{
+  "id": "unit-g2-stem-rain-gauge-daily-record",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "stem",
+  "strand": "science_inquiry",
+  "title": {
+    "en": "Measuring rain: a home rain gauge",
+    "id": "Mengukur hujan: penakar hujan di rumah"
+  },
+  "prerequisites": [
+    "unit-k-stem-weather-picture-chart"
+  ],
+  "objective": {
+    "en": "Make a rain gauge from a straight-sided, flat-bottomed clear container, read the depth of rain in millimetres at the same time every day for two weeks, empty it after every reading, record the readings in a table, and use them to find totals, differences and the wettest day.",
+    "id": "Membuat penakar hujan dari wadah bening yang sisinya lurus dan alasnya datar, membaca tinggi air hujan dalam milimeter pada jam yang sama setiap hari selama dua minggu, mengosongkannya setelah setiap pembacaan, mencatat hasilnya di tabel, dan menggunakannya untuk mencari jumlah, selisih, dan hari terbasah."
+  },
+  "rationale": {
+    "en": "The Kindergarten chart said whether it rained; a gauge says how much. Children learn to measure in millimetres, to read a ruler from its zero mark, to keep a daily routine, and to calculate with real data they collected themselves.",
+    "id": "Bagan TK menyatakan apakah hujan turun; penakar menyatakan berapa banyak. Anak belajar mengukur dalam milimeter, membaca penggaris dari tanda nolnya, menjaga rutinitas harian, dan menghitung dengan data nyata yang mereka kumpulkan sendiri."
+  },
+  "outcomes": [
+    {
+      "en": "Places the gauge in an open spot and reads it at the same time each day.",
+      "id": "Meletakkan penakar di tempat terbuka dan membacanya pada jam yang sama setiap hari."
+    },
+    {
+      "en": "Reads water depth in millimetres from the ruler's zero mark.",
+      "id": "Membaca tinggi air dalam milimeter dari tanda nol penggaris."
+    },
+    {
+      "en": "Empties the gauge after every reading and explains why.",
+      "id": "Mengosongkan penakar setelah setiap pembacaan dan menjelaskan alasannya."
+    },
+    {
+      "en": "Adds readings for a total and subtracts to compare days.",
+      "id": "Menjumlahkan hasil bacaan untuk total dan mengurangkan untuk membandingkan hari."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I read the water level from the 0 mark, with my eyes level with the water.",
+      "id": "Aku membaca tinggi air dari tanda 0, dengan mata sejajar permukaan air."
+    },
+    {
+      "en": "I write the reading, then empty the gauge every day.",
+      "id": "Aku menulis hasil bacaan, lalu mengosongkan penakar setiap hari."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Help choose the spot: open ground or a flat wall top, away from roof edges, trees and walls that could drip or block rain. Wedge the container with a few bricks or stones so it cannot tip over.",
+      "id": "Bantu memilih tempat: tanah terbuka atau puncak tembok yang datar, jauh dari tepi atap, pohon, dan dinding yang bisa meneteskan air atau menghalangi hujan. Ganjal wadah dengan beberapa bata atau batu supaya tidak terguling."
+    },
+    {
+      "en": "Check the ruler together: on many rulers the 0 mark is a little way in from the end. Find the 0 and make sure your child measures from there.",
+      "id": "Periksa penggaris bersama: pada banyak penggaris, tanda 0 berada sedikit di dalam dari ujungnya. Temukan angka 0 dan pastikan anak mengukur dari situ."
+    },
+    {
+      "en": "Agree the reading time, such as 7 in the morning before school, and keep it every day, even on dry days (write 0).",
+      "id": "Sepakati jam membaca, misalnya pukul 7 pagi sebelum sekolah, dan pertahankan setiap hari, termasuk hari kering (tulis 0)."
+    },
+    {
+      "en": "Ask for a prediction each evening: 'Will there be rain in the gauge tomorrow? More or less than today?'",
+      "id": "Minta tebakan setiap sore: 'Besok akan ada air hujan di penakar? Lebih banyak atau lebih sedikit dari hari ini?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Bring the gauge to a flat table. Stand the ruler inside it, touching the bottom.",
+      "id": "Bawa penakar ke meja yang datar. Tegakkan penggaris di dalamnya, menyentuh dasar."
+    },
+    {
+      "en": "Bend down so your eyes are level with the water. Read the millimetres.",
+      "id": "Membungkuklah sampai matamu sejajar dengan air. Baca milimeternya."
+    },
+    {
+      "en": "Write the number in today's box, then empty the gauge and put it back.",
+      "id": "Tulis angkanya di kotak hari ini, lalu kosongkan penakar dan kembalikan ke tempatnya."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Pour some water into the gauge from a jug, then read the depth with the ruler, so your child practises before real rain.",
+        "id": "Tuang sedikit air ke penakar dari teko, lalu baca tingginya dengan penggaris, supaya anak berlatih sebelum hujan sungguhan."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a bar for each day on squared paper, one square for each millimetre (or each 2 mm on very wet days).",
+        "id": "Gambar satu batang untuk setiap hari di kertas berpetak, satu kotak untuk setiap milimeter (atau setiap 2 mm pada hari yang sangat basah)."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Add a week of readings for the total and subtract two days to compare them.",
+        "id": "Jumlahkan hasil bacaan seminggu untuk mendapat total dan kurangkan dua hari untuk membandingkannya."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A clear plastic container with straight sides and a flat bottom, at least 10 cm tall (such as a tall clear food tub)",
+      "id": "Wadah plastik bening yang sisinya lurus dan alasnya datar, tingginya setidaknya 10 cm (misalnya wadah makanan bening yang tinggi)"
+    },
+    {
+      "en": "A clean 15 cm or 30 cm ruler marked in millimetres",
+      "id": "Penggaris 15 cm atau 30 cm yang bersih dengan tanda milimeter"
+    },
+    {
+      "en": "A few bricks or large stones to hold the gauge steady",
+      "id": "Beberapa bata atau batu besar untuk menahan penakar"
+    },
+    {
+      "en": "A table drawn on paper with a box for each day, and a pencil",
+      "id": "Tabel yang digambar di kertas dengan satu kotak untuk setiap hari, dan pensil"
+    },
+    {
+      "en": "A jug of water for practice",
+      "id": "Teko berisi air untuk latihan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Rule a two-week table with the dates and a column for millimetres. Choose the gauge spot together and do the practice reading with jug water. Empty it straight after.",
+      "id": "Buat tabel dua minggu dengan tanggal dan satu kolom untuk milimeter. Pilih tempat penakar bersama dan lakukan pembacaan latihan dengan air dari teko. Segera kosongkan setelahnya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Reading: after a rainy night, Wulan stands the ruler in the gauge, touching the bottom. She bends until her eyes are level with the water and reads 12 mm. She writes 12 for Tuesday and empties the gauge.",
+      "id": "Membaca: setelah malam hujan, Wulan menegakkan penggaris di dalam penakar, menyentuh dasar. Ia membungkuk sampai matanya sejajar air dan membaca 12 mm. Ia menulis 12 untuk hari Selasa lalu mengosongkan penakar."
+    },
+    {
+      "en": "A week of data: Monday 0, Tuesday 12, Wednesday 4, Thursday 0, Friday 21. Total: 0 + 12 + 4 + 0 + 21 = 37 mm. Wettest: Friday. Friday had 21 − 12 = 9 mm more than Tuesday.",
+      "id": "Data seminggu: Senin 0, Selasa 12, Rabu 4, Kamis 0, Jumat 21. Total: 0 + 12 + 4 + 0 + 21 = 37 mm. Terbasah: Jumat. Jumat 21 − 12 = 9 mm lebih banyak dari Selasa."
+    },
+    {
+      "en": "Why a straight-sided container? Wulan's cousin uses a wider tub in the next garden. After the same rain, both read the same depth. The wide tub catches more water, but it spreads over a bigger floor, so the depth is the same. That is why rain is measured as a depth.",
+      "id": "Mengapa wadah bersisi lurus? Sepupu Wulan memakai wadah yang lebih lebar di halaman sebelah. Setelah hujan yang sama, keduanya menunjukkan tinggi yang sama. Wadah lebar menampung lebih banyak air, tetapi air menyebar di dasar yang lebih luas, jadi tingginya sama. Karena itulah hujan diukur sebagai tinggi air."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Keep the gauge and the table for two weeks, reading and emptying it every day at the same time.",
+      "id": "Rawat penakar dan tabel selama dua minggu, membaca dan mengosongkannya setiap hari pada jam yang sama."
+    },
+    {
+      "en": "At the end of each week, find the total, the wettest day and the number of dry days.",
+      "id": "Di akhir setiap minggu, cari total, hari terbasah, dan jumlah hari kering."
+    },
+    {
+      "en": "Compare the two weeks: which was wetter, and by how many millimetres?",
+      "id": "Bandingkan dua minggu itu: mana yang lebih basah, dan berapa milimeter selisihnya?"
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Joko's readings for four days are 3 mm, 0 mm, 15 mm and 6 mm. What is the total rainfall?",
+        "id": "Hasil bacaan Joko selama empat hari adalah 3 mm, 0 mm, 15 mm, dan 6 mm. Berapa total curah hujannya?"
+      },
+      "choices": {
+        "en": [
+          "24 mm",
+          "15 mm",
+          "4 mm"
+        ],
+        "id": [
+          "24 mm",
+          "15 mm",
+          "4 mm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Add every reading, including the dry day: 3 + 0 + 15 + 6 = 24 mm.",
+        "id": "Jumlahkan setiap hasil bacaan, termasuk hari kering: 3 + 0 + 15 + 6 = 24 mm."
+      },
+      "check": {
+        "expression": "3 + 0 + 15 + 6",
+        "result": "24"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_BIGGEST_READING",
+        "2": "COUNTS_DAYS_NOT_MM"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Dimas stands his ruler on the bottom of the gauge. On his ruler, the 0 mark is 5 mm above the end. The water reaches the 10 mm mark. How deep is the water really?",
+        "id": "Dimas menegakkan penggarisnya di dasar penakar. Pada penggarisnya, tanda 0 berada 5 mm di atas ujung. Air mencapai tanda 10 mm. Berapa tinggi air sebenarnya?"
+      },
+      "choices": {
+        "en": [
+          "15 mm",
+          "10 mm",
+          "5 mm"
+        ],
+        "id": [
+          "15 mm",
+          "10 mm",
+          "5 mm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The ruler end, not the 0 mark, is on the bottom, so add the gap: 10 + 5 = 15 mm. Better still: read from a ruler whose 0 is at the very end, or start at the 0 mark.",
+        "id": "Ujung penggaris, bukan tanda 0, yang berada di dasar, jadi tambahkan celahnya: 10 + 5 = 15 mm. Lebih baik lagi: pakai penggaris yang angka 0-nya tepat di ujung, atau mulai dari tanda 0."
+      },
+      "check": {
+        "expression": "10 + 5",
+        "result": "15"
+      },
+      "distractorMisconceptions": {
+        "1": "RULER_ZERO_AT_END",
+        "2": "SUBTRACTS_GAP"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Sari forgot to empty her gauge on Monday after reading 6 mm. On Tuesday it reads 14 mm. How much rain fell between Monday's reading and Tuesday's?",
+        "id": "Sari lupa mengosongkan penakarnya pada hari Senin setelah membaca 6 mm. Pada hari Selasa penakar menunjukkan 14 mm. Berapa banyak hujan yang turun di antara pembacaan Senin dan Selasa?"
+      },
+      "choices": {
+        "en": [
+          "8 mm",
+          "14 mm",
+          "20 mm"
+        ],
+        "id": [
+          "8 mm",
+          "14 mm",
+          "20 mm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Monday's 6 mm was still in the gauge: 14 − 6 = 8 mm of new rain. Emptying every day avoids this mix-up, and stops mosquitoes breeding in the water.",
+        "id": "Air 6 mm dari Senin masih ada di penakar: 14 − 6 = 8 mm hujan baru. Mengosongkan setiap hari mencegah kekeliruan ini, dan mencegah nyamuk berkembang biak di air."
+      },
+      "check": {
+        "expression": "14 - 6",
+        "result": "8"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_LEFTOVER",
+        "2": "ADDS_LEFTOVER"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Andi uses a wide straight-sided tub and Putri uses a narrow straight-sided jar, side by side in the same open spot. After the same rain, which shows the greater depth?",
+        "id": "Andi memakai wadah lebar bersisi lurus dan Putri memakai stoples sempit bersisi lurus, berdampingan di tempat terbuka yang sama. Setelah hujan yang sama, mana yang menunjukkan tinggi air lebih besar?"
+      },
+      "choices": {
+        "en": [
+          "Both show the same depth",
+          "The wide tub, because it catches more rain",
+          "The narrow jar, because the rain is squeezed taller"
+        ],
+        "id": [
+          "Keduanya menunjukkan tinggi yang sama",
+          "Wadah lebar, karena menampung lebih banyak hujan",
+          "Stoples sempit, karena air hujan terdesak lebih tinggi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Each square centimetre of opening catches the same rain, so straight-sided containers fill to the same depth. The wide tub holds more water, spread over a wider bottom.",
+        "id": "Setiap sentimeter persegi bukaan menampung hujan yang sama, jadi wadah bersisi lurus terisi sampai tinggi yang sama. Wadah lebar menampung air lebih banyak, tetapi menyebar di dasar yang lebih lebar."
+      },
+      "distractorMisconceptions": {
+        "1": "WIDER_READS_MORE",
+        "2": "NARROW_READS_MORE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "GIVES_BIGGEST_READING",
+      "description": {
+        "en": "Gives the biggest single reading instead of adding them all.",
+        "id": "Menyebut satu hasil bacaan terbesar alih-alih menjumlahkan semuanya."
+      },
+      "remediation": {
+        "en": "Pour each day's amount of water (measured with the ruler) into one tall jar, one after another, and read the total depth at the end.",
+        "id": "Tuang air sebanyak hasil setiap hari (diukur dengan penggaris) ke satu stoples tinggi, satu demi satu, lalu baca total tingginya di akhir."
+      }
+    },
+    {
+      "code": "COUNTS_DAYS_NOT_MM",
+      "description": {
+        "en": "Counts the number of days instead of adding the millimetres.",
+        "id": "Menghitung jumlah hari alih-alih menjumlahkan milimeternya."
+      },
+      "remediation": {
+        "en": "Ask two questions separately: \"How many days?\" and \"How much rain?\" Write the unit, days or mm, next to each answer.",
+        "id": "Ajukan dua pertanyaan terpisah: \"Berapa hari?\" dan \"Berapa banyak hujan?\" Tulis satuannya, hari atau mm, di samping setiap jawaban."
+      }
+    },
+    {
+      "code": "RULER_ZERO_AT_END",
+      "description": {
+        "en": "Assumes a ruler's 0 mark is at its very end.",
+        "id": "Mengira tanda 0 penggaris berada tepat di ujungnya."
+      },
+      "remediation": {
+        "en": "Lay three different rulers side by side with their ends lined up, and look at where each 0 mark sits.",
+        "id": "Letakkan tiga penggaris berbeda berdampingan dengan ujungnya sejajar, lalu lihat di mana letak tanda 0 masing-masing."
+      }
+    },
+    {
+      "code": "SUBTRACTS_GAP",
+      "description": {
+        "en": "Subtracts the gap instead of adding it.",
+        "id": "Mengurangkan celah alih-alih menambahkannya."
+      },
+      "remediation": {
+        "en": "Draw the ruler standing in the water: shade the 5 mm gap below the 0 mark. Both the gap and the 10 mm are under water.",
+        "id": "Gambar penggaris berdiri di dalam air: arsir celah 5 mm di bawah tanda 0. Celah itu dan 10 mm sama-sama terendam air."
+      }
+    },
+    {
+      "code": "FORGETS_LEFTOVER",
+      "description": {
+        "en": "Forgets that water left from the day before is still in the gauge.",
+        "id": "Lupa bahwa air sisa hari sebelumnya masih ada di penakar."
+      },
+      "remediation": {
+        "en": "Pour 6 mm of jug water into the empty gauge and leave it; then add more. Ask how much was added.",
+        "id": "Tuang air teko setinggi 6 mm ke penakar kosong dan biarkan; lalu tambahkan lagi. Tanyakan berapa yang ditambahkan."
+      }
+    },
+    {
+      "code": "ADDS_LEFTOVER",
+      "description": {
+        "en": "Adds the old water to the new reading.",
+        "id": "Menambahkan air lama ke hasil bacaan baru."
+      },
+      "remediation": {
+        "en": "Remind that the 14 mm reading already includes the 6 mm. Mark 6 mm on the gauge with tape and look at how much water is above the tape.",
+        "id": "Ingatkan bahwa bacaan 14 mm sudah termasuk 6 mm. Tandai 6 mm di penakar dengan selotip dan lihat berapa banyak air di atas selotip."
+      }
+    },
+    {
+      "code": "WIDER_READS_MORE",
+      "description": {
+        "en": "Thinks a wider container will show more rain depth.",
+        "id": "Mengira wadah yang lebih lebar akan menunjukkan tinggi hujan yang lebih besar."
+      },
+      "remediation": {
+        "en": "Pour water from a watering can with a rose (sprinkler head) evenly over a wide tub and a narrow jar standing together, then measure both depths.",
+        "id": "Siram air dengan gembor yang ada kepala pancurnya secara merata di atas wadah lebar dan stoples sempit yang berdiri bersama, lalu ukur tinggi keduanya."
+      }
+    },
+    {
+      "code": "NARROW_READS_MORE",
+      "description": {
+        "en": "Thinks a narrow container pushes the water higher.",
+        "id": "Mengira wadah sempit mendorong air lebih tinggi."
+      },
+      "remediation": {
+        "en": "Use the same watering-can test, and point out that the narrow jar also has a smaller opening, so it catches less water.",
+        "id": "Lakukan uji gembor yang sama, dan tunjukkan bahwa stoples sempit juga punya bukaan lebih kecil, sehingga menampung air lebih sedikit."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Rain and sky: add a weather symbol from the Kindergarten chart next to each reading. Did the cloudy mornings always have rain in the gauge?",
+      "id": "Hujan dan langit: tambahkan simbol cuaca dari bagan TK di samping setiap hasil bacaan. Apakah pagi yang berawan selalu ada air hujan di penakar?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "If millimetres are too small to read, tape a paper strip marked every 5 mm with thick lines to the outside, with its zero level with the inside bottom.",
+      "id": "Jika milimeter terlalu kecil untuk dibaca, tempel potongan kertas bertanda setiap 5 mm dengan garis tebal di bagian luar, dengan angka nolnya sejajar dasar bagian dalam."
+    },
+    {
+      "en": "A child who finds writing numbers hard can colour a square for each millimetre instead.",
+      "id": "Anak yang kesulitan menulis angka boleh mewarnai satu kotak untuk setiap milimeter."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": true,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Empty the gauge after every reading, and also on any day you miss a reading, so no water stands for days and mosquitoes cannot breed in it.",
+        "id": "Kosongkan penakar setelah setiap pembacaan, dan juga pada hari ketika pembacaan terlewat, sehingga tidak ada air yang tergenang berhari-hari dan nyamuk tidak bisa berkembang biak di dalamnya."
+      },
+      {
+        "en": "Only go out to read the gauge after a storm has passed. If there is thunder or lightning, stay indoors.",
+        "id": "Keluar untuk membaca penakar hanya setelah badai berlalu. Jika ada guntur atau petir, tetap di dalam rumah."
+      },
+      {
+        "en": "Wet ground and steps are slippery; walk carefully, and do not place the gauge on a roof or a high wall your child would need to climb.",
+        "id": "Tanah dan tangga yang basah licin; berjalanlah hati-hati, dan jangan letakkan penakar di atap atau tembok tinggi yang harus dipanjat anak."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child reads the gauge correctly from the 0 mark on five days, empties it each time, and calculates a weekly total and a difference between two days from their own table.",
+      "id": "Dikuasai jika anak membaca penakar dengan benar dari tanda 0 selama lima hari, mengosongkannya setiap kali, dan menghitung total mingguan serta selisih dua hari dari tabelnya sendiri."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-stem",
+    "createdAt": "2026-11-10"
+  }
+}

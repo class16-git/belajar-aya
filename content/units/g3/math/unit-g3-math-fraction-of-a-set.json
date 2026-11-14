@@ -1,0 +1,478 @@
+{
+  "id": "unit-g3-math-fraction-of-a-set",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "math",
+  "strand": "fractions",
+  "title": {
+    "en": "Fractions of a set",
+    "id": "Pecahan dari sekumpulan benda"
+  },
+  "prerequisites": [
+    "unit-g3-math-fractions-of-a-whole",
+    "unit-g3-math-multiplication-division-bar-models"
+  ],
+  "objective": {
+    "en": "Name the fraction of a set that has a property (3 of 8 pens are red, so 3/8), find a unit or non-unit fraction of a quantity by dividing into equal groups and taking some of them, and solve one-step and two-step word problems with bar models.",
+    "id": "Menyebut pecahan dari sekumpulan benda yang memiliki sifat tertentu (3 dari 8 pulpen berwarna merah, jadi 3/8), mencari pecahan satuan atau bukan satuan dari suatu banyak benda dengan membagi menjadi kelompok sama besar lalu mengambil sebagian, dan menyelesaikan soal cerita satu dan dua langkah dengan model batang."
+  },
+  "rationale": {
+    "en": "A fraction can describe part of a group, not only part of one shape. Here the 'whole' is a set of objects, and the equal parts are equal groups, not equal-looking objects. This links fractions to division and prepares for fractions of quantities and percentages later.",
+    "id": "Pecahan bisa menjelaskan bagian dari sekelompok benda, bukan hanya bagian dari satu bangun. Di sini 'keseluruhan' adalah sekumpulan benda, dan bagian yang sama adalah kelompok yang sama banyak, bukan benda yang tampak sama. Ini menghubungkan pecahan dengan pembagian dan menyiapkan pecahan dari suatu besaran dan persen di kemudian hari."
+  },
+  "outcomes": [
+    {
+      "en": "Writes the fraction of a set that has a given property.",
+      "id": "Menulis pecahan dari sekumpulan benda yang memiliki sifat tertentu."
+    },
+    {
+      "en": "Finds 1/n and m/n of a number by dividing into n equal groups.",
+      "id": "Mencari 1/n dan m/n dari suatu bilangan dengan membagi menjadi n kelompok sama banyak."
+    },
+    {
+      "en": "Solves word problems, including finding the part that is left.",
+      "id": "Menyelesaikan soal cerita, termasuk mencari bagian yang tersisa."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can say that the whole is the number of things in the set, not their size.",
+      "id": "Aku bisa menjelaskan bahwa keseluruhan adalah banyak benda dalam kumpulan, bukan ukurannya."
+    },
+    {
+      "en": "I can find 3/4 of 20 by making 4 equal groups and taking 3 of them.",
+      "id": "Aku bisa mencari 3/4 dari 20 dengan membuat 4 kelompok sama banyak dan mengambil 3 di antaranya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use objects of different sizes in some sets (big and small spoons) so the child learns each object counts as one.",
+      "id": "Pakai benda yang berbeda ukuran di beberapa kumpulan (sendok besar dan kecil) agar anak belajar setiap benda dihitung satu."
+    },
+    {
+      "en": "For 'm/n of', always say the two steps aloud: 'Share into n equal groups. Take m groups.'",
+      "id": "Untuk 'm/n dari', selalu ucapkan dua langkahnya: 'Bagi menjadi n kelompok sama banyak. Ambil m kelompok.'"
+    },
+    {
+      "en": "Draw a bar model for every word problem: one bar for the whole set, cut into equal units.",
+      "id": "Gambar model batang untuk setiap soal cerita: satu batang untuk seluruh kumpulan, dibagi menjadi satuan sama besar."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Count the whole set first. That number goes at the bottom.",
+      "id": "Hitung seluruh kumpulan dulu. Bilangan itu ditulis di bawah."
+    },
+    {
+      "en": "Share into equal groups, then take the groups you need.",
+      "id": "Bagi menjadi kelompok sama banyak, lalu ambil kelompok yang kamu perlukan."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "A set of 10 spoons: 7 metal and 3 plastic. 3 out of 10 are plastic, so 3/10 of the set is plastic and 7/10 is metal.",
+        "id": "Sekumpulan 10 sendok: 7 logam dan 3 plastik. 3 dari 10 berbahan plastik, jadi 3/10 kumpulan itu plastik dan 7/10 logam."
+      },
+      {
+        "en": "Find 2/3 of 15 sticks: share the 15 sticks into 3 cups (5 in each), then take 2 cups: 10 sticks.",
+        "id": "Cari 2/3 dari 15 stik: bagi 15 stik ke 3 gelas (masing-masing 5), lalu ambil 2 gelas: 10 stik."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw 18 circles in 6 equal rings of 3. Shade 1 ring for 1/6 of 18 (3) and 5 rings for 5/6 of 18 (15).",
+        "id": "Gambar 18 lingkaran dalam 6 kelompok sama besar berisi 3. Arsir 1 kelompok untuk 1/6 dari 18 (3) dan 5 kelompok untuk 5/6 dari 18 (15)."
+      },
+      {
+        "en": "Bar model: a bar for 28 cut into 4 equal units of 7; shade 3 units for 3/4 of 28 = 21.",
+        "id": "Model batang: batang untuk 28 dibagi menjadi 4 satuan sama besar berisi 7; arsir 3 satuan untuk 3/4 dari 28 = 21."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the steps: 3/5 of 35 → 35 ÷ 5 = 7 → 3 × 7 = 21.",
+        "id": "Tulis langkahnya: 3/5 dari 35 → 35 ÷ 5 = 7 → 3 × 7 = 21."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 30 ice-cream sticks and 6 cups",
+      "id": "Sekitar 30 stik es krim dan 6 gelas"
+    },
+    {
+      "en": "A mixed set of spoons (big, small, metal, plastic)",
+      "id": "Sekumpulan sendok campuran (besar, kecil, logam, plastik)"
+    },
+    {
+      "en": "Paper and coloured pencils for set drawings and bar models",
+      "id": "Kertas dan pensil warna untuk gambar kumpulan dan model batang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Prepare three mixed sets: 10 spoons, 12 pencils and colours, and 15 sticks, and write the fraction questions on cards.",
+      "id": "Siapkan tiga kumpulan campuran: 10 sendok, 12 pensil dan pensil warna, dan 15 stik, lalu tulis soal pecahan di kartu."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Naming the fraction: a pencil case holds 5 pencils and 7 colour pencils, 12 in all. 5/12 of the set are pencils; 7/12 are colour pencils.",
+      "id": "Menyebut pecahan: kotak pensil berisi 5 pensil dan 7 pensil warna, semuanya 12. 5/12 kumpulan itu pensil; 7/12 pensil warna."
+    },
+    {
+      "en": "Size does not matter: 2 big spoons and 2 small spoons. Half of the set is big, 2/4, even though the big spoons take more space.",
+      "id": "Ukuran tidak berpengaruh: 2 sendok besar dan 2 sendok kecil. Setengah kumpulan itu besar, 2/4, walaupun sendok besar memakan tempat lebih banyak."
+    },
+    {
+      "en": "Non-unit fraction: 3/4 of 20 eggs are brown. 20 ÷ 4 = 5 in each quarter, and 3 quarters are 3 × 5 = 15 brown eggs.",
+      "id": "Pecahan bukan satuan: 3/4 dari 20 telur berwarna cokelat. 20 ÷ 4 = 5 di setiap perempat, dan 3 perempat adalah 3 × 5 = 15 telur cokelat."
+    },
+    {
+      "en": "Two-step: Pak Hadi has 32 coconut seedlings and plants 5/8 of them. 32 ÷ 8 = 4, planted 5 × 4 = 20, so 32 - 20 = 12 are not planted yet.",
+      "id": "Dua langkah: Pak Hadi punya 32 bibit kelapa dan menanam 5/8 di antaranya. 32 ÷ 8 = 4, yang ditanam 5 × 4 = 20, jadi 32 - 20 = 12 belum ditanam."
+    }
+  ],
+  "practice": [
+    {
+      "en": "With sticks and cups, find 1/3, 2/3 and 3/3 of 24. What do you notice about 3/3?",
+      "id": "Dengan stik dan gelas, cari 1/3, 2/3, dan 3/3 dari 24. Apa yang kamu perhatikan tentang 3/3?"
+    },
+    {
+      "en": "Describe the family's shoes with fractions: what fraction are sandals, school shoes, slippers?",
+      "id": "Jelaskan alas kaki keluarga dengan pecahan: berapa bagian yang sandal, sepatu sekolah, selop?"
+    },
+    {
+      "en": "Write and solve your own bar-model story for 3/5 of 40.",
+      "id": "Tulis dan selesaikan cerita model batangmu sendiri untuk 3/5 dari 40."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "What is 1/6 of 24?",
+        "id": "Berapa 1/6 dari 24?"
+      },
+      "choices": {
+        "en": [
+          "4",
+          "18",
+          "6"
+        ],
+        "id": [
+          "4",
+          "18",
+          "6"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Share 24 into 6 equal groups: 24 ÷ 6 = 4 in each group.",
+        "id": "Bagi 24 menjadi 6 kelompok sama banyak: 24 ÷ 6 = 4 di setiap kelompok."
+      },
+      "check": {
+        "expression": "24 / 6",
+        "result": "4"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_DENOMINATOR",
+        "2": "GIVES_DENOMINATOR"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A basket holds 30 rambutan. 2/5 of them are ripe. How many are ripe?",
+        "id": "Sebuah keranjang berisi 30 rambutan. 2/5 di antaranya sudah matang. Berapa yang matang?"
+      },
+      "choices": {
+        "en": [
+          "12",
+          "6",
+          "18"
+        ],
+        "id": [
+          "12",
+          "6",
+          "18"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "30 ÷ 5 = 6 in each fifth. 2 fifths are 2 × 6 = 12.",
+        "id": "30 ÷ 5 = 6 di setiap perlima. 2 perlima adalah 2 × 6 = 12."
+      },
+      "check": {
+        "expression": "30 / 5 * 2",
+        "result": "12"
+      },
+      "distractorMisconceptions": {
+        "1": "STOPS_AT_UNIT_FRACTION",
+        "2": "FINDS_OTHER_PART"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A box has 3 red markers and 5 blue markers. What fraction of the markers are red?",
+        "id": "Sebuah kotak berisi 3 spidol merah dan 5 spidol biru. Berapa bagian dari spidol itu yang merah?"
+      },
+      "choices": {
+        "en": [
+          "3/8",
+          "3/5",
+          "5/8"
+        ],
+        "id": [
+          "3/8",
+          "3/5",
+          "5/8"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The whole set is 3 + 5 = 8 markers, and 3 of them are red: 3/8.",
+        "id": "Seluruh kumpulan berisi 3 + 5 = 8 spidol, dan 3 di antaranya merah: 3/8."
+      },
+      "check": {
+        "expression": "3 / (3 + 5)",
+        "result": "3/8"
+      },
+      "distractorMisconceptions": {
+        "1": "PART_OVER_PART",
+        "2": "NAMES_WRONG_PART"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Aya has 12 stickers: 4 large and 8 small. She gives away 1/4 of all her stickers. How many stickers does she give away?",
+        "id": "Aya punya 12 stiker: 4 besar dan 8 kecil. Ia memberikan 1/4 dari semua stikernya. Berapa stiker yang ia berikan?"
+      },
+      "choices": {
+        "en": [
+          "3",
+          "1",
+          "9"
+        ],
+        "id": [
+          "3",
+          "1",
+          "9"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The whole is all 12 stickers, whatever their size: 12 ÷ 4 = 3.",
+        "id": "Keseluruhannya adalah 12 stiker, apa pun ukurannya: 12 ÷ 4 = 3."
+      },
+      "check": {
+        "expression": "12 / 4",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "USES_ONE_GROUP_AS_WHOLE",
+        "2": "FINDS_OTHER_PART"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Bayu's comic has 36 pages. He has read 3/4 of it. How many pages are left to read?",
+        "id": "Komik Bayu punya 36 halaman. Ia sudah membaca 3/4 bagiannya. Berapa halaman lagi yang belum dibaca?"
+      },
+      "choices": {
+        "en": [
+          "9",
+          "27",
+          "33"
+        ],
+        "id": [
+          "9",
+          "27",
+          "33"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "1/4 of 36 is 9, so 3/4 is 27 pages read. 36 - 27 = 9 pages are left (that is the remaining 1/4).",
+        "id": "1/4 dari 36 adalah 9, jadi 3/4 adalah 27 halaman yang sudah dibaca. 36 - 27 = 9 halaman tersisa (yaitu 1/4 sisanya)."
+      },
+      "check": {
+        "expression": "36 - 36 / 4 * 3",
+        "result": "9"
+      },
+      "distractorMisconceptions": {
+        "1": "FINDS_OTHER_PART",
+        "2": "SUBTRACTS_NUMERATOR"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SUBTRACTS_DENOMINATOR",
+      "description": {
+        "en": "Takes the denominator away from the number instead of dividing.",
+        "id": "Mengurangkan penyebut dari bilangan, bukan membagi."
+      },
+      "remediation": {
+        "en": "Share real sticks into 6 cups and count one cup: sharing makes small groups, not 'nearly everything'.",
+        "id": "Bagikan stik sungguhan ke 6 gelas dan hitung satu gelas: membagi menghasilkan kelompok kecil, bukan 'hampir semuanya'."
+      }
+    },
+    {
+      "code": "GIVES_DENOMINATOR",
+      "description": {
+        "en": "Answers with the number of groups instead of the size of one group.",
+        "id": "Menjawab dengan banyak kelompok, bukan isi satu kelompok."
+      },
+      "remediation": {
+        "en": "Draw the 6 rings and count the dots in one ring, saying 'one sixth is what is in one ring'.",
+        "id": "Gambar 6 kelompok dan hitung titik di satu kelompok, sambil berkata 'seperenam adalah isi satu kelompok'."
+      }
+    },
+    {
+      "code": "STOPS_AT_UNIT_FRACTION",
+      "description": {
+        "en": "Finds one unit (1/5) but forgets to take the number of units the numerator says.",
+        "id": "Menemukan satu satuan (1/5) tetapi lupa mengambil sebanyak satuan yang disebut pembilang."
+      },
+      "remediation": {
+        "en": "Shade the bar model unit by unit, counting aloud up to the numerator.",
+        "id": "Arsir model batang satu per satu satuan, sambil menghitung sampai pembilang."
+      }
+    },
+    {
+      "code": "FINDS_OTHER_PART",
+      "description": {
+        "en": "Finds the part that does not have the property, or the part already done instead of the part left.",
+        "id": "Mencari bagian yang tidak memiliki sifat itu, atau bagian yang sudah selesai padahal yang ditanya bagian yang tersisa."
+      },
+      "remediation": {
+        "en": "Label the shaded and unshaded parts of the bar with words from the story ('ripe', 'not ripe') before answering.",
+        "id": "Beri label bagian yang diarsir dan tidak diarsir dengan kata dari cerita ('matang', 'belum matang') sebelum menjawab."
+      }
+    },
+    {
+      "code": "PART_OVER_PART",
+      "description": {
+        "en": "Compares the two parts (3/5) instead of a part to the whole set.",
+        "id": "Membandingkan dua bagian (3/5), bukan bagian dengan seluruh kumpulan."
+      },
+      "remediation": {
+        "en": "Put all the markers in one tray and count them before writing the bottom number.",
+        "id": "Taruh semua spidol di satu nampan dan hitung sebelum menulis bilangan bawah."
+      }
+    },
+    {
+      "code": "NAMES_WRONG_PART",
+      "description": {
+        "en": "Writes the fraction for the other colour.",
+        "id": "Menulis pecahan untuk warna lainnya."
+      },
+      "remediation": {
+        "en": "Circle the colour the question asks about in the picture and count only circled items for the top number.",
+        "id": "Lingkari warna yang ditanyakan di gambar dan hitung hanya benda yang dilingkari untuk bilangan atas."
+      }
+    },
+    {
+      "code": "USES_ONE_GROUP_AS_WHOLE",
+      "description": {
+        "en": "Takes the fraction of only one kind of object (the large stickers) instead of the whole set.",
+        "id": "Mengambil pecahan dari satu jenis benda saja (stiker besar), bukan seluruh kumpulan."
+      },
+      "remediation": {
+        "en": "Mix all the objects together on one plate first, then share the plate into equal groups.",
+        "id": "Campur semua benda di satu piring dulu, lalu bagi isi piring menjadi kelompok sama banyak."
+      }
+    },
+    {
+      "code": "SUBTRACTS_NUMERATOR",
+      "description": {
+        "en": "Subtracts the numerator from the total instead of finding the fraction.",
+        "id": "Mengurangkan pembilang dari total, bukan mencari pecahannya."
+      },
+      "remediation": {
+        "en": "Draw the 36 pages as a bar in 4 units of 9 and shade 3 units: the numerator counts units, not pages.",
+        "id": "Gambar 36 halaman sebagai batang 4 satuan berisi 9 dan arsir 3 satuan: pembilang menghitung satuan, bukan halaman."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Puzzle: 2/3 of Dina's stickers is 14 stickers. How many stickers does she have in all? Draw the bar model to find out.",
+      "id": "Teka-teki: 2/3 dari stiker Dina adalah 14 stiker. Berapa semua stikernya? Gambar model batang untuk menemukannya."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Let the child physically move groups into a separate tray to 'take' them, rather than only shading drawings.",
+      "id": "Biarkan anak memindahkan kelompok ke nampan lain untuk 'mengambil' kelompok itu, bukan hanya mengarsir gambar."
+    },
+    {
+      "en": "Read the fraction aloud in words ('three quarters of twenty') with every written problem.",
+      "id": "Bacakan pecahannya dengan kata-kata ('tiga perempat dari dua puluh') untuk setiap soal tertulis."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Only sticks, spoons and pencils are handled; nothing small enough for a younger sibling to swallow.",
+        "id": "Hanya stik, sendok, dan pensil yang dipakai; tidak ada benda yang cukup kecil untuk tertelan adik."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child names the fraction of two sets and finds a non-unit fraction of three quantities with a bar model without help, on two different days.",
+      "id": "Dikuasai jika anak menyebut pecahan dari dua kumpulan dan mencari pecahan bukan satuan dari tiga besaran dengan model batang tanpa bantuan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "id": "unit-age3_4-stem-listening-walk-sounds",
+  "version": "1.0.0",
+  "level": "age3_4",
+  "framework": "stem",
+  "strand": "science_inquiry",
+  "title": {
+    "en": "A listening walk: what made that sound?",
+    "id": "Jalan-jalan mendengar: suara apa itu?"
+  },
+  "prerequisites": [
+    "unit-age2_3-stem-in-on-under"
+  ],
+  "objective": {
+    "en": "Go on a short listening walk, stand still and quiet to hear sounds, name the thing that made each sound (its source), point to where it came from, and notice that a sound gets quieter as its source moves further away.",
+    "id": "Berjalan-jalan sebentar untuk mendengarkan, berdiri diam dan tenang untuk mendengar suara, menyebut benda yang membuat setiap suara (sumbernya), menunjuk dari mana asalnya, dan memperhatikan bahwa suara makin pelan saat sumbernya makin jauh."
+  },
+  "rationale": {
+    "en": "Careful listening is observation with the ears. Linking a sound to the thing that made it is the first step towards understanding that sounds are made by things moving, which the drum and guitar units build on later.",
+    "id": "Mendengarkan dengan saksama adalah mengamati dengan telinga. Menghubungkan suara dengan benda yang membuatnya adalah langkah pertama untuk memahami bahwa suara dibuat oleh benda yang bergerak, yang nanti dikembangkan di unit gendang dan gitar."
+  },
+  "outcomes": [
+    {
+      "en": "Stays still and quiet for a slow count of ten to listen.",
+      "id": "Diam dan tenang selama hitungan pelan sampai sepuluh untuk mendengarkan."
+    },
+    {
+      "en": "Names the source of a familiar sound, even when it cannot be seen.",
+      "id": "Menyebut sumber suara yang dikenal, walaupun sumbernya tidak terlihat."
+    },
+    {
+      "en": "Points towards where a sound is coming from.",
+      "id": "Menunjuk ke arah datangnya suara."
+    },
+    {
+      "en": "Notices that a passing sound fades as it goes further away.",
+      "id": "Memperhatikan bahwa suara yang lewat memudar saat makin jauh."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can be a quiet listener.",
+      "id": "Aku bisa jadi pendengar yang tenang."
+    },
+    {
+      "en": "I can say what made the sound.",
+      "id": "Aku bisa menyebut apa yang membuat suara itu."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Give the walk a clear routine: walk ten steps, stop, put 'listening hands' behind the ears, close eyes, count slowly to ten together in a whisper, then share what you heard.",
+      "id": "Beri jalan-jalan ini rutinitas yang jelas: berjalan sepuluh langkah, berhenti, pasang 'tangan pendengar' di belakang telinga, pejamkan mata, hitung pelan sampai sepuluh bersama sambil berbisik, lalu ceritakan apa yang terdengar."
+    },
+    {
+      "en": "Ask 'What made that sound?' rather than 'What sound is that?'. The first question asks for the source, which is the point of the walk.",
+      "id": "Tanyakan 'Apa yang membuat suara itu?' bukan 'Itu suara apa?'. Pertanyaan pertama meminta sumbernya, dan itulah tujuan jalan-jalan ini."
+    },
+    {
+      "en": "Before each stop, ask for a prediction: 'What do you think we will hear by the kitchen window?' Afterwards: 'Did we hear it?'",
+      "id": "Sebelum setiap berhenti, minta tebakan: 'Menurutmu kita akan mendengar apa di dekat jendela dapur?' Setelahnya: 'Terdengar tidak?'"
+    },
+    {
+      "en": "Draw a quick picture of each sound source on the strip while you walk, so your child can retell the walk at home.",
+      "id": "Gambar cepat setiap sumber suara di pita kertas sambil berjalan, agar anak bisa menceritakan kembali jalan-jalannya di rumah."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Walk around the house and garden, stopping at four listening spots, and name the source of each sound you hear.",
+        "id": "Berjalan di sekitar rumah dan halaman, berhenti di empat titik mendengar, lalu sebut sumber setiap suara yang terdengar."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Retell the walk from the picture strip: point to each drawing and make the sound it made.",
+        "id": "Ceritakan kembali jalan-jalan dari pita gambar: tunjuk setiap gambar dan tirukan suaranya."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Sound riddle: the grown-up describes a sound in words ('a soft swish-swish in the morning on the yard') and the child names the source.",
+        "id": "Teka-teki suara: orang dewasa menggambarkan suara dengan kata-kata ('srek-srek pelan di halaman pagi hari') dan anak menyebut sumbernya."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A long strip of paper and a crayon for the adult to draw what you hear",
+      "id": "Selembar pita kertas panjang dan krayon untuk orang dewasa menggambar apa yang terdengar"
+    },
+    {
+      "en": "A wooden spoon and a cooking pot (for the hidden-sound game)",
+      "id": "Sendok kayu dan panci (untuk permainan suara tersembunyi)"
+    },
+    {
+      "en": "A sofa or a big chair to hide behind",
+      "id": "Sofa atau kursi besar untuk bersembunyi"
+    },
+    {
+      "en": "A sun hat if you go outside",
+      "id": "Topi jika berjalan di luar"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Choose a short, safe route: inside the house, the yard, or a quiet lane where you can hold hands. Decide four listening spots, for example the kitchen, the front door, under a tree and by the gate.",
+      "id": "Pilih rute yang pendek dan aman: di dalam rumah, halaman, atau gang yang sepi tempat kalian bisa bergandengan tangan. Tentukan empat titik mendengar, misalnya dapur, pintu depan, bawah pohon, dan dekat pagar."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Kitchen stop: eyes closed, count to ten. Your child hears a drip. 'What made that sound?' 'Water!' 'Yes, water dripping from the tap.' Draw a tap with drops.",
+      "id": "Berhenti di dapur: mata terpejam, hitung sampai sepuluh. Anak mendengar tetesan. 'Apa yang membuat suara itu?' 'Air!' 'Ya, air menetes dari keran.' Gambar keran dengan tetesan."
+    },
+    {
+      "en": "Under the tree: a bird sings. 'Where is it coming from? Point!' Your child points up into the branches. Look together; maybe you see the bird, maybe not. 'We heard it even though we could not see it.'",
+      "id": "Di bawah pohon: burung berkicau. 'Dari mana suaranya? Tunjuk!' Anak menunjuk ke atas, ke dahan. Lihat bersama; mungkin burungnya terlihat, mungkin tidak. 'Kita bisa mendengarnya walaupun tidak melihatnya.'"
+    },
+    {
+      "en": "By the gate: a vegetable seller's cart bell rings close by, then the cart moves along the lane. 'Listen... is it getting louder or quieter?' 'Quieter!' 'It is going far away.'",
+      "id": "Di dekat pagar: bel gerobak tukang sayur berbunyi di dekat kalian, lalu gerobaknya bergerak menjauh di gang. 'Dengar... makin keras atau makin pelan?' 'Makin pelan!' 'Gerobaknya pergi jauh.'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Hidden-sound game: the grown-up hides behind the sofa and makes one sound, such as tapping the pot with the spoon, rustling paper or closing a drawer. Your child names what made it, then peeks to check.",
+      "id": "Permainan suara tersembunyi: orang dewasa bersembunyi di balik sofa dan membuat satu suara, seperti mengetuk panci dengan sendok, menggemerisikkan kertas, atau menutup laci. Anak menyebut apa yang membuatnya, lalu mengintip untuk memeriksa."
+    },
+    {
+      "en": "Where is it? Your child closes their eyes; the grown-up claps once from one side of the room. Your child points to the clap, then opens their eyes.",
+      "id": "Di mana suaranya? Anak memejamkan mata; orang dewasa bertepuk sekali dari satu sisi ruangan. Anak menunjuk ke arah tepukan, lalu membuka mata."
+    },
+    {
+      "en": "Evening listening: lie on the bed with the light off for a short count and name every sound together.",
+      "id": "Mendengar di malam hari: berbaring di tempat tidur dengan lampu mati sebentar dan sebutkan semua suara bersama."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "On the walk you hear a motorbike behind a wall, but you cannot see it. Ask 'What made that sound?' What does your child say?",
+        "id": "Saat berjalan, kalian mendengar motor di balik tembok, tetapi motornya tidak terlihat. Tanyakan 'Apa yang membuat suara itu?' Apa jawaban anak?"
+      },
+      "choices": {
+        "en": [
+          "'A motorbike', naming the thing that made it",
+          "'Loud!', describing the sound only",
+          "'The wall', naming the thing they can see"
+        ],
+        "id": [
+          "'Motor', menyebut benda yang membuatnya",
+          "'Keras!', hanya menggambarkan suaranya",
+          "'Temboknya', menyebut benda yang terlihat"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The source is the motorbike, even though the wall is what we can see.",
+        "id": "Sumbernya adalah motor, walaupun yang terlihat adalah tembok."
+      },
+      "distractorMisconceptions": {
+        "1": "DESCRIBES_SOUND_NOT_SOURCE",
+        "2": "NAMES_WHAT_IS_SEEN"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Your child closes their eyes. You stand by the window and shake a bunch of keys. Ask 'Where is the sound?' What does your child do?",
+        "id": "Anak memejamkan mata. Anda berdiri di dekat jendela dan menggoyangkan serangkai kunci. Tanyakan 'Suaranya di mana?' Apa yang dilakukan anak?"
+      },
+      "choices": {
+        "en": [
+          "Points towards the window",
+          "Points to their own ears",
+          "Points anywhere without turning towards the sound"
+        ],
+        "id": [
+          "Menunjuk ke arah jendela",
+          "Menunjuk telinganya sendiri",
+          "Menunjuk ke sembarang arah tanpa menoleh ke arah suara"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The sound comes from the keys, so we point to where the keys are.",
+        "id": "Suara datang dari kunci, jadi kita menunjuk ke tempat kunci itu."
+      },
+      "distractorMisconceptions": {
+        "1": "SOUND_IS_IN_THE_EAR",
+        "2": "NOT_YET_LOCATING_SOUND"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A neighbour's motorbike starts by your gate and rides off down the street. Ask 'What happened to the sound?' What does your child say?",
+        "id": "Motor tetangga menyala di dekat pagar lalu melaju menjauh di jalan. Tanyakan 'Suaranya jadi bagaimana?' Apa jawaban anak?"
+      },
+      "choices": {
+        "en": [
+          "It got quieter as the motorbike went far away",
+          "It stayed just as loud",
+          "It got louder as it went away"
+        ],
+        "id": [
+          "Makin pelan saat motornya makin jauh",
+          "Tetap sama kerasnya",
+          "Makin keras saat motornya pergi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A sound is quieter when its source is further away.",
+        "id": "Suara makin pelan saat sumbernya makin jauh."
+      },
+      "distractorMisconceptions": {
+        "1": "DISTANCE_DOES_NOT_MATTER",
+        "2": "DISTANCE_DOES_NOT_MATTER"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "DESCRIBES_SOUND_NOT_SOURCE",
+      "description": {
+        "en": "Describes how the sound was (loud, funny, bang) instead of what made it.",
+        "id": "Menggambarkan suaranya (keras, lucu, duar) alih-alih benda yang membuatnya."
+      },
+      "remediation": {
+        "en": "Accept the description, then add the source question with a choice: 'Loud, yes! Was it a motorbike or a bird?' Then make the sound yourself with a toy motorbike so the thing and the sound go together.",
+        "id": "Terima gambarannya, lalu tambahkan pertanyaan sumber dengan pilihan: 'Ya, keras! Itu motor atau burung?' Lalu buat suaranya sendiri dengan motor mainan supaya benda dan suaranya terhubung."
+      }
+    },
+    {
+      "code": "NAMES_WHAT_IS_SEEN",
+      "description": {
+        "en": "Names something visible nearby instead of the hidden source.",
+        "id": "Menyebut benda yang terlihat di dekatnya, bukan sumber yang tersembunyi."
+      },
+      "remediation": {
+        "en": "Play the hidden-sound game the other way round: your child hides behind the sofa and makes a sound for you to name, so they feel that the sofa did not make it.",
+        "id": "Mainkan permainan suara tersembunyi secara terbalik: anak bersembunyi di balik sofa dan membuat suara untuk Anda tebak, sehingga ia merasakan bahwa sofa tidak membuat suara itu."
+      }
+    },
+    {
+      "code": "SOUND_IS_IN_THE_EAR",
+      "description": {
+        "en": "Thinks the sound is in their own ears rather than coming from somewhere.",
+        "id": "Mengira suara ada di telinganya sendiri, bukan datang dari suatu tempat."
+      },
+      "remediation": {
+        "en": "Walk slowly towards the shaking keys with eyes open: the sound gets louder the closer you get, so it is coming from the keys.",
+        "id": "Berjalan pelan mendekati kunci yang digoyangkan dengan mata terbuka: suaranya makin keras saat makin dekat, jadi suaranya datang dari kunci."
+      }
+    },
+    {
+      "code": "NOT_YET_LOCATING_SOUND",
+      "description": {
+        "en": "Cannot yet turn towards a sound.",
+        "id": "Belum bisa menoleh ke arah suara."
+      },
+      "remediation": {
+        "en": "Start with a very clear sound from one side, such as calling your child's name from a doorway, and turn their shoulders gently towards it.",
+        "id": "Mulai dengan suara yang sangat jelas dari satu sisi, seperti memanggil nama anak dari ambang pintu, dan putar bahunya dengan lembut ke arah suara."
+      }
+    },
+    {
+      "code": "DISTANCE_DOES_NOT_MATTER",
+      "description": {
+        "en": "Does not yet notice that a sound fades with distance.",
+        "id": "Belum memperhatikan bahwa suara memudar seiring jarak."
+      },
+      "remediation": {
+        "en": "Play near-and-far: you hum one long note while walking slowly away down the hall, then back. Your child waves their arms high when it sounds loud and low when it sounds quiet.",
+        "id": "Main dekat-jauh: Anda bersenandung satu nada panjang sambil berjalan pelan menjauh di lorong, lalu kembali. Anak mengangkat tangan tinggi saat suara terdengar keras dan menurunkannya saat terdengar pelan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a sound map: draw your yard on a big sheet and stick the sound pictures where you heard each one.",
+      "id": "Buat peta suara: gambar halaman di kertas besar lalu tempel gambar suara di tempat masing-masing terdengar."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child with hearing loss, add touch: feel the pot buzz after tapping it, or put a hand on the wall while a door closes. Use sight cues freely.",
+      "id": "Untuk anak dengan gangguan pendengaran, tambahkan sentuhan: rasakan panci bergetar setelah diketuk, atau letakkan tangan di dinding saat pintu ditutup. Gunakan petunjuk penglihatan dengan bebas."
+    },
+    {
+      "en": "A child who finds closing their eyes uncomfortable can listen with eyes open, looking at the ground.",
+      "id": "Anak yang tidak nyaman memejamkan mata boleh mendengarkan dengan mata terbuka sambil melihat ke tanah."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_within_reach",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Outside, hold your child's hand, stay on the yard or the edge of a quiet lane, and never stop to listen on a road. Do not let eyes-closed listening happen near traffic, steps or water.",
+        "id": "Di luar, gandeng tangan anak, tetap di halaman atau tepi gang yang sepi, dan jangan pernah berhenti mendengarkan di jalan raya. Jangan mendengarkan dengan mata terpejam di dekat lalu lintas, tangga, atau air."
+      },
+      {
+        "en": "Do not go close to animals you hear, such as dogs or chickens. Listen from where you are.",
+        "id": "Jangan mendekati hewan yang terdengar, seperti anjing atau ayam. Dengarkan dari tempat kalian berada."
+      },
+      {
+        "en": "Move away from very loud sounds such as building work; covering ears is fine.",
+        "id": "Menjauhlah dari suara yang sangat keras seperti pekerjaan bangunan; menutup telinga boleh."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "parent_observation",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child names the source of three hidden or out-of-sight sounds and points to where two of them came from, on two different walks.",
+      "id": "Dikuasai jika anak menyebut sumber tiga suara yang tersembunyi atau tidak terlihat dan menunjuk asal dua di antaranya, pada dua kali jalan-jalan berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-stem",
+    "createdAt": "2026-11-10"
+  }
+}

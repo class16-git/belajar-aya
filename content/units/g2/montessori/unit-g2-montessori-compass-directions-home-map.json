@@ -1,0 +1,403 @@
+{
+  "id": "unit-g2-montessori-compass-directions-home-map",
+  "version": "1.0.0",
+  "level": "g2",
+  "framework": "montessori",
+  "strand": "geography",
+  "title": {
+    "en": "North, east, south, west: a map of home",
+    "id": "Utara, timur, selatan, barat: peta rumah"
+  },
+  "prerequisites": [
+    "unit-g1-montessori-puzzle-map-of-indonesia"
+  ],
+  "objective": {
+    "en": "Find east from where the Sun rises and west from where it sets, use them to find north and south, draw a simple map of one room or the yard with a north arrow, and give and follow directions using north, east, south and west.",
+    "id": "Menemukan arah timur dari tempat Matahari terbit dan barat dari tempat Matahari terbenam, memakainya untuk menemukan utara dan selatan, menggambar peta sederhana satu ruangan atau halaman dengan tanda panah utara, serta memberi dan mengikuti petunjuk arah memakai utara, timur, selatan, dan barat."
+  },
+  "rationale": {
+    "en": "\"Left\" and \"right\" change when you turn around; north, east, south and west do not. That is why maps use them. The child first finds the directions with her own body and the Sun, which she can check every morning and evening, then transfers them to a bird's-eye map of a place she knows well. Reading the puzzle map of Indonesia (\"Sulawesi is east of Kalimantan\") becomes meaningful once she has walked east herself.",
+    "id": "\"Kiri\" dan \"kanan\" berubah saat kita berbalik; utara, timur, selatan, dan barat tidak. Itulah sebabnya peta memakai arah mata angin. Anak lebih dulu menemukan arah dengan tubuhnya sendiri dan Matahari, yang bisa ia cek setiap pagi dan sore, lalu memindahkannya ke peta tampak atas dari tempat yang sangat ia kenal. Membaca peta puzzle Indonesia (\"Sulawesi di sebelah timur Kalimantan\") menjadi bermakna setelah ia sendiri pernah berjalan ke timur."
+  },
+  "outcomes": [
+    {
+      "en": "Points to east and west outdoors using the Sun's position in the early morning or late afternoon.",
+      "id": "Menunjuk arah timur dan barat di luar rumah memakai posisi Matahari pada pagi atau sore hari."
+    },
+    {
+      "en": "Finds north and south from east and west: facing east, north is on the left and south on the right.",
+      "id": "Menemukan utara dan selatan dari timur dan barat: menghadap timur, utara ada di kiri dan selatan di kanan."
+    },
+    {
+      "en": "Draws a room map from above with a north arrow and uses it to describe where things are.",
+      "id": "Menggambar peta ruangan dari atas dengan tanda panah utara dan memakainya untuk menjelaskan letak benda."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "Your child labels the four walls of a room with N, E, S and W correctly.",
+      "id": "Anak memberi label U, T, S, dan B dengan benar pada keempat dinding ruangan."
+    },
+    {
+      "en": "She follows three spoken directions such as \"Walk to the east wall\" and gives one to you.",
+      "id": "Anak mengikuti tiga petunjuk lisan seperti \"Berjalanlah ke dinding timur\" dan memberi satu petunjuk kepada Anda."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Find out yourself first which way the Sun rises at your home. The Sun rises roughly in the east and sets roughly in the west; across the year it moves a little north or south of due east, which is fine for this lesson.",
+      "id": "Cari tahu sendiri lebih dulu ke arah mana Matahari terbit di rumah Anda. Matahari terbit kira-kira di timur dan terbenam kira-kira di barat; sepanjang tahun posisinya bergeser sedikit ke utara atau selatan dari timur tepat, dan itu tidak masalah untuk pelajaran ini."
+    },
+    {
+      "en": "Use the morning or late afternoon, not midday: in Indonesia the midday Sun is nearly overhead and gives no clear direction.",
+      "id": "Pakai waktu pagi atau sore, bukan tengah hari: di Indonesia Matahari tengah hari hampir tepat di atas kepala sehingga tidak memberi arah yang jelas."
+    },
+    {
+      "en": "Teach your child never to look straight at the Sun; point to the bright part of the sky with an arm instead.",
+      "id": "Ajari anak untuk tidak pernah menatap langsung ke Matahari; tunjuk bagian langit yang terang dengan lengan."
+    },
+    {
+      "en": "Say both the word and the letter: north (N, utara U), east (E, timur T), south (S, selatan S), west (W, barat B).",
+      "id": "Sebut kata dan hurufnya: utara (U, north N), timur (T, east E), selatan (S, south S), barat (B, west W)."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "In the morning, stand outside and point to the bright sky where the Sun has come up. That way is east.",
+      "id": "Pada pagi hari, berdirilah di luar dan tunjuk langit yang terang tempat Matahari terbit. Arah itu timur."
+    },
+    {
+      "en": "Stretch your arms out. Your left hand points north, your right hand points south, and west is behind you.",
+      "id": "Rentangkan kedua lenganmu. Tangan kirimu menunjuk utara, tangan kananmu menunjuk selatan, dan barat ada di belakangmu."
+    },
+    {
+      "en": "Draw your room as a bird would see it from the ceiling. Add an arrow that points north.",
+      "id": "Gambar kamarmu seperti yang dilihat burung dari langit-langit. Tambahkan tanda panah yang menunjuk ke utara."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Four large paper cards labelled N/U, E/T, S/S and W/B, with tape",
+      "id": "Empat kartu kertas besar berlabel N/U, E/T, S/S, dan W/B, dengan selotip"
+    },
+    {
+      "en": "Squared or plain paper, a pencil and coloured pencils for the map",
+      "id": "Kertas berpetak atau polos, pensil, dan pensil warna untuk peta"
+    },
+    {
+      "en": "A few toys or household objects to place and find",
+      "id": "Beberapa mainan atau benda rumah untuk diletakkan dan dicari"
+    },
+    {
+      "en": "The puzzle map of Indonesia from the earlier unit",
+      "id": "Peta puzzle Indonesia dari unit sebelumnya"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "On a clear morning, check from your yard or window which wall of the main room faces the sunrise.",
+      "id": "Pada pagi yang cerah, periksa dari halaman atau jendela dinding mana di ruang utama yang menghadap ke arah Matahari terbit."
+    },
+    {
+      "en": "Clear a space on the floor so the child can walk to each wall.",
+      "id": "Kosongkan ruang di lantai agar anak bisa berjalan ke setiap dinding."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Early morning, outside: \"Point to where the Sun came up, but don't look at it. That way is east, timur.\" Turn your back to it: \"Behind us is west, barat, where the Sun goes down in the evening.\"",
+      "id": "Pagi-pagi, di luar: \"Tunjuk tempat Matahari terbit, tetapi jangan menatapnya. Arah itu timur.\" Balikkan badan: \"Di belakang kita barat, tempat Matahari terbenam pada sore hari.\""
+    },
+    {
+      "en": "Face east again and stretch out both arms: \"Left hand: north, utara. Right hand: south, selatan.\" Turn to face north and ask: \"Now where is east?\" (on the right).",
+      "id": "Hadap timur lagi dan rentangkan kedua lengan: \"Tangan kiri: utara. Tangan kanan: selatan.\" Berbaliklah menghadap utara dan tanyakan: \"Sekarang timur di mana?\" (di kanan)."
+    },
+    {
+      "en": "Indoors, tape the E/T card on the wall nearest the sunrise and let your child decide where the other three cards go.",
+      "id": "Di dalam rumah, tempel kartu E/T di dinding yang paling dekat dengan arah Matahari terbit dan biarkan anak menentukan letak tiga kartu lainnya."
+    },
+    {
+      "en": "Draw the room from above together: the walls as a rectangle, then the bed or table as boxes. Draw the north arrow and write N. \"The table is near the north wall; the door is on the west wall.\"",
+      "id": "Gambar ruangan dari atas bersama: dinding sebagai persegi panjang, lalu tempat tidur atau meja sebagai kotak. Gambar tanda panah utara dan tulis U. \"Meja di dekat dinding utara; pintu ada di dinding barat.\""
+    }
+  ],
+  "practice": [
+    {
+      "en": "Direction game: the adult says \"two steps north, three steps east\" and the child walks it, then gives the adult a route.",
+      "id": "Permainan arah: orang dewasa berkata \"dua langkah ke utara, tiga langkah ke timur\" lalu anak melakukannya, kemudian anak memberi rute kepada orang dewasa."
+    },
+    {
+      "en": "Hide a toy, mark it with an X on the room map and let the other person find it using only the map and the directions.",
+      "id": "Menyembunyikan mainan, menandainya dengan X di peta ruangan, lalu membiarkan orang lain menemukannya hanya dengan peta dan arah mata angin."
+    },
+    {
+      "en": "On the puzzle map of Indonesia, say which island is north, east, south or west of another.",
+      "id": "Di peta puzzle Indonesia, menyebut pulau mana yang berada di utara, timur, selatan, atau barat dari pulau lain."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "In the late afternoon, your shadow points straight ahead of you, away from the Sun. Which way are you facing?",
+        "id": "Pada sore hari, bayanganmu jatuh lurus di depanmu, menjauhi Matahari. Kamu menghadap ke arah mana?"
+      },
+      "choices": {
+        "en": [
+          "East",
+          "West",
+          "North"
+        ],
+        "id": [
+          "Timur",
+          "Barat",
+          "Utara"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The afternoon Sun is in the west, behind you, so your shadow and your face point east.",
+        "id": "Matahari sore ada di barat, di belakangmu, jadi bayangan dan wajahmu mengarah ke timur."
+      },
+      "distractorMisconceptions": {
+        "1": "FACES_THE_SUN",
+        "2": "GUESSES_NORTH"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "You are facing north. You turn to your right. Which way are you facing now?",
+        "id": "Kamu menghadap utara. Kamu berbelok ke kanan. Sekarang kamu menghadap ke mana?"
+      },
+      "choices": {
+        "en": [
+          "East",
+          "West",
+          "South"
+        ],
+        "id": [
+          "Timur",
+          "Barat",
+          "Selatan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Clockwise from north come east, south and west, so a right turn from north faces east.",
+        "id": "Searah jarum jam dari utara: timur, selatan, lalu barat. Jadi berbelok ke kanan dari utara menghadap timur."
+      },
+      "distractorMisconceptions": {
+        "1": "LEFT_RIGHT_SWAP",
+        "2": "TURNS_ALL_THE_WAY"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "On Rina's map the north arrow points to the top of the page. Her bed is drawn on the left side. Which side of the room is the bed on?",
+        "id": "Di peta Rina, tanda panah utara menunjuk ke atas halaman. Tempat tidurnya digambar di sisi kiri. Di sisi mana tempat tidur itu berada di ruangan?"
+      },
+      "choices": {
+        "en": [
+          "The west side",
+          "The east side",
+          "It cannot be known"
+        ],
+        "id": [
+          "Sisi barat",
+          "Sisi timur",
+          "Tidak bisa diketahui"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "With north at the top, the left of the map is west and the right is east.",
+        "id": "Jika utara di atas, sisi kiri peta adalah barat dan sisi kanan adalah timur."
+      },
+      "distractorMisconceptions": {
+        "1": "LEFT_RIGHT_SWAP",
+        "2": "MAP_HAS_NO_DIRECTIONS"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Why does a map show north, east, south and west instead of left and right?",
+        "id": "Mengapa peta menunjukkan utara, timur, selatan, dan barat, bukan kiri dan kanan?"
+      },
+      "choices": {
+        "en": [
+          "Left and right change when you turn round; the compass directions stay the same",
+          "Because left and right are only for writing",
+          "Because north is always the way you are facing"
+        ],
+        "id": [
+          "Kiri dan kanan berubah saat kita berbalik; arah mata angin tetap sama",
+          "Karena kiri dan kanan hanya untuk menulis",
+          "Karena utara selalu arah yang sedang kita hadapi"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Compass directions do not depend on which way a person is facing.",
+        "id": "Arah mata angin tidak bergantung pada arah yang sedang dihadapi seseorang."
+      },
+      "distractorMisconceptions": {
+        "1": "MAP_HAS_NO_DIRECTIONS",
+        "2": "NORTH_IS_AHEAD"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "FACES_THE_SUN",
+      "description": {
+        "en": "Forgets that a shadow points away from the Sun.",
+        "id": "Lupa bahwa bayangan jatuh menjauhi Matahari."
+      },
+      "remediation": {
+        "en": "Shine a torch at a toy on the table from one side and walk round to see the shadow on the other side; then go outside and find your own shadow in the morning and the afternoon.",
+        "id": "Sorotkan senter ke mainan di meja dari satu sisi dan berjalanlah memutar untuk melihat bayangan di sisi lain; lalu keluar dan cari bayanganmu sendiri pada pagi dan sore hari."
+      }
+    },
+    {
+      "code": "GUESSES_NORTH",
+      "description": {
+        "en": "Says \"north\" for any direction that is not clear.",
+        "id": "Menyebut \"utara\" untuk arah apa saja yang belum jelas."
+      },
+      "remediation": {
+        "en": "Always start from the Sun: \"Where is the Sun now? Which way is that?\" Then work out the others from it, arms out.",
+        "id": "Selalu mulai dari Matahari: \"Matahari ada di mana sekarang? Itu arah apa?\" Lalu temukan arah lainnya dari situ, dengan lengan terentang."
+      }
+    },
+    {
+      "code": "LEFT_RIGHT_SWAP",
+      "description": {
+        "en": "Mixes up left and right when turning or reading a map.",
+        "id": "Tertukar kiri dan kanan saat berbelok atau membaca peta."
+      },
+      "remediation": {
+        "en": "Put a sticker on the right hand. Lay the map on the floor so its north arrow points north in the room, stand on it, and turn with the map.",
+        "id": "Tempel stiker di tangan kanan. Letakkan peta di lantai sehingga panah utaranya menunjuk ke utara di ruangan, berdiri di atasnya, lalu berbelok bersama peta."
+      }
+    },
+    {
+      "code": "TURNS_ALL_THE_WAY",
+      "description": {
+        "en": "Turns round to face behind instead of turning a quarter.",
+        "id": "Berbalik ke belakang alih-alih berbelok seperempat putaran."
+      },
+      "remediation": {
+        "en": "Stand in the middle of the four wall cards and make a quarter turn so you face the next card; say its name. Repeat until you are back to north.",
+        "id": "Berdiri di tengah empat kartu dinding dan berbelok seperempat putaran sampai menghadap kartu berikutnya; sebut namanya. Ulangi sampai kembali menghadap utara."
+      }
+    },
+    {
+      "code": "MAP_HAS_NO_DIRECTIONS",
+      "description": {
+        "en": "Does not use the north arrow, so cannot tell where things are.",
+        "id": "Tidak memakai tanda panah utara, sehingga tidak bisa menentukan letak benda."
+      },
+      "remediation": {
+        "en": "Turn the room map so its north arrow lines up with the N card on the wall, then walk to the bed on the map and in the room.",
+        "id": "Putar peta ruangan sampai tanda panah utaranya sejajar dengan kartu U di dinding, lalu berjalan ke tempat tidur di peta dan di ruangan."
+      }
+    },
+    {
+      "code": "NORTH_IS_AHEAD",
+      "description": {
+        "en": "Thinks north is whatever is in front.",
+        "id": "Mengira utara adalah arah apa saja yang ada di depan."
+      },
+      "remediation": {
+        "en": "Face a different wall each time and ask \"Where is north now?\" The N card stays on the same wall however you turn.",
+        "id": "Hadap dinding yang berbeda setiap kali dan tanyakan \"Sekarang utara di mana?\" Kartu U tetap di dinding yang sama ke mana pun kita berbalik."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Learn the in-between directions: north-east (timur laut), south-east (tenggara), south-west (barat daya), north-west (barat laut).",
+      "id": "Mempelajari arah di antaranya: timur laut, tenggara, barat daya, dan barat laut."
+    },
+    {
+      "en": "Draw a map of the route from home to a nearby shop or school with a north arrow and two landmarks.",
+      "id": "Menggambar peta rute dari rumah ke toko atau sekolah terdekat dengan tanda panah utara dan dua tanda tempat."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Put a different texture on each wall card (smooth, bumpy, soft, rough) for a child with low vision.",
+      "id": "Beri tekstur berbeda pada setiap kartu dinding (licin, bergelombang, lembut, kasar) untuk anak dengan penglihatan terbatas."
+    },
+    {
+      "en": "A child who finds drawing hard can build the room map with blocks on a tray and add a paper north arrow.",
+      "id": "Anak yang kesulitan menggambar bisa membangun peta ruangan dengan balok di atas nampan dan menambahkan tanda panah utara dari kertas."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Never look directly at the Sun; point to the bright part of the sky instead.",
+        "id": "Jangan pernah menatap Matahari secara langsung; tunjuk saja bagian langit yang terang."
+      },
+      {
+        "en": "Do the outdoor part in your own yard or another safe place, away from the road, with an adult present.",
+        "id": "Lakukan bagian di luar rumah di halaman sendiri atau tempat aman lain, jauh dari jalan, dengan orang dewasa hadir."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child finds the four directions outdoors from the Sun, labels a room correctly and follows a map to a hidden object, on two different days.",
+      "id": "Dikuasai jika anak menemukan keempat arah di luar rumah dari Matahari, memberi label ruangan dengan benar, dan mengikuti peta menuju benda tersembunyi, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "safety",
+      "age-fit",
+      "transfer-assessment"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

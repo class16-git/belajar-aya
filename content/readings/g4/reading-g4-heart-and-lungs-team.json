@@ -1,0 +1,291 @@
+{
+  "id": "reading-g4-heart-and-lungs-team",
+  "version": "1.0.0",
+  "level": "g4",
+  "readingLevel": "fluent",
+  "genre": "explanatory",
+  "mode": "independent",
+  "title": {
+    "en": "How your heart and lungs work as a team",
+    "id": "Cara jantung dan paru-paru bekerja sama"
+  },
+  "text": {
+    "en": [
+      "Every part of your body, from your brain to your toes, needs oxygen to work. Oxygen is a gas in the air. Two organs work together to get it to every part of you: your lungs and your heart.",
+      "When you breathe in, air goes down your windpipe and into your two lungs. Inside, the air reaches millions of tiny air sacs. Each sac is wrapped in very thin blood vessels, so oxygen can pass from the air into your blood.",
+      "Your heart is a strong muscle about the size of your fist. It is a pump with two sides. The right side pumps blood to the lungs to pick up oxygen. The left side pumps that oxygen-rich blood out to the whole body.",
+      "As blood travels round your body, your muscles and organs take the oxygen they need. They give back a waste gas called carbon dioxide. The blood carries it back to the heart and then to the lungs, and you breathe it out.",
+      "When you run or skip, your muscles work harder and need more oxygen. So two things happen at once: you breathe faster and more deeply, and your heart beats faster to move the blood more quickly. When you rest, both slow down again.",
+      "You can measure your heartbeat by feeling your pulse. Press two fingers gently on the inside of your wrist, below your thumb. Count the beats for 15 seconds, then multiply by 4 to get beats per minute. For example, 20 beats in 15 seconds is 80 beats per minute.",
+      "Regular exercise, like playing outside, cycling or swimming, makes your heart and lungs stronger, just as practice makes other muscles stronger. Clean air matters too: smoke harms the lungs, so it is best to stay away from it."
+    ],
+    "id": [
+      "Setiap bagian tubuhmu, dari otak sampai jari kaki, memerlukan oksigen untuk bekerja. Oksigen adalah gas di udara. Dua organ bekerja sama untuk mengantarkannya ke seluruh tubuh: paru-paru dan jantung.",
+      "Saat kamu menarik napas, udara masuk lewat batang tenggorokan ke dalam kedua paru-parumu. Di dalamnya, udara sampai ke jutaan kantong udara kecil. Setiap kantong dibungkus pembuluh darah yang sangat tipis, sehingga oksigen bisa berpindah dari udara ke dalam darahmu.",
+      "Jantungmu adalah otot kuat yang kira-kira sebesar kepalan tanganmu. Jantung adalah pompa dengan dua sisi. Sisi kanan memompa darah ke paru-paru untuk mengambil oksigen. Sisi kiri memompa darah yang kaya oksigen itu ke seluruh tubuh.",
+      "Saat darah mengalir ke seluruh tubuh, otot dan organmu mengambil oksigen yang mereka perlukan. Mereka mengembalikan gas sisa yang disebut karbon dioksida. Darah membawanya kembali ke jantung lalu ke paru-paru, dan kamu mengembuskannya keluar.",
+      "Saat kamu berlari atau lompat tali, ototmu bekerja lebih keras dan memerlukan lebih banyak oksigen. Jadi dua hal terjadi bersamaan: napasmu lebih cepat dan dalam, dan jantungmu berdetak lebih cepat untuk mengalirkan darah lebih cepat. Saat kamu beristirahat, keduanya melambat lagi.",
+      "Kamu bisa mengukur detak jantung dengan merasakan denyut nadi. Tekan pelan dua jari di bagian dalam pergelangan tangan, di bawah ibu jari. Hitung denyutnya selama 15 detik, lalu kalikan 4 untuk mendapatkan denyut per menit. Contohnya, 20 denyut dalam 15 detik berarti 80 denyut per menit.",
+      "Olahraga teratur, seperti bermain di luar, bersepeda, atau berenang, membuat jantung dan paru-parumu lebih kuat, sama seperti latihan membuat otot lain lebih kuat. Udara bersih juga penting: asap merusak paru-paru, jadi sebaiknya kita menjauhinya."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Explains how the heart and lungs work together to carry oxygen round the body.",
+      "id": "Menjelaskan bagaimana jantung dan paru-paru bekerja sama mengalirkan oksigen ke seluruh tubuh."
+    },
+    {
+      "en": "Measures a pulse and calculates beats per minute.",
+      "id": "Mengukur denyut nadi dan menghitung denyut per menit."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "oxygen",
+        "id": "oksigen"
+      },
+      "meaning": {
+        "en": "a gas in the air that the body needs to live",
+        "id": "gas di udara yang diperlukan tubuh untuk hidup"
+      }
+    },
+    {
+      "word": {
+        "en": "carbon dioxide",
+        "id": "karbon dioksida"
+      },
+      "meaning": {
+        "en": "a waste gas the body breathes out",
+        "id": "gas sisa yang diembuskan tubuh"
+      }
+    },
+    {
+      "word": {
+        "en": "pulse",
+        "id": "denyut nadi"
+      },
+      "meaning": {
+        "en": "the beat you can feel as the heart pushes blood",
+        "id": "denyutan yang terasa saat jantung memompa darah"
+      }
+    },
+    {
+      "word": {
+        "en": "organ",
+        "id": "organ"
+      },
+      "meaning": {
+        "en": "a body part with a special job, such as the heart or lungs",
+        "id": "bagian tubuh dengan tugas khusus, seperti jantung atau paru-paru"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where does oxygen pass from the air into the blood?",
+        "id": "Di mana oksigen berpindah dari udara ke dalam darah?"
+      },
+      "choices": {
+        "en": [
+          "in the tiny air sacs of the lungs",
+          "in the stomach",
+          "in the windpipe only"
+        ],
+        "id": [
+          "di kantong udara kecil di paru-paru",
+          "di lambung",
+          "hanya di batang tenggorokan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "What does the left side of the heart do?",
+        "id": "Apa tugas sisi kiri jantung?"
+      },
+      "choices": {
+        "en": [
+          "pumps oxygen-rich blood to the whole body",
+          "pumps blood to the lungs",
+          "makes oxygen from food"
+        ],
+        "id": [
+          "memompa darah kaya oksigen ke seluruh tubuh",
+          "memompa darah ke paru-paru",
+          "membuat oksigen dari makanan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "After a race, Tegar is breathing hard and his heart is pounding. What is his body doing?",
+        "id": "Setelah lomba lari, napas Tegar terengah-engah dan jantungnya berdebar kencang. Apa yang sedang dilakukan tubuhnya?"
+      },
+      "choices": {
+        "en": [
+          "getting extra oxygen to his hard-working muscles",
+          "getting ready to sleep",
+          "trying to stop his blood moving"
+        ],
+        "id": [
+          "mengantarkan oksigen tambahan ke otot yang bekerja keras",
+          "bersiap untuk tidur",
+          "berusaha menghentikan aliran darah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "Nadia counts 23 beats in 15 seconds. What is her pulse in beats per minute?",
+        "id": "Nadia menghitung 23 denyut dalam 15 detik. Berapa denyut nadinya per menit?"
+      },
+      "choices": {
+        "en": [
+          "92 beats per minute",
+          "38 beats per minute",
+          "27 beats per minute",
+          "345 beats per minute"
+        ],
+        "id": [
+          "92 denyut per menit",
+          "38 denyut per menit",
+          "27 denyut per menit",
+          "345 denyut per menit"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5,
+      "check": {
+        "expression": "23 x 4",
+        "result": "92"
+      }
+    },
+    {
+      "id": "q5",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "Which sentence best states the main idea?",
+        "id": "Kalimat mana yang paling tepat menyatakan gagasan utama?"
+      },
+      "choices": {
+        "en": [
+          "The lungs take in oxygen and the heart pumps it round the body in the blood.",
+          "The heart is the size of a fist.",
+          "Running is more fun than resting."
+        ],
+        "id": [
+          "Paru-paru mengambil oksigen dan jantung memompanya ke seluruh tubuh lewat darah.",
+          "Jantung sebesar kepalan tangan.",
+          "Berlari lebih seru daripada beristirahat."
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "The circulatory and respiratory systems work together to deliver oxygen and remove carbon dioxide.",
+        "id": "Sistem peredaran darah dan sistem pernapasan bekerja sama mengantarkan oksigen dan membuang karbon dioksida."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Multiplying a 15-second count by 4 gives a rate per minute.",
+        "id": "Mengalikan hitungan 15 detik dengan 4 menghasilkan laju per menit."
+      }
+    },
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Exercise strengthens the heart and lungs; smoke damages the lungs.",
+        "id": "Olahraga menguatkan jantung dan paru-paru; asap merusak paru-paru."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Why do you think your heart never takes a long rest, even when you are asleep?",
+      "id": "Menurutmu mengapa jantung tidak pernah beristirahat lama, bahkan saat kamu tidur?"
+    },
+    {
+      "en": "Which activities make your pulse rise the most? How could you test it fairly?",
+      "id": "Kegiatan apa yang paling menaikkan denyut nadimu? Bagaimana cara mengujinya dengan adil?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Pulse experiment: sit quietly for two minutes, then count your pulse for 15 seconds and multiply by 4. Next, march or skip on the spot for one minute and measure again straight away. Then rest for two minutes and measure a third time. Record the three numbers in a table and write two sentences explaining the pattern using the words oxygen and muscles.",
+    "id": "Percobaan denyut nadi: duduk tenang selama dua menit, lalu hitung denyut nadimu selama 15 detik dan kalikan 4. Berikutnya, berbaris atau lompat di tempat selama satu menit dan segera ukur lagi. Lalu beristirahat dua menit dan ukur untuk ketiga kalinya. Catat ketiga angka itu dalam tabel dan tulis dua kalimat yang menjelaskan polanya memakai kata oksigen dan otot."
+  },
+  "factChecks": [
+    {
+      "claim": "Oxygen passes from tiny air sacs (alveoli) in the lungs into the blood.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The heart is a muscle roughly the size of its owner's fist.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The right side of the heart pumps blood to the lungs; the left side pumps oxygen-rich blood to the body.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Body cells release carbon dioxide, which is carried to the lungs and breathed out.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Exercise raises breathing rate and heart rate; regular exercise strengthens heart and lungs.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Pulse can be found at the wrist; a 15-second count multiplied by 4 gives beats per minute.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Exercise on the spot on a clear floor, and stop and rest if you feel dizzy, unwell or out of breath for long. A child with a heart or breathing condition should follow their doctor's advice.",
+      "id": "Berolahraga di tempat di lantai yang lapang, dan berhenti serta beristirahat jika merasa pusing, tidak enak badan, atau sesak napas lama. Anak dengan gangguan jantung atau pernapasan sebaiknya mengikuti saran dokternya."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

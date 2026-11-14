@@ -1,0 +1,452 @@
+{
+  "id": "unit-g1-stem-code-friend-around-obstacles",
+  "version": "1.0.0",
+  "level": "g1",
+  "framework": "stem",
+  "strand": "algorithms",
+  "title": {
+    "en": "Code a friend around the obstacles",
+    "id": "Memprogram teman melewati rintangan"
+  },
+  "prerequisites": [
+    "unit-k-stem-floor-grid-arrows"
+  ],
+  "objective": {
+    "en": "Write an arrow program that guides a friend acting as a robot across a floor grid with several cushion obstacles to a goal, find two different routes that work, count the cards in each, choose the shorter one, and test it with the robot following the cards exactly.",
+    "id": "Menyusun program panah yang memandu teman yang berperan sebagai robot melintasi petak lantai dengan beberapa rintangan bantal menuju tujuan, menemukan dua jalur berbeda yang berhasil, menghitung kartu di setiap jalur, memilih yang lebih pendek, dan mengujinya dengan robot yang mengikuti kartu persis."
+  },
+  "rationale": {
+    "en": "Planning a path around obstacles is a real robotics problem. Children learn that a robot does only what the program says (it does not 'see' the cushion), that many programs can solve one problem, and that we can compare solutions by a measure, here the number of cards.",
+    "id": "Merencanakan jalur melewati rintangan adalah masalah robotika yang nyata. Anak belajar bahwa robot hanya melakukan apa yang tertulis di program (ia tidak 'melihat' bantal), bahwa banyak program bisa menyelesaikan satu masalah, dan bahwa kita bisa membandingkan solusi dengan suatu ukuran, di sini jumlah kartu."
+  },
+  "outcomes": [
+    {
+      "en": "Writes a program that reaches the goal without stepping on an obstacle square.",
+      "id": "Menyusun program yang mencapai tujuan tanpa menginjak kotak rintangan."
+    },
+    {
+      "en": "Finds a second, different route that also works.",
+      "id": "Menemukan jalur kedua yang berbeda yang juga berhasil."
+    },
+    {
+      "en": "Counts and compares the length of two programs and picks the shorter.",
+      "id": "Menghitung dan membandingkan panjang dua program lalu memilih yang lebih pendek."
+    },
+    {
+      "en": "Treats a bump as a bug in the program, not a fault of the robot.",
+      "id": "Menganggap tabrakan sebagai bug di program, bukan kesalahan robot."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "My robot reaches the goal with no bumps.",
+      "id": "Robotku sampai di tujuan tanpa menabrak."
+    },
+    {
+      "en": "I can find two routes and say which one is shorter.",
+      "id": "Aku bisa menemukan dua jalur dan menyebut mana yang lebih pendek."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Agree the robot rules out loud before every game: the robot moves one square for each card, in the arrow's direction on the map; the robot never chooses its own way; if the next square has a cushion, the robot says 'Bump!' and stops.",
+      "id": "Sepakati aturan robot dengan keras sebelum setiap permainan: robot bergerak satu kotak untuk setiap kartu, ke arah panah di peta; robot tidak pernah memilih jalannya sendiri; jika kotak berikutnya ada bantal, robot berkata 'Tabrak!' lalu berhenti."
+    },
+    {
+      "en": "Let the programmer lay out the whole program before the robot starts. Ask for a prediction: 'How many cards? Will there be a bump?'",
+      "id": "Biarkan pemrogram menyusun seluruh program sebelum robot mulai. Minta tebakan: 'Berapa kartu? Akan ada tabrakan tidak?'"
+    },
+    {
+      "en": "When a bump happens, praise the find: 'We found a bug! Which card sent the robot into the cushion?' Fix that card and run the program again from the start.",
+      "id": "Saat terjadi tabrakan, puji temuannya: 'Kita menemukan bug! Kartu mana yang membuat robot menabrak bantal?' Perbaiki kartu itu lalu jalankan program lagi dari awal."
+    },
+    {
+      "en": "Once one route works, ask 'Can you find another way?' and compare: lay the two programs one above the other and count the cards.",
+      "id": "Setelah satu jalur berhasil, tanyakan 'Bisa menemukan jalan lain?' lalu bandingkan: susun kedua program satu di atas yang lain dan hitung kartunya."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Look at the grid. Find the start, the teddy and the cushions.",
+      "id": "Lihat petak. Temukan kotak mulai, boneka, dan bantal-bantalnya."
+    },
+    {
+      "en": "Lay out your arrow cards, one card for each square, going around the cushions.",
+      "id": "Susun kartu panahmu, satu kartu untuk setiap kotak, memutari bantal."
+    },
+    {
+      "en": "Read the cards to your robot one at a time. If it bumps, find the card that caused it.",
+      "id": "Bacakan kartu kepada robotmu satu per satu. Jika menabrak, cari kartu penyebabnya."
+    },
+    {
+      "en": "Find a second route and count which one is shorter.",
+      "id": "Temukan jalur kedua dan hitung mana yang lebih pendek."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Mark a 5 by 5 floor grid with small tape crosses at the corners of the squares, put cushions on some squares as rocks, and guide a family member robot with arrow cards.",
+        "id": "Tandai petak lantai 5 kali 5 dengan tanda silang kecil dari selotip di sudut-sudut kotak, taruh bantal di beberapa kotak sebagai batu, lalu pandu anggota keluarga yang menjadi robot dengan kartu panah."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the same grid on squared paper, shade the cushion squares, and draw each route as a line of arrows in a different colour.",
+        "id": "Gambar petak yang sama di kertas berpetak, arsir kotak bantal, lalu gambar setiap jalur sebagai deretan panah dengan warna berbeda."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write each program as arrow symbols in a row, count them, and write the totals side by side to compare.",
+        "id": "Tulis setiap program sebagai deretan simbol panah, hitung, lalu tulis jumlahnya berdampingan untuk dibandingkan."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Masking tape (about 5 metres) to mark the corners of a 5 by 5 grid of big-step squares",
+      "id": "Selotip kertas (sekitar 5 meter) untuk menandai sudut-sudut petak 5 kali 5 dengan kotak selebar langkah besar"
+    },
+    {
+      "en": "About 20 arrow cards cut from card by the adult, with thick arrows (up, down, left, right)",
+      "id": "Sekitar 20 kartu panah yang dipotong orang dewasa dari karton, dengan panah tebal (atas, bawah, kiri, kanan)"
+    },
+    {
+      "en": "Three or four soft cushions as obstacles",
+      "id": "Tiga atau empat bantal empuk sebagai rintangan"
+    },
+    {
+      "en": "A teddy as the goal and a paper star for the start",
+      "id": "Boneka sebagai tujuan dan bintang kertas sebagai kotak mulai"
+    },
+    {
+      "en": "Squared paper and coloured pencils",
+      "id": "Kertas berpetak dan pensil warna"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Mark the grid on a clear floor. Agree which wall 'up' points to, as in the Kindergarten grid game, and stick a small up-arrow card on that wall as a reminder.",
+      "id": "Tandai petak di lantai yang kosong. Sepakati dinding mana yang ditunjuk 'atas', seperti di permainan petak TK, dan tempel kartu panah atas kecil di dinding itu sebagai pengingat."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Rock in the way: the start is in the bottom-left corner and teddy is 4 squares to the right along the bottom row. A cushion sits on the second square of that row. Straight right would bump. Route 1: up, right, right, right, right, down. That is 6 cards and no bump.",
+      "id": "Batu menghalangi: kotak mulai ada di sudut kiri bawah dan boneka 4 kotak ke kanan di baris paling bawah. Sebuah bantal ada di kotak kedua baris itu. Lurus ke kanan akan menabrak. Jalur 1: atas, kanan, kanan, kanan, kanan, bawah. Itu 6 kartu dan tanpa tabrakan."
+    },
+    {
+      "en": "Another way: Route 2 goes up two rows instead: up, up, right, right, right, right, down, down. That is 8 cards. Both reach teddy. Compare: 8 − 6 = 2, so Route 1 is shorter by 2 cards.",
+      "id": "Jalan lain: Jalur 2 naik dua baris: atas, atas, kanan, kanan, kanan, kanan, bawah, bawah. Itu 8 kartu. Keduanya sampai ke boneka. Bandingkan: 8 − 6 = 2, jadi Jalur 1 lebih pendek 2 kartu."
+    },
+    {
+      "en": "A bug: Tari writes right, up, right, right, right, down. The robot moves right onto the cushion square: 'Bump!' The bug is the first card. Swap the first two cards so the robot goes up first, and run it again from the start.",
+      "id": "Sebuah bug: Tari menyusun kanan, atas, kanan, kanan, kanan, bawah. Robot bergerak ke kanan ke kotak bantal: 'Tabrak!' Bug-nya ada di kartu pertama. Tukar dua kartu pertama supaya robot naik dulu, lalu jalankan lagi dari awal."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Wall with a gap: put three cushions in a line across the middle column with one empty square at the top. Program the robot through the gap to teddy on the other side.",
+      "id": "Tembok dengan celah: taruh tiga bantal berjajar di kolom tengah dengan satu kotak kosong di atas. Program robot melewati celah menuju boneka di seberang."
+    },
+    {
+      "en": "Swap roles: your child is the robot and follows a program you wrote with one hidden bug. Can they spot the bug before stepping on the cushion?",
+      "id": "Tukar peran: anak menjadi robot dan mengikuti program buatan Anda yang berisi satu bug tersembunyi. Bisakah ia menemukan bug-nya sebelum menginjak bantal?"
+    },
+    {
+      "en": "Draw two routes for the same grid on squared paper, count the cards for each, then walk the shorter one to check.",
+      "id": "Gambar dua jalur untuk petak yang sama di kertas berpetak, hitung kartu masing-masing, lalu jalankan jalur yang lebih pendek untuk memeriksa."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Teddy is 3 squares to the right of the start. A cushion sits on the square just to the right of the start. The shortest program goes up one square, right three squares, then down one square. How many cards is that?",
+        "id": "Boneka 3 kotak di sebelah kanan kotak mulai. Sebuah bantal ada di kotak tepat di sebelah kanan kotak mulai. Program terpendek naik satu kotak, ke kanan tiga kotak, lalu turun satu kotak. Berapa kartu itu?"
+      },
+      "choices": {
+        "en": [
+          "5 cards",
+          "3 cards",
+          "4 cards"
+        ],
+        "id": [
+          "5 kartu",
+          "3 kartu",
+          "4 kartu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "One card per square: 1 up + 3 right + 1 down = 5 cards.",
+        "id": "Satu kartu per kotak: 1 atas + 3 kanan + 1 bawah = 5 kartu."
+      },
+      "check": {
+        "expression": "1 + 3 + 1",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_OBSTACLE",
+        "2": "FORGETS_RETURN_STEP"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Route A has 9 cards and Route B has 6 cards. Both reach teddy with no bump. How many cards shorter is Route B?",
+        "id": "Jalur A punya 9 kartu dan Jalur B punya 6 kartu. Keduanya sampai ke boneka tanpa tabrakan. Jalur B lebih pendek berapa kartu?"
+      },
+      "choices": {
+        "en": [
+          "3 cards shorter",
+          "6 cards shorter",
+          "15 cards shorter"
+        ],
+        "id": [
+          "Lebih pendek 3 kartu",
+          "Lebih pendek 6 kartu",
+          "Lebih pendek 15 kartu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Find the difference: 9 − 6 = 3.",
+        "id": "Cari selisihnya: 9 − 6 = 3."
+      },
+      "check": {
+        "expression": "9 - 6",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_ONE_ROUTE_LENGTH",
+        "2": "ADDS_TO_COMPARE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "The program is right, right, up. A cushion is on the second square to the right of the start. What does the robot do?",
+        "id": "Programnya kanan, kanan, atas. Sebuah bantal ada di kotak kedua di sebelah kanan kotak mulai. Apa yang dilakukan robot?"
+      },
+      "choices": {
+        "en": [
+          "Says 'Bump!' on the second card and stops",
+          "Walks around the cushion by itself and carries on",
+          "Reaches the square above the cushion with no problem"
+        ],
+        "id": [
+          "Berkata 'Tabrak!' pada kartu kedua lalu berhenti",
+          "Memutari bantal sendiri lalu melanjutkan",
+          "Sampai di kotak di atas bantal tanpa masalah"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The first card moves one square right; the second card would step onto the cushion square, so the robot bumps and stops. The robot never changes the program.",
+        "id": "Kartu pertama bergerak satu kotak ke kanan; kartu kedua akan menginjak kotak bantal, jadi robot menabrak dan berhenti. Robot tidak pernah mengubah program."
+      },
+      "distractorMisconceptions": {
+        "1": "ROBOT_FIXES_PROGRAM",
+        "2": "DOES_NOT_TRACE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "The robot followed every card exactly and walked into a cushion. Where is the bug?",
+        "id": "Robot mengikuti setiap kartu dengan persis dan menabrak bantal. Di mana bug-nya?"
+      },
+      "choices": {
+        "en": [
+          "In the program: a card needs changing",
+          "In the robot, for not looking where it was going",
+          "Nowhere; bumps just happen sometimes"
+        ],
+        "id": [
+          "Di program: ada kartu yang perlu diubah",
+          "Di robot, karena tidak melihat jalan",
+          "Tidak ada; tabrakan kadang terjadi begitu saja"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A robot that follows the cards exactly does what the program says, so the fix is in the program.",
+        "id": "Robot yang mengikuti kartu dengan persis melakukan apa yang tertulis di program, jadi perbaikannya ada di program."
+      },
+      "distractorMisconceptions": {
+        "1": "BLAMES_ROBOT",
+        "2": "BUGS_ARE_RANDOM"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "IGNORES_OBSTACLE",
+      "description": {
+        "en": "Counts the straight route as if the obstacle were not there.",
+        "id": "Menghitung jalur lurus seolah-olah rintangannya tidak ada."
+      },
+      "remediation": {
+        "en": "Put a sticky note on every square the robot will stand on before counting; if a note lands on a cushion, the route must change.",
+        "id": "Tempel kertas catatan di setiap kotak yang akan diinjak robot sebelum menghitung; jika ada catatan yang jatuh di bantal, jalurnya harus diubah."
+      }
+    },
+    {
+      "code": "FORGETS_RETURN_STEP",
+      "description": {
+        "en": "Forgets the card that brings the robot back down to the goal row after going round.",
+        "id": "Lupa kartu yang membawa robot turun kembali ke baris tujuan setelah memutar."
+      },
+      "remediation": {
+        "en": "Walk the route yourself and say each card as you step. Stop on the square above teddy and ask \"Am I on teddy yet?\"",
+        "id": "Jalani sendiri jalurnya dan ucapkan setiap kartu saat melangkah. Berhenti di kotak di atas boneka dan tanyakan \"Sudah sampai di boneka belum?\""
+      }
+    },
+    {
+      "code": "GIVES_ONE_ROUTE_LENGTH",
+      "description": {
+        "en": "Gives the length of one route instead of the difference.",
+        "id": "Menyebut panjang satu jalur alih-alih selisihnya."
+      },
+      "remediation": {
+        "en": "Lay the two programs one above the other, card under card, and count only the cards of the longer one that have nothing underneath.",
+        "id": "Susun dua program satu di atas yang lain, kartu di bawah kartu, lalu hitung hanya kartu dari program yang lebih panjang yang tidak punya pasangan di bawahnya."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds the two lengths when asked how much shorter.",
+        "id": "Menjumlahkan kedua panjang saat ditanya berapa lebih pendek."
+      },
+      "remediation": {
+        "en": "Ask \"Which is shorter? By how many?\" while covering the matching cards with a sheet of paper.",
+        "id": "Tanyakan \"Mana yang lebih pendek? Berapa selisihnya?\" sambil menutupi kartu yang berpasangan dengan selembar kertas."
+      }
+    },
+    {
+      "code": "ROBOT_FIXES_PROGRAM",
+      "description": {
+        "en": "Expects the robot to notice the obstacle and go around it by itself.",
+        "id": "Mengira robot akan melihat rintangan dan memutarinya sendiri."
+      },
+      "remediation": {
+        "en": "Be the robot yourself: say 'beep' at each card, follow only the cards your child reads, and walk slowly into the soft cushion when the program says so.",
+        "id": "Jadilah robot sendiri: ucapkan 'bip' di setiap kartu, ikuti hanya kartu yang dibacakan anak, dan berjalan pelan menabrak bantal empuk jika programnya menyuruh begitu."
+      }
+    },
+    {
+      "code": "DOES_NOT_TRACE",
+      "description": {
+        "en": "Guesses the result without stepping through the cards one at a time.",
+        "id": "Menebak hasil tanpa menelusuri kartu satu per satu."
+      },
+      "remediation": {
+        "en": "Move a toy figure on the paper grid, one card at a time, touching each card as you read it.",
+        "id": "Gerakkan mainan kecil di petak kertas, satu kartu demi satu kartu, sambil menyentuh setiap kartu saat membacanya."
+      }
+    },
+    {
+      "code": "BLAMES_ROBOT",
+      "description": {
+        "en": "Blames the robot instead of the program when something goes wrong.",
+        "id": "Menyalahkan robot alih-alih program saat terjadi kesalahan."
+      },
+      "remediation": {
+        "en": "Run the same program with two different robots, such as two family members. Both bump in the same place, so the bug is in the cards.",
+        "id": "Jalankan program yang sama dengan dua robot berbeda, misalnya dua anggota keluarga. Keduanya menabrak di tempat yang sama, jadi bug-nya ada di kartu."
+      }
+    },
+    {
+      "code": "BUGS_ARE_RANDOM",
+      "description": {
+        "en": "Thinks bumps happen by chance and cannot be fixed.",
+        "id": "Mengira tabrakan terjadi kebetulan dan tidak bisa diperbaiki."
+      },
+      "remediation": {
+        "en": "Run the buggy program three times: the bump happens on the same card every time. Fix that card and run it once more.",
+        "id": "Jalankan program yang bermasalah tiga kali: tabrakan selalu terjadi di kartu yang sama. Perbaiki kartu itu dan jalankan sekali lagi."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Two goals: the robot must visit the ball first, then the teddy, without any bumps. Find the shortest program you can and compare it with a family member's.",
+      "id": "Dua tujuan: robot harus mengunjungi bola dulu, lalu boneka, tanpa tabrakan. Temukan program terpendek yang bisa kamu buat dan bandingkan dengan milik anggota keluarga."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child who finds walking the grid hard, run all programs with a toy car on the paper grid and use folded paper as obstacles.",
+      "id": "Untuk anak yang kesulitan berjalan di petak, jalankan semua program dengan mobil-mobilan di petak kertas dan gunakan kertas terlipat sebagai rintangan."
+    },
+    {
+      "en": "Give a child who reverses arrows a coloured border on each card type, such as red for right, matching a red sticker on the right-hand wall.",
+      "id": "Beri anak yang sering tertukar arah panah bingkai berwarna untuk setiap jenis kartu, misalnya merah untuk kanan, sesuai dengan stiker merah di dinding sebelah kanan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use only soft cushions as obstacles, and make the robot walk slowly, never run. Keep the grid away from stairs and remove rugs that slip.",
+        "id": "Gunakan hanya bantal empuk sebagai rintangan, dan robot berjalan pelan, tidak pernah berlari. Jauhkan petak dari tangga dan singkirkan karpet yang licin."
+      },
+      {
+        "en": "The robot keeps its eyes open; no blindfolds or boxes over the head.",
+        "id": "Robot tetap membuka mata; tidak memakai penutup mata atau kardus di kepala."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child writes a bump-free program for a grid with at least two obstacles, finds a second route, and correctly says which is shorter and by how many cards, on two different days.",
+      "id": "Dikuasai jika anak menyusun program tanpa tabrakan untuk petak dengan setidaknya dua rintangan, menemukan jalur kedua, dan menyebut dengan benar mana yang lebih pendek dan selisih berapa kartu, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-stem",
+    "createdAt": "2026-11-10"
+  }
+}

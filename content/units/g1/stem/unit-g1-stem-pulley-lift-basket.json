@@ -1,0 +1,445 @@
+{
+  "id": "unit-g1-stem-pulley-lift-basket",
+  "version": "1.0.0",
+  "level": "g1",
+  "framework": "stem",
+  "strand": "engineering_design",
+  "title": {
+    "en": "Lift it with a pulley",
+    "id": "Mengangkat dengan katrol"
+  },
+  "prerequisites": [
+    "unit-g1-stem-ruler-lever-balance"
+  ],
+  "objective": {
+    "en": "Use a single fixed pulley, made by an adult from a cotton reel on a pencil between two chairs and tied by the adult, to lift a small basket by pulling the cord down; explain that this pulley changes the direction of the pull but not how hard you pull; and measure that the basket rises as far as the cord is pulled.",
+    "id": "Menggunakan satu katrol tetap, dibuat orang dewasa dari gulungan benang kosong pada pensil di antara dua kursi dan diikat oleh orang dewasa, untuk mengangkat keranjang kecil dengan menarik tali ke bawah; menjelaskan bahwa katrol ini mengubah arah tarikan tetapi tidak mengubah kuatnya tarikan; dan mengukur bahwa keranjang naik sejauh tali ditarik."
+  },
+  "rationale": {
+    "en": "After the lever, the pulley is the next simple machine children can build and feel. Measuring shows a surprising fact: one fixed pulley does not make the load lighter. It helps because pulling down is easier for our bodies. The movable-pulley extension then shows the trade-off between force and distance.",
+    "id": "Setelah tuas, katrol adalah pesawat sederhana berikutnya yang bisa dibuat dan dirasakan anak. Pengukuran menunjukkan fakta yang mengejutkan: satu katrol tetap tidak membuat beban lebih ringan. Katrol membantu karena menarik ke bawah lebih mudah bagi tubuh kita. Perluasan dengan katrol bergerak kemudian menunjukkan untung-rugi antara gaya dan jarak."
+  },
+  "outcomes": [
+    {
+      "en": "Lifts the basket by pulling down on the cord.",
+      "id": "Mengangkat keranjang dengan menarik tali ke bawah."
+    },
+    {
+      "en": "Measures that the basket rises the same distance as the cord is pulled.",
+      "id": "Mengukur bahwa keranjang naik sejauh tali ditarik."
+    },
+    {
+      "en": "Compares the pull with and without the pulley using a rubber-band stretch.",
+      "id": "Membandingkan tarikan dengan dan tanpa katrol menggunakan panjang karet yang meregang."
+    },
+    {
+      "en": "Explains that one fixed pulley changes the direction of the pull.",
+      "id": "Menjelaskan bahwa satu katrol tetap mengubah arah tarikan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I pull down and the basket goes up.",
+      "id": "Aku menarik ke bawah dan keranjang naik."
+    },
+    {
+      "en": "I can measure how far the cord moves and how far the basket moves.",
+      "id": "Aku bisa mengukur sejauh apa tali bergerak dan sejauh apa keranjang bergerak."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "You set up and tie everything: tape the pencil firmly across the backs of two chairs, thread the reel on first, and tie the cord to the basket handle with a double knot. Your child does the pulling and measuring.",
+      "id": "Anda yang memasang dan mengikat semuanya: rekatkan pensil dengan kuat melintang di sandaran dua kursi, masukkan gulungan benang lebih dulu, dan ikat tali ke pegangan keranjang dengan simpul ganda. Anak yang menarik dan mengukur."
+    },
+    {
+      "en": "Before each test, ask for a prediction: 'Which way will you pull? Will it feel easier or the same?' Write the guesses down.",
+      "id": "Sebelum setiap uji, minta tebakan: 'Kamu akan menarik ke arah mana? Akan terasa lebih ringan atau sama?' Tulis tebakannya."
+    },
+    {
+      "en": "For the measuring test, stick a small tape flag on the cord just below the reel. Your child pulls until the flag has moved down one ruler length, and you measure how far the basket rose.",
+      "id": "Untuk uji pengukuran, tempel bendera kecil dari selotip di tali tepat di bawah gulungan. Anak menarik sampai bendera turun satu panjang penggaris, dan Anda mengukur sejauh apa keranjang naik."
+    },
+    {
+      "en": "Use the words 'pulley', 'load' and 'pull'. Avoid saying the pulley 'makes it lighter' until you have measured.",
+      "id": "Gunakan kata 'katrol', 'beban', dan 'tarikan'. Hindari mengatakan katrol 'membuatnya lebih ringan' sebelum diukur."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Hold the free end of the cord with both hands and pull down slowly.",
+      "id": "Pegang ujung tali yang bebas dengan kedua tangan dan tarik ke bawah pelan-pelan."
+    },
+    {
+      "en": "Watch the tape flag and the basket. Measure how far each one moved.",
+      "id": "Perhatikan bendera selotip dan keranjang. Ukur sejauh apa masing-masing bergerak."
+    },
+    {
+      "en": "Lower the basket slowly. Never let go of the cord suddenly.",
+      "id": "Turunkan keranjang pelan-pelan. Jangan pernah melepas tali tiba-tiba."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Lift a basket of wooden blocks with the reel pulley, measure the cord and the basket movement with a ruler, and compare the pull with a rubber band.",
+        "id": "Angkat keranjang berisi balok kayu dengan katrol gulungan benang, ukur gerakan tali dan keranjang dengan penggaris, lalu bandingkan tarikan dengan karet gelang."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the pulley with arrows: a down arrow on the cord you pull and an up arrow on the basket, both labelled with the measured centimetres.",
+        "id": "Gambar katrol dengan panah: panah ke bawah di tali yang ditarik dan panah ke atas di keranjang, keduanya diberi label sentimeter yang terukur."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write a number sentence for two pulls in a row, for example 10 cm then 15 cm of cord, and predict the total rise of the basket.",
+        "id": "Tulis kalimat bilangan untuk dua tarikan berturut-turut, misalnya 10 cm lalu 15 cm tali, dan tebak total naiknya keranjang."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A large empty cotton reel (thread spool) and a round pencil that fits loosely through its hole",
+      "id": "Gulungan benang kosong yang besar dan pensil bulat yang masuk longgar ke lubangnya"
+    },
+    {
+      "en": "Two sturdy chairs placed back to back about 30 cm apart, and strong tape",
+      "id": "Dua kursi kokoh yang diletakkan saling membelakangi berjarak sekitar 30 cm, dan selotip yang kuat"
+    },
+    {
+      "en": "About 1.5 metres of thin, smooth cord",
+      "id": "Tali tipis yang licin sepanjang sekitar 1,5 meter"
+    },
+    {
+      "en": "A small plastic basket with a handle",
+      "id": "Keranjang plastik kecil yang ada pegangannya"
+    },
+    {
+      "en": "Six wooden blocks as the load",
+      "id": "Enam balok kayu sebagai beban"
+    },
+    {
+      "en": "A 30 cm ruler, masking tape and a pencil",
+      "id": "Penggaris 30 cm, selotip kertas, dan pensil"
+    },
+    {
+      "en": "One thick rubber band for the pull test",
+      "id": "Satu karet gelang tebal untuk uji tarikan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Tape the pencil across the tops of the two chair backs with the reel threaded on in the middle, so the reel can spin. Hang the cord over the reel, tie one end to the basket handle with a double knot, and check the basket hangs just above the floor when the cord is loose. Try one lift yourself first.",
+      "id": "Rekatkan pensil melintang di atas dua sandaran kursi dengan gulungan benang terpasang di tengahnya, sehingga gulungan bisa berputar. Gantungkan tali di atas gulungan, ikat satu ujungnya ke pegangan keranjang dengan simpul ganda, dan pastikan keranjang menggantung tepat di atas lantai saat tali kendur. Coba satu kali angkat sendiri dulu."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Direction: Bayu predicts he must pull up. He tries: he pulls the cord down and the basket goes up. 'The pulley turned my down-pull into an up-lift.'",
+      "id": "Arah: Bayu menebak ia harus menarik ke atas. Ia mencoba: ia menarik tali ke bawah dan keranjang naik. 'Katrol mengubah tarikanku ke bawah menjadi angkatan ke atas.'"
+    },
+    {
+      "en": "Distance: the tape flag starts just below the reel. Bayu pulls until the flag has moved down 20 cm. The adult measures the basket: it rose 20 cm. The basket rises as far as the cord is pulled.",
+      "id": "Jarak: bendera selotip mulai tepat di bawah gulungan. Bayu menarik sampai bendera turun 20 cm. Orang dewasa mengukur keranjang: naik 20 cm. Keranjang naik sejauh tali ditarik."
+    },
+    {
+      "en": "How hard? The adult ties the rubber band between the cord and Bayu's pulling loop. Lifting the basket straight up by hand, the band stretches to 9 cm. Pulling down through the pulley, it stretches to 10 cm. About the same, a little more because the reel rubs on the pencil. The pulley did not make the load lighter; it let Bayu pull down, which is easier for his body.",
+      "id": "Seberapa kuat? Orang dewasa mengikat karet gelang di antara tali dan lingkar pegangan Bayu. Saat keranjang diangkat langsung ke atas dengan tangan, karet meregang sampai 9 cm. Saat ditarik ke bawah lewat katrol, karet meregang sampai 10 cm. Hampir sama, sedikit lebih panjang karena gulungan bergesekan dengan pensil. Katrol tidak membuat beban lebih ringan; katrol membuat Bayu bisa menarik ke bawah, yang lebih mudah bagi tubuhnya."
+    }
+  ],
+  "practice": [
+    {
+      "en": "No reel: the adult slides the reel off and hangs the cord straight over the bare pencil. Pull again. Does it feel smoother or rougher? Why does the turning reel help?",
+      "id": "Tanpa gulungan: orang dewasa melepas gulungan dan menggantungkan tali langsung di atas pensil tanpa gulungan. Tarik lagi. Terasa lebih halus atau lebih seret? Mengapa gulungan yang berputar membantu?"
+    },
+    {
+      "en": "Change the load: lift 2 blocks, then 6 blocks, and compare the rubber-band stretch each time.",
+      "id": "Ubah beban: angkat 2 balok, lalu 6 balok, dan bandingkan regangan karet setiap kali."
+    },
+    {
+      "en": "Pulley jobs: find pulleys in pictures or around you, such as a well bucket, a flagpole or a clothes line, and say which way people pull.",
+      "id": "Pekerjaan katrol: cari katrol di gambar atau di sekitarmu, seperti timba sumur, tiang bendera, atau jemuran, lalu sebutkan ke arah mana orang menarik."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Laras pulls the cord down 15 cm, stops, then pulls down another 20 cm. How far has the basket risen altogether?",
+        "id": "Laras menarik tali ke bawah 15 cm, berhenti, lalu menarik ke bawah lagi 20 cm. Berapa jauh keranjang naik seluruhnya?"
+      },
+      "choices": {
+        "en": [
+          "35 cm",
+          "20 cm",
+          "5 cm"
+        ],
+        "id": [
+          "35 cm",
+          "20 cm",
+          "5 cm"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "With one fixed pulley the basket rises as far as the cord is pulled: 15 + 20 = 35 cm.",
+        "id": "Dengan satu katrol tetap, keranjang naik sejauh tali ditarik: 15 + 20 = 35 cm."
+      },
+      "check": {
+        "expression": "15 + 20",
+        "result": "35"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_LAST_PULL_ONLY",
+        "2": "SUBTRACTS_INSTEAD"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A flag is tied to a cord that goes up over a pulley at the top of a flagpole. Which way do you pull to raise the flag?",
+        "id": "Sebuah bendera diikat pada tali yang melewati katrol di puncak tiang bendera. Ke arah mana kamu menarik untuk menaikkan bendera?"
+      },
+      "choices": {
+        "en": [
+          "Down",
+          "Up",
+          "Sideways, away from the pole"
+        ],
+        "id": [
+          "Ke bawah",
+          "Ke atas",
+          "Ke samping, menjauhi tiang"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The pulley at the top turns a downward pull into an upward lift of the flag.",
+        "id": "Katrol di puncak mengubah tarikan ke bawah menjadi angkatan bendera ke atas."
+      },
+      "distractorMisconceptions": {
+        "1": "PULLEY_SAME_DIRECTION",
+        "2": "PULLEY_SAME_DIRECTION"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Does one fixed pulley, like our reel, make the basket lighter to lift?",
+        "id": "Apakah satu katrol tetap, seperti gulungan benang kita, membuat keranjang lebih ringan untuk diangkat?"
+      },
+      "choices": {
+        "en": [
+          "No; it changes the direction of the pull, and the pull stays about the same",
+          "Yes; any pulley halves the weight",
+          "Yes; the chairs carry part of the basket for you"
+        ],
+        "id": [
+          "Tidak; katrol mengubah arah tarikan, dan kuat tarikannya tetap hampir sama",
+          "Ya; katrol apa pun membuat beratnya separuh",
+          "Ya; kursi menanggung sebagian keranjang untukmu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Our rubber band stretched about the same with and without the pulley. Only a movable pulley that rides on the load reduces the pull.",
+        "id": "Karet gelang kita meregang hampir sama dengan dan tanpa katrol. Hanya katrol bergerak yang ikut bergerak bersama beban yang mengurangi tarikan."
+      },
+      "distractorMisconceptions": {
+        "1": "PULLEY_HALVES_LOAD",
+        "2": "SUPPORT_TAKES_LOAD"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Why does our pulley have a reel that spins, instead of the cord rubbing over the bare pencil?",
+        "id": "Mengapa katrol kita memakai gulungan yang berputar, bukan tali yang bergesekan langsung di atas pensil?"
+      },
+      "choices": {
+        "en": [
+          "The turning reel lets the cord move with less rubbing",
+          "The reel makes the cord longer",
+          "The reel is only there to look nice"
+        ],
+        "id": [
+          "Gulungan yang berputar membuat tali bergerak dengan gesekan lebih kecil",
+          "Gulungan membuat tali lebih panjang",
+          "Gulungan hanya supaya terlihat bagus"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A wheel that turns with the cord reduces rubbing (friction), so the pull is smoother.",
+        "id": "Roda yang berputar bersama tali mengurangi gesekan, sehingga tarikan lebih halus."
+      },
+      "distractorMisconceptions": {
+        "1": "WHEEL_ADDS_LENGTH",
+        "2": "WHEEL_HAS_NO_JOB"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "COUNTS_LAST_PULL_ONLY",
+      "description": {
+        "en": "Uses only the last pull and forgets the first.",
+        "id": "Hanya memakai tarikan terakhir dan melupakan yang pertama."
+      },
+      "remediation": {
+        "en": "Stick a tape flag on the cord at the start and leave it there. After both pulls, measure from the reel to the flag in one go.",
+        "id": "Tempel bendera selotip di tali di awal dan biarkan di sana. Setelah kedua tarikan, ukur dari gulungan sampai bendera sekaligus."
+      }
+    },
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Finds the difference between the two pulls instead of the total.",
+        "id": "Mencari selisih kedua tarikan alih-alih jumlahnya."
+      },
+      "remediation": {
+        "en": "Act it out with two strips of paper, 15 cm and 20 cm, laid end to end along a ruler.",
+        "id": "Peragakan dengan dua potong kertas, 15 cm dan 20 cm, diletakkan bersambung di sepanjang penggaris."
+      }
+    },
+    {
+      "code": "PULLEY_SAME_DIRECTION",
+      "description": {
+        "en": "Thinks you must pull in the direction you want the load to move.",
+        "id": "Mengira harus menarik ke arah gerak beban yang diinginkan."
+      },
+      "remediation": {
+        "en": "Stand beside the chair pulley, put one hand on the basket and pull the cord down with the other: feel the basket rise under your hand.",
+        "id": "Berdiri di samping katrol kursi, letakkan satu tangan di keranjang dan tarik tali ke bawah dengan tangan lain: rasakan keranjang naik di bawah tanganmu."
+      }
+    },
+    {
+      "code": "PULLEY_HALVES_LOAD",
+      "description": {
+        "en": "Believes every pulley makes the load lighter.",
+        "id": "Percaya setiap katrol membuat beban lebih ringan."
+      },
+      "remediation": {
+        "en": "Repeat the rubber-band test three times with and without the pulley and write the stretches in a table. The numbers stay close.",
+        "id": "Ulangi uji karet gelang tiga kali dengan dan tanpa katrol dan tulis regangannya di tabel. Angkanya tetap berdekatan."
+      }
+    },
+    {
+      "code": "SUPPORT_TAKES_LOAD",
+      "description": {
+        "en": "Thinks the chairs take some of the weight away from the person pulling.",
+        "id": "Mengira kursi mengambil sebagian berat dari orang yang menarik."
+      },
+      "remediation": {
+        "en": "The chairs hold up the reel, but the cord still has to hold the basket. The rubber-band test shows your pull is just as big as the basket's pull down.",
+        "id": "Kursi menahan gulungan, tetapi tali tetap harus menahan keranjang. Uji karet gelang menunjukkan tarikanmu sama besarnya dengan tarikan keranjang ke bawah."
+      }
+    },
+    {
+      "code": "WHEEL_ADDS_LENGTH",
+      "description": {
+        "en": "Thinks the reel changes the length of the cord.",
+        "id": "Mengira gulungan mengubah panjang tali."
+      },
+      "remediation": {
+        "en": "Measure the cord before and after taking the reel off: it is the same length.",
+        "id": "Ukur tali sebelum dan sesudah gulungan dilepas: panjangnya sama."
+      }
+    },
+    {
+      "code": "WHEEL_HAS_NO_JOB",
+      "description": {
+        "en": "Thinks the turning wheel does nothing useful.",
+        "id": "Mengira roda yang berputar tidak berguna."
+      },
+      "remediation": {
+        "en": "Pull with and without the reel while watching the rubber band: without the reel it stretches more, because the cord rubs.",
+        "id": "Tarik dengan dan tanpa gulungan sambil memperhatikan karet gelang: tanpa gulungan karetnya meregang lebih panjang, karena talinya bergesekan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Movable pulley (adult builds it): the adult ties one end of the cord to the pencil, runs it down under a second reel hung from the basket handle, and back up over the fixed reel. Now measure: you pull about 2 cm of cord for every 1 cm the basket rises, and the rubber band stretches less. Easier pull, longer pull.",
+      "id": "Katrol bergerak (orang dewasa yang memasang): orang dewasa mengikat satu ujung tali ke pensil, mengulurkannya ke bawah melewati gulungan kedua yang digantung di pegangan keranjang, lalu kembali ke atas melewati gulungan tetap. Sekarang ukur: kamu menarik sekitar 2 cm tali untuk setiap 1 cm keranjang naik, dan karet gelang meregang lebih pendek. Tarikan lebih ringan, tetapi lebih panjang."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child with less hand strength can loop the cord end around a wooden spoon handle (tied by the adult) to grip it more easily.",
+      "id": "Anak dengan kekuatan tangan lebih kecil bisa memegang ujung tali yang dililitkan ke gagang sendok kayu (diikat orang dewasa) supaya lebih mudah digenggam."
+    },
+    {
+      "en": "If reading a ruler is hard, measure with a strip of paper marked at the start and end, then compare strips.",
+      "id": "Jika membaca penggaris sulit, ukur dengan potongan kertas yang ditandai di awal dan akhir, lalu bandingkan potongannya."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": true,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult sets up the chairs and ties every knot. Never put the cord around the neck, or wrap it around fingers or wrists; hold it in the hand only.",
+        "id": "Orang dewasa memasang kursi dan mengikat setiap simpul. Jangan pernah melilitkan tali di leher, jari, atau pergelangan tangan; pegang hanya dengan tangan."
+      },
+      {
+        "en": "Keep the load light (no more than six wooden blocks), keep heads and feet out from under the basket, and lower it slowly. Nobody climbs on the chairs.",
+        "id": "Jaga beban tetap ringan (tidak lebih dari enam balok kayu), jauhkan kepala dan kaki dari bawah keranjang, dan turunkan pelan-pelan. Tidak ada yang memanjat kursi."
+      },
+      {
+        "en": "A rubber band can snap: hold it away from faces, and keep rubber bands away from children under 4, who could choke on them. Put the cord away after the activity.",
+        "id": "Karet gelang bisa putus: jauhkan dari wajah, dan jauhkan karet gelang dari anak di bawah 4 tahun yang bisa tersedak. Simpan tali setelah kegiatan."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child lifts the basket with the pulley, measures that the basket rises as far as the cord is pulled, and explains in their own words that one fixed pulley changes the direction of the pull.",
+      "id": "Dikuasai jika anak mengangkat keranjang dengan katrol, mengukur bahwa keranjang naik sejauh tali ditarik, dan menjelaskan dengan kata-katanya sendiri bahwa satu katrol tetap mengubah arah tarikan."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-stem",
+    "createdAt": "2026-11-10"
+  }
+}

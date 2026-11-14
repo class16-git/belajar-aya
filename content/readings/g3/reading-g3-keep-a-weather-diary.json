@@ -1,0 +1,288 @@
+{
+  "id": "reading-g3-keep-a-weather-diary",
+  "version": "1.0.0",
+  "level": "g3",
+  "readingLevel": "transitional",
+  "genre": "procedural",
+  "mode": "independent",
+  "title": {
+    "en": "How to keep a weather diary",
+    "id": "Cara membuat catatan cuaca harian"
+  },
+  "text": {
+    "en": [
+      "Scientists who study the weather write down what they see every day, at the same time, in the same way. After a while, the records show patterns. You can do this too with a weather diary.",
+      "You will need: a notebook, a pencil and a ruler; a thermometer for air (a digital one or a red-liquid one, not a mercury one); a ribbon tied to a stick; and a rain gauge if you have one.",
+      "Step 1. Rule a table with six columns: Date, Time, Sky, Temperature, Rain and Wind. Leave one row for each day.",
+      "Step 2. Choose one time and one place, and keep them the same every day, for example 7 o'clock in the morning on the front step. If you change the time or the place, your records cannot be compared fairly.",
+      "Step 3. Look at the sky and draw a symbol: a sun for clear, a sun behind a cloud for partly cloudy, a cloud for cloudy, and a cloud with drops for rain.",
+      "Step 4. Hang the thermometer in the shade, away from walls that have been in the sun. Wait two minutes, then write the temperature in °C. A thermometer in the sun shows the sun's heat on it, not the air temperature.",
+      "Step 5. Hold up the ribbon stick. If the ribbon hangs down, write \"still\". If it flutters, write \"gentle\". If it stands out straight, write \"strong\". If you have a rain gauge, write how many millimetres fell since yesterday, then empty it.",
+      "Here is an invented example of one week in a diary. Mon: clear, 27 °C. Tue: partly cloudy, 28 °C. Wed: rain, 25 °C. Thu: rain, 24 °C. Fri: cloudy, 26 °C. Sat: rain, 25 °C. Sun: clear, 27 °C.",
+      "Step 6. After two weeks, read your diary like a scientist. Which kind of sky came most often? Were rainy mornings cooler? Write one sentence about a pattern you found."
+    ],
+    "id": [
+      "Ilmuwan yang mempelajari cuaca mencatat apa yang mereka amati setiap hari, pada waktu yang sama, dengan cara yang sama. Lama-kelamaan, catatan itu menunjukkan pola. Kamu juga bisa melakukannya dengan catatan cuaca harian.",
+      "Yang kamu perlukan: buku tulis, pensil, dan penggaris; termometer udara (digital atau berisi cairan merah, bukan termometer raksa); pita yang diikat pada tongkat; dan penakar hujan jika ada.",
+      "Langkah 1. Buat tabel dengan enam kolom memakai penggaris: Tanggal, Jam, Langit, Suhu, Hujan, dan Angin. Sediakan satu baris untuk setiap hari.",
+      "Langkah 2. Pilih satu jam dan satu tempat, dan gunakan yang sama setiap hari, misalnya pukul 7 pagi di teras depan. Jika jam atau tempatnya berubah, catatanmu tidak bisa dibandingkan dengan adil.",
+      "Langkah 3. Lihat langit dan gambar simbol: matahari untuk cerah, matahari di balik awan untuk berawan sebagian, awan untuk berawan, dan awan dengan tetes air untuk hujan.",
+      "Langkah 4. Gantung termometer di tempat teduh, jauh dari dinding yang terkena matahari. Tunggu dua menit, lalu tulis suhunya dalam °C. Termometer yang terkena matahari menunjukkan panas matahari pada termometer itu, bukan suhu udara.",
+      "Langkah 5. Angkat tongkat berpita. Jika pita menggantung ke bawah, tulis \"tenang\". Jika pita berkibar, tulis \"sedang\". Jika pita lurus terbentang, tulis \"kencang\". Jika kamu punya penakar hujan, tulis berapa milimeter hujan sejak kemarin, lalu kosongkan penakarnya.",
+      "Berikut contoh rekaan satu minggu catatan cuaca. Sen: cerah, 27 °C. Sel: berawan sebagian, 28 °C. Rab: hujan, 25 °C. Kam: hujan, 24 °C. Jum: berawan, 26 °C. Sab: hujan, 25 °C. Min: cerah, 27 °C.",
+      "Langkah 6. Setelah dua minggu, baca catatanmu seperti ilmuwan. Langit seperti apa yang paling sering muncul? Apakah pagi yang hujan lebih sejuk? Tulis satu kalimat tentang pola yang kamu temukan."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Follows a multi-step procedure and explains why some steps must stay the same each day.",
+      "id": "Mengikuti prosedur bertahap dan menjelaskan mengapa beberapa langkah harus tetap sama setiap hari."
+    },
+    {
+      "en": "Reads a simple data record and finds a pattern.",
+      "id": "Membaca catatan data sederhana dan menemukan pola."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "pattern",
+        "id": "pola"
+      },
+      "meaning": {
+        "en": "something that happens again and again in a way you can notice",
+        "id": "sesuatu yang terjadi berulang-ulang dengan cara yang bisa diamati"
+      }
+    },
+    {
+      "word": {
+        "en": "thermometer",
+        "id": "termometer"
+      },
+      "meaning": {
+        "en": "a tool that measures how hot or cold something is",
+        "id": "alat untuk mengukur seberapa panas atau dingin sesuatu"
+      }
+    },
+    {
+      "word": {
+        "en": "record",
+        "id": "catatan"
+      },
+      "meaning": {
+        "en": "information written down so it can be checked later",
+        "id": "informasi yang ditulis supaya bisa diperiksa nanti"
+      }
+    },
+    {
+      "word": {
+        "en": "symbol",
+        "id": "simbol"
+      },
+      "meaning": {
+        "en": "a small picture that stands for a word or idea",
+        "id": "gambar kecil yang mewakili kata atau gagasan"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where should you put the thermometer?",
+        "id": "Di mana sebaiknya termometer diletakkan?"
+      },
+      "choices": {
+        "en": [
+          "in the shade, away from sunny walls",
+          "in direct sunshine",
+          "inside the rain gauge"
+        ],
+        "id": [
+          "di tempat teduh, jauh dari dinding yang terkena matahari",
+          "langsung di bawah sinar matahari",
+          "di dalam penakar hujan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Sita reads her thermometer at 7 a.m. on Monday and at 2 p.m. on Tuesday. Tuesday's reading is higher. Why can she not be sure that Tuesday was a warmer day?",
+        "id": "Sita membaca termometernya pukul 7 pagi pada hari Senin dan pukul 2 siang pada hari Selasa. Angka hari Selasa lebih tinggi. Mengapa ia tidak bisa yakin bahwa hari Selasa lebih hangat?"
+      },
+      "choices": {
+        "en": [
+          "she measured at different times of day, and the afternoon is usually warmer than the early morning",
+          "her thermometer only works on Mondays",
+          "temperature cannot be written in a table"
+        ],
+        "id": [
+          "ia mengukur pada jam yang berbeda, dan siang hari biasanya lebih hangat daripada pagi hari",
+          "termometernya hanya berfungsi pada hari Senin",
+          "suhu tidak bisa ditulis di tabel"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "In the invented example week, how many days were rainy?",
+        "id": "Dalam contoh rekaan satu minggu, ada berapa hari hujan?"
+      },
+      "choices": {
+        "en": [
+          "3 days",
+          "2 days",
+          "7 days",
+          "4 days"
+        ],
+        "id": [
+          "3 hari",
+          "2 hari",
+          "7 hari",
+          "4 hari"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 7,
+      "check": {
+        "expression": "1 + 1 + 1",
+        "result": "3"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "Another diary shows 24 °C at 7 a.m. and 31 °C at 1 p.m. on the same day. How many degrees warmer was it at 1 p.m.?",
+        "id": "Catatan lain menunjukkan 24 °C pukul 7 pagi dan 31 °C pukul 1 siang pada hari yang sama. Berapa derajat lebih hangat pada pukul 1 siang?"
+      },
+      "choices": {
+        "en": [
+          "7 degrees",
+          "55 degrees",
+          "3 degrees"
+        ],
+        "id": [
+          "7 derajat",
+          "55 derajat",
+          "3 derajat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5,
+      "check": {
+        "expression": "31 - 24",
+        "result": "7"
+      }
+    },
+    {
+      "id": "q5",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "In Step 5, what does it mean if the ribbon \"stands out straight\"?",
+        "id": "Pada Langkah 5, apa artinya jika pita \"lurus terbentang\"?"
+      },
+      "choices": {
+        "en": [
+          "the wind is strong",
+          "there is no wind",
+          "it is raining"
+        ],
+        "id": [
+          "anginnya kencang",
+          "tidak ada angin",
+          "sedang hujan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Recording observations in the same way each day is how scientists find weather patterns.",
+        "id": "Mencatat pengamatan dengan cara yang sama setiap hari adalah cara ilmuwan menemukan pola cuaca."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Reading a table, counting and finding differences in temperature are data skills.",
+        "id": "Membaca tabel, menghitung, dan mencari selisih suhu adalah keterampilan data."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What do you think your diary would show in the rainy season compared with the dry season?",
+      "id": "Menurutmu apa yang akan ditunjukkan catatanmu pada musim hujan dibandingkan musim kemarau?"
+    },
+    {
+      "en": "Which step do you think is easiest to forget? How could you remember it?",
+      "id": "Langkah mana yang menurutmu paling mudah terlupa? Bagaimana cara mengingatnya?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Keep your own weather diary for two weeks using the steps. Ask a grown-up to help you choose a safe, shady place for the thermometer. At the end, colour one square on a bar chart for each clear, cloudy and rainy day, and write one sentence about the pattern.",
+    "id": "Buat catatan cuaca harianmu sendiri selama dua minggu mengikuti langkah-langkahnya. Minta orang dewasa membantu memilih tempat teduh yang aman untuk termometer. Di akhir, warnai satu kotak di diagram batang untuk setiap hari cerah, berawan, dan hujan, lalu tulis satu kalimat tentang polanya."
+  },
+  "factChecks": [
+    {
+      "claim": "The example week of weather readings is invented and labelled as such in the text.",
+      "status": "invented_example"
+    },
+    {
+      "claim": "Air temperature should be measured in the shade, because a thermometer in sunlight is heated directly.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Rainfall is measured in millimetres.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Mercury thermometers are a hazard if broken; digital or alcohol (red-liquid) thermometers are safer for children.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Use a digital or red-liquid thermometer, never a glass mercury one. Never look straight at the sun.",
+      "id": "Gunakan termometer digital atau berisi cairan merah, jangan termometer raksa kaca. Jangan pernah menatap langsung ke matahari."
+    },
+    {
+      "en": "Empty the rain gauge after every reading so no standing water is left for mosquitoes, and go indoors if there is thunder or lightning.",
+      "id": "Kosongkan penakar hujan setiap selesai membaca supaya tidak ada air menggenang untuk nyamuk, dan masuk ke dalam rumah jika ada guntur atau petir."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

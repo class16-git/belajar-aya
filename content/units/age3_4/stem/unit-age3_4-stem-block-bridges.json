@@ -1,0 +1,348 @@
+{
+  "id": "unit-age3_4-stem-block-bridges",
+  "version": "1.0.0",
+  "level": "age3_4",
+  "framework": "stem",
+  "strand": "engineering_design",
+  "title": {
+    "en": "Block bridges over the river",
+    "id": "Jembatan balok di atas sungai"
+  },
+  "prerequisites": [
+    "unit-age3_4-stem-box-tower-test"
+  ],
+  "objective": {
+    "en": "Build a bridge of large blocks across a towel river, test it by driving a toy car over it, and fix it when it falls by using a longer flat piece, moving the towers closer, making the towers wider or adding a middle support.",
+    "id": "Membangun jembatan dari balok besar di atas sungai handuk, mengujinya dengan menjalankan mobil-mobilan di atasnya, dan memperbaikinya saat roboh dengan memakai papan datar yang lebih panjang, mendekatkan menara, melebarkan menara, atau menambah penyangga di tengah."
+  },
+  "rationale": {
+    "en": "A bridge is a child-sized engineering problem with a clear test: does the car get across? Each failure points to one fix, so children practise the design cycle of build, test and improve, and meet the idea that a span must rest on supports at both ends.",
+    "id": "Jembatan adalah masalah rekayasa seukuran anak dengan uji yang jelas: apakah mobil bisa menyeberang? Setiap kegagalan menunjuk ke satu perbaikan, sehingga anak berlatih siklus merancang, yaitu membangun, menguji, dan memperbaiki, serta mengenal gagasan bahwa bentangan harus bertumpu pada penyangga di kedua ujungnya."
+  },
+  "outcomes": [
+    {
+      "en": "Builds two towers and lays a flat piece that rests on both of them.",
+      "id": "Membangun dua menara dan meletakkan papan datar yang bertumpu pada keduanya."
+    },
+    {
+      "en": "Tests the bridge with a car and says whether it worked.",
+      "id": "Menguji jembatan dengan mobil dan mengatakan apakah berhasil."
+    },
+    {
+      "en": "Chooses a fix that matches the problem: longer piece, closer towers, wider tower or a middle support.",
+      "id": "Memilih perbaikan yang sesuai dengan masalahnya: papan lebih panjang, menara lebih dekat, menara lebih lebar, atau penyangga tengah."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "My bridge touches both towers.",
+      "id": "Jembatanku menyentuh kedua menara."
+    },
+    {
+      "en": "When it falls, I try a fix and test again.",
+      "id": "Kalau roboh, aku mencoba perbaikan dan menguji lagi."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Name the parts as you build: 'towers' (or 'legs') and the 'road'. Keep the language the same every time.",
+      "id": "Sebut bagian-bagiannya saat membangun: 'menara' (atau 'kaki') dan 'jalan'. Pakai kata yang sama setiap kali."
+    },
+    {
+      "en": "Before each test, ask 'Will the car get across?' and let your child show thumbs up or down. Then test and compare.",
+      "id": "Sebelum setiap uji, tanyakan 'Mobilnya bisa menyeberang tidak?' dan biarkan anak menunjukkan jempol ke atas atau ke bawah. Lalu uji dan bandingkan."
+    },
+    {
+      "en": "When the bridge falls, celebrate the information: 'Now we know something! Where did it break?' Then offer two fixes to choose from.",
+      "id": "Saat jembatan roboh, rayakan informasinya: 'Sekarang kita jadi tahu! Rusaknya di mana?' Lalu tawarkan dua perbaikan untuk dipilih."
+    },
+    {
+      "en": "Make the river wider only after a bridge has worked twice.",
+      "id": "Lebarkan sungainya hanya setelah jembatan berhasil dua kali."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Build towers of big blocks on each side of a blue towel river and lay a long flat block or a hardback book across as the road.",
+        "id": "Bangun menara dari balok besar di kedua sisi sungai handuk biru dan letakkan balok datar panjang atau buku bersampul tebal melintang sebagai jalan."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the working bridge together: two towers, one road, the river underneath. Draw a fallen one next to it and circle where it broke.",
+        "id": "Gambar jembatan yang berhasil bersama: dua menara, satu jalan, sungai di bawahnya. Gambar jembatan yang roboh di sebelahnya dan lingkari bagian yang rusak."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Choose the fix from words: 'The road is too short. Longer road or taller towers?'",
+        "id": "Pilih perbaikan dari kata-kata: 'Jalannya terlalu pendek. Jalan lebih panjang atau menara lebih tinggi?'"
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Large wooden or foam building blocks, each bigger than your child's fist (at least 12)",
+      "id": "Balok bangunan besar dari kayu atau busa, masing-masing lebih besar dari kepalan tangan anak (setidaknya 12)"
+    },
+    {
+      "en": "Flat pieces for the road: two long flat blocks or rulers of different lengths, and a hardback picture book",
+      "id": "Papan datar untuk jalan: dua balok datar panjang atau penggaris yang panjangnya berbeda, dan buku bergambar bersampul tebal"
+    },
+    {
+      "en": "A blue towel or a strip of blue paper for the river",
+      "id": "Handuk biru atau pita kertas biru untuk sungai"
+    },
+    {
+      "en": "A chunky toy car with wheels that cannot be pulled off, and a small teddy as a heavier load",
+      "id": "Mobil-mobilan besar yang rodanya tidak bisa dicabut, dan boneka kecil sebagai beban yang lebih berat"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Lay the towel river on the floor. Start with a gap about as wide as your child's hand between the river banks, so the shortest road piece just reaches across.",
+      "id": "Bentangkan sungai handuk di lantai. Mulai dengan celah kira-kira selebar telapak tangan anak di antara tepi sungai, sehingga papan jalan terpendek pas mencapai seberang."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "First bridge: build a tower of two blocks on each bank and lay the long flat block across. 'Will the car get across?' Thumbs up. Drive the car slowly: it crosses! 'The road sits on both towers.'",
+      "id": "Jembatan pertama: bangun menara dua balok di setiap tepi dan letakkan balok datar panjang melintang. 'Mobilnya bisa menyeberang?' Jempol ke atas. Jalankan mobil pelan-pelan: berhasil menyeberang! 'Jalannya bertumpu di kedua menara.'"
+    },
+    {
+      "en": "Too short: pull the towers further apart, past the end of the road piece. The road falls into the river. 'Where did it break? The road does not reach the second tower.' Fix: use the hardback book, or slide the towers closer.",
+      "id": "Terlalu pendek: geser menara saling menjauh, melewati ujung papan jalan. Jalannya jatuh ke sungai. 'Rusaknya di mana? Jalannya tidak sampai ke menara kedua.' Perbaikan: pakai buku bersampul tebal, atau geser menara lebih dekat."
+    },
+    {
+      "en": "Wobbly tower: build one tower as a thin stack of three single blocks. The teddy rides over and the tower wobbles and falls. Fix: build it two blocks wide, as in the tower game, and test again.",
+      "id": "Menara goyang: bangun satu menara berupa tumpukan tiga balok tunggal yang ramping. Boneka lewat dan menaranya goyang lalu roboh. Perbaikan: bangun menara selebar dua balok, seperti di permainan menara, lalu uji lagi."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Your child builds a bridge alone for the car, tests it, and shows you the result.",
+      "id": "Anak membangun jembatan sendiri untuk mobil, mengujinya, lalu menunjukkan hasilnya kepada Anda."
+    },
+    {
+      "en": "Heavier load: the teddy crosses instead of the car. Does the bridge still hold? If not, which part needs to be stronger?",
+      "id": "Beban lebih berat: boneka yang menyeberang, bukan mobil. Apakah jembatan masih kuat? Jika tidak, bagian mana yang perlu diperkuat?"
+    },
+    {
+      "en": "Very wide river: widen the gap so no road piece reaches across, and build a tower in the middle of the river with two roads.",
+      "id": "Sungai sangat lebar: lebarkan celahnya sampai tidak ada papan jalan yang cukup panjang, lalu bangun menara di tengah sungai dengan dua jalan."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "You give your child a flat ruler that is shorter than the gap between the towers. What does your child do?",
+        "id": "Anda memberi anak penggaris datar yang lebih pendek dari celah di antara menara. Apa yang dilakukan anak?"
+      },
+      "choices": {
+        "en": [
+          "Looks for a longer piece or moves the towers closer together",
+          "Puts the short ruler in the middle of the gap and expects it to stay",
+          "Makes both towers taller"
+        ],
+        "id": [
+          "Mencari papan yang lebih panjang atau mendekatkan menaranya",
+          "Meletakkan penggaris pendek di tengah celah dan berharap tidak jatuh",
+          "Meninggikan kedua menara"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The road has to rest on a support at each end; taller towers do not make it longer.",
+        "id": "Jalan harus bertumpu pada penyangga di setiap ujungnya; menara yang lebih tinggi tidak membuatnya lebih panjang."
+      },
+      "distractorMisconceptions": {
+        "1": "ROAD_STAYS_UP_ALONE",
+        "2": "TALLER_FIXES_EVERYTHING"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A tower made of single blocks stacked thin wobbles when the teddy crosses. What does your child do to fix it?",
+        "id": "Menara dari balok tunggal yang ditumpuk ramping bergoyang saat boneka menyeberang. Apa yang dilakukan anak untuk memperbaikinya?"
+      },
+      "choices": {
+        "en": [
+          "Builds the tower wider, with blocks side by side",
+          "Adds more blocks on top to make it taller",
+          "Tests it again without changing anything"
+        ],
+        "id": [
+          "Membangun menara lebih lebar, dengan balok berdampingan",
+          "Menambah balok di atas supaya lebih tinggi",
+          "Mengujinya lagi tanpa mengubah apa pun"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A wider tower stands steadier; a taller thin one wobbles more.",
+        "id": "Menara yang lebih lebar berdiri lebih kokoh; menara yang tinggi dan ramping makin goyang."
+      },
+      "distractorMisconceptions": {
+        "1": "TALLER_FIXES_EVERYTHING",
+        "2": "RETESTS_WITHOUT_CHANGE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "The river is now wider than your longest road piece. What does your child do?",
+        "id": "Sungainya sekarang lebih lebar dari papan jalan terpanjang. Apa yang dilakukan anak?"
+      },
+      "choices": {
+        "en": [
+          "Builds a tower in the middle of the river and uses two road pieces",
+          "Says it cannot be done because one road is not long enough"
+        ],
+        "id": [
+          "Membangun menara di tengah sungai dan memakai dua papan jalan",
+          "Mengatakan tidak bisa karena satu papan jalan tidak cukup panjang"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A middle support lets two short roads cross one wide river.",
+        "id": "Penyangga di tengah memungkinkan dua jalan pendek menyeberangi satu sungai lebar."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_PIECE_ONLY"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "ROAD_STAYS_UP_ALONE",
+      "description": {
+        "en": "Expects a road piece to stay up over a gap without resting on both sides.",
+        "id": "Mengira papan jalan bisa tetap di atas celah tanpa bertumpu di kedua sisi."
+      },
+      "remediation": {
+        "en": "Lie on the floor as a 'river' together and hold a ruler between your two hands; let go with one hand and watch that end drop.",
+        "id": "Berbaring di lantai bersama sebagai 'sungai' dan pegang penggaris di antara kedua tangan; lepaskan satu tangan dan lihat ujung itu jatuh."
+      }
+    },
+    {
+      "code": "TALLER_FIXES_EVERYTHING",
+      "description": {
+        "en": "Makes towers taller to fix any problem.",
+        "id": "Meninggikan menara untuk memperbaiki masalah apa pun."
+      },
+      "remediation": {
+        "en": "Build two towers side by side, one thin and tall and one wide and short, and give both the same gentle bump with the car. Which one falls?",
+        "id": "Bangun dua menara berdampingan, satu ramping dan tinggi, satu lebar dan pendek, lalu tabrak keduanya pelan dengan mobil. Mana yang roboh?"
+      }
+    },
+    {
+      "code": "RETESTS_WITHOUT_CHANGE",
+      "description": {
+        "en": "Tests again in the same way and hopes for a different result.",
+        "id": "Menguji lagi dengan cara yang sama dan berharap hasilnya berbeda."
+      },
+      "remediation": {
+        "en": "Use a 'change one thing' card: before each new test, your child points to the one part they changed.",
+        "id": "Gunakan kartu 'ubah satu hal': sebelum setiap uji baru, anak menunjuk satu bagian yang ia ubah."
+      }
+    },
+    {
+      "code": "ONE_PIECE_ONLY",
+      "description": {
+        "en": "Thinks a bridge must be made of one single road piece.",
+        "id": "Mengira jembatan harus terbuat dari satu papan jalan saja."
+      },
+      "remediation": {
+        "en": "Show a picture of a long bridge with many legs in the water, or walk across stepping stones on the floor made of cushions.",
+        "id": "Tunjukkan gambar jembatan panjang dengan banyak kaki di air, atau seberangi batu loncatan dari bantal di lantai."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Build a bridge high enough for a toy boat (a shoe box) to pass under it. What has to change?",
+      "id": "Bangun jembatan yang cukup tinggi supaya perahu mainan (kotak sepatu) bisa lewat di bawahnya. Apa yang harus diubah?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Foam or cardboard brick blocks are lighter and easier to grip for small or less steady hands.",
+      "id": "Balok busa atau balok bata kardus lebih ringan dan mudah digenggam untuk tangan yang kecil atau kurang stabil."
+    },
+    {
+      "en": "For a child who becomes upset when things fall, test with the teddy \"driving\" slowly so the fall is gentle, and say \"Uh-oh, now we know\" in a cheerful voice.",
+      "id": "Untuk anak yang mudah kesal saat benda roboh, uji dengan boneka yang \"mengemudi\" pelan sehingga robohnya lembut, dan katakan \"Wah, sekarang kita tahu\" dengan suara ceria."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Keep towers below your child's waist height so falling blocks cannot hit the head, and keep toes clear when testing.",
+        "id": "Jaga tinggi menara di bawah pinggang anak supaya balok yang jatuh tidak mengenai kepala, dan jauhkan jari kaki saat menguji."
+      },
+      {
+        "en": "Use only large blocks; put away small building pieces from older siblings before you start.",
+        "id": "Gunakan hanya balok besar; simpan kepingan bangunan kecil milik kakak sebelum mulai."
+      },
+      {
+        "en": "The towel river is a pretend river: no real water.",
+        "id": "Sungai handuk adalah sungai pura-pura: tidak memakai air sungguhan."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 10,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "parent_observation",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child builds a working bridge on their own and fixes a failed one with a matching fix, on two different days.",
+      "id": "Dikuasai jika anak membangun jembatan yang berhasil sendiri dan memperbaiki jembatan yang gagal dengan perbaikan yang sesuai, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-stem",
+    "createdAt": "2026-11-10"
+  }
+}

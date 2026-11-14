@@ -1,0 +1,376 @@
+{
+  "id": "unit-g1-literacy-question-words",
+  "version": "1.0.0",
+  "level": "g1",
+  "framework": "literacy",
+  "strand": "grammar",
+  "title": {
+    "en": "Who, what, where, when, why, how",
+    "id": "Siapa, apa, di mana, kapan, mengapa, bagaimana"
+  },
+  "prerequisites": [
+    "unit-g1-literacy-capitals-and-full-stops"
+  ],
+  "objective": {
+    "en": "Know what kind of answer each question word asks for (a person, a thing or action, a place, a time, a reason, a way), answer questions about a short text with the right kind of answer, and write a question that starts with a capital letter and ends with a question mark.",
+    "id": "Mengetahui jenis jawaban yang diminta setiap kata tanya (orang, benda atau kegiatan, tempat, waktu, alasan, cara), menjawab pertanyaan tentang teks pendek dengan jenis jawaban yang tepat, dan menulis pertanyaan yang diawali huruf kapital dan diakhiri tanda tanya."
+  },
+  "rationale": {
+    "en": "Many comprehension mistakes are really question-word mistakes: a child answers 'in the garden' to a when question, or 'by bike' to a why question. Matching each word to its kind of answer makes questions easier to answer and to ask. The languages differ in useful ways. English questions usually put the question word first with a helper verb ('Where did she go?'). Indonesian often keeps statement order and the question word can come last in speech ('Kamu mau ke mana?'). In writing, 'di mana', 'ke mana' and 'dari mana' are two words, and 'mengapa' is the written form of spoken 'kenapa'.",
+    "id": "Banyak kesalahan memahami bacaan sebenarnya kesalahan kata tanya: anak menjawab 'di kebun' untuk pertanyaan kapan, atau 'naik sepeda' untuk pertanyaan mengapa. Mencocokkan setiap kata tanya dengan jenis jawabannya membuat pertanyaan lebih mudah dijawab dan diajukan. Bahasa Indonesia sering memakai susunan kalimat berita dan kata tanya bisa di akhir dalam percakapan ('Kamu mau ke mana?'). Dalam tulisan, 'di mana', 'ke mana', dan 'dari mana' ditulis terpisah, dan 'mengapa' adalah bentuk tulis dari 'kenapa' yang lisan. Bahasa Inggris biasanya menaruh kata tanya di depan dengan kata kerja bantu."
+  },
+  "outcomes": [
+    {
+      "en": "Matches each question word to the kind of answer it wants.",
+      "id": "Mencocokkan setiap kata tanya dengan jenis jawaban yang dimintanya."
+    },
+    {
+      "en": "Answers who, what, where, when, why and how questions about a short text with the right kind of answer.",
+      "id": "Menjawab pertanyaan siapa, apa, di mana, kapan, mengapa, dan bagaimana tentang teks pendek dengan jenis jawaban yang tepat."
+    },
+    {
+      "en": "Writes a question with a capital letter and a question mark, spelling 'di mana' as two words (Indonesian).",
+      "id": "Menulis pertanyaan dengan huruf kapital dan tanda tanya, dengan 'di mana' ditulis terpisah."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I know who wants a person and where wants a place.",
+      "id": "Aku tahu siapa meminta orang dan di mana meminta tempat."
+    },
+    {
+      "en": "I can answer a question with the right kind of answer.",
+      "id": "Aku bisa menjawab pertanyaan dengan jenis jawaban yang tepat."
+    },
+    {
+      "en": "I can write my own question with a question mark.",
+      "id": "Aku bisa menulis pertanyaanku sendiri dengan tanda tanya."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Make six question-word cards, each with a small picture clue: a face (who), a box (what), a house (where), a clock (when), a light bulb for 'because' (why), a hand doing something (how).",
+      "id": "Buat enam kartu kata tanya, masing-masing dengan petunjuk gambar kecil: wajah (siapa), kotak (apa), rumah (di mana), jam (kapan), lampu untuk 'karena' (mengapa), tangan yang sedang melakukan sesuatu (bagaimana)."
+    },
+    {
+      "en": "Teach who, what and where first; add when, why and how over the next sessions.",
+      "id": "Ajarkan siapa, apa, dan di mana dulu; tambahkan kapan, mengapa, dan bagaimana di sesi berikutnya."
+    },
+    {
+      "en": "When an answer is the wrong kind, point to the picture clue on the card instead of saying 'wrong': 'Where wants a place. Is \"at night\" a place?'",
+      "id": "Jika jenis jawabannya keliru, tunjuk petunjuk gambar di kartu alih-alih berkata 'salah': 'Di mana meminta tempat. \"Malam hari\" itu tempat?'"
+    },
+    {
+      "en": "Indonesian: say both 'kenapa' and 'mengapa' are fine to say, and that we write 'mengapa' in school writing.",
+      "id": "Jelaskan bahwa 'kenapa' dan 'mengapa' sama-sama boleh diucapkan, dan dalam tulisan sekolah kita memakai 'mengapa'."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Read the question word first.",
+      "id": "Baca kata tanyanya dulu."
+    },
+    {
+      "en": "Think: what kind of answer does it want?",
+      "id": "Pikirkan: jenis jawaban apa yang diminta?"
+    },
+    {
+      "en": "Find the answer in the text and say it.",
+      "id": "Cari jawabannya di teks dan ucapkan."
+    },
+    {
+      "en": "Write your own question and end it with a question mark.",
+      "id": "Tulis pertanyaanmu sendiri dan akhiri dengan tanda tanya."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Six question-word cards with picture clues",
+      "id": "Enam kartu kata tanya dengan petunjuk gambar"
+    },
+    {
+      "en": "The short story below, written out large",
+      "id": "Cerita pendek di bawah, ditulis besar-besar"
+    },
+    {
+      "en": "Paper and pencils",
+      "id": "Kertas dan pensil"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write the cards and the story. Underline nothing in the story; your child will find the answers.",
+      "id": "Tulis kartu-kartu dan ceritanya. Jangan menggarisbawahi apa pun di cerita; anak yang akan menemukan jawabannya."
+    },
+    {
+      "en": "Think of six questions about the story, one for each word.",
+      "id": "Siapkan enam pertanyaan tentang cerita, satu untuk setiap kata tanya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Story (original): On Sunday morning, Lala and her grandma walked to the market. They bought tomatoes, because Grandma wanted to make soup. Lala carried the basket carefully with both hands.",
+      "id": "Cerita (orisinal): Minggu pagi, Lala dan neneknya berjalan kaki ke pasar. Mereka membeli tomat, karena Nenek ingin memasak sup. Lala membawa keranjang dengan hati-hati memakai kedua tangannya."
+    },
+    {
+      "en": "Model, card by card: 'Who went to the market? Who wants a person: Lala and Grandma. Where did they go? Where wants a place: the market. When? A time: Sunday morning. Why did they buy tomatoes? Why wants a reason, often after because: to make soup. How did Lala carry the basket? How wants a way: carefully, with both hands.'",
+      "id": "Contoh, kartu demi kartu: 'Siapa yang ke pasar? Siapa meminta orang: Lala dan Nenek. Ke mana mereka pergi? Meminta tempat: pasar. Kapan? Waktu: Minggu pagi. Mengapa mereka membeli tomat? Mengapa meminta alasan, sering setelah kata karena: untuk memasak sup. Bagaimana Lala membawa keranjang? Bagaimana meminta cara: dengan hati-hati, memakai kedua tangan.'"
+    },
+    {
+      "en": "Writing a question: 'I want to know the place where Grandma buys fish.' Choose the card: where. Write: 'Where does Grandma buy fish?' Check: capital W, question mark. Indonesian: 'Di mana Nenek membeli ikan?' Check: capital D, 'di mana' as two words, question mark.",
+      "id": "Menulis pertanyaan: 'Aku ingin tahu tempat Nenek membeli ikan.' Pilih kartu: di mana. Tulis: 'Di mana Nenek membeli ikan?' Periksa: huruf kapital D, 'di mana' ditulis terpisah, tanda tanya di akhir. Dalam percakapan juga boleh: 'Nenek beli ikan di mana?'"
+    }
+  ],
+  "practice": [
+    {
+      "en": "Sort the answers: write answers on slips (my teacher, in the kitchen, after lunch, because it rained, slowly) and your child puts each under the right card.",
+      "id": "Pilah jawaban: tulis jawaban di kertas kecil (guruku, di dapur, setelah makan siang, karena hujan, pelan-pelan) dan anak meletakkan masing-masing di bawah kartu yang tepat."
+    },
+    {
+      "en": "Question dice: write the six words on a paper cube. Roll it and ask a question about your day with that word.",
+      "id": "Dadu pertanyaan: tulis enam kata tanya di kubus kertas. Lempar dan ajukan pertanyaan tentang harimu dengan kata itu."
+    },
+    {
+      "en": "Interview: your child writes three questions for a grandparent or neighbour (who, where, when) and asks them.",
+      "id": "Wawancara: anak menulis tiga pertanyaan untuk kakek, nenek, atau tetangga (siapa, di mana, kapan) dan menanyakannya."
+    },
+    {
+      "en": "Fix my question: write 'where do you live' and 'dimana kamu tinggal'. Your child adds the capital and question mark and, in Indonesian, splits 'di mana'.",
+      "id": "Betulkan pertanyaanku: tulis 'dimana kamu tinggal' dan 'where do you live'. Anak menambahkan huruf kapital dan tanda tanya, dan memisahkan 'di mana'."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Read: 'After school, Dimas fed the fish in the pond because it was his job.' Which question has the answer 'after school'?",
+        "id": "Baca: 'Sepulang sekolah, Dimas memberi makan ikan di kolam karena itu tugasnya.' Pertanyaan mana yang jawabannya 'sepulang sekolah'?"
+      },
+      "choices": {
+        "en": [
+          "When did Dimas feed the fish?",
+          "Where did Dimas feed the fish?",
+          "Why did Dimas feed the fish?"
+        ],
+        "id": [
+          "Kapan Dimas memberi makan ikan?",
+          "Di mana Dimas memberi makan ikan?",
+          "Mengapa Dimas memberi makan ikan?"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "'After school' is a time, so it answers when. Where wants the place (in the pond) and why wants the reason (it was his job).",
+        "id": "'Sepulang sekolah' adalah waktu, jadi menjawab kapan. Di mana meminta tempat (di kolam) dan mengapa meminta alasan (itu tugasnya)."
+      },
+      "distractorMisconceptions": {
+        "1": "WHERE_WHEN_MIX",
+        "2": "WRONG_ANSWER_KIND"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Read: 'Rani tied her shoelaces with a double knot so they would not come undone.' Why did Rani tie a double knot?",
+        "id": "Baca: 'Rani mengikat tali sepatunya dengan simpul ganda supaya tidak lepas.' Mengapa Rani membuat simpul ganda?"
+      },
+      "choices": {
+        "en": [
+          "So her laces would not come undone",
+          "With a double knot",
+          "Rani"
+        ],
+        "id": [
+          "Supaya tali sepatunya tidak lepas",
+          "Dengan simpul ganda",
+          "Rani"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Why wants a reason, here after 'so'. 'With a double knot' tells how, and 'Rani' tells who.",
+        "id": "Mengapa meminta alasan, di sini setelah kata 'supaya'. 'Dengan simpul ganda' menjawab bagaimana, dan 'Rani' menjawab siapa."
+      },
+      "distractorMisconceptions": {
+        "1": "WHY_HOW_MIX",
+        "2": "WRONG_ANSWER_KIND"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "You want to know the place of the library. Which question is right?",
+        "id": "Kamu ingin tahu letak perpustakaan. Pertanyaan mana yang benar?"
+      },
+      "choices": {
+        "en": [
+          "Where is the library?",
+          "where is the library.",
+          "When is the library?"
+        ],
+        "id": [
+          "Di mana letak perpustakaan?",
+          "di mana letak perpustakaan.",
+          "Kapan letak perpustakaan?"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A place needs 'where', and a written question starts with a capital letter and ends with a question mark.",
+        "id": "Tempat memakai 'di mana', dan pertanyaan tertulis diawali huruf kapital dan diakhiri tanda tanya."
+      },
+      "distractorMisconceptions": {
+        "1": "QUESTION_PUNCTUATION",
+        "2": "WHERE_WHEN_MIX"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "The answer is 'by bus'. Which question fits it?",
+        "id": "Jawabannya 'naik bus'. Pertanyaan mana yang cocok?"
+      },
+      "choices": {
+        "en": [
+          "How did you get to Grandpa's house?",
+          "Where did you go on Saturday?",
+          "Who came with you?"
+        ],
+        "id": [
+          "Bagaimana caramu pergi ke rumah Kakek?",
+          "Ke mana kamu pergi hari Sabtu?",
+          "Siapa yang ikut bersamamu?"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "'By bus' is a way of travelling, so it answers how. Where wants a place, and who wants a person.",
+        "id": "'Naik bus' adalah cara bepergian, jadi menjawab bagaimana. Ke mana meminta tempat, dan siapa meminta orang."
+      },
+      "distractorMisconceptions": {
+        "1": "WRONG_ANSWER_KIND",
+        "2": "WRONG_ANSWER_KIND"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "WHERE_WHEN_MIX",
+      "description": {
+        "en": "Mixes up where (a place) and when (a time).",
+        "id": "Tertukar antara di mana (tempat) dan kapan (waktu)."
+      },
+      "remediation": {
+        "en": "Hold the house card and the clock card. Read answers one at a time ('at the beach', 'on Friday') and your child puts each on the house or the clock.",
+        "id": "Pegang kartu rumah dan kartu jam. Bacakan jawaban satu per satu ('di pantai', 'hari Jumat') dan anak meletakkan masing-masing di rumah atau di jam."
+      }
+    },
+    {
+      "code": "WHY_HOW_MIX",
+      "description": {
+        "en": "Gives the way something was done when asked why.",
+        "id": "Memberi cara melakukan sesuatu saat ditanya mengapa."
+      },
+      "remediation": {
+        "en": "Teach the answer starters: why → 'because' or 'so that'; how → 'by' or 'with'. Your child starts the answer with the starter before finishing it.",
+        "id": "Ajarkan awalan jawaban: mengapa → 'karena' atau 'supaya'; bagaimana → 'dengan' atau 'secara'. Anak memulai jawaban dengan awalan itu sebelum menyelesaikannya."
+      }
+    },
+    {
+      "code": "WRONG_ANSWER_KIND",
+      "description": {
+        "en": "Answers with a word from the text that is not the kind the question asks for.",
+        "id": "Menjawab dengan kata dari teks yang bukan jenis jawaban yang diminta."
+      },
+      "remediation": {
+        "en": "Before looking in the text, your child names the kind of answer out loud: 'Who, so I need a person.' Then they look only for that kind.",
+        "id": "Sebelum mencari di teks, anak menyebut jenis jawabannya keras-keras: 'Siapa, jadi aku perlu orang.' Lalu ia hanya mencari jenis itu."
+      }
+    },
+    {
+      "code": "QUESTION_PUNCTUATION",
+      "description": {
+        "en": "Writes a question without a capital letter or with a full stop instead of a question mark.",
+        "id": "Menulis pertanyaan tanpa huruf kapital atau dengan titik, bukan tanda tanya."
+      },
+      "remediation": {
+        "en": "Read the question aloud with your voice going up at the end, then draw the question mark slowly together: hook, then dot.",
+        "id": "Bacakan pertanyaannya dengan nada naik di akhir, lalu gambar tanda tanya pelan-pelan bersama: kait, lalu titik."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Read a page of a picture book and write two questions about it for a family member to answer, with one why question.",
+      "id": "Baca satu halaman buku bergambar dan tulis dua pertanyaan tentangnya untuk dijawab anggota keluarga, salah satunya pertanyaan mengapa."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who finds writing slow can answer and ask aloud, and write only the question word and the question mark. Picture clues on the cards support children still learning to read.",
+      "id": "Anak yang lambat menulis bisa menjawab dan bertanya secara lisan, dan hanya menulis kata tanya dan tanda tanya. Petunjuk gambar di kartu membantu anak yang masih belajar membaca."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "For the interview, your child asks only family members or neighbours you know, with you there.",
+        "id": "Untuk wawancara, anak hanya bertanya kepada anggota keluarga atau tetangga yang Anda kenal, bersama Anda."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      10,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child answers six questions about a new short text with the right kind of answer and writes two correct questions, on two different days.",
+      "id": "Dikuasai jika anak menjawab enam pertanyaan tentang teks pendek baru dengan jenis jawaban yang tepat dan menulis dua pertanyaan yang benar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original literacy unit (bilingual EN/ID design)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-adaptation",
+      "single-answer-check",
+      "parallel-distractors",
+      "transfer-not-recall",
+      "misconception-map",
+      "safety",
+      "age-fit"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-literacy",
+    "createdAt": "2026-11-10"
+  }
+}

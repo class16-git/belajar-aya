@@ -1,0 +1,219 @@
+{
+  "id": "reading-age2_3-my-turn-your-turn",
+  "version": "1.0.0",
+  "level": "age2_3",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "My turn, your turn",
+    "id": "Giliranku, giliranmu"
+  },
+  "text": {
+    "en": [
+      "Adi has a big red ball. Bounce, bounce! Adi loves the red ball.",
+      "Here comes Mira. \"Can I play too?\" Adi holds the ball tight. \"Mine!\"",
+      "Mira looks sad. Ibu says, \"Let us take turns. Adi's turn, then Mira's turn.\"",
+      "Adi rolls the ball. Roll, roll, roll, to Mira! Mira rolls it back. Roll, roll, roll, to Adi!",
+      "\"My turn, your turn!\" Adi and Mira laugh. Playing together is fun."
+    ],
+    "id": [
+      "Adi punya bola merah besar. Pantul, pantul! Adi suka sekali bola merah itu.",
+      "Mira datang. \"Boleh aku ikut main?\" Adi memeluk bola erat-erat. \"Punyaku!\"",
+      "Mira tampak sedih. Ibu berkata, \"Ayo bergiliran. Giliran Adi, lalu giliran Mira.\"",
+      "Adi menggelindingkan bola. Gelinding, gelinding, ke Mira! Mira menggelindingkannya kembali. Gelinding, gelinding, ke Adi!",
+      "\"Giliranku, giliranmu!\" Adi dan Mira tertawa. Bermain bersama itu menyenangkan."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Bounce your hands on your lap for \"bounce, bounce\".",
+      "id": "Pantulkan tangan di pangkuan untuk \"pantul, pantul\"."
+    },
+    {
+      "en": "Hug your arms tight for \"Mine!\", then pause and look at the picture of Mira.",
+      "id": "Peluk tangan erat untuk \"Punyaku!\", lalu berhenti sejenak dan lihat gambar Mira."
+    },
+    {
+      "en": "Make a sad face, then a kind, calm voice for Ibu.",
+      "id": "Pasang wajah sedih, lalu suara Ibu yang lembut dan tenang."
+    },
+    {
+      "en": "Roll your hands over each other for \"roll, roll, roll\" and point to each child in turn.",
+      "id": "Putar kedua tangan untuk \"gelinding, gelinding\" dan tunjuk tiap anak bergantian."
+    },
+    {
+      "en": "Point to yourself for \"my turn\" and to your child for \"your turn\", then laugh together.",
+      "id": "Tunjuk diri sendiri untuk \"giliranku\" dan anak untuk \"giliranmu\", lalu tertawa bersama."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a boy with a big red ball",
+      "id": "Kartu 1: anak laki-laki dengan bola merah besar"
+    },
+    {
+      "en": "Card 2: the boy hugging the ball, a girl watching",
+      "id": "Kartu 2: anak laki-laki memeluk bola, anak perempuan melihat"
+    },
+    {
+      "en": "Card 3: a mother kneeling and talking to both",
+      "id": "Kartu 3: ibu berlutut dan berbicara kepada keduanya"
+    },
+    {
+      "en": "Card 4: the ball rolling between the two children",
+      "id": "Kartu 4: bola menggelinding di antara dua anak"
+    },
+    {
+      "en": "Card 5: both children laughing",
+      "id": "Kartu 5: kedua anak tertawa"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Follows a short story about sharing and joins in with \"my turn, your turn\".",
+      "id": "Mengikuti cerita pendek tentang berbagi dan ikut mengucapkan \"giliranku, giliranmu\"."
+    },
+    {
+      "en": "Practises taking turns with a grown-up.",
+      "id": "Berlatih bergiliran dengan orang dewasa."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "turn",
+        "id": "giliran"
+      },
+      "meaning": {
+        "en": "your time to have a go",
+        "id": "waktumu untuk mencoba"
+      }
+    },
+    {
+      "word": {
+        "en": "roll",
+        "id": "menggelinding"
+      },
+      "meaning": {
+        "en": "to move along the floor by turning over and over",
+        "id": "bergerak di lantai sambil berputar terus"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What colour is the ball?",
+        "id": "Apa warna bolanya?"
+      },
+      "choices": {
+        "en": [
+          "red",
+          "blue",
+          "green"
+        ],
+        "id": [
+          "merah",
+          "biru",
+          "hijau"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Mira look sad?",
+        "id": "Mengapa Mira tampak sedih?"
+      },
+      "choices": {
+        "en": [
+          "Adi would not let her play with the ball",
+          "Mira did not like balls",
+          "the ball was too small to see"
+        ],
+        "id": [
+          "Adi tidak mau berbagi bola dengannya",
+          "Mira tidak suka bola",
+          "bolanya terlalu kecil untuk dilihat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Adi and Mira do after Ibu spoke?",
+        "id": "Apa yang dilakukan Adi dan Mira setelah Ibu berbicara?"
+      },
+      "choices": {
+        "en": [
+          "they rolled the ball to each other",
+          "they went to sleep",
+          "they hid the ball"
+        ],
+        "id": [
+          "saling menggelindingkan bola",
+          "pergi tidur",
+          "menyembunyikan bola"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "practical_life",
+      "connection": {
+        "en": "Taking turns is an everyday skill for playing with brothers, sisters and friends.",
+        "id": "Bergiliran adalah keterampilan sehari-hari saat bermain dengan kakak, adik, dan teman."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "How did Mira feel when Adi said \"Mine\"?",
+      "id": "Bagaimana perasaan Mira saat Adi berkata \"Punyaku\"?"
+    },
+    {
+      "en": "Shall we take turns with your toy?",
+      "id": "Bagaimana kalau kita bergiliran dengan mainanmu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Sit on the floor facing your child, legs apart. Roll a big soft ball to each other, saying \"my turn\" when you roll and \"your turn\" when your child rolls. Use a ball bigger than your child's fist.",
+    "id": "Duduk di lantai berhadapan dengan anak, kaki terbuka. Saling menggelindingkan bola besar yang lembut sambil berkata \"giliranku\" saat Anda menggelindingkan dan \"giliranmu\" saat anak menggelindingkan. Pakai bola yang lebih besar dari kepalan tangan anak."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Use only a big, soft ball, larger than your child's fist, and play on a clear floor.",
+      "id": "Gunakan hanya bola besar yang lembut, lebih besar dari kepalan anak, dan bermain di lantai yang lapang."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

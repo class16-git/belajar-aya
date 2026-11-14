@@ -1,0 +1,379 @@
+{
+  "id": "unit-age3_4-montessori-colour-shades-dark-to-light",
+  "version": "1.0.0",
+  "level": "age3_4",
+  "framework": "montessori",
+  "strand": "sensorial",
+  "title": {
+    "en": "Colour shades: from darkest to lightest",
+    "id": "Gradasi warna: dari paling gelap ke paling terang"
+  },
+  "prerequisites": [
+    "unit-age3_4-montessori-colour-pairs-matching"
+  ],
+  "objective": {
+    "en": "Arrange five cards of one colour in order from darkest to lightest, find the darkest and the lightest first, and use the words \"dark\", \"darker\", \"darkest\" and \"light\", \"lighter\", \"lightest\".",
+    "id": "Menyusun lima kartu satu warna berurutan dari paling gelap ke paling terang, menemukan yang paling gelap dan paling terang lebih dulu, serta memakai kata \"gelap\", \"lebih gelap\", \"paling gelap\" dan \"terang\", \"lebih terang\", \"paling terang\"."
+  },
+  "rationale": {
+    "en": "Matching pairs asked \"same or different?\". Grading asks a finer question: \"a little more or a little less?\". The child holds one quality, how dark a colour is, in mind while comparing five cards that differ only in that quality. Dots on the back let her check her own order, and the comparative words give her language for what her eyes already see.",
+    "id": "Mencocokkan pasangan bertanya \"sama atau beda?\". Menggradasi mengajukan pertanyaan yang lebih halus: \"sedikit lebih atau sedikit kurang?\". Anak memusatkan perhatian pada satu sifat, yaitu seberapa gelap suatu warna, sambil membandingkan lima kartu yang hanya berbeda pada sifat itu. Titik di bagian belakang kartu memungkinkan anak mengecek urutannya sendiri, dan kata-kata pembanding memberinya bahasa untuk apa yang sudah dilihat matanya."
+  },
+  "outcomes": [
+    {
+      "en": "Picks out the darkest and the lightest of five shades.",
+      "id": "Memilih kartu paling gelap dan paling terang dari lima gradasi."
+    },
+    {
+      "en": "Places the middle shades in between by comparing two at a time.",
+      "id": "Meletakkan gradasi tengah di antaranya dengan membandingkan dua kartu sekaligus."
+    },
+    {
+      "en": "Uses \"darker\" and \"lighter\" to describe two cards.",
+      "id": "Memakai \"lebih gelap\" dan \"lebih terang\" untuk menjelaskan dua kartu."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "The five cards are in order and the dots on the back read 1 to 5.",
+      "id": "Kelima kartu berurutan dan titik di belakangnya terbaca 1 sampai 5."
+    },
+    {
+      "en": "Your child answers \"Which is darker?\" correctly for two neighbouring cards.",
+      "id": "Anak menjawab \"Mana yang lebih gelap?\" dengan benar untuk dua kartu yang bersebelahan."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use paint sample strips from a hardware shop: one strip shows several shades of one colour. Cut it into large cards yourself and glue each onto thick card.",
+      "id": "Pakai contoh warna cat dari toko bangunan: satu lembar berisi beberapa gradasi satu warna. Potong sendiri menjadi kartu besar dan tempel masing-masing di karton tebal."
+    },
+    {
+      "en": "Start with three cards (darkest, middle, lightest) if five is too many, then add the other two.",
+      "id": "Mulailah dengan tiga kartu (paling gelap, tengah, paling terang) jika lima terlalu banyak, lalu tambahkan dua sisanya."
+    },
+    {
+      "en": "Work in daylight near a window; lamps can make close shades look the same.",
+      "id": "Bekerjalah dengan cahaya siang di dekat jendela; lampu bisa membuat gradasi yang mirip terlihat sama."
+    },
+    {
+      "en": "Teach the words only after the grading is easy, with the three-period lesson on two cards at a time.",
+      "id": "Ajarkan kata-katanya hanya setelah menggradasi sudah mudah, dengan pelajaran tiga tahap pada dua kartu sekaligus."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "Two paint sample strips in different colours (for example blue and green), each with five clearly different shades",
+      "id": "Dua lembar contoh warna cat dengan warna berbeda (misalnya biru dan hijau), masing-masing berisi lima gradasi yang jelas berbeda"
+    },
+    {
+      "en": "Thick card and glue to make the shades into cards about the size of a playing card",
+      "id": "Karton tebal dan lem untuk menjadikan gradasi itu kartu seukuran kartu remi"
+    },
+    {
+      "en": "A marker to put 1 to 5 dots on the back of each card (1 dot is darkest)",
+      "id": "Spidol untuk memberi 1 sampai 5 titik di belakang setiap kartu (1 titik untuk yang paling gelap)"
+    },
+    {
+      "en": "A small mat and a pouch or envelope for each colour set",
+      "id": "Alas kecil dan kantong atau amplop untuk setiap set warna"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Cut the strips into separate shades with scissors (adult only), glue each to card, and let it dry flat.",
+      "id": "Potong lembar contoh warna menjadi gradasi terpisah dengan gunting (hanya orang dewasa), tempel masing-masing di karton, lalu keringkan dalam posisi datar."
+    },
+    {
+      "en": "Check in daylight that each shade is clearly different from its neighbour; leave out any two that look almost the same.",
+      "id": "Pastikan di cahaya siang bahwa setiap gradasi jelas berbeda dari sebelahnya; singkirkan dua kartu yang tampak hampir sama."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Spread the five blue cards on the mat in a random scatter. Look over all of them slowly, then pick the darkest and place it on the left: \"This one is the darkest.\"",
+      "id": "Sebarkan lima kartu biru secara acak di alas. Amati semuanya pelan-pelan, lalu ambil yang paling gelap dan taruh di sebelah kiri: \"Ini yang paling gelap.\""
+    },
+    {
+      "en": "Look again and pick the darkest of those left. Hold it next to the first card, compare, and place it beside it. Continue until the lightest is on the right.",
+      "id": "Lihat lagi dan ambil yang paling gelap dari sisa kartu. Dekatkan ke kartu pertama, bandingkan, lalu letakkan di sebelahnya. Lanjutkan sampai yang paling terang ada di kanan."
+    },
+    {
+      "en": "Run a finger slowly along the row from dark to light. Then turn the cards over one by one: one dot, two dots, three, four, five.",
+      "id": "Telusuri barisan pelan-pelan dengan jari dari gelap ke terang. Lalu balik kartu satu per satu: satu titik, dua titik, tiga, empat, lima."
+    },
+    {
+      "en": "Later, with two neighbouring cards: \"This is dark. This is light.\" Then \"Show me the darker one,\" and finally \"Which one is this?\"",
+      "id": "Kemudian, dengan dua kartu yang bersebelahan: \"Ini gelap. Ini terang.\" Lalu \"Tunjukkan yang lebih gelap,\" dan akhirnya \"Yang ini bagaimana?\""
+    }
+  ],
+  "practice": [
+    {
+      "en": "Grade the blue set, check with the dots, then mix and grade again.",
+      "id": "Menggradasi set biru, mengecek dengan titik, lalu mengacak dan menggradasi lagi."
+    },
+    {
+      "en": "Grade the green set on another day, starting from the lightest this time.",
+      "id": "Menggradasi set hijau di hari lain, kali ini mulai dari yang paling terang."
+    },
+    {
+      "en": "Walk around the house with one card and find something a little darker and something a little lighter.",
+      "id": "Berkeliling rumah membawa satu kartu dan mencari sesuatu yang sedikit lebih gelap dan sesuatu yang sedikit lebih terang."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "You give your child a new set of five red shades she has not graded before. Which card does she place first, if she is working as shown?",
+        "id": "Anda memberi anak set baru lima gradasi merah yang belum pernah ia susun. Kartu mana yang ia letakkan pertama, jika ia bekerja seperti yang dicontohkan?"
+      },
+      "choices": {
+        "en": [
+          "The darkest red",
+          "The card nearest to her hand",
+          "Any card, then she moves them about"
+        ],
+        "id": [
+          "Merah yang paling gelap",
+          "Kartu yang paling dekat dengan tangannya",
+          "Kartu mana saja, lalu ia memindah-mindahkannya"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Starting from one end and choosing the darkest of the rest each time is the strategy that transfers to any colour.",
+        "id": "Mulai dari satu ujung dan setiap kali memilih yang paling gelap dari sisanya adalah strategi yang bisa dipakai untuk warna apa pun."
+      },
+      "distractorMisconceptions": {
+        "1": "PICKS_BY_POSITION",
+        "2": "NO_STRATEGY"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "In her row, the middle two cards are swapped. What happens when she turns the cards over?",
+        "id": "Di barisannya, dua kartu di tengah tertukar. Apa yang terjadi saat ia membalik kartu?"
+      },
+      "choices": {
+        "en": [
+          "The dots are out of order, so she swaps those two cards back",
+          "Nothing; the dots do not matter",
+          "She starts a new row with a different colour"
+        ],
+        "id": [
+          "Titiknya tidak berurutan, jadi ia menukar kembali kedua kartu itu",
+          "Tidak terjadi apa-apa; titiknya tidak penting",
+          "Ia memulai barisan baru dengan warna lain"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The dots are the control of error; out-of-order dots show which cards to look at again.",
+        "id": "Titik adalah pengendali kesalahan; titik yang tidak berurutan menunjukkan kartu mana yang perlu dilihat lagi."
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_CONTROL",
+        "2": "NO_STRATEGY"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Holding two green cards, you ask \"Which is lighter?\" Your child points to the paler one. What does that show?",
+        "id": "Sambil memegang dua kartu hijau, Anda bertanya \"Mana yang lebih terang?\" Anak menunjuk yang lebih pucat. Apa artinya?"
+      },
+      "choices": {
+        "en": [
+          "She understands the word \"lighter\"",
+          "She is choosing the card she likes best",
+          "She is choosing the card on the left"
+        ],
+        "id": [
+          "Ia memahami kata \"lebih terang\"",
+          "Ia memilih kartu yang paling ia sukai",
+          "Ia memilih kartu di sebelah kiri"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Pointing to the paler card links the word to the colour quality.",
+        "id": "Menunjuk kartu yang lebih pucat menghubungkan kata dengan sifat warna."
+      },
+      "distractorMisconceptions": {
+        "1": "PICKS_BY_PREFERENCE",
+        "2": "PICKS_BY_POSITION"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Which of these is a grading task, not a matching task?",
+        "id": "Manakah yang termasuk kegiatan menggradasi, bukan mencocokkan?"
+      },
+      "choices": {
+        "en": [
+          "Putting four shades of yellow in order",
+          "Finding the card that is the same yellow",
+          "Putting yellow cards and blue cards in two piles"
+        ],
+        "id": [
+          "Menyusun empat gradasi kuning berurutan",
+          "Mencari kartu yang kuningnya sama",
+          "Memisahkan kartu kuning dan biru menjadi dua tumpukan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Grading puts things in order by how much of one quality they have. (This item is for the parent.)",
+        "id": "Menggradasi berarti mengurutkan benda menurut seberapa banyak satu sifat yang dimilikinya. (Soal ini untuk orang tua.)"
+      },
+      "distractorMisconceptions": {
+        "1": "GRADING_IS_MATCHING",
+        "2": "GRADING_IS_MATCHING"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "PICKS_BY_POSITION",
+      "description": {
+        "en": "Chooses cards by where they lie, not by their colour.",
+        "id": "Memilih kartu berdasarkan letaknya, bukan warnanya."
+      },
+      "remediation": {
+        "en": "Reduce to three cards with big differences, stack them in your hand and fan them out in a new order each time, so position gives no clue.",
+        "id": "Kurangi menjadi tiga kartu dengan perbedaan besar, tumpuk di tangan, dan kembangkan dengan urutan baru setiap kali, sehingga letak tidak memberi petunjuk."
+      }
+    },
+    {
+      "code": "NO_STRATEGY",
+      "description": {
+        "en": "Moves cards about without a plan for finding the next one.",
+        "id": "Memindah-mindahkan kartu tanpa rencana untuk menemukan kartu berikutnya."
+      },
+      "remediation": {
+        "en": "Say the strategy as a little routine: \"Look at them all. Find the darkest. Put it next.\" Do the first two cards together, hand over hand.",
+        "id": "Ucapkan strateginya sebagai rutinitas kecil: \"Lihat semuanya. Cari yang paling gelap. Taruh di sebelahnya.\" Kerjakan dua kartu pertama bersama, tangan di atas tangan."
+      }
+    },
+    {
+      "code": "IGNORES_CONTROL",
+      "description": {
+        "en": "Turns the cards over but does not use the dots to find a mistake.",
+        "id": "Membalik kartu tetapi tidak memakai titik untuk menemukan kesalahan."
+      },
+      "remediation": {
+        "en": "Count the dots aloud together along the row; when a number comes out of order, stop and say only \"Hmm, let's look at these two.\"",
+        "id": "Hitung titik bersama dengan suara keras sepanjang barisan; saat ada angka yang tidak berurutan, berhenti dan katakan saja \"Hmm, coba kita lihat dua kartu ini.\""
+      }
+    },
+    {
+      "code": "PICKS_BY_PREFERENCE",
+      "description": {
+        "en": "Answers with a favourite card instead of comparing the two shades.",
+        "id": "Menjawab dengan kartu kesukaannya alih-alih membandingkan dua gradasi."
+      },
+      "remediation": {
+        "en": "Use two cards with a very big difference (darkest and lightest) and lay each on a white sheet of paper: \"Which one is closer to the white paper?\" Then move to neighbouring cards.",
+        "id": "Pakai dua kartu yang perbedaannya sangat besar (paling gelap dan paling terang) dan letakkan masing-masing di atas kertas putih: \"Mana yang lebih mirip dengan kertas putih?\" Lalu lanjutkan ke kartu yang bersebelahan."
+      }
+    },
+    {
+      "code": "GRADING_IS_MATCHING",
+      "description": {
+        "en": "The adult confuses ordering by degree with finding pairs or sorting into groups.",
+        "id": "Orang dewasa tertukar antara mengurutkan berdasarkan tingkatan dengan mencari pasangan atau mengelompokkan."
+      },
+      "remediation": {
+        "en": "Compare the two works side by side: pairs ask \"same or different?\", grading asks \"more or less?\". Show each with the cards.",
+        "id": "Bandingkan kedua kegiatan berdampingan: pasangan bertanya \"sama atau beda?\", gradasi bertanya \"lebih atau kurang?\". Tunjukkan masing-masing dengan kartu."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Mix two graded sets (blue and green) and sort them into colours, then grade each one.",
+      "id": "Mencampur dua set gradasi (biru dan hijau), memisahkannya per warna, lalu menggradasi masing-masing."
+    },
+    {
+      "en": "Make a new shade together: the adult adds a little white paint to a blob of blue, step by step, and the child paints a stripe of each.",
+      "id": "Membuat gradasi baru bersama: orang dewasa menambahkan sedikit cat putih ke segumpal cat biru, sedikit demi sedikit, dan anak mengecat satu garis untuk setiap tahap."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "If colour vision is a concern, grade shades of grey first and talk to your doctor; some colour pairs are hard to tell apart for some children.",
+      "id": "Jika ada kekhawatiran tentang penglihatan warna, gradasikan warna abu-abu dulu dan konsultasikan dengan dokter; beberapa pasangan warna sulit dibedakan oleh sebagian anak."
+    },
+    {
+      "en": "Larger cards, or cards fixed to wooden blocks, are easier to pick up and compare.",
+      "id": "Kartu yang lebih besar, atau kartu yang ditempel di balok kayu, lebih mudah diambil dan dibandingkan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "The adult does all the cutting with scissors before the lesson and keeps them out of reach.",
+        "id": "Orang dewasa yang melakukan semua pemotongan dengan gunting sebelum kegiatan dan menyimpannya di luar jangkauan."
+      },
+      {
+        "en": "Cards are large and glued to thick card, so there are no small pieces; replace any card that starts to peel or tear.",
+        "id": "Kartu berukuran besar dan ditempel di karton tebal, sehingga tidak ada potongan kecil; ganti kartu yang mulai mengelupas atau sobek."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 5,
+    "max": 15
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child grades five shades of a colour she has not graded before, checks with the dots, and uses \"darker\" and \"lighter\" correctly, on two different days.",
+      "id": "Dikuasai jika anak menggradasi lima gradasi warna yang belum pernah ia susun, mengecek dengan titik, dan memakai \"lebih gelap\" dan \"lebih terang\" dengan benar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "safety",
+      "age-fit",
+      "transfer-assessment"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

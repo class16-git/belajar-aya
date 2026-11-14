@@ -1,0 +1,381 @@
+{
+  "id": "unit-k-montessori-living-and-non-living",
+  "version": "1.0.0",
+  "level": "k",
+  "framework": "montessori",
+  "strand": "cosmic_education",
+  "title": {
+    "en": "Living and non-living things",
+    "id": "Benda hidup dan benda tak hidup"
+  },
+  "prerequisites": [
+    "unit-k-montessori-parts-of-a-plant"
+  ],
+  "objective": {
+    "en": "Sort real objects and picture cards into living and non-living, using four questions (Does it need food and water? Does it need air? Does it grow? Can it make young or seeds?), and explain why something that moves, such as a toy car, is still non-living.",
+    "id": "Memilah benda nyata dan kartu gambar menjadi benda hidup dan benda tak hidup memakai empat pertanyaan (Apakah ia butuh makanan dan air? Apakah ia butuh udara? Apakah ia tumbuh? Apakah ia bisa berkembang biak atau menghasilkan biji?), dan menjelaskan mengapa sesuatu yang bergerak, misalnya mobil mainan, tetap benda tak hidup."
+  },
+  "rationale": {
+    "en": "This is the first great division of the world in Montessori cultural work, and it opens both botany and zoology: plants and animals are the two big groups of living things. Young children often decide \"alive\" by movement alone, so the lesson gives them a set of questions to test instead. Using real things from the house and garden keeps the work concrete, and a control chart lets the child check the sort herself.",
+    "id": "Inilah pembagian besar pertama dunia dalam kegiatan budaya Montessori, yang membuka jalan ke botani dan zoologi: tumbuhan dan hewan adalah dua kelompok besar makhluk hidup. Anak kecil sering menilai \"hidup\" hanya dari gerakan, maka pelajaran ini memberi mereka serangkaian pertanyaan untuk menguji. Memakai benda nyata dari rumah dan halaman menjaga kegiatan tetap konkret, dan bagan pengendali memungkinkan anak mengecek pemilahannya sendiri."
+  },
+  "outcomes": [
+    {
+      "en": "Sorts at least ten objects or cards into living and non-living.",
+      "id": "Memilah setidaknya sepuluh benda atau kartu menjadi hidup dan tak hidup."
+    },
+    {
+      "en": "Uses the four questions to explain a choice.",
+      "id": "Memakai empat pertanyaan untuk menjelaskan pilihannya."
+    },
+    {
+      "en": "Explains that moving does not make something living.",
+      "id": "Menjelaskan bahwa bergerak tidak membuat sesuatu menjadi hidup."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "The sorted cards match the control chart.",
+      "id": "Kartu yang dipilah sesuai dengan bagan pengendali."
+    },
+    {
+      "en": "Your child gives a reason with at least one of the four questions, for example \"It does not grow.\"",
+      "id": "Anak memberi alasan dengan setidaknya satu dari empat pertanyaan, misalnya \"Ia tidak tumbuh.\""
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use real things first: a potted plant, a snail or ant seen in the garden (watched, not collected), a stone, a spoon, a toy car. Pictures come after.",
+      "id": "Pakai benda nyata lebih dulu: tanaman pot, siput atau semut yang dilihat di kebun (diamati, tidak dikumpulkan), batu, sendok, mobil mainan. Gambar menyusul kemudian."
+    },
+    {
+      "en": "Keep the four questions short and always in the same order, and write them on a card with a small picture for each: a bowl and cup, a breeze, a growing plant, an egg and a seed.",
+      "id": "Jaga keempat pertanyaan tetap singkat dan selalu dalam urutan yang sama, dan tulis di sebuah kartu dengan gambar kecil untuk masing-masing: mangkuk dan gelas, angin, tanaman yang tumbuh, telur dan biji."
+    },
+    {
+      "en": "Plants are living even though they do not walk about. Say this clearly, because children often leave plants out.",
+      "id": "Tumbuhan itu hidup meskipun tidak berjalan ke mana-mana. Katakan ini dengan jelas, karena anak sering tidak memasukkan tumbuhan."
+    },
+    {
+      "en": "Leave things that were once alive (a dry leaf, a wooden spoon) for the extension; at first, choose clear examples.",
+      "id": "Simpan benda yang dulunya hidup (daun kering, sendok kayu) untuk kegiatan lanjutan; pada awalnya, pilih contoh yang jelas."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Take one thing. Ask the four questions on the card.",
+      "id": "Ambil satu benda. Ajukan empat pertanyaan di kartu."
+    },
+    {
+      "en": "If the answers are yes, put it on the green mat: living. If they are no, put it on the grey mat: non-living.",
+      "id": "Jika jawabannya ya, taruh di alas hijau: hidup. Jika jawabannya tidak, taruh di alas abu-abu: tak hidup."
+    },
+    {
+      "en": "When you are finished, check with the chart.",
+      "id": "Setelah selesai, cek dengan bagan."
+    }
+  ],
+  "cpa": null,
+  "materials": [
+    {
+      "en": "A green cloth or paper mat labelled \"living\" and a grey one labelled \"non-living\"",
+      "id": "Alas kain atau kertas hijau berlabel \"hidup\" dan alas abu-abu berlabel \"tak hidup\""
+    },
+    {
+      "en": "Real things: a small potted plant, a stone, a metal spoon, a toy car, a cup of water, and a snail or a line of ants watched outside",
+      "id": "Benda nyata: tanaman pot kecil, batu, sendok logam, mobil mainan, segelas air, siput atau semut yang diamati di luar"
+    },
+    {
+      "en": "About twelve picture cards (for example cat, rice plant, fish, child, bird, mango tree, chair, book, bicycle, cloud, kite, ball)",
+      "id": "Kira-kira dua belas kartu gambar (misalnya kucing, tanaman padi, ikan, anak, burung, pohon mangga, kursi, buku, sepeda, awan, layang-layang, bola)"
+    },
+    {
+      "en": "A question card with four small drawings, and a control chart with the same pictures already sorted",
+      "id": "Kartu pertanyaan dengan empat gambar kecil, dan bagan pengendali dengan gambar yang sama yang sudah dipilah"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Draw or print the picture cards and the control chart; keep the chart face down until the end.",
+      "id": "Gambar atau cetak kartu gambar dan bagan pengendali; letakkan bagan terbalik sampai akhir."
+    },
+    {
+      "en": "Find a snail, ant line or caterpillar outside in advance so the child can watch a living animal without picking it up.",
+      "id": "Cari siput, barisan semut, atau ulat di luar lebih dulu agar anak bisa mengamati hewan hidup tanpa mengambilnya."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Hold up the potted plant: \"Does it need food and water? Yes, we water it. Does it need air? Yes, it takes in air through tiny holes in its leaves. Does it grow? Yes, it has a new leaf. Can it make seeds? Yes, when it flowers. Living.\" Put it on the green mat.",
+      "id": "Angkat tanaman pot: \"Apakah ia butuh makanan dan air? Ya, kita menyiramnya. Apakah ia butuh udara? Ya, ia mengambil udara lewat lubang-lubang kecil di daunnya. Apakah ia tumbuh? Ya, ada daun baru. Bisakah ia menghasilkan biji? Ya, saat berbunga. Hidup.\" Taruh di alas hijau."
+    },
+    {
+      "en": "Hold up the stone: \"Does it need food and water? No. Does it need air? No. Does it grow? No. Can it make little stones? No. Non-living.\" Put it on the grey mat.",
+      "id": "Angkat batu: \"Apakah ia butuh makanan dan air? Tidak. Apakah ia butuh udara? Tidak. Apakah ia tumbuh? Tidak. Bisakah ia membuat batu kecil? Tidak. Tak hidup.\" Taruh di alas abu-abu."
+    },
+    {
+      "en": "Push the toy car so it rolls: \"It moves! Let's ask the questions.\" Go through all four together: no, no, no, no. \"It moves, but it is non-living. Something pushed it.\"",
+      "id": "Dorong mobil mainan sampai meluncur: \"Ia bergerak! Ayo kita ajukan pertanyaannya.\" Jawab keempatnya bersama: tidak, tidak, tidak, tidak. \"Ia bergerak, tetapi tak hidup. Ada yang mendorongnya.\""
+    },
+    {
+      "en": "Go outside and watch the ants or snail for a minute: \"Is it eating? Is it moving by itself? Living.\" Come back and add its picture to the green mat.",
+      "id": "Pergi ke luar dan amati semut atau siput sebentar: \"Apakah ia sedang makan? Apakah ia bergerak sendiri? Hidup.\" Kembali ke dalam dan tambahkan gambarnya ke alas hijau."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Sort the twelve picture cards with the question card, then turn over the control chart and compare.",
+      "id": "Memilah dua belas kartu gambar dengan kartu pertanyaan, lalu membalik bagan pengendali dan membandingkan."
+    },
+    {
+      "en": "Living and non-living walk: in the garden, the child points to three living things and three non-living things and says why.",
+      "id": "Jalan-jalan hidup dan tak hidup: di halaman, anak menunjuk tiga benda hidup dan tiga benda tak hidup lalu menyebut alasannya."
+    },
+    {
+      "en": "Draw one living and one non-living thing from the kitchen and tell the adult the reasons.",
+      "id": "Menggambar satu benda hidup dan satu benda tak hidup dari dapur lalu menceritakan alasannya kepada orang dewasa."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A robot vacuum cleaner moves around the floor by itself. Is it living or non-living?",
+        "id": "Robot penyedot debu bergerak sendiri di lantai. Apakah ia hidup atau tak hidup?"
+      },
+      "choices": {
+        "en": [
+          "Non-living: it does not eat, grow or make young",
+          "Living: it moves by itself",
+          "Living: it makes a noise"
+        ],
+        "id": [
+          "Tak hidup: ia tidak makan, tidak tumbuh, dan tidak berkembang biak",
+          "Hidup: ia bergerak sendiri",
+          "Hidup: ia mengeluarkan suara"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A machine can move and make sounds, but it does not grow or make young; a battery or plug gives it power.",
+        "id": "Mesin bisa bergerak dan bersuara, tetapi tidak tumbuh atau berkembang biak; baterai atau listrik yang memberinya tenaga."
+      },
+      "distractorMisconceptions": {
+        "1": "MOVING_MEANS_LIVING",
+        "2": "NOISE_MEANS_LIVING"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "A mushroom is growing on an old log in the garden. It does not move. Living or non-living?",
+        "id": "Sebuah jamur tumbuh di batang kayu tua di kebun. Jamur itu tidak bergerak. Hidup atau tak hidup?"
+      },
+      "choices": {
+        "en": [
+          "Living: it grows and makes more mushrooms",
+          "Non-living: it does not move",
+          "Non-living: it grows on wood"
+        ],
+        "id": [
+          "Hidup: ia tumbuh dan menghasilkan jamur baru",
+          "Tak hidup: ia tidak bergerak",
+          "Tak hidup: ia tumbuh di kayu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Mushrooms take in water and food, grow and spread to make new mushrooms, even though they stay in one place.",
+        "id": "Jamur menyerap air dan makanan, tumbuh, dan menyebar membentuk jamur baru, meskipun tetap di satu tempat."
+      },
+      "distractorMisconceptions": {
+        "1": "STILL_MEANS_NON_LIVING",
+        "2": "STILL_MEANS_NON_LIVING"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Which of these is living?",
+        "id": "Manakah yang hidup?"
+      },
+      "choices": {
+        "en": [
+          "A banana tree",
+          "A river",
+          "The wind"
+        ],
+        "id": [
+          "Pohon pisang",
+          "Sungai",
+          "Angin"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A banana tree needs water, grows and makes new shoots. A river and the wind move but do not grow or make young.",
+        "id": "Pohon pisang butuh air, tumbuh, dan menumbuhkan tunas baru. Sungai dan angin bergerak tetapi tidak tumbuh atau berkembang biak."
+      },
+      "distractorMisconceptions": {
+        "1": "MOVING_MEANS_LIVING",
+        "2": "MOVING_MEANS_LIVING"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Your child says \"A cloud is living, because it gets bigger.\" Which question helps her think again?",
+        "id": "Anak berkata \"Awan itu hidup, karena bisa membesar.\" Pertanyaan mana yang membantunya berpikir ulang?"
+      },
+      "choices": {
+        "en": [
+          "\"Does it eat and make baby clouds?\"",
+          "\"What colour is it?\"",
+          "\"Is it high in the sky?\""
+        ],
+        "id": [
+          "\"Apakah ia makan dan melahirkan anak awan?\"",
+          "\"Warnanya apa?\"",
+          "\"Apakah ia tinggi di langit?\""
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Getting bigger alone is not growing like a living thing; the other questions show a cloud does not eat or make young.",
+        "id": "Sekadar membesar tidak sama dengan tumbuh seperti makhluk hidup; pertanyaan lain menunjukkan awan tidak makan atau berkembang biak."
+      },
+      "distractorMisconceptions": {
+        "1": "ONE_SIGN_IS_ENOUGH",
+        "2": "ONE_SIGN_IS_ENOUGH"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "MOVING_MEANS_LIVING",
+      "description": {
+        "en": "Decides something is alive because it moves (cars, rivers, wind, clocks).",
+        "id": "Menganggap sesuatu hidup karena bergerak (mobil, sungai, angin, jam)."
+      },
+      "remediation": {
+        "en": "Put a toy car and a cat picture side by side and ask all four questions for each, ticking yes or no on paper; the car gets four no's although it moves.",
+        "id": "Letakkan mobil mainan dan gambar kucing berdampingan, ajukan keempat pertanyaan untuk masing-masing, dan beri tanda ya atau tidak di kertas; mobil mendapat empat \"tidak\" meskipun bergerak."
+      }
+    },
+    {
+      "code": "NOISE_MEANS_LIVING",
+      "description": {
+        "en": "Thinks making a sound means being alive.",
+        "id": "Mengira mengeluarkan suara berarti hidup."
+      },
+      "remediation": {
+        "en": "Make sounds with a spoon on a pot, a whistle and a radio: \"Do any of these eat or grow?\" Then listen to a bird.",
+        "id": "Buat bunyi dengan sendok di panci, peluit, dan radio: \"Apakah ada yang makan atau tumbuh?\" Lalu dengarkan burung."
+      }
+    },
+    {
+      "code": "STILL_MEANS_NON_LIVING",
+      "description": {
+        "en": "Thinks things that stay in one place, such as plants and mushrooms, are not alive.",
+        "id": "Mengira benda yang diam di satu tempat, seperti tumbuhan dan jamur, tidak hidup."
+      },
+      "remediation": {
+        "en": "Mark the tip of a growing plant with a small sticker on a stick beside it and look each day: \"It grew, all by itself.\"",
+        "id": "Tandai ujung tanaman yang sedang tumbuh dengan stiker kecil di lidi di sampingnya dan lihat setiap hari: \"Ia tumbuh, sendiri.\""
+      }
+    },
+    {
+      "code": "ONE_SIGN_IS_ENOUGH",
+      "description": {
+        "en": "Uses one sign (getting bigger, moving) instead of all the questions.",
+        "id": "Memakai satu tanda saja (membesar, bergerak) alih-alih semua pertanyaan."
+      },
+      "remediation": {
+        "en": "Make the four questions into a ladder of four boxes on paper; a living thing must climb all four steps with a yes.",
+        "id": "Jadikan keempat pertanyaan tangga empat kotak di kertas; benda hidup harus menaiki keempat anak tangga dengan jawaban ya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add a third mat, \"once living\", for a dry leaf, a wooden spoon and a cotton shirt, and talk about where each came from.",
+      "id": "Menambah alas ketiga, \"dulu hidup\", untuk daun kering, sendok kayu, dan kaus katun, lalu membicarakan asal masing-masing."
+    },
+    {
+      "en": "Sort the living cards again into plants and animals.",
+      "id": "Memilah lagi kartu benda hidup menjadi tumbuhan dan hewan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Answer the questions with thumbs up or down, or by pointing to the drawings on the question card, for a child with little speech.",
+      "id": "Jawab pertanyaan dengan jempol ke atas atau ke bawah, atau dengan menunjuk gambar di kartu pertanyaan, untuk anak yang belum banyak bicara."
+    },
+    {
+      "en": "Use only real objects, which can be held and felt, for a child with low vision.",
+      "id": "Pakai hanya benda nyata yang bisa dipegang dan diraba untuk anak dengan penglihatan terbatas."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Watch garden animals without picking them up; do not touch caterpillars with hairs, which can sting.",
+        "id": "Amati hewan di kebun tanpa mengambilnya; jangan menyentuh ulat berbulu, yang bisa menyebabkan gatal."
+      },
+      {
+        "en": "Wash hands after the garden walk and after handling the stone and plant.",
+        "id": "Cuci tangan setelah jalan-jalan di kebun dan setelah memegang batu dan tanaman."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child sorts twelve new cards correctly and explains two choices with the questions, on two different days.",
+      "id": "Dikuasai jika anak memilah dua belas kartu baru dengan benar dan menjelaskan dua pilihan dengan pertanyaan-pertanyaan itu, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (Montessori-inspired approach with home-made materials, described in original wording)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "safety",
+      "age-fit",
+      "transfer-assessment"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-montessori",
+    "createdAt": "2026-11-10"
+  }
+}

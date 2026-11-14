@@ -1,0 +1,437 @@
+{
+  "id": "unit-k-math-position-words",
+  "version": "1.0.0",
+  "level": "k",
+  "framework": "math",
+  "strand": "geometry",
+  "title": {
+    "en": "Where is it? Position words",
+    "id": "Di mana letaknya? Kata posisi"
+  },
+  "prerequisites": [],
+  "objective": {
+    "en": "Use position words (on, under, above, below, beside, between, in front of, behind, inside, outside) to describe and follow directions about where things are, and say which object is the reference point.",
+    "id": "Memakai kata posisi (di atas, di bawah, di samping, di antara, di depan, di belakang, di dalam, di luar) untuk menjelaskan dan mengikuti petunjuk letak benda, serta menyebut benda mana yang menjadi patokan."
+  },
+  "rationale": {
+    "en": "Spatial language is the start of geometry, map reading and following multi-step directions. Children often know the words but swap the object and its reference point ('the box is on the book' for 'the book is on the box'), so the unit makes the reference object explicit every time.",
+    "id": "Bahasa ruang adalah awal geometri, membaca peta, dan mengikuti petunjuk bertahap. Anak sering tahu katanya tetapi menukar benda dengan patokannya ('kotak di atas buku' padahal 'buku di atas kotak'), jadi unit ini selalu menegaskan benda patokannya."
+  },
+  "outcomes": [
+    {
+      "en": "Places a toy correctly when given a position word and a reference object.",
+      "id": "Meletakkan mainan dengan benar saat diberi kata posisi dan benda patokan."
+    },
+    {
+      "en": "Describes where an object is in a full sentence that names the reference object.",
+      "id": "Menjelaskan letak benda dengan kalimat lengkap yang menyebut benda patokan."
+    },
+    {
+      "en": "Finds what is between two objects in a row and counts how many there are.",
+      "id": "Menemukan benda yang ada di antara dua benda dalam satu baris dan menghitung jumlahnya."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can put my teddy under, beside or behind the chair when I hear the words.",
+      "id": "Aku bisa menaruh bonekaku di bawah, di samping, atau di belakang kursi saat mendengar katanya."
+    },
+    {
+      "en": "I can say a sentence like 'The cup is beside the bowl.'",
+      "id": "Aku bisa mengucapkan kalimat seperti 'Gelas ada di samping mangkuk.'"
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Always say the whole sentence: the object, the position word and the reference object. 'The kitten toy is under the table', not just 'under'.",
+      "id": "Selalu ucapkan kalimat utuh: bendanya, kata posisinya, dan benda patokannya. 'Boneka kucing ada di bawah meja', bukan hanya 'di bawah'."
+    },
+    {
+      "en": "Let your child move their own body first (stand beside the door, crawl under the table), then move a toy, then talk about a drawing.",
+      "id": "Biarkan anak menggerakkan tubuhnya dulu (berdiri di samping pintu, merangkak di bawah meja), lalu memindahkan mainan, lalu membicarakan gambar."
+    },
+    {
+      "en": "For 'in front of' and 'behind', use a line of toys that all face the same way, such as a queue facing a door, so the front is clear.",
+      "id": "Untuk 'di depan' dan 'di belakang', pakai barisan mainan yang semuanya menghadap ke arah yang sama, misalnya antrean menghadap pintu, supaya bagian depannya jelas."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Listen to the words. Put the toy in the right place. Then say where it is.",
+      "id": "Dengarkan kata-katanya. Taruh mainan di tempat yang tepat. Lalu katakan di mana letaknya."
+    },
+    {
+      "en": "Tell me what the toy is next to, on or under.",
+      "id": "Ceritakan mainan itu ada di samping, di atas, atau di bawah apa."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Body game: the child stands beside the sofa, sits under the table, stands between two cushions and hides behind the curtain while the adult says each sentence.",
+        "id": "Permainan tubuh: anak berdiri di samping sofa, duduk di bawah meja, berdiri di antara dua bantal, dan bersembunyi di belakang tirai sambil orang dewasa mengucapkan kalimatnya."
+      },
+      {
+        "en": "Toy game: with a shoebox, a plastic cup and a soft toy, the child puts the toy on, under, inside, beside and behind the box.",
+        "id": "Permainan mainan: dengan kotak sepatu, gelas plastik, dan boneka, anak menaruh boneka di atas, di bawah, di dalam, di samping, dan di belakang kotak."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a simple room together: a bed, a mat and a window. The child draws a ball under the bed and a bird above the window, then tells where each thing is.",
+        "id": "Gambar kamar sederhana bersama: tempat tidur, keset, dan jendela. Anak menggambar bola di bawah tempat tidur dan burung di atas jendela, lalu menceritakan letak setiap benda."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Play 'I spy' with words only: 'I spy something between the lamp and the clock.' The child finds it without pointing first.",
+        "id": "Main tebak benda dengan kata saja: 'Aku melihat sesuatu di antara lampu dan jam.' Anak mencarinya tanpa ditunjukkan dulu."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A shoebox, a large plastic cup and two or three soft toys",
+      "id": "Kotak sepatu, gelas plastik besar, dan dua atau tiga boneka"
+    },
+    {
+      "en": "Furniture already in the room: a table, a chair, cushions",
+      "id": "Perabot yang sudah ada di ruangan: meja, kursi, bantal"
+    },
+    {
+      "en": "Paper and crayons for drawing",
+      "id": "Kertas dan krayon untuk menggambar"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Clear a space on the floor and check that nothing can fall when the child crawls under the table.",
+      "id": "Kosongkan ruang di lantai dan pastikan tidak ada yang bisa jatuh saat anak merangkak di bawah meja."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Reference object first: put the teddy on the shoebox. Say: 'The teddy is on the box. The box is the place we look at.' Then swap: put the box on the teddy and ask what changed.",
+      "id": "Patokan dulu: taruh boneka beruang di atas kotak sepatu. Ucapkan: 'Boneka ada di atas kotak. Kotak adalah tempat yang kita lihat.' Lalu tukar: taruh kotak di atas boneka dan tanyakan apa yang berubah."
+    },
+    {
+      "en": "Between: line up a cup, a teddy and a slipper. The teddy is between the cup and the slipper, because it has one of them on each side.",
+      "id": "Di antara: jajarkan gelas, boneka, dan sandal. Boneka ada di antara gelas dan sandal, karena di setiap sisinya ada salah satu benda itu."
+    },
+    {
+      "en": "In front of and behind: make a queue of three toys facing the door: rabbit, bear, cat. The rabbit is nearest the door, so the rabbit is in front of the bear, and the cat is behind the bear.",
+      "id": "Di depan dan di belakang: buat antrean tiga mainan menghadap pintu: kelinci, beruang, kucing. Kelinci paling dekat dengan pintu, jadi kelinci ada di depan beruang, dan kucing ada di belakang beruang."
+    },
+    {
+      "en": "Counting between: a row of a spoon, a cup, a block and a bowl. Between the spoon and the bowl there are 2 things: the cup and the block. The spoon and the bowl at the ends are not counted.",
+      "id": "Menghitung yang di antara: satu baris berisi sendok, gelas, balok, dan mangkuk. Di antara sendok dan mangkuk ada 2 benda: gelas dan balok. Sendok dan mangkuk di ujung tidak dihitung."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Treasure hunt: the adult hides a soft toy and gives one clue at a time ('It is under something soft', 'It is beside the shoes').",
+      "id": "Berburu harta karun: orang dewasa menyembunyikan boneka dan memberi satu petunjuk setiap kali ('Ada di bawah sesuatu yang empuk', 'Ada di samping sepatu')."
+    },
+    {
+      "en": "Swap roles: the child hides the toy and gives the clues, using a reference object in every sentence.",
+      "id": "Tukar peran: anak yang menyembunyikan mainan dan memberi petunjuk, dengan menyebut benda patokan di setiap kalimat."
+    },
+    {
+      "en": "Tidy-up directions: 'Put the book on the shelf, then put the cup beside the book.' Two steps, then three.",
+      "id": "Petunjuk merapikan: 'Taruh buku di atas rak, lalu taruh gelas di samping buku.' Dua langkah, lalu tiga langkah."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A storybook is lying on a box. Which one is at the bottom?",
+        "id": "Sebuah buku cerita tergeletak di atas kotak. Mana yang ada di bawah?"
+      },
+      "choices": {
+        "en": [
+          "The box",
+          "The storybook",
+          "They are side by side"
+        ],
+        "id": [
+          "Kotaknya",
+          "Buku ceritanya",
+          "Keduanya bersebelahan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "The book is on the box, so the box is underneath. The box is the reference object.",
+        "id": "Buku ada di atas kotak, jadi kotak ada di bawahnya. Kotak adalah benda patokannya."
+      },
+      "distractorMisconceptions": {
+        "1": "REFERENCE_SWAP",
+        "2": "BESIDE_FOR_ON"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Rani, Doni and Wati wait in a line. Rani is first, Doni is next and Wati is last. Who is between Rani and Wati?",
+        "id": "Rani, Doni, dan Wati menunggu dalam satu barisan. Rani paling depan, Doni berikutnya, dan Wati paling belakang. Siapa yang ada di antara Rani dan Wati?"
+      },
+      "choices": {
+        "en": [
+          "Doni",
+          "Rani",
+          "Wati"
+        ],
+        "id": [
+          "Doni",
+          "Rani",
+          "Wati"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Doni has Rani on one side and Wati on the other side, so Doni is between them.",
+        "id": "Di satu sisi Doni ada Rani dan di sisi lain ada Wati, jadi Doni ada di antara mereka."
+      },
+      "distractorMisconceptions": {
+        "1": "BETWEEN_GIVES_END",
+        "2": "BETWEEN_GIVES_END"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "Toys queue facing the toy shop door. The duck is just in front of the frog. Which toy is nearer the door?",
+        "id": "Mainan mengantre menghadap pintu toko mainan. Bebek tepat di depan katak. Mainan mana yang lebih dekat ke pintu?"
+      },
+      "choices": {
+        "en": [
+          "The duck",
+          "The frog",
+          "Both are the same distance from the door"
+        ],
+        "id": [
+          "Bebek",
+          "Katak",
+          "Jaraknya sama dari pintu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "In a queue, the one in front is closer to where the queue is going, so the duck is nearer the door.",
+        "id": "Dalam antrean, yang di depan lebih dekat ke arah tujuan antrean, jadi bebek lebih dekat ke pintu."
+      },
+      "distractorMisconceptions": {
+        "1": "FRONT_BEHIND_SWAP",
+        "2": "BESIDE_FOR_ON"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Five toys stand in a row: a car, a ball, a doll, a drum and a boat. How many toys are between the car and the boat?",
+        "id": "Lima mainan berdiri dalam satu baris: mobil, bola, boneka, drum, dan perahu. Berapa mainan yang ada di antara mobil dan perahu?"
+      },
+      "choices": {
+        "en": [
+          "3 toys",
+          "5 toys",
+          "4 toys"
+        ],
+        "id": [
+          "3 mainan",
+          "5 mainan",
+          "4 mainan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Between the car and the boat are the ball, the doll and the drum: 3 toys. The car and the boat are the ends, so they are not counted.",
+        "id": "Di antara mobil dan perahu ada bola, boneka, dan drum: 3 mainan. Mobil dan perahu ada di ujung, jadi tidak dihitung."
+      },
+      "check": {
+        "expression": "5 - 2",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_ENDS_TOO",
+        "2": "COUNTS_ENDS_TOO"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Ibu says: 'Put the spoon under the plate.' Where does the spoon go?",
+        "id": "Ibu berkata: 'Taruh sendok di bawah piring.' Di mana sendoknya diletakkan?"
+      },
+      "choices": {
+        "en": [
+          "Below the plate, so the plate covers it",
+          "On top of the plate",
+          "Next to the plate"
+        ],
+        "id": [
+          "Di bawah piring, sehingga tertutup piring",
+          "Di atas piring",
+          "Di sebelah piring"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Under means lower than the plate, so the plate is on top and covers the spoon.",
+        "id": "Di bawah berarti lebih rendah daripada piring, jadi piring ada di atas dan menutupi sendok."
+      },
+      "distractorMisconceptions": {
+        "1": "ON_UNDER_SWAP",
+        "2": "BESIDE_FOR_ON"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "REFERENCE_SWAP",
+      "description": {
+        "en": "Swaps the object and its reference point, describing the box as on the book when the book is on the box.",
+        "id": "Menukar benda dengan patokannya, mengatakan kotak di atas buku padahal buku yang di atas kotak."
+      },
+      "remediation": {
+        "en": "Hold the reference object still and move only the other object; say 'The box stays. The book moves on top of it.'",
+        "id": "Pegang benda patokan supaya diam dan pindahkan hanya benda lainnya; ucapkan 'Kotaknya diam. Bukunya pindah ke atasnya.'"
+      }
+    },
+    {
+      "code": "BETWEEN_GIVES_END",
+      "description": {
+        "en": "Names one of the two end objects when asked what is between them.",
+        "id": "Menyebut salah satu benda di ujung saat ditanya apa yang ada di antaranya."
+      },
+      "remediation": {
+        "en": "Stand the child between two adults, each touching one of the child's shoulders: 'You are between us. We are the ends.'",
+        "id": "Minta anak berdiri di antara dua orang dewasa yang masing-masing menyentuh satu bahunya: 'Kamu di antara kami. Kami ujungnya.'"
+      }
+    },
+    {
+      "code": "FRONT_BEHIND_SWAP",
+      "description": {
+        "en": "Mixes up in front of and behind in a queue.",
+        "id": "Tertukar antara di depan dan di belakang dalam antrean."
+      },
+      "remediation": {
+        "en": "Walk in a real queue to the door with the child behind you: 'I reach the door first because I am in front.'",
+        "id": "Berjalan dalam antrean sungguhan ke pintu dengan anak di belakang Anda: 'Aku sampai pintu duluan karena aku di depan.'"
+      }
+    },
+    {
+      "code": "COUNTS_ENDS_TOO",
+      "description": {
+        "en": "Counts the two end objects as well as the objects between them.",
+        "id": "Ikut menghitung kedua benda di ujung selain benda yang ada di antaranya."
+      },
+      "remediation": {
+        "en": "Cover the two end toys with cloths, then count only what is still showing.",
+        "id": "Tutup kedua mainan di ujung dengan kain, lalu hitung hanya yang masih terlihat."
+      }
+    },
+    {
+      "code": "ON_UNDER_SWAP",
+      "description": {
+        "en": "Mixes up on and under, or above and below.",
+        "id": "Tertukar antara di atas dan di bawah."
+      },
+      "remediation": {
+        "en": "Use the body: put a hand on your head (on), then under your chin (under), saying the word each time.",
+        "id": "Pakai tubuh: taruh tangan di atas kepala (di atas), lalu di bawah dagu (di bawah), sambil mengucapkan katanya."
+      }
+    },
+    {
+      "code": "BESIDE_FOR_ON",
+      "description": {
+        "en": "Uses beside or next to for any position, without noticing up, down or front.",
+        "id": "Memakai di samping untuk semua posisi, tanpa memperhatikan atas, bawah, atau depan."
+      },
+      "remediation": {
+        "en": "Play 'touching or not touching': beside means side by side at the same height; on means resting on top.",
+        "id": "Main 'menempel atau tidak': di samping berarti bersebelahan setinggi yang sama; di atas berarti bertumpu di atasnya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Left and right with the body only: wear a ribbon on the right wrist and follow 'step to your right, clap on your left'.",
+      "id": "Kiri dan kanan dengan tubuh sendiri: pakai pita di pergelangan tangan kanan dan ikuti 'melangkah ke kanan, tepuk di kiri'."
+    },
+    {
+      "en": "Draw a simple map of the living room and mark where the hidden toy is.",
+      "id": "Gambar peta sederhana ruang tamu dan tandai tempat mainan yang disembunyikan."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "For a child who finds talking hard, accept pointing and gestures first, then model the sentence for them to repeat.",
+      "id": "Untuk anak yang sulit berbicara, terima tunjukan dan gerakan dulu, lalu contohkan kalimatnya untuk diulang."
+    },
+    {
+      "en": "Children with low vision can feel the positions with their hands on the box and the toy.",
+      "id": "Anak dengan penglihatan rendah bisa meraba posisi benda dengan tangan pada kotak dan boneka."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Use only large soft toys and plastic cups; children crawl under tables but never climb onto furniture during the game.",
+        "id": "Pakai hanya boneka besar dan gelas plastik; anak boleh merangkak di bawah meja tetapi tidak memanjat perabot selama permainan."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 20
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      2,
+      7,
+      14
+    ],
+    "masteryRule": {
+      "en": "Secure when the child follows six position instructions with a reference object and describes three positions in full sentences without help, on two different days.",
+      "id": "Dikuasai jika anak mengikuti enam petunjuk posisi dengan benda patokan dan menjelaskan tiga posisi dengan kalimat lengkap tanpa bantuan, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}

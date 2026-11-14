@@ -1,0 +1,273 @@
+{
+  "id": "reading-g2-how-to-play-gobak-sodor",
+  "version": "1.0.0",
+  "level": "g2",
+  "readingLevel": "early",
+  "genre": "procedural",
+  "mode": "independent",
+  "title": {
+    "en": "How to play gobak sodor",
+    "id": "Cara bermain gobak sodor"
+  },
+  "text": {
+    "en": [
+      "Gobak sodor is a traditional Indonesian running game for two teams. One team guards the lines. The other team tries to get through. Rules can be a little different in each place, so agree on yours before you start.",
+      "You need: a flat, open space, chalk or a stick to draw lines, and 6 to 10 players.",
+      "Step 1. Draw a big rectangle on the ground. Draw one line down the middle and two lines across it. Now you have 6 boxes: 3 rows with 2 boxes in each row.",
+      "Step 2. Make two teams with the same number of players. Choose which team guards first.",
+      "Step 3. The guards stand on the lines across the field, one guard on each line. They may only move sideways along their own line. One more guard, called the sodor, may run up and down the middle line.",
+      "Step 4. The other team starts behind the front line. They try to run through every row to the back of the field, and then all the way back again, without being touched.",
+      "Step 5. If a guard touches a runner while the guard's feet are on the line, the teams swap: the runners become the guards.",
+      "Step 6. If one runner gets to the back and returns to the start without being touched, the running team scores a point and plays again.",
+      "Play fairly: touch gently with your hand, never push, and say so honestly if you were touched."
+    ],
+    "id": [
+      "Gobak sodor adalah permainan lari tradisional Indonesia untuk dua regu. Satu regu menjaga garis. Regu lain berusaha menerobos. Aturannya bisa sedikit berbeda di tiap tempat, jadi sepakati aturan kalian sebelum mulai.",
+      "Yang kamu perlukan: tempat terbuka yang rata, kapur atau ranting untuk menggambar garis, dan 6 sampai 10 pemain.",
+      "Langkah 1. Gambar persegi panjang besar di tanah. Gambar satu garis memanjang di tengah dan dua garis melintang. Sekarang ada 6 kotak: 3 baris, masing-masing 2 kotak.",
+      "Langkah 2. Bentuk dua regu dengan jumlah pemain yang sama. Tentukan regu mana yang berjaga lebih dulu.",
+      "Langkah 3. Para penjaga berdiri di garis-garis melintang, satu penjaga di setiap garis. Mereka hanya boleh bergerak ke samping di sepanjang garisnya sendiri. Satu penjaga lagi, yang disebut sodor, boleh berlari naik turun di garis tengah.",
+      "Langkah 4. Regu lain mulai dari belakang garis depan. Mereka berusaha berlari melewati setiap baris sampai ke belakang lapangan, lalu kembali lagi, tanpa tersentuh.",
+      "Langkah 5. Jika penjaga menyentuh pelari saat kaki penjaga berada di garis, kedua regu bertukar: pelari menjadi penjaga.",
+      "Langkah 6. Jika satu pelari sampai ke belakang dan kembali ke awal tanpa tersentuh, regu pelari mendapat satu angka dan bermain lagi.",
+      "Bermainlah dengan jujur: sentuh pelan dengan tangan, jangan mendorong, dan akui dengan jujur jika kamu tersentuh."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Follows written steps in order to set up and play a game.",
+      "id": "Mengikuti langkah tertulis secara berurutan untuk menyiapkan dan memainkan permainan."
+    },
+    {
+      "en": "Finds the purpose of a procedural text: the materials, the numbered steps and the rules.",
+      "id": "Mengenali tujuan teks prosedur: bahan, langkah bernomor, dan aturan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "guard",
+        "id": "penjaga"
+      },
+      "meaning": {
+        "en": "a player who tries to stop the others getting through",
+        "id": "pemain yang berusaha menghalangi pemain lain menerobos"
+      }
+    },
+    {
+      "word": {
+        "en": "rectangle",
+        "id": "persegi panjang"
+      },
+      "meaning": {
+        "en": "a shape with four straight sides and four square corners",
+        "id": "bangun dengan empat sisi lurus dan empat sudut siku-siku"
+      }
+    },
+    {
+      "word": {
+        "en": "swap",
+        "id": "bertukar"
+      },
+      "meaning": {
+        "en": "to change places with each other",
+        "id": "saling berganti tempat"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What do you need to draw the lines?",
+        "id": "Apa yang kamu perlukan untuk menggambar garis?"
+      },
+      "choices": {
+        "en": [
+          "chalk or a stick",
+          "a ball and a net",
+          "paper and scissors"
+        ],
+        "id": [
+          "kapur atau ranting",
+          "bola dan jaring",
+          "kertas dan gunting"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What do you do just after you make two teams?",
+        "id": "Apa yang kamu lakukan tepat setelah membentuk dua regu?"
+      },
+      "choices": {
+        "en": [
+          "the guards stand on the lines",
+          "draw the rectangle",
+          "count the points"
+        ],
+        "id": [
+          "para penjaga berdiri di garis",
+          "menggambar persegi panjang",
+          "menghitung angka"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "literal",
+      "prompt": {
+        "en": "Who is allowed to run up and down the middle line?",
+        "id": "Siapa yang boleh berlari naik turun di garis tengah?"
+      },
+      "choices": {
+        "en": [
+          "the sodor",
+          "every runner",
+          "nobody"
+        ],
+        "id": [
+          "sodor",
+          "setiap pelari",
+          "tidak ada"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "math",
+      "prompt": {
+        "en": "Rizal draws a longer field with 4 rows and 2 boxes in each row. How many boxes are there?",
+        "id": "Rizal menggambar lapangan yang lebih panjang dengan 4 baris dan 2 kotak di setiap baris. Ada berapa kotak?"
+      },
+      "choices": {
+        "en": [
+          "8 boxes",
+          "6 boxes",
+          "4 boxes",
+          "2 boxes"
+        ],
+        "id": [
+          "8 kotak",
+          "6 kotak",
+          "4 kotak",
+          "2 kotak"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2,
+      "check": {
+        "expression": "2 + 2 + 2 + 2",
+        "result": "8"
+      }
+    },
+    {
+      "id": "q5",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why does the text tell you to agree on the rules before you start?",
+        "id": "Mengapa teks menyuruhmu menyepakati aturan sebelum mulai?"
+      },
+      "choices": {
+        "en": [
+          "because players from different places may know different rules",
+          "because the game is very short",
+          "because the guards need to rest"
+        ],
+        "id": [
+          "karena pemain dari tempat berbeda mungkin tahu aturan yang berbeda",
+          "karena permainannya sangat singkat",
+          "karena penjaga perlu beristirahat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Gobak sodor (also called galah asin in some areas) is played across Indonesia.",
+        "id": "Gobak sodor (di beberapa daerah disebut galah asin) dimainkan di berbagai daerah di Indonesia."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "The field is an array of rows and columns, which helps with early multiplication.",
+        "id": "Lapangan berbentuk susunan baris dan kolom, yang membantu memahami perkalian awal."
+      }
+    },
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Running games are good exercise when we play fairly and gently.",
+        "id": "Permainan lari adalah olahraga yang baik jika dimainkan dengan jujur dan tidak kasar."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Why is it important to say honestly when you are touched?",
+      "id": "Mengapa penting mengaku dengan jujur saat tersentuh?"
+    },
+    {
+      "en": "Which step would you explain first to a friend who has never played?",
+      "id": "Langkah mana yang akan kamu jelaskan pertama kali kepada teman yang belum pernah bermain?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "With family or friends, draw a gobak sodor field with chalk on a yard or quiet path, away from traffic, and play using the steps. Afterwards, write one extra rule your group agreed on and draw a small plan of your field, showing where each guard stood.",
+    "id": "Bersama keluarga atau teman, gambar lapangan gobak sodor dengan kapur di halaman atau jalan yang sepi, jauh dari kendaraan, lalu bermainlah mengikuti langkah-langkahnya. Sesudahnya, tulis satu aturan tambahan yang disepakati kelompokmu dan gambar denah kecil lapanganmu, tunjukkan tempat setiap penjaga berdiri."
+  },
+  "factChecks": [
+    {
+      "claim": "Gobak sodor is a traditional Indonesian team game in which guards on lines try to touch runners; it is also known as galah asin in some regions.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Rules and field size vary from place to place.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Play on a flat surface away from traffic and drains; touch gently and never push or pull clothes.",
+      "id": "Bermain di permukaan rata yang jauh dari kendaraan dan selokan; sentuh pelan dan jangan mendorong atau menarik baju."
+    },
+    {
+      "en": "Drink water and rest in the shade between games on hot days.",
+      "id": "Minum air dan beristirahat di tempat teduh di sela permainan pada hari yang panas."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

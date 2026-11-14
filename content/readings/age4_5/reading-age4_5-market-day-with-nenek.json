@@ -1,0 +1,272 @@
+{
+  "id": "reading-age4_5-market-day-with-nenek",
+  "version": "1.0.0",
+  "level": "age4_5",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Market day with Nenek",
+    "id": "Ke pasar bersama Nenek"
+  },
+  "text": {
+    "en": [
+      "It is market day! Nenek takes her big woven basket. Lani holds Nenek's hand.",
+      "The market is busy and noisy. \"Sayur, sayur!\" calls a seller. Lani sees green spinach and orange carrots.",
+      "\"We need three tomatoes,\" says Nenek. Lani counts them into the bag. One, two, three.",
+      "\"And two red chillies for the sambal.\" Lani picks them carefully, holding only the green stalks.",
+      "Nenek pays the seller. \"Terima kasih, Bu!\" says Lani. The seller smiles and waves.",
+      "The basket is heavy now. Lani helps carry it home. Tonight they will cook together."
+    ],
+    "id": [
+      "Hari ini hari pasar! Nenek membawa keranjang anyaman besarnya. Lani menggandeng tangan Nenek.",
+      "Pasar ramai dan berisik. \"Sayur, sayur!\" seru seorang penjual. Lani melihat bayam hijau dan wortel oranye.",
+      "\"Kita perlu tiga tomat,\" kata Nenek. Lani menghitung tomat ke dalam kantong. Satu, dua, tiga.",
+      "\"Dan dua cabai merah untuk sambal.\" Lani memilihnya dengan hati-hati, hanya memegang tangkainya yang hijau.",
+      "Nenek membayar penjual. \"Terima kasih, Bu!\" kata Lani. Penjual tersenyum dan melambai.",
+      "Keranjangnya sekarang berat. Lani ikut membawanya pulang. Nanti malam mereka akan memasak bersama."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Swing your arm as if holding a basket, and hold your child's hand.",
+      "id": "Ayunkan tangan seolah membawa keranjang, dan gandeng tangan anak."
+    },
+    {
+      "en": "Call out \"Sayur, sayur!\" in a market seller's voice and point to the colours.",
+      "id": "Serukan \"Sayur, sayur!\" dengan suara penjual dan tunjuk warna-warnanya."
+    },
+    {
+      "en": "Count the tomatoes in the picture slowly with your child, touching each one.",
+      "id": "Hitung tomat di gambar pelan-pelan bersama anak, sentuh satu per satu."
+    },
+    {
+      "en": "Show how to pick something up by its stalk with two fingers.",
+      "id": "Tunjukkan cara mengambil sesuatu dari tangkainya dengan dua jari."
+    },
+    {
+      "en": "Say \"Terima kasih, Bu!\" together and wave.",
+      "id": "Ucapkan \"Terima kasih, Bu!\" bersama dan melambai."
+    },
+    {
+      "en": "Pretend the basket is heavy: \"Ooh, so heavy!\" and share the load.",
+      "id": "Pura-pura keranjangnya berat: \"Aduh, berat sekali!\" dan bawa bersama."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: a grandmother and girl with an empty woven basket",
+      "id": "Kartu 1: nenek dan anak perempuan dengan keranjang anyaman kosong"
+    },
+    {
+      "en": "Card 2: market stalls with spinach and carrots",
+      "id": "Kartu 2: lapak pasar dengan bayam dan wortel"
+    },
+    {
+      "en": "Card 3: three tomatoes going into a bag",
+      "id": "Kartu 3: tiga tomat dimasukkan ke kantong"
+    },
+    {
+      "en": "Card 4: the grandmother paying the seller",
+      "id": "Kartu 4: nenek membayar penjual"
+    },
+    {
+      "en": "Card 5: the two of them carrying a full basket home",
+      "id": "Kartu 5: keduanya membawa keranjang penuh pulang"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Follows the order of a family trip to the market and retells it.",
+      "id": "Mengikuti urutan kunjungan keluarga ke pasar dan menceritakannya kembali."
+    },
+    {
+      "en": "Counts a small group of items and adds two small groups.",
+      "id": "Menghitung sekelompok kecil benda dan menjumlahkan dua kelompok kecil."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "market",
+        "id": "pasar"
+      },
+      "meaning": {
+        "en": "a busy place where people buy and sell food and other things",
+        "id": "tempat ramai untuk membeli dan menjual makanan dan barang lain"
+      }
+    },
+    {
+      "word": {
+        "en": "seller",
+        "id": "penjual"
+      },
+      "meaning": {
+        "en": "a person who sells things",
+        "id": "orang yang menjual barang"
+      }
+    },
+    {
+      "word": {
+        "en": "basket",
+        "id": "keranjang"
+      },
+      "meaning": {
+        "en": "a container woven from strips, used for carrying things",
+        "id": "wadah anyaman untuk membawa barang"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Nenek bring to carry the shopping?",
+        "id": "Apa yang dibawa Nenek untuk membawa belanjaan?"
+      },
+      "choices": {
+        "en": [
+          "a big woven basket",
+          "a bicycle",
+          "a red bucket"
+        ],
+        "id": [
+          "keranjang anyaman besar",
+          "sepeda",
+          "ember merah"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "math",
+      "prompt": {
+        "en": "Lani put 3 tomatoes and 2 chillies in the bag. How many vegetables is that altogether?",
+        "id": "Lani memasukkan 3 tomat dan 2 cabai ke kantong. Berapa sayuran semuanya?"
+      },
+      "choices": {
+        "en": [
+          "5 vegetables",
+          "3 vegetables",
+          "6 vegetables"
+        ],
+        "id": [
+          "5 sayuran",
+          "3 sayuran",
+          "6 sayuran"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3,
+      "check": {
+        "expression": "3 + 2",
+        "result": "5"
+      }
+    },
+    {
+      "id": "q3",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Lani say to the seller?",
+        "id": "Apa yang dikatakan Lani kepada penjual?"
+      },
+      "choices": {
+        "en": [
+          "\"Thank you\"",
+          "\"Go away\"",
+          "\"Good night\""
+        ],
+        "id": [
+          "\"Terima kasih\"",
+          "\"Pergi sana\"",
+          "\"Selamat tidur\""
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why was the basket heavy on the way home?",
+        "id": "Mengapa keranjang terasa berat saat pulang?"
+      },
+      "choices": {
+        "en": [
+          "it was full of the food they had bought",
+          "Nenek put a big stone in it",
+          "the basket was wet from the rain"
+        ],
+        "id": [
+          "keranjang penuh dengan belanjaan",
+          "Nenek memasukkan batu besar",
+          "keranjang basah kena hujan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Counting the tomatoes and chillies is real-life adding.",
+        "id": "Menghitung tomat dan cabai adalah penjumlahan dalam kehidupan nyata."
+      }
+    },
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "The traditional market (pasar) is a lively part of everyday life in Indonesian towns and villages.",
+        "id": "Pasar tradisional adalah bagian hidup sehari-hari yang ramai di kota dan desa Indonesia."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What would you like to buy at the market?",
+      "id": "Apa yang ingin kamu beli di pasar?"
+    },
+    {
+      "en": "How did Lani help Nenek?",
+      "id": "Bagaimana Lani membantu Nenek?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Play \"market\" at home with real vegetables from the kitchen (whole, washed and uncut) and a basket. Take turns being the seller and the shopper: ask for \"three carrots\" or \"two potatoes\", count them together, say thank you, and put them back afterwards. This is a pretend game only; nothing is eaten.",
+    "id": "Main \"pasar-pasaran\" di rumah dengan sayuran asli dari dapur (utuh, sudah dicuci, tidak dipotong) dan keranjang. Bergantian menjadi penjual dan pembeli: minta \"tiga wortel\" atau \"dua kentang\", hitung bersama, ucapkan terima kasih, lalu kembalikan semuanya. Ini hanya permainan pura-pura; tidak ada yang dimakan."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Chillies can sting skin and eyes: in the game, use only mild vegetables, and wash hands after handling any real chilli.",
+      "id": "Cabai bisa membuat kulit dan mata pedih: dalam permainan, gunakan sayuran yang tidak pedas saja, dan cuci tangan setelah memegang cabai sungguhan."
+    },
+    {
+      "en": "Use only whole vegetables bigger than your child's mouth, such as carrots and potatoes; no cherry tomatoes or loose small items.",
+      "id": "Gunakan hanya sayuran utuh yang lebih besar dari mulut anak, seperti wortel dan kentang; jangan tomat ceri atau benda kecil lepas."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

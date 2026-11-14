@@ -1,0 +1,456 @@
+{
+  "id": "unit-k-stem-ice-melting-where",
+  "version": "1.0.0",
+  "level": "k",
+  "framework": "stem",
+  "strand": "science_inquiry",
+  "title": {
+    "en": "Where does ice melt fastest?",
+    "id": "Di mana es paling cepat mencair?"
+  },
+  "prerequisites": [
+    "unit-age3_4-stem-shadow-play-sunlight"
+  ],
+  "objective": {
+    "en": "Predict and test where same-sized ice blocks melt fastest and slowest (sunshine, shade, wrapped in a towel, in the fridge), describe ice as a solid and water as a liquid, and show that melted water freezes back into ice in the freezer.",
+    "id": "Menebak lalu menguji di mana balok es yang sama besar paling cepat dan paling lambat mencair (di bawah sinar matahari, di tempat teduh, dibungkus handuk, di dalam kulkas), menjelaskan es sebagai benda padat dan air sebagai benda cair, serta menunjukkan bahwa air lelehan membeku lagi menjadi es di freezer."
+  },
+  "rationale": {
+    "en": "Melting ice is a safe, visible change of state. Comparing places with identical ice blocks is an early fair test, and the towel result surprises many children: a towel does not make heat, it slows warmth from reaching the ice.",
+    "id": "Es yang mencair adalah perubahan wujud yang aman dan terlihat. Membandingkan tempat dengan balok es yang sama persis adalah uji adil yang awal, dan hasil handuk mengejutkan banyak anak: handuk tidak membuat panas, tetapi memperlambat hangat sampai ke es."
+  },
+  "outcomes": [
+    {
+      "en": "Predicts an order of melting before the test and compares it with the result.",
+      "id": "Menebak urutan mencair sebelum uji dan membandingkannya dengan hasil."
+    },
+    {
+      "en": "Says that ice in warm places melts faster.",
+      "id": "Mengatakan bahwa es di tempat hangat mencair lebih cepat."
+    },
+    {
+      "en": "Explains that the towel slowed the melting.",
+      "id": "Menjelaskan bahwa handuk memperlambat pencairan."
+    },
+    {
+      "en": "Uses \"solid\", \"liquid\", \"melt\" and \"freeze\".",
+      "id": "Memakai kata \"padat\", \"cair\", \"mencair\", dan \"membeku\"."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can say where I think the ice will melt first, and check.",
+      "id": "Aku bisa menyebut di mana menurutku es mencair duluan, lalu memeriksanya."
+    },
+    {
+      "en": "I know ice can turn into water and water can turn back into ice.",
+      "id": "Aku tahu es bisa menjadi air dan air bisa kembali menjadi es."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Freeze the ice the day before in four identical plastic cups, each filled to the same line, so the blocks start the same.",
+      "id": "Bekukan es sehari sebelumnya di empat gelas plastik yang sama, masing-masing diisi sampai garis yang sama, sehingga balok es dimulai dengan ukuran yang sama."
+    },
+    {
+      "en": "Ask for a prediction for every place before you start, and line the plates up in the predicted order: 'Which will melt first? Which last?'",
+      "id": "Minta tebakan untuk setiap tempat sebelum mulai, dan susun piring sesuai urutan tebakan: 'Mana yang mencair duluan? Mana yang paling akhir?'"
+    },
+    {
+      "en": "Check all four together every 10 minutes; you watch the clock, your child does the looking and makes a tally mark for each check.",
+      "id": "Periksa keempatnya bersama setiap 10 menit; Anda melihat jam, anak yang mengamati dan membuat turus untuk setiap pemeriksaan."
+    },
+    {
+      "en": "Say the change words as they happen: 'The ice is solid; it keeps its shape. The water is liquid; it spreads over the plate.'",
+      "id": "Ucapkan kata perubahannya saat terjadi: 'Es itu padat; bentuknya tetap. Air itu cair; ia menyebar di piring.'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Guess which ice block will melt first and put the plates in that order.",
+      "id": "Tebak balok es mana yang mencair duluan dan susun piring sesuai urutan itu."
+    },
+    {
+      "en": "At every check, look at each block and make one tally mark.",
+      "id": "Setiap pemeriksaan, lihat setiap balok dan buat satu turus."
+    },
+    {
+      "en": "When a block has all melted, draw it on the chart.",
+      "id": "Saat satu balok sudah mencair semuanya, gambar di bagan."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Watch four identical ice blocks on four plates in different places and touch the water around them with a fingertip.",
+        "id": "Amati empat balok es yang sama di empat piring di tempat berbeda dan sentuh air di sekitarnya dengan ujung jari."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw each plate at each check: a big block, a smaller block, a puddle.",
+        "id": "Gambar setiap piring pada setiap pemeriksaan: balok besar, balok lebih kecil, genangan."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Count the tally marks for each place and order the places from fastest to slowest.",
+        "id": "Hitung turus untuk setiap tempat dan urutkan tempat dari yang tercepat sampai terlambat."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Four identical plastic cups filled with water to the same line and frozen overnight",
+      "id": "Empat gelas plastik yang sama, diisi air sampai garis yang sama, lalu dibekukan semalaman"
+    },
+    {
+      "en": "Four identical plates",
+      "id": "Empat piring yang sama"
+    },
+    {
+      "en": "A small towel",
+      "id": "Handuk kecil"
+    },
+    {
+      "en": "A chart with four rows (sun, shade, towel, fridge) and a pencil",
+      "id": "Bagan dengan empat baris (matahari, teduh, handuk, kulkas) dan pensil"
+    },
+    {
+      "en": "A clean empty plastic cup for refreezing",
+      "id": "Gelas plastik kosong yang bersih untuk dibekukan lagi"
+    },
+    {
+      "en": "A cloth for spills",
+      "id": "Lap untuk tumpahan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "The adult takes the cups from the freezer, holds each one under cool tap water for a moment and slides the ice block out onto a plate. Place one plate in a sunny spot outside on a step, one indoors in the shade, one wrapped loosely in the towel indoors next to the shade plate, and one in the fridge (not the freezer).",
+      "id": "Orang dewasa mengeluarkan gelas dari freezer, mengaliri bagian luar setiap gelas dengan air keran dingin sebentar, lalu mengeluarkan balok es ke piring. Letakkan satu piring di tempat yang terkena matahari di luar, di anak tangga, satu di dalam rumah di tempat teduh, satu dibungkus longgar dengan handuk di dalam rumah di sebelah piring teduh, dan satu di kulkas (bukan freezer)."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Predict: Lala guesses sun first, then towel, then shade, then fridge. She thinks the towel \"makes it warm\". Write her order down.",
+      "id": "Tebak: Lala menebak matahari duluan, lalu handuk, lalu teduh, lalu kulkas. Ia mengira handuk \"membuatnya hangat\". Tulis urutannya."
+    },
+    {
+      "en": "Checks: at check 3 the sun block is gone, just a puddle. At check 6 the shade block is gone. The towel block is still a small lump, and the fridge block is still big.",
+      "id": "Pemeriksaan: pada pemeriksaan ke-3, balok di bawah matahari sudah habis, tinggal genangan. Pada pemeriksaan ke-6, balok di tempat teduh habis. Balok di handuk masih ada sedikit, dan balok di kulkas masih besar."
+    },
+    {
+      "en": "Surprise and explain: the towel block lasted longer than the shade block. 'The towel did not make heat. It was like a blanket that kept the warm air away from the ice, so it melted more slowly.' Put the puddle water in the empty cup in the freezer, and look tomorrow: solid ice again.",
+      "id": "Kejutan dan penjelasan: balok di handuk bertahan lebih lama dari balok di tempat teduh. 'Handuk tidak membuat panas. Ia seperti selimut yang menjauhkan udara hangat dari es, sehingga es mencair lebih lambat.' Tuang air genangan ke gelas kosong lalu masukkan ke freezer, dan lihat besok: menjadi es padat lagi."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Hand test: hold a cup of ice in two hands for a slow count of ten, then put it down. Is the outside of the ice wet? Your warm hands started to melt it.",
+      "id": "Uji tangan: pegang gelas berisi es dengan kedua tangan selama hitungan pelan sampai sepuluh, lalu letakkan. Apakah bagian luar es basah? Tangan yang hangat mulai mencairkannya."
+    },
+    {
+      "en": "Shape test: freeze water in two different shaped containers. Show that the ice keeps the shape of its container, but when it melts, the water spreads out on the plate.",
+      "id": "Uji bentuk: bekukan air di dua wadah yang bentuknya berbeda. Tunjukkan bahwa es tetap berbentuk seperti wadahnya, tetapi saat mencair, airnya menyebar di piring."
+    },
+    {
+      "en": "Repeat the race another day with your own new prediction, and see if the order is the same.",
+      "id": "Ulangi lomba di hari lain dengan tebakan barumu, dan lihat apakah urutannya sama."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Nisa has two identical frozen water bottles. One is wrapped in a thick cloth in her bag; the other stands unwrapped on the table. Which one stays frozen longer?",
+        "id": "Nisa punya dua botol air beku yang sama. Satu dibungkus kain tebal di dalam tasnya; satu lagi berdiri tanpa bungkus di meja. Mana yang tetap beku lebih lama?"
+      },
+      "choices": {
+        "en": [
+          "The one wrapped in the cloth",
+          "The one on the table, because the cloth makes it warm",
+          "Both the same, because ice is ice"
+        ],
+        "id": [
+          "Yang dibungkus kain",
+          "Yang di meja, karena kain membuatnya hangat",
+          "Sama saja, karena es tetap es"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A cloth wrap slows warmth from reaching the ice, so the wrapped bottle melts more slowly.",
+        "id": "Bungkus kain memperlambat hangat sampai ke es, sehingga botol yang dibungkus mencair lebih lambat."
+      },
+      "distractorMisconceptions": {
+        "1": "WRAPPING_MAKES_HEAT",
+        "2": "PLACE_DOES_NOT_MATTER"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "In a new race, the ice in the sun was gone after 2 checks and the ice in the shade after 5 checks. How many more checks did the shade ice need?",
+        "id": "Dalam lomba baru, es di bawah matahari habis setelah 2 pemeriksaan dan es di tempat teduh setelah 5 pemeriksaan. Berapa pemeriksaan lebih banyak yang diperlukan es di tempat teduh?"
+      },
+      "choices": {
+        "en": [
+          "3 more checks",
+          "5 more checks",
+          "7 more checks"
+        ],
+        "id": [
+          "3 pemeriksaan lebih banyak",
+          "5 pemeriksaan lebih banyak",
+          "7 pemeriksaan lebih banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count on from 2 to 5: 3, 4, 5. That is 5 − 2 = 3 more checks.",
+        "id": "Hitung maju dari 2 ke 5: 3, 4, 5. Itu 5 − 2 = 3 pemeriksaan lebih banyak."
+      },
+      "check": {
+        "expression": "5 - 2",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_BIGGER_NUMBER",
+        "2": "ADDS_TO_COMPARE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "The water from a melted ice lolly is poured into a cup and put in the freezer overnight. What is in the cup in the morning?",
+        "id": "Air dari es loli yang mencair dituang ke gelas dan dimasukkan ke freezer semalaman. Apa isi gelas itu pada pagi hari?"
+      },
+      "choices": {
+        "en": [
+          "Ice again",
+          "Still water, because melted ice cannot freeze again",
+          "Nothing, because the water has gone"
+        ],
+        "id": [
+          "Es lagi",
+          "Tetap air, karena es yang sudah mencair tidak bisa membeku lagi",
+          "Kosong, karena airnya sudah hilang"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Melting can be undone: cold enough water freezes back into solid ice.",
+        "id": "Pencairan bisa dibalik: air yang cukup dingin membeku lagi menjadi es padat."
+      },
+      "distractorMisconceptions": {
+        "1": "MELTING_IS_FOREVER",
+        "2": "WATER_DISAPPEARS"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Which one is a liquid?",
+        "id": "Mana yang merupakan benda cair?"
+      },
+      "choices": {
+        "en": [
+          "Water poured from a jug",
+          "An ice cube from the freezer",
+          "A wooden spoon"
+        ],
+        "id": [
+          "Air yang dituang dari teko",
+          "Es batu dari freezer",
+          "Sendok kayu"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "A liquid flows and takes the shape of its container. Ice and wood are solids: they keep their own shape.",
+        "id": "Benda cair mengalir dan mengikuti bentuk wadahnya. Es dan kayu adalah benda padat: bentuknya tetap."
+      },
+      "distractorMisconceptions": {
+        "1": "ICE_IS_LIQUID",
+        "2": "SOLID_LIQUID_UNSURE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "WRAPPING_MAKES_HEAT",
+      "description": {
+        "en": "Thinks a towel or cloth makes heat, so wrapped ice will melt faster.",
+        "id": "Mengira handuk atau kain membuat panas, sehingga es yang dibungkus mencair lebih cepat."
+      },
+      "remediation": {
+        "en": "Wrap one ice block and leave one bare side by side, and lift the towel at every check: the wrapped one is bigger each time. A blanket keeps you warm by keeping your own warmth in; it does the same job for cold ice.",
+        "id": "Bungkus satu balok es dan biarkan satu tanpa bungkus berdampingan, lalu buka handuk pada setiap pemeriksaan: yang dibungkus selalu lebih besar. Selimut membuatmu hangat dengan menahan hangat tubuhmu sendiri; untuk es dingin, ia menahan dinginnya."
+      }
+    },
+    {
+      "code": "PLACE_DOES_NOT_MATTER",
+      "description": {
+        "en": "Expects all ice to melt at the same speed wherever it is.",
+        "id": "Mengira semua es mencair dengan kecepatan sama di mana pun."
+      },
+      "remediation": {
+        "en": "Put two blocks side by side, one in a patch of sunshine and one just inside the shadow, and check them after 10 minutes.",
+        "id": "Letakkan dua balok berdampingan, satu di bagian yang terkena matahari dan satu tepat di dalam bayangan, lalu periksa setelah 10 menit."
+      }
+    },
+    {
+      "code": "GIVES_BIGGER_NUMBER",
+      "description": {
+        "en": "Answers \"how many more\" with the bigger number.",
+        "id": "Menjawab \"berapa lebih banyak\" dengan angka yang lebih besar."
+      },
+      "remediation": {
+        "en": "Draw both rows of tally marks one above the other, pair them up and count only the marks without a partner.",
+        "id": "Gambar kedua baris turus satu di atas yang lain, pasangkan, lalu hitung hanya turus yang tidak punya pasangan."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds the two numbers instead of finding the difference.",
+        "id": "Menjumlahkan kedua angka alih-alih mencari selisihnya."
+      },
+      "remediation": {
+        "en": "Use two towers of blocks, one for each count, side by side, and point to the part of the taller tower that sticks up.",
+        "id": "Gunakan dua menara balok, satu untuk setiap hitungan, berdampingan, lalu tunjuk bagian menara yang lebih tinggi yang menyembul."
+      }
+    },
+    {
+      "code": "MELTING_IS_FOREVER",
+      "description": {
+        "en": "Believes that once ice has melted it cannot become ice again.",
+        "id": "Percaya bahwa es yang sudah mencair tidak bisa menjadi es lagi."
+      },
+      "remediation": {
+        "en": "Do the refreezing yourselves: pour the puddle into a cup, mark the cup with your child's name, and open the freezer together the next morning.",
+        "id": "Bekukan sendiri: tuang genangan ke gelas, tandai gelas dengan nama anak, lalu buka freezer bersama keesokan paginya."
+      }
+    },
+    {
+      "code": "WATER_DISAPPEARS",
+      "description": {
+        "en": "Thinks the water from melted ice has vanished.",
+        "id": "Mengira air dari es yang mencair sudah lenyap."
+      },
+      "remediation": {
+        "en": "Tip the plate gently over a cup so your child sees all the melted water collected; nothing has gone.",
+        "id": "Miringkan piring pelan di atas gelas sehingga anak melihat semua air lelehan terkumpul; tidak ada yang hilang."
+      }
+    },
+    {
+      "code": "ICE_IS_LIQUID",
+      "description": {
+        "en": "Thinks ice is a liquid because it is made of water.",
+        "id": "Mengira es adalah benda cair karena terbuat dari air."
+      },
+      "remediation": {
+        "en": "Try to pour an ice cube and water from one cup to another: only the water pours and changes shape.",
+        "id": "Coba tuang es batu dan air dari satu gelas ke gelas lain: hanya air yang bisa dituang dan berubah bentuk."
+      }
+    },
+    {
+      "code": "SOLID_LIQUID_UNSURE",
+      "description": {
+        "en": "Is not yet sure what makes something a solid or a liquid.",
+        "id": "Belum yakin apa yang membuat benda menjadi padat atau cair."
+      },
+      "remediation": {
+        "en": "Sort things into a \"keeps its shape\" tray and a \"pours and spreads\" tray, then add the words solid and liquid.",
+        "id": "Pilah benda ke nampan \"bentuknya tetap\" dan nampan \"bisa dituang dan menyebar\", lalu tambahkan kata padat dan cair."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Ice-block rescue: give your child a block in a cup and a choice of a sock, a sheet of foil or a plastic bag. Which wrap keeps it frozen longest? Test it with an unwrapped block as well.",
+      "id": "Penyelamatan balok es: beri anak satu balok es di gelas dan pilihan kaus kaki, selembar aluminium foil, atau kantong plastik. Bungkus mana yang membuatnya paling lama beku? Uji juga dengan balok es tanpa bungkus."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "If cold hands are uncomfortable, use a spoon to touch the ice, and skip the hand test.",
+      "id": "Jika tangan dingin terasa tidak nyaman, gunakan sendok untuk menyentuh es, dan lewati uji tangan."
+    },
+    {
+      "en": "A child who cannot yet make tally marks can drop one block in a box for each check.",
+      "id": "Anak yang belum bisa membuat turus boleh memasukkan satu balok ke kotak untuk setiap pemeriksaan."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": true,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Only the adult opens the freezer and takes out the ice. No hot water is used in this unit: loosen the ice with cool tap water.",
+        "id": "Hanya orang dewasa yang membuka freezer dan mengeluarkan es. Unit ini tidak memakai air panas: lepaskan es dengan air keran dingin."
+      },
+      {
+        "en": "Do not lick or suck ice straight from the freezer; very cold ice can stick to lips and tongue. Hold ice only for a short count.",
+        "id": "Jangan menjilat atau mengulum es yang baru keluar dari freezer; es yang sangat dingin bisa menempel di bibir dan lidah. Pegang es hanya sebentar."
+      },
+      {
+        "en": "Melt water makes floors slippery: keep plates on a tray and wipe spills at once. Pour all the melt water away at the end of the day.",
+        "id": "Air lelehan membuat lantai licin: letakkan piring di nampan dan segera lap tumpahan. Buang semua air lelehan di akhir hari."
+      },
+      {
+        "en": "Outside, wear a hat, and never look straight at the sun.",
+        "id": "Di luar, pakai topi, dan jangan pernah melihat langsung ke matahari."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 60
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child predicts and explains the order of melting, including why the wrapped ice lasted longer, and correctly sorts three things into solid or liquid.",
+      "id": "Dikuasai jika anak menebak dan menjelaskan urutan pencairan, termasuk mengapa es yang dibungkus bertahan lebih lama, dan memilah tiga benda ke padat atau cair dengan benar."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-stem",
+    "createdAt": "2026-11-10"
+  }
+}

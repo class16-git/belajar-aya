@@ -1,0 +1,270 @@
+{
+  "id": "reading-age3_4-ular-naga-long-line",
+  "version": "1.0.0",
+  "level": "age3_4",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "The long, long dragon line",
+    "id": "Ular naga panjang sekali"
+  },
+  "text": {
+    "en": [
+      "After school, the children play ular naga in the yard. \"Who wants to be the dragon?\"",
+      "Dewi is the head. Bayu holds Dewi's shoulders. Tika holds Bayu's shoulders. The dragon grows long!",
+      "Two big children make a gate with their arms up high. \"Ular naga panjangnya bukan kepalang!\" everyone sings.",
+      "The dragon walks under the gate. Step, step, step. Nobody lets go.",
+      "The song stops. Down comes the gate! It catches Tika, the tail. Tika giggles.",
+      "Now Tika helps make the gate. The dragon walks again, long and slow and happy."
+    ],
+    "id": [
+      "Sepulang sekolah, anak-anak bermain ular naga di halaman. \"Siapa mau jadi naganya?\"",
+      "Dewi jadi kepala. Bayu memegang bahu Dewi. Tika memegang bahu Bayu. Naganya jadi panjang!",
+      "Dua anak yang lebih besar membuat gerbang dengan tangan terangkat tinggi. \"Ular naga panjangnya bukan kepalang!\" semua bernyanyi.",
+      "Naga berjalan di bawah gerbang. Langkah, langkah, langkah. Tidak ada yang melepaskan pegangan.",
+      "Lagu berhenti. Gerbang turun! Gerbang menangkap Tika, si ekor. Tika tertawa kecil.",
+      "Sekarang Tika ikut membuat gerbang. Naga berjalan lagi, panjang, pelan, dan gembira."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Ask your child: \"Who wants to be the dragon?\" in an excited voice.",
+      "id": "Tanyakan kepada anak dengan suara semangat: \"Siapa mau jadi naganya?\""
+    },
+    {
+      "en": "Count the children in the picture with your finger: one, two, three.",
+      "id": "Hitung anak-anak di gambar dengan jari: satu, dua, tiga."
+    },
+    {
+      "en": "Hold your arms up like a gate and sing the line of the song together.",
+      "id": "Angkat tangan seperti gerbang dan nyanyikan baris lagunya bersama."
+    },
+    {
+      "en": "Tap your knees slowly for each step.",
+      "id": "Tepuk lutut pelan untuk setiap langkah."
+    },
+    {
+      "en": "Bring your arms down softly around your child for a gentle \"catch\" and giggle together.",
+      "id": "Turunkan tangan dengan lembut melingkari anak untuk \"menangkap\" dan tertawa bersama."
+    },
+    {
+      "en": "Point to Tika in her new place in the gate.",
+      "id": "Tunjuk Tika di tempat barunya sebagai gerbang."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: children gathered in a yard",
+      "id": "Kartu 1: anak-anak berkumpul di halaman"
+    },
+    {
+      "en": "Card 2: three children in a line holding shoulders",
+      "id": "Kartu 2: tiga anak berbaris memegang bahu"
+    },
+    {
+      "en": "Card 3: two children making an arch with their arms",
+      "id": "Kartu 3: dua anak membuat lengkungan dengan tangan"
+    },
+    {
+      "en": "Card 4: the line walking under the arch",
+      "id": "Kartu 4: barisan berjalan di bawah lengkungan"
+    },
+    {
+      "en": "Card 5: the arch coming down around the last child",
+      "id": "Kartu 5: lengkungan turun melingkari anak terakhir"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Retells the steps of a traditional Indonesian line game in order.",
+      "id": "Menceritakan kembali urutan langkah permainan tradisional Indonesia secara berurutan."
+    },
+    {
+      "en": "Uses the words head, tail and gate to describe positions in a line.",
+      "id": "Memakai kata kepala, ekor, dan gerbang untuk menjelaskan posisi dalam barisan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "head",
+        "id": "kepala"
+      },
+      "meaning": {
+        "en": "the first one at the front of the line",
+        "id": "yang pertama di depan barisan"
+      }
+    },
+    {
+      "word": {
+        "en": "tail",
+        "id": "ekor"
+      },
+      "meaning": {
+        "en": "the last one at the back of the line",
+        "id": "yang terakhir di belakang barisan"
+      }
+    },
+    {
+      "word": {
+        "en": "gate",
+        "id": "gerbang"
+      },
+      "meaning": {
+        "en": "a way through, here made with two children's arms",
+        "id": "jalan masuk, di sini dibuat dari tangan dua anak"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Who is the head of the dragon?",
+        "id": "Siapa kepala naganya?"
+      },
+      "choices": {
+        "en": [
+          "Dewi",
+          "Tika",
+          "Bayu"
+        ],
+        "id": [
+          "Dewi",
+          "Tika",
+          "Bayu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "How do the children make the gate?",
+        "id": "Bagaimana anak-anak membuat gerbang?"
+      },
+      "choices": {
+        "en": [
+          "with their arms up high",
+          "with chairs",
+          "with a rope"
+        ],
+        "id": [
+          "dengan tangan terangkat tinggi",
+          "dengan kursi",
+          "dengan tali"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happens when the song stops?",
+        "id": "Apa yang terjadi saat lagu berhenti?"
+      },
+      "choices": {
+        "en": [
+          "the gate comes down and catches someone",
+          "everyone goes home",
+          "the dragon starts to sing"
+        ],
+        "id": [
+          "gerbang turun dan menangkap seseorang",
+          "semua pulang",
+          "naga mulai bernyanyi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why does nobody let go of the shoulders?",
+        "id": "Mengapa tidak ada yang melepaskan bahu temannya?"
+      },
+      "choices": {
+        "en": [
+          "so the dragon stays joined together",
+          "because their hands are cold",
+          "because the gate is broken"
+        ],
+        "id": [
+          "supaya naganya tetap tersambung",
+          "karena tangan mereka dingin",
+          "karena gerbangnya rusak"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Ular naga is a traditional game many Indonesian children play with a sung rhyme.",
+        "id": "Ular naga adalah permainan tradisional yang dimainkan banyak anak Indonesia sambil bernyanyi."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "First, next and last describe positions in a line.",
+        "id": "Pertama, berikutnya, dan terakhir menjelaskan posisi dalam barisan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Who would you like to be: the head, the tail or the gate?",
+      "id": "Kamu ingin jadi apa: kepala, ekor, atau gerbang?"
+    },
+    {
+      "en": "How did Tika feel when she was caught?",
+      "id": "Bagaimana perasaan Tika saat tertangkap?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Play a family ular naga indoors or in the yard. Two grown-ups make the gate; the children hold shoulders and walk slowly under it while everyone sings. Lower the arms gently and slowly. Walk, do not run, and clear toys off the floor first.",
+    "id": "Mainkan ular naga bersama keluarga di dalam rumah atau di halaman. Dua orang dewasa membuat gerbang; anak-anak memegang bahu dan berjalan pelan di bawahnya sambil semua bernyanyi. Turunkan tangan dengan lembut dan pelan. Berjalan saja, jangan berlari, dan singkirkan mainan dari lantai lebih dulu."
+  },
+  "factChecks": [
+    {
+      "claim": "Ular naga is a traditional Indonesian children's game played with a song that begins \"Ular naga panjangnya bukan kepalang\".",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Walk slowly and lower the gate arms gently; play on a clear floor or soft grass.",
+      "id": "Berjalan pelan dan turunkan tangan gerbang dengan lembut; bermain di lantai yang lapang atau rumput yang lembut."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "id": "reading-age4_5-the-blanket-fort-quarrel",
+  "version": "1.0.0",
+  "level": "age4_5",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "The blanket fort quarrel",
+    "id": "Bertengkar di benteng selimut"
+  },
+  "text": {
+    "en": [
+      "It is a rainy afternoon. Sari and Wulan build a fort with a big blanket and two chairs.",
+      "\"The door goes here!\" says Sari. \"No, the door goes there!\" says Wulan. They both pull the blanket. Whoosh... it starts to slide off!",
+      "Sari stamps her foot. Wulan folds her arms. Nobody is playing now. The fort is quiet and droopy.",
+      "Sari takes a big, slow breath. \"I feel cross,\" she says. \"I wanted my idea.\" Wulan says, \"Me too.\"",
+      "Wulan has a new idea. \"What if the fort has two doors? One for you and one for me!\"",
+      "They fix the blanket together. Now there is a Sari door and a Wulan door. Inside, they share a cushion and giggle."
+    ],
+    "id": [
+      "Sore itu hujan. Sari dan Wulan membuat benteng dari selimut besar dan dua kursi.",
+      "\"Pintunya di sini!\" kata Sari. \"Bukan, pintunya di sana!\" kata Wulan. Mereka berdua menarik selimut. Sret... selimutnya mulai melorot!",
+      "Sari mengentakkan kaki. Wulan melipat tangan. Sekarang tidak ada yang bermain. Bentengnya sepi dan melorot.",
+      "Sari menarik napas panjang dan pelan. \"Aku kesal,\" katanya. \"Aku mau ideku dipakai.\" Wulan berkata, \"Aku juga.\"",
+      "Wulan punya ide baru. \"Bagaimana kalau bentengnya punya dua pintu? Satu untukmu dan satu untukku!\"",
+      "Mereka membetulkan selimut bersama. Sekarang ada pintu Sari dan pintu Wulan. Di dalam, mereka berbagi bantal dan tertawa kecil."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Make soft rain sounds with your fingers on the table.",
+      "id": "Buat bunyi hujan pelan dengan jari di meja."
+    },
+    {
+      "en": "Use two different voices for Sari and Wulan, and mime pulling.",
+      "id": "Gunakan dua suara berbeda untuk Sari dan Wulan, dan peragakan menarik."
+    },
+    {
+      "en": "Stamp a foot and fold your arms; ask your child: \"How do they feel?\"",
+      "id": "Entakkan kaki dan lipat tangan; tanyakan kepada anak: \"Bagaimana perasaan mereka?\""
+    },
+    {
+      "en": "Breathe in slowly through your nose and out through your mouth with your child.",
+      "id": "Tarik napas pelan lewat hidung dan buang lewat mulut bersama anak."
+    },
+    {
+      "en": "Hold up two fingers for \"two doors\" with a bright, surprised face.",
+      "id": "Angkat dua jari untuk \"dua pintu\" dengan wajah ceria dan terkejut."
+    },
+    {
+      "en": "Smile, and point to each door in the picture.",
+      "id": "Tersenyum, dan tunjuk setiap pintu di gambar."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: two girls building a blanket fort",
+      "id": "Kartu 1: dua anak perempuan membuat benteng selimut"
+    },
+    {
+      "en": "Card 2: both girls pulling the blanket",
+      "id": "Kartu 2: kedua anak menarik selimut"
+    },
+    {
+      "en": "Card 3: one girl stamping, one with folded arms",
+      "id": "Kartu 3: satu anak mengentakkan kaki, satu melipat tangan"
+    },
+    {
+      "en": "Card 4: the fort with two doors",
+      "id": "Kartu 4: benteng dengan dua pintu"
+    },
+    {
+      "en": "Card 5: both girls giggling inside",
+      "id": "Kartu 5: kedua anak tertawa di dalam"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Names feelings in a story (cross, happy) and the clues that show them.",
+      "id": "Menyebut perasaan dalam cerita (kesal, senang) dan petunjuk yang menunjukkannya."
+    },
+    {
+      "en": "Describes a kind way to solve a disagreement: breathe, say how you feel, find an idea for both.",
+      "id": "Menjelaskan cara baik menyelesaikan perselisihan: tarik napas, katakan perasaanmu, cari ide untuk berdua."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "fort",
+        "id": "benteng"
+      },
+      "meaning": {
+        "en": "a hiding place you build to play in",
+        "id": "tempat persembunyian yang dibuat untuk bermain"
+      }
+    },
+    {
+      "word": {
+        "en": "cross",
+        "id": "kesal"
+      },
+      "meaning": {
+        "en": "a little angry",
+        "id": "agak marah"
+      }
+    },
+    {
+      "word": {
+        "en": "idea",
+        "id": "ide"
+      },
+      "meaning": {
+        "en": "a new thought about what to do",
+        "id": "pikiran baru tentang apa yang bisa dilakukan"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Sari and Wulan use to build the fort?",
+        "id": "Apa yang dipakai Sari dan Wulan untuk membuat benteng?"
+      },
+      "choices": {
+        "en": [
+          "a blanket and two chairs",
+          "boxes and tape",
+          "sticks and leaves"
+        ],
+        "id": [
+          "selimut dan dua kursi",
+          "kardus dan selotip",
+          "ranting dan daun"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which clue in the story shows that Sari was cross?",
+        "id": "Petunjuk mana dalam cerita yang menunjukkan Sari kesal?"
+      },
+      "choices": {
+        "en": [
+          "she stamped her foot",
+          "she shared a cushion",
+          "she giggled inside the fort"
+        ],
+        "id": [
+          "ia mengentakkan kaki",
+          "ia berbagi bantal",
+          "ia tertawa kecil di dalam benteng"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q3",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Sari do before she talked about her feelings?",
+        "id": "Apa yang dilakukan Sari sebelum membicarakan perasaannya?"
+      },
+      "choices": {
+        "en": [
+          "she took a big, slow breath",
+          "she ran away",
+          "she pulled the blanket harder"
+        ],
+        "id": [
+          "menarik napas panjang dan pelan",
+          "lari pergi",
+          "menarik selimut lebih keras"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q4",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "How did the girls solve their quarrel?",
+        "id": "Bagaimana kedua anak itu menyelesaikan pertengkaran mereka?"
+      },
+      "choices": {
+        "en": [
+          "they made two doors so both ideas were used",
+          "they stopped being friends",
+          "Ibu chose the door for them"
+        ],
+        "id": [
+          "membuat dua pintu supaya kedua ide dipakai",
+          "berhenti berteman",
+          "Ibu memilihkan pintunya"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "practical_life",
+      "connection": {
+        "en": "Breathing slowly and saying how we feel helps us solve quarrels kindly.",
+        "id": "Bernapas pelan dan mengatakan perasaan kita membantu menyelesaikan pertengkaran dengan baik."
+      }
+    },
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Building a fort means planning where the walls and doors go.",
+        "id": "Membuat benteng berarti merencanakan letak dinding dan pintu."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What do you do when you feel cross?",
+      "id": "Apa yang kamu lakukan saat merasa kesal?"
+    },
+    {
+      "en": "Can you think of another way the girls could solve the problem?",
+      "id": "Bisakah kamu memikirkan cara lain untuk menyelesaikan masalah mereka?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Build a blanket fort together with a sheet or sarong over two chairs or a table. Before you start, agree on one idea each (for example, where the door goes and what goes inside) and use both. Practise \"smell the flower, blow the candle\" breathing inside the fort.",
+    "id": "Buat benteng selimut bersama dengan seprai atau sarung di atas dua kursi atau meja. Sebelum mulai, sepakati masing-masing satu ide (misalnya letak pintu dan apa yang ada di dalam) dan pakai keduanya. Latih napas \"cium bunga, tiup lilin\" di dalam benteng."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Use light chairs that will not tip, keep the fort low, and do not tie fabric around anyone's neck.",
+      "id": "Gunakan kursi ringan yang tidak mudah terguling, buat benteng rendah, dan jangan mengikat kain di leher siapa pun."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "id": "reading-g1-my-bones-hold-me-up",
+  "version": "1.0.0",
+  "level": "g1",
+  "readingLevel": "early",
+  "genre": "nonfiction",
+  "mode": "shared",
+  "title": {
+    "en": "My bones hold me up",
+    "id": "Tulangku menopang tubuhku"
+  },
+  "text": {
+    "en": [
+      "Squeeze your arm gently. Can you feel something hard inside? That is a bone.",
+      "All your bones together make your skeleton. A grown-up has about 206 bones. Without bones, you would flop like a jelly!",
+      "Some bones protect soft parts inside you. Your skull is like a helmet for your brain. Your ribs are like a cage around your heart and lungs.",
+      "Where two bones meet, there is a joint. Joints let you bend. Your elbow and your knee are joints.",
+      "Look at your hand. Each finger has three small bones. Your thumb has two. That is why your fingers can curl and grip.",
+      "Your bones grow as you grow. Running, jumping and foods like milk, ikan teri and green vegetables help keep them strong."
+    ],
+    "id": [
+      "Pijat lenganmu pelan-pelan. Bisakah kamu merasakan sesuatu yang keras di dalamnya? Itu tulang.",
+      "Semua tulangmu bersama-sama membentuk kerangka. Orang dewasa punya sekitar 206 tulang. Tanpa tulang, kamu akan lemas seperti agar-agar!",
+      "Beberapa tulang melindungi bagian lunak di dalam tubuhmu. Tengkorakmu seperti helm untuk otakmu. Tulang rusukmu seperti sangkar yang melindungi jantung dan paru-parumu.",
+      "Tempat dua tulang bertemu disebut sendi. Sendi membuatmu bisa menekuk. Siku dan lututmu adalah sendi.",
+      "Lihat tanganmu. Setiap jari punya tiga tulang kecil. Ibu jarimu punya dua. Itulah sebabnya jari-jarimu bisa menekuk dan menggenggam.",
+      "Tulangmu tumbuh saat kamu tumbuh. Berlari, melompat, dan makanan seperti susu, ikan teri, dan sayuran hijau membantu tulang tetap kuat."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads an information text about the skeleton and names what bones do.",
+      "id": "Membaca teks informasi tentang kerangka dan menyebut kegunaan tulang."
+    },
+    {
+      "en": "Finds a joint on their own body and explains what it does.",
+      "id": "Menemukan sendi di tubuhnya sendiri dan menjelaskan kegunaannya."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "skeleton",
+        "id": "kerangka"
+      },
+      "meaning": {
+        "en": "all the bones in a body together",
+        "id": "semua tulang dalam tubuh"
+      }
+    },
+    {
+      "word": {
+        "en": "joint",
+        "id": "sendi"
+      },
+      "meaning": {
+        "en": "the place where two bones meet so you can bend",
+        "id": "tempat dua tulang bertemu sehingga tubuh bisa menekuk"
+      }
+    },
+    {
+      "word": {
+        "en": "protect",
+        "id": "melindungi"
+      },
+      "meaning": {
+        "en": "to keep something safe from harm",
+        "id": "menjaga sesuatu agar aman"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What does your skull protect?",
+        "id": "Apa yang dilindungi tengkorakmu?"
+      },
+      "choices": {
+        "en": [
+          "your brain",
+          "your toes",
+          "your tummy"
+        ],
+        "id": [
+          "otakmu",
+          "jari kakimu",
+          "perutmu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "Which of these is a joint?",
+        "id": "Manakah yang merupakan sendi?"
+      },
+      "choices": {
+        "en": [
+          "your knee",
+          "your hair",
+          "your fingernail"
+        ],
+        "id": [
+          "lututmu",
+          "rambutmu",
+          "kuku jarimu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "Each finger has 3 bones. How many bones are in the four fingers of one hand, not counting the thumb?",
+        "id": "Setiap jari punya 3 tulang. Berapa jumlah tulang di empat jari pada satu tangan, tanpa menghitung ibu jari?"
+      },
+      "choices": {
+        "en": [
+          "12 bones",
+          "4 bones",
+          "7 bones"
+        ],
+        "id": [
+          "12 tulang",
+          "4 tulang",
+          "7 tulang"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4,
+      "check": {
+        "expression": "3 + 3 + 3 + 3",
+        "result": "12"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "What would be hard to do if your knee could not bend?",
+        "id": "Apa yang akan sulit dilakukan jika lututmu tidak bisa menekuk?"
+      },
+      "choices": {
+        "en": [
+          "sitting down on a chair",
+          "seeing colours",
+          "hearing a song"
+        ],
+        "id": [
+          "duduk di kursi",
+          "melihat warna",
+          "mendengar lagu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "The skeleton holds the body up, protects soft parts and lets us move.",
+        "id": "Kerangka menopang tubuh, melindungi bagian lunak, dan membuat kita bisa bergerak."
+      }
+    },
+    {
+      "subject": "health_safety",
+      "connection": {
+        "en": "Exercise and calcium-rich foods help bones grow strong.",
+        "id": "Olahraga dan makanan yang kaya kalsium membantu tulang tumbuh kuat."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What would happen if we had no bones?",
+      "id": "Apa yang akan terjadi jika kita tidak punya tulang?"
+    },
+    {
+      "en": "Which joints do you use when you kick a ball?",
+      "id": "Sendi mana yang kamu pakai saat menendang bola?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Go on a \"joint hunt\" on your own body with a grown-up: bend your neck, shoulder, elbow, wrist, fingers, hip, knee and ankle, and count how many you find. Then trace around your hand on paper and draw the small bones inside each finger: three in each finger and two in the thumb.",
+    "id": "Lakukan \"berburu sendi\" di tubuhmu sendiri bersama orang dewasa: tekuk leher, bahu, siku, pergelangan tangan, jari, pinggul, lutut, dan pergelangan kaki, lalu hitung berapa yang kamu temukan. Kemudian jiplak tanganmu di kertas dan gambar tulang kecil di dalam setiap jari: tiga di setiap jari dan dua di ibu jari."
+  },
+  "factChecks": [
+    {
+      "claim": "An adult human skeleton has about 206 bones.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "The skull protects the brain; the ribs protect the heart and lungs.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A joint is where two bones meet; elbows and knees are joints.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Each finger has three bones (phalanges) and the thumb has two.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Exercise and calcium-rich foods such as milk, small fish eaten with their bones and leafy greens support bone health.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

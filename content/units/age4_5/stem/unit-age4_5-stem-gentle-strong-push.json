@@ -1,0 +1,386 @@
+{
+  "id": "unit-age4_5-stem-gentle-strong-push",
+  "version": "1.0.0",
+  "level": "age4_5",
+  "framework": "stem",
+  "strand": "science_inquiry",
+  "title": {
+    "en": "Gentle push, strong push: how far does it go?",
+    "id": "Dorongan pelan, dorongan kuat: sejauh apa?"
+  },
+  "prerequisites": [
+    "unit-age2_3-stem-push-pull-big-toys",
+    "unit-age3_4-stem-ramp-rolling"
+  ],
+  "objective": {
+    "en": "Predict and test that a stronger push makes a ball or toy car travel further along the same floor than a gentle push, mark where it stops and count the steps, and show that a push from the side changes the direction it moves.",
+    "id": "Menebak lalu menguji bahwa dorongan yang lebih kuat membuat bola atau mobil-mobilan melaju lebih jauh di lantai yang sama daripada dorongan pelan, menandai tempat berhentinya dan menghitung langkahnya, serta menunjukkan bahwa dorongan dari samping mengubah arah geraknya."
+  },
+  "rationale": {
+    "en": "Children already know how to push and pull. The next step is to notice that the size and direction of a push change what happens, and to collect evidence by marking and counting instead of just watching. Keeping the floor and the toy the same makes it a first fair comparison.",
+    "id": "Anak sudah tahu cara mendorong dan menarik. Langkah berikutnya adalah memperhatikan bahwa besar dan arah dorongan mengubah apa yang terjadi, dan mengumpulkan bukti dengan menandai dan menghitung, bukan hanya melihat. Lantai dan mainan yang tetap sama membuatnya menjadi perbandingan adil yang pertama."
+  },
+  "outcomes": [
+    {
+      "en": "Predicts which push will make the toy go further.",
+      "id": "Menebak dorongan mana yang membuat mainan melaju lebih jauh."
+    },
+    {
+      "en": "Marks the stopping place and counts heel-to-toe steps from the start line.",
+      "id": "Menandai tempat berhenti dan menghitung langkah tumit-ke-jari dari garis mulai."
+    },
+    {
+      "en": "Says that a stronger push sent it further.",
+      "id": "Mengatakan bahwa dorongan yang lebih kuat membuatnya lebih jauh."
+    },
+    {
+      "en": "Changes the direction of a rolling ball with a push from the side.",
+      "id": "Mengubah arah bola yang menggelinding dengan dorongan dari samping."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I guess first, then I test.",
+      "id": "Aku menebak dulu, lalu menguji."
+    },
+    {
+      "en": "I mark where it stops and count my steps.",
+      "id": "Aku menandai tempat berhentinya dan menghitung langkahku."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Keep everything the same except the push: same ball, same floor, same start line, the child pushes from the same spot. Say it out loud: 'Only the push changes.'",
+      "id": "Jaga semuanya tetap sama kecuali dorongannya: bola yang sama, lantai yang sama, garis mulai yang sama, anak mendorong dari tempat yang sama. Ucapkan dengan keras: 'Hanya dorongannya yang berubah.'"
+    },
+    {
+      "en": "Show 'gentle' and 'strong' with your hand first: a tiny tap and a big sweep. A strong push is still a push, never a throw or a kick.",
+      "id": "Peragakan 'pelan' dan 'kuat' dengan tangan Anda dulu: sentuhan kecil dan dorongan lebar. Dorongan kuat tetap dorongan, bukan lemparan atau tendangan."
+    },
+    {
+      "en": "Ask for a prediction every time: 'Where will it stop this time? Put the teddy where you think.' Then push and compare with the teddy.",
+      "id": "Minta tebakan setiap kali: 'Kali ini berhenti di mana? Taruh boneka di tempat tebakanmu.' Lalu dorong dan bandingkan dengan boneka."
+    },
+    {
+      "en": "Count steps heel to toe together from the start line to the tape mark. Write the number on the tape.",
+      "id": "Hitung langkah tumit-ke-jari bersama dari garis mulai sampai tanda selotip. Tulis angkanya di selotip."
+    }
+  ],
+  "childInstructions": [],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Roll a big soft ball from a tape start line with a gentle push and with a strong push, and stick a tape mark where each one stops.",
+        "id": "Gelindingkan bola lembut besar dari garis mulai selotip dengan dorongan pelan dan dorongan kuat, lalu tempel tanda selotip di tempat masing-masing berhenti."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw the floor as a long strip: the start line, a small hand by the near mark and a big hand by the far mark.",
+        "id": "Gambar lantai sebagai pita panjang: garis mulai, tangan kecil di tanda yang dekat, dan tangan besar di tanda yang jauh."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Compare the two numbers written on the tape marks: which is more steps?",
+        "id": "Bandingkan dua angka yang tertulis di tanda selotip: mana yang lebih banyak langkah?"
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A big soft ball, at least the size of a melon",
+      "id": "Bola lembut besar, setidaknya sebesar melon"
+    },
+    {
+      "en": "A chunky toy car with wheels that cannot be pulled off",
+      "id": "Mobil-mobilan besar yang rodanya tidak bisa dicabut"
+    },
+    {
+      "en": "Masking tape for the start line and the stop marks, and a marker for the adult",
+      "id": "Selotip kertas untuk garis mulai dan tanda berhenti, serta spidol untuk orang dewasa"
+    },
+    {
+      "en": "A cardboard tube from kitchen paper, for the side-push game",
+      "id": "Gulungan karton bekas tisu dapur, untuk permainan dorongan dari samping"
+    },
+    {
+      "en": "A teddy to mark predictions",
+      "id": "Boneka untuk menandai tebakan"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Find a long clear stretch of smooth floor, such as a hallway or the living room with chairs moved back. Stick a start line of tape at one end. Close doors to the stairs and keep younger siblings out of the rolling lane.",
+      "id": "Cari lantai rata yang panjang dan kosong, seperti lorong atau ruang keluarga dengan kursi digeser. Tempel garis mulai dari selotip di satu ujung. Tutup pintu ke tangga dan jauhkan adik dari jalur menggelinding."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Gentle push: the ball sits on the start line. 'Where will a gentle push take it?' Your child puts the teddy close by. Tap the ball gently: it stops 2 steps away. Stick a tape mark and write 2.",
+      "id": "Dorongan pelan: bola diletakkan di garis mulai. 'Dorongan pelan membawanya sampai mana?' Anak menaruh boneka di dekat situ. Dorong bola pelan: bola berhenti 2 langkah dari garis. Tempel tanda selotip dan tulis 2."
+    },
+    {
+      "en": "Strong push: 'And a strong push?' The teddy goes further. A big sweeping push: the ball stops 7 steps away. Mark it and write 7. 'Seven is more than two. The strong push sent it further.'",
+      "id": "Dorongan kuat: 'Kalau dorongan kuat?' Boneka ditaruh lebih jauh. Dorongan yang lebar: bola berhenti 7 langkah dari garis. Tandai dan tulis 7. 'Tujuh lebih banyak dari dua. Dorongan kuat membuatnya lebih jauh.'"
+    },
+    {
+      "en": "Side push: roll the ball slowly past your child, who gives it a gentle push from the side with the cardboard tube. The ball turns and rolls a new way. 'A push from the side changed where it went.'",
+      "id": "Dorongan dari samping: gelindingkan bola pelan melewati anak, lalu anak mendorongnya pelan dari samping dengan gulungan karton. Bola berbelok dan menggelinding ke arah baru. \"Dorongan dari samping mengubah arahnya.\""
+    }
+  ],
+  "practice": [
+    {
+      "en": "Do the gentle and strong test with the toy car instead of the ball. Is it the same pattern?",
+      "id": "Lakukan uji pelan dan kuat dengan mobil-mobilan, bukan bola. Apakah polanya sama?"
+    },
+    {
+      "en": "Middle push: your child tries to make the ball stop between the two tape marks. 'What kind of push do you need?'",
+      "id": "Dorongan sedang: anak mencoba membuat bola berhenti di antara dua tanda selotip. 'Kamu perlu dorongan seperti apa?'"
+    },
+    {
+      "en": "Goal game: place a cardboard box on its side as a goal off to one side of the lane. Roll the ball straight, and your child uses a side push with the tube to steer it into the goal.",
+      "id": "Permainan gawang: letakkan kardus miring sebagai gawang di samping jalur. Gelindingkan bola lurus, lalu anak memakai dorongan samping dengan gulungan karton untuk membelokkannya ke gawang."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "With the toy car on the start line, ask 'Which push will make it go further, a gentle one or a strong one?' What does your child predict?",
+        "id": "Dengan mobil-mobilan di garis mulai, tanyakan 'Dorongan mana yang membuatnya lebih jauh, pelan atau kuat?' Apa tebakan anak?"
+      },
+      "choices": {
+        "en": [
+          "The strong push",
+          "The gentle push, because slow things go far",
+          "Both go the same, because it is the same car"
+        ],
+        "id": [
+          "Dorongan kuat",
+          "Dorongan pelan, karena yang pelan bisa jauh",
+          "Sama saja, karena mobilnya sama"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "On the same floor, a stronger push makes the car go further before it stops.",
+        "id": "Di lantai yang sama, dorongan yang lebih kuat membuat mobil melaju lebih jauh sebelum berhenti."
+      },
+      "distractorMisconceptions": {
+        "1": "GENTLE_GOES_FURTHER",
+        "2": "PUSH_SIZE_DOES_NOT_MATTER"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "The car stopped 6 steps from the line after a strong push and 3 steps after a gentle push. How many more steps did the strong push go?",
+        "id": "Mobil berhenti 6 langkah dari garis setelah dorongan kuat dan 3 langkah setelah dorongan pelan. Berapa langkah lebih jauh dorongan kuat?"
+      },
+      "choices": {
+        "en": [
+          "3 more steps",
+          "6 more steps",
+          "9 more steps"
+        ],
+        "id": [
+          "3 langkah lebih jauh",
+          "6 langkah lebih jauh",
+          "9 langkah lebih jauh"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count on from 3 to 6: 4, 5, 6. That is 3 more steps, because 6 − 3 = 3.",
+        "id": "Hitung maju dari 3 ke 6: 4, 5, 6. Itu 3 langkah lebih jauh, karena 6 − 3 = 3."
+      },
+      "check": {
+        "expression": "6 - 3",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_BIGGER_NUMBER",
+        "2": "ADDS_TO_COMPARE"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A ball rolls slowly past your child, heading for the wall. Ask your child to make it go into the box at the side instead. What does your child do?",
+        "id": "Bola menggelinding pelan melewati anak, menuju dinding. Minta anak membuatnya masuk ke kardus di samping. Apa yang dilakukan anak?"
+      },
+      "choices": {
+        "en": [
+          "Gives the ball a push from the side, towards the box",
+          "Pushes the ball from behind so it rolls faster towards the wall",
+          "Waits for the ball to turn by itself"
+        ],
+        "id": [
+          "Mendorong bola dari samping, ke arah kardus",
+          "Mendorong bola dari belakang sehingga menggelinding lebih cepat ke dinding",
+          "Menunggu bola berbelok sendiri"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "To change the direction of a moving ball, push it from the side, towards where you want it to go.",
+        "id": "Untuk mengubah arah bola yang bergerak, dorong dari samping, ke arah yang diinginkan."
+      },
+      "distractorMisconceptions": {
+        "1": "PUSH_ONLY_SPEEDS_UP",
+        "2": "THINGS_TURN_BY_THEMSELVES"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "GENTLE_GOES_FURTHER",
+      "description": {
+        "en": "Thinks a gentle, slow push will send the toy further.",
+        "id": "Mengira dorongan pelan akan membuat mainan lebih jauh."
+      },
+      "remediation": {
+        "en": "Let your child stand at the far tape mark as the 'catcher' and watch which push reaches them. Repeat each push twice.",
+        "id": "Biarkan anak berdiri di tanda selotip yang jauh sebagai 'penangkap' dan lihat dorongan mana yang sampai kepadanya. Ulangi setiap dorongan dua kali."
+      }
+    },
+    {
+      "code": "PUSH_SIZE_DOES_NOT_MATTER",
+      "description": {
+        "en": "Believes the same toy always goes the same distance, whatever the push.",
+        "id": "Percaya mainan yang sama selalu melaju sejauh yang sama, apa pun dorongannya."
+      },
+      "remediation": {
+        "en": "Push the car with one finger, then with the whole hand, and leave both tape marks on the floor so the difference stays visible.",
+        "id": "Dorong mobil dengan satu jari, lalu dengan seluruh telapak tangan, dan biarkan kedua tanda selotip di lantai supaya perbedaannya tetap terlihat."
+      }
+    },
+    {
+      "code": "GIVES_BIGGER_NUMBER",
+      "description": {
+        "en": "Answers a \"how many more\" question with the bigger number.",
+        "id": "Menjawab pertanyaan \"berapa lebih banyak\" dengan angka yang lebih besar."
+      },
+      "remediation": {
+        "en": "Walk it: stand on the gentle-push mark and count only the steps from there to the strong-push mark.",
+        "id": "Jalani: berdiri di tanda dorongan pelan dan hitung hanya langkah dari situ sampai tanda dorongan kuat."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds the two distances instead of finding the difference.",
+        "id": "Menjumlahkan kedua jarak alih-alih mencari selisihnya."
+      },
+      "remediation": {
+        "en": "Lay two rows of shoes, one for each distance, side by side. Point to the extra shoes at the end of the longer row: those are the \"more\".",
+        "id": "Susun dua baris sepatu, satu untuk setiap jarak, berdampingan. Tunjuk sepatu lebihan di ujung baris yang lebih panjang: itulah \"lebih banyak\"-nya."
+      }
+    },
+    {
+      "code": "PUSH_ONLY_SPEEDS_UP",
+      "description": {
+        "en": "Thinks a push can only make something go faster the same way, not turn it.",
+        "id": "Mengira dorongan hanya bisa membuat benda lebih cepat ke arah yang sama, bukan membelokkannya."
+      },
+      "remediation": {
+        "en": "Play side-push slowly with your child walking beside the ball, tapping it from the side with the tube and watching it turn.",
+        "id": "Mainkan dorongan samping pelan-pelan dengan anak berjalan di samping bola, mengetuknya dari samping dengan gulungan karton dan melihatnya berbelok."
+      }
+    },
+    {
+      "code": "THINGS_TURN_BY_THEMSELVES",
+      "description": {
+        "en": "Expects a moving ball to change direction on its own.",
+        "id": "Mengira bola yang bergerak bisa berbelok sendiri."
+      },
+      "remediation": {
+        "en": "Roll the ball straight along the lane three times without touching it, then once with a side push: only the pushed one turns.",
+        "id": "Gelindingkan bola lurus di jalur tiga kali tanpa disentuh, lalu sekali dengan dorongan samping: hanya yang didorong yang berbelok."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Try the same strong push on the rug and on the smooth floor. Where does the ball go further? What is different?",
+      "id": "Coba dorongan kuat yang sama di karpet dan di lantai licin. Di mana bola melaju lebih jauh? Apa bedanya?"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who uses a wheelchair or sits on the floor can push from a sitting position; keep the same position for every push.",
+      "id": "Anak yang memakai kursi roda atau duduk di lantai bisa mendorong dari posisi duduk; gunakan posisi yang sama untuk setiap dorongan."
+    },
+    {
+      "en": "If counting steps is hard, compare the tape marks with a row of shoes or count jumps on a drawn number line instead.",
+      "id": "Jika menghitung langkah sulit, bandingkan tanda selotip dengan barisan sepatu atau hitung lompatan di garis bilangan yang digambar."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Pushes only, never throws or kicks indoors; roll the ball along the floor, away from people, windows, glass doors and anything that can break.",
+        "id": "Hanya mendorong, tidak melempar atau menendang di dalam rumah; gelindingkan bola di lantai, menjauh dari orang, jendela, pintu kaca, dan barang yang bisa pecah."
+      },
+      {
+        "en": "Keep younger siblings and pets out of the rolling lane, and keep the lane away from stairs.",
+        "id": "Jauhkan adik dan hewan peliharaan dari jalur menggelinding, dan jauhkan jalur dari tangga."
+      },
+      {
+        "en": "Walk, do not run, to fetch the ball on a smooth floor.",
+        "id": "Berjalan, jangan berlari, saat mengambil bola di lantai licin."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 15,
+    "max": 25
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child predicts and explains that a strong push goes further, measures two distances by counting steps, and steers a rolling ball with a side push, on two different days.",
+      "id": "Dikuasai jika anak menebak dan menjelaskan bahwa dorongan kuat melaju lebih jauh, mengukur dua jarak dengan menghitung langkah, dan membelokkan bola yang menggelinding dengan dorongan samping, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-stem",
+    "createdAt": "2026-11-10"
+  }
+}

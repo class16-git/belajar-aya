@@ -1,0 +1,286 @@
+{
+  "id": "reading-age4_5-little-turtle-goes-to-sea",
+  "version": "1.0.0",
+  "level": "age4_5",
+  "readingLevel": "pre_reader",
+  "genre": "picture_story_script",
+  "mode": "parent_read",
+  "title": {
+    "en": "Little Turtle goes to the sea",
+    "id": "Tukik kecil pergi ke laut"
+  },
+  "text": {
+    "en": [
+      "Deep in the warm sand on the beach, a round egg wiggles. Crack! Out pops Little Turtle.",
+      "Little Turtle digs up, up, up with her brothers and sisters. They climb out onto the beach. It is night.",
+      "\"Which way is the sea?\" Little Turtle looks around. Over the water, the sky is a little brighter.",
+      "But wait! A bright lamp shines from a house on the beach. Little Turtle turns towards it. Oh no, that is the wrong way!",
+      "Pak Darto sees the turtles. He switches off the lamp. Now the beach is dark, and the sea shines softly.",
+      "Flip, flap, flip, flap. Little Turtle crawls across the sand. Splash! She swims into the big blue sea."
+    ],
+    "id": [
+      "Jauh di dalam pasir pantai yang hangat, sebutir telur bulat bergoyang. Krek! Keluarlah Tukik kecil.",
+      "Tukik kecil menggali ke atas, atas, atas bersama saudara-saudaranya. Mereka naik ke permukaan pantai. Hari sudah malam.",
+      "\"Ke mana arah laut?\" Tukik kecil melihat sekeliling. Di atas air, langit sedikit lebih terang.",
+      "Tapi tunggu! Sebuah lampu terang bersinar dari rumah di tepi pantai. Tukik kecil berbelok ke arahnya. Aduh, itu arah yang salah!",
+      "Pak Darto melihat tukik-tukik itu. Ia mematikan lampu. Sekarang pantai gelap, dan laut berkilau lembut.",
+      "Kepak, kepak, kepak. Tukik kecil merayap melintasi pasir. Byur! Ia berenang ke laut biru yang luas."
+    ]
+  },
+  "readAloudNotes": [
+    {
+      "en": "Wiggle your closed fist like an egg, then open it for \"Crack!\".",
+      "id": "Goyangkan kepalan tangan seperti telur, lalu buka saat \"Krek!\"."
+    },
+    {
+      "en": "Make digging movements with both hands, going higher each time.",
+      "id": "Buat gerakan menggali dengan kedua tangan, makin lama makin tinggi."
+    },
+    {
+      "en": "Look around with a questioning face and point to the light over the water in the picture.",
+      "id": "Lihat sekeliling dengan wajah bertanya dan tunjuk cahaya di atas air pada gambar."
+    },
+    {
+      "en": "Say \"Oh no!\" with worry, then ask your child: \"Is that the right way?\"",
+      "id": "Ucapkan \"Aduh!\" dengan cemas, lalu tanya anak: \"Apakah itu arah yang benar?\""
+    },
+    {
+      "en": "Mime clicking a switch off and say \"click\".",
+      "id": "Peragakan mematikan saklar dan ucapkan \"klik\"."
+    },
+    {
+      "en": "Flap your hands like flippers, then make a big splash sound.",
+      "id": "Kepakkan tangan seperti sirip, lalu buat bunyi byur yang besar."
+    }
+  ],
+  "sequenceCards": [
+    {
+      "en": "Card 1: an egg cracking in the sand",
+      "id": "Kartu 1: telur retak di pasir"
+    },
+    {
+      "en": "Card 2: baby turtles climbing out on a night beach",
+      "id": "Kartu 2: tukik keluar di pantai malam hari"
+    },
+    {
+      "en": "Card 3: a turtle heading towards a bright house lamp",
+      "id": "Kartu 3: tukik menuju lampu rumah yang terang"
+    },
+    {
+      "en": "Card 4: a man switching off the lamp",
+      "id": "Kartu 4: seorang bapak mematikan lampu"
+    },
+    {
+      "en": "Card 5: the turtle swimming in the sea",
+      "id": "Kartu 5: tukik berenang di laut"
+    }
+  ],
+  "objectives": [
+    {
+      "en": "Retells how a baby sea turtle finds its way from the nest to the sea.",
+      "id": "Menceritakan kembali cara bayi penyu menemukan jalan dari sarang ke laut."
+    },
+    {
+      "en": "Explains in simple words how people can help sea animals.",
+      "id": "Menjelaskan dengan kata sederhana cara manusia membantu hewan laut."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "hatch",
+        "id": "menetas"
+      },
+      "meaning": {
+        "en": "to break out of an egg",
+        "id": "keluar dari telur"
+      }
+    },
+    {
+      "word": {
+        "en": "tukik",
+        "id": "tukik"
+      },
+      "meaning": {
+        "en": "a baby sea turtle",
+        "id": "bayi penyu"
+      }
+    },
+    {
+      "word": {
+        "en": "crawl",
+        "id": "merayap"
+      },
+      "meaning": {
+        "en": "to move slowly, low to the ground",
+        "id": "bergerak pelan dekat dengan tanah"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Where was Little Turtle's egg?",
+        "id": "Di mana telur Tukik kecil berada?"
+      },
+      "choices": {
+        "en": [
+          "in the warm sand",
+          "in a tree",
+          "in the sea"
+        ],
+        "id": [
+          "di dalam pasir yang hangat",
+          "di atas pohon",
+          "di dalam laut"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "literal",
+      "prompt": {
+        "en": "What made Little Turtle go the wrong way?",
+        "id": "Apa yang membuat Tukik kecil salah arah?"
+      },
+      "choices": {
+        "en": [
+          "a bright lamp on the beach",
+          "a big wave",
+          "a hungry crab"
+        ],
+        "id": [
+          "lampu terang di tepi pantai",
+          "ombak besar",
+          "kepiting yang lapar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Pak Darto switch off the lamp?",
+        "id": "Mengapa Pak Darto mematikan lampu?"
+      },
+      "choices": {
+        "en": [
+          "so the turtles could find the sea",
+          "because it was time to sleep",
+          "because the lamp was too hot"
+        ],
+        "id": [
+          "supaya tukik bisa menemukan laut",
+          "karena sudah waktunya tidur",
+          "karena lampunya terlalu panas"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q4",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What happened last?",
+        "id": "Apa yang terjadi terakhir?"
+      },
+      "choices": {
+        "en": [
+          "Little Turtle swam into the sea",
+          "the egg cracked",
+          "Little Turtle dug up through the sand"
+        ],
+        "id": [
+          "Tukik kecil berenang ke laut",
+          "telurnya retak",
+          "Tukik kecil menggali ke atas"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Sea turtles lay eggs in sand; the babies hatch and head for the sea.",
+        "id": "Penyu bertelur di pasir; bayinya menetas lalu menuju laut."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Keeping beaches dark and clean at night helps baby turtles reach the sea.",
+        "id": "Menjaga pantai tetap gelap dan bersih pada malam hari membantu tukik mencapai laut."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "How do you think Little Turtle felt when she went the wrong way?",
+      "id": "Menurutmu bagaimana perasaan Tukik kecil saat salah arah?"
+    },
+    {
+      "en": "What could we do at the beach to help turtles?",
+      "id": "Apa yang bisa kita lakukan di pantai untuk membantu penyu?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Play \"find the sea\" in a dim room: one grown-up shines a torch low on one wall as the \"sea\"; your child crawls like a turtle towards it. Then switch on a second torch on the other side and talk about which way is right. Clear the floor first and keep the torch away from eyes.",
+    "id": "Main \"cari laut\" di kamar yang redup: satu orang dewasa menyorotkan senter rendah ke satu dinding sebagai \"laut\"; anak merayap seperti tukik ke arahnya. Lalu nyalakan senter kedua di sisi lain dan bicarakan arah mana yang benar. Kosongkan lantai lebih dulu dan jangan arahkan senter ke mata."
+  },
+  "factChecks": [
+    {
+      "claim": "Sea turtles lay their eggs in nests dug in beach sand.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Hatchlings often emerge at night and head towards the brighter horizon over the sea.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Bright artificial lights on beaches can lead hatchlings the wrong way.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Tukik is the Indonesian word for a baby sea turtle.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Never shine a torch into anyone's eyes, and crawl only on a clear, soft floor.",
+      "id": "Jangan pernah menyorotkan senter ke mata siapa pun, dan merayaplah hanya di lantai yang lapang dan lembut."
+    },
+    {
+      "en": "On a real beach, watch turtles from a distance and do not touch them or shine lights on them.",
+      "id": "Di pantai sungguhan, amati penyu dari jauh, jangan menyentuh atau menyorotinya dengan lampu."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

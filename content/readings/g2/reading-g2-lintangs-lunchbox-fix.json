@@ -1,0 +1,246 @@
+{
+  "id": "reading-g2-lintangs-lunchbox-fix",
+  "version": "1.0.0",
+  "level": "g2",
+  "readingLevel": "transitional",
+  "genre": "fiction",
+  "mode": "independent",
+  "title": {
+    "en": "Lintang's lunchbox fix",
+    "id": "Lintang memperbaiki kotak bekalnya"
+  },
+  "text": {
+    "en": [
+      "Every day, the same thing happened. Lintang opened her school bag, and her lunchbox lid had popped off again. Rice was all over her books.",
+      "\"I need a new lunchbox,\" she sighed. Her uncle, Om Hadi, looked at the box. \"Or you could be an inventor and fix this one,\" he said. \"Inventors start with the problem.\"",
+      "Lintang looked closely. One of the little clips on the lid was cracked, so that side did not hold. She drew the box and wrote: Problem: one clip is broken.",
+      "Her first idea was sticky tape. To test it, she put a spoonful of water in the box and shook it over the sink. After 4 shakes, the tape peeled away and water dripped out.",
+      "Her second idea was a wide rubber band around the box. She shook it 10 times. Not one drop came out! But the band was hard to pull off with small fingers.",
+      "So Lintang improved it. She tied a loop of bright ribbon to the band to make a handle. Now one tug took it off, and one stretch put it back.",
+      "The next day, her books stayed clean. \"Problem, idea, test, improve,\" said Lintang proudly. \"That is how inventors work.\""
+    ],
+    "id": [
+      "Setiap hari, hal yang sama terjadi. Lintang membuka tasnya, dan tutup kotak bekalnya terlepas lagi. Nasi berserakan di atas buku-bukunya.",
+      "\"Aku perlu kotak bekal baru,\" keluhnya. Pamannya, Om Hadi, memperhatikan kotak itu. \"Atau kamu bisa jadi penemu dan memperbaiki yang ini,\" katanya. \"Penemu mulai dari masalahnya.\"",
+      "Lintang memperhatikan dengan teliti. Salah satu pengait kecil di tutupnya retak, jadi sisi itu tidak bisa mengunci. Ia menggambar kotak itu dan menulis: Masalah: satu pengait rusak.",
+      "Ide pertamanya adalah selotip. Untuk mengujinya, ia memasukkan sesendok air ke kotak dan mengguncangnya di atas wastafel. Setelah 4 kali guncangan, selotipnya lepas dan airnya menetes keluar.",
+      "Ide keduanya adalah karet gelang lebar yang dililitkan di kotak. Ia mengguncangnya 10 kali. Tidak setetes pun keluar! Tetapi karetnya sulit ditarik dengan jari kecil.",
+      "Jadi Lintang memperbaikinya lagi. Ia mengikatkan simpul pita cerah pada karet untuk dijadikan pegangan. Sekarang sekali tarik karetnya lepas, dan sekali regang karetnya terpasang lagi.",
+      "Keesokan harinya, buku-bukunya tetap bersih. \"Masalah, ide, uji, perbaiki,\" kata Lintang dengan bangga. \"Begitulah cara penemu bekerja.\""
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Identifies the problem, the attempts and the solution in a story.",
+      "id": "Mengenali masalah, usaha, dan penyelesaian dalam cerita."
+    },
+    {
+      "en": "Describes the steps of the design process: problem, idea, test, improve.",
+      "id": "Menjelaskan langkah proses merancang: masalah, ide, uji, perbaiki."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "inventor",
+        "id": "penemu"
+      },
+      "meaning": {
+        "en": "a person who thinks of a new way to solve a problem",
+        "id": "orang yang memikirkan cara baru untuk menyelesaikan masalah"
+      }
+    },
+    {
+      "word": {
+        "en": "test",
+        "id": "menguji"
+      },
+      "meaning": {
+        "en": "to try something to see if it works",
+        "id": "mencoba sesuatu untuk melihat apakah berhasil"
+      }
+    },
+    {
+      "word": {
+        "en": "improve",
+        "id": "memperbaiki"
+      },
+      "meaning": {
+        "en": "to make something better",
+        "id": "membuat sesuatu menjadi lebih baik"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "Why did the lid keep popping off?",
+        "id": "Mengapa tutupnya terus terlepas?"
+      },
+      "choices": {
+        "en": [
+          "one of the clips was cracked",
+          "the box was too full of rice",
+          "her bag was too small"
+        ],
+        "id": [
+          "salah satu pengaitnya retak",
+          "kotaknya terlalu penuh nasi",
+          "tasnya terlalu kecil"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q2",
+      "kind": "math",
+      "prompt": {
+        "en": "The tape failed after 4 shakes. The rubber band held for 10 shakes. How many more shakes did the rubber band hold than the tape?",
+        "id": "Selotip gagal setelah 4 guncangan. Karet gelang bertahan 10 guncangan. Berapa guncangan lebih banyak karet bertahan dibandingkan selotip?"
+      },
+      "choices": {
+        "en": [
+          "6 more shakes",
+          "14 more shakes",
+          "4 more shakes"
+        ],
+        "id": [
+          "6 guncangan lebih banyak",
+          "14 guncangan lebih banyak",
+          "4 guncangan lebih banyak"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4,
+      "check": {
+        "expression": "10 - 4",
+        "result": "6"
+      }
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Lintang put water in the box to test it?",
+        "id": "Mengapa Lintang memasukkan air ke kotak untuk mengujinya?"
+      },
+      "choices": {
+        "en": [
+          "so she could easily see if anything leaked out",
+          "so she could drink it later",
+          "because the box was dirty"
+        ],
+        "id": [
+          "supaya mudah terlihat jika ada yang bocor",
+          "supaya bisa diminum nanti",
+          "karena kotaknya kotor"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q4",
+      "kind": "sequence",
+      "prompt": {
+        "en": "What did Lintang do after she found the rubber band was hard to pull off?",
+        "id": "Apa yang dilakukan Lintang setelah tahu karetnya sulit ditarik?"
+      },
+      "choices": {
+        "en": [
+          "she tied on a ribbon loop as a handle",
+          "she tried sticky tape",
+          "she bought a new lunchbox"
+        ],
+        "id": [
+          "mengikatkan simpul pita sebagai pegangan",
+          "mencoba selotip",
+          "membeli kotak bekal baru"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    },
+    {
+      "id": "q5",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What lesson does Om Hadi help Lintang learn?",
+        "id": "Pelajaran apa yang dibantu Om Hadi untuk dipahami Lintang?"
+      },
+      "choices": {
+        "en": [
+          "you can solve a problem by trying ideas, testing them and making them better",
+          "broken things must always be thrown away",
+          "rice should never go in a lunchbox"
+        ],
+        "id": [
+          "masalah bisa diselesaikan dengan mencoba ide, mengujinya, dan memperbaikinya",
+          "barang rusak harus selalu dibuang",
+          "nasi tidak boleh dimasukkan ke kotak bekal"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 6
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "technology_engineering",
+      "connection": {
+        "en": "Lintang uses the engineering design process: define the problem, try ideas, test and improve.",
+        "id": "Lintang memakai proses rekayasa: tentukan masalah, coba ide, uji, dan perbaiki."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Fixing things instead of buying new ones means less rubbish.",
+        "id": "Memperbaiki barang alih-alih membeli yang baru berarti mengurangi sampah."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What is something at home you could fix instead of replacing?",
+      "id": "Barang apa di rumah yang bisa kamu perbaiki alih-alih menggantinya?"
+    },
+    {
+      "en": "Why was it a good idea for Lintang to test each idea the same way?",
+      "id": "Mengapa Lintang sebaiknya menguji setiap ide dengan cara yang sama?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Inventor challenge: find a plastic tub with a loose lid (or any lidded container). Think of two ways to keep the lid on using things at home, such as a rubber band, string or a strip of cloth. Test each idea the same way: put one spoonful of water inside and shake it 10 times over a sink. Record how many shakes each idea lasted, then improve the better one.",
+    "id": "Tantangan penemu: cari wadah plastik yang tutupnya longgar (atau wadah bertutup apa saja). Pikirkan dua cara untuk menjaga tutupnya tetap terpasang memakai barang di rumah, misalnya karet gelang, tali, atau sobekan kain. Uji setiap ide dengan cara yang sama: masukkan satu sendok air dan guncang 10 kali di atas wastafel. Catat berapa guncangan setiap ide bertahan, lalu perbaiki ide yang lebih baik."
+  },
+  "factChecks": [],
+  "safetyNotes": [
+    {
+      "en": "Use only a spoonful of water over a sink, and do not stretch rubber bands towards faces.",
+      "id": "Gunakan hanya sesendok air di atas wastafel, dan jangan meregangkan karet gelang ke arah wajah."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

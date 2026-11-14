@@ -1,0 +1,228 @@
+{
+  "id": "reading-k-putri-plays-engklek",
+  "version": "1.0.0",
+  "level": "k",
+  "readingLevel": "emergent",
+  "genre": "fiction",
+  "mode": "shared",
+  "title": {
+    "en": "Putri plays engklek",
+    "id": "Putri bermain engklek"
+  },
+  "text": {
+    "en": [
+      "Nur draws boxes on the ground with chalk. \"Let's play engklek!\" she says.",
+      "Nur hops on one foot. Hop, hop, hop, hop! She hops across 4 boxes. Then she hops across 3 more.",
+      "Now it is Putri's turn. She hops once and wobbles. Bump! She puts both feet down.",
+      "Putri's face goes red. \"I can't do it,\" she says quietly.",
+      "\"Bend your knee a little,\" says Nur. \"Hold your arms out like wings. Try one box at a time.\"",
+      "Putri tries again, and again. Hop, hop, hop! She gets to the end! Nur claps. \"You did it, Putri!\""
+    ],
+    "id": [
+      "Nur menggambar kotak-kotak di tanah dengan kapur. \"Ayo main engklek!\" katanya.",
+      "Nur melompat dengan satu kaki. Lompat, lompat, lompat, lompat! Ia melompati 4 kotak. Lalu ia melompati 3 kotak lagi.",
+      "Sekarang giliran Putri. Ia melompat sekali dan bergoyang. Duk! Kedua kakinya menginjak tanah.",
+      "Wajah Putri memerah. \"Aku tidak bisa,\" katanya pelan.",
+      "\"Tekuk lututmu sedikit,\" kata Nur. \"Rentangkan tanganmu seperti sayap. Coba satu kotak dulu.\"",
+      "Putri mencoba lagi, dan lagi. Lompat, lompat, lompat! Ia sampai di ujung! Nur bertepuk tangan. \"Kamu berhasil, Putri!\""
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a short story with an adult and tells how a character learns by practising.",
+      "id": "Membaca cerita pendek bersama orang dewasa dan menceritakan bagaimana tokoh belajar dengan berlatih."
+    },
+    {
+      "en": "Learns how to play a traditional Indonesian hopping game.",
+      "id": "Mengenal cara bermain permainan lompat tradisional Indonesia."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "hop",
+        "id": "melompat"
+      },
+      "meaning": {
+        "en": "to jump on one foot",
+        "id": "meloncat dengan satu kaki"
+      }
+    },
+    {
+      "word": {
+        "en": "wobble",
+        "id": "bergoyang"
+      },
+      "meaning": {
+        "en": "to shake from side to side, nearly falling",
+        "id": "bergerak ke kiri dan kanan, hampir jatuh"
+      }
+    },
+    {
+      "word": {
+        "en": "chalk",
+        "id": "kapur"
+      },
+      "meaning": {
+        "en": "a soft white stick for drawing on the ground or a board",
+        "id": "batang putih lunak untuk menggambar di tanah atau papan"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What did Nur use to draw the boxes?",
+        "id": "Apa yang dipakai Nur untuk menggambar kotak?"
+      },
+      "choices": {
+        "en": [
+          "chalk",
+          "paint",
+          "a pencil"
+        ],
+        "id": [
+          "kapur",
+          "cat",
+          "pensil"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "math",
+      "prompt": {
+        "en": "Nur hopped across 4 boxes and then 3 more. How many boxes did she hop across?",
+        "id": "Nur melompati 4 kotak lalu 3 kotak lagi. Berapa kotak yang ia lompati?"
+      },
+      "choices": {
+        "en": [
+          "7 boxes",
+          "4 boxes",
+          "1 box"
+        ],
+        "id": [
+          "7 kotak",
+          "4 kotak",
+          "1 kotak"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1,
+      "check": {
+        "expression": "4 + 3",
+        "result": "7"
+      }
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "How did Putri feel when she said \"I can't do it\"?",
+        "id": "Bagaimana perasaan Putri saat berkata \"Aku tidak bisa\"?"
+      },
+      "choices": {
+        "en": [
+          "sad and a little shy",
+          "very excited",
+          "sleepy"
+        ],
+        "id": [
+          "sedih dan agak malu",
+          "sangat bersemangat",
+          "mengantuk"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q4",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What helped Putri get to the end?",
+        "id": "Apa yang membantu Putri sampai di ujung?"
+      },
+      "choices": {
+        "en": [
+          "Nur's tips and trying again",
+          "a new pair of shoes",
+          "running instead of hopping"
+        ],
+        "id": [
+          "saran Nur dan terus mencoba",
+          "sepatu baru",
+          "berlari, bukan melompat"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "cultural_studies",
+      "connection": {
+        "en": "Engklek is a hopping game many Indonesian children play; it has other names in different regions.",
+        "id": "Engklek adalah permainan lompat yang dimainkan banyak anak Indonesia; namanya berbeda di beberapa daerah."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Counting the boxes as you hop is adding one more each time.",
+        "id": "Menghitung kotak saat melompat berarti menambah satu setiap kali."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What is something you learned by trying again?",
+      "id": "Apa sesuatu yang kamu pelajari dengan mencoba lagi?"
+    },
+    {
+      "en": "What kind words did Nur say?",
+      "id": "Kata-kata baik apa yang diucapkan Nur?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Draw a simple engklek grid of 6 to 8 boxes with chalk on a flat, dry path or yard, away from traffic. Use a small folded cloth as the marker: toss it into a box, then hop over that box and back. Practise one box at a time, and count each hop aloud together.",
+    "id": "Gambar kotak engklek sederhana berisi 6 sampai 8 kotak dengan kapur di jalan setapak atau halaman yang rata dan kering, jauh dari kendaraan. Pakai kain kecil yang dilipat sebagai gacuk: lempar ke satu kotak, lalu lompati kotak itu dan kembali. Berlatih satu kotak dulu, dan hitung setiap lompatan bersama-sama dengan suara keras."
+  },
+  "factChecks": [
+    {
+      "claim": "Engklek is a traditional hopping game played by Indonesian children, known by other names in some regions.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Play on a flat, dry surface away from traffic, wearing sandals or bare feet on a clean surface.",
+      "id": "Bermain di permukaan yang rata dan kering, jauh dari kendaraan, memakai sandal atau bertelanjang kaki di permukaan yang bersih."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

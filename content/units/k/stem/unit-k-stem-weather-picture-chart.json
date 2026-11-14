@@ -1,0 +1,465 @@
+{
+  "id": "unit-k-stem-weather-picture-chart",
+  "version": "1.0.0",
+  "level": "k",
+  "framework": "stem",
+  "strand": "science_inquiry",
+  "title": {
+    "en": "Our weather chart",
+    "id": "Bagan cuaca kita"
+  },
+  "prerequisites": [
+    "unit-age3_4-stem-shadow-play-sunlight"
+  ],
+  "objective": {
+    "en": "Look at the sky at the same time each day for ten days, record the weather with one picture symbol a day (sunny, cloudy or rainy), count each kind, and answer questions from the chart such as which weather happened most and how many more.",
+    "id": "Mengamati langit pada jam yang sama setiap hari selama sepuluh hari, mencatat cuaca dengan satu simbol gambar per hari (cerah, berawan, atau hujan), menghitung setiap jenis, dan menjawab pertanyaan dari bagan seperti cuaca mana yang paling sering dan berapa lebih banyak."
+  },
+  "rationale": {
+    "en": "A weather chart turns everyday noticing into data. Observing at a fixed time teaches that scientists record in the same way each time, and counting symbols links science to early data handling.",
+    "id": "Bagan cuaca mengubah pengamatan sehari-hari menjadi data. Mengamati pada jam yang tetap mengajarkan bahwa ilmuwan mencatat dengan cara yang sama setiap kali, dan menghitung simbol menghubungkan sains dengan pengolahan data awal."
+  },
+  "outcomes": [
+    {
+      "en": "Chooses the symbol that matches the sky at the agreed time.",
+      "id": "Memilih simbol yang sesuai dengan langit pada jam yang disepakati."
+    },
+    {
+      "en": "Counts each kind of weather on the chart.",
+      "id": "Menghitung setiap jenis cuaca di bagan."
+    },
+    {
+      "en": "Answers \"which most?\" and \"how many more?\" from the chart.",
+      "id": "Menjawab \"mana yang paling banyak?\" dan \"berapa lebih banyak?\" dari bagan."
+    },
+    {
+      "en": "Knows that clouds do not always bring rain.",
+      "id": "Tahu bahwa awan tidak selalu membawa hujan."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I look at the sky at the same time every day.",
+      "id": "Aku melihat langit pada jam yang sama setiap hari."
+    },
+    {
+      "en": "I can count my chart and say which weather we had most.",
+      "id": "Aku bisa menghitung bagan dan menyebut cuaca yang paling sering."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Agree a weather time that fits your day, such as straight after breakfast, and keep it for all ten days. Put the chart by the window.",
+      "id": "Sepakati jam cuaca yang cocok dengan kegiatan harian, misalnya tepat setelah sarapan, dan pertahankan selama sepuluh hari. Pasang bagan di dekat jendela."
+    },
+    {
+      "en": "Use three symbols only: a sun for sunny, a cloud for cloudy, a cloud with drops for rainy. If it is partly sunny, ask 'Is there more blue sky or more cloud?' and choose one.",
+      "id": "Gunakan tiga simbol saja: matahari untuk cerah, awan untuk berawan, awan dengan tetesan untuk hujan. Jika sebagian cerah, tanyakan 'Lebih banyak langit biru atau awan?' lalu pilih satu."
+    },
+    {
+      "en": "Each morning, ask for a guess before looking: 'What do you think the sky will be like?' Then look and draw.",
+      "id": "Setiap pagi, minta tebakan sebelum melihat: 'Menurutmu langitnya bagaimana?' Lalu lihat dan gambar."
+    },
+    {
+      "en": "After ten days, count each row together with a finger on every picture, and write the totals at the end of each row.",
+      "id": "Setelah sepuluh hari, hitung setiap baris bersama dengan jari di setiap gambar, lalu tulis jumlahnya di ujung setiap baris."
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Look out of the window at our weather time.",
+      "id": "Lihat keluar jendela pada jam cuaca kita."
+    },
+    {
+      "en": "Draw one picture in today's box: sun, cloud or rain.",
+      "id": "Gambar satu gambar di kotak hari ini: matahari, awan, atau hujan."
+    },
+    {
+      "en": "At the end, count the pictures in each row.",
+      "id": "Di akhir, hitung gambar di setiap baris."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Stand at the window at weather time, feel the air on your hand through the open window, and look at the sky before choosing a symbol card.",
+        "id": "Berdiri di jendela pada jam cuaca, rasakan udara di tangan lewat jendela yang terbuka, dan lihat langit sebelum memilih kartu simbol."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Turn the ten-day chart into a picture graph: cut out the symbols and stack each kind in a column.",
+        "id": "Ubah bagan sepuluh hari menjadi grafik gambar: gunting simbol-simbolnya dan susun setiap jenis dalam satu kolom."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write the totals as numbers and compare them with \"more\" and \"fewer\".",
+        "id": "Tulis jumlahnya sebagai angka dan bandingkan dengan \"lebih banyak\" dan \"lebih sedikit\"."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "A large sheet of paper ruled by the adult into a chart: ten columns for the days and three rows (sun, cloud, rain)",
+      "id": "Selembar kertas besar yang digaris orang dewasa menjadi bagan: sepuluh kolom untuk hari dan tiga baris (matahari, awan, hujan)"
+    },
+    {
+      "en": "Crayons, and three small symbol cards drawn by the adult to copy from",
+      "id": "Krayon, dan tiga kartu simbol kecil buatan orang dewasa untuk dicontoh"
+    },
+    {
+      "en": "Tape to fix the chart by a window",
+      "id": "Selotip untuk menempel bagan di dekat jendela"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Rule the chart and write the day names along the top. Draw the three symbol cards and tape them at the start of each row.",
+      "id": "Buat garis bagan dan tulis nama hari di bagian atas. Gambar tiga kartu simbol dan tempel di awal setiap baris."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Day 1: after breakfast, Raka guesses \"sunny\". He looks: blue sky with a few small clouds, mostly blue. He draws a sun in the sun row under day 1. His guess matched.",
+      "id": "Hari 1: setelah sarapan, Raka menebak \"cerah\". Ia melihat: langit biru dengan sedikit awan kecil, sebagian besar biru. Ia menggambar matahari di baris matahari di bawah hari 1. Tebakannya cocok."
+    },
+    {
+      "en": "Day 4: grey clouds cover the sky but there is no rain. Raka wants to draw rain. Look again together: no drops are falling, so it is a cloud day. Clouds do not always bring rain.",
+      "id": "Hari 4: awan kelabu menutupi langit tetapi tidak hujan. Raka ingin menggambar hujan. Lihat lagi bersama: tidak ada tetesan yang jatuh, jadi itu hari berawan. Awan tidak selalu membawa hujan."
+    },
+    {
+      "en": "After ten days, Raka counts: sun 5, cloud 2, rain 3. Most: sunny. How many more sunny days than rainy days? Point to the rain pictures and match each with a sun; 2 suns have no partner, so 2 more.",
+      "id": "Setelah sepuluh hari, Raka menghitung: matahari 5, awan 2, hujan 3. Paling banyak: cerah. Berapa hari cerah lebih banyak dari hari hujan? Tunjuk gambar hujan dan pasangkan masing-masing dengan matahari; 2 matahari tidak punya pasangan, jadi lebih banyak 2."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Keep the chart for all ten days, guessing before looking each time.",
+      "id": "Isi bagan selama sepuluh hari, menebak sebelum melihat setiap kali."
+    },
+    {
+      "en": "Halfway through, after day 5, count the rows so far and predict which weather will be the most by day 10.",
+      "id": "Di tengah jalan, setelah hari 5, hitung baris sejauh ini dan tebak cuaca mana yang paling banyak pada hari 10."
+    },
+    {
+      "en": "Ask a family member a question from the chart, such as \"Were there more cloud days or rain days?\", and check their answer by counting.",
+      "id": "Ajukan pertanyaan dari bagan kepada anggota keluarga, misalnya \"Lebih banyak hari berawan atau hari hujan?\", lalu periksa jawabannya dengan menghitung."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "Dewi's chart for 8 days has 2 suns, 4 rain pictures and 2 clouds. Which weather happened most?",
+        "id": "Bagan Dewi selama 8 hari berisi 2 matahari, 4 gambar hujan, dan 2 awan. Cuaca mana yang paling sering?"
+      },
+      "choices": {
+        "en": [
+          "Rainy",
+          "Sunny, because it is the first row",
+          "They all happened the same"
+        ],
+        "id": [
+          "Hujan",
+          "Cerah, karena barisnya paling atas",
+          "Semuanya sama banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count each row: rain has 4, more than 2 suns and 2 clouds.",
+        "id": "Hitung setiap baris: hujan ada 4, lebih banyak dari 2 matahari dan 2 awan."
+      },
+      "distractorMisconceptions": {
+        "1": "READS_FIRST_ROW",
+        "2": "COMPARES_WITHOUT_COUNTING"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "Bima's chart has 6 suns, 1 cloud and 3 rain pictures, one picture a day. How many days did he record?",
+        "id": "Bagan Bima berisi 6 matahari, 1 awan, dan 3 gambar hujan, satu gambar per hari. Berapa hari ia mencatat?"
+      },
+      "choices": {
+        "en": [
+          "10 days",
+          "3 days",
+          "9 days"
+        ],
+        "id": [
+          "10 hari",
+          "3 hari",
+          "9 hari"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "One picture is one day: 6 + 1 + 3 = 10.",
+        "id": "Satu gambar adalah satu hari: 6 + 1 + 3 = 10."
+      },
+      "check": {
+        "expression": "6 + 1 + 3",
+        "result": "10"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_KINDS_NOT_DAYS",
+        "2": "SKIPS_A_ROW"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A chart shows 4 rainy days and 1 sunny day. How many more rainy days than sunny days?",
+        "id": "Sebuah bagan menunjukkan 4 hari hujan dan 1 hari cerah. Berapa hari hujan lebih banyak dari hari cerah?"
+      },
+      "choices": {
+        "en": [
+          "3 more",
+          "4 more",
+          "5 more"
+        ],
+        "id": [
+          "Lebih banyak 3",
+          "Lebih banyak 4",
+          "Lebih banyak 5"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Match each sunny day with a rainy day: 3 rainy days have no partner. 4 − 1 = 3.",
+        "id": "Pasangkan setiap hari cerah dengan hari hujan: 3 hari hujan tidak punya pasangan. 4 − 1 = 3."
+      },
+      "check": {
+        "expression": "4 - 1",
+        "result": "3"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_BIGGER_NUMBER",
+        "2": "ADDS_TO_COMPARE"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "Ayu looks at the sky just after breakfast every day. Today it was sunny after breakfast and it rained in the afternoon. What does she draw for today, if she keeps her rule?",
+        "id": "Ayu melihat langit tepat setelah sarapan setiap hari. Hari ini cerah setelah sarapan dan hujan pada sore hari. Apa yang ia gambar untuk hari ini, jika ia tetap memakai aturannya?"
+      },
+      "choices": {
+        "en": [
+          "A sun, because that is what she saw at her weather time",
+          "Rain, because the rain is more exciting",
+          "Nothing, because the weather changed"
+        ],
+        "id": [
+          "Matahari, karena itu yang ia lihat pada jam cuacanya",
+          "Hujan, karena hujan lebih seru",
+          "Tidak menggambar apa-apa, karena cuacanya berubah"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Recording at the same time every day keeps the chart fair, so she records what she saw at that time.",
+        "id": "Mencatat pada jam yang sama setiap hari membuat bagan adil, jadi ia mencatat apa yang ia lihat pada jam itu."
+      },
+      "distractorMisconceptions": {
+        "1": "RECORDS_ANY_TIME",
+        "2": "RECORDS_ANY_TIME"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "This morning the sky is full of grey clouds. Will it rain today for sure?",
+        "id": "Pagi ini langit penuh awan kelabu. Apakah pasti hujan hari ini?"
+      },
+      "choices": {
+        "en": [
+          "Not for sure; clouds do not always bring rain",
+          "Yes, clouds always mean rain"
+        ],
+        "id": [
+          "Belum pasti; awan tidak selalu membawa hujan",
+          "Ya, awan selalu berarti hujan"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Rain falls from clouds, but many cloudy days stay dry.",
+        "id": "Hujan turun dari awan, tetapi banyak hari berawan yang tetap kering."
+      },
+      "distractorMisconceptions": {
+        "1": "CLOUDS_ALWAYS_RAIN"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "READS_FIRST_ROW",
+      "description": {
+        "en": "Picks the first or top row instead of counting.",
+        "id": "Memilih baris pertama atau paling atas, bukan menghitung."
+      },
+      "remediation": {
+        "en": "Turn the chart into towers: stack one block for each picture in each row, and look at which tower is tallest.",
+        "id": "Ubah bagan menjadi menara: tumpuk satu balok untuk setiap gambar di setiap baris, lalu lihat menara mana yang paling tinggi."
+      }
+    },
+    {
+      "code": "COMPARES_WITHOUT_COUNTING",
+      "description": {
+        "en": "Says the groups are the same without counting them.",
+        "id": "Mengatakan kelompoknya sama banyak tanpa menghitung."
+      },
+      "remediation": {
+        "en": "Put a counter or a finger on every picture as you say each number, then write the number at the end of the row.",
+        "id": "Letakkan satu penanda atau jari di setiap gambar sambil menyebut setiap angka, lalu tulis angkanya di ujung baris."
+      }
+    },
+    {
+      "code": "COUNTS_KINDS_NOT_DAYS",
+      "description": {
+        "en": "Counts the kinds of weather instead of the pictures.",
+        "id": "Menghitung jenis cuaca, bukan gambarnya."
+      },
+      "remediation": {
+        "en": "Point along the day columns one by one, saying \"day 1, day 2...\", to show that each picture is one day.",
+        "id": "Tunjuk kolom hari satu per satu sambil berkata \"hari 1, hari 2...\", untuk menunjukkan bahwa setiap gambar adalah satu hari."
+      }
+    },
+    {
+      "code": "SKIPS_A_ROW",
+      "description": {
+        "en": "Leaves out a row with only one picture when adding.",
+        "id": "Melewatkan baris yang hanya berisi satu gambar saat menjumlah."
+      },
+      "remediation": {
+        "en": "Tick each row after counting it, so no row is missed.",
+        "id": "Beri centang pada setiap baris setelah dihitung, supaya tidak ada yang terlewat."
+      }
+    },
+    {
+      "code": "GIVES_BIGGER_NUMBER",
+      "description": {
+        "en": "Answers \"how many more\" with the bigger total.",
+        "id": "Menjawab \"berapa lebih banyak\" dengan jumlah yang lebih besar."
+      },
+      "remediation": {
+        "en": "Line up the two rows picture by picture, pair them off, and count only the pictures left without a partner.",
+        "id": "Jajarkan dua baris gambar demi gambar, pasangkan, lalu hitung hanya gambar yang tidak punya pasangan."
+      }
+    },
+    {
+      "code": "ADDS_TO_COMPARE",
+      "description": {
+        "en": "Adds the two totals instead of comparing them.",
+        "id": "Menjumlahkan kedua total alih-alih membandingkannya."
+      },
+      "remediation": {
+        "en": "Use two rows of blocks and ask \"How many extra blocks does the longer row have?\" while covering the paired blocks with a cloth.",
+        "id": "Gunakan dua baris balok dan tanyakan \"Baris yang lebih panjang punya kelebihan berapa balok?\" sambil menutupi balok yang sudah berpasangan dengan kain."
+      }
+    },
+    {
+      "code": "RECORDS_ANY_TIME",
+      "description": {
+        "en": "Records the weather at different times, or changes the rule when the weather changes.",
+        "id": "Mencatat cuaca pada jam yang berbeda-beda, atau mengubah aturan saat cuaca berubah."
+      },
+      "remediation": {
+        "en": "Make a \"weather time\" card with a picture of breakfast and stick it on the chart. Only look and draw when the card says so.",
+        "id": "Buat kartu \"jam cuaca\" bergambar sarapan dan tempel di bagan. Lihat dan gambar hanya pada jam itu."
+      }
+    },
+    {
+      "code": "CLOUDS_ALWAYS_RAIN",
+      "description": {
+        "en": "Believes that every cloudy sky brings rain.",
+        "id": "Percaya bahwa setiap langit berawan pasti membawa hujan."
+      },
+      "remediation": {
+        "en": "At the end of the ten days, count the cloud days that stayed dry. Each one is evidence that clouds do not always rain.",
+        "id": "Di akhir sepuluh hari, hitung hari berawan yang tetap kering. Masing-masing adalah bukti bahwa awan tidak selalu menurunkan hujan."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Add a windy mark: hang a strip of tissue paper outside the window and add a small flag symbol on days when it flaps.",
+      "id": "Tambahkan tanda berangin: gantung pita kertas tisu di luar jendela dan tambahkan simbol bendera kecil pada hari ketika pitanya berkibar."
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "A child who finds drawing hard can stick pre-cut symbol cards in the boxes instead.",
+      "id": "Anak yang kesulitan menggambar boleh menempel kartu simbol yang sudah digunting di kotaknya."
+    },
+    {
+      "en": "For a child with low vision, describe the sky together using touch and hearing too: feel the warmth of the sun on the hand, listen for rain on the roof.",
+      "id": "Untuk anak dengan penglihatan rendah, gambarkan langit bersama dengan sentuhan dan pendengaran juga: rasakan hangat matahari di tangan, dengarkan hujan di atap."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Never look straight at the sun, even for a moment. Look at the sky away from the sun, and decide \"sunny\" from shadows and brightness.",
+        "id": "Jangan pernah melihat langsung ke matahari, walau sebentar. Lihat langit yang jauh dari matahari, dan tentukan \"cerah\" dari bayangan dan terangnya."
+      },
+      {
+        "en": "Watch rain from indoors or under a roof. If there is thunder or lightning, stay inside and away from open windows.",
+        "id": "Amati hujan dari dalam rumah atau di bawah atap. Jika ada guntur atau petir, tetap di dalam dan jauhi jendela yang terbuka."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 5,
+    "max": 15
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when your child records ten days at the same time, counts the rows, and answers a \"most\" and a \"how many more\" question correctly from their own chart.",
+      "id": "Dikuasai jika anak mencatat sepuluh hari pada jam yang sama, menghitung baris-barisnya, dan menjawab pertanyaan \"paling banyak\" dan \"berapa lebih banyak\" dengan benar dari bagannya sendiri."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original STEM unit (unplugged and hands-on activities written for this curriculum)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-stem",
+    "createdAt": "2026-11-10"
+  }
+}

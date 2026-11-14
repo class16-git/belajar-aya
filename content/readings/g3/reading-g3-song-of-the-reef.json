@@ -1,0 +1,268 @@
+{
+  "id": "reading-g3-song-of-the-reef",
+  "version": "1.0.0",
+  "level": "g3",
+  "readingLevel": "transitional",
+  "genre": "poetry",
+  "mode": "independent",
+  "title": {
+    "en": "Song of the reef",
+    "id": "Nyanyian terumbu"
+  },
+  "text": {
+    "en": [
+      "Beneath the waves, where sunbeams sway, / a city grows by night and day. / No bricks, no roads, no busy town, / just coral towers, gold and brown.",
+      "Each tower is built by creatures small, / so tiny you can hardly see them at all. / They look like stone or branching trees, / yet they are animals of the seas.",
+      "The parrotfish goes crunch, crunch, crunch, / it scrapes the coral for its lunch. / The clownfish hides in waving arms / that keep it safe from passing harms.",
+      "A turtle glides with flippers wide, / a moray peeps from where it hides. / And every crack and every cave / is someone's home beneath the wave.",
+      "So when you swim, look with your eyes, / and leave the coral where it lies. / Don't touch, don't take, don't drop a thing, / and let the reef keep whispering."
+    ],
+    "id": [
+      "Di bawah ombak, cahaya menari, / ada kota tumbuh setiap hari. / Tak ada bata, tak ada jalan, / hanya menara karang berjajaran.",
+      "Menara dibangun hewan yang mungil, / satu per satu, sabar dan terampil. / Ia mirip batu, mirip pohon bercabang, / padahal ia hewan yang hidup dan berkembang.",
+      "Ikan kakatua menggigit, kres-kres-kres, / mengerik makan siangnya di karang yang keras. / Ikan badut sembunyi di lengan bergoyang, / di anemon itu ia aman dan tenang.",
+      "Penyu meluncur dengan sirip lebar, / belut laut mengintip dari lubang yang samar. / Setiap celah dan setiap gua / adalah rumah bagi penghuni di sana.",
+      "Saat berenang, pakailah matamu, / biarkan karang di tempatnya selalu. / Jangan sentuh, jangan ambil, jangan buang sampah, / biar terumbu terus berbisik dengan ramah."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Reads a rhyming poem aloud with rhythm and finds the rhyming pairs.",
+      "id": "Membaca puisi berima dengan irama dan menemukan pasangan kata berima."
+    },
+    {
+      "en": "Explains what the poet compares the reef to and what message the poem gives.",
+      "id": "Menjelaskan apa yang dibandingkan penyair dengan terumbu dan pesan apa yang disampaikan puisi."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "stanza",
+        "id": "bait"
+      },
+      "meaning": {
+        "en": "a group of lines in a poem, like a paragraph in a story",
+        "id": "kelompok baris dalam puisi, seperti paragraf dalam cerita"
+      }
+    },
+    {
+      "word": {
+        "en": "glide",
+        "id": "meluncur"
+      },
+      "meaning": {
+        "en": "to move smoothly and easily",
+        "id": "bergerak dengan mulus dan mudah"
+      }
+    },
+    {
+      "word": {
+        "en": "anemone",
+        "id": "anemon"
+      },
+      "meaning": {
+        "en": "a soft sea animal with many waving arms",
+        "id": "hewan laut lunak dengan banyak lengan yang bergoyang"
+      }
+    },
+    {
+      "word": {
+        "en": "rhyme",
+        "id": "rima"
+      },
+      "meaning": {
+        "en": "words that end with the same sound, like day and sway",
+        "id": "kata-kata yang berakhiran bunyi sama, seperti menari dan hari"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "In the first stanza, what is the \"city\" that grows under the waves?",
+        "id": "Pada bait pertama, apakah \"kota\" yang tumbuh di bawah ombak itu?"
+      },
+      "choices": {
+        "en": [
+          "the coral reef",
+          "a real town with roads",
+          "a sunken ship"
+        ],
+        "id": [
+          "terumbu karang",
+          "kota sungguhan dengan jalan",
+          "kapal yang tenggelam"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 0
+    },
+    {
+      "id": "q2",
+      "kind": "science",
+      "prompt": {
+        "en": "What does the poem say coral really is?",
+        "id": "Menurut puisi, karang sebenarnya apa?"
+      },
+      "choices": {
+        "en": [
+          "animals",
+          "stones",
+          "trees"
+        ],
+        "id": [
+          "hewan",
+          "batu",
+          "pohon"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q3",
+      "kind": "literal",
+      "prompt": {
+        "en": "What does the parrotfish do in the poem?",
+        "id": "Apa yang dilakukan ikan kakatua dalam puisi?"
+      },
+      "choices": {
+        "en": [
+          "it scrapes the coral for food",
+          "it hides in an anemone",
+          "it builds the towers"
+        ],
+        "id": [
+          "mengerik karang untuk makan",
+          "bersembunyi di anemon",
+          "membangun menara"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "What does \"every crack and every cave is someone's home\" tell us about the reef?",
+        "id": "Apa makna \"setiap celah dan setiap gua adalah rumah bagi penghuni di sana\" tentang terumbu?"
+      },
+      "choices": {
+        "en": [
+          "many different animals live in its spaces",
+          "people build houses under the sea",
+          "the reef is empty and quiet"
+        ],
+        "id": [
+          "banyak hewan berbeda tinggal di ruang-ruangnya",
+          "orang membangun rumah di bawah laut",
+          "terumbu itu kosong dan sepi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q5",
+      "kind": "main_idea",
+      "prompt": {
+        "en": "What does the poet most want swimmers to do?",
+        "id": "Apa yang paling diinginkan penyair dari orang yang berenang?"
+      },
+      "choices": {
+        "en": [
+          "enjoy looking at the reef but leave it untouched",
+          "collect coral to take home",
+          "swim as fast as a turtle"
+        ],
+        "id": [
+          "menikmati terumbu dengan melihat tetapi tidak mengganggunya",
+          "mengumpulkan karang untuk dibawa pulang",
+          "berenang secepat penyu"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Corals are animals, and reefs give food and shelter to many sea creatures.",
+        "id": "Karang adalah hewan, dan terumbu memberi makanan serta tempat berlindung bagi banyak makhluk laut."
+      }
+    },
+    {
+      "subject": "environment",
+      "connection": {
+        "en": "Not touching coral and not leaving rubbish helps reefs stay healthy.",
+        "id": "Tidak menyentuh karang dan tidak meninggalkan sampah membantu terumbu tetap sehat."
+      }
+    },
+    {
+      "subject": "creativity",
+      "connection": {
+        "en": "Poets use comparisons, sound words and rhyme to paint a picture.",
+        "id": "Penyair memakai perbandingan, kata bunyi, dan rima untuk melukis gambaran."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "Which line made the clearest picture in your mind? Why?",
+      "id": "Baris mana yang membuat gambaran paling jelas di pikiranmu? Mengapa?"
+    },
+    {
+      "en": "Why do you think the poet ends with the reef \"whispering\"?",
+      "id": "Menurutmu mengapa penyair menutup puisi dengan terumbu yang \"berbisik\"?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Write one new four-line stanza for the poem about another reef animal, such as a sea star, an octopus or a seahorse. Make lines 1 and 2 rhyme, and lines 3 and 4 rhyme. Read the whole poem aloud with your stanza added, tapping the beat.",
+    "id": "Tulis satu bait baru berisi empat baris untuk puisi ini tentang hewan terumbu lain, misalnya bintang laut, gurita, atau kuda laut. Buat baris 1 dan 2 berima, serta baris 3 dan 4 berima. Bacakan seluruh puisi dengan baitmu, sambil mengetuk iramanya."
+  },
+  "factChecks": [
+    {
+      "claim": "Corals are animals that build reefs.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Parrotfish scrape and bite coral surfaces when they feed, making a crunching sound.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Clownfish shelter among the tentacles of sea anemones.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "Moray eels live in holes and crevices in reefs.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

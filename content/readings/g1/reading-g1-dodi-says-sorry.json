@@ -1,0 +1,217 @@
+{
+  "id": "reading-g1-dodi-says-sorry",
+  "version": "1.0.0",
+  "level": "g1",
+  "readingLevel": "early",
+  "genre": "fiction",
+  "mode": "shared",
+  "title": {
+    "en": "Dodi says sorry",
+    "id": "Dodi meminta maaf"
+  },
+  "text": {
+    "en": [
+      "At playtime, Sekar built a sandcastle in the sandpit. It had four towers and a flag made from a leaf.",
+      "Dodi was kicking a ball nearby. He kicked it hard. Thud! The ball landed on the castle, and two towers fell down.",
+      "\"My castle!\" cried Sekar. She looked at Dodi with angry eyes. \"It wasn't me!\" said Dodi quickly.",
+      "Dodi's tummy felt tight. He knew it was his ball. He did not like the feeling at all.",
+      "He walked back to Sekar. \"I'm sorry I knocked down your castle. I was not careful. Can I help you fix it?\"",
+      "Sekar thought for a moment, then nodded. Together they built the towers again, and Dodi dug a moat all the way round."
+    ],
+    "id": [
+      "Saat istirahat, Sekar membuat istana pasir di bak pasir. Istananya punya empat menara dan bendera dari daun.",
+      "Dodi sedang menendang bola di dekatnya. Ia menendang dengan keras. Buk! Bola jatuh di atas istana, dan dua menara runtuh.",
+      "\"Istanaku!\" seru Sekar. Ia menatap Dodi dengan mata marah. \"Bukan aku!\" kata Dodi cepat-cepat.",
+      "Perut Dodi terasa tidak enak. Ia tahu itu bolanya. Ia sama sekali tidak suka perasaan itu.",
+      "Ia berjalan kembali ke Sekar. \"Maaf aku merobohkan istanamu. Aku tidak hati-hati. Boleh aku membantumu memperbaikinya?\"",
+      "Sekar berpikir sebentar, lalu mengangguk. Bersama-sama mereka membangun menaranya lagi, dan Dodi menggali parit di sekeliling istana."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Retells the problem and solution in a story.",
+      "id": "Menceritakan kembali masalah dan penyelesaian dalam cerita."
+    },
+    {
+      "en": "Names the parts of a real apology: say what you did, say sorry, offer to help.",
+      "id": "Menyebut bagian permintaan maaf yang tulus: katakan apa yang kamu lakukan, minta maaf, tawarkan bantuan."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "careful",
+        "id": "hati-hati"
+      },
+      "meaning": {
+        "en": "thinking about what you do so nothing goes wrong",
+        "id": "memikirkan apa yang dilakukan supaya tidak terjadi kesalahan"
+      }
+    },
+    {
+      "word": {
+        "en": "moat",
+        "id": "parit"
+      },
+      "meaning": {
+        "en": "a ditch dug around a castle",
+        "id": "saluran yang digali di sekeliling istana"
+      }
+    },
+    {
+      "word": {
+        "en": "apology",
+        "id": "permintaan maaf"
+      },
+      "meaning": {
+        "en": "words that say you are sorry for something you did",
+        "id": "kata-kata yang menyatakan kamu menyesal atas sesuatu yang kamu lakukan"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What knocked down the towers?",
+        "id": "Apa yang merobohkan menara?"
+      },
+      "choices": {
+        "en": [
+          "Dodi's ball",
+          "the wind",
+          "Sekar's foot"
+        ],
+        "id": [
+          "bola Dodi",
+          "angin",
+          "kaki Sekar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1
+    },
+    {
+      "id": "q2",
+      "kind": "math",
+      "prompt": {
+        "en": "The castle had 4 towers and 2 fell down. How many towers were still standing?",
+        "id": "Istana itu punya 4 menara dan 2 runtuh. Berapa menara yang masih berdiri?"
+      },
+      "choices": {
+        "en": [
+          "2 towers",
+          "6 towers",
+          "4 towers"
+        ],
+        "id": [
+          "2 menara",
+          "6 menara",
+          "4 menara"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 1,
+      "check": {
+        "expression": "4 - 2",
+        "result": "2"
+      }
+    },
+    {
+      "id": "q3",
+      "kind": "inference",
+      "prompt": {
+        "en": "Why did Dodi say \"It wasn't me!\" at first?",
+        "id": "Mengapa awalnya Dodi berkata \"Bukan aku!\"?"
+      },
+      "choices": {
+        "en": [
+          "he was worried about getting into trouble",
+          "he really did not know whose ball it was",
+          "he wanted to play with Sekar"
+        ],
+        "id": [
+          "ia takut dimarahi",
+          "ia sungguh tidak tahu bola siapa itu",
+          "ia ingin bermain dengan Sekar"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q4",
+      "kind": "evidence",
+      "prompt": {
+        "en": "Which words show that Dodi made a real apology?",
+        "id": "Kata-kata mana yang menunjukkan Dodi meminta maaf dengan tulus?"
+      },
+      "choices": {
+        "en": [
+          "\"I was not careful. Can I help you fix it?\"",
+          "\"It wasn't me!\"",
+          "\"My castle!\""
+        ],
+        "id": [
+          "\"Aku tidak hati-hati. Boleh aku membantumu memperbaikinya?\"",
+          "\"Bukan aku!\"",
+          "\"Istanaku!\""
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "practical_life",
+      "connection": {
+        "en": "Saying what you did, saying sorry and helping put things right is a skill for every friendship.",
+        "id": "Mengatakan apa yang kamu lakukan, meminta maaf, dan membantu memperbaiki adalah keterampilan untuk setiap persahabatan."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Counting the towers before and after is taking away.",
+        "id": "Menghitung menara sebelum dan sesudah adalah pengurangan."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "How do you think Sekar felt when Dodi came back?",
+      "id": "Menurutmu bagaimana perasaan Sekar saat Dodi kembali?"
+    },
+    {
+      "en": "Have you ever said sorry to a friend? What happened next?",
+      "id": "Pernahkah kamu meminta maaf kepada teman? Apa yang terjadi sesudahnya?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make a \"sorry steps\" card together: draw three boxes and write or draw (1) say what I did, (2) say sorry, (3) offer to help. Act out two small problems with a grown-up, such as stepping on a drawing or taking a toy, and practise the three steps.",
+    "id": "Buat kartu \"langkah minta maaf\" bersama: gambar tiga kotak lalu tulis atau gambar (1) katakan apa yang kulakukan, (2) minta maaf, (3) tawarkan bantuan. Peragakan dua masalah kecil bersama orang dewasa, misalnya menginjak gambar atau mengambil mainan, dan latih ketiga langkah itu."
+  },
+  "factChecks": [],
+  "safetyNotes": [],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

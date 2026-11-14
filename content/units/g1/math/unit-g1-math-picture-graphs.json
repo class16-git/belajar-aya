@@ -1,0 +1,465 @@
+{
+  "id": "unit-g1-math-picture-graphs",
+  "version": "1.0.0",
+  "level": "g1",
+  "framework": "math",
+  "strand": "data",
+  "title": {
+    "en": "Picture graphs",
+    "id": "Piktogram (grafik gambar)"
+  },
+  "prerequisites": [
+    "unit-k-math-sorting-and-simple-graphs"
+  ],
+  "objective": {
+    "en": "Collect simple data with tally marks, show it in a picture graph with a title, labels and one picture for each item, and read it to find the most, the fewest, how many more and how many altogether.",
+    "id": "Mengumpulkan data sederhana dengan turus, menyajikannya dalam piktogram yang berjudul, berlabel, dan memakai satu gambar untuk setiap benda, lalu membacanya untuk menemukan yang paling banyak, paling sedikit, berapa lebih banyak, dan berapa seluruhnya."
+  },
+  "rationale": {
+    "en": "A picture graph moves children from real objects to symbols that stand for them. Drawing the pictures the same size and lined up is what makes comparison fair, and asking 'how many more' and 'how many altogether' practises subtraction and addition with a purpose.",
+    "id": "Piktogram memindahkan anak dari benda nyata ke simbol yang mewakilinya. Menggambar semua gambar dengan ukuran sama dan berjajar rapi membuat perbandingannya adil, dan pertanyaan 'berapa lebih banyak' dan 'berapa seluruhnya' melatih pengurangan dan penjumlahan dengan tujuan yang jelas."
+  },
+  "outcomes": [
+    {
+      "en": "Records answers to a question with tally marks and counts them.",
+      "id": "Mencatat jawaban suatu pertanyaan dengan turus dan menghitungnya."
+    },
+    {
+      "en": "Draws a picture graph with a title, labels and same-size pictures.",
+      "id": "Menggambar piktogram dengan judul, label, dan gambar yang sama besar."
+    },
+    {
+      "en": "Answers most, fewest, how many more and how many altogether from a picture graph.",
+      "id": "Menjawab paling banyak, paling sedikit, berapa lebih banyak, dan berapa seluruhnya dari piktogram."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can draw one picture for each answer, all the same size, in straight rows.",
+      "id": "Aku bisa menggambar satu gambar untuk setiap jawaban, semuanya sama besar, dalam baris yang lurus."
+    },
+    {
+      "en": "I can say how many more are in one row than another.",
+      "id": "Aku bisa menyebut berapa lebih banyak isi satu baris dibanding baris lain."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Choose a question the child cares about, such as 'Which vehicle passes our house?' and record for 10 minutes from a safe place.",
+      "id": "Pilih pertanyaan yang menarik bagi anak, misalnya 'Kendaraan apa yang lewat depan rumah?' dan catat selama 10 menit dari tempat yang aman."
+    },
+    {
+      "en": "Teach tally marks in fives: four lines and a fifth line across. Count tallies in fives, then ones.",
+      "id": "Ajarkan turus per lima: empat garis lalu garis kelima melintang. Hitung turus per lima, lalu satu-satu."
+    },
+    {
+      "en": "Before drawing, cut or draw same-size squares so every picture takes the same space. Ask: does a bigger picture mean more?",
+      "id": "Sebelum menggambar, siapkan kotak yang sama besar supaya setiap gambar memakai tempat yang sama. Tanyakan: apakah gambar yang lebih besar berarti lebih banyak?"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Make one tally mark for each answer. Count your tallies.",
+      "id": "Buat satu turus untuk setiap jawaban. Hitung turusmu."
+    },
+    {
+      "en": "Draw one picture in each box. Give your graph a title and labels.",
+      "id": "Gambar satu gambar di setiap kotak. Beri judul dan label pada grafikmu."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Family vote with objects: each person puts a spoon on the plate of the drink they like best (tea, water, juice). Then line the spoons up in rows to compare.",
+        "id": "Pemungutan suara keluarga dengan benda: setiap orang menaruh sendok di piring minuman yang paling disukai (teh, air putih, jus). Lalu jajarkan sendok dalam baris untuk dibandingkan."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Turn the spoon rows into a picture graph: one cup picture per vote, drawn in boxes of the same size, with a title 'Our favourite drinks'.",
+        "id": "Ubah barisan sendok menjadi piktogram: satu gambar cangkir untuk setiap suara, digambar di kotak yang sama besar, dengan judul 'Minuman kesukaan kami'."
+      },
+      {
+        "en": "Make a tally chart of vehicles passing the house, then draw the picture graph from the tallies.",
+        "id": "Buat tabel turus kendaraan yang lewat depan rumah, lalu gambar piktogramnya dari turus itu."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Write number sentences from the graph: motorbikes 9, cars 4, so 9 - 4 = 5 more motorbikes; 9 + 4 = 13 vehicles in those two rows.",
+        "id": "Tulis kalimat bilangan dari grafik: motor 9, mobil 4, jadi 9 - 4 = 5 motor lebih banyak; 9 + 4 = 13 kendaraan di dua baris itu."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "Squared paper or a sheet ruled into equal boxes",
+      "id": "Kertas berpetak atau kertas yang digaris menjadi kotak-kotak sama besar"
+    },
+    {
+      "en": "Pencils and crayons",
+      "id": "Pensil dan krayon"
+    },
+    {
+      "en": "Spoons and three plates for the family vote",
+      "id": "Sendok dan tiga piring untuk pemungutan suara keluarga"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Rule a blank picture graph with 4 rows of 12 equal boxes and a space for the title and labels.",
+      "id": "Buat kerangka piktogram kosong dengan 4 baris berisi 12 kotak sama besar dan tempat untuk judul dan label."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Tally to graph: vehicles seen in 10 minutes. Motorbikes: tally of 9. Cars: 4. Angkot: 6. Bicycles: 2. Draw 9, 4, 6 and 2 pictures in the rows.",
+      "id": "Dari turus ke grafik: kendaraan yang terlihat dalam 10 menit. Motor: turus 9. Mobil: 4. Angkot: 6. Sepeda: 2. Gambar 9, 4, 6, dan 2 gambar di barisnya."
+    },
+    {
+      "en": "Most and fewest: the motorbike row is longest (9), so most vehicles were motorbikes. The bicycle row is shortest (2).",
+      "id": "Paling banyak dan paling sedikit: baris motor paling panjang (9), jadi kendaraan terbanyak adalah motor. Baris sepeda paling pendek (2)."
+    },
+    {
+      "en": "How many more: line up the angkot row and the car row. 2 angkot pictures have no partner, so 6 - 4 = 2 more angkot than cars.",
+      "id": "Berapa lebih banyak: jajarkan baris angkot dan baris mobil. 2 gambar angkot tidak punya pasangan, jadi 6 - 4 = 2 angkot lebih banyak daripada mobil."
+    },
+    {
+      "en": "Altogether: add every row to find how many vehicles were seen: 9 + 4 + 6 + 2 = 21.",
+      "id": "Seluruhnya: jumlahkan setiap baris untuk mengetahui berapa kendaraan yang terlihat: 9 + 4 + 6 + 2 = 21."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Ask relatives or neighbours 'What is your favourite fruit: mango, banana, papaya or salak?' Record with tallies and draw the picture graph.",
+      "id": "Tanyakan kepada saudara atau tetangga 'Buah apa yang paling kamu suka: mangga, pisang, pepaya, atau salak?' Catat dengan turus dan gambar piktogramnya."
+    },
+    {
+      "en": "Write three questions about your graph for someone else to answer: one 'most', one 'how many more', one 'altogether'.",
+      "id": "Tulis tiga pertanyaan tentang grafikmu untuk dijawab orang lain: satu 'paling banyak', satu 'berapa lebih banyak', satu 'seluruhnya'."
+    },
+    {
+      "en": "Spot the mistake: the adult draws a graph where one row has bigger pictures. The child explains why it is unfair and redraws it.",
+      "id": "Temukan kesalahan: orang dewasa menggambar grafik dengan satu baris yang gambarnya lebih besar. Anak menjelaskan mengapa itu tidak adil dan menggambar ulang."
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "A picture graph 'How we get to school' shows motorbike 8, walking 5, car 3 and angkot 7. How many children come by motorbike or angkot?",
+        "id": "Piktogram 'Cara kami ke sekolah' menunjukkan motor 8, jalan kaki 5, mobil 3, dan angkot 7. Berapa anak yang naik motor atau angkot?"
+      },
+      "choices": {
+        "en": [
+          "15 children",
+          "1 child",
+          "8 children"
+        ],
+        "id": [
+          "15 anak",
+          "1 anak",
+          "8 anak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Add the two rows: 8 + 7 = 15.",
+        "id": "Jumlahkan kedua baris: 8 + 7 = 15."
+      },
+      "check": {
+        "expression": "8 + 7",
+        "result": "15"
+      },
+      "distractorMisconceptions": {
+        "1": "SUBTRACTS_INSTEAD",
+        "2": "READS_ONE_ROW"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "In the same graph (motorbike 8, walking 5, car 3, angkot 7), how many more children walk than come by car?",
+        "id": "Pada grafik yang sama (motor 8, jalan kaki 5, mobil 3, angkot 7), berapa lebih banyak anak yang berjalan kaki daripada yang naik mobil?"
+      },
+      "choices": {
+        "en": [
+          "2 more",
+          "8 more",
+          "5 more"
+        ],
+        "id": [
+          "2 lebih banyak",
+          "8 lebih banyak",
+          "5 lebih banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Match walking with car: 2 walking pictures are left over. 5 - 3 = 2.",
+        "id": "Pasangkan jalan kaki dengan mobil: tersisa 2 gambar jalan kaki. 5 - 3 = 2."
+      },
+      "check": {
+        "expression": "5 - 3",
+        "result": "2"
+      },
+      "distractorMisconceptions": {
+        "1": "ADDS_INSTEAD",
+        "2": "READS_ONE_ROW"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A graph of pets in a street shows cats 7, fish 4, birds 2 and rabbits 5. Which pet is the fewest?",
+        "id": "Grafik hewan peliharaan di satu jalan menunjukkan kucing 7, ikan 4, burung 2, dan kelinci 5. Hewan apa yang paling sedikit?"
+      },
+      "choices": {
+        "en": [
+          "Birds",
+          "Cats",
+          "Rabbits"
+        ],
+        "id": [
+          "Burung",
+          "Kucing",
+          "Kelinci"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "2 is the smallest number, so the bird row is the shortest.",
+        "id": "2 adalah bilangan terkecil, jadi baris burung paling pendek."
+      },
+      "distractorMisconceptions": {
+        "1": "MOST_FEWEST_SWAP",
+        "2": "READS_LAST_ROW"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "A picture graph of books read shows Ani 6, Budi 3, Citra 5 and Dedi 4. How many books were read altogether?",
+        "id": "Piktogram buku yang dibaca menunjukkan Ani 6, Budi 3, Citra 5, dan Dedi 4. Berapa semua buku yang dibaca?"
+      },
+      "choices": {
+        "en": [
+          "18 books",
+          "4 books",
+          "14 books"
+        ],
+        "id": [
+          "18 buku",
+          "4 buku",
+          "14 buku"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Add every row: 6 + 3 + 5 + 4 = 18.",
+        "id": "Jumlahkan setiap baris: 6 + 3 + 5 + 4 = 18."
+      },
+      "check": {
+        "expression": "6 + 3 + 5 + 4",
+        "result": "18"
+      },
+      "distractorMisconceptions": {
+        "1": "COUNTS_ROWS",
+        "2": "MISSES_A_ROW"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Rina draws 5 big mango pictures and 6 small rambutan pictures, so the mango row looks longer. Which fruit did more people choose?",
+        "id": "Rina menggambar 5 gambar mangga yang besar dan 6 gambar rambutan yang kecil, sehingga baris mangga tampak lebih panjang. Buah mana yang dipilih lebih banyak orang?"
+      },
+      "choices": {
+        "en": [
+          "Rambutan",
+          "Mango, because its row is longer",
+          "Both the same"
+        ],
+        "id": [
+          "Rambutan",
+          "Mangga, karena barisnya lebih panjang",
+          "Sama banyak"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Count the pictures, not the length: 6 rambutan is more than 5 mangoes. The pictures should be the same size.",
+        "id": "Hitung gambarnya, bukan panjangnya: 6 rambutan lebih banyak daripada 5 mangga. Gambarnya seharusnya sama besar."
+      },
+      "distractorMisconceptions": {
+        "1": "PICTURE_SIZE_MEANS_MORE",
+        "2": "PICTURE_SIZE_MEANS_MORE"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "SUBTRACTS_INSTEAD",
+      "description": {
+        "en": "Finds the difference when the question asks for a total ('or' and 'altogether').",
+        "id": "Mencari selisih padahal pertanyaannya meminta jumlah ('atau' dan 'seluruhnya')."
+      },
+      "remediation": {
+        "en": "Cut out the two rows and put them end to end as one long row, then count every picture.",
+        "id": "Gunting kedua baris dan sambungkan menjadi satu baris panjang, lalu hitung semua gambarnya."
+      }
+    },
+    {
+      "code": "READS_ONE_ROW",
+      "description": {
+        "en": "Gives the number in one row instead of combining or comparing two rows.",
+        "id": "Menyebut isi satu baris saja, bukan menggabungkan atau membandingkan dua baris."
+      },
+      "remediation": {
+        "en": "Put a finger on each of the two rows the question names before answering.",
+        "id": "Taruh jari di masing-masing dari dua baris yang disebut pertanyaan sebelum menjawab."
+      }
+    },
+    {
+      "code": "ADDS_INSTEAD",
+      "description": {
+        "en": "Adds the two rows when asked how many more.",
+        "id": "Menjumlahkan kedua baris saat ditanya berapa lebih banyak."
+      },
+      "remediation": {
+        "en": "Draw lines matching pictures in the two rows one to one; count only the pictures with no line.",
+        "id": "Tarik garis untuk memasangkan gambar di dua baris satu-satu; hitung hanya gambar yang tidak bergaris."
+      }
+    },
+    {
+      "code": "MOST_FEWEST_SWAP",
+      "description": {
+        "en": "Picks the longest row when asked for the fewest.",
+        "id": "Memilih baris terpanjang saat ditanya yang paling sedikit."
+      },
+      "remediation": {
+        "en": "Say 'fewest means the shortest row' and run a finger along each row to feel which ends first.",
+        "id": "Ucapkan 'paling sedikit berarti baris terpendek' dan jalankan jari di setiap baris untuk merasakan mana yang berakhir duluan."
+      }
+    },
+    {
+      "code": "READS_LAST_ROW",
+      "description": {
+        "en": "Chooses the row by its position (first or last) rather than its count.",
+        "id": "Memilih baris berdasarkan letaknya (pertama atau terakhir), bukan jumlahnya."
+      },
+      "remediation": {
+        "en": "Rewrite the graph with the rows in a new order and ask the same question again.",
+        "id": "Tulis ulang grafiknya dengan urutan baris yang berbeda dan tanyakan pertanyaan yang sama."
+      }
+    },
+    {
+      "code": "COUNTS_ROWS",
+      "description": {
+        "en": "Counts the number of rows instead of the pictures in them.",
+        "id": "Menghitung banyak baris, bukan gambar di dalamnya."
+      },
+      "remediation": {
+        "en": "Put a counter on each picture as it is counted; rows are labels, not items.",
+        "id": "Taruh penanda di setiap gambar saat dihitung; baris adalah label, bukan benda."
+      }
+    },
+    {
+      "code": "MISSES_A_ROW",
+      "description": {
+        "en": "Leaves out one row when adding them all.",
+        "id": "Melewatkan satu baris saat menjumlahkan semuanya."
+      },
+      "remediation": {
+        "en": "Tick each row label after adding it and check every label has a tick.",
+        "id": "Centang setiap label baris setelah dijumlahkan dan periksa semua label sudah dicentang."
+      }
+    },
+    {
+      "code": "PICTURE_SIZE_MEANS_MORE",
+      "description": {
+        "en": "Judges the amount by how long the row looks rather than by counting pictures.",
+        "id": "Menilai banyaknya dari panjang baris, bukan dengan menghitung gambar."
+      },
+      "remediation": {
+        "en": "Redraw both rows in same-size squares on squared paper and compare again.",
+        "id": "Gambar ulang kedua baris di kotak yang sama besar di kertas berpetak dan bandingkan lagi."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Make a picture graph where one picture stands for 2 people. How do you show 7 people? (Three whole pictures and a half picture.)",
+      "id": "Buat piktogram dengan satu gambar mewakili 2 orang. Bagaimana menunjukkan 7 orang? (Tiga gambar utuh dan setengah gambar.)"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Use stickers or stamps instead of drawing for children who find drawing slow.",
+      "id": "Pakai stiker atau stempel sebagai pengganti menggambar untuk anak yang lambat menggambar."
+    },
+    {
+      "en": "For a child with low vision, build the graph with large plastic cups in rows and compare by touch.",
+      "id": "Untuk anak dengan penglihatan rendah, susun grafik dengan gelas plastik besar dalam baris dan bandingkan dengan meraba."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Count passing vehicles from inside the gate or a window, never from the roadside.",
+        "id": "Hitung kendaraan yang lewat dari dalam pagar atau jendela, jangan dari pinggir jalan."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 30
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child collects data, draws a fair picture graph with a title and labels, and answers a 'how many more' and an 'altogether' question correctly, on two different days.",
+      "id": "Dikuasai jika anak mengumpulkan data, menggambar piktogram yang adil dengan judul dan label, dan menjawab pertanyaan 'berapa lebih banyak' dan 'seluruhnya' dengan benar, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "id": "reading-k-what-is-the-weather-today",
+  "version": "1.0.0",
+  "level": "k",
+  "readingLevel": "emergent",
+  "genre": "nonfiction",
+  "mode": "shared",
+  "title": {
+    "en": "What is the weather today?",
+    "id": "Bagaimana cuaca hari ini?"
+  },
+  "text": {
+    "en": [
+      "Every morning, we look out of the window. What is the weather like today?",
+      "On a sunny day, the sky is blue and the sun is bright. We wear a hat and drink water.",
+      "On a cloudy day, grey clouds cover the sun. It may rain later.",
+      "On a rainy day, water falls from the clouds. We take an umbrella or a raincoat.",
+      "On a windy day, the trees sway and the washing flaps on the line.",
+      "We can draw the weather on a chart each day. Then we can see how the weather changes."
+    ],
+    "id": [
+      "Setiap pagi, kita melihat ke luar jendela. Bagaimana cuaca hari ini?",
+      "Pada hari cerah, langit biru dan matahari bersinar terang. Kita memakai topi dan minum air.",
+      "Pada hari berawan, awan kelabu menutupi matahari. Mungkin nanti hujan.",
+      "Pada hari hujan, air turun dari awan. Kita membawa payung atau jas hujan.",
+      "Pada hari berangin, pohon-pohon bergoyang dan jemuran berkibar di tali.",
+      "Kita bisa menggambar cuaca di tabel setiap hari. Lalu kita bisa melihat bagaimana cuaca berubah."
+    ]
+  },
+  "readAloudNotes": [],
+  "sequenceCards": [],
+  "objectives": [
+    {
+      "en": "Names four kinds of weather and matches each to what we wear or take.",
+      "id": "Menyebut empat jenis cuaca dan mencocokkan masing-masing dengan apa yang kita pakai atau bawa."
+    },
+    {
+      "en": "Records the weather with a picture each day.",
+      "id": "Mencatat cuaca dengan gambar setiap hari."
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": {
+        "en": "weather",
+        "id": "cuaca"
+      },
+      "meaning": {
+        "en": "what the sky and air are like outside: sunny, rainy, windy",
+        "id": "keadaan langit dan udara di luar: cerah, hujan, berangin"
+      }
+    },
+    {
+      "word": {
+        "en": "cloudy",
+        "id": "berawan"
+      },
+      "meaning": {
+        "en": "with many clouds in the sky",
+        "id": "banyak awan di langit"
+      }
+    },
+    {
+      "word": {
+        "en": "chart",
+        "id": "tabel"
+      },
+      "meaning": {
+        "en": "a page with boxes where we draw or write things to remember",
+        "id": "lembar berisi kotak-kotak untuk menggambar atau menulis hal yang ingin diingat"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "kind": "literal",
+      "prompt": {
+        "en": "What do we take on a rainy day?",
+        "id": "Apa yang kita bawa pada hari hujan?"
+      },
+      "choices": {
+        "en": [
+          "an umbrella or a raincoat",
+          "a kite",
+          "sunglasses only"
+        ],
+        "id": [
+          "payung atau jas hujan",
+          "layang-layang",
+          "kacamata hitam saja"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 3
+    },
+    {
+      "id": "q2",
+      "kind": "vocabulary",
+      "prompt": {
+        "en": "What does \"sway\" mean in \"the trees sway\"?",
+        "id": "Apa arti \"bergoyang\" dalam \"pohon-pohon bergoyang\"?"
+      },
+      "choices": {
+        "en": [
+          "move from side to side",
+          "fall down",
+          "grow taller"
+        ],
+        "id": [
+          "bergerak ke kiri dan kanan",
+          "jatuh",
+          "tumbuh lebih tinggi"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 4
+    },
+    {
+      "id": "q3",
+      "kind": "math",
+      "prompt": {
+        "en": "A weather chart shows 3 sunny days and 2 rainy days. How many days are on the chart?",
+        "id": "Sebuah tabel cuaca menunjukkan 3 hari cerah dan 2 hari hujan. Ada berapa hari di tabel itu?"
+      },
+      "choices": {
+        "en": [
+          "5 days",
+          "3 days",
+          "1 day"
+        ],
+        "id": [
+          "5 hari",
+          "3 hari",
+          "1 hari"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 5,
+      "check": {
+        "expression": "3 + 2",
+        "result": "5"
+      }
+    },
+    {
+      "id": "q4",
+      "kind": "inference",
+      "prompt": {
+        "en": "The sky is grey and full of clouds. What should you take when you go out?",
+        "id": "Langit kelabu dan penuh awan. Apa yang sebaiknya kamu bawa saat keluar?"
+      },
+      "choices": {
+        "en": [
+          "an umbrella, in case it rains",
+          "a swimming ring",
+          "a winter coat and gloves"
+        ],
+        "id": [
+          "payung, kalau-kalau hujan",
+          "ban renang",
+          "mantel musim dingin dan sarung tangan"
+        ]
+      },
+      "answer": 0,
+      "evidenceParagraph": 2
+    }
+  ],
+  "crossCurricular": [
+    {
+      "subject": "science_nature",
+      "connection": {
+        "en": "Weather changes from day to day; noticing patterns is the start of science.",
+        "id": "Cuaca berubah dari hari ke hari; memperhatikan pola adalah awal dari sains."
+      }
+    },
+    {
+      "subject": "mathematics",
+      "connection": {
+        "en": "Counting the sunny and rainy days on a chart is simple data.",
+        "id": "Menghitung hari cerah dan hari hujan di tabel adalah data sederhana."
+      }
+    }
+  ],
+  "discussionPrompts": [
+    {
+      "en": "What is the weather like right now?",
+      "id": "Bagaimana cuaca sekarang?"
+    },
+    {
+      "en": "What kind of weather do you like best? Why?",
+      "id": "Cuaca apa yang paling kamu suka? Mengapa?"
+    }
+  ],
+  "offlineActivity": {
+    "en": "Make a weather chart with five boxes, one for each school day. Each morning, look outside together and draw a sun, a cloud, raindrops or wavy wind lines in that day's box. At the end of the week, count how many days of each kind there were.",
+    "id": "Buat tabel cuaca dengan lima kotak, satu untuk setiap hari sekolah. Setiap pagi, lihat ke luar bersama dan gambar matahari, awan, tetes hujan, atau garis angin bergelombang di kotak hari itu. Di akhir minggu, hitung ada berapa hari untuk setiap jenis cuaca."
+  },
+  "factChecks": [
+    {
+      "claim": "Rain falls from clouds.",
+      "status": "common_knowledge"
+    },
+    {
+      "claim": "A hat and drinking water help protect us on hot, sunny days.",
+      "status": "common_knowledge"
+    }
+  ],
+  "safetyNotes": [
+    {
+      "en": "Never look straight at the sun, even with sunglasses.",
+      "id": "Jangan pernah menatap langsung ke matahari, bahkan dengan kacamata hitam."
+    }
+  ],
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "bilingual-parity",
+      "readability",
+      "question-answerability",
+      "safety",
+      "fact-claims-listed"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-reading",
+    "createdAt": "2026-11-10"
+  }
+}

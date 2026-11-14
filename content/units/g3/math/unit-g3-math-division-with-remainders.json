@@ -1,0 +1,492 @@
+{
+  "id": "unit-g3-math-division-with-remainders",
+  "version": "1.0.0",
+  "level": "g3",
+  "framework": "math",
+  "strand": "multiplication_division",
+  "title": {
+    "en": "Division with remainders",
+    "id": "Pembagian bersisa"
+  },
+  "prerequisites": [
+    "unit-g3-math-multiplication-division-bar-models"
+  ],
+  "objective": {
+    "en": "Divide a 2-digit number by a 1-digit number when it does not share exactly, write the answer as a quotient and remainder (23 ÷ 4 = 5 R 3), check that the remainder is smaller than the divisor, and decide in a word problem whether to round the quotient up, leave it, or use the remainder.",
+    "id": "Membagi bilangan 2 angka dengan bilangan 1 angka yang tidak habis dibagi, menulis jawabannya sebagai hasil bagi dan sisa (23 ÷ 4 = 5 sisa 3), memeriksa bahwa sisa lebih kecil dari pembagi, dan memutuskan dalam soal cerita apakah hasil bagi dibulatkan ke atas, dibiarkan, atau sisanya yang dipakai."
+  },
+  "rationale": {
+    "en": "Real sharing rarely comes out exactly. Children who only meet exact division think every problem must 'work'. Seeing leftovers with objects, and then asking what the leftover means in the story, builds the judgement Singapore-style word problems require.",
+    "id": "Pembagian di kehidupan nyata jarang pas. Anak yang hanya bertemu pembagian habis mengira setiap soal harus 'pas'. Melihat sisa dengan benda, lalu menanyakan arti sisa itu dalam cerita, membangun pertimbangan yang dibutuhkan soal cerita gaya Singapura."
+  },
+  "outcomes": [
+    {
+      "en": "Shares or groups objects and records the quotient and remainder.",
+      "id": "Membagi atau mengelompokkan benda dan mencatat hasil bagi dan sisanya."
+    },
+    {
+      "en": "Uses multiplication facts to find the largest multiple below the number.",
+      "id": "Memakai fakta perkalian untuk menemukan kelipatan terbesar di bawah bilangan itu."
+    },
+    {
+      "en": "Interprets the remainder in context.",
+      "id": "Menafsirkan sisa sesuai konteks."
+    }
+  ],
+  "successCriteria": [
+    {
+      "en": "I can show 17 ÷ 3 with counters and say '5 remainder 2'.",
+      "id": "Aku bisa menunjukkan 17 ÷ 3 dengan benda dan menyebut '5 sisa 2'."
+    },
+    {
+      "en": "I can check my answer: 3 × 5 + 2 = 17.",
+      "id": "Aku bisa memeriksa jawabanku: 3 × 5 + 2 = 17."
+    },
+    {
+      "en": "I can explain when the answer needs one more group.",
+      "id": "Aku bisa menjelaskan kapan jawabannya perlu satu kelompok lagi."
+    }
+  ],
+  "parentInstructions": [
+    {
+      "en": "Use real objects that can be shared, such as ice-cream sticks or spoons, and plates or cups as groups.",
+      "id": "Pakai benda nyata yang bisa dibagi, seperti stik es krim atau sendok, dan piring atau gelas sebagai kelompok."
+    },
+    {
+      "en": "In Indonesian say 'sisa'; in writing both 'sisa' and 'R' (remainder) are used. Always check: divisor × quotient + remainder = the number.",
+      "id": "Dalam bahasa Indonesia ucapkan 'sisa'; dalam tulisan dipakai 'sisa' atau 'R' (remainder). Selalu periksa: pembagi × hasil bagi + sisa = bilangan awal."
+    },
+    {
+      "en": "After every word problem, ask: 'What does the remainder mean here? Do we need another box, or is it left over?'",
+      "id": "Setelah setiap soal cerita, tanyakan: 'Apa arti sisanya di sini? Perlu kotak lagi, atau memang tersisa?'"
+    }
+  ],
+  "childInstructions": [
+    {
+      "en": "Share the objects equally until you cannot give everyone one more. Count what is left.",
+      "id": "Bagikan bendanya sama rata sampai tidak bisa memberi satu lagi ke semua. Hitung sisanya."
+    },
+    {
+      "en": "Is the remainder smaller than the number you divided by? If not, share again.",
+      "id": "Apakah sisanya lebih kecil dari pembaginya? Jika tidak, bagikan lagi."
+    }
+  ],
+  "cpa": {
+    "concrete": [
+      {
+        "en": "Share 17 ice-cream sticks among 3 cups, one at a time. Each cup gets 5 and 2 sticks are left: 17 ÷ 3 = 5 R 2.",
+        "id": "Bagikan 17 stik es krim ke 3 gelas, satu per satu. Setiap gelas mendapat 5 dan tersisa 2 stik: 17 ÷ 3 = 5 sisa 2."
+      },
+      {
+        "en": "Group 22 spoons into bundles of 4. There are 5 bundles and 2 spoons left over.",
+        "id": "Kelompokkan 22 sendok menjadi ikatan berisi 4. Ada 5 ikatan dan tersisa 2 sendok."
+      }
+    ],
+    "pictorial": [
+      {
+        "en": "Draw a number line from 0 and jump in 6s towards 39: 6, 12, 18, 24, 30, 36. Six jumps, and 3 more to reach 39: 39 ÷ 6 = 6 R 3.",
+        "id": "Gambar garis bilangan dari 0 dan lompat 6-6 menuju 39: 6, 12, 18, 24, 30, 36. Enam lompatan, dan 3 lagi untuk sampai ke 39: 39 ÷ 6 = 6 sisa 3."
+      },
+      {
+        "en": "Draw a bar for the total cut into equal units with a small leftover piece shaded differently.",
+        "id": "Gambar batang untuk keseluruhan yang dipotong menjadi satuan sama besar dengan potongan sisa kecil yang diarsir berbeda."
+      }
+    ],
+    "abstract": [
+      {
+        "en": "Use facts: 53 ÷ 7. The 7 times table near 53: 7 × 7 = 49, 7 × 8 = 56 is too big. So 53 ÷ 7 = 7 R 4, and 49 + 4 = 53.",
+        "id": "Pakai fakta: 53 ÷ 7. Perkalian 7 dekat 53: 7 × 7 = 49, 7 × 8 = 56 terlalu besar. Jadi 53 ÷ 7 = 7 sisa 4, dan 49 + 4 = 53."
+      }
+    ]
+  },
+  "materials": [
+    {
+      "en": "About 60 ice-cream sticks or spoons",
+      "id": "Sekitar 60 stik es krim atau sendok"
+    },
+    {
+      "en": "6 cups or plates to share into",
+      "id": "6 gelas atau piring untuk tempat berbagi"
+    },
+    {
+      "en": "Paper for number lines and bar models",
+      "id": "Kertas untuk garis bilangan dan model batang"
+    }
+  ],
+  "preparation": [
+    {
+      "en": "Write five division cards that do not share exactly (for example 17 ÷ 3, 22 ÷ 4, 39 ÷ 6) and three story cards.",
+      "id": "Tulis lima kartu pembagian yang tidak habis (misalnya 17 ÷ 3, 22 ÷ 4, 39 ÷ 6) dan tiga kartu cerita."
+    }
+  ],
+  "guidedExamples": [
+    {
+      "en": "Remainder too big: Rina shares 26 sticks into 4 cups and stops at 5 each with 6 left. But 6 is more than 4, so every cup can get one more: 6 each, 2 left. 26 ÷ 4 = 6 R 2.",
+      "id": "Sisa terlalu besar: Rina membagi 26 stik ke 4 gelas dan berhenti di 5 per gelas dengan sisa 6. Tetapi 6 lebih dari 4, jadi setiap gelas bisa mendapat satu lagi: masing-masing 6, sisa 2. 26 ÷ 4 = 6 sisa 2."
+    },
+    {
+      "en": "Round up: 34 pupils go on a trip in cars that take 4 pupils each. 34 ÷ 4 = 8 R 2. The 2 pupils left still need a car, so 9 cars are needed.",
+      "id": "Bulatkan ke atas: 34 murid pergi karyawisata dengan mobil yang masing-masing memuat 4 murid. 34 ÷ 4 = 8 sisa 2. 2 murid yang tersisa tetap perlu mobil, jadi diperlukan 9 mobil."
+    },
+    {
+      "en": "Leave it: a 45 cm ribbon is cut into 6 cm bows. 45 ÷ 6 = 7 R 3. Only 7 whole bows can be made; the 3 cm is too short.",
+      "id": "Biarkan: pita 45 cm dipotong menjadi pita hias 6 cm. 45 ÷ 6 = 7 sisa 3. Hanya 7 pita hias utuh yang bisa dibuat; sisa 3 cm terlalu pendek."
+    },
+    {
+      "en": "The remainder is the answer: 31 crayons are shared equally among 5 children. Each gets 6 and 1 is left for the class box. The question 'how many go in the class box?' has the answer 1.",
+      "id": "Sisa sebagai jawaban: 31 krayon dibagi sama rata kepada 5 anak. Masing-masing mendapat 6 dan tersisa 1 untuk kotak kelas. Pertanyaan 'berapa krayon yang masuk kotak kelas?' jawabannya 1."
+    }
+  ],
+  "practice": [
+    {
+      "en": "Use sticks and cups for 19 ÷ 5, 30 ÷ 4 and 44 ÷ 6. Record each with R and check by multiplying and adding.",
+      "id": "Pakai stik dan gelas untuk 19 ÷ 5, 30 ÷ 4, dan 44 ÷ 6. Catat masing-masing dengan sisa dan periksa dengan mengalikan dan menjumlahkan."
+    },
+    {
+      "en": "Remainder sort: for 3 story cards, decide whether to round up, leave the quotient, or answer with the remainder. Explain each choice.",
+      "id": "Memilah sisa: untuk 3 kartu cerita, putuskan apakah membulatkan ke atas, membiarkan hasil bagi, atau menjawab dengan sisanya. Jelaskan setiap pilihan."
+    },
+    {
+      "en": "Pattern hunt: divide 20, 21, 22, 23, 24 and 25 by 4. What happens to the remainder each time? Why can it never be 4?",
+      "id": "Cari pola: bagi 20, 21, 22, 23, 24, dan 25 dengan 4. Apa yang terjadi pada sisanya setiap kali? Mengapa sisanya tidak pernah 4?"
+    }
+  ],
+  "assessment": [
+    {
+      "id": "a1",
+      "prompt": {
+        "en": "29 ÷ 6 = ?",
+        "id": "29 ÷ 6 = ?"
+      },
+      "choices": {
+        "en": [
+          "4 R 5",
+          "3 R 11",
+          "5 R 1"
+        ],
+        "id": [
+          "4 sisa 5",
+          "3 sisa 11",
+          "5 sisa 1"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "6 × 4 = 24 and 6 × 5 = 30 is too big. 29 - 24 = 5, and 5 is less than 6. So 29 ÷ 6 = 4 R 5.",
+        "id": "6 × 4 = 24 dan 6 × 5 = 30 terlalu besar. 29 - 24 = 5, dan 5 kurang dari 6. Jadi 29 ÷ 6 = 4 sisa 5."
+      },
+      "check": {
+        "expression": "(29 - 5) / 6",
+        "result": "4"
+      },
+      "distractorMisconceptions": {
+        "1": "REMAINDER_TOO_BIG",
+        "2": "OVERSHOOTS_MULTIPLE"
+      }
+    },
+    {
+      "id": "a2",
+      "prompt": {
+        "en": "38 children go to a museum in minibuses. Each minibus carries 8 children. How many minibuses are needed?",
+        "id": "38 anak pergi ke museum naik minibus. Setiap minibus mengangkut 8 anak. Berapa minibus yang diperlukan?"
+      },
+      "choices": {
+        "en": [
+          "5 minibuses",
+          "4 minibuses",
+          "4 R 6 minibuses"
+        ],
+        "id": [
+          "5 minibus",
+          "4 minibus",
+          "4 sisa 6 minibus"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "38 ÷ 8 = 4 R 6. The 6 children left over still need a minibus, so 4 + 1 = 5 minibuses.",
+        "id": "38 ÷ 8 = 4 sisa 6. 6 anak yang tersisa tetap perlu minibus, jadi 4 + 1 = 5 minibus."
+      },
+      "check": {
+        "expression": "(38 - 6) / 8 + 1",
+        "result": "5"
+      },
+      "distractorMisconceptions": {
+        "1": "IGNORES_REMAINDER_IN_CONTEXT",
+        "2": "REMAINDER_LEFT_IN_ANSWER"
+      }
+    },
+    {
+      "id": "a3",
+      "prompt": {
+        "en": "A 50 cm strip of cloth is cut into pieces 7 cm long. How many whole pieces can be cut?",
+        "id": "Sehelai kain 50 cm dipotong menjadi potongan sepanjang 7 cm. Berapa potongan utuh yang bisa dibuat?"
+      },
+      "choices": {
+        "en": [
+          "7 pieces",
+          "8 pieces",
+          "1 piece"
+        ],
+        "id": [
+          "7 potong",
+          "8 potong",
+          "1 potong"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "7 × 7 = 49, so 50 ÷ 7 = 7 R 1. The 1 cm left is too short for another piece.",
+        "id": "7 × 7 = 49, jadi 50 ÷ 7 = 7 sisa 1. Sisa 1 cm terlalu pendek untuk satu potongan lagi."
+      },
+      "check": {
+        "expression": "(50 - 1) / 7",
+        "result": "7"
+      },
+      "distractorMisconceptions": {
+        "1": "ROUNDS_UP_WRONGLY",
+        "2": "GIVES_REMAINDER_NOT_QUOTIENT"
+      }
+    },
+    {
+      "id": "a4",
+      "prompt": {
+        "en": "47 stickers are shared equally among 5 friends, as many as possible each. How many stickers are left over?",
+        "id": "47 stiker dibagi sama rata kepada 5 teman, masing-masing sebanyak mungkin. Berapa stiker yang tersisa?"
+      },
+      "choices": {
+        "en": [
+          "2",
+          "9",
+          "7"
+        ],
+        "id": [
+          "2",
+          "9",
+          "7"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "5 × 9 = 45, so each friend gets 9 and 47 - 45 = 2 are left over.",
+        "id": "5 × 9 = 45, jadi setiap teman mendapat 9 dan tersisa 47 - 45 = 2."
+      },
+      "check": {
+        "expression": "47 - 5 * 9",
+        "result": "2"
+      },
+      "distractorMisconceptions": {
+        "1": "GIVES_QUOTIENT_NOT_REMAINDER",
+        "2": "REMAINDER_TOO_BIG"
+      }
+    },
+    {
+      "id": "a5",
+      "prompt": {
+        "en": "Find the missing number: ? ÷ 4 = 6 R 3.",
+        "id": "Cari bilangan yang hilang: ? ÷ 4 = 6 sisa 3."
+      },
+      "choices": {
+        "en": [
+          "27",
+          "24",
+          "13"
+        ],
+        "id": [
+          "27",
+          "24",
+          "13"
+        ]
+      },
+      "answer": 0,
+      "explanation": {
+        "en": "Work backwards: 4 groups of 6 is 24, plus the 3 left over: 24 + 3 = 27.",
+        "id": "Hitung mundur: 4 kelompok berisi 6 adalah 24, ditambah sisa 3: 24 + 3 = 27."
+      },
+      "check": {
+        "expression": "4 * 6 + 3",
+        "result": "27"
+      },
+      "distractorMisconceptions": {
+        "1": "FORGETS_REMAINDER_WHEN_CHECKING",
+        "2": "ADDS_ALL_NUMBERS"
+      }
+    }
+  ],
+  "misconceptions": [
+    {
+      "code": "REMAINDER_TOO_BIG",
+      "description": {
+        "en": "Stops sharing while the remainder is still as big as or bigger than the divisor.",
+        "id": "Berhenti membagi padahal sisanya masih sama dengan atau lebih besar dari pembagi."
+      },
+      "remediation": {
+        "en": "Put the leftover sticks next to the cups: if there are enough for every cup to get one more, deal them out.",
+        "id": "Taruh sisa stik di samping gelas: jika cukup untuk memberi satu lagi ke setiap gelas, bagikan."
+      }
+    },
+    {
+      "code": "OVERSHOOTS_MULTIPLE",
+      "description": {
+        "en": "Uses a multiple that is bigger than the number being divided.",
+        "id": "Memakai kelipatan yang lebih besar dari bilangan yang dibagi."
+      },
+      "remediation": {
+        "en": "Mark the number on a number line and jump in equal steps; a jump that passes the number is not allowed.",
+        "id": "Tandai bilangannya di garis bilangan dan lompat dengan langkah sama; lompatan yang melewati bilangan itu tidak boleh."
+      }
+    },
+    {
+      "code": "IGNORES_REMAINDER_IN_CONTEXT",
+      "description": {
+        "en": "Drops the remainder when the story needs one more group.",
+        "id": "Membuang sisa padahal cerita memerlukan satu kelompok lagi."
+      },
+      "remediation": {
+        "en": "Act it out with toys in cups as minibuses: the leftover toys are still waiting at the museum gate.",
+        "id": "Peragakan dengan mainan di gelas sebagai minibus: mainan yang tersisa masih menunggu di gerbang museum."
+      }
+    },
+    {
+      "code": "REMAINDER_LEFT_IN_ANSWER",
+      "description": {
+        "en": "Writes the remainder form as the final answer to a 'how many' question.",
+        "id": "Menulis bentuk sisa sebagai jawaban akhir pertanyaan 'berapa banyak'."
+      },
+      "remediation": {
+        "en": "Ask 'can you hire 4 R 6 minibuses?' and draw the minibuses as boxes: the answer must be a whole number of boxes.",
+        "id": "Tanyakan 'bisakah menyewa 4 sisa 6 minibus?' dan gambar minibus sebagai kotak: jawabannya harus banyak kotak yang utuh."
+      }
+    },
+    {
+      "code": "ROUNDS_UP_WRONGLY",
+      "description": {
+        "en": "Rounds up even when the leftover cannot make a whole piece.",
+        "id": "Membulatkan ke atas padahal sisanya tidak bisa menjadi satu potongan utuh."
+      },
+      "remediation": {
+        "en": "Cut a 50 cm paper strip into 7 cm pieces with the adult and try to make an eighth piece.",
+        "id": "Bersama orang dewasa, potong pita kertas 50 cm menjadi potongan 7 cm dan coba buat potongan kedelapan."
+      }
+    },
+    {
+      "code": "GIVES_REMAINDER_NOT_QUOTIENT",
+      "description": {
+        "en": "Answers with the remainder when the question asks for the number of groups.",
+        "id": "Menjawab dengan sisa padahal pertanyaannya meminta banyak kelompok."
+      },
+      "remediation": {
+        "en": "Underline the question word ('how many pieces?') and circle the part of the bar model that answers it.",
+        "id": "Garis bawahi kata tanya ('berapa potong?') dan lingkari bagian model batang yang menjawabnya."
+      }
+    },
+    {
+      "code": "GIVES_QUOTIENT_NOT_REMAINDER",
+      "description": {
+        "en": "Answers with the quotient when the question asks how many are left over.",
+        "id": "Menjawab dengan hasil bagi padahal pertanyaannya meminta berapa yang tersisa."
+      },
+      "remediation": {
+        "en": "Share real stickers onto 5 plates and point to the ones not on any plate: those are 'left over'.",
+        "id": "Bagikan stiker sungguhan ke 5 piring dan tunjuk yang tidak ada di piring mana pun: itulah yang 'tersisa'."
+      }
+    },
+    {
+      "code": "FORGETS_REMAINDER_WHEN_CHECKING",
+      "description": {
+        "en": "Multiplies back but forgets to add the remainder.",
+        "id": "Mengalikan kembali tetapi lupa menambahkan sisanya."
+      },
+      "remediation": {
+        "en": "Build 4 cups of 6 and 3 loose sticks, then count every stick on the table.",
+        "id": "Susun 4 gelas berisi 6 dan 3 stik lepas, lalu hitung semua stik di meja."
+      }
+    },
+    {
+      "code": "ADDS_ALL_NUMBERS",
+      "description": {
+        "en": "Adds the divisor, quotient and remainder together.",
+        "id": "Menjumlahkan pembagi, hasil bagi, dan sisa."
+      },
+      "remediation": {
+        "en": "Draw the bar model: 4 equal units of 6 and a small piece of 3, then find the whole.",
+        "id": "Gambar model batang: 4 satuan sama besar berisi 6 dan potongan kecil 3, lalu cari keseluruhannya."
+      }
+    }
+  ],
+  "extension": [
+    {
+      "en": "Find a number between 30 and 50 that leaves a remainder of 1 when divided by 2, by 3 and by 4. (37 works; can you find another?)",
+      "id": "Cari bilangan antara 30 dan 50 yang bersisa 1 jika dibagi 2, 3, dan 4. (37 memenuhi; bisakah kamu menemukan yang lain?)"
+    }
+  ],
+  "accessibility": [
+    {
+      "en": "Keep the concrete sharing available for every item; a multiplication-table strip may be used as a reference.",
+      "id": "Sediakan benda untuk dibagi di setiap soal; tabel perkalian boleh dipakai sebagai acuan."
+    },
+    {
+      "en": "Read word problems aloud and draw the story before calculating.",
+      "id": "Bacakan soal cerita dan gambarkan ceritanya sebelum menghitung."
+    }
+  ],
+  "safety": {
+    "supervision": "adult_present",
+    "hazards": {
+      "chokingRisk": false,
+      "sharp": false,
+      "water": false,
+      "heat": false,
+      "allergens": false,
+      "electrical": false
+    },
+    "notes": [
+      {
+        "en": "Ice-cream sticks and spoons only; no small items that a younger sibling could swallow.",
+        "id": "Hanya stik es krim dan sendok; tidak ada benda kecil yang bisa tertelan adik."
+      }
+    ]
+  },
+  "durationMinutes": {
+    "min": 20,
+    "max": 35
+  },
+  "mastery": {
+    "evidence": "both",
+    "reviewAfterDays": [
+      3,
+      7,
+      21
+    ],
+    "masteryRule": {
+      "en": "Secure when the child divides four numbers with remainders correctly, checks each by multiplying and adding, and interprets the remainder in two different story types, on two different days.",
+      "id": "Dikuasai jika anak membagi empat bilangan bersisa dengan benar, memeriksa masing-masing dengan mengalikan dan menjumlahkan, dan menafsirkan sisa dalam dua jenis cerita berbeda, pada dua hari berbeda."
+    }
+  },
+  "sources": [
+    {
+      "kind": "original",
+      "title": "Atlas original unit (CPA approach, Singapore-style method described as a teaching approach only)",
+      "verification": "not_applicable"
+    }
+  ],
+  "rights": "original",
+  "arabicPhrases": [],
+  "reviewFlags": [],
+  "reviewStatus": "agent_reviewed",
+  "review": {
+    "agentChecks": [
+      "schema",
+      "math-check",
+      "misconception-map",
+      "bilingual-parity",
+      "safety",
+      "assessment-transfer"
+    ]
+  },
+  "provenance": {
+    "origin": "ai_drafted",
+    "batch": "expansion-batch3-math",
+    "createdAt": "2026-11-10"
+  }
+}
